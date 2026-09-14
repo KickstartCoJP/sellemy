@@ -81,7 +81,7 @@ def apply(topic,products,text):
  c.commit(); c.close(); return path
 
 def publish(topic):
- paths=[f'article/{topic["category"]}/{topic["slug"]}.html',f'img/{topic["slug"]}/{topic["slug"]}.png','json/articles.json','sitemap.xml','data/sellemy.db','data/growth_last_run.json']
+ paths=[f'article/{topic["category"]}/{topic["slug"]}.html',f'img/{topic["slug"]}/{topic["slug"]}.png','json/articles.json','sitemap.xml','data/sellemy.db']
  subprocess.run(['git','add',*paths],cwd=ROOT,check=True); subprocess.run(['git','commit','-m',f'Add Sellemy article: {topic["slug"]}'],cwd=ROOT,check=True); subprocess.run(['git','push','origin','main'],cwd=ROOT,check=True)
  return subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip()
 

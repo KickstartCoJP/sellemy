@@ -3,3 +3,5 @@ __pycache__/
 .DS_Store
 
 logs/
+
+data/growth_last_run.json
