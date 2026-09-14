@@ -16,7 +16,17 @@ def pnum(v):
 
 def next_topic():
  used={x['slug'] for x in json.loads(ARTICLES.read_text(encoding='utf-8'))}
- return next((x for x in json.loads(TOPICS.read_text(encoding='utf-8')) if x['slug'] not in used),None)
+ fixed=json.loads(TOPICS.read_text(encoding='utf-8'))
+ hit=next((x for x in fixed if x['slug'] not in used),None)
+ if hit:return hit
+ bases=[('コードレス掃除機','cordless-vacuum'),('ロボット掃除機','robot-vacuum'),('電気ケトル','electric-kettle'),('ワイヤレススピーカー','wireless-speaker'),('モバイルバッテリー','mobile-battery'),('USB-C充電器','usb-c-charger'),('デスクライト','desk-light'),('電動歯ブラシ','electric-toothbrush'),('ヘアドライヤー','hair-dryer'),('空気清浄機','air-purifier'),('サーキュレーター','air-circulator'),('コーヒーメーカー','coffee-maker'),('トースター','toaster'),('ホームプロジェクター','home-projector'),('ワイヤレスイヤホン','wireless-earphones')]
+ mods=[('一人暮らし向け','single-living'),('省スペース','compact'),('静音重視','quiet'),('初心者向け','beginner'),('在宅ワーク向け','home-office'),('持ち運びやすい','portable'),('時短に便利','time-saving'),('シンプル操作','easy-use')]
+ for base,bslug in bases:
+  for mod,mslug in mods:
+   slug=f'{mslug}-{bslug}-6-picks'
+   if slug not in used:
+    return {'category':'gadget','query':f'{base} {mod}','title':f'{mod}！{base}6選','slug':slug,'summary':f'{mod}の{base}を6商品比較し、用途に合う選び方を紹介します。'}
+ return None
 
 def discover(topic,live=True):
  a=AutositeDiscoveryAdapter(); rows=a.search_amazon_live(topic['query'],limit=18) if live else a.search_cache(topic['query'],limit=30)
@@ -77,6 +87,7 @@ def publish(topic):
 
 def main():
  ap=argparse.ArgumentParser(); ap.add_argument('--apply',action='store_true'); ap.add_argument('--publish',action='store_true'); ap.add_argument('--cache-only',action='store_true'); a=ap.parse_args()
+ if a.publish and subprocess.check_output(['git','status','--porcelain'],cwd=ROOT,text=True).strip(): raise SystemExit('working tree is not clean; scheduled publish aborted')
  t=next_topic();
  if not t: raise SystemExit('no unpublished growth topic')
  rows=discover(t,live=not a.cache_only); selected=select6(rows); text=render(t,selected) if len(selected)==6 else ''; checks,ok=audit(t,selected,text) if text else ({'products_6':False},False)
