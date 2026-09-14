@@ -1,7 +1,7 @@
 {
   "run_id": "RUN-20260914T160752Z",
-  "status": "ready_for_acceptance",
-  "publish_executed": false,
+  "status": "published",
+  "publish_executed": true,
   "route": [
     "Product Discovery",
     "Identity/ASIN",
@@ -980,5 +980,7 @@
       "affiliate_links": 18,
       "structure_pass": true
     }
-  ]
+  ],
+  "production_commit": "50b2a50fd7d1f39af3b4bb98eacd137cde7617b8",
+  "published_at": "2026-09-14T17:16:50.690600+00:00"
 }

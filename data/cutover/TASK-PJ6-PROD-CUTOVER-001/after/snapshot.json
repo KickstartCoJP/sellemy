@@ -1,0 +1,632 @@
+{
+  "task_id": "TASK-PJ6-PROD-CUTOVER-001",
+  "phase": "after",
+  "captured_at": "20260914T171240Z",
+  "base_url": "https://www.sellemy.jp",
+  "urls": [
+    {
+      "requested_url": "https://www.sellemy.jp/article/gadget/air-purifiers-top-6.html",
+      "effective_url": "https://www.sellemy.jp/article/gadget/air-purifiers-top-6.html",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "article_file": "air-purifiers-top-6.html",
+      "sha256": "955bfd8c5d9bf726946faea48f8f2180e0b36d3dccc68d7588047f1a10f5822d",
+      "bytes": 17434,
+      "title": "冷暖房効率を上げる！空気清浄機6選 - Sellemy",
+      "h1": [
+        "冷暖房効率を上げる！空気清浄機6選"
+      ],
+      "meta_description": "この記事では、冷暖房の効率を上げるための空気清浄機6選を紹介しています。それぞれの商品は特定の機能や特徴を持っており、価格帯に応じて異なる選択肢を提供します。空気清浄機は、より快適な室内環境を作るための重要な家電であり、正しい選び方を理解することが重要です。",
+      "canonical": "https://www.sellemy.jp/article/gadget/air-purifiers-top-6.html",
+      "og": {
+        "og:title": "冷暖房効率を上げる！空気清浄機6選 - Sellemy",
+        "og:description": "この記事では、冷暖房の効率を上げるための空気清浄機6選を紹介しています。それぞれの商品は特定の機能や特徴を持っており、価格帯に応じて異なる選択肢を提供します。空気清浄機は、より快適な室内環境を作るための重要な家電であり、正しい選び方を理解することが重要です。",
+        "og:image": "https://www.sellemy.jp/img/air-purifiers-top-6/air-purifiers-top-6.png",
+        "og:type": "article",
+        "og:url": "https://www.sellemy.jp/article/gadget/air-purifiers-top-6.html"
+      },
+      "jsonld": [],
+      "internal_links": [
+        "https://www.sellemy.jp/",
+        "https://www.sellemy.jp/article/beauty/index.html",
+        "https://www.sellemy.jp/article/dailygoods/index.html",
+        "https://www.sellemy.jp/article/gadget/",
+        "https://www.sellemy.jp/articles.html",
+        "https://www.sellemy.jp/index.html",
+        "https://www.sellemy.jp/products.html"
+      ],
+      "affiliate_links": [
+        "https://www.amazon.co.jp/dp/B07K7MJ8ZC?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B0BGPQWQTT?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B0BPK4LCY7?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B0CVRNZ92Z?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B0D86SSFFF?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B0DBQJBJ2Q?tag=suzuron-22"
+      ],
+      "product_cards": 6,
+      "asins": [
+        "B07K7MJ8ZC",
+        "B0BGPQWQTT",
+        "B0BPK4LCY7",
+        "B0CVRNZ92Z",
+        "B0D86SSFFF",
+        "B0DBQJBJ2Q"
+      ],
+      "images": [
+        "/img/sellemy-logo.png",
+        "https://m.media-amazon.com/images/I/41NwNpIRZjL._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/41x-LaXgA+L._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/51+Z-ObWQVL._AC_SX300_SY300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/51M+eqg1EwL._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/61+xbiggllL._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/71lM2odim9L._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://www.sellemy.jp/img/air-purifiers-top-6/air-purifiers-top-6.png"
+      ],
+      "fixed_price_hits": []
+    },
+    {
+      "requested_url": "https://www.sellemy.jp/article/gadget/beginner-friendly-coffee-makers.html",
+      "effective_url": "https://www.sellemy.jp/article/gadget/beginner-friendly-coffee-makers.html",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "article_file": "beginner-friendly-coffee-makers.html",
+      "sha256": "5bd486cc7e07c0cb40fd2b30de08d920a97b62d4988964f8f17fa41237514b96",
+      "bytes": 17528,
+      "title": "初心者に優しい！コーヒーメーカー6選 - Sellemy",
+      "h1": [
+        "初心者に優しい！コーヒーメーカー6選"
+      ],
+      "meta_description": "この記事では初心者向けのコーヒーメーカー6選を紹介します。各商品は使いやすさや機能性を基準に選出しており、初めてコーヒーメーカーを使用する方でも安心して選べるように詳しく解説しています。低価格帯から高価格帯まで幅広くカバーしているため、予算に合わせて最適な商品を見つけることができます。",
+      "canonical": "https://www.sellemy.jp/article/gadget/beginner-friendly-coffee-makers.html",
+      "og": {
+        "og:title": "初心者に優しい！コーヒーメーカー6選 - Sellemy",
+        "og:description": "この記事では初心者向けのコーヒーメーカー6選を紹介します。各商品は使いやすさや機能性を基準に選出しており、初めてコーヒーメーカーを使用する方でも安心して選べるように詳しく解説しています。低価格帯から高価格帯まで幅広くカバーしているため、予算に合わせて最適な商品を見つけることができます。",
+        "og:image": "https://www.sellemy.jp/img/beginner-friendly-coffee-makers/beginner-friendly-coffee-makers.png",
+        "og:type": "article",
+        "og:url": "https://www.sellemy.jp/article/gadget/beginner-friendly-coffee-makers.html"
+      },
+      "jsonld": [],
+      "internal_links": [
+        "https://www.sellemy.jp/",
+        "https://www.sellemy.jp/article/beauty/index.html",
+        "https://www.sellemy.jp/article/dailygoods/index.html",
+        "https://www.sellemy.jp/article/gadget/",
+        "https://www.sellemy.jp/articles.html",
+        "https://www.sellemy.jp/index.html",
+        "https://www.sellemy.jp/products.html"
+      ],
+      "affiliate_links": [
+        "https://www.amazon.co.jp/dp/B07DTDHP7Q?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B07ND9HH34?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B07NRX8J8X?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B08WHX9GSB?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B098Q8XPVD?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B09JVVKRQ1?tag=suzuron-22"
+      ],
+      "product_cards": 6,
+      "asins": [
+        "B07DTDHP7Q",
+        "B07ND9HH34",
+        "B07NRX8J8X",
+        "B08WHX9GSB",
+        "B098Q8XPVD",
+        "B09JVVKRQ1"
+      ],
+      "images": [
+        "/img/sellemy-logo.png",
+        "https://m.media-amazon.com/images/I/510IyY-VKeL._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/51TZB-W-8PS._AC_SX300_SY300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/61aAhpAYBqS._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/61h6tFOd3oL._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/61qlfQpoGAL._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/81JnKFd77xL._AC_SX300_SY300_QL70_ML2_.jpg",
+        "https://www.sellemy.jp/img/beginner-friendly-coffee-makers/beginner-friendly-coffee-makers.png"
+      ],
+      "fixed_price_hits": []
+    },
+    {
+      "requested_url": "https://www.sellemy.jp/article/gadget/best-high-quality-earphones-6-picks.html",
+      "effective_url": "https://www.sellemy.jp/article/gadget/best-high-quality-earphones-6-picks.html",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "article_file": "best-high-quality-earphones-6-picks.html",
+      "sha256": "f4a08846b600bccaf2af608674cc7adb1618c694d3d68645f50d8c190c552e92",
+      "bytes": 18001,
+      "title": "音楽好き必見！高音質イヤホン6選 - Sellemy",
+      "h1": [
+        "音楽好き必見！高音質イヤホン6選"
+      ],
+      "meta_description": "この記事では、音楽をより楽しむための高音質イヤホンを6つ厳選して紹介します。それぞれのイヤホンは異なる価格帯で提供されており、初心者から音質にこだわる方まで幅広く対応しています。自分にぴったりのイヤホンを見つけるための選び方ガイドも掲載していますので、ぜひ参考にしてみてください。",
+      "canonical": "https://www.sellemy.jp/article/gadget/best-high-quality-earphones-6-picks.html",
+      "og": {
+        "og:title": "音楽好き必見！高音質イヤホン6選 - Sellemy",
+        "og:description": "この記事では、音楽をより楽しむための高音質イヤホンを6つ厳選して紹介します。それぞれのイヤホンは異なる価格帯で提供されており、初心者から音質にこだわる方まで幅広く対応しています。自分にぴったりのイヤホンを見つけるための選び方ガイドも掲載していますので、ぜひ参考にしてみてください。",
+        "og:image": "https://www.sellemy.jp/img/best-high-quality-earphones-6-picks/best-high-quality-earphones-6-picks.png",
+        "og:type": "article",
+        "og:url": "https://www.sellemy.jp/article/gadget/best-high-quality-earphones-6-picks.html"
+      },
+      "jsonld": [],
+      "internal_links": [
+        "https://www.sellemy.jp/",
+        "https://www.sellemy.jp/article/beauty/index.html",
+        "https://www.sellemy.jp/article/dailygoods/index.html",
+        "https://www.sellemy.jp/article/gadget/",
+        "https://www.sellemy.jp/articles.html",
+        "https://www.sellemy.jp/index.html",
+        "https://www.sellemy.jp/products.html"
+      ],
+      "affiliate_links": [
+        "https://www.amazon.co.jp/dp/B00A16BT4E?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B071JTJ76Q?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B07YKM3875?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B0CBKQZXT7?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B0DK4GJXC7?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B0DQL1GLG3?tag=suzuron-22"
+      ],
+      "product_cards": 6,
+      "asins": [
+        "B00A16BT4E",
+        "B071JTJ76Q",
+        "B07YKM3875",
+        "B0CBKQZXT7",
+        "B0DK4GJXC7",
+        "B0DQL1GLG3"
+      ],
+      "images": [
+        "/img/sellemy-logo.png",
+        "https://m.media-amazon.com/images/I/41GoLVqG1jL._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/41b9k9u3L+L._AC_SX300_SY300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/51ac6dfSsjL._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/61FjZBaYhoL._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/61Zs2PgxcfL._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/61djQzEzpxL._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://www.sellemy.jp/img/best-high-quality-earphones-6-picks/best-high-quality-earphones-6-picks.png"
+      ],
+      "fixed_price_hits": []
+    },
+    {
+      "requested_url": "https://www.sellemy.jp/article/gadget/comfortable-morning-toasters.html",
+      "effective_url": "https://www.sellemy.jp/article/gadget/comfortable-morning-toasters.html",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "article_file": "comfortable-morning-toasters.html",
+      "sha256": "2c4605a4e1df39befe13a0ff55e043e624809787dd99504bb6707c10f7f558fd",
+      "bytes": 18182,
+      "title": "快適な朝を迎える！トースター6選 - Sellemy",
+      "h1": [
+        "快適な朝を迎える！トースター6選"
+      ],
+      "meta_description": "この記事では、忙しい朝にぴったりのトースターを6機種紹介します。各トースターの特徴、価格帯、どのようなニーズに合うかを解説し、あなたに最適なモデルを選ぶための参考情報を提供します。シンプルなモデルから、パンだけでなく様々な調理が可能な高機能モデルまで幅広くカバーしています。",
+      "canonical": "https://www.sellemy.jp/article/gadget/comfortable-morning-toasters.html",
+      "og": {
+        "og:title": "快適な朝を迎える！トースター6選 - Sellemy",
+        "og:description": "この記事では、忙しい朝にぴったりのトースターを6機種紹介します。各トースターの特徴、価格帯、どのようなニーズに合うかを解説し、あなたに最適なモデルを選ぶための参考情報を提供します。シンプルなモデルから、パンだけでなく様々な調理が可能な高機能モデルまで幅広くカバーしています。",
+        "og:image": "https://www.sellemy.jp/img/comfortable-morning-toasters/comfortable-morning-toasters.png",
+        "og:type": "article",
+        "og:url": "https://www.sellemy.jp/article/gadget/comfortable-morning-toasters.html"
+      },
+      "jsonld": [],
+      "internal_links": [
+        "https://www.sellemy.jp/",
+        "https://www.sellemy.jp/article/beauty/index.html",
+        "https://www.sellemy.jp/article/dailygoods/index.html",
+        "https://www.sellemy.jp/article/gadget/",
+        "https://www.sellemy.jp/articles.html",
+        "https://www.sellemy.jp/index.html",
+        "https://www.sellemy.jp/products.html"
+      ],
+      "affiliate_links": [
+        "https://www.amazon.co.jp/dp/B00PU3PHOQ?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B01MDO72DX?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B07B677C5Q?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B09329BFNG?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B0BFGVR839?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B0DLGXS2DL?tag=suzuron-22"
+      ],
+      "product_cards": 6,
+      "asins": [
+        "B00PU3PHOQ",
+        "B01MDO72DX",
+        "B07B677C5Q",
+        "B09329BFNG",
+        "B0BFGVR839",
+        "B0DLGXS2DL"
+      ],
+      "images": [
+        "/img/sellemy-logo.png",
+        "https://m.media-amazon.com/images/I/619028Ikj9L._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/61BDKrqgOBL._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/61KNOuQ+-aL._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/7111Y6QnJCL._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/71ZCxDnpTML._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/81eZfB+FtDL._AC_SX300_SY300_QL70_ML2_.jpg",
+        "https://www.sellemy.jp/img/comfortable-morning-toasters/comfortable-morning-toasters.png"
+      ],
+      "fixed_price_hits": []
+    },
+    {
+      "requested_url": "https://www.sellemy.jp/article/gadget/enjoy-summer-portable-fans-6-picks.html",
+      "effective_url": "https://www.sellemy.jp/article/gadget/enjoy-summer-portable-fans-6-picks.html",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "article_file": "enjoy-summer-portable-fans-6-picks.html",
+      "sha256": "87eac7d0f26216c19bea8ac423b7020949dadc9a274c2447925ee4d3b750f269",
+      "bytes": 17081,
+      "title": "夏を楽しむ！アウトドア用携帯扇風機6選 - Sellemy",
+      "h1": [
+        "夏を楽しむ！アウトドア用携帯扇風機6選"
+      ],
+      "meta_description": "この記事では、外出時に活躍する携帯扇風機を6つ厳選して紹介します。手軽に持ち運べて、どこでも涼しさを提供してくれるこれらのアイテムは、暑い季節のお出かけやアウトドアアクティビティで大活躍します。価格帯や機能、デザインの違いに注目しながら、自分のライフスタイルに合ったモデルを見つけてください。",
+      "canonical": "https://www.sellemy.jp/article/gadget/enjoy-summer-portable-fans-6-picks.html",
+      "og": {
+        "og:title": "夏を楽しむ！アウトドア用携帯扇風機6選 - Sellemy",
+        "og:description": "この記事では、外出時に活躍する携帯扇風機を6つ厳選して紹介します。手軽に持ち運べて、どこでも涼しさを提供してくれるこれらのアイテムは、暑い季節のお出かけやアウトドアアクティビティで大活躍します。価格帯や機能、デザインの違いに注目しながら、自分のライフスタイルに合ったモデルを見つけてください。",
+        "og:image": "https://www.sellemy.jp/img/enjoy-summer-portable-fans-6-picks/enjoy-summer-portable-fans-6-picks.png",
+        "og:type": "article",
+        "og:url": "https://www.sellemy.jp/article/gadget/enjoy-summer-portable-fans-6-picks.html"
+      },
+      "jsonld": [],
+      "internal_links": [
+        "https://www.sellemy.jp/",
+        "https://www.sellemy.jp/article/beauty/index.html",
+        "https://www.sellemy.jp/article/dailygoods/index.html",
+        "https://www.sellemy.jp/article/gadget/",
+        "https://www.sellemy.jp/articles.html",
+        "https://www.sellemy.jp/index.html",
+        "https://www.sellemy.jp/products.html"
+      ],
+      "affiliate_links": [
+        "https://www.amazon.co.jp/dp/B0D49GHC96?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B0DP97SFL3?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B0DP99ZCSN?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B0GQ49L6DY?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B0GSQD5K44?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B0GZVZDNQV?tag=suzuron-22"
+      ],
+      "product_cards": 6,
+      "asins": [
+        "B0D49GHC96",
+        "B0DP97SFL3",
+        "B0DP99ZCSN",
+        "B0GQ49L6DY",
+        "B0GSQD5K44",
+        "B0GZVZDNQV"
+      ],
+      "images": [
+        "/img/sellemy-logo.png",
+        "https://m.media-amazon.com/images/I/616WC2+sZhL._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/61CpeaMhIOL._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/71D-gxcZD+L._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/71GMx+daLRL._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/71fctVsC7yL._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/71tXEuVw5fL._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://www.sellemy.jp/img/enjoy-summer-portable-fans-6-picks/enjoy-summer-portable-fans-6-picks.png"
+      ],
+      "fixed_price_hits": []
+    },
+    {
+      "requested_url": "https://www.sellemy.jp/article/gadget/high-performance-air-circulators-6.html",
+      "effective_url": "https://www.sellemy.jp/article/gadget/high-performance-air-circulators-6.html",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "article_file": "high-performance-air-circulators-6.html",
+      "sha256": "a3b97f891fa515cffa46db013044520b0fbb571e75ba53b2bf1f51124e33d519",
+      "bytes": 18332,
+      "title": "家庭で楽しむ！高性能空気循環器6選 - Sellemy",
+      "h1": [
+        "家庭で楽しむ！高性能空気循環器6選"
+      ],
+      "meta_description": "空気循環器は、エアコンと併用することで冷暖房効率を向上させたり、部屋全体の空気を均一にする効果があります。特に暑い季節には、冷たい空気を部屋中に行き渡らせるのに役立ちます。本記事では、家庭での使用に適した高性能な空気循環器を6つ紹介し、選び方のポイントも解説します。これを参考に、あなたの生活にぴったりの空気循環器を見つけてください。",
+      "canonical": "https://www.sellemy.jp/article/gadget/high-performance-air-circulators-6.html",
+      "og": {
+        "og:title": "家庭で楽しむ！高性能空気循環器6選 - Sellemy",
+        "og:description": "空気循環器は、エアコンと併用することで冷暖房効率を向上させたり、部屋全体の空気を均一にする効果があります。特に暑い季節には、冷たい空気を部屋中に行き渡らせるのに役立ちます。本記事では、家庭での使用に適した高性能な空気循環器を6つ紹介し、選び方のポイントも解説します。これを参考に、あなたの生活にぴったりの空気循環器を見つけてください。",
+        "og:image": "https://www.sellemy.jp/img/high-performance-air-circulators-6/high-performance-air-circulators-6.png",
+        "og:type": "article",
+        "og:url": "https://www.sellemy.jp/article/gadget/high-performance-air-circulators-6.html"
+      },
+      "jsonld": [],
+      "internal_links": [
+        "https://www.sellemy.jp/",
+        "https://www.sellemy.jp/article/beauty/index.html",
+        "https://www.sellemy.jp/article/dailygoods/index.html",
+        "https://www.sellemy.jp/article/gadget/",
+        "https://www.sellemy.jp/articles.html",
+        "https://www.sellemy.jp/index.html",
+        "https://www.sellemy.jp/products.html"
+      ],
+      "affiliate_links": [
+        "https://www.amazon.co.jp/dp/B087RJLZMR?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B0BXD3T71S?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B0BZKSFJX3?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B0C6LJ39DL?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B0D4M85Y4R?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B0DXP62GR3?tag=suzuron-22"
+      ],
+      "product_cards": 6,
+      "asins": [
+        "B087RJLZMR",
+        "B0BXD3T71S",
+        "B0BZKSFJX3",
+        "B0C6LJ39DL",
+        "B0D4M85Y4R",
+        "B0DXP62GR3"
+      ],
+      "images": [
+        "/img/sellemy-logo.png",
+        "https://m.media-amazon.com/images/I/51MbiSwDZrL._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/51tHKTeVuML._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/61eO0jcxljL._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/61sygSWH50L._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/61xFc4eFguL._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/7135vO5puAL._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://www.sellemy.jp/img/high-performance-air-circulators-6/high-performance-air-circulators-6.png"
+      ],
+      "fixed_price_hits": []
+    },
+    {
+      "requested_url": "https://www.sellemy.jp/article/gadget/home-projectors-6-recommendations.html",
+      "effective_url": "https://www.sellemy.jp/article/gadget/home-projectors-6-recommendations.html",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "article_file": "home-projectors-6-recommendations.html",
+      "sha256": "784b7a4b96f1ddde4560f889bb6ce886a49ff3018e8cf8df7e6a3f4b85a48d94",
+      "bytes": 18770,
+      "title": "自宅で楽しむ！ホームプロジェクター6選 - Sellemy",
+      "h1": [
+        "自宅で楽しむ！ホームプロジェクター6選"
+      ],
+      "meta_description": "この記事では、自宅で大画面を楽しむためのホームプロジェクターを厳選して6つ紹介します。各商品の特徴や価格帯、選び方のポイントを解説し、初心者の方でも安心して選べるよう情報をお届けします。これを読めば、自宅で映画やスポーツを存分に楽しめるプロジェクター選びがスムーズに進むはずです。",
+      "canonical": "https://www.sellemy.jp/article/gadget/home-projectors-6-recommendations.html",
+      "og": {
+        "og:title": "自宅で楽しむ！ホームプロジェクター6選 - Sellemy",
+        "og:description": "この記事では、自宅で大画面を楽しむためのホームプロジェクターを厳選して6つ紹介します。各商品の特徴や価格帯、選び方のポイントを解説し、初心者の方でも安心して選べるよう情報をお届けします。これを読めば、自宅で映画やスポーツを存分に楽しめるプロジェクター選びがスムーズに進むはずです。",
+        "og:image": "https://www.sellemy.jp/img/home-projectors-6-recommendations/home-projectors-6-recommendations.png",
+        "og:type": "article",
+        "og:url": "https://www.sellemy.jp/article/gadget/home-projectors-6-recommendations.html"
+      },
+      "jsonld": [],
+      "internal_links": [
+        "https://www.sellemy.jp/",
+        "https://www.sellemy.jp/article/beauty/index.html",
+        "https://www.sellemy.jp/article/dailygoods/index.html",
+        "https://www.sellemy.jp/article/gadget/",
+        "https://www.sellemy.jp/articles.html",
+        "https://www.sellemy.jp/index.html",
+        "https://www.sellemy.jp/products.html"
+      ],
+      "affiliate_links": [
+        "https://www.amazon.co.jp/dp/B0DBQHT5M8?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B0F13TN2CP?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B0FX2KQP4D?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B0GTYWMCN2?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B0GXTMLPYB?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B0H3TY7BV7?tag=suzuron-22"
+      ],
+      "product_cards": 6,
+      "asins": [
+        "B0DBQHT5M8",
+        "B0F13TN2CP",
+        "B0FX2KQP4D",
+        "B0GTYWMCN2",
+        "B0GXTMLPYB",
+        "B0H3TY7BV7"
+      ],
+      "images": [
+        "/img/sellemy-logo.png",
+        "https://m.media-amazon.com/images/I/41SzjYqRSuL._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/710A2qK9s0L._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/718tFkH9mCL._AC_SX300_SY300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/71FrdJSDr9L._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/71PJghbWnZL._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/81YHlYlhh5L._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://www.sellemy.jp/img/home-projectors-6-recommendations/home-projectors-6-recommendations.png"
+      ],
+      "fixed_price_hits": []
+    },
+    {
+      "requested_url": "https://www.sellemy.jp/article/gadget/must-have-kitchen-appliances.html",
+      "effective_url": "https://www.sellemy.jp/article/gadget/must-have-kitchen-appliances.html",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "article_file": "must-have-kitchen-appliances.html",
+      "sha256": "082e1cbfa3da071d6bb2edd509b57b863620a4cfa6adf692edd479914529273f",
+      "bytes": 17594,
+      "title": "料理好き必見！キッチン家電6選 - Sellemy",
+      "h1": [
+        "料理好き必見！キッチン家電6選"
+      ],
+      "meta_description": "この記事では、狭いキッチンスペースを最大限に活用するコンパクト設計の製品から、プロの料理人も愛用する高性能な機器まで、多様なキッチン家電を6つ紹介します。それぞれの製品がどのように料理の準備時間を短縮し、料理の質を向上させるのかを詳しく説明し、各価格帯におけるおすすめ商品を提示します。",
+      "canonical": "https://www.sellemy.jp/article/gadget/must-have-kitchen-appliances.html",
+      "og": {
+        "og:title": "料理好き必見！キッチン家電6選 - Sellemy",
+        "og:description": "この記事では、狭いキッチンスペースを最大限に活用するコンパクト設計の製品から、プロの料理人も愛用する高性能な機器まで、多様なキッチン家電を6つ紹介します。それぞれの製品がどのように料理の準備時間を短縮し、料理の質を向上させるのかを詳しく説明し、各価格帯におけるおすすめ商品を提示します。",
+        "og:image": "https://www.sellemy.jp/img/must-have-kitchen-appliances/must-have-kitchen-appliances.png",
+        "og:type": "article",
+        "og:url": "https://www.sellemy.jp/article/gadget/must-have-kitchen-appliances.html"
+      },
+      "jsonld": [],
+      "internal_links": [
+        "https://www.sellemy.jp/",
+        "https://www.sellemy.jp/article/beauty/index.html",
+        "https://www.sellemy.jp/article/dailygoods/index.html",
+        "https://www.sellemy.jp/article/gadget/",
+        "https://www.sellemy.jp/articles.html",
+        "https://www.sellemy.jp/index.html",
+        "https://www.sellemy.jp/products.html"
+      ],
+      "affiliate_links": [
+        "https://www.amazon.co.jp/dp/B082NLLSGX?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B08CRZW1JN?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B08G8CW3TM?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B08GSHPC6G?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B0C9QBPQGP?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B0CCXW4LHR?tag=suzuron-22"
+      ],
+      "product_cards": 6,
+      "asins": [
+        "B082NLLSGX",
+        "B08CRZW1JN",
+        "B08G8CW3TM",
+        "B08GSHPC6G",
+        "B0C9QBPQGP",
+        "B0CCXW4LHR"
+      ],
+      "images": [
+        "/img/sellemy-logo.png",
+        "https://m.media-amazon.com/images/I/51LbRrhOiTL.__AC_SX300_SY300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/51r4HqqC50L._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/51sRH3rFGWL._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/619N6veoaNL._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/61PuoCEGHVL._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/81bRUZqyQDL._AC_SX342_SY445_QL70_ML2_.jpg",
+        "https://www.sellemy.jp/img/must-have-kitchen-appliances/must-have-kitchen-appliances.png"
+      ],
+      "fixed_price_hits": []
+    },
+    {
+      "requested_url": "https://www.sellemy.jp/article/gadget/smart-home-appliances-top-6.html",
+      "effective_url": "https://www.sellemy.jp/article/gadget/smart-home-appliances-top-6.html",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "article_file": "smart-home-appliances-top-6.html",
+      "sha256": "3fa5f5da3eb336be3c9fdf4b8c05830d159c2c2c254ffeaafed816f2b9b556cf",
+      "bytes": 18533,
+      "title": "家事効率アップ！スマート家電6選 - Sellemy",
+      "h1": [
+        "家事効率アップ！スマート家電6選"
+      ],
+      "meta_description": "この記事では、家事の効率を向上させるスマート家電6選を紹介します。各製品の特徴やどのようにして日常生活を助けてくれるのかを解説し、どの製品が自分のニーズに最適かを判断する手助けをします。低価格帯から高価格帯まで幅広くカバーしており、どんな予算にも対応可能です。",
+      "canonical": "https://www.sellemy.jp/article/gadget/smart-home-appliances-top-6.html",
+      "og": {
+        "og:title": "家事効率アップ！スマート家電6選 - Sellemy",
+        "og:description": "この記事では、家事の効率を向上させるスマート家電6選を紹介します。各製品の特徴やどのようにして日常生活を助けてくれるのかを解説し、どの製品が自分のニーズに最適かを判断する手助けをします。低価格帯から高価格帯まで幅広くカバーしており、どんな予算にも対応可能です。",
+        "og:image": "https://www.sellemy.jp/img/smart-home-appliances-top-6/smart-home-appliances-top-6.png",
+        "og:type": "article",
+        "og:url": "https://www.sellemy.jp/article/gadget/smart-home-appliances-top-6.html"
+      },
+      "jsonld": [],
+      "internal_links": [
+        "https://www.sellemy.jp/",
+        "https://www.sellemy.jp/article/beauty/index.html",
+        "https://www.sellemy.jp/article/dailygoods/index.html",
+        "https://www.sellemy.jp/article/gadget/",
+        "https://www.sellemy.jp/articles.html",
+        "https://www.sellemy.jp/index.html",
+        "https://www.sellemy.jp/products.html"
+      ],
+      "affiliate_links": [
+        "https://www.amazon.co.jp/dp/B08BN8WSGZ?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B092ZN58ZH?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B09B8P3RK1?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B09XMZQMBP?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B0BMDRHPBQ?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B0DSPXCM1J?tag=suzuron-22"
+      ],
+      "product_cards": 6,
+      "asins": [
+        "B08BN8WSGZ",
+        "B092ZN58ZH",
+        "B09B8P3RK1",
+        "B09XMZQMBP",
+        "B0BMDRHPBQ",
+        "B0DSPXCM1J"
+      ],
+      "images": [
+        "/img/sellemy-logo.png",
+        "https://m.media-amazon.com/images/I/319V2H4n9ZL._SX342_SY445_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/51UBno4SdFL._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/51Yy3sEziFL._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/61ojHWVWnaL._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/61sm8ig+vZL._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/71XyblKq8TL._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://www.sellemy.jp/img/smart-home-appliances-top-6/smart-home-appliances-top-6.png"
+      ],
+      "fixed_price_hits": []
+    },
+    {
+      "requested_url": "https://www.sellemy.jp/article/gadget/stay-cool-at-home-6-best-evaporative-coolers.html",
+      "effective_url": "https://www.sellemy.jp/article/gadget/stay-cool-at-home-6-best-evaporative-coolers.html",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "article_file": "stay-cool-at-home-6-best-evaporative-coolers.html",
+      "sha256": "19c07371c90857b0b2c648fc8ffbb47e6aa053e655888a06148cf5f45cf54e29",
+      "bytes": 16640,
+      "title": "自宅で涼しく過ごす！冷風扇6選 - Sellemy",
+      "h1": [
+        "自宅で涼しく過ごす！冷風扇6選"
+      ],
+      "meta_description": "この記事では、自宅で快適に過ごすための冷風扇を6つ厳選してご紹介します。冷風扇は、電気代を抑えながら自然な涼しさを提供する便利なアイテムです。ロー価格帯から高価格帯まで、さまざまな特徴を持つ冷風扇を取り揃えています。購入の際に注目すべきポイントも解説していますので、ぜひ参考にしてください。",
+      "canonical": "https://www.sellemy.jp/article/gadget/stay-cool-at-home-6-best-evaporative-coolers.html",
+      "og": {
+        "og:title": "自宅で涼しく過ごす！冷風扇6選 - Sellemy",
+        "og:description": "この記事では、自宅で快適に過ごすための冷風扇を6つ厳選してご紹介します。冷風扇は、電気代を抑えながら自然な涼しさを提供する便利なアイテムです。ロー価格帯から高価格帯まで、さまざまな特徴を持つ冷風扇を取り揃えています。購入の際に注目すべきポイントも解説していますので、ぜひ参考にしてください。",
+        "og:image": "https://www.sellemy.jp/img/stay-cool-at-home-6-best-evaporative-coolers/stay-cool-at-home-6-best-evaporative-coolers.png",
+        "og:type": "article",
+        "og:url": "https://www.sellemy.jp/article/gadget/stay-cool-at-home-6-best-evaporative-coolers.html"
+      },
+      "jsonld": [],
+      "internal_links": [
+        "https://www.sellemy.jp/",
+        "https://www.sellemy.jp/article/beauty/index.html",
+        "https://www.sellemy.jp/article/dailygoods/index.html",
+        "https://www.sellemy.jp/article/gadget/",
+        "https://www.sellemy.jp/articles.html",
+        "https://www.sellemy.jp/index.html",
+        "https://www.sellemy.jp/products.html"
+      ],
+      "affiliate_links": [
+        "https://www.amazon.co.jp/dp/B08Y1D91M7?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B08Y5MPFBX?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B0C2SXB2KF?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B0CW1HCPTF?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B0CW1KMTKY?tag=suzuron-22",
+        "https://www.amazon.co.jp/dp/B0DZNLC1ZP?tag=suzuron-22"
+      ],
+      "product_cards": 6,
+      "asins": [
+        "B08Y1D91M7",
+        "B08Y5MPFBX",
+        "B0C2SXB2KF",
+        "B0CW1HCPTF",
+        "B0CW1KMTKY",
+        "B0DZNLC1ZP"
+      ],
+      "images": [
+        "/img/sellemy-logo.png",
+        "https://m.media-amazon.com/images/I/418Ashwj+JS._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/51+qav4thDL._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/519ZS3oG5TL._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/51QMYmwgukL._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/51tkUxxZ+5L._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://m.media-amazon.com/images/I/51u6RlWondL._AC_SY300_SX300_QL70_ML2_.jpg",
+        "https://www.sellemy.jp/img/stay-cool-at-home-6-best-evaporative-coolers/stay-cool-at-home-6-best-evaporative-coolers.png"
+      ],
+      "fixed_price_hits": []
+    }
+  ],
+  "supporting": {
+    "sitemap.xml": {
+      "http_status": 200,
+      "effective_url": "https://www.sellemy.jp/sitemap.xml",
+      "content_type": "application/xml",
+      "sha256": "34bb4a4c7bfdd4ad89fad2ff0e0fe3e177759a0021aaa87bbf5e160f7d1c9e3f",
+      "bytes": 5066,
+      "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n  <url>\n    <loc>https://www.sellemy.jp/</loc>\n  </url>\n  <url>\n    <loc>https://www.sellemy.jp/articles.html</loc>\n  </url>\n  <url>\n    <loc>https://www.sellemy.jp/products.html</loc>\n  </url>\n  <url>\n    <loc>https://www.sellemy.jp/article/beauty/</loc>\n  </url>\n  <url>\n    <loc>https://www.sellemy.jp/article/dailygoods/</loc>\n  </url>\n  <url>\n    <loc>https://www.sellemy.jp/article/gadget/</loc>\n  </url>\n  <url>\n    <loc>https://www.sellemy.jp/article/dailygoods/best-cooking-tools-6-selection.html</loc>\n    <lastmod>2025-06-03</lastmod>\n  </url>\n  <url>\n    <loc>https://www.sellemy.jp/article/dailygoods/enjoy-refreshing-shower-heads-6-picks.html</loc>\n    <lastmod>2025-06-03</lastmod>\n  </url>\n  <url>\n    <loc>https://www.sellemy.jp/article/beauty/summer-skin-protection-primers-6-choices.html</loc>\n    <lastmod>2025-06-03</lastmod>\n  </url>\n  <url>\n    <loc>https://www.sellemy.jp/article/beauty/after-sun-lotion-6-choices.html</loc>\n    <lastmod>2025-06-03</lastmod>\n  </url>\n  <url>\n    <loc>https://www.sellemy.jp/article/beauty/summer-nail-polish-6-selection.html</loc>\n    <lastmod>2025-06-03</lastmod>\n  </url>\n  <url>\n    <loc>https://www.sellemy.jp/article/dailygoods/cool-bedding-6-selection.html</loc>\n    <lastmod>2025-06-03</lastmod>\n  </url>\n  <url>\n    <loc>https://www.sellemy.jp/article/beauty/best-vitamin-e-serums-for-summer.html</loc>\n    <lastmod>2025-05-22</lastmod>\n  </url>\n  <url>\n    <loc>https://www.sellemy.jp/article/dailygoods/foot-massagers-for-summer-relaxation-6-picks.html</loc>\n    <lastmod>2025-05-20</lastmod>\n  </url>\n  <url>\n    <loc>https://www.sellemy.jp/article/gadget/stay-cool-at-home-6-best-evaporative-coolers.html</loc>\n    <lastmod>2025-05-25</lastmod>\n  </url>\n  <url>\n    <loc>https://www.sellemy.jp/article/gadget/high-performance-air-circulators-6.html</loc>\n    <lastmod>2025-05-26</lastmod>\n  </url>\n  <url>\n    <loc>https://www.sellemy.jp/article/gadget/sleep-aid-devices-6-selection.html</loc>\n    <lastmod>2025-05-27</lastmod>\n  </url>\n  <url>\n    <loc>https://www.sellemy.jp/article/gadget/home-projectors-6-recommendations.html</loc>\n    <lastmod>2025-05-28</lastmod>\n  </url>\n  <url>\n    <loc>https://www.sellemy.jp/article/gadget/best-high-quality-earphones-6-picks.html</loc>\n    <lastmod>2025-05-29</lastmod>\n  </url>\n  <url>\n    <loc>https://www.sellemy.jp/article/beauty/best-face-powders-6-picks.html</loc>\n    <lastmod>2025-05-30</lastmod>\n  </url>\n  <url>\n    <loc>https://www.sellemy.jp/article/gadget/essential-portable-water-bottles-6-choices.html</loc>\n    <lastmod>2025-05-31</lastmod>\n  </url>\n  <url>\n    <loc>https://www.sellemy.jp/article/dailygoods/cool-towels-for-summer-6-picks.html</loc>\n    <lastmod>2025-06-01</lastmod>\n  </url>\n  <url>\n    <loc>https://www.sellemy.jp/article/gadget/enjoy-summer-portable-fans-6-picks.html</loc>\n    <lastmod>2025-06-02</lastmod>\n  </url>\n  <url>\n    <loc>https://www.sellemy.jp/article/dailygoods/easy-aroma-candles-6-picks.html</loc>\n    <lastmod>2025-05-16</lastmod>\n  </url>\n  <url>\n    <loc>https://www.sellemy.jp/article/beauty/summer-refresh-body-scrubs-6-picks.html</loc>\n    <lastmod>2025-05-16</lastmod>\n  </url>\n  <url>\n    <loc>https://www.sellemy.jp/article/gadget/summer-comfort-fan-selection.html</loc>\n    <lastmod>2025-05-16</lastmod>\n  </url>\n  <url>\n    <loc>https://www.sellemy.jp/article/gadget/comfortable-morning-toasters.html</loc>\n    <lastmod>2025-05-16</lastmod>\n  </url>\n  <url>\n    <loc>https://www.sellemy.jp/article/gadget/air-purifiers-top-6.html</loc>\n    <lastmod>2025-05-16</lastmod>\n  </url>\n  <url>\n    <loc>https://www.sellemy.jp/article/beauty/summer-sunscreen-top6.html</loc>\n    <lastmod>2025-05-05</lastmod>\n  </url>\n  <url>\n    <loc>https://www.sellemy.jp/article/gadget/beginner-friendly-coffee-makers.html</loc>\n    <lastmod>2025-05-01</lastmod>\n  </url>\n  <url>\n    <loc>https://www.sellemy.jp/article/beauty/mineral-foundation-six-selection.html</loc>\n    <lastmod>2025-05-01</lastmod>\n  </url>\n  <url>\n    <loc>https://www.sellemy.jp/article/gadget/must-have-kitchen-appliances.html</loc>\n    <lastmod>2025-05-01</lastmod>\n  </url>\n  <url>\n    <loc>https://www.sellemy.jp/article/beauty/seasonal-moisturizing-creams-6.html</loc>\n    <lastmod>2025-05-01</lastmod>\n  </url>\n  <url>\n    <loc>https://www.sellemy.jp/article/gadget/health-management-blood-pressure-monitors.html</loc>\n    <lastmod>2025-05-01</lastmod>\n  </url>\n  <url>\n    <loc>https://www.sellemy.jp/article/dailygoods/home-relaxation-goods-6-selection.html</loc>\n    <lastmod>2025-05-01</lastmod>\n  </url>\n  <url>\n    <loc>https://www.sellemy.jp/article/gadget/smart-home-appliances-top-6.html</loc>\n    <lastmod>2025-05-01</lastmod>\n  </url>\n  <url>\n    <loc>https://www.sellemy.jp/article/dailygoods/eco-friendly-detergents-6picks.html</loc>\n    <lastmod>2025-05-01</lastmod>\n  </url>\n  <url>\n    <loc>https://www.sellemy.jp/article/beauty/vitamin-c-serums.html</loc>\n    <lastmod>2025-04-30</lastmod>\n  </url>\n</urlset>\n"
+    },
+    "robots.txt": {
+      "http_status": 200,
+      "effective_url": "https://www.sellemy.jp/robots.txt",
+      "content_type": "text/plain; charset=utf-8",
+      "sha256": "bb78a26a40bda5c74f37e3e5a204065e39d92fd9cf0e606f7d9499ab022c0448",
+      "bytes": 68,
+      "text": "User-agent: *\nAllow: /\n\nSitemap: https://www.sellemy.jp/sitemap.xml\n"
+    }
+  },
+  "git": {
+    "head": "50b2a50fd7d1f39af3b4bb98eacd137cde7617b8",
+    "origin_main": "50b2a50fd7d1f39af3b4bb98eacd137cde7617b8",
+    "remote": "https://github.com/KickstartCoJP/sellemy.git",
+    "status": ""
+  }
+}

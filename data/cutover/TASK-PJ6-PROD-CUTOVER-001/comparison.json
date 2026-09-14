@@ -1,0 +1,1074 @@
+{
+  "task_id": "TASK-PJ6-PROD-CUTOVER-001",
+  "production_commit": "50b2a50fd7d1f39af3b4bb98eacd137cde7617b8",
+  "urls": [
+    {
+      "url": "https://www.sellemy.jp/article/gadget/air-purifiers-top-6.html",
+      "checks": {
+        "same_url": true,
+        "http_200": true,
+        "title_preserved": true,
+        "h1_preserved": true,
+        "meta_preserved": true,
+        "og_preserved": true,
+        "jsonld_preserved": true,
+        "internal_links_preserved": true,
+        "canonical_added": true,
+        "cards_6": true,
+        "asins_6": true,
+        "affiliate_links": true,
+        "fixed_price_0": true
+      },
+      "pass": true,
+      "before_sha256": "f250827d424e6c9a0fcaacdecca3b6db774ca419eb1c4145384305cefe769a50",
+      "after_sha256": "955bfd8c5d9bf726946faea48f8f2180e0b36d3dccc68d7588047f1a10f5822d",
+      "after": {
+        "cards": 6,
+        "asins": 6,
+        "affiliate_links": 6,
+        "images": 8
+      }
+    },
+    {
+      "url": "https://www.sellemy.jp/article/gadget/beginner-friendly-coffee-makers.html",
+      "checks": {
+        "same_url": true,
+        "http_200": true,
+        "title_preserved": true,
+        "h1_preserved": true,
+        "meta_preserved": true,
+        "og_preserved": true,
+        "jsonld_preserved": true,
+        "internal_links_preserved": true,
+        "canonical_added": true,
+        "cards_6": true,
+        "asins_6": true,
+        "affiliate_links": true,
+        "fixed_price_0": true
+      },
+      "pass": true,
+      "before_sha256": "2a6f13e9c6ba7d490b71086b0c0f314326811ee87be69a89b7940f7d55b857b2",
+      "after_sha256": "5bd486cc7e07c0cb40fd2b30de08d920a97b62d4988964f8f17fa41237514b96",
+      "after": {
+        "cards": 6,
+        "asins": 6,
+        "affiliate_links": 6,
+        "images": 8
+      }
+    },
+    {
+      "url": "https://www.sellemy.jp/article/gadget/best-high-quality-earphones-6-picks.html",
+      "checks": {
+        "same_url": true,
+        "http_200": true,
+        "title_preserved": true,
+        "h1_preserved": true,
+        "meta_preserved": true,
+        "og_preserved": true,
+        "jsonld_preserved": true,
+        "internal_links_preserved": true,
+        "canonical_added": true,
+        "cards_6": true,
+        "asins_6": true,
+        "affiliate_links": true,
+        "fixed_price_0": true
+      },
+      "pass": true,
+      "before_sha256": "62748d7e70d6a3d9f5df483434d4b8832ee50966f43cb015b5b4153cd9f0a061",
+      "after_sha256": "f4a08846b600bccaf2af608674cc7adb1618c694d3d68645f50d8c190c552e92",
+      "after": {
+        "cards": 6,
+        "asins": 6,
+        "affiliate_links": 6,
+        "images": 8
+      }
+    },
+    {
+      "url": "https://www.sellemy.jp/article/gadget/comfortable-morning-toasters.html",
+      "checks": {
+        "same_url": true,
+        "http_200": true,
+        "title_preserved": true,
+        "h1_preserved": true,
+        "meta_preserved": true,
+        "og_preserved": true,
+        "jsonld_preserved": true,
+        "internal_links_preserved": true,
+        "canonical_added": true,
+        "cards_6": true,
+        "asins_6": true,
+        "affiliate_links": true,
+        "fixed_price_0": true
+      },
+      "pass": true,
+      "before_sha256": "e5e45c137fc1c7c82b499c926bc8ad47895618ec548427079cb5fb7b774771a3",
+      "after_sha256": "2c4605a4e1df39befe13a0ff55e043e624809787dd99504bb6707c10f7f558fd",
+      "after": {
+        "cards": 6,
+        "asins": 6,
+        "affiliate_links": 6,
+        "images": 8
+      }
+    },
+    {
+      "url": "https://www.sellemy.jp/article/gadget/enjoy-summer-portable-fans-6-picks.html",
+      "checks": {
+        "same_url": true,
+        "http_200": true,
+        "title_preserved": true,
+        "h1_preserved": true,
+        "meta_preserved": true,
+        "og_preserved": true,
+        "jsonld_preserved": true,
+        "internal_links_preserved": true,
+        "canonical_added": true,
+        "cards_6": true,
+        "asins_6": true,
+        "affiliate_links": true,
+        "fixed_price_0": true
+      },
+      "pass": true,
+      "before_sha256": "d7bc8e98c2c277548e466c1fa9466403dc2c88dc955d388a092b6fdd1acdc22b",
+      "after_sha256": "87eac7d0f26216c19bea8ac423b7020949dadc9a274c2447925ee4d3b750f269",
+      "after": {
+        "cards": 6,
+        "asins": 6,
+        "affiliate_links": 6,
+        "images": 8
+      }
+    },
+    {
+      "url": "https://www.sellemy.jp/article/gadget/high-performance-air-circulators-6.html",
+      "checks": {
+        "same_url": true,
+        "http_200": true,
+        "title_preserved": true,
+        "h1_preserved": true,
+        "meta_preserved": true,
+        "og_preserved": true,
+        "jsonld_preserved": true,
+        "internal_links_preserved": true,
+        "canonical_added": true,
+        "cards_6": true,
+        "asins_6": true,
+        "affiliate_links": true,
+        "fixed_price_0": true
+      },
+      "pass": true,
+      "before_sha256": "ce9040bed219c980104afc4467e89f302e219ad7f03d3e959d3ad3405d654444",
+      "after_sha256": "a3b97f891fa515cffa46db013044520b0fbb571e75ba53b2bf1f51124e33d519",
+      "after": {
+        "cards": 6,
+        "asins": 6,
+        "affiliate_links": 6,
+        "images": 8
+      }
+    },
+    {
+      "url": "https://www.sellemy.jp/article/gadget/home-projectors-6-recommendations.html",
+      "checks": {
+        "same_url": true,
+        "http_200": true,
+        "title_preserved": true,
+        "h1_preserved": true,
+        "meta_preserved": true,
+        "og_preserved": true,
+        "jsonld_preserved": true,
+        "internal_links_preserved": true,
+        "canonical_added": true,
+        "cards_6": true,
+        "asins_6": true,
+        "affiliate_links": true,
+        "fixed_price_0": true
+      },
+      "pass": true,
+      "before_sha256": "64fe03329d205b5849e5ee24ba14dd05e2ab25f50cd6a053658f61a57d21ffd4",
+      "after_sha256": "784b7a4b96f1ddde4560f889bb6ce886a49ff3018e8cf8df7e6a3f4b85a48d94",
+      "after": {
+        "cards": 6,
+        "asins": 6,
+        "affiliate_links": 6,
+        "images": 8
+      }
+    },
+    {
+      "url": "https://www.sellemy.jp/article/gadget/must-have-kitchen-appliances.html",
+      "checks": {
+        "same_url": true,
+        "http_200": true,
+        "title_preserved": true,
+        "h1_preserved": true,
+        "meta_preserved": true,
+        "og_preserved": true,
+        "jsonld_preserved": true,
+        "internal_links_preserved": true,
+        "canonical_added": true,
+        "cards_6": true,
+        "asins_6": true,
+        "affiliate_links": true,
+        "fixed_price_0": true
+      },
+      "pass": true,
+      "before_sha256": "537faf1f057070c0acd5eb7f542ea8480fb37394a90923964e0c8df64963398d",
+      "after_sha256": "082e1cbfa3da071d6bb2edd509b57b863620a4cfa6adf692edd479914529273f",
+      "after": {
+        "cards": 6,
+        "asins": 6,
+        "affiliate_links": 6,
+        "images": 8
+      }
+    },
+    {
+      "url": "https://www.sellemy.jp/article/gadget/smart-home-appliances-top-6.html",
+      "checks": {
+        "same_url": true,
+        "http_200": true,
+        "title_preserved": true,
+        "h1_preserved": true,
+        "meta_preserved": true,
+        "og_preserved": true,
+        "jsonld_preserved": true,
+        "internal_links_preserved": true,
+        "canonical_added": true,
+        "cards_6": true,
+        "asins_6": true,
+        "affiliate_links": true,
+        "fixed_price_0": true
+      },
+      "pass": true,
+      "before_sha256": "a71fb938af01848a8b67f45bd6e5a3c3de72d423b7fe2ed3546c650852e9db72",
+      "after_sha256": "3fa5f5da3eb336be3c9fdf4b8c05830d159c2c2c254ffeaafed816f2b9b556cf",
+      "after": {
+        "cards": 6,
+        "asins": 6,
+        "affiliate_links": 6,
+        "images": 8
+      }
+    },
+    {
+      "url": "https://www.sellemy.jp/article/gadget/stay-cool-at-home-6-best-evaporative-coolers.html",
+      "checks": {
+        "same_url": true,
+        "http_200": true,
+        "title_preserved": true,
+        "h1_preserved": true,
+        "meta_preserved": true,
+        "og_preserved": true,
+        "jsonld_preserved": true,
+        "internal_links_preserved": true,
+        "canonical_added": true,
+        "cards_6": true,
+        "asins_6": true,
+        "affiliate_links": true,
+        "fixed_price_0": true
+      },
+      "pass": true,
+      "before_sha256": "8d340cdb318f58b04cc839a48f8cbaf42e97669351eccb0135ec175dd9d877c9",
+      "after_sha256": "19c07371c90857b0b2c648fc8ffbb47e6aa053e655888a06148cf5f45cf54e29",
+      "after": {
+        "cards": 6,
+        "asins": 6,
+        "affiliate_links": 6,
+        "images": 8
+      }
+    }
+  ],
+  "images": [
+    {
+      "url": "https://m.media-amazon.com/images/I/319V2H4n9ZL._SX342_SY445_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/418Ashwj+JS._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/41GoLVqG1jL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/41NwNpIRZjL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/41SzjYqRSuL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/41b9k9u3L+L._AC_SX300_SY300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/41x-LaXgA+L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/51+Z-ObWQVL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/51+qav4thDL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/510IyY-VKeL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/519ZS3oG5TL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/51LbRrhOiTL.__AC_SX300_SY300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/51M+eqg1EwL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/51MbiSwDZrL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/51QMYmwgukL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/51TZB-W-8PS._AC_SX300_SY300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/51UBno4SdFL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/51Yy3sEziFL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/51ac6dfSsjL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/51r4HqqC50L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/51sRH3rFGWL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/51tHKTeVuML._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/51tkUxxZ+5L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/51u6RlWondL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/61+xbiggllL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/616WC2+sZhL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/619028Ikj9L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/619N6veoaNL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/61BDKrqgOBL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/61CpeaMhIOL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/61FjZBaYhoL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/61KNOuQ+-aL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/61PuoCEGHVL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/61Zs2PgxcfL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/61aAhpAYBqS._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/61djQzEzpxL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/61eO0jcxljL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/61h6tFOd3oL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/61ojHWVWnaL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/61qlfQpoGAL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/61sm8ig+vZL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/61sygSWH50L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/61xFc4eFguL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/710A2qK9s0L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/7111Y6QnJCL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/7135vO5puAL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/718tFkH9mCL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71D-gxcZD+L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71FrdJSDr9L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71GMx+daLRL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71PJghbWnZL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71XyblKq8TL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71ZCxDnpTML._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71fctVsC7yL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71lM2odim9L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71tXEuVw5fL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/81JnKFd77xL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/81YHlYlhh5L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/81bRUZqyQDL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/81eZfB+FtDL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes_sampled": 32,
+      "pass": true
+    }
+  ],
+  "identity": [
+    {
+      "product_id": "P0001",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0002",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0003",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0004",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0005",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0006",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0007",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0008",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0009",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0010",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0011",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0012",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0013",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0014",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0015",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0016",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0017",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0018",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0019",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0020",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0021",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0022",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0023",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0024",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0025",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0026",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0027",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0028",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0029",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0030",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0031",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0032",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0033",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0034",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0035",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0036",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0037",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0038",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0039",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0040",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0041",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0042",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0043",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0044",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0045",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0046",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0047",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0048",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0049",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0050",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0051",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0052",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0053",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0054",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0055",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0056",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0057",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0058",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0059",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    },
+    {
+      "product_id": "P0060",
+      "asin_in_url": true,
+      "affiliate_tag": true,
+      "image_not_dummy": true
+    }
+  ],
+  "quality": {
+    "writer_10_10": true,
+    "fact_10_10": true,
+    "comparison_10_10": true,
+    "seo_spam_10_10": true,
+    "identity_60_60": true
+  },
+  "supporting": {
+    "sitemap_200": true,
+    "sitemap_10_10": true,
+    "robots_200": true,
+    "robots_allows": true
+  },
+  "pass": true
+}
