@@ -1,0 +1,13 @@
+{
+  "task_id": "TASK-PJ6-PROD-CUTOVER-001",
+  "checked_at": "2026-09-14T17:00:00Z",
+  "production_repo": "/Users/suzukitakayuki/sellemy",
+  "production_db": "/Users/suzukitakayuki/sellemy/data/sellemy.db",
+  "publish_mechanism": "git push origin main",
+  "github_actions_files": [],
+  "launchctl_sellemy_jobs": [],
+  "crontab_sellemy_entries": [],
+  "launchagents_referencing_sellemy": [],
+  "competing_old_route_found": false,
+  "action": "No competing repository workflow or local scheduled writer exists; no legacy route disabled."
+}

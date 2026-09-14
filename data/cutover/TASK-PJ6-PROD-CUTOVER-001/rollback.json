@@ -1,0 +1,9 @@
+{
+  "task_id": "TASK-PJ6-PROD-CUTOVER-001",
+  "before_commit": "f129f20affd9cd53e75b3f144f4e10e4b99c1e64",
+  "before_remote_main": "f129f20affd9cd53e75b3f144f4e10e4b99c1e64",
+  "rollback_ref": "refs/heads/rollback/TASK-PJ6-PROD-CUTOVER-001-before",
+  "remote": "https://github.com/KickstartCoJP/sellemy.git",
+  "restore_method": "git revert the production cutover commit(s), then git push origin main; raw before HTML is retained under before/html",
+  "verified_ref": true
+}

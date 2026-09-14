@@ -1,0 +1,489 @@
+{
+  "mode": "apply",
+  "checked": 60,
+  "verified": 60,
+  "replacement_required": 0,
+  "live_requests": 0,
+  "items": [
+    {
+      "product_id": "P0001",
+      "asin": "B0D86SSFFF",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 13339,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0002",
+      "asin": "B07K7MJ8ZC",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 11600,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0003",
+      "asin": "B0BPK4LCY7",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 22500,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0004",
+      "asin": "B0DBQJBJ2Q",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 48000,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0005",
+      "asin": "B0BGPQWQTT",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 48900,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0006",
+      "asin": "B0CVRNZ92Z",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 45100,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0007",
+      "asin": "B07NRX8J8X",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 1410,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0008",
+      "asin": "B098Q8XPVD",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 5364,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0009",
+      "asin": "B09JVVKRQ1",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 5500,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0010",
+      "asin": "B07ND9HH34",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 8250,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0011",
+      "asin": "B08WHX9GSB",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 8999,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0012",
+      "asin": "B07DTDHP7Q",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 22000,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0013",
+      "asin": "B07YKM3875",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 2580,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0014",
+      "asin": "B0DK4GJXC7",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 3600,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0015",
+      "asin": "B071JTJ76Q",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 5200,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0016",
+      "asin": "B0DQL1GLG3",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 17990,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0017",
+      "asin": "B00A16BT4E",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 13836,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0018",
+      "asin": "B0CBKQZXT7",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 26200,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0019",
+      "asin": "B0DLGXS2DL",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 2780,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0020",
+      "asin": "B09329BFNG",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 3280,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0021",
+      "asin": "B07B677C5Q",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 6480,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0022",
+      "asin": "B01MDO72DX",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 7480,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0023",
+      "asin": "B00PU3PHOQ",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 13670,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0024",
+      "asin": "B0BFGVR839",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 15480,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0025",
+      "asin": "B0GZVZDNQV",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 1614,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0026",
+      "asin": "B0GQ49L6DY",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 1980,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0027",
+      "asin": "B0D49GHC96",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 1498,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0028",
+      "asin": "B0DP97SFL3",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 1780,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0029",
+      "asin": "B0GSQD5K44",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 999,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0030",
+      "asin": "B0DP99ZCSN",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 1700,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0031",
+      "asin": "B087RJLZMR",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 2505,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0032",
+      "asin": "B0DXP62GR3",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 3680,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0033",
+      "asin": "B0D4M85Y4R",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 2993,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0034",
+      "asin": "B0BZKSFJX3",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 7180,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0035",
+      "asin": "B0C6LJ39DL",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 6980,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0036",
+      "asin": "B0BXD3T71S",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 11980,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0037",
+      "asin": "B0GTYWMCN2",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 25190,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0038",
+      "asin": "B0FX2KQP4D",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 5696,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0039",
+      "asin": "B0H3TY7BV7",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 30980,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0040",
+      "asin": "B0GXTMLPYB",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 9999,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0041",
+      "asin": "B0DBQHT5M8",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 46800,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0042",
+      "asin": "B0F13TN2CP",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 142780,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0043",
+      "asin": "B0C9QBPQGP",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 3284,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0044",
+      "asin": "B0CCXW4LHR",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 3980,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0045",
+      "asin": "B082NLLSGX",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 7980,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0046",
+      "asin": "B08GSHPC6G",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 12886,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0047",
+      "asin": "B08CRZW1JN",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 49800,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0048",
+      "asin": "B08G8CW3TM",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 47000,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0049",
+      "asin": "B092ZN58ZH",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 1212,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0050",
+      "asin": "B09XMZQMBP",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 3780,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0051",
+      "asin": "B08BN8WSGZ",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 6800,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0052",
+      "asin": "B09B8P3RK1",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 13980,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0053",
+      "asin": "B0DSPXCM1J",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 4980,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0054",
+      "asin": "B0BMDRHPBQ",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 17000,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0055",
+      "asin": "B08Y1D91M7",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 4980,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0056",
+      "asin": "B0C2SXB2KF",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 4525,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0057",
+      "asin": "B0DZNLC1ZP",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 4314,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0058",
+      "asin": "B0CW1KMTKY",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 12000,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0059",
+      "asin": "B0CW1HCPTF",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 9200,
+      "source": "amazon_live_or_cache"
+    },
+    {
+      "product_id": "P0060",
+      "asin": "B08Y5MPFBX",
+      "status": "verified",
+      "reason": "verified:amazon_asin_and_category",
+      "observed_price": 3616,
+      "source": "amazon_live_or_cache"
+    }
+  ]
+}

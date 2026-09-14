@@ -1,0 +1,705 @@
+{
+  "stage": "Product Discovery",
+  "mode": "apply",
+  "adapter_health": {
+    "amazon_cache": 1598,
+    "yahoo_cache": 490,
+    "amazon_source": "/Users/suzukitakayuki/autosite/amazon_item/product_data.json",
+    "yahoo_source": "/Users/suzukitakayuki/autosite/yahoo_item/product_data_final.json",
+    "rakuten_required": false
+  },
+  "articles": 10,
+  "candidates": 60,
+  "identity_ready": 59,
+  "replacement_required": 1,
+  "results": [
+    {
+      "article_file": "air-purifiers-top-6.html",
+      "theme": "冷暖房効率を上げる！空気清浄機6選",
+      "section_conditions": [
+        "コンパクトで手軽に使える低価格モデル。",
+        "コストパフォーマンスに優れた中価格帯商品。",
+        "高性能で多機能な高級モデル。"
+      ],
+      "discovery_query": "空気清浄機",
+      "source_adapters": [
+        "affiliate_catalog",
+        "autosite_amazon",
+        "autosite_yahoo"
+      ],
+      "candidate_count": 6,
+      "adapter_candidate_count": 0,
+      "identity_ready": 5,
+      "replacement_candidates": [],
+      "items": [
+        {
+          "rank": 1,
+          "product_name": "シャープ 空気清浄機 FU-SC01-W",
+          "asin": "B0D86SSFFF",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 2,
+          "product_name": "シャープ プラズマクラスター IG-KC15-BB",
+          "asin": "B07K7MJ8ZC",
+          "state": "replacement_required",
+          "errors": [
+            "invalid_image_url"
+          ]
+        },
+        {
+          "rank": 3,
+          "product_name": "シャープ 空気清浄機 FU-R50-W",
+          "asin": "B0BPK4LCY7",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 4,
+          "product_name": "ダイキン空気清浄機（加湿無し） MC555A-W",
+          "asin": "B0DBQJBJ2Q",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 5,
+          "product_name": "パナソニック 加湿 空気清浄機 エコナビ搭載 F-VC70XV-W",
+          "asin": "B0BGPQWQTT",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 6,
+          "product_name": "Airdog X1D エアドッグ 省スペースモデル",
+          "asin": "B0CVRNZ92Z",
+          "state": "identity_ready",
+          "errors": []
+        }
+      ]
+    },
+    {
+      "article_file": "beginner-friendly-coffee-makers.html",
+      "theme": "初心者に優しい！コーヒーメーカー6選",
+      "section_conditions": [
+        "手軽でコンパクト、初心者にも扱いやすいモデル。",
+        "多機能でありながら使い勝手が良く、コストパフォーマンスに優れる。",
+        "高品質なコーヒーを追求する方にお勧めのプレミアムモデル。"
+      ],
+      "discovery_query": "コーヒーメーカー",
+      "source_adapters": [
+        "affiliate_catalog",
+        "autosite_amazon",
+        "autosite_yahoo"
+      ],
+      "candidate_count": 6,
+      "adapter_candidate_count": 0,
+      "identity_ready": 6,
+      "replacement_candidates": [],
+      "items": [
+        {
+          "rank": 1,
+          "product_name": "HARIO(ハリオ) ワンカップ コーヒーメーカー",
+          "asin": "B07NRX8J8X",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 2,
+          "product_name": "ティファール コーヒーメーカー メゾン",
+          "asin": "B098Q8XPVD",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 3,
+          "product_name": "メリタ(Melitta) コーヒーメーカー ノアプラス",
+          "asin": "B09JVVKRQ1",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 4,
+          "product_name": "【Toffy/トフィー】 アロマドリップコーヒーメーカー K-CM5",
+          "asin": "B07ND9HH34",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 5,
+          "product_name": "Nestle(ネスレ) ネスカフェ ゴールドブレンド バリスタ 50",
+          "asin": "B08WHX9GSB",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 6,
+          "product_name": "パナソニック コーヒーメーカー 全自動 ミル付き",
+          "asin": "B07DTDHP7Q",
+          "state": "identity_ready",
+          "errors": []
+        }
+      ]
+    },
+    {
+      "article_file": "best-high-quality-earphones-6-picks.html",
+      "theme": "音楽好き必見！高音質イヤホン6選",
+      "section_conditions": [
+        "手軽に試せるイヤホンで、コストを抑えたい方に。",
+        "価格と音質のバランスが取れた、コスパ重視の一品。",
+        "音質にこだわり抜いた、高級志向のイヤホン。"
+      ],
+      "discovery_query": "高音質イヤホン",
+      "source_adapters": [
+        "affiliate_catalog",
+        "autosite_amazon",
+        "autosite_yahoo"
+      ],
+      "candidate_count": 6,
+      "adapter_candidate_count": 1,
+      "identity_ready": 6,
+      "replacement_candidates": [],
+      "items": [
+        {
+          "rank": 1,
+          "product_name": "final (ファイナル) E500 カナル型 イヤホン",
+          "asin": "B07YKM3875",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 2,
+          "product_name": "JVCケンウッド Victor HA-FR29UC-A イヤホン",
+          "asin": "B0DK4GJXC7",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 3,
+          "product_name": "ソニー イヤホン 重低音モデル MDR-XB55AP",
+          "asin": "B071JTJ76Q",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 4,
+          "product_name": "Anker Soundcore C30i（Bluetooth 5.3）",
+          "asin": "B0DQL1GLG3",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 5,
+          "product_name": "SHURE シュア イヤホン 有線 SE215 SPE-A",
+          "asin": "B00A16BT4E",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 6,
+          "product_name": "ソニー ワイヤレスノイズキャンセリングイヤホン WF-1000XM5",
+          "asin": "B0CBKQZXT7",
+          "state": "identity_ready",
+          "errors": []
+        }
+      ]
+    },
+    {
+      "article_file": "comfortable-morning-toasters.html",
+      "theme": "快適な朝を迎える！トースター6選",
+      "section_conditions": [
+        "手軽でシンプルな操作のエントリーモデル。",
+        "コストパフォーマンスに優れた中価格帯。",
+        "高性能で美味しく仕上げるプレミアムモデル。"
+      ],
+      "discovery_query": "トースター",
+      "source_adapters": [
+        "affiliate_catalog",
+        "autosite_amazon",
+        "autosite_yahoo"
+      ],
+      "candidate_count": 6,
+      "adapter_candidate_count": 10,
+      "identity_ready": 6,
+      "replacement_candidates": [
+        {
+          "platform": "amazon",
+          "score": 1,
+          "title": "【医薬部外品】佐藤製薬 エクセルーラ ホワイトニング リンクルリペア 30mL(薬⽤美⽩しわ改善美容液)ブースター美容液/ナイアシンアミド配合",
+          "asin": "B094TZXMG7",
+          "image_url": "https://m.media-amazon.com/images/I/51BgcDMiVQL.__AC_SX300_SY300_QL70_ML2_.jpg",
+          "item_url": null,
+          "price": "￥3,180"
+        },
+        {
+          "platform": "amazon",
+          "score": 1,
+          "title": "Bifesta(ビフェスタ) アンプルミスト セラムモイスト [ 化粧水 美容液 保湿 ] 120ml",
+          "asin": "B0DTHSNQ24",
+          "image_url": "https://m.media-amazon.com/images/I/51rJzuP7lqL.__AC_SX300_SY300_QL70_ML2_.jpg",
+          "item_url": null,
+          "price": "￥1,300"
+        },
+        {
+          "platform": "amazon",
+          "score": 1,
+          "title": "アスタリフト ザ セラム ブライトニング 薬用美白美容液 (お試し約10日分 8mL) 美容液 美白 シミ 予防 ビタミンC 誘導体 [医薬部外品]",
+          "asin": "B0BV2JW53W",
+          "image_url": "https://m.media-amazon.com/images/I/61Junx7WBLL.__AC_SX300_SY300_QL70_ML2_.jpg",
+          "item_url": null,
+          "price": "￥1,320"
+        }
+      ],
+      "items": [
+        {
+          "rank": 1,
+          "product_name": "COMFEE' オーブン・トースター 2枚焼きCF-MD081-BK",
+          "asin": "B0DLGXS2DL",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 2,
+          "product_name": "コイズミ オーブントースター 2枚焼き KOS-1032/K",
+          "asin": "B09329BFNG",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 3,
+          "product_name": "ツインバード オーブントースター 4枚焼き TS-4047W",
+          "asin": "B07B677C5Q",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 4,
+          "product_name": "タイガー魔法瓶(TIGER) オーブントースター KAE-G13NK",
+          "asin": "B01MDO72DX",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 5,
+          "product_name": "アイリスオーヤマ(IRIS OHYAMA) トースター オーブントースター ノンフライヤー PFC-D15A-W",
+          "asin": "B00PU3PHOQ",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 6,
+          "product_name": "Aladdin (アラジン) グラファイト トースター AET-GS13C(G)",
+          "asin": "B0BFGVR839",
+          "state": "identity_ready",
+          "errors": []
+        }
+      ]
+    },
+    {
+      "article_file": "enjoy-summer-portable-fans-6-picks.html",
+      "theme": "夏を楽しむ！アウトドア用携帯扇風機6選",
+      "section_conditions": [
+        "手軽に使えるコンパクトモデル。初めての方におすすめ。",
+        "コスパ抜群の優れた性能。日常使いに最適。",
+        "高品質で長時間使用可能。プロ仕様の一台。"
+      ],
+      "discovery_query": "アウトドア用携帯扇風機",
+      "source_adapters": [
+        "affiliate_catalog",
+        "autosite_amazon",
+        "autosite_yahoo"
+      ],
+      "candidate_count": 6,
+      "adapter_candidate_count": 0,
+      "identity_ready": 6,
+      "replacement_candidates": [],
+      "items": [
+        {
+          "rank": 1,
+          "product_name": "ハンディファン 携帯扇風機",
+          "asin": "B0F2JGDRG5",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 2,
+          "product_name": "Wasuka ハンディファン 携帯扇風機",
+          "asin": "B0DWMRHBHZ",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 3,
+          "product_name": "Aujen 充電式 携帯扇風機",
+          "asin": "B07LBD2Q4S",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 4,
+          "product_name": "リズム(RHYTHM) ハンディファン",
+          "asin": "B0DP97SFL3",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 5,
+          "product_name": "Francfranc フランフラン フレ ハンディファン",
+          "asin": "B0DZGW8288",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 6,
+          "product_name": "ハンディファン 手持ち扇風機 強力送風 冷却プレート",
+          "asin": "B0F7XTDP3X",
+          "state": "identity_ready",
+          "errors": []
+        }
+      ]
+    },
+    {
+      "article_file": "high-performance-air-circulators-6.html",
+      "theme": "家庭で楽しむ！高性能空気循環器6選",
+      "section_conditions": [
+        "お手頃価格で手軽に使えるシンプルモデル。",
+        "コストパフォーマンスに優れた中堅モデル。",
+        "高品質で本格的な性能を持つ上位モデル。"
+      ],
+      "discovery_query": "高性能空気循環器",
+      "source_adapters": [
+        "affiliate_catalog",
+        "autosite_amazon",
+        "autosite_yahoo"
+      ],
+      "candidate_count": 6,
+      "adapter_candidate_count": 0,
+      "identity_ready": 6,
+      "replacement_candidates": [],
+      "items": [
+        {
+          "rank": 1,
+          "product_name": "アイリスオーヤマ サーキュレーター",
+          "asin": "B087RJLZMR",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 2,
+          "product_name": "[山善] 洗える サーキュレーター",
+          "asin": "B0DXP62GR3",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 3,
+          "product_name": "無印良品 360度首振り機能付きサーキュレーター",
+          "asin": "B0D4M85Y4R",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 4,
+          "product_name": "iimono117 サーキュレーター 扇風機 360度回転 自動首振り",
+          "asin": "B0BZKSFJX3",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 5,
+          "product_name": "アイリスオーヤマ サーキュレーター WOOZOO 扇風機",
+          "asin": "B0C6LJ39DL",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 6,
+          "product_name": "[山善] 洗える サーキュレーター YAR-PDW182",
+          "asin": "B0BXD3T71S",
+          "state": "identity_ready",
+          "errors": []
+        }
+      ]
+    },
+    {
+      "article_file": "home-projectors-6-recommendations.html",
+      "theme": "自宅で楽しむ！ホームプロジェクター6選",
+      "section_conditions": [
+        "コンパクトで手軽に使える入門モデル。",
+        "コスパ抜群、機能充実の中堅モデル。",
+        "高品質な映像体験を提供するプレミアムモデル。"
+      ],
+      "discovery_query": "ホームプロジェクター",
+      "source_adapters": [
+        "affiliate_catalog",
+        "autosite_amazon",
+        "autosite_yahoo"
+      ],
+      "candidate_count": 6,
+      "adapter_candidate_count": 0,
+      "identity_ready": 6,
+      "replacement_candidates": [],
+      "items": [
+        {
+          "rank": 1,
+          "product_name": "FUNLOGY Projector",
+          "asin": "B0DLB2J7HT",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 2,
+          "product_name": "[山善] キュリオム プロジェクター 3900ルーメン",
+          "asin": "B07PYVYH77",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 3,
+          "product_name": "BenQ GV11 モバイルプロジェクター 天井投写対応",
+          "asin": "B0BLRX323H",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 4,
+          "product_name": "Anker Nebula Capsule 3 (小型 Google TV搭載 モバイル プロジェクター)",
+          "asin": "B0CJDV213W",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 5,
+          "product_name": "Aladdin X2 Plus アラジン エックス 2 プラス プロジェクター",
+          "asin": "B0BPBJR6V8",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 6,
+          "product_name": "JMGO N1S 4K 3色レーザー プロジェクター",
+          "asin": "B0F13TN2CP",
+          "state": "identity_ready",
+          "errors": []
+        }
+      ]
+    },
+    {
+      "article_file": "must-have-kitchen-appliances.html",
+      "theme": "料理好き必見！キッチン家電6選",
+      "section_conditions": [
+        "手軽に使えるミニフードプロセッサーやブレンダー、コンパクトで使いやすい。",
+        "オートクッカーなど、コスパ最強で毎日の料理に役立つモノ。",
+        "高機能オーブンレンジなど、多彩な機能で本格的な料理ができる。"
+      ],
+      "discovery_query": "キッチン家電",
+      "source_adapters": [
+        "affiliate_catalog",
+        "autosite_amazon",
+        "autosite_yahoo"
+      ],
+      "candidate_count": 6,
+      "adapter_candidate_count": 0,
+      "identity_ready": 6,
+      "replacement_candidates": [],
+      "items": [
+        {
+          "rank": 1,
+          "product_name": "フードプロセッサー LINKChef",
+          "asin": "B0C9QBPQGP",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 2,
+          "product_name": "ハンドブレンダー 電動 ハンドミキサー",
+          "asin": "B0CCXW4LHR",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 3,
+          "product_name": "シャープ 炊飯器 KS-CF05B-W",
+          "asin": "B082NLLSGX",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 4,
+          "product_name": "アイリスオーヤマ(IRIS OHYAMA) 電気圧力鍋",
+          "asin": "B08GSHPC6G",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 5,
+          "product_name": "TOSHIBA(東芝) 食器洗い乾燥機",
+          "asin": "B08CRZW1JN",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 6,
+          "product_name": "シャープ ウォーターオーブン ヘルシオ AX-XJ1-W",
+          "asin": "B08G8CW3TM",
+          "state": "identity_ready",
+          "errors": []
+        }
+      ]
+    },
+    {
+      "article_file": "smart-home-appliances-top-6.html",
+      "theme": "家事効率アップ！スマート家電6選",
+      "section_conditions": [
+        "エントリーモデルでもしっかり機能。手軽に試せるスマート家電。",
+        "コストパフォーマンスに優れ、機能充実の中価格帯スマート家電。",
+        "高性能で多機能、上質な生活を提供するハイエンドモデル。"
+      ],
+      "discovery_query": "スマート家電",
+      "source_adapters": [
+        "affiliate_catalog",
+        "autosite_amazon",
+        "autosite_yahoo"
+      ],
+      "candidate_count": 6,
+      "adapter_candidate_count": 10,
+      "identity_ready": 6,
+      "replacement_candidates": [
+        {
+          "platform": "amazon",
+          "score": 1,
+          "title": "リペア&バランス マイルドアイクリーム 白 20グラム (x 1)",
+          "asin": "B08HV1VVGN",
+          "image_url": "https://m.media-amazon.com/images/I/611w0YST-iL.__AC_SX300_SY300_QL70_ML2_.jpg",
+          "item_url": null,
+          "price": "￥1,080"
+        },
+        {
+          "platform": "amazon",
+          "score": 1,
+          "title": "CLINIQUE クリニーク スマートリペアアイクリーム 15ml[並行輸入品]",
+          "asin": "B09X15JF1L",
+          "image_url": "https://m.media-amazon.com/images/I/61LmOsfPQBL.__AC_SX300_SY300_QL70_ML2_.jpg",
+          "item_url": null,
+          "price": "￥5,580"
+        },
+        {
+          "platform": "amazon",
+          "score": 1,
+          "title": "ジャパンギャルズ ホワイトエッセンス マスク 保湿,紫外線保護 30枚入り",
+          "asin": "B00FFTZ434",
+          "image_url": "https://m.media-amazon.com/images/I/51IlsSbcIPL.__AC_SX300_SY300_QL70_ML2_.jpg",
+          "item_url": null,
+          "price": "￥1,092"
+        }
+      ],
+      "items": [
+        {
+          "rank": 1,
+          "product_name": "TP-Link Tapo スマート LED ランプ 調光タイプ",
+          "asin": "B092ZN58ZH",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 2,
+          "product_name": "SwitchBot スマートプラグ プラグミニ",
+          "asin": "B09XMZQMBP",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 3,
+          "product_name": "リンクジャパン eRemote5+ スマートリモコン",
+          "asin": "B08BN8WSGZ",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 4,
+          "product_name": "Echo Dot (エコードット)",
+          "asin": "B09B8P3RK1",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 5,
+          "product_name": "SwitchBot 指紋認証 スマートロック",
+          "asin": "B0DSPXCM1J",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 6,
+          "product_name": "スマートバスマット体重計",
+          "asin": "B0BMDRHPBQ",
+          "state": "identity_ready",
+          "errors": []
+        }
+      ]
+    },
+    {
+      "article_file": "stay-cool-at-home-6-best-evaporative-coolers.html",
+      "theme": "自宅で涼しく過ごす！冷風扇6選",
+      "section_conditions": [
+        "手軽に使えるシンプルモデル。初心者におすすめ。",
+        "コスパ抜群のバランスモデル。機能も充実。",
+        "高品質で多機能な本格派。快適さを追求する方に。"
+      ],
+      "discovery_query": "冷風扇",
+      "source_adapters": [
+        "affiliate_catalog",
+        "autosite_amazon",
+        "autosite_yahoo"
+      ],
+      "candidate_count": 6,
+      "adapter_candidate_count": 0,
+      "identity_ready": 6,
+      "replacement_candidates": [],
+      "items": [
+        {
+          "rank": 1,
+          "product_name": "スリーアップ 充電式 パーソナルクーラー",
+          "asin": "B08Y1D91M7",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 2,
+          "product_name": "【Toffy/トフィー】 パーソナルクーラー FN12",
+          "asin": "B0C2SXB2KF",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 3,
+          "product_name": "Shop Japan ここ冷え 冷風扇 小型卓上クーラー",
+          "asin": "B0DZNLC1ZP",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 4,
+          "product_name": "[山善] 冷風扇 FCR-D408",
+          "asin": "B0CW1KMTKY",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 5,
+          "product_name": "[山善] 冷風扇 FCR-BWG403",
+          "asin": "B0CW1HCPTF",
+          "state": "identity_ready",
+          "errors": []
+        },
+        {
+          "rank": 6,
+          "product_name": "アイリスオーヤマ 冷風扇 CTF01D",
+          "asin": "B08Y5MPFBX",
+          "state": "identity_ready",
+          "errors": []
+        }
+      ]
+    }
+  ]
+}

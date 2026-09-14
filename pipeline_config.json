@@ -1,0 +1,20 @@
+{
+  "production_repository": "KickstartCoJP/sellemy",
+  "single_route": [
+    "Product Discovery",
+    "Identity/ASIN",
+    "Evidence Collector",
+    "Product DB",
+    "Comparison",
+    "Writer",
+    "FactAudit",
+    "ComparisonAudit",
+    "SEOSpamAudit",
+    "StaticHTML",
+    "Publish"
+  ],
+  "publish_enabled": true,
+  "publish_mechanism": "git push origin main",
+  "validation_article_limit": 10,
+  "note": "Production pipeline is enabled; publication is executed only by an explicit --publish cutover run."
+}

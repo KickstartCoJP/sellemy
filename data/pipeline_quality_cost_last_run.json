@@ -1,0 +1,21 @@
+{
+  "run_id": "RUN-20260914T160752Z",
+  "quality": {
+    "articles_passed": 10,
+    "articles_total": 10,
+    "identity_checks_passed": 60,
+    "identity_checks_total": 60,
+    "amazon_verified_products": 60,
+    "public_fixed_price_hits": 0
+  },
+  "human_confirmation": {
+    "products_requiring_human_confirmation": 0,
+    "rate": 0.0
+  },
+  "generation_cost": {
+    "llm_calls": 0,
+    "estimated_usd": 0.0,
+    "amazon_live_requests": 0,
+    "note": "deterministic production pipeline; observed prices stored internally only"
+  }
+}

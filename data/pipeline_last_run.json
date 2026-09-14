@@ -1,0 +1,984 @@
+{
+  "run_id": "RUN-20260914T160752Z",
+  "status": "ready_for_acceptance",
+  "publish_executed": false,
+  "route": [
+    "Product Discovery",
+    "Identity/ASIN",
+    "Evidence Collector",
+    "Product DB",
+    "Comparison",
+    "Writer",
+    "FactAudit",
+    "ComparisonAudit",
+    "SEOSpamAudit",
+    "StaticHTML",
+    "Publish"
+  ],
+  "discovery": {
+    "candidates": 60,
+    "identity_ready": 59,
+    "replacement_required": 1
+  },
+  "replacement_loop": {
+    "replaced": [],
+    "failed": []
+  },
+  "evidence": {
+    "checked": 60,
+    "verified": 60,
+    "replacement_required": 0
+  },
+  "results": [
+    {
+      "url": "/article/gadget/air-purifiers-top-6.html",
+      "article_file": "air-purifiers-top-6.html",
+      "product_count": 6,
+      "amazon_evidence_ready": true,
+      "identity_consistency_pass": true,
+      "public_fixed_price_hits": [],
+      "writer_status": "pass",
+      "fact_audit": "pass",
+      "comparison_audit": "pass",
+      "seo_spam_audit": "pass",
+      "identity_audit": [
+        {
+          "product_id": "P0001",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0002",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0003",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0004",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0005",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0006",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        }
+      ],
+      "cards": 6,
+      "h1": 1,
+      "sections": [
+        "lowrange",
+        "midrange",
+        "highrange"
+      ],
+      "affiliate_links": 18,
+      "structure_pass": true
+    },
+    {
+      "url": "/article/gadget/beginner-friendly-coffee-makers.html",
+      "article_file": "beginner-friendly-coffee-makers.html",
+      "product_count": 6,
+      "amazon_evidence_ready": true,
+      "identity_consistency_pass": true,
+      "public_fixed_price_hits": [],
+      "writer_status": "pass",
+      "fact_audit": "pass",
+      "comparison_audit": "pass",
+      "seo_spam_audit": "pass",
+      "identity_audit": [
+        {
+          "product_id": "P0007",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0008",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0009",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0010",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0011",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0012",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        }
+      ],
+      "cards": 6,
+      "h1": 1,
+      "sections": [
+        "lowrange",
+        "midrange",
+        "highrange"
+      ],
+      "affiliate_links": 18,
+      "structure_pass": true
+    },
+    {
+      "url": "/article/gadget/best-high-quality-earphones-6-picks.html",
+      "article_file": "best-high-quality-earphones-6-picks.html",
+      "product_count": 6,
+      "amazon_evidence_ready": true,
+      "identity_consistency_pass": true,
+      "public_fixed_price_hits": [],
+      "writer_status": "pass",
+      "fact_audit": "pass",
+      "comparison_audit": "pass",
+      "seo_spam_audit": "pass",
+      "identity_audit": [
+        {
+          "product_id": "P0013",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0014",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0015",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0016",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0017",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0018",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        }
+      ],
+      "cards": 6,
+      "h1": 1,
+      "sections": [
+        "lowrange",
+        "midrange",
+        "highrange"
+      ],
+      "affiliate_links": 18,
+      "structure_pass": true
+    },
+    {
+      "url": "/article/gadget/comfortable-morning-toasters.html",
+      "article_file": "comfortable-morning-toasters.html",
+      "product_count": 6,
+      "amazon_evidence_ready": true,
+      "identity_consistency_pass": true,
+      "public_fixed_price_hits": [],
+      "writer_status": "pass",
+      "fact_audit": "pass",
+      "comparison_audit": "pass",
+      "seo_spam_audit": "pass",
+      "identity_audit": [
+        {
+          "product_id": "P0019",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0020",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0021",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0022",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0023",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0024",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        }
+      ],
+      "cards": 6,
+      "h1": 1,
+      "sections": [
+        "lowrange",
+        "midrange",
+        "highrange"
+      ],
+      "affiliate_links": 18,
+      "structure_pass": true
+    },
+    {
+      "url": "/article/gadget/enjoy-summer-portable-fans-6-picks.html",
+      "article_file": "enjoy-summer-portable-fans-6-picks.html",
+      "product_count": 6,
+      "amazon_evidence_ready": true,
+      "identity_consistency_pass": true,
+      "public_fixed_price_hits": [],
+      "writer_status": "pass",
+      "fact_audit": "pass",
+      "comparison_audit": "pass",
+      "seo_spam_audit": "pass",
+      "identity_audit": [
+        {
+          "product_id": "P0025",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0026",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0027",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0028",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0029",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0030",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        }
+      ],
+      "cards": 6,
+      "h1": 1,
+      "sections": [
+        "lowrange",
+        "midrange",
+        "highrange"
+      ],
+      "affiliate_links": 18,
+      "structure_pass": true
+    },
+    {
+      "url": "/article/gadget/high-performance-air-circulators-6.html",
+      "article_file": "high-performance-air-circulators-6.html",
+      "product_count": 6,
+      "amazon_evidence_ready": true,
+      "identity_consistency_pass": true,
+      "public_fixed_price_hits": [],
+      "writer_status": "pass",
+      "fact_audit": "pass",
+      "comparison_audit": "pass",
+      "seo_spam_audit": "pass",
+      "identity_audit": [
+        {
+          "product_id": "P0031",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0032",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0033",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0034",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0035",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0036",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        }
+      ],
+      "cards": 6,
+      "h1": 1,
+      "sections": [
+        "lowrange",
+        "midrange",
+        "highrange"
+      ],
+      "affiliate_links": 18,
+      "structure_pass": true
+    },
+    {
+      "url": "/article/gadget/home-projectors-6-recommendations.html",
+      "article_file": "home-projectors-6-recommendations.html",
+      "product_count": 6,
+      "amazon_evidence_ready": true,
+      "identity_consistency_pass": true,
+      "public_fixed_price_hits": [],
+      "writer_status": "pass",
+      "fact_audit": "pass",
+      "comparison_audit": "pass",
+      "seo_spam_audit": "pass",
+      "identity_audit": [
+        {
+          "product_id": "P0037",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0038",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0039",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0040",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0041",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0042",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        }
+      ],
+      "cards": 6,
+      "h1": 1,
+      "sections": [
+        "lowrange",
+        "midrange",
+        "highrange"
+      ],
+      "affiliate_links": 18,
+      "structure_pass": true
+    },
+    {
+      "url": "/article/gadget/must-have-kitchen-appliances.html",
+      "article_file": "must-have-kitchen-appliances.html",
+      "product_count": 6,
+      "amazon_evidence_ready": true,
+      "identity_consistency_pass": true,
+      "public_fixed_price_hits": [],
+      "writer_status": "pass",
+      "fact_audit": "pass",
+      "comparison_audit": "pass",
+      "seo_spam_audit": "pass",
+      "identity_audit": [
+        {
+          "product_id": "P0043",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0044",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0045",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0046",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0047",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0048",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        }
+      ],
+      "cards": 6,
+      "h1": 1,
+      "sections": [
+        "lowrange",
+        "midrange",
+        "highrange"
+      ],
+      "affiliate_links": 18,
+      "structure_pass": true
+    },
+    {
+      "url": "/article/gadget/smart-home-appliances-top-6.html",
+      "article_file": "smart-home-appliances-top-6.html",
+      "product_count": 6,
+      "amazon_evidence_ready": true,
+      "identity_consistency_pass": true,
+      "public_fixed_price_hits": [],
+      "writer_status": "pass",
+      "fact_audit": "pass",
+      "comparison_audit": "pass",
+      "seo_spam_audit": "pass",
+      "identity_audit": [
+        {
+          "product_id": "P0049",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0050",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0051",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0052",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0053",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0054",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        }
+      ],
+      "cards": 6,
+      "h1": 1,
+      "sections": [
+        "lowrange",
+        "midrange",
+        "highrange"
+      ],
+      "affiliate_links": 18,
+      "structure_pass": true
+    },
+    {
+      "url": "/article/gadget/stay-cool-at-home-6-best-evaporative-coolers.html",
+      "article_file": "stay-cool-at-home-6-best-evaporative-coolers.html",
+      "product_count": 6,
+      "amazon_evidence_ready": true,
+      "identity_consistency_pass": true,
+      "public_fixed_price_hits": [],
+      "writer_status": "pass",
+      "fact_audit": "pass",
+      "comparison_audit": "pass",
+      "seo_spam_audit": "pass",
+      "identity_audit": [
+        {
+          "product_id": "P0055",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0056",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0057",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0058",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0059",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        },
+        {
+          "product_id": "P0060",
+          "checks": {
+            "name": true,
+            "asin_attr": true,
+            "amazon_identity": true,
+            "affiliate": true,
+            "image": true,
+            "brand": true
+          },
+          "pass": true
+        }
+      ],
+      "cards": 6,
+      "h1": 1,
+      "sections": [
+        "lowrange",
+        "midrange",
+        "highrange"
+      ],
+      "affiliate_links": 18,
+      "structure_pass": true
+    }
+  ]
+}
