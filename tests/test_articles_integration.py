@@ -16,6 +16,8 @@ SLUGS = (
     'robot-vacuum-cleaners-6-picks',
     'electric-kettles-6-picks',
     'wireless-speakers-6-picks',
+    'mobile-batteries-6-picks',
+    'usb-c-chargers-6-picks',
 )
 
 
@@ -26,7 +28,7 @@ def _load(slug: str):
 
 
 class GrowthArticlesRenderAndQaTests(unittest.TestCase):
-    def test_all_four_articles_render_and_pass_review_gate(self):
+    def test_all_writer_articles_render_and_pass_review_gate(self):
         for slug in SLUGS:
             with self.subTest(slug=slug):
                 payload, evidence = _load(slug)
@@ -35,7 +37,7 @@ class GrowthArticlesRenderAndQaTests(unittest.TestCase):
                 self.assertEqual(findings, [], msg=f'{slug}: {findings}')
                 self.assertIn(payload['h1'], html)
 
-    def test_all_four_articles_pass_machine_qa(self):
+    def test_all_writer_articles_pass_machine_qa(self):
         for slug in SLUGS:
             with self.subTest(slug=slug):
                 payload, evidence = _load(slug)
