@@ -48,6 +48,13 @@ class ScheduledRouteTests(unittest.TestCase):
             growth_runtime._normalize_intent('LEDデスクライト 比較'),
         )
 
+    def test_porcelain_parser_preserves_first_modified_path(self):
+        output = ' M data/sellemy.db\n?? article/gadget/new.html\n'
+        self.assertEqual(
+            growth_runtime._parse_porcelain_paths(output),
+            {'data/sellemy.db', 'article/gadget/new.html'},
+        )
+
 
 class RuntimeFailClosedTests(unittest.TestCase):
     @patch.object(growth_runtime, 'require_clean_current_main', return_value='abc')

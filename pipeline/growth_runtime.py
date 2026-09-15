@@ -176,11 +176,16 @@ def _expected_publish_paths(slug: str, category: str) -> set[str]:
     }
 
 
+def _parse_porcelain_paths(output: str) -> set[str]:
+    return {line[3:] for line in output.splitlines() if line}
+
+
 def _publish(slug: str, category: str) -> str:
     expected = _expected_publish_paths(slug, category)
-    changed = {
-        line[3:] for line in _git('status', '--porcelain', '--untracked-files=all').splitlines() if line
-    }
+    status = subprocess.check_output(
+        ['git', 'status', '--porcelain', '--untracked-files=all'], cwd=ROOT, text=True
+    )
+    changed = _parse_porcelain_paths(status)
     if changed != expected:
         raise GrowthRuntimeError(
             f'publish change-set mismatch; expected {sorted(expected)}, observed {sorted(changed)}'
