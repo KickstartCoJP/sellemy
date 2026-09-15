@@ -62,6 +62,23 @@ class PublicationUnitTests(unittest.TestCase):
         self.assertEqual(rows[0]['asin'], 'B0TEST0001')
         self.assertEqual(rows[0]['name'], '旧表示名')
 
+    def test_affiliate_preflight_requires_all_18_links_and_rejects_bad_request(self):
+        links = []
+        for label, base in [('Amazon', 'https://amazon.example/'), ('楽天', 'https://rakuten.example/'), ('Yahoo', 'https://yahoo.example/')]:
+            links.extend([f'<a href="{base}{i}">{label}</a>' for i in range(6)])
+        rendered = ''.join(links)
+        ok = type('Response', (), {'status_code': 302})()
+        with patch.object(publish_payload.requests, 'get', return_value=ok) as get:
+            result = publish_payload._affiliate_preflight(rendered)
+        self.assertEqual(result['count'], 18)
+        self.assertEqual((result['amazon'], result['rakuten'], result['yahoo']), (6, 6, 6))
+        self.assertEqual(get.call_count, 18)
+
+        bad = type('Response', (), {'status_code': 400})()
+        with patch.object(publish_payload.requests, 'get', return_value=bad):
+            with self.assertRaises(RuntimeError):
+                publish_payload._affiliate_preflight(rendered)
+
     def test_category_specific_eyecatch_mapping_exists(self):
         for category in ('beauty', 'dailygoods', 'gadget'):
             metadata = publish_payload.get_category(category)

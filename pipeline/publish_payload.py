@@ -5,6 +5,10 @@ import html
 import json
 import re
 import shutil
+import hashlib
+import subprocess
+import tempfile
+import requests
 import sqlite3
 from datetime import date, datetime, timezone
 from pathlib import Path
@@ -193,6 +197,49 @@ def _update_top() -> dict:
     return {'recent_articles': min(6, len(articles)), 'og_url': 'https://www.sellemy.jp/'}
 
 
+def _affiliate_preflight(rendered: str) -> dict:
+    links = [(html.unescape(url), label) for url, label in re.findall(r'href="([^"]+)"[^>]*>(Amazon|楽天|Yahoo)</a>', rendered)]
+    if len(links) != 18:
+        raise RuntimeError(f'affiliate link count invalid: {len(links)}')
+    status = []
+    for url, label in links:
+        response = requests.get(url, timeout=8, allow_redirects=False, headers={'User-Agent': 'Mozilla/5.0'})
+        code = int(response.status_code)
+        if code < 200 or code >= 400:
+            raise RuntimeError(f'affiliate link preflight failed: {label} HTTP {code}')
+        status.append({'label': label, 'status': code})
+    return {
+        'count': len(status),
+        'amazon': sum(x['label'] == 'Amazon' for x in status),
+        'rakuten': sum(x['label'] == '楽天' for x in status),
+        'yahoo': sum(x['label'] == 'Yahoo' for x in status),
+        'statuses': status,
+    }
+
+
+def _sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def _generate_article_eyecatch(payload: dict, evidence: dict, output: Path) -> None:
+    output.parent.mkdir(parents=True, exist_ok=True)
+    magick = '/opt/homebrew/bin/magick'
+    if not Path(magick).is_file():
+        raise RuntimeError('ImageMagick unavailable; article-specific eyecatch required')
+    with tempfile.TemporaryDirectory(prefix='sellemy-eyecatch-') as tmp:
+        files=[]
+        for i, product in enumerate(evidence['products'], 1):
+            response=requests.get(product['image_url'], timeout=20)
+            response.raise_for_status()
+            path=Path(tmp)/f'p{i}.jpg'; path.write_bytes(response.content); files.append(str(path))
+        montage=Path(tmp)/'montage.png'
+        subprocess.run([magick, 'montage', *files, '-thumbnail', '360x320', '-tile', '3x2', '-geometry', '360x320+22+22', '-background', '#f7f2ef', str(montage)], check=True)
+        subprocess.run([magick, str(montage), '-gravity', 'center', '-background', '#f7f2ef', '-extent', '1536x1024', str(output)], check=True)
+    category = ROOT / get_category(evidence['category']).eyecatch
+    if not output.exists() or output.stat().st_size < 10000 or _sha256(output) == _sha256(category):
+        raise RuntimeError('article-specific eyecatch generation failed')
+
+
 def run(slug: str, *, apply: bool, allow_existing: bool) -> dict:
     payload, evidence = _load(slug)
     rendered = render_article(payload, evidence)
@@ -201,13 +248,12 @@ def run(slug: str, *, apply: bool, allow_existing: bool) -> dict:
     result = {'slug': slug, 'review_findings': [repr(finding) for finding in findings], 'qa': qa, 'applied': False}
     if findings or not qa['overall_pass'] or not apply:
         return result
+    result['affiliate_preflight'] = _affiliate_preflight(rendered)
 
     article_path = ROOT / 'article' / evidence['category'] / f'{slug}.html'
     article_path.write_text(rendered + '\n', encoding='utf-8')
     eyecatch_path = ROOT / 'img' / slug / f'{slug}.png'
-    if not eyecatch_path.exists():
-        eyecatch_path.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copy2(ROOT / get_category(evidence['category']).eyecatch, eyecatch_path)
+    _generate_article_eyecatch(payload, evidence, eyecatch_path)
     result['articles_json'] = _update_articles(payload, evidence, allow_existing=allow_existing)
     result['canonical_product_ids'] = _upsert_products(payload, evidence)
     result['products_json'] = _sync_products_json(payload, evidence)

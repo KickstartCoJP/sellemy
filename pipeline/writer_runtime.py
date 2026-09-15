@@ -23,13 +23,13 @@ WRITER_JSON_SCHEMA = {
         'slug': {'type': 'string'}, 'category': {'type': 'string'}, 'h1': {'type': 'string'},
         'lead': {'type': 'string'}, 'summary': {'type': 'string'},
         'comparison_groups': {
-            'type': 'array', 'minItems': 1, 'maxItems': 6,
+            'type': 'array', 'minItems': 3, 'maxItems': 3,
             'items': {
                 'type': 'object', 'additionalProperties': False,
                 'required': ['id', 'title', 'angle', 'product_refs'],
                 'properties': {
                     'id': {'type': 'string'}, 'title': {'type': 'string'}, 'angle': {'type': 'string'},
-                    'product_refs': {'type': 'array', 'minItems': 1, 'items': {'type': 'string'}},
+                    'product_refs': {'type': 'array', 'minItems': 2, 'maxItems': 2, 'items': {'type': 'string'}},
                 },
             },
         },
@@ -91,7 +91,7 @@ def _prompt(topic: dict, evidence: dict, *, previous_payload: dict | None = None
         'You are the Writer stage for a Japanese product-comparison publication. Return only structured JSON. '
         'Write all public-facing Japanese prose yourself; scripts may not expand, paraphrase, or pad it. Ground claims only in evidence. '
         'Do not state prices, internal workflow terms, ASINs, or affiliate operations. Do not copy raw listing titles verbatim. '
-        'Design 1-6 semantic comparison groups from the topic-specific comparison_axes; groups must partition all six refs exactly once. '
+        'Design exactly 3 semantic comparison groups from the topic-specific comparison_axes, with exactly 2 products in each group; groups must partition all six refs exactly once. '
         'Price may be discussed only as a non-specific constraint, never as a fixed low/mid/high article structure. '
         'Keep descriptions distinct. Targets: lead 180-230, summary 130-170, how_to_choose 190-270, descriptions 320-400, h3 6-45, rendered main 3000-3400. '
         'Preserve slug, category, and refs exactly.\n\n'

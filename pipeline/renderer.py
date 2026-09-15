@@ -12,17 +12,26 @@ RAK = 'https://hb.afl.rakuten.co.jp/hgc/47664979.04b12aff.4766497a.9509b1ad/?pc=
 YAH = 'https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=2770133&pid=891600365&vc_url='
 
 
-def _affiliate_links(amazon_title: str, asin: str, amazon_tag: str):
+def _external_search_key(product_payload: dict, product_evidence: dict) -> str:
+    brand = str(product_evidence.get('brand') or '').replace('のストアを表示', '').replace('ブランド:', '').replace('ブランド：', '').strip(' ：:')
+    name = str(product_payload.get('h3') or '').strip()
+    key = f'{brand} {name}'.strip()
+    key = ''.join(ch if (ch.isalnum() or '\u3040' <= ch <= '\u30ff' or '\u3400' <= ch <= '\u9fff') else ' ' for ch in key)
+    return ' '.join(key.split())[:40].strip()
+
+
+def _affiliate_links(search_key: str, asin: str, amazon_tag: str):
     amazon_url = f'https://www.amazon.co.jp/dp/{asin}?tag={amazon_tag}'
-    rakuten_url = RAK + urllib.parse.quote('https://search.rakuten.co.jp/search/mall/' + amazon_title + '/', safe='')
-    yahoo_url = YAH + urllib.parse.quote('https://shopping.yahoo.co.jp/search?p=' + amazon_title, safe='')
+    rakuten_url = RAK + urllib.parse.quote('https://search.rakuten.co.jp/search/mall/' + search_key + '/', safe='')
+    yahoo_url = YAH + urllib.parse.quote('https://shopping.yahoo.co.jp/search?p=' + search_key, safe='')
     return amazon_url, rakuten_url, yahoo_url
 
 
 def _render_card(product_payload: dict, product_evidence: dict, amazon_tag: str) -> str:
     h3 = html.escape(product_payload['h3'])
     description = html.escape(product_payload['description'])
-    amazon_url, rakuten_url, yahoo_url = _affiliate_links(product_evidence['amazon_title'], product_evidence['asin'], amazon_tag)
+    search_key = _external_search_key(product_payload, product_evidence)
+    amazon_url, rakuten_url, yahoo_url = _affiliate_links(search_key, product_evidence['asin'], amazon_tag)
     return (
         f'<div class="item-card" data-product-id="{html.escape(product_evidence["product_id"])}" data-asin="{html.escape(product_evidence["asin"])}">'
         f'<img src="{html.escape(product_evidence["image_url"])}" alt="{h3}"><h3>{h3}</h3><p>{description}</p>'

@@ -49,8 +49,8 @@ def validate_payload(payload: dict) -> None:
         seen_refs.add(product['ref'])
 
     groups = payload['comparison_groups']
-    if not isinstance(groups, list) or not 1 <= len(groups) <= PRODUCT_COUNT:
-        raise PayloadValidationError('payload.comparison_groups must contain 1-6 groups')
+    if not isinstance(groups, list) or len(groups) != 3:
+        raise PayloadValidationError('payload.comparison_groups must contain exactly 3 groups')
     group_ids, grouped_refs = set(), []
     for i, group in enumerate(groups):
         for field in REQUIRED_GROUP_FIELDS:
@@ -62,8 +62,8 @@ def validate_payload(payload: dict) -> None:
             raise PayloadValidationError(f'duplicate comparison group id: {group["id"]}')
         group_ids.add(group['id'])
         refs = group['product_refs']
-        if not isinstance(refs, list) or not refs:
-            raise PayloadValidationError(f'payload.comparison_groups[{i}].product_refs must be non-empty')
+        if not isinstance(refs, list) or len(refs) != 2:
+            raise PayloadValidationError(f'payload.comparison_groups[{i}].product_refs must contain exactly 2 refs')
         grouped_refs.extend(refs)
     if len(grouped_refs) != len(set(grouped_refs)):
         raise PayloadValidationError('a product ref appears in more than one comparison group')

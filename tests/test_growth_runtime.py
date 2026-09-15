@@ -63,6 +63,15 @@ class ScheduledRouteTests(unittest.TestCase):
             {'data/sellemy.db', 'article/gadget/new.html'},
         )
 
+    def test_compact_search_key_is_bounded(self):
+        key = growth_runtime._compact_search_key({
+            'brand': 'Exampleのストアを表示',
+            'amazon_title': '【2026新モデル】 加湿器 大容量 9L 超高機能 長時間運転 その他の非常に長い販売文句' * 3,
+        })
+        self.assertLessEqual(len(key), 48)
+        self.assertNotIn('ストアを表示', key)
+        self.assertNotIn('【', key)
+
     def test_publication_unit_includes_catalog_and_top(self):
         paths = growth_runtime._expected_publish_paths('new', 'beauty')
         self.assertIn('json/products.json', paths)

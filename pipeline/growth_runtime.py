@@ -88,11 +88,21 @@ def select_viable_topic(
     raise PlanningError('no planned topic passed live product viability: require at least 6 products')
 
 
+def _compact_search_key(product: dict) -> str:
+    brand = re.sub(r'(のストアを表示|ブランド[:：]?)', '', str(product.get('brand') or '')).strip(' ：:')
+    title = re.sub(r'【[^】]{0,40}】|\[[^\]]{0,40}\]', ' ', str(product.get('amazon_title') or ''))
+    title = re.sub(r'\s+', ' ', title).strip()
+    if brand and title.lower().startswith(brand.lower()):
+        title = title[len(brand):].lstrip(' ：:-')
+    core = title[:32].rstrip(' 、,/・')
+    key = f'{brand} {core}'.strip() if brand else core
+    return key[:48].strip()
+
 def build_evidence(topic: dict, products: list[dict], selection: dict | None = None) -> dict:
     evidence_products = []
     for index, product in enumerate(products, 1):
         asin = product['asin'].upper()
-        evidence_products.append({'ref': f'p{index}', 'product_id': f'AMZ-{asin}', **product, 'asin': asin})
+        evidence_products.append({'ref': f'p{index}', 'product_id': f'AMZ-{asin}', **product, 'asin': asin, 'search_key': _compact_search_key(product)})
     evidence = {
         'slug': topic['slug'], 'category': topic['category'],
         'canonical_url': f'{BASE}/article/{topic["category"]}/{topic["slug"]}.html',

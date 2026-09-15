@@ -44,12 +44,22 @@ class ValidatePayloadTests(unittest.TestCase):
         with self.assertRaises(PayloadValidationError):
             validate_payload(payload)
 
-    def test_variable_group_count_passes(self):
+    def test_unbalanced_group_count_fails(self):
         payload = valid_payload()
         payload['comparison_groups'] = [{
             'id': 'all-use-cases', 'title': '用途別に比較', 'angle': '6商品を用途で比較します。',
             'product_refs': [f'p{i}' for i in range(1, 7)],
         }]
+        with self.assertRaises(PayloadValidationError):
+            validate_payload(payload)
+
+    def test_three_groups_of_two_pass(self):
+        payload = valid_payload()
+        payload['comparison_groups'] = [
+            {'id': 'g1', 'title': 'A', 'angle': 'A', 'product_refs': ['p1', 'p2']},
+            {'id': 'g2', 'title': 'B', 'angle': 'B', 'product_refs': ['p3', 'p4']},
+            {'id': 'g3', 'title': 'C', 'angle': 'C', 'product_refs': ['p5', 'p6']},
+        ]
         validate_payload(payload)
 
     def test_wrong_product_count_fails_closed(self):

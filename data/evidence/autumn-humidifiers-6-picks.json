@@ -66,7 +66,8 @@
         "humidify_method",
         "maintenance",
         "tank_capacity"
-      ]
+      ],
+      "search_key": "スイッチボット(SwitchBot) SwitchBot 気化式加湿器 Alexa 大容量 4."
     },
     {
       "ref": "p2",
@@ -81,7 +82,8 @@
       "matched_comparison_axes": [
         "humidify_method",
         "tank_capacity"
-      ]
+      ],
+      "search_key": "Vootic 加湿器 大容量 4.5L 超音波式 ダブル吹出口 6段階ミスト"
     },
     {
       "ref": "p3",
@@ -96,7 +98,8 @@
       "matched_comparison_axes": [
         "humidify_method",
         "tank_capacity"
-      ]
+      ],
+      "search_key": "HAGOOGI 加湿器 大容量 6L 超音波式 45-95%恒湿 上から給水 最"
     },
     {
       "ref": "p4",
@@ -110,7 +113,8 @@
       "selection_score": 0.495,
       "matched_comparison_axes": [
         "tank_capacity"
-      ]
+      ],
+      "search_key": "Yutogen(ユトゲン) 加湿器 大容量 9L 6重除菌浄化&AI知能調湿 加熱＆超音波"
     },
     {
       "ref": "p5",
@@ -124,7 +128,8 @@
       "selection_score": 0.495,
       "matched_comparison_axes": [
         "tank_capacity"
-      ]
+      ],
+      "search_key": "ULRIO 加湿器 ハイブリッド ULRIO (ウルリオ) 1.5倍速で潤う"
     },
     {
       "ref": "p6",
@@ -139,7 +144,8 @@
       "matched_comparison_axes": [
         "humidify_method",
         "tank_capacity"
-      ]
+      ],
+      "search_key": "Ｔｒｏｓｔｏｎ 加湿器 大容量 5L 知能恒湿 ハイブリッド加湿器 加熱式 &超"
     }
   ]
 }
