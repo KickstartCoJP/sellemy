@@ -1,6 +1,8 @@
 from __future__ import annotations
 import re
 
+from category_metadata import get_category
+
 # Machine QA runs mechanical/structural checks against the RENDERED HTML plus the
 # payload/evidence pair that produced it. It is intentionally separate from
 # review_gate.py's content-integrity checks (which run first, before this QA pass).
@@ -136,7 +138,8 @@ def run_qa(html: str, payload: dict, evidence: dict) -> dict:
 
     banned_hits = {}
     all_prose = [payload['h1'], payload['lead'], payload['summary'], payload['how_to_choose'], payload['conclusion']]
-    all_prose += list(payload['comparison_angles'].values())
+    all_prose += [group['title'] for group in payload['comparison_groups']]
+    all_prose += [group['angle'] for group in payload['comparison_groups']]
     all_prose += descriptions + [p['h3'] for p in payload['products']]
     for text in all_prose:
         hits = find_banned_phrases(text)
@@ -158,10 +161,12 @@ def run_qa(html: str, payload: dict, evidence: dict) -> dict:
     results['duplicate_endings'] = dup_end
     results['distinct_openings_endings_pass'] = not dup_open and not dup_end
 
-    results['nav_footer_pass'] = (
-        'site-header' in html and '>Top<' in html and '家電' in html
-        and '<footer>' in html and 'All rights reserved' in html
+    category = get_category(evidence['category'])
+    results['category_pass'] = (
+        f'data-category="{category.slug}"' in html
+        and f'href="{category.article_path}">{category.label}</a>' in html
     )
+    results['nav_footer_pass'] = 'site-header' in html and '>Top<' in html and '<footer>' in html and 'All rights reserved' in html
 
     canonical_count = html.count(f'href="{evidence["canonical_url"]}"')
     results['canonical_count'] = canonical_count
@@ -195,7 +200,7 @@ def run_qa(html: str, payload: dict, evidence: dict) -> dict:
         results['main_in_range'], results['description_hard_min_pass'], results['h3_len_pass'],
         results['banned_phrase_pass'], results['description_uniqueness_pass'],
         results['no_repeated_sentences_pass'], results['distinct_openings_endings_pass'],
-        results['nav_footer_pass'], results['canonical_pass'], results['asin_pass'],
+        results['nav_footer_pass'], results['category_pass'], results['canonical_pass'], results['asin_pass'],
         results['affiliate_pass'], results['image_identity_pass'], results['fixed_price_pass'],
     ])
     return results

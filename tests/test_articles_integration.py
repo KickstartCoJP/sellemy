@@ -18,6 +18,7 @@ SLUGS = (
     'wireless-speakers-6-picks',
     'mobile-batteries-6-picks',
     'usb-c-chargers-6-picks',
+    'led-desk-lights-6-picks',
 )
 
 
@@ -58,6 +59,7 @@ class GrowthArticlesRenderAndQaTests(unittest.TestCase):
                 self.assertTrue(results['canonical_pass'])
                 self.assertTrue(results['fixed_price_pass'], msg=f'{slug} hits={results["fixed_price_hits"]}')
                 self.assertTrue(results['nav_footer_pass'])
+                self.assertTrue(results['category_pass'])
 
 if __name__ == '__main__':
     unittest.main()

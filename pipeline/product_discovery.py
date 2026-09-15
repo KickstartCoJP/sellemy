@@ -70,39 +70,6 @@ def discover(apply=False):
     REPORT.write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding="utf-8")
     return report
 
-ARTICLE_QUERIES={
- "enjoy-summer-portable-fans-6-picks.html":"携帯扇風機 ハンディファン",
- "home-projectors-6-recommendations.html":"プロジェクター 家庭用",
-}
-def _price(value):
- m=re.search(r"[0-9][0-9,]*",str(value or ""))
- return int(m.group().replace(",","")) if m else None
-def replace_required(product_ids):
- adapter=AutositeDiscoveryAdapter();replaced=[];failed=[]
- with connect() as c:
-  used={x[0] for x in c.execute("SELECT asin FROM products WHERE asin IS NOT NULL")}
-  for pid in product_ids:
-   row=c.execute("SELECT * FROM products WHERE product_id=?",(pid,)).fetchone()
-   if not row:continue
-   query=ARTICLE_QUERIES.get(row["article_file"])
-   if not query:failed.append({"product_id":pid,"reason":"no_discovery_query"});continue
-   siblings=c.execute("SELECT product_id FROM products WHERE article_file=? ORDER BY product_id",(row["article_file"],)).fetchall()
-   slot=[x[0] for x in siblings].index(pid);band=min(slot//2,2)
-   candidates=[x for x in adapter.search_amazon_live(query,limit=12)
-    if x.get("asin") not in used and x.get("title") and x.get("image_url")]
-   candidates=[x for x in candidates if _price(x.get("price")) is not None]
-   candidates.sort(key=lambda x:_price(x["price"]))
-   buckets=[candidates[:2],candidates[max(0,len(candidates)//2-1):len(candidates)//2+1],candidates[-2:]]
-   choice=(buckets[band] or candidates)[0] if candidates else None
-   if not choice:failed.append({"product_id":pid,"reason":"no_valid_amazon_candidate"});continue
-   asin=choice["asin"];url=f"https://www.amazon.co.jp/dp/{asin}?tag=suzuron-22"
-   c.execute("""UPDATE products SET canonical_name=?,asin=?,brand=?,amazon_title=?,amazon_url=?,image_url=?,
-    observed_price=?,observed_at=NULL,status='discovered' WHERE product_id=?""",
-    (choice["title"],asin,choice.get("brand"),choice["title"],url,choice["image_url"],_price(choice.get("price")),pid))
-   used.add(asin);replaced.append({"product_id":pid,"asin":asin,"title":choice["title"],"price_band":("low","mid","high")[band]})
-  c.commit()
- return {"replaced":replaced,"failed":failed}
-
 if __name__=="__main__":
     import argparse
     p=argparse.ArgumentParser();p.add_argument("--apply",action="store_true");a=p.parse_args()

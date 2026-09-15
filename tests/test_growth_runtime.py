@@ -11,6 +11,7 @@ sys.path.insert(0, str(ROOT / 'pipeline'))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import growth_runtime  # noqa: E402
+import planning_runtime  # noqa: E402
 import writer_runtime  # noqa: E402
 from fixtures import valid_evidence, valid_payload  # noqa: E402
 
@@ -44,9 +45,16 @@ class ScheduledRouteTests(unittest.TestCase):
 
     def test_search_intent_normalization_removes_editorial_suffixes(self):
         self.assertEqual(
-            growth_runtime._normalize_intent('LED デスクライト おすすめ6選'),
-            growth_runtime._normalize_intent('LEDデスクライト 比較'),
+            planning_runtime._normalize('LED デスクライト おすすめ6選'),
+            planning_runtime._normalize('LEDデスクライト 比較'),
         )
+
+    def test_production_entry_has_no_finite_topic_queue(self):
+        source = (ROOT / 'pipeline' / 'growth_runtime.py').read_text(encoding='utf-8')
+        self.assertNotIn('growth_topics', source)
+        self.assertNotIn('def next_topic', source)
+        self.assertNotIn('TOPICS =', source)
+        self.assertIn('plan_next_topic', source)
 
     def test_porcelain_parser_preserves_first_modified_path(self):
         output = ' M data/sellemy.db\n?? article/gadget/new.html\n'
@@ -55,12 +63,24 @@ class ScheduledRouteTests(unittest.TestCase):
             {'data/sellemy.db', 'article/gadget/new.html'},
         )
 
+    def test_publication_unit_includes_catalog_and_top(self):
+        paths = growth_runtime._expected_publish_paths('new', 'beauty')
+        self.assertIn('json/products.json', paths)
+        self.assertIn('index.html', paths)
+        self.assertIn('data/sellemy.db', paths)
+
+    def test_existing_ga4_measurement_is_preserved(self):
+        ga4 = (ROOT / 'js' / 'ga4.js').read_text(encoding='utf-8')
+        self.assertIn('G-SZ5RQR5H7L', ga4)
+        rendered = growth_runtime.render_article(valid_payload(), valid_evidence())
+        self.assertIn('G-SZ5RQR5H7L', rendered)
+
 
 class RuntimeFailClosedTests(unittest.TestCase):
     @patch.object(growth_runtime, 'require_clean_current_main', return_value='abc')
-    @patch.object(growth_runtime, 'next_topic', return_value={'slug': 'x', 'category': 'gadget', 'query': 'x', 'title': 'x'})
+    @patch.object(growth_runtime, 'plan_next_topic', return_value={'slug': 'x', 'category': 'gadget', 'query': 'x', 'title': 'x', 'comparison_axes': [{'id': 'use', 'label': '用途'}]})
     @patch.object(growth_runtime, 'discover_products', return_value=[{'asin': f'B0TEST{i:04d}'} for i in range(6)])
-    @patch.object(growth_runtime, 'select_six', return_value=[{'asin': f'B0TEST{i:04d}'} for i in range(6)])
+    @patch.object(growth_runtime, 'select_six', return_value=([{'asin': f'B0TEST{i:04d}'} for i in range(6)], {}))
     @patch.object(growth_runtime, 'build_evidence', return_value=valid_evidence())
     @patch.object(growth_runtime, 'invoke_writer', side_effect=RuntimeError('runtime unavailable'))
     @patch.object(growth_runtime, 'publish_payload')
@@ -83,13 +103,13 @@ class RuntimeFailClosedTests(unittest.TestCase):
         self.assertFalse(qa['overall_pass'])
 
     def _run_with_gate_result(self, findings, qa):
-        topic = {'slug': 'test-widgets-6-picks', 'category': 'gadget', 'query': 'x', 'title': 'x'}
+        topic = {'slug': 'test-widgets-6-picks', 'category': 'gadget', 'query': 'x', 'title': 'x', 'comparison_axes': [{'id': 'use', 'label': '用途'}]}
         products = [{'asin': f'B0TEST{i:04d}'} for i in range(6)]
         with (
             patch.object(growth_runtime, 'require_clean_current_main', return_value='abc'),
-            patch.object(growth_runtime, 'next_topic', return_value=topic),
+            patch.object(growth_runtime, 'plan_next_topic', return_value=topic),
             patch.object(growth_runtime, 'discover_products', return_value=products),
-            patch.object(growth_runtime, 'select_six', return_value=products),
+            patch.object(growth_runtime, 'select_six', return_value=(products, {})),
             patch.object(growth_runtime, 'build_evidence', return_value=valid_evidence()),
             patch.object(growth_runtime, 'invoke_writer', return_value=(valid_payload(), {'runtime': 'test'})),
             patch.object(growth_runtime, 'evaluate_candidate', return_value=('html', findings, qa)),

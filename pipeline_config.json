@@ -1,7 +1,9 @@
 {
   "production_repository": "KickstartCoJP/sellemy",
   "single_route": [
+    "Continuous Planning",
     "Product Discovery",
+    "Variable-axis Product Selection",
     "Identity/ASIN",
     "Evidence Collector",
     "Product DB",
@@ -11,8 +13,25 @@
     "ComparisonAudit",
     "SEOSpamAudit",
     "StaticHTML",
-    "Publish"
+    "Product Canonical/Catalog",
+    "TOP/Indexes",
+    "Publish",
+    "Measurement Feedback"
   ],
+  "categories": ["beauty", "dailygoods", "gadget"],
+  "planning": {
+    "provider_env": "SELLEMY_PLANNING_COMMAND",
+    "seed_role": "exploration only; never a consumable production queue",
+    "feedback_input": "data/analytics_feedback.json"
+  },
+  "writer": {
+    "primary_command_env": "SELLEMY_WRITER_PRIMARY_COMMAND",
+    "primary_model_env": "SELLEMY_WRITER_PRIMARY_MODEL",
+    "secondary_command_env": "SELLEMY_WRITER_SECONDARY_COMMAND",
+    "secondary_model_env": "SELLEMY_WRITER_SECONDARY_MODEL",
+    "secondary_certification_env": "SELLEMY_WRITER_SECONDARY_CERTIFIED",
+    "fallback_policy": "availability-only; quality failures remain with the selected provider"
+  },
   "publish_enabled": true,
   "publish_mechanism": "git push origin main",
   "validation_article_limit": 10,

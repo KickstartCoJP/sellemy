@@ -134,6 +134,7 @@ class RunQaIntegrationTests(unittest.TestCase):
         self.assertTrue(results['canonical_pass'])
         self.assertTrue(results['image_identity_pass'])
         self.assertTrue(results['nav_footer_pass'])
+        self.assertTrue(results['category_pass'])
         self.assertTrue(results['fixed_price_pass'])
         # fixtures.py intentionally reuses one description string for all six products,
         # so uniqueness must fail here -- proving run_qa's duplicate check is wired in.

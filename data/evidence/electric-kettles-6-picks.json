@@ -7,8 +7,7 @@
   "products": [
     {
       "ref": "p1",
-      "tier": "lowrange",
-      "product_id": "GROW-electric-kettles-6-picks-1",
+      "product_id": "AMZ-B01BET65BI",
       "asin": "B01BET65BI",
       "image_url": "https://m.media-amazon.com/images/I/41DUYxHzlOL._AC_SY300_SX300_QL70_ML2_.jpg",
       "amazon_title": "ヒロコーポレーション ヒロ・コーポレーション 中身が見やすい 電気ケトル 保証付き 空焚き防止機能付き 1.0L コンパクト グレー KTK-300-G",
@@ -16,8 +15,7 @@
     },
     {
       "ref": "p2",
-      "tier": "lowrange",
-      "product_id": "GROW-electric-kettles-6-picks-2",
+      "product_id": "AMZ-B0B3WXSHJJ",
       "asin": "B0B3WXSHJJ",
       "image_url": "https://m.media-amazon.com/images/I/71+AMwZgnxL._AC_SY300_SX300_QL70_ML2_.jpg",
       "amazon_title": "電気ケトル ガラス ケトル 湯沸かしケトル【ラチュナ Latuna キングジム】 1.0L 小型 LEDライト 空焚き防止 PSE認証済 (ブラック)",
@@ -25,8 +23,7 @@
     },
     {
       "ref": "p3",
-      "tier": "midrange",
-      "product_id": "GROW-electric-kettles-6-picks-3",
+      "product_id": "AMZ-B0HHMJXPQ9",
       "asin": "B0HHMJXPQ9",
       "image_url": "https://m.media-amazon.com/images/I/61x1CzIfM5L._AC_SY300_SX300_QL70_ML2_.jpg",
       "amazon_title": "電気ケトル 1.5L【除塩素機能・温度調節±1℃・長時間保温】1000W急速沸騰 304ステンレス製 二重構造防焼け 空焚き防止 LEDディスプレイ 簡単操作 お手入れ簡単 PSE認証 温水/コーヒー/お茶/調乳対応 電気ポット兼用（ホワイト／2ピンタイプ）",
@@ -34,8 +31,7 @@
     },
     {
       "ref": "p4",
-      "tier": "midrange",
-      "product_id": "GROW-electric-kettles-6-picks-4",
+      "product_id": "AMZ-B0FH6FR9HR",
       "asin": "B0FH6FR9HR",
       "image_url": "https://m.media-amazon.com/images/I/617PGNykB+L._AC_SY300_SX300_QL70_ML2_.jpg",
       "amazon_title": "【WEB限定】象印 電気ケトル 1.0L コンパクト 安全設計 転倒湯漏れ防止 ほこりブロック ソフトブラック CK-DC10AM-BM",
@@ -43,8 +39,7 @@
     },
     {
       "ref": "p5",
-      "tier": "highrange",
-      "product_id": "GROW-electric-kettles-6-picks-5",
+      "product_id": "AMZ-B07VJL1Q8S",
       "asin": "B07VJL1Q8S",
       "image_url": "https://m.media-amazon.com/images/I/61kE5QXRmFL._AC_SY300_SX300_QL70_ML2_.jpg",
       "amazon_title": "象印マホービン 電気ケトル 1.0L スピード沸とう 安全設計 転倒湯漏れ防止 保温機能 ハンドドリップモード ブラック CK-AX10-BA",
@@ -52,12 +47,28 @@
     },
     {
       "ref": "p6",
-      "tier": "highrange",
-      "product_id": "GROW-electric-kettles-6-picks-6",
+      "product_id": "AMZ-B0F746BRX6",
       "asin": "B0F746BRX6",
       "image_url": "https://m.media-amazon.com/images/I/61O37+zJZWL._AC_SY300_SX300_QL70_ML2_.jpg",
       "amazon_title": "【WEB限定】象印 電気ポット 5.0L 大容量タイプ 6段階タイマー 給水お知らせ ホワイトグレー CD-SE50AM-WG",
       "brand": "象印マホービン(ZOJIRUSHI)"
+    }
+  ],
+  "comparison_axes": [
+    {
+      "id": "speed",
+      "label": "沸騰速度と容量",
+      "keywords": []
+    },
+    {
+      "id": "safety",
+      "label": "安全性と注ぎやすさ",
+      "keywords": []
+    },
+    {
+      "id": "temperature",
+      "label": "温度管理と保温",
+      "keywords": []
     }
   ]
 }

@@ -7,8 +7,7 @@
   "products": [
     {
       "ref": "p1",
-      "tier": "lowrange",
-      "product_id": "GROW-wireless-speakers-6-picks-1",
+      "product_id": "AMZ-B0FDB4KQTK",
       "asin": "B0FDB4KQTK",
       "image_url": "https://m.media-amazon.com/images/I/71s-4I-1teL._AC_SY300_SX300_QL70_ML2_.jpg",
       "amazon_title": "Bluetooth スピーカー ブルートゥーススピーカー ワイヤレススピーカー TWS対応 ポータブル モバイル Bluetooth5.3 /TFカード/AUX対応/マイク内蔵 Type-C充電 ハンズフリー通話",
@@ -16,8 +15,7 @@
     },
     {
       "ref": "p2",
-      "tier": "lowrange",
-      "product_id": "GROW-wireless-speakers-6-picks-2",
+      "product_id": "AMZ-B0D9YMNXZL",
       "asin": "B0D9YMNXZL",
       "image_url": "https://m.media-amazon.com/images/I/71FGdBBbF9L._AC_SY300_SX300_QL70_ML2_.jpg",
       "amazon_title": "Anker Soundcore Select 4 Go (ブラック) 【コンパクトBluetoothスピーカー】",
@@ -25,8 +23,7 @@
     },
     {
       "ref": "p3",
-      "tier": "midrange",
-      "product_id": "GROW-wireless-speakers-6-picks-3",
+      "product_id": "AMZ-B0CZDPHLB6",
       "asin": "B0CZDPHLB6",
       "image_url": "https://m.media-amazon.com/images/I/81ys4hoHeVL._AC_SY300_SX300_QL70_ML2_.jpg",
       "amazon_title": "JBL GO4 Bluetoothスピーカー USB C充電/IP67防塵防水/アプリ対応/パッシブラジエーター搭載/ポータブル/ファンキーブラック JBLGO4BLKO",
@@ -34,8 +31,7 @@
     },
     {
       "ref": "p4",
-      "tier": "midrange",
-      "product_id": "GROW-wireless-speakers-6-picks-4",
+      "product_id": "AMZ-B08CXJ3HMF",
       "asin": "B08CXJ3HMF",
       "image_url": "https://m.media-amazon.com/images/I/71MIPdIMnVL._AC_SY300_SX300_QL70_ML2_.jpg",
       "amazon_title": "Anker Soundcore 3 (ブラック) 【小型Bluetoothスピーカー】",
@@ -43,8 +39,7 @@
     },
     {
       "ref": "p5",
-      "tier": "highrange",
-      "product_id": "GROW-wireless-speakers-6-picks-5",
+      "product_id": "AMZ-B0FBH7BZ19",
       "asin": "B0FBH7BZ19",
       "image_url": "https://m.media-amazon.com/images/I/81iGAYpejzL._AC_SY300_SX300_QL70_ML2_.jpg",
       "amazon_title": "Marshall ワイヤレスポータブル防水スピーカー Emberton III ミッドナイトブルー 連続再生32時間/IP67防水仕様/小型/急速充電 【国内正規品】",
@@ -52,12 +47,28 @@
     },
     {
       "ref": "p6",
-      "tier": "highrange",
-      "product_id": "GROW-wireless-speakers-6-picks-6",
+      "product_id": "AMZ-B0HGL3GFR1",
       "asin": "B0HGL3GFR1",
       "image_url": "https://m.media-amazon.com/images/I/61noi-CvSCL._AC_SY300_SX300_QL70_ML2_.jpg",
       "amazon_title": "JBL Pulse 6 Bluetoothスピーカー USB C充電/IP68防塵防水/216基のLED搭載/ロスレス再生対応 ブラック JBLPULSE6BLKJN",
       "brand": "JBL"
+    }
+  ],
+  "comparison_axes": [
+    {
+      "id": "sound",
+      "label": "音質と音の広がり",
+      "keywords": []
+    },
+    {
+      "id": "portability",
+      "label": "携帯性と耐久性",
+      "keywords": []
+    },
+    {
+      "id": "connectivity",
+      "label": "接続性と利用場面",
+      "keywords": []
     }
   ]
 }

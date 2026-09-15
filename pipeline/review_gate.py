@@ -62,9 +62,10 @@ def run_review_gate(payload: dict, evidence: dict) -> list[ReviewGateFinding]:
     for field in PROSE_FIELDS:
         for term in _find_jargon(payload[field]):
             findings.append(ReviewGateFinding(field, None, f'internal jargon "{term}" leaked into public prose'))
-    for tier, text in payload['comparison_angles'].items():
-        for term in _find_jargon(text):
-            findings.append(ReviewGateFinding(f'comparison_angles.{tier}', None, f'internal jargon "{term}" leaked into public prose'))
+    for group in payload['comparison_groups']:
+        for field in ('title', 'angle'):
+            for term in _find_jargon(group[field]):
+                findings.append(ReviewGateFinding(f'comparison_groups.{group["id"]}.{field}', None, f'internal jargon "{term}" leaked into public prose'))
 
     evidence_by_ref = {p['ref']: p for p in evidence['products']}
     for product in payload['products']:

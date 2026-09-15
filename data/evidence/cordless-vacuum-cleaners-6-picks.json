@@ -7,8 +7,7 @@
   "products": [
     {
       "ref": "p1",
-      "tier": "lowrange",
-      "product_id": "GROW-cordless-vacuum-cleaners-6-picks-1",
+      "product_id": "AMZ-B0GW79BPC5",
       "asin": "B0GW79BPC5",
       "image_url": "https://m.media-amazon.com/images/I/61RqLx078ML._AC_SY300_SX300_QL70_ML2_.jpg",
       "amazon_title": "掃除機 コードレス 2026進化モデル業界最薄のフロアヘッド！50000Pa超強力吸引 0.5kg史上最軽量42分連続稼働 Type-C充電式",
@@ -16,8 +15,7 @@
     },
     {
       "ref": "p2",
-      "tier": "lowrange",
-      "product_id": "GROW-cordless-vacuum-cleaners-6-picks-2",
+      "product_id": "AMZ-B0H2LJYKFQ",
       "asin": "B0H2LJYKFQ",
       "image_url": "https://m.media-amazon.com/images/I/61JUs1IlyHL._AC_SY300_SX300_QL70_ML2_.jpg",
       "amazon_title": "掃除機 コードレス 【2026改良進化モデル】30000Pa強力吸引超軽量0.6kg サイクロン式",
@@ -25,8 +23,7 @@
     },
     {
       "ref": "p3",
-      "tier": "midrange",
-      "product_id": "GROW-cordless-vacuum-cleaners-6-picks-3",
+      "product_id": "AMZ-B0GTLV6K8G",
       "asin": "B0GTLV6K8G",
       "image_url": "https://m.media-amazon.com/images/I/61yr4ioB7AL._AC_SY300_SX300_QL70_ML2_.jpg",
       "amazon_title": "掃除機 コードレス【2027先行モデル 業界最強230KPa吸引】自走式＆自立式・55分連続稼働・低騒音・超広角LEDライト コードレス掃除機 サイクロン式 軽量 HEPA多重濾過 1.2L大容量ダストカップ【日本PSE認証済み】 V字型ブラシ 2WAY スティック ハンディ そうじき クリーナー 【3年保証】 一人暮らし フロア/カーペット/カーテン/ソファ/車用対応 家庭用 （パープル）",
@@ -34,8 +31,7 @@
     },
     {
       "ref": "p4",
-      "tier": "midrange",
-      "product_id": "GROW-cordless-vacuum-cleaners-6-picks-4",
+      "product_id": "AMZ-B0FJXBZW45",
       "asin": "B0FJXBZW45",
       "image_url": "https://m.media-amazon.com/images/I/51V89PnSiFL._AC_SY300_SX300_QL70_ML2_.jpg",
       "amazon_title": "アイリスオーヤマ コードレス掃除機 軽量1.3kg サイクロン式 スタンダードシリーズ【壁際のゴミも取り逃さない】【Amazon.co.jp限定】",
@@ -43,8 +39,7 @@
     },
     {
       "ref": "p5",
-      "tier": "highrange",
-      "product_id": "GROW-cordless-vacuum-cleaners-6-picks-5",
+      "product_id": "AMZ-B0HDC93GYY",
       "asin": "B0HDC93GYY",
       "image_url": "https://m.media-amazon.com/images/I/51-fieGFr2L._AC_SY300_SX300_QL70_ML2_.jpg",
       "amazon_title": "Dyson V8 Fluffy コードレススティック掃除機",
@@ -52,12 +47,28 @@
     },
     {
       "ref": "p6",
-      "tier": "highrange",
-      "product_id": "GROW-cordless-vacuum-cleaners-6-picks-6",
+      "product_id": "AMZ-B0GP5LTYQ1",
       "asin": "B0GP5LTYQ1",
       "image_url": "https://m.media-amazon.com/images/I/51eNtae0nTL._AC_SY300_SX300_QL70_ML2_.jpg",
       "amazon_title": "【Amazon.co.jp限定】 Shark シャーク 掃除機 コードレス 自動ゴミ収集ドック付き スティック クリーナー LC156JGY1 EVOPOWER SYSTEM FIT+ 軽量 コードレス掃除機 自動 ゴミ収集ドック コードレススティック スティッククリーナー 充電式 LC156J ルーセントグレー",
       "brand": ""
+    }
+  ],
+  "comparison_axes": [
+    {
+      "id": "handling",
+      "label": "取り回しと軽さ",
+      "keywords": []
+    },
+    {
+      "id": "cleaning",
+      "label": "清掃力とヘッド性能",
+      "keywords": []
+    },
+    {
+      "id": "maintenance",
+      "label": "手入れと連続運転",
+      "keywords": []
     }
   ]
 }

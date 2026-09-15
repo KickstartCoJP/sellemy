@@ -38,11 +38,19 @@ class ValidatePayloadTests(unittest.TestCase):
         with self.assertRaises(PayloadValidationError):
             validate_payload(payload)
 
-    def test_missing_comparison_angle_tier_fails_closed(self):
+    def test_comparison_groups_must_partition_refs(self):
         payload = valid_payload()
-        del payload['comparison_angles']['midrange']
+        payload['comparison_groups'][1]['product_refs'] = ['p1', 'p4']
         with self.assertRaises(PayloadValidationError):
             validate_payload(payload)
+
+    def test_variable_group_count_passes(self):
+        payload = valid_payload()
+        payload['comparison_groups'] = [{
+            'id': 'all-use-cases', 'title': '用途別に比較', 'angle': '6商品を用途で比較します。',
+            'product_refs': [f'p{i}' for i in range(1, 7)],
+        }]
+        validate_payload(payload)
 
     def test_wrong_product_count_fails_closed(self):
         payload = valid_payload()
@@ -64,6 +72,12 @@ class ValidateEvidenceTests(unittest.TestCase):
     def test_duplicate_asin_fails_closed(self):
         evidence = valid_evidence()
         evidence['products'][1]['asin'] = evidence['products'][0]['asin']
+        with self.assertRaises(PayloadValidationError):
+            validate_evidence(evidence)
+
+    def test_noncanonical_product_id_fails_closed(self):
+        evidence = valid_evidence()
+        evidence['products'][0]['product_id'] = 'article-local-id'
         with self.assertRaises(PayloadValidationError):
             validate_evidence(evidence)
 

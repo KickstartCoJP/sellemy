@@ -90,6 +90,15 @@ class RendererStructureTests(unittest.TestCase):
         self.assertEqual(html.count(f'href="{evidence["canonical_url"]}"'), 1)
         self.assertEqual(html.count('<h1>'), 1)
 
+    def test_all_three_category_breadcrumbs_render(self):
+        expected = {'beauty': '美容', 'dailygoods': '日用品', 'gadget': '家電'}
+        for category, label in expected.items():
+            payload, evidence = valid_payload(), valid_evidence()
+            payload['category'] = evidence['category'] = category
+            evidence['canonical_url'] = f'https://www.sellemy.jp/article/{category}/test-widgets-6-picks.html'
+            rendered = render_article(payload, evidence, today=FIXED_DATE)
+            self.assertIn(f'href="/article/{category}/">{label}</a>', rendered)
+
 
 def _extract_asins(html: str) -> list[str]:
     import re
