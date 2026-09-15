@@ -54,7 +54,7 @@ class ScheduledRouteTests(unittest.TestCase):
         self.assertNotIn('growth_topics', source)
         self.assertNotIn('def next_topic', source)
         self.assertNotIn('TOPICS =', source)
-        self.assertIn('plan_next_topic', source)
+        self.assertIn('select_viable_topic', source)
 
     def test_porcelain_parser_preserves_first_modified_path(self):
         output = ' M data/sellemy.db\n?? article/gadget/new.html\n'
@@ -76,10 +76,40 @@ class ScheduledRouteTests(unittest.TestCase):
         self.assertIn('G-SZ5RQR5H7L', rendered)
 
 
+class ProductViabilityPlanningTests(unittest.TestCase):
+    def _topic(self, slug):
+        return {
+            'slug': slug, 'category': 'gadget', 'query': slug, 'title': slug, 'intent_key': slug,
+            'comparison_axes': [{'id': 'use', 'label': '用途', 'keywords': ['用途']}],
+            'signals': {key: .8 for key in ('search_demand', 'purchase_intent', 'product_viability', 'seasonality', 'profitability', 'evidence_availability')},
+        }
+
+    def test_skips_unviable_top_topic_and_reuses_viable_probe(self):
+        first, second = self._topic('first-topic'), self._topic('second-topic')
+        products = [{'asin': f'B0TEST{i:04d}'} for i in range(6)]
+        with (
+            patch.object(growth_runtime, 'rank_candidates', return_value=[first, second]),
+            patch.object(growth_runtime, 'discover_products', side_effect=[[], products]) as discover,
+        ):
+            topic, rows, probes = growth_runtime.select_viable_topic([first, second], {}, cache_only=False)
+        self.assertEqual(topic['slug'], 'second-topic')
+        self.assertIs(rows, products)
+        self.assertEqual(discover.call_count, 2)
+        self.assertEqual([p['candidate_count'] for p in probes], [0, 6])
+
+    def test_all_unviable_topics_fail_closed(self):
+        topics = [self._topic('first-topic'), self._topic('second-topic')]
+        with (
+            patch.object(growth_runtime, 'rank_candidates', return_value=topics),
+            patch.object(growth_runtime, 'discover_products', side_effect=[[], RuntimeError('temporary search failure')]),
+        ):
+            with self.assertRaises(planning_runtime.PlanningError):
+                growth_runtime.select_viable_topic(topics, {}, cache_only=False)
+
+
 class RuntimeFailClosedTests(unittest.TestCase):
     @patch.object(growth_runtime, 'require_clean_current_main', return_value='abc')
-    @patch.object(growth_runtime, 'plan_next_topic', return_value={'slug': 'x', 'category': 'gadget', 'query': 'x', 'title': 'x', 'comparison_axes': [{'id': 'use', 'label': '用途'}]})
-    @patch.object(growth_runtime, 'discover_products', return_value=[{'asin': f'B0TEST{i:04d}'} for i in range(6)])
+    @patch.object(growth_runtime, 'select_viable_topic', return_value=({'slug': 'x', 'category': 'gadget', 'query': 'x', 'title': 'x', 'comparison_axes': [{'id': 'use', 'label': '用途'}]}, [{'asin': f'B0TEST{i:04d}'} for i in range(6)], []))
     @patch.object(growth_runtime, 'select_six', return_value=([{'asin': f'B0TEST{i:04d}'} for i in range(6)], {}))
     @patch.object(growth_runtime, 'build_evidence', return_value=valid_evidence())
     @patch.object(growth_runtime, 'invoke_writer', side_effect=RuntimeError('runtime unavailable'))
@@ -107,8 +137,7 @@ class RuntimeFailClosedTests(unittest.TestCase):
         products = [{'asin': f'B0TEST{i:04d}'} for i in range(6)]
         with (
             patch.object(growth_runtime, 'require_clean_current_main', return_value='abc'),
-            patch.object(growth_runtime, 'plan_next_topic', return_value=topic),
-            patch.object(growth_runtime, 'discover_products', return_value=products),
+            patch.object(growth_runtime, 'select_viable_topic', return_value=(topic, products, [])),
             patch.object(growth_runtime, 'select_six', return_value=(products, {})),
             patch.object(growth_runtime, 'build_evidence', return_value=valid_evidence()),
             patch.object(growth_runtime, 'invoke_writer', return_value=(valid_payload(), {'runtime': 'test'})),

@@ -14,7 +14,7 @@ sys.path.insert(0, str(ROOT / 'pipeline'))
 from analytics_feedback import load_feedback
 from discovery_adapters import AutositeDiscoveryAdapter
 from payload_schema import validate_evidence, validate_payload, match_refs
-from planning_runtime import plan_next_topic
+from planning_runtime import PlanningError, discover_candidates, rank_candidates
 from product_selection import select_six
 from publish_payload import run as publish_payload
 from qa import run_qa
@@ -66,6 +66,26 @@ def discover_products(topic: dict, *, cache_only: bool) -> list[dict]:
             'discovery_score': row.get('score', 1),
         })
     return candidates
+
+
+def select_viable_topic(
+    planning_candidates: list[dict] | None, feedback: dict, *, cache_only: bool, max_probes: int = 6
+) -> tuple[dict, list[dict], list[dict]]:
+    ranked = rank_candidates(planning_candidates if planning_candidates is not None else discover_candidates(), feedback)
+    if not ranked:
+        raise PlanningError('continuous planning produced no eligible non-duplicate topic; no publish')
+    probes = []
+    for topic in ranked[:max_probes]:
+        try:
+            products = discover_products(topic, cache_only=cache_only)
+            probes.append({'slug': topic['slug'], 'candidate_count': len(products), 'error': ''})
+        except Exception as exc:
+            products = []
+            probes.append({'slug': topic['slug'], 'candidate_count': 0, 'error': f'{type(exc).__name__}: {exc}'})
+        if len(products) >= 6:
+            selected = {**topic, 'selection_reason': 'highest ranked candidate with at least six live product identities'}
+            return selected, products, probes
+    raise PlanningError('no planned topic passed live product viability: require at least 6 products')
 
 
 def build_evidence(topic: dict, products: list[dict], selection: dict | None = None) -> dict:
@@ -135,9 +155,11 @@ def run(*, publish: bool, cache_only: bool = False, report_path: Path | None = R
     try:
         result['base_head'] = require_clean_current_main()
         feedback = load_feedback()
-        topic = plan_next_topic(planning_candidates, feedback)
+        topic, candidates, viability_probes = select_viable_topic(
+            planning_candidates, feedback, cache_only=cache_only
+        )
         result['topic'] = topic
-        candidates = discover_products(topic, cache_only=cache_only)
+        result['viability_probes'] = viability_probes
         selected, selection = select_six(candidates, topic, feedback)
         evidence = build_evidence(topic, selected, selection)
         payload, findings, qa, rendered, feedback_to_writer = None, [], {}, '', None
