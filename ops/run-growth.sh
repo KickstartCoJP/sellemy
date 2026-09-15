@@ -9,4 +9,4 @@ cd "$ROOT"
 if [[ -n "$(git status --porcelain)" ]]; then echo "$(date -Iseconds) dirty working tree; abort"; exit 2; fi
 git fetch origin main --quiet
 if [[ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]]; then echo "$(date -Iseconds) HEAD differs from origin/main; abort"; exit 3; fi
-"$PY" pipeline/grow.py --apply --publish
+"$PY" pipeline/growth_runtime.py --publish
