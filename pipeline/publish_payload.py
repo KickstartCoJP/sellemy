@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import html
 import json
+import re
 import shutil
 import sqlite3
 from datetime import date, datetime, timezone
@@ -108,6 +109,7 @@ def _upsert_products(payload: dict, evidence: dict) -> list[str]:
 
 def _sync_products_json(payload: dict, evidence: dict) -> dict:
     rows = json.loads(PRODUCTS_JSON.read_text(encoding='utf-8'))
+    backfilled = _backfill_catalog_identities(rows)
     payload_by_ref = {p['ref']: p for p in payload['products']}
     index = {str(row.get('asin', '')).upper(): i for i, row in enumerate(rows) if row.get('asin')}
     image_index = {row.get('imageUrl'): i for i, row in enumerate(rows) if row.get('imageUrl')}
@@ -132,7 +134,36 @@ def _sync_products_json(payload: dict, evidence: dict) -> dict:
             rows.append(entry)
             added += 1
     PRODUCTS_JSON.write_text(json.dumps(rows, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-    return {'added': added, 'updated': updated, 'total': len(rows)}
+    return {'added': added, 'updated': updated, 'identity_backfilled': backfilled, 'total': len(rows)}
+
+
+def _image_identity_key(url: str | None) -> str:
+    filename = (url or '').rsplit('/', 1)[-1]
+    return re.split(r'\._(?:AC|SL|SY|SX)', filename, maxsplit=1)[0].lower()
+
+
+def _backfill_catalog_identities(rows: list[dict]) -> int:
+    """Attach DB canonical identity to legacy catalog rows without rewriting display copy/assets."""
+    with sqlite3.connect(DB) as connection:
+        connection.row_factory = sqlite3.Row
+        products = connection.execute('SELECT product_id,asin,article_file,amazon_url,image_url,brand FROM products WHERE asin IS NOT NULL').fetchall()
+    by_article_image = {}
+    for product in products:
+        slug = product['article_file'][:-5] if product['article_file'].endswith('.html') else product['article_file']
+        by_article_image.setdefault((slug, _image_identity_key(product['image_url'])), []).append(product)
+    count = 0
+    for row in rows:
+        if row.get('asin'):
+            continue
+        matches = by_article_image.get((row.get('articleSlug'), _image_identity_key(row.get('imageUrl'))), [])
+        if len(matches) != 1:
+            continue
+        product = matches[0]
+        row.update({'productId': product['product_id'], 'asin': product['asin'], 'amazonUrl': product['amazon_url']})
+        if product['brand'] and not row.get('brand'):
+            row['brand'] = product['brand']
+        count += 1
+    return count
 
 
 def _update_top() -> dict:

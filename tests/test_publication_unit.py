@@ -49,6 +49,19 @@ class PublicationUnitTests(unittest.TestCase):
         self.assertEqual(sync['total'], 6)
         self.assertEqual({row['asin'] for row in rows}, {f'B0TEST{i:04d}' for i in range(1, 7)})
 
+    def test_legacy_catalog_row_gets_asin_identity_by_article_and_image(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            db = Path(tmp) / 'sellemy.db'
+            with sqlite3.connect(db) as c:
+                c.execute('''CREATE TABLE products (product_id TEXT PRIMARY KEY, asin TEXT, article_file TEXT, amazon_url TEXT, image_url TEXT, brand TEXT)''')
+                c.execute("INSERT INTO products VALUES('AMZ-B0TEST0001','B0TEST0001','old-article.html','https://amazon.example','https://m.media-amazon.com/images/I/image-key._AC_SY300_.jpg','Brand')")
+            rows = [{'name': '旧表示名', 'articleSlug': 'old-article', 'imageUrl': 'https://www.sellemy.jp/img/old-article/image-key._AC_SL1000_.jpg'}]
+            with patch.object(publish_payload, 'DB', db):
+                count = publish_payload._backfill_catalog_identities(rows)
+        self.assertEqual(count, 1)
+        self.assertEqual(rows[0]['asin'], 'B0TEST0001')
+        self.assertEqual(rows[0]['name'], '旧表示名')
+
     def test_category_specific_eyecatch_mapping_exists(self):
         for category in ('beauty', 'dailygoods', 'gadget'):
             metadata = publish_payload.get_category(category)
