@@ -80,8 +80,14 @@ def _command() -> list[str]:
     return command
 
 
-def _prompt(topic: dict, evidence: dict) -> str:
-    return (
+def _prompt(
+    topic: dict,
+    evidence: dict,
+    *,
+    previous_payload: dict | None = None,
+    gate_feedback: dict | None = None,
+) -> str:
+    prompt = (
         'You are the Writer stage for a Japanese product-comparison publication. '
         'Return only the requested structured JSON. Write all public-facing Japanese prose yourself; '
         'do not ask scripts to expand, paraphrase, or pad it. Ground every product claim only in the '
@@ -96,9 +102,24 @@ def _prompt(topic: dict, evidence: dict) -> str:
         f'TOPIC:\n{json.dumps(topic, ensure_ascii=False, sort_keys=True)}\n\n'
         f'EVIDENCE:\n{json.dumps(evidence, ensure_ascii=False, sort_keys=True)}'
     )
+    if previous_payload is not None:
+        prompt += (
+            '\n\nYour previous payload failed mandatory gates. Rewrite the complete payload; '
+            'do not patch it with scripted filler or return commentary. Preserve evidence-grounded '
+            'facts and all identifiers while fixing every reported issue.\n\n'
+            f'PREVIOUS_PAYLOAD:\n{json.dumps(previous_payload, ensure_ascii=False, sort_keys=True)}\n\n'
+            f'GATE_FEEDBACK:\n{json.dumps(gate_feedback or {}, ensure_ascii=False, sort_keys=True)}'
+        )
+    return prompt
 
 
-def invoke_writer(topic: dict, evidence: dict) -> tuple[dict, dict]:
+def invoke_writer(
+    topic: dict,
+    evidence: dict,
+    *,
+    previous_payload: dict | None = None,
+    gate_feedback: dict | None = None,
+) -> tuple[dict, dict]:
     command = _command()
     model = os.environ.get('SELLEMY_WRITER_MODEL', 'sonnet')
     budget = os.environ.get('SELLEMY_WRITER_MAX_BUDGET_USD', '1.00')
@@ -111,7 +132,12 @@ def invoke_writer(topic: dict, evidence: dict) -> tuple[dict, dict]:
     try:
         completed = subprocess.run(
             args,
-            input=_prompt(topic, evidence),
+            input=_prompt(
+                topic,
+                evidence,
+                previous_payload=previous_payload,
+                gate_feedback=gate_feedback,
+            ),
             text=True,
             capture_output=True,
             timeout=timeout,

@@ -98,6 +98,20 @@ class RuntimeFailClosedTests(unittest.TestCase):
     def test_machine_qa_failure_prevents_apply_and_publish(self):
         self._run_with_gate_result([], {'overall_pass': False})
 
+    def test_gate_feedback_contains_only_diagnostics_not_generated_prose(self):
+        feedback = growth_runtime._gate_feedback([], {
+            'main_in_range': False,
+            'overall_pass': False,
+            'main_len': 3520,
+            'lead_len': 188,
+            'summary_len': 152,
+            'how_to_choose_len': 228,
+            'description_lens': [322, 331, 341, 336, 334, 341],
+            'h3_lens': [23, 27, 22, 24, 25, 23],
+        })
+        self.assertEqual(feedback['qa_failures']['main_in_range'], False)
+        self.assertEqual(feedback['measurements']['main_len'], 3520)
+
     def test_publish_command_is_normal_push_only(self):
         source = (ROOT / 'pipeline' / 'growth_runtime.py').read_text(encoding='utf-8')
         self.assertIn("['git', 'push', 'origin', 'main']", source)

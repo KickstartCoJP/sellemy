@@ -146,6 +146,19 @@ def evaluate_candidate(payload: dict, evidence: dict) -> tuple[str, list[str], d
     return rendered, findings, qa
 
 
+def _gate_feedback(findings: list[str], qa: dict) -> dict:
+    failed = {
+        key: value
+        for key, value in qa.items()
+        if (key.endswith('_pass') or key.endswith('_in_range')) and value is False
+    }
+    measurements = {
+        key: qa.get(key)
+        for key in ('lead_len', 'summary_len', 'how_to_choose_len', 'main_len', 'description_lens', 'h3_lens')
+    }
+    return {'review_findings': findings, 'qa_failures': failed, 'measurements': measurements}
+
+
 def _write_json(path: Path, value: dict) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
@@ -197,19 +210,38 @@ def run(*, publish: bool, cache_only: bool = False) -> dict:
         candidates = discover_products(topic, cache_only=cache_only)
         selected = select_six(candidates)
         evidence = build_evidence(topic, selected)
-        payload, writer = invoke_writer(topic, evidence)
-        rendered, findings, qa = evaluate_candidate(payload, evidence)
+        max_attempts = 2
+        payload = None
+        writer_attempts = []
+        findings = []
+        qa = {}
+        rendered = ''
+        feedback = None
+        for attempt in range(1, max_attempts + 1):
+            payload, writer = invoke_writer(
+                topic,
+                evidence,
+                previous_payload=payload,
+                gate_feedback=feedback,
+            )
+            rendered, findings, qa = evaluate_candidate(payload, evidence)
+            writer_attempts.append({'attempt': attempt, **writer, 'gate_pass': not findings and qa['overall_pass']})
+            if not findings and qa['overall_pass']:
+                break
+            feedback = _gate_feedback(findings, qa)
         result.update({
             'candidate_count': len(candidates),
             'selected_asins': [product['asin'] for product in selected],
-            'writer': writer,
+            'writer_attempts': writer_attempts,
             'review_findings': findings,
             'qa': qa,
         })
         if findings:
-            raise GrowthRuntimeError(f'independent review failed: {findings}')
+            raise GrowthRuntimeError(f'independent review failed after {max_attempts} Writer attempts: {findings}')
         if not qa['overall_pass']:
-            raise GrowthRuntimeError('machine QA failed; no files applied or published')
+            raise GrowthRuntimeError(
+                f'machine QA failed after {max_attempts} Writer attempts; no files applied or published'
+            )
 
         evidence_path = ROOT / 'data' / 'evidence' / f'{topic["slug"]}.json'
         payload_path = ROOT / 'data' / 'payloads' / f'{topic["slug"]}.json'
