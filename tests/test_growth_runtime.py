@@ -66,7 +66,7 @@ class RuntimeFailClosedTests(unittest.TestCase):
     @patch.object(growth_runtime, 'publish_payload')
     def test_writer_failure_prevents_apply(self, publish_stage, *_mocks):
         with self.assertRaises(RuntimeError):
-            growth_runtime.run(publish=True)
+            growth_runtime.run(publish=True, report_path=None)
         publish_stage.assert_not_called()
 
     def test_review_failure_is_detected_before_publish(self):
@@ -96,7 +96,7 @@ class RuntimeFailClosedTests(unittest.TestCase):
             patch.object(growth_runtime, 'publish_payload') as publish_stage,
         ):
             with self.assertRaises(growth_runtime.GrowthRuntimeError):
-                growth_runtime.run(publish=True)
+                growth_runtime.run(publish=True, report_path=None)
             publish_stage.assert_not_called()
 
     def test_independent_review_failure_prevents_apply_and_publish(self):

@@ -200,7 +200,7 @@ def _publish(slug: str, category: str) -> str:
     return head
 
 
-def run(*, publish: bool, cache_only: bool = False) -> dict:
+def run(*, publish: bool, cache_only: bool = False, report_path: Path | None = REPORT) -> dict:
     started_at = datetime.now(timezone.utc).isoformat()
     result = {
         'started_at': started_at,
@@ -269,7 +269,8 @@ def run(*, publish: bool, cache_only: bool = False) -> dict:
         raise
     finally:
         result['finished_at'] = datetime.now(timezone.utc).isoformat()
-        _write_json(REPORT, result)
+        if report_path is not None:
+            _write_json(report_path, result)
 
 
 def main() -> None:
