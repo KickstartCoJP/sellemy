@@ -52,11 +52,12 @@ def _prompt(payload: dict, evidence: dict) -> str:
 class EyecatchGenerator:
     """Fail-closed generative-image adapter. No local composition fallback exists."""
 
-    def __init__(self, *, endpoint: str, token_env: str, provider: str, model: str, timeout_seconds: float = 120.0):
+    def __init__(self, *, endpoint: str, token_env: str, provider: str, model: str, quality: str = 'high', timeout_seconds: float = 120.0):
         self.endpoint = endpoint.strip()
         self.token_env = token_env.strip()
         self.provider = provider.strip() or 'configured-provider'
         self.model = model.strip() or 'configured-model'
+        self.quality = quality.strip() or 'high'
         self.timeout_seconds = float(timeout_seconds)
 
     @classmethod
@@ -65,8 +66,9 @@ class EyecatchGenerator:
         token_env = os.environ.get('SELLEMY_EYECATCH_TOKEN_ENV', '')
         provider = os.environ.get('SELLEMY_EYECATCH_PROVIDER', '')
         model = os.environ.get('SELLEMY_EYECATCH_MODEL', '')
+        quality = os.environ.get('SELLEMY_EYECATCH_QUALITY', 'high')
         timeout = os.environ.get('SELLEMY_EYECATCH_TIMEOUT_SECONDS', '120')
-        return cls(endpoint=endpoint, token_env=token_env, provider=provider, model=model, timeout_seconds=float(timeout))
+        return cls(endpoint=endpoint, token_env=token_env, provider=provider, model=model, quality=quality, timeout_seconds=float(timeout))
 
     def generate(self, *, payload: dict, evidence: dict, output: Path, receipt_path: Path) -> dict:
         if not self.endpoint.startswith('https://'):
@@ -74,14 +76,23 @@ class EyecatchGenerator:
         if not self.token_env or not os.environ.get(self.token_env):
             raise EyecatchGenerationError('generative eyecatch token unavailable')
 
-        request_payload = {
-            'prompt': _prompt(payload, evidence),
-            'count': 1,
-            'width': 1536,
-            'height': 1024,
-            'format': 'png',
-            'model': self.model,
-        }
+        if self.provider.lower() == 'openai' or self.endpoint.rstrip('/').endswith('/v1/images/generations'):
+            request_payload = {
+                'prompt': _prompt(payload, evidence),
+                'n': 1,
+                'size': '1536x1024',
+                'model': self.model,
+                'quality': self.quality,
+            }
+        else:
+            request_payload = {
+                'prompt': _prompt(payload, evidence),
+                'count': 1,
+                'width': 1536,
+                'height': 1024,
+                'format': 'png',
+                'model': self.model,
+            }
         request_body = json.dumps(request_payload, ensure_ascii=False, sort_keys=True, separators=(',', ':')).encode()
         request_sha = _sha256_bytes(request_body)
         operation_id = f"sellemy-eyecatch-{evidence['slug']}-{request_sha[:16]}"
@@ -115,8 +126,12 @@ class EyecatchGenerator:
             raise EyecatchGenerationError('generative eyecatch outcome uncertain; automatic replay forbidden') from exc
 
         encoded = response_payload.get('image_base64')
+        if not encoded and isinstance(response_payload.get('data'), list) and response_payload['data']:
+            first = response_payload['data'][0]
+            if isinstance(first, dict):
+                encoded = first.get('b64_json')
         if not isinstance(encoded, str) or not encoded:
-            raise EyecatchGenerationError('generative eyecatch response has no image_base64')
+            raise EyecatchGenerationError('generative eyecatch response has no image payload')
         try:
             raw = base64.b64decode(encoded, validate=True)
         except Exception as exc:
@@ -130,6 +145,7 @@ class EyecatchGenerator:
             'generation_method': 'generative_ai',
             'provider': self.provider,
             'model': self.model,
+            'quality': self.quality,
             'operation_id': operation_id,
             'request_sha256': request_sha,
             'image_sha256': _sha256_bytes(raw),
