@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'pipeline'))
 
 from analytics_feedback import load_feedback
+from adaptive_publish import AdaptivePublishController
 from discovery_adapters import AutositeDiscoveryAdapter
 from payload_schema import validate_evidence, validate_payload, match_refs
 from planning_runtime import PlanningError, discover_candidates, rank_candidates
@@ -161,9 +162,34 @@ def _publish(slug: str, category: str) -> str:
     return head
 
 
-def run(*, publish: bool, cache_only: bool = False, report_path: Path | None = REPORT, planning_candidates: list[dict] | None = None) -> dict:
-    result = {'started_at': datetime.now(timezone.utc).isoformat(), 'route': ['continuous_planning', 'product_selection', 'product_evidence', 'writer_adapter', 'independent_review', 'machine_qa', 'renderer', 'publication_unit'], 'published': False}
+def run(
+    *, publish: bool, cache_only: bool = False, report_path: Path | None = REPORT,
+    planning_candidates: list[dict] | None = None, scheduled: bool = False,
+    controller: AdaptivePublishController | None = None,
+) -> dict:
+    result = {
+        'started_at': datetime.now(timezone.utc).isoformat(),
+        'route': [
+            'adaptive_publish_admission', 'continuous_planning', 'product_selection',
+            'product_evidence', 'writer_adapter', 'independent_review', 'machine_qa',
+            'renderer', 'publication_unit', 'post_publish_evaluation', 'frequency_control',
+        ],
+        'published': False,
+    }
     try:
+        adaptive = controller or AdaptivePublishController(ROOT)
+        controller_state = adaptive.current_state()
+        result['controller_before'] = controller_state
+        if publish and controller_state['publish_paused']:
+            result['status'] = 'paused_by_controller'
+            result['controller_decision'] = {'allowed': False, 'reason': 'ceo_alert_pause'}
+            return result
+        if publish and scheduled:
+            decision = adaptive.admit_scheduled()
+            result['controller_decision'] = decision
+            if not decision['allowed']:
+                result['status'] = 'skipped_by_controller'
+                return result
         result['base_head'] = require_clean_current_main()
         feedback = load_feedback()
         topic, candidates, viability_probes = select_viable_topic(
@@ -196,9 +222,15 @@ def run(*, publish: bool, cache_only: bool = False, report_path: Path | None = R
         if publish:
             result['commit'] = _publish(topic['slug'], topic['category'])
             result['published'] = True
+            post_publish_feedback, controller_after = adaptive.evaluate_and_record(
+                slug=topic['slug'], commit=result['commit'], growth_run=result,
+            )
+            result['post_publish_feedback'] = post_publish_feedback
+            result['controller_after'] = controller_after
         return result
     except Exception as exc:
-        result['status'] = 'blocked_before_publish'; result['blocker'] = f'{type(exc).__name__}: {exc}'
+        result['status'] = 'published_feedback_failed' if result['published'] else 'blocked_before_publish'
+        result['blocker'] = f'{type(exc).__name__}: {exc}'
         raise
     finally:
         result['finished_at'] = datetime.now(timezone.utc).isoformat()
@@ -209,11 +241,16 @@ def run(*, publish: bool, cache_only: bool = False, report_path: Path | None = R
 def main() -> None:
     parser = argparse.ArgumentParser(description='Fail-closed continuous Sellemy operating runtime.')
     parser.add_argument('--publish', action='store_true'); parser.add_argument('--cache-only', action='store_true')
+    parser.add_argument('--scheduled', action='store_true', help='Apply adaptive publish slot admission.')
     args = parser.parse_args()
     try:
-        result = run(publish=args.publish, cache_only=args.cache_only)
+        result = run(publish=args.publish, cache_only=args.cache_only, scheduled=args.scheduled)
     except Exception as exc:
-        print(json.dumps({'status': 'blocked_before_publish', 'error': f'{type(exc).__name__}: {exc}'}, ensure_ascii=False)); raise SystemExit(2) from exc
+        try:
+            failure = json.loads(REPORT.read_text(encoding='utf-8'))
+        except (OSError, json.JSONDecodeError):
+            failure = {'status': 'blocked_before_publish', 'error': f'{type(exc).__name__}: {exc}'}
+        print(json.dumps(failure, ensure_ascii=False)); raise SystemExit(2) from exc
     print(json.dumps(result, ensure_ascii=False))
 
 

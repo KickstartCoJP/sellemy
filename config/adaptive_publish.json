@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "timezone": "Asia/Tokyo",
+  "initial_target_per_day": 2,
+  "minimum_target_per_day": 1,
+  "maximum_target_per_day": 4,
+  "evaluation_window": 6,
+  "green_streak_to_increase": 3,
+  "poor_feedback_decrease_step": 1,
+  "minimum_red_streak_to_alert": 2,
+  "repeated_issue_count": 2,
+  "slot_grace_minutes": 15,
+  "novelty_similarity_yellow": 0.55,
+  "novelty_similarity_red": 0.75,
+  "publish_slots_by_target": {
+    "1": ["04:10"],
+    "2": ["04:10", "16:10"],
+    "3": ["04:10", "10:10", "16:10"],
+    "4": ["04:10", "10:10", "16:10", "22:10"]
+  }
+}

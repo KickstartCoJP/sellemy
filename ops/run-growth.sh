@@ -17,4 +17,4 @@ export SELLEMY_EYECATCH_TIMEOUT_SECONDS=300
 if [[ -n "$(git status --porcelain)" ]]; then echo "$(date -Iseconds) dirty working tree; abort"; exit 2; fi
 git fetch origin main --quiet
 if [[ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]]; then echo "$(date -Iseconds) HEAD differs from origin/main; abort"; exit 3; fi
-"$PY" pipeline/growth_runtime.py --publish
+"$PY" pipeline/growth_runtime.py --publish --scheduled

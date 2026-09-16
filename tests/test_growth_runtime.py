@@ -4,7 +4,7 @@ import subprocess
 import sys
 import unittest
 from pathlib import Path
-from unittest.mock import patch
+from unittest.mock import Mock, patch
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'pipeline'))
@@ -19,9 +19,16 @@ from fixtures import valid_evidence, valid_payload  # noqa: E402
 class ScheduledRouteTests(unittest.TestCase):
     def test_scheduler_uses_new_runtime_not_legacy_generator(self):
         script = (ROOT / 'ops' / 'run-growth.sh').read_text(encoding='utf-8')
-        self.assertIn('pipeline/growth_runtime.py --publish', script)
+        self.assertIn('pipeline/growth_runtime.py --publish --scheduled', script)
         self.assertNotIn('pipeline/grow.py', script)
         self.assertNotIn('pipeline/run.py', script)
+
+    def test_fixed_heartbeat_preserves_initial_slots_and_exposes_growth_slots(self):
+        plist = (ROOT / 'ops' / 'com.kickstart.sellemy-growth.plist').read_text(encoding='utf-8')
+        for hour in (4, 10, 16, 22):
+            self.assertIn(f'<key>Hour</key><integer>{hour}</integer>', plist)
+        config = (ROOT / 'config' / 'adaptive_publish.json').read_text(encoding='utf-8')
+        self.assertIn('"2": ["04:10", "16:10"]', config)
 
     def test_legacy_entry_points_fail_closed(self):
         for module in ('pipeline/grow.py', 'pipeline/run.py'):
@@ -118,6 +125,12 @@ class ProductViabilityPlanningTests(unittest.TestCase):
 
 
 class RuntimeFailClosedTests(unittest.TestCase):
+    @staticmethod
+    def _allowing_controller():
+        controller = Mock()
+        controller.current_state.return_value = {'publish_paused': False, 'target_per_day': 2}
+        return controller
+
     @patch.object(growth_runtime, 'require_clean_current_main', return_value='abc')
     @patch.object(growth_runtime, 'select_viable_topic', return_value=({'slug': 'x', 'category': 'gadget', 'query': 'x', 'title': 'x', 'comparison_axes': [{'id': 'use', 'label': '用途'}]}, [{'asin': f'B0TEST{i:04d}'} for i in range(6)], []))
     @patch.object(growth_runtime, 'select_six', return_value=([{'asin': f'B0TEST{i:04d}'} for i in range(6)], {}))
@@ -126,7 +139,7 @@ class RuntimeFailClosedTests(unittest.TestCase):
     @patch.object(growth_runtime, 'publish_payload')
     def test_writer_failure_prevents_apply(self, publish_stage, *_mocks):
         with self.assertRaises(RuntimeError):
-            growth_runtime.run(publish=True, report_path=None)
+            growth_runtime.run(publish=True, report_path=None, controller=self._allowing_controller())
         publish_stage.assert_not_called()
 
     def test_review_failure_is_detected_before_publish(self):
@@ -155,7 +168,7 @@ class RuntimeFailClosedTests(unittest.TestCase):
             patch.object(growth_runtime, 'publish_payload') as publish_stage,
         ):
             with self.assertRaises(growth_runtime.GrowthRuntimeError):
-                growth_runtime.run(publish=True, report_path=None)
+                growth_runtime.run(publish=True, report_path=None, controller=self._allowing_controller())
             publish_stage.assert_not_called()
 
     def test_independent_review_failure_prevents_apply_and_publish(self):
@@ -182,6 +195,28 @@ class RuntimeFailClosedTests(unittest.TestCase):
         source = (ROOT / 'pipeline' / 'growth_runtime.py').read_text(encoding='utf-8')
         self.assertIn("['git', 'push', 'origin', 'main']", source)
         self.assertNotIn('--force', source)
+
+    def test_successful_publish_runs_post_publish_feedback_and_controller(self):
+        topic = {'slug': 'test-widgets-6-picks', 'category': 'gadget', 'query': 'x', 'title': 'x', 'comparison_axes': [{'id': 'use', 'label': '用途'}]}
+        products = [{'asin': f'B0TEST{i:04d}'} for i in range(6)]
+        controller = Mock()
+        controller.current_state.return_value = {'publish_paused': False, 'target_per_day': 2}
+        controller.evaluate_and_record.return_value = ({'event_id': 'feedback-1'}, {'target_per_day': 2})
+        with (
+            patch.object(growth_runtime, 'require_clean_current_main', return_value='abc'),
+            patch.object(growth_runtime, 'select_viable_topic', return_value=(topic, products, [])),
+            patch.object(growth_runtime, 'select_six', return_value=(products, {})),
+            patch.object(growth_runtime, 'build_evidence', return_value=valid_evidence()),
+            patch.object(growth_runtime, 'invoke_writer', return_value=(valid_payload(), {'runtime': 'test'})),
+            patch.object(growth_runtime, 'evaluate_candidate', return_value=('html', [], {'overall_pass': True})),
+            patch.object(growth_runtime, '_write_json'),
+            patch.object(growth_runtime, 'publish_payload', return_value={'applied': True}),
+            patch.object(growth_runtime, '_publish', return_value='published-commit'),
+        ):
+            result = growth_runtime.run(publish=True, report_path=None, controller=controller)
+        self.assertTrue(result['published'])
+        self.assertEqual(result['post_publish_feedback']['event_id'], 'feedback-1')
+        controller.evaluate_and_record.assert_called_once()
 
 
 if __name__ == '__main__':

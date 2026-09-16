@@ -8,6 +8,19 @@ The production entry point is `pipeline/growth_runtime.py`. A cycle is fail-clos
 4. `review_gate.py` and `qa.py` must both pass before `publish_payload.py` can write a publication unit.
 5. The publication unit includes article HTML, eyecatch, Evidence/Payload, ASIN canonical products, `products.json`, `articles.json`, TOP recent links, and sitemap.
 6. `--publish` performs only a normal `git push origin main`, followed by HEAD/origin/clean verification.
+7. After a successful push, `adaptive_publish.py` evaluates the published artifact and derives the next frequency target from append-only Feedback. It never bypasses the pre-publish Review/QA gates.
+
+## Adaptive publication control
+
+The LaunchAgent is a fixed heartbeat at 04:10, 10:10, 16:10, and 22:10 JST. `growth_runtime.py --publish --scheduled` asks the controller whether the current slot is enabled; the LaunchAgent itself is never rewritten. The initial target is 2/day and enables exactly the existing 04:10 and 16:10 slots. Extra slots become eligible only after the configured green streak.
+
+All tuning values live in `config/adaptive_publish.json`. Runtime evidence is outside the Git publication unit under `~/Library/Application Support/Sellemy/adaptive-publish/` by default, or `SELLEMY_ADAPTIVE_STATE_DIR` when explicitly configured:
+
+- `feedback.jsonl`: append-only, idempotent post-publish evaluations
+- `admissions.jsonl`: append-only scheduled-slot admission receipts
+- `controller_state.json`: reproducible projection of Feedback history
+
+`content_quality` reruns the existing Review/QA checks over the published HTML, Payload, Evidence, eyecatch receipt, and publication evidence. `topic_novelty` compares the completed artifact with existing published articles. A repeated structural issue raises `canonical_feedback_required`. Persistent red Feedback at minimum frequency raises `ceo_alert_required` and pauses later publication attempts. The existing AI Management OS Task/Event path must consume that alert for CEO notification; this runtime does not introduce another queue or business status.
 
 ## Runtime configuration
 
