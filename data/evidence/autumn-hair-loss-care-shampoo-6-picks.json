@@ -1,0 +1,140 @@
+{
+  "slug": "autumn-hair-loss-care-shampoo-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/autumn-hair-loss-care-shampoo-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/autumn-hair-loss-care-shampoo-6-picks/autumn-hair-loss-care-shampoo-6-picks.png",
+  "amazon_tag": "suzuron-22",
+  "comparison_axes": [
+    {
+      "id": "cleansing",
+      "label": "洗浄成分",
+      "keywords": [
+        "アミノ酸系",
+        "スカルプ成分",
+        "低刺激"
+      ]
+    },
+    {
+      "id": "scalp_care",
+      "label": "頭皮へのやさしさ",
+      "keywords": [
+        "刺激の少なさ",
+        "保湿"
+      ]
+    },
+    {
+      "id": "scent",
+      "label": "香り",
+      "keywords": [
+        "フローラル",
+        "無香料"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格帯",
+      "keywords": [
+        "コスパ",
+        "詰め替え"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "cleansing",
+      "price",
+      "scalp_care",
+      "scent"
+    ],
+    "brand_count": 5,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0DT9R5RM3",
+      "asin": "B0DT9R5RM3",
+      "amazon_title": "YOLU ヨル シャンプー トリートメント セット カームナイトリペア 集中補修 摩擦軽減 ダメージケア 保湿 地肌ケア ネロリ&ピオニー",
+      "brand": "YOLU(ヨル)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/81eZVQxBw+L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3080,
+      "discovery_score": 1,
+      "selection_score": 0.66,
+      "matched_comparison_axes": [
+        "scalp_care"
+      ],
+      "search_key": "YOLU(ヨル) YOLU ヨル シャンプー トリートメント セット カームナイト"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0C3BVXYNJ",
+      "asin": "B0C3BVXYNJ",
+      "amazon_title": "［サロン級美髪］Q+ クオリタス シャンプー トリートメント セット ヘアケアトラベルセット (ダメージケア/400ml/フルーティフローラル)",
+      "brand": "クオリタスのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/6181YeB745L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2996,
+      "discovery_score": 1,
+      "selection_score": 0.61,
+      "matched_comparison_axes": [
+        "scent"
+      ],
+      "search_key": "クオリタス ［サロン級美髪］Q+ クオリタス シャンプー トリートメント セ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B094Y11QWH",
+      "asin": "B094Y11QWH",
+      "amazon_title": "【DALEAF】 クロレラシャンプー 500ml ㅣ 抜け毛対策 頭皮ケア ヘアケア スカルプシャンプー 植物由来 低刺激 ディープクレンジング 毛根強化 毛根ケア",
+      "brand": "daleafのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51shxdkK3yL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1999,
+      "discovery_score": 1,
+      "selection_score": 0.61,
+      "matched_comparison_axes": [
+        "cleansing"
+      ],
+      "search_key": "daleaf クロレラシャンプー 500ml ㅣ 抜け毛対策 頭皮ケア ヘアケ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0DT9S8Y8M",
+      "asin": "B0DT9S8Y8M",
+      "amazon_title": "YOLU ヨル シャンプー トリートメント セット 詰め替え 大容量 カームナイトリペア 【通常品詰替3個分】 ＊",
+      "brand": "YOLU(ヨル)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/91B5MeuVXmL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 6600,
+      "discovery_score": 1,
+      "selection_score": 0.54,
+      "matched_comparison_axes": [
+        "price"
+      ],
+      "search_key": "YOLU(ヨル) YOLU ヨル シャンプー トリートメント セット 詰め替え 大"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0F9CP7Q8X",
+      "asin": "B0F9CP7Q8X",
+      "amazon_title": "haru(ハル) 薬用 スカルプエッセンス100 3個セット 130ml（約2ヶ月分） 医薬部外品 育毛剤 女性用 レディース育毛剤",
+      "brand": "HARU(ハル)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71yFiqCtXML._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 11045,
+      "discovery_score": 1,
+      "selection_score": 0.48,
+      "matched_comparison_axes": [],
+      "search_key": "HARU(ハル) 薬用 スカルプエッセンス100 3個セット 130ml（約2ヶ月"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0DS1QHPG4",
+      "asin": "B0DS1QHPG4",
+      "amazon_title": "[more than 8] スカルプ シャンプー | ふんわり さらさら 頭皮環境を整える | マツタケエキス配合 ヴィーガン処方 ノンシリコン 韓国ヘアケア | 300ml",
+      "brand": "Morethan8のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61EErR+H67L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3423,
+      "discovery_score": 1,
+      "selection_score": 0.48,
+      "matched_comparison_axes": [],
+      "search_key": "Morethan8 スカルプ シャンプー | ふんわり さらさら 頭皮環境を整える"
+    }
+  ]
+}
