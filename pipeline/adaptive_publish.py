@@ -110,9 +110,9 @@ def load_config(path: Path) -> dict:
         'initial_target_per_day', 'minimum_target_per_day', 'maximum_target_per_day',
         'evaluation_window', 'green_streak_to_increase', 'poor_feedback_decrease_step',
         'minimum_red_streak_to_alert', 'repeated_issue_count',
-        'slot_grace_minutes', 'novelty_similarity_yellow', 'novelty_similarity_red',
-        'publish_slots_by_target', 'feedback_task_project_id', 'feedback_task_role_id',
-        'feedback_task_prefix',
+        'slot_grace_minutes', 'heartbeat_minute', 'slot_anchor_hour',
+        'novelty_similarity_yellow', 'novelty_similarity_red',
+        'feedback_task_project_id', 'feedback_task_role_id', 'feedback_task_prefix',
     }
     missing = required - set(value)
     if missing:
@@ -120,15 +120,31 @@ def load_config(path: Path) -> dict:
     minimum = int(value['minimum_target_per_day'])
     initial = int(value['initial_target_per_day'])
     maximum = int(value['maximum_target_per_day'])
-    if not minimum <= initial <= maximum:
-        raise AdaptivePublishError('adaptive publish target bounds are invalid')
-    for target in range(minimum, maximum + 1):
-        slots = value['publish_slots_by_target'].get(str(target))
-        if not isinstance(slots, list) or len(slots) != target or len(set(slots)) != target:
-            raise AdaptivePublishError(f'publish slots must contain exactly {target} unique entries')
-        if not all(re.fullmatch(r'(?:[01][0-9]|2[0-3]):[0-5][0-9]', slot) for slot in slots):
-            raise AdaptivePublishError(f'invalid publish slot for target {target}')
+    if not 1 <= minimum <= initial <= maximum <= 24:
+        raise AdaptivePublishError('adaptive publish target bounds must stay within 1..24 per day')
+    heartbeat_minute = int(value['heartbeat_minute'])
+    anchor_hour = int(value['slot_anchor_hour'])
+    grace = int(value['slot_grace_minutes'])
+    if not 0 <= heartbeat_minute <= 59 or not 0 <= anchor_hour <= 23:
+        raise AdaptivePublishError('adaptive publish heartbeat anchor is invalid')
+    if not 0 <= grace < 60:
+        raise AdaptivePublishError('slot grace must be within one hourly heartbeat')
     return value
+
+
+def publish_slots_for_target(config: dict, target: int) -> list[str]:
+    minimum = int(config['minimum_target_per_day'])
+    maximum = int(config['maximum_target_per_day'])
+    if not minimum <= int(target) <= maximum:
+        raise AdaptivePublishError(f'target_per_day outside configured bounds: {target}')
+    target = int(target)
+    minute = int(config['heartbeat_minute'])
+    anchor = int(config['slot_anchor_hour'])
+    offsets = [(index * 24) // target for index in range(target)]
+    slots = [f'{(anchor + offset) % 24:02d}:{minute:02d}' for offset in offsets]
+    if len(slots) != target or len(set(slots)) != target:
+        raise AdaptivePublishError(f'computed publish slots are not unique for target {target}')
+    return slots
 
 
 def evaluate_published_artifact(
@@ -272,7 +288,7 @@ class AdaptivePublishController:
         maximum = int(self.config['maximum_target_per_day'])
         green_streak = 0
         minimum_red_streak = 0
-        for row in recent:
+        for row in records:
             grade = row.get('overall')
             if grade == 'green':
                 green_streak += 1
@@ -329,7 +345,7 @@ class AdaptivePublishController:
             state = self.current_state()
             if state['publish_paused']:
                 return {'allowed': False, 'reason': 'ceo_alert_pause', 'slot': None, 'state': state}
-            slots = self.config['publish_slots_by_target'][str(state['target_per_day'])]
+            slots = publish_slots_for_target(self.config, state['target_per_day'])
             minute_of_day = local.hour * 60 + local.minute
             eligible = []
             for configured_slot in slots:

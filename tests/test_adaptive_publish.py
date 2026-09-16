@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'pipeline'))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from adaptive_publish import AdaptivePublishController, evaluate_published_artifact, load_config  # noqa: E402
+from adaptive_publish import AdaptivePublishController, evaluate_published_artifact, load_config, publish_slots_for_target  # noqa: E402
 from fixtures import valid_evidence, valid_payload  # noqa: E402
 from renderer import render_article  # noqa: E402
 
@@ -84,6 +84,35 @@ class AdaptiveControllerTests(unittest.TestCase):
             self.assertEqual(first, second)
             self.assertEqual(first_state, second_state)
             self.assertEqual(len(controller.feedback()), 1)
+
+
+    def test_algorithmic_slots_cover_every_target_from_one_to_24(self):
+        config = load_config(ROOT / 'config' / 'adaptive_publish.json')
+        for target in range(1, 25):
+            slots = publish_slots_for_target(config, target)
+            self.assertEqual(len(slots), target)
+            self.assertEqual(len(set(slots)), target)
+            self.assertTrue(all(slot.endswith(':10') for slot in slots))
+        self.assertEqual(publish_slots_for_target(config, 2), ['04:10', '16:10'])
+
+    def test_twelve_per_day_is_two_hour_spacing_and_24_is_hourly(self):
+        config = load_config(ROOT / 'config' / 'adaptive_publish.json')
+        twelve = publish_slots_for_target(config, 12)
+        hours = [int(slot[:2]) for slot in twelve]
+        gaps = [((hours[(i + 1) % len(hours)] - hours[i]) % 24) for i in range(len(hours))]
+        self.assertEqual(gaps, [2] * 12)
+        twenty_four = publish_slots_for_target(config, 24)
+        self.assertEqual(len(twenty_four), 24)
+        self.assertEqual({int(slot[:2]) for slot in twenty_four}, set(range(24)))
+
+    def test_controller_can_reach_configured_24_per_day_cap(self):
+        with tempfile.TemporaryDirectory() as directory:
+            controller = self.controller(ROOT, Path(directory))
+            for index in range((24 - 2) * 3):
+                controller.record_feedback(feedback(f'green-cap-{index}', 'green'))
+            state = controller.current_state()
+            self.assertEqual(state['target_per_day'], 24)
+            self.assertEqual(state['maximum_target_per_day'], 24)
 
     def test_initial_two_per_day_preserves_0410_and_1610_only(self):
         with tempfile.TemporaryDirectory() as directory:

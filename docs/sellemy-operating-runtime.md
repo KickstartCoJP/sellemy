@@ -12,7 +12,7 @@ The production entry point is `pipeline/growth_runtime.py`. A cycle is fail-clos
 
 ## Adaptive publication control
 
-The LaunchAgent is a fixed heartbeat at 04:10, 10:10, 16:10, and 22:10 JST. `growth_runtime.py --publish --scheduled` asks the controller whether the current slot is enabled; the LaunchAgent itself is never rewritten. The initial target is 2/day and enables exactly the existing 04:10 and 16:10 slots. Extra slots become eligible only after the configured green streak.
+The LaunchAgent is a fixed hourly heartbeat at minute `:10` JST. `growth_runtime.py --publish --scheduled` asks the controller whether the current hourly opportunity is enabled; the LaunchAgent itself is never rewritten. The controller supports a configured target from 1 through 24 publications/day and distributes exactly that many slots deterministically across 24 hours from the configured anchor. The initial 2/day target preserves 04:10 and 16:10; 12/day is every two hours; 24/day enables every hourly heartbeat. Extra slots become eligible only after the configured green streak.
 
 All tuning values live in `config/adaptive_publish.json`. Runtime evidence is outside the Git publication unit under `~/Library/Application Support/Sellemy/adaptive-publish/` by default, or `SELLEMY_ADAPTIVE_STATE_DIR` when explicitly configured:
 

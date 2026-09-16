@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 import subprocess
 import sys
 import unittest
@@ -23,12 +24,15 @@ class ScheduledRouteTests(unittest.TestCase):
         self.assertNotIn('pipeline/grow.py', script)
         self.assertNotIn('pipeline/run.py', script)
 
-    def test_fixed_heartbeat_preserves_initial_slots_and_exposes_growth_slots(self):
+    def test_hourly_heartbeat_and_algorithmic_24_per_day_cap(self):
         plist = (ROOT / 'ops' / 'com.kickstart.sellemy-growth.plist').read_text(encoding='utf-8')
-        for hour in (4, 10, 16, 22):
-            self.assertIn(f'<key>Hour</key><integer>{hour}</integer>', plist)
-        config = (ROOT / 'config' / 'adaptive_publish.json').read_text(encoding='utf-8')
-        self.assertIn('"2": ["04:10", "16:10"]', config)
+        self.assertIn('<key>StartCalendarInterval</key><dict><key>Minute</key><integer>10</integer></dict>', plist)
+        self.assertNotIn('<key>Hour</key>', plist)
+        config = json.loads((ROOT / 'config' / 'adaptive_publish.json').read_text(encoding='utf-8'))
+        self.assertEqual(config['maximum_target_per_day'], 24)
+        self.assertEqual(config['heartbeat_minute'], 10)
+        self.assertEqual(config['slot_anchor_hour'], 4)
+        self.assertNotIn('publish_slots_by_target', config)
 
     def test_legacy_entry_points_fail_closed(self):
         for module in ('pipeline/grow.py', 'pipeline/run.py'):
