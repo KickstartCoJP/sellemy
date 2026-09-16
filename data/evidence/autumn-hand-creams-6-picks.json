@@ -1,0 +1,147 @@
+{
+  "slug": "autumn-hand-creams-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/autumn-hand-creams-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/autumn-hand-creams-6-picks/autumn-hand-creams-6-picks.png",
+  "amazon_tag": "suzuron-22",
+  "comparison_axes": [
+    {
+      "id": "moisture",
+      "label": "保湿力",
+      "keywords": [
+        "保湿成分",
+        "しっとり",
+        "ヒビ割れ防止"
+      ]
+    },
+    {
+      "id": "texture",
+      "label": "テクスチャー",
+      "keywords": [
+        "べたつき",
+        "すぐ浸透",
+        "さらさら"
+      ]
+    },
+    {
+      "id": "scent",
+      "label": "香り",
+      "keywords": [
+        "香り",
+        "無香料",
+        "フレグランス"
+      ]
+    },
+    {
+      "id": "portability",
+      "label": "携帯性・容量",
+      "keywords": [
+        "携帯用",
+        "ミニサイズ",
+        "チューブ"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格帯",
+      "keywords": [
+        "価格",
+        "コスパ",
+        "プチプラ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "scent"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0CBRLT9JZ",
+      "asin": "B0CBRLT9JZ",
+      "amazon_title": "Neutrogena ニュートロジーナ ノルウェーフォーミュラ インテンスリペア CICA ハンドクリーム 単品 50g シカ シカクリーム 保湿 超乾燥 敏感肌 肌荒れ 手荒れ 低刺激 無香料",
+      "brand": "Neutrogenaのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/710VM8h-7YL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 675,
+      "discovery_score": 1,
+      "selection_score": 0.675,
+      "matched_comparison_axes": [
+        "scent"
+      ],
+      "search_key": "Neutrogena ニュートロジーナ ノルウェーフォーミュラ インテンスリペア CI"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HGDG299H",
+      "asin": "B0HGDG299H",
+      "amazon_title": "＆PURE ハンドクリーム べたつかない 日本製 ギフト オーガニック 70g (ローズ)",
+      "brand": "ＴＪ ＴＲＡＤ　ＪＡＰＡＮのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61NPg9gE1OL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1980,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "ＴＪ ＴＲＡＤ　ＪＡＰＡＮ ＆PURE ハンドクリーム べたつかない 日本製 ギフト オーガ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GXZFDJJB",
+      "asin": "B0GXZFDJJB",
+      "amazon_title": "ロクシタン(L'OCCITANE) フルールドスリジエサクラ[チェリーブロッサム]&ローズ ハンドクリーム 30ｍL×2本 ギフトセット",
+      "brand": "ロクシタン(L'OCCITANE)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/610XeaIhisL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3740,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "ロクシタン(L'OCCITANE) フルールドスリジエサクラ &ローズ ハンドクリーム 30ｍL"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0GTZ35HHF",
+      "asin": "B0GTZ35HHF",
+      "amazon_title": "【公式】 hetras ヘトラス ダブルショット パフューム ボディミスト 120ml Hotel Wood ホテルウッド ウッディな香り ボディスプレー ボディケア フレグランス",
+      "brand": "hetras.のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51+XukP2MeL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2490,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "scent"
+      ],
+      "search_key": "hetras. hetras ヘトラス ダブルショット パフューム ボディミスト"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B08V4QMXD2",
+      "asin": "B08V4QMXD2",
+      "amazon_title": "【公式キユートピア】ハンデコルテ 35g ハンドクリーム ネッククリーム 超低分子ヒアルロン酸 米ぬかセラミド ギフト プレゼント 手 首周り",
+      "brand": "キユートピアのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/41D49msTGvL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3850,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "キユートピア ハンデコルテ 35g ハンドクリーム ネッククリーム 超低分子ヒ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B07G3F4JMT",
+      "asin": "B07G3F4JMT",
+      "amazon_title": "TOCCA(トッカビューティー)香りに恋するハンドクリームギフト 巾着&ショッパー付き グレープフルーツとキューカンバーのフレッシュでクリーンなクレオパトラの香り(手提げ袋、すてきなサテンの巾着ポーチ付)",
+      "brand": "トッカ(TOCCA)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61NgUMJZriL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2200,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "scent"
+      ],
+      "search_key": "トッカ(TOCCA) TOCCA(トッカビューティー)香りに恋するハンドクリームギフト"
+    }
+  ]
+}
