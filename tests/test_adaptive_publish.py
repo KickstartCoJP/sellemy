@@ -98,6 +98,43 @@ class AdaptiveControllerTests(unittest.TestCase):
             self.assertTrue(second['allowed'])
             self.assertEqual(duplicate['reason'], 'slot_already_admitted')
 
+    def test_evaluator_failure_is_durable_red_and_pauses_publication(self):
+        with tempfile.TemporaryDirectory() as directory:
+            controller = self.controller(ROOT, Path(directory))
+            row, state = controller.record_evaluation_failure(
+                slug='broken-eval', commit='abc', growth_run={'published': True, 'commit': 'abc'},
+                error=RuntimeError('evaluator unavailable'),
+            )
+            self.assertEqual(row['overall'], 'red')
+            self.assertIn('post_publish_evaluation_failed', row['issues'])
+            self.assertEqual(state['target_per_day'], 1)
+            self.assertEqual(state['quality_control_fault'], 'post_publish_evaluation_failed')
+            self.assertTrue(state['publish_paused'])
+            self.assertFalse(state['ceo_alert_required'])
+
+    def test_bridge_failure_is_durable_red_and_pauses_publication(self):
+        with tempfile.TemporaryDirectory() as directory:
+            controller = self.controller(ROOT, Path(directory))
+            row, state = controller.record_bridge_failure(
+                slug='broken-bridge', commit='abc', growth_run={'published': True, 'commit': 'abc'},
+                error=RuntimeError('task event unavailable'),
+            )
+            self.assertIn('feedback_task_bridge_failed', row['issues'])
+            self.assertEqual(state['quality_control_fault'], 'feedback_task_bridge_failed')
+            self.assertTrue(state['publish_paused'])
+
+
+    def test_quality_control_fault_clears_after_verified_green_feedback(self):
+        with tempfile.TemporaryDirectory() as directory:
+            controller = self.controller(ROOT, Path(directory))
+            controller.record_evaluation_failure(
+                slug='broken-eval', commit='abc', growth_run={'published': True, 'commit': 'abc'},
+                error=RuntimeError('evaluator unavailable'),
+            )
+            _row, state = controller.record_feedback(feedback('recovery-green', 'green'))
+            self.assertIsNone(state['quality_control_fault'])
+            self.assertFalse(state['publish_paused'])
+
 
 class PostPublishEvaluatorTests(unittest.TestCase):
     def _artifact_root(self, base: Path, *, duplicate: bool) -> tuple[Path, str]:

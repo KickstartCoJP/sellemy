@@ -14,6 +14,7 @@ sys.path.insert(0, str(ROOT / 'pipeline'))
 from analytics_feedback import load_feedback
 from adaptive_publish import AdaptivePublishController
 from discovery_adapters import AutositeDiscoveryAdapter
+from feedback_task_bridge import sync_feedback_to_task_event
 from payload_schema import validate_evidence, validate_payload, match_refs
 from planning_runtime import PlanningError, discover_candidates, rank_candidates
 from product_selection import select_six
@@ -222,11 +223,50 @@ def run(
         if publish:
             result['commit'] = _publish(topic['slug'], topic['category'])
             result['published'] = True
-            post_publish_feedback, controller_after = adaptive.evaluate_and_record(
-                slug=topic['slug'], commit=result['commit'], growth_run=result,
-            )
+            try:
+                post_publish_feedback, controller_after = adaptive.evaluate_and_record(
+                    slug=topic['slug'], commit=result['commit'], growth_run=result,
+                )
+            except Exception as evaluation_error:
+                post_publish_feedback, controller_after = adaptive.record_evaluation_failure(
+                    slug=topic['slug'], commit=result['commit'], growth_run=result, error=evaluation_error,
+                )
+                result['post_publish_feedback'] = post_publish_feedback
+                result['controller_after'] = controller_after
+                try:
+                    result['feedback_task_bridge'] = sync_feedback_to_task_event(
+                        feedback=post_publish_feedback, controller_state=controller_after,
+                        config=adaptive.config,
+                    )
+                except Exception as bridge_error:
+                    bridge_feedback, bridge_state = adaptive.record_bridge_failure(
+                        slug=topic['slug'], commit=result['commit'], growth_run=result, error=bridge_error,
+                    )
+                    result['feedback_task_bridge_error'] = f'{type(bridge_error).__name__}: {bridge_error}'
+                    result['post_publish_feedback_bridge_failure'] = bridge_feedback
+                    result['controller_after'] = bridge_state
+                result['status'] = 'published_feedback_failed'
+                raise GrowthRuntimeError(
+                    f'post-publish evaluation failed and was recorded as red feedback: {evaluation_error}'
+                ) from evaluation_error
             result['post_publish_feedback'] = post_publish_feedback
             result['controller_after'] = controller_after
+            try:
+                result['feedback_task_bridge'] = sync_feedback_to_task_event(
+                    feedback=post_publish_feedback, controller_state=controller_after,
+                    config=adaptive.config,
+                )
+            except Exception as bridge_error:
+                bridge_feedback, bridge_state = adaptive.record_bridge_failure(
+                    slug=topic['slug'], commit=result['commit'], growth_run=result, error=bridge_error,
+                )
+                result['feedback_task_bridge_error'] = f'{type(bridge_error).__name__}: {bridge_error}'
+                result['post_publish_feedback_bridge_failure'] = bridge_feedback
+                result['controller_after'] = bridge_state
+                result['status'] = 'published_feedback_failed'
+                raise GrowthRuntimeError(
+                    f'feedback Task/Event bridge failed and publication was paused: {bridge_error}'
+                ) from bridge_error
         return result
     except Exception as exc:
         result['status'] = 'published_feedback_failed' if result['published'] else 'blocked_before_publish'

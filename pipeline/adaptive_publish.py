@@ -111,7 +111,8 @@ def load_config(path: Path) -> dict:
         'evaluation_window', 'green_streak_to_increase', 'poor_feedback_decrease_step',
         'minimum_red_streak_to_alert', 'repeated_issue_count',
         'slot_grace_minutes', 'novelty_similarity_yellow', 'novelty_similarity_red',
-        'publish_slots_by_target',
+        'publish_slots_by_target', 'feedback_task_project_id', 'feedback_task_role_id',
+        'feedback_task_prefix',
     }
     missing = required - set(value)
     if missing:
@@ -287,6 +288,11 @@ class AdaptivePublishController:
             else:
                 raise AdaptivePublishError(f'unsupported feedback grade: {grade!r}')
         ceo_alert = minimum_red_streak >= int(self.config['minimum_red_streak_to_alert'])
+        quality_control_faults = {'post_publish_evaluation_failed', 'feedback_task_bridge_failed'}
+        latest_issues = (records[-1].get('issues') or []) if records else []
+        quality_control_fault = next((
+            issue for issue in latest_issues if issue in quality_control_faults
+        ), None)
         return {
             'schema_version': 1,
             'target_per_day': target,
@@ -295,7 +301,8 @@ class AdaptivePublishController:
             'green_streak': green_streak,
             'minimum_red_streak': minimum_red_streak,
             'ceo_alert_required': ceo_alert,
-            'publish_paused': ceo_alert,
+            'quality_control_fault': quality_control_fault,
+            'publish_paused': bool(ceo_alert or quality_control_fault),
             'feedback_count': len(records),
             'latest_feedback_event_id': records[-1]['event_id'] if records else None,
             'recent_feedback_event_ids': [row['event_id'] for row in recent],
@@ -362,6 +369,53 @@ class AdaptivePublishController:
             state = self.derive_state(records)
             _atomic_json(self.state_path, state)
             return feedback, state
+
+    def record_quality_control_failure(
+        self, *, slug: str, commit: str, growth_run: dict, error: BaseException, issue: str,
+    ) -> tuple[dict, dict]:
+        if issue not in {'post_publish_evaluation_failed', 'feedback_task_bridge_failed'}:
+            raise AdaptivePublishError(f'unsupported quality-control failure: {issue}')
+        artifacts = {
+            'growth_run_sha256': _sha256_bytes(_canonical_json({
+                'published': growth_run.get('published'), 'commit': commit, 'slug': slug,
+            }).encode('utf-8')),
+        }
+        event_id = _sha256_bytes(_canonical_json({
+            'slug': slug, 'commit': commit, 'issue': issue, 'artifacts': artifacts,
+        }).encode('utf-8'))
+        feedback = {
+            'schema_version': 1, 'event_id': event_id, 'slug': slug, 'commit': commit,
+            'evaluated_at': datetime.now(timezone.utc).isoformat(), 'overall': 'red',
+            'content_quality': {
+                'grade': 'red', 'score': 0.0, 'review_findings': [],
+                'qa_overall_pass': False, 'issues': [issue],
+            },
+            'topic_novelty': {
+                'grade': 'unknown', 'score': None, 'nearest_slug': None, 'similarity': None,
+            },
+            'issues': [issue], 'canonical_feedback_required': True,
+            'improvement_suggestions': [
+                'Repair and verify the adaptive quality-control path before restoring publication.'
+            ],
+            'evaluation_error': f'{type(error).__name__}: {error}', 'artifacts': artifacts,
+        }
+        return self.record_feedback(feedback)
+
+    def record_evaluation_failure(
+        self, *, slug: str, commit: str, growth_run: dict, error: BaseException,
+    ) -> tuple[dict, dict]:
+        return self.record_quality_control_failure(
+            slug=slug, commit=commit, growth_run=growth_run, error=error,
+            issue='post_publish_evaluation_failed',
+        )
+
+    def record_bridge_failure(
+        self, *, slug: str, commit: str, growth_run: dict, error: BaseException,
+    ) -> tuple[dict, dict]:
+        return self.record_quality_control_failure(
+            slug=slug, commit=commit, growth_run=growth_run, error=error,
+            issue='feedback_task_bridge_failed',
+        )
 
     def evaluate_and_record(self, *, slug: str, commit: str, growth_run: dict) -> tuple[dict, dict]:
         prior = self.feedback()

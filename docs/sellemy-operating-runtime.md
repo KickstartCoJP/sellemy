@@ -20,7 +20,9 @@ All tuning values live in `config/adaptive_publish.json`. Runtime evidence is ou
 - `admissions.jsonl`: append-only scheduled-slot admission receipts
 - `controller_state.json`: reproducible projection of Feedback history
 
-`content_quality` reruns the existing Review/QA checks over the published HTML, Payload, Evidence, eyecatch receipt, and publication evidence. `topic_novelty` compares the completed artifact with existing published articles. A repeated structural issue raises `canonical_feedback_required`. Persistent red Feedback at minimum frequency raises `ceo_alert_required` and pauses later publication attempts. The existing AI Management OS Task/Event path must consume that alert for CEO notification; this runtime does not introduce another queue or business status.
+`content_quality` reruns the existing Review/QA checks over the published HTML, Payload, Evidence, eyecatch receipt, and publication evidence. `topic_novelty` compares the completed artifact with existing published articles. A repeated structural issue raises `canonical_feedback_required`. Persistent red Feedback at minimum frequency raises `ceo_alert_required` and pauses later publication attempts. Evaluator failure or Task/Event bridge failure is itself written as durable red quality-control Feedback and pauses later publication until repaired; an evaluation outage therefore cannot silently continue normal production. After repair, a verified successful evaluation is appended as the next Feedback record and clears the quality-control fault projection.
+
+`feedback_task_bridge.py` projects only actionable Feedback into the existing AI Management OS `Project → Task → Event(message_id)` model. `canonical_feedback_required` creates an idempotent `BU-002` quality-improvement Task for `sellemy-ops`; `ceo_alert_required` uses the existing `user_decision_required` Task status for CEO escalation. No second queue or business status is introduced.
 
 ## Runtime configuration
 
