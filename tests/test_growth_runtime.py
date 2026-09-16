@@ -77,6 +77,7 @@ class ScheduledRouteTests(unittest.TestCase):
         self.assertIn('json/products.json', paths)
         self.assertIn('index.html', paths)
         self.assertIn('data/sellemy.db', paths)
+        self.assertIn('data/eyecatch-receipts/new.json', paths)
 
     def test_existing_ga4_measurement_is_preserved(self):
         ga4 = (ROOT / 'js' / 'ga4.js').read_text(encoding='utf-8')

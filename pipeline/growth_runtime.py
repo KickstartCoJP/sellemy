@@ -136,6 +136,7 @@ def _expected_publish_paths(slug: str, category: str) -> set[str]:
     return {
         f'article/{category}/{slug}.html', f'img/{slug}/{slug}.png',
         f'data/evidence/{slug}.json', f'data/payloads/{slug}.json',
+        f'data/eyecatch-receipts/{slug}.json',
         'data/sellemy.db', 'json/articles.json',
         'json/products.json', 'index.html', 'sitemap.xml',
     }
