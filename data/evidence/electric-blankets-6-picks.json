@@ -1,0 +1,145 @@
+{
+  "slug": "electric-blankets-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/electric-blankets-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/electric-blankets-6-picks/electric-blankets-6-picks.png",
+  "amazon_tag": "suzuron-22",
+  "comparison_axes": [
+    {
+      "id": "heating_area",
+      "label": "サイズ・暖房範囲",
+      "keywords": [
+        "シングル",
+        "大判"
+      ]
+    },
+    {
+      "id": "temperature_control",
+      "label": "温度調整段階",
+      "keywords": [
+        "温度調整",
+        "タイマー"
+      ]
+    },
+    {
+      "id": "safety",
+      "label": "安全機能",
+      "keywords": [
+        "自動オフ",
+        "低温やけど防止"
+      ]
+    },
+    {
+      "id": "washability",
+      "label": "洗濯対応",
+      "keywords": [
+        "丸洗い",
+        "洗濯機"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "heating_area",
+      "safety",
+      "temperature_control",
+      "washability"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0DHTYFFLD",
+      "asin": "B0DHTYFFLD",
+      "amazon_title": "電気毛布 掛け敷毛布 洗える 140*80CM 8段階温度調整 あったか寝具 丸洗い可 9時間タイマー機能 こたつ布団 電気毛布 省エネ 消し忘れ防止自動オフ ベージュチェック",
+      "brand": "ブランド: IESOETSD",
+      "image_url": "https://m.media-amazon.com/images/I/71FOY3UruqL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1980,
+      "discovery_score": 1,
+      "selection_score": 1.06,
+      "matched_comparison_axes": [
+        "safety",
+        "temperature_control",
+        "washability"
+      ],
+      "search_key": "IESOETSD 電気毛布 掛け敷毛布 洗える 140*80CM 8段階温度調整"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B09F68F2RN",
+      "asin": "B09F68F2RN",
+      "amazon_title": "ひな暖ぬくぬくセット（毛布＋敷きパッド） ひな暖 寝具 毛布 敷きパッド あったか 電気代不要 (シングル, マロンブラウン)",
+      "brand": "ダイレクトテレショップのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61WAu4L9GmL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 14168,
+      "discovery_score": 1,
+      "selection_score": 0.7,
+      "matched_comparison_axes": [
+        "heating_area"
+      ],
+      "search_key": "ダイレクトテレショップ ひな暖ぬくぬくセット（毛布＋敷きパッド） ひな暖 寝具 毛布 敷"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HC144V5K",
+      "asin": "B0HC144V5K",
+      "amazon_title": "BUODCO 電気毛布 もこもこ ウサギファー フランネル 両面仕様 9段階温度調節 2/4/8/12hタイマー 4時間自動電源オフ M/Lサイズ 150×80cm/190×130cm 90W/150W 掛け敷き兼用 洗える ホットマット ふわふわ 防寒 あったか 冬用 あったかグッズ",
+      "brand": "ブランド: BUODCO",
+      "image_url": "https://m.media-amazon.com/images/I/715pw0WslDL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 8999,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "temperature_control"
+      ],
+      "search_key": "BUODCO 電気毛布 もこもこ ウサギファー フランネル 両面仕様 9段階温"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0H8XFXKGV",
+      "asin": "B0H8XFXKGV",
+      "amazon_title": "電気毛布 掛け 敷き ふわふわ 電気掛け毛布 DAMOKU 188×130cm 掛け敷き兼用 電気毛布 10段階温度調整 1-9Hタイマー 電気敷毛布 両面フランネル ダニ退治 電気敷き 省エネ 自動電源オフ 過熱保護 丸洗える 静電気防止 PSE認証済み",
+      "brand": "ブランド: Damoku",
+      "image_url": "https://m.media-amazon.com/images/I/810ugoXVELL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 8980,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "temperature_control"
+      ],
+      "search_key": "Damoku 電気毛布 掛け 敷き ふわふわ 電気掛け毛布 DAMOKU 18"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0H7X7XYHF",
+      "asin": "B0H7X7XYHF",
+      "amazon_title": "【2026改良モデル】HAGOOGI 電気毛布 敷き 掛け兼用 節電 190×130cm 10段階温度調整 12Hタイマー付き エレガントグレー",
+      "brand": "HAGOOGIのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/81GBjJ0pymL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 9980,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "temperature_control"
+      ],
+      "search_key": "HAGOOGI 電気毛布 敷き 掛け兼用 節電 190×130cm 10段階温度"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0DFXWFF9Q",
+      "asin": "B0DFXWFF9Q",
+      "amazon_title": "Aliliy 電気毛布 掛け敷き兼用 188x130cm 両面フランネル AI恒温 8段階温度調節 2-4-8-12H切タイマー 90W省エネ",
+      "brand": "Aliliyのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/7160qiZKQhL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 11800,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "temperature_control"
+      ],
+      "search_key": "Aliliy 電気毛布 掛け敷き兼用 188x130cm 両面フランネル AI"
+    }
+  ]
+}
