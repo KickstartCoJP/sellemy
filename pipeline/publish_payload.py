@@ -4,16 +4,14 @@ import argparse
 import html
 import json
 import re
-import shutil
 import hashlib
-import subprocess
-import tempfile
 import requests
 import sqlite3
 from datetime import date, datetime, timezone
 from pathlib import Path
 
 from category_metadata import get_category
+from eyecatch_adapter import EyecatchGenerator
 from qa import run_qa
 from renderer import render_article
 from review_gate import run_review_gate
@@ -221,23 +219,17 @@ def _sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def _generate_article_eyecatch(payload: dict, evidence: dict, output: Path) -> None:
-    output.parent.mkdir(parents=True, exist_ok=True)
-    magick = '/opt/homebrew/bin/magick'
-    if not Path(magick).is_file():
-        raise RuntimeError('ImageMagick unavailable; article-specific eyecatch required')
-    with tempfile.TemporaryDirectory(prefix='sellemy-eyecatch-') as tmp:
-        files=[]
-        for i, product in enumerate(evidence['products'], 1):
-            response=requests.get(product['image_url'], timeout=20)
-            response.raise_for_status()
-            path=Path(tmp)/f'p{i}.jpg'; path.write_bytes(response.content); files.append(str(path))
-        montage=Path(tmp)/'montage.png'
-        subprocess.run([magick, 'montage', *files, '-thumbnail', '360x320', '-tile', '3x2', '-geometry', '360x320+22+22', '-background', '#f7f2ef', str(montage)], check=True)
-        subprocess.run([magick, str(montage), '-gravity', 'center', '-background', '#f7f2ef', '-extent', '1536x1024', str(output)], check=True)
+def _generate_article_eyecatch(payload: dict, evidence: dict, output: Path) -> dict:
+    receipt_path = ROOT / 'data' / 'eyecatch-receipts' / f"{evidence['slug']}.json"
+    receipt = EyecatchGenerator.from_env().generate(
+        payload=payload, evidence=evidence, output=output, receipt_path=receipt_path
+    )
     category = ROOT / get_category(evidence['category']).eyecatch
-    if not output.exists() or output.stat().st_size < 10000 or _sha256(output) == _sha256(category):
-        raise RuntimeError('article-specific eyecatch generation failed')
+    if not output.exists() or _sha256(output) == _sha256(category):
+        raise RuntimeError('generated eyecatch is not article-specific')
+    if receipt.get('generation_method') != 'generative_ai':
+        raise RuntimeError('non-generative eyecatch receipt rejected')
+    return receipt
 
 
 def run(slug: str, *, apply: bool, allow_existing: bool) -> dict:
@@ -250,10 +242,10 @@ def run(slug: str, *, apply: bool, allow_existing: bool) -> dict:
         return result
     result['affiliate_preflight'] = _affiliate_preflight(rendered)
 
+    eyecatch_path = ROOT / 'img' / slug / f'{slug}.png'
+    result['eyecatch_generation'] = _generate_article_eyecatch(payload, evidence, eyecatch_path)
     article_path = ROOT / 'article' / evidence['category'] / f'{slug}.html'
     article_path.write_text(rendered + '\n', encoding='utf-8')
-    eyecatch_path = ROOT / 'img' / slug / f'{slug}.png'
-    _generate_article_eyecatch(payload, evidence, eyecatch_path)
     result['articles_json'] = _update_articles(payload, evidence, allow_existing=allow_existing)
     result['canonical_product_ids'] = _upsert_products(payload, evidence)
     result['products_json'] = _sync_products_json(payload, evidence)

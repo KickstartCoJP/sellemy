@@ -79,6 +79,19 @@ class PublicationUnitTests(unittest.TestCase):
             with self.assertRaises(RuntimeError):
                 publish_payload._affiliate_preflight(rendered)
 
+
+    def test_publish_eyecatch_rejects_category_copy_even_with_ai_receipt(self):
+        payload, evidence = valid_payload(), valid_evidence()
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            category = root / 'category.png'; category.write_bytes(b'category-bytes')
+            output = root / 'hero.png'
+            fake_metadata = type('Category', (), {'eyecatch': 'category.png'})()
+            generator = type('Generator', (), {'generate': lambda self, **kwargs: (kwargs['output'].write_bytes(b'category-bytes') or {'generation_method': 'generative_ai'})})()
+            with patch.object(publish_payload, 'ROOT', root), patch.object(publish_payload, 'get_category', return_value=fake_metadata), patch.object(publish_payload.EyecatchGenerator, 'from_env', return_value=generator):
+                with self.assertRaises(RuntimeError):
+                    publish_payload._generate_article_eyecatch(payload, evidence, output)
+
     def test_category_specific_eyecatch_mapping_exists(self):
         for category in ('beauty', 'dailygoods', 'gadget'):
             metadata = publish_payload.get_category(category)
