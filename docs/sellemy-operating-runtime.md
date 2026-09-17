@@ -36,12 +36,14 @@ The default Primary and Planning command resolves the locally installed Claude C
 
 ## Measurement feedback
 
-`data/analytics_feedback.json` is an adapter input for GA4 and available affiliate exports. It does not replace GA4 or create a parallel analytics store.
+Each scheduled production heartbeat runs `pipeline/ga4_sync.py` before Planning. The sync reads GA4 with the read-only service account and writes runtime evidence outside the Git worktree under `~/Library/Application Support/Sellemy/analytics/`:
 
-- `topic_metrics`: `category`, `intent_key`, `page_views`, `affiliate_ctr`, and optional `revenue`
-- `product_metrics`: `asin`, `click_through_rate`, optional `conversion_rate`, and optional `average_reward`
+- `ga4_latest.json`: raw page and affiliate-click event rows for the latest 28-day window
+- `analytics_feedback.json`: Planning adapter input derived from the raw GA4 result
 
-Absent metrics contribute zero rather than fabricating performance.
+`topic_metrics` contains article-level rows plus one `intent_key: "*"` category aggregate for `beauty`, `dailygoods`, and `gadget`. Planning uses an exact intent match when available and otherwise uses the category aggregate; it never invents revenue. `product_metrics` remains empty until product-level attribution is available from a verifiable source.
+
+The legacy Sellemy browser event name is `click`; `ga4_sync.py` also accepts the dedicated `affiliate_click` event name for forward compatibility. Absent metrics contribute zero rather than fabricating performance.
 
 ## Validation
 

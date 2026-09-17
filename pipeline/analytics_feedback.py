@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_FEEDBACK = ROOT / 'data' / 'analytics_feedback.json'
+DEFAULT_FEEDBACK = Path.home() / 'Library' / 'Application Support' / 'Sellemy' / 'analytics' / 'analytics_feedback.json'
 
 
 def load_feedback(path: Path = DEFAULT_FEEDBACK) -> dict:
@@ -20,15 +20,20 @@ def load_feedback(path: Path = DEFAULT_FEEDBACK) -> dict:
     return value
 
 
+def _topic_row_score(row: dict) -> float:
+    pv = max(0.0, float(row.get('page_views') or 0))
+    ctr = max(0.0, float(row.get('affiliate_ctr') or 0))
+    revenue = max(0.0, float(row.get('revenue') or 0))
+    return min(1.0, pv / 10000) * .35 + min(1.0, ctr / .15) * .35 + min(1.0, revenue / 100000) * .30
+
+
 def topic_signal(feedback: dict, *, category: str, intent_key: str) -> float:
-    scores = []
-    for row in feedback.get('topic_metrics', []):
-        if row.get('category') == category and row.get('intent_key') == intent_key:
-            pv = max(0.0, float(row.get('page_views') or 0))
-            ctr = max(0.0, float(row.get('affiliate_ctr') or 0))
-            revenue = max(0.0, float(row.get('revenue') or 0))
-            scores.append(min(1.0, pv / 10000) * .35 + min(1.0, ctr / .15) * .35 + min(1.0, revenue / 100000) * .30)
-    return max(scores, default=0.0)
+    rows = [row for row in feedback.get('topic_metrics', []) if row.get('category') == category]
+    exact = [_topic_row_score(row) for row in rows if row.get('intent_key') == intent_key]
+    if exact:
+        return max(exact)
+    category_fallback = [_topic_row_score(row) for row in rows if row.get('intent_key') == '*']
+    return max(category_fallback, default=0.0)
 
 
 def product_signal(feedback: dict, asin: str) -> float:
