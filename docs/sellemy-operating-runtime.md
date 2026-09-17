@@ -36,14 +36,13 @@ The default Primary and Planning command resolves the locally installed Claude C
 
 ## Measurement feedback
 
-Each scheduled production heartbeat runs `pipeline/ga4_sync.py` before Planning. The sync reads GA4 with the read-only service account and writes runtime evidence outside the Git worktree under `~/Library/Application Support/Sellemy/analytics/`:
+Each scheduled production heartbeat runs `pipeline/ga4_sync.py` before Planning. GA4 is the measurement source of truth, and runtime measurement files live outside Git under `~/Library/Application Support/Sellemy/analytics/`:
 
-- `ga4_latest.json`: raw page and affiliate-click event rows for the latest 28-day window
-- `analytics_feedback.json`: Planning adapter input derived from the raw GA4 result
+- `ga4_daily_raw.json`: canonical stock at `date × pagePath` grain. It stores page title, page views, sessions, active users, and Sellemy affiliate `click` events. The configured historical backfill starts at `2025-01-01`; normal heartbeats replace the latest three-day window idempotently so late GA4 revisions are absorbed.
+- `ga4_latest.json`: derived rolling aggregate for operational inspection.
+- `analytics_feedback.json`: derived Planning adapter input. It does not replace GA4 or create a second measurement truth.
 
-`topic_metrics` contains article-level rows plus one `intent_key: "*"` category aggregate for `beauty`, `dailygoods`, and `gadget`. Planning uses an exact intent match when available and otherwise uses the category aggregate; it never invents revenue. `product_metrics` remains empty until product-level attribution is available from a verifiable source.
-
-The legacy Sellemy browser event name is `click`; `ga4_sync.py` also accepts the dedicated `affiliate_click` event name for forward compatibility. Absent metrics contribute zero rather than fabricating performance.
+Cumulative, 7-day, 28-day, trend, and comparison values are derived from daily Raw rather than stored as independent source data. `topic_metrics` contains article-level rows plus an `intent_key: "*"` category aggregate. Planning uses an exact article slug match when available and otherwise the category aggregate; it never invents revenue. `product_metrics` remains empty until product-level attribution is available from a verifiable source. Absent metrics contribute zero rather than fabricating performance.
 
 ## Validation
 
