@@ -8,6 +8,7 @@ import hashlib
 import requests
 import sqlite3
 from datetime import date, datetime, timezone
+from zoneinfo import ZoneInfo
 from pathlib import Path
 
 from affiliate_config import amazon_url
@@ -26,6 +27,7 @@ TOP = ROOT / 'index.html'
 DB = ROOT / 'data' / 'sellemy.db'
 TOP_START = '<!-- PUBLICATION:RECENT:START -->'
 TOP_END = '<!-- PUBLICATION:RECENT:END -->'
+JST = ZoneInfo('Asia/Tokyo')
 
 
 def _load(slug: str) -> tuple[dict, dict]:
@@ -34,11 +36,28 @@ def _load(slug: str) -> tuple[dict, dict]:
     return payload, evidence
 
 
-def _article_entry(payload: dict, evidence: dict) -> dict:
-    return {'title': payload['h1'], 'slug': payload['slug'], 'category': payload['category'], 'img': evidence['eyecatch_image'], 'summary': payload['summary']}
+def _jst_now() -> datetime:
+    return datetime.now(JST)
 
 
-def _update_articles(payload: dict, evidence: dict, *, allow_existing: bool) -> str:
+def _article_entry(payload: dict, evidence: dict, *, existing: dict | None, now: datetime) -> dict:
+    published_at = (existing or {}).get('published_at') or now.isoformat()
+    source = (existing or {}).get('published_at_source') or 'publish_event'
+    return {
+        'article_id': payload['slug'],
+        'title': payload['h1'],
+        'slug': payload['slug'],
+        'category': payload['category'],
+        'img': evidence['eyecatch_image'],
+        'summary': payload['summary'],
+        'status': 'published',
+        'published_at': published_at,
+        'updated_at': now.isoformat(),
+        'published_at_source': source,
+    }
+
+
+def _update_articles(payload: dict, evidence: dict, *, allow_existing: bool, now: datetime) -> dict:
     rows = json.loads(ARTICLES.read_text(encoding='utf-8'))
     matches = [i for i, row in enumerate(rows) if row.get('slug') == payload['slug']]
     if matches and not allow_existing:
@@ -47,7 +66,8 @@ def _update_articles(payload: dict, evidence: dict, *, allow_existing: bool) -> 
         raise ValueError(f'article slug is duplicated: {payload["slug"]}')
     if not matches and any(row.get('title') == payload['h1'] for row in rows):
         raise ValueError(f'article title already exists with another slug: {payload["h1"]}')
-    entry = _article_entry(payload, evidence)
+    existing = rows[matches[0]] if matches else None
+    entry = _article_entry(payload, evidence, existing=existing, now=now)
     if matches:
         rows[matches[0]] = entry
         action = 'updated'
@@ -55,19 +75,41 @@ def _update_articles(payload: dict, evidence: dict, *, allow_existing: bool) -> 
         rows.append(entry)
         action = 'added'
     ARTICLES.write_text(json.dumps(rows, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-    return action
+    return {'action': action, 'metadata': entry}
 
 
-def _update_sitemap(evidence: dict) -> str:
+def _update_sitemap(evidence: dict, *, updated_at: str) -> str:
     canonical = evidence['canonical_url']
+    lastmod = datetime.fromisoformat(updated_at).astimezone(JST).date().isoformat()
     text = SITEMAP.read_text(encoding='utf-8')
-    if f'<loc>{canonical}</loc>' in text:
-        return 'unchanged'
-    entry = f'  <url>\n    <loc>{canonical}</loc>\n    <lastmod>{date.today().isoformat()}</lastmod>\n  </url>\n'
+    escaped = re.escape(canonical)
+    pattern = re.compile(r'(  <url>\n    <loc>'+escaped+r'</loc>\n)(?:    <lastmod>[^<]+</lastmod>\n)?(  </url>)')
+    if pattern.search(text):
+        replacement = r'\1    <lastmod>' + lastmod + r'</lastmod>\n\2'
+        new_text = pattern.sub(replacement, text, count=1)
+        SITEMAP.write_text(new_text, encoding='utf-8')
+        return 'updated' if new_text != text else 'unchanged'
+    entry = f'  <url>\n    <loc>{canonical}</loc>\n    <lastmod>{lastmod}</lastmod>\n  </url>\n'
     if '</urlset>' not in text:
         raise ValueError('sitemap.xml has no closing urlset tag')
     SITEMAP.write_text(text.replace('</urlset>', entry + '</urlset>', 1), encoding='utf-8')
     return 'added'
+
+
+def _inject_article_times(rendered: str, metadata: dict) -> str:
+    published = html.escape(metadata['published_at'], quote=True)
+    modified = html.escape(metadata['updated_at'], quote=True)
+    tags = (
+        f'<meta property="article:published_time" content="{published}">\n'
+        f'<meta property="article:modified_time" content="{modified}">'
+    )
+    if '<meta property="article:published_time"' in rendered:
+        rendered = re.sub(r'<meta property="article:published_time" content="[^"]*">', tags.split('\n')[0], rendered, count=1)
+        if '<meta property="article:modified_time"' in rendered:
+            return re.sub(r'<meta property="article:modified_time" content="[^"]*">', tags.split('\n')[1], rendered, count=1)
+    if '</head>' not in rendered:
+        raise ValueError('rendered article has no closing head tag')
+    return rendered.replace('</head>', tags + '\n</head>', 1)
 
 
 def _ensure_product_schema(connection: sqlite3.Connection) -> None:
@@ -246,13 +288,16 @@ def run(slug: str, *, apply: bool, allow_existing: bool) -> dict:
 
     eyecatch_path = ROOT / 'img' / slug / f'{slug}.png'
     result['eyecatch_generation'] = _generate_article_eyecatch(payload, evidence, eyecatch_path)
+    now = _jst_now()
+    article_metadata = _update_articles(payload, evidence, allow_existing=allow_existing, now=now)
+    rendered = _inject_article_times(rendered, article_metadata['metadata'])
     article_path = ROOT / 'article' / evidence['category'] / f'{slug}.html'
     article_path.write_text(rendered + '\n', encoding='utf-8')
-    result['articles_json'] = _update_articles(payload, evidence, allow_existing=allow_existing)
+    result['articles_json'] = article_metadata
     result['canonical_product_ids'] = _upsert_products(payload, evidence)
     result['products_json'] = _sync_products_json(payload, evidence)
     result['top'] = _update_top()
-    result['sitemap'] = _update_sitemap(evidence)
+    result['sitemap'] = _update_sitemap(evidence, updated_at=article_metadata['metadata']['updated_at'])
     result['article_path'] = str(article_path.relative_to(ROOT))
     result['eyecatch_path'] = str(eyecatch_path.relative_to(ROOT))
     result['applied'] = True
