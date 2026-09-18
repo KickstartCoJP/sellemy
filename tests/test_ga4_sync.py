@@ -14,6 +14,14 @@ class Ga4RawTests(unittest.TestCase):
             rows=ga4_sync.merge_raw(p,[{'date':'20260916','page_path':'/new','page_views':2}],'2026-09-15','2026-09-17')
             self.assertEqual([(r['date'],r['page_path']) for r in rows],[('20260914','/a'),('20260916','/new')])
 
+
+    def test_merge_daily_totals_replaces_refresh_window(self):
+        with tempfile.TemporaryDirectory() as d:
+            p=Path(d)/'totals.json'
+            p.write_text(json.dumps({'rows':[{'date':'20260914','page_views':1},{'date':'20260916','page_views':9}]}))
+            rows=ga4_sync.merge_daily_totals(p,[{'date':'20260916','page_views':2}],'2026-09-15','2026-09-17')
+            self.assertEqual(rows,[{'date':'20260914','page_views':1},{'date':'20260916','page_views':2}])
+
     def test_feedback_uses_article_slug_and_daily_raw(self):
         rows=[{'date':'29990101','page_path':'/article/gadget/test-item.html','page_title':'X','page_views':4,'sessions':2,'active_users':2,'affiliate_clicks':1}]
         fb=ga4_sync.feedback_from(rows,28)

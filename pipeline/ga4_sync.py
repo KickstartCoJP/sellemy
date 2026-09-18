@@ -22,6 +22,11 @@ def run_daily_pages(client,pid,start,end):
     r=client.run_report(RunReportRequest(property=f'properties/{pid}',dimensions=[Dimension(name='date'),Dimension(name='pagePath'),Dimension(name='pageTitle')],metrics=[Metric(name='screenPageViews'),Metric(name='sessions'),Metric(name='activeUsers')],date_ranges=[DateRange(start_date=start,end_date=end)],limit=250000))
     return [{'date':x.dimension_values[0].value,'page_path':x.dimension_values[1].value,'page_title':x.dimension_values[2].value,'page_views':int(x.metric_values[0].value or 0),'sessions':int(x.metric_values[1].value or 0),'active_users':int(x.metric_values[2].value or 0)} for x in r.rows]
 
+
+def run_daily_totals(client,pid,start,end):
+    r=client.run_report(RunReportRequest(property=f'properties/{pid}',dimensions=[Dimension(name='date')],metrics=[Metric(name='screenPageViews')],date_ranges=[DateRange(start_date=start,end_date=end)],limit=250000))
+    return [{'date':x.dimension_values[0].value,'page_views':int(x.metric_values[0].value or 0)} for x in r.rows]
+
 def run_daily_clicks(client,pid,start,end,event_name):
     r=client.run_report(RunReportRequest(property=f'properties/{pid}',dimensions=[Dimension(name='date'),Dimension(name='pagePath')],metrics=[Metric(name='eventCount')],date_ranges=[DateRange(start_date=start,end_date=end)],dimension_filter=FilterExpression(filter=Filter(field_name='eventName',string_filter=Filter.StringFilter(value=event_name,match_type=Filter.StringFilter.MatchType.EXACT))),limit=250000))
     return {(x.dimension_values[0].value,x.dimension_values[1].value):int(x.metric_values[0].value or 0) for x in r.rows}
@@ -30,6 +35,15 @@ def run_daily_click_detail(client,pid,start,end,event_name):
     dims=['date','pagePath','linkUrl','linkText','linkClasses','linkId']
     r=client.run_report(RunReportRequest(property=f'properties/{pid}',dimensions=[Dimension(name=x) for x in dims],metrics=[Metric(name='eventCount')],date_ranges=[DateRange(start_date=start,end_date=end)],dimension_filter=FilterExpression(filter=Filter(field_name='eventName',string_filter=Filter.StringFilter(value=event_name,match_type=Filter.StringFilter.MatchType.EXACT))),limit=250000))
     return [{'date':x.dimension_values[0].value,'page_path':x.dimension_values[1].value,'link_url':x.dimension_values[2].value or None,'product_name':x.dimension_values[3].value or None,'platform':x.dimension_values[4].value or None,'product_id':x.dimension_values[5].value or None,'click_count':int(x.metric_values[0].value or 0)} for x in r.rows]
+
+
+def merge_daily_totals(path,rows,start,end):
+    old=[]
+    if path.exists(): old=json.loads(path.read_text(encoding='utf-8')).get('rows',[])
+    start_key=start.replace('-',''); end_key=end.replace('-','')
+    merged={r['date']:r for r in old if not (start_key <= r['date'] <= end_key)}
+    for r in rows: merged[r['date']]=r
+    return sorted(merged.values(),key=lambda r:r['date'])
 
 def merge_raw(path,rows,start,end):
     old=[]
@@ -96,27 +110,29 @@ def feedback_from(rows,days=28):
 def main():
     ap=argparse.ArgumentParser(); ap.add_argument('--backfill',action='store_true'); ap.add_argument('--start-date'); ap.add_argument('--days',type=int,default=28); args=ap.parse_args()
     cfg=load_config(); state=DEFAULT_STATE_DIR; state.mkdir(parents=True,exist_ok=True)
-    raw_path=state/'ga4_daily_raw.json'; detail_path=state/'ga4_affiliate_click_detail.json'; latest_path=state/'ga4_latest.json'; feedback_path=state/'analytics_feedback.json'
+    raw_path=state/'ga4_daily_raw.json'; totals_path=state/'ga4_daily_totals.json'; detail_path=state/'ga4_affiliate_click_detail.json'; latest_path=state/'ga4_latest.json'; feedback_path=state/'analytics_feedback.json'
     today=date.today(); end=today.isoformat()
     if args.backfill: start=args.start_date or cfg.get('raw_start_date','2025-01-01')
     else: start=(today-timedelta(days=int(cfg.get('refresh_days',3))-1)).isoformat()
     client=client_from_config(cfg)
     event_name=cfg.get('affiliate_click_event_name','affiliate_click'); formal_start=cfg['affiliate_click_formal_start_date'].replace('-','')
-    pages=run_daily_pages(client,cfg['property_id'],start,end); clicks=run_daily_clicks(client,cfg['property_id'],start,end,event_name); detail=run_daily_click_detail(client,cfg['property_id'],start,end,event_name)
+    pages=run_daily_pages(client,cfg['property_id'],start,end); totals=run_daily_totals(client,cfg['property_id'],start,end); clicks=run_daily_clicks(client,cfg['property_id'],start,end,event_name); detail=run_daily_click_detail(client,cfg['property_id'],start,end,event_name)
     page_map={(r['date'],r['page_path']):r for r in pages}
     for key,count in clicks.items():
         row=page_map.setdefault(key,{'date':key[0],'page_path':key[1],'page_title':'','page_views':0,'sessions':0,'active_users':0})
         row['affiliate_clicks']=count
     for r in page_map.values():
         r['affiliate_clicks']=None if r['date']<formal_start else int(r.get('affiliate_clicks',0) or 0)
-    rows=merge_raw(raw_path,list(page_map.values()),start,end); detail_rows=merge_detail(detail_path,detail,start,end)
+    rows=merge_raw(raw_path,list(page_map.values()),start,end); total_rows=merge_daily_totals(totals_path,totals,start,end); detail_rows=merge_detail(detail_path,detail,start,end)
     raw={'source':'GA4','grain':'date_x_pagePath','generated_at':datetime.now(timezone.utc).isoformat(),'property_id':cfg['property_id'],'measurement_id':cfg.get('measurement_id'),'stock_start_date':cfg.get('raw_start_date','2025-01-01'),'affiliate_click_event_name':event_name,'affiliate_click_definition_version':cfg.get('affiliate_click_definition_version'),'affiliate_click_cutover_at':cfg.get('affiliate_click_cutover_at'),'affiliate_click_formal_start_date':cfg.get('affiliate_click_formal_start_date'),'rows':rows}
     raw_path.write_text(json.dumps(raw,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    totals_doc={'source':'GA4','grain':'date','metric':'screenPageViews','generated_at':raw['generated_at'],'property_id':cfg['property_id'],'rows':total_rows}
+    totals_path.write_text(json.dumps(totals_doc,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     detail_doc={'source':'GA4','grain':'date_x_pagePath_x_platform_x_product_x_link','generated_at':raw['generated_at'],'event_name':event_name,'formal_start_date':cfg.get('affiliate_click_formal_start_date'),'rows':detail_rows}
     detail_path.write_text(json.dumps(detail_doc,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     latest={'source':'GA4','generated_at':raw['generated_at'],'range_days':args.days,'affiliate_click_formal_start_date':cfg.get('affiliate_click_formal_start_date'),'pages':aggregate(rows,args.days)}
     latest_path.write_text(json.dumps(latest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     feedback_path.write_text(json.dumps(feedback_from(rows,args.days),ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     dates=sorted({r['date'] for r in rows})
-    print('GA4_SYNC_OK'); print('FETCH',start,end); print('RAW_ROWS',len(rows)); print('RAW_DATE_RANGE',dates[0] if dates else '-',dates[-1] if dates else '-'); print('LATEST_PAGES',len(latest['pages'])); print('AFFILIATE_DETAIL_ROWS',len(detail_rows)); print('AFFILIATE_FORMAL_START',cfg.get('affiliate_click_formal_start_date'))
+    print('GA4_SYNC_OK'); print('FETCH',start,end); print('RAW_ROWS',len(rows)); print('RAW_DATE_RANGE',dates[0] if dates else '-',dates[-1] if dates else '-'); print('DAILY_TOTAL_ROWS',len(total_rows)); print('DAILY_TOTAL_PV',sum(r['page_views'] for r in total_rows)); print('LATEST_PAGES',len(latest['pages'])); print('AFFILIATE_DETAIL_ROWS',len(detail_rows)); print('AFFILIATE_FORMAL_START',cfg.get('affiliate_click_formal_start_date'))
 if __name__=='__main__': main()
