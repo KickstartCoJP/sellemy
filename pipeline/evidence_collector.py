@@ -1,6 +1,7 @@
 from __future__ import annotations
 import argparse, hashlib, importlib.util, json, re, sqlite3, sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from affiliate_config import amazon_url
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -65,7 +66,7 @@ def fetch_all(rows):
    except Exception:found[row['product_id']]=None
  return found,len(live)
 def persist(c,row,item,observed_at):
- asin=row['asin'].upper();url=f'https://www.amazon.co.jp/dp/{asin}?tag=suzuron-22'
+ asin=row['asin'].upper();url=amazon_url(asin)
  title=re.sub(r'^Amazon.co.jp\s*[:：|]\s*','',item['title']).strip()
  brand=re.sub(r'^(?:ブランド:\s*)|(?:のストアを表示)$','',item.get('brand') or '').strip() or None
  if not brand:

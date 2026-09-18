@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'pipeline'))
 
 from analytics_feedback import load_feedback
+from affiliate_config import AMAZON_TRACKING_ID
 from adaptive_publish import AdaptivePublishController
 from discovery_adapters import AutositeDiscoveryAdapter
 from feedback_task_bridge import sync_feedback_to_task_event
@@ -26,7 +27,6 @@ from writer_runtime import invoke_writer
 
 REPORT = ROOT / 'data' / 'growth_last_run.json'
 BASE = 'https://www.sellemy.jp'
-AMAZON_TAG = 'suzuron-22'
 
 
 class GrowthRuntimeError(RuntimeError):
@@ -109,7 +109,7 @@ def build_evidence(topic: dict, products: list[dict], selection: dict | None = N
         'slug': topic['slug'], 'category': topic['category'],
         'canonical_url': f'{BASE}/article/{topic["category"]}/{topic["slug"]}.html',
         'eyecatch_image': f'{BASE}/img/{topic["slug"]}/{topic["slug"]}.png',
-        'amazon_tag': AMAZON_TAG, 'comparison_axes': topic['comparison_axes'],
+        'amazon_tag': AMAZON_TRACKING_ID, 'comparison_axes': topic['comparison_axes'],
         'selection': selection or {}, 'products': evidence_products,
     }
     validate_evidence(evidence)

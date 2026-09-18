@@ -4,6 +4,7 @@ import html
 import urllib.parse
 from datetime import date
 
+from affiliate_config import amazon_url
 from category_metadata import get_category
 from payload_schema import validate_payload, validate_evidence, match_refs
 
@@ -21,10 +22,10 @@ def _external_search_key(product_payload: dict, product_evidence: dict) -> str:
 
 
 def _affiliate_links(search_key: str, asin: str, amazon_tag: str):
-    amazon_url = f'https://www.amazon.co.jp/dp/{asin}?tag={amazon_tag}'
+    amazon_link = amazon_url(asin)
     rakuten_url = RAK + urllib.parse.quote('https://search.rakuten.co.jp/search/mall/' + search_key + '/', safe='')
     yahoo_url = YAH + urllib.parse.quote('https://shopping.yahoo.co.jp/search?p=' + search_key, safe='')
-    return amazon_url, rakuten_url, yahoo_url
+    return amazon_link, rakuten_url, yahoo_url
 
 
 def _render_card(product_payload: dict, product_evidence: dict, amazon_tag: str) -> str:

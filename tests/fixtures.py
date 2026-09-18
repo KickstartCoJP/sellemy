@@ -25,7 +25,7 @@ VALID_EVIDENCE = {
     'category': 'gadget',
     'canonical_url': 'https://www.sellemy.jp/article/gadget/test-widgets-6-picks.html',
     'eyecatch_image': 'https://www.sellemy.jp/img/test-widgets-6-picks/test-widgets-6-picks.png',
-    'amazon_tag': 'suzuron-22',
+    'amazon_tag': 'sellemy-22',
     'comparison_axes': [
         {'id': 'portable', 'label': '持ち運びやすさ', 'keywords': ['軽量']},
         {'id': 'performance', 'label': '性能', 'keywords': ['高性能']},

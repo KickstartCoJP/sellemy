@@ -10,6 +10,8 @@ import sqlite3
 from datetime import date, datetime, timezone
 from pathlib import Path
 
+from affiliate_config import amazon_url
+
 from category_metadata import get_category
 from eyecatch_adapter import EyecatchGenerator
 from qa import run_qa
@@ -94,7 +96,7 @@ def _upsert_products(payload: dict, evidence: dict) -> list[str]:
                 connection.execute('UPDATE products SET product_id=? WHERE product_id=?', (product_id, old[0]))
             values = (
                 product['amazon_title'], asin, f'{evidence["slug"]}.html',
-                f'https://www.amazon.co.jp/dp/{asin}?tag={evidence["amazon_tag"]}', product['image_url'],
+                amazon_url(asin), product['image_url'],
                 product.get('brand'), product.get('observed_price'), now if product.get('observed_price') is not None else None,
                 product['amazon_title'], product_id,
             )
@@ -121,7 +123,7 @@ def _sync_products_json(payload: dict, evidence: dict) -> dict:
         entry = {
             'productId': product['product_id'], 'asin': product['asin'], 'name': copy['h3'],
             'brand': product.get('brand') or '',
-            'amazonUrl': f'https://www.amazon.co.jp/dp/{product["asin"]}?tag={evidence["amazon_tag"]}',
+            'amazonUrl': amazon_url(product['asin']),
             'imageUrl': product['image_url'], 'description': copy['description'],
             'articleSlug': evidence['slug'], 'articleTitle': payload['h1'], 'category': evidence['category'],
         }

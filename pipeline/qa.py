@@ -1,6 +1,7 @@
 from __future__ import annotations
 import re
 
+from affiliate_config import AMAZON_TRACKING_ID
 from category_metadata import get_category
 
 # Machine QA runs mechanical/structural checks against the RENDERED HTML plus the
@@ -178,7 +179,7 @@ def run_qa(html: str, payload: dict, evidence: dict) -> dict:
     evidence_asins = {p['asin'] for p in evidence['products']}
     results['asin_pass'] = len(asins) == 6 and set(asins) == evidence_asins
 
-    amazon_tag = evidence['amazon_tag']
+    amazon_tag = AMAZON_TRACKING_ID
     amazon_link_count = len(re.findall(rf'amazon\.co\.jp/dp/[A-Z0-9]+\?tag={re.escape(amazon_tag)}', html))
     rakuten_link_count = html.count('>楽天</a>')
     yahoo_link_count = html.count('>Yahoo</a>')
