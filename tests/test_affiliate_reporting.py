@@ -27,6 +27,18 @@ class AffiliateReportingTests(unittest.TestCase):
             self.assertFalse(result['profit_actual_ready'])
             self.assertEqual(json.loads(state.read_text())['providers'][0]['report_count'],0)
 
+
+    def test_amazon_ineligible_state_preserves_missing_semantics(self):
+        state={
+            'provider':'amazon','state':'creators_api_ineligible','report_count':0,
+            'eligibility_probe':{'state':'associate_not_eligible','http_status':403},
+            'current_primary':'Associates Central official report export',
+            'zero_semantics':'reports_empty_or_api_ineligible_is_missing_not_zero',
+        }
+        self.assertEqual(state['eligibility_probe']['http_status'],403)
+        self.assertEqual(state['current_primary'],'Associates Central official report export')
+        self.assertIn('missing_not_zero',state['zero_semantics'])
+
     def test_official_export_ingest_is_content_addressed_and_unparsed(self):
         with tempfile.TemporaryDirectory() as d:
             root=Path(d); src=root/'amazon.csv'; src.write_text('x,y\n1,2\n')

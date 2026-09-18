@@ -16,6 +16,8 @@ RAW_DIR = STATE_DIR / 'affiliate-raw'
 AMAZON_CREDENTIALS = Path.home() / '.config' / 'amazon-associates' / 'creators-api.csv'
 STATE_PATH = STATE_DIR / 'affiliate_source_state.json'
 MARKETPLACE = 'www.amazon.co.jp'
+AMAZON_PARTNER_TAG = 'sellemy-22'
+ELIGIBILITY_PROBE_ASIN = 'B0009WCIDQ'
 
 
 def _stamp() -> str:
@@ -55,9 +57,25 @@ def amazon_inventory() -> dict:
         configuration=configuration,
         credential_id=row['Credential Id'], credential_secret=row['Secret'], version=row['Version'],
     )
-    response = DefaultApi(client).list_reports(x_marketplace=MARKETPLACE, _request_timeout=20)
+    api = DefaultApi(client)
+    response = api.list_reports(x_marketplace=MARKETPLACE, _request_timeout=20)
     data = _model_dict(response)
     reports = data.get('reports') or []
+    eligibility = {'state': 'unknown'}
+    try:
+        from creatorsapi_python_sdk.models.get_items_request_content import GetItemsRequestContent
+        probe = GetItemsRequestContent(partnerTag=AMAZON_PARTNER_TAG, itemIds=[ELIGIBILITY_PROBE_ASIN])
+        api.get_items(x_marketplace=MARKETPLACE, get_items_request_content=probe, _request_timeout=20)
+        eligibility = {'state': 'eligible_2xx', 'probe_asin': ELIGIBILITY_PROBE_ASIN}
+    except Exception as exc:
+        text = str(exc)
+        if 'AssociateNotEligible' in text or 'eligibility requirements' in text:
+            eligibility = {
+                'state': 'associate_not_eligible', 'probe_asin': ELIGIBILITY_PROBE_ASIN,
+                'http_status': 403, 'reason': 'AssociateNotEligible',
+            }
+        else:
+            eligibility = {'state': 'probe_error', 'probe_asin': ELIGIBILITY_PROBE_ASIN, 'error_type': type(exc).__name__}
     sanitized = []
     for item in reports:
         if not isinstance(item, dict):
@@ -68,10 +86,15 @@ def amazon_inventory() -> dict:
         })
     return {
         'provider': 'amazon',
-        'state': 'reports_available' if sanitized else 'api_verified_reports_empty',
+        'state': ('reports_available' if sanitized and eligibility['state'] == 'eligible_2xx'
+                  else 'creators_api_ineligible' if eligibility['state'] == 'associate_not_eligible'
+                  else 'api_verified_reports_empty'),
         'source': 'Amazon Creators API Reporting', 'marketplace': MARKETPLACE,
-        'reports': sanitized, 'report_count': len(sanitized), 'updated_at': _stamp(),
-        'zero_semantics': 'reports_empty_is_missing_not_zero',
+        'tracking_id': AMAZON_PARTNER_TAG, 'reports': sanitized, 'report_count': len(sanitized),
+        'eligibility_probe': eligibility, 'updated_at': _stamp(),
+        'zero_semantics': 'reports_empty_or_api_ineligible_is_missing_not_zero',
+        'current_primary': 'Associates Central official report export',
+        'future_primary': 'Creators API Reporting after eligibility probe returns 2xx',
         'historical_backfill_route': 'Associates Central official report export',
     }
 
