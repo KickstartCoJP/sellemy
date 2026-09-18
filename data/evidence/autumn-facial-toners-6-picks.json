@@ -1,0 +1,142 @@
+{
+  "slug": "autumn-facial-toners-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/autumn-facial-toners-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/autumn-facial-toners-6-picks/autumn-facial-toners-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "moisture_ingredients",
+      "label": "保湿成分",
+      "keywords": [
+        "セラミド",
+        "ヒアルロン酸",
+        "保湿成分"
+      ]
+    },
+    {
+      "id": "texture",
+      "label": "使用感",
+      "keywords": [
+        "とろみ",
+        "さっぱり",
+        "しっとり"
+      ]
+    },
+    {
+      "id": "skin_type",
+      "label": "肌タイプ対応",
+      "keywords": [
+        "敏感肌",
+        "乾燥肌",
+        "混合肌"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格帯",
+      "keywords": [
+        "価格",
+        "プチプラ",
+        "デパコス"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "moisture_ingredients",
+      "skin_type",
+      "texture"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0DJD99XHH",
+      "asin": "B0DJD99XHH",
+      "amazon_title": "クワトロボタニコ ボタニカル ローション ＆ アフターシェーブ S 本体 150ml (しっとり)",
+      "brand": "クワトロボタニコ(QUATTRO BOTANICO)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51GBJt3u25L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2750,
+      "discovery_score": 1,
+      "selection_score": 0.675,
+      "matched_comparison_axes": [
+        "texture"
+      ],
+      "search_key": "クワトロボタニコ(QUATTRO BOTANICO) クワトロボタニコ ボタニカル ローション"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0GLF7CT8D",
+      "asin": "B0GLF7CT8D",
+      "amazon_title": "【2本5役の時短ケア】N organic Basic スキンケア2点セット 化粧水 赤CICA乳液 約2ヶ月分 保湿 肌荒れ 敏感肌 柑橘系の香り",
+      "brand": "N organic（エヌオーガニック）のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71bWuP99+bL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 9504,
+      "discovery_score": 1,
+      "selection_score": 0.675,
+      "matched_comparison_axes": [
+        "skin_type"
+      ],
+      "search_key": "N organic（エヌオーガニック） N organic Basic スキンケア2点セット 化"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B098W3VSRD",
+      "asin": "B098W3VSRD",
+      "amazon_title": "菊正宗 日本酒の化粧水 高保湿 500ml + 化粧水サシェ 1個付 セラミド 大容量",
+      "brand": "菊正宗のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61SWyFV0DgL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 815,
+      "discovery_score": 1,
+      "selection_score": 0.625,
+      "matched_comparison_axes": [
+        "moisture_ingredients"
+      ],
+      "search_key": "菊正宗 日本酒の化粧水 高保湿 500ml + 化粧水サシェ 1個付 セ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0GS4MBC82",
+      "asin": "B0GS4MBC82",
+      "amazon_title": "再春館製薬所 ドモホルンリンクル 保湿液 120mL 約60日分 化粧水 ローション スキンケア うるおい 保湿 乾燥",
+      "brand": "再春館製薬所のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/41JgVBbI3+L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 6100,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "再春館製薬所 ドモホルンリンクル 保湿液 120mL 約60日分 化粧水 ロー"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0DGGFJQ7S",
+      "asin": "B0DGGFJQ7S",
+      "amazon_title": "【再生医療発想】エテルナム ローション 化粧水 ヒト幹細胞培養上清液 エクソソーム 敏感肌 保湿 シミ くすみ 毛穴 リポソーム 日本製 100mL",
+      "brand": "Eternamのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51jU+P8vqZL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 8800,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "skin_type"
+      ],
+      "search_key": "Eternam エテルナム ローション 化粧水 ヒト幹細胞培養上清液 エクソソー"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0CLK45RS2",
+      "asin": "B0CLK45RS2",
+      "amazon_title": "ASTALIFT MEN MONOM メンズ スキンケア 高保湿 120mL 約2か月分 【1本で完結】 保湿液 モイスチャライザー",
+      "brand": "MONOMのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71GPc-e2BCL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 4598,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "MONOM ASTALIFT MEN MONOM メンズ スキンケア 高保湿"
+    }
+  ]
+}
