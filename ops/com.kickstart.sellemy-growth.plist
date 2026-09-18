@@ -4,7 +4,7 @@
 <key>Label</key><string>com.kickstart.sellemy-growth</string>
 <key>ProgramArguments</key><array><string>/bin/zsh</string><string>/Users/suzukitakayuki/sellemy/ops/run-growth.sh</string></array>
 <key>WorkingDirectory</key><string>/Users/suzukitakayuki/sellemy</string>
-<key>StartCalendarInterval</key><dict><key>Minute</key><integer>10</integer></dict>
+<key>StartInterval</key><integer>60</integer>
 <key>StandardOutPath</key><string>/Users/suzukitakayuki/sellemy/logs/growth.log</string>
 <key>StandardErrorPath</key><string>/Users/suzukitakayuki/sellemy/logs/growth.error.log</string>
 </dict></plist>

@@ -92,18 +92,15 @@ class AdaptiveControllerTests(unittest.TestCase):
             slots = publish_slots_for_target(config, target)
             self.assertEqual(len(slots), target)
             self.assertEqual(len(set(slots)), target)
-            self.assertTrue(all(slot.endswith(':10') for slot in slots))
-        self.assertEqual(publish_slots_for_target(config, 2), ['04:10', '16:10'])
+        self.assertEqual(publish_slots_for_target(config, 2), ['00:00', '12:00'])
+        self.assertEqual(publish_slots_for_target(config, 3), ['00:00', '08:00', '16:00'])
 
     def test_twelve_per_day_is_two_hour_spacing_and_24_is_hourly(self):
         config = load_config(ROOT / 'config' / 'adaptive_publish.json')
         twelve = publish_slots_for_target(config, 12)
-        hours = [int(slot[:2]) for slot in twelve]
-        gaps = [((hours[(i + 1) % len(hours)] - hours[i]) % 24) for i in range(len(hours))]
-        self.assertEqual(gaps, [2] * 12)
+        self.assertEqual(twelve, [f'{hour:02d}:00' for hour in range(0, 24, 2)])
         twenty_four = publish_slots_for_target(config, 24)
-        self.assertEqual(len(twenty_four), 24)
-        self.assertEqual({int(slot[:2]) for slot in twenty_four}, set(range(24)))
+        self.assertEqual(twenty_four, [f'{hour:02d}:00' for hour in range(24)])
 
     def test_controller_can_reach_configured_24_per_day_cap(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -114,18 +111,75 @@ class AdaptiveControllerTests(unittest.TestCase):
             self.assertEqual(state['target_per_day'], 24)
             self.assertEqual(state['maximum_target_per_day'], 24)
 
-    def test_initial_two_per_day_preserves_0410_and_1610_only(self):
+    def test_three_per_day_uses_midnight_eight_and_sixteen(self):
         with tempfile.TemporaryDirectory() as directory:
             controller = self.controller(ROOT, Path(directory))
+            for index in range(3):
+                row = feedback(f'prior-green-{index}', 'green')
+                row['evaluated_at'] = f'2026-09-16T0{index}:00:00+00:00'
+                controller.record_feedback(row)
             zone = ZoneInfo('Asia/Tokyo')
-            first = controller.admit_scheduled(datetime(2026, 9, 17, 4, 12, tzinfo=zone))
-            extra = controller.admit_scheduled(datetime(2026, 9, 17, 10, 10, tzinfo=zone))
-            second = controller.admit_scheduled(datetime(2026, 9, 17, 16, 10, tzinfo=zone))
-            duplicate = controller.admit_scheduled(datetime(2026, 9, 17, 4, 10, tzinfo=zone))
+            first = controller.admit_scheduled(datetime(2026, 9, 18, 0, 0, tzinfo=zone))
+            off_slot = controller.admit_scheduled(datetime(2026, 9, 18, 4, 0, tzinfo=zone))
+            second = controller.admit_scheduled(datetime(2026, 9, 18, 8, 0, tzinfo=zone))
             self.assertTrue(first['allowed'])
-            self.assertFalse(extra['allowed'])
+            self.assertEqual(off_slot['reason'], 'slot_not_enabled_for_target')
             self.assertTrue(second['allowed'])
-            self.assertEqual(duplicate['reason'], 'slot_already_admitted')
+
+    def test_failure_retries_halfway_without_moving_downstream_slots(self):
+        with tempfile.TemporaryDirectory() as directory:
+            controller = self.controller(ROOT, Path(directory))
+            for index in range(3):
+                row = feedback(f'prior-green-{index}', 'green')
+                row['evaluated_at'] = f'2026-09-16T0{index}:00:00+00:00'
+                controller.record_feedback(row)
+            zone = ZoneInfo('Asia/Tokyo')
+            controller.admit_scheduled(datetime(2026, 9, 18, 0, 0, tzinfo=zone))
+            r1 = controller.reschedule_after_failure(failed_slot='00:00', now=datetime(2026, 9, 18, 0, 2, tzinfo=zone))
+            self.assertEqual(r1['mode'], 'local_recovery')
+            self.assertEqual(r1['next_slot'], '04:00')
+            self.assertEqual(r1['slots'], ['00:00', '04:00', '08:00', '16:00'])
+            self.assertTrue(controller.admit_scheduled(datetime(2026, 9, 18, 4, 0, tzinfo=zone))['allowed'])
+
+    def test_recovery_sequence_is_four_six_seven_then_full_recompose(self):
+        with tempfile.TemporaryDirectory() as directory:
+            controller = self.controller(ROOT, Path(directory))
+            for index in range(3):
+                row = feedback(f'prior-green-{index}', 'green')
+                row['evaluated_at'] = f'2026-09-16T0{index}:00:00+00:00'
+                controller.record_feedback(row)
+            zone = ZoneInfo('Asia/Tokyo')
+            controller.admit_scheduled(datetime(2026, 9, 18, 0, 0, tzinfo=zone))
+            r1 = controller.reschedule_after_failure(failed_slot='00:00', now=datetime(2026, 9, 18, 0, 2, tzinfo=zone))
+            controller.admit_scheduled(datetime(2026, 9, 18, 4, 0, tzinfo=zone))
+            r2 = controller.reschedule_after_failure(failed_slot='04:00', now=datetime(2026, 9, 18, 4, 2, tzinfo=zone))
+            controller.admit_scheduled(datetime(2026, 9, 18, 6, 0, tzinfo=zone))
+            r3 = controller.reschedule_after_failure(failed_slot='06:00', now=datetime(2026, 9, 18, 6, 2, tzinfo=zone))
+            controller.admit_scheduled(datetime(2026, 9, 18, 7, 0, tzinfo=zone))
+            r4 = controller.reschedule_after_failure(failed_slot='07:00', now=datetime(2026, 9, 18, 7, 2, tzinfo=zone))
+            self.assertEqual(r1['next_slot'], '04:00')
+            self.assertEqual(r2['next_slot'], '06:00')
+            self.assertEqual(r3['next_slot'], '07:00')
+            self.assertEqual(r4['mode'], 'full_recompose')
+            self.assertEqual(r4['next_slot'], '08:00')
+            self.assertEqual(r4['slots'][-3:], ['08:00', '13:20', '18:40'])
+
+    def test_successful_recovery_keeps_original_downstream_schedule(self):
+        with tempfile.TemporaryDirectory() as directory:
+            controller = self.controller(ROOT, Path(directory))
+            for index in range(3):
+                row = feedback(f'prior-green-{index}', 'green')
+                row['evaluated_at'] = f'2026-09-16T0{index}:00:00+00:00'
+                controller.record_feedback(row)
+            zone = ZoneInfo('Asia/Tokyo')
+            controller.admit_scheduled(datetime(2026, 9, 18, 0, 0, tzinfo=zone))
+            controller.reschedule_after_failure(failed_slot='00:00', now=datetime(2026, 9, 18, 0, 2, tzinfo=zone))
+            controller.record_feedback({
+                **feedback('recovery-success', 'green'),
+                'evaluated_at': '2026-09-17T19:05:00+00:00',
+            })
+            self.assertTrue(controller.admit_scheduled(datetime(2026, 9, 18, 8, 0, tzinfo=zone))['allowed'])
+            self.assertTrue(controller.admit_scheduled(datetime(2026, 9, 18, 16, 0, tzinfo=zone))['allowed'])
 
     def test_evaluator_failure_is_durable_red_and_pauses_publication(self):
         with tempfile.TemporaryDirectory() as directory:

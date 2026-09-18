@@ -271,6 +271,12 @@ def run(
     except Exception as exc:
         result['status'] = 'published_feedback_failed' if result['published'] else 'blocked_before_publish'
         result['blocker'] = f'{type(exc).__name__}: {exc}'
+        decision = result.get('controller_decision') or {}
+        if publish and scheduled and not result['published'] and decision.get('allowed'):
+            try:
+                result['recovery_schedule'] = adaptive.reschedule_after_failure(failed_slot=decision['slot'])
+            except Exception as recovery_error:
+                result['recovery_schedule_error'] = f'{type(recovery_error).__name__}: {recovery_error}'
         raise
     finally:
         result['finished_at'] = datetime.now(timezone.utc).isoformat()

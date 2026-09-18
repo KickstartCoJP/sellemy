@@ -7,7 +7,7 @@ import os
 import re
 import tempfile
 from contextlib import contextmanager
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -138,10 +138,13 @@ def publish_slots_for_target(config: dict, target: int) -> list[str]:
     if not minimum <= int(target) <= maximum:
         raise AdaptivePublishError(f'target_per_day outside configured bounds: {target}')
     target = int(target)
-    minute = int(config['heartbeat_minute'])
-    anchor = int(config['slot_anchor_hour'])
-    offsets = [(index * 24) // target for index in range(target)]
-    slots = [f'{(anchor + offset) % 24:02d}:{minute:02d}' for offset in offsets]
+    anchor_minutes = int(config['slot_anchor_hour']) * 60 + int(config['heartbeat_minute'])
+    offsets = [(index * 24 * 60) // target for index in range(target)]
+    slots = []
+    for offset in offsets:
+        minute_of_day = (anchor_minutes + offset) % (24 * 60)
+        hour, minute = divmod(minute_of_day, 60)
+        slots.append(f'{hour:02d}:{minute:02d}')
     if len(slots) != target or len(set(slots)) != target:
         raise AdaptivePublishError(f'computed publish slots are not unique for target {target}')
     return slots
@@ -338,6 +341,108 @@ class AdaptivePublishController:
             _atomic_json(self.state_path, state)
         return state
 
+    def _published_commits_for_local_date(self, local_date, zone: ZoneInfo) -> set[str]:
+        commits: set[str] = set()
+        for row in self.feedback():
+            raw = row.get('evaluated_at')
+            commit = row.get('commit')
+            if not raw or not commit:
+                continue
+            try:
+                evaluated = datetime.fromisoformat(raw.replace('Z', '+00:00'))
+            except ValueError:
+                continue
+            if evaluated.tzinfo is None:
+                evaluated = evaluated.replace(tzinfo=timezone.utc)
+            if evaluated.astimezone(zone).date() == local_date:
+                commits.add(commit)
+        return commits
+
+    @property
+    def recovery_schedule_path(self) -> Path:
+        return self.state_dir / 'recovery_schedule.json'
+
+    @staticmethod
+    def _minutes(value: str) -> int:
+        hour, minute = (int(part) for part in value.split(':'))
+        return hour * 60 + minute
+
+    @staticmethod
+    def _clock(total_minutes: int) -> str:
+        total_minutes = max(0, min(1439, int(total_minutes)))
+        return f'{total_minutes // 60:02d}:{total_minutes % 60:02d}'
+
+    def _recovery_plan(self, local_date) -> dict | None:
+        if not self.recovery_schedule_path.exists():
+            return None
+        try:
+            payload = json.loads(self.recovery_schedule_path.read_text(encoding='utf-8'))
+        except (OSError, json.JSONDecodeError):
+            return None
+        if payload.get('date') != local_date.isoformat():
+            return None
+        return payload
+
+    def _active_slots(self, local_date, state: dict) -> list[str]:
+        plan = self._recovery_plan(local_date)
+        if plan is not None and isinstance(plan.get('slots'), list):
+            return plan['slots']
+        return publish_slots_for_target(self.config, state['target_per_day'])
+
+    def _recompose_from(self, *, start_minute: int, remaining_needed: int) -> list[str]:
+        if remaining_needed <= 0 or start_minute >= 24 * 60:
+            return []
+        span = (24 * 60) - start_minute
+        return [
+            self._clock(start_minute + round(index * span / remaining_needed))
+            for index in range(remaining_needed)
+        ]
+
+    def reschedule_after_failure(self, *, failed_slot: str, now: datetime | None = None) -> dict:
+        zone = ZoneInfo(self.config.get('timezone', 'Asia/Tokyo'))
+        local = (now or datetime.now(zone)).astimezone(zone)
+        state = self.current_state()
+        published_today = len(self._published_commits_for_local_date(local.date(), zone))
+        remaining_needed = max(0, int(state['target_per_day']) - published_today)
+        active_slots = self._active_slots(local.date(), state)
+        failed_minute = self._minutes(failed_slot)
+        future = sorted(self._minutes(slot) for slot in active_slots if self._minutes(slot) > failed_minute)
+        boundary = future[0] if future else 24 * 60
+        midpoint = failed_minute + (boundary - failed_minute) // 2
+
+        # Keep downstream slots unchanged while there is at least one hour between
+        # the proposed recovery and the next scheduled slot. Otherwise rebuild the
+        # remaining day from the next scheduled slot.
+        if remaining_needed > 0 and boundary - midpoint >= 60:
+            slots = sorted(set(active_slots + [self._clock(midpoint)]), key=self._minutes)
+            mode = 'local_recovery'
+            next_slot = self._clock(midpoint)
+        elif boundary < 24 * 60 and remaining_needed > 0:
+            rebuilt = self._recompose_from(start_minute=boundary, remaining_needed=remaining_needed)
+            past = [slot for slot in active_slots if self._minutes(slot) < boundary]
+            slots = past + rebuilt
+            mode = 'full_recompose'
+            next_slot = rebuilt[0] if rebuilt else None
+        else:
+            slots = active_slots
+            mode = 'day_exhausted'
+            next_slot = None
+
+        payload = {
+            'date': local.date().isoformat(),
+            'recalculated_at': local.astimezone(timezone.utc).isoformat(),
+            'target_per_day': state['target_per_day'],
+            'published_today': published_today,
+            'remaining_needed': remaining_needed,
+            'failed_slot': failed_slot,
+            'boundary_slot': None if boundary == 24 * 60 else self._clock(boundary),
+            'mode': mode,
+            'next_slot': next_slot,
+            'slots': slots,
+        }
+        _atomic_json(self.recovery_schedule_path, payload)
+        return payload
+
     def admit_scheduled(self, now: datetime | None = None) -> dict:
         zone = ZoneInfo(self.config.get('timezone', 'Asia/Tokyo'))
         local = (now or datetime.now(zone)).astimezone(zone)
@@ -345,16 +450,24 @@ class AdaptivePublishController:
             state = self.current_state()
             if state['publish_paused']:
                 return {'allowed': False, 'reason': 'ceo_alert_pause', 'slot': None, 'state': state}
-            slots = publish_slots_for_target(self.config, state['target_per_day'])
+
+            published_today = len(self._published_commits_for_local_date(local.date(), zone))
+            if published_today >= int(state['target_per_day']):
+                return {
+                    'allowed': False, 'reason': 'daily_target_satisfied', 'slot': None, 'state': state,
+                    'published_today': published_today,
+                }
+
+            slots = self._active_slots(local.date(), state)
             minute_of_day = local.hour * 60 + local.minute
             eligible = []
-            for configured_slot in slots:
-                hour, minute = (int(part) for part in configured_slot.split(':'))
-                delay = minute_of_day - (hour * 60 + minute)
+            for slot in slots:
+                delay = minute_of_day - self._minutes(slot)
                 if 0 <= delay <= int(self.config['slot_grace_minutes']):
-                    eligible.append((delay, configured_slot))
+                    eligible.append((delay, slot))
             if not eligible:
                 return {'allowed': False, 'reason': 'slot_not_enabled_for_target', 'slot': None, 'state': state}
+
             slot = min(eligible)[1]
             admission_id = f'{local.date().isoformat()}::{slot}'
             prior = _read_jsonl(self.admissions_path)
@@ -365,6 +478,8 @@ class AdaptivePublishController:
                 'admitted_at': local.astimezone(timezone.utc).isoformat(),
                 'slot': slot,
                 'target_per_day': state['target_per_day'],
+                'recovery_mode': self._recovery_plan(local.date()) is not None,
+                'published_today_before': published_today,
             }
             _append_jsonl(self.admissions_path, receipt)
             return {'allowed': True, 'reason': 'scheduled_slot_admitted', 'slot': slot, 'state': state, 'receipt': receipt}

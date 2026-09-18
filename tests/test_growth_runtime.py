@@ -24,14 +24,14 @@ class ScheduledRouteTests(unittest.TestCase):
         self.assertNotIn('pipeline/grow.py', script)
         self.assertNotIn('pipeline/run.py', script)
 
-    def test_hourly_heartbeat_and_algorithmic_24_per_day_cap(self):
+    def test_minute_scheduler_and_algorithmic_24_per_day_cap(self):
         plist = (ROOT / 'ops' / 'com.kickstart.sellemy-growth.plist').read_text(encoding='utf-8')
-        self.assertIn('<key>StartCalendarInterval</key><dict><key>Minute</key><integer>10</integer></dict>', plist)
-        self.assertNotIn('<key>Hour</key>', plist)
+        self.assertIn('<key>StartInterval</key><integer>60</integer>', plist)
+        self.assertNotIn('<key>StartCalendarInterval</key>', plist)
         config = json.loads((ROOT / 'config' / 'adaptive_publish.json').read_text(encoding='utf-8'))
         self.assertEqual(config['maximum_target_per_day'], 24)
-        self.assertEqual(config['heartbeat_minute'], 10)
-        self.assertEqual(config['slot_anchor_hour'], 4)
+        self.assertEqual(config['heartbeat_minute'], 0)
+        self.assertEqual(config['slot_anchor_hour'], 0)
         self.assertNotIn('publish_slots_by_target', config)
 
     def test_legacy_entry_points_fail_closed(self):
