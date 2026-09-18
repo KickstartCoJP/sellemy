@@ -1,0 +1,154 @@
+{
+  "slug": "home-dehumidifiers-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/home-dehumidifiers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/home-dehumidifiers-6-picks/home-dehumidifiers-6-picks.png",
+  "amazon_tag": "suzuron-22",
+  "comparison_axes": [
+    {
+      "id": "method",
+      "label": "除湿方式",
+      "keywords": [
+        "コンプレッサー式",
+        "デシカント式",
+        "ハイブリッド"
+      ]
+    },
+    {
+      "id": "tank",
+      "label": "タンク容量・自動運転",
+      "keywords": [
+        "連続排水",
+        "満水停止",
+        "自動運転"
+      ]
+    },
+    {
+      "id": "noise",
+      "label": "静音性",
+      "keywords": [
+        "夜間運転",
+        "静音設計",
+        "dB"
+      ]
+    },
+    {
+      "id": "space",
+      "label": "設置スペース・重量",
+      "keywords": [
+        "コンパクト",
+        "キャスター付き",
+        "持ち運び"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "method",
+      "noise",
+      "space",
+      "tank"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0GTLKB22D",
+      "asin": "B0GTLKB22D",
+      "amazon_title": "Boweer 除湿機 コンプレッサー式 衣類乾燥 12/L日 除湿器 強力除湿 30畳 2.2L大容量水タンク コンパクト 4つ運転モード 省エネ 連続排水 満水自動OFF 排水ホース付き 湿度调整 3色湿度ランプ 風量２段階調節 24時間入·切タイマー キャスター付き 取って付き 持ち運びやすい 静音 梅雨カビ対策 じょしつき 部屋干し 湿気取り 洗面所/風呂場に適用",
+      "brand": "Boweerのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51C0OxE+sFL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 11999,
+      "discovery_score": 1,
+      "selection_score": 1.02,
+      "matched_comparison_axes": [
+        "method",
+        "space",
+        "tank"
+      ],
+      "search_key": "Boweer 除湿機 コンプレッサー式 衣類乾燥 12/L日 除湿器 強力除湿"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B088H9DDP8",
+      "asin": "B088H9DDP8",
+      "amazon_title": "アイリスオーヤマ 除湿機 衣類乾燥 デシカント式 13畳 サーキュレーター付き 除湿器 除湿量 5L タイマー付き スピード乾燥 静音設計 大容量 強力 部屋干し カビ防止 首ふり 左右 梅雨対策 コンパクト リビング IJD-I50-WH ホワイト/グレー",
+      "brand": "アイリスオーヤマ(IRIS OHYAMA)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/41OjIHs+jIL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 21600,
+      "discovery_score": 1,
+      "selection_score": 0.61,
+      "matched_comparison_axes": [
+        "method",
+        "noise",
+        "space"
+      ],
+      "search_key": "アイリスオーヤマ(IRIS OHYAMA) アイリスオーヤマ 除湿機 衣類乾燥 デシカント式 1"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0BHWW7FVJ",
+      "asin": "B0BHWW7FVJ",
+      "amazon_title": "ライシン 除湿機 22L/日（最大除湿量） 6.5Lタンク コンプレッサー 式 大容量 パワフル 衣類乾燥 静音 省エネ コンパクト",
+      "brand": "Lysin（ライシン）のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61lXVNFqM8L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 24800,
+      "discovery_score": 1,
+      "selection_score": 0.48,
+      "matched_comparison_axes": [
+        "space"
+      ],
+      "search_key": "Lysin（ライシン） ライシン 除湿機 22L/日（最大除湿量） 6.5Lタンク コン"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0H951WGVV",
+      "asin": "B0H951WGVV",
+      "amazon_title": "除湿機 コンプレッサー式 15L/日 50畳 静音 省エネ 衣類乾燥 部屋干し【大空間向け・シンプルデザイン直感操作】24H連続排水 タイマー梅雨対策",
+      "brand": "ブランド: InflaVive",
+      "image_url": "https://m.media-amazon.com/images/I/51HfZZf72bL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 16980,
+      "discovery_score": 1,
+      "selection_score": 0.43,
+      "matched_comparison_axes": [
+        "method",
+        "tank"
+      ],
+      "search_key": "InflaVive 除湿機 コンプレッサー式 15L/日 50畳 静音 省エネ 衣類"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0H4QY4JCB",
+      "asin": "B0H4QY4JCB",
+      "amazon_title": "【Amazon.co.jp限定】除湿機 小型 3L大容量【ハイブリッド除湿＆静音睡眠モード＆20～28畳対応】コンパクト 衣類乾燥 強力除湿 タイマー機能 満水自動停止 5色LEDライト搭載 空気清浄フィルター 部屋干し対策 湿気除去 カビ防止 梅雨対策 省エネ設計 リビング/寝室/脱衣所/クローゼット/トイレ対応 PSE認証済 取扱説明書付",
+      "brand": "ブランド: HALOHOME",
+      "image_url": "https://m.media-amazon.com/images/I/71WPSCSJwiL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 7999,
+      "discovery_score": 1,
+      "selection_score": 0.43,
+      "matched_comparison_axes": [
+        "method",
+        "space"
+      ],
+      "search_key": "HALOHOME 除湿機 小型 3L大容量 コンパクト 衣類乾燥 強力除湿 タイマ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0GVSPKJCX",
+      "asin": "B0GVSPKJCX",
+      "amazon_title": "【湿気ゼロの快適空間を今すぐ】 SKK 除湿機 12L/日 30畳 2Lタンク キャスター付き 省エネ コンプレッサー式 湿気対策 衣類乾燥モード 自動霜取り機能 タイマー コンパクト 家庭用 部屋干し 湿気対策 寝室 リビング 洗面所 【日本企業】",
+      "brand": "SKKのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61vY6go73TL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 15780,
+      "discovery_score": 1,
+      "selection_score": 0.43,
+      "matched_comparison_axes": [
+        "method",
+        "space"
+      ],
+      "search_key": "SKK 除湿機 12L/日 30畳 2Lタンク キャスター付き 省エネ"
+    }
+  ]
+}
