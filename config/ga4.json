@@ -5,5 +5,9 @@
   "output_file": "~/Library/Application Support/Sellemy/analytics/ga4_latest.json",
   "feedback_file": "~/Library/Application Support/Sellemy/analytics/analytics_feedback.json",
   "raw_start_date": "2025-01-01",
-  "refresh_days": 3
+  "refresh_days": 3,
+  "affiliate_click_event_name": "affiliate_click",
+  "affiliate_click_definition_version": "v1",
+  "affiliate_click_cutover_at": "2026-09-18T15:00:00+09:00",
+  "affiliate_click_formal_start_date": "2026-09-19"
 }

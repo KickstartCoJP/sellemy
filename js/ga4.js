@@ -3,51 +3,45 @@ window.dataLayer = window.dataLayer || [];
 function gtag(){ dataLayer.push(arguments); }
 
 gtag('js', new Date());
-
-// 測定IDだけ書き換えて使ってください
 gtag('config', 'G-SZ5RQR5H7L', {
-  anonymize_ip: true,   // IP匿名化（プライバシー保護）
-  transport_type: 'beacon'  // パフォーマンス改善
+  anonymize_ip: true,
+  transport_type: 'beacon'
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-  document.querySelectorAll('.link-button').forEach(function(link) {
-    link.addEventListener('click', function(e) {
-      const href = link.href;
-      let label = '';
-      let platform = '';
+(function () {
+  const CUTOVER_DATE = '2026-09-18';
 
-      // どのプラットフォームかを判定
-      if (href.includes('amzn.to') || href.includes('amazon.co.jp')) {
-        platform = 'amazon';
-      } else if (href.includes('rakuten.co.jp') || href.includes('rakuten.ne.jp')) {
-        platform = 'rakuten';
-      } else if (href.includes('shopping.yahoo.co.jp') || href.includes('yahoo.co.jp')) {
-        platform = 'yahoo';
-      } else {
-        return; // 無関係リンクは無視
-      }
+  function affiliatePlatform(href) {
+    if (href.includes('amzn.to') || href.includes('amazon.co.jp')) return 'amazon';
+    if (href.includes('rakuten.co.jp') || href.includes('rakuten.ne.jp')) return 'rakuten';
+    if (href.includes('shopping.yahoo.co.jp') || href.includes('yahoo.co.jp') || href.includes('valuecommerce.com')) return 'yahoo';
+    return null;
+  }
 
-      // 商品名（h3）を探す
-      let productName = '';
-      const card = link.closest('.item-card');
-      if (card) {
-        const h3 = card.querySelector('h3');
-        if (h3) {
-          productName = h3.textContent.trim();
-        }
-      }
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.link-button').forEach(function (link) {
+      link.addEventListener('click', function () {
+        const href = link.href;
+        const platform = affiliatePlatform(href);
+        if (!platform) return;
 
-      // GA4に送信（custom paramも渡せる）
-      gtag('event', 'click', {
-        event_category: 'affiliate',
-        event_label: platform,
-        product_name: productName  // ← カスタムパラメータとして送信
+        const card = link.closest('.item-card');
+        const h3 = card ? card.querySelector('h3') : null;
+        const productName = h3 ? h3.textContent.trim() : '';
+        const productId = card ? (card.dataset.productId || '') : '';
+        const asin = card ? (card.dataset.asin || '') : '';
+
+        gtag('event', 'affiliate_click', {
+          link_url: href,
+          link_text: productName,
+          link_classes: platform,
+          link_id: productId || asin,
+          page_location: window.location.href,
+          page_path: window.location.pathname,
+          measurement_version: 'affiliate_click_v1',
+          measurement_cutover_date: CUTOVER_DATE
+        });
       });
-
-      // 必要に応じて遷移ディレイ（未使用ならコメントアウトのままでOK）
-       e.preventDefault();
-       setTimeout(() => window.open(href, '_blank'), 100);
     });
   });
-});
+})();
