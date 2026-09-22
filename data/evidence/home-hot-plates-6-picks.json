@@ -1,0 +1,140 @@
+{
+  "slug": "home-hot-plates-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/home-hot-plates-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/home-hot-plates-6-picks/home-hot-plates-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "plate_variety",
+      "label": "プレートの種類",
+      "keywords": [
+        "たこ焼きプレート",
+        "平面プレート",
+        "焼肉プレート"
+      ]
+    },
+    {
+      "id": "size_capacity",
+      "label": "サイズ・収容人数",
+      "keywords": [
+        "大人数向け",
+        "コンパクト"
+      ]
+    },
+    {
+      "id": "temp_control",
+      "label": "温度調整・機能",
+      "keywords": [
+        "温度調整",
+        "保温機能"
+      ]
+    },
+    {
+      "id": "price_range",
+      "label": "価格帯",
+      "keywords": [
+        "価格",
+        "コスパ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "plate_variety",
+      "size_capacity",
+      "temp_control"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0DK5HTM42",
+      "asin": "B0DK5HTM42",
+      "amazon_title": "SOLEMOOD ホットプレート 焼肉 たこ焼き 3枚のプレート付き 多用途 しゃぶしゃぶ グリル鍋 深鍋 焼肉プレート すぐに温まる プレート取り外し可能 着脱式 1台多役 A4サイズ 1200W おしゃれ かわいい コンパクト 温度調節 洗いやすい 1人 2人 3人 (四枚セット-ホワイト)",
+      "brand": "SOLEMOODのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71HJR0ocIEL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 15000,
+      "discovery_score": 1,
+      "selection_score": 0.88,
+      "matched_comparison_axes": [
+        "plate_variety",
+        "size_capacity"
+      ],
+      "search_key": "SOLEMOOD ホットプレート 焼肉 たこ焼き 3枚のプレート付き 多用途 しゃ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HJ2H51Y8",
+      "asin": "B0HJ2H51Y8",
+      "amazon_title": "【家電批評 ベストバイ受賞】保温プレート 高速電気保温トレイ 9段階の温度調整40℃〜120℃ ホットプレート 多機能食品断熱ボード チャイルドロック 折りたたみ式 フードウォーマー 自動シャットオフ レストラン/パーティー/イベント/家族ディナーにぴったり お手入れ簡単",
+      "brand": "ブランド: Perano",
+      "image_url": "https://m.media-amazon.com/images/I/710ARkStPgL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 8499,
+      "discovery_score": 1,
+      "selection_score": 0.75,
+      "matched_comparison_axes": [
+        "temp_control"
+      ],
+      "search_key": "Perano 保温プレート 高速電気保温トレイ 9段階の温度調整40℃〜120"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0BMPXXV1C",
+      "asin": "B0BMPXXV1C",
+      "amazon_title": "BRUNO ブルーノ コンパクトホットプレート 本体 プレート2種(たこ焼き 平面) チャコール おしゃれ かわいい これ1台 蓋 ふた付き 1200w 温度調節 洗いやすい 1人 2人 3人用 小型 小さいサイズ 少人数用 ひとり暮らしにも BOE021-CH",
+      "brand": "BRUNOのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/612XVAwKtTL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 11000,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [
+        "size_capacity"
+      ],
+      "search_key": "BRUNO ブルーノ コンパクトホットプレート 本体 プレート2種(たこ焼き"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0946TDFQD",
+      "asin": "B0946TDFQD",
+      "amazon_title": "Hanchen 恒温ホットプレート 20*40cm 110V電源コード デュアル温度表示 室温～400℃ タイマー付 高精度1％ 説明書付 恒温ステーション 均一で速い加熱 航空用アルミ 断熱フレーム 予熱器プラットフォーム 携帯修理/溶接/基板予熱/pcb予熱/樹脂成型など (20*40cm)",
+      "brand": "Hanchenのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51aE41MFLlS._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 37000,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [],
+      "search_key": "Hanchen 恒温ホットプレート 20*40cm 110V電源コード デュアル"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0G5F2CZ8V",
+      "asin": "B0G5F2CZ8V",
+      "amazon_title": "ホットプレート 卓上電気焼肉器 大きいサイズ お手入れ簡単 温度5段階調節 低煙 無煙調理 家庭用焼肉 海鮮 串焼き用 電気焼肉器 卓上で簡単調理 肉料理 ガスなし焼肉プレート (40*23cm)",
+      "brand": "ブランド: JourneyJolt",
+      "image_url": "https://m.media-amazon.com/images/I/512Cs5MtI7L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 4470,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "plate_variety"
+      ],
+      "search_key": "JourneyJolt ホットプレート 卓上電気焼肉器 大きいサイズ お手入れ簡単 温度"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0FQMWN6KK",
+      "asin": "B0FQMWN6KK",
+      "amazon_title": "WGMホットプレート恒温ホットプレート複数の仕様が利用可能 PCB予熱ステーション PID制御 室温0~400℃ 110V 450-800w基板製作 加熱エリア (BY940-110V)",
+      "brand": "ブランド: WGM",
+      "image_url": "https://m.media-amazon.com/images/I/51dx0UP0KgL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 6788,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "WGM ホットプレート恒温ホットプレート複数の仕様が利用可能 PCB予"
+    }
+  ]
+}
