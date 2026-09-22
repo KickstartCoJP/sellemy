@@ -1,0 +1,145 @@
+{
+  "slug": "ceramic-fan-heaters-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/ceramic-fan-heaters-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/ceramic-fan-heaters-6-picks/ceramic-fan-heaters-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "heating_power",
+      "label": "暖房能力・畳数目安",
+      "keywords": [
+        "出力",
+        "適用畳数",
+        "即暖性"
+      ]
+    },
+    {
+      "id": "safety",
+      "label": "安全機能",
+      "keywords": [
+        "転倒オフ",
+        "自動オフ",
+        "チャイルドロック"
+      ]
+    },
+    {
+      "id": "noise",
+      "label": "静音性",
+      "keywords": [
+        "静音",
+        "運転音"
+      ]
+    },
+    {
+      "id": "portability",
+      "label": "サイズ・携帯性",
+      "keywords": [
+        "コンパクト",
+        "持ち運び",
+        "設置場所"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "heating_power",
+      "noise",
+      "portability",
+      "safety"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0DDKVS7HN",
+      "asin": "B0DDKVS7HN",
+      "amazon_title": "[山善] セラミックヒーター 人感センサー 1200W 小型 速暖 出力2段階切替 転倒オフスイッチ 足元 トイレ 脱衣所 ホワイト DSF-TL12(W)",
+      "brand": "山善(YAMAZEN)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51E6Q5vizdL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 6480,
+      "discovery_score": 1,
+      "selection_score": 0.88,
+      "matched_comparison_axes": [
+        "heating_power",
+        "safety"
+      ],
+      "search_key": "山善(YAMAZEN) セラミックヒーター 人感センサー 1200W 小型 速暖 出力2"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0GTQK8GHP",
+      "asin": "B0GTQK8GHP",
+      "amazon_title": "【2026最新・冷風温風・羽根なし】タワーファン 扇風機 ヒーター 10段階冷風&3段階温風 100°首振り 省エネ 静音 9Hタイマー DCモーター 羽なし扇風機 縦型 サーキュレーター スリム リモコン&タッチ操作 微風強風 メモリー 多重保護装置 セラミックヒーター リビング 寝室 脱衣所 トイレ オフィス用 大風量 猛暑対策 冷暖房器具 PSE認証 日本語説明書 ホワイトグレー",
+      "brand": "ブランド: Higomm",
+      "image_url": "https://m.media-amazon.com/images/I/51Q-JrLO53L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 13999,
+      "discovery_score": 1,
+      "selection_score": 0.7,
+      "matched_comparison_axes": [
+        "noise"
+      ],
+      "search_key": "Higomm タワーファン 扇風機 ヒーター 10段階冷風&3段階温風 100"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0FRMBVZ5T",
+      "asin": "B0FRMBVZ5T",
+      "amazon_title": "セラミックヒーター 小型 電気ストーブ 【2025冬新登場】暖房器具、速暖足元ヒーター、800W 省エネ、2段階温度設定、転倒OFF、ミニセラミックファンヒーター、窓下結露対策、耐火、コンパクト、寝室、脱衣所、洗面所、オフィスに最適、適用 日本語説明書付 PSE適合品 （ブラック B)",
+      "brand": "ブランド: zenirun",
+      "image_url": "https://m.media-amazon.com/images/I/61DX-GlCdhL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 999,
+      "discovery_score": 1,
+      "selection_score": 0.65,
+      "matched_comparison_axes": [
+        "portability"
+      ],
+      "search_key": "zenirun セラミックヒーター 小型 電気ストーブ 暖房器具、速暖足元ヒータ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0GSZLJJDQ",
+      "asin": "B0GSZLJJDQ",
+      "amazon_title": "【業内初！空気浄化＆雰囲気ライト】タワーファン 羽なし扇風機 スリム 10段階送風 空気清浄 自動首振 強風＆お休みモード DCモーター タイマー 転倒OFF LEDディスプレ 大風量 置き型 足元 脱衣所 リビング 冷風機 静音 省エネ 送風機 おしゃれ リモコン付き 日本語説明書 PSE認証済",
+      "brand": "SOTCARのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51WyUiLWANL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 9599,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "noise"
+      ],
+      "search_key": "SOTCAR タワーファン 羽なし扇風機 スリム 10段階送風 空気清浄 自動"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0CGV3MM8G",
+      "asin": "B0CGV3MM8G",
+      "amazon_title": "【2026冷暖兼用・羽根なし】セラミックヒーター タワーファン 温風 送風 扇風機 8段階送風＆3段階温風切替 100°自動首振り 9Hタイマー 静音 扇風機羽なし 強風＆微風モード 大風量速暖リモコン付 転倒自動OFF 過熱保護 電気ファンヒーター 省エネ 節電 子供部屋/リビング/寝室/書斎/キッチン/脱衣所/洗面所/トイレ/オフィス用 家庭用 暖房器具 PSE認証済 日本語説明書 ホワイト",
+      "brand": "Holiwilのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51P-hNHAz4L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 11599,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "noise"
+      ],
+      "search_key": "Holiwil セラミックヒーター タワーファン 温風 送風 扇風機 8段階送風"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0G13LGQDZ",
+      "asin": "B0G13LGQDZ",
+      "amazon_title": "セラミックヒーター 小型 【LCDディスプレイ・マイナスイオン】 2秒速暖 1200W/900W/600W 3段階温度調整 タイマー付き 足元暖房 黒",
+      "brand": "ブランド: Dibuy",
+      "image_url": "https://m.media-amazon.com/images/I/714qpZ2VHdL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3380,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [],
+      "search_key": "Dibuy セラミックヒーター 小型 2秒速暖 1200W/900W/600"
+    }
+  ]
+}
