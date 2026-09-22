@@ -1,0 +1,152 @@
+{
+  "slug": "compact-dishwashers-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/compact-dishwashers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/compact-dishwashers-6-picks/compact-dishwashers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "capacity",
+      "label": "容量",
+      "keywords": [
+        "収納点数",
+        "食器サイズ",
+        "人数目安"
+      ]
+    },
+    {
+      "id": "installation",
+      "label": "設置スペース・工事要否",
+      "keywords": [
+        "工事不要",
+        "卓上設置",
+        "分岐水栓"
+      ]
+    },
+    {
+      "id": "water_usage",
+      "label": "節水性",
+      "keywords": [
+        "節水",
+        "使用水量",
+        "タンク式"
+      ]
+    },
+    {
+      "id": "noise",
+      "label": "静音性",
+      "keywords": [
+        "静音",
+        "運転音",
+        "夜間使用"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格帯",
+      "keywords": [
+        "価格",
+        "コスパ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "installation",
+      "water_usage"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0GDFQ3QB1",
+      "asin": "B0GDFQ3QB1",
+      "amazon_title": "大容量 食器乾燥機 縦型プチ洗食 防カビ 引出しタイプ 食器棚水切りラック 分岐水栓付き コンパクト 節水 自宅 食器収納 [並行輸入品]",
+      "brand": "ブランド: Zimojig",
+      "image_url": "https://m.media-amazon.com/images/I/51qepjuHOwL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 5182,
+      "discovery_score": 1,
+      "selection_score": 0.855,
+      "matched_comparison_axes": [
+        "installation",
+        "water_usage"
+      ],
+      "search_key": "Zimojig 大容量 食器乾燥機 縦型プチ洗食 防カビ 引出しタイプ 食器棚水"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0GSYXMDNR",
+      "asin": "B0GSYXMDNR",
+      "amazon_title": "siroca(シロカ) 食器洗い乾燥機 大人数向け SS-LA451｜工事不要 自動給水式・分岐水栓式 4～5人用 オートオープン機能",
+      "brand": "siroca(シロカ)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/41DQG22L0vL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 61400,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "installation"
+      ],
+      "search_key": "siroca(シロカ) 食器洗い乾燥機 大人数向け SS-LA451｜工事不要 自動給水"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0DZHLQK2S",
+      "asin": "B0DZHLQK2S",
+      "amazon_title": "SAMKYO 食洗機 工事不要 4~6人用 49点入り大容量 食器洗浄機 熱風送風・オートオープン乾燥 食器洗い乾燥機 食洗器 家庭用 T80 ホワイト",
+      "brand": "SAMKYOのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/41zdIpMQbGL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 63990,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "installation"
+      ],
+      "search_key": "SAMKYO 食洗機 工事不要 4~6人用 49点入り大容量 食器洗浄機 熱風"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B084VFW9SF",
+      "asin": "B084VFW9SF",
+      "amazon_title": "【洗浄動画あり】THANKO 水道いらずのタンク式食器洗い乾燥機 ラクア (ホワイト) 2カラー",
+      "brand": "THANKOのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61JvS9m3HVL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 38800,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "water_usage"
+      ],
+      "search_key": "THANKO 水道いらずのタンク式食器洗い乾燥機 ラクア (ホワイト) 2カラ"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0H2F1RGCJ",
+      "asin": "B0H2F1RGCJ",
+      "amazon_title": "ガービー(Garvee) 食器洗い乾燥機 工事不要 1~5人用 大容量 24点 食器洗浄機 食洗機 卓上 3つホース付き 分岐水栓対応 賃貸住宅にも置ける 設置簡単 一人暮らし",
+      "brand": "Garveeのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61XW6GxmwKL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 37800,
+      "discovery_score": 1,
+      "selection_score": 0.445,
+      "matched_comparison_axes": [
+        "installation"
+      ],
+      "search_key": "Garvee ガービー(Garvee) 食器洗い乾燥機 工事不要 1~5人用"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0FCFMPR1D",
+      "asin": "B0FCFMPR1D",
+      "amazon_title": "タイガー魔法瓶(TIGER) 食器乾燥器 サラピッカ AG抗菌加工フィルター/水受け 高温熱風乾燥 6人用 DHG-S401WY",
+      "brand": "タイガー魔法瓶(TIGER)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/517O52Zh0aL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 13786,
+      "discovery_score": 1,
+      "selection_score": 0.445,
+      "matched_comparison_axes": [],
+      "search_key": "タイガー魔法瓶(TIGER) 食器乾燥器 サラピッカ AG抗菌加工フィルター/水受け 高温熱風"
+    }
+  ]
+}
