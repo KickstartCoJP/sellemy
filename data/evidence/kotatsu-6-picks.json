@@ -1,0 +1,139 @@
+{
+  "slug": "kotatsu-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/kotatsu-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/kotatsu-6-picks/kotatsu-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "size_shape",
+      "label": "サイズ・形状",
+      "keywords": [
+        "サイズ",
+        "形状",
+        "正方形",
+        "長方形"
+      ]
+    },
+    {
+      "id": "heat_control",
+      "label": "温度調整・省エネ",
+      "keywords": [
+        "温度調整",
+        "省エネ"
+      ]
+    },
+    {
+      "id": "heater_type",
+      "label": "ヒーター方式",
+      "keywords": [
+        "石英管",
+        "フラットヒーター"
+      ]
+    },
+    {
+      "id": "set_contents",
+      "label": "布団の有無・セット内容",
+      "keywords": [
+        "布団セット",
+        "単品"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "set_contents",
+      "size_shape"
+    ],
+    "brand_count": 5,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0D9GBJCBQ",
+      "asin": "B0D9GBJCBQ",
+      "amazon_title": "Keusnix こたつ布団 長方形 190×240cm 単品売り 発熱綿使用 高密度フランネル こたつ掛け布団 リバーシブル 両面使える 高い保温性 ふわふわ ぽかぽか 撥水防ダニ加工 抗菌防臭 洗える 静電気防止 毛抜けない こたつふとん 火燵布団 ダークグレー・グレー",
+      "brand": "Keusnixのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/81XhVhZX3CL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 5593,
+      "discovery_score": 1,
+      "selection_score": 0.93,
+      "matched_comparison_axes": [
+        "set_contents",
+        "size_shape"
+      ],
+      "search_key": "Keusnix こたつ布団 長方形 190×240cm 単品売り 発熱綿使用 高"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0FHVZ8433",
+      "asin": "B0FHVZ8433",
+      "amazon_title": "[山善] 家具調 こたつ テーブル 幅120×奥行80cm 専用布団セット 長方形 高さ4段階調節 ファン付きヒーター 中間入切スイッチ 天然木 継脚 ウォルナットブラウン GEXN-F1201H4N(WBR)-FSET",
+      "brand": "山善(YAMAZEN)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71raPdEGmsL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "observed_price": 42500,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [
+        "set_contents",
+        "size_shape"
+      ],
+      "search_key": "山善(YAMAZEN) 家具調 こたつ テーブル 幅120×奥行80cm 専用布団セット"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0DPM58SSG",
+      "asin": "B0DPM58SSG",
+      "amazon_title": "ユアサプライムス おふたり様用こたつテーブル なごみ NGM-N75DLH(FBR) 75×75×57(38)cm 二人用 4点セット",
+      "brand": "YUASA PRIMUSのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/81d40-c4wjL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "observed_price": 29800,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [],
+      "search_key": "YUASA PRIMUS ユアサプライムス おふたり様用こたつテーブル なごみ NGM-N"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0DG8LTWPJ",
+      "asin": "B0DG8LTWPJ",
+      "amazon_title": "高さ調節機能付き ダイニングこたつ アコード 90x60cm ブラウン こたつのみ",
+      "brand": "マストバイ(MUSTBUY)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51RhMrrbCmL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 40200,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [],
+      "search_key": "マストバイ(MUSTBUY) 高さ調節機能付き ダイニングこたつ アコード 90x60cm ブ"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0BBZNN2HY",
+      "asin": "B0BBZNN2HY",
+      "amazon_title": "タンスのゲン こたつ 3点セット 長方形 120×75cm とろける肌触り こたつ布団 こたつテーブル 高さ調整 61140533(134603)",
+      "brand": "タンスのゲンのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/81bFl1r8txL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 31800,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [
+        "size_shape"
+      ],
+      "search_key": "タンスのゲン こたつ 3点セット 長方形 120×75cm とろける肌触り こ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0DG8KRH8H",
+      "asin": "B0DG8KRH8H",
+      "amazon_title": "パワフルヒーター 6段階に高さ調節できるダイニングこたつ スクット 90x60cm ナチュラル こたつ本体のみ",
+      "brand": "マストバイ(MUSTBUY)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51pCssIaZ+L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 39600,
+      "discovery_score": 1,
+      "selection_score": 0.45,
+      "matched_comparison_axes": [],
+      "search_key": "マストバイ(MUSTBUY) パワフルヒーター 6段階に高さ調節できるダイニングこたつ スクッ"
+    }
+  ]
+}

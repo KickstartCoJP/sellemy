@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-kotatsu-6-picks-7a10c144cf4d56b7",
+  "request_sha256": "7a10c144cf4d56b766817a774f401f03ad9631c7b4d57399bc832357462bb66d",
+  "image_sha256": "0f197ae5657be8ad460a48093230b373597cacff1f9d8658391dad32112e90b1",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-09-22T21:54:01.008714+00:00"
+}
