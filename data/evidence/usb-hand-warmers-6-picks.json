@@ -1,0 +1,141 @@
+{
+  "slug": "usb-hand-warmers-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/usb-hand-warmers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/usb-hand-warmers-6-picks/usb-hand-warmers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "heat_levels",
+      "label": "発熱温度段階",
+      "keywords": [
+        "温度調整",
+        "最高温度",
+        "段階切替"
+      ]
+    },
+    {
+      "id": "battery",
+      "label": "バッテリー容量",
+      "keywords": [
+        "mAh",
+        "連続使用時間",
+        "モバイルバッテリー機能"
+      ]
+    },
+    {
+      "id": "design",
+      "label": "デザイン・携帯性",
+      "keywords": [
+        "ポケットサイズ",
+        "軽量",
+        "かわいいデザイン"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "battery",
+      "design",
+      "heat_levels"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0H6MRGZLR",
+      "asin": "B0H6MRGZLR",
+      "amazon_title": "YUSIDO 充電式カイロ 【日本企業企画·防災グッズ】 5000mAh 懐中電灯 モバイルバッテリー 軽量コンパクト 電気カイロ ブラック",
+      "brand": "YUSIDOのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/515RK-ORW4L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1980,
+      "discovery_score": 1,
+      "selection_score": 0.88,
+      "matched_comparison_axes": [
+        "battery",
+        "design"
+      ],
+      "search_key": "YUSIDO 充電式カイロ 5000mAh 懐中電灯 モバイルバッテリー 軽量"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0GCD6XHXZ",
+      "asin": "B0GCD6XHXZ",
+      "amazon_title": "サンワダイレクト 充電式カイロ 急速発熱 3段階温度調整 容量4000mAh 5.5時間連続使用 ハンドウォーマー 400-TOY052W",
+      "brand": "サンワダイレクトのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/412-nCfZLYL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3480,
+      "discovery_score": 1,
+      "selection_score": 0.7,
+      "matched_comparison_axes": [
+        "battery",
+        "heat_levels"
+      ],
+      "search_key": "サンワダイレクト 充電式カイロ 急速発熱 3段階温度調整 容量4000mAh 5."
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0FX7ZP168",
+      "asin": "B0FX7ZP168",
+      "amazon_title": "Philips(フィリップス) 充電式カイロ 360°全方位発熱 3秒速暖 2段階温度調節 小型 軽量 USB充電式 DLP2137C",
+      "brand": "PHILIPSのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71e9x3sjCsL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 4980,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "design"
+      ],
+      "search_key": "PHILIPS (フィリップス) 充電式カイロ 360°全方位発熱 3秒速暖 2"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0FH8WG87Z",
+      "asin": "B0FH8WG87Z",
+      "amazon_title": "mottole（モットル公式店） 2025年新色 充電式 カイロ 大容量 10,000mAh モバイルバッテリー機能付き 長時間 使い捨てない くり返し使える 軽量 手のひらサイズ USB充電 電気あんか MTL-E029-GG グレージュ",
+      "brand": "mottoleのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/519H506hwYL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 4120,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "battery",
+        "design"
+      ],
+      "search_key": "mottole （モットル公式店） 2025年新色 充電式 カイロ 大容量 10"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0CH88R9WY",
+      "asin": "B0CH88R9WY",
+      "amazon_title": "充電式カイロ 1秒急速発熱 12000mAh大容量 21段階温度調節 40-60℃ 5V/2A モバイルバッテリー機能 PSE認証済",
+      "brand": "ブランド: SAMONIC",
+      "image_url": "https://m.media-amazon.com/images/I/71Y3QFAr1ZL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3380,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "battery"
+      ],
+      "search_key": "SAMONIC 充電式カイロ 1秒急速発熱 12000mAh大容量 21段階温度"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0G3GVK1J4",
+      "asin": "B0G3GVK1J4",
+      "amazon_title": "【2026年新型 マグネット分離式】SLuB 充電式カイロ 10000mAh大容量 ハンドウォーマー 2in1 USB電気カイロ 3秒急速発熱 360°全面発熱 3段階温度調節 LED残量表示 小型 超軽量 携帯便利 ワンタッチ操作 防寒グッズ 冬 旅行 アウトドア 通勤 通学 クリスマス プレゼント 2個セット ピンク",
+      "brand": "SLuBのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/41u14gG6FFL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1881,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [
+        "battery",
+        "design"
+      ],
+      "search_key": "SLuB 充電式カイロ 10000mAh大容量 ハンドウォーマー 2in1"
+    }
+  ]
+}
