@@ -1,0 +1,139 @@
+{
+  "slug": "fitness-smartwatches-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/fitness-smartwatches-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/fitness-smartwatches-6-picks/fitness-smartwatches-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "health",
+      "label": "健康管理機能",
+      "keywords": [
+        "心拍計測",
+        "睡眠計測",
+        "GPS"
+      ]
+    },
+    {
+      "id": "battery",
+      "label": "バッテリー持続時間",
+      "keywords": [
+        "長時間駆動",
+        "急速充電"
+      ]
+    },
+    {
+      "id": "design",
+      "label": "装着感・デザイン",
+      "keywords": [
+        "軽量",
+        "バンド交換"
+      ]
+    },
+    {
+      "id": "compatibility",
+      "label": "スマホ連携・対応OS",
+      "keywords": [
+        "iPhone対応",
+        "Android対応"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "compatibility",
+      "design",
+      "health"
+    ],
+    "brand_count": 5,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0H6M6S3XK",
+      "asin": "B0H6M6S3XK",
+      "amazon_title": "スマートウォッチ【2026最新進化モデル】iPhone対応&アンドロイド対応 1.9インチ業界HD大画面 Bluetooth通話機能付 SMS/Line通知 Bluetooth通話機能 薄型軽量 スポーツウォッチ ベルト交換可能 Smart Watch 音楽再生 活動量計 多機能スマートウォッチ 多種類運動モード IP68生活防水 メッセージ通知 腕時計 天気予報 レディース メンズ 多種類文字盤",
+      "brand": "MTDKAのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71Ko9G2dFhL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2799,
+      "discovery_score": 1,
+      "selection_score": 0.855,
+      "matched_comparison_axes": [
+        "compatibility",
+        "design"
+      ],
+      "search_key": "MTDKA スマートウォッチ iPhone対応&アンドロイド対応 1.9イン"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0B75WWC8F",
+      "asin": "B0B75WWC8F",
+      "amazon_title": "【Suica対応】Fitbit Sense 2スマートウォッチ ブルーミスト／ソフトゴールド iPhone対応/アンドロイド対応/6日間以上のバッテリーライフ/Alexa搭載/GPS搭載/心拍計/睡眠スコア/ストレス計測 [日本正規品]",
+      "brand": "Fitbit(フィットビット)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61l33xpEvWL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 29520,
+      "discovery_score": 1,
+      "selection_score": 0.675,
+      "matched_comparison_axes": [
+        "compatibility",
+        "health"
+      ],
+      "search_key": "Fitbit(フィットビット) Fitbit Sense 2スマートウォッチ ブルーミスト／ソフ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GG9YTVHQ",
+      "asin": "B0GG9YTVHQ",
+      "amazon_title": "多機能スマートウォッチ 通話機能付き IP67防水 睡眠管理 スポーツ 歩数計 114種運動 長持ちバッテリー フィットネス 着信通知 男女兼用",
+      "brand": "EGQINRのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61sTvN8p+WL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 8456,
+      "discovery_score": 1,
+      "selection_score": 0.445,
+      "matched_comparison_axes": [],
+      "search_key": "EGQINR 多機能スマートウォッチ 通話機能付き IP67防水 睡眠管理 ス"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0FN6Z6CXL",
+      "asin": "B0FN6Z6CXL",
+      "amazon_title": "ドコモ純正 スマートウォッチ01 ブラック",
+      "brand": "エヌテイテイドコモのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61AQ9Wt-cLL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 5998,
+      "discovery_score": 1,
+      "selection_score": 0.445,
+      "matched_comparison_axes": [],
+      "search_key": "エヌテイテイドコモ ドコモ純正 スマートウォッチ01 ブラック"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0CQK8TZCF",
+      "asin": "B0CQK8TZCF",
+      "amazon_title": "RUIMEN スマートウォッチ D1 iPhone/Android対応 通話機能付き 1.85インチ大画面 活動量計 技適認証済み 星空ゴールド",
+      "brand": "RUIMENのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61gTqjs-rqL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 5780,
+      "discovery_score": 1,
+      "selection_score": 0.445,
+      "matched_comparison_axes": [
+        "compatibility"
+      ],
+      "search_key": "RUIMEN スマートウォッチ D1 iPhone/Android対応 通話機"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0FS1BXD9Z",
+      "asin": "B0FS1BXD9Z",
+      "amazon_title": "GARMIN(ガーミン)Venu 4 スマートウォッチ AMOLED 大画面ディスプレイ 最大12日間の長時間バッテリー 健康管理 フィットネス 充実のゴルフ機能 80種類以上のマルチスポーツ対応 Suica対応/心拍センサー 睡眠時間測定 スピーカー＆マイク内蔵で通話可能 iOS・アンドロイド対応 心電図(ECG)アプリ対応モデル【日本正規品】",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61R+AuMPBLL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 58800,
+      "discovery_score": 1,
+      "selection_score": 0.375,
+      "matched_comparison_axes": [],
+      "search_key": "GARMIN(ガーミン)Venu 4 スマートウォッチ AMOL"
+    }
+  ]
+}
