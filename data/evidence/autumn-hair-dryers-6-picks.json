@@ -1,0 +1,152 @@
+{
+  "slug": "autumn-hair-dryers-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/autumn-hair-dryers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/autumn-hair-dryers-6-picks/autumn-hair-dryers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "airflow",
+      "label": "風量・速乾性",
+      "keywords": [
+        "風量",
+        "速乾",
+        "m3/分"
+      ]
+    },
+    {
+      "id": "hair_care",
+      "label": "髪への優しさ",
+      "keywords": [
+        "ナノイー",
+        "マイナスイオン",
+        "髪ダメージ"
+      ]
+    },
+    {
+      "id": "portability",
+      "label": "携帯性・重さ",
+      "keywords": [
+        "軽量",
+        "コンパクト",
+        "持ち運び"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格帯",
+      "keywords": [
+        "価格",
+        "コスパ",
+        "高級"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "airflow",
+      "hair_care",
+      "portability"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0HCNMF74Q",
+      "asin": "B0HCNMF74Q",
+      "amazon_title": "ドライヤー 【2026新登場・1400W大風量速乾・スマート液晶】 ヘアドライヤー 5億マイナスイオン 15モード調節 350g軽量 ノズル付き",
+      "brand": "ブランド: MiraWay",
+      "image_url": "https://m.media-amazon.com/images/I/61MmpCYGANL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 4570,
+      "discovery_score": 1,
+      "selection_score": 1.01,
+      "matched_comparison_axes": [
+        "airflow",
+        "hair_care",
+        "portability"
+      ],
+      "search_key": "MiraWay ドライヤー ヘアドライヤー 5億マイナスイオン 15モード調節"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HFRHFNHX",
+      "asin": "B0HFRHFNHX",
+      "amazon_title": "MERIN ドライヤー 美容皮膚科監修 大風量 速乾 マイナスイオン イオン切替 1200W 軽量360g 静音 くせ毛 うねり ホワイト ブラック",
+      "brand": "MERINのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/81fcP3uf1SL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 29990,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [
+        "airflow",
+        "hair_care",
+        "portability"
+      ],
+      "search_key": "MERIN ドライヤー 美容皮膚科監修 大風量 速乾 マイナスイオン イオン"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0FT32RK9S",
+      "asin": "B0FT32RK9S",
+      "amazon_title": "【九州大学博士監修】NIPLUX ヘアドライヤー 速乾 大風量 2.3億マイナスイオン 3段階調節可能 冷熱自動切替 高速静音 Hair Dryer",
+      "brand": "NIPLUXのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61vZDv5UI-L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 13680,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [
+        "airflow",
+        "hair_care"
+      ],
+      "search_key": "NIPLUX ヘアドライヤー 速乾 大風量 2.3億マイナスイオン 3段階調節"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0FN6H53PV",
+      "asin": "B0FN6H53PV",
+      "amazon_title": "【公式限定/佐々木希アンバサダー】Brighte ブライト SHOWER DRYER シャワードライヤー 大風量 速乾 ナノミスト搭載 軽量",
+      "brand": "Brighteのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/719PePdN69L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 39600,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [
+        "airflow",
+        "portability"
+      ],
+      "search_key": "Brighte ブライト SHOWER DRYER シャワードライヤー 大風量"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0FDKYMTLY",
+      "asin": "B0FDKYMTLY",
+      "amazon_title": "【公式EC限定＋1年延長保証付き】KINUJO キヌージョ ヘアドライヤー 絹女 大風量 速乾 マイナスイオン 超！遠赤外線 ツヤ髪 テラヘルツ波 3段階温度調整 カラー退色防止 コンパクト 軽量 ガイドブック付 (モカ(KH302))",
+      "brand": "KINUJOのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51hQ8c35sQL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 35200,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [
+        "airflow",
+        "hair_care",
+        "portability"
+      ],
+      "search_key": "KINUJO キヌージョ ヘアドライヤー 絹女 大風量 速乾 マイナスイオン"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0F48L8TKK",
+      "asin": "B0F48L8TKK",
+      "amazon_title": "Dyson(ダイソン) Supersonic r™ヘアドライヤー セラミックパティーナ／トパーズ HD17 CPATO AM",
+      "brand": "Dyson(ダイソン)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61fOnztkKQL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 27200,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [],
+      "search_key": "Dyson(ダイソン) Supersonic r™ヘアドライヤー セラミックパティーナ／"
+    }
+  ]
+}
