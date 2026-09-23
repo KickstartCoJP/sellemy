@@ -1,7 +1,7 @@
 {
   "version": 1,
   "timezone": "Asia/Tokyo",
-  "initial_target_per_day": 2,
+  "initial_target_per_day": 7,
   "minimum_target_per_day": 1,
   "maximum_target_per_day": 24,
   "evaluation_window": 6,
