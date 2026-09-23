@@ -1,0 +1,141 @@
+{
+  "slug": "electric-carpets-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/electric-carpets-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/electric-carpets-6-picks/electric-carpets-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "size_options",
+      "label": "サイズ展開",
+      "keywords": [
+        "1畳",
+        "2畳",
+        "3畳"
+      ]
+    },
+    {
+      "id": "temperature_control",
+      "label": "温度調整機能",
+      "keywords": [
+        "段階調整",
+        "室温センサー",
+        "ダブルサイズ切替"
+      ]
+    },
+    {
+      "id": "safety_features",
+      "label": "安全機能",
+      "keywords": [
+        "自動オフ",
+        "過熱防止",
+        "省エネ"
+      ]
+    },
+    {
+      "id": "price_range",
+      "label": "価格帯",
+      "keywords": [
+        "コスパ",
+        "上位モデル"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "safety_features",
+      "size_options"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0DGPL22VK",
+      "asin": "B0DGPL22VK",
+      "amazon_title": "フリーダン ホットカーペット 電気カーペット 2畳 168×168cm 正方形 省エネ 自動オフタイマー付き 暖房面切換 FRU201UH フリーダム",
+      "brand": "FREEDANのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/91ehJQ037wL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 6990,
+      "discovery_score": 1,
+      "selection_score": 0.88,
+      "matched_comparison_axes": [
+        "safety_features",
+        "size_options"
+      ],
+      "search_key": "FREEDAN フリーダン ホットカーペット 電気カーペット 2畳 168×16"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B096ZNJXPR",
+      "asin": "B096ZNJXPR",
+      "amazon_title": "ライフジョイ ホットカーペット 2畳 本体 フローリング調 電気カーペット 176cm×176cm 暖房面切換 キッチン対応 防水 ベージュ JPJ201WC",
+      "brand": "ライフジョイ(LIFEJOY)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/81v3k1f+aRL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 17643,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "size_options"
+      ],
+      "search_key": "ライフジョイ(LIFEJOY) ライフジョイ ホットカーペット 2畳 本体 フローリング調 電気"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B08LD5YMRW",
+      "asin": "B08LD5YMRW",
+      "amazon_title": "Francfranc フランフラン エルフィア ホットカーペットラグ M アイボリー×ライトベージュ 190×140cm 床暖房対応 こたつ対応 洗濯可 絨毯",
+      "brand": "Francfrancのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71KunPM-DCL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 9000,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "Francfranc フランフラン エルフィア ホットカーペットラグ M アイボリー×"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B01L72ZXMY",
+      "asin": "B01L72ZXMY",
+      "amazon_title": "アイリスオーヤマ ホットカーペット 電気カーペット 2畳 176×176cm IHC-20-H グレー",
+      "brand": "アイリスオーヤマ(IRIS OHYAMA)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61Q2Ao9-edL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 8758,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "size_options"
+      ],
+      "search_key": "アイリスオーヤマ(IRIS OHYAMA) アイリスオーヤマ ホットカーペット 電気カーペット"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0GW8F2RNJ",
+      "asin": "B0GW8F2RNJ",
+      "amazon_title": "シルフィーズ ラグ マット シェニール織 洗える ウォッシャブル ホットカーペット 床暖房対応 滑り止め カーペット 絨毯 ベージュ 185×185cm ２畳",
+      "brand": "Sylpheaseのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71QJJQ1htGL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 5980,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [],
+      "search_key": "Sylphease シルフィーズ ラグ マット シェニール織 洗える ウォッシャブル"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0FPXGX5FJ",
+      "asin": "B0FPXGX5FJ",
+      "amazon_title": "電気毛布 敷き ホットカーペット 4段階タイマー 72W省エネ ズレ防止 4段階温度調整 切り忘れ防止タイマー付き 節電 140×80cm 速暖",
+      "brand": "Juliyasのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/81p1do9BfqL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 5590,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [
+        "safety_features"
+      ],
+      "search_key": "Juliyas 電気毛布 敷き ホットカーペット 4段階タイマー 72W省エネ"
+    }
+  ]
+}
