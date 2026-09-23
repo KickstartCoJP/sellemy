@@ -1,0 +1,150 @@
+{
+  "slug": "air-fryers-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/air-fryers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/air-fryers-6-picks/air-fryers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "capacity",
+      "label": "容量・調理量",
+      "keywords": [
+        "容量",
+        "L",
+        "何人分",
+        "大容量"
+      ]
+    },
+    {
+      "id": "heating",
+      "label": "加熱方式・温度調整",
+      "keywords": [
+        "熱風循環",
+        "温度設定",
+        "予熱",
+        "調理モード"
+      ]
+    },
+    {
+      "id": "cleaning",
+      "label": "お手入れのしやすさ",
+      "keywords": [
+        "食洗機対応",
+        "バスケット",
+        "こびりつき",
+        "洗いやすさ"
+      ]
+    },
+    {
+      "id": "footprint",
+      "label": "設置サイズ",
+      "keywords": [
+        "コンパクト",
+        "省スペース",
+        "キッチン",
+        "幅 奥行き"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "capacity",
+      "cleaning"
+    ],
+    "brand_count": 5,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0G1N5GWQD",
+      "asin": "B0G1N5GWQD",
+      "amazon_title": "エペイオス(Epeios) ノンフライヤー エアフライヤー ガラスボウル 4L・1.5L 2点セット 可視調理 食洗機対応 1400W EPAO248",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61mcKIlnCyL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 19860,
+      "discovery_score": 1,
+      "selection_score": 0.71,
+      "matched_comparison_axes": [
+        "capacity",
+        "cleaning"
+      ],
+      "search_key": "エペイオス(Epeios) ノンフライヤー エアフライヤー ガラ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0H2LRHXTH",
+      "asin": "B0H2LRHXTH",
+      "amazon_title": "AQielev ノンフライヤー 4.5L エアフライヤー 【可視窓付き・7種自動メニュー】 電気フライヤー 1～5人家庭用 ノンオイル調理",
+      "brand": "AQielevのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61EeoeKD-5L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 6898,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "capacity"
+      ],
+      "search_key": "AQielev ノンフライヤー 4.5L エアフライヤー 電気フライヤー 1～5"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HCVM77NH",
+      "asin": "B0HCVM77NH",
+      "amazon_title": "Pure Luxe ノンフライヤー 4.5L 2～4人用 可視窓付き 8種自動メニュー レシピブック付 PU-AFRAA",
+      "brand": "Pure Luxeのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61kXfOqSEcL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 9800,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "capacity"
+      ],
+      "search_key": "Pure Luxe ノンフライヤー 4.5L 2～4人用 可視窓付き 8種自動メニュ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0DWXDKXHM",
+      "asin": "B0DWXDKXHM",
+      "amazon_title": "COSORI コソリ ノンフライヤー 6L大容量 エアフライヤー DCモーター 高速 最高温230℃ 発酵 air fryer CAF-DC601",
+      "brand": "Cosoriのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61XnCEhgUFL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 20980,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "capacity"
+      ],
+      "search_key": "Cosori コソリ ノンフライヤー 6L大容量 エアフライヤー DCモーター"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0G4CC1S2F",
+      "asin": "B0G4CC1S2F",
+      "amazon_title": "アイリスオーヤマ 過熱水蒸気 エア フライヤー 3L 2～3人用 ノンオイルフライヤー スチーム機能 ジューシー FV-M30A-C アイボリー",
+      "brand": "アイリスオーヤマ(IRIS OHYAMA)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51RWaP1Xo3L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 7427,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [
+        "capacity"
+      ],
+      "search_key": "アイリスオーヤマ(IRIS OHYAMA) アイリスオーヤマ 過熱水蒸気 エア フライヤー 3L"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0DCBVYRVF",
+      "asin": "B0DCBVYRVF",
+      "amazon_title": "エアフライヤー用紙 ノンフライヤー 紙 エアフライヤー 紙 使い捨て紙 200枚セット 丸形 内径16cm 3-5L適用 対応エアフライヤー/電子レンジ/オーブン/蒸し器 クッキングペーパー 蒸し器 天ぷらペーパー 耐熱性 耐油紙 耐水性 使い捨て 230℃耐熱",
+      "brand": "Sixcomのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/812J2L7jS-L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1958,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [
+        "capacity"
+      ],
+      "search_key": "Sixcom エアフライヤー用紙 ノンフライヤー 紙 エアフライヤー 紙 使い"
+    }
+  ]
+}
