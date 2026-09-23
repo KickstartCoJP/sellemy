@@ -1,0 +1,135 @@
+{
+  "slug": "facial-beauty-devices-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/facial-beauty-devices-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/facial-beauty-devices-6-picks/facial-beauty-devices-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "technology",
+      "label": "搭載機能（EMS/RF/イオン導入）",
+      "keywords": [
+        "EMS",
+        "RF",
+        "イオン導入",
+        "LED"
+      ]
+    },
+    {
+      "id": "usability",
+      "label": "使いやすさ・お手入れ",
+      "keywords": [
+        "防水",
+        "コードレス",
+        "洗浄",
+        "収納"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格帯・コスパ",
+      "keywords": [
+        "価格",
+        "コスパ",
+        "高価格帯"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "technology",
+      "usability"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0F2DTCSKN",
+      "asin": "B0F2DTCSKN",
+      "amazon_title": "パナソニック リフトケア 美顔器 バイタリフト かっさ 温感 防水 複合的EMS搭載 EH-SP86-K",
+      "brand": "パナソニック(Panasonic)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/716YqE2rXOL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 35650,
+      "discovery_score": 1,
+      "selection_score": 0.83,
+      "matched_comparison_axes": [
+        "technology",
+        "usability"
+      ],
+      "search_key": "パナソニック(Panasonic) パナソニック リフトケア 美顔器 バイタリフト かっさ 温感"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HGKV1K8J",
+      "asin": "B0HGKV1K8J",
+      "amazon_title": "美顔器 19段階レベル調節 照明ブルーライト LED デジタル表示 USB充電式 携帯便利 持ちやすい コンパクト 家庭用 男女兼用 プレゼント 日本語説明書付 シルバー",
+      "brand": "ブランド: VAELON",
+      "image_url": "https://m.media-amazon.com/images/I/717TXBSnFIL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 4980,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "technology"
+      ],
+      "search_key": "VAELON 美顔器 19段階レベル調節 照明ブルーライト LED デジタル表"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HDNKP3D1",
+      "asin": "B0HDNKP3D1",
+      "amazon_title": "美顔器 RF 皮膚科医監修 ラジオ波 6.78MHz 赤色LED 温感ケア リフトケア ハリ 温度3段階 家庭用 UR-TLMT",
+      "brand": "UR.SALONのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/81iSDPaH9yL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 49998,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "technology"
+      ],
+      "search_key": "UR.SALON 美顔器 RF 皮膚科医監修 ラジオ波 6.78MHz 赤色LED"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0GS8BWDZ3",
+      "asin": "B0GS8BWDZ3",
+      "amazon_title": "メディキューブ ブースタープロX2 ホワイト1台8役 多機能美顔器",
+      "brand": "medicubeのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51nROhhLWVL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 35000,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "medicube メディキューブ ブースタープロX2 ホワイト1台8役 多機能美顔"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0FN6F6THC",
+      "asin": "B0FN6F6THC",
+      "amazon_title": "【佐々木希アンバサダー】 Brighte ブライト ELEKI BRUSH+ エレキブラシ 美顔器 EMS RF LED搭載 リフトアップ 公式パンフレット付 【Amazon.co.jp限定】",
+      "brand": "Brighteのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71NNt4+CVZL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 49800,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "technology"
+      ],
+      "search_key": "Brighte ブライト ELEKI BRUSH+ エレキブラシ 美顔器 EMS"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0F8H9RC1W",
+      "asin": "B0F8H9RC1W",
+      "amazon_title": "【高浸透×リフトケア】ヤーマン 美顔器 フォトプラス シャイニー ネオ 多機能美顔器 1台11役 YJFM18NAM2 ゴールド ステッカー付【Amazon.co.jp限定】",
+      "brand": "ヤーマン(Ya-man)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/518JqZnroDL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 69300,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "ヤーマン(Ya-man) ヤーマン 美顔器 フォトプラス シャイニー ネオ 多機能美顔器"
+    }
+  ]
+}
