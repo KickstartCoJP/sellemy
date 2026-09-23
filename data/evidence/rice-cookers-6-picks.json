@@ -1,0 +1,145 @@
+{
+  "slug": "rice-cookers-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/rice-cookers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/rice-cookers-6-picks/rice-cookers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "heating_method",
+      "label": "加熱方式",
+      "keywords": [
+        "IH",
+        "圧力IH",
+        "マイコン"
+      ]
+    },
+    {
+      "id": "capacity",
+      "label": "容量",
+      "keywords": [
+        "3合炊き",
+        "5.5合炊き"
+      ]
+    },
+    {
+      "id": "cooking_modes",
+      "label": "炊き分け機能",
+      "keywords": [
+        "銘柄炊き分け",
+        "早炊き"
+      ]
+    },
+    {
+      "id": "maintenance",
+      "label": "お手入れのしやすさ",
+      "keywords": [
+        "分解洗浄",
+        "内釜コーティング"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "capacity",
+      "cooking_modes",
+      "heating_method"
+    ],
+    "brand_count": 4,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0FBWFK36X",
+      "asin": "B0FBWFK36X",
+      "amazon_title": "COMFEE' 炊飯器 3合炊き IH式 一人暮らし 2人暮らし 炊飯ジャー 1～3人用 10種類の調理メニュー付き 炎旨炊き 早炊き 最短25分炊飯 玄米 雑穀米 無洗米 温泉卵 保温24時間 予約機能 コンパクト ブラック",
+      "brand": "コンフィー(COMFEE')のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/717FRiyl9eL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 11980,
+      "discovery_score": 1,
+      "selection_score": 1.06,
+      "matched_comparison_axes": [
+        "capacity",
+        "cooking_modes",
+        "heating_method"
+      ],
+      "search_key": "コンフィー(COMFEE') COMFEE' 炊飯器 3合炊き IH式 一人暮らし 2人暮らし"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0D3Q8Y82R",
+      "asin": "B0D3Q8Y82R",
+      "amazon_title": "【WEB限定】タイガー魔法瓶 炊飯器 5合 日本製 圧力IH 炊きたて 遠赤5層土鍋コート釜 粒立ち保温 お手入れ簡単 ブラック JPV-N100K",
+      "brand": "タイガー魔法瓶(TIGER)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61lt3+C2IaL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 33800,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "heating_method"
+      ],
+      "search_key": "タイガー魔法瓶(TIGER) タイガー魔法瓶 炊飯器 5合 日本製 圧力IH 炊きたて 遠赤5"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0FRS7MD5D",
+      "asin": "B0FRS7MD5D",
+      "amazon_title": "【米屋のつくる炊飯器】アイリスオーヤマ IHジャー炊飯器 5.5合 極厚火釜 一人暮らし RC-IKB50AZ-B【Amazon.co.jp限定】",
+      "brand": "アイリスオーヤマ(IRIS OHYAMA)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51P0WxHt7pL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 11810,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [
+        "heating_method"
+      ],
+      "search_key": "アイリスオーヤマ(IRIS OHYAMA) アイリスオーヤマ IHジャー炊飯器 5.5合 極厚火"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0F6CG61WV",
+      "asin": "B0F6CG61WV",
+      "amazon_title": "【Amazon.co.jp限定】[山善] 炊飯器 一人暮らし 3合 3種類炊き分け機能 マイコン式 低温調理 無洗米モード 保温 予約機能 ホワイト AMRC-5M(W)",
+      "brand": "山善(YAMAZEN)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/514QMkvsBhL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 6980,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [
+        "heating_method"
+      ],
+      "search_key": "山善(YAMAZEN) 炊飯器 一人暮らし 3合 3種類炊き分け機能 マイコン式 低温調"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0GTKY3M9Q",
+      "asin": "B0GTKY3M9Q",
+      "amazon_title": "【WEB限定】 三菱電機 炊飯器 IH 5.5合 本炭釜 NJ-BW10GA-B 紬(つむぎ) 粒立つもちあま 銘柄芳潤炊き かまど炊き お手入れ2点 MITSUBISHI 炭漆黒",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51UcWvVw-xL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 69800,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [
+        "heating_method"
+      ],
+      "search_key": "三菱電機 炊飯器 IH 5.5合 本炭釜 NJ-BW10GA-B"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0GTKX7ZKQ",
+      "asin": "B0GTKX7ZKQ",
+      "amazon_title": "【WEB限定】 三菱電機 炊飯器 IH 5.5合 備長炭炭炊釜 NJ-VS10GA-B 粒立つもちあま 低温調理 お手入れ2点 MITSUBISHI 黒曜",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61T2h8SSodL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 30574,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [
+        "heating_method"
+      ],
+      "search_key": "三菱電機 炊飯器 IH 5.5合 備長炭炭炊釜 NJ-VS10G"
+    }
+  ]
+}
