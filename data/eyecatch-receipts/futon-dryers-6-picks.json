@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-futon-dryers-6-picks-8f6b9c669f123d6f",
+  "request_sha256": "8f6b9c669f123d6f3ab3797e327bb42ebfac9fe082a9494d1d0baa51c088182f",
+  "image_sha256": "d598cce1d238f99ed96a055b67e18e6bd1dfb73fff2a0fa156e6598ad177baa4",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-09-23T01:30:37.400595+00:00"
+}
