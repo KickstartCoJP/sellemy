@@ -71,23 +71,28 @@ def discover_products(topic: dict, *, cache_only: bool) -> list[dict]:
 
 
 def select_viable_topic(
-    planning_candidates: list[dict] | None, feedback: dict, *, cache_only: bool, max_probes: int = 6
+    planning_candidates: list[dict] | None, feedback: dict, *, cache_only: bool, max_rounds: int = 3
 ) -> tuple[dict, list[dict], list[dict]]:
-    ranked = rank_candidates(planning_candidates if planning_candidates is not None else discover_candidates(), feedback)
-    if not ranked:
-        raise PlanningError('continuous planning produced no eligible non-duplicate topic; no publish')
     probes = []
-    for topic in ranked[:max_probes]:
-        try:
-            products = discover_products(topic, cache_only=cache_only)
-            probes.append({'slug': topic['slug'], 'candidate_count': len(products), 'error': ''})
-        except Exception as exc:
-            products = []
-            probes.append({'slug': topic['slug'], 'candidate_count': 0, 'error': f'{type(exc).__name__}: {exc}'})
-        if len(products) >= 6:
-            selected = {**topic, 'selection_reason': 'highest ranked candidate with at least six live product identities'}
-            return selected, products, probes
-    raise PlanningError('no planned topic passed live product viability: require at least 6 products')
+    tried_slugs: set[str] = set()
+    rounds = 1 if planning_candidates is not None else max(1, int(max_rounds))
+    for round_index in range(rounds):
+        source = planning_candidates if planning_candidates is not None else discover_candidates()
+        ranked = [row for row in rank_candidates(source, feedback) if row['slug'] not in tried_slugs]
+        if not ranked and planning_candidates is not None:
+            raise PlanningError('continuous planning produced no eligible non-duplicate topic; no publish')
+        for topic in ranked:
+            tried_slugs.add(topic['slug'])
+            try:
+                products = discover_products(topic, cache_only=cache_only)
+                probes.append({'round': round_index + 1, 'slug': topic['slug'], 'candidate_count': len(products), 'error': ''})
+            except Exception as exc:
+                products = []
+                probes.append({'round': round_index + 1, 'slug': topic['slug'], 'candidate_count': 0, 'error': f'{type(exc).__name__}: {exc}'})
+            if len(products) >= 6:
+                selected = {**topic, 'selection_reason': 'highest ranked candidate with at least six live product identities'}
+                return selected, products, probes
+    raise PlanningError('no planned topic passed live product viability after full candidate scan and replanning: require at least 6 products')
 
 
 def _compact_search_key(product: dict) -> str:

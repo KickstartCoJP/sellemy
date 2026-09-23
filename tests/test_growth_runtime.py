@@ -118,6 +118,34 @@ class ProductViabilityPlanningTests(unittest.TestCase):
         self.assertEqual(discover.call_count, 2)
         self.assertEqual([p['candidate_count'] for p in probes], [0, 6])
 
+    def test_scans_beyond_first_six_candidates(self):
+        topics = [self._topic(f'topic-{i}') for i in range(7)]
+        products = [{'asin': f'B0TEST{i:04d}'} for i in range(6)]
+        with (
+            patch.object(growth_runtime, 'rank_candidates', return_value=topics),
+            patch.object(growth_runtime, 'discover_products', side_effect=[[], [], [], [], [], [], products]) as discover,
+        ):
+            topic, rows, probes = growth_runtime.select_viable_topic(topics, {}, cache_only=False)
+        self.assertEqual(topic['slug'], 'topic-6')
+        self.assertIs(rows, products)
+        self.assertEqual(discover.call_count, 7)
+        self.assertEqual([p['candidate_count'] for p in probes], [0, 0, 0, 0, 0, 0, 6])
+
+    def test_replans_after_full_candidate_set_is_unviable(self):
+        first_round = [self._topic('round-one-a'), self._topic('round-one-b')]
+        second_round = [self._topic('round-two-a')]
+        products = [{'asin': f'B0TEST{i:04d}'} for i in range(6)]
+        with (
+            patch.object(growth_runtime, 'discover_candidates', side_effect=[first_round, second_round]) as planning,
+            patch.object(growth_runtime, 'rank_candidates', side_effect=[first_round, second_round]),
+            patch.object(growth_runtime, 'discover_products', side_effect=[[], [], products]),
+        ):
+            topic, rows, probes = growth_runtime.select_viable_topic(None, {}, cache_only=False, max_rounds=2)
+        self.assertEqual(topic['slug'], 'round-two-a')
+        self.assertIs(rows, products)
+        self.assertEqual(planning.call_count, 2)
+        self.assertEqual([p['round'] for p in probes], [1, 1, 2])
+
     def test_all_unviable_topics_fail_closed(self):
         topics = [self._topic('first-topic'), self._topic('second-topic')]
         with (
