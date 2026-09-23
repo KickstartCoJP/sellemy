@@ -1,0 +1,142 @@
+{
+  "slug": "electric-shavers-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/electric-shavers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/electric-shavers-6-picks/electric-shavers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "shave_type",
+      "label": "剃り方式",
+      "keywords": [
+        "回転式",
+        "往復式",
+        "刃の枚数"
+      ]
+    },
+    {
+      "id": "skin_care",
+      "label": "剃り心地・肌へのやさしさ",
+      "keywords": [
+        "肌ダメージ軽減",
+        "深剃り",
+        "敏感肌"
+      ]
+    },
+    {
+      "id": "maintenance",
+      "label": "お手入れのしやすさ",
+      "keywords": [
+        "水洗い",
+        "自動洗浄",
+        "替刃コスト"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格帯",
+      "keywords": [
+        "エントリー",
+        "上位モデル",
+        "コスパ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "maintenance",
+      "shave_type",
+      "skin_care"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0H1VKR6C9",
+      "asin": "B0H1VKR6C9",
+      "amazon_title": "ひげそり 電動シェーバー 【往復式三枚刃・60枚内刃深剃り・IPX7防水】 電気シェーバー 髭剃り 電動 シェーバー メンズ 電動髭剃り 3枚刃 往復式 3Dフローティングヘッド 鏡面仕上げ LED残量表示 バッテリー残量表示 1.5H急速充電 Type-C充電 トラベルロック IPX7防水 乾湿両用 お風呂剃り対応 長持ちバッテリー 低騒音 電気カミソリ 男性用 コンパクト 軽量 持ち運び便利 出張/旅行/外出 ビジネス用 父の日 ギフト (1, ブラック)",
+      "brand": "ブランド: BMOVOR",
+      "image_url": "https://m.media-amazon.com/images/I/61rWHnX5xQL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3580,
+      "discovery_score": 1,
+      "selection_score": 0.855,
+      "matched_comparison_axes": [
+        "shave_type",
+        "skin_care"
+      ],
+      "search_key": "BMOVOR ひげそり 電動シェーバー 電気シェーバー 髭剃り 電動 シェーバ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0BPH5GT67",
+      "asin": "B0BPH5GT67",
+      "amazon_title": "ボディシェーバー メンズ VIO シェーバー 10 段階長さ調節 3-12mm 電動バリカン ムダ毛処理 IPX5 防水 水洗い お風呂剃り可 USB 充電式 Vellope RS01",
+      "brand": "ブランド: Vellope",
+      "image_url": "https://m.media-amazon.com/images/I/61xLzBz7I0L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3180,
+      "discovery_score": 1,
+      "selection_score": 0.625,
+      "matched_comparison_axes": [
+        "maintenance"
+      ],
+      "search_key": "Vellope ボディシェーバー メンズ VIO シェーバー 10 段階長さ調節"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GFF1QTC2",
+      "asin": "B0GFF1QTC2",
+      "amazon_title": "電気シェーバー メンズ 全金属ボディ マグネット式ヘッド 往復式3D浮動3枚刃 深剃り IPX7防水 お風呂剃り・丸洗い可 Type-C急速充電",
+      "brand": "ブランド: Oliforu",
+      "image_url": "https://m.media-amazon.com/images/I/71Ns8fx+67L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 5978,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "shave_type",
+        "skin_care"
+      ],
+      "search_key": "Oliforu 電気シェーバー メンズ 全金属ボディ マグネット式ヘッド 往復式"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0DSJB2627",
+      "asin": "B0DSJB2627",
+      "amazon_title": "ブラウン 電気シェーバー シリーズ9 SPORT 電動 髭剃り メンズ 9360cc 【Amazon.co.jp 限定】6in1アルコール洗浄システム付 シェーバーケース付 ブラック",
+      "brand": "Braunのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61c-XLj-ShL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 31368,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "Braun ブラウン 電気シェーバー シリーズ9 SPORT 電動 髭剃り"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0H8RGX1GM",
+      "asin": "B0H8RGX1GM",
+      "amazon_title": "電動シェーバー メンズ 髭剃り IPX7防水 Type-C急速充電 LED残量表示 3D浮動ヘッド 乾湿両用 旅行ロック 出張 旅行",
+      "brand": "ブランド: decooine",
+      "image_url": "https://m.media-amazon.com/images/I/618VhcrVCgL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3499,
+      "discovery_score": 1,
+      "selection_score": 0.445,
+      "matched_comparison_axes": [],
+      "search_key": "decooine 電動シェーバー メンズ 髭剃り IPX7防水 Type-C急速充"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0H6WPBVFM",
+      "asin": "B0H6WPBVFM",
+      "amazon_title": "ひげそり 電動シェーバー シェーバー ひげそり 髭剃り",
+      "brand": "WONSEFOOのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61XsgtbskOL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2979,
+      "discovery_score": 1,
+      "selection_score": 0.445,
+      "matched_comparison_axes": [],
+      "search_key": "WONSEFOO ひげそり 電動シェーバー シェーバー ひげそり 髭剃り"
+    }
+  ]
+}
