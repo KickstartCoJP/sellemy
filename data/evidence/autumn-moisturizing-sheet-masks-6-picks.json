@@ -1,0 +1,138 @@
+{
+  "slug": "autumn-moisturizing-sheet-masks-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/autumn-moisturizing-sheet-masks-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/autumn-moisturizing-sheet-masks-6-picks/autumn-moisturizing-sheet-masks-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "moisture_ingredients",
+      "label": "保湿成分",
+      "keywords": [
+        "セラミド",
+        "ヒアルロン酸",
+        "保湿力"
+      ]
+    },
+    {
+      "id": "fit_feel",
+      "label": "使用感・密着感",
+      "keywords": [
+        "密着",
+        "フィット感",
+        "厚み"
+      ]
+    },
+    {
+      "id": "fragrance",
+      "label": "香り",
+      "keywords": [
+        "無香料",
+        "フローラル",
+        "香り"
+      ]
+    },
+    {
+      "id": "price_value",
+      "label": "価格帯・コスパ",
+      "keywords": [
+        "枚数",
+        "コスパ",
+        "価格"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "moisture_ingredients"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0GLXCTSYD",
+      "asin": "B0GLXCTSYD",
+      "amazon_title": "クオリティファースト ザ・ダーマ モイスト (乾燥・高保湿/セラミド) 日本製 / 30枚入り (リニューアル)",
+      "brand": "クオリティファースト(Quality 1st)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/514SBms9bwL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1810,
+      "discovery_score": 1,
+      "selection_score": 0.7,
+      "matched_comparison_axes": [
+        "moisture_ingredients"
+      ],
+      "search_key": "クオリティファースト(Quality 1st) クオリティファースト ザ・ダーマ モイスト (乾"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0H8PPCH2D",
+      "asin": "B0H8PPCH2D",
+      "amazon_title": "【AURINAS】オーリナス シカ フェイスマスク CICA シートマスク 敏感肌にうるおい NMN セラミド 高保湿 個包装 5枚 フェイスパック",
+      "brand": "AURINASのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71Ihm2TDY7L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 4500,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "moisture_ingredients"
+      ],
+      "search_key": "AURINAS オーリナス シカ フェイスマスク CICA シートマスク 敏感肌"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GW4YZ1KK",
+      "asin": "B0GW4YZ1KK",
+      "amazon_title": "鼻セレブ SKINLISM 美容液マスク 白 高保湿 肌荒れ防止 キメ 敏感肌 保湿 シートマスク 10枚",
+      "brand": "鼻セレブのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61G3wUI801L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2803,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "鼻セレブ SKINLISM 美容液マスク 白 高保湿 肌荒れ防止 キメ 敏"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0FS15WR2G",
+      "asin": "B0FS15WR2G",
+      "amazon_title": "LuLuLun ルルルンプレシャス RED 三層保湿 32枚入 パック フェイスパック シートマスク 顔 毛穴 大容量",
+      "brand": "Lululunのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61GID+jaJuL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1980,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "Lululun ルルルンプレシャス RED 三層保湿 32枚入 パック フェイス"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0CCB68T63",
+      "asin": "B0CCB68T63",
+      "amazon_title": "Make.iN NMN 100 + CERAMIDE モイスト フェイスマスク 30枚入 | セラミド 保湿 スキンケア パック 日本製",
+      "brand": "Make.iNのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71jUkaEqX+L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 596,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [
+        "moisture_ingredients"
+      ],
+      "search_key": "Make.iN NMN 100 + CERAMIDE モイスト フェイスマスク"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B096S68N9W",
+      "asin": "B096S68N9W",
+      "amazon_title": "キュレル 潤浸保湿 モイストリペアシートマスク【医薬部外品】 ホワイト 4 枚",
+      "brand": "キュレルのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/814Je0Pw4DS._AC_SX300_SY300_QL70_ML2_.jpg",
+      "observed_price": 1650,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [],
+      "search_key": "キュレル 潤浸保湿 モイストリペアシートマスク ホワイト 4 枚"
+    }
+  ]
+}
