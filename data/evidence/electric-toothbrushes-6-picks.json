@@ -1,0 +1,134 @@
+{
+  "slug": "electric-toothbrushes-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/electric-toothbrushes-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/electric-toothbrushes-6-picks/electric-toothbrushes-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "brushing_mechanism",
+      "label": "振動方式・磨き心地",
+      "keywords": [
+        "音波振動",
+        "回転式",
+        "モード切替"
+      ]
+    },
+    {
+      "id": "battery",
+      "label": "バッテリー持続時間",
+      "keywords": [
+        "連続使用日数",
+        "充電台",
+        "急速充電"
+      ]
+    },
+    {
+      "id": "replacement_heads",
+      "label": "替えブラシの入手性",
+      "keywords": [
+        "互換ブラシ",
+        "定期便",
+        "価格"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格帯",
+      "keywords": [
+        "コスパ",
+        "高機能",
+        "スターターセット"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "brushing_mechanism"
+    ],
+    "brand_count": 5,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0CJBGMM6F",
+      "asin": "B0CJBGMM6F",
+      "amazon_title": "【Amazon.co.jp限定】システマ ライオン電動アシストブラシ 本体 +フロス付き 歯ブラシ 薄型ヘッド 超極細毛 電池式 音波振動 超微細振動 軽量",
+      "brand": "LION電動アシストブラシのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71RSa8OWgKL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2078,
+      "discovery_score": 1,
+      "selection_score": 0.75,
+      "matched_comparison_axes": [
+        "brushing_mechanism"
+      ],
+      "search_key": "LION電動アシストブラシ システマ ライオン電動アシストブラシ 本体 +フロス付き 歯ブラ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HHDKVNG3",
+      "asin": "B0HHDKVNG3",
+      "amazon_title": "電動歯ブラシ 音波歯ブラシ【スイング振動】40000回/分 最大200日使用 5モード IPX8防水 Type-C充電 ディープブルー",
+      "brand": "ブランド: BRISORA",
+      "image_url": "https://m.media-amazon.com/images/I/61La-bTSsSL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 6999,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [],
+      "search_key": "BRISORA 電動歯ブラシ 音波歯ブラシ 40000回/分 最大200日使用"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0DHX93H1Y",
+      "asin": "B0DHX93H1Y",
+      "amazon_title": "ブラウン 電動歯ブラシ オーラルB 【電動初心者の決定版】iO3 I 静かでなめらかな磨き心地 I 防水【Amazon.co.jp 限定】",
+      "brand": "Braunのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71vmXsSgxLL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 13131,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [],
+      "search_key": "Braun ブラウン 電動歯ブラシ オーラルB iO3 I 静かでなめらかな"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0HFRX8YS3",
+      "asin": "B0HFRX8YS3",
+      "amazon_title": "電動歯ブラシ 音波式 充電式 5モード×3段階強さ調整 左右振動 ブラシヘッド8本付き 収納ケース・スタンド付き 旅行や出張にも便利 ブラック W3",
+      "brand": "ブランド: Baometi",
+      "image_url": "https://m.media-amazon.com/images/I/81CaT9QjV0L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3380,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "Baometi 電動歯ブラシ 音波式 充電式 5モード×3段階強さ調整 左右振動"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0GCFHTDCF",
+      "asin": "B0GCFHTDCF",
+      "amazon_title": "エペイオス(Epeios) 電動歯ブラシ 【「家電批評」2025年連続ベストバイ一位受賞(四年連続) 殿堂入り】 音波歯ブラシ ソニック 歯ブラシ",
+      "brand": "エペイオス(Epeios)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61DXi4Qco5L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 4980,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "エペイオス(Epeios) 電動歯ブラシ 音波歯ブラシ ソニック 歯ブラシ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0HHD1K4V4",
+      "asin": "B0HHD1K4V4",
+      "amazon_title": "電動歯ブラシ【スイング振動】音波歯ブラシ 歯周ケア 40,000回/分 最大180日使用 Type-C充電 IPX7防水 ホワイト",
+      "brand": "ブランド: BRISORA",
+      "image_url": "https://m.media-amazon.com/images/I/6177BxMvFAL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 5999,
+      "discovery_score": 1,
+      "selection_score": 0.45,
+      "matched_comparison_axes": [],
+      "search_key": "BRISORA 電動歯ブラシ 音波歯ブラシ 歯周ケア 40,000回/分 最大1"
+    }
+  ]
+}
