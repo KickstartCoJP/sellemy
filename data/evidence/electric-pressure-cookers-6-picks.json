@@ -1,0 +1,137 @@
+{
+  "slug": "electric-pressure-cookers-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/electric-pressure-cookers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/electric-pressure-cookers-6-picks/electric-pressure-cookers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "capacity",
+      "label": "容量",
+      "keywords": [
+        "1〜2人分",
+        "3〜4人分",
+        "大容量"
+      ]
+    },
+    {
+      "id": "modes",
+      "label": "調理モード数",
+      "keywords": [
+        "自動メニュー",
+        "無水調理",
+        "低温調理"
+      ]
+    },
+    {
+      "id": "maintenance",
+      "label": "お手入れのしやすさ",
+      "keywords": [
+        "内鍋フッ素加工",
+        "食洗機対応",
+        "パーツ分解"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格帯",
+      "keywords": [
+        "コスパ",
+        "高機能",
+        "エントリーモデル"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "capacity",
+      "modes"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0FD1HPHHH",
+      "asin": "B0FD1HPHHH",
+      "amazon_title": "BRUNO オートクックポット 0.6L 豆乳メーカー 豆乳機 スープメーカー ポタージュ 保温 大容量 自動調理 ほったらかし スープ スムージー 時短 全自動 自動調理ポット 豆乳マシン お粥 カレー 煮込み ジュース 洗いやすい コンパクト ギフト アイボリー 白 系 BOE126-IV",
+      "brand": "BRUNOのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51VrBLIgKUL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 9000,
+      "discovery_score": 1,
+      "selection_score": 0.7,
+      "matched_comparison_axes": [
+        "capacity"
+      ],
+      "search_key": "BRUNO オートクックポット 0.6L 豆乳メーカー 豆乳機 スープメーカ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0DBKNLCNG",
+      "asin": "B0DBKNLCNG",
+      "amazon_title": "【WEB限定】タイガー魔法瓶 電気圧力鍋 4L 4～6人用 低温調理 炊飯可能マットブラック COK-N400 KM",
+      "brand": "タイガー魔法瓶(TIGER)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51+ipjygV4L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 24800,
+      "discovery_score": 1,
+      "selection_score": 0.7,
+      "matched_comparison_axes": [
+        "modes"
+      ],
+      "search_key": "タイガー魔法瓶(TIGER) タイガー魔法瓶 電気圧力鍋 4L 4～6人用 低温調理 炊飯可能"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HJ1PKZXZ",
+      "asin": "B0HJ1PKZXZ",
+      "amazon_title": "電気圧力鍋 炊飯器 3分割内鍋 0～70kPa 10種メニュー 24時間予約 保温 自動調理器 (4L ホワイト H9-A ファミリーセット（内鍋：セラミック釉薬二重構造＋セラミック釉薬三重構造＋標準）＋（三重構造蒸しトレイ）) [並行輸入品]",
+      "brand": "ブランド: BSSEA",
+      "image_url": "https://m.media-amazon.com/images/I/61PfWlz7K3L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 28000,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "BSSEA 電気圧力鍋 炊飯器 3分割内鍋 0～70kPa 10種メニュー"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0F9KYLZ7V",
+      "asin": "B0F9KYLZ7V",
+      "amazon_title": "ティファール 自動調理鍋（圧力機能付き） 「ラクラ・クッカー プロ」3L（2～4人用）ホワイト CY3811J0A",
+      "brand": "T-Falのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/512M8Mi3exL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 31800,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "T-Fal ティファール 自動調理鍋（圧力機能付き） 「ラクラ・クッカー プ"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0D6RL1ND1",
+      "asin": "B0D6RL1ND1",
+      "amazon_title": "【正規品】ラボーノ三ツ星シェフ＋クレバーカッター 全自動調理器 ほったらかし キッチン家電 調理家電 自動 入れるだけ",
+      "brand": "ダイレクトテレショップのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51+5L6T-a1L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 42500,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "ダイレクトテレショップ ラボーノ三ツ星シェフ＋クレバーカッター 全自動調理器 ほったらか"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0HHX99PR6",
+      "asin": "B0HHX99PR6",
+      "amazon_title": "Pixyo電気圧力鍋 炊飯器 3L 多機能調理 24H予約タイマー タッチパネル 自動調理 ホワイト コンパクトキッチン家電 ギフトにも (ホワイト,米国規格の3つのプラグイン)",
+      "brand": "ブランド: Pixyo",
+      "image_url": "https://m.media-amazon.com/images/I/411qOMpbunL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 11259,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [],
+      "search_key": "Pixyo 電気圧力鍋 炊飯器 3L 多機能調理 24H予約タイマー タッチ"
+    }
+  ]
+}
