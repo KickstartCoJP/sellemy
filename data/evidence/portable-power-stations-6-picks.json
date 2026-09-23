@@ -1,0 +1,152 @@
+{
+  "slug": "portable-power-stations-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/portable-power-stations-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/portable-power-stations-6-picks/portable-power-stations-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "capacity",
+      "label": "蓄電容量",
+      "keywords": [
+        "Wh",
+        "大容量",
+        "長時間使用"
+      ]
+    },
+    {
+      "id": "output",
+      "label": "出力・対応家電",
+      "keywords": [
+        "AC出力",
+        "同時給電",
+        "家電対応"
+      ]
+    },
+    {
+      "id": "charging",
+      "label": "充電方法",
+      "keywords": [
+        "ソーラー充電",
+        "USB充電",
+        "急速充電"
+      ]
+    },
+    {
+      "id": "portability",
+      "label": "携帯性",
+      "keywords": [
+        "重量",
+        "持ち手",
+        "コンパクト"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "capacity",
+      "charging",
+      "output",
+      "portability"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0G2LPG4LK",
+      "asin": "B0G2LPG4LK",
+      "amazon_title": "ポータブル電源 小型 ポタ電 急速充電 大容量 60000mAh 合計出力268W ぽーたふる電源 蓄電池 リン酸鉄 長寿命 軽量 コンパクト 1.6Kg モバイルバッテリー 100W DC出力(AC出力非搭載) ポータブルバッテリー 携帯 ソーラー充電 キャンプ 車中泊 停電対策 防災 非常用電源",
+      "brand": "ブランド: PONAMOS",
+      "image_url": "https://m.media-amazon.com/images/I/61DRNtu5R9L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 17990,
+      "discovery_score": 1,
+      "selection_score": 1.215,
+      "matched_comparison_axes": [
+        "capacity",
+        "charging",
+        "output",
+        "portability"
+      ],
+      "search_key": "PONAMOS ポータブル電源 小型 ポタ電 急速充電 大容量 60000mAh"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0FX4YBZV4",
+      "asin": "B0FX4YBZV4",
+      "amazon_title": "Jackery (ジャクリ) ポータブル電源 1500 New 100W ソーラーパネル 1枚 2点セット 1536Wh 大容量",
+      "brand": "Jackeryのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/817zXjPhZJL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 184600,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "capacity"
+      ],
+      "search_key": "Jackery (ジャクリ) ポータブル電源 1500 New 100W ソーラ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HG9RFMWP",
+      "asin": "B0HG9RFMWP",
+      "amazon_title": "AP1000 ポータブル電源 Portable Power Station ダークグレー 1024Wh リン酸鉄リチウムイオン 60分 急速充電 家庭用発電機 1600W の安定出力 大容量 長寿命10年 ソーラー発電機 ポータブル バッテリー アウトドア キャンプ RV車中泊用 節電 停電対策 防災グッズ 非常用電源 防災",
+      "brand": "ブランド: CTOLITY",
+      "image_url": "https://m.media-amazon.com/images/I/71yMiX+Xy4L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 56999,
+      "discovery_score": 1,
+      "selection_score": 0.445,
+      "matched_comparison_axes": [
+        "capacity",
+        "charging"
+      ],
+      "search_key": "CTOLITY AP1000 ポータブル電源 Portable Power St"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0GZVJXRWR",
+      "asin": "B0GZVJXRWR",
+      "amazon_title": "OUKITEL ポータブル電源 1024Wh AC1800W (瞬間最大 3600W) リン酸鉄リチウム電池 15 年長寿命 43 分急速満充電 APP 遠隔操作 純正弦波 50/60Hz 切替 MPPT 制御 DC/USB/XT60 出力 PSE 認証済 防災 キャンプ 車中泊 家庭用アウトドア兼用",
+      "brand": "ZanPaunのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61vA7HLpe3L._AC_SX300_SY300_QL70_ML2_.jpg",
+      "observed_price": 54980,
+      "discovery_score": 1,
+      "selection_score": 0.445,
+      "matched_comparison_axes": [
+        "capacity"
+      ],
+      "search_key": "ZanPaun OUKITEL ポータブル電源 1024Wh AC1800W ("
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0GCRDF9CK",
+      "asin": "B0GCRDF9CK",
+      "amazon_title": "BLUETTI ポータブル電源 AORA100 V2 1024Wh 大容量 定格1800W 再生素材採用 45分80％充電 停電時0.01秒切替",
+      "brand": "BLUETTIのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/8180lkZrIkL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 62909,
+      "discovery_score": 1,
+      "selection_score": 0.445,
+      "matched_comparison_axes": [
+        "capacity"
+      ],
+      "search_key": "BLUETTI ポータブル電源 AORA100 V2 1024Wh 大容量 定格"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0FR8X1P61",
+      "asin": "B0FR8X1P61",
+      "amazon_title": "Daran ポータブル電源 350W / 288Wh バッグ付き ポタ電 AC出力 純正弦波 大容量 ぽ-たふる 発電機 長寿命 リン酸鉄バッテリー 小型 軽量 AC シガ-ソケット ソーラーパネル充電 アウトドア キャンプ 車中泊 停電対策 地震防災 家庭用 オフェス 非常用 電源",
+      "brand": "ブランド: Daran",
+      "image_url": "https://m.media-amazon.com/images/I/818jL+kzg+L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 23999,
+      "discovery_score": 1,
+      "selection_score": 0.445,
+      "matched_comparison_axes": [
+        "capacity",
+        "output"
+      ],
+      "search_key": "Daran ポータブル電源 350W / 288Wh バッグ付き ポタ電 A"
+    }
+  ]
+}
