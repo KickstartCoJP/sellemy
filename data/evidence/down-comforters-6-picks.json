@@ -1,0 +1,150 @@
+{
+  "slug": "down-comforters-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/down-comforters-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/down-comforters-6-picks/down-comforters-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "down_quality",
+      "label": "ダウン率・側生地素材",
+      "keywords": [
+        "ダウンパワー",
+        "フランス産",
+        "側生地"
+      ]
+    },
+    {
+      "id": "warmth",
+      "label": "暖かさ・保温性",
+      "keywords": [
+        "保温",
+        "軽さ",
+        "あたたかさ"
+      ]
+    },
+    {
+      "id": "size",
+      "label": "サイズ展開",
+      "keywords": [
+        "シングル",
+        "セミダブル",
+        "ダブル"
+      ]
+    },
+    {
+      "id": "care",
+      "label": "お手入れのしやすさ",
+      "keywords": [
+        "丸洗い",
+        "収納",
+        "圧縮"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格帯",
+      "keywords": [
+        "価格",
+        "コスパ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "size"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0H8LZ3PVM",
+      "asin": "B0H8LZ3PVM",
+      "amazon_title": "（シングル）羽毛合掛布団 ハンガリー産ホワイトダックダウンダウン90% 抗菌防臭羽毛使用 シルバーラベル-5サイズ展開",
+      "brand": "グランフランセヌーベルのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/31P2VaYacqL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 24800,
+      "discovery_score": 1,
+      "selection_score": 0.675,
+      "matched_comparison_axes": [
+        "size"
+      ],
+      "search_key": "グランフランセヌーベル （シングル）羽毛合掛布団 ハンガリー産ホワイトダックダウンダウン"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0FRM1518S",
+      "asin": "B0FRM1518S",
+      "amazon_title": "ロマンス小杉 公式 ねむりのアトリエ 羽毛布団 洗える 冬 日本製 ダウンが片寄らない ダックダウン90％ 羽毛掛け布団 軽量（スタンダードタイプ,シングル,無地・グレー）",
+      "brand": "ブランド: atelier of sleep",
+      "image_url": "https://m.media-amazon.com/images/I/51ZtOAt9pcL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 29999,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "size"
+      ],
+      "search_key": "atelier of sleep ロマンス小杉 公式 ねむりのアトリエ 羽毛布団 洗える 冬 日"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B09LQYCHPH",
+      "asin": "B09LQYCHPH",
+      "amazon_title": "【羽毛布団なのに匂いが少ない】【ふとん工房 グーグ】 羽毛掛けふとん ホワイトプリンセス® マザーダック ダウン93% クリーミーホワイト 無地 クイーンサイズ 高級 国内生産 羽毛 布団 キルト 寒い季節に 軽量 起毛 防ダニ 吸水 速乾 清潔 暖かい 立体縫製キルト 肌触り 柔らかい ロイヤルゴールドラベル付き",
+      "brand": "§Ｇ∞ＧｕｕＧ∞ふとん工房グーグのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71zGyOgwfAL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "observed_price": 71500,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "§Ｇ∞ＧｕｕＧ∞ふとん工房グーグ 羽毛掛けふとん ホワイトプリンセス® マザーダック ダウン93"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B00DH8YIQO",
+      "asin": "B00DH8YIQO",
+      "amazon_title": "羽毛布団 シングル ハンガリー産 ホワイト マザーダックダウン 95% 二層立体 ツインキルト 60サテン 超長綿 CILブラックラベル 日本製",
+      "brand": "日本寝具通信販売のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61nPADA2UaL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "observed_price": 49800,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "size"
+      ],
+      "search_key": "日本寝具通信販売 羽毛布団 シングル ハンガリー産 ホワイト マザーダックダウン"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0D9JCL89W",
+      "asin": "B0D9JCL89W",
+      "amazon_title": "Softime 掛け布団 人工羽毛布団 シングル 冬 【宇宙素材エアロゲル×帝人FWALINE】 暖かい 抗菌防臭 150x210cm スノーホワイト",
+      "brand": "Softimeのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61H4BcGV4WL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 8849,
+      "discovery_score": 1,
+      "selection_score": 0.445,
+      "matched_comparison_axes": [
+        "size"
+      ],
+      "search_key": "Softime 掛け布団 人工羽毛布団 シングル 冬 暖かい 抗菌防臭 150x"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0CDBVG958",
+      "asin": "B0CDBVG958",
+      "amazon_title": "タンスのゲン 羽毛布団 シングル【コインランドリーで洗える】W防ダニ ダウン90％ 充填量1.0kg 日本製 掛け布団 10119001(87541)",
+      "brand": "タンスのゲンのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/81yUzEB2b9L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 18999,
+      "discovery_score": 1,
+      "selection_score": 0.445,
+      "matched_comparison_axes": [
+        "size"
+      ],
+      "search_key": "タンスのゲン 羽毛布団 シングル W防ダニ ダウン90％ 充填量1.0kg 日"
+    }
+  ]
+}
