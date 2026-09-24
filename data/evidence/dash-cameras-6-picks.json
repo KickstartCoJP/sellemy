@@ -1,0 +1,154 @@
+{
+  "slug": "dash-cameras-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/dash-cameras-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/dash-cameras-6-picks/dash-cameras-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "resolution",
+      "label": "画質・解像度",
+      "keywords": [
+        "フルHD",
+        "4K",
+        "夜間撮影"
+      ]
+    },
+    {
+      "id": "camera_count",
+      "label": "前後カメラ対応",
+      "keywords": [
+        "前後2カメラ",
+        "リアカメラ",
+        "3カメラ"
+      ]
+    },
+    {
+      "id": "parking_mode",
+      "label": "駐車監視機能",
+      "keywords": [
+        "駐車監視",
+        "衝撃検知",
+        "常時電源"
+      ]
+    },
+    {
+      "id": "installation",
+      "label": "取り付けのしやすさ",
+      "keywords": [
+        "配線",
+        "取り付け",
+        "コンパクト"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "camera_count",
+      "installation",
+      "parking_mode",
+      "resolution"
+    ],
+    "brand_count": 5,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0H458529H",
+      "asin": "B0H458529H",
+      "amazon_title": "【4K高画质+HDR夜视】70mai A810 Lite ドライブレコーダー 前後2カメラ GPS 駐車監視 衝撃録画 ループ録画 MicroSD別売",
+      "brand": "70maiのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71Unf+REAxL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 13990,
+      "discovery_score": 1,
+      "selection_score": 1.035,
+      "matched_comparison_axes": [
+        "camera_count",
+        "parking_mode",
+        "resolution"
+      ],
+      "search_key": "70mai A810 Lite ドライブレコーダー 前後2カメラ GPS 駐"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0H4VLD6WG",
+      "asin": "B0H4VLD6WG",
+      "amazon_title": "【EC限定】コムテック（COMTEC） ドライブレコーダー AZDR65 前後2カメラ フロントカメラWQHD 前後STARVIS 2技術搭載高感度センサー採用 直接配線コード付属 GPS搭載 32GBmicroSDカード付属 後続車接近お知らせ機能 駐車監視機能 高速起動 日本製 3年保証 [出張取付サービス対応]",
+      "brand": "コムテック(COMTEC)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61rJHkp8+FL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 24510,
+      "discovery_score": 1,
+      "selection_score": 0.675,
+      "matched_comparison_axes": [
+        "camera_count",
+        "installation",
+        "parking_mode"
+      ],
+      "search_key": "コムテック(COMTEC) コムテック（COMTEC） ドライブレコーダー AZDR65 前"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GGH242ND",
+      "asin": "B0GGH242ND",
+      "amazon_title": "【前後800万画素＋STARVIS2 2026業界最新！】ドライブレコーダー 前後カメラ ドラレコ 4K 高速wifi6 GPS搭載 リアカメラ360°回転 HDR/WDR 超暗視機能 72時間駐車監視 360°画像逆転可 起動音調整可 耐高温 スーパーキャパシタ 1TBカード対応 3インチ タッチパネル 小型 脱着可能 Type-C電源 64GBメモリカード付属 (OK9-NK)",
+      "brand": "OKYESのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/81-5NGmrzcL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 18900,
+      "discovery_score": 1,
+      "selection_score": 0.445,
+      "matched_comparison_axes": [
+        "camera_count",
+        "parking_mode",
+        "resolution"
+      ],
+      "search_key": "OKYES ドライブレコーダー 前後カメラ ドラレコ 4K 高速wifi6"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0DJT2ZS6B",
+      "asin": "B0DJT2ZS6B",
+      "amazon_title": "GKU D600PRO【1.47インチIPS液晶モニター搭載＋GPS内蔵】すぐに確認できる高性能4Kドライブレコーダー",
+      "brand": "GKUのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61GnAcH08qL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 10999,
+      "discovery_score": 1,
+      "selection_score": 0.445,
+      "matched_comparison_axes": [
+        "resolution"
+      ],
+      "search_key": "GKU D600PRO すぐに確認できる高性能4Kドライブレコーダー"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B08F52DWJX",
+      "asin": "B08F52DWJX",
+      "amazon_title": "ユピテル(Yupiteru) ドライブレコーダー 前後2カメラ WDT510c フロントHDR200万画素FullHD【簡易パッケージ＆WEB取説】",
+      "brand": "ユピテル(Yupiteru)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71mTZtMdyIL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 17165,
+      "discovery_score": 1,
+      "selection_score": 0.445,
+      "matched_comparison_axes": [
+        "camera_count"
+      ],
+      "search_key": "ユピテル(Yupiteru) ドライブレコーダー 前後2カメラ WDT510c フロントHDR"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0GTZLFG1M",
+      "asin": "B0GTZLFG1M",
+      "amazon_title": "コムテック（COMTEC） ドライブレコーダー ZDR-550D 前後2カメラ 前後STARVIS技術搭載高感度センサー採用 前後200万画素 Full HD GPS搭載 64GBmicroSDカード付属 後続車接近お知らせ機能 駐車監視機能 高速起動 日本製 3年保証",
+      "brand": "コムテック(COMTEC)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71p-7OCXfSL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "observed_price": 21303,
+      "discovery_score": 1,
+      "selection_score": 0.375,
+      "matched_comparison_axes": [
+        "camera_count",
+        "parking_mode"
+      ],
+      "search_key": "コムテック(COMTEC) コムテック（COMTEC） ドライブレコーダー ZDR-550D"
+    }
+  ]
+}
