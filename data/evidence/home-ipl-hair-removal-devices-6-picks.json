@@ -1,0 +1,149 @@
+{
+  "slug": "home-ipl-hair-removal-devices-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/home-ipl-hair-removal-devices-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/home-ipl-hair-removal-devices-6-picks/home-ipl-hair-removal-devices-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "power",
+      "label": "照射方式・出力",
+      "keywords": [
+        "IPL",
+        "フラッシュ式",
+        "照射レベル"
+      ]
+    },
+    {
+      "id": "coverage",
+      "label": "対応部位",
+      "keywords": [
+        "全身",
+        "顔",
+        "VIO"
+      ]
+    },
+    {
+      "id": "running_cost",
+      "label": "カートリッジ・ランニングコスト",
+      "keywords": [
+        "カートリッジ交換",
+        "照射回数",
+        "ランニングコスト"
+      ]
+    },
+    {
+      "id": "comfort",
+      "label": "痛み・肌へのやさしさ",
+      "keywords": [
+        "痛くない",
+        "冷却機能",
+        "肌に優しい"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "comfort",
+      "coverage",
+      "power",
+      "running_cost"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B09VK7Q9FS",
+      "asin": "B09VK7Q9FS",
+      "amazon_title": "Yete（エイティー）脱毛器 家庭用脱毛器 IPL光脱毛器 レディー脱毛器 冷感脱毛 無限照射回数 5段階照射 全身ムダ毛処理 (クリーム)",
+      "brand": "Beautigoのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51amJPVrP-L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 29800,
+      "discovery_score": 1,
+      "selection_score": 1.035,
+      "matched_comparison_axes": [
+        "coverage",
+        "power",
+        "running_cost"
+      ],
+      "search_key": "Beautigo Yete（エイティー）脱毛器 家庭用脱毛器 IPL光脱毛器 レデ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0GN1XY9LP",
+      "asin": "B0GN1XY9LP",
+      "amazon_title": "パナソニック 脱毛器 【Amazon.co.jp限定】 スムースエピ 髭・VIO対応 冷却機能付 光美容器 ES-NWHJC-H",
+      "brand": "パナソニック(Panasonic)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61tXu6IE7kL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 49995,
+      "discovery_score": 1,
+      "selection_score": 0.675,
+      "matched_comparison_axes": [
+        "comfort",
+        "coverage"
+      ],
+      "search_key": "パナソニック(Panasonic) パナソニック 脱毛器 スムースエピ 髭・VIO対応 冷却機能"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GQ3HMW1R",
+      "asin": "B0GQ3HMW1R",
+      "amazon_title": "【公式ストア限定】STELLA BEAUTE ステラボーテ IPL&NIR 光美容器 PRO ギフト用バッグ付き グレー (ミスティグレー)",
+      "brand": "Stella Beauteのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51XyXTgO+cL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 78000,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "power"
+      ],
+      "search_key": "Stella Beaute ステラボーテ IPL&NIR 光美容器 PRO ギフト用バッグ付"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0GF1TYC21",
+      "asin": "B0GF1TYC21",
+      "amazon_title": "JOVS 脱毛器 Dora Scroll(スクロール) 2026年モデル 光美容器 家庭用 メンズ レディース 髭/全身/vio 冷却機能",
+      "brand": "JOVSのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71bTqkUX0UL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 49130,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "comfort",
+        "coverage"
+      ],
+      "search_key": "JOVS 脱毛器 Dora Scroll(スクロール) 2026年モデル"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0D78WDCFC",
+      "asin": "B0D78WDCFC",
+      "amazon_title": "SMOOTHSKIN Pure Adapt 脱毛器 連射モード 光美容器 レディース メンズ ヒゲ シャンパン",
+      "brand": "SMOOTHSKINのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71d8f82+GhL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 47500,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "SMOOTHSKIN Pure Adapt 脱毛器 連射モード 光美容器 レディース"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B091F7BL35",
+      "asin": "B091F7BL35",
+      "amazon_title": "エムテック ケノン KE-NON 光美容器 日本製 髭 VIO対応 メーカー2年保証 正規品 USPL式 シャンパンゴールド",
+      "brand": "KE-NONのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61ebc4b1DaL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 79800,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "coverage"
+      ],
+      "search_key": "KE-NON エムテック ケノン KE-NON 光美容器 日本製 髭 VIO対"
+    }
+  ]
+}
