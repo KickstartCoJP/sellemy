@@ -1,0 +1,162 @@
+{
+  "slug": "smart-rings-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/smart-rings-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/smart-rings-6-picks/smart-rings-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "battery_life",
+      "label": "バッテリー持続時間",
+      "keywords": [
+        "バッテリー",
+        "充電",
+        "持続時間"
+      ]
+    },
+    {
+      "id": "tracking_features",
+      "label": "計測機能",
+      "keywords": [
+        "心拍",
+        "睡眠",
+        "活動量",
+        "血中酸素"
+      ]
+    },
+    {
+      "id": "size_fit",
+      "label": "サイズ・フィット感",
+      "keywords": [
+        "サイズ展開",
+        "重さ",
+        "着け心地"
+      ]
+    },
+    {
+      "id": "app_compatibility",
+      "label": "アプリ連携",
+      "keywords": [
+        "iPhone",
+        "Android",
+        "アプリ",
+        "連携"
+      ]
+    },
+    {
+      "id": "design",
+      "label": "デザイン",
+      "keywords": [
+        "素材",
+        "カラー",
+        "見た目"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "app_compatibility",
+      "battery_life",
+      "tracking_features"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0GQ4L5XK4",
+      "asin": "B0GQ4L5XK4",
+      "amazon_title": "Geekin スマートリング 健康管理 睡眠管理 スマート指輪 ヘルスケア 8種類運動モード 3種類データ測定機能 IP68防水 Iphone対応 | evofit 健康リング 睡眠 長時間使用可能 Android/Iphone対応 睡眠計測 小型 カロリー 運動距離 活動量計 ヘルスリング 歩数計 日本語取扱説明書 USB磁気充電 ケーブル付き",
+      "brand": "Geekinのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61RPZKxb5FL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 5880,
+      "discovery_score": 1,
+      "selection_score": 1.06,
+      "matched_comparison_axes": [
+        "app_compatibility",
+        "battery_life",
+        "tracking_features"
+      ],
+      "search_key": "Geekin スマートリング 健康管理 睡眠管理 スマート指輪 ヘルスケア 8"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0H629WXLQ",
+      "asin": "B0H629WXLQ",
+      "amazon_title": "b.ring スマートリング G1Sチタンモデル / シルバーUS9号（日本基準18〜20号/内周60.0mm）",
+      "brand": "b.ringのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71nnVFMlFCL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 11000,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "b.ring スマートリング G1Sチタンモデル / シルバーUS9号（日本基"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0H5WQ1THD",
+      "asin": "B0H5WQ1THD",
+      "amazon_title": "RingConn Gen 3 スマートリング｜購入前にサイズキットで確認｜アプリのサブスクリプション不要｜睡眠・フィットネス・ウェルネス｜通知・バイブレーション搭載｜最大14日間連続使用（サイズ10・フューチャーシルバー）",
+      "brand": "RingConnのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/5130BWhTNgL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 59800,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "app_compatibility",
+        "tracking_features"
+      ],
+      "search_key": "RingConn Gen 3 スマートリング｜購入前にサイズキットで確認｜アプリの"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0H4RNLPBD",
+      "asin": "B0H4RNLPBD",
+      "amazon_title": "SOXAI RING 2 日本製スマートリング ソクサイリング 睡眠管理 健康管理 最大15日間バッテリー メーカー保証1年 歩数計 100m防水 チタン製 サブスク不要専用アプリ iPhone/Android対応 公式ストア 日本人サポート (マットブラック, 22号)",
+      "brand": "SOXAI RINGのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61WMSrjq6-L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 39980,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "app_compatibility",
+        "battery_life",
+        "tracking_features"
+      ],
+      "search_key": "SOXAI RING 2 日本製スマートリング ソクサイリング 睡眠管理 健康管理 最"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0H2DQ7H6B",
+      "asin": "B0H2DQ7H6B",
+      "amazon_title": "スマートリング 健康管理 画面付き タッチ操作 AIスマートリング 睡眠測定 H-R SP-O2飽和度 活動量計 指輪 歩数計 消費カロリー ジェスチャー操作 音楽操作 リモート撮影 防水 IP68 メンズ レディース ios/Android対応",
+      "brand": "ブランド: findtime",
+      "image_url": "https://m.media-amazon.com/images/I/712jmasijDL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "observed_price": 6990,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [
+        "app_compatibility",
+        "tracking_features"
+      ],
+      "search_key": "findtime スマートリング 健康管理 画面付き タッチ操作 AIスマートリン"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0F455C29B",
+      "asin": "B0F455C29B",
+      "amazon_title": "スマートリング、スポーツリング、スマートディスプレイ、ワイヤレス充電、5〜7日間のバッテリー寿命、5 ATM防水、Android 5.1およびiOS 8.0と互換性あり、ユニセックス (ゴールド, 10)",
+      "brand": "ブランド: UouNeaCo",
+      "image_url": "https://m.media-amazon.com/images/I/61WIJO2dbvL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 7999,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [
+        "app_compatibility",
+        "battery_life"
+      ],
+      "search_key": "UouNeaCo スマートリング、スポーツリング、スマートディスプレイ、ワイヤレス"
+    }
+  ]
+}
