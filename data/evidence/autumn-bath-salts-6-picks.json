@@ -1,0 +1,127 @@
+{
+  "slug": "autumn-bath-salts-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/autumn-bath-salts-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/autumn-bath-salts-6-picks/autumn-bath-salts-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "warmth",
+      "label": "温浴効果・保湿成分",
+      "keywords": [
+        "炭酸ガス",
+        "エプソムソルト",
+        "温泉成分"
+      ]
+    },
+    {
+      "id": "relax",
+      "label": "香り・リラックス効果",
+      "keywords": [
+        "アロマ",
+        "エッセンシャルオイル",
+        "リラックス"
+      ]
+    },
+    {
+      "id": "value",
+      "label": "価格・容量",
+      "keywords": [
+        "徳用サイズ",
+        "個包装",
+        "コスパ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "warmth"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0H2H7ZDMX",
+      "asin": "B0H2H7ZDMX",
+      "amazon_title": "FORESTWATER EPSORU-C バスソルト エプソムソルト 入浴剤 100％塩素除去 ビタミンC 温泉成分 無香料 国産無添加 31回分",
+      "brand": "FOREST WATERのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61inshQDPeL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1980,
+      "discovery_score": 1,
+      "selection_score": 0.675,
+      "matched_comparison_axes": [
+        "warmth"
+      ],
+      "search_key": "FOREST WATER FORESTWATER EPSORU-C バスソルト エプソムソ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0H5KL6QX8",
+      "asin": "B0H5KL6QX8",
+      "amazon_title": "SHIGETA(シゲタ) バスソルト グリーンブルーム ヒノキ 285g",
+      "brand": "ＳＨＩＧＥＴＡ　ＰＡＲＩＳのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61rSIzEGGYL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2821,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "ＳＨＩＧＥＴＡ　ＰＡＲＩＳ SHIGETA(シゲタ) バスソルト グリーンブルーム ヒノキ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GQFWJV4H",
+      "asin": "B0GQFWJV4H",
+      "amazon_title": "ウルラブ ボディスクラブ バスパウダー 【ピンクムスクセット】 入浴剤 バスソルト エプソムソルト ギフト プレゼント 母の日 バスグッズ ボディケア",
+      "brand": "チュラコスのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/618mJLtMGHL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 7947,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "warmth"
+      ],
+      "search_key": "チュラコス ウルラブ ボディスクラブ バスパウダー 入浴剤 バスソルト エプ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0GCCXW8C5",
+      "asin": "B0GCCXW8C5",
+      "amazon_title": "バスソルト 入浴剤 にごり湯 タイプ 森林浴の香り 保湿 大容量 NARAGAMI（ナラガミ） 850g",
+      "brand": "ブランド: NARAGAMI",
+      "image_url": "https://m.media-amazon.com/images/I/71arUC9kkXL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3480,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "NARAGAMI バスソルト 入浴剤 にごり湯 タイプ 森林浴の香り 保湿 大容量"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0DF7CNMMF",
+      "asin": "B0DF7CNMMF",
+      "amazon_title": "【医薬部外品/入浴剤】永寿ノ湯（10包入り）ギフト 冷え性 むくみ 疲労回復 保湿 美肌 肌荒れ 肩こり 腰痛 ヒノキの香り 国内せいさん（1箱）",
+      "brand": "ブランド: 永寿ノ湯",
+      "image_url": "https://m.media-amazon.com/images/I/71hSXHtzFsL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "observed_price": 5630,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "永寿ノ湯 （10包入り）ギフト 冷え性 むくみ 疲労回復 保湿 美肌 肌荒"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0BQ2TMY2N",
+      "asin": "B0BQ2TMY2N",
+      "amazon_title": "【医薬部外品】常備浴 富山常備薬 薬用入浴剤 大容量400mL(20回分)",
+      "brand": "常備浴のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71pqWbI2YLL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3960,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "常備浴 富山常備薬 薬用入浴剤 大容量400mL(20回分)"
+    }
+  ]
+}
