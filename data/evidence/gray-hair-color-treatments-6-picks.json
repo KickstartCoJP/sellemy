@@ -1,0 +1,134 @@
+{
+  "slug": "gray-hair-color-treatments-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/gray-hair-color-treatments-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/gray-hair-color-treatments-6-picks/gray-hair-color-treatments-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "coloring_power",
+      "label": "染毛力・持続力",
+      "keywords": [
+        "染まりやすさ",
+        "色持ち",
+        "白髪カバー力"
+      ]
+    },
+    {
+      "id": "texture_scent",
+      "label": "使用感・香り",
+      "keywords": [
+        "手触り",
+        "香り",
+        "きしみにくさ"
+      ]
+    },
+    {
+      "id": "scalp_gentleness",
+      "label": "頭皮へのやさしさ",
+      "keywords": [
+        "低刺激",
+        "無添加",
+        "ジアミンフリー"
+      ]
+    },
+    {
+      "id": "price_range",
+      "label": "価格帯",
+      "keywords": [
+        "コスパ",
+        "詰め替え",
+        "内容量"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "texture_scent"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0GJS21966",
+      "asin": "B0GJS21966",
+      "amazon_title": "b.ris veil ビーリスベールモイストカラーシャンプー 280ml ブラック 3本｜白髪ケア 白髪染め ヘナ｜ベルガモットジャスミンの香り",
+      "brand": "ｂ．ｒｉｓ＼ビーリスのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71xtUns7bPL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 13446,
+      "discovery_score": 1,
+      "selection_score": 0.65,
+      "matched_comparison_axes": [
+        "texture_scent"
+      ],
+      "search_key": "ｂ．ｒｉｓ＼ビーリス b.ris veil ビーリスベールモイストカラーシャンプー 2"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0GL8NXRS6",
+      "asin": "B0GL8NXRS6",
+      "amazon_title": "【1本7役 新感覚ヘアカラートリートメント】大容量200g ノアリス ヘアカラートリートメント 白髪染め",
+      "brand": "Gleonのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71pVpN003fL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2980,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "Gleon 大容量200g ノアリス ヘアカラートリートメント 白髪染め"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0H8CM7XHY",
+      "asin": "B0H8CM7XHY",
+      "amazon_title": "パーフェクトワン ヘアネスト ヘアーカラートリートメント 25g×5包 個包装 白髪染め (手袋 コーム付 ナチュラルブラック)",
+      "brand": "パーフェクトワンのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51mwCOHE0OL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3300,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "パーフェクトワン ヘアネスト ヘアーカラートリートメント 25g×5包 個包装 白"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0CJT7NBMW",
+      "asin": "B0CJT7NBMW",
+      "amazon_title": "［ オーガニック 白髪ケア ］biseno(ビセノ) ヘアカラートリートメント ナチュラルブラック 150g×1 (約1か月分)",
+      "brand": "bisenoのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61Eo2KWHcaL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3980,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "biseno ［ オーガニック 白髪ケア ］biseno(ビセノ) ヘアカラー"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B09X1DSRNF",
+      "asin": "B09X1DSRNF",
+      "amazon_title": "50の恵 頭皮いたわりカラートリートメント ダークブラウン 2個セット(白髪染め 酸化染料フリー)+極潤サシェット付",
+      "brand": "50の恵のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/81v8tJiU8fL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3300,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "50の恵 頭皮いたわりカラートリートメント ダークブラウン 2個セット(白"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B09L3S9XH5",
+      "asin": "B09L3S9XH5",
+      "amazon_title": "【シリーズ累計530万本突破】 ルプルプ エッセンス カラートリートメント エボニーブラック 170g 約1ヵ月分 LPLP",
+      "brand": "ルプルプ(LPLP)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61yUFHBuL9L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3630,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "ルプルプ(LPLP) ルプルプ エッセンス カラートリートメント エボニーブラック 1"
+    }
+  ]
+}
