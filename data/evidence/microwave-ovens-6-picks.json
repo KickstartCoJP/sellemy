@@ -1,0 +1,127 @@
+{
+  "slug": "microwave-ovens-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/microwave-ovens-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/microwave-ovens-6-picks/microwave-ovens-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "heating_function",
+      "label": "加熱方式・機能",
+      "keywords": [
+        "オーブンレンジ",
+        "解凍機能",
+        "スチーム機能"
+      ]
+    },
+    {
+      "id": "capacity_size",
+      "label": "庫内容量・設置サイズ",
+      "keywords": [
+        "フラットテーブル",
+        "設置スペース",
+        "容量"
+      ]
+    },
+    {
+      "id": "ease_of_use",
+      "label": "操作のしやすさ・お手入れ",
+      "keywords": [
+        "自動あたためボタン",
+        "汚れにくい庫内",
+        "操作パネル"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "capacity_size",
+      "heating_function"
+    ],
+    "brand_count": 5,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0HJG833NK",
+      "asin": "B0HJG833NK",
+      "amazon_title": "パナソニック オーブンレンジ 23L コンパクトモデル フラットテーブル スピードあたため 絶対温度センサー ホワイト NE-FS3E-W",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41byuQg5ZuL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 41077,
+      "discovery_score": 1,
+      "selection_score": 0.685,
+      "matched_comparison_axes": [
+        "capacity_size",
+        "heating_function"
+      ],
+      "search_key": "パナソニック オーブンレンジ 23L コンパクトモデル フラット"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0DV9B92C8",
+      "asin": "B0DV9B92C8",
+      "amazon_title": "【Amazon.co.jp限定】 コイズミ 単機能 電子レンジ 17L ターンテーブル 【50Hz専用】 東日本 一人暮らし 簡単操作 ダイヤル式 大きめ文字 ブラック KRD-1701/K5",
+      "brand": "コイズミ(Koizumi)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/81zuaR1YV4L._AC_SX300_SY300_QL70_ML2_.jpg",
+      "observed_price": 9780,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "コイズミ(Koizumi) コイズミ 単機能 電子レンジ 17L ターンテーブル 東日本 一"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0DLGXSQZS",
+      "asin": "B0DLGXSQZS",
+      "amazon_title": "コンフィー(COMFEE') 電子レンジ 17L ターンテーブル 押しやすいボタン式 ヘルツフリー シンプル機能 消音モード付き 一人暮らし 二人暮らし 【メーカー保証2年】 CF-EM203-BK ブラック",
+      "brand": "コンフィー(COMFEE')のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71d+8LZm4kL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 8800,
+      "discovery_score": 1,
+      "selection_score": 0.445,
+      "matched_comparison_axes": [],
+      "search_key": "コンフィー(COMFEE') 電子レンジ 17L ターンテーブル 押しやすいボタン式 ヘルツフ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0DCMLY3H4",
+      "asin": "B0DCMLY3H4",
+      "amazon_title": "[山善] 電子レンジ 17L 単機能 一人暮らし 二人暮らし ターンテーブル ヘルツフリー 全国対応 出力切替3段階 タイマー機能付き ホワイト YRBD-HF171(W)",
+      "brand": "山善(YAMAZEN)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61oGnbVOUiL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 10409,
+      "discovery_score": 1,
+      "selection_score": 0.445,
+      "matched_comparison_axes": [],
+      "search_key": "山善(YAMAZEN) 電子レンジ 17L 単機能 一人暮らし 二人暮らし ターンテーブ"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0D7ZN2BQC",
+      "asin": "B0D7ZN2BQC",
+      "amazon_title": "電子レンジ調理器 ムテキレンジ レシピ付き 【正規品】 焼き物 炒め物 煮物 蒸し物 炊飯 焼き魚 A-77848",
+      "brand": "ブランド: ロッピング",
+      "image_url": "https://m.media-amazon.com/images/I/71+sYHgy3fL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 7980,
+      "discovery_score": 1,
+      "selection_score": 0.445,
+      "matched_comparison_axes": [],
+      "search_key": "ロッピング 電子レンジ調理器 ムテキレンジ レシピ付き 焼き物 炒め物 煮物"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0CYPVNTHB",
+      "asin": "B0CYPVNTHB",
+      "amazon_title": "MAXZEN 電子レンジ 17L ターンテーブル 西日本専用 一人暮らし 1人暮らし シンプル 単機能 700W プッシュボタン 黒 ブラック JM17BGZ01BK 60hz マクスゼン",
+      "brand": "MAXZENのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51i4lO3kUCL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 7980,
+      "discovery_score": 1,
+      "selection_score": 0.445,
+      "matched_comparison_axes": [],
+      "search_key": "MAXZEN 電子レンジ 17L ターンテーブル 西日本専用 一人暮らし 1人"
+    }
+  ]
+}
