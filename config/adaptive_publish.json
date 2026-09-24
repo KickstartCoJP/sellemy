@@ -3,7 +3,7 @@
   "timezone": "Asia/Tokyo",
   "initial_target_per_day": 24,
   "minimum_target_per_day": 1,
-  "maximum_target_per_day": 24,
+  "maximum_target_per_day": 48,
   "evaluation_window": 6,
   "green_streak_to_increase": 3,
   "poor_feedback_decrease_step": 1,
