@@ -34,6 +34,8 @@ class AdaptiveControllerTests(unittest.TestCase):
     def controller(self, root: Path, state: Path) -> AdaptivePublishController:
         config = json.loads((ROOT / 'config' / 'adaptive_publish.json').read_text(encoding='utf-8'))
         config['initial_target_per_day'] = 2
+        config.pop('target_seed_per_day', None)
+        config.pop('target_seed_feedback_count', None)
         config_path = state / 'adaptive_publish.test.json'
         config_path.write_text(json.dumps(config, ensure_ascii=False), encoding='utf-8')
         return AdaptivePublishController(root, state_dir=state, config_path=config_path)
@@ -115,6 +117,27 @@ class AdaptiveControllerTests(unittest.TestCase):
             state = controller.current_state()
             self.assertEqual(state['target_per_day'], 24)
             self.assertEqual(state['maximum_target_per_day'], 48)
+
+
+    def test_target_seed_preserves_current_target_when_cap_is_raised(self):
+        with tempfile.TemporaryDirectory() as directory:
+            state = Path(directory)
+            config = json.loads((ROOT / 'config' / 'adaptive_publish.json').read_text(encoding='utf-8'))
+            config['target_seed_per_day'] = 24
+            config['target_seed_feedback_count'] = 3
+            config_path = state / 'seeded.json'
+            config_path.write_text(json.dumps(config), encoding='utf-8')
+            controller = AdaptivePublishController(ROOT, state_dir=state, config_path=config_path)
+            controller.feedback_path.parent.mkdir(parents=True, exist_ok=True)
+            controller.feedback_path.write_text(
+                ''.join(json.dumps(feedback(f'pre-seed-{index}', 'green')) + '\n' for index in range(3)),
+                encoding='utf-8',
+            )
+            self.assertEqual(controller.current_state()['target_per_day'], 24)
+            for index in range(3):
+                controller.record_feedback(feedback(f'post-seed-{index}', 'green'))
+            self.assertEqual(controller.current_state()['target_per_day'], 25)
+            self.assertEqual(controller.current_state()['maximum_target_per_day'], 48)
 
     def test_three_per_day_uses_midnight_eight_and_sixteen(self):
         with tempfile.TemporaryDirectory() as directory:

@@ -286,12 +286,17 @@ class AdaptivePublishController:
     def derive_state(self, feedback: list[dict] | None = None) -> dict:
         records = self.feedback() if feedback is None else feedback
         recent = records[-int(self.config['evaluation_window']):]
-        target = int(self.config['initial_target_per_day'])
         minimum = int(self.config['minimum_target_per_day'])
         maximum = int(self.config['maximum_target_per_day'])
+        seed_count = int(self.config.get('target_seed_feedback_count', 0))
+        if not 0 <= seed_count <= len(records):
+            raise AdaptivePublishError('target seed feedback count is outside available feedback history')
+        target = int(self.config.get('target_seed_per_day', self.config['initial_target_per_day']))
+        if not minimum <= target <= maximum:
+            raise AdaptivePublishError('target seed per day is outside configured bounds')
         green_streak = 0
         minimum_red_streak = 0
-        for row in records:
+        for row in records[seed_count:]:
             grade = row.get('overall')
             if grade == 'green':
                 green_streak += 1

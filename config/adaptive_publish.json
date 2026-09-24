@@ -16,5 +16,7 @@
   "novelty_similarity_red": 0.75,
   "feedback_task_project_id": "BU-002",
   "feedback_task_role_id": "sellemy-ops",
-  "feedback_task_prefix": "TASK-BU002-QUALITY-FEEDBACK"
+  "feedback_task_prefix": "TASK-BU002-QUALITY-FEEDBACK",
+  "target_seed_per_day": 24,
+  "target_seed_feedback_count": 42
 }
