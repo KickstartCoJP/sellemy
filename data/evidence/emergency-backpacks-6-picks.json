@@ -1,0 +1,132 @@
+{
+  "slug": "emergency-backpacks-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/emergency-backpacks-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/emergency-backpacks-6-picks/emergency-backpacks-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "contents_volume",
+      "label": "収納容量・中身の充実度",
+      "keywords": [
+        "収納容量",
+        "セット内容",
+        "点数"
+      ]
+    },
+    {
+      "id": "weight_fit",
+      "label": "重さ・背負いやすさ",
+      "keywords": [
+        "重さ",
+        "背負いやすさ",
+        "家族向け"
+      ]
+    },
+    {
+      "id": "water_resistance",
+      "label": "防水性",
+      "keywords": [
+        "防水",
+        "耐久素材"
+      ]
+    },
+    {
+      "id": "price_range",
+      "label": "価格帯",
+      "keywords": [
+        "価格",
+        "コスパ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "water_resistance"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0GWQHPLB2",
+      "asin": "B0GWQHPLB2",
+      "amazon_title": "防災グッズ 32点 セット 【防災士監修×全品長期保管可能】 防 災バッグ 1人用 簡易トイレ 懐中電灯 高輝度 保存食 保存水 非常用リュック 防 災リュック 家族用 防水 避難セット 在宅避難 地震 台風 停電対策",
+      "brand": "Ｋｉｎｄｉｌのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61EVEQP2saL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 9979,
+      "discovery_score": 1,
+      "selection_score": 0.7,
+      "matched_comparison_axes": [
+        "water_resistance"
+      ],
+      "search_key": "Ｋｉｎｄｉｌ 防災グッズ 32点 セット 防 災バッグ 1人用 簡易トイレ 懐"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HH918TWJ",
+      "asin": "B0HH918TWJ",
+      "amazon_title": "【Amazon.co.jp限定】能美防災株式会社 MAME7816AM ぼうさいリュック おたすけフレンズ キャラクター巾着付 1個入",
+      "brand": "ブランド: 能美防災株式会社",
+      "image_url": "https://m.media-amazon.com/images/I/71f7Yak2IBL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 21780,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "能美防災株式会社 MAME7816AM ぼうさいリュック おたすけフレンズ キャラ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GXWHKQLW",
+      "asin": "B0GXWHKQLW",
+      "amazon_title": "防災のミカタ 防災グッズ 簡易トイレ セット リュック 2人用 68点 + 携帯トイレ 50回分 赤 非常用リュック 【日本防災ブランド】 大容量リュック 非常用 簡易 トイレ 保存食 保存水 防災のミカタ トイレの達人",
+      "brand": "防災のミカタのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51V7teAkYpL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "observed_price": 28492,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "防災のミカタ 防災グッズ 簡易トイレ セット リュック 2人用 68点 + 携"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0FKMTLW7F",
+      "asin": "B0FKMTLW7F",
+      "amazon_title": "LA･PITA 防災セットラピタプレミアム 1人用 【NS】 (カーキ) 防災リュック 防災グッズ セット 災害対策 非常用持ち出し袋 非常用トイレ 非常食 保存水",
+      "brand": "LA･PITAのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/8156glOBuAL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 19980,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "LA･PITA 防災セットラピタプレミアム 1人用 (カーキ) 防災リュック 防"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0CG5BB3GZ",
+      "asin": "B0CG5BB3GZ",
+      "amazon_title": "HIH 防災リュック 防災グッズ 防災セット 2人用 【福島県企業が開発 デザイナーズヘルメット】ハザードリュック 二人用 Special Edition シュラフ、ボウメット2個付き",
+      "brand": "HIHのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71glOCZ81YL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 39800,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "HIH 防災リュック 防災グッズ 防災セット 2人用 ハザードリュック"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0H52NQNZ7",
+      "asin": "B0H52NQNZ7",
+      "amazon_title": "【47点セット - 防災士監修】防災グッズ セット 防災セット 避難リュック 地震対策 大容量リュック 非常用 簡易 トイレ 災害グッズ 1人用 簡易トイレ 女性用 男性用 家 懐中電灯 寝袋 非常用持ち出し袋 防災用品",
+      "brand": "Sencelaのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71PdHkNg6DL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 10980,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [],
+      "search_key": "Sencela 防災グッズ セット 防災セット 避難リュック 地震対策 大容量リ"
+    }
+  ]
+}

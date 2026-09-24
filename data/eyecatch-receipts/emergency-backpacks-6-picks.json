@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-emergency-backpacks-6-picks-b1771a6f5b329599",
+  "request_sha256": "b1771a6f5b32959975a654689aeffc251171d3aa05b156573305beb3fbd9ad87",
+  "image_sha256": "79d0c7edb41d460df4ce66225cddca9547fbb701c53bb95037b2b1224fec2423",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-09-24T23:58:03.513095+00:00"
+}
