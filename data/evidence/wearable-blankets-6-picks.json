@@ -1,0 +1,127 @@
+{
+  "slug": "wearable-blankets-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/wearable-blankets-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/wearable-blankets-6-picks/wearable-blankets-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "warmth",
+      "label": "あたたかさ",
+      "keywords": [
+        "起毛素材",
+        "厚手",
+        "裏起毛"
+      ]
+    },
+    {
+      "id": "washability",
+      "label": "洗濯のしやすさ",
+      "keywords": [
+        "丸洗い可",
+        "速乾",
+        "毛玉になりにくい"
+      ]
+    },
+    {
+      "id": "design_size",
+      "label": "デザイン・サイズ展開",
+      "keywords": [
+        "袖付き",
+        "フリーサイズ",
+        "カラーバリエーション"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "washability"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0CDWMBJPJ",
+      "asin": "B0CDWMBJPJ",
+      "amazon_title": "[山善] 電気毛布 着る毛布 着るこたつ メンズ レディース 丸洗い可能 くるみケット ダニ対策機能 室温センサー タイマー付 オートオフ機能 ひざ掛け 掛毛布 敷毛布 YAPP-401AC(LV) ラベンダー",
+      "brand": "山善(YAMAZEN)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71VhiMnM0JL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 4423,
+      "discovery_score": 1,
+      "selection_score": 0.65,
+      "matched_comparison_axes": [
+        "washability"
+      ],
+      "search_key": "山善(YAMAZEN) 電気毛布 着る毛布 着るこたつ メンズ レディース 丸洗い可能"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HJ2V9PZM",
+      "asin": "B0HJ2V9PZM",
+      "amazon_title": "マイクロファイバー敷パット あったか 敷きパッド ふんわり なめらか 寝具",
+      "brand": "VELVECOUTUREのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/41FSIo3hVKL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2480,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "VELVECOUTURE マイクロファイバー敷パット あったか 敷きパッド ふんわり なめ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HCNL62G3",
+      "asin": "B0HCNL62G3",
+      "amazon_title": "[RASYN] 着る毛布【接触温感 約9mm両面ふわふわ】 男女兼用 ロング丈 冬用 ルームウェア 部屋着 パジャマ 着るブランケット 前開き 洗える",
+      "brand": "RASYNのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/81dawSA-AhL._AC_SY445_SX342_QL70_ML2_.jpg",
+      "observed_price": 3760,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "RASYN 着る毛布 男女兼用 ロング丈 冬用 ルームウェア 部屋着 パジャ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0H1HM67SV",
+      "asin": "B0H1HM67SV",
+      "amazon_title": "HiBox®【現役看護師監修】足温器 着るこたつ フットウォーマー コンセント式 着る電気毛布【25~60℃までフリー温度調節機能 1～12時間タイマー付き】ホット脚入れヒーター 電気足温器 ホット足入れヒーター 多機能加熱パンツ 安全 エコ 省エネ 全身を暖かく 洗濯ネット付き PSE認証済 (L(身長140-165CM))",
+      "brand": "HiBoxのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/712cMEoos7L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 9999,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "HiBox ® 足温器 着るこたつ フットウォーマー コンセント式 着る電気"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0FP94YMPY",
+      "asin": "B0FP94YMPY",
+      "amazon_title": "[DUNLOP] 着るブランケット フーディーブランケット 夏 冷房対策 保温 着る毛布 タオルケット ポンチョ ユニセックス ゲーミング マッスル ダンロップ",
+      "brand": "DUNLOPのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61fjXzBiQCL._AC_SY445_SX342_QL70_ML2_.jpg",
+      "observed_price": 6980,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "DUNLOP 着るブランケット フーディーブランケット 夏 冷房対策 保温 着"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B09JNTFRHF",
+      "asin": "B09JNTFRHF",
+      "amazon_title": "[HOME COCCI] 着る毛布 メンズ レディース 洗える 冬 ぽか暖 冬 ルームウェア 部屋着 あたたかい フランネル 静電気防止 ふんわり 丸洗い可能 極厚 マイクロファイバー 着丈125cm",
+      "brand": "HOME COCCIのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/512L8JD5etL._AC_SY445_SX342_QL70_ML2_.jpg",
+      "observed_price": 3980,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "washability"
+      ],
+      "search_key": "HOME COCCI 着る毛布 メンズ レディース 洗える 冬 ぽか暖 冬 ルームウェ"
+    }
+  ]
+}
