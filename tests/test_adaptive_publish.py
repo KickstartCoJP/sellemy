@@ -32,7 +32,11 @@ def feedback(event_id: str, grade: str, issues: list[str] | None = None) -> dict
 
 class AdaptiveControllerTests(unittest.TestCase):
     def controller(self, root: Path, state: Path) -> AdaptivePublishController:
-        return AdaptivePublishController(root, state_dir=state, config_path=ROOT / 'config' / 'adaptive_publish.json')
+        config = json.loads((ROOT / 'config' / 'adaptive_publish.json').read_text(encoding='utf-8'))
+        config['initial_target_per_day'] = 2
+        config_path = state / 'adaptive_publish.test.json'
+        config_path.write_text(json.dumps(config, ensure_ascii=False), encoding='utf-8')
+        return AdaptivePublishController(root, state_dir=state, config_path=config_path)
 
     def test_green_streak_increases_frequency_stepwise(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -86,14 +90,15 @@ class AdaptiveControllerTests(unittest.TestCase):
             self.assertEqual(len(controller.feedback()), 1)
 
 
-    def test_algorithmic_slots_cover_every_target_from_one_to_24(self):
+    def test_algorithmic_slots_cover_every_target_from_one_to_48(self):
         config = load_config(ROOT / 'config' / 'adaptive_publish.json')
-        for target in range(1, 25):
+        for target in range(1, 49):
             slots = publish_slots_for_target(config, target)
             self.assertEqual(len(slots), target)
             self.assertEqual(len(set(slots)), target)
         self.assertEqual(publish_slots_for_target(config, 2), ['00:00', '12:00'])
         self.assertEqual(publish_slots_for_target(config, 3), ['00:00', '08:00', '16:00'])
+        self.assertEqual(len(publish_slots_for_target(config, 48)), 48)
 
     def test_twelve_per_day_is_two_hour_spacing_and_24_is_hourly(self):
         config = load_config(ROOT / 'config' / 'adaptive_publish.json')
@@ -109,7 +114,7 @@ class AdaptiveControllerTests(unittest.TestCase):
                 controller.record_feedback(feedback(f'green-cap-{index}', 'green'))
             state = controller.current_state()
             self.assertEqual(state['target_per_day'], 24)
-            self.assertEqual(state['maximum_target_per_day'], 24)
+            self.assertEqual(state['maximum_target_per_day'], 48)
 
     def test_three_per_day_uses_midnight_eight_and_sixteen(self):
         with tempfile.TemporaryDirectory() as directory:

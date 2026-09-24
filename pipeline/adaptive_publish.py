@@ -120,8 +120,8 @@ def load_config(path: Path) -> dict:
     minimum = int(value['minimum_target_per_day'])
     initial = int(value['initial_target_per_day'])
     maximum = int(value['maximum_target_per_day'])
-    if not 1 <= minimum <= initial <= maximum <= 24:
-        raise AdaptivePublishError('adaptive publish target bounds must stay within 1..24 per day')
+    if not 1 <= minimum <= initial <= maximum <= 48:
+        raise AdaptivePublishError('adaptive publish target bounds must stay within 1..48 per day')
     heartbeat_minute = int(value['heartbeat_minute'])
     anchor_hour = int(value['slot_anchor_hour'])
     grace = int(value['slot_grace_minutes'])

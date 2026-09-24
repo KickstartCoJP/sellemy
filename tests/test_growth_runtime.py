@@ -29,7 +29,7 @@ class ScheduledRouteTests(unittest.TestCase):
         self.assertIn('<key>StartInterval</key><integer>60</integer>', plist)
         self.assertNotIn('<key>StartCalendarInterval</key>', plist)
         config = json.loads((ROOT / 'config' / 'adaptive_publish.json').read_text(encoding='utf-8'))
-        self.assertEqual(config['maximum_target_per_day'], 24)
+        self.assertEqual(config['maximum_target_per_day'], 48)
         self.assertEqual(config['heartbeat_minute'], 0)
         self.assertEqual(config['slot_anchor_hour'], 0)
         self.assertNotIn('publish_slots_by_target', config)
