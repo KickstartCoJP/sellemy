@@ -1,0 +1,156 @@
+{
+  "slug": "autumn-hair-irons-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/autumn-hair-irons-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/autumn-hair-irons-6-picks/autumn-hair-irons-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "temp_control",
+      "label": "温度調整の細かさ",
+      "keywords": [
+        "温度設定",
+        "低温",
+        "高温",
+        "℃刻み"
+      ]
+    },
+    {
+      "id": "plate_material",
+      "label": "プレート素材と髪へのダメージ",
+      "keywords": [
+        "セラミック",
+        "チタン",
+        "髪ダメージ",
+        "コーティング"
+      ]
+    },
+    {
+      "id": "versatility",
+      "label": "巻き髪・ストレート兼用性",
+      "keywords": [
+        "カール",
+        "ストレート",
+        "2way",
+        "兼用"
+      ]
+    },
+    {
+      "id": "weight_portability",
+      "label": "重さと携帯性",
+      "keywords": [
+        "軽量",
+        "コンパクト",
+        "持ち運び"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格帯",
+      "keywords": [
+        "価格",
+        "コスパ",
+        "予算"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "plate_material",
+      "versatility"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B01M8PCIEW",
+      "asin": "B01M8PCIEW",
+      "amazon_title": "Areti アレティ ヘアアイロン 20mm ピュアセラミック イノベーションモデル 急速加熱 ストレート カール 2way 前髪 メンズにも 24段階の温度調整 海外対応 i679PCPH-WH",
+      "brand": "Areti（アレティ）のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61MDkQQZ6zL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 10490,
+      "discovery_score": 1,
+      "selection_score": 0.88,
+      "matched_comparison_axes": [
+        "plate_material",
+        "versatility"
+      ],
+      "search_key": "Areti（アレティ） Areti アレティ ヘアアイロン 20mm ピュアセラミック"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0H93RDZR1",
+      "asin": "B0H93RDZR1",
+      "amazon_title": "カールヘアアイロン 32mm コテ ヘアアイロン ツヤシャインプレート 巻き髪 カール 耐熱ポーチ付き ストレート 海外対応",
+      "brand": "UR.SALONのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71fWi0kUSvL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 11996,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "versatility"
+      ],
+      "search_key": "UR.SALON カールヘアアイロン 32mm コテ ヘアアイロン ツヤシャインプ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GXVN3MZF",
+      "asin": "B0GXVN3MZF",
+      "amazon_title": "【サロン帰りのツヤ髪へ】ヤーマン 超音波アイロン トリートメントアイロン シャインプロ ダメージケア トリートメント 浸透 ヘアケア HC21GAM2 グレージュ ステッカー付【Amazon.co.jp限定】",
+      "brand": "ヤーマン(Ya-man)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/41vkM+gUYYL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 27500,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "ヤーマン(Ya-man) ヤーマン 超音波アイロン トリートメントアイロン シャインプロ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0G5WRNQQY",
+      "asin": "B0G5WRNQQY",
+      "amazon_title": "【うねりに負けない圧倒的ストレート髪へ】AURA ストレート ヘアアイロン プロ仕様 24mm カシミヤプレート搭載 18段階温度調整 220℃まで30秒 カラー褐色 パサつき 静電気 抑制 コード長さ2.5m ホワイト",
+      "brand": "ブランド: AURA THE ONE",
+      "image_url": "https://m.media-amazon.com/images/I/61MH7bCgWQL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 27500,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "versatility"
+      ],
+      "search_key": "AURA THE ONE AURA ストレート ヘアアイロン プロ仕様 24mm カシミヤ"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0FGDGJSDT",
+      "asin": "B0FGDGJSDT",
+      "amazon_title": "【公式EC限定＋1年延長保証付き】KINUJO ストレート ヘアアイロン 絹女 キヌージョ シルクプレート® LM225 ヘアケア スタイリング デジタル温度表記 オートオフ 高速温度上昇 お手入れ簡単",
+      "brand": "KINUJOのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51neKELxadL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 24200,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "versatility"
+      ],
+      "search_key": "KINUJO ストレート ヘアアイロン 絹女 キヌージョ シルクプレート® L"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0D9YCNLQ7",
+      "asin": "B0D9YCNLQ7",
+      "amazon_title": "ケアレクト スムースケアアイロン 25mm by pluseau プリュスオー ストレートアイロン ローズミスト 耐熱ポーチ付",
+      "brand": "carelectのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/615fsiidQsL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 17600,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "versatility"
+      ],
+      "search_key": "carelect ケアレクト スムースケアアイロン 25mm by pluseau"
+    }
+  ]
+}
