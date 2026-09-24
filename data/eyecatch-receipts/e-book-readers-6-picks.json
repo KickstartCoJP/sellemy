@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-e-book-readers-6-picks-4c9759c4c1646111",
+  "request_sha256": "4c9759c4c16461114af91da1e8367e401fd5ced0d00a38eb43f2e397040f5071",
+  "image_sha256": "ed2cd4f41cf91728cde7262b3c48d2eec0a543280294e3c3be0c3e54e392fb64",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-09-24T11:33:10.858680+00:00"
+}

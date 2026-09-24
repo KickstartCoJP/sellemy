@@ -1,0 +1,147 @@
+{
+  "slug": "e-book-readers-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/e-book-readers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/e-book-readers-6-picks/e-book-readers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "display",
+      "label": "画面サイズ・解像度",
+      "keywords": [
+        "インチ",
+        "解像度",
+        "フロントライト"
+      ]
+    },
+    {
+      "id": "battery",
+      "label": "防水・バッテリー持続",
+      "keywords": [
+        "防水",
+        "バッテリー",
+        "週間"
+      ]
+    },
+    {
+      "id": "storage",
+      "label": "ストレージ容量",
+      "keywords": [
+        "GB",
+        "容量",
+        "冊数目安"
+      ]
+    },
+    {
+      "id": "store",
+      "label": "対応ストアの豊富さ",
+      "keywords": [
+        "Kindleストア",
+        "楽天Kobo",
+        "対応形式"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "battery",
+      "display",
+      "storage"
+    ],
+    "brand_count": 4,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0CX8Y3CMG",
+      "asin": "B0CX8Y3CMG",
+      "amazon_title": "Amazon Kindle Colorsoft シグニチャーエディション | 32GBストレージ、防水、7インチカラーディスプレイ、色調調節ライト、最大8週間持続バッテリー、広告無し、メタリックブラック (2025年発売)",
+      "brand": "ブランド: Amazon",
+      "image_url": "https://m.media-amazon.com/images/I/818j1AMHBIL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 44980,
+      "discovery_score": 1,
+      "selection_score": 1.06,
+      "matched_comparison_axes": [
+        "battery",
+        "display",
+        "storage"
+      ],
+      "search_key": "Amazon Kindle Colorsoft シグニチャーエディション |"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0GD6Q4HJN",
+      "asin": "B0GD6Q4HJN",
+      "amazon_title": "Bigme B7 Pro 7インチ 電子書籍リーダー, 8GB RAM/256GB ROM, 4G LTE対応, Android 14搭載 カラー電子ペーパーディスプレイ, Dimensity 1080 オクタコアプロセッサー (緑)",
+      "brand": "Bigmeのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61G3xR9XsjL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 69000,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "display",
+        "storage"
+      ],
+      "search_key": "Bigme B7 Pro 7インチ 電子書籍リーダー, 8GB RAM/25"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0H7RCX7N3",
+      "asin": "B0H7RCX7N3",
+      "amazon_title": "Atyhao 5.7インチHD画面搭載電子書籍リーダー 8MPカメラ内蔵スピーカー付き 16GB対応Android 8.1 Wi-Fi Bluetooth GPS対応 マルチメディア27",
+      "brand": "Atyhaoのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61fa8ccNIgL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 9204,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [
+        "display",
+        "storage"
+      ],
+      "search_key": "Atyhao 5.7インチHD画面搭載電子書籍リーダー 8MPカメラ内蔵スピー"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0GY4MWDV9",
+      "asin": "B0GY4MWDV9",
+      "amazon_title": "XTEINK X3 電子書籍リーダー 3.7インチ E-Ink搭載 58g軽量 カードサイズ 16GB内蔵 SD対応 ミストレグレー",
+      "brand": "XTEINKのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51FaBHkohdL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 11119,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [
+        "display",
+        "storage"
+      ],
+      "search_key": "XTEINK X3 電子書籍リーダー 3.7インチ E-Ink搭載 58g軽量"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0FX88JH7K",
+      "asin": "B0FX88JH7K",
+      "amazon_title": "【セット買い】Amazon Kindle Colorsoft シグニチャーエディション【純正 植物性レザーカバー (ブラック) + 保護フィルム セット】",
+      "brand": "ブランド: Amazon",
+      "image_url": "https://m.media-amazon.com/images/I/818j1AMHBIL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 52540,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [],
+      "search_key": "Amazon Kindle Colorsoft シグニチャーエディション"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0FX87SND3",
+      "asin": "B0FX87SND3",
+      "amazon_title": "【セット買い】Amazon Kindle Colorsoft【純正 植物性レザーカバー (ブラック) + 保護フィルム セット】",
+      "brand": "ブランド: Amazon",
+      "image_url": "https://m.media-amazon.com/images/I/71TSGT8v5mL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 47209,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [],
+      "search_key": "Amazon Kindle Colorsoft"
+    }
+  ]
+}
