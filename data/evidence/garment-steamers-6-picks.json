@@ -1,0 +1,131 @@
+{
+  "slug": "garment-steamers-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/garment-steamers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/garment-steamers-6-picks/garment-steamers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "steam_power",
+      "label": "スチーム力・立ち上がり時間",
+      "keywords": [
+        "立ち上がり",
+        "スチーム量",
+        "しわ伸ばし"
+      ]
+    },
+    {
+      "id": "portability",
+      "label": "携帯性・収納",
+      "keywords": [
+        "コンパクト",
+        "軽量",
+        "持ち運び"
+      ]
+    },
+    {
+      "id": "tank_capacity",
+      "label": "タンク容量・連続使用時間",
+      "keywords": [
+        "タンク容量",
+        "連続使用時間",
+        "給水"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "portability",
+      "steam_power"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0H1RWR2NC",
+      "asin": "B0H1RWR2NC",
+      "amazon_title": "CPWORLD スチームアイロン 【2026アップグレード版 超軽量】衣類スチーマー 小型 2段階スチーム量調節 ハンガー掛け可能 シワ伸ばし パワフル連続スチーム 除菌・脱臭 130ml 携帯アイロン ハンディアイロン 家庭・旅行・出張用",
+      "brand": "CPWORLDのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61sQSbG9n6L._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 2398,
+      "discovery_score": 1,
+      "selection_score": 0.855,
+      "matched_comparison_axes": [
+        "portability",
+        "steam_power"
+      ],
+      "search_key": "CPWORLD スチームアイロン 衣類スチーマー 小型 2段階スチーム量調節 ハ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0GQQCQ6YL",
+      "asin": "B0GQQCQ6YL",
+      "amazon_title": "one 吸着式衣類スチーマー スチームアイロン 10秒即熱 5000Pa強力吸引 アイロン台いらず かけたまま 片手操作 3段階独立調整可能 自立式 ハンディス 除菌・脱臭・花粉対策 PSE認証済み",
+      "brand": "AIRMORNのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61rtujdCC9L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 19980,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "AIRMORN one 吸着式衣類スチーマー スチームアイロン 10秒即熱 50"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0FH9V9VHY",
+      "asin": "B0FH9V9VHY",
+      "amazon_title": "衣類スチーマー ハンガースチーマー スチームアイロン ハンガーにかけたまま アイロンボード付き プロ仕様 日本語説明書付き",
+      "brand": "Hapyvergoのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61rQLe-DfqL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 24900,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "Hapyvergo 衣類スチーマー ハンガースチーマー スチームアイロン ハンガーに"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0HB6R9RYL",
+      "asin": "B0HB6R9RYL",
+      "amazon_title": "スチームアイロン 【業界トップクラスの蒸気量】 28g/min 衣類スチーマー 2026革新版",
+      "brand": "eueのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71ZzySfXWlL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 12000,
+      "discovery_score": 1,
+      "selection_score": 0.445,
+      "matched_comparison_axes": [],
+      "search_key": "eue スチームアイロン 28g/min 衣類スチーマー 2026革新版"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0FM77LY5Z",
+      "asin": "B0FM77LY5Z",
+      "amazon_title": "アイロン スチームアイロン 【3WAY多機能モデル・10秒速熱・折りたたみ式】 衣類スチーマー シワ伸ばし LEDディスプレイ かけたまま ハンドル 180°回転 150℃高温 除菌 脱臭 コンパクト 軽量 小型 ハンディ 家庭 出張 オフェンス 日本語説明書",
+      "brand": "ブランド: Runaora",
+      "image_url": "https://m.media-amazon.com/images/I/61Fl+XbNx1L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3580,
+      "discovery_score": 1,
+      "selection_score": 0.445,
+      "matched_comparison_axes": [
+        "portability"
+      ],
+      "search_key": "Runaora アイロン スチームアイロン 衣類スチーマー シワ伸ばし LEDデ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0FFBBXSQV",
+      "asin": "B0FFBBXSQV",
+      "amazon_title": "衣類スチーマー Pursay かけたまま スチームアイロン 100-240V 海外対応【濡れずにすぐに着られる×大量超微細スチーム】 ハンディ コンパクト シワ伸ばし 服 アイロン パワフル連続 スチーム 120ml 水タンク 700g 軽量 ドライアイロン 脱臭 除菌 ハンガーにかけたまま 便利グッズ 海外旅行 出張 旅行 自宅 プレゼント",
+      "brand": "Pursayのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71FT6UteAjL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 9999,
+      "discovery_score": 1,
+      "selection_score": 0.445,
+      "matched_comparison_axes": [
+        "portability"
+      ],
+      "search_key": "Pursay 衣類スチーマー Pursay かけたまま スチームアイロン 10"
+    }
+  ]
+}
