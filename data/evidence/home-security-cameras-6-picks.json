@@ -1,0 +1,132 @@
+{
+  "slug": "home-security-cameras-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/home-security-cameras-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/home-security-cameras-6-picks/home-security-cameras-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "image",
+      "label": "画質・視野角",
+      "keywords": [
+        "解像度",
+        "夜間撮影",
+        "視野角"
+      ]
+    },
+    {
+      "id": "app",
+      "label": "スマホ連携・通知",
+      "keywords": [
+        "アプリ通知",
+        "リアルタイム確認"
+      ]
+    },
+    {
+      "id": "power",
+      "label": "電源方式",
+      "keywords": [
+        "電池式",
+        "コンセント式",
+        "バッテリー"
+      ]
+    },
+    {
+      "id": "storage",
+      "label": "保存方式",
+      "keywords": [
+        "クラウド保存",
+        "SDカード"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "image"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0GBV2TJP7",
+      "asin": "B0GBV2TJP7",
+      "amazon_title": "Tapo(タポ) 防犯カメラ 屋外 24時間監視 センサーライト1500ルーメン搭載 自動点灯 2K 300万画素 パンチルト360° AI検知 フルカラー夜間撮影 IP65 双方向通話 TP-Link Tapo C710/A",
+      "brand": "Tapo(タポ)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/41jWPLUevxL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 15815,
+      "discovery_score": 1,
+      "selection_score": 0.675,
+      "matched_comparison_axes": [
+        "image"
+      ],
+      "search_key": "Tapo(タポ) 防犯カメラ 屋外 24時間監視 センサーライト1500ルーメン搭"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0FD9WLSCJ",
+      "asin": "B0FD9WLSCJ",
+      "amazon_title": "Anker eufy (ユーフィ) 4G LTE Cam S330",
+      "brand": "Eufy (ユーフィ)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51HPn1DcYTL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 39390,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "Eufy (ユーフィ) Anker eufy (ユーフィ) 4G LTE Cam S33"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0DDBXNM9F",
+      "asin": "B0DDBXNM9F",
+      "amazon_title": "YESKAMOO【迫力の12インチ大画面・一体型モニター付き】ワイヤレス 防犯カメラ 屋外 4台セット 500万画素 Wi-Fi6対応 IP66",
+      "brand": "YESKAMOOのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71YC-w9FczL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 54999,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "YESKAMOO ワイヤレス 防犯カメラ 屋外 4台セット 500万画素 Wi-F"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0BRZZJYR4",
+      "asin": "B0BRZZJYR4",
+      "amazon_title": "【400万画素・電源不要】防犯対策助成金あり Hiseeu ソーラーパネルカメラ セット 10インチLCD液晶モニタ一体型NVR 8000mAh 遠隔監視 防水等級ip65 AI動体検知 屋内/屋外 セキュリティ 防犯カメラ 常時録画可能 2.4ｇのルーターに対応可能 (400万画素カメラ4台＋10イン液晶一体型NVR+1TBHDD内蔵)",
+      "brand": "Hiseeuのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71SqmIW88gL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 46800,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "Hiseeu 防犯対策助成金あり Hiseeu ソーラーパネルカメラ セット"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0B5GSQJ67",
+      "asin": "B0B5GSQJ67",
+      "amazon_title": "【500万画素・双方向音声】 防犯カメラ ワイヤレスSovmiku 10インチ超 モニタ一体型NVR 5MPワイヤレスカメラ4台セット 10チャンネルまで増設可 遠隔監視 防水等級ip66 AI動体検知 屋内/屋外 セキュリティ 防犯カメラ (500万画素カメラ4台＋10チャンネル5MP対応の録画機＋1TB HDD)",
+      "brand": "SOVMIKUのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71hq6VAeD9L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 41800,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "SOVMIKU 防犯カメラ ワイヤレスSovmiku 10インチ超 モニタ一体型"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B093CZ82Y1",
+      "asin": "B093CZ82Y1",
+      "amazon_title": "防犯カメラ 屋外 500万画素 13型液晶モニター付き 2台 家庭用 無線 監視カメラ wifi",
+      "brand": "Jennovのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/716YtjqClQL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 34990,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "Jennov 防犯カメラ 屋外 500万画素 13型液晶モニター付き 2台 家"
+    }
+  ]
+}
