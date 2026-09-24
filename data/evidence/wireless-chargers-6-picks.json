@@ -1,0 +1,146 @@
+{
+  "slug": "wireless-chargers-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/wireless-chargers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/wireless-chargers-6-picks/wireless-chargers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "charging_speed",
+      "label": "充電スピード・出力",
+      "keywords": [
+        "15W",
+        "MagSafe",
+        "Qi2"
+      ]
+    },
+    {
+      "id": "compatibility",
+      "label": "対応機種・規格",
+      "keywords": [
+        "iPhone対応",
+        "Android対応",
+        "ケース対応"
+      ]
+    },
+    {
+      "id": "form_factor",
+      "label": "形状・携帯性",
+      "keywords": [
+        "スタンド型",
+        "パッド型",
+        "3in1"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格・コスパ",
+      "keywords": [
+        "価格",
+        "コスパ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "charging_speed",
+      "form_factor"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0FRYYS8RD",
+      "asin": "B0FRYYS8RD",
+      "amazon_title": "HOUOA Qi2 ワイヤレス充電器 3in1 Magsafe充電器 折り畳み式【Qi2 PSE 公式認証】15W超低温 マグネット式 マグセーフ充電器 同時に3つのデバイス充電 iPhone/Apple Watch/Air/podsに対応 携帯に便利【30W PD3.0アダプター付属】ブラック",
+      "brand": "HOUOAのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61EHLrPztgL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 4590,
+      "discovery_score": 1,
+      "selection_score": 0.79,
+      "matched_comparison_axes": [
+        "charging_speed",
+        "form_factor"
+      ],
+      "search_key": "HOUOA Qi2 ワイヤレス充電器 3in1 Magsafe充電器 折り畳"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HF7HDD3Z",
+      "asin": "B0HF7HDD3Z",
+      "amazon_title": "TEPNICAL ワイヤレス充電器 【1 台 2 役・ 8mm極薄設計・2026 新登場】/ WPC Qi2 公式認証取得/最大 25W 爆速急速充電】マグネット式スマホスタンド 航空級アルミ放熱 0～90° 無段階角度調整 傷つき/滑り/落下全方位ガード 4重安全保護・低温制御・金属異物検知搭載",
+      "brand": "TEPNICALのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/611Bv2xA5mL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2999,
+      "discovery_score": 1,
+      "selection_score": 0.48,
+      "matched_comparison_axes": [
+        "charging_speed"
+      ],
+      "search_key": "TEPNICAL ワイヤレス充電器 / WPC Qi2 公式認証取得/最大 25W"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0H3NSSL72",
+      "asin": "B0H3NSSL72",
+      "amazon_title": "LISEN Qi2認証 25W ワイヤレス充電器 MagSafe対応 マグネット式 【静音冷却ファン内蔵】 AVS対応・PSE認証済み45W充電器付属",
+      "brand": "LISENのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71TIg74vhbL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 4799,
+      "discovery_score": 1,
+      "selection_score": 0.48,
+      "matched_comparison_axes": [
+        "charging_speed"
+      ],
+      "search_key": "LISEN Qi2認証 25W ワイヤレス充電器 MagSafe対応 マグネ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0FMDWNWNH",
+      "asin": "B0FMDWNWNH",
+      "amazon_title": "Philips (フィリップス) 3-in-1ワイヤレス充電器 Qi2対応 最大15W スマホ/ウォッチ/イヤホン対応 ブラック DLK3548Q",
+      "brand": "PHILIPSのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61vc8pHaS+L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 8880,
+      "discovery_score": 1,
+      "selection_score": 0.48,
+      "matched_comparison_axes": [
+        "charging_speed"
+      ],
+      "search_key": "PHILIPS (フィリップス) 3-in-1ワイヤレス充電器 Qi2対応 最大"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0FHQDKX7G",
+      "asin": "B0FHQDKX7G",
+      "amazon_title": "ESR 3in1 充電器 Qi2.2対応25W magsafe充電器（CryoBoost搭載） 折りたたみ式スマホ冷却 ワイヤレス充電器 急速充電",
+      "brand": "ESRのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71FpQBYBE9L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 14999,
+      "discovery_score": 1,
+      "selection_score": 0.48,
+      "matched_comparison_axes": [
+        "charging_speed",
+        "form_factor"
+      ],
+      "search_key": "ESR 3in1 充電器 Qi2.2対応25W magsafe充電器（C"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0F2T7VH5Z",
+      "asin": "B0F2T7VH5Z",
+      "amazon_title": "THREEKEY Qi2認証 ワイヤレス充電器 4in1 マグネット式 15W急速充電 [MFi認証] Apple Watch/iPhone 18-12 /AirPods 対応 充電ステーション 雰囲気ライト付き",
+      "brand": "THREEKEYのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71UIn-tmcVL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 12999,
+      "discovery_score": 1,
+      "selection_score": 0.48,
+      "matched_comparison_axes": [
+        "charging_speed"
+      ],
+      "search_key": "THREEKEY Qi2認証 ワイヤレス充電器 4in1 マグネット式 15W急速"
+    }
+  ]
+}
