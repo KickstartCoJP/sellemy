@@ -1,0 +1,145 @@
+{
+  "slug": "autumn-winter-face-masks-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/autumn-winter-face-masks-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/autumn-winter-face-masks-6-picks/autumn-winter-face-masks-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "filter",
+      "label": "フィルター性能",
+      "keywords": [
+        "飛沫カット率",
+        "花粉ブロック",
+        "不織布"
+      ]
+    },
+    {
+      "id": "comfort",
+      "label": "素材・肌触り",
+      "keywords": [
+        "肌触り",
+        "蒸れにくさ",
+        "立体構造"
+      ]
+    },
+    {
+      "id": "size",
+      "label": "サイズ展開",
+      "keywords": [
+        "小さめ",
+        "ふつう",
+        "子供用"
+      ]
+    },
+    {
+      "id": "value",
+      "label": "枚数・コスパ",
+      "keywords": [
+        "枚数",
+        "コスパ",
+        "個包装"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "filter",
+      "size",
+      "value"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0B9G7N1QS",
+      "asin": "B0B9G7N1QS",
+      "amazon_title": "白元アース 快適ガードプロ マスク ふつうサイズ 30枚入 ノーズクッション付きでスキマ徹底ガード JIS規格適合 プリーツタイプ 耳が痛くならない幅広耳ひも 不織布 花粉症",
+      "brand": "快適ガードプロのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/81+YkmvbxlL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1891,
+      "discovery_score": 1,
+      "selection_score": 0.84,
+      "matched_comparison_axes": [
+        "filter",
+        "size"
+      ],
+      "search_key": "快適ガードプロ 白元アース 快適ガードプロ マスク ふつうサイズ 30枚入 ノー"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0BP5FKX7N",
+      "asin": "B0BP5FKX7N",
+      "amazon_title": "[シオノギヘルスケア] 公式 パイロンPL Proマスク 日本製マスク 息がしやすいマスク 個包装 (立体型[18枚入×1箱])",
+      "brand": "シオノギヘルスケアのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71dM1l6GJaL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3069,
+      "discovery_score": 1,
+      "selection_score": 0.61,
+      "matched_comparison_axes": [
+        "value"
+      ],
+      "search_key": "シオノギヘルスケア 公式 パイロンPL Proマスク 日本製マスク 息がしやすいマス"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0CX8K9RFN",
+      "asin": "B0CX8K9RFN",
+      "amazon_title": "[e eirene] 息楽 マスク 不織布 ホワイト 大容量 3層フィルター 65枚入り 10箱セット (ちいさめ)",
+      "brand": "e eireneのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/712vdWitSuL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 4300,
+      "discovery_score": 1,
+      "selection_score": 0.48,
+      "matched_comparison_axes": [
+        "filter"
+      ],
+      "search_key": "e eirene 息楽 マスク 不織布 ホワイト 大容量 3層フィルター 65枚入"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0B5X5RXDR",
+      "asin": "B0B5X5RXDR",
+      "amazon_title": "【公式 DRC医薬】[+10]ハイドロ銀チタン(R)マスク 10袋セット",
+      "brand": "ブランド: DR.C医薬",
+      "image_url": "https://m.media-amazon.com/images/I/81PNS+tWxpL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 3960,
+      "discovery_score": 1,
+      "selection_score": 0.48,
+      "matched_comparison_axes": [],
+      "search_key": "DR.C医薬 ハイドロ銀チタン(R)マスク 10袋セット"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B09SC18XJB",
+      "asin": "B09SC18XJB",
+      "amazon_title": "風邪・花粉用 プリーツタイプ 不織布マスク 日本製 やや大きめサイズ 50枚入 〔PM2.5対応 日本製 ノーズフィットつき〕 (99% ウィルス飛沫カットフィルタ) ユニチャーム 3箱セット",
+      "brand": "ブランド: 超快適マスク",
+      "image_url": "https://m.media-amazon.com/images/I/510-4EkuVoL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 5700,
+      "discovery_score": 1,
+      "selection_score": 0.48,
+      "matched_comparison_axes": [
+        "filter"
+      ],
+      "search_key": "超快適マスク 風邪・花粉用 プリーツタイプ 不織布マスク 日本製 やや大きめサ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B08NP96D4M",
+      "asin": "B08NP96D4M",
+      "amazon_title": "【JIS規格医療用クラスⅢ合格】 全国マスク工業会会員 ナノAG+AIRマスク 日本製 使い捨て 不織布マスク シルク加工 銀イオン抗菌 高性能フィルター 耳にやさしい耳紐 花粉 PM2.5 99％カット 男女兼用 白色 普通サイズ 50枚入",
+      "brand": "ナノＡＧ＋のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61joAkKI7aS._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3980,
+      "discovery_score": 1,
+      "selection_score": 0.48,
+      "matched_comparison_axes": [
+        "filter"
+      ],
+      "search_key": "ナノＡＧ＋ 全国マスク工業会会員 ナノAG+AIRマスク 日本製 使い捨て"
+    }
+  ]
+}
