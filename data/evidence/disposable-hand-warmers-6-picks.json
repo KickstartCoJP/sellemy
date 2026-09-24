@@ -1,0 +1,141 @@
+{
+  "slug": "disposable-hand-warmers-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/disposable-hand-warmers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/disposable-hand-warmers-6-picks/disposable-hand-warmers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "heat",
+      "label": "発熱温度・持続時間",
+      "keywords": [
+        "最高温度",
+        "持続時間",
+        "じんわり"
+      ]
+    },
+    {
+      "id": "type",
+      "label": "貼るタイプ・貼らないタイプ",
+      "keywords": [
+        "貼るタイプ",
+        "貼らないタイプ",
+        "ポケット用"
+      ]
+    },
+    {
+      "id": "size",
+      "label": "サイズ・携帯性",
+      "keywords": [
+        "レギュラーサイズ",
+        "ミニサイズ",
+        "靴用"
+      ]
+    },
+    {
+      "id": "cost",
+      "label": "コスパ・枚数",
+      "keywords": [
+        "枚数",
+        "価格",
+        "まとめ買い"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "cost",
+      "heat",
+      "size"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0HG5XMTC1",
+      "asin": "B0HG5XMTC1",
+      "amazon_title": "貼れないカイロ 60個×2箱 合計120個 使い捨てカイロ 持続時間16時間 日本製 寒さ対策 通勤 通学 屋外作業 まとめ買い",
+      "brand": "ブランド: Goodnetta",
+      "image_url": "https://m.media-amazon.com/images/I/71aDB2FDDKL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3890,
+      "discovery_score": 1,
+      "selection_score": 0.83,
+      "matched_comparison_axes": [
+        "cost",
+        "heat"
+      ],
+      "search_key": "Goodnetta 貼れないカイロ 60個×2箱 合計120個 使い捨てカイロ 持続"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0DK2W8B9V",
+      "asin": "B0DK2W8B9V",
+      "amazon_title": "使い捨てカイロ 貼る ほん わか 低 温タイプ 10時間持続 ミニサイズ 30枚入り × 1個 冷え性 キャンプ",
+      "brand": "ブランド: ノーブランド品",
+      "image_url": "https://m.media-amazon.com/images/I/7197q9L80NL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1980,
+      "discovery_score": 1,
+      "selection_score": 0.7,
+      "matched_comparison_axes": [
+        "size"
+      ],
+      "search_key": "ノー品 使い捨てカイロ 貼る ほん わか 低 温タイプ 10時間持続 ミ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B09K43DP28",
+      "asin": "B09K43DP28",
+      "amazon_title": "アイリスオーヤマ 使い捨てカイロ 貼る 240枚 日本製 ぽかぽか家族",
+      "brand": "ブランド: ぽかぽか家族",
+      "image_url": "https://m.media-amazon.com/images/I/6195u9RmF4L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 5280,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "ぽかぽか家族 アイリスオーヤマ 使い捨てカイロ 貼る 240枚 日本製 ぽかぽ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0CHDX2J3L",
+      "asin": "B0CHDX2J3L",
+      "amazon_title": "【Amazon.co.jp限定】 命の母カイロ おなか用 【公式】 じんわり温まる 衣類に貼る 10個入×4個 冷え対策に (おまけ付き)",
+      "brand": "命の母カイロのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/81Jz7D8K0gL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1629,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [
+        "heat"
+      ],
+      "search_key": "命の母カイロ おなか用 じんわり温まる 衣類に貼る 10個入×4個 冷え対策に"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B09DQ6CVHC",
+      "asin": "B09DQ6CVHC",
+      "amazon_title": "アイリスオーヤマ 使い捨て低温カイロ ミニ 貼る 30枚 日本製",
+      "brand": "ぽかぽか家族のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/7187C8hG3oL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 950,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [],
+      "search_key": "ぽかぽか家族 アイリスオーヤマ 使い捨て低温カイロ ミニ 貼る 30枚 日本製"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B01KWWQDGA",
+      "asin": "B01KWWQDGA",
+      "amazon_title": "温熱シート じかばり 直貼 肩・首用 12枚入 コリ 痛みに 温熱が効く 久光製薬",
+      "brand": "久光製薬のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51Z9jcvfy5L._SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 748,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [],
+      "search_key": "久光製薬 温熱シート じかばり 直貼 肩・首用 12枚入 コリ 痛みに 温"
+    }
+  ]
+}
