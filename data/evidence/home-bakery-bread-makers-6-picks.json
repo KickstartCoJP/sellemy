@@ -1,0 +1,142 @@
+{
+  "slug": "home-bakery-bread-makers-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/home-bakery-bread-makers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/home-bakery-bread-makers-6-picks/home-bakery-bread-makers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "menu_variety",
+      "label": "メニュー数・自動調理機能",
+      "keywords": [
+        "自動メニュー",
+        "米粉パン対応",
+        "もち・ジャム機能"
+      ]
+    },
+    {
+      "id": "capacity_size",
+      "label": "容量・設置サイズ",
+      "keywords": [
+        "一斤サイズ",
+        "大容量",
+        "コンパクト"
+      ]
+    },
+    {
+      "id": "maintenance_ease",
+      "label": "お手入れのしやすさ",
+      "keywords": [
+        "パーツ洗いやすさ",
+        "こびりつきにくさ"
+      ]
+    },
+    {
+      "id": "price_range",
+      "label": "価格帯",
+      "keywords": [
+        "エントリー",
+        "高機能モデル",
+        "コスパ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "capacity_size",
+      "menu_variety"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0HJTCKKML",
+      "asin": "B0HJTCKKML",
+      "amazon_title": "パンこね機 家庭用ホームベーカリー 5L/7L大容量 自動こね恒温発酵 タッチパネル操作 分離式ボウル パン生地ピザうどん餃子皮餅つき対応 (5L)",
+      "brand": "ブランド: UHEU",
+      "image_url": "https://m.media-amazon.com/images/I/51R9A6CJtLL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 11888,
+      "discovery_score": 1,
+      "selection_score": 0.7,
+      "matched_comparison_axes": [
+        "capacity_size"
+      ],
+      "search_key": "UHEU パンこね機 家庭用ホームベーカリー 5L/7L大容量 自動こね恒"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0BZVXG268",
+      "asin": "B0BZVXG268",
+      "amazon_title": "アイリスオーヤマ ホームベーカリー 27メニュー レシピBOOKメニュー50種 レシピ 付き パン生地 うどん そば 米粉パン対応 ジャム 甘酒 1斤 ピザ 餅つき機 プレゼント ミトンセット IBM-010-C サンドベージュ",
+      "brand": "アイリスオーヤマ(IRIS OHYAMA)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61Dxkcxt+AL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 11680,
+      "discovery_score": 1,
+      "selection_score": 0.65,
+      "matched_comparison_axes": [
+        "menu_variety"
+      ],
+      "search_key": "アイリスオーヤマ(IRIS OHYAMA) アイリスオーヤマ ホームベーカリー 27メニュー レ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0FXG1FFXQ",
+      "asin": "B0FXG1FFXQ",
+      "amazon_title": "[TVで紹介されました]【BRUNO監修】レンジメート プロ バイ ブルーノ RANGEMATE PRO by BRUNO (ブルーグレー, スクエア型)",
+      "brand": "Rangemateのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61FDgQVoQPL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 15400,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "Rangemate レンジメート プロ バイ ブルーノ RANGEMATE PRO"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0HH8ZY9Y6",
+      "asin": "B0HH8ZY9Y6",
+      "amazon_title": "5L/7L大容量 全自動 パンこね機 発酵対応 ステンレスボウル タッチ操作 タイマー付き 家庭用 ホームベーカリー もちつき機 ニーダー (5L)",
+      "brand": "ブランド: YQW",
+      "image_url": "https://m.media-amazon.com/images/I/61NOGhDNesL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 10799,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [
+        "capacity_size"
+      ],
+      "search_key": "YQW 5L/7L大容量 全自動 パンこね機 発酵対応 ステンレスボウル"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0HGF9NK94",
+      "asin": "B0HGF9NK94",
+      "amazon_title": "パンこね機 5/7L大容量 全自動 ホームベーカリー ステンレス 生地こね機 兼用 タイマー付き タッチパネル 簡単操作 家庭用 パンメーカー もちつき機 ニーダー (5L)",
+      "brand": "ブランド: TPPT",
+      "image_url": "https://m.media-amazon.com/images/I/61oWoPiO0qL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 10288,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [
+        "capacity_size"
+      ],
+      "search_key": "TPPT パンこね機 5/7L大容量 全自動 ホームベーカリー ステンレス"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0H94DS5KY",
+      "asin": "B0H94DS5KY",
+      "amazon_title": "Kanuriパンこね機 5/7L大容量 全自動 ホームベーカリー ステンレス 生地こね機 兼用 タイマー付き タッチパネル 簡単操作 家庭用 パンメーカー もちつき機 ニーダー (7Lスマートニーディングマシン)",
+      "brand": "ブランド: Kanuri",
+      "image_url": "https://m.media-amazon.com/images/I/412zxhAa7eL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 11100,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [
+        "capacity_size"
+      ],
+      "search_key": "Kanuri パンこね機 5/7L大容量 全自動 ホームベーカリー ステンレス"
+    }
+  ]
+}
