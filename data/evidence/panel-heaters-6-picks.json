@@ -1,0 +1,133 @@
+{
+  "slug": "panel-heaters-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/panel-heaters-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/panel-heaters-6-picks/panel-heaters-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "heating_method",
+      "label": "発熱方式",
+      "keywords": [
+        "パネルヒーター",
+        "オイルヒーター",
+        "遠赤外線"
+      ]
+    },
+    {
+      "id": "safety",
+      "label": "安全機能",
+      "keywords": [
+        "転倒オフ",
+        "低温やけど防止",
+        "チャイルドロック"
+      ]
+    },
+    {
+      "id": "size_placement",
+      "label": "サイズ・設置場所",
+      "keywords": [
+        "卓上",
+        "縦型",
+        "省スペース"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "heating_method",
+      "safety"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0FP4PJ8XB",
+      "asin": "B0FP4PJ8XB",
+      "amazon_title": "TOKAIZ パネルヒーター 足元 デスク 省エネ 冷え対策 3面 タイマー付き(2/4/8時間選択可) 3段階温度調整 転倒オフ デスクヒーター 遠赤外線 足元ヒーター 足元暖房 折りたたみ フットヒーター オフィス 暖房器具 ケージ防寒対策 TPH-002S (スモーキーグレー)",
+      "brand": "TOKAIZのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71Kc0uTvu5L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 5980,
+      "discovery_score": 1,
+      "selection_score": 0.83,
+      "matched_comparison_axes": [
+        "heating_method",
+        "safety"
+      ],
+      "search_key": "TOKAIZ パネルヒーター 足元 デスク 省エネ 冷え対策 3面 タイマー付"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0H2L9L153",
+      "asin": "B0H2L9L153",
+      "amazon_title": "[SOARHOPE] 安全スニーカー 安全靴 作業靴 JSAA A種対応 セーフティーシューズ メンズ レディース 樹脂先芯 踏み抜き防止 軽量 通気性 おしゃれ つま先保護 倉庫作業 建築現場",
+      "brand": "SOARHOPEのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61vqSZvN2TL._AC_SY395_SX395_QL70_ML2_.jpg",
+      "observed_price": 4200,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "SOARHOPE 安全スニーカー 安全靴 作業靴 JSAA A種対応 セーフティー"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HHRMNCYX",
+      "asin": "B0HHRMNCYX",
+      "amazon_title": "パネルヒーター・足元ヒーター【10秒で速暖 360℃全方位保温】 電気足温器 足入れ型 速暖 転倒防止 過熱保護 省エネ 静音設計 冷え対策 暖房器具 オフィス・リビング・寝室に最適，グリーン",
+      "brand": "ブランド: INSGEER",
+      "image_url": "https://m.media-amazon.com/images/I/71VIJjx6VyL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 6580,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "heating_method"
+      ],
+      "search_key": "INSGEER パネルヒーター・足元ヒーター 電気足温器 足入れ型 速暖 転倒防"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0HH8M1Z8L",
+      "asin": "B0HH8M1Z8L",
+      "amazon_title": "【4面発熱 パネルヒーター pro】高温版85℃ 足元ヒーター 遠赤外線 デスクヒーター 省エネ 5段階温度調節 9段階タイマー設定 過熱保護",
+      "brand": "ブランド: HEATFAR",
+      "image_url": "https://m.media-amazon.com/images/I/81tVWvuxkHL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "observed_price": 6278,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "heating_method"
+      ],
+      "search_key": "HEATFAR 高温版85℃ 足元ヒーター 遠赤外線 デスクヒーター 省エネ 5"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0G18S8GF2",
+      "asin": "B0G18S8GF2",
+      "amazon_title": "【夏場の冷房対策にも！】アットライズ パネルヒーター 足元ヒーター デスクヒーター ラウンド型 省エネ 冷え対策 暖房器具",
+      "brand": "créerのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/81rzd1ODdUL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 6780,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "heating_method"
+      ],
+      "search_key": "créer アットライズ パネルヒーター 足元ヒーター デスクヒーター ラウ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0CGX1PZ7X",
+      "asin": "B0CGX1PZ7X",
+      "amazon_title": "メトロ 木枠フットヒーター 幅83cm×奥行22cm×高さ11cm 2灯式 手元電子コントローラー式 5時間切タイマー付 クリーンポケット付 MFH-321ET(DA) ラバーウッド",
+      "brand": "ブランド: メトロ",
+      "image_url": "https://m.media-amazon.com/images/I/51hgR01Bh0L._AC_SX300_SY300_QL70_ML2_.jpg",
+      "observed_price": 13680,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "メトロ 木枠フットヒーター 幅83cm×奥行22cm×高さ11cm 2灯"
+    }
+  ]
+}
