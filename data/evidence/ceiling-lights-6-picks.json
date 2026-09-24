@@ -1,0 +1,151 @@
+{
+  "slug": "ceiling-lights-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/ceiling-lights-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/ceiling-lights-6-picks/ceiling-lights-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "brightness",
+      "label": "明るさ・調光調色機能",
+      "keywords": [
+        "調光",
+        "調色",
+        "明るさ"
+      ]
+    },
+    {
+      "id": "room_size",
+      "label": "対応畳数",
+      "keywords": [
+        "畳数",
+        "部屋の広さ",
+        "対応"
+      ]
+    },
+    {
+      "id": "remote_smart",
+      "label": "リモコン・スマート連携",
+      "keywords": [
+        "リモコン",
+        "スマート連携",
+        "音声操作"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格帯",
+      "keywords": [
+        "価格",
+        "コスパ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "brightness",
+      "remote_smart",
+      "room_size"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0CSPT3JTR",
+      "asin": "B0CSPT3JTR",
+      "amazon_title": "KOVOL LED シーリングライト 6畳 8畳 10畳 適用 おしゃれ 北欧 照明器具 天井 APP遠隔制御 無段階調光調色 リモコン付き 日本語取説付き リモコン/スマホAPPで遠隔制御 引っ掛対応 工事不要 常夜灯 タイミング機能 インテリア ライト リビング 間接照明 和室 居間 省エネ 高輝度 昼白色 昼光色 電球色",
+      "brand": "KOVOLのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61KGUh+IYaL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 13500,
+      "discovery_score": 1,
+      "selection_score": 1.01,
+      "matched_comparison_axes": [
+        "brightness",
+        "remote_smart",
+        "room_size"
+      ],
+      "search_key": "KOVOL LED シーリングライト 6畳 8畳 10畳 適用 おしゃれ 北"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0GYFK2B3F",
+      "asin": "B0GYFK2B3F",
+      "amazon_title": "LED シーリングライト 10畳 12畳46W 5060LM無段階調光調色 標準モデル 照明器具 リモコン付き 常夜灯 取付簡単 省エネ 天井照明 寝室 和室 リビング ダイニング 台所 PSE認証獲得 日本語説明書付 リモコン付き",
+      "brand": "Rytalisのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61sX2vdRa2L._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 3890,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "brightness",
+        "remote_smart"
+      ],
+      "search_key": "Rytalis LED シーリングライト 10畳 12畳46W 5060LM無段"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0H3KQ97GQ",
+      "asin": "B0H3KQ97GQ",
+      "amazon_title": "【省エネLEDシーリングライト】 ドウシシャ LEDシーリングライト 20畳 ルミナセーブ 調光11段階 調色11段階 明るさ 14000lm 拡散カバー 液晶リモコン Luminasave（ルミナセーブ）",
+      "brand": "ドウシシャ(DOSHISHA)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/416KgEwYZaL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 20800,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "brightness",
+        "remote_smart"
+      ],
+      "search_key": "ドウシシャ(DOSHISHA) ドウシシャ LEDシーリングライト 20畳 ルミナセーブ 調光1"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0CSJX5F52",
+      "asin": "B0CSJX5F52",
+      "amazon_title": "[山善] LEDシーリングライト 12畳 (日本照明工業会基準) 5300lm 室内/天井照明 10段階調光タイプ 常夜灯 リモコン付き 和室 リビング 寝室 メモリ機能 OFFタイマー (30分/60分) LC-G12",
+      "brand": "山善(YAMAZEN)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71hMXf-MjNL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 5680,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "brightness",
+        "remote_smart"
+      ],
+      "search_key": "山善(YAMAZEN) LEDシーリングライト 12畳 (日本照明工業会基準) 5300"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B09923R2X3",
+      "asin": "B09923R2X3",
+      "amazon_title": "アイリスオーヤマ LEDシーリングライト パネルライト 12畳 間接照明 おしゃれ 明るい 優しい光 調光 調色 ラウンドタイプCEA-A12DLP",
+      "brand": "アイリスオーヤマ(IRIS OHYAMA)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61t5d2AxXNL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 13940,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "brightness"
+      ],
+      "search_key": "アイリスオーヤマ(IRIS OHYAMA) アイリスオーヤマ LEDシーリングライト パネルライ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0DXPPJHX8",
+      "asin": "B0DXPPJHX8",
+      "amazon_title": "シーリングライト 10畳 36W 間接照明 調光 調色 リモコン付き ミニマリスト インテリア照明 LEDシーリングライト 天井照明 LED おしゃれ リビング 寝室 子供部屋 和室 洋室 sg-ledcl-dp12-bk",
+      "brand": "ＳＡＫＡＭＯＮＯ　ＳＨＯＰのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51U0SJyYAJL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 5480,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [
+        "brightness",
+        "remote_smart"
+      ],
+      "search_key": "ＳＡＫＡＭＯＮＯ　ＳＨＯＰ シーリングライト 10畳 36W 間接照明 調光 調色 リモコン"
+    }
+  ]
+}
