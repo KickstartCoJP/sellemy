@@ -1,0 +1,143 @@
+{
+  "slug": "portable-ssd-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/portable-ssd-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/portable-ssd-6-picks/portable-ssd-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "capacity",
+      "label": "容量",
+      "keywords": [
+        "500GB",
+        "1TB",
+        "2TB",
+        "大容量"
+      ]
+    },
+    {
+      "id": "transfer_speed",
+      "label": "転送速度",
+      "keywords": [
+        "USB3.2",
+        "Thunderbolt",
+        "高速転送"
+      ]
+    },
+    {
+      "id": "durability_portability",
+      "label": "耐久性・携帯性",
+      "keywords": [
+        "防水防塵",
+        "耐衝撃",
+        "軽量"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "capacity",
+      "durability_portability",
+      "transfer_speed"
+    ],
+    "brand_count": 4,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0CVR65DFK",
+      "asin": "B0CVR65DFK",
+      "amazon_title": "SUNEAST ULTIMATE PRO GOLD Series Portable 1TB USB3.2 Gen2x2対応 ポータブルSSD Type-C 読み転送速度2000MB/秒 USB Type-C 国内正規品 5年間メーカー保証 SEPS0001T2LG1F",
+      "brand": "SUNEASTのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71zIVi5-qSL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 28000,
+      "discovery_score": 1,
+      "selection_score": 0.855,
+      "matched_comparison_axes": [
+        "capacity",
+        "transfer_speed"
+      ],
+      "search_key": "SUNEAST ULTIMATE PRO GOLD Series Portabl"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0D7PPWJ9Q",
+      "asin": "B0D7PPWJ9Q",
+      "amazon_title": "トランセンド ポータブルSSD 2TB 耐衝撃 USB 20Gbps 高速 最大2,000 MB/s 小型79mm x 42mm 軽量65g Type-C【iPhone 15 & 16 対応】 TS2TESD410C-E 【Amazon.co.jp限定】",
+      "brand": "トランセンドジャパンのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51rIJVS52WL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 92800,
+      "discovery_score": 1,
+      "selection_score": 0.675,
+      "matched_comparison_axes": [
+        "capacity",
+        "durability_portability"
+      ],
+      "search_key": "トランセンドジャパン トランセンド ポータブルSSD 2TB 耐衝撃 USB 20Gb"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0DQCQ9K32",
+      "asin": "B0DQCQ9K32",
+      "amazon_title": "ORICO M.2 SSD 外付けケース 【USB4 40Gbps超高速】NVMe SSD ケース 全アルミ Thunderbolt 3/4 USB 4/3.2/3.1/3.0対応 2230 2242 2260 2280(M Key)をサポート ポータブル(SSDなし) M2V01-C4-GY",
+      "brand": "ORICOのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71tR0ISc71L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 9799,
+      "discovery_score": 1,
+      "selection_score": 0.445,
+      "matched_comparison_axes": [
+        "transfer_speed"
+      ],
+      "search_key": "ORICO M.2 SSD 外付けケース NVMe SSD ケース 全アルミ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B08ZMJGF5G",
+      "asin": "B08ZMJGF5G",
+      "amazon_title": "Netac 外付けSSD 2TB 最大550MB/s USB3.2 Gen2 ポータブル 3年保証 ZSlim",
+      "brand": "Netacのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51QpwL4iMDL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 38980,
+      "discovery_score": 1,
+      "selection_score": 0.445,
+      "matched_comparison_axes": [
+        "capacity",
+        "transfer_speed"
+      ],
+      "search_key": "Netac 外付けSSD 2TB 最大550MB/s USB3.2 Gen2"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0DM23XSH6",
+      "asin": "B0DM23XSH6",
+      "amazon_title": "Samsung T7 1TB 外付けSSD 最大転送速度1,050MB/秒 USB3.2 Gen2(10Gbps, Type-C) グレー iPhone15/16シリーズ動作確認済み MU-PC1T0T-PD/EC 国内正規保証品【特典付モデル】",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61abr1GXtZL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 44424,
+      "discovery_score": 1,
+      "selection_score": 0.375,
+      "matched_comparison_axes": [
+        "capacity",
+        "transfer_speed"
+      ],
+      "search_key": "Samsung T7 1TB 外付けSSD 最大転送速度1,05"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B08N4TY6RV",
+      "asin": "B08N4TY6RV",
+      "amazon_title": "Amazon限定 バッファロー ポータブルSSD 500GB コンパクト USB3.2Gen1 ブラック SSD-PUT500U3-B/N",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61VzGYkgl3S._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 12800,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "capacity",
+        "transfer_speed"
+      ],
+      "search_key": "Amazon限定 バッファロー ポータブルSSD 500GB コ"
+    }
+  ]
+}

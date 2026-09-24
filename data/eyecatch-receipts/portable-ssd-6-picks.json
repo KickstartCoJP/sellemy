@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-portable-ssd-6-picks-970c5ea57b89391c",
+  "request_sha256": "970c5ea57b89391c8a951acc7e25e41025a43706e784e8c3009acd0c00dc57e2",
+  "image_sha256": "2b437131a99dc6a5ecc234406319fa1cbbdb837224b7e31d6e43ed917e0639ab",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-09-24T16:10:10.972891+00:00"
+}
