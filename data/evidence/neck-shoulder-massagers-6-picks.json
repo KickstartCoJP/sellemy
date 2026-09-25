@@ -1,0 +1,146 @@
+{
+  "slug": "neck-shoulder-massagers-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/neck-shoulder-massagers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/neck-shoulder-massagers-6-picks/neck-shoulder-massagers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "massage_mode",
+      "label": "もみ方式・強さ調整",
+      "keywords": [
+        "もみ玉",
+        "強さ調整",
+        "EMS"
+      ]
+    },
+    {
+      "id": "heat_function",
+      "label": "発熱機能",
+      "keywords": [
+        "温感",
+        "ヒーター",
+        "温め"
+      ]
+    },
+    {
+      "id": "battery",
+      "label": "バッテリー持続時間",
+      "keywords": [
+        "連続使用",
+        "充電時間",
+        "バッテリー"
+      ]
+    },
+    {
+      "id": "portability",
+      "label": "携帯性・重さ",
+      "keywords": [
+        "軽量",
+        "コードレス",
+        "持ち運び"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "heat_function",
+      "massage_mode",
+      "portability"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0HJPJBX91",
+      "asin": "B0HJPJBX91",
+      "amazon_title": "【プライム上場企業】 ALINCO(アルインコ) ネックマッサージャー 医療機器認証 肩こり 首こり 軽量 コードレス 充電式 モード3種 もみ玉 簡単 プレゼント ギフト マッサージ マッサージ機 疲れ 癒し 健康器具 首マッサージャー もみたいむ やすらぎ MCR8923TN",
+      "brand": "アルインコ(Alinco)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/416wvCdN++L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 6600,
+      "discovery_score": 1,
+      "selection_score": 0.855,
+      "matched_comparison_axes": [
+        "massage_mode",
+        "portability"
+      ],
+      "search_key": "アルインコ(Alinco) ALINCO(アルインコ) ネックマッサージャー 医療機器認証"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0BKLNP5NF",
+      "asin": "B0BKLNP5NF",
+      "amazon_title": "【anan掲載モデル】LuLufeel ネックリラクゼーション 【プレゼントお探しの方へｘ温めと刺激で気持ちいい】 ネックケア EMS 首 肩 プレゼント ギフト 誕生日 女性 母親 母の日 クリスマス 父の日",
+      "brand": "LuLufeelのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/513CR4Ka7bL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2084,
+      "discovery_score": 1,
+      "selection_score": 0.625,
+      "matched_comparison_axes": [
+        "heat_function",
+        "massage_mode"
+      ],
+      "search_key": "LuLufeel ネックリラクゼーション ネックケア EMS 首 肩 プレゼント"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0H82Y85MG",
+      "asin": "B0H82Y85MG",
+      "amazon_title": "HOGXIA ホグシア ネックマッサージャー 【 医療機器認証 】 肩こり マッサージ 首 肩 マッサージ機 HGX-158R ネイビー",
+      "brand": "HOGXIAのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61vBFaVAoCL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 15800,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "HOGXIA ホグシア ネックマッサージャー 肩こり マッサージ 首 肩 マッ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0G5YND63N",
+      "asin": "B0G5YND63N",
+      "amazon_title": "KNQZE 指圧 USB充電式 ネックケア 首肩リラクゼーション器 コードレス 温熱機能付き 静音設計 ベルト付き 両手解放 自宅で手軽にリフレッシュ プレゼント ベージュ",
+      "brand": "KNQZEのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71S5MlYy+JL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 8800,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "portability"
+      ],
+      "search_key": "KNQZE 指圧 USB充電式 ネックケア 首肩リラクゼーション器 コードレ"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0D1WVKF9F",
+      "asin": "B0D1WVKF9F",
+      "amazon_title": "「ハマスカ放送部」で紹介！【GOODSPRESSで受賞】【MonoMAXで受賞】MYTREX マイトレックス MEDI NECK EMS 温熱 電動 ネックストレッチャー 首 メディネック MT-MDN24B",
+      "brand": "MYTREXのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71sxkncWj+L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 29700,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "massage_mode"
+      ],
+      "search_key": "MYTREX 「ハマスカ放送部」で紹介！ MYTREX マイトレックス MED"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B094D2TM19",
+      "asin": "B094D2TM19",
+      "amazon_title": "NIPLUX NECK RELAX 1S ネックケア 温熱 首 肩 リラクゼーション器 軽量 6モード ネックリラックス 誕生日プレゼント ホワイト",
+      "brand": "NIPLUXのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61hkL2StO5L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 13860,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "portability"
+      ],
+      "search_key": "NIPLUX NECK RELAX 1S ネックケア 温熱 首 肩 リラクゼー"
+    }
+  ]
+}
