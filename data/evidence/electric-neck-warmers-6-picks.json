@@ -1,0 +1,139 @@
+{
+  "slug": "electric-neck-warmers-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/electric-neck-warmers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/electric-neck-warmers-6-picks/electric-neck-warmers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "heat-levels",
+      "label": "発熱温度・段階",
+      "keywords": [
+        "温度調整",
+        "急速あたため",
+        "低温やけど対策"
+      ]
+    },
+    {
+      "id": "battery-life",
+      "label": "バッテリー持続時間",
+      "keywords": [
+        "連続使用時間",
+        "モバイルバッテリー兼用",
+        "急速充電"
+      ]
+    },
+    {
+      "id": "design-portability",
+      "label": "デザイン・携帯性",
+      "keywords": [
+        "軽量",
+        "折りたたみ",
+        "オフィス使い"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格帯",
+      "keywords": [
+        "プチプラ",
+        "コスパ",
+        "ギフト向け"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "battery-life",
+      "design-portability"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0G57ZJ7KL",
+      "asin": "B0G57ZJ7KL",
+      "amazon_title": "U-HOT 【2025年冬新登場・3WAY使用可能】 ネックウォーマー 3段階温度調節 マフラー 軽量コンパクト 繰り返し使える あたたかグッズ 防寒 首あたため オフィス 登山 バイク ウインタースポーツ 防寒グッズ ハンドウォーマー USB給電 肩掛け 膝掛け 温熱 温活 温めグッズ 男女兼用 充電式 腰あたためグッズ 寒さ対策 クリスマスプレゼントに最適 (ブラック首用 ネックウォーマー)",
+      "brand": "ブランド: UniPro",
+      "image_url": "https://m.media-amazon.com/images/I/61h9yG766lL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2980,
+      "discovery_score": 1,
+      "selection_score": 0.675,
+      "matched_comparison_axes": [
+        "design-portability"
+      ],
+      "search_key": "UniPro U-HOT ネックウォーマー 3段階温度調節 マフラー 軽量コン"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0DK5111W3",
+      "asin": "B0DK5111W3",
+      "amazon_title": "[Lavento] ネックウォーマー 電熱 メンズ 冬 【最高65℃持続発熱・360°全域速暖】【10秒速暖・三段階調温】 電熱ネックウォーマー 電熱マフラー 防寒 極暖裏起毛 大きいサイズ USB給電 ヒーター内蔵 手洗い可 調節コードつき 超長連続使用時間",
+      "brand": "Laventoのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71M6mYL0ZgL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 2498,
+      "discovery_score": 1,
+      "selection_score": 0.625,
+      "matched_comparison_axes": [
+        "battery-life"
+      ],
+      "search_key": "Lavento ネックウォーマー 電熱 メンズ 冬 電熱ネックウォーマー 電熱マ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0D1WVKF9F",
+      "asin": "B0D1WVKF9F",
+      "amazon_title": "「ハマスカ放送部」で紹介！【GOODSPRESSで受賞】【MonoMAXで受賞】MYTREX マイトレックス MEDI NECK EMS 温熱 電動 ネックストレッチャー 首 メディネック MT-MDN24B",
+      "brand": "MYTREXのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71sxkncWj+L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 29700,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "MYTREX 「ハマスカ放送部」で紹介！ MYTREX マイトレックス MED"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0CNT4BLGJ",
+      "asin": "B0CNT4BLGJ",
+      "amazon_title": "LACITA 3秒で温まる 電熱ネックウォーマー 電熱マフラー 充電式 5,000mAh バッテリー EL HEAT Neck 1 イーエルヒート",
+      "brand": "LACITA（ラ・チタ）のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71RtsIHXogL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 6980,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "LACITA（ラ・チタ） LACITA 3秒で温まる 電熱ネックウォーマー 電熱マフラー"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B09JNDWKPJ",
+      "asin": "B09JNDWKPJ",
+      "amazon_title": "MYTREX マイトレックス POWERMUF ヒーター 内臓 マフラー ネックウォーマー レディーズ メンズ ユニセックス ストール 温め 充電式 手洗い 防水 パワーマフ MT-PM21B",
+      "brand": "株式会社創通メディカルのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61Cko6jvHBL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 14850,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "株式会社創通メディカル MYTREX マイトレックス POWERMUF ヒーター 内臓"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B094D2TM19",
+      "asin": "B094D2TM19",
+      "amazon_title": "NIPLUX NECK RELAX 1S ネックケア 温熱 首 肩 リラクゼーション器 軽量 6モード ネックリラックス 誕生日プレゼント ホワイト",
+      "brand": "NIPLUXのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61hkL2StO5L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 13860,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "design-portability"
+      ],
+      "search_key": "NIPLUX NECK RELAX 1S ネックケア 温熱 首 肩 リラクゼー"
+    }
+  ]
+}
