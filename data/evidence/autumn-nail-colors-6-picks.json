@@ -1,0 +1,141 @@
+{
+  "slug": "autumn-nail-colors-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/autumn-nail-colors-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/autumn-nail-colors-6-picks/autumn-nail-colors-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "color",
+      "label": "カラー展開・発色",
+      "keywords": [
+        "カラー",
+        "発色",
+        "秋色"
+      ]
+    },
+    {
+      "id": "texture",
+      "label": "質感",
+      "keywords": [
+        "マット",
+        "グロス",
+        "パール"
+      ]
+    },
+    {
+      "id": "durability",
+      "label": "持ち・耐久性",
+      "keywords": [
+        "持ち",
+        "はがれにくい",
+        "耐久"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格帯",
+      "keywords": [
+        "価格",
+        "コスパ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "color",
+      "durability",
+      "texture"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0DGGWV11R",
+      "asin": "B0DGGWV11R",
+      "amazon_title": "キャンメイク カラフルネイルズ N110 木枯らし 8ml ネイル 高発色 速乾 パール ブラウン",
+      "brand": "キャンメイクのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/517yiuxtEaL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 871,
+      "discovery_score": 1,
+      "selection_score": 0.88,
+      "matched_comparison_axes": [
+        "color",
+        "texture"
+      ],
+      "search_key": "キャンメイク カラフルネイルズ N110 木枯らし 8ml ネイル 高発色 速"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0FW3WHXVZ",
+      "asin": "B0FW3WHXVZ",
+      "amazon_title": "uka(ウカ)【ネイルサロン監修】 カラー ベースコート 17/0 (ココアブラウン)10mL / 速乾 マニキュア 色長持ち ネイルポリッシュ セルフネイル ジェル風ツヤ",
+      "brand": "ウカ(uka)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61bQNyT0TNL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2200,
+      "discovery_score": 1,
+      "selection_score": 0.7,
+      "matched_comparison_axes": [
+        "color",
+        "durability"
+      ],
+      "search_key": "ウカ(uka) uka(ウカ) カラー ベースコート 17/0 (ココアブラウン"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0D8KSCRSC",
+      "asin": "B0D8KSCRSC",
+      "amazon_title": "MODELONES マグネットジェル 磁石付き キャッツアイジェル マグネット キラキラ マグネットネイル カラージェル 微粒子 猫目 セルフネイル 6色セット uv/led対応 ジェルネイル カラー（星空のグリーン）",
+      "brand": "modelonesのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/815CsRYZWhL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2464,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "color"
+      ],
+      "search_key": "modelones マグネットジェル 磁石付き キャッツアイジェル マグネット キラ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0FB82PZQY",
+      "asin": "B0FB82PZQY",
+      "amazon_title": "MIKAGAMI マニキュア 速乾 ネイル ポリッシュ 日本製 8mL(シアーベージュ)",
+      "brand": "ＭＩＫＡＧＡＭＩのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71g6fugNbaL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1180,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [],
+      "search_key": "ＭＩＫＡＧＡＭＩ MIKAGAMI マニキュア 速乾 ネイル ポリッシュ 日本製"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0DXPFDXWQ",
+      "asin": "B0DXPFDXWQ",
+      "amazon_title": "GAOY ビルダージェル 長さだしジェル クリアジェル ジェルネイル UV・LED対応 クリア 16ml",
+      "brand": "GAOYのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61eG1U-jNbL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 999,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [],
+      "search_key": "GAOY ビルダージェル 長さだしジェル クリアジェル ジェルネイル UV"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0B36JF96T",
+      "asin": "B0B36JF96T",
+      "amazon_title": "【TVシューイチで紹介】 VITOMS 爪磨き 爪やすり ガラスネイルシャイナー 艶出し 【仕上がりが変わるスポンジファイル付】 男女兼用 メンズ レディース 介護 子供 ネイルケアセット ブラック 黒 ケース付 (スタンダード/ストレート)",
+      "brand": "VITOMSのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/8107dS5pGJL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 998,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [],
+      "search_key": "VITOMS 爪磨き 爪やすり ガラスネイルシャイナー 艶出し 男女兼用 メン"
+    }
+  ]
+}
