@@ -1,0 +1,143 @@
+{
+  "slug": "eye-creams-for-autumn-dryness-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/eye-creams-for-autumn-dryness-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/eye-creams-for-autumn-dryness-6-picks/eye-creams-for-autumn-dryness-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "moisturizing_ingredients",
+      "label": "保湿成分",
+      "keywords": [
+        "セラミド",
+        "ヒアルロン酸",
+        "レチノール",
+        "保湿成分"
+      ]
+    },
+    {
+      "id": "texture",
+      "label": "テクスチャー・使用感",
+      "keywords": [
+        "こっくり",
+        "さらっと",
+        "伸び",
+        "使用感"
+      ]
+    },
+    {
+      "id": "price_range",
+      "label": "価格帯",
+      "keywords": [
+        "価格",
+        "コスパ",
+        "プチプラ",
+        "デパコス"
+      ]
+    },
+    {
+      "id": "target_concern",
+      "label": "対応する目元悩み",
+      "keywords": [
+        "くすみ",
+        "小じわ",
+        "たるみ",
+        "クマ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "moisturizing_ingredients",
+      "target_concern"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0H3Z7W7XC",
+      "asin": "B0H3Z7W7XC",
+      "amazon_title": "【ヒアルロン酸の500倍の保湿力】 dermergy 目元美容液 目の下 目元 PDRN セラミド エクソソーム",
+      "brand": "ブランド: dermergy",
+      "image_url": "https://m.media-amazon.com/images/I/71p1cPUTXML._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2980,
+      "discovery_score": 1,
+      "selection_score": 0.675,
+      "matched_comparison_axes": [
+        "moisturizing_ingredients"
+      ],
+      "search_key": "dermergy 目元美容液 目の下 目元 PDRN セラミド エクソソーム"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0CH83BC21",
+      "asin": "B0CH83BC21",
+      "amazon_title": "ブライトエイジ 〈アイゾーン ダブルリバイタライザー〉 4.5mL 3g 目もと用 美容液 ［ アイケア くすみ ハリ ツヤ 年齢肌 エイジングケア 2in1] 公式",
+      "brand": "ブライトエイジ＼ＢＲＩＧＨＴ　ＡＧＥのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/41mvWxDzx+L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 7150,
+      "discovery_score": 1,
+      "selection_score": 0.675,
+      "matched_comparison_axes": [
+        "target_concern"
+      ],
+      "search_key": "ブライトエイジ＼ＢＲＩＧＨＴ　ＡＧＥ ブライトエイジ 〈アイゾーン ダブルリバイタライザー〉 4"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0B87WYX6G",
+      "asin": "B0B87WYX6G",
+      "amazon_title": "アスタリフト ザ セラム リンクルリペア 薬用シワ改善美容液 (朝夜お試し約30日分 朝用2g 夜用8g) アイクリーム",
+      "brand": "ASTALIFTのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61OFjr4Nr2L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 4004,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "ASTALIFT アスタリフト ザ セラム リンクルリペア 薬用シワ改善美容液 ("
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B09R9YRBBR",
+      "asin": "B09R9YRBBR",
+      "amazon_title": "アテニア アイ リンクルセラム アイクリーム 15g 医薬部外品 目元美容液 目元クリーム ナイアシンアミド ハリ/シワ改善/透明感/保湿",
+      "brand": "Attenirのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51YLWm04IaL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3740,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "Attenir アテニア アイ リンクルセラム アイクリーム 15g 医薬部外品"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B08CB786Y8",
+      "asin": "B08CB786Y8",
+      "amazon_title": "キュレル モイストリペアアイクリーム 25g 【医薬部外品】",
+      "brand": "キュレルのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71FklneGWNL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "observed_price": 3080,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "キュレル モイストリペアアイクリーム 25g"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0GKNRH6S6",
+      "asin": "B0GKNRH6S6",
+      "amazon_title": "メディスホワイト アイクリーム 目元ケア 目元クリーム eye cream 【目の小じわ×はり×くすみを集中ケア】",
+      "brand": "ブランド: ＭＥＤＩＳ",
+      "image_url": "https://m.media-amazon.com/images/I/515DJIKBLtL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1980,
+      "discovery_score": 1,
+      "selection_score": 0.445,
+      "matched_comparison_axes": [
+        "target_concern"
+      ],
+      "search_key": "ＭＥＤＩＳ メディスホワイト アイクリーム 目元ケア 目元クリーム eye"
+    }
+  ]
+}
