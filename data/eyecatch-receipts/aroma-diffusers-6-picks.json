@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-aroma-diffusers-6-picks-18af67037d548188",
+  "request_sha256": "18af67037d548188147ca3ca6c9c0f46e8603b68b16b0be0229892c7f77cbe0e",
+  "image_sha256": "753a2ca07d486851e554784c75ccaf274609c660c2068352d5abf4340628dc07",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-09-25T17:31:36.588798+00:00"
+}

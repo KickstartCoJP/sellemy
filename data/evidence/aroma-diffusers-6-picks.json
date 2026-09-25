@@ -1,0 +1,136 @@
+{
+  "slug": "aroma-diffusers-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/aroma-diffusers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/aroma-diffusers-6-picks/aroma-diffusers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "diffusion_method",
+      "label": "香りの広がり方",
+      "keywords": [
+        "超音波式",
+        "ネブライザー式",
+        "気化式"
+      ]
+    },
+    {
+      "id": "tank_runtime",
+      "label": "タンク容量・稼働時間",
+      "keywords": [
+        "連続運転",
+        "間欠運転"
+      ]
+    },
+    {
+      "id": "design_light",
+      "label": "デザイン・ライト機能",
+      "keywords": [
+        "調光",
+        "インテリア",
+        "北欧デザイン"
+      ]
+    },
+    {
+      "id": "maintenance",
+      "label": "お手入れのしやすさ",
+      "keywords": [
+        "分解洗浄",
+        "自動洗浄"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "diffusion_method"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0DGXF7JD4",
+      "asin": "B0DGXF7JD4",
+      "amazon_title": "【2026発売新モデル・一台多役】加湿器 アロマディフューザー 小型 次亜塩素酸水対応 除菌 超音波式 卓上 アロマ対応 LEDライト7色 お手入れ簡単 静音 省エネ 空焚き防止 加湿器 小型 コンパクト お手入れ簡単 6-9畳対応 乾燥対策 寝室 部屋用（ホワイト）",
+      "brand": "ラブホーム美家のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51T0TqR87ML._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2980,
+      "discovery_score": 1,
+      "selection_score": 0.75,
+      "matched_comparison_axes": [
+        "diffusion_method"
+      ],
+      "search_key": "ラブホーム美家 加湿器 アロマディフューザー 小型 次亜塩素酸水対応 除菌 超音"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0H8PHN3NC",
+      "asin": "B0H8PHN3NC",
+      "amazon_title": "Flirva 車 アロマディフューザー ソーラー アルミ合金製 静音 DIY可能 フランス産天然香料 50ml ホワイトムスク精油付き 車 芳香剤",
+      "brand": "Flirvaのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71f5EffpBLL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 7999,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [],
+      "search_key": "Flirva 車 アロマディフューザー ソーラー アルミ合金製 静音 DIY可"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GMQL7M8N",
+      "asin": "B0GMQL7M8N",
+      "amazon_title": "【欲しかった機能、全部ここに】Okali 車 アロマディフューザー ネブライザー式 水なし 市販精油対応 自動ON/OFF タイマー機能 業界最大級4000mAh大容量 コードレス 充電式 静音 消臭 アルミボディ ライトON/OFF可 Smart Car Air Fresheners (メタリックシルバー)",
+      "brand": "ブランド: Okali",
+      "image_url": "https://m.media-amazon.com/images/I/717SMdNTlOL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 10890,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [
+        "diffusion_method"
+      ],
+      "search_key": "Okali 車 アロマディフューザー ネブライザー式 水なし 市販精油対応"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0GHNLL21J",
+      "asin": "B0GHNLL21J",
+      "amazon_title": "I400 アロマディフューザー 水なし ネブライザー方式 コードレス低騒音設計最大 36 時間使用タイマー機能 & 自動 ON/OFF DIY 対応 航空アルミニウム素材 ホワイトムスク香り アロマオイル",
+      "brand": "ブランド: Lanta",
+      "image_url": "https://m.media-amazon.com/images/I/71Mb1BDy8+L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 10999,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [],
+      "search_key": "Lanta I400 アロマディフューザー 水なし ネブライザー方式 コード"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B00D5Q6HPS",
+      "asin": "B00D5Q6HPS",
+      "amazon_title": "アロマブルーム リッチアロマディフューザーWOOD ナチュラルブラウン ネブライザー式 水なし コードレス",
+      "brand": "Aroma Bloomのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61dY88y9p3L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 8514,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [
+        "diffusion_method"
+      ],
+      "search_key": "Aroma Bloom アロマブルーム リッチアロマディフューザーWOOD ナチュラルブ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0CZXVKSLV",
+      "asin": "B0CZXVKSLV",
+      "amazon_title": "無印良品 コードレス超音波アロマディフューザー MJ-CAD2 LA1O4A3A",
+      "brand": "無印良品のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/41rE4eRbgLL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3994,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "無印良品 コードレス超音波アロマディフューザー MJ-CAD2 LA1O4"
+    }
+  ]
+}
