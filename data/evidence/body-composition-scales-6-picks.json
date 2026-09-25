@@ -1,0 +1,136 @@
+{
+  "slug": "body-composition-scales-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/body-composition-scales-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/body-composition-scales-6-picks/body-composition-scales-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "measurement-items",
+      "label": "測定項目数",
+      "keywords": [
+        "体脂肪率",
+        "筋肉量",
+        "内臓脂肪"
+      ]
+    },
+    {
+      "id": "app-connectivity",
+      "label": "アプリ連携・記録",
+      "keywords": [
+        "スマホ連携",
+        "データ自動保存",
+        "家族データ管理"
+      ]
+    },
+    {
+      "id": "design-size",
+      "label": "デザイン・設置サイズ",
+      "keywords": [
+        "薄型",
+        "デザイン性",
+        "収納しやすさ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "app-connectivity",
+      "design-size",
+      "measurement-items"
+    ],
+    "brand_count": 4,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0FGXWYT5Y",
+      "asin": "B0FGXWYT5Y",
+      "amazon_title": "【2026新登場】体重計 体脂肪計 体組成計 Bluetooth スマホ連動 たいじゅうけい ヘルスメーター 高精度 軽量 収納 電源自動ON/OFF 薄型 ボディスケール 強化ガラス コンパクト 多機能測定 体重 体脂肪率 筋肉率 体水分率 BMI など測定 iOS/Android対応 日本語取扱説明書 (ブラック)",
+      "brand": "ブランド: Kungix",
+      "image_url": "https://m.media-amazon.com/images/I/41SazJKE5ML._SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 2161,
+      "discovery_score": 1,
+      "selection_score": 0.88,
+      "matched_comparison_axes": [
+        "design-size",
+        "measurement-items"
+      ],
+      "search_key": "Kungix 体重計 体脂肪計 体組成計 Bluetooth スマホ連動 たい"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0GK6VRBT1",
+      "asin": "B0GK6VRBT1",
+      "amazon_title": "タニタ(Tanita) 左右部位別体組成計 体組成計 ヘルスメーター スマホ連携 日本製 BCｰ1K01-BL",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/31ffOtBGA3L._SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 19800,
+      "discovery_score": 1,
+      "selection_score": 0.58,
+      "matched_comparison_axes": [
+        "app-connectivity"
+      ],
+      "search_key": "タニタ(Tanita) 左右部位別体組成計 体組成計 ヘルスメー"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0H7BVQ3N4",
+      "asin": "B0H7BVQ3N4",
+      "amazon_title": "arboleaf 体重計 体組成計 体脂肪計 8電極 カラダスキャン スマホ連動 データ自動転送 部位別測定 全身測定方式 Bluetooth対応",
+      "brand": "arboleafのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/414K1bv8WkL._SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 9580,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "arboleaf 体重計 体組成計 体脂肪計 8電極 カラダスキャン スマホ連動"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0H2D8Z8W4",
+      "asin": "B0H2D8Z8W4",
+      "amazon_title": "AI×8電極 体重計 体組成計 スマホ連動 データ自動転送【体脂肪率/BMI/心拍数/筋肉量/基礎代謝量/水分量/体脂肪量/骨量/内臓脂肪/タンパク質/骨格筋量/皮下脂肪/3Dモデル】など56項目測定可能 カラダスキャン 自動ON/OFF ルスメーター Bluetooth ヘルスメーター 高精度 強化ガラス iOS/Android対応 日本語対応APP＆日本語説明書付き",
+      "brand": "ブランド: DYKL",
+      "image_url": "https://m.media-amazon.com/images/I/41kRWPYtyaL._SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 7999,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "measurement-items"
+      ],
+      "search_key": "DYKL AI×8電極 体重計 体組成計 スマホ連動 データ自動転送【体脂"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0C2J6BX53",
+      "asin": "B0C2J6BX53",
+      "amazon_title": "オムロン 体重 体組成計 カラダスキャン ブラック KRD-603T2-BK スマホ連動 データ自動転送 自動認識 乗るだけで測定開始 50g単位 BMI 骨格筋率 体脂肪率",
+      "brand": "Omronのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61nmp37zKwL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 15051,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "measurement-items"
+      ],
+      "search_key": "Omron オムロン 体重 体組成計 カラダスキャン ブラック KRD-60"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0H5C15SSQ",
+      "asin": "B0H5C15SSQ",
+      "amazon_title": "【2026新開発＆AI×8電極】体重計 体組成計 カラダスキャン スマホ連動 データ自動転送 全身測定 体脂肪率/BMI/筋肉量/基礎代謝率/水分量/体脂肪量/骨量/内臓脂肪/タンパク質/骨格筋量/皮下脂肪 など23項目測定可能 自動ON/OFF ヘルスメーター Bluetooth 高精度 強化ガラス iOS/Android対応 日本語対応APP＆日本語説明書付き",
+      "brand": "ブランド: Kungix",
+      "image_url": "https://m.media-amazon.com/images/I/41gzUEAwlCL._SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 9481,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [
+        "measurement-items"
+      ],
+      "search_key": "Kungix 体重計 体組成計 カラダスキャン スマホ連動 データ自動転送 全"
+    }
+  ]
+}

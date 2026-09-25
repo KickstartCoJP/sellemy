@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-body-composition-scales-6-picks-4f848766c89c9525",
+  "request_sha256": "4f848766c89c9525cb5fa255cfabb747bf8b5a0d62c33623e38f5ecd7a4e1ce3",
+  "image_sha256": "6a640fc482cc2065de2ca5fbaa02bf4e33378be9f0d48d1834550e23838f5d62",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-09-25T09:10:40.239132+00:00"
+}
