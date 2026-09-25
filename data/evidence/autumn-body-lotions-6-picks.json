@@ -1,0 +1,128 @@
+{
+  "slug": "autumn-body-lotions-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/autumn-body-lotions-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/autumn-body-lotions-6-picks/autumn-body-lotions-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "moisture",
+      "label": "保湿成分",
+      "keywords": [
+        "セラミド",
+        "ヒアルロン酸",
+        "シアバター"
+      ]
+    },
+    {
+      "id": "texture",
+      "label": "テクスチャー・使用感",
+      "keywords": [
+        "さらっと",
+        "こっくり",
+        "べたつかない"
+      ]
+    },
+    {
+      "id": "scent",
+      "label": "香り・仕上がり",
+      "keywords": [
+        "無香料",
+        "フローラル",
+        "ミルキー"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "moisture",
+      "scent"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0DBPK2B54",
+      "asin": "B0DBPK2B54",
+      "amazon_title": "国内正規品・リニューアル品 Vaseline(ヴァセリン) アドバンスドリペア ボディローション 400ml 無香料 <ベスコス多数受賞! 一日うるおい続くボディローション>",
+      "brand": "Vaselineのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51aLWb2sISL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 900,
+      "discovery_score": 1,
+      "selection_score": 0.675,
+      "matched_comparison_axes": [
+        "scent"
+      ],
+      "search_key": "Vaseline 国内正規品・リニューアル品 Vaseline(ヴァセリン) アド"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0FS15SGM6",
+      "asin": "B0FS15SGM6",
+      "amazon_title": "Karl&Hans(カールアンドハンス) ボディミルク PDRN セラミド 配合 角質ケア 弱酸性 低刺激、390ml 2個 フレッシュミント",
+      "brand": "Karl&Hänsのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51XUIJNc3yL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3790,
+      "discovery_score": 1,
+      "selection_score": 0.675,
+      "matched_comparison_axes": [
+        "moisture"
+      ],
+      "search_key": "Karl&Häns Karl&Hans(カールアンドハンス) ボディミルク PDRN"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0H41CDPC4",
+      "asin": "B0H41CDPC4",
+      "amazon_title": "【クンダル】 アンバーウッディの香り | ハニー＆マカダミア ピュア ボディローション (500ml) 長時間続くうるおい 乾燥ケア",
+      "brand": "KUNDALのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51srJcoNWsL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2240,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "KUNDAL アンバーウッディの香り | ハニー＆マカダミア ピュア ボディロ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0FJWFPDC5",
+      "asin": "B0FJWFPDC5",
+      "amazon_title": "PHUTAWAN （ プタワン ） ボディローション 300mL（フレッシュオリエンタル） 保湿 ボディミルク 天然由来成分 高保湿 乾燥肌 ボタニカル スキンケア",
+      "brand": "ブランド: Phutawan",
+      "image_url": "https://m.media-amazon.com/images/I/619V0yMfk-L._AC_SX300_SY300_QL70_ML2_.jpg",
+      "observed_price": 2640,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "Phutawan （ プタワン ） ボディローション 300mL（フレッシュオリエ"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0CCJ88ZQM",
+      "asin": "B0CCJ88ZQM",
+      "amazon_title": "キュレル ローション 615ｍｌ",
+      "brand": "キュレルのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/715Gkhnm-cL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3850,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "キュレル ローション 615ｍｌ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0BJV5K7WJ",
+      "asin": "B0BJV5K7WJ",
+      "amazon_title": "アトピスマイル 薬用ボディローション 150g 皮膚トラブル対策 【医薬部外品】 ステロイドフリー 保湿 ライスパワー 国産",
+      "brand": "ATOPI SMILEのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/514ap4WbsuL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3300,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "ATOPI SMILE アトピスマイル 薬用ボディローション 150g 皮膚トラブル対策"
+    }
+  ]
+}
