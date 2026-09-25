@@ -1,0 +1,136 @@
+{
+  "slug": "autumn-lip-colors-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/autumn-lip-colors-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/autumn-lip-colors-6-picks/autumn-lip-colors-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "color_range",
+      "label": "発色・カラー展開",
+      "keywords": [
+        "カラー展開",
+        "発色",
+        "ベージュ",
+        "レッド",
+        "ブラウン"
+      ]
+    },
+    {
+      "id": "texture",
+      "label": "質感",
+      "keywords": [
+        "マット",
+        "グロス",
+        "ティント",
+        "うるおい感"
+      ]
+    },
+    {
+      "id": "wear_comfort",
+      "label": "保湿・使用感",
+      "keywords": [
+        "保湿成分",
+        "乾燥しにくい",
+        "つけ心地"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "color_range",
+      "texture"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0HGNZ4HFS",
+      "asin": "B0HGNZ4HFS",
+      "amazon_title": "【2026秋新色/限定色】オペラ/グロウリップティント(限定色)417 マロンブラウン",
+      "brand": "ブランド: ノーブランド品",
+      "image_url": "https://m.media-amazon.com/images/I/31J2B6BBPYL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2980,
+      "discovery_score": 1,
+      "selection_score": 0.805,
+      "matched_comparison_axes": [
+        "color_range",
+        "texture"
+      ],
+      "search_key": "ノー品 オペラ/グロウリップティント(限定色)417 マロンブラウン"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0CZJMQXSY",
+      "asin": "B0CZJMQXSY",
+      "amazon_title": "【NOONI/ヌーニ】リップオイルアップルワイン｜ リップオイル｜色持ち｜血色｜保湿｜角質ケア｜なめらか｜しっとり｜防水｜韓国コスメ｜ナチュラル｜デイリーリップケア｜8色｜3.7ml",
+      "brand": "nooniのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51mNEiVbe3L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1498,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "nooni リップオイルアップルワイン｜ リップオイル｜色持ち｜血色｜保湿｜"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0G4PCQR5S",
+      "asin": "B0G4PCQR5S",
+      "amazon_title": "KATE(ケイト) リップモンスター 18 ネクタリピンク系 とろけ落ちる密桃 甘い果実のようなニュアンスピンク系 ＃モンスター果樹園 保湿 高発色 色持続 落ちにくい トレンド仕上がり重視",
+      "brand": "Kateのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/5197A2BiHGL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1540,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "color_range"
+      ],
+      "search_key": "Kate (ケイト) リップモンスター 18 ネクタリピンク系 とろけ落ち"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0B5WN6Z2Z",
+      "asin": "B0B5WN6Z2Z",
+      "amazon_title": "MAYBELLINE(メイベリン) リップ SPステイ ヴィニルインク80 ピンク系 口紅",
+      "brand": "メイベリンのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51e1hzjow7L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1991,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "メイベリン MAYBELLINE(メイベリン) リップ SPステイ ヴィニル"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0CBLCZHFH",
+      "asin": "B0CBLCZHFH",
+      "amazon_title": "セザンヌ リップカラーシールド 03 ココアブラウン 3.7g ジェル膜リップ 美発色 落ちにくい",
+      "brand": "セザンヌのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51Lzs6CYjML._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 660,
+      "discovery_score": 1,
+      "selection_score": 0.445,
+      "matched_comparison_axes": [
+        "color_range"
+      ],
+      "search_key": "セザンヌ リップカラーシールド 03 ココアブラウン 3.7g ジェル膜リ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0813RLW9F",
+      "asin": "B0813RLW9F",
+      "amazon_title": "rom&nd(ロムアンド) 【正規品】Zベルベットティント(#02ジョイフル) 口紅 5.5グラム (x 1)",
+      "brand": "rom&ndのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71dF-Dc3uTL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 720,
+      "discovery_score": 1,
+      "selection_score": 0.445,
+      "matched_comparison_axes": [
+        "texture"
+      ],
+      "search_key": "rom&nd (ロムアンド) Zベルベットティント(#02ジョイフル) 口紅"
+    }
+  ]
+}

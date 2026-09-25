@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-autumn-lip-colors-6-picks-9089c166a1b33b6a",
+  "request_sha256": "9089c166a1b33b6af9df85677810d00411f21df31148edb6f597396ff7693be3",
+  "image_sha256": "d2fa7ac19c2e0ff7f2702e75ada480a9ff50cb6b4e2b23c9962d7f40bd3124ca",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-09-25T12:53:27.303708+00:00"
+}
