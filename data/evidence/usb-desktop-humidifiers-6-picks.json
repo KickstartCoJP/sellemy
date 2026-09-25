@@ -1,0 +1,135 @@
+{
+  "slug": "usb-desktop-humidifiers-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/usb-desktop-humidifiers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/usb-desktop-humidifiers-6-picks/usb-desktop-humidifiers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "tank_capacity_runtime",
+      "label": "タンク容量・稼働時間",
+      "keywords": [
+        "ミニタンク",
+        "連続稼働",
+        "給水頻度"
+      ]
+    },
+    {
+      "id": "noise_design",
+      "label": "静音性・デザイン",
+      "keywords": [
+        "静音",
+        "コンパクト",
+        "おしゃれ"
+      ]
+    },
+    {
+      "id": "maintenance",
+      "label": "お手入れのしやすさ",
+      "keywords": [
+        "分解洗浄",
+        "フィルター不要",
+        "抗菌"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "maintenance",
+      "noise_design"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0HC3CCY2B",
+      "asin": "B0HC3CCY2B",
+      "amazon_title": "加湿器 卓上 小型 【抗菌鋼板】 卓上加湿器 超音波式 LEDディスプレイ Type-C充電 2600mAhバッテリー 除菌 静音 7色ライト 白い",
+      "brand": "ブランド: TechGo",
+      "image_url": "https://m.media-amazon.com/images/I/51JcFudm1+L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2399,
+      "discovery_score": 1,
+      "selection_score": 0.88,
+      "matched_comparison_axes": [
+        "maintenance",
+        "noise_design"
+      ],
+      "search_key": "TechGo 加湿器 卓上 小型 卓上加湿器 超音波式 LEDディスプレイ T"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HHN1B9QV",
+      "asin": "B0HHN1B9QV",
+      "amazon_title": "加湿器 小型 humidifier【2026年新型超音波霧化技術】卓上加湿器 300ML 超音波式 次亜塩素酸水対応 空焚き防止 抗菌加工 吸水芯×2",
+      "brand": "ブランド: Goldmax",
+      "image_url": "https://m.media-amazon.com/images/I/71U9T5lMiWL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3580,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "maintenance"
+      ],
+      "search_key": "Goldmax 加湿器 小型 humidifier 卓上加湿器 300ML 超音"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0H1HH8GSK",
+      "asin": "B0H1HH8GSK",
+      "amazon_title": "Pharata 加湿器 小型卓上 2.5L大容量 上から給水 静音 アロマ対応 カラーLEDライト付き ライト消灯可能 超音波式",
+      "brand": "ブランド: Pharata",
+      "image_url": "https://m.media-amazon.com/images/I/41g1tZtj1PL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 4280,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "noise_design"
+      ],
+      "search_key": "Pharata 加湿器 小型卓上 2.5L大容量 上から給水 静音 アロマ対応"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0FPLKDLYQ",
+      "asin": "B0FPLKDLYQ",
+      "amazon_title": "【卓上型・透明タンク】Carepod 加湿器 J20 Mini Zero インテリア加湿器 超音波式 静音 最大加湿量 最大16時間 2.8L 大容量 省エネ コンパクト [振動子1+1]",
+      "brand": "Carepodのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/314jDwy-g9L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 14000,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "noise_design"
+      ],
+      "search_key": "Carepod 加湿器 J20 Mini Zero インテリア加湿器 超音波式"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0FPGCXYV5",
+      "asin": "B0FPGCXYV5",
+      "amazon_title": "QUADS(クワッズ) ガラススチーム加湿器 ポット式 2.6L 17畳対応 加湿650ml/h 上部給水 デザイン加湿器 (グレー)",
+      "brand": "QUADS(クワッズ)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71+U+u6PE+L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 19800,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "QUADS(クワッズ) ガラススチーム加湿器 ポット式 2.6L 17畳対応 加湿650"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0FLWB3J83",
+      "asin": "B0FLWB3J83",
+      "amazon_title": "CAWKAY 砲弾式ミスト 加湿器 砲台型 USB給電式 保湿 卓上 小型 乾燥対策 静音 アロマセラピー インテリア リビング 寝室 (ブラック)",
+      "brand": "ブランド: CAWKAY",
+      "image_url": "https://m.media-amazon.com/images/I/61867ZBzjmL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3660,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "noise_design"
+      ],
+      "search_key": "CAWKAY 砲弾式ミスト 加湿器 砲台型 USB給電式 保湿 卓上 小型 乾"
+    }
+  ]
+}
