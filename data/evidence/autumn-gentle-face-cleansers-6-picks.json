@@ -1,0 +1,137 @@
+{
+  "slug": "autumn-gentle-face-cleansers-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/autumn-gentle-face-cleansers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/autumn-gentle-face-cleansers-6-picks/autumn-gentle-face-cleansers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "texture",
+      "label": "洗い上がりの質感",
+      "keywords": [
+        "しっとり",
+        "つっぱらない",
+        "潤い"
+      ]
+    },
+    {
+      "id": "formulation",
+      "label": "洗浄成分・処方",
+      "keywords": [
+        "アミノ酸系",
+        "クリームタイプ",
+        "泡立ち"
+      ]
+    },
+    {
+      "id": "skin-type",
+      "label": "対応肌質",
+      "keywords": [
+        "敏感肌",
+        "乾燥肌",
+        "低刺激"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格帯",
+      "keywords": [
+        "プチプラ",
+        "デパコス",
+        "コスパ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "skin-type",
+      "texture"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0FS1H9PRT",
+      "asin": "B0FS1H9PRT",
+      "amazon_title": "乾燥さん 薬用保湿力泡クレンジング 120mL 【医薬部外品】スキンケア メイク落とし 肌あれ・にきび予防 乾燥ケア 潤い 濃密泡 W洗顔不要",
+      "brand": "乾燥さんのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/5154eM2sl-L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1430,
+      "discovery_score": 1,
+      "selection_score": 0.675,
+      "matched_comparison_axes": [
+        "texture"
+      ],
+      "search_key": "乾燥さん 薬用保湿力泡クレンジング 120mL スキンケア メイク落とし"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0CXHYCXDZ",
+      "asin": "B0CXHYCXDZ",
+      "amazon_title": "レスプルオーガニクス コンフォート フォーム 200mL 詰替え サロン専売品 濃密泡 泡洗顔 洗顔フォーム オーガニックホホバオイル配合 天然精油 爽やか 秋のゆらぎ肌ケア 夏の乾燥ダメージケア スキンケア フェムケア 乾燥肌 脂性肌 混合肌 敏感肌 レディース メンズ キッズ 赤ちゃん 沐浴 ギフト RESPLE organics",
+      "brand": "ブランド: RESPLEorganics",
+      "image_url": "https://m.media-amazon.com/images/I/51GKchsEBUL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 4180,
+      "discovery_score": 1,
+      "selection_score": 0.675,
+      "matched_comparison_axes": [
+        "skin-type"
+      ],
+      "search_key": "RESPLEorganics レスプルオーガニクス コンフォート フォーム 200mL 詰替え"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0H97HD7W4",
+      "asin": "B0H97HD7W4",
+      "amazon_title": "【秋の乾燥・ゆらぎ肌に】ルアンルアン 生せっけん スティック２本セット 【毛穴汚れとくすみを同時にケア】 天然クレイ×17種の東洋ハーブ、美容液56%配合",
+      "brand": "Ruam Ruamのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/711c0E79VLL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 7315,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "Ruam Ruam ルアンルアン 生せっけん スティック２本セット 天然クレイ×17"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0F245YYKB",
+      "asin": "B0F245YYKB",
+      "amazon_title": "SHIRORU (シロル) クリスタル モイスチャークリーム 30g クリーム 【医薬部外品】 アルブチン グリチルリチン酸ジカリウム 美白 スキンケア 肌荒れ防止 フェイスクリーム",
+      "brand": "SHIRORUのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51S6t9jzKtL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3960,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "SHIRORU (シロル) クリスタル モイスチャークリーム 30g クリーム"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B09XM4SX76",
+      "asin": "B09XM4SX76",
+      "amazon_title": "【リニューアル前／濃密もっちり泡の酵素洗顔】N organic Vie 泡洗顔フォーム 約2ヶ月分 パパイン酵素 150ml 毛穴 くすみ ハリ",
+      "brand": "N organic（エヌオーガニック）のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61JjGMyeNyL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3520,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "N organic（エヌオーガニック） N organic Vie 泡洗顔フォーム 約2ヶ月分"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0HGBC7GX4",
+      "asin": "B0HGBC7GX4",
+      "amazon_title": "【泡立て不要、洗顔から始まる保湿】レタッチ RETOUCH ウォータージェルウォッシュ メンズ 洗顔ジェル 毛穴 皮脂 ベタつき 保湿 150g",
+      "brand": "RETOUCHのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51Jzg-D1iIL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1980,
+      "discovery_score": 1,
+      "selection_score": 0.445,
+      "matched_comparison_axes": [],
+      "search_key": "RETOUCH レタッチ RETOUCH ウォータージェルウォッシュ メンズ 洗"
+    }
+  ]
+}
