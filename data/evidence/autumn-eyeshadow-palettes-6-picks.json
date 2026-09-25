@@ -1,0 +1,137 @@
+{
+  "slug": "autumn-eyeshadow-palettes-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/autumn-eyeshadow-palettes-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/autumn-eyeshadow-palettes-6-picks/autumn-eyeshadow-palettes-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "color_range",
+      "label": "発色・カラー展開",
+      "keywords": [
+        "秋カラー",
+        "発色",
+        "パレット配色"
+      ]
+    },
+    {
+      "id": "texture",
+      "label": "質感（マット/パール/ラメ）",
+      "keywords": [
+        "マット",
+        "パール",
+        "ラメ",
+        "質感"
+      ]
+    },
+    {
+      "id": "longevity",
+      "label": "持続力・崩れにくさ",
+      "keywords": [
+        "崩れにくい",
+        "ヨレ",
+        "持続力"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格帯",
+      "keywords": [
+        "プチプラ",
+        "デパコス",
+        "価格"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "color_range",
+      "texture"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0HDHM9DVZ",
+      "asin": "B0HDHM9DVZ",
+      "amazon_title": "12色 アイシャドウパレット 4in1 マルチメイクパレット チーク ハイライト ラメ グリッター 蝶モチーフ 高発色 02#アースカラー系",
+      "brand": "ブランド: LIANGNISHI",
+      "image_url": "https://m.media-amazon.com/images/I/71MXyo0Jf6L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1280,
+      "discovery_score": 1,
+      "selection_score": 0.88,
+      "matched_comparison_axes": [
+        "color_range",
+        "texture"
+      ],
+      "search_key": "LIANGNISHI 12色 アイシャドウパレット 4in1 マルチメイクパレット チ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0FKTJM9VG",
+      "asin": "B0FKTJM9VG",
+      "amazon_title": "CLIO クリオ プロ アイ パレット エアー PRO EYE PALETTE AIR アイシャドウパレット 1個 10 SEASON PLUM",
+      "brand": "CLIO PROFESSIONALのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61-F+GWLGiL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3960,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "CLIO PROFESSIONAL CLIO クリオ プロ アイ パレット エアー PRO EY"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0DHXR1ZV3",
+      "asin": "B0DHXR1ZV3",
+      "amazon_title": "wakemake(ウェイクメイク)ソフトブラーリング アイパレット 03 サンセットブラーリング",
+      "brand": "WAKEMAKEのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61UlF1affoL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2970,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "WAKEMAKE (ウェイクメイク)ソフトブラーリング アイパレット 03 サンセ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0D16XLCSM",
+      "asin": "B0D16XLCSM",
+      "amazon_title": "rom&ndベターザンパレッBetter Than Palette (12 サンディドブリーズガーデン)",
+      "brand": "rom&ndのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71BLN48EnkL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2900,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "rom&nd ベターザンパレッBetter Than Palette (12"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0CG1PJXYT",
+      "asin": "B0CG1PJXYT",
+      "amazon_title": "PERFECT DIARY パーフェクトダイアリー 【人気No.1 / ギフト最適】 動物 子豚 アイシャドウパレット ブルベ夏 (ローズピンク)",
+      "brand": "PERFECT DIARYのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71bxncp09KL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 4390,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "PERFECT DIARY パーフェクトダイアリー 動物 子豚 アイシャドウパレット ブルベ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0C9CJ8NR1",
+      "asin": "B0C9CJ8NR1",
+      "amazon_title": "エトヴォス ミネラルクラッシィシャドー #フレンチフィグ",
+      "brand": "ETVOSのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51CUupPPQYL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 4620,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "ETVOS エトヴォス ミネラルクラッシィシャドー #フレンチフィグ"
+    }
+  ]
+}
