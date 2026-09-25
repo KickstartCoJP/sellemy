@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-mascaras-6-picks-882c986936b4ec74",
+  "request_sha256": "882c986936b4ec74f951309888b5af3b561cd356cd0372882d3662295acb5c39",
+  "image_sha256": "82c528b4aee22f4d0a3b595c2c870e2f7deeb109ea48f4e9954c56464789c277",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-09-25T14:37:53.154467+00:00"
+}

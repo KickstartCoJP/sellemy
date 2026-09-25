@@ -1,0 +1,145 @@
+{
+  "slug": "mascaras-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/mascaras-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/mascaras-6-picks/mascaras-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "finish",
+      "label": "仕上がり",
+      "keywords": [
+        "ロング",
+        "ボリューム",
+        "カール"
+      ]
+    },
+    {
+      "id": "hold",
+      "label": "にじみ・持ち",
+      "keywords": [
+        "皮脂崩れ",
+        "ウォータープルーフ",
+        "にじみにくい"
+      ]
+    },
+    {
+      "id": "removal",
+      "label": "お湯オフ対応",
+      "keywords": [
+        "お湯で落とせる",
+        "オフのしやすさ",
+        "マスカラリムーバー不要"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格帯",
+      "keywords": [
+        "プチプラ",
+        "デパコス",
+        "限定色"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "finish",
+      "hold"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0F3HXKPMR",
+      "asin": "B0F3HXKPMR",
+      "amazon_title": "aopoka マスカラ 崩れないマスカラ ウォータープルーフ 軽やか使用感 ナチュラル仕上 ロング 極細 ブラック スカイハイ 落ちない カールキープ",
+      "brand": "aopokaのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51DI8aUEDaL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1780,
+      "discovery_score": 1,
+      "selection_score": 0.88,
+      "matched_comparison_axes": [
+        "finish",
+        "hold"
+      ],
+      "search_key": "aopoka マスカラ 崩れないマスカラ ウォータープルーフ 軽やか使用感 ナ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0GL7S8WT4",
+      "asin": "B0GL7S8WT4",
+      "amazon_title": "【Amazon 限定/育毛剤 メンズ】グローターンエクソソームヘアアンプルブラック 100ml / lilyeve リリーイブ/メンズ集中スカルプケア/頭皮環境ケア/頭皮用アンプル/グローターン エクソソーム ブラシアンプル BLACK 100ml / 育毛トニック メンズ",
+      "brand": "lilyeveのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51KFrk66EhL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 4000,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "lilyeve グローターンエクソソームヘアアンプルブラック 100ml / l"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B07PWYD5SL",
+      "asin": "B07PWYD5SL",
+      "amazon_title": "Clinique(クリニーク)ラッシュ パワー マスカラ ロング ウェアリング フォーミュラ 01 ブラック オニキス | ぬるま湯 オフ",
+      "brand": "Clinique(クリニーク)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61PsOZAyFmL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 4730,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "finish"
+      ],
+      "search_key": "Clinique(クリニーク) ラッシュ パワー マスカラ ロング ウェアリング フォーミュラ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0FM76RYRP",
+      "asin": "B0FM76RYRP",
+      "amazon_title": "（ クレーリナ ）【 繊細セパレート 】 エアリーカールマスカラ 奥目 ナチュラル ダマなし ロング まつ毛パーマ級 カールキープ 繊細 まつ毛",
+      "brand": "CREERINAのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/810eDbklHkL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1980,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [
+        "finish"
+      ],
+      "search_key": "CREERINA （ クレーリナ ） エアリーカールマスカラ 奥目 ナチュラル ダ"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0DDX8V6DX",
+      "asin": "B0DDX8V6DX",
+      "amazon_title": "ピメル Pmel うそつきマスカラ 透け感ブラック マスカラ ありちゃん ナチュラル セパレート ロング カールキープ ウォータープルーフ カーブブラシ まつげ ファイバー メイク",
+      "brand": "Pmel(ピメル)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61Wmf8lMUrL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1100,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [
+        "finish",
+        "hold"
+      ],
+      "search_key": "Pmel(ピメル) ピメル Pmel うそつきマスカラ 透け感ブラック マスカラ あ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0BPWS2MLW",
+      "asin": "B0BPWS2MLW",
+      "amazon_title": "メイベリン MAYBELLINE スカイハイ マスカラ 02 たそがれブラウン ウォータープルーフ 茶色 ブラウン",
+      "brand": "メイベリンのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51jz3ijacOL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1694,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [
+        "hold"
+      ],
+      "search_key": "メイベリン MAYBELLINE スカイハイ マスカラ 02 たそがれブラウ"
+    }
+  ]
+}
