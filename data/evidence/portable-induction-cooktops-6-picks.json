@@ -1,0 +1,128 @@
+{
+  "slug": "portable-induction-cooktops-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/portable-induction-cooktops-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/portable-induction-cooktops-6-picks/portable-induction-cooktops-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "power_output",
+      "label": "火力・加熱性能",
+      "keywords": [
+        "W数",
+        "急速加熱",
+        "複数モード"
+      ]
+    },
+    {
+      "id": "portability",
+      "label": "携帯性・収納性",
+      "keywords": [
+        "薄型",
+        "軽量",
+        "持ち運び"
+      ]
+    },
+    {
+      "id": "safety_features",
+      "label": "安全機能",
+      "keywords": [
+        "自動電源オフ",
+        "チャイルドロック",
+        "温度センサー"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "portability",
+      "safety_features"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0CPSWSMPH",
+      "asin": "B0CPSWSMPH",
+      "amazon_title": "コンフィー(COMFEE') IHクッキングヒーター 1000ワット IHコンロ 卓上 薄型 ブラック",
+      "brand": "コンフィー(COMFEE')のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51jQl0RshcL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 4990,
+      "discovery_score": 1,
+      "selection_score": 0.7,
+      "matched_comparison_axes": [
+        "portability"
+      ],
+      "search_key": "コンフィー(COMFEE') IHクッキングヒーター 1000ワット IHコンロ 卓上 薄型"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0H7WXZJFT",
+      "asin": "B0H7WXZJFT",
+      "amazon_title": "卓上IHクッキングヒーター 2口 タッチ操作 24時間タイマー チャイルドロック LED表示 静音設計 多彩調理モード 中華鍋対応 ブラック 家庭用 業務用 110V (IHクッキングヒーター)",
+      "brand": "ブランド: Hiroze",
+      "image_url": "https://m.media-amazon.com/images/I/517o-8hZwwL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 27488,
+      "discovery_score": 1,
+      "selection_score": 0.7,
+      "matched_comparison_axes": [
+        "safety_features"
+      ],
+      "search_key": "Hiroze 卓上IHクッキングヒーター 2口 タッチ操作 24時間タイマー"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0C1FL8HFF",
+      "asin": "B0C1FL8HFF",
+      "amazon_title": "エレコム IHクッキングヒーター 専用深鍋付 4段階温度調整 レバー式 鍋掴み付 満水容量約1.5L IH卓上調理なべ HOTDISH cocotte LiFERE ホワイト HAC-IH01CWH",
+      "brand": "エレコム(ELECOM)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51O+JCqJWCL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 11800,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "エレコム(ELECOM) エレコム IHクッキングヒーター 専用深鍋付 4段階温度調整 レ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0BKH7KRCN",
+      "asin": "B0BKH7KRCN",
+      "amazon_title": "HexClad ハイブリッド ノンスティック 片手鍋 【18cm / 1.9L】 [焦げ付き防止加工] IH/オーブン/食洗器 対応 (メーカー直販限定 保証付き) [ヘックスクラッド] 強化ガラス 蓋付き",
+      "brand": "HexCladのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71Z0g-oG-wL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 22100,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "HexClad ハイブリッド ノンスティック 片手鍋 IH/オーブン/食洗器 対"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0GVJ8PV4M",
+      "asin": "B0GVJ8PV4M",
+      "amazon_title": "アイリスオーヤマ IHコンロ IHクッキングヒーター 高火力 卓上 1400W IHK-TA1AZ-B【Amazon.co.jp限定】",
+      "brand": "アイリスオーヤマ(IRIS OHYAMA)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/41vLF+8P5wL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 5290,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [],
+      "search_key": "アイリスオーヤマ(IRIS OHYAMA) アイリスオーヤマ IHコンロ IHクッキングヒーター"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0GTVXFVVX",
+      "asin": "B0GTVXFVVX",
+      "amazon_title": "【フードコーディネーターｘ現役主婦監修】 IH発熱プレート（直径24cm）ガス火専用鍋をIHでｘ平底の鍋やフライパンに対応ｘ取っ手付き",
+      "brand": "ブランド: SIMPS",
+      "image_url": "https://m.media-amazon.com/images/I/61+1lW4pF8L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2580,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [],
+      "search_key": "SIMPS IH発熱プレート（直径24cm）ガス火専用鍋をIHでｘ平底の鍋や"
+    }
+  ]
+}
