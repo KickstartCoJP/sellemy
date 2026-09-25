@@ -1,0 +1,133 @@
+{
+  "slug": "dust-mite-vacuum-cleaners-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/dust-mite-vacuum-cleaners-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/dust-mite-vacuum-cleaners-6-picks/dust-mite-vacuum-cleaners-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "suction_uv",
+      "label": "吸引力・UV除菌機能",
+      "keywords": [
+        "紫外線ランプ",
+        "叩き機能",
+        "吸引力"
+      ]
+    },
+    {
+      "id": "weight_ease",
+      "label": "重さ・操作性",
+      "keywords": [
+        "軽量",
+        "コードレス",
+        "片手操作"
+      ]
+    },
+    {
+      "id": "maintenance",
+      "label": "お手入れのしやすさ",
+      "keywords": [
+        "ダストカップ",
+        "水洗い",
+        "フィルター交換"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "suction_uv",
+      "weight_ease"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0D7C6VH4G",
+      "asin": "B0D7C6VH4G",
+      "amazon_title": "Uwant 布団クリーナー 16Kpaの強力な吸引力 毎分たたき36,000回超高速拍打 超軽量 UV除菌 HEPAフィルタ 布団掃除機 ダニ駆除 ハウスダスト 花粉 ソファ カーペット ベット 梅雨 Set of 1 M100 オレンジと白",
+      "brand": "uwantのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71b-Rog4TuL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 12800,
+      "discovery_score": 1,
+      "selection_score": 0.83,
+      "matched_comparison_axes": [
+        "suction_uv",
+        "weight_ease"
+      ],
+      "search_key": "uwant 布団クリーナー 16Kpaの強力な吸引力 毎分たたき36,000"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0F4WKGDNF",
+      "asin": "B0F4WKGDNF",
+      "amazon_title": "HAUSHOF 布団クリーナー コードレス 布団掃除機 ダニ 掃除機 充電式 ダニ対策 UV除菌 60000回/分高速叩き HEPAフィルター 布団 ベッド ソファ カーペット クッション 毛髪/ゴミ/埃除去 1.4kg軽量化",
+      "brand": "HAUSHOFのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61eXaPVVpIL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 7580,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "weight_ease"
+      ],
+      "search_key": "HAUSHOF 布団クリーナー コードレス 布団掃除機 ダニ 掃除機 充電式 ダ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GQ7VMNXJ",
+      "asin": "B0GQ7VMNXJ",
+      "amazon_title": "MOVA D10 Ultra 布団用掃除機 ダニ駆除 布団クリーナー 14000Pa強力吸引 48000回/分高速たたき",
+      "brand": "MOVAのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/716al-Wu6vL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 10900,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "MOVA D10 Ultra 布団用掃除機 ダニ駆除 布団クリーナー 14"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0G9PT9Y3Q",
+      "asin": "B0G9PT9Y3Q",
+      "amazon_title": "CREATULIZE BOT X1 全自動ベッド掃除ロボット 寝具クリーナー ワンタッチ起動 、手間を軽減、270nmのUV紫外線で除菌 、ダニや菌を99.99％除去 、14AWの強力吸引、毎分15,000回のたたき機能、HEPA高性能フィルター 搭載、コードレスでラクラク使用。 布団・マットレス・ソファ・カーペットのダニやペットの毛をしっかり除去",
+      "brand": "ブランド: CREATULIZE",
+      "image_url": "https://m.media-amazon.com/images/I/51Bg1dnvSyL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 39980,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "weight_ease"
+      ],
+      "search_key": "CREATULIZE BOT X1 全自動ベッド掃除ロボット 寝具クリーナー ワンタッ"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0G5PQCR4W",
+      "asin": "B0G5PQCR4W",
+      "amazon_title": "布団クリーナー UV除菌・ダニ・ウイルス駆除 最大18Kpa 強力吸引＆たたき40,800回 500W",
+      "brand": "Airpherのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71Bp3OKbP4L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 12999,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "Airpher 布団クリーナー UV除菌・ダニ・ウイルス駆除 最大18Kpa 強"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0FG82FGYJ",
+      "asin": "B0FG82FGYJ",
+      "amazon_title": "アイリスオーヤマ ふとんクリーナー 紙パック式 コードレス 2026年新型モデル マジカリーナ 軽量950g 花粉 ハウスダスト ダニ対策 FBD-4AZ1-NH【Amazon.co.jp限定】",
+      "brand": "アイリスオーヤマ(IRIS OHYAMA)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51lgflVwbyL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 19800,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "weight_ease"
+      ],
+      "search_key": "アイリスオーヤマ(IRIS OHYAMA) アイリスオーヤマ ふとんクリーナー 紙パック式 コー"
+    }
+  ]
+}
