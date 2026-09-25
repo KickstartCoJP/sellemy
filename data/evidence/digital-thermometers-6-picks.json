@@ -1,0 +1,144 @@
+{
+  "slug": "digital-thermometers-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/digital-thermometers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/digital-thermometers-6-picks/digital-thermometers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "measurement_time",
+      "label": "測定時間",
+      "keywords": [
+        "予測式",
+        "実測式",
+        "秒で測定"
+      ]
+    },
+    {
+      "id": "measurement_site",
+      "label": "測定部位（脇/耳）",
+      "keywords": [
+        "わき下",
+        "耳式",
+        "非接触"
+      ]
+    },
+    {
+      "id": "memory_app",
+      "label": "記憶機能・アプリ連携",
+      "keywords": [
+        "メモリー機能",
+        "Bluetooth連携",
+        "記録"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格帯",
+      "keywords": [
+        "プチプラ",
+        "家族用",
+        "コスパ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "measurement_site",
+      "measurement_time",
+      "memory_app"
+    ],
+    "brand_count": 5,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0HCN2DCHT",
+      "asin": "B0HCN2DCHT",
+      "amazon_title": "ドリテック(dretec) 電子体温計 TO-601 約10秒予測式 わき用 メモリー機能 発熱アラーム ケース付",
+      "brand": "ドリテック(dretec)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/21PiAREXfAL._SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 1280,
+      "discovery_score": 1,
+      "selection_score": 0.93,
+      "matched_comparison_axes": [
+        "measurement_time",
+        "memory_app"
+      ],
+      "search_key": "ドリテック(dretec) 電子体温計 TO-601 約10秒予測式 わき用 メモリー機能"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0D3CZ6RQ7",
+      "asin": "B0D3CZ6RQ7",
+      "amazon_title": "インセカンズ inSeconds 非接触式温度計 1秒測定 50回記録可能 赤外線温度計 ワンタッチ式 手軽 多機能 高精度 日本語説明書付き",
+      "brand": "ブランド: KIRASTART",
+      "image_url": "https://m.media-amazon.com/images/I/31BZVfxfbKL._SY445_SX342_QL70_ML2_.jpg",
+      "observed_price": 2320,
+      "discovery_score": 1,
+      "selection_score": 0.7,
+      "matched_comparison_axes": [
+        "measurement_site",
+        "memory_app"
+      ],
+      "search_key": "KIRASTART インセカンズ inSeconds 非接触式温度計 1秒測定 50"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0G1SVNPJX",
+      "asin": "B0G1SVNPJX",
+      "amazon_title": "オムロン 純正品 電子体温計 けんおんくん MC-682 バックライト付き 【わき専用】 予測式 15秒のスピード検温 日時付き履歴表示 10回メモリ (測定精度: ＋/-0.1°C) 収納ケース付き (10.8×4.1×1.9cm) 曲がるプローブ ブザー音オフ機能 電池交換可能 マクセル製アルカリ単四電池1本セット",
+      "brand": "ブランド: ノーブランド品",
+      "image_url": "https://m.media-amazon.com/images/I/41Nsuptc2oL._SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 3000,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [
+        "measurement_time"
+      ],
+      "search_key": "ノー品 オムロン 純正品 電子体温計 けんおんくん MC-682 バック"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0B2RK3WHP",
+      "asin": "B0B2RK3WHP",
+      "amazon_title": "オムロン 電子体温計 MC-6810T2 予測式 20秒 アプリ連携 簡単データ転送 OMRON connect対応 水洗いOK",
+      "brand": "Omronのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61tuAWgaXnL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 7036,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [
+        "measurement_time"
+      ],
+      "search_key": "Omron オムロン 電子体温計 MC-6810T2 予測式 20秒 アプリ"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B088R6Q51L",
+      "asin": "B088R6Q51L",
+      "amazon_title": "テルモ 病院用 電子体温計 C207 ET-C207S （旧ET-C205S)",
+      "brand": "ブランド: テルモ",
+      "image_url": "https://m.media-amazon.com/images/I/31B-z-r+8pL._SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 2674,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [],
+      "search_key": "テルモ 病院用 電子体温計 C207 ET-C207S （旧ET-C20"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0GV2B45DG",
+      "asin": "B0GV2B45DG",
+      "amazon_title": "タニタ電子体温計 BT-47A",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/215utyn8ksL._SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 2728,
+      "discovery_score": 1,
+      "selection_score": 0.45,
+      "matched_comparison_axes": [],
+      "search_key": "タニタ電子体温計 BT-47A"
+    }
+  ]
+}
