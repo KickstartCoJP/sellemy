@@ -1,0 +1,151 @@
+{
+  "slug": "portable-monitors-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/portable-monitors-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/portable-monitors-6-picks/portable-monitors-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "resolution",
+      "label": "画面サイズ・解像度",
+      "keywords": [
+        "インチ",
+        "解像度",
+        "画質"
+      ]
+    },
+    {
+      "id": "connectivity",
+      "label": "接続方式・対応機器",
+      "keywords": [
+        "USB-C",
+        "HDMI",
+        "対応機器"
+      ]
+    },
+    {
+      "id": "portability",
+      "label": "携帯性・重さ",
+      "keywords": [
+        "軽量",
+        "薄型",
+        "持ち運び"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格帯",
+      "keywords": [
+        "価格",
+        "コスパ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "connectivity",
+      "portability",
+      "resolution"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0CMX7ND45",
+      "asin": "B0CMX7ND45",
+      "amazon_title": "【Amazon限定ブランド】VisionOwl モバイルモニター 10.5インチ 超軽量249ｇ 高輝度450nits 100%sRGB広色域 画像比自動適合 FHD1280P 極細ベゼル アルミ合金製筐体 光沢IPSパネル VESA対応 USB Type-C/mini HDMI接続可 PS4/XBOX/Switch/PC/Macなど対応 XL-105",
+      "brand": "VisionOwlのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71qdYzCmvRL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 12999,
+      "discovery_score": 1,
+      "selection_score": 1.11,
+      "matched_comparison_axes": [
+        "connectivity",
+        "portability",
+        "resolution"
+      ],
+      "search_key": "VisionOwl モバイルモニター 10.5インチ 超軽量249ｇ 高輝度450n"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0GCDF8QLB",
+      "asin": "B0GCDF8QLB",
+      "amazon_title": "【2026夏新登場】kksmart モバイル・ゲーミングモニター 16インチ 144Hz 2.5K解像度(2560x1600) 100%sRGB広色域 Switch2ドック不要 軽量670g ベゼルレス WQXGA 画像比調整可能 非光沢IPSパネル 収納ケース付 モバイルモニター Type-C/miniHDMI接続可能 PS5/XBOX/Switch/PC/Macなど対応 NK-16H",
+      "brand": "kksmartのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/81oL8owrYsL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 20999,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [
+        "connectivity",
+        "portability",
+        "resolution"
+      ],
+      "search_key": "kksmart モバイル・ゲーミングモニター 16インチ 144Hz 2.5K解"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0FYMDT5PZ",
+      "asin": "B0FYMDT5PZ",
+      "amazon_title": "InnoView 15.6インチ 4K デュアル モバイルモニター ドライバー不要 モバイルモニター2画面 3840x2160P 100% sRGB 折りたたみ式デュアルディスプレイ モバイルディスプレイ 自動回転315° フル機能Type-C/DP/標準HDMI IPSパネル 壁掛けに対応 自立スタンド付き",
+      "brand": "InnoViewのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71Ngt9CrALL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 69999,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [
+        "connectivity",
+        "resolution"
+      ],
+      "search_key": "InnoView 15.6インチ 4K デュアル モバイルモニター ドライバー不要"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0DXPC5VFK",
+      "asin": "B0DXPC5VFK",
+      "amazon_title": "デュアルディスプレイ ダブルモニター トリプルモニター ノートパソコンスクリーンエクスパンダ 14インチノ1080P HDMI FHD、13インチ-16.3インチノートパソコンに適した ，Windows/Mac/Android/PS 5に適用",
+      "brand": "ブランド: Laptomo",
+      "image_url": "https://m.media-amazon.com/images/I/81y8-19QRIL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 27998,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [
+        "connectivity",
+        "resolution"
+      ],
+      "search_key": "Laptomo デュアルディスプレイ ダブルモニター トリプルモニター ノートパ"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0DSFXDT68",
+      "asin": "B0DSFXDT68",
+      "amazon_title": "KEEPTIME モバイルモニター 23.8\" 1080P 100HZ 100%色域 非光沢 USB-C/HDMI ノートPC/スマホ/ゲーム機対応",
+      "brand": "KEEPTIMEのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/81LfkfltFfL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "observed_price": 22999,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [
+        "connectivity"
+      ],
+      "search_key": "KEEPTIME モバイルモニター 23.8\" 1080P 100HZ 100%色"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0HHM65T2M",
+      "asin": "B0HHM65T2M",
+      "amazon_title": "S123E-GS モバイルモニター 12.3インチ タッチパネル タッチペン対応 Switch2ドック不要 OTG対応 1920×1280",
+      "brand": "ブランド: HAILESI",
+      "image_url": "https://m.media-amazon.com/images/I/81F3VbB0GJL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 12999,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "resolution"
+      ],
+      "search_key": "HAILESI S123E-GS モバイルモニター 12.3インチ タッチパネル"
+    }
+  ]
+}
