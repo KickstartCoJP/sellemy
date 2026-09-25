@@ -121,10 +121,18 @@ def backfill() -> dict:
 
 def generate() -> dict:
     rows = json.loads(ARTICLES.read_text(encoding='utf-8'))
+    sitemap = _sitemap_articles()
     published = [row for row in rows if row.get('status') == 'published' and row.get('published_at')]
     missing_published_at = [row.get('slug') for row in rows if row.get('status') == 'published' and not row.get('published_at')]
     if missing_published_at:
         raise ValueError(f'published articles missing published_at: {missing_published_at}')
+    published_slugs = {row.get('slug') for row in published}
+    sitemap_slugs = set(sitemap)
+    if published_slugs != sitemap_slugs:
+        raise ValueError(
+            f'published metadata/sitemap mismatch: metadata_only={sorted(published_slugs - sitemap_slugs)}, '
+            f'sitemap_only={sorted(sitemap_slugs - published_slugs)}'
+        )
     dates = []
     seen_ids = set()
     for row in published:
@@ -148,7 +156,8 @@ def generate() -> dict:
         'generated_at': datetime.now(JST).isoformat(),
         'timezone': 'Asia/Tokyo',
         'metric_ids': ['published_article_count_daily', 'published_article_count'],
-        'published_articles': len(published),
+        'published_articles': len(sitemap),
+        'sitemap_article_urls': len(sitemap),
         'unlisted_or_nonpublished_articles': len(rows) - len(published),
         'daily': daily,
     }
