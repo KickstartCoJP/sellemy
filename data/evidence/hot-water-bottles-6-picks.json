@@ -1,0 +1,134 @@
+{
+  "slug": "hot-water-bottles-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/hot-water-bottles-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/hot-water-bottles-6-picks/hot-water-bottles-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "heating_method",
+      "label": "加熱方式",
+      "keywords": [
+        "電子レンジ対応",
+        "お湯注ぎ",
+        "電気式"
+      ]
+    },
+    {
+      "id": "heat_retention",
+      "label": "保温持続時間",
+      "keywords": [
+        "長時間保温",
+        "冷めにくい",
+        "一晩持続"
+      ]
+    },
+    {
+      "id": "material_safety",
+      "label": "素材・耐久性",
+      "keywords": [
+        "低温やけど防止",
+        "カバー付き",
+        "耐熱素材"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "heat_retention",
+      "material_safety"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0FG2MCKQX",
+      "asin": "B0FG2MCKQX",
+      "amazon_title": "ゆたんぽ シリコン湯たんぽ 1.1L 電子レンジ専用 柔らかい 洗える 電気不要 保温カバー付き 防爆仕様 ヘラジカ柄",
+      "brand": "JEEYINGのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71dLNDWbl-L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2899,
+      "discovery_score": 1,
+      "selection_score": 0.675,
+      "matched_comparison_axes": [
+        "material_safety"
+      ],
+      "search_key": "JEEYING ゆたんぽ シリコン湯たんぽ 1.1L 電子レンジ専用 柔らかい"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HCBQ8QVG",
+      "asin": "B0HCBQ8QVG",
+      "amazon_title": "【業界新バージョン】YUSIDO 湯たんぽ 充電式 ゆたんぽ 蓄熱式 電気湯たんぽ 4~12H長時間保温 省エネ みけたん",
+      "brand": "YUSIDOのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/716J7L3TrIL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 3580,
+      "discovery_score": 1,
+      "selection_score": 0.675,
+      "matched_comparison_axes": [
+        "heat_retention"
+      ],
+      "search_key": "YUSIDO 湯たんぽ 充電式 ゆたんぽ 蓄熱式 電気湯たんぽ 4~12H長時"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HHNTM31G",
+      "asin": "B0HHNTM31G",
+      "amazon_title": "湯たんぽ 北国のこたつ 充電式 蓄熱式 最大12時間 約8〜12分充電 空焚き・過圧防止を本体内蔵 電気湯たんぽ カバー付き 電気あんか 日本企業",
+      "brand": "北国のこたつのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71EILa2QzRL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3980,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "material_safety"
+      ],
+      "search_key": "北国のこたつ 湯たんぽ 北国のこたつ 充電式 蓄熱式 最大12時間 約8〜12"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0DF2GNNGD",
+      "asin": "B0DF2GNNGD",
+      "amazon_title": "BeeTool 湯たんぽ 充電式 ゆたんぽ 大きめサイズ&PSE認証済み 37x25x5cm 4~15H長時間保温 省エネ 湯タンポ エコ",
+      "brand": "BeeToolのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/7171NVaeJSL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "observed_price": 2998,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "heat_retention"
+      ],
+      "search_key": "BeeTool 湯たんぽ 充電式 ゆたんぽ 大きめサイズ&PSE認証済み 37x"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0DDKQQ6LD",
+      "asin": "B0DDKQQ6LD",
+      "amazon_title": "[山善] 蓄熱式 湯たんぽ 電気湯たんぽ コードレス 省エネ あんか カイロ 最大連続使用8時間 ぬいぐるみ 足元 手元 YTY-A410(CAT)Hot Water Bag",
+      "brand": "山善(YAMAZEN)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51C7plSU0uL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3297,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "山善(YAMAZEN) 蓄熱式 湯たんぽ 電気湯たんぽ コードレス 省エネ あんか カイ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0CGX8J7P9",
+      "asin": "B0CGX8J7P9",
+      "amazon_title": "湯たんぽ 充電式 ゆたんぽ 特大サイズ&PSE認証済み 37x25x5cm エコ 湯タンポ 4~15H長時間保温 省エネ",
+      "brand": "ブランド: MOOLOTY",
+      "image_url": "https://m.media-amazon.com/images/I/81zRS7F7UeL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "observed_price": 3180,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "heat_retention"
+      ],
+      "search_key": "MOOLOTY 湯たんぽ 充電式 ゆたんぽ 特大サイズ&PSE認証済み 37x2"
+    }
+  ]
+}
