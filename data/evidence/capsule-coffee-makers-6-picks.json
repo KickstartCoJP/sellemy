@@ -1,0 +1,137 @@
+{
+  "slug": "capsule-coffee-makers-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/capsule-coffee-makers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/capsule-coffee-makers-6-picks/capsule-coffee-makers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "capsule_cost",
+      "label": "対応カプセル・ランニングコスト",
+      "keywords": [
+        "専用カプセル",
+        "ランニングコスト",
+        "カプセル種類"
+      ]
+    },
+    {
+      "id": "extraction_speed",
+      "label": "抽出スピード・温度",
+      "keywords": [
+        "抽出時間",
+        "高温抽出",
+        "エスプレッソ対応"
+      ]
+    },
+    {
+      "id": "size_design",
+      "label": "サイズ・デザイン",
+      "keywords": [
+        "コンパクト",
+        "省スペース",
+        "デザイン性"
+      ]
+    },
+    {
+      "id": "price_range",
+      "label": "価格帯",
+      "keywords": [
+        "本体価格",
+        "カプセル価格",
+        "コスパ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "capsule_cost",
+      "size_design"
+    ],
+    "brand_count": 5,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0BBTYZVKZ",
+      "asin": "B0BBTYZVKZ",
+      "amazon_title": "ネスプレッソ 人気コーヒーセット 5種 オリジナル専用カプセル 50杯分| RO-E05K01",
+      "brand": "Nespressoのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51kwbK2R+AL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 5454,
+      "discovery_score": 1,
+      "selection_score": 0.7,
+      "matched_comparison_axes": [
+        "capsule_cost"
+      ],
+      "search_key": "Nespresso ネスプレッソ 人気コーヒーセット 5種 オリジナル専用カプセル"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B00IIFDYE8",
+      "asin": "B00IIFDYE8",
+      "amazon_title": "ネスプレッソ カプセル式コーヒーメーカー イニッシア ブラック 水タンク容量0.6L コンパクト 軽量 D40-BK-W",
+      "brand": "Nespressoのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71CjHw11bBL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 14300,
+      "discovery_score": 1,
+      "selection_score": 0.58,
+      "matched_comparison_axes": [
+        "size_design"
+      ],
+      "search_key": "Nespresso ネスプレッソ カプセル式コーヒーメーカー イニッシア ブラック"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0FFNCJXTM",
+      "asin": "B0FFNCJXTM",
+      "amazon_title": "xBloom Studio 全自動 コーヒーメーカー 【バリスタの注ぎを忠実に再現】 ドリップ式 白",
+      "brand": "xBloomのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51dHlFwR2JL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 103000,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "xBloom Studio 全自動 コーヒーメーカー ドリップ式 白"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0CJDLXD1R",
+      "asin": "B0CJDLXD1R",
+      "amazon_title": "ネスカフェ ゴールドブレンド バリスタ スリム マットブラック,コーヒーマシン",
+      "brand": "Nestléのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61sxiHpRDjL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 15000,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "Nestlé ネスカフェ ゴールドブレンド バリスタ スリム マットブラック"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0CHXPH6SR",
+      "asin": "B0CHXPH6SR",
+      "amazon_title": "ネスカフェ ドルチェ グスト ジェニオ エス ベーシック アッシュグレー バラエティカプセルセット",
+      "brand": "Nescafé Dolce Gustoのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61VOdcsStJL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 14801,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "Nescafé Dolce Gusto ネスカフェ ドルチェ グスト ジェニオ エス ベーシック"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0HDN7SDGM",
+      "asin": "B0HDN7SDGM",
+      "amazon_title": "UCC コーヒーメーカー ドリップポッド DP3 ホワイト カプセル28杯付セット",
+      "brand": "ブランド: Connect Days",
+      "image_url": "https://m.media-amazon.com/images/I/61dnOfM2UfL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 13200,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [],
+      "search_key": "Connect Days UCC コーヒーメーカー ドリップポッド DP3 ホワイト カプ"
+    }
+  ]
+}
