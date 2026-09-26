@@ -1,0 +1,137 @@
+{
+  "slug": "monitor-arms-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/monitor-arms-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/monitor-arms-6-picks/monitor-arms-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "load_capacity",
+      "label": "耐荷重・対応サイズ",
+      "keywords": [
+        "耐荷重",
+        "モニターサイズ",
+        "対応幅"
+      ]
+    },
+    {
+      "id": "mounting_type",
+      "label": "取付方式",
+      "keywords": [
+        "クランプ",
+        "グロメット",
+        "設置"
+      ]
+    },
+    {
+      "id": "arm_movement",
+      "label": "可動性",
+      "keywords": [
+        "ガススプリング",
+        "上下左右",
+        "角度調整"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "arm_movement",
+      "load_capacity",
+      "mounting_type"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0HBB3JRN8",
+      "asin": "B0HBB3JRN8",
+      "amazon_title": "Pixio モニターアーム スリム PS3S Wave ブラック シングル 17-32インチ VESA 耐荷重9kg ガススプリング式 黒 クランプ",
+      "brand": "Pixioのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51F0yeH6vcL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 14980,
+      "discovery_score": 1,
+      "selection_score": 1.06,
+      "matched_comparison_axes": [
+        "arm_movement",
+        "load_capacity",
+        "mounting_type"
+      ],
+      "search_key": "Pixio モニターアーム スリム PS3S Wave ブラック シングル"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0DX24CSWD",
+      "asin": "B0DX24CSWD",
+      "amazon_title": "COFO 無重力モニターアーム Pro シングル 17〜40インチ、2.5〜14kg対応 角度/高さ 上下左右 調整可能 ダブルメカニカルスプリング式 デスク設置用 スチール アルミ合金製 ブラック",
+      "brand": "COFOのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51eeX6T2gIL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 21980,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "arm_movement",
+        "mounting_type"
+      ],
+      "search_key": "COFO 無重力モニターアーム Pro シングル 17〜40インチ、2.5"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0CZ7XG84D",
+      "asin": "B0CZ7XG84D",
+      "amazon_title": "ULTRARMヘビーデューティ ウルトラワイド曲面モニター用アーム モジュラーデザイン",
+      "brand": "ULTRARMのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71ul3u-oqiL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 18000,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "ULTRARM ヘビーデューティ ウルトラワイド曲面モニター用アーム モジュラー"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B07Q8TJ2KL",
+      "asin": "B07Q8TJ2KL",
+      "amazon_title": "ERGOTRON エルゴトロン LX モニターアーム デスクマウント ブラック 黒 34インチまで対応 国内正規品 10年保証付",
+      "brand": "Ergotronのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/610HqQsInRL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 18200,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "Ergotron エルゴトロン LX モニターアーム デスクマウント ブラック 黒"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0HBV2YL66",
+      "asin": "B0HBV2YL66",
+      "amazon_title": "エレコム モニターアーム シングル 1画面 13-32インチ対応 ガススプリング式 耐荷重2-10kg VESA規格対応 ブラック DPAWSSA01BK",
+      "brand": "エレコム(ELECOM)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/511nSRHtYTL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3480,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [
+        "arm_movement",
+        "load_capacity"
+      ],
+      "search_key": "エレコム(ELECOM) エレコム モニターアーム シングル 1画面 13-32インチ対応"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0H6V4QTFQ",
+      "asin": "B0H6V4QTFQ",
+      "amazon_title": "モニターアーム シングル Pivotix 17〜32インチ対応 2〜9kg耐荷重 VESA 75×75/100×100 機械式スプリング",
+      "brand": "ブランド: Pivotix",
+      "image_url": "https://m.media-amazon.com/images/I/61fViUxzZsL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3580,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [
+        "load_capacity"
+      ],
+      "search_key": "Pivotix モニターアーム シングル Pivotix 17〜32インチ対応"
+    }
+  ]
+}

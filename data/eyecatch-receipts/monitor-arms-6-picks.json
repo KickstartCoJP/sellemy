@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-monitor-arms-6-picks-1e4935e29f6f70d1",
+  "request_sha256": "1e4935e29f6f70d1ef777ab48357f0c20eba32b8ce521c8debde04ef6e9e500c",
+  "image_sha256": "c6229d25ea576df1f4d9bfdf9e89eaec7d0656524adf68ac63ee925067f3ea77",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-09-26T05:07:02.795527+00:00"
+}
