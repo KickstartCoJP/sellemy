@@ -1,0 +1,142 @@
+{
+  "slug": "4k-desktop-monitors-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/4k-desktop-monitors-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/4k-desktop-monitors-6-picks/4k-desktop-monitors-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "resolution_size",
+      "label": "画面サイズ・解像度",
+      "keywords": [
+        "27インチ",
+        "32インチ",
+        "4K",
+        "5K"
+      ]
+    },
+    {
+      "id": "connectivity",
+      "label": "接続端子・機能",
+      "keywords": [
+        "USB-C給電",
+        "HDMI",
+        "ピボット対応"
+      ]
+    },
+    {
+      "id": "use_case",
+      "label": "用途適性",
+      "keywords": [
+        "クリエイター向け",
+        "ビジネス向け",
+        "ゲーミング対応"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "connectivity",
+      "resolution_size"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0H29BM2PR",
+      "asin": "B0H29BM2PR",
+      "amazon_title": "【Amazon.co.jp限定】JAPANNEXT 27インチ IPSパネル搭載 120Hz/1ms(MPRT)対応 4K(3840×2160)解像度 ゲーミングモニター JN-iA27G120U2 HDMI2.1 DP sRGB:100% HDR400相当 PS5 4K:120Hz接続 VRR【2年保証】",
+      "brand": "JAPANNEXTのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71PiMbVV0AL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 33980,
+      "discovery_score": 1,
+      "selection_score": 0.88,
+      "matched_comparison_axes": [
+        "connectivity",
+        "resolution_size"
+      ],
+      "search_key": "JAPANNEXT 27インチ IPSパネル搭載 120Hz/1ms(MPRT)対応"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0GZ89WZBN",
+      "asin": "B0GZ89WZBN",
+      "amazon_title": "ハイセンス【3年保証】75V型 75E60S 4K 量子ドット 倍速パネル 144Hz VRR ゲームモード ネット動画 スマート ダブル録画 チューナー内蔵 Alexa AirPlay2 液晶 テレビ",
+      "brand": "Hisenseのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/81u5NF4bdhL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 149800,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "resolution_size"
+      ],
+      "search_key": "Hisense ハイセンス 75V型 75E60S 4K 量子ドット 倍速パネル"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GWHWRBW4",
+      "asin": "B0GWHWRBW4",
+      "amazon_title": "INNOCN GA32V1M MAX 32インチ 4K ゲーミングモニター QD-MiniLED AR低反射×ATW広視野角 4K 160Hz/FHD 320Hz デュアルモード 2304ゾーン HDR1000 0.5ms MPCS Type-C 90W KVM USBハブ HDMI2.1 PS5対応 ホワイト",
+      "brand": "INNOCNのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61Iq1-A-XOL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 113810,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "connectivity",
+        "resolution_size"
+      ],
+      "search_key": "INNOCN GA32V1M MAX 32インチ 4K ゲーミングモニター Q"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0FYMDT5PZ",
+      "asin": "B0FYMDT5PZ",
+      "amazon_title": "InnoView 15.6インチ 4K デュアル モバイルモニター ドライバー不要 モバイルモニター2画面 3840x2160P 100% sRGB 折りたたみ式デュアルディスプレイ モバイルディスプレイ 自動回転315° フル機能Type-C/DP/標準HDMI IPSパネル 壁掛けに対応 自立スタンド付き",
+      "brand": "InnoViewのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71Ngt9CrALL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 69999,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "connectivity",
+        "resolution_size"
+      ],
+      "search_key": "InnoView 15.6インチ 4K デュアル モバイルモニター ドライバー不要"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0DPQCL4C7",
+      "asin": "B0DPQCL4C7",
+      "amazon_title": "KTC A32Q8 スマートモニター 32インチ 4K UHD 3840 * 2160P | Google TV搭載｜HDR10 | Dolby Audio対応｜USB-C＆HDMI&DP 多機能ポート｜分割画面機能｜キーボード＆マウス一元管理｜ストリーミング＆キャスティング対応｜テレワーク＆エンタメに最適 | 5W*2 Dolby Audio",
+      "brand": "KTCのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71RezHkrAmL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 49980,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "connectivity",
+        "resolution_size"
+      ],
+      "search_key": "KTC A32Q8 スマートモニター 32インチ 4K UHD 3840"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0GXFY2N8C",
+      "asin": "B0GXFY2N8C",
+      "amazon_title": "CRUA 28インチ 4K+ 60Hz PCモニター 3840×2560 IPS Type-C HDMI2.0 DP1.4 スピーカー内蔵 ブラック",
+      "brand": "CRUAのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71LVWQYxtCL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 22999,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [
+        "connectivity",
+        "resolution_size"
+      ],
+      "search_key": "CRUA 28インチ 4K+ 60Hz PCモニター 3840×2560"
+    }
+  ]
+}
