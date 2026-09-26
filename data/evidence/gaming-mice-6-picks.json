@@ -1,0 +1,131 @@
+{
+  "slug": "gaming-mice-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/gaming-mice-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/gaming-mice-6-picks/gaming-mice-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "sensor_dpi",
+      "label": "センサー性能・DPI",
+      "keywords": [
+        "高DPI",
+        "トラッキング精度",
+        "応答速度"
+      ]
+    },
+    {
+      "id": "connection",
+      "label": "接続方式（有線/無線）",
+      "keywords": [
+        "無線",
+        "有線",
+        "低遅延"
+      ]
+    },
+    {
+      "id": "ergonomics",
+      "label": "形状・重量・握りやすさ",
+      "keywords": [
+        "軽量",
+        "エルゴノミクス",
+        "つかみ持ち"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "connection",
+      "ergonomics"
+    ],
+    "brand_count": 2,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0G3WJN5JK",
+      "asin": "B0G3WJN5JK",
+      "amazon_title": "マウス 無線 (BT 5.1+2.4G) Bluetooth 静音 Type-C充電式 けいたいべんり コンパクト軽量 左右両手対応 ワイヤレスマウスMac/Windows/ノートパソコン/パソコン/ipad 対応 TELEC認証取得済み - ピンク",
+      "brand": "Cimetechのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61q368VuftL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2170,
+      "discovery_score": 1,
+      "selection_score": 0.88,
+      "matched_comparison_axes": [
+        "connection",
+        "ergonomics"
+      ],
+      "search_key": "Cimetech マウス 無線 (BT 5.1+2.4G) Bluetooth 静"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HFWP2TYQ",
+      "asin": "B0HFWP2TYQ",
+      "amazon_title": "マウス 無線 Bluetooth5.2 静音 ワイヤレスマウス（戻る/進むボタン搭載） 瞬時接続 高感度 ブルートゥース 2.4GHz 3段階DPI切替 ゲーミングマウス 光学式 高耐久性 Mac/Windows/Surface/PC/Macbookに対応 兼容 PC",
+      "brand": "AJLのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51OcnijBscL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2080,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [
+        "connection"
+      ],
+      "search_key": "AJL マウス 無線 Bluetooth5.2 静音 ワイヤレスマウス（"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HCNPYPPP",
+      "asin": "B0HCNPYPPP",
+      "amazon_title": "Logicool G PRO X3 SUPERSTRIKE LIGHTSPEED ワイヤレス ゲーミングマウス G-PPD-X3-STRK-PEd",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/610wXOLjdHL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 29500,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [],
+      "search_key": "Logicool G PRO X3 SUPERSTRIKE LI"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0GLM7WKVH",
+      "asin": "B0GLM7WKVH",
+      "amazon_title": "Razer レイザー Viper V4 Pro ゲーミングマウス 49g 超軽量 8,000Hzドングル同梱 ワイヤレス HyperSpeed Wireless 第3世代 Razer Focus Pro オプティカルセンサー 50,000DPI 第4世代 オプティカルマウススイッチ 180時間駆動 オプティカルスクロールホイール 6ボタン ヴァイパーブイフォー プロ 【日本正規代理店保証品】",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71UvLd6bHAL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 26980,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [
+        "ergonomics"
+      ],
+      "search_key": "Razer レイザー Viper V4 Pro ゲーミングマウス"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0GGX35X72",
+      "asin": "B0GGX35X72",
+      "amazon_title": "【Amazon.co.jp限定】 Logicool G PRO X2 SUPERSTRIKE ゲーミングマウス G-PPD-004WL-STRKd",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61bPoEYL6RL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 26500,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [],
+      "search_key": "Logicool G PRO X2 SUPERSTRIKE ゲー"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0FG6M4DFP",
+      "asin": "B0FG6M4DFP",
+      "amazon_title": "【Amazon.co.jp限定】Logicool G PRO SUPERLIGHT ワイヤレス ゲーミングマウス G-PPD-004WLSE-BKd",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51nEL5eX9UL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 18600,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [],
+      "search_key": "Logicool G PRO SUPERLIGHT ワイヤレス"
+    }
+  ]
+}
