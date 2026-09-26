@@ -1,0 +1,139 @@
+{
+  "slug": "cushion-foundations-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/cushion-foundations-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/cushion-foundations-6-picks/cushion-foundations-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "coverage",
+      "label": "カバー力・仕上がり",
+      "keywords": [
+        "カバー力",
+        "艶肌",
+        "マット"
+      ]
+    },
+    {
+      "id": "moisture",
+      "label": "保湿成分・持続力",
+      "keywords": [
+        "保湿",
+        "乾燥",
+        "崩れにくい"
+      ]
+    },
+    {
+      "id": "portability",
+      "label": "携帯性・詰め替え対応",
+      "keywords": [
+        "コンパクト",
+        "持ち歩き",
+        "レフィル"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格帯",
+      "keywords": [
+        "価格",
+        "コスパ",
+        "デパコス"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "coverage",
+      "moisture",
+      "portability"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0F36WHNH6",
+      "asin": "B0F36WHNH6",
+      "amazon_title": "銀座ステファニー化粧品 エイジングカバー クッションファンデーション 乾燥対策/保湿/プレゼント/ファンデーション/ナチュラルオークル/エイジングケア/カバー力/高密着/美容液/スキンケア/年齢肌/紫外線 / spf50 / ナイアシンアミド",
+      "brand": "銀座ステファニー化粧品のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61gwofu+LML._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 4980,
+      "discovery_score": 1,
+      "selection_score": 0.83,
+      "matched_comparison_axes": [
+        "coverage",
+        "moisture"
+      ],
+      "search_key": "銀座ステファニー化粧品 エイジングカバー クッションファンデーション 乾燥対策/保湿/プ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0DT485D1S",
+      "asin": "B0DT485D1S",
+      "amazon_title": "メイベリン MAYBELLINE SPステイ クリームパクト ファンデーション レフィル N30 クリーム ハイカバー 敏感肌",
+      "brand": "メイベリンのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51tYuSF2Y5L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3291,
+      "discovery_score": 1,
+      "selection_score": 0.7,
+      "matched_comparison_axes": [
+        "portability"
+      ],
+      "search_key": "メイベリン MAYBELLINE SPステイ クリームパクト ファンデーショ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GNPRL25W",
+      "asin": "B0GNPRL25W",
+      "amazon_title": "ByUR バイユア クッションファンデ フルカバー グロークッション V2 SPF50+ PA++++ 15g (#N17 ナチュラルフェア)",
+      "brand": "ByURのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/711Lf2Dc8KL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3960,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "ByUR バイユア クッションファンデ フルカバー グロークッション V2"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0CLD12V9H",
+      "asin": "B0CLD12V9H",
+      "amazon_title": "N organic &wolf クリームファンデーション 本体 light beige SF-002 12.5g なめらか素肌感",
+      "brand": "N organic（エヌオーガニック）のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61kBgxWmvSL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 4180,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "N organic（エヌオーガニック） N organic &wolf クリームファンデーション"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0HD7DD6WZ",
+      "asin": "B0HD7DD6WZ",
+      "amazon_title": "セザンヌ セラムクッションファンデーション〈詰替〉N10 明るいオークル系",
+      "brand": "セザンヌのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51GNzr0eifL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 957,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [],
+      "search_key": "セザンヌ セラムクッションファンデーション〈詰替〉N10 明るいオークル系"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0H9QLKLRM",
+      "asin": "B0H9QLKLRM",
+      "amazon_title": "プリマヴィスタ グロウカバー クッション ピンクオークル01 11g クッションファンデーション",
+      "brand": "プリマヴィスタのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51Sbr0G75qL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3300,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [],
+      "search_key": "プリマヴィスタ グロウカバー クッション ピンクオークル01 11g クッション"
+    }
+  ]
+}
