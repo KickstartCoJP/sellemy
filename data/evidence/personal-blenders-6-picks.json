@@ -1,0 +1,145 @@
+{
+  "slug": "personal-blenders-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/personal-blenders-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/personal-blenders-6-picks/personal-blenders-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "power",
+      "label": "パワー・容量",
+      "keywords": [
+        "W数",
+        "容量",
+        "粉砕力"
+      ]
+    },
+    {
+      "id": "portability",
+      "label": "携帯性",
+      "keywords": [
+        "ボトルブレンダー",
+        "持ち運び",
+        "コードレス"
+      ]
+    },
+    {
+      "id": "cleaning",
+      "label": "お手入れのしやすさ",
+      "keywords": [
+        "丸洗い",
+        "食洗機対応",
+        "パーツ数"
+      ]
+    },
+    {
+      "id": "attachments",
+      "label": "付属機能",
+      "keywords": [
+        "氷対応",
+        "アタッチメント",
+        "ミル機能"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "attachments",
+      "portability",
+      "power"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0GYRR1T18",
+      "asin": "B0GYRR1T18",
+      "amazon_title": "ジューサー ミキサー スムージー 一台多役 650ml大容量 2段階変速 ６枚刃 450Wハイパワー 氷も砕ける 持ち運びやすい",
+      "brand": "MOOKA LIFEのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71qmJXZZG7L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3680,
+      "discovery_score": 1,
+      "selection_score": 0.93,
+      "matched_comparison_axes": [
+        "portability",
+        "power"
+      ],
+      "search_key": "MOOKA LIFE ジューサー ミキサー スムージー 一台多役 650ml大容量 2"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0F161NNQF",
+      "asin": "B0F161NNQF",
+      "amazon_title": "BRUNO ブルーノ マルチスティックブレンダー2 離乳食 1台5役 (混ぜる つぶす 刻む 砕く 泡立てる) アイボリー ギフト プレゼント お祝い 人気 キッチン家電 ミキサー フードミキサー フードプロセッサー 氷も砕ける 泡立て 泡立て器 洗いやすい おしゃれ かわいい 刻む 氷対応 初心者 つぶす アタッチメント 5役 BOE140-IV",
+      "brand": "BRUNOのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61CbDj8QIcL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "observed_price": 7000,
+      "discovery_score": 1,
+      "selection_score": 0.7,
+      "matched_comparison_axes": [
+        "attachments"
+      ],
+      "search_key": "BRUNO ブルーノ マルチスティックブレンダー2 離乳食 1台5役 (混ぜ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0G78P7M66",
+      "asin": "B0G78P7M66",
+      "amazon_title": "Acasas+ コードレス ハンドブレンダー 【離乳食対応】 1台7役 氷も砕ける 9段階変速 【2026年 新型収納プレート版】",
+      "brand": "ブランド: Acasas+",
+      "image_url": "https://m.media-amazon.com/images/I/51NotqkAHEL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 9980,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [
+        "portability"
+      ],
+      "search_key": "Acasas+ コードレス ハンドブレンダー 1台7役 氷も砕ける 9段階変速"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0G3XPS1J7",
+      "asin": "B0G3XPS1J7",
+      "amazon_title": "ハンドブレンダー コードレス 強力モーター16500rpm 充電式 ブレンダー つぶす/混ぜる/泡立てる1台4役 ハンドミキサー",
+      "brand": "KASURAWAのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61NfL++S8CL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 8650,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [
+        "portability"
+      ],
+      "search_key": "KASURAWA ハンドブレンダー コードレス 強力モーター16500rpm 充電"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0C55MS978",
+      "asin": "B0C55MS978",
+      "amazon_title": "ミキサー 業務用ミキサー 食器洗い機可 ブレンダー 2L 氷も砕ける ジュース タイマー付 ブレンダー スピード調整 野菜果物 ジューサー アイスクラッシャー スムージーメーカー 操作簡単 攪拌棒付 飲食店用 家庭用 業務用 一台多役",
+      "brand": "NEDIEのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/711hyrAuWML._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 12880,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [],
+      "search_key": "NEDIE ミキサー 業務用ミキサー 食器洗い機可 ブレンダー 2L 氷も砕"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0BMT3ZJ46",
+      "asin": "B0BMT3ZJ46",
+      "amazon_title": "ZWILLING ツヴィリング 「 エンフィニジー パーソナルブレンダー ブラック 550ml 」ミキサー ジューサー スムージー 小型 ボトルブレンダー レシピブック付き 【日本正規販売品】 ENFINIGY PERSONAL BLENDER 53101-101",
+      "brand": "ZWILLINGのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/610XZAA+fnL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 9864,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [
+        "portability"
+      ],
+      "search_key": "ZWILLING ツヴィリング 「 エンフィニジー パーソナルブレンダー ブラック"
+    }
+  ]
+}
