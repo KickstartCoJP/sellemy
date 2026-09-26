@@ -1,0 +1,137 @@
+{
+  "slug": "donabe-hot-pot-cookware-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/donabe-hot-pot-cookware-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/donabe-hot-pot-cookware-6-picks/donabe-hot-pot-cookware-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "heat_source",
+      "label": "対応熱源",
+      "keywords": [
+        "IH対応",
+        "直火対応",
+        "ガス火対応"
+      ]
+    },
+    {
+      "id": "size_capacity",
+      "label": "サイズ・容量",
+      "keywords": [
+        "2〜3人用",
+        "4〜6人用",
+        "一人用"
+      ]
+    },
+    {
+      "id": "material_care",
+      "label": "素材・お手入れ",
+      "keywords": [
+        "土鍋",
+        "セラミック加工",
+        "食洗機対応"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "heat_source",
+      "material_care"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0G5PL1J3D",
+      "asin": "B0G5PL1J3D",
+      "amazon_title": "Youluck土鍋 IH対応/直火対応 、家庭用深型砂锅保温性 天然ミネラル豊富 大容量 多機能 美味、蓋付き 家庭・業務用 (B,3.2L) [並行輸入品]",
+      "brand": "ブランド: Youluck",
+      "image_url": "https://m.media-amazon.com/images/I/61varGfr5YL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3999,
+      "discovery_score": 1,
+      "selection_score": 0.855,
+      "matched_comparison_axes": [
+        "heat_source",
+        "material_care"
+      ],
+      "search_key": "Youluck 土鍋 IH対応/直火対応 、家庭用深型砂锅保温性 天然ミネラル豊"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HF4B6Q83",
+      "asin": "B0HF4B6Q83",
+      "amazon_title": "JVOK土鍋 1.8/3.2/4L 直火 IH 対応 ご飯鍋 小鍋 和風 陶器 卓上鍋 吹きこぼれ防止設計 耐寒急熱 耐熱爆裂防止 (1.8L,スタイルB) [並行輸入品]",
+      "brand": "ブランド: JVOK",
+      "image_url": "https://m.media-amazon.com/images/I/41UIYSfX1hL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 8230,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "material_care"
+      ],
+      "search_key": "JVOK 土鍋 1.8/3.2/4L 直火 IH 対応 ご飯鍋 小鍋 和風"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GXVWLR14",
+      "asin": "B0GXVWLR14",
+      "amazon_title": "【オンライン限定】パール金属 圧力鍋 3.5L IH対応 3層底 切り替え式 レシピ付 ステンレス鋼 (リネン・ベージュ) クイックエコ カラーファーム AZ-7586",
+      "brand": "パール金属(PEARL METAL)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61FF3005qyL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 8513,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "heat_source"
+      ],
+      "search_key": "パール金属(PEARL METAL) パール金属 圧力鍋 3.5L IH対応 3層底 切り替え式"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0FMF2YX86",
+      "asin": "B0FMF2YX86",
+      "amazon_title": "VEKAZこの土鍋はIHと直火の両方の調理に対応しています。耐熱性、焦げ付き防止、耐熱性が高く、乾燥しにくいのが特徴です。お手入れも簡単で、コンパクトで耐久性に優れています。 (テラコッタ色,8#深鍋、約2000ml（2～3人用）) [並行輸入品]",
+      "brand": "ブランド: VEKAZ",
+      "image_url": "https://m.media-amazon.com/images/I/41DOEEBeNRL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 5792,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "material_care"
+      ],
+      "search_key": "VEKAZ この土鍋はIHと直火の両方の調理に対応しています。耐熱性、焦げ付"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0DMSQRW8W",
+      "asin": "B0DMSQRW8W",
+      "amazon_title": "砺波商店 土鍋風鍋 白仕上げ 15cm 日本製 アルミ製 24年度版 アウトドア キャンプ 直火OK 旅館 業務用",
+      "brand": "ブランド: 砺波商店(Tonamishouten)",
+      "image_url": "https://m.media-amazon.com/images/I/61hfhtgot7L._AC_SX300_SY300_QL70_ML2_.jpg",
+      "observed_price": 4825,
+      "discovery_score": 1,
+      "selection_score": 0.445,
+      "matched_comparison_axes": [
+        "material_care"
+      ],
+      "search_key": "砺波商店(Tonamishouten) 砺波商店 土鍋風鍋 白仕上げ 15cm 日本製 アルミ製"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0CK5KZSHD",
+      "asin": "B0CK5KZSHD",
+      "amazon_title": "萬古焼 IH用セラミックコーティング都 土鍋 内山製陶所 (三島, 6号 1人用)",
+      "brand": "内山製陶所のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71qmi3JTDdL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "observed_price": 3990,
+      "discovery_score": 1,
+      "selection_score": 0.445,
+      "matched_comparison_axes": [
+        "material_care"
+      ],
+      "search_key": "内山製陶所 萬古焼 IH用セラミックコーティング都 土鍋 内山製陶所 (三島"
+    }
+  ]
+}
