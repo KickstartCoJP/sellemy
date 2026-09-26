@@ -1,0 +1,125 @@
+{
+  "slug": "wifi-routers-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/wifi-routers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/wifi-routers-6-picks/wifi-routers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "speed",
+      "label": "通信規格・速度",
+      "keywords": [
+        "Wi-Fi6対応",
+        "通信速度",
+        "最新規格"
+      ]
+    },
+    {
+      "id": "coverage",
+      "label": "対応台数・電波範囲",
+      "keywords": [
+        "メッシュ対応",
+        "同時接続数",
+        "電波範囲"
+      ]
+    },
+    {
+      "id": "security",
+      "label": "セキュリティ機能",
+      "keywords": [
+        "セキュリティ設定",
+        "ペアレンタルコントロール",
+        "自動更新"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "coverage"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0FWQBFZL3",
+      "asin": "B0FWQBFZL3",
+      "amazon_title": "ZTE WiFiルーター 無線LAN Wi-Fi6 高速 EasyMesh メッシュ対応 デュアルバンド APP設定 11ax/11ac AX3000 2402+574Mbps IPv6 WPA3 wifi中継機 3階建4LDK (Sora AX3000, ブラック)",
+      "brand": "ZTEのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51QlFpcuBHL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 5933,
+      "discovery_score": 1,
+      "selection_score": 0.75,
+      "matched_comparison_axes": [
+        "coverage"
+      ],
+      "search_key": "ZTE WiFiルーター 無線LAN Wi-Fi6 高速 EasyMes"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0FYNGQP53",
+      "asin": "B0FYNGQP53",
+      "amazon_title": "バッファロー Wi-Fi 7(11be)対応デュアルバンドWi-Fiルーター WSR3600BE4P-BK",
+      "brand": "バッファローのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/412c8JceKTL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 13288,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [],
+      "search_key": "バッファロー Wi-Fi 7(11be)対応デュアルバンドWi-Fiルーター"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0DRHSSLFS",
+      "asin": "B0DRHSSLFS",
+      "amazon_title": "TP-Link WiFi ルーター WiFi7 無線ルーター 高速 BE6500 2.5Gポート IPv6 5764+688Mbps IPv6対応 VPN対応 メーカー保証3年 Archer BE400 【Amazon.co.jp限定】",
+      "brand": "TP-Linkのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61BcsTJi90L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 21800,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [],
+      "search_key": "TP-Link WiFi ルーター WiFi7 無線ルーター 高速 BE6500"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0CCTFRVBK",
+      "asin": "B0CCTFRVBK",
+      "amazon_title": "[インスタントWi-Fi] T8 100GB/365日データ通信 ポケットWiFi モバイルルーター 1年間自然故障保証 追加ギガチャージ 海外対応",
+      "brand": "インスタントWi-Fiのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61PUFa7HzeL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 19980,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [],
+      "search_key": "インスタントWi-Fi T8 100GB/365日データ通信 ポケットWiFi モバイル"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0HFV84BG4",
+      "asin": "B0HFV84BG4",
+      "amazon_title": "エレコム WiFi ルーター 無線LAN WiFi7 2882+688Mbps 11be 有線1Gbps IPv6(IPoE) EasyMesh対応 ビームフォーミングZ こどもネットタイマー3 ブラック WRC-BE36GS-BA",
+      "brand": "エレコム(ELECOM)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61FxIMIAjHL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 11580,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "エレコム(ELECOM) エレコム WiFi ルーター 無線LAN WiFi7 2882+"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0H82HQK8N",
+      "asin": "B0H82HQK8N",
+      "amazon_title": "【T10-100GB】 モバイル ポケット WiFi ルーター 100GB 即使用可能 契約＆返却不要 端末買い切り 月額費用なし 追加チャージ可能 365日有効 マルチキャリア対応 キャンプ対応 T8上位モデル【大容量Wi-Fi】",
+      "brand": "ブランド: 大容量Wi-Fi",
+      "image_url": "https://m.media-amazon.com/images/I/81rOJv0jb9L._AC_SX300_SY300_QL70_ML2_.jpg",
+      "observed_price": 10980,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "大容量Wi-Fi モバイル ポケット WiFi ルーター 100GB 即使用可能"
+    }
+  ]
+}
