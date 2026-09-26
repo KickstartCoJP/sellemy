@@ -1,0 +1,142 @@
+{
+  "slug": "humidifying-air-purifiers-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/humidifying-air-purifiers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/humidifying-air-purifiers-6-picks/humidifying-air-purifiers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "humidification",
+      "label": "加湿方式・加湿量",
+      "keywords": [
+        "気化式",
+        "ハイブリッド式",
+        "加湿量目安"
+      ]
+    },
+    {
+      "id": "filtration",
+      "label": "集塵・脱臭性能",
+      "keywords": [
+        "HEPAフィルター",
+        "PM2.5対応",
+        "花粉除去"
+      ]
+    },
+    {
+      "id": "tank_maintenance",
+      "label": "タンク容量・お手入れ",
+      "keywords": [
+        "給水頻度",
+        "フィルター交換",
+        "分解洗浄"
+      ]
+    },
+    {
+      "id": "noise_size",
+      "label": "静音性・設置サイズ",
+      "keywords": [
+        "静音運転",
+        "コンパクト",
+        "適用畳数"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "filtration",
+      "humidification",
+      "noise_size"
+    ],
+    "brand_count": 5,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0HCC71LHV",
+      "asin": "B0HCC71LHV",
+      "amazon_title": "加湿器付き空気清浄機 30畳 遠隔操作 3段階風量調節 上から給水 7色変換ライト タイマー付き 消臭 除菌 集じん三層HEPAフィルター",
+      "brand": "Afloiaのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/717Diahm00L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 12999,
+      "discovery_score": 1,
+      "selection_score": 0.75,
+      "matched_comparison_axes": [
+        "filtration"
+      ],
+      "search_key": "Afloia 加湿器付き空気清浄機 30畳 遠隔操作 3段階風量調節 上から給"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0FPM8P4PQ",
+      "asin": "B0FPM8P4PQ",
+      "amazon_title": "アイリスオーヤマ 加湿空気清浄機 気化式 10畳 上から給水 丸洗い AZAP-SH20B-WB ホワイト/ブラック",
+      "brand": "アイリスオーヤマ(IRIS OHYAMA)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61WBm0ymjOL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 12500,
+      "discovery_score": 1,
+      "selection_score": 0.7,
+      "matched_comparison_axes": [
+        "humidification"
+      ],
+      "search_key": "アイリスオーヤマ(IRIS OHYAMA) アイリスオーヤマ 加湿空気清浄機 気化式 10畳 上"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0D8KJ4PVQ",
+      "asin": "B0D8KJ4PVQ",
+      "amazon_title": "シャープ 衣類乾燥 除湿加湿空気清浄機 KI-SD50-W 除湿 加湿 空気浄化 プラズマクラスター25000 空気清浄 21畳 加湿量 約400ml/h 除湿 5.0/5.6L/日 衣類乾燥 キャスター付 コンパクト",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41cCQ2dQzZL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 43800,
+      "discovery_score": 1,
+      "selection_score": 0.63,
+      "matched_comparison_axes": [
+        "noise_size"
+      ],
+      "search_key": "シャープ 衣類乾燥 除湿加湿空気清浄機 KI-SD50-W 除湿"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0G25B75M5",
+      "asin": "B0G25B75M5",
+      "amazon_title": "【2026改良モデル・AIスマート】 加湿器 大容量 5L 知能恒湿 ハイブリッド加湿器 加熱式 &超音波式 4重除菌 マイナスイオン 空気清浄機能",
+      "brand": "Ｔｒｏｓｔｏｎのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61B+rMkEihL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 9980,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "Ｔｒｏｓｔｏｎ 加湿器 大容量 5L 知能恒湿 ハイブリッド加湿器 加熱式 &超"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0G1Y5PZT9",
+      "asin": "B0G1Y5PZT9",
+      "amazon_title": "加湿器 大容量 3.5L 【新改良モデル・一体化設計・UVライト除菌】 ダブル吹出口 静音 上から注水 無段階ミスト調整 54時間連続運転",
+      "brand": "ブランド: Cheery",
+      "image_url": "https://m.media-amazon.com/images/I/51+AnvvoR5L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 4599,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "Cheery 加湿器 大容量 3.5L ダブル吹出口 静音 上から注水 無段階"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0FKMXPJGK",
+      "asin": "B0FKMXPJGK",
+      "amazon_title": "【 AIスマート & 知能恒湿・改良モデル】 加湿器 大容量 ハイブリッド式 9L AI湿度調整 加熱式加湿器 超音波 マイナスイオン 空気清浄",
+      "brand": "HQQのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/511NjSsn70L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 11990,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "humidification"
+      ],
+      "search_key": "HQQ 加湿器 大容量 ハイブリッド式 9L AI湿度調整 加熱式加湿器"
+    }
+  ]
+}
