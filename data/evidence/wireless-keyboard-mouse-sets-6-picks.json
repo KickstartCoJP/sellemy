@@ -1,0 +1,152 @@
+{
+  "slug": "wireless-keyboard-mouse-sets-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/wireless-keyboard-mouse-sets-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/wireless-keyboard-mouse-sets-6-picks/wireless-keyboard-mouse-sets-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "connectivity",
+      "label": "接続方式",
+      "keywords": [
+        "Bluetooth",
+        "USBレシーバー",
+        "マルチペアリング"
+      ]
+    },
+    {
+      "id": "typing_feel",
+      "label": "打鍵感・静音性",
+      "keywords": [
+        "パンタグラフ",
+        "静音設計",
+        "メカニカル"
+      ]
+    },
+    {
+      "id": "battery",
+      "label": "バッテリー持続時間",
+      "keywords": [
+        "充電式",
+        "電池式",
+        "長時間駆動"
+      ]
+    },
+    {
+      "id": "os_compat",
+      "label": "対応OS・互換性",
+      "keywords": [
+        "Windows対応",
+        "Mac対応",
+        "マルチデバイス"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "battery",
+      "connectivity",
+      "os_compat",
+      "typing_feel"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0FG84PYMK",
+      "asin": "B0FG84PYMK",
+      "amazon_title": "iClever キーボード マウスセット ワイヤレス Bluetooth＆2.4G JIS日本語配列 フルサイズ テンキー付き マウス4段調節可能DPI 静音 薄型 軽量 無線 Type-C充電式 パンタグラフ式 デュアルモード パソコンPC Windows/Mac対応 DK03 Combo (グレーブラック)",
+      "brand": "iCleverのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71G5InP0xWL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 5590,
+      "discovery_score": 1,
+      "selection_score": 1.165,
+      "matched_comparison_axes": [
+        "battery",
+        "connectivity",
+        "os_compat",
+        "typing_feel"
+      ],
+      "search_key": "iClever キーボード マウスセット ワイヤレス Bluetooth＆2.4"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0GL26M6Z2",
+      "asin": "B0GL26M6Z2",
+      "amazon_title": "エレコム ワイヤレスキーボード 静音 フルサイズ テンキー付 無線2.4GHz Windows macOS ChromeOS メンブレン式 ブラック TK-QT11FDMABK",
+      "brand": "エレコム(ELECOM)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61nar7SmI8L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2690,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "エレコム(ELECOM) エレコム ワイヤレスキーボード 静音 フルサイズ テンキー付 無"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0FK9NNWHS",
+      "asin": "B0FK9NNWHS",
+      "amazon_title": "RAPOO 9050S ワイヤレス キーボード マウス セット 充電式 US英語配列 キーボード マルチデバイス 2.4GHz/Bluetooth 5.0/4.0対応 Windows/Mac/Linux/Chrome対応 4 台デバイス同時接続可能 ロープロファイル 静音クリック ブラック",
+      "brand": "RAPOOのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51dZgsZEFZL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3999,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "battery",
+        "connectivity",
+        "os_compat"
+      ],
+      "search_key": "RAPOO 9050S ワイヤレス キーボード マウス セット 充電式 US"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0FDK6PKVY",
+      "asin": "B0FDK6PKVY",
+      "amazon_title": "Redragon 無線 キーボード マウスセット bluetooth/2.4G/有線 ゲーミングキーボード 60% テンキーレス メカニカルタッチ",
+      "brand": "Redragonのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61b7RlerwyL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 7398,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "connectivity",
+        "typing_feel"
+      ],
+      "search_key": "Redragon 無線 キーボード マウスセット bluetooth/2.4G/有"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B09VPGTVBZ",
+      "asin": "B09VPGTVBZ",
+      "amazon_title": "Arteck 2.4G無線ワイヤレス キーボード マウス セット 軽量 薄型 Type-C 充電式 フルサイズ キーボード マウス コンピューター、デスクトップ、PC、ラップトップ、Windows 11/10/8/7との互換性あり",
+      "brand": "ブランド: Arteck",
+      "image_url": "https://m.media-amazon.com/images/I/611+SEzvrML._AC_SX300_SY300_QL70_ML2_.jpg",
+      "observed_price": 5699,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "battery"
+      ],
+      "search_key": "Arteck 2.4G無線ワイヤレス キーボード マウス セット 軽量 薄型"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0G3WJN5JK",
+      "asin": "B0G3WJN5JK",
+      "amazon_title": "マウス 無線 (BT 5.1+2.4G) Bluetooth 静音 Type-C充電式 けいたいべんり コンパクト軽量 左右両手対応 ワイヤレスマウスMac/Windows/ノートパソコン/パソコン/ipad 対応 TELEC認証取得済み - ピンク",
+      "brand": "Cimetechのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61q368VuftL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2170,
+      "discovery_score": 1,
+      "selection_score": 0.445,
+      "matched_comparison_axes": [
+        "battery",
+        "connectivity"
+      ],
+      "search_key": "Cimetech マウス 無線 (BT 5.1+2.4G) Bluetooth 静"
+    }
+  ]
+}
