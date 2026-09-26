@@ -1,0 +1,134 @@
+{
+  "slug": "electric-coffee-grinders-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/electric-coffee-grinders-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/electric-coffee-grinders-6-picks/electric-coffee-grinders-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "grind",
+      "label": "挽き方式・粒度調整",
+      "keywords": [
+        "臼式",
+        "プロペラ式",
+        "粒度調整"
+      ]
+    },
+    {
+      "id": "capacity",
+      "label": "容量・お手入れ",
+      "keywords": [
+        "容量",
+        "水洗い",
+        "お手入れ"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格帯",
+      "keywords": [
+        "価格",
+        "コスパ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "capacity",
+      "grind"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0H3P4LSKK",
+      "asin": "B0H3P4LSKK",
+      "amazon_title": "【90段階粒度調整】CIRCLE JOY 電動コーヒーミル コードレス 臼式 コーヒーグラインダー ステンレスコニカル臼 USB Type-C充電式 電池残量表示ランプ付き ワンタッチ操作 自動停止 水洗い可能 お手入れ簡単 家庭用 キャンプ【メーカ一年保証付】",
+      "brand": "CIRCLE JOYのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61V7kqwgyyL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3999,
+      "discovery_score": 1,
+      "selection_score": 0.88,
+      "matched_comparison_axes": [
+        "capacity",
+        "grind"
+      ],
+      "search_key": "CIRCLE JOY 電動コーヒーミル コードレス 臼式 コーヒーグラインダー ステン"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0GK1NRNM1",
+      "asin": "B0GK1NRNM1",
+      "amazon_title": "【大容量・挽きたて1杯で上質な時間を】 Delimo 電動コーヒーミル コードレス 臼式 ステンレス臼 USB 充電式 水洗い可能 コーヒーグラインダー コニカル式 電動ミル 【エスプレッソ対応】【60段階粒度調整】【メーカー一年保証付】",
+      "brand": "Delimoのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71thZraTCrL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 14980,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "capacity",
+        "grind"
+      ],
+      "search_key": "Delimo 電動コーヒーミル コードレス 臼式 ステンレス臼 USB 充電式"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0FVLDHTJ2",
+      "asin": "B0FVLDHTJ2",
+      "amazon_title": "ONE SECOND 【上質な木目調＋高性能ステンレス臼刃】 電動コーヒーミル 38段階 ステンレス刃 臼式 自動停止 タッチ操作 コードレス 水洗い可能 ワンセカンド",
+      "brand": "Amplimleのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71B7znE0kxL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 7980,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "capacity",
+        "grind"
+      ],
+      "search_key": "Amplimle ONE SECOND 電動コーヒーミル 38段階 ステンレス刃"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0DT6M657F",
+      "asin": "B0DT6M657F",
+      "amazon_title": "oceanrich 自動コーヒーミル G3 2025年モデル 臼式 ステンレス刃 電動コーヒーミル USB-TypeC 充電式 コードレスタイプ オーシャンリッチ コーヒー グラインダー UQ-ORG3CBK ブラック",
+      "brand": "ブランド: オーシャンリッチ(Oceanrich)",
+      "image_url": "https://m.media-amazon.com/images/I/715ooh23h8L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 6850,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "grind"
+      ],
+      "search_key": "オーシャンリッチ(Oceanrich) oceanrich 自動コーヒーミル G3 2025年モ"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B08R9D4VVQ",
+      "asin": "B08R9D4VVQ",
+      "amazon_title": "【オンライン限定】 カリタ Kalita 電動 コーヒーミル 静電気除去 NEXTG2 アクアブルー コーヒーグラインダー 日本製 #61124",
+      "brand": "カリタ(Kalita)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51d8FKLTNJL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 49880,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "カリタ(Kalita) カリタ Kalita 電動 コーヒーミル 静電気除去 NEXTG"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B08C76X363",
+      "asin": "B08C76X363",
+      "amazon_title": "ソリス スカラプラス （Solis Scala Plus Coffee Grinder）コーヒーグラインダー ブラックシルバー SK1661",
+      "brand": "Solis (ソリス)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51MIScodFzL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 9945,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "Solis (ソリス) ソリス スカラプラス （Solis Scala Plus Cof"
+    }
+  ]
+}
