@@ -1,0 +1,135 @@
+{
+  "slug": "slow-cookers-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/slow-cookers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/slow-cookers-6-picks/slow-cookers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "capacity",
+      "label": "容量・調理量",
+      "keywords": [
+        "容量",
+        "人数分",
+        "リットル"
+      ]
+    },
+    {
+      "id": "temperature_control",
+      "label": "温度調整・調理モード",
+      "keywords": [
+        "温度設定",
+        "タイマー",
+        "低温調理"
+      ]
+    },
+    {
+      "id": "ease_of_care",
+      "label": "お手入れのしやすさ",
+      "keywords": [
+        "内鍋",
+        "食洗機対応",
+        "分解洗浄"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "temperature_control"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0GQXWN6NS",
+      "asin": "B0GQXWN6NS",
+      "amazon_title": "【プロ並みの温度管理を】 SKK 低温調理器 1100W ハイパワー レシピ付き スリム設計 軽量 家庭用 クリップ式 防水性能 浅型鍋 タッチパネル タイマー機能 低温加熱 【日本企業】",
+      "brand": "SKKのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71NFZ47XpBL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 8080,
+      "discovery_score": 1,
+      "selection_score": 0.675,
+      "matched_comparison_axes": [
+        "temperature_control"
+      ],
+      "search_key": "SKK 低温調理器 1100W ハイパワー レシピ付き スリム設計 軽量"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0G51X2VG7",
+      "asin": "B0G51X2VG7",
+      "amazon_title": "低温調理器 24時間 予約機能付き Sous vide スロークッカー 真空調理器 保温機能付き 低温調理機 日本向けに設計 1000Wハイパワー コンパクト軽量 家庭用 水温精確制御クッカー (black, Medium)",
+      "brand": "Beemyiのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71d5apBpWHL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 14980,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "temperature_control"
+      ],
+      "search_key": "Beemyi 低温調理器 24時間 予約機能付き Sous vide スローク"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0DRHT9THM",
+      "asin": "B0DRHT9THM",
+      "amazon_title": "BONIQ 3.0 低温調理器・専用コンテナセット 日本メーカー 全食材対応 専用アプリ 防水 レシピガイドブック ハイパワー ブラック7L ボニーク",
+      "brand": "BONIQのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71uhL1awoBL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 31500,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "temperature_control"
+      ],
+      "search_key": "BONIQ 3.0 低温調理器・専用コンテナセット 日本メーカー 全食材対応"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0DQPZQVDL",
+      "asin": "B0DQPZQVDL",
+      "amazon_title": "低温調理器 1100Wハイパワー 低温調理器具 24時間 予約機能 真空調理器 スロークッカー レシピ付き IPX7防水 タッチパネル クリップ式 低温調理機 低音調理器 タイマー 温度設定 五重安心保護 (Black)",
+      "brand": "ブランド: ノーブランド品",
+      "image_url": "https://m.media-amazon.com/images/I/41eE2jB5hnL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 50435,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "temperature_control"
+      ],
+      "search_key": "ノー品 低温調理器 1100Wハイパワー 低温調理器具 24時間 予約機"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0DBQJSPPR",
+      "asin": "B0DBQJSPPR",
+      "amazon_title": "Wevac 低温調理器 1100W スロークッカー 低温調理器具 ステンレス製 折り畳み式 電子件を湯気から離し",
+      "brand": "ブランド: Wevac",
+      "image_url": "https://m.media-amazon.com/images/I/51vXE8p5iBL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 19975,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "temperature_control"
+      ],
+      "search_key": "Wevac 低温調理器 1100W スロークッカー 低温調理器具 ステンレス"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0BYZDZFC6",
+      "asin": "B0BYZDZFC6",
+      "amazon_title": "テスコム 低温調理器 芯温スマートクッカー 食材の中心温度を測ってやわらかくおいしく仕上げる 調理条件メモリー機能 TLC70A-K",
+      "brand": "テスコムのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71tZgeoV-1L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 16472,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "temperature_control"
+      ],
+      "search_key": "テスコム 低温調理器 芯温スマートクッカー 食材の中心温度を測ってやわらか"
+    }
+  ]
+}
