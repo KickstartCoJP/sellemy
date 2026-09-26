@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-concealer-6-picks-5410e2e4fe7d35f9",
+  "request_sha256": "5410e2e4fe7d35f94bdc0f4606751b5d76ad73317663f93ebd0ba6a75c13c6e3",
+  "image_sha256": "f18d7a21d4fd7f92136577e429e083165f907f8efcfb397d208043d69b3ff2d2",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-09-26T22:25:46.744605+00:00"
+}

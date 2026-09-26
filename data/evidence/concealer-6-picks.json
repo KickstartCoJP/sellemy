@@ -1,0 +1,142 @@
+{
+  "slug": "concealer-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/concealer-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/concealer-6-picks/concealer-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "coverage",
+      "label": "カバー力・持続性",
+      "keywords": [
+        "高カバー",
+        "崩れにくい",
+        "クマ隠し"
+      ]
+    },
+    {
+      "id": "texture",
+      "label": "質感・仕上がり",
+      "keywords": [
+        "リキッド",
+        "スティック",
+        "パレット",
+        "ツヤ肌"
+      ]
+    },
+    {
+      "id": "shade_skin",
+      "label": "色展開・肌質対応",
+      "keywords": [
+        "色番",
+        "乾燥肌",
+        "オイリー肌"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格帯",
+      "keywords": [
+        "プチプラ",
+        "デパコス"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "coverage",
+      "texture"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0CCXKFT48",
+      "asin": "B0CCXKFT48",
+      "amazon_title": "【濃いシミ・クマも簡単カバー】薬用美白コンシーラー SPF39 PA++ エクスボーテ スティックタイプ 自然仕上げ 高カバー (ナチュラルスキンカラー, 1本) マードゥレクス",
+      "brand": "Ex:BEAUTEのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61+KdEAcWUL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3520,
+      "discovery_score": 1,
+      "selection_score": 0.83,
+      "matched_comparison_axes": [
+        "coverage",
+        "texture"
+      ],
+      "search_key": "Ex:BEAUTE 薬用美白コンシーラー SPF39 PA++ エクスボーテ スティ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0FWBK83ZR",
+      "asin": "B0FWBK83ZR",
+      "amazon_title": "[ディシェイド]日本製 バレないメンズコンシーラー 青ヒゲ＆ニキビ隠し専門商品 青髭隠し クマ シミ ニキビ跡 スポットカバー 整肌成分配合 スティックタイプ 3g",
+      "brand": "ブランド: LODI",
+      "image_url": "https://m.media-amazon.com/images/I/71g5-dcxZjL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1690,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "texture"
+      ],
+      "search_key": "LODI 日本製 バレないメンズコンシーラー 青ヒゲ＆ニキビ隠し専門商品"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GHWKT8M6",
+      "asin": "B0GHWKT8M6",
+      "amazon_title": "【 シミ消し ・ クマ消し 】 SEコンシーラー SPF50+ PA++++ 5gx1 カバー力 高い クマ しみ スティックコンシーラー",
+      "brand": "Ｓｔｏｒｉｅｓ　Ｅｓｓｅｎｃｅのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71u1Ts4MO1L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3480,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "texture"
+      ],
+      "search_key": "Ｓｔｏｒｉｅｓ　Ｅｓｓｅｎｃｅ SEコンシーラー SPF50+ PA++++ 5gx1 カバー力"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0G1B352LW",
+      "asin": "B0G1B352LW",
+      "amazon_title": "23YEARSOLD ダーマシンコンシーラー #0.5P ピンクベージュ 3個セット",
+      "brand": "§２３ｙｅａｒｓ　ｏｌｄ＼Ｐｒｅｍｉｕｍ　ｈｏｍｅｃａｒｅのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51hjA-jSvSL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 5040,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "§２３ｙｅａｒｓ　ｏｌｄ＼Ｐｒｅｍｉｕｍ　ｈｏｍｅｃａｒｅ 23YEARSOLD ダーマシンコン"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0DZ2GD5BJ",
+      "asin": "B0DZ2GD5BJ",
+      "amazon_title": "WrinkFade リンクフェード 薬用ハイカバーファンデーション コンシーラー 2点セット",
+      "brand": "ＷｒｉｎｋＦａｄｅのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71gde1kICYL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 8960,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "ＷｒｉｎｋＦａｄｅ WrinkFade リンクフェード 薬用ハイカバーファンデーショ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0C9CF6RZS",
+      "asin": "B0C9CF6RZS",
+      "amazon_title": "エトヴォス ミネラルインナートリートメントリキッドコンシーラー SPF36 PA+++ 8g #ナチュラルベージュ セラミド 保湿 ヒアルロン酸",
+      "brand": "ETVOSのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51hLYH94RkL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3993,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "texture"
+      ],
+      "search_key": "ETVOS エトヴォス ミネラルインナートリートメントリキッドコンシーラー"
+    }
+  ]
+}
