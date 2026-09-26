@@ -1,0 +1,147 @@
+{
+  "slug": "leave-in-hair-treatments-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/leave-in-hair-treatments-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/leave-in-hair-treatments-6-picks/leave-in-hair-treatments-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "repair",
+      "label": "保湿・補修成分",
+      "keywords": [
+        "ケラチン",
+        "アルガンオイル",
+        "加水分解コラーゲン"
+      ]
+    },
+    {
+      "id": "texture",
+      "label": "テクスチャー",
+      "keywords": [
+        "オイル",
+        "ミルク",
+        "ミスト"
+      ]
+    },
+    {
+      "id": "scent",
+      "label": "香り",
+      "keywords": [
+        "フローラル",
+        "無香料",
+        "持続する香り"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格帯",
+      "keywords": [
+        "プチプラ",
+        "サロン専売品",
+        "コスパ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "scent",
+      "texture"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0DZM6J6KH",
+      "asin": "B0DZM6J6KH",
+      "amazon_title": "plus eau (プリュスオー) ハイドロミルク 無香料 ヘアミルク 洗い流さないトリートメント 美容液 150ml ポンプ 本体",
+      "brand": "plus eau(プリュスオー)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51bxfeFKkCL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1445,
+      "discovery_score": 1,
+      "selection_score": 0.855,
+      "matched_comparison_axes": [
+        "scent",
+        "texture"
+      ],
+      "search_key": "plus eau(プリュスオー) plus eau (プリュスオー) ハイドロミルク 無香料 ヘ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0H25LSFN7",
+      "asin": "B0H25LSFN7",
+      "amazon_title": "Kaminii カミニー ヘアミルク リッチモイスト ＜無香料＞ 洗い流さないトリートメント アウトバス ダメージ補修 保湿 ヒートケア",
+      "brand": "Kaminiiのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71LvowuHdoL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1980,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "scent",
+        "texture"
+      ],
+      "search_key": "Kaminii カミニー ヘアミルク リッチモイスト ＜無香料＞ 洗い流さないト"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GYCV5LBH",
+      "asin": "B0GYCV5LBH",
+      "amazon_title": "ファブリーズ レノアハピネスミスト 消臭スプレー(衣類・布用)【5つ星ホテル推奨 消臭・除菌】本体370mL+詰替1240mL ホワイトティーの香り",
+      "brand": "ファブリーズのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71T7sll9LgL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1935,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "texture"
+      ],
+      "search_key": "ファブリーズ レノアハピネスミスト 消臭スプレー(衣類・布用) 本体370mL"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0GN4R93K1",
+      "asin": "B0GN4R93K1",
+      "amazon_title": "KANTANSERIES カンタンシリーズ さらけあ 95g 洗い流さないトリートメント ホワイトリリー ヘアミルク",
+      "brand": "KANTANSERIESのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51TzcJ9B1oL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2420,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "texture"
+      ],
+      "search_key": "KANTANSERIES カンタンシリーズ さらけあ 95g 洗い流さないトリートメント"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0G8HZX2PD",
+      "asin": "B0G8HZX2PD",
+      "amazon_title": "ヘアオイル メンズ 洗い流さないトリートメント シトラスとヒノキの香り",
+      "brand": "ブランド: アイムレスト",
+      "image_url": "https://m.media-amazon.com/images/I/61w7BdLKbUL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2380,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "texture"
+      ],
+      "search_key": "アイムレスト ヘアオイル メンズ 洗い流さないトリートメント シトラスとヒノキ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0F8MPL39B",
+      "asin": "B0F8MPL39B",
+      "amazon_title": "アネラホワイト ヘアミルク 洗い流さないトリートメント ミルク ヘアケア【深層ダメージ補修xまとまるうるサラ髪へ】",
+      "brand": "ブランド: ANELA WHITE",
+      "image_url": "https://m.media-amazon.com/images/I/51yx+JGHlYL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2280,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "texture"
+      ],
+      "search_key": "ANELA WHITE アネラホワイト ヘアミルク 洗い流さないトリートメント ミルク"
+    }
+  ]
+}
