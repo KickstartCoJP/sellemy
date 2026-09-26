@@ -1,0 +1,153 @@
+{
+  "slug": "ergonomic-office-chairs-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/ergonomic-office-chairs-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/ergonomic-office-chairs-6-picks/ergonomic-office-chairs-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "cushion",
+      "label": "座面・クッション性",
+      "keywords": [
+        "メッシュ",
+        "クッション",
+        "座面"
+      ]
+    },
+    {
+      "id": "adjustability",
+      "label": "調整機能（高さ・リクライニング）",
+      "keywords": [
+        "リクライニング",
+        "高さ調整",
+        "アームレスト"
+      ]
+    },
+    {
+      "id": "material",
+      "label": "素材・通気性",
+      "keywords": [
+        "メッシュ素材",
+        "通気性",
+        "耐久性"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格帯",
+      "keywords": [
+        "価格",
+        "コスパ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "adjustability",
+      "cushion",
+      "material"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0H2H46PPX",
+      "asin": "B0H2H46PPX",
+      "amazon_title": "[CAGUUU公式] 本田圭佑×アクシスコアライト オフィスチェア 疲れない デスクチェア スライド座面 セパレート型ランバーサポート 3Dヘッドレスト 2Dアームレスト 135°リクライニング 収納式フットレスト搭載 仮眠可能 体压分散 通気性メッシュ ゲーミングチェア エルゴノミクス インテリアに馴染む 在宅勤務 静音キャスタ一 日本ブランド 5年保証 (グレー)",
+      "brand": "CAGUUUのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71SvjiIj7oL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 36780,
+      "discovery_score": 1,
+      "selection_score": 1.11,
+      "matched_comparison_axes": [
+        "adjustability",
+        "cushion",
+        "material"
+      ],
+      "search_key": "CAGUUU 本田圭佑×アクシスコアライト オフィスチェア 疲れない デスクチ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HJ7G1TMV",
+      "asin": "B0HJ7G1TMV",
+      "amazon_title": "C5 オフィスチェア デスクチェア 人間工学 エルゴノミクス メッシュ 通気性 椅子 3Dヘッドレスト 前後ランバーサポート【二年保証】",
+      "brand": "ブランド: Neriko",
+      "image_url": "https://m.media-amazon.com/images/I/71ZCF-5lI7L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 39999,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [
+        "cushion",
+        "material"
+      ],
+      "search_key": "Neriko C5 オフィスチェア デスクチェア 人間工学 エルゴノミクス メ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GX1CY2QP",
+      "asin": "B0GX1CY2QP",
+      "amazon_title": "SIHOO C300-PRO-V2 オフィスチェア デスクチェア 8Dアームレスト 全身追従フィットサポート 7段階昇降調節 フットレスト付き 人間工学 通気性メッシュ リクライニング テレワーク 在宅ワーク（グレー）",
+      "brand": "SIHOOのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71SD6KKsNzL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 80999,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [
+        "adjustability",
+        "cushion",
+        "material"
+      ],
+      "search_key": "SIHOO C300-PRO-V2 オフィスチェア デスクチェア 8Dアーム"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0GSQW89GZ",
+      "asin": "B0GSQW89GZ",
+      "amazon_title": "SYALEN オフィスチェア メッシュ デスクチェア 疲れない 椅子 リクライニング ハイバック チェア ランバーサポート キャスター 人間工学 SLCH-15MGY高耐久強化メッシュ (ライトグレー 無地）",
+      "brand": "SYALENのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71AYw5aNmAL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 44980,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [
+        "adjustability",
+        "cushion"
+      ],
+      "search_key": "SYALEN オフィスチェア メッシュ デスクチェア 疲れない 椅子 リクライ"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0DQY63XXP",
+      "asin": "B0DQY63XXP",
+      "amazon_title": "EastForce エイリアンチェアプロ 3万円台でフルスペックオフィスチェア 3Dヘッドレスト 4Dアームレスト ランバーサポート高さ調節 座面スライド ハンガー搭載 デスクチェア ブラック",
+      "brand": "EastForceのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71DBHfUSTYL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 36999,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [
+        "adjustability",
+        "cushion"
+      ],
+      "search_key": "EastForce エイリアンチェアプロ 3万円台でフルスペックオフィスチェア 3D"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0DHPL39FC",
+      "asin": "B0DHPL39FC",
+      "amazon_title": "PAX3 エルゴノミクスチェア 人間工学 オフィスチェア メッシュ デスクチェア リクライニング 分体式ランバーサポート 5Dヘッドレスト オットマン付き 座面広い 150kg耐荷重 長時間作業 テレワーク 在宅勤務 腰がラク",
+      "brand": "KTOWのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61Cs5ehcqKL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 45999,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [
+        "adjustability",
+        "cushion"
+      ],
+      "search_key": "KTOW PAX3 エルゴノミクスチェア 人間工学 オフィスチェア メッシ"
+    }
+  ]
+}
