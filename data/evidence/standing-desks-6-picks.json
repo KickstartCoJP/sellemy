@@ -1,0 +1,147 @@
+{
+  "slug": "standing-desks-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/standing-desks-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/standing-desks-6-picks/standing-desks-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "lift_mechanism",
+      "label": "昇降方式・耐荷重",
+      "keywords": [
+        "電動昇降",
+        "耐荷重",
+        "上下スピード"
+      ]
+    },
+    {
+      "id": "tabletop",
+      "label": "天板サイズ・素材",
+      "keywords": [
+        "天板サイズ",
+        "素材",
+        "デザイン"
+      ]
+    },
+    {
+      "id": "operation",
+      "label": "静音性・操作性",
+      "keywords": [
+        "静音モーター",
+        "メモリー機能",
+        "タッチパネル"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格帯",
+      "keywords": [
+        "価格",
+        "コスパ",
+        "保証"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "lift_mechanism",
+      "operation",
+      "price"
+    ],
+    "brand_count": 5,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0GS8NH2NX",
+      "asin": "B0GS8NH2NX",
+      "amazon_title": "FLEXISPOT 昇降デスク E7 Click 【10分組立 電動工具不要】 パソコンデスク スタンディングデスク 電動 メーカー5年保証 無段階高さ調節 耐荷重110kg デュアル静音モーター搭載 人間工学 メモリー機能付き USB機能付き 組み立て簡単 配線整理 (フレーム(白)+天板(メープル), 140×70×2.5cm)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51vRWsx3+gL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 79800,
+      "discovery_score": 1,
+      "selection_score": 0.89,
+      "matched_comparison_axes": [
+        "lift_mechanism",
+        "operation",
+        "price"
+      ],
+      "search_key": "FLEXISPOT 昇降デスク E7 Click パソコンデスク"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0H2HMPDC2",
+      "asin": "B0H2HMPDC2",
+      "amazon_title": "(アノヴァラ) 電動 昇降デスク オフィスデスク 幅80cm キャスター付き ケーブルホルダー付き",
+      "brand": "Anovaraのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71YKSlT45UL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 11980,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "Anovara (アノヴァラ) 電動 昇降デスク オフィスデスク 幅80cm キ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0FRDPD5ND",
+      "asin": "B0FRDPD5ND",
+      "amazon_title": "山善(YAMAZEN) 昇降デスク 電動 電動昇降デスク 一枚板 昇降式 スタンディングデスク 上下昇降 pc オフィスデスク テレワーク 電源タップ付きUSB×2/コンセント×2 メモリー機能 衝突検知 140×70×72.5-118.5cm 組立品 ストーンダークグレー／マットブラック ELD-FS(MBK)/U1400(SDGY)",
+      "brand": "山善(YAMAZEN)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/514djM3gLbL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 71266,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "lift_mechanism",
+        "operation"
+      ],
+      "search_key": "山善(YAMAZEN) 昇降デスク 電動 電動昇降デスク 一枚板 昇降式 スタンディング"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0DL57PFR8",
+      "asin": "B0DL57PFR8",
+      "amazon_title": "Alebert 昇降式デスク 電動 スタンディングデスク 幅160 x 奥行80cm オフィスワークテーブル 耐荷重80kg 上下自動昇降 ブラック",
+      "brand": "Alebertのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71kn0F1XOKL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 26550,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "lift_mechanism"
+      ],
+      "search_key": "Alebert 昇降式デスク 電動 スタンディングデスク 幅160 x 奥行80"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B09SH3Q5DH",
+      "asin": "B09SH3Q5DH",
+      "amazon_title": "FLEXISPOT 電動昇降スタンディングデスク EW8 引き出し Type-C出力搭載 木製天板120×60 チャイルドロック 白+メープル",
+      "brand": "FLEXISPOTのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/510zMxXsiEL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 33800,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "lift_mechanism"
+      ],
+      "search_key": "FLEXISPOT 電動昇降スタンディングデスク EW8 引き出し Type-C出力"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0FNWK4W8P",
+      "asin": "B0FNWK4W8P",
+      "amazon_title": "FEZIBO 電動 昇降デスク スタンディングデスク 幅120cm 高さメモリー機能 静音 上下自動昇降 オフィスワークテーブル テレワーク ブラックフレーム/クルミ天板",
+      "brand": "FEZIBOのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71n3+EYKEqL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 13999,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [
+        "operation"
+      ],
+      "search_key": "FEZIBO 電動 昇降デスク スタンディングデスク 幅120cm 高さメモリ"
+    }
+  ]
+}
