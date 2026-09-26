@@ -1,0 +1,136 @@
+{
+  "slug": "handheld-vacuum-cleaners-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/handheld-vacuum-cleaners-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/handheld-vacuum-cleaners-6-picks/handheld-vacuum-cleaners-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "suction",
+      "label": "吸引力",
+      "keywords": [
+        "高吸引",
+        "サイクロン式"
+      ]
+    },
+    {
+      "id": "battery",
+      "label": "バッテリー・充電方式",
+      "keywords": [
+        "USB充電",
+        "連続使用時間"
+      ]
+    },
+    {
+      "id": "size",
+      "label": "サイズ・重さ",
+      "keywords": [
+        "軽量",
+        "コンパクト"
+      ]
+    },
+    {
+      "id": "attachments",
+      "label": "付属アタッチメント",
+      "keywords": [
+        "すき間ノズル",
+        "ブラシ付き"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "attachments",
+      "size"
+    ],
+    "brand_count": 5,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0FFML4X8Y",
+      "asin": "B0FFML4X8Y",
+      "amazon_title": "【Amazon.co.jp限定】 ケルヒャー(Karcher) ハンディクリーナー CVH 3 Black 強力 コンパクト ハンディ掃除機 コードレスUSB-C充電式(非スタンド充電) 強パワーモードあり 洗えて清潔二重フィルター ブラシ付きすきまノズル付属 車用掃除機に 1.198-357.0",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71RMWd4R+kL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 9980,
+      "discovery_score": 1,
+      "selection_score": 0.71,
+      "matched_comparison_axes": [
+        "attachments",
+        "size"
+      ],
+      "search_key": "ケルヒャー(Karcher) ハンディクリーナー CVH 3 B"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HB8HGK8B",
+      "asin": "B0HB8HGK8B",
+      "amazon_title": "【新登場】 ハンディクリーナー コードレス 強力吸引 4IN1 多機能【吸引・ブロワー・空気入れ・空気抜き】 車用掃除機 Type-C急速充電 LEDライト付き 長時間稼働 ミニ掃除機 車用/家庭用 Basemax ZY-001",
+      "brand": "basemaxのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71C6EjRP1uL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "observed_price": 2599,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "basemax ハンディクリーナー コードレス 強力吸引 4IN1 多機能 車用"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HJTHBL57",
+      "asin": "B0HJTHBL57",
+      "amazon_title": "ハンディクリーナー コードレス 車用掃除機 30000Pa強力吸引",
+      "brand": "Horumiのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/31KNUaNg9KL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 9999,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "Horumi ハンディクリーナー コードレス 車用掃除機 30000Pa強力吸"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0GQ82SM89",
+      "asin": "B0GQ82SM89",
+      "amazon_title": "【新登場】 ハンディクリーナー コードレス 40000Pa 強力吸引 多機能 車用掃除機 Type-C充電 Svoko LT-145PLUS",
+      "brand": "Svokoのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/81g1gUYmA2L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 5508,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "Svoko ハンディクリーナー コードレス 40000Pa 強力吸引 多機能"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0GKGXY3SZ",
+      "asin": "B0GKGXY3SZ",
+      "amazon_title": "【超強20kPa吸引×充電スタンド付き】Yadea Y16 ハンディクリーナー コードレス ハンディ掃除機 570g 超軽量 二段階吸引力切替 ブラシレスモーター 車載充電器付属 車用掃除機 隙間清掃/ソファ/車内/家庭用(グレー)",
+      "brand": "Yadeaのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61ZDYrYl+WL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 8499,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "size"
+      ],
+      "search_key": "Yadea Y16 ハンディクリーナー コードレス ハンディ掃除機 570g"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0D2543XB9",
+      "asin": "B0D2543XB9",
+      "amazon_title": "レイコップ ハンディクリーナー 車用掃除機 Mobi モビー 0.42kg軽量 11,000Pa 強力吸引 車そうじき 卓上用掃除機 強力吸引 小型 コードレス USBケーブル充電 RAYCOP 2WAYノズル ホワイト RMC-100",
+      "brand": "RAYCOP(レイコップ)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51WS95B5eDL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 8400,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "size"
+      ],
+      "search_key": "RAYCOP(レイコップ) レイコップ ハンディクリーナー 車用掃除機 Mobi モビー 0"
+    }
+  ]
+}
