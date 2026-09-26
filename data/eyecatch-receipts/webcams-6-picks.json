@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-webcams-6-picks-dc4c2f6aad1febc4",
+  "request_sha256": "dc4c2f6aad1febc4e75f1231e4f63406e071d7e8a8e4db0906d6e7cdee4b2e5b",
+  "image_sha256": "38dbbbe0bd099db29e2eb2d32fcacecf177d3981aa727dfe5fc32fd1924dceeb",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-09-26T06:32:32.797661+00:00"
+}

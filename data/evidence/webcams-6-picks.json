@@ -1,0 +1,136 @@
+{
+  "slug": "webcams-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/webcams-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/webcams-6-picks/webcams-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "resolution",
+      "label": "画質・解像度",
+      "keywords": [
+        "フルHD",
+        "4K",
+        "低照度補正"
+      ]
+    },
+    {
+      "id": "field_of_view",
+      "label": "視野角・オートフォーカス",
+      "keywords": [
+        "広角",
+        "自動フォーカス",
+        "ズーム"
+      ]
+    },
+    {
+      "id": "mic_connection",
+      "label": "マイク性能・接続方式",
+      "keywords": [
+        "内蔵マイク",
+        "USB接続",
+        "三脚対応"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "field_of_view",
+      "mic_connection",
+      "resolution"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0G4THLTW5",
+      "asin": "B0G4THLTW5",
+      "amazon_title": "Nearity 120 Max【拡張マイク付属】会議用 Webカメラ 4K 120°広角 5倍ズーム AI自動フレーミング 5m集音 マイク・スピーカー一体型 ノイズキャンセリング 全二重通信 リモコン付属 USBプラグ＆プレイ Zoom/Teams対応 ビデオ会議/オンライン授業/セミナー用 C46S ブラック",
+      "brand": "NEARITYのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71pfhzBhPeL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 66980,
+      "discovery_score": 1,
+      "selection_score": 0.88,
+      "matched_comparison_axes": [
+        "field_of_view",
+        "resolution"
+      ],
+      "search_key": "NEARITY 120 Max 会議用 Webカメラ 4K 120°広角 5倍ズ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0CRTBJB98",
+      "asin": "B0CRTBJB98",
+      "amazon_title": "WEBカメラ 小型ウェブカメラ HD1080P 200万画素 目線が合う 好感度アップ パソコンカメラ 内蔵マイク ブラック",
+      "brand": "Sheawasyのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61er-0oTsEL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 7999,
+      "discovery_score": 1,
+      "selection_score": 0.75,
+      "matched_comparison_axes": [
+        "mic_connection"
+      ],
+      "search_key": "Sheawasy WEBカメラ 小型ウェブカメラ HD1080P 200万画素 目"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GVNFKRSR",
+      "asin": "B0GVNFKRSR",
+      "amazon_title": "Nuroum C20 会議用 webカメラ マイク スピーカー搭載 110°超広角 小~中規模会議室向け",
+      "brand": "NUROUMのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/610PH88fNgL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 19980,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [
+        "field_of_view"
+      ],
+      "search_key": "NUROUM C20 会議用 webカメラ マイク スピーカー搭載 110°超"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0D9W7J9SK",
+      "asin": "B0D9W7J9SK",
+      "amazon_title": "OBSBOT MEET 2 4K Webカメラ ウェブカメラ",
+      "brand": "OBSBOTのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/516VtD3smIL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 21800,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [
+        "resolution"
+      ],
+      "search_key": "OBSBOT MEET 2 4K Webカメラ ウェブカメラ"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B09MHPFV4Q",
+      "asin": "B09MHPFV4Q",
+      "amazon_title": "Anker PowerConf C200 【コンパクトサイズかつ軽量なウェブカメラ】",
+      "brand": "Ankerのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71xjnX1ckgL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 8990,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [],
+      "search_key": "Anker PowerConf C200"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B09M3F94FH",
+      "asin": "B09M3F94FH",
+      "amazon_title": "Ideao DC400 USB Webカメラ/書画カメラ/スキャナー 3-in-1 1600万画素 4K/30fps A3サイズ&10cm近接撮影",
+      "brand": "Innexのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61qD1+qQS6L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 16500,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [
+        "resolution"
+      ],
+      "search_key": "Innex Ideao DC400 USB Webカメラ/書画カメラ/スキャ"
+    }
+  ]
+}
