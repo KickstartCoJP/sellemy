@@ -1,0 +1,135 @@
+{
+  "slug": "autumn-perfumes-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/autumn-perfumes-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/autumn-perfumes-6-picks/autumn-perfumes-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "scent_family",
+      "label": "香りの系統",
+      "keywords": [
+        "ウッディ",
+        "フローラル",
+        "スパイシー",
+        "香調"
+      ]
+    },
+    {
+      "id": "longevity",
+      "label": "持続力",
+      "keywords": [
+        "残香性",
+        "持続時間",
+        "香りの立ち方"
+      ]
+    },
+    {
+      "id": "bottle_design",
+      "label": "デザイン・携帯性",
+      "keywords": [
+        "ボトルデザイン",
+        "サイズ",
+        "持ち歩き"
+      ]
+    },
+    {
+      "id": "price_range",
+      "label": "価格帯",
+      "keywords": [
+        "価格",
+        "コストパフォーマンス",
+        "容量あたりの単価"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "scent_family"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0GTZ35HHF",
+      "asin": "B0GTZ35HHF",
+      "amazon_title": "【公式】 hetras ヘトラス ダブルショット パフューム ボディミスト 120ml Hotel Wood ホテルウッド ウッディな香り ボディスプレー ボディケア フレグランス",
+      "brand": "hetras.のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51TVB9k6A7L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2490,
+      "discovery_score": 1,
+      "selection_score": 0.675,
+      "matched_comparison_axes": [
+        "scent_family"
+      ],
+      "search_key": "hetras. hetras ヘトラス ダブルショット パフューム ボディミスト"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HBP11SPD",
+      "asin": "B0HBP11SPD",
+      "amazon_title": "(ぬちがふぅ) オードパルファム 30ml ナイトジャスミン & Bath The vacance 炭酸入浴剤 4種セット",
+      "brand": "ブランド: NUCHIGAFU",
+      "image_url": "https://m.media-amazon.com/images/I/613g8TNi1UL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "observed_price": 5550,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "NUCHIGAFU (ぬちがふぅ) オードパルファム 30ml ナイトジャスミン &"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0F47P645D",
+      "asin": "B0F47P645D",
+      "amazon_title": "香水 金木犀の香り 秋の風韻｜ 和の香水 レディース メンズ ユニセックス フレグランス オーデコロン 45ml",
+      "brand": "ひのかのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61i0nZpnSpL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1930,
+      "discovery_score": 1,
+      "selection_score": 0.445,
+      "matched_comparison_axes": [],
+      "search_key": "ひのか 香水 金木犀の香り 秋の風韻｜ 和の香水 レディース メンズ ユ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0DJCQTFMH",
+      "asin": "B0DJCQTFMH",
+      "amazon_title": "NILE 香水 バニラブランデー スモークバニラ メンズ レディース オードトワレ 50ml",
+      "brand": "Nileのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71nL8WcKnjL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2980,
+      "discovery_score": 1,
+      "selection_score": 0.445,
+      "matched_comparison_axes": [],
+      "search_key": "Nile 香水 バニラブランデー スモークバニラ メンズ レディース オー"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0BF4WW33G",
+      "asin": "B0BF4WW33G",
+      "amazon_title": "[ お風呂上がりの、あの清らかさ ] WHITH WHITE フィス ホワイト 香水 ボディコロン フレグランスミスト 100ml サボン",
+      "brand": "WHITH WHITE(フィス ホワイト)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51128k6E-eL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2580,
+      "discovery_score": 1,
+      "selection_score": 0.445,
+      "matched_comparison_axes": [],
+      "search_key": "WHITH WHITE(フィス ホワイト) WHITH WHITE フィス ホワイト 香水 ボデ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0BBLX55R4",
+      "asin": "B0BBLX55R4",
+      "amazon_title": "SHIRO ホワイトリリー オードパルファン 40mL 香水",
+      "brand": "SHIROのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51bOSbp34+L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 4180,
+      "discovery_score": 1,
+      "selection_score": 0.445,
+      "matched_comparison_axes": [],
+      "search_key": "SHIRO ホワイトリリー オードパルファン 40mL 香水"
+    }
+  ]
+}
