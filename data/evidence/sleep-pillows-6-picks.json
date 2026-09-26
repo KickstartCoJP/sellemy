@@ -1,0 +1,132 @@
+{
+  "slug": "sleep-pillows-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/sleep-pillows-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/sleep-pillows-6-picks/sleep-pillows-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "material_firmness",
+      "label": "素材・硬さ",
+      "keywords": [
+        "低反発",
+        "パイプ素材",
+        "羽根"
+      ]
+    },
+    {
+      "id": "height_adjustability",
+      "label": "高さ調整のしやすさ",
+      "keywords": [
+        "中材調整",
+        "オーダーメイド感覚",
+        "段階調整"
+      ]
+    },
+    {
+      "id": "washability",
+      "label": "洗濯・お手入れのしやすさ",
+      "keywords": [
+        "丸洗い可能",
+        "カバー交換",
+        "抗菌防臭"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "material_firmness",
+      "washability"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0HGR43KL1",
+      "asin": "B0HGR43KL1",
+      "amazon_title": "枕 首が痛くならない 快眠枕 低反発 60D高密度 人間工学設計 体圧分散 首・肩にフィット 安眠枕",
+      "brand": "ブランド: generic",
+      "image_url": "https://m.media-amazon.com/images/I/6119zAvsISL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "observed_price": 2099,
+      "discovery_score": 1,
+      "selection_score": 0.675,
+      "matched_comparison_axes": [
+        "material_firmness"
+      ],
+      "search_key": "generic 枕 首が痛くならない 快眠枕 低反発 60D高密度 人間工学設計"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0C22X3W32",
+      "asin": "B0C22X3W32",
+      "amazon_title": "【ネムゾウ】まくら 肩こり 首が痛い 高さ調整 耐久10年 丸洗い可能 熱がこもらない 呼吸しやすい 毎日清潔 安眠枕 快眠枕 ゲルクッション 眠りに落とす枕 人気",
+      "brand": "鎌倉ライフのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51Saqtv9ujL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 14800,
+      "discovery_score": 1,
+      "selection_score": 0.675,
+      "matched_comparison_axes": [
+        "washability"
+      ],
+      "search_key": "鎌倉ライフ まくら 肩こり 首が痛い 高さ調整 耐久10年 丸洗い可能 熱が"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0H7XVFPXR",
+      "asin": "B0H7XVFPXR",
+      "amazon_title": "ブレインスリープ ピロー STANDARD ＋ ピローカバー（アクティブエア）ホワイト",
+      "brand": "BRAIN SLEEP (ブレインスリープ)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51-gX5GHFvL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 33000,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "BRAIN SLEEP (ブレインスリープ) ブレインスリープ ピロー STANDARD ＋ ピ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0GT4Z5D6C",
+      "asin": "B0GT4Z5D6C",
+      "amazon_title": "枕 首が痛くならない NERUS フリーメイド枕 人気 快眠 低反発枕 低め 高め 高さ調整 硬さ調節 肩 首 枕 横向き 横向き寝 枕 肩こり 首こり いびき防止 まくら 丸洗いOK 通気性 うつぶせ寝 横寝 寝返り makura QQT001 (ホワイト)",
+      "brand": "NERUSのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51P7G84UZAL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 9980,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "material_firmness"
+      ],
+      "search_key": "NERUS 枕 首が痛くならない NERUS フリーメイド枕 人気 快眠 低"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0GR5FSY23",
+      "asin": "B0GR5FSY23",
+      "amazon_title": "AooDen 枕 首が痛くならない 【人間工学×TPE枕】丸洗いOK 快眠 まくら 首サポート 肩こり対策 安眠 10cm/8cm高さ 枕カバー付き",
+      "brand": "AooDenのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71cV1u-3ulL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 7990,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "AooDen 枕 首が痛くならない 丸洗いOK 快眠 まくら 首サポート 肩こ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0FHGYZMTV",
+      "asin": "B0FHGYZMTV",
+      "amazon_title": "【理学療法士監修】 ドクターブレイン 首が痛くならない 低反発 枕 首こり 肩こり 安眠枕 快眠枕 DR.BRAIN 丸洗いOK まくら カバー付き",
+      "brand": "CSCのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/819zGvtujlL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 14800,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "material_firmness"
+      ],
+      "search_key": "CSC ドクターブレイン 首が痛くならない 低反発 枕 首こり 肩こり"
+    }
+  ]
+}
