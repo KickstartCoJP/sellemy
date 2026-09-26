@@ -1,0 +1,131 @@
+{
+  "slug": "water-flossers-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/water-flossers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/water-flossers-6-picks/water-flossers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "pressure",
+      "label": "水圧調整段階",
+      "keywords": [
+        "水圧レベル",
+        "強弱切替",
+        "低刺激モード"
+      ]
+    },
+    {
+      "id": "tank",
+      "label": "タンク容量・連続使用時間",
+      "keywords": [
+        "大容量タンク",
+        "連続噴射時間",
+        "給水回数"
+      ]
+    },
+    {
+      "id": "portability",
+      "label": "携帯性・充電式かどうか",
+      "keywords": [
+        "コードレス",
+        "USB充電",
+        "旅行用コンパクト"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "portability",
+      "tank"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0H6SFFPC4",
+      "asin": "B0H6SFFPC4",
+      "amazon_title": "口腔洗浄器 ジェットウォッシャー 5種類の水流モード 歯垢除去率99.9% 360°回転設計 パルス水流 30-150PSI水圧調整 3本ノズル付き 350ML大容量タンク IPX7防水 USB充電式 こうくう洗浄機 口腔ケア 家庭用や旅行に最適（ブルーグレー）",
+      "brand": "BGBのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71IndYYe02L._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 2479,
+      "discovery_score": 1,
+      "selection_score": 0.93,
+      "matched_comparison_axes": [
+        "portability",
+        "tank"
+      ],
+      "search_key": "BGB 口腔洗浄器 ジェットウォッシャー 5種類の水流モード 歯垢除去率"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0F9897LNV",
+      "asin": "B0F9897LNV",
+      "amazon_title": "ヤーマン ジェットウォッシャー ジェットフロス コンパクト 口腔洗浄器 YOI-100WAM2 ホワイト ステッカー付【Amazon.co.jp限定】",
+      "brand": "ヤーマン(Ya-man)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51kfnR0M7VL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 29800,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [],
+      "search_key": "ヤーマン(Ya-man) ヤーマン ジェットウォッシャー ジェットフロス コンパクト 口腔"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0DV7RJ9RK",
+      "asin": "B0DV7RJ9RK",
+      "amazon_title": "Waterpik コードレス1100 充電式ポータブルウォーターフロッサー 歯のクリーニングとフロッシング/旅行/ブレースケア/健康な歯茎/シャワー用防水 ADA承認 WF-30CD ホワイト パッケージが異なる場合があります",
+      "brand": "Waterpikのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71O-t4F0TlL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 13007,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [
+        "portability"
+      ],
+      "search_key": "Waterpik コードレス1100 充電式ポータブルウォーターフロッサー 歯のク"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0DC3QCTS3",
+      "asin": "B0DC3QCTS3",
+      "amazon_title": "【高級モデルを追求】口腔洗浄器 ジェットウォッシャー IPX7防水【日本企業】歯間ケア 口腔ケア アロマノバ コードレス ギフト 350ml (黒)",
+      "brand": "AromaNova（アロマノバ）のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61Iu-NQd7YL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 9980,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [
+        "portability"
+      ],
+      "search_key": "AromaNova（アロマノバ） 口腔洗浄器 ジェットウォッシャー IPX7防水 歯間ケア 口腔"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0HDSSSZB3",
+      "asin": "B0HDSSSZB3",
+      "amazon_title": "口腔洗浄器 ジェットウォッシャー 歯垢除去率99.9% 4種類の水流モード 20-150PSI水圧調整 ノズル5個 こうくう洗浄機 パールブラック",
+      "brand": "ブランド: Kabori",
+      "image_url": "https://m.media-amazon.com/images/I/71k2EysTo-L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2499,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "Kabori 口腔洗浄器 ジェットウォッシャー 歯垢除去率99.9% 4種類の"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0H5TZMTRG",
+      "asin": "B0H5TZMTRG",
+      "amazon_title": "口腔洗浄器 ジェットウォッシャー 高周波パルス水流【99.9%洗浄効率・安定水流】 (ホワイト)",
+      "brand": "JPILSTのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71Q3NCxKUdL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2999,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "JPILST 口腔洗浄器 ジェットウォッシャー 高周波パルス水流 (ホワイト)"
+    }
+  ]
+}
