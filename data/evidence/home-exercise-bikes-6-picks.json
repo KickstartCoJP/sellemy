@@ -1,0 +1,147 @@
+{
+  "slug": "home-exercise-bikes-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/home-exercise-bikes-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/home-exercise-bikes-6-picks/home-exercise-bikes-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "resistance",
+      "label": "負荷調整・静音性",
+      "keywords": [
+        "マグネット負荷",
+        "静音設計",
+        "段階調整"
+      ]
+    },
+    {
+      "id": "footprint",
+      "label": "折りたたみ・省スペース性",
+      "keywords": [
+        "折りたたみ",
+        "キャスター付き",
+        "設置スペース"
+      ]
+    },
+    {
+      "id": "connectivity",
+      "label": "液晶・アプリ連携",
+      "keywords": [
+        "液晶モニター",
+        "消費カロリー表示",
+        "アプリ連携"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格帯",
+      "keywords": [
+        "エントリーモデル",
+        "本格志向",
+        "コスパ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "connectivity",
+      "footprint",
+      "resistance"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0GXVQJMP8",
+      "asin": "B0GXVQJMP8",
+      "amazon_title": "【2026年 第2世代 NEW】RENPHO レンフォ スマートバイク エアロバイク スピンバイク フィットネスバイク Bluetooth対応 アプリ連携 AI搭載 自動負荷調整 Zwift対応 静音 マグネット負荷 16段階調整可能 室内 家トレ ダイエット 有酸素運動 コンパクト パワートレーニング 家庭用 トレーニングバイク ジム AI Smart Bike Q002N",
+      "brand": "RENPHOのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/613XQS3sXML._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 69800,
+      "discovery_score": 1,
+      "selection_score": 0.83,
+      "matched_comparison_axes": [
+        "connectivity",
+        "resistance"
+      ],
+      "search_key": "RENPHO レンフォ スマートバイク エアロバイク スピンバイク フィットネ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HJ4PBL5X",
+      "asin": "B0HJ4PBL5X",
+      "amazon_title": "YOSUDA フィットネスバイク エアロバイク 静音 マグネット式 負荷調節 折りたたみ 家庭用 コンパクト収納 軽量 組立簡単 移動便利 トレーニングバイク 室内バイク サイクリングマシン スピンバイク 有酸素運動",
+      "brand": "YOSUDAのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61a9QS9kO+L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 13880,
+      "discovery_score": 1,
+      "selection_score": 0.7,
+      "matched_comparison_axes": [
+        "footprint"
+      ],
+      "search_key": "YOSUDA フィットネスバイク エアロバイク 静音 マグネット式 負荷調節"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HF4QW6C6",
+      "asin": "B0HF4QW6C6",
+      "amazon_title": "【低身長対応】CHAOKE エアロバイク 家庭用 スピンバイク フィットネスバイク （Z-sport連動/マグネット式/静音/無段階負荷調整/LCD液晶モニター）家族共用 小型 コンパクト 有酸素運動 トレーニング ダイエット 室内バイク 運動不足解消 組立簡単 省スペース 五年保証",
+      "brand": "CHAOKEのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71BPwJ59IcL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 22180,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "connectivity"
+      ],
+      "search_key": "CHAOKE エアロバイク 家庭用 スピンバイク フィットネスバイク （Z-s"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0G4QWQSBR",
+      "asin": "B0G4QWQSBR",
+      "amazon_title": "【2026アップグレード版】DMASUN エアロバイク 家庭用 静音スピンバイク フィットネスバイク 静音【マグネット/無段階調整/サドル・ハンドル調節可能/転倒防止】安定 160kg耐荷重 組み立て簡単 室内自転車 ルームバイク トレーニング 【6年間商品保証】【衝突防止カバー】",
+      "brand": "DMASUNのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61ISyotghoL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 24480,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "resistance"
+      ],
+      "search_key": "DMASUN エアロバイク 家庭用 静音スピンバイク フィットネスバイク 静音"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0DT45QJ82",
+      "asin": "B0DT45QJ82",
+      "amazon_title": "STEADY スピンバイク エアロバイク フィットネスバイク トレーニングバイク・マシーン 家庭用 Zwift アプリ連動 静音 組立簡単 無段階調整",
+      "brand": "STEADYのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71YVz+SuTUL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 49990,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "resistance"
+      ],
+      "search_key": "STEADY スピンバイク エアロバイク フィットネスバイク トレーニングバイ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0HHQWMFGR",
+      "asin": "B0HHQWMFGR",
+      "amazon_title": "【アワード受賞・人気ブランド】BARWING(バーウィング) フィットネスバイク 折りたたみ 折りたたみ式 16段階調節 静音 スピンバイク トレーニングバイク 組み立て簡単 エクササイズバイク エアロ バイク",
+      "brand": "ブランド: BARWING(バーウィング)",
+      "image_url": "https://m.media-amazon.com/images/I/51EZtqrJajL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 14800,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [
+        "footprint"
+      ],
+      "search_key": "BARWING(バーウィング) フィットネスバイク 折りたたみ 折りたたみ式 16段階調節 静音"
+    }
+  ]
+}
