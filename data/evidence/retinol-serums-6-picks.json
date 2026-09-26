@@ -1,0 +1,127 @@
+{
+  "slug": "retinol-serums-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/retinol-serums-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/retinol-serums-6-picks/retinol-serums-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "concentration",
+      "label": "濃度・処方の違い",
+      "keywords": [
+        "レチノール濃度",
+        "処方",
+        "誘導体"
+      ]
+    },
+    {
+      "id": "gentleness",
+      "label": "使用感・低刺激設計",
+      "keywords": [
+        "刺激",
+        "テクスチャー",
+        "敏感肌"
+      ]
+    },
+    {
+      "id": "price_volume",
+      "label": "価格帯・容量",
+      "keywords": [
+        "価格",
+        "容量",
+        "コスパ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "gentleness"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0D3TBDN1S",
+      "asin": "B0D3TBDN1S",
+      "amazon_title": "RETICO. 【LDK掲載】レチノール 高濃度2% 毛穴 シワ CICA 敏感肌用 Ⅰ 日本製 7つの無添加 毛穴 30ml",
+      "brand": "White Lapinのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71R8fOpfnIL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2200,
+      "discovery_score": 1,
+      "selection_score": 0.7,
+      "matched_comparison_axes": [
+        "gentleness"
+      ],
+      "search_key": "White Lapin RETICO. レチノール 高濃度2% 毛穴 シワ CICA 敏"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0FPQG3DGW",
+      "asin": "B0FPQG3DGW",
+      "amazon_title": "Yunth ユンス 生VAダーマ 美容液 28日分 VC美容液サンプル2包付 レチノール 毛穴 美白 ナイアシンアミド グリチルリチン エイジング",
+      "brand": "Yunthのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/81pgaN3OfeL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 4950,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "Yunth ユンス 生VAダーマ 美容液 28日分 VC美容液サンプル2包付"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0FK91VSKG",
+      "asin": "B0FK91VSKG",
+      "amazon_title": "【公式】NOWL ニードルデュアルセラム 30ml 毛穴 針20万本 2層構造 日本製 ハリ たるみ レチノール ビタミンC 美容液 保湿",
+      "brand": "NOWLのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71FYJesKtWL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 6116,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "NOWL ニードルデュアルセラム 30ml 毛穴 針20万本 2層構造 日"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0FJ1YPPMY",
+      "asin": "B0FJ1YPPMY",
+      "amazon_title": "ANUA(アヌア)レチノール0.3ナイアシンセラム30ml+レチノール0.1カフェインアイクリーム 30g (美容液+アイクリーム) 2STEPセット 目元ケア 毛穴 ハリ 保湿 retinol niacin serum + retinol caffeine eye cream 乾燥肌 混合肌 スキンケア【公式・正規品】",
+      "brand": "ANUAのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51xmQGmDqiL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 4950,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "ANUA (アヌア)レチノール0.3ナイアシンセラム30ml+レチノール0"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0DWX8YMB9",
+      "asin": "B0DWX8YMB9",
+      "amazon_title": "【攻めと守りの5種のレチノール】INSITU インシトゥ レチノソームショット2.0レチノール美容液 トレチノイン 毛穴 水分保湿 韓国コスメ 韓国美容液 1本",
+      "brand": "INSITUのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71ISfuAgsCL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3960,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "INSITU インシトゥ レチノソームショット2.0レチノール美容液 トレチノ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0C45Y816C",
+      "asin": "B0C45Y816C",
+      "amazon_title": "【イニスフリー】 レチノール シカ リペア セラム 30ml - 正規品 レチシカ トラブルケア 美容液 シカレチノール エッセンス 保湿 潤い 水分 スキンケア 低刺激 敏感肌 お家ケア 乾燥肌",
+      "brand": "イニスフリー(innisfree)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51NnqTLSaZL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3600,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "gentleness"
+      ],
+      "search_key": "イニスフリー(innisfree) レチノール シカ リペア セラム 30ml - 正規品 レチ"
+    }
+  ]
+}
