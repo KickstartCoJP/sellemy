@@ -1,0 +1,140 @@
+{
+  "slug": "mens-hair-growth-tonics-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/mens-hair-growth-tonics-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/mens-hair-growth-tonics-6-picks/mens-hair-growth-tonics-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "active_ingredients",
+      "label": "有効成分・医薬部外品区分",
+      "keywords": [
+        "ミノキシジル",
+        "医薬部外品",
+        "育毛",
+        "発毛"
+      ]
+    },
+    {
+      "id": "usability",
+      "label": "使用感・使いやすさ",
+      "keywords": [
+        "スプレー",
+        "ノズル",
+        "べたつかない",
+        "無香料"
+      ]
+    },
+    {
+      "id": "price_continuity",
+      "label": "価格・続けやすさ",
+      "keywords": [
+        "定期便",
+        "コスパ",
+        "容量",
+        "価格帯"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "active_ingredients",
+      "usability"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0071925WY",
+      "asin": "B0071925WY",
+      "amazon_title": "レキシリス.ブラック スカルプローション (100ｍL) ヘアトニック 頭皮保湿ローション (ふけ/かゆみ/育毛) 無香料/薬用 医薬部外品/サロンクオリティ",
+      "brand": "LEXILISのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51fH1YAGqeL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3980,
+      "discovery_score": 1,
+      "selection_score": 0.855,
+      "matched_comparison_axes": [
+        "active_ingredients",
+        "usability"
+      ],
+      "search_key": "LEXILIS レキシリス.ブラック スカルプローション (100ｍL) ヘアト"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HCN44B4N",
+      "asin": "B0HCN44B4N",
+      "amazon_title": "【頭皮に直接届けるシリコンニードル採用】OLIM オーリム 育毛剤 発毛剤 医薬部外品 男性 女性 発毛促進 抜け毛予防 頭皮ケア 100ml",
+      "brand": "Doctor Health Careのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61jCOVzrIyL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 6980,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "active_ingredients"
+      ],
+      "search_key": "Doctor Health Care OLIM オーリム 育毛剤 発毛剤 医薬部外品 男性 女性"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0F5Q8TMLZ",
+      "asin": "B0F5Q8TMLZ",
+      "amazon_title": "ニューモ V 育毛剤 医薬部外品 75ml 1本 発毛促進 無添加 抜け毛予防 薄毛対策 頭皮ケア HGP配合 ファーマフーズ シリアルナンバー付",
+      "brand": "ニューモのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/6185ZdNxKiL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 8060,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "active_ingredients"
+      ],
+      "search_key": "ニューモ V 育毛剤 医薬部外品 75ml 1本 発毛促進 無添加 抜け毛"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0C88N68C5",
+      "asin": "B0C88N68C5",
+      "amazon_title": "【医薬部外品】ホルモ プレミアムヘアグロウエッセンス 80ml 育毛剤 男女兼用 発毛促進 薄毛対策 ふけ 頭皮 痒み ハーブ健康本舗 HORMO",
+      "brand": "HORMOのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/617CFUPLU1L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 6980,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "active_ingredients"
+      ],
+      "search_key": "HORMO ホルモ プレミアムヘアグロウエッセンス 80ml 育毛剤 男女兼"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0BSNDFYHF",
+      "asin": "B0BSNDFYHF",
+      "amazon_title": "【周りにバレない薄毛隠し】HAN.d moir 100g×3 薄毛 対策 白髪隠し スプレー パウダー 増毛 スカルプケア ヘアケア用品 ハゲ隠し",
+      "brand": "HAN.dのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51WSHUOzWHL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 12810,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "usability"
+      ],
+      "search_key": "HAN.d moir 100g×3 薄毛 対策 白髪隠し スプレー パウダー"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0B2NV6M1Y",
+      "asin": "B0B2NV6M1Y",
+      "amazon_title": "アンサード EX7 薬用 育毛剤 メンズ 男性用 医薬部外品 育毛 トニック 100g (約30日)",
+      "brand": "Answeredのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61-FWzcTFBL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 9800,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "active_ingredients"
+      ],
+      "search_key": "Answered アンサード EX7 薬用 育毛剤 メンズ 男性用 医薬部外品 育"
+    }
+  ]
+}
