@@ -1,0 +1,148 @@
+{
+  "slug": "color-contacts-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/color-contacts-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/color-contacts-6-picks/color-contacts-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "color_pattern",
+      "label": "カラー・デザインの種類",
+      "keywords": [
+        "ナチュラル",
+        "ハーフ系",
+        "ハロウィン",
+        "カラー展開"
+      ]
+    },
+    {
+      "id": "prescription",
+      "label": "度あり・度なし対応",
+      "keywords": [
+        "度あり",
+        "度なし",
+        "乱視用"
+      ]
+    },
+    {
+      "id": "wearing_comfort",
+      "label": "装着感・うるおい成分",
+      "keywords": [
+        "うるおい成分",
+        "UVカット",
+        "酸素透過率"
+      ]
+    },
+    {
+      "id": "price_lens_count",
+      "label": "価格・枚数",
+      "keywords": [
+        "1day",
+        "2week",
+        "価格"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "color_pattern",
+      "prescription",
+      "price_lens_count",
+      "wearing_comfort"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0D3QRBFFB",
+      "asin": "B0D3QRBFFB",
+      "amazon_title": "カラコン アンヴィ envie 1day 【パルファムグロウ】10枚入り UVカット 松本恵奈 カラーコンタクト ワンデー 度あり 度なし 14.1mm（パルファムグロウ／0.00）",
+      "brand": "ｅｎｖｉｅ＼アンヴィのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51ilagx649L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1760,
+      "discovery_score": 1,
+      "selection_score": 1.06,
+      "matched_comparison_axes": [
+        "prescription",
+        "price_lens_count",
+        "wearing_comfort"
+      ],
+      "search_key": "ｅｎｖｉｅ＼アンヴィ カラコン アンヴィ envie 1day 10枚入り UVカット"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B075K6KZGX",
+      "asin": "B075K6KZGX",
+      "amazon_title": "クレオワンデーUVリング30枚1箱 ナチュラルブラウン （1日使い捨て コンタクトレンズ ） (【PRW】-2.25)",
+      "brand": "CREOのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/41BXabLbEEL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "observed_price": 2970,
+      "discovery_score": 1,
+      "selection_score": 0.7,
+      "matched_comparison_axes": [
+        "color_pattern"
+      ],
+      "search_key": "CREO クレオワンデーUVリング30枚1箱 ナチュラルブラウン （1日使"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GQXTTBC1",
+      "asin": "B0GQXTTBC1",
+      "amazon_title": "【公式】 回らない 水光 カラコン OTHER 1day ロレ 度数:±0.00 10枚",
+      "brand": "ØTHERのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71wBDwCu61L._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 1815,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "price_lens_count"
+      ],
+      "search_key": "ØTHER 回らない 水光 カラコン OTHER 1day ロレ 度数:±0"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0DF2H7XX6",
+      "asin": "B0DF2H7XX6",
+      "amazon_title": "アルコン デイリーズアクティブ 100枚入り 【デイリーズ アクア コンフォートプラス 後継品】【BC】8.7 【PWR】-3.00",
+      "brand": "Alconのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61mpPOhAj6L._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 3489,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "Alcon アルコン デイリーズアクティブ 100枚入り 8.7 -3.00"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0D981WGRB",
+      "asin": "B0D981WGRB",
+      "amazon_title": "ルミア(LuMia) 2week カラコン カラー コンタクト レンズ 6枚入 ヌーディーブラウン ±0.00",
+      "brand": "ブランド: LuMia",
+      "image_url": "https://m.media-amazon.com/images/I/81XggtbCWcL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 2178,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "price_lens_count"
+      ],
+      "search_key": "LuMia ルミア(LuMia) 2week カラコン カラー コンタクト"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B07KQ2ZRRB",
+      "asin": "B07KQ2ZRRB",
+      "amazon_title": "エティア ジュレワンデー 度あり/度なし 全18色【10枚入】コスプレ×ハーフ目 フチなし 高発色カラコン ライチジュレ -0.00 度なし",
+      "brand": "Etia.(エティア)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/81A7U6oVWfL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1958,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "prescription"
+      ],
+      "search_key": "Etia.(エティア) エティア ジュレワンデー 度あり/度なし 全18色 コスプレ×ハ"
+    }
+  ]
+}

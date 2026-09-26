@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-color-contacts-6-picks-8e61f88961baa614",
+  "request_sha256": "8e61f88961baa61431576830bf58e554466c42185dad092296822a0f14727cd3",
+  "image_sha256": "11583efeeae7840a0b13398b5212bd2a24790a1fa06e102b4abb0e5c46cbe144",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-09-26T12:43:12.935860+00:00"
+}
