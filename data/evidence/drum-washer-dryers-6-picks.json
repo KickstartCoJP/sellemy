@@ -1,0 +1,135 @@
+{
+  "slug": "drum-washer-dryers-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/drum-washer-dryers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/drum-washer-dryers-6-picks/drum-washer-dryers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "capacity",
+      "label": "洗濯・乾燥容量",
+      "keywords": [
+        "大容量",
+        "一人暮らし向け",
+        "ファミリー向け"
+      ]
+    },
+    {
+      "id": "drying",
+      "label": "乾燥方式",
+      "keywords": [
+        "ヒートポンプ式",
+        "ヒーター式",
+        "低温乾燥"
+      ]
+    },
+    {
+      "id": "maintenance",
+      "label": "お手入れ・自動洗浄機能",
+      "keywords": [
+        "槽洗浄",
+        "フィルター自動お掃除",
+        "静音性"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "capacity",
+      "drying",
+      "maintenance"
+    ],
+    "brand_count": 3,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0FVX7DV72",
+      "asin": "B0FVX7DV72",
+      "amazon_title": "COMFEE' ドラム式 洗濯乾燥機 洗濯10kg 乾燥5kg 2-4人用 洗剤自動投入 自動槽洗浄 スピードコース 大容量 家電 節水 静音設計 60℃除菌コース コンパクト 黒 金属グレー CD-105DA1(T)",
+      "brand": "コンフィー(COMFEE')のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61WDT2ZIMVL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 87900,
+      "discovery_score": 1,
+      "selection_score": 0.88,
+      "matched_comparison_axes": [
+        "capacity",
+        "maintenance"
+      ],
+      "search_key": "コンフィー(COMFEE') COMFEE' ドラム式 洗濯乾燥機 洗濯10kg 乾燥5kg"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0FGWX8JD4",
+      "asin": "B0FGWX8JD4",
+      "amazon_title": "TOSHIBA(東芝) ドラム式洗濯乾燥機 幅59.9㎝ 洗濯8kg 乾燥4kg 左開き TW-84GS4L(W) モーニングホワイト 抗菌ウルトラファインバブル洗浄 ヒーター式乾燥 Ag+抗菌水 温水抗菌ウルトラファインバブル洗浄 インバーター制御",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51capPMRYcL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 129206,
+      "discovery_score": 1,
+      "selection_score": 0.53,
+      "matched_comparison_axes": [
+        "drying"
+      ],
+      "search_key": "TOSHIBA(東芝) ドラム式洗濯乾燥機 幅59.9㎝ 洗濯8"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GH7XNZ71",
+      "asin": "B0GH7XNZ71",
+      "amazon_title": "ドラム式洗濯乾燥機 8kg 洗剤自動投入 【ふんわり乾燥】 左開き ホワイト 静音 シンプル設計・コストを抑えたモデル",
+      "brand": "ブランド: Easynest",
+      "image_url": "https://m.media-amazon.com/images/I/712J5EeFBnL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 64980,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [],
+      "search_key": "Easynest ドラム式洗濯乾燥機 8kg 洗剤自動投入 左開き ホワイト 静音"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0FTSGRLD1",
+      "asin": "B0FTSGRLD1",
+      "amazon_title": "ハイセンス ドラム式 洗濯乾燥機 洗濯8kg 乾燥4kg 洗剤自動投入 コンパクト 大容量 自動槽洗浄 温水洗浄 60℃除菌コース スリム HWF-KD80SL-W ホワイト",
+      "brand": "Hisenseのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/619QcSLCGRL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 79800,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [
+        "capacity",
+        "maintenance"
+      ],
+      "search_key": "Hisense ハイセンス ドラム式 洗濯乾燥機 洗濯8kg 乾燥4kg 洗剤自"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0FGWY14WX",
+      "asin": "B0FGWY14WX",
+      "amazon_title": "TOSHIBA(東芝) ドラム式洗濯乾燥機 幅60㎝ 洗濯12kg 乾燥7kg 左開き TW-127XP4L(W) グランホワイト ヒートポンプ 大風量乾燥 Ag+抗菌水 洗剤自動投入 温水洗浄",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61DPqZfsNRL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 202830,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [],
+      "search_key": "TOSHIBA(東芝) ドラム式洗濯乾燥機 幅60㎝ 洗濯12k"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0F5GKHB88",
+      "asin": "B0F5GKHB88",
+      "amazon_title": "TOSHIBA(東芝) ドラム式洗濯乾燥機 幅60㎝ 洗濯12kg 乾燥7kg 左開き TW-127XM4L(W) グランホワイト ヒートポンプ 大風量乾燥 Ag+抗菌水 洗剤自動投入 大容量",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61Wt2ICVNvL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 188000,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [
+        "capacity"
+      ],
+      "search_key": "TOSHIBA(東芝) ドラム式洗濯乾燥機 幅60㎝ 洗濯12k"
+    }
+  ]
+}
