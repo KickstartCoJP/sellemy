@@ -1,0 +1,145 @@
+{
+  "slug": "hot-sandwich-makers-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/hot-sandwich-makers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/hot-sandwich-makers-6-picks/hot-sandwich-makers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "heating",
+      "label": "加熱方式",
+      "keywords": [
+        "直火式",
+        "電気式",
+        "IH対応"
+      ]
+    },
+    {
+      "id": "capacity",
+      "label": "一度に作れる枚数・サイズ",
+      "keywords": [
+        "2枚焼き",
+        "耳まで焼ける",
+        "厚み対応"
+      ]
+    },
+    {
+      "id": "cleaning",
+      "label": "お手入れのしやすさ",
+      "keywords": [
+        "フッ素加工",
+        "着脱式プレート",
+        "食洗機対応"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格帯",
+      "keywords": [
+        "プチプラ",
+        "ブランド品",
+        "コスパ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "capacity",
+      "cleaning",
+      "heating"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0C36N7KNB",
+      "asin": "B0C36N7KNB",
+      "amazon_title": "recolte レコルト プレスサンドメーカー ミニ ホットサンドメーカー 電気式 1枚用 耳まで焼ける 耳圧着 レシピ本付 コンパクト ホワイト RPS-3(W)",
+      "brand": "récolteのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51vavW-in0L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 4004,
+      "discovery_score": 1,
+      "selection_score": 0.88,
+      "matched_comparison_axes": [
+        "capacity",
+        "heating"
+      ],
+      "search_key": "récolte recolte レコルト プレスサンドメーカー ミニ ホットサン"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0GH6FXZK4",
+      "asin": "B0GH6FXZK4",
+      "amazon_title": "AHJ ホットサンドメーカー 電子レンジ専用 レンジでホットサンド ホットサンドメーカー レンジ フチ高設計 チーズ漏れ軽減 電子レンジ調理器 サンドメーカー 焼き目風プレート 6〜8枚切り対応 フッ素樹脂コーティング 食洗機対応 丸洗いOK レシピ付き 火を使わない 朝食 ランチ お弁当 日本語説明書付き",
+      "brand": "AHJのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71sm27Y5eSL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3699,
+      "discovery_score": 1,
+      "selection_score": 0.65,
+      "matched_comparison_axes": [
+        "cleaning"
+      ],
+      "search_key": "AHJ ホットサンドメーカー 電子レンジ専用 レンジでホットサンド ホッ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0G1BDVB5B",
+      "asin": "B0G1BDVB5B",
+      "amazon_title": "ホットサンドメーカー ワッフル【 耳まで焼ける 厚焼き 】レシピ付き 電気 洗える 着脱式 お手入れ簡単 音の出るタイマー機能 最大10分 焼き型2種 コンパクト収納 レトロデザイン フッ素樹脂 一枚 一人暮らし 父の日 ilosta (イロスタ) メーカー公式 (ラテ)",
+      "brand": "ilostaのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51tXP07ed4L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 4380,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "capacity"
+      ],
+      "search_key": "ilosta ホットサンドメーカー ワッフル レシピ付き 電気 洗える 着脱式"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0DD3N17CM",
+      "asin": "B0DD3N17CM",
+      "amazon_title": "SOLEMOOD ダブルホットサンドメーカー ワーフルメーカー 焼き型2種 耳まで焼ける 電気 ワイド マルチサンドメーカー ダブル (アイボリー-２種類プレート付き)",
+      "brand": "SOLEMOODのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71UgdY2azmL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 9985,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "capacity"
+      ],
+      "search_key": "SOLEMOOD ダブルホットサンドメーカー ワーフルメーカー 焼き型2種 耳まで"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0CG436RCV",
+      "asin": "B0CG436RCV",
+      "amazon_title": "[ ビタントニオ 公式 ] ワッフル＆ホットサンドベーカー VWH-600-R（ ホットサンドメーカー 電気 ワッフル メーカー レッド)",
+      "brand": "Vitantonio (ビタントニオ)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71DXIjckGKL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 7980,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "Vitantonio (ビタントニオ) ワッフル＆ホットサンドベーカー VWH-600-R（ ホ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0932FFJNX",
+      "asin": "B0932FFJNX",
+      "amazon_title": "BRUNO ブルーノ グリルサンドメーカー シングル ホットサンドメーカー おしゃれ 電気 耳まで焼ける 朝食 パン 食パン タイマー付き プレート取りはずし可 グレージュ ブルーノ BOE083-GRG",
+      "brand": "BRUNOのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51GSCk+jgAS._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 8000,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "capacity"
+      ],
+      "search_key": "BRUNO ブルーノ グリルサンドメーカー シングル ホットサンドメーカー"
+    }
+  ]
+}
