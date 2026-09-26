@@ -1,0 +1,128 @@
+{
+  "slug": "eyelash-serums-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/eyelash-serums-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/eyelash-serums-6-picks/eyelash-serums-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "ingredients",
+      "label": "成分・処方",
+      "keywords": [
+        "ペプチド",
+        "セラミド",
+        "育毛成分"
+      ]
+    },
+    {
+      "id": "usability",
+      "label": "使用感・塗りやすさ",
+      "keywords": [
+        "筆タイプ",
+        "液だれしにくい",
+        "密着感"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格帯・コスパ",
+      "keywords": [
+        "プチプラ",
+        "デパコス",
+        "続けやすさ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "ingredients",
+      "usability"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0CFWVP85K",
+      "asin": "B0CFWVP85K",
+      "amazon_title": "【公式】ロート製薬 ラッシュリッチ まつ毛美容液 まつ毛ダニ まつ毛の立ち上げ 細筆タイプ 目元ケア うるおい成分配合 無香料 無着色 オイルフリー 使いやすい 2.5mL",
+      "brand": "ラッシュリッチのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/41KgV0d7v9L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 5500,
+      "discovery_score": 1,
+      "selection_score": 0.7,
+      "matched_comparison_axes": [
+        "usability"
+      ],
+      "search_key": "ラッシュリッチ ロート製薬 ラッシュリッチ まつ毛美容液 まつ毛ダニ まつ毛の立"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0CTQV5MJ7",
+      "asin": "B0CTQV5MJ7",
+      "amazon_title": "PHOEBE BEAUTY UP アイラッシュセラムN2 5mL まつ毛美容液 まつげ美容液 フィービービューティーアップ ヒト幹細胞培養液 6種のセラミド配合 まつ毛ケア",
+      "brand": "PHOEBE BEAUTY UPのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/613JEw011YL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 5830,
+      "discovery_score": 1,
+      "selection_score": 0.7,
+      "matched_comparison_axes": [
+        "ingredients"
+      ],
+      "search_key": "PHOEBE BEAUTY UP アイラッシュセラムN2 5mL まつ毛美容液 まつげ美容液 フ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GS6QB44F",
+      "asin": "B0GS6QB44F",
+      "amazon_title": "ドクターブロープラス 眉毛美容液 まゆげ美容液 ヒト幹細胞培養液 センブリエキス CICA 低刺激 眉毛ケア 7ml Dr Brow Plus",
+      "brand": "ブランド: Dr Brow Plus +",
+      "image_url": "https://m.media-amazon.com/images/I/61WqsS7YjiL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 6980,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "Dr Brow Plus + ドクターブロープラス 眉毛美容液 まゆげ美容液 ヒト幹細胞培養液"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0GPD1F28V",
+      "asin": "B0GPD1F28V",
+      "amazon_title": "【再生医療発想】エテルナム アイラッシュセラム まつ毛美容液 5mL ヒト幹細胞培養上清液 色素沈着成分フリー まつエク まつパ ボリューム 束感",
+      "brand": "Eternamのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/41RyQ6fBTeL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 6600,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "Eternam エテルナム アイラッシュセラム まつ毛美容液 5mL ヒト幹細胞"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0FKH3CJ8C",
+      "asin": "B0FKH3CJ8C",
+      "amazon_title": "【 実績26年 メーカー発 】自慢の目元 by EYEZ まつげ美容液 [ 約3000兆個の生コラーゲン配合 ] まつ毛美容液 まつ毛 ケア ハリコシ ボリュームアップ 色素沈着させない 3ml",
+      "brand": "ブランド: EYEZ",
+      "image_url": "https://m.media-amazon.com/images/I/51LRnrBUSFL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 13200,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "EYEZ 自慢の目元 by EYEZ まつげ美容液 まつ毛美容液 まつ毛"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0H4T4VYNH",
+      "asin": "B0H4T4VYNH",
+      "amazon_title": "マジョリカ マジョルカ まつげ美容液 ラッシュジェリードロップ ロング 5.3g まつエク・まつパOK 美容成分配合 まつ毛ケア ハリ MAJOLICA MAJORCA",
+      "brand": "MAJOLICA MAJORCA(マジョリカ マジョルカ)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61X9Bw3OYwL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1210,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [],
+      "search_key": "MAJOLICA MAJORCA(マジョリカ マジョルカ) マジョリカ マジョルカ まつげ美容液"
+    }
+  ]
+}
