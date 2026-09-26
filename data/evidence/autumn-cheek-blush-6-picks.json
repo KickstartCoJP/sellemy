@@ -1,0 +1,140 @@
+{
+  "slug": "autumn-cheek-blush-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/autumn-cheek-blush-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/autumn-cheek-blush-6-picks/autumn-cheek-blush-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "color",
+      "label": "発色・カラー展開",
+      "keywords": [
+        "発色",
+        "カラーバリエーション",
+        "秋色"
+      ]
+    },
+    {
+      "id": "texture",
+      "label": "質感（パウダー/クリーム/リキッド）",
+      "keywords": [
+        "パウダー",
+        "クリーム",
+        "リキッド",
+        "質感"
+      ]
+    },
+    {
+      "id": "longevity",
+      "label": "持続力・崩れにくさ",
+      "keywords": [
+        "崩れにくい",
+        "持ち",
+        "ヨレ"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格帯",
+      "keywords": [
+        "プチプラ",
+        "デパコス",
+        "価格"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "color",
+      "texture"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0CYSP2LTH",
+      "asin": "B0CYSP2LTH",
+      "amazon_title": "チーク ポンポンミネラルチーク パフ付き ハイグロス コンター フェイス ブラッシュ クッション ソフト 高発色 軽量感 通気性 ナチュラル コスメ (1, 05#ミルクティー, ‎4.7 x 4.7 x 5 cm)",
+      "brand": "ブランド: SUIKONE",
+      "image_url": "https://m.media-amazon.com/images/I/61bK8In9h4L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 980,
+      "discovery_score": 1,
+      "selection_score": 0.7,
+      "matched_comparison_axes": [
+        "color"
+      ],
+      "search_key": "SUIKONE チーク ポンポンミネラルチーク パフ付き ハイグロス コンター"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0H1MG6WXP",
+      "asin": "B0H1MG6WXP",
+      "amazon_title": "ビディビーチ(VIDIVICI) グロウオンリキッドブラッシュ (P02 メロウ)",
+      "brand": "VIDIVICIのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71yafzJQbjL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2610,
+      "discovery_score": 1,
+      "selection_score": 0.7,
+      "matched_comparison_axes": [
+        "texture"
+      ],
+      "search_key": "VIDIVICI ビディビーチ(VIDIVICI) グロウオンリキッドブラッシュ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0FF9J9FRC",
+      "asin": "B0FF9J9FRC",
+      "amazon_title": "ミルフィー シェイクドロップチーク リキッド 4色 血色感 ふんわり スポンジブラシ (02 モカムース)",
+      "brand": "MilleFéeのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51McQjAZFqL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1650,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "texture"
+      ],
+      "search_key": "MilleFée ミルフィー シェイクドロップチーク リキッド 4色 血色感 ふん"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0F4KNLFXJ",
+      "asin": "B0F4KNLFXJ",
+      "amazon_title": "【2aN公式】 チーク 人気 DUAL CHEEK 08 NUDE HAZE ブルべ 夏 イエベ 秋 多幸感メイク アイドルメイク バブみ 桃肌 韓国アイドル",
+      "brand": "2aNのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/610nBrphSaL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1870,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "2aN チーク 人気 DUAL CHEEK 08 NUDE HAZE ブ"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0DZLYHGVN",
+      "asin": "B0DZLYHGVN",
+      "amazon_title": "【公式】Enamor(エナモル) メロウメルティングチーク (06 Etarnal nude) (かじえり/KAJIERI)",
+      "brand": "Enamorのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51ycMPNC93L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2420,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "Enamor (エナモル) メロウメルティングチーク (06 Etarnal"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0CXTCLL1C",
+      "asin": "B0CXTCLL1C",
+      "amazon_title": "fwee(フィー) リップアンドチークブラーリープリンポット 1個 ヌード05 ビー",
+      "brand": "fweeのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51QXxN7LTmL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1980,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "fwee (フィー) リップアンドチークブラーリープリンポット 1個 ヌー"
+    }
+  ]
+}
