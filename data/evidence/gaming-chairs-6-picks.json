@@ -1,0 +1,140 @@
+{
+  "slug": "gaming-chairs-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/gaming-chairs-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/gaming-chairs-6-picks/gaming-chairs-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "comfort",
+      "label": "座面・クッション性",
+      "keywords": [
+        "ウレタン",
+        "低反発",
+        "リクライニング"
+      ]
+    },
+    {
+      "id": "adjustability",
+      "label": "調整機能",
+      "keywords": [
+        "アームレスト",
+        "ランバーサポート",
+        "座面昇降"
+      ]
+    },
+    {
+      "id": "durability_design",
+      "label": "耐荷重・デザイン",
+      "keywords": [
+        "耐荷重",
+        "合成皮革",
+        "ファブリック素材"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "adjustability",
+      "comfort"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0GWGR8SDY",
+      "asin": "B0GWGR8SDY",
+      "amazon_title": "[Sezlife] オフィスチェア 【3ゾーン「追従型」独立腰部サポート搭載】疲れない デスクチェア 椅子 人間工学S字設計 360°アームレスト 155°リクライニング 3Dヘッドレスト PUキャスター 高反発 クッション 通気性メッシュ おしゃれ 事務椅子 学習チェア PCチェア ゲーミング/パソコン/勉強/昼休み/映画/事務用 (黒と白)",
+      "brand": "Sezlifeのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/817PoryKCsL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 29900,
+      "discovery_score": 1,
+      "selection_score": 0.88,
+      "matched_comparison_axes": [
+        "adjustability",
+        "comfort"
+      ],
+      "search_key": "Sezlife オフィスチェア 疲れない デスクチェア 椅子 人間工学S字設計"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HC2DD2K8",
+      "asin": "B0HC2DD2K8",
+      "amazon_title": "【RGB限定】 AutoFull G7ゲーミングチェア オフィスチェア メッシュ 自動追従ランバー 720°連動アームレスト サウンド連動RGBライト",
+      "brand": "オートフル(AutoFull)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/614KantWySL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 78980,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "adjustability"
+      ],
+      "search_key": "オートフル(AutoFull) AutoFull G7ゲーミングチェア オフィスチェア メッシュ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GFM3RMHQ",
+      "asin": "B0GFM3RMHQ",
+      "amazon_title": "SYALEN オフィスチェア メッシュ デスクチェア 疲れない 椅子 リクライニング ハイバック チェア ランバーサポート キャスター 人間工学 SLCH-15MBK高耐久強化メッシュ(ブラック 無地)",
+      "brand": "SYALENのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/81irvOt5WXL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 44980,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "adjustability",
+        "comfort"
+      ],
+      "search_key": "SYALEN オフィスチェア メッシュ デスクチェア 疲れない 椅子 リクライ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0GG4HP66R",
+      "asin": "B0GG4HP66R",
+      "amazon_title": "HERCULES ゲーミングチェア オフィスチェア パソコンチェア 高級PUレザー 人間工学設計 チェア リクライニング90-130度 フットレスト付き 連動式アームレスト オットマン ヘッド＆腰サポート ホワイト",
+      "brand": "ＨＥＲＣＵＬＥＳのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61kGp9vQwAL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 15980,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [
+        "adjustability",
+        "comfort"
+      ],
+      "search_key": "ＨＥＲＣＵＬＥＳ HERCULES ゲーミングチェア オフィスチェア パソコンチェ"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0FXX6K1DN",
+      "asin": "B0FXX6K1DN",
+      "amazon_title": "RXGAMING ゲーミングチェア オフィスチェア イス 椅子 テレワーク 疲れない ファブリック デスクチェア オットマン付き ゲーム用チェア145°リクライニング パソコンチェア 座り心地よい テレワーク 収納便利 ブラック",
+      "brand": "RXGAMINGのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/81wZeA+GExL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 15499,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [
+        "comfort"
+      ],
+      "search_key": "RXGAMING ゲーミングチェア オフィスチェア イス 椅子 テレワーク 疲れな"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0FB2JTNHD",
+      "asin": "B0FB2JTNHD",
+      "amazon_title": "GTPLAYER ゲーミングチェア オフィスチェア 上品な型押しデザイン 腰にポケットコイル内蔵 腰当て 腰が痛くならない 椅子 150度リクライニング 昇降アームレスト 上質なPUレザー 蒸れない ソファーの座り心地 テレワーク 疲れない 社長椅子 リクライニング 広い座面 CH610-BLACK",
+      "brand": "GTPLAYERのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71-RJywMqmL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 24800,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [
+        "adjustability",
+        "comfort"
+      ],
+      "search_key": "GTPLAYER ゲーミングチェア オフィスチェア 上品な型押しデザイン 腰にポケ"
+    }
+  ]
+}
