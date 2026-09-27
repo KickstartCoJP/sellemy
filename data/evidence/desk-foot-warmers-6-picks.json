@@ -1,0 +1,138 @@
+{
+  "slug": "desk-foot-warmers-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/desk-foot-warmers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/desk-foot-warmers-6-picks/desk-foot-warmers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "heating_method",
+      "label": "発熱方式",
+      "keywords": [
+        "遠赤外線",
+        "発熱シート",
+        "温風式"
+      ]
+    },
+    {
+      "id": "size_storage",
+      "label": "サイズ・収納しやすさ",
+      "keywords": [
+        "設置スペース",
+        "折りたたみ",
+        "デスク下"
+      ]
+    },
+    {
+      "id": "temperature_levels",
+      "label": "温度調整段階",
+      "keywords": [
+        "温度切替",
+        "強弱設定"
+      ]
+    },
+    {
+      "id": "power_source",
+      "label": "電源方式",
+      "keywords": [
+        "USB給電",
+        "コンセント式",
+        "モバイルバッテリー対応"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "power_source",
+      "size_storage"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0H8T2V58B",
+      "asin": "B0H8T2V58B",
+      "amazon_title": "2026年新登場 電気足温器 【USB給電・9段階タイマー】3段階温度制御 Type-C端子 フットウォーマー 3秒速暖 高い保温性 冷え症対策",
+      "brand": "BILIWALのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/819vjP6BMeL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2999,
+      "discovery_score": 1,
+      "selection_score": 0.675,
+      "matched_comparison_axes": [
+        "power_source"
+      ],
+      "search_key": "BILIWAL 2026年新登場 電気足温器 3段階温度制御 Type-C端子"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0BBTYPXW4",
+      "asin": "B0BBTYPXW4",
+      "amazon_title": "Favoreal 2026冬【SNS 話題 インスタ人気】電気足温器 フットウォーマー 40×40cm ミニホットカーペット 6 段温度調整 4 段階タイマー 速暖 足元ヒーター 省エネ 過熱保護 フランネル素材 防臭軽量 収納簡単 ホットマット 温活グッズ 在宅勤務 デスク下 オフィス 勉強用 一人用暖房器具 防寒対策 シルバーグレー",
+      "brand": "Favorealのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71gaxySjy8L._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 4798,
+      "discovery_score": 1,
+      "selection_score": 0.625,
+      "matched_comparison_axes": [
+        "size_storage"
+      ],
+      "search_key": "Favoreal 2026冬 電気足温器 フットウォーマー 40×40cm ミニホ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0H7W7T5QS",
+      "asin": "B0H7W7T5QS",
+      "amazon_title": "ふくらはぎケア 空気圧 レッグケア【5つモード 3段階温度 3段階強度 15min自動オフタイマー 】フットケア 温熱ケア コードレス 2個セット",
+      "brand": "happilaffのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61PjSAe-vXL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 7280,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "happilaff ふくらはぎケア 空気圧 レッグケア フットケア 温熱ケア コード"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0H1HM67SV",
+      "asin": "B0H1HM67SV",
+      "amazon_title": "HiBox®【現役看護師監修】足温器 着るこたつ フットウォーマー コンセント式 着る電気毛布【25~60℃までフリー温度調節機能 1～12時間タイマー付き】ホット脚入れヒーター 電気足温器 ホット足入れヒーター 多機能加熱パンツ 安全 エコ 省エネ 全身を暖かく 洗濯ネット付き PSE認証済 (L(身長140-165CM))",
+      "brand": "HiBoxのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/712cMEoos7L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 9999,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "power_source"
+      ],
+      "search_key": "HiBox ® 足温器 着るこたつ フットウォーマー コンセント式 着る電気"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0FQHTL9V9",
+      "asin": "B0FQHTL9V9",
+      "amazon_title": "フットウォーマー 北国のこたつ 電気足温器【足の甲まで暖かい両面ヒーター】足元ヒーター 6段階温度調節 4段階タイマー 丸洗い ミニホットカーペット",
+      "brand": "北国のこたつのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71iiC0ssdCL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 5999,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "北国のこたつ フットウォーマー 北国のこたつ 電気足温器 足元ヒーター 6段階"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0FNR92F8Z",
+      "asin": "B0FNR92F8Z",
+      "amazon_title": "Sugibo(スギボー) 洗える 電気足温器 あったか脚入れヒーター 日本製 フットウォーマー 省エネ 頭寒足熱 無段階温度調節 切り忘れ防止タイマー SB21AH19(迷彩Ⅰ) 迷彩柄",
+      "brand": "ブランド: Sugibo(スギボー)",
+      "image_url": "https://m.media-amazon.com/images/I/71Y9Uz2jyPL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 14800,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "Sugibo(スギボー) 洗える 電気足温器 あったか脚入れヒーター 日本製 フットウォー"
+    }
+  ]
+}
