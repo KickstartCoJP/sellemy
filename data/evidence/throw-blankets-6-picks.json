@@ -1,0 +1,127 @@
+{
+  "slug": "throw-blankets-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/throw-blankets-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/throw-blankets-6-picks/throw-blankets-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "material",
+      "label": "素材・肌触り",
+      "keywords": [
+        "マイクロファイバー",
+        "フリース",
+        "もこもこ"
+      ]
+    },
+    {
+      "id": "care",
+      "label": "洗濯のしやすさ",
+      "keywords": [
+        "丸洗い",
+        "速乾",
+        "毛玉になりにくい"
+      ]
+    },
+    {
+      "id": "design_size",
+      "label": "サイズ・デザイン",
+      "keywords": [
+        "大判",
+        "北欧柄",
+        "無地"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "design_size",
+      "material"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B09GVMRSNF",
+      "asin": "B09GVMRSNF",
+      "amazon_title": "tobest 毛布 シングル 冬用 かるふわ ブランケット フランネル 軽量 マイクロファイバー 静電防止 洗える 膝掛け 大判 四季適用 140×190cm ベージュ",
+      "brand": "tobest(トゥーベスト)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/718wocOUFHL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2480,
+      "discovery_score": 1,
+      "selection_score": 0.88,
+      "matched_comparison_axes": [
+        "design_size",
+        "material"
+      ],
+      "search_key": "tobest(トゥーベスト) tobest 毛布 シングル 冬用 かるふわ ブランケット フラ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0F7XFN6NS",
+      "asin": "B0F7XFN6NS",
+      "amazon_title": "三井毛織 ひざ掛け ハーフ 100x140cm グレー 綿 100％ 毛布 純 綿毛布 日本製 C-445 ブランケット",
+      "brand": "MITSUIKEORIのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71+U1AtE4BL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "observed_price": 4500,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "MITSUIKEORI 三井毛織 ひざ掛け ハーフ 100x140cm グレー 綿 10"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0CKP32H4V",
+      "asin": "B0CKP32H4V",
+      "amazon_title": "マグマパワー ひざ掛け毛布 ダブルウォーム【 鹿児島県桜島の火山灰を練りこんだ発熱寝具 】 日本製 吸湿発熱 静電気防止 軽量 防寒 眠りの専門店マイまくら (ライトピンク, ひざ掛け(100×70㎝))ライトピンク",
+      "brand": "my makuraのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61I+sdHV4OL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 5500,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "my makura マグマパワー ひざ掛け毛布 ダブルウォーム 日本製 吸湿発熱 静"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B082M5MKZH",
+      "asin": "B082M5MKZH",
+      "amazon_title": "【和歌山の綿 シール織綿毛布】毛布 日本製 綿100 天然素材 敏感肌 オールシーズン使える 洗える ひざ掛け ハーフケット105×140cm (ベージュ,ハーフサイズ)",
+      "brand": "ブランド: シール織",
+      "image_url": "https://m.media-amazon.com/images/I/61hyQTmG7OL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 5998,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "シール織 毛布 日本製 綿100 天然素材 敏感肌 オールシーズン使える"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B01N3XWRZK",
+      "asin": "B01N3XWRZK",
+      "amazon_title": "ブルーム 今治産 ひざ掛け ブランケット アヴニール 約98×70cm ひざかけブランケット 日本製 綿100% (ベージュ)",
+      "brand": "タオルショップ ブルームのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71iqZa1NzOL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 4580,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "タオルショップ ブルーム ブルーム 今治産 ひざ掛け ブランケット アヴニール 約98×7"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0FNWC7TX6",
+      "asin": "B0FNWC7TX6",
+      "amazon_title": "[ aso ] ひざ掛け ブランケット 3WAY 洗える ふわふわ 暖かい MONOブランケット ハーフ ミケチェック kt-g312-mck",
+      "brand": "asoboze(アソボーゼ)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/81x6rdr-V2L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2780,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [],
+      "search_key": "asoboze(アソボーゼ) ひざ掛け ブランケット 3WAY 洗える ふわふわ 暖かい MO"
+    }
+  ]
+}
