@@ -1,0 +1,143 @@
+{
+  "slug": "heated-vests-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/heated-vests-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/heated-vests-6-picks/heated-vests-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "heating_temperature",
+      "label": "発熱温度・段階調整",
+      "keywords": [
+        "温度段階",
+        "発熱パネル",
+        "急速発熱"
+      ]
+    },
+    {
+      "id": "battery_life",
+      "label": "バッテリー持続時間",
+      "keywords": [
+        "連続稼働時間",
+        "モバイルバッテリー",
+        "USB給電"
+      ]
+    },
+    {
+      "id": "design_fit",
+      "label": "デザイン・防水性",
+      "keywords": [
+        "防水",
+        "防風",
+        "アウトドア対応"
+      ]
+    },
+    {
+      "id": "weight_portability",
+      "label": "軽さ・携帯性",
+      "keywords": [
+        "軽量",
+        "コンパクト",
+        "洗濯対応"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "battery_life",
+      "weight_portability"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0H7N5ZF5Z",
+      "asin": "B0H7N5ZF5Z",
+      "amazon_title": "[Sumeriy] ヒーターベスト 【日本製繊維ヒーター 19箇所全面発熱】 電熱ベスト 起毛裏地 USB給電 25~55℃ 軽量 速暖 動きやすい",
+      "brand": "Sumeriyのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71F79TQWbGL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 12980,
+      "discovery_score": 1,
+      "selection_score": 0.83,
+      "matched_comparison_axes": [
+        "battery_life",
+        "weight_portability"
+      ],
+      "search_key": "Sumeriy ヒーターベスト 電熱ベスト 起毛裏地 USB給電 25~55℃"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0FYDZWCT1",
+      "asin": "B0FYDZWCT1",
+      "amazon_title": "[DUDUBON] 電熱ベスト レディース メンズ 9箇所発熱 3段階調温 USB給電【前後独立隠しスイッチ】 カップルベスト 速暖 保温 防寒対策 屋外作業 バッテリーを含まない",
+      "brand": "ブランド: DUDUBON",
+      "image_url": "https://m.media-amazon.com/images/I/71--HgeTG6L._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 6480,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "battery_life"
+      ],
+      "search_key": "DUDUBON 電熱ベスト レディース メンズ 9箇所発熱 3段階調温 USB給"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0FQJS2MZH",
+      "asin": "B0FQJS2MZH",
+      "amazon_title": "[Caxzyn] 電熱ベスト 【23箇所発熱 40800mAh大容量バッテリー付き】 加熱ベスト 前後独立&一斉に制御可能 USB/DC給電 3段階温度調整 ヒータージャケット 電熱ウェア 日本製ヒーター 丸洗い可能 男女兼用 加熱服 省エネ 防寒対策",
+      "brand": "ブランド: Caxzyn",
+      "image_url": "https://m.media-amazon.com/images/I/71va0VmJLlL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 8799,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "Caxzyn 電熱ベスト 加熱ベスト 前後独立&一斉に制御可能 USB/DC給"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0FKMZNPX1",
+      "asin": "B0FKMZNPX1",
+      "amazon_title": "[KEMIMOTO] TypeC充電・前後独立調節 電熱ベスト ヒーターベスト ライトオフ機能搭載 USB給電 3段階温度調整 速暖軽量 洗濯可 ヒートベスト 電熱インナー 冷凍庫 作業 冬用 バイク 通勤 自転車 釣り アウトドア 男女兼用",
+      "brand": "KEMIMOTOのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71iMhIo4yAL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 9899,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "battery_life",
+        "weight_portability"
+      ],
+      "search_key": "KEMIMOTO TypeC充電・前後独立調節 電熱ベスト ヒーターベスト ライト"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0CBX4YP86",
+      "asin": "B0CBX4YP86",
+      "amazon_title": "[LABWIND] 電熱ベスト ヒーターベスト ボアフリース USB給電式 30000mAhバッテリー 最大60℃ 3段階温度調節 速暖 PSE認証済み 防寒対策 丸洗いOK オフィス/通勤/アウトドアに最適",
+      "brand": "LABWINDのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/81o9I5YhCZL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 7999,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "battery_life"
+      ],
+      "search_key": "LABWIND 電熱ベスト ヒーターベスト ボアフリース USB給電式 3000"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B07W8WH5B4",
+      "asin": "B07W8WH5B4",
+      "amazon_title": "コミネ(KOMINE) バイク用 エレクトリックインナーハイブリッドベスト(USB/7.4V) ブラック M EK-108 1294 冬用 電熱",
+      "brand": "コミネ(KOMINE)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51iaGGt1uWL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 10040,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "コミネ(KOMINE) バイク用 エレクトリックインナーハイブリッドベスト(USB/7."
+    }
+  ]
+}
