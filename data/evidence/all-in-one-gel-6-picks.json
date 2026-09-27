@@ -1,0 +1,130 @@
+{
+  "slug": "all-in-one-gel-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/all-in-one-gel-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/all-in-one-gel-6-picks/all-in-one-gel-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "moisture_ingredients",
+      "label": "保湿成分・処方",
+      "keywords": [
+        "セラミド",
+        "ヒアルロン酸",
+        "コラーゲン"
+      ]
+    },
+    {
+      "id": "texture",
+      "label": "使用感・テクスチャー",
+      "keywords": [
+        "さっぱり",
+        "しっとり",
+        "べたつかない"
+      ]
+    },
+    {
+      "id": "cost_performance",
+      "label": "価格帯・コスパ",
+      "keywords": [
+        "大容量",
+        "プチプラ",
+        "デパコス"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "moisture_ingredients",
+      "texture"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0DFLZJ6QQ",
+      "asin": "B0DFLZJ6QQ",
+      "amazon_title": "岩田剛典アンバサダー オールインワン ジェル モイスト 化粧水 乳液 美容液 メンズ 5in1 男女兼用 スキンケア しっとり DISM ディズム",
+      "brand": "DISM（ディズム）のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/41FXl569roL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2640,
+      "discovery_score": 1,
+      "selection_score": 0.7,
+      "matched_comparison_axes": [
+        "texture"
+      ],
+      "search_key": "DISM（ディズム） 岩田剛典アンバサダー オールインワン ジェル モイスト 化粧水"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0BW8JSMNR",
+      "asin": "B0BW8JSMNR",
+      "amazon_title": "メディプラスゲル 180g (約2ヶ月分) | オールインワン 長時間保湿 セラミド 無香料 乾燥肌 敏感肌 無添加 ポンプ式 美容液 乳液 化粧水 クリーム スキンケア",
+      "brand": "メディプラスのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61a2GlvewVL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 4400,
+      "discovery_score": 1,
+      "selection_score": 0.7,
+      "matched_comparison_axes": [
+        "moisture_ingredients"
+      ],
+      "search_key": "メディプラス ゲル 180g (約2ヶ月分) | オールインワン 長時間保湿"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GR4827GB",
+      "asin": "B0GR4827GB",
+      "amazon_title": "【医薬部外品】キミエリンクルホワイトプレミアム オールインワンクリーム 35g",
+      "brand": "キミエホワイトのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51SYrBSu9vL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 5485,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "キミエホワイト キミエリンクルホワイトプレミアム オールインワンクリーム 35g"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0DB17PMMR",
+      "asin": "B0DB17PMMR",
+      "amazon_title": "ドクターシーラボ (エンリッチリンクルリペア45g＋ELDUO1回分, リペア)",
+      "brand": "ドクターシーラボのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61L-RM2MzgL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 7150,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "ドクターシーラボ (エンリッチリンクルリペア45g＋ELDUO1回分, リペア)"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0BKKDFS3V",
+      "asin": "B0BKKDFS3V",
+      "amazon_title": "ReBion オールインワン ヒト幹細胞 エクソソーム セラミド シカ 保湿 毛穴ケア 乾燥肌 ヒアルロン酸 時短ケア 50g ReBion 公式",
+      "brand": "ReBionのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/5163UmbMF9L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 5280,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "moisture_ingredients"
+      ],
+      "search_key": "ReBion オールインワン ヒト幹細胞 エクソソーム セラミド シカ 保湿"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0FYLVYZ8G",
+      "asin": "B0FYLVYZ8G",
+      "amazon_title": "無印良品 敏感肌用オールインワンジェル 150g 84935404",
+      "brand": "無印良品のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/519DO6wB35L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1491,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [],
+      "search_key": "無印良品 敏感肌用オールインワンジェル 150g 84935404"
+    }
+  ]
+}
