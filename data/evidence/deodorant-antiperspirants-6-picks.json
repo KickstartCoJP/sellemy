@@ -1,0 +1,137 @@
+{
+  "slug": "deodorant-antiperspirants-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/deodorant-antiperspirants-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/deodorant-antiperspirants-6-picks/deodorant-antiperspirants-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "efficacy",
+      "label": "効果・持続時間",
+      "keywords": [
+        "制汗成分",
+        "持続時間",
+        "汗止め効果"
+      ]
+    },
+    {
+      "id": "texture",
+      "label": "使用感・タイプ",
+      "keywords": [
+        "スプレー",
+        "ロールオン",
+        "クリーム",
+        "スティック"
+      ]
+    },
+    {
+      "id": "skin_care",
+      "label": "肌へのやさしさ",
+      "keywords": [
+        "低刺激",
+        "無香料",
+        "敏感肌"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "skin_care",
+      "texture"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0H62WF27P",
+      "asin": "B0H62WF27P",
+      "amazon_title": "エイトフォーメン ８ｘ４メン ロールオン 無香料 60ｍｌ×3本セット デオドラント 制汗 ワキ用 男性用 メンズ 【医薬部外品】",
+      "brand": "エイトフォーのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71DsYBnwWDL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1608,
+      "discovery_score": 1,
+      "selection_score": 0.88,
+      "matched_comparison_axes": [
+        "skin_care",
+        "texture"
+      ],
+      "search_key": "エイトフォー メン ８ｘ４メン ロールオン 無香料 60ｍｌ×3本セット デオ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0GXTXXLBC",
+      "asin": "B0GXTXXLBC",
+      "amazon_title": "【シリーズ累計240万本】 クリアネオ 制汗剤 脇汗 55ｍL×1 制汗スプレー わきのにおい防止 ワキガ デオドラント 塩化アルミニウム 医薬部外品",
+      "brand": "クリアネオ（CLEANEO）のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71gXNVauQYL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2450,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "texture"
+      ],
+      "search_key": "クリアネオ（CLEANEO） クリアネオ 制汗剤 脇汗 55ｍL×1 制汗スプレー わきのにお"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0G6K61G6R",
+      "asin": "B0G6K61G6R",
+      "amazon_title": "【医薬部外品】DEONAX デオナックス ロールオン 制汗剤 ワキガ 無香料 殺菌 匂いケア すそわきが 足 脇 靴 消臭 脇汗 手汗 発汗抑制 制汗",
+      "brand": "Gleonのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71l-h7zL+fL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2480,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "skin_care",
+        "texture"
+      ],
+      "search_key": "Gleon DEONAX デオナックス ロールオン 制汗剤 ワキガ 無香料"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0G5FRWDZJ",
+      "asin": "B0G5FRWDZJ",
+      "amazon_title": "アラクス 薬用制汗剤 アセニフタ 50mL (× 2)",
+      "brand": "アラクスのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71B4sb5RjCL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2690,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "アラクス 薬用制汗剤 アセニフタ 50mL (× 2)"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0FTZCTDF9",
+      "asin": "B0FTZCTDF9",
+      "amazon_title": "ウィルクレンズ 薬用 デオドラント スティック [ わきのにおい防止 ] 制汗剤 脇汗 ワキガ ソフトストーン 制汗・汗臭 無香 1本",
+      "brand": "ＷＩＬＬ　ＣＬＥＮＳのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71T8rtJI-FL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2480,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "texture"
+      ],
+      "search_key": "ＷＩＬＬ　ＣＬＥＮＳ ウィルクレンズ 薬用 デオドラント スティック 制汗剤 脇汗 ワ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B09VXPZLTS",
+      "asin": "B09VXPZLTS",
+      "amazon_title": "エージーデオ24 メン メンズ デオドラントロールオン グランデ 無香性 120mL×2個セット+サンプル (医薬部外品)",
+      "brand": "エージーデオ24のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71vuuhzThqL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2062,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "texture"
+      ],
+      "search_key": "エージーデオ24 メン メンズ デオドラントロールオン グランデ 無香性 120m"
+    }
+  ]
+}
