@@ -1,0 +1,130 @@
+{
+  "slug": "autumn-face-oils-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/autumn-face-oils-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/autumn-face-oils-6-picks/autumn-face-oils-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "moisturizing_ingredients",
+      "label": "保湿成分",
+      "keywords": [
+        "セラミド",
+        "スクワラン",
+        "植物オイル"
+      ]
+    },
+    {
+      "id": "texture",
+      "label": "使用感・テクスチャー",
+      "keywords": [
+        "べたつき",
+        "さらっと",
+        "浸透力"
+      ]
+    },
+    {
+      "id": "price_range",
+      "label": "価格帯・容量",
+      "keywords": [
+        "プチプラ",
+        "デパコス",
+        "容量"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "moisturizing_ingredients",
+      "price_range"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0H9R9PLXX",
+      "asin": "B0H9R9PLXX",
+      "amazon_title": "キュレル 潤浸保湿 定着保湿オイル美容液 肌荒れを防ぐ メラニンの生成を抑え シミ ソバカスを防ぐ 高密着セラミドケア",
+      "brand": "キュレルのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/714vKf0O3iL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 4950,
+      "discovery_score": 1,
+      "selection_score": 0.675,
+      "matched_comparison_axes": [
+        "moisturizing_ingredients"
+      ],
+      "search_key": "キュレル 潤浸保湿 定着保湿オイル美容液 肌荒れを防ぐ メラニンの生成を抑"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B09T2KHCZV",
+      "asin": "B09T2KHCZV",
+      "amazon_title": "セタフィル ® モイスチャライジング ローション 591ｍL 2本セット （ 保湿 乳液 ） フェイス ボディ スキンケア ボディローション ボディクリーム 大容量 保湿クリーム 乾燥肌 敏感肌 低刺激性 赤ちゃん ナイアシンアミド 出産祝い ギフト プレゼント 人気商品 メンズ スキンケア メンズコスメ Cetaphil",
+      "brand": "Cetaphilのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61pi+qEa5TL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3398,
+      "discovery_score": 1,
+      "selection_score": 0.625,
+      "matched_comparison_axes": [
+        "price_range"
+      ],
+      "search_key": "Cetaphil セタフィル ® モイスチャライジング ローション 591ｍL 2"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HCZKM9WG",
+      "asin": "B0HCZKM9WG",
+      "amazon_title": "ロクシタン(L'OCCITANE) イモーテル ディヴァインオイル＆リセット",
+      "brand": "ロクシタン(L'OCCITANE)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61clSlUSxuL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 14190,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "ロクシタン(L'OCCITANE) イモーテル ディヴァインオイル＆リセット"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0GR93L3R2",
+      "asin": "B0GR93L3R2",
+      "amazon_title": "インセルダーム ヴィエトン オイルミスト 50ml フェイス用 保湿ミスト オイル スキンケア【並行輸入品】",
+      "brand": "ブランド: ノーブランド品",
+      "image_url": "https://m.media-amazon.com/images/I/315Fsjr40EL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 5399,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "ノー品 インセルダーム ヴィエトン オイルミスト 50ml フェイス用"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0F3CRM64X",
+      "asin": "B0F3CRM64X",
+      "amazon_title": "【乾燥・ゆらぎ肌対策に】soel ソエル LIVING-OIL CACTUS ウチワサボテンオイル 30mL 美容オイル フェイスオイル ブースターオイル 高保湿 保水力 乾燥肌 敏感肌 潤いケア",
+      "brand": "soelのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/415idYRr+CL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 5600,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "soel ソエル LIVING-OIL CACTUS ウチワサボテンオイル"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0C2Y65F85",
+      "asin": "B0C2Y65F85",
+      "amazon_title": "DR.WU スクワランエクス インテンシブ リペアリング オイルセラム｜美容 保湿 セラム 乾燥肌対策 フェイスオイル マルチオイル 植物由来 スキンケア （30ml）",
+      "brand": "DR.WUのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61NEi9L9DiL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 10185,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "moisturizing_ingredients"
+      ],
+      "search_key": "DR.WU スクワランエクス インテンシブ リペアリング オイルセラム｜美容"
+    }
+  ]
+}
