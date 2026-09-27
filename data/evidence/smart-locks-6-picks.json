@@ -1,0 +1,137 @@
+{
+  "slug": "smart-locks-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/smart-locks-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/smart-locks-6-picks/smart-locks-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "install_type",
+      "label": "施錠方式（後付け/交換）",
+      "keywords": [
+        "後付け",
+        "サムターン式",
+        "工事不要"
+      ]
+    },
+    {
+      "id": "app_features",
+      "label": "スマホ連携・オートロック",
+      "keywords": [
+        "アプリ操作",
+        "オートロック",
+        "遠隔操作"
+      ]
+    },
+    {
+      "id": "door_compatibility",
+      "label": "設置対応ドアの幅",
+      "keywords": [
+        "対応サムターン",
+        "ドア厚",
+        "賃貸対応"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "app_features",
+      "install_type"
+    ],
+    "brand_count": 5,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0DTKJCT49",
+      "asin": "B0DTKJCT49",
+      "amazon_title": "SwitchBot 顔認証パッド 指紋認証 暗証番号 スマートロック- スイッチボット オートロック ドアロック カギ 交通系ICカード FeliCa Suica PASMO Bluetooth ワイヤレス 盗難防止 工事不要 取付簡単",
+      "brand": "スイッチボット(SwitchBot)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/7119kIFCn3L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 12226,
+      "discovery_score": 1,
+      "selection_score": 0.93,
+      "matched_comparison_axes": [
+        "app_features",
+        "install_type"
+      ],
+      "search_key": "スイッチボット(SwitchBot) SwitchBot 顔認証パッド 指紋認証 暗証番号 スマ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0G4QWQ4HR",
+      "asin": "B0G4QWQ4HR",
+      "amazon_title": "Xiaomi セルフインストールスマートロック (キーパッド付属) 指紋認証パッド 暗証番号 アレクサ対応 鍵 スマートキー ドアロック オートロック スマホ対応 iPhone対応 matter/Alexa/Google Home/Siri対応 遠隔対応 工事不要 取付カンタン 後付け 充電バッテリー付き ゲートウェイ内蔵",
+      "brand": "Xiaomiのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61IKbkWmEBL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 18500,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [
+        "app_features",
+        "install_type"
+      ],
+      "search_key": "Xiaomi セルフインストールスマートロック (キーパッド付属) 指紋認証パ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0DY13FTJ5",
+      "asin": "B0DY13FTJ5",
+      "amazon_title": "キャンディハウス(Candy House) セサミ5 Pro+セサミタッチPro スマートロック 後付け型 1ドア2ロック用 ブラシレスモーター搭載 静音 玄関 指紋認証",
+      "brand": "キャンディハウス(CANDY HOUSE)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71hHSJJG7oL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 19074,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [
+        "install_type"
+      ],
+      "search_key": "キャンディハウス(CANDY HOUSE) セサミ5 Pro+セサミタッチPro スマートロック"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0FN79Q33T",
+      "asin": "B0FN79Q33T",
+      "amazon_title": "【セット買い】【最上位モデル】キャンディハウス(CANDY HOUSE) スマートロック SESAME ５Pro 100万回でも壊れないブラシレスモーター搭載 静音 玄関 オートロック 鍵 + Hub 3 ホワイト",
+      "brand": "ブランド: キャンディハウス(CANDY HOUSE)",
+      "image_url": "https://m.media-amazon.com/images/I/41t7Dd1EayL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 10336,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "app_features"
+      ],
+      "search_key": "キャンディハウス(CANDY HOUSE) スマートロック SESAME ５Pro 100万回で"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0D2W5J8CW",
+      "asin": "B0D2W5J8CW",
+      "amazon_title": "Smabot(スマボット）スマートロック+暗証番号パッド 玄関 鍵 ドアロック オートロック スマートキー スマートホーム 防犯 後付け 遠隔操作対応 スマホ施錠解錠 工事不要 Alexa GoogleHome音声操作",
+      "brand": "スマボットのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/614pBXm6hlL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 14500,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "app_features",
+        "install_type"
+      ],
+      "search_key": "スマボット Smabot(スマボット）スマートロック+暗証番号パッド 玄関"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0GGGQZHJ6",
+      "asin": "B0GGGQZHJ6",
+      "amazon_title": "Aqara J200セット スマートロック指紋認証パッド キーボード付属、交通系ICカード/Suicaカード解錠 工具不要 取付カンタン",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71gvfKpVr6L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 22980,
+      "discovery_score": 1,
+      "selection_score": 0.45,
+      "matched_comparison_axes": [],
+      "search_key": "Aqara J200セット スマートロック指紋認証パッド キーボ"
+    }
+  ]
+}
