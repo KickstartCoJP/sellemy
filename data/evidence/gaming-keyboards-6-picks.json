@@ -1,0 +1,135 @@
+{
+  "slug": "gaming-keyboards-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/gaming-keyboards-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/gaming-keyboards-6-picks/gaming-keyboards-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "switch_type",
+      "label": "スイッチ方式・打鍵感",
+      "keywords": [
+        "メカニカル",
+        "静音スイッチ",
+        "光学スイッチ"
+      ]
+    },
+    {
+      "id": "connectivity",
+      "label": "接続方式",
+      "keywords": [
+        "有線",
+        "ワイヤレス",
+        "Bluetooth"
+      ]
+    },
+    {
+      "id": "extra_features",
+      "label": "マクロ・バックライト機能",
+      "keywords": [
+        "RGBライティング",
+        "マクロキー",
+        "ゲーミングモード"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "connectivity",
+      "extra_features",
+      "switch_type"
+    ],
+    "brand_count": 5,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0GXTFJZVX",
+      "asin": "B0GXTFJZVX",
+      "amazon_title": "【Amazon.co.jp限定】TURTLE BEACH Command Series KB7 ゲーミングキーボード 有線 TKL 日本語JIS配列｜4.3インチタッチスクリーン搭載｜ホールエフェクトスイッチ｜8Kポーリングレート｜RGBライティング｜ロープロファイル｜Windows対応【メーカー保証2年+代理店保証6ヶ月】",
+      "brand": "TURTLE BEACH(タートル ビーチ)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/716hRDG3IRL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 27416,
+      "discovery_score": 1,
+      "selection_score": 0.83,
+      "matched_comparison_axes": [
+        "connectivity",
+        "extra_features"
+      ],
+      "search_key": "TURTLE BEACH(タートル ビーチ) TURTLE BEACH Command Seri"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0B5ZF1X9G",
+      "asin": "B0B5ZF1X9G",
+      "amazon_title": "Logicool G ゲーミングキーボード G413SE 有線 タクタイル 確かな打鍵感 日本語配列 高耐久性 PTB キーキャップ ゲーミング キーボード メカニカルキーボード G413 PC window mac Chrome 国内正規品 【 ファイナルファンタジー XIV 推奨モデル 】",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61AFzNLK3VL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 9418,
+      "discovery_score": 1,
+      "selection_score": 0.58,
+      "matched_comparison_axes": [
+        "connectivity",
+        "switch_type"
+      ],
+      "search_key": "Logicool G ゲーミングキーボード G413SE 有線"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HFMM1WMV",
+      "asin": "B0HFMM1WMV",
+      "amazon_title": "0.005mmラピッドトリガー搭載 GravaStar Mercury V75 ゲーミングキーボード 75%レイアウト 独自開発のUFO磁気スイッチ",
+      "brand": "GravaStarのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/716G44j1JeL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 29980,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "GravaStar 0.005mmラピッドトリガー搭載 GravaStar Merc"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0DQWJCBQP",
+      "asin": "B0DQWJCBQP",
+      "amazon_title": "MonsGeek FUN60 Pro SP 英語配列 有線モデル 0.01mm ラピッドトリガー対応 高コスパ ゲーミングキーボード ホワイト",
+      "brand": "MONSGEEKのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61pmvtGOEpL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 6490,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [
+        "connectivity"
+      ],
+      "search_key": "MONSGEEK FUN60 Pro SP 英語配列 有線モデル 0.01mm ラ"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0DQPMWJ7M",
+      "asin": "B0DQPMWJ7M",
+      "amazon_title": "AIM1 瞬 ラピッドトリガー 0.01mm ゲーミングキーボード 英語配列 75%サイズ ポーリングレート8000Hz MATATAKI ホワイト",
+      "brand": "AIM1のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61FjWm0GZPL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 14980,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [],
+      "search_key": "AIM1 瞬 ラピッドトリガー 0.01mm ゲーミングキーボード 英語配"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0BJ1SSV1P",
+      "asin": "B0BJ1SSV1P",
+      "amazon_title": "SteelSeries ラピッドトリガー 搭載 ゲーミングキーボード テンキーレス 有線 日本語配列 OmniPointスイッチ 有機ELディスプレイ搭載 Apex Pro TKL (2023) 64861 ブラック",
+      "brand": "SteelSeriesのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/714F9LYNPgL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 14800,
+      "discovery_score": 1,
+      "selection_score": 0.47,
+      "matched_comparison_axes": [
+        "connectivity"
+      ],
+      "search_key": "SteelSeries ラピッドトリガー 搭載 ゲーミングキーボード テンキーレス 有線"
+    }
+  ]
+}
