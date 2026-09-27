@@ -1,0 +1,143 @@
+{
+  "slug": "smart-remote-controllers-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/smart-remote-controllers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/smart-remote-controllers-6-picks/smart-remote-controllers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "device_compatibility",
+      "label": "対応家電・学習機能",
+      "keywords": [
+        "学習リモコン",
+        "対応家電数",
+        "赤外線"
+      ]
+    },
+    {
+      "id": "remote_access",
+      "label": "外出先操作・スマホ連携",
+      "keywords": [
+        "遠隔操作",
+        "アプリ",
+        "タイマー設定"
+      ]
+    },
+    {
+      "id": "design_install",
+      "label": "設置性・デザイン",
+      "keywords": [
+        "コンパクト",
+        "電源方式"
+      ]
+    },
+    {
+      "id": "voice_support",
+      "label": "音声アシスタント対応",
+      "keywords": [
+        "Alexa対応",
+        "Googleアシスタント対応"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "device_compatibility",
+      "remote_access",
+      "voice_support"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B08BN8WSGZ",
+      "asin": "B08BN8WSGZ",
+      "amazon_title": "【国内メーカー・国内サーバー】LinkJapan eRemote5+ スマートリモコン Alexa対応 ハブ不要 遠隔操作 赤外線 学習リモコン 丸型 ホワイト 高精度温湿度センサー付き【Google Home/Siri/HomeLink 対応】10年以上のIoT開発実績",
+      "brand": "LinkJapanのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61sm8ig+vZL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 6800,
+      "discovery_score": 1,
+      "selection_score": 1.06,
+      "matched_comparison_axes": [
+        "device_compatibility",
+        "remote_access",
+        "voice_support"
+      ],
+      "search_key": "LinkJapan eRemote5+ スマートリモコン Alexa対応 ハブ不要"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0F1S6XSL6",
+      "asin": "B0F1S6XSL6",
+      "amazon_title": "【Amazon.co.jp限定】Tapo スマートホーム 赤外線 スマートハブ エアコン テレビ リモコン チャイム機能つき Sub-1GHz 簡易パッケージ メーカー保証3年 Tapo H110C",
+      "brand": "Tapo(タポ)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61fCRAKq4AL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3480,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [
+        "device_compatibility"
+      ],
+      "search_key": "Tapo(タポ) Tapo スマートホーム 赤外線 スマートハブ エアコン テレビ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GYNLR9R5",
+      "asin": "B0GYNLR9R5",
+      "amazon_title": "【Amazon.co.jp限定】SwitchBot ハブ3 スマートリモコン Alexa対応 - 赤外線家電管理 2.4インチモニター スイッチボット",
+      "brand": "スイッチボット(SwitchBot)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61AsciD5I9L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 13482,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [
+        "device_compatibility",
+        "voice_support"
+      ],
+      "search_key": "スイッチボット(SwitchBot) SwitchBot ハブ3 スマートリモコン Alexa対"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0DHKWGFNC",
+      "asin": "B0DHKWGFNC",
+      "amazon_title": "Nature Remo mini 2 ネイチャーリモ スマートリモコン Remo-2W2",
+      "brand": "Nature Remoのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61UhWaA3qJL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 6480,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [],
+      "search_key": "Nature Remo mini 2 ネイチャーリモ スマートリモコン Remo-2W2"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0D59WGSQB",
+      "asin": "B0D59WGSQB",
+      "amazon_title": "キャンディハウス(Candy House) ハブ3 スマートリモコン ホワイト スマートホーム 学習リモコン 赤外線家電を管理",
+      "brand": "キャンディハウス(CANDY HOUSE)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/512NJSkyEiL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3553,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "device_compatibility"
+      ],
+      "search_key": "キャンディハウス(CANDY HOUSE) ハブ3 スマートリモコン ホワイト スマートホーム"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0C7VC2Y21",
+      "asin": "B0C7VC2Y21",
+      "amazon_title": "アイリスオーヤマ スマートリモコン 帰宅前に暖房オンで部屋を暖かく フレーズ設定で家電を一気にON/OFF お部屋のリモコンを一本化 SMT-RC2-B Alexa/Google Home/Siri対応 ブラック",
+      "brand": "アイリスオーヤマ(IRIS OHYAMA)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/31dSELQrfnL._SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 3800,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "アイリスオーヤマ(IRIS OHYAMA) アイリスオーヤマ スマートリモコン 帰宅前に暖房オン"
+    }
+  ]
+}
