@@ -36,6 +36,39 @@ class ContinuousPlanningTests(unittest.TestCase):
                 ], {'topic_metrics': [], 'product_metrics': []})
         self.assertEqual([row['slug'] for row in ranked], ['fresh-beauty', 'fresh-gadget'])
 
+
+    def test_ranking_materially_favors_underrepresented_category(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            articles = Path(tmp) / 'articles.json'
+            rows = ([{'slug': f'gadget-{i}-topic', 'category': 'gadget', 'title': f'家電{i}', 'summary': ''} for i in range(12)] +
+                    [{'slug': f'beauty-{i}-topic', 'category': 'beauty', 'title': f'美容{i}', 'summary': ''} for i in range(5)] +
+                    [{'slug': 'daily-0-topic', 'category': 'dailygoods', 'title': '日用品0', 'summary': ''}])
+            articles.write_text(json.dumps(rows))
+            with patch.object(planning_runtime, 'ARTICLES', articles):
+                ranked = planning_runtime.rank_candidates([
+                    candidate('fresh-gadget-topic', 'gadget', .8),
+                    candidate('fresh-daily-topic', 'dailygoods', .8),
+                ], {'topic_metrics': [], 'product_metrics': []})
+        self.assertEqual(ranked[0]['slug'], 'fresh-daily-topic')
+        self.assertGreater(ranked[0]['portfolio_balance'], ranked[1]['portfolio_balance'])
+
+    def test_ranking_penalizes_recent_repeated_topic_family(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            articles = Path(tmp) / 'articles.json'
+            articles.write_text(json.dumps([
+                {'slug': 'gaming-mice-6-picks', 'category': 'gadget', 'title': 'ゲーミングマウス6選', 'summary': ''},
+                {'slug': 'gaming-keyboards-6-picks', 'category': 'gadget', 'title': 'ゲーミングキーボード6選', 'summary': ''},
+            ]))
+            with patch.object(planning_runtime, 'ARTICLES', articles):
+                ranked = planning_runtime.rank_candidates([
+                    candidate('gaming-headsets-fresh', 'gadget', .8),
+                    candidate('air-purifiers-fresh', 'gadget', .8),
+                ], {'topic_metrics': [], 'product_metrics': []})
+        self.assertEqual(ranked[0]['slug'], 'air-purifiers-fresh')
+        repeated = next(row for row in ranked if row['slug'] == 'gaming-headsets-fresh')
+        self.assertLess(repeated['topic_diversity'], ranked[0]['topic_diversity'])
+        self.assertEqual(len(repeated['recent_family_hits']), 2)
+
     def test_no_candidate_fails_closed(self):
         with tempfile.TemporaryDirectory() as tmp:
             articles = Path(tmp) / 'articles.json'; articles.write_text('[]')

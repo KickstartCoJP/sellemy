@@ -14,6 +14,12 @@ from category_metadata import CATEGORIES
 ROOT = Path(__file__).resolve().parents[1]
 ARTICLES = ROOT / 'json' / 'articles.json'
 SEEDS = ROOT / 'data' / 'planning_seeds.json'
+RECENT_PORTFOLIO_WINDOW = 24
+DIVERSITY_STOPWORDS = {
+    'autumn', 'winter', 'summer', 'spring', 'home', 'electric', 'portable', 'smart',
+    'wireless', 'automatic', 'desktop', 'personal', 'mini', 'compact', 'daily', 'for',
+    'with', 'and', 'picks', 'selection', 'choices',
+}
 
 PLANNING_SCHEMA = {
     'type': 'object', 'additionalProperties': False, 'required': ['candidates'],
@@ -40,13 +46,34 @@ def _normalize(value: str) -> str:
     return re.sub(r'[^0-9a-z\u3040-\u30ff\u3400-\u9fff]+', '', value)
 
 
+def _topic_tokens(value: str) -> set[str]:
+    parts = re.findall(r'[a-z0-9]+', value.lower().replace('_', '-'))
+    return {part for part in parts if len(part) >= 4 and part not in DIVERSITY_STOPWORDS and not part.isdigit()}
+
+
+def _portfolio_signals(articles: list[dict]) -> dict:
+    category_counts = {category: sum(row.get('category') == category for row in articles) for category in CATEGORIES}
+    recent = articles[-RECENT_PORTFOLIO_WINDOW:]
+    recent_category_counts = {category: sum(row.get('category') == category for row in recent) for category in CATEGORIES}
+    token_counts: dict[str, int] = {}
+    for row in recent:
+        for token in _topic_tokens(' '.join(str(row.get(k, '')) for k in ('slug', 'title'))):
+            token_counts[token] = token_counts.get(token, 0) + 1
+    return {
+        'category_counts': category_counts,
+        'recent_category_counts': recent_category_counts,
+        'recent_topic_tokens': dict(sorted(token_counts.items(), key=lambda item: (-item[1], item[0]))[:20]),
+    }
+
+
 def _context() -> dict:
     articles = json.loads(ARTICLES.read_text(encoding='utf-8'))
     return {
         'today': date.today().isoformat(), 'allowed_categories': list(CATEGORIES),
         'exploration_seeds': json.loads(SEEDS.read_text(encoding='utf-8'))['categories'],
         'existing_articles': [{k: row.get(k) for k in ('slug', 'category', 'title', 'summary')} for row in articles],
-        'instruction': 'Explore fresh search and purchase intents every cycle. Seeds are inspiration, never a queue. Return novel candidates across all categories.',
+        'portfolio': _portfolio_signals(articles),
+        'instruction': 'Explore fresh search and purchase intents every cycle. Seeds are inspiration, never a queue. Actively diversify underrepresented categories and avoid repeating the same distinctive topic family in the recent portfolio. Return novel candidates across all categories.',
     }
 
 
@@ -93,7 +120,12 @@ def rank_candidates(candidates: list[dict], feedback: dict | None = None) -> lis
     existing = json.loads(ARTICLES.read_text(encoding='utf-8'))
     existing_slugs = {row['slug'] for row in existing}
     existing_intents = {_normalize(' '.join(str(row.get(k, '')) for k in ('slug', 'title', 'summary'))) for row in existing}
-    category_counts = {category: sum(row.get('category') == category for row in existing) for category in CATEGORIES}
+    portfolio = _portfolio_signals(existing)
+    category_counts = portfolio['category_counts']
+    recent_category_counts = portfolio['recent_category_counts']
+    recent = existing[-RECENT_PORTFOLIO_WINDOW:]
+    max_category_count = max(category_counts.values(), default=0)
+    max_recent_category_count = max(recent_category_counts.values(), default=0)
     ranked = []
     for candidate in candidates:
         validate_candidate(candidate)
@@ -106,8 +138,23 @@ def rank_candidates(candidates: list[dict], feedback: dict | None = None) -> lis
             'seasonality': .10, 'profitability': .15, 'evidence_availability': .15,
         }.items())
         learning = topic_signal(feedback, category=candidate['category'], intent_key=candidate['intent_key'])
-        balance = 1 / (1 + category_counts[candidate['category']])
-        ranked.append({**candidate, 'planning_score': round(base * .75 + learning * .15 + balance * .10, 6), 'feedback_signal': learning})
+        category = candidate['category']
+        global_gap = ((max_category_count - category_counts[category]) / max_category_count) if max_category_count else 1.0
+        recent_gap = ((max_recent_category_count - recent_category_counts[category]) / max_recent_category_count) if max_recent_category_count else 1.0
+        portfolio_balance = global_gap * .65 + recent_gap * .35
+        candidate_tokens = _topic_tokens(' '.join(str(candidate.get(k, '')) for k in ('slug', 'intent_key', 'title')))
+        recent_family_hits = []
+        for row in recent:
+            row_tokens = _topic_tokens(' '.join(str(row.get(k, '')) for k in ('slug', 'title')))
+            if candidate_tokens & row_tokens:
+                recent_family_hits.append(row.get('slug'))
+        topic_diversity = max(0.0, 1.0 - min(1.0, len(recent_family_hits) / 3.0))
+        score = base * .65 + learning * .10 + portfolio_balance * .15 + topic_diversity * .10
+        ranked.append({
+            **candidate, 'planning_score': round(score, 6), 'feedback_signal': learning,
+            'portfolio_balance': round(portfolio_balance, 6), 'topic_diversity': round(topic_diversity, 6),
+            'recent_family_hits': recent_family_hits[-6:],
+        })
     return sorted(ranked, key=lambda row: (-row['planning_score'], row['slug']))
 
 
