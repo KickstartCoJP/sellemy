@@ -1,0 +1,135 @@
+{
+  "slug": "portable-photo-printers-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/portable-photo-printers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/portable-photo-printers-6-picks/portable-photo-printers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "print_quality",
+      "label": "印刷画質",
+      "keywords": [
+        "解像度",
+        "写真品質",
+        "インクレス"
+      ]
+    },
+    {
+      "id": "print_speed",
+      "label": "印刷速度",
+      "keywords": [
+        "印刷時間",
+        "連続印刷"
+      ]
+    },
+    {
+      "id": "portability",
+      "label": "携帯性",
+      "keywords": [
+        "重量",
+        "サイズ",
+        "バッテリー内蔵"
+      ]
+    },
+    {
+      "id": "running_cost",
+      "label": "ランニングコスト",
+      "keywords": [
+        "専用用紙代",
+        "インクコスト"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "portability",
+      "print_quality"
+    ],
+    "brand_count": 3,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0B81JQJML",
+      "asin": "B0B81JQJML",
+      "amazon_title": "キヤノン コンパクトフォトプリンター SELPHY CP1500 ホワイト＋L判写真サイズ108枚入りセット",
+      "brand": "キヤノンのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/31Ni64VX+1L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 20618,
+      "discovery_score": 1,
+      "selection_score": 0.7,
+      "matched_comparison_axes": [
+        "portability"
+      ],
+      "search_key": "キヤノン コンパクトフォトプリンター SELPHY CP1500 ホワイト"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B095SP2CH7",
+      "asin": "B095SP2CH7",
+      "amazon_title": "Xiaomiポータブルフォトプリンター 1S インクレス印刷 薄型で180g超軽量 Bluetooth接続 複数ユーザー同時接続可能 シールフィルム 専用フィルム5枚同梱",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51fbw6UF9SL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 9980,
+      "discovery_score": 1,
+      "selection_score": 0.63,
+      "matched_comparison_axes": [
+        "print_quality"
+      ],
+      "search_key": "Xiaomiポータブルフォトプリンター 1S インクレス印刷 薄"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B08FDCNBTF",
+      "asin": "B08FDCNBTF",
+      "amazon_title": "KODAK Dock Plus スマホプリンター(10×15cm) スマホドッキング対応 4PASS 10枚入り",
+      "brand": "KODAKのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71lEYReWhCL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 21700,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [],
+      "search_key": "KODAK Dock Plus スマホプリンター(10×15cm) スマホド"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0FL2CTTVS",
+      "asin": "B0FL2CTTVS",
+      "amazon_title": "シャオミ(Xiaomi) ポータブルフォトプリンター Pro 薄型 Bluetooth接続 複数ユーザー同時接続可能 シールフィルム 自動ラミネート加工 ライブフォト印刷 フォト用紙パック昇華型 10枚同梱",
+      "brand": "Xiaomiのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51sEWu-AlTL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 9679,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "Xiaomi シャオミ(Xiaomi) ポータブルフォトプリンター Pro 薄"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0H2YKM3JV",
+      "asin": "B0H2YKM3JV",
+      "amazon_title": "KODAK新登場 充電式 wifiデジタルフォトフレーム 10インチ 32GB内蔵 リアルタイムに共有 SD/USB対応 天然木製 タッチスクリーン",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61I1kSIy6AL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 20999,
+      "discovery_score": 1,
+      "selection_score": 0.45,
+      "matched_comparison_axes": [],
+      "search_key": "KODAK新登場 充電式 wifiデジタルフォトフレーム 10イ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0DG8LLL9N",
+      "asin": "B0DG8LLL9N",
+      "amazon_title": "キヤノン Canon スマートフォン用プリンター QX20ホワイト (高耐久/シール紙/コンパクト)",
+      "brand": "キヤノンのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51Q4C7yhXnL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 19490,
+      "discovery_score": 1,
+      "selection_score": 0.45,
+      "matched_comparison_axes": [],
+      "search_key": "キヤノン Canon スマートフォン用プリンター QX20ホワイト (高耐"
+    }
+  ]
+}
