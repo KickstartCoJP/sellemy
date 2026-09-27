@@ -1,0 +1,130 @@
+{
+  "slug": "floor-cleaning-sheets-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/floor-cleaning-sheets-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/floor-cleaning-sheets-6-picks/floor-cleaning-sheets-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "wipe_power",
+      "label": "拭き取り力・シート種類",
+      "keywords": [
+        "ドライシート",
+        "ウェットシート",
+        "静電気吸着"
+      ]
+    },
+    {
+      "id": "portability",
+      "label": "収納・携帯性",
+      "keywords": [
+        "軽量",
+        "コンパクト収納",
+        "柄の長さ調整"
+      ]
+    },
+    {
+      "id": "cost",
+      "label": "コスパ・詰め替え価格",
+      "keywords": [
+        "詰め替え",
+        "枚数",
+        "ランニングコスト"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "portability",
+      "wipe_power"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0H327ZK69",
+      "asin": "B0H327ZK69",
+      "amazon_title": "【20枚入✕３個セット】 レック 水の激落ち 超厚 ウェットシート 20枚入 ３個セット ウェットシート フローリングシート アルカリ電解水使用",
+      "brand": "ブランド: VIALONTA",
+      "image_url": "https://m.media-amazon.com/images/I/71cWc10d-vL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "observed_price": 1590,
+      "discovery_score": 1,
+      "selection_score": 0.7,
+      "matched_comparison_axes": [
+        "wipe_power"
+      ],
+      "search_key": "VIALONTA レック 水の激落ち 超厚 ウェットシート 20枚入 ３個セット"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B07QL7HYL5",
+      "asin": "B07QL7HYL5",
+      "amazon_title": "Bona フローリングモップ 床拭きモップ マイクロファイバー モップ floor mop 伸縮式ハンドル 軽量設計",
+      "brand": "Bonaのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71IGx96HX+L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 5280,
+      "discovery_score": 1,
+      "selection_score": 0.7,
+      "matched_comparison_axes": [
+        "portability"
+      ],
+      "search_key": "Bona フローリングモップ 床拭きモップ マイクロファイバー モップ f"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0H44SZ17G",
+      "asin": "B0H44SZ17G",
+      "amazon_title": "【まとめ買い】クイッ クル 立体吸着ウエットシート 空間の超消臭 ストロンググリーンの香り 96枚入 (12枚×8) floor wipes quickle Household moppings・Cleaning wipes",
+      "brand": "ブランド: ノーブランド品",
+      "image_url": "https://m.media-amazon.com/images/I/61Z++I4YVmL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 4980,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "ノー品 クイッ クル 立体吸着ウエットシート 空間の超消臭 ストロンググ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0DVYNSKKX",
+      "asin": "B0DVYNSKKX",
+      "amazon_title": "TENSI JAPAN ワンタッチ着脱 シート選ばず フロアワイパー 自立型 天使のワンタッチクリーパー (ホワイト,コンパクト)",
+      "brand": "ブランド: 天使の椅子",
+      "image_url": "https://m.media-amazon.com/images/I/51MMTK+cVoL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2980,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "天使の椅子 TENSI JAPAN ワンタッチ着脱 シート選ばず フロアワイ"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0CTX44129",
+      "asin": "B0CTX44129",
+      "amazon_title": "【ケース販売】昭和 ラクリーナ フローリング用 ３層ウエットシート 400枚 （20枚入りパックX2０パック）",
+      "brand": "ブランド: 昭和紙工",
+      "image_url": "https://m.media-amazon.com/images/I/81OF4oiILYL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3980,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "昭和紙工 昭和 ラクリーナ フローリング用 ３層ウエットシート 400枚"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0CQ3VZFNB",
+      "asin": "B0CQ3VZFNB",
+      "amazon_title": "レック 業務用 激落ちくん 超厚 ウェットシート 20枚入✕12個 (240枚) フローリングシート/アルカリ電解水 使用/除菌/抗菌",
+      "brand": "激落ちくんのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71qU7PNoU-L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2983,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "wipe_power"
+      ],
+      "search_key": "激落ちくん レック 業務用 激落ちくん 超厚 ウェットシート 20枚入✕12"
+    }
+  ]
+}
