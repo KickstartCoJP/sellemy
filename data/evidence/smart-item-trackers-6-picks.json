@@ -1,0 +1,139 @@
+{
+  "slug": "smart-item-trackers-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/smart-item-trackers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/smart-item-trackers-6-picks/smart-item-trackers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "os_compatibility",
+      "label": "対応OS(iOS/Android)",
+      "keywords": [
+        "iPhone",
+        "Android",
+        "対応OS"
+      ]
+    },
+    {
+      "id": "battery_life",
+      "label": "電池持続時間",
+      "keywords": [
+        "電池交換",
+        "バッテリー持続",
+        "充電式"
+      ]
+    },
+    {
+      "id": "tracking_range",
+      "label": "探索範囲・精度",
+      "keywords": [
+        "探索網",
+        "精度",
+        "音で探す",
+        "距離"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "battery_life",
+      "os_compatibility",
+      "tracking_range"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0GZV46G3K",
+      "asin": "B0GZV46G3K",
+      "amazon_title": "2026新登場 Android公式認証 Androidエアタグ スマートトラッカータグ 紛失防止タグ 置き忘れ防止タグ 位置追跡 Find Hub対応 100db大音量 電池交換可能 鍵/財布/貴重品の追跡 日本語説明書付き ブラック4個 (4P個)",
+      "brand": "ailocitagのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51+pvsejOPL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "observed_price": 3999,
+      "discovery_score": 1,
+      "selection_score": 0.83,
+      "matched_comparison_axes": [
+        "battery_life",
+        "os_compatibility"
+      ],
+      "search_key": "ailocitag 2026新登場 Android公式認証 Androidエアタグ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0GR8N6B7R",
+      "asin": "B0GR8N6B7R",
+      "amazon_title": "エアタグ airtag 2個セット 紛失防止タグ 忘れ物防止 スマートタグ 追跡タグ 【2026最新MFI認証 技適取得済】(Appleの「探す」に対応) iOS専用 全球 GPS 高精度測位 スマートトラッカー 超薄 超軽量 2年電池寿命 子供高齢者ペット見守り 鍵財布車両追跡 盗難対策 シリコンカバーキーホルダー付き 予備電池1個付き 日本語説明書 Airtag-PJ3-007",
+      "brand": "ブランド: Venrk",
+      "image_url": "https://m.media-amazon.com/images/I/61SxpZaNTNL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 999,
+      "discovery_score": 1,
+      "selection_score": 0.7,
+      "matched_comparison_axes": [
+        "tracking_range"
+      ],
+      "search_key": "Venrk エアタグ airtag 2個セット 紛失防止タグ 忘れ物防止 ス"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GX9QB54P",
+      "asin": "B0GX9QB54P",
+      "amazon_title": "エアタグ Airtag GPS【iPhone/Android対応】スマートタグ 紛失防止タグ 小型 gps 子供 gpsタグ スマートトラッカー 2個",
+      "brand": "ブランド: Replglee",
+      "image_url": "https://m.media-amazon.com/images/I/61NkbissOQL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2899,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "os_compatibility"
+      ],
+      "search_key": "Replglee エアタグ Airtag GPS スマートタグ 紛失防止タグ 小型"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0GJCH2441",
+      "asin": "B0GJCH2441",
+      "amazon_title": "「MFI正規認証品」エアタグ Airtag 4個入り（第2世代） Bnlei 紛失防止タグ iPhone用 スマートトラッカー GPS Appleの「探す」に対応 (iOS端末のみ) Find Myタグ 安定保証＆全球GPS測位＆超強信号 追跡タグ 発信機 置き忘れ防止 探し物 子供/高齢者/ペット見守り/鍵など用 超長持ち 小型 軽量 防水 IOS専用 (ブラック)",
+      "brand": "ブランド: Bnlei",
+      "image_url": "https://m.media-amazon.com/images/I/71lZn3u6eeL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3480,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "os_compatibility"
+      ],
+      "search_key": "Bnlei 「MFI正規認証品」エアタグ Airtag 4個入り（第2世代）"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0GCNSC3CM",
+      "asin": "B0GCNSC3CM",
+      "amazon_title": "エアタグ 2個入 airtag【iOS・Android公式認証／米国高性能チップ／純正アプリ】 gps 小型 紛失防止タグ スマートタグ iphone アンドロイド対応 gpsタグ 子供 月額不要 忘れ物防止 鍵 財布 盗難防止 自転車 車 ペット 位置情報 犬 猫 スマートトラッカー Google Find hub Apple 探す Siri対応 技適認証済 キーホルダー付 Dyoac",
+      "brand": "Dyoacのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71ImE0cnR0L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2779,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "os_compatibility"
+      ],
+      "search_key": "Dyoac エアタグ 2個入 airtag gps 小型 紛失防止タグ スマ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0FS17HQ57",
+      "asin": "B0FS17HQ57",
+      "amazon_title": "airtag エアタグ カード（2枚セット）gpsタグ スマートタグ 紛失防止タグ【2025年最強 安全性・超長持ち!革新的Li-Po&極薄1.6mm&技適取得&全球追跡】スマートトラッカー 小型 MFi認証品 Apple「探す」対応 (iOS端末のみ) 置き忘れ防止 財布/荷物/鍵/車追跡 子供/高齢者/ペット 見守り IP68防水 超軽量 電池交換不要 敬老の日 誕生日 日本語説明書 HB10",
+      "brand": "Gudlukyのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61BGxMa3OfL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2846,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "battery_life"
+      ],
+      "search_key": "Gudluky airtag エアタグ カード（2枚セット）gpsタグ スマート"
+    }
+  ]
+}

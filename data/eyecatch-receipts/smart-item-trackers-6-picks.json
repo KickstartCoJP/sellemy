@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-smart-item-trackers-6-picks-ed512084224c0376",
+  "request_sha256": "ed512084224c03763db7549566ef6c4c89f558a40afe932d3f1830807686a544",
+  "image_sha256": "6b3d769493a10baa1a11fb7679b9d01a57988f6c97bc36bf07fe9ebdcfa04e90",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-09-27T03:33:22.133312+00:00"
+}
