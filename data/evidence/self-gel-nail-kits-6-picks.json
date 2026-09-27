@@ -1,0 +1,138 @@
+{
+  "slug": "self-gel-nail-kits-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/self-gel-nail-kits-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/self-gel-nail-kits-6-picks/self-gel-nail-kits-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "light_lamp",
+      "label": "硬化ライトの性能",
+      "keywords": [
+        "LEDライト",
+        "硬化時間",
+        "W数"
+      ]
+    },
+    {
+      "id": "color_variation",
+      "label": "カラー・デザイン展開",
+      "keywords": [
+        "カラージェル",
+        "グラデーション",
+        "デザイン数"
+      ]
+    },
+    {
+      "id": "ease_of_removal",
+      "label": "オフのしやすさ",
+      "keywords": [
+        "リムーバー",
+        "ソークオフ",
+        "爪への負担"
+      ]
+    },
+    {
+      "id": "price_value",
+      "label": "価格・コスパ",
+      "keywords": [
+        "スターターセット",
+        "詰め替え",
+        "セット価格"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "color_variation",
+      "light_lamp"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0H8NMJG9L",
+      "asin": "B0H8NMJG9L",
+      "amazon_title": "by Nail Labo バイネイルラボ プレミアムキット LEDライト付（長持ちキープ&つやトップ）爪を削らない日本製ジェルネイルキット (カラージェルなし) ｜ブラシタイプ 日本製ジェル プロメーカー発 セルフネイル スターターキット ジェルネイル 初心者でも簡単キレイ 121738",
+      "brand": "by Nail Laboのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71zvBIJNokL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 8452,
+      "discovery_score": 1,
+      "selection_score": 0.83,
+      "matched_comparison_axes": [
+        "color_variation",
+        "light_lamp"
+      ],
+      "search_key": "by Nail Labo バイネイルラボ プレミアムキット LEDライト付（長持ちキープ&"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0GPQL9HM1",
+      "asin": "B0GPQL9HM1",
+      "amazon_title": "Gellen ジェルネイルキット セルフネイルセット 12点 ネイルケア 初心者向け",
+      "brand": "ブランド: Gellen",
+      "image_url": "https://m.media-amazon.com/images/I/81dPBE2dARL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2599,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "Gellen ジェルネイルキット セルフネイルセット 12点 ネイルケア 初心"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GWCGJ1GL",
+      "asin": "B0GWCGJ1GL",
+      "amazon_title": "ジェルネイル ライト コードレス ネイルライト 充電式 UVライト LEDライト ネイル 硬化ライト セルフネイル レジンライト【2026業界初】",
+      "brand": "Rojeuvetのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/612yms-oF6L._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 4980,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "light_lamp"
+      ],
+      "search_key": "Rojeuvet ジェルネイル ライト コードレス ネイルライト 充電式 UVライ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0GJJQVS7R",
+      "asin": "B0GJJQVS7R",
+      "amazon_title": "【1級ネイリスト監修】 ネイルマシン 「NailMaster（ネイルマスター）」おうちでサロン仕上げｘ最大45,000回転ｘUSB充電式ｘ6種のビット付き",
+      "brand": "ブランド: RIMA RUHE",
+      "image_url": "https://m.media-amazon.com/images/I/71csFt4BrtL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3980,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "RIMA RUHE ネイルマシン 「NailMaster（ネイルマスター）」おうちで"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0FPFC5PLP",
+      "asin": "B0FPFC5PLP",
+      "amazon_title": "【プロのネイリスト監修】 ネイルライト プロ用 【艶光】 ジェルネイル ライト 72LED 四階段タイマー 「快適な施術！肘置き付き仕様」",
+      "brand": "ブランド: Dawnlord",
+      "image_url": "https://m.media-amazon.com/images/I/61vkWoJRCAL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 4980,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "Dawnlord ネイルライト プロ用 ジェルネイル ライト 72LED 四階段タ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0FC2JJB9H",
+      "asin": "B0FC2JJB9H",
+      "amazon_title": "ネイルライト ジェルネイル ライト LED& UVライト 硬化ライト セルフネイル レジンライト ジェルネイルキット ネイルセット ネイル用品",
+      "brand": "Zhiethoyのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61YMeuIvfaL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 3160,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "Zhiethoy ネイルライト ジェルネイル ライト LED& UVライト 硬化ラ"
+    }
+  ]
+}
