@@ -1,0 +1,128 @@
+{
+  "slug": "warming-eye-masks-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/warming-eye-masks-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/warming-eye-masks-6-picks/warming-eye-masks-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "heat_duration",
+      "label": "温感の持続時間",
+      "keywords": [
+        "持続時間",
+        "温度",
+        "じんわり"
+      ]
+    },
+    {
+      "id": "usage_type",
+      "label": "使い捨て/繰り返しタイプ",
+      "keywords": [
+        "使い捨て",
+        "繰り返し",
+        "電子レンジ"
+      ]
+    },
+    {
+      "id": "comfort_fit",
+      "label": "装着感・フィット感",
+      "keywords": [
+        "フィット",
+        "耳ひも",
+        "サイズ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "comfort_fit",
+      "heat_duration"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0HCYKMLT8",
+      "asin": "B0HCYKMLT8",
+      "amazon_title": "ホットアイマスク 充電式 温冷両用 99.99%遮光 立体型 アイマスク 睡眠用 シルク 冷却 3段階温度調節 20分自動オフ 高遮音耳栓付き",
+      "brand": "ブランド: Billos",
+      "image_url": "https://m.media-amazon.com/images/I/610yNmLgJRL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3580,
+      "discovery_score": 1,
+      "selection_score": 0.7,
+      "matched_comparison_axes": [
+        "heat_duration"
+      ],
+      "search_key": "Billos ホットアイマスク 充電式 温冷両用 99.99%遮光 立体型 ア"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0B1ZCLF7L",
+      "asin": "B0B1ZCLF7L",
+      "amazon_title": "salua アイマスク 睡眠用 温熱 USB充電式 ホットアイマスク リラックス 疲れ目ケア 遮光 立体構造 安眠グッズ 温熱ピロー機能 男女兼用【 男性用 大きめ サイズ 】 (ブラック)",
+      "brand": "Saluaのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71YwM2HuAXL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 4180,
+      "discovery_score": 1,
+      "selection_score": 0.7,
+      "matched_comparison_axes": [
+        "comfort_fit"
+      ],
+      "search_key": "Salua アイマスク 睡眠用 温熱 USB充電式 ホットアイマスク リラッ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0H7JGB1CM",
+      "asin": "B0H7JGB1CM",
+      "amazon_title": "アイウォーマー ホットアイマスク 充電式 【エアバッグ加圧・3段階温熱・振動】 目元ケア 自動オフタイマー アイケア 軽量 Bluetooth音楽",
+      "brand": "ブランド: HEARTREE",
+      "image_url": "https://m.media-amazon.com/images/I/61-VJ9QXxZL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 5480,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "HEARTREE アイウォーマー ホットアイマスク 充電式 目元ケア 自動オフタイ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0H3KGHSR7",
+      "asin": "B0H3KGHSR7",
+      "amazon_title": "アイウォーマー 【可視設計×12個の独立振動ヘッド×2段階温熱× Bluetooth音楽再生×日本語音声案内】充電式 ホットアイマスク 多機能×約30％軽量 42℃・48℃ 4モード 1000mAh 15分自動OFF 記憶機能 目元ケア アイケア 誕生日プレゼント 女性 男性 母の日 父の日 敬老の日 ギフト 男女兼用",
+      "brand": "Veoyadsのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71xtWzgMCdL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 8999,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "Veoyads アイウォーマー 【可視設計×12個の独立振動ヘッド×2段階温熱×"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0FZZVR4KM",
+      "asin": "B0FZZVR4KM",
+      "amazon_title": "【テレビ東京WBS紹介・iFデザイン賞2026受賞】Relaxonic Cover ホットアイマスク スピード休息 充電式 アイウォーマー 丸洗い ハイパーソニック コードレス リラソニックカバー",
+      "brand": "Relaxonic Coverのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/81xzpMkFD5L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 27500,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "Relaxonic Cover ホットアイマスク スピード休息 充電式 アイウォーマー 丸洗い"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0FP8TKZM6",
+      "asin": "B0FP8TKZM6",
+      "amazon_title": "nerugoo[ネルグー]公式ストア限定パッケージ ホットアイマスク 充電式 睡眠用 【MONOQLO年間ベストバイ受賞】 (01.サファイアブルー)",
+      "brand": "nerugooのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/717zD8FT-6L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 4280,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "nerugoo 公式ストア限定パッケージ ホットアイマスク 充電式 睡眠用 (0"
+    }
+  ]
+}
