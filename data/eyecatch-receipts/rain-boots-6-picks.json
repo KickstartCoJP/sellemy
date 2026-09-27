@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-rain-boots-6-picks-e6a03d1e7f29aa63",
+  "request_sha256": "e6a03d1e7f29aa630b32dd0d981836366cc9e85e92629e0c07477dd97c161488",
+  "image_sha256": "fd0392686a39e30e2388945597ad726e4d3ebc5c3be5e326a6ae05bdeb6811c3",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-09-27T06:26:39.322441+00:00"
+}

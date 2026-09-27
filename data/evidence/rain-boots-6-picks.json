@@ -1,0 +1,135 @@
+{
+  "slug": "rain-boots-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/rain-boots-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/rain-boots-6-picks/rain-boots-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "waterproof_grip",
+      "label": "防水性・滑りにくさ",
+      "keywords": [
+        "完全防水",
+        "滑り止めソール",
+        "防滑加工"
+      ]
+    },
+    {
+      "id": "design_comfort",
+      "label": "デザイン・履き心地",
+      "keywords": [
+        "ショート丈",
+        "ロング丈",
+        "軽量設計"
+      ]
+    },
+    {
+      "id": "packability",
+      "label": "収納・携帯性",
+      "keywords": [
+        "折りたたみ",
+        "持ち運び",
+        "収納袋付き"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "design_comfort",
+      "packability",
+      "waterproof_grip"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0H6PSY28G",
+      "asin": "B0H6PSY28G",
+      "amazon_title": "[Lubiling] 日本野鳥の会監修 レインブーツ レディース メンズ 折りたたみ 収納袋付 軽量 長靴 防水 防滑 蒸れない コンパクト収納 携帯 長靴 アウトドア キャンプ フェス 釣り 農作業 通勤 通学 梅雨 台風 対策",
+      "brand": "Lubilingのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61fsN4sjXFL._AC_SY395_SX395_QL70_ML2_.jpg",
+      "observed_price": 3460,
+      "discovery_score": 1,
+      "selection_score": 0.675,
+      "matched_comparison_axes": [
+        "packability"
+      ],
+      "search_key": "Lubiling 日本野鳥の会監修 レインブーツ レディース メンズ 折りたたみ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0F7X7G4VJ",
+      "asin": "B0F7X7G4VJ",
+      "amazon_title": "[ｕｒｉｃｃａ＼ウリッカ] レインブーツ 長靴 レディース 靴 雨 梅雨 台風 対策 雪 ミドル丈 完全防水 梅雨 アウトドア 防滑 農作業 ガーデニング 防水靴 ^bm1212^",
+      "brand": "ｕｒｉｃｃａ＼ウリッカのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61QslK4hcRL._AC_SY395_SX395_QL70_ML2_.jpg",
+      "observed_price": 2632,
+      "discovery_score": 1,
+      "selection_score": 0.625,
+      "matched_comparison_axes": [
+        "waterproof_grip"
+      ],
+      "search_key": "ｕｒｉｃｃａ＼ウリッカ レインブーツ 長靴 レディース 靴 雨 梅雨 台風 対策 雪 ミ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B07TW553QM",
+      "asin": "B07TW553QM",
+      "amazon_title": "[アモジ] キッズレインシューズ ショート丈 YXJT18",
+      "brand": "Amoji(アモジ)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51F4z7iqwOL._AC_SY395_SX395_QL70_ML2_.jpg",
+      "observed_price": 1998,
+      "discovery_score": 1,
+      "selection_score": 0.625,
+      "matched_comparison_axes": [
+        "design_comfort"
+      ],
+      "search_key": "Amoji(アモジ) キッズレインシューズ ショート丈 YXJT18"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0GJD9T7GD",
+      "asin": "B0GJD9T7GD",
+      "amazon_title": "KiU キウ パッカブルレインブーツ 3RD PACKABLE RAIN BOOTS 3RD 防水 撥水 長靴 ロングブーツ コンパクト 折りたたみ 収納袋 中敷 快適 アウトドア 雨 雪 ユニセックス メンズ レディース 男女兼用 ブラック K513S-900",
+      "brand": "キウ(Kiu)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61q9zlTiHzL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 7998,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "packability"
+      ],
+      "search_key": "キウ(Kiu) KiU キウ パッカブルレインブーツ 3RD PACKABLE"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0DZH85XXV",
+      "asin": "B0DZH85XXV",
+      "amazon_title": "[Lvptsh] 長靴 レディース 折りたたみ 軽量 レインブーツ メンズ レインシューズ 農作業 梅雨 台風 園芸 釣り 作業 ロングブーツ ガーデニング 靴 持ち運び",
+      "brand": "ブランド: Lvptsh",
+      "image_url": "https://m.media-amazon.com/images/I/61nqkXMcBwL._AC_SY395_SX395_QL70_ML2_.jpg",
+      "observed_price": 3499,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "packability"
+      ],
+      "search_key": "Lvptsh 長靴 レディース 折りたたみ 軽量 レインブーツ メンズ レイン"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0DSW1D238",
+      "asin": "B0DSW1D238",
+      "amazon_title": "[Jollywalk] スニーカー感覚 長靴 ショート 防水 軽量 滑り止め ネオプレン製 脱ぎ履き簡単 男女兼用 23-28cm",
+      "brand": "Jollywalkのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51XNrLxh5UL._AC_SY395_SX395_QL70_ML2_.jpg",
+      "observed_price": 4148,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "Jollywalk スニーカー感覚 長靴 ショート 防水 軽量 滑り止め ネオプレン"
+    }
+  ]
+}
