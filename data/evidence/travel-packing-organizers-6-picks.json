@@ -1,0 +1,141 @@
+{
+  "slug": "travel-packing-organizers-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/travel-packing-organizers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/travel-packing-organizers-6-picks/travel-packing-organizers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "organization",
+      "label": "仕分けのしやすさ",
+      "keywords": [
+        "圧縮",
+        "仕切り",
+        "衣類収納"
+      ]
+    },
+    {
+      "id": "portability",
+      "label": "軽さ・携帯性",
+      "keywords": [
+        "軽量",
+        "コンパクト"
+      ]
+    },
+    {
+      "id": "material",
+      "label": "素材・耐久性",
+      "keywords": [
+        "防水",
+        "撥水"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "material",
+      "organization",
+      "portability"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0F53WH93K",
+      "asin": "B0F53WH93K",
+      "amazon_title": "VECELO トラベルポーチ 6点セット 防水 パッキングポーチ 衣類収納 小物収納 靴収納 下着 化粧品 洗面用具 旅行 出張 コンパクト グレー",
+      "brand": "VECELOのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/81446mTcZtL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1170,
+      "discovery_score": 1,
+      "selection_score": 1.02,
+      "matched_comparison_axes": [
+        "material",
+        "organization",
+        "portability"
+      ],
+      "search_key": "VECELO トラベルポーチ 6点セット 防水 パッキングポーチ 衣類収納 小"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0H5BJPPDN",
+      "asin": "B0H5BJPPDN",
+      "amazon_title": "[Evoon]マルチトラベルポーチ パッキングキューブ 圧縮ポーチ 衣類収納 仕切り付き 持ち手付き 撥水 軽量",
+      "brand": "Evoonのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61knCsv-3fL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 6480,
+      "discovery_score": 1,
+      "selection_score": 0.48,
+      "matched_comparison_axes": [
+        "material",
+        "organization",
+        "portability"
+      ],
+      "search_key": "Evoon マルチトラベルポーチ パッキングキューブ 圧縮ポーチ 衣類収納"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0F2FQ8NF9",
+      "asin": "B0F2FQ8NF9",
+      "amazon_title": "Samfolk 圧縮袋 旅行 トラベルポーチ 旅行用圧縮袋 8点セット 整理収納アドバイザー監修 衣類仕分け 撥水 丸洗い可 グレー",
+      "brand": "ブランド: Samfolk",
+      "image_url": "https://m.media-amazon.com/images/I/81VDSI-sdyL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3390,
+      "discovery_score": 1,
+      "selection_score": 0.48,
+      "matched_comparison_axes": [
+        "material",
+        "organization"
+      ],
+      "search_key": "Samfolk 圧縮袋 旅行 トラベルポーチ 旅行用圧縮袋 8点セット 整理収納"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0CS2XM3R1",
+      "asin": "B0CS2XM3R1",
+      "amazon_title": "Bee Nestingバックパッキング用超軽量ドライバッグセット、スタッフバッグ 登山 スタッフバッグキャンプ、ハイキング、ボート遊び ，カヤック用の防水ドライバック、3パックの軽量スタッフサックセット 防水バッグ 防災バッグ",
+      "brand": "Bee Nestingのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61nt-J-cPSL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3184,
+      "discovery_score": 1,
+      "selection_score": 0.48,
+      "matched_comparison_axes": [
+        "material",
+        "portability"
+      ],
+      "search_key": "Bee Nesting バックパッキング用超軽量ドライバッグセット、スタッフバッグ 登山"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0FLVMJMZ4",
+      "asin": "B0FLVMJMZ4",
+      "amazon_title": "旅行 トラベルポーチ 7点セット 旅行 収納ポーチ パッキングキューブ トラベルオーガナイザー 衣類 海外旅行 入院便利 小物入れ 大容量 超軽量(ブラック)",
+      "brand": "ブランド: Airmood",
+      "image_url": "https://m.media-amazon.com/images/I/8134D8oEk4L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1990,
+      "discovery_score": 1,
+      "selection_score": 0.43,
+      "matched_comparison_axes": [
+        "portability"
+      ],
+      "search_key": "Airmood 旅行 トラベルポーチ 7点セット 旅行 収納ポーチ パッキングキ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0DRFKS2ZB",
+      "asin": "B0DRFKS2ZB",
+      "amazon_title": "【ひるおび紹介×特許取得】旅行用圧縮袋 日本ブランド《動く仕切りで整理革命》トラベルポーチ 圧縮袋 旅行 圧縮 衣類 (ブラック, M)",
+      "brand": "LASSE MOAのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61LrqFnv90L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1599,
+      "discovery_score": 1,
+      "selection_score": 0.43,
+      "matched_comparison_axes": [
+        "organization"
+      ],
+      "search_key": "LASSE MOA 旅行用圧縮袋 日本ブランド《動く仕切りで整理革命》トラベルポーチ"
+    }
+  ]
+}
