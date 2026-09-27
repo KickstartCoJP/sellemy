@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-warm-room-slippers-6-picks-3edcf4e0ccf198f8",
+  "request_sha256": "3edcf4e0ccf198f84f36cd1c382e01ee2fe0d70e5ed3873678831650d0aac27f",
+  "image_sha256": "bb5d13568108ed640ac85778bc861bdc45cd1bb7c9a02af58bb0532d8e5c4244",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-09-27T04:45:30.994961+00:00"
+}
