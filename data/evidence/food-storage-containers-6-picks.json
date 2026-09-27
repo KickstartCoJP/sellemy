@@ -1,0 +1,132 @@
+{
+  "slug": "food-storage-containers-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/food-storage-containers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/food-storage-containers-6-picks/food-storage-containers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "material",
+      "label": "素材・耐熱性",
+      "keywords": [
+        "ガラス製",
+        "プラスチック製",
+        "電子レンジ対応"
+      ]
+    },
+    {
+      "id": "airtightness",
+      "label": "密閉性・保存力",
+      "keywords": [
+        "パッキン",
+        "真空",
+        "汁漏れ防止"
+      ]
+    },
+    {
+      "id": "stackability",
+      "label": "収納・重ねやすさ",
+      "keywords": [
+        "スタッキング",
+        "冷蔵庫収納",
+        "サイズ展開"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "airtightness",
+      "material",
+      "stackability"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0FJQDFGMT",
+      "asin": "B0FJQDFGMT",
+      "amazon_title": "耐熱ガラス保存容器7点セット スタッキングで冷蔵庫をスッキリ収納 電子レンジ・冷凍対応 シリコン密閉蓋で汁漏れ防止 おしゃれなカラーボックス入り キャンプ・プレゼントにも オリーブグリーン",
+      "brand": "BOROHOUSEのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71AWpy-zUHL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 5780,
+      "discovery_score": 1,
+      "selection_score": 0.805,
+      "matched_comparison_axes": [
+        "airtightness",
+        "stackability"
+      ],
+      "search_key": "BOROHOUSE 耐熱ガラス保存容器7点セット スタッキングで冷蔵庫をスッキリ収納"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0H7WQJV8N",
+      "asin": "B0H7WQJV8N",
+      "amazon_title": "耐熱ガラス 保存容器 片手で開閉 スライドロック式 電子レンジ対応 密閉保存 食洗機 オーブン対応 BPAフリー 4点セット グリーン",
+      "brand": "RYEDEのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61XI5kr3XQL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2888,
+      "discovery_score": 1,
+      "selection_score": 0.675,
+      "matched_comparison_axes": [
+        "material"
+      ],
+      "search_key": "RYEDE 耐熱ガラス 保存容器 片手で開閉 スライドロック式 電子レンジ対"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0FVXJZL83",
+      "asin": "B0FVXJZL83",
+      "amazon_title": "S SALIENT 耐熱 ガラス 保存容器 作り置き 容器 タッパー レンジ対応 密閉 食洗機OK 8個セット グレー",
+      "brand": "S SALIENTのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71Ejejb1TWL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 4200,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "S SALIENT 耐熱 ガラス 保存容器 作り置き 容器 タッパー レンジ対応 密"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0DTNYRWB8",
+      "asin": "B0DTNYRWB8",
+      "amazon_title": "【Amazon.co.jp限定】 iwaki(イワキ) 耐熱ガラス 保存容器 電子レンジ オーブン 深型 2個セット アーバンクリア パック＆レンジ F3247HM2UC グラタン皿 耐熱容器 耐熱皿",
+      "brand": "iwaki(イワキ)のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61hl5gV0aXL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3396,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "iwaki(イワキ) 耐熱ガラス 保存容器 電子レンジ オーブン 深型 2個セット ア"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0BN7G1CKF",
+      "asin": "B0BN7G1CKF",
+      "amazon_title": "耐熱ガラス容器 保存容器 耐熱容器 【料理雑誌掲載 栄養管理士推薦】 タッパー 食洗機・オーブン対応 液漏れ防止 8個セット",
+      "brand": "NEXUS SPITZEのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/716iiDtMMwL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3980,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "NEXUS SPITZE 耐熱ガラス容器 保存容器 耐熱容器 タッパー 食洗機・オーブン対"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0BG5D9DZ9",
+      "asin": "B0BG5D9DZ9",
+      "amazon_title": "ZWILLING ツヴィリング 「 フレッシュ & セーブ 真空パック機 スターター7点セット プラスチックコンテナM/L付属 」真空 ポンプ 保存 【日本正規販売品】 Fresh Save 36808-007",
+      "brand": "ZWILLINGのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/81wpFTNIUlL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "observed_price": 10500,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "airtightness"
+      ],
+      "search_key": "ZWILLING ツヴィリング 「 フレッシュ & セーブ 真空パック機 スタータ"
+    }
+  ]
+}
