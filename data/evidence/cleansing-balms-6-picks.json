@@ -1,0 +1,139 @@
+{
+  "slug": "cleansing-balms-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/cleansing-balms-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/cleansing-balms-6-picks/cleansing-balms-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "cleansing_power",
+      "label": "洗浄力・メイク落ち",
+      "keywords": [
+        "毛穴汚れ",
+        "メイク落ち",
+        "ダブル洗顔不要"
+      ]
+    },
+    {
+      "id": "skin_feel",
+      "label": "使用感・肌へのやさしさ",
+      "keywords": [
+        "低刺激",
+        "うるおい",
+        "乾燥しない"
+      ]
+    },
+    {
+      "id": "texture_scent",
+      "label": "香り・使い心地",
+      "keywords": [
+        "香り",
+        "とろけるテクスチャー"
+      ]
+    },
+    {
+      "id": "price_range",
+      "label": "価格帯・コスパ",
+      "keywords": [
+        "プチプラ",
+        "デパコス",
+        "容量"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "cleansing_power",
+      "skin_feel",
+      "texture_scent"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0GQLHJLTL",
+      "asin": "B0GQLHJLTL",
+      "amazon_title": "【公式】medivita シルキークレンジングバーム ブラック 黒炭配合 毛穴汚れ・角栓ケア 吸着洗浄 クレンジングバーム W洗顔不要 しっとり保湿 メイク落とし 韓国スキンケア スパチュラ付き",
+      "brand": "ブランド: medivita",
+      "image_url": "https://m.media-amazon.com/images/I/719qdLtlEpL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "observed_price": 1377,
+      "discovery_score": 1,
+      "selection_score": 0.75,
+      "matched_comparison_axes": [
+        "cleansing_power"
+      ],
+      "search_key": "medivita シルキークレンジングバーム ブラック 黒炭配合 毛穴汚れ・角栓ケ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0GP8WGTL8",
+      "asin": "B0GP8WGTL8",
+      "amazon_title": "BIVABOO ミラージュ クレンジングバーム +ピーリング/メイク落とし まつエクOK スキンケア ビバブー W洗顔不要 クレンジング ゴマージュ 角質 保湿 毛穴ケア 黒ずみ 高保湿 うるおい AHA PHA BA",
+      "brand": "銀座ステファニー化粧品のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61mEzo-bw4L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2980,
+      "discovery_score": 1,
+      "selection_score": 0.75,
+      "matched_comparison_axes": [
+        "skin_feel"
+      ],
+      "search_key": "銀座ステファニー化粧品 BIVABOO ミラージュ クレンジングバーム +ピーリング/メ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0DYDK9HPF",
+      "asin": "B0DYDK9HPF",
+      "amazon_title": "【乾燥小じわ・ハリケア】 DUO ザ クレンジングバーム 66g クレンジング メイク落とし ローズの香り",
+      "brand": "DUO（デュオ）のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61LWryzMRdL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "observed_price": 2970,
+      "discovery_score": 1,
+      "selection_score": 0.75,
+      "matched_comparison_axes": [
+        "texture_scent"
+      ],
+      "search_key": "DUO（デュオ） DUO ザ クレンジングバーム 66g クレンジング メイク落と"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0GCDNCH21",
+      "asin": "B0GCDNCH21",
+      "amazon_title": "パーフェクトワンフォーカス 75g スムースクレンジングバーム 毛穴 黒ずみ 角栓 メイク落とし W洗顔不要 マツエクOK ビタミンC 保湿 PERFECT ONE FOCUS（【リニューアル】黄色a (単品)）",
+      "brand": "PERFECT ONE FOCUSのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/6146UPInJlL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2970,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [],
+      "search_key": "PERFECT ONE FOCUS パーフェクトワンフォーカス 75g スムースクレンジングバー"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0CV3DZF5P",
+      "asin": "B0CV3DZF5P",
+      "amazon_title": "【美容成分81.4％配合】 クレンジング メイク落とし 毛穴洗浄 クレンジングバーム 酵素洗顔 毛穴ケア いちご鼻 角栓 毛穴パック (黒 85g)",
+      "brand": "ホワイトスキンベールのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71fQ1LZKxtL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2760,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [],
+      "search_key": "ホワイトスキンベール クレンジング メイク落とし 毛穴洗浄 クレンジングバーム 酵素洗"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0C937T7ZR",
+      "asin": "B0C937T7ZR",
+      "amazon_title": "[バニラコ]BANILACO カバーリシャスアルティメットホワイトクッション 本品 (19 Light) SPF38++ 14g クッションファンデ セミマット",
+      "brand": "BANILA COのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/41lRxlamG9L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3300,
+      "discovery_score": 1,
+      "selection_score": 0.57,
+      "matched_comparison_axes": [],
+      "search_key": "BANILA CO BANILACO カバーリシャスアルティメットホワイトクッション"
+    }
+  ]
+}
