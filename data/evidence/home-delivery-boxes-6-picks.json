@@ -1,0 +1,144 @@
+{
+  "slug": "home-delivery-boxes-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/home-delivery-boxes-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/home-delivery-boxes-6-picks/home-delivery-boxes-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "install",
+      "label": "設置タイプ",
+      "keywords": [
+        "据え置き",
+        "後付け",
+        "工事不要"
+      ]
+    },
+    {
+      "id": "capacity",
+      "label": "容量・サイズ",
+      "keywords": [
+        "容量",
+        "収納力",
+        "サイズ"
+      ]
+    },
+    {
+      "id": "security",
+      "label": "防犯・施錠機能",
+      "keywords": [
+        "ダイヤル錠",
+        "防犯",
+        "チェーン固定"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格帯",
+      "keywords": [
+        "価格",
+        "コスパ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "capacity",
+      "install",
+      "security"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0FL6X7BRR",
+      "asin": "B0FL6X7BRR",
+      "amazon_title": "タンスのゲン 宅配ボックス ポスト一体型 完成品 屋外 戸建て用 大容量 案内ステッカー付き 防水 防犯 据え置き 93800001(106684)",
+      "brand": "タンスのゲンのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/5194CNg63oL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 14999,
+      "discovery_score": 1,
+      "selection_score": 1.02,
+      "matched_comparison_axes": [
+        "capacity",
+        "install",
+        "security"
+      ],
+      "search_key": "タンスのゲン 宅配ボックス ポスト一体型 完成品 屋外 戸建て用 大容量 案内"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0GSTZH8BN",
+      "asin": "B0GSTZH8BN",
+      "amazon_title": "Excitech【一級建築士監修】宅配ボックス 屋外 戸建て用【複数投函可能】ポスト一体型 宅配BOX 組み立て不要 盗難防止 置き配 防水 グレー",
+      "brand": "Excitech Homeのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51vT9xzxdzL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 22900,
+      "discovery_score": 1,
+      "selection_score": 0.48,
+      "matched_comparison_axes": [],
+      "search_key": "Excitech Home Excitech 宅配ボックス 屋外 戸建て用 ポスト一体型 宅"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GN8YVKB2",
+      "asin": "B0GN8YVKB2",
+      "amazon_title": "【EX】PYKES PEAK パイクスピーク 宅配ボックス 屋外 戸建て 大型 ディープウッド",
+      "brand": "PYKES PEAKのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71Fukz-Qu-L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 21980,
+      "discovery_score": 1,
+      "selection_score": 0.48,
+      "matched_comparison_axes": [],
+      "search_key": "PYKES PEAK パイクスピーク 宅配ボックス 屋外 戸建て 大型 ディープウッド"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0DJD6NLVS",
+      "asin": "B0DJD6NLVS",
+      "amazon_title": "宅配ボックス 【複数投函/ポスト一体型/大容量】『らくぽす』 電子キー 宅配BOX 防水 屋外 盗難防止 簡単設置 案内ステッカー付 PBIMシリーズ (マットグレー×ウッド《ポスト一体型+電子キー》)",
+      "brand": "らくぽすのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61CpCVeq0oL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 24980,
+      "discovery_score": 1,
+      "selection_score": 0.48,
+      "matched_comparison_axes": [
+        "capacity"
+      ],
+      "search_key": "らくぽす 宅配ボックス 『らくぽす』 電子キー 宅配BOX 防水 屋外 盗"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0GXYP99PM",
+      "asin": "B0GXYP99PM",
+      "amazon_title": "YABA 置き配ボックス 80L 大容量 折りたたみ防水 ワイヤー錠付き 戸建て アパート マンション対応",
+      "brand": "YB YABAのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/71QK4DaxbkL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3980,
+      "discovery_score": 1,
+      "selection_score": 0.43,
+      "matched_comparison_axes": [
+        "capacity"
+      ],
+      "search_key": "YB YABA YABA 置き配ボックス 80L 大容量 折りたたみ防水 ワイヤ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0GVF43JN4",
+      "asin": "B0GVF43JN4",
+      "amazon_title": "宅配ボックス 据置型 ポスト一体型 | ブラック グレー 79*38*44cm 投函口3つ 複数投函可能 メール便対応 スチール製 防滴仕様 粉体塗装 ダイヤル錠 印鑑ケース付 戸建て 一戸建て用 マンション 置き配ボックス 大容量 衝撃吸収マット付 組み立て式 (ブラック)",
+      "brand": "ブランド: RIDFY",
+      "image_url": "https://m.media-amazon.com/images/I/71AE78XJ1yL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "observed_price": 5918,
+      "discovery_score": 1,
+      "selection_score": 0.43,
+      "matched_comparison_axes": [
+        "capacity",
+        "security"
+      ],
+      "search_key": "RIDFY 宅配ボックス 据置型 ポスト一体型 | ブラック グレー 79*"
+    }
+  ]
+}
