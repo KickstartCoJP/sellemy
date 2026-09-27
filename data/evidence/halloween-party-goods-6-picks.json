@@ -1,0 +1,130 @@
+{
+  "slug": "halloween-party-goods-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/halloween-party-goods-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/halloween-party-goods-6-picks/halloween-party-goods-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "variety",
+      "label": "コスチューム・小物の種類",
+      "keywords": [
+        "コスプレ衣装",
+        "仮装小物",
+        "アクセサリー"
+      ]
+    },
+    {
+      "id": "size_age",
+      "label": "サイズ展開・対象年齢",
+      "keywords": [
+        "子供用",
+        "大人用",
+        "サイズ展開"
+      ]
+    },
+    {
+      "id": "value",
+      "label": "価格帯・セット内容",
+      "keywords": [
+        "価格",
+        "セット内容",
+        "コスパ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "size_age",
+      "variety"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0D9NJBHSJ",
+      "asin": "B0D9NJBHSJ",
+      "amazon_title": "[JANLOFO] ハロウィン メガネ 6個 パーティーメガネ ハロウィン 仮装 撮影小道具 おもしろメガネ アクセサリー かぼちゃ 幽霊",
+      "brand": "JANLOFOのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/81LYFcdKEGL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1580,
+      "discovery_score": 1,
+      "selection_score": 0.675,
+      "matched_comparison_axes": [
+        "variety"
+      ],
+      "search_key": "JANLOFO ハロウィン メガネ 6個 パーティーメガネ ハロウィン 仮装 撮"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HG9817GD",
+      "asin": "B0HG9817GD",
+      "amazon_title": "[Sunaswift] ウサギ警察 コスチューム 9点セット ハロウィン コスプレ 大人用 レディース ポリス コスプレ 警察官 ハロウィン 仮装 アニマル うさ耳 しっぽ フリーサイズ パーティー 撮影",
+      "brand": "ブランド: Sunaswift",
+      "image_url": "https://m.media-amazon.com/images/I/715wVdxvrPL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 3580,
+      "discovery_score": 1,
+      "selection_score": 0.675,
+      "matched_comparison_axes": [
+        "size_age"
+      ],
+      "search_key": "Sunaswift ウサギ警察 コスチューム 9点セット ハロウィン コスプレ 大人"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0FQ4YXKVK",
+      "asin": "B0FQ4YXKVK",
+      "amazon_title": "駄菓子 詰め合わせ ハロウィン 宝箱 60種類60点セット お菓子 ギフト",
+      "brand": "ＫＵＧＥのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/81JgJNvfxDL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3480,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "ＫＵＧＥ 駄菓子 詰め合わせ ハロウィン 宝箱 60種類60点セット お菓"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0FK2YBBFQ",
+      "asin": "B0FK2YBBFQ",
+      "amazon_title": "[Nestkanina] ハロウィン マント 大人用 ポンチョ かぼちゃ パンプキン カボチャ 南瓜 ケープ コスプレ 仮装 変装 衣装 コスチューム パーティー レディース メンズ 男女兼用 イベント 文化祭 学園祭 ハロウィーン HBS022",
+      "brand": "Nestkaninaのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51sXVPL3IWL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 2200,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "size_age"
+      ],
+      "search_key": "Nestkanina ハロウィン マント 大人用 ポンチョ かぼちゃ パンプキン カボ"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0DNZ3291X",
+      "asin": "B0DNZ3291X",
+      "amazon_title": "[PLEAVIT] 豚の鼻 コスプレ 豚 サングラス セット ハロウィン 仮装 グッズ コスチューム 小物",
+      "brand": "ブランド: PLEAVIT",
+      "image_url": "https://m.media-amazon.com/images/I/61JrOcHfn4L._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 2780,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "PLEAVIT 豚の鼻 コスプレ 豚 サングラス セット ハロウィン 仮装 グッ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0DGG3MCM8",
+      "asin": "B0DGG3MCM8",
+      "amazon_title": "(RONGUI) ハロウィン コスプレ 面白い 大人 バスケット ゴール パーティーグッズ 面白グッズ 使える 仮装",
+      "brand": "ブランド: RONGUI",
+      "image_url": "https://m.media-amazon.com/images/I/61Zyd-56s5L._AC_SX300_SY300_QL70_ML2_.jpg",
+      "observed_price": 4280,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "RONGUI (RONGUI) ハロウィン コスプレ 面白い 大人 バスケット"
+    }
+  ]
+}
