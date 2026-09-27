@@ -1,0 +1,133 @@
+{
+  "slug": "pore-care-nose-strips-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/pore-care-nose-strips-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/pore-care-nose-strips-6-picks/pore-care-nose-strips-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "cleansing_power",
+      "label": "洗浄力・角栓除去力",
+      "keywords": [
+        "角栓",
+        "皮脂",
+        "洗浄力"
+      ]
+    },
+    {
+      "id": "skin_gentleness",
+      "label": "肌へのやさしさ",
+      "keywords": [
+        "低刺激",
+        "うるおい",
+        "敏感肌"
+      ]
+    },
+    {
+      "id": "usage_type",
+      "label": "使用タイプ",
+      "keywords": [
+        "シート",
+        "ジェル",
+        "ピーリング"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "cleansing_power",
+      "skin_gentleness",
+      "usage_type"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0HD6X1KK7",
+      "asin": "B0HD6X1KK7",
+      "amazon_title": "MENLITE 毛穴パック 5回分 鼻用パック 角栓ケア 毛穴ケア 2STEPシート はがさないタイプ 毛穴汚れ 黒ずみケア 敏感肌にも使いやすい メンズ レディース",
+      "brand": "MENLITEのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51r+F7Ljb3L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 1489,
+      "discovery_score": 1,
+      "selection_score": 1.06,
+      "matched_comparison_axes": [
+        "cleansing_power",
+        "skin_gentleness",
+        "usage_type"
+      ],
+      "search_key": "MENLITE 毛穴パック 5回分 鼻用パック 角栓ケア 毛穴ケア 2STEPシ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0H2YMDN7Q",
+      "asin": "B0H2YMDN7Q",
+      "amazon_title": "Yunth ユンス 生PDRN*1 美容液 28日分 リポソーム アスタキサンチン ヒアルロン酸 *1 サーモン抽出物：DNA-Na(整肌)",
+      "brand": "Yunthのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/81ZNv5HVMeL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3960,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "Yunth ユンス 生PDRN*1 美容液 28日分 リポソーム アスタキサ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GNK54C9W",
+      "asin": "B0GNK54C9W",
+      "amazon_title": "【43,000ppmのダブル高濃度炭酸】SISI AWAスパークリングパック 8枚入 (1箱)",
+      "brand": "SISIのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61LkJLGz9zL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3960,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "SISI AWAスパークリングパック 8枚入 (1箱)"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0GFVT3RS1",
+      "asin": "B0GFVT3RS1",
+      "amazon_title": "ByUR バイユア デイリーマスク フェイスパック シートマスク ビタギビング 30枚 大容量タイプ30枚入り",
+      "brand": "ByURのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61+FZOzRnUL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2420,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "usage_type"
+      ],
+      "search_key": "ByUR バイユア デイリーマスク フェイスパック シートマスク ビタギビ"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0CZ7MXPG8",
+      "asin": "B0CZ7MXPG8",
+      "amazon_title": "ラネージュ バウンシースリーピングマスク 60mL ハリ 毛穴 弾力 リフトアップクリーム うるおい コラーゲン ナイトケア 敏感肌 韓国 スキンケア",
+      "brand": "LANEIGEのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61M0SOgiOCL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 3894,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [
+        "skin_gentleness"
+      ],
+      "search_key": "LANEIGE ラネージュ バウンシースリーピングマスク 60mL ハリ 毛穴"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0CP51GZVP",
+      "asin": "B0CP51GZVP",
+      "amazon_title": "【新発想のサイクルケア】NNE ニードル炭酸パック 黒緑 [炭酸パック ニードル クレイ CICA 毛穴 くすみ 保湿] 各1包 to esella",
+      "brand": "to ESELLA（トゥーイセラ）のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/51B-re82wRL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 2980,
+      "discovery_score": 1,
+      "selection_score": 0.52,
+      "matched_comparison_axes": [],
+      "search_key": "to ESELLA（トゥーイセラ） NNE ニードル炭酸パック 黒緑 各1包 to esella"
+    }
+  ]
+}
