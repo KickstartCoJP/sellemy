@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-heated-gloves-6-picks-cb3813a72bb87764",
+  "request_sha256": "cb3813a72bb877640e1b25440b88e2d3ca8e24c32f79d036df5c6681ee06d638",
+  "image_sha256": "43a2f9d06b18fad15f6d427608dc7374b0e9333ea9eeb7917cf131f974cd8b2c",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-09-27T02:39:42.997385+00:00"
+}

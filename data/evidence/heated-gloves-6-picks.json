@@ -1,0 +1,141 @@
+{
+  "slug": "heated-gloves-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/heated-gloves-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/heated-gloves-6-picks/heated-gloves-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "heat_level",
+      "label": "発熱温度・段階",
+      "keywords": [
+        "3段階調整",
+        "最高温度"
+      ]
+    },
+    {
+      "id": "battery_life",
+      "label": "バッテリー持続時間",
+      "keywords": [
+        "連続稼働",
+        "モバイルバッテリー式"
+      ]
+    },
+    {
+      "id": "fit_operation",
+      "label": "操作性・フィット感",
+      "keywords": [
+        "タッチパネル対応",
+        "フィット感",
+        "手袋サイズ"
+      ]
+    },
+    {
+      "id": "waterproof",
+      "label": "防水性",
+      "keywords": [
+        "防水",
+        "防風",
+        "雨雪対応"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "fit_operation",
+      "heat_level",
+      "waterproof"
+    ],
+    "brand_count": 6,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0HDT67HZM",
+      "asin": "B0HDT67HZM",
+      "amazon_title": "[Heshare] 電熱グローブ バイク 充電式 防水 3段階温度調節 タッチパネル対応 指先まで暖かい 防寒 防風 滑り止め 電熱手袋 PSE認証",
+      "brand": "Heshareのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/715d-eZPmGL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 9999,
+      "discovery_score": 1,
+      "selection_score": 0.855,
+      "matched_comparison_axes": [
+        "fit_operation",
+        "waterproof"
+      ],
+      "search_key": "Heshare 電熱グローブ バイク 充電式 防水 3段階温度調節 タッチパネル"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0GCYZL3LW",
+      "asin": "B0GCYZL3LW",
+      "amazon_title": "[まもる君] 電熱グローブ 電熱手袋 3000mAhバッテリー2個付き ヒーター手袋 50度最高温度 バイク用 カーボンファイバー 断熱素材 防寒グローブ メンズ レディース PSE認証取得 3段階温度調整 反射材 裏起毛 釣り サイクリング スキー 通勤 通学 アウトドア",
+      "brand": "まもる君のストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/61XYXZOWU0L._AC_SX342_SY445_QL70_ML2_.jpg",
+      "observed_price": 3300,
+      "discovery_score": 1,
+      "selection_score": 0.625,
+      "matched_comparison_axes": [
+        "heat_level"
+      ],
+      "search_key": "まもる君 電熱グローブ 電熱手袋 3000mAhバッテリー2個付き ヒータ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HF85KH18",
+      "asin": "B0HF85KH18",
+      "amazon_title": "電熱グローブ 11.1V バイク グローブ 冬 手全体が発熱 防寒防水 男女兼用 PSE認証済 [日本正規品] 製品型番R-CF11【日本意匠登録済】",
+      "brand": "Xinpekeのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/716ISsth5WL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 14980,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "waterproof"
+      ],
+      "search_key": "Xinpeke 電熱グローブ 11.1V バイク グローブ 冬 手全体が発熱 防"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0H716DSNB",
+      "asin": "B0H716DSNB",
+      "amazon_title": "Hompres 全体PU革電熱グローブ 11.1V両面全体発熱 3WAY給電 バッテリー・Type-C・シガーソケット 手のひら＆指先発熱 残量表示 バイク用 4段階温度 防寒防水 スマホ対応 滑り止め メンズ レディース インナー付き",
+      "brand": "Hompresのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/81fcON+8PoL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 15999,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [
+        "waterproof"
+      ],
+      "search_key": "Hompres 全体PU革電熱グローブ 11.1V両面全体発熱 3WAY給電 バ"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0H715SB98",
+      "asin": "B0H715SB98",
+      "amazon_title": "【走りながら充電、暖かさ続く】KEMIMOTO 電熱グローブ バイク 12Vバイク電源/バッテリー両用 2箇所発熱 3M断熱 電熱手袋 KM-8049",
+      "brand": "KEMIMOTOのストアを表示",
+      "image_url": "https://m.media-amazon.com/images/I/8166kjEy0oL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 17999,
+      "discovery_score": 1,
+      "selection_score": 0.495,
+      "matched_comparison_axes": [],
+      "search_key": "KEMIMOTO 電熱グローブ バイク 12Vバイク電源/バッテリー両用 2箇所発"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0HCVR9BJP",
+      "asin": "B0HCVR9BJP",
+      "amazon_title": "電熱グローブ バイク グローブ 冬 日本製炭素繊維保護 7.4V急速昇温 5000mAhバッテリー付き バッテリー残量表示 耐衝撃 滑り止め 5段階温度調節 スマホ対応",
+      "brand": "ブランド: HAMOMER",
+      "image_url": "https://m.media-amazon.com/images/I/61ke-2+rqVL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": 9580,
+      "discovery_score": 1,
+      "selection_score": 0.445,
+      "matched_comparison_axes": [],
+      "search_key": "HAMOMER 電熱グローブ バイク グローブ 冬 日本製炭素繊維保護 7.4V"
+    }
+  ]
+}
