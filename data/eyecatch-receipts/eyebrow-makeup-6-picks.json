@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-eyebrow-makeup-6-picks-4725dae06b7ee2e9",
+  "request_sha256": "4725dae06b7ee2e9417080997fe23372d2b2dad3c1e37e7f686a62e2aab3d121",
+  "image_sha256": "5d1f7e053fa792b31cccfec99a4b481b088dfb8d2ca8008b6c9f7f7f01827f2a",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-09-27T19:54:28.770367+00:00"
+}
