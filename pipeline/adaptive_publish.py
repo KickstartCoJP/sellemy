@@ -303,7 +303,6 @@ class AdaptivePublishController:
                 minimum_red_streak = 0
                 if green_streak >= int(self.config['green_streak_to_increase']) and target < maximum:
                     target += 1
-                    green_streak = 0
             elif grade in {'yellow', 'red'}:
                 was_at_minimum = target == minimum
                 target = max(minimum, target - int(self.config['poor_feedback_decrease_step']))
