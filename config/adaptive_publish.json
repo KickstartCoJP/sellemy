@@ -5,7 +5,7 @@
   "minimum_target_per_day": 1,
   "maximum_target_per_day": 48,
   "evaluation_window": 6,
-  "green_streak_to_increase": 3,
+  "green_streak_to_increase": 1,
   "poor_feedback_decrease_step": 1,
   "minimum_red_streak_to_alert": 2,
   "repeated_issue_count": 2,

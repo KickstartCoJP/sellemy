@@ -44,16 +44,14 @@ class AdaptiveControllerTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             controller = self.controller(ROOT, root)
-            for index in range(3):
-                controller.record_feedback(feedback(f'green-{index}', 'green'))
+            controller.record_feedback(feedback('green-0', 'green'))
             self.assertEqual(controller.current_state()['target_per_day'], 3)
             self.assertFalse(controller.current_state()['ceo_alert_required'])
 
     def test_yellow_or_red_decreases_frequency(self):
         with tempfile.TemporaryDirectory() as directory:
             controller = self.controller(ROOT, Path(directory))
-            for index in range(3):
-                controller.record_feedback(feedback(f'green-{index}', 'green'))
+            controller.record_feedback(feedback('green-0', 'green'))
             controller.record_feedback(feedback('yellow', 'yellow', ['minor']))
             self.assertEqual(controller.current_state()['target_per_day'], 2)
             controller.record_feedback(feedback('red', 'red', ['major']))
@@ -76,7 +74,7 @@ class AdaptiveControllerTests(unittest.TestCase):
             controller.record_feedback(feedback('green-1', 'green'))
             controller.state_path.write_text('{"target_per_day": 99}\n', encoding='utf-8')
             recovered = controller.current_state()
-            self.assertEqual(recovered['target_per_day'], 2)
+            self.assertEqual(recovered['target_per_day'], 3)
             self.assertEqual(json.loads(controller.state_path.read_text(encoding='utf-8')), recovered)
 
     def test_feedback_recording_is_idempotent(self):
@@ -112,7 +110,7 @@ class AdaptiveControllerTests(unittest.TestCase):
     def test_controller_can_reach_configured_24_per_day_cap(self):
         with tempfile.TemporaryDirectory() as directory:
             controller = self.controller(ROOT, Path(directory))
-            for index in range((24 - 2) * 3):
+            for index in range(24 - 2):
                 controller.record_feedback(feedback(f'green-cap-{index}', 'green'))
             state = controller.current_state()
             self.assertEqual(state['target_per_day'], 24)
@@ -134,18 +132,16 @@ class AdaptiveControllerTests(unittest.TestCase):
                 encoding='utf-8',
             )
             self.assertEqual(controller.current_state()['target_per_day'], 24)
-            for index in range(3):
-                controller.record_feedback(feedback(f'post-seed-{index}', 'green'))
+            controller.record_feedback(feedback('post-seed-0', 'green'))
             self.assertEqual(controller.current_state()['target_per_day'], 25)
             self.assertEqual(controller.current_state()['maximum_target_per_day'], 48)
 
     def test_three_per_day_uses_midnight_eight_and_sixteen(self):
         with tempfile.TemporaryDirectory() as directory:
             controller = self.controller(ROOT, Path(directory))
-            for index in range(3):
-                row = feedback(f'prior-green-{index}', 'green')
-                row['evaluated_at'] = f'2026-09-16T0{index}:00:00+00:00'
-                controller.record_feedback(row)
+            row = feedback('prior-green-0', 'green')
+            row['evaluated_at'] = '2026-09-16T00:00:00+00:00'
+            controller.record_feedback(row)
             zone = ZoneInfo('Asia/Tokyo')
             first = controller.admit_scheduled(datetime(2026, 9, 18, 0, 0, tzinfo=zone))
             off_slot = controller.admit_scheduled(datetime(2026, 9, 18, 4, 0, tzinfo=zone))
@@ -157,10 +153,9 @@ class AdaptiveControllerTests(unittest.TestCase):
     def test_failure_retries_halfway_without_moving_downstream_slots(self):
         with tempfile.TemporaryDirectory() as directory:
             controller = self.controller(ROOT, Path(directory))
-            for index in range(3):
-                row = feedback(f'prior-green-{index}', 'green')
-                row['evaluated_at'] = f'2026-09-16T0{index}:00:00+00:00'
-                controller.record_feedback(row)
+            row = feedback('prior-green-0', 'green')
+            row['evaluated_at'] = '2026-09-16T00:00:00+00:00'
+            controller.record_feedback(row)
             zone = ZoneInfo('Asia/Tokyo')
             controller.admit_scheduled(datetime(2026, 9, 18, 0, 0, tzinfo=zone))
             r1 = controller.reschedule_after_failure(failed_slot='00:00', now=datetime(2026, 9, 18, 0, 2, tzinfo=zone))
@@ -172,10 +167,9 @@ class AdaptiveControllerTests(unittest.TestCase):
     def test_recovery_sequence_is_four_six_seven_then_full_recompose(self):
         with tempfile.TemporaryDirectory() as directory:
             controller = self.controller(ROOT, Path(directory))
-            for index in range(3):
-                row = feedback(f'prior-green-{index}', 'green')
-                row['evaluated_at'] = f'2026-09-16T0{index}:00:00+00:00'
-                controller.record_feedback(row)
+            row = feedback('prior-green-0', 'green')
+            row['evaluated_at'] = '2026-09-16T00:00:00+00:00'
+            controller.record_feedback(row)
             zone = ZoneInfo('Asia/Tokyo')
             controller.admit_scheduled(datetime(2026, 9, 18, 0, 0, tzinfo=zone))
             r1 = controller.reschedule_after_failure(failed_slot='00:00', now=datetime(2026, 9, 18, 0, 2, tzinfo=zone))
@@ -195,10 +189,9 @@ class AdaptiveControllerTests(unittest.TestCase):
     def test_successful_recovery_keeps_original_downstream_schedule(self):
         with tempfile.TemporaryDirectory() as directory:
             controller = self.controller(ROOT, Path(directory))
-            for index in range(3):
-                row = feedback(f'prior-green-{index}', 'green')
-                row['evaluated_at'] = f'2026-09-16T0{index}:00:00+00:00'
-                controller.record_feedback(row)
+            row = feedback('prior-green-0', 'green')
+            row['evaluated_at'] = '2026-09-16T00:00:00+00:00'
+            controller.record_feedback(row)
             zone = ZoneInfo('Asia/Tokyo')
             controller.admit_scheduled(datetime(2026, 9, 18, 0, 0, tzinfo=zone))
             controller.reschedule_after_failure(failed_slot='00:00', now=datetime(2026, 9, 18, 0, 2, tzinfo=zone))
@@ -206,6 +199,7 @@ class AdaptiveControllerTests(unittest.TestCase):
                 **feedback('recovery-success', 'green'),
                 'evaluated_at': '2026-09-17T19:05:00+00:00',
             })
+            self.assertEqual(controller.current_state()['target_per_day'], 4)
             self.assertTrue(controller.admit_scheduled(datetime(2026, 9, 18, 8, 0, tzinfo=zone))['allowed'])
             self.assertTrue(controller.admit_scheduled(datetime(2026, 9, 18, 16, 0, tzinfo=zone))['allowed'])
 
