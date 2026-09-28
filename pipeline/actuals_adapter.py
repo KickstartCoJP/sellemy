@@ -13,9 +13,11 @@ ROOT = Path(__file__).resolve().parents[1]
 ANALYTICS = Path.home() / 'Library' / 'Application Support' / 'Sellemy' / 'analytics'
 PUBLICATION_METRICS = ANALYTICS / 'article_publication_metrics.json'
 GA4_TOTALS = ANALYTICS / 'ga4_daily_totals.json'
+GA4_RAW = ANALYTICS / 'ga4_daily_raw.json'
+AFFILIATE_DB = ANALYTICS / 'affiliate_actuals.sqlite3'
 JST = ZoneInfo('Asia/Tokyo')
 UNIT_ID = 'sellemy'
-OWNED_METRICS = {'pv', 'cost', 'published_article_count_daily', 'published_article_count'}
+OWNED_METRICS = {'pv', 'affiliate_click', 'ctr', 'revenue', 'orders', 'cost', 'profit', 'published_article_count_daily', 'published_article_count'}
 
 
 def _load(path: Path) -> dict:
@@ -78,14 +80,106 @@ def ga4_actuals(doc: dict) -> list[dict]:
     return rows
 
 
+def ga4_engagement_actuals(doc: dict) -> list[dict]:
+    updated_at = str(doc['generated_at'])
+    daily = defaultdict(lambda: {'views': 0, 'clicks': 0, 'available': False})
+    for item in doc.get('rows', []):
+        day = str(item['date'])
+        daily[day]['views'] += int(item.get('page_views', 0) or 0)
+        if item.get('affiliate_clicks') is not None:
+            daily[day]['clicks'] += int(item['affiliate_clicks'])
+            daily[day]['available'] = True
+    rows = []
+    monthly = defaultdict(lambda: {'views': 0, 'clicks': 0, 'available': False})
+    for raw_day in sorted(daily):
+        value = daily[raw_day]
+        if not value['available']:
+            continue
+        day = f'{raw_day[:4]}-{raw_day[4:6]}-{raw_day[6:8]}'
+        common = {'period': f'DAY_{day}', 'period_start': day, 'period_end': day,
+                  'period_label': '日次', 'source': 'ga4_affiliate_click', 'updated_at': updated_at}
+        rows.append({**common, 'metric_id': 'affiliate_click', 'value': value['clicks']})
+        rows.append({**common, 'metric_id': 'ctr',
+                     'value': round(value['clicks'] / value['views'], 8) if value['views'] else 0.0})
+        month = day[:7]
+        monthly[month]['views'] += value['views']
+        monthly[month]['clicks'] += value['clicks']
+        monthly[month]['available'] = True
+    for month, value in sorted(monthly.items()):
+        rows.append({'period': month, 'metric_id': 'affiliate_click', 'value': value['clicks'],
+                     'source': 'ga4_affiliate_click', 'updated_at': updated_at})
+        rows.append({'period': month, 'metric_id': 'ctr',
+                     'value': round(value['clicks'] / value['views'], 8) if value['views'] else 0.0,
+                     'source': 'ga4_affiliate_click', 'updated_at': updated_at})
+    return rows
+
+
+def affiliate_actuals(db_path: Path = AFFILIATE_DB, now: datetime | None = None) -> list[dict]:
+    if not db_path.exists():
+        return []
+    import sqlite3
+    now = (now or datetime.now(JST)).astimezone(JST)
+    db = sqlite3.connect(db_path)
+    raw = db.execute("""SELECT event_date,SUM(order_count),SUM(commission_yen)
+      FROM provider_daily WHERE revenue_eligible=1 GROUP BY event_date ORDER BY event_date""").fetchall()
+    watermarks = {
+        provider: {'covered_from': covered_from, 'covered_to': covered_to, 'state': state}
+        for provider, covered_from, covered_to, state in db.execute(
+            "SELECT provider,covered_from,covered_to,state FROM provider_watermarks"
+        ).fetchall()
+    }
+    db.close()
+    rows = []
+    monthly = defaultdict(lambda: {'orders': 0, 'revenue': 0})
+    updated_at = now.isoformat()
+    for day, orders, revenue in raw:
+        common = {'period': f'DAY_{day}', 'period_start': day, 'period_end': day,
+                  'period_label': '日次', 'source': 'affiliate_provider_reconciled', 'updated_at': updated_at}
+        rows.append({**common, 'metric_id': 'orders', 'value': int(orders or 0)})
+        rows.append({**common, 'metric_id': 'revenue', 'value': int(revenue or 0)})
+        monthly[day[:7]]['orders'] += int(orders or 0)
+        monthly[day[:7]]['revenue'] += int(revenue or 0)
+    for month, value in sorted(monthly.items()):
+        rows.append({'period': month, 'metric_id': 'orders', 'value': value['orders'],
+                     'source': 'affiliate_provider_reconciled', 'updated_at': updated_at})
+        rows.append({'period': month, 'metric_id': 'revenue', 'value': value['revenue'],
+                     'source': 'affiliate_provider_reconciled', 'updated_at': updated_at})
+
+    current_day = now.date().isoformat()
+    current_month = now.strftime('%Y-%m')
+    providers = ('amazon', 'rakuten', 'valuecommerce')
+    current_coverage_complete = all(
+        watermarks.get(provider, {}).get('state') == 'available'
+        and (watermarks.get(provider, {}).get('covered_to') or '') >= current_day
+        for provider in providers
+    )
+    if current_coverage_complete and current_month not in monthly:
+        source = 'affiliate_provider_reconciled_explicit_zero'
+        rows.append({'period': current_month, 'metric_id': 'orders', 'value': 0,
+                     'source': source, 'updated_at': updated_at})
+        rows.append({'period': current_month, 'metric_id': 'revenue', 'value': 0,
+                     'source': source, 'updated_at': updated_at})
+    return rows
+
+
 def explicit_cost_zero(now: datetime | None = None) -> list[dict]:
     now = (now or datetime.now(JST)).astimezone(JST)
     return [{'period': now.strftime('%Y-%m'), 'metric_id': 'cost', 'value': 0,
              'source': 'ceo_confirmed_sellemy_direct_cost_zero', 'updated_at': now.isoformat()}]
 
 
-def build_actuals(publication: dict, ga4: dict, *, now: datetime | None = None) -> list[dict]:
-    return publication_actuals(publication) + ga4_actuals(ga4) + explicit_cost_zero(now)
+def build_actuals(publication: dict, ga4: dict, *, ga4_raw: dict | None = None,
+                  affiliate_db: Path = AFFILIATE_DB, now: datetime | None = None) -> list[dict]:
+    rows = publication_actuals(publication) + ga4_actuals(ga4)
+    if ga4_raw is not None:
+        rows += ga4_engagement_actuals(ga4_raw)
+    rows += affiliate_actuals(affiliate_db, now=now)
+    rows += explicit_cost_zero(now)
+    revenue_rows = [row for row in rows if row['metric_id'] == 'revenue']
+    for revenue in revenue_rows:
+        rows.append({**revenue, 'metric_id': 'profit',
+                     'source': revenue['source'] + '+direct_cost_explicit_zero'})
+    return rows
 
 
 def _ai_os_root() -> Path:
@@ -101,7 +195,8 @@ def _ai_os_root() -> Path:
 def sync() -> dict:
     publication = _load(PUBLICATION_METRICS)
     ga4 = _load(GA4_TOTALS)
-    projected = build_actuals(publication, ga4)
+    ga4_raw = _load(GA4_RAW)
+    projected = build_actuals(publication, ga4, ga4_raw=ga4_raw)
 
     ai_os = _ai_os_root()
     sys.path.insert(0, str(ai_os))
@@ -146,8 +241,8 @@ def sync() -> dict:
         'ga4_monthly_rows': len(pv_monthly),
         'ga4_total_pv': sum(x['value'] for x in pv_daily),
         'cost_current': next(x for x in projected if x['metric_id'] == 'cost'),
-        'revenue_projected': False,
-        'profit_projected': False,
+        'revenue_projected': any(x['metric_id'] == 'revenue' for x in projected),
+        'profit_projected': any(x['metric_id'] == 'profit' for x in projected),
     }
 
 

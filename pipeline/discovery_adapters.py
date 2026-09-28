@@ -2,7 +2,7 @@ from __future__ import annotations
 import importlib.util,json,re,sys,urllib.parse
 from pathlib import Path
 
-AUTOSITE=Path("/Users/suzukitakayuki/autosite")
+AUTOSITE=Path("/Users/kickstart/autosite")
 AMAZON_DATA=AUTOSITE/"amazon_item/product_data.json"
 YAHOO_DATA=AUTOSITE/"yahoo_item/product_data_final.json"
 

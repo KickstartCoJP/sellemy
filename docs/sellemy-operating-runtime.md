@@ -47,3 +47,24 @@ Cumulative, 7-day, 28-day, trend, and comparison values are derived from daily R
 ## Validation
 
 Run `python3 pipeline/validate_operating_model.py` for a non-publishing staging-equivalent check over every stored Writer article, all three categories, Planning, variable-axis selection, ASIN canonical identity, product catalog synchronization, TOP links, and the current OGP domain.
+
+
+## Affiliate actuals pipeline
+
+`pipeline/affiliate_pipeline.py` is the sole production path for affiliate data. It stores immutable provider files, normalized order facts, reconciled daily product facts, provider watermarks, fetch runs, and append-only audit receipts under `~/Library/Application Support/Sellemy/analytics/`.
+
+- Amazon: Associates Central official reports only. Rows enter revenue only when `tracking_id=sellemy-22`. Creators API is disabled until a verified 2xx reporting path exists.
+- ValueCommerce/Yahoo: Order Report API v3 is the only automated collector. Yahoo is represented by ValueCommerce and is never added as a second provider.
+- Rakuten: official CSV is ingested, but revenue eligibility remains false unless the source contains positive Sellemy attribution evidence.
+- GA4: `affiliate_click` and CTR are projected only from the formal event start date; earlier absence is missing, not zero.
+- Raw → Curated → Actuals is reproducible from content hashes. Re-running the same files is idempotent.
+- `ops/run-growth.sh` executes GA4 refresh, affiliate daily reconcile, and Actuals read-back on the existing LaunchAgent heartbeat before content publication checks.
+
+Backfill:
+
+```bash
+.venv/bin/python pipeline/affiliate_pipeline.py --mode backfill --start-date 2025-01-01
+.venv/bin/python pipeline/actuals_adapter.py --sync
+```
+
+ValueCommerce production fetch reads the mode-600 `~/.config/valuecommerce/report-api.json` credential and uses Order Report API v3. Amazon and Rakuten use `pipeline/firefox_collectors.py` with the dedicated `amazon-associates` and `rakuten-affiliate` Firefox profiles. The collector reuses authenticated browser state, downloads only official provider CSVs, atomically installs them into Raw, and fails closed on expired authentication. `ops/run-growth.sh` runs both collectors before reconciliation; an Amazon authentication failure does not prevent Rakuten/ValueCommerce reconciliation, but it stops the publication cycle with a non-zero status after Actuals read-back.

@@ -1,9 +1,9 @@
 #!/bin/zsh
 set -euo pipefail
-ROOT=/Users/suzukitakayuki/sellemy
-PY=/Users/suzukitakayuki/autosite/.venv/bin/python
-GA4PY=/Users/suzukitakayuki/sellemy/.venv/bin/python
-SECRETS=/Users/suzukitakayuki/ai-management-os/.env
+ROOT=/Users/kickstart/sellemy
+PY=/Users/kickstart/sellemy/.venv/bin/python
+GA4PY=/Users/kickstart/sellemy/.venv/bin/python
+SECRETS=/Users/kickstart/ai-management-os/.env
 LOCK=/tmp/sellemy-growth.lock
 if ! mkdir "$LOCK" 2>/dev/null; then echo "$(date -Iseconds) already running"; exit 0; fi
 trap 'rmdir "$LOCK"' EXIT
@@ -17,6 +17,30 @@ export SELLEMY_EYECATCH_QUALITY=high
 export SELLEMY_EYECATCH_TIMEOUT_SECONDS=300
 if [[ ! -x "$GA4PY" ]]; then echo "$(date -Iseconds) GA4 venv missing; abort"; exit 4; fi
 "$GA4PY" pipeline/ga4_sync.py --days 28
+COLLECT_FROM="$(date -v-7d +%F)"
+COLLECT_TO="$(date +%F)"
+AMAZON_COLLECT_RC=0
+"$GA4PY" pipeline/firefox_collectors.py --provider amazon --start-date "$COLLECT_FROM" --end-date "$COLLECT_TO" || AMAZON_COLLECT_RC=$?
+RAKUTEN_COLLECT_RC=0
+"$GA4PY" pipeline/firefox_collectors.py --provider rakuten --start-date "$COLLECT_FROM" --end-date "$COLLECT_TO" || RAKUTEN_COLLECT_RC=$?
+QUALITY_DIR="$HOME/Library/Application Support/Sellemy/analytics"
+mkdir -p "$QUALITY_DIR"
+"$GA4PY" - "$AMAZON_COLLECT_RC" "$RAKUTEN_COLLECT_RC" "$QUALITY_DIR/acquisition-quality.json" <<'PYQ'
+import json,sys
+from datetime import datetime,timezone
+a,r,path=int(sys.argv[1]),int(sys.argv[2]),sys.argv[3]
+value={"updated_at":datetime.now(timezone.utc).isoformat(),"amazon":{"state":"available" if a==0 else "degraded","collector_rc":a},"rakuten":{"state":"available" if r==0 else "degraded","collector_rc":r}}
+open(path,"w").write(json.dumps(value,ensure_ascii=False,indent=2,sort_keys=True)+"\n")
+PYQ
+AFFILIATE_ARGS=(--mode daily)
+if [[ -r "$HOME/.config/valuecommerce/report-api.json" ]]; then
+  AFFILIATE_ARGS+=(--fetch)
+fi
+"$GA4PY" pipeline/affiliate_pipeline.py "${AFFILIATE_ARGS[@]}"
+"$GA4PY" pipeline/actuals_adapter.py --sync
+if (( AMAZON_COLLECT_RC != 0 || RAKUTEN_COLLECT_RC != 0 )); then
+  echo "$(date -Iseconds) affiliate browser collectors degraded; continuing with last verified raw/curated data"
+fi
 if [[ -n "$(git status --porcelain)" ]]; then echo "$(date -Iseconds) dirty working tree; abort"; exit 2; fi
 git fetch origin main --quiet
 if [[ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]]; then echo "$(date -Iseconds) HEAD differs from origin/main; abort"; exit 3; fi

@@ -57,7 +57,7 @@ def sync_feedback_to_task_event(*, feedback: dict, controller_state: dict, confi
     create_message_id = f'TASKCREATE-{project_id}-QUALITY-FEEDBACK-{suffix}'
     event_message_id = f'FEEDBACK-{project_id}-{suffix}'
 
-    ai_os_root = Path(os.environ.get('SELLEMY_AI_OS_ROOT', '/Users/suzukitakayuki/ai-management-os')).expanduser()
+    ai_os_root = Path(os.environ.get('SELLEMY_AI_OS_ROOT', '/Users/kickstart/ai-management-os')).expanduser()
     ai_os_python = os.environ.get('SELLEMY_AI_OS_PYTHON', str(ai_os_root / '.venv' / 'bin' / 'python'))
     canonical_root = Path(
         os.environ.get(

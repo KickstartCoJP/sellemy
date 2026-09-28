@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]; DB=ROOT/'data'/'sellemy.db'
 REPORT=ROOT/'data'/'evidence_collection_last_run.json'
-AUTOSITE=Path('/Users/suzukitakayuki/autosite')
+AUTOSITE=Path('/Users/kickstart/autosite')
 AMAZON_CACHE=AUTOSITE/'amazon_item'/'product_data.json'
 CATEGORY_TERMS={
  'air-purifiers-top-6.html':('空気清浄','イオン発生'),

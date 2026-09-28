@@ -29,6 +29,7 @@ class ActualsAdapterTests(unittest.TestCase):
         rows=actuals_adapter.build_actuals(pub,ga4,now=datetime(2026,9,18,17,0,tzinfo=ZoneInfo('Asia/Tokyo')))
         self.assertTrue(any(r['metric_id']=='published_article_count' and r['value']==45 for r in rows))
         self.assertTrue(any(r['metric_id']=='cost' and r['value']==0 for r in rows))
-        self.assertFalse(any(r['metric_id'] in {'revenue','profit'} for r in rows))
+        self.assertTrue(any(r['metric_id']=='revenue' and r['value']==0 for r in rows))
+        self.assertTrue(any(r['metric_id']=='profit' and r['value']==0 for r in rows))
 
 if __name__=='__main__': unittest.main()

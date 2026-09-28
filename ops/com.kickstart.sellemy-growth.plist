@@ -2,9 +2,9 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0"><dict>
 <key>Label</key><string>com.kickstart.sellemy-growth</string>
-<key>ProgramArguments</key><array><string>/bin/zsh</string><string>/Users/suzukitakayuki/sellemy/ops/run-growth.sh</string></array>
-<key>WorkingDirectory</key><string>/Users/suzukitakayuki/sellemy</string>
+<key>ProgramArguments</key><array><string>/bin/zsh</string><string>/Users/kickstart/sellemy/ops/run-growth.sh</string></array>
+<key>WorkingDirectory</key><string>/Users/kickstart/sellemy</string>
 <key>StartInterval</key><integer>60</integer>
-<key>StandardOutPath</key><string>/Users/suzukitakayuki/sellemy/logs/growth.log</string>
-<key>StandardErrorPath</key><string>/Users/suzukitakayuki/sellemy/logs/growth.error.log</string>
+<key>StandardOutPath</key><string>/Users/kickstart/sellemy/logs/growth.log</string>
+<key>StandardErrorPath</key><string>/Users/kickstart/sellemy/logs/growth.error.log</string>
 </dict></plist>
