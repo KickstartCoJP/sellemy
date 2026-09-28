@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import sys
 import tempfile
+import subprocess
 import unittest
 from pathlib import Path
 from unittest.mock import patch
@@ -26,6 +27,48 @@ def candidate(slug='new-topic', category='beauty', score=.8):
 
 
 class ContinuousPlanningTests(unittest.TestCase):
+    def test_claude_availability_falls_back_to_codex(self):
+        env = {'SELLEMY_PLANNING_COMMAND': '/bin/claude', 'SELLEMY_PLANNING_MODEL': 'sonnet',
+               'SELLEMY_PLANNING_SECONDARY_COMMAND': '/bin/codex',
+               'SELLEMY_PLANNING_SECONDARY_MODEL': 'gpt-6-sol',
+               'SELLEMY_PLANNING_SECONDARY_CERTIFIED': 'true'}
+        failed = subprocess.CompletedProcess([], 1, stdout='', stderr='429 weekly usage limit')
+        with patch.dict('os.environ', env, clear=True), \
+             patch.object(planning_runtime.subprocess, 'run', return_value=failed) as primary, \
+             patch.object(planning_runtime, 'codex_generate', return_value={'candidates': [candidate()]}) as secondary:
+            result = planning_runtime.discover_candidates()
+        self.assertEqual(primary.call_count, 1)
+        self.assertEqual(secondary.call_count, 1)
+        self.assertEqual(result[0]['slug'], 'new-topic')
+        self.assertEqual(result.provider_metadata['planning_provider_used'], 'codex:gpt-6-sol')
+        self.assertEqual(result.provider_metadata['planning_attempt_count'], 2)
+
+    def test_planning_schema_failure_never_falls_back(self):
+        env = {'SELLEMY_PLANNING_COMMAND': '/bin/claude', 'SELLEMY_PLANNING_MODEL': 'sonnet',
+               'SELLEMY_PLANNING_SECONDARY_COMMAND': '/bin/codex',
+               'SELLEMY_PLANNING_SECONDARY_MODEL': 'gpt-6-sol',
+               'SELLEMY_PLANNING_SECONDARY_CERTIFIED': 'true'}
+        bad = subprocess.CompletedProcess([], 0, stdout='{"structured_output": {}}', stderr='')
+        with patch.dict('os.environ', env, clear=True), \
+             patch.object(planning_runtime.subprocess, 'run', return_value=bad), \
+             patch.object(planning_runtime, 'codex_generate') as secondary:
+            with self.assertRaises(planning_runtime.PlanningError):
+                planning_runtime.discover_candidates()
+        secondary.assert_not_called()
+
+    def test_planning_nonavailability_error_never_falls_back(self):
+        env = {'SELLEMY_PLANNING_COMMAND': '/bin/claude', 'SELLEMY_PLANNING_MODEL': 'sonnet',
+               'SELLEMY_PLANNING_SECONDARY_COMMAND': '/bin/codex',
+               'SELLEMY_PLANNING_SECONDARY_MODEL': 'gpt-6-sol',
+               'SELLEMY_PLANNING_SECONDARY_CERTIFIED': 'true'}
+        bad = subprocess.CompletedProcess([], 1, stdout='', stderr='content rejected')
+        with patch.dict('os.environ', env, clear=True), \
+             patch.object(planning_runtime.subprocess, 'run', return_value=bad), \
+             patch.object(planning_runtime, 'codex_generate') as secondary:
+            with self.assertRaises(planning_runtime.PlanningError):
+                planning_runtime.discover_candidates()
+        secondary.assert_not_called()
+
     def test_ranking_rejects_existing_intent_and_balances_categories(self):
         with tempfile.TemporaryDirectory() as tmp:
             articles = Path(tmp) / 'articles.json'

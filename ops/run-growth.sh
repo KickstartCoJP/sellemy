@@ -15,6 +15,15 @@ export SELLEMY_EYECATCH_PROVIDER=openai
 export SELLEMY_EYECATCH_MODEL=gpt-image-2.5-sunburst
 export SELLEMY_EYECATCH_QUALITY=high
 export SELLEMY_EYECATCH_TIMEOUT_SECONDS=300
+export SELLEMY_WRITER_PRIMARY_COMMAND=/opt/homebrew/bin/claude
+export SELLEMY_WRITER_PRIMARY_MODEL=sonnet
+export SELLEMY_WRITER_SECONDARY_COMMAND=/opt/homebrew/bin/codex
+export SELLEMY_WRITER_SECONDARY_KIND=codex
+export SELLEMY_WRITER_SECONDARY_MODEL=gpt-6-sol
+export SELLEMY_WRITER_SECONDARY_CERTIFIED=true
+export SELLEMY_PLANNING_SECONDARY_COMMAND=/opt/homebrew/bin/codex
+export SELLEMY_PLANNING_SECONDARY_MODEL=gpt-6-sol
+export SELLEMY_PLANNING_SECONDARY_CERTIFIED=true
 if [[ ! -x "$GA4PY" ]]; then echo "$(date -Iseconds) GA4 venv missing; abort"; exit 4; fi
 "$GA4PY" pipeline/ga4_sync.py --days 28
 COLLECT_FROM="$(date -v-7d +%F)"

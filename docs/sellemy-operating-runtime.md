@@ -27,12 +27,14 @@ All tuning values live in `config/adaptive_publish.json`. Runtime evidence is ou
 ## Runtime configuration
 
 - `SELLEMY_PLANNING_COMMAND`, `SELLEMY_PLANNING_MODEL`
+- `SELLEMY_PLANNING_SECONDARY_COMMAND`, `SELLEMY_PLANNING_SECONDARY_MODEL`, `SELLEMY_PLANNING_SECONDARY_CERTIFIED=true`
 - `SELLEMY_WRITER_PRIMARY_COMMAND`, `SELLEMY_WRITER_PRIMARY_MODEL`
-- `SELLEMY_WRITER_SECONDARY_COMMAND`, `SELLEMY_WRITER_SECONDARY_MODEL`
+- `SELLEMY_WRITER_SECONDARY_COMMAND`, `SELLEMY_WRITER_SECONDARY_MODEL`, `SELLEMY_WRITER_SECONDARY_KIND=codex`
 - `SELLEMY_WRITER_SECONDARY_CERTIFIED=true` is mandatory before Secondary use
 - `SELLEMY_WRITER_TIMEOUT_SECONDS`, `SELLEMY_WRITER_MAX_BUDGET_USD`
 
 The default Primary and Planning command resolves the locally installed Claude CLI. A Secondary has no default and therefore cannot be used accidentally.
+The production scheduler script explicitly configures the local Codex CLI as certified Secondary for Writer and Planning. Both routes switch only after a Claude availability diagnostic. Codex runs with a read-only sandbox and ephemeral session, receives a JSON output schema, and never receives a session ID or credential in the script. Provider and fallback metadata appears in the Growth report. The existing Review, QA, affiliate and publication guards still decide whether an article can advance. See the [official OpenAI Codex exec guidance](https://developers.openai.com/blog/eval-skills) for noninteractive schema-constrained execution.
 
 ## Measurement feedback
 

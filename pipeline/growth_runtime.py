@@ -91,6 +91,8 @@ def select_viable_topic(
                 probes.append({'round': round_index + 1, 'slug': topic['slug'], 'candidate_count': 0, 'error': f'{type(exc).__name__}: {exc}'})
             if len(products) >= 6:
                 selected = {**topic, 'selection_reason': 'highest ranked candidate with at least six live product identities'}
+                if getattr(source, 'provider_metadata', None):
+                    selected['_planning_provider_metadata'] = source.provider_metadata
                 return selected, products, probes
     raise PlanningError('no planned topic passed live product viability after full candidate scan and replanning: require at least 6 products')
 
@@ -201,6 +203,7 @@ def run(
         topic, candidates, viability_probes = select_viable_topic(
             planning_candidates, feedback, cache_only=cache_only
         )
+        result['planning_provider'] = topic.pop('_planning_provider_metadata', None)
         result['topic'] = topic
         result['viability_probes'] = viability_probes
         selected, selection = select_six(candidates, topic, feedback)

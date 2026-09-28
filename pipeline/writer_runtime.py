@@ -8,6 +8,7 @@ import shutil
 import subprocess
 from dataclasses import dataclass
 from pathlib import Path
+from codex_provider import CodexProviderError, generate as codex_generate
 
 
 class WriterInvocationError(RuntimeError):
@@ -46,9 +47,20 @@ WRITER_JSON_SCHEMA = {
 }
 
 AVAILABILITY_PATTERN = re.compile(
-    r'\b(?:429|529|rate.?limit|usage.?limit|quota|overload|service unavailable|temporar(?:y|ily) unavailable|capacity)\b',
+    r'\b(?:429|529|rate.?limit|usage.?limit|weekly limit|quota|overload|service unavailable|temporar(?:y|ily) unavailable|capacity)\b',
     re.I,
 )
+
+
+def _diagnostic(completed: subprocess.CompletedProcess) -> str:
+    try:
+        envelope = json.loads(completed.stdout)
+        if isinstance(envelope, dict) and isinstance(envelope.get('result'), str):
+            return envelope['result'][-500:]
+    except (TypeError, json.JSONDecodeError):
+        pass
+    return re.sub(r'\b[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12}\b', '[redacted-id]',
+                  (completed.stderr or completed.stdout).strip()[-500:], flags=re.I)
 
 
 @dataclass(frozen=True)
@@ -57,6 +69,7 @@ class WriterProvider:
     command: tuple[str, ...]
     model: str
     certified: bool
+    kind: str = 'claude'
 
 
 def _default_executable() -> str | None:
@@ -75,7 +88,8 @@ def _provider(name: str) -> WriterProvider:
         command = ()
     model = os.environ.get(f'SELLEMY_WRITER_{upper}_MODEL', 'sonnet' if name == 'primary' else '').strip()
     certified = name == 'primary' or os.environ.get('SELLEMY_WRITER_SECONDARY_CERTIFIED', '').lower() in ('1', 'true', 'yes')
-    return WriterProvider(name=name, command=command, model=model, certified=certified)
+    kind = os.environ.get(f'SELLEMY_WRITER_{upper}_KIND', 'claude').strip().lower()
+    return WriterProvider(name=name, command=command, model=model, certified=certified, kind=kind)
 
 
 def _command() -> list[str]:
@@ -112,6 +126,16 @@ def _invoke(provider: WriterProvider, prompt: str) -> tuple[dict, dict]:
         raise WriterInvocationError(f'{provider.name} Writer command unavailable', availability=True)
     if not provider.model:
         raise WriterInvocationError(f'{provider.name} Writer model is not configured', availability=True)
+    if provider.kind == 'codex':
+        try:
+            payload = codex_generate(provider.command, provider.model, WRITER_JSON_SCHEMA, prompt,
+                                     timeout=int(os.environ.get('SELLEMY_WRITER_TIMEOUT_SECONDS', '600')))
+        except CodexProviderError as exc:
+            raise WriterInvocationError(f'{provider.name} Writer {exc}') from exc
+        return payload, {'runtime': provider.command[0], 'model': provider.model,
+                         'cost_usd': None, 'duration_api_ms': None, 'session_persisted': False}
+    if provider.kind != 'claude':
+        raise WriterInvocationError(f'unknown Writer provider kind: {provider.kind}')
     budget = os.environ.get('SELLEMY_WRITER_MAX_BUDGET_USD', '1.00')
     timeout = int(os.environ.get('SELLEMY_WRITER_TIMEOUT_SECONDS', '600'))
     args = list(provider.command) + ['-p', '--safe-mode', '--no-session-persistence', '--tools', '', '--model', provider.model, '--max-budget-usd', budget, '--output-format', 'json', '--json-schema', json.dumps(WRITER_JSON_SCHEMA)]
@@ -119,7 +143,7 @@ def _invoke(provider: WriterProvider, prompt: str) -> tuple[dict, dict]:
         completed = subprocess.run(args, input=prompt, text=True, capture_output=True, timeout=timeout, check=False)
     except (OSError, subprocess.TimeoutExpired) as exc:
         raise WriterInvocationError(f'{provider.name} Writer unavailable: {exc}', availability=True) from exc
-    diagnostic = (completed.stderr or completed.stdout).strip()[-1000:]
+    diagnostic = _diagnostic(completed)
     if completed.returncode != 0:
         raise WriterInvocationError(
             f'{provider.name} Writer exited {completed.returncode}: {diagnostic or "no diagnostic"}',
@@ -151,7 +175,7 @@ def invoke_writer(topic: dict, evidence: dict, *, previous_payload: dict | None 
     requested = f'{primary.name}:{primary.model}'
     try:
         payload, metadata = _invoke(primary, prompt)
-        return payload, {**metadata, 'writer_model_requested': requested, 'writer_model_used': requested, 'fallback_used': False, 'fallback_reason': None, 'writer_attempt_count': 1}
+        return payload, {**metadata, 'writer_model_requested': requested, 'writer_model_used': requested, 'writer_provider_requested': primary.kind, 'writer_provider_used': primary.kind, 'fallback_used': False, 'fallback_reason': None, 'writer_attempt_count': 1}
     except WriterInvocationError as exc:
         if not exc.availability:
             raise
@@ -159,4 +183,4 @@ def invoke_writer(topic: dict, evidence: dict, *, previous_payload: dict | None 
             raise WriterInvocationError(f'{exc}; certified Secondary Writer unavailable', availability=True) from exc
         payload, metadata = _invoke(secondary, prompt)
         used = f'{secondary.name}:{secondary.model}'
-        return payload, {**metadata, 'writer_model_requested': requested, 'writer_model_used': used, 'fallback_used': True, 'fallback_reason': str(exc), 'writer_attempt_count': 2}
+        return payload, {**metadata, 'writer_model_requested': requested, 'writer_model_used': used, 'writer_provider_requested': primary.kind, 'writer_provider_used': secondary.kind, 'fallback_used': True, 'fallback_reason': 'primary_availability_error', 'writer_attempt_count': 2}

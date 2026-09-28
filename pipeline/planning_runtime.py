@@ -10,6 +10,8 @@ from pathlib import Path
 
 from analytics_feedback import load_feedback, topic_signal
 from category_metadata import CATEGORIES
+from codex_provider import CodexProviderError, generate as codex_generate
+from writer_runtime import AVAILABILITY_PATTERN, _diagnostic
 
 ROOT = Path(__file__).resolve().parents[1]
 ARTICLES = ROOT / 'json' / 'articles.json'
@@ -38,6 +40,12 @@ PLANNING_SCHEMA = {
 
 class PlanningError(RuntimeError):
     pass
+
+
+class CandidateBatch(list):
+    def __init__(self, candidates: list[dict], metadata: dict):
+        super().__init__(candidates)
+        self.provider_metadata = metadata
 
 
 def _normalize(value: str) -> str:
@@ -86,14 +94,40 @@ def discover_candidates() -> list[dict]:
         command = shlex.split(configured)
     model = os.environ.get('SELLEMY_PLANNING_MODEL', os.environ.get('SELLEMY_WRITER_PRIMARY_MODEL', 'sonnet'))
     prompt = 'You plan Japanese Sellemy product-comparison topics. Generate fresh candidates from current season, search/purchase intent, product viability and the supplied context. Return structured JSON only.\n' + json.dumps(_context(), ensure_ascii=False)
-    completed = subprocess.run(command + ['-p', '--safe-mode', '--no-session-persistence', '--tools', '', '--model', model, '--output-format', 'json', '--json-schema', json.dumps(PLANNING_SCHEMA)], input=prompt, text=True, capture_output=True, timeout=int(os.environ.get('SELLEMY_PLANNING_TIMEOUT_SECONDS', '300')), check=False)
-    if completed.returncode != 0:
-        raise PlanningError(f'planning provider failed: {(completed.stderr or completed.stdout)[-800:]}')
-    envelope = json.loads(completed.stdout)
-    value = envelope.get('structured_output')
+    timeout = int(os.environ.get('SELLEMY_PLANNING_TIMEOUT_SECONDS', '300'))
+    requested = f'claude:{model}'
+    metadata = {'planning_provider_requested': requested, 'planning_provider_used': requested,
+                'fallback_used': False, 'fallback_reason': None, 'planning_attempt_count': 1}
+    try:
+        completed = subprocess.run(command + ['-p', '--safe-mode', '--no-session-persistence', '--tools', '', '--model', model, '--output-format', 'json', '--json-schema', json.dumps(PLANNING_SCHEMA)], input=prompt, text=True, capture_output=True, timeout=timeout, check=False)
+        diagnostic = _diagnostic(completed)
+        if completed.returncode:
+            if not AVAILABILITY_PATTERN.search(diagnostic):
+                raise PlanningError(f'planning provider failed: {diagnostic}')
+            raise PlanningError('planning primary availability failure')
+        envelope = json.loads(completed.stdout)
+        value = envelope.get('structured_output')
+    except (OSError, subprocess.TimeoutExpired) as exc:
+        raise PlanningError(f'planning provider invocation failed: {type(exc).__name__}') from exc
+    except PlanningError as exc:
+        if str(exc) != 'planning primary availability failure':
+            raise
+        secondary_command = os.environ.get('SELLEMY_PLANNING_SECONDARY_COMMAND', '').strip()
+        secondary_model = os.environ.get('SELLEMY_PLANNING_SECONDARY_MODEL', '').strip()
+        certified = os.environ.get('SELLEMY_PLANNING_SECONDARY_CERTIFIED', '').lower() in ('1', 'true', 'yes')
+        if not secondary_command or not secondary_model or not certified:
+            raise PlanningError('planning primary unavailable; certified Secondary Planning is unconfigured') from exc
+        try:
+            value = codex_generate(tuple(shlex.split(secondary_command)), secondary_model,
+                                   PLANNING_SCHEMA, prompt, timeout=timeout)
+        except CodexProviderError as fallback_error:
+            raise PlanningError(f'planning secondary failed: {fallback_error}') from fallback_error
+        metadata.update({'planning_provider_used': f'codex:{secondary_model}',
+                         'fallback_used': True, 'fallback_reason': 'primary_availability_error',
+                         'planning_attempt_count': 2})
     if not isinstance(value, dict) or not isinstance(value.get('candidates'), list):
         raise PlanningError('planning provider returned no candidate set')
-    return value['candidates']
+    return CandidateBatch(value['candidates'], metadata)
 
 
 def validate_candidate(candidate: dict) -> None:

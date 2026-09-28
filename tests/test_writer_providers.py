@@ -55,6 +55,28 @@ class WriterProviderTests(unittest.TestCase):
                 writer_runtime.invoke_writer({}, valid_evidence())
         self.assertEqual(run.call_count, 1)
 
+    def test_claude_limit_invokes_codex_secondary(self):
+        env = {**self.env, 'SELLEMY_WRITER_SECONDARY_KIND': 'codex'}
+        with patch.dict('os.environ', env, clear=True), \
+             patch.object(writer_runtime.subprocess, 'run', return_value=completed(1, stderr='You have reached your weekly limit')) as primary, \
+             patch.object(writer_runtime, 'codex_generate', return_value=valid_payload()) as secondary:
+            payload, metadata = writer_runtime.invoke_writer({}, valid_evidence())
+        self.assertEqual(payload, valid_payload())
+        self.assertEqual(primary.call_count, 1)
+        self.assertEqual(secondary.call_count, 1)
+        self.assertEqual(metadata['writer_provider_used'], 'codex')
+        self.assertTrue(metadata['fallback_used'])
+        self.assertEqual(metadata['writer_attempt_count'], 2)
+
+    def test_claude_content_failure_does_not_invoke_codex(self):
+        env = {**self.env, 'SELLEMY_WRITER_SECONDARY_KIND': 'codex'}
+        with patch.dict('os.environ', env, clear=True), \
+             patch.object(writer_runtime.subprocess, 'run', return_value=completed(1, stderr='invalid article schema')), \
+             patch.object(writer_runtime, 'codex_generate') as secondary:
+            with self.assertRaises(writer_runtime.WriterInvocationError):
+                writer_runtime.invoke_writer({}, valid_evidence())
+        secondary.assert_not_called()
+
 
 if __name__ == '__main__':
     unittest.main()
