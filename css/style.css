@@ -497,11 +497,6 @@ footer {
   .site-nav .nav-link {
     font-size: 0.85rem;
   }
-
-  /* ✅ スマホで楽天リンク非表示 */
-  .article-detail .links a[href*="rakuten"] {
-    display: none !important;
-  }
 }
 
 @media screen and (max-width: 600px) {
