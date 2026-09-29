@@ -1,0 +1,133 @@
+{
+  "slug": "home-paper-shredders-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/home-paper-shredders-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/home-paper-shredders-6-picks/home-paper-shredders-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "cut",
+      "label": "細断方式",
+      "keywords": [
+        "クロスカット",
+        "マイクロカット",
+        "細断サイズ"
+      ]
+    },
+    {
+      "id": "throughput",
+      "label": "処理できる量",
+      "keywords": [
+        "同時細断枚数",
+        "連続使用時間",
+        "ダスト容量"
+      ]
+    },
+    {
+      "id": "home_use",
+      "label": "家庭での使いやすさ",
+      "keywords": [
+        "運転音",
+        "設置サイズ",
+        "詰まり対策"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "cut",
+      "throughput"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0CL8ZNDXH",
+      "asin": "B0CL8ZNDXH",
+      "amazon_title": "サンワダイレクト シュレッダー 静音 家庭用 小型 マイクロカット 細断枚数3枚 連続使用時間10分 対応 9L ホワイト 400-PSD063W",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51vhBwxuTGL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.67,
+      "matched_comparison_axes": [
+        "cut",
+        "throughput"
+      ],
+      "search_key": "サンワダイレクト シュレッダー 静音 家庭用 小型 マイクロカッ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0H98JNQKW",
+      "asin": "B0H98JNQKW",
+      "amazon_title": "iCODIS 業務用シュレッダー 電動 自動給紙400枚 オートフィードシュレッダー: 2×12mm 50L大容量 8枚手差し A4対応",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51+Ueth-ZnL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [],
+      "search_key": "iCODIS 業務用シュレッダー 電動 自動給紙400枚 オート"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0H41FGNXS",
+      "asin": "B0H41FGNXS",
+      "amazon_title": "シュレッダー 家庭用 電動 クロスカット 14枚同時細断 4×40mm P4 21L大容量 連続60分 静音58dB",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61KO0VpsXOL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "cut"
+      ],
+      "search_key": "シュレッダー 家庭用 電動 クロスカット 14枚同時細断 4×4"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0GSVZH9DF",
+      "asin": "B0GSVZH9DF",
+      "amazon_title": "【Amazon.co.jp限定】アイリスオーヤマ SHIZCUT 静音シュレッダー35dB クロスカット 7枚細断",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51pV3dwFYeL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "cut"
+      ],
+      "search_key": "アイリスオーヤマ SHIZCUT 静音シュレッダー35dB クロ"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0GSQLL9KD",
+      "asin": "B0GSQLL9KD",
+      "amazon_title": "bonsaii オートフィードシュレッダー 2x10mm極細 300枚自動細断 31L 静音 60分連続運転 12枚オイルシート付 C283-C",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/613Xh-kapjL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [],
+      "search_key": "bonsaii オートフィードシュレッダー 2x10mm極細 3"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0GQK952W6",
+      "asin": "B0GQK952W6",
+      "amazon_title": "オーロラジャパン シュレッダー ES550CDW 5枚同時細断 静音60dB クロスカット 4×39mm A4対応 CD カード ホッチキス 対応 10L大容量 コンパクト 家庭用 オフィス用 クロス 付",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41RrstCdDRL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "cut"
+      ],
+      "search_key": "オーロラジャパン シュレッダー ES550CDW 5枚同時細断"
+    }
+  ]
+}
