@@ -1,0 +1,127 @@
+{
+  "slug": "closet-moth-repellents-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/closet-moth-repellents-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/closet-moth-repellents-6-picks/closet-moth-repellents-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "placement",
+      "label": "設置方法",
+      "keywords": [
+        "吊り下げ",
+        "置き型",
+        "対応空間"
+      ]
+    },
+    {
+      "id": "duration",
+      "label": "交換目安",
+      "keywords": [
+        "有効期間",
+        "交換サイン",
+        "個数"
+      ]
+    },
+    {
+      "id": "scent",
+      "label": "香りと付加機能",
+      "keywords": [
+        "無香料",
+        "香り付き",
+        "消臭"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "placement",
+      "scent"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0FR4D9LHY",
+      "asin": "B0FR4D9LHY",
+      "amazon_title": "防虫力 クローゼットにおくだけ 防虫剤 衣類 クローゼット 消臭 フローラルソープの香り 300ml 防虫 置き型 服 虫よけ (× 2)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81Hdy+S2QeL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.67,
+      "matched_comparison_axes": [
+        "placement",
+        "scent"
+      ],
+      "search_key": "防虫力 クローゼットにおくだけ 防虫剤 衣類 クローゼット 消臭"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0FBR4KSJG",
+      "asin": "B0FBR4KSJG",
+      "amazon_title": "ミセスロイド 衣類防虫剤 ウォークインクローゼット用 3個入 無香 無臭 1年間有効",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71BsbNKjjfL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [],
+      "search_key": "ミセスロイド 衣類防虫剤 ウォークインクローゼット用 3個入 無"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0FBLXMY16",
+      "asin": "B0FBLXMY16",
+      "amazon_title": "パラゾール ノンカット 袋入 700g 引き出し・衣装ケース用 防虫剤",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51uN153ZZGL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [],
+      "search_key": "パラゾール ノンカット 袋入 700g 引き出し・衣装ケース用"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0DX6J6LQ6",
+      "asin": "B0DX6J6LQ6",
+      "amazon_title": "ムシューダ 【防虫剤・除湿剤 セット買い】ムシューダ クローゼット用 3個入×2個パック & 備長炭ドライペット クローゼット用 2枚入×2個 R",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/612K5+4zTPL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [],
+      "search_key": "ムシューダ ムシューダ クローゼット用 3個入×2個パック &"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0DST4G2PS",
+      "asin": "B0DST4G2PS",
+      "amazon_title": "【まとめ買い】2個 白元アース パラゾール 洋服ダンス用 詰替用 3個入 防虫剤",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71rQTtp50pL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [],
+      "search_key": "2個 白元アース パラゾール 洋服ダンス用 詰替用 3個入 防虫"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0CVPY9WB4",
+      "asin": "B0CVPY9WB4",
+      "amazon_title": "ピレパラアース クローゼット用 防虫剤 無臭タイプ [8個入] 1年間防虫 ダニよけ&防カビ 衣服の虫よけ (アース製薬)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71GnN6lPnkL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [],
+      "search_key": "ピレパラアース クローゼット用 防虫剤 無臭タイプ 1年間防虫"
+    }
+  ]
+}
