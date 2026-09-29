@@ -1,0 +1,133 @@
+{
+  "slug": "autumn-cuticle-oils-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/autumn-cuticle-oils-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/autumn-cuticle-oils-6-picks/autumn-cuticle-oils-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "applicator",
+      "label": "塗布方法",
+      "keywords": [
+        "筆",
+        "ペン",
+        "ロールオン"
+      ]
+    },
+    {
+      "id": "texture",
+      "label": "使用感",
+      "keywords": [
+        "べたつき",
+        "なじみ",
+        "香り"
+      ]
+    },
+    {
+      "id": "value",
+      "label": "続けやすさ",
+      "keywords": [
+        "容量",
+        "携帯性",
+        "価格"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "applicator",
+      "texture",
+      "value"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0GXDSW9GQ",
+      "asin": "B0GXDSW9GQ",
+      "amazon_title": "【プロネイリスト監修】 1日1回ぬるだけ ネイルオイル キューティクルオイル 10ml ハイポニキウム 保湿 ハイポニキウム育成 ネイルケアオイル ネイル 爪 (ロールオンタイプ)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51f2kmkUyDL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.505,
+      "matched_comparison_axes": [
+        "applicator"
+      ],
+      "search_key": "1日1回ぬるだけ ネイルオイル キューティクルオイル 10ml"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B09SFTFGQ5",
+      "asin": "B09SFTFGQ5",
+      "amazon_title": "MIKAGAMI ネイルオイル 5つの保湿成分配合 14ml (大容量タイプ)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71-kQdnpCdL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.505,
+      "matched_comparison_axes": [
+        "value"
+      ],
+      "search_key": "MIKAGAMI ネイルオイル 5つの保湿成分配合 14ml ("
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B01L8MK8EQ",
+      "asin": "B01L8MK8EQ",
+      "amazon_title": "JAPONEIRA ネイルケア 生の椿油 ジャポネイラ 保湿,保護 透明 国産キューティクルオイルネイルオイル ローズの香り 爪 甘皮 指先 ケア 椿オイル ツバキ油 ネイル美容液 (1本)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41fDduzot1L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.505,
+      "matched_comparison_axes": [
+        "texture"
+      ],
+      "search_key": "JAPONEIRA ネイルケア 生の椿油 ジャポネイラ 保湿,保"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0H1KZPLG6",
+      "asin": "B0H1KZPLG6",
+      "amazon_title": "ネイルケアオイル ネイルオイル 爪補修 保湿 甘皮ケア ダメージ爪 乾燥 二枚爪対策 美爪ケア ネイル後 水仕事用(01-ネイルケア)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61XmzsH5A7L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "ネイルケアオイル ネイルオイル 爪補修 保湿 甘皮ケア ダメージ"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0GVDNZBPB",
+      "asin": "B0GVDNZBPB",
+      "amazon_title": "ネイルオイル ペンタイプ ジャスミン キューティクルオイル 甘皮ケア 保湿 ネイルケア 美容液 指先 爪保護 ハンドケア",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41RAkfIgEoL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "applicator"
+      ],
+      "search_key": "ネイルオイル ペンタイプ ジャスミン キューティクルオイル 甘皮"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0GRVSCTN8",
+      "asin": "B0GRVSCTN8",
+      "amazon_title": "TOMICCA ネイルオイル ココナッツ 15ml ネイルオイル 複数の保湿成分を配合 爪 甘皮 保湿",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61dWWm+nqNL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "TOMICCA ネイルオイル ココナッツ 15ml ネイルオイル"
+    }
+  ]
+}
