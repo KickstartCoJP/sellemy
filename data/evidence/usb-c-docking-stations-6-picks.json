@@ -1,0 +1,135 @@
+{
+  "slug": "usb-c-docking-stations-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/usb-c-docking-stations-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/usb-c-docking-stations-6-picks/usb-c-docking-stations-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "display",
+      "label": "映像出力",
+      "keywords": [
+        "HDMI",
+        "対応画面数",
+        "解像度"
+      ]
+    },
+    {
+      "id": "power",
+      "label": "給電と接続端子",
+      "keywords": [
+        "USB PD",
+        "出力",
+        "有線LAN"
+      ]
+    },
+    {
+      "id": "compatibility",
+      "label": "PCとの互換性",
+      "keywords": [
+        "対応OS",
+        "USB-C規格",
+        "外部画面"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "display",
+      "power"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0GWL5R69W",
+      "asin": "B0GWL5R69W",
+      "amazon_title": "WAVLINK11-in-1 USB-Cドッキングステーション、3画面モード出力、デュアル8K HDMI + 8K DP、PD3.1 140W充電対応、5つのUSB-C/USB-Aポート、SD/TFスロット、オーディオ/マイク、RJ45イーサネット、M1/M2/M3対応 (2HDMI+1DP)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61-MNpJeeKL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.71,
+      "matched_comparison_axes": [
+        "display",
+        "power"
+      ],
+      "search_key": "WAVLINK11-in-1 USB-Cドッキングステーション"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0GX7NZJD7",
+      "asin": "B0GX7NZJD7",
+      "amazon_title": "StarTech USB4ドッキングステーション 2画面 4K144Hz DP 100W PD USBハブ 2.5G LAN",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71m3bDGSVHL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "StarTech USB4ドッキングステーション 2画面 4K1"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GK6M7RLV",
+      "asin": "B0GK6M7RLV",
+      "amazon_title": "MOKiN USB-C ドッキングステーション 13-in-1 多機能ハブ デュアル/トリプルディスプレイ対応 HDMI×2＋DP / 100W PD高速充電/有線LAN 在宅勤務・多画面作業向けSurface/Galaxy/Dell/HP/Lenovo等に適用",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81RF4pkepYL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "display",
+        "power"
+      ],
+      "search_key": "MOKiN USB-C ドッキングステーション 13-in-1"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0FX3ZGZ3Y",
+      "asin": "B0FX3ZGZ3Y",
+      "amazon_title": "Selore 9in1 USB-C ドッキングステーション 2HDMI+DP+VGA 4K60Hz 4画面 100W PD LAN USB3.0",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61LPLOAWkOL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "display"
+      ],
+      "search_key": "Selore 9in1 USB-C ドッキングステーション 2H"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0FLD8KKN7",
+      "asin": "B0FLD8KKN7",
+      "amazon_title": "Anker Nano ドッキングステーション (13-in-1, 着脱式USB-C ハブ)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/611gc7QH34L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "Anker Nano ドッキングステーション (13-in-1"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0FGXGYC1W",
+      "asin": "B0FGXGYC1W",
+      "amazon_title": "usb ドッキングステーション type-c ハブ hdmi 拡張 usb-c hub ドッキングステーション 3画面出力 マルチモニター hdmi マルチディスプレイ 3画面 thunderbolt ハブ HDMI+2*DP 8K/4K@144Hz 三画面出力 PD 100W 2.5G lan/SD/TF USB C 10Gbps MacBook Dell HP Lenovoに対応",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71FyEu4MMFL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "display",
+        "power"
+      ],
+      "search_key": "usb ドッキングステーション type-c ハブ hdmi 拡"
+    }
+  ]
+}
