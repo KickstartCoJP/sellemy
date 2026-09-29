@@ -1,0 +1,132 @@
+{
+  "slug": "makeup-setting-sprays-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/makeup-setting-sprays-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/makeup-setting-sprays-6-picks/makeup-setting-sprays-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "finish",
+      "label": "仕上がり",
+      "keywords": [
+        "ツヤ",
+        "マット",
+        "乾燥崩れ"
+      ]
+    },
+    {
+      "id": "spray",
+      "label": "ミストの使い心地",
+      "keywords": [
+        "霧の細かさ",
+        "香り",
+        "肌あたり"
+      ]
+    },
+    {
+      "id": "value",
+      "label": "続けやすさ",
+      "keywords": [
+        "容量",
+        "価格",
+        "携帯性"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "finish",
+      "spray"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0HGYSBDW5",
+      "asin": "B0HGYSBDW5",
+      "amazon_title": "メイクトップコート メイクキープミスト 80mL 速乾 ヒアルロン酸Na配合 シトラスフローラルの香り 無着色 1本",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71w7azTLbsL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.53,
+      "matched_comparison_axes": [
+        "spray"
+      ],
+      "search_key": "メイクトップコート メイクキープミスト 80mL 速乾 ヒアルロ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B08HGRTK5Y",
+      "asin": "B08HGRTK5Y",
+      "amazon_title": "【公式】SELFBEAUTY ユニコニック シールド メイクアップフィクサー 皮脂コントロール マット仕上げ 100ml",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61gZSyMOcPL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.53,
+      "matched_comparison_axes": [
+        "finish"
+      ],
+      "search_key": "SELFBEAUTY ユニコニック シールド メイクアップフィク"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HBP6ZSQV",
+      "asin": "B0HBP6ZSQV",
+      "amazon_title": "HARIAS ハリアス (公式) メイクキープミスト 40ml (約1か月目安) ヒュライアの香り コスメ 乾燥肌 保湿 ミスト フィックスミスト フェイスミスト",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51IemF2hJaL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "spray"
+      ],
+      "search_key": "HARIAS ハリアス (公式) メイクキープミスト 40ml"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0H6JPYP6Z",
+      "asin": "B0H6JPYP6Z",
+      "amazon_title": "メイク キープ ミスト EX+モイスト Y 限定 ゆずの香り 80mL",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41iV4XoPLQL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "spray"
+      ],
+      "search_key": "メイク キープ ミスト EX+モイスト Y 限定 ゆずの香り 8"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0H69M638G",
+      "asin": "B0H69M638G",
+      "amazon_title": "【公式】Wonjungyo (ウォンジョンヨ) メイクコーティング キープミスト 【限定】ミニサイズ 37ml / 化粧崩れ防止 フィックスミスト",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51SqzTiYoSL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "Wonjungyo (ウォンジョンヨ) メイクコーティング キー"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0GKL4L5SP",
+      "asin": "B0GKL4L5SP",
+      "amazon_title": "Chacott(チャコット) フィニッシングキープミスト 化粧崩れ防止メイクキープ 50ml",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41XnmoPt3qL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "Chacott(チャコット) フィニッシングキープミスト 化粧崩"
+    }
+  ]
+}
