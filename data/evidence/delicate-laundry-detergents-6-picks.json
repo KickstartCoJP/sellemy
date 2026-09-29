@@ -1,0 +1,134 @@
+{
+  "slug": "delicate-laundry-detergents-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/delicate-laundry-detergents-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/delicate-laundry-detergents-6-picks/delicate-laundry-detergents-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "fabric",
+      "label": "対応する衣類",
+      "keywords": [
+        "ウール",
+        "カシミヤ",
+        "洗濯表示"
+      ]
+    },
+    {
+      "id": "finish",
+      "label": "仕上がり",
+      "keywords": [
+        "型崩れ",
+        "毛羽立ち",
+        "香り"
+      ]
+    },
+    {
+      "id": "cost",
+      "label": "洗濯1回あたりの費用",
+      "keywords": [
+        "使用量",
+        "容量",
+        "詰め替え"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "cost",
+      "fabric",
+      "finish"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0FTYRZGWR",
+      "asin": "B0FTYRZGWR",
+      "amazon_title": "ラボン(Lavons) トゥザムーン シャレボン おしゃれ着洗剤 洗濯洗剤 グリーンヘブンの香り 詰め替え 400ml",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71jv12LlaoL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.685,
+      "matched_comparison_axes": [
+        "cost",
+        "finish"
+      ],
+      "search_key": "ラボン(Lavons) トゥザムーン シャレボン おしゃれ着洗剤"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0H4V6ZFWQ",
+      "asin": "B0H4V6ZFWQ",
+      "amazon_title": "【100%天然由来 ふんわり仕上げ】博雲堂 おしゃれ着用 洗剤 シルク カシミヤ ニット ダウン セーター デニム 毛糸洗い 除菌 静電気抑制 無香料 オシャレ着 御洒落着 (440ml)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/612wZh5anxL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.505,
+      "matched_comparison_axes": [
+        "fabric"
+      ],
+      "search_key": "博雲堂 おしゃれ着用 洗剤 シルク カシミヤ ニット ダウン セ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GM6K3VC1",
+      "asin": "B0GM6K3VC1",
+      "amazon_title": "アタックZERO 衣類から洗濯槽まで、アタックZERO液体史上 最高峰の消臭 大本体 570ｇ",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61KTIu5PN2L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "アタックZERO 衣類から洗濯槽まで、アタックZERO液体史上"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0FTYSD9JK",
+      "asin": "B0FTYSD9JK",
+      "amazon_title": "ラボン(Lavons) トゥザムーン シャレボン おしゃれ着洗剤 洗濯洗剤 グリーンヘブンの香り 500ml",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61tQbyc7h-L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "finish"
+      ],
+      "search_key": "ラボン(Lavons) トゥザムーン シャレボン おしゃれ着洗剤"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0F47ZSG19",
+      "asin": "B0F47ZSG19",
+      "amazon_title": "洗濯工房 ダウン&ニット衣類のクリーニング洗剤 80mL ダウン ニット クリーニング 洗剤 自宅で洗える 手洗い 洗濯機 酵素 汚れ 分解 弱酸性",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71k+HbxM4GL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "洗濯工房 ダウン&ニット衣類のクリーニング洗剤 80mL ダウン"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0F2D35RWM",
+      "asin": "B0F2D35RWM",
+      "amazon_title": "エマール 洗濯洗剤 おしゃれ着 ハリ感チャージ成分２倍配合！洗うたびシワカタチ回復 リフレッシュグリーンの香り つめかえ用 １４００ｇ",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71Znwgo1EKL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "finish"
+      ],
+      "search_key": "エマール 洗濯洗剤 おしゃれ着 ハリ感チャージ成分２倍配合！洗う"
+    }
+  ]
+}
