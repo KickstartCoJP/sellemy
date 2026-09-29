@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-knit-flat-drying-nets-6-picks-1fd4d757a92b9a5a",
+  "request_sha256": "1fd4d757a92b9a5a206d28844a661ed4dac087d37a2ff6477d96e96f54d2ee58",
+  "image_sha256": "0434b5dcdfc381795c0706765a28701927525a98ff8f2c943d1ff33b33dbd7dc",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-09-29T07:54:19.326290+00:00"
+}
