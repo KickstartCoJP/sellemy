@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-dishwasher-detergents-6-picks-868a15ac5ae0c68c",
+  "request_sha256": "868a15ac5ae0c68c4317db8ea620cbef9bcd7402c90de6bbc5508255e3854444",
+  "image_sha256": "a97a0c1c5f5c8827d71f1f40bf8cc1af213fc08cded6bef7cef19fd51e2fa82a",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-09-29T21:41:35.572675+00:00"
+}
