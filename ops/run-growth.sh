@@ -71,4 +71,12 @@ fi
 if (( AMAZON_COLLECT_RC != 0 || RAKUTEN_COLLECT_RC != 0 )); then
   echo "$(date -Iseconds) affiliate browser collectors degraded; continuing with last verified raw/curated data"
 fi
-"$PY" pipeline/growth_runtime.py --publish --scheduled
+GROWTH_RC=0
+"$PY" pipeline/growth_runtime.py --publish --scheduled || GROWTH_RC=$?
+MONITOR_RC=0
+"$PY" pipeline/article_publication_metrics.py >/dev/null || MONITOR_RC=$?
+"$GA4PY" pipeline/actuals_adapter.py --sync || MONITOR_RC=$?
+if (( MONITOR_RC != 0 )); then
+  echo "$(date -Iseconds) publication monitoring refresh failed; publication outcome preserved"
+fi
+exit "$GROWTH_RC"
