@@ -256,3 +256,12 @@ class RuntimeFailClosedTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+class AmazonSearchDiscoveryTests(unittest.TestCase):
+    def test_amazon_search_html_yields_product_identity_without_autosite_repo(self):
+        from discovery_adapters import parse_amazon_search_results
+        html = '''<div role="listitem" data-asin="B012345678" data-component-type="s-search-result"><h2><span>商品 A</span></h2><img class="s-image" src="https://example.com/a.jpg"></div><div role="listitem" data-asin="B087654321" data-component-type="s-search-result"><h2><span>商品 B</span></h2><img class="s-image" src="https://example.com/b.jpg"></div>'''
+        rows = parse_amazon_search_results(html, limit=8)
+        self.assertEqual([row['asin'] for row in rows], ['B012345678', 'B087654321'])
+        self.assertEqual(rows[0]['title'], '商品 A')
+        self.assertEqual(rows[0]['image_url'], 'https://example.com/a.jpg')
