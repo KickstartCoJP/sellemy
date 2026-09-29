@@ -50,9 +50,9 @@ if [[ ! -x "$GA4PY" ]]; then echo "$(date -Iseconds) GA4 venv missing; abort"; e
 COLLECT_FROM="$(date -v-7d +%F)"
 COLLECT_TO="$(date +%F)"
 AMAZON_COLLECT_RC=0
-"$GA4PY" pipeline/firefox_collectors.py --provider amazon --start-date "$COLLECT_FROM" --end-date "$COLLECT_TO" || AMAZON_COLLECT_RC=$?
+"$PY" pipeline/run_with_timeout.py 120 "$GA4PY" pipeline/firefox_collectors.py --provider amazon --start-date "$COLLECT_FROM" --end-date "$COLLECT_TO" || AMAZON_COLLECT_RC=$?
 RAKUTEN_COLLECT_RC=0
-"$GA4PY" pipeline/firefox_collectors.py --provider rakuten --start-date "$COLLECT_FROM" --end-date "$COLLECT_TO" || RAKUTEN_COLLECT_RC=$?
+"$PY" pipeline/run_with_timeout.py 120 "$GA4PY" pipeline/firefox_collectors.py --provider rakuten --start-date "$COLLECT_FROM" --end-date "$COLLECT_TO" || RAKUTEN_COLLECT_RC=$?
 QUALITY_DIR="$HOME/Library/Application Support/Sellemy/analytics"
 mkdir -p "$QUALITY_DIR"
 "$GA4PY" - "$AMAZON_COLLECT_RC" "$RAKUTEN_COLLECT_RC" "$QUALITY_DIR/acquisition-quality.json" <<'PYQ'
