@@ -1,0 +1,125 @@
+{
+  "slug": "serum-foundations-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/serum-foundations-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/serum-foundations-6-picks/serum-foundations-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "finish",
+      "label": "仕上がり",
+      "keywords": [
+        "ツヤ",
+        "カバー力",
+        "素肌感"
+      ]
+    },
+    {
+      "id": "formula",
+      "label": "保湿処方",
+      "keywords": [
+        "保湿成分",
+        "テクスチャー",
+        "乾燥しにくさ"
+      ]
+    },
+    {
+      "id": "fit",
+      "label": "選びやすさ",
+      "keywords": [
+        "色展開",
+        "容量",
+        "価格"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "finish"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0GVDH92VX",
+      "asin": "B0GVDH92VX",
+      "amazon_title": "2026 レディース ファンデーション リキッド 化粧下地 長持ち スキンケア 隠れ乾燥対策 30ml べたつかない 対策 皮脂テカリ防止 ベースメイク ツヤ感ファンデ 汗に強い 美容液ファンデ コンシーラー (F, One Size)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61+TH1gokNL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.49,
+      "matched_comparison_axes": [
+        "finish"
+      ],
+      "search_key": "2026 レディース ファンデーション リキッド 化粧下地 長持"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HFVC6N8R",
+      "asin": "B0HFVC6N8R",
+      "amazon_title": "【ファンデーション】リノクル ナイアシンアミド リンクルカバー リキッドファンデーション SPF47 PA+++ どんな肌色にも合うナチュラルカラー",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/414MJdzk7rL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [],
+      "search_key": "リノクル ナイアシンアミド リンクルカバー リキッドファンデーシ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HD6ZST5N",
+      "asin": "B0HD6ZST5N",
+      "amazon_title": "マキアージュ ファンデーション エッセンスクッション EX ブライトグロウ (レフィル) 2 ヌーディーピンク 13g MAQUILLAGE",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61JdarNl8wL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [],
+      "search_key": "マキアージュ ファンデーション エッセンスクッション EX ブラ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0H82N3VSB",
+      "asin": "B0H82N3VSB",
+      "amazon_title": "SHISEIDO メーキャップ エッセンス スキンスムース ファンデーション 230 Alder 30mL 30・PA+++ + アルティミューンパワライジングセラムサンプル2包付き ファンデーション ファンデ美容液 リキッド状 無香料 素肌 保湿 毛穴カバー グリシルグリシン ナイアシンアミド 資生堂",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/518i5ZvFS6L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [],
+      "search_key": "SHISEIDO メーキャップ エッセンス スキンスムース ファ"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0H82HPYDS",
+      "asin": "B0H82HPYDS",
+      "amazon_title": "SHISEIDO メーキャップ エッセンス スキンスムース ファンデーション 140 Porcelain 30mL 30・PA+++ + アルティミューンパワライジングセラムサンプル2包付き ファンデーション ファンデ美容液 リキッド状 無香料 素肌 保湿 毛穴カバー グリシルグリシン ナイアシンアミド 資生堂",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/515wpUCMcIL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [],
+      "search_key": "SHISEIDO メーキャップ エッセンス スキンスムース ファ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0H29VFYGS",
+      "asin": "B0H29VFYGS",
+      "amazon_title": "DECORTÉ(コスメデコルテ) リキッドファンデーション ゼン ウェア ステイ C10 30mL",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51ZdCTM7onL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [],
+      "search_key": "DECORTÉ(コスメデコルテ) リキッドファンデーション ゼン"
+    }
+  ]
+}

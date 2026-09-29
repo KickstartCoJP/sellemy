@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-serum-foundations-6-picks-bc57b606ef0e6f76",
+  "request_sha256": "bc57b606ef0e6f76149edad08bace54e8d3c0a2d20acbb121b045051d790b639",
+  "image_sha256": "0eda5de3465ec0de40fb199f7ac0aee1960f05c93462a3789bdedc05b783f213",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-09-29T23:06:55.520396+00:00"
+}
