@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-automatic-soup-makers-8db3dcfcac538476",
+  "request_sha256": "8db3dcfcac5384762b1bbb03dd9c0dfff0d5fc61a4e766ae415873d655ebfde7",
+  "image_sha256": "45899935cf5d48abba5bda3fc1075eb83e4400140f17dd1e6fbef13a43676b21",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-09-29T10:28:10.902311+00:00"
+}

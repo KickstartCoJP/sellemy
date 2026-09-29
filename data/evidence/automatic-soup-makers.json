@@ -1,0 +1,138 @@
+{
+  "slug": "automatic-soup-makers",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/automatic-soup-makers.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/automatic-soup-makers/automatic-soup-makers.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "capacity",
+      "label": "容量と設置サイズ",
+      "keywords": [
+        "一人分",
+        "家族向け",
+        "本体寸法"
+      ]
+    },
+    {
+      "id": "programs",
+      "label": "調理メニュー",
+      "keywords": [
+        "ポタージュ",
+        "豆乳",
+        "おかゆ"
+      ]
+    },
+    {
+      "id": "cleaning",
+      "label": "洗いやすさ",
+      "keywords": [
+        "自動洗浄",
+        "刃",
+        "容器"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "cleaning",
+      "programs"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0HB4HJC4Z",
+      "asin": "B0HB4HJC4Z",
+      "amazon_title": "【待つだけの、本格調理】 SKK スープメーカー 1.0L 自動調理ポット 2～5人分 自動調理器 ガラス窓 ミキサー ほったらかし調理 氷も砕ける 予約機能 自動洗浄機能 豆乳 ヨーグルト 離乳食 レシピ付 【日本企業】",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/7198ZfEy4xL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.67,
+      "matched_comparison_axes": [
+        "cleaning",
+        "programs"
+      ],
+      "search_key": "SKK スープメーカー 1.0L 自動調理ポット 2～5人分 自"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HGLKZPFP",
+      "asin": "B0HGLKZPFP",
+      "amazon_title": "recolte レコルト 自動調理ポットラージ 大容量 7種調理 全自動 予約機能 ポタージュ スープメーカー 豆乳 スムージー ナチュラルブラック RSY-3(BK)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61PS-OTRmaL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "programs"
+      ],
+      "search_key": "recolte レコルト 自動調理ポットラージ 大容量 7種調理"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HB4BRVP7",
+      "asin": "B0HB4BRVP7",
+      "amazon_title": "【ほったらかしで、ごちそう】 匠plate スープメーカー 1.0L 自動調理ポット 2～5人分 自動調理器 ガラス窓 時短 ほったらかし調理 レシピブック付き 予約機能 自動洗浄機能 スープ ポタージュ 豆乳 スムージー ヨーグルト 離乳食 レシピ付 【日本企業】",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71W43A1aJKL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "cleaning",
+        "programs"
+      ],
+      "search_key": "匠plate スープメーカー 1.0L 自動調理ポット 2～5人"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0H7VYYW92",
+      "asin": "B0H7VYYW92",
+      "amazon_title": "テスコム (TESCOM) スープメーカー 自動調理ポット 600ml 5モード+洗浄モード搭載 残り時間表示 12時間予約 [スープ/豆乳/ポタージュ/おかゆ/スムージー/高温洗浄モード] ラク抜きプラグ アイボリー TEC-A04MS-W",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51HTd6nPAdL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "programs"
+      ],
+      "search_key": "テスコム (TESCOM) スープメーカー 自動調理ポット 60"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0H3L2S28B",
+      "asin": "B0H3L2S28B",
+      "amazon_title": "【日本正規品】【公式】SoyChef 豆乳メーカー 日本栄養大学レシピ監修 自動調理ポット スープメーカー ブレンダー スムージー自動高温",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71lZ+KqLXbL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "programs"
+      ],
+      "search_key": "SoyChef 豆乳メーカー 日本栄養大学レシピ監修 自動調理ポ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0GMGP982M",
+      "asin": "B0GMGP982M",
+      "amazon_title": "［日本正規品］レコルト 自動調理ポットラージ スープメーカー 豆乳メーカー 大容量800ml 予約機能 レシピ本付 ポタージュ ナチュラルブラック RSY-3(BK)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61PS-OTRmaL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "programs"
+      ],
+      "search_key": "［日本正規品］レコルト 自動調理ポットラージ スープメーカー 豆"
+    }
+  ]
+}
