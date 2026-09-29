@@ -1,0 +1,130 @@
+{
+  "slug": "range-hood-degreasers-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/range-hood-degreasers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/range-hood-degreasers-6-picks/range-hood-degreasers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "formulation",
+      "label": "洗剤の種類",
+      "keywords": [
+        "アルカリ性",
+        "泡",
+        "つけ置き"
+      ]
+    },
+    {
+      "id": "materials",
+      "label": "使える素材",
+      "keywords": [
+        "アルミ",
+        "塗装面",
+        "使用上の注意"
+      ]
+    },
+    {
+      "id": "workload",
+      "label": "掃除の手間",
+      "keywords": [
+        "放置時間",
+        "すすぎ",
+        "液だれ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "formulation",
+      "materials"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0GFC3RZ1H",
+      "asin": "B0GFC3RZ1H",
+      "amazon_title": "アブラバスターPRO 450ml 泡タイプ 強力油汚れ落とし洗剤",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/818QtG4HerL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.49,
+      "matched_comparison_axes": [
+        "formulation"
+      ],
+      "search_key": "アブラバスターPRO 450ml 泡タイプ 強力油汚れ落とし洗剤"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B007T1UOEA",
+      "asin": "B007T1UOEA",
+      "amazon_title": "アズマ 換気扇用洗剤 TKつけおきくん・シロッコファン用500ml アルミ専用",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51AbrzVdvCL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.49,
+      "matched_comparison_axes": [
+        "materials"
+      ],
+      "search_key": "アズマ 換気扇用洗剤 TKつけおきくん・シロッコファン用500m"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0H4GH2MKK",
+      "asin": "B0H4GH2MKK",
+      "amazon_title": "油汚れ用クリーナー 500ml キッチン コンロ 換気扇 レンジフード 油汚れ洗剤 清掃会社開発 生分解性96％",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61tFvR6cGOL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [],
+      "search_key": "油汚れ用クリーナー 500ml キッチン コンロ 換気扇 レンジ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0GS92G2JV",
+      "asin": "B0GS92G2JV",
+      "amazon_title": "ジャンピカ 油汚れ洗剤 業務用 アルカリクリーナー 換気扇 レンジフード コンロ キッチン 厨房 ベタつき 油落とし 希釈タイプ 100ml",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61TiHjwVHTL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [],
+      "search_key": "ジャンピカ 油汚れ洗剤 業務用 アルカリクリーナー 換気扇 レン"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0FFSTRR59",
+      "asin": "B0FFSTRR59",
+      "amazon_title": "油汚れ 洗剤 業務用Pro超強力 1000ml (2～10倍希釈で最大10リットル分) キッチン・換気扇の頑固な汚れに アルフレッシュSD 泡タイプ",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/711owJkijDL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "formulation"
+      ],
+      "search_key": "油汚れ 洗剤 業務用Pro超強力 1000ml (2～10倍希釈"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0FF3QG1LY",
+      "asin": "B0FF3QG1LY",
+      "amazon_title": "【セット】サットレールスプレー(500ml)1本＆サットレールシート2個セット 正規品 富士工業 レンジフード・換気扇メーカが開発した専用洗剤",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/515A-7YXdZL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [],
+      "search_key": "サットレールスプレー(500ml)1本＆サットレールシート2個セ"
+    }
+  ]
+}
