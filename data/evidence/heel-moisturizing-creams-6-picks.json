@@ -1,0 +1,131 @@
+{
+  "slug": "heel-moisturizing-creams-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/heel-moisturizing-creams-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/heel-moisturizing-creams-6-picks/heel-moisturizing-creams-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "ingredients",
+      "label": "保湿成分",
+      "keywords": [
+        "尿素",
+        "ワセリン",
+        "グリセリン"
+      ]
+    },
+    {
+      "id": "texture",
+      "label": "塗り心地",
+      "keywords": [
+        "べたつき",
+        "伸び",
+        "靴下との相性"
+      ]
+    },
+    {
+      "id": "value",
+      "label": "続けやすさ",
+      "keywords": [
+        "容量",
+        "容器",
+        "価格"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "ingredients"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0H8K2969N",
+      "asin": "B0H8K2969N",
+      "amazon_title": "【人気 高保湿型】尿素クリーム 40% （サリチル酸 2% 配合） 100g フット＆ハンドクリーム かかと 指先 手足用 高保湿タイプ 乾燥が気になる部分に しっとりなめらか うるおいケア ガサガサ対策",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51Mzq-QOTvL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.505,
+      "matched_comparison_axes": [
+        "ingredients"
+      ],
+      "search_key": "尿素クリーム 40% （サリチル酸 2% 配合） 100g フッ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0GYSSQZNR",
+      "asin": "B0GYSSQZNR",
+      "amazon_title": "尿素クリーム 40% サリチル酸配合 100g 高保湿 ベタつかない ハンド＆フットケア",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71A18QdGDcL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "ingredients"
+      ],
+      "search_key": "尿素クリーム 40% サリチル酸配合 100g 高保湿 ベタつか"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GYCXB4V7",
+      "asin": "B0GYCXB4V7",
+      "amazon_title": "トプラン かかと専用クリーム 110g (× 2)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61YUE4kfsqL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "トプラン かかと専用クリーム 110g (× 2)"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0GY24HG4V",
+      "asin": "B0GY24HG4V",
+      "amazon_title": "42%尿素配合クリーム サリチル酸 2% 配合 85g 高保湿 浸透型 ベタつかない ハンド＆フット 角質軟化 (1本)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71xgQnPZwlL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "ingredients"
+      ],
+      "search_key": "42%尿素配合クリーム サリチル酸 2% 配合 85g 高保湿"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0GGHBPC4X",
+      "asin": "B0GGHBPC4X",
+      "amazon_title": "浸透型 40% 尿素配合 高保湿クリーム 100g サリチル酸 かかと 手足 身体用 角質柔軟 乾燥対策",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61KjDdhqliL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "ingredients"
+      ],
+      "search_key": "浸透型 40% 尿素配合 高保湿クリーム 100g サリチル酸"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0G2BBWSHF",
+      "asin": "B0G2BBWSHF",
+      "amazon_title": "ウィル クレンズ 薬用 かかと クリーム [ ガサガサ かかとしっとり ] 無香料 50g フットクリーム 角質取り 保湿 (かかとクリーム1本)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51c5gtnyKAL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "ウィル クレンズ 薬用 かかと クリーム 無香料 50g フット"
+    }
+  ]
+}
