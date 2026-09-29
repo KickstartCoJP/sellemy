@@ -1,0 +1,125 @@
+{
+  "slug": "window-insulation-films-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/window-insulation-films-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/window-insulation-films-6-picks/window-insulation-films-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "installation",
+      "label": "貼り付け方法",
+      "keywords": [
+        "水貼り",
+        "粘着",
+        "貼り直し"
+      ]
+    },
+    {
+      "id": "compatibility",
+      "label": "窓との相性",
+      "keywords": [
+        "ガラスの種類",
+        "サイズ",
+        "透明度"
+      ]
+    },
+    {
+      "id": "maintenance",
+      "label": "扱いやすさ",
+      "keywords": [
+        "結露時の手入れ",
+        "剥がしやすさ",
+        "価格"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "installation"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0HD9RTLBY",
+      "asin": "B0HD9RTLBY",
+      "amazon_title": "【光を通し UVを斬る】窓断熱シート 透明フィルム 飛散防止 UVカット 水貼り 窓断熱フィルム 結露軽減シート クリア 44.5×200cm 1本",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/715NFpds18L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.505,
+      "matched_comparison_axes": [
+        "installation"
+      ],
+      "search_key": "窓断熱シート 透明フィルム 飛散防止 UVカット 水貼り 窓断熱"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0H27XHNWS",
+      "asin": "B0H27XHNWS",
+      "amazon_title": "遮光シート 窓ガラス目隠しシート 断熱 420dオックスフォード UVカット 日よけ 真っ黒 超遮光カーテン 日除けシート1.5×1m",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/7110FdFz3UL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "遮光シート 窓ガラス目隠しシート 断熱 420dオックスフォード"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GLN7GNMD",
+      "asin": "B0GLN7GNMD",
+      "amazon_title": "ニトムズ 夏冬兼用 結露防止 断熱アルミシート 窓 遮熱 UVカット 結露防止 暖房 冷房 目かくし 省エネ 90cm×1.8m HH0031",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/91DHE-gZEcL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "ニトムズ 夏冬兼用 結露防止 断熱アルミシート 窓 遮熱 UVカ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0DTHG25B4",
+      "asin": "B0DTHG25B4",
+      "amazon_title": "アール(R) 窓断熱・遮光スクリーンL まど活 90×210×0.1(cm) 冷暖房効果 省エネ 節約 節電 エアコン HN-074",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/91K3aZLaQ2L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "アール(R) 窓断熱・遮光スクリーンL まど活 90×210×0"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0DRP6L3T4",
+      "asin": "B0DRP6L3T4",
+      "amazon_title": "窓用フィルム 目隠しシート 水で貼る 貼ってはがせる 断熱遮熱 飛散防止 UVカット プライバシー保護 日除け ガラスフィルム 虹色",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71np4V7O2XL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "窓用フィルム 目隠しシート 水で貼る 貼ってはがせる 断熱遮熱"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0D14LN79Q",
+      "asin": "B0D14LN79Q",
+      "amazon_title": "ニトムズ 省エネ カーテンライナー 夏涼しく 冬あったかい カーテンレールに取り付けるだけ 電気代節約 窓 オールシーズン 夏冬兼用 断熱 透明 L 幅100cmx高さ225cm 2枚入 HH0011",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81Ap3WyLSYL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "ニトムズ 省エネ カーテンライナー 夏涼しく 冬あったかい カー"
+    }
+  ]
+}
