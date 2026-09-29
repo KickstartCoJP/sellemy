@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-bamboo-steamers-6-picks-63a25fc92ce37dad",
+  "request_sha256": "63a25fc92ce37dad8237106d8664ecf9d1da46e5a2e204ece313da7d0fe552d1",
+  "image_sha256": "6a90ca234aafae455eb10bb2c0936b85d08dc38e2faa293be101f34d497dd58f",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-09-29T10:42:19.369905+00:00"
+}
