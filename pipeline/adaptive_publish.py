@@ -488,6 +488,17 @@ class AdaptivePublishController:
             _append_jsonl(self.admissions_path, receipt)
             return {'allowed': True, 'reason': 'scheduled_slot_admitted', 'slot': slot, 'state': state, 'receipt': receipt}
 
+    def validate_scheduled_admission(self, admission_id: str) -> dict:
+        state = self.current_state()
+        matches = [row for row in _read_jsonl(self.admissions_path) if row.get('admission_id') == admission_id]
+        if len(matches) != 1:
+            return {'allowed': False, 'reason': 'preclaimed_admission_missing', 'slot': None, 'state': state}
+        receipt = matches[0]
+        return {
+            'allowed': True, 'reason': 'preclaimed_scheduled_slot',
+            'slot': receipt.get('slot'), 'state': state, 'receipt': receipt,
+        }
+
     def record_feedback(self, feedback: dict) -> tuple[dict, dict]:
         with self._lock():
             records = self.feedback()

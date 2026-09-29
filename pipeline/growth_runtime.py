@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import subprocess
 import sys
@@ -193,7 +194,8 @@ def run(
             result['controller_decision'] = {'allowed': False, 'reason': 'ceo_alert_pause'}
             return result
         if publish and scheduled:
-            decision = adaptive.admit_scheduled()
+            preclaimed = os.environ.get('SELLEMY_PRECLAIMED_ADMISSION_ID', '').strip()
+            decision = adaptive.validate_scheduled_admission(preclaimed) if preclaimed else adaptive.admit_scheduled()
             result['controller_decision'] = decision
             if not decision['allowed']:
                 result['status'] = 'skipped_by_controller'

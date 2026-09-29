@@ -159,6 +159,23 @@ class AdaptiveControllerTests(unittest.TestCase):
             self.assertEqual(off_slot['reason'], 'slot_not_enabled_for_target')
             self.assertTrue(second['allowed'])
 
+    def test_preclaimed_admission_can_be_validated_without_double_admit(self):
+        with tempfile.TemporaryDirectory() as directory:
+            controller = self.controller(ROOT, Path(directory))
+            for index in range(3):
+                row = feedback(f'prior-green-{index}', 'green')
+                row['evaluated_at'] = f'2026-09-16T0{index}:00:00+00:00'
+                controller.record_feedback(row)
+            zone = ZoneInfo('Asia/Tokyo')
+            first = controller.admit_scheduled(datetime(2026, 9, 18, 0, 0, tzinfo=zone))
+            validated = controller.validate_scheduled_admission(first['receipt']['admission_id'])
+            duplicate = controller.admit_scheduled(datetime(2026, 9, 18, 0, 0, tzinfo=zone))
+            self.assertTrue(validated['allowed'])
+            self.assertEqual(validated['reason'], 'preclaimed_scheduled_slot')
+            self.assertEqual(validated['slot'], '00:00')
+            self.assertFalse(duplicate['allowed'])
+            self.assertEqual(duplicate['reason'], 'slot_already_admitted')
+
     def test_failure_retries_halfway_without_moving_downstream_slots(self):
         with tempfile.TemporaryDirectory() as directory:
             controller = self.controller(ROOT, Path(directory))

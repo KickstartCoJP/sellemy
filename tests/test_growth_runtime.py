@@ -21,6 +21,9 @@ class ScheduledRouteTests(unittest.TestCase):
     def test_scheduler_uses_new_runtime_not_legacy_generator(self):
         script = (ROOT / 'ops' / 'run-growth.sh').read_text(encoding='utf-8')
         self.assertIn('pipeline/growth_runtime.py --publish --scheduled', script)
+        self.assertIn('admit_scheduled()', script)
+        self.assertLess(script.index('admit_scheduled()'), script.index('pipeline/ga4_sync.py'))
+        self.assertIn('SELLEMY_PRECLAIMED_ADMISSION_ID', script)
         self.assertNotIn('pipeline/grow.py', script)
         self.assertNotIn('pipeline/run.py', script)
 

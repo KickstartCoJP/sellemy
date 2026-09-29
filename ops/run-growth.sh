@@ -25,6 +25,26 @@ export SELLEMY_WRITER_SECONDARY_CERTIFIED=true
 export SELLEMY_PLANNING_SECONDARY_COMMAND=/opt/homebrew/bin/codex
 export SELLEMY_PLANNING_SECONDARY_MODEL=gpt-6-sol
 export SELLEMY_PLANNING_SECONDARY_CERTIFIED=true
+if [[ -n "$(git status --porcelain)" ]]; then echo "$(date -Iseconds) dirty working tree; abort"; exit 2; fi
+git fetch origin main --quiet
+if [[ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]]; then echo "$(date -Iseconds) HEAD differs from origin/main; abort"; exit 3; fi
+eval "$("$PY" - <<'PYADMIT'
+import shlex,sys
+sys.path.insert(0, '/Users/kickstart/sellemy/pipeline')
+from pathlib import Path
+from adaptive_publish import AdaptivePublishController
+decision=AdaptivePublishController(Path('/Users/kickstart/sellemy')).admit_scheduled()
+print('SELLEMY_PREFLIGHT_ALLOWED=' + ('1' if decision.get('allowed') else '0'))
+print('SELLEMY_PREFLIGHT_REASON=' + shlex.quote(str(decision.get('reason') or '')))
+if decision.get('allowed'):
+    print('SELLEMY_PRECLAIMED_ADMISSION_ID=' + shlex.quote(decision['receipt']['admission_id']))
+PYADMIT
+)"
+if [[ "$SELLEMY_PREFLIGHT_ALLOWED" != "1" ]]; then
+  echo "$(date -Iseconds) growth preflight skipped: $SELLEMY_PREFLIGHT_REASON"
+  exit 0
+fi
+export SELLEMY_PRECLAIMED_ADMISSION_ID
 if [[ ! -x "$GA4PY" ]]; then echo "$(date -Iseconds) GA4 venv missing; abort"; exit 4; fi
 "$GA4PY" pipeline/ga4_sync.py --days 28
 COLLECT_FROM="$(date -v-7d +%F)"
@@ -51,7 +71,4 @@ fi
 if (( AMAZON_COLLECT_RC != 0 || RAKUTEN_COLLECT_RC != 0 )); then
   echo "$(date -Iseconds) affiliate browser collectors degraded; continuing with last verified raw/curated data"
 fi
-if [[ -n "$(git status --porcelain)" ]]; then echo "$(date -Iseconds) dirty working tree; abort"; exit 2; fi
-git fetch origin main --quiet
-if [[ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]]; then echo "$(date -Iseconds) HEAD differs from origin/main; abort"; exit 3; fi
 "$PY" pipeline/growth_runtime.py --publish --scheduled
