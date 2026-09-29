@@ -1,0 +1,121 @@
+{
+  "slug": "autumn-cleansing-milks-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/autumn-cleansing-milks-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/autumn-cleansing-milks-6-picks/autumn-cleansing-milks-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "cleansing",
+      "label": "メイクの落としやすさ",
+      "keywords": [
+        "メイク落ち",
+        "濃いメイク",
+        "洗い流し"
+      ]
+    },
+    {
+      "id": "feel",
+      "label": "洗い上がり",
+      "keywords": [
+        "しっとり",
+        "つっぱりにくさ",
+        "使用感"
+      ]
+    },
+    {
+      "id": "value",
+      "label": "続けやすさ",
+      "keywords": [
+        "容量",
+        "価格",
+        "ポンプ式"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0H1BVL95T",
+      "asin": "B0H1BVL95T",
+      "amazon_title": "make prem メイクプレム セーフミー リリーフモイスチャークレンジングミルク 100ml",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/416TiRm3p3L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "make prem メイクプレム セーフミー リリーフモイスチャ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0GK5RBK1W",
+      "asin": "B0GK5RBK1W",
+      "amazon_title": "ファンケル FANCL マイルド クレンジングオイル 120mL×1本 クレンジング メイク落とし 角栓 毛穴 黒ずみ 化粧落とし",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41qObf7auWL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "ファンケル FANCL マイルド クレンジングオイル 120mL"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0FL6GK1W8",
+      "asin": "B0FL6GK1W8",
+      "amazon_title": "【Amazon.co.jp限定】 ミノン アミノモイスト モイストミルキィ クレンジング 100g サンプル付き 【敏感肌向け】 【乾燥肌向け】 【低刺激性処方】 メイク落とし クリームタイプ",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71qUyUAklpL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "ミノン アミノモイスト モイストミルキィ クレンジング 100g"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0FGQCDNNX",
+      "asin": "B0FGQCDNNX",
+      "amazon_title": "ルアンルアン クレンジングミルク｜毛穴汚れすっきり つっぱらない高保湿処方 敏感肌・乾燥肌向け 無添加 セラミド・酵素・次世代レチノール配合 ハーブ",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41msuWrWXOL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "ルアンルアン クレンジングミルク｜毛穴汚れすっきり つっぱらない"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0DHTKL3MY",
+      "asin": "B0DHTKL3MY",
+      "amazon_title": "TAKAMI クレンジングゲル 100g メイク落とし 美容成分 保湿成分配合 毛穴 敏感肌 乾燥肌 角質ケア 透明感 無香料 クレンジングジェル",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/4143UZSvhRL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "TAKAMI クレンジングゲル 100g メイク落とし 美容成分"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0DCN186Q6",
+      "asin": "B0DCN186Q6",
+      "amazon_title": "シロメク クレンジングミルク 美容成分90%以上配合 敏感肌 メイク落とし 120mL 日本製",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61FhQXz8jvL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "シロメク クレンジングミルク 美容成分90%以上配合 敏感肌 メ"
+    }
+  ]
+}
