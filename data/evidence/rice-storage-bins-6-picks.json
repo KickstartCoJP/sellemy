@@ -1,0 +1,125 @@
+{
+  "slug": "rice-storage-bins-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/rice-storage-bins-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/rice-storage-bins-6-picks/rice-storage-bins-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "capacity",
+      "label": "容量と設置場所",
+      "keywords": [
+        "収納量",
+        "冷蔵庫対応",
+        "幅"
+      ]
+    },
+    {
+      "id": "seal",
+      "label": "保存しやすさ",
+      "keywords": [
+        "密閉構造",
+        "開閉方法",
+        "残量の見やすさ"
+      ]
+    },
+    {
+      "id": "handling",
+      "label": "日々の扱いやすさ",
+      "keywords": [
+        "計量",
+        "持ち手",
+        "洗いやすさ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "handling"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0GR5M95LF",
+      "asin": "B0GR5M95LF",
+      "amazon_title": "NatsumeBasics 真空米びつ 5kg ワンタッチ密閉 真空保存 計量カップ付き",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71-trGNtHyL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.505,
+      "matched_comparison_axes": [
+        "handling"
+      ],
+      "search_key": "NatsumeBasics 真空米びつ 5kg ワンタッチ密閉"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HBPMRKTX",
+      "asin": "B0HBPMRKTX",
+      "amazon_title": "タケヤ公式 保存容器 ライスストッカー 2kg FRESHLOK 高気密性 密閉 密封 冷蔵庫 米 TAKEYA フレッシュロック ホワイト",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51KFvRBbpZL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "タケヤ公式 保存容器 ライスストッカー 2kg FRESHLOK"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0H3HPS33M",
+      "asin": "B0H3HPS33M",
+      "amazon_title": "every U. 空蔵 KURA 自動真空 米びつ 真空60日持続 四角い 充電式 真空保存容器 米櫃 こめびつ お米 保存 (ブラック 7.5kg)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61nkaW8uj+L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "every U. 空蔵 KURA 自動真空 米びつ 真空60日持"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0GPCJK2N5",
+      "asin": "B0GPCJK2N5",
+      "amazon_title": "シービージャパン 米びつ 密閉 5kg 冷蔵保存OK 広口形状 防湿/防臭/防カビ/防虫 KOMEKOME ワンタッチ開閉 密閉米びつ5kg用 atomico",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71yRc9rNhvL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "シービージャパン 米びつ 密閉 5kg 冷蔵保存OK 広口形状"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0GPBL14Z4",
+      "asin": "B0GPBL14Z4",
+      "amazon_title": "シービージャパン 米びつ 密閉 2kg 冷蔵保存OK 広口形状 防湿/防臭/防カビ/防虫 KOMEKOME ワンタッチ開閉 密閉米びつ2kg用 atomico",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61qxqwX1ddL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "シービージャパン 米びつ 密閉 2kg 冷蔵保存OK 広口形状"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0G5G8V6SF",
+      "asin": "B0G5G8V6SF",
+      "amazon_title": "密閉米びつ 冷蔵庫収納 鮮度維持2㎏ 白 しっかり密閉 タテヨコ収納(パッキン付) (× 2)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61XXaF8X33L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "密閉米びつ 冷蔵庫収納 鮮度維持2㎏ 白 しっかり密閉 タテヨコ"
+    }
+  ]
+}
