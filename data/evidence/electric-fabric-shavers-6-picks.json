@@ -1,0 +1,136 @@
+{
+  "slug": "electric-fabric-shavers-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/electric-fabric-shavers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/electric-fabric-shavers-6-picks/electric-fabric-shavers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "fabric_protection",
+      "label": "生地への配慮",
+      "keywords": [
+        "風合いガード",
+        "刃の高さ",
+        "デリケート素材"
+      ]
+    },
+    {
+      "id": "power",
+      "label": "電源と使い勝手",
+      "keywords": [
+        "充電式",
+        "乾電池式",
+        "コード式"
+      ]
+    },
+    {
+      "id": "maintenance",
+      "label": "お手入れ",
+      "keywords": [
+        "ダストボックス",
+        "替刃",
+        "掃除のしやすさ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "fabric_protection",
+      "maintenance",
+      "power"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0FZBL866M",
+      "asin": "B0FZBL866M",
+      "amazon_title": "Sunytree 毛玉取り 電動 【大容量バッテリー&プロ仕様大型モデル】強力 けだまとり 持ちやすい LED液晶ディスプレイ 風合いガード3段階 ランキング 毛玉クリーナー USB充電式 毛玉取り器 様々な衣類に対応 掃除用ブラシ付き/替刃付き/プレゼント用/家庭用 （ブラック）",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71XyZqFiSAL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.865,
+      "matched_comparison_axes": [
+        "fabric_protection",
+        "maintenance",
+        "power"
+      ],
+      "search_key": "Sunytree 毛玉取り 電動 強力 けだまとり 持ちやすい"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HJ4TVPJ3",
+      "asin": "B0HJ4TVPJ3",
+      "amazon_title": "Global Recycled Standard",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71-F+VBNq5L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "Global Recycled Standard"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HHMJHD28",
+      "asin": "B0HHMJHD28",
+      "amazon_title": "Global Recycled Standard",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/713u-WZpFEL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "Global Recycled Standard"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0HF4G9MY3",
+      "asin": "B0HF4G9MY3",
+      "amazon_title": "電動毛玉取り器 USB充電式 コンパクト6枚刃2 60分連稼働 軽量 生地保護 毛玉クリーナー 高速 2枚替刃付き 毛玉カッター ベージュ",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/614ifavOCcL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "maintenance",
+        "power"
+      ],
+      "search_key": "電動毛玉取り器 USB充電式 コンパクト6枚刃2 60分連稼働"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0HDRQ1SHJ",
+      "asin": "B0HDRQ1SHJ",
+      "amazon_title": "【2026新登場 強力6枚刃 Type-C充電式 毛玉取り器】電動 毛玉クリーナー けだまとり 3段階調整 大容量コードレス（ホワイト）",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61c6BbkSq7L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "power"
+      ],
+      "search_key": "電動 毛玉クリーナー けだまとり 3段階調整 大容量コードレス（"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0GVYK2QKF",
+      "asin": "B0GVYK2QKF",
+      "amazon_title": "【オンライン限定】 ティファール 毛玉取り器 電動 Type-C 「 充電式 毛玉クリーナー 」 3枚刃 電動 ブルー JB8002J0",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61pz0V8wZkL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "power"
+      ],
+      "search_key": "ティファール 毛玉取り器 電動 Type-C 「 充電式 毛玉ク"
+    }
+  ]
+}
