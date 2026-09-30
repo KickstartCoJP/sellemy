@@ -1,0 +1,134 @@
+{
+  "slug": "whitening-toothpaste-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/whitening-toothpaste-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/whitening-toothpaste-6-picks/whitening-toothpaste-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "whitening_power",
+      "label": "美白成分・研磨力",
+      "keywords": [
+        "ポリリン酸",
+        "ハイドロキシアパタイト",
+        "研磨剤",
+        "着色汚れ"
+      ]
+    },
+    {
+      "id": "usage_feel",
+      "label": "使用感・低刺激性",
+      "keywords": [
+        "低刺激",
+        "知覚過敏",
+        "発泡剤フリー",
+        "ジェルタイプ"
+      ]
+    },
+    {
+      "id": "price_value",
+      "label": "価格・容量",
+      "keywords": [
+        "コスパ",
+        "大容量",
+        "詰め替え",
+        "価格帯"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "usage_feel",
+      "whitening_power"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0DKTGJ5QC",
+      "asin": "B0DKTGJ5QC",
+      "amazon_title": "シュミテクト トゥルーホワイト 【医薬部外品】ホワイトニング 研磨剤無配合 ハミガキ 知覚過敏ケア 高濃度フッ素配合(1450ppm)歯磨き粉2本",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41foCfLJyQL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.76,
+      "matched_comparison_axes": [
+        "usage_feel",
+        "whitening_power"
+      ],
+      "search_key": "シュミテクト トゥルーホワイト ホワイトニング 研磨剤無配合 ハ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0H757QD2W",
+      "asin": "B0H757QD2W",
+      "amazon_title": "【医薬部外品】 歯磨き粉 薬用 ホワイトニング 着色除去 黄ばみ 口臭 むし歯予防 歯周炎 歯肉炎 歯石 やに フッ素 低刺激 eLifeプレミアム歯磨き 60g 1か月分",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61zGw6hnskL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [
+        "usage_feel"
+      ],
+      "search_key": "歯磨き粉 薬用 ホワイトニング 着色除去 黄ばみ 口臭 むし歯予"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0G579NW7H",
+      "asin": "B0G579NW7H",
+      "amazon_title": "ホワイトニング 歯磨き粉 研磨剤フリー 薬用ホワイトニングハミガキ ダズルミント 100g 医薬部外品 ホワイトニングケア ステインケア 口臭予防 歯周病予防 ＊",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71m4xn4pPiL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [
+        "whitening_power"
+      ],
+      "search_key": "ホワイトニング 歯磨き粉 研磨剤フリー 薬用ホワイトニングハミガ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0FY6CJ6KL",
+      "asin": "B0FY6CJ6KL",
+      "amazon_title": "【 歯科医師 × 国内デンタルケアブランド 】 V CRYSTAL（Vクリスタル） 虫歯 口臭ケア パープル歯磨き粉 フレッシュミント 日本製",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81nOe4NoBDL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [],
+      "search_key": "V CRYSTAL（Vクリスタル） 虫歯 口臭ケア パープル歯磨"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0FXX44BML",
+      "asin": "B0FXX44BML",
+      "amazon_title": "【歯科医師 × 国内デンタルケアブランド】 WHITE SHINE PACK ホワイトニング 虫歯 口臭ケア ホワイトニングシート 28枚 (1個)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81RwfV5uyRL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [],
+      "search_key": "WHITE SHINE PACK ホワイトニング 虫歯 口臭ケア"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0FMXJ1XC3",
+      "asin": "B0FMXJ1XC3",
+      "amazon_title": "【公式】 医薬部外品 薬用 なたまめ柿渋歯磨き 120g ホワイトニング対策 口臭対策 歯周炎予防 日本製 京都やまちや",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71R-aI3S-LL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [],
+      "search_key": "医薬部外品 薬用 なたまめ柿渋歯磨き 120g ホワイトニング対"
+    }
+  ]
+}
