@@ -1,0 +1,128 @@
+{
+  "slug": "oseibo-gift-sets-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/oseibo-gift-sets-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/oseibo-gift-sets-6-picks/oseibo-gift-sets-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "content_variety",
+      "label": "内容の充実度",
+      "keywords": [
+        "詰め合わせ",
+        "食品セット",
+        "品目数"
+      ]
+    },
+    {
+      "id": "price_range",
+      "label": "価格帯",
+      "keywords": [
+        "3000円台",
+        "5000円台",
+        "高級ギフト"
+      ]
+    },
+    {
+      "id": "packaging",
+      "label": "パッケージ・贈答感",
+      "keywords": [
+        "のし対応",
+        "化粧箱",
+        "手提げ袋付き"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "content_variety",
+      "packaging"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0H3HSBGH3",
+      "asin": "B0H3HSBGH3",
+      "amazon_title": "【ギフト お歳暮】 STELLA 佐賀県産 さがびより 彗星 5kg 令和7年産 減農薬 有機肥料 16年連続 特Ａ級 一等米 高級米 米 精米 化粧箱付き 御中元 法人ギフト 贈答",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71viC+C0g6L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.505,
+      "matched_comparison_axes": [
+        "packaging"
+      ],
+      "search_key": "STELLA 佐賀県産 さがびより 彗星 5kg 令和7年産 減"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B09T2PMR9V",
+      "asin": "B09T2PMR9V",
+      "amazon_title": "天皇陛下明治神宮献上銘菓の和菓子店「さわた」洋菓子 マドレーヌ 15個 詰め合わせ セット 創業112年 自社製造 個包装 ギフト お歳暮 お中元 母の日 敬老の日 内祝い 贈答品 お歳暮 返礼品 ギフト お中元 お盆 お供え物 母の日の贈り物に ふんわりとした食感 個包装",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71mR1oxSLbL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.505,
+      "matched_comparison_axes": [
+        "content_variety"
+      ],
+      "search_key": "天皇陛下明治神宮献上銘菓の和菓子店「さわた」洋菓子 マドレーヌ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GV267434",
+      "asin": "B0GV267434",
+      "amazon_title": "【お歳暮 クラフトビール ギフト 飲み比べ】馨和 KAGUA Blanc Rouge Saison 飲み比べ 330ml 3本",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81ddjDtpKHL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "馨和 KAGUA Blanc Rouge Saison 飲み比べ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0DWZP773F",
+      "asin": "B0DWZP773F",
+      "amazon_title": "imoya 砂糖不使用 甘い贈り物 焼き芋 鹿児島産 熊本産 福岡産 紅はるか 冷凍焼き芋 九州産 やきいも さつまいも 国産 冷やし焼き芋 九州 お土産 誕生日プレゼント 母 妊婦 母の日 食べ物 誕生日 和菓子 ギフト お歳暮 お返し 仕送り 1000時間以上熟成 個包装 小さめサイズ9本1.2kg以上 カード「ささやかな気持ちです」",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71fw2ginXlL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "imoya 砂糖不使用 甘い贈り物 焼き芋 鹿児島産 熊本産 福"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0DT6M9FD2",
+      "asin": "B0DT6M9FD2",
+      "amazon_title": "東京HIROYA 高級 本格だし茶漬け にっぽんの膳 Naruhodo Chazuke 8種（金目鯛／鰻／鮭／鯛／炙り柚子胡椒明太子／蟹／厚切り牛タン／炙り河豚） 各1食 お茶漬け お歳暮 ギフト 父の日 お中元 プレゼント お茶漬けの素 セット だし茶漬け 誕生日 内祝い お返し gift",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71+GycaICHL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "東京HIROYA 高級 本格だし茶漬け にっぽんの膳 Naruh"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0DSSQGR3X",
+      "asin": "B0DSSQGR3X",
+      "amazon_title": "【ギフト 贈答 手土産 中元 歳暮】カゴメ 野菜生活100 国産プレミアムギフト YP-30S 1箱(125ml紙容器×14本)【国産素材】",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/810hu4TfRnL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "カゴメ 野菜生活100 国産プレミアムギフト YP-30S 1箱"
+    }
+  ]
+}
