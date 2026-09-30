@@ -1,0 +1,133 @@
+{
+  "slug": "winter-scarves-mufflers-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/winter-scarves-mufflers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/winter-scarves-mufflers-6-picks/winter-scarves-mufflers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "material_warmth",
+      "label": "素材・あたたかさ",
+      "keywords": [
+        "カシミヤ",
+        "ウール",
+        "アクリル"
+      ]
+    },
+    {
+      "id": "size_style",
+      "label": "サイズ・巻き方",
+      "keywords": [
+        "ロング",
+        "大判",
+        "スヌード"
+      ]
+    },
+    {
+      "id": "care_ease",
+      "label": "お手入れのしやすさ",
+      "keywords": [
+        "洗濯機可",
+        "毛玉になりにくい",
+        "静電気防止"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "material_warmth",
+      "size_style"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0DFNRWFLZ",
+      "asin": "B0DFNRWFLZ",
+      "amazon_title": "[LA-Hazel] マフラー レディース 人気 カシミヤタッチ ストール 大判 冬 マフラー クリスマスプレゼント 両面 使える ギフトボックス付き 肌触り良い ストール 大判 秋冬 厚手 暖かい 可愛い マフラー",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61yjKDUXIuL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.685,
+      "matched_comparison_axes": [
+        "material_warmth",
+        "size_style"
+      ],
+      "search_key": "マフラー レディース 人気 カシミヤタッチ ストール 大判 冬"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0H6C42SFX",
+      "asin": "B0H6C42SFX",
+      "amazon_title": "[BRMM MIA] マフラー ストール 春夏用 柔らかボヘミアン風 綿麻 冷房・UV対策 薄手 ギフト オールシーズン",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/91JN8PultiL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "マフラー ストール 春夏用 柔らかボヘミアン風 綿麻 冷房・UV"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0H3ZKRCVH",
+      "asin": "B0H3ZKRCVH",
+      "amazon_title": "[カジュアルボックス] ORIM 日本製 コットン100% 洗える たおるマフラー [ フリーサイズ / 10色あり ] 今治タオル UVカット ストール",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/613+cEMBUCL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "ORIM 日本製 コットン100% 洗える たおるマフラー 今治"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0FZRND6B1",
+      "asin": "B0FZRND6B1",
+      "amazon_title": "[cumaco] カシミヤ 100% マフラー ストール レディース メンズ ユニセックス180cm×30cm 【23色】 C-C0011B",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81jh+YxaU5L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "material_warmth"
+      ],
+      "search_key": "カシミヤ 100% マフラー ストール レディース メンズ ユニ"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0FNMGQLG6",
+      "asin": "B0FNMGQLG6",
+      "amazon_title": "男女兼用 大判 マフラー ストール チェック 無地 スクール 学生 中学生 高校生 大人 プレゼント ギフト クリスマス 定番 秋 冬 レディース メンズ",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81H1M20XrUL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "size_style"
+      ],
+      "search_key": "男女兼用 大判 マフラー ストール チェック 無地 スクール 学"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0DJNWFSZS",
+      "asin": "B0DJNWFSZS",
+      "amazon_title": "[Allanve] マフラー レディース 大判ストール 【高級な雰囲気・柔肌ふんわり・暖かい防風】 レディースマフラー ブランケット ひざ掛け",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/710BjQVhWVL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "size_style"
+      ],
+      "search_key": "マフラー レディース 大判ストール レディースマフラー ブランケ"
+    }
+  ]
+}

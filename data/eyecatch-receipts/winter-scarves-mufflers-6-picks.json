@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-winter-scarves-mufflers-6-picks-45daa1b92d32504d",
+  "request_sha256": "45daa1b92d32504d1477f0cd4ac64c6c4929eedcfc92e50fe85e9bed5be1e948",
+  "image_sha256": "045660397f74d8cb958eea03a9718296df0b9e3f9a27b5632a60050709a7482b",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-09-30T05:02:05.091562+00:00"
+}
