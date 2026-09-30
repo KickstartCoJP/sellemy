@@ -1,0 +1,153 @@
+{
+  "slug": "tablets-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/tablets-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/tablets-6-picks/tablets-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "screen",
+      "label": "画面サイズ・解像度",
+      "keywords": [
+        "インチ",
+        "解像度",
+        "有機EL"
+      ]
+    },
+    {
+      "id": "os_apps",
+      "label": "OS・対応アプリ",
+      "keywords": [
+        "Android",
+        "iPadOS",
+        "対応アプリ"
+      ]
+    },
+    {
+      "id": "battery",
+      "label": "バッテリー持続時間",
+      "keywords": [
+        "連続再生時間",
+        "急速充電"
+      ]
+    },
+    {
+      "id": "pen_input",
+      "label": "ペン入力対応",
+      "keywords": [
+        "スタイラスペン",
+        "手書き",
+        "筆圧感知"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "battery",
+      "os_apps",
+      "pen_input",
+      "screen"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0H11ZSJN1",
+      "asin": "B0H11ZSJN1",
+      "amazon_title": "【2026新登場 Android16 タブレット 13インチFHD+大画面、2.4K 120Hz、wifiモデル】P13 アンドロイドタブレット、48GB+128GB+2TB拡張対応、12000mAh18W、T7280 8コアCPU、Gemini AI、Widevine L1、顔認識、GPS、OTG、2.4G/5G WiFi、キーボード、スタイラスペン付き、仕事 学習 動画視聴に適, 黒",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71OA7yfLRpL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.865,
+      "matched_comparison_axes": [
+        "os_apps",
+        "pen_input",
+        "screen"
+      ],
+      "search_key": "【2026新登場 Android16 タブレット 13インチFH"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0GW8J3ZTB",
+      "asin": "B0GW8J3ZTB",
+      "amazon_title": "【2026新登場 Android16 タブレットセット】ZPad2 タブレット 13インチ SIMフリー Unisoc T7300 AnTuTuスコア65万点 120Hz 1920x1200 FHD大画面 28GB RAM+256GB ROM 11000mAh PD18W急速充電 4G LTE+WiFi+Widevine L1+顔認識+Gemini AI+GPS対応 光センサー搭載 10点付属品",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71TfplG8KzL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.505,
+      "matched_comparison_axes": [
+        "battery",
+        "os_apps",
+        "screen"
+      ],
+      "search_key": "ZPad2 タブレット 13インチ SIMフリー Unisoc"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HH8V4X57",
+      "asin": "B0HH8V4X57",
+      "amazon_title": "【2026新登場 Android16 タブレット】Udoric タブレット PC 10インチ アンドロイド16 1280*800解像度 20GB+128GB+1TB拡張 8コCPU 8000mAh+Type-C充電+5GWiFi+BT5.2+Widevine L1対応 GPS+GMS認証 キーボード+マウス+保護ケース+タッチペン+フィルム付き 無線投影 児童守護 仕事・学習・動画視聴に最適",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71BGQriBJjL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "os_apps",
+        "screen"
+      ],
+      "search_key": "Udoric タブレット PC 10インチ アンドロイド16 1"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0HGXW5G6P",
+      "asin": "B0HGXW5G6P",
+      "amazon_title": "2026/9/18 android タブレット",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/515X5GaLg0L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "os_apps"
+      ],
+      "search_key": "2026/9/18 android タブレット"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0HGFL9DQ6",
+      "asin": "B0HGFL9DQ6",
+      "amazon_title": "【タブレット 10インチ Android 16 】 RebotAI D101PRO アンドロイド タブレット端末 Gemini AI搭載 Wi-Fi 6 BT5.3 24GB+64GB（1TB拡張対応） IPS 薄型&軽量 tablet 省電力設計 WIFIモデル GMS認証 6000mAh大容量バッテリー 顔認識 無線投影 初心者向け 電子書籍/動画/安全設計/日本語説明書/技適認証済",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61mvZgwNCoL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "os_apps",
+        "screen"
+      ],
+      "search_key": "RebotAI D101PRO アンドロイド タブレット端末 G"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0HB3R6MBS",
+      "asin": "B0HB3R6MBS",
+      "amazon_title": "T60 Android16 タブレット 12インチ 48GB+256GB+2TB拡張 2400*1600 QHD大画面 4G LTE SIMフリー 10,000mAh大容量バッテリー GeminiAI搭載 Tablet Widevine L1 Netflix対応 キーボード+マウス+保護ケース+保護フィルム+タッチペン 仕事・ゲーム・動画視聴に最適",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81oet4a72LL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "os_apps",
+        "screen"
+      ],
+      "search_key": "T60 Android16 タブレット 12インチ 48GB+2"
+    }
+  ]
+}

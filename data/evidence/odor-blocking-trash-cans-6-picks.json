@@ -1,0 +1,133 @@
+{
+  "slug": "odor-blocking-trash-cans-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/odor-blocking-trash-cans-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/odor-blocking-trash-cans-6-picks/odor-blocking-trash-cans-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "odor_control",
+      "label": "防臭構造",
+      "keywords": [
+        "密閉フタ",
+        "脱臭フィルター",
+        "二重パッキン"
+      ]
+    },
+    {
+      "id": "capacity",
+      "label": "容量・設置サイズ",
+      "keywords": [
+        "おむつ用",
+        "キッチン用",
+        "大容量"
+      ]
+    },
+    {
+      "id": "maintenance",
+      "label": "お手入れのしやすさ",
+      "keywords": [
+        "袋交換の簡単さ",
+        "丸洗い",
+        "ペダル式"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "capacity",
+      "maintenance"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0GL7VMLD1",
+      "asin": "B0GL7VMLD1",
+      "amazon_title": "ゴミ箱 ふた付き ペダル式 大型ダストボックス 防臭密閉設計 20L 30L 50L 80L 100L対応 静音足踏み 大容量 オムツ対応 分別可能 指紋防止加工 丸洗いOK キッチン 屋内屋外 ホテル 業務用 厨房用 おしゃれ衛生 (20L,C)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/510ZQQ95WLL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.76,
+      "matched_comparison_axes": [
+        "capacity",
+        "maintenance"
+      ],
+      "search_key": "ゴミ箱 ふた付き ペダル式 大型ダストボックス 防臭密閉設計 2"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HC32L88S",
+      "asin": "B0HC32L88S",
+      "amazon_title": "ゴミ箱 自動開閉 センサー付き 45L 蓋付き 横スライド式 省スペース 感知距離6～30cm タッチ操作対応 手動常時開放 3層密閉 防臭",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51vyYj0ic6L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [],
+      "search_key": "ゴミ箱 自動開閉 センサー付き 45L 蓋付き 横スライド式 省"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GVHHPLZ7",
+      "asin": "B0GVHHPLZ7",
+      "amazon_title": "アスベル 密閉ゴミ箱 30L 防臭 ふた パッキン付き ペダル式 日本製 スリム おしゃれ キッチンに 生ゴミ オムツ 衛生的 ダストボックス 白 ECエバンMP",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41LLDk5wI9L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [
+        "maintenance"
+      ],
+      "search_key": "アスベル 密閉ゴミ箱 30L 防臭 ふた パッキン付き ペダル式"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0GV8TGVFQ",
+      "asin": "B0GV8TGVFQ",
+      "amazon_title": "ペダル式ゴミ箱 ステンレス製 ふた付き 多容量展開｜静音開閉密閉防臭 指紋防止加工 省スペース設計 キッチン寝室オフィス家庭用に最適(15L)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61EdyBneKdL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [
+        "maintenance"
+      ],
+      "search_key": "ペダル式ゴミ箱 ステンレス製 ふた付き 多容量展開｜静音開閉密閉"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0GRGJHMHT",
+      "asin": "B0GRGJHMHT",
+      "amazon_title": "[Caividom]おむつゴミ箱 ふた付き 密閉防臭 8L/13L プッシュ式ワンタッチ開閉 高耐久 PP 素材 スリム 省スペース 転倒防止 袋隠蔽構造 ペット対策 小型 汚物入れ トイレ 洗面所 バスルーム 寝室 オフィス対応",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51HlsQXCeyL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [],
+      "search_key": "おむつゴミ箱 ふた付き 密閉防臭 8L/13L プッシュ式ワンタ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0GNX8Y51V",
+      "asin": "B0GNX8Y51V",
+      "amazon_title": "【冷凍ごみ箱】BELTONA 大容量 44L クリスタルホワイト 冷凍ゴミ箱 ＼日経新聞で紹介されました！／冷やすゴミ箱 スマート 消臭 防虫 臭わない ペット 犬 猫 フン 生ごみ処理機 ごみばこ 蓋付き リビング オシャレ スリム おむつ ペットシーツ 【平日14時までのご注文で即日出荷】",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/711Q+F2FfYL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [
+        "capacity"
+      ],
+      "search_key": "BELTONA 大容量 44L クリスタルホワイト 冷凍ゴミ箱"
+    }
+  ]
+}

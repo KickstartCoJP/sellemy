@@ -1,0 +1,126 @@
+{
+  "slug": "leg-warmers-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/leg-warmers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/leg-warmers-6-picks/leg-warmers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "material_warmth",
+      "label": "素材・保温性",
+      "keywords": [
+        "裏起毛",
+        "ウール",
+        "発熱素材"
+      ]
+    },
+    {
+      "id": "fit",
+      "label": "フィット感・締め付け",
+      "keywords": [
+        "ゆったり",
+        "伸縮性"
+      ]
+    },
+    {
+      "id": "design",
+      "label": "デザイン・使用シーン",
+      "keywords": [
+        "部屋着用",
+        "オフィス用",
+        "冷えとり"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "fit",
+      "material_warmth"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0DD3KKNZ9",
+      "asin": "B0DD3KKNZ9",
+      "amazon_title": "[ホカロン] レッグウォーマー レディース あったか 日本製 ウール混 ゆったり ゴム糸なし ロング フリーサイズ 1双",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/613ZgGyuvXL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.71,
+      "matched_comparison_axes": [
+        "fit",
+        "material_warmth"
+      ],
+      "search_key": "レッグウォーマー レディース あったか 日本製 ウール混 ゆった"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HDSJ1342",
+      "asin": "B0HDSJ1342",
+      "amazon_title": "レッグウォーマーHG1924レディース",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41yX6hTsmSL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "レッグウォーマーHG1924レディース"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GWTXV5H3",
+      "asin": "B0GWTXV5H3",
+      "amazon_title": "レッグウォーマー 夏用 【Poco'ce掲載・冷えから守る・軽やか快適・通気性】 足首ウォーマー レッグウォーマー レッグ ウォーマー 夏 足",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81ORrcaS49L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "レッグウォーマー 夏用 足首ウォーマー レッグウォーマー レッグ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0GWTNKTDV",
+      "asin": "B0GWTNKTDV",
+      "amazon_title": "レッグウォーマー 夏用 【Poco'ce掲載・冷えから守る・軽やか快適・通気性】 足首ウォーマー レッグウォーマー レッグ ウォーマー 夏 足",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81GhjZWwgWL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "レッグウォーマー 夏用 足首ウォーマー レッグウォーマー レッグ"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0G4956S4L",
+      "asin": "B0G4956S4L",
+      "amazon_title": "[LI NOR] レッグウォーマー 足首ウォーマー レディース 寝る時用 暖かい 薄手 足首 あたため 睡眠 冷え対策 温活",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71IjndW39+L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "レッグウォーマー 足首ウォーマー レディース 寝る時用 暖かい"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0FVCX79QY",
+      "asin": "B0FVCX79QY",
+      "amazon_title": "はくらく レッグウォーマー 薄手 あったか インナー 日本製 保温 冷え対策 メンズ レディース 933-955",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51FpGQ29WLL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "はくらく レッグウォーマー 薄手 あったか インナー 日本製 保"
+    }
+  ]
+}
