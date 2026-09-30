@@ -1,0 +1,136 @@
+{
+  "slug": "insulated-soup-jars-for-lunch",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/insulated-soup-jars-for-lunch.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/insulated-soup-jars-for-lunch/insulated-soup-jars-for-lunch.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "capacity",
+      "label": "容量と持ち運び",
+      "keywords": [
+        "200ml",
+        "300ml",
+        "500ml",
+        "重量"
+      ]
+    },
+    {
+      "id": "insulation",
+      "label": "保温性能",
+      "keywords": [
+        "保温効力",
+        "真空断熱",
+        "予熱"
+      ]
+    },
+    {
+      "id": "cleaning",
+      "label": "洗いやすさ",
+      "keywords": [
+        "食洗機対応",
+        "パーツ数",
+        "パッキン"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "capacity",
+      "cleaning",
+      "insulation"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0DZN7Q9S2",
+      "asin": "B0DZN7Q9S2",
+      "amazon_title": "【セット品】【食洗機対応モデル】 サーモス 真空断熱スープジャー 300ml ブラック 全パーツ食洗機OK 保温保冷 お手入れ簡単 口当たりがやさしい丸口設計 スタンダードモデル JED-300 BKサーモス スープジャーポーチ ブラック RES-003 BK",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51zm8jE2K-L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.865,
+      "matched_comparison_axes": [
+        "capacity",
+        "cleaning",
+        "insulation"
+      ],
+      "search_key": "サーモス 真空断熱スープジャー 300ml ブラック 全パーツ食"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HC5CB4M2",
+      "asin": "B0HC5CB4M2",
+      "amazon_title": "【食洗機対応モデル】 サーモス 真空断熱スープランチセット 800ml ブラック スープジャー・容器セット JEE-801 BK",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41pa48ym4uL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "cleaning",
+        "insulation"
+      ],
+      "search_key": "サーモス 真空断熱スープランチセット 800ml ブラック スー"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HB4G33SK",
+      "asin": "B0HB4G33SK",
+      "amazon_title": "TYESO スープジャー 220ml 真空断熱 手のひらサイズ 食洗機対応 お弁当用",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61clDz0FWvL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "cleaning",
+        "insulation"
+      ],
+      "search_key": "TYESO スープジャー 220ml 真空断熱 手のひらサイズ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0FKGNHSYD",
+      "asin": "B0FKGNHSYD",
+      "amazon_title": "エコマーク",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41JkwCPOX1L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "エコマーク"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0FKGFFYJ6",
+      "asin": "B0FKGFFYJ6",
+      "amazon_title": "エコマーク",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51ZFST8epXL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "エコマーク"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0FKGBZZ56",
+      "asin": "B0FKGBZZ56",
+      "amazon_title": "エコマーク",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51FQsCdVWZL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "エコマーク"
+    }
+  ]
+}
