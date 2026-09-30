@@ -1,0 +1,148 @@
+{
+  "slug": "home-water-servers-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/home-water-servers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/home-water-servers-6-picks/home-water-servers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "water_source",
+      "label": "水の種類・補充方式",
+      "keywords": [
+        "天然水",
+        "RO水",
+        "ボトル交換",
+        "ワンウェイ"
+      ]
+    },
+    {
+      "id": "temperature",
+      "label": "温水・冷水機能",
+      "keywords": [
+        "温水",
+        "冷水",
+        "エコモード",
+        "省エネ"
+      ]
+    },
+    {
+      "id": "installation",
+      "label": "設置性・サイズ",
+      "keywords": [
+        "卓上型",
+        "床置き型",
+        "省スペース"
+      ]
+    },
+    {
+      "id": "cost",
+      "label": "ランニングコスト",
+      "keywords": [
+        "月額料金",
+        "水代",
+        "レンタル料"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "installation",
+      "temperature",
+      "water_source"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0HGND8RK7",
+      "asin": "B0HGND8RK7",
+      "amazon_title": "ウォーターサーバー 底面給水式 オフィス向け 床置き型 ３口独立給水 冷温水対応 ディスペンサー(お湯 + 常温水 + 冷水,グレー)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51cDPVC2n9L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.76,
+      "matched_comparison_axes": [
+        "installation",
+        "temperature"
+      ],
+      "search_key": "ウォーターサーバー 底面給水式 オフィス向け 床置き型 ３口独立"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0CS2JQ3DP",
+      "asin": "B0CS2JQ3DP",
+      "amazon_title": "【ウォーターサーバー用】FUJI BLUE 富士山の天然水 2本セット ミネラルウォーター 追加ボトル 常温水サーバー 減容ボトル (7L角ボトル) バナジウム・シリカ含有 世界優秀味覚賞2025最高金賞",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71mZqcTqduL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.58,
+      "matched_comparison_axes": [
+        "temperature",
+        "water_source"
+      ],
+      "search_key": "FUJI BLUE 富士山の天然水 2本セット ミネラルウォータ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HHLWJMYB",
+      "asin": "B0HHLWJMYB",
+      "amazon_title": "浄水型ウォーターサーバー 卓上 水道水対応 冷温切替 電気式 温度制御 高速加熱 キッチン オフィス 家庭用 (ホワイト,氷、温かい、熱い)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/4147ycfKjbL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [],
+      "search_key": "浄水型ウォーターサーバー 卓上 水道水対応 冷温切替 電気式 温"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0HGF4B92L",
+      "asin": "B0HGF4B92L",
+      "amazon_title": "ウォーターサーバー 卓上、浄水型ウォーターサーバー 3.5L 6段階温度調整 3秒即湯チャイルドロック安全設計タッチスクリーン操作定量給水機能8段階に調節可能です コンパクトで省スペース キッチンオフィス寝室など様々な場所で使用可能 (ホワイト,単体ユニット＋ウォーターポンプ配管)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/617K6gT6bZL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [
+        "installation"
+      ],
+      "search_key": "ウォーターサーバー 卓上、浄水型ウォーターサーバー 3.5L 6"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0HGDNSB9F",
+      "asin": "B0HGDNSB9F",
+      "amazon_title": "NYHGOXM ウォーターサーバー 下置きボトル式 冷水・常温水・温水対応 3口独立出水 同時給水可能 カッププッシュ 家庭用 オフィス用 据え置き型 (温水＋常温水＋冷水,ブラック)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51BjHndG-NL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [
+        "temperature"
+      ],
+      "search_key": "NYHGOXM ウォーターサーバー 下置きボトル式 冷水・常温水"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0HD5VB6LH",
+      "asin": "B0HD5VB6LH",
+      "amazon_title": "卓上ウォーターサーバー 浄水型 定温 即熱/冷水 5 段温度調節 スマートカラー画面 定量吐出 5Lタンク 浄水対応 (ホース・スタンド・フィルター,グレー)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51G2PCqjKmL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [
+        "temperature"
+      ],
+      "search_key": "卓上ウォーターサーバー 浄水型 定温 即熱/冷水 5 段温度調節"
+    }
+  ]
+}
