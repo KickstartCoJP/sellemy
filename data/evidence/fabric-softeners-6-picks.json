@@ -1,0 +1,143 @@
+{
+  "slug": "fabric-softeners-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/fabric-softeners-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/fabric-softeners-6-picks/fabric-softeners-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "scent",
+      "label": "香り",
+      "keywords": [
+        "フローラル",
+        "微香",
+        "無香料"
+      ]
+    },
+    {
+      "id": "softness_effect",
+      "label": "柔軟効果",
+      "keywords": [
+        "ふんわり",
+        "静電気防止"
+      ]
+    },
+    {
+      "id": "deodorant",
+      "label": "防臭・抗菌",
+      "keywords": [
+        "防臭",
+        "抗菌"
+      ]
+    },
+    {
+      "id": "price_per_use",
+      "label": "コスパ",
+      "keywords": [
+        "詰め替え",
+        "価格"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "deodorant",
+      "price_per_use",
+      "scent"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0H33C9RKV",
+      "asin": "B0H33C9RKV",
+      "amazon_title": "レノア 超消臭 抗菌SPORTS 柔軟剤 フレッシュシトラスの香り 詰め替え 1710mL【Amazon.co.jp限定】",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81GLVKBqxvL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.71,
+      "matched_comparison_axes": [
+        "deodorant",
+        "price_per_use"
+      ],
+      "search_key": "レノア 超消臭 抗菌SPORTS 柔軟剤 フレッシュシトラスの香"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0CDK7C1K5",
+      "asin": "B0CDK7C1K5",
+      "amazon_title": "ハミング素肌おもい 柔軟剤 ふわもふ贅沢な肌ざわり・ハミングNo.1のやわらかさ 無香料 本体 530ml",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71QXdYpoPfL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.53,
+      "matched_comparison_axes": [
+        "scent"
+      ],
+      "search_key": "ハミング素肌おもい 柔軟剤 ふわもふ贅沢な肌ざわり・ハミングNo"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GLXX5T7M",
+      "asin": "B0GLXX5T7M",
+      "amazon_title": "レノア 超消臭 抗菌 柔軟剤 部屋干し おひさまの香り 詰め替え 1335mL",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81Hme5IALtL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "deodorant",
+        "price_per_use"
+      ],
+      "search_key": "レノア 超消臭 抗菌 柔軟剤 部屋干し おひさまの香り 詰め替え"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0GJRYLGNW",
+      "asin": "B0GJRYLGNW",
+      "amazon_title": "【公式】TAILOR テイラー 柔軟剤 詰め替え用 大容量3倍EVERAFTER エバーアフター 1275ml",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61Dm6KsA8iL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "price_per_use"
+      ],
+      "search_key": "TAILOR テイラー 柔軟剤 詰め替え用 大容量3倍EVERA"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0FP16YJQC",
+      "asin": "B0FP16YJQC",
+      "amazon_title": "ラボン(Lavons) トゥザムーン to the Moon 柔軟剤 グリーンヘブンの香り 500ml",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61hTAL4J7wL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "ラボン(Lavons) トゥザムーン to the Moon 柔"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0FJ1JXG5X",
+      "asin": "B0FJ1JXG5X",
+      "amazon_title": "【公式】TAILOR テイラー 柔軟剤 詰め替え用 大容量3倍 BLUE DESERT ブルーデザート 1275ml",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71Mb-NVwY6L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "price_per_use"
+      ],
+      "search_key": "TAILOR テイラー 柔軟剤 詰め替え用 大容量3倍 BLUE"
+    }
+  ]
+}
