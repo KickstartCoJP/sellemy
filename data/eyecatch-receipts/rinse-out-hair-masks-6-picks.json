@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-rinse-out-hair-masks-6-picks-3c839cd0527879c5",
+  "request_sha256": "3c839cd0527879c53898fc60b0b86c104a8abb3a918f7b5fad0ad8a8cbac911d",
+  "image_sha256": "b78ddedcad3cca8294cdbb10b19b255f6ce3e7f0d2080f3f6b7582b5f50c9ed1",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-09-30T03:21:04.132617+00:00"
+}

@@ -1,0 +1,125 @@
+{
+  "slug": "rinse-out-hair-masks-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/rinse-out-hair-masks-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/rinse-out-hair-masks-6-picks/rinse-out-hair-masks-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "finish",
+      "label": "仕上がり",
+      "keywords": [
+        "しっとり",
+        "さらさら",
+        "まとまり"
+      ]
+    },
+    {
+      "id": "formula",
+      "label": "処方",
+      "keywords": [
+        "保湿成分",
+        "補修成分",
+        "香り"
+      ]
+    },
+    {
+      "id": "usability",
+      "label": "使いやすさ",
+      "keywords": [
+        "放置時間",
+        "容量",
+        "容器"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "formula"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0FH6PG175",
+      "asin": "B0FH6PG175",
+      "amazon_title": "LUCIDO-L(ルシードエル)アールイーリペアヘアマスク [再整美容][洗い流すトリートメント]キンモクセイ×グレープフルーツの香り200g",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61qE4OI8x+L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.505,
+      "matched_comparison_axes": [
+        "formula"
+      ],
+      "search_key": "LUCIDO-L(ルシードエル)アールイーリペアヘアマスク キン"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HCN7LWHK",
+      "asin": "B0HCN7LWHK",
+      "amazon_title": "【公式】Karseell ヘアマスク ダメージ補修 ヘアパック 洗い流すトリートメント 深層ヘアトリートメント すべての髪質に対応 500ml",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51R-VS4++KL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "Karseell ヘアマスク ダメージ補修 ヘアパック 洗い流す"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GK6ZTJRN",
+      "asin": "B0GK6ZTJRN",
+      "amazon_title": "renina ヘアマスク トリートメント 洗い流す ヘアパック ダメージ補修【熱ダメージを補修して、毛先までまとまるサラ艶髪へ】200g",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51ohwzBqzYL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "renina ヘアマスク トリートメント 洗い流す ヘアパック"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0GGHB25JK",
+      "asin": "B0GGHB25JK",
+      "amazon_title": "ikue イクエ 幾重 ディープケアマスク 洗い流すトリートメント",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41q05Fp4kgL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "ikue イクエ 幾重 ディープケアマスク 洗い流すトリートメン"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0G6YX7JH1",
+      "asin": "B0G6YX7JH1",
+      "amazon_title": "DRH+ ヘアマスク ヘマチン トリーメント 洗い流す インバスケア 180g ギャランティカード付",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51Yf83NXPhL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "DRH+ ヘアマスク ヘマチン トリーメント 洗い流す インバス"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0FK8Y6PL6",
+      "asin": "B0FK8Y6PL6",
+      "amazon_title": "パンテーン EXP 最高濃度パンテノール配合 ダメージ集中補修 カプセル美容液ヘアマスク 170g",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71bybjC-iyL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "パンテーン EXP 最高濃度パンテノール配合 ダメージ集中補修"
+    }
+  ]
+}
