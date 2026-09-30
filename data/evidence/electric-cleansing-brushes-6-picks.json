@@ -1,0 +1,141 @@
+{
+  "slug": "electric-cleansing-brushes-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/electric-cleansing-brushes-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/electric-cleansing-brushes-6-picks/electric-cleansing-brushes-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "brush_head",
+      "label": "ブラシヘッド・振動方式",
+      "keywords": [
+        "振動",
+        "ブラシヘッド",
+        "毛穴"
+      ]
+    },
+    {
+      "id": "waterproof",
+      "label": "防水性能・お手入れ",
+      "keywords": [
+        "防水",
+        "お風呂",
+        "丸洗い"
+      ]
+    },
+    {
+      "id": "battery",
+      "label": "バッテリー・充電方式",
+      "keywords": [
+        "USB充電",
+        "連続使用時間"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格帯",
+      "keywords": [
+        "価格",
+        "コスパ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "brush_head",
+      "waterproof"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0H4FRYRMR",
+      "asin": "B0H4FRYRMR",
+      "amazon_title": "洗顔ブラシ クリアブルー 電動 防水 毛穴洗浄 1台3役 スキンケア クレンジング 低刺激 シリコン フェイスケア 黒ずみ",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71nZVKuDoYL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.67,
+      "matched_comparison_axes": [
+        "brush_head",
+        "waterproof"
+      ],
+      "search_key": "洗顔ブラシ クリアブルー 電動 防水 毛穴洗浄 1台3役 スキン"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HGBC7GX4",
+      "asin": "B0HGBC7GX4",
+      "amazon_title": "【泡立て不要、洗顔から始まる保湿】レタッチ RETOUCH ウォータージェルウォッシュ メンズ 洗顔ジェル 毛穴 皮脂 ベタつき 保湿 150g",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51Jzg-D1iIL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "brush_head"
+      ],
+      "search_key": "レタッチ RETOUCH ウォータージェルウォッシュ メンズ 洗"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0H1HTKTKG",
+      "asin": "B0H1HTKTKG",
+      "amazon_title": "洗顔ブラシ 美顔器 EMS 温熱 超音波振動 毛穴洗浄 小鼻 黒ずみケア イオン導入 光エステ IPX6防水 軽量 お風呂対応",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/715BOM2nTVL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "brush_head",
+        "waterproof"
+      ],
+      "search_key": "洗顔ブラシ 美顔器 EMS 温熱 超音波振動 毛穴洗浄 小鼻 黒"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0GT4FBZF7",
+      "asin": "B0GT4FBZF7",
+      "amazon_title": "dr365 V.C.モイストフォーミングウォッシュ 泡洗顔 洗顔フォーム ビタミンc 毛穴 角質ケア 敏感肌 保湿 黒ずみ トーンアップ 130ml",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61DRRbYyXPL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "brush_head"
+      ],
+      "search_key": "dr365 V.C.モイストフォーミングウォッシュ 泡洗顔 洗顔"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0FTMKM7QC",
+      "asin": "B0FTMKM7QC",
+      "amazon_title": "岩田剛典アンバサダー DISM EMS 電動 洗顔ブラシ アンファー ポアディープクリア＆リフトブラシ 角栓崩壊 イオン導入イオン導出 ディズム",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51JzQGOA2IL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [],
+      "search_key": "岩田剛典アンバサダー DISM EMS 電動 洗顔ブラシ アンフ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0F2T9QYFJ",
+      "asin": "B0F2T9QYFJ",
+      "amazon_title": "SALONIA サロニア 電動洗顔ブラシ イオンフェイシャルブラシ シルバー 【Amazon.co.jp限定品】",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41H1FNfHSfS._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [],
+      "search_key": "SALONIA サロニア 電動洗顔ブラシ イオンフェイシャルブラ"
+    }
+  ]
+}
