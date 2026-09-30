@@ -1,0 +1,140 @@
+{
+  "slug": "mouthwash-oral-care-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/mouthwash-oral-care-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/mouthwash-oral-care-6-picks/mouthwash-oral-care-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "efficacy",
+      "label": "洗浄・殺菌力",
+      "keywords": [
+        "除菌",
+        "口臭予防",
+        "歯垢"
+      ]
+    },
+    {
+      "id": "gentleness",
+      "label": "刺激の少なさ",
+      "keywords": [
+        "ノンアルコール",
+        "低刺激",
+        "ピリピリしない"
+      ]
+    },
+    {
+      "id": "portability",
+      "label": "携帯性",
+      "keywords": [
+        "携帯用",
+        "ミニボトル",
+        "個包装"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格帯",
+      "keywords": [
+        "価格",
+        "コスパ",
+        "大容量"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "gentleness",
+      "portability",
+      "price"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0GT4N3MH4",
+      "asin": "B0GT4N3MH4",
+      "amazon_title": "【 根こそぎ 口臭 ケア 】Daily1 （デイリーワン） PREMIUM [ マウスウォッシュ 舌苔 歯周病 個包装 ] 1箱各30包 フロムココロ",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51hMXS6NusL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.53,
+      "matched_comparison_axes": [
+        "portability"
+      ],
+      "search_key": "Daily1 （デイリーワン） PREMIUM 1箱各30包 フ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0CSVBGL9C",
+      "asin": "B0CSVBGL9C",
+      "amazon_title": "クリーンデンタル 薬用リンス 450mL [医薬部外品] トータルケア ノンアルコールタイプ 液体歯みがき 8種の薬用成分",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71oR9YNaWSL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.53,
+      "matched_comparison_axes": [
+        "gentleness"
+      ],
+      "search_key": "クリーンデンタル 薬用リンス 450mL トータルケア ノンアル"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B07GS475TS",
+      "asin": "B07GS475TS",
+      "amazon_title": "ピュオーラ 【大容量】 洗口液 クリーンミント 850ml 850ミリリットル (x 1)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71L38oZOLFL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.53,
+      "matched_comparison_axes": [
+        "price"
+      ],
+      "search_key": "ピュオーラ 洗口液 クリーンミント 850ml 850ミリリット"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0H4DV8MN9",
+      "asin": "B0H4DV8MN9",
+      "amazon_title": "GUM(ガム)デンタルリンス(レギュラータイプ ハーブミントタイプ) 960ml×2個+おまけ付き【医薬部外品】",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/619p++k1woL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "GUM(ガム)デンタルリンス(レギュラータイプ ハーブミントタイ"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0GPR9MBW6",
+      "asin": "B0GPR9MBW6",
+      "amazon_title": "【Amazon.co.jp限定】GUM(ガム)プラスデンタルリンス(スッキリ爽やかタイプ) 960ml 単品【医薬部外品】",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61Hpbv5lVdL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "GUM(ガム)プラスデンタルリンス(スッキリ爽やかタイプ) 96"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0D11RFRFQ",
+      "asin": "B0D11RFRFQ",
+      "amazon_title": "HABITPRO ハビットプロ1本 (1080ml), ホワイト",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51PymWMGRpL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "HABITPRO ハビットプロ1本 (1080ml), ホワイト"
+    }
+  ]
+}
