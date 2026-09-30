@@ -1,0 +1,133 @@
+{
+  "slug": "moisturizing-emulsions-for-autumn-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/moisturizing-emulsions-for-autumn-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/moisturizing-emulsions-for-autumn-6-picks/moisturizing-emulsions-for-autumn-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "moisturizing_ingredients",
+      "label": "保湿成分",
+      "keywords": [
+        "セラミド",
+        "ヒアルロン酸",
+        "グリセリン"
+      ]
+    },
+    {
+      "id": "texture",
+      "label": "使用感",
+      "keywords": [
+        "しっとり",
+        "ベタつきにくさ",
+        "肌なじみ"
+      ]
+    },
+    {
+      "id": "packaging",
+      "label": "使い続けやすさ",
+      "keywords": [
+        "ポンプ",
+        "詰め替え",
+        "容量"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "moisturizing_ingredients",
+      "packaging",
+      "texture"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0CC5JWFMK",
+      "asin": "B0CC5JWFMK",
+      "amazon_title": "ケアセラ(CareCera) APフェイス&ボディ乳液 大容量本体 400ml (セラミドプラス×7種の天然型セラミド配合)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71YfRFWMf9L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.685,
+      "matched_comparison_axes": [
+        "moisturizing_ingredients",
+        "packaging"
+      ],
+      "search_key": "ケアセラ(CareCera) APフェイス&ボディ乳液 大容量本"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0B8Z51S5F",
+      "asin": "B0B8Z51S5F",
+      "amazon_title": "【高濃度セラミド】トゥヴェール ナノエマルジョン ディープ 乳液 60mL 乾燥肌 敏感肌 高保湿 インナードライ しっとり セラミド 高濃度 12％ ヒアルロン酸",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51h7j3aB1ML._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.505,
+      "matched_comparison_axes": [
+        "moisturizing_ingredients",
+        "texture"
+      ],
+      "search_key": "トゥヴェール ナノエマルジョン ディープ 乳液 60mL 乾燥肌"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HFS2SH24",
+      "asin": "B0HFS2SH24",
+      "amazon_title": "【牛乳石鹸が提案する生態系発想のスキンケア】 AKA バランシングミルク 100g 乳液 牛乳石鹸 無添加 スキンケア 乳液 整肌 敏感肌",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51pYUh0rZnL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "AKA バランシングミルク 100g 乳液 牛乳石鹸 無添加 ス"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0H6W5QFG8",
+      "asin": "B0H6W5QFG8",
+      "amazon_title": "ソフィーナ BASIC⁺ うるおいターボ乳液 120ml 角層細胞レベルまででうるおい変わる",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71hoGlr7OWL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "ソフィーナ BASIC⁺ うるおいターボ乳液 120ml 角層細"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0GCH8SBGG",
+      "asin": "B0GCH8SBGG",
+      "amazon_title": "【医薬品メーカー発】セラミド 美容液 個包装 敏感肌 乾燥肌 保湿 肌荒れ キメ 日本製 無香料 パーセラムCE 14包",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51gtgS-+IfL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "moisturizing_ingredients"
+      ],
+      "search_key": "セラミド 美容液 個包装 敏感肌 乾燥肌 保湿 肌荒れ キメ 日"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0G6ZBCRRJ",
+      "asin": "B0G6ZBCRRJ",
+      "amazon_title": "ドモホルンリンクル 基本4点ハーフセット 保湿液 美活肌エキス クリーム20 保護乳液 スキンケア 化粧水 美容液",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41b-RkbQpwL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "ドモホルンリンクル 基本4点ハーフセット 保湿液 美活肌エキス"
+    }
+  ]
+}
