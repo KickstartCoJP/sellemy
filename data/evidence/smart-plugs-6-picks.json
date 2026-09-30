@@ -1,0 +1,142 @@
+{
+  "slug": "smart-plugs-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/smart-plugs-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/smart-plugs-6-picks/smart-plugs-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "compatibility",
+      "label": "接続と対応サービス",
+      "keywords": [
+        "Wi-Fi",
+        "Matter",
+        "音声操作"
+      ]
+    },
+    {
+      "id": "control",
+      "label": "操作機能",
+      "keywords": [
+        "タイマー",
+        "遠隔操作",
+        "消費電力の確認"
+      ]
+    },
+    {
+      "id": "safety",
+      "label": "設置条件",
+      "keywords": [
+        "定格電力",
+        "本体サイズ",
+        "使用可能な家電"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "compatibility",
+      "control"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0GL817VN7",
+      "asin": "B0GL817VN7",
+      "amazon_title": "Onvis スマートプラグ 次世代無線通信規格Thread Matter対応 最大15A/1500W 遠隔操作 タイマー/スケジュール付き 音声コントロール Apple Home HomeKit, Alexa, Google Home,SmartThings対応 「Threadボーダールーター」が必要 (単品)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61RYXCOu02L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.71,
+      "matched_comparison_axes": [
+        "compatibility",
+        "control"
+      ],
+      "search_key": "Onvis スマートプラグ 次世代無線通信規格Thread Ma"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0G2KY1XBG",
+      "asin": "B0G2KY1XBG",
+      "amazon_title": "【セット買い】SwitchBot スマートプラグ プラグミニ + リモートボタン ワンタッチ スマートホーム 消費電力モニター タイマー コンセント 節電·省エネ 遠隔操作 音声コントロール Bluetooth&Wi-Fi両方対応 Alexa, Google Home, Siri対応（プラグミニ 1個+ リモートボタン 1個）",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41iG7L685KL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "compatibility",
+        "control"
+      ],
+      "search_key": "SwitchBot スマートプラグ プラグミニ + リモートボタ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0DT6YMTXH",
+      "asin": "B0DT6YMTXH",
+      "amazon_title": "SwitchBot スマートプラグ プラグミニ Appleデバイス対応 スマートコンセント スイッチボット 消費電力モニター HomeKit対応 タイマー コンセント Bluetooth&Wi-Fi両方対応 節電·省エネ 直差し 遠隔操作 音声コントロール スマートホーム Alexa, Google Home, Siri, IFTTT, SmartThings対応 2個入り",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61CT8jmjTSL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "compatibility",
+        "control"
+      ],
+      "search_key": "SwitchBot スマートプラグ プラグミニ Appleデバイ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0DT6X8963",
+      "asin": "B0DT6X8963",
+      "amazon_title": "SwitchBot スマートプラグ プラグミニ スマートコンセント スイッチボット 消費電力モニター タイマー コンセント 節電·省エネ 直差し 遠隔操作 音声コントロール Bluetooth&Wi-Fi両方対応 スマートホーム Alexa, Google Home, Siri, IFTTT, SmartThings対応 2個入り",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61ojHWVWnaL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "compatibility",
+        "control"
+      ],
+      "search_key": "SwitchBot スマートプラグ プラグミニ スマートコンセン"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0DT6S7NZ8",
+      "asin": "B0DT6S7NZ8",
+      "amazon_title": "SwitchBot スマートプラグ プラグミニ スマートコンセント スイッチボット 消費電力モニター タイマー コンセント 節電·省エネ 直差し 遠隔操作 音声コントロール Bluetooth&Wi-Fi両方対応 スマートホーム Alexa, Google Home, Siri, IFTTT, SmartThings対応",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/611FcPBNKYL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "compatibility",
+        "control"
+      ],
+      "search_key": "SwitchBot スマートプラグ プラグミニ スマートコンセン"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0DL5L1NDJ",
+      "asin": "B0DL5L1NDJ",
+      "amazon_title": "Onvis Matter Thread 対応 次世代無線通信規格Thread スマートプラグ プラグミニ スマートコンセント 最大15A/1500W スマートホーム 遠隔操作 タイマー/スケジュール付き 音声コントロール Apple Home HomeKit, Alexa, Google Home,SmartThings対応 (スマートプラグ単品)「Threadボーダールーター」が必要)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61Ys1XALT0L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "compatibility",
+        "control"
+      ],
+      "search_key": "Onvis Matter Thread 対応 次世代無線通信規格"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-smart-plugs-6-picks-ddf9a73a2ea3f628",
+  "request_sha256": "ddf9a73a2ea3f628f3713ab49ca9dc359f5ff6063d2b3fa093255366fb87c446",
+  "image_sha256": "aaa249eb09d34ec38b3c6bd780bc648178f5c215302829e5fdbb72b819a097d9",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-09-30T00:54:52.123127+00:00"
+}
