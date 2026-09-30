@@ -1,0 +1,138 @@
+{
+  "slug": "thermal-insulation-curtains-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/thermal-insulation-curtains-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/thermal-insulation-curtains-6-picks/thermal-insulation-curtains-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "insulation_performance",
+      "label": "断熱・遮熱性能",
+      "keywords": [
+        "断熱等級",
+        "遮熱",
+        "冷気カット"
+      ]
+    },
+    {
+      "id": "size_variation",
+      "label": "サイズ展開",
+      "keywords": [
+        "丈",
+        "幅",
+        "オーダー"
+      ]
+    },
+    {
+      "id": "design_light_control",
+      "label": "デザイン・遮光性",
+      "keywords": [
+        "遮光1級",
+        "カラー展開",
+        "柄"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "design_light_control",
+      "insulation_performance",
+      "size_variation"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0FFGWXN38",
+      "asin": "B0FFGWXN38",
+      "amazon_title": "Topfinel カーテン 遮光 断熱 星柄 箔プリント 遮光カーテン 200cm丈 2枚組 グレーホワイト フック付き 遮熱 防寒 寝室用 リビング",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61n+EYXj-BL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.89,
+      "matched_comparison_axes": [
+        "design_light_control",
+        "insulation_performance",
+        "size_variation"
+      ],
+      "search_key": "Topfinel カーテン 遮光 断熱 星柄 箔プリント 遮光カ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0FYW26TRR",
+      "asin": "B0FYW26TRR",
+      "amazon_title": "クモリ(Kumori) 小窓用 カーテン カフェカーテン 遮光1級 目隠し 断熱 防音 洗濯可能 ライトグレー 幅60cm×丈50cm 1枚",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61CBhryJruL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "design_light_control",
+        "size_variation"
+      ],
+      "search_key": "クモリ(Kumori) 小窓用 カーテン カフェカーテン 遮光1"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0FDWLV43Y",
+      "asin": "B0FDWLV43Y",
+      "amazon_title": "【Amazon.co.jp 限定 】[カーテンくれない] 【安心の防炎加工済】1級遮光 高断熱カーテン「K-wave-D-superior」 と 昼夜目隠し UVカット 防炎ミラーレース「e-lace プロ仕様」 厚地色:グレー 幅100× 丈200cm×4枚組(厚地2枚・レース2枚 / レース丈:-2cm) /Aフック",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61+ut35RMtL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "size_variation"
+      ],
+      "search_key": "1級遮光 高断熱カーテン「K-wave-D-superior」"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0FBFZ1JHY",
+      "asin": "B0FBFZ1JHY",
+      "amazon_title": "TSUMUGI Spin a mindful life ミラーレースカーテン 防炎 UVカット 受注生産 【1枚入】 幅100cm×丈153cm",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71SaWg1JqiL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "size_variation"
+      ],
+      "search_key": "TSUMUGI Spin a mindful life ミラーレ"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0F3DFCSJ1",
+      "asin": "B0F3DFCSJ1",
+      "amazon_title": "OEKO-TEX STANDARD 100",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71XvdY-bpzL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "OEKO-TEX STANDARD 100"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0DR131T73",
+      "asin": "B0DR131T73",
+      "amazon_title": "クモリ(Kumori) カーテン 1級遮光 形状記憶加工 断熱 省エネ アジャスター フック付き ライトグレー 幅100cm×丈178cm 2枚入",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71HXAGwM+6L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "size_variation"
+      ],
+      "search_key": "クモリ(Kumori) カーテン 1級遮光 形状記憶加工 断熱"
+    }
+  ]
+}
