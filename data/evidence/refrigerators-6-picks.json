@@ -1,0 +1,157 @@
+{
+  "slug": "refrigerators-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/refrigerators-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/refrigerators-6-picks/refrigerators-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "capacity",
+      "label": "容量・設置サイズ",
+      "keywords": [
+        "容量",
+        "リットル",
+        "設置スペース",
+        "幅"
+      ]
+    },
+    {
+      "id": "cooling_efficiency",
+      "label": "冷却方式・省エネ性能",
+      "keywords": [
+        "インバーター",
+        "省エネ",
+        "年間電気代"
+      ]
+    },
+    {
+      "id": "storage_layout",
+      "label": "収納レイアウト",
+      "keywords": [
+        "野菜室",
+        "冷凍室",
+        "棚",
+        "ドア配置"
+      ]
+    },
+    {
+      "id": "noise",
+      "label": "静音性",
+      "keywords": [
+        "運転音",
+        "dB",
+        "静音設計"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "capacity",
+      "cooling_efficiency",
+      "noise",
+      "storage_layout"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0BXS2698B",
+      "asin": "B0BXS2698B",
+      "amazon_title": "TCL 冷蔵庫 幅54.5cm 253L P253BFN ファン式 自動霜取り 2ドア 強化ガラス棚 野菜ケース 26dB 省エネ 右開き ひとり暮らし 省スペース 新生活 グレー",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41o9e3MI5qL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 1.03,
+      "matched_comparison_axes": [
+        "capacity",
+        "cooling_efficiency",
+        "noise",
+        "storage_layout"
+      ],
+      "search_key": "TCL 冷蔵庫 幅54.5cm 253L P253BFN ファン"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0GRYQ17JP",
+      "asin": "B0GRYQ17JP",
+      "amazon_title": "シャープ 冷蔵庫 230L 幅54.4cm 大容量冷凍 1～2人暮らし 右開き 自動霜取り 省エネ 静音 2ドア SJ-BD23R-W マットホワイト",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/31BVdQTDJKL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "capacity",
+        "cooling_efficiency"
+      ],
+      "search_key": "シャープ 冷蔵庫 230L 幅54.4cm 大容量冷凍 1～2人"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GFD84K4J",
+      "asin": "B0GFD84K4J",
+      "amazon_title": "ハイセンス 冷蔵庫 幅55cm 295L 自動霜取り 真ん中野菜室 静音設計 右開き 3ドア 大容量 HR-K280LW ホワイト",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41WwT9JqfML._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "capacity",
+        "noise",
+        "storage_layout"
+      ],
+      "search_key": "ハイセンス 冷蔵庫 幅55cm 295L 自動霜取り 真ん中野菜"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0G6ZQK9N1",
+      "asin": "B0G6ZQK9N1",
+      "amazon_title": "ハイセンス 冷蔵庫 幅55cm 295L 自動霜取り 真ん中野菜室 静音設計 右開き 3ドア 大容量 HR-K280LS スペースグレー",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51AH269i8TL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "capacity",
+        "noise",
+        "storage_layout"
+      ],
+      "search_key": "ハイセンス 冷蔵庫 幅55cm 295L 自動霜取り 真ん中野菜"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0FSRMRHG8",
+      "asin": "B0FSRMRHG8",
+      "amazon_title": "【累計100,000台突破】 clasimple 冷蔵庫 60L 2ドア 冷凍庫付き 小型 静音 省エネ【日本企業】 (⑤【シルバー】60L)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61-NC69e3fL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "cooling_efficiency"
+      ],
+      "search_key": "clasimple 冷蔵庫 60L 2ドア 冷凍庫付き 小型 静"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0FL7T244D",
+      "asin": "B0FL7T244D",
+      "amazon_title": "SAMKYO 冷蔵庫 48L 小型 幅45cm スリム 7段階温度調節 ミニ冷蔵庫 一人暮らし 省スペース コンパクト 前開き 1ドア 耐熱天板 静音 GU40 ホワイト",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41-+IzE3l-L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "capacity"
+      ],
+      "search_key": "SAMKYO 冷蔵庫 48L 小型 幅45cm スリム 7段階温"
+    }
+  ]
+}
