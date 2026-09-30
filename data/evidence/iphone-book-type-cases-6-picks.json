@@ -1,0 +1,134 @@
+{
+  "slug": "iphone-book-type-cases-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/iphone-book-type-cases-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/iphone-book-type-cases-6-picks/iphone-book-type-cases-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "material",
+      "label": "素材・質感",
+      "keywords": [
+        "本革",
+        "PUレザー",
+        "高級感"
+      ]
+    },
+    {
+      "id": "function",
+      "label": "収納・スタンド機能",
+      "keywords": [
+        "カード収納",
+        "マグネット",
+        "スタンド"
+      ]
+    },
+    {
+      "id": "protection",
+      "label": "対応機種・耐衝撃性",
+      "keywords": [
+        "対応モデル",
+        "耐衝撃",
+        "カメラ保護"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "function",
+      "material",
+      "protection"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0GCZC32QY",
+      "asin": "B0GCZC32QY",
+      "amazon_title": "for iPhone 15 ケース 手帳型 アイフォン 15 手帳 ケース 耐衝撃 炭素繊維テクスチャ カード収納 スタンド機能 高級な炭素繊維風 縦のライン",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71yctcD+FyL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.71,
+      "matched_comparison_axes": [
+        "function",
+        "protection"
+      ],
+      "search_key": "for iPhone 15 ケース 手帳型 アイフォン 15 手"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0FL72LHVH",
+      "asin": "B0FL72LHVH",
+      "amazon_title": "COGURE 互換 iPhone 17 ケース 手帳型 本革 PDE オレンジ",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71SSsSHcNEL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.53,
+      "matched_comparison_axes": [
+        "material"
+      ],
+      "search_key": "COGURE 互換 iPhone 17 ケース 手帳型 本革 P"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GZQDD8Y1",
+      "asin": "B0GZQDD8Y1",
+      "amazon_title": "CASSYOOK 適合 iphone se ケース 手帳型 iphone se2/se3 ケース おしゃれ 表面ポケット便利 iphone8 ケース 手帳型 スマホケース se マグネット式 スマホカバー iphone se 手帳型ケース アイフォンse ケース 手帳型 全面保護 カード収納(アプリコット)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81BwKCCd1mL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "function"
+      ],
+      "search_key": "CASSYOOK 適合 iphone se ケース 手帳型 ip"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0GH119RPQ",
+      "asin": "B0GH119RPQ",
+      "amazon_title": "Rssviss iPhone 17 用 ケース 手帳型 2in1 分離式 MagSafe対応 6.3インチ ブラック",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81uddZBbgHL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "Rssviss iPhone 17 用 ケース 手帳型 2in1"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0FPWR167Y",
+      "asin": "B0FPWR167Y",
+      "amazon_title": "エレコム iPhone 17 ケース カバー 手帳型 薄型 軽量 スエード素材使用 ソフトレザー TPU 磁石付 カードポケット スタンド機能 4つ角エアークッション PM-A25APLFUSBK",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71W3sz06XNL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "function"
+      ],
+      "search_key": "エレコム iPhone 17 ケース カバー 手帳型 薄型 軽量"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0FMXMKDH2",
+      "asin": "B0FMXMKDH2",
+      "amazon_title": "HANATORA for iPhone 18Pro 17Pro ケース 手帳型 レザー PH-17Pro-BlueIndigo",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71L-XuGSAuL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "HANATORA for iPhone 18Pro 17Pro"
+    }
+  ]
+}
