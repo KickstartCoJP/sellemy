@@ -1,0 +1,135 @@
+{
+  "slug": "liquid-eyeliners-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/liquid-eyeliners-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/liquid-eyeliners-6-picks/liquid-eyeliners-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "tip",
+      "label": "筆先と描きやすさ",
+      "keywords": [
+        "筆の太さ",
+        "コシ",
+        "細いライン"
+      ]
+    },
+    {
+      "id": "wear",
+      "label": "仕上がりと落とし方",
+      "keywords": [
+        "耐水性",
+        "にじみにくさ",
+        "お湯オフ"
+      ]
+    },
+    {
+      "id": "color",
+      "label": "色と価格",
+      "keywords": [
+        "ブラック",
+        "ブラウン",
+        "価格"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "color",
+      "tip",
+      "wear"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B00RWME3MU",
+      "asin": "B00RWME3MU",
+      "amazon_title": "ヒロインメイク スムースリキッドアイライナー スーパーキープ 01 漆黒ブラック 0.4ml コシのある極細筆 ウォータープルーフ処方 お湯オフ",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71g0aO9pzRL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.89,
+      "matched_comparison_axes": [
+        "color",
+        "tip",
+        "wear"
+      ],
+      "search_key": "ヒロインメイク スムースリキッドアイライナー スーパーキープ 0"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HDQK4LPX",
+      "asin": "B0HDQK4LPX",
+      "amazon_title": "マルチカラー アイライナー リキッド ウォータープルーフカラーアイライナー が落ちにくく描きやすくぼかしにくい防水速乾初心者8色魅力的な目元へ-07# ダークブルー",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/510m+UkjajL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "マルチカラー アイライナー リキッド ウォータープルーフカラーア"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GWCVWPT6",
+      "asin": "B0GWCVWPT6",
+      "amazon_title": "ピタッと密着 LB 史上最も落ちない 【パワーオブアイライナーリキッドＲ】 ブラウンブラック リキッド アイライナー にじまない 落ちにくい",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61f3Fb02TmL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "color"
+      ],
+      "search_key": "ピタッと密着 LB 史上最も落ちない ブラウンブラック リキッド"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0FPMMSZVR",
+      "asin": "B0FPMMSZVR",
+      "amazon_title": "CAROME. (カロミー) リキッドアイライナー (ブラックブラウン)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71K5f3gm71L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "color"
+      ],
+      "search_key": "CAROME. (カロミー) リキッドアイライナー (ブラックブ"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0FNJ4XXYZ",
+      "asin": "B0FNJ4XXYZ",
+      "amazon_title": "泣いても落ちない アイライナー リキッド にじまない 書きやすい 長持ち かすれない キングダム リキッドアイライナーTP ブラック ウォータープルーフ スマッジプルーフ こすれプルーフ kingdom 0.5ml",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61+b9roOiHL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "color"
+      ],
+      "search_key": "泣いても落ちない アイライナー リキッド にじまない 書きやすい"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0F5NRRD3Q",
+      "asin": "B0F5NRRD3Q",
+      "amazon_title": "マルチカラー アイライナー 12色リキッド カラーアイライナー、極細、防水性と防汗性、長持ち、初心者向け- 03#グリーン",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71swWxar8HL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "マルチカラー アイライナー 12色リキッド カラーアイライナー"
+    }
+  ]
+}

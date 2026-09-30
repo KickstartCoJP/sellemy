@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-liquid-eyeliners-6-picks-4dd8b1cef1a94f5c",
+  "request_sha256": "4dd8b1cef1a94f5cbe413ac9d9b4094250d84b0a4e433b5741ed5fd5ffc847b9",
+  "image_sha256": "84d374bd42b1785ad262995bd5739eff718c16864ddff3dc4d925f08a51ab13b",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-09-30T00:11:45.699703+00:00"
+}
