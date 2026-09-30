@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-osechi-jubako-boxes-6-picks-b2f0ab703fc2e1c8",
+  "request_sha256": "b2f0ab703fc2e1c8d19c7ce6b6bad9c6e4f96cc9463bd551ffcf96e12227ad39",
+  "image_sha256": "209c3362dfcb3ba316f1a75b60f315ca59ba0e1fbc864cb3f1a1dbac0a100685",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-09-30T09:15:42.464704+00:00"
+}

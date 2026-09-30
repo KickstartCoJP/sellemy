@@ -1,0 +1,129 @@
+{
+  "slug": "osechi-jubako-boxes-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/osechi-jubako-boxes-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/osechi-jubako-boxes-6-picks/osechi-jubako-boxes-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "capacity",
+      "label": "段数・容量",
+      "keywords": [
+        "三段重",
+        "二段重",
+        "人数目安"
+      ]
+    },
+    {
+      "id": "material_design",
+      "label": "素材・デザイン",
+      "keywords": [
+        "漆調",
+        "使い捨て",
+        "和柄"
+      ]
+    },
+    {
+      "id": "storage",
+      "label": "密閉性・保存のしやすさ",
+      "keywords": [
+        "フタの密閉",
+        "冷蔵保存",
+        "重ねやすさ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "capacity"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0HB9NJ96B",
+      "asin": "B0HB9NJ96B",
+      "amazon_title": "ベルーナグルメ おせち料理 百景 2027年 (約 4人～5人前 / 全100品目 / 三段重) おせち 豪華 セット (和風 洋風 中華)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81aUAS5lBvL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.505,
+      "matched_comparison_axes": [
+        "capacity"
+      ],
+      "search_key": "ベルーナグルメ おせち料理 百景 2027年 (約 4人～5人前"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0FCF36D9W",
+      "asin": "B0FCF36D9W",
+      "amazon_title": "博多久松 定番洋風 三段重おせち Miyabi Akasaka 全50品 4～5人前 (2026年12月30日着）",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/713iINRLI8L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "capacity"
+      ],
+      "search_key": "博多久松 定番洋風 三段重おせち Miyabi Akasaka"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0DCP2RMW8",
+      "asin": "B0DCP2RMW8",
+      "amazon_title": "小樽きたいち 海鮮おせち 秀峰～彩～ 4～5人前 特大8寸三段重 全47品 (12月31日着)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81yE5GUWSCL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "capacity"
+      ],
+      "search_key": "小樽きたいち 海鮮おせち 秀峰～彩～ 4～5人前 特大8寸三段重"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0CKBVMMG5",
+      "asin": "B0CKBVMMG5",
+      "amazon_title": "トータル通販 紙重箱 桐内金 7寸 3段 228-12512(Z488) 重箱 紙製 おせち お節 お弁当 お花見 正月 行楽 運動会 お祝い パーティー おもてなし 業務用 (3段)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/716EyoupmLL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "トータル通販 紙重箱 桐内金 7寸 3段 228-12512(Z"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0CCNC11D9",
+      "asin": "B0CCNC11D9",
+      "amazon_title": "おせち料理 おせち 2027 蔵王 特大重箱8.5寸 全55品 4～5人前 蔵王福膳 冷凍 予約【12月30日 お届け】",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81a2jzoV0iL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "おせち料理 おせち 2027 蔵王 特大重箱8.5寸 全55品"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0BD6KL4DH",
+      "asin": "B0BD6KL4DH",
+      "amazon_title": "トータル通販 紙重箱 黒内金 6.5寸 1段 228-11311(Z488) 重箱 お重箱 紙製 おせち お節 お弁当 お花見 正月 行楽 運動会 お祝い パーティー おもてなし 業務用 (1段)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/819tjKX+kuL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "トータル通販 紙重箱 黒内金 6.5寸 1段 228-11311"
+    }
+  ]
+}
