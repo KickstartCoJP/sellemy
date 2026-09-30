@@ -1,0 +1,141 @@
+{
+  "slug": "2027-wall-desk-calendars-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/2027-wall-desk-calendars-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/2027-wall-desk-calendars-6-picks/2027-wall-desk-calendars-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "size_type",
+      "label": "サイズ・設置タイプ",
+      "keywords": [
+        "壁掛け",
+        "卓上",
+        "サイズ"
+      ]
+    },
+    {
+      "id": "design_writability",
+      "label": "デザイン・書き込みやすさ",
+      "keywords": [
+        "マス目",
+        "デザイン",
+        "書き込み"
+      ]
+    },
+    {
+      "id": "functionality",
+      "label": "機能性(メモ欄・六曜表記)",
+      "keywords": [
+        "メモ欄",
+        "六曜",
+        "祝日表記"
+      ]
+    },
+    {
+      "id": "price_range",
+      "label": "価格帯",
+      "keywords": [
+        "価格",
+        "コスパ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "size_type"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0HHRTMQTF",
+      "asin": "B0HHRTMQTF",
+      "amazon_title": "MINIATURE LIFE CALENDAR 2027年 カレンダー 壁掛け CL27-0466",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61wpmNNrEgL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.53,
+      "matched_comparison_axes": [
+        "size_type"
+      ],
+      "search_key": "MINIATURE LIFE CALENDAR 2027年 カレ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HFW3TDM9",
+      "asin": "B0HFW3TDM9",
+      "amazon_title": "スクエア ミッフィー 2027年 カレンダー 壁掛け アイボリー 27BCA-1",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61Yyd1JJc2L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "size_type"
+      ],
+      "search_key": "スクエア ミッフィー 2027年 カレンダー 壁掛け アイボリー"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HC68XSRY",
+      "asin": "B0HC68XSRY",
+      "amazon_title": "キングコーポレーション 2027年 カレンダー 壁掛け 3色ジャンボ 年表入り B2 KC20001",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61uk5h7D--L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "size_type"
+      ],
+      "search_key": "キングコーポレーション 2027年 カレンダー 壁掛け 3色ジャ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0HBV8CHQ4",
+      "asin": "B0HBV8CHQ4",
+      "amazon_title": "学研ステイフル 2027 カレンダー レオ・レオニ 壁掛け AM14010 2027年 1月始まり",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51FMP3ou9sL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "size_type"
+      ],
+      "search_key": "学研ステイフル 2027 カレンダー レオ・レオニ 壁掛け AM"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0H6LPWZ67",
+      "asin": "B0H6LPWZ67",
+      "amazon_title": "カレンダー 壁掛け 【2027年】 四季光耀 フィルム SG-502 写真 情景 日本 富士山 滝 755×504mm",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71u4rfpwZCL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "size_type"
+      ],
+      "search_key": "カレンダー 壁掛け 四季光耀 フィルム SG-502 写真 情景"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0H2YLBR78",
+      "asin": "B0H2YLBR78",
+      "amazon_title": "2027年 葉 祥明 カレンダー",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51B-Zj9B-oL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "2027年 葉 祥明 カレンダー"
+    }
+  ]
+}
