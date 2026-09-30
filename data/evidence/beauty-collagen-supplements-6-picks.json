@@ -1,0 +1,150 @@
+{
+  "slug": "beauty-collagen-supplements-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/beauty-collagen-supplements-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/beauty-collagen-supplements-6-picks/beauty-collagen-supplements-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "ingredients",
+      "label": "配合成分",
+      "keywords": [
+        "コラーゲン",
+        "プラセンタ",
+        "ビタミンC"
+      ]
+    },
+    {
+      "id": "format",
+      "label": "剤形",
+      "keywords": [
+        "ドリンク",
+        "粒",
+        "パウダー"
+      ]
+    },
+    {
+      "id": "continuity",
+      "label": "続けやすさ",
+      "keywords": [
+        "価格",
+        "コスパ",
+        "1日あたり"
+      ]
+    },
+    {
+      "id": "taste",
+      "label": "味・飲みやすさ",
+      "keywords": [
+        "味",
+        "香り",
+        "飲みやすさ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "format",
+      "ingredients",
+      "taste"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0C9TLCFBX",
+      "asin": "B0C9TLCFBX",
+      "amazon_title": "新田ゼラチン ハピコラサプリ (180粒 / ブルーベリーの香り) タブレットで手軽にコラーゲン補給 コラーゲンサプリ (コラーゲンペプチド 2,500mg配合 / プロアントシアニジン / ビタミンB2 B6 C E) コラーゲン 美容",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41alsEI7-EL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.865,
+      "matched_comparison_axes": [
+        "format",
+        "ingredients",
+        "taste"
+      ],
+      "search_key": "新田ゼラチン ハピコラサプリ (180粒 / ブルーベリーの香り"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0H9QGCN26",
+      "asin": "B0H9QGCN26",
+      "amazon_title": "5大成分＋ビタミン8種類ミネラル成分(60日分)特許成分【非変性】金のプロテオグリカン【非変性】金のイタドリ【非変性】金のⅡ型コラーゲン、ロコモオールインワンのチカラ",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81FVpZJZTCL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "ingredients"
+      ],
+      "search_key": "5大成分＋ビタミン8種類ミネラル成分(60日分)特許成分 金のプ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0H31TJZRV",
+      "asin": "B0H31TJZRV",
+      "amazon_title": "【60日分】50倍濃縮プラセンタ13500mg +４大美容成分 ピュアセラム プラセンタ ナイアシンアミド CICA 超低分子コラーゲン 日本製 美肌 美容 サプリ 美容クリニック監修 セラミド エラスチン 大豆イソフラボン配合",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81oypjBJXTL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "ingredients"
+      ],
+      "search_key": "50倍濃縮プラセンタ13500mg +４大美容成分 ピュアセラム"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0GXK6CHBM",
+      "asin": "B0GXK6CHBM",
+      "amazon_title": "【高濃度 アスタキサンチン 12mg 60日分 + 美容成分26種】日本製 サプリ レチノール（ビタミンA） ナイアシンアミド グルタチオン酵母 リポソームビタミンC CICA セラミド ルテイン マルチビタミン 1日1粒 美容クリニック監修 AstaiN あすたきさんちん",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71yfhlm-O+L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "format",
+        "ingredients"
+      ],
+      "search_key": "日本製 サプリ レチノール（ビタミンA） ナイアシンアミド グル"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0FWBKBDYX",
+      "asin": "B0FWBKBDYX",
+      "amazon_title": "ナンバーサプリ21 プラセンタ サプリ 1袋に50倍濃縮 450,000mg 美容 サプリメント 12成分配合 国産 無添加 90粒 30日分",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/713T4niBhnL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "format",
+        "ingredients"
+      ],
+      "search_key": "ナンバーサプリ21 プラセンタ サプリ 1袋に50倍濃縮 450"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0F9WL32ZS",
+      "asin": "B0F9WL32ZS",
+      "amazon_title": "【高純度99％ β-NMN18000mg×臨床試験済×薬剤師監修】MyWellsy NMN サプリメント サプリ 日本製 30日分×2袋 21種美容成分 コラーゲン ヒアルロン酸 プラセンタ エクソソーム レスベラトロール 耐酸性カプセル 国内GMP工場 国産 マイウェルシー (90日分)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61RRSXnr3YL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "ingredients"
+      ],
+      "search_key": "MyWellsy NMN サプリメント サプリ 日本製 30日分"
+    }
+  ]
+}
