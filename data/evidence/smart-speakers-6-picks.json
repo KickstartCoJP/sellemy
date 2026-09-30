@@ -1,0 +1,133 @@
+{
+  "slug": "smart-speakers-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/smart-speakers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/smart-speakers-6-picks/smart-speakers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "voice-assistant",
+      "label": "対応音声アシスタント",
+      "keywords": [
+        "Alexa",
+        "Googleアシスタント",
+        "Siri"
+      ]
+    },
+    {
+      "id": "sound-quality",
+      "label": "音質・スピーカー性能",
+      "keywords": [
+        "音質",
+        "重低音",
+        "ステレオ"
+      ]
+    },
+    {
+      "id": "smart-home-integration",
+      "label": "スマート家電連携",
+      "keywords": [
+        "IoT連携",
+        "スマートホーム",
+        "対応家電数"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "smart-home-integration",
+      "sound-quality",
+      "voice-assistant"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0DM1BLVZ6",
+      "asin": "B0DM1BLVZ6",
+      "amazon_title": "Sonos Arc Ultra | プレミアムスマートサウンドバー Dolby Atmos 重低音 Bluetooth Alexa搭載 ブラック",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61WbdzYBy8L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.71,
+      "matched_comparison_axes": [
+        "sound-quality",
+        "voice-assistant"
+      ],
+      "search_key": "Sonos Arc Ultra | プレミアムスマートサウンドバ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0DKLWZY2Z",
+      "asin": "B0DKLWZY2Z",
+      "amazon_title": "Amazon Echo Dot Max (エコードットマックス)(2025年発売) - Alexaスピーカー、部屋中に広がるサウンド、スマートホームハブ内蔵、グラファイト",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71ozCbsdgZL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.53,
+      "matched_comparison_axes": [
+        "smart-home-integration",
+        "voice-assistant"
+      ],
+      "search_key": "Amazon Echo Dot Max (エコードットマックス)"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GT8ZFVFC",
+      "asin": "B0GT8ZFVFC",
+      "amazon_title": "Sonos Era 100 SL | スマートスピーカー マイク非搭載 Wi-Fi 6 Bluetooth ステレオペア対応 ホワイト",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/713fMjFMftL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "sound-quality"
+      ],
+      "search_key": "Sonos Era 100 SL | スマートスピーカー マイク"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0GPXY14ML",
+      "asin": "B0GPXY14ML",
+      "amazon_title": "Bose Lifestyle Ultra Speaker - TrueSpatial Audio CleanBass AirPlay ＆ Google Cast対応 Bluetooth Wi-Fi接続 ワイヤレスホームスピーカー ドリフトウッドサンド",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81XxChLXxCL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "Bose Lifestyle Ultra Speaker - T"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0GLZWT71G",
+      "asin": "B0GLZWT71G",
+      "amazon_title": "Global Recycled Standard",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41EwwZXMiiL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "Global Recycled Standard"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0GCFT1YLL",
+      "asin": "B0GCFT1YLL",
+      "amazon_title": "テレビ スピーカー ワイヤレス【テレビ全機種対応★2.4G送信機同梱】手元スピーカー テレビ用 最大30m 低遅延 27時間連続再生",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71P8WB+X4YL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "テレビ スピーカー ワイヤレス 手元スピーカー テレビ用 最大3"
+    }
+  ]
+}
