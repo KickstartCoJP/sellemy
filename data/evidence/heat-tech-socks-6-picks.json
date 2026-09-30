@@ -1,0 +1,132 @@
+{
+  "slug": "heat-tech-socks-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/heat-tech-socks-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/heat-tech-socks-6-picks/heat-tech-socks-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "warmth",
+      "label": "発熱・保温機能",
+      "keywords": [
+        "発熱",
+        "保温",
+        "裏起毛"
+      ]
+    },
+    {
+      "id": "fit",
+      "label": "履き心地・フィット感",
+      "keywords": [
+        "フィット感",
+        "伸縮性",
+        "締め付け"
+      ]
+    },
+    {
+      "id": "value",
+      "label": "価格・枚数",
+      "keywords": [
+        "価格",
+        "セット枚数"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "warmth"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0G2LPMR38",
+      "asin": "B0G2LPMR38",
+      "amazon_title": "[MIZIKIRIN] 靴下 メンズ 冬 ソックス あったか靴下【足首をぐるりと厚くガード・冷えから守る保温設計】 極厚手 冬用 防寒 吸汗消臭 耐久性 保温 アウトドア ルームソックス 暖かい 防寒グッズ メンズ プレゼント 25-27cm",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71oALn95mWL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.505,
+      "matched_comparison_axes": [
+        "warmth"
+      ],
+      "search_key": "靴下 メンズ 冬 ソックス あったか靴下 極厚手 冬用 防寒 吸"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0H8K5P1CF",
+      "asin": "B0H8K5P1CF",
+      "amazon_title": "[オカモト] 靴下サプリ まるでこたつおでかけソックス 外用 あったか靴下 寒さ対策",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61+GV7UrDdL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "靴下サプリ まるでこたつおでかけソックス 外用 あったか靴下 寒"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0FRR4HDK7",
+      "asin": "B0FRR4HDK7",
+      "amazon_title": "靴下サプリ とにかくあったかい まるでこたつソックス 二足組 靴下 ハイソックス レディース 冷え対策 発熱",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61pc177uadL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "warmth"
+      ],
+      "search_key": "靴下サプリ とにかくあったかい まるでこたつソックス 二足組 靴"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0FQCFSLS3",
+      "asin": "B0FQCFSLS3",
+      "amazon_title": "【3足/2足/1足入り】電熱ソックス アプリ45-75℃温度調節 つま先発熱対応 2個8000mAhバッテリー付 5段階タイミング 高弾性",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71j+3FFArpL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "warmth"
+      ],
+      "search_key": "電熱ソックス アプリ45-75℃温度調節 つま先発熱対応 2個8"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0DK2VYF59",
+      "asin": "B0DK2VYF59",
+      "amazon_title": "靴下サプリ とにかくあったかい まるでこたつソックス 二足組 靴下 ハイソックス レディース 冷え対策 発熱(グレー×ブラック、23-25cm)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61N7Y5Zxj-L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "warmth"
+      ],
+      "search_key": "靴下サプリ とにかくあったかい まるでこたつソックス 二足組 靴"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0DJ31C9XF",
+      "asin": "B0DJ31C9XF",
+      "amazon_title": "[MOSOTECH] 靴下 メンズ 冬 暖かい 5足セット 厚手 防寒 あったか 耐久性 保温 登山 靴下 24-28cm/28-30cm",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/616WzA0Un7L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "warmth"
+      ],
+      "search_key": "靴下 メンズ 冬 暖かい 5足セット 厚手 防寒 あったか 耐久"
+    }
+  ]
+}
