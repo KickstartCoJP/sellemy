@@ -1,0 +1,121 @@
+{
+  "slug": "new-year-cards-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/new-year-cards-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/new-year-cards-6-picks/new-year-cards-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "print_ease",
+      "label": "印刷のしやすさ",
+      "keywords": [
+        "自宅印刷",
+        "テンプレート",
+        "アプリ連携"
+      ]
+    },
+    {
+      "id": "design",
+      "label": "デザイン・枚数展開",
+      "keywords": [
+        "デザイン数",
+        "干支柄",
+        "枚数"
+      ]
+    },
+    {
+      "id": "cost",
+      "label": "コスト・お得感",
+      "keywords": [
+        "価格",
+        "セット",
+        "インク代"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0G2R6CR98",
+      "asin": "B0G2R6CR98",
+      "amazon_title": "年賀状じまい 年賀はがき【4枚】終活年賀状 お年玉付 ●選べるデザイン 4枚 差出人印刷込み（デザイン：JE05）",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51zK6E2yRmL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "年賀状じまい 年賀はがき 終活年賀状 お年玉付 ●選べるデザイン"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0FWC7VQHS",
+      "asin": "B0FWC7VQHS",
+      "amazon_title": "年賀状じまいハガキ 10枚 私製はがき アルファプリントサービス〈S-NJ214 彩り〉",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51UMrGyldUL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "年賀状じまいハガキ 10枚 私製はがき アルファプリントサービス"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0FTYN9LD4",
+      "asin": "B0FTYN9LD4",
+      "amazon_title": "年賀状じまい文章付き 喪中はがき 10枚 インクジェット対応 弔事用私製ハガキ アルファプリントサービス〈S-MJ204 優花〉",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51MJLirC6kL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "年賀状じまい文章付き 喪中はがき 10枚 インクジェット対応 弔"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0FTGB1P85",
+      "asin": "B0FTGB1P85",
+      "amazon_title": "喪中はがき 20枚 年賀状じまい文/手書き記入式 私製はがき パピレイ MJF-214-20",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71N7WwD1cJL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "喪中はがき 20枚 年賀状じまい文/手書き記入式 私製はがき パ"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0FTF9B85W",
+      "asin": "B0FTF9B85W",
+      "amazon_title": "パピレイ 年賀状じまい ハガキ 新年お知らせ 10枚入り 私製はがき JIM-143",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71R0grAqeRL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "パピレイ 年賀状じまい ハガキ 新年お知らせ 10枚入り 私製は"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0FT7GPTRS",
+      "asin": "B0FT7GPTRS",
+      "amazon_title": "年賀状 2027 お年玉付き 年賀 はがき【12枚 筆ペン付き】年賀状じまいシール付 ●選べるデザイン 差出人印刷込み（デザイン：HA127）",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61ecFqxx0fL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "年賀状 2027 お年玉付き 年賀 はがき 年賀状じまいシール付"
+    }
+  ]
+}
