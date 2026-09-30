@@ -47,7 +47,7 @@ WRITER_JSON_SCHEMA = {
 }
 
 AVAILABILITY_PATTERN = re.compile(
-    r'\b(?:429|529|rate.?limit|usage.?limit|weekly limit|quota|overload|service unavailable|temporar(?:y|ily) unavailable|capacity)\b',
+    r'\b(?:429|529|rate.?limit|usage.?limit|weekly limit|session limit|quota|overload|service unavailable|temporar(?:y|ily) unavailable|capacity)\b',
     re.I,
 )
 
