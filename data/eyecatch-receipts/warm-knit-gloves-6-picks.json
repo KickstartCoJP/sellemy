@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-warm-knit-gloves-6-picks-0254d4db9d1333ee",
+  "request_sha256": "0254d4db9d1333ee6ccf37105d767a1a580d04bd67edae323b131009afb5e8ed",
+  "image_sha256": "a9aad196360097374835efcc88ab122ebb5ff9e5abf7888bfa2675833cf22f13",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-09-30T05:26:43.866363+00:00"
+}
