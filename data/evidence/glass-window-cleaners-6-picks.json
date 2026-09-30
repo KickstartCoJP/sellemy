@@ -1,0 +1,146 @@
+{
+  "slug": "glass-window-cleaners-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/glass-window-cleaners-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/glass-window-cleaners-6-picks/glass-window-cleaners-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "cleaning_power",
+      "label": "洗浄力",
+      "keywords": [
+        "皮脂汚れ",
+        "水垢",
+        "手垢"
+      ]
+    },
+    {
+      "id": "formulation",
+      "label": "剤形",
+      "keywords": [
+        "スプレー",
+        "シート",
+        "泡タイプ"
+      ]
+    },
+    {
+      "id": "streak_free_finish",
+      "label": "拭き跡の残りにくさ",
+      "keywords": [
+        "ムラなし",
+        "速乾",
+        "曇り止め"
+      ]
+    },
+    {
+      "id": "price_range",
+      "label": "価格帯",
+      "keywords": [
+        "詰め替え",
+        "コスパ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "cleaning_power",
+      "formulation",
+      "price_range",
+      "streak_free_finish"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0FF986T8L",
+      "asin": "B0FF986T8L",
+      "amazon_title": "LIFIX CLEAR (Sea Green) 拭き筋残さず高速乾 ガラスクリーナー 視界が変わる視認性 圧倒的透明感 油脂 手垢 排気ガス 汚れを強力分解 脱脂剤としても効果的◎ 万能クリーナー ブルーハワイ ハイビスカス グアバ３段階の香り 内窓外窓どちらも可 ライフィックス クリア夏仕様 500ml",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41oOgi0dwFL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.71,
+      "matched_comparison_axes": [
+        "cleaning_power",
+        "streak_free_finish"
+      ],
+      "search_key": "LIFIX CLEAR (Sea Green) 拭き筋残さず高速"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0CQVQV2GT",
+      "asin": "B0CQVQV2GT",
+      "amazon_title": "【まとめ買い】花王 ガラスマジックリン ガラスクリーナー スプレータイプ 本体400ml+詰め替え350ml×2 窓掃除 窓拭き",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71JvECUspYL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.71,
+      "matched_comparison_axes": [
+        "formulation",
+        "price_range"
+      ],
+      "search_key": "花王 ガラスマジックリン ガラスクリーナー スプレータイプ 本体"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HDBPQLC8",
+      "asin": "B0HDBPQLC8",
+      "amazon_title": "[mocoly]ガラス泡クリーナー 激泡ガラスクリーナー 強力洗浄 浴室水垢ナー 中性洗剤 油膜除去剤 車用 家庭用 万能洗剤",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81IUd80LY2L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "cleaning_power"
+      ],
+      "search_key": "ガラス泡クリーナー 激泡ガラスクリーナー 強力洗浄 浴室水垢ナー"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0HBVXBVTT",
+      "asin": "B0HBVXBVTT",
+      "amazon_title": "【掃除のプロ監修 | トリプルブロック処方】 結露防止スプレー 窓ガラス用 \"水滴・カビ・曇り防止\" 結露対策 防カビ 100ml 日本製",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61QKTxXJvoL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "formulation"
+      ],
+      "search_key": "結露防止スプレー 窓ガラス用 \"水滴・カビ・曇り防止\" 結露対策"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0FG33BP9S",
+      "asin": "B0FG33BP9S",
+      "amazon_title": "【本体＋詰替セット】スクラビングバブル ガラス用洗剤 クリーナー 液体タイプ 本体 500ml + 詰め替え用 400ml 鏡 窓ガラス用 掃除グッズ 汚れ落とし",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51Ubb4Dd9ML._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "price_range"
+      ],
+      "search_key": "スクラビングバブル ガラス用洗剤 クリーナー 液体タイプ 本体"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0DNJYKJ9V",
+      "asin": "B0DNJYKJ9V",
+      "amazon_title": "AstroAI 車用フロントガラスクリーニングツール 車用 ワイパー マイクロファイバークロス付",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/713FOFap4WL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "AstroAI 車用フロントガラスクリーニングツール 車用 ワイ"
+    }
+  ]
+}
