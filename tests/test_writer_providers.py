@@ -33,13 +33,15 @@ class WriterProviderTests(unittest.TestCase):
         self.assertFalse(metadata['fallback_used'])
         self.assertEqual(metadata['writer_model_requested'], 'primary:primary-model')
 
-    def test_availability_error_uses_certified_secondary_once(self):
-        with patch.dict('os.environ', self.env, clear=True), patch.object(writer_runtime.subprocess, 'run', side_effect=[completed(1, stderr='429 rate limit'), completed()]) as run:
-            _payload, metadata = writer_runtime.invoke_writer({}, valid_evidence())
-        self.assertEqual(run.call_count, 2)
-        self.assertTrue(metadata['fallback_used'])
-        self.assertEqual(metadata['writer_model_used'], 'secondary:secondary-model')
-        self.assertEqual(metadata['writer_attempt_count'], 2)
+    def test_availability_error_routes_to_standard_work(self):
+        with patch.dict('os.environ', self.env, clear=True), \
+             patch.object(writer_runtime.subprocess, 'run', return_value=completed(1, stderr='429 rate limit')) as run, \
+             patch.object(writer_runtime, 'request_standard_work_fallback', side_effect=RuntimeError('fallback-pending')) as fallback:
+            with self.assertRaisesRegex(RuntimeError, 'fallback-pending'):
+                writer_runtime.invoke_writer({}, valid_evidence())
+        self.assertEqual(run.call_count, 1)
+        fallback.assert_called_once()
+        self.assertEqual(fallback.call_args.kwargs['stage'], 'writer')
 
     def test_quality_or_schema_error_never_falls_back(self):
         bad = subprocess.CompletedProcess([], 0, stdout='{}', stderr='')
@@ -48,34 +50,33 @@ class WriterProviderTests(unittest.TestCase):
                 writer_runtime.invoke_writer({}, valid_evidence())
         self.assertEqual(run.call_count, 1)
 
-    def test_uncertified_secondary_is_not_used(self):
+    def test_legacy_secondary_settings_do_not_change_standard_fallback(self):
         env = {**self.env, 'SELLEMY_WRITER_SECONDARY_CERTIFIED': 'false'}
-        with patch.dict('os.environ', env, clear=True), patch.object(writer_runtime.subprocess, 'run', return_value=completed(1, stderr='service unavailable')) as run:
-            with self.assertRaises(writer_runtime.WriterInvocationError):
+        with patch.dict('os.environ', env, clear=True), \
+             patch.object(writer_runtime.subprocess, 'run', return_value=completed(1, stderr='service unavailable')) as run, \
+             patch.object(writer_runtime, 'request_standard_work_fallback', side_effect=RuntimeError('fallback-pending')) as fallback:
+            with self.assertRaisesRegex(RuntimeError, 'fallback-pending'):
                 writer_runtime.invoke_writer({}, valid_evidence())
         self.assertEqual(run.call_count, 1)
+        fallback.assert_called_once()
 
-    def test_claude_limit_invokes_codex_secondary(self):
+    def test_claude_limit_invokes_standard_work_not_codex(self):
         env = {**self.env, 'SELLEMY_WRITER_SECONDARY_KIND': 'codex'}
         with patch.dict('os.environ', env, clear=True), \
              patch.object(writer_runtime.subprocess, 'run', return_value=completed(1, stderr='You have reached your weekly limit')) as primary, \
-             patch.object(writer_runtime, 'codex_generate', return_value=valid_payload()) as secondary:
-            payload, metadata = writer_runtime.invoke_writer({}, valid_evidence())
-        self.assertEqual(payload, valid_payload())
+             patch.object(writer_runtime, 'request_standard_work_fallback', side_effect=RuntimeError('fallback-pending')) as fallback:
+            with self.assertRaisesRegex(RuntimeError, 'fallback-pending'):
+                writer_runtime.invoke_writer({}, valid_evidence())
         self.assertEqual(primary.call_count, 1)
-        self.assertEqual(secondary.call_count, 1)
-        self.assertEqual(metadata['writer_provider_used'], 'codex')
-        self.assertTrue(metadata['fallback_used'])
-        self.assertEqual(metadata['writer_attempt_count'], 2)
+        fallback.assert_called_once()
 
-    def test_claude_content_failure_does_not_invoke_codex(self):
-        env = {**self.env, 'SELLEMY_WRITER_SECONDARY_KIND': 'codex'}
-        with patch.dict('os.environ', env, clear=True), \
+    def test_claude_content_failure_does_not_invoke_standard_work(self):
+        with patch.dict('os.environ', self.env, clear=True), \
              patch.object(writer_runtime.subprocess, 'run', return_value=completed(1, stderr='invalid article schema')), \
-             patch.object(writer_runtime, 'codex_generate') as secondary:
+             patch.object(writer_runtime, 'request_standard_work_fallback') as fallback:
             with self.assertRaises(writer_runtime.WriterInvocationError):
                 writer_runtime.invoke_writer({}, valid_evidence())
-        secondary.assert_not_called()
+        fallback.assert_not_called()
 
 
 if __name__ == '__main__':

@@ -27,21 +27,17 @@ def candidate(slug='new-topic', category='beauty', score=.8):
 
 
 class ContinuousPlanningTests(unittest.TestCase):
-    def test_claude_availability_falls_back_to_codex(self):
-        env = {'SELLEMY_PLANNING_COMMAND': '/bin/claude', 'SELLEMY_PLANNING_MODEL': 'sonnet',
-               'SELLEMY_PLANNING_SECONDARY_COMMAND': '/bin/codex',
-               'SELLEMY_PLANNING_SECONDARY_MODEL': 'gpt-6-sol',
-               'SELLEMY_PLANNING_SECONDARY_CERTIFIED': 'true'}
+    def test_claude_availability_routes_to_standard_work(self):
+        env = {'SELLEMY_PLANNING_COMMAND': '/bin/claude', 'SELLEMY_PLANNING_MODEL': 'sonnet'}
         failed = subprocess.CompletedProcess([], 1, stdout='', stderr='429 weekly usage limit')
         with patch.dict('os.environ', env, clear=True), \
              patch.object(planning_runtime.subprocess, 'run', return_value=failed) as primary, \
-             patch.object(planning_runtime, 'codex_generate', return_value={'candidates': [candidate()]}) as secondary:
-            result = planning_runtime.discover_candidates()
+             patch.object(planning_runtime, 'request_standard_work_fallback', side_effect=RuntimeError('fallback-pending')) as fallback:
+            with self.assertRaisesRegex(RuntimeError, 'fallback-pending'):
+                planning_runtime.discover_candidates()
         self.assertEqual(primary.call_count, 1)
-        self.assertEqual(secondary.call_count, 1)
-        self.assertEqual(result[0]['slug'], 'new-topic')
-        self.assertEqual(result.provider_metadata['planning_provider_used'], 'codex:gpt-6-sol')
-        self.assertEqual(result.provider_metadata['planning_attempt_count'], 2)
+        fallback.assert_called_once()
+        self.assertEqual(fallback.call_args.kwargs['stage'], 'planning')
 
     def test_planning_schema_failure_never_falls_back(self):
         env = {'SELLEMY_PLANNING_COMMAND': '/bin/claude', 'SELLEMY_PLANNING_MODEL': 'sonnet',
@@ -51,10 +47,10 @@ class ContinuousPlanningTests(unittest.TestCase):
         bad = subprocess.CompletedProcess([], 0, stdout='{"structured_output": {}}', stderr='')
         with patch.dict('os.environ', env, clear=True), \
              patch.object(planning_runtime.subprocess, 'run', return_value=bad), \
-             patch.object(planning_runtime, 'codex_generate') as secondary:
+             patch.object(planning_runtime, 'request_standard_work_fallback') as fallback:
             with self.assertRaises(planning_runtime.PlanningError):
                 planning_runtime.discover_candidates()
-        secondary.assert_not_called()
+        fallback.assert_not_called()
 
     def test_planning_nonavailability_error_never_falls_back(self):
         env = {'SELLEMY_PLANNING_COMMAND': '/bin/claude', 'SELLEMY_PLANNING_MODEL': 'sonnet',
@@ -64,10 +60,10 @@ class ContinuousPlanningTests(unittest.TestCase):
         bad = subprocess.CompletedProcess([], 1, stdout='', stderr='content rejected')
         with patch.dict('os.environ', env, clear=True), \
              patch.object(planning_runtime.subprocess, 'run', return_value=bad), \
-             patch.object(planning_runtime, 'codex_generate') as secondary:
+             patch.object(planning_runtime, 'request_standard_work_fallback') as fallback:
             with self.assertRaises(planning_runtime.PlanningError):
                 planning_runtime.discover_candidates()
-        secondary.assert_not_called()
+        fallback.assert_not_called()
 
     def test_ranking_rejects_existing_intent_and_balances_categories(self):
         with tempfile.TemporaryDirectory() as tmp:

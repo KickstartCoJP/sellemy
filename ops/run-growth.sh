@@ -18,13 +18,6 @@ export SELLEMY_EYECATCH_QUALITY=high
 export SELLEMY_EYECATCH_TIMEOUT_SECONDS=300
 export SELLEMY_WRITER_PRIMARY_COMMAND=/opt/homebrew/bin/claude
 export SELLEMY_WRITER_PRIMARY_MODEL=sonnet
-export SELLEMY_WRITER_SECONDARY_COMMAND=/opt/homebrew/bin/codex
-export SELLEMY_WRITER_SECONDARY_KIND=codex
-export SELLEMY_WRITER_SECONDARY_MODEL=gpt-6-sol
-export SELLEMY_WRITER_SECONDARY_CERTIFIED=true
-export SELLEMY_PLANNING_SECONDARY_COMMAND=/opt/homebrew/bin/codex
-export SELLEMY_PLANNING_SECONDARY_MODEL=gpt-6-sol
-export SELLEMY_PLANNING_SECONDARY_CERTIFIED=true
 if [[ -n "$(git status --porcelain)" ]]; then echo "$(date -Iseconds) dirty working tree; abort"; exit 2; fi
 git fetch origin main --quiet
 if [[ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]]; then echo "$(date -Iseconds) HEAD differs from origin/main; abort"; exit 3; fi

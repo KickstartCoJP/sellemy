@@ -10,8 +10,8 @@ from pathlib import Path
 
 from analytics_feedback import load_feedback, topic_signal
 from category_metadata import CATEGORIES
-from codex_provider import CodexProviderError, generate as codex_generate
 from writer_runtime import AVAILABILITY_PATTERN, _diagnostic
+from standard_work_fallback import request_standard_work_fallback
 
 ROOT = Path(__file__).resolve().parents[1]
 ARTICLES = ROOT / 'json' / 'articles.json'
@@ -112,19 +112,8 @@ def discover_candidates() -> list[dict]:
     except PlanningError as exc:
         if str(exc) != 'planning primary availability failure':
             raise
-        secondary_command = os.environ.get('SELLEMY_PLANNING_SECONDARY_COMMAND', '').strip()
-        secondary_model = os.environ.get('SELLEMY_PLANNING_SECONDARY_MODEL', '').strip()
-        certified = os.environ.get('SELLEMY_PLANNING_SECONDARY_CERTIFIED', '').lower() in ('1', 'true', 'yes')
-        if not secondary_command or not secondary_model or not certified:
-            raise PlanningError('planning primary unavailable; certified Secondary Planning is unconfigured') from exc
-        try:
-            value = codex_generate(tuple(shlex.split(secondary_command)), secondary_model,
-                                   PLANNING_SCHEMA, prompt, timeout=timeout)
-        except CodexProviderError as fallback_error:
-            raise PlanningError(f'planning secondary failed: {fallback_error}') from fallback_error
-        metadata.update({'planning_provider_used': f'codex:{secondary_model}',
-                         'fallback_used': True, 'fallback_reason': 'primary_availability_error',
-                         'planning_attempt_count': 2})
+        request_standard_work_fallback(stage='planning', prompt=prompt, schema=PLANNING_SCHEMA)
+        raise AssertionError('unreachable')
     if not isinstance(value, dict) or not isinstance(value.get('candidates'), list):
         raise PlanningError('planning provider returned no candidate set')
     return CandidateBatch(value['candidates'], metadata)
