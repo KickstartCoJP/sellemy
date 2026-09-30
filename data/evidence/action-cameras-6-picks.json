@@ -1,0 +1,140 @@
+{
+  "slug": "action-cameras-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/action-cameras-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/action-cameras-6-picks/action-cameras-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "image-quality",
+      "label": "画質・手ブレ補正",
+      "keywords": [
+        "4K",
+        "手ブレ補正"
+      ]
+    },
+    {
+      "id": "durability",
+      "label": "防水・耐衝撃・バッテリー",
+      "keywords": [
+        "防水",
+        "バッテリー持続"
+      ]
+    },
+    {
+      "id": "portability",
+      "label": "携帯性・装着方法",
+      "keywords": [
+        "マウント",
+        "軽量"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格帯",
+      "keywords": [
+        "コスパ",
+        "アクセサリーセット"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "durability",
+      "image-quality",
+      "portability"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0HJGJYPLG",
+      "asin": "B0HJGJYPLG",
+      "amazon_title": "[Maplefea]航空級ブレ補正ミニカメラ 真の4K アクションカメラ 小型 ハンディカメラ ミニ軽量ボディ スマホ連携",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51b1Q6nG0YL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.76,
+      "matched_comparison_axes": [
+        "image-quality",
+        "portability"
+      ],
+      "search_key": "航空級ブレ補正ミニカメラ 真の4K アクションカメラ 小型 ハン"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0H5CR9LZF",
+      "asin": "B0H5CR9LZF",
+      "amazon_title": "Insta360 X6 通常版 8K 360度カメラ 1/1.1インチセンサー AI編集 最大140分撮影 防水 Vlog アクションカメラ",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61nE70GPAKL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.58,
+      "matched_comparison_axes": [
+        "durability"
+      ],
+      "search_key": "Insta360 X6 通常版 8K 360度カメラ 1/1.1"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HKM8BD5B",
+      "asin": "B0HKM8BD5B",
+      "amazon_title": "アクションカメラ ウェアラブルカメラ、160度広角、WiFiスマホ連携、32GBメモリーカード付属、タイムラプス撮影、旅行・アウトドア・スポーツ対応、ブラックアクションカメラ ウェアラブルカメラ Vlogビデオカメラ ボディカメラ 160度広角小型",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61rUjYteGEL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [],
+      "search_key": "アクションカメラ ウェアラブルカメラ、160度広角、WiFiスマ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0H1MFVT6Y",
+      "asin": "B0H1MFVT6Y",
+      "amazon_title": "【2026新型】アクションカメラ 330°自動顏認識追従回転 ビデオカメラ 4K 330°左右回転 180°上下回転 小型カメラ 1.72インチタッチパネル 手ブレ補正 美肌 vlog カメラ Wi-Fi転送 コンパクト ライブ配信 TikTok YouTube対応 32GBカード付き 日本語説明書 スペースグレー",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61BDtz5SxgL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [
+        "image-quality"
+      ],
+      "search_key": "アクションカメラ 330°自動顏認識追従回転 ビデオカメラ 4K"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0H15291KM",
+      "asin": "B0H15291KM",
+      "amazon_title": "AiMike アクションカメラ ポケットサイズ 4K 7500万画素 シングル軸330度自動追跡 回転レンズ WIFI転送機能 全画素高速AF 1.72インチタッチ操作 32GBマイクロSDカード付き 自動顔追跡 スマホに送れる 小型Vlogビデオ デジカメ ボディ ウェアラブル デジタルカメラ 2400mAhバッテリー内蔵 軽量 コンパクト 旅行 アウトドア ブラック",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/510TbqT3-vL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [
+        "image-quality",
+        "portability"
+      ],
+      "search_key": "AiMike アクションカメラ ポケットサイズ 4K 7500万"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0G93LS8S3",
+      "asin": "B0G93LS8S3",
+      "amazon_title": "Global Recycled Standard",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71d3hiUSWmL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [],
+      "search_key": "Global Recycled Standard"
+    }
+  ]
+}
