@@ -1,0 +1,140 @@
+{
+  "slug": "medicated-hand-soaps-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/medicated-hand-soaps-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/medicated-hand-soaps-6-picks/medicated-hand-soaps-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "efficacy",
+      "label": "殺菌・洗浄力",
+      "keywords": [
+        "薬用",
+        "殺菌成分",
+        "医薬部外品"
+      ]
+    },
+    {
+      "id": "texture",
+      "label": "使用感・香り",
+      "keywords": [
+        "泡タイプ",
+        "保湿成分",
+        "香り"
+      ]
+    },
+    {
+      "id": "value",
+      "label": "容量・コスパ",
+      "keywords": [
+        "詰め替え",
+        "大容量",
+        "ポンプ式"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "efficacy",
+      "texture",
+      "value"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0H7WHZKQX",
+      "asin": "B0H7WHZKQX",
+      "amazon_title": "【LDKベストバイ受賞】【医薬部外品】ハンドソープ 泡 ミューズ オリジナルの香り （本体250ml＋詰め替え700ml×2個）殺菌 消毒 手洗い",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/717UpjObKKL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.89,
+      "matched_comparison_axes": [
+        "efficacy",
+        "texture",
+        "value"
+      ],
+      "search_key": "ハンドソープ 泡 ミューズ オリジナルの香り （本体250ml＋"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0H7WP7PGV",
+      "asin": "B0H7WP7PGV",
+      "amazon_title": "【医薬部外品】ハンドソープ 泡 ミューズ フルーティフレッシュ （本体250ml＋詰め替え700ml×2個）殺菌 消毒 除菌",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61Gw6N5yQuL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "efficacy",
+        "value"
+      ],
+      "search_key": "ハンドソープ 泡 ミューズ フルーティフレッシュ （本体250m"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GNPYN21T",
+      "asin": "B0GNPYN21T",
+      "amazon_title": "サラヤ オートソープディスペンサー ホワイト コンパクトサイズ 300ml ノータッチ ハンドソープ 自動泡出 吐出量調節 丸洗い 複数薬液 詰替 可能 IPX6 高防水",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61LnORmwM7L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "サラヤ オートソープディスペンサー ホワイト コンパクトサイズ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0G5G6CBPN",
+      "asin": "B0G5G6CBPN",
+      "amazon_title": "東京サラヤ ハンドラボ 薬用泡ハンドソープ (× 2)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61eiF2qRghL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "efficacy"
+      ],
+      "search_key": "東京サラヤ ハンドラボ 薬用泡ハンドソープ (× 2)"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0DJBL9F4Y",
+      "asin": "B0DJBL9F4Y",
+      "amazon_title": "ミュ-ズ ミューズ Muse 泡 ハンドソープ ボタニカル ホワイト (ホワイトリリー&ベルガモットの香り) 本体 250mL + 詰め替え 700mL × 2個 殺菌 消毒",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61QpbvLtrZL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "texture",
+        "value"
+      ],
+      "search_key": "ミュ-ズ ミューズ Muse 泡 ハンドソープ ボタニカル ホワ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0D911DJWL",
+      "asin": "B0D911DJWL",
+      "amazon_title": "サラヤ ウォシュボン ハーバル薬用ハンドソープ 本体１個＋詰め替え1個セット おまけ付き",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61Kp9PVMzzL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "efficacy",
+        "value"
+      ],
+      "search_key": "サラヤ ウォシュボン ハーバル薬用ハンドソープ 本体１個＋詰め替"
+    }
+  ]
+}
