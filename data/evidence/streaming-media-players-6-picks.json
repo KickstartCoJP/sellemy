@@ -1,0 +1,132 @@
+{
+  "slug": "streaming-media-players-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/streaming-media-players-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/streaming-media-players-6-picks/streaming-media-players-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "video_resolution",
+      "label": "対応画質",
+      "keywords": [
+        "4K",
+        "HDR",
+        "フルHD"
+      ]
+    },
+    {
+      "id": "app_support",
+      "label": "対応アプリ・サービス",
+      "keywords": [
+        "Netflix",
+        "YouTube",
+        "Amazon Prime"
+      ]
+    },
+    {
+      "id": "remote_control",
+      "label": "操作性・リモコン",
+      "keywords": [
+        "音声操作",
+        "リモコン",
+        "操作性"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "app_support",
+      "remote_control",
+      "video_resolution"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0H6W2GKDL",
+      "asin": "B0H6W2GKDL",
+      "amazon_title": "交換用リモコン for Fire-TV Stick 第1/2/3世代/4K/4K Max/Lite/TV Cube 対応 プリセットAPPボタン搭載 音声認識機能付きテレビコントロール、日本語取扱説明書付属 電池別売 (L5B83G)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/513pz9DoGmL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.67,
+      "matched_comparison_axes": [
+        "remote_control",
+        "video_resolution"
+      ],
+      "search_key": "交換用リモコン for Fire-TV Stick 第1/2/3"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0H7QP68X5",
+      "asin": "B0H7QP68X5",
+      "amazon_title": "MAXWIN Fire TV Stick HD 第2世代対応 車載 アダプター ディスプレイオーディオ HDMI入力 ワイヤレス CarPlay Android Auto 2K解像度 ミラーリング 車でネットフリックス YouTube 見る カーナビ 外部入力",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51vE+M8AzIL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.49,
+      "matched_comparison_axes": [
+        "app_support"
+      ],
+      "search_key": "MAXWIN Fire TV Stick HD 第2世代対応 車"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0H7SZ5CN8",
+      "asin": "B0H7SZ5CN8",
+      "amazon_title": "スマートTV Stick (第3世代) | HD対応スタンダードモデル | ストリーミングメディアプレイヤー【2021年発売】",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51Pa7JgD5LL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [],
+      "search_key": "スマートTV Stick (第3世代) | HD対応スタンダード"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0H262JBF7",
+      "asin": "B0H262JBF7",
+      "amazon_title": "【セット買い】Amazon Fire TV Stick 4K Plus + Amazon Fire TV Soundbar Plus",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/31gudm9sFKL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "video_resolution"
+      ],
+      "search_key": "Amazon Fire TV Stick 4K Plus + A"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0GW8SG4Z3",
+      "asin": "B0GW8SG4Z3",
+      "amazon_title": "スマートTV Stick セレクト HD対応スタンダードモデル ストリーミングメディアプレイヤー",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51Pa7JgD5LL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [],
+      "search_key": "スマートTV Stick セレクト HD対応スタンダードモデル"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0GT8C1PB9",
+      "asin": "B0GT8C1PB9",
+      "amazon_title": "スマートTV Stick HD対応スタンダードモデル ストリーミングメディアプレイヤー2024年発売",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61p-9rg-oTL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [],
+      "search_key": "スマートTV Stick HD対応スタンダードモデル ストリーミ"
+    }
+  ]
+}
