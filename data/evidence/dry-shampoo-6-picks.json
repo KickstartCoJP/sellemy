@@ -1,0 +1,144 @@
+{
+  "slug": "dry-shampoo-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/dry-shampoo-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/dry-shampoo-6-picks/dry-shampoo-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "formulation",
+      "label": "剤形（スプレー・パウダー・シート）",
+      "keywords": [
+        "スプレータイプ",
+        "パウダータイプ",
+        "シートタイプ"
+      ]
+    },
+    {
+      "id": "scent",
+      "label": "香り・使用感",
+      "keywords": [
+        "無香料",
+        "香り付き",
+        "さらさら感"
+      ]
+    },
+    {
+      "id": "hair_type",
+      "label": "対応する髪質・頭皮タイプ",
+      "keywords": [
+        "頭皮ケア",
+        "皮脂吸着",
+        "敏感肌対応"
+      ]
+    },
+    {
+      "id": "portability",
+      "label": "携帯性・容量",
+      "keywords": [
+        "携帯用",
+        "大容量",
+        "ミニサイズ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "formulation",
+      "hair_type",
+      "portability",
+      "scent"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0GJPY6ZBB",
+      "asin": "B0GJPY6ZBB",
+      "amazon_title": "Diane(ダイアン) 【大容量サイズ】 ドライシャンプー [無香料] 150g ダイアン パーフェクトビューティー",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61KHeoE9aWL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.76,
+      "matched_comparison_axes": [
+        "portability",
+        "scent"
+      ],
+      "search_key": "Diane(ダイアン) ドライシャンプー 150g ダイアン パ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0FCFTZ4WQ",
+      "asin": "B0FCFTZ4WQ",
+      "amazon_title": "plus eau プリュスオー 2wayドライシャンプー 40g ジャスミン＆リリーの香り スプレータイプ 簡単さらふわリセット ベタつき予防",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/618xOzk1pwL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.58,
+      "matched_comparison_axes": [
+        "formulation"
+      ],
+      "search_key": "plus eau プリュスオー 2wayドライシャンプー 40g"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B09LYN68PG",
+      "asin": "B09LYN68PG",
+      "amazon_title": "バスクリン ドライシャンプー 泡のふくだけシャンプー ベビー 介護 防災 震災 グッズ 入院時 頭皮ケア 150g",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61ZWJfcAAgL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.58,
+      "matched_comparison_axes": [
+        "hair_type"
+      ],
+      "search_key": "バスクリン ドライシャンプー 泡のふくだけシャンプー ベビー 介"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0HB6TLJWZ",
+      "asin": "B0HB6TLJWZ",
+      "amazon_title": "【美容師と共同開発 | ヒアルロン酸×5種の植物エキス】 SALANOA ドライシャンプー \"スッキリ爽快\" 全身OK 水なしシャンプー シトラスの香り",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71Fyu9Z+QsL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [],
+      "search_key": "SALANOA ドライシャンプー \"スッキリ爽快\" 全身OK 水"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0H6KW6VX5",
+      "asin": "B0H6KW6VX5",
+      "amazon_title": "らくあわ ドライシャンプー 200g 無香料 訪問美容監修 水のいらない 泡シャンプー 洗い流し不要 日本製 介護 在宅ケア",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/31uNnWpr3XL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [
+        "scent"
+      ],
+      "search_key": "らくあわ ドライシャンプー 200g 無香料 訪問美容監修 水の"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0GTXDW1F3",
+      "asin": "B0GTXDW1F3",
+      "amazon_title": "バティスト Batiste ドライシャンプー タンジェリンツイスト dry shampoo シトラスティーの香り 90g",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51z-kDp1VuL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [],
+      "search_key": "バティスト Batiste ドライシャンプー タンジェリンツイス"
+    }
+  ]
+}

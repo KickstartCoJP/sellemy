@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-dry-shampoo-6-picks-7bbd0ac3355712aa",
+  "request_sha256": "7bbd0ac3355712aa2845c3ab3c49a71a73ce7c4dbf449d557cebc2848132a186",
+  "image_sha256": "6b2bc8d747d31b2712707941146ed0ee0bbfb824f94f9a829d556249ac1e48dc",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-10-01T20:27:44.716732+00:00"
+}
