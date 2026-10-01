@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-rain-coats-ponchos-6-picks-b8f94eefac13b1c0",
+  "request_sha256": "b8f94eefac13b1c0a617477eed204d2d3e7175c9c634d12247db6d2bd70686a6",
+  "image_sha256": "a382b31feb7983f4fc872134cce64c3cc134d9ac7acfb4113481918656a011af",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-10-01T10:24:19.235765+00:00"
+}

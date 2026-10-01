@@ -1,0 +1,154 @@
+{
+  "slug": "rain-coats-ponchos-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/rain-coats-ponchos-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/rain-coats-ponchos-6-picks/rain-coats-ponchos-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "waterproof_breathability",
+      "label": "防水性能・透湿性",
+      "keywords": [
+        "防水",
+        "蒸れにくい",
+        "耐水圧"
+      ]
+    },
+    {
+      "id": "portability",
+      "label": "携帯性・収納のしやすさ",
+      "keywords": [
+        "コンパクト収納",
+        "持ち運び",
+        "軽量"
+      ]
+    },
+    {
+      "id": "size_scene",
+      "label": "サイズ展開・着用シーン",
+      "keywords": [
+        "サイズ展開",
+        "自転車",
+        "リュック対応"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格",
+      "keywords": [
+        "コスパ",
+        "セット購入"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "portability",
+      "size_scene",
+      "waterproof_breathability"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0HHCR4WCC",
+      "asin": "B0HHCR4WCC",
+      "amazon_title": "[JOYICAR] レインコート 自転車 レインコート レディース メンズ リュック対応 軽量 快適 カッパ ポンチョ ポケット付き 2重防水 撥水 防風 ゴム袖口 レインウェア バイク 通勤 通学",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61esXrsEf+L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.89,
+      "matched_comparison_axes": [
+        "portability",
+        "size_scene",
+        "waterproof_breathability"
+      ],
+      "search_key": "レインコート 自転車 レインコート レディース メンズ リュック"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HH4JMGFD",
+      "asin": "B0HH4JMGFD",
+      "amazon_title": "[X-TRAK] レインポンチョ 超軽量 蒸れない 快適 レインコート 自転車 リュック対応 カッパ 超撥水 豪雨対応 速乾 反射テープ 収納袋付き",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71MzeNCBWJL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "portability",
+        "size_scene"
+      ],
+      "search_key": "レインポンチョ 超軽量 蒸れない 快適 レインコート 自転車 リ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GZZV3TLP",
+      "asin": "B0GZZV3TLP",
+      "amazon_title": "[ELVAA] レインコート 自転車 リュック対応 レディース メンズ 【二重透明レインバイザー付き】 ロング丈 レインウェア レインポンチョ カッパ 雨具 梅雨対策 豪雨対応 台風対策 軽量 バイク 原付 通勤 通学 男女兼用 M-XL",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61bw9mfpThL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "portability",
+        "size_scene"
+      ],
+      "search_key": "レインコート 自転車 リュック対応 レディース メンズ ロング丈"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0GWQ49TV8",
+      "asin": "B0GWQ49TV8",
+      "amazon_title": "[EnjoIt] 自転車用レインポンチョ 男女兼用 ロング丈 防水レインコート 袖付き 通学 通勤 リュック対応 PVC 防暴雨 つば付きフード 反射ライン 収納袋付き G5095",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71yVQCqmHtL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "size_scene",
+        "waterproof_breathability"
+      ],
+      "search_key": "自転車用レインポンチョ 男女兼用 ロング丈 防水レインコート 袖"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0GRLWQF8L",
+      "asin": "B0GRLWQF8L",
+      "amazon_title": "[Ymgot] レインポンチョ レディース メンズ レインコート 自転車 バイク 男女兼用 雨合羽 カッパ 合羽 軽量 おしゃれ 雨具 防水 通勤 通学",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51gZ7bBqbnL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "portability",
+        "size_scene",
+        "waterproof_breathability"
+      ],
+      "search_key": "レインポンチョ レディース メンズ レインコート 自転車 バイク"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0GGB6DGF1",
+      "asin": "B0GGB6DGF1",
+      "amazon_title": "[Fomte] レインコート 自転車 メンズ 【2026新型 二重レインバイザー】 レインコート リュック対応 バイク 大きいサイズ 防水 防風 軽量",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61vR6YXvhiL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "portability",
+        "size_scene",
+        "waterproof_breathability"
+      ],
+      "search_key": "レインコート 自転車 メンズ レインコート リュック対応 バイク"
+    }
+  ]
+}
