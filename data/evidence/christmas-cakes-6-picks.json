@@ -1,0 +1,127 @@
+{
+  "slug": "christmas-cakes-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/christmas-cakes-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/christmas-cakes-6-picks/christmas-cakes-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "size",
+      "label": "サイズ・人数目安",
+      "keywords": [
+        "ホールサイズ",
+        "人数分",
+        "カット済み"
+      ]
+    },
+    {
+      "id": "flavor",
+      "label": "味・デザインの特徴",
+      "keywords": [
+        "生クリーム",
+        "チョコレート",
+        "フルーツ"
+      ]
+    },
+    {
+      "id": "ordering",
+      "label": "予約・配送方法",
+      "keywords": [
+        "冷凍配送",
+        "予約締切",
+        "受取日"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "flavor"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0FY5Y9LXH",
+      "asin": "B0FY5Y9LXH",
+      "amazon_title": "白桃チーズ＆チョコケーキセット 2種 4号 レアチーズ ベルギー チョコレート ケーキ 白桃 モモ もも ギフト プレゼント 贈り物 冷凍 記念日 クリスマス バレンタイン ホワイトデー 女子会 ティータイム 誕生日 冷凍食品 敬老の日 残暑見舞",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/712Ls1LjemL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.53,
+      "matched_comparison_axes": [
+        "flavor"
+      ],
+      "search_key": "白桃チーズ＆チョコケーキセット 2種 4号 レアチーズ ベルギー"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0H9BZVX49",
+      "asin": "B0H9BZVX49",
+      "amazon_title": "FAKEチーズケーキ ギフト 北海道 チーズケーキ お中元 誕生日 記念日 お取り寄せ スイーツ 人気 洋菓子 プレゼント 贈り物 お歳暮",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61by4We3boL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "FAKEチーズケーキ ギフト 北海道 チーズケーキ お中元 誕生"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0FL7SF8WW",
+      "asin": "B0FL7SF8WW",
+      "amazon_title": "【ラニーチーズ】羽二重ベイクドチーズケーキ チーズケーキ RUNNY CHEESE 羽二重餅 ベイクドチーズ スイーツギフト",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61iuSDNzWlL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "羽二重ベイクドチーズケーキ チーズケーキ RUNNY CHEES"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0DFHFK2CT",
+      "asin": "B0DFHFK2CT",
+      "amazon_title": "「銀座ブールミッシュ」監修 フレーズノエル お届け：12月24日 クリスマスケーキ 予約 2026",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81BwbC1I6lL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "「銀座ブールミッシュ」監修 フレーズノエル お届け：12月24日"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0CKYYPKZ5",
+      "asin": "B0CKYYPKZ5",
+      "amazon_title": "天然生活 フルーツショートケーキ (5号 直径約15cm) パーティー ホールケーキ 洋菓子 スイーツ 誕生日ケーキ ギフト 手土産 冷凍",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61sZmLTTwEL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "flavor"
+      ],
+      "search_key": "天然生活 フルーツショートケーキ (5号 直径約15cm) パー"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0CKSVM6YW",
+      "asin": "B0CKSVM6YW",
+      "amazon_title": "「ホテルオークラ」キャラメルダブルナッツショコラ お届け：12月23日 クリスマスケーキ 予約 2026",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81l4Eq7D7AL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "「ホテルオークラ」キャラメルダブルナッツショコラ お届け：12月"
+    }
+  ]
+}

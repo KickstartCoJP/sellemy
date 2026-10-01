@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-christmas-cakes-6-picks-6c932270e00ad237",
+  "request_sha256": "6c932270e00ad237bd34b46469145a001cc34fa6c40fd029f8afc54590318d37",
+  "image_sha256": "f9876f4daa75a90ccd0dce087b438ac33963198f7cd09c962004642bf88ee47f",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-10-01T08:20:20.636859+00:00"
+}
