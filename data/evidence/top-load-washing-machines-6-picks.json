@@ -1,0 +1,137 @@
+{
+  "slug": "top-load-washing-machines-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/top-load-washing-machines-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/top-load-washing-machines-6-picks/top-load-washing-machines-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "capacity",
+      "label": "洗濯容量・設置サイズ",
+      "keywords": [
+        "容量",
+        "設置サイズ",
+        "一人暮らし"
+      ]
+    },
+    {
+      "id": "course",
+      "label": "洗浄コース・機能",
+      "keywords": [
+        "洗浄コース",
+        "槽洗浄",
+        "自動投入"
+      ]
+    },
+    {
+      "id": "care",
+      "label": "お手入れのしやすさ",
+      "keywords": [
+        "お手入れ",
+        "フィルター掃除",
+        "静音"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "capacity",
+      "care",
+      "course"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0G7FMTL5R",
+      "asin": "B0G7FMTL5R",
+      "amazon_title": "TOSHIBA(東芝) 全自動洗濯機 7kg AW-700Z2(K) ボディ幅51.5㎝ ステンレス槽 槽洗浄・槽乾燥 縦型 静音 部屋干し 保護カバー ピュアブラック",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61gIneD34TL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.685,
+      "matched_comparison_axes": [
+        "care",
+        "course"
+      ],
+      "search_key": "TOSHIBA(東芝) 全自動洗濯機 7kg AW-700Z2("
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HHDQ4R32",
+      "asin": "B0HHDQ4R32",
+      "amazon_title": "全自動洗濯機 7kg 縦型 大容量 家庭用 選べる水位4段階 10種類プログラム 風乾燥モード 上開き 24時間タイマー予約 チャイルドロック ステンレス槽 一人暮らし 引越し 家電 (ホワイト)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61iUhymWuzL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.505,
+      "matched_comparison_axes": [
+        "capacity"
+      ],
+      "search_key": "全自動洗濯機 7kg 縦型 大容量 家庭用 選べる水位4段階 1"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HBPPXQHJ",
+      "asin": "B0HBPPXQHJ",
+      "amazon_title": "全自動洗濯機 8kg 縦型 洗濯脱水 10種類コース 生乾きニオイ抑制 風乾燥機能 24時間予約タイマー ステンレス槽 槽洗浄 チャイルドロック 引越し 家電 毛布洗い対応 排水ホース付属 洗剤投入口 ムラなく洗浄 底部保護カバー (ホワイト)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61sK1JeqsXL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "course"
+      ],
+      "search_key": "全自動洗濯機 8kg 縦型 洗濯脱水 10種類コース 生乾きニオ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0H6X2ZSNJ",
+      "asin": "B0H6X2ZSNJ",
+      "amazon_title": "TOSHIBA(東芝) 全自動洗濯機 8kg AW-8DH5(W) グランホワイト",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61TaBDX5fIL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "TOSHIBA(東芝) 全自動洗濯機 8kg AW-8DH5(W"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0GWCJYB7F",
+      "asin": "B0GWCJYB7F",
+      "amazon_title": "パナソニック 全自動洗濯機 12kg NA-FA12V6-W ホワイト トリプル自動投入 スゴ落ち泡洗浄 ダウンジャケットコース 毛布コース",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61vpC95Q2eL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "course"
+      ],
+      "search_key": "パナソニック 全自動洗濯機 12kg NA-FA12V6-W ホ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0G2YF1LNF",
+      "asin": "B0G2YF1LNF",
+      "amazon_title": "SAMKYO 洗濯機 6kg 一人暮らし 1-3人用 簡単操作 スリム 最短11分洗濯 部屋干し 槽洗浄 予約機能 全自動 ステンレス槽 縦型 B600 ホワイト",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61ki1TWpGOL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "capacity",
+        "course"
+      ],
+      "search_key": "SAMKYO 洗濯機 6kg 一人暮らし 1-3人用 簡単操作"
+    }
+  ]
+}
