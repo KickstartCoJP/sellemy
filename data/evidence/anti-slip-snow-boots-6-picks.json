@@ -1,0 +1,137 @@
+{
+  "slug": "anti-slip-snow-boots-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/anti-slip-snow-boots-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/anti-slip-snow-boots-6-picks/anti-slip-snow-boots-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "grip",
+      "label": "防滑性能・ソール設計",
+      "keywords": [
+        "滑りにくい",
+        "凹凸ソール",
+        "雪道対応"
+      ]
+    },
+    {
+      "id": "warmth",
+      "label": "防水・保温性",
+      "keywords": [
+        "防水加工",
+        "裏ボア",
+        "撥水"
+      ]
+    },
+    {
+      "id": "size",
+      "label": "サイズ展開・デザイン",
+      "keywords": [
+        "サイズ豊富",
+        "レディース",
+        "メンズ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "size",
+      "warmth"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0HB4DY54Y",
+      "asin": "B0HB4DY54Y",
+      "amazon_title": "[FitVille] スノーブーツ メンズ 幅広 4E 冬靴 防寒靴 2E 裏ボア 保温 撥水 防滑 軽量 雪靴 ウィンターブーツ アウトドア",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/7116TJrKExL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.76,
+      "matched_comparison_axes": [
+        "size",
+        "warmth"
+      ],
+      "search_key": "スノーブーツ メンズ 幅広 4E 冬靴 防寒靴 2E 裏ボア 保"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HCZH1TDZ",
+      "asin": "B0HCZH1TDZ",
+      "amazon_title": "[ZUSERIS]スノーブーツ メンズ ウィンターブーツ レディース スノーシューズ 防寒靴 冬靴 マジックテープ 介護用 幅広 綿靴 雪靴",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61LKzPghJJL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [
+        "size"
+      ],
+      "search_key": "スノーブーツ メンズ ウィンターブーツ レディース スノーシュー"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GG9KQPWS",
+      "asin": "B0GG9KQPWS",
+      "amazon_title": "スノーブーツ レディース 防水防滑 防寒ブーツ 歩きやすい 冬 スノーシューズ 裏起毛 暖かい 軽量 フラット 雪靴 防寒 アンクル 雪道",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61vLFib1ocL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [
+        "size"
+      ],
+      "search_key": "スノーブーツ レディース 防水防滑 防寒ブーツ 歩きやすい 冬"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0FSDGPQK3",
+      "asin": "B0FSDGPQK3",
+      "amazon_title": "[mxcgzl] スノーブーツ メンズ レディース スノーシューズ 防寒靴 防水 防滑 裏起毛 軽量 ショート 登山靴 滑らない ウォーキング 登山 通勤 通学 カジュアル アウトドア 男女兼用",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51NNW+sGinL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [
+        "size"
+      ],
+      "search_key": "スノーブーツ メンズ レディース スノーシューズ 防寒靴 防水"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0FJLFTXDM",
+      "asin": "B0FJLFTXDM",
+      "amazon_title": "[モズ] メンズ スノーブーツ 防寒モック 防水 防滑 防寒 裏フリース ローカット 5683",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61+lRbzMtZL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [
+        "size"
+      ],
+      "search_key": "メンズ スノーブーツ 防寒モック 防水 防滑 防寒 裏フリース"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0FH9QKNF8",
+      "asin": "B0FH9QKNF8",
+      "amazon_title": "[モズ] メンズ スノーブーツ 防水 防滑 防寒 中綿×ウレタン×裏フリース ロング丈 5681",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/718wSBUGCTL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [
+        "size"
+      ],
+      "search_key": "メンズ スノーブーツ 防水 防滑 防寒 中綿×ウレタン×裏フリー"
+    }
+  ]
+}
