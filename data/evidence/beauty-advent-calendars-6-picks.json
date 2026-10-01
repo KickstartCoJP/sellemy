@@ -1,0 +1,126 @@
+{
+  "slug": "beauty-advent-calendars-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/beauty-advent-calendars-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/beauty-advent-calendars-6-picks/beauty-advent-calendars-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "contents",
+      "label": "内容量・ブランド構成",
+      "keywords": [
+        "アイテム数",
+        "ブランド",
+        "フルサイズ",
+        "ミニサイズ"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格・コストパフォーマンス",
+      "keywords": [
+        "価格",
+        "コスパ",
+        "合計金額換算"
+      ]
+    },
+    {
+      "id": "design",
+      "label": "デザイン・ギフト性",
+      "keywords": [
+        "パッケージ",
+        "限定デザイン",
+        "プレゼント向け"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "design"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0FP585WR3",
+      "asin": "B0FP585WR3",
+      "amazon_title": "Erindeアドベントカレンダー コスメ 12個入り アドベントカレンダー コフレ アドベントカレンダー 女性向け クリスマス コスメセット クリスマスコフレ メイクセット フル美容メイクアップ ハンドクリーム アイシャドウ 口紅 アクセサリークリスマスプレゼント 新年限定デザイン",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81PTv0dDSnL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.53,
+      "matched_comparison_axes": [
+        "design"
+      ],
+      "search_key": "Erindeアドベントカレンダー コスメ 12個入り アドベント"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HKVLLPG1",
+      "asin": "B0HKVLLPG1",
+      "amazon_title": "サンリオ キッズコスメ アドベントカレンダー Sanrio Kids Cosme Advent Calendar",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51I9K7rxYWL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "サンリオ キッズコスメ アドベントカレンダー Sanrio Ki"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HDT7TPBK",
+      "asin": "B0HDT7TPBK",
+      "amazon_title": "メイクアップアドベントカレンダー2026、24点入りクリスマスホリデーギフトセット、2026年クリスマスカウントダウンカレンダー、美容・コスメのホリデーサプライズメイクアップギフトキット女性・ティーン・女の子向け",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81XLRUSlNdL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "メイクアップアドベントカレンダー2026、24点入りクリスマスホ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0HDPFPNDJ",
+      "asin": "B0HDPFPNDJ",
+      "amazon_title": "メイクアップアドベントカレンダー2026、24日間のクリスマスメイクセット・ビューティーギフト、2026年クリスマスカウントダウンカレンダー、女性・ティーン・女の子向け個別包装のフルメイクキット24点セット",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81g7x9z-GnL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "メイクアップアドベントカレンダー2026、24日間のクリスマスメ"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0HBJ7TPCQ",
+      "asin": "B0HBJ7TPCQ",
+      "amazon_title": "メイクアップアドベントカレンダー １２日間",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81zDLzEfvpL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "メイクアップアドベントカレンダー １２日間"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0HBBPQN42",
+      "asin": "B0HBBPQN42",
+      "amazon_title": "クリスマス カレンダー メイク アドベント コスメ セット",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/714JPbxJUgL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "クリスマス カレンダー メイク アドベント コスメ セット"
+    }
+  ]
+}
