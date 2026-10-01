@@ -1,0 +1,124 @@
+{
+  "slug": "laptops-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/laptops-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/laptops-6-picks/laptops-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "performance",
+      "label": "処理性能・用途適性",
+      "keywords": [
+        "CPU",
+        "メモリ容量"
+      ]
+    },
+    {
+      "id": "battery",
+      "label": "バッテリー持続・携帯性",
+      "keywords": [
+        "駆動時間",
+        "重量"
+      ]
+    },
+    {
+      "id": "usability",
+      "label": "画面・キーボードの使いやすさ",
+      "keywords": [
+        "解像度",
+        "キーストローク"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "battery"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0H4JJ345H",
+      "asin": "B0H4JJ345H",
+      "amazon_title": "【Amazon.co.jp限定】 ASUS ノートパソコン Vivobook 15 M1502XA 15.6インチ AMD Ryzen 7 7840HS メモリ 8GB SSD 512GB Microsoft 365 Personal (24か月版) 搭載 Windows 11 重量 1.7kg バッテリー駆動 10.6時間 Wi-Fi 6 クワイエットブルー M1502XA-R785WS",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61MhdmZULoL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.53,
+      "matched_comparison_axes": [
+        "battery"
+      ],
+      "search_key": "ASUS ノートパソコン Vivobook 15 M1502XA"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HH5W7RSK",
+      "asin": "B0HH5W7RSK",
+      "amazon_title": "【整備済み品】高性能 ノートパソコン dynabook B55/B65 15.6型 第8世代Core i5 / メモリ 16GB / SSD 256GB / Windows 11 Pro/MS Office 2024 / Webカメラ/Wi-Fi/Bluetooth/あんしん特別保証（180日＋延長30日） (整備済み品)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71ToqwcJFSL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "高性能 ノートパソコン dynabook B55/B65 15."
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0H7X377D3",
+      "asin": "B0H7X377D3",
+      "amazon_title": "HP ノートパソコン OmniBook 3 14-ht 14インチ 16GBメモリ 512GB SSD インテル Core Ultra 5",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71WfeUPZAhL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "HP ノートパソコン OmniBook 3 14-ht 14イン"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0H6QTM8TH",
+      "asin": "B0H6QTM8TH",
+      "amazon_title": "【整備済み品】軽量薄型 ノートパソコン dynabook G83 13.3型FHD(1920x1080) 第11世代Core i5 / メモリ 16GB / SSD 256GB / Windows 11 Pro/MS Office 2024 / Webカメラ/Wi-Fi/Bluetooth/あんしん特別保証（180日＋延長30日） (整備済み品)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71rGvBZzLkL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "軽量薄型 ノートパソコン dynabook G83 13.3型F"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0H3TZFJSW",
+      "asin": "B0H3TZFJSW",
+      "amazon_title": "【整備済み品】NECノートパソコンVersaPro VKT16XシリーズCore i5-8250U 15.6インチ 3.40GHz",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61HBQfmlsbL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "NECノートパソコンVersaPro VKT16XシリーズCor"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0GYRVL5MP",
+      "asin": "B0GYRVL5MP",
+      "amazon_title": "NEC LAVIE 国内生産 ノートパソコン N15 Slim 15.6型 インテル® Core™ i7-1355U メモリ16GB SSD256GB MS Office 2024搭載 Windows11 バッテリー駆動9.9時間 重量1.65kg カームブラック",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/7138uIwsjbL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "battery"
+      ],
+      "search_key": "NEC LAVIE 国内生産 ノートパソコン N15 Slim"
+    }
+  ]
+}

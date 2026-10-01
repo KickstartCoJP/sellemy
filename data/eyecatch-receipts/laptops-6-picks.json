@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-laptops-6-picks-fec98a44760b9c66",
+  "request_sha256": "fec98a44760b9c66a732413b65251bacdc0b32cabf440a6ed2221ef677ccb096",
+  "image_sha256": "da871fa520552844c13cda2f4c9b776b513e5a0f8008911c38ed3e4655fc23fe",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-10-01T04:00:07.274602+00:00"
+}
