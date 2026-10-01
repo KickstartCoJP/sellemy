@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-hot-pot-soup-bases-6-picks-853dbb1787ba1568",
+  "request_sha256": "853dbb1787ba15682a5872b3256ed65657e2329e5343e99abbc1d3797ccc92fd",
+  "image_sha256": "8813298d067361264514814486497bbb1a80dd8767d1d9910e441a5bfc83f1ae",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-10-01T00:10:06.957455+00:00"
+}

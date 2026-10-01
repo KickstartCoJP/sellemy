@@ -1,0 +1,144 @@
+{
+  "slug": "hot-pot-soup-bases-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/hot-pot-soup-bases-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/hot-pot-soup-bases-6-picks/hot-pot-soup-bases-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "flavor",
+      "label": "味・風味の種類",
+      "keywords": [
+        "味噌",
+        "塩",
+        "キムチ",
+        "醤油"
+      ]
+    },
+    {
+      "id": "volume_cost",
+      "label": "容量・コスパ",
+      "keywords": [
+        "容量",
+        "人数分",
+        "コスパ"
+      ]
+    },
+    {
+      "id": "health",
+      "label": "塩分・カロリー配慮",
+      "keywords": [
+        "減塩",
+        "カロリーオフ",
+        "無添加"
+      ]
+    },
+    {
+      "id": "brand_origin",
+      "label": "ブランド・産地",
+      "keywords": [
+        "ブランド",
+        "産地",
+        "老舗"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "flavor",
+      "health"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0H6HBJPTF",
+      "asin": "B0H6HBJPTF",
+      "amazon_title": "【医師・管理栄養士W監修】 だし 無添加 国産100% 出汁 無塩 【 食塩 酵母エキス不使用 ×8種の厳選素材】 粉末 国産だし 和風だし 100g",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/717cbQg86bL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.71,
+      "matched_comparison_axes": [
+        "flavor",
+        "health"
+      ],
+      "search_key": "だし 無添加 国産100% 出汁 無塩 粉末 国産だし 和風だし"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HD77374J",
+      "asin": "B0HD77374J",
+      "amazon_title": "ミツカン 〆まで美味しい ほたてと蛤の貝だし鍋つゆ ストレート 鍋の素 750g",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61wqN7BF9WL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "ミツカン 〆まで美味しい ほたてと蛤の貝だし鍋つゆ ストレート"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HCNXMQWZ",
+      "asin": "B0HCNXMQWZ",
+      "amazon_title": "ヤマキ 豚しゃぶ野菜鍋つゆかつお 750g",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81W3fCt+DGL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "ヤマキ 豚しゃぶ野菜鍋つゆかつお 750g"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0FKFNZ62L",
+      "asin": "B0FKFNZ62L",
+      "amazon_title": "ヤマキ 高杉晋作 鍋つゆ 真鯛だし塩 700g ×4個",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81x5bM5QVuL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "flavor"
+      ],
+      "search_key": "ヤマキ 高杉晋作 鍋つゆ 真鯛だし塩 700g ×4個"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0FKDYZZ9K",
+      "asin": "B0FKDYZZ9K",
+      "amazon_title": "ヤマキ 龍馬鍋つゆ 地鶏だし塩 700g",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81wkIIqpZ6L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "flavor"
+      ],
+      "search_key": "ヤマキ 龍馬鍋つゆ 地鶏だし塩 700g"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0DWN313JK",
+      "asin": "B0DWN313JK",
+      "amazon_title": "生きる出汁パック 8g×30袋入 無添加 国産 無塩 アミノ酸・酵母エキス不使用 調味料不使用 昆布不使用 食塩不使用 だしパック 出汁 天然 減塩 和風だし",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71wQL12ebfL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "flavor",
+        "health"
+      ],
+      "search_key": "生きる出汁パック 8g×30袋入 無添加 国産 無塩 アミノ酸"
+    }
+  ]
+}
