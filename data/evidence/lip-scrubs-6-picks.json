@@ -1,0 +1,134 @@
+{
+  "slug": "lip-scrubs-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/lip-scrubs-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/lip-scrubs-6-picks/lip-scrubs-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "exfoliation",
+      "label": "洗浄力・ピーリング効果",
+      "keywords": [
+        "スクラブ粒子",
+        "角質ケア",
+        "ピーリング"
+      ]
+    },
+    {
+      "id": "texture",
+      "label": "使用感・テクスチャー",
+      "keywords": [
+        "ジェル",
+        "オイル",
+        "べたつき"
+      ]
+    },
+    {
+      "id": "moisture",
+      "label": "保湿成分",
+      "keywords": [
+        "シアバター",
+        "ワセリン",
+        "ヒアルロン酸"
+      ]
+    },
+    {
+      "id": "portability",
+      "label": "携帯性・容量",
+      "keywords": [
+        "ポット型",
+        "チューブ",
+        "持ち運び"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "exfoliation"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0HHMDX6PX",
+      "asin": "B0HHMDX6PX",
+      "amazon_title": "【話題アイテム】Bi festa リップスクラブバーム 10g(×１)｜シュガースクラブ 唇用 リップケア・保湿・角質ケア",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51GfKA4iO9L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.53,
+      "matched_comparison_axes": [
+        "exfoliation"
+      ],
+      "search_key": "Bi festa リップスクラブバーム 10g(×１)｜シュガー"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0GFNLHT89",
+      "asin": "B0GFNLHT89",
+      "amazon_title": "ノイズカットリップパック 15g | リップクリーム リップバーム 唇パック ナイトパック リップマスク 高保湿 無添加 乾燥 荒れ 皮むけ 縦ジワ 対策 敏感肌 レディース メンズ ギフト プレゼント Mediplus メディプラス (白)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/612esgVMTEL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "ノイズカットリップパック 15g | リップクリーム リップバー"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0DHTX9Z91",
+      "asin": "B0DHTX9Z91",
+      "amazon_title": "TAKAMI タカミリップ 7g 唇用美容液 リップバーム 高保湿 唇ケア なめらか ツヤ 荒れ リップケア リップ美容液 唇 美容液 保湿",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51YCsLmSBSL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "TAKAMI タカミリップ 7g 唇用美容液 リップバーム 高保"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0D3HJNQ7B",
+      "asin": "B0D3HJNQ7B",
+      "amazon_title": "リップスクラブ リップクリーム 、リップスクラブ 唇の集中水分補給及び維持、角質鎮静、栄養補給、唇パック ビタミンC、ビーガン、 プランプリップケアスクラブ",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71dhIs6t3XL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "リップスクラブ リップクリーム 、リップスクラブ 唇の集中水分補"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0BT4FN3X6",
+      "asin": "B0BT4FN3X6",
+      "amazon_title": "ラネージュ リップスリーピングマスク グレープフルーツ 20g リップクリーム リップマスク リップバーム リップスクラブ 唇 パック 保湿 韓国",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61xiYuqUKPL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "ラネージュ リップスリーピングマスク グレープフルーツ 20g"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B09WMCC58N",
+      "asin": "B09WMCC58N",
+      "amazon_title": "【unpa公式】BubiBubi リップケアセット (スクラブ+マスクセット)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51-IDILyVpL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "BubiBubi リップケアセット (スクラブ+マスクセット)"
+    }
+  ]
+}

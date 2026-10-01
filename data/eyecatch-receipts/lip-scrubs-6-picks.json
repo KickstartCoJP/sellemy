@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-lip-scrubs-6-picks-02ff7f18a167074d",
+  "request_sha256": "02ff7f18a167074d527581e422e6fad20f956fb2b6c384a6fb785e77cfd9420d",
+  "image_sha256": "fc03b10f68cc8f1ac2c5a679d338330903a3932ae43c54df3d46b6d585a3ea78",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-10-01T11:27:36.072592+00:00"
+}
