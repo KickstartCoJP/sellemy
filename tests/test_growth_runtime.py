@@ -4,6 +4,7 @@ import json
 import subprocess
 import sys
 import unittest
+from contextlib import nullcontext
 from pathlib import Path
 from unittest.mock import Mock, patch
 
@@ -92,6 +93,17 @@ class ScheduledRouteTests(unittest.TestCase):
         self.assertIn('index.html', paths)
         self.assertIn('data/sellemy.db', paths)
         self.assertIn('data/eyecatch-receipts/new.json', paths)
+
+
+    def test_scheduler_auto_syncs_instead_of_aborting_on_behind_main(self):
+        script = (ROOT / 'ops' / 'run-growth.sh').read_text(encoding='utf-8')
+        self.assertIn('from publish_gate import sync_clean_main', script)
+        self.assertNotIn('HEAD differs from origin/main; abort', script)
+
+    def test_runtime_uses_common_publish_gate(self):
+        source = (ROOT / 'pipeline' / 'growth_runtime.py').read_text(encoding='utf-8')
+        self.assertIn('with PublishGate(ROOT).acquire()', source)
+        self.assertLess(source.index('with PublishGate(ROOT).acquire()'), source.index("result['commit'] = _publish"))
 
     def test_existing_ga4_measurement_is_preserved(self):
         ga4 = (ROOT / 'js' / 'ga4.js').read_text(encoding='utf-8')
@@ -247,6 +259,7 @@ class RuntimeFailClosedTests(unittest.TestCase):
             patch.object(growth_runtime, '_write_json'),
             patch.object(growth_runtime, 'publish_payload', return_value={'applied': True}),
             patch.object(growth_runtime, '_publish', return_value='published-commit'),
+            patch.object(growth_runtime.PublishGate, 'acquire', return_value=nullcontext({'head_after': 'abc', 'origin_main': 'abc', 'clean': True})),
         ):
             result = growth_runtime.run(publish=True, report_path=None, controller=controller)
         self.assertTrue(result['published'])

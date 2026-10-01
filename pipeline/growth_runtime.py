@@ -19,6 +19,7 @@ from discovery_adapters import AutositeDiscoveryAdapter
 from feedback_task_bridge import sync_feedback_to_task_event
 from payload_schema import validate_evidence, validate_payload, match_refs
 from planning_runtime import PlanningError, discover_candidates, rank_candidates
+from publish_gate import PublishGate, PublishGateError, sync_clean_main
 from product_selection import select_six
 from publish_payload import run as publish_payload
 from qa import run_qa
@@ -39,13 +40,10 @@ def _git(*args: str) -> str:
 
 
 def require_clean_current_main() -> str:
-    if _git('status', '--porcelain'):
-        raise GrowthRuntimeError('working tree is not clean; growth aborted before Planning')
-    subprocess.run(['git', 'fetch', 'origin', 'main', '--quiet'], cwd=ROOT, check=True)
-    head, origin = _git('rev-parse', 'HEAD'), _git('rev-parse', 'origin/main')
-    if head != origin:
-        raise GrowthRuntimeError(f'HEAD {head} differs from origin/main {origin}; no generation or publish')
-    return head
+    try:
+        return sync_clean_main(ROOT)['head_after']
+    except PublishGateError as exc:
+        raise GrowthRuntimeError(str(exc)) from exc
 
 
 def _price(value) -> int | None:
@@ -222,17 +220,29 @@ def run(
         result.update({'candidate_count': len(candidates), 'selected_asins': [p['asin'] for p in selected], 'selection': selection, 'writer_attempts': writer_attempts, 'review_findings': findings, 'qa': qa})
         if findings or not qa['overall_pass']:
             raise GrowthRuntimeError('mandatory Review/QA gates did not pass; no files applied or published')
-        _write_json(ROOT / 'data' / 'evidence' / f'{topic["slug"]}.json', evidence)
-        _write_json(ROOT / 'data' / 'payloads' / f'{topic["slug"]}.json', payload)
-        applied = publish_payload(topic['slug'], apply=True, allow_existing=False)
-        if not applied['applied']:
-            raise GrowthRuntimeError('publication stage refused candidate after repeated gates')
-        result['applied'] = applied
-        result['rendered_chars'] = len(rendered)
-        result['status'] = 'published' if publish else 'staged'
+        def apply_publication_unit() -> None:
+            _write_json(ROOT / 'data' / 'evidence' / f'{topic["slug"]}.json', evidence)
+            _write_json(ROOT / 'data' / 'payloads' / f'{topic["slug"]}.json', payload)
+            applied = publish_payload(topic['slug'], apply=True, allow_existing=False)
+            if not applied['applied']:
+                raise GrowthRuntimeError('publication stage refused candidate after repeated gates')
+            result['applied'] = applied
+            result['rendered_chars'] = len(rendered)
+
         if publish:
-            result['commit'] = _publish(topic['slug'], topic['category'])
-            result['published'] = True
+            try:
+                with PublishGate(ROOT).acquire() as gate_evidence:
+                    result['publish_gate'] = gate_evidence
+                    apply_publication_unit()
+                    result['commit'] = _publish(topic['slug'], topic['category'])
+                    result['published'] = True
+            except PublishGateError as exc:
+                raise GrowthRuntimeError(str(exc)) from exc
+            result['status'] = 'published'
+        else:
+            apply_publication_unit()
+            result['status'] = 'staged'
+        if publish:
             try:
                 post_publish_feedback, controller_after = adaptive.evaluate_and_record(
                     slug=topic['slug'], commit=result['commit'], growth_run=result,
