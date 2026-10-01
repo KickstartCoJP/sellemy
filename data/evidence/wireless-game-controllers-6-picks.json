@@ -1,0 +1,145 @@
+{
+  "slug": "wireless-game-controllers-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/wireless-game-controllers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/wireless-game-controllers-6-picks/wireless-game-controllers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "connectivity",
+      "label": "接続方式・対応機種",
+      "keywords": [
+        "Bluetooth",
+        "対応機種",
+        "接続"
+      ]
+    },
+    {
+      "id": "operability",
+      "label": "操作性・ボタン配置",
+      "keywords": [
+        "スティック",
+        "ボタン",
+        "振動"
+      ]
+    },
+    {
+      "id": "battery",
+      "label": "バッテリー持続時間",
+      "keywords": [
+        "バッテリー",
+        "連続使用",
+        "充電"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格帯",
+      "keywords": [
+        "価格",
+        "コスパ",
+        "純正"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "battery",
+      "connectivity",
+      "operability"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0FND1MYCB",
+      "asin": "B0FND1MYCB",
+      "amazon_title": "ECHTPower PC コントローラー 充電ドック付き 無線/有線接続 2.4Gレシバー付き ホール効果スティック RGBライト 1000Hz ポーリングレート TURBO連射 振動調整 800mAhバッテリー PC/Steam/Switch/Android/iOSに対応 ブラック",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71A-th6-BbL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.89,
+      "matched_comparison_axes": [
+        "battery",
+        "connectivity",
+        "operability"
+      ],
+      "search_key": "ECHTPower PC コントローラー 充電ドック付き 無線"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HDRT5SXL",
+      "asin": "B0HDRT5SXL",
+      "amazon_title": "Switch 2 コントローラー【2026新モデル｜ダブルホール機能｜1/2代对応】スイッチコントローラー 無線 1000mAh大容量",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81YqIeeoGxL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "Switch 2 コントローラー スイッチコントローラー 無線"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HC13YR22",
+      "asin": "B0HC13YR22",
+      "amazon_title": "PS4 コントローラー ワイヤレス 無線/有線 RGBライト Type-C ホール効果スティック 背面ボタン TURBO連射",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/718ctncm3oL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "operability"
+      ],
+      "search_key": "PS4 コントローラー ワイヤレス 無線/有線 RGBライト T"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0H756ZZPY",
+      "asin": "B0H756ZZPY",
+      "amazon_title": "Switch 2 コントローラー【2026年先端モデル】スイッチコントローラー ダブルホール機能 無線 Bluetooth接続 Switch1/2対応",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61n-V5yJTPL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "connectivity"
+      ],
+      "search_key": "Switch 2 コントローラー スイッチコントローラー ダブル"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0H11SX8SD",
+      "asin": "B0H11SX8SD",
+      "amazon_title": "エレコム ゲームパッド 無線・有線 XInput DirectInput PS系配置 充電式 13ボタン ブラック JC-GP40SBK",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61wustVzdyL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "battery",
+        "operability"
+      ],
+      "search_key": "エレコム ゲームパッド 無線・有線 XInput DirectI"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0GWJHDCBQ",
+      "asin": "B0GWJHDCBQ",
+      "amazon_title": "GameSir G7 Pro 8K Aimlabs PC ワイヤレスゲーミングコントローラー （Aimlabs公式ライセンス）",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61AxFdafWlL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "GameSir G7 Pro 8K Aimlabs PC ワイヤ"
+    }
+  ]
+}
