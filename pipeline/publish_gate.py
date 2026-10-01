@@ -56,6 +56,44 @@ def sync_clean_main(root: Path) -> dict:
     }
 
 
+def recover_unpublished_commit_after_remote_race(root: Path, candidate_commit: str) -> dict:
+    """Discard only an unpublished local candidate after a remote writer won the push race."""
+    _git(root, 'fetch', 'origin', 'main', '--quiet')
+    origin = _git(root, 'rev-parse', 'origin/main')
+    head = _git(root, 'rev-parse', 'HEAD')
+    if head != candidate_commit:
+        raise PublishGateError(
+            f'publish-race recovery refused: HEAD changed unexpectedly: {head} != {candidate_commit}'
+        )
+    published = subprocess.run(
+        ['git', 'merge-base', '--is-ancestor', candidate_commit, origin],
+        cwd=root, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=False,
+    )
+    if published.returncode == 0:
+        return {'already_published': True, 'head_after': candidate_commit, 'origin_main': origin}
+    parent = _git(root, 'rev-parse', f'{candidate_commit}^')
+    parent_on_remote = subprocess.run(
+        ['git', 'merge-base', '--is-ancestor', parent, origin],
+        cwd=root, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=False,
+    )
+    if parent_on_remote.returncode != 0:
+        raise PublishGateError(
+            'publish-race recovery refused: candidate parent is not contained in latest origin/main'
+        )
+    _git(root, 'reset', '--hard', 'origin/main')
+    dirty = _git(root, 'status', '--porcelain', '--untracked-files=all')
+    head_after = _git(root, 'rev-parse', 'HEAD')
+    if dirty or head_after != origin:
+        raise PublishGateError('publish-race recovery read-back failed')
+    return {
+        'already_published': False,
+        'discarded_unpublished_commit': candidate_commit,
+        'head_after': head_after,
+        'origin_main': origin,
+        'clean': True,
+    }
+
+
 class PublishGate:
     """Cross-process Sellemy publication critical section for this production host."""
 

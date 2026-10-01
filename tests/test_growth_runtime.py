@@ -243,6 +243,34 @@ class RuntimeFailClosedTests(unittest.TestCase):
         self.assertIn("['git', 'push', 'origin', 'main']", source)
         self.assertNotIn('--force', source)
 
+
+    def test_remote_push_race_rebuilds_and_retries_inside_gate(self):
+        topic = {'slug': 'test-widgets-6-picks', 'category': 'gadget', 'query': 'x', 'title': 'x', 'comparison_axes': [{'id': 'use', 'label': '用途'}]}
+        products = [{'asin': f'B0TEST{i:04d}'} for i in range(6)]
+        controller = Mock()
+        controller.current_state.return_value = {'publish_paused': False, 'target_per_day': 2}
+        controller.evaluate_and_record.return_value = ({'event_id': 'feedback-1'}, {'target_per_day': 2})
+        gate = nullcontext({'head_after': 'base', 'origin_main': 'base', 'clean': True})
+        with (
+            patch.object(growth_runtime, 'require_clean_current_main', return_value='base'),
+            patch.object(growth_runtime, 'select_viable_topic', return_value=(topic, products, [])),
+            patch.object(growth_runtime, 'select_six', return_value=(products, {})),
+            patch.object(growth_runtime, 'build_evidence', return_value=valid_evidence()),
+            patch.object(growth_runtime, 'invoke_writer', return_value=(valid_payload(), {'runtime': 'test'})),
+            patch.object(growth_runtime, 'evaluate_candidate', return_value=('html', [], {'overall_pass': True})),
+            patch.object(growth_runtime, '_write_json'),
+            patch.object(growth_runtime, 'publish_payload', return_value={'applied': True}) as apply_stage,
+            patch.object(growth_runtime.PublishGate, 'acquire', side_effect=[gate, nullcontext({'head_after': 'remote', 'origin_main': 'remote', 'clean': True})]),
+            patch.object(growth_runtime, '_publish', side_effect=[growth_runtime.PublishRaceError('race', candidate_commit='candidate'), 'published-commit']) as publish_call,
+            patch.object(growth_runtime, 'recover_unpublished_commit_after_remote_race', return_value={'already_published': False, 'head_after': 'remote', 'origin_main': 'remote', 'clean': True}) as recovery,
+        ):
+            result = growth_runtime.run(publish=True, report_path=None, controller=controller)
+        self.assertTrue(result['published'])
+        self.assertEqual(result['commit'], 'published-commit')
+        self.assertEqual(publish_call.call_count, 2)
+        self.assertEqual(apply_stage.call_count, 2)
+        recovery.assert_called_once_with(growth_runtime.ROOT, 'candidate')
+
     def test_successful_publish_runs_post_publish_feedback_and_controller(self):
         topic = {'slug': 'test-widgets-6-picks', 'category': 'gadget', 'query': 'x', 'title': 'x', 'comparison_axes': [{'id': 'use', 'label': '用途'}]}
         products = [{'asin': f'B0TEST{i:04d}'} for i in range(6)]

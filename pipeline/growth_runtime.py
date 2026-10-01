@@ -19,7 +19,9 @@ from discovery_adapters import AutositeDiscoveryAdapter
 from feedback_task_bridge import sync_feedback_to_task_event
 from payload_schema import validate_evidence, validate_payload, match_refs
 from planning_runtime import PlanningError, discover_candidates, rank_candidates
-from publish_gate import PublishGate, PublishGateError, sync_clean_main
+from publish_gate import (
+    PublishGate, PublishGateError, recover_unpublished_commit_after_remote_race, sync_clean_main,
+)
 from product_selection import select_six
 from publish_payload import run as publish_payload
 from qa import run_qa
@@ -33,6 +35,12 @@ BASE = 'https://www.sellemy.jp'
 
 class GrowthRuntimeError(RuntimeError):
     pass
+
+
+class PublishRaceError(GrowthRuntimeError):
+    def __init__(self, message: str, *, candidate_commit: str):
+        super().__init__(message)
+        self.candidate_commit = candidate_commit
 
 
 def _git(*args: str) -> str:
@@ -162,8 +170,19 @@ def _publish(slug: str, category: str) -> str:
     subprocess.run(['git', 'add', '--', *sorted(expected)], cwd=ROOT, check=True)
     subprocess.run(['git', 'diff', '--cached', '--check'], cwd=ROOT, check=True)
     subprocess.run(['git', 'commit', '-m', f'Publish Writer-generated growth article: {slug}'], cwd=ROOT, check=True)
-    subprocess.run(['git', 'push', 'origin', 'main'], cwd=ROOT, check=True)
     head = _git('rev-parse', 'HEAD')
+    pushed = subprocess.run(
+        ['git', 'push', 'origin', 'main'], cwd=ROOT, text=True, capture_output=True, check=False
+    )
+    if pushed.returncode != 0:
+        detail = ((pushed.stderr or '') + '\n' + (pushed.stdout or '')).strip()
+        lowered = detail.lower()
+        if 'fetch first' in lowered or 'non-fast-forward' in lowered or '[rejected]' in lowered:
+            raise PublishRaceError(
+                f'remote writer advanced origin/main during publish: {detail}',
+                candidate_commit=head,
+            )
+        raise GrowthRuntimeError(f'git push origin main failed: {detail}')
     if head != _git('rev-parse', 'origin/main') or _git('status', '--porcelain'):
         raise GrowthRuntimeError('post-push verification failed: HEAD/origin/main/clean mismatch')
     return head
@@ -230,14 +249,36 @@ def run(
             result['rendered_chars'] = len(rendered)
 
         if publish:
-            try:
-                with PublishGate(ROOT).acquire() as gate_evidence:
-                    result['publish_gate'] = gate_evidence
-                    apply_publication_unit()
-                    result['commit'] = _publish(topic['slug'], topic['category'])
-                    result['published'] = True
-            except PublishGateError as exc:
-                raise GrowthRuntimeError(str(exc)) from exc
+            result['publish_gate_attempts'] = []
+            for publish_attempt in range(1, 3):
+                try:
+                    with PublishGate(ROOT).acquire() as gate_evidence:
+                        gate_evidence = {**gate_evidence, 'attempt': publish_attempt}
+                        result['publish_gate_attempts'].append(gate_evidence)
+                        apply_publication_unit()
+                        try:
+                            result['commit'] = _publish(topic['slug'], topic['category'])
+                        except PublishRaceError as race:
+                            recovery = recover_unpublished_commit_after_remote_race(
+                                ROOT, race.candidate_commit
+                            )
+                            result.setdefault('publish_race_recoveries', []).append(recovery)
+                            if recovery.get('already_published'):
+                                result['commit'] = race.candidate_commit
+                                result['published'] = True
+                                break
+                            if publish_attempt >= 2:
+                                raise GrowthRuntimeError(
+                                    'remote publish race recurred after bounded recovery'
+                                ) from race
+                            continue
+                        result['published'] = True
+                        break
+                except PublishGateError as exc:
+                    raise GrowthRuntimeError(str(exc)) from exc
+            if not result['published']:
+                raise GrowthRuntimeError('publish gate exhausted without a published commit')
+            result['publish_gate'] = result['publish_gate_attempts'][-1]
             result['status'] = 'published'
         else:
             apply_publication_unit()

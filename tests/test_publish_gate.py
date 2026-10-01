@@ -9,7 +9,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'pipeline'))
 
-from publish_gate import PublishGateError, sync_clean_main  # noqa: E402
+from publish_gate import (  # noqa: E402
+    PublishGateError, recover_unpublished_commit_after_remote_race, sync_clean_main,
+)
 
 
 def git(cwd: Path, *args: str) -> str:
@@ -57,6 +59,24 @@ class PublishGateSyncTests(unittest.TestCase):
         (self.writer / 'dirty.txt').write_text('dirty\n')
         with self.assertRaises(PublishGateError):
             sync_clean_main(self.writer)
+
+
+    def test_remote_race_recovery_discards_only_unpublished_candidate(self):
+        (self.writer / 'candidate.txt').write_text('candidate\n')
+        git(self.writer, 'add', 'candidate.txt')
+        git(self.writer, 'commit', '-m', 'candidate')
+        candidate = git(self.writer, 'rev-parse', 'HEAD')
+        (self.other / 'remote.txt').write_text('remote\n')
+        git(self.other, 'add', 'remote.txt')
+        git(self.other, 'commit', '-m', 'remote winner')
+        git(self.other, 'push', 'origin', 'main')
+        evidence = recover_unpublished_commit_after_remote_race(self.writer, candidate)
+        self.assertFalse(evidence['already_published'])
+        self.assertEqual(evidence['discarded_unpublished_commit'], candidate)
+        self.assertEqual(git(self.writer, 'rev-parse', 'HEAD'), git(self.writer, 'rev-parse', 'origin/main'))
+        self.assertFalse((self.writer / 'candidate.txt').exists())
+        self.assertTrue((self.writer / 'remote.txt').exists())
+        self.assertEqual(git(self.writer, 'status', '--porcelain'), '')
 
     def test_diverged_main_fails_without_rewrite(self):
         (self.writer / 'local.txt').write_text('local\n')
