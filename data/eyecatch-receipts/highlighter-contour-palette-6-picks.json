@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-highlighter-contour-palette-6-picks-7389b0fe24e02b36",
+  "request_sha256": "7389b0fe24e02b36ed98f318fa562fa81415fe3cd7096df5b542e2463bd76abc",
+  "image_sha256": "82b076c3a2e558659e1ee91adbd2d20c70dd6afc3d3430b6e8413d628e38c949",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-10-01T15:15:13.067111+00:00"
+}
