@@ -1,0 +1,132 @@
+{
+  "slug": "autumn-winter-moisturizing-primers-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/autumn-winter-moisturizing-primers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/autumn-winter-moisturizing-primers-6-picks/autumn-winter-moisturizing-primers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "moisture",
+      "label": "保湿成分・うるおい持続",
+      "keywords": [
+        "セラミド",
+        "ヒアルロン酸",
+        "乾燥対策",
+        "うるおい"
+      ]
+    },
+    {
+      "id": "finish",
+      "label": "仕上がり・カバー力",
+      "keywords": [
+        "毛穴カバー",
+        "ツヤ肌",
+        "皮脂崩れ防止"
+      ]
+    },
+    {
+      "id": "skin_type",
+      "label": "肌質対応",
+      "keywords": [
+        "乾燥肌",
+        "敏感肌",
+        "混合肌"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "finish",
+      "moisture",
+      "skin_type"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0FL7334SY",
+      "asin": "B0FL7334SY",
+      "amazon_title": "【Amazon.co.jp限定】 ミノン アミノモイスト ブライトアップベースUＶ 25g サンプル付き 【敏感肌向け】 【乾燥肌向け】 【低刺激性処方】 UV化粧下地 保湿 顔用 日焼け止め",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71wsSKBWp7L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.505,
+      "matched_comparison_axes": [
+        "skin_type"
+      ],
+      "search_key": "ミノン アミノモイスト ブライトアップベースUＶ 25g サンプ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0C1YTLYT7",
+      "asin": "B0C1YTLYT7",
+      "amazon_title": "乾燥さん 水分力スキンケア下地 30g 化粧下地 スキンケア オールインワン 高保湿 隠れ乾燥対策 べたつかない 紫外線対策 皮脂テカリ防止",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/617tqSbjcGL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.505,
+      "matched_comparison_axes": [
+        "moisture"
+      ],
+      "search_key": "乾燥さん 水分力スキンケア下地 30g 化粧下地 スキンケア オ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B09RHRPYQP",
+      "asin": "B09RHRPYQP",
+      "amazon_title": "ウルミナプラス 生つや肌おしろい乳液 ミルク35g KOSE コーセー 下地 化粧下地 皮脂崩れ防止 皮脂テカリ防止下地 毛穴",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41phwmLwXuL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.505,
+      "matched_comparison_axes": [
+        "finish"
+      ],
+      "search_key": "ウルミナプラス 生つや肌おしろい乳液 ミルク35g KOSE コ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0HCB7D1H1",
+      "asin": "B0HCB7D1H1",
+      "amazon_title": "ETVOS(エトヴォス) ミネラルリペアベース #ピンクベージュ SPF35 PA+++ (化粧下地 日焼け止め ツヤ 乾燥小じわを目立たなくする効能評価試験済)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51ql+19JUZL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "ETVOS(エトヴォス) ミネラルリペアベース #ピンクベージュ"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0GK6XCZ51",
+      "asin": "B0GK6XCZ51",
+      "amazon_title": "ソフィーナ プリマヴィスタ 角層保水プライマー シアーベージュ SPF50・PA+++ 無香料 乾燥 テカリ 化粧崩れ 角層 保水 スキンケアUV",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41up0jwfQoL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "ソフィーナ プリマヴィスタ 角層保水プライマー シアーベージュ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0GHN78LDG",
+      "asin": "B0GHN78LDG",
+      "amazon_title": "エテルナム エッセンスUVプライマー SPF50 PA++++ 化粧下地 UV 日焼け止め 幹細胞培養上清液 保湿 トーンアップ ライトベージュ 30g",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71mNyfF+r7L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "エテルナム エッセンスUVプライマー SPF50 PA++++"
+    }
+  ]
+}
