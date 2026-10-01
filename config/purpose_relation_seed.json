@@ -2085,6 +2085,366 @@
       "relation_type": "core",
       "confidence": 0.92,
       "rationale": "slug/title semantic match: window-insulation-films"
+    },
+    {
+      "feature_id": "PH-SKINCARE",
+      "feature_title": "毎日のスキンケアを整える",
+      "article_id": "acne-spot-patches-6-picks",
+      "slug": "acne-spot-patches-6-picks",
+      "article_title": "気になる肌荒れに！ニキビ吸収パッチ6選",
+      "relation_type": "supporting",
+      "confidence": 0.82,
+      "rationale": "semantic review accepted 2026-10-01"
+    },
+    {
+      "feature_id": "PH-WARM-HOME",
+      "feature_title": "おうちをあたたかくする",
+      "article_id": "air-conditioners-6-picks",
+      "slug": "air-conditioners-6-picks",
+      "article_title": "冷暖房を一台で！エアコン6選",
+      "relation_type": "supporting",
+      "confidence": 0.82,
+      "rationale": "semantic review accepted 2026-10-01"
+    },
+    {
+      "feature_id": "PH-SUMMER-COMFORT",
+      "feature_title": "暑い日を快適に過ごす",
+      "article_id": "air-conditioners-6-picks",
+      "slug": "air-conditioners-6-picks",
+      "article_title": "冷暖房を一台で！エアコン6選",
+      "relation_type": "supporting",
+      "confidence": 0.82,
+      "rationale": "semantic review accepted 2026-10-01"
+    },
+    {
+      "feature_id": "PH-OUTING",
+      "feature_title": "外出をラクにする",
+      "article_id": "anti-slip-snow-boots-6-picks",
+      "slug": "anti-slip-snow-boots-6-picks",
+      "article_title": "雪道・凍結路に強い！防滑スノーブーツ6選",
+      "relation_type": "supporting",
+      "confidence": 0.82,
+      "rationale": "semantic review accepted 2026-10-01"
+    },
+    {
+      "feature_id": "PH-MAKEUP",
+      "feature_title": "メイクを楽しむ",
+      "article_id": "autumn-winter-moisturizing-primers-6-picks",
+      "slug": "autumn-winter-moisturizing-primers-6-picks",
+      "article_title": "乾燥する季節に！秋冬向け保湿化粧下地6選",
+      "relation_type": "supporting",
+      "confidence": 0.82,
+      "rationale": "semantic review accepted 2026-10-01"
+    },
+    {
+      "feature_id": "PH-DRYNESS",
+      "feature_title": "乾燥から守る",
+      "article_id": "autumn-winter-moisturizing-primers-6-picks",
+      "slug": "autumn-winter-moisturizing-primers-6-picks",
+      "article_title": "乾燥する季節に！秋冬向け保湿化粧下地6選",
+      "relation_type": "supporting",
+      "confidence": 0.82,
+      "rationale": "semantic review accepted 2026-10-01"
+    },
+    {
+      "feature_id": "PH-HOUSEWORK",
+      "feature_title": "家事をラクにする",
+      "article_id": "compact-pressure-washers-for-home",
+      "slug": "compact-pressure-washers-for-home",
+      "article_title": "年末前の屋外掃除に。コンパクトな家庭用高圧洗浄機6機種を比較",
+      "relation_type": "supporting",
+      "confidence": 0.82,
+      "rationale": "semantic review accepted 2026-10-01"
+    },
+    {
+      "feature_id": "PH-HOUSEWORK",
+      "feature_title": "家事をラクにする",
+      "article_id": "dishwasher-detergents-6-picks",
+      "slug": "dishwasher-detergents-6-picks",
+      "article_title": "食洗機用洗剤6選｜毎日の洗浄と庫内ケアを用途別に比較",
+      "relation_type": "supporting",
+      "confidence": 0.82,
+      "rationale": "semantic review accepted 2026-10-01"
+    },
+    {
+      "feature_id": "PH-SKINCARE",
+      "feature_title": "毎日のスキンケアを整える",
+      "article_id": "electric-cleansing-brushes-6-picks",
+      "slug": "electric-cleansing-brushes-6-picks",
+      "article_title": "毛穴すっきり！電動洗顔ブラシ6選",
+      "relation_type": "supporting",
+      "confidence": 0.82,
+      "rationale": "semantic review accepted 2026-10-01"
+    },
+    {
+      "feature_id": "PH-OUTING",
+      "feature_title": "外出をラクにする",
+      "article_id": "electric-neck-warmers-6-picks",
+      "slug": "electric-neck-warmers-6-picks",
+      "article_title": "首元からぽかぽか！USB充電式ネックウォーマー6選",
+      "relation_type": "supporting",
+      "confidence": 0.82,
+      "rationale": "semantic review accepted 2026-10-01"
+    },
+    {
+      "feature_id": "PH-MAKEUP",
+      "feature_title": "メイクを楽しむ",
+      "article_id": "eyelid-tape-double-eyelid-6-picks",
+      "slug": "eyelid-tape-double-eyelid-6-picks",
+      "article_title": "年末年始のパーティーメイクに！二重まぶたアイテープ6選",
+      "relation_type": "supporting",
+      "confidence": 0.82,
+      "rationale": "semantic review accepted 2026-10-01"
+    },
+    {
+      "feature_id": "PH-HOUSEWORK",
+      "feature_title": "家事をラクにする",
+      "article_id": "fabric-softeners-6-picks",
+      "slug": "fabric-softeners-6-picks",
+      "article_title": "洗い上がりにこだわる！柔軟剤6選",
+      "relation_type": "supporting",
+      "confidence": 0.82,
+      "rationale": "semantic review accepted 2026-10-01"
+    },
+    {
+      "feature_id": "PH-SKINCARE",
+      "feature_title": "毎日のスキンケアを整える",
+      "article_id": "face-roller-gua-sha-tools-6-picks",
+      "slug": "face-roller-gua-sha-tools-6-picks",
+      "article_title": "むくみ・たるみ対策に！フェイスローラー・ガーシャプレート6選",
+      "relation_type": "supporting",
+      "confidence": 0.82,
+      "rationale": "semantic review accepted 2026-10-01"
+    },
+    {
+      "feature_id": "PH-SKINCARE",
+      "feature_title": "毎日のスキンケアを整える",
+      "article_id": "facial-steamers-for-home-6-picks",
+      "slug": "facial-steamers-for-home-6-picks",
+      "article_title": "乾燥する季節のスキンケアに。フェイススチーマー6件を比較",
+      "relation_type": "supporting",
+      "confidence": 0.82,
+      "rationale": "semantic review accepted 2026-10-01"
+    },
+    {
+      "feature_id": "PH-HOUSEWORK",
+      "feature_title": "家事をラクにする",
+      "article_id": "glass-window-cleaners-6-picks",
+      "slug": "glass-window-cleaners-6-picks",
+      "article_title": "年末の窓拭きに使えるガラスクリーナー6選｜洗浄力と仕上がりで比較",
+      "relation_type": "supporting",
+      "confidence": 0.82,
+      "rationale": "semantic review accepted 2026-10-01"
+    },
+    {
+      "feature_id": "PH-MAKEUP",
+      "feature_title": "メイクを楽しむ",
+      "article_id": "holiday-makeup-gift-sets-6-picks",
+      "slug": "holiday-makeup-gift-sets-6-picks",
+      "article_title": "年末年始に向けて！ホリデー限定コスメ・クリスマスコフレ6選",
+      "relation_type": "supporting",
+      "confidence": 0.82,
+      "rationale": "semantic review accepted 2026-10-01"
+    },
+    {
+      "feature_id": "PH-GROOMING",
+      "feature_title": "身だしなみを整える",
+      "article_id": "hot-air-styling-brushes-6-picks",
+      "slug": "hot-air-styling-brushes-6-picks",
+      "article_title": "乾かしながら整う！ホットエアブラシ6選",
+      "relation_type": "supporting",
+      "confidence": 0.82,
+      "rationale": "semantic review accepted 2026-10-01"
+    },
+    {
+      "feature_id": "PH-COOKING",
+      "feature_title": "毎日のごはんをラクにする",
+      "article_id": "hot-pot-soup-bases-6-picks",
+      "slug": "hot-pot-soup-bases-6-picks",
+      "article_title": "鍋シーズン到来！鍋つゆ・だしの素6選",
+      "relation_type": "supporting",
+      "confidence": 0.82,
+      "rationale": "semantic review accepted 2026-10-01"
+    },
+    {
+      "feature_id": "PH-OUTING",
+      "feature_title": "外出をラクにする",
+      "article_id": "leg-warmers-6-picks",
+      "slug": "leg-warmers-6-picks",
+      "article_title": "冷える足元に！あったかレッグウォーマー6選",
+      "relation_type": "supporting",
+      "confidence": 0.82,
+      "rationale": "semantic review accepted 2026-10-01"
+    },
+    {
+      "feature_id": "PH-MAKEUP",
+      "feature_title": "メイクを楽しむ",
+      "article_id": "lip-oils-glosses-6-picks",
+      "slug": "lip-oils-glosses-6-picks",
+      "article_title": "うるつや唇に！話題のリップオイル・グロス6選をタイプ別に比較",
+      "relation_type": "supporting",
+      "confidence": 0.82,
+      "rationale": "semantic review accepted 2026-10-01"
+    },
+    {
+      "feature_id": "PH-DRYNESS",
+      "feature_title": "乾燥から守る",
+      "article_id": "lip-scrubs-6-picks",
+      "slug": "lip-scrubs-6-picks",
+      "article_title": "秋冬の唇ケアに！リップスクラブ6選",
+      "relation_type": "supporting",
+      "confidence": 0.82,
+      "rationale": "semantic review accepted 2026-10-01"
+    },
+    {
+      "feature_id": "PH-MAKEUP",
+      "feature_title": "メイクを楽しむ",
+      "article_id": "liquid-eyeliners-6-picks",
+      "slug": "liquid-eyeliners-6-picks",
+      "article_title": "描きやすさで選ぶリキッドアイライナー6選",
+      "relation_type": "supporting",
+      "confidence": 0.82,
+      "rationale": "semantic review accepted 2026-10-01"
+    },
+    {
+      "feature_id": "PH-SKINCARE",
+      "feature_title": "毎日のスキンケアを整える",
+      "article_id": "moisturizing-emulsions-for-autumn-6-picks",
+      "slug": "moisturizing-emulsions-for-autumn-6-picks",
+      "article_title": "秋の乾燥対策に。乳液を中心に6商品を比較",
+      "relation_type": "core",
+      "confidence": 0.9,
+      "rationale": "semantic review accepted 2026-10-01"
+    },
+    {
+      "feature_id": "PH-DRYNESS",
+      "feature_title": "乾燥から守る",
+      "article_id": "moisturizing-emulsions-for-autumn-6-picks",
+      "slug": "moisturizing-emulsions-for-autumn-6-picks",
+      "article_title": "秋の乾燥対策に。乳液を中心に6商品を比較",
+      "relation_type": "supporting",
+      "confidence": 0.82,
+      "rationale": "semantic review accepted 2026-10-01"
+    },
+    {
+      "feature_id": "PH-GROOMING",
+      "feature_title": "身だしなみを整える",
+      "article_id": "mouthwash-oral-care-6-picks",
+      "slug": "mouthwash-oral-care-6-picks",
+      "article_title": "口元印象アップ！マウスウォッシュ6選",
+      "relation_type": "core",
+      "confidence": 0.9,
+      "rationale": "semantic review accepted 2026-10-01"
+    },
+    {
+      "feature_id": "PH-SKINCARE",
+      "feature_title": "毎日のスキンケアを整える",
+      "article_id": "overnight-sleeping-masks-6-picks",
+      "slug": "overnight-sleeping-masks-6-picks",
+      "article_title": "寝ている間にうるおい補給！夜用スリーピングマスク6選",
+      "relation_type": "supporting",
+      "confidence": 0.82,
+      "rationale": "semantic review accepted 2026-10-01"
+    },
+    {
+      "feature_id": "PH-DRYNESS",
+      "feature_title": "乾燥から守る",
+      "article_id": "overnight-sleeping-masks-6-picks",
+      "slug": "overnight-sleeping-masks-6-picks",
+      "article_title": "寝ている間にうるおい補給！夜用スリーピングマスク6選",
+      "relation_type": "supporting",
+      "confidence": 0.82,
+      "rationale": "semantic review accepted 2026-10-01"
+    },
+    {
+      "feature_id": "PH-OUTING",
+      "feature_title": "外出をラクにする",
+      "article_id": "rain-coats-ponchos-6-picks",
+      "slug": "rain-coats-ponchos-6-picks",
+      "article_title": "突然の雨・台風に備える！レインコート・レインポンチョ6選",
+      "relation_type": "supporting",
+      "confidence": 0.82,
+      "rationale": "semantic review accepted 2026-10-01"
+    },
+    {
+      "feature_id": "PH-COOKING",
+      "feature_title": "毎日のごはんをラクにする",
+      "article_id": "refrigerators-6-picks",
+      "slug": "refrigerators-6-picks",
+      "article_title": "毎日の食材管理に！冷蔵庫6選",
+      "relation_type": "supporting",
+      "confidence": 0.82,
+      "rationale": "semantic review accepted 2026-10-01"
+    },
+    {
+      "feature_id": "PH-GROOMING",
+      "feature_title": "身だしなみを整える",
+      "article_id": "rinse-out-hair-masks-6-picks",
+      "slug": "rinse-out-hair-masks-6-picks",
+      "article_title": "秋のパサつく髪に。洗い流すヘアマスク6選",
+      "relation_type": "supporting",
+      "confidence": 0.82,
+      "rationale": "semantic review accepted 2026-10-01"
+    },
+    {
+      "feature_id": "PH-MAKEUP",
+      "feature_title": "メイクを楽しむ",
+      "article_id": "serum-foundations-6-picks",
+      "slug": "serum-foundations-6-picks",
+      "article_title": "乾燥が気になる季節に。美容液ファンデーション6選",
+      "relation_type": "supporting",
+      "confidence": 0.82,
+      "rationale": "semantic review accepted 2026-10-01"
+    },
+    {
+      "feature_id": "PH-DRYNESS",
+      "feature_title": "乾燥から守る",
+      "article_id": "serum-foundations-6-picks",
+      "slug": "serum-foundations-6-picks",
+      "article_title": "乾燥が気になる季節に。美容液ファンデーション6選",
+      "relation_type": "supporting",
+      "confidence": 0.82,
+      "rationale": "semantic review accepted 2026-10-01"
+    },
+    {
+      "feature_id": "PH-OUTING",
+      "feature_title": "外出をラクにする",
+      "article_id": "suitcases-for-year-end-travel-6-picks",
+      "slug": "suitcases-for-year-end-travel-6-picks",
+      "article_title": "年末年始の帰省・旅行に！スーツケース6選",
+      "relation_type": "core",
+      "confidence": 0.9,
+      "rationale": "semantic review accepted 2026-10-01"
+    },
+    {
+      "feature_id": "PH-COOKING",
+      "feature_title": "毎日のごはんをラクにする",
+      "article_id": "vacuum-food-sealers-6-picks",
+      "slug": "vacuum-food-sealers-6-picks",
+      "article_title": "まとめ買い食材の保存に。家庭用真空パック機6選",
+      "relation_type": "supporting",
+      "confidence": 0.82,
+      "rationale": "semantic review accepted 2026-10-01"
+    },
+    {
+      "feature_id": "PH-SLEEP",
+      "feature_title": "眠りを快適にする",
+      "article_id": "warm-washable-mattress-pads-6-picks",
+      "slug": "warm-washable-mattress-pads-6-picks",
+      "article_title": "冬の寝床に合う敷きパッド6選｜暖かさ・固定方法・洗いやすさで比較",
+      "relation_type": "core",
+      "confidence": 0.9,
+      "rationale": "semantic review accepted 2026-10-01"
+    },
+    {
+      "feature_id": "PH-GROOMING",
+      "feature_title": "身だしなみを整える",
+      "article_id": "womens-hair-growth-serums-6-picks",
+      "slug": "womens-hair-growth-serums-6-picks",
+      "article_title": "秋冬の抜け毛・薄毛対策に！女性用育毛剤・育毛エッセンス6選",
+      "relation_type": "core",
+      "confidence": 0.9,
+      "rationale": "semantic review accepted 2026-10-01"
     }
   ],
   "orphans": [
