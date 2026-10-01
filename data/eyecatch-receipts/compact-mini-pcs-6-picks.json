@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-compact-mini-pcs-6-picks-e3525351ccc9a618",
+  "request_sha256": "e3525351ccc9a618071616c175403f898802402f5dffef71245cf5c6095a439d",
+  "image_sha256": "a7de3bfd7c125b7397a3a1d116da7cf8bf0f85fa560a5a6f7973c0d422f066f1",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-10-01T17:50:41.678828+00:00"
+}

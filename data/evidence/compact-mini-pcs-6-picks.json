@@ -1,0 +1,134 @@
+{
+  "slug": "compact-mini-pcs-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/compact-mini-pcs-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/compact-mini-pcs-6-picks/compact-mini-pcs-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "performance_memory",
+      "label": "処理性能・メモリ構成",
+      "keywords": [
+        "CPU",
+        "メモリ容量",
+        "SSD容量"
+      ]
+    },
+    {
+      "id": "size_installation",
+      "label": "サイズ・設置性",
+      "keywords": [
+        "小型設計",
+        "設置スペース",
+        "VESAマウント"
+      ]
+    },
+    {
+      "id": "connectivity",
+      "label": "接続ポート・拡張性",
+      "keywords": [
+        "USBポート",
+        "HDMI出力",
+        "有線LAN"
+      ]
+    },
+    {
+      "id": "noise_cooling",
+      "label": "静音性・排熱設計",
+      "keywords": [
+        "静音ファン",
+        "冷却性能",
+        "動作音"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "performance_memory"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0HGGGHGRP",
+      "asin": "B0HGGGHGRP",
+      "amazon_title": "Apple 2026 Mac mini 12コアCPU、12コアGPUのM6チップ搭載デスクトップコンピュータ",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51NBurcRq2L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.58,
+      "matched_comparison_axes": [
+        "performance_memory"
+      ],
+      "search_key": "Apple 2026 Mac mini 12コアCPU、12コア"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HDC9M33L",
+      "asin": "B0HDC9M33L",
+      "amazon_title": "GEEKOM A7 ミニPC、AMD Ryzen 7 7840HS（最大5.1GHz）32GB DDR5+1TB SSD搭載",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71-j3596YEL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [],
+      "search_key": "GEEKOM A7 ミニPC、AMD Ryzen 7 7840H"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HCBQ4LGG",
+      "asin": "B0HCBQ4LGG",
+      "amazon_title": "【AIエージェント・業務用】GEEKOM Air12 Intel 7505 8K三画面出力 省電力mini pc 64GB＋4TB SSD拡張可",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/719UphsMvJL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [],
+      "search_key": "GEEKOM Air12 Intel 7505 8K三画面出力"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0H6WZCLGN",
+      "asin": "B0H6WZCLGN",
+      "amazon_title": "ミニpc ディスプレイ付き【インテル N95搭載】8GB DDR4+256GB SSD NVMe拡張対応 mini pc 4K×2画面出力・HDMI 2.1/DP/Type-C・Win11 Pro ミニパソコン 自動調整冷却ファン WIFI6/BT5.2 高速LANポート付き 小型pc USB3.0×2 36WPD充電 超小型 高性能 デスクトップpc 企業用/業務用/在宅用に最適",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71YI9SJrEhL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [],
+      "search_key": "ミニpc ディスプレイ付き 8GB DDR4+256GB SSD"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0H45NYB2H",
+      "asin": "B0H45NYB2H",
+      "amazon_title": "【2026 年最高峰ミニ PC】GEEKOM A7 ミニ pc AMD Ryzen 7730U 128GB RAM 拡張可能｜AI Agent マルチ実行・32GB 大メモリ｜4 画面 8K 出力｜2.5G LAN｜SD カードスロット｜ケンジントンロック｜3 年保証｜Win11｜32GB+500GB",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61IKtdJ0QXL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [],
+      "search_key": "GEEKOM A7 ミニ pc AMD Ryzen 7730U"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0H457MJ2W",
+      "asin": "B0H457MJ2W",
+      "amazon_title": "【次世代 R7・高耐久モデル】GEEKOM A5 7730U ミニPC 128GB+10TB SSD（拡張可能）2.5G LAN/WIFI6/ BT5.4｜ 8C16T 最大4.5GHz ｜4画面8K同時出力｜SDカードリーダー｜28dB静音＆24時間稼働 業務用デスクトップクリエイター/在宅ワークに最適 3年保証 超小型PC 16GB+500GB SSD",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71BlWgZJJJL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [],
+      "search_key": "GEEKOM A5 7730U ミニPC 128GB+10TB"
+    }
+  ]
+}
