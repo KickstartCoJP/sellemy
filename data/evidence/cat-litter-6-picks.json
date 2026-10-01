@@ -1,0 +1,136 @@
+{
+  "slug": "cat-litter-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/cat-litter-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/cat-litter-6-picks/cat-litter-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "odor_control",
+      "label": "消臭力",
+      "keywords": [
+        "におい対策",
+        "抗菌"
+      ]
+    },
+    {
+      "id": "dust",
+      "label": "飛び散り・粉立ち",
+      "keywords": [
+        "低ダスト",
+        "清潔"
+      ]
+    },
+    {
+      "id": "flushability",
+      "label": "トイレに流せるか",
+      "keywords": [
+        "水に流せる",
+        "処理のしやすさ"
+      ]
+    },
+    {
+      "id": "cost",
+      "label": "コスパ・容量",
+      "keywords": [
+        "大容量",
+        "価格"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "dust",
+      "odor_control"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0DVSHTB5Y",
+      "asin": "B0DVSHTB5Y",
+      "amazon_title": "ニャンとも清潔トイレ [消臭力 監修 ニオイキャッチ成分配合] 消臭プロフェッショナル 脱臭・抗菌チップ [猫砂] 小さめの粒4.4L システムトイレ 猫用",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71VPHwh+zzL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.685,
+      "matched_comparison_axes": [
+        "dust",
+        "odor_control"
+      ],
+      "search_key": "ニャンとも清潔トイレ 消臭プロフェッショナル 脱臭・抗菌チップ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0H99MJ3VV",
+      "asin": "B0H99MJ3VV",
+      "amazon_title": "ニオイをとる砂 軽量タイプ 5L (× 2)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81gQqxAgUPL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "ニオイをとる砂 軽量タイプ 5L (× 2)"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0H6ZYFL9X",
+      "asin": "B0H6ZYFL9X",
+      "amazon_title": "猫砂 キャッサバ ベントナイト 鉱物 固まる 2.5kg【2.5kg×1袋】べたつかない 消臭 抗菌 システムトイレ対応 天然素材",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/711UmldQ9WL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "odor_control"
+      ],
+      "search_key": "猫砂 キャッサバ ベントナイト 鉱物 固まる 2.5kg べたつ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0H6ZW68S6",
+      "asin": "B0H6ZW68S6",
+      "amazon_title": "猫砂 おから キャッサバ ネコ砂 固まる 2.5KG【2.5kg×1袋】べたつかない 流せる 消臭 飛び散らない 低粉塵",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81pvl5LR9OL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "猫砂 おから キャッサバ ネコ砂 固まる 2.5KG べたつかな"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0H25C694F",
+      "asin": "B0H25C694F",
+      "amazon_title": "猫砂 おから 固まる【約25日間消臭・低粉塵】ネコ砂 キャッサバ・ベントナイト配合 猫 トイレ 砂 5L（3.6kg）×4袋",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81i-2Hbk4DL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "猫砂 おから 固まる ネコ砂 キャッサバ・ベントナイト配合 猫"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0FY66SXHN",
+      "asin": "B0FY66SXHN",
+      "amazon_title": "猫砂 キャッサバ マシュマロの香り 固まる べたつかない 飛び散らない 低粉塵 消臭/抗菌 全年齢向け 7.5kg【2.5kg×3袋】",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71xKpHBH7GL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "odor_control"
+      ],
+      "search_key": "猫砂 キャッサバ マシュマロの香り 固まる べたつかない 飛び散"
+    }
+  ]
+}

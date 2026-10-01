@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-cat-litter-6-picks-4172d57151f3033a",
+  "request_sha256": "4172d57151f3033a9bd2023d65f6f5d7f84df5ef8bcce096d6e961526f0778c2",
+  "image_sha256": "b53cce2bf94d54e57cf20b7f1f0b73f33902c26d44b928029e1aae25e31a02b1",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-10-01T15:44:38.430019+00:00"
+}
