@@ -1,0 +1,139 @@
+{
+  "slug": "lip-oils-glosses-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/lip-oils-glosses-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/lip-oils-glosses-6-picks/lip-oils-glosses-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "ingredients",
+      "label": "保湿・美容成分",
+      "keywords": [
+        "保湿成分",
+        "ヒアルロン酸",
+        "オイル"
+      ]
+    },
+    {
+      "id": "finish",
+      "label": "仕上がり・ツヤ感",
+      "keywords": [
+        "ツヤ",
+        "透明感",
+        "発色"
+      ]
+    },
+    {
+      "id": "portability",
+      "label": "携帯性・デザイン",
+      "keywords": [
+        "携帯性",
+        "パッケージ",
+        "チップ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "finish",
+      "ingredients"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0H2GZ4PQL",
+      "asin": "B0H2GZ4PQL",
+      "amazon_title": "METYSUR リップオイル リップグロス 保湿 落ちにくい ツヤ 光沢 透明感 血色感 長持ち うるおい ぷるぷる仕上げ ジューシー 美容液成分配合 カラーグロス デイリーリップケア",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51cpwc+JTpL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.76,
+      "matched_comparison_axes": [
+        "finish",
+        "ingredients"
+      ],
+      "search_key": "METYSUR リップオイル リップグロス 保湿 落ちにくい ツ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0GY3HG72P",
+      "asin": "B0GY3HG72P",
+      "amazon_title": "[TIRTIR] グロウポップティンティッドリップオイル (01 PEACH MELT)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41zu-XE0k5L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [
+        "ingredients"
+      ],
+      "search_key": "グロウポップティンティッドリップオイル (01 PEACH ME"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GT58YKD9",
+      "asin": "B0GT58YKD9",
+      "amazon_title": "rom&nd(ロムアンド) JUICY FLASH LIP OIL ジューシーリップオイル (02 ベリーアップ)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61GphKQDUqL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [
+        "ingredients"
+      ],
+      "search_key": "rom&nd(ロムアンド) JUICY FLASH LIP OI"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0GFVFNX84",
+      "asin": "B0GFVFNX84",
+      "amazon_title": "(アフレ) リップ美容液【1本2役 美容液×オイル】高保湿 AQUADUOリップセラム 唇美容液 唇の乾燥・縦ジワケア ヒアルロン酸配合 荒れ唇ケア リップトリートメント ぷるぷるツヤ唇へ",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/713iP8PF1gL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [
+        "finish",
+        "ingredients"
+      ],
+      "search_key": "(アフレ) リップ美容液 高保湿 AQUADUOリップセラム 唇"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0GCM1P5JP",
+      "asin": "B0GCM1P5JP",
+      "amazon_title": "(ガラカミーレ) ペインティングプランプリップオイル (06 ノーティーアディクト) バニラの香り 3.5g",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61gyiTcR7AL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [
+        "ingredients"
+      ],
+      "search_key": "(ガラカミーレ) ペインティングプランプリップオイル (06 ノ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0FZ99JN6Y",
+      "asin": "B0FZ99JN6Y",
+      "amazon_title": "グロウリップオイル ボリュームリップセラム高保湿 透明 ツヤ感 リップグロス 乾燥を防ぐ 潤い 唇のキメを整える ナイトケア用のリップ",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51r-ApV8cAL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [
+        "finish",
+        "ingredients"
+      ],
+      "search_key": "グロウリップオイル ボリュームリップセラム高保湿 透明 ツヤ感"
+    }
+  ]
+}
