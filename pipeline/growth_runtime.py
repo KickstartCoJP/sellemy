@@ -22,6 +22,7 @@ from planning_runtime import PlanningError, discover_candidates, rank_candidates
 from publish_gate import (
     PublishGate, PublishGateError, recover_unpublished_commit_after_remote_race, sync_clean_main,
 )
+from purpose_relation_discovery import run as run_purpose_relation_discovery
 from product_selection import select_six
 from publish_payload import run as publish_payload
 from qa import run_qa
@@ -328,6 +329,18 @@ def run(
                 raise GrowthRuntimeError(
                     f'feedback Task/Event bridge failed and publication was paused: {bridge_error}'
                 ) from bridge_error
+            # Purpose Relation Discovery is a read-only local projection. It must stay
+            # current with Growth, but must never block an otherwise valid article publish.
+            try:
+                purpose = run_purpose_relation_discovery()
+                result['purpose_relation_discovery'] = {
+                    'generated_at': purpose['generated_at'],
+                    'source_snapshot': purpose['source_snapshot'],
+                    'global': purpose['global'],
+                    'local_processing': purpose['local_processing'],
+                }
+            except Exception as purpose_error:
+                result['purpose_relation_discovery_error'] = f'{type(purpose_error).__name__}: {purpose_error}'
         return result
     except Exception as exc:
         result['status'] = 'published_feedback_failed' if result['published'] else 'blocked_before_publish'

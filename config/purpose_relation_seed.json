@@ -1,0 +1,2140 @@
+{
+  "source": {
+    "path": "json/articles.json",
+    "sha256": "ecd101e3bc0a2dfe930f892fd04ba28872ce67107f007ecd33b183a0a8f04ddb",
+    "mtime_utc": "2026-09-29T12:01:05.444863+00:00",
+    "published_count": 197
+  },
+  "relations": [
+    {
+      "feature_id": "PH-HOUSEWORK",
+      "feature_title": "家事をラクにする",
+      "article_id": "smart-home-appliances-top-6",
+      "slug": "smart-home-appliances-top-6",
+      "article_title": "家事効率アップ！スマート家電6選",
+      "relation_type": "supporting",
+      "confidence": 0.78,
+      "rationale": "slug/title semantic match: smart-home-appliances"
+    },
+    {
+      "feature_id": "PH-HOUSEWORK",
+      "feature_title": "家事をラクにする",
+      "article_id": "eco-friendly-detergents-6picks",
+      "slug": "eco-friendly-detergents-6picks",
+      "article_title": "快適生活の新定番！エコ洗剤6選",
+      "relation_type": "supporting",
+      "confidence": 0.78,
+      "rationale": "slug/title semantic match: eco-friendly-detergents"
+    },
+    {
+      "feature_id": "PH-HOUSEWORK",
+      "feature_title": "家事をラクにする",
+      "article_id": "cordless-vacuum-cleaners-6-picks",
+      "slug": "cordless-vacuum-cleaners-6-picks",
+      "article_title": "手軽に掃除！コードレス掃除機6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: vacuum"
+    },
+    {
+      "feature_id": "PH-HOUSEWORK",
+      "feature_title": "家事をラクにする",
+      "article_id": "robot-vacuum-cleaners-6-picks",
+      "slug": "robot-vacuum-cleaners-6-picks",
+      "article_title": "家事を効率化！ロボット掃除機6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: vacuum"
+    },
+    {
+      "feature_id": "PH-HOUSEWORK",
+      "feature_title": "家事をラクにする",
+      "article_id": "seasonal-clothing-storage-6-picks",
+      "slug": "seasonal-clothing-storage-6-picks",
+      "article_title": "衣替えをスムーズに！収納グッズ6選",
+      "relation_type": "supporting",
+      "confidence": 0.78,
+      "rationale": "slug/title semantic match: seasonal-clothing-storage"
+    },
+    {
+      "feature_id": "PH-HOUSEWORK",
+      "feature_title": "家事をラクにする",
+      "article_id": "home-dehumidifiers-6-picks",
+      "slug": "home-dehumidifiers-6-picks",
+      "article_title": "部屋干し・湿気対策に！除湿機6選",
+      "relation_type": "supporting",
+      "confidence": 0.78,
+      "rationale": "slug/title semantic match: home-dehumidifiers"
+    },
+    {
+      "feature_id": "PH-HOUSEWORK",
+      "feature_title": "家事をラクにする",
+      "article_id": "compact-dishwashers-6-picks",
+      "slug": "compact-dishwashers-6-picks",
+      "article_title": "家事時短の味方！食器洗い乾燥機6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: dishwasher"
+    },
+    {
+      "feature_id": "PH-HOUSEWORK",
+      "feature_title": "家事をラクにする",
+      "article_id": "futon-dryers-6-picks",
+      "slug": "futon-dryers-6-picks",
+      "article_title": "秋冬のじめじめ対策に！布団乾燥機6選",
+      "relation_type": "supporting",
+      "confidence": 0.78,
+      "rationale": "slug/title semantic match: futon-dryers"
+    },
+    {
+      "feature_id": "PH-HOUSEWORK",
+      "feature_title": "家事をラクにする",
+      "article_id": "garment-steamers-6-picks",
+      "slug": "garment-steamers-6-picks",
+      "article_title": "秋の衣替えに便利！衣類スチーマー6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: garment-steamers"
+    },
+    {
+      "feature_id": "PH-HOUSEWORK",
+      "feature_title": "家事をラクにする",
+      "article_id": "dust-mite-vacuum-cleaners-6-picks",
+      "slug": "dust-mite-vacuum-cleaners-6-picks",
+      "article_title": "秋のダニ対策に！ふとん専用クリーナー6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: vacuum"
+    },
+    {
+      "feature_id": "PH-HOUSEWORK",
+      "feature_title": "家事をラクにする",
+      "article_id": "compact-clothes-dryers-6-picks",
+      "slug": "compact-clothes-dryers-6-picks",
+      "article_title": "秋雨シーズンの部屋干しがラクになる衣類乾燥機6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: clothes-dryers"
+    },
+    {
+      "feature_id": "PH-HOUSEWORK",
+      "feature_title": "家事をラクにする",
+      "article_id": "shoe-dryers-6-picks",
+      "slug": "shoe-dryers-6-picks",
+      "article_title": "スポーツの秋に！靴乾燥機6選 乾燥方式・対応サイズ・携帯性で徹底比較",
+      "relation_type": "supporting",
+      "confidence": 0.78,
+      "rationale": "slug/title semantic match: shoe-dryers"
+    },
+    {
+      "feature_id": "PH-HOUSEWORK",
+      "feature_title": "家事をラクにする",
+      "article_id": "drum-washer-dryers-6-picks",
+      "slug": "drum-washer-dryers-6-picks",
+      "article_title": "家事時間を短縮！ドラム式洗濯乾燥機6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: washer-dryers"
+    },
+    {
+      "feature_id": "PH-HOUSEWORK",
+      "feature_title": "家事をラクにする",
+      "article_id": "handheld-vacuum-cleaners-6-picks",
+      "slug": "handheld-vacuum-cleaners-6-picks",
+      "article_title": "デスクも車内もすっきり！ハンディクリーナー6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: vacuum"
+    },
+    {
+      "feature_id": "PH-HOUSEWORK",
+      "feature_title": "家事をラクにする",
+      "article_id": "floor-cleaning-sheets-6-picks",
+      "slug": "floor-cleaning-sheets-6-picks",
+      "article_title": "手軽にサッと！フローリングワイパー＆お掃除シート6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: floor-cleaning"
+    },
+    {
+      "feature_id": "PH-HOUSEWORK",
+      "feature_title": "家事をラクにする",
+      "article_id": "electric-fabric-shavers-6-picks",
+      "slug": "electric-fabric-shavers-6-picks",
+      "article_title": "ニットのお手入れに使う電動毛玉取り器6候補",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: fabric-shavers"
+    },
+    {
+      "feature_id": "PH-HOUSEWORK",
+      "feature_title": "家事をラクにする",
+      "article_id": "delicate-laundry-detergents-6-picks",
+      "slug": "delicate-laundry-detergents-6-picks",
+      "article_title": "ニットの洗濯に備える！おしゃれ着用洗剤6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: laundry-detergents"
+    },
+    {
+      "feature_id": "PH-HOUSEWORK",
+      "feature_title": "家事をラクにする",
+      "article_id": "knit-flat-drying-nets-6-picks",
+      "slug": "knit-flat-drying-nets-6-picks",
+      "article_title": "ニットの平干し用品6製品を比較｜段数・設置方法・収納しやすさ",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: knit-flat-drying"
+    },
+    {
+      "feature_id": "PH-HOUSEWORK",
+      "feature_title": "家事をラクにする",
+      "article_id": "closet-moth-repellents-6-picks",
+      "slug": "closet-moth-repellents-6-picks",
+      "article_title": "秋の衣類をしまう前に選びたい衣類用防虫剤6選",
+      "relation_type": "supporting",
+      "confidence": 0.78,
+      "rationale": "slug/title semantic match: closet-moth-repellents"
+    },
+    {
+      "feature_id": "PH-HOUSEWORK",
+      "feature_title": "家事をラクにする",
+      "article_id": "washing-machine-drum-cleaners-6-picks",
+      "slug": "washing-machine-drum-cleaners-6-picks",
+      "article_title": "洗濯機に合わせて選ぶ洗濯槽クリーナー6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: washing-machine"
+    },
+    {
+      "feature_id": "PH-HOUSEWORK",
+      "feature_title": "家事をラクにする",
+      "article_id": "range-hood-degreasers-6-picks",
+      "slug": "range-hood-degreasers-6-picks",
+      "article_title": "換気扇の油汚れに使う洗剤6選｜泡・つけ置き・拭き掃除を比較",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: range-hood-degreasers"
+    },
+    {
+      "feature_id": "PH-HOUSEWORK",
+      "feature_title": "家事をラクにする",
+      "article_id": "bathroom-mold-removers-6-picks",
+      "slug": "bathroom-mold-removers-6-picks",
+      "article_title": "浴室の黒カビ掃除に。カビ取り剤6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: bathroom-mold-removers"
+    },
+    {
+      "feature_id": "PH-HOUSEWORK",
+      "feature_title": "家事をラクにする",
+      "article_id": "folding-indoor-drying-racks-6-picks",
+      "slug": "folding-indoor-drying-racks-6-picks",
+      "article_title": "秋雨の日の部屋干しに。折りたたみ室内物干し6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: folding-indoor-drying-racks"
+    },
+    {
+      "feature_id": "PH-DESK",
+      "feature_title": "デスク環境を整える",
+      "article_id": "usb-c-chargers-6-picks",
+      "slug": "usb-c-chargers-6-picks",
+      "article_title": "充電環境をすっきり！USB-C充電器6選",
+      "relation_type": "supporting",
+      "confidence": 0.78,
+      "rationale": "slug/title semantic match: usb-c-chargers"
+    },
+    {
+      "feature_id": "PH-DESK",
+      "feature_title": "デスク環境を整える",
+      "article_id": "led-desk-lights-6-picks",
+      "slug": "led-desk-lights-6-picks",
+      "article_title": "作業環境を快適に！LEDデスクライト6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: desk"
+    },
+    {
+      "feature_id": "PH-DESK",
+      "feature_title": "デスク環境を整える",
+      "article_id": "wireless-chargers-6-picks",
+      "slug": "wireless-chargers-6-picks",
+      "article_title": "新型スマホと一緒に!ワイヤレス充電器6選",
+      "relation_type": "supporting",
+      "confidence": 0.78,
+      "rationale": "slug/title semantic match: wireless-chargers"
+    },
+    {
+      "feature_id": "PH-DESK",
+      "feature_title": "デスク環境を整える",
+      "article_id": "usb-desktop-humidifiers-6-picks",
+      "slug": "usb-desktop-humidifiers-6-picks",
+      "article_title": "オフィスの乾燥対策に!USB卓上加湿器6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: desk"
+    },
+    {
+      "feature_id": "PH-DESK",
+      "feature_title": "デスク環境を整える",
+      "article_id": "portable-monitors-6-picks",
+      "slug": "portable-monitors-6-picks",
+      "article_title": "デスク環境をアップデート！モバイルモニター6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: portable-monitors"
+    },
+    {
+      "feature_id": "PH-DESK",
+      "feature_title": "デスク環境を整える",
+      "article_id": "wireless-keyboard-mouse-sets-6-picks",
+      "slug": "wireless-keyboard-mouse-sets-6-picks",
+      "article_title": "デスク環境を快適に！ワイヤレスキーボード＆マウスセット6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: wireless-keyboard-mouse"
+    },
+    {
+      "feature_id": "PH-DESK",
+      "feature_title": "デスク環境を整える",
+      "article_id": "ergonomic-office-chairs-6-picks",
+      "slug": "ergonomic-office-chairs-6-picks",
+      "article_title": "デスク環境を快適に！オフィスチェア6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: office-chairs"
+    },
+    {
+      "feature_id": "PH-DESK",
+      "feature_title": "デスク環境を整える",
+      "article_id": "monitor-arms-6-picks",
+      "slug": "monitor-arms-6-picks",
+      "article_title": "デスク環境をスッキリ！モニターアーム6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: monitor-arms"
+    },
+    {
+      "feature_id": "PH-DESK",
+      "feature_title": "デスク環境を整える",
+      "article_id": "wifi-routers-6-picks",
+      "slug": "wifi-routers-6-picks",
+      "article_title": "通信環境を見直す！Wi-Fiルーター6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: wifi-routers"
+    },
+    {
+      "feature_id": "PH-DESK",
+      "feature_title": "デスク環境を整える",
+      "article_id": "webcams-6-picks",
+      "slug": "webcams-6-picks",
+      "article_title": "在宅ワークを快適に！Webカメラ6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: webcams"
+    },
+    {
+      "feature_id": "PH-DESK",
+      "feature_title": "デスク環境を整える",
+      "article_id": "standing-desks-6-picks",
+      "slug": "standing-desks-6-picks",
+      "article_title": "デスク環境をアップグレード！電動昇降デスク6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: desk, standing-desks"
+    },
+    {
+      "feature_id": "PH-DESK",
+      "feature_title": "デスク環境を整える",
+      "article_id": "4k-desktop-monitors-6-picks",
+      "slug": "4k-desktop-monitors-6-picks",
+      "article_title": "作業効率アップ！4Kデスクトップモニター6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: desk, desktop-monitors"
+    },
+    {
+      "feature_id": "PH-DESK",
+      "feature_title": "デスク環境を整える",
+      "article_id": "handheld-vacuum-cleaners-6-picks",
+      "slug": "handheld-vacuum-cleaners-6-picks",
+      "article_title": "デスクも車内もすっきり！ハンディクリーナー6選",
+      "relation_type": "supporting",
+      "confidence": 0.78,
+      "rationale": "slug/title semantic match: handheld-vacuum-cleaners"
+    },
+    {
+      "feature_id": "PH-DESK",
+      "feature_title": "デスク環境を整える",
+      "article_id": "desk-foot-warmers-6-picks",
+      "slug": "desk-foot-warmers-6-picks",
+      "article_title": "冷えた足元をぽかぽかに！電気足温器6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: desk"
+    },
+    {
+      "feature_id": "PH-DESK",
+      "feature_title": "デスク環境を整える",
+      "article_id": "usb-c-docking-stations-6-picks",
+      "slug": "usb-c-docking-stations-6-picks",
+      "article_title": "ノートPCの接続をまとめるUSB-Cドッキングステーション6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: usb-c-docking"
+    },
+    {
+      "feature_id": "PH-COOKING",
+      "feature_title": "毎日のごはんをラクにする",
+      "article_id": "best-cooking-tools-6-selection",
+      "slug": "best-cooking-tools-6-selection",
+      "article_title": "手軽に料理！おすすめの調理器具6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: cooking-tools"
+    },
+    {
+      "feature_id": "PH-COOKING",
+      "feature_title": "毎日のごはんをラクにする",
+      "article_id": "comfortable-morning-toasters",
+      "slug": "comfortable-morning-toasters",
+      "article_title": "快適な朝を迎える！トースター6選",
+      "relation_type": "supporting",
+      "confidence": 0.78,
+      "rationale": "slug/title semantic match: comfortable-morning-toasters"
+    },
+    {
+      "feature_id": "PH-COOKING",
+      "feature_title": "毎日のごはんをラクにする",
+      "article_id": "must-have-kitchen-appliances",
+      "slug": "must-have-kitchen-appliances",
+      "article_title": "料理好き必見！キッチン家電6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: kitchen-appliances"
+    },
+    {
+      "feature_id": "PH-COOKING",
+      "feature_title": "毎日のごはんをラクにする",
+      "article_id": "electric-kettles-6-picks",
+      "slug": "electric-kettles-6-picks",
+      "article_title": "すぐに沸かせる！電気ケトル6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: electric-kettles"
+    },
+    {
+      "feature_id": "PH-COOKING",
+      "feature_title": "毎日のごはんをラクにする",
+      "article_id": "home-hot-plates-6-picks",
+      "slug": "home-hot-plates-6-picks",
+      "article_title": "ホットプレート比較｜おうち鍋・パーティーに使える6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: home-hot-plates"
+    },
+    {
+      "feature_id": "PH-COOKING",
+      "feature_title": "毎日のごはんをラクにする",
+      "article_id": "rice-cookers-6-picks",
+      "slug": "rice-cookers-6-picks",
+      "article_title": "美味しいご飯のために！炊飯器6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: rice-cookers"
+    },
+    {
+      "feature_id": "PH-COOKING",
+      "feature_title": "毎日のごはんをラクにする",
+      "article_id": "air-fryers-6-picks",
+      "slug": "air-fryers-6-picks",
+      "article_title": "余分な油をカット！ノンフライヤー6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: air-fryers"
+    },
+    {
+      "feature_id": "PH-COOKING",
+      "feature_title": "毎日のごはんをラクにする",
+      "article_id": "electric-pressure-cookers-6-picks",
+      "slug": "electric-pressure-cookers-6-picks",
+      "article_title": "ほったらかし調理を叶える電気圧力鍋6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: electric-pressure-cookers"
+    },
+    {
+      "feature_id": "PH-COOKING",
+      "feature_title": "毎日のごはんをラクにする",
+      "article_id": "sweet-potato-makers-6-picks",
+      "slug": "sweet-potato-makers-6-picks",
+      "article_title": "おうちで石焼き芋！焼き芋メーカー6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: sweet-potato-makers"
+    },
+    {
+      "feature_id": "PH-COOKING",
+      "feature_title": "毎日のごはんをラクにする",
+      "article_id": "home-bakery-bread-makers-6-picks",
+      "slug": "home-bakery-bread-makers-6-picks",
+      "article_title": "おうちで焼きたてパン！ホームベーカリー6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: home-bakery"
+    },
+    {
+      "feature_id": "PH-COOKING",
+      "feature_title": "毎日のごはんをラクにする",
+      "article_id": "microwave-ovens-6-picks",
+      "slug": "microwave-ovens-6-picks",
+      "article_title": "毎日の食卓に！電子レンジ6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: microwave-ovens"
+    },
+    {
+      "feature_id": "PH-COOKING",
+      "feature_title": "毎日のごはんをラクにする",
+      "article_id": "portable-induction-cooktops-6-picks",
+      "slug": "portable-induction-cooktops-6-picks",
+      "article_title": "鍋シーズン到来！卓上IHクッキングヒーター6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: portable-induction"
+    },
+    {
+      "feature_id": "PH-COOKING",
+      "feature_title": "毎日のごはんをラクにする",
+      "article_id": "hot-sandwich-makers-6-picks",
+      "slug": "hot-sandwich-makers-6-picks",
+      "article_title": "おうちカフェ気分！ホットサンドメーカー6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: hot-sandwich"
+    },
+    {
+      "feature_id": "PH-COOKING",
+      "feature_title": "毎日のごはんをラクにする",
+      "article_id": "slow-cookers-6-picks",
+      "slug": "slow-cookers-6-picks",
+      "article_title": "ほったらかし調理に!低温調理器・スロークッカー6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: slow-cookers"
+    },
+    {
+      "feature_id": "PH-COOKING",
+      "feature_title": "毎日のごはんをラクにする",
+      "article_id": "donabe-hot-pot-cookware-6-picks",
+      "slug": "donabe-hot-pot-cookware-6-picks",
+      "article_title": "鍋シーズン到来！IH対応土鍋・鍋セット6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: donabe-hot-pot"
+    },
+    {
+      "feature_id": "PH-COOKING",
+      "feature_title": "毎日のごはんをラクにする",
+      "article_id": "personal-blenders-6-picks",
+      "slug": "personal-blenders-6-picks",
+      "article_title": "毎朝のスムージーに！パーソナルブレンダー6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: personal-blenders"
+    },
+    {
+      "feature_id": "PH-COOKING",
+      "feature_title": "毎日のごはんをラクにする",
+      "article_id": "portable-gas-stoves-6-picks",
+      "slug": "portable-gas-stoves-6-picks",
+      "article_title": "鍋パーティーが盛り上がる！カセットコンロ＆卓上鍋６選を徹底比較",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: portable-gas-stoves"
+    },
+    {
+      "feature_id": "PH-COOKING",
+      "feature_title": "毎日のごはんをラクにする",
+      "article_id": "lunch-boxes-bento-6-picks",
+      "slug": "lunch-boxes-bento-6-picks",
+      "article_title": "毎日のお弁当に！ランチボックス・弁当箱6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: lunch-boxes-bento"
+    },
+    {
+      "feature_id": "PH-COOKING",
+      "feature_title": "毎日のごはんをラクにする",
+      "article_id": "food-storage-containers-6-picks",
+      "slug": "food-storage-containers-6-picks",
+      "article_title": "作り置きに便利！食品保存容器・タッパー6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: food-storage-containers"
+    },
+    {
+      "feature_id": "PH-COOKING",
+      "feature_title": "毎日のごはんをラクにする",
+      "article_id": "rice-storage-bins-6-picks",
+      "slug": "rice-storage-bins-6-picks",
+      "article_title": "新米の保存に。密閉米びつ6選を容量・保存方法・使い勝手で比較",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: rice-storage-bins"
+    },
+    {
+      "feature_id": "PH-COOKING",
+      "feature_title": "毎日のごはんをラクにする",
+      "article_id": "automatic-soup-makers",
+      "slug": "automatic-soup-makers",
+      "article_title": "温かいスープを手軽に。自動調理ポット6件を比較",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: automatic-soup-makers"
+    },
+    {
+      "feature_id": "PH-COOKING",
+      "feature_title": "毎日のごはんをラクにする",
+      "article_id": "bamboo-steamers-6-picks",
+      "slug": "bamboo-steamers-6-picks",
+      "article_title": "秋の蒸し料理に使いたいせいろ6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: bamboo-steamers"
+    },
+    {
+      "feature_id": "PH-DRYNESS",
+      "feature_title": "乾燥から守る",
+      "article_id": "after-sun-lotion-6-choices",
+      "slug": "after-sun-lotion-6-choices",
+      "article_title": "夏の肌に潤いを！アフターサンローション6選",
+      "relation_type": "supporting",
+      "confidence": 0.78,
+      "rationale": "slug/title semantic match: after-sun-lotion"
+    },
+    {
+      "feature_id": "PH-DRYNESS",
+      "feature_title": "乾燥から守る",
+      "article_id": "seasonal-moisturizing-creams-6",
+      "slug": "seasonal-moisturizing-creams-6",
+      "article_title": "季節の変わり目対策！保湿クリーム6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: moisturizing"
+    },
+    {
+      "feature_id": "PH-DRYNESS",
+      "feature_title": "乾燥から守る",
+      "article_id": "autumn-humidifiers-6-picks",
+      "slug": "autumn-humidifiers-6-picks",
+      "article_title": "秋の乾燥対策に！加湿器6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: humidifier"
+    },
+    {
+      "feature_id": "PH-DRYNESS",
+      "feature_title": "乾燥から守る",
+      "article_id": "autumn-hand-creams-6-picks",
+      "slug": "autumn-hand-creams-6-picks",
+      "article_title": "秋の乾燥対策に！ハンドクリーム6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: hand-creams"
+    },
+    {
+      "feature_id": "PH-DRYNESS",
+      "feature_title": "乾燥から守る",
+      "article_id": "home-dehumidifiers-6-picks",
+      "slug": "home-dehumidifiers-6-picks",
+      "article_title": "部屋干し・湿気対策に！除湿機6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: humidifier"
+    },
+    {
+      "feature_id": "PH-DRYNESS",
+      "feature_title": "乾燥から守る",
+      "article_id": "autumn-lip-balms-6-picks",
+      "slug": "autumn-lip-balms-6-picks",
+      "article_title": "秋の乾燥に負けない！保湿リップクリーム6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: lip-balms"
+    },
+    {
+      "feature_id": "PH-DRYNESS",
+      "feature_title": "乾燥から守る",
+      "article_id": "autumn-moisturizing-sheet-masks-6-picks",
+      "slug": "autumn-moisturizing-sheet-masks-6-picks",
+      "article_title": "秋の乾燥対策に！保湿シートマスク6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: moisturizing"
+    },
+    {
+      "feature_id": "PH-DRYNESS",
+      "feature_title": "乾燥から守る",
+      "article_id": "eye-creams-for-autumn-dryness-6-picks",
+      "slug": "eye-creams-for-autumn-dryness-6-picks",
+      "article_title": "秋の乾燥対策に！目もと集中ケアアイクリーム6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: dryness"
+    },
+    {
+      "feature_id": "PH-DRYNESS",
+      "feature_title": "乾燥から守る",
+      "article_id": "autumn-body-lotions-6-picks",
+      "slug": "autumn-body-lotions-6-picks",
+      "article_title": "秋冬の乾燥対策に！全身保湿ボディローション6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: body-lotions"
+    },
+    {
+      "feature_id": "PH-DRYNESS",
+      "feature_title": "乾燥から守る",
+      "article_id": "autumn-gentle-face-cleansers-6-picks",
+      "slug": "autumn-gentle-face-cleansers-6-picks",
+      "article_title": "秋の乾燥に負けない！低刺激洗顔料6選",
+      "relation_type": "supporting",
+      "confidence": 0.78,
+      "rationale": "slug/title semantic match: autumn-gentle-face-cleansers"
+    },
+    {
+      "feature_id": "PH-DRYNESS",
+      "feature_title": "乾燥から守る",
+      "article_id": "usb-desktop-humidifiers-6-picks",
+      "slug": "usb-desktop-humidifiers-6-picks",
+      "article_title": "オフィスの乾燥対策に!USB卓上加湿器6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: humidifier"
+    },
+    {
+      "feature_id": "PH-DRYNESS",
+      "feature_title": "乾燥から守る",
+      "article_id": "humidifying-air-purifiers-6-picks",
+      "slug": "humidifying-air-purifiers-6-picks",
+      "article_title": "乾燥対策と空気清浄を一台で！加湿空気清浄機6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: humidifying-air-purifiers"
+    },
+    {
+      "feature_id": "PH-DRYNESS",
+      "feature_title": "乾燥から守る",
+      "article_id": "autumn-face-oils-6-picks",
+      "slug": "autumn-face-oils-6-picks",
+      "article_title": "秋の乾燥対策に！フェイスオイル6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: face-oils"
+    },
+    {
+      "feature_id": "PH-DRYNESS",
+      "feature_title": "乾燥から守る",
+      "article_id": "closet-moisture-absorbers-6-picks",
+      "slug": "closet-moisture-absorbers-6-picks",
+      "article_title": "秋冬のカビ・湿気対策に！押入れ・クローゼット用除湿剤6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: moisture-absorbers"
+    },
+    {
+      "feature_id": "PH-DRYNESS",
+      "feature_title": "乾燥から守る",
+      "article_id": "moisturizing-body-wash-6-picks",
+      "slug": "moisturizing-body-wash-6-picks",
+      "article_title": "秋冬の乾燥肌に！保湿ボディソープ6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: moisturizing"
+    },
+    {
+      "feature_id": "PH-DRYNESS",
+      "feature_title": "乾燥から守る",
+      "article_id": "autumn-cuticle-oils-6-picks",
+      "slug": "autumn-cuticle-oils-6-picks",
+      "article_title": "秋の指先の乾燥に。甘皮まわりをケアするネイルオイル6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: cuticle-oils"
+    },
+    {
+      "feature_id": "PH-DRYNESS",
+      "feature_title": "乾燥から守る",
+      "article_id": "autumn-cleansing-milks-6-picks",
+      "slug": "autumn-cleansing-milks-6-picks",
+      "article_title": "乾燥が気になる季節のクレンジング6選｜ミルクを中心に比較",
+      "relation_type": "supporting",
+      "confidence": 0.78,
+      "rationale": "slug/title semantic match: autumn-cleansing-milks"
+    },
+    {
+      "feature_id": "PH-DRYNESS",
+      "feature_title": "乾燥から守る",
+      "article_id": "heel-moisturizing-creams-6-picks",
+      "slug": "heel-moisturizing-creams-6-picks",
+      "article_title": "秋冬のかかとケアに選びたい保湿クリーム6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: moisturizing, heel-moisturizing"
+    },
+    {
+      "feature_id": "PH-DRYNESS",
+      "feature_title": "乾燥から守る",
+      "article_id": "hair-brushes-for-frizz-6-picks",
+      "slug": "hair-brushes-for-frizz-6-picks",
+      "article_title": "乾燥で広がる髪に。ヘアブラシ6選",
+      "relation_type": "supporting",
+      "confidence": 0.78,
+      "rationale": "slug/title semantic match: hair-brushes-for-frizz"
+    },
+    {
+      "feature_id": "PH-SLEEP",
+      "feature_title": "眠りを快適にする",
+      "article_id": "cool-bedding-6-selection",
+      "slug": "cool-bedding-6-selection",
+      "article_title": "夏の清涼感を演出！涼感寝具6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: cool-bedding"
+    },
+    {
+      "feature_id": "PH-SLEEP",
+      "feature_title": "眠りを快適にする",
+      "article_id": "sleep-aid-devices-6-selection",
+      "slug": "sleep-aid-devices-6-selection",
+      "article_title": "快適な睡眠をサポート！安眠グッズ6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: sleep-aid"
+    },
+    {
+      "feature_id": "PH-SLEEP",
+      "feature_title": "眠りを快適にする",
+      "article_id": "electric-blankets-6-picks",
+      "slug": "electric-blankets-6-picks",
+      "article_title": "秋冬の冷えにやさしく！電気毛布6選",
+      "relation_type": "supporting",
+      "confidence": 0.78,
+      "rationale": "slug/title semantic match: electric-blankets"
+    },
+    {
+      "feature_id": "PH-SLEEP",
+      "feature_title": "眠りを快適にする",
+      "article_id": "futon-dryers-6-picks",
+      "slug": "futon-dryers-6-picks",
+      "article_title": "秋冬のじめじめ対策に！布団乾燥機6選",
+      "relation_type": "supporting",
+      "confidence": 0.78,
+      "rationale": "slug/title semantic match: futon-dryers"
+    },
+    {
+      "feature_id": "PH-SLEEP",
+      "feature_title": "眠りを快適にする",
+      "article_id": "down-comforters-6-picks",
+      "slug": "down-comforters-6-picks",
+      "article_title": "秋冬のあたたかな眠りに！羽毛布団6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: down-comforters"
+    },
+    {
+      "feature_id": "PH-SLEEP",
+      "feature_title": "眠りを快適にする",
+      "article_id": "electric-heated-mattress-pads-6-picks",
+      "slug": "electric-heated-mattress-pads-6-picks",
+      "article_title": "ベッドをあたたかく！電気敷きパッド6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: heated-mattress-pads"
+    },
+    {
+      "feature_id": "PH-SLEEP",
+      "feature_title": "眠りを快適にする",
+      "article_id": "sleep-pillows-6-picks",
+      "slug": "sleep-pillows-6-picks",
+      "article_title": "肩こりに寄り添う、秋の安眠枕6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: sleep-pillows"
+    },
+    {
+      "feature_id": "PH-SLEEP",
+      "feature_title": "眠りを快適にする",
+      "article_id": "autumn-bedding-cover-sets-6-picks",
+      "slug": "autumn-bedding-cover-sets-6-picks",
+      "article_title": "秋冬の寝室を整える！布団カバー・寝具カバーセット6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: bedding-cover"
+    },
+    {
+      "feature_id": "PH-SLEEP",
+      "feature_title": "眠りを快適にする",
+      "article_id": "warming-eye-masks-6-picks",
+      "slug": "warming-eye-masks-6-picks",
+      "article_title": "秋の目もと疲れに！温感アイマスク6選",
+      "relation_type": "supporting",
+      "confidence": 0.78,
+      "rationale": "slug/title semantic match: warming-eye-masks"
+    },
+    {
+      "feature_id": "PH-SLEEP",
+      "feature_title": "眠りを快適にする",
+      "article_id": "throw-blankets-6-picks",
+      "slug": "throw-blankets-6-picks",
+      "article_title": "寒い夜のおうち時間に！ひざ掛け・ブランケット6選",
+      "relation_type": "supporting",
+      "confidence": 0.78,
+      "rationale": "slug/title semantic match: throw-blankets"
+    },
+    {
+      "feature_id": "PH-SKINCARE",
+      "feature_title": "毎日のスキンケアを整える",
+      "article_id": "after-sun-lotion-6-choices",
+      "slug": "after-sun-lotion-6-choices",
+      "article_title": "夏の肌に潤いを！アフターサンローション6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: after-sun-lotion"
+    },
+    {
+      "feature_id": "PH-SKINCARE",
+      "feature_title": "毎日のスキンケアを整える",
+      "article_id": "best-vitamin-e-serums-for-summer",
+      "slug": "best-vitamin-e-serums-for-summer",
+      "article_title": "夏の肌疲れに最適！ビタミンE美容液6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: serums"
+    },
+    {
+      "feature_id": "PH-SKINCARE",
+      "feature_title": "毎日のスキンケアを整える",
+      "article_id": "summer-refresh-body-scrubs-6-picks",
+      "slug": "summer-refresh-body-scrubs-6-picks",
+      "article_title": "夏のリフレッシュ！ボディスクラブ6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: body-scrubs"
+    },
+    {
+      "feature_id": "PH-SKINCARE",
+      "feature_title": "毎日のスキンケアを整える",
+      "article_id": "summer-sunscreen-top6",
+      "slug": "summer-sunscreen-top6",
+      "article_title": "夏の紫外線対策！日焼け止めクリーム6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: sunscreen"
+    },
+    {
+      "feature_id": "PH-SKINCARE",
+      "feature_title": "毎日のスキンケアを整える",
+      "article_id": "seasonal-moisturizing-creams-6",
+      "slug": "seasonal-moisturizing-creams-6",
+      "article_title": "季節の変わり目対策！保湿クリーム6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: moisturizing-creams"
+    },
+    {
+      "feature_id": "PH-SKINCARE",
+      "feature_title": "毎日のスキンケアを整える",
+      "article_id": "vitamin-c-serums",
+      "slug": "vitamin-c-serums",
+      "article_title": "わたしにちょうどいい、ビタミンC美容液6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: serums"
+    },
+    {
+      "feature_id": "PH-SKINCARE",
+      "feature_title": "毎日のスキンケアを整える",
+      "article_id": "autumn-facial-toners-6-picks",
+      "slug": "autumn-facial-toners-6-picks",
+      "article_title": "秋の乾燥肌に！高保湿化粧水6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: facial-toners"
+    },
+    {
+      "feature_id": "PH-SKINCARE",
+      "feature_title": "毎日のスキンケアを整える",
+      "article_id": "autumn-moisturizing-sheet-masks-6-picks",
+      "slug": "autumn-moisturizing-sheet-masks-6-picks",
+      "article_title": "秋の乾燥対策に！保湿シートマスク6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: moisturizing-sheet-masks"
+    },
+    {
+      "feature_id": "PH-SKINCARE",
+      "feature_title": "毎日のスキンケアを整える",
+      "article_id": "facial-beauty-devices-6-picks",
+      "slug": "facial-beauty-devices-6-picks",
+      "article_title": "自宅でエイジングケア！美顔器おすすめ6選 搭載機能とお手入れのしやすさで比較",
+      "relation_type": "supporting",
+      "confidence": 0.78,
+      "rationale": "slug/title semantic match: facial-beauty-devices"
+    },
+    {
+      "feature_id": "PH-SKINCARE",
+      "feature_title": "毎日のスキンケアを整える",
+      "article_id": "eye-creams-for-autumn-dryness-6-picks",
+      "slug": "eye-creams-for-autumn-dryness-6-picks",
+      "article_title": "秋の乾燥対策に！目もと集中ケアアイクリーム6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: eye-creams"
+    },
+    {
+      "feature_id": "PH-SKINCARE",
+      "feature_title": "毎日のスキンケアを整える",
+      "article_id": "autumn-gentle-face-cleansers-6-picks",
+      "slug": "autumn-gentle-face-cleansers-6-picks",
+      "article_title": "秋の乾燥に負けない！低刺激洗顔料6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: gentle-face-cleansers"
+    },
+    {
+      "feature_id": "PH-SKINCARE",
+      "feature_title": "毎日のスキンケアを整える",
+      "article_id": "eyelash-serums-6-picks",
+      "slug": "eyelash-serums-6-picks",
+      "article_title": "目もと印象アップ！まつげ美容液6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: serums"
+    },
+    {
+      "feature_id": "PH-SKINCARE",
+      "feature_title": "毎日のスキンケアを整える",
+      "article_id": "retinol-serums-6-picks",
+      "slug": "retinol-serums-6-picks",
+      "article_title": "秋のエイジングケアに！レチノール美容液6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: serums"
+    },
+    {
+      "feature_id": "PH-SKINCARE",
+      "feature_title": "毎日のスキンケアを整える",
+      "article_id": "autumn-face-oils-6-picks",
+      "slug": "autumn-face-oils-6-picks",
+      "article_title": "秋の乾燥対策に！フェイスオイル6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: face-oils"
+    },
+    {
+      "feature_id": "PH-SKINCARE",
+      "feature_title": "毎日のスキンケアを整える",
+      "article_id": "all-in-one-gel-6-picks",
+      "slug": "all-in-one-gel-6-picks",
+      "article_title": "時短スキンケアに！オールインワンジェル6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: all-in-one-gel"
+    },
+    {
+      "feature_id": "PH-SKINCARE",
+      "feature_title": "毎日のスキンケアを整える",
+      "article_id": "cleansing-balms-6-picks",
+      "slug": "cleansing-balms-6-picks",
+      "article_title": "毛穴汚れオフ！クレンジングバーム6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: cleansing-balms"
+    },
+    {
+      "feature_id": "PH-SKINCARE",
+      "feature_title": "毎日のスキンケアを整える",
+      "article_id": "pore-care-nose-strips-6-picks",
+      "slug": "pore-care-nose-strips-6-picks",
+      "article_title": "秋の毛穴ケアに！鼻パック・毛穴パック6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: pore-care"
+    },
+    {
+      "feature_id": "PH-SKINCARE",
+      "feature_title": "毎日のスキンケアを整える",
+      "article_id": "moisturizing-body-wash-6-picks",
+      "slug": "moisturizing-body-wash-6-picks",
+      "article_title": "秋冬の乾燥肌に！保湿ボディソープ6選",
+      "relation_type": "supporting",
+      "confidence": 0.78,
+      "rationale": "slug/title semantic match: moisturizing-body-wash"
+    },
+    {
+      "feature_id": "PH-SKINCARE",
+      "feature_title": "毎日のスキンケアを整える",
+      "article_id": "niacinamide-serums-6-picks",
+      "slug": "niacinamide-serums-6-picks",
+      "article_title": "毛穴・美白ケアに注目！ナイアシンアミド美容液6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: serums"
+    },
+    {
+      "feature_id": "PH-SKINCARE",
+      "feature_title": "毎日のスキンケアを整える",
+      "article_id": "autumn-cleansing-milks-6-picks",
+      "slug": "autumn-cleansing-milks-6-picks",
+      "article_title": "乾燥が気になる季節のクレンジング6選｜ミルクを中心に比較",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: cleansing-milks"
+    },
+    {
+      "feature_id": "PH-SKINCARE",
+      "feature_title": "毎日のスキンケアを整える",
+      "article_id": "heel-moisturizing-creams-6-picks",
+      "slug": "heel-moisturizing-creams-6-picks",
+      "article_title": "秋冬のかかとケアに選びたい保湿クリーム6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: moisturizing-creams"
+    },
+    {
+      "feature_id": "PH-GROOMING",
+      "feature_title": "身だしなみを整える",
+      "article_id": "autumn-hair-loss-care-shampoo-6-picks",
+      "slug": "autumn-hair-loss-care-shampoo-6-picks",
+      "article_title": "秋の抜け毛が気になる方へ！スカルプケアシャンプー6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: hair-loss-care-shampoo"
+    },
+    {
+      "feature_id": "PH-GROOMING",
+      "feature_title": "身だしなみを整える",
+      "article_id": "autumn-hair-dryers-6-picks",
+      "slug": "autumn-hair-dryers-6-picks",
+      "article_title": "秋の髪ケアに！大風量ヘアドライヤー6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: hair-dryers"
+    },
+    {
+      "feature_id": "PH-GROOMING",
+      "feature_title": "身だしなみを整える",
+      "article_id": "electric-toothbrushes-6-picks",
+      "slug": "electric-toothbrushes-6-picks",
+      "article_title": "毎日の歯磨きをアップデート！電動歯ブラシ6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: electric-toothbrushes"
+    },
+    {
+      "feature_id": "PH-GROOMING",
+      "feature_title": "身だしなみを整える",
+      "article_id": "electric-shavers-6-picks",
+      "slug": "electric-shavers-6-picks",
+      "article_title": "毎日の髭剃りに！電気シェーバー6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: electric-shavers"
+    },
+    {
+      "feature_id": "PH-GROOMING",
+      "feature_title": "身だしなみを整える",
+      "article_id": "autumn-hair-irons-6-picks",
+      "slug": "autumn-hair-irons-6-picks",
+      "article_title": "秋の巻き髪スタイリングに！ヘアイロン6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: hair-irons"
+    },
+    {
+      "feature_id": "PH-GROOMING",
+      "feature_title": "身だしなみを整える",
+      "article_id": "home-ipl-hair-removal-devices-6-picks",
+      "slug": "home-ipl-hair-removal-devices-6-picks",
+      "article_title": "自宅で本格ケア！家庭用光美容器（脱毛器）6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: hair-removal"
+    },
+    {
+      "feature_id": "PH-GROOMING",
+      "feature_title": "身だしなみを整える",
+      "article_id": "gray-hair-color-treatments-6-picks",
+      "slug": "gray-hair-color-treatments-6-picks",
+      "article_title": "自宅で簡単ケア！白髪染めトリートメント6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: gray-hair-color"
+    },
+    {
+      "feature_id": "PH-GROOMING",
+      "feature_title": "身だしなみを整える",
+      "article_id": "autumn-perfumes-6-picks",
+      "slug": "autumn-perfumes-6-picks",
+      "article_title": "秋の装いに寄り添う！香水・フレグランス6選",
+      "relation_type": "supporting",
+      "confidence": 0.78,
+      "rationale": "slug/title semantic match: autumn-perfumes"
+    },
+    {
+      "feature_id": "PH-GROOMING",
+      "feature_title": "身だしなみを整える",
+      "article_id": "leave-in-hair-treatments-6-picks",
+      "slug": "leave-in-hair-treatments-6-picks",
+      "article_title": "秋の髪ダメージケアに！洗い流さないトリートメント6選",
+      "relation_type": "supporting",
+      "confidence": 0.78,
+      "rationale": "slug/title semantic match: leave-in-hair-treatments"
+    },
+    {
+      "feature_id": "PH-GROOMING",
+      "feature_title": "身だしなみを整える",
+      "article_id": "mens-hair-growth-tonics-6-picks",
+      "slug": "mens-hair-growth-tonics-6-picks",
+      "article_title": "秋の抜け毛シーズンに！男性用育毛剤6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: mens-hair-growth"
+    },
+    {
+      "feature_id": "PH-GROOMING",
+      "feature_title": "身だしなみを整える",
+      "article_id": "water-flossers-6-picks",
+      "slug": "water-flossers-6-picks",
+      "article_title": "歯間ケアを本格的に！ウォーターフロス6選",
+      "relation_type": "supporting",
+      "confidence": 0.78,
+      "rationale": "slug/title semantic match: water-flossers"
+    },
+    {
+      "feature_id": "PH-GROOMING",
+      "feature_title": "身だしなみを整える",
+      "article_id": "deodorant-antiperspirants-6-picks",
+      "slug": "deodorant-antiperspirants-6-picks",
+      "article_title": "汗・ニオイ対策に！制汗剤・デオドラント6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: deodorant-antiperspirants"
+    },
+    {
+      "feature_id": "PH-GROOMING",
+      "feature_title": "身だしなみを整える",
+      "article_id": "hair-brushes-for-frizz-6-picks",
+      "slug": "hair-brushes-for-frizz-6-picks",
+      "article_title": "乾燥で広がる髪に。ヘアブラシ6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: hair-brushes-for-frizz"
+    },
+    {
+      "feature_id": "PH-OUTING",
+      "feature_title": "外出をラクにする",
+      "article_id": "essential-portable-water-bottles-6-choices",
+      "slug": "essential-portable-water-bottles-6-choices",
+      "article_title": "夏の必需品！携帯浄水ボトル6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: portable-water-bottles"
+    },
+    {
+      "feature_id": "PH-OUTING",
+      "feature_title": "外出をラクにする",
+      "article_id": "enjoy-summer-portable-fans-6-picks",
+      "slug": "enjoy-summer-portable-fans-6-picks",
+      "article_title": "夏を楽しむ！アウトドア用携帯扇風機6選",
+      "relation_type": "supporting",
+      "confidence": 0.78,
+      "rationale": "slug/title semantic match: enjoy-summer-portable-fans"
+    },
+    {
+      "feature_id": "PH-OUTING",
+      "feature_title": "外出をラクにする",
+      "article_id": "mobile-batteries-6-picks",
+      "slug": "mobile-batteries-6-picks",
+      "article_title": "外出時も安心！モバイルバッテリー6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: mobile-batteries"
+    },
+    {
+      "feature_id": "PH-OUTING",
+      "feature_title": "外出をラクにする",
+      "article_id": "usb-hand-warmers-6-picks",
+      "slug": "usb-hand-warmers-6-picks",
+      "article_title": "繰り返し使える！USB充電式カイロ6選",
+      "relation_type": "supporting",
+      "confidence": 0.78,
+      "rationale": "slug/title semantic match: usb-hand-warmers"
+    },
+    {
+      "feature_id": "PH-OUTING",
+      "feature_title": "外出をラクにする",
+      "article_id": "portable-ssd-6-picks",
+      "slug": "portable-ssd-6-picks",
+      "article_title": "写真・動画のバックアップに！ポータブルSSD6選",
+      "relation_type": "supporting",
+      "confidence": 0.78,
+      "rationale": "slug/title semantic match: portable-ssd"
+    },
+    {
+      "feature_id": "PH-OUTING",
+      "feature_title": "外出をラクにする",
+      "article_id": "disposable-hand-warmers-6-picks",
+      "slug": "disposable-hand-warmers-6-picks",
+      "article_title": "秋冬の冷え対策に！使い捨てカイロ6選",
+      "relation_type": "supporting",
+      "confidence": 0.78,
+      "rationale": "slug/title semantic match: disposable-hand-warmers"
+    },
+    {
+      "feature_id": "PH-OUTING",
+      "feature_title": "外出をラクにする",
+      "article_id": "automatic-folding-umbrellas-6-picks",
+      "slug": "automatic-folding-umbrellas-6-picks",
+      "article_title": "突然の雨に備える！自動開閉折りたたみ傘6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: automatic-folding-umbrellas"
+    },
+    {
+      "feature_id": "PH-OUTING",
+      "feature_title": "外出をラクにする",
+      "article_id": "smart-item-trackers-6-picks",
+      "slug": "smart-item-trackers-6-picks",
+      "article_title": "大切なものを見失わない！紛失防止スマートタグ6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: smart-item-trackers"
+    },
+    {
+      "feature_id": "PH-OUTING",
+      "feature_title": "外出をラクにする",
+      "article_id": "rain-boots-6-picks",
+      "slug": "rain-boots-6-picks",
+      "article_title": "台風・秋雨シーズンに！レインブーツ6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: rain-boots"
+    },
+    {
+      "feature_id": "PH-OUTING",
+      "feature_title": "外出をラクにする",
+      "article_id": "travel-packing-organizers-6-picks",
+      "slug": "travel-packing-organizers-6-picks",
+      "article_title": "秋の行楽シーズンに！旅行用パッキングポーチ6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: travel-packing"
+    },
+    {
+      "feature_id": "PH-OUTING",
+      "feature_title": "外出をラクにする",
+      "article_id": "portable-photo-printers-6-picks",
+      "slug": "portable-photo-printers-6-picks",
+      "article_title": "思い出をすぐ形に！モバイルフォトプリンター6選",
+      "relation_type": "supporting",
+      "confidence": 0.78,
+      "rationale": "slug/title semantic match: portable-photo-printers"
+    },
+    {
+      "feature_id": "PH-COFFEE",
+      "feature_title": "コーヒー時間を楽しむ",
+      "article_id": "beginner-friendly-coffee-makers",
+      "slug": "beginner-friendly-coffee-makers",
+      "article_title": "初心者に優しい！コーヒーメーカー6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: coffee-makers"
+    },
+    {
+      "feature_id": "PH-COFFEE",
+      "feature_title": "コーヒー時間を楽しむ",
+      "article_id": "insulated-tumblers-for-autumn-6-picks",
+      "slug": "insulated-tumblers-for-autumn-6-picks",
+      "article_title": "秋冬のホットドリンクに！保温タンブラー・マグボトル6選",
+      "relation_type": "supporting",
+      "confidence": 0.78,
+      "rationale": "slug/title semantic match: insulated-tumblers"
+    },
+    {
+      "feature_id": "PH-COFFEE",
+      "feature_title": "コーヒー時間を楽しむ",
+      "article_id": "electric-coffee-grinders-6-picks",
+      "slug": "electric-coffee-grinders-6-picks",
+      "article_title": "香り豊かな一杯に！電動コーヒーミル6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: coffee-grinders"
+    },
+    {
+      "feature_id": "PH-COFFEE",
+      "feature_title": "コーヒー時間を楽しむ",
+      "article_id": "capsule-coffee-makers-6-picks",
+      "slug": "capsule-coffee-makers-6-picks",
+      "article_title": "手軽に本格コーヒー！カプセル式コーヒーメーカー6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: coffee-makers"
+    },
+    {
+      "feature_id": "PH-GAMING",
+      "feature_title": "ゲーム環境を整える",
+      "article_id": "gaming-headsets-6-picks",
+      "slug": "gaming-headsets-6-picks",
+      "article_title": "臨場感アップ！ゲーミングヘッドセット6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: gaming-"
+    },
+    {
+      "feature_id": "PH-GAMING",
+      "feature_title": "ゲーム環境を整える",
+      "article_id": "gaming-mice-6-picks",
+      "slug": "gaming-mice-6-picks",
+      "article_title": "eスポーツにも！ゲーミングマウス6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: gaming-"
+    },
+    {
+      "feature_id": "PH-GAMING",
+      "feature_title": "ゲーム環境を整える",
+      "article_id": "gaming-chairs-6-picks",
+      "slug": "gaming-chairs-6-picks",
+      "article_title": "長時間プレイも快適に！ゲーミングチェア6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: gaming-"
+    },
+    {
+      "feature_id": "PH-GAMING",
+      "feature_title": "ゲーム環境を整える",
+      "article_id": "gaming-monitors-6-picks",
+      "slug": "gaming-monitors-6-picks",
+      "article_title": "eスポーツにも！高リフレッシュレートゲーミングモニター6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: gaming-"
+    },
+    {
+      "feature_id": "PH-GAMING",
+      "feature_title": "ゲーム環境を整える",
+      "article_id": "gaming-keyboards-6-picks",
+      "slug": "gaming-keyboards-6-picks",
+      "article_title": "eスポーツにも！ゲーミングキーボード6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: gaming-"
+    },
+    {
+      "feature_id": "PH-HOME-SAFETY",
+      "feature_title": "家の安心を整える",
+      "article_id": "portable-power-stations-6-picks",
+      "slug": "portable-power-stations-6-picks",
+      "article_title": "備えあれば安心！ポータブル電源6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: portable-power-stations"
+    },
+    {
+      "feature_id": "PH-HOME-SAFETY",
+      "feature_title": "家の安心を整える",
+      "article_id": "home-security-cameras-6-picks",
+      "slug": "home-security-cameras-6-picks",
+      "article_title": "留守中も安心！家庭用防犯カメラ6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: home-security-cameras"
+    },
+    {
+      "feature_id": "PH-HOME-SAFETY",
+      "feature_title": "家の安心を整える",
+      "article_id": "emergency-backpacks-6-picks",
+      "slug": "emergency-backpacks-6-picks",
+      "article_title": "台風・地震に備える！防災リュック6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: emergency-backpacks"
+    },
+    {
+      "feature_id": "PH-HOME-SAFETY",
+      "feature_title": "家の安心を整える",
+      "article_id": "home-delivery-boxes-6-picks",
+      "slug": "home-delivery-boxes-6-picks",
+      "article_title": "置き配も安心！戸建て・マンション別 宅配ボックスおすすめ6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: home-delivery-boxes"
+    },
+    {
+      "feature_id": "PH-HOME-SAFETY",
+      "feature_title": "家の安心を整える",
+      "article_id": "smart-locks-6-picks",
+      "slug": "smart-locks-6-picks",
+      "article_title": "鍵の閉め忘れゼロへ！スマートロック6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: smart-locks"
+    },
+    {
+      "feature_id": "PH-MUSIC",
+      "feature_title": "音楽を楽しむ",
+      "article_id": "best-high-quality-earphones-6-picks",
+      "slug": "best-high-quality-earphones-6-picks",
+      "article_title": "音楽好き必見！高音質イヤホン6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: earphones"
+    },
+    {
+      "feature_id": "PH-MUSIC",
+      "feature_title": "音楽を楽しむ",
+      "article_id": "wireless-speakers-6-picks",
+      "slug": "wireless-speakers-6-picks",
+      "article_title": "気軽に高音質！ワイヤレススピーカー6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: wireless-speakers"
+    },
+    {
+      "feature_id": "PH-MUSIC",
+      "feature_title": "音楽を楽しむ",
+      "article_id": "noise-cancelling-earbuds-6-picks",
+      "slug": "noise-cancelling-earbuds-6-picks",
+      "article_title": "集中したい時間に選びたい、ノイズキャンセリングイヤホン6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: earbuds"
+    },
+    {
+      "feature_id": "PH-MUSIC",
+      "feature_title": "音楽を楽しむ",
+      "article_id": "bone-conduction-earphones-6-picks",
+      "slug": "bone-conduction-earphones-6-picks",
+      "article_title": "耳を塞がない！骨伝導イヤホン6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: earphones"
+    },
+    {
+      "feature_id": "PH-HOME-RELAX",
+      "feature_title": "おうちでリラックスする",
+      "article_id": "foot-massagers-for-summer-relaxation-6-picks",
+      "slug": "foot-massagers-for-summer-relaxation-6-picks",
+      "article_title": "夏の疲れを癒す！フットマッサージャー6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: foot-massagers"
+    },
+    {
+      "feature_id": "PH-HOME-RELAX",
+      "feature_title": "おうちでリラックスする",
+      "article_id": "home-projectors-6-recommendations",
+      "slug": "home-projectors-6-recommendations",
+      "article_title": "自宅で楽しむ！ホームプロジェクター6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: home-projectors"
+    },
+    {
+      "feature_id": "PH-HOME-RELAX",
+      "feature_title": "おうちでリラックスする",
+      "article_id": "easy-aroma-candles-6-picks",
+      "slug": "easy-aroma-candles-6-picks",
+      "article_title": "手軽に楽しむ！アロマキャンドル6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: aroma-candles"
+    },
+    {
+      "feature_id": "PH-HOME-RELAX",
+      "feature_title": "おうちでリラックスする",
+      "article_id": "home-relaxation-goods-6-selection",
+      "slug": "home-relaxation-goods-6-selection",
+      "article_title": "おうち時間充実！リラックスグッズ6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: home-relaxation"
+    },
+    {
+      "feature_id": "PH-HOME-RELAX",
+      "feature_title": "おうちでリラックスする",
+      "article_id": "massage-guns-6-picks",
+      "slug": "massage-guns-6-picks",
+      "article_title": "自宅で本格ケア！マッサージガン6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: massage-guns"
+    },
+    {
+      "feature_id": "PH-HOME-RELAX",
+      "feature_title": "おうちでリラックスする",
+      "article_id": "e-book-readers-6-picks",
+      "slug": "e-book-readers-6-picks",
+      "article_title": "読書の秋に！電子書籍リーダー6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: e-book-readers"
+    },
+    {
+      "feature_id": "PH-HOME-RELAX",
+      "feature_title": "おうちでリラックスする",
+      "article_id": "autumn-bath-salts-6-picks",
+      "slug": "autumn-bath-salts-6-picks",
+      "article_title": "秋冬の冷え対策に！入浴剤・バスソルト6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: bath-salts"
+    },
+    {
+      "feature_id": "PH-HOME-RELAX",
+      "feature_title": "おうちでリラックスする",
+      "article_id": "aroma-diffusers-6-picks",
+      "slug": "aroma-diffusers-6-picks",
+      "article_title": "秋の癒やしを整えるアロマディフューザーおすすめ6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: aroma-diffusers"
+    },
+    {
+      "feature_id": "PH-HOME-RELAX",
+      "feature_title": "おうちでリラックスする",
+      "article_id": "neck-shoulder-massagers-6-picks",
+      "slug": "neck-shoulder-massagers-6-picks",
+      "article_title": "肩こり・首こりに！ネックマッサージャー6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: neck-shoulder-massagers"
+    },
+    {
+      "feature_id": "PH-HOME-RELAX",
+      "feature_title": "おうちでリラックスする",
+      "article_id": "warming-eye-masks-6-picks",
+      "slug": "warming-eye-masks-6-picks",
+      "article_title": "秋の目もと疲れに！温感アイマスク6選",
+      "relation_type": "supporting",
+      "confidence": 0.78,
+      "rationale": "slug/title semantic match: warming-eye-masks"
+    },
+    {
+      "feature_id": "PH-HOME-RELAX",
+      "feature_title": "おうちでリラックスする",
+      "article_id": "throw-blankets-6-picks",
+      "slug": "throw-blankets-6-picks",
+      "article_title": "寒い夜のおうち時間に！ひざ掛け・ブランケット6選",
+      "relation_type": "supporting",
+      "confidence": 0.78,
+      "rationale": "slug/title semantic match: throw-blankets"
+    },
+    {
+      "feature_id": "PH-HEALTH",
+      "feature_title": "健康管理を続けやすくする",
+      "article_id": "health-management-blood-pressure-monitors",
+      "slug": "health-management-blood-pressure-monitors",
+      "article_title": "健康管理に役立つ！血圧計6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: blood-pressure"
+    },
+    {
+      "feature_id": "PH-HEALTH",
+      "feature_title": "健康管理を続けやすくする",
+      "article_id": "fitness-smartwatches-6-picks",
+      "slug": "fitness-smartwatches-6-picks",
+      "article_title": "秋の運動習慣に！スマートウォッチ6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: fitness-smartwatches"
+    },
+    {
+      "feature_id": "PH-HEALTH",
+      "feature_title": "健康管理を続けやすくする",
+      "article_id": "smart-rings-6-picks",
+      "slug": "smart-rings-6-picks",
+      "article_title": "見た目もスマートに！スマートリング6選",
+      "relation_type": "supporting",
+      "confidence": 0.78,
+      "rationale": "slug/title semantic match: smart-rings"
+    },
+    {
+      "feature_id": "PH-HEALTH",
+      "feature_title": "健康管理を続けやすくする",
+      "article_id": "body-composition-scales-6-picks",
+      "slug": "body-composition-scales-6-picks",
+      "article_title": "秋の健康管理に！体組成計6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: body-composition"
+    },
+    {
+      "feature_id": "PH-HEALTH",
+      "feature_title": "健康管理を続けやすくする",
+      "article_id": "digital-thermometers-6-picks",
+      "slug": "digital-thermometers-6-picks",
+      "article_title": "秋冬の体調管理に！電子体温計6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: digital-thermometers"
+    },
+    {
+      "feature_id": "PH-HEALTH",
+      "feature_title": "健康管理を続けやすくする",
+      "article_id": "home-exercise-bikes-6-picks",
+      "slug": "home-exercise-bikes-6-picks",
+      "article_title": "秋の運動不足解消に！フィットネスバイク（エアロバイク）6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: home-exercise-bikes"
+    },
+    {
+      "feature_id": "PH-SUMMER-COMFORT",
+      "feature_title": "暑い日を快適に過ごす",
+      "article_id": "enjoy-refreshing-shower-heads-6-picks",
+      "slug": "enjoy-refreshing-shower-heads-6-picks",
+      "article_title": "清涼感を楽しむ！シャワーヘッド6選",
+      "relation_type": "supporting",
+      "confidence": 0.78,
+      "rationale": "slug/title semantic match: refreshing-shower-heads"
+    },
+    {
+      "feature_id": "PH-SUMMER-COMFORT",
+      "feature_title": "暑い日を快適に過ごす",
+      "article_id": "cool-bedding-6-selection",
+      "slug": "cool-bedding-6-selection",
+      "article_title": "夏の清涼感を演出！涼感寝具6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: cool-bedding"
+    },
+    {
+      "feature_id": "PH-SUMMER-COMFORT",
+      "feature_title": "暑い日を快適に過ごす",
+      "article_id": "stay-cool-at-home-6-best-evaporative-coolers",
+      "slug": "stay-cool-at-home-6-best-evaporative-coolers",
+      "article_title": "自宅で涼しく過ごす！冷風扇6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: evaporative-coolers"
+    },
+    {
+      "feature_id": "PH-SUMMER-COMFORT",
+      "feature_title": "暑い日を快適に過ごす",
+      "article_id": "high-performance-air-circulators-6",
+      "slug": "high-performance-air-circulators-6",
+      "article_title": "家庭で楽しむ！高性能空気循環器6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: air-circulators"
+    },
+    {
+      "feature_id": "PH-SUMMER-COMFORT",
+      "feature_title": "暑い日を快適に過ごす",
+      "article_id": "essential-portable-water-bottles-6-choices",
+      "slug": "essential-portable-water-bottles-6-choices",
+      "article_title": "夏の必需品！携帯浄水ボトル6選",
+      "relation_type": "supporting",
+      "confidence": 0.78,
+      "rationale": "slug/title semantic match: portable-water-bottles"
+    },
+    {
+      "feature_id": "PH-SUMMER-COMFORT",
+      "feature_title": "暑い日を快適に過ごす",
+      "article_id": "cool-towels-for-summer-6-picks",
+      "slug": "cool-towels-for-summer-6-picks",
+      "article_title": "夏の涼感をプラス！冷感タオル6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: cool-towels"
+    },
+    {
+      "feature_id": "PH-SUMMER-COMFORT",
+      "feature_title": "暑い日を快適に過ごす",
+      "article_id": "enjoy-summer-portable-fans-6-picks",
+      "slug": "enjoy-summer-portable-fans-6-picks",
+      "article_title": "夏を楽しむ！アウトドア用携帯扇風機6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: summer-portable-fans"
+    },
+    {
+      "feature_id": "PH-SUMMER-COMFORT",
+      "feature_title": "暑い日を快適に過ごす",
+      "article_id": "summer-comfort-fan-selection",
+      "slug": "summer-comfort-fan-selection",
+      "article_title": "夏場の快適生活！扇風機6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: summer-comfort-fan"
+    },
+    {
+      "feature_id": "PH-MAKEUP",
+      "feature_title": "メイクを楽しむ",
+      "article_id": "summer-skin-protection-primers-6-choices",
+      "slug": "summer-skin-protection-primers-6-choices",
+      "article_title": "夏の美肌を守る！化粧下地6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: primers"
+    },
+    {
+      "feature_id": "PH-MAKEUP",
+      "feature_title": "メイクを楽しむ",
+      "article_id": "summer-nail-polish-6-selection",
+      "slug": "summer-nail-polish-6-selection",
+      "article_title": "夏を彩る！ネイルポリッシュ6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: nail-polish"
+    },
+    {
+      "feature_id": "PH-MAKEUP",
+      "feature_title": "メイクを楽しむ",
+      "article_id": "best-face-powders-6-picks",
+      "slug": "best-face-powders-6-picks",
+      "article_title": "さらさら肌へ！フェイスパウダー6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: face-powders"
+    },
+    {
+      "feature_id": "PH-MAKEUP",
+      "feature_title": "メイクを楽しむ",
+      "article_id": "mineral-foundation-six-selection",
+      "slug": "mineral-foundation-six-selection",
+      "article_title": "ナチュラル美肌を叶える！ミネラルファンデーション6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: foundation"
+    },
+    {
+      "feature_id": "PH-MAKEUP",
+      "feature_title": "メイクを楽しむ",
+      "article_id": "autumn-eyeshadow-palettes-6-picks",
+      "slug": "autumn-eyeshadow-palettes-6-picks",
+      "article_title": "秋の目もとを彩る！トレンドアイシャドウパレット6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: eyeshadow"
+    },
+    {
+      "feature_id": "PH-MAKEUP",
+      "feature_title": "メイクを楽しむ",
+      "article_id": "autumn-lip-colors-6-picks",
+      "slug": "autumn-lip-colors-6-picks",
+      "article_title": "秋色リップ・リップスティック6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: lip-colors"
+    },
+    {
+      "feature_id": "PH-MAKEUP",
+      "feature_title": "メイクを楽しむ",
+      "article_id": "autumn-nail-colors-6-picks",
+      "slug": "autumn-nail-colors-6-picks",
+      "article_title": "指先から秋色に！トレンドネイルポリッシュ6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: nail-colors"
+    },
+    {
+      "feature_id": "PH-MAKEUP",
+      "feature_title": "メイクを楽しむ",
+      "article_id": "mascaras-6-picks",
+      "slug": "mascaras-6-picks",
+      "article_title": "秋メイクの主役に！人気マスカラ6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: mascaras"
+    },
+    {
+      "feature_id": "PH-MAKEUP",
+      "feature_title": "メイクを楽しむ",
+      "article_id": "cushion-foundations-6-picks",
+      "slug": "cushion-foundations-6-picks",
+      "article_title": "秋の艶肌メイクに導くクッションファンデーション6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: foundation"
+    },
+    {
+      "feature_id": "PH-MAKEUP",
+      "feature_title": "メイクを楽しむ",
+      "article_id": "color-contacts-6-picks",
+      "slug": "color-contacts-6-picks",
+      "article_title": "秋のハロウィン＆普段使いに！カラーコンタクト6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: color-contacts"
+    },
+    {
+      "feature_id": "PH-MAKEUP",
+      "feature_title": "メイクを楽しむ",
+      "article_id": "autumn-cheek-blush-6-picks",
+      "slug": "autumn-cheek-blush-6-picks",
+      "article_title": "秋色メイクに映える！チーク6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: cheek-blush"
+    },
+    {
+      "feature_id": "PH-MAKEUP",
+      "feature_title": "メイクを楽しむ",
+      "article_id": "concealer-6-picks",
+      "slug": "concealer-6-picks",
+      "article_title": "毛穴・クマ悩みに！コンシーラー6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: concealer"
+    },
+    {
+      "feature_id": "PH-MAKEUP",
+      "feature_title": "メイクを楽しむ",
+      "article_id": "self-gel-nail-kits-6-picks",
+      "slug": "self-gel-nail-kits-6-picks",
+      "article_title": "自宅でサロン級ネイルに！セルフジェルネイルキット6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: self-gel-nail"
+    },
+    {
+      "feature_id": "PH-MAKEUP",
+      "feature_title": "メイクを楽しむ",
+      "article_id": "eyebrow-makeup-6-picks",
+      "slug": "eyebrow-makeup-6-picks",
+      "article_title": "垢抜け眉に！アイブロウ・眉ティント6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: eyebrow-makeup"
+    },
+    {
+      "feature_id": "PH-MAKEUP",
+      "feature_title": "メイクを楽しむ",
+      "article_id": "makeup-setting-sprays-6-picks",
+      "slug": "makeup-setting-sprays-6-picks",
+      "article_title": "秋の乾燥崩れに備えるメイクキープミスト6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: makeup-setting"
+    },
+    {
+      "feature_id": "PH-MAKEUP",
+      "feature_title": "メイクを楽しむ",
+      "article_id": "heated-eyelash-curlers-6-picks",
+      "slug": "heated-eyelash-curlers-6-picks",
+      "article_title": "まつげの仕上がりで選ぶホットビューラー6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: heated-eyelash-curlers"
+    },
+    {
+      "feature_id": "PH-WARM-HOME",
+      "feature_title": "おうちをあたたかくする",
+      "article_id": "air-purifiers-top-6",
+      "slug": "air-purifiers-top-6",
+      "article_title": "冷暖房効率を上げる！空気清浄機6選",
+      "relation_type": "supporting",
+      "confidence": 0.78,
+      "rationale": "slug/title semantic match: air-purifiers-top-6"
+    },
+    {
+      "feature_id": "PH-WARM-HOME",
+      "feature_title": "おうちをあたたかくする",
+      "article_id": "electric-blankets-6-picks",
+      "slug": "electric-blankets-6-picks",
+      "article_title": "秋冬の冷えにやさしく！電気毛布6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: electric-blankets"
+    },
+    {
+      "feature_id": "PH-WARM-HOME",
+      "feature_title": "おうちをあたたかくする",
+      "article_id": "ceramic-fan-heaters-6-picks",
+      "slug": "ceramic-fan-heaters-6-picks",
+      "article_title": "秋冬の足元ぽかぽか！セラミックファンヒーター6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: ceramic-fan-heaters"
+    },
+    {
+      "feature_id": "PH-WARM-HOME",
+      "feature_title": "おうちをあたたかくする",
+      "article_id": "kotatsu-6-picks",
+      "slug": "kotatsu-6-picks",
+      "article_title": "冬支度の準備に！こたつ6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: kotatsu"
+    },
+    {
+      "feature_id": "PH-WARM-HOME",
+      "feature_title": "おうちをあたたかくする",
+      "article_id": "electric-carpets-6-picks",
+      "slug": "electric-carpets-6-picks",
+      "article_title": "足元からあたためる！ホットカーペット6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: electric-carpets"
+    },
+    {
+      "feature_id": "PH-WARM-HOME",
+      "feature_title": "おうちをあたたかくする",
+      "article_id": "panel-heaters-6-picks",
+      "slug": "panel-heaters-6-picks",
+      "article_title": "冬支度に！じんわりあたたかパネルヒーター6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: panel-heaters"
+    },
+    {
+      "feature_id": "PH-WARM-HOME",
+      "feature_title": "おうちをあたたかくする",
+      "article_id": "wearable-blankets-6-picks",
+      "slug": "wearable-blankets-6-picks",
+      "article_title": "着るだけであったか！着る毛布6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: wearable-blankets"
+    },
+    {
+      "feature_id": "PH-WARM-HOME",
+      "feature_title": "おうちをあたたかくする",
+      "article_id": "hot-water-bottles-6-picks",
+      "slug": "hot-water-bottles-6-picks",
+      "article_title": "冷える夜に！あったか湯たんぽ6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: hot-water-bottles"
+    },
+    {
+      "feature_id": "PH-WARM-HOME",
+      "feature_title": "おうちをあたたかくする",
+      "article_id": "electric-heated-mattress-pads-6-picks",
+      "slug": "electric-heated-mattress-pads-6-picks",
+      "article_title": "ベッドをあたたかく！電気敷きパッド6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: heated-mattress-pads"
+    },
+    {
+      "feature_id": "PH-WARM-HOME",
+      "feature_title": "おうちをあたたかくする",
+      "article_id": "kerosene-fan-heaters-6-picks",
+      "slug": "kerosene-fan-heaters-6-picks",
+      "article_title": "冬支度の本命！石油ファンヒーター6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: kerosene-fan-heaters"
+    },
+    {
+      "feature_id": "PH-WARM-HOME",
+      "feature_title": "おうちをあたたかくする",
+      "article_id": "desk-foot-warmers-6-picks",
+      "slug": "desk-foot-warmers-6-picks",
+      "article_title": "冷えた足元をぽかぽかに！電気足温器6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: desk-foot-warmers"
+    },
+    {
+      "feature_id": "PH-WARM-HOME",
+      "feature_title": "おうちをあたたかくする",
+      "article_id": "warm-room-slippers-6-picks",
+      "slug": "warm-room-slippers-6-picks",
+      "article_title": "秋冬の足元ぽかぽか！あったかルームシューズ・スリッパ6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: warm-room-slippers"
+    },
+    {
+      "feature_id": "PH-WARM-HOME",
+      "feature_title": "おうちをあたたかくする",
+      "article_id": "throw-blankets-6-picks",
+      "slug": "throw-blankets-6-picks",
+      "article_title": "寒い夜のおうち時間に！ひざ掛け・ブランケット6選",
+      "relation_type": "supporting",
+      "confidence": 0.78,
+      "rationale": "slug/title semantic match: throw-blankets"
+    },
+    {
+      "feature_id": "PH-WARM-HOME",
+      "feature_title": "おうちをあたたかくする",
+      "article_id": "warm-water-bidet-toilet-seats-6-picks",
+      "slug": "warm-water-bidet-toilet-seats-6-picks",
+      "article_title": "冬の寒さ対策に効く！温水洗浄便座おすすめ6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: warm-water-bidet-toilet-seats"
+    },
+    {
+      "feature_id": "PH-WARM-HOME",
+      "feature_title": "おうちをあたたかくする",
+      "article_id": "window-insulation-films-6-picks",
+      "slug": "window-insulation-films-6-picks",
+      "article_title": "冬前に見直したい窓まわりの断熱シート6選",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "slug/title semantic match: window-insulation-films"
+    }
+  ],
+  "orphans": [
+    {
+      "slug": "dash-cameras-6-picks",
+      "title": "もしもの備えに！ドライブレコーダー6選"
+    },
+    {
+      "slug": "autumn-winter-face-masks-6-picks",
+      "title": "秋冬の感染・花粉対策に！高機能マスク6選"
+    },
+    {
+      "slug": "ceiling-lights-6-picks",
+      "title": "秋の日暮れを快適に！LEDシーリングライト6選"
+    },
+    {
+      "slug": "electric-neck-warmers-6-picks",
+      "title": "首元からぽかぽか！USB充電式ネックウォーマー6選"
+    },
+    {
+      "slug": "heated-vests-6-picks",
+      "title": "秋冬の防寒に！電熱ベスト・ヒーターベスト6選"
+    },
+    {
+      "slug": "heated-gloves-6-picks",
+      "title": "冷える指先に！電熱グローブ6選"
+    },
+    {
+      "slug": "halloween-party-goods-6-picks",
+      "title": "今年のハロウィンに！仮装・パーティーグッズ6選"
+    },
+    {
+      "slug": "2027-schedule-planners-6-picks",
+      "title": "新年に備える！2027年手帳・スケジュール帳6選"
+    },
+    {
+      "slug": "christmas-trees-ornaments-6-picks",
+      "title": "冬支度に先取り！クリスマスツリー・オーナメント6選"
+    },
+    {
+      "slug": "thermal-innerwear-6-picks",
+      "title": "秋冬の防寒対策に！発熱あたたかインナー6選"
+    },
+    {
+      "slug": "smart-remote-controllers-6-picks",
+      "title": "エアコンも照明も一括管理！スマートリモコン6選"
+    },
+    {
+      "slug": "electric-tire-inflators-6-picks",
+      "title": "冬前の車の備えに！電動タイヤ空気入れ6選"
+    }
+  ]
+}
