@@ -150,6 +150,20 @@ def run(*, output: Path=DEFAULT_OUT) -> dict[str,Any]:
             if shared:
                 overlaps.append({'feature_a':a,'feature_b':b,'shared_count':len(shared),'shared_slugs':shared[:20]})
     overlaps.sort(key=lambda x:(-x['shared_count'],x['feature_a'],x['feature_b']))
+    semantic_by_slug=defaultdict(list)
+    for candidate in candidates:
+        if candidate['candidate_state']=='semantic_review':
+            semantic_by_slug[candidate['slug']].append(candidate)
+    semantic_review_queue=[]
+    for slug,items in sorted(semantic_by_slug.items()):
+        ranked=sorted(items,key=lambda x:-x['score'])[:3]
+        semantic_review_queue.append({
+            'slug':slug,
+            'article_title':ranked[0]['article_title'],
+            'candidate_count':len(items),
+            'candidates':[{k:r.get(k) for k in ('feature_id','feature_title','score','margin_to_second','proposed_relation_type','rationale')} for r in ranked],
+        })
+
     result={
         'schema':'sellemy-purpose-relation-discovery/v1','generated_at':datetime.now(timezone.utc).isoformat(),
         'source_snapshot':source,'mode':'read_only_local','production_write':False,
@@ -157,6 +171,8 @@ def run(*, output: Path=DEFAULT_OUT) -> dict[str,Any]:
             'reviewed_seed_relations':sum(r.get('source')=='reviewed_seed' for r in relations),
             'auto_relations':sum(r.get('source')=='local_auto' for r in relations),
             'semantic_review_candidates':sum(c['candidate_state']=='semantic_review' for c in candidates),
+            'semantic_review_unique_articles':len(semantic_review_queue),
+            'local_scan_reduction_percent':round((1-len(semantic_review_queue)/max(1,len(published)))*100,1),
             'rule':'all-published local scan; reviewed baseline preserved; new articles scored against reviewed per-feature vocabulary; only ambiguous candidates require semantic review',
         },
         'global':{
@@ -168,6 +184,7 @@ def run(*, output: Path=DEFAULT_OUT) -> dict[str,Any]:
         'per_feature':sorted(per_feature,key=lambda x:x['feature_id']),
         'orphans':sorted(published_slugs-mapped),
         'overlap_summary':overlaps[:20],
+        'semantic_review_queue':semantic_review_queue,
         'new_article_candidates':sorted(candidates,key=lambda x:(x['slug'],-x['score'],x['feature_id'])),
         'relations':relations,
         'next_gate':'Only semantic_review candidates and high-overlap/cannibalization cases need model/human semantic review. No production Relation write or publish is authorized by this report.'
