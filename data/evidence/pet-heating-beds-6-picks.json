@@ -1,0 +1,133 @@
+{
+  "slug": "pet-heating-beds-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/pet-heating-beds-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/pet-heating-beds-6-picks/pet-heating-beds-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "heating_method",
+      "label": "加温方式・温度調整",
+      "keywords": [
+        "電気式",
+        "自己発熱",
+        "温度調整"
+      ]
+    },
+    {
+      "id": "safety",
+      "label": "安全機能・噛み対策",
+      "keywords": [
+        "コード保護",
+        "自動オフ",
+        "低温やけど対策"
+      ]
+    },
+    {
+      "id": "size_washability",
+      "label": "サイズ展開・洗えるか",
+      "keywords": [
+        "サイズ展開",
+        "洗濯可能",
+        "カバー交換"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格",
+      "keywords": [
+        "価格",
+        "コスパ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "size_washability"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0HDSDN8H6",
+      "asin": "B0HDSDN8H6",
+      "amazon_title": "【ふわふわ・ペット用ヒーター 寒い冬もあったか】ペット用ホットカーペット 30℃～50℃温度調節可能 1H/4H/8Hタイマー機能 ペットベッド 50x50CM 過熱保護 噛み対策 ペット過熱パッド 省エネ カバー洗濯可能 猫 犬 兼用 取扱説明書付(ブラウン)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71LQGeq9f1L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.49,
+      "matched_comparison_axes": [
+        "size_washability"
+      ],
+      "search_key": "ペット用ホットカーペット 30℃～50℃温度調節可能 1H/4H"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HDYKN7VC",
+      "asin": "B0HDYKN7VC",
+      "amazon_title": "ペティオ (Petio) ペット用ヒーター ペットのための厚型ソフトヒーター AWB S",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61kO6rq+RmL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [],
+      "search_key": "ペティオ (Petio) ペット用ヒーター ペットのための厚型ソ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HCNP7JSX",
+      "asin": "B0HCNP7JSX",
+      "amazon_title": "RASYN「業界初7層構造」犬 猫 ペットベッド 冬 洗える あったか 帝人繊維使用 エアロゲル Ｗ断熱+抗菌防臭 蓄熱 滑り止め M グレージュ",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81x5GXROmYL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [],
+      "search_key": "RASYN「業界初7層構造」犬 猫 ペットベッド 冬 洗える あ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0H6ZW3GVG",
+      "asin": "B0H6ZW3GVG",
+      "amazon_title": "Lemon Bear 犬 ベッド 猫 ベッド 冬 あったか ペットベッド 冬【ラビットファータッチ・蓄熱中綿使用・断熱アルミ】犬用ベッド冬洗える猫用ベッド暖かい (S 40X30X11CM 小型犬ベッド ベージュ)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81Hh071KIoL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [],
+      "search_key": "Lemon Bear 犬 ベッド 猫 ベッド 冬 あったか ペッ"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0FN8BFMW1",
+      "asin": "B0FN8BFMW1",
+      "amazon_title": "[Miflaier]【丸形 長毛 猫ベッド】ヒーターベッド USB温調 電気ヒーター付き ペット用 安全設計 冬の贈り物 室内用 あったか寝床 犬猫対応 プレゼントに適",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61iIo8pO2nL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [],
+      "search_key": "ヒーターベッド USB温調 電気ヒーター付き ペット用 安全設計"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0DJ7QBX9S",
+      "asin": "B0DJ7QBX9S",
+      "amazon_title": "【ペット看護士監修】ペット用ホットカーペット 犬 猫 冬用 30°C〜60°Cまで1°C単位で調節可能 12段階タイマー機能 ペットヒーター 恒温機能 液晶表示 噛み癖対策 洗える カバー2枚付き 暖房器具 日本語説明書付属 (L（45x70cm）)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61LdfOM624L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [],
+      "search_key": "ペット用ホットカーペット 犬 猫 冬用 30°C〜60°Cまで1"
+    }
+  ]
+}
