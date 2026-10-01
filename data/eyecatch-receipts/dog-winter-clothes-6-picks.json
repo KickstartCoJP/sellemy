@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-dog-winter-clothes-6-picks-bdc8d8801987d99a",
+  "request_sha256": "bdc8d8801987d99abf978c93c4d9751144d825d4b44576d967890e25933d4878",
+  "image_sha256": "d750749097b5b6b29011909e8c933b106240bf940d35201cd6870f4cd314161e",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-10-01T02:14:16.589362+00:00"
+}
