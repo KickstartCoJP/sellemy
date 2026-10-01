@@ -1,0 +1,129 @@
+{
+  "slug": "overnight-sleeping-masks-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/overnight-sleeping-masks-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/overnight-sleeping-masks-6-picks/overnight-sleeping-masks-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "moisture_ingredients",
+      "label": "保湿成分",
+      "keywords": [
+        "セラミド",
+        "ヒアルロン酸",
+        "保水"
+      ]
+    },
+    {
+      "id": "texture",
+      "label": "テクスチャー・使用感",
+      "keywords": [
+        "ジェル",
+        "クリーム",
+        "ベタつかない"
+      ]
+    },
+    {
+      "id": "price_volume",
+      "label": "価格・容量",
+      "keywords": [
+        "価格",
+        "容量"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "moisture_ingredients",
+      "price_volume",
+      "texture"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0F7ZJQP4K",
+      "asin": "B0F7ZJQP4K",
+      "amazon_title": "ラネージュ ウォータースリーピングマスク N フェイスパック セラミド ナイアシンアミド 水分クリーム ナイトマスク 敏感肌 韓国 スキンケア",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61Lp75Yc69L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.71,
+      "matched_comparison_axes": [
+        "moisture_ingredients",
+        "texture"
+      ],
+      "search_key": "ラネージュ ウォータースリーピングマスク N フェイスパック セ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0CJN2ZZVX",
+      "asin": "B0CJN2ZZVX",
+      "amazon_title": "LuLuLun ルルルン ハイドラEXマスク 28枚入り パック フェイスパック シートマスク 顔 保湿 毛穴 大容量",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71xPXTLw35L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.53,
+      "matched_comparison_axes": [
+        "price_volume"
+      ],
+      "search_key": "LuLuLun ルルルン ハイドラEXマスク 28枚入り パック"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HBB15MJD",
+      "asin": "B0HBB15MJD",
+      "amazon_title": "【全薬工業】保湿パック スリーピングマスク 35g",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/31R7Ixe1ALL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "保湿パック スリーピングマスク 35g"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0G57Y6Y38",
+      "asin": "B0G57Y6Y38",
+      "amazon_title": "Terez & Honor フェイスパック スリーピングマスク フェイスマスク コラーゲンパック ゲルマスク 保湿 ハリ ツヤ ハイドロゲル 弾力 毛穴 スキンケア ナイトケア 敏感肌 韓国コスメ (8枚)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71qm5Diz9vL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "Terez & Honor フェイスパック スリーピングマスク"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0FLD773VJ",
+      "asin": "B0FLD773VJ",
+      "amazon_title": "日本酒のスリーピングマスク ８０Ｇ",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61vIIiB-PnL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "日本酒のスリーピングマスク ８０Ｇ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0DP8HP9NV",
+      "asin": "B0DP8HP9NV",
+      "amazon_title": "パーフェクトワンフォーカス VCチャージ スムースマスク（7枚入）シートマスク フェイスパック アゼライン酸 ビタミン 保湿 毛穴 乾燥 日本製(PERFECT ONE FOCUS)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61R3n8dpNFL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "パーフェクトワンフォーカス VCチャージ スムースマスク（7枚入"
+    }
+  ]
+}
