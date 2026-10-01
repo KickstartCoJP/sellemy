@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-compression-socks-6-picks-488dedd59e25fa70",
+  "request_sha256": "488dedd59e25fa70ee6311d828ed19692bda280ab957eb226ecb3bd34a6636b1",
+  "image_sha256": "970ba02dd8eddd7e616baf4561a2900d99e42e09c1127863e2db8bdaa318b05d",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-10-01T21:40:02.798383+00:00"
+}

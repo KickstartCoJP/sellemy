@@ -1,0 +1,134 @@
+{
+  "slug": "compression-socks-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/compression-socks-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/compression-socks-6-picks/compression-socks-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "compression_level",
+      "label": "着圧レベル・段階設計",
+      "keywords": [
+        "段階着圧",
+        "強さ",
+        "医療用"
+      ]
+    },
+    {
+      "id": "use_case",
+      "label": "着用シーン",
+      "keywords": [
+        "就寝用",
+        "日中用",
+        "立ち仕事"
+      ]
+    },
+    {
+      "id": "material",
+      "label": "素材・締め付け感",
+      "keywords": [
+        "伸縮素材",
+        "蒸れにくい",
+        "締め付け"
+      ]
+    },
+    {
+      "id": "size",
+      "label": "サイズ展開",
+      "keywords": [
+        "フリーサイズ",
+        "足の太さ",
+        "ロング丈"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "compression_level"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0DL5RP8H6",
+      "asin": "B0DL5RP8H6",
+      "amazon_title": "メディケン(MEDIKEN)【一般医療機器】着圧ソックス 弾性ストッキング 男女兼用 ふくらはぎサポーター 段階着圧 引き締め美脚(ブラック,XL)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71pb+DOsJQL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.58,
+      "matched_comparison_axes": [
+        "compression_level"
+      ],
+      "search_key": "メディケン(MEDIKEN) 着圧ソックス 弾性ストッキング 男"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0GTW6TQMH",
+      "asin": "B0GTW6TQMH",
+      "amazon_title": "【筋肉に沿ったテーピングでふくらはぎをホールド】 こむらスッキリ着圧ナイトソックス L-LL 【土踏まずの「アーチサポート着圧」】 + おまけ付き",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71QeGZCit3L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [],
+      "search_key": "こむらスッキリ着圧ナイトソックス L-LL + おまけ付き"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GSPNRG9Y",
+      "asin": "B0GSPNRG9Y",
+      "amazon_title": "Dr.Scholl 一般医療機器【ゆるりんぱ 着圧ソックス ソフト】血行促進 むくみ軽減 日本製 するっと履ける きつすぎない(22-25㎝)おまけ付",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51BL28azBrL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [],
+      "search_key": "Dr.Scholl 一般医療機器 血行促進 むくみ軽減 日本製"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0DJD1YXHV",
+      "asin": "B0DJD1YXHV",
+      "amazon_title": "[MKY factory] 着圧ソックス 夜用 ナイトソック 寝る時 寝ながら おやすみ 就寝 レディース 妊婦 ハイソックス 産後 マタニティ スポーツソックス メディウォーク ナイトタイム",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41qKdaQ15YL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [],
+      "search_key": "着圧ソックス 夜用 ナイトソック 寝る時 寝ながら おやすみ 就"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0DHZBSLW4",
+      "asin": "B0DHZBSLW4",
+      "amazon_title": "【毎日履ける・男女兼用】メディケン(MEDIKEN) 着圧ソックス 一般医療機器 弾性ストッキング 理学療法士監修 美脚 段階圧力設計 引き締め",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61eGgO4DzEL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [],
+      "search_key": "メディケン(MEDIKEN) 着圧ソックス 一般医療機器 弾性ス"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0DDGHC9GQ",
+      "asin": "B0DDGHC9GQ",
+      "amazon_title": "マタニティ着圧ソックス ホットキュット 夜用 1足入 日本製 一般医療機器 ブラック M-Lサイズ 98464",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71HNQOVGj3L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [],
+      "search_key": "マタニティ着圧ソックス ホットキュット 夜用 1足入 日本製 一"
+    }
+  ]
+}
