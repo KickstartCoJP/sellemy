@@ -1,0 +1,141 @@
+{
+  "slug": "eyelid-tape-double-eyelid-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/eyelid-tape-double-eyelid-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/eyelid-tape-double-eyelid-6-picks/eyelid-tape-double-eyelid-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "adhesion",
+      "label": "粘着力・持続時間",
+      "keywords": [
+        "粘着力",
+        "持続時間",
+        "崩れにくさ"
+      ]
+    },
+    {
+      "id": "natural_finish",
+      "label": "透明感・自然な仕上がり",
+      "keywords": [
+        "透明",
+        "自然",
+        "バレにくい"
+      ]
+    },
+    {
+      "id": "skin_friendly",
+      "label": "肌へのやさしさ",
+      "keywords": [
+        "低刺激",
+        "敏感肌",
+        "かぶれにくい"
+      ]
+    },
+    {
+      "id": "portability_cost",
+      "label": "携帯性・コスパ",
+      "keywords": [
+        "枚数",
+        "携帯",
+        "価格"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "natural_finish",
+      "portability_cost",
+      "skin_friendly"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0GGR496Z5",
+      "asin": "B0GGR496Z5",
+      "amazon_title": "Qwesure 二重まぶたテープ 耐水・耐汗 ナチュラル 極薄 3サイズ アイメイク 自然仕上げ 敏感肌対応 目元ケア 05#透明 両面 Mサイズ 80枚",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71ndELt2VDL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.76,
+      "matched_comparison_axes": [
+        "natural_finish",
+        "skin_friendly"
+      ],
+      "search_key": "Qwesure 二重まぶたテープ 耐水・耐汗 ナチュラル 極薄"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B076JBSB87",
+      "asin": "B076JBSB87",
+      "amazon_title": "LUCKY TRENDY （ラッキートレンディ） ビューティーワールド ナチュラルアイテープ 【ENT901】バリューパック 90回分（180枚入り）【 参考価格 】900円/個(税別)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61vHVKTK0NL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.58,
+      "matched_comparison_axes": [
+        "portability_cost"
+      ],
+      "search_key": "LUCKY TRENDY （ラッキートレンディ） ビューティーワ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HFW9YNW9",
+      "asin": "B0HFW9YNW9",
+      "amazon_title": "RBメッシュ アイテープ 水で貼り付け 二重まぶた ふたえテープ 300本",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/611nEB8mArL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [],
+      "search_key": "RBメッシュ アイテープ 水で貼り付け 二重まぶた ふたえテープ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0H3HN794Y",
+      "asin": "B0H3HN794Y",
+      "amazon_title": "AB(オートマティックビューティー) ふたえ非接着半透明テープ トライアルパック ReAB-02T (60枚) (× 2)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71bxDxxHaAL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [
+        "natural_finish"
+      ],
+      "search_key": "AB(オートマティックビューティー) ふたえ非接着半透明テープ"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0GQ33V5VL",
+      "asin": "B0GQ33V5VL",
+      "amazon_title": "ふたえテープ 二重テープ アイテープ メッシュ 水滴型 超大容量 強力サポート 防水仕様 目立ちにくい 256枚",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61BZF+Y3QWL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [],
+      "search_key": "ふたえテープ 二重テープ アイテープ メッシュ 水滴型 超大容量"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0GKVHF23J",
+      "asin": "B0GKVHF23J",
+      "amazon_title": "ふたえテープ アイテープ メッシュ 二重テープ バレない 無痕 立体仕上げ まぶたテープ 水に強い 二重くせ付け ロングワイド",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61LvWkJ2g-L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.4,
+      "matched_comparison_axes": [],
+      "search_key": "ふたえテープ アイテープ メッシュ 二重テープ バレない 無痕"
+    }
+  ]
+}

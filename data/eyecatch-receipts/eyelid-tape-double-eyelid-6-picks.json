@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-eyelid-tape-double-eyelid-6-picks-70fa08fe74a2a754",
+  "request_sha256": "70fa08fe74a2a754cadf359e7b2507d9d3a73adcde341695a114654432260057",
+  "image_sha256": "525a1cc90f39d0886716b1774d8c9d40d3e65de02722c8dc2a0c835fd5b4cd74",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-10-01T00:48:44.001075+00:00"
+}
