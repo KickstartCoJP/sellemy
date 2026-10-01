@@ -1,0 +1,146 @@
+{
+  "slug": "mens-all-in-one-skincare-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/mens-all-in-one-skincare-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/mens-all-in-one-skincare-6-picks/mens-all-in-one-skincare-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "usage",
+      "label": "使いやすさ・工程数",
+      "keywords": [
+        "オールインワン",
+        "時短",
+        "ワンステップ"
+      ]
+    },
+    {
+      "id": "moisture",
+      "label": "保湿力・ベタつきにくさ",
+      "keywords": [
+        "保湿",
+        "さっぱり",
+        "ジェル"
+      ]
+    },
+    {
+      "id": "scent",
+      "label": "香り",
+      "keywords": [
+        "無香料",
+        "メンズ香り"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格・容量",
+      "keywords": [
+        "コスパ",
+        "詰め替え"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "moisture",
+      "usage"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0F37W6G4L",
+      "asin": "B0F37W6G4L",
+      "amazon_title": "【メンズコスメ賞5冠】 OCHER (オーカー) 皮膚科学に基づく高機能オールインワン化粧水 メンズ スキンケア 【1本で整う】 エイジングケア テカリ べたつき 皮脂 肌荒れ 高保湿 オールインワン美容液 オーカー ザ セラム 50mL",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71oY4fVhoGL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.685,
+      "matched_comparison_axes": [
+        "moisture",
+        "usage"
+      ],
+      "search_key": "OCHER (オーカー) 皮膚科学に基づく高機能オールインワン化"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0GZ223NT4",
+      "asin": "B0GZ223NT4",
+      "amazon_title": "【舘ひろし×仲村トオル愛用】アルマード チェルラーファルコ パーフェクトクリーム 40g 約1ヵ月分 医薬部外品 オールインワン メンズ 男性 アフターサンケア",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81MZf4t458L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "usage"
+      ],
+      "search_key": "アルマード チェルラーファルコ パーフェクトクリーム 40g 約"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GLFPXVYF",
+      "asin": "B0GLFPXVYF",
+      "amazon_title": "【2026年ベストビューティーアワード受賞×現役グランプリ受賞モデル開発】 化粧水 メンズ オールインワン [美容液レベル・浸透設計] 200ml",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/711E0Yi380L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "usage"
+      ],
+      "search_key": "化粧水 メンズ オールインワン 200ml"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0DZBH554M",
+      "asin": "B0DZBH554M",
+      "amazon_title": "パーフェクトワン 薬用ホワイトニングジェル 75g 単品 (約1カ月分) 【医薬部外品】 オールインワンジェル 美白 PERFECT ONE",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/612RCGrYtDL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "moisture",
+        "usage"
+      ],
+      "search_key": "パーフェクトワン 薬用ホワイトニングジェル 75g 単品 (約1"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0DV8V6Q7X",
+      "asin": "B0DV8V6Q7X",
+      "amazon_title": "サントリー VARON マスターズブレンド ヴァロン メンズ スキンケア オールインワン 男性 化粧水 美容液 クリーム 医薬部外品 (20ml)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41q82HyzlML._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "usage"
+      ],
+      "search_key": "サントリー VARON マスターズブレンド ヴァロン メンズ ス"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0D87QHKWB",
+      "asin": "B0D87QHKWB",
+      "amazon_title": "ファンケル FANCL メン オールインワン ウォーター100mL(約30日分) メンズ 化粧水 無添加 (保湿/毛穴/CICA)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/4171AkNP3mL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "moisture",
+        "usage"
+      ],
+      "search_key": "ファンケル FANCL メン オールインワン ウォーター100m"
+    }
+  ]
+}
