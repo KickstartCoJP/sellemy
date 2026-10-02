@@ -1,0 +1,139 @@
+{
+  "slug": "halloween-candy-treat-sets-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/halloween-candy-treat-sets-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/halloween-candy-treat-sets-6-picks/halloween-candy-treat-sets-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "packaging",
+      "label": "個包装のしやすさ",
+      "keywords": [
+        "個包装",
+        "配りやすさ",
+        "衛生的"
+      ]
+    },
+    {
+      "id": "contents",
+      "label": "内容量・点数",
+      "keywords": [
+        "内容量",
+        "点数",
+        "詰め合わせ"
+      ]
+    },
+    {
+      "id": "design",
+      "label": "デザイン・パッケージ",
+      "keywords": [
+        "ハロウィン柄",
+        "パッケージ",
+        "かわいい"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "contents",
+      "packaging"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0HJNGV3CJ",
+      "asin": "B0HJNGV3CJ",
+      "amazon_title": "ハロウィン お菓子 詰め合わせ 12袋セット 1袋にお菓子6個入り 個包装 配布用 プチギフト 子供会 イベント",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71ye672GpNL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.685,
+      "matched_comparison_axes": [
+        "contents",
+        "packaging"
+      ],
+      "search_key": "ハロウィン お菓子 詰め合わせ 12袋セット 1袋にお菓子6個入"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HJNZN58K",
+      "asin": "B0HJNZN58K",
+      "amazon_title": "ハロウィン お菓子入り 巾着 6個セット お菓子詰め合わせ プチギフト 子ども会 ハロウィンパーティー 学校行事 イベント 配布用 約14×9cm",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71-F+mOuYrL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "contents"
+      ],
+      "search_key": "ハロウィン お菓子入り 巾着 6個セット お菓子詰め合わせ プチ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HJNCVJBD",
+      "asin": "B0HJNCVJBD",
+      "amazon_title": "ハロウィン お菓子 個包装 詰め合わせ 小袋 ばらまき【10袋セット】子供会 幼稚園 パーティー お菓子 子供 イベント 配布 景品 ギフト",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71WEz+bOeeL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "contents",
+        "packaging"
+      ],
+      "search_key": "ハロウィン お菓子 個包装 詰め合わせ 小袋 ばらまき 子供会"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0HHHM5FTS",
+      "asin": "B0HHHM5FTS",
+      "amazon_title": "ハロウィン お菓子 詰め合わせ 50袋セット 1袋3個入り 個別包装 イベント 配布用 プレゼント",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71gbwzdNzmL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "contents"
+      ],
+      "search_key": "ハロウィン お菓子 詰め合わせ 50袋セット 1袋3個入り 個別"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0HHF1QCZD",
+      "asin": "B0HHF1QCZD",
+      "amazon_title": "ハロウィン お菓子 キャンディ 24本セット 個包装 袋入り 棒付きキャンディ 4種アソート フルーツ味 パーティー イベント 配布用",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71B9+Kg9wuL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "packaging"
+      ],
+      "search_key": "ハロウィン お菓子 キャンディ 24本セット 個包装 袋入り 棒"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0HHDT4JYK",
+      "asin": "B0HHDT4JYK",
+      "amazon_title": "ハロウィン お菓子 詰め合わせ キャンディ 24本入り 個包装 袋入り 棒付き飴 4種デザイン 配布用 パーティー",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71h0MSfCrlL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "contents",
+        "packaging"
+      ],
+      "search_key": "ハロウィン お菓子 詰め合わせ キャンディ 24本入り 個包装"
+    }
+  ]
+}
