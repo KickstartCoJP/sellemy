@@ -1,0 +1,140 @@
+{
+  "slug": "throat-lozenges-gargle-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/throat-lozenges-gargle-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/throat-lozenges-gargle-6-picks/throat-lozenges-gargle-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "efficacy",
+      "label": "有効成分・効果",
+      "keywords": [
+        "殺菌",
+        "メントール",
+        "有効成分"
+      ]
+    },
+    {
+      "id": "taste",
+      "label": "使用感・味",
+      "keywords": [
+        "味",
+        "のどごし",
+        "スースー感"
+      ]
+    },
+    {
+      "id": "portability",
+      "label": "携帯性・容量",
+      "keywords": [
+        "個包装",
+        "携帯",
+        "容量"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格",
+      "keywords": [
+        "価格",
+        "まとめ買い"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "efficacy",
+      "portability",
+      "taste"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B07WT23R35",
+      "asin": "B07WT23R35",
+      "amazon_title": "【指定医薬部外品】健栄製薬 のどスッキリうがい薬 ピーチ味 300ml 殺菌 消毒 うがい液 口臭対策 風邪予防 喉ケア 洗口液 マウスウォッシュ",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51xPjOhHnKL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.71,
+      "matched_comparison_axes": [
+        "efficacy",
+        "taste"
+      ],
+      "search_key": "健栄製薬 のどスッキリうがい薬 ピーチ味 300ml 殺菌 消毒"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0H5HX9K86",
+      "asin": "B0H5HX9K86",
+      "amazon_title": "液体 のど飴 ノドメンテ ノドスプレー 【栄養機能食品/天然オイル配合/国内生産/ノンシュガー/携帯用】 ノドのメンテに のどスプレー",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61EmGIlxe9L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.53,
+      "matched_comparison_axes": [
+        "portability"
+      ],
+      "search_key": "液体 のど飴 ノドメンテ ノドスプレー ノドのメンテに のどスプ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0FF9JXPLC",
+      "asin": "B0FF9JXPLC",
+      "amazon_title": "養命酒製造クロモジのど飴和みミント 76g×1袋",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81sjmu2Q7RL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "養命酒製造クロモジのど飴和みミント 76g×1袋"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0DMRYGLLQ",
+      "asin": "B0DMRYGLLQ",
+      "amazon_title": "ヴイックスメディケイテッドドロップ はちみつ 20個入/大正製薬【指定医薬部外品】",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71V54au-2TL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "ヴイックスメディケイテッドドロップ はちみつ 20個入/大正製薬"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0CPHTK3W2",
+      "asin": "B0CPHTK3W2",
+      "amazon_title": "松浦薬業 エキナケアのど飴 52g (3個セット)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71foydcEtsL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "松浦薬業 エキナケアのど飴 52g (3個セット)"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0CF1F8GQQ",
+      "asin": "B0CF1F8GQQ",
+      "amazon_title": "【指定医薬部外品】健栄うがいCPC ピーチ味 370ML うがい薬 cpc",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51FCXeFdnPL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "taste"
+      ],
+      "search_key": "健栄うがいCPC ピーチ味 370ML うがい薬 cpc"
+    }
+  ]
+}
