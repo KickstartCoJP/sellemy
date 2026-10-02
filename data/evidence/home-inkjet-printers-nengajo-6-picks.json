@@ -1,0 +1,121 @@
+{
+  "slug": "home-inkjet-printers-nengajo-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/home-inkjet-printers-nengajo-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/home-inkjet-printers-nengajo-6-picks/home-inkjet-printers-nengajo-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "quality",
+      "label": "印刷画質・速度",
+      "keywords": [
+        "写真画質",
+        "印刷速度",
+        "解像度"
+      ]
+    },
+    {
+      "id": "postcard",
+      "label": "はがき対応・給紙のしやすさ",
+      "keywords": [
+        "はがきトレイ",
+        "自動両面印刷",
+        "給紙枚数"
+      ]
+    },
+    {
+      "id": "cost",
+      "label": "インクコスト・ランニングコスト",
+      "keywords": [
+        "インクボトル",
+        "大容量インク",
+        "コスパ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0H1M545W6",
+      "asin": "B0H1M545W6",
+      "amazon_title": "【NEW】2026年夏モデル エプソン プリンター EW-056A1 A4 インクジェット複合機 ソフトウェアディスク非同梱モデル(エプソン公式サイトよりプリンタードライバーをダウンロードしご利用ください) Wi-Fi 4色 独立型インク【Amazon.co.jp限定】",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41uq4yup0fL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "2026年夏モデル エプソン プリンター EW-056A1 A4"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0FX4BCPTJ",
+      "asin": "B0FX4BCPTJ",
+      "amazon_title": "New 2025年秋 キヤノン インクジェット複合機 TS3730 BLACK 1 対応インクBC-366／BC-365セットアップCDレスモデル (キヤノンホームページよりプリンタードライバーをダウンロードしご利用ください)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51BsRFU6rpL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "New 2025年秋 キヤノン インクジェット複合機 TS373"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0DXZ8P4LZ",
+      "asin": "B0DXZ8P4LZ",
+      "amazon_title": "エコマーク",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41evSpsC-rL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "エコマーク"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0DJQ5BBPW",
+      "asin": "B0DJQ5BBPW",
+      "amazon_title": "エプソン プリンター ハガキプリンター PF-81EINEN 年賀状 宛名達人 永年版",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/616NTbok+-L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "エプソン プリンター ハガキプリンター PF-81EINEN 年"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0DF7NWXNZ",
+      "asin": "B0DF7NWXNZ",
+      "amazon_title": "キヤノン Canon プリンター A4 インクジェット複合機 TS3730 WHITE Wi-Fi対応 テレワーク 対応インクBCI-366/365シリーズ 【2024年秋冬モデル】",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/418Jm1tX7nL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "キヤノン Canon プリンター A4 インクジェット複合機 T"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0DF7NG7CN",
+      "asin": "B0DF7NG7CN",
+      "amazon_title": "【New】キヤノン Canon プリンター A4 インクジェット複合機 G3390 WHITE 特大容量 ギガタンク テレワーク 対応インクGI-31シリーズ/対応ヘッドBH-30/CH-30 【2024年秋冬モデル】",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51B4erUxBZL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "キヤノン Canon プリンター A4 インクジェット複合機 G"
+    }
+  ]
+}
