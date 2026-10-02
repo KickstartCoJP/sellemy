@@ -10,10 +10,9 @@ if ! mkdir "$LOCK" 2>/dev/null; then echo "$(date -Iseconds) already running"; e
 trap 'rmdir "$LOCK"' EXIT
 cd "$ROOT"
 if [[ -f "$SECRETS" ]]; then set -a; source "$SECRETS"; set +a; fi
-export SELLEMY_EYECATCH_ENDPOINT=https://api.openai.com/v1/images/generations
-export SELLEMY_EYECATCH_TOKEN_ENV=OPENAI_API_KEY
-export SELLEMY_EYECATCH_PROVIDER=openai
-export SELLEMY_EYECATCH_MODEL=gpt-image-2.5-sunburst
+# Eyecatch generation must not use OpenAI API. Keep generation fail-closed
+# until an explicitly authorized production image route is configured.
+unset SELLEMY_EYECATCH_ENDPOINT SELLEMY_EYECATCH_TOKEN_ENV SELLEMY_EYECATCH_PROVIDER SELLEMY_EYECATCH_MODEL
 export SELLEMY_EYECATCH_QUALITY=high
 export SELLEMY_EYECATCH_TIMEOUT_SECONDS=300
 export SELLEMY_WRITER_PRIMARY_COMMAND=/opt/homebrew/bin/claude

@@ -76,7 +76,8 @@ class EyecatchGenerator:
         if not self.token_env or not os.environ.get(self.token_env):
             raise EyecatchGenerationError('generative eyecatch token unavailable')
 
-        if self.provider.lower() == 'openai' or self.endpoint.rstrip('/').endswith('/v1/images/generations'):
+        openai_route = self.provider.lower() == 'openai' or self.endpoint.rstrip('/').endswith('/v1/images/generations')
+        if openai_route:
             request_payload = {
                 'prompt': _prompt(payload, evidence),
                 'n': 1,
@@ -108,6 +109,9 @@ class EyecatchGenerator:
                 if receipt.get('image_sha256') == _sha256_bytes(raw) and (width, height) == (1536, 1024):
                     return receipt
                 raise EyecatchGenerationError('existing eyecatch receipt/file mismatch')
+
+        if openai_route:
+            raise EyecatchGenerationError('OpenAI API eyecatch generation is not authorized')
 
         req = urllib.request.Request(
             self.endpoint,
