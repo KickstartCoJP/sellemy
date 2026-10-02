@@ -1,0 +1,129 @@
+{
+  "slug": "womens-electric-shavers-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/womens-electric-shavers-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/womens-electric-shavers-6-picks/womens-electric-shavers-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "shaving",
+      "label": "剃り方式・肌へのやさしさ",
+      "keywords": [
+        "刃の枚数",
+        "肌あたり",
+        "滑り"
+      ]
+    },
+    {
+      "id": "care",
+      "label": "防水・お手入れのしやすさ",
+      "keywords": [
+        "水洗い",
+        "お風呂で使える",
+        "丸洗い"
+      ]
+    },
+    {
+      "id": "portability",
+      "label": "携帯性・価格",
+      "keywords": [
+        "コンパクト",
+        "旅行用",
+        "コスパ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "care",
+      "portability"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0H7S2F13Y",
+      "asin": "B0H7S2F13Y",
+      "amazon_title": "【2in1新設計】AUTAKI 対応vio シェーバー 電動シェーバー 女性 3D フローティングヘッド Type-C USB充電式 IPX6防水 乾湿両用 水洗い可 デュアルヘッド顔剃り 回転式 男女兼用 デリケートゾーン/腕/足/産毛/うぶげ/顔/脇 全身まで使える ワイドセラミック刃 ダ毛処理 肌にやさしい コンパクト (ホワイト)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61JszBrscPL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.71,
+      "matched_comparison_axes": [
+        "care",
+        "portability"
+      ],
+      "search_key": "AUTAKI 対応vio シェーバー 電動シェーバー 女性 3D"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HKFY6W2H",
+      "asin": "B0HKFY6W2H",
+      "amazon_title": "シェーバー レディース 【2つのケアを1台に】業界新発想 （電動シェーバー＋ナノガラス 一体式）2in1 ボディシェーバー 無痛【SNS話題沸騰中！美容家おすすめ•人気雑誌掲載】VIOシェーバー 電気シェーバー 女性 脱毛 乾湿両用 IPX7防水 丸ごと水洗い可 角質除去 足までつるつる美肌へ 静音 日本語取扱説明書 男女兼用",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71chU9kBx0L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "care"
+      ],
+      "search_key": "シェーバー レディース 業界新発想 （電動シェーバー＋ナノガラス"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HHDGC3GQ",
+      "asin": "B0HHDGC3GQ",
+      "amazon_title": "4IN1 多機能 レディース電動シェーバー VIO・全身・顔・眉毛・鼻毛 ムダ毛処理",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/712DRZHzb+L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "4IN1 多機能 レディース電動シェーバー VIO・全身・顔・眉"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0H9J23WGP",
+      "asin": "B0H9J23WGP",
+      "amazon_title": "【2026年業界革新・2in１全身用】 vio シェーバー レディース 電気シェーバー 女性 電動 広範囲ケア対応 LEDライト IPX7防水",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51OJHoOAlbL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "vio シェーバー レディース 電気シェーバー 女性 電動 広範"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0H3B1JGBW",
+      "asin": "B0H3B1JGBW",
+      "amazon_title": "BAYATA vio シェーバー レディース 2in1ヘッド 女性 メンズ 電気シェーバー 電動 デリケートゾーン ムダ毛処理 USB充電式，ホワイト",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51O7eHW4p-L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "BAYATA vio シェーバー レディース 2in1ヘッド 女"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0H25CZ6T8",
+      "asin": "B0H25CZ6T8",
+      "amazon_title": "◆新モデル◆【公式ストア限定】リファマルチシェーバー B/ReFa MULTI SHAVER B (ペールブルー)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61ZhcpW7uuL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "◆新モデル◆ リファマルチシェーバー B/ReFa MULTI"
+    }
+  ]
+}
