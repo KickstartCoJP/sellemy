@@ -1,0 +1,145 @@
+{
+  "slug": "kitchen-knives-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/kitchen-knives-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/kitchen-knives-6-picks/kitchen-knives-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "sharpness_material",
+      "label": "切れ味・素材",
+      "keywords": [
+        "ステンレス",
+        "ダマスカス鋼",
+        "セラミック"
+      ]
+    },
+    {
+      "id": "use_case",
+      "label": "用途・サイズ展開",
+      "keywords": [
+        "三徳包丁",
+        "万能包丁",
+        "セット"
+      ]
+    },
+    {
+      "id": "durability_care",
+      "label": "お手入れ・耐久性",
+      "keywords": [
+        "錆びにくい",
+        "食洗機対応",
+        "研ぎ直し"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "durability_care",
+      "sharpness_material",
+      "use_case"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0FRRPHYYN",
+      "asin": "B0FRRPHYYN",
+      "amazon_title": "【プロ料理人と刀匠が推薦】ARTISAN&Co.SEKI.JAPAN正規品 岐阜県関市製 包丁 プロが愛用する切れる包丁 シャープナー セット オールステンレス 庖丁 食洗機対応 両刃 (三徳包丁185mm＋シャープナー)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51xgJmfkvSL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.89,
+      "matched_comparison_axes": [
+        "durability_care",
+        "sharpness_material",
+        "use_case"
+      ],
+      "search_key": "ARTISAN&Co.SEKI.JAPAN正規品 岐阜県関市製"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HB91Y6B6",
+      "asin": "B0HB91Y6B6",
+      "amazon_title": "【ミシュラン掲載店オーナー監修】三徳包丁 包丁 180mm 真空熱処理 切れ味つづく 和の握り心地 オールステンレス 青池隆明 AosTavola",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61p7GnAZqAL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "sharpness_material",
+        "use_case"
+      ],
+      "search_key": "三徳包丁 包丁 180mm 真空熱処理 切れ味つづく 和の握り心"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0G3PPMCFH",
+      "asin": "B0G3PPMCFH",
+      "amazon_title": "【2026新型】 PAUDIN 包丁 3本セット 三徳包丁 牛刀 ペティナイフ 5Cr15MoV 高炭素ステンレス 天然木ハンドル 両刃 家庭用 万能包丁セット よく切れる ギフト対応",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71Gxj0ALjML._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "sharpness_material",
+        "use_case"
+      ],
+      "search_key": "PAUDIN 包丁 3本セット 三徳包丁 牛刀 ペティナイフ 5"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0D2ZPL6DP",
+      "asin": "B0D2ZPL6DP",
+      "amazon_title": "PAUDIN 三徳包丁 175㎜ 5Cr15Mov ステンレス 天然木ハンドル よく切れる 万能包丁 両刃 左利き対応 切れ味長い 肉切り· 魚切り·菜切り包丁 キッチン用品 ギフト 贈り物 (茶色)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/614jft2GnjL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "sharpness_material",
+        "use_case"
+      ],
+      "search_key": "PAUDIN 三徳包丁 175㎜ 5Cr15Mov ステンレス"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0D2Z6N248",
+      "asin": "B0D2Z6N248",
+      "amazon_title": "包丁セット PAUDIN 【三徳包丁・ペティナイフ】2本セット 天然木ハンドル 両刃包丁 5Cr15Mov ステンレス製 防錆 切れ味長い 肉切り· 魚切り·菜切り包丁 父の日 贈り物",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71Yf1GmasTL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "sharpness_material",
+        "use_case"
+      ],
+      "search_key": "包丁セット PAUDIN 2本セット 天然木ハンドル 両刃包丁"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0CC49D7DT",
+      "asin": "B0CC49D7DT",
+      "amazon_title": "ティファール 三徳包丁 三徳ナイフ 16.5cm オールステンレス 食洗機対応 「プレシジョン」 10年保証 K27711",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51zKu8BnU4L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "durability_care",
+        "sharpness_material",
+        "use_case"
+      ],
+      "search_key": "ティファール 三徳包丁 三徳ナイフ 16.5cm オールステンレ"
+    }
+  ]
+}

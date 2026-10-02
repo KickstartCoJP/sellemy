@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-kitchen-knives-6-picks-655522e81ab21ffc",
+  "request_sha256": "655522e81ab21ffc8266f67c2344af7da4a954f8319f71b5698742d4c7414da3",
+  "image_sha256": "c97658679c4269a6abbe03e7c670e84f240469635cc6cbf855631bc80da66a9f",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-10-02T06:33:28.218940+00:00"
+}
