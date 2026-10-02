@@ -1,0 +1,131 @@
+{
+  "slug": "vr-headsets-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/vr-headsets-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/vr-headsets-6-picks/vr-headsets-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "display_fov",
+      "label": "解像度・視野角",
+      "keywords": [
+        "解像度",
+        "視野角",
+        "画質"
+      ]
+    },
+    {
+      "id": "tracking_control",
+      "label": "トラッキング・操作性",
+      "keywords": [
+        "コントローラー",
+        "ハンドトラッキング",
+        "位置精度"
+      ]
+    },
+    {
+      "id": "price_content",
+      "label": "価格・対応コンテンツ",
+      "keywords": [
+        "価格帯",
+        "対応アプリ",
+        "スタンドアロン"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "display_fov",
+      "tracking_control"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0GSJTCGDX",
+      "asin": "B0GSJTCGDX",
+      "amazon_title": "【令和8年リモコンセット版】 VRゴーグル スマホ用 ブルートゥース Bluetooth コントローラー付き 超広角120°視野角 ピント&目幅調整可 非球面光学レンズ DMM ブルーライトカット 装着感良い 通気性 軽量 放熱性良い 4.5～6.5インチiPhone&androidなどのスマホ対応 日本語取扱書付き",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61YCU19kTWL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.71,
+      "matched_comparison_axes": [
+        "display_fov",
+        "tracking_control"
+      ],
+      "search_key": "VRゴーグル スマホ用 ブルートゥース Bluetooth コン"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HJYRH1QT",
+      "asin": "B0HJYRH1QT",
+      "amazon_title": "VRゴーグル スマホ用 超広角120°視野角 3D体験 1080P HD 非球面レンズ メガネ対応 ブルーライトカット 焦点距離&瞳孔間距離調整 通気性 軽量 放熱性良い 4.5～6.7インチ対応 iPhone & Androidなどのスマホ対応 日本語取扱書付き （ブラック）",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61PbjGYMUrL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "display_fov"
+      ],
+      "search_key": "VRゴーグル スマホ用 超広角120°視野角 3D体験 1080"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HGPV7NC2",
+      "asin": "B0HGPV7NC2",
+      "amazon_title": "【セット品】Meta Quest 3S 128GB VRヘッドセット クリーニングクロス付きセット",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/410hIE-xUkL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "Meta Quest 3S 128GB VRヘッドセット クリー"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0GSJSSY85",
+      "asin": "B0GSJSSY85",
+      "amazon_title": "スマホ対応 VR ゴーグル + イヤホンセット｜焦点距離・眼幅調整可能｜1080P HD 非球面光学系 + 防青カット機能｜120° 広視野角・高密着性・通気性｜軽量設計で家庭で手軽に 体験享受​（さまざまなスタイルをご用意） (ベーシックモデル + オリジナルリモコン)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51ZZBurAuLL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "display_fov"
+      ],
+      "search_key": "スマホ対応 VR ゴーグル + イヤホンセット｜焦点距離・眼幅調"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0GL7RSYTS",
+      "asin": "B0GL7RSYTS",
+      "amazon_title": "VRメガネ スマートフォン用 VRヘッドセット 1080P 超広角120° 焦点距離&瞳孔間距離調整可能 5-7インチスマートフォン対応 非球面光学レンズ 放熱性良好 人間工学デザイン ゴーグル+リモコン+ヘッドフォン (ゴーグル+ヘッドフォン)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61aGo998bHL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "VRメガネ スマートフォン用 VRヘッドセット 1080P 超広"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0F8VJ57Q1",
+      "asin": "B0F8VJ57Q1",
+      "amazon_title": "Meta Quest 3S 128GB (旧Oculus)｜VRゴーグル｜PCVRも対応｜Gorilla Tagバンドル",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81LmuIbpMPL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "Meta Quest 3S 128GB (旧Oculus)｜VR"
+    }
+  ]
+}
