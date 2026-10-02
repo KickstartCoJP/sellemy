@@ -1,0 +1,145 @@
+{
+  "slug": "multipurpose-moisture-balms-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/multipurpose-moisture-balms-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/multipurpose-moisture-balms-6-picks/multipurpose-moisture-balms-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "texture",
+      "label": "使用感・べたつき",
+      "keywords": [
+        "テクスチャー",
+        "べたつき",
+        "伸び"
+      ]
+    },
+    {
+      "id": "ingredients",
+      "label": "保湿成分",
+      "keywords": [
+        "ワセリン",
+        "セラミド",
+        "保湿"
+      ]
+    },
+    {
+      "id": "versatility",
+      "label": "使える部位・用途",
+      "keywords": [
+        "唇",
+        "かかと",
+        "全身"
+      ]
+    },
+    {
+      "id": "price",
+      "label": "価格・容量",
+      "keywords": [
+        "価格",
+        "容量"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "ingredients",
+      "versatility"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B09CKQKKC8",
+      "asin": "B09CKQKKC8",
+      "amazon_title": "健栄製薬 ベビーワセリンM（化粧用油） 60g 白色ワセリン 無添加 無香料 防腐剤なし 保湿 新生児 高純度 乾燥肌 敏感肌 赤ちゃん 全身",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51IIJ4qWpqL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.685,
+      "matched_comparison_axes": [
+        "ingredients",
+        "versatility"
+      ],
+      "search_key": "健栄製薬 ベビーワセリンM（化粧用油） 60g 白色ワセリン 無"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0H6Q1QY8D",
+      "asin": "B0H6Q1QY8D",
+      "amazon_title": "Eucerin ユーセリン ハリフィラー バクチライズローション 本体 150ml 化粧液 化粧水 つや エイジングケア 保湿 ダーマ",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41DeRccoJbL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "ingredients"
+      ],
+      "search_key": "Eucerin ユーセリン ハリフィラー バクチライズローション"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0H6PYLMC8",
+      "asin": "B0H6PYLMC8",
+      "amazon_title": "Eucerin ユーセリン ハリフィラー バクチライズクリーム 本体 40g フェイスクリーム つや エイジングケア 保湿 ダーマコスメ",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41khGSMHmcL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "ingredients"
+      ],
+      "search_key": "Eucerin ユーセリン ハリフィラー バクチライズクリーム"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0GLHBD6T5",
+      "asin": "B0GLHBD6T5",
+      "amazon_title": "ワセリンHGチューブ 60g スキンケア 持ち運びに便利 乾燥する季節の保湿 大 洋製薬",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51ykXSmbFmL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "ingredients"
+      ],
+      "search_key": "ワセリンHGチューブ 60g スキンケア 持ち運びに便利 乾燥す"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0GLF7CT8D",
+      "asin": "B0GLF7CT8D",
+      "amazon_title": "【2本5役の時短ケア】N organic Basic スキンケア2点セット 化粧水 赤CICA乳液 約2ヶ月分 保湿 肌荒れ 敏感肌 柑橘系の香り",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71bWuP99+bL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "ingredients"
+      ],
+      "search_key": "N organic Basic スキンケア2点セット 化粧水 赤"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0G5H17NSF",
+      "asin": "B0G5H17NSF",
+      "amazon_title": "ワセリズム 保湿バーム 90g 高精製ワセリン(保湿成分) アルコールフリー 保湿クリーム (× 2)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71MH2F3joOL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "ingredients"
+      ],
+      "search_key": "ワセリズム 保湿バーム 90g 高精製ワセリン(保湿成分) アル"
+    }
+  ]
+}
