@@ -1,0 +1,128 @@
+{
+  "slug": "micellar-cleansing-water-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/micellar-cleansing-water-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/micellar-cleansing-water-6-picks/micellar-cleansing-water-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "cleansing_power",
+      "label": "洗浄力・メイク落ち",
+      "keywords": [
+        "メイク落ち",
+        "毛穴汚れ",
+        "ウォータープルーフ対応"
+      ]
+    },
+    {
+      "id": "gentleness",
+      "label": "肌へのやさしさ・低刺激性",
+      "keywords": [
+        "低刺激",
+        "敏感肌",
+        "こすらない"
+      ]
+    },
+    {
+      "id": "portability",
+      "label": "容量・携帯性",
+      "keywords": [
+        "詰め替え",
+        "携帯用",
+        "大容量"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "gentleness",
+      "portability"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0936WHVSX",
+      "asin": "B0936WHVSX",
+      "amazon_title": "Chacott(チャコット) クレンジングウォーター ポンプ式 オールインワンタイプ 500ml 大容量 Ｗ洗顔＆化粧水不要",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41cV+NdGDIS._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.53,
+      "matched_comparison_axes": [
+        "portability"
+      ],
+      "search_key": "Chacott(チャコット) クレンジングウォーター ポンプ式"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B07BH94M4J",
+      "asin": "B07BH94M4J",
+      "amazon_title": "【正規品】ビオデルマ（Bioderma）サンシビオ エイチツーオー D（H2O）250mL 敏感肌用 クレンジング水（洗顔 メイク落とし クレンジングウォーター 敏感肌用 無香料 無着色 エチルアルコール、オイル、パラベン無添加 弱酸性）",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41dwHhB9jAL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.53,
+      "matched_comparison_axes": [
+        "gentleness"
+      ],
+      "search_key": "ビオデルマ（Bioderma）サンシビオ エイチツーオー D（H"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0DG97SHZ2",
+      "asin": "B0DG97SHZ2",
+      "amazon_title": "【年齢肌こそ拭き取りクレンジング】SISI アイムユアヒーロー エンリッチ(ウッディの香り) クレンジングウォーター 230ml (1本)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61t7+uFTQsL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "SISI アイムユアヒーロー エンリッチ(ウッディの香り) クレ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0DFLQTKSV",
+      "asin": "B0DFLQTKSV",
+      "amazon_title": "オルビス(ORBIS) ショットプラス エッセンスローション ボトル入り 150mL 化粧水 (ナイアシンアミド/ビタミンC誘導体)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51EiV2RZHxL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "オルビス(ORBIS) ショットプラス エッセンスローション ボ"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0CJXS8CB2",
+      "asin": "B0CJXS8CB2",
+      "amazon_title": "アテニア スキンクリア クレンズオイル アロマ 175ml 毛穴/角質 クレンジング メイク落とし クレンジングオイル/ダブル洗顔不要 シトラス",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41QwW36fXWL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "アテニア スキンクリア クレンズオイル アロマ 175ml 毛穴"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0CHRQ5VB1",
+      "asin": "B0CHRQ5VB1",
+      "amazon_title": "パーフェクトワンフォーカス PERFECT ONE FOCUS スムースクレンジングバーム 75g (【リニューアル前】ディープブラック（単品）)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61EDP0gcwXL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "パーフェクトワンフォーカス PERFECT ONE FOCUS"
+    }
+  ]
+}
