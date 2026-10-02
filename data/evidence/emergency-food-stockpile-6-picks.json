@@ -1,0 +1,136 @@
+{
+  "slug": "emergency-food-stockpile-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/emergency-food-stockpile-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/emergency-food-stockpile-6-picks/emergency-food-stockpile-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "shelf_life",
+      "label": "賞味期限・保存年数",
+      "keywords": [
+        "5年保存",
+        "長期保存",
+        "ローリングストック"
+      ]
+    },
+    {
+      "id": "menu_variety",
+      "label": "メニューの豊富さ",
+      "keywords": [
+        "アルファ米",
+        "おかず系",
+        "バラエティセット"
+      ]
+    },
+    {
+      "id": "preparation",
+      "label": "調理のしやすさ",
+      "keywords": [
+        "水だけで調理",
+        "そのまま食べられる",
+        "加熱不要"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "menu_variety",
+      "shelf_life"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0H38QZ3JC",
+      "asin": "B0H38QZ3JC",
+      "amazon_title": "【食品充実33点】非常食セット 3人家族3日分 5年保存 アルファ米 保存食 防災食品 JOJOJO",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81KoExympTL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.685,
+      "matched_comparison_axes": [
+        "menu_variety",
+        "shelf_life"
+      ],
+      "search_key": "非常食セット 3人家族3日分 5年保存 アルファ米 保存食 防災"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HB422LP7",
+      "asin": "B0HB422LP7",
+      "amazon_title": "非常食 1人用 1日 3食 7日分セット【尾西食品 常温 長期保存 5年 備蓄 非常食 災害食 保存食 キャンプ 登山 アウトドア】＜防災グッズ・防災セット＞",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/811RAO2kt8L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "shelf_life"
+      ],
+      "search_key": "非常食 1人用 1日 3食 7日分セット【尾西食品 常温 長期保"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0H2LHY9SK",
+      "asin": "B0H2LHY9SK",
+      "amazon_title": "非常食セット 7日分【7年・5年長期保存】 7DAYSストック (ななこめっつVer) 防災ハンドブック86ページ付 21食 保存食 防災食 備蓄",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81PW3630-tL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "shelf_life"
+      ],
+      "search_key": "非常食セット 7日分 7DAYSストック (ななこめっつVer)"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0H28C15VG",
+      "asin": "B0H28C15VG",
+      "amazon_title": "7DAYSストック 非常食セット（マジックライスVer）防災ハンドブック付 7日分 保存食 非常食 災害用 アルファ米 おにぎり 防災セット 備蓄 防災グッズ",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/813I-R1NJ8L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "menu_variety"
+      ],
+      "search_key": "7DAYSストック 非常食セット（マジックライスVer）防災ハン"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0GTNNDXGV",
+      "asin": "B0GTNNDXGV",
+      "amazon_title": "非常食セット 最長7年 保存食 ごはん パン 最大２８食 ６日分 家族 自治会 自治体 組合 企業 大口注文 まとめ買い 防災グッズ 家庭用 災害 備蓄 避難 生活 地震 食料",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81rhur8e0yL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "非常食セット 最長7年 保存食 ごはん パン 最大２８食 ６日分"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0GKDL18JQ",
+      "asin": "B0GKDL18JQ",
+      "amazon_title": "【防災士×管理栄養士監修】非常食セット 3人用 3日分 27食＋おやつ3種 尾西食品 アルファ米 携帯おにぎり 長期保存パン えいようかん クッキー 井村屋 ブルボン アキモト 長期保存 災害用 備蓄食料 くらし安心Labo",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81G80Ql01AL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "menu_variety",
+        "shelf_life"
+      ],
+      "search_key": "非常食セット 3人用 3日分 27食＋おやつ3種 尾西食品 アル"
+    }
+  ]
+}
