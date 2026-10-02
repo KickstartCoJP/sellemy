@@ -1,0 +1,139 @@
+{
+  "slug": "led-illumination-lights-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/led-illumination-lights-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/led-illumination-lights-6-picks/led-illumination-lights-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "brightness_color",
+      "label": "明るさ・色展開",
+      "keywords": [
+        "明るさ",
+        "色",
+        "点灯パターン"
+      ]
+    },
+    {
+      "id": "setup_waterproof",
+      "label": "設置・防水性",
+      "keywords": [
+        "防水",
+        "屋外",
+        "設置"
+      ]
+    },
+    {
+      "id": "power_cord",
+      "label": "電源方式・コード長",
+      "keywords": [
+        "電源",
+        "コード長",
+        "電池式"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "brightness_color",
+      "setup_waterproof"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0GTLJS87R",
+      "asin": "B0GTLJS87R",
+      "amazon_title": "LEDイルミネーションライト 20m 200球 屋外 防水 ストリングライト 電球色 クリスマスツリーライト 8点灯パターン 複数連結可",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81QuS6LS5tL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.685,
+      "matched_comparison_axes": [
+        "brightness_color",
+        "setup_waterproof"
+      ],
+      "search_key": "LEDイルミネーションライト 20m 200球 屋外 防水 スト"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HK3SPG8C",
+      "asin": "B0HK3SPG8C",
+      "amazon_title": "スマートカーテンライト 400LED 3m角 アプリ対応 リモコン 音楽同期 IP65防水 調光 ハロウィン クリスマス 装飾",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71rR3NUhlwL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "setup_waterproof"
+      ],
+      "search_key": "スマートカーテンライト 400LED 3m角 アプリ対応 リモコ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HCYQG2J5",
+      "asin": "B0HCYQG2J5",
+      "amazon_title": "【2026業界の技術革新】LEDイルミネーションライト クリスマスライト USB式 12m 100LED 暖色 銅線ワイヤーライト",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71KsLBZxOSL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "brightness_color"
+      ],
+      "search_key": "LEDイルミネーションライト クリスマスライト USB式 12m"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0HCVRVKNQ",
+      "asin": "B0HCVRVKNQ",
+      "amazon_title": "ソーラー ストリングライト イルミネーションライト 200LED電球 22M IP65防水 8点灯モード 祝日 新年 クリスマス飾り 庭・屋外用",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71KvZQNHesL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "setup_waterproof"
+      ],
+      "search_key": "ソーラー ストリングライト イルミネーションライト 200LED"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0GTL99CD7",
+      "asin": "B0GTL99CD7",
+      "amazon_title": "LED イルミネーションライト 10m 320球 屋外 防水 ストリングライト 電球色 クリスマスライト 8点灯 パターン 複数連結可",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81Fj3LMFZeL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "brightness_color",
+        "setup_waterproof"
+      ],
+      "search_key": "LED イルミネーションライト 10m 320球 屋外 防水 ス"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0GTL8T4W7",
+      "asin": "B0GTL8T4W7",
+      "amazon_title": "LEDイルミネーションライト クリスマスツリーライト 2M 12本 240球 屋外 防水 ストリングライト マルチカラー 8点灯パターン",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71VPuBs+DNL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "brightness_color",
+        "setup_waterproof"
+      ],
+      "search_key": "LEDイルミネーションライト クリスマスツリーライト 2M 12"
+    }
+  ]
+}
