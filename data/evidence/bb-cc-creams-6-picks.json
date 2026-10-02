@@ -1,0 +1,121 @@
+{
+  "slug": "bb-cc-creams-6-picks",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/bb-cc-creams-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/bb-cc-creams-6-picks/bb-cc-creams-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "coverage",
+      "label": "カバー力・仕上がり",
+      "keywords": [
+        "カバー力",
+        "崩れにくさ",
+        "ツヤ・マット"
+      ]
+    },
+    {
+      "id": "skincare",
+      "label": "保湿・美容成分",
+      "keywords": [
+        "保湿成分",
+        "美容液成分",
+        "乾燥対策"
+      ]
+    },
+    {
+      "id": "price_portability",
+      "label": "携帯性・価格帯",
+      "keywords": [
+        "容量",
+        "価格",
+        "持ち運び"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0FPKR377X",
+      "asin": "B0FPKR377X",
+      "amazon_title": "+ONEC (プラワンシー)【公式】BB+CCクリーム ファンデーション 40g ｜ bbクリーム CCクリーム トーンアップ 日焼け止め UV UVカット 紫外線 SPF50+ PA++ 保湿 敏感肌 ツヤ肌 20代 30代 40代 50代",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51oWJHHlgiL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "+ONEC (プラワンシー) BB+CCクリーム ファンデーショ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0DTY9K6PV",
+      "asin": "B0DTY9K6PV",
+      "amazon_title": "ちふれ（CHIFURE）BB クリーム N 1 30g SPF30 PA++ 化粧下地 ファンデーション",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61CNSAlg72L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "ちふれ（CHIFURE）BB クリーム N 1 30g SPF3"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0DKXL5VK1",
+      "asin": "B0DKXL5VK1",
+      "amazon_title": "ピコモンテ プレミアム CCクリーム 化粧下地 トーンアップ SPF35 PA+++ UVカット 日焼け止め下地 BBクリーム ホワイト",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41ZX1bwzC8L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "ピコモンテ プレミアム CCクリーム 化粧下地 トーンアップ S"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0CQLMV124",
+      "asin": "B0CQLMV124",
+      "amazon_title": "Obagi(オバジ) オバジC デイセラムBB ナチュラル 30g(ビタミンC配合・日焼け止め・化粧下地BBクリーム・SPF50+・PA++++)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/518Ty1PIa3L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "Obagi(オバジ) オバジC デイセラムBB ナチュラル 30"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0C42S3LJ6",
+      "asin": "B0C42S3LJ6",
+      "amazon_title": "DECORTÉ(コスメデコルテ) 化粧下地 サンシェルター　マルチ プロテクション　トーンアップＣＣ 01 Light Beige 35g",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51rT1Gk4MdL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "DECORTÉ(コスメデコルテ) 化粧下地 サンシェルター マル"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0BTGMNBD9",
+      "asin": "B0BTGMNBD9",
+      "amazon_title": "MISSHA(ミシャ) ミシャ M プロカバー BBクリーム (35g) (No.23)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61sGl86tvAL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "MISSHA(ミシャ) ミシャ M プロカバー BBクリーム ("
+    }
+  ]
+}
