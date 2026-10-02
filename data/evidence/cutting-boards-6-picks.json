@@ -1,0 +1,139 @@
+{
+  "slug": "cutting-boards-6-picks",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/cutting-boards-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/cutting-boards-6-picks/cutting-boards-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "material",
+      "label": "素材",
+      "keywords": [
+        "抗菌加工",
+        "木製",
+        "ゴム製",
+        "プラスチック製"
+      ]
+    },
+    {
+      "id": "size_storage",
+      "label": "サイズ・収納性",
+      "keywords": [
+        "コンパクト",
+        "大判",
+        "省スペース",
+        "立てて収納"
+      ]
+    },
+    {
+      "id": "maintenance",
+      "label": "お手入れのしやすさ",
+      "keywords": [
+        "食洗機対応",
+        "漂白除菌",
+        "乾きやすい"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "maintenance",
+      "material"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0FPFMC116",
+      "asin": "B0FPFMC116",
+      "amazon_title": "【雑誌Cookpad plus掲載品】 まな板 日本製 滑り止め W抗菌加工 食洗機対応 (オールドレース×カーキ, 31×21cm)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71sePABtGiL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.685,
+      "matched_comparison_axes": [
+        "maintenance",
+        "material"
+      ],
+      "search_key": "まな板 日本製 滑り止め W抗菌加工 食洗機対応 (オールドレー"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0H65MVVX3",
+      "asin": "B0H65MVVX3",
+      "amazon_title": "まな板 黒 カッティングボード エラストマー製 かまぼこ型 半円 フチ付き 抗菌 耐熱 食洗機対応",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71grxMgPA6L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "maintenance"
+      ],
+      "search_key": "まな板 黒 カッティングボード エラストマー製 かまぼこ型 半円"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GDQFQZ67",
+      "asin": "B0GDQFQZ67",
+      "amazon_title": "MUAMUA まな板 エラストマー 丸い 食洗機対応 まないた ゴム 滑らない 抗菌 耐熱 マナイタ 曲がる 静音 カッティングボード キッチン",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51YCs61MQ3L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "maintenance"
+      ],
+      "search_key": "MUAMUA まな板 エラストマー 丸い 食洗機対応 まないた"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0FWXT5FGP",
+      "asin": "B0FWXT5FGP",
+      "amazon_title": "MUAMUA まな板 エラストマー ゴム まな板シート まないた 滑らない 食洗機対応 耐熱 両面使える 肉用 抗菌 カッティングボード キッチン",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/610dQ+FWB1L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "maintenance"
+      ],
+      "search_key": "MUAMUA まな板 エラストマー ゴム まな板シート まないた"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0FQSX63QH",
+      "asin": "B0FQSX63QH",
+      "amazon_title": "Ra Le-Na まな板 【主婦500名と開発した究極のまな板】滑らない 抗菌 食洗機対応 両面使える 刃にやさしい 傷つきにくい 静音設計 カッティングボード 軽量 Mサイズ 黒",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61NM7cfEUAL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "maintenance"
+      ],
+      "search_key": "Ra Le-Na まな板 滑らない 抗菌 食洗機対応 両面使える"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0DSJBT1FJ",
+      "asin": "B0DSJBT1FJ",
+      "amazon_title": "MUAMUA まな板 エラストマー かまぼこ型 食洗機対応 まないた ゴム D型 半円 滑らない 丸い 抗菌 耐熱 カッティングボード マナイタ",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51X-sDKbOXL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "maintenance"
+      ],
+      "search_key": "MUAMUA まな板 エラストマー かまぼこ型 食洗機対応 まな"
+    }
+  ]
+}

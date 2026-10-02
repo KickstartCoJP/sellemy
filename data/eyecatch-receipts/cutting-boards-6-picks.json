@@ -1,0 +1,12 @@
+{
+  "generation_method": "generative_ai",
+  "provider": "openai",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "operation_id": "sellemy-eyecatch-cutting-boards-6-picks-5dcd1a991268066f",
+  "request_sha256": "5dcd1a991268066ff91e3148ddbb25566a0691069fc13aff7724498e966db0d3",
+  "image_sha256": "d2050d57c0b3cef107c654da80d7dce42ecad62778ef830f4167de417d0ed186",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-10-02T07:36:16.393062+00:00"
+}
