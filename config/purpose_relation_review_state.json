@@ -1,0 +1,121 @@
+{
+  "schema": "sellemy-purpose-relation-review-state/v1",
+  "source_task_id": "TASK-BU002-PURPOSE-OPS-BOOTSTRAP-001",
+  "source_message_id": "PROGRESS-BU002-PURPOSE-SEMANTIC-REVIEW-20261001-001",
+  "reviewed_at": "2026-10-01T13:00:04.740464+00:00",
+  "policy": "Suppress a rejected article only while slug/title/summary/category fingerprint is unchanged; changed content returns to semantic review.",
+  "rejected_articles": [
+    {
+      "slug": "4k-liquid-crystal-tvs-6-picks",
+      "article_fingerprint": "b1dff2c290b59445c128593373063898e72289a95967f9d1f638856afafa5cca"
+    },
+    {
+      "slug": "action-cameras-6-picks",
+      "article_fingerprint": "472232c139708a7f98ab340d49ebf0aabd51c6c84f0821a9f7aeeb175f5b8f95"
+    },
+    {
+      "slug": "autumn-winter-face-masks-6-picks",
+      "article_fingerprint": "e19516dafdf593f1bc4cd866045bb99b84e9f07ccb3a28b21e30cfb8dca734cb"
+    },
+    {
+      "slug": "beauty-collagen-supplements-6-picks",
+      "article_fingerprint": "69c21773d66825be7775c59617e3c90e17112b0674abbc12c765c3d52903c264"
+    },
+    {
+      "slug": "ceiling-lights-6-picks",
+      "article_fingerprint": "8d5f94a6f261f509a5f28e2ee88ef1561457d81d10e7310855954a3c9e6922e6"
+    },
+    {
+      "slug": "dash-cameras-6-picks",
+      "article_fingerprint": "ce3ef2d3f5668a571867712197d885c6e6da4b2b8f33d7c19761bb51a255550d"
+    },
+    {
+      "slug": "dog-winter-clothes-6-picks",
+      "article_fingerprint": "83f22f019b14e53e6db2e33758e4e87320e59f7d81030c2006b13db89d1e062c"
+    },
+    {
+      "slug": "down-jackets-6-picks",
+      "article_fingerprint": "798b0091065de211a40f7966b1d94dcfccadde184c5ecbce441e20f5e408ea11"
+    },
+    {
+      "slug": "electric-tire-inflators-6-picks",
+      "article_fingerprint": "994eb237d7fb9a79274b34938beaaae2627f9f4dc5f285427de3512caa182336"
+    },
+    {
+      "slug": "halloween-party-goods-6-picks",
+      "article_fingerprint": "28530219c0990758d217d45c2051acc708ed1e7ddae5211fe66f710853b3b97b"
+    },
+    {
+      "slug": "heated-gloves-6-picks",
+      "article_fingerprint": "578309584313c12d7dd591a2e7394b22850725d37012d4f8cfb0323ae32a9ddf"
+    },
+    {
+      "slug": "heated-vests-6-picks",
+      "article_fingerprint": "80c950a640fd9c41b0fe5871230c14ae3695411a715ce14074d9330240a7e267"
+    },
+    {
+      "slug": "home-water-servers-6-picks",
+      "article_fingerprint": "cf83ac19fbb7308415e1958219a78660371e5f3aa2fce41e0dbb4d8bff94beec"
+    },
+    {
+      "slug": "iphone-book-type-cases-6-picks",
+      "article_fingerprint": "b386f65abbe424ae55ee3d7942e0b5bf69843d157c5ce4ee97a71d1a4db254ad"
+    },
+    {
+      "slug": "laptops-6-picks",
+      "article_fingerprint": "f00787ebf95ead1eccad4560fe6c7794cd8d1b6ae143cac7bebb447c16e858b1"
+    },
+    {
+      "slug": "led-lanterns-for-autumn-outings-6-picks",
+      "article_fingerprint": "b62c31eae5bfcdcb5019adbfdfcb3a29bcf393d93d509cf68671cf5268f2e101"
+    },
+    {
+      "slug": "medicated-hand-soaps-6-picks",
+      "article_fingerprint": "85769e43164b8a4fb442aa17246d4a64b43db0c7872efd6e5ee01dd799a02eb2"
+    },
+    {
+      "slug": "open-ear-wireless-earbuds-6-picks",
+      "article_fingerprint": "8721ec6adb18820f936e138eb8ee91ce532803fb0054fa5c3962a56c16aaf2ca"
+    },
+    {
+      "slug": "osechi-jubako-boxes-6-picks",
+      "article_fingerprint": "2f16e10b742859be11836bc00fd8c4de69fcdcd6f4bda2c047c69d65cc277d74"
+    },
+    {
+      "slug": "oseibo-gift-sets-6-picks",
+      "article_fingerprint": "42e78ef9489bdc9b29d93b92da26f24c47e0147ae1e69f2c52d396c85642006b"
+    },
+    {
+      "slug": "scalp-massagers-6-picks",
+      "article_fingerprint": "374af01dc444a773b0b467ce22af398c51c2559b022495766e4f0c1946f4fbb2"
+    },
+    {
+      "slug": "smart-speakers-6-picks",
+      "article_fingerprint": "1f00fa4fb5706d392cfce9c07700e5f35b1dc011aeeac659d1b86e1004129ddd"
+    },
+    {
+      "slug": "streaming-media-players-6-picks",
+      "article_fingerprint": "7f7a3fa898e4e719065540ae76832954642bbc1a3eac7f1f28e7447646f30c7e"
+    },
+    {
+      "slug": "tablets-6-picks",
+      "article_fingerprint": "f06eb83604894cef858b4e3dacfcaa756634b0f56e080fd12d901a3c8f83225d"
+    },
+    {
+      "slug": "warm-knit-gloves-6-picks",
+      "article_fingerprint": "7289b08b6abe110798337689935c9dbe590d86f9aac7b7584e2773a781629c81"
+    },
+    {
+      "slug": "whitening-toothpaste-6-picks",
+      "article_fingerprint": "6a91d3006c30cdc6c6e1f45197916c85910da94eaf2d178ebe3824101dc97ad5"
+    },
+    {
+      "slug": "winter-scarves-mufflers-6-picks",
+      "article_fingerprint": "80831bdac5f51bbcfd01e9baa907133e92f67dd9ad4ff7db999f7b41289f98b5"
+    },
+    {
+      "slug": "wireless-game-controllers-6-picks",
+      "article_fingerprint": "9cdf431f8a01f23888524c5054a3828721afa2b241557cbe4b407a18bd1b605b"
+    }
+  ]
+}

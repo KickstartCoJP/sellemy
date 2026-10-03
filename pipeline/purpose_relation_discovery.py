@@ -13,6 +13,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 ARTICLES = ROOT / 'json' / 'articles.json'
 SEED = ROOT / 'config' / 'purpose_relation_seed.json'
+REVIEW_STATE = ROOT / 'config' / 'purpose_relation_review_state.json'
 DEFAULT_OUT = Path.home() / 'Library/Application Support/Sellemy/purpose-discovery/latest.json'
 
 TOKEN_RE = re.compile(r'[a-z0-9]+', re.I)
@@ -83,11 +84,26 @@ def build_feature_profiles(seed_relations: list[dict[str, Any]], by_slug: dict[s
     return profiles
 
 
+
+def article_fingerprint(row: dict[str, Any]) -> str:
+    payload={k:row.get(k) for k in ('slug','title','summary','category')}
+    return hashlib.sha256(json.dumps(payload,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode()).hexdigest()
+
+
+def load_negative_review_state() -> dict[str,str]:
+    if not REVIEW_STATE.is_file():
+        return {}
+    raw=json.loads(REVIEW_STATE.read_text(encoding='utf-8'))
+    rows=raw.get('rejected_articles',[]) if isinstance(raw,dict) else []
+    return {str(r.get('slug')):str(r.get('article_fingerprint')) for r in rows if r.get('slug') and r.get('article_fingerprint')}
+
 def run(*, output: Path=DEFAULT_OUT) -> dict[str,Any]:
     published,source=load_articles(); by_slug={r.get('slug'):r for r in published if r.get('slug')}
     seed=json.loads(SEED.read_text(encoding='utf-8'))
     seed_relations=seed.get('relations',[])
     profiles=build_feature_profiles(seed_relations,by_slug)
+    negative_review=load_negative_review_state()
+    suppressed_rejected=[]
     relations=[]; seen=set()
     # Preserve reviewed baseline exactly when the article still exists.
     for rel in seed_relations:
@@ -98,6 +114,10 @@ def run(*, output: Path=DEFAULT_OUT) -> dict[str,Any]:
     candidates=[]
     for slug,row in by_slug.items():
         if slug in seed_slugs: continue
+        reviewed_fingerprint=negative_review.get(slug)
+        if reviewed_fingerprint and reviewed_fingerprint==article_fingerprint(row):
+            suppressed_rejected.append(slug)
+            continue
         bag=Counter(tokens(article_text(row)))
         # Weight article terms with the same feature-frequency IDF used by profiles.
         feature_count=max(1,len(profiles))
@@ -169,6 +189,8 @@ def run(*, output: Path=DEFAULT_OUT) -> dict[str,Any]:
         'source_snapshot':source,'mode':'read_only_local','production_write':False,
         'local_processing':{
             'reviewed_seed_relations':sum(r.get('source')=='reviewed_seed' for r in relations),
+            'negative_review_state_count':len(negative_review),
+            'negative_review_suppressed_count':len(suppressed_rejected),
             'auto_relations':sum(r.get('source')=='local_auto' for r in relations),
             'semantic_review_candidates':sum(c['candidate_state']=='semantic_review' for c in candidates),
             'semantic_review_unique_articles':len(semantic_review_queue),
@@ -183,6 +205,7 @@ def run(*, output: Path=DEFAULT_OUT) -> dict[str,Any]:
         },
         'per_feature':sorted(per_feature,key=lambda x:x['feature_id']),
         'orphans':sorted(published_slugs-mapped),
+        'suppressed_rejected_articles':sorted(suppressed_rejected),
         'overlap_summary':overlaps[:20],
         'semantic_review_queue':semantic_review_queue,
         'new_article_candidates':sorted(candidates,key=lambda x:(x['slug'],-x['score'],x['feature_id'])),
