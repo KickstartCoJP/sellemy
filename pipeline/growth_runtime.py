@@ -26,6 +26,7 @@ from publish_gate import (
 from purpose_relation_discovery import run as run_purpose_relation_discovery
 from product_selection import dedupe_content_products, select_six
 from publish_payload import run as publish_payload
+from production_deploy import verify as verify_production_deploy, ProductionDeployError
 from qa import run_qa
 from renderer import render_article
 from review_gate import run_review_gate
@@ -200,6 +201,10 @@ def _publish(slug: str, category: str) -> str:
         raise GrowthRuntimeError(f'git push origin main failed: {detail}')
     if head != _git('rev-parse', 'origin/main') or _git('status', '--porcelain'):
         raise GrowthRuntimeError('post-push verification failed: HEAD/origin/main/clean mismatch')
+    try:
+        verify_production_deploy(slug, category, head)
+    except ProductionDeployError as exc:
+        raise GrowthRuntimeError(f'production deploy/read-back failed: {exc}') from exc
     return head
 
 
