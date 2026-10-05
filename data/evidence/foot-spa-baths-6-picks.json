@@ -1,0 +1,132 @@
+{
+  "slug": "foot-spa-baths-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/foot-spa-baths-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/foot-spa-baths-6-picks/foot-spa-baths-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "heating_function",
+      "label": "加温・バブル機能",
+      "keywords": [
+        "温度調整",
+        "バブル",
+        "振動マッサージ"
+      ]
+    },
+    {
+      "id": "capacity_size",
+      "label": "容量・サイズ",
+      "keywords": [
+        "深さ",
+        "足の大きさ",
+        "設置スペース"
+      ]
+    },
+    {
+      "id": "cleaning",
+      "label": "お手入れのしやすさ",
+      "keywords": [
+        "排水口",
+        "取り外し",
+        "丸洗い"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "cleaning",
+      "heating_function"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0HF7GWCBQ",
+      "asin": "B0HF7GWCBQ",
+      "amazon_title": "フットバス 足湯 深め 保温 足湯器 足浴 足湯バケツ 電動 もみ玉 温度加減機能 排水口 タイマー機能 深型タイプ",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61EPJ+CrXIL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.53,
+      "matched_comparison_axes": [
+        "cleaning"
+      ],
+      "search_key": "フットバス 足湯 深め 保温 足湯器 足浴 足湯バケツ 電動 も"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HBWDGRV1",
+      "asin": "B0HBWDGRV1",
+      "amazon_title": "ALLJOY フットバス 折りたたみ 保温機能付き 足湯器 バブル機能 35℃～48℃の温度調節 6段階タイマー デジタルパネル 過熱防止 電動足湯器 コンパクト収納 ローラー 軽石付き 角質除去 足の冷え対策 リラックスグッズ 敬老の日 プレゼント",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71Z4iLogxGL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.53,
+      "matched_comparison_axes": [
+        "heating_function"
+      ],
+      "search_key": "ALLJOY フットバス 折りたたみ 保温機能付き 足湯器 バブ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0H8SDNF4X",
+      "asin": "B0H8SDNF4X",
+      "amazon_title": "折り畳め フットバス 足湯 保温",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71eb-+v36aL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "折り畳め フットバス 足湯 保温"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0H6PFDMQ6",
+      "asin": "B0H6PFDMQ6",
+      "amazon_title": "折り畳みフットバス 大容量 蓋付き 持ち運び 省スペース保管 スマホスタンド完備 電池不要 リラックス アウトドア 自宅 (ホワイト)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41jsfIZe4BL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [],
+      "search_key": "折り畳みフットバス 大容量 蓋付き 持ち運び 省スペース保管 ス"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0FRZCB1FN",
+      "asin": "B0FRZCB1FN",
+      "amazon_title": "Rozeta 折りたたみフットバス 足湯器 保温・加熱機能付き リモコン操作 35～48℃温度調節 タイマー自動 停止（10～60分） 6つのローラー＆軽石付き 角質ケア 折りたたみ収納 敬老の日 プレゼントにも最適",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71yyGTe0wuL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "heating_function"
+      ],
+      "search_key": "Rozeta 折りたたみフットバス 足湯器 保温・加熱機能付き"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0GR8CR1GY",
+      "asin": "B0GR8CR1GY",
+      "amazon_title": "足湯 足湯器 フットバス 保温機能付き 折りたたみ バブル機能 自動オフ 水と電気分離 赤色ライト 3 つの美足置き換え 持ち運びハンドル静音設計 日本語取扱説明",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71j3MyoZkHL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "heating_function"
+      ],
+      "search_key": "足湯 足湯器 フットバス 保温機能付き 折りたたみ バブル機能"
+    }
+  ]
+}
