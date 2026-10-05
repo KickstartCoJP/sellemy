@@ -178,6 +178,8 @@ class RuntimeFailClosedTests(unittest.TestCase):
         controller.current_state.return_value = {'publish_paused': False, 'target_per_day': 2}
         return controller
 
+    @patch.object(growth_runtime, 'unresolved_pending', return_value=[])
+    @patch.object(growth_runtime, '_has_valid_chat_eyecatch', return_value=True)
     @patch.object(growth_runtime, 'require_clean_current_main', return_value='abc')
     @patch.object(growth_runtime, 'select_viable_topic', return_value=({'slug': 'x', 'category': 'gadget', 'query': 'x', 'title': 'x', 'comparison_axes': [{'id': 'use', 'label': '用途'}]}, [{'asin': f'B0TEST{i:04d}'} for i in range(6)], []))
     @patch.object(growth_runtime, 'select_six', return_value=([{'asin': f'B0TEST{i:04d}'} for i in range(6)], {}))
@@ -206,6 +208,8 @@ class RuntimeFailClosedTests(unittest.TestCase):
         topic = {'slug': 'test-widgets-6-picks', 'category': 'gadget', 'query': 'x', 'title': 'x', 'comparison_axes': [{'id': 'use', 'label': '用途'}]}
         products = [{'asin': f'B0TEST{i:04d}'} for i in range(6)]
         with (
+            patch.object(growth_runtime, 'unresolved_pending', return_value=[]),
+            patch.object(growth_runtime, '_has_valid_chat_eyecatch', return_value=True),
             patch.object(growth_runtime, 'require_clean_current_main', return_value='abc'),
             patch.object(growth_runtime, 'select_viable_topic', return_value=(topic, products, [])),
             patch.object(growth_runtime, 'select_six', return_value=(products, {})),
@@ -252,6 +256,9 @@ class RuntimeFailClosedTests(unittest.TestCase):
         controller.evaluate_and_record.return_value = ({'event_id': 'feedback-1'}, {'target_per_day': 2})
         gate = nullcontext({'head_after': 'base', 'origin_main': 'base', 'clean': True})
         with (
+            patch.object(growth_runtime, 'unresolved_pending', return_value=[]),
+            patch.object(growth_runtime, 'unresolved_pending', return_value=[]),
+            patch.object(growth_runtime, '_has_valid_chat_eyecatch', return_value=True),
             patch.object(growth_runtime, 'require_clean_current_main', return_value='base'),
             patch.object(growth_runtime, 'select_viable_topic', return_value=(topic, products, [])),
             patch.object(growth_runtime, 'select_six', return_value=(products, {})),
@@ -278,6 +285,8 @@ class RuntimeFailClosedTests(unittest.TestCase):
         controller.current_state.return_value = {'publish_paused': False, 'target_per_day': 2}
         controller.evaluate_and_record.return_value = ({'event_id': 'feedback-1'}, {'target_per_day': 2})
         with (
+            patch.object(growth_runtime, 'unresolved_pending', return_value=[]),
+            patch.object(growth_runtime, '_has_valid_chat_eyecatch', return_value=True),
             patch.object(growth_runtime, 'require_clean_current_main', return_value='abc'),
             patch.object(growth_runtime, 'select_viable_topic', return_value=(topic, products, [])),
             patch.object(growth_runtime, 'select_six', return_value=(products, {})),
@@ -306,3 +315,69 @@ class AmazonSearchDiscoveryTests(unittest.TestCase):
         self.assertEqual([row['asin'] for row in rows], ['B012345678', 'B087654321'])
         self.assertEqual(rows[0]['title'], '商品 A')
         self.assertEqual(rows[0]['image_url'], 'https://example.com/a.jpg')
+
+class ProductContentIdentityTests(unittest.TestCase):
+    def test_content_dedupe_rejects_same_title_with_different_asin(self):
+        rows = [
+            {'asin': 'B0AAAA0001', 'amazon_title': '同じ 商品 タイトル', 'image_url': 'https://m.media-amazon.com/images/I/a._AC_UL320_.jpg'},
+            {'asin': 'B0BBBB0002', 'amazon_title': '同じ　商品タイトル', 'image_url': 'https://m.media-amazon.com/images/I/b._AC_UL320_.jpg'},
+        ]
+        kept, removed = growth_runtime.dedupe_content_products(rows)
+        self.assertEqual([x['asin'] for x in kept], ['B0AAAA0001'])
+        self.assertEqual(removed[0]['duplicate_of_asin'], 'B0AAAA0001')
+        self.assertEqual(removed[0]['reason'], 'normalized_title_exact')
+
+    def test_content_dedupe_rejects_same_canonical_amazon_image(self):
+        rows = [
+            {'asin': 'B0AAAA0001', 'amazon_title': '商品 A', 'image_url': 'https://m.media-amazon.com/images/I/abc._AC_UL320_.jpg'},
+            {'asin': 'B0BBBB0002', 'amazon_title': '商品 B', 'image_url': 'https://m.media-amazon.com/images/I/abc._AC_UL640_.jpg'},
+        ]
+        kept, removed = growth_runtime.dedupe_content_products(rows)
+        self.assertEqual([x['asin'] for x in kept], ['B0AAAA0001'])
+        self.assertEqual(removed[0]['reason'], 'canonical_image_exact')
+
+class EvidenceContentDuplicateGateTests(unittest.TestCase):
+    def test_evidence_validation_rejects_content_duplicate_across_different_asins(self):
+        evidence = valid_evidence()
+        evidence['products'][1]['amazon_title'] = evidence['products'][0]['amazon_title']
+        evidence['products'][1]['image_url'] = 'https://example.com/other.jpg'
+        from payload_schema import PayloadValidationError, validate_evidence
+        with self.assertRaisesRegex(PayloadValidationError, 'content-duplicate title'):
+            validate_evidence(evidence)
+
+class OwnerEyecatchBridgeTests(unittest.TestCase):
+    def test_unresolved_owner_eyecatch_blocks_new_topic_before_admission(self):
+        controller = Mock()
+        controller.current_state.return_value = {'publish_paused': False, 'target_per_day': 48}
+        with (
+            patch.object(growth_runtime, 'unresolved_pending', return_value=[{'slug': 'pending-slug'}]),
+            patch.object(growth_runtime, 'select_viable_topic') as planning,
+        ):
+            result = growth_runtime.run(publish=True, scheduled=True, report_path=None, controller=controller)
+        self.assertEqual(result['status'], 'awaiting_owner_eyecatch')
+        self.assertEqual(result['pending_eyecatch']['slug'], 'pending-slug')
+        planning.assert_not_called()
+        controller.admit_scheduled.assert_not_called()
+
+    def test_missing_chat_eyecatch_routes_exact_article_to_owner_and_stops_before_apply(self):
+        topic = {'slug': 'owner-eyecatch-test', 'category': 'gadget', 'query': 'x', 'title': 'Owner Eyecatch Test', 'comparison_axes': [{'id': 'use', 'label': '用途'}]}
+        products = [{'asin': f'B0TEST{i:04d}'} for i in range(6)]
+        controller = Mock()
+        controller.current_state.return_value = {'publish_paused': False, 'target_per_day': 2}
+        with (
+            patch.object(growth_runtime, 'unresolved_pending', return_value=[]),
+            patch.object(growth_runtime, 'require_clean_current_main', return_value='abc'),
+            patch.object(growth_runtime, 'select_viable_topic', return_value=(topic, products, [])),
+            patch.object(growth_runtime, 'select_six', return_value=(products, {})),
+            patch.object(growth_runtime, 'build_evidence', return_value=valid_evidence()),
+            patch.object(growth_runtime, 'invoke_writer', return_value=(valid_payload(), {'runtime': 'test'})),
+            patch.object(growth_runtime, 'evaluate_candidate', return_value=('html', [], {'overall_pass': True})),
+            patch.object(growth_runtime, '_has_valid_chat_eyecatch', return_value=False),
+            patch.object(growth_runtime, 'ensure_owner_request', return_value={'task_id': 'TASK-X', 'queued': True}) as owner_request,
+            patch.object(growth_runtime, 'publish_payload') as publish_stage,
+        ):
+            result = growth_runtime.run(publish=True, scheduled=False, report_path=None, controller=controller)
+        self.assertEqual(result['status'], 'awaiting_owner_eyecatch')
+        self.assertEqual(result['owner_eyecatch_request']['task_id'], 'TASK-X')
+        owner_request.assert_called_once()
+        publish_stage.assert_not_called()

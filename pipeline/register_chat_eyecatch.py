@@ -11,6 +11,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+PENDING_ROOT = Path.home() / 'Library/Application Support/Sellemy/pending-eyecatch'
 
 
 def sha256_bytes(raw: bytes) -> str:
@@ -33,13 +34,18 @@ def atomic_write(path: Path, raw: bytes) -> None:
     os.replace(tmp, path)
 
 
-def register(slug: str, source: Path, *, chat_ref: str = '') -> dict:
+def register(slug: str, source: Path, *, chat_ref: str = '', pending: bool = False) -> dict:
     raw = source.read_bytes()
     width, height = png_dimensions(raw)
     if (width, height) != (1536, 1024):
         raise ValueError(f'ChatGPT eyecatch dimensions must be 1536x1024, got {width}x{height}')
-    target = ROOT / 'img' / slug / f'{slug}.png'
-    receipt_path = ROOT / 'data' / 'eyecatch-receipts' / f'{slug}.json'
+    if pending:
+        pending_dir = PENDING_ROOT / slug
+        target = pending_dir / 'eyecatch.png'
+        receipt_path = pending_dir / 'receipt.json'
+    else:
+        target = ROOT / 'img' / slug / f'{slug}.png'
+        receipt_path = ROOT / 'data' / 'eyecatch-receipts' / f'{slug}.json'
     atomic_write(target, raw)
     receipt = {
         'generation_method': 'chatgpt_chat',
@@ -51,7 +57,12 @@ def register(slug: str, source: Path, *, chat_ref: str = '') -> dict:
         'chat_ref': chat_ref or None,
     }
     atomic_write(receipt_path, (json.dumps(receipt, ensure_ascii=False, indent=2) + '\n').encode())
-    return {'eyecatch_path': str(target.relative_to(ROOT)), 'receipt_path': str(receipt_path.relative_to(ROOT)), 'receipt': receipt}
+    def shown(path: Path) -> str:
+        try:
+            return str(path.relative_to(ROOT))
+        except ValueError:
+            return str(path)
+    return {'eyecatch_path': shown(target), 'receipt_path': shown(receipt_path), 'receipt': receipt, 'pending': pending}
 
 
 def main() -> None:
@@ -59,8 +70,9 @@ def main() -> None:
     parser.add_argument('slug')
     parser.add_argument('source')
     parser.add_argument('--chat-ref', default='')
+    parser.add_argument('--pending', action='store_true')
     args = parser.parse_args()
-    print(json.dumps(register(args.slug, Path(args.source), chat_ref=args.chat_ref), ensure_ascii=False, indent=2))
+    print(json.dumps(register(args.slug, Path(args.source), chat_ref=args.chat_ref, pending=args.pending), ensure_ascii=False, indent=2))
 
 
 if __name__ == '__main__':

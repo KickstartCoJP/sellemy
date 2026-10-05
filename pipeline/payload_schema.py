@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import re
+import unicodedata
+from urllib.parse import urlsplit, urlunsplit
 
 from category_metadata import CATEGORIES
 
@@ -11,6 +13,20 @@ REQUIRED_EVIDENCE_FIELDS = ('slug', 'category', 'canonical_url', 'eyecatch_image
 REQUIRED_EVIDENCE_PRODUCT_FIELDS = ('ref', 'product_id', 'asin', 'image_url', 'amazon_title')
 PRODUCT_COUNT = 6
 ASIN_RE = re.compile(r'^[A-Z0-9]{10}$')
+
+
+def _normalize_product_title(value: str) -> str:
+    value = unicodedata.normalize('NFKC', str(value or '')).lower()
+    return re.sub(r'[^0-9a-zぁ-んァ-ヶ一-龥]+', '', value)
+
+
+def _canonical_product_image(value: str) -> str:
+    raw = str(value or '').strip()
+    if not raw:
+        return ''
+    parts = urlsplit(raw)
+    path = re.sub(r'\._[^/]+_(?=\.[A-Za-z0-9]+$)', '', parts.path)
+    return urlunsplit((parts.scheme.lower(), parts.netloc.lower(), path, '', ''))
 
 
 class PayloadValidationError(Exception):
@@ -95,6 +111,7 @@ def validate_evidence(evidence: dict) -> None:
     if not isinstance(products, list) or len(products) != PRODUCT_COUNT:
         raise PayloadValidationError(f'evidence.products must contain exactly {PRODUCT_COUNT} entries')
     seen_asins, seen_refs = set(), set()
+    seen_titles, seen_images = {}, {}
     for i, product in enumerate(products):
         for field in REQUIRED_EVIDENCE_PRODUCT_FIELDS:
             if field not in product:
@@ -108,6 +125,20 @@ def validate_evidence(evidence: dict) -> None:
         if asin in seen_asins:
             raise PayloadValidationError(f'evidence.products has duplicate asin: {asin}')
         seen_asins.add(asin)
+        title_key = _normalize_product_title(product.get('amazon_title') or '')
+        image_key = _canonical_product_image(product.get('image_url') or '')
+        if title_key and title_key in seen_titles:
+            raise PayloadValidationError(
+                f'evidence.products has content-duplicate title: {asin} duplicates {seen_titles[title_key]}'
+            )
+        if image_key and image_key in seen_images:
+            raise PayloadValidationError(
+                f'evidence.products has content-duplicate image: {asin} duplicates {seen_images[image_key]}'
+            )
+        if title_key:
+            seen_titles[title_key] = asin
+        if image_key:
+            seen_images[image_key] = asin
         if product['ref'] in seen_refs:
             raise PayloadValidationError(f'evidence.products has duplicate ref: {product["ref"]}')
         seen_refs.add(product['ref'])

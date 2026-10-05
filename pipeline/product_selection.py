@@ -1,6 +1,51 @@
 from __future__ import annotations
 
 from analytics_feedback import product_signal
+import re
+import unicodedata
+from urllib.parse import urlsplit, urlunsplit
+
+
+def _normalize_identity_text(value: str) -> str:
+    value = unicodedata.normalize('NFKC', str(value or '')).lower()
+    return re.sub(r'[^0-9a-zぁ-んァ-ヶ一-龥]+', '', value)
+
+
+def _canonical_image_url(value: str) -> str:
+    raw = str(value or '').strip()
+    if not raw:
+        return ''
+    parts = urlsplit(raw)
+    path = re.sub(r'\._[^/]+_(?=\.[A-Za-z0-9]+$)', '', parts.path)
+    return urlunsplit((parts.scheme.lower(), parts.netloc.lower(), path, '', ''))
+
+
+def content_identity(candidate: dict) -> tuple[str, str]:
+    return (_normalize_identity_text(candidate.get('amazon_title') or ''), _canonical_image_url(candidate.get('image_url') or ''))
+
+
+def dedupe_content_products(candidates: list[dict]) -> tuple[list[dict], list[dict]]:
+    kept, removed = [], []
+    seen_titles: dict[str, str] = {}
+    seen_images: dict[str, str] = {}
+    for candidate in candidates:
+        title_key, image_key = content_identity(candidate)
+        duplicate_of = None
+        reason = None
+        if title_key and title_key in seen_titles:
+            duplicate_of, reason = seen_titles[title_key], 'normalized_title_exact'
+        elif image_key and image_key in seen_images:
+            duplicate_of, reason = seen_images[image_key], 'canonical_image_exact'
+        if duplicate_of:
+            removed.append({'asin': candidate.get('asin'), 'duplicate_of_asin': duplicate_of, 'reason': reason})
+            continue
+        asin = str(candidate.get('asin') or '')
+        if title_key:
+            seen_titles[title_key] = asin
+        if image_key:
+            seen_images[image_key] = asin
+        kept.append(candidate)
+    return kept, removed
 
 
 class ProductSelectionError(RuntimeError):
@@ -17,12 +62,16 @@ def _axis_matches(candidate: dict, axes: list[dict]) -> set[str]:
 
 
 def select_six(candidates: list[dict], topic: dict, feedback: dict) -> tuple[list[dict], dict]:
-    if len(candidates) < 6:
-        raise ProductSelectionError(f'product evidence incomplete: found {len(candidates)}, require at least 6')
+    distinct_candidates, removed_duplicates = dedupe_content_products(candidates)
+    if len(distinct_candidates) < 6:
+        raise ProductSelectionError(
+            f'product evidence incomplete after content dedupe: found {len(distinct_candidates)} distinct products, '
+            f'require at least 6; removed={removed_duplicates}'
+        )
     axes = topic['comparison_axes']
-    remaining = list(candidates)
+    remaining = list(distinct_candidates)
     selected, brands, covered = [], set(), set()
-    prices = sorted(p['observed_price'] for p in candidates if p.get('observed_price') is not None)
+    prices = sorted(p['observed_price'] for p in distinct_candidates if p.get('observed_price') is not None)
     median = prices[len(prices) // 2] if prices else None
     while remaining and len(selected) < 6:
         scored = []
@@ -44,4 +93,4 @@ def select_six(candidates: list[dict], topic: dict, feedback: dict) -> tuple[lis
         covered.update(matches)
     if len(selected) != 6:
         raise ProductSelectionError('could not select six unique products')
-    return selected, {'comparison_axes_covered': sorted(covered), 'brand_count': len(brands), 'price_used_as_constraint_only': True}
+    return selected, {'comparison_axes_covered': sorted(covered), 'brand_count': len(brands), 'price_used_as_constraint_only': True, 'content_duplicates_removed': removed_duplicates}
