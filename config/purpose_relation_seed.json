@@ -2445,6 +2445,16 @@
       "relation_type": "core",
       "confidence": 0.9,
       "rationale": "semantic review accepted 2026-10-01"
+    },
+    {
+      "feature_id": "PH-DESK",
+      "feature_title": "デスク環境を整える",
+      "article_id": "usb-condenser-microphones-6-picks",
+      "slug": "usb-condenser-microphones-6-picks",
+      "article_title": "在宅配信・会議を高音質に！USBコンデンサーマイク6選",
+      "relation_type": "supporting",
+      "confidence": 0.82,
+      "rationale": "Owner-accepted semantic review 2026-10-03"
     }
   ],
   "orphans": [

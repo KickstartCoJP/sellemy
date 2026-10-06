@@ -1,0 +1,22 @@
+{
+  "schema": "sellemy-purpose-feature-implementation-seed/v1",
+  "note": "Bootstrap migration input. After a feature is applied, data/sellemy.db is the runtime source of truth for that feature.",
+  "features": [
+    {
+      "feature_id": "PH-DESK",
+      "slug": "desk-environment",
+      "title": "デスク環境を整える",
+      "purpose_statement": "仕事・学習・配信に使うデスク周りを、作業しやすく快適な環境へ整える。",
+      "scope_include": "デスク、椅子、モニター、照明、入力機器、接続機器、通信、会議・配信機器、デスク周辺の快適性を直接改善する商品記事。",
+      "scope_exclude": "リビング向け娯楽家電、車載用品、一般的な防寒着、デスク利用との関係が弱い生活家電。",
+      "intro": "在宅ワークや学習、配信では、机そのものだけでなく、画面の見やすさ、姿勢、配線、通信、音声環境まで整えると作業しやすさが変わります。この特集では、デスク周りを見直したいときに役立つ比較記事を、中心となるアイテムと周辺アイテムに分けてまとめます。",
+      "lifecycle_status": "published",
+      "navigation_visibility": "listed",
+      "seo_state": "index",
+      "seo_title": "デスク環境を整える｜作業・在宅ワークを快適にする特集 - Sellemy",
+      "meta_description": "デスク、椅子、モニター、照明、入力機器、USB-C周辺機器、Web会議・配信機器など、仕事や学習のデスク環境を整える比較記事をまとめたSellemyの特集です。",
+      "hero_image": "",
+      "editorial_priority": 10
+    }
+  ]
+}

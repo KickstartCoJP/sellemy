@@ -1,0 +1,89 @@
+{
+  "task_id": "TASK-BU002-PURPOSE-FEATURE-IMPLEMENTATION-20261006-001",
+  "feature_id": "PH-DESK",
+  "feature_slug": "desk-environment",
+  "slice_decision": "first safe slice: clear independent desk/work intent, accepted reviewed baseline, low cross-feature overlap, no URL/index-state deletion",
+  "base_head": "0ffb47750c95a7bff570d98e26dc8e19fc8b7b37",
+  "origin_main": "0ffb47750c95a7bff570d98e26dc8e19fc8b7b37",
+  "implementation": {
+    "articles_parent_rows_synced": 305,
+    "feature_rows": 1,
+    "relations": {
+      "total": 16,
+      "core": 12,
+      "supporting": 4
+    },
+    "new_accepted_delta": "usb-condenser-microphones-6-picks -> PH-DESK supporting",
+    "reverse_link_articles": 16,
+    "theme_pages": [
+      "themes/index.html",
+      "themes/desk-environment.html"
+    ],
+    "top_navigation": "/themes/ 目的から探す",
+    "sitemap_urls": [
+      "https://www.sellemy.jp/themes/",
+      "https://www.sellemy.jp/themes/desk-environment.html"
+    ],
+    "db_source_of_truth_transition": "migrated PH-DESK reads reviewed relations from DB; unmigrated features remain on reviewed seed"
+  },
+  "qa": {
+    "purpose_related_tests": "24 passed",
+    "full_suite": "183 passed, 2 failed; both failures reproduced unchanged on pristine base HEAD and are existing led-desk-lights Evidence duplicate-title failures",
+    "db_quick_check": "ok",
+    "legacy_foreign_key_violations_before": 166,
+    "legacy_foreign_key_violations_after": 166,
+    "new_purpose_table_fk_violations": 0,
+    "feature_canonical_count": 1,
+    "themes_index_canonical_count": 1,
+    "feature_breadcrumb": true,
+    "feature_article_links": 16,
+    "reverse_links_all_once": true,
+    "affiliate_links_18_each": true,
+    "article_body_immutable_after_related_block_strip": true,
+    "sitemap_entries_once_each": true,
+    "local_discovery_PH_DESK_relations": 16,
+    "local_discovery_PH_DESK_source": "reviewed_db",
+    "overlap": {
+      "PH-DRYNESS": 1,
+      "PH-HOUSEWORK": 1,
+      "PH-WARM-HOME": 1
+    },
+    "git_diff_check": "pass"
+  },
+  "rollback": {
+    "db_backup": "/Users/kickstart/Library/Application Support/Sellemy/purpose-feature-backups/sellemy-before-PH-DESK-20261007T000652.db",
+    "db_backup_sha256": "da51498cb9386b59b6ab75c8d9879e3db32ca0848a9cc74fe6afda894529c714",
+    "code_static_rollback": "git revert candidate commit before push, or restore base files; production push not performed"
+  },
+  "publish_state": "NOT_PUBLISHED_PENDING_SELLEMY_OPS_ACCEPTANCE",
+  "changed_files": [
+    "article/gadget/4k-desktop-monitors-6-picks.html",
+    "article/gadget/desk-foot-warmers-6-picks.html",
+    "article/gadget/ergonomic-office-chairs-6-picks.html",
+    "article/gadget/handheld-vacuum-cleaners-6-picks.html",
+    "article/gadget/led-desk-lights-6-picks.html",
+    "article/gadget/monitor-arms-6-picks.html",
+    "article/gadget/portable-monitors-6-picks.html",
+    "article/gadget/standing-desks-6-picks.html",
+    "article/gadget/usb-c-chargers-6-picks.html",
+    "article/gadget/usb-c-docking-stations-6-picks.html",
+    "article/gadget/usb-condenser-microphones-6-picks.html",
+    "article/gadget/usb-desktop-humidifiers-6-picks.html",
+    "article/gadget/webcams-6-picks.html",
+    "article/gadget/wifi-routers-6-picks.html",
+    "article/gadget/wireless-chargers-6-picks.html",
+    "article/gadget/wireless-keyboard-mouse-sets-6-picks.html",
+    "config/purpose_relation_seed.json",
+    "css/style.css",
+    "data/sellemy.db",
+    "index.html",
+    "pipeline/publish_payload.py",
+    "pipeline/purpose_relation_discovery.py",
+    "pipeline/renderer.py",
+    "sitemap.xml",
+    "config/purpose_features_seed.json",
+    "pipeline/purpose_feature_runtime.py",
+    "tests/test_purpose_feature_runtime.py",
+    "themes/"
+  ]
+}

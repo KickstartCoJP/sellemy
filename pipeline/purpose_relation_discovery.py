@@ -5,6 +5,7 @@ import hashlib
 import json
 import math
 import re
+import sqlite3
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -13,6 +14,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 ARTICLES = ROOT / 'json' / 'articles.json'
 SEED = ROOT / 'config' / 'purpose_relation_seed.json'
+DB = ROOT / 'data' / 'sellemy.db'
 REVIEW_STATE = ROOT / 'config' / 'purpose_relation_review_state.json'
 DEFAULT_OUT = Path.home() / 'Library/Application Support/Sellemy/purpose-discovery/latest.json'
 
@@ -97,10 +99,39 @@ def load_negative_review_state() -> dict[str,str]:
     rows=raw.get('rejected_articles',[]) if isinstance(raw,dict) else []
     return {str(r.get('slug')):str(r.get('article_fingerprint')) for r in rows if r.get('slug') and r.get('article_fingerprint')}
 
+
+
+def load_reviewed_relations(seed_relations: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Use DB as SoT for migrated Features; keep reviewed seed for unmigrated Features."""
+    if not DB.is_file():
+        return [{**r, '_source': 'reviewed_seed'} for r in seed_relations]
+    conn=sqlite3.connect(DB)
+    try:
+        tables={r[0] for r in conn.execute("select name from sqlite_master where type='table'")}
+        if not {'features','articles','article_feature_relations'} <= tables:
+            return [{**r, '_source': 'reviewed_seed'} for r in seed_relations]
+        migrated={r[0] for r in conn.execute('select feature_id from features')}
+        kept=[{**r, '_source':'reviewed_seed'} for r in seed_relations if r.get('feature_id') not in migrated]
+        sql=(
+            'SELECT f.feature_id,f.title,a.article_id,a.slug,a.title,r.relation_type,r.confidence,r.rationale '
+            'FROM article_feature_relations r '
+            'JOIN features f ON f.feature_id=r.feature_id '
+            'JOIN articles a ON a.article_id=r.article_id '
+            'WHERE r.active=1 ORDER BY f.feature_id,r.display_order,a.slug'
+        )
+        db_rows=conn.execute(sql).fetchall()
+        db_rel=[{
+            'feature_id':row[0],'feature_title':row[1],'article_id':row[2],'slug':row[3],'article_title':row[4],
+            'relation_type':row[5],'confidence':row[6],'rationale':row[7],'_source':'reviewed_db'
+        } for row in db_rows]
+        return kept + db_rel
+    finally:
+        conn.close()
+
 def run(*, output: Path=DEFAULT_OUT) -> dict[str,Any]:
     published,source=load_articles(); by_slug={r.get('slug'):r for r in published if r.get('slug')}
     seed=json.loads(SEED.read_text(encoding='utf-8'))
-    seed_relations=seed.get('relations',[])
+    seed_relations=load_reviewed_relations(seed.get('relations',[]))
     profiles=build_feature_profiles(seed_relations,by_slug)
     negative_review=load_negative_review_state()
     suppressed_rejected=[]
@@ -109,7 +140,7 @@ def run(*, output: Path=DEFAULT_OUT) -> dict[str,Any]:
     for rel in seed_relations:
         if rel.get('slug') not in by_slug: continue
         item={k:rel.get(k) for k in ('feature_id','feature_title','article_id','slug','article_title','relation_type','confidence','rationale')}
-        item['source']='reviewed_seed'; relations.append(item); seen.add((item['feature_id'],item['slug']))
+        item['source']=rel.get('_source','reviewed_seed'); relations.append(item); seen.add((item['feature_id'],item['slug']))
     seed_slugs={r.get('slug') for r in seed_relations}
     candidates=[]
     for slug,row in by_slug.items():

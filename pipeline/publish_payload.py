@@ -16,6 +16,7 @@ from affiliate_config import amazon_url
 from category_metadata import get_category
 from qa import run_qa
 from renderer import render_article
+from purpose_feature_runtime import article_related_features
 from review_gate import run_review_gate
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -284,7 +285,7 @@ def _require_codex_article_eyecatch(payload: dict, evidence: dict, output: Path)
 
 def run(slug: str, *, apply: bool, allow_existing: bool) -> dict:
     payload, evidence = _load(slug)
-    rendered = render_article(payload, evidence)
+    rendered = render_article(payload, evidence, related_features=article_related_features(slug))
     findings = run_review_gate(payload, evidence)
     qa = run_qa(rendered, payload, evidence)
     result = {'slug': slug, 'review_findings': [repr(finding) for finding in findings], 'qa': qa, 'applied': False}

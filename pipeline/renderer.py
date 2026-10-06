@@ -42,7 +42,15 @@ def _render_card(product_payload: dict, product_evidence: dict, amazon_tag: str)
     )
 
 
-def render_article(payload: dict, evidence: dict, *, today: date | None = None) -> str:
+
+def _render_related_features(features: list[dict]) -> str:
+    start='<!-- PURPOSE_RELATED_FEATURES_START -->'; end='<!-- PURPOSE_RELATED_FEATURES_END -->'
+    if not features:
+        return start + end
+    links=''.join(f'<li><a href="{html.escape(str(f["url"]))}">{html.escape(str(f["title"]))}</a></li>' for f in features[:3])
+    return start + f'<aside class="related-features"><h2>関連する目的</h2><ul>{links}</ul></aside>' + end
+
+def render_article(payload: dict, evidence: dict, *, today: date | None = None, related_features: list[dict] | None = None) -> str:
     """Insert Writer prose and evidence facts verbatim; never synthesize or pad copy."""
     validate_payload(payload)
     validate_evidence(evidence)
@@ -73,5 +81,6 @@ def render_article(payload: dict, evidence: dict, *, today: date | None = None) 
         f'<p class="lead">{html.escape(payload["lead"])}</p><p class="summary">{summary}</p><nav class="toc"><strong>比較軸から選ぶ</strong><ul>{"".join(toc)}</ul></nav>'
         + ''.join(sections)
         + f'<section id="how-to-choose"><div class="section-title"><h2>選ぶときのポイント</h2></div><p>{html.escape(payload["how_to_choose"])}</p><p class="conclusion">{html.escape(payload["conclusion"])}</p></section>'
-        f'</main><footer><p>&copy; {year} Sellemy. All rights reserved.</p></footer></body></html>'
+        + _render_related_features(related_features or [])
+        + f'</main><footer><p>&copy; {year} Sellemy. All rights reserved.</p></footer></body></html>'
     )
