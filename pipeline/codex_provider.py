@@ -180,7 +180,7 @@ def _refresh_brief(command: tuple[str, ...], model: str, session_id: str, root: 
         if not isinstance(learned, str):
             raise CodexProviderError('Codex brief refresh returned no learned text')
         learned = learned.strip()
-        if len(learned) > 1800:
+        if len(learned) > 1200:
             raise CodexProviderError('Codex brief refresh exceeded compactness limit')
         brief_path.write_text(BRIEF_FIXED + (learned or '- 追加の恒久知見なし。') + '\n', encoding='utf-8')
         return _usage(completed.stdout)
