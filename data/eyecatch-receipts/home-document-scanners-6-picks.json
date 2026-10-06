@@ -1,0 +1,25 @@
+{
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "role_id": "bu-codex-sellemy-designer",
+  "thread_id": "01a111a0-344e-74b1-99da-7cee59ca6cf0",
+  "member_binding_revision": 6,
+  "model": "gpt-6-astra",
+  "visual_family": "Lifestyle Scene",
+  "summary": "同一記事向けに内蔵image_genで生成済みの画像を再利用。家庭で書類とレシートを電子化する単一シーン。ファイルの存在、PNG形式、1536×1024を再検証済み。",
+  "image_sha256": "58a316286460d3f368d59e4e4c6bf62f563ad49436ab61b4cd6884f502642b9d",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-10-06T19:30:02.681780+00:00",
+  "token_usage_source": "codex_rollout.turn_token_usage",
+  "image_generation_internal_usage_exposed": false,
+  "token_usage": {
+    "input_tokens": 1178006,
+    "cached_input_tokens": 1041152,
+    "cache_write_input_tokens": 0,
+    "uncached_input_tokens": 136854,
+    "output_tokens": 4169,
+    "reasoning_output_tokens": 54,
+    "total_tokens": 1182175
+  }
+}

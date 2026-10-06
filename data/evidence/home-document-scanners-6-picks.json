@@ -1,0 +1,142 @@
+{
+  "slug": "home-document-scanners-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/home-document-scanners-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/home-document-scanners-6-picks/home-document-scanners-6-picks.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "feeding",
+      "label": "書類の量に合わせる読み取り方法",
+      "keywords": [
+        "自動給紙",
+        "手差し",
+        "両面同時読み取り",
+        "給紙枚数"
+      ]
+    },
+    {
+      "id": "document_support",
+      "label": "読み取りたい原稿への対応",
+      "keywords": [
+        "対応用紙サイズ",
+        "用紙厚",
+        "レシート",
+        "カード",
+        "キャリアシート"
+      ]
+    },
+    {
+      "id": "saving",
+      "label": "接続先とデータの保存方法",
+      "keywords": [
+        "USB接続",
+        "Wi-Fi接続",
+        "対応OS",
+        "検索可能PDF",
+        "OCR",
+        "付属ソフト"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "document_support",
+      "saving"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true,
+    "content_duplicates_removed": []
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0HDXYLRKY",
+      "asin": "B0HDXYLRKY",
+      "amazon_title": "ドキュメントスキャナー 書画カメラ A4対応 1600万画素 高速スキャン 1秒/枚 OCR文字認識 連続撮影 タイマー撮影 バーコード認識 自動補正 トリミング 傾き補正 USB接続 折りたたみ式 書類・教科書・レシート・名刺対応 ブラック",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71NPuDNE74L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.67,
+      "matched_comparison_axes": [
+        "document_support",
+        "saving"
+      ],
+      "search_key": "ドキュメントスキャナー 書画カメラ A4対応 1600万画素 高"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HK83SQF1",
+      "asin": "B0HK83SQF1",
+      "amazon_title": "ET24Pro ボックス付きブックスキャナー A3対応 2400万画素 非破壊 高速スキャン 3本レーザー補正搭載 Windows/Mac対応 電子帳簿保存法対応 OCR機能 自動平坦化 歪み補正 HDMI出力 日本国内専用 光学ドライブ不要",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/5111AowrTyL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "saving"
+      ],
+      "search_key": "ET24Pro ボックス付きブックスキャナー A3対応 2400"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HH8HWGW7",
+      "asin": "B0HH8HWGW7",
+      "amazon_title": "iCODIS スキャナー A4対応 500万画素 ドキュメントスキャナー: OCR対応 PDF変換 折りたたみ式 USB接続",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71X8XNycgvL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "saving"
+      ],
+      "search_key": "iCODIS スキャナー A4対応 500万画素 ドキュメントス"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0H6MF2SMQ",
+      "asin": "B0H6MF2SMQ",
+      "amazon_title": "スキャナー A3対応 ブックスキャナー ドキュメントスキャナー 書画カメラ : 2300万画素 OCR 非破壊 Windows/Mac対応",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/616clhKpb4L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "saving"
+      ],
+      "search_key": "スキャナー A3対応 ブックスキャナー ドキュメントスキャナー"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0H4LPTPV4",
+      "asin": "B0H4LPTPV4",
+      "amazon_title": "CZUR FancySPro-USB ドキュメントスキャナー 書画カメラ",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61supWDLN-L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [],
+      "search_key": "CZUR FancySPro-USB ドキュメントスキャナー 書"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0H35LSSMT",
+      "asin": "B0H35LSSMT",
+      "amazon_title": "スキャナー A3対応 ドキュメントスキャナー ブックスキャナー 1300万画素 非破壊 OCR 自動平坦化 書画カメラ",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61QboPY7ATL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "saving"
+      ],
+      "search_key": "スキャナー A3対応 ドキュメントスキャナー ブックスキャナー"
+    }
+  ]
+}
