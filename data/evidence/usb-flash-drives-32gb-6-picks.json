@@ -1,0 +1,167 @@
+{
+  "slug": "usb-flash-drives-32gb-6-picks",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/usb-flash-drives-32gb-6-picks.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/usb-flash-drives-32gb-6-picks/usb-flash-drives-32gb-6-picks.png",
+  "amazon_tag": "kickstartai-22",
+  "comparison_axes": [
+    {
+      "id": "connector",
+      "label": "端子と対応機器",
+      "keywords": [
+        "USB-A",
+        "Type-C",
+        "USB Type-C",
+        "両対応"
+      ]
+    },
+    {
+      "id": "speed",
+      "label": "読み込み速度とUSB規格",
+      "keywords": [
+        "MB/s",
+        "Gbps",
+        "USB3.2",
+        "USB3.1"
+      ]
+    },
+    {
+      "id": "mechanism",
+      "label": "端子収納方式と携帯性",
+      "keywords": [
+        "小型",
+        "スライド",
+        "ノック",
+        "回転",
+        "キャップレス"
+      ]
+    }
+  ],
+  "selection": {
+    "evidence_first": true,
+    "six_distinct_live_products": true,
+    "official_spec_sources": 6
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0FTLRWNZX",
+      "asin": "B0FTLRWNZX",
+      "image_url": "https://m.media-amazon.com/images/I/616s9bC0uoL._AC_SL1500_.jpg",
+      "amazon_title": "エレコム USBメモリ USB3.2(Gen1) Type-C 小型 32GB グレー MF-CFU3032GGY",
+      "brand": "ELECOM",
+      "search_key": "ELECOM MF-CFU3032GGY",
+      "official_model": "MF-CFU3032GGY",
+      "official_source_url": "https://www.elecom.co.jp/products/MF-CFU3032GGY.html",
+      "live_url": "https://www.amazon.co.jp/dp/B0FTLRWNZX",
+      "official_specs": {
+        "capacity": "32GB",
+        "connector": "USB Type-C",
+        "interface": "USB 5Gbps (USB3.2 Gen1)",
+        "read_max": "200MB/s",
+        "mechanism": "超小型",
+        "status": "発売中"
+      }
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0FGD3Z886",
+      "asin": "B0FGD3Z886",
+      "image_url": "https://m.media-amazon.com/images/I/51T0U611faL._AC_SL1500_.jpg",
+      "amazon_title": "エレコム USBメモリ USB5Gbps対応 スライド式 Type-C＆Type-A両対応 32GB ブラック MF-WSAU3032GBK",
+      "brand": "ELECOM",
+      "search_key": "ELECOM MF-WSAU3032GBK",
+      "official_model": "MF-WSAU3032GBK",
+      "official_source_url": "https://www.elecom.co.jp/products/MF-WSAU3032GBK.html",
+      "live_url": "https://www.amazon.co.jp/dp/B0FGD3Z886",
+      "official_specs": {
+        "capacity": "32GB",
+        "connector": "USB Type-C / USB-A",
+        "interface": "USB 5Gbps (USB3.2 Gen1)",
+        "read_max": "180MB/s",
+        "mechanism": "スライド式",
+        "status": "発売中"
+      }
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B07H3QN2JB",
+      "asin": "B07H3QN2JB",
+      "image_url": "https://m.media-amazon.com/images/I/51JisHREL4L._AC_SL1500_.jpg",
+      "amazon_title": "エレコム USBメモリ 32GB USB3.1 & USB 3.0 ノック式 ホワイト MF-PKU3032GWHF",
+      "brand": "ELECOM",
+      "search_key": "ELECOM MF-PKU3032GWHF",
+      "official_model": "MF-PKU3032GWHF",
+      "official_source_url": "https://www.elecom.co.jp/products/MF-PKU3032GWHF.html",
+      "live_url": "https://www.amazon.co.jp/dp/B07H3QN2JB",
+      "official_specs": {
+        "capacity": "32GB",
+        "connector": "USB-A",
+        "interface": "USB3.1 Gen1 / USB3.0",
+        "read_max": "100MB/s",
+        "mechanism": "ノック式・自動収納",
+        "status": "発売中"
+      }
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0CQYF95V6",
+      "asin": "B0CQYF95V6",
+      "image_url": "https://m.media-amazon.com/images/I/61UkpymwEyL._AC_SL1500_.jpg",
+      "amazon_title": "エレコム USBメモリ 32GB 回転カバー Type-C USBA 対応 最大読込速度100MB MF-TPC3032GBK",
+      "brand": "ELECOM",
+      "search_key": "ELECOM MF-TPC3032GBK",
+      "official_model": "MF-TPC3032GBK",
+      "official_source_url": "https://www.elecom.co.jp/products/MF-TPC3032GBK.html",
+      "live_url": "https://www.amazon.co.jp/dp/B0CQYF95V6",
+      "official_specs": {
+        "capacity": "32GB",
+        "connector": "USB Type-C / USB-A",
+        "interface": "USB 5Gbps (USB3.2 Gen1)",
+        "read_max": "100MB/s",
+        "mechanism": "回転カバー",
+        "status": "発売中"
+      }
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B087CHMKR4",
+      "asin": "B087CHMKR4",
+      "image_url": "https://m.media-amazon.com/images/I/51Q9y1FxBDL._AC_SL1000_.jpg",
+      "amazon_title": "バッファロー USBメモリ 32GB ノックスライド式 USB3.2Gen1 RUF3-KS32GA-BK/N",
+      "brand": "BUFFALO",
+      "search_key": "BUFFALO RUF3-KS32GA-BK/N",
+      "official_model": "RUF3-KS32GA-BK/N",
+      "official_source_url": "https://www.buffalo.jp/product/detail/ruf3-ks32ga-bk_n.html",
+      "live_url": "https://www.amazon.co.jp/dp/B087CHMKR4",
+      "official_specs": {
+        "capacity": "32GB",
+        "connector": "USB Type-A",
+        "interface": "USB 3.2 Gen1",
+        "read_max": "約90MB/s",
+        "mechanism": "ノック式・オートリターン",
+        "status": "現行商品ページ"
+      }
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B07HN4FNL7",
+      "asin": "B07HN4FNL7",
+      "image_url": "https://m.media-amazon.com/images/I/61WFiRN+C5L._AC_SL1000_.jpg",
+      "amazon_title": "BUFFALO USB3.1(Gen1)プッシュスライドUSBメモリ 32GB ブラック RUF3-SP32G-BK",
+      "brand": "BUFFALO",
+      "search_key": "BUFFALO RUF3-SP32G-BK",
+      "official_model": "RUF3-SP32G-BK",
+      "official_source_url": "https://www.buffalo.jp/product/detail/ruf3-sp32g-bk.html",
+      "live_url": "https://www.amazon.co.jp/dp/B07HN4FNL7",
+      "official_specs": {
+        "capacity": "32GB",
+        "connector": "USB Type-A",
+        "interface": "USB 3.2 Gen1",
+        "read_max": "not_claimed",
+        "mechanism": "プッシュスライド式",
+        "status": "現行商品ページ"
+      }
+    }
+  ]
+}
