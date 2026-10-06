@@ -39,6 +39,18 @@ class ContinuousPlanningTests(unittest.TestCase):
         fallback.assert_called_once()
         self.assertEqual(fallback.call_args.kwargs['stage'], 'planning')
 
+    def test_accepted_standard_work_result_resumes_planning(self):
+        env = {'SELLEMY_PLANNING_COMMAND': '/bin/claude', 'SELLEMY_PLANNING_MODEL': 'sonnet'}
+        failed = subprocess.CompletedProcess([], 1, stdout='', stderr='429 weekly usage limit')
+        accepted = {'candidates': [candidate('fallback-topic', 'beauty')]}
+        with patch.dict('os.environ', env, clear=True), \
+             patch.object(planning_runtime.subprocess, 'run', return_value=failed), \
+             patch.object(planning_runtime, 'request_standard_work_fallback', return_value=accepted):
+            rows = planning_runtime.discover_candidates()
+        self.assertEqual(rows[0]['slug'], 'fallback-topic')
+        self.assertTrue(rows.provider_metadata['fallback_used'])
+        self.assertEqual(rows.provider_metadata['planning_provider_used'], 'standard_work:bu-work4')
+
     def test_planning_schema_failure_never_falls_back(self):
         env = {'SELLEMY_PLANNING_COMMAND': '/bin/claude', 'SELLEMY_PLANNING_MODEL': 'sonnet',
                'SELLEMY_PLANNING_SECONDARY_COMMAND': '/bin/codex',

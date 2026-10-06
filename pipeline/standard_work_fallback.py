@@ -13,11 +13,45 @@ class StandardWorkFallbackPending(RuntimeError):
         self.task_id = task_id
 
 
-def request_standard_work_fallback(*, stage: str, prompt: str, schema: dict) -> None:
-    """Create one deterministic BU-002 fallback Task for bu-work4 and stop the pipeline.
+def _read_accepted_result(task_dir: Path, *, stage: str) -> dict | None:
+    history_dir = task_dir / 'history'
+    if not history_dir.is_dir():
+        return None
+    events = []
+    for path in sorted(history_dir.glob('*.json')):
+        try:
+            events.append(json.loads(path.read_text(encoding='utf-8')))
+        except (OSError, json.JSONDecodeError):
+            raise RuntimeError(f'invalid Standard Work fallback history: {path}')
+    if not events:
+        return None
+    latest = events[-1]
+    status = str(latest.get('status') or '').lower()
+    if status != 'completed':
+        return None
+    decision = str((latest.get('detail') or {}).get('decision') or '').upper()
+    if decision != 'ACCEPT':
+        raise RuntimeError(f'Standard Work fallback completed without ACCEPT: {latest.get("message_id")}')
+    for event in reversed(events):
+        detail = event.get('detail') or {}
+        result = detail.get('result')
+        if result is None:
+            continue
+        event_stage = detail.get('stage')
+        if event_stage and event_stage != stage:
+            continue
+        if not isinstance(result, dict):
+            raise RuntimeError('Standard Work fallback accepted RESULT is not an object')
+        return result
+    raise RuntimeError('Standard Work fallback completed ACCEPT but RESULT is missing')
 
-    This is intentionally asynchronous. The Work RESULT returns to sellemy-ops for
-    Acceptance; the publication pipeline never self-accepts a Work result.
+
+def request_standard_work_fallback(*, stage: str, prompt: str, schema: dict) -> dict:
+    """Create/reuse one deterministic BU-002 fallback Task.
+
+    The first call stops while Standard Work runs asynchronously. After Owner
+    Acceptance completes the Task, later calls return the accepted RESULT so the
+    original Runtime can resume without self-accepting Work output.
     """
     digest = hashlib.sha256((stage + '\n' + prompt).encode('utf-8')).hexdigest()[:16].upper()
     task_id = f'TASK-BU002-STANDARD-FALLBACK-{stage.upper()}-{digest}'
@@ -28,7 +62,11 @@ def request_standard_work_fallback(*, stage: str, prompt: str, schema: dict) -> 
         str(Path.home() / 'Library' / 'Application Support' / 'AIManagementOS' / 'canonical'),
     )).expanduser()
     task_dir = canonical_root / 'tasks' / task_id
-    if not (task_dir / 'task.json').exists():
+    if (task_dir / 'task.json').exists():
+        accepted = _read_accepted_result(task_dir, stage=stage)
+        if accepted is not None:
+            return accepted
+    else:
         packet = {
             'fallback_kind': 'pro_availability_to_standard_work',
             'source_unit': 'BU-002',

@@ -171,5 +171,10 @@ def invoke_writer(topic: dict, evidence: dict, *, previous_payload: dict | None 
     except WriterInvocationError as exc:
         if not exc.availability:
             raise
-        request_standard_work_fallback(stage='writer', prompt=prompt, schema=WRITER_JSON_SCHEMA)
-        raise AssertionError('unreachable')
+        payload = request_standard_work_fallback(stage='writer', prompt=prompt, schema=WRITER_JSON_SCHEMA)
+        return payload, {'runtime': 'standard_work', 'model': None, 'cost_usd': None,
+                         'duration_api_ms': None, 'session_persisted': False,
+                         'writer_model_requested': requested, 'writer_model_used': 'standard_work:bu-work4',
+                         'writer_provider_requested': primary.kind, 'writer_provider_used': 'standard_work',
+                         'fallback_used': True, 'fallback_reason': 'primary_availability_error',
+                         'writer_attempt_count': 2}

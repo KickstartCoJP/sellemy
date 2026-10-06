@@ -112,8 +112,10 @@ def discover_candidates() -> list[dict]:
     except PlanningError as exc:
         if str(exc) != 'planning primary availability failure':
             raise
-        request_standard_work_fallback(stage='planning', prompt=prompt, schema=PLANNING_SCHEMA)
-        raise AssertionError('unreachable')
+        value = request_standard_work_fallback(stage='planning', prompt=prompt, schema=PLANNING_SCHEMA)
+        metadata.update({'planning_provider_used': 'standard_work:bu-work4',
+                         'fallback_used': True, 'fallback_reason': 'primary_availability_error',
+                         'planning_attempt_count': 2})
     if not isinstance(value, dict) or not isinstance(value.get('candidates'), list):
         raise PlanningError('planning provider returned no candidate set')
     return CandidateBatch(value['candidates'], metadata)

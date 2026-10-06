@@ -43,6 +43,17 @@ class WriterProviderTests(unittest.TestCase):
         fallback.assert_called_once()
         self.assertEqual(fallback.call_args.kwargs['stage'], 'writer')
 
+    def test_accepted_standard_work_result_resumes_writer(self):
+        accepted = valid_payload()
+        with patch.dict('os.environ', self.env, clear=True), \
+             patch.object(writer_runtime.subprocess, 'run', return_value=completed(1, stderr='429 rate limit')), \
+             patch.object(writer_runtime, 'request_standard_work_fallback', return_value=accepted) as fallback:
+            payload, metadata = writer_runtime.invoke_writer({}, valid_evidence())
+        self.assertEqual(payload, accepted)
+        self.assertTrue(metadata['fallback_used'])
+        self.assertEqual(metadata['writer_provider_used'], 'standard_work')
+        fallback.assert_called_once()
+
     def test_quality_or_schema_error_never_falls_back(self):
         bad = subprocess.CompletedProcess([], 0, stdout='{}', stderr='')
         with patch.dict('os.environ', self.env, clear=True), patch.object(writer_runtime.subprocess, 'run', return_value=bad) as run:
