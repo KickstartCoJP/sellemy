@@ -8,7 +8,7 @@ import shutil
 import subprocess
 from dataclasses import dataclass
 from pathlib import Path
-from standard_work_fallback import request_standard_work_fallback
+from codex_provider import CodexProviderError, generate_persistent as codex_generate_persistent
 
 
 class WriterInvocationError(RuntimeError):
@@ -126,6 +126,18 @@ def _invoke(provider: WriterProvider, prompt: str) -> tuple[dict, dict]:
         raise WriterInvocationError(f'{provider.name} Writer command unavailable', availability=True)
     if not provider.model:
         raise WriterInvocationError(f'{provider.name} Writer model is not configured', availability=True)
+    if provider.kind == 'codex':
+        try:
+            payload, codex_meta = codex_generate_persistent(
+                provider.command, provider.model, WRITER_JSON_SCHEMA, prompt,
+                timeout=int(os.environ.get('SELLEMY_WRITER_TIMEOUT_SECONDS', '600')),
+                root=Path(__file__).resolve().parents[1], surface_key='bu-codex-sellemy-writer', stage='writer',
+            )
+        except CodexProviderError as exc:
+            raise WriterInvocationError(f'{provider.name} Writer {exc}', availability=True) from exc
+        return payload, {'runtime': provider.command[0], 'model': provider.model,
+                         'cost_usd': None, 'duration_api_ms': None, 'session_persisted': True,
+                         **codex_meta}
     if provider.kind != 'claude':
         raise WriterInvocationError(f'unknown Writer provider kind: {provider.kind}')
     budget = os.environ.get('SELLEMY_WRITER_MAX_BUDGET_USD', '1.00')
@@ -162,7 +174,7 @@ def _invoke(provider: WriterProvider, prompt: str) -> tuple[dict, dict]:
 
 
 def invoke_writer(topic: dict, evidence: dict, *, previous_payload: dict | None = None, gate_feedback: dict | None = None) -> tuple[dict, dict]:
-    primary = _provider('primary')
+    primary, secondary = _provider('primary'), _provider('secondary')
     prompt = _prompt(topic, evidence, previous_payload=previous_payload, gate_feedback=gate_feedback)
     requested = f'{primary.name}:{primary.model}'
     try:
@@ -171,10 +183,8 @@ def invoke_writer(topic: dict, evidence: dict, *, previous_payload: dict | None 
     except WriterInvocationError as exc:
         if not exc.availability:
             raise
-        payload = request_standard_work_fallback(stage='writer', prompt=prompt, schema=WRITER_JSON_SCHEMA)
-        return payload, {'runtime': 'standard_work', 'model': None, 'cost_usd': None,
-                         'duration_api_ms': None, 'session_persisted': False,
-                         'writer_model_requested': requested, 'writer_model_used': 'standard_work:bu-work4',
-                         'writer_provider_requested': primary.kind, 'writer_provider_used': 'standard_work',
-                         'fallback_used': True, 'fallback_reason': 'primary_availability_error',
-                         'writer_attempt_count': 2}
+        if not secondary.command or not secondary.model or not secondary.certified:
+            raise WriterInvocationError(f'{exc}; certified Secondary Writer unavailable', availability=True) from exc
+        payload, metadata = _invoke(secondary, prompt)
+        used = f'{secondary.name}:{secondary.model}'
+        return payload, {**metadata, 'writer_model_requested': requested, 'writer_model_used': used, 'writer_provider_requested': primary.kind, 'writer_provider_used': secondary.kind, 'fallback_used': True, 'fallback_reason': 'primary_availability_error', 'writer_attempt_count': 2}

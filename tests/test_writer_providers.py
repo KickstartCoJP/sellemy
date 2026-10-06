@@ -10,6 +10,7 @@ from unittest.mock import patch
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'pipeline'))
 import writer_runtime
+from codex_provider import CodexProviderError
 from fixtures import valid_evidence, valid_payload
 
 
@@ -21,73 +22,55 @@ def completed(returncode=0, *, stderr='', payload=None):
 class WriterProviderTests(unittest.TestCase):
     def setUp(self):
         self.env = {
-            'SELLEMY_WRITER_PRIMARY_COMMAND': '/bin/primary', 'SELLEMY_WRITER_PRIMARY_MODEL': 'primary-model',
-            'SELLEMY_WRITER_SECONDARY_COMMAND': '/bin/secondary', 'SELLEMY_WRITER_SECONDARY_MODEL': 'secondary-model',
+            'SELLEMY_WRITER_PRIMARY_COMMAND': '/bin/codex',
+            'SELLEMY_WRITER_PRIMARY_KIND': 'codex',
+            'SELLEMY_WRITER_PRIMARY_MODEL': 'codex-model',
+            'SELLEMY_WRITER_SECONDARY_COMMAND': '/bin/claude',
+            'SELLEMY_WRITER_SECONDARY_KIND': 'claude',
+            'SELLEMY_WRITER_SECONDARY_MODEL': 'sonnet',
             'SELLEMY_WRITER_SECONDARY_CERTIFIED': 'true',
         }
 
-    def test_primary_success_does_not_call_secondary(self):
-        with patch.dict('os.environ', self.env, clear=True), patch.object(writer_runtime.subprocess, 'run', return_value=completed()) as run:
-            _payload, metadata = writer_runtime.invoke_writer({}, valid_evidence())
-        self.assertEqual(run.call_count, 1)
-        self.assertFalse(metadata['fallback_used'])
-        self.assertEqual(metadata['writer_model_requested'], 'primary:primary-model')
-
-    def test_availability_error_routes_to_standard_work(self):
+    def test_codex_primary_success_does_not_call_claude(self):
+        codex_meta = {'surface': 'bu-codex-sellemy-writer', 'session_id': 'sid', 'session_turn': 3}
         with patch.dict('os.environ', self.env, clear=True), \
-             patch.object(writer_runtime.subprocess, 'run', return_value=completed(1, stderr='429 rate limit')) as run, \
-             patch.object(writer_runtime, 'request_standard_work_fallback', side_effect=RuntimeError('fallback-pending')) as fallback:
-            with self.assertRaisesRegex(RuntimeError, 'fallback-pending'):
-                writer_runtime.invoke_writer({}, valid_evidence())
-        self.assertEqual(run.call_count, 1)
-        fallback.assert_called_once()
-        self.assertEqual(fallback.call_args.kwargs['stage'], 'writer')
-
-    def test_accepted_standard_work_result_resumes_writer(self):
-        accepted = valid_payload()
-        with patch.dict('os.environ', self.env, clear=True), \
-             patch.object(writer_runtime.subprocess, 'run', return_value=completed(1, stderr='429 rate limit')), \
-             patch.object(writer_runtime, 'request_standard_work_fallback', return_value=accepted) as fallback:
+             patch.object(writer_runtime, 'codex_generate_persistent', return_value=(valid_payload(), codex_meta)) as codex, \
+             patch.object(writer_runtime.subprocess, 'run') as claude:
             payload, metadata = writer_runtime.invoke_writer({}, valid_evidence())
-        self.assertEqual(payload, accepted)
-        self.assertTrue(metadata['fallback_used'])
-        self.assertEqual(metadata['writer_provider_used'], 'standard_work')
-        fallback.assert_called_once()
+        self.assertEqual(payload, valid_payload())
+        codex.assert_called_once()
+        claude.assert_not_called()
+        self.assertEqual(metadata['writer_provider_used'], 'codex')
+        self.assertFalse(metadata['fallback_used'])
+        self.assertTrue(metadata['session_persisted'])
+        self.assertEqual(metadata['surface'], 'bu-codex-sellemy-writer')
 
-    def test_quality_or_schema_error_never_falls_back(self):
-        bad = subprocess.CompletedProcess([], 0, stdout='{}', stderr='')
-        with patch.dict('os.environ', self.env, clear=True), patch.object(writer_runtime.subprocess, 'run', return_value=bad) as run:
-            with self.assertRaises(writer_runtime.WriterInvocationError):
-                writer_runtime.invoke_writer({}, valid_evidence())
-        self.assertEqual(run.call_count, 1)
-
-    def test_legacy_secondary_settings_do_not_change_standard_fallback(self):
-        env = {**self.env, 'SELLEMY_WRITER_SECONDARY_CERTIFIED': 'false'}
-        with patch.dict('os.environ', env, clear=True), \
-             patch.object(writer_runtime.subprocess, 'run', return_value=completed(1, stderr='service unavailable')) as run, \
-             patch.object(writer_runtime, 'request_standard_work_fallback', side_effect=RuntimeError('fallback-pending')) as fallback:
-            with self.assertRaisesRegex(RuntimeError, 'fallback-pending'):
-                writer_runtime.invoke_writer({}, valid_evidence())
-        self.assertEqual(run.call_count, 1)
-        fallback.assert_called_once()
-
-    def test_claude_limit_invokes_standard_work_not_codex(self):
-        env = {**self.env, 'SELLEMY_WRITER_SECONDARY_KIND': 'codex'}
-        with patch.dict('os.environ', env, clear=True), \
-             patch.object(writer_runtime.subprocess, 'run', return_value=completed(1, stderr='You have reached your weekly limit')) as primary, \
-             patch.object(writer_runtime, 'request_standard_work_fallback', side_effect=RuntimeError('fallback-pending')) as fallback:
-            with self.assertRaisesRegex(RuntimeError, 'fallback-pending'):
-                writer_runtime.invoke_writer({}, valid_evidence())
-        self.assertEqual(primary.call_count, 1)
-        fallback.assert_called_once()
-
-    def test_claude_content_failure_does_not_invoke_standard_work(self):
+    def test_codex_failure_falls_back_to_claude(self):
         with patch.dict('os.environ', self.env, clear=True), \
-             patch.object(writer_runtime.subprocess, 'run', return_value=completed(1, stderr='invalid article schema')), \
-             patch.object(writer_runtime, 'request_standard_work_fallback') as fallback:
+             patch.object(writer_runtime, 'codex_generate_persistent', side_effect=CodexProviderError('limit')), \
+             patch.object(writer_runtime.subprocess, 'run', return_value=completed()) as claude:
+            payload, metadata = writer_runtime.invoke_writer({}, valid_evidence())
+        self.assertEqual(payload, valid_payload())
+        self.assertEqual(claude.call_count, 1)
+        self.assertTrue(metadata['fallback_used'])
+        self.assertEqual(metadata['writer_provider_used'], 'claude')
+        self.assertEqual(metadata['writer_attempt_count'], 2)
+
+    def test_codex_failure_without_certified_secondary_fails_closed(self):
+        env = dict(self.env)
+        env['SELLEMY_WRITER_SECONDARY_CERTIFIED'] = 'false'
+        with patch.dict('os.environ', env, clear=True), \
+             patch.object(writer_runtime, 'codex_generate_persistent', side_effect=CodexProviderError('limit')):
+            with self.assertRaisesRegex(writer_runtime.WriterInvocationError, 'certified Secondary Writer unavailable'):
+                writer_runtime.invoke_writer({}, valid_evidence())
+
+    def test_claude_secondary_schema_failure_fails_closed(self):
+        bad = subprocess.CompletedProcess([], 0, stdout='{}', stderr='')
+        with patch.dict('os.environ', self.env, clear=True), \
+             patch.object(writer_runtime, 'codex_generate_persistent', side_effect=CodexProviderError('limit')), \
+             patch.object(writer_runtime.subprocess, 'run', return_value=bad):
             with self.assertRaises(writer_runtime.WriterInvocationError):
                 writer_runtime.invoke_writer({}, valid_evidence())
-        fallback.assert_not_called()
 
 
 if __name__ == '__main__':

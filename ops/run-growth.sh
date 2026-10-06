@@ -15,8 +15,23 @@ if [[ -f "$SECRETS" ]]; then set -a; source "$SECRETS"; set +a; fi
 unset SELLEMY_EYECATCH_ENDPOINT SELLEMY_EYECATCH_TOKEN_ENV SELLEMY_EYECATCH_PROVIDER SELLEMY_EYECATCH_MODEL
 export SELLEMY_EYECATCH_QUALITY=high
 export SELLEMY_EYECATCH_TIMEOUT_SECONDS=300
-export SELLEMY_WRITER_PRIMARY_COMMAND=/opt/homebrew/bin/claude
-export SELLEMY_WRITER_PRIMARY_MODEL=sonnet
+# Planning / Writer: Codex is the primary local execution surface. Claude is the
+# certified local fallback. Browser/Work fallback is intentionally not in this route.
+export SELLEMY_WRITER_PRIMARY_COMMAND=/opt/homebrew/bin/codex
+export SELLEMY_WRITER_PRIMARY_KIND=codex
+export SELLEMY_WRITER_PRIMARY_MODEL=gpt-6-sol
+export SELLEMY_WRITER_SECONDARY_COMMAND=/opt/homebrew/bin/claude
+export SELLEMY_WRITER_SECONDARY_KIND=claude
+export SELLEMY_WRITER_SECONDARY_MODEL=sonnet
+export SELLEMY_WRITER_SECONDARY_CERTIFIED=true
+export SELLEMY_PLANNING_PRIMARY_COMMAND=/opt/homebrew/bin/codex
+export SELLEMY_PLANNING_PRIMARY_KIND=codex
+export SELLEMY_PLANNING_PRIMARY_MODEL=gpt-6-sol
+export SELLEMY_PLANNING_SECONDARY_COMMAND=/opt/homebrew/bin/claude
+export SELLEMY_PLANNING_SECONDARY_KIND=claude
+export SELLEMY_PLANNING_SECONDARY_MODEL=sonnet
+export SELLEMY_PLANNING_SECONDARY_CERTIFIED=true
+export SELLEMY_CODEX_SESSION_MAX_TURNS=4
 "$PY" - <<'PYSYNC'
 import sys
 sys.path.insert(0, '/Users/kickstart/sellemy/pipeline')

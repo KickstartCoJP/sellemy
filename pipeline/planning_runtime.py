@@ -11,7 +11,7 @@ from pathlib import Path
 from analytics_feedback import load_feedback, topic_signal
 from category_metadata import CATEGORIES
 from writer_runtime import AVAILABILITY_PATTERN, _diagnostic
-from standard_work_fallback import request_standard_work_fallback
+from codex_provider import CodexProviderError, generate_persistent as codex_generate_persistent
 
 ROOT = Path(__file__).resolve().parents[1]
 ARTICLES = ROOT / 'json' / 'articles.json'
@@ -79,42 +79,75 @@ def _context() -> dict:
     return {
         'today': date.today().isoformat(), 'allowed_categories': list(CATEGORIES),
         'exploration_seeds': json.loads(SEEDS.read_text(encoding='utf-8'))['categories'],
-        'existing_articles': [{k: row.get(k) for k in ('slug', 'category', 'title', 'summary')} for row in articles],
+        'existing_articles': [{k: row.get(k) for k in ('slug', 'category', 'title')} for row in articles],
         'portfolio': _portfolio_signals(articles),
         'instruction': 'Explore fresh search and purchase intents every cycle. Seeds are inspiration, never a queue. Actively diversify underrepresented categories and avoid repeating the same distinctive topic family in the recent portfolio. Return novel candidates across all categories.',
     }
 
 
-def discover_candidates() -> list[dict]:
-    configured = os.environ.get('SELLEMY_PLANNING_COMMAND', '').strip()
-    if not configured:
-        from writer_runtime import _command
-        command = _command()
-    else:
+def _planning_provider(name: str) -> tuple[str, list[str], str, bool]:
+    upper = name.upper()
+    kind = os.environ.get(f'SELLEMY_PLANNING_{upper}_KIND', 'codex' if name == 'primary' else 'claude').strip().lower()
+    configured = os.environ.get(f'SELLEMY_PLANNING_{upper}_COMMAND', '').strip()
+    if configured:
         command = shlex.split(configured)
-    model = os.environ.get('SELLEMY_PLANNING_MODEL', os.environ.get('SELLEMY_WRITER_PRIMARY_MODEL', 'sonnet'))
+    elif name == 'primary':
+        command = shlex.split(os.environ.get('SELLEMY_PLANNING_COMMAND', '').strip())
+    else:
+        command = []
+    default_model = os.environ.get('SELLEMY_PLANNING_MODEL', '') if name == 'primary' else ''
+    model = os.environ.get(f'SELLEMY_PLANNING_{upper}_MODEL', default_model).strip()
+    certified = name == 'primary' or os.environ.get('SELLEMY_PLANNING_SECONDARY_CERTIFIED', '').lower() in ('1', 'true', 'yes')
+    return kind, command, model, certified
+
+
+def _invoke_planning(kind: str, command: list[str], model: str, prompt: str, timeout: int) -> dict:
+    if not command or not model:
+        raise PlanningError('planning provider is unconfigured')
+    if kind == 'codex':
+        try:
+            value, _meta = codex_generate_persistent(
+                tuple(command), model, PLANNING_SCHEMA, prompt, timeout=timeout,
+                root=ROOT, surface_key='bu-codex-sellemy-planning', stage='planning',
+            )
+        except CodexProviderError as exc:
+            raise PlanningError(f'planning Codex unavailable: {exc}') from exc
+        return value
+    if kind != 'claude':
+        raise PlanningError(f'unknown planning provider kind: {kind}')
+    try:
+        completed = subprocess.run(command + ['-p', '--safe-mode', '--no-session-persistence', '--tools', '', '--model', model, '--output-format', 'json', '--json-schema', json.dumps(PLANNING_SCHEMA)], input=prompt, text=True, capture_output=True, timeout=timeout, check=False)
+    except (OSError, subprocess.TimeoutExpired) as exc:
+        raise PlanningError(f'planning provider invocation failed: {type(exc).__name__}') from exc
+    diagnostic = _diagnostic(completed)
+    if completed.returncode:
+        raise PlanningError(f'planning Claude failed: {diagnostic or completed.returncode}')
+    try:
+        envelope = json.loads(completed.stdout)
+    except json.JSONDecodeError as exc:
+        raise PlanningError('planning Claude returned non-JSON output') from exc
+    value = envelope.get('structured_output')
+    if not isinstance(value, dict):
+        raise PlanningError('planning Claude returned no structured output')
+    return value
+
+
+def discover_candidates() -> list[dict]:
     prompt = 'You plan Japanese Sellemy product-comparison topics. Generate fresh candidates from current season, search/purchase intent, product viability and the supplied context. Return structured JSON only.\n' + json.dumps(_context(), ensure_ascii=False)
     timeout = int(os.environ.get('SELLEMY_PLANNING_TIMEOUT_SECONDS', '300'))
-    requested = f'claude:{model}'
+    pkind, pcommand, pmodel, _ = _planning_provider('primary')
+    skind, scommand, smodel, scertified = _planning_provider('secondary')
+    requested = f'{pkind}:{pmodel}'
     metadata = {'planning_provider_requested': requested, 'planning_provider_used': requested,
                 'fallback_used': False, 'fallback_reason': None, 'planning_attempt_count': 1}
     try:
-        completed = subprocess.run(command + ['-p', '--safe-mode', '--no-session-persistence', '--tools', '', '--model', model, '--output-format', 'json', '--json-schema', json.dumps(PLANNING_SCHEMA)], input=prompt, text=True, capture_output=True, timeout=timeout, check=False)
-        diagnostic = _diagnostic(completed)
-        if completed.returncode:
-            if not AVAILABILITY_PATTERN.search(diagnostic):
-                raise PlanningError(f'planning provider failed: {diagnostic}')
-            raise PlanningError('planning primary availability failure')
-        envelope = json.loads(completed.stdout)
-        value = envelope.get('structured_output')
-    except (OSError, subprocess.TimeoutExpired) as exc:
-        raise PlanningError(f'planning provider invocation failed: {type(exc).__name__}') from exc
-    except PlanningError as exc:
-        if str(exc) != 'planning primary availability failure':
-            raise
-        value = request_standard_work_fallback(stage='planning', prompt=prompt, schema=PLANNING_SCHEMA)
-        metadata.update({'planning_provider_used': 'standard_work:bu-work4',
-                         'fallback_used': True, 'fallback_reason': 'primary_availability_error',
+        value = _invoke_planning(pkind, pcommand, pmodel, prompt, timeout)
+    except PlanningError as primary_error:
+        if not scommand or not smodel or not scertified:
+            raise PlanningError(f'{primary_error}; certified Secondary Planning unavailable') from primary_error
+        value = _invoke_planning(skind, scommand, smodel, prompt, timeout)
+        metadata.update({'planning_provider_used': f'{skind}:{smodel}',
+                         'fallback_used': True, 'fallback_reason': 'primary_provider_error',
                          'planning_attempt_count': 2})
     if not isinstance(value, dict) or not isinstance(value.get('candidates'), list):
         raise PlanningError('planning provider returned no candidate set')

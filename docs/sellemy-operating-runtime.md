@@ -4,7 +4,7 @@ The production entry point is `pipeline/growth_runtime.py`. A cycle is fail-clos
 
 1. `planning_runtime.py` asks the configured Planning provider for fresh candidates across `beauty`, `dailygoods`, and `gadget`. `planning_seeds.json` is context only, not a queue.
 2. `product_selection.py` selects six distinct ASINs using relevance, identity completeness, comparison-axis coverage, brand diversity, feedback, and price balance as a constraint.
-3. `writer_runtime.py` calls the Primary Writer. It may call one certified Secondary only for an availability error. Content or QA failures never change providers.
+3. `writer_runtime.py` calls the Primary Writer. Production Primary is the fixed BU-002 Codex local surface; Claude CLI is the certified Secondary for Primary invocation failure. Content/QA failures remain under the existing rewrite and QA path and never bypass gates.
 4. `review_gate.py` and `qa.py` must both pass before `publish_payload.py` can write a publication unit.
 5. The publication unit includes article HTML, eyecatch, Evidence/Payload, ASIN canonical products, `products.json`, `articles.json`, TOP recent links, and sitemap.
 6. `--publish` performs only a normal `git push origin main`, followed by HEAD/origin/clean verification.
@@ -26,13 +26,16 @@ All tuning values live in `config/adaptive_publish.json`. Runtime evidence is ou
 
 ## Runtime configuration
 
-- `SELLEMY_PLANNING_COMMAND`, `SELLEMY_PLANNING_MODEL`
-- `SELLEMY_WRITER_PRIMARY_COMMAND`, `SELLEMY_WRITER_PRIMARY_MODEL`
-- Planning/Writer availability fallback is a Standard Work Task to `bu-work4`; Codex is reserved for code/Runtime repair.
+- `SELLEMY_PLANNING_PRIMARY_COMMAND/KIND/MODEL` and certified Secondary equivalents
+- `SELLEMY_WRITER_PRIMARY_COMMAND/KIND/MODEL` and certified Secondary equivalents
+- `SELLEMY_CODEX_SESSION_MAX_TURNS` controls bounded Codex session rotation.
 - `SELLEMY_WRITER_TIMEOUT_SECONDS`, `SELLEMY_WRITER_MAX_BUDGET_USD`
 
-The default Primary and Planning command resolves the locally installed Claude CLI. Availability fallback for Planning/Writer is a deterministic BU-002 Task to Standard Work `bu-work4`; Codex is reserved for code/Runtime repair.
-The production scheduler script explicitly configures the local Codex CLI as certified Secondary for Writer and Planning. Both routes switch only after a Claude availability diagnostic. Codex runs with a read-only sandbox and ephemeral session, receives a JSON output schema, and never receives a session ID or credential in the script. Provider and fallback metadata appears in the Growth report. The existing Review, QA, affiliate and publication guards still decide whether an article can advance. See the [official OpenAI Codex exec guidance](https://developers.openai.com/blog/eval-skills) for noninteractive schema-constrained execution.
+Production Planning/Writer priority is **Codex CLI → Claude CLI**. Browser/Work is not part of the normal generation route. Codex uses a read-only local execution surface and schema-constrained structured output. BU-002 uses separate durable Codex sessions for Planning and Writer so large Writer evidence does not inflate Planning context. Each stage resumes its own short-lived session for useful working context, but session memory is never the source of truth.
+
+Cross-session and cross-stage continuity lives in the shared `.runtime/sellemy-codex/brief.md`, which is ignored by Git. The brief has a fixed rules section plus a compact Learned section. Immediately before a session rotation, the outgoing Codex session summarizes only durable, useful Planning/Writer learnings into Learned, deduplicating existing points and excluding transient product/task details. The next session is explicitly instructed to read the brief before work. This keeps continuity bounded rather than accumulating an indefinitely long session. Codex turn usage is appended to `.runtime/sellemy-codex/usage.jsonl` by stage (`planning`, `writer`, `brief_refresh`) so provider efficiency can be evaluated from actual consumption.
+
+Provider/fallback/session metadata appears in the Growth report. Existing Evidence, Review, Machine QA, eyecatch and publication guards remain authoritative and are never weakened by provider choice.
 
 ## Measurement feedback
 
