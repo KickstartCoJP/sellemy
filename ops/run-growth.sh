@@ -31,7 +31,7 @@ export SELLEMY_PLANNING_SECONDARY_COMMAND=/opt/homebrew/bin/claude
 export SELLEMY_PLANNING_SECONDARY_KIND=claude
 export SELLEMY_PLANNING_SECONDARY_MODEL=sonnet
 export SELLEMY_PLANNING_SECONDARY_CERTIFIED=true
-export SELLEMY_CODEX_SESSION_MAX_TURNS=4
+export SELLEMY_CODEX_SESSION_MAX_TURNS=10
 "$PY" - <<'PYSYNC'
 import sys
 sys.path.insert(0, '/Users/kickstart/sellemy/pipeline')
