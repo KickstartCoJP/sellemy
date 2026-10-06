@@ -2,14 +2,57 @@ from __future__ import annotations
 
 import json
 import os
+import sqlite3
 import subprocess
 import tempfile
+import uuid
 from pathlib import Path
 
 
 class CodexProviderError(RuntimeError):
     pass
 
+
+
+MEMBER_CANON_DB = Path(os.environ.get(
+    'SELLEMY_MEMBER_CANON_DB',
+    str(Path.home() / 'Library/Application Support/AIManagementOS/canonical/ai_management_os.db'),
+))
+
+
+def _member_binding(role_id: str, *, db_path: Path | None = None) -> dict:
+    path = Path(db_path or MEMBER_CANON_DB).expanduser().resolve()
+    if not path.is_file():
+        raise CodexProviderError(f'Member canon unavailable: {path}')
+    try:
+        conn = sqlite3.connect(f'file:{path}?mode=ro', uri=True, timeout=2)
+        conn.row_factory = sqlite3.Row
+        row = conn.execute(
+            'SELECT role_id,surface_type,project_id,execution_account,create_status,current_url,active,binding_revision '
+            'FROM members WHERE role_id=?', (role_id,),
+        ).fetchone()
+    except sqlite3.Error as exc:
+        raise CodexProviderError(f'Member canon read failed: {exc}') from exc
+    finally:
+        try:
+            conn.close()
+        except UnboundLocalError:
+            pass
+    if row is None:
+        raise CodexProviderError(f'Codex Member not found: {role_id}')
+    value = dict(row)
+    if (value['surface_type'] != 'Codex' or value['project_id'] != 'BU-002'
+            or value['create_status'] != 'Created' or int(value['active'] or 0) != 1):
+        raise CodexProviderError(f'Codex Member is not production-ready: {role_id}')
+    if value['execution_account'] != 'chatgpt-pro':
+        raise CodexProviderError(f'Unexpected Codex execution account: {role_id}')
+    try:
+        thread_id = str(uuid.UUID(value['current_url']))
+    except (ValueError, TypeError, AttributeError) as exc:
+        raise CodexProviderError(f'Codex Member has no canonical thread binding: {role_id}') from exc
+    if thread_id != value['current_url']:
+        raise CodexProviderError(f'Codex Member thread is not canonical UUID: {role_id}')
+    return value
 
 BRIEF_FIXED = """# Sellemy Codex Brief
 
@@ -189,61 +232,57 @@ def _refresh_brief(command: tuple[str, ...], model: str, session_id: str, root: 
 def generate_persistent(command: tuple[str, ...], model: str, schema: dict, prompt: str, *,
                         timeout: int, root: Path, surface_key: str = 'bu-codex-sellemy',
                         max_turns: int | None = None, stage: str = '') -> tuple[dict, dict]:
-    """Generate structured output on a durable Codex session with compact cross-session memory.
+    """Generate on the Codex thread currently bound to a canonical BU-002 Member.
 
-    The session is rotated after max_turns. Immediately before rotation, the old session
-    compresses durable learnings into .runtime/sellemy-codex/brief.md. New sessions are
-    explicitly instructed to read that file before the task.
+    Member canon is authoritative for thread identity. Local state only remembers the
+    previous binding and turn count so that a changed Member binding can harvest the
+    outgoing thread into the compact brief before the new thread does any work.
     """
     if not command or not model:
         raise CodexProviderError('Codex command or model is missing')
     root = Path(root).resolve()
     state_path, brief_path = _runtime_paths(root, surface_key)
     _ensure_brief(brief_path)
+    binding = _member_binding(surface_key)
+    session_id = binding['current_url']
     state = _read_state(state_path)
-    max_turns = max_turns or int(os.environ.get('SELLEMY_CODEX_SESSION_MAX_TURNS', '20'))
-    session_id = state.get('session_id') if isinstance(state.get('session_id'), str) else None
-    turns = int(state.get('turns') or 0)
-    rotated = False
+    previous_session = state.get('session_id') if isinstance(state.get('session_id'), str) else None
+    turns = int(state.get('turns') or 0) if previous_session == session_id else 0
+    binding_changed = bool(previous_session and previous_session != session_id)
     brief_refreshed = False
 
-    if session_id and turns >= max_turns:
+    if binding_changed:
+        brief_usage = _refresh_brief(command, model, previous_session, root, brief_path, timeout=timeout)
+        _append_usage(root, surface_key, stage='brief_refresh', model=model, session_id=previous_session,
+                      session_turn=int(state.get('turns') or 0) + 1, usage=brief_usage)
+        brief_refreshed = True
+
+    checkpoint = max_turns or int(os.environ.get('SELLEMY_CODEX_BRIEF_CHECKPOINT_TURNS', '10'))
+    if not binding_changed and previous_session == session_id and turns >= checkpoint:
         brief_usage = _refresh_brief(command, model, session_id, root, brief_path, timeout=timeout)
         _append_usage(root, surface_key, stage='brief_refresh', model=model, session_id=session_id,
                       session_turn=turns + 1, usage=brief_usage)
         brief_refreshed = True
-        session_id = None
         turns = 0
-        rotated = True
 
     with tempfile.TemporaryDirectory(prefix='sellemy-codex-') as directory:
         schema_path = Path(directory) / 'schema.json'
         output_path = Path(directory) / 'response.json'
         schema_path.write_text(json.dumps(_strict_schema(schema), ensure_ascii=False), encoding='utf-8')
         task_prompt = (
-            'This is the fixed BU-002 Sellemy Codex surface. Before executing the task, read '
-            f'{brief_path.relative_to(root)}. Treat Fixed rules as mandatory and Learned as compact operational guidance. '
+            'You are executing as the canonical BU-002 Codex Member ' + surface_key + '. '
+            'Before executing the task, read ' + str(brief_path.relative_to(root)) + '. '
+            'Treat Fixed rules as mandatory and Learned as compact operational guidance. '
             'Do not edit the brief during normal task turns.\n\n' + prompt
         )
-        if session_id:
-            args = [*command, 'exec', 'resume', '--ignore-user-config', '--ignore-rules', '--skip-git-repo-check',
-                    '--model', model, '--output-schema', str(schema_path),
-                    '--output-last-message', str(output_path), '--json', session_id, '-']
-        else:
-            args = [*command, 'exec', '--ignore-user-config', '--ignore-rules', '--sandbox', 'read-only',
-                    '--skip-git-repo-check', '--cd', str(root), '--model', model,
-                    '--output-schema', str(schema_path), '--output-last-message', str(output_path),
-                    '--json', '-']
+        args = [*command, 'exec', 'resume', '--ignore-user-config', '--ignore-rules',
+                '--skip-git-repo-check', '--model', model, '--output-schema', str(schema_path),
+                '--output-last-message', str(output_path), '--json', session_id, '-']
         completed = _run(args, prompt=task_prompt, timeout=timeout, cwd=root)
         if completed.returncode:
             diagnostic = (completed.stderr or completed.stdout or '').strip()[-1000:]
             raise CodexProviderError(f'Codex exited {completed.returncode}: {diagnostic}')
         value = _parse_output(output_path)
-        discovered = _thread_id(completed.stdout)
-        if session_id is None:
-            if not discovered:
-                raise CodexProviderError('Codex persistent session id was not observable')
-            session_id = discovered
         turns += 1
         usage = _usage(completed.stdout)
         _append_usage(root, surface_key, stage=stage or 'generation', model=model, session_id=session_id,
@@ -251,11 +290,13 @@ def generate_persistent(command: tuple[str, ...], model: str, schema: dict, prom
         _write_state(state_path, {
             'surface_key': surface_key, 'session_id': session_id, 'turns': turns,
             'model': model, 'brief_path': str(brief_path),
+            'member_binding_revision': binding['binding_revision'],
         })
         return value, {
             'surface': surface_key, 'session_id': session_id, 'session_turn': turns,
-            'session_rotated': rotated, 'brief_refreshed_before_rotation': brief_refreshed,
-            'brief_path': str(brief_path), **usage,
+            'member_binding_revision': binding['binding_revision'],
+            'member_binding_changed': binding_changed,
+            'brief_refreshed': brief_refreshed, 'brief_path': str(brief_path), **usage,
         }
 
 
