@@ -19,19 +19,20 @@ export SELLEMY_EYECATCH_TIMEOUT_SECONDS=300
 # certified local fallback. Browser/Work fallback is intentionally not in this route.
 export SELLEMY_WRITER_PRIMARY_COMMAND=/opt/homebrew/bin/codex
 export SELLEMY_WRITER_PRIMARY_KIND=codex
-export SELLEMY_WRITER_PRIMARY_MODEL=gpt-6-sol
+export SELLEMY_WRITER_PRIMARY_MODEL=gpt-6-astra
 export SELLEMY_WRITER_SECONDARY_COMMAND=/opt/homebrew/bin/claude
 export SELLEMY_WRITER_SECONDARY_KIND=claude
 export SELLEMY_WRITER_SECONDARY_MODEL=sonnet
 export SELLEMY_WRITER_SECONDARY_CERTIFIED=true
 export SELLEMY_PLANNING_PRIMARY_COMMAND=/opt/homebrew/bin/codex
 export SELLEMY_PLANNING_PRIMARY_KIND=codex
-export SELLEMY_PLANNING_PRIMARY_MODEL=gpt-6-sol
+export SELLEMY_PLANNING_PRIMARY_MODEL=gpt-6-astra
 export SELLEMY_PLANNING_SECONDARY_COMMAND=/opt/homebrew/bin/claude
 export SELLEMY_PLANNING_SECONDARY_KIND=claude
 export SELLEMY_PLANNING_SECONDARY_MODEL=sonnet
 export SELLEMY_PLANNING_SECONDARY_CERTIFIED=true
 export SELLEMY_CODEX_BRIEF_CHECKPOINT_TURNS=10
+export SELLEMY_CODEX_REASONING_EFFORT=low
 "$PY" - <<'PYSYNC'
 import sys
 sys.path.insert(0, '/Users/kickstart/sellemy/pipeline')

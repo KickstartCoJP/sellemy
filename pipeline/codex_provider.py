@@ -269,13 +269,18 @@ def generate_persistent(command: tuple[str, ...], model: str, schema: dict, prom
         schema_path = Path(directory) / 'schema.json'
         output_path = Path(directory) / 'response.json'
         schema_path.write_text(json.dumps(_strict_schema(schema), ensure_ascii=False), encoding='utf-8')
+        canon_bridge = Path(__file__).resolve().parents[1] / 'config' / 'sellemy-codex-canon-bootstrap.md'
+        if not canon_bridge.is_file():
+            raise CodexProviderError('Sellemy Codex canon bootstrap is missing')
         task_prompt = (
             'You are executing as the canonical BU-002 Codex Member ' + surface_key + '. '
-            'Before executing the task, read ' + str(brief_path.relative_to(root)) + '. '
-            'Treat Fixed rules as mandatory and Learned as compact operational guidance. '
-            'Do not edit the brief during normal task turns.\n\n' + prompt
+            'Before executing the task, read ' + str(canon_bridge) + ' and ' + str(brief_path.relative_to(root)) + '. '
+            'The canon bootstrap is a non-canonical runtime bridge; its Authority order tells you what is authoritative. '
+            'Treat Fixed rules in the brief as mandatory and Learned as compact operational guidance. '
+            'Do not edit either file during normal task turns.\n\n' + prompt
         )
-        args = [*command, 'exec', 'resume', '--ignore-user-config', '--ignore-rules',
+        effort = os.environ.get('SELLEMY_CODEX_REASONING_EFFORT', 'low').strip() or 'low'
+        args = [*command, '--config', f'model_reasoning_effort={effort}', 'exec', 'resume', '--ignore-user-config', '--ignore-rules',
                 '--skip-git-repo-check', '--model', model, '--output-schema', str(schema_path),
                 '--output-last-message', str(output_path), '--json', session_id, '-']
         completed = _run(args, prompt=task_prompt, timeout=timeout, cwd=root)
@@ -295,7 +300,7 @@ def generate_persistent(command: tuple[str, ...], model: str, schema: dict, prom
         return value, {
             'surface': surface_key, 'session_id': session_id, 'session_turn': turns,
             'member_binding_revision': binding['binding_revision'],
-            'member_binding_changed': binding_changed,
+            'member_binding_changed': binding_changed, 'reasoning_effort': effort,
             'brief_refreshed': brief_refreshed, 'brief_path': str(brief_path), **usage,
         }
 
