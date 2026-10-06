@@ -2,6 +2,8 @@ from __future__ import annotations
 
 import json
 import os
+import re
+import shutil
 import sqlite3
 import subprocess
 import tempfile
@@ -56,10 +58,12 @@ def _member_binding(role_id: str, *, db_path: Path | None = None) -> dict:
         raise CodexProviderError(f'Codex Member thread is not canonical UUID: {role_id}')
     return value
 
+DESIGNER_SURFACE = 'bu-codex-sellemy-designer'
+
 BRIEF_FIXED = """# Sellemy Codex Brief
 
 ## Purpose
-SellemyのPlanning / Writer / Designerを、Evidenceと現行Gateに従って高品質かつ省トークンで実行する。
+SellemyのPlanning / Writerを、Evidenceと現行Gateに従って高品質かつ省トークンで実行する。
 
 ## Fixed rules
 - Planning: 既存記事との重複を避け、購入意図・商品成立性・Evidence成立性を優先する。
@@ -129,12 +133,24 @@ def _usage(stdout: str) -> dict:
         except json.JSONDecodeError:
             continue
         usage = value.get('usage') if isinstance(value, dict) else None
-        if isinstance(usage, dict):
-            latest = {key: int(usage.get(key) or 0) for key in (
-                'input_tokens', 'cached_input_tokens', 'cache_write_input_tokens',
-                'output_tokens', 'reasoning_output_tokens', 'total_tokens',
-            )}
+        if not isinstance(usage, dict):
+            continue
+        latest = {}
+        for key in ('input_tokens', 'cached_input_tokens', 'cache_write_input_tokens',
+                    'output_tokens', 'reasoning_output_tokens'):
+            raw = usage.get(key)
+            latest[key] = int(raw) if raw is not None else None
+        if latest['input_tokens'] is not None and latest['cached_input_tokens'] is not None:
             latest['uncached_input_tokens'] = max(0, latest['input_tokens'] - latest['cached_input_tokens'])
+        else:
+            latest['uncached_input_tokens'] = None
+        raw_total = usage.get('total_tokens')
+        if raw_total is not None:
+            latest['total_tokens'] = int(raw_total)
+        elif latest['input_tokens'] is not None and latest['output_tokens'] is not None:
+            latest['total_tokens'] = latest['input_tokens'] + latest['output_tokens']
+        else:
+            latest['total_tokens'] = None
     return latest
 
 
@@ -157,12 +173,51 @@ def _runtime_paths(root: Path, surface_key: str) -> tuple[Path, Path]:
     safe = ''.join(ch if ch.isalnum() or ch in '-_' else '-' for ch in surface_key)
     directory = root / '.runtime' / 'sellemy-codex'
     directory.mkdir(parents=True, exist_ok=True)
-    return directory / f'{safe}.json', directory / 'brief.md'
+    brief_name = 'designer-brief.md' if surface_key == DESIGNER_SURFACE else 'brief.md'
+    return directory / f'{safe}.json', directory / brief_name
 
 
-def _ensure_brief(path: Path) -> None:
-    if not path.exists():
-        path.write_text(BRIEF_FIXED + '- まだ蓄積知見なし。\n', encoding='utf-8')
+def _ensure_brief(path: Path, surface_key: str) -> None:
+    if path.exists():
+        return
+    if surface_key == DESIGNER_SURFACE:
+        raise CodexProviderError('Designer brief is missing')
+    path.write_text(BRIEF_FIXED + '- まだ蓄積知見なし。\n', encoding='utf-8')
+
+
+def _designer_brief_version(text: str) -> int:
+    match = re.search(r'^Version:\s*(\d+)\s*$', text, re.MULTILINE)
+    if not match:
+        raise CodexProviderError('Designer brief has no Version')
+    return int(match.group(1))
+
+
+def _update_designer_brief(path: Path, learned: str) -> bool:
+    current = path.read_text(encoding='utf-8')
+    marker = '## Learned\n'
+    maintenance = '\n## Brief maintenance\n'
+    if marker not in current or maintenance not in current:
+        raise CodexProviderError('Designer brief structure is invalid')
+    prefix, remainder = current.split(marker, 1)
+    current_learned, suffix = remainder.split(maintenance, 1)
+    learned = learned.strip() or '- 追加の恒久知見なし。'
+    if current_learned.strip() == learned:
+        return False
+    version = _designer_brief_version(current)
+    archive = path.parent / 'archive'
+    archive.mkdir(parents=True, exist_ok=True)
+    archived = archive / f'designer-brief-v{version:03d}.md'
+    if archived.exists():
+        if archived.read_bytes() != path.read_bytes():
+            raise CodexProviderError(f'Designer brief archive conflict: {archived}')
+    else:
+        shutil.copy2(path, archived)
+    updated = prefix + marker + learned + maintenance + suffix
+    updated = re.sub(r'^Version:\s*\d+\s*$', f'Version: {version + 1}', updated, count=1, flags=re.MULTILINE)
+    temporary = path.with_suffix('.tmp')
+    temporary.write_text(updated, encoding='utf-8')
+    temporary.replace(path)
+    return True
 
 
 def _read_state(path: Path) -> dict:
@@ -243,18 +298,30 @@ def _collect_queued_turn(thread_id: str, marker: str, *, timeout: int) -> tuple[
 
 
 def _queue_turn(command: tuple[str, ...], model: str, thread_id: str, root: Path, prompt: str, *, timeout: int, effort: str) -> tuple[str, dict]:
-    marker = f'[SELLEMY-RUNTIME-{uuid.uuid4()}]'
-    message = marker + '\n' + prompt
-    args = [*command, 'queue', '--remote', 'unix://', '--thread', thread_id, '--message', message,
-            '--model', model, '--config', f'model_reasoning_effort={effort}', '--cd', str(root)]
+    args = [*command, 'exec', 'resume', '--json', '--skip-git-repo-check',
+            '--model', model, '--config', f'model_reasoning_effort={effort}', thread_id, '-']
     try:
-        completed = subprocess.run(args, text=True, capture_output=True, timeout=30, check=False, cwd=str(root))
+        completed = subprocess.run(args, input=prompt, text=True, capture_output=True,
+                                   timeout=timeout, check=False, cwd=str(root))
     except (OSError, subprocess.TimeoutExpired) as exc:
-        raise CodexProviderError(f'Codex queue invocation failed: {type(exc).__name__}') from exc
+        raise CodexProviderError(f'Codex resume invocation failed: {type(exc).__name__}') from exc
     if completed.returncode:
         diagnostic = (completed.stderr or completed.stdout or '').strip()[-1000:]
-        raise CodexProviderError(f'Codex queue failed: {diagnostic or completed.returncode}')
-    return _collect_queued_turn(thread_id, marker, timeout=timeout)
+        raise CodexProviderError(f'Codex resume failed: {diagnostic or completed.returncode}')
+    final = ''
+    for line in completed.stdout.splitlines():
+        try:
+            row = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        item = row.get('item') if isinstance(row, dict) else None
+        if row.get('type') == 'item.completed' and isinstance(item, dict) and item.get('type') == 'agent_message':
+            text = item.get('text')
+            if isinstance(text, str) and text.strip():
+                final = text.strip()
+    if not final:
+        raise CodexProviderError('Codex resume completed without final agent message')
+    return final, _usage(completed.stdout)
 
 
 def _json_object(text: str) -> dict:
@@ -315,7 +382,7 @@ def _parse_output(path: Path) -> dict:
 
 
 def _refresh_brief(command: tuple[str, ...], model: str, session_id: str, root: Path,
-                   brief_path: Path, *, timeout: int) -> dict:
+                   brief_path: Path, *, timeout: int, surface_key: str) -> dict:
     schema = {
         'type': 'object', 'additionalProperties': False, 'required': ['learned'],
         'properties': {'learned': {'type': 'string'}},
@@ -324,11 +391,16 @@ def _refresh_brief(command: tuple[str, ...], model: str, session_id: str, root: 
         schema_path = Path(directory) / 'schema.json'
         output_path = Path(directory) / 'response.json'
         schema_path.write_text(json.dumps(_strict_schema(schema), ensure_ascii=False), encoding='utf-8')
+        guidance = (
+            'Prefer reusable visual-generation patterns that improved article specificity, brand fit, composition diversity, '
+            'first-pass success, retry reduction, or token efficiency. Exclude canon rules already represented in the brief. '
+            if surface_key == DESIGNER_SURFACE else
+            'Prefer concrete writing/planning patterns that improved QA pass rate, factuality, distinctness, or token efficiency. '
+        )
         prompt = (
             'Before this Sellemy Codex session is rotated, compress only durable useful learnings from this session. '
             'Return JSON {"learned":"..."}. Keep it concise (max about 1200 Japanese characters), deduplicate prior points, '
-            'exclude transient product/task details, IDs, timestamps, and anything already covered by Fixed rules. '
-            'Prefer concrete writing/planning patterns that improved QA pass rate, factuality, distinctness, or token efficiency. '
+            'exclude transient product/task details, IDs, timestamps, and fixed canon rules. ' + guidance +
             'If there is no durable new learning, preserve the current Learned section meaning without adding filler.\n\n'
             'CURRENT_BRIEF:\n' + brief_path.read_text(encoding='utf-8')
         )
@@ -343,7 +415,10 @@ def _refresh_brief(command: tuple[str, ...], model: str, session_id: str, root: 
         learned = learned.strip()
         if len(learned) > 1200:
             raise CodexProviderError('Codex brief refresh exceeded compactness limit')
-        brief_path.write_text(BRIEF_FIXED + (learned or '- 追加の恒久知見なし。') + '\n', encoding='utf-8')
+        if surface_key == DESIGNER_SURFACE:
+            _update_designer_brief(brief_path, learned)
+        else:
+            brief_path.write_text(BRIEF_FIXED + (learned or '- 追加の恒久知見なし。') + '\n', encoding='utf-8')
         return usage
 
 
@@ -360,7 +435,7 @@ def generate_persistent(command: tuple[str, ...], model: str, schema: dict, prom
         raise CodexProviderError('Codex command or model is missing')
     root = Path(root).resolve()
     state_path, brief_path = _runtime_paths(root, surface_key)
-    _ensure_brief(brief_path)
+    _ensure_brief(brief_path, surface_key)
     binding = _member_binding(surface_key)
     session_id = binding['current_url']
     state = _read_state(state_path)
@@ -370,14 +445,14 @@ def generate_persistent(command: tuple[str, ...], model: str, schema: dict, prom
     brief_refreshed = False
 
     if binding_changed:
-        brief_usage = _refresh_brief(command, model, previous_session, root, brief_path, timeout=timeout)
+        brief_usage = _refresh_brief(command, model, previous_session, root, brief_path, timeout=timeout, surface_key=surface_key)
         _append_usage(root, surface_key, stage='brief_refresh', model=model, session_id=previous_session,
                       session_turn=int(state.get('turns') or 0) + 1, usage=brief_usage)
         brief_refreshed = True
 
     checkpoint = max_turns or int(os.environ.get('SELLEMY_CODEX_BRIEF_CHECKPOINT_TURNS', '10'))
     if not binding_changed and previous_session == session_id and turns >= checkpoint:
-        brief_usage = _refresh_brief(command, model, session_id, root, brief_path, timeout=timeout)
+        brief_usage = _refresh_brief(command, model, session_id, root, brief_path, timeout=timeout, surface_key=surface_key)
         _append_usage(root, surface_key, stage='brief_refresh', model=model, session_id=session_id,
                       session_turn=turns + 1, usage=brief_usage)
         brief_refreshed = True
@@ -390,8 +465,10 @@ def generate_persistent(command: tuple[str, ...], model: str, schema: dict, prom
     task_prompt = (
         'You are executing as the canonical BU-002 Codex Member ' + surface_key + '. '
         'Before executing the task, read ' + str(canon_bridge) + ' and ' + str(brief_path.relative_to(root)) + '. '
-        'The canon bootstrap is a non-canonical runtime bridge; its Authority order tells you what is authoritative. '
-        'Treat Fixed rules in the brief as mandatory and Learned as compact operational guidance. '
+        'The canon bootstrap is a non-canonical runtime bridge; its Authority order tells you what is authoritative. ' +
+        ('Treat the Designer brief as compact non-canonical operational guidance; current Visual canon and current task input win. '
+         if surface_key == DESIGNER_SURFACE else
+         'Treat Fixed rules in the brief as mandatory and Learned as compact operational guidance. ') +
         'Do not edit either file during normal task turns.\n\n' + prompt +
         '\n\nYour final response MUST be one raw JSON object only, with no Markdown or commentary. OUTPUT_SCHEMA:\n' +
         json.dumps(strict_schema, ensure_ascii=False)

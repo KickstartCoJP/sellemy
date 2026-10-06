@@ -98,6 +98,48 @@ class CodexProviderTests(unittest.TestCase):
             self.assertEqual(meta['session_id'], binding['current_url'])
             self.assertEqual(calls, [binding['current_url']] * 3)
 
+    def test_queue_turn_uses_synchronous_exec_resume(self):
+        stdout = '\n'.join([
+            json.dumps({'type': 'thread.started', 'thread_id': 'thread-1'}),
+            json.dumps({'type': 'item.completed', 'item': {'type': 'agent_message', 'text': '{"ok":true}'}}),
+            json.dumps({'type': 'turn.completed', 'usage': {
+                'input_tokens': 100, 'cached_input_tokens': 60, 'cache_write_input_tokens': 0,
+                'output_tokens': 10, 'reasoning_output_tokens': 2,
+            }}),
+        ])
+        completed = subprocess.CompletedProcess([], 0, stdout=stdout, stderr='')
+        with tempfile.TemporaryDirectory() as tmp, patch.object(codex_provider.subprocess, 'run', return_value=completed) as run:
+            final, usage = codex_provider._queue_turn(
+                ('/bin/codex',), 'model', 'thread-1', Path(tmp), 'PROMPT', timeout=30, effort='low')
+        args = run.call_args.args[0]
+        self.assertEqual(args[:3], ['/bin/codex', 'exec', 'resume'])
+        self.assertIn('thread-1', args)
+        self.assertEqual(run.call_args.kwargs['input'], 'PROMPT')
+        self.assertEqual(final, '{"ok":true}')
+        self.assertEqual(usage['total_tokens'], 110)
+        self.assertEqual(usage['uncached_input_tokens'], 40)
+
+    def test_designer_uses_separate_brief_path(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            _, writer_brief = codex_provider._runtime_paths(root, 'bu-codex-sellemy-writer')
+            _, designer_brief = codex_provider._runtime_paths(root, codex_provider.DESIGNER_SURFACE)
+            self.assertEqual(writer_brief.name, 'brief.md')
+            self.assertEqual(designer_brief.name, 'designer-brief.md')
+
+    def test_designer_brief_update_archives_and_increments_version(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / 'designer-brief.md'
+            path.write_text('# Sellemy Designer Brief\n\nVersion: 7\n\n## Learned\n- old\n\n## Brief maintenance\n- keep compact\n', encoding='utf-8')
+            self.assertTrue(codex_provider._update_designer_brief(path, '- new'))
+            updated = path.read_text(encoding='utf-8')
+            self.assertIn('Version: 8', updated)
+            self.assertIn('## Learned\n- new', updated)
+            archived = path.parent / 'archive' / 'designer-brief-v007.md'
+            self.assertTrue(archived.is_file())
+            self.assertIn('Version: 7', archived.read_text(encoding='utf-8'))
+            self.assertFalse(codex_provider._update_designer_brief(path, '- new'))
+            self.assertIn('Version: 8', path.read_text(encoding='utf-8'))
 
 
 if __name__ == '__main__':

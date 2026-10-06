@@ -58,7 +58,7 @@ Responsibility: produce one article-specific production eyecatch from the suppli
 - Runtime records the turn token counters and the production receipt records the same usage with thread/binding provenance.
 
 ## Learning handoff
-- Read .runtime/sellemy-codex/brief.md before each task.
-- The brief contains only compact reusable learnings, not article/task history.
-- Do not edit the brief during normal task turns.
-- On Member binding change or configured checkpoint, Runtime compresses durable useful learnings into the brief, deduplicating and removing stale/transient details.
+- Planning / Writer read `.runtime/sellemy-codex/brief.md`; Designer reads `.runtime/sellemy-codex/designer-brief.md`.
+- Each brief contains only compact reusable learnings, not article/task history.
+- Do not edit briefs during normal task turns.
+- On Member binding change or configured checkpoint, Runtime compresses durable useful learnings into the matching brief, deduplicating and removing stale/transient details.
