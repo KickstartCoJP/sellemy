@@ -5,6 +5,7 @@ import os
 import sqlite3
 import subprocess
 import tempfile
+import time
 import uuid
 from pathlib import Path
 
@@ -185,6 +186,121 @@ def _run(command: list[str], *, prompt: str, timeout: int, cwd: Path) -> subproc
         raise CodexProviderError(f'Codex invocation failed: {type(exc).__name__}') from exc
 
 
+def _session_file(thread_id: str) -> Path | None:
+    root = Path.home() / '.codex' / 'sessions'
+    files = list(root.glob(f'**/*{thread_id}*.jsonl'))
+    return max(files, key=lambda path: path.stat().st_mtime) if files else None
+
+
+def _turn_usage(payload: dict) -> dict:
+    raw = payload.get('turn_token_usage') if isinstance(payload, dict) else None
+    if not isinstance(raw, dict):
+        return {}
+    value = {key: int(raw.get(key) or 0) for key in (
+        'input_tokens', 'cached_input_tokens', 'cache_write_input_tokens',
+        'output_tokens', 'reasoning_output_tokens',
+    )}
+    value['uncached_input_tokens'] = max(0, value['input_tokens'] - value['cached_input_tokens'])
+    return value
+
+
+def _collect_queued_turn(thread_id: str, marker: str, *, timeout: int) -> tuple[str, dict]:
+    deadline = time.monotonic() + timeout
+    while time.monotonic() < deadline:
+        path = _session_file(thread_id)
+        if path and path.is_file():
+            active = False
+            usage: dict = {}
+            try:
+                lines = path.read_text(encoding='utf-8', errors='ignore').splitlines()
+            except OSError:
+                lines = []
+            for line in lines:
+                try:
+                    row = json.loads(line)
+                except json.JSONDecodeError:
+                    continue
+                payload = row.get('payload') if isinstance(row, dict) else None
+                payload = payload if isinstance(payload, dict) else {}
+                if row.get('type') == 'response_item' and payload.get('type') == 'message' and payload.get('role') == 'user':
+                    text = ''.join(item.get('text', '') for item in payload.get('content', []) if isinstance(item, dict))
+                    active = marker in text
+                    usage = {} if active else usage
+                elif active and row.get('type') == 'token_usage_record':
+                    current = _turn_usage(payload)
+                    if current:
+                        usage = current
+                elif active and row.get('type') == 'event_msg' and payload.get('type') == 'task_complete':
+                    final = payload.get('last_agent_message')
+                    if not isinstance(final, str) or not final.strip():
+                        raise CodexProviderError('queued Codex turn completed without final message')
+                    return final.strip(), usage
+        time.sleep(0.5)
+    raise CodexProviderError(f'queued Codex turn timed out after {timeout}s')
+
+
+def _queue_turn(command: tuple[str, ...], model: str, thread_id: str, root: Path, prompt: str, *, timeout: int, effort: str) -> tuple[str, dict]:
+    marker = f'[SELLEMY-RUNTIME-{uuid.uuid4()}]'
+    message = marker + '\n' + prompt
+    args = [*command, 'queue', '--remote', 'unix://', '--thread', thread_id, '--message', message,
+            '--model', model, '--config', f'model_reasoning_effort={effort}', '--cd', str(root)]
+    try:
+        completed = subprocess.run(args, text=True, capture_output=True, timeout=30, check=False, cwd=str(root))
+    except (OSError, subprocess.TimeoutExpired) as exc:
+        raise CodexProviderError(f'Codex queue invocation failed: {type(exc).__name__}') from exc
+    if completed.returncode:
+        diagnostic = (completed.stderr or completed.stdout or '').strip()[-1000:]
+        raise CodexProviderError(f'Codex queue failed: {diagnostic or completed.returncode}')
+    return _collect_queued_turn(thread_id, marker, timeout=timeout)
+
+
+def _json_object(text: str) -> dict:
+    raw = text.strip()
+    if raw.startswith('```') and raw.endswith('```'):
+        raw = raw.split('\n', 1)[1].rsplit('```', 1)[0].strip()
+    try:
+        value = json.loads(raw)
+    except json.JSONDecodeError as exc:
+        raise CodexProviderError('Codex final response was not a JSON object') from exc
+    if not isinstance(value, dict):
+        raise CodexProviderError('Codex response must be an object')
+    return value
+
+
+def _validate_required_shape(value: object, schema: object, path: str = '$') -> None:
+    if not isinstance(schema, dict):
+        return
+    expected = schema.get('type')
+    if expected == 'object':
+        if not isinstance(value, dict):
+            raise CodexProviderError(f'Codex schema mismatch at {path}: object required')
+        for key in schema.get('required', []):
+            if key not in value:
+                raise CodexProviderError(f'Codex schema mismatch at {path}: missing {key}')
+        properties = schema.get('properties', {})
+        for key, child in properties.items():
+            if key in value:
+                _validate_required_shape(value[key], child, path + '.' + key)
+    elif expected == 'array':
+        if not isinstance(value, list):
+            raise CodexProviderError(f'Codex schema mismatch at {path}: array required')
+        if isinstance(schema.get('minItems'), int) and len(value) < schema['minItems']:
+            raise CodexProviderError(f'Codex schema mismatch at {path}: too few items')
+        if isinstance(schema.get('maxItems'), int) and len(value) > schema['maxItems']:
+            raise CodexProviderError(f'Codex schema mismatch at {path}: too many items')
+        child = schema.get('items')
+        for index, item in enumerate(value):
+            _validate_required_shape(item, child, f'{path}[{index}]')
+    elif expected == 'string' and not isinstance(value, str):
+        raise CodexProviderError(f'Codex schema mismatch at {path}: string required')
+    elif expected == 'boolean' and not isinstance(value, bool):
+        raise CodexProviderError(f'Codex schema mismatch at {path}: boolean required')
+    elif expected == 'integer' and (not isinstance(value, int) or isinstance(value, bool)):
+        raise CodexProviderError(f'Codex schema mismatch at {path}: integer required')
+    elif expected == 'number' and (not isinstance(value, (int, float)) or isinstance(value, bool)):
+        raise CodexProviderError(f'Codex schema mismatch at {path}: number required')
+
+
 def _parse_output(path: Path) -> dict:
     try:
         value = json.loads(path.read_text(encoding='utf-8'))
@@ -213,20 +329,19 @@ def _refresh_brief(command: tuple[str, ...], model: str, session_id: str, root: 
             'If there is no durable new learning, preserve the current Learned section meaning without adding filler.\n\n'
             'CURRENT_BRIEF:\n' + brief_path.read_text(encoding='utf-8')
         )
-        args = [*command, 'exec', 'resume', '--ignore-user-config', '--ignore-rules', '--skip-git-repo-check',
-                '--model', model, '--output-schema', str(schema_path),
-                '--output-last-message', str(output_path), '--json', session_id, '-']
-        completed = _run(args, prompt=prompt, timeout=timeout, cwd=root)
-        if completed.returncode:
-            raise CodexProviderError(f'Codex brief refresh exited {completed.returncode}')
-        learned = _parse_output(output_path).get('learned')
+        effort = os.environ.get('SELLEMY_CODEX_REASONING_EFFORT', 'low').strip() or 'low'
+        queue_prompt = prompt + '\n\nReturn one raw JSON object only, no Markdown. OUTPUT_SCHEMA:\n' + json.dumps(_strict_schema(schema), ensure_ascii=False)
+        final, usage = _queue_turn(command, model, session_id, root, queue_prompt, timeout=timeout, effort=effort)
+        value = _json_object(final)
+        _validate_required_shape(value, _strict_schema(schema))
+        learned = value.get('learned')
         if not isinstance(learned, str):
             raise CodexProviderError('Codex brief refresh returned no learned text')
         learned = learned.strip()
         if len(learned) > 1200:
             raise CodexProviderError('Codex brief refresh exceeded compactness limit')
         brief_path.write_text(BRIEF_FIXED + (learned or '- 追加の恒久知見なし。') + '\n', encoding='utf-8')
-        return _usage(completed.stdout)
+        return usage
 
 
 def generate_persistent(command: tuple[str, ...], model: str, schema: dict, prompt: str, *,
@@ -265,44 +380,37 @@ def generate_persistent(command: tuple[str, ...], model: str, schema: dict, prom
         brief_refreshed = True
         turns = 0
 
-    with tempfile.TemporaryDirectory(prefix='sellemy-codex-') as directory:
-        schema_path = Path(directory) / 'schema.json'
-        output_path = Path(directory) / 'response.json'
-        schema_path.write_text(json.dumps(_strict_schema(schema), ensure_ascii=False), encoding='utf-8')
-        canon_bridge = Path(__file__).resolve().parents[1] / 'config' / 'sellemy-codex-canon-bootstrap.md'
-        if not canon_bridge.is_file():
-            raise CodexProviderError('Sellemy Codex canon bootstrap is missing')
-        task_prompt = (
-            'You are executing as the canonical BU-002 Codex Member ' + surface_key + '. '
-            'Before executing the task, read ' + str(canon_bridge) + ' and ' + str(brief_path.relative_to(root)) + '. '
-            'The canon bootstrap is a non-canonical runtime bridge; its Authority order tells you what is authoritative. '
-            'Treat Fixed rules in the brief as mandatory and Learned as compact operational guidance. '
-            'Do not edit either file during normal task turns.\n\n' + prompt
-        )
-        effort = os.environ.get('SELLEMY_CODEX_REASONING_EFFORT', 'low').strip() or 'low'
-        args = [*command, '--config', f'model_reasoning_effort={effort}', 'exec', 'resume', '--ignore-user-config', '--ignore-rules',
-                '--skip-git-repo-check', '--model', model, '--output-schema', str(schema_path),
-                '--output-last-message', str(output_path), '--json', session_id, '-']
-        completed = _run(args, prompt=task_prompt, timeout=timeout, cwd=root)
-        if completed.returncode:
-            diagnostic = (completed.stderr or completed.stdout or '').strip()[-1000:]
-            raise CodexProviderError(f'Codex exited {completed.returncode}: {diagnostic}')
-        value = _parse_output(output_path)
-        turns += 1
-        usage = _usage(completed.stdout)
-        _append_usage(root, surface_key, stage=stage or 'generation', model=model, session_id=session_id,
-                      session_turn=turns, usage=usage)
-        _write_state(state_path, {
-            'surface_key': surface_key, 'session_id': session_id, 'turns': turns,
-            'model': model, 'brief_path': str(brief_path),
-            'member_binding_revision': binding['binding_revision'],
-        })
-        return value, {
-            'surface': surface_key, 'session_id': session_id, 'session_turn': turns,
-            'member_binding_revision': binding['binding_revision'],
-            'member_binding_changed': binding_changed, 'reasoning_effort': effort,
-            'brief_refreshed': brief_refreshed, 'brief_path': str(brief_path), **usage,
-        }
+    canon_bridge = Path(__file__).resolve().parents[1] / 'config' / 'sellemy-codex-canon-bootstrap.md'
+    if not canon_bridge.is_file():
+        raise CodexProviderError('Sellemy Codex canon bootstrap is missing')
+    strict_schema = _strict_schema(schema)
+    task_prompt = (
+        'You are executing as the canonical BU-002 Codex Member ' + surface_key + '. '
+        'Before executing the task, read ' + str(canon_bridge) + ' and ' + str(brief_path.relative_to(root)) + '. '
+        'The canon bootstrap is a non-canonical runtime bridge; its Authority order tells you what is authoritative. '
+        'Treat Fixed rules in the brief as mandatory and Learned as compact operational guidance. '
+        'Do not edit either file during normal task turns.\n\n' + prompt +
+        '\n\nYour final response MUST be one raw JSON object only, with no Markdown or commentary. OUTPUT_SCHEMA:\n' +
+        json.dumps(strict_schema, ensure_ascii=False)
+    )
+    effort = os.environ.get('SELLEMY_CODEX_REASONING_EFFORT', 'low').strip() or 'low'
+    final, usage = _queue_turn(command, model, session_id, root, task_prompt, timeout=timeout, effort=effort)
+    value = _json_object(final)
+    _validate_required_shape(value, strict_schema)
+    turns += 1
+    _append_usage(root, surface_key, stage=stage or 'generation', model=model, session_id=session_id,
+                  session_turn=turns, usage=usage)
+    _write_state(state_path, {
+        'surface_key': surface_key, 'session_id': session_id, 'turns': turns,
+        'model': model, 'brief_path': str(brief_path),
+        'member_binding_revision': binding['binding_revision'],
+    })
+    return value, {
+        'surface': surface_key, 'session_id': session_id, 'session_turn': turns,
+        'member_binding_revision': binding['binding_revision'],
+        'member_binding_changed': binding_changed, 'reasoning_effort': effort,
+        'brief_refreshed': brief_refreshed, 'brief_path': str(brief_path), **usage,
+    }
 
 
 def generate(command: tuple[str, ...], model: str, schema: dict, prompt: str, *, timeout: int) -> dict:
