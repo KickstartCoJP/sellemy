@@ -178,8 +178,7 @@ class RuntimeFailClosedTests(unittest.TestCase):
         controller.current_state.return_value = {'publish_paused': False, 'target_per_day': 2}
         return controller
 
-    @patch.object(growth_runtime, 'unresolved_pending', return_value=[])
-    @patch.object(growth_runtime, '_has_valid_chat_eyecatch', return_value=True)
+    @patch.object(growth_runtime, 'ensure_codex_eyecatch', return_value={'generation_method': 'codex_cli_imagegen'})
     @patch.object(growth_runtime, 'require_clean_current_main', return_value='abc')
     @patch.object(growth_runtime, 'select_viable_topic', return_value=({'slug': 'x', 'category': 'gadget', 'query': 'x', 'title': 'x', 'comparison_axes': [{'id': 'use', 'label': '用途'}]}, [{'asin': f'B0TEST{i:04d}'} for i in range(6)], []))
     @patch.object(growth_runtime, 'select_six', return_value=([{'asin': f'B0TEST{i:04d}'} for i in range(6)], {}))
@@ -208,8 +207,7 @@ class RuntimeFailClosedTests(unittest.TestCase):
         topic = {'slug': 'test-widgets-6-picks', 'category': 'gadget', 'query': 'x', 'title': 'x', 'comparison_axes': [{'id': 'use', 'label': '用途'}]}
         products = [{'asin': f'B0TEST{i:04d}'} for i in range(6)]
         with (
-            patch.object(growth_runtime, 'unresolved_pending', return_value=[]),
-            patch.object(growth_runtime, '_has_valid_chat_eyecatch', return_value=True),
+            patch.object(growth_runtime, 'ensure_codex_eyecatch', return_value={'generation_method': 'codex_cli_imagegen'}),
             patch.object(growth_runtime, 'require_clean_current_main', return_value='abc'),
             patch.object(growth_runtime, 'select_viable_topic', return_value=(topic, products, [])),
             patch.object(growth_runtime, 'select_six', return_value=(products, {})),
@@ -256,9 +254,7 @@ class RuntimeFailClosedTests(unittest.TestCase):
         controller.evaluate_and_record.return_value = ({'event_id': 'feedback-1'}, {'target_per_day': 2})
         gate = nullcontext({'head_after': 'base', 'origin_main': 'base', 'clean': True})
         with (
-            patch.object(growth_runtime, 'unresolved_pending', return_value=[]),
-            patch.object(growth_runtime, 'unresolved_pending', return_value=[]),
-            patch.object(growth_runtime, '_has_valid_chat_eyecatch', return_value=True),
+            patch.object(growth_runtime, 'ensure_codex_eyecatch', return_value={'generation_method': 'codex_cli_imagegen'}),
             patch.object(growth_runtime, 'require_clean_current_main', return_value='base'),
             patch.object(growth_runtime, 'select_viable_topic', return_value=(topic, products, [])),
             patch.object(growth_runtime, 'select_six', return_value=(products, {})),
@@ -285,8 +281,7 @@ class RuntimeFailClosedTests(unittest.TestCase):
         controller.current_state.return_value = {'publish_paused': False, 'target_per_day': 2}
         controller.evaluate_and_record.return_value = ({'event_id': 'feedback-1'}, {'target_per_day': 2})
         with (
-            patch.object(growth_runtime, 'unresolved_pending', return_value=[]),
-            patch.object(growth_runtime, '_has_valid_chat_eyecatch', return_value=True),
+            patch.object(growth_runtime, 'ensure_codex_eyecatch', return_value={'generation_method': 'codex_cli_imagegen'}),
             patch.object(growth_runtime, 'require_clean_current_main', return_value='abc'),
             patch.object(growth_runtime, 'select_viable_topic', return_value=(topic, products, [])),
             patch.object(growth_runtime, 'select_six', return_value=(products, {})),
@@ -345,39 +340,45 @@ class EvidenceContentDuplicateGateTests(unittest.TestCase):
         with self.assertRaisesRegex(PayloadValidationError, 'content-duplicate title'):
             validate_evidence(evidence)
 
-class OwnerEyecatchBridgeTests(unittest.TestCase):
-    def test_unresolved_owner_eyecatch_blocks_new_topic_before_admission(self):
-        controller = Mock()
-        controller.current_state.return_value = {'publish_paused': False, 'target_per_day': 48}
-        with (
-            patch.object(growth_runtime, 'unresolved_pending', return_value=[{'slug': 'pending-slug'}]),
-            patch.object(growth_runtime, 'select_viable_topic') as planning,
-        ):
-            result = growth_runtime.run(publish=True, scheduled=True, report_path=None, controller=controller)
-        self.assertEqual(result['status'], 'awaiting_owner_eyecatch')
-        self.assertEqual(result['pending_eyecatch']['slug'], 'pending-slug')
-        planning.assert_not_called()
-        controller.admit_scheduled.assert_not_called()
 
-    def test_missing_chat_eyecatch_routes_exact_article_to_owner_and_stops_before_apply(self):
-        topic = {'slug': 'owner-eyecatch-test', 'category': 'gadget', 'query': 'x', 'title': 'Owner Eyecatch Test', 'comparison_axes': [{'id': 'use', 'label': '用途'}]}
+class DesignerEyecatchRouteTests(unittest.TestCase):
+    def test_publish_invokes_designer_after_writer_qa_pass(self):
+        topic = {'slug': 'test-widgets-6-picks', 'category': 'gadget', 'query': 'x', 'title': 'x', 'comparison_axes': [{'id': 'use', 'label': '用途'}]}
         products = [{'asin': f'B0TEST{i:04d}'} for i in range(6)]
-        controller = Mock()
-        controller.current_state.return_value = {'publish_paused': False, 'target_per_day': 2}
+        controller = Mock(); controller.current_state.return_value = {'publish_paused': False, 'target_per_day': 2}
+        controller.evaluate_and_record.return_value = ({'event_id': 'feedback-1'}, {'target_per_day': 2})
         with (
-            patch.object(growth_runtime, 'unresolved_pending', return_value=[]),
             patch.object(growth_runtime, 'require_clean_current_main', return_value='abc'),
             patch.object(growth_runtime, 'select_viable_topic', return_value=(topic, products, [])),
             patch.object(growth_runtime, 'select_six', return_value=(products, {})),
             patch.object(growth_runtime, 'build_evidence', return_value=valid_evidence()),
             patch.object(growth_runtime, 'invoke_writer', return_value=(valid_payload(), {'runtime': 'test'})),
             patch.object(growth_runtime, 'evaluate_candidate', return_value=('html', [], {'overall_pass': True})),
-            patch.object(growth_runtime, '_has_valid_chat_eyecatch', return_value=False),
-            patch.object(growth_runtime, 'ensure_owner_request', return_value={'task_id': 'TASK-X', 'queued': True}) as owner_request,
+            patch.object(growth_runtime, 'ensure_codex_eyecatch', return_value={'generation_method': 'codex_cli_imagegen'}) as designer,
+            patch.object(growth_runtime, '_write_json'),
+            patch.object(growth_runtime, 'publish_payload', return_value={'applied': True}),
+            patch.object(growth_runtime, '_publish', return_value='published-commit'),
+            patch.object(growth_runtime.PublishGate, 'acquire', return_value=nullcontext({'head_after': 'abc', 'origin_main': 'abc', 'clean': True})),
+        ):
+            result = growth_runtime.run(publish=True, report_path=None, controller=controller)
+        self.assertTrue(result['published'])
+        designer.assert_called_once()
+        self.assertEqual(result['eyecatch']['generation_method'], 'codex_cli_imagegen')
+
+    def test_designer_failure_fails_closed_before_publication(self):
+        topic = {'slug': 'test-widgets-6-picks', 'category': 'gadget', 'query': 'x', 'title': 'x', 'comparison_axes': [{'id': 'use', 'label': '用途'}]}
+        products = [{'asin': f'B0TEST{i:04d}'} for i in range(6)]
+        controller = Mock(); controller.current_state.return_value = {'publish_paused': False, 'target_per_day': 2}
+        with (
+            patch.object(growth_runtime, 'require_clean_current_main', return_value='abc'),
+            patch.object(growth_runtime, 'select_viable_topic', return_value=(topic, products, [])),
+            patch.object(growth_runtime, 'select_six', return_value=(products, {})),
+            patch.object(growth_runtime, 'build_evidence', return_value=valid_evidence()),
+            patch.object(growth_runtime, 'invoke_writer', return_value=(valid_payload(), {'runtime': 'test'})),
+            patch.object(growth_runtime, 'evaluate_candidate', return_value=('html', [], {'overall_pass': True})),
+            patch.object(growth_runtime, 'ensure_codex_eyecatch', side_effect=growth_runtime.CodexEyecatchError('designer unavailable')),
             patch.object(growth_runtime, 'publish_payload') as publish_stage,
         ):
-            result = growth_runtime.run(publish=True, scheduled=False, report_path=None, controller=controller)
-        self.assertEqual(result['status'], 'awaiting_owner_eyecatch')
-        self.assertEqual(result['owner_eyecatch_request']['task_id'], 'TASK-X')
-        owner_request.assert_called_once()
+            with self.assertRaisesRegex(growth_runtime.GrowthRuntimeError, 'Codex designer eyecatch failed'):
+                growth_runtime.run(publish=True, report_path=None, controller=controller)
         publish_stage.assert_not_called()

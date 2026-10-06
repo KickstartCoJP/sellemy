@@ -7,6 +7,7 @@ import subprocess
 import tempfile
 import time
 import uuid
+from datetime import datetime, timezone
 from pathlib import Path
 
 
@@ -58,7 +59,7 @@ def _member_binding(role_id: str, *, db_path: Path | None = None) -> dict:
 BRIEF_FIXED = """# Sellemy Codex Brief
 
 ## Purpose
-SellemyのPlanning / Writerを、Evidenceと現行Gateに従って高品質かつ省トークンで実行する。
+SellemyのPlanning / Writer / Designerを、Evidenceと現行Gateに従って高品質かつ省トークンで実行する。
 
 ## Fixed rules
 - Planning: 既存記事との重複を避け、購入意図・商品成立性・Evidence成立性を優先する。
@@ -67,7 +68,7 @@ SellemyのPlanning / Writerを、Evidenceと現行Gateに従って高品質か�
 - Amazon listing titleの丸写し、ASIN、内部運用語、固定価格帯構造、根拠のない断定は禁止。
 - Writer本文は自然な日本語で、商品ごとの差を具体化する。scriptによる水増しは禁止。
 - 後段Review / Machine QA / Publish Gateは緩和しない。情報不足はfail-closed。
-- アイキャッチは担当外。production画像はsellemy-ops Chatで生成する。
+- Planning / Writerはアイキャッチ生成を担当しない。production画像はbu-codex-sellemy-designerがCodex CLI上のbuilt-in image_genで生成する。
 
 ## Learned
 """
@@ -131,21 +132,23 @@ def _usage(stdout: str) -> dict:
         if isinstance(usage, dict):
             latest = {key: int(usage.get(key) or 0) for key in (
                 'input_tokens', 'cached_input_tokens', 'cache_write_input_tokens',
-                'output_tokens', 'reasoning_output_tokens',
+                'output_tokens', 'reasoning_output_tokens', 'total_tokens',
             )}
             latest['uncached_input_tokens'] = max(0, latest['input_tokens'] - latest['cached_input_tokens'])
     return latest
 
 
 def _append_usage(root: Path, surface_key: str, *, stage: str, model: str, session_id: str,
-                  session_turn: int, usage: dict) -> None:
+                  session_turn: int, usage: dict, operation_key: str = '') -> None:
     if not usage:
         return
     directory = root / '.runtime' / 'sellemy-codex'
     directory.mkdir(parents=True, exist_ok=True)
     row = {
-        'surface': surface_key, 'stage': stage, 'model': model,
-        'session_id': session_id, 'session_turn': session_turn, **usage,
+        'recorded_at': datetime.now(timezone.utc).isoformat(),
+        'surface': surface_key, 'stage': stage, 'operation_key': operation_key or None, 'model': model,
+        'session_id': session_id, 'session_turn': session_turn,
+        'usage_source': 'codex_rollout.turn_token_usage', **usage,
     }
     with (directory / 'usage.jsonl').open('a', encoding='utf-8') as stream:
         stream.write(json.dumps(row, ensure_ascii=False, sort_keys=True) + '\n')
@@ -198,7 +201,7 @@ def _turn_usage(payload: dict) -> dict:
         return {}
     value = {key: int(raw.get(key) or 0) for key in (
         'input_tokens', 'cached_input_tokens', 'cache_write_input_tokens',
-        'output_tokens', 'reasoning_output_tokens',
+        'output_tokens', 'reasoning_output_tokens', 'total_tokens',
     )}
     value['uncached_input_tokens'] = max(0, value['input_tokens'] - value['cached_input_tokens'])
     return value
@@ -346,7 +349,7 @@ def _refresh_brief(command: tuple[str, ...], model: str, session_id: str, root: 
 
 def generate_persistent(command: tuple[str, ...], model: str, schema: dict, prompt: str, *,
                         timeout: int, root: Path, surface_key: str = 'bu-codex-sellemy',
-                        max_turns: int | None = None, stage: str = '') -> tuple[dict, dict]:
+                        max_turns: int | None = None, stage: str = '', usage_key: str = '') -> tuple[dict, dict]:
     """Generate on the Codex thread currently bound to a canonical BU-002 Member.
 
     Member canon is authoritative for thread identity. Local state only remembers the
@@ -399,7 +402,7 @@ def generate_persistent(command: tuple[str, ...], model: str, schema: dict, prom
     _validate_required_shape(value, strict_schema)
     turns += 1
     _append_usage(root, surface_key, stage=stage or 'generation', model=model, session_id=session_id,
-                  session_turn=turns, usage=usage)
+                  session_turn=turns, usage=usage, operation_key=usage_key)
     _write_state(state_path, {
         'surface_key': surface_key, 'session_id': session_id, 'turns': turns,
         'model': model, 'brief_path': str(brief_path),

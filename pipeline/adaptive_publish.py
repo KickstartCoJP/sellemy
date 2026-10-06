@@ -171,7 +171,17 @@ def evaluate_published_artifact(
         content_issues.append('post_publish_review_gate_failed')
     if not qa.get('overall_pass'):
         content_issues.append('post_publish_machine_qa_failed')
-    if receipt.get('generation_method') != 'generative_ai' or not receipt.get('image_sha256'):
+    current_codex_receipt = (
+        receipt.get('generation_method') == 'codex_cli_imagegen'
+        and receipt.get('role_id') == 'bu-codex-sellemy-designer'
+        and bool(receipt.get('image_sha256'))
+    )
+    historical_legacy_receipt = (
+        not growth_run.get('eyecatch')
+        and receipt.get('generation_method') in {'generative_ai', 'chatgpt_chat'}
+        and bool(receipt.get('image_sha256'))
+    )
+    if not (current_codex_receipt or historical_legacy_receipt):
         content_issues.append('eyecatch_receipt_invalid')
     if not growth_run.get('published') or growth_run.get('commit') != commit:
         content_issues.append('publication_evidence_mismatch')

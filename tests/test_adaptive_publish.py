@@ -282,7 +282,7 @@ class PostPublishEvaluatorTests(unittest.TestCase):
         (base / 'data' / 'payloads' / f'{slug}.json').write_text(json.dumps(payload, ensure_ascii=False), encoding='utf-8')
         (base / 'data' / 'evidence' / f'{slug}.json').write_text(json.dumps(evidence, ensure_ascii=False), encoding='utf-8')
         (base / 'data' / 'eyecatch-receipts' / f'{slug}.json').write_text(json.dumps({
-            'generation_method': 'generative_ai', 'image_sha256': 'abc123',
+            'generation_method': 'codex_cli_imagegen', 'role_id': 'bu-codex-sellemy-designer', 'image_sha256': 'abc123',
         }), encoding='utf-8')
         (base / 'article' / payload['category'] / f'{slug}.html').write_text(
             render_article(payload, evidence), encoding='utf-8'

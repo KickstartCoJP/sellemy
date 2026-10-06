@@ -17,7 +17,7 @@ from affiliate_config import AMAZON_TRACKING_ID
 from adaptive_publish import AdaptivePublishController
 from discovery_adapters import AutositeDiscoveryAdapter
 from feedback_task_bridge import sync_feedback_to_task_event
-from eyecatch_owner_bridge import ensure_owner_request, unresolved_pending
+from codex_eyecatch import CodexEyecatchError, ensure_codex_eyecatch
 from payload_schema import validate_evidence, validate_payload, match_refs
 from planning_runtime import PlanningError, discover_candidates, rank_candidates
 from publish_gate import (
@@ -152,18 +152,6 @@ def _write_json(path: Path, value: dict) -> None:
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 
 
-def _has_valid_chat_eyecatch(slug: str) -> bool:
-    eyecatch_path = ROOT / 'img' / slug / f'{slug}.png'
-    receipt_path = ROOT / 'data' / 'eyecatch-receipts' / f'{slug}.json'
-    if not eyecatch_path.is_file() or not receipt_path.is_file():
-        return False
-    try:
-        receipt = json.loads(receipt_path.read_text(encoding='utf-8'))
-    except (OSError, json.JSONDecodeError):
-        return False
-    return receipt.get('generation_method') == 'chatgpt_chat'
-
-
 def _expected_publish_paths(slug: str, category: str) -> set[str]:
     return {
         f'article/{category}/{slug}.html', f'img/{slug}/{slug}.png',
@@ -226,11 +214,6 @@ def run(
         adaptive = controller or AdaptivePublishController(ROOT)
         controller_state = adaptive.current_state()
         result['controller_before'] = controller_state
-        pending_eyecatches = unresolved_pending()
-        if publish and pending_eyecatches:
-            result['status'] = 'awaiting_owner_eyecatch'
-            result['pending_eyecatch'] = pending_eyecatches[0]
-            return result
         if publish and controller_state['publish_paused']:
             result['status'] = 'paused_by_controller'
             result['controller_decision'] = {'allowed': False, 'reason': 'ceo_alert_pause'}
@@ -265,14 +248,13 @@ def run(
         if findings or not qa['overall_pass']:
             raise GrowthRuntimeError('mandatory Review/QA gates did not pass; no files applied or published')
         if publish:
-            if not _has_valid_chat_eyecatch(topic['slug']):
-                owner_request = ensure_owner_request(
+            try:
+                result['eyecatch'] = ensure_codex_eyecatch(
                     slug=topic['slug'], title=topic['title'], category=topic['category'],
                     evidence=evidence, payload=payload,
                 )
-                result['status'] = 'awaiting_owner_eyecatch'
-                result['owner_eyecatch_request'] = owner_request
-                return result
+            except CodexEyecatchError as exc:
+                raise GrowthRuntimeError(f'Codex designer eyecatch failed: {exc}') from exc
         def apply_publication_unit() -> None:
             _write_json(ROOT / 'data' / 'evidence' / f'{topic["slug"]}.json', evidence)
             _write_json(ROOT / 'data' / 'payloads' / f'{topic["slug"]}.json', payload)
