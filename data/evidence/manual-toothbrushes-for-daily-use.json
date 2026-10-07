@@ -1,0 +1,122 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/manual-toothbrushes-for-daily-use.html",
+  "category": "beauty",
+  "comparison_axes": [
+    {
+      "id": "head",
+      "keywords": [
+        "ヘッド幅",
+        "ヘッド長",
+        "薄型ヘッド"
+      ],
+      "label": "ヘッドの大きさと厚み"
+    },
+    {
+      "id": "bristles",
+      "keywords": [
+        "ラウンド毛",
+        "テーパード毛",
+        "毛の硬さ"
+      ],
+      "label": "毛先の形状と硬さ"
+    },
+    {
+      "id": "handle",
+      "keywords": [
+        "ネック形状",
+        "グリップ",
+        "ハンドル長"
+      ],
+      "label": "ネックと握り部分の形状"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/manual-toothbrushes-for-daily-use/manual-toothbrushes-for-daily-use.png",
+  "products": [
+    {
+      "amazon_title": "ソラデー SOLADEY 5 手磨き歯ブラシ ロゴグリーン 水だけ 電源・電池不要 防災 TiO₂半導体 ソーラーパネル内蔵 替ブラシ交換式(シケン)",
+      "asin": "B0H32P4ZDZ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51susKmUOfL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H32P4ZDZ",
+      "ref": "p1",
+      "search_key": "ソラデー SOLADEY 5 手磨き歯ブラシ ロゴグリーン 水だ",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "GUM(ガム) 歯周プロケア デンタル 歯ブラシ#488 ハグキケア [4列超コンパクトヘッド ふつう ハグキケア毛 (極細毛先) ] 単品 ※色は選べません (× 3)",
+      "asin": "B0GZX1FC2K",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61lNxfbil7L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GZX1FC2K",
+      "ref": "p2",
+      "search_key": "GUM(ガム) 歯周プロケア デンタル 歯ブラシ#488 ハグキ",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "Rerum (リラム) 歯ブラシ ワインレッド 超極細毛 口腔ケア Toothbrush 日本製 平形ブラシ 極細毛 歯科医院専売品 歯医者用 スリムヘッド 手磨き 歯茎ケア",
+      "asin": "B0FC5KTDF6",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61eOBfSXUDL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FC5KTDF6",
+      "ref": "p3",
+      "search_key": "Rerum (リラム) 歯ブラシ ワインレッド 超極細毛 口腔ケ",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "超極細毛先の竹製歯ブラシ 1本、20000本の柔らかい毛束、敏感な歯茎用",
+      "asin": "B0DMJH3HQQ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41L1omjcWEL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0DMJH3HQQ",
+      "ref": "p4",
+      "search_key": "超極細毛先の竹製歯ブラシ 1本、20000本の柔らかい毛束、敏感",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "無印良品 ヘッドが交換できる歯ブラシ 部分みがき用ヘッド グレー 全長 184 mm ふつう OAM04A3S",
+      "asin": "B0D44CP829",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41LyCZ-5+4L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0D44CP829",
+      "ref": "p5",
+      "search_key": "無印良品 ヘッドが交換できる歯ブラシ 部分みがき用ヘッド グレー",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "TePe テペ チョイス 歯ブラシ ハンドル＋3ヘッド ソフト ピンク【正規品】【公式】",
+      "asin": "B0CCJJ9GTZ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61d6nwEo1sL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0CCJJ9GTZ",
+      "ref": "p6",
+      "search_key": "TePe テペ チョイス 歯ブラシ ハンドル＋3ヘッド ソフト",
+      "selection_score": 0.31
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "manual-toothbrushes-for-daily-use"
+}
