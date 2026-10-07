@@ -1,0 +1,129 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/loose-leaf-teapots.html",
+  "category": "dailygoods",
+  "comparison_axes": [
+    {
+      "id": "capacity_and_opening",
+      "keywords": [
+        "満水容量",
+        "使用容量",
+        "口径",
+        "本体寸法"
+      ],
+      "label": "容量表示と開口部"
+    },
+    {
+      "id": "strainer_structure",
+      "keywords": [
+        "一体型",
+        "取り外し式",
+        "金属網",
+        "陶製茶こし"
+      ],
+      "label": "茶こしの材質と取り外し"
+    },
+    {
+      "id": "pouring_and_care",
+      "keywords": [
+        "横手",
+        "後手",
+        "注ぎ口",
+        "食洗機対応"
+      ],
+      "label": "持ち手・注ぎ口と洗浄条件"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/loose-leaf-teapots/loose-leaf-teapots.png",
+  "products": [
+    {
+      "amazon_title": "常滑焼 玉光窯 「たっぷり注げて洗いやすい」 急須 セラメッシュ 陶製茶こし 大容量 約480ml 黒窯変 筋入り柄 緑茶 日本茶 珈琲対応 日本製 266400",
+      "asin": "B0BJZ3PH3Z",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61nU-is3t7L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "strainer_structure"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0BJZ3PH3Z",
+      "ref": "p1",
+      "search_key": "常滑焼 玉光窯 「たっぷり注げて洗いやすい」 急須 セラメッシュ",
+      "selection_score": 0.49
+    },
+    {
+      "amazon_title": "HARIO(ハリオ) V急須 実用容量450mL 耐熱ガラス メッシュストレーナー プレゼント ギフト 贈り物 透明 クリア TPV-45-T",
+      "asin": "B0GS1S8QNT",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61pIfHKbROL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GS1S8QNT",
+      "ref": "p2",
+      "search_key": "HARIO(ハリオ) V急須 実用容量450mL 耐熱ガラス メ",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "白丸急須 常滑焼 日本製 【 茶葉が広がる/陶製 茶こし / 420ml 】きつさこ セラメッシュ おしゃれ 2人用 ~ 3人用 アイボリー",
+      "asin": "B0GFW5VJ6T",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41ZsOUEoKzL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GFW5VJ6T",
+      "ref": "p3",
+      "search_key": "白丸急須 常滑焼 日本製 きつさこ セラメッシュ おしゃれ 2人",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "新感覚の“きゅ～す”＞ちゃPod2【洗い一瞬】【新しいこし方】【すべてのお茶とコーヒーを手軽に】【割れない】【かわいい】【シンプル】【コンパクト】 (グレイブルー)",
+      "asin": "B0D8XRTNNJ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61NTMpWPlKL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0D8XRTNNJ",
+      "ref": "p4",
+      "search_key": "新感覚の“きゅ～す”＞ちゃPod2 (グレイブルー)",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "アンドエヌイー(&NE) 波佐見焼 土もの 急須 ハレとケ 白 日本製 陶器 2-3人用 ステンレス 茶こし 洗いやすい 来客用 NST-323-WH",
+      "asin": "B0CXDLF1QT",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51vGhcPo4SL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0CXDLF1QT",
+      "ref": "p5",
+      "search_key": "アンドエヌイー(&NE) 波佐見焼 土もの 急須 ハレとケ 白",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "HARIO(ハリオ) 茶茶急須 丸 コルクマット付き 実用容量450mL 耐熱ガラス製 大きな茶こし 電子レンジ･食洗器対応 HARIO Glass CHJMN-45-T-CP",
+      "asin": "B0CB3YRQWJ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71+05ootD2L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0CB3YRQWJ",
+      "ref": "p6",
+      "search_key": "HARIO(ハリオ) 茶茶急須 丸 コルクマット付き 実用容量4",
+      "selection_score": 0.31
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "strainer_structure"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "loose-leaf-teapots"
+}
