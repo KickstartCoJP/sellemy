@@ -1,0 +1,142 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/home-record-players.html",
+  "category": "gadget",
+  "comparison_axes": [
+    {
+      "id": "playback_operation",
+      "keywords": [
+        "フルオート",
+        "マニュアル",
+        "回転数",
+        "レコードサイズ"
+      ],
+      "label": "再生操作と対応レコード"
+    },
+    {
+      "id": "audio_connection",
+      "keywords": [
+        "フォノイコライザー",
+        "PHONO出力",
+        "LINE出力",
+        "Bluetooth送信",
+        "スピーカー内蔵"
+      ],
+      "label": "手持ちの音響機器との接続"
+    },
+    {
+      "id": "setup_maintenance",
+      "keywords": [
+        "本体寸法",
+        "針圧調整",
+        "交換針",
+        "カートリッジ",
+        "ダストカバー"
+      ],
+      "label": "設置とメンテナンス"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/home-record-players/home-record-players.png",
+  "products": [
+    {
+      "amazon_title": "デノン Denon DP-200USB レコードプレーヤー フォノイコライザー付 フルオート カートリッジ付属 ブラック DP-200USBK",
+      "asin": "B001IZ6UDC",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/618L-g4bq0L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "audio_connection",
+        "playback_operation",
+        "setup_maintenance"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B001IZ6UDC",
+      "ref": "p1",
+      "search_key": "デノン Denon DP-200USB レコードプレーヤー フォ",
+      "selection_score": 0.865
+    },
+    {
+      "amazon_title": "オーディオテクニカ レコードプレーヤー AT-LP60X DGM ダークガンメタリック フルオート 自動再生 ベルトドライブ フォノイコライザー内蔵 スピーカー ＆＆クリーナー ＆ マイクロファイバー セット",
+      "asin": "B0HHD579CP",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/617ervizbjL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "audio_connection",
+        "playback_operation"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HHD579CP",
+      "ref": "p2",
+      "search_key": "オーディオテクニカ レコードプレーヤー AT-LP60X DGM",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "VOKSUN レコードプレーヤー Bluetooth送信と受信 USBで録音と音楽再生 スピーカー内蔵 RCAでスピーカー繋ぎ 赤胡桃色 S450",
+      "asin": "B0HDNK9RNF",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/6179q5ajtBL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "audio_connection"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HDNK9RNF",
+      "ref": "p3",
+      "search_key": "VOKSUN レコードプレーヤー Bluetooth送信と受信",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "木製レトロレコードプレーヤー Bluetooth 5.0搭載 33/45/78回転対応 内蔵ステレオスピーカー",
+      "asin": "B0H5BB6HTD",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81JwuFJ5IAL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H5BB6HTD",
+      "ref": "p4",
+      "search_key": "木製レトロレコードプレーヤー Bluetooth 5.0搭載 3",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "オーディオテクニカ AT-LP7X レコードプレーヤー マニュアル ベルトドライブ ターンテーブル 有線",
+      "asin": "B0GHMJZ8XJ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61ZMebCH5UL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "playback_operation"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GHMJZ8XJ",
+      "ref": "p5",
+      "search_key": "オーディオテクニカ AT-LP7X レコードプレーヤー マニュア",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "[セット商品]オーディオテクニカ レコードプレーヤー&スピーカーセット ブラック×ホワイト",
+      "asin": "B0GF29G2FH",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41yVo4PwWPL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GF29G2FH",
+      "ref": "p6",
+      "search_key": "オーディオテクニカ レコードプレーヤー&スピーカーセット ブラッ",
+      "selection_score": 0.325
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "audio_connection",
+      "playback_operation",
+      "setup_maintenance"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "home-record-players"
+}
