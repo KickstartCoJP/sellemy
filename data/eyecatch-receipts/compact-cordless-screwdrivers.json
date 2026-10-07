@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-10-07T15:40:45.195365+00:00",
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "generation_route_attestation": "codex_rollout_extension",
+  "height": 1024,
+  "image_generation_internal_usage_exposed": false,
+  "image_sha256": "b6903c9c7ae9edc22afdedd85ffd453c09b0bea011fb45e768199941c5865019",
+  "member_binding_revision": 8,
+  "model": "gpt-6-astra",
+  "model_reported_generation_route": "built-in_image_gen",
+  "role_id": "bu-codex-sellemy-designer",
+  "summary": "家具の組み立て準備を背景に、小型電動ドライバーの本体・操作部・ビットを明瞭に表現。PNG形式・1536×1024と画像内容を検証済み。",
+  "thread_id": "01a111a0-344e-74b1-99da-7cee59ca6cf0",
+  "token_usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 323968,
+    "input_tokens": 334894,
+    "output_tokens": 800,
+    "reasoning_output_tokens": 0,
+    "total_tokens": 335694,
+    "uncached_input_tokens": 10926
+  },
+  "token_usage_source": "codex_rollout.turn_token_usage",
+  "visual_family": "Lifestyle Scene",
+  "width": 1536
+}
