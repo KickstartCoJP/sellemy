@@ -457,11 +457,13 @@ def _eyecatch_and_publish(slug: str, result: dict) -> str:
         _cleanup_expected_dirty(slug, category, original_head)
         raise
     except Exception as exc:
-        mark_failure(
-            slug, stage='publish', failure_class='runtime_infrastructure',
-            failure_code='PUBLISH_FAILED', reason=f'{type(exc).__name__}: {exc}', role='publish',
-        )
-        record_execution(slug=slug, role='publish', event_type='runtime_retry', stage='publish', failure_class='runtime_infrastructure')
+        current = load_job(slug)
+        if current.get('current_stage') == 'PUBLISH_PENDING' and current.get('status') != 'PUBLISHED':
+            mark_failure(
+                slug, stage='publish', failure_class='runtime_infrastructure',
+                failure_code='PUBLISH_FAILED', reason=f'{type(exc).__name__}: {exc}', role='publish',
+            )
+            record_execution(slug=slug, role='publish', event_type='runtime_retry', stage='publish', failure_class='runtime_infrastructure')
         _cleanup_expected_dirty(slug, category, original_head)
         raise GrowthRuntimeError(f'publish failed for {slug}; retained for retry: {exc}') from exc
 
