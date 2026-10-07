@@ -1,0 +1,140 @@
+{
+  "slug": "hair-styling-waxes",
+  "category": "beauty",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/hair-styling-waxes.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/hair-styling-waxes/hair-styling-waxes.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "styling_purpose",
+      "label": "作りたい髪型とメーカーが示す用途",
+      "keywords": [
+        "束感",
+        "毛流れ",
+        "立ち上げ",
+        "対応する髪の長さ"
+      ]
+    },
+    {
+      "id": "finish_texture",
+      "label": "仕上がりの質感と剤形",
+      "keywords": [
+        "マット",
+        "ツヤ",
+        "クリーム",
+        "ファイバー"
+      ]
+    },
+    {
+      "id": "application_conditions",
+      "label": "塗布と洗い流しの条件",
+      "keywords": [
+        "乾いた髪",
+        "使用量",
+        "なじませ方",
+        "洗髪方法"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "finish_texture",
+      "styling_purpose"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true,
+    "content_duplicates_removed": []
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0HDCTYL84",
+      "asin": "B0HDCTYL84",
+      "amazon_title": "MENLITE ヘアワックス メンズ ハードワックス パーマ・くせ毛用 自然なツヤ 束感・毛流れを整える クリームタイプ スタイリング剤 100g",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51DVMuVXZhL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.67,
+      "matched_comparison_axes": [
+        "finish_texture",
+        "styling_purpose"
+      ],
+      "search_key": "MENLITE ヘアワックス メンズ ハードワックス パーマ・く"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0H8LWXNTJ",
+      "asin": "B0H8LWXNTJ",
+      "amazon_title": "GATSBY(ギャツビー) ムービングラバー カジュアルマット ヘアワックス シトラスフローラルの香り 80g",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61Ss6of0YzL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "finish_texture"
+      ],
+      "search_key": "GATSBY(ギャツビー) ムービングラバー カジュアルマット"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0H8LRGV6C",
+      "asin": "B0H8LRGV6C",
+      "amazon_title": "GATSBY(ギャツビー) ムービングラバー エアロモーション ヘアワックス シトラスフローラルの香り 80g",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61ilB9LPa4L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [],
+      "search_key": "GATSBY(ギャツビー) ムービングラバー エアロモーション"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0H8LHK4WJ",
+      "asin": "B0H8LHK4WJ",
+      "amazon_title": "GATSBY(ギャツビー) ムービングラバー エクストリームマットＫ ヘアワックス シトラスフローラルの香り 80g",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61b4xGKK-OL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "finish_texture"
+      ],
+      "search_key": "GATSBY(ギャツビー) ムービングラバー エクストリームマッ"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0H847CJF1",
+      "asin": "B0H847CJF1",
+      "amazon_title": "Rerum リラム マットハードワックス メンズ ヘアワックス 強力セット 束感 マット ハーブウッドの香り 洗い流しやすい 70g",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71PL6HQCMXL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "finish_texture",
+        "styling_purpose"
+      ],
+      "search_key": "Rerum リラム マットハードワックス メンズ ヘアワックス"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0H1MDB3BZ",
+      "asin": "B0H1MDB3BZ",
+      "amazon_title": "ナカノ スタイリング タント ワックス 5 90g ヘアワックス ファイバータイプ",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51nv7P5DPmL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "finish_texture"
+      ],
+      "search_key": "ナカノ スタイリング タント ワックス 5 90g ヘアワックス"
+    }
+  ]
+}
