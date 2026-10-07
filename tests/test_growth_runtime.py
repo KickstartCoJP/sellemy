@@ -381,6 +381,8 @@ class DesignerEyecatchRouteTests(unittest.TestCase):
             patch.object(growth_runtime, 'invoke_writer', return_value=(valid_payload(), {'runtime': 'test'})),
             patch.object(growth_runtime, 'evaluate_candidate', return_value=('html', [], {'overall_pass': True})),
             patch.object(growth_runtime, 'ensure_codex_eyecatch', side_effect=growth_runtime.CodexEyecatchError('designer unavailable')),
+            patch.object(growth_runtime, 'context_session_id', return_value='test-designer-thread'),
+            patch.object(growth_runtime, 'record_context_quality'),
             patch.object(growth_runtime.PublishGate, 'acquire', return_value=nullcontext({'head_after': 'abc', 'origin_main': 'abc', 'clean': True})),
             patch.object(growth_runtime, 'publish_payload') as publish_stage,
         ):

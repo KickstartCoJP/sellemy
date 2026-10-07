@@ -18,6 +18,7 @@ from adaptive_publish import AdaptivePublishController
 from discovery_adapters import AutositeDiscoveryAdapter
 from feedback_task_bridge import sync_feedback_to_task_event
 from codex_eyecatch import CodexEyecatchError, ensure_codex_eyecatch
+from codex_provider import DESIGNER_SURFACE, PLANNING_SURFACE, context_session_id, record_context_quality
 from payload_schema import validate_evidence, validate_payload, match_refs
 from planning_runtime import PlanningError, discover_candidates, rank_candidates
 from publish_gate import (
@@ -231,6 +232,11 @@ def run(
             planning_candidates, feedback, cache_only=cache_only
         )
         result['planning_provider'] = topic.pop('_planning_provider_metadata', None)
+        planning_runtime_meta = ((result['planning_provider'] or {}).get('codex_runtime') or {})
+        record_context_quality(
+            ROOT, PLANNING_SURFACE, True,
+            session_id=planning_runtime_meta.get('session_id'),
+        )
         result['topic'] = topic
         result['viability_probes'] = viability_probes
         selected, selection = select_six(candidates, topic, feedback)
@@ -245,7 +251,14 @@ def run(
                 break
             feedback_to_writer = _gate_feedback(findings, qa)
         result.update({'candidate_count': len(candidates), 'selected_asins': [p['asin'] for p in selected], 'selection': selection, 'writer_attempts': writer_attempts, 'review_findings': findings, 'qa': qa})
-        if findings or not qa['overall_pass']:
+        writer_passed = not findings and bool(qa.get('overall_pass'))
+        writer_session = writer_attempts[-1].get('session_id') if writer_attempts else None
+        record_context_quality(
+            ROOT, 'bu-codex-sellemy-writer', writer_passed,
+            session_id=writer_session,
+            reason='' if writer_passed else 'mandatory Review/QA gates did not pass',
+        )
+        if not writer_passed:
             raise GrowthRuntimeError('mandatory Review/QA gates did not pass; no files applied or published')
         def apply_publication_unit() -> None:
             _write_json(ROOT / 'data' / 'evidence' / f'{topic["slug"]}.json', evidence)
@@ -268,7 +281,16 @@ def run(
                                 slug=topic['slug'], title=topic['title'], category=topic['category'],
                                 evidence=evidence, payload=payload,
                             )
+                            record_context_quality(
+                                ROOT, DESIGNER_SURFACE, True,
+                                session_id=result['eyecatch'].get('thread_id'),
+                            )
                         except CodexEyecatchError as exc:
+                            designer_session = context_session_id(DESIGNER_SURFACE)
+                            record_context_quality(
+                                ROOT, DESIGNER_SURFACE, False,
+                                session_id=designer_session, reason=str(exc),
+                            )
                             raise GrowthRuntimeError(f'Codex designer eyecatch failed: {exc}') from exc
                         apply_publication_unit()
                         try:

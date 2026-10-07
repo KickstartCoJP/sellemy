@@ -35,6 +35,60 @@ class CodexProviderTests(unittest.TestCase):
                 root, codex_provider.PLANNING_SURFACE, session
             ))
 
+    def test_context_rotation_due_immediately_at_hard_threshold(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            session = '00000000-0000-4000-8000-000000000001'
+            row = codex_provider._observe_context_usage(
+                root, codex_provider.PLANNING_SURFACE, session,
+                {'input_tokens': 190000, 'cached_input_tokens': 180000, 'uncached_input_tokens': 10000},
+            )
+            self.assertTrue(row['hard_threshold_exceeded'])
+            self.assertTrue(row['rotation_due'])
+
+    def test_probation_two_consecutive_quality_failures_require_rollback(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            control = {
+                'surfaces': {
+                    codex_provider.PLANNING_SURFACE: {
+                        'session_id': '00000000-0000-4000-8000-000000000002',
+                        'probation_remaining': 8,
+                    }
+                }
+            }
+            codex_provider._write_context_control(root, control)
+            session = '00000000-0000-4000-8000-000000000002'
+            one = codex_provider.record_context_quality(
+                root, codex_provider.PLANNING_SURFACE, False, session_id=session, reason='quality-1'
+            )
+            two = codex_provider.record_context_quality(
+                root, codex_provider.PLANNING_SURFACE, False, session_id=session, reason='quality-2'
+            )
+            self.assertFalse(one.get('rollback_due', False))
+            self.assertTrue(two['rollback_due'])
+            self.assertTrue(codex_provider._context_rollback_due(
+                root, codex_provider.PLANNING_SURFACE,
+                '00000000-0000-4000-8000-000000000002',
+            ))
+
+    def test_probation_pass_resets_consecutive_failure_count(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            codex_provider._write_context_control(root, {
+                'surfaces': {
+                    codex_provider.DESIGNER_SURFACE: {
+                        'session_id': '00000000-0000-4000-8000-000000000003',
+                        'probation_remaining': 5,
+                    }
+                }
+            })
+            session = '00000000-0000-4000-8000-000000000003'
+            codex_provider.record_context_quality(root, codex_provider.DESIGNER_SURFACE, False, session_id=session)
+            row = codex_provider.record_context_quality(root, codex_provider.DESIGNER_SURFACE, True, session_id=session)
+            self.assertEqual(row['probation_consecutive_failures'], 0)
+            self.assertFalse(row.get('rollback_due', False))
+
     def test_ephemeral_read_only_schema_output(self):
         schema = {'type': 'object', 'properties': {'items': {'type': 'array', 'minItems': 2,
                   'items': {'type': 'object', 'properties': {'name': {'type': 'string'}}}}}}

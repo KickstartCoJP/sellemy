@@ -113,6 +113,7 @@ def _invoke_planning(kind: str, command: list[str], model: str, prompt: str, tim
                 tuple(command), model, PLANNING_SCHEMA, prompt, timeout=timeout,
                 root=ROOT, surface_key='bu-codex-sellemy-planning', stage='planning',
             )
+            value['_runtime_meta'] = _meta
         except CodexProviderError as exc:
             raise PlanningError(f'planning Codex unavailable: {exc}') from exc
         return value
@@ -154,6 +155,9 @@ def discover_candidates() -> list[dict]:
                          'planning_attempt_count': 2})
     if not isinstance(value, dict) or not isinstance(value.get('candidates'), list):
         raise PlanningError('planning provider returned no candidate set')
+    runtime_meta = value.pop('_runtime_meta', None)
+    if isinstance(runtime_meta, dict):
+        metadata['codex_runtime'] = runtime_meta
     return CandidateBatch(value['candidates'], metadata)
 
 

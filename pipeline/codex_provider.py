@@ -62,9 +62,9 @@ def _member_binding(role_id: str, *, db_path: Path | None = None) -> dict:
 DESIGNER_SURFACE = 'bu-codex-sellemy-designer'
 PLANNING_SURFACE = 'bu-codex-sellemy-planning'
 CONTEXT_ROTATION_DEFAULTS = {
-    PLANNING_SURFACE: {'enabled': True, 'input_threshold': 120000, 'streak': 3},
-    'bu-codex-sellemy-writer': {'enabled': True, 'input_threshold': 250000, 'streak': 3},
-    DESIGNER_SURFACE: {'enabled': True, 'input_threshold': 250000, 'streak': 3},
+    PLANNING_SURFACE: {'enabled': True, 'input_threshold': 120000, 'hard_threshold': 180000, 'streak': 3},
+    'bu-codex-sellemy-writer': {'enabled': True, 'input_threshold': 140000, 'hard_threshold': 200000, 'streak': 3},
+    DESIGNER_SURFACE: {'enabled': True, 'input_threshold': 120000, 'hard_threshold': 180000, 'streak': 3},
 }
 
 BRIEF_FIXED = """# Sellemy Codex Brief
@@ -202,6 +202,9 @@ def _context_policy(surface_key: str) -> dict:
     threshold_key = 'SELLEMY_CODEX_CONTEXT_THRESHOLD_' + re.sub(r'[^A-Za-z0-9]', '_', surface_key).upper()
     if os.environ.get(threshold_key):
         base['input_threshold'] = int(os.environ[threshold_key])
+    hard_key = 'SELLEMY_CODEX_CONTEXT_HARD_THRESHOLD_' + re.sub(r'[^A-Za-z0-9]', '_', surface_key).upper()
+    if os.environ.get(hard_key):
+        base['hard_threshold'] = int(os.environ[hard_key])
     if os.environ.get('SELLEMY_CODEX_CONTEXT_STREAK'):
         base['streak'] = int(os.environ['SELLEMY_CODEX_CONTEXT_STREAK'])
     return base
@@ -226,13 +229,18 @@ def _observe_context_usage(root: Path, surface_key: str, session_id: str, usage:
     same_session = row.get('session_id') == session_id
     streak = int(row.get('oversize_streak') or 0) if same_session else 0
     streak = streak + 1 if input_tokens >= int(policy['input_threshold']) else 0
+    hard_threshold = int(policy.get('hard_threshold') or (int(policy['input_threshold']) * 2))
+    hard_exceeded = input_tokens >= hard_threshold
     row.update({
         'session_id': session_id,
         'last_input_tokens': input_tokens,
         'last_cached_input_tokens': int(usage.get('cached_input_tokens') or 0),
         'last_uncached_input_tokens': int(usage.get('uncached_input_tokens') or 0),
         'oversize_streak': streak,
-        'rotation_due': bool(policy['enabled'] and streak >= int(policy['streak'])),
+        'hard_threshold_exceeded': hard_exceeded,
+        'rotation_due': bool(policy['enabled'] and not row.get('rotation_blocked') and (
+            hard_exceeded or streak >= int(policy['streak'])
+        )),
         'policy': policy,
         'observed_at': datetime.now(timezone.utc).isoformat(),
     })
@@ -248,6 +256,110 @@ def _context_rotation_due(root: Path, surface_key: str, session_id: str) -> bool
         and row.get('session_id') == session_id
         and _context_policy(surface_key).get('enabled')
     )
+
+
+def context_session_id(surface_key: str) -> str:
+    return str(_member_binding(surface_key)['current_url'])
+
+
+def record_context_quality(root: Path, surface_key: str, passed: bool, *, session_id: str | None = None, reason: str = '') -> dict:
+    root = Path(root).resolve()
+    control = _read_context_control(root)
+    rows = control.setdefault('surfaces', {})
+    row = dict(rows.get(surface_key) or {})
+    if not session_id or row.get('session_id') != session_id:
+        return row
+    if int(row.get('probation_remaining') or 0) <= 0:
+        return row
+    row['probation_quality_checks'] = int(row.get('probation_quality_checks') or 0) + 1
+    if passed:
+        row['probation_quality_passes'] = int(row.get('probation_quality_passes') or 0) + 1
+        row['probation_consecutive_failures'] = 0
+    else:
+        row['probation_quality_failures'] = int(row.get('probation_quality_failures') or 0) + 1
+        row['probation_consecutive_failures'] = int(row.get('probation_consecutive_failures') or 0) + 1
+        row['probation_last_failure_reason'] = reason[:300]
+        if row['probation_consecutive_failures'] >= 2:
+            row['rollback_due'] = True
+    row['probation_quality_observed_at'] = datetime.now(timezone.utc).isoformat()
+    rows[surface_key] = row
+    _write_context_control(root, control)
+    return row
+
+
+def _context_rollback_due(root: Path, surface_key: str, session_id: str) -> bool:
+    row = (_read_context_control(root).get('surfaces') or {}).get(surface_key) or {}
+    return bool(row.get('rollback_due') and row.get('session_id') == session_id)
+
+
+def _binding_rotator_path() -> Path:
+    return Path(os.environ.get(
+        'SELLEMY_CODEX_BINDING_ROTATOR',
+        str(Path.home() / 'ai-management-os' / 'scripts' / 'rotate_sellemy_codex_binding.py'),
+    ))
+
+
+def _run_binding_rotation(surface_key: str, old_thread: str, new_thread: str, archive_ref: str) -> dict:
+    helper = _binding_rotator_path()
+    if not helper.is_file():
+        raise CodexProviderError(f'Codex binding rotator unavailable: {helper}')
+    args = [
+        str(Path.home() / 'ai-management-os' / '.venv' / 'bin' / 'python'), str(helper),
+        '--role-id', surface_key, '--expected-old-thread', old_thread,
+        '--new-thread', new_thread, '--archive-ref', archive_ref,
+    ]
+    completed = subprocess.run(args, text=True, capture_output=True, timeout=30, check=False)
+    if completed.returncode:
+        diagnostic = (completed.stderr or completed.stdout or '').strip()[-1000:]
+        raise CodexProviderError(f'Canonical Codex binding rotation failed: {diagnostic}')
+    return _json_object(completed.stdout)
+
+
+def _rollback_context(root: Path, surface_key: str, state_path: Path, brief_path: Path) -> dict:
+    lock_path = root / '.runtime' / 'sellemy-codex' / 'context-rotation.lock'
+    lock_path.parent.mkdir(parents=True, exist_ok=True)
+    with lock_path.open('a+', encoding='utf-8') as handle:
+        fcntl.flock(handle.fileno(), fcntl.LOCK_EX)
+        control = _read_context_control(root)
+        row = dict((control.get('surfaces') or {}).get(surface_key) or {})
+        current = _member_binding(surface_key)
+        if not row.get('rollback_due') or row.get('session_id') != current['current_url']:
+            return {}
+        old_thread = str(row.get('last_rotation_old_thread') or '')
+        new_thread = str(row.get('last_rotation_new_thread') or '')
+        archive = Path(str(row.get('last_archive') or ''))
+        if not old_thread or current['current_url'] != new_thread or not archive.is_dir():
+            raise CodexProviderError('Context rollback evidence is incomplete')
+        rotated = _run_binding_rotation(
+            surface_key, current['current_url'], old_thread,
+            'rollback:' + str(archive),
+        )
+        readback = _member_binding(surface_key)
+        if readback['current_url'] != old_thread:
+            raise CodexProviderError('Context rollback canonical read-back mismatch')
+        archived_state = _read_state(archive / state_path.name)
+        _write_state(state_path, {
+            'surface_key': surface_key,
+            'session_id': old_thread,
+            'turns': int(archived_state.get('turns') or 0),
+            'model': archived_state.get('model') or '',
+            'brief_path': str(brief_path),
+            'member_binding_revision': readback['binding_revision'],
+        })
+        row.update({
+            'session_id': old_thread,
+            'rollback_due': False,
+            'rotation_due': False,
+            'rotation_blocked': True,
+            'oversize_streak': 0,
+            'probation_remaining': 0,
+            'last_rollback_at': datetime.now(timezone.utc).isoformat(),
+            'last_rollback_from_thread': new_thread,
+            'last_rollback_to_thread': old_thread,
+        })
+        control.setdefault('surfaces', {})[surface_key] = row
+        _write_context_control(root, control)
+        return {**rotated, 'rollback': True, 'rollback_archive': str(archive)}
 
 
 def _archive_context(root: Path, surface_key: str, session_id: str, binding: dict,
@@ -332,25 +444,9 @@ def _rotate_context(command: tuple[str, ...], model: str, root: Path, surface_ke
         new_thread, seed_usage = _start_compacted_thread(
             command, model, root, surface_key, brief_path, timeout=timeout
         )
-        helper = Path(os.environ.get(
-            'SELLEMY_CODEX_BINDING_ROTATOR',
-            str(Path.home() / 'ai-management-os' / 'scripts' / 'rotate_sellemy_codex_binding.py'),
-        ))
-        if not helper.is_file():
-            raise CodexProviderError(f'Codex binding rotator unavailable: {helper}')
-        args = [
-            str(Path.home() / 'ai-management-os' / '.venv' / 'bin' / 'python'),
-            str(helper),
-            '--role-id', surface_key,
-            '--expected-old-thread', fresh['current_url'],
-            '--new-thread', new_thread,
-            '--archive-ref', str(archive),
-        ]
-        completed = subprocess.run(args, text=True, capture_output=True, timeout=30, check=False)
-        if completed.returncode:
-            diagnostic = (completed.stderr or completed.stdout or '').strip()[-1000:]
-            raise CodexProviderError(f'Canonical Codex binding rotation failed: {diagnostic}')
-        rotated = _json_object(completed.stdout)
+        rotated = _run_binding_rotation(
+            surface_key, fresh['current_url'], new_thread, str(archive)
+        )
         readback = _member_binding(surface_key)
         if readback['current_url'] != new_thread:
             raise CodexProviderError('Canonical Codex binding rotation read-back mismatch')
@@ -369,11 +465,18 @@ def _rotate_context(command: tuple[str, ...], model: str, root: Path, surface_ke
             'session_id': new_thread,
             'oversize_streak': 0,
             'rotation_due': False,
+            'rotation_blocked': False,
+            'hard_threshold_exceeded': False,
+            'rollback_due': False,
             'last_rotation_at': datetime.now(timezone.utc).isoformat(),
             'last_rotation_old_thread': fresh['current_url'],
             'last_rotation_new_thread': new_thread,
             'last_archive': str(archive),
             'probation_remaining': 10,
+            'probation_quality_checks': 0,
+            'probation_quality_passes': 0,
+            'probation_quality_failures': 0,
+            'probation_consecutive_failures': 0,
         })
         control.setdefault('surfaces', {})[surface_key] = row
         _write_context_control(root, control)
@@ -719,6 +822,12 @@ def generate_persistent(command: tuple[str, ...], model: str, schema: dict, prom
     binding = _member_binding(surface_key)
     session_id = binding['current_url']
     state = _read_state(state_path)
+    context_rollback = {}
+    if _context_rollback_due(root, surface_key, session_id):
+        context_rollback = _rollback_context(root, surface_key, state_path, brief_path)
+        binding = _member_binding(surface_key)
+        session_id = binding['current_url']
+        state = _read_state(state_path)
     context_rotation = {}
     if _context_rotation_due(root, surface_key, session_id):
         context_rotation = _rotate_context(
@@ -787,7 +896,8 @@ def generate_persistent(command: tuple[str, ...], model: str, schema: dict, prom
         'member_binding_revision': binding['binding_revision'],
         'member_binding_changed': binding_changed, 'reasoning_effort': effort,
         'brief_refreshed': brief_refreshed, 'brief_path': str(brief_path),
-        'context_rotation': context_rotation, 'context_state': context_state, **usage,
+        'context_rotation': context_rotation, 'context_rollback': context_rollback,
+        'context_state': context_state, **usage,
     }
 
 
