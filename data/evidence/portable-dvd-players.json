@@ -1,0 +1,133 @@
+{
+  "slug": "portable-dvd-players",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/portable-dvd-players.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/portable-dvd-players/portable-dvd-players.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "disc_compatibility",
+      "label": "対応ディスクと録画方式",
+      "keywords": [
+        "DVD-Video",
+        "DVD-R",
+        "CPRM",
+        "ファイナライズ"
+      ]
+    },
+    {
+      "id": "display",
+      "label": "画面サイズと設置方法",
+      "keywords": [
+        "画面サイズ",
+        "解像度",
+        "画面回転",
+        "車載ホルダー"
+      ]
+    },
+    {
+      "id": "power_runtime",
+      "label": "電源と連続再生の条件",
+      "keywords": [
+        "内蔵バッテリー",
+        "乾電池",
+        "AC電源",
+        "連続再生時間"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "disc_compatibility"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true,
+    "content_duplicates_removed": []
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0HJCF86DQ",
+      "asin": "B0HJCF86DQ",
+      "amazon_title": "DVDプレーヤー テレビ用 1080P HDMI/AV出力 リージョンフリー CPRM対応 再生専用プレーヤー USB再生 多形式 DVD±R/RW・CD・VCD対応 AV/HDMIケーブル付 リモコン付 日本語説明書付 ブルーレイ非対応",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71e8yO6E74L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.505,
+      "matched_comparison_axes": [
+        "disc_compatibility"
+      ],
+      "search_key": "DVDプレーヤー テレビ用 1080P HDMI/AV出力 リー"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HH8XFF82",
+      "asin": "B0HH8XFF82",
+      "amazon_title": "【2026年新登場 人気】 DVDプレーヤー リージョンフリー 超小型 1080P CDプレーヤー HDMI/USB対応 語学学習",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71OLpDCdcFL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "DVDプレーヤー リージョンフリー 超小型 1080P CDプレ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0H41V69TX",
+      "asin": "B0H41V69TX",
+      "amazon_title": "ポータブルDVDプレーヤー 業界初 type-c急速充電 モバイルバッテリー充電応対 目の保護モード 12.5型 10.5インチ液晶 cd dvdプレーヤー ポータブル 最大5時間連続再生 リージョンフリー CPRM対応 レジューム機能 270度回転 TV同期可能 SDカード/USBに対応 軽量 持運び 操作簡単 日本語説明書 ブラック VOSCORDER",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61WYxqnxNtL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "disc_compatibility"
+      ],
+      "search_key": "ポータブルDVDプレーヤー 業界初 type-c急速充電 モバイ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0H3KQ625Y",
+      "asin": "B0H3KQ625Y",
+      "amazon_title": "【11.6インチ ポータブルDVDプレーヤー】 1366×768 液晶 CPRM対応 リージョンフリー USB・SDカード対応 約3～5時間再生 車載バッグ・イヤホン・日本語説明書付き 車中泊・長距離ドライブ・旅行・家庭用 大人・子供・高齢者向け",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81drlq2ZwOL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "disc_compatibility"
+      ],
+      "search_key": "1366×768 液晶 CPRM対応 リージョンフリー USB"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0H364B62J",
+      "asin": "B0H364B62J",
+      "amazon_title": "13.3インチの広視野角HDスクリーンを搭載したポータブルDVDプレーヤー 車内、家庭、旅行に最適です。",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/81LJBggZLUL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "13.3インチの広視野角HDスクリーンを搭載したポータブルDVD"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0G9318MNS",
+      "asin": "B0G9318MNS",
+      "amazon_title": "ポータブルDVDプレーヤー 2026年業界革新 目の保護モード搭載 15.6インチ 超大画面 PS液晶狭額縁 軽量 ポータブルDVD 5000mAh大容量 6時間連続再生 リージョンフリー レジューム機能 270度回転 SDカード/USBに対応 語学学習 操作簡単 お年寄りや子供へプレゼント 旅行/車内/病院 ブルーレイ非対応",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61MtR+EPUWL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "ポータブルDVDプレーヤー 2026年業界革新 目の保護モード搭"
+    }
+  ]
+}
