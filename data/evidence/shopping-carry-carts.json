@@ -1,0 +1,134 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/shopping-carry-carts.html",
+  "category": "dailygoods",
+  "comparison_axes": [
+    {
+      "id": "carrying_capacity",
+      "keywords": [
+        "容量",
+        "最大積載量",
+        "開口部",
+        "バッグ着脱"
+      ],
+      "label": "バッグ容量と最大積載量"
+    },
+    {
+      "id": "wheels_handle",
+      "keywords": [
+        "車輪径",
+        "車輪数",
+        "ハンドル高さ",
+        "引く・押す"
+      ],
+      "label": "車輪とハンドルの構成"
+    },
+    {
+      "id": "storage_portability",
+      "keywords": [
+        "折りたたみ寸法",
+        "本体重量",
+        "持ち手",
+        "自立"
+      ],
+      "label": "折りたたみ寸法と持ち上げやすさ"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/shopping-carry-carts/shopping-carry-carts.png",
+  "products": [
+    {
+      "amazon_title": "【大容量35L・折りたたみ】ショッピングカート 買い物カート 35L 2WAY リュック キャリーカート 保冷保温 (ブラック)",
+      "asin": "B0GRGY8KRL",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61YxVVuzjrL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "carrying_capacity"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GRGY8KRL",
+      "ref": "p1",
+      "search_key": "ショッピングカート 買い物カート 35L 2WAY リュック キ",
+      "selection_score": 0.505
+    },
+    {
+      "amazon_title": "EcoCa エコカエクセラ 【保冷バッグ2個セット】 ハンドル高さ調節 下段にカゴ設置可能 ショッピング 買い物 カート キャリー ＜ECE020S＞",
+      "asin": "B0FQ55V7BN",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61WIrFIqmML._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "wheels_handle"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0FQ55V7BN",
+      "ref": "p2",
+      "search_key": "EcoCa エコカエクセラ ハンドル高さ調節 下段にカゴ設置可能",
+      "selection_score": 0.505
+    },
+    {
+      "amazon_title": "[COVANK]ショッピングキャリー キャリーカート 折りたたみ ショッピングカート キャスター付き エコバッグ 軽量 高さ調節可能 取り外し可能",
+      "asin": "B0HJWDNCX9",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61RJypdv0ML._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HJWDNCX9",
+      "ref": "p3",
+      "search_key": "ショッピングキャリー キャリーカート 折りたたみ ショッピングカ",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "［神戸リベラル］ 【日本製YKKファスナー】 【大型ダブルキャスター】保温保冷 ショッピングキャリー 折り畳み可能 横押し 軽量 ショッピングカート 組み立て済み 605 (ブラックヘアライン)",
+      "asin": "B0GNMBQ8VX",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71q5vPx5YDL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GNMBQ8VX",
+      "ref": "p4",
+      "search_key": "［神戸リベラル］ 保温保冷 ショッピングキャリー 折り畳み可能",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "ナイスウェイ 軽量 2段ショッピングカート 折りたたみ 耐荷重25kg",
+      "asin": "B0GJD3TW8W",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61nNdKDsQ8L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GJD3TW8W",
+      "ref": "p5",
+      "search_key": "ナイスウェイ 軽量 2段ショッピングカート 折りたたみ 耐荷重2",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "【5輪+大容量33L】ショッピングカート 折りたたみ カートセットショッピングキャリー 横押し 5輪 保冷機能付き ハンドル長さ調節3段階軽量 2WAY 買い物かご 取り外し可能 簡単組立 荷物運び便利グッズ、ピクニック、キャンプ、運動会、花見、防災グッズ",
+      "asin": "B0DZTWJHPZ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61Fl1nf6bCL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "carrying_capacity"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0DZTWJHPZ",
+      "ref": "p6",
+      "search_key": "ショッピングカート 折りたたみ カートセットショッピングキャリー",
+      "selection_score": 0.325
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "carrying_capacity",
+      "wheels_handle"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "shopping-carry-carts"
+}

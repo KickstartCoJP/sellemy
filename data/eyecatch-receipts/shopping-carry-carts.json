@@ -1,0 +1,19 @@
+{
+  "generated_at": null,
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "generation_route_attestation": "historical_codex_rollout_extension",
+  "height": 1024,
+  "image_generation_internal_usage_exposed": false,
+  "image_sha256": "701223070eb1d71d325d4cb9274b29468893c87c9f75faf9a75b5cd13c5cdfe9",
+  "member_binding_revision": null,
+  "model": "gpt-6-astra",
+  "model_reported_generation_route": "codex_cli_imagegen",
+  "role_id": "bu-codex-sellemy-designer",
+  "summary": "買い物帰りに食料品入りのキャリーカートを引く単一シーン。バッグ、持ち手、車輪を表現し、ファイルの存在、PNG形式、1536×1024を検証済み。",
+  "thread_id": "01a111a0-344e-74b1-99da-7cee59ca6cf0",
+  "token_usage": {},
+  "token_usage_source": "historical_rollout",
+  "visual_family": "Lifestyle Scene",
+  "width": 1536
+}
