@@ -213,6 +213,7 @@ def _runtime_failure(exc: Exception) -> bool:
     runtime_markers = (
         'unavailable', 'timeout', 'timed out', 'active writer', 'binding', 'working tree',
         'publish sync', 'push origin', 'deploy/read-back', 'remote writer', 'runtime', 'connection',
+        'selected model is at capacity', 'websocket closed', 'stream disconnected', 'reconnecting...',
         'rollout has no completed built-in image_gen execution evidence',
     )
     return isinstance(exc, (PublishGateError, ProductionDeployError)) or any(x in text for x in runtime_markers)
