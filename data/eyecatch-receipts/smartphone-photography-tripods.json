@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-10-07T15:48:20.847558+00:00",
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "generation_route_attestation": "codex_rollout_extension",
+  "height": 1024,
+  "image_generation_internal_usage_exposed": false,
+  "image_sha256": "fcc921e2c89a5aba6e8e390b5754b86daca337d3023cb8b3239b01a64d7aeada",
+  "member_binding_revision": 8,
+  "model": "gpt-6-astra",
+  "model_reported_generation_route": "built-in_image_gen",
+  "role_id": "bu-codex-sellemy-designer",
+  "summary": "水辺の撮影準備を背景に、スマホの固定部から三脚の三本の脚・接地まで明瞭に表現。PNG形式・1536×1024と画像内容を検証済み。",
+  "thread_id": "01a111a0-344e-74b1-99da-7cee59ca6cf0",
+  "token_usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 296448,
+    "input_tokens": 306222,
+    "output_tokens": 809,
+    "reasoning_output_tokens": 0,
+    "total_tokens": 307031,
+    "uncached_input_tokens": 9774
+  },
+  "token_usage_source": "codex_rollout.turn_token_usage",
+  "visual_family": "Product Portrait",
+  "width": 1536
+}
