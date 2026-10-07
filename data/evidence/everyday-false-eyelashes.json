@@ -1,0 +1,148 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/everyday-false-eyelashes.html",
+  "category": "beauty",
+  "comparison_axes": [
+    {
+      "id": "lash_design",
+      "keywords": [
+        "長さ",
+        "密度",
+        "束感",
+        "目尻"
+      ],
+      "label": "仕上がりに合わせる毛束の配置"
+    },
+    {
+      "id": "coverage",
+      "keywords": [
+        "フルタイプ",
+        "部分用",
+        "横幅",
+        "カット調整"
+      ],
+      "label": "装着する範囲とサイズ"
+    },
+    {
+      "id": "band_attachment",
+      "keywords": [
+        "透明軸",
+        "黒軸",
+        "軸の素材",
+        "接着剤付属",
+        "取り外し方"
+      ],
+      "label": "軸の仕様と接着剤の用意"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/everyday-false-eyelashes/everyday-false-eyelashes.png",
+  "products": [
+    {
+      "amazon_title": "LASHCHARM つけまつげ のり不要 部分用 透明軸 束感まつげ セルフマツエク風 ピンセット付き 簡単装着 上品 ナチュラル 丸目 普段使い（09 カメリアナチュラル）",
+      "asin": "B0H74WGZGR",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61rFmjh0hgL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "band_attachment",
+        "coverage",
+        "lash_design"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H74WGZGR",
+      "ref": "p1",
+      "search_key": "LASHCHARM つけまつげ のり不要 部分用 透明軸 束感ま",
+      "selection_score": 0.85
+    },
+    {
+      "amazon_title": "LASHIDOL 部分つけまつげ のり不要 上まつげ 接着剤不要 つけまつげ 部分用つけまつげ 自然 透明軸 簡単装着 初心者(桃恋 ナチュラル)",
+      "asin": "B0HC7CFCBV",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81BNB7yf8BL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "band_attachment",
+        "coverage"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HC7CFCBV",
+      "ref": "p2",
+      "search_key": "LASHIDOL 部分つけまつげ のり不要 上まつげ 接着剤不要",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "つけまつげ のり不要 240束 大容量 部分つけまつげ ナチュラル 1秒マツエク 女優まつげ 束感 人気 初心者向け まつげ部分用",
+      "asin": "B0H7K2JP5Z",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81VNc2DwgaL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "coverage",
+        "lash_design"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H7K2JP5Z",
+      "ref": "p3",
+      "search_key": "つけまつげ のり不要 240束 大容量 部分つけまつげ ナチュラ",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "【EyeJewelry】つけまつげ のり不要 部分つけまつげ 3D ナチュラル束感 韓国風 アイドルメイク 1秒マツエク(07Daisy Bloom -多幸感 Bloom Eye)",
+      "asin": "B0H74R1VZJ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71ix33AfP+L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "lash_design"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H74R1VZJ",
+      "ref": "p4",
+      "search_key": "つけまつげ のり不要 部分つけまつげ 3D ナチュラル束感 韓国",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "のり不要つけまつげ 部分 ナチュラル 透明軸 粘着力強い 初心者向け 簡単装着 ピンセット付き 立体感 可愛 自然な束感人気 (01-サンフラワー)",
+      "asin": "B0H6H755HL",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71S+3YFH9vL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "band_attachment",
+        "lash_design"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H6H755HL",
+      "ref": "p5",
+      "search_key": "のり不要つけまつげ 部分 ナチュラル 透明軸 粘着力強い 初心者",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "つけまつげ のり不要 部分つけまつげ 1秒マツエク 接着剤不要 つけまつ毛 ナチュラル 束感 自然仕上げ 落ちにくい 柔らかい 軽量 細黒軸 一重 奥二重対応 初心者向け ブラック (ふんわりバード)",
+      "asin": "B0H2VYTDPC",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81BQLjFQMTL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "band_attachment",
+        "lash_design"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H2VYTDPC",
+      "ref": "p6",
+      "search_key": "つけまつげ のり不要 部分つけまつげ 1秒マツエク 接着剤不要",
+      "selection_score": 0.31
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "band_attachment",
+      "coverage",
+      "lash_design"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "everyday-false-eyelashes"
+}
