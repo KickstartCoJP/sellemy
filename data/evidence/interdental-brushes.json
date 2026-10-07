@@ -1,0 +1,141 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/interdental-brushes.html",
+  "category": "beauty",
+  "comparison_axes": [
+    {
+      "id": "size_indication",
+      "keywords": [
+        "最小通過径",
+        "サイズ表",
+        "ブラシ径"
+      ],
+      "label": "サイズ表示と通過径"
+    },
+    {
+      "id": "handle_structure",
+      "keywords": [
+        "L字型",
+        "I字型",
+        "柄の長さ"
+      ],
+      "label": "柄の形と持ち方"
+    },
+    {
+      "id": "brush_replacement",
+      "keywords": [
+        "ワイヤー",
+        "ゴム",
+        "替えブラシ",
+        "使用後のお手入れ"
+      ],
+      "label": "ブラシ素材と交換方式"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/interdental-brushes/interdental-brushes.png",
+  "products": [
+    {
+      "amazon_title": "by Amazon L字型歯間ブラシ Mサイズ 最小通過径1.2mm 40本入(20本×2セット)",
+      "asin": "B0GVJC3PV2",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81BLwM5SXQL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "handle_structure",
+        "size_indication"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GVJC3PV2",
+      "ref": "p1",
+      "search_key": "by Amazon L字型歯間ブラシ Mサイズ 最小通過径1.2",
+      "selection_score": 0.67
+    },
+    {
+      "amazon_title": "GUM(ガム) 歯周プロケア 歯間ブラシ L字型 奥歯の歯間ケア ワイヤータイプ [サイズ:SSS (1)] 10本入 単品",
+      "asin": "B000FQNGTQ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81t-mh1vbcL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "brush_replacement",
+        "handle_structure"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B000FQNGTQ",
+      "ref": "p2",
+      "search_key": "GUM(ガム) 歯周プロケア 歯間ブラシ L字型 奥歯の歯間ケア",
+      "selection_score": 0.49
+    },
+    {
+      "amazon_title": "デンタルプロ 歯間ブラシ L字型 普通タイプ サイズ3(S) 10本入 10個 (x 2)",
+      "asin": "B0HJYBLH42",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81Jyw5EFNkL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "handle_structure"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HJYBLH42",
+      "ref": "p3",
+      "search_key": "デンタルプロ 歯間ブラシ L字型 普通タイプ サイズ3(S) 1",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "デンタルプロ 歯間ブラシ I字型 太タイプ サイズ5(L) 15本入 15個 (x 2)",
+      "asin": "B0HJY6J7XB",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71E7jwo0TxL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "handle_structure"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HJY6J7XB",
+      "ref": "p4",
+      "search_key": "デンタルプロ 歯間ブラシ I字型 太タイプ サイズ5(L) 15",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "SUNSTAR(サンスター) GUM 歯間ブラシ L字型 Mサイズ 10本入 (× 2)",
+      "asin": "B0H99LPNH8",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51wAxyRIVfL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "handle_structure"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H99LPNH8",
+      "ref": "p5",
+      "search_key": "SUNSTAR(サンスター) GUM 歯間ブラシ L字型 Mサイ",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "デンタルプロ 歯間ブラシ L字型 超極細タイプ サイズ1(SSS) 10本入 (× 2)",
+      "asin": "B0H381QWN6",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/7185OI6t0CL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "handle_structure"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H381QWN6",
+      "ref": "p6",
+      "search_key": "デンタルプロ 歯間ブラシ L字型 超極細タイプ サイズ1(SSS",
+      "selection_score": 0.31
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "brush_replacement",
+      "handle_structure",
+      "size_indication"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "interdental-brushes"
+}
