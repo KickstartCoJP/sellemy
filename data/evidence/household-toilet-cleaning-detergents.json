@@ -1,0 +1,137 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/household-toilet-cleaning-detergents.html",
+  "category": "dailygoods",
+  "comparison_axes": [
+    {
+      "id": "surfaces",
+      "keywords": [
+        "便器内",
+        "便座",
+        "床",
+        "確認先：[ライオン公式](https://www.lion.co.jp/ja/products/547)"
+      ],
+      "label": "便器・便座・床への使用可否"
+    },
+    {
+      "id": "stains_formula",
+      "keywords": [
+        "日常汚れ",
+        "水あか",
+        "尿石",
+        "液性",
+        "併用禁止"
+      ],
+      "label": "対象の汚れと液性"
+    },
+    {
+      "id": "procedure",
+      "keywords": [
+        "スプレー",
+        "液体",
+        "こすり洗い",
+        "拭き取り",
+        "放置時間"
+      ],
+      "label": "塗布方法・放置時間・すすぎの要否"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/household-toilet-cleaning-detergents/household-toilet-cleaning-detergents.png",
+  "products": [
+    {
+      "amazon_title": "アイメディア(Aimedia) 尿石取りジェル 140g 密着タイプ 尿石除去剤 トイレ洗剤 業務用 日本製 トイレ掃除 黄ばみ 悪臭除去 除菌",
+      "asin": "B0CZXMQGCJ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51VQI8qfuFL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "stains_formula"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0CZXMQGCJ",
+      "ref": "p1",
+      "search_key": "アイメディア(Aimedia) 尿石取りジェル 140g 密着タ",
+      "selection_score": 0.49
+    },
+    {
+      "amazon_title": "【Amazon.co.jp 限定】スクラビングバブル トイレ掃除 アルコール除菌 プッシュタイプ 本体 300ml+詰め替え用 250ml×2本セット 日本製 トイレ 洗剤 除菌シート 除菌剤 エタノール 除菌 便座クリーナー まとめ買い",
+      "asin": "B07NVVG5JS",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81LzKpdSixL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "surfaces"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B07NVVG5JS",
+      "ref": "p2",
+      "search_key": "スクラビングバブル トイレ掃除 アルコール除菌 プッシュタイプ",
+      "selection_score": 0.49
+    },
+    {
+      "amazon_title": "花王(Kao) KAO 【大容量】 トイレマジックリン 消臭・洗浄スプレー 4.5L 業務用 トイレ用 洗剤 プロフェッショナル・サービス",
+      "asin": "B003OBO25Q",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71kZZMzMDVL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "procedure"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B003OBO25Q",
+      "ref": "p3",
+      "search_key": "花王(Kao) KAO トイレマジックリン 消臭・洗浄スプレー",
+      "selection_score": 0.49
+    },
+    {
+      "amazon_title": "ブルーレット トイレ洗浄中 さぼったリング大盛り泡 黒ズミ対策 こすらず泡洗浄 8包 小林製薬 トイレ掃除 洗浄剤【Amazon.co.jp限定】",
+      "asin": "B0GQ2X81SP",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/912-XiMCy+L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GQ2X81SP",
+      "ref": "p4",
+      "search_key": "ブルーレット トイレ洗浄中 さぼったリング大盛り泡 黒ズミ対策",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "トイレマジックリン こすらずスッキリ泡パック トイレ洗剤 トイレは泡パックでほったらかし掃除！消臭も ウォーターミントの香り つめかえ用 １０８０ｍｌ",
+      "asin": "B0FR9RQKMG",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81jmWygH8uL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FR9RQKMG",
+      "ref": "p5",
+      "search_key": "トイレマジックリン こすらずスッキリ泡パック トイレ洗剤 トイレ",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "トイレマジックリン こすらずスッキリ泡パック トイレ洗剤 トイレは泡パックでほったらかし掃除！消臭も サボン＆シトラスの香り つめかえ用 １０８０ｍｌ",
+      "asin": "B0FR9G4CXL",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81bJmVU0idL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FR9G4CXL",
+      "ref": "p6",
+      "search_key": "トイレマジックリン こすらずスッキリ泡パック トイレ洗剤 トイレ",
+      "selection_score": 0.31
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "procedure",
+      "stains_formula",
+      "surfaces"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "household-toilet-cleaning-detergents"
+}
