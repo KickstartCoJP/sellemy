@@ -1,0 +1,139 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/gratin-baking-dishes-6-picks.html",
+  "category": "dailygoods",
+  "comparison_axes": [
+    {
+      "id": "capacity_dimensions",
+      "keywords": [
+        "容量",
+        "外寸",
+        "深さ",
+        "持ち手を含む幅"
+      ],
+      "label": "作る量と庫内への収まり"
+    },
+    {
+      "id": "heating_compatibility",
+      "keywords": [
+        "耐熱ガラス",
+        "陶磁器",
+        "オーブン対応",
+        "トースター対応",
+        "電子レンジ対応"
+      ],
+      "label": "素材と使える加熱機器"
+    },
+    {
+      "id": "serving_care",
+      "keywords": [
+        "持ち手",
+        "本体重量",
+        "食洗機対応",
+        "重ね収納",
+        "急冷の注意"
+      ],
+      "label": "食卓への出し方と後片付け"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/gratin-baking-dishes-6-picks/gratin-baking-dishes-6-picks.png",
+  "products": [
+    {
+      "amazon_title": "三陶(Santo) 萬古焼 グラタン皿 一人用 楕円 オーバル 直径約21cm モノトーン 耐熱 陶器 オーブン対応 電子レンジ 食洗機対応 ブラウン 日本製 06282 (× 2)",
+      "asin": "B0GYC3BH9X",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61IBelArrJL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "heating_compatibility",
+        "serving_care"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GYC3BH9X",
+      "ref": "p1",
+      "search_key": "三陶(Santo) 萬古焼 グラタン皿 一人用 楕円 オーバル",
+      "selection_score": 0.67
+    },
+    {
+      "amazon_title": "HARIO(ハリオ) 日本製 耐熱ガラス製 トースター皿 400ml BUONO kitchen HTZ-40-BK クリア (× 2)",
+      "asin": "B0GGH9CK3G",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51uQMO-qoDL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "heating_compatibility"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GGH9CK3G",
+      "ref": "p2",
+      "search_key": "HARIO(ハリオ) 日本製 耐熱ガラス製 トースター皿 400",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "グリルパン 焼肉プレート 鉄鋳物 魚焼き グリルプレート グラタン皿 焼き肉 プレート 直火 焼肉プレート オーブントースター トレー ステーキ 鉄板キャンプ バーベキュー 深型フライパン 焼肉料理 サムギョプサル 家庭用 キャンプ用 (角型カセットオーブン)",
+      "asin": "B0FVRQSNG1",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71UI-t3LrLL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FVRQSNG1",
+      "ref": "p3",
+      "search_key": "グリルパン 焼肉プレート 鉄鋳物 魚焼き グリルプレート グラタ",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "ハーフサイズ オーブントースター 皿 ブラック 2個組",
+      "asin": "B0D5LXMVHL",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51blHeu2CcL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0D5LXMVHL",
+      "ref": "p4",
+      "search_key": "ハーフサイズ オーブントースター 皿 ブラック 2個組",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "iwaki(イワキ) 耐熱ガラス オーブントースター皿 ベーシックシリーズ ハーフ 144×120×39mm 340ml BC3840",
+      "asin": "B0B5QJXX81",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51VJa1aSJ2L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "heating_compatibility"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0B5QJXX81",
+      "ref": "p5",
+      "search_key": "iwaki(イワキ) 耐熱ガラス オーブントースター皿 ベーシッ",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "HARIO(ハリオ) 日本製 耐熱ガラス製 トースター皿 900ml BUONO kitchen HTZ-90-BK クリア",
+      "asin": "B09WH4QS2X",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41HcrRd123L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "heating_compatibility"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B09WH4QS2X",
+      "ref": "p6",
+      "search_key": "HARIO(ハリオ) 日本製 耐熱ガラス製 トースター皿 900",
+      "selection_score": 0.31
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "heating_compatibility",
+      "serving_care"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "gratin-baking-dishes-6-picks"
+}
