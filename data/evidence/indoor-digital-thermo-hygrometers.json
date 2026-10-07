@@ -1,0 +1,137 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/indoor-digital-thermo-hygrometers.html",
+  "category": "gadget",
+  "comparison_axes": [
+    {
+      "id": "measurement",
+      "keywords": [
+        "測定範囲",
+        "測定精度",
+        "精度保証範囲",
+        "表示単位",
+        "測定間隔"
+      ],
+      "label": "温度・湿度の測定範囲と精度の条件"
+    },
+    {
+      "id": "display_records",
+      "keywords": [
+        "文字寸法",
+        "最高最低表示",
+        "記録リセット",
+        "バックライト",
+        "確認先：[タニタ公式](https://www.tanita.co.jp/product/hygrometer/)"
+      ],
+      "label": "表示の読み取りやすさと記録機能"
+    },
+    {
+      "id": "placement_power",
+      "keywords": [
+        "卓上スタンド",
+        "壁掛け",
+        "マグネット",
+        "設置条件",
+        "電池種類",
+        "電池交換"
+      ],
+      "label": "置く・掛けるための構造と電源"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/indoor-digital-thermo-hygrometers/indoor-digital-thermo-hygrometers.png",
+  "products": [
+    {
+      "amazon_title": "Timloon デジタル温湿度計 室内温度湿度計 LCD大画面 バックライト機能 快適レベル 時計 カレンダー アラーム 壁掛け 卓上 マグネット",
+      "asin": "B0CSYQPXHC",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61VnNcQh6ZL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "display_records",
+        "placement_power"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0CSYQPXHC",
+      "ref": "p1",
+      "search_key": "Timloon デジタル温湿度計 室内温度湿度計 LCD大画面",
+      "selection_score": 0.67
+    },
+    {
+      "amazon_title": "温湿度計 アナログ 高精度 温度計 湿度計 壁掛け 卓上 2WAY サウナ 温度計 見やすい 大文字盤 電池不要 敬老の日 プレゼント 高齢者 爬虫類 飼育 温湿度管理 業務用 家庭用 (ホワイト)",
+      "asin": "B0HDHTKT1Z",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71psHeFddML._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "placement_power"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HDHTKT1Z",
+      "ref": "p2",
+      "search_key": "温湿度計 アナログ 高精度 温度計 湿度計 壁掛け 卓上 2WA",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "デジタル温湿度計 室内外温度計 湿度計 LCD大画面表示",
+      "asin": "B0GK8C52B3",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61OVZhBQLcL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GK8C52B3",
+      "ref": "p3",
+      "search_key": "デジタル温湿度計 室内外温度計 湿度計 LCD大画面表示",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "デジタル温度湿度計 室内/屋外 ワイヤレス 外気温湿度 3つセンサー ブラック",
+      "asin": "B0GGZ57X6S",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71CGy+p+DML._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GGZ57X6S",
+      "ref": "p4",
+      "search_key": "デジタル温度湿度計 室内/屋外 ワイヤレス 外気温湿度 3つセン",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "HATUSOKU LED温湿度計 デジタル 業務用 家庭用 見やすい 手動校正 最高/最低値記録機能 ON04",
+      "asin": "B0FXG8DCS3",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61+gn3ICP0L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FXG8DCS3",
+      "ref": "p5",
+      "search_key": "HATUSOKU LED温湿度計 デジタル 業務用 家庭用 見や",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "Timloon デジタル温度湿度計 室内/室外 ワイヤレス温湿度計 外気温湿度 3つセンサー 天気予報/気圧表示",
+      "asin": "B0FL282HXF",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71YE7dPoVQL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FL282HXF",
+      "ref": "p6",
+      "search_key": "Timloon デジタル温度湿度計 室内/室外 ワイヤレス温湿度",
+      "selection_score": 0.31
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "display_records",
+      "placement_power"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "indoor-digital-thermo-hygrometers"
+}
