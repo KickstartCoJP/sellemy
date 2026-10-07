@@ -1,0 +1,142 @@
+{
+  "slug": "manual-pruning-saws",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/manual-pruning-saws.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/manual-pruning-saws/manual-pruning-saws.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "blade",
+      "label": "刃渡りと刃の形状",
+      "keywords": [
+        "刃渡り",
+        "直刃",
+        "曲刃",
+        "目数"
+      ]
+    },
+    {
+      "id": "intended_material",
+      "label": "切断対象と用途の表示",
+      "keywords": [
+        "生木",
+        "乾燥木",
+        "庭木",
+        "剪定"
+      ]
+    },
+    {
+      "id": "storage_maintenance",
+      "label": "刃の収納と交換方法",
+      "keywords": [
+        "折込式",
+        "鞘入り",
+        "ロック",
+        "替刃品番"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "blade",
+      "intended_material",
+      "storage_maintenance"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true,
+    "content_duplicates_removed": []
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B07B7CYW3K",
+      "asin": "B07B7CYW3K",
+      "amazon_title": "MOSSY OAK ノコギリ 折込のこぎり 替え刃３枚 剪定鋸 折込鋸 折り畳み式 替え刃式 生木用 木工用 硬質プラスチック用 鉄工用替刃付き 多目的廃棄物 粗大ゴミ 安全ロック 専用収納ケース付き",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71v4MhbUHdL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.67,
+      "matched_comparison_axes": [
+        "intended_material",
+        "storage_maintenance"
+      ],
+      "search_key": "MOSSY OAK ノコギリ 折込のこぎり 替え刃３枚 剪定鋸"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0795C6961",
+      "asin": "B0795C6961",
+      "amazon_title": "角利産業(Kakuri Sangyo) のこぎり 粗大ゴミ解体 折込鋸 本体 刃渡り210mm ブラック柄 黒刃 軽金属 プラスチック 替刃式 コンパクト 角度2段切替 日本製ブレード使用",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/5104v1++QSL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.49,
+      "matched_comparison_axes": [
+        "blade"
+      ],
+      "search_key": "角利産業(Kakuri Sangyo) のこぎり 粗大ゴミ解体"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0C9T1WNF6",
+      "asin": "B0C9T1WNF6",
+      "amazon_title": "高儀 シャークソー 折込鋸 替刃式 剪定用 斬速目 210mm フッ素 日本製 速く切れる 園芸 庭木 果樹 防ヤニ 永切 カラビナ 取り付け可能 のこぎり ノコギリ 折込のこぎり 片刃 たかぎ",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/513SDYV+oFL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "intended_material"
+      ],
+      "search_key": "高儀 シャークソー 折込鋸 替刃式 剪定用 斬速目 210mm"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0C9SN47K5",
+      "asin": "B0C9SN47K5",
+      "amazon_title": "高儀 シャークソー 替刃式 剪定鋸 210mm サヤ付 日本製 園芸 庭木 果樹 切断推奨サイズ105mm以下 防サビ 永切 のこぎり ノコギリ 片刃 たかぎ",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41Le1gEogwL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "intended_material"
+      ],
+      "search_key": "高儀 シャークソー 替刃式 剪定鋸 210mm サヤ付 日本製"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0C9SLLZZK",
+      "asin": "B0C9SLLZZK",
+      "amazon_title": "高儀 シャークソー 折込鋸 替刃式 剪定用 替刃 210mm 日本製 のこぎり ノコギリ 鋸 折込のこぎり 片刃 替え刃 園芸 庭木 果樹 防サビ 永切 たかぎ",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41TcYF7No9L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "intended_material"
+      ],
+      "search_key": "高儀 シャークソー 折込鋸 替刃式 剪定用 替刃 210mm 日"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0C9SKVTXC",
+      "asin": "B0C9SKVTXC",
+      "amazon_title": "高儀 シャークソー 替刃式鋸 のこぎり ノコギリ 替刃 210mm サヤ付 万能目 日本製 片刃 木材 生木 庭木 剪定 防サビ 永切 たかぎ",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41R1xZUCGFL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "intended_material"
+      ],
+      "search_key": "高儀 シャークソー 替刃式鋸 のこぎり ノコギリ 替刃 210m"
+    }
+  ]
+}
