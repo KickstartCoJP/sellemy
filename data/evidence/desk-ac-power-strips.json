@@ -1,0 +1,135 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/desk-ac-power-strips.html",
+  "category": "gadget",
+  "comparison_axes": [
+    {
+      "id": "outlet_layout",
+      "keywords": [
+        "AC口数",
+        "差込口間隔",
+        "差込方向",
+        "ACアダプター寸法"
+      ],
+      "label": "差込口の数・向き・間隔"
+    },
+    {
+      "id": "installation_fit",
+      "keywords": [
+        "マグネット",
+        "クランプ",
+        "コード長",
+        "プラグ形状"
+      ],
+      "label": "固定方法と配線の条件"
+    },
+    {
+      "id": "rated_protection",
+      "keywords": [
+        "合計定格容量",
+        "過電流保護",
+        "ほこり防止シャッター",
+        "雷サージ保護"
+      ],
+      "label": "定格容量と保護機構"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/desk-ac-power-strips/desk-ac-power-strips.png",
+  "products": [
+    {
+      "amazon_title": "サンワサプライ クランプ固定式タップ（AC4個口＋USB-C×3＋USB-A×1・PD65W・ブラック） TAP-B114UC-2BK",
+      "asin": "B0GGP5CP1S",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61Y1rL70AtL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "installation_fit"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GGP5CP1S",
+      "ref": "p1",
+      "search_key": "サンワサプライ クランプ固定式タップ（AC4個口＋USB-C×3",
+      "selection_score": 0.48
+    },
+    {
+      "amazon_title": "ClimatePartner Verified",
+      "asin": "B0GTKDCZ8D",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51YsqlBYipL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GTKDCZ8D",
+      "ref": "p2",
+      "search_key": "ClimatePartner Verified",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "グリーンハウス 電源タップホルダー 工事不要のクランプ式 ホワイト GH-OTHA-WH",
+      "asin": "B0DQWYNF65",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51g-ZOP76KL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "installation_fit"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0DQWYNF65",
+      "ref": "p3",
+      "search_key": "グリーンハウス 電源タップホルダー 工事不要のクランプ式 ホワイ",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "エルパ(ELPA) デスクUSBタップ 4個口 集中スイッチ ブラック USB-A 2ポート付 クランプ式 固定タップ 延長コード 2m 耐雷サージ機能付 絶縁カバー トラッキング防止 節電 省エネ WLS-DS4232SUA(BK)",
+      "asin": "B0CZL67DL1",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/619RJdwMo9L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "installation_fit"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0CZL67DL1",
+      "ref": "p4",
+      "search_key": "エルパ(ELPA) デスクUSBタップ 4個口 集中スイッチ ブ",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "エレコム 電源タップ タワー型 延長コード [ 12個口 ] 固定パーツ付 雷ガード ほこりシャッター 2m ブラック TT-03-1220BK",
+      "asin": "B0C9Q3NFKQ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51bxOfASZ8L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0C9Q3NFKQ",
+      "ref": "p5",
+      "search_key": "エレコム 電源タップ タワー型 延長コード 固定パーツ付 雷ガー",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "サンワサプライ(Sanwa Supply) 電源タップ 10個口・2P (1m) たくさん挿せるレイアウト 雷ガード マグネット ほこりシャッター 一括集中スイッチ スイングプラグ ブラック TAP-SP2110N-1BK",
+      "asin": "B0C9CQQVVW",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61OvW3kvZJL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "installation_fit"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0C9CQQVVW",
+      "ref": "p6",
+      "search_key": "サンワサプライ(Sanwa Supply) 電源タップ 10個口",
+      "selection_score": 0.3
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "installation_fit"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "desk-ac-power-strips"
+}
