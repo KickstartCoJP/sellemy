@@ -1,0 +1,133 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/bathroom-stools.html",
+  "category": "dailygoods",
+  "comparison_axes": [
+    {
+      "id": "seat_dimensions",
+      "keywords": [
+        "座面高",
+        "座面幅",
+        "座面奥行",
+        "座面形状"
+      ],
+      "label": "座面の高さと広さ"
+    },
+    {
+      "id": "leg_structure",
+      "keywords": [
+        "脚形状",
+        "滑り止め",
+        "耐荷重",
+        "接地面"
+      ],
+      "label": "脚まわりの構造と設置条件"
+    },
+    {
+      "id": "drying_and_care",
+      "keywords": [
+        "引っ掛け収納",
+        "マグネット収納",
+        "対応壁面",
+        "裏面構造",
+        "取り外せる部品"
+      ],
+      "label": "乾かすための収納と清掃"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/bathroom-stools/bathroom-stools.png",
+  "products": [
+    {
+      "amazon_title": "お風呂椅子 収納棚付き 耐荷重150kg 折りたたみシャワーチェアー 5段 階高さ調節 風呂 椅子 U型溝座面 背もたれ付 介護用 肘掛け付き 立ち上がり補助 カビない コンパクト アルミ合金製 滑り止め付き 高齢者/妊婦用 日本語説明書付 丈夫 組み立て簡単(ブルー, U型溝座面)",
+      "asin": "B0HFGD884R",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61X5DBW5KdL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "leg_structure"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HFGD884R",
+      "ref": "p1",
+      "search_key": "お風呂椅子 収納棚付き 耐荷重150kg 折りたたみシャワーチェ",
+      "selection_score": 0.49
+    },
+    {
+      "amazon_title": "ザッカLab. セット販売 バスチェアEX+湯おけ 座面高さ30cm サンドベージュ",
+      "asin": "B0FGPMC59D",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51uHQ4rRuxL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "seat_dimensions"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0FGPMC59D",
+      "ref": "p2",
+      "search_key": "ザッカLab. セット販売 バスチェアEX+湯おけ 座面高さ30",
+      "selection_score": 0.49
+    },
+    {
+      "amazon_title": "マグネットで浮かせる風呂イス40cm バスチェア 風呂椅子 磁石 壁面収納 浮かせる収納 アルミ脚 軽量 お風呂 浴室 ホワイト",
+      "asin": "B0HFRHM26P",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51YHWd6-63L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HFRHM26P",
+      "ref": "p3",
+      "search_key": "マグネットで浮かせる風呂イス40cm バスチェア 風呂椅子 磁石",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "Homwom バスチェア 風呂椅子 アルミ脚 壁掛け収納。 (ホワイト, 32x25x30)",
+      "asin": "B0H2M24VF2",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61T6fAPHPHL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H2M24VF2",
+      "ref": "p4",
+      "search_key": "Homwom バスチェア 風呂椅子 アルミ脚 壁掛け収納。 (ホ",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "【25年度グッドデザイン賞】アスベル 風呂いす 40㎝ 風呂椅子 オシャレ 洗いやすい 4本脚 通気性 乾きやすい 高め 介護 抗菌加工 Ag+ 広い座面 浴槽に掛けられる 洗いやすい カビ防止 衛生的 立ち座りが楽 ライトグレー バスチェア EX40 ASVEL",
+      "asin": "B0FJQH6RNF",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/515g5+OLyfL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FJQH6RNF",
+      "ref": "p5",
+      "search_key": "アスベル 風呂いす 40㎝ 風呂椅子 オシャレ 洗いやすい 4本",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "Umimile バスチェア 風呂イス ステップ 多機能 アルミ脚 ホワイト 40cm/35cm/30cm/25cm選択可能 (高さ30cm)",
+      "asin": "B0F8QJJHPL",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41eftvvsiuL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0F8QJJHPL",
+      "ref": "p6",
+      "search_key": "Umimile バスチェア 風呂イス ステップ 多機能 アルミ脚",
+      "selection_score": 0.31
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "leg_structure",
+      "seat_dimensions"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "bathroom-stools"
+}

@@ -1,0 +1,19 @@
+{
+  "generated_at": null,
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "generation_route_attestation": "historical_codex_rollout_extension",
+  "height": 1024,
+  "image_generation_internal_usage_exposed": false,
+  "image_sha256": "ba42fcdbf01164d7cdb09f021998450fb55965754f6786745e466da98b4b5495",
+  "member_binding_revision": null,
+  "model": "gpt-6-astra",
+  "model_reported_generation_route": "codex_cli_imagegen",
+  "role_id": "bu-codex-sellemy-designer",
+  "summary": "家庭の浴室に置いた風呂椅子を主役に、座面の形状と四本脚、周囲の空間を表現。ファイルの存在、PNG形式、1536×1024を検証済み。",
+  "thread_id": "01a111a0-344e-74b1-99da-7cee59ca6cf0",
+  "token_usage": {},
+  "token_usage_source": "historical_rollout",
+  "visual_family": "Product Portrait",
+  "width": 1536
+}
