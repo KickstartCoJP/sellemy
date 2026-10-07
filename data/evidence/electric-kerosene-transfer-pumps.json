@@ -1,0 +1,139 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/electric-kerosene-transfer-pumps.html",
+  "category": "gadget",
+  "comparison_axes": [
+    {
+      "id": "container_fit",
+      "keywords": [
+        "差し込み式",
+        "容器固定式",
+        "口径",
+        "ホース長"
+      ],
+      "label": "灯油容器と給油口への適合"
+    },
+    {
+      "id": "flow_stop",
+      "keywords": [
+        "吐出量",
+        "測定条件",
+        "液面感知",
+        "自動停止"
+      ],
+      "label": "給油量と停止機能"
+    },
+    {
+      "id": "power_storage",
+      "keywords": [
+        "乾電池式",
+        "充電式",
+        "電池本数",
+        "ノズルホルダー"
+      ],
+      "label": "電源と使用後の収納"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/electric-kerosene-transfer-pumps/electric-kerosene-transfer-pumps.png",
+  "products": [
+    {
+      "amazon_title": "工進(KOSHIN) 乾電池式 タンク 直付け 灯油 ポンプ EPF-803 自動停止 単三電池 4本 使用 ストーブ 給油 ベージュ",
+      "asin": "B0DDKNZL9L",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51F1PW2JnML._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "flow_stop",
+        "power_storage"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0DDKNZL9L",
+      "ref": "p1",
+      "search_key": "工進(KOSHIN) 乾電池式 タンク 直付け 灯油 ポンプ E",
+      "selection_score": 0.685
+    },
+    {
+      "amazon_title": "電動オイルポンプ 給油ポンプ 自動停止機能付き 高速給油 灯油・ディーゼル移送用 車両・家庭整備用 (A,12V) [並行輸入品]",
+      "asin": "B0HK4DX6VS",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51BCQwED5xL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "flow_stop"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HK4DX6VS",
+      "ref": "p2",
+      "search_key": "電動オイルポンプ 給油ポンプ 自動停止機能付き 高速給油 灯油",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "電動オイルポンプ 電動燃料移送ポンプ 12v/24v 自吸式 ポータブル スイッチ付き ガソリン/灯油/軽油 対応 高効率モーター 45(m³/h) 吸込揚程 3-5m 吐出揚程 10m 車両 農機 工場 現場作業用 (24v)",
+      "asin": "B0GWQ823HN",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61b7lQ-Vi9L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GWQ823HN",
+      "ref": "p3",
+      "search_key": "電動オイルポンプ 電動燃料移送ポンプ 12v/24v 自吸式 ポ",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "三 宅化学 電動灯油ポンプ ケース付 オートストップ 自動停止 単3形乾電池対応 PS-L20 ホワイト/グレー 15×5.5×70cm",
+      "asin": "B0DXYPBL8F",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51X0Lw31c2L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "flow_stop"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0DXYPBL8F",
+      "ref": "p4",
+      "search_key": "三 宅化学 電動灯油ポンプ ケース付 オートストップ 自動停止",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "三宅化学 電動灯油ポンプ ケース付 オートストップ 自動停止 単1形乾電池対応 PS-N20R ホワイト/グレー 15×5.5×75cm",
+      "asin": "B0B6F1Q14F",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41IPb1RTK+L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "flow_stop"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0B6F1Q14F",
+      "ref": "p5",
+      "search_key": "三宅化学 電動灯油ポンプ ケース付 オートストップ 自動停止 単",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "三宅化学 電動灯油ポンプ オートストップ 自動停止・ブザー付 単3形乾電池対応 TP-L30 ホワイト/グリーン 15×5×70cm",
+      "asin": "B0B6DTJPWV",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51gd+39NglL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "flow_stop"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0B6DTJPWV",
+      "ref": "p6",
+      "search_key": "三宅化学 電動灯油ポンプ オートストップ 自動停止・ブザー付 単",
+      "selection_score": 0.325
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "flow_stop",
+      "power_storage"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "electric-kerosene-transfer-pumps"
+}
