@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-10-07T07:28:02.520258+00:00",
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "generation_route_attestation": "historical_verified_receipt",
+  "height": 1024,
+  "image_generation_internal_usage_exposed": false,
+  "image_sha256": "03b313d5f7a76481f7035760c430346b1480d3747491082802184c0e74c68d2a",
+  "member_binding_revision": 6,
+  "model": "gpt-6-astra",
+  "role_id": "bu-codex-sellemy-designer",
+  "summary": "家庭の庭で剪定ばさみを握り、刃と持ち手を確認する単一シーン。ファイルの存在、PNG形式、1536×1024を検証済み。",
+  "thread_id": "01a111a0-344e-74b1-99da-7cee59ca6cf0",
+  "token_usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 12792448,
+    "input_tokens": 13328914,
+    "output_tokens": 22746,
+    "reasoning_output_tokens": 54,
+    "total_tokens": 13351660,
+    "uncached_input_tokens": 536466
+  },
+  "token_usage_source": "codex_rollout.turn_token_usage",
+  "visual_family": "Close-up / Texture",
+  "width": 1536
+}
