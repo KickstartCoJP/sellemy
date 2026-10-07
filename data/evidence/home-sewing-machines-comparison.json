@@ -1,0 +1,139 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/home-sewing-machines-comparison.html",
+  "category": "gadget",
+  "comparison_axes": [
+    {
+      "id": "thread_setup",
+      "keywords": [
+        "針穴糸通し",
+        "下糸セット",
+        "糸調子"
+      ],
+      "label": "糸通しとボビンの準備"
+    },
+    {
+      "id": "stitch_control",
+      "keywords": [
+        "縫い目の長さ",
+        "振り幅",
+        "ボタンホール",
+        "返し縫い"
+      ],
+      "label": "縫い目と仕上げの設定"
+    },
+    {
+      "id": "operation_workspace",
+      "keywords": [
+        "速度調節",
+        "フットコントローラー",
+        "フリーアーム",
+        "補助テーブル",
+        "重量"
+      ],
+      "label": "操作方法と作業スペース"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/home-sewing-machines-comparison/home-sewing-machines-comparison.png",
+  "products": [
+    {
+      "amazon_title": "電動ミシン コンパクト家庭用ミシンセット 初心者 14種の縫い目 小型 ミニ ポータブル 低騒音 返し縫い フットコントローラー スピード可調整 拡張ボード 収納袋 DIYコットン柄の織物7枚 12色ミシン糸 日本語取扱説明書付き",
+      "asin": "B0G58PL536",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71lFR1C16+L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "operation_workspace",
+        "stitch_control"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0G58PL536",
+      "ref": "p1",
+      "search_key": "電動ミシン コンパクト家庭用ミシンセット 初心者 14種の縫い目",
+      "selection_score": 0.67
+    },
+    {
+      "amazon_title": "【大阪Deco】台座付 電動ミシン 小型 フットペダル・フットコントローラー付 家庭用 ACアダプタ [ボビン6個 ミシン針 糸通し]",
+      "asin": "B0HJ1L5MN5",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/611F46wh+CL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "operation_workspace"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HJ1L5MN5",
+      "ref": "p2",
+      "search_key": "台座付 電動ミシン 小型 フットペダル・フットコントローラー付",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "子育てにちょうどいい電動ミシン 家庭用ミシン 初心者向け 簡単操作 手芸 ソーイング 洋裁 小物作り",
+      "asin": "B0HHX3K1S1",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41lgXcGTkQL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HHX3K1S1",
+      "ref": "p3",
+      "search_key": "子育てにちょうどいい電動ミシン 家庭用ミシン 初心者向け 簡単操",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "電動ミシン 小型 コンパクト家庭用全自動ミシン 初心者向け 卓上 軽量 12種類縫い目 自動糸通し 返し縫い LEDライト",
+      "asin": "B0HGLTCZFX",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51kN5irnUrL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "stitch_control"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HGLTCZFX",
+      "ref": "p4",
+      "search_key": "電動ミシン 小型 コンパクト家庭用全自動ミシン 初心者向け 卓上",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "ミシン 電動ミシン 初心者向けのソーイング 12種類の縫い目 返し縫い機能 2way給電 趣味・DIY手作り スピード調整可 42PCS裁縫用アクセサリー 日本語説明書付",
+      "asin": "B0HGL1XHN9",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61uHJkOlVOL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "stitch_control"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HGL1XHN9",
+      "ref": "p5",
+      "search_key": "ミシン 電動ミシン 初心者向けのソーイング 12種類の縫い目 返",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "ミシン 初心者向け 電子ミシン 12種類の縫い目 返し縫い機能 2way給電 日常手作り縫製 42PCS裁縫セット付き スピード調整可能 持ち運び便利 日本語説明書付き",
+      "asin": "B0HF7NPXQV",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61MB-mI0wIL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "stitch_control"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HF7NPXQV",
+      "ref": "p6",
+      "search_key": "ミシン 初心者向け 電子ミシン 12種類の縫い目 返し縫い機能",
+      "selection_score": 0.31
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "operation_workspace",
+      "stitch_control"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "home-sewing-machines-comparison"
+}
