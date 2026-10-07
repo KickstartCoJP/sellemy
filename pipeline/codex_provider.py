@@ -63,8 +63,8 @@ DESIGNER_SURFACE = 'bu-codex-sellemy-designer'
 PLANNING_SURFACE = 'bu-codex-sellemy-planning'
 CONTEXT_ROTATION_DEFAULTS = {
     PLANNING_SURFACE: {'enabled': True, 'input_threshold': 120000, 'streak': 3},
-    'bu-codex-sellemy-writer': {'enabled': False, 'input_threshold': 140000, 'streak': 3},
-    DESIGNER_SURFACE: {'enabled': False, 'input_threshold': 120000, 'streak': 3},
+    'bu-codex-sellemy-writer': {'enabled': True, 'input_threshold': 250000, 'streak': 3},
+    DESIGNER_SURFACE: {'enabled': True, 'input_threshold': 250000, 'streak': 3},
 }
 
 BRIEF_FIXED = """# Sellemy Codex Brief
@@ -194,7 +194,8 @@ def _context_policy(surface_key: str) -> dict:
     })
     enabled = {
         item.strip() for item in os.environ.get(
-            'SELLEMY_CODEX_CONTEXT_ROTATION_SURFACES', PLANNING_SURFACE
+            'SELLEMY_CODEX_CONTEXT_ROTATION_SURFACES',
+            ','.join(CONTEXT_ROTATION_DEFAULTS)
         ).split(',') if item.strip()
     }
     base['enabled'] = surface_key in enabled
@@ -304,7 +305,7 @@ def _start_compacted_thread(command: tuple[str, ...], model: str, root: Path,
         thread_id = str(uuid.UUID(str(thread_id)))
     except (ValueError, TypeError, AttributeError) as exc:
         raise CodexProviderError('Codex compact thread creation returned no canonical thread UUID') from exc
-    return thread_id, _usage(completed.stdout)
+    return thread_id, _latest_completed_turn_usage(thread_id) or _usage(completed.stdout)
 
 
 def _rotate_context(command: tuple[str, ...], model: str, root: Path, surface_key: str,
@@ -462,6 +463,59 @@ def _session_file(thread_id: str) -> Path | None:
     return max(files, key=lambda path: path.stat().st_mtime) if files else None
 
 
+def _latest_completed_turn_usage(thread_id: str) -> dict:
+    path = _session_file(thread_id)
+    if not path or not path.is_file():
+        return {}
+    previous = {key: 0 for key in (
+        'input_tokens', 'cached_input_tokens', 'cache_write_input_tokens',
+        'output_tokens', 'reasoning_output_tokens', 'total_tokens',
+    )}
+    active = None
+    accumulated = None
+    latest = {}
+    try:
+        lines = path.read_text(encoding='utf-8', errors='ignore').splitlines()
+    except OSError:
+        return {}
+    for line in lines:
+        try:
+            row = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        payload = row.get('payload') if isinstance(row, dict) else None
+        payload = payload if isinstance(payload, dict) else {}
+        if row.get('type') == 'event_msg' and payload.get('type') == 'task_started':
+            active = payload.get('turn_id')
+            accumulated = {key: 0 for key in previous}
+        elif row.get('type') == 'event_msg' and payload.get('type') == 'token_count':
+            info = payload.get('info') or {}
+            raw = info.get('total_token_usage') if isinstance(info, dict) else None
+            if not isinstance(raw, dict):
+                continue
+            current = {key: int(raw.get(key) or 0) for key in previous}
+            if active:
+                baseline = previous
+                if any(current[key] < baseline[key] for key in previous):
+                    baseline = {key: 0 for key in previous}
+                if accumulated is None:
+                    accumulated = {key: 0 for key in previous}
+                accumulated = {
+                    key: accumulated[key] + current[key] - baseline[key] for key in previous
+                }
+            previous = current
+        elif row.get('type') == 'event_msg' and payload.get('type') in ('task_complete', 'turn_aborted'):
+            if active and payload.get('turn_id') == active:
+                if payload.get('type') == 'task_complete' and accumulated is not None:
+                    latest = dict(accumulated)
+                    latest['uncached_input_tokens'] = max(
+                        0, latest['input_tokens'] - latest['cached_input_tokens']
+                    )
+                active = None
+                accumulated = None
+    return latest
+
+
 def _turn_usage(payload: dict) -> dict:
     raw = payload.get('turn_token_usage') if isinstance(payload, dict) else None
     if not isinstance(raw, dict):
@@ -504,7 +558,7 @@ def _collect_queued_turn(thread_id: str, marker: str, *, timeout: int) -> tuple[
                     final = payload.get('last_agent_message')
                     if not isinstance(final, str) or not final.strip():
                         raise CodexProviderError('queued Codex turn completed without final message')
-                    return final.strip(), usage
+                    return final.strip(), _latest_completed_turn_usage(thread_id) or usage
         time.sleep(0.5)
     raise CodexProviderError(f'queued Codex turn timed out after {timeout}s')
 
@@ -547,7 +601,7 @@ def _queue_turn(command: tuple[str, ...], model: str, thread_id: str, root: Path
                 final = text.strip()
     if not final:
         raise CodexProviderError('Codex resume completed without final agent message')
-    return final, _usage(completed.stdout)
+    return final, _latest_completed_turn_usage(thread_id) or _usage(completed.stdout)
 
 
 def _json_object(text: str) -> dict:

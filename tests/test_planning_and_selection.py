@@ -78,6 +78,22 @@ class ContinuousPlanningTests(unittest.TestCase):
             with self.assertRaises(planning_runtime.PlanningError):
                 planning_runtime.discover_candidates()
 
+    def test_planning_context_keeps_full_duplicate_guard_compact(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            articles = Path(tmp) / 'articles.json'
+            rows = [
+                {'slug': f'topic-{i}-item', 'category': 'gadget', 'title': ('長いタイトル' * 30) + str(i), 'summary': 'x' * 500}
+                for i in range(320)
+            ]
+            articles.write_text(json.dumps(rows, ensure_ascii=False))
+            seeds = Path(tmp) / 'seeds.json'; seeds.write_text('{"categories": {}}')
+            with patch.object(planning_runtime, 'ARTICLES', articles), patch.object(planning_runtime, 'SEEDS', seeds):
+                context = planning_runtime._context()
+        self.assertNotIn('existing_articles', context)
+        self.assertEqual(len(context['existing_slugs']), 320)
+        self.assertEqual(len(context['recent_articles']), 36)
+        self.assertLess(len(json.dumps(context, ensure_ascii=False)), 30000)
+
     def test_ranking_rejects_existing_intent_and_balances_categories(self):
         with tempfile.TemporaryDirectory() as tmp:
             articles = Path(tmp) / 'articles.json'

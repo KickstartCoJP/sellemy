@@ -76,12 +76,15 @@ def _portfolio_signals(articles: list[dict]) -> dict:
 
 def _context() -> dict:
     articles = json.loads(ARTICLES.read_text(encoding='utf-8'))
+    recent = articles[-36:]
     return {
         'today': date.today().isoformat(), 'allowed_categories': list(CATEGORIES),
         'exploration_seeds': json.loads(SEEDS.read_text(encoding='utf-8'))['categories'],
-        'existing_articles': [{k: row.get(k) for k in ('slug', 'category', 'title')} for row in articles],
+        'existing_article_count': len(articles),
+        'existing_slugs': [str(row.get('slug') or '') for row in articles if row.get('slug')],
+        'recent_articles': [{k: row.get(k) for k in ('slug', 'category', 'title')} for row in recent],
         'portfolio': _portfolio_signals(articles),
-        'instruction': 'Explore fresh search and purchase intents every cycle. Seeds are inspiration, never a queue. Actively diversify underrepresented categories and avoid repeating the same distinctive topic family in the recent portfolio. Return novel candidates across all categories.',
+        'instruction': 'Explore fresh search and purchase intents every cycle. Seeds are inspiration, never a queue. Existing slugs are a compact duplicate guard; exact and normalized duplicate rejection is enforced again by Runtime against the full article catalog. Actively diversify underrepresented categories and avoid repeating the same distinctive topic family in the recent portfolio. Return novel candidates across all categories.',
     }
 
 
