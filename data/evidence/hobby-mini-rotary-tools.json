@@ -1,0 +1,138 @@
+{
+  "slug": "hobby-mini-rotary-tools",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/hobby-mini-rotary-tools.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/hobby-mini-rotary-tools/hobby-mini-rotary-tools.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "speed_operation",
+      "label": "作業に合わせる回転数と運転条件",
+      "keywords": [
+        "回転数範囲",
+        "速度調整",
+        "連続使用時間",
+        "対応する加工"
+      ]
+    },
+    {
+      "id": "accessory_compatibility",
+      "label": "先端工具の取り付け条件",
+      "keywords": [
+        "対応軸径",
+        "コレット",
+        "チャック",
+        "付属先端工具"
+      ]
+    },
+    {
+      "id": "handling_power",
+      "label": "細かい作業での持ち方と電源",
+      "keywords": [
+        "本体径",
+        "重量",
+        "コード式",
+        "充電式",
+        "コード長"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "handling_power"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true,
+    "content_duplicates_removed": []
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0HLVGRVBV",
+      "asin": "B0HLVGRVBV",
+      "amazon_title": "ミニルーター 25PCSビットセット ワイヤレス USB充電式 3段階変速 5000＆10000＆15000RPM コードレス ペン型ミニルーター リューター DIY工具セット 電動 高速回転 彫刻ペン 小型 軽量 三段可変速度 過負荷保護 切断 彫刻 フライス 研削 研磨 除去 穴あけ USB充電 コンパクト 木工 彫刻 ドリル 汚れ落とし つや出し",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61ew3OypdgL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.49,
+      "matched_comparison_axes": [
+        "handling_power"
+      ],
+      "search_key": "ミニルーター 25PCSビットセット ワイヤレス USB充電式"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0H8J4GRC2",
+      "asin": "B0H8J4GRC2",
+      "amazon_title": "ミニルーター 40000RPM高速回転 6段変速 128点セット 電動 リューター DIY 工具 収納ケース付 軽量 12ヶ月保証付",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71mlGilfxVL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [],
+      "search_key": "ミニルーター 40000RPM高速回転 6段変速 128点セット"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0H2YTBPRV",
+      "asin": "B0H2YTBPRV",
+      "amazon_title": "Katerk ミニルーター コードレス 充電式 電動リューター 5段変速 20000RPM アクセサリーセット70点",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71-JJe0qZNL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "handling_power"
+      ],
+      "search_key": "Katerk ミニルーター コードレス 充電式 電動リューター"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0H2YFKPC2",
+      "asin": "B0H2YFKPC2",
+      "amazon_title": "Housolutionミニルーター リューター 46点セット USB充電式 15000RPM高速回転 3段変速",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61OMqJrwbML._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "handling_power"
+      ],
+      "search_key": "Housolutionミニルーター リューター 46点セット U"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0H11HY4VC",
+      "asin": "B0H11HY4VC",
+      "amazon_title": "ミニルーター 充電式 6段変速 6000~16000rpm LEDデジタル画面 LEDライト 正逆転切替 軽量89g 37点セット グレー",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71WsbBCdM3L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "handling_power"
+      ],
+      "search_key": "ミニルーター 充電式 6段変速 6000~16000rpm LE"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0GR3S5SCN",
+      "asin": "B0GR3S5SCN",
+      "amazon_title": "ミニルーター 充電式 電動リューター 3段階スピード 照明付き 52点アクセサリー 過負荷保護 DIY 切断 電動 高速回転 彫刻ペン 彫刻 フライス 研削 研磨 除去 穴あけ 日本語説明書",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/712PpIxvotL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "handling_power"
+      ],
+      "search_key": "ミニルーター 充電式 電動リューター 3段階スピード 照明付き"
+    }
+  ]
+}
