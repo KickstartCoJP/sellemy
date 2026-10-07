@@ -1,0 +1,136 @@
+{
+  "slug": "digital-kitchen-scales",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/digital-kitchen-scales.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/digital-kitchen-scales/digital-kitchen-scales.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "measurement_range",
+      "label": "最大計量と重さごとの表示単位",
+      "keywords": [
+        "最大計量",
+        "最小表示",
+        "微量モード",
+        "計量範囲"
+      ]
+    },
+    {
+      "id": "weighing_workflow",
+      "label": "容器を載せたときの計量操作",
+      "keywords": [
+        "風袋引き",
+        "計量皿寸法",
+        "表示位置",
+        "自動電源オフ"
+      ]
+    },
+    {
+      "id": "cleaning_storage",
+      "label": "洗える範囲と収納条件",
+      "keywords": [
+        "防水対象",
+        "取り外し皿",
+        "本体寸法",
+        "電池"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "cleaning_storage",
+      "measurement_range",
+      "weighing_workflow"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true,
+    "content_duplicates_removed": []
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0FB8PCYFD",
+      "asin": "B0FB8PCYFD",
+      "amazon_title": "Ultrean キッチンスケール 5kg デジタルはかり 1g単位 LCD表示 風袋引き機能 電池付属",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71TscvZRSwL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.685,
+      "matched_comparison_axes": [
+        "cleaning_storage",
+        "weighing_workflow"
+      ],
+      "search_key": "Ultrean キッチンスケール 5kg デジタルはかり 1g単"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0H2Q97WPQ",
+      "asin": "B0H2Q97WPQ",
+      "amazon_title": "大型 キッチンスケール 最大計量5kg 0.1g単位% パーセンテージ機能 デジタルはかり 100g校正分銅付き",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61KzBOpQ8+L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.505,
+      "matched_comparison_axes": [
+        "measurement_range"
+      ],
+      "search_key": "大型 キッチンスケール 最大計量5kg 0.1g単位% パーセン"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HH8V13S5",
+      "asin": "B0HH8V13S5",
+      "amazon_title": "キッチンスケール デジタル 0.1g高精度 0.5g~3kg計量 数値ロック 水平器付き 壁掛け収納 電池付属 省エネ コンパクト 計量器",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61dVse55aFL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "cleaning_storage"
+      ],
+      "search_key": "キッチンスケール デジタル 0.1g高精度 0.5g~3kg計量"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0H4B4LYVB",
+      "asin": "B0H4B4LYVB",
+      "amazon_title": "デジタルキッチンスケール 10kg対応 1g単位 高精度 電子はかり g/oz/lb切替 g・kg・lb・oz・ml・牛乳mlの6単位に対応 ステンレス製 指紋防止 LCD表示 料理 お菓子作り 食品計量 ブラック",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/617SGZO9u1L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "デジタルキッチンスケール 10kg対応 1g単位 高精度 電子は"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0GHQMBDG7",
+      "asin": "B0GHQMBDG7",
+      "amazon_title": "【計量法適合 丸正マーク付き】キッチンスケール 0.01g単位/最大500g ホワイト 日本語マニュアル 保証書 クリアケース付属 小型ステンレス計量皿 ｜料理 薬 宝石 貴金属 塗料 ペット〔はかり/計り/測り/計量器/デジタル秤〕FieldNew",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71L4GRqfYkL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "キッチンスケール 0.01g単位/最大500g ホワイト 日本語"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0G1YH7D4Y",
+      "asin": "B0G1YH7D4Y",
+      "amazon_title": "ULTREAN キッチンスケール 5kg デジタルスケール 1g単位 LED表示 丸型 コンパクト",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71+NIA4va5L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "ULTREAN キッチンスケール 5kg デジタルスケール 1g"
+    }
+  ]
+}

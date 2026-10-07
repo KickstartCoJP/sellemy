@@ -1,0 +1,25 @@
+{
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "role_id": "bu-codex-sellemy-designer",
+  "thread_id": "01a115db-36c8-7ee3-b68c-60e65e47e9af",
+  "member_binding_revision": 7,
+  "model": "gpt-6-astra",
+  "visual_family": "Close-up Task-focused Lifestyle",
+  "summary": "デジタルキッチンスケールでオートミールを量る自然な調理場面。単一シーンで表示部と容器の関係を明確化。PNG形式・1536×1024と画像内容を検証済み。",
+  "image_sha256": "6549e8538d1ce22ba9cd4e73360fc1815e356d9148c359771c96d4b8a548e0bd",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-10-07T10:20:48.235861+00:00",
+  "token_usage_source": "codex_rollout.turn_token_usage",
+  "image_generation_internal_usage_exposed": false,
+  "token_usage": {
+    "input_tokens": 103248,
+    "cached_input_tokens": 91648,
+    "cache_write_input_tokens": 0,
+    "uncached_input_tokens": 11600,
+    "output_tokens": 852,
+    "reasoning_output_tokens": 0,
+    "total_tokens": 104100
+  }
+}
