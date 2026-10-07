@@ -16,6 +16,13 @@ def fake_png(width=1536, height=1024):
 
 
 class CodexEyecatchTests(unittest.TestCase):
+    def test_prompt_requires_exact_built_in_generation_route_literal(self):
+        prompt = codex_eyecatch._prompt(
+            slug='sample', title='Sample', category='gadget', evidence={},
+            payload={'summary':'summary','products':[]}, output=Path('/tmp'))
+        self.assertIn('generation_route MUST be the exact literal "built-in_image_gen"', prompt)
+        self.assertIn('Do not return "codex_cli_imagegen" there', prompt)
+
     def test_designer_writes_verified_receipt_and_token_usage(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

@@ -89,7 +89,9 @@ def _prompt(*, slug: str, title: str, category: str, evidence: dict, payload: di
         'Return output_path as the exact absolute path of the PNG in the Codex generated_images directory. '
         'Verify that file is PNG and 1536x1024. Do not generate multiple alternatives unless '
         'the first output fails the hard format/content requirements. Final response must report completed only after '
-        'the exact file exists and passes verification.'
+        'the exact file exists and passes verification. In the final JSON, generation_route MUST be the exact literal '
+        '"built-in_image_gen" after you actually used Codex built-in image_gen. Do not return "codex_cli_imagegen" there; '
+        'that is the Runtime receipt generation_method, not the Designer generation_route.'
     )
 
 
