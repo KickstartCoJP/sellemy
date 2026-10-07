@@ -1,9 +1,10 @@
 #!/bin/zsh
 set -euo pipefail
 export PATH=/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
-ROOT=/Users/kickstart/sellemy
-PY=/Users/kickstart/sellemy/.venv/bin/python
-GA4PY=/Users/kickstart/sellemy/.venv/bin/python
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+PY="$ROOT/.venv/bin/python"
+GA4PY="$ROOT/.venv/bin/python"
+export SELLEMY_ROOT="$ROOT"
 SECRETS=/Users/kickstart/ai-management-os/.env
 LOCK=/tmp/sellemy-growth.lock
 if ! mkdir "$LOCK" 2>/dev/null; then echo "$(date -Iseconds) already running"; exit 0; fi
@@ -35,17 +36,21 @@ export SELLEMY_CODEX_BRIEF_CHECKPOINT_TURNS=10
 export SELLEMY_CODEX_REASONING_EFFORT=low
 "$PY" - <<'PYSYNC'
 import sys
-sys.path.insert(0, '/Users/kickstart/sellemy/pipeline')
+import os
 from pathlib import Path
+root=Path(os.environ['SELLEMY_ROOT'])
+sys.path.insert(0, str(root/'pipeline'))
 from publish_gate import sync_clean_main
-print('growth preflight sync:', sync_clean_main(Path('/Users/kickstart/sellemy')))
+print('growth preflight sync:', sync_clean_main(root))
 PYSYNC
 eval "$("$PY" - <<'PYADMIT'
 import shlex,sys
-sys.path.insert(0, '/Users/kickstart/sellemy/pipeline')
+import os
 from pathlib import Path
+root=Path(os.environ['SELLEMY_ROOT'])
+sys.path.insert(0, str(root/'pipeline'))
 from adaptive_publish import AdaptivePublishController
-decision=AdaptivePublishController(Path('/Users/kickstart/sellemy')).admit_scheduled()
+decision=AdaptivePublishController(root).admit_scheduled()
 print('SELLEMY_PREFLIGHT_ALLOWED=' + ('1' if decision.get('allowed') else '0'))
 print('SELLEMY_PREFLIGHT_REASON=' + shlex.quote(str(decision.get('reason') or '')))
 if decision.get('allowed'):
