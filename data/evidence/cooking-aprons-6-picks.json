@@ -1,0 +1,144 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/cooking-aprons-6-picks.html",
+  "category": "dailygoods",
+  "comparison_axes": [
+    {
+      "id": "fastening",
+      "keywords": [
+        "首掛け",
+        "H型",
+        "かぶり型",
+        "腰ひも",
+        "長さ調節"
+      ],
+      "label": "着脱方法とひもの配置"
+    },
+    {
+      "id": "coverage",
+      "keywords": [
+        "身丈",
+        "身幅",
+        "スリット",
+        "ポケット位置"
+      ],
+      "label": "覆う範囲と動作に合う寸法"
+    },
+    {
+      "id": "fabric_care",
+      "keywords": [
+        "綿",
+        "麻",
+        "ポリエステル混",
+        "洗濯表示",
+        "アイロン条件",
+        "撥水加工の有無"
+      ],
+      "label": "素材と洗濯後の手入れ"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/cooking-aprons-6-picks/cooking-aprons-6-picks.png",
+  "products": [
+    {
+      "amazon_title": "[cozycube] エプロン ビッグサイズ 大きい スリット入り 黒 メンズ 速乾 シワ防止 耐久 H型 首掛け 前結び シンプル 男性用 カフェエプロン 無地 おしゃれ 汚れにくい 透けにくい ポケット付き お尻が隠れる",
+      "asin": "B0FJF9NHQG",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61ez5fz7a-L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "coverage",
+        "fastening"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0FJF9NHQG",
+      "ref": "p1",
+      "search_key": "エプロン ビッグサイズ 大きい スリット入り 黒 メンズ 速乾",
+      "selection_score": 0.66
+    },
+    {
+      "amazon_title": "エプロン H型 首掛け シンプル 女性用 男性用 かぶるだけ 和風 純綿 無地 おしゃれ 大容量ポケット 汚れにくい シワ防止 髪崩れ無し ノーアイロン 透けない 料理教室用エプロン (ブラック)",
+      "asin": "B0C36WJ4JJ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/31amgdh9sDL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "fabric_care",
+        "fastening"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0C36WJ4JJ",
+      "ref": "p2",
+      "search_key": "エプロン H型 首掛け シンプル 女性用 男性用 かぶるだけ 和",
+      "selection_score": 0.48
+    },
+    {
+      "amazon_title": "[HEWEAYTA] エプロン ブラック かぶるだけ簡単 撥水加工 ポケット付き シンプルでゆったり 家事 料理 男女兼用",
+      "asin": "B0H9LCPZ1H",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41bJPFrTU+L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H9LCPZ1H",
+      "ref": "p3",
+      "search_key": "エプロン ブラック かぶるだけ簡単 撥水加工 ポケット付き シン",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "[WXYYX] エプロン おしゃれ かわいい かぶるだけ H型 レディース メンズ 兼用 作業用 ワーク/カフェ/料理用エプロン 給食 黒 防汚 防しわ 大きいサイズ 調整可能 apron 围裙",
+      "asin": "B0H4Z3SF1D",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61zb+dytEhL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "fastening"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H4Z3SF1D",
+      "ref": "p4",
+      "search_key": "エプロン おしゃれ かわいい かぶるだけ H型 レディース メン",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "エプロン レディース 撥水加工 かぶるだけ (M/L/LL) 大きいサイズ 速乾 シワになりにくい H型エプロン 着脱簡単 ポケット付き",
+      "asin": "B0H2974G81",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51XgzFpYdIL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "fastening"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H2974G81",
+      "ref": "p5",
+      "search_key": "エプロン レディース 撥水加工 かぶるだけ (M/L/LL) 大",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "[AkNebriax] 撥水エプロン レディース・男女兼用 H型 ブラック プルオーバー",
+      "asin": "B0GYP1N7D9",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41Z3aitA8GL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "fastening"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GYP1N7D9",
+      "ref": "p6",
+      "search_key": "撥水エプロン レディース・男女兼用 H型 ブラック プルオーバー",
+      "selection_score": 0.3
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "coverage",
+      "fabric_care",
+      "fastening"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "cooking-aprons-6-picks"
+}
