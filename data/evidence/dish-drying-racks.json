@@ -1,0 +1,130 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/dish-drying-racks.html",
+  "category": "dailygoods",
+  "comparison_axes": [
+    {
+      "id": "installation_fit",
+      "keywords": [
+        "シンク内",
+        "シンク横",
+        "設置幅",
+        "奥行き",
+        "耐荷重"
+      ],
+      "label": "設置場所と必要な寸法"
+    },
+    {
+      "id": "dish_layout",
+      "keywords": [
+        "皿立て",
+        "カトラリー入れ",
+        "グラス掛け",
+        "対応皿寸法"
+      ],
+      "label": "置ける食器と仕切りの構造"
+    },
+    {
+      "id": "drainage_cleaning",
+      "keywords": [
+        "排水トレー",
+        "排水方向",
+        "取り外し",
+        "材質"
+      ],
+      "label": "排水方法と洗える部分"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/dish-drying-racks/dish-drying-racks.png",
+  "products": [
+    {
+      "amazon_title": "シンク上 水切りラック 伸縮式 ステンレス製 多機能 シンク作業台 変形しにくい 耐荷重 お手入れ簡単 キッチン 食器水切り 調理スペース拡張",
+      "asin": "B0H2VF9VYN",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71141txxtVL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "installation_fit"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H2VF9VYN",
+      "ref": "p1",
+      "search_key": "シンク上 水切りラック 伸縮式 ステンレス製 多機能 シンク作業",
+      "selection_score": 0.49
+    },
+    {
+      "amazon_title": "ADBIU シンク上 水切りラック 2段 幅・高さ伸縮式 食器乾燥ラック 取り外せるバスケット 省スペース キッチン収納 ブラック",
+      "asin": "B0HDLQCX69",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81KgoJfn9XL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HDLQCX69",
+      "ref": "p2",
+      "search_key": "ADBIU シンク上 水切りラック 2段 幅・高さ伸縮式 食器乾",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "シンク 作業台 伸縮 水切りラック 排水穴付き 水切りプレート シンク上 キッチン収納シンク 水切り 食器乾燥 調理スペース拡張 家庭用",
+      "asin": "B0H8JG1663",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61P4GrHEq2L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H8JG1663",
+      "ref": "p3",
+      "search_key": "シンク 作業台 伸縮 水切りラック 排水穴付き 水切りプレート",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "【スライド式で最大4人分に×自動排水】水切りラック シンク上 [ステンレスでサビにくい]伸縮 食器 水切りかご 洗い物 シルバー",
+      "asin": "B0H2DWFM37",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61dJNp7vbRL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H2DWFM37",
+      "ref": "p4",
+      "search_key": "水切りラック シンク上 伸縮 食器 水切りかご 洗い物 シルバー",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "RCHYFEED 水切りラック 伸縮 水切り シルバー",
+      "asin": "B0GQ3FDF2C",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71ZlD3N3Q5L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GQ3FDF2C",
+      "ref": "p5",
+      "search_key": "RCHYFEED 水切りラック 伸縮 水切り シルバー",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "【先行販売】パール金属 水切りラック 食器 水切りカゴ シンクに渡せる 伸縮式 ブラック 1段 コーティングワイヤー HC-877",
+      "asin": "B0GNM9HZTQ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71n45090CxL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GNM9HZTQ",
+      "ref": "p6",
+      "search_key": "パール金属 水切りラック 食器 水切りカゴ シンクに渡せる 伸縮",
+      "selection_score": 0.31
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "installation_fit"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "dish-drying-racks"
+}
