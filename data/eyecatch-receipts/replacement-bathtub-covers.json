@@ -1,0 +1,19 @@
+{
+  "generated_at": null,
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "generation_route_attestation": "historical_codex_rollout_extension",
+  "height": 1024,
+  "image_generation_internal_usage_exposed": false,
+  "image_sha256": "95345b111ae29c4038bfee9fc0fdc3e9df99c87b4f70d86721d98a01c8ba051e",
+  "member_binding_revision": null,
+  "model": "gpt-6-astra",
+  "model_reported_generation_route": "codex_cli_imagegen",
+  "role_id": "bu-codex-sellemy-designer",
+  "summary": "家庭の浴槽でシャッター式の風呂ふたを開閉する単一シーン。浴槽への収まりを俯瞰で表現し、ファイルの存在、PNG形式、1536×1024を検証済み。",
+  "thread_id": "01a111a0-344e-74b1-99da-7cee59ca6cf0",
+  "token_usage": {},
+  "token_usage_source": "historical_rollout",
+  "visual_family": "Top View / Flat Lay",
+  "width": 1536
+}
