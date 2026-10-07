@@ -1,0 +1,125 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/home-hair-thinning-scissors.html",
+  "category": "beauty",
+  "comparison_axes": [
+    {
+      "id": "thinning_amount",
+      "keywords": [
+        "カット率",
+        "スキ率",
+        "使用方法",
+        "毛束量"
+      ],
+      "label": "すく量の表示と使用条件"
+    },
+    {
+      "id": "blade_structure",
+      "keywords": [
+        "刃長",
+        "くし刃",
+        "刃材",
+        "全長"
+      ],
+      "label": "刃の構造と寸法"
+    },
+    {
+      "id": "grip_maintenance",
+      "keywords": [
+        "指穴",
+        "指掛け",
+        "利き手",
+        "保管方法"
+      ],
+      "label": "持ち手と手入れ"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/home-hair-thinning-scissors/home-hair-thinning-scissors.png",
+  "products": [
+    {
+      "amazon_title": "UPBEATLIFE すきばさみ 髪用 散髪用ハサミ セット 低すき率15% セルフカット初心者向け ヘアカットハサミ カットシザー セニングシザー 調整可能 ステンレス製 日本語説明書付き ケース付き 家庭用",
+      "asin": "B0HHQX7T19",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61Lt-EbFmqL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HHQX7T19",
+      "ref": "p1",
+      "search_key": "UPBEATLIFE すきばさみ 髪用 散髪用ハサミ セット 低",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "散髪用ハサミ すきばさみ セット【低すき率・9CRステンレス製】髪切りハサミ 毛量調整 セルフカット 前髪カット 10点セット 初心者 ケース付き",
+      "asin": "B0H9DJYMB2",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/811VFZRvAkL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H9DJYMB2",
+      "ref": "p2",
+      "search_key": "散髪用ハサミ すきばさみ セット 髪切りハサミ 毛量調整 セルフ",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "【初心者向けで安心して使える設計・プロ監修9点セット】ヘアカットはさみセット 散髪シザー 前髪カット対応 すきばさみ＆カットシザー",
+      "asin": "B0GRGS6MDT",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71Tn-GYss9L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GRGS6MDT",
+      "ref": "p3",
+      "search_key": "ヘアカットはさみセット 散髪シザー 前髪カット対応 すきばさみ＆",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "seathestars 散髪 ハサミ すきばさみ セット 低すき率 髪切りハサミ 高品質ステンレス ケース クリップ くし付き 初心者 プロ 美容師",
+      "asin": "B0FJFHLKC9",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51IOUqJdoaL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FJFHLKC9",
+      "ref": "p4",
+      "search_key": "seathestars 散髪 ハサミ すきばさみ セット 低すき",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "【2025年プロ美容師監修・初心者向け9点セット】すきばさみ セルフカット 【日本国内2重検品】ハイランク 散髪 はさみ セット 切れ味 抜群 段刃 低 すき率 ヘアカット ハサミ 髪切りはさみ 前髪 ヘアカット 自宅 さんぱつ キッズ 赤ちゃん 子供 大人 家庭用 ステンレス製 本格 理容 プロ仕様 収納ポーチ付き 失敗しない",
+      "asin": "B0DW3TWWVL",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71W9yzfJA0L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0DW3TWWVL",
+      "ref": "p5",
+      "search_key": "すきばさみ セルフカット ハイランク 散髪 はさみ セット 切れ",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "スキバサミ 10% プロ仕様 散髪用ハサミ 髪切り ヘアカットすきバサミ 散髪 シザー 初心者 セルフカット",
+      "asin": "B0DRSSSM7V",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61Cu+lQ5YaL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0DRSSSM7V",
+      "ref": "p6",
+      "search_key": "スキバサミ 10% プロ仕様 散髪用ハサミ 髪切り ヘアカットす",
+      "selection_score": 0.325
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "home-hair-thinning-scissors"
+}
