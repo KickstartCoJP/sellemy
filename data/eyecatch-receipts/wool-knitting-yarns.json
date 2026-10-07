@@ -1,0 +1,25 @@
+{
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "role_id": "bu-codex-sellemy-designer",
+  "thread_id": "01a111a0-344e-74b1-99da-7cee59ca6cf0",
+  "member_binding_revision": 6,
+  "model": "gpt-6-astra",
+  "visual_family": "Top View / Flat Lay",
+  "summary": "木のテーブルで毛糸につながる試し編みを確認する単一シーン。編み目と糸の質感を俯瞰で表現。ファイルの存在、PNG形式、1536×1024を検証済み。",
+  "image_sha256": "a3904dce82d668caac5f9a2fb1603a4e71f37a219dee75a3004213a577dbc39d",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-10-07T07:36:21.198480+00:00",
+  "token_usage_source": "codex_rollout.turn_token_usage",
+  "image_generation_internal_usage_exposed": false,
+  "token_usage": {
+    "input_tokens": 13624837,
+    "cached_input_tokens": 13078784,
+    "cache_write_input_tokens": 0,
+    "uncached_input_tokens": 546053,
+    "output_tokens": 23659,
+    "reasoning_output_tokens": 54,
+    "total_tokens": 13648496
+  }
+}
