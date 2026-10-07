@@ -17,6 +17,38 @@
       "meta_description": "デスク、椅子、モニター、照明、入力機器、USB-C周辺機器、Web会議・配信機器など、仕事や学習のデスク環境を整える比較記事をまとめたSellemyの特集です。",
       "hero_image": "",
       "editorial_priority": 10
+    },
+    {
+      "feature_id": "PH-COOKING",
+      "slug": "easy-daily-cooking",
+      "title": "毎日のごはんをラクにする",
+      "purpose_statement": "毎日の調理や下ごしらえ、保存を、無理なく続けやすい形に整える。",
+      "scope_include": "日常の調理、下ごしらえ、加熱、保存、キッチン作業を直接ラクにする商品記事。",
+      "scope_exclude": "食事そのものの贈答、イベント専用食品、調理との関係が弱い家電・収納用品。",
+      "intro": "毎日のごはん作りは、切る・混ぜる・加熱する・保存するといった小さな作業の積み重ねです。この特集では、調理の手間を減らし、続けやすくするための比較記事を、中心となる調理道具と周辺アイテムに分けてまとめます。",
+      "lifecycle_status": "published",
+      "navigation_visibility": "listed",
+      "seo_state": "index",
+      "seo_title": "毎日のごはんをラクにする｜調理・保存を快適にする特集 - Sellemy",
+      "meta_description": "調理家電、キッチン用品、保存用品など、毎日のごはん作りをラクにする比較記事をまとめたSellemyの特集です。",
+      "hero_image": "",
+      "editorial_priority": 9
+    },
+    {
+      "feature_id": "PH-HOUSEWORK",
+      "slug": "easier-housework",
+      "title": "家事をラクにする",
+      "purpose_statement": "掃除・洗濯・片付けなどの日常家事を、少ない負担で回しやすくする。",
+      "scope_include": "掃除、洗濯、片付け、日常メンテナンスなど、家庭内の家事負担を直接減らす商品記事。",
+      "scope_exclude": "趣味用途の機器、調理そのもの、家事との関係が弱い一般家電・デジタル機器。",
+      "intro": "掃除や洗濯、片付けは毎日の暮らしに欠かせない一方、道具や手順が合わないと負担が積み重なります。この特集では、家事の手間を減らし、日常を回しやすくするための比較記事をまとめます。",
+      "lifecycle_status": "published",
+      "navigation_visibility": "listed",
+      "seo_state": "index",
+      "seo_title": "家事をラクにする｜掃除・洗濯・片付けを快適にする特集 - Sellemy",
+      "meta_description": "掃除、洗濯、片付け、家庭内メンテナンスなど、毎日の家事をラクにする比較記事をまとめたSellemyの特集です。",
+      "hero_image": "",
+      "editorial_priority": 8
     }
   ]
 }

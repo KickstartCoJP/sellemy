@@ -1,0 +1,86 @@
+{
+  "task_id": "TASK-BU002-PURPOSE-PRODUCTION-IMPLEMENT-20261007-001",
+  "published_population": 328,
+  "population_snapshot_sha256": "718dbd3d18609eda181a19a46bd612135bbf72ef4f652b0e78e2b811d6ffff49",
+  "batch": [
+    "PH-COOKING",
+    "PH-HOUSEWORK"
+  ],
+  "features": {
+    "PH-COOKING": {
+      "slug": "easy-daily-cooking",
+      "gate": "PASS",
+      "intent": "daily cooking workload reduction",
+      "plausibility": "PASS",
+      "relations": [
+        26,
+        22,
+        4
+      ]
+    },
+    "PH-HOUSEWORK": {
+      "slug": "easier-housework",
+      "gate": "PASS",
+      "intent": "housework workload reduction",
+      "plausibility": "PASS",
+      "relations": [
+        30,
+        17,
+        13
+      ]
+    }
+  },
+  "relation_adds": [
+    {
+      "feature_id": "PH-COOKING",
+      "slug": "hand-blenders-for-cooking",
+      "relation_type": "core"
+    },
+    {
+      "feature_id": "PH-HOUSEWORK",
+      "slug": "home-steam-cleaners",
+      "relation_type": "core"
+    },
+    {
+      "feature_id": "PH-HOUSEWORK",
+      "slug": "magnetic-bathroom-storage-racks",
+      "relation_type": "supporting"
+    },
+    {
+      "feature_id": "PH-HOUSEWORK",
+      "slug": "microfiber-cleaning-cloths-6-picks",
+      "relation_type": "supporting"
+    }
+  ],
+  "overlap_review": {
+    "PH-COOKING": "no material overlap in current reviewed relation set",
+    "PH-HOUSEWORK": {
+      "PH-DESK": 1,
+      "PH-DRYNESS": 1,
+      "PH-SLEEP": 1
+    },
+    "PH-DRYNESS_x_PH-SKINCARE": 11
+  },
+  "seo_gate": {
+    "bidirectional_links": true,
+    "self_canonical": true,
+    "sitemap": true,
+    "breadcrumb": true,
+    "thin_empty": false
+  },
+  "article_preservation": {
+    "body_except_related_feature_block": "byte-equivalent to pre-change HEAD",
+    "affiliate_links": "18 each",
+    "canonical": "byte-preserved as part of unchanged article body/head",
+    "url": "unchanged"
+  },
+  "db_gate": {
+    "quick_check": "ok",
+    "purpose_fk_violations": 0
+  },
+  "rollback_backups": [
+    "/Users/kickstart/Library/Application Support/Sellemy/purpose-feature-backups/sellemy-before-PH-COOKING-20261007T222638.db",
+    "/Users/kickstart/Library/Application Support/Sellemy/purpose-feature-backups/sellemy-before-PH-HOUSEWORK-20261007T222638.db"
+  ],
+  "publish_state": "READY_TO_COMMIT_PUSH_READBACK"
+}

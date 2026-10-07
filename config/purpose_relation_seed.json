@@ -2455,6 +2455,46 @@
       "relation_type": "supporting",
       "confidence": 0.82,
       "rationale": "Owner-accepted semantic review 2026-10-03"
+    },
+    {
+      "feature_id": "PH-COOKING",
+      "feature_title": "毎日のごはんをラクにする",
+      "article_id": "hand-blenders-for-cooking",
+      "slug": "hand-blenders-for-cooking",
+      "article_title": "ハンドブレンダー比較｜対応食材・操作方法・洗える部分で選ぶ",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "Current 328-published semantic diff: direct cooking tool; accepted 2026-10-07"
+    },
+    {
+      "feature_id": "PH-HOUSEWORK",
+      "feature_title": "家事をラクにする",
+      "article_id": "home-steam-cleaners",
+      "slug": "home-steam-cleaners",
+      "article_title": "家庭用スチームクリーナー比較｜対象素材・給水条件・付属品を確認",
+      "relation_type": "core",
+      "confidence": 0.92,
+      "rationale": "Current 328-published semantic diff: direct cleaning tool; accepted 2026-10-07"
+    },
+    {
+      "feature_id": "PH-HOUSEWORK",
+      "feature_title": "家事をラクにする",
+      "article_id": "magnetic-bathroom-storage-racks",
+      "slug": "magnetic-bathroom-storage-racks",
+      "article_title": "浴室用マグネットラック比較｜壁面・収納寸法・水切りを確認",
+      "relation_type": "supporting",
+      "confidence": 0.84,
+      "rationale": "Current 328-published semantic diff: bathroom organization/maintenance; accepted 2026-10-07"
+    },
+    {
+      "feature_id": "PH-HOUSEWORK",
+      "feature_title": "家事をラクにする",
+      "article_id": "microfiber-cleaning-cloths-6-picks",
+      "slug": "microfiber-cleaning-cloths-6-picks",
+      "article_title": "年末の大掃除に！マイクロファイバークロス6選",
+      "relation_type": "supporting",
+      "confidence": 0.84,
+      "rationale": "Owner-accepted semantic review 2026-10-03"
     }
   ],
   "orphans": [
