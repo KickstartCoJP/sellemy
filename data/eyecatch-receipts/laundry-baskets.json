@@ -1,0 +1,25 @@
+{
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "role_id": "bu-codex-sellemy-designer",
+  "thread_id": "01a115db-36c8-7ee3-b68c-60e65e47e9af",
+  "member_binding_revision": 7,
+  "model": "gpt-6-astra",
+  "visual_family": "Spatial Everyday Chore",
+  "summary": "洗濯機のそばでバスケットの両手持ち手を握る生活シーン。置き場所の余白と持ち運びを表現。画像内容・PNG形式・1536×1024を検証済み。",
+  "image_sha256": "8435c138419165581890f9730ff31f994c7ae2c77aff757e3317835a70bc75c2",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-10-07T11:22:21.662261+00:00",
+  "token_usage_source": "codex_rollout.turn_token_usage",
+  "image_generation_internal_usage_exposed": false,
+  "token_usage": {
+    "input_tokens": 171924,
+    "cached_input_tokens": 161408,
+    "cache_write_input_tokens": 0,
+    "uncached_input_tokens": 10516,
+    "output_tokens": 882,
+    "reasoning_output_tokens": 0,
+    "total_tokens": 172806
+  }
+}

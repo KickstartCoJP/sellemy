@@ -1,0 +1,147 @@
+{
+  "slug": "laundry-baskets",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/laundry-baskets.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/laundry-baskets/laundry-baskets.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "size_capacity",
+      "label": "置き場所と収容量",
+      "keywords": [
+        "外寸",
+        "開口部寸法",
+        "容量",
+        "設置幅"
+      ]
+    },
+    {
+      "id": "transport",
+      "label": "持ち運ぶための構造",
+      "keywords": [
+        "持ち手",
+        "本体重量",
+        "耐荷重",
+        "キャスター"
+      ]
+    },
+    {
+      "id": "sorting_maintenance",
+      "label": "洗濯物の分別と手入れ",
+      "keywords": [
+        "仕切り",
+        "積み重ね条件",
+        "通気穴",
+        "水洗い条件",
+        "折りたたみ"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "size_capacity",
+      "sorting_maintenance",
+      "transport"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true,
+    "content_duplicates_removed": []
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0FRMJZZP7",
+      "asin": "B0FRMJZZP7",
+      "amazon_title": "洗濯カゴ 洗濯かご ランドリーバスケット 折りたたみ 大容量 メッシュ 自立式 超軽量 ランドリーバッグ 持ち手付き 洗濯物入れ 収納 洗濯物",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61C3gQv0dwL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.865,
+      "matched_comparison_axes": [
+        "size_capacity",
+        "sorting_maintenance",
+        "transport"
+      ],
+      "search_key": "洗濯カゴ 洗濯かご ランドリーバスケット 折りたたみ 大容量 メ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0H8S66YBD",
+      "asin": "B0H8S66YBD",
+      "amazon_title": "VECELO ランドリーバスケット 折りたたみ 大容量 75L メッシュ 通気性 洗濯物 収納かご 衣類バッグ 軽量 両手取っ手付きで持ち運び便利 省スペース スリム 収納ケース 旅行にも オシャレ 横型 58×36×36cm クリーム",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71HD6Ouo0TL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "size_capacity",
+        "sorting_maintenance"
+      ],
+      "search_key": "VECELO ランドリーバスケット 折りたたみ 大容量 75L"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0H4NZ9NNF",
+      "asin": "B0H4NZ9NNF",
+      "amazon_title": "【有名雑誌掲載】洗濯かご 折りたたみ ランドリーバスケット 42L 壁掛けフック付き 自立式 メッシュ 超軽量 省スペース 一人暮らし、ブラック",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61XhIteLH4L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "sorting_maintenance"
+      ],
+      "search_key": "洗濯かご 折りたたみ ランドリーバスケット 42L 壁掛けフック"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0H2VYQ1CJ",
+      "asin": "B0H2VYQ1CJ",
+      "amazon_title": "NiHome 洗濯かご ランドリーバスケット 折りたたみ 横型 3マス 3分割 ランドリーかご 大容量 92L 軽量 ランドリー収納",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71mom0r2+PL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "size_capacity",
+        "sorting_maintenance"
+      ],
+      "search_key": "NiHome 洗濯かご ランドリーバスケット 折りたたみ 横型"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0GY2ZD9MT",
+      "asin": "B0GY2ZD9MT",
+      "amazon_title": "フランドリー (FLaundry) やわらかランドリーバスケット 片手で持てる 洗濯かご 大容量 容量30L 洗濯物かご ランドリー用収納 ポリエチレン素材 柔軟性 通気性 スリム ダイヤ Daiya 058185",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61zWER+XJ+L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "size_capacity"
+      ],
+      "search_key": "フランドリー (FLaundry) やわらかランドリーバスケット"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0F9WPDW92",
+      "asin": "B0F9WPDW92",
+      "amazon_title": "ｂｅｎｒｉｉ ランドリーバスケット 折りたたみ 洗濯カゴ 大容量 70L メッシュ 省スペース ランドリーバッグ 収納 洗濯物 かご 持ち運び可能 軽量 旅行 36cm×36cm×58cm ブラック",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/91vW+d8iVnL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "size_capacity",
+        "sorting_maintenance"
+      ],
+      "search_key": "ｂｅｎｒｉｉ ランドリーバスケット 折りたたみ 洗濯カゴ 大容量"
+    }
+  ]
+}
