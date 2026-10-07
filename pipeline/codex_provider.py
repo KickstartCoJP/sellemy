@@ -307,6 +307,20 @@ def _queue_turn(command: tuple[str, ...], model: str, thread_id: str, root: Path
         raise CodexProviderError(f'Codex resume invocation failed: {type(exc).__name__}') from exc
     if completed.returncode:
         diagnostic = (completed.stderr or completed.stdout or '').strip()[-1000:]
+        if 'already has an active writer' in diagnostic:
+            marker = f'[SELLEMY-RUNTIME-{uuid.uuid4()}]'
+            message = marker + '\n' + prompt
+            queue_args = [*command, 'queue', '--remote', 'unix://', '--thread', thread_id, '--message', message,
+                          '--model', model, '--config', f'model_reasoning_effort={effort}', '--cd', str(root)]
+            try:
+                queued = subprocess.run(queue_args, text=True, capture_output=True, timeout=30,
+                                        check=False, cwd=str(root))
+            except (OSError, subprocess.TimeoutExpired) as exc:
+                raise CodexProviderError(f'Codex queue invocation failed: {type(exc).__name__}') from exc
+            if queued.returncode:
+                queue_diagnostic = (queued.stderr or queued.stdout or '').strip()[-1000:]
+                raise CodexProviderError(f'Codex queue failed: {queue_diagnostic or queued.returncode}')
+            return _collect_queued_turn(thread_id, marker, timeout=timeout)
         raise CodexProviderError(f'Codex resume failed: {diagnostic or completed.returncode}')
     final = ''
     for line in completed.stdout.splitlines():

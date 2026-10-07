@@ -119,6 +119,23 @@ class CodexProviderTests(unittest.TestCase):
         self.assertEqual(usage['total_tokens'], 110)
         self.assertEqual(usage['uncached_input_tokens'], 40)
 
+    def test_queue_turn_falls_back_to_bound_queue_on_active_writer(self):
+        conflict = subprocess.CompletedProcess([], 1, stdout='', stderr='thread already has an active writer')
+        queued = subprocess.CompletedProcess([], 0, stdout='queued', stderr='')
+        with tempfile.TemporaryDirectory() as tmp, \
+             patch.object(codex_provider.subprocess, 'run', side_effect=[conflict, queued]) as run, \
+             patch.object(codex_provider, '_collect_queued_turn', return_value=('{"ok":true}', {'total_tokens': 3})) as collect:
+            final, usage = codex_provider._queue_turn(
+                ('/bin/codex',), 'model', 'thread-1', Path(tmp), 'PROMPT', timeout=30, effort='low')
+        self.assertEqual(final, '{"ok":true}')
+        self.assertEqual(usage['total_tokens'], 3)
+        self.assertEqual(run.call_count, 2)
+        queue_args = run.call_args_list[1].args[0]
+        self.assertIn('queue', queue_args)
+        self.assertIn('--thread', queue_args)
+        self.assertEqual(queue_args[queue_args.index('--thread') + 1], 'thread-1')
+        collect.assert_called_once()
+
     def test_designer_uses_separate_brief_path(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
