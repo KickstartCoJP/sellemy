@@ -1,0 +1,137 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/makeup-cleansing-oils.html",
+  "category": "beauty",
+  "comparison_axes": [
+    {
+      "id": "use_conditions",
+      "keywords": [
+        "濡れた手",
+        "乾いた手",
+        "ウォータープルーフ",
+        "まつ毛エクステ条件"
+      ],
+      "label": "手や顔の濡れ具合と対応メイク"
+    },
+    {
+      "id": "washing_process",
+      "keywords": [
+        "使用量",
+        "乳化",
+        "すすぎ",
+        "ダブル洗顔"
+      ],
+      "label": "使用量とすすぎ・洗顔の条件"
+    },
+    {
+      "id": "formula_container",
+      "keywords": [
+        "全成分",
+        "香料",
+        "ポンプ",
+        "詰め替え適合"
+      ],
+      "label": "成分表示と容器・詰め替え仕様"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/makeup-cleansing-oils/makeup-cleansing-oils.png",
+  "products": [
+    {
+      "amazon_title": "カプセルセラム クレンジングオイル クレンジング メイク落とし ダブル洗顔不要 毛穴 乾燥 角質 黒ずみ 150ml",
+      "asin": "B0GSFWB59M",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61pZ-y4laLL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "washing_process"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GSFWB59M",
+      "ref": "p1",
+      "search_key": "カプセルセラム クレンジングオイル クレンジング メイク落とし",
+      "selection_score": 0.505
+    },
+    {
+      "amazon_title": "ナチュレリカバー アロマH2Oオイルクレンジング 150ml W洗顔不要 マツエクでも使用可 濡れた手で使用可能",
+      "asin": "B0F9WJSRFG",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41bItKOsRsL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "use_conditions"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0F9WJSRFG",
+      "ref": "p2",
+      "search_key": "ナチュレリカバー アロマH2Oオイルクレンジング 150ml W",
+      "selection_score": 0.505
+    },
+    {
+      "amazon_title": "草花木果 そうかもっか メイク落とし オイル N 180mL クレンジング クレンジングオイル W洗顔不要 毛穴汚れオフ 角栓 無添加 天然香料",
+      "asin": "B0DSLCCL63",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41xo9BpbKxL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "formula_container"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0DSLCCL63",
+      "ref": "p3",
+      "search_key": "草花木果 そうかもっか メイク落とし オイル N 180mL ク",
+      "selection_score": 0.505
+    },
+    {
+      "amazon_title": "ハッコウパンダ 発酵クレンジングオイル175mL 発酵アルガンオイル配合 化粧落とし 毛穴 角栓 メイク 敏感肌 乾燥肌 保湿",
+      "asin": "B0HHF4RTN8",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/614Sbp03V0L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HHF4RTN8",
+      "ref": "p4",
+      "search_key": "ハッコウパンダ 発酵クレンジングオイル175mL 発酵アルガンオ",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "ミュオ 無添加 クレンジングオイル 170ml + ミニボトル 30ml セット",
+      "asin": "B0H8X93KWR",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61eHC3AP2kL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H8X93KWR",
+      "ref": "p5",
+      "search_key": "ミュオ 無添加 クレンジングオイル 170ml + ミニボトル",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "クレンジングオイル TB (詰め替え 180mL) / クレンジング メイク落とし 洗顔 ダブル洗顔不要 W洗顔不要 マツエク まつエク まつ毛 エクステンション こすらず落ちる するんと落ちる かがやくコスメ 公式 日本製 Z11Z017",
+      "asin": "B0FSRRLZWL",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71N-6OeI+aL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "washing_process"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0FSRRLZWL",
+      "ref": "p6",
+      "search_key": "クレンジングオイル TB (詰め替え 180mL) / クレンジ",
+      "selection_score": 0.325
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "formula_container",
+      "use_conditions",
+      "washing_process"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "makeup-cleansing-oils"
+}
