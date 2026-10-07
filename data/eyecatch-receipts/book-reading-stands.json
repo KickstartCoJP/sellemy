@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-10-07T15:10:52.859929+00:00",
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "generation_route_attestation": "codex_rollout_extension",
+  "height": 1024,
+  "image_generation_internal_usage_exposed": false,
+  "image_sha256": "e69c346efe3b220f23527d325cc75b6bcb1940aeab666ea81b5cf7d4783f1ea4",
+  "member_binding_revision": 8,
+  "model": "gpt-6-astra",
+  "model_reported_generation_route": "built-in_image_gen",
+  "role_id": "bu-codex-sellemy-designer",
+  "summary": "夕方の読書机で開いた本を支える書見台の単一シーン。受け板、ページ押さえ、台座と設置空間を表現。ファイルの存在、PNG形式、1536×1024を検証済み。",
+  "thread_id": "01a111a0-344e-74b1-99da-7cee59ca6cf0",
+  "token_usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 934784,
+    "input_tokens": 945467,
+    "output_tokens": 857,
+    "reasoning_output_tokens": 0,
+    "total_tokens": 946324,
+    "uncached_input_tokens": 10683
+  },
+  "token_usage_source": "codex_rollout.turn_token_usage",
+  "visual_family": "Product Portrait",
+  "width": 1536
+}

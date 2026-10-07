@@ -1,0 +1,128 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/book-reading-stands.html",
+  "category": "dailygoods",
+  "comparison_axes": [
+    {
+      "id": "book_support",
+      "keywords": [
+        "対応サイズ",
+        "受け台奥行き",
+        "ページ押さえ"
+      ],
+      "label": "本のサイズとページの支え方"
+    },
+    {
+      "id": "position_adjustment",
+      "keywords": [
+        "角度調整",
+        "高さ調整",
+        "固定方式"
+      ],
+      "label": "角度と高さの調整"
+    },
+    {
+      "id": "desk_storage",
+      "keywords": [
+        "底面寸法",
+        "折りたたみ寸法",
+        "重量"
+      ],
+      "label": "設置面積と収納性"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/book-reading-stands/book-reading-stands.png",
+  "products": [
+    {
+      "amazon_title": "ブックスタンド 書見台 本読み台 卓上 360°回転 無階段高さ調整 折りたたみ式 持ち運びやすい 安定性抜群 読書台 PCスタンド 料理本ホルダー 学習用ブックホルダー ウォールナット色",
+      "asin": "B0GRTHFGYZ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81J-6u-gAJL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "position_adjustment"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GRTHFGYZ",
+      "ref": "p1",
+      "search_key": "ブックスタンド 書見台 本読み台 卓上 360°回転 無階段高さ",
+      "selection_score": 0.505
+    },
+    {
+      "amazon_title": "viozon ブックスタンド 書見台 読書台 360度回転式台座 厚い本対応 無階段高さ調節 折りたたみ式 安定性抜群 持ち運びやすい スチール台座 木目 おしゃれ (ダークウッド ライト付き)",
+      "asin": "B0H1CG675R",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71i1BpVCOgL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H1CG675R",
+      "ref": "p2",
+      "search_key": "viozon ブックスタンド 書見台 読書台 360度回転式台座",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "ブックエンド ブックスタンド木製 書見台 読書台 卓上 本立て タブレットスタンド360度回転台 最大39cm高さ調節 折りたたみ式",
+      "asin": "B0GWZZM4G6",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71wkdPnTLxL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GWZZM4G6",
+      "ref": "p3",
+      "search_key": "ブックエンド ブックスタンド木製 書見台 読書台 卓上 本立て",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "ブックスタンド 書見台 本読み台 卓上 360度回転式台座 無階段高さ調整 折りたたみ式 安定性抜群 読書台 PCスタンド 料理本ホルダー 学習用ブックホルダー",
+      "asin": "B0G4LTH356",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71Ep25Gte0L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "position_adjustment"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0G4LTH356",
+      "ref": "p4",
+      "search_key": "ブックスタンド 書見台 本読み台 卓上 360度回転式台座 無階",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "改良版 ブックスタンド 書見台 読書台 クランプ式 ブックアーム デスクアーム 折りたたみ 3段式 六関節 360°回転可能 角度・高さ無段階調整 読書スタンド アルミ合金製アーム 透明 アクリルパネル 本立て ノートパソコン スタンド 姿勢改善 勉強用 レシピ台 多用途 省スペース ブックホルダー 在宅勤務 デスクワーク おしゃれ 日本語取扱説明書付き",
+      "asin": "B0FR47HNBZ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/714xUI36fJL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FR47HNBZ",
+      "ref": "p5",
+      "search_key": "改良版 ブックスタンド 書見台 読書台 クランプ式 ブックアーム",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "ブックアーム ブックスタンド 書見台 読書台 クランプ式 ノートパソコン 台 360度回転可能 折りたたみ 3段式 アルミ合金 省スペース 読書スタンド ブックホルダー タブレット アーム 姿勢改善 高さ無段階調整 在宅勤務/デスクワーク",
+      "asin": "B0F672X97J",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61qaj5O+P-L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0F672X97J",
+      "ref": "p6",
+      "search_key": "ブックアーム ブックスタンド 書見台 読書台 クランプ式 ノート",
+      "selection_score": 0.325
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "position_adjustment"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "book-reading-stands"
+}
