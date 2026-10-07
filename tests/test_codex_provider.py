@@ -11,6 +11,30 @@ import codex_provider
 
 
 class CodexProviderTests(unittest.TestCase):
+    def test_context_rotation_due_after_three_oversize_planning_turns(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            session = '00000000-0000-4000-8000-000000000001'
+            usage = {
+                'input_tokens': 130000, 'cached_input_tokens': 120000,
+                'uncached_input_tokens': 10000, 'output_tokens': 100,
+            }
+            one = codex_provider._observe_context_usage(
+                root, codex_provider.PLANNING_SURFACE, session, usage
+            )
+            two = codex_provider._observe_context_usage(
+                root, codex_provider.PLANNING_SURFACE, session, usage
+            )
+            three = codex_provider._observe_context_usage(
+                root, codex_provider.PLANNING_SURFACE, session, usage
+            )
+            self.assertFalse(one['rotation_due'])
+            self.assertFalse(two['rotation_due'])
+            self.assertTrue(three['rotation_due'])
+            self.assertTrue(codex_provider._context_rotation_due(
+                root, codex_provider.PLANNING_SURFACE, session
+            ))
+
     def test_ephemeral_read_only_schema_output(self):
         schema = {'type': 'object', 'properties': {'items': {'type': 'array', 'minItems': 2,
                   'items': {'type': 'object', 'properties': {'name': {'type': 'string'}}}}}}

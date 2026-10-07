@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import fcntl
 import json
 import os
 import re
@@ -59,6 +60,12 @@ def _member_binding(role_id: str, *, db_path: Path | None = None) -> dict:
     return value
 
 DESIGNER_SURFACE = 'bu-codex-sellemy-designer'
+PLANNING_SURFACE = 'bu-codex-sellemy-planning'
+CONTEXT_ROTATION_DEFAULTS = {
+    PLANNING_SURFACE: {'enabled': True, 'input_threshold': 120000, 'streak': 3},
+    'bu-codex-sellemy-writer': {'enabled': False, 'input_threshold': 140000, 'streak': 3},
+    DESIGNER_SURFACE: {'enabled': False, 'input_threshold': 120000, 'streak': 3},
+}
 
 BRIEF_FIXED = """# Sellemy Codex Brief
 
@@ -175,6 +182,211 @@ def _runtime_paths(root: Path, surface_key: str) -> tuple[Path, Path]:
     directory.mkdir(parents=True, exist_ok=True)
     brief_name = 'designer-brief.md' if surface_key == DESIGNER_SURFACE else 'brief.md'
     return directory / f'{safe}.json', directory / brief_name
+
+
+def _context_control_path(root: Path) -> Path:
+    return root / '.runtime' / 'sellemy-codex' / 'context-controller.json'
+
+
+def _context_policy(surface_key: str) -> dict:
+    base = dict(CONTEXT_ROTATION_DEFAULTS.get(surface_key) or {
+        'enabled': False, 'input_threshold': 140000, 'streak': 3,
+    })
+    enabled = {
+        item.strip() for item in os.environ.get(
+            'SELLEMY_CODEX_CONTEXT_ROTATION_SURFACES', PLANNING_SURFACE
+        ).split(',') if item.strip()
+    }
+    base['enabled'] = surface_key in enabled
+    threshold_key = 'SELLEMY_CODEX_CONTEXT_THRESHOLD_' + re.sub(r'[^A-Za-z0-9]', '_', surface_key).upper()
+    if os.environ.get(threshold_key):
+        base['input_threshold'] = int(os.environ[threshold_key])
+    if os.environ.get('SELLEMY_CODEX_CONTEXT_STREAK'):
+        base['streak'] = int(os.environ['SELLEMY_CODEX_CONTEXT_STREAK'])
+    return base
+
+
+def _read_context_control(root: Path) -> dict:
+    return _read_state(_context_control_path(root))
+
+
+def _write_context_control(root: Path, value: dict) -> None:
+    path = _context_control_path(root)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    _write_state(path, value)
+
+
+def _observe_context_usage(root: Path, surface_key: str, session_id: str, usage: dict) -> dict:
+    control = _read_context_control(root)
+    rows = control.setdefault('surfaces', {})
+    row = dict(rows.get(surface_key) or {})
+    policy = _context_policy(surface_key)
+    input_tokens = int(usage.get('input_tokens') or 0)
+    same_session = row.get('session_id') == session_id
+    streak = int(row.get('oversize_streak') or 0) if same_session else 0
+    streak = streak + 1 if input_tokens >= int(policy['input_threshold']) else 0
+    row.update({
+        'session_id': session_id,
+        'last_input_tokens': input_tokens,
+        'last_cached_input_tokens': int(usage.get('cached_input_tokens') or 0),
+        'last_uncached_input_tokens': int(usage.get('uncached_input_tokens') or 0),
+        'oversize_streak': streak,
+        'rotation_due': bool(policy['enabled'] and streak >= int(policy['streak'])),
+        'policy': policy,
+        'observed_at': datetime.now(timezone.utc).isoformat(),
+    })
+    rows[surface_key] = row
+    _write_context_control(root, control)
+    return row
+
+
+def _context_rotation_due(root: Path, surface_key: str, session_id: str) -> bool:
+    row = (_read_context_control(root).get('surfaces') or {}).get(surface_key) or {}
+    return bool(
+        row.get('rotation_due')
+        and row.get('session_id') == session_id
+        and _context_policy(surface_key).get('enabled')
+    )
+
+
+def _archive_context(root: Path, surface_key: str, session_id: str, binding: dict,
+                     state_path: Path, brief_path: Path) -> Path:
+    stamp = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')
+    archive = root / '.runtime' / 'sellemy-codex' / 'context-archive' / surface_key / f'{stamp}-{session_id}'
+    archive.mkdir(parents=True, exist_ok=False)
+    if state_path.exists():
+        shutil.copy2(state_path, archive / state_path.name)
+    if brief_path.exists():
+        shutil.copy2(brief_path, archive / brief_path.name)
+    sessions = sorted((Path.home() / '.codex' / 'sessions').glob(f'**/*{session_id}.jsonl'))
+    copied = []
+    for index, path in enumerate(sessions, 1):
+        target = archive / f'session-{index:02d}-{path.name}'
+        shutil.copy2(path, target)
+        copied.append(str(target))
+    metadata = {
+        'archived_at': datetime.now(timezone.utc).isoformat(),
+        'surface_key': surface_key,
+        'old_thread': session_id,
+        'binding_revision': binding.get('binding_revision'),
+        'session_files': copied,
+    }
+    (archive / 'metadata.json').write_text(
+        json.dumps(metadata, ensure_ascii=False, indent=2) + '\n', encoding='utf-8'
+    )
+    return archive
+
+
+def _start_compacted_thread(command: tuple[str, ...], model: str, root: Path,
+                            surface_key: str, brief_path: Path, *, timeout: int) -> tuple[str, dict]:
+    canon_bridge = root / 'config' / 'sellemy-codex-canon-bootstrap.md'
+    effort = os.environ.get('SELLEMY_CODEX_REASONING_EFFORT', 'low').strip() or 'low'
+    prompt = (
+        'Initialize a fresh compact Sellemy Codex session for canonical role ' + surface_key + '. '
+        'Read only ' + str(canon_bridge) + ' and ' + str(brief_path) + '. '
+        'Do not inspect prior session history or unrelated files. Preserve all current quality gates. '
+        'Reply exactly READY.'
+    )
+    args = [*command, 'exec', '--json', '--skip-git-repo-check', '--model', model,
+            '--config', f'model_reasoning_effort={effort}', '--cd', str(root), '-']
+    try:
+        completed = subprocess.run(
+            args, input=prompt, text=True, capture_output=True, timeout=timeout,
+            check=False, cwd=str(root),
+        )
+    except (OSError, subprocess.TimeoutExpired) as exc:
+        raise CodexProviderError(f'Codex compact thread creation failed: {type(exc).__name__}') from exc
+    if completed.returncode:
+        diagnostic = (completed.stderr or completed.stdout or '').strip()[-1000:]
+        raise CodexProviderError(f'Codex compact thread creation failed: {diagnostic or completed.returncode}')
+    thread_id = _thread_id(completed.stdout)
+    try:
+        thread_id = str(uuid.UUID(str(thread_id)))
+    except (ValueError, TypeError, AttributeError) as exc:
+        raise CodexProviderError('Codex compact thread creation returned no canonical thread UUID') from exc
+    return thread_id, _usage(completed.stdout)
+
+
+def _rotate_context(command: tuple[str, ...], model: str, root: Path, surface_key: str,
+                    binding: dict, state_path: Path, brief_path: Path, *, timeout: int) -> dict:
+    if not _context_policy(surface_key).get('enabled'):
+        return {}
+    lock_path = root / '.runtime' / 'sellemy-codex' / 'context-rotation.lock'
+    lock_path.parent.mkdir(parents=True, exist_ok=True)
+    with lock_path.open('a+', encoding='utf-8') as handle:
+        fcntl.flock(handle.fileno(), fcntl.LOCK_EX)
+        fresh = _member_binding(surface_key)
+        if fresh['current_url'] != binding['current_url']:
+            return {'skipped': 'binding_already_changed', 'session_id': fresh['current_url']}
+        if not _context_rotation_due(root, surface_key, fresh['current_url']):
+            return {}
+
+        brief_usage = _refresh_brief(
+            command, model, fresh['current_url'], root, brief_path,
+            timeout=timeout, surface_key=surface_key,
+        )
+        archive = _archive_context(
+            root, surface_key, fresh['current_url'], fresh, state_path, brief_path
+        )
+        new_thread, seed_usage = _start_compacted_thread(
+            command, model, root, surface_key, brief_path, timeout=timeout
+        )
+        helper = Path(os.environ.get(
+            'SELLEMY_CODEX_BINDING_ROTATOR',
+            str(Path.home() / 'ai-management-os' / 'scripts' / 'rotate_sellemy_codex_binding.py'),
+        ))
+        if not helper.is_file():
+            raise CodexProviderError(f'Codex binding rotator unavailable: {helper}')
+        args = [
+            str(Path.home() / 'ai-management-os' / '.venv' / 'bin' / 'python'),
+            str(helper),
+            '--role-id', surface_key,
+            '--expected-old-thread', fresh['current_url'],
+            '--new-thread', new_thread,
+            '--archive-ref', str(archive),
+        ]
+        completed = subprocess.run(args, text=True, capture_output=True, timeout=30, check=False)
+        if completed.returncode:
+            diagnostic = (completed.stderr or completed.stdout or '').strip()[-1000:]
+            raise CodexProviderError(f'Canonical Codex binding rotation failed: {diagnostic}')
+        rotated = _json_object(completed.stdout)
+        readback = _member_binding(surface_key)
+        if readback['current_url'] != new_thread:
+            raise CodexProviderError('Canonical Codex binding rotation read-back mismatch')
+        _append_usage(
+            root, surface_key, stage='brief_refresh', model=model,
+            session_id=fresh['current_url'], session_turn=int((_read_state(state_path).get('turns') or 0)) + 1,
+            usage=brief_usage,
+        )
+        _append_usage(
+            root, surface_key, stage='context_seed', model=model,
+            session_id=new_thread, session_turn=0, usage=seed_usage,
+        )
+        control = _read_context_control(root)
+        row = dict((control.get('surfaces') or {}).get(surface_key) or {})
+        row.update({
+            'session_id': new_thread,
+            'oversize_streak': 0,
+            'rotation_due': False,
+            'last_rotation_at': datetime.now(timezone.utc).isoformat(),
+            'last_rotation_old_thread': fresh['current_url'],
+            'last_rotation_new_thread': new_thread,
+            'last_archive': str(archive),
+            'probation_remaining': 10,
+        })
+        control.setdefault('surfaces', {})[surface_key] = row
+        _write_context_control(root, control)
+        _write_state(state_path, {
+            'surface_key': surface_key, 'session_id': new_thread, 'turns': 0,
+            'model': model, 'brief_path': str(brief_path),
+            'member_binding_revision': readback['binding_revision'],
+        })
+        return {
+            **rotated,
+            'archive_path': str(archive),
+            'seed_usage': seed_usage,
+            'brief_usage': brief_usage,
+        }
 
 
 def _ensure_brief(path: Path, surface_key: str) -> None:
@@ -453,10 +665,18 @@ def generate_persistent(command: tuple[str, ...], model: str, schema: dict, prom
     binding = _member_binding(surface_key)
     session_id = binding['current_url']
     state = _read_state(state_path)
+    context_rotation = {}
+    if _context_rotation_due(root, surface_key, session_id):
+        context_rotation = _rotate_context(
+            command, model, root, surface_key, binding, state_path, brief_path, timeout=timeout
+        )
+        binding = _member_binding(surface_key)
+        session_id = binding['current_url']
+        state = _read_state(state_path)
     previous_session = state.get('session_id') if isinstance(state.get('session_id'), str) else None
     turns = int(state.get('turns') or 0) if previous_session == session_id else 0
     binding_changed = bool(previous_session and previous_session != session_id)
-    brief_refreshed = False
+    brief_refreshed = bool(context_rotation)
 
     if binding_changed:
         brief_usage = _refresh_brief(command, model, previous_session, root, brief_path, timeout=timeout, surface_key=surface_key)
@@ -494,6 +714,15 @@ def generate_persistent(command: tuple[str, ...], model: str, schema: dict, prom
     turns += 1
     _append_usage(root, surface_key, stage=stage or 'generation', model=model, session_id=session_id,
                   session_turn=turns, usage=usage, operation_key=usage_key)
+    context_state = _observe_context_usage(root, surface_key, session_id, usage)
+    control = _read_context_control(root)
+    current_control = dict((control.get('surfaces') or {}).get(surface_key) or {})
+    probation = int(current_control.get('probation_remaining') or 0)
+    if probation > 0:
+        current_control['probation_remaining'] = probation - 1
+        control.setdefault('surfaces', {})[surface_key] = current_control
+        _write_context_control(root, control)
+        context_state = current_control
     _write_state(state_path, {
         'surface_key': surface_key, 'session_id': session_id, 'turns': turns,
         'model': model, 'brief_path': str(brief_path),
@@ -503,7 +732,8 @@ def generate_persistent(command: tuple[str, ...], model: str, schema: dict, prom
         'surface': surface_key, 'session_id': session_id, 'session_turn': turns,
         'member_binding_revision': binding['binding_revision'],
         'member_binding_changed': binding_changed, 'reasoning_effort': effort,
-        'brief_refreshed': brief_refreshed, 'brief_path': str(brief_path), **usage,
+        'brief_refreshed': brief_refreshed, 'brief_path': str(brief_path),
+        'context_rotation': context_rotation, 'context_state': context_state, **usage,
     }
 
 
