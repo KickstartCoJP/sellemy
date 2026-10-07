@@ -103,7 +103,11 @@ class ScheduledRouteTests(unittest.TestCase):
     def test_runtime_uses_common_publish_gate(self):
         source = (ROOT / 'pipeline' / 'growth_runtime.py').read_text(encoding='utf-8')
         self.assertIn('with PublishGate(ROOT).acquire()', source)
-        self.assertLess(source.index('with PublishGate(ROOT).acquire()'), source.index("result['commit'] = _publish"))
+        gate = source.index('with PublishGate(ROOT).acquire()')
+        designer = source.index("result['eyecatch'] = ensure_codex_eyecatch")
+        publish = source.index("result['commit'] = _publish")
+        self.assertLess(gate, designer)
+        self.assertLess(designer, publish)
 
     def test_existing_ga4_measurement_is_preserved(self):
         ga4 = (ROOT / 'js' / 'ga4.js').read_text(encoding='utf-8')
@@ -377,6 +381,7 @@ class DesignerEyecatchRouteTests(unittest.TestCase):
             patch.object(growth_runtime, 'invoke_writer', return_value=(valid_payload(), {'runtime': 'test'})),
             patch.object(growth_runtime, 'evaluate_candidate', return_value=('html', [], {'overall_pass': True})),
             patch.object(growth_runtime, 'ensure_codex_eyecatch', side_effect=growth_runtime.CodexEyecatchError('designer unavailable')),
+            patch.object(growth_runtime.PublishGate, 'acquire', return_value=nullcontext({'head_after': 'abc', 'origin_main': 'abc', 'clean': True})),
             patch.object(growth_runtime, 'publish_payload') as publish_stage,
         ):
             with self.assertRaisesRegex(growth_runtime.GrowthRuntimeError, 'Codex designer eyecatch failed'):

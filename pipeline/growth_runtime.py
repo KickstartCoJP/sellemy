@@ -247,14 +247,6 @@ def run(
         result.update({'candidate_count': len(candidates), 'selected_asins': [p['asin'] for p in selected], 'selection': selection, 'writer_attempts': writer_attempts, 'review_findings': findings, 'qa': qa})
         if findings or not qa['overall_pass']:
             raise GrowthRuntimeError('mandatory Review/QA gates did not pass; no files applied or published')
-        if publish:
-            try:
-                result['eyecatch'] = ensure_codex_eyecatch(
-                    slug=topic['slug'], title=topic['title'], category=topic['category'],
-                    evidence=evidence, payload=payload,
-                )
-            except CodexEyecatchError as exc:
-                raise GrowthRuntimeError(f'Codex designer eyecatch failed: {exc}') from exc
         def apply_publication_unit() -> None:
             _write_json(ROOT / 'data' / 'evidence' / f'{topic["slug"]}.json', evidence)
             _write_json(ROOT / 'data' / 'payloads' / f'{topic["slug"]}.json', payload)
@@ -271,6 +263,13 @@ def run(
                     with PublishGate(ROOT).acquire() as gate_evidence:
                         gate_evidence = {**gate_evidence, 'attempt': publish_attempt}
                         result['publish_gate_attempts'].append(gate_evidence)
+                        try:
+                            result['eyecatch'] = ensure_codex_eyecatch(
+                                slug=topic['slug'], title=topic['title'], category=topic['category'],
+                                evidence=evidence, payload=payload,
+                            )
+                        except CodexEyecatchError as exc:
+                            raise GrowthRuntimeError(f'Codex designer eyecatch failed: {exc}') from exc
                         apply_publication_unit()
                         try:
                             result['commit'] = _publish(topic['slug'], topic['category'])
