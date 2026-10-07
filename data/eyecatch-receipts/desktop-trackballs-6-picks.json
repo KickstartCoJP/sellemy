@@ -1,0 +1,19 @@
+{
+  "generated_at": null,
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "generation_route_attestation": "historical_codex_rollout_extension",
+  "height": 1024,
+  "image_generation_internal_usage_exposed": false,
+  "image_sha256": "676a98f1b2a2c82544770c7a5fa9c9914ae62854cfb8750e88be34b17583ba82",
+  "member_binding_revision": null,
+  "model": "gpt-6-astra",
+  "model_reported_generation_route": "codex_cli_imagegen",
+  "role_id": "bu-codex-sellemy-designer",
+  "summary": "家庭のデスクで有線トラックボールを人差し指で操作する一場面を俯瞰で表現。PNG・1536×1024を検証済み。",
+  "thread_id": "01a111a0-344e-74b1-99da-7cee59ca6cf0",
+  "token_usage": {},
+  "token_usage_source": "historical_rollout",
+  "visual_family": "Top View / Flat Lay",
+  "width": 1536
+}

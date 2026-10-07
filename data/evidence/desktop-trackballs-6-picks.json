@@ -1,0 +1,147 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/desktop-trackballs-6-picks.html",
+  "category": "gadget",
+  "comparison_axes": [
+    {
+      "id": "control_style",
+      "keywords": [
+        "親指操作",
+        "人差し指操作",
+        "ボール径",
+        "左右の手への対応",
+        "本体寸法"
+      ],
+      "label": "操作する指と本体の形"
+    },
+    {
+      "id": "connection",
+      "keywords": [
+        "有線",
+        "USBレシーバー",
+        "Bluetooth",
+        "接続台数",
+        "対応OS"
+      ],
+      "label": "接続先と切り替え方法"
+    },
+    {
+      "id": "customization_care",
+      "keywords": [
+        "ボタン割り当て",
+        "専用ソフト",
+        "カーソル速度調節",
+        "ボール取り外し",
+        "支持部品"
+      ],
+      "label": "操作設定とボールの手入れ"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/desktop-trackballs-6-picks/desktop-trackballs-6-picks.png",
+  "products": [
+    {
+      "amazon_title": "Perixx PERIMICE-522 Iron トラックボールマウス 人差し指操作 有線 エルゴノミクス 40 mm トラックボール",
+      "asin": "B0HJW6WB35",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61idWJmXWQL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "connection",
+        "control_style"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HJW6WB35",
+      "ref": "p1",
+      "search_key": "Perixx PERIMICE-522 Iron トラックボール",
+      "selection_score": 0.67
+    },
+    {
+      "amazon_title": "ProtoArc EM03 NL トラックボールマウス 静音 人差し指操作 手首負担軽減 Bluetooth 無線2.4GHz 3台同時接続",
+      "asin": "B0HBX1RT98",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61-FuSUwXOL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "connection",
+        "control_style"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HBX1RT98",
+      "ref": "p2",
+      "search_key": "ProtoArc EM03 NL トラックボールマウス 静音 人",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "ワイヤレストラックボールマウス 親指操作対応 携帯型人差し指トラックボール 長使用に 左右クリ対応 ノートパソコン用",
+      "asin": "B0H2S7WNL7",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51JoD2250YL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "control_style"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H2S7WNL7",
+      "ref": "p3",
+      "search_key": "ワイヤレストラックボールマウス 親指操作対応 携帯型人差し指トラ",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "エレコム トラックボールマウス bitra 静音 親指操作 Bluetooth 無線2.4GHz 2台マルチペアリング 5ボタン 専用収納ケース付 ホワイト M-MT1MRSAWH",
+      "asin": "B0FZGBSKBC",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/515P2nooiHL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "connection",
+        "control_style"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0FZGBSKBC",
+      "ref": "p4",
+      "search_key": "エレコム トラックボールマウス bitra 静音 親指操作 Bl",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "エレコム トラックボールマウス bitra 静音 人差し指操作 Bluetooth 無線2.4GHz 2台マルチペアリング 5ボタン 専用収納ケース付 ブラック M-MT2MRSABK",
+      "asin": "B0FZG9YXQ4",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71qqivDOY9L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "connection",
+        "control_style"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0FZG9YXQ4",
+      "ref": "p5",
+      "search_key": "エレコム トラックボールマウス bitra 静音 人差し指操作",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "ProtoArc EM03 NLトラックボールマウス 人差し指 中指操作 静音 無線 2.4GHz Bluetooth 3台同時接続 手首が楽",
+      "asin": "B0FVXTH7F2",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61u6p+HGyfL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "connection"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0FVXTH7F2",
+      "ref": "p6",
+      "search_key": "ProtoArc EM03 NLトラックボールマウス 人差し指",
+      "selection_score": 0.31
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "connection",
+      "control_style"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "desktop-trackballs-6-picks"
+}
