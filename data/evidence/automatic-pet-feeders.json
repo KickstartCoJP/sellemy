@@ -1,0 +1,135 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/automatic-pet-feeders.html",
+  "category": "gadget",
+  "comparison_axes": [
+    {
+      "id": "food_compatibility",
+      "keywords": [
+        "ドライフード",
+        "ウェットフード",
+        "粒サイズ",
+        "タンク式",
+        "トレー式"
+      ],
+      "label": "普段のフードへの対応"
+    },
+    {
+      "id": "feeding_control",
+      "keywords": [
+        "一回量",
+        "給餌回数",
+        "本体タイマー",
+        "アプリ",
+        "通信条件"
+      ],
+      "label": "給餌量・回数と操作方法"
+    },
+    {
+      "id": "maintenance_power",
+      "keywords": [
+        "取り外せる部品",
+        "洗浄方法",
+        "予備電池",
+        "設定保持",
+        "通信断時動作"
+      ],
+      "label": "洗浄範囲と電源停止時の動作"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/automatic-pet-feeders/automatic-pet-feeders.png",
+  "products": [
+    {
+      "amazon_title": "自動給餌器 アプリ操作 定時定量 120°広角カメラ 双方向音声 (音声・動画対応モデル＋ステンレス製ボウル)",
+      "asin": "B0HGX1FDBK",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61D7h01xVjL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "feeding_control"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HGX1FDBK",
+      "ref": "p1",
+      "search_key": "自動給餌器 アプリ操作 定時定量 120°広角カメラ 双方向音声",
+      "selection_score": 0.48
+    },
+    {
+      "amazon_title": "エレコム 自動給餌器 猫 中小型犬用 ウェットフード対応 [350ml/ドライフード約190g分] ステンレストレイ アイスパック付属 1~48時間ダイヤルタイマー 電池式 連結可能 ブラック PET-AF06BK",
+      "asin": "B0GVH8113L",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61PLTUClcoL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "food_compatibility"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GVH8113L",
+      "ref": "p2",
+      "search_key": "エレコム 自動給餌器 猫 中小型犬用 ウェットフード対応 ステン",
+      "selection_score": 0.48
+    },
+    {
+      "amazon_title": "自動給餌器 猫 犬用 7L大容量 2皿 多頭飼い タイマー式 定時定量 ボタン操作 USB・乾電池給電 ホワイト",
+      "asin": "B0HBWWGYWJ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71XuEf4O0IL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HBWWGYWJ",
+      "ref": "p3",
+      "search_key": "自動給餌器 猫 犬用 7L大容量 2皿 多頭飼い タイマー式 定",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "自動給餌器 ケージ取付タイプ 猫 犬 タイマー機能 ペット給餌機 定時定量 自動餌やり機 小型犬 猫用 2.3L容量 1日4食",
+      "asin": "B0GXZ51H5X",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/812HDQy8FLL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GXZ51H5X",
+      "ref": "p4",
+      "search_key": "自動給餌器 ケージ取付タイプ 猫 犬 タイマー機能 ペット給餌機",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "[PETKIT(ペットキット)] 犬・猫用 自動給餌機 本体(グレー)+乾燥剤3個セット P570GRY-SET",
+      "asin": "B0GSV7L8JG",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71h2Dw7eMyL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GSV7L8JG",
+      "ref": "p5",
+      "search_key": "犬・猫用 自動給餌機 本体(グレー)+乾燥剤3個セット P570",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "自動給餌器 ケージ掛け＋地面置く 猫 中小型犬 1日5食 定時定量 2L容量 自動餌やり機 餌やり器 うさぎ オートフィーダー タイマー式 2WAY給電 ステンレス製ボウル 水洗い可能 手動給餌 お手入れ簡単 日本語説明書付き",
+      "asin": "B0GM159FNB",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61Gev+-6pNL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GM159FNB",
+      "ref": "p6",
+      "search_key": "自動給餌器 ケージ掛け＋地面置く 猫 中小型犬 1日5食 定時定",
+      "selection_score": 0.3
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "feeding_control",
+      "food_compatibility"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "automatic-pet-feeders"
+}
