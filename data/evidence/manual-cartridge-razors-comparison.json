@@ -1,0 +1,124 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/manual-cartridge-razors-comparison.html",
+  "category": "beauty",
+  "comparison_axes": [
+    {
+      "id": "head_structure",
+      "keywords": [
+        "刃数",
+        "首振り",
+        "可動方向",
+        "仕上げ用刃"
+      ],
+      "label": "刃数とヘッドの可動構造"
+    },
+    {
+      "id": "handle",
+      "keywords": [
+        "グリップ",
+        "重量",
+        "ホルダー",
+        "保護キャップ"
+      ],
+      "label": "持ち手の形状と収納"
+    },
+    {
+      "id": "replacement",
+      "keywords": [
+        "対応替刃",
+        "交換機構",
+        "替刃単体販売"
+      ],
+      "label": "替刃の互換性と交換方法"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/manual-cartridge-razors-comparison/manual-cartridge-razors-comparison.png",
+  "products": [
+    {
+      "amazon_title": "替刃 12個 ハイドロ5 カスタム 5枚刃 スキンガード付 T字 カミソリ 髭剃り メンズ",
+      "asin": "B0HCZVPF61",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61eCC9LDHyL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HCZVPF61",
+      "ref": "p1",
+      "search_key": "替刃 12個 ハイドロ5 カスタム 5枚刃 スキンガード付 T字",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "ジレット 替刃 プログライド 替刃 電動 5枚刃 フレックスボール 5+1 ピンポイント トリマー 髭剃り ひげそり カミソリ プログライド フュージョン 互換(赤橙色 12個)",
+      "asin": "B0H3W8V3VD",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61V4DkhRMyL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H3W8V3VD",
+      "ref": "p2",
+      "search_key": "ジレット 替刃 プログライド 替刃 電動 5枚刃 フレックスボー",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "Schick(シック) ハイドロ 敏感肌 替刃（１０コ）男性用 髭剃り カミソリ",
+      "asin": "B0GKHDQSV3",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81Aman-VR1L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GKHDQSV3",
+      "ref": "p3",
+      "search_key": "Schick(シック) ハイドロ 敏感肌 替刃（１０コ）男性用",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "替刃 4個 【正規品】純正品 簡易パッケージ カスタム ハイドレート 5枚刃 スキンガード付 カミソリ ひげそり T字 CUSTOM",
+      "asin": "B0FD71XQ3P",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71riZ-+-4wL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FD71XQ3P",
+      "ref": "p4",
+      "search_key": "替刃 4個 純正品 簡易パッケージ カスタム ハイドレート 5枚",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "替刃 4個×2P 計8個【正規品】純正品 簡易パッケージ ハイドロ5 カスタム ハイドレート 5枚刃 スキンガード付 カミソリ ひげそり T字 CUSTOM",
+      "asin": "B0FD6XV8DC",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81Cg5Hg9NkL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FD6XV8DC",
+      "ref": "p5",
+      "search_key": "替刃 4個×2P 計8個 純正品 簡易パッケージ ハイドロ5 カ",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "互換 替刃 5枚刃 メンズ カミソリ 髭剃り フュージョン プログライド プロシールド 対応 (オレンジ)",
+      "asin": "B0DPMQLBT6",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71dFUFXpDtL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0DPMQLBT6",
+      "ref": "p6",
+      "search_key": "互換 替刃 5枚刃 メンズ カミソリ 髭剃り フュージョン プロ",
+      "selection_score": 0.325
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "manual-cartridge-razors-comparison"
+}
