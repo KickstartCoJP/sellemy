@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-10-07T20:43:21.439866+00:00",
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "generation_route_attestation": "codex_rollout_extension",
+  "height": 1024,
+  "image_generation_internal_usage_exposed": false,
+  "image_sha256": "37cb911c79d3d0f8e36e4019952c93850d741e5a9eee147c3e96ce5936601051",
+  "member_binding_revision": 8,
+  "model": "gpt-6-astra",
+  "model_reported_generation_route": "built-in_image_gen",
+  "role_id": "bu-codex-sellemy-designer",
+  "routing": {
+    "api_share": 20,
+    "codex_reserve_percent": 20.0,
+    "codex_share": 80,
+    "codex_usage": {
+      "remaining_percent": 58.0,
+      "resets_at": 1791949050,
+      "source": "/Users/kickstart/.codex/sessions/2026/10/08/rollout-2026-10-08T00-17-21-01a116f0-c70b-7162-a769-fe916dda3cf8.jsonl",
+      "used_percent": 42.0,
+      "window_minutes": 10080
+    },
+    "errors_before_success": [
+      "openai_api:EyecatchGenerationError:generative eyecatch outcome uncertain; automatic replay forbidden"
+    ],
+    "executed_route": "codex",
+    "fallback_from": "openai_api",
+    "mode": "weighted_random",
+    "reason": "weighted_random",
+    "remaining_percent": 58.0,
+    "roll": 99,
+    "selected_route": "openai_api",
+    "total_weight": 100
+  },
+  "routing_recorded_at": "2026-10-07T20:43:21.441078+00:00",
+  "summary": "お茶の準備をする台所で、やかんの注ぎ口・ふた・持ち手・底部を明瞭に表現。PNG形式・1536×1024と画像内容を検証済み。",
+  "thread_id": "01a111a0-344e-74b1-99da-7cee59ca6cf0",
+  "token_usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 432768,
+    "input_tokens": 573916,
+    "output_tokens": 760,
+    "reasoning_output_tokens": 0,
+    "total_tokens": 574676,
+    "uncached_input_tokens": 141148
+  },
+  "token_usage_source": "codex_rollout.turn_token_usage",
+  "visual_family": "Product Portrait",
+  "width": 1536
+}

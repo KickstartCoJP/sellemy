@@ -1,0 +1,141 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/stovetop-water-kettles.html",
+  "category": "dailygoods",
+  "comparison_axes": [
+    {
+      "id": "heat_source_fit",
+      "keywords": [
+        "ガス火",
+        "IH対応",
+        "底径",
+        "材質",
+        "使用制限"
+      ],
+      "label": "対応熱源と底面の仕様"
+    },
+    {
+      "id": "usable_capacity",
+      "keywords": [
+        "適正容量",
+        "満水容量",
+        "本体重量",
+        "持ち手",
+        "高さ"
+      ],
+      "label": "適正容量と持ち上げる際の寸法・重量"
+    },
+    {
+      "id": "pouring_cleaning",
+      "keywords": [
+        "注ぎ口形状",
+        "笛の有無",
+        "開口径",
+        "ふた構造",
+        "手入れ方法"
+      ],
+      "label": "注ぎ口とふた・内部の洗いやすさ"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/stovetop-water-kettles/stovetop-water-kettles.png",
+  "products": [
+    {
+      "amazon_title": "笛吹きケトル ステンレス製 4～14L 大容量 やかん IH200V・ガス火対応 5層複合底 全熱源対応 広口注ぎ口 耐熱ハンドル キャンプ(a,7L)",
+      "asin": "B0HKVHMQBC",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51Hp9Wl0r4L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "heat_source_fit"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HKVHMQBC",
+      "ref": "p1",
+      "search_key": "笛吹きケトル ステンレス製 4～14L 大容量 やかん IH20",
+      "selection_score": 0.49
+    },
+    {
+      "amazon_title": "広口 笛吹 ケットル やかん シンプル IH・ガス対応 適正容量3.6L 洗いやすい ステンレス,シルバー-3L",
+      "asin": "B0GCD5Z8KW",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/616AZeN6FbL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "usable_capacity"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GCD5Z8KW",
+      "ref": "p2",
+      "search_key": "広口 笛吹 ケットル やかん シンプル IH・ガス対応 適正容量",
+      "selection_score": 0.49
+    },
+    {
+      "amazon_title": "鎌倉陶器 笛ふきケットルお洒落ステンレスやかん大容量 2~8L ガス火IHオール熱源対応 ステンレス鋼 シルバー (2L)",
+      "asin": "B0HJGKN818",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51csaxLPPpL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "heat_source_fit"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HJGKN818",
+      "ref": "p3",
+      "search_key": "鎌倉陶器 笛ふきケットルお洒落ステンレスやかん大容量 2~8L",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "やかん おしゃれやかん 4 リットルやかん ih 対応 304 ステンレス 笛吹きケトル 大容量 ガス火兼用 (4L [約3斤分])",
+      "asin": "B0HFR8NK47",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61Pn2XvwfQL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "heat_source_fit"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HFR8NK47",
+      "ref": "p4",
+      "search_key": "やかん おしゃれやかん 4 リットルやかん ih 対応 304",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "やかん ケトル ステンレス 5.0L IH ガス火対応 広口 大容量 丈夫 さびにくい 持ちやすい ND-2883 たっぷり沸かせる！",
+      "asin": "B0GXV1S4N4",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41oZWFs1TyL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "heat_source_fit"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GXV1S4N4",
+      "ref": "p5",
+      "search_key": "やかん ケトル ステンレス 5.0L IH ガス火対応 広口 大",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "笛吹きケトル やかん ステンレス 広口ケトル アウトドア大容量 IH・ガス対応 シルバー 洗いやすい 家庭用 (2L)",
+      "asin": "B0G236Z5M7",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61PAiirX4iL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0G236Z5M7",
+      "ref": "p6",
+      "search_key": "笛吹きケトル やかん ステンレス 広口ケトル アウトドア大容量",
+      "selection_score": 0.31
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "heat_source_fit",
+      "usable_capacity"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "stovetop-water-kettles"
+}
