@@ -1,0 +1,131 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/manual-coffee-drippers-6-picks.html",
+  "category": "dailygoods",
+  "comparison_axes": [
+    {
+      "id": "brewing_structure",
+      "keywords": [
+        "円すい型",
+        "台形型",
+        "平底型",
+        "穴の構造",
+        "推奨レシピ"
+      ],
+      "label": "抽出構造と注ぎ方"
+    },
+    {
+      "id": "servings_filter",
+      "keywords": [
+        "対応杯数",
+        "粉量",
+        "専用ペーパー",
+        "汎用ペーパー"
+      ],
+      "label": "淹れる杯数と対応フィルター"
+    },
+    {
+      "id": "material_handling",
+      "keywords": [
+        "樹脂",
+        "陶磁器",
+        "金属",
+        "対応サーバー径",
+        "食洗機対応"
+      ],
+      "label": "素材と設置・手入れの条件"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/manual-coffee-drippers-6-picks/manual-coffee-drippers-6-picks.png",
+  "products": [
+    {
+      "amazon_title": "HARIO(ハリオ) コーヒードリッパー メモリ付き 01 クリアグレー 1～2人用 台形 食洗機対応 MA-431 ベストコ",
+      "asin": "B0CQ1PQDR4",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/613+4313FHL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "material_handling"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0CQ1PQDR4",
+      "ref": "p1",
+      "search_key": "HARIO(ハリオ) コーヒードリッパー メモリ付き 01 クリ",
+      "selection_score": 0.505
+    },
+    {
+      "amazon_title": "EsiFare コーヒーフィルター 2層メッシュ 一体式 コーヒードリッパー ペーパーレス ハンドル付き コーヒーフィルター 円錐 ベース付き コーヒードリッパー 再利用可能 目詰まりしにくい コーヒー ステンレスフィルター 800目 (L)",
+      "asin": "B0G6L3LXR1",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61H2VmV2O2L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0G6L3LXR1",
+      "ref": "p2",
+      "search_key": "EsiFare コーヒーフィルター 2層メッシュ 一体式 コーヒ",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "HARIO(ハリオ) V60 カラーブリュー・ウィズケトル 1~2杯用 ハンドドリップ セット 耐熱ガラス製サーバー 計量スプーン ペーパー40枚 レシピブック ケトル付き キナリベージュ VCSDA-01-20CP-KB",
+      "asin": "B0FVLGSJR5",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71Pvjr56trL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FVLGSJR5",
+      "ref": "p3",
+      "search_key": "HARIO(ハリオ) V60 カラーブリュー・ウィズケトル 1~",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "【セット買い】HARIO(ハリオ) V60 透過ドリッパー 03 クリア 1~6杯用 コーヒー ハンドドリップ 日本製 VDR-03-T + V60用ペーパーフィルター 03M 1~6杯用 100枚入り みさらし VCF-03-100M",
+      "asin": "B0FN7BLTSG",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61RP03S4r3L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FN7BLTSG",
+      "ref": "p4",
+      "search_key": "HARIO(ハリオ) V60 透過ドリッパー 03 クリア 1~",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "HARIO(ハリオ) お手軽コーヒーポット 1st ドリッパー サーバー セット ハンドドリップ 初心者 ブラック OCP-40-B",
+      "asin": "B0FFS8M9GQ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41D-za0CPeL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FFS8M9GQ",
+      "ref": "p5",
+      "search_key": "HARIO(ハリオ) お手軽コーヒーポット 1st ドリッパー",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "HARIO(ハリオ) V60 コーヒーフィルター 1~4杯用 160枚入り 40枚×4個セット 日本製 FSC認証製品 ペーパー 02 W ホワイト VCF-02-40W-4S-AZ＋",
+      "asin": "B0CZ3HJ1SY",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51UXAroNEHL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0CZ3HJ1SY",
+      "ref": "p6",
+      "search_key": "HARIO(ハリオ) V60 コーヒーフィルター 1~4杯用 1",
+      "selection_score": 0.325
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "material_handling"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "manual-coffee-drippers-6-picks"
+}
