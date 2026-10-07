@@ -1,0 +1,138 @@
+{
+  "slug": "chestnut-peeling-tools",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/chestnut-peeling-tools.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/chestnut-peeling-tools/chestnut-peeling-tools.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "peeling_scope",
+      "label": "むける皮と下処理の条件",
+      "keywords": [
+        "鬼皮",
+        "渋皮",
+        "生栗",
+        "下処理"
+      ]
+    },
+    {
+      "id": "blade_structure",
+      "label": "刃と栗を支える構造",
+      "keywords": [
+        "切り刃",
+        "ギザ刃",
+        "刃の向き"
+      ]
+    },
+    {
+      "id": "handling",
+      "label": "握り方と使用後の手入れ",
+      "keywords": [
+        "持ち手",
+        "ばね",
+        "刃の保護",
+        "洗浄方法"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "blade_structure",
+      "peeling_scope"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true,
+    "content_duplicates_removed": []
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0H9919XLT",
+      "asin": "B0H9919XLT",
+      "amazon_title": "GOKEI 栗むき器 栗剥きハサミ 替刃式 鬼皮・渋皮対応 ギザ刃 ロック機能 保護キャップ付き 左右手対応 スクレーパー・指サック付き 1個セット",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71Em7q4eroL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.67,
+      "matched_comparison_axes": [
+        "blade_structure",
+        "peeling_scope"
+      ],
+      "search_key": "GOKEI 栗むき器 栗剥きハサミ 替刃式 鬼皮・渋皮対応 ギザ"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HJLRH692",
+      "asin": "B0HJLRH692",
+      "amazon_title": "栗むき器 くりむき器 栗 皮むき 栗の鬼皮・渋皮むき 栗むき ハサミ 栗の皮むき鋏 一字切れ目 鋸歯状の刃 ロック付き （ブラウン）",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71HziIX6LRL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "peeling_scope"
+      ],
+      "search_key": "栗むき器 くりむき器 栗 皮むき 栗の鬼皮・渋皮むき 栗むき ハ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HJ4J11C2",
+      "asin": "B0HJ4J11C2",
+      "amazon_title": "aninako 栗むき器 木製 十字切り 鬼皮・渋皮むき 簡単 くり剥き 皮むき具",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/616VlMR4tzL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "peeling_scope"
+      ],
+      "search_key": "aninako 栗むき器 木製 十字切り 鬼皮・渋皮むき 簡単"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0HG6SDQY1",
+      "asin": "B0HG6SDQY1",
+      "amazon_title": "栗むき器 栗むきハサミ 栗剥き器 鬼皮・渋皮をまとめてむける 一文字 ロック機能付き ブラック",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61F9npI4NHL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "peeling_scope"
+      ],
+      "search_key": "栗むき器 栗むきハサミ 栗剥き器 鬼皮・渋皮をまとめてむける 一"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0HFJFYJRG",
+      "asin": "B0HFJFYJRG",
+      "amazon_title": "GOKEI 栗剥き 栗むきハサミ 指サック・スクレーパー付き ロック機能 十字切れ目 先端フック 刃先キャップ・十字刃カバー",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71S8oHqTFvL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [],
+      "search_key": "GOKEI 栗剥き 栗むきハサミ 指サック・スクレーパー付き ロ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0HDYTB8LX",
+      "asin": "B0HDYTB8LX",
+      "amazon_title": "栗むき器 くりむき器 栗 皮むき 栗の鬼皮・渋皮むき 栗むき ハサミ 栗の皮むき鋏 一字切れ目 鋸歯状の刃 ロック付き",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61X60lUwNhL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "peeling_scope"
+      ],
+      "search_key": "栗むき器 くりむき器 栗 皮むき 栗の鬼皮・渋皮むき 栗むき ハ"
+    }
+  ]
+}

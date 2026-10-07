@@ -1,0 +1,25 @@
+{
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "role_id": "bu-codex-sellemy-designer",
+  "thread_id": "01a111a0-344e-74b1-99da-7cee59ca6cf0",
+  "member_binding_revision": 6,
+  "model": "gpt-6-astra",
+  "visual_family": "Product Portrait",
+  "summary": "秋の台所で栗の皮むき道具と栗、むいた殻をまな板に置いた単一シーン。ファイルの存在、PNG形式、1536×1024を検証済み。",
+  "image_sha256": "0bca918c7262f778e8d07da3f684d25e77062460c96bc2f03a2beb3f8dd929ba",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-10-07T08:17:41.794948+00:00",
+  "token_usage_source": "codex_rollout.turn_token_usage",
+  "image_generation_internal_usage_exposed": false,
+  "token_usage": {
+    "input_tokens": 14737439,
+    "cached_input_tokens": 14159360,
+    "cache_write_input_tokens": 0,
+    "uncached_input_tokens": 578079,
+    "output_tokens": 26229,
+    "reasoning_output_tokens": 54,
+    "total_tokens": 14763668
+  }
+}
