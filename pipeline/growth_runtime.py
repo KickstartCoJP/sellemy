@@ -5,6 +5,7 @@ import json
 import os
 import re
 import subprocess
+import requests
 import sys
 import time
 from datetime import datetime, timezone
@@ -241,6 +242,7 @@ def _cleanup_expected_dirty(slug: str, category: str, base_head: str) -> None:
 
 
 def _existing_publish_commit(slug: str, category: str) -> str | None:
+    """Return an already-live historical publish without requiring the slug to remain on current TOP."""
     subprocess.run(['git', 'fetch', 'origin', 'main', '--quiet'], cwd=ROOT, check=False)
     completed = subprocess.run(
         ['git', 'log', '--all', '-n', '1', '--format=%H', '--grep', f'^Publish Writer-generated growth article: {slug}$'],
@@ -255,8 +257,20 @@ def _existing_publish_commit(slug: str, category: str) -> str | None:
         stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=False,
     ).returncode == 0
     if on_remote:
-        verify_production_deploy(slug, category, commit)
-        return commit
+        try:
+            rows = json.loads((ROOT / 'json' / 'articles.json').read_text(encoding='utf-8'))
+            article = next((row for row in rows if row.get('slug') == slug and row.get('status') == 'published'), None)
+            if not article:
+                return None
+            article_url = f'{BASE}/article/{category}/{slug}.html'
+            image_url = str(article.get('img') or f'{BASE}/img/{slug}/{slug}.png')
+            for url in (article_url, image_url):
+                response = requests.get(url, timeout=12, allow_redirects=True, headers={'User-Agent':'Mozilla/5.0'})
+                if response.status_code != 200:
+                    return None
+            return commit
+        except (OSError, json.JSONDecodeError, requests.RequestException):
+            return None
     head = _git('rev-parse', 'HEAD')
     if head == commit:
         pushed = subprocess.run(['git', 'push', 'origin', 'main'], cwd=ROOT, text=True, capture_output=True, check=False)
@@ -268,6 +282,17 @@ def _existing_publish_commit(slug: str, category: str) -> str | None:
         except PublishGateError:
             pass
     return None
+
+
+def _reconcile_already_published_jobs() -> list[str]:
+    reconciled = []
+    for row in _unfinished_jobs():
+        slug = row['slug']; category = row['category']
+        commit = _existing_publish_commit(slug, category)
+        if commit:
+            mark_published(slug, commit)
+            reconciled.append(slug)
+    return reconciled
 
 
 def _writer_stage(slug: str, result: dict) -> None:
@@ -525,6 +550,9 @@ def run(
                 result['status'] = 'skipped_by_controller'
                 return result
 
+        reconciled = _reconcile_already_published_jobs()
+        if reconciled:
+            result['reconciled_already_published'] = reconciled
         recovery = eligible_job()
         unfinished = _unfinished_jobs()
         if recovery:
