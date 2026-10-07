@@ -1,0 +1,133 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/manual-coffee-grinders-comparison.html",
+  "category": "dailygoods",
+  "comparison_axes": [
+    {
+      "id": "grind_adjustment",
+      "keywords": [
+        "段階調整",
+        "無段階調整",
+        "調整位置",
+        "対応する挽き目"
+      ],
+      "label": "挽き目の調整方法と対応範囲"
+    },
+    {
+      "id": "capacity_handling",
+      "keywords": [
+        "豆容量",
+        "ハンドル長",
+        "本体径",
+        "据え置き型"
+      ],
+      "label": "豆容量と回し方に関わる構造"
+    },
+    {
+      "id": "burr_maintenance",
+      "keywords": [
+        "セラミック臼",
+        "金属臼",
+        "分解範囲",
+        "水洗い可否"
+      ],
+      "label": "臼の材質と清掃方法"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/manual-coffee-grinders-comparison/manual-coffee-grinders-comparison.png",
+  "products": [
+    {
+      "amazon_title": "手挽きコーヒーミル 手動 コーヒー豆挽き 挽き目調整可能 セラミック臼 ステンレス製 コンパクト 携帯用 家庭用 アウトドア キャンプ コーヒー用品",
+      "asin": "B0HHR8DX7B",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61rBD4lX7OL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "burr_maintenance"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HHR8DX7B",
+      "ref": "p1",
+      "search_key": "手挽きコーヒーミル 手動 コーヒー豆挽き 挽き目調整可能 セラミ",
+      "selection_score": 0.505
+    },
+    {
+      "amazon_title": "電動コーヒーミル コードレス セラミック臼式【30段階挽き目調整&外側ダイヤル式】コンパクト 静音設計 約2杯分対応 水洗い可能 お手入れ簡単",
+      "asin": "B0H5Q2LYJQ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71OdHvS0OPL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "burr_maintenance"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H5Q2LYJQ",
+      "ref": "p2",
+      "search_key": "電動コーヒーミル コードレス セラミック臼式 コンパクト 静音設",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "コーヒーミル 電動【2026最新型】電動コーヒーミル コードレス 臼式 コニカル式 セラミック刃 コーヒーグラインダー Type C充電式 粗挽き 細挽き 粒度調整 自動停止 水洗い可能 小型 コンパクト 操作簡単 お手入れ簡単 掃除ブラシ付 日本語取扱説明書 ブラック",
+      "asin": "B0H2963TCY",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71aqqU99GeL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H2963TCY",
+      "ref": "p3",
+      "search_key": "コーヒーミル 電動 電動コーヒーミル コードレス 臼式 コニカル",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "ONE SECOND 【心地よい木目調】 コーヒーミル 手動 41段階 木目調 セラミック刃 臼式 静音 軽量 水洗い可能 コーヒーグラインダー ワンセカンド",
+      "asin": "B0GP5LTBTH",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/614eY+T8yqL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GP5LTBTH",
+      "ref": "p4",
+      "search_key": "ONE SECOND コーヒーミル 手動 41段階 木目調 セラ",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "CIRCLE JOY コーヒーミル 手動 研磨時に発熱しないセラミック臼 40段階外部調整 ダブルベアリングの 位置決め 容量30グラム 携帯性に優れ お手入れ簡単 ステンレス製コーヒーグラインダー エスプレッソ フレンチプレス プールオーバー対応 シルバー",
+      "asin": "B0G1YS6CSB",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61xNP-aA0AL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "burr_maintenance"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0G1YS6CSB",
+      "ref": "p5",
+      "search_key": "CIRCLE JOY コーヒーミル 手動 研磨時に発熱しないセラ",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "カリタ Kalita コーヒーミル 木製 粒度の安定性が高いアルミ製グラインダー KH-9 ac ブラウン BR 粗さ調整可能 手挽きコーヒーミル ミル グラインダー 手動 プレゼント ギフト 贈り物 #42228",
+      "asin": "B0FWR7Y26K",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61tns7x135L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FWR7Y26K",
+      "ref": "p6",
+      "search_key": "カリタ Kalita コーヒーミル 木製 粒度の安定性が高いアル",
+      "selection_score": 0.325
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "burr_maintenance"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "manual-coffee-grinders-comparison"
+}
