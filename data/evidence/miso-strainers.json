@@ -1,0 +1,130 @@
+{
+  "slug": "miso-strainers",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/miso-strainers.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/miso-strainers/miso-strainers.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "basket",
+      "label": "こし網の形状と寸法",
+      "keywords": [
+        "網の直径",
+        "網の深さ",
+        "網目"
+      ]
+    },
+    {
+      "id": "handling",
+      "label": "鍋への掛け方と柄の構造",
+      "keywords": [
+        "フック",
+        "柄の長さ",
+        "持ち手"
+      ]
+    },
+    {
+      "id": "maintenance",
+      "label": "洗浄方法と付属道具",
+      "keywords": [
+        "網の取り外し",
+        "食洗機対応",
+        "付属へら"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "handling",
+      "maintenance"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true,
+    "content_duplicates_removed": []
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0GY8252D6",
+      "asin": "B0GY8252D6",
+      "amazon_title": "味噌こし パンチング ステンレス ゆでザル 食洗機対応 こしザル 濾し器 万能こし 味噌とき 裏ごし ストレーナー ゆでざる 網 湯切り 水切り 持ち手 片手 取っ手付き 茹でざる 下ごしらえ 霜山",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/413NjA4AQJL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.685,
+      "matched_comparison_axes": [
+        "handling",
+        "maintenance"
+      ],
+      "search_key": "味噌こし パンチング ステンレス ゆでザル 食洗機対応 こしザル"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0GR9C5Z2C",
+      "asin": "B0GR9C5Z2C",
+      "amazon_title": "味噌マドラー みそマドラー キッチン用品 泡立て器味噌こし あわだてき 手動 キッチングッズ かき混ぜ棒 便利 食洗機 洗いやすい ステンレス製品",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41fnTXa60kL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "味噌マドラー みそマドラー キッチン用品 泡立て器味噌こし あわ"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0GQY5K91W",
+      "asin": "B0GQY5K91W",
+      "amazon_title": "ヨシカワ 料理のいろは パンチングメッシュの味噌こし 味噌汁 日本製 YJ4113",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61r6pnR+MQL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "ヨシカワ 料理のいろは パンチングメッシュの味噌こし 味噌汁 日"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0DRHW1YH8",
+      "asin": "B0DRHW1YH8",
+      "amazon_title": "みそこし器 パンチング 味噌こし 2pcs 18-8ステンレス製 (味噌こしスプーン)",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/41zn6ZA3QIL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "みそこし器 パンチング 味噌こし 2pcs 18-8ステンレス製"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0DNLYJ2Y7",
+      "asin": "B0DNLYJ2Y7",
+      "amazon_title": "デリッシュキッチン パール金属 みそ取り 味噌 Sサイズ イエロー CC-1808",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51HBsB7V6tL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "デリッシュキッチン パール金属 みそ取り 味噌 Sサイズ イエロ"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0CX4D7VKC",
+      "asin": "B0CX4D7VKC",
+      "amazon_title": "貝印 KAI 味噌 みそこし みそとき セット シリコーンヘラ 付 食洗機対応 KAI KITCHEN 日本製 DH8061",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61a+3YXWBuL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "maintenance"
+      ],
+      "search_key": "貝印 KAI 味噌 みそこし みそとき セット シリコーンヘラ"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "role_id": "bu-codex-sellemy-designer",
+  "thread_id": "01a111a0-344e-74b1-99da-7cee59ca6cf0",
+  "member_binding_revision": 6,
+  "model": "gpt-6-astra",
+  "visual_family": "Close-up / Texture",
+  "summary": "家庭の台所で味噌こしとへらを使い、鍋に味噌を溶く単一シーン。網の形と持ち手を明瞭に表現。ファイルの存在、PNG形式、1536×1024を検証済み。",
+  "image_sha256": "fccd1bd0870be3a44c42e64aa1b758c6610d36d4f45b50869dd7d34756d96b6a",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-10-07T07:59:43.428431+00:00",
+  "token_usage_source": "codex_rollout.turn_token_usage",
+  "image_generation_internal_usage_exposed": false,
+  "token_usage": {
+    "input_tokens": 14322713,
+    "cached_input_tokens": 13757440,
+    "cache_write_input_tokens": 0,
+    "uncached_input_tokens": 565273,
+    "output_tokens": 25377,
+    "reasoning_output_tokens": 54,
+    "total_tokens": 14348090
+  }
+}
