@@ -40,7 +40,8 @@ class CodexEyecatchTests(unittest.TestCase):
                  patch.object(codex_eyecatch, '_command', return_value=('/bin/codex',)), \
                  patch.object(codex_eyecatch, '_model', return_value='model'), \
                  patch.object(codex_eyecatch, '_generated_root', return_value=(root/'generated_images').resolve()), \
-                 patch.object(codex_eyecatch, 'generate_persistent', side_effect=generate):
+                 patch.object(codex_eyecatch, 'generate_persistent', side_effect=generate), \
+                 patch.object(codex_eyecatch, '_rollout_has_imagegen', return_value=True):
                 receipt = codex_eyecatch.ensure_codex_eyecatch(
                     slug='sample', title='sample title', category='dailygoods', evidence={}, payload={'summary':'summary','products':[]})
             self.assertEqual(receipt['generation_method'], 'codex_cli_imagegen')
@@ -61,7 +62,7 @@ class CodexEyecatchTests(unittest.TestCase):
                 out=root/'generated_images/thread/generated.png'; out.parent.mkdir(parents=True,exist_ok=True)
                 out.write_bytes(fake_png(1024,1024))
                 return ({'status':'completed','output_path':str(out),'generation_route':'built-in_image_gen','visual_family':'Lifestyle Scene','summary':'bad'}, {'session_id':'thread','member_binding_revision':5})
-            with patch.object(codex_eyecatch,'ROOT',root), patch.object(codex_eyecatch,'_command',return_value=('/bin/codex',)), patch.object(codex_eyecatch,'_generated_root',return_value=(root/'generated_images').resolve()), patch.object(codex_eyecatch,'generate_persistent',side_effect=generate):
+            with patch.object(codex_eyecatch,'ROOT',root), patch.object(codex_eyecatch,'_command',return_value=('/bin/codex',)), patch.object(codex_eyecatch,'_generated_root',return_value=(root/'generated_images').resolve()), patch.object(codex_eyecatch,'generate_persistent',side_effect=generate), patch.object(codex_eyecatch,'_rollout_has_imagegen',return_value=True):
                 with self.assertRaisesRegex(codex_eyecatch.CodexEyecatchError, 'dimensions invalid'):
                     codex_eyecatch.ensure_codex_eyecatch(slug='sample',title='x',category='dailygoods',evidence={},payload={})
 

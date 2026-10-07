@@ -121,7 +121,7 @@ def _prompt(topic: dict, evidence: dict, *, previous_payload: dict | None = None
     return prompt
 
 
-def _invoke(provider: WriterProvider, prompt: str) -> tuple[dict, dict]:
+def _invoke(provider: WriterProvider, prompt: str, *, usage_key: str = "") -> tuple[dict, dict]:
     if not provider.command or not provider.command[0]:
         raise WriterInvocationError(f'{provider.name} Writer command unavailable', availability=True)
     if not provider.model:
@@ -131,7 +131,7 @@ def _invoke(provider: WriterProvider, prompt: str) -> tuple[dict, dict]:
             payload, codex_meta = codex_generate_persistent(
                 provider.command, provider.model, WRITER_JSON_SCHEMA, prompt,
                 timeout=int(os.environ.get('SELLEMY_WRITER_TIMEOUT_SECONDS', '600')),
-                root=Path(__file__).resolve().parents[1], surface_key='bu-codex-sellemy-writer', stage='writer',
+                root=Path(__file__).resolve().parents[1], surface_key='bu-codex-sellemy-writer', stage='writer', usage_key=usage_key,
             )
         except CodexProviderError as exc:
             raise WriterInvocationError(f'{provider.name} Writer {exc}', availability=True) from exc
@@ -178,13 +178,13 @@ def invoke_writer(topic: dict, evidence: dict, *, previous_payload: dict | None 
     prompt = _prompt(topic, evidence, previous_payload=previous_payload, gate_feedback=gate_feedback)
     requested = f'{primary.name}:{primary.model}'
     try:
-        payload, metadata = _invoke(primary, prompt)
+        payload, metadata = _invoke(primary, prompt, usage_key=str(topic.get('slug') or ''))
         return payload, {**metadata, 'writer_model_requested': requested, 'writer_model_used': requested, 'writer_provider_requested': primary.kind, 'writer_provider_used': primary.kind, 'fallback_used': False, 'fallback_reason': None, 'writer_attempt_count': 1}
     except WriterInvocationError as exc:
         if not exc.availability:
             raise
         if not secondary.command or not secondary.model or not secondary.certified:
             raise WriterInvocationError(f'{exc}; certified Secondary Writer unavailable', availability=True) from exc
-        payload, metadata = _invoke(secondary, prompt)
+        payload, metadata = _invoke(secondary, prompt, usage_key=str(topic.get('slug') or ''))
         used = f'{secondary.name}:{secondary.model}'
         return payload, {**metadata, 'writer_model_requested': requested, 'writer_model_used': used, 'writer_provider_requested': primary.kind, 'writer_provider_used': secondary.kind, 'fallback_used': True, 'fallback_reason': 'primary_availability_error', 'writer_attempt_count': 2}

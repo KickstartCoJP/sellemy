@@ -1,7 +1,9 @@
 from __future__ import annotations
 
 import json
+import shutil
 import subprocess
+import tempfile
 import sys
 import unittest
 from contextlib import nullcontext
@@ -13,6 +15,7 @@ sys.path.insert(0, str(ROOT / 'pipeline'))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import growth_runtime  # noqa: E402
+import growth_recovery  # noqa: E402
 import planning_runtime  # noqa: E402
 import writer_runtime  # noqa: E402
 from fixtures import valid_evidence, valid_payload  # noqa: E402
@@ -104,8 +107,8 @@ class ScheduledRouteTests(unittest.TestCase):
         source = (ROOT / 'pipeline' / 'growth_runtime.py').read_text(encoding='utf-8')
         self.assertIn('with PublishGate(ROOT).acquire()', source)
         gate = source.index('with PublishGate(ROOT).acquire()')
-        designer = source.index("result['eyecatch'] = ensure_codex_eyecatch")
-        publish = source.index("result['commit'] = _publish")
+        designer = source.index('receipt = ensure_codex_eyecatch')
+        publish = source.index('commit = _publish')
         self.assertLess(gate, designer)
         self.assertLess(designer, publish)
 
@@ -176,6 +179,20 @@ class ProductViabilityPlanningTests(unittest.TestCase):
 
 
 class RuntimeFailClosedTests(unittest.TestCase):
+    def setUp(self):
+        self._recovery_tmp = Path(tempfile.mkdtemp(prefix='sellemy-recovery-test-'))
+        self._recovery_patches = [
+            patch.object(growth_recovery, 'STATE_ROOT', self._recovery_tmp),
+            patch.object(growth_recovery, 'JOBS_ROOT', self._recovery_tmp / 'jobs'),
+            patch.object(growth_recovery, 'EVENTS_PATH', self._recovery_tmp / 'events.jsonl'),
+            patch.object(growth_recovery, 'EXECUTION_EVENTS_PATH', self._recovery_tmp / 'execution-events.jsonl'),
+        ]
+        for item in self._recovery_patches: item.start()
+
+    def tearDown(self):
+        for item in reversed(self._recovery_patches): item.stop()
+        shutil.rmtree(self._recovery_tmp, ignore_errors=True)
+
     @staticmethod
     def _allowing_controller():
         controller = Mock()
@@ -212,6 +229,8 @@ class RuntimeFailClosedTests(unittest.TestCase):
         products = [{'asin': f'B0TEST{i:04d}'} for i in range(6)]
         with (
             patch.object(growth_runtime, 'ensure_codex_eyecatch', return_value={'generation_method': 'codex_cli_imagegen'}),
+            patch.object(growth_runtime, 'save_eyecatch', side_effect=lambda slug, **kw: growth_recovery.set_stage(slug, 'PUBLISH_PENDING')),
+            patch.object(growth_runtime, 'materialize_for_publish'),
             patch.object(growth_runtime, 'require_clean_current_main', return_value='abc'),
             patch.object(growth_runtime, 'select_viable_topic', return_value=(topic, products, [])),
             patch.object(growth_runtime, 'select_six', return_value=(products, {})),
@@ -259,6 +278,8 @@ class RuntimeFailClosedTests(unittest.TestCase):
         gate = nullcontext({'head_after': 'base', 'origin_main': 'base', 'clean': True})
         with (
             patch.object(growth_runtime, 'ensure_codex_eyecatch', return_value={'generation_method': 'codex_cli_imagegen'}),
+            patch.object(growth_runtime, 'save_eyecatch', side_effect=lambda slug, **kw: growth_recovery.set_stage(slug, 'PUBLISH_PENDING')),
+            patch.object(growth_runtime, 'materialize_for_publish'),
             patch.object(growth_runtime, 'require_clean_current_main', return_value='base'),
             patch.object(growth_runtime, 'select_viable_topic', return_value=(topic, products, [])),
             patch.object(growth_runtime, 'select_six', return_value=(products, {})),
@@ -286,6 +307,8 @@ class RuntimeFailClosedTests(unittest.TestCase):
         controller.evaluate_and_record.return_value = ({'event_id': 'feedback-1'}, {'target_per_day': 2})
         with (
             patch.object(growth_runtime, 'ensure_codex_eyecatch', return_value={'generation_method': 'codex_cli_imagegen'}),
+            patch.object(growth_runtime, 'save_eyecatch', side_effect=lambda slug, **kw: growth_recovery.set_stage(slug, 'PUBLISH_PENDING')),
+            patch.object(growth_runtime, 'materialize_for_publish'),
             patch.object(growth_runtime, 'require_clean_current_main', return_value='abc'),
             patch.object(growth_runtime, 'select_viable_topic', return_value=(topic, products, [])),
             patch.object(growth_runtime, 'select_six', return_value=(products, {})),
@@ -345,7 +368,7 @@ class EvidenceContentDuplicateGateTests(unittest.TestCase):
             validate_evidence(evidence)
 
 
-class DesignerEyecatchRouteTests(unittest.TestCase):
+class DesignerEyecatchRouteTests(RuntimeFailClosedTests):
     def test_publish_invokes_designer_after_writer_qa_pass(self):
         topic = {'slug': 'test-widgets-6-picks', 'category': 'gadget', 'query': 'x', 'title': 'x', 'comparison_axes': [{'id': 'use', 'label': '用途'}]}
         products = [{'asin': f'B0TEST{i:04d}'} for i in range(6)]
@@ -359,6 +382,8 @@ class DesignerEyecatchRouteTests(unittest.TestCase):
             patch.object(growth_runtime, 'invoke_writer', return_value=(valid_payload(), {'runtime': 'test'})),
             patch.object(growth_runtime, 'evaluate_candidate', return_value=('html', [], {'overall_pass': True})),
             patch.object(growth_runtime, 'ensure_codex_eyecatch', return_value={'generation_method': 'codex_cli_imagegen'}) as designer,
+            patch.object(growth_runtime, 'save_eyecatch', side_effect=lambda slug, **kw: growth_recovery.set_stage(slug, 'PUBLISH_PENDING')),
+            patch.object(growth_runtime, 'materialize_for_publish'),
             patch.object(growth_runtime, '_write_json'),
             patch.object(growth_runtime, 'publish_payload', return_value={'applied': True}),
             patch.object(growth_runtime, '_publish', return_value='published-commit'),

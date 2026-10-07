@@ -61,6 +61,44 @@ def _command() -> tuple[str, ...]:
 def _generated_root() -> Path:
     return (Path.home() / '.codex' / 'generated_images').resolve()
 
+
+
+def _rollout_has_imagegen(session_id: str | None, slug: str) -> bool:
+    if not session_id:
+        return False
+    files = sorted((Path.home() / '.codex' / 'sessions').glob(f'**/*{session_id}.jsonl'))
+    active = False
+    generated = False
+    marker = f'Slug: {slug}'
+    for path in files:
+        try:
+            lines = path.read_text(encoding='utf-8', errors='ignore').splitlines()
+        except OSError:
+            continue
+        for raw in lines:
+            try:
+                row = json.loads(raw)
+            except json.JSONDecodeError:
+                continue
+            payload = row.get('payload') or {}
+            texts = []
+            if row.get('type') == 'response_item' and payload.get('type') == 'message' and payload.get('role') == 'user':
+                texts = [str(x.get('text') or '') for x in payload.get('content') or [] if isinstance(x, dict)]
+            elif row.get('type') == 'event_msg' and payload.get('type') == 'item_completed':
+                item = payload.get('item') or {}
+                if item.get('type') == 'UserMessage':
+                    texts = [str(x.get('text') or '') for x in item.get('content') or [] if isinstance(x, dict)]
+                if active and item.get('type') == 'Extension' and item.get('kind') == 'image_gen.generation' and item.get('status') == 'completed':
+                    generated = True
+            for text in texts:
+                if 'Goal: create the single production article eyecatch PNG' in text:
+                    active = marker in text
+                    if active:
+                        generated = False
+            if active and generated and row.get('type') == 'event_msg' and payload.get('type') in {'task_complete', 'turn_completed'}:
+                return True
+    return bool(active and generated)
+
 def _model() -> str:
     return (
         os.environ.get('SELLEMY_EYECATCH_CODEX_MODEL', '').strip()
@@ -144,8 +182,9 @@ def ensure_codex_eyecatch(*, slug: str, title: str, category: str, evidence: dic
             raise CodexEyecatchError('designer output is outside Codex generated_images')
     except OSError as exc:
         raise CodexEyecatchError('designer output path invalid') from exc
-    if result.get('generation_route') != 'built-in_image_gen':
-        raise CodexEyecatchError('designer did not attest built-in image_gen route')
+    rollout_attested = _rollout_has_imagegen(meta.get('session_id'), slug)
+    if not rollout_attested:
+        raise CodexEyecatchError('designer rollout has no completed built-in image_gen execution evidence')
     if not resolved.is_file():
         raise CodexEyecatchError('designer produced no image file')
 
@@ -158,6 +197,8 @@ def ensure_codex_eyecatch(*, slug: str, title: str, category: str, evidence: dic
     receipt = {
         'generation_method': GENERATION_METHOD,
         'generation_route': 'built-in_image_gen',
+        'generation_route_attestation': 'codex_rollout_extension',
+        'model_reported_generation_route': result.get('generation_route'),
         'role_id': DESIGNER_ROLE,
         'thread_id': meta.get('session_id'),
         'member_binding_revision': meta.get('member_binding_revision'),

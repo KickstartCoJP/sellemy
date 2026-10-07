@@ -6,6 +6,7 @@ import os
 import re
 import subprocess
 import sys
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -31,7 +32,12 @@ from production_deploy import verify as verify_production_deploy, ProductionDepl
 from qa import run_qa
 from renderer import render_article
 from review_gate import run_review_gate
-from writer_runtime import invoke_writer
+from writer_runtime import WriterInvocationError, invoke_writer
+from growth_recovery import (
+    all_jobs, create_job, eligible_job, job_dir, load_job, mark_failure, mark_published,
+    materialize_for_publish, read_artifact, record_execution, save_eyecatch,
+    save_writer_result, set_stage, WRITER_MAX_ATTEMPTS,
+)
 
 REPORT = ROOT / 'data' / 'growth_last_run.json'
 BASE = 'https://www.sellemy.jp'
@@ -197,6 +203,303 @@ def _publish(slug: str, category: str) -> str:
     return head
 
 
+def _unfinished_jobs() -> list[dict]:
+    return [row for row in all_jobs() if row.get('status') not in {'PUBLISHED', 'DISCARDED', 'FAILED'}]
+
+
+def _runtime_failure(exc: Exception) -> bool:
+    text = f'{type(exc).__name__}: {exc}'.lower()
+    runtime_markers = (
+        'unavailable', 'timeout', 'timed out', 'active writer', 'binding', 'working tree',
+        'publish sync', 'push origin', 'deploy/read-back', 'remote writer', 'runtime', 'connection',
+        'rollout has no completed built-in image_gen execution evidence',
+    )
+    return isinstance(exc, (PublishGateError, ProductionDeployError)) or any(x in text for x in runtime_markers)
+
+
+def _cleanup_expected_dirty(slug: str, category: str, base_head: str) -> None:
+    if _git('rev-parse', 'HEAD') != base_head:
+        return
+    output = subprocess.check_output(
+        ['git', 'status', '--porcelain', '--untracked-files=all'], cwd=ROOT, text=True
+    )
+    changed = _parse_porcelain_paths(output)
+    expected = _expected_publish_paths(slug, category)
+    if not changed or not changed.issubset(expected):
+        return
+    tracked = set(subprocess.check_output(['git', 'ls-files'], cwd=ROOT, text=True).splitlines())
+    restore = sorted(changed & tracked)
+    if restore:
+        subprocess.run(['git', 'checkout', '--', *restore], cwd=ROOT, check=True)
+    for relative in sorted(changed - tracked):
+        path = ROOT / relative
+        if path.is_dir():
+            import shutil
+            shutil.rmtree(path)
+        elif path.exists():
+            path.unlink()
+
+
+def _existing_publish_commit(slug: str, category: str) -> str | None:
+    subprocess.run(['git', 'fetch', 'origin', 'main', '--quiet'], cwd=ROOT, check=False)
+    completed = subprocess.run(
+        ['git', 'log', '--all', '-n', '1', '--format=%H', '--grep', f'^Publish Writer-generated growth article: {slug}$'],
+        cwd=ROOT, text=True, capture_output=True, check=False,
+    )
+    commit = completed.stdout.strip()
+    if not commit:
+        return None
+    origin = _git('rev-parse', 'origin/main')
+    on_remote = subprocess.run(
+        ['git', 'merge-base', '--is-ancestor', commit, origin], cwd=ROOT,
+        stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=False,
+    ).returncode == 0
+    if on_remote:
+        verify_production_deploy(slug, category, commit)
+        return commit
+    head = _git('rev-parse', 'HEAD')
+    if head == commit:
+        pushed = subprocess.run(['git', 'push', 'origin', 'main'], cwd=ROOT, text=True, capture_output=True, check=False)
+        if pushed.returncode == 0:
+            verify_production_deploy(slug, category, commit)
+            return commit
+        try:
+            recover_unpublished_commit_after_remote_race(ROOT, commit)
+        except PublishGateError:
+            pass
+    return None
+
+
+def _writer_stage(slug: str, result: dict) -> None:
+    state = load_job(slug)
+    failures = int((state.get('retry_count_by_stage') or {}).get('writer') or 0)
+    if failures >= WRITER_MAX_ATTEMPTS:
+        raise GrowthRuntimeError(f'writer retry exhausted for {slug}')
+    topic = read_artifact(slug, 'topic.json')
+    evidence = read_artifact(slug, 'evidence.json')
+    previous = read_artifact(slug, 'payload.json')
+    gate_feedback = read_artifact(slug, 'gate-feedback.json', {})
+    started = time.monotonic()
+    metadata: dict = {}
+    payload: dict | None = None
+    try:
+        payload, metadata = invoke_writer(
+            topic, evidence,
+            previous_payload=previous if isinstance(previous, dict) else None,
+            gate_feedback=gate_feedback if isinstance(gate_feedback, dict) else None,
+        )
+        duration_ms = int((time.monotonic() - started) * 1000)
+        record_execution(slug=slug, role='writer', event_type='turn', stage='writer', metadata=metadata, duration_ms=duration_ms)
+        try:
+            rendered, findings, qa = evaluate_candidate(payload, evidence)
+        except Exception as qa_exc:
+            findings = [f'{type(qa_exc).__name__}: {qa_exc}']
+            qa = {'overall_pass': False, 'evaluation_exception': findings[0]}
+            rendered = ''
+        feedback = _gate_feedback(findings, qa)
+        if not qa.get('overall_pass') and qa.get('evaluation_exception'):
+            feedback['evaluation_exception'] = qa['evaluation_exception']
+        passed = not findings and bool(qa.get('overall_pass'))
+        save_writer_result(
+            slug, payload=payload, qa=qa, findings=findings, feedback=feedback,
+            metadata=metadata, passed=passed,
+        )
+        result.setdefault('writer_attempts', []).append({
+            'gate_attempt': failures + 1, **metadata, 'gate_pass': passed,
+        })
+        result['review_findings'] = findings
+        result['qa'] = qa
+        if passed:
+            record_context_quality(ROOT, 'bu-codex-sellemy-writer', True, session_id=metadata.get('session_id'))
+            record_execution(slug=slug, role='writer', event_type='success', stage='writer', metadata=metadata)
+            return
+        mark_failure(
+            slug, stage='writer', failure_class='role_quality', failure_code='REVIEW_QA_FAILED',
+            reason=json.dumps(feedback, ensure_ascii=False), role_return=True, role='writer',
+        )
+        record_context_quality(ROOT, 'bu-codex-sellemy-writer', False, session_id=metadata.get('session_id'), reason='Review/QA failed')
+        record_execution(slug=slug, role='writer', event_type='return', stage='writer', metadata=metadata, failure_class='role_quality')
+        raise GrowthRuntimeError(f'writer/review/QA failed for {slug}; retained for retry')
+    except GrowthRuntimeError:
+        raise
+    except Exception as exc:
+        failure_class = 'runtime_infrastructure' if _runtime_failure(exc) or isinstance(exc, WriterInvocationError) else 'role_quality'
+        role_return = failure_class == 'role_quality'
+        mark_failure(
+            slug, stage='writer', failure_class=failure_class,
+            failure_code='WRITER_INVOCATION_OR_OUTPUT_ERROR', reason=f'{type(exc).__name__}: {exc}',
+            role_return=role_return, role='writer',
+        )
+        record_execution(
+            slug=slug, role='writer', event_type='return' if role_return else 'runtime_retry',
+            stage='writer', metadata=metadata, failure_class=failure_class,
+            duration_ms=int((time.monotonic() - started) * 1000),
+        )
+        raise GrowthRuntimeError(f'writer stage failed for {slug}: {exc}') from exc
+
+
+def _eyecatch_and_publish(slug: str, result: dict) -> str:
+    state = load_job(slug)
+    topic = read_artifact(slug, 'topic.json')
+    evidence = read_artifact(slug, 'evidence.json')
+    payload = read_artifact(slug, 'payload.json')
+    category = state['category']
+
+    if state.get('current_stage') == 'PUBLISH_PENDING':
+        try:
+            existing = _existing_publish_commit(slug, category)
+        except Exception as exc:
+            existing = None
+            result['existing_publish_verification_error'] = f'{type(exc).__name__}: {exc}'
+        if existing:
+            mark_published(slug, existing)
+            return existing
+
+    original_head = _git('rev-parse', 'HEAD')
+    try:
+        for publish_attempt in range(1, 3):
+            with PublishGate(ROOT).acquire() as gate_evidence:
+                gate_evidence = {**gate_evidence, 'attempt': publish_attempt}
+                result.setdefault('publish_gate_attempts', []).append(gate_evidence)
+                state = load_job(slug)
+                if state.get('current_stage') == 'EYECATCH_PENDING':
+                    started = time.monotonic()
+                    try:
+                        receipt = ensure_codex_eyecatch(
+                            slug=slug, title=topic['title'], category=category,
+                            evidence=evidence, payload=payload,
+                        )
+                        save_eyecatch(
+                            slug, receipt=receipt,
+                            image_path=ROOT / 'img' / slug / f'{slug}.png',
+                        )
+                        record_context_quality(ROOT, DESIGNER_SURFACE, True, session_id=receipt.get('thread_id'))
+                        record_execution(
+                            slug=slug, role='designer', event_type='turn', stage='eyecatch',
+                            metadata={**(receipt.get('token_usage') or {}), 'session_id': receipt.get('thread_id')},
+                            duration_ms=int((time.monotonic() - started) * 1000),
+                        )
+                        record_execution(slug=slug, role='designer', event_type='success', stage='eyecatch')
+                        result['eyecatch'] = receipt
+                    except Exception as exc:
+                        failure_class = 'runtime_infrastructure' if _runtime_failure(exc) else 'role_quality'
+                        role_return = failure_class == 'role_quality'
+                        mark_failure(
+                            slug, stage='eyecatch', failure_class=failure_class,
+                            failure_code='EYECATCH_GENERATION_FAILED', reason=f'{type(exc).__name__}: {exc}',
+                            role_return=role_return, role='designer',
+                        )
+                        session = context_session_id(DESIGNER_SURFACE)
+                        if role_return:
+                            record_context_quality(ROOT, DESIGNER_SURFACE, False, session_id=session, reason=str(exc))
+                        record_execution(
+                            slug=slug, role='designer', event_type='return' if role_return else 'runtime_retry',
+                            stage='eyecatch', failure_class=failure_class,
+                            duration_ms=int((time.monotonic() - started) * 1000),
+                        )
+                        raise GrowthRuntimeError(
+                            f'Codex designer eyecatch failed for {slug}; retained for retry: {exc}'
+                        ) from exc
+
+                materialize_for_publish(slug, ROOT)
+                applied = publish_payload(slug, apply=True, allow_existing=False)
+                if not applied['applied']:
+                    raise GrowthRuntimeError('publication stage refused retained recovery candidate')
+                result['applied'] = applied
+                try:
+                    commit = _publish(slug, category)
+                except PublishRaceError as race:
+                    recovery = recover_unpublished_commit_after_remote_race(ROOT, race.candidate_commit)
+                    result.setdefault('publish_race_recoveries', []).append(recovery)
+                    if recovery.get('already_published'):
+                        commit = race.candidate_commit
+                    elif publish_attempt < 2:
+                        continue
+                    else:
+                        raise GrowthRuntimeError('remote publish race recurred after bounded recovery') from race
+                mark_published(slug, commit)
+                record_execution(slug=slug, role='publish', event_type='success', stage='publish')
+                return commit
+        raise GrowthRuntimeError('publish gate exhausted without a published commit')
+    except GrowthRuntimeError as exc:
+        current = load_job(slug)
+        if current.get('current_stage') == 'PUBLISH_PENDING' and current.get('status') != 'PUBLISHED':
+            mark_failure(
+                slug, stage='publish', failure_class='runtime_infrastructure',
+                failure_code='PUBLISH_FAILED', reason=f'{type(exc).__name__}: {exc}', role='publish',
+            )
+            record_execution(slug=slug, role='publish', event_type='runtime_retry', stage='publish', failure_class='runtime_infrastructure')
+        _cleanup_expected_dirty(slug, category, original_head)
+        raise
+    except Exception as exc:
+        mark_failure(
+            slug, stage='publish', failure_class='runtime_infrastructure',
+            failure_code='PUBLISH_FAILED', reason=f'{type(exc).__name__}: {exc}', role='publish',
+        )
+        record_execution(slug=slug, role='publish', event_type='runtime_retry', stage='publish', failure_class='runtime_infrastructure')
+        _cleanup_expected_dirty(slug, category, original_head)
+        raise GrowthRuntimeError(f'publish failed for {slug}; retained for retry: {exc}') from exc
+
+def _execute_job(slug: str, result: dict) -> str:
+    while True:
+        state = load_job(slug)
+        stage = state.get('current_stage')
+        result['recovery_state'] = state
+        result['topic'] = read_artifact(slug, 'topic.json')
+        result['selection'] = read_artifact(slug, 'selection.json', {})
+        evidence = read_artifact(slug, 'evidence.json', {})
+        result['selected_asins'] = [p.get('asin') for p in evidence.get('products', [])]
+        result['candidate_count'] = len(evidence.get('products', []))
+        if stage in {'WRITER_PENDING', 'QA_FAILED'}:
+            _writer_stage(slug, result)
+            continue
+        if stage in {'EYECATCH_PENDING', 'PUBLISH_PENDING'}:
+            return _eyecatch_and_publish(slug, result)
+        if stage == 'PUBLISHED':
+            return str(state.get('published_commit') or '')
+        raise GrowthRuntimeError(f'non-retryable recovery state for {slug}: {stage}')
+
+
+def _post_publish(adaptive: AdaptivePublishController, result: dict, slug: str, commit: str) -> None:
+    try:
+        post_publish_feedback, controller_after = adaptive.evaluate_and_record(
+            slug=slug, commit=commit, growth_run=result,
+        )
+    except Exception as evaluation_error:
+        post_publish_feedback, controller_after = adaptive.record_evaluation_failure(
+            slug=slug, commit=commit, growth_run=result, error=evaluation_error,
+        )
+        result['post_publish_feedback'] = post_publish_feedback
+        result['controller_after'] = controller_after
+        result['status'] = 'published_feedback_failed'
+        raise GrowthRuntimeError(
+            f'post-publish evaluation failed and was recorded as red feedback: {evaluation_error}'
+        ) from evaluation_error
+    result['post_publish_feedback'] = post_publish_feedback
+    result['controller_after'] = controller_after
+    try:
+        result['feedback_task_bridge'] = sync_feedback_to_task_event(
+            feedback=post_publish_feedback, controller_state=controller_after, config=adaptive.config,
+        )
+    except Exception as bridge_error:
+        bridge_feedback, bridge_state = adaptive.record_bridge_failure(
+            slug=slug, commit=commit, growth_run=result, error=bridge_error,
+        )
+        result['feedback_task_bridge_error'] = f'{type(bridge_error).__name__}: {bridge_error}'
+        result['post_publish_feedback_bridge_failure'] = bridge_feedback
+        result['controller_after'] = bridge_state
+        result['status'] = 'published_feedback_failed'
+        raise GrowthRuntimeError(f'feedback Task/Event bridge failed: {bridge_error}') from bridge_error
+    try:
+        purpose = run_purpose_relation_discovery()
+        result['purpose_relation_discovery'] = {
+            'generated_at': purpose['generated_at'], 'source_snapshot': purpose['source_snapshot'],
+            'global': purpose['global'], 'local_processing': purpose['local_processing'],
+        }
+    except Exception as purpose_error:
+        result['purpose_relation_discovery_error'] = f'{type(purpose_error).__name__}: {purpose_error}'
+
+
 def run(
     *, publish: bool, cache_only: bool = False, report_path: Path | None = REPORT,
     planning_candidates: list[dict] | None = None, scheduled: bool = False,
@@ -204,20 +507,15 @@ def run(
 ) -> dict:
     result = {
         'started_at': datetime.now(timezone.utc).isoformat(),
-        'route': [
-            'adaptive_publish_admission', 'continuous_planning', 'product_selection',
-            'product_evidence', 'writer_adapter', 'independent_review', 'machine_qa',
-            'renderer', 'publication_unit', 'post_publish_evaluation', 'frequency_control',
-        ],
+        'route': ['recovery_queue', 'continuous_planning', 'product_selection', 'writer', 'qa', 'eyecatch', 'publish'],
         'published': False,
     }
+    adaptive = controller or AdaptivePublishController(ROOT)
     try:
-        adaptive = controller or AdaptivePublishController(ROOT)
         controller_state = adaptive.current_state()
         result['controller_before'] = controller_state
         if publish and controller_state['publish_paused']:
             result['status'] = 'paused_by_controller'
-            result['controller_decision'] = {'allowed': False, 'reason': 'ceo_alert_pause'}
             return result
         if publish and scheduled:
             preclaimed = os.environ.get('SELLEMY_PRECLAIMED_ADMISSION_ID', '').strip()
@@ -226,163 +524,60 @@ def run(
             if not decision['allowed']:
                 result['status'] = 'skipped_by_controller'
                 return result
-        result['base_head'] = require_clean_current_main()
-        feedback = load_feedback()
-        topic, candidates, viability_probes = select_viable_topic(
-            planning_candidates, feedback, cache_only=cache_only
-        )
-        result['planning_provider'] = topic.pop('_planning_provider_metadata', None)
-        planning_runtime_meta = ((result['planning_provider'] or {}).get('codex_runtime') or {})
-        record_context_quality(
-            ROOT, PLANNING_SURFACE, True,
-            session_id=planning_runtime_meta.get('session_id'),
-        )
-        result['topic'] = topic
-        result['viability_probes'] = viability_probes
-        selected, selection = select_six(candidates, topic, feedback)
-        evidence = build_evidence(topic, selected, selection)
-        payload, findings, qa, rendered, feedback_to_writer = None, [], {}, '', None
-        writer_attempts = []
-        for attempt in range(1, 3):
-            payload, writer = invoke_writer(topic, evidence, previous_payload=payload, gate_feedback=feedback_to_writer)
-            rendered, findings, qa = evaluate_candidate(payload, evidence)
-            writer_attempts.append({'gate_attempt': attempt, **writer, 'gate_pass': not findings and qa['overall_pass']})
-            if not findings and qa['overall_pass']:
-                break
-            feedback_to_writer = _gate_feedback(findings, qa)
-        result.update({'candidate_count': len(candidates), 'selected_asins': [p['asin'] for p in selected], 'selection': selection, 'writer_attempts': writer_attempts, 'review_findings': findings, 'qa': qa})
-        writer_passed = not findings and bool(qa.get('overall_pass'))
-        writer_session = writer_attempts[-1].get('session_id') if writer_attempts else None
-        record_context_quality(
-            ROOT, 'bu-codex-sellemy-writer', writer_passed,
-            session_id=writer_session,
-            reason='' if writer_passed else 'mandatory Review/QA gates did not pass',
-        )
-        if not writer_passed:
-            raise GrowthRuntimeError('mandatory Review/QA gates did not pass; no files applied or published')
-        def apply_publication_unit() -> None:
-            _write_json(ROOT / 'data' / 'evidence' / f'{topic["slug"]}.json', evidence)
-            _write_json(ROOT / 'data' / 'payloads' / f'{topic["slug"]}.json', payload)
-            applied = publish_payload(topic['slug'], apply=True, allow_existing=False)
-            if not applied['applied']:
-                raise GrowthRuntimeError('publication stage refused candidate after repeated gates')
-            result['applied'] = applied
-            result['rendered_chars'] = len(rendered)
 
-        if publish:
-            result['publish_gate_attempts'] = []
-            for publish_attempt in range(1, 3):
-                try:
-                    with PublishGate(ROOT).acquire() as gate_evidence:
-                        gate_evidence = {**gate_evidence, 'attempt': publish_attempt}
-                        result['publish_gate_attempts'].append(gate_evidence)
-                        try:
-                            result['eyecatch'] = ensure_codex_eyecatch(
-                                slug=topic['slug'], title=topic['title'], category=topic['category'],
-                                evidence=evidence, payload=payload,
-                            )
-                            record_context_quality(
-                                ROOT, DESIGNER_SURFACE, True,
-                                session_id=result['eyecatch'].get('thread_id'),
-                            )
-                        except CodexEyecatchError as exc:
-                            designer_session = context_session_id(DESIGNER_SURFACE)
-                            record_context_quality(
-                                ROOT, DESIGNER_SURFACE, False,
-                                session_id=designer_session, reason=str(exc),
-                            )
-                            raise GrowthRuntimeError(f'Codex designer eyecatch failed: {exc}') from exc
-                        apply_publication_unit()
-                        try:
-                            result['commit'] = _publish(topic['slug'], topic['category'])
-                        except PublishRaceError as race:
-                            recovery = recover_unpublished_commit_after_remote_race(
-                                ROOT, race.candidate_commit
-                            )
-                            result.setdefault('publish_race_recoveries', []).append(recovery)
-                            if recovery.get('already_published'):
-                                result['commit'] = race.candidate_commit
-                                result['published'] = True
-                                break
-                            if publish_attempt >= 2:
-                                raise GrowthRuntimeError(
-                                    'remote publish race recurred after bounded recovery'
-                                ) from race
-                            continue
-                        result['published'] = True
-                        break
-                except PublishGateError as exc:
-                    raise GrowthRuntimeError(str(exc)) from exc
-            if not result['published']:
-                raise GrowthRuntimeError('publish gate exhausted without a published commit')
-            result['publish_gate'] = result['publish_gate_attempts'][-1]
-            result['status'] = 'published'
+        recovery = eligible_job()
+        unfinished = _unfinished_jobs()
+        if recovery:
+            slug = recovery['slug']
+            result['recovery_mode'] = True
+            result['recovery_slug'] = slug
+        elif unfinished:
+            result['recovery_mode'] = True
+            result['status'] = 'waiting_recovery_backoff'
+            result['recovery_waiting'] = [
+                {'slug': x['slug'], 'stage': x.get('current_stage'), 'next_retry_at': x.get('next_retry_at')}
+                for x in sorted(unfinished, key=lambda x: x.get('created_at') or '')[:20]
+            ]
+            return result
         else:
-            apply_publication_unit()
-            result['status'] = 'staged'
-        if publish:
-            try:
-                post_publish_feedback, controller_after = adaptive.evaluate_and_record(
-                    slug=topic['slug'], commit=result['commit'], growth_run=result,
-                )
-            except Exception as evaluation_error:
-                post_publish_feedback, controller_after = adaptive.record_evaluation_failure(
-                    slug=topic['slug'], commit=result['commit'], growth_run=result, error=evaluation_error,
-                )
-                result['post_publish_feedback'] = post_publish_feedback
-                result['controller_after'] = controller_after
-                try:
-                    result['feedback_task_bridge'] = sync_feedback_to_task_event(
-                        feedback=post_publish_feedback, controller_state=controller_after,
-                        config=adaptive.config,
-                    )
-                except Exception as bridge_error:
-                    bridge_feedback, bridge_state = adaptive.record_bridge_failure(
-                        slug=topic['slug'], commit=result['commit'], growth_run=result, error=bridge_error,
-                    )
-                    result['feedback_task_bridge_error'] = f'{type(bridge_error).__name__}: {bridge_error}'
-                    result['post_publish_feedback_bridge_failure'] = bridge_feedback
-                    result['controller_after'] = bridge_state
-                result['status'] = 'published_feedback_failed'
-                raise GrowthRuntimeError(
-                    f'post-publish evaluation failed and was recorded as red feedback: {evaluation_error}'
-                ) from evaluation_error
-            result['post_publish_feedback'] = post_publish_feedback
-            result['controller_after'] = controller_after
-            try:
-                result['feedback_task_bridge'] = sync_feedback_to_task_event(
-                    feedback=post_publish_feedback, controller_state=controller_after,
-                    config=adaptive.config,
-                )
-            except Exception as bridge_error:
-                bridge_feedback, bridge_state = adaptive.record_bridge_failure(
-                    slug=topic['slug'], commit=result['commit'], growth_run=result, error=bridge_error,
-                )
-                result['feedback_task_bridge_error'] = f'{type(bridge_error).__name__}: {bridge_error}'
-                result['post_publish_feedback_bridge_failure'] = bridge_feedback
-                result['controller_after'] = bridge_state
-                result['status'] = 'published_feedback_failed'
-                raise GrowthRuntimeError(
-                    f'feedback Task/Event bridge failed and publication was paused: {bridge_error}'
-                ) from bridge_error
-            # Purpose Relation Discovery is a read-only local projection. It must stay
-            # current with Growth, but must never block an otherwise valid article publish.
-            try:
-                purpose = run_purpose_relation_discovery()
-                result['purpose_relation_discovery'] = {
-                    'generated_at': purpose['generated_at'],
-                    'source_snapshot': purpose['source_snapshot'],
-                    'global': purpose['global'],
-                    'local_processing': purpose['local_processing'],
-                }
-            except Exception as purpose_error:
-                result['purpose_relation_discovery_error'] = f'{type(purpose_error).__name__}: {purpose_error}'
+            result['recovery_mode'] = False
+            result['base_head'] = require_clean_current_main()
+            feedback = load_feedback()
+            topic, candidates, viability_probes = select_viable_topic(
+                planning_candidates, feedback, cache_only=cache_only
+            )
+            planning_provider = topic.pop('_planning_provider_metadata', None)
+            result['planning_provider'] = planning_provider
+            result['topic'] = topic
+            result['viability_probes'] = viability_probes
+            selected, selection = select_six(candidates, topic, feedback)
+            evidence = build_evidence(topic, selected, selection)
+            job = create_job(
+                topic=topic, evidence=evidence, selection=selection,
+                planning_provider=planning_provider, viability_probes=viability_probes,
+            )
+            slug = job['slug']
+            planning_meta = ((planning_provider or {}).get('codex_runtime') or {})
+            if planning_meta:
+                record_execution(slug=slug, role='planning', event_type='turn', stage='planning', metadata=planning_meta)
+                record_execution(slug=slug, role='planning', event_type='success', stage='planning', metadata=planning_meta)
+                record_context_quality(ROOT, PLANNING_SURFACE, True, session_id=planning_meta.get('session_id'))
+
+        if not publish:
+            result['status'] = 'recovery_staged' if result['recovery_mode'] else 'staged'
+            return result
+
+        commit = _execute_job(slug, result)
+        result['commit'] = commit
+        result['published'] = True
+        result['status'] = 'published'
+        _post_publish(adaptive, result, slug, commit)
         return result
     except Exception as exc:
-        result['status'] = 'published_feedback_failed' if result['published'] else 'blocked_before_publish'
+        result['status'] = 'published_feedback_failed' if result.get('published') else 'blocked_before_publish'
         result['blocker'] = f'{type(exc).__name__}: {exc}'
         decision = result.get('controller_decision') or {}
-        if publish and scheduled and not result['published'] and decision.get('allowed'):
+        if publish and scheduled and not result.get('published') and decision.get('allowed'):
             try:
                 result['recovery_schedule'] = adaptive.reschedule_after_failure(failed_slot=decision['slot'])
             except Exception as recovery_error:
@@ -392,7 +587,6 @@ def run(
         result['finished_at'] = datetime.now(timezone.utc).isoformat()
         if report_path is not None:
             _write_json(report_path, result)
-
 
 def main() -> None:
     parser = argparse.ArgumentParser(description='Fail-closed continuous Sellemy operating runtime.')
