@@ -1,0 +1,129 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/beard-length-trimmers.html",
+  "category": "beauty",
+  "comparison_axes": [
+    {
+      "id": "length_settings",
+      "keywords": [
+        "最短長",
+        "最長長",
+        "調節刻み",
+        "コーム"
+      ],
+      "label": "残せる長さと調節刻み"
+    },
+    {
+      "id": "detail_trimming",
+      "keywords": [
+        "刃幅",
+        "細部用ヘッド",
+        "アタッチメント",
+        "握り方"
+      ],
+      "label": "輪郭や細部の整え方"
+    },
+    {
+      "id": "maintenance_power",
+      "keywords": [
+        "水洗い可能部位",
+        "注油",
+        "充電時間",
+        "使用可能時間"
+      ],
+      "label": "洗浄方法と電源"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/beard-length-trimmers/beard-length-trimmers.png",
+  "products": [
+    {
+      "amazon_title": "Douyear ヒゲトリマー リミットコーム RFC-1809 RFC-1819 交換用リミットコーム 2個セット",
+      "asin": "B0GD69KW3R",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/618ihu5Y-vL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "length_settings"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GD69KW3R",
+      "ref": "p1",
+      "search_key": "Douyear ヒゲトリマー リミットコーム RFC-1809",
+      "selection_score": 0.505
+    },
+    {
+      "amazon_title": "URBANER ヒゲトリマー メンズ 充電式 2cm細幅刃",
+      "asin": "B0G492LXS9",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61ZMi+43K-L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0G492LXS9",
+      "ref": "p2",
+      "search_key": "URBANER ヒゲトリマー メンズ 充電式 2cm細幅刃",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "テスコム バリカン ヘアカッター 3～52mm 刈り高さ調整 コードレス 充電・交流式 IPX7 水洗い 海外使用 1.8m シルバー TT590B-S",
+      "asin": "B0F9JQ89G3",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71iwrQOhS6L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0F9JQ89G3",
+      "ref": "p3",
+      "search_key": "テスコム バリカン ヘアカッター 3～52mm 刈り高さ調整 コ",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "貝印 KAI 眉毛 トリマー マルチ ヒゲ もみあげ 電動 フェイス KQ1841",
+      "asin": "B0CTQ5MKX7",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51Y0j+6o6IL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0CTQ5MKX7",
+      "ref": "p4",
+      "search_key": "貝印 KAI 眉毛 トリマー マルチ ヒゲ もみあげ 電動 フェ",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "メンズ電気シェーバー ボディシェーバー バリカン 鼻毛カッター ヒゲトリマー 髭剃り 1台3役 多機能セット 腋毛/体毛/眉毛/すね毛/髪/フェイス用 Type-C USB充電式 LEDインジケータ 乾湿両用 日本語取扱説明書 2023革新モデル",
+      "asin": "B0C7V1XXKF",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71YGfV09fGL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0C7V1XXKF",
+      "ref": "p5",
+      "search_key": "メンズ電気シェーバー ボディシェーバー バリカン 鼻毛カッター",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "ブラウン ヒゲトリマー シリーズ7 シェーバー BT7420 男性用 電動ヒゲトリマー ブラウン史上最高のPROブレード搭載 40段階の長さ調整 プロ使用のスタイリング ツーブロック対応 充電スタンド ポーチ ヒゲ型テンプレート 充電式 一度の充電で100分稼働 コードレス 防水設計",
+      "asin": "B0BY174K67",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/619kBIfv5vL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0BY174K67",
+      "ref": "p6",
+      "search_key": "ブラウン ヒゲトリマー シリーズ7 シェーバー BT7420 男",
+      "selection_score": 0.325
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "length_settings"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "beard-length-trimmers"
+}
