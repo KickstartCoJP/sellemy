@@ -49,6 +49,38 @@
       "meta_description": "掃除、洗濯、片付け、家庭内メンテナンスなど、毎日の家事をラクにする比較記事をまとめたSellemyの特集です。",
       "hero_image": "",
       "editorial_priority": 8
+    },
+    {
+      "feature_id": "PH-WARM-HOME",
+      "slug": "warm-home",
+      "title": "おうちをあたたかくする",
+      "purpose_statement": "寒い季節の室内を、無理なくあたたかく快適に整える。",
+      "scope_include": "暖房、こたつ、電気毛布、床暖房、断熱、室内防寒など、自宅の寒さを直接やわらげる商品記事。",
+      "scope_exclude": "外出用防寒だけの商品、車内専用品、睡眠目的だけで室内暖房との関係が弱い商品。",
+      "intro": "寒い季節のおうち時間は、部屋全体を暖めるものから、足元や寝床を局所的に暖めるものまで選択肢があります。この特集では、室内の寒さをやわらげ、過ごしやすくするための比較記事を、中心となる暖房・断熱アイテムと周辺アイテムに分けてまとめます。",
+      "lifecycle_status": "published",
+      "navigation_visibility": "listed",
+      "seo_state": "index",
+      "seo_title": "おうちをあたたかくする｜暖房・断熱・室内防寒の特集 - Sellemy",
+      "meta_description": "暖房、こたつ、電気毛布、足元暖房、断熱用品など、寒い季節のおうちをあたたかく快適にする比較記事をまとめたSellemyの特集です。",
+      "hero_image": "",
+      "editorial_priority": 7
+    },
+    {
+      "feature_id": "PH-HOME-RELAX",
+      "slug": "relax-at-home",
+      "title": "おうちでリラックスする",
+      "purpose_statement": "家で気分を切り替え、休息や趣味の時間を心地よく過ごせるように整える。",
+      "scope_include": "香り、入浴、マッサージ、読書、ホームシアターなど、自宅で休息や余暇を楽しむための商品記事。",
+      "scope_exclude": "睡眠そのものを主目的にした寝具、治療・医療効果を目的とする商品、外出先専用の娯楽用品。",
+      "intro": "家でゆっくり過ごしたいときは、香りや入浴、マッサージ、読書や映像など、気分を切り替える方法がいくつもあります。この特集では、おうちで休息や趣味の時間を楽しむための比較記事を、中心となるアイテムと周辺アイテムに分けてまとめます。",
+      "lifecycle_status": "published",
+      "navigation_visibility": "listed",
+      "seo_state": "index",
+      "seo_title": "おうちでリラックスする｜香り・入浴・マッサージ・余暇の特集 - Sellemy",
+      "meta_description": "アロマ、入浴剤、マッサージ用品、電子書籍リーダー、ホームプロジェクターなど、おうちでリラックスするための比較記事をまとめたSellemyの特集です。",
+      "hero_image": "",
+      "editorial_priority": 6
     }
   ]
 }
