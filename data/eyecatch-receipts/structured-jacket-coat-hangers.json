@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-10-07T13:48:31.935351+00:00",
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "generation_route_attestation": "codex_rollout_extension",
+  "height": 1024,
+  "image_generation_internal_usage_exposed": false,
+  "image_sha256": "51a2e0a67f69eda6aa34be3f03ad1aa344fdb9927d5ed9c4340623999c88887c",
+  "member_binding_revision": 8,
+  "model": "gpt-6-astra",
+  "model_reported_generation_route": "built-in_image_gen",
+  "role_id": "bu-codex-sellemy-designer",
+  "summary": "自宅のクローゼットで厚みのある木製ハンガーにジャケットを掛ける単一シーン。肩先の形状と掛け方を表現。ファイルの存在、PNG形式、1536×1024を検証済み。",
+  "thread_id": "01a111a0-344e-74b1-99da-7cee59ca6cf0",
+  "token_usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 165376,
+    "input_tokens": 171735,
+    "output_tokens": 154,
+    "reasoning_output_tokens": 0,
+    "total_tokens": 171889,
+    "uncached_input_tokens": 6359
+  },
+  "token_usage_source": "codex_rollout.turn_token_usage",
+  "visual_family": "Close-up / Texture",
+  "width": 1536
+}

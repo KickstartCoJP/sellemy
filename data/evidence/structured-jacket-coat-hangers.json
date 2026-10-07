@@ -1,0 +1,127 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/structured-jacket-coat-hangers.html",
+  "category": "dailygoods",
+  "comparison_axes": [
+    {
+      "id": "shoulder_dimensions",
+      "keywords": [
+        "ハンガー幅",
+        "肩先厚",
+        "サイズ展開"
+      ],
+      "label": "服に合わせる肩幅と厚み"
+    },
+    {
+      "id": "support_structure",
+      "keywords": [
+        "湾曲",
+        "肩の傾斜",
+        "襟元形状"
+      ],
+      "label": "肩から襟を支える形状"
+    },
+    {
+      "id": "hanging_features",
+      "keywords": [
+        "バー",
+        "クリップ",
+        "フック",
+        "本体厚み"
+      ],
+      "label": "掛ける衣類と収納条件"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/structured-jacket-coat-hangers/structured-jacket-coat-hangers.png",
+  "products": [
+    {
+      "amazon_title": "木製ハンガー スーツ 6本組 肩幅広め 型崩れ防止 高級天然木 スーツハンガー 360度回転フック 滑り止めバー付き メンズ レディース ジャケット コート用(ナチュラルな木の色)",
+      "asin": "B0H8D8KWG7",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71j73X2gZ5L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "hanging_features"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H8D8KWG7",
+      "ref": "p1",
+      "search_key": "木製ハンガー スーツ 6本組 肩幅広め 型崩れ防止 高級天然木",
+      "selection_score": 0.48
+    },
+    {
+      "amazon_title": "高級木製ハンガー スーツ・コート用 肩厚立体構造 型崩れ防止 360度回転 頑丈 洋服ハンガー 多機能 収納 6本組 ブラウン",
+      "asin": "B0H97XB5B3",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61XI6sJlbLL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H97XB5B3",
+      "ref": "p2",
+      "search_key": "高級木製ハンガー スーツ・コート用 肩厚立体構造 型崩れ防止 3",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "サワフジ コートハンガー コート革ジャン専用ハンガー ブラック 肩厚68mm【2個セット】日本製 NNC-44",
+      "asin": "B0GYRHF71H",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/513B+kgWzsL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GYRHF71H",
+      "ref": "p3",
+      "search_key": "サワフジ コートハンガー コート革ジャン専用ハンガー ブラック",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "クモリ(Kumori) スーツハンガー 天然木×肩幅ワイド かたくずれ防止 ハンガー 木製 滑り止め 360回転 コートハンガー ナチュラル 6本組",
+      "asin": "B0GY51WBN2",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/617jwlTeu3L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GY51WBN2",
+      "ref": "p4",
+      "search_key": "クモリ(Kumori) スーツハンガー 天然木×肩幅ワイド かた",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "クモリ(Kumori) スーツハンガー 天然木×肩幅ワイド かたくずれ防止 ハンガー 木製 滑り止め 360回転 コートハンガー ナチュラル 4本組",
+      "asin": "B0GY4QC642",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/511mW8YjT2L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GY4QC642",
+      "ref": "p5",
+      "search_key": "クモリ(Kumori) スーツハンガー 天然木×肩幅ワイド かた",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "クモリ(Kumori) スーツハンガー 天然木×肩幅ワイド かたくずれ防止 ハンガー 木製 滑り止め 360回転 コートハンガー ブラウン 4本組",
+      "asin": "B0GY4JXN12",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61tuxydoeyL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GY4JXN12",
+      "ref": "p6",
+      "search_key": "クモリ(Kumori) スーツハンガー 天然木×肩幅ワイド かた",
+      "selection_score": 0.3
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "hanging_features"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "structured-jacket-coat-hangers"
+}
