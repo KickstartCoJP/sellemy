@@ -1,0 +1,25 @@
+{
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "role_id": "bu-codex-sellemy-designer",
+  "thread_id": "01a111a0-344e-74b1-99da-7cee59ca6cf0",
+  "member_binding_revision": 6,
+  "model": "gpt-6-astra",
+  "visual_family": "Lifestyle Scene",
+  "summary": "旅行先のホテル受付で、携帯翻訳機を手に地図を確認する単一シーン。ファイルの存在、PNG形式、1536×1024を検証済み。",
+  "image_sha256": "1de511fe72f6f54ac89c8946db30d4828929b6dde24356814cdde95ffd474b05",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-10-07T08:56:00.693079+00:00",
+  "token_usage_source": "codex_rollout.turn_token_usage",
+  "image_generation_internal_usage_exposed": false,
+  "token_usage": {
+    "input_tokens": 15677381,
+    "cached_input_tokens": 15079040,
+    "cache_write_input_tokens": 0,
+    "uncached_input_tokens": 598341,
+    "output_tokens": 27877,
+    "reasoning_output_tokens": 54,
+    "total_tokens": 15705258
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "slug": "handheld-translation-devices",
+  "category": "gadget",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/handheld-translation-devices.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/handheld-translation-devices/handheld-translation-devices.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "language_modes",
+      "label": "使いたい言語と翻訳方法",
+      "keywords": [
+        "音声入力",
+        "音声出力",
+        "文字表示",
+        "カメラ翻訳"
+      ]
+    },
+    {
+      "id": "connectivity",
+      "label": "渡航先の通信条件",
+      "keywords": [
+        "対応国地域",
+        "内蔵SIM",
+        "Wi-Fi",
+        "オフライン対応範囲"
+      ]
+    },
+    {
+      "id": "ongoing_use",
+      "label": "継続費用と持ち歩きやすさ",
+      "keywords": [
+        "通信利用期間",
+        "更新料金",
+        "サービス提供状況",
+        "本体重量",
+        "電池持続時間"
+      ]
+    }
+  ],
+  "selection": {
+    "comparison_axes_covered": [
+      "language_modes"
+    ],
+    "brand_count": 0,
+    "price_used_as_constraint_only": true,
+    "content_duplicates_removed": []
+  },
+  "products": [
+    {
+      "ref": "p1",
+      "product_id": "AMZ-B0HF83LDBQ",
+      "asin": "B0HF83LDBQ",
+      "amazon_title": "iFLYTEK Smart Translator AI翻訳機 音声翻訳機 グローバル通信2年付 60言語対応 0.3秒翻訳 オンライン翻訳・リアルタイム翻訳・双方向音声翻訳・カメラ翻訳・オフライン翻訳対応 携帯翻訳機 海外旅行・ビジネスに",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/61AAVQWCZAL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.505,
+      "matched_comparison_axes": [
+        "language_modes"
+      ],
+      "search_key": "iFLYTEK Smart Translator AI翻訳機 音"
+    },
+    {
+      "ref": "p2",
+      "product_id": "AMZ-B0HK82N7XM",
+      "asin": "B0HK82N7XM",
+      "amazon_title": "AI翻訳機【2026年新モデル・165言語対応】 音声翻訳機 双方向リアルタイム翻訳 低遅延 会議・通話・面接・対面通訳 海外旅行向け 多言語翻訳デバイス",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/513AIDUrY5L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "AI翻訳機 音声翻訳機 双方向リアルタイム翻訳 低遅延 会議・通"
+    },
+    {
+      "ref": "p3",
+      "product_id": "AMZ-B0HJQLYDGQ",
+      "asin": "B0HJQLYDGQ",
+      "amazon_title": "【2026新登場】AI翻訳機 音声翻訳機 AI同時通訳機能 オンライン/リアルタイム/録音翻訳 139言語（日本語 中国語 英語）",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/31LL-247+0L._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "AI翻訳機 音声翻訳機 AI同時通訳機能 オンライン/リアルタイ"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0HJQLTJST",
+      "asin": "B0HJQLTJST",
+      "amazon_title": "[pronala]AI翻訳機「海外旅行の必需品」AI同時通訳機能翻訳機 139言語対応 15種類の音色 高精度 オンライン会議 対面通訳 海外旅行向け",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/31gLC65CBcL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "AI翻訳機「海外旅行の必需品」AI同時通訳機能翻訳機 139言語"
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0HJQDPFXP",
+      "asin": "B0HJQDPFXP",
+      "amazon_title": "AI翻訳機 音声翻訳機 AI同時通訳機【2026新登場】139言語対応（日本語 中国語 英語）オンライン/リアルタイム/録音翻訳",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/51tTCNux2oL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "AI翻訳機 音声翻訳機 AI同時通訳機 139言語対応（日本語"
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B0H8YNT7NR",
+      "asin": "B0H8YNT7NR",
+      "amazon_title": "Global Recycled Standard",
+      "brand": "",
+      "image_url": "https://m.media-amazon.com/images/I/71F33WpR-VL._AC_UL320_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "Global Recycled Standard"
+    }
+  ]
+}
