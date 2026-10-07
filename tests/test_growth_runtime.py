@@ -107,7 +107,7 @@ class ScheduledRouteTests(unittest.TestCase):
         source = (ROOT / 'pipeline' / 'growth_runtime.py').read_text(encoding='utf-8')
         self.assertIn('with PublishGate(ROOT).acquire()', source)
         gate = source.index('with PublishGate(ROOT).acquire()')
-        designer = source.index('receipt = ensure_codex_eyecatch')
+        designer = source.index('receipt = ensure_routed_eyecatch')
         publish = source.index('commit = _publish')
         self.assertLess(gate, designer)
         self.assertLess(designer, publish)
@@ -199,7 +199,7 @@ class RuntimeFailClosedTests(unittest.TestCase):
         controller.current_state.return_value = {'publish_paused': False, 'target_per_day': 2}
         return controller
 
-    @patch.object(growth_runtime, 'ensure_codex_eyecatch', return_value={'generation_method': 'codex_cli_imagegen'})
+    @patch.object(growth_runtime, 'ensure_routed_eyecatch', return_value={'generation_method': 'codex_cli_imagegen'})
     @patch.object(growth_runtime, 'require_clean_current_main', return_value='abc')
     @patch.object(growth_runtime, 'select_viable_topic', return_value=({'slug': 'x', 'category': 'gadget', 'query': 'x', 'title': 'x', 'comparison_axes': [{'id': 'use', 'label': '用途'}]}, [{'asin': f'B0TEST{i:04d}'} for i in range(6)], []))
     @patch.object(growth_runtime, 'select_six', return_value=([{'asin': f'B0TEST{i:04d}'} for i in range(6)], {}))
@@ -228,7 +228,7 @@ class RuntimeFailClosedTests(unittest.TestCase):
         topic = {'slug': 'test-widgets-6-picks', 'category': 'gadget', 'query': 'x', 'title': 'x', 'comparison_axes': [{'id': 'use', 'label': '用途'}]}
         products = [{'asin': f'B0TEST{i:04d}'} for i in range(6)]
         with (
-            patch.object(growth_runtime, 'ensure_codex_eyecatch', return_value={'generation_method': 'codex_cli_imagegen'}),
+            patch.object(growth_runtime, 'ensure_routed_eyecatch', return_value={'generation_method': 'codex_cli_imagegen'}),
             patch.object(growth_runtime, 'save_eyecatch', side_effect=lambda slug, **kw: growth_recovery.set_stage(slug, 'PUBLISH_PENDING')),
             patch.object(growth_runtime, 'materialize_for_publish'),
             patch.object(growth_runtime, 'require_clean_current_main', return_value='abc'),
@@ -277,7 +277,7 @@ class RuntimeFailClosedTests(unittest.TestCase):
         controller.evaluate_and_record.return_value = ({'event_id': 'feedback-1'}, {'target_per_day': 2})
         gate = nullcontext({'head_after': 'base', 'origin_main': 'base', 'clean': True})
         with (
-            patch.object(growth_runtime, 'ensure_codex_eyecatch', return_value={'generation_method': 'codex_cli_imagegen'}),
+            patch.object(growth_runtime, 'ensure_routed_eyecatch', return_value={'generation_method': 'codex_cli_imagegen'}),
             patch.object(growth_runtime, 'save_eyecatch', side_effect=lambda slug, **kw: growth_recovery.set_stage(slug, 'PUBLISH_PENDING')),
             patch.object(growth_runtime, 'materialize_for_publish'),
             patch.object(growth_runtime, 'require_clean_current_main', return_value='base'),
@@ -306,7 +306,7 @@ class RuntimeFailClosedTests(unittest.TestCase):
         controller.current_state.return_value = {'publish_paused': False, 'target_per_day': 2}
         controller.evaluate_and_record.return_value = ({'event_id': 'feedback-1'}, {'target_per_day': 2})
         with (
-            patch.object(growth_runtime, 'ensure_codex_eyecatch', return_value={'generation_method': 'codex_cli_imagegen'}),
+            patch.object(growth_runtime, 'ensure_routed_eyecatch', return_value={'generation_method': 'codex_cli_imagegen'}),
             patch.object(growth_runtime, 'save_eyecatch', side_effect=lambda slug, **kw: growth_recovery.set_stage(slug, 'PUBLISH_PENDING')),
             patch.object(growth_runtime, 'materialize_for_publish'),
             patch.object(growth_runtime, 'require_clean_current_main', return_value='abc'),
@@ -381,7 +381,7 @@ class DesignerEyecatchRouteTests(RuntimeFailClosedTests):
             patch.object(growth_runtime, 'build_evidence', return_value=valid_evidence()),
             patch.object(growth_runtime, 'invoke_writer', return_value=(valid_payload(), {'runtime': 'test'})),
             patch.object(growth_runtime, 'evaluate_candidate', return_value=('html', [], {'overall_pass': True})),
-            patch.object(growth_runtime, 'ensure_codex_eyecatch', return_value={'generation_method': 'codex_cli_imagegen'}) as designer,
+            patch.object(growth_runtime, 'ensure_routed_eyecatch', return_value={'generation_method': 'codex_cli_imagegen'}) as designer,
             patch.object(growth_runtime, 'save_eyecatch', side_effect=lambda slug, **kw: growth_recovery.set_stage(slug, 'PUBLISH_PENDING')),
             patch.object(growth_runtime, 'materialize_for_publish'),
             patch.object(growth_runtime, '_write_json'),
@@ -405,12 +405,12 @@ class DesignerEyecatchRouteTests(RuntimeFailClosedTests):
             patch.object(growth_runtime, 'build_evidence', return_value=valid_evidence()),
             patch.object(growth_runtime, 'invoke_writer', return_value=(valid_payload(), {'runtime': 'test'})),
             patch.object(growth_runtime, 'evaluate_candidate', return_value=('html', [], {'overall_pass': True})),
-            patch.object(growth_runtime, 'ensure_codex_eyecatch', side_effect=growth_runtime.CodexEyecatchError('designer unavailable')),
+            patch.object(growth_runtime, 'ensure_routed_eyecatch', side_effect=growth_runtime.EyecatchRoutingError('designer unavailable')),
             patch.object(growth_runtime, 'context_session_id', return_value='test-designer-thread'),
             patch.object(growth_runtime, 'record_context_quality'),
             patch.object(growth_runtime.PublishGate, 'acquire', return_value=nullcontext({'head_after': 'abc', 'origin_main': 'abc', 'clean': True})),
             patch.object(growth_runtime, 'publish_payload') as publish_stage,
         ):
-            with self.assertRaisesRegex(growth_runtime.GrowthRuntimeError, 'Codex designer eyecatch failed'):
+            with self.assertRaisesRegex(growth_runtime.GrowthRuntimeError, 'Eyecatch generation failed'):
                 growth_runtime.run(publish=True, report_path=None, controller=controller)
         publish_stage.assert_not_called()

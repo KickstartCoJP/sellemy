@@ -1,0 +1,10 @@
+{
+  "mode": "weighted_random",
+  "codex_share": 80,
+  "api_share": 20,
+  "codex_reserve_percent": 20,
+  "api_fallback_on_codex_failure": true,
+  "codex_fallback_on_api_failure": true,
+  "api_model": "gpt-image-2.5-sunburst",
+  "api_quality": "high"
+}

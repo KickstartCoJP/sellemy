@@ -19,7 +19,7 @@ from affiliate_config import AMAZON_TRACKING_ID
 from adaptive_publish import AdaptivePublishController
 from discovery_adapters import AutositeDiscoveryAdapter
 from feedback_task_bridge import sync_feedback_to_task_event
-from codex_eyecatch import CodexEyecatchError, ensure_codex_eyecatch
+from eyecatch_router import EyecatchRoutingError, ensure_routed_eyecatch
 from codex_provider import DESIGNER_SURFACE, PLANNING_SURFACE, context_session_id, record_context_quality
 from payload_schema import validate_evidence, validate_payload, match_refs
 from planning_runtime import PlanningError, discover_candidates, rank_candidates
@@ -391,7 +391,7 @@ def _eyecatch_and_publish(slug: str, result: dict) -> str:
                 if state.get('current_stage') == 'EYECATCH_PENDING':
                     started = time.monotonic()
                     try:
-                        receipt = ensure_codex_eyecatch(
+                        receipt = ensure_routed_eyecatch(
                             slug=slug, title=topic['title'], category=category,
                             evidence=evidence, payload=payload,
                         )
@@ -399,10 +399,18 @@ def _eyecatch_and_publish(slug: str, result: dict) -> str:
                             slug, receipt=receipt,
                             image_path=ROOT / 'img' / slug / f'{slug}.png',
                         )
-                        record_context_quality(ROOT, DESIGNER_SURFACE, True, session_id=receipt.get('thread_id'))
+                        if receipt.get('thread_id'):
+                            record_context_quality(ROOT, DESIGNER_SURFACE, True, session_id=receipt.get('thread_id'))
                         record_execution(
                             slug=slug, role='designer', event_type='turn', stage='eyecatch',
-                            metadata={**(receipt.get('token_usage') or {}), 'session_id': receipt.get('thread_id')},
+                            metadata={
+                                **(receipt.get('token_usage') or {}),
+                                'session_id': receipt.get('thread_id'),
+                                'generation_method': receipt.get('generation_method'),
+                                'provider': receipt.get('provider'),
+                                'model': receipt.get('model'),
+                                'routing': receipt.get('routing'),
+                            },
                             duration_ms=int((time.monotonic() - started) * 1000),
                         )
                         record_execution(slug=slug, role='designer', event_type='success', stage='eyecatch')
@@ -424,7 +432,7 @@ def _eyecatch_and_publish(slug: str, result: dict) -> str:
                             duration_ms=int((time.monotonic() - started) * 1000),
                         )
                         raise GrowthRuntimeError(
-                            f'Codex designer eyecatch failed for {slug}; retained for retry: {exc}'
+                            f'Eyecatch generation failed for {slug}; retained for retry: {exc}'
                         ) from exc
 
                 materialize_for_publish(slug, ROOT)

@@ -48,15 +48,18 @@ class EyecatchAdapterTests(unittest.TestCase):
             self.assertEqual((first['width'], first['height']), (1536, 1024))
             self.assertEqual(out.read_bytes(), raw)
 
-    def test_openai_api_route_is_not_authorized(self):
+    def test_openai_api_route_is_authorized_and_receipted(self):
         payload, evidence = valid_payload(), valid_evidence()
+        raw = fake_png()
         with tempfile.TemporaryDirectory() as tmp, patch.dict(os.environ, {'EYECATCH_TEST_TOKEN': 'secret'}):
             out = Path(tmp) / 'hero.png'; receipt = Path(tmp) / 'receipt.json'
             generator = EyecatchGenerator(endpoint='https://api.openai.com/v1/images/generations', token_env='EYECATCH_TEST_TOKEN', provider='openai', model='gpt-image-test')
-            with patch('eyecatch_adapter.urllib.request.urlopen') as call:
-                with self.assertRaisesRegex(EyecatchGenerationError, 'OpenAI API eyecatch generation is not authorized'):
-                    generator.generate(payload=payload, evidence=evidence, output=out, receipt_path=receipt)
-            call.assert_not_called()
+            response = {'data': [{'b64_json': base64.b64encode(raw).decode()}]}
+            with patch('eyecatch_adapter.urllib.request.urlopen', return_value=_Response(response)) as call:
+                result = generator.generate(payload=payload, evidence=evidence, output=out, receipt_path=receipt)
+            self.assertEqual(call.call_count, 1)
+            self.assertEqual(result['generation_method'], 'openai_images_api')
+            self.assertEqual(result['generation_route'], 'openai_images_api')
 
     def test_missing_endpoint_or_token_fails_closed(self):
         payload, evidence = valid_payload(), valid_evidence()

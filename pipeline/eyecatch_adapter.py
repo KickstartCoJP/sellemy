@@ -110,9 +110,6 @@ class EyecatchGenerator:
                     return receipt
                 raise EyecatchGenerationError('existing eyecatch receipt/file mismatch')
 
-        if openai_route:
-            raise EyecatchGenerationError('OpenAI API eyecatch generation is not authorized')
-
         req = urllib.request.Request(
             self.endpoint,
             data=request_body,
@@ -146,7 +143,8 @@ class EyecatchGenerator:
 
         _atomic_write(output, raw)
         receipt = {
-            'generation_method': 'generative_ai',
+            'generation_method': 'openai_images_api' if openai_route else 'generative_ai',
+            'generation_route': 'openai_images_api' if openai_route else self.provider,
             'provider': self.provider,
             'model': self.model,
             'quality': self.quality,
@@ -156,6 +154,7 @@ class EyecatchGenerator:
             'width': width,
             'height': height,
             'generated_at': datetime.now(timezone.utc).isoformat(),
+            'api_usage': response_payload.get('usage') if openai_route else None,
         }
         _atomic_write(receipt_path, (json.dumps(receipt, ensure_ascii=False, indent=2) + '\n').encode())
         return receipt

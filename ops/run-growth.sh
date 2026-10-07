@@ -11,9 +11,16 @@ if ! mkdir "$LOCK" 2>/dev/null; then echo "$(date -Iseconds) already running"; e
 trap 'rmdir "$LOCK"' EXIT
 cd "$ROOT"
 if [[ -f "$SECRETS" ]]; then set -a; source "$SECRETS"; set +a; fi
-# Eyecatch generation must not use OpenAI API. Keep generation fail-closed
-# until an explicitly authorized production image route is configured.
-unset SELLEMY_EYECATCH_ENDPOINT SELLEMY_EYECATCH_TOKEN_ENV SELLEMY_EYECATCH_PROVIDER SELLEMY_EYECATCH_MODEL
+SELLEMY_SECRETS="$HOME/Library/Application Support/Sellemy/secrets/openai.env"
+if [[ -f "$SELLEMY_SECRETS" ]]; then set -a; source "$SELLEMY_SECRETS"; set +a; fi
+if [[ "${SELLEMY_OPENAI_API_KEY:-}" != sk-* && "${OPENAI_API_KEY:-}" == sk-* ]]; then
+  export SELLEMY_OPENAI_API_KEY="$OPENAI_API_KEY"
+  echo "$(date -Iseconds) Sellemy dedicated OpenAI key unavailable; using general key for continuity" >&2
+fi
+export SELLEMY_EYECATCH_ENDPOINT=https://api.openai.com/v1/images/generations
+export SELLEMY_EYECATCH_TOKEN_ENV=SELLEMY_OPENAI_API_KEY
+export SELLEMY_EYECATCH_PROVIDER=openai
+export SELLEMY_EYECATCH_MODEL=gpt-image-2.5-sunburst
 export SELLEMY_EYECATCH_QUALITY=high
 export SELLEMY_EYECATCH_TIMEOUT_SECONDS=300
 # Planning / Writer: Codex is the primary local execution surface. Claude is the
