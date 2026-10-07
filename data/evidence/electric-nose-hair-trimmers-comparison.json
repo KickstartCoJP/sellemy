@@ -1,0 +1,136 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/electric-nose-hair-trimmers-comparison.html",
+  "category": "beauty",
+  "comparison_axes": [
+    {
+      "id": "blade_structure",
+      "keywords": [
+        "回転式",
+        "往復式",
+        "対応部位"
+      ],
+      "label": "刃の構造と対応部位"
+    },
+    {
+      "id": "cleaning",
+      "keywords": [
+        "刃部水洗い",
+        "本体水洗い",
+        "毛くず処理"
+      ],
+      "label": "水洗いできる範囲"
+    },
+    {
+      "id": "power",
+      "keywords": [
+        "乾電池",
+        "充電式",
+        "本体寸法"
+      ],
+      "label": "電源と携帯性"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/electric-nose-hair-trimmers-comparison/electric-nose-hair-trimmers-comparison.png",
+  "products": [
+    {
+      "amazon_title": "【2026年新登場&LCD画面】Amazon.co.jp限定鼻毛カッター メンズ 替刃付き はなげカッター USB充電式 LCD画面 1台多役 エチケットカッター 電動 鼻毛切り 耳毛カッター はな毛カッター 男性 電動シェーバー 低騒音 水洗い可能 小型 持ち運び便利 男女兼用 日本語説明書（マットブラック）",
+      "asin": "B0HB39RPR5",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71caULQkQPL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "power"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HB39RPR5",
+      "ref": "p1",
+      "search_key": "Amazon.co.jp限定鼻毛カッター メンズ 替刃付き はな",
+      "selection_score": 0.505
+    },
+    {
+      "amazon_title": "【日本向け・品質に自信あり２年保証】MANSPOT 鼻毛カッター 電動 【360°双方向カット&3重安全設計】はなげカッター エチケットカッター はな毛カッター 鼻毛カッター 充電式 鼻毛切り 耳毛剃り防水 清潔 衛生 洗える 小型 軽量 持ち運び 外出前 旅行用 贈り物",
+      "asin": "B0GY3VDRWF",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61t0QWL+4UL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "power"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GY3VDRWF",
+      "ref": "p2",
+      "search_key": "MANSPOT 鼻毛カッター 電動 はなげカッター エチケットカ",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "鼻毛カッター メンズ はなげカッター 男女兼用 眉毛シェーバー 眉毛カッター 耳毛カッター 髭カッター エチケットカッター 電動シェーバー スマートデジタル表示 Type-C 充電式 水洗い可 軽量コンパクト 持ち運び便利 掃除用ブラシ付き 鼻毛 ハサミ 代替可能 鼻毛・眉毛・耳毛・髭 一機四用 2 つのモード ヘルスケアツール (ブラック01)",
+      "asin": "B0GVYGSDQJ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/617nKsn6CJL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "power"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GVYGSDQJ",
+      "ref": "p3",
+      "search_key": "鼻毛カッター メンズ はなげカッター 男女兼用 眉毛シェーバー",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "【2026新登場&LCD画面】鼻毛カッター メンズ 替刃付き USB充電式 はな毛カッター はなげカッター バッテリー残量の表示 1台多役 エチケットカッター 電動 鼻毛切り 耳毛カッター 男性 電動シェーバー 低騒音 水洗い可能 小型 持ち運び便利 男女兼用 日本語説明書 (ブラック)",
+      "asin": "B0GBWZBMS5",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71g5tdGRjLL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "power"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GBWZBMS5",
+      "ref": "p4",
+      "search_key": "鼻毛カッター メンズ 替刃付き USB充電式 はな毛カッター は",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "【2026新登場&LCD画面】鼻毛カッター メンズ 替刃付き USB充電式 LCD画面 1台多役 エチケットカッター 電動 鼻毛切り 耳毛カッター はな毛カッター 男性 電動シェーバー 低騒音 水洗い可能 小型 持ち運び便利 男女兼用 日本語説明書 (ブラック)",
+      "asin": "B0G6XZCK9J",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71LivMXSCqL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "power"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0G6XZCK9J",
+      "ref": "p5",
+      "search_key": "鼻毛カッター メンズ 替刃付き USB充電式 LCD画面 1台多",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "【Amazon.co.jp限定】DYKL 鼻毛カッター メンズ レディース 電動 エチケットカッター 3in1 鼻毛・眉毛・耳毛対応 眉毛シェーバー 耳毛カッター Type-C充電式 LCD電量表示 低騒音 IPX7防水 水洗い可能 小型 軽量 持ち運び便利 男女兼用 ブラック 敬老の日・母の日・父の日・誕生日・クリスマス・記念日などの贈り物に",
+      "asin": "B0FN71V2R3",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71baIkOeyrL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "power"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0FN71V2R3",
+      "ref": "p6",
+      "search_key": "DYKL 鼻毛カッター メンズ レディース 電動 エチケットカッ",
+      "selection_score": 0.325
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "power"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "electric-nose-hair-trimmers-comparison"
+}

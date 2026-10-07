@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-10-07T14:09:49.041637+00:00",
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "generation_route_attestation": "codex_rollout_extension",
+  "height": 1024,
+  "image_generation_internal_usage_exposed": false,
+  "image_sha256": "e54610fc1fe45a1993fe85f91b9e67f3855f82bc71390614b74f37b87da0e47c",
+  "member_binding_revision": 8,
+  "model": "gpt-6-astra",
+  "model_reported_generation_route": "built-in_image_gen",
+  "role_id": "bu-codex-sellemy-designer",
+  "summary": "洗面台で鼻毛カッターを手に取る身支度の単一シーン。保護された先端形状とブラシを明瞭に表現。ファイルの存在、PNG形式、1536×1024を検証済み。",
+  "thread_id": "01a111a0-344e-74b1-99da-7cee59ca6cf0",
+  "token_usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 535552,
+    "input_tokens": 718605,
+    "output_tokens": 843,
+    "reasoning_output_tokens": 0,
+    "total_tokens": 719448,
+    "uncached_input_tokens": 183053
+  },
+  "token_usage_source": "codex_rollout.turn_token_usage",
+  "visual_family": "Product Portrait",
+  "width": 1536
+}
