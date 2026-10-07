@@ -1,0 +1,133 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/freestanding-ironing-boards.html",
+  "category": "dailygoods",
+  "comparison_axes": [
+    {
+      "id": "working_height",
+      "keywords": [
+        "最低高さ",
+        "最高高さ",
+        "高さ調節",
+        "立ち作業"
+      ],
+      "label": "作業高さと調節方法"
+    },
+    {
+      "id": "board_shape",
+      "keywords": [
+        "天板幅",
+        "天板長さ",
+        "肩口",
+        "先端形状"
+      ],
+      "label": "天板の寸法と形"
+    },
+    {
+      "id": "storage_and_support",
+      "keywords": [
+        "脚の開き幅",
+        "折りたたみ寸法",
+        "重量",
+        "アイロン置き"
+      ],
+      "label": "脚の構造と収納条件"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/freestanding-ironing-boards/freestanding-ironing-boards.png",
+  "products": [
+    {
+      "amazon_title": "アイロン台 スタンド式 折りたたみ式 アイロン置き付き 5段階高さ調節 コンパクト 舟型 軽くて丈夫 熱効率で省エネ コンパクト 北欧風 (D,42インチです)",
+      "asin": "B0DPPWF9SL",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/31f3UEhxTEL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "storage_and_support",
+        "working_height"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0DPPWF9SL",
+      "ref": "p1",
+      "search_key": "アイロン台 スタンド式 折りたたみ式 アイロン置き付き 5段階高",
+      "selection_score": 0.685
+    },
+    {
+      "amazon_title": "アイロン台 組立不要 省スペース スタンド式 幅 110× 奥行 31.7× 高さ 86cm",
+      "asin": "B0HHMFL2LX",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61ysA+CrEyL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HHMFL2LX",
+      "ref": "p2",
+      "search_key": "アイロン台 組立不要 省スペース スタンド式 幅 110× 奥行",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "Saiveina スタンド式アイロン台 折り畳み 高さ調節可能 コンパクト収納 スチーム対応アイロン台 ワイド天板",
+      "asin": "B0GT4CHL8T",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51Muneifo8L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "working_height"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GT4CHL8T",
+      "ref": "p3",
+      "search_key": "Saiveina スタンド式アイロン台 折り畳み 高さ調節可能",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "アイロン台 スタンド式 折り畳み 高さ調整6段階 アイロンレスト付き 軽量 頑丈 持ち運び便利 省スペース設計 舟型 収納最適 (グレーA,91*31cm)",
+      "asin": "B0GQTSXZ2X",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/31zTm9B1HaL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GQTSXZ2X",
+      "ref": "p4",
+      "search_key": "アイロン台 スタンド式 折り畳み 高さ調整6段階 アイロンレスト",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "アイロン台 スタンド式 舟形 ワイド天板 高さ7段階調整 アルミコーティング 折りたたみ収納 軽量 安定構造 コンパクト保管 家庭用 日常衣類 通勤服 洗濯後ケア向け",
+      "asin": "B0GCN5CDK2",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71kmyCDxVkL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GCN5CDK2",
+      "ref": "p5",
+      "search_key": "アイロン台 スタンド式 舟形 ワイド天板 高さ7段階調整 アルミ",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "アイリスプラザ アイロン台 スタンド舟型 コンパクト 立ったままアイロン 高さ調整可 アルミコーティング 折り畳み式 軽量 約W82×D36.5×H42-78cm ホワイト",
+      "asin": "B0G7C46ZBQ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41qwkDJ2PxL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0G7C46ZBQ",
+      "ref": "p6",
+      "search_key": "アイリスプラザ アイロン台 スタンド舟型 コンパクト 立ったまま",
+      "selection_score": 0.325
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "storage_and_support",
+      "working_height"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "freestanding-ironing-boards"
+}
