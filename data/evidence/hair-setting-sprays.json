@@ -1,0 +1,126 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/hair-setting-sprays.html",
+  "category": "beauty",
+  "comparison_axes": [
+    {
+      "id": "finish",
+      "keywords": [
+        "固める",
+        "やわらかい仕上がり",
+        "再整髪"
+      ],
+      "label": "希望する仕上がりと整え方"
+    },
+    {
+      "id": "application",
+      "keywords": [
+        "噴射範囲",
+        "使用距離",
+        "前髪"
+      ],
+      "label": "噴霧方法と部分使い"
+    },
+    {
+      "id": "washout",
+      "keywords": [
+        "シャンプー",
+        "使用手順",
+        "注意事項"
+      ],
+      "label": "洗い落とし方と使用上の条件"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/hair-setting-sprays/hair-setting-sprays.png",
+  "products": [
+    {
+      "amazon_title": "OCEAN TRICO(オーシャントリコ) ヘアスプレー バリカタスプレー 140g ヘアスプレー 前髪 巻き髪 キープ マット ハード オーシャントーキョー 美容室 サロン メンズ レディース",
+      "asin": "B0B78GBFPB",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/31TI7SxTtNL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "application"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0B78GBFPB",
+      "ref": "p1",
+      "search_key": "OCEAN TRICO(オーシャントリコ) ヘアスプレー バリカ",
+      "selection_score": 0.53
+    },
+    {
+      "amazon_title": "【Amazon.co.jp限定】VO5スーパーキープ ヘアプレイ(エクストラハード パールローズの香り)330g×2個+おまけ付き",
+      "asin": "B0H99BV1L5",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61vW5GxOsZL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H99BV1L5",
+      "ref": "p2",
+      "search_key": "VO5スーパーキープ ヘアプレイ(エクストラハード パールローズ",
+      "selection_score": 0.35
+    },
+    {
+      "amazon_title": "【Amazon.co.jp限定】VO5スーパーキープ ヘアプレイ(エクストラハード 無香料)330g 単品+おまけ付き",
+      "asin": "B0H997VHT8",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61Dp3XPiaKL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H997VHT8",
+      "ref": "p3",
+      "search_key": "VO5スーパーキープ ヘアプレイ(エクストラハード 無香料)33",
+      "selection_score": 0.35
+    },
+    {
+      "amazon_title": "【Amazon.co.jp限定】VO5スーパーキープ ヘアプレイ(エクストラハード 無香料)125g×3個+おまけ付き",
+      "asin": "B0H995PX64",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71Uh6Wbo7eL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H995PX64",
+      "ref": "p4",
+      "search_key": "VO5スーパーキープ ヘアプレイ(エクストラハード 無香料)12",
+      "selection_score": 0.35
+    },
+    {
+      "amazon_title": "ギャツビー ムービングロックスプレー エクストラハードＫ シトラスフローラルの香り 170g",
+      "asin": "B0H8LP6NXK",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51Hft8noZtL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H8LP6NXK",
+      "ref": "p5",
+      "search_key": "ギャツビー ムービングロックスプレー エクストラハードＫ シトラ",
+      "selection_score": 0.35
+    },
+    {
+      "amazon_title": "KANTANSERIES カンタンシリーズ かちっと ヘアスプレー 165g ホワイトリリー",
+      "asin": "B0FM1TN6SF",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41BCBxvAvAL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FM1TN6SF",
+      "ref": "p6",
+      "search_key": "KANTANSERIES カンタンシリーズ かちっと ヘアスプレ",
+      "selection_score": 0.35
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "application"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "hair-setting-sprays"
+}
