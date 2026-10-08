@@ -1,0 +1,132 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/foundation-makeup-sponges.html",
+  "category": "beauty",
+  "comparison_axes": [
+    {
+      "id": "foundation_compatibility",
+      "keywords": [
+        "リキッド",
+        "パウダー",
+        "水あり・水なし"
+      ],
+      "label": "対応するファンデーションと使用条件"
+    },
+    {
+      "id": "shape",
+      "keywords": [
+        "平面",
+        "先端",
+        "厚み"
+      ],
+      "label": "広い面と細部に使う形"
+    },
+    {
+      "id": "care",
+      "keywords": [
+        "材質",
+        "洗い方",
+        "交換目安"
+      ],
+      "label": "素材と洗浄・交換の条件"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/foundation-makeup-sponges/foundation-makeup-sponges.png",
+  "products": [
+    {
+      "amazon_title": "ファンデーションスポンジ スポンジパフ ダイヤ形 25P 水あり 水なし ポリウレタン リキッド パウダー(ベージュ)",
+      "asin": "B0HGDTKF19",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61lLhvtXoHL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "foundation_compatibility"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HGDTKF19",
+      "ref": "p1",
+      "search_key": "ファンデーションスポンジ スポンジパフ ダイヤ形 25P 水あり",
+      "selection_score": 0.49
+    },
+    {
+      "amazon_title": "パフ メイクスポンジ 3個セット 全ファンデーション対応 マルチファンデパフ メイクパフ ベースメイク プロカバー エッグ型 OSHAMY",
+      "asin": "B0HDRR8W9H",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51o+3ey1ceL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HDRR8W9H",
+      "ref": "p2",
+      "search_key": "パフ メイクスポンジ 3個セット 全ファンデーション対応 マルチ",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "貝印 ファンデーションスポンジ きめ細やか SBR スクエア 2P パフ 水あり 水なし パウダー リキッド KQ3294 (× 2)",
+      "asin": "B0H96NWVVP",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81arUwxCaHL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "foundation_compatibility"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H96NWVVP",
+      "ref": "p3",
+      "search_key": "貝印 ファンデーションスポンジ きめ細やか SBR スクエア 2",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "メイクスポンジ 2個セット 非ラテックス 水あり水なし対応 しずく型 斜めカット 柔らかい ふわふわ 化粧スポンジ ファンデーション用 メイクパフ",
+      "asin": "B0H3P13HZ4",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61B1mjHxBML._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H3P13HZ4",
+      "ref": "p4",
+      "search_key": "メイクスポンジ 2個セット 非ラテックス 水あり水なし対応 しず",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "貝印 ファンデーションスポンジ きめ細やか SBR スクエアスリム 2P パフ 水あり 水なし パウダー リキッド KQ3293",
+      "asin": "B0H25CTV96",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71h7pe1YN4L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "foundation_compatibility"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H25CTV96",
+      "ref": "p5",
+      "search_key": "貝印 ファンデーションスポンジ きめ細やか SBR スクエアスリ",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "by Amazon メイク用スポンジ ハウス型 50個入り 大容量 水あり・水なし両用",
+      "asin": "B0GL2M5SFN",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71PXmQvuzHL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "foundation_compatibility"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GL2M5SFN",
+      "ref": "p6",
+      "search_key": "by Amazon メイク用スポンジ ハウス型 50個入り 大容",
+      "selection_score": 0.31
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "foundation_compatibility"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "foundation-makeup-sponges"
+}
