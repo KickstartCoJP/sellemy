@@ -1,0 +1,134 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/smooth-leather-shoe-creams.html",
+  "category": "dailygoods",
+  "comparison_axes": [
+    {
+      "id": "leather_compatibility",
+      "keywords": [
+        "スムースレザー",
+        "起毛革の使用可否",
+        "特殊加工の注意"
+      ],
+      "label": "使える革と対象外の加工"
+    },
+    {
+      "id": "color_finish",
+      "keywords": [
+        "無色",
+        "補色",
+        "ツヤの用途表示"
+      ],
+      "label": "色の選び方と仕上がりの表示"
+    },
+    {
+      "id": "application_care",
+      "keywords": [
+        "塗布用具",
+        "乾燥の指示",
+        "余分なクリームの除去"
+      ],
+      "label": "塗布量と磨き上げの手順"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/smooth-leather-shoe-creams/smooth-leather-shoe-creams.png",
+  "products": [
+    {
+      "amazon_title": "レザー 補修クリーム 靴クリーム キズ補修 革専用 靴磨き 保湿 補色 レザーマニキュア レザーコンシーラー スムースレザー 皮革製品 革靴 革小物 メンズ レディース",
+      "asin": "B08Z8DSYD1",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/615PxIFpo+L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "color_finish",
+        "leather_compatibility"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B08Z8DSYD1",
+      "ref": "p1",
+      "search_key": "レザー 補修クリーム 靴クリーム キズ補修 革専用 靴磨き 保湿",
+      "selection_score": 0.66
+    },
+    {
+      "amazon_title": "ガラスレザー ツヤ出し 簡単お手入れ ローファー 学生靴 就活 無色 ガラスレザークリーム",
+      "asin": "B0F8MXXC61",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/613LtFqykiL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "color_finish"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0F8MXXC61",
+      "ref": "p2",
+      "search_key": "ガラスレザー ツヤ出し 簡単お手入れ ローファー 学生靴 就活",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "革 補修 レザーケアキット 革 補修クリーム レザーリペア 革色落ち補修 レザー補修クリーム 革 色 補修 革製品 キズ補修 皮革用",
+      "asin": "B0CHHTYQ5H",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/717fzZc51oL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0CHHTYQ5H",
+      "ref": "p3",
+      "search_key": "革 補修 レザーケアキット 革 補修クリーム レザーリペア 革色",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "[コロンブス] キズも色あせもクリームで上書き カラーリペア 手軽に使える 革靴専用の補色剤",
+      "asin": "B09PY4DMHP",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71RI9u6U+EL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "color_finish"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B09PY4DMHP",
+      "ref": "p4",
+      "search_key": "キズも色あせもクリームで上書き カラーリペア 手軽に使える 革靴",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "【10色セット】レザークリーム 補修クリーム 補色クリーム 革製品 保革・補色・ツヤ出し チューブタイプ 靴 バッグ 座席などの皮革製品 補修専用",
+      "asin": "B096FSMQ6Z",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61q2oJVXbPL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "color_finish"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B096FSMQ6Z",
+      "ref": "p5",
+      "search_key": "レザークリーム 補修クリーム 補色クリーム 革製品 保革・補色",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "[サフィール] 圧倒的なツヤ 保湿力 靴クリーム クレム1925 高級 靴磨き シュークリーム 革靴 クリーム 手入れ 傷 靴墨 保湿 保革 着色",
+      "asin": "B083NQ4521",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61wTvnluncL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B083NQ4521",
+      "ref": "p6",
+      "search_key": "圧倒的なツヤ 保湿力 靴クリーム クレム1925 高級 靴磨き",
+      "selection_score": 0.3
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "color_finish",
+      "leather_compatibility"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "smooth-leather-shoe-creams"
+}
