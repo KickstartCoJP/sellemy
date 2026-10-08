@@ -1,0 +1,129 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/body-washing-towels.html",
+  "category": "beauty",
+  "comparison_axes": [
+    {
+      "id": "material_structure",
+      "keywords": [
+        "素材構成",
+        "表面素材",
+        "編み方",
+        "硬さの表示"
+      ],
+      "label": "肌に触れる素材と生地の構造"
+    },
+    {
+      "id": "dimensions",
+      "keywords": [
+        "長さ",
+        "幅",
+        "伸縮性",
+        "使用時寸法"
+      ],
+      "label": "背中を洗う際の長さと持ち方"
+    },
+    {
+      "id": "care",
+      "keywords": [
+        "すすぎ",
+        "水切り",
+        "陰干し",
+        "洗濯可否"
+      ],
+      "label": "洗浄後のすすぎと乾燥方法"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/body-washing-towels/body-washing-towels.png",
+  "products": [
+    {
+      "amazon_title": "オーエ ボディタオル やわらかめ ピンク 約幅28×長さ100cm あわゆき 体洗い タオル 豊かな 泡立ち 日本製",
+      "asin": "B00KL6DG18",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81wzTWOYh4L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "dimensions"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B00KL6DG18",
+      "ref": "p1",
+      "search_key": "オーエ ボディタオル やわらかめ ピンク 約幅28×長さ100c",
+      "selection_score": 0.505
+    },
+    {
+      "amazon_title": "[Bebemax]ボディブラシ シリコンバスブラシ 両面使える極厚シリコンボディタオル 90cm",
+      "asin": "B0HDB949W9",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71KA+w9a5HL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HDB949W9",
+      "ref": "p2",
+      "search_key": "ボディブラシ シリコンバスブラシ 両面使える極厚シリコンボディタ",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "【セット販売】ごリラックス (バッグ サウナハット サウナマット ボディタオル)サウナ サ活 ゴリラックス GORELAX バス用品 お風呂 銭湯 入浴 水風呂 バッグ 旅行 かわいい プレゼント スーパー銭湯 温泉 銭湯 岩盤浴 効果 人気 メリット 頭皮保護 素材の違い サウナハットの選び方 (グリーン)",
+      "asin": "B0H6LK2RST",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61Wos0Qd5aL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H6LK2RST",
+      "ref": "p3",
+      "search_key": "ごリラックス (バッグ サウナハット サウナマット ボディタオル",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "無印良品 泡立てボディタオル ふつう／約25×95cm 76416951",
+      "asin": "B0GZZJBMWP",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71cBnACVq2L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GZZJBMWP",
+      "ref": "p4",
+      "search_key": "無印良品 泡立てボディタオル ふつう／約25×95cm 7641",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "【セット販売】ごリラックス (カゴ サウナハット サウナマット ボディタオル)サウナ サ活 ゴリラックス GORELAX バス用品 お風呂 銭湯 入浴 水風呂 バッグ 旅行 かわいい プレゼント スーパー銭湯 温泉 銭湯 岩盤浴 効果 人気 メリット 頭皮保護 素材の違い サウナハットの選び方 (ブルー)",
+      "asin": "B0GYPYYRFG",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61f8OYHyE9L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GYPYYRFG",
+      "ref": "p5",
+      "search_key": "ごリラックス (カゴ サウナハット サウナマット ボディタオル)",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "【す・なお公式】 こんにゃく生タオル 1枚入 ボディウォッシュ用 日本製 敏感肌対応 赤ちゃん ボディケア ギフト",
+      "asin": "B0GH81JHSF",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/6114wuR21jL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GH81JHSF",
+      "ref": "p6",
+      "search_key": "こんにゃく生タオル 1枚入 ボディウォッシュ用 日本製 敏感肌対",
+      "selection_score": 0.325
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "dimensions"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "body-washing-towels"
+}
