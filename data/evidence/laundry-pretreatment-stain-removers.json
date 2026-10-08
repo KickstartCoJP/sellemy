@@ -1,0 +1,130 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/laundry-pretreatment-stain-removers.html",
+  "category": "dailygoods",
+  "comparison_axes": [
+    {
+      "id": "target_stains",
+      "keywords": [
+        "皮脂",
+        "食べこぼし",
+        "油汚れ",
+        "漂白成分"
+      ],
+      "label": "対象となる汚れと成分の表示"
+    },
+    {
+      "id": "fabric_compatibility",
+      "keywords": [
+        "綿",
+        "化学繊維",
+        "毛・絹",
+        "色落ち確認"
+      ],
+      "label": "使える繊維と色柄物への使用条件"
+    },
+    {
+      "id": "application_laundering",
+      "keywords": [
+        "直塗り",
+        "スプレー",
+        "固形",
+        "放置時間",
+        "本洗い"
+      ],
+      "label": "塗布方法と本洗いまでの手順"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/laundry-pretreatment-stain-removers/laundry-pretreatment-stain-removers.png",
+  "products": [
+    {
+      "amazon_title": "【衣類のシミ取りカテゴリー世界No.1シェア】ヴァニッシュ オキシアクション 布用 シミ抜きスプレー 450ｍL 塩素不使用 漂白剤 + おまけ付き",
+      "asin": "B0G5XTBTYD",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61SVH+G5AWL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "application_laundering"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0G5XTBTYD",
+      "ref": "p1",
+      "search_key": "ヴァニッシュ オキシアクション 布用 シミ抜きスプレー 450ｍ",
+      "selection_score": 0.49
+    },
+    {
+      "amazon_title": "2本セット トッ プ プレケア 部分洗い剤 シミ用 本体 160g kanzenkumステッカー",
+      "asin": "B0HJH1NXRW",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/610JLMfBwaL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HJH1NXRW",
+      "ref": "p2",
+      "search_key": "2本セット トッ プ プレケア 部分洗い剤 シミ用 本体 160",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "ナノックス 部分洗い剤 本体3種セット エリそで・ドロ・シミ 各1本 靴下 泥汚れ 上履き しみ抜き 洗濯洗剤＜NARVIOセット組＞",
+      "asin": "B0H9GVD665",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81IJSqP0zXL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H9GVD665",
+      "ref": "p3",
+      "search_key": "ナノックス 部分洗い剤 本体3種セット エリそで・ドロ・シミ 各",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "オキシクリーン マックスフォース ジェルスティック 183ml プレケア洗剤",
+      "asin": "B0FTFC28J3",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61XEC+Jr34L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FTFC28J3",
+      "ref": "p4",
+      "search_key": "オキシクリーン マックスフォース ジェルスティック 183ml",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "【1個セット】染み抜き剤 スポッとる 10ML パッケージ しみ抜き スポットクリーナー 洗濯 汚れ 落ちやすい スポット除去 家庭用 便利 使いやすい",
+      "asin": "B0FH1RN7JL",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51yCvI3W2LL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FH1RN7JL",
+      "ref": "p5",
+      "search_key": "染み抜き剤 スポッとる 10ML パッケージ しみ抜き スポット",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "ライオン トップ ナノックス 洗濯洗剤 部分洗い剤 エリそで用 大容量 詰め替え 650g (2個セット) 染み抜き 汚れ落とし",
+      "asin": "B0DVZKSKR9",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81KeRBuWI6L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0DVZKSKR9",
+      "ref": "p6",
+      "search_key": "ライオン トップ ナノックス 洗濯洗剤 部分洗い剤 エリそで用",
+      "selection_score": 0.31
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "application_laundering"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "laundry-pretreatment-stain-removers"
+}
