@@ -1,0 +1,133 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/household-rolling-storage-carts.html",
+  "category": "dailygoods",
+  "comparison_axes": [
+    {
+      "id": "shelf_fit",
+      "keywords": [
+        "棚内寸",
+        "棚間隔",
+        "高さ調整",
+        "縁の高さ",
+        "取り出し口"
+      ],
+      "label": "収納物に合わせる棚の内寸と間隔"
+    },
+    {
+      "id": "load_mobility",
+      "keywords": [
+        "棚耐荷重",
+        "全体耐荷重",
+        "キャスター径",
+        "ストッパー",
+        "床面条件"
+      ],
+      "label": "棚ごとの荷重とキャスターの条件"
+    },
+    {
+      "id": "placement_structure",
+      "keywords": [
+        "外寸",
+        "移動経路",
+        "持ち手",
+        "組み立て工具",
+        "棚材質",
+        "清掃方法"
+      ],
+      "label": "設置寸法・組み立て・手入れ"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/household-rolling-storage-carts/household-rolling-storage-carts.png",
+  "products": [
+    {
+      "amazon_title": "DEWEL 押入れ(クローゼット)収納 ラック 幅77×奥行43.5×高さ71cm 収納ワゴン ネット・棚板取り外し可能 布団収納ラック 鉄のキャスター ストッパー付き 押入れ収納 おもちゃ収納 ランドセルラック フリーラック 大容量 整理整頓 (ブラックパイプ)",
+      "asin": "B0FKN3C9RQ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71znlhWvTGL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "load_mobility"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0FKN3C9RQ",
+      "ref": "p1",
+      "search_key": "DEWEL 押入れ(クローゼット)収納 ラック 幅77×奥行43",
+      "selection_score": 0.49
+    },
+    {
+      "amazon_title": "キッチンワゴン スチールラック キャスター付き 2段 高さ調節可 サイドワゴン 耐荷重40kg キッチンラック ホワイト",
+      "asin": "B0HHZ6F78J",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71P9hDCXxXL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HHZ6F78J",
+      "ref": "p2",
+      "search_key": "キッチンワゴン スチールラック キャスター付き 2段 高さ調節可",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "キッチンワゴン キャスター付き 3段ワゴン縦59横36高さ75 cm 炭素鋼青にピンク",
+      "asin": "B0HGFD4457",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81-Aj1yE7qL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HGFD4457",
+      "ref": "p3",
+      "search_key": "キッチンワゴン キャスター付き 3段ワゴン縦59横36高さ75",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "キッチンワゴン 天板付き 3段 キャスター付き キッチンラック キッチン棚 スチールワゴン 炊飯器 調味料 小物 台所 洗面所 リビング 大容量 収納カート スリム 隙間 収納ワゴン ラック バスケットラック ペットボトル メタルラック 一人暮らし 高耐荷 取っ手付き 幅42×奥行29×高さ76cm",
+      "asin": "B0H4VJ8L82",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71fMH72v30L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H4VJ8L82",
+      "ref": "p4",
+      "search_key": "キッチンワゴン 天板付き 3段 キャスター付き キッチンラック",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "山善(YAMAZEN) スチールラック キャスター付き 3段 (アジャスター・キャスター2WAY) 収納棚 サイドワゴン 耐荷重30kg キッチンワゴン コンパクト 幅42.5×奥行30×高さ82.5cm 組立品 グレージュ CPR-80433C(GG)",
+      "asin": "B0H3MS7YYP",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71+2N9vjRXL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H3MS7YYP",
+      "ref": "p5",
+      "search_key": "山善(YAMAZEN) スチールラック キャスター付き 3段 (",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "山善(YAMAZEN) 目隠し ワゴン 2段 キャスター付き 幅45×奥行35×高さ58cm ホワイト/マットホワイト MHW-2(EWHM/MWH)",
+      "asin": "B0GXXZWRTD",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71WPnlxXN-L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GXXZWRTD",
+      "ref": "p6",
+      "search_key": "山善(YAMAZEN) 目隠し ワゴン 2段 キャスター付き 幅",
+      "selection_score": 0.31
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "load_mobility"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "household-rolling-storage-carts"
+}

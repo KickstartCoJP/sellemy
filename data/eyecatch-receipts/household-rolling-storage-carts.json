@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-10-08T17:38:56.404295+00:00",
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "generation_route_attestation": "codex_rollout_extension",
+  "height": 1024,
+  "image_generation_internal_usage_exposed": false,
+  "image_sha256": "6e8057aca1a7c037cdfebe10ebac22ce182eeb49576906f071a731a4e50fd9ec",
+  "member_binding_revision": 8,
+  "model": "gpt-6-astra",
+  "model_reported_generation_route": "built-in_image_gen",
+  "role_id": "bu-codex-sellemy-designer",
+  "routing": {
+    "api_share": 80,
+    "codex_reserve_percent": 20.0,
+    "codex_share": 20,
+    "codex_usage": {
+      "remaining_percent": 34.0,
+      "resets_at": 1791949050,
+      "source": "/Users/kickstart/.codex/sessions/2026/10/08/rollout-2026-10-08T00-17-21-01a116f0-c70b-7162-a769-fe916dda3cf8.jsonl",
+      "used_percent": 66.0,
+      "window_minutes": 10080
+    },
+    "errors_before_success": [
+      "openai_api:EyecatchGenerationError:Sellemy OpenAI API key unavailable"
+    ],
+    "executed_route": "codex",
+    "fallback_from": "openai_api",
+    "mode": "weighted_random",
+    "reason": "weighted_random",
+    "remaining_percent": 34.0,
+    "roll": 23,
+    "selected_route": "openai_api",
+    "total_weight": 100
+  },
+  "routing_recorded_at": "2026-10-08T17:38:56.405572+00:00",
+  "summary": "収納ワゴンの棚内の余白・棚間隔・キャスターと移動空間が伝わる生活場面を制作。PNG形式・1536×1024と画像内容を検証済み。",
+  "thread_id": "01a111a0-344e-74b1-99da-7cee59ca6cf0",
+  "token_usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 460544,
+    "input_tokens": 610370,
+    "output_tokens": 776,
+    "reasoning_output_tokens": 0,
+    "total_tokens": 611146,
+    "uncached_input_tokens": 149826
+  },
+  "token_usage_source": "codex_rollout.turn_token_usage",
+  "visual_family": "Lifestyle Scene",
+  "width": 1536
+}
