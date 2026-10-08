@@ -1,0 +1,131 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/portable-voice-recorders.html",
+  "category": "gadget",
+  "comparison_axes": [
+    {
+      "id": "recording",
+      "keywords": [
+        "録音ボタン",
+        "録音レベル",
+        "マイク指向性",
+        "外部マイク入力"
+      ],
+      "label": "録音開始の操作とマイク設定"
+    },
+    {
+      "id": "playback",
+      "keywords": [
+        "再生速度",
+        "区間リピート",
+        "インデックス",
+        "頭出し"
+      ],
+      "label": "必要な箇所を聞き返す機能"
+    },
+    {
+      "id": "data_power",
+      "keywords": [
+        "内蔵メモリー",
+        "対応カード",
+        "USB転送",
+        "ファイル形式",
+        "電池",
+        "録音時間の測定条件"
+      ],
+      "label": "保存・転送・電源の条件"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/portable-voice-recorders/portable-voice-recorders.png",
+  "products": [
+    {
+      "amazon_title": "サンワダイレクト ボイスレコーダー 小型 乾電池式 メモリ16GB内蔵 microSDカード対応 録音機 会議用 400-SCNICR5",
+      "asin": "B0HCXLBCN2",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61YK1VhQ2BL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "data_power"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HCXLBCN2",
+      "ref": "p1",
+      "search_key": "サンワダイレクト ボイスレコーダー 小型 乾電池式 メモリ16G",
+      "selection_score": 0.505
+    },
+    {
+      "amazon_title": "ボイスレコーダー 小型 icレコーダー【デュアルマイク搭載 &大ボタン簡単操作& 32GB大容量】 1536kbps",
+      "asin": "B0HHGX6K7T",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71PHx531ohL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HHGX6K7T",
+      "ref": "p2",
+      "search_key": "ボイスレコーダー 小型 icレコーダー 1536kbps",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "ボイスレコーダー 32GB大容量 ICレコーダー 3072kbps ワンボタン録音 音声検知 Type-C充電 パスワード保護 黒",
+      "asin": "B0HFWLN46X",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71v7DbldKfL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HFWLN46X",
+      "ref": "p3",
+      "search_key": "ボイスレコーダー 32GB大容量 ICレコーダー 3072kbp",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "ボイスレコーダー ペン型 32GB メモリカード付属 長時間録音 ワンタッチ録音 VOR 音声検知 ノイズ低減",
+      "asin": "B0HFSJ129B",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61dtRQ53AWL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HFSJ129B",
+      "ref": "p4",
+      "search_key": "ボイスレコーダー ペン型 32GB メモリカード付属 長時間録音",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "Comulytic Note Pro AIボイスレコーダー 文字起こし無料・無制限 AI議事録作成 98%高精度 話者識別 最大45時間録音",
+      "asin": "B0H7RXWKBM",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/512Ks4mrzgL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H7RXWKBM",
+      "ref": "p5",
+      "search_key": "Comulytic Note Pro AIボイスレコーダー 文字",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "BOYA Notra AI ボイスレコーダー 文字起こし 600分無料 Bluetooth/通話/環境音録音モード 多言語対応 ブラック",
+      "asin": "B0H4Z6K65T",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61ntE2+xi5L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H4Z6K65T",
+      "ref": "p6",
+      "search_key": "BOYA Notra AI ボイスレコーダー 文字起こし 600",
+      "selection_score": 0.325
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "data_power"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "portable-voice-recorders"
+}
