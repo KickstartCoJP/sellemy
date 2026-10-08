@@ -1,0 +1,129 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/skincare-cotton-pads.html",
+  "category": "beauty",
+  "comparison_axes": [
+    {
+      "id": "fiber_structure",
+      "keywords": [
+        "繊維組成",
+        "表面構造",
+        "端部加工",
+        "層構造"
+      ],
+      "label": "素材と表面・端部の構造"
+    },
+    {
+      "id": "sheet_dimensions",
+      "keywords": [
+        "縦横寸法",
+        "形状",
+        "厚さの表示",
+        "分割可否"
+      ],
+      "label": "持ち方に関わる寸法と形状"
+    },
+    {
+      "id": "intended_use",
+      "keywords": [
+        "化粧水をなじませる",
+        "拭き取り",
+        "コットンパック",
+        "使用上の注意"
+      ],
+      "label": "メーカーが案内する使用方法"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/skincare-cotton-pads/skincare-cotton-pads.png",
+  "products": [
+    {
+      "amazon_title": "Winner コットンパフ 大判 100％天然コットン 化粧水用 美顔器用 薄手 520枚 6x7cm パッティング専用 メイク落としシート 防塵蓋付き 拭き取り 毛羽立ちなし 無添加 高保湿 スキンケア ネイルケア 化粧落とし (1)",
+      "asin": "B0995Y5TD1",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61-ObeVwLmL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "intended_use"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0995Y5TD1",
+      "ref": "p1",
+      "search_key": "Winner コットンパフ 大判 100％天然コットン 化粧水用",
+      "selection_score": 0.505
+    },
+    {
+      "amazon_title": "フェイシャル コットン 500枚入 化粧用 7ｘ７ｃｍ ふきとり用 エステティック用 カットコットン メイク落とし ネイル落とし 厚め",
+      "asin": "B0HDBJVFH6",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51JywKfEaNL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HDBJVFH6",
+      "ref": "p2",
+      "search_key": "フェイシャル コットン 500枚入 化粧用 7ｘ７ｃｍ ふきとり",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "OEKO-TEX STANDARD 100",
+      "asin": "B0HBCT1Q1V",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/617CCiu2BhL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HBCT1Q1V",
+      "ref": "p3",
+      "search_key": "OEKO-TEX STANDARD 100",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "【2倍に伸ばせて密着】シルコット うるのびコットン 240枚 (80枚×3個) コットンパフ パック うるうる 【Amazon.co.jp限定】",
+      "asin": "B0GQYM93TC",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61H7Rdd2yQL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GQYM93TC",
+      "ref": "p4",
+      "search_key": "シルコット うるのびコットン 240枚 (80枚×3個) コット",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "by Amazon ナチュラルコットンパフ レギュラーサイズ 500枚入",
+      "asin": "B0F787VKD7",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/716niDlJGEL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0F787VKD7",
+      "ref": "p5",
+      "search_key": "by Amazon ナチュラルコットンパフ レギュラーサイズ 5",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "Winner コットンパフ 大判 天然コットン100% 化粧水用 美顔器用 薄手 6×7cm 520枚入×2個セット",
+      "asin": "B0C23Z8W7J",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/614XOOKx55L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0C23Z8W7J",
+      "ref": "p6",
+      "search_key": "Winner コットンパフ 大判 天然コットン100% 化粧水用",
+      "selection_score": 0.325
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "intended_use"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "skincare-cotton-pads"
+}
