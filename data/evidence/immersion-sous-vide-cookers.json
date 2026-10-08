@@ -1,0 +1,125 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/immersion-sous-vide-cookers.html",
+  "category": "gadget",
+  "comparison_axes": [
+    {
+      "id": "container_fit",
+      "keywords": [
+        "容器の深さ",
+        "固定方式",
+        "最低水位",
+        "最大水量"
+      ],
+      "label": "容器への取付条件と水量"
+    },
+    {
+      "id": "temperature_timer",
+      "keywords": [
+        "設定温度範囲",
+        "設定刻み",
+        "タイマー開始条件",
+        "本体操作"
+      ],
+      "label": "温度・時間の設定と操作"
+    },
+    {
+      "id": "care_instructions",
+      "keywords": [
+        "分解可能部品",
+        "洗浄方法",
+        "説明書",
+        "食材の厚さと加熱条件"
+      ],
+      "label": "洗える範囲と調理条件の確認資料"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/immersion-sous-vide-cookers/immersion-sous-vide-cookers.png",
+  "products": [
+    {
+      "amazon_title": "BRUNO ブルーノ コンパクト 低温調理器 低温加熱 ヘルシー しっとり スライド式クリップ 鍋 深鍋 浅鍋 スタンド ローストビーフ サラダチキン チャコール 防水規格IPX7 BOE099-CH",
+      "asin": "B0H2V2LKSQ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51IWuEXtppL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H2V2LKSQ",
+      "ref": "p1",
+      "search_key": "BRUNO ブルーノ コンパクト 低温調理器 低温加熱 ヘルシー",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "【プロ並みの温度管理を】 SKK 低温調理器 1100W ハイパワー レシピ付き スリム設計 軽量 家庭用 クリップ式 防水性能 浅型鍋 タッチパネル タイマー機能 低温加熱 【日本企業】",
+      "asin": "B0GQXWN6NS",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71NFZ47XpBL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GQXWN6NS",
+      "ref": "p2",
+      "search_key": "SKK 低温調理器 1100W ハイパワー レシピ付き スリム設",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "アイリスオーヤマ 低温調理器 挟みやすいクリップ式 タッチパネル操作 防水性能 浅型鍋OK 肉料理 魚料理 蒸し鶏 ローストビーフ 豆腐花 LTC-04-H ウォームグレー",
+      "asin": "B0DVSM4PPL",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41MSL0UmqzL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0DVSM4PPL",
+      "ref": "p3",
+      "search_key": "アイリスオーヤマ 低温調理器 挟みやすいクリップ式 タッチパネル",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "【Amazon.co.jp限定】アイリスオーヤマ 低温調理器 袋型 ポケットシェフ 火も水も鍋もいらない 袋に入れるだけ 薄型フィルムヒーター 三層構造加熱 タッチパネル タイマー お手入れ簡単 タイパ 時短 コンパクト PocketChef PLTC-M01AZ-B ブラック",
+      "asin": "B0DLGPTTY4",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61JL8Pd8SBL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0DLGPTTY4",
+      "ref": "p4",
+      "search_key": "アイリスオーヤマ 低温調理器 袋型 ポケットシェフ 火も水も鍋も",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "【1台多役】 電気鍋 一人用 1L 600W 一人鍋 煮る/焼く/炒める/温める 着脱式 丸洗い可 一人暮らし 車中泊 キャンプ ブラック",
+      "asin": "B0D7PWBYWD",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/715fK-Jdx+L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0D7PWBYWD",
+      "ref": "p5",
+      "search_key": "電気鍋 一人用 1L 600W 一人鍋 煮る/焼く/炒める/温め",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "低温調理器 ケース 容器 スリーブカー 低温調理用フードコンテナ コンテナ 収納 透明 低温調理器専用 フードコンテナー 角型フードコンテナー 大容量 リッド 低温調理器具 容器 (6L)",
+      "asin": "B0D6C433YS",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/6167X9uzSNL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0D6C433YS",
+      "ref": "p6",
+      "search_key": "低温調理器 ケース 容器 スリーブカー 低温調理用フードコンテナ",
+      "selection_score": 0.31
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "immersion-sous-vide-cookers"
+}
