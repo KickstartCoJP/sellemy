@@ -1,0 +1,136 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/floor-cleaning-wiper-handles.html",
+  "category": "dailygoods",
+  "comparison_axes": [
+    {
+      "id": "head_access",
+      "keywords": [
+        "ヘッド幅",
+        "ヘッド厚",
+        "首振り",
+        "家具下"
+      ],
+      "label": "掃除する場所とヘッドの寸法"
+    },
+    {
+      "id": "sheet_attachment",
+      "keywords": [
+        "対応シート寸法",
+        "差し込み式",
+        "挟み込み式",
+        "着脱"
+      ],
+      "label": "シートの適合条件と固定方法"
+    },
+    {
+      "id": "handle_storage",
+      "keywords": [
+        "全長",
+        "伸縮",
+        "継ぎ柄",
+        "収納寸法"
+      ],
+      "label": "柄の長さと収納条件"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/floor-cleaning-wiper-handles/floor-cleaning-wiper-handles.png",
+  "products": [
+    {
+      "amazon_title": "TENSI JAPAN ワンタッチ着脱 シート選ばず フロアワイパー 自立型 天使のワンタッチクリーパー (ピンク, ワイド)",
+      "asin": "B0G8Z2399X",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41LSG4PG5qL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "sheet_attachment"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0G8Z2399X",
+      "ref": "p1",
+      "search_key": "TENSI JAPAN ワンタッチ着脱 シート選ばず フロアワイ",
+      "selection_score": 0.49
+    },
+    {
+      "amazon_title": "山崎産業 フロアワイパー コンドル ぞうきんとシートが使えるフローリングワイパー 抗菌 マイクロファイバー クロス付き 伸縮タイプ 187157",
+      "asin": "B07JM3KRDL",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51Eh4p8suUL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "handle_storage"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B07JM3KRDL",
+      "ref": "p2",
+      "search_key": "山崎産業 フロアワイパー コンドル ぞうきんとシートが使えるフロ",
+      "selection_score": 0.49
+    },
+    {
+      "amazon_title": "フロアワイパー 乾湿両用 ワンタッチモップ クリップ式 クロス10枚付き 360°回転ヘッド 雑巾対応 水拭き 乾拭き 幅26cm×高さ127cm (幅26cm×高さ127cm)",
+      "asin": "B0HK3JH4B3",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71cWRv9wACL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HK3JH4B3",
+      "ref": "p3",
+      "search_key": "フロアワイパー 乾湿両用 ワンタッチモップ クリップ式 クロス1",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "CLEANHOME フロアワイパー 本体 1秒で着脱 ワンタッチモップ 2in1水切りワイパー 乾湿両用モップ 拭き掃除 雑巾ワイパー フローリング",
+      "asin": "B0DQKGW7VT",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61d7PH3Cm0L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "sheet_attachment"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0DQKGW7VT",
+      "ref": "p4",
+      "search_key": "CLEANHOME フロアワイパー 本体 1秒で着脱 ワンタッチ",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "フローリングワイパー コンパクト 自動クリップ ジョイント式 90°回転 シートに触らず掃除ができる フロアワイパー 掃除グッズ ハンディモップ ラベンダー L",
+      "asin": "B0DJSLCCC6",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/416xSfanNiL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0DJSLCCC6",
+      "ref": "p5",
+      "search_key": "フローリングワイパー コンパクト 自動クリップ ジョイント式 9",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "【AI-WILL】～ シートに触れずに、カンタン着脱 ～ かがまずにシートが取り付けできる コンパクトフローリングワイパー 【コンパクトヘッド（160㎜×80㎜）狭い箇所の清掃に】【シートを中央に置いて、垂直に押してシートをキャッチ！】【ハンドルの長さ最大120㎝】",
+      "asin": "B0DJLTQ2B6",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/515zVLP+RDL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "sheet_attachment"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0DJLTQ2B6",
+      "ref": "p6",
+      "search_key": "～ シートに触れずに、カンタン着脱 ～ かがまずにシートが取り付",
+      "selection_score": 0.31
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "handle_storage",
+      "sheet_attachment"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "floor-cleaning-wiper-handles"
+}
