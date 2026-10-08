@@ -1,0 +1,143 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/usb-memory-card-readers.html",
+  "category": "gadget",
+  "comparison_axes": [
+    {
+      "id": "card_compatibility",
+      "keywords": [
+        "SD",
+        "microSD",
+        "SDXC",
+        "UHS規格"
+      ],
+      "label": "対応するカードの種類と規格"
+    },
+    {
+      "id": "host_compatibility",
+      "keywords": [
+        "USB-C",
+        "USB-A",
+        "対応OS",
+        "スマートフォン対応"
+      ],
+      "label": "接続端子と端末への対応"
+    },
+    {
+      "id": "transfer_conditions",
+      "keywords": [
+        "USB転送規格",
+        "同時使用",
+        "カード側の条件",
+        "ケーブル長"
+      ],
+      "label": "転送規格とスロットの使用条件"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/usb-memory-card-readers/usb-memory-card-readers.png",
+  "products": [
+    {
+      "amazon_title": "エレコム カードリーダー USB Type-C & USB-A 両対応 SD/microSD 2スロット同時使用 UHS-I対応 直挿し アルミ筐体 ドライバ不要 ブラック MR3C-D21EBK",
+      "asin": "B0H8NM5MPP",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51cOrpapdzL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "card_compatibility",
+        "host_compatibility",
+        "transfer_conditions"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H8NM5MPP",
+      "ref": "p1",
+      "search_key": "エレコム カードリーダー USB Type-C & USB-A",
+      "selection_score": 0.85
+    },
+    {
+      "amazon_title": "KikoSaka タイプc sdカードリーダー 2in1 USB Type C カメラアダプタ SD Micro SD 両対応",
+      "asin": "B0H8ZN5LLG",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/616iij5xPBL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "card_compatibility"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H8ZN5LLG",
+      "ref": "p2",
+      "search_key": "KikoSaka タイプc sdカードリーダー 2in1 USB",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "SD カードリーダー Type-C メモリカードリーダー 【2026 新登場】タイプ C カメラ SD リーダー 2in1 SD/TF変換アダプタ",
+      "asin": "B0H8NZ5BJF",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61H4vbyyGIL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "card_compatibility"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H8NZ5BJF",
+      "ref": "p3",
+      "search_key": "SD カードリーダー Type-C メモリカードリーダー タイプ",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "SD カードリーダー【2026 新登場】Type-C メモリカードリーダー 3in1 USB/SD/TF変換アダプタ USB3.0 OTG 機能搭載",
+      "asin": "B0H8NW6NW2",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61+L-d+UBxL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "card_compatibility"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H8NW6NW2",
+      "ref": "p4",
+      "search_key": "SD カードリーダー Type-C メモリカードリーダー 3in",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "SDカードリーダー タイプｃ/ライトニングー 【全スマホ対応 ・SUNTRSI 2026新型】i-phone カードリーダー Type-c アプリ不要 設定不要 OTG機能 双方向高速転送 3-in-1 USB/TF/SDカードカメラリーダー 写真/ビデオ/動画 i-Phone/i-Pad/Mac/Android/PC 最大1TB容量対応 【12ヵ月商品保障】(ホワイト)",
+      "asin": "B0H87RZ19J",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61WgeCg3xsL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "card_compatibility"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H87RZ19J",
+      "ref": "p5",
+      "search_key": "SDカードリーダー タイプｃ/ライトニングー i-phone カ",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "【YOFEEPOP】SDカードリーダー Type-C SD/MicroSD対応 USB3.0 OTG対応 iPhone17/16/15対応",
+      "asin": "B0H35SKYNW",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61ncKUFHaSL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "card_compatibility"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H35SKYNW",
+      "ref": "p6",
+      "search_key": "SDカードリーダー Type-C SD/MicroSD対応 US",
+      "selection_score": 0.31
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "card_compatibility",
+      "host_compatibility",
+      "transfer_conditions"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "usb-memory-card-readers"
+}
