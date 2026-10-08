@@ -180,7 +180,12 @@ def _runtime_paths(root: Path, surface_key: str) -> tuple[Path, Path]:
     safe = ''.join(ch if ch.isalnum() or ch in '-_' else '-' for ch in surface_key)
     directory = root / '.runtime' / 'sellemy-codex'
     directory.mkdir(parents=True, exist_ok=True)
-    brief_name = 'designer-brief.md' if surface_key == DESIGNER_SURFACE else 'brief.md'
+    if surface_key == DESIGNER_SURFACE:
+        brief_name = 'designer-brief.md'
+    elif surface_key in {PLANNING_SURFACE, 'bu-codex-sellemy-writer'}:
+        brief_name = 'brief.md'
+    else:
+        brief_name = f'{safe}-brief.md'
     return directory / f'{safe}.json', directory / brief_name
 
 
@@ -523,7 +528,30 @@ def _ensure_brief(path: Path, surface_key: str) -> None:
         return
     if surface_key == DESIGNER_SURFACE:
         raise CodexProviderError('Designer brief is missing')
+    safe = ''.join(ch if ch.isalnum() or ch in '-_' else '-' for ch in surface_key)
+    configured = Path(__file__).resolve().parents[1] / 'config' / f'codex-brief-{safe}.md'
+    if configured.is_file():
+        path.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(configured, path)
+        return
     path.write_text(BRIEF_FIXED + '- まだ蓄積知見なし。\n', encoding='utf-8')
+
+
+def _update_standard_brief(path: Path, learned: str) -> None:
+    current = path.read_text(encoding='utf-8')
+    marker = '## Learned\n'
+    if marker not in current:
+        raise CodexProviderError('Codex brief has no Learned section')
+    prefix = current.split(marker, 1)[0] + marker
+    path.write_text(prefix + (learned or '- 追加の恒久知見なし。') + '\n', encoding='utf-8')
+
+
+def _canon_bridge(root: Path, surface_key: str) -> Path:
+    safe = ''.join(ch if ch.isalnum() or ch in '-_' else '-' for ch in surface_key)
+    specific = root / 'config' / f'codex-canon-{safe}.md'
+    if specific.is_file():
+        return specific
+    return Path(__file__).resolve().parents[1] / 'config' / 'sellemy-codex-canon-bootstrap.md'
 
 
 def _designer_brief_version(text: str) -> int:
@@ -826,7 +854,7 @@ def _refresh_brief(command: tuple[str, ...], model: str, session_id: str, root: 
         if surface_key == DESIGNER_SURFACE:
             _update_designer_brief(brief_path, learned)
         else:
-            brief_path.write_text(BRIEF_FIXED + (learned or '- 追加の恒久知見なし。') + '\n', encoding='utf-8')
+            _update_standard_brief(brief_path, learned)
         return usage
 
 
@@ -882,7 +910,7 @@ def generate_persistent(command: tuple[str, ...], model: str, schema: dict, prom
         brief_refreshed = True
         turns = 0
 
-    canon_bridge = Path(__file__).resolve().parents[1] / 'config' / 'sellemy-codex-canon-bootstrap.md'
+    canon_bridge = _canon_bridge(root, surface_key)
     if not canon_bridge.is_file():
         raise CodexProviderError('Sellemy Codex canon bootstrap is missing')
     strict_schema = _strict_schema(schema)

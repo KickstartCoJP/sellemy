@@ -1,0 +1,20 @@
+{
+  "schema": "sellemy-short-ai-routing/v1",
+  "api": {"enabled": false},
+  "stages": {
+    "creative_authoring": {
+      "provider": "codex",
+      "codex_surface": "bu-codex-sellemy-short-creative",
+      "model": "gpt-6-astra",
+      "model_env": "SELLEMY_SHORT_CREATIVE_CODEX_MODEL",
+      "timeout_seconds": 420
+    },
+    "independent_creative_qa": {
+      "provider": "codex",
+      "codex_surface": "bu-codex-sellemy-short-qa",
+      "model": "gpt-6-astra",
+      "model_env": "SELLEMY_SHORT_QA_CODEX_MODEL",
+      "timeout_seconds": 420
+    }
+  }
+}

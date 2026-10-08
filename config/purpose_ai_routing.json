@@ -1,0 +1,20 @@
+{
+  "schema": "sellemy-purpose-ai-routing/v1",
+  "api": {"enabled": false},
+  "stages": {
+    "semantic_review": {
+      "provider": "codex",
+      "codex_surface": "bu-codex-sellemy-purpose-semantic",
+      "model": "gpt-6-astra",
+      "model_env": "SELLEMY_PURPOSE_SEMANTIC_CODEX_MODEL",
+      "timeout_seconds": 300
+    },
+    "independent_qa": {
+      "provider": "codex",
+      "codex_surface": "bu-codex-sellemy-purpose-qa",
+      "model": "gpt-6-astra",
+      "model_env": "SELLEMY_PURPOSE_QA_CODEX_MODEL",
+      "timeout_seconds": 300
+    }
+  }
+}
