@@ -51,15 +51,18 @@ class EyecatchAdapterTests(unittest.TestCase):
     def test_openai_api_route_is_authorized_and_receipted(self):
         payload, evidence = valid_payload(), valid_evidence()
         raw = fake_png()
-        with tempfile.TemporaryDirectory() as tmp, patch.dict(os.environ, {'EYECATCH_TEST_TOKEN': 'secret'}):
+        with tempfile.TemporaryDirectory() as tmp, patch.dict(os.environ, {'EYECATCH_TEST_TOKEN': 'secret', 'SELLEMY_OPENAI_PROJECT_ID': 'proj_test'}):
             out = Path(tmp) / 'hero.png'; receipt = Path(tmp) / 'receipt.json'
             generator = EyecatchGenerator(endpoint='https://api.openai.com/v1/images/generations', token_env='EYECATCH_TEST_TOKEN', provider='openai', model='gpt-image-test')
             response = {'data': [{'b64_json': base64.b64encode(raw).decode()}]}
             with patch('eyecatch_adapter.urllib.request.urlopen', return_value=_Response(response)) as call:
                 result = generator.generate(payload=payload, evidence=evidence, output=out, receipt_path=receipt)
             self.assertEqual(call.call_count, 1)
+            request = call.call_args.args[0]
+            self.assertEqual(request.get_header('Openai-project'), 'proj_test')
             self.assertEqual(result['generation_method'], 'openai_images_api')
             self.assertEqual(result['generation_route'], 'openai_images_api')
+            self.assertEqual(result['openai_project_id'], 'proj_test')
 
     def test_missing_endpoint_or_token_fails_closed(self):
         payload, evidence = valid_payload(), valid_evidence()

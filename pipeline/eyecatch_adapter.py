@@ -110,15 +110,19 @@ class EyecatchGenerator:
                     return receipt
                 raise EyecatchGenerationError('existing eyecatch receipt/file mismatch')
 
+        headers = {
+            'Authorization': 'Bearer ' + os.environ[self.token_env],
+            'Content-Type': 'application/json',
+            'Idempotency-Key': operation_id,
+        }
+        project_id = os.environ.get('SELLEMY_OPENAI_PROJECT_ID', '').strip()
+        if openai_route and project_id:
+            headers['OpenAI-Project'] = project_id
         req = urllib.request.Request(
             self.endpoint,
             data=request_body,
             method='POST',
-            headers={
-                'Authorization': 'Bearer ' + os.environ[self.token_env],
-                'Content-Type': 'application/json',
-                'Idempotency-Key': operation_id,
-            },
+            headers=headers,
         )
         try:
             with urllib.request.urlopen(req, timeout=self.timeout_seconds) as response:
@@ -148,6 +152,7 @@ class EyecatchGenerator:
             'provider': self.provider,
             'model': self.model,
             'quality': self.quality,
+            'openai_project_id': project_id if openai_route else None,
             'operation_id': operation_id,
             'request_sha256': request_sha,
             'image_sha256': _sha256_bytes(raw),

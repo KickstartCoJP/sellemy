@@ -13,9 +13,9 @@ cd "$ROOT"
 if [[ -f "$SECRETS" ]]; then set -a; source "$SECRETS"; set +a; fi
 SELLEMY_SECRETS="$HOME/Library/Application Support/Sellemy/secrets/openai.env"
 if [[ -f "$SELLEMY_SECRETS" ]]; then set -a; source "$SELLEMY_SECRETS"; set +a; fi
-if [[ "${SELLEMY_OPENAI_API_KEY:-}" != sk-* && "${OPENAI_API_KEY:-}" == sk-* ]]; then
-  export SELLEMY_OPENAI_API_KEY="$OPENAI_API_KEY"
-  echo "$(date -Iseconds) Sellemy dedicated OpenAI key unavailable; using general key for continuity" >&2
+export SELLEMY_OPENAI_PROJECT_ID=proj_FQX1hp1htxbdzR8vj2U2yE2W
+if [[ "${SELLEMY_OPENAI_API_KEY:-}" != sk-* ]]; then
+  echo "$(date -Iseconds) ERROR: Sellemy Designer API credential unavailable; selected API route will be recorded as failed and may fall back to Codex for publication continuity" >&2
 fi
 export SELLEMY_EYECATCH_ENDPOINT=https://api.openai.com/v1/images/generations
 export SELLEMY_EYECATCH_TOKEN_ENV=SELLEMY_OPENAI_API_KEY

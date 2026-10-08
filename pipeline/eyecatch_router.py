@@ -22,8 +22,8 @@ def _load_config() -> dict:
     data = json.loads(CONFIG_PATH.read_text(encoding='utf-8'))
     return {
         'mode': str(data.get('mode') or 'weighted_random'),
-        'codex_share': int(data.get('codex_share', 80)),
-        'api_share': int(data.get('api_share', 20)),
+        'codex_share': int(data.get('codex_share', 20)),
+        'api_share': int(data.get('api_share', 80)),
         'codex_reserve_percent': float(data.get('codex_reserve_percent', 20)),
         'api_fallback_on_codex_failure': bool(data.get('api_fallback_on_codex_failure', True)),
         'codex_fallback_on_api_failure': bool(data.get('codex_fallback_on_api_failure', True)),

@@ -17,8 +17,8 @@ class EyecatchRouterTests(unittest.TestCase):
     def config(self):
         return {
             'mode': 'weighted_random',
-            'codex_share': 80,
-            'api_share': 20,
+            'codex_share': 20,
+            'api_share': 80,
             'codex_reserve_percent': 20,
             'api_fallback_on_codex_failure': True,
             'codex_fallback_on_api_failure': True,
