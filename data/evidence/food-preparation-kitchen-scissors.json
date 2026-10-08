@@ -1,0 +1,136 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/food-preparation-kitchen-scissors.html",
+  "category": "dailygoods",
+  "comparison_axes": [
+    {
+      "id": "food_and_blade",
+      "keywords": [
+        "対象食材",
+        "直線刃",
+        "カーブ刃"
+      ],
+      "label": "対応する食材と刃の構造"
+    },
+    {
+      "id": "grip_dimensions",
+      "keywords": [
+        "指穴",
+        "全長",
+        "重量"
+      ],
+      "label": "持ち手の形と本体寸法"
+    },
+    {
+      "id": "cleaning",
+      "keywords": [
+        "分解",
+        "食洗機対応",
+        "乾燥"
+      ],
+      "label": "分解方法と洗浄条件"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/food-preparation-kitchen-scissors/food-preparation-kitchen-scissors.png",
+  "products": [
+    {
+      "amazon_title": "【ミシュラン掲載店オーナー愛用】キッチンバサミ キッチンハサミ 料理ばさみ 食洗機対応 分解 洗える ステンレス 青池隆明 AosTavola",
+      "asin": "B0H982112X",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61pnpOfl7rL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "cleaning"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H982112X",
+      "ref": "p1",
+      "search_key": "キッチンバサミ キッチンハサミ 料理ばさみ 食洗機対応 分解 洗",
+      "selection_score": 0.505
+    },
+    {
+      "amazon_title": "【雑誌掲載モデル】 キッチンバサミ キッチンはさみ 分解して洗える オールステンレス 食洗機対応 先細刃 ギザ刃 鶏肉 魚 衛生的 多機能 栓抜き 殻割り 蓋開け 持ち運び 鶏肉 魚 下処理 万能 まな板いらず(1本セット)",
+      "asin": "B0FV1SV6WY",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61wVOMbyNvL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "cleaning"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0FV1SV6WY",
+      "ref": "p2",
+      "search_key": "キッチンバサミ キッチンはさみ 分解して洗える オールステンレス",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "コモライフ ステンレス製 食事用ハサミ キッチン 料理 ばさみ ギザ刃 食洗機OK 分解して洗える ケース付",
+      "asin": "B0FRR4Q26X",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61ogXuxWLOL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "cleaning"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0FRR4Q26X",
+      "ref": "p3",
+      "search_key": "コモライフ ステンレス製 食事用ハサミ キッチン 料理 ばさみ",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "WORKPRO キッチンハサミ 料理ばさみ 多機能ハサミ 野菜 肉カット 食品調理 ステンレス鋼材質 鋭い切れ味 ナッツクラッカー 栓抜き 分解洗浄可能",
+      "asin": "B0FB84NZWY",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71MOOfQxnTL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "cleaning"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0FB84NZWY",
+      "ref": "p4",
+      "search_key": "WORKPRO キッチンハサミ 料理ばさみ 多機能ハサミ 野菜",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "厚刃 キッチンバサミ 骨切り対応 鶏骨・軟骨もカット 分解できる オールステンレス 食洗機対応 錆びにくい 多機能 調理ばさみ",
+      "asin": "B0F1F4W3VJ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61SLbONTNcL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "cleaning"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0F1F4W3VJ",
+      "ref": "p5",
+      "search_key": "厚刃 キッチンバサミ 骨切り対応 鶏骨・軟骨もカット 分解できる",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "キッチンバサミ 多機能 調理用はさみ ステンレス製 分解洗浄可 軽量 食洗機対応 ギザ刃付き 肉・魚・野菜・乾物に最適 栓抜き＆蓋開け対応 [並行輸入品]",
+      "asin": "B0DJ8MPTT8",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41ceZD1F1vL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "cleaning"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0DJ8MPTT8",
+      "ref": "p6",
+      "search_key": "キッチンバサミ 多機能 調理用はさみ ステンレス製 分解洗浄可",
+      "selection_score": 0.325
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "cleaning"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "food-preparation-kitchen-scissors"
+}
