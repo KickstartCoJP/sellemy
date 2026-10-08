@@ -6,6 +6,7 @@ import re
 import shlex
 import shutil
 import subprocess
+from responses_provider import LOG, route
 from dataclasses import dataclass
 from pathlib import Path
 from codex_provider import CodexProviderError, generate_persistent as codex_generate_persistent
@@ -173,7 +174,7 @@ def _invoke(provider: WriterProvider, prompt: str, *, usage_key: str = "") -> tu
     return payload, metadata
 
 
-def invoke_writer(topic: dict, evidence: dict, *, previous_payload: dict | None = None, gate_feedback: dict | None = None) -> tuple[dict, dict]:
+def _invoke_local_writer(topic: dict, evidence: dict, *, previous_payload: dict | None = None, gate_feedback: dict | None = None) -> tuple[dict, dict]:
     primary, secondary = _provider('primary'), _provider('secondary')
     prompt = _prompt(topic, evidence, previous_payload=previous_payload, gate_feedback=gate_feedback)
     requested = f'{primary.name}:{primary.model}'
@@ -185,6 +186,18 @@ def invoke_writer(topic: dict, evidence: dict, *, previous_payload: dict | None 
             raise
         if not secondary.command or not secondary.model or not secondary.certified:
             raise WriterInvocationError(f'{exc}; certified Secondary Writer unavailable', availability=True) from exc
+        LOG.warning('stage=writer provider=codex fallback=claude reason=local_provider_error')
         payload, metadata = _invoke(secondary, prompt, usage_key=str(topic.get('slug') or ''))
         used = f'{secondary.name}:{secondary.model}'
         return payload, {**metadata, 'writer_model_requested': requested, 'writer_model_used': used, 'writer_provider_requested': primary.kind, 'writer_provider_used': secondary.kind, 'fallback_used': True, 'fallback_reason': 'primary_availability_error', 'writer_attempt_count': 2}
+
+
+def invoke_writer(topic: dict, evidence: dict, *, previous_payload: dict | None = None, gate_feedback: dict | None = None) -> tuple[dict, dict]:
+    prompt = _prompt(topic, evidence, previous_payload=previous_payload, gate_feedback=gate_feedback)
+    return route(
+        'writer', WRITER_JSON_SCHEMA, prompt,
+        lambda: _invoke_local_writer(
+            topic, evidence, previous_payload=previous_payload, gate_feedback=gate_feedback
+        ),
+        escalate=bool(gate_feedback),
+    )

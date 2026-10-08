@@ -5,6 +5,7 @@ import os
 import re
 import shlex
 import subprocess
+from responses_provider import LOG, route
 from datetime import date
 from pathlib import Path
 
@@ -138,6 +139,14 @@ def _invoke_planning(kind: str, command: list[str], model: str, prompt: str, tim
 
 def discover_candidates() -> list[dict]:
     prompt = 'You plan Japanese Sellemy product-comparison topics. Generate fresh candidates from current season, search/purchase intent, product viability and the supplied context. Return structured JSON only.\n' + json.dumps(_context(), ensure_ascii=False)
+    def local():
+        batch = _discover_local_candidates(prompt)
+        return {'candidates': list(batch)}, batch.provider_metadata
+    value, metadata = route('planner', PLANNING_SCHEMA, prompt, local)
+    return CandidateBatch(value['candidates'], metadata)
+
+
+def _discover_local_candidates(prompt: str) -> list[dict]:
     timeout = int(os.environ.get('SELLEMY_PLANNING_TIMEOUT_SECONDS', '300'))
     pkind, pcommand, pmodel, _ = _planning_provider('primary')
     skind, scommand, smodel, scertified = _planning_provider('secondary')
@@ -149,6 +158,7 @@ def discover_candidates() -> list[dict]:
     except PlanningError as primary_error:
         if not scommand or not smodel or not scertified:
             raise PlanningError(f'{primary_error}; certified Secondary Planning unavailable') from primary_error
+        LOG.warning('stage=planner provider=codex fallback=claude reason=local_provider_error')
         value = _invoke_planning(skind, scommand, smodel, prompt, timeout)
         metadata.update({'planning_provider_used': f'{skind}:{smodel}',
                          'fallback_used': True, 'fallback_reason': 'primary_provider_error',

@@ -30,6 +30,8 @@ def candidate(slug='new-topic', category='beauty', score=.8):
 class ContinuousPlanningTests(unittest.TestCase):
     def _env(self):
         return {
+            'SELLEMY_PLANNER_API_WEIGHT': '0',
+            'SELLEMY_PLANNER_CODEX_WEIGHT': '100',
             'SELLEMY_PLANNING_PRIMARY_COMMAND': '/bin/codex',
             'SELLEMY_PLANNING_PRIMARY_KIND': 'codex',
             'SELLEMY_PLANNING_PRIMARY_MODEL': 'codex-model',

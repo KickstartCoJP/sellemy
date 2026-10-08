@@ -22,6 +22,8 @@ def completed(returncode=0, *, stderr='', payload=None):
 class WriterProviderTests(unittest.TestCase):
     def setUp(self):
         self.env = {
+            'SELLEMY_WRITER_API_WEIGHT': '0',
+            'SELLEMY_WRITER_CODEX_WEIGHT': '100',
             'SELLEMY_WRITER_PRIMARY_COMMAND': '/bin/codex',
             'SELLEMY_WRITER_PRIMARY_KIND': 'codex',
             'SELLEMY_WRITER_PRIMARY_MODEL': 'codex-model',

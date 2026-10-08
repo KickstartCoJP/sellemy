@@ -27,9 +27,10 @@ Thread memory is never business canon. Current canon and current task input win 
 - Final six products must be distinct identities. Different ASIN alone does not make a distinct product.
 - Comparison axes come from topic-specific purchase reasons, uses and meaningful performance differences. Fixed high/mid/low price bands are not the primary framework.
 - Evidence and identity gates are fail-closed. Never fabricate missing facts or relax QA to make publication succeed.
-- Production Planning/Writer primary route is canonical BU-002 Codex Member via local CLI resume; Claude CLI is availability fallback only.
-- Browser / Work and AI model APIs are not the normal production Planning/Writer route.
-- Production article eyecatch uses the Designer Router with Codex 20% / Sellemy Designer API 80%. The Codex route uses canonical Member `bu-codex-sellemy-designer` through local Codex CLI built-in `image_gen`; the API route uses OpenAI Images API with explicit Sellemy project attribution. Do not route generation to sellemy-ops Chat.
+- Production Planning/Writer use one shared canon bridge, runtime brief, Evidence contract, output schema, and downstream QA gates regardless of provider.
+- The Provider Router uses OpenAI Responses API with GPT-6.1 Sol for normal Planning/Writer turns and GPT-6 Astra only for quality escalation. Codex is the first runtime fallback and certified Claude remains the final availability fallback.
+- Browser / Work are not production Planning/Writer routes.
+- Production article eyecatch uses the Designer Router. Current route weights in `config/eyecatch_routing.json` are runtime-authoritative; Codex uses canonical Member `bu-codex-sellemy-designer` through local Codex CLI built-in `image_gen`, while the API route uses OpenAI Images API with explicit Sellemy project attribution. Do not route generation to sellemy-ops Chat.
 
 ## Planning Member contract
 Role ID: bu-codex-sellemy-planning

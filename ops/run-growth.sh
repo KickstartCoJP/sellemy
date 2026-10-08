@@ -1,4 +1,5 @@
 #!/bin/zsh
+set +x
 set -euo pipefail
 export PATH=/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
@@ -13,7 +14,20 @@ cd "$ROOT"
 if [[ -f "$SECRETS" ]]; then set -a; source "$SECRETS"; set +a; fi
 SELLEMY_SECRETS="$HOME/Library/Application Support/Sellemy/secrets/openai.env"
 if [[ -f "$SELLEMY_SECRETS" ]]; then set -a; source "$SELLEMY_SECRETS"; set +a; fi
-export SELLEMY_OPENAI_PROJECT_ID=proj_FQX1hp1htxbdzR8vj2U2yE2W
+for stage in planner writer; do
+  STAGE_SECRETS="$HOME/Library/Application Support/Sellemy/secrets/$stage.env"
+  if [[ -f "$STAGE_SECRETS" ]]; then set -a; source "$STAGE_SECRETS"; set +a; fi
+done
+export SELLEMY_PLANNER_API_WEIGHT=100
+export SELLEMY_PLANNER_CODEX_WEIGHT=0
+export SELLEMY_WRITER_API_WEIGHT=100
+export SELLEMY_WRITER_CODEX_WEIGHT=0
+export SELLEMY_PLANNER_OPENAI_MODEL=gpt-6.1-sol
+export SELLEMY_WRITER_OPENAI_MODEL=gpt-6.1-sol
+export SELLEMY_PLANNER_OPENAI_ESCALATION_MODEL=gpt-6-astra
+export SELLEMY_WRITER_OPENAI_ESCALATION_MODEL=gpt-6-astra
+# Use the project associated with the existing project-scoped API key.
+unset SELLEMY_OPENAI_PROJECT_ID
 if [[ "${SELLEMY_OPENAI_API_KEY:-}" != sk-* ]]; then
   echo "$(date -Iseconds) ERROR: Sellemy Designer API credential unavailable; selected API route will be recorded as failed and may fall back to Codex for publication continuity" >&2
 fi
@@ -23,7 +37,8 @@ export SELLEMY_EYECATCH_PROVIDER=openai
 export SELLEMY_EYECATCH_MODEL=gpt-image-2.5-sunburst
 export SELLEMY_EYECATCH_QUALITY=high
 export SELLEMY_EYECATCH_TIMEOUT_SECONDS=300
-# Planning / Writer: Codex is the primary local execution surface. Claude is the
+# Planning / Writer: Responses API is selected independently above; Codex is the
+# first fallback and Claude is the
 # certified local fallback. Browser/Work fallback is intentionally not in this route.
 export SELLEMY_WRITER_PRIMARY_COMMAND=/opt/homebrew/bin/codex
 export SELLEMY_WRITER_PRIMARY_KIND=codex
