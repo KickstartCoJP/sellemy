@@ -1,0 +1,125 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/folding-household-step-stools.html",
+  "category": "dailygoods",
+  "comparison_axes": [
+    {
+      "id": "standing_surface",
+      "keywords": [
+        "天板高さ",
+        "天板寸法",
+        "踏ざん幅",
+        "段差"
+      ],
+      "label": "天板の高さと足を置く面の寸法"
+    },
+    {
+      "id": "installation_load",
+      "keywords": [
+        "開脚時寸法",
+        "最大使用質量",
+        "床面の条件",
+        "開き止め"
+      ],
+      "label": "設置面積と使用荷重の条件"
+    },
+    {
+      "id": "handling_storage",
+      "keywords": [
+        "ロック操作",
+        "収納時厚さ",
+        "本体質量",
+        "持ち手"
+      ],
+      "label": "開閉操作と持ち運び・収納"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/folding-household-step-stools/folding-household-step-stools.png",
+  "products": [
+    {
+      "amazon_title": "脚立 3段 ホワイト 折りたたみ 踏み台 幅広ステップ 滑り止め ハンドル 省スペース 室内",
+      "asin": "B0HLCD4YLD",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61XShP3zx6L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HLCD4YLD",
+      "ref": "p1",
+      "search_key": "脚立 3段 ホワイト 折りたたみ 踏み台 幅広ステップ 滑り止め",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "MERDIVEN 脚立 3段 手すり付き ブラックト スチール製 耐荷重110kg 幅広ステップ 滑り止め 安定設計 折りたたみ式 踏み台 家庭用 室内 キッチン 高所作業 省スペース収納",
+      "asin": "B0HJBJY5KT",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61x4J8surHL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HJBJY5KT",
+      "ref": "p2",
+      "search_key": "MERDIVEN 脚立 3段 手すり付き ブラックト スチール製",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "踏み台 アルミ合金製 折りたたみ式 脚立 作業椅子 高さ49cm",
+      "asin": "B0HGQVB81S",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51rlT1i8SoL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HGQVB81S",
+      "ref": "p3",
+      "search_key": "踏み台 アルミ合金製 折りたたみ式 脚立 作業椅子 高さ49cm",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "famuka 踏み台 折りたたみ 2段 脚立 ステップ台 滑り止め 持ち運び 耐荷重150kg ステップチェア 椅子、グレー",
+      "asin": "B0H8CDGPB1",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51une+QXRIL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H8CDGPB1",
+      "ref": "p4",
+      "search_key": "famuka 踏み台 折りたたみ 2段 脚立 ステップ台 滑り止",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "折りたたみ脚立 4段 踏み台 耐荷重150kg スチール製 滑り止め付き 安定 コンパクト設計 省スペース(クリーム色, 3段)",
+      "asin": "B0GZ7TYKH6",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61nFi-Nf3hL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GZ7TYKH6",
+      "ref": "p5",
+      "search_key": "折りたたみ脚立 4段 踏み台 耐荷重150kg スチール製 滑り",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "脚立 4段 軽量 手すり付き 踏み台 折りたたみ 耐荷重130KG 室内 屋外用 キャタツ 持ち運び便利 (黒色,高さ61cm)",
+      "asin": "B0GVNQ8YHR",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71cnG6Jv0xL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GVNQ8YHR",
+      "ref": "p6",
+      "search_key": "脚立 4段 軽量 手すり付き 踏み台 折りたたみ 耐荷重130K",
+      "selection_score": 0.325
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "folding-household-step-stools"
+}
