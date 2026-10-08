@@ -46,6 +46,22 @@ class CodexProviderTests(unittest.TestCase):
             self.assertTrue(row['hard_threshold_exceeded'])
             self.assertTrue(row['rotation_due'])
 
+    def test_hard_threshold_overrides_legacy_rotation_block(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            session = '00000000-0000-4000-8000-000000000001'
+            codex_provider._write_context_control(root, {
+                'surfaces': {codex_provider.PLANNING_SURFACE: {
+                    'session_id': session,
+                    'hard_threshold_exceeded': True,
+                    'rotation_due': False,
+                    'rotation_blocked': True,
+                }}
+            })
+            self.assertTrue(codex_provider._context_rotation_due(
+                root, codex_provider.PLANNING_SURFACE, session
+            ))
+
     def test_probation_two_consecutive_quality_failures_require_rollback(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
@@ -71,6 +87,45 @@ class CodexProviderTests(unittest.TestCase):
                 root, codex_provider.PLANNING_SURFACE,
                 '00000000-0000-4000-8000-000000000002',
             ))
+
+    def test_quality_failure_reseeds_instead_of_restoring_old_thread(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            state_path, brief_path = codex_provider._runtime_paths(root, codex_provider.PLANNING_SURFACE)
+            brief_path.parent.mkdir(parents=True, exist_ok=True)
+            brief_path.write_text('brief')
+            state_path.write_text(json.dumps({'session_id': '00000000-0000-4000-8000-000000000002', 'turns': 1}))
+            codex_provider._write_context_control(root, {
+                'surfaces': {codex_provider.PLANNING_SURFACE: {
+                    'session_id': '00000000-0000-4000-8000-000000000002',
+                    'rollback_due': True,
+                    'last_rotation_old_thread': '00000000-0000-4000-8000-000000000001',
+                    'last_rotation_new_thread': '00000000-0000-4000-8000-000000000002',
+                }}
+            })
+            bindings = [
+                {'current_url': '00000000-0000-4000-8000-000000000002', 'binding_revision': 2},
+                {'current_url': '00000000-0000-4000-8000-000000000003', 'binding_revision': 3},
+            ]
+            archive = root / 'archive'; archive.mkdir()
+            with patch.object(codex_provider, '_member_binding', side_effect=bindings), \
+                 patch.object(codex_provider, '_archive_context', return_value=archive), \
+                 patch.object(codex_provider, '_start_compacted_thread', return_value=(
+                     '00000000-0000-4000-8000-000000000003', {'input_tokens': 10}
+                 )), \
+                 patch.object(codex_provider, '_run_binding_rotation', return_value={'ok': True}) as rotate, \
+                 patch.object(codex_provider, '_append_usage'):
+                result = codex_provider._rollback_context(
+                    ('/bin/codex',), 'model', root, codex_provider.PLANNING_SURFACE,
+                    state_path, brief_path, timeout=30,
+                )
+            self.assertTrue(result['quality_reseed'])
+            self.assertFalse(result['rollback'])
+            self.assertEqual(rotate.call_args.args[1], '00000000-0000-4000-8000-000000000002')
+            self.assertEqual(rotate.call_args.args[2], '00000000-0000-4000-8000-000000000003')
+            row = codex_provider._read_context_control(root)['surfaces'][codex_provider.PLANNING_SURFACE]
+            self.assertFalse(row['rotation_blocked'])
+            self.assertEqual(row['session_id'], '00000000-0000-4000-8000-000000000003')
 
     def test_probation_pass_resets_consecutive_failure_count(self):
         with tempfile.TemporaryDirectory() as tmp:

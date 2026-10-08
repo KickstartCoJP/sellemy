@@ -238,8 +238,10 @@ def _observe_context_usage(root: Path, surface_key: str, session_id: str, usage:
         'last_uncached_input_tokens': int(usage.get('uncached_input_tokens') or 0),
         'oversize_streak': streak,
         'hard_threshold_exceeded': hard_exceeded,
-        'rotation_due': bool(policy['enabled'] and not row.get('rotation_blocked') and (
-            hard_exceeded or streak >= int(policy['streak'])
+        'rotation_due': bool(policy['enabled'] and (
+            hard_exceeded or (
+                not row.get('rotation_blocked') and streak >= int(policy['streak'])
+            )
         )),
         'policy': policy,
         'observed_at': datetime.now(timezone.utc).isoformat(),
@@ -252,9 +254,9 @@ def _observe_context_usage(root: Path, surface_key: str, session_id: str, usage:
 def _context_rotation_due(root: Path, surface_key: str, session_id: str) -> bool:
     row = (_read_context_control(root).get('surfaces') or {}).get(surface_key) or {}
     return bool(
-        row.get('rotation_due')
-        and row.get('session_id') == session_id
+        row.get('session_id') == session_id
         and _context_policy(surface_key).get('enabled')
+        and (row.get('rotation_due') or row.get('hard_threshold_exceeded'))
     )
 
 
@@ -315,7 +317,7 @@ def _run_binding_rotation(surface_key: str, old_thread: str, new_thread: str, ar
     return _json_object(completed.stdout)
 
 
-def _rollback_context(root: Path, surface_key: str, state_path: Path, brief_path: Path) -> dict:
+def _rollback_context(command: tuple[str, ...], model: str, root: Path, surface_key: str, state_path: Path, brief_path: Path, *, timeout: int) -> dict:
     lock_path = root / '.runtime' / 'sellemy-codex' / 'context-rotation.lock'
     lock_path.parent.mkdir(parents=True, exist_ok=True)
     with lock_path.open('a+', encoding='utf-8') as handle:
@@ -325,41 +327,58 @@ def _rollback_context(root: Path, surface_key: str, state_path: Path, brief_path
         current = _member_binding(surface_key)
         if not row.get('rollback_due') or row.get('session_id') != current['current_url']:
             return {}
-        old_thread = str(row.get('last_rotation_old_thread') or '')
-        new_thread = str(row.get('last_rotation_new_thread') or '')
-        archive = Path(str(row.get('last_archive') or ''))
-        if not old_thread or current['current_url'] != new_thread or not archive.is_dir():
-            raise CodexProviderError('Context rollback evidence is incomplete')
+        failed_thread = current['current_url']
+        failed_archive = _archive_context(
+            root, surface_key, failed_thread, current, state_path, brief_path
+        )
+        replacement_thread, seed_usage = _start_compacted_thread(
+            command, model, root, surface_key, brief_path, timeout=timeout
+        )
         rotated = _run_binding_rotation(
-            surface_key, current['current_url'], old_thread,
-            'rollback:' + str(archive),
+            surface_key, failed_thread, replacement_thread,
+            'quality-reseed:' + str(failed_archive),
         )
         readback = _member_binding(surface_key)
-        if readback['current_url'] != old_thread:
-            raise CodexProviderError('Context rollback canonical read-back mismatch')
-        archived_state = _read_state(archive / state_path.name)
+        if readback['current_url'] != replacement_thread:
+            raise CodexProviderError('Context quality reseed canonical read-back mismatch')
+        _append_usage(
+            root, surface_key, stage='context_quality_reseed', model=model,
+            session_id=replacement_thread, session_turn=0, usage=seed_usage,
+        )
         _write_state(state_path, {
             'surface_key': surface_key,
-            'session_id': old_thread,
-            'turns': int(archived_state.get('turns') or 0),
-            'model': archived_state.get('model') or '',
+            'session_id': replacement_thread,
+            'turns': 0,
+            'model': model,
             'brief_path': str(brief_path),
             'member_binding_revision': readback['binding_revision'],
         })
         row.update({
-            'session_id': old_thread,
+            'session_id': replacement_thread,
             'rollback_due': False,
             'rotation_due': False,
-            'rotation_blocked': True,
+            'rotation_blocked': False,
+            'hard_threshold_exceeded': False,
             'oversize_streak': 0,
-            'probation_remaining': 0,
-            'last_rollback_at': datetime.now(timezone.utc).isoformat(),
-            'last_rollback_from_thread': new_thread,
-            'last_rollback_to_thread': old_thread,
+            'probation_remaining': 10,
+            'probation_quality_checks': 0,
+            'probation_quality_passes': 0,
+            'probation_quality_failures': 0,
+            'probation_consecutive_failures': 0,
+            'last_reseed_at': datetime.now(timezone.utc).isoformat(),
+            'last_reseed_from_thread': failed_thread,
+            'last_reseed_to_thread': replacement_thread,
+            'last_reseed_archive': str(failed_archive),
         })
         control.setdefault('surfaces', {})[surface_key] = row
         _write_context_control(root, control)
-        return {**rotated, 'rollback': True, 'rollback_archive': str(archive)}
+        return {
+            **rotated,
+            'rollback': False,
+            'quality_reseed': True,
+            'reseed_archive': str(failed_archive),
+            'seed_usage': seed_usage,
+        }
 
 
 def _archive_context(root: Path, surface_key: str, session_id: str, binding: dict,
@@ -434,10 +453,15 @@ def _rotate_context(command: tuple[str, ...], model: str, root: Path, surface_ke
         if not _context_rotation_due(root, surface_key, fresh['current_url']):
             return {}
 
-        brief_usage = _refresh_brief(
-            command, model, fresh['current_url'], root, brief_path,
-            timeout=timeout, surface_key=surface_key,
-        )
+        control_before = _read_context_control(root)
+        row_before = dict((control_before.get('surfaces') or {}).get(surface_key) or {})
+        hard_exceeded = bool(row_before.get('hard_threshold_exceeded'))
+        brief_usage = {}
+        if not hard_exceeded:
+            brief_usage = _refresh_brief(
+                command, model, fresh['current_url'], root, brief_path,
+                timeout=timeout, surface_key=surface_key,
+            )
         archive = _archive_context(
             root, surface_key, fresh['current_url'], fresh, state_path, brief_path
         )
@@ -450,11 +474,12 @@ def _rotate_context(command: tuple[str, ...], model: str, root: Path, surface_ke
         readback = _member_binding(surface_key)
         if readback['current_url'] != new_thread:
             raise CodexProviderError('Canonical Codex binding rotation read-back mismatch')
-        _append_usage(
-            root, surface_key, stage='brief_refresh', model=model,
-            session_id=fresh['current_url'], session_turn=int((_read_state(state_path).get('turns') or 0)) + 1,
-            usage=brief_usage,
-        )
+        if brief_usage:
+            _append_usage(
+                root, surface_key, stage='brief_refresh', model=model,
+                session_id=fresh['current_url'], session_turn=int((_read_state(state_path).get('turns') or 0)) + 1,
+                usage=brief_usage,
+            )
         _append_usage(
             root, surface_key, stage='context_seed', model=model,
             session_id=new_thread, session_turn=0, usage=seed_usage,
@@ -824,7 +849,9 @@ def generate_persistent(command: tuple[str, ...], model: str, schema: dict, prom
     state = _read_state(state_path)
     context_rollback = {}
     if _context_rollback_due(root, surface_key, session_id):
-        context_rollback = _rollback_context(root, surface_key, state_path, brief_path)
+        context_rollback = _rollback_context(
+            command, model, root, surface_key, state_path, brief_path, timeout=timeout
+        )
         binding = _member_binding(surface_key)
         session_id = binding['current_url']
         state = _read_state(state_path)

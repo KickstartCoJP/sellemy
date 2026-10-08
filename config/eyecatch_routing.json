@@ -1,7 +1,7 @@
 {
   "mode": "weighted_random",
-  "codex_share": 20,
-  "api_share": 80,
+  "codex_share": 0,
+  "api_share": 100,
   "codex_reserve_percent": 20,
   "api_fallback_on_codex_failure": true,
   "codex_fallback_on_api_failure": true,
