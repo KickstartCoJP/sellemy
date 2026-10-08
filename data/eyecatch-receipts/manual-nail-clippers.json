@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-10-08T01:39:56.420561+00:00",
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "generation_route_attestation": "codex_rollout_extension",
+  "height": 1024,
+  "image_generation_internal_usage_exposed": false,
+  "image_sha256": "5cafaed096f60245e00937da8ce5878621915cb02fc071dbcfedab0fd7c8c776",
+  "member_binding_revision": 8,
+  "model": "gpt-6-astra",
+  "model_reported_generation_route": "built-in_image_gen",
+  "role_id": "bu-codex-sellemy-designer",
+  "routing": {
+    "api_share": 20,
+    "codex_reserve_percent": 20.0,
+    "codex_share": 80,
+    "codex_usage": {
+      "remaining_percent": 53.0,
+      "resets_at": 1791949050,
+      "source": "/Users/kickstart/.codex/sessions/2026/10/08/rollout-2026-10-08T00-17-21-01a116f0-c70b-7162-a769-fe916dda3cf8.jsonl",
+      "used_percent": 47.0,
+      "window_minutes": 10080
+    },
+    "errors_before_success": [],
+    "executed_route": "codex",
+    "fallback_from": null,
+    "mode": "weighted_random",
+    "reason": "weighted_random",
+    "remaining_percent": 53.0,
+    "roll": 62,
+    "selected_route": "codex",
+    "total_weight": 100
+  },
+  "routing_recorded_at": "2026-10-08T01:39:56.421621+00:00",
+  "summary": "爪の手入れ前の身支度場面。手動爪切りの刃先・開口部・操作レバーを明瞭に表現。PNG形式・1536×1024と画像内容を検証済み。",
+  "thread_id": "01a111a0-344e-74b1-99da-7cee59ca6cf0",
+  "token_usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 899456,
+    "input_tokens": 912493,
+    "output_tokens": 772,
+    "reasoning_output_tokens": 0,
+    "total_tokens": 913265,
+    "uncached_input_tokens": 13037
+  },
+  "token_usage_source": "codex_rollout.turn_token_usage",
+  "visual_family": "Close-up / Texture",
+  "width": 1536
+}

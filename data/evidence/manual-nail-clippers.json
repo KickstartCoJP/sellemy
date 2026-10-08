@@ -1,0 +1,129 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/manual-nail-clippers.html",
+  "category": "beauty",
+  "comparison_axes": [
+    {
+      "id": "blade_and_target",
+      "keywords": [
+        "直線刃",
+        "曲線刃",
+        "手の爪",
+        "足の爪"
+      ],
+      "label": "刃の形と対象の爪"
+    },
+    {
+      "id": "opening_dimensions",
+      "keywords": [
+        "刃幅",
+        "開口幅",
+        "全長",
+        "サイズ表示"
+      ],
+      "label": "刃の開口部と本体寸法"
+    },
+    {
+      "id": "handling_and_cleanup",
+      "keywords": [
+        "てこ式",
+        "ニッパー式",
+        "キャッチャー",
+        "付属やすり"
+      ],
+      "label": "握り方と切った爪の処理"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/manual-nail-clippers/manual-nail-clippers.png",
+  "products": [
+    {
+      "amazon_title": "【刃が爪と指の間に入りやすい】 直線刃爪切り カットラインがわかりやすい 巻爪･爪の角に最適 Lサイズ 7.5×2cm",
+      "asin": "B0D8GFDW44",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/512T+RhbveL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "blade_and_target"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0D8GFDW44",
+      "ref": "p1",
+      "search_key": "直線刃爪切り カットラインがわかりやすい 巻爪･爪の角に最適 L",
+      "selection_score": 0.49
+    },
+    {
+      "amazon_title": "Wanheart 爪切り 日本製 420J2ステンレス 精密アーチ刃 特大開口 飛散防止 爪やすり2面付き 収納ケース付き 手足用",
+      "asin": "B0HF4MGDLC",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81LraXnqs+L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HF4MGDLC",
+      "ref": "p2",
+      "search_key": "Wanheart 爪切り 日本製 420J2ステンレス 精密アー",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "【Amazon.co.jp限定】爪切り 日本製ステンレス【anan掲載モデル】 つめきり 高級 飛散防止 爪切りセット",
+      "asin": "B0H7X97MZW",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61BNWPK8qYL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H7X97MZW",
+      "ref": "p3",
+      "search_key": "爪切り 日本製ステンレス つめきり 高級 飛散防止 爪切りセット",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "【Amazon.co.jp限定】爪切り ニッパー 巻き爪用爪切り 足用 厚い爪 肥厚爪 高齢者向け 高硬度ステンレス鋼 特大開口 鋭利な極細刃先 滑り止めハンドル 安全キャップ付き 丸洗い可能 手足両用 ネイルケア 敬老の日 父の日 母の日 ギフト",
+      "asin": "B0H6Q8D9MD",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/716zUiOLXrL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H6Q8D9MD",
+      "ref": "p4",
+      "search_key": "爪切り ニッパー 巻き爪用爪切り 足用 厚い爪 肥厚爪 高齢者向",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "爪切り【現役ネイリスト推薦】高級 ステンレス 飛び散り防止 爪やすり付き ネイルクリッパー 手 足用 ルミナエ Mサイズ（標準）",
+      "asin": "B0H6DHCB52",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71U4elXPyWL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H6DHCB52",
+      "ref": "p5",
+      "search_key": "爪切り 高級 ステンレス 飛び散り防止 爪やすり付き ネイルクリ",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "【2026業界最新傑作】自動爪削り 爪切り電動 電動 爪やすり 電動爪切り 電動つめきり LEDライト Type-C充電式 2段階スピード 便利 超軽量 爪削り 爪の傷を防止 安全 低騒音 電動爪削り 家族みんなで使える角質ケアアイテムです 子供・大人・高齢者のどなたにも適しており、安全スイッチを搭載。取扱説明書も同梱しています (オフホワイト)",
+      "asin": "B0H41FV4M9",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41CFwGhY+CL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H41FV4M9",
+      "ref": "p6",
+      "search_key": "自動爪削り 爪切り電動 電動 爪やすり 電動爪切り 電動つめきり",
+      "selection_score": 0.31
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "blade_and_target"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "manual-nail-clippers"
+}
