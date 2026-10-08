@@ -1,0 +1,129 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/manual-eyelash-curlers.html",
+  "category": "beauty",
+  "comparison_axes": [
+    {
+      "id": "frame_geometry",
+      "keywords": [
+        "開口幅",
+        "カーブ形状",
+        "全体用",
+        "部分用"
+      ],
+      "label": "フレームの幅とカーブ"
+    },
+    {
+      "id": "handle_and_operation",
+      "keywords": [
+        "ハンドル形状",
+        "支柱位置",
+        "開閉構造",
+        "使用手順"
+      ],
+      "label": "持ち手と挟む操作"
+    },
+    {
+      "id": "rubber_and_care",
+      "keywords": [
+        "対応替えゴム品番",
+        "交換目安",
+        "汚れの拭き取り",
+        "保管方法"
+      ],
+      "label": "替えゴムの適合と手入れ"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/manual-eyelash-curlers/manual-eyelash-curlers.png",
+  "products": [
+    {
+      "amazon_title": "カーラー ビューラー 部分用 目尻 目頭 下まつげ 替えゴム 替えラバー 予備 アイメイク まつげ カール 上向き 付け替え 専用",
+      "asin": "B0FWXTP68J",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71Zi6OWLpuL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "frame_geometry"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0FWXTP68J",
+      "ref": "p1",
+      "search_key": "カーラー ビューラー 部分用 目尻 目頭 下まつげ 替えゴム 替",
+      "selection_score": 0.49
+    },
+    {
+      "amazon_title": "ビューラー 替えゴム3個付き アイラッシュカーラー まつ毛カーラー 広角カーブ 根元からカール 自然な上向きまつ毛 クロムメッキ仕上げ 携帯用 メイクツール",
+      "asin": "B0H3QR8QX2",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/6197iVxiEgL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H3QR8QX2",
+      "ref": "p2",
+      "search_key": "ビューラー 替えゴム3個付き アイラッシュカーラー まつ毛カーラ",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "ビューラー 本体 替えゴム セット 幅狭カーラー まぶた まつげ フィットしやすい シリコーンゴム やわらかめのゴム",
+      "asin": "B0FXDWLX4C",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51+6-8TXubL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FXDWLX4C",
+      "ref": "p3",
+      "search_key": "ビューラー 本体 替えゴム セット 幅狭カーラー まぶた まつげ",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "ビューラー 替えゴム カーラー まつげ アイメイク カール 上向き シリコンゴム",
+      "asin": "B0FWXMTMWZ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71c2bpSLkEL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FWXMTMWZ",
+      "ref": "p4",
+      "search_key": "ビューラー 替えゴム カーラー まつげ アイメイク カール 上向",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "コージー本舗 ビューラー 替えゴム セット カービングアイラッシュカーラー本体と替えゴム1個セット",
+      "asin": "B0FWBVWY7N",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71gMMDosfvL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FWBVWY7N",
+      "ref": "p5",
+      "search_key": "コージー本舗 ビューラー 替えゴム セット カービングアイラッシ",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "コージー本舗 カービングアイラッシュカーラー ビューラー用 替えゴム 3個セット 3個",
+      "asin": "B0FW9VBDDK",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71Xq5ZvxRGL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FW9VBDDK",
+      "ref": "p6",
+      "search_key": "コージー本舗 カービングアイラッシュカーラー ビューラー用 替え",
+      "selection_score": 0.31
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "frame_geometry"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "manual-eyelash-curlers"
+}
