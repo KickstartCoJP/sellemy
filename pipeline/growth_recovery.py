@@ -274,6 +274,9 @@ def mark_published(slug: str, commit: str) -> dict:
     state['current_stage'] = 'PUBLISHED'
     state['published_commit'] = commit
     state['next_retry_at'] = None
+    state['last_failure_class'] = None
+    state['last_failure_code'] = None
+    state['last_failure_reason'] = None
     return _save_state(state, event='PUBLISHED', detail={'commit': commit})
 
 
