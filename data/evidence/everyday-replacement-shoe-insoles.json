@@ -1,0 +1,128 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/everyday-replacement-shoe-insoles.html",
+  "category": "dailygoods",
+  "comparison_axes": [
+    {
+      "id": "shoe_fit",
+      "keywords": [
+        "対応靴種",
+        "全長",
+        "前足部の厚さ",
+        "かかとの厚さ",
+        "元の中敷きの取り外し"
+      ],
+      "label": "対応する靴と厚さ・寸法"
+    },
+    {
+      "id": "shape_material",
+      "keywords": [
+        "フラット",
+        "アーチ形状",
+        "ヒールカップ",
+        "表面素材",
+        "クッション材"
+      ],
+      "label": "足を受ける形と素材構成"
+    },
+    {
+      "id": "adjustment_care",
+      "keywords": [
+        "カット可否",
+        "サイズ目安",
+        "左右",
+        "水洗い",
+        "乾燥方法"
+      ],
+      "label": "サイズ調整と手入れの条件"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/everyday-replacement-shoe-insoles/everyday-replacement-shoe-insoles.png",
+  "products": [
+    {
+      "amazon_title": "【衝撃吸収 × 扁平足】 インソール 疲れない 【人間工学】 立ち仕事 中敷き 男女兼用",
+      "asin": "B0HGWNRWTP",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81wDcs9bYzL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HGWNRWTP",
+      "ref": "p1",
+      "search_key": "インソール 疲れない 立ち仕事 中敷き 男女兼用",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "インソール 【3Dアーチサポート・サイズ調整可能】衝撃吸収 土踏まず 中敷き アーチサポート メンズ レディース",
+      "asin": "B0HFVB4TQM",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71AfAK4WgLL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HFVB4TQM",
+      "ref": "p2",
+      "search_key": "インソール 衝撃吸収 土踏まず 中敷き アーチサポート メンズ",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "クツグッズ （雲のような） インソール 疲れない 立ち仕事 なかじき 靴 衝撃吸収 中敷き スニーカー (L)",
+      "asin": "B0GSCN156C",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71FQRaH0oML._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GSCN156C",
+      "ref": "p3",
+      "search_key": "クツグッズ （雲のような） インソール 疲れない 立ち仕事 なか",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "インソール 衝撃吸収 中敷き 【理学療法士監修・人体工学・クッション性UP】 なかじき 靴 疲れない 姿勢矯正 扁平足 O脚 痩せる 消臭 抗菌 通気性 立ち仕事 男女兼用（ブラック，L)",
+      "asin": "B0FVL4LNHK",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71nIciJWe9L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FVL4LNHK",
+      "ref": "p4",
+      "search_key": "インソール 衝撃吸収 中敷き なかじき 靴 疲れない 姿勢矯正",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "[TARKINS] ハーフ インソール 【理学療法士ｘ作業療法士のW監修ｘレッド•ドット賞受賞】 扁平足 インソール 疲れない 中敷き（Ｓサイズ）",
+      "asin": "B0FPX5MHD3",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71fUS5qvMjL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FPX5MHD3",
+      "ref": "p5",
+      "search_key": "ハーフ インソール 扁平足 インソール 疲れない 中敷き（Ｓサイ",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "【特許のエアクッション衝撃吸収新技術】 インソール 衝撃吸収 中敷き 【履くだけで疲労軽減・超軽量・クッション性UP】なかじき 靴 疲れない 姿勢矯正 扁平足 O脚 痩せる 消臭 立ち仕事 男女兼用 サイズ調整 (ブラック, XL)",
+      "asin": "B0F6MJH2FF",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81VUMOIp-NL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0F6MJH2FF",
+      "ref": "p6",
+      "search_key": "インソール 衝撃吸収 中敷き なかじき 靴 疲れない 姿勢矯正",
+      "selection_score": 0.3
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "everyday-replacement-shoe-insoles"
+}
