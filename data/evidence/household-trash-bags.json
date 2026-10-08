@@ -1,0 +1,137 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/household-trash-bags.html",
+  "category": "dailygoods",
+  "comparison_axes": [
+    {
+      "id": "bin_fit",
+      "keywords": [
+        "袋幅",
+        "長さ",
+        "マチ",
+        "容量表示",
+        "ゴミ箱寸法"
+      ],
+      "label": "ゴミ箱に合わせる幅・長さ・マチ"
+    },
+    {
+      "id": "film_specification",
+      "keywords": [
+        "ポリエチレン",
+        "厚さ",
+        "耐荷重表示",
+        "使用上の注意"
+      ],
+      "label": "材質・厚さ・用途制限"
+    },
+    {
+      "id": "closure_disposal",
+      "keywords": [
+        "持ち手",
+        "結び方",
+        "透明",
+        "半透明",
+        "自治体指定"
+      ],
+      "label": "口の形と収集ルールへの適合"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/household-trash-bags/household-trash-bags.png",
+  "products": [
+    {
+      "amazon_title": "ワタナベ工業 ゴミ袋 極厚 重量物廃棄袋 45L 透明 5枚入 約65×80cm 厚さ0.1mm日本製 業務用 丈夫 破れにくい ツルツルタイプ J-65C",
+      "asin": "B07T9JW74J",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61elQAGFSmL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "closure_disposal",
+        "film_specification"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B07T9JW74J",
+      "ref": "p1",
+      "search_key": "ワタナベ工業 ゴミ袋 極厚 重量物廃棄袋 45L 透明 5枚入",
+      "selection_score": 0.67
+    },
+    {
+      "amazon_title": "日本DaiwaAlax ゴミ袋 ポリ袋 厚手 重量物対応 業務用 70L 10枚 横80cm縦90cm 厚み0.03mm ごみ袋",
+      "asin": "B0HJN7SGS5",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61Um348VeJL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HJN7SGS5",
+      "ref": "p2",
+      "search_key": "日本DaiwaAlax ゴミ袋 ポリ袋 厚手 重量物対応 業務用",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "平口ゴミ袋 180L 100×120cm 20枚入 厚手・破れにくい・無臭 防災用品",
+      "asin": "B0GCHXD436",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71MzEhirhyL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GCHXD436",
+      "ref": "p3",
+      "search_key": "平口ゴミ袋 180L 100×120cm 20枚入 厚手・破れに",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "SANIPAK 省資源 ゴミ袋 45L (白半透明 / 200枚) 箱入り ビニール袋 白半透明ゴミ袋 ポリ袋 (0.012mm)",
+      "asin": "B0G7F69CQR",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/719na6QDMRL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "closure_disposal"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0G7F69CQR",
+      "ref": "p4",
+      "search_key": "SANIPAK 省資源 ゴミ袋 45L (白半透明 / 200枚",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "O2frepak 平口ゴミ袋 180L 100×120cm 20枚入 厚手・破れにくい・無臭 防災用品",
+      "asin": "B0DKDT21J8",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71unJj2tqqL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0DKDT21J8",
+      "ref": "p5",
+      "search_key": "O2frepak 平口ゴミ袋 180L 100×120cm 20",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "ジャパックス 業務用 ポリ袋 20L 重量物対応 透明 10枚 特厚 0.1mm PL210",
+      "asin": "B0CNG3BYDP",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/712XnngzD4L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "closure_disposal"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0CNG3BYDP",
+      "ref": "p6",
+      "search_key": "ジャパックス 業務用 ポリ袋 20L 重量物対応 透明 10枚",
+      "selection_score": 0.31
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "closure_disposal",
+      "film_specification"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "household-trash-bags"
+}
