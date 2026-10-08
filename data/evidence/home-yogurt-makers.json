@@ -1,0 +1,135 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/home-yogurt-makers.html",
+  "category": "gadget",
+  "comparison_axes": [
+    {
+      "id": "container_compatibility",
+      "keywords": [
+        "牛乳パック",
+        "専用容器",
+        "対応寸法",
+        "調理容量"
+      ],
+      "label": "対応する容器と調理量"
+    },
+    {
+      "id": "fermentation_settings",
+      "keywords": [
+        "設定温度",
+        "設定時間",
+        "自動メニュー",
+        "指定材料"
+      ],
+      "label": "温度・時間設定と対応レシピ"
+    },
+    {
+      "id": "preparation_and_cleaning",
+      "keywords": [
+        "容器消毒",
+        "ふた",
+        "付属スプーン",
+        "洗浄条件"
+      ],
+      "label": "調理前の準備と部品の洗浄"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/home-yogurt-makers/home-yogurt-makers.png",
+  "products": [
+    {
+      "amazon_title": "コンパクト ヨーグルトメーカー全自動 甘酒メーカー 軽量コンパクト ガラス容器付き 牛乳パック対応 低温調理 飲むヨーグルト",
+      "asin": "B0GXJ7K1XG",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51QPsIgSDEL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "container_compatibility"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GXJ7K1XG",
+      "ref": "p1",
+      "search_key": "コンパクト ヨーグルトメーカー全自動 甘酒メーカー 軽量コンパク",
+      "selection_score": 0.505
+    },
+    {
+      "amazon_title": "曙産業 水切りヨーグルトメーカー スプーン付き 市販のヨーグルト1パックが丸ごと入る 水切りヨーグルトができる容器 日本製 ST-3000",
+      "asin": "B0GL241DMG",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61Tev8kRx9L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GL241DMG",
+      "ref": "p2",
+      "search_key": "曙産業 水切りヨーグルトメーカー スプーン付き 市販のヨーグルト",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "自家製ヨーグルト・豆乳・牛乳用 水切り専用容器 1100ml 再利用可能 ストレーナー ポット",
+      "asin": "B0FHQ8TZDT",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61ITTATnvQL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "container_compatibility"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0FHQ8TZDT",
+      "ref": "p3",
+      "search_key": "自家製ヨーグルト・豆乳・牛乳用 水切り専用容器 1100ml 再",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "モノエルナチュリ ヨーグルトメーカー 容器 1L | 替えボトル 縦型 保存容器 プラスチック | 汎用 発酵メーカー 甘酒 麹 | Hacoris 対応",
+      "asin": "B0DSP44CPB",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51wUJn1m0TL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0DSP44CPB",
+      "ref": "p4",
+      "search_key": "モノエルナチュリ ヨーグルトメーカー 容器 1L | 替えボトル",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "ヨーグルト水切り 手作り 水切りヨーグルト 容器 大容量 1100ml ヨーグルト メーカー 自家製 豆乳 牛乳 ヨーグルトメーカー 容器 保存容器 濃厚 ヨグルトメーカー 水切りヨーグルトができる容器 が簡単につくれる専用容器 家庭用 再利用可能",
+      "asin": "B0DBVZBSWK",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71fiHkVu-lL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "container_compatibility"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0DBVZBSWK",
+      "ref": "p5",
+      "search_key": "ヨーグルト水切り 手作り 水切りヨーグルト 容器 大容量 110",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "発酵食メーカー ヨーグルトメーカー 牛乳パック対応 温度調整可能 飲むヨーグルト 簡単手作り 甘酒 カスピ海 ギリシャヨーグルト 塩麹 納豆 内部容器があります",
+      "asin": "B0DB8MJC4M",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51ErW-UgjNL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "container_compatibility"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0DB8MJC4M",
+      "ref": "p6",
+      "search_key": "発酵食メーカー ヨーグルトメーカー 牛乳パック対応 温度調整可能",
+      "selection_score": 0.325
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "container_compatibility"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "home-yogurt-makers"
+}
