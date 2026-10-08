@@ -1,0 +1,130 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/home-ethernet-switches.html",
+  "category": "gadget",
+  "comparison_axes": [
+    {
+      "id": "port_allocation",
+      "keywords": [
+        "総ポート数",
+        "ルーター接続分",
+        "ポートごとの対応規格"
+      ],
+      "label": "ポート数と接続構成"
+    },
+    {
+      "id": "network_conditions",
+      "keywords": [
+        "リンク速度",
+        "LANケーブル規格",
+        "自動速度調整"
+      ],
+      "label": "接続機器と配線の対応条件"
+    },
+    {
+      "id": "placement_power",
+      "keywords": [
+        "本体寸法",
+        "壁掛け対応",
+        "ファンの有無"
+      ],
+      "label": "設置方法と電源・動作音の条件"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/home-ethernet-switches/home-ethernet-switches.png",
+  "products": [
+    {
+      "amazon_title": "UGREEN スイッチングハブ 16ポート ギガビット LANハブ 1000Mbps 壁掛け対応 プラグ＆プレイ 金属筐体 PSE認証取得 ACアダプター",
+      "asin": "B0FMRXM2KD",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51f0Dra1gtL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "placement_power"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0FMRXM2KD",
+      "ref": "p1",
+      "search_key": "UGREEN スイッチングハブ 16ポート ギガビット LANハ",
+      "selection_score": 0.49
+    },
+    {
+      "amazon_title": "サンワダイレクト スイッチングハブ Giga対応 AUTO-MDIX機能搭載 3ポート 2分配 アルミ筐体 USB給電 500-SWH012",
+      "asin": "B0GK6NZ5BV",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61TPABtxa9L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GK6NZ5BV",
+      "ref": "p2",
+      "search_key": "サンワダイレクト スイッチングハブ Giga対応 AUTO-MD",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "UGREEN スイッチングハブ 5 ポートギガビット Giga対応 LANハブ 簡単設置 コンパクト",
+      "asin": "B0FW4NJQLF",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/6146H2dwilL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FW4NJQLF",
+      "ref": "p3",
+      "search_key": "UGREEN スイッチングハブ 5 ポートギガビット Giga対",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "UGREEN スイッチングハブ 8ポートギガビット Giga対応 LANハブ 簡単設置 コンパクト",
+      "asin": "B0FW4K3DJ9",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/610O0ngBgQL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FW4K3DJ9",
+      "ref": "p4",
+      "search_key": "UGREEN スイッチングハブ 8ポートギガビット Giga対応",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "バッファロー 5ポート Giga対応 スイッチングハブ 金属筐体 電源外付け 壁掛け対応 LSW-5GSE/NBK",
+      "asin": "B0FBM9JFD2",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61rHJsHXzLL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "placement_power"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0FBM9JFD2",
+      "ref": "p5",
+      "search_key": "バッファロー 5ポート Giga対応 スイッチングハブ 金属筐体",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "バッファロー 8ポート Giga対応 スイッチングハブ 金属筐体 電源外付け 壁掛け対応 LSW-8GSE/NBK",
+      "asin": "B0FBM8PXK2",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61O-5rgiMjL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "placement_power"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0FBM8PXK2",
+      "ref": "p6",
+      "search_key": "バッファロー 8ポート Giga対応 スイッチングハブ 金属筐体",
+      "selection_score": 0.31
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "placement_power"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "home-ethernet-switches"
+}

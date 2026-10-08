@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-10-08T04:48:21.473122+00:00",
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "generation_route_attestation": "codex_rollout_extension",
+  "height": 1024,
+  "image_generation_internal_usage_exposed": false,
+  "image_sha256": "b34a14e931f7961d01070b075e9d3b81effa63a979752b4287b10015b319f2d1",
+  "member_binding_revision": 8,
+  "model": "gpt-6-astra",
+  "model_reported_generation_route": "built-in_image_gen",
+  "role_id": "bu-codex-sellemy-designer",
+  "routing": {
+    "api_share": 20,
+    "codex_reserve_percent": 20.0,
+    "codex_share": 80,
+    "codex_usage": {
+      "remaining_percent": 48.0,
+      "resets_at": 1791949050,
+      "source": "/Users/kickstart/.codex/sessions/2026/10/08/rollout-2026-10-08T00-17-21-01a116f0-c70b-7162-a769-fe916dda3cf8.jsonl",
+      "used_percent": 52.0,
+      "window_minutes": 10080
+    },
+    "errors_before_success": [],
+    "executed_route": "codex",
+    "fallback_from": null,
+    "mode": "weighted_random",
+    "reason": "weighted_random",
+    "remaining_percent": 48.0,
+    "roll": 49,
+    "selected_route": "codex",
+    "total_weight": 100
+  },
+  "routing_recorded_at": "2026-10-08T04:48:21.474098+00:00",
+  "summary": "家庭の作業机に隣接する棚で、LANポートの配置と接続ケーブル、設置の余白を表現。PNG形式・1536×1024と画像内容を検証済み。",
+  "thread_id": "01a111a0-344e-74b1-99da-7cee59ca6cf0",
+  "token_usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 464256,
+    "input_tokens": 475428,
+    "output_tokens": 808,
+    "reasoning_output_tokens": 0,
+    "total_tokens": 476236,
+    "uncached_input_tokens": 11172
+  },
+  "token_usage_source": "codex_rollout.turn_token_usage",
+  "visual_family": "Product Portrait",
+  "width": 1536
+}
