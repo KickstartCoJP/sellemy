@@ -1,0 +1,49 @@
+{
+  "api_usage": {
+    "input_tokens": 356,
+    "input_tokens_details": {
+      "image_tokens": 0,
+      "text_tokens": 356
+    },
+    "output_tokens": 1372,
+    "output_tokens_details": {
+      "image_tokens": 1372,
+      "text_tokens": 0
+    },
+    "total_tokens": 1728
+  },
+  "generated_at": "2026-10-08T20:47:18.129392+00:00",
+  "generation_method": "openai_images_api",
+  "generation_route": "openai_images_api",
+  "height": 1024,
+  "image_sha256": "25bf272eb57f85bd14fb2ca8967df0762e2561999a5c7d78d73554a468c26686",
+  "model": "gpt-image-2.5-sunburst",
+  "openai_project_id": "",
+  "operation_id": "sellemy-eyecatch-desktop-uninterruptible-power-supplies-193e8adabb4e59fa",
+  "provider": "openai",
+  "quality": "high",
+  "request_sha256": "193e8adabb4e59fae16707a4cf1dcdacf9ea81403a4c4eecdebd37e763dadef0",
+  "routing": {
+    "api_share": 100,
+    "codex_reserve_percent": 20.0,
+    "codex_share": 0,
+    "codex_usage": {
+      "remaining_percent": 30.0,
+      "resets_at": 1791949050,
+      "source": "/Users/kickstart/.codex/sessions/2026/10/09/rollout-2026-10-09T05-12-45-01a11d25-98da-7391-afa1-4779d261d69d.jsonl",
+      "used_percent": 70.0,
+      "window_minutes": 10080
+    },
+    "errors_before_success": [],
+    "executed_route": "openai_api",
+    "fallback_from": null,
+    "mode": "weighted_random",
+    "reason": "weighted_random",
+    "remaining_percent": 30.0,
+    "roll": 40,
+    "selected_route": "openai_api",
+    "total_weight": 100
+  },
+  "routing_recorded_at": "2026-10-08T20:47:18.130220+00:00",
+  "width": 1536
+}

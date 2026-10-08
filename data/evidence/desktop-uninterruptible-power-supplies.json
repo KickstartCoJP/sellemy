@@ -1,0 +1,127 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/desktop-uninterruptible-power-supplies.html",
+  "category": "gadget",
+  "comparison_axes": [
+    {
+      "id": "load_compatibility",
+      "keywords": [
+        "定格容量VA",
+        "定格容量W",
+        "出力波形",
+        "接続機器",
+        "給電方式"
+      ],
+      "label": "接続機器に合う出力条件"
+    },
+    {
+      "id": "backup_and_outlets",
+      "keywords": [
+        "負荷別バックアップ時間",
+        "停電時給電口",
+        "サージ保護口",
+        "コンセント数"
+      ],
+      "label": "負荷別の給電時間とコンセント構成"
+    },
+    {
+      "id": "shutdown_and_maintenance",
+      "keywords": [
+        "USB接続",
+        "対応OS",
+        "NAS対応",
+        "停止ソフト",
+        "交換用バッテリー"
+      ],
+      "label": "自動停止の連携と電池の保守"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/desktop-uninterruptible-power-supplies/desktop-uninterruptible-power-supplies.png",
+  "products": [
+    {
+      "amazon_title": "UPS 無停電電源装置、H600-360W コンピュータ UPS 600VA",
+      "asin": "B0HKW7N49G",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51LHzktLjPL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HKW7N49G",
+      "ref": "p1",
+      "search_key": "UPS 無停電電源装置、H600-360W コンピュータ UPS",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "オンライン UPS 無停電電源装置、C1K-800W サーバー UPS 1000VA",
+      "asin": "B0HKW66LBN",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51II0BCe38L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HKW66LBN",
+      "ref": "p2",
+      "search_key": "オンライン UPS 無停電電源装置、C1K-800W サーバー",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "ラック型 UPS 無停電電源装置、SPRM1K 1000VA オンライン UPS 800W",
+      "asin": "B0HKW2SLZV",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/518s2coLQpL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HKW2SLZV",
+      "ref": "p3",
+      "search_key": "ラック型 UPS 無停電電源装置、SPRM1K 1000VA オ",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "オンライン UPS、1000VA 無停電電源装置、SPRM1KL 800W",
+      "asin": "B0HKW12V4B",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/517mmq5qbvL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HKW12V4B",
+      "ref": "p4",
+      "search_key": "オンライン UPS、1000VA 無停電電源装置、SPRM1KL",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "無停電電源装置、SPM1K オンライン UPS 1000VA 800W",
+      "asin": "B0HKVZ4NLS",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61br9Un3BrL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HKVZ4NLS",
+      "ref": "p5",
+      "search_key": "無停電電源装置、SPM1K オンライン UPS 1000VA 8",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "オンライン UPS、G1K-800W 無停電電源装置 1000VA UPS",
+      "asin": "B0HKSC19TX",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61Jkg1KAdCL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HKSC19TX",
+      "ref": "p6",
+      "search_key": "オンライン UPS、G1K-800W 無停電電源装置 1000V",
+      "selection_score": 0.31
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "desktop-uninterruptible-power-supplies"
+}
