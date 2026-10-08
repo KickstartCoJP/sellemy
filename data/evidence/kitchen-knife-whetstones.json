@@ -1,0 +1,122 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/kitchen-knife-whetstones.html",
+  "category": "dailygoods",
+  "comparison_axes": [
+    {
+      "id": "blade_grit",
+      "keywords": [
+        "刃の材質",
+        "片刃・両刃",
+        "番手表示"
+      ],
+      "label": "対応する刃と研ぐ工程"
+    },
+    {
+      "id": "working_surface",
+      "keywords": [
+        "作業面の長さ",
+        "幅・厚さ",
+        "台座"
+      ],
+      "label": "研ぐ面の寸法と固定方法"
+    },
+    {
+      "id": "stone_maintenance",
+      "keywords": [
+        "吸水時間",
+        "保管方法",
+        "面直し方法"
+      ],
+      "label": "吸水・乾燥・面直しの条件"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/kitchen-knife-whetstones/kitchen-knife-whetstones.png",
+  "products": [
+    {
+      "amazon_title": "包丁研ぎ石 両面砥石セット 不吸水 #400#1000#3000#10000 荒砥 中砥 仕上げ砥 ステンレス製万能砥石台 面直し付き",
+      "asin": "B0HHF8L1MX",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71TmHCXvTZL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HHF8L1MX",
+      "ref": "p1",
+      "search_key": "包丁研ぎ石 両面砥石セット 不吸水 #400#1000#3000",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "両面砥石 【2026革新不吸水】1000 6000 中砥/仕上砥石 家庭用 面直し 角度固定ガイド 新型滑り止めゴム付き",
+      "asin": "B0HHDZQDSN",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71N2kfsTg8L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HHDZQDSN",
+      "ref": "p2",
+      "search_key": "両面砥石 1000 6000 中砥/仕上砥石 家庭用 面直し 角",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "両面砥石 【2026革新不吸水】3000 10000 超仕上げ砥石 家庭用 面直し 角度固定ガイド 新型滑り止めゴム付き",
+      "asin": "B0HHDY48ZT",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61HNELvr-RL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HHDY48ZT",
+      "ref": "p3",
+      "search_key": "両面砥石 3000 10000 超仕上げ砥石 家庭用 面直し 角",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "包丁研ぎ石 両面砥石セット 不吸水 #400#1000#3000#8000 荒砥 中砥 仕上げ砥 ステンレス製万能砥石台 面直し付き",
+      "asin": "B0HHDTNNY3",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71dkOv0DUWL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HHDTNNY3",
+      "ref": "p4",
+      "search_key": "包丁研ぎ石 両面砥石セット 不吸水 #400#1000#3000",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "両面包丁研ぎ石 400/1000 3000/8000 大型 新製法 砥石セット 粒度正確 210*70*22MM 不吸水 水に浸す必要なし",
+      "asin": "B0GQML8L96",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71aATpMN1yL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GQML8L96",
+      "ref": "p5",
+      "search_key": "両面包丁研ぎ石 400/1000 3000/8000 大型 新製",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "包丁研ぎ石 両面 400/1000 3000/10000 不吸水 210*70*22MM 大型 荒/中/仕上砥石セット ステンレス製万能スタンド付き",
+      "asin": "B0GQMJ48RX",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71lGr-Arj5L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GQMJ48RX",
+      "ref": "p6",
+      "search_key": "包丁研ぎ石 両面 400/1000 3000/10000 不吸水",
+      "selection_score": 0.3
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "kitchen-knife-whetstones"
+}
