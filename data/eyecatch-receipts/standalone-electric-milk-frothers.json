@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-10-08T02:23:26.087494+00:00",
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "generation_route_attestation": "codex_rollout_extension",
+  "height": 1024,
+  "image_generation_internal_usage_exposed": false,
+  "image_sha256": "7cc04c21a23f25e98c46ac428d4169fab89a8b9c9553f175a9c4cb401552f2fa",
+  "member_binding_revision": 8,
+  "model": "gpt-6-astra",
+  "model_reported_generation_route": "built-in_image_gen",
+  "role_id": "bu-codex-sellemy-designer",
+  "routing": {
+    "api_share": 20,
+    "codex_reserve_percent": 20.0,
+    "codex_share": 80,
+    "codex_usage": {
+      "remaining_percent": 51.0,
+      "resets_at": 1791949050,
+      "source": "/Users/kickstart/.codex/sessions/2026/10/08/rollout-2026-10-08T00-17-21-01a116f0-c70b-7162-a769-fe916dda3cf8.jsonl",
+      "used_percent": 49.0,
+      "window_minutes": 10080
+    },
+    "errors_before_success": [],
+    "executed_route": "codex",
+    "fallback_from": null,
+    "mode": "weighted_random",
+    "reason": "weighted_random",
+    "remaining_percent": 51.0,
+    "roll": 51,
+    "selected_route": "codex",
+    "total_weight": 100
+  },
+  "routing_recorded_at": "2026-10-08T02:23:26.088532+00:00",
+  "summary": "容器内部の撹拌部と本体構造を見せ、キッチンでミルクを用意する場面を制作。PNG形式・1536×1024と画像内容を検証済み。",
+  "thread_id": "01a111a0-344e-74b1-99da-7cee59ca6cf0",
+  "token_usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 562816,
+    "input_tokens": 638907,
+    "output_tokens": 773,
+    "reasoning_output_tokens": 0,
+    "total_tokens": 639680,
+    "uncached_input_tokens": 76091
+  },
+  "token_usage_source": "codex_rollout.turn_token_usage",
+  "visual_family": "Lifestyle Scene",
+  "width": 1536
+}

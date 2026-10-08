@@ -1,0 +1,129 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/standalone-electric-milk-frothers.html",
+  "category": "gadget",
+  "comparison_axes": [
+    {
+      "id": "milk_compatibility",
+      "keywords": [
+        "牛乳",
+        "植物性飲料への対応",
+        "投入温度",
+        "添加物の制限"
+      ],
+      "label": "使用できるミルクと投入条件"
+    },
+    {
+      "id": "modes_and_volumes",
+      "keywords": [
+        "温かい泡",
+        "冷たい泡",
+        "泡立て容量",
+        "加熱容量"
+      ],
+      "label": "泡立て・加熱モードと各容量"
+    },
+    {
+      "id": "vessel_and_washing",
+      "keywords": [
+        "容器の取り外し",
+        "撹拌部品",
+        "内面加工",
+        "水洗い範囲"
+      ],
+      "label": "容器の構造と洗浄方法"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/standalone-electric-milk-frothers/standalone-electric-milk-frothers.png",
+  "products": [
+    {
+      "amazon_title": "アンドエヌイー(&NE) ミルクフォーマー nikii cafe ミルク泡立て器 ステンレス 電動 泡だて器 牛乳 ラテアート 小型 NIM-353",
+      "asin": "B0D1KH166Q",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/31gYsg2a1FL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "milk_compatibility"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0D1KH166Q",
+      "ref": "p1",
+      "search_key": "アンドエヌイー(&NE) ミルクフォーマー nikii cafe",
+      "selection_score": 0.49
+    },
+    {
+      "amazon_title": "ミルクフォーマー 電動 ミルクフローサー 全自動 静音 冷泡/加熱/濃密泡/薄泡4機能IN1 350ml PSE認証済 プレゼント用",
+      "asin": "B0HJV2YPBV",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/616X9u5etwL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HJV2YPBV",
+      "ref": "p2",
+      "search_key": "ミルクフォーマー 電動 ミルクフローサー 全自動 静音 冷泡/加",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "ミルクフォーマー 電動泡立て器 LEDデジタル表示 Type C充電式 3段階速度調整&3ヘッド付き コンパクト 静音設計 スタンド付き",
+      "asin": "B0H9SHRJRT",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61eJcRg5D8L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H9SHRJRT",
+      "ref": "p3",
+      "search_key": "ミルクフォーマー 電動泡立て器 LEDデジタル表示 Type C",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "電動ミルクフォーマー 泡立て器 軽量 バッテリー式 コーヒー/ラテ/抹茶/ホットチョコレート用 洗いやすい",
+      "asin": "B0H8P1K1XZ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61-8KwDdanL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H8P1K1XZ",
+      "ref": "p4",
+      "search_key": "電動ミルクフォーマー 泡立て器 軽量 バッテリー式 コーヒー/ラ",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "電動ミルクフォーマー 泡立て器 ハンディタイプ 2026年新型 白色ハンドミキサー：静音Type-C充電式 コーヒー/抹茶専用 コンパクト設計 プロ愛飲家＆ご家族用 ラテアート対応 カプチーノ・卵泡立て・ジャズ混合万能 クリーミーフォームで召し上がれ！",
+      "asin": "B0H8JB5TKZ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71thQ-U5CfL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H8JB5TKZ",
+      "ref": "p5",
+      "search_key": "電動ミルクフォーマー 泡立て器 ハンディタイプ 2026年新型",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "CIRCLE JOY 充電式 ミルク泡立て器 電動ミルクフォーマーとカバー 二重攪拌ヘッド コンパクト 超軽量 コーヒー カプチーノ ラテ フラッペ 抹茶 ホットチョコレート用 シルバー",
+      "asin": "B0GV3YRC4X",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/618QhLFhsuL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GV3YRC4X",
+      "ref": "p6",
+      "search_key": "CIRCLE JOY 充電式 ミルク泡立て器 電動ミルクフォーマ",
+      "selection_score": 0.31
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "milk_compatibility"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "standalone-electric-milk-frothers"
+}
