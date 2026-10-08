@@ -1,0 +1,143 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/everyday-cooking-frying-pans.html",
+  "category": "dailygoods",
+  "comparison_axes": [
+    {
+      "id": "heat_source_and_size",
+      "keywords": [
+        "IH",
+        "ガス火",
+        "底面径",
+        "深さ"
+      ],
+      "label": "対応熱源と調理面の寸法"
+    },
+    {
+      "id": "surface_and_cooking_conditions",
+      "keywords": [
+        "鉄",
+        "ステンレス",
+        "表面加工",
+        "予熱・空焚き条件"
+      ],
+      "label": "調理面の素材と加熱条件"
+    },
+    {
+      "id": "handling_and_maintenance",
+      "keywords": [
+        "本体重量",
+        "持ち手",
+        "洗浄方法",
+        "油ならし"
+      ],
+      "label": "持ち上げやすさと手入れ"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/everyday-cooking-frying-pans/everyday-cooking-frying-pans.png",
+  "products": [
+    {
+      "amazon_title": "ティファール 取っ手のとれる フライパン 22cm「インジニオ･ネオ IHステンレス ルミエール フライパン」グレースシリーズ同仕様 L89303",
+      "asin": "B0HDNFW6ZS",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/716dAn+kaPL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "heat_source_and_size",
+        "surface_and_cooking_conditions"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HDNFW6ZS",
+      "ref": "p1",
+      "search_key": "ティファール 取っ手のとれる フライパン 22cm「インジニオ･",
+      "selection_score": 0.66
+    },
+    {
+      "amazon_title": "ナンセンジャパン 底が広い フライパン 18cm IH対応 ガス火対応 目玉焼きが一気に2個焼ける 縁をフランジ加工して強度UP",
+      "asin": "B0H4QS85CX",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/31Nq1SxlXRL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "heat_source_and_size"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H4QS85CX",
+      "ref": "p2",
+      "search_key": "ナンセンジャパン 底が広い フライパン 18cm IH対応 ガス",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "フライパン 20cm ステンレス ハイブリッド ノンスティック加工 蓋付き PFOAフリー IH・ガス火対応",
+      "asin": "B0GXTC8JT7",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71Mle6-emSL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "heat_source_and_size",
+        "surface_and_cooking_conditions"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GXTC8JT7",
+      "ref": "p3",
+      "search_key": "フライパン 20cm ステンレス ハイブリッド ノンスティック加",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "SENSARTE 炒め鍋 22cm 中華鍋 IH/ガス火対応 焦げ付かない PFOAフリー 蓋付き 深型フライパン 一年保証 ブラック",
+      "asin": "B0GVY1359F",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61N85KqOQML._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "heat_source_and_size"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GVY1359F",
+      "ref": "p4",
+      "search_key": "SENSARTE 炒め鍋 22cm 中華鍋 IH/ガス火対応 焦",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "鉄フライパン 26cm 深型 炒め鍋 中華鍋 窒化加工 コーティングなし 錆びにくい 高温調理 ガラス蓋付き 木製ハンドル IH・ガス火対応",
+      "asin": "B0GH6K4WQG",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61xXuNpLU7L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "heat_source_and_size",
+        "surface_and_cooking_conditions"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GH6K4WQG",
+      "ref": "p5",
+      "search_key": "鉄フライパン 26cm 深型 炒め鍋 中華鍋 窒化加工 コーティ",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "フライパン 20cm 焦げ付かない 軽量 IH ガス火対応 PFOAなどの有害物質不使用 高密度5層の究極の焦げ付き防止表面 高熱効率 手入れが簡単 食器洗い機対応 耐熱ハンドル付き [並行輸入品]",
+      "asin": "B0DNCWH211",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41aY+AuIMaL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "heat_source_and_size"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0DNCWH211",
+      "ref": "p6",
+      "search_key": "フライパン 20cm 焦げ付かない 軽量 IH ガス火対応 PF",
+      "selection_score": 0.3
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "heat_source_and_size",
+      "surface_and_cooking_conditions"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "everyday-cooking-frying-pans"
+}

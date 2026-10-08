@@ -1,0 +1,49 @@
+{
+  "api_usage": {
+    "input_tokens": 356,
+    "input_tokens_details": {
+      "image_tokens": 0,
+      "text_tokens": 356
+    },
+    "output_tokens": 1372,
+    "output_tokens_details": {
+      "image_tokens": 1372,
+      "text_tokens": 0
+    },
+    "total_tokens": 1728
+  },
+  "generated_at": "2026-10-08T23:45:33.305965+00:00",
+  "generation_method": "openai_images_api",
+  "generation_route": "openai_images_api",
+  "height": 1024,
+  "image_sha256": "698eeb49e57af05263b979a11c65b76477516d91f9f2b641be5fe5437947f7cd",
+  "model": "gpt-image-2.5-sunburst",
+  "openai_project_id": "",
+  "operation_id": "sellemy-eyecatch-everyday-cooking-frying-pans-d5f4b4898a10f04f",
+  "provider": "openai",
+  "quality": "high",
+  "request_sha256": "d5f4b4898a10f04f2c4cc377aff23f78216a160a20913eba4db05b90d94c7bdc",
+  "routing": {
+    "api_share": 100,
+    "codex_reserve_percent": 20.0,
+    "codex_share": 0,
+    "codex_usage": {
+      "remaining_percent": 28.0,
+      "resets_at": 1791949050,
+      "source": "/Users/kickstart/.codex/sessions/2026/10/09/rollout-2026-10-09T08-08-29-01a11dc6-7af3-7da0-b8be-2b243997bd9f.jsonl",
+      "used_percent": 72.0,
+      "window_minutes": 10080
+    },
+    "errors_before_success": [],
+    "executed_route": "openai_api",
+    "fallback_from": null,
+    "mode": "weighted_random",
+    "reason": "weighted_random",
+    "remaining_percent": 28.0,
+    "roll": 99,
+    "selected_route": "openai_api",
+    "total_weight": 100
+  },
+  "routing_recorded_at": "2026-10-08T23:45:33.306597+00:00",
+  "width": 1536
+}
