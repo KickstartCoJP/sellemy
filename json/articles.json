@@ -4642,5 +4642,17 @@
     "published_at": "2026-10-09T00:11:28.820245+09:00",
     "updated_at": "2026-10-09T00:11:28.820245+09:00",
     "published_at_source": "publish_event"
+  },
+  {
+    "article_id": "usb-c-to-c-cables",
+    "title": "USB-Cケーブル比較｜給電・転送・映像の条件を確認",
+    "slug": "usb-c-to-c-cables",
+    "category": "gadget",
+    "img": "https://www.sellemy.jp/img/usb-c-to-c-cables/usb-c-to-c-cables.png",
+    "summary": "給電は60W・100W・240W、転送は5〜80Gbpsなどの表示がありますが、測定条件や同時使用の範囲は未確認です。USB-A変換を含む候補と端子構成が不明なセットもあるため、すべてを同じUSB-C同士の接続として扱えません。長さ、給電条件、転送と映像の対応を別々に照合します。",
+    "status": "published",
+    "published_at": "2026-10-09T00:26:47.828634+09:00",
+    "updated_at": "2026-10-09T00:26:47.828634+09:00",
+    "published_at_source": "publish_event"
   }
 ]
