@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-10-08T07:14:13.527496+00:00",
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "generation_route_attestation": "codex_rollout_extension",
+  "height": 1024,
+  "image_generation_internal_usage_exposed": false,
+  "image_sha256": "409c4809b6e60c1b5da5df3ea6749ec7ec7f94a77a2d3b1e3ee4ba874ef390f1",
+  "member_binding_revision": 8,
+  "model": "gpt-6-astra",
+  "model_reported_generation_route": "built-in_image_gen",
+  "role_id": "bu-codex-sellemy-designer",
+  "routing": {
+    "api_share": 20,
+    "codex_reserve_percent": 20.0,
+    "codex_share": 80,
+    "codex_usage": {
+      "remaining_percent": 45.0,
+      "resets_at": 1791949050,
+      "source": "/Users/kickstart/.codex/sessions/2026/10/08/rollout-2026-10-08T00-17-21-01a116f0-c70b-7162-a769-fe916dda3cf8.jsonl",
+      "used_percent": 55.0,
+      "window_minutes": 10080
+    },
+    "errors_before_success": [],
+    "executed_route": "codex",
+    "fallback_from": null,
+    "mode": "weighted_random",
+    "reason": "weighted_random",
+    "remaining_percent": 45.0,
+    "roll": 22,
+    "selected_route": "codex",
+    "total_weight": 100
+  },
+  "routing_recorded_at": "2026-10-08T07:14:13.528652+00:00",
+  "summary": "家庭の机で、画面のない板タブとペン、接続先のパソコン画面の関係を表現。PNG形式・1536×1024と画像内容を検証済み。",
+  "thread_id": "01a111a0-344e-74b1-99da-7cee59ca6cf0",
+  "token_usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 629248,
+    "input_tokens": 639054,
+    "output_tokens": 806,
+    "reasoning_output_tokens": 0,
+    "total_tokens": 639860,
+    "uncached_input_tokens": 9806
+  },
+  "token_usage_source": "codex_rollout.turn_token_usage",
+  "visual_family": "Lifestyle Scene",
+  "width": 1536
+}

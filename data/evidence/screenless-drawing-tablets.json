@@ -1,0 +1,133 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/screenless-drawing-tablets.html",
+  "category": "gadget",
+  "comparison_axes": [
+    {
+      "id": "active_area",
+      "keywords": [
+        "作業領域",
+        "縦横比",
+        "本体寸法",
+        "設置スペース"
+      ],
+      "label": "入力できる範囲と本体寸法"
+    },
+    {
+      "id": "pen_and_controls",
+      "keywords": [
+        "筆圧検知",
+        "傾き検知",
+        "ペン電源",
+        "ショートカットキー"
+      ],
+      "label": "ペンと操作キーの仕様"
+    },
+    {
+      "id": "device_compatibility",
+      "keywords": [
+        "対応OS",
+        "有線接続",
+        "無線接続",
+        "ドライバー"
+      ],
+      "label": "接続先とソフトの対応条件"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/screenless-drawing-tablets/screenless-drawing-tablets.png",
+  "products": [
+    {
+      "amazon_title": "UGEE ペンタブレット 板タブ スマホ対応 16384 レベル超高筆圧 ±60° 傾き検知 充電不要 PH23 ペン 8 個カスタマイズショートカットキー Type-C 接続 薄型 9.3mm スマホ/PC 両対応 Windows/Mac/Chrome/Android/Linux イラスト・オンライン授業・動画編集 ブラック",
+      "asin": "B0HBVGCB8X",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51miug2OW3L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "pen_and_controls"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HBVGCB8X",
+      "ref": "p1",
+      "search_key": "UGEE ペンタブレット 板タブ スマホ対応 16384 レベル",
+      "selection_score": 0.49
+    },
+    {
+      "amazon_title": "AGPTEK ペンタブレット 日本限定 G10ペンタブ 10x6インチ 板タブ スマホ対応 Win/Mac/Android対応 充電不要ペン 絵描き",
+      "asin": "B0GY2RVHZK",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71lawIRya4L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GY2RVHZK",
+      "ref": "p2",
+      "search_key": "AGPTEK ペンタブレット 日本限定 G10ペンタブ 10x6",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "Global Recycled Standard",
+      "asin": "B0GWD4PXZR",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41g8Xga5ISL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GWD4PXZR",
+      "ref": "p3",
+      "search_key": "Global Recycled Standard",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "DIGIDRAW ペンタブ TW410 6.3*3.9インチ 16384レベル筆圧感知 充電不要ペン搭載 Bluetooth ワイヤレス接続板タブ",
+      "asin": "B0GMGWBJ3J",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51ZMIFhHwFL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GMGWBJ3J",
+      "ref": "p4",
+      "search_key": "DIGIDRAW ペンタブ TW410 6.3*3.9インチ 1",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "AGPTEK ペンタブレット ペンタブ スマホ対応 板タブ 5.1x3.5インチ Windows/Mac/Android対応 傾き検知 充電不要ペン",
+      "asin": "B0GKNXBQYK",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61UdRvPLA9L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "pen_and_controls"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GKNXBQYK",
+      "ref": "p5",
+      "search_key": "AGPTEK ペンタブレット ペンタブ スマホ対応 板タブ 5.",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "VEIKK 液タブ 11.6インチ 筆圧検知8192レベル 傾き検知対応 専用スタンド付き 小型 IPSパネル 液晶タブレット VK1200 V3",
+      "asin": "B0F1XNHLWM",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71igbQEk9EL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "pen_and_controls"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0F1XNHLWM",
+      "ref": "p6",
+      "search_key": "VEIKK 液タブ 11.6インチ 筆圧検知8192レベル 傾き",
+      "selection_score": 0.31
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "pen_and_controls"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "screenless-drawing-tablets"
+}
