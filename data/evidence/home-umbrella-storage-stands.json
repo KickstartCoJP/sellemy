@@ -1,0 +1,143 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/home-umbrella-storage-stands.html",
+  "category": "dailygoods",
+  "comparison_axes": [
+    {
+      "id": "umbrella_storage",
+      "keywords": [
+        "長傘",
+        "折りたたみ傘",
+        "差し込み",
+        "引っ掛け"
+      ],
+      "label": "対応する傘と収納方法"
+    },
+    {
+      "id": "installation",
+      "keywords": [
+        "幅",
+        "奥行き",
+        "高さ",
+        "自立",
+        "マグネット"
+      ],
+      "label": "設置に必要な寸法と固定条件"
+    },
+    {
+      "id": "water_management",
+      "keywords": [
+        "受け皿",
+        "取り外し",
+        "底面",
+        "材質"
+      ],
+      "label": "水受けの構造と手入れ"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/home-umbrella-storage-stands/home-umbrella-storage-stands.png",
+  "products": [
+    {
+      "amazon_title": "傘立て かさたて アンブレラスタンド 長傘収納 玄関 傘置き 傘入れ スリム 着脱式水受け皿付き シンプルデザイン",
+      "asin": "B0HKW1WC65",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71me8xsMadL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "umbrella_storage",
+        "water_management"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HKW1WC65",
+      "ref": "p1",
+      "search_key": "傘立て かさたて アンブレラスタンド 長傘収納 玄関 傘置き 傘",
+      "selection_score": 0.685
+    },
+    {
+      "amazon_title": "傘立て 玄関 スリム 2段 70cm傘対応 折り畳み傘対応 幅35×奥行18×高さ103cm S字フック6個 水受け取り外し可能 組立品 ブラウン",
+      "asin": "B0HC27P6S9",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61k0G9EdyTL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "installation",
+        "water_management"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HC27P6S9",
+      "ref": "p2",
+      "search_key": "傘立て 玄関 スリム 2段 70cm傘対応 折り畳み傘対応 幅3",
+      "selection_score": 0.505
+    },
+    {
+      "amazon_title": "「MONCA」傘立て 長傘 傘入れ 傘たて アンブレラスタンド 玄関収納 屋外 業務用 18本収納 W45×D24×H50cm",
+      "asin": "B0HKWD7QWJ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61ba9G0O1LL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "umbrella_storage"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HKWD7QWJ",
+      "ref": "p3",
+      "search_key": "「MONCA」傘立て 長傘 傘入れ 傘たて アンブレラスタンド",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "傘立て スリム 業務用 オフィス 玄関 おしゃれ コンパクト 大容量 収納 28本傘 かさたて 倒れない シンプル 傘置き 屋外 北欧 店舗用 傘だて 開いたまま 省スペース 軽い 折りたたみ umbrella stand 大きい 耐久性 防水 (ブラック) [並行輸入品]",
+      "asin": "B0H6WVN9BC",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71X4hxaD50L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H6WVN9BC",
+      "ref": "p4",
+      "search_key": "傘立て スリム 業務用 オフィス 玄関 おしゃれ コンパクト 大",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "傘立て フィス用傘たて おしゃれ 業務用 かさたて 玄関 リップトレイ付き自立型傘ホルダー オープン換気、大容量 廊下 寝室 玄関 オフィス リビングルーム用 (48*27*58,ブラック) [並行輸入品]",
+      "asin": "B0FVVF5L87",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/31E1TEUQTfL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "installation"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0FVVF5L87",
+      "ref": "p5",
+      "search_key": "傘立て フィス用傘たて おしゃれ 業務用 かさたて 玄関 リップ",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "moca company Casa 天板付き 傘立て 幅40cm 奥行15cm 薄型 スリム 着脱式 水受け皿 かさたて 傘収納 玄関 北欧 ブラック ブラウン",
+      "asin": "B0FR8KRWBF",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51MOWmJFynL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "installation",
+        "water_management"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0FR8KRWBF",
+      "ref": "p6",
+      "search_key": "moca company Casa 天板付き 傘立て 幅40cm",
+      "selection_score": 0.325
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "installation",
+      "umbrella_storage",
+      "water_management"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "home-umbrella-storage-stands"
+}
