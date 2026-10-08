@@ -1,0 +1,142 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/external-computer-optical-drives.html",
+  "category": "gadget",
+  "comparison_axes": [
+    {
+      "id": "disc_operations",
+      "keywords": [
+        "CD",
+        "DVD",
+        "Blu-ray",
+        "読み込み",
+        "書き込み"
+      ],
+      "label": "読み書きできるディスク規格"
+    },
+    {
+      "id": "connection_and_power",
+      "keywords": [
+        "USB端子",
+        "付属ケーブル",
+        "バスパワー",
+        "補助電源"
+      ],
+      "label": "接続端子と給電条件"
+    },
+    {
+      "id": "software_and_os",
+      "keywords": [
+        "対応OS",
+        "再生ソフト",
+        "書き込みソフト",
+        "付属ライセンス"
+      ],
+      "label": "OSと再生・書き込みソフトの条件"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/external-computer-optical-drives/external-computer-optical-drives.png",
+  "products": [
+    {
+      "amazon_title": "BRJR CD DVDドライブ 外付けDVDドライブ 高速処理 8XDVD& 24XCD 光学ドライブ外付け 読取/書込可 バスパワー USB 2.0/3.0&Type-C両接続 外付けCDドライブ Window/Vista/Linux/Mac OS対応 MAC CDドライブ 外付け DVD/CDドライブ 極静音 薄型ポータブル (ホワイト)",
+      "asin": "B0D22K597V",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61LS9ryrSDL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "connection_and_power",
+        "disc_operations"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0D22K597V",
+      "ref": "p1",
+      "search_key": "BRJR CD DVDドライブ 外付けDVDドライブ 高速処理",
+      "selection_score": 0.66
+    },
+    {
+      "amazon_title": "ブルーレイドライブ外付け USB-A/C対応 再生/読み込み/書き込み/焼き対応 BD DVDプレーヤー ポータブル Blu-ray ドライブ Windows/Mac対応 外付けブルーレイドライブ",
+      "asin": "B0HKWDX18X",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71h-TXMjtjL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "disc_operations"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HKWDX18X",
+      "ref": "p2",
+      "search_key": "ブルーレイドライブ外付け USB-A/C対応 再生/読み込み/書",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "conreruru 4K UHD Blu-ray対応・HDR映像対応 外付けブルーレイドライブ BDXL 128GB対応 BD/DVD/CD 読み込み・書き込み・再生 USB3.0/Type-C M-DISC対応 Windows 7-11 Mac対応 薄型 ブラック",
+      "asin": "B0HK44SCW5",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61qZ3V+70OL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "disc_operations"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HK44SCW5",
+      "ref": "p3",
+      "search_key": "conreruru 4K UHD Blu-ray対応・HDR映像",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "ブルーレイドライブ外付け blu-rayプレイヤー再生読み書usb-aと (type-c)BD/DVD CDプレーヤー 外付けブルーレイ ドライブ ブルーレイディスク対応WIN7-11/MAC対応 blu-rayプレイヤー （white）",
+      "asin": "B0HH3TJ6K9",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61+650HiyaL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "disc_operations"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HH3TJ6K9",
+      "ref": "p4",
+      "search_key": "ブルーレイドライブ外付け blu-rayプレイヤー再生読み書us",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "ブルーレイドライブ外付け blu-rayプレイヤー再生読み書usb-aと (type-c)BD DVDプレーヤー 外付けブルーレイ ドライブ ブルーレイディスク対応WIN7-11/MAC対応 blu-ray けドライブ（黒）",
+      "asin": "B0HCJGKNSW",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71n6Mfrpe7L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "disc_operations"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HCJGKNSW",
+      "ref": "p5",
+      "search_key": "ブルーレイドライブ外付け blu-rayプレイヤー再生読み書us",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "ブルーレイドライブ外付け BDプレイヤー再生読み書usb-aと (type-c) 対応外付け ポータブルBD/DVD Windows7-11/MAC OS対応 一年 日本語取扱書付き（black）",
+      "asin": "B0H9R93925",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71SAaFOLuSL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "disc_operations"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H9R93925",
+      "ref": "p6",
+      "search_key": "ブルーレイドライブ外付け BDプレイヤー再生読み書usb-aと",
+      "selection_score": 0.3
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "connection_and_power",
+      "disc_operations"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "external-computer-optical-drives"
+}
