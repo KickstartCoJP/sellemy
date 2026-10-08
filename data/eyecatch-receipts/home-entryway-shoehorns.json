@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-10-08T03:32:19.093713+00:00",
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "generation_route_attestation": "codex_rollout_extension",
+  "height": 1024,
+  "image_generation_internal_usage_exposed": false,
+  "image_sha256": "e2469022fcf85a79aaefe78dfb18a818862a59ac4dddc687c2a7a2e6402b5e0c",
+  "member_binding_revision": 8,
+  "model": "gpt-6-astra",
+  "model_reported_generation_route": "built-in_image_gen",
+  "role_id": "bu-codex-sellemy-designer",
+  "routing": {
+    "api_share": 20,
+    "codex_reserve_percent": 20.0,
+    "codex_share": 80,
+    "codex_usage": {
+      "remaining_percent": 49.0,
+      "resets_at": 1791949050,
+      "source": "/Users/kickstart/.codex/sessions/2026/10/08/rollout-2026-10-08T00-17-21-01a116f0-c70b-7162-a769-fe916dda3cf8.jsonl",
+      "used_percent": 51.0,
+      "window_minutes": 10080
+    },
+    "errors_before_success": [],
+    "executed_route": "codex",
+    "fallback_from": null,
+    "mode": "weighted_random",
+    "reason": "weighted_random",
+    "remaining_percent": 49.0,
+    "roll": 6,
+    "selected_route": "codex",
+    "total_weight": 100
+  },
+  "routing_recorded_at": "2026-10-08T03:32:19.094752+00:00",
+  "summary": "玄関で靴を履く前の場面に、長い木製靴べらの先端形状と収納スタンドを表現。PNG形式・1536×1024と画像内容を検証済み。",
+  "thread_id": "01a111a0-344e-74b1-99da-7cee59ca6cf0",
+  "token_usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 374784,
+    "input_tokens": 384745,
+    "output_tokens": 809,
+    "reasoning_output_tokens": 0,
+    "total_tokens": 385554,
+    "uncached_input_tokens": 9961
+  },
+  "token_usage_source": "codex_rollout.turn_token_usage",
+  "visual_family": "Lifestyle Scene",
+  "width": 1536
+}

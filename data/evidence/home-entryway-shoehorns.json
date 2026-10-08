@@ -1,0 +1,138 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/home-entryway-shoehorns.html",
+  "category": "dailygoods",
+  "comparison_axes": [
+    {
+      "id": "length_and_posture",
+      "keywords": [
+        "全長",
+        "持ち手位置",
+        "立って使う",
+        "座って使う"
+      ],
+      "label": "靴を履く姿勢に合わせる長さ"
+    },
+    {
+      "id": "blade_and_grip",
+      "keywords": [
+        "先端幅",
+        "湾曲",
+        "素材",
+        "持ち手形状"
+      ],
+      "label": "かかとに差し込む部分と握り"
+    },
+    {
+      "id": "entryway_storage",
+      "keywords": [
+        "スタンド",
+        "吊り下げ穴",
+        "ストラップ",
+        "収納寸法"
+      ],
+      "label": "玄関での置き方と取り出し方"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/home-entryway-shoehorns/home-entryway-shoehorns.png",
+  "products": [
+    {
+      "amazon_title": "山崎実業(Yamazaki) 【石こうボードピンセット・木ネジ 付属】 壁付け 靴ベラスタンド ブラック タワー tower 11049",
+      "asin": "B0H8398J93",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61F-w2xMXdL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "entryway_storage"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H8398J93",
+      "ref": "p1",
+      "search_key": "山崎実業(Yamazaki) 壁付け 靴ベラスタンド ブラック",
+      "selection_score": 0.49
+    },
+    {
+      "amazon_title": "スマート 靴ベラ マグネット収納 磁石でくっつく 玄関収納 立ったまま使いやすい 全長約60cm sm@rt988",
+      "asin": "B0BLXZLGVH",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51H4oTSe0zL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "length_and_posture"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0BLXZLGVH",
+      "ref": "p2",
+      "search_key": "スマート 靴ベラ マグネット収納 磁石でくっつく 玄関収納 立っ",
+      "selection_score": 0.49
+    },
+    {
+      "amazon_title": "山崎実業(Yamazaki) マグネット 靴ベラ 65cm ブラック タワー tower 10891",
+      "asin": "B0H7WFKKFL",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51+NN2EK6XL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H7WFKKFL",
+      "ref": "p3",
+      "search_key": "山崎実業(Yamazaki) マグネット 靴ベラ 65cm ブラ",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "[COREDA] コレダ 靴べら 幸運と長寿の木けやき使用 3サイズ品揃え 靴べら ロング くつべら スタンド付き",
+      "asin": "B0GSJH4WK6",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/4121b4j78JL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "entryway_storage"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GSJH4WK6",
+      "ref": "p4",
+      "search_key": "コレダ 靴べら 幸運と長寿の木けやき使用 3サイズ品揃え 靴べら",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "国産ヒノキ 靴ベラスタンド 木製 玄関収納 日本製 9x9cm スタンド奥行5.5cm",
+      "asin": "B0GHXYJLZ4",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51+22JOAvWL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "entryway_storage"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GHXYJLZ4",
+      "ref": "p5",
+      "search_key": "国産ヒノキ 靴ベラスタンド 木製 玄関収納 日本製 9x9cm",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "[Sin.] スタンド ロング 靴べら 自立式 シンプルデザイン",
+      "asin": "B0D879TFM3",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41D+v9DmWsL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "entryway_storage"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0D879TFM3",
+      "ref": "p6",
+      "search_key": "スタンド ロング 靴べら 自立式 シンプルデザイン",
+      "selection_score": 0.31
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "entryway_storage",
+      "length_and_posture"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "home-entryway-shoehorns"
+}
