@@ -1,0 +1,137 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/countertop-food-processors.html",
+  "category": "gadget",
+  "comparison_axes": [
+    {
+      "id": "ingredients_and_tasks",
+      "keywords": [
+        "みじん切り",
+        "肉のミンチ",
+        "禁止食材",
+        "付属刃"
+      ],
+      "label": "対応食材と刃ごとの調理作業"
+    },
+    {
+      "id": "batch_and_operation",
+      "keywords": [
+        "最大調理量",
+        "最小量",
+        "連続運転時間",
+        "休止時間"
+      ],
+      "label": "食材ごとの一回量と運転条件"
+    },
+    {
+      "id": "parts_and_cleaning",
+      "keywords": [
+        "容器材質",
+        "刃の取り外し",
+        "食洗機対応部品",
+        "本体の清掃"
+      ],
+      "label": "容器・刃の取り外しと洗浄条件"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/countertop-food-processors/countertop-food-processors.png",
+  "products": [
+    {
+      "amazon_title": "フードプロセッサー 600Wハイパワー 1台5役 みじん切り器 ステンレス4枚刃 600mlガラスボウル ミキサーチョッパー 水洗い可能 過熱保護 コンパクト設計 肉挽き/野菜切り/離乳食作りに最適 家庭用 母の日ギフト 引越し祝い 出産祝い ギフトにも",
+      "asin": "B0HCYBXQJ4",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/714EwUcZULL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "ingredients_and_tasks"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HCYBXQJ4",
+      "ref": "p1",
+      "search_key": "フードプロセッサー 600Wハイパワー 1台5役 みじん切り器",
+      "selection_score": 0.505
+    },
+    {
+      "amazon_title": "happilaff フードプロセッサー 1台8役 電動みじん切り器 600ml 2段階スピード 4枚ステンレス刃 ガラスボウル",
+      "asin": "B0H6HY4LNF",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61wUJ8VEFlL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "ingredients_and_tasks"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H6HY4LNF",
+      "ref": "p2",
+      "search_key": "happilaff フードプロセッサー 1台8役 電動みじん切り",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "フードプロセッサー 550W フードチョッパー ハイパワー 肉挽き 野菜みじん切り 4枚刃カッター 刻む・潰す・砕く・混ぜる 一台多役 2L容量 ステンレス鋼 グレー 水洗い可能 過熱保護 操作簡単 家庭用",
+      "asin": "B0GS8H13ZS",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71WqhA7NEyL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "ingredients_and_tasks"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GS8H13ZS",
+      "ref": "p3",
+      "search_key": "フードプロセッサー 550W フードチョッパー ハイパワー 肉挽",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "フードプロセッサー LINKChef 1.5L容量 250Wハイパワー 2段階スピード 3層ステンレス刃 電動フードチョッパー みじん切り・挽肉・離乳食対応 氷も砕ける ブレンダー 一台多役 家庭用 コンパクト 洗いやすい",
+      "asin": "B0GMGRQYRP",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71B1d3Mk0SL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "ingredients_and_tasks"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GMGRQYRP",
+      "ref": "p4",
+      "search_key": "フードプロセッサー LINKChef 1.5L容量 250Wハイ",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "コードレス フードプロセッサー 小型 時短調理 チョッパー 1台5役 2種の刃 離乳食/肉挽き/野菜/氷/対応 キッチン家電 家庭用",
+      "asin": "B0GJ37HXXY",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61PREViFNZL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GJ37HXXY",
+      "ref": "p5",
+      "search_key": "コードレス フードプロセッサー 小型 時短調理 チョッパー 1台",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "【LEDディスプレイ&550Wハイパワー 】フードプロセッサー 2L大容量 Tullras フードチョッパー 肉挽き 野菜みじん切り 氷も砕ける 4枚刃カッター 刻む・潰す・砕く・混ぜる 2段階スピード 小型 電動 フードミキサー 離乳食作り 簡単操作 水洗い可能 コンパクト 軽量 家庭用 プレゼント 人気",
+      "asin": "B0FP2F2224",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71nJjZq+GDL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "ingredients_and_tasks"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0FP2F2224",
+      "ref": "p6",
+      "search_key": "フードプロセッサー 2L大容量 Tullras フードチョッパー",
+      "selection_score": 0.325
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "ingredients_and_tasks"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "countertop-food-processors"
+}
