@@ -1,0 +1,136 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/hand-dishwashing-detergents.html",
+  "category": "dailygoods",
+  "comparison_axes": [
+    {
+      "id": "usage",
+      "keywords": [
+        "原液使用",
+        "希釈",
+        "使用量",
+        "すすぎ"
+      ],
+      "label": "食器洗いの使用量と手順"
+    },
+    {
+      "id": "materials",
+      "keywords": [
+        "食器素材",
+        "調理器具",
+        "液性",
+        "使用上の注意"
+      ],
+      "label": "対応する食器と使用上の制限"
+    },
+    {
+      "id": "container",
+      "keywords": [
+        "ポンプ",
+        "倒立容器",
+        "容量",
+        "詰め替え"
+      ],
+      "label": "容器の操作と詰め替え条件"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/hand-dishwashing-detergents/hand-dishwashing-detergents.png",
+  "products": [
+    {
+      "amazon_title": "食器用洗剤 油汚れに強い台所用石けん 業務用 4000ml 詰め替え 専用ノズル付 大容量 液体石鹸 手荒れ 敏感肌 エコ",
+      "asin": "B0H3361482",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61RYBsd-sHL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "container"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H3361482",
+      "ref": "p1",
+      "search_key": "食器用洗剤 油汚れに強い台所用石けん 業務用 4000ml 詰め",
+      "selection_score": 0.505
+    },
+    {
+      "amazon_title": "ジャンピカ 万能洗剤 アルカリクリーナー 業務用 油汚れ 手垢 ヤニ キッチン 壁 床 多目的洗剤 希釈タイプ 100ml",
+      "asin": "B0GZLYYLVB",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51Yb78TPS1L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "usage"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GZLYYLVB",
+      "ref": "p2",
+      "search_key": "ジャンピカ 万能洗剤 アルカリクリーナー 業務用 油汚れ 手垢",
+      "selection_score": 0.505
+    },
+    {
+      "amazon_title": "CLEAN HOUSE 食器用洗剤 業務用 4L 大容量 【油汚れに強い】 特大 中性 台所 詰め替え用 注ぎ口ノズル付 キッチン用 ライムの香り グリーン 液体 飲食店 工場 備蓄 まとめ買い コスパ 洗浄力 泡立ち 4リットル 詰め替えボトル 買い置き ストック キッチン用品",
+      "asin": "B0GR9VDYCJ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71b5whKEIZL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "container"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GR9VDYCJ",
+      "ref": "p3",
+      "search_key": "CLEAN HOUSE 食器用洗剤 業務用 4L 大容量 特大",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "CHARMY Magica チャーミーマジカ 手肌+（プラス）除菌 詰替大容量950ml グレープフルーツ＆ガーデンの香り 食器用洗剤",
+      "asin": "B0GKNW2BQL",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/713kvFbiY1L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "container"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GKNW2BQL",
+      "ref": "p4",
+      "search_key": "CHARMY Magica チャーミーマジカ 手肌+（プラス）除",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "さらさ ジョイ 食器用洗剤 本体 280ml 台所 キッチン 無添加 赤ちゃん デリケートな手肌",
+      "asin": "B0GFW87QVK",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61q-wJHMFxL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GFW87QVK",
+      "ref": "p5",
+      "search_key": "さらさ ジョイ 食器用洗剤 本体 280ml 台所 キッチン 無",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "ジョイ PRO洗浄 手洗い用食器洗剤 まとめ洗い用 逆さボトル 本体 280ml",
+      "asin": "B0FW4KYGFD",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71NskEadnrL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FW4KYGFD",
+      "ref": "p6",
+      "search_key": "ジョイ PRO洗浄 手洗い用食器洗剤 まとめ洗い用 逆さボトル",
+      "selection_score": 0.325
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "container",
+      "usage"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "hand-dishwashing-detergents"
+}

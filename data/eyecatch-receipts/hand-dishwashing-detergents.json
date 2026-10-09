@@ -1,0 +1,49 @@
+{
+  "api_usage": {
+    "input_tokens": 364,
+    "input_tokens_details": {
+      "image_tokens": 0,
+      "text_tokens": 364
+    },
+    "output_tokens": 1372,
+    "output_tokens_details": {
+      "image_tokens": 1372,
+      "text_tokens": 0
+    },
+    "total_tokens": 1736
+  },
+  "generated_at": "2026-10-09T04:14:02.547973+00:00",
+  "generation_method": "openai_images_api",
+  "generation_route": "openai_images_api",
+  "height": 1024,
+  "image_sha256": "dd2c7c33421d0d9f6f64e2b59169f29027fc40648cf4de2b21aa9efb801e9223",
+  "model": "gpt-image-2.5-sunburst",
+  "openai_project_id": "",
+  "operation_id": "sellemy-eyecatch-hand-dishwashing-detergents-6f05d0902ba8214d",
+  "provider": "openai",
+  "quality": "high",
+  "request_sha256": "6f05d0902ba8214d0ca2605572899668862d4ed32821d85ef8adc76b53325e41",
+  "routing": {
+    "api_share": 100,
+    "codex_reserve_percent": 20.0,
+    "codex_share": 0,
+    "codex_usage": {
+      "remaining_percent": 28.0,
+      "resets_at": 1791949050,
+      "source": "/Users/kickstart/.codex/sessions/2026/10/09/rollout-2026-10-09T08-06-01-01a11dc4-37f3-70d2-a2e1-f7c0eb094216.jsonl",
+      "used_percent": 72.0,
+      "window_minutes": 10080
+    },
+    "errors_before_success": [],
+    "executed_route": "openai_api",
+    "fallback_from": null,
+    "mode": "weighted_random",
+    "reason": "weighted_random",
+    "remaining_percent": 28.0,
+    "roll": 59,
+    "selected_route": "openai_api",
+    "total_weight": 100
+  },
+  "routing_recorded_at": "2026-10-09T04:14:02.548659+00:00",
+  "width": 1536
+}
