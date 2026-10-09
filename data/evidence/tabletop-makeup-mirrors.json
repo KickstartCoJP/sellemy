@@ -1,0 +1,140 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/tabletop-makeup-mirrors.html",
+  "category": "beauty",
+  "comparison_axes": [
+    {
+      "id": "mirror_view",
+      "keywords": [
+        "鏡面寸法",
+        "等倍",
+        "拡大倍率",
+        "使用距離"
+      ],
+      "label": "鏡面サイズと拡大倍率"
+    },
+    {
+      "id": "lighting_power",
+      "keywords": [
+        "ライト有無",
+        "明るさ調整",
+        "色調整",
+        "給電方式"
+      ],
+      "label": "照明の調整と電源条件"
+    },
+    {
+      "id": "placement_adjustment",
+      "keywords": [
+        "台座寸法",
+        "高さ",
+        "角度調整",
+        "折りたたみ"
+      ],
+      "label": "置き場所と角度調整"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/tabletop-makeup-mirrors/tabletop-makeup-mirrors.png",
+  "products": [
+    {
+      "amazon_title": "B Beauty Planet 1X/30X拡大鏡 化粧鏡 ライト付き 卓上 30X両面鏡 自立スタンド＋付属ピンセット 2000mAh バッテリー 3 色調光＋明るさ調整可能 バッテリー残量表示 折りたたみ式で携帯便利",
+      "asin": "B0H3TRP3Z2",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61WaRn77uuL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "lighting_power",
+        "placement_adjustment"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H3TRP3Z2",
+      "ref": "p1",
+      "search_key": "B Beauty Planet 1X/30X拡大鏡 化粧鏡 ライ",
+      "selection_score": 0.685
+    },
+    {
+      "amazon_title": "XXZU 化粧鏡 卓上ミラー LEDライト付き 女優ミラー 鏡 卓上 拡大鏡 10倍/等倍両面鏡 手鏡 円形 ピンク",
+      "asin": "B0GTNWYDRY",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61d7n6UF7dL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "mirror_view"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GTNWYDRY",
+      "ref": "p2",
+      "search_key": "XXZU 化粧鏡 卓上ミラー LEDライト付き 女優ミラー 鏡",
+      "selection_score": 0.505
+    },
+    {
+      "amazon_title": "Auxmir LED女優ミラー 30倍拡大鏡付き 鏡 卓上・折りたたみ式 3色ライト 無段階調光 Type-C充電式 1500mAh ホワイト",
+      "asin": "B0H9L3G9Z7",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51mMetmPlnL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "placement_adjustment"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H9L3G9Z7",
+      "ref": "p3",
+      "search_key": "Auxmir LED女優ミラー 30倍拡大鏡付き 鏡 卓上・折り",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "女優ミラー 卓上 LED ライト付きミラー 化粧鏡 充電式 三光色 明るさ調整 360度自由回転 30倍拡大鏡付き 化粧かがみ ホワイト",
+      "asin": "B0H7BZNGJV",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71TXMQhk4PL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "lighting_power"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H7BZNGJV",
+      "ref": "p4",
+      "search_key": "女優ミラー 卓上 LED ライト付きミラー 化粧鏡 充電式 三光",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "FASCINATE LED ライト付き 鏡 卓上 女優ミラー 充電式 2000mAhバッテリー 明るさ調整 360°調整 10倍拡大鏡付き ホワイト",
+      "asin": "B0H6HX2MFN",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71B9slqlbQL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "lighting_power"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H6HX2MFN",
+      "ref": "p5",
+      "search_key": "FASCINATE LED ライト付き 鏡 卓上 女優ミラー 充",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "LED拡大鏡 3倍/5倍/7倍 卓上ミラー 360度回転 LEDライト付き 拡大鏡付きメイクミラー 女優ミラー 化粧鏡 丸型 1+3倍",
+      "asin": "B0H3T88L2K",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/510DD-L2vmL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H3T88L2K",
+      "ref": "p6",
+      "search_key": "LED拡大鏡 3倍/5倍/7倍 卓上ミラー 360度回転 LED",
+      "selection_score": 0.325
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "lighting_power",
+      "mirror_view",
+      "placement_adjustment"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "tabletop-makeup-mirrors"
+}
