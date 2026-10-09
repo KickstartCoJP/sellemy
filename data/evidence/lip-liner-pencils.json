@@ -1,0 +1,131 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/lip-liner-pencils.html",
+  "category": "beauty",
+  "comparison_axes": [
+    {
+      "id": "color_matching",
+      "keywords": [
+        "色展開",
+        "公式色見本",
+        "仕上がり",
+        "使用範囲"
+      ],
+      "label": "手持ちの口紅との色合わせ"
+    },
+    {
+      "id": "tip_and_application",
+      "keywords": [
+        "芯径",
+        "芯の形",
+        "繰り出し式",
+        "鉛筆式"
+      ],
+      "label": "輪郭を描く芯の形と操作"
+    },
+    {
+      "id": "maintenance",
+      "keywords": [
+        "シャープナー",
+        "芯の戻し方",
+        "キャップ",
+        "付属ブラシ"
+      ],
+      "label": "削り方と付属品"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/lip-liner-pencils/lip-liner-pencils.png",
+  "products": [
+    {
+      "amazon_title": "リップライナー ペンシル 3in1 口紅ライナー 自動繰り出し式 リップブラシ付き 落ちにくい 高発色 なめらか描きやすい 5# クラシックレッド",
+      "asin": "B0H7HM9BVG",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/619VSh-k+CL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "tip_and_application"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H7HM9BVG",
+      "ref": "p1",
+      "search_key": "リップライナー ペンシル 3in1 口紅ライナー 自動繰り出し式",
+      "selection_score": 0.48
+    },
+    {
+      "amazon_title": "輪郭を描き、はっきりとした色の外観を実現するリップ ペンシル セット",
+      "asin": "B0HL78RN4W",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61ESpuQ3npL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HL78RN4W",
+      "ref": "p2",
+      "search_key": "輪郭を描き、はっきりとした色の外観を実現するリップ ペンシル セ",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "Visee(ヴィセ) ネンマクフェイク プランピング リップライナー 03 しれっと拡張風ブラウン 0.2g",
+      "asin": "B0HJ5WST49",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51YZzrcJP5L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HJ5WST49",
+      "ref": "p3",
+      "search_key": "Visee(ヴィセ) ネンマクフェイク プランピング リップライ",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "リップライナー ペンシル 3in1 口紅ライナー 自動繰り出し式 リップブラシ付き 落ちにくい 高発色 なめらか描きやすい 4# テラコッタオレンジ",
+      "asin": "B0H7HJZWPK",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51XqWRihSML._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "tip_and_application"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H7HJZWPK",
+      "ref": "p4",
+      "search_key": "リップライナー ペンシル 3in1 口紅ライナー 自動繰り出し式",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "Laka (ラカ) ステインリップライナー (＃02スウェードピンク)ㅣ長時間キープㅣ小顔メイクㅣ色移りしにくいㅣ韓国コスメㅣ0.7g",
+      "asin": "B0GKGGSG3V",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51csp8VMH9L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GKGGSG3V",
+      "ref": "p5",
+      "search_key": "Laka (ラカ) ステインリップライナー (＃02スウェードピ",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "リップペンシル リップライナー 落ちにくい 口角ライナー 高密着 なめらか芯 自然な発色 リップメイク 鉛筆削り付き",
+      "asin": "B0GG9TYHT4",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51sRV5P477L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GG9TYHT4",
+      "ref": "p6",
+      "search_key": "リップペンシル リップライナー 落ちにくい 口角ライナー 高密着",
+      "selection_score": 0.3
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "tip_and_application"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "lip-liner-pencils"
+}
