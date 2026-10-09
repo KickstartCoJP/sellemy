@@ -1,0 +1,49 @@
+{
+  "api_usage": {
+    "input_tokens": 356,
+    "input_tokens_details": {
+      "image_tokens": 0,
+      "text_tokens": 356
+    },
+    "output_tokens": 1372,
+    "output_tokens_details": {
+      "image_tokens": 1372,
+      "text_tokens": 0
+    },
+    "total_tokens": 1728
+  },
+  "generated_at": "2026-10-09T13:43:47.458724+00:00",
+  "generation_method": "openai_images_api",
+  "generation_route": "openai_images_api",
+  "height": 1024,
+  "image_sha256": "ac632ae7e0d498c5e2e3eaf9a21c67b59d90dde8f70ffb5a64970ba16664f656",
+  "model": "gpt-image-2.5-sunburst",
+  "openai_project_id": "",
+  "operation_id": "sellemy-eyecatch-home-cordless-landline-telephones-47300dd4b48203fe",
+  "provider": "openai",
+  "quality": "high",
+  "request_sha256": "47300dd4b48203fe331838ffc8a73ca5ac12b2aed888d48a8d78cc9db27265af",
+  "routing": {
+    "api_share": 100,
+    "codex_reserve_percent": 20.0,
+    "codex_share": 0,
+    "codex_usage": {
+      "remaining_percent": 21.0,
+      "resets_at": 1791949050,
+      "source": "/Users/kickstart/.codex/sessions/2026/09/28/rollout-2026-09-28T18-23-07-01a0e753-400f-7742-addc-09e42523b98c.jsonl",
+      "used_percent": 79.0,
+      "window_minutes": 10080
+    },
+    "errors_before_success": [],
+    "executed_route": "openai_api",
+    "fallback_from": null,
+    "mode": "weighted_random",
+    "reason": "weighted_random",
+    "remaining_percent": 21.0,
+    "roll": 22,
+    "selected_route": "openai_api",
+    "total_weight": 100
+  },
+  "routing_recorded_at": "2026-10-09T13:43:47.459262+00:00",
+  "width": 1536
+}
