@@ -1,0 +1,141 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/bluetooth-tv-audio-transmitters.html",
+  "category": "gadget",
+  "comparison_axes": [
+    {
+      "id": "tv_audio_connection",
+      "keywords": [
+        "光デジタル",
+        "3.5mm",
+        "RCA",
+        "PCM",
+        "音声出力設定"
+      ],
+      "label": "テレビ側の音声出力との接続条件"
+    },
+    {
+      "id": "wireless_audio_conditions",
+      "keywords": [
+        "対応コーデック",
+        "受信側の対応",
+        "低遅延モード",
+        "接続条件"
+      ],
+      "label": "受信機との対応規格と遅延対策"
+    },
+    {
+      "id": "operation_and_power",
+      "keywords": [
+        "同時接続台数",
+        "ペアリング",
+        "再接続",
+        "USB給電",
+        "送信モード"
+      ],
+      "label": "同時接続・再接続・給電方法"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/bluetooth-tv-audio-transmitters/bluetooth-tv-audio-transmitters.png",
+  "products": [
+    {
+      "amazon_title": "サンワダイレクト Bluetoothトランスミッター テレビ用 2台同時にapt-X LL接続 USB給電 光デジタル 400-BTAD011",
+      "asin": "B09N91TNDJ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/514-HlBlJlL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "operation_and_power",
+        "tv_audio_connection"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B09N91TNDJ",
+      "ref": "p1",
+      "search_key": "サンワダイレクト Bluetoothトランスミッター テレビ用",
+      "selection_score": 0.67
+    },
+    {
+      "amazon_title": "Earaku J133 ネックスピーカー専用 Bluetooth6.0 トランスミッター テレビ用 40ms以下低遅延",
+      "asin": "B0HJC56HBS",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61-5xZiQi8L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HJC56HBS",
+      "ref": "p2",
+      "search_key": "Earaku J133 ネックスピーカー専用 Bluetooth",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "エレコム Bluetooth トランスミッター 送信機能 20時間連続再生 Bluetooth ver5.3 【テレビや飛行機、車の音楽をワイヤレスで】 3.5mmプラグ 充電しながら使用可 2台へ同時に音声を送信できるデュアルストリーム機能 軽量 コンパクト設計 AirPods Pro 3での動作検証済 ブラック LBT-ATR02ECBK",
+      "asin": "B0FGJ6S458",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51Bu-H7gFZL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "tv_audio_connection"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0FGJ6S458",
+      "ref": "p3",
+      "search_key": "エレコム Bluetooth トランスミッター 送信機能 20時",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "Avantree Audikast 3 - Bluetooth トランスミッター テレビ用 送信機 aptX Adaptive 光デジタル対応",
+      "asin": "B0DK8TC1WJ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51VfP5vC8OL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "tv_audio_connection"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0DK8TC1WJ",
+      "ref": "p4",
+      "search_key": "Avantree Audikast 3 - Bluetooth",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "Avantree Oasis Plus 2 - テレビ用 Bluetoothトランスミッター 光デジタル対応 リモコン音量調整",
+      "asin": "B0DHCKM5T4",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/412-BH1Ra0L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "tv_audio_connection"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0DHCKM5T4",
+      "ref": "p5",
+      "search_key": "Avantree Oasis Plus 2 - テレビ用 Blu",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "Bluetooth 5.4 トランスミッター - YaizK トランスミッター bluetooth テレビ 17時間再生 一台二役 Aux ブルートゥース トランスミッター&レシーバー (受信機 + 送信機) 3.5mmイヤホンジャック搭載 小型 充電しながら使用可 車載スピーカー/テレビ/ホームステレオなど適用",
+      "asin": "B0D1FP2C2Y",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61YBKhTNguL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "tv_audio_connection"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0D1FP2C2Y",
+      "ref": "p6",
+      "search_key": "Bluetooth 5.4 トランスミッター - YaizK ト",
+      "selection_score": 0.31
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "operation_and_power",
+      "tv_audio_connection"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "bluetooth-tv-audio-transmitters"
+}
