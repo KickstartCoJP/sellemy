@@ -1,0 +1,49 @@
+{
+  "api_usage": {
+    "input_tokens": 362,
+    "input_tokens_details": {
+      "image_tokens": 0,
+      "text_tokens": 362
+    },
+    "output_tokens": 1372,
+    "output_tokens_details": {
+      "image_tokens": 1372,
+      "text_tokens": 0
+    },
+    "total_tokens": 1734
+  },
+  "generated_at": "2026-10-09T01:54:42.472983+00:00",
+  "generation_method": "openai_images_api",
+  "generation_route": "openai_images_api",
+  "height": 1024,
+  "image_sha256": "fc96461914b857591b3d4a81069225c51781a8444c88411fd6d3f0f91a4fc189",
+  "model": "gpt-image-2.5-sunburst",
+  "openai_project_id": "",
+  "operation_id": "sellemy-eyecatch-rechargeable-indoor-motion-sensor-lights-e2f640def81e6487",
+  "provider": "openai",
+  "quality": "high",
+  "request_sha256": "e2f640def81e6487c3a80be09bfc1fd474be90297f84b1359d2b38d164af2ab4",
+  "routing": {
+    "api_share": 100,
+    "codex_reserve_percent": 20.0,
+    "codex_share": 0,
+    "codex_usage": {
+      "remaining_percent": 28.0,
+      "resets_at": 1791949050,
+      "source": "/Users/kickstart/.codex/sessions/2026/10/09/rollout-2026-10-09T08-06-01-01a11dc4-37f3-70d2-a2e1-f7c0eb094216.jsonl",
+      "used_percent": 72.0,
+      "window_minutes": 10080
+    },
+    "errors_before_success": [],
+    "executed_route": "openai_api",
+    "fallback_from": null,
+    "mode": "weighted_random",
+    "reason": "weighted_random",
+    "remaining_percent": 28.0,
+    "roll": 18,
+    "selected_route": "openai_api",
+    "total_weight": 100
+  },
+  "routing_recorded_at": "2026-10-09T01:54:42.473495+00:00",
+  "width": 1536
+}

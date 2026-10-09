@@ -1,0 +1,140 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/rechargeable-indoor-motion-sensor-lights.html",
+  "category": "gadget",
+  "comparison_axes": [
+    {
+      "id": "activation_conditions",
+      "keywords": [
+        "検知距離",
+        "検知角度",
+        "明暗条件",
+        "点灯時間",
+        "常時点灯モード"
+      ],
+      "label": "人感・明暗センサーの点灯条件"
+    },
+    {
+      "id": "light_and_installation",
+      "keywords": [
+        "光束",
+        "色温度",
+        "本体寸法",
+        "マグネット",
+        "設置面の条件"
+      ],
+      "label": "光の仕様と取り付け条件"
+    },
+    {
+      "id": "charging_and_runtime",
+      "keywords": [
+        "充電端子",
+        "入力条件",
+        "充電時間",
+        "連続点灯時間",
+        "センサーモードの使用条件"
+      ],
+      "label": "充電方法と使用時間の測定条件"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/rechargeable-indoor-motion-sensor-lights/rechargeable-indoor-motion-sensor-lights.png",
+  "products": [
+    {
+      "amazon_title": "WESTBERRY 人感センサーライト 室内 USB-C充電式 マグネット 足元灯 3色切替 無段階調光",
+      "asin": "B0H9CSG55S",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61l8MFyFNqL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "light_and_installation"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H9CSG55S",
+      "ref": "p1",
+      "search_key": "WESTBERRY 人感センサーライト 室内 USB-C充電式",
+      "selection_score": 0.49
+    },
+    {
+      "amazon_title": "ZHOUMIN 人感センサーライト LED、Type-C 充電式、自動人感点灯、無段階調光機能搭載、薄型デザイン、間接照明・足元灯として活用可能、寝室、浴室、階段、収納棚、廊下など屋内全シーン適用、1個セット、日本語取扱説明書付き",
+      "asin": "B0H6T9N5HQ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61XBEKS+IZL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H6T9N5HQ",
+      "ref": "p2",
+      "search_key": "ZHOUMIN 人感センサーライト LED、Type-C 充電式",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "Mirela 人感センサーライト 室内 充電式 LEDバー キッチン用ライト 25cm クローゼット 3色調色 無段階調光 マグネット式 工事不要 薄型 収納 玄関 廊下",
+      "asin": "B0H2W6DKV2",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81q-SoRPfrL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "light_and_installation"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H2W6DKV2",
+      "ref": "p3",
+      "search_key": "Mirela 人感センサーライト 室内 充電式 LEDバー キッ",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "【30cm 2本】人感センサーライト 室内 充電式 薄型 バーライト クローゼット照明（3色切替・無段階調光・900mAh）マグネット 足元照明",
+      "asin": "B0H1MK1PW7",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71SBbuAEHPL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "light_and_installation"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H1MK1PW7",
+      "ref": "p4",
+      "search_key": "人感センサーライト 室内 充電式 薄型 バーライト クローゼット",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "人感センサーライト 室内 360度回転 足元灯 壁灯 間接照明 省エネ 自動点灯 マグネット 木製 玄関 おしゃれ LEDライト USB充電式 廊下",
+      "asin": "B0H14FXQDP",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71k7CuUSaKL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "light_and_installation"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H14FXQDP",
+      "ref": "p5",
+      "search_key": "人感センサーライト 室内 360度回転 足元灯 壁灯 間接照明",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "レーダー人感センサーライト 充電式 マグネット 棚下 Type-C 30cm 2本",
+      "asin": "B0GKY8KPVV",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71LSLeFcr6L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "light_and_installation"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GKY8KPVV",
+      "ref": "p6",
+      "search_key": "レーダー人感センサーライト 充電式 マグネット 棚下 Type-",
+      "selection_score": 0.31
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "light_and_installation"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "rechargeable-indoor-motion-sensor-lights"
+}
