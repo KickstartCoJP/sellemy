@@ -1,0 +1,48 @@
+{
+  "api_usage": {
+    "input_tokens": 357,
+    "input_tokens_details": {
+      "image_tokens": 0,
+      "text_tokens": 357
+    },
+    "output_tokens": 1372,
+    "output_tokens_details": {
+      "image_tokens": 1372,
+      "text_tokens": 0
+    },
+    "total_tokens": 1729
+  },
+  "generated_at": "2026-10-09T17:08:32.331268+00:00",
+  "generation_method": "openai_images_api",
+  "generation_route": "openai_images_api",
+  "height": 1024,
+  "image_sha256": "fcc53658f2e10df02557b7728ee6276c435faacaf4044772bae03e5df43ae22f",
+  "model": "gpt-image-2.5-sunburst",
+  "openai_project_id": "",
+  "operation_id": "sellemy-eyecatch-hand-dishwashing-sponges-fd6eb1beaa7534d8",
+  "provider": "openai",
+  "quality": "high",
+  "request_sha256": "fd6eb1beaa7534d8f38f4977ebd9e849bf789215b4adc1d5094fe30bbece3eb8",
+  "routing": {
+    "api_share": 100,
+    "codex_reserve_percent": 20.0,
+    "codex_share": 0,
+    "codex_usage": {
+      "remaining_percent": 17.0,
+      "resets_at": 1791949050,
+      "source": "/Users/kickstart/.codex/sessions/2026/09/28/rollout-2026-09-28T18-23-07-01a0e753-400f-7742-addc-09e42523b98c.jsonl",
+      "used_percent": 83.0,
+      "window_minutes": 10080
+    },
+    "errors_before_success": [],
+    "executed_route": "openai_api",
+    "fallback_from": null,
+    "mode": "weighted_random",
+    "reason": "codex_reserve_threshold",
+    "remaining_percent": 17.0,
+    "roll": null,
+    "selected_route": "openai_api"
+  },
+  "routing_recorded_at": "2026-10-09T17:08:32.331868+00:00",
+  "width": 1536
+}

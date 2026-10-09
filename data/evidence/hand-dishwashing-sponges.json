@@ -1,0 +1,129 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/hand-dishwashing-sponges.html",
+  "category": "dailygoods",
+  "comparison_axes": [
+    {
+      "id": "surface_compatibility",
+      "keywords": [
+        "フッ素樹脂加工",
+        "ガラス",
+        "研磨材",
+        "使用できない素材"
+      ],
+      "label": "食器や調理器具の素材への適合"
+    },
+    {
+      "id": "sponge_structure",
+      "keywords": [
+        "不織布",
+        "ネット",
+        "層構造",
+        "寸法"
+      ],
+      "label": "洗う面の構造と形"
+    },
+    {
+      "id": "care_and_replacement",
+      "keywords": [
+        "水切り",
+        "消毒条件",
+        "耐熱温度",
+        "入り数"
+      ],
+      "label": "洗浄後の手入れと交換単位"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/hand-dishwashing-sponges/hand-dishwashing-sponges.png",
+  "products": [
+    {
+      "amazon_title": "【Amazon.co.jp限定】3M スポンジ キッチン 食器 キズつけない グリーナークリーン PLAメッシュネット 4個 スコッチブライト GC-PLA MN 4P A",
+      "asin": "B0BGLGF5SR",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81C5k+AMSdL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "sponge_structure"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0BGLGF5SR",
+      "ref": "p1",
+      "search_key": "3M スポンジ キッチン 食器 キズつけない グリーナークリーン",
+      "selection_score": 0.505
+    },
+    {
+      "amazon_title": "食器用スポンジ 両面ウエスト型 10×8×2cm 24個入",
+      "asin": "B0GWP9RT71",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/912HaFda4rL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GWP9RT71",
+      "ref": "p2",
+      "search_key": "食器用スポンジ 両面ウエスト型 10×8×2cm 24個入",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "オーエ キッチンスポンジ 約縦10.8cm×横6.8cm×厚さ3.5cm アイボリー モノプレミアム 台所 スポンジ 泡立ち 清潔 長持ち 日本製",
+      "asin": "B0FYLRHTWL",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81RF5A9WaML._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FYLRHTWL",
+      "ref": "p3",
+      "search_key": "オーエ キッチンスポンジ 約縦10.8cm×横6.8cm×厚さ3",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "キクロン キッチンスポンジ ソフトタイプ ピンク 1個入 たっぷり泡立つ 日本製 あわもっちー",
+      "asin": "B0FXW4LSZW",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61t6uhUcUQL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FXW4LSZW",
+      "ref": "p4",
+      "search_key": "キクロン キッチンスポンジ ソフトタイプ ピンク 1個入 たっぷ",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "ダスキン【公式】「台所用スポンジ ソフトタイプ 3色セット」",
+      "asin": "B0FTLH2YBZ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41-Wqcg+GIL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FTLH2YBZ",
+      "ref": "p5",
+      "search_key": "ダスキン 「台所用スポンジ ソフトタイプ 3色セット」",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "ダスキン【公式】「台所用スポンジ ハードタイプ 3色セット モノトーン」",
+      "asin": "B0FTF5GKHJ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51E+UnzG4pL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FTF5GKHJ",
+      "ref": "p6",
+      "search_key": "ダスキン 「台所用スポンジ ハードタイプ 3色セット モノトーン",
+      "selection_score": 0.325
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "sponge_structure"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "hand-dishwashing-sponges"
+}
