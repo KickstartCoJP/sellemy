@@ -1,0 +1,48 @@
+{
+  "api_usage": {
+    "input_tokens": 362,
+    "input_tokens_details": {
+      "image_tokens": 0,
+      "text_tokens": 362
+    },
+    "output_tokens": 1372,
+    "output_tokens_details": {
+      "image_tokens": 1372,
+      "text_tokens": 0
+    },
+    "total_tokens": 1734
+  },
+  "generated_at": "2026-10-09T14:37:48.574633+00:00",
+  "generation_method": "openai_images_api",
+  "generation_route": "openai_images_api",
+  "height": 1024,
+  "image_sha256": "3f0f5f09c1025c9191d39d386fc15ae4e774739e0f229e817383eb7175f39ab3",
+  "model": "gpt-image-2.5-sunburst",
+  "openai_project_id": "",
+  "operation_id": "sellemy-eyecatch-adhesive-lint-rollers-for-fabrics-a41238e153bae092",
+  "provider": "openai",
+  "quality": "high",
+  "request_sha256": "a41238e153bae0923f1bfc58256b2a890ef4562ab756efe17fba725cb344fd50",
+  "routing": {
+    "api_share": 100,
+    "codex_reserve_percent": 20.0,
+    "codex_share": 0,
+    "codex_usage": {
+      "remaining_percent": 20.0,
+      "resets_at": 1791949050,
+      "source": "/Users/kickstart/.codex/sessions/2026/09/28/rollout-2026-09-28T18-23-07-01a0e753-400f-7742-addc-09e42523b98c.jsonl",
+      "used_percent": 80.0,
+      "window_minutes": 10080
+    },
+    "errors_before_success": [],
+    "executed_route": "openai_api",
+    "fallback_from": null,
+    "mode": "weighted_random",
+    "reason": "codex_reserve_threshold",
+    "remaining_percent": 20.0,
+    "roll": null,
+    "selected_route": "openai_api"
+  },
+  "routing_recorded_at": "2026-10-09T14:37:48.575429+00:00",
+  "width": 1536
+}
