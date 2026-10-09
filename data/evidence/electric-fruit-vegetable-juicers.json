@@ -1,0 +1,125 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/electric-fruit-vegetable-juicers.html",
+  "category": "gadget",
+  "comparison_axes": [
+    {
+      "id": "extraction_system",
+      "keywords": [
+        "スクリュー式",
+        "遠心分離式",
+        "果汁容器",
+        "搾りかす容器"
+      ],
+      "label": "搾汁方式と果汁・搾りかすの取り出し"
+    },
+    {
+      "id": "ingredient_conditions",
+      "keywords": [
+        "使用できない食材",
+        "投入口寸法",
+        "種や皮の処理",
+        "食材の切り方"
+      ],
+      "label": "対応食材と投入前の下準備"
+    },
+    {
+      "id": "cleaning_and_installation",
+      "keywords": [
+        "フィルター",
+        "分解手順",
+        "本体寸法",
+        "連続運転時間"
+      ],
+      "label": "洗える部品と設置条件"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/electric-fruit-vegetable-juicers/electric-fruit-vegetable-juicers.png",
+  "products": [
+    {
+      "amazon_title": "スロージューサー 低速回転 ジュース抽出機遠心ジュース抽出機、果物と野菜全体のジューサーマシン、搾りカス分離 小型 ミキサー 酸化しにくい コンパクト広口ステンレススチールジュースメイク、果物と野菜用の簡単にきれいな高収量ジューサーマシン (シルバー)",
+      "asin": "B0H7S2N755",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41+UNpVvXHL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H7S2N755",
+      "ref": "p1",
+      "search_key": "スロージューサー 低速回転 ジュース抽出機遠心ジュース抽出機、果",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "【Ventray】 Ginnie スロージューサー 低速60回転/分 高搾汁率 ホワイト",
+      "asin": "B0F43TMQ48",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61qGG8PgQ0L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0F43TMQ48",
+      "ref": "p2",
+      "search_key": "Ginnie スロージューサー 低速60回転/分 高搾汁率 ホワ",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "[東京Deco] ミニスロージューサー 搾りカス分離 低速回転 グリーン [食材をゆっくり圧搾] 小型 ミキサー 高い搾汁率 酸化しにくい コンパクト フルーツ 野菜 ビタミン 酵素 鮮度キープ フレッシュジュース レシピ付き 日本語取扱説明書 i001",
+      "asin": "B0F3X631Z1",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51SSZLP1EgL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0F3X631Z1",
+      "ref": "p3",
+      "search_key": "ミニスロージューサー 搾りカス分離 低速回転 グリーン 小型 ミ",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "[東京Deco] ミニスロージューサー 搾りカス分離 低速回転 レッド [食材をゆっくり圧搾] 小型 ミキサー 高い搾汁率 酸化しにくい コンパクト フルーツ 野菜 ビタミン 酵素 鮮度キープ フレッシュジュース レシピ付き 日本語取扱説明書 i001",
+      "asin": "B0F3X5Q67J",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51hqDvZzQRL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0F3X5Q67J",
+      "ref": "p4",
+      "search_key": "ミニスロージューサー 搾りカス分離 低速回転 レッド 小型 ミキ",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "Global Recycled Standard",
+      "asin": "B0DQJ4GXVP",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61+fd2XVIGL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0DQJ4GXVP",
+      "ref": "p5",
+      "search_key": "Global Recycled Standard",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "低速ジューサー、果物と野菜のジュース残渣水分離オリジナルジューサー、遠心分離オリジナルジューサー、フルーツジューサー、低速回転、ミニスロージューサー、ステンレス鋼、絞り廃棄物分離、新鮮さを保つ (レッド)",
+      "asin": "B0DQFYSTTY",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/616GeLAk1NL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0DQFYSTTY",
+      "ref": "p6",
+      "search_key": "低速ジューサー、果物と野菜のジュース残渣水分離オリジナルジューサ",
+      "selection_score": 0.325
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "electric-fruit-vegetable-juicers"
+}
