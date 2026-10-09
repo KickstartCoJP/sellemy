@@ -1,0 +1,125 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/facial-peeling-gels.html",
+  "category": "beauty",
+  "comparison_axes": [
+    {
+      "id": "application_scope",
+      "keywords": [
+        "顔用",
+        "目元・口元",
+        "使用禁止部位",
+        "肌状態の注意"
+      ],
+      "label": "使える部位と使用を避ける条件"
+    },
+    {
+      "id": "application_procedure",
+      "keywords": [
+        "乾いた肌",
+        "濡れた肌への対応",
+        "使用量",
+        "すすぎ"
+      ],
+      "label": "使用時の肌状態と洗い流し方"
+    },
+    {
+      "id": "formula_and_frequency",
+      "keywords": [
+        "配合成分",
+        "香料",
+        "メーカー推奨頻度",
+        "併用時の注意"
+      ],
+      "label": "成分表示と使用頻度の目安"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/facial-peeling-gels/facial-peeling-gels.png",
+  "products": [
+    {
+      "amazon_title": "プラチナレーベル ハトムギピーリングジェル 300グラム (x 2)",
+      "asin": "B0GYCSX6LM",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/718qJLEEmBL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GYCSX6LM",
+      "ref": "p1",
+      "search_key": "プラチナレーベル ハトムギピーリングジェル 300グラム (x",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "PLATINUM LABEL(プラチナレーベル) VCグルタチオンシリーズ ピーリングジェル 300g 日本製",
+      "asin": "B0FHKJXRDZ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51OI1b4uiVL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FHKJXRDZ",
+      "ref": "p2",
+      "search_key": "PLATINUM LABEL(プラチナレーベル) VCグルタチオ",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "【公式】むき肌つるん ぽろぽろとれる杏ジェル 110g 1本 日本製 ピーリングジェル 角質ケア 首ポツ くすみ 保湿 敏感肌対応",
+      "asin": "B0FH9MXF6X",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61orY59+hML._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FH9MXF6X",
+      "ref": "p3",
+      "search_key": "むき肌つるん ぽろぽろとれる杏ジェル 110g 1本 日本製 ピ",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "NILE ピーリングジェル 角質取り 顔 メンズ レディース バス用品セット (CALIFORNIA（グレープフルーツ）の香り)",
+      "asin": "B0F3NLTCJ8",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51xCkG4KAvL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0F3NLTCJ8",
+      "ref": "p4",
+      "search_key": "NILE ピーリングジェル 角質取り 顔 メンズ レディース バ",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "DETクリア (ディーイーティークリア) (ディーイーティークリア) ブライト&ピール ピーリングジェリー <ミックスフルーツの香り> 180mL 日本製 (角質/毛穴ケア) 【Amazon.co.jp限定】",
+      "asin": "B0C6DT3T22",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51retWnHyEL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0C6DT3T22",
+      "ref": "p5",
+      "search_key": "DETクリア (ディーイーティークリア) (ディーイーティークリ",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "Dr.G(ドクタージー) ブライトニングピーリング (120g)",
+      "asin": "B0BRR9S1NN",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41cuNAzdfeL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0BRR9S1NN",
+      "ref": "p6",
+      "search_key": "Dr.G(ドクタージー) ブライトニングピーリング (120g)",
+      "selection_score": 0.325
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "facial-peeling-gels"
+}
