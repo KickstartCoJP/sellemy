@@ -1,0 +1,135 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/household-steam-irons.html",
+  "category": "gadget",
+  "comparison_axes": [
+    {
+      "id": "power_and_workflow",
+      "keywords": [
+        "コード付き",
+        "コードレス",
+        "給電台",
+        "連続使用条件"
+      ],
+      "label": "給電方式と作業中の置き方"
+    },
+    {
+      "id": "soleplate_and_weight",
+      "keywords": [
+        "かけ面",
+        "先端形状",
+        "素材",
+        "本体重量"
+      ],
+      "label": "かけ面の形・素材と本体重量"
+    },
+    {
+      "id": "temperature_steam_and_care",
+      "keywords": [
+        "温度調節",
+        "スチーム設定",
+        "給水",
+        "水あか対策"
+      ],
+      "label": "温度設定・スチーム条件・手入れ"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/household-steam-irons/household-steam-irons.png",
+  "products": [
+    {
+      "amazon_title": "ティファール コードレススチームアイロン ジェットスチーム最大80g/分 本体色ローズ フッ素樹脂かけ面「フリームーブ ミニ」 FV6111J0",
+      "asin": "B0C2PKGGB9",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51PKMU+63fL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "power_and_workflow",
+        "soleplate_and_weight"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0C2PKGGB9",
+      "ref": "p1",
+      "search_key": "ティファール コードレススチームアイロン ジェットスチーム最大8",
+      "selection_score": 0.685
+    },
+    {
+      "amazon_title": "TOSHIBA(東芝) スチームアイロン コード付き 大容量 給水手間削減 TA-B75(H)",
+      "asin": "B08JG1LS86",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71wob+YzDfL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "power_and_workflow",
+        "temperature_steam_and_care"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B08JG1LS86",
+      "ref": "p2",
+      "search_key": "TOSHIBA(東芝) スチームアイロン コード付き 大容量 給",
+      "selection_score": 0.505
+    },
+    {
+      "amazon_title": "Jack & Rose 衣類スチームアイロン 100-240V 海外対応 変圧器不要 150ml LEDディスプレイ 出張・旅行",
+      "asin": "B0H8Y37GVW",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61JAueX-TvL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H8Y37GVW",
+      "ref": "p3",
+      "search_key": "Jack & Rose 衣類スチームアイロン 100-240V",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "真空吸着 スチームアイロン 25秒立ち上がり1200W衣類スチーマー ハンガー掛けたまま 最大6400Pa 3段階吸引力 6種類生地モード",
+      "asin": "B0H716ZNZ3",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61cb6+QG7YL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H716ZNZ3",
+      "ref": "p4",
+      "search_key": "真空吸着 スチームアイロン 25秒立ち上がり1200W衣類スチー",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "スチームアイロン「革新設計 超軽量」衣類スチーマー 小型 ハンガーにかけたまま",
+      "asin": "B0FJDPSL53",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61mq9-0j8FL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FJDPSL53",
+      "ref": "p5",
+      "search_key": "スチームアイロン「革新設計 超軽量」衣類スチーマー 小型 ハンガ",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "衣類スチーマー スチームアイロン 1500W作動 ハンガーにかけたまま 日本語取扱説明書 プロ仕様 黒",
+      "asin": "B0FHB7XMNX",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61WxxcoQxyL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FHB7XMNX",
+      "ref": "p6",
+      "search_key": "衣類スチーマー スチームアイロン 1500W作動 ハンガーにかけ",
+      "selection_score": 0.325
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "power_and_workflow",
+      "soleplate_and_weight",
+      "temperature_steam_and_care"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "household-steam-irons"
+}
