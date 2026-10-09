@@ -1,0 +1,48 @@
+{
+  "api_usage": {
+    "input_tokens": 341,
+    "input_tokens_details": {
+      "image_tokens": 0,
+      "text_tokens": 341
+    },
+    "output_tokens": 1372,
+    "output_tokens_details": {
+      "image_tokens": 1372,
+      "text_tokens": 0
+    },
+    "total_tokens": 1713
+  },
+  "generated_at": "2026-10-09T16:12:09.146393+00:00",
+  "generation_method": "openai_images_api",
+  "generation_route": "openai_images_api",
+  "height": 1024,
+  "image_sha256": "3c6bc9ce5be16c071830925189b771b7d382b1b9a52c307a55e0f2907d881a8e",
+  "model": "gpt-image-2.5-sunburst",
+  "openai_project_id": "",
+  "operation_id": "sellemy-eyecatch-digital-probe-cooking-thermometers-a2f0a8d741961f93",
+  "provider": "openai",
+  "quality": "high",
+  "request_sha256": "a2f0a8d741961f939dad945c7daa02175fdd3cb1253ab0cd07bf33f834e7087d",
+  "routing": {
+    "api_share": 100,
+    "codex_reserve_percent": 20.0,
+    "codex_share": 0,
+    "codex_usage": {
+      "remaining_percent": 19.0,
+      "resets_at": 1791949050,
+      "source": "/Users/kickstart/.codex/sessions/2026/09/28/rollout-2026-09-28T18-23-07-01a0e753-400f-7742-addc-09e42523b98c.jsonl",
+      "used_percent": 81.0,
+      "window_minutes": 10080
+    },
+    "errors_before_success": [],
+    "executed_route": "openai_api",
+    "fallback_from": null,
+    "mode": "weighted_random",
+    "reason": "codex_reserve_threshold",
+    "remaining_percent": 19.0,
+    "roll": null,
+    "selected_route": "openai_api"
+  },
+  "routing_recorded_at": "2026-10-09T16:12:09.147051+00:00",
+  "width": 1536
+}

@@ -1,0 +1,129 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/digital-probe-cooking-thermometers.html",
+  "category": "gadget",
+  "comparison_axes": [
+    {
+      "id": "probe_and_measurement",
+      "keywords": [
+        "プローブ長",
+        "測定部",
+        "差し込み位置",
+        "コード式"
+      ],
+      "label": "食品に差し込む測定部と測定位置"
+    },
+    {
+      "id": "measurement_conditions",
+      "keywords": [
+        "測定範囲",
+        "精度",
+        "表示更新",
+        "測定条件"
+      ],
+      "label": "測定温度範囲と精度の条件"
+    },
+    {
+      "id": "cleaning_and_operation",
+      "keywords": [
+        "洗浄可能部",
+        "防水条件",
+        "表示固定",
+        "電池交換"
+      ],
+      "label": "洗える部分と表示・電源の操作"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/digital-probe-cooking-thermometers/digital-probe-cooking-thermometers.png",
+  "products": [
+    {
+      "amazon_title": "TEZILON スマート 肉温度計 料理 コードレス 通知アラート アプリ遠隔 304ステンレス鋼 セラミック耐熱プローブ 直火対応 IP68防水 充電ベース付き フッド温度計 調理 高精度 クッキング/バーベキュー/オーブン/グリル/スモーカー/エアフライヤー キッチン用 Android＆iOS対応",
+      "asin": "B0F18W6BV8",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71DC8s4Qe8L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "measurement_conditions"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0F18W6BV8",
+      "ref": "p1",
+      "search_key": "TEZILON スマート 肉温度計 料理 コードレス 通知アラー",
+      "selection_score": 0.49
+    },
+    {
+      "amazon_title": "料理用デジタル温度計 IPX6防水 クッキング温度計 中心温度計 1～3秒速読 日本語取扱説明書付き 赤",
+      "asin": "B0HDPCZJF1",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71OHVqDTPJL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HDPCZJF1",
+      "ref": "p2",
+      "search_key": "料理用デジタル温度計 IPX6防水 クッキング温度計 中心温度計",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "TempPro 温度計 料理 デジタル 中心温度 高温対応 揚げ物 天ぷら 肉 油 お菓子作り パン作り コーヒー ミルク キッチン 食品 調理用",
+      "asin": "B0GWYRRN8N",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61zfXSXVa5L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GWYRRN8N",
+      "ref": "p3",
+      "search_key": "TempPro 温度計 料理 デジタル 中心温度 高温対応 揚げ",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "TempPro 温度計 料理 デジタル 防水 水洗い可能 中心温度 揚げ物 天ぷら 油 肉 コーヒー ミルク パン作り 製菓用 キッチン 食品 調理用",
+      "asin": "B0GMX5HJJH",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/611dyeFI-DL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GMX5HJJH",
+      "ref": "p4",
+      "search_key": "TempPro 温度計 料理 デジタル 防水 水洗い可能 中心温",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "TempPro 料理用温度計 デジタル 1mワイヤープローブ タイマー付き オーブン/揚げ物/天ぷら/油/肉/パン/お菓子作り キッチン 食品 調理用",
+      "asin": "B0GMGRPL67",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71hvX1CowuL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GMGRPL67",
+      "ref": "p5",
+      "search_key": "TempPro 料理用温度計 デジタル 1mワイヤープローブ タ",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "TempPro 温度計 料理 デジタル IPX7防水 丸洗い可能 揚げ物 天ぷら 油 肉 コーヒー ミルク お菓子作り パン作り キッチン 調理用",
+      "asin": "B0FRS519QY",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/7128xKx6BFL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FRS519QY",
+      "ref": "p6",
+      "search_key": "TempPro 温度計 料理 デジタル IPX7防水 丸洗い可能",
+      "selection_score": 0.31
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "measurement_conditions"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "digital-probe-cooking-thermometers"
+}
