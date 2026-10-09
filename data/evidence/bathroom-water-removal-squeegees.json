@@ -1,0 +1,140 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/bathroom-water-removal-squeegees.html",
+  "category": "dailygoods",
+  "comparison_axes": [
+    {
+      "id": "surface_compatibility",
+      "keywords": [
+        "浴室壁",
+        "鏡",
+        "ガラス",
+        "床",
+        "使用できない面"
+      ],
+      "label": "水切りする面との適合"
+    },
+    {
+      "id": "blade_and_handle",
+      "keywords": [
+        "ヘッド幅",
+        "ブレード素材",
+        "持ち手の長さ",
+        "形状",
+        "重量"
+      ],
+      "label": "ヘッド幅と持ち手の構造"
+    },
+    {
+      "id": "storage_and_replacement",
+      "keywords": [
+        "フック",
+        "マグネット",
+        "設置条件",
+        "替え刃",
+        "洗い方"
+      ],
+      "label": "置き方と部品交換の条件"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/bathroom-water-removal-squeegees/bathroom-water-removal-squeegees.png",
+  "products": [
+    {
+      "amazon_title": "水切りワイパー 風呂 スクイージー 約25cm シリコン 一体成型 水滴除去 水アカ対策 窓掃除 吊り下げ収納 フック付き 浴室 鏡 ガラス ブラック",
+      "asin": "B0H4ZKCGZ8",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61ERacDEcJL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "storage_and_replacement",
+        "surface_compatibility"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H4ZKCGZ8",
+      "ref": "p1",
+      "search_key": "水切りワイパー 風呂 スクイージー 約25cm シリコン 一体成",
+      "selection_score": 0.685
+    },
+    {
+      "amazon_title": "フロアスクイージー 角型 長柄 水切り 家庭・業務用 床・浴室・トイレ用（2個） (7*75 cmでステンレス鋼の3本の棒をこする)",
+      "asin": "B0HJP23N1R",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41fAT-47NOL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "surface_compatibility"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HJP23N1R",
+      "ref": "p2",
+      "search_key": "フロアスクイージー 角型 長柄 水切り 家庭・業務用 床・浴室",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "山崎実業(Yamazaki) 引っ掛け 水切りワイパー S ホワイト W16×D4.2×H19.7cm タワー tower コンパクトサイズ スクイジー 浮かせる収納 10938",
+      "asin": "B0H2612KJX",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51Ne5QDaLAL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H2612KJX",
+      "ref": "p3",
+      "search_key": "山崎実業(Yamazaki) 引っ掛け 水切りワイパー S ホワ",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "山崎実業(Yamazaki) 引っ掛け 水切りワイパー M ホワイト W31×D4.2×H38cm タワー tower スクイジー 浮かせる収納 10940",
+      "asin": "B0H25TT1B5",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41Bp7OQrKNL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H25TT1B5",
+      "ref": "p4",
+      "search_key": "山崎実業(Yamazaki) 引っ掛け 水切りワイパー M ホワ",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "マーナ (marna) 小回りのきくスキージー (鏡や壁などの掃除に) 浴室 スクイージー (浮かせる収納) 水切りワイパー グレー W677GY",
+      "asin": "B0FW5M522Y",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51buOOkPnVL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "surface_compatibility"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0FW5M522Y",
+      "ref": "p5",
+      "search_key": "マーナ (marna) 小回りのきくスキージー (鏡や壁などの掃",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "マーナ (marna) 小回りのきくスキージー (鏡や壁などの掃除に) 浴室 スクイージー (浮かせる収納) 水切りワイパー ホワイト W677W",
+      "asin": "B0FW5LHDVC",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51m+dLQXTRL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "surface_compatibility"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0FW5LHDVC",
+      "ref": "p6",
+      "search_key": "マーナ (marna) 小回りのきくスキージー (鏡や壁などの掃",
+      "selection_score": 0.325
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "storage_and_replacement",
+      "surface_compatibility"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "bathroom-water-removal-squeegees"
+}
