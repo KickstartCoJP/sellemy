@@ -1,0 +1,139 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/oxygen-based-laundry-bleaches.html",
+  "category": "dailygoods",
+  "comparison_axes": [
+    {
+      "id": "fabric_compatibility",
+      "keywords": [
+        "対応繊維",
+        "色柄物",
+        "使用不可",
+        "表示確認",
+        "試し洗い"
+      ],
+      "label": "使える繊維・色柄と使えない衣類"
+    },
+    {
+      "id": "formula_dosing",
+      "keywords": [
+        "粉末",
+        "液体",
+        "成分",
+        "水量",
+        "使用量",
+        "洗剤との併用"
+      ],
+      "label": "粉末・液体の成分表示と洗濯時の使用量"
+    },
+    {
+      "id": "soaking_conditions",
+      "keywords": [
+        "つけ置き",
+        "水温",
+        "放置時間",
+        "すすぎ",
+        "併用禁止"
+      ],
+      "label": "つけ置きの水温・時間・すすぎ条件"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/oxygen-based-laundry-bleaches/oxygen-based-laundry-bleaches.png",
+  "products": [
+    {
+      "amazon_title": "MIYOSHI 暮らしの酸素系漂白剤 粉末 750g (× 2)",
+      "asin": "B0H99P6XFT",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71YFaMHtZdL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "formula_dosing"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H99P6XFT",
+      "ref": "p1",
+      "search_key": "MIYOSHI 暮らしの酸素系漂白剤 粉末 750g (× 2)",
+      "selection_score": 0.49
+    },
+    {
+      "amazon_title": "Pix オキシフィニッシュ 1kg スプーン付 漂白 消臭 除菌",
+      "asin": "B0FPWLV5M4",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71FVgcZvPcL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FPWLV5M4",
+      "ref": "p2",
+      "search_key": "Pix オキシフィニッシュ 1kg スプーン付 漂白 消臭 除菌",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "ワイドハイター PRO 衣料用漂白剤 パワフルな汚れ落ち・消臭力。おしゃれ着・赤ちゃん服にもOK！ 粉末 本体 500g",
+      "asin": "B0F634XSCC",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71DqgQlVcVL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "formula_dosing"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0F634XSCC",
+      "ref": "p3",
+      "search_key": "ワイドハイター PRO 衣料用漂白剤 パワフルな汚れ落ち・消臭力",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "ワイドハイター PRO 衣料用漂白剤 パワフルな汚れ落ち・消臭力。おしゃれ着・赤ちゃん服にもOK！ 粉末 つめかえ用 １３００ｇ",
+      "asin": "B0F633LM7R",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81kE1qIfkML._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "formula_dosing"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0F633LM7R",
+      "ref": "p4",
+      "search_key": "ワイドハイター PRO 衣料用漂白剤 パワフルな汚れ落ち・消臭力",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "arau. アラウ. 酸素系漂白剤 850g 無添加 ラベンダー＆スペアミントの香り",
+      "asin": "B0DZ2M92M4",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71hT2huI9XL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0DZ2M92M4",
+      "ref": "p5",
+      "search_key": "arau. アラウ. 酸素系漂白剤 850g 無添加 ラベンダー",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "花王(Kao) 【大容量】 ワイドハイター EXパワー 粉末タイプ 3.5kg 業務用 衣料用漂白剤 色柄に安心 酸素系 除菌 漂白 消臭 プロフェッショナル・サービス 【Amazon.co.jp限定】",
+      "asin": "B0DSL415WX",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71VbjyVFK6L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "formula_dosing"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0DSL415WX",
+      "ref": "p6",
+      "search_key": "花王(Kao) ワイドハイター EXパワー 粉末タイプ 3.5k",
+      "selection_score": 0.31
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "formula_dosing"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "oxygen-based-laundry-bleaches"
+}
