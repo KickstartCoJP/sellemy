@@ -1,0 +1,134 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/electric-hot-water-dispensing-pots.html",
+  "category": "gadget",
+  "comparison_axes": [
+    {
+      "id": "capacity_and_placement",
+      "keywords": [
+        "定格容量",
+        "本体寸法",
+        "ふた開放",
+        "給水方法"
+      ],
+      "label": "容量と給水・設置に必要な寸法"
+    },
+    {
+      "id": "temperature_control",
+      "keywords": [
+        "保温温度",
+        "再沸騰",
+        "沸騰設定",
+        "タイマー"
+      ],
+      "label": "保温温度と沸騰の設定"
+    },
+    {
+      "id": "dispensing_and_care",
+      "keywords": [
+        "電動給湯",
+        "コードレス給湯",
+        "給湯ロック",
+        "洗浄手順"
+      ],
+      "label": "給湯操作と内部の手入れ"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/electric-hot-water-dispensing-pots/electric-hot-water-dispensing-pots.png",
+  "products": [
+    {
+      "amazon_title": "Saluyar 電気ケトル ポータブル 2026年全面アップグレード海外/日本対応 AC100-240V 電気ポット 小型 AC/DC給電 自動保温 温度調節可能12Hタイマー 湯沸かしポット 水漏れい 自動電源オフ 500ml大容量 316ステンレス 400W省エネ 6分急速沸騰 コップ付き ポータブル 持ち運び トラベルケトル 水筒 アウトドア、旅行、家庭などに最適 PSE認証済み ベージュ",
+      "asin": "B0HD7G8N31",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71cKzKE32rL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "temperature_control"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HD7G8N31",
+      "ref": "p1",
+      "search_key": "Saluyar 電気ケトル ポータブル 2026年全面アップグレ",
+      "selection_score": 0.505
+    },
+    {
+      "amazon_title": "ピーコック 電気ポット 2.2L 保温機能 カルキとばし機能 ステンレス内容器 湯沸かしポット 空だき防止 電動給湯式 保温ポット 2.2リットル ホワイト WMJ-22 W",
+      "asin": "B00VPV3FSW",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51QjEZe32ZS._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "dispensing_and_care"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B00VPV3FSW",
+      "ref": "p2",
+      "search_key": "ピーコック 電気ポット 2.2L 保温機能 カルキとばし機能 ス",
+      "selection_score": 0.505
+    },
+    {
+      "amazon_title": "象印マホービン 電気ポット 2.0L スレートブラック CP-EB20-BM",
+      "asin": "B0FH6CG354",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/618kE2C5ySL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FH6CG354",
+      "ref": "p3",
+      "search_key": "象印マホービン 電気ポット 2.0L スレートブラック CP-E",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "【WEB限定】タイガー魔法瓶 電気ポット 蒸気レス 節電VE保温 安全構造 とく子さん 2.2L ブラウン PIS-N220T",
+      "asin": "B0FDFCSKD3",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71Pcv8tUNvL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FDFCSKD3",
+      "ref": "p4",
+      "search_key": "タイガー魔法瓶 電気ポット 蒸気レス 節電VE保温 安全構造 と",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "電気給湯器 電気温水器 110V/1500W 小型電気温水器15L /20L/30L 瞬間給湯器 35℃~75℃調節可即刻の熱湯ヒーター タット 電気温水ヒーター電気タンクレス給湯器取り付けやすい 住宅向け キッチン・洗面台に適用 住宅向け キッチン・ バスルーム・洗面台に適用 家庭用温水器(出水口の上,20L)",
+      "asin": "B0DZSYGYG1",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51UT1587deL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0DZSYGYG1",
+      "ref": "p5",
+      "search_key": "電気給湯器 電気温水器 110V/1500W 小型電気温水器15",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "COMFEE' 電気ポット 電動お湯ポット 2.2L マイコン 保温温度調整 安全ロック 湯量選択 機能 省エネ インディゴグレー",
+      "asin": "B0DY1J9L7T",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71eEMSswipL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "temperature_control"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0DY1J9L7T",
+      "ref": "p6",
+      "search_key": "COMFEE' 電気ポット 電動お湯ポット 2.2L マイコン",
+      "selection_score": 0.325
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "dispensing_and_care",
+      "temperature_control"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "electric-hot-water-dispensing-pots"
+}
