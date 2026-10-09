@@ -1,0 +1,49 @@
+{
+  "api_usage": {
+    "input_tokens": 358,
+    "input_tokens_details": {
+      "image_tokens": 0,
+      "text_tokens": 358
+    },
+    "output_tokens": 1372,
+    "output_tokens_details": {
+      "image_tokens": 1372,
+      "text_tokens": 0
+    },
+    "total_tokens": 1730
+  },
+  "generated_at": "2026-10-09T00:06:31.189912+00:00",
+  "generation_method": "openai_images_api",
+  "generation_route": "openai_images_api",
+  "height": 1024,
+  "image_sha256": "8126ba4603853aa00863dafb4cd7a0918a5045ce21c12db11d0225c64336b321",
+  "model": "gpt-image-2.5-sunburst",
+  "openai_project_id": "",
+  "operation_id": "sellemy-eyecatch-home-oxidative-gray-hair-dyes-a0d4977132078770",
+  "provider": "openai",
+  "quality": "high",
+  "request_sha256": "a0d4977132078770eff4727d56e23299af290ba1f4ced1bf19e9d7e2dc5f7898",
+  "routing": {
+    "api_share": 100,
+    "codex_reserve_percent": 20.0,
+    "codex_share": 0,
+    "codex_usage": {
+      "remaining_percent": 28.0,
+      "resets_at": 1791949050,
+      "source": "/Users/kickstart/.codex/sessions/2026/10/09/rollout-2026-10-09T08-08-29-01a11dc6-7af3-7da0-b8be-2b243997bd9f.jsonl",
+      "used_percent": 72.0,
+      "window_minutes": 10080
+    },
+    "errors_before_success": [],
+    "executed_route": "openai_api",
+    "fallback_from": null,
+    "mode": "weighted_random",
+    "reason": "weighted_random",
+    "remaining_percent": 28.0,
+    "roll": 72,
+    "selected_route": "openai_api",
+    "total_weight": 100
+  },
+  "routing_recorded_at": "2026-10-09T00:06:31.190502+00:00",
+  "width": 1536
+}

@@ -1,0 +1,141 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/home-oxidative-gray-hair-dyes.html",
+  "category": "beauty",
+  "comparison_axes": [
+    {
+      "id": "formula_and_mixing",
+      "keywords": [
+        "クリーム",
+        "乳液",
+        "泡",
+        "二剤式",
+        "混合"
+      ],
+      "label": "剤型と混合・塗布操作"
+    },
+    {
+      "id": "coverage_and_quantity",
+      "keywords": [
+        "部分染め",
+        "全体染め",
+        "髪の長さ",
+        "使用量",
+        "残剤の扱い"
+      ],
+      "label": "染める範囲と使用量の目安"
+    },
+    {
+      "id": "instructions_and_safety",
+      "keywords": [
+        "放置時間",
+        "皮膚アレルギー試験",
+        "使用できない条件",
+        "すすぎ"
+      ],
+      "label": "放置時間と使用前後の確認事項"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/home-oxidative-gray-hair-dyes/home-oxidative-gray-hair-dyes.png",
+  "products": [
+    {
+      "amazon_title": "ブローネダイレクトクリームショット 医薬部外品",
+      "asin": "B0HDZ426CT",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71FgHRGF+3L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "formula_and_mixing"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HDZ426CT",
+      "ref": "p1",
+      "search_key": "ブローネダイレクトクリームショット 医薬部外品",
+      "selection_score": 0.49
+    },
+    {
+      "amazon_title": "Wella ウエラトーン 2+1 白髪染め クリームタイプ 6CG やや明るいグレージュブラウン 鮮やかな髪色6週間続く 医薬部外品",
+      "asin": "B0H3YKVZCT",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71+AD94V6AL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "formula_and_mixing"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H3YKVZCT",
+      "ref": "p2",
+      "search_key": "Wella ウエラトーン 2+1 白髪染め クリームタイプ 6C",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "サロンドプロ 白髪染め 泡のヘアカラー EX メンズスピーディ 6A 深みのあるアッシュブラウン [医薬部外品]",
+      "asin": "B0FP15N9RQ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61NavN26gIL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "formula_and_mixing"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0FP15N9RQ",
+      "ref": "p3",
+      "search_key": "サロンドプロ 白髪染め 泡のヘアカラー EX メンズスピーディ",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "サイオス クレイクリーム ヘアカラー 4A アッシュブラウン 白髪染め クリームタイプ きれいな髪色8週間続く [医薬部外品]",
+      "asin": "B0DT58SHB3",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71lwlOpuafL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "formula_and_mixing"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0DT58SHB3",
+      "ref": "p4",
+      "search_key": "サイオス クレイクリーム ヘアカラー 4A アッシュブラウン 白",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "【白髪染め レディース】ビゲン泡クリームカラー5Aダークアッシュ",
+      "asin": "B0DG8M62RH",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71kTTjpiD4L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "formula_and_mixing"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0DG8M62RH",
+      "ref": "p5",
+      "search_key": "ビゲン泡クリームカラー5Aダークアッシュ",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "【白髪染め レディース】ビゲン泡クリームカラー3Bキャメルブラウン",
+      "asin": "B0DG8LMFMC",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71UWSUFMuAL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "formula_and_mixing"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0DG8LMFMC",
+      "ref": "p6",
+      "search_key": "ビゲン泡クリームカラー3Bキャメルブラウン",
+      "selection_score": 0.31
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "formula_and_mixing"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "home-oxidative-gray-hair-dyes"
+}
