@@ -1,0 +1,140 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/stovetop-saucepans.html",
+  "category": "dailygoods",
+  "comparison_axes": [
+    {
+      "id": "size_and_volume",
+      "keywords": [
+        "内径",
+        "深さ",
+        "満水容量",
+        "適正容量"
+      ],
+      "label": "鍋の内径・深さと容量の表示"
+    },
+    {
+      "id": "material_and_heat_source",
+      "keywords": [
+        "ステンレス",
+        "アルミ",
+        "表面加工",
+        "IH対応"
+      ],
+      "label": "材質と対応する熱源"
+    },
+    {
+      "id": "pouring_and_handling",
+      "keywords": [
+        "注ぎ口",
+        "持ち手",
+        "ふた",
+        "重量"
+      ],
+      "label": "注ぎ口・持ち手・ふたの構造"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/stovetop-saucepans/stovetop-saucepans.png",
+  "products": [
+    {
+      "amazon_title": "雪平鍋 片手鍋 IH対応 ガス火対応 両側注ぎ口付き アルミ合金製 軽量 焦げ付きにくい 金コーティング ガラス蓋付き マルチポット 味噌汁 煮物 一人暮らし ギフト (雪平鍋 20)",
+      "asin": "B0H74YLKQ9",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61W6quErhqL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "material_and_heat_source",
+        "pouring_and_handling"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H74YLKQ9",
+      "ref": "p1",
+      "search_key": "雪平鍋 片手鍋 IH対応 ガス火対応 両側注ぎ口付き アルミ合金",
+      "selection_score": 0.685
+    },
+    {
+      "amazon_title": "【燕三条製】TETSUNAGI（テツナギ）片手鍋 16cm 小鍋 ステンレス鍋 ガラス蓋付き IH・ガス対応 目盛り付き 両口注ぎ 1.8L 食洗機対応 日本製｜毎日の調理に使いやすい T102100",
+      "asin": "B0H8SGG7VP",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71vn+hkh4eL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "material_and_heat_source"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H8SGG7VP",
+      "ref": "p2",
+      "search_key": "TETSUNAGI（テツナギ）片手鍋 16cm 小鍋 ステンレス",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "SENSARTE 片手鍋 20cm 2.4L 蓋付き IH/ガス対応 ノンスティック PFOA PFOSフリー 一人鍋 軽 パープル",
+      "asin": "B0H8F8TFV6",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/6150FcIectL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H8F8TFV6",
+      "ref": "p3",
+      "search_key": "SENSARTE 片手鍋 20cm 2.4L 蓋付き IH/ガス",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "アイリスオーヤマ 片手鍋 18cm 鍋 蓋つき ガス火/IH対応 ダイヤモンドコート こびりつきにくい お手入れ簡単 DCS-P18 メタリックバーガンディ",
+      "asin": "B0GX3GPR8R",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/513rUyA7mLL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "material_and_heat_source"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GX3GPR8R",
+      "ref": "p4",
+      "search_key": "アイリスオーヤマ 片手鍋 18cm 鍋 蓋つき ガス火/IH対応",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "KOCH SYSTEME CS 片手鍋 14cm 蓋つき ステンレス鍋 IH対応",
+      "asin": "B0GVM6K5NS",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61pAIiPdeML._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "material_and_heat_source"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GVM6K5NS",
+      "ref": "p5",
+      "search_key": "KOCH SYSTEME CS 片手鍋 14cm 蓋つき ステン",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "片手鍋 ミルクパン IH対応 ガス対応 軽量 一人暮らし 焦げ付かない 両側注ぎ口 お手入れ簡単 味噌汁用 離乳食調理 朝食準備 (500ml,直線)",
+      "asin": "B0GTYHTHWY",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61VxyzMRyML._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "material_and_heat_source",
+        "pouring_and_handling"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GTYHTHWY",
+      "ref": "p6",
+      "search_key": "片手鍋 ミルクパン IH対応 ガス対応 軽量 一人暮らし 焦げ付",
+      "selection_score": 0.325
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "material_and_heat_source",
+      "pouring_and_handling"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "stovetop-saucepans"
+}
