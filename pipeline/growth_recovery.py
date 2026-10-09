@@ -252,7 +252,7 @@ def mark_failure(slug: str, *, stage: str, failure_class: str, failure_code: str
 
     if stage == 'writer':
         state['current_stage'] = 'QA_FAILED'
-        if attempt >= WRITER_MAX_ATTEMPTS:
+        if attempt >= WRITER_MAX_ATTEMPTS or failure_code == 'ASTRA_QUALITY_EXHAUSTED':
             state['status'] = 'FAILED'
             state['current_stage'] = 'WRITER_FAILED'
             state['next_retry_at'] = None
@@ -289,11 +289,45 @@ def discard(slug: str, reason: str) -> dict:
     return _save_state(state, event='DISCARDED', detail={'reason': reason})
 
 
+def request_product_reselection(slug: str, reasons: list[str]) -> dict:
+    # Control outcome inside the existing job, not a new queue or state enum.
+    from comparison_acceptance import blocked
+    write_artifact(slug, 'product-blocker.json', blocked(reasons))
+    write_artifact(slug, 'acceptance.json', blocked(reasons))
+    set_stage(slug, 'WRITER_PENDING', event='PRODUCT_RESELECTION_REQUESTED')
+    return mark_failure(slug, stage='product', failure_class='missing_evidence',
+                        failure_code='NEEDS_PRODUCT_RESELECTION', reason='; '.join(reasons), role='planning')
+
+
+def replace_product_evidence(slug: str, evidence: dict, selection: dict) -> dict:
+    # Write fresh inputs and invalidate ALL derived authorizations before clearing
+    # blocker. A crash at any point leaves either the blocker or hash mismatch.
+    from comparison_acceptance import product_issues
+    issues = product_issues(evidence)
+    if evidence.get('slug') != slug or issues:
+        raise ValueError('replacement evidence not accepted: ' + '; '.join(issues))
+    write_artifact(slug, 'evidence.json', evidence)
+    write_artifact(slug, 'selection.json', selection)
+    for name in ('payload.json', 'acceptance.json', 'qa.json', 'gate-feedback.json',
+                 'eyecatch-receipt.json'):
+        write_artifact(slug, name, {})
+    write_artifact(slug, 'product-blocker.json', {})
+    return set_stage(slug, 'WRITER_PENDING', event='PRODUCT_RESELECTION_ACCEPTED')
+
+
 def materialize_for_publish(slug: str, repo: Path = ROOT) -> None:
     evidence = read_artifact(slug, 'evidence.json')
     payload = read_artifact(slug, 'payload.json')
     if not isinstance(evidence, dict) or not isinstance(payload, dict):
         raise RuntimeError(f'recovery artifacts incomplete for publish: {slug}')
+    from comparison_acceptance import require_acceptance
+    from publish_gate import require_publishing_enabled
+    acceptance = read_artifact(slug, 'acceptance.json')
+    if (read_artifact(slug, 'product-blocker.json', {}) or {}).get('needs_product_reselection'):
+        raise ValueError('comparison acceptance refused: needs_product_reselection')
+    require_publishing_enabled(repo)
+    require_acceptance(payload, evidence, acceptance)
+    _atomic_json(repo / 'data' / 'acceptance' / f'{slug}.json', acceptance)
     _atomic_json(repo / 'data' / 'evidence' / f'{slug}.json', evidence)
     _atomic_json(repo / 'data' / 'payloads' / f'{slug}.json', payload)
     image = job_dir(slug) / 'eyecatch.png'

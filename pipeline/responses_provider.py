@@ -133,6 +133,9 @@ def route(stage, schema, prompt, local, *, escalate: bool = False):
                                 stage, primary_model, escalation_model)
                     models.append(escalation_model)
                     continue
+                if exc.kind == 'output':
+                    # Astra quality exhaustion must not become availability fallback.
+                    raise
                 api_failed = True
                 break
             else:

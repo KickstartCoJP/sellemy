@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 import fcntl
 import os
 import subprocess
@@ -9,6 +10,16 @@ from pathlib import Path
 
 class PublishGateError(RuntimeError):
     pass
+
+
+def require_publishing_enabled(root: Path) -> None:
+    """One default-off file switch for all publishers; env may disable, never enable."""
+    try:
+        control = json.loads((root / 'config' / 'publishing-control.json').read_text())
+    except (OSError, ValueError):
+        control = {}
+    if not isinstance(control, dict) or control.get('enabled') is not True or os.environ.get('SELLEMY_PUBLISH_DISABLED', '').lower() in {'1', 'true', 'yes'}:
+        raise PublishGateError('global publishing kill switch is disabled')
 
 
 def _git(root: Path, *args: str, check: bool = True) -> str:
@@ -109,10 +120,12 @@ class PublishGate:
 
     @contextmanager
     def acquire(self):
+        require_publishing_enabled(self.root)
         self.state_dir.mkdir(parents=True, exist_ok=True)
         with self.lock_path.open('a+', encoding='utf-8') as handle:
             fcntl.flock(handle.fileno(), fcntl.LOCK_EX)
             try:
+                require_publishing_enabled(self.root)
                 evidence = sync_clean_main(self.root)
                 evidence['lock_path'] = str(self.lock_path)
                 yield evidence

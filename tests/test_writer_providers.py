@@ -11,7 +11,10 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'pipeline'))
 import writer_runtime
 from codex_provider import CodexProviderError
-from fixtures import valid_evidence, valid_payload
+from fixtures import valid_payload
+from quality_fixtures import accepted_fixture
+def valid_evidence():
+    return accepted_fixture()[1]
 
 
 def completed(returncode=0, *, stderr='', payload=None):

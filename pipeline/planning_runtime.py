@@ -6,6 +6,7 @@ import re
 import shlex
 import subprocess
 from responses_provider import LOG, route
+from comparison_acceptance import CONTRACT
 from datetime import date
 from pathlib import Path
 
@@ -138,7 +139,7 @@ def _invoke_planning(kind: str, command: list[str], model: str, prompt: str, tim
 
 
 def discover_candidates() -> list[dict]:
-    prompt = 'You plan Japanese Sellemy product-comparison topics. Generate fresh candidates from current season, search/purchase intent, product viability and the supplied context. Return structured JSON only.\n' + json.dumps(_context(), ensure_ascii=False)
+    prompt = CONTRACT + '\nPlanning candidates are provisional until Product/Evidence acceptance. Propose observable topic-specific axes, not generic promotional terms.\n' + 'You plan Japanese Sellemy product-comparison topics. Generate fresh candidates from current season, search/purchase intent, product viability and the supplied context. Return structured JSON only.\n' + json.dumps(_context(), ensure_ascii=False)
     def local():
         batch = _discover_local_candidates(prompt)
         return {'candidates': list(batch)}, batch.provider_metadata

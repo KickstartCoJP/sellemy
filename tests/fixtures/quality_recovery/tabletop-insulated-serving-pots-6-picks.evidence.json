@@ -1,0 +1,132 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/tabletop-insulated-serving-pots-6-picks.html",
+  "category": "dailygoods",
+  "comparison_axes": [
+    {
+      "id": "capacity_retention",
+      "keywords": [
+        "容量",
+        "保温効力",
+        "測定時間",
+        "測定条件",
+        "中びん素材"
+      ],
+      "label": "使う量と公称保温性能"
+    },
+    {
+      "id": "pouring",
+      "keywords": [
+        "レバー式",
+        "押しボタン式",
+        "本体重量",
+        "持ち手",
+        "ふたの開閉"
+      ],
+      "label": "持ち上げやすさと注ぎ方"
+    },
+    {
+      "id": "cleaning",
+      "keywords": [
+        "口径",
+        "中せん分解",
+        "丸洗い可否",
+        "交換パッキン",
+        "入れてよい飲料"
+      ],
+      "label": "内側と中せんの手入れ"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/tabletop-insulated-serving-pots-6-picks/tabletop-insulated-serving-pots-6-picks.png",
+  "products": [
+    {
+      "amazon_title": "保温保冷ポット 卓上用 魔法瓶 ステンレス製 大容量 広口 洗いやすい 電源不要 食卓 キャンプ アウトドア ジャグ (グリーン,A)",
+      "asin": "B0GZGDTFR3",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51aNqcHJ5IL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "capacity_retention"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GZGDTFR3",
+      "ref": "p1",
+      "search_key": "保温保冷ポット 卓上用 魔法瓶 ステンレス製 大容量 広口 洗い",
+      "selection_score": 0.49
+    },
+    {
+      "amazon_title": "卓上魔法瓶ポット 保温保冷両用 1000ミリリットル 白大理石柄 金蓋 洗いやすい 広口設計 304ステンレス 電源不要 自宅 キ (グリーン,A)",
+      "asin": "B0GX5BZGVM",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71rbuR8urYL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GX5BZGVM",
+      "ref": "p2",
+      "search_key": "卓上魔法瓶ポット 保温保冷両用 1000ミリリットル 白大理石柄",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "エコマーク",
+      "asin": "B0FKGWPKC7",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51KFPbJ0bTL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FKGWPKC7",
+      "ref": "p3",
+      "search_key": "エコマーク",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "無印良品 広口で洗いやすい 保温保冷 卓上ポット グレーベージュ 0.8L 84334535",
+      "asin": "B0DNP34C2H",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51SCTYXM6HL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0DNP34C2H",
+      "ref": "p4",
+      "search_key": "無印良品 広口で洗いやすい 保温保冷 卓上ポット グレーベージュ",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "無印良品 広口で洗いやすい 保温保冷 卓上ポット グレーベージュ 1.3L 84334542",
+      "asin": "B0DNP255Q1",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51ooiQ0yehL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0DNP255Q1",
+      "ref": "p5",
+      "search_key": "無印良品 広口で洗いやすい 保温保冷 卓上ポット グレーベージュ",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "【Diobao】 魔法瓶 コーヒーポット 1.2L ステンレス真空断熱 保温保冷対応 多シーン使用可能 コンパクト 軽量ボディ設計",
+      "asin": "B0CWLP7BKX",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61WPxPQkYCL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0CWLP7BKX",
+      "ref": "p6",
+      "search_key": "魔法瓶 コーヒーポット 1.2L ステンレス真空断熱 保温保冷対",
+      "selection_score": 0.31
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "capacity_retention"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "tabletop-insulated-serving-pots-6-picks"
+}

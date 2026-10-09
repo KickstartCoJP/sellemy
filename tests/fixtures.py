@@ -2,6 +2,7 @@ from __future__ import annotations
 import copy
 
 VALID_PAYLOAD = {
+    'status': 'READY', 'needs_product_reselection': False, 'reasons': [],
     'slug': 'test-widgets-6-picks',
     'category': 'gadget',
     'h1': 'テスト用！ウィジェット6選',

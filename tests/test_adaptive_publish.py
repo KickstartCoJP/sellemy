@@ -312,17 +312,18 @@ class PostPublishEvaluatorTests(unittest.TestCase):
             self.assertEqual(result['topic_novelty']['nearest_slug'], 'near-duplicate-existing')
             self.assertIn('topic_novelty_near_duplicate', result['issues'])
 
-    def test_clean_artifact_produces_structured_green_feedback(self):
+    def test_legacy_mechanically_clean_artifact_without_acceptance_is_red(self):
         result = evaluate_published_artifact(
             root=ROOT, slug='autumn-hand-creams-6-picks', commit='abc',
             growth_run={'published': True, 'commit': 'abc'},
             config=load_config(ROOT / 'config' / 'adaptive_publish.json'),
             prior_feedback=[],
         )
-        self.assertEqual(result['overall'], 'green')
-        self.assertEqual(result['content_quality']['grade'], 'green')
+        self.assertEqual(result['overall'], 'red')
+        self.assertEqual(result['content_quality']['grade'], 'red')
         self.assertEqual(result['topic_novelty']['grade'], 'green')
-        self.assertFalse(result['canonical_feedback_required'])
+        self.assertTrue(result['canonical_feedback_required'])
+        self.assertIn('post_publish_machine_qa_failed', result['issues'])
         self.assertEqual(len(result['event_id']), 64)
 
     def test_same_publication_has_stable_id_when_report_timestamps_change(self):

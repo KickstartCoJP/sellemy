@@ -7,6 +7,7 @@ import shlex
 import shutil
 import subprocess
 from responses_provider import LOG, route
+from comparison_acceptance import CONTRACT, blocked, product_issues
 from dataclasses import dataclass
 from pathlib import Path
 from codex_provider import CodexProviderError, generate_persistent as codex_generate_persistent
@@ -20,12 +21,15 @@ class WriterInvocationError(RuntimeError):
 
 WRITER_JSON_SCHEMA = {
     'type': 'object', 'additionalProperties': False,
-    'required': ['slug', 'category', 'h1', 'lead', 'summary', 'comparison_groups', 'products', 'how_to_choose', 'conclusion'],
+    'required': ['status', 'needs_product_reselection', 'reasons', 'slug', 'category', 'h1', 'lead', 'summary', 'comparison_groups', 'products', 'how_to_choose', 'conclusion'],
     'properties': {
+        'status': {'type': 'string', 'enum': ['READY', 'BLOCKED']},
+        'needs_product_reselection': {'type': 'boolean'},
+        'reasons': {'type': 'array', 'items': {'type': 'string'}},
         'slug': {'type': 'string'}, 'category': {'type': 'string'}, 'h1': {'type': 'string'},
         'lead': {'type': 'string'}, 'summary': {'type': 'string'},
         'comparison_groups': {
-            'type': 'array', 'minItems': 3, 'maxItems': 3,
+            'type': 'array', 'minItems': 0, 'maxItems': 3,
             'items': {
                 'type': 'object', 'additionalProperties': False,
                 'required': ['id', 'title', 'angle', 'product_refs'],
@@ -36,7 +40,7 @@ WRITER_JSON_SCHEMA = {
             },
         },
         'products': {
-            'type': 'array', 'minItems': 6, 'maxItems': 6,
+            'type': 'array', 'minItems': 0, 'maxItems': 6,
             'items': {
                 'type': 'object', 'additionalProperties': False,
                 'required': ['ref', 'h3', 'description'],
@@ -102,7 +106,7 @@ def _command() -> list[str]:
 
 
 def _prompt(topic: dict, evidence: dict, *, previous_payload: dict | None = None, gate_feedback: dict | None = None) -> str:
-    prompt = (
+    prompt = CONTRACT + '\n' + (
         'You are the Writer stage for a Japanese product-comparison publication. Return only structured JSON. '
         'Write all public-facing Japanese prose yourself; scripts may not expand, paraphrase, or pad it. Ground claims only in evidence. '
         'Do not state prices, internal workflow terms, ASINs, or affiliate operations. Do not copy raw listing titles verbatim. '
@@ -193,6 +197,9 @@ def _invoke_local_writer(topic: dict, evidence: dict, *, previous_payload: dict 
 
 
 def invoke_writer(topic: dict, evidence: dict, *, previous_payload: dict | None = None, gate_feedback: dict | None = None) -> tuple[dict, dict]:
+    issues = product_issues(evidence)
+    if issues:
+        return {**blocked(issues), 'slug': topic.get('slug'), 'category': topic.get('category')}, {'writer_invoked': False}
     prompt = _prompt(topic, evidence, previous_payload=previous_payload, gate_feedback=gate_feedback)
     return route(
         'writer', WRITER_JSON_SCHEMA, prompt,

@@ -12,6 +12,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from qa import run_qa
+from comparison_acceptance import load_receipt
 from review_gate import run_review_gate
 
 
@@ -165,7 +166,7 @@ def evaluate_published_artifact(
     html = article_path.read_text(encoding='utf-8')
 
     review_findings = [repr(finding) for finding in run_review_gate(payload, evidence)]
-    qa = run_qa(html, payload, evidence)
+    qa = run_qa(html, payload, evidence, acceptance=load_receipt(root, slug))
     content_issues = []
     if review_findings:
         content_issues.append('post_publish_review_gate_failed')

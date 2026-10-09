@@ -1,0 +1,1 @@
+Known-bad fixtures are exact local snapshot copies from data/payloads and data/evidence (2026-10-10). Good-reading-stands is a human-authored synthetic comparison of six fictional products; source titles are synthetic specification records, not real product recommendations. Reviewer responses in tests are mocks, never claims of model certification.

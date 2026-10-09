@@ -1,5 +1,6 @@
 from __future__ import annotations
 import re
+from comparison_acceptance import acceptance_issues
 
 from affiliate_config import AMAZON_TRACKING_ID
 from category_metadata import get_category
@@ -115,8 +116,9 @@ def find_shared_openings_endings(descriptions: list[str], prefix_len: int = 12, 
     return dup_openings, dup_endings
 
 
-def run_qa(html: str, payload: dict, evidence: dict) -> dict:
-    results: dict = {}
+def run_qa(html: str, payload: dict, evidence: dict, *, acceptance: dict | None = None) -> dict:
+    issues = acceptance_issues(payload, evidence, acceptance)
+    results: dict = {'semantic_acceptance_pass': not issues, 'semantic_acceptance_issues': issues}
 
     results['lead_len'] = len(payload['lead'])
     results['lead_in_range'] = check_range(results['lead_len'], LEAD_RANGE)
@@ -197,6 +199,7 @@ def run_qa(html: str, payload: dict, evidence: dict) -> dict:
     results['fixed_price_pass'] = not fixed_prices
 
     results['overall_pass'] = all([
+        results['semantic_acceptance_pass'],
         results['lead_in_range'], results['summary_in_range'], results['how_to_choose_in_range'],
         results['main_in_range'], results['description_hard_min_pass'], results['h3_len_pass'],
         results['banned_phrase_pass'], results['description_uniqueness_pass'],

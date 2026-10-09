@@ -14,6 +14,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'pipeline'))
 
+from comparison_acceptance import (
+    blocked, product_issues, receipt_issues, require_acceptance, load_receipt,
+)
+from semantic_review import independent_review
+from responses_provider import ResponsesError
 from analytics_feedback import load_feedback
 from affiliate_config import AMAZON_TRACKING_ID
 from adaptive_publish import AdaptivePublishController
@@ -24,10 +29,10 @@ from codex_provider import DESIGNER_SURFACE, PLANNING_SURFACE, context_session_i
 from payload_schema import validate_evidence, validate_payload, match_refs
 from planning_runtime import PlanningError, discover_candidates, rank_candidates
 from publish_gate import (
-    PublishGate, PublishGateError, recover_unpublished_commit_after_remote_race, sync_clean_main,
+    require_publishing_enabled, PublishGate, PublishGateError, recover_unpublished_commit_after_remote_race, sync_clean_main,
 )
 from purpose_relation_discovery import run as run_purpose_relation_discovery
-from product_selection import dedupe_content_products, select_six
+from product_selection import ProductSelectionError, dedupe_content_products, select_six
 from publish_payload import run as publish_payload
 from production_deploy import verify as verify_production_deploy, ProductionDeployError
 from qa import run_qa
@@ -37,7 +42,8 @@ from writer_runtime import WriterInvocationError, invoke_writer
 from growth_recovery import (
     all_jobs, create_job, eligible_job, job_dir, load_job, mark_failure, mark_published,
     materialize_for_publish, read_artifact, record_execution, save_eyecatch,
-    save_writer_result, set_stage, WRITER_MAX_ATTEMPTS,
+    save_writer_result, set_stage, WRITER_MAX_ATTEMPTS, write_artifact,
+    request_product_reselection, replace_product_evidence,
 )
 
 REPORT = ROOT / 'data' / 'growth_last_run.json'
@@ -109,7 +115,32 @@ def select_viable_topic(
                 products = []
                 probes.append({'round': round_index + 1, 'slug': topic['slug'], 'candidate_count': 0, 'error': f'{type(exc).__name__}: {exc}'})
             if len(products) >= 6:
-                selected = {**topic, 'selection_reason': 'highest ranked candidate with at least six live product identities'}
+                try:
+                    six, selection = select_six(products, topic, feedback)
+                    evidence = build_evidence(topic, six, selection)
+                    acceptance = independent_review(evidence)
+                    issues = receipt_issues(acceptance, evidence)
+                    if issues:
+                        probes[-1]['acceptance'] = blocked(issues)
+                        evidence['product_acceptance'] = acceptance
+                        create_job(topic=topic, evidence=evidence, selection=selection,
+                                   planning_provider=getattr(source, 'provider_metadata', None),
+                                   viability_probes=probes)
+                        request_product_reselection(topic['slug'], issues)
+                        raise GrowthRuntimeError(f"needs_product_reselection for {topic['slug']}")
+                except ProductSelectionError as exc:
+                    reasons = [str(exc)]
+                    probes[-1]['acceptance'] = blocked(reasons)
+                    # Retain observed candidates, not fabricated accepted selections.
+                    evidence = {'slug': topic['slug'], 'category': topic['category'],
+                                'comparison_axes': topic['comparison_axes'], 'products': products}
+                    create_job(topic=topic, evidence=evidence, selection={'provisional': True},
+                               planning_provider=getattr(source, 'provider_metadata', None),
+                               viability_probes=probes)
+                    request_product_reselection(topic['slug'], reasons)
+                    raise GrowthRuntimeError(f"needs_product_reselection for {topic['slug']}") from exc
+                selected = {**topic, '_product_acceptance': acceptance,
+                            'selection_reason': 'six products passed independent evidence acceptance'}
                 if getattr(source, 'provider_metadata', None):
                     selected['_planning_provider_metadata'] = source.provider_metadata
                 return selected, products, probes
@@ -139,14 +170,16 @@ def build_evidence(topic: dict, products: list[dict], selection: dict | None = N
         'selection': selection or {}, 'products': evidence_products,
     }
     validate_evidence(evidence)
+    if topic.get('_product_acceptance'):
+        evidence['product_acceptance'] = topic['_product_acceptance']
     return evidence
 
 
-def evaluate_candidate(payload: dict, evidence: dict) -> tuple[str, list[str], dict]:
+def evaluate_candidate(payload: dict, evidence: dict, *, acceptance: dict | None = None) -> tuple[str, list[str], dict]:
     validate_payload(payload); match_refs(payload, evidence)
     rendered = render_article(payload, evidence)
     findings = [repr(finding) for finding in run_review_gate(payload, evidence)]
-    return rendered, findings, run_qa(rendered, payload, evidence)
+    return rendered, findings, run_qa(rendered, payload, evidence, acceptance=acceptance)
 
 
 def _gate_feedback(findings: list[str], qa: dict) -> dict:
@@ -163,7 +196,7 @@ def _write_json(path: Path, value: dict) -> None:
 def _expected_publish_paths(slug: str, category: str) -> set[str]:
     return {
         f'article/{category}/{slug}.html', f'img/{slug}/{slug}.png',
-        f'data/evidence/{slug}.json', f'data/payloads/{slug}.json',
+        f'data/acceptance/{slug}.json', f'data/evidence/{slug}.json', f'data/payloads/{slug}.json',
         f'data/eyecatch-receipts/{slug}.json',
         'data/sellemy.db', 'json/articles.json',
         'json/products.json', 'index.html', 'sitemap.xml',
@@ -175,6 +208,10 @@ def _parse_porcelain_paths(output: str) -> set[str]:
 
 
 def _publish(slug: str, category: str) -> str:
+    require_publishing_enabled(ROOT)
+    payload = json.loads((ROOT / 'data' / 'payloads' / f'{slug}.json').read_text())
+    evidence = json.loads((ROOT / 'data' / 'evidence' / f'{slug}.json').read_text())
+    require_acceptance(payload, evidence, load_receipt(ROOT, slug))
     expected = _expected_publish_paths(slug, category)
     changed = _parse_porcelain_paths(subprocess.check_output(['git', 'status', '--porcelain', '--untracked-files=all'], cwd=ROOT, text=True))
     if changed != expected:
@@ -183,6 +220,7 @@ def _publish(slug: str, category: str) -> str:
     subprocess.run(['git', 'diff', '--cached', '--check'], cwd=ROOT, check=True)
     subprocess.run(['git', 'commit', '-m', f'Publish Writer-generated growth article: {slug}'], cwd=ROOT, check=True)
     head = _git('rev-parse', 'HEAD')
+    require_publishing_enabled(ROOT)
     pushed = subprocess.run(
         ['git', 'push', 'origin', 'main'], cwd=ROOT, text=True, capture_output=True, check=False
     )
@@ -274,6 +312,13 @@ def _existing_publish_commit(slug: str, category: str) -> str | None:
             return None
     head = _git('rev-parse', 'HEAD')
     if head == commit:
+        # Never validate uncommitted replacement inputs then push an older commit.
+        if _git('status', '--porcelain', '--untracked-files=all'):
+            raise GrowthRuntimeError('reconciliation push requires a clean accepted commit')
+        require_publishing_enabled(ROOT)
+        payload = json.loads((ROOT / 'data' / 'payloads' / f'{slug}.json').read_text())
+        evidence = json.loads((ROOT / 'data' / 'evidence' / f'{slug}.json').read_text())
+        require_acceptance(payload, evidence, load_receipt(ROOT, slug))
         pushed = subprocess.run(['git', 'push', 'origin', 'main'], cwd=ROOT, text=True, capture_output=True, check=False)
         if pushed.returncode == 0:
             verify_production_deploy(slug, category, commit)
@@ -303,6 +348,10 @@ def _writer_stage(slug: str, result: dict) -> None:
         raise GrowthRuntimeError(f'writer retry exhausted for {slug}')
     topic = read_artifact(slug, 'topic.json')
     evidence = read_artifact(slug, 'evidence.json')
+    issues = product_issues(evidence)
+    if issues:
+        request_product_reselection(slug, issues)
+        raise GrowthRuntimeError(f'needs_product_reselection for {slug}')
     previous = read_artifact(slug, 'payload.json')
     gate_feedback = read_artifact(slug, 'gate-feedback.json', {})
     started = time.monotonic()
@@ -316,13 +365,29 @@ def _writer_stage(slug: str, result: dict) -> None:
         )
         duration_ms = int((time.monotonic() - started) * 1000)
         record_execution(slug=slug, role='writer', event_type='turn', stage='writer', metadata=metadata, duration_ms=duration_ms)
+        if payload.get('status') == 'BLOCKED' or payload.get('needs_product_reselection') is True:
+            write_artifact(slug, 'writer-blocked.json', payload)
+            request_product_reselection(slug, payload.get('reasons') or ['Writer reported missing facts'])
+            raise GrowthRuntimeError(f'needs_product_reselection for {slug}')
         try:
-            rendered, findings, qa = evaluate_candidate(payload, evidence)
+            acceptance = independent_review(evidence, payload)
+        except ResponsesError as exc:
+            mark_failure(slug, stage='review', failure_class='runtime_infrastructure',
+                         failure_code='INDEPENDENT_REVIEW_UNAVAILABLE', reason=str(exc), role='review')
+            raise GrowthRuntimeError(f'independent review unavailable for {slug}') from exc
+        write_artifact(slug, 'acceptance.json', acceptance)
+        review = acceptance.get('review') or {}
+        if review.get('needs_product_reselection') is True or review.get('status') == 'BLOCKED':
+            request_product_reselection(slug, [review.get('reason') or 'Independent review found missing facts'])
+            raise GrowthRuntimeError(f'needs_product_reselection for {slug}')
+        try:
+            rendered, findings, qa = evaluate_candidate(payload, evidence, acceptance=acceptance)
         except Exception as qa_exc:
             findings = [f'{type(qa_exc).__name__}: {qa_exc}']
             qa = {'overall_pass': False, 'evaluation_exception': findings[0]}
             rendered = ''
         feedback = _gate_feedback(findings, qa)
+        feedback['semantic_review'] = review
         if not qa.get('overall_pass') and qa.get('evaluation_exception'):
             feedback['evaluation_exception'] = qa['evaluation_exception']
         passed = not findings and bool(qa.get('overall_pass'))
@@ -340,7 +405,8 @@ def _writer_stage(slug: str, result: dict) -> None:
             record_execution(slug=slug, role='writer', event_type='success', stage='writer', metadata=metadata)
             return
         mark_failure(
-            slug, stage='writer', failure_class='role_quality', failure_code='REVIEW_QA_FAILED',
+            slug, stage='writer', failure_class='role_quality',
+            failure_code='ASTRA_QUALITY_EXHAUSTED' if metadata.get('quality_escalated') else 'REVIEW_QA_FAILED',
             reason=json.dumps(feedback, ensure_ascii=False), role_return=True, role='writer',
         )
         record_context_quality(ROOT, 'bu-codex-sellemy-writer', False, session_id=metadata.get('session_id'), reason='Review/QA failed')
@@ -348,6 +414,10 @@ def _writer_stage(slug: str, result: dict) -> None:
         raise GrowthRuntimeError(f'writer/review/QA failed for {slug}; retained for retry')
     except GrowthRuntimeError:
         raise
+    except ResponsesError as exc:
+        mark_failure(slug, stage='writer', failure_class='role_quality',
+                     failure_code='ASTRA_QUALITY_EXHAUSTED', reason=str(exc), role_return=True, role='writer')
+        raise GrowthRuntimeError(f'Writer output quality exhausted for {slug}') from exc
     except Exception as exc:
         failure_class = 'runtime_infrastructure' if _runtime_failure(exc) or isinstance(exc, WriterInvocationError) else 'role_quality'
         role_return = failure_class == 'role_quality'
@@ -370,6 +440,8 @@ def _eyecatch_and_publish(slug: str, result: dict) -> str:
     evidence = read_artifact(slug, 'evidence.json')
     payload = read_artifact(slug, 'payload.json')
     category = state['category']
+    require_publishing_enabled(ROOT)
+    require_acceptance(payload, evidence, read_artifact(slug, 'acceptance.json'))
 
     if state.get('current_stage') == 'PUBLISH_PENDING':
         try:
@@ -476,7 +548,29 @@ def _eyecatch_and_publish(slug: str, result: dict) -> str:
         _cleanup_expected_dirty(slug, category, original_head)
         raise GrowthRuntimeError(f'publish failed for {slug}; retained for retry: {exc}') from exc
 
-def _execute_job(slug: str, result: dict) -> str:
+def _reselect_products(slug: str, *, cache_only: bool) -> None:
+    topic = dict(read_artifact(slug, 'topic.json'))
+    topic.pop('_product_acceptance', None)
+    try:
+        products = discover_products(topic, cache_only=cache_only)
+        selected, selection = select_six(products, topic, load_feedback())
+        evidence = build_evidence(topic, selected, selection)
+        evidence['product_acceptance'] = independent_review(evidence)
+        issues = product_issues(evidence)
+        if issues:
+            request_product_reselection(slug, issues)
+            raise GrowthRuntimeError(f'needs_product_reselection for {slug}; evidence still insufficient')
+        replace_product_evidence(slug, evidence, selection)
+    except ProductSelectionError as exc:
+        request_product_reselection(slug, [str(exc)])
+        raise GrowthRuntimeError(f'needs_product_reselection for {slug}') from exc
+    except (ResponsesError, OSError, requests.RequestException) as exc:
+        mark_failure(slug, stage='product', failure_class='runtime_infrastructure',
+                     failure_code='PRODUCT_RESELECTION_UNAVAILABLE', reason=str(exc), role='planning')
+        raise GrowthRuntimeError(f'product reselection unavailable for {slug}') from exc
+
+
+def _execute_job(slug: str, result: dict, *, cache_only: bool = False) -> str:
     while True:
         state = load_job(slug)
         stage = state.get('current_stage')
@@ -486,10 +580,23 @@ def _execute_job(slug: str, result: dict) -> str:
         evidence = read_artifact(slug, 'evidence.json', {})
         result['selected_asins'] = [p.get('asin') for p in evidence.get('products', [])]
         result['candidate_count'] = len(evidence.get('products', []))
+        if (read_artifact(slug, 'product-blocker.json', {}) or {}).get('needs_product_reselection'):
+            _reselect_products(slug, cache_only=cache_only)
+            continue
         if stage in {'WRITER_PENDING', 'QA_FAILED'}:
             _writer_stage(slug, result)
             continue
         if stage in {'EYECATCH_PENDING', 'PUBLISH_PENDING'}:
+            issues = product_issues(evidence)
+            if issues:
+                request_product_reselection(slug, issues)
+                raise GrowthRuntimeError(f'needs_product_reselection for {slug}')
+            payload = read_artifact(slug, 'payload.json', {})
+            issues = receipt_issues(read_artifact(slug, 'acceptance.json'), evidence, payload)
+            if issues:
+                set_stage(slug, 'QA_FAILED', event='ACCEPTANCE_REVALIDATION_REQUIRED')
+                write_artifact(slug, 'gate-feedback.json', {'semantic_acceptance_issues': issues})
+                raise GrowthRuntimeError(f'acceptance revalidation required for {slug}')
             return _eyecatch_and_publish(slug, result)
         if stage == 'PUBLISHED':
             return str(state.get('published_commit') or '')
@@ -546,6 +653,8 @@ def run(
         'route': ['recovery_queue', 'continuous_planning', 'product_selection', 'writer', 'qa', 'eyecatch', 'publish'],
         'published': False,
     }
+    if publish:
+        require_publishing_enabled(ROOT)
     adaptive = controller or AdaptivePublishController(ROOT)
     try:
         controller_state = adaptive.current_state()
@@ -561,7 +670,7 @@ def run(
                 result['status'] = 'skipped_by_controller'
                 return result
 
-        reconciled = _reconcile_already_published_jobs()
+        reconciled = _reconcile_already_published_jobs() if publish else []
         if reconciled:
             result['reconciled_already_published'] = reconciled
         recovery = eligible_job()
@@ -606,7 +715,7 @@ def run(
             result['status'] = 'recovery_staged' if result['recovery_mode'] else 'staged'
             return result
 
-        commit = _execute_job(slug, result)
+        commit = _execute_job(slug, result, cache_only=cache_only)
         result['commit'] = commit
         result['published'] = True
         result['status'] = 'published'

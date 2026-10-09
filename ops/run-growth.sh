@@ -56,6 +56,21 @@ export SELLEMY_PLANNING_SECONDARY_MODEL=sonnet
 export SELLEMY_PLANNING_SECONDARY_CERTIFIED=true
 export SELLEMY_CODEX_BRIEF_CHECKPOINT_TURNS=10
 export SELLEMY_CODEX_REASONING_EFFORT=low
+# The publication switch does not disable analytics, monitoring or site serving.
+PUBLISH_ALLOWED="$("$PY" - <<'PYSWITCH'
+import sys
+from pathlib import Path
+sys.path.insert(0, 'pipeline')
+from publish_gate import require_publishing_enabled, PublishGateError
+try:
+    require_publishing_enabled(Path.cwd())
+except PublishGateError:
+    print('0')
+else:
+    print('1')
+PYSWITCH
+)"
+if [[ "$PUBLISH_ALLOWED" == "1" ]]; then
 # Recovery fast-path: while durable unfinished article jobs exist, skip acquisition
 # refresh/admission overhead and spend this invocation directly on the oldest eligible
 # recovery item. Once the queue is empty, normal scheduled operation resumes below.
@@ -103,6 +118,7 @@ if [[ "$SELLEMY_PREFLIGHT_ALLOWED" != "1" ]]; then
   exit 0
 fi
 export SELLEMY_PRECLAIMED_ADMISSION_ID
+fi # publication-only recovery, git sync and slot admission
 if [[ ! -x "$GA4PY" ]]; then echo "$(date -Iseconds) GA4 venv missing; abort"; exit 4; fi
 "$GA4PY" pipeline/ga4_sync.py --days 28
 COLLECT_FROM="$(date -v-7d +%F)"
@@ -130,7 +146,11 @@ if (( AMAZON_COLLECT_RC != 0 || RAKUTEN_COLLECT_RC != 0 )); then
   echo "$(date -Iseconds) affiliate browser collectors degraded; continuing with last verified raw/curated data"
 fi
 GROWTH_RC=0
-"$PY" pipeline/growth_runtime.py --publish --scheduled || GROWTH_RC=$?
+if [[ "$PUBLISH_ALLOWED" == "1" ]]; then
+  "$PY" pipeline/growth_runtime.py --publish --scheduled || GROWTH_RC=$?
+else
+  echo "$(date -Iseconds) global publishing kill switch disabled; metrics remain enabled"
+fi
 MONITOR_RC=0
 "$PY" pipeline/article_publication_metrics.py >/dev/null || MONITOR_RC=$?
 "$GA4PY" pipeline/actuals_adapter.py --sync || MONITOR_RC=$?

@@ -15,6 +15,8 @@ from affiliate_config import amazon_url
 
 from category_metadata import get_category
 from qa import run_qa
+from comparison_acceptance import load_receipt, require_acceptance
+from publish_gate import require_publishing_enabled
 from renderer import render_article
 from purpose_feature_runtime import article_related_features
 from review_gate import run_review_gate
@@ -296,10 +298,14 @@ def _require_routed_article_eyecatch(payload: dict, evidence: dict, output: Path
 
 
 def run(slug: str, *, apply: bool, allow_existing: bool) -> dict:
+    if apply:
+        require_publishing_enabled(ROOT)
     payload, evidence = _load(slug)
+    acceptance = load_receipt(ROOT, slug)
+    require_acceptance(payload, evidence, acceptance)
     rendered = render_article(payload, evidence, related_features=article_related_features(slug))
     findings = run_review_gate(payload, evidence)
-    qa = run_qa(rendered, payload, evidence)
+    qa = run_qa(rendered, payload, evidence, acceptance=acceptance)
     result = {'slug': slug, 'review_findings': [repr(finding) for finding in findings], 'qa': qa, 'applied': False}
     if findings or not qa['overall_pass'] or not apply:
         return result
@@ -307,6 +313,8 @@ def run(slug: str, *, apply: bool, allow_existing: bool) -> dict:
 
     eyecatch_path = ROOT / 'img' / slug / f'{slug}.png'
     result['eyecatch_generation'] = _require_routed_article_eyecatch(payload, evidence, eyecatch_path)
+    require_publishing_enabled(ROOT)
+    require_acceptance(payload, evidence, load_receipt(ROOT, slug))
     now = _jst_now()
     article_metadata = _update_articles(payload, evidence, allow_existing=allow_existing, now=now)
     rendered = _inject_article_times(rendered, article_metadata['metadata'])

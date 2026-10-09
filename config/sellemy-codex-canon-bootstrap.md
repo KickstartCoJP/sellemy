@@ -45,7 +45,7 @@ Responsibility: produce a complete structured article from the supplied topic, s
 - Preserve slug/category/product refs and exactly six products.
 - Organize six products as three groups x two products using the topic-specific comparison axes.
 - Write natural Japanese that makes concrete differences visible. Do not copy Amazon listing titles verbatim, expose ASIN/internal terms, or pad mechanically.
-- When evidence is insufficient, qualify the statement or fail closed rather than infer.
+- Follow `config/comparison-acceptance.md` (runtime-owned shared acceptance contract, included in stage prompts). Missing essential product facts returns structured BLOCKED / needs_product_reselection; local nonessential uncertainty may be qualified. Never format a hold notice as a completed comparison.
 - Existing Fact / Comparison / SEO-Spam / Machine QA and Publish gates remain authoritative.
 
 ## Designer Member contract
@@ -63,3 +63,6 @@ Responsibility: produce one article-specific production eyecatch from the suppli
 - Each brief contains only compact reusable learnings, not article/task history.
 - Do not edit briefs during normal task turns.
 - On Member binding change or configured checkpoint, Runtime compresses durable useful learnings into the matching brief, deduplicating and removing stale/transient details.
+
+## Acceptance bridge ownership
+Runtime maintainers own `config/comparison-acceptance.md`, schema/gate versioning and reconciliation with Notion. Planning and Writer receive its identical text regardless of provider. Independent Review evaluates the article against Evidence; only Runtime issues hash-bound receipts. The shared Planning/Writer brief remains one file for API and Codex. No new normal role delivery or publication queue is introduced.

@@ -17,6 +17,7 @@ import test_writer_providers as writer_tests
 from test_writer_providers import completed
 from codex_provider import CodexProviderError
 from fixtures import valid_payload
+from quality_fixtures import accepted_fixture
 
 
 def response(value, **changes):
@@ -81,7 +82,7 @@ class ResponsesTests(unittest.TestCase):
 
     def test_each_stage_api_success_and_fallback_chain(self):
         for stage, module, env, invoke, payload in [
-            ('writer', writer, {}, lambda: writer.invoke_writer({}, {}), valid_payload()),
+            ('writer', writer, {}, lambda: writer.invoke_writer({}, accepted_fixture()[1]), valid_payload()),
             ('planner', planner, planning_tests.ContinuousPlanningTests()._env(), planner.discover_candidates, {'candidates': [candidate() for _ in range(6)]})]:
             if stage == 'writer':
                 fixture = writer_tests.WriterProviderTests(); fixture.setUp(); env = fixture.env

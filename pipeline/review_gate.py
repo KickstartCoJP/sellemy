@@ -1,5 +1,6 @@
 from __future__ import annotations
 import re
+from comparison_acceptance import article_issues
 
 # The independent review gate checks CONTENT INTEGRITY: that Writer prose stays
 # grounded in evidence and never leaks internal pipeline/ops vocabulary into
@@ -57,7 +58,9 @@ def _shares_long_raw_substring(description: str, amazon_title: str, min_len: int
 
 
 def run_review_gate(payload: dict, evidence: dict) -> list[ReviewGateFinding]:
-    findings: list[ReviewGateFinding] = []
+    findings: list[ReviewGateFinding] = [
+        ReviewGateFinding('acceptance', None, issue) for issue in article_issues(payload)
+    ]
 
     for field in PROSE_FIELDS:
         for term in _find_jargon(payload[field]):

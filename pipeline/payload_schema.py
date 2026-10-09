@@ -44,6 +44,8 @@ def _validate_category(value: str, where: str) -> None:
 
 
 def validate_payload(payload: dict) -> None:
+    if payload.get('status', 'READY') != 'READY' or payload.get('needs_product_reselection', False) is not False:
+        raise PayloadValidationError('blocked payload is not an article')
     for field in REQUIRED_ARTICLE_FIELDS:
         if field not in payload:
             raise PayloadValidationError(f'payload missing required field: {field}')

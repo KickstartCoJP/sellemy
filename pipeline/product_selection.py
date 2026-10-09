@@ -69,7 +69,9 @@ def select_six(candidates: list[dict], topic: dict, feedback: dict) -> tuple[lis
             f'require at least 6; removed={removed_duplicates}'
         )
     axes = topic['comparison_axes']
-    remaining = list(distinct_candidates)
+    remaining = [p for p in distinct_candidates if _axis_matches(p, axes)]
+    if len(remaining) < 6:
+        raise ProductSelectionError('needs_product_reselection: fewer than six products with topic-axis evidence')
     selected, brands, covered = [], set(), set()
     prices = sorted(p['observed_price'] for p in distinct_candidates if p.get('observed_price') is not None)
     median = prices[len(prices) // 2] if prices else None
@@ -93,4 +95,6 @@ def select_six(candidates: list[dict], topic: dict, feedback: dict) -> tuple[lis
         covered.update(matches)
     if len(selected) != 6:
         raise ProductSelectionError('could not select six unique products')
+    if len(covered) < 2:
+        raise ProductSelectionError('needs_product_reselection: final six lack two topic-specific axes')
     return selected, {'comparison_axes_covered': sorted(covered), 'brand_count': len(brands), 'price_used_as_constraint_only': True, 'content_duplicates_removed': removed_duplicates}

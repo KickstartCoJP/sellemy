@@ -120,6 +120,15 @@ class ScheduledRouteTests(unittest.TestCase):
 
 
 class ProductViabilityPlanningTests(unittest.TestCase):
+    def setUp(self):
+        # These tests cover candidate scanning, not product acceptance. The contract
+        # integration tests exercise actual source/semantic rejection separately.
+        for item in [patch.object(growth_runtime, 'select_six', return_value=([], {})),
+                     patch.object(growth_runtime, 'build_evidence', return_value={}),
+                     patch.object(growth_runtime, 'independent_review', return_value={}),
+                     patch.object(growth_runtime, 'receipt_issues', return_value=[])]:
+            item.start(); self.addCleanup(item.stop)
+
     def _topic(self, slug):
         return {
             'slug': slug, 'category': 'gadget', 'query': slug, 'title': slug, 'intent_key': slug,
@@ -182,6 +191,14 @@ class RuntimeFailClosedTests(unittest.TestCase):
     def setUp(self):
         self._recovery_tmp = Path(tempfile.mkdtemp(prefix='sellemy-recovery-test-'))
         self._recovery_patches = [
+            patch.object(growth_runtime, 'require_publishing_enabled'),
+            patch.object(growth_runtime, 'product_issues', return_value=[]),
+            patch.object(growth_runtime, 'receipt_issues', return_value=[]),
+            patch.object(growth_runtime, 'require_acceptance'),
+            patch.object(growth_runtime, 'independent_review', return_value={'review': {'status': 'ACCEPTED'}}),
+            patch.object(growth_runtime, 'record_context_quality'),
+            patch.object(growth_runtime, '_reconcile_already_published_jobs', return_value=[]),
+            patch.object(growth_runtime, '_existing_publish_commit', return_value=None),
             patch.object(growth_recovery, 'STATE_ROOT', self._recovery_tmp),
             patch.object(growth_recovery, 'JOBS_ROOT', self._recovery_tmp / 'jobs'),
             patch.object(growth_recovery, 'EVENTS_PATH', self._recovery_tmp / 'events.jsonl'),

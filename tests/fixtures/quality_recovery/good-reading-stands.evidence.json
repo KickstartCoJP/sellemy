@@ -1,0 +1,87 @@
+{
+  "slug": "fixture-reading-stands",
+  "category": "dailygoods",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/fixture-reading-stands.html",
+  "eyecatch_image": "https://www.sellemy.jp/img/fixture-reading-stands/fixture-reading-stands.png",
+  "amazon_tag": "sellemy-22",
+  "comparison_axes": [
+    {
+      "id": "width",
+      "label": "台の幅",
+      "keywords": [
+        "幅"
+      ]
+    },
+    {
+      "id": "height",
+      "label": "高さの調整範囲",
+      "keywords": [
+        "高さ"
+      ]
+    },
+    {
+      "id": "thickness",
+      "label": "対応する本の厚さ",
+      "keywords": [
+        "厚さ"
+      ]
+    },
+    {
+      "id": "weight",
+      "label": "重量",
+      "keywords": [
+        "重量"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "ref": "p1",
+      "asin": "B0DEMO0001",
+      "product_id": "AMZ-B0DEMO0001",
+      "amazon_title": "青葉 A10 読書台 幅28cm 高さ固定 角度3段階 重量250g 折り畳み可能 対応する本の厚さ2cmまで",
+      "brand": "青葉",
+      "image_url": "https://example.com/stand1.jpg"
+    },
+    {
+      "ref": "p2",
+      "asin": "B0DEMO0002",
+      "product_id": "AMZ-B0DEMO0002",
+      "amazon_title": "白樺 B20 読書台 幅32cm 高さ固定 角度5段階 重量450g 折り畳み可能 対応する本の厚さ4cmまで",
+      "brand": "白樺",
+      "image_url": "https://example.com/stand2.jpg"
+    },
+    {
+      "ref": "p3",
+      "asin": "B0DEMO0003",
+      "product_id": "AMZ-B0DEMO0003",
+      "amazon_title": "楓 C30 読書台 幅35cm 高さ10〜25cm 角度無段階 重量900g 対応する本の厚さ5cmまで",
+      "brand": "楓",
+      "image_url": "https://example.com/stand3.jpg"
+    },
+    {
+      "ref": "p4",
+      "asin": "B0DEMO0004",
+      "product_id": "AMZ-B0DEMO0004",
+      "amazon_title": "桜 D40 読書台 幅30cm 高さ15〜35cm 角度4段階 重量1200g 対応する本の厚さ3cmまで",
+      "brand": "桜",
+      "image_url": "https://example.com/stand4.jpg"
+    },
+    {
+      "ref": "p5",
+      "asin": "B0DEMO0005",
+      "product_id": "AMZ-B0DEMO0005",
+      "amazon_title": "檜 E50 読書台 幅45cm 高さ固定 角度6段階 重量1500g 対応する本の厚さ6cmまで",
+      "brand": "檜",
+      "image_url": "https://example.com/stand5.jpg"
+    },
+    {
+      "ref": "p6",
+      "asin": "B0DEMO0006",
+      "product_id": "AMZ-B0DEMO0006",
+      "amazon_title": "杉 F60 読書台 幅40cm 高さ固定 角度2段階 重量800g 対応する本の厚さ8cmまで",
+      "brand": "杉",
+      "image_url": "https://example.com/stand6.jpg"
+    }
+  ]
+}
