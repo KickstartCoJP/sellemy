@@ -1,0 +1,140 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/home-wifi-range-extenders.html",
+  "category": "gadget",
+  "comparison_axes": [
+    {
+      "id": "router_compatibility",
+      "keywords": [
+        "無線規格",
+        "周波数帯",
+        "暗号化方式",
+        "メッシュ対応条件",
+        "対応親機"
+      ],
+      "label": "親機との接続条件"
+    },
+    {
+      "id": "placement_and_interfaces",
+      "keywords": [
+        "コンセント直挿し",
+        "据え置き",
+        "外寸",
+        "LANポート",
+        "給電"
+      ],
+      "label": "設置形状と有線端子"
+    },
+    {
+      "id": "setup_and_operation",
+      "keywords": [
+        "WPS",
+        "設定アプリ",
+        "ブラウザー設定",
+        "電波表示",
+        "SSID"
+      ],
+      "label": "初期設定と接続状態の確認"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/home-wifi-range-extenders/home-wifi-range-extenders.png",
+  "products": [
+    {
+      "amazon_title": "エレコム WiFi 無線LAN 中継器 Wi-Fi6 11ax 2402＋574Mbps コンセント直挿し EasyMesh対応 離れ家モード搭載 ホワイト WTC-W602-W",
+      "asin": "B0GLMXSFV5",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/516eXTcKo7L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "placement_and_interfaces"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GLMXSFV5",
+      "ref": "p1",
+      "search_key": "エレコム WiFi 無線LAN 中継器 Wi-Fi6 11ax",
+      "selection_score": 0.48
+    },
+    {
+      "amazon_title": "【2点セット【Amazon.co.jp限定】】バッファロー WiFi 無線LAN 中継機 Wi-Fi 6 11ax / 11ac 4803 + 573Mbps Easy Mesh 対応 WEX-5400AX6/N + WiFi ルーター 無線 LAN Wi-Fi 7 11be デュアルバンド 2882+688Mbps WSR3600BE4P/NBK",
+      "asin": "B0FX8ND1KV",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41Eh7LkuNLL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0FX8ND1KV",
+      "ref": "p2",
+      "search_key": "】バッファロー WiFi 無線LAN 中継機 Wi-Fi 6 1",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "バッファロー Wi-Fi 6 中継機 2401+573Mbps EasyMesh コンセント直挿し 内蔵アンテナ WEX-3000AX4/N",
+      "asin": "B0DJVBC15T",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51zZkUsVouL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "placement_and_interfaces"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0DJVBC15T",
+      "ref": "p3",
+      "search_key": "バッファロー Wi-Fi 6 中継機 2401+573Mbps",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "バッファロー Wi-Fi 6 中継機 2401+573Mbps EasyMesh コンセント直挿し 外付けアンテナ WEX-3000AX4EA/N",
+      "asin": "B0DJV98JTL",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51OzTAVVrxL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "placement_and_interfaces"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0DJV98JTL",
+      "ref": "p4",
+      "search_key": "バッファロー Wi-Fi 6 中継機 2401+573Mbps",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "バッファロー Wi-Fi 5 中継機 866+300Mbps コンセント直挿し WEX-1166DHPL/N",
+      "asin": "B0D2NXKK3X",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61+hqTatFML._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "placement_and_interfaces"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0D2NXKK3X",
+      "ref": "p5",
+      "search_key": "バッファロー Wi-Fi 5 中継機 866+300Mbps コ",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "TP-Link Wi-Fi 無線LAN 中継器 wifi中継機 Wi-Fi6 対応 1201 + 300Mbps 11ax APモード メッシュWiFi ：EasyMesh対応 ギガ有線LANポート RE500X/A",
+      "asin": "B0CRHFHHMM",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51BjohqGI8L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "placement_and_interfaces"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0CRHFHHMM",
+      "ref": "p6",
+      "search_key": "TP-Link Wi-Fi 無線LAN 中継器 wifi中継機",
+      "selection_score": 0.3
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "placement_and_interfaces"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "home-wifi-range-extenders"
+}
