@@ -1,0 +1,49 @@
+{
+  "api_usage": {
+    "input_tokens": 330,
+    "input_tokens_details": {
+      "image_tokens": 0,
+      "text_tokens": 330
+    },
+    "output_tokens": 1372,
+    "output_tokens_details": {
+      "image_tokens": 1372,
+      "text_tokens": 0
+    },
+    "total_tokens": 1702
+  },
+  "generated_at": "2026-10-09T02:13:08.228472+00:00",
+  "generation_method": "openai_images_api",
+  "generation_route": "openai_images_api",
+  "height": 1024,
+  "image_sha256": "2729b054a23271a4039ffd92fd5b263c739e20e01b7d12da594f8b285947569f",
+  "model": "gpt-image-2.5-sunburst",
+  "openai_project_id": "",
+  "operation_id": "sellemy-eyecatch-nail-polish-removers-61035f5f558294ee",
+  "provider": "openai",
+  "quality": "high",
+  "request_sha256": "61035f5f558294eee080f282306c3823d3f1884b867fff458401136b84cc6f03",
+  "routing": {
+    "api_share": 100,
+    "codex_reserve_percent": 20.0,
+    "codex_share": 0,
+    "codex_usage": {
+      "remaining_percent": 28.0,
+      "resets_at": 1791949050,
+      "source": "/Users/kickstart/.codex/sessions/2026/10/09/rollout-2026-10-09T08-06-01-01a11dc4-37f3-70d2-a2e1-f7c0eb094216.jsonl",
+      "used_percent": 72.0,
+      "window_minutes": 10080
+    },
+    "errors_before_success": [],
+    "executed_route": "openai_api",
+    "fallback_from": null,
+    "mode": "weighted_random",
+    "reason": "weighted_random",
+    "remaining_percent": 28.0,
+    "roll": 3,
+    "selected_route": "openai_api",
+    "total_weight": 100
+  },
+  "routing_recorded_at": "2026-10-09T02:13:08.229232+00:00",
+  "width": 1536
+}

@@ -1,0 +1,138 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/nail-polish-removers.html",
+  "category": "beauty",
+  "comparison_axes": [
+    {
+      "id": "compatible_nail_products",
+      "keywords": [
+        "マニキュア",
+        "ラメ",
+        "ジェル対応の可否",
+        "使用対象"
+      ],
+      "label": "落とせるネイルの種類と対象外"
+    },
+    {
+      "id": "formula_and_labeling",
+      "keywords": [
+        "アセトン",
+        "成分表示",
+        "香料",
+        "使用上の注意"
+      ],
+      "label": "アセトンの有無と成分・香りの表示"
+    },
+    {
+      "id": "application_and_packaging",
+      "keywords": [
+        "ボトル",
+        "ポンプ",
+        "シート",
+        "使用量",
+        "放置時間"
+      ],
+      "label": "液の取り出し方とオフの手順"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/nail-polish-removers/nail-polish-removers.png",
+  "products": [
+    {
+      "amazon_title": "OPI(オーピーアイ) マニキュア 除光液 アセトンフリー 保湿 110mL (アセトンフリー ポリッシュ リムーバー AL444)",
+      "asin": "B000PZ8DWM",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51eBpffBQML._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "compatible_nail_products",
+        "formula_and_labeling"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B000PZ8DWM",
+      "ref": "p1",
+      "search_key": "OPI(オーピーアイ) マニキュア 除光液 アセトンフリー 保湿",
+      "selection_score": 0.71
+    },
+    {
+      "amazon_title": "無印良品 除光液マニキュア 15471362 (× 2)",
+      "asin": "B0H99XHGM4",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51psiV5HpbL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "compatible_nail_products"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H99XHGM4",
+      "ref": "p2",
+      "search_key": "無印良品 除光液マニキュア 15471362 (× 2)",
+      "selection_score": 0.35
+    },
+    {
+      "amazon_title": "JODSONE ジェルネイルリムーバー 18ml 大容量 爪に優しい 3～5 分で素早く除去",
+      "asin": "B0H8WR1BR7",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61P2PaWwijL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H8WR1BR7",
+      "ref": "p3",
+      "search_key": "JODSONE ジェルネイルリムーバー 18ml 大容量 爪に優",
+      "selection_score": 0.35
+    },
+    {
+      "amazon_title": "ノンアセトン アセトン代替 リネイル スピード 200ml ジェルネイル リムーバー ジェルネイルオフ 除光液",
+      "asin": "B0H4JHW24Y",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51EJAuTrN3L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "formula_and_labeling"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H4JHW24Y",
+      "ref": "p4",
+      "search_key": "ノンアセトン アセトン代替 リネイル スピード 200ml ジェ",
+      "selection_score": 0.35
+    },
+    {
+      "amazon_title": "【日本製】【アルミ&コットン不要】【ノンアセトン】 リネイル イージー 40g ジェルネイルリムーバー ジェルネイルオフ 除光液",
+      "asin": "B0H4GGD2KH",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/714Fb7+9i+L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "formula_and_labeling"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H4GGD2KH",
+      "ref": "p5",
+      "search_key": "リネイル イージー 40g ジェルネイルリムーバー ジェルネイル",
+      "selection_score": 0.35
+    },
+    {
+      "amazon_title": "JODSONE ジェルネイルリムーバー 18ml 大容量 除光液 簡単オフ 爪にやさしい セルフネイル用 ジェルオフリムーバー 3～5 分で素早く除去",
+      "asin": "B0GM694WRP",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61UGwRcAVxL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GM694WRP",
+      "ref": "p6",
+      "search_key": "JODSONE ジェルネイルリムーバー 18ml 大容量 除光液",
+      "selection_score": 0.35
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "compatible_nail_products",
+      "formula_and_labeling"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "nail-polish-removers"
+}
