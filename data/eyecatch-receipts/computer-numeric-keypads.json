@@ -1,0 +1,49 @@
+{
+  "api_usage": {
+    "input_tokens": 328,
+    "input_tokens_details": {
+      "image_tokens": 0,
+      "text_tokens": 328
+    },
+    "output_tokens": 1372,
+    "output_tokens_details": {
+      "image_tokens": 1372,
+      "text_tokens": 0
+    },
+    "total_tokens": 1700
+  },
+  "generated_at": "2026-10-09T12:34:52.963450+00:00",
+  "generation_method": "openai_images_api",
+  "generation_route": "openai_images_api",
+  "height": 1024,
+  "image_sha256": "bc0dcac8455beb8f7457003fb5ef8ac416d55c8ad0f77fda50eef8d097fa7dc7",
+  "model": "gpt-image-2.5-sunburst",
+  "openai_project_id": "",
+  "operation_id": "sellemy-eyecatch-computer-numeric-keypads-140e2f3502847311",
+  "provider": "openai",
+  "quality": "high",
+  "request_sha256": "140e2f35028473114d55963ea20050c4d6a847cf9ccfb9de464e1851233e5c62",
+  "routing": {
+    "api_share": 100,
+    "codex_reserve_percent": 20.0,
+    "codex_share": 0,
+    "codex_usage": {
+      "remaining_percent": 22.0,
+      "resets_at": 1791949050,
+      "source": "/Users/kickstart/.codex/sessions/2026/09/28/rollout-2026-09-28T18-23-07-01a0e753-400f-7742-addc-09e42523b98c.jsonl",
+      "used_percent": 78.0,
+      "window_minutes": 10080
+    },
+    "errors_before_success": [],
+    "executed_route": "openai_api",
+    "fallback_from": null,
+    "mode": "weighted_random",
+    "reason": "weighted_random",
+    "remaining_percent": 22.0,
+    "roll": 15,
+    "selected_route": "openai_api",
+    "total_weight": 100
+  },
+  "routing_recorded_at": "2026-10-09T12:34:52.964361+00:00",
+  "width": 1536
+}

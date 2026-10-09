@@ -1,0 +1,144 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/computer-numeric-keypads.html",
+  "category": "gadget",
+  "comparison_axes": [
+    {
+      "id": "key_layout",
+      "keywords": [
+        "キー数",
+        "Tabキー",
+        "00キー",
+        "キー間隔"
+      ],
+      "label": "数字入力と補助キーの配列"
+    },
+    {
+      "id": "connection_power",
+      "keywords": [
+        "USB有線",
+        "USBレシーバー",
+        "Bluetooth",
+        "電池・充電"
+      ],
+      "label": "接続方式と電源"
+    },
+    {
+      "id": "os_input_behavior",
+      "keywords": [
+        "Windows",
+        "macOS",
+        "NumLock",
+        "キー割り当て"
+      ],
+      "label": "対応OSと入力動作の条件"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/computer-numeric-keypads/computer-numeric-keypads.png",
+  "products": [
+    {
+      "amazon_title": "有線テンキー USB-C & USB-A対応 18キー数字キーパッド 3ポートUSB 2.0ハブ内蔵 15°傾斜エルゴノミクス 静音シザースイッチ ノートPC/デスクトップ/Surface/iPad対応 Windows/macOS/Chrome OS プラグ＆プレイ-ブラック",
+      "asin": "B0H9S4DBFJ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71A6GHLUpIL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "key_layout",
+        "os_input_behavior"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H9S4DBFJ",
+      "ref": "p1",
+      "search_key": "有線テンキー USB-C & USB-A対応 18キー数字キーパ",
+      "selection_score": 0.66
+    },
+    {
+      "amazon_title": "iClever テンキー Bluetooth ワイヤレス 数字 キーボード 3台までペアリング パンタグラフ式 薄型 KP08Pro ブラック",
+      "asin": "B0H4LJS35W",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61dGJYyc4nL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "connection_power"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H4LJS35W",
+      "ref": "p2",
+      "search_key": "iClever テンキー Bluetooth ワイヤレス 数字",
+      "selection_score": 0.48
+    },
+    {
+      "amazon_title": "iClever テンキー Bluetooth ワイヤレス 数字 キーボード 2台接続 超薄型 金属構造 numlock連動 IC-KP10 銀黒",
+      "asin": "B0GVQQGMDZ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71qmfkxceQL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "connection_power",
+        "os_input_behavior"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GVQQGMDZ",
+      "ref": "p3",
+      "search_key": "iClever テンキー Bluetooth ワイヤレス 数字",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "iClever テンキー Bluetooth ワイヤレス 数字 キーボード 3台までペアリング パンタグラフ式 薄型 KP08Pro グレーブラック",
+      "asin": "B0GTNZ472W",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71RMxdMSgHL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "connection_power"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GTNZ472W",
+      "ref": "p4",
+      "search_key": "iClever テンキー Bluetooth ワイヤレス 数字",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "テンキー 有線 薄型 34キー mac テンキーボード Tabキー付き テンキーパンタグラフType-C ミニキーボード ハブ 2つのUSB 3.0ポートと1つのUSB Cポートを装備 mac テンキー 片手デバイス 外部 PC/Laptop/Windows/iOS/Android 対応 多機能ナンバーパッド (ブラック)",
+      "asin": "B0DFGX5RVT",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/712WIjVGFcL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "key_layout",
+        "os_input_behavior"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0DFGX5RVT",
+      "ref": "p5",
+      "search_key": "テンキー 有線 薄型 34キー mac テンキーボード Tabキ",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "テンキー 有線【USB+Type-C 両対応】34 キー 超薄型 静音 ショートカットキー付き 左手デバイス 片手デバイス 外付け数字キーボードMacOS/Windows/iOS/Android ノート PC 対応 経理・事務・在宅ワーク・会計作業向 ブラック",
+      "asin": "B0CWKNPVMV",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71pe3ZXd5SL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "os_input_behavior"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0CWKNPVMV",
+      "ref": "p6",
+      "search_key": "テンキー 有線 34 キー 超薄型 静音 ショートカットキー付き",
+      "selection_score": 0.3
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "connection_power",
+      "key_layout",
+      "os_input_behavior"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "computer-numeric-keypads"
+}
