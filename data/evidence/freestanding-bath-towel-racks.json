@@ -1,0 +1,132 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/freestanding-bath-towel-racks.html",
+  "category": "dailygoods",
+  "comparison_axes": [
+    {
+      "id": "usable_hanging_width",
+      "keywords": [
+        "バーの有効幅",
+        "タオル寸法",
+        "二つ折り",
+        "バー本数"
+      ],
+      "label": "タオルを掛けられる有効幅"
+    },
+    {
+      "id": "bar_layout",
+      "keywords": [
+        "バー間隔",
+        "段差",
+        "床からの高さ",
+        "耐荷重"
+      ],
+      "label": "バーの間隔と高さ"
+    },
+    {
+      "id": "installation_and_storage",
+      "keywords": [
+        "外寸",
+        "脚部",
+        "折りたたみ",
+        "組み立て"
+      ],
+      "label": "設置面積と収納方法"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/freestanding-bath-towel-racks/freestanding-bath-towel-racks.png",
+  "products": [
+    {
+      "amazon_title": "HEIAN SHINDO バスタオルスタンド マットホワイト 耐荷重1kgx5 幅75cm STH-40WH 平安伸銅工業",
+      "asin": "B0D25HRZ5N",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51kTi0xvS1L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "bar_layout"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0D25HRZ5N",
+      "ref": "p1",
+      "search_key": "HEIAN SHINDO バスタオルスタンド マットホワイト 耐",
+      "selection_score": 0.505
+    },
+    {
+      "amazon_title": "AMUU バスタオルハンガー 伸縮式 おりたたみ タオル 折りたたみ スリム 幅広 洗濯物 衣類 干し分け角ハンガー プラスチック ビッグサイズ 屋外 室内4本セット (グレー)",
+      "asin": "B0C3PV36M1",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61p-R7sdk4L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "installation_and_storage"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0C3PV36M1",
+      "ref": "p2",
+      "search_key": "AMUU バスタオルハンガー 伸縮式 おりたたみ タオル 折りた",
+      "selection_score": 0.505
+    },
+    {
+      "amazon_title": "無印良品 アルミ バスタオル用伸縮ハンガー 約幅44cm 伸長時：約幅77 cm 76953937 (× 4)",
+      "asin": "B0H96VLXKT",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61ql1dOS8QL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H96VLXKT",
+      "ref": "p3",
+      "search_key": "無印良品 アルミ バスタオル用伸縮ハンガー 約幅44cm 伸長時",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "レック 「5つ干し」 ダブル 大判 バスタオル ・ トレーナー ハンガー 2本組×2個パック / 最大干し幅約70cm / W-425",
+      "asin": "B0GLYZQKXZ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61Ah0hs8zAL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GLYZQKXZ",
+      "ref": "p4",
+      "search_key": "レック 「5つ干し」 ダブル 大判 バスタオル ・ トレーナー",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "UTIMIU バスタオルスタンド バスタオルハンガー スリム タオル掛け ３段 横から掛けられる 物干し ハンガー タオル ラック 大判サイズ対応 ふきん掛け バスタオル掛け棚付き キャスター付き アジャスター付き 洗濯物ハンガー 浴室 洗面所 トイレ 風呂場 隙間収納 ワゴン 約W67.5×D17.5×H86cm (ホワイト)",
+      "asin": "B0F632K66T",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61yLlEVdOKL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0F632K66T",
+      "ref": "p5",
+      "search_key": "UTIMIU バスタオルスタンド バスタオルハンガー スリム タ",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "アイリスオーヤマ スタイルタオルハンガー 洗濯物干し 室内 部屋干し バスタオルスタンド ホワイト 幅約68×奥行約25.5×高さ約82 コンパクトでスペースを有効活用 インテリアに馴染みやすい 工具不要でカチッとはめるだけ 衣類ハンガー THSー680",
+      "asin": "B0DF7BNM8V",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61js11bl3jL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0DF7BNM8V",
+      "ref": "p6",
+      "search_key": "アイリスオーヤマ スタイルタオルハンガー 洗濯物干し 室内 部屋",
+      "selection_score": 0.325
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "bar_layout",
+      "installation_and_storage"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "freestanding-bath-towel-racks"
+}
