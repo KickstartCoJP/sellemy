@@ -1,0 +1,140 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/under-bed-storage-boxes.html",
+  "category": "dailygoods",
+  "comparison_axes": [
+    {
+      "id": "installation_dimensions",
+      "keywords": [
+        "ケースの高さ",
+        "幅",
+        "奥行き",
+        "キャスター込みの寸法",
+        "ベッド脚の間隔"
+      ],
+      "label": "ベッド下に収まる外寸"
+    },
+    {
+      "id": "access_method",
+      "keywords": [
+        "ふた式",
+        "引き出し式",
+        "開閉に必要な空間",
+        "持ち手",
+        "移動方法"
+      ],
+      "label": "中身の取り出し方"
+    },
+    {
+      "id": "storage_conditions",
+      "keywords": [
+        "有効内寸",
+        "衣類",
+        "小物",
+        "仕切り",
+        "耐荷重の対象"
+      ],
+      "label": "収納物に合う内寸と構造"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/under-bed-storage-boxes/under-bed-storage-boxes.png",
+  "products": [
+    {
+      "amazon_title": "カインズ(CAINZ) 引き出し衣装ケースロング M 幅39cm 奥行74cm 高さ22cm クリア 衣装ケース 収納 押し入れ ケース 衣類 棚",
+      "asin": "B0C7NY2K1Q",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/31FedfSZBGL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "installation_dimensions",
+        "storage_conditions"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0C7NY2K1Q",
+      "ref": "p1",
+      "search_key": "カインズ(CAINZ) 引き出し衣装ケースロング M 幅39cm",
+      "selection_score": 0.685
+    },
+    {
+      "amazon_title": "ベッド下収納ボックス 61×40×11cm キャスター付き 2 個セット 薄型 片開きフタ付き 透明 PP製 衣装ケース 大容量 すき間収納 衣類・小物・お菓子整理 グレー",
+      "asin": "B0HDYGQ386",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61tq6j2ds+L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "storage_conditions"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HDYGQ386",
+      "ref": "p2",
+      "search_key": "ベッド下収納ボックス 61×40×11cm キャスター付き 2",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "ベッド下収納ボックス 61×40×11cm キャスター付き 2 個セット 薄型 片開きフタ付き 透明 PP製 衣装ケース 大容量 すき間収納 衣類・小物・お菓子整理 クリア",
+      "asin": "B0HDY8RNBG",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61QP-au4kwL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "storage_conditions"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HDY8RNBG",
+      "ref": "p3",
+      "search_key": "ベッド下収納ボックス 61×40×11cm キャスター付き 2",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "JOYBEST ベット下収納ボックス キャスター付き 収納ボックス 大容量 収納ケース 幅82x奥行き40x高さ25CM 積み重ね",
+      "asin": "B0HCY83QW9",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71qvPqaax0L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "installation_dimensions"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HCY83QW9",
+      "ref": "p4",
+      "search_key": "JOYBEST ベット下収納ボックス キャスター付き 収納ボック",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "收纳 ベッド下收纳 服 收纳 衣类收纳 ベッド下收纳 キャスター付き黒 2个 SEHNLV",
+      "asin": "B0H7QXSSK8",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/91rKgngroKL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H7QXSSK8",
+      "ref": "p5",
+      "search_key": "收纳 ベッド下收纳 服 收纳 衣类收纳 ベッド下收纳 キャスター",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "ベッド下収納ボックス 折りたたみ キャスター付き 高さ25cm 折畳み 収納ケース 押入れ収納 立簡単 積み重ね ベッド下 ボックス（ブラウン）",
+      "asin": "B0H7J41MLL",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71qWbk6YCnL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H7J41MLL",
+      "ref": "p6",
+      "search_key": "ベッド下収納ボックス 折りたたみ キャスター付き 高さ25cm",
+      "selection_score": 0.325
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "installation_dimensions",
+      "storage_conditions"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "under-bed-storage-boxes"
+}

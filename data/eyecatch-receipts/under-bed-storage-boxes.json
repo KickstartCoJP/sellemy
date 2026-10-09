@@ -1,0 +1,49 @@
+{
+  "api_usage": {
+    "input_tokens": 348,
+    "input_tokens_details": {
+      "image_tokens": 0,
+      "text_tokens": 348
+    },
+    "output_tokens": 1372,
+    "output_tokens_details": {
+      "image_tokens": 1372,
+      "text_tokens": 0
+    },
+    "total_tokens": 1720
+  },
+  "generated_at": "2026-10-09T07:36:46.755551+00:00",
+  "generation_method": "openai_images_api",
+  "generation_route": "openai_images_api",
+  "height": 1024,
+  "image_sha256": "8123d60ca5d2e3ff2b2189429594e53649351ec40b84bef4a2ad86ff3334d913",
+  "model": "gpt-image-2.5-sunburst",
+  "openai_project_id": "",
+  "operation_id": "sellemy-eyecatch-under-bed-storage-boxes-1404f9ab8f615152",
+  "provider": "openai",
+  "quality": "high",
+  "request_sha256": "1404f9ab8f6151527481791b6c901e8a580a1482331212ebdd985d06f4fec2d8",
+  "routing": {
+    "api_share": 100,
+    "codex_reserve_percent": 20.0,
+    "codex_share": 0,
+    "codex_usage": {
+      "remaining_percent": 28.0,
+      "resets_at": 1791949050,
+      "source": "/Users/kickstart/.codex/sessions/2026/10/09/rollout-2026-10-09T08-06-01-01a11dc4-37f3-70d2-a2e1-f7c0eb094216.jsonl",
+      "used_percent": 72.0,
+      "window_minutes": 10080
+    },
+    "errors_before_success": [],
+    "executed_route": "openai_api",
+    "fallback_from": null,
+    "mode": "weighted_random",
+    "reason": "weighted_random",
+    "remaining_percent": 28.0,
+    "roll": 8,
+    "selected_route": "openai_api",
+    "total_weight": 100
+  },
+  "routing_recorded_at": "2026-10-09T07:36:46.756207+00:00",
+  "width": 1536
+}
