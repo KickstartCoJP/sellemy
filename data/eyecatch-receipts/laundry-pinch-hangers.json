@@ -1,0 +1,49 @@
+{
+  "api_usage": {
+    "input_tokens": 390,
+    "input_tokens_details": {
+      "image_tokens": 0,
+      "text_tokens": 390
+    },
+    "output_tokens": 1372,
+    "output_tokens_details": {
+      "image_tokens": 1372,
+      "text_tokens": 0
+    },
+    "total_tokens": 1762
+  },
+  "generated_at": "2026-10-09T02:52:39.428709+00:00",
+  "generation_method": "openai_images_api",
+  "generation_route": "openai_images_api",
+  "height": 1024,
+  "image_sha256": "1000fc6bc33f5f869e16c11cfd3fd29cea8ff4e9843f1b6966cc0e3b4dc652b9",
+  "model": "gpt-image-2.5-sunburst",
+  "openai_project_id": "",
+  "operation_id": "sellemy-eyecatch-laundry-pinch-hangers-6a5b1251d52f4c34",
+  "provider": "openai",
+  "quality": "high",
+  "request_sha256": "6a5b1251d52f4c3413f1b15d1e3f63feb0cedac1edcad3d86c1c32888249276b",
+  "routing": {
+    "api_share": 100,
+    "codex_reserve_percent": 20.0,
+    "codex_share": 0,
+    "codex_usage": {
+      "remaining_percent": 28.0,
+      "resets_at": 1791949050,
+      "source": "/Users/kickstart/.codex/sessions/2026/10/09/rollout-2026-10-09T08-06-01-01a11dc4-37f3-70d2-a2e1-f7c0eb094216.jsonl",
+      "used_percent": 72.0,
+      "window_minutes": 10080
+    },
+    "errors_before_success": [],
+    "executed_route": "openai_api",
+    "fallback_from": null,
+    "mode": "weighted_random",
+    "reason": "weighted_random",
+    "remaining_percent": 28.0,
+    "roll": 69,
+    "selected_route": "openai_api",
+    "total_weight": 100
+  },
+  "routing_recorded_at": "2026-10-09T02:52:39.429327+00:00",
+  "width": 1536
+}
