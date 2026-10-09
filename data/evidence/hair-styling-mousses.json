@@ -1,0 +1,139 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/hair-styling-mousses.html",
+  "category": "beauty",
+  "comparison_axes": [
+    {
+      "id": "styling_purpose",
+      "keywords": [
+        "ウェーブ",
+        "パーマ",
+        "ボリューム",
+        "セット"
+      ],
+      "label": "作りたい髪型と製品の用途"
+    },
+    {
+      "id": "application_conditions",
+      "keywords": [
+        "濡れた髪",
+        "乾いた髪",
+        "使用量",
+        "乾かし方"
+      ],
+      "label": "塗布する髪の状態と使用手順"
+    },
+    {
+      "id": "declared_finish",
+      "keywords": [
+        "セット力",
+        "ツヤ",
+        "柔らかい仕上がり",
+        "固める仕上がり"
+      ],
+      "label": "メーカーが示す仕上がりとセット性"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/hair-styling-mousses/hair-styling-mousses.png",
+  "products": [
+    {
+      "amazon_title": "Karseell カールクリーム 500g カール キープ やわらかな仕上がりへ 保湿 ツヤ 広がり・パサつきを抑え 洗い流さないトリートメント くせ毛・天然パーマ・パーマヘアに",
+      "asin": "B0H79477YR",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/617QD+zPQjL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "declared_finish",
+        "styling_purpose"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H79477YR",
+      "ref": "p1",
+      "search_key": "Karseell カールクリーム 500g カール キープ やわ",
+      "selection_score": 0.685
+    },
+    {
+      "amazon_title": "GATSBY(ギャツビー) メタラバー バブル パーマスタイルクリエイター [ ヘアフォーム メンズ ] 180グラム (x 2)",
+      "asin": "B0G5GMXYQ4",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71Zs4T-hyyL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "styling_purpose"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0G5GMXYQ4",
+      "ref": "p2",
+      "search_key": "GATSBY(ギャツビー) メタラバー バブル パーマスタイルク",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "LUX(ラックス) 美容液スタイリング アクティブウェーブフォーム ヘアムース 整髪料(スタイリング剤) 本体 130g",
+      "asin": "B0DYRTBD96",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51gvLrpchBL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "styling_purpose"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0DYRTBD96",
+      "ref": "p3",
+      "search_key": "LUX(ラックス) 美容液スタイリング アクティブウェーブフォー",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "レタッチ RETOUCH ヘアジェル パーマ パーマ用 ホールド WAVEGEL メンズ くせ毛 スタイリング 180g",
+      "asin": "B0DQGFJXBH",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51yJ2fSvsJL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "styling_purpose"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0DQGFJXBH",
+      "ref": "p4",
+      "search_key": "レタッチ RETOUCH ヘアジェル パーマ パーマ用 ホールド",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "【しっとりスタイルキープ】リノン ロックオイル アイロン専用 カールキープ スタイリングオイル ホワイトフローラル ヘアフレグランス",
+      "asin": "B0CQPQLW5V",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61Hn6qnXETL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0CQPQLW5V",
+      "ref": "p5",
+      "search_key": "リノン ロックオイル アイロン専用 カールキープ スタイリングオ",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "レタッチ RETOUCH パーマ用 ウェーブワックス WAVE ワックス クリーム メンズ くせ毛 スタイリング 90g",
+      "asin": "B0BYZDDLRD",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51XijWAKh6L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "styling_purpose"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0BYZDDLRD",
+      "ref": "p6",
+      "search_key": "レタッチ RETOUCH パーマ用 ウェーブワックス WAVE",
+      "selection_score": 0.325
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "declared_finish",
+      "styling_purpose"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "hair-styling-mousses"
+}
