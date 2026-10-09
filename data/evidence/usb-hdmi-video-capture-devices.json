@@ -1,0 +1,137 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/usb-hdmi-video-capture-devices.html",
+  "category": "gadget",
+  "comparison_axes": [
+    {
+      "id": "capture_format",
+      "keywords": [
+        "入力解像度",
+        "録画解像度",
+        "フレームレート",
+        "対応映像形式"
+      ],
+      "label": "入力映像と実際に取り込める画質"
+    },
+    {
+      "id": "passthrough_and_audio",
+      "keywords": [
+        "パススルー",
+        "出力条件",
+        "音声入力",
+        "ヘッドセット接続"
+      ],
+      "label": "別画面への映像出力と音声経路"
+    },
+    {
+      "id": "computer_compatibility",
+      "keywords": [
+        "USB規格",
+        "対応OS",
+        "対応ソフト",
+        "ドライバー",
+        "HDCP制約"
+      ],
+      "label": "USB接続・OS・ソフトの対応条件"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/usb-hdmi-video-capture-devices/usb-hdmi-video-capture-devices.png",
+  "products": [
+    {
+      "amazon_title": "Guermok HDMI キャプチャーボード USB3.0 1080P60FPS・2K30FPS録画 4Kパススルー Switch対応 低遅延録画",
+      "asin": "B0H4SXF15W",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71zwpHy7S-L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "passthrough_and_audio"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H4SXF15W",
+      "ref": "p1",
+      "search_key": "Guermok HDMI キャプチャーボード USB3.0 10",
+      "selection_score": 0.48
+    },
+    {
+      "amazon_title": "HDMI キャプチャーボード USB Type-C/USB-A両対応 4K入力 1080P/60fps録画 HDMI ビデオキャプチャー UVC/UAC ドライバー不要 低遅延 ゲーム実況 ライブ配信 OBS/Switch/PS5/Xbox/Windows/MacOS/Android対応",
+      "asin": "B0H44SQVC9",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61NC1cfWw1L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "computer_compatibility"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H44SQVC9",
+      "ref": "p2",
+      "search_key": "HDMI キャプチャーボード USB Type-C/USB-A両",
+      "selection_score": 0.48
+    },
+    {
+      "amazon_title": "HDMI キャプチャーボード USB3.0 Type-C/USB-A両対応",
+      "asin": "B0H44Q5J4G",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/613YsynVFmL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H44Q5J4G",
+      "ref": "p3",
+      "search_key": "HDMI キャプチャーボード USB3.0 Type-C/USB",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "HDMIキャプチャーボード 4K Switch PS5対応 1080p60fps USB3.0",
+      "asin": "B0GZ217M7G",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81lTWZUTOZL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GZ217M7G",
+      "ref": "p4",
+      "search_key": "HDMIキャプチャーボード 4K Switch PS5対応 10",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "2026年新登場 USB-A HDMIキャプチャーボード 4K入力/1080P録画 低遅延 電源不要 ドライバー不要",
+      "asin": "B0G91JQV2P",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51Fc5Z-0XFL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "computer_compatibility"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0G91JQV2P",
+      "ref": "p5",
+      "search_key": "2026年新登場 USB-A HDMIキャプチャーボード 4K入",
+      "selection_score": 0.3
+    },
+    {
+      "amazon_title": "キャプチャーボード Switch 1/2 対応, 4K HDMI パススルー 1080P 60FPS 録画",
+      "asin": "B0G1BMVC2P",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81LOUKQIVqL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "passthrough_and_audio"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0G1BMVC2P",
+      "ref": "p6",
+      "search_key": "キャプチャーボード Switch 1/2 対応, 4K HDMI",
+      "selection_score": 0.3
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "computer_compatibility",
+      "passthrough_and_audio"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "usb-hdmi-video-capture-devices"
+}

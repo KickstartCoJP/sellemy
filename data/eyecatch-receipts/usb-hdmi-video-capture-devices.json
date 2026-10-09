@@ -1,0 +1,48 @@
+{
+  "api_usage": {
+    "input_tokens": 393,
+    "input_tokens_details": {
+      "image_tokens": 0,
+      "text_tokens": 393
+    },
+    "output_tokens": 1372,
+    "output_tokens_details": {
+      "image_tokens": 1372,
+      "text_tokens": 0
+    },
+    "total_tokens": 1765
+  },
+  "generated_at": "2026-10-09T15:07:09.039773+00:00",
+  "generation_method": "openai_images_api",
+  "generation_route": "openai_images_api",
+  "height": 1024,
+  "image_sha256": "4257e3c0da7337cebea9287c642c114aff793b0af2825e07d4e0ad247ce3af5a",
+  "model": "gpt-image-2.5-sunburst",
+  "openai_project_id": "",
+  "operation_id": "sellemy-eyecatch-usb-hdmi-video-capture-devices-efff49fcae531f04",
+  "provider": "openai",
+  "quality": "high",
+  "request_sha256": "efff49fcae531f04f03c3d1bbf8852d3092c7ab62f304d09e9ffc90eab422ad9",
+  "routing": {
+    "api_share": 100,
+    "codex_reserve_percent": 20.0,
+    "codex_share": 0,
+    "codex_usage": {
+      "remaining_percent": 20.0,
+      "resets_at": 1791949050,
+      "source": "/Users/kickstart/.codex/sessions/2026/09/28/rollout-2026-09-28T18-23-07-01a0e753-400f-7742-addc-09e42523b98c.jsonl",
+      "used_percent": 80.0,
+      "window_minutes": 10080
+    },
+    "errors_before_success": [],
+    "executed_route": "openai_api",
+    "fallback_from": null,
+    "mode": "weighted_random",
+    "reason": "codex_reserve_threshold",
+    "remaining_percent": 20.0,
+    "roll": null,
+    "selected_route": "openai_api"
+  },
+  "routing_recorded_at": "2026-10-09T15:07:09.040393+00:00",
+  "width": 1536
+}
