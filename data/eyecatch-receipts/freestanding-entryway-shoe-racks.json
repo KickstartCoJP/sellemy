@@ -1,0 +1,48 @@
+{
+  "api_usage": {
+    "input_tokens": 411,
+    "input_tokens_details": {
+      "image_tokens": 0,
+      "text_tokens": 411
+    },
+    "output_tokens": 1372,
+    "output_tokens_details": {
+      "image_tokens": 1372,
+      "text_tokens": 0
+    },
+    "total_tokens": 1783
+  },
+  "generated_at": "2026-10-09T16:39:58.160373+00:00",
+  "generation_method": "openai_images_api",
+  "generation_route": "openai_images_api",
+  "height": 1024,
+  "image_sha256": "328daa55211458bca12f8fd87f3fc9d71a2c4ee8072960b53567dfb698d714b9",
+  "model": "gpt-image-2.5-sunburst",
+  "openai_project_id": "",
+  "operation_id": "sellemy-eyecatch-freestanding-entryway-shoe-racks-71926a08edf30940",
+  "provider": "openai",
+  "quality": "high",
+  "request_sha256": "71926a08edf30940bf7bfb1a5937189e42da74e9044a02da716bce412c45d300",
+  "routing": {
+    "api_share": 100,
+    "codex_reserve_percent": 20.0,
+    "codex_share": 0,
+    "codex_usage": {
+      "remaining_percent": 18.0,
+      "resets_at": 1791949050,
+      "source": "/Users/kickstart/.codex/sessions/2026/09/28/rollout-2026-09-28T18-23-07-01a0e753-400f-7742-addc-09e42523b98c.jsonl",
+      "used_percent": 82.0,
+      "window_minutes": 10080
+    },
+    "errors_before_success": [],
+    "executed_route": "openai_api",
+    "fallback_from": null,
+    "mode": "weighted_random",
+    "reason": "codex_reserve_threshold",
+    "remaining_percent": 18.0,
+    "roll": null,
+    "selected_route": "openai_api"
+  },
+  "routing_recorded_at": "2026-10-09T16:39:58.161066+00:00",
+  "width": 1536
+}
