@@ -1,0 +1,49 @@
+{
+  "api_usage": {
+    "input_tokens": 333,
+    "input_tokens_details": {
+      "image_tokens": 0,
+      "text_tokens": 333
+    },
+    "output_tokens": 1372,
+    "output_tokens_details": {
+      "image_tokens": 1372,
+      "text_tokens": 0
+    },
+    "total_tokens": 1705
+  },
+  "generated_at": "2026-10-09T13:24:33.115850+00:00",
+  "generation_method": "openai_images_api",
+  "generation_route": "openai_images_api",
+  "height": 1024,
+  "image_sha256": "33c5528ee6fed28381b4c34d8eb60c70b7af634f1114f4f8f8c58166b12083b6",
+  "model": "gpt-image-2.5-sunburst",
+  "openai_project_id": "",
+  "operation_id": "sellemy-eyecatch-smartphone-motorized-gimbals-33bcd35b0d51f131",
+  "provider": "openai",
+  "quality": "high",
+  "request_sha256": "33bcd35b0d51f13160860361fefb3ff006e50aa3174d28a142ba505a53c8f0c5",
+  "routing": {
+    "api_share": 100,
+    "codex_reserve_percent": 20.0,
+    "codex_share": 0,
+    "codex_usage": {
+      "remaining_percent": 21.0,
+      "resets_at": 1791949050,
+      "source": "/Users/kickstart/.codex/sessions/2026/09/28/rollout-2026-09-28T18-23-07-01a0e753-400f-7742-addc-09e42523b98c.jsonl",
+      "used_percent": 79.0,
+      "window_minutes": 10080
+    },
+    "errors_before_success": [],
+    "executed_route": "openai_api",
+    "fallback_from": null,
+    "mode": "weighted_random",
+    "reason": "weighted_random",
+    "remaining_percent": 21.0,
+    "roll": 53,
+    "selected_route": "openai_api",
+    "total_weight": 100
+  },
+  "routing_recorded_at": "2026-10-09T13:24:33.116534+00:00",
+  "width": 1536
+}
