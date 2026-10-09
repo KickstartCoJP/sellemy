@@ -1,0 +1,126 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/kitchen-sink-drain-strainers.html",
+  "category": "dailygoods",
+  "comparison_axes": [
+    {
+      "id": "drain_fit",
+      "keywords": [
+        "外径",
+        "深さ",
+        "設置形状"
+      ],
+      "label": "排水口との適合寸法"
+    },
+    {
+      "id": "strainer_structure",
+      "keywords": [
+        "網目",
+        "パンチング穴",
+        "材質"
+      ],
+      "label": "ゴミを受ける部分の構造"
+    },
+    {
+      "id": "emptying_and_care",
+      "keywords": [
+        "持ち手",
+        "ゴミの取り出し",
+        "洗浄方法"
+      ],
+      "label": "取り外しと洗浄の条件"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/kitchen-sink-drain-strainers/kitchen-sink-drain-strainers.png",
+  "products": [
+    {
+      "amazon_title": "FULNG 洗面台用 排水口, 排水溝 ゴミ受け 髪の毛 極排水排水口,外径約64mm[実用新案出願済み] (silver, 6.4cm)",
+      "asin": "B0FMWXNV9N",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71HVtF0jN2L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "drain_fit"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0FMWXNV9N",
+      "ref": "p1",
+      "search_key": "FULNG 洗面台用 排水口, 排水溝 ゴミ受け 髪の毛 極排水",
+      "selection_score": 0.49
+    },
+    {
+      "amazon_title": "「muyafen」排水口ゴミ受け ステンレス製 シンク用 2サイズ 蓋付きセット キッチン 水切りカゴ (シルバー,直径103.6mm × 高さ30mm（蓋付き)",
+      "asin": "B0HGR3RXPX",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71miUSOhbNL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HGR3RXPX",
+      "ref": "p2",
+      "search_key": "「muyafen」排水口ゴミ受け ステンレス製 シンク用 2サイ",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "SANEI(サンエイ) 流し排水栓カゴ ゴミ受け ミニキッチン用 小型シンク対応 直径78㎜ 軽量 日本製 PH650F-1",
+      "asin": "B0HCB3BMH7",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61vIJOZz09L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HCB3BMH7",
+      "ref": "p3",
+      "search_key": "SANEI(サンエイ) 流し排水栓カゴ ゴミ受け ミニキッチン用",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "排水口 ネットホルダー キッチン水切りネットホルダー ゴミ受け 直径14.5cm専用 6つのツメ 取っ手付き 水切りネット対応 ネット交換簡単",
+      "asin": "B0HBN4HN9C",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61EZ93Tl+TL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HBN4HN9C",
+      "ref": "p4",
+      "search_key": "排水口 ネットホルダー キッチン水切りネットホルダー ゴミ受け",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "Aieve 排水口 ゴミ受け 銅メッキ 排水溝 はいすいこう ゴミ受け 浅型 銅イオン 抗菌 ぬめり 悪臭防止 目詰まりしにく キッチン シンク 排水口水切りカゴ 口径13.5cm対応",
+      "asin": "B0DG21RWYV",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61Ktw7vJyQL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0DG21RWYV",
+      "ref": "p5",
+      "search_key": "Aieve 排水口 ゴミ受け 銅メッキ 排水溝 はいすいこう ゴ",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "【 IWANO 】 排水口 ゴミ受け [ 油汚れが水だけで落ちる ] ステンレス 水だけで汚れが落ちる(φ144mm(直径14.4cm)",
+      "asin": "B0D4LPQ78D",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71gmM9JfHdL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0D4LPQ78D",
+      "ref": "p6",
+      "search_key": "排水口 ゴミ受け ステンレス 水だけで汚れが落ちる(φ144mm",
+      "selection_score": 0.31
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "drain_fit"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "kitchen-sink-drain-strainers"
+}
