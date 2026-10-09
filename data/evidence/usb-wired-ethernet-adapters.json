@@ -1,0 +1,135 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/usb-wired-ethernet-adapters.html",
+  "category": "gadget",
+  "comparison_axes": [
+    {
+      "id": "host_connection",
+      "keywords": [
+        "USB-A",
+        "USB-C",
+        "USB規格",
+        "ケーブル長"
+      ],
+      "label": "パソコン側の端子とUSB規格"
+    },
+    {
+      "id": "ethernet_conditions",
+      "keywords": [
+        "対応通信規格",
+        "LANポート",
+        "ケーブル要件",
+        "接続先の規格"
+      ],
+      "label": "LAN側の規格と接続条件"
+    },
+    {
+      "id": "os_and_setup",
+      "keywords": [
+        "対応OS",
+        "OSバージョン",
+        "ドライバー",
+        "設定手順"
+      ],
+      "label": "対応OSと導入手順"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/usb-wired-ethernet-adapters/usb-wired-ethernet-adapters.png",
+  "products": [
+    {
+      "amazon_title": "UGREEN USB C 有線LANアダプター 6-in-1 LAN ハブ LANポート付き RJ45 ギガビットイーサネット USB-Cポート拡張",
+      "asin": "B0D1XLP7T5",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61QWEFzrV7L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "ethernet_conditions",
+        "host_connection"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0D1XLP7T5",
+      "ref": "p1",
+      "search_key": "UGREEN USB C 有線LANアダプター 6-in-1 L",
+      "selection_score": 0.67
+    },
+    {
+      "amazon_title": "USB C 有線LANアダプター 6-in-1 (USB-C 3.2+USB-A 3.2 拡張) 2500Mbps LAN ハブ",
+      "asin": "B0HCNHJFF6",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51glht4MCeL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "host_connection"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HCNHJFF6",
+      "ref": "p2",
+      "search_key": "USB C 有線LANアダプター 6-in-1 (USB-C 3",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "Recycled Claim Standard Blended",
+      "asin": "B0H981R9GT",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71c-VWW87BL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H981R9GT",
+      "ref": "p3",
+      "search_key": "Recycled Claim Standard Blended",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "USB-C 10Gbps LANアダプター 10GbE対応 USB Type-C 有線LAN変換アダプター RJ45 アダプター",
+      "asin": "B0H4LFXM87",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61CSq5HvbZL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "host_connection"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H4LFXM87",
+      "ref": "p4",
+      "search_key": "USB-C 10Gbps LANアダプター 10GbE対応 US",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "バッファロー 有線LANアダプター Giga Type-A USB3.2(Gen1)対応 ブラック LUA6-U3-AGTE-NBK",
+      "asin": "B0GFNDZR6X",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/518-kEk6hCL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GFNDZR6X",
+      "ref": "p5",
+      "search_key": "バッファロー 有線LANアダプター Giga Type-A US",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "バッファロー 有線LANアダプター Giga Type-C USB3.2(Gen1)対応 ブラック LUA6-U3-CGTE-NBK",
+      "asin": "B0GFMXZ3L3",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51nRjed3QnL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0GFMXZ3L3",
+      "ref": "p6",
+      "search_key": "バッファロー 有線LANアダプター Giga Type-C US",
+      "selection_score": 0.31
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "ethernet_conditions",
+      "host_connection"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "usb-wired-ethernet-adapters"
+}
