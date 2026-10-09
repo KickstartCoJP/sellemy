@@ -1,0 +1,131 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/external-hard-disk-drives.html",
+  "category": "gadget",
+  "comparison_axes": [
+    {
+      "id": "capacity_and_backup",
+      "keywords": [
+        "容量",
+        "バックアップソフト",
+        "対応OS",
+        "初期フォーマット"
+      ],
+      "label": "保存容量とバックアップの対応"
+    },
+    {
+      "id": "connection_requirements",
+      "keywords": [
+        "USB規格",
+        "本体端子",
+        "付属ケーブル",
+        "変換条件"
+      ],
+      "label": "端子と接続条件"
+    },
+    {
+      "id": "power_and_installation",
+      "keywords": [
+        "USB給電",
+        "ACアダプター",
+        "外寸",
+        "設置方向"
+      ],
+      "label": "電源方式と設置"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/external-hard-disk-drives/external-hard-disk-drives.png",
+  "products": [
+    {
+      "amazon_title": "「整備済み」外付けハードディスク ポータブル 超薄 外付けHDD USB3.0 大容量 PC/Mac/PS5/テレビ録画対応 オフェス 750GB",
+      "asin": "B0H2PLM1Z8",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61gXRFwBCML._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "capacity_and_backup"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H2PLM1Z8",
+      "ref": "p1",
+      "search_key": "「整備済み」外付けハードディスク ポータブル 超薄 外付けHDD",
+      "selection_score": 0.505
+    },
+    {
+      "amazon_title": "6TB 外付けHDD ポータブルHDD USB 3.0 外付けハードディスク ストレージドライブ",
+      "asin": "B0HKM7Z81R",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51wkwOEp0rL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HKM7Z81R",
+      "ref": "p2",
+      "search_key": "6TB 外付けHDD ポータブルHDD USB 3.0 外付けハ",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "【整備済み品】外付けHDD 500GB テレビ録画用 USB3.0 ポータブル Type-C変換アダプター付 ブラック",
+      "asin": "B0HJ7LKGLT",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71hEnMPwfxL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0HJ7LKGLT",
+      "ref": "p3",
+      "search_key": "外付けHDD 500GB テレビ録画用 USB3.0 ポータブル",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "外付けハードディスク 外付けHDD 500GB 超高速データ転送 テレビ録画 超薄型 2.5インチ USB3.0に対応 /PC/Mac/PS4/XBox 携帯便利 収納袋付属",
+      "asin": "B0H1KR4WQP",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51A-aZUpOCL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0H1KR4WQP",
+      "ref": "p4",
+      "search_key": "外付けハードディスク 外付けHDD 500GB 超高速データ転送",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "UnionSine 3.5インチ 外付けハードディスク 14TB, USB3.0外付けhdd",
+      "asin": "B0F5PPNLVH",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51-+l3dnGjL._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0F5PPNLVH",
+      "ref": "p5",
+      "search_key": "UnionSine 3.5インチ 外付けハードディスク 14TB",
+      "selection_score": 0.325
+    },
+    {
+      "amazon_title": "バッファロー 外付けHDD Seagate製ドライブ内蔵 HD-SGDA4U3-B [ブラック] [容量:4TB インターフェース:USB3.2 Gen1]",
+      "asin": "B0F4K8FY1R",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/21eo1QjO23L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "capacity_and_backup"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0F4K8FY1R",
+      "ref": "p6",
+      "search_key": "バッファロー 外付けHDD Seagate製ドライブ内蔵 HD-",
+      "selection_score": 0.325
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "capacity_and_backup"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "external-hard-disk-drives"
+}
