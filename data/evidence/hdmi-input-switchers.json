@@ -1,0 +1,149 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/hdmi-input-switchers.html",
+  "category": "gadget",
+  "comparison_axes": [
+    {
+      "id": "connection_layout",
+      "keywords": [
+        "入力数",
+        "出力数",
+        "切替器",
+        "分配器との違い",
+        "ケーブル長条件"
+      ],
+      "label": "入力・出力数と接続構成"
+    },
+    {
+      "id": "video_and_audio_support",
+      "keywords": [
+        "4K",
+        "リフレッシュレート",
+        "HDR",
+        "HDCP",
+        "音声形式",
+        "VRR"
+      ],
+      "label": "解像度・リフレッシュレート・信号対応"
+    },
+    {
+      "id": "switching_and_power",
+      "keywords": [
+        "手動切替",
+        "自動切替",
+        "リモコン",
+        "外部給電",
+        "電源アダプター"
+      ],
+      "label": "切替操作と電源条件"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/hdmi-input-switchers/hdmi-input-switchers.png",
+  "products": [
+    {
+      "amazon_title": "4K@60Hz/2K@120Hz HDMI切替器 3入力1出力 18Gbps リモコン 自動・手動切替 日本語取説・USB電源ケーブルが付属",
+      "asin": "B0DXKP5CRH",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/713pHOZ2aJL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "connection_layout",
+        "switching_and_power",
+        "video_and_audio_support"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0DXKP5CRH",
+      "ref": "p1",
+      "search_key": "4K@60Hz/2K@120Hz HDMI切替器 3入力1出力",
+      "selection_score": 0.85
+    },
+    {
+      "amazon_title": "Sprolink HDMIスプリッター 1x4 4K@30Hz 3D フルHD 1入力4出力ディストリビューター 電源ACアダプター付き Fire TV Stick、PS5、HDTV、Xbox、ゲームモニター対応 取扱説明書付属",
+      "asin": "B0GFM5YZSZ",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61mZwhRf+wL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "video_and_audio_support"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GFM5YZSZ",
+      "ref": "p2",
+      "search_key": "Sprolink HDMIスプリッター 1x4 4K@30Hz",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "llano 4K HDMI切替器 (2-in-1 Out, 双方向) 超小型 4K HDR 3Dコンテンツ対応 PS5・4 / Nintendo Switch/Xbox 360 /Fire TV Stick",
+      "asin": "B0F62P2KT3",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/611qMZzNv5L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "connection_layout",
+        "video_and_audio_support"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0F62P2KT3",
+      "ref": "p3",
+      "search_key": "llano 4K HDMI切替器 (2-in-1 Out, 双方",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "ClimatePartner Verified",
+      "asin": "B0DLN4RLQF",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61++s0S292L._AC_UL320_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B0DLN4RLQF",
+      "ref": "p4",
+      "search_key": "ClimatePartner Verified",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "エレコム HDMI切替器 4K 60Hz 4入力1出力 リモコン付き 【自動・手動切替が選べる】 PS5・4 / Nintendo Switch/Fire TV Stick 他 DH-SW4KB41BK/E",
+      "asin": "B0DDKSRTJW",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/718eBQVpLAL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "connection_layout",
+        "switching_and_power",
+        "video_and_audio_support"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0DDKSRTJW",
+      "ref": "p5",
+      "search_key": "エレコム HDMI切替器 4K 60Hz 4入力1出力 リモコン",
+      "selection_score": 0.31
+    },
+    {
+      "amazon_title": "エレコム HDMI切替器 4K 60Hz 2入力1出力 双方向 薄型(12mm) PS5・4 / Nintendo Switch/Fire TV Stick 他 DH-SW4KBD21BK/E",
+      "asin": "B0DDKSDZ98",
+      "brand": "",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51QdIW3vZAL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "connection_layout",
+        "video_and_audio_support"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0DDKSDZ98",
+      "ref": "p6",
+      "search_key": "エレコム HDMI切替器 4K 60Hz 2入力1出力 双方向",
+      "selection_score": 0.31
+    }
+  ],
+  "selection": {
+    "brand_count": 0,
+    "comparison_axes_covered": [
+      "connection_layout",
+      "switching_and_power",
+      "video_and_audio_support"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true
+  },
+  "slug": "hdmi-input-switchers"
+}
