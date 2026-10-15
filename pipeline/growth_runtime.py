@@ -588,6 +588,12 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
         products = discover_products(topic, cache_only=cache_only)
         selected, selection = select_six(products, topic, load_feedback())
         evidence = build_evidence(topic, selected, selection)
+        prior=read_artifact(slug,'evidence.json',{})
+        from comparison_acceptance import digest, evidence_content
+        if (prior.get('product_acceptance') and product_issues(prior)
+                and digest(evidence_content(prior)) == digest(evidence_content(evidence))):
+            request_product_reselection(slug,['unchanged evidence from previously rejected independent semantic review'])
+            raise GrowthRuntimeError(f'needs_product_reselection for {slug}; exact evidence unchanged')
         evidence['product_acceptance'] = independent_review(evidence)
         issues = product_issues(evidence)
         if issues:
