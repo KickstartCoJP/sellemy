@@ -241,9 +241,19 @@ def mark_failure(slug: str, *, stage: str, failure_class: str, failure_code: str
     attempt = retries[stage]
     from operating_profile import normal_profile
     normal = normal_profile()
-    if normal and failure_class == 'role_quality':
+    if normal and failure_class in {'role_quality','missing_evidence'}:
         ng=dict(state.get('quality_ng_by_gate') or {})
-        ng[stage]=int(ng.get(stage) or 0)+1
+        previous=int(ng.get(stage) or 0)
+        if stage=='product' and not ng.get(stage) and retries.get(stage,0)>1:
+            history=job_dir(slug)/'history.jsonl'
+            if history.exists():
+                for line in history.read_text().splitlines():
+                    try: row=json.loads(line)
+                    except ValueError:continue
+                    detail=row.get('detail') or {}
+                    if row.get('event')=='STAGE_FAILED' and detail.get('stage')=='product' and detail.get('failure_class')=='missing_evidence':
+                        previous+=1
+        ng[stage]=previous+1
         state['quality_ng_by_gate']=ng
         if ng[stage]>=3:
             state['status']='FAILED'
