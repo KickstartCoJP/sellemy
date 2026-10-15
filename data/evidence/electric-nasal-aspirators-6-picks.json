@@ -54,11 +54,11 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B09MS67NWR",
-      "asin": "B09MS67NWR",
-      "amazon_title": "ベビースマイル メルシーポット S-504 ボンジュールセット 医師推奨 電動鼻水吸引器 鼻吸い器 赤ちゃん 新生児対応 強力吸引 静音設計 ベビー用 鼻水吸引 電動 コンパクト 持ち運び 出産祝い (ピーチ)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/51xf9E1FMvL._AC_UL320_.jpg",
+      "product_id": "AMZ-B08LN69DQR",
+      "asin": "B08LN69DQR",
+      "amazon_title": "ベビースマイル S-303NP",
+      "brand": "シースター",
+      "image_url": "https://m.media-amazon.com/images/I/41HbeoslfYL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.89,
@@ -67,30 +67,44 @@
         "portability",
         "suction_power"
       ],
-      "search_key": "ベビースマイル メルシーポット S-504 ボンジュールセット"
+      "search_key": "ベビースマイル メルシーポット S-504 ボンジュールセット",
+      "model": "S-303NP",
+      "selected_variant": {
+        "model": "S-303NP",
+        "colour": "グリーン（新パッケージ）",
+        "jan": "4580211772287",
+        "pack_count": 1
+      }
     },
     {
       "ref": "p2",
       "product_id": "AMZ-B0H695TGVL",
       "asin": "B0H695TGVL",
-      "amazon_title": "ベビースマイル 電動鼻水吸引器 メルシーポット S-505 | 電動鼻水吸引器 鼻水吸引器 電動 鼻吸い器 鼻吸い 吸引器 鼻水 鼻づまり 電動鼻吸い器 鼻水吸引 鼻水吸い器 鼻吸引 赤ちゃん",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/412E44F4bFL._AC_UL320_.jpg",
+      "amazon_title": "メルシーポット S-505",
+      "brand": "シースター",
+      "image_url": "https://m.media-amazon.com/images/I/412E44F4bFL._AC_SL1000_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [
         "suction_power"
       ],
-      "search_key": "ベビースマイル 電動鼻水吸引器 メルシーポット S-505 |"
+      "search_key": "ベビースマイル 電動鼻水吸引器 メルシーポット S-505 |",
+      "model": "S-505",
+      "selected_variant": {
+        "model": "S-505",
+        "colour": "白、緑の操作部",
+        "pack_count": 1,
+        "included": "本体、鼻水収集カップ、シリコンノズル、吸引チューブ、ACアダプター、USB A-Cケーブル、専用ケース、ドライバー、説明書類"
+      }
     },
     {
       "ref": "p3",
       "product_id": "AMZ-B0GS187YHL",
       "asin": "B0GS187YHL",
-      "amazon_title": "医療機器　くますーぽっと パワフル　電動鼻水吸引器　鼻吸い器　乳児　鼻づまり　静音",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/615gcKHUO8L._AC_UL320_.jpg",
+      "amazon_title": "ICST くますぅ～ポット",
+      "brand": "ICST",
+      "image_url": "https://m.media-amazon.com/images/I/615gcKHUO8L._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
@@ -98,52 +112,82 @@
         "noise_level",
         "suction_power"
       ],
-      "search_key": "医療機器 くますーぽっと パワフル 電動鼻水吸引器 鼻吸い器 乳"
+      "search_key": "医療機器 くますーぽっと パワフル 電動鼻水吸引器 鼻吸い器 乳",
+      "model": "NS-100",
+      "selected_variant": {
+        "model": "NS-100",
+        "colour": "ホワイト",
+        "pack_count": 1,
+        "medical_certification": "307AGBZX00029A01"
+      }
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0GR55PQFD",
-      "asin": "B0GR55PQFD",
-      "amazon_title": "メディケン(MEDIKEN) 鼻水吸引器 手動式 鼻吸い器 真空ポンプ 吸引力調整 4種類の柔らかいシリコーンノズル 赤ちゃん 子供 大人",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71HwQuVJNlL._AC_UL320_.jpg",
+      "product_id": "AMZ-B09VS4KBX7",
+      "asin": "B09VS4KBX7",
+      "amazon_title": "Dr.EDISON 電動鼻水吸引器ハンディ KJH1122",
+      "brand": "Dr.EDISON",
+      "image_url": "https://m.media-amazon.com/images/I/612FomNm1HL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [
         "suction_power"
       ],
-      "search_key": "メディケン(MEDIKEN) 鼻水吸引器 手動式 鼻吸い器 真空"
+      "search_key": "メディケン(MEDIKEN) 鼻水吸引器 手動式 鼻吸い器 真空",
+      "model": "KJH1122",
+      "selected_variant": {
+        "model": "KJH1122",
+        "color": "ホワイト",
+        "pack_count": 1,
+        "jan": "4544742918224",
+        "power": "単3形乾電池2本"
+      }
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0GQG7164S",
-      "asin": "B0GQG7164S",
-      "amazon_title": "ファミネル Famineru 電動鼻水吸引器 鼻吸い器 電動 パーフェクトセット 赤ちゃん 大人 日本製 強力 新生児 赤ちゃん はなすいき",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61wkkCGVR2L._AC_UL320_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.35,
-      "matched_comparison_axes": [
-        "suction_power"
-      ],
-      "search_key": "ファミネル Famineru 電動鼻水吸引器 鼻吸い器 電動 パ"
-    },
-    {
-      "ref": "p6",
       "product_id": "AMZ-B0FRKVHVCC",
       "asin": "B0FRKVHVCC",
       "amazon_title": "鼻水吸引器 電動 鼻吸い器 はなすいき ファミネル 赤ちゃん 大人 強力 日本製 新生児 おすすめ [Famineru公式]",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/51Vl1BtXLuL._AC_UL320_.jpg",
+      "brand": "Famineru",
+      "image_url": "https://m.media-amazon.com/images/I/51Vl1BtXLuL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [
         "suction_power"
       ],
-      "search_key": "鼻水吸引器 電動 鼻吸い器 はなすいき ファミネル 赤ちゃん 大"
+      "search_key": "ファミネル Famineru 電動鼻水吸引器 鼻吸い器 電動 パ",
+      "model": "COQ-FM-01001",
+      "selected_variant": {
+        "model": "COQ-FM-01001",
+        "colour": "ホワイト",
+        "pack_count": 1,
+        "medical_certification": "307AFBZX00060000",
+        "jan": "4573608730014"
+      }
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B07LC5HCHT",
+      "asin": "B07LC5HCHT",
+      "amazon_title": "コンビ 電動鼻吸い器 S-80 ナチュラルグレー",
+      "brand": "コンビ",
+      "image_url": "https://m.media-amazon.com/images/I/61e1faQnDvL._AC_SL1000_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.35,
+      "matched_comparison_axes": [
+        "suction_power"
+      ],
+      "search_key": "鼻水吸引器 電動 鼻吸い器 はなすいき ファミネル 赤ちゃん 大",
+      "model": "S-80",
+      "selected_variant": {
+        "model": "S-80",
+        "colour": "ナチュラルグレー",
+        "pack_count": 1,
+        "medical_certification": "229AFBZX00095000"
+      }
     }
   ]
 }

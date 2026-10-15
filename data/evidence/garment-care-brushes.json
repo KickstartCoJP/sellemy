@@ -38,27 +38,28 @@
   "eyecatch_image": "https://www.sellemy.jp/img/garment-care-brushes/garment-care-brushes.png",
   "products": [
     {
-      "amazon_title": "【清潔感 よみがえる】洋服ブラシ 馬毛 カシミヤ ウール スーツ 静電気除去 花粉対策 ホコリ取り 毛玉予防 プレゼント",
-      "asin": "B0H1NK1QYX",
-      "brand": "",
+      "amazon_title": "無印良品 ブナ材洋服ブラシ 豚毛",
+      "asin": "B07PF2YHHV",
+      "brand": "無印良品",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61LeJOTkrFL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61c95+XBVYL._AC_SL1260_.jpg",
       "matched_comparison_axes": [
         "bristle_structure",
         "fabric_compatibility"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0H1NK1QYX",
+      "product_id": "AMZ-B07PF2YHHV",
       "ref": "p1",
       "search_key": "洋服ブラシ 馬毛 カシミヤ ウール スーツ 静電気除去 花粉対策",
-      "selection_score": 0.685
+      "selection_score": 0.685,
+      "selected_variant": "約幅6.5×長さ24cm・1本"
     },
     {
-      "amazon_title": "TAMATOSHI 天然木 豚毛 3WAY 衣類ブラシ 折りたたみ携帯用 靴べら リントブラシ 毛玉ケア ホコリ取り",
+      "amazon_title": "TAMATOSHI 天然木 豚毛 3WAY ハンディ衣類ブラシ",
       "asin": "B0GY3VSW5M",
-      "brand": "",
+      "brand": "TAMATOSHI",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/41RozS3KVEL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/41RozS3KVEL._AC_SX679_.jpg",
       "matched_comparison_axes": [
         "bristle_structure"
       ],
@@ -66,14 +67,15 @@
       "product_id": "AMZ-B0GY3VSW5M",
       "ref": "p2",
       "search_key": "TAMATOSHI 天然木 豚毛 3WAY 衣類ブラシ 折りたた",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": "折りたたみ携帯用・靴べら/リントブラシ内蔵・1本"
     },
     {
-      "amazon_title": "GB KENT ケント 洋服ブラシ 馬毛 天然ビーチウッド 英国王室御用達 高級衣類ブラシ カシミヤ ウール シルク スーツ ニット コート 花粉対策 ホコリ除去 毛玉予防 柔らかい 静電気抑制 OTHH1",
+      "amazon_title": "GB KENT 馬毛洋服ブラシ",
       "asin": "B0GNR8HGG2",
-      "brand": "",
+      "brand": "GB KENT",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/81nLE6YXZsL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/81nLE6YXZsL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "bristle_structure",
         "fabric_compatibility"
@@ -82,52 +84,56 @@
       "product_id": "AMZ-B0GNR8HGG2",
       "ref": "p3",
       "search_key": "GB KENT ケント 洋服ブラシ 馬毛 天然ビーチウッド 英国",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": "馬毛・ビーチウッド・1本"
     },
     {
-      "amazon_title": "【総フォロワー数9.6万人！川端歩さん愛用】【衣類に優しい】 洋服ブラシ 馬毛 スーツ ブラシ 天然素材 毛玉取り BURANOUS (ブラウン)",
-      "asin": "B0G1T8L4WB",
-      "brand": "",
+      "amazon_title": "マーナ 毎日の洋服ブラシ",
+      "asin": "B0DNVSC8Y7",
+      "brand": "マーナ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71CVtzlEK-L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51WquUWfnLL._AC_SL1426_.jpg",
       "matched_comparison_axes": [
         "bristle_structure"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0G1T8L4WB",
+      "product_id": "AMZ-B0DNVSC8Y7",
       "ref": "p4",
       "search_key": "洋服ブラシ 馬毛 スーツ ブラシ 天然素材 毛玉取り BURAN",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": "ブラック・豚毛/PP柄・1本"
     },
     {
-      "amazon_title": "【クロワッサン掲載モデル】 洋服ブラシ 馬毛 スーツ ブラシ 【天然馬毛100%・大切な服を長持ちさせる】 コート 服 ブラッシング 天然木 毛玉取り ほこり取り 静電気除去 花粉対策",
-      "asin": "B0F3MMCN5J",
-      "brand": "",
+      "amazon_title": "浅草アートブラシ カシミヤ用洋服ブラシ 匠",
+      "asin": "B0DWWV6VKW",
+      "brand": "浅草アートブラシ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71brSpSwX-L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51X2sN4qpXL._AC_SL1250_.jpg",
       "matched_comparison_axes": [
         "bristle_structure"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0F3MMCN5J",
+      "product_id": "AMZ-B0DWWV6VKW",
       "ref": "p5",
       "search_key": "洋服ブラシ 馬毛 スーツ ブラシ コート 服 ブラッシング 天然",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": "白馬毛・ブナ柄・通常品1本、桐箱セットではない"
     },
     {
-      "amazon_title": "洋服ブラシ 高级洋服ブラシ 二色の組み合わせ けだまとり 馬毛 毛玉取り 人気 静電除去服 スーツ コート ブラッシング 天然馬毛100% 衣類のほこり取り 毛玉取り 天然木 靴 毛玉予防 着物お手入れ 静電気対策（Type 1）",
-      "asin": "B0DQKVG84F",
-      "brand": "",
+      "amazon_title": "ショージワークス 四角い馬毛の洋服ブラシ",
+      "asin": "B07K1YWXLT",
+      "brand": "ショージワークス",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61UJV+Vyg1L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71Zvx+Z5vFL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "bristle_structure"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0DQKVG84F",
+      "product_id": "AMZ-B07K1YWXLT",
       "ref": "p6",
       "search_key": "洋服ブラシ 高级洋服ブラシ 二色の組み合わせ けだまとり 馬毛",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": "白馬尾毛・ウォールナット本体/縞黒檀つまみ・1個"
     }
   ],
   "selection": {

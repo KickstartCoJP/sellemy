@@ -49,11 +49,11 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B07B7CYW3K",
-      "asin": "B07B7CYW3K",
-      "amazon_title": "MOSSY OAK ノコギリ 折込のこぎり 替え刃３枚 剪定鋸 折込鋸 折り畳み式 替え刃式 生木用 木工用 硬質プラスチック用 鉄工用替刃付き 多目的廃棄物 粗大ゴミ 安全ロック 専用収納ケース付き",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71v4MhbUHdL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0C9T1WNF6",
+      "asin": "B0C9T1WNF6",
+      "amazon_title": "高儀 シャークソー 折込鋸 替刃式 剪定用 斬速目 210mm フッ素 日本製 速く切れる 園芸 庭木 果樹 防ヤニ 永切 カラビナ 取り付け可能 のこぎり ノコギリ 折込のこぎり 片刃 たかぎ",
+      "brand": "高儀",
+      "image_url": "https://m.media-amazon.com/images/I/513SDYV+oFL._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.67,
@@ -61,82 +61,94 @@
         "intended_material",
         "storage_maintenance"
       ],
-      "search_key": "MOSSY OAK ノコギリ 折込のこぎり 替え刃３枚 剪定鋸"
+      "search_key": "MOSSY OAK ノコギリ 折込のこぎり 替え刃３枚 剪定鋸",
+      "model": "高儀 SHARK SAW 折込斬速剪定フッ素210",
+      "selected_variant": "本体・210mm"
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0795C6961",
-      "asin": "B0795C6961",
-      "amazon_title": "角利産業(Kakuri Sangyo) のこぎり 粗大ゴミ解体 折込鋸 本体 刃渡り210mm ブラック柄 黒刃 軽金属 プラスチック 替刃式 コンパクト 角度2段切替 日本製ブレード使用",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/5104v1++QSL._AC_UL320_.jpg",
+      "product_id": "AMZ-B000CED1OG",
+      "asin": "B000CED1OG",
+      "amazon_title": "ユーエム工業(Silky) ゴムボーイ 万能目 240mm 121-24",
+      "brand": "Silky",
+      "image_url": "https://m.media-amazon.com/images/I/51tPsYaLItL._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.49,
       "matched_comparison_axes": [
         "blade"
       ],
-      "search_key": "角利産業(Kakuri Sangyo) のこぎり 粗大ゴミ解体"
+      "search_key": "角利産業(Kakuri Sangyo) のこぎり 粗大ゴミ解体",
+      "model": "Silky ゴムボーイ 万能目 121-24",
+      "selected_variant": "刃渡り240mm・本体"
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0C9T1WNF6",
-      "asin": "B0C9T1WNF6",
-      "amazon_title": "高儀 シャークソー 折込鋸 替刃式 剪定用 斬速目 210mm フッ素 日本製 速く切れる 園芸 庭木 果樹 防ヤニ 永切 カラビナ 取り付け可能 のこぎり ノコギリ 折込のこぎり 片刃 たかぎ",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/513SDYV+oFL._AC_UL320_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.31,
-      "matched_comparison_axes": [
-        "intended_material"
-      ],
-      "search_key": "高儀 シャークソー 折込鋸 替刃式 剪定用 斬速目 210mm"
-    },
-    {
-      "ref": "p4",
       "product_id": "AMZ-B0C9SN47K5",
       "asin": "B0C9SN47K5",
       "amazon_title": "高儀 シャークソー 替刃式 剪定鋸 210mm サヤ付 日本製 園芸 庭木 果樹 切断推奨サイズ105mm以下 防サビ 永切 のこぎり ノコギリ 片刃 たかぎ",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/41Le1gEogwL._AC_UL320_.jpg",
+      "brand": "高儀",
+      "image_url": "https://m.media-amazon.com/images/I/41Le1gEogwL._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
       "matched_comparison_axes": [
         "intended_material"
       ],
-      "search_key": "高儀 シャークソー 替刃式 剪定鋸 210mm サヤ付 日本製"
+      "search_key": "高儀 シャークソー 折込鋸 替刃式 剪定用 斬速目 210mm",
+      "model": "高儀 SHARK SAW 鞘付剪定鋸210",
+      "selected_variant": "本体・210mm"
+    },
+    {
+      "ref": "p4",
+      "product_id": "AMZ-B0014C4MQQ",
+      "asin": "B0014C4MQQ",
+      "amazon_title": "SILKY（シルキー） ゴム太郎 荒目 240mm No.102－24",
+      "brand": "Silky",
+      "image_url": "https://m.media-amazon.com/images/I/51f81qk3f+L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.31,
+      "matched_comparison_axes": [
+        "intended_material"
+      ],
+      "search_key": "高儀 シャークソー 替刃式 剪定鋸 210mm サヤ付 日本製",
+      "model": "Silky ゴム太郎 荒目 102-24",
+      "selected_variant": "刃渡り240mm・本体"
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0C9SLLZZK",
-      "asin": "B0C9SLLZZK",
-      "amazon_title": "高儀 シャークソー 折込鋸 替刃式 剪定用 替刃 210mm 日本製 のこぎり ノコギリ 鋸 折込のこぎり 片刃 替え刃 園芸 庭木 果樹 防サビ 永切 たかぎ",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/41TcYF7No9L._AC_UL320_.jpg",
+      "product_id": "AMZ-B073XJNHTV",
+      "asin": "B073XJNHTV",
+      "amazon_title": "ユーエム工業(Silky) ポケットボーイ 万能目 本体 ケースなし 340-18 170mm",
+      "brand": "Silky",
+      "image_url": "https://m.media-amazon.com/images/I/618RfDlLPHL._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
       "matched_comparison_axes": [
         "intended_material"
       ],
-      "search_key": "高儀 シャークソー 折込鋸 替刃式 剪定用 替刃 210mm 日"
+      "search_key": "高儀 シャークソー 折込鋸 替刃式 剪定用 替刃 210mm 日",
+      "model": "Silky ポケットボーイ 万能目 340-18",
+      "selected_variant": "刃渡り170mm・ケースなし本体"
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0C9SKVTXC",
-      "asin": "B0C9SKVTXC",
-      "amazon_title": "高儀 シャークソー 替刃式鋸 のこぎり ノコギリ 替刃 210mm サヤ付 万能目 日本製 片刃 木材 生木 庭木 剪定 防サビ 永切 たかぎ",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/41R1xZUCGFL._AC_UL320_.jpg",
+      "product_id": "AMZ-B00KGMCIX4",
+      "asin": "B00KGMCIX4",
+      "amazon_title": "新潟精機(Niigataseiki) 剣匠 日本製 燕三条産 折込万能鋸 210mm 型枠/生木/一般木材/集成材 切断用",
+      "brand": "新潟精機",
+      "image_url": "https://m.media-amazon.com/images/I/512ZKJlYnAL._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
       "matched_comparison_axes": [
         "intended_material"
       ],
-      "search_key": "高儀 シャークソー 替刃式鋸 のこぎり ノコギリ 替刃 210m"
+      "search_key": "高儀 シャークソー 替刃式鋸 のこぎり ノコギリ 替刃 210m",
+      "model": "新潟精機 剣匠 折込万能鋸210mm",
+      "selected_variant": "本体・シルバー／ブラック"
     }
   ]
 }

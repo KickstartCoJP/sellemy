@@ -48,81 +48,119 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0FXWJP91W",
-      "asin": "B0FXWJP91W",
-      "amazon_title": "【オンライン限定】 パール金属 ジンギスカン鍋 27cm 深型 鉄鋳物 カセットコンロ専用 AZ-7052",
-      "brand": "パール金属(PEARL METAL)のストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/71315+xvSIL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0GW8R4CV1",
+      "asin": "B0GW8R4CV1",
+      "amazon_title": "Iwatani イワタニ 岩谷 カセットフー ウィンドシールド ケース付き カセットこんろ 日本製 メタリックブラウン CB-WS-1",
+      "brand": "Iwatani",
+      "image_url": "https://m.media-amazon.com/images/I/611+XOQ7LDL._AC_SL1500_.jpg",
       "observed_price": 2280,
       "discovery_score": 1,
       "selection_score": 0.495,
       "matched_comparison_axes": [],
-      "search_key": "パール金属(PEARL METAL) パール金属 ジンギスカン鍋 27cm 深型 鉄鋳物 カセッ"
+      "search_key": "パール金属(PEARL METAL) パール金属 ジンギスカン鍋 27cm 深型 鉄鋳物 カセッ",
+      "model": "Iwatani CB-WS-1",
+      "selected_variant": {
+        "color": "メタリックブラウン",
+        "power_kw": 3.5,
+        "case": true,
+        "gas": "別売"
+      }
     },
     {
       "ref": "p2",
       "product_id": "AMZ-B0GZ39F2R3",
       "asin": "B0GZ39F2R3",
       "amazon_title": "【セット買い】Iwatani イワタニ 岩谷 カセットガス 達人スリムⅤケース付き CB-TS-5-A + よくばり鍋 CB-A-YBN + カセットガス CB缶 3P セット",
-      "brand": "Iwataniのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/71C-D3kr9jL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "brand": "Iwatani",
+      "image_url": "https://m.media-amazon.com/images/I/71C-D3kr9jL._AC_SL1500_.jpg",
       "observed_price": 11550,
       "discovery_score": 1,
       "selection_score": 0.495,
       "matched_comparison_axes": [],
-      "search_key": "Iwatani イワタニ 岩谷 カセットガス 達人スリムⅤケース付き CB-TS"
+      "search_key": "Iwatani イワタニ 岩谷 カセットガス 達人スリムⅤケース付き CB-TS",
+      "model": "Iwatani CB-TS-5-A セット",
+      "selected_variant": {
+        "power_kw": 3.4,
+        "bundle": "case+CB-A-YBN+3gascanisters"
+      }
     },
     {
       "ref": "p3",
       "product_id": "AMZ-B0FWR6KJHG",
       "asin": "B0FWR6KJHG",
       "amazon_title": "【本体＋ガスボンベ3本】アイリスオーヤマ カセットコンロ アルミニウム チャコール アウトドア キャンプ 防災対策 卓上コンロ 鍋 すき焼き 焼肉 ホームパーティー IGC-E1-H＋カセットボンベ 250g×3本入",
-      "brand": "アイリスオーヤマ(IRIS OHYAMA)のストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/61BGZc5xucL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "brand": "IRIS OHYAMA",
+      "image_url": "https://m.media-amazon.com/images/I/61BGZc5xucL._AC_SL1000_.jpg",
       "observed_price": 3980,
       "discovery_score": 1,
       "selection_score": 0.445,
       "matched_comparison_axes": [],
-      "search_key": "アイリスオーヤマ(IRIS OHYAMA) アイリスオーヤマ カセットコンロ アルミニウム チャ"
+      "search_key": "アイリスオーヤマ(IRIS OHYAMA) アイリスオーヤマ カセットコンロ アルミニウム チャ",
+      "model": "IRIS IGC-E1-H セット",
+      "selected_variant": {
+        "color": "チャコール",
+        "bundle": "stove+3gascanisters"
+      }
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B08N5TYQSC",
-      "asin": "B08N5TYQSC",
-      "amazon_title": "すき焼き鍋 4-5人 用 約30cm ガラス蓋付き 強力 フッ素加工 オール熱源対応 カセットコンロ IH調理器など 強力フッ素加工で耐久性・洗い易さUP キズや汚れに強くこげつきにくい 軽くて扱いやすいアルミニウム製 持ち運びやすい持ち手付き",
-      "brand": "ブランド: リビング(Living)",
-      "image_url": "https://m.media-amazon.com/images/I/61+HKy6bhPL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0DPLYP5GC",
+      "asin": "B0DPLYP5GC",
+      "amazon_title": "Iwatani イワタニ 岩谷 カセットコンロ カセットフー カセットガス エコプレミアムIII 内炎式 簡易コンロ 防災グッズ 卓上用 停電対策 日本製 ブラック CB-EPR-3-B",
+      "brand": "Iwatani",
+      "image_url": "https://m.media-amazon.com/images/I/61F+CHzD7uL._AC_SL1500_.jpg",
       "observed_price": 4778,
       "discovery_score": 1,
       "selection_score": 0.445,
       "matched_comparison_axes": [],
-      "search_key": "リビング(Living) すき焼き鍋 4-5人 用 約30cm ガラス蓋付き 強力 フッ素"
+      "search_key": "リビング(Living) すき焼き鍋 4-5人 用 約30cm ガラス蓋付き 強力 フッ素",
+      "model": "Iwatani CB-EPR-3-B",
+      "selected_variant": {
+        "color": "ブラック",
+        "power_kw": 2.9,
+        "burner": "内炎式",
+        "gas": "別売"
+      }
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B07GP63925",
-      "asin": "B07GP63925",
-      "amazon_title": "鍋 卓上鍋 両手鍋 20cm: IH対応 ガス対応 オール熱源対応 ガラス鍋蓋付 セラミックコーティング 有害物質不使用 オレンジ",
-      "brand": "ＣＯＯＫＳＭＡＲＫのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/51KPkKBj2QL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0DM118YB2",
+      "asin": "B0DM118YB2",
+      "amazon_title": "Iwatani イワタニ 岩谷 カセットフー BO- ケース付 カセットこんろ 防災 日本製 CB-AH-41N",
+      "brand": "Iwatani",
+      "image_url": "https://m.media-amazon.com/images/I/814fuuvvBML._AC_SL1500_.jpg",
       "observed_price": 2899,
       "discovery_score": 1,
       "selection_score": 0.445,
       "matched_comparison_axes": [],
-      "search_key": "ＣＯＯＫＳＭＡＲＫ 鍋 卓上鍋 両手鍋 20cm: IH対応 ガス対応 オール熱源対"
+      "search_key": "ＣＯＯＫＳＭＡＲＫ 鍋 卓上鍋 両手鍋 20cm: IH対応 ガス対応 オール熱源対",
+      "model": "Iwatani CB-AH-41N BO-",
+      "selected_variant": {
+        "color": "ヘアラインシルバー",
+        "power_kw": 4.1,
+        "case": true,
+        "gas": "別売"
+      }
     },
     {
       "ref": "p6",
       "product_id": "AMZ-B0GX8P8S34",
       "asin": "B0GX8P8S34",
       "amazon_title": "【セット買い】Iwatani イワタニ 岩谷 カセットフースマート CB-SMT-1 + よくばり鍋 CB-A-YBN セット",
-      "brand": "Iwataniのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/61iLTAx38QL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "brand": "Iwatani",
+      "image_url": "https://m.media-amazon.com/images/I/61iLTAx38QL._AC_SL1500_.jpg",
       "observed_price": 8280,
       "discovery_score": 1,
       "selection_score": 0.375,
       "matched_comparison_axes": [],
-      "search_key": "Iwatani イワタニ 岩谷 カセットフースマート CB-SMT-1 + よく"
+      "search_key": "Iwatani イワタニ 岩谷 カセットフースマート CB-SMT-1 + よく",
+      "model": "Iwatani CB-SMT-1 セット",
+      "selected_variant": {
+        "color": "ブラック",
+        "power_kw": 3.5,
+        "bundle": "stove+CB-A-YBN",
+        "gas": "別売"
+      }
     }
   ]
 }

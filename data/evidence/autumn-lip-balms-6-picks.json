@@ -64,8 +64,8 @@
       "ref": "p1",
       "product_id": "AMZ-B076778KZS",
       "asin": "B076778KZS",
-      "amazon_title": "アベンヌ(Avene) 薬用リップケア モイスト 4g | リップクリーム ・ 唇ケア | スティックタイプ | 無香料 | デリケート 無着色 高保湿 乾燥 ひび割れ メンズ | 敏感肌 ダーマコスメ",
-      "brand": "アベンヌ(Avene)のストアを表示",
+      "amazon_title": "アベンヌ 薬用リップケア モイスト4g",
+      "brand": "アベンヌ",
       "image_url": "https://m.media-amazon.com/images/I/51MBQYVaTBL._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": 1155,
       "discovery_score": 1,
@@ -74,14 +74,16 @@
         "portability",
         "scent_color"
       ],
-      "search_key": "アベンヌ(Avene) 薬用リップケア モイスト 4g | リップクリーム ・ 唇ケア"
+      "search_key": "アベンヌ(Avene) 薬用リップケア モイスト 4g | リップクリーム ・ 唇ケア",
+      "model": "アベンヌ 薬用リップケア モイスト",
+      "selected_variant": "4g・無香料・無着色"
     },
     {
       "ref": "p2",
       "product_id": "AMZ-B0D8PXBG8N",
       "asin": "B0D8PXBG8N",
-      "amazon_title": "ケアセラ(CareCera) モイストバリアリップクリーム 2.4g (8種の天然型セラミド配合 低刺激性・無香料・パラベンフリー 高保湿)",
-      "brand": "ケアセラ(CareCera)のストアを表示",
+      "amazon_title": "ケアセラ モイストバリアリップクリーム2.4g",
+      "brand": "ケアセラ",
       "image_url": "https://m.media-amazon.com/images/I/71LV2Gb3JeL._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": 699,
       "discovery_score": 1,
@@ -89,40 +91,46 @@
       "matched_comparison_axes": [
         "scent_color"
       ],
-      "search_key": "ケアセラ(CareCera) モイストバリアリップクリーム 2.4g (8種の天然型セラミド配"
+      "search_key": "ケアセラ(CareCera) モイストバリアリップクリーム 2.4g (8種の天然型セラミド配",
+      "model": "ケアセラ モイストバリアリップクリーム",
+      "selected_variant": "2.4g・無香料"
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0GNLCQBJN",
-      "asin": "B0GNLCQBJN",
-      "amazon_title": "ノイズカットリップパック 15g | リップクリーム リップバーム 唇パック ナイトパック 高保湿 無添加 乾燥 荒れ 皮むけ 縦ジワ 対策 敏感肌 レディース メンズ ギフト プレゼント Mediplus メディプラス (コーラルピンク)",
-      "brand": "メディプラスのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/616CBncZlXL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B003VUUO7A",
+      "asin": "B003VUUO7A",
+      "amazon_title": "キュレル リップケアクリーム 4.2g",
+      "brand": "キュレル",
+      "image_url": "https://m.media-amazon.com/images/I/71CHrR6V4nL._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": 2750,
       "discovery_score": 1,
       "selection_score": 0.495,
       "matched_comparison_axes": [],
-      "search_key": "メディプラス ノイズカットリップパック 15g | リップクリーム リップバー"
+      "search_key": "メディプラス ノイズカットリップパック 15g | リップクリーム リップバー",
+      "model": "キュレル リップケアクリーム",
+      "selected_variant": "4.2g・無着色・無香料"
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0D316CYBH",
-      "asin": "B0D316CYBH",
-      "amazon_title": "ライスフォース〈リップセラム〉 8g 1本 化粧品 リップケア リップメイク 唇ケア 唇美容液 保湿 乾燥 ライスパワー No.7 公式",
-      "brand": "ライスフォース(RICEFORCE)のストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/51dVAFWcA+L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0HFT3GSY1",
+      "asin": "B0HFT3GSY1",
+      "amazon_title": "DHC 薬用リップクリーム 1.5g",
+      "brand": "DHC",
+      "image_url": "https://m.media-amazon.com/images/I/51Z0-KlfEIL._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": 1650,
       "discovery_score": 1,
       "selection_score": 0.495,
       "matched_comparison_axes": [],
-      "search_key": "ライスフォース(RICEFORCE) ライスフォース〈リップセラム〉 8g 1本 化粧品 リップ"
+      "search_key": "ライスフォース(RICEFORCE) ライスフォース〈リップセラム〉 8g 1本 化粧品 リップ",
+      "model": "DHC 薬用リップクリーム",
+      "selected_variant": "1.5g・1本"
     },
     {
       "ref": "p5",
       "product_id": "AMZ-B09F9WGBX4",
       "asin": "B09F9WGBX4",
-      "amazon_title": "ニベア ディープモイスチャーリップ 無香料【医薬部外品】3本パック",
-      "brand": "ニベアのストアを表示",
+      "amazon_title": "ニベア ディープモイスチャーリップ 無香料 3本パック",
+      "brand": "ニベア",
       "image_url": "https://m.media-amazon.com/images/I/61FNkLo5kzL._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": 1155,
       "discovery_score": 1,
@@ -130,20 +138,24 @@
       "matched_comparison_axes": [
         "scent_color"
       ],
-      "search_key": "ニベア ディープモイスチャーリップ 無香料 3本パック"
+      "search_key": "ニベア ディープモイスチャーリップ 無香料 3本パック",
+      "model": "ニベア ディープモイスチャーリップ",
+      "selected_variant": "無香料・2.2g×3本パック"
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B07XXPHQZK",
-      "asin": "B07XXPHQZK",
-      "amazon_title": "ラネージュ リップスリーピングマスク ベリー 20g リップクリーム リップマスク リップバーム リップスクラブ 唇 パック 保湿 韓国",
-      "brand": "LANEIGEのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/71v7EhhS6+L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B09LPX3T75",
+      "asin": "B09LPX3T75",
+      "amazon_title": "キスミー マミー リップクリームN 2.5g",
+      "brand": "マミー",
+      "image_url": "https://m.media-amazon.com/images/I/51Se2CrdBfL._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": 2365,
       "discovery_score": 1,
       "selection_score": 0.495,
       "matched_comparison_axes": [],
-      "search_key": "LANEIGE ラネージュ リップスリーピングマスク ベリー 20g リップクリ"
+      "search_key": "LANEIGE ラネージュ リップスリーピングマスク ベリー 20g リップクリ",
+      "model": "マミー リップクリームN",
+      "selected_variant": "2.5g・無香料"
     }
   ]
 }

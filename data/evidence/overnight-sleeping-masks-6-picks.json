@@ -47,8 +47,8 @@
       "product_id": "AMZ-B0F7ZJQP4K",
       "asin": "B0F7ZJQP4K",
       "amazon_title": "ラネージュ ウォータースリーピングマスク N フェイスパック セラミド ナイアシンアミド 水分クリーム ナイトマスク 敏感肌 韓国 スキンケア",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61Lp75Yc69L._AC_UL320_.jpg",
+      "brand": "LANEIGE",
+      "image_url": "https://m.media-amazon.com/images/I/61Lp75Yc69L._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.71,
@@ -56,74 +56,107 @@
         "moisture_ingredients",
         "texture"
       ],
-      "search_key": "ラネージュ ウォータースリーピングマスク N フェイスパック セ"
+      "search_key": "ラネージュ ウォータースリーピングマスク N フェイスパック セ",
+      "selected_variant": {
+        "model": "ウォータースリーピングマスク N",
+        "volume_ml": 70,
+        "pack_count": 1
+      }
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0CJN2ZZVX",
-      "asin": "B0CJN2ZZVX",
-      "amazon_title": "LuLuLun ルルルン ハイドラEXマスク 28枚入り パック フェイスパック シートマスク 顔 保湿 毛穴 大容量",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71xPXTLw35L._AC_UL320_.jpg",
+      "product_id": "AMZ-B06Y2M8HV9",
+      "asin": "B06Y2M8HV9",
+      "amazon_title": "エリクシール 【医薬部外品】 ブライトニング スリーピングジェルパック 心地よいアクアフローラルの香り ELIXIR",
+      "brand": "エリクシール",
+      "image_url": "https://m.media-amazon.com/images/I/6196uY7SdYL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.53,
       "matched_comparison_axes": [
         "price_volume"
       ],
-      "search_key": "LuLuLun ルルルン ハイドラEXマスク 28枚入り パック"
+      "search_key": "LuLuLun ルルルン ハイドラEXマスク 28枚入り パック",
+      "selected_variant": {
+        "model": "ブライトニング スリーピングジェルパック（販売名ブライトニングジェル）",
+        "capacity": "105g",
+        "quantity": 1,
+        "fragrance": "アクアフローラル"
+      }
     },
     {
       "ref": "p3",
       "product_id": "AMZ-B0HBB15MJD",
       "asin": "B0HBB15MJD",
       "amazon_title": "【全薬工業】保湿パック スリーピングマスク 35g",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/31R7Ixe1ALL._AC_UL320_.jpg",
+      "brand": "アルージェ",
+      "image_url": "https://m.media-amazon.com/images/I/31R7Ixe1ALL._AC_SL1000_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "保湿パック スリーピングマスク 35g"
+      "search_key": "保湿パック スリーピングマスク 35g",
+      "selected_variant": {
+        "model": "Ar スリーピングマスク",
+        "weight_g": 35,
+        "pack_count": 1
+      }
     },
     {
       "ref": "p4",
       "product_id": "AMZ-B0G57Y6Y38",
       "asin": "B0G57Y6Y38",
       "amazon_title": "Terez & Honor フェイスパック スリーピングマスク フェイスマスク コラーゲンパック ゲルマスク 保湿 ハリ ツヤ ハイドロゲル 弾力 毛穴 スキンケア ナイトケア 敏感肌 韓国コスメ (8枚)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71qm5Diz9vL._AC_UL320_.jpg",
+      "brand": "Terez & Honor",
+      "image_url": "https://m.media-amazon.com/images/I/710A512XozL._AC_SL1254_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "Terez & Honor フェイスパック スリーピングマスク"
+      "search_key": "Terez & Honor フェイスパック スリーピングマスク",
+      "selected_variant": {
+        "model": "Terez & Honor ハイドロゲルマスク",
+        "sheets": 8,
+        "pack_count": 1
+      }
     },
     {
       "ref": "p5",
       "product_id": "AMZ-B0FLD773VJ",
       "asin": "B0FLD773VJ",
       "amazon_title": "日本酒のスリーピングマスク ８０Ｇ",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61vIIiB-PnL._AC_UL320_.jpg",
+      "brand": "日本盛",
+      "image_url": "https://m.media-amazon.com/images/I/61vIIiB-PnL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "日本酒のスリーピングマスク ８０Ｇ"
+      "search_key": "日本酒のスリーピングマスク ８０Ｇ",
+      "selected_variant": {
+        "model": "日本酒のスリーピングマスク",
+        "weight_g": 80,
+        "pack_count": 1,
+        "jan": "4904070078203"
+      }
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0DP8HP9NV",
-      "asin": "B0DP8HP9NV",
-      "amazon_title": "パーフェクトワンフォーカス VCチャージ スムースマスク（7枚入）シートマスク フェイスパック アゼライン酸 ビタミン 保湿 毛穴 乾燥 日本製(PERFECT ONE FOCUS)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61R3n8dpNFL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0DCHXMSNG",
+      "asin": "B0DCHXMSNG",
+      "amazon_title": "dプログラム d プログラム 薬用 ナイトジェルマスク 本体 60g 医薬部外品 パック マスク 敏感肌 低刺激 毛穴 肌荒れ予防 保湿 無香料",
+      "brand": "d プログラム",
+      "image_url": "https://m.media-amazon.com/images/I/51olLJk-1DL._AC_SL1000_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "パーフェクトワンフォーカス VCチャージ スムースマスク（7枚入"
+      "search_key": "パーフェクトワンフォーカス VCチャージ スムースマスク（7枚入",
+      "selected_variant": {
+        "model": "薬用ナイトジェルマスク／オーバーナイトリファイニングジェルM",
+        "capacity": "60g",
+        "quantity": 1,
+        "fragrance": "無香料"
+      }
     }
   ]
 }

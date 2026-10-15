@@ -43,83 +43,110 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0HJG2W2FB",
-      "asin": "B0HJG2W2FB",
-      "amazon_title": "[Luvian]車用加熱シート 暖房座布団 3段階温度調整 USB給電式 自動車用シートヒーター 暖か絨毯面 滑り止め付き 冬季用 オフホワイト",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71MfaZXRaNL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0BZR782WS",
+      "asin": "B0BZR782WS",
+      "amazon_title": "[山善] ヒータークッション ホットマット 座布団 収納ポーチ付き YTC-WARM-OC4",
+      "brand": "山善",
+      "image_url": "https://m.media-amazon.com/images/I/71U3mX2li+L._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.505,
       "matched_comparison_axes": [
         "power_source"
       ],
-      "search_key": "車用加熱シート 暖房座布団 3段階温度調整 USB給電式 自動車"
+      "search_key": "車用加熱シート 暖房座布団 3段階温度調整 USB給電式 自動車",
+      "model": "YTC-WARM-OC4",
+      "selected_variant": {
+        "color": "ベージュ",
+        "size": "29×38×1.5cm",
+        "quantity": "1個"
+      }
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0HLMRD13L",
-      "asin": "B0HLMRD13L",
-      "amazon_title": "シートヒーター 車用 後付け 、 車椅子用クッション シートヒーター 車用 冬の寒さ対策、重力感応で自動起動・停止 、 電気座布団 厚手 取り付け簡単 滑り止め 防寒対策、車種選ばず 車プレゼント,茶色-運転席",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61l6GhD1odL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0DB82PRR8",
+      "asin": "B0DB82PRR8",
+      "amazon_title": "THANKO じわっとあったか 薄型ランバーサポート FEVLUMCBK ヒーター ランバーサポート 後付け 車 シートクッション 腰サポーター 運転 カー用品 腰 腰痛 車用 冬 薄型 簡単装着",
+      "brand": "サンコー",
+      "image_url": "https://m.media-amazon.com/images/I/51xRaEurwmL._AC_SL1000_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [],
-      "search_key": "シートヒーター 車用 後付け 、 車椅子用クッション シートヒー"
+      "search_key": "シートヒーター 車用 後付け 、 車椅子用クッション シートヒー",
+      "model": "FEVLUMCBK",
+      "selected_variant": {
+        "color": "ブラック",
+        "quantity": "1個"
+      }
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0HLJ2HG1N",
-      "asin": "B0HLJ2HG1N",
-      "amazon_title": "シートヒーター 車用 、 車椅子用クッション シートクッション 車 冬の寒さ対策、重力感応で自動起動・停止 、 シートクッション 車 厚手 取り付け簡単 滑り止め 防寒対策、車種選ばず 車プレゼント,茶色-助手席",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71hRFPvdO3L._AC_UL320_.jpg",
+      "product_id": "AMZ-B0C7TSKMZN",
+      "asin": "B0C7TSKMZN",
+      "amazon_title": "Gillevecara USBホットマット 40×45cm",
+      "brand": "Gillevecara",
+      "image_url": "https://m.media-amazon.com/images/I/71E7284CBPL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [],
-      "search_key": "シートヒーター 車用 、 車椅子用クッション シートクッション"
+      "search_key": "シートヒーター 車用 、 車椅子用クッション シートクッション",
+      "model": "NSD-Pk",
+      "selected_variant": "40×45cm・主画像はブラウン系。色欄が「ブランド」と誤記なので公式色名は断定しない。"
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0HLHZB1R3",
-      "asin": "B0HLHZB1R3",
-      "amazon_title": "シートヒーター 車用 後付け 、 車椅子用クッション 電気座布団 冬用車用加熱座席 速暖 、 シートクッション 車 厚手 取り付け簡単 滑り止め 防寒対策、車種選ばず 車プレゼント,茶色-助手席",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61pRsTMyOaL._AC_UL320_.jpg",
+      "product_id": "AMZ-B09JG6PB14",
+      "asin": "B09JG6PB14",
+      "amazon_title": "IROMUKUN イロムクン ヒートクッション 折りたたみ式 温かい クッション モバイルバッテリー付属 3段階調節 オートタイマー機能",
+      "brand": "IROMUKUN",
+      "image_url": "https://m.media-amazon.com/images/I/61q+c2s55WL._AC_SL1000_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [],
-      "search_key": "シートヒーター 車用 後付け 、 車椅子用クッション 電気座布団"
+      "search_key": "シートヒーター 車用 後付け 、 車椅子用クッション 電気座布団",
+      "model": "IROMUKUN イロムクン ヒートクッション",
+      "selected_variant": {
+        "color": "色名・色バリエーションの明記なし。選択ASIN固定",
+        "size": "31×36×1.4cm",
+        "quantity": "本体1＋モバイルバッテリー1"
+      }
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0HLHWMTV1",
-      "asin": "B0HLHWMTV1",
-      "amazon_title": "シートヒーター 車用 、 車椅子用クッション シートヒーター 重力感応で自動起動・停止 、 電気座布団 厚手 取り付け簡単 滑り止め 防寒対策、車種選ばず 車プレゼント,黒-運転席",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71o3UHmdWgL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0B6P7BLNC",
+      "asin": "B0B6P7BLNC",
+      "amazon_title": "Makitsu USBホットマット 40×45cm ブラウン",
+      "brand": "Makitsu",
+      "image_url": "https://m.media-amazon.com/images/I/61A8bS7W7yL._AC_SL1001_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [],
-      "search_key": "シートヒーター 車用 、 車椅子用クッション シートヒーター 重"
+      "search_key": "シートヒーター 車用 、 車椅子用クッション シートヒーター 重",
+      "model": "NK-0007",
+      "selected_variant": "ブラウン・本体1枚・収納袋付き"
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0HLH743TQ",
-      "asin": "B0HLH743TQ",
-      "amazon_title": "シートヒーター 車用 後付け 、 車椅子用クッション ヒータークッション 重力感応で自動起動・停止 、 電気座布団 家族、友人、ドライバーへの最高の温かい贈り物,黒-助手席",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/717Ds7uhWtL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0BJ6HYS1G",
+      "asin": "B0BJ6HYS1G",
+      "amazon_title": "enetanpo エネタンポ USBウォームパッド ET-06（シャムグレー・単品）",
+      "brand": "enetanpo",
+      "image_url": "https://m.media-amazon.com/images/I/810fLN6WWfL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [],
-      "search_key": "シートヒーター 車用 後付け 、 車椅子用クッション ヒーターク"
+      "search_key": "シートヒーター 車用 後付け 、 車椅子用クッション ヒーターク",
+      "model": "ET-06 / enetanpo-X",
+      "selected_variant": {
+        "color": "シャムグレー",
+        "size": "38×35×0.2cm",
+        "quantity": "1枚（単品、モバイルバッテリー別売）"
+      }
     }
   ]
 }

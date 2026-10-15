@@ -34,80 +34,105 @@
   "eyecatch_image": "https://www.sellemy.jp/img/home-ethernet-switches/home-ethernet-switches.png",
   "products": [
     {
-      "amazon_title": "UGREEN スイッチングハブ 16ポート ギガビット LANハブ 1000Mbps 壁掛け対応 プラグ＆プレイ 金属筐体 PSE認証取得 ACアダプター",
-      "asin": "B0FMRXM2KD",
-      "brand": "",
+      "amazon_title": "NETGEAR 卓上型コンパクト アンマネージスイッチングハブ GS316 ギガビット 16ポート 静音ファンレス 省電力設計 3年保証",
+      "asin": "B0FRZZKN8T",
+      "brand": "NETGEAR",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51f0Dra1gtL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/31Dr5b10NOL._AC_SX300_SY300_QL70_ML2_.jpg",
       "matched_comparison_axes": [
         "placement_power"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0FMRXM2KD",
+      "product_id": "AMZ-B0FRZZKN8T",
       "ref": "p1",
       "search_key": "UGREEN スイッチングハブ 16ポート ギガビット LANハ",
-      "selection_score": 0.49
+      "selection_score": 0.49,
+      "model": "NETGEAR GS316-300JPS",
+      "selected_variant": {
+        "style": "16ポート/ギガビット",
+        "count": 1
+      }
     },
     {
       "amazon_title": "サンワダイレクト スイッチングハブ Giga対応 AUTO-MDIX機能搭載 3ポート 2分配 アルミ筐体 USB給電 500-SWH012",
       "asin": "B0GK6NZ5BV",
-      "brand": "",
+      "brand": "サンワダイレクト",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61TPABtxa9L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61TPABtxa9L._AC_SL1280_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B0GK6NZ5BV",
       "ref": "p2",
       "search_key": "サンワダイレクト スイッチングハブ Giga対応 AUTO-MD",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "model": "サンワダイレクト 500-SWH012",
+      "selected_variant": {
+        "style": "3ポート/ギガビット/USB-C給電",
+        "count": 1
+      }
     },
     {
-      "amazon_title": "UGREEN スイッチングハブ 5 ポートギガビット Giga対応 LANハブ 簡単設置 コンパクト",
-      "asin": "B0FW4NJQLF",
-      "brand": "",
+      "amazon_title": "TP-Link 5ポート スイッチングハブ 10/100/1000Mbps ギガビット 金属筺体 設定不要 メーカー保証ライフタイム保証 TL-SG105",
+      "asin": "B00A128S24",
+      "brand": "TP-Link",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/6146H2dwilL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/81axMty7hkL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0FW4NJQLF",
+      "product_id": "AMZ-B00A128S24",
       "ref": "p3",
       "search_key": "UGREEN スイッチングハブ 5 ポートギガビット Giga対",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "model": "TP-Link TL-SG105",
+      "selected_variant": {
+        "style": "5ポート/ギガビット/金属筐体",
+        "count": 1
+      }
     },
     {
-      "amazon_title": "UGREEN スイッチングハブ 8ポートギガビット Giga対応 LANハブ 簡単設置 コンパクト",
-      "asin": "B0FW4K3DJ9",
-      "brand": "",
+      "amazon_title": "IODATA 5ポート スイッチングハブ 10G対応 SFP+搭載 2.5Gbps BSH-QG05/UE",
+      "asin": "B0F8BJ85FX",
+      "brand": "I-O DATA",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/610O0ngBgQL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71dbu7wRVKL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0FW4K3DJ9",
+      "product_id": "AMZ-B0F8BJ85FX",
       "ref": "p4",
       "search_key": "UGREEN スイッチングハブ 8ポートギガビット Giga対応",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "model": "I-O DATA BSH-QG05/UE",
+      "selected_variant": {
+        "style": "2.5GbE 5ポート + 10G SFP+ポート",
+        "count": 1
+      }
     },
     {
-      "amazon_title": "バッファロー 5ポート Giga対応 スイッチングハブ 金属筐体 電源外付け 壁掛け対応 LSW-5GSE/NBK",
-      "asin": "B0FBM9JFD2",
-      "brand": "",
+      "amazon_title": "エレコム Giga対応スイッチングHub 8ポート 金属筐体 磁石付き 電源内蔵モデル ブラック EHC-G08MN4-HJB",
+      "asin": "B0DJ8CLQT6",
+      "brand": "ELECOM",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61rHJsHXzLL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51jiek+Uy7L._SL1500_.jpg",
       "matched_comparison_axes": [
         "placement_power"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0FBM9JFD2",
+      "product_id": "AMZ-B0DJ8CLQT6",
       "ref": "p5",
       "search_key": "バッファロー 5ポート Giga対応 スイッチングハブ 金属筐体",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "model": "エレコム EHC-G08MN4-HJB",
+      "selected_variant": {
+        "style": "8ポート/ブラック/電源内蔵",
+        "count": 1
+      }
     },
     {
       "amazon_title": "バッファロー 8ポート Giga対応 スイッチングハブ 金属筐体 電源外付け 壁掛け対応 LSW-8GSE/NBK",
       "asin": "B0FBM8PXK2",
-      "brand": "",
+      "brand": "BUFFALO",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61O-5rgiMjL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61O-5rgiMjL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "placement_power"
       ],
@@ -115,7 +140,12 @@
       "product_id": "AMZ-B0FBM8PXK2",
       "ref": "p6",
       "search_key": "バッファロー 8ポート Giga対応 スイッチングハブ 金属筐体",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "model": "バッファロー LSW-8GSE/NBK",
+      "selected_variant": {
+        "style": "8ポート/ブラック/2025年/Amazon限定包装",
+        "count": 1
+      }
     }
   ],
   "selection": {

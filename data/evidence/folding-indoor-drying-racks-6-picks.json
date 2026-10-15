@@ -45,11 +45,11 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0H6HB8QM4",
-      "asin": "B0H6HB8QM4",
-      "amazon_title": "物干しスタンド 布団干し 耐荷重150kg 折りたたみ・伸縮式 室内外用",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61tSYOANUYL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0BKQ8XL6F",
+      "asin": "B0BKQ8XL6F",
+      "amazon_title": "アイリスオーヤマ 物干し 伸縮自在で洗濯物の量で調節可能なコンパクト洗濯物干し 布団も干せる頑丈設計 約5人用 幅約92~152×奥行約64×高さ約127.5 ホワイト STMX-920",
+      "brand": "アイリスオーヤマ",
+      "image_url": "https://m.media-amazon.com/images/I/510-6jbxDDL._AC_SL1000_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.685,
@@ -57,76 +57,101 @@
         "capacity",
         "footprint"
       ],
-      "search_key": "物干しスタンド 布団干し 耐荷重150kg 折りたたみ・伸縮式"
+      "search_key": "物干しスタンド 布団干し 耐荷重150kg 折りたたみ・伸縮式",
+      "selected_variant": {
+        "colour_style": "ホワイト",
+        "count": 1
+      }
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0GXV9WSY6",
-      "asin": "B0GXV9WSY6",
-      "amazon_title": "welsteepse 室内物干し 折り畳み 高さ調節可能 約W102~173×D25×H140~180cm 洗濯物干し 物干しスタンド 部屋干し 組み立て簡単 ホワイト",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61rM5Ndyz9L._AC_UL320_.jpg",
+      "product_id": "AMZ-B07B4N2WZX",
+      "asin": "B07B4N2WZX",
+      "amazon_title": "積水樹脂商事(Sekisuijushishoji)セキスイランドリ-スタンドSTIK-A2",
+      "brand": "積水樹脂",
+      "image_url": "https://m.media-amazon.com/images/I/61RMhhGWfjL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.505,
       "matched_comparison_axes": [
         "mobility"
       ],
-      "search_key": "welsteepse 室内物干し 折り畳み 高さ調節可能 約W1"
+      "search_key": "welsteepse 室内物干し 折り畳み 高さ調節可能 約W1",
+      "selected_variant": {
+        "colour_style": "ホワイト/Aタイプ",
+        "count": 1
+      }
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0HGFNMBCJ",
-      "asin": "B0HGFNMBCJ",
-      "amazon_title": "山善(YAMAZEN) 室内物干し ハンガーラック 3連 完成品 折りたたみ 幅117×奥行48×高さ91.5-149cm B3H-2F(MWH)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/6119lxg8uoL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0847TKBCV",
+      "asin": "B0847TKBCV",
+      "amazon_title": "天馬 洗濯物干し 室内 インテリア物干し パネルM 軽量 簡単組立 コンパクト 部屋干し 折りたたみ ハンガーラック 物干しスタンド PSI-01",
+      "brand": "天馬",
+      "image_url": "https://m.media-amazon.com/images/I/915c0h22M5L._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [],
-      "search_key": "山善(YAMAZEN) 室内物干し ハンガーラック 3連 完成品"
+      "search_key": "山善(YAMAZEN) 室内物干し ハンガーラック 3連 完成品",
+      "selected_variant": {
+        "colour_style": "オールステンレス",
+        "count": 1
+      }
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0GN4WB2CR",
-      "asin": "B0GN4WB2CR",
-      "amazon_title": "ekans(エカンズ) スタンド型 折りたたみ 室内物干し KSBR-20B ブラック",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71FHnrIw8vL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0847TLWBQ",
+      "asin": "B0847TLWBQ",
+      "amazon_title": "天馬(Tenma) 耐久性と美しさを兼ね備えた室内物干し インテリア物干し ハンガーラック 差し込むだけの簡単組立 洗濯物干し 軽く持ち運べてコンパクトに収納できる物干しスタンド 【簡単組立】【色 オールステンレス】 【シンプル】 【幅72×奥行50×高さ150cm】",
+      "brand": "天馬",
+      "image_url": "https://m.media-amazon.com/images/I/41JncCr3ogL._AC_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [],
-      "search_key": "ekans(エカンズ) スタンド型 折りたたみ 室内物干し KS"
+      "search_key": "ekans(エカンズ) スタンド型 折りたたみ 室内物干し KS",
+      "selected_variant": {
+        "model": "PSI-03",
+        "colour_style": "オールステンレス",
+        "count": 1
+      }
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0GKTRXKCL",
-      "asin": "B0GKTRXKCL",
-      "amazon_title": "LUMIEL 室内物干し 折りたたみ 物干しスタンド 物干し竿 ハンガーラック 部屋干し 洗濯物干し 省スペース収納 コンパクト収納 組み立て簡単 (ブラック, 一段（シンプル）)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71h3bjGrfWL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0HGFNMBCJ",
+      "asin": "B0HGFNMBCJ",
+      "amazon_title": "山善(YAMAZEN) 室内物干し ハンガーラック 3連 完成品 折りたたみ 幅117×奥行48×高さ91.5-149cm B3H-2F(MWH)",
+      "brand": "山善",
+      "image_url": "https://m.media-amazon.com/images/I/6119lxg8uoL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [
         "mobility"
       ],
-      "search_key": "LUMIEL 室内物干し 折りたたみ 物干しスタンド 物干し竿"
+      "search_key": "LUMIEL 室内物干し 折りたたみ 物干しスタンド 物干し竿",
+      "selected_variant": {
+        "colour_style": "マットホワイト/3連物干し",
+        "count": 1
+      }
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0GK8GWSFG",
-      "asin": "B0GK8GWSFG",
-      "amazon_title": "洗濯物干し 折り畳み 室内 物干し スタンド 使用時：約W175×D25×H160cm ホワイト",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61IKFE2ALKL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0CCN3YK8K",
+      "asin": "B0CCN3YK8K",
+      "amazon_title": "山崎実業(Yamazaki) 折り畳み 室内物干し ホワイト タワー tower 6619",
+      "brand": "山崎実業",
+      "image_url": "https://m.media-amazon.com/images/I/51FVXZEwEdL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [],
-      "search_key": "洗濯物干し 折り畳み 室内 物干し スタンド 使用時：約W175"
+      "search_key": "洗濯物干し 折り畳み 室内 物干し スタンド 使用時：約W175",
+      "selected_variant": {
+        "colour_style": "ホワイト",
+        "count": 1
+      }
     }
   ]
 }

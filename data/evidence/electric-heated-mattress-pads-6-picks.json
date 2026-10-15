@@ -54,11 +54,11 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0FPM45PNJ",
-      "asin": "B0FPM45PNJ",
-      "amazon_title": "電気毛布 敷き 97×195cm シングル 固定バンド付き 頭寒足熱配線 丸洗い可能 4段階タイマー 5段階温度調節 ダニ退治 省エネ 過熱保護 防寒対策 暖房器具 チェック柄 クリスマス プレゼント 新年 ギフト",
-      "brand": "Gaberphoのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/71daPYkOyGL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0HCSW71R8",
+      "asin": "B0HCSW71R8",
+      "amazon_title": "パナソニック 電気毛布 布団暖房 温度自動調整 安心設計 丸洗いOK ダニ対策 約140×80cm DB-U13T-C",
+      "brand": "Panasonic",
+      "image_url": "https://m.media-amazon.com/images/I/614bwezltdL._AC_SL1500_.jpg",
       "observed_price": 3999,
       "discovery_score": 1,
       "selection_score": 1.035,
@@ -67,45 +67,67 @@
         "temperature_control",
         "washability"
       ],
-      "search_key": "Gaberpho 電気毛布 敷き 97×195cm シングル 固定バンド付き 頭寒"
+      "search_key": "Gaberpho 電気毛布 敷き 97×195cm シングル 固定バンド付き 頭寒",
+      "model": "Panasonic DB-U13T-C",
+      "selected_variant": {
+        "model": "DB-U13T-C",
+        "color": "ベージュ",
+        "size": "140×80cm",
+        "pack_count": 1
+      }
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0DGPL22VK",
-      "asin": "B0DGPL22VK",
-      "amazon_title": "フリーダン ホットカーペット 電気カーペット 2畳 168×168cm 正方形 省エネ 自動オフタイマー付き 暖房面切換 FRU201UH フリーダム",
-      "brand": "FREEDANのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/91ehJQ037wL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0FLCZYR7B",
+      "asin": "B0FLCZYR7B",
+      "amazon_title": "コイズミ 電気毛布 敷毛布 丸洗い可 頭寒足熱配線 ダニ退治 抗菌防臭 130×80cm KDS-40241",
+      "brand": "KOIZUMI",
+      "image_url": "https://m.media-amazon.com/images/I/716kkYXPWmL._AC_SL1500_.jpg",
       "observed_price": 6990,
       "discovery_score": 1,
       "selection_score": 0.495,
       "matched_comparison_axes": [
         "temperature_control"
       ],
-      "search_key": "FREEDAN フリーダン ホットカーペット 電気カーペット 2畳 168×16"
+      "search_key": "FREEDAN フリーダン ホットカーペット 電気カーペット 2畳 168×16",
+      "model": "KOIZUMI KDS-40241",
+      "selected_variant": {
+        "model": "KDS-40241",
+        "size": "130×80cm",
+        "model_year": 2024,
+        "pack_count": 1
+      }
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B09MQB6K5Q",
-      "asin": "B09MQB6K5Q",
-      "amazon_title": "ひな暖ぬくぬくセット （毛布＋敷きパッド） シングル グレー ひな暖 寝具 毛布 敷きパッド あったか 電気代不要",
-      "brand": "ダイレクトテレショップのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/517HmhaKPGL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B07YXWGLGJ",
+      "asin": "B07YXWGLGJ",
+      "amazon_title": "アイリスオーヤマ 電気毛布 敷き 洗える 140×80cm シングル スライド温度調整 EHB-F1480-DT ダークブラウン [並行輸入品]",
+      "brand": "アイリスオーヤマ",
+      "image_url": "https://m.media-amazon.com/images/I/61rMY2m9SNL._AC_SL1000_.jpg",
       "observed_price": 14168,
       "discovery_score": 1,
       "selection_score": 0.495,
       "matched_comparison_axes": [
         "size_compatibility"
       ],
-      "search_key": "ダイレクトテレショップ ひな暖ぬくぬくセット （毛布＋敷きパッド） シングル グレー ひ"
+      "search_key": "ダイレクトテレショップ ひな暖ぬくぬくセット （毛布＋敷きパッド） シングル グレー ひ",
+      "model": "IRIS OHYAMA EHB-F1480-DT",
+      "selected_variant": {
+        "model": "EHB-F1480-DT",
+        "size": "140×80cm",
+        "color": "ダークブラウン",
+        "style": "敷き",
+        "pack_count": 1
+      }
     },
     {
       "ref": "p4",
       "product_id": "AMZ-B0FHVYQR8H",
       "asin": "B0FHVYQR8H",
       "amazon_title": "[山善] 電気毛布 敷き 電気敷毛布 130×80cm シングル 洗える ダニ対策機能 温度調節機能 ホワイト×ベージュ YMS-18",
-      "brand": "山善(YAMAZEN)のストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/61vx-q41ArL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "brand": "山善",
+      "image_url": "https://m.media-amazon.com/images/I/61vx-q41ArL._AC_SL1500_.jpg",
       "observed_price": 3280,
       "discovery_score": 1,
       "selection_score": 0.445,
@@ -113,15 +135,22 @@
         "size_compatibility",
         "temperature_control"
       ],
-      "search_key": "山善(YAMAZEN) 電気毛布 敷き 電気敷毛布 130×80cm シングル 洗える"
+      "search_key": "山善(YAMAZEN) 電気毛布 敷き 電気敷毛布 130×80cm シングル 洗える",
+      "model": "山善 YMS-18",
+      "selected_variant": {
+        "model": "YMS-18",
+        "color": "ホワイト×ベージュ",
+        "size": "130×80cm",
+        "pack_count": 1
+      }
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0DG8H82H2",
-      "asin": "B0DG8H82H2",
-      "amazon_title": "AooDen 電気毛布 敷き 洗える 160×80cm 無段階温度調節 1-12時間タイマー 電気敷き毛布 シングル PSE認証済み (グレー)",
-      "brand": "AooDenのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/81XZMI74bQL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B005HMMBYE",
+      "asin": "B005HMMBYE",
+      "amazon_title": "Sugiyama(椙山紡織) 電気毛布 日本製 電気しき毛布 140×80cm 両面起毛仕上げ 表面ボーダー柄(裏面ホワイト) NA-023S",
+      "brand": "椙山紡織",
+      "image_url": "https://m.media-amazon.com/images/I/71ZrPYG4aKL._AC_SL1500_.jpg",
       "observed_price": 4980,
       "discovery_score": 1,
       "selection_score": 0.445,
@@ -129,22 +158,37 @@
         "size_compatibility",
         "temperature_control"
       ],
-      "search_key": "AooDen 電気毛布 敷き 洗える 160×80cm 無段階温度調節 1-1"
+      "search_key": "AooDen 電気毛布 敷き 洗える 160×80cm 無段階温度調節 1-1",
+      "model": "椙山紡織 NA-023S",
+      "selected_variant": {
+        "model": "NA-023S",
+        "color": "表面ボーダー柄/裏面ホワイト",
+        "size": "140×80cm",
+        "pack_count": 1
+      }
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0DFCGGY3B",
-      "asin": "B0DFCGGY3B",
-      "amazon_title": "電気毛布 敷き 掛け兼用 切り忘れ防止タイマー付き 電気敷き毛布 省エネ 55W 140×80cm 電気ブランケット 速暖 洗濯可能 AI過熱保護機能",
-      "brand": "MunzeYiのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/71VRbchtWDL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0B73MVCHD",
+      "asin": "B0B73MVCHD",
+      "amazon_title": "広電(KODEN) 電気毛布 敷き 130×80cm ブラウン 洗える 抗菌防臭 おやすみおはようタイマー 室温センサー 12hOFF スライド温度調節 ダニ退治 CWS403B-BG",
+      "brand": "広電",
+      "image_url": "https://m.media-amazon.com/images/I/71DNlGAW+8L._AC_SL1500_.jpg",
       "observed_price": 3999,
       "discovery_score": 1,
       "selection_score": 0.445,
       "matched_comparison_axes": [
         "temperature_control"
       ],
-      "search_key": "MunzeYi 電気毛布 敷き 掛け兼用 切り忘れ防止タイマー付き 電気敷き毛布"
+      "search_key": "MunzeYi 電気毛布 敷き 掛け兼用 切り忘れ防止タイマー付き 電気敷き毛布",
+      "model": "KODEN CWS403B-BG",
+      "selected_variant": {
+        "model": "CWS403B-BG",
+        "size": "130×80cm",
+        "color": "ブラウン",
+        "pack_count": 1,
+        "jan": "4516748029129"
+      }
     }
   ]
 }

@@ -43,91 +43,97 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0H5JLD1G2",
-      "asin": "B0H5JLD1G2",
-      "amazon_title": "フィニッシュ 食洗機 庫内パイプ 徹底洗浄ジェル 245mL 1本",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/81q7koRYuGL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0FZ43R2SL",
+      "asin": "B0FZ43R2SL",
+      "amazon_title": "フィニッシュウルトラタブレットL 50個",
+      "brand": "フィニッシュ",
+      "image_url": "https://m.media-amazon.com/images/I/51-vWuAZmCL._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.49,
       "matched_comparison_axes": [
         "type"
       ],
-      "search_key": "フィニッシュ 食洗機 庫内パイプ 徹底洗浄ジェル 245mL 1"
+      "search_key": "フィニッシュ 食洗機 庫内パイプ 徹底洗浄ジェル 245mL 1",
+      "selected_variant": "50個・単品"
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0GXXMHMZF",
-      "asin": "B0GXXMHMZF",
-      "amazon_title": "【セット品】フィニッシュ オールインワン プラス 食洗機専用タブレット洗剤 2点セット (食洗機専用洗剤30個入 ×3 + 粉末洗剤2回分 ×1)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71vDcpiRJkL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0CNKD9HB1",
+      "asin": "B0CNKD9HB1",
+      "amazon_title": "P&G ジョイ ジェルタブ 76個",
+      "brand": "P&G ジョイ",
+      "image_url": "https://m.media-amazon.com/images/I/61hbiAlbVAL._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
       "matched_comparison_axes": [
         "type"
       ],
-      "search_key": "フィニッシュ オールインワン プラス 食洗機専用タブレット洗剤"
+      "search_key": "フィニッシュ オールインワン プラス 食洗機専用タブレット洗剤",
+      "selected_variant": "76個・1袋"
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0GSW9JVFZ",
-      "asin": "B0GSW9JVFZ",
-      "amazon_title": "業務用食器洗浄機用洗剤 シャインスーパー 12.5kgタイプ [シャインスーパー 12.5kg]",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61ORiccLtAL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0CMT6ZJ2T",
+      "asin": "B0CMT6ZJ2T",
+      "amazon_title": "シャボン玉 食器洗い機専用 500g",
+      "brand": "シャボン玉石けん",
+      "image_url": "https://m.media-amazon.com/images/I/41ZCuO0NATL._SX342_SY445_QL70_ML2_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
       "matched_comparison_axes": [],
-      "search_key": "業務用食器洗浄機用洗剤 シャインスーパー 12.5kgタイプ"
+      "search_key": "業務用食器洗浄機用洗剤 シャインスーパー 12.5kgタイプ",
+      "selected_variant": "500g・粉末・無香料"
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0G42H66GL",
-      "asin": "B0G42H66GL",
-      "amazon_title": "【セット品】フィニッシュ オールインワン 食洗機用 + 食器洗い機 徹底洗浄中 2点セット (タブレット洗剤58個 ×3 + 粉末2回分 ×1)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71atSN4dWHL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0GKN7Y7SL",
+      "asin": "B0GKN7Y7SL",
+      "amazon_title": "CHARMY クリスタ クリアEXジェル 本体480g スイートオレンジの香り 食洗機用洗剤",
+      "brand": "ライオン CHARMY",
+      "image_url": "https://m.media-amazon.com/images/I/711UyERCYhL._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
       "matched_comparison_axes": [
         "type"
       ],
-      "search_key": "フィニッシュ オールインワン 食洗機用 + 食器洗い機 徹底洗浄"
+      "search_key": "フィニッシュ オールインワン 食洗機用 + 食器洗い機 徹底洗浄",
+      "selected_variant": "本体480g・スイートオレンジ"
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0FRGBXG41",
-      "asin": "B0FRGBXG41",
-      "amazon_title": "【世界No.1シェアブランド】フィニッシュ 【計量も空回しも不要】 食洗機 庫内強力洗浄剤 タブレット 3個入 約3か月分 クリーナー ニオイ・油汚れ除去 + 試供品付き(食洗機専用洗剤 ウルトラタブレット)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71e3csILDHL._AC_UL320_.jpg",
+      "product_id": "AMZ-B01DVT4KDY",
+      "asin": "B01DVT4KDY",
+      "amazon_title": "ecostore(エコストア) オートディッシュウォッシュ パウダー 【レモン】 2kg 食洗機洗剤 食洗機 粉末 洗剤",
+      "brand": "ecostore",
+      "image_url": "https://m.media-amazon.com/images/I/61TEuVRCF1L._AC_SX342_SY445_QL70_ML2_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
       "matched_comparison_axes": [
         "type"
       ],
-      "search_key": "フィニッシュ 食洗機 庫内強力洗浄剤 タブレット 3個入 約3か"
+      "search_key": "フィニッシュ 食洗機 庫内強力洗浄剤 タブレット 3個入 約3か",
+      "selected_variant": "レモン・2kg"
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0FP2DRWT5",
-      "asin": "B0FP2DRWT5",
-      "amazon_title": "キュキュット 【大容量】食器洗い乾燥機専用 クリア除菌 粉末タイプ オレンジオイル配合 つめかえ用 800ｇ",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/712duJ8KfGL._AC_UL320_.jpg",
+      "product_id": "AMZ-B07YP715FJ",
+      "asin": "B07YP715FJ",
+      "amazon_title": "sonett ソネット 食器用洗剤 ディッシュウォッシャー 食洗機用 パウダー 無香料 1.5kg 肌にやさしい 敏感肌 オーガニック 自然由来 SNN4023",
+      "brand": "sonett",
+      "image_url": "https://m.media-amazon.com/images/I/61fQEORUZiL._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
       "matched_comparison_axes": [
         "type"
       ],
-      "search_key": "キュキュット 食器洗い乾燥機専用 クリア除菌 粉末タイプ オレン"
+      "search_key": "キュキュット 食器洗い乾燥機専用 クリア除菌 粉末タイプ オレン",
+      "selected_variant": "1.5kg・無香料"
     }
   ]
 }

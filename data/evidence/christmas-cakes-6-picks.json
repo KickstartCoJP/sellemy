@@ -43,85 +43,132 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0FY5Y9LXH",
-      "asin": "B0FY5Y9LXH",
-      "amazon_title": "白桃チーズ＆チョコケーキセット 2種 4号 レアチーズ ベルギー チョコレート ケーキ 白桃 モモ もも ギフト プレゼント 贈り物 冷凍 記念日 クリスマス バレンタイン ホワイトデー 女子会 ティータイム 誕生日 冷凍食品 敬老の日 残暑見舞",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/712Ls1LjemL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0C9C9JLPH",
+      "asin": "B0C9C9JLPH",
+      "amazon_title": "ルタオ ガトーフレーズマスカルポーネ 4号",
+      "brand": "ルタオ",
+      "image_url": "https://m.media-amazon.com/images/I/61wy3ZP80sL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.53,
       "matched_comparison_axes": [
         "flavor"
       ],
-      "search_key": "白桃チーズ＆チョコケーキセット 2種 4号 レアチーズ ベルギー"
+      "search_key": "白桃チーズ＆チョコケーキセット 2種 4号 レアチーズ ベルギー",
+      "model": "ガトーフレーズマスカルポーネ",
+      "selected_variant": {
+        "model": "ガトーフレーズマスカルポーネ",
+        "size": "直径12cm・4号",
+        "quantity": 1,
+        "ornaments": "ロウソク・手提げ袋なし"
+      }
     },
     {
       "ref": "p2",
       "product_id": "AMZ-B0H9BZVX49",
       "asin": "B0H9BZVX49",
-      "amazon_title": "FAKEチーズケーキ ギフト 北海道 チーズケーキ お中元 誕生日 記念日 お取り寄せ スイーツ 人気 洋菓子 プレゼント 贈り物 お歳暮",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61by4We3boL._AC_UL320_.jpg",
+      "amazon_title": "FAKE フェイクチーズケーキ",
+      "brand": "FAKE",
+      "image_url": "https://m.media-amazon.com/images/I/61by4We3boL._AC_SL1280_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "FAKEチーズケーキ ギフト 北海道 チーズケーキ お中元 誕生"
+      "search_key": "FAKEチーズケーキ ギフト 北海道 チーズケーキ お中元 誕生",
+      "model": "FAKE フェイクチーズケーキ",
+      "selected_variant": {
+        "model": "FAKE フェイクチーズケーキ",
+        "pieces": 6,
+        "pack_count": 1
+      }
     },
     {
       "ref": "p3",
       "product_id": "AMZ-B0FL7SF8WW",
       "asin": "B0FL7SF8WW",
-      "amazon_title": "【ラニーチーズ】羽二重ベイクドチーズケーキ チーズケーキ RUNNY CHEESE 羽二重餅 ベイクドチーズ スイーツギフト",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61iuSDNzWlL._AC_UL320_.jpg",
+      "amazon_title": "ラニーチーズ 羽二重ベイクドチーズケーキ",
+      "brand": "RUNNY CHEESE",
+      "image_url": "https://m.media-amazon.com/images/I/61iuSDNzWlL._AC_SL1000_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "羽二重ベイクドチーズケーキ チーズケーキ RUNNY CHEES"
+      "search_key": "羽二重ベイクドチーズケーキ チーズケーキ RUNNY CHEES",
+      "model": "羽二重ベイクドチーズケーキ",
+      "selected_variant": {
+        "model": "羽二重ベイクドチーズケーキ",
+        "net_amount": "530g",
+        "pack_count": 1,
+        "configuration": "通常購入、ふるさと納税返礼品ではない"
+      }
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0DFHFK2CT",
-      "asin": "B0DFHFK2CT",
-      "amazon_title": "「銀座ブールミッシュ」監修 フレーズノエル お届け：12月24日 クリスマスケーキ 予約 2026",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/81BwbC1I6lL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0CN6FGMLV",
+      "asin": "B0CN6FGMLV",
+      "amazon_title": "菓匠もりん 苺モンブラン クリスマスピックセット",
+      "brand": "菓匠もりん",
+      "image_url": "https://m.media-amazon.com/images/I/71bMIpaER2L._AC_SL1000_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "「銀座ブールミッシュ」監修 フレーズノエル お届け：12月24日"
+      "search_key": "「銀座ブールミッシュ」監修 フレーズノエル お届け：12月24日",
+      "model": "ms-xmas-montblanc-ichigo",
+      "selected_variant": {
+        "model": "ms-xmas-montblanc-ichigo",
+        "quantity": 1,
+        "contents": "苺モンブラン1箱＋クリスマスピックセット",
+        "cake_size": "約115×105×40mm",
+        "box_size": "約150×140×50mm"
+      }
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0CKYYPKZ5",
-      "asin": "B0CKYYPKZ5",
-      "amazon_title": "天然生活 フルーツショートケーキ (5号 直径約15cm) パーティー ホールケーキ 洋菓子 スイーツ 誕生日ケーキ ギフト 手土産 冷凍",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61sZmLTTwEL._AC_UL320_.jpg",
+      "product_id": "AMZ-B01LY9OM5A",
+      "asin": "B01LY9OM5A",
+      "amazon_title": "銀座千疋屋 銀座ショコラブラウニー 5号 2026年12月24日お届け予約",
+      "brand": "銀座千疋屋",
+      "image_url": "https://m.media-amazon.com/images/I/716d4XGKmmL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [
         "flavor"
       ],
-      "search_key": "天然生活 フルーツショートケーキ (5号 直径約15cm) パー"
+      "search_key": "天然生活 フルーツショートケーキ (5号 直径約15cm) パー",
+      "model": "銀座ショコラブラウニー",
+      "selected_variant": {
+        "model": "銀座ショコラブラウニー",
+        "manufacturer_code": "PGS-492",
+        "size": "直径約15cm・5号",
+        "quantity": 1,
+        "ornaments": "柊・ロウソクなし",
+        "season": "2026 Christmas",
+        "advertised_delivery": "2026-12-24"
+      }
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0CKSVM6YW",
-      "asin": "B0CKSVM6YW",
-      "amazon_title": "「ホテルオークラ」キャラメルダブルナッツショコラ お届け：12月23日 クリスマスケーキ 予約 2026",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/81l4Eq7D7AL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0CLNRVVLC",
+      "asin": "B0CLNRVVLC",
+      "amazon_title": "カトル・フィユ シャルロット・フルール 2026クリスマス",
+      "brand": "カトル・フィユ",
+      "image_url": "https://m.media-amazon.com/images/I/71qzh4+I+SL._AC_SL1000_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "「ホテルオークラ」キャラメルダブルナッツショコラ お届け：12月"
+      "search_key": "「ホテルオークラ」キャラメルダブルナッツショコラ お届け：12月",
+      "model": "シャルロット・フルール",
+      "selected_variant": {
+        "model": "シャルロット・フルール",
+        "size": "約16.5×10×5.5cm",
+        "quantity": 1,
+        "contents": "ケーキ1台・ローソク付き",
+        "season": "2026 Christmas",
+        "advertised_delivery": "2026-12-20 through 2026-12-25"
+      }
     }
   ]
 }

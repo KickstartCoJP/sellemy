@@ -47,8 +47,8 @@
       "product_id": "AMZ-B0HC3CCY2B",
       "asin": "B0HC3CCY2B",
       "amazon_title": "加湿器 卓上 小型 【抗菌鋼板】 卓上加湿器 超音波式 LEDディスプレイ Type-C充電 2600mAhバッテリー 除菌 静音 7色ライト 白い",
-      "brand": "ブランド: TechGo",
-      "image_url": "https://m.media-amazon.com/images/I/51JcFudm1+L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "brand": "TechGo",
+      "image_url": "https://m.media-amazon.com/images/I/51JcFudm1+L._AC_SL1500_.jpg",
       "observed_price": 2399,
       "discovery_score": 1,
       "selection_score": 0.88,
@@ -56,80 +56,154 @@
         "maintenance",
         "noise_design"
       ],
-      "search_key": "TechGo 加湿器 卓上 小型 卓上加湿器 超音波式 LEDディスプレイ T"
+      "search_key": "TechGo 加湿器 卓上 小型 卓上加湿器 超音波式 LEDディスプレイ T",
+      "model": "TechGo 卓上超音波加湿器 250mL ホワイト",
+      "selected_variant": {
+        "colour": "ホワイト",
+        "capacity": "250mL",
+        "power": "Type-C充電",
+        "battery": "2600mAh",
+        "modes": [
+          "連続噴霧",
+          "間欠噴霧"
+        ],
+        "light": "7色"
+      }
     },
     {
       "ref": "p2",
       "product_id": "AMZ-B0HHN1B9QV",
       "asin": "B0HHN1B9QV",
       "amazon_title": "加湿器 小型 humidifier【2026年新型超音波霧化技術】卓上加湿器 300ML 超音波式 次亜塩素酸水対応 空焚き防止 抗菌加工 吸水芯×2",
-      "brand": "ブランド: Goldmax",
-      "image_url": "https://m.media-amazon.com/images/I/71U9T5lMiWL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "brand": "Goldmax",
+      "image_url": "https://m.media-amazon.com/images/I/71U9T5lMiWL._AC_SL1500_.jpg",
       "observed_price": 3580,
       "discovery_score": 1,
       "selection_score": 0.52,
       "matched_comparison_axes": [
         "maintenance"
       ],
-      "search_key": "Goldmax 加湿器 小型 humidifier 卓上加湿器 300ML 超音"
+      "search_key": "Goldmax 加湿器 小型 humidifier 卓上加湿器 300ML 超音",
+      "model": "Goldmax 卓上超音波加湿器 300mL 木目調",
+      "selected_variant": {
+        "colour": "木目調",
+        "capacity": "300mL",
+        "power": "USBケーブル給電",
+        "modes": [
+          "連続噴霧",
+          "間欠噴霧"
+        ],
+        "auto_stop": {
+          "continuous": "4時間",
+          "intermittent": "6時間"
+        },
+        "aroma": "非対応"
+      }
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0H1HH8GSK",
-      "asin": "B0H1HH8GSK",
-      "amazon_title": "Pharata 加湿器 小型卓上 2.5L大容量 上から給水 静音 アロマ対応 カラーLEDライト付き ライト消灯可能 超音波式",
-      "brand": "ブランド: Pharata",
-      "image_url": "https://m.media-amazon.com/images/I/41g1tZtj1PL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0B8M5TPF9",
+      "asin": "B0B8M5TPF9",
+      "amazon_title": "【2022年モデル】エレコム 加湿器 アロマディフューザー 卓上 エクリアミスト USB給電 抗菌 約80ml 超音波式 連続運転モード:最大7時間 銀系無機抗菌剤 SIAAマーク取得 丸型 アロマ拡張モード 揺らぎライトモード搭載 グレー HCE-HU2202UGY φ約112mm×高さ約103mm",
+      "brand": "エレコム",
+      "image_url": "https://m.media-amazon.com/images/I/41mlvP71twL._AC_SL1500_.jpg",
       "observed_price": 4280,
       "discovery_score": 1,
       "selection_score": 0.52,
       "matched_comparison_axes": [
         "noise_design"
       ],
-      "search_key": "Pharata 加湿器 小型卓上 2.5L大容量 上から給水 静音 アロマ対応"
+      "search_key": "Pharata 加湿器 小型卓上 2.5L大容量 上から給水 静音 アロマ対応",
+      "model": "HCE-HU2202UGY",
+      "selected_variant": {
+        "colour": "グレー",
+        "model": "HCE-HU2202UGY",
+        "capacity": "約80mL",
+        "power": "USB Micro-B給電",
+        "dimensions": "直径約112mm×高さ約103mm",
+        "continuous_runtime": "最大約7時間（満水時、使用環境により異なる）"
+      }
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0FPLKDLYQ",
-      "asin": "B0FPLKDLYQ",
-      "amazon_title": "【卓上型・透明タンク】Carepod 加湿器 J20 Mini Zero インテリア加湿器 超音波式 静音 最大加湿量 最大16時間 2.8L 大容量 省エネ コンパクト [振動子1+1]",
-      "brand": "Carepodのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/314jDwy-g9L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0DMYSPKQB",
+      "asin": "B0DMYSPKQB",
+      "amazon_title": "【YURAMEKI】暖炉型 アロマオイル対応 加湿器 たき火 アロマディフューザー 空焚き防止機能 USBType-C給電 (ホワイト)",
+      "brand": "NISYO",
+      "image_url": "https://m.media-amazon.com/images/I/61pgm9+ljqL._AC_SL1500_.jpg",
       "observed_price": 14000,
       "discovery_score": 1,
       "selection_score": 0.52,
       "matched_comparison_axes": [
         "noise_design"
       ],
-      "search_key": "Carepod 加湿器 J20 Mini Zero インテリア加湿器 超音波式"
+      "search_key": "Carepod 加湿器 J20 Mini Zero インテリア加湿器 超音波式",
+      "model": "NISYO YURAMEKI 暖炉型加湿器 ホワイト",
+      "selected_variant": {
+        "colour": "ホワイト",
+        "listing_size_label": "中",
+        "power": "USB Type-C給電",
+        "mist": "約20mL/h（商品説明値）",
+        "timer": [
+          "1時間",
+          "3時間",
+          "5時間"
+        ],
+        "capacity_claim": null,
+        "capacity_note": "対象資料に確定容量がなく、記事では容量の数値を使用しない。旧2.8Lの別製品値は撤回。"
+      }
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0FPGCXYV5",
-      "asin": "B0FPGCXYV5",
-      "amazon_title": "QUADS(クワッズ) ガラススチーム加湿器 ポット式 2.6L 17畳対応 加湿650ml/h 上部給水 デザイン加湿器 (グレー)",
-      "brand": "QUADS(クワッズ)のストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/71+U+u6PE+L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0DF2D9V9N",
+      "asin": "B0DF2D9V9N",
+      "amazon_title": "CAWKAY 加湿器 2本セット 超音波式 卓上 ペットボトル コップ ミスト 乾燥対策 保湿 静音 スティックタイプ (加湿器2本セット)",
+      "brand": "CAWKAY",
+      "image_url": "https://m.media-amazon.com/images/I/51tAAgZaQnL._AC_SL1500_.jpg",
       "observed_price": 19800,
       "discovery_score": 1,
       "selection_score": 0.52,
       "matched_comparison_axes": [],
-      "search_key": "QUADS(クワッズ) ガラススチーム加湿器 ポット式 2.6L 17畳対応 加湿650"
+      "search_key": "QUADS(クワッズ) ガラススチーム加湿器 ポット式 2.6L 17畳対応 加湿650",
+      "model": "CAWKAY スティック加湿器 2本セット",
+      "selected_variant": {
+        "pack": "加湿器2本セット",
+        "power": "USB給電",
+        "type": "超音波式スティック型",
+        "water_container": "コップ／ペットボトルを利用",
+        "capacity_note": "外部容器方式のため固定タンク容量として扱わない。",
+        "variant_field_note": "captured selectedColor is a pack label, not a colour."
+      }
     },
     {
       "ref": "p6",
       "product_id": "AMZ-B0FLWB3J83",
       "asin": "B0FLWB3J83",
       "amazon_title": "CAWKAY 砲弾式ミスト 加湿器 砲台型 USB給電式 保湿 卓上 小型 乾燥対策 静音 アロマセラピー インテリア リビング 寝室 (ブラック)",
-      "brand": "ブランド: CAWKAY",
-      "image_url": "https://m.media-amazon.com/images/I/61867ZBzjmL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "brand": "CAWKAY",
+      "image_url": "https://m.media-amazon.com/images/I/61867ZBzjmL._AC_SL1500_.jpg",
       "observed_price": 3660,
       "discovery_score": 1,
       "selection_score": 0.52,
       "matched_comparison_axes": [
         "noise_design"
       ],
-      "search_key": "CAWKAY 砲弾式ミスト 加湿器 砲台型 USB給電式 保湿 卓上 小型 乾"
+      "search_key": "CAWKAY 砲弾式ミスト 加湿器 砲台型 USB給電式 保湿 卓上 小型 乾",
+      "model": "CAWKAY 砲台型ミスト加湿器 ブラック",
+      "selected_variant": {
+        "colour": "ブラック",
+        "capacity": "約300mL",
+        "power": "USB給電",
+        "modes": [
+          "放出タイプ",
+          "拡散タイプ"
+        ],
+        "timer": [
+          "1時間",
+          "3時間",
+          "5時間"
+        ]
+      }
     }
   ]
 }

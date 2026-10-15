@@ -39,26 +39,28 @@
   "eyecatch_image": "https://www.sellemy.jp/img/home-oxidative-gray-hair-dyes/home-oxidative-gray-hair-dyes.png",
   "products": [
     {
-      "amazon_title": "ブローネダイレクトクリームショット 医薬部外品",
-      "asin": "B0HDZ426CT",
-      "brand": "",
+      "amazon_title": "【Amazon.co.jp限定】ブローネ 泡カラー 7 黒みのダークブラウン [医薬部外品] ×2個 +トリートメントサンプル",
+      "asin": "B0D9WZLK7Y",
+      "brand": "花王 ブローネ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71FgHRGF+3L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71yvGCvoo9L._AC_SY300_SX300_QL70_ML2_.jpg",
       "matched_comparison_axes": [
         "formula_and_mixing"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0HDZ426CT",
+      "product_id": "AMZ-B0D9WZLK7Y",
       "ref": "p1",
       "search_key": "ブローネダイレクトクリームショット 医薬部外品",
-      "selection_score": 0.49
+      "selection_score": 0.49,
+      "model": "花王 ブローネ 泡カラー 7",
+      "selected_variant": "7 黒みのダークブラウン・2個＋トリートメントサンプル"
     },
     {
       "amazon_title": "Wella ウエラトーン 2+1 白髪染め クリームタイプ 6CG やや明るいグレージュブラウン 鮮やかな髪色6週間続く 医薬部外品",
       "asin": "B0H3YKVZCT",
-      "brand": "",
+      "brand": "ウエラトーン",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71+AD94V6AL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71+AD94V6AL._AC_SY300_SX300_QL70_ML2_.jpg",
       "matched_comparison_axes": [
         "formula_and_mixing"
       ],
@@ -66,29 +68,33 @@
       "product_id": "AMZ-B0H3YKVZCT",
       "ref": "p2",
       "search_key": "Wella ウエラトーン 2+1 白髪染め クリームタイプ 6C",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "model": "Wella ウエラトーン2+1 クリームタイプ 6CG",
+      "selected_variant": "6CG・1箱・A剤60g/B剤60g/エッセンス7.3mL"
     },
     {
       "amazon_title": "サロンドプロ 白髪染め 泡のヘアカラー EX メンズスピーディ 6A 深みのあるアッシュブラウン [医薬部外品]",
-      "asin": "B0FP15N9RQ",
-      "brand": "",
+      "asin": "B09RF6PTRS",
+      "brand": "サロン ド プロ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61NavN26gIL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71YpSFVBEdL._AC_SY300_SX300_QL70_ML2_.jpg",
       "matched_comparison_axes": [
         "formula_and_mixing"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0FP15N9RQ",
+      "product_id": "AMZ-B09RF6PTRS",
       "ref": "p3",
       "search_key": "サロンドプロ 白髪染め 泡のヘアカラー EX メンズスピーディ",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "model": "サロン ド プロ 泡のヘアカラーEX メンズスピーディ 6A",
+      "selected_variant": "6A 深みのあるアッシュブラウン・1剤40g＋2剤40g"
     },
     {
       "amazon_title": "サイオス クレイクリーム ヘアカラー 4A アッシュブラウン 白髪染め クリームタイプ きれいな髪色8週間続く [医薬部外品]",
       "asin": "B0DT58SHB3",
-      "brand": "",
+      "brand": "サイオス",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71lwlOpuafL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71lwlOpuafL._AC_SY300_SX300_QL70_ML2_.jpg",
       "matched_comparison_axes": [
         "formula_and_mixing"
       ],
@@ -96,14 +102,16 @@
       "product_id": "AMZ-B0DT58SHB3",
       "ref": "p4",
       "search_key": "サイオス クレイクリーム ヘアカラー 4A アッシュブラウン 白",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "model": "サイオス クレイクリーム 4A",
+      "selected_variant": "4A アッシュブラウン・1箱"
     },
     {
       "amazon_title": "【白髪染め レディース】ビゲン泡クリームカラー5Aダークアッシュ",
       "asin": "B0DG8M62RH",
-      "brand": "",
+      "brand": "ビゲン",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71kTTjpiD4L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71kTTjpiD4L._AC_SY300_SX300_QL70_ML2_.jpg",
       "matched_comparison_axes": [
         "formula_and_mixing"
       ],
@@ -111,22 +119,26 @@
       "product_id": "AMZ-B0DG8M62RH",
       "ref": "p5",
       "search_key": "ビゲン泡クリームカラー5Aダークアッシュ",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "model": "ビゲン 泡クリームカラー 5A",
+      "selected_variant": "5A ダークアッシュ・1箱"
     },
     {
-      "amazon_title": "【白髪染め レディース】ビゲン泡クリームカラー3Bキャメルブラウン",
-      "asin": "B0DG8LMFMC",
-      "brand": "",
+      "amazon_title": "【白髪染め】シエロ ヘアカラーEX ミルキー 5（2個+おまけ）［医薬部外品］ ホーユー",
+      "asin": "B0DFLJ6MN8",
+      "brand": "シエロ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71UWSUFMuAL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71Kq3l4DXAL._AC_SY300_SX300_QL70_ML2_.jpg",
       "matched_comparison_axes": [
         "formula_and_mixing"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0DG8LMFMC",
+      "product_id": "AMZ-B0DFLJ6MN8",
       "ref": "p6",
       "search_key": "ビゲン泡クリームカラー3Bキャメルブラウン",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "model": "シエロ ヘアカラーEX ミルキー 5",
+      "selected_variant": "5 ブラウン・2個＋おまけ"
     }
   ],
   "selection": {

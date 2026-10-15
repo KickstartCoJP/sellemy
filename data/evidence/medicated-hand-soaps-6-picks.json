@@ -48,8 +48,8 @@
       "product_id": "AMZ-B0H7WHZKQX",
       "asin": "B0H7WHZKQX",
       "amazon_title": "【LDKベストバイ受賞】【医薬部外品】ハンドソープ 泡 ミューズ オリジナルの香り （本体250ml＋詰め替え700ml×2個）殺菌 消毒 手洗い",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/717UpjObKKL._AC_UL320_.jpg",
+      "brand": "ミューズ",
+      "image_url": "https://m.media-amazon.com/images/I/717UpjObKKL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.89,
@@ -58,15 +58,17 @@
         "texture",
         "value"
       ],
-      "search_key": "ハンドソープ 泡 ミューズ オリジナルの香り （本体250ml＋"
+      "search_key": "ハンドソープ 泡 ミューズ オリジナルの香り （本体250ml＋",
+      "model": "ミューズ 泡ハンドソープ オリジナル",
+      "selected_variant": "本体250mL1本＋詰替700mL2個"
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0H7WP7PGV",
-      "asin": "B0H7WP7PGV",
-      "amazon_title": "【医薬部外品】ハンドソープ 泡 ミューズ フルーティフレッシュ （本体250ml＋詰め替え700ml×2個）殺菌 消毒 除菌",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61Gw6N5yQuL._AC_UL320_.jpg",
+      "product_id": "AMZ-B00HIRLEKS",
+      "asin": "B00HIRLEKS",
+      "amazon_title": "キレイキレイ 薬用泡ハンドソープ フローラルソープの香り ポンプ 250mL ×2セット",
+      "brand": "キレイキレイ",
+      "image_url": "https://m.media-amazon.com/images/I/41HJK-G1a8L._AC_PIbundle-2,TopRight,0,0_SH20_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
@@ -74,43 +76,49 @@
         "efficacy",
         "value"
       ],
-      "search_key": "ハンドソープ 泡 ミューズ フルーティフレッシュ （本体250m"
+      "search_key": "ハンドソープ 泡 ミューズ フルーティフレッシュ （本体250m",
+      "model": "ライオン キレイキレイ 薬用泡ハンドソープ",
+      "selected_variant": "フローラルソープの香り、250mLポンプ本体×2本"
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0GNPYN21T",
-      "asin": "B0GNPYN21T",
-      "amazon_title": "サラヤ オートソープディスペンサー ホワイト コンパクトサイズ 300ml ノータッチ ハンドソープ 自動泡出 吐出量調節 丸洗い 複数薬液 詰替 可能 IPX6 高防水",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61LnORmwM7L._AC_UL320_.jpg",
+      "product_id": "AMZ-B0DZBV8JQ3",
+      "asin": "B0DZBV8JQ3",
+      "amazon_title": "ビオレu 泡スタンプハンドソープ 本体 にくきゅう 240ml ハンドソープ [医薬部外品]",
+      "brand": "ビオレu",
+      "image_url": "https://m.media-amazon.com/images/I/61LmrwK+bRL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "サラヤ オートソープディスペンサー ホワイト コンパクトサイズ"
+      "search_key": "サラヤ オートソープディスペンサー ホワイト コンパクトサイズ",
+      "model": "花王 ビオレu 泡スタンプハンドソープ にくきゅう",
+      "selected_variant": "240mL本体1本、マイルドシトラスの香り"
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0G5G6CBPN",
-      "asin": "B0G5G6CBPN",
-      "amazon_title": "東京サラヤ ハンドラボ 薬用泡ハンドソープ (× 2)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61eiF2qRghL._AC_UL320_.jpg",
+      "product_id": "AMZ-B004F9PJL2",
+      "asin": "B004F9PJL2",
+      "amazon_title": "キュレル 泡ハンドウォッシュ つめかえ用 450ml",
+      "brand": "キュレル",
+      "image_url": "https://m.media-amazon.com/images/I/61U1zNW3x9L._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [
         "efficacy"
       ],
-      "search_key": "東京サラヤ ハンドラボ 薬用泡ハンドソープ (× 2)"
+      "search_key": "東京サラヤ ハンドラボ 薬用泡ハンドソープ (× 2)",
+      "model": "花王 キュレル 泡ハンドウォッシュ（CurélハンドウォッシュB）",
+      "selected_variant": "450mLつめかえ用1本、ポンプ本体なし、無香料"
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0DJBL9F4Y",
-      "asin": "B0DJBL9F4Y",
-      "amazon_title": "ミュ-ズ ミューズ Muse 泡 ハンドソープ ボタニカル ホワイト (ホワイトリリー&ベルガモットの香り) 本体 250mL + 詰め替え 700mL × 2個 殺菌 消毒",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61QpbvLtrZL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0BWYNNBYT",
+      "asin": "B0BWYNNBYT",
+      "amazon_title": "東京サラヤ シャボネット ササッとすすぎ 泡手洗いせっけん 本体大型500ml",
+      "brand": "シャボネット",
+      "image_url": "https://m.media-amazon.com/images/I/51bCVGnOlbL._AC_SL1200_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
@@ -118,15 +126,17 @@
         "texture",
         "value"
       ],
-      "search_key": "ミュ-ズ ミューズ Muse 泡 ハンドソープ ボタニカル ホワ"
+      "search_key": "ミュ-ズ ミューズ Muse 泡 ハンドソープ ボタニカル ホワ",
+      "model": "サラヤ シャボネット ササッとすすぎ 泡手洗いせっけん",
+      "selected_variant": "500mL大型ポンプ本体1本"
     },
     {
       "ref": "p6",
       "product_id": "AMZ-B0D911DJWL",
       "asin": "B0D911DJWL",
       "amazon_title": "サラヤ ウォシュボン ハーバル薬用ハンドソープ 本体１個＋詰め替え1個セット おまけ付き",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61Kp9PVMzzL._AC_UL320_.jpg",
+      "brand": "ウォシュボン",
+      "image_url": "https://m.media-amazon.com/images/I/61Kp9PVMzzL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
@@ -134,7 +144,9 @@
         "efficacy",
         "value"
       ],
-      "search_key": "サラヤ ウォシュボン ハーバル薬用ハンドソープ 本体１個＋詰め替"
+      "search_key": "サラヤ ウォシュボン ハーバル薬用ハンドソープ 本体１個＋詰め替",
+      "model": "サラヤ ウォシュボン ハーバル薬用ハンドソープ",
+      "selected_variant": "イランイラン＆ラベンダー、本体310mL1本＋詰替500mL1個＋おまけ（内容未記載）"
     }
   ]
 }

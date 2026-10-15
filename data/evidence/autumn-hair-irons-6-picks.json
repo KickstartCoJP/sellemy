@@ -65,11 +65,11 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B01M8PCIEW",
-      "asin": "B01M8PCIEW",
-      "amazon_title": "Areti アレティ ヘアアイロン 20mm ピュアセラミック イノベーションモデル 急速加熱 ストレート カール 2way 前髪 メンズにも 24段階の温度調整 海外対応 i679PCPH-WH",
-      "brand": "Areti（アレティ）のストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/61MDkQQZ6zL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0GHQG4QTT",
+      "asin": "B0GHQG4QTT",
+      "amazon_title": "“ ヘアアイロン は アレティ ” 送風機能 ヘアセット瞬間固定 ストレート カール 2way 火傷防止設計 24mm セラミックコーティング 360度回転コード エアーアイロン 冷マジック ReiMagic Areti-i2686WH",
+      "brand": "Areti",
+      "image_url": "https://m.media-amazon.com/images/I/61nNWy9xjiL._AC_SL1500_.jpg",
       "observed_price": 10490,
       "discovery_score": 1,
       "selection_score": 0.88,
@@ -77,80 +77,170 @@
         "plate_material",
         "versatility"
       ],
-      "search_key": "Areti（アレティ） Areti アレティ ヘアアイロン 20mm ピュアセラミック"
+      "search_key": "Areti（アレティ） Areti アレティ ヘアアイロン 20mm ピュアセラミック",
+      "model": "Areti 冷マジック i2686WH 24mm ホワイト",
+      "selected_variant": {
+        "model_number": "i2686WH",
+        "color": "ホワイト",
+        "plate_width": "24mm",
+        "pack_count": 1
+      }
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0H93RDZR1",
-      "asin": "B0H93RDZR1",
-      "amazon_title": "カールヘアアイロン 32mm コテ ヘアアイロン ツヤシャインプレート 巻き髪 カール 耐熱ポーチ付き ストレート 海外対応",
-      "brand": "UR.SALONのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/71fWi0kUSvL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0CPYKGKBH",
+      "asin": "B0CPYKGKBH",
+      "amazon_title": "SALONIA サロニア ストレートアイロン 24mm ブラック 【Amazon.co.jp限定】",
+      "brand": "SALONIA",
+      "image_url": "https://m.media-amazon.com/images/I/51MKe3VLkPL._AC_SL1500_.jpg",
       "observed_price": 11996,
       "discovery_score": 1,
       "selection_score": 0.52,
       "matched_comparison_axes": [
         "versatility"
       ],
-      "search_key": "UR.SALON カールヘアアイロン 32mm コテ ヘアアイロン ツヤシャインプ"
+      "search_key": "UR.SALON カールヘアアイロン 32mm コテ ヘアアイロン ツヤシャインプ",
+      "model": "SALONIA SL-004SAB 24mm ブラック Amazon限定",
+      "selected_variant": {
+        "model_number": "SL-004SAB",
+        "color": "ブラック",
+        "plate_width": "24mm",
+        "pack_count": 1,
+        "package": "Amazon.co.jp限定単品"
+      }
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0GXVN3MZF",
-      "asin": "B0GXVN3MZF",
-      "amazon_title": "【サロン帰りのツヤ髪へ】ヤーマン 超音波アイロン トリートメントアイロン シャインプロ ダメージケア トリートメント 浸透 ヘアケア HC21GAM2 グレージュ ステッカー付【Amazon.co.jp限定】",
-      "brand": "ヤーマン(Ya-man)のストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/41vkM+gUYYL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0F3J5K7GL",
+      "asin": "B0F3J5K7GL",
+      "amazon_title": "パナソニック ストレートヘアアイロン 高浸透ナノイー&ミネラル搭載 スムースシルキープレート EH-HN50-W ウォームホワイト【2025年発売】",
+      "brand": "パナソニック",
+      "image_url": "https://m.media-amazon.com/images/I/41+OFvYbQHL._AC_SL1080_.jpg",
       "observed_price": 27500,
       "discovery_score": 1,
       "selection_score": 0.52,
       "matched_comparison_axes": [],
-      "search_key": "ヤーマン(Ya-man) ヤーマン 超音波アイロン トリートメントアイロン シャインプロ"
+      "search_key": "ヤーマン(Ya-man) ヤーマン 超音波アイロン トリートメントアイロン シャインプロ",
+      "model": "パナソニック EH-HN50-W ウォームホワイト",
+      "selected_variant": {
+        "current_selection_text": "",
+        "overview": "商品特長 高浸透ナノイー＆ミネラル（★ミネラルとは､亜鉛電極を含む放電ユニットから発生されるミネラルマイナスイオンです｡★）搭載。 形状 ストレート ブランド パナソニック(Panasonic) 材質 金属 色 ウォームホワイト モデル名 ストレートアイロン ナノケア 商品の重量 430 グラム 電源 電源コード式 最大温度設定 200.0 ヒーター表面素材 金属 表示を増やす",
+        "selected_detail_fields": [
+          {
+            "field": "色",
+            "value": "色 ウォームホワイト"
+          },
+          {
+            "field": "本体サイズ",
+            "value": "本体サイズ 高さ28.7×幅6.0×奥行3.6 cm（閉じた時） 高さ26.7×幅3.15×奥行4.2㎝（閉じた時） 高さ28.7×幅3.3×奥行4.5㎝（閉じた時） 高さ25.8×幅7.7×奥行5.1㎝ 高さ24.2×幅3×奥行3.7㎝ 高さ25.7×幅4.5×奥行4.3 cm"
+          },
+          {
+            "field": "ユニット数",
+            "value": "ユニット数 1.0 個"
+          }
+        ]
+      }
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0G5WRNQQY",
-      "asin": "B0G5WRNQQY",
-      "amazon_title": "【うねりに負けない圧倒的ストレート髪へ】AURA ストレート ヘアアイロン プロ仕様 24mm カシミヤプレート搭載 18段階温度調整 220℃まで30秒 カラー褐色 パサつき 静電気 抑制 コード長さ2.5m ホワイト",
-      "brand": "ブランド: AURA THE ONE",
-      "image_url": "https://m.media-amazon.com/images/I/61MH7bCgWQL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0FQ4TTDYZ",
+      "asin": "B0FQ4TTDYZ",
+      "amazon_title": "【公式ストア限定】リファストレートアイロン プロ/ReFa STRAIGHT IRON PRO（ホワイト）ヘアアレンジガイドブック・ショッパー付き",
+      "brand": "ReFa",
+      "image_url": "https://m.media-amazon.com/images/I/51G1CiTQ4YL._AC_SL1500_.jpg",
       "observed_price": 27500,
       "discovery_score": 1,
       "selection_score": 0.52,
       "matched_comparison_axes": [
         "versatility"
       ],
-      "search_key": "AURA THE ONE AURA ストレート ヘアアイロン プロ仕様 24mm カシミヤ"
+      "search_key": "AURA THE ONE AURA ストレート ヘアアイロン プロ仕様 24mm カシミヤ",
+      "model": "ReFa ストレートアイロンプロ ホワイト ガイドブック・ショッパー付き",
+      "selected_variant": {
+        "current_selection_text": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. 色: ホワイト 色の選択ができます 利用可能なオプションを表示 おすすめ出品がない0オプションを見る ← 1 → サイズ: プロ サイズの選択ができます コードレス ワイド プロ ◆新モデル◆ミニ プロ+",
+        "overview": "商品特長 ストレート矯正 ブランド リファ(ReFa) 色 ホワイト サイズ プロ 商品の寸法 26.9長さ x 3.9幅 cm ユニット数 1.0 セット メーカー 株式会社MTG（日本）",
+        "selected_detail_fields": [
+          {
+            "field": "色",
+            "value": "色 ホワイト"
+          },
+          {
+            "field": "サイズ",
+            "value": "サイズ プロ"
+          },
+          {
+            "field": "ユニット数",
+            "value": "ユニット数 1.0 セット"
+          },
+          {
+            "field": "サイズ/容量",
+            "value": "サイズ/容量 約269mm×39mm×29mm 約269mm×39mm×29mm 約281mm×50mm×39mm 約334mm×71mm×45mm(Ø32) 約191mm×37mm×29mm 約191mm×37mm×29mm 約440mm×150mm×20mm"
+          },
+          {
+            "field": "カラー",
+            "value": "カラー 7色 シャンパングレージュ ホワイト、ブラック、アイボリー シャンパングレージュ 7色 シャンパンゴールド、シルキーピンク、ダークシルバー シルバー"
+          },
+          {
+            "field": "ユニット数",
+            "value": "ユニット数 1.0 セット"
+          },
+          {
+            "field": "サイズ",
+            "value": "サイズ プロ"
+          }
+        ]
+      }
     },
     {
       "ref": "p5",
       "product_id": "AMZ-B0FGDGJSDT",
       "asin": "B0FGDGJSDT",
       "amazon_title": "【公式EC限定＋1年延長保証付き】KINUJO ストレート ヘアアイロン 絹女 キヌージョ シルクプレート® LM225 ヘアケア スタイリング デジタル温度表記 オートオフ 高速温度上昇 お手入れ簡単",
-      "brand": "KINUJOのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/51neKELxadL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "brand": "KINUJO",
+      "image_url": "https://m.media-amazon.com/images/I/51neKELxadL._AC_SL1500_.jpg",
       "observed_price": 24200,
       "discovery_score": 1,
       "selection_score": 0.52,
       "matched_comparison_axes": [
         "versatility"
       ],
-      "search_key": "KINUJO ストレート ヘアアイロン 絹女 キヌージョ シルクプレート® L"
+      "search_key": "KINUJO ストレート ヘアアイロン 絹女 キヌージョ シルクプレート® L",
+      "model": "KINUJO LM225 EC限定ガイドブック付き",
+      "selected_variant": {
+        "model_number": "LM225",
+        "package": "EC限定ガイドブック付き",
+        "pack_count": 1
+      }
     },
     {
       "ref": "p6",
       "product_id": "AMZ-B0D9YCNLQ7",
       "asin": "B0D9YCNLQ7",
       "amazon_title": "ケアレクト スムースケアアイロン 25mm by pluseau プリュスオー ストレートアイロン ローズミスト 耐熱ポーチ付",
-      "brand": "carelectのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/615fsiidQsL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "brand": "carelect",
+      "image_url": "https://m.media-amazon.com/images/I/615fsiidQsL._AC_SL1500_.jpg",
       "observed_price": 17600,
       "discovery_score": 1,
       "selection_score": 0.52,
       "matched_comparison_axes": [
         "versatility"
       ],
-      "search_key": "carelect ケアレクト スムースケアアイロン 25mm by pluseau"
+      "search_key": "carelect ケアレクト スムースケアアイロン 25mm by pluseau",
+      "model": "carelect CR-S01P ローズミスト 耐熱ポーチ付",
+      "selected_variant": {
+        "current_selection_text": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. 色: ローズミスト 色の選択ができます おすすめ出品がない0オプションを見る ← 1 →",
+        "overview": "商品特長 ヘアスタイリング 形状 ストレート ブランド carelect 材質 トルマリン 色 ローズミスト 商品の重量 325 グラム 電源 電源コード式 最大温度設定 220 摂氏 ヒーター表面素材 トルマリン 商品の寸法 27長さ x 3幅 cm 表示を増やす",
+        "selected_detail_fields": [
+          {
+            "field": "色",
+            "value": "色 ローズミスト"
+          },
+          {
+            "field": "ユニット数",
+            "value": "ユニット数 1 個"
+          }
+        ]
+      }
     }
   ]
 }

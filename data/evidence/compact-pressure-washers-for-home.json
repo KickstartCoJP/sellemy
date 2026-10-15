@@ -44,11 +44,11 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0HCK2148L",
-      "asin": "B0HCK2148L",
-      "amazon_title": "【2026新登場強化版】高圧洗浄機 コードレス 充電式 バッテリー式 洗車機 1300mAhx10本 マキタ互換バッテリー 残量表示 洗車店監修 750W 軽量 小型 自吸式 噴射距離10M 洗車 家庭用 2段階 6in1ノズル 水道接続不要 収納ケー付き 持ち運び便利 庭/屋外/階段/ガラス/ブロック塀/玄関/ベランダ/浴室/年末大掃除/キャンプ 日本語取扱説明書 黄色",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71XOq61M71L._AC_UL320_.jpg",
+      "product_id": "AMZ-B08L6KPL3X",
+      "asin": "B08L6KPL3X",
+      "amazon_title": "K MINI 1.600-050.0",
+      "brand": "ケルヒャー",
+      "image_url": "https://m.media-amazon.com/images/I/51RvxxQOaTL._AC_SL1000_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.67,
@@ -56,41 +56,60 @@
         "power",
         "setup"
       ],
-      "search_key": "高圧洗浄機 コードレス 充電式 バッテリー式 洗車機 1300m"
+      "search_key": "高圧洗浄機 コードレス 充電式 バッテリー式 洗車機 1300m",
+      "model": "K MINI 1.600-050.0",
+      "selected_variant": {
+        "model": "K MINI 1.600-050.0",
+        "pack_count": 1
+      }
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0HH8KFCK3",
-      "asin": "B0HH8KFCK3",
-      "amazon_title": "コードレス高圧洗浄機 超ミニ 充電式 Immpoest 2026新登場【洗車店プロ監修・8MPa超強水圧・23000r/min】ポータブル ハンディ 軽量小型 洗車機 BMS高性能電池 【ドイツ レッド•ドット賞受賞ブランド】自吸式 低騒音 噴射距離8M 折畳バケツ/ホース付き 持ち運び便利 家庭用/ガラス/ブロック塀/ベランダ/浴室大掃除/戸外用 黄色い",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61kMHyaBNXL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0DJSDCK39",
+      "asin": "B0DJSDCK39",
+      "amazon_title": "AC高圧洗浄機 ZHPA-129(BG)",
+      "brand": "山善",
+      "image_url": "https://m.media-amazon.com/images/I/61GDsZ3DpJL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
       "matched_comparison_axes": [],
-      "search_key": "コードレス高圧洗浄機 超ミニ 充電式 Immpoest 2026"
+      "search_key": "コードレス高圧洗浄機 超ミニ 充電式 Immpoest 2026",
+      "model": "ZHPA-129(BG)",
+      "selected_variant": {
+        "model": "ZHPA-129(BG)",
+        "pack_count": 1,
+        "colour": "ベージュ"
+      }
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0HDTGYJG5",
-      "asin": "B0HDTGYJG5",
-      "amazon_title": "コードレス高圧洗浄機 充電式 折畳式 超ミニ Berriot 2026新登場【洗車店プロ監修・8MPa超強水圧・23000r/min】ポータブル ハンディ 軽量小型 洗車機 3段階水圧調整 70分間連続使用 BMS高性能電池 【ドイツ レッド•ドット賞受賞ブランド】自吸式 低騒音 噴射距離10M 折畳バケツ/ホース付き 持ち運び便利 家庭用/ガラス/ブロック塀/ベランダ/浴室大掃除/戸外用 黒色",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61ZSqeKjhJL._AC_UL320_.jpg",
+      "product_id": "AMZ-B006LEWEEO",
+      "asin": "B006LEWEEO",
+      "amazon_title": "アイリスオーヤマ FBN-401",
+      "brand": "アイリスオーヤマ",
+      "image_url": "https://m.media-amazon.com/images/I/61xcLM6vIVL._AC_SL1000_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
       "matched_comparison_axes": [],
-      "search_key": "コードレス高圧洗浄機 充電式 折畳式 超ミニ Berriot 2"
+      "search_key": "コードレス高圧洗浄機 充電式 折畳式 超ミニ Berriot 2",
+      "model": "アイリスオーヤマ FBN-401",
+      "selected_variant": {
+        "model": "FBN-401",
+        "set": "デラックスセット",
+        "color": "ホワイト・イエロー",
+        "power": "AC100V 50/60Hz",
+        "pack_count": 1
+      }
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0H6Z7XVS4",
-      "asin": "B0H6Z7XVS4",
-      "amazon_title": "高圧洗浄機【2026 革新型・折りたたみ式 】10MPa強力噴射 コードレス 小型自吸式 USB-C充電式 多機能5in1ノズル 残量表示 洗車機 ハンディ 軽量 水圧調整 折りたたみバケツ付き 水道接続不要 低騒音 女性や高齢者 初心者向け コンパクト収納 持ち運び便利 洗車 庭 ベランダ 網戸 玄関 浴室大掃除/戸外用 日本語取扱説明書",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71ip4KqD7wL._AC_UL320_.jpg",
+      "product_id": "AMZ-B07PLR6S98",
+      "asin": "B07PLR6S98",
+      "amazon_title": "BOSCH EA110",
+      "brand": "ボッシュ",
+      "image_url": "https://m.media-amazon.com/images/I/61fDakEjqsL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
@@ -98,37 +117,51 @@
         "power",
         "setup"
       ],
-      "search_key": "高圧洗浄機 10MPa強力噴射 コードレス 小型自吸式 USB-"
+      "search_key": "高圧洗浄機 10MPa強力噴射 コードレス 小型自吸式 USB-",
+      "model": "BOSCH EA110",
+      "selected_variant": {
+        "power": "AC100V"
+      }
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0H3TVMHYX",
-      "asin": "B0H3TVMHYX",
-      "amazon_title": "高圧洗浄機 コードレス 充電式 小型軽量【最大9MPa強力噴射・自吸式給水対応】ハンディ高圧洗浄機 5in1多機能ノズル搭載 水道・コンセント不要 洗車 ベランダ 外壁 網戸 玄関 階段 ガーデニング用品の洗浄に対応 静音設計 コンパクト収納 収納ケース・日本語説明書付き",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71hLBcmICML._AC_UL320_.jpg",
+      "product_id": "AMZ-B0081VV252",
+      "asin": "B0081VV252",
+      "amazon_title": "高圧洗浄機 MHW0700",
+      "brand": "マキタ",
+      "image_url": "https://m.media-amazon.com/images/I/71w4NnTd1+L._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
       "matched_comparison_axes": [
         "power"
       ],
-      "search_key": "高圧洗浄機 コードレス 充電式 小型軽量 ハンディ高圧洗浄機 5"
+      "search_key": "高圧洗浄機 コードレス 充電式 小型軽量 ハンディ高圧洗浄機 5",
+      "model": "MHW0700",
+      "selected_variant": {
+        "model": "MHW0700",
+        "pack_count": 1
+      }
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0G57ZQW38",
-      "asin": "B0G57ZQW38",
-      "amazon_title": "FOTING 高圧洗浄機 14.5MPa パワフル洗浄 コンパクト収納 簡単持ち運びタイヤ 標準付属品充実 二つハイパワーなノズル モバイル家庭用高圧クリーナー 洗車 自転車 庭 ベランダ 泥 花粉除去効果 50/60HZ",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/710xJy8GwNL._AC_UL320_.jpg",
+      "product_id": "AMZ-B075MK1HVL",
+      "asin": "B075MK1HVL",
+      "amazon_title": "アイリスオーヤマ SBT-512N",
+      "brand": "アイリスオーヤマ",
+      "image_url": "https://m.media-amazon.com/images/I/51xkim9WIeL._AC_SL1000_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
       "matched_comparison_axes": [
         "power"
       ],
-      "search_key": "FOTING 高圧洗浄機 14.5MPa パワフル洗浄 コンパク"
+      "search_key": "FOTING 高圧洗浄機 14.5MPa パワフル洗浄 コンパク",
+      "model": "アイリスオーヤマ SBT-512N",
+      "selected_variant": {
+        "power": "AC100V",
+        "water_supply": "tank"
+      }
     }
   ]
 }

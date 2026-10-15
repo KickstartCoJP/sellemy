@@ -45,11 +45,11 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0FJ1T2946",
-      "asin": "B0FJ1T2946",
-      "amazon_title": "シャープ 衣類乾燥除湿機 CV-T71-W コンプレッサー方式 7.1L コンパクト プラズマクラスター7000 省エネ 消臭 カビ 部屋干し",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/31DFCa31ReL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0GWCVC8M4",
+      "asin": "B0GWCVC8M4",
+      "amazon_title": "山善 衣類乾燥機 YH-D30(W) ホワイト 3.0kg",
+      "brand": "山善",
+      "image_url": "https://m.media-amazon.com/images/I/51WRCnnsnTL._AC_SX342_SY445_QL70_ML2_.jpg",
       "observed_price": 23800,
       "discovery_score": 1,
       "selection_score": 0.685,
@@ -57,80 +57,92 @@
         "capacity_size",
         "drying_method"
       ],
-      "search_key": "シャープ 衣類乾燥除湿機 CV-T71-W コンプレッサー方式"
+      "search_key": "シャープ 衣類乾燥除湿機 CV-T71-W コンプレッサー方式",
+      "model": "YH-D30(W)",
+      "selected_variant": "ホワイト・3.0kg"
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0CQT21QGJ",
-      "asin": "B0CQT21QGJ",
-      "amazon_title": "カワクーナL 衣類乾燥機 5kg 工事不要 部屋干し 温風乾燥 花粉対策 タイマー 静音設計 省エネ",
-      "brand": "カワクーナ(KawaQuna)のストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/71SrPp99nSL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0D8ST4837",
+      "asin": "B0D8ST4837",
+      "amazon_title": "東芝 ED-45A4（W）",
+      "brand": "東芝",
+      "image_url": "https://m.media-amazon.com/images/I/61p+PArFfkL._AC_SL1500_.jpg",
       "observed_price": 11580,
       "discovery_score": 1,
       "selection_score": 0.675,
       "matched_comparison_axes": [
         "noise_maintenance"
       ],
-      "search_key": "カワクーナ(KawaQuna) カワクーナL 衣類乾燥機 5kg 工事不要 部屋干し 温風乾燥"
+      "search_key": "カワクーナ(KawaQuna) カワクーナL 衣類乾燥機 5kg 工事不要 部屋干し 温風乾燥",
+      "model": "ED-45A4-W",
+      "selected_variant": "ピュアホワイト・4.5kg"
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0G7Z522CT",
-      "asin": "B0G7Z522CT",
-      "amazon_title": "衣類乾燥機 5.5kg 乾燥機 中型 工事不要 コンパクト 衣類 乾燥 機 小型乾燥機 除菌 タッチパネル チャイルドロック 一人暮らし 2人用 3人用 (5.5KG 透明ドア)",
-      "brand": "SENTERNのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/61HhH8uXLLL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "product_id": "AMZ-B06XZV8LQM",
+      "asin": "B06XZV8LQM",
+      "amazon_title": "パナソニック NH-D503（W）",
+      "brand": "パナソニック",
+      "image_url": "https://m.media-amazon.com/images/I/61tzKx2AJZL._AC_SL1500_.jpg",
       "observed_price": 31880,
       "discovery_score": 1,
       "selection_score": 0.495,
       "matched_comparison_axes": [
         "capacity_size"
       ],
-      "search_key": "SENTERN 衣類乾燥機 5.5kg 乾燥機 中型 工事不要 コンパクト 衣類"
+      "search_key": "SENTERN 衣類乾燥機 5.5kg 乾燥機 中型 工事不要 コンパクト 衣類",
+      "model": "NH-D503-W",
+      "selected_variant": "ホワイト・5kg"
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0FX43T7Z1",
-      "asin": "B0FX43T7Z1",
-      "amazon_title": "【シリーズ累計1万台突破】 SKK 衣類乾燥機 小型 5.5kg コンパクト スピード乾燥 シャツ タオル 布団 梅雨 家庭用 一人暮らし チャイルドロック 高温 シワ防止 UVライト 湿気対策 電気衣類乾燥機 【日本企業】 (② 5.5kg)",
-      "brand": "SKKのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/61kgUdFhgaL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0BJPMQN8P",
+      "asin": "B0BJPMQN8P",
+      "amazon_title": "日立 DE-N50HV（W）",
+      "brand": "日立",
+      "image_url": "https://m.media-amazon.com/images/I/51Itmsso+sL._AC_SL1000_.jpg",
       "observed_price": 33980,
       "discovery_score": 1,
       "selection_score": 0.495,
       "matched_comparison_axes": [
         "capacity_size"
       ],
-      "search_key": "SKK 衣類乾燥機 小型 5.5kg コンパクト スピード乾燥 シャツ"
+      "search_key": "SKK 衣類乾燥機 小型 5.5kg コンパクト スピード乾燥 シャツ",
+      "model": "DE-N50HV W",
+      "selected_variant": "ピュアホワイト・5kg・配送のみスタンド別売"
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0F6L79DM1",
-      "asin": "B0F6L79DM1",
-      "amazon_title": "COMFEE' 洗濯機 8kg 洗剤自動投入 時短 2～4人用 風乾燥 予約 節水型 室内設置 ガラスドア ホワイト CA-80A1(W)",
-      "brand": "コンフィー(COMFEE')のストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/712WuWoOiWL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0BK8JZYMD",
+      "asin": "B0BK8JZYMD",
+      "amazon_title": "SunRuck 乾きくん SR-ASMN206-W",
+      "brand": "SunRuck",
+      "image_url": "https://m.media-amazon.com/images/I/51boVaaT0GL._AC_SL1080_.jpg",
       "observed_price": 44200,
       "discovery_score": 1,
       "selection_score": 0.495,
       "matched_comparison_axes": [],
-      "search_key": "コンフィー(COMFEE') COMFEE' 洗濯機 8kg 洗剤自動投入 時短 2～4人用"
+      "search_key": "コンフィー(COMFEE') COMFEE' 洗濯機 8kg 洗剤自動投入 時短 2～4人用",
+      "model": "SR-ASMN206-W",
+      "selected_variant": "ホワイト・3kg・メーカー保証1年付き"
     },
     {
       "ref": "p6",
       "product_id": "AMZ-B0F4DWQ2Z7",
       "asin": "B0F4DWQ2Z7",
-      "amazon_title": "【SNS1000万再生突破】 Yoquna (ヨクナ) 衣類乾燥機 3kg moondry UV照射 除菌機能 小型 自動モード タイマー 洋服 布団 除湿 梅雨 湿気 家庭用 一人暮らし チャイルドロック 省エネ 節電 操作簡単 乾燥機 衣類乾燥機 扉にタッチで操作 (ホワイト)",
-      "brand": "Yoqunaのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/51FMaw+bwjL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "amazon_title": "Yoquna moondry 3kg シックモデル ホワイト",
+      "brand": "Yoquna",
+      "image_url": "https://m.media-amazon.com/images/I/51FMaw+bwjL._AC_SL1500_.jpg",
       "observed_price": 29490,
       "discovery_score": 1,
       "selection_score": 0.495,
       "matched_comparison_axes": [
         "drying_method"
       ],
-      "search_key": "Yoquna (ヨクナ) 衣類乾燥機 3kg moondry UV照射 除菌機"
+      "search_key": "Yoquna (ヨクナ) 衣類乾燥機 3kg moondry UV照射 除菌機",
+      "model": "moondry シックモデル",
+      "selected_variant": "ホワイト・3kg・扉操作"
     }
   ]
 }

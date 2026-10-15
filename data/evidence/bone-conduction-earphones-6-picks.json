@@ -43,83 +43,111 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0GWTXNYB7",
-      "asin": "B0GWTXNYB7",
-      "amazon_title": "骨伝導イヤホン Bluetooth5.4 ワイヤレス【18時間連続再生・IPX8防水】オープンイヤー 耳を塞がない ながら聴き 超軽量29g 快適フィット ENCノイズキャンセリング マイク内蔵 Type-C急速充電 自動ペアリング スポーツ/通勤/テレワーク iPhone/Android対応 (オレンジ)",
-      "brand": "ブランド: TopLuck",
-      "image_url": "https://m.media-amazon.com/images/I/51omeU+Tc4L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B09H6MY31J",
+      "asin": "B09H6MY31J",
+      "amazon_title": "Shokz OpenMove 骨伝導イヤホン bluetooth ワイヤレス オープンイヤーヘッドホン スポーツ用 グレー",
+      "brand": "Shokz",
+      "image_url": "https://m.media-amazon.com/images/I/41-9D0qY9RL._AC_SL1500_.jpg",
       "observed_price": 4499,
       "discovery_score": 1,
       "selection_score": 0.7,
       "matched_comparison_axes": [
         "battery_life"
       ],
-      "search_key": "TopLuck 骨伝導イヤホン Bluetooth5.4 ワイヤレス オープンイ"
+      "search_key": "TopLuck 骨伝導イヤホン Bluetooth5.4 ワイヤレス オープンイ",
+      "selected_variant": {
+        "color": "グレー",
+        "pack_count": 1
+      }
     },
     {
       "ref": "p2",
       "product_id": "AMZ-B0H4L38YMT",
       "asin": "B0H4L38YMT",
       "amazon_title": "Shokz OpenRun Air 2 骨伝導イヤホン bluetooth ワイヤレス オープンイヤーヘッドホン ブラック",
-      "brand": "SHOKZのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/61jttt7FgdL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "brand": "Shokz",
+      "image_url": "https://m.media-amazon.com/images/I/61jttt7FgdL._AC_SL1500_.jpg",
       "observed_price": 19880,
       "discovery_score": 1,
       "selection_score": 0.52,
       "matched_comparison_axes": [],
-      "search_key": "SHOKZ OpenRun Air 2 骨伝導イヤホン bluetooth"
+      "search_key": "SHOKZ OpenRun Air 2 骨伝導イヤホン bluetooth",
+      "selected_variant": {
+        "color": "ブラック",
+        "size": "スタンダード",
+        "pack_count": 1
+      }
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0HCJFZM97",
-      "asin": "B0HCJFZM97",
-      "amazon_title": "骨伝導イヤホン こつでんどう イヤホン (1.ブラック)",
-      "brand": "ブランド: alacoo",
-      "image_url": "https://m.media-amazon.com/images/I/61RfW6cLHaL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0CQVLYZX9",
+      "asin": "B0CQVLYZX9",
+      "amazon_title": "スント SUUNTO SONIC 骨伝導イヤホン ワイヤレス オープンイヤーヘッドホン 10時間再生 IP55防水 aptX adaptive対応 bluetooth5.2 マイク付き 自動ペアリング 急速充電 軽量化 ランニング スポーツイヤフォン 日本正規品",
+      "brand": "SUUNTO",
+      "image_url": "https://m.media-amazon.com/images/I/51oQ8yJKhQL._AC_SL1500_.jpg",
       "observed_price": 11999,
       "discovery_score": 1,
       "selection_score": 0.47,
       "matched_comparison_axes": [],
-      "search_key": "alacoo 骨伝導イヤホン こつでんどう イヤホン (1.ブラック)"
+      "search_key": "alacoo 骨伝導イヤホン こつでんどう イヤホン (1.ブラック)",
+      "selected_variant": {
+        "color": "LIME",
+        "pack_count": 1
+      }
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0HBVR6T86",
-      "asin": "B0HBVR6T86",
-      "amazon_title": "ワイヤレスイヤホン 【2026新登場・最大60時間再生】 こつでんどう イヤホン bluetooth 小型 軽量 骨伝導 耳掛け IP54 防水 マイク付き ノイズキャンセリング Type-C 充電式 大容量バッテリー 片耳 両耳対応 耳ふさがない IOS/Android/PC 広い互換性 スポーツ 運動 ビジネス 通勤通学 ゲーム (ホワイト)",
-      "brand": "Ｒａｋｅｉのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/61qOpJXDofL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0DSJBWQ3X",
+      "asin": "B0DSJBWQ3X",
+      "amazon_title": "Shokz OpenComm2 2025 Upgrade ビジネスヘッドセット 骨伝導 bluetooth ワイヤレスイヤホン オープンイヤー",
+      "brand": "Shokz",
+      "image_url": "https://m.media-amazon.com/images/I/51yr6izBqVL._AC_SL1500_.jpg",
       "observed_price": 2480,
       "discovery_score": 1,
       "selection_score": 0.47,
       "matched_comparison_axes": [],
-      "search_key": "Ｒａｋｅｉ ワイヤレスイヤホン こつでんどう イヤホン bluetooth"
+      "search_key": "Ｒａｋｅｉ ワイヤレスイヤホン こつでんどう イヤホン bluetooth",
+      "selected_variant": {
+        "color": "ブラック",
+        "edition": "2025 Upgrade",
+        "package": "通常版、UCワイヤレスアダプターなし",
+        "pack_count": 1
+      }
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0H15F5Z6V",
-      "asin": "B0H15F5Z6V",
-      "amazon_title": "骨伝導イヤホン bluetooth 6.1、 IP68完全防水 水泳 こつでんどう イヤホン ブラック",
-      "brand": "ブランド: Kemeskin",
-      "image_url": "https://m.media-amazon.com/images/I/71aB0oWP1EL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0CT8M58MK",
+      "asin": "B0CT8M58MK",
+      "amazon_title": "Shokz OpenSwim Pro 骨伝導イヤホン オープンイヤーヘッドホン ワイヤレス スイミング用 bluetooth IP68防塵防水 グレー",
+      "brand": "Shokz",
+      "image_url": "https://m.media-amazon.com/images/I/41yKxU6a2+L._AC_SL1500_.jpg",
       "observed_price": 5780,
       "discovery_score": 1,
       "selection_score": 0.47,
       "matched_comparison_axes": [],
-      "search_key": "Kemeskin 骨伝導イヤホン bluetooth 6.1、 IP68完全防水"
+      "search_key": "Kemeskin 骨伝導イヤホン bluetooth 6.1、 IP68完全防水",
+      "selected_variant": {
+        "color": "グレー",
+        "pack_count": 1
+      }
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0GXF1K39Z",
-      "asin": "B0GXF1K39Z",
-      "amazon_title": "イヤホン Bluetooth ワイヤレスイヤホン 【2026年新登場タッチスクリーン操作】 イヤーカフ 開放型設計 指向性転送で音漏れ防止",
-      "brand": "ブランド: Xprico",
-      "image_url": "https://m.media-amazon.com/images/I/71t9K+bEv6L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0CBK44DBF",
+      "asin": "B0CBK44DBF",
+      "amazon_title": "Creative Outlier Free Pro+オレンジ 骨伝導 Bluetooth ワイヤレス イヤホン",
+      "brand": "Creative",
+      "image_url": "https://m.media-amazon.com/images/I/41LIRkDl0OL._AC_SL1000_.jpg",
       "observed_price": 2849,
       "discovery_score": 1,
       "selection_score": 0.47,
       "matched_comparison_axes": [],
-      "search_key": "Xprico イヤホン Bluetooth ワイヤレスイヤホン イヤーカフ 開"
+      "search_key": "Xprico イヤホン Bluetooth ワイヤレスイヤホン イヤーカフ 開",
+      "selected_variant": {
+        "model_number": "HS-OTFPPL-OR",
+        "color": "オレンジ",
+        "pack_count": 1
+      }
     }
   ]
 }

@@ -37,90 +37,128 @@
   "eyecatch_image": "https://www.sellemy.jp/img/home-yogurt-makers/home-yogurt-makers.png",
   "products": [
     {
-      "amazon_title": "コンパクト ヨーグルトメーカー全自動 甘酒メーカー 軽量コンパクト ガラス容器付き 牛乳パック対応 低温調理 飲むヨーグルト",
-      "asin": "B0GXJ7K1XG",
-      "brand": "",
+      "amazon_title": "アイリスオーヤマ ヨーグルトメーカー IYM-016-W",
+      "asin": "B0CL5TKKHM",
+      "brand": "アイリスオーヤマ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51QPsIgSDEL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51O5IzPWCPL._AC_SL1000_.jpg",
       "matched_comparison_axes": [
         "container_compatibility"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0GXJ7K1XG",
+      "product_id": "AMZ-B0CL5TKKHM",
       "ref": "p1",
       "search_key": "コンパクト ヨーグルトメーカー全自動 甘酒メーカー 軽量コンパク",
-      "selection_score": 0.505
+      "selection_score": 0.505,
+      "selected_variant": {
+        "model": "IYM-016-W",
+        "color": "ホワイト",
+        "pack_count": 1,
+        "container_count": 1,
+        "jan": "4967576666619"
+      }
     },
     {
-      "amazon_title": "曙産業 水切りヨーグルトメーカー スプーン付き 市販のヨーグルト1パックが丸ごと入る 水切りヨーグルトができる容器 日本製 ST-3000",
-      "asin": "B0GL241DMG",
-      "brand": "",
+      "amazon_title": "Toffy ヨーグルトメーカー K-YM1-PA",
+      "asin": "B0DK4ZCBZX",
+      "brand": "Toffy",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61Tev8kRx9L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51izX37DE9L._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0GL241DMG",
+      "product_id": "AMZ-B0DK4ZCBZX",
       "ref": "p2",
       "search_key": "曙産業 水切りヨーグルトメーカー スプーン付き 市販のヨーグルト",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "model": "K-YM1-PA",
+        "color": "ペールアクア",
+        "quantity": 1,
+        "jan": "4934122096312"
+      }
     },
     {
-      "amazon_title": "自家製ヨーグルト・豆乳・牛乳用 水切り専用容器 1100ml 再利用可能 ストレーナー ポット",
-      "asin": "B0FHQ8TZDT",
-      "brand": "",
+      "amazon_title": "タニカ ヨーグルティアS YS-02W ガラスセット",
+      "asin": "B0BPWL1ZHS",
+      "brand": "タニカ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61ITTATnvQL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71NG975KSPL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "container_compatibility"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0FHQ8TZDT",
+      "product_id": "AMZ-B0BPWL1ZHS",
       "ref": "p3",
       "search_key": "自家製ヨーグルト・豆乳・牛乳用 水切り専用容器 1100ml 再",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "model": "YS-02GW",
+        "body_model": "YS-02W",
+        "color": "ホワイト",
+        "container_material": "ガラス",
+        "container_count": 2,
+        "container_capacity_ml": 1100,
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "モノエルナチュリ ヨーグルトメーカー 容器 1L | 替えボトル 縦型 保存容器 プラスチック | 汎用 発酵メーカー 甘酒 麹 | Hacoris 対応",
-      "asin": "B0DSP44CPB",
-      "brand": "",
+      "amazon_title": "山善 ヨーグルトメーカー YXA-101(W)",
+      "asin": "B09MHRQKHB",
+      "brand": "山善",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51wUJn1m0TL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71vbOE5ccmL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0DSP44CPB",
+      "product_id": "AMZ-B09MHRQKHB",
       "ref": "p4",
       "search_key": "モノエルナチュリ ヨーグルトメーカー 容器 1L | 替えボトル",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "model": "YXA-101(W)",
+        "color": "ホワイト",
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "ヨーグルト水切り 手作り 水切りヨーグルト 容器 大容量 1100ml ヨーグルト メーカー 自家製 豆乳 牛乳 ヨーグルトメーカー 容器 保存容器 濃厚 ヨグルトメーカー 水切りヨーグルトができる容器 が簡単につくれる専用容器 家庭用 再利用可能",
-      "asin": "B0DBVZBSWK",
-      "brand": "",
+      "amazon_title": "ビタントニオ ヨーグルトメーカー VYG-60-W",
+      "asin": "B0BTZZQ3QF",
+      "brand": "Vitantonio",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71fiHkVu-lL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/41X-N+K-yFL._AC_SL1080_.jpg",
       "matched_comparison_axes": [
         "container_compatibility"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0DBVZBSWK",
+      "product_id": "AMZ-B0BTZZQ3QF",
       "ref": "p5",
       "search_key": "ヨーグルト水切り 手作り 水切りヨーグルト 容器 大容量 110",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "model": "VYG-60-W",
+        "color": "ホワイト",
+        "quantity": 1
+      }
     },
     {
-      "amazon_title": "発酵食メーカー ヨーグルトメーカー 牛乳パック対応 温度調整可能 飲むヨーグルト 簡単手作り 甘酒 カスピ海 ギリシャヨーグルト 塩麹 納豆 内部容器があります",
-      "asin": "B0DB8MJC4M",
-      "brand": "",
+      "amazon_title": "BRUNO コンパクト発酵メーカー BOE108-ECRU エクリュ",
+      "asin": "B0C1TGDJ9S",
+      "brand": "BRUNO",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51ErW-UgjNL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/41ripl1BbSL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "container_compatibility"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0DB8MJC4M",
+      "product_id": "AMZ-B0C1TGDJ9S",
       "ref": "p6",
       "search_key": "発酵食メーカー ヨーグルトメーカー 牛乳パック対応 温度調整可能",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "model": "BOE108-ECRU",
+        "color": "エクリュ（Amazon選択名 ベージュ系その他）",
+        "quantity": 1,
+        "included": "専用容器2個・水切りカップ・計量スプーン"
+      }
     }
   ],
   "selection": {

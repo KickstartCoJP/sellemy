@@ -40,71 +40,96 @@
   "eyecatch_image": "https://www.sellemy.jp/img/stovetop-water-kettles/stovetop-water-kettles.png",
   "products": [
     {
-      "amazon_title": "笛吹きケトル ステンレス製 4～14L 大容量 やかん IH200V・ガス火対応 5層複合底 全熱源対応 広口注ぎ口 耐熱ハンドル キャンプ(a,7L)",
-      "asin": "B0HKVHMQBC",
-      "brand": "",
+      "amazon_title": "野田琺瑯(Nodahoro) ケトル 2.0L ホーロー ガス火/IH対応 日本製 アムケトル ベージュ AM-20KBE",
+      "asin": "B0FF8MQQ8S",
+      "brand": "野田琺瑯",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51Hp9Wl0r4L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/515nspKCInL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "heat_source_fit"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0HKVHMQBC",
+      "product_id": "AMZ-B0FF8MQQ8S",
       "ref": "p1",
       "search_key": "笛吹きケトル ステンレス製 4～14L 大容量 やかん IH20",
-      "selection_score": 0.49
+      "selection_score": 0.49,
+      "selected_variant": {
+        "color": "ベージュ",
+        "nominal_capacity_l": 2.0,
+        "material": "ホーロー",
+        "heat": "ガス/IH"
+      }
     },
     {
-      "amazon_title": "広口 笛吹 ケットル やかん シンプル IH・ガス対応 適正容量3.6L 洗いやすい ステンレス,シルバー-3L",
-      "asin": "B0GCD5Z8KW",
-      "brand": "",
+      "amazon_title": "パール金属 笛吹き ケトル 2.3L IH対応 ステンレス ノヴェル H-1391",
+      "asin": "B0058BKIHQ",
+      "brand": "パール金属",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/616AZeN6FbL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61-DomDBWZL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "usable_capacity"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0GCD5Z8KW",
+      "product_id": "AMZ-B0058BKIHQ",
       "ref": "p2",
       "search_key": "広口 笛吹 ケットル やかん シンプル IH・ガス対応 適正容量",
-      "selection_score": 0.49
+      "selection_score": 0.49,
+      "selected_variant": {
+        "color": "シルバー",
+        "full_capacity_l": 2.3,
+        "working_capacity_l": 1.6,
+        "heat": "IH対応",
+        "type": "笛吹"
+      }
     },
     {
-      "amazon_title": "鎌倉陶器 笛ふきケットルお洒落ステンレスやかん大容量 2~8L ガス火IHオール熱源対応 ステンレス鋼 シルバー (2L)",
-      "asin": "B0HJGKN818",
-      "brand": "",
+      "amazon_title": "富士ホーロー 笛吹き ケトル IH対応 コットン 1.6L ホワイト CTN-1.6WK.W",
+      "asin": "B081CTX8HV",
+      "brand": "富士ホーロー",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51csaxLPPpL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61xsRlDFyzL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "heat_source_fit"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0HJGKN818",
+      "product_id": "AMZ-B081CTX8HV",
       "ref": "p3",
       "search_key": "鎌倉陶器 笛ふきケットルお洒落ステンレスやかん大容量 2~8L",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": {
+        "color": "ホワイト",
+        "nominal_capacity_l": 1.6,
+        "type": "笛吹",
+        "heat": "IH対応"
+      }
     },
     {
-      "amazon_title": "やかん おしゃれやかん 4 リットルやかん ih 対応 304 ステンレス 笛吹きケトル 大容量 ガス火兼用 (4L [約3斤分])",
-      "asin": "B0HFR8NK47",
-      "brand": "",
+      "amazon_title": "ヨシカワ 広口ケトル 2.6L ステンレス IH・ガス火対応 シーズ・クッキング 燕三条 日本製 YJ1815",
+      "asin": "B00DFTSCPS",
+      "brand": "ヨシカワ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61Pn2XvwfQL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61FHwQ8KGIL._AC_SL1000_.jpg",
       "matched_comparison_axes": [
         "heat_source_fit"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0HFR8NK47",
+      "product_id": "AMZ-B00DFTSCPS",
       "ref": "p4",
       "search_key": "やかん おしゃれやかん 4 リットルやかん ih 対応 304",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": {
+        "color": "シルバー",
+        "nominal_capacity_l": 2.6,
+        "type": "広口",
+        "heat": "ガス/IH"
+      }
     },
     {
       "amazon_title": "やかん ケトル ステンレス 5.0L IH ガス火対応 広口 大容量 丈夫 さびにくい 持ちやすい ND-2883 たっぷり沸かせる！",
       "asin": "B0GXV1S4N4",
-      "brand": "",
+      "brand": "LIV PLUS",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/41oZWFs1TyL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/41oZWFs1TyL._AC_SL1000_.jpg",
       "matched_comparison_axes": [
         "heat_source_fit"
       ],
@@ -112,20 +137,32 @@
       "product_id": "AMZ-B0GXV1S4N4",
       "ref": "p5",
       "search_key": "やかん ケトル ステンレス 5.0L IH ガス火対応 広口 大",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": {
+        "color": "シルバー",
+        "full_capacity_l": 5.0,
+        "working_capacity_l": 3.5,
+        "heat": "ガス/IH"
+      }
     },
     {
-      "amazon_title": "笛吹きケトル やかん ステンレス 広口ケトル アウトドア大容量 IH・ガス対応 シルバー 洗いやすい 家庭用 (2L)",
-      "asin": "B0G236Z5M7",
-      "brand": "",
+      "amazon_title": "和平フレイズ 笛吹 広口 ケトル やかん 2.7L IH・ガス対応 適正容量1.9L 洗いやすい ステンレス リラカン RB-2234",
+      "asin": "B09KB88C2T",
+      "brand": "和平フレイズ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61PAiirX4iL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71d2zIBMG7L._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0G236Z5M7",
+      "product_id": "AMZ-B09KB88C2T",
       "ref": "p6",
       "search_key": "笛吹きケトル やかん ステンレス 広口ケトル アウトドア大容量",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": {
+        "color": "シルバー",
+        "full_capacity_l": 2.7,
+        "working_capacity_l": 1.9,
+        "quantity": 1
+      }
     }
   ],
   "selection": {

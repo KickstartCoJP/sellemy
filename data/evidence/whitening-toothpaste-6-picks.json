@@ -49,9 +49,9 @@
       "ref": "p1",
       "product_id": "AMZ-B0DKTGJ5QC",
       "asin": "B0DKTGJ5QC",
-      "amazon_title": "シュミテクト トゥルーホワイト 【医薬部外品】ホワイトニング 研磨剤無配合 ハミガキ 知覚過敏ケア 高濃度フッ素配合(1450ppm)歯磨き粉2本",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/41foCfLJyQL._AC_UL320_.jpg",
+      "amazon_title": "シュミテクト トゥルーホワイト80g×2本",
+      "brand": "シュミテクト",
+      "image_url": "https://m.media-amazon.com/images/I/41foCfLJyQL._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.76,
@@ -59,76 +59,110 @@
         "usage_feel",
         "whitening_power"
       ],
-      "search_key": "シュミテクト トゥルーホワイト ホワイトニング 研磨剤無配合 ハ"
+      "search_key": "シュミテクト トゥルーホワイト ホワイトニング 研磨剤無配合 ハ",
+      "selected_variant": {
+        "pack": "80g×2本",
+        "form": "歯磨き粉",
+        "listing_specs": "研磨剤無配合、1450ppmフッ素。6歳未満不可の注意書きを保持"
+      }
     },
     {
       "ref": "p2",
       "product_id": "AMZ-B0H757QD2W",
       "asin": "B0H757QD2W",
-      "amazon_title": "【医薬部外品】 歯磨き粉 薬用 ホワイトニング 着色除去 黄ばみ 口臭 むし歯予防 歯周炎 歯肉炎 歯石 やに フッ素 低刺激 eLifeプレミアム歯磨き 60g 1か月分",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61zGw6hnskL._AC_UL320_.jpg",
+      "amazon_title": "eLife ホワイトメディカルクリア60g",
+      "brand": "eLife",
+      "image_url": "https://m.media-amazon.com/images/I/61zGw6hnskL._AC_SL1000_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.4,
       "matched_comparison_axes": [
         "usage_feel"
       ],
-      "search_key": "歯磨き粉 薬用 ホワイトニング 着色除去 黄ばみ 口臭 むし歯予"
+      "search_key": "歯磨き粉 薬用 ホワイトニング 着色除去 黄ばみ 口臭 むし歯予",
+      "selected_variant": {
+        "pack": "60g×1",
+        "flavour": "アップルミント",
+        "form": "歯磨き粉"
+      }
     },
     {
       "ref": "p3",
       "product_id": "AMZ-B0G579NW7H",
       "asin": "B0G579NW7H",
-      "amazon_title": "ホワイトニング 歯磨き粉 研磨剤フリー 薬用ホワイトニングハミガキ ダズルミント 100g 医薬部外品 ホワイトニングケア ステインケア 口臭予防 歯周病予防 ＊",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71m4xn4pPiL._AC_UL320_.jpg",
+      "amazon_title": "GWHITE ダズルミント100g",
+      "brand": "GWHITE",
+      "image_url": "https://m.media-amazon.com/images/I/71m4xn4pPiL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.4,
       "matched_comparison_axes": [
         "whitening_power"
       ],
-      "search_key": "ホワイトニング 歯磨き粉 研磨剤フリー 薬用ホワイトニングハミガ"
+      "search_key": "ホワイトニング 歯磨き粉 研磨剤フリー 薬用ホワイトニングハミガ",
+      "selected_variant": {
+        "pack": "100g×1",
+        "flavour": "ダズルミント",
+        "form": "歯磨き粉",
+        "listing_specs": "医薬部外品、研磨剤フリー"
+      }
     },
     {
       "ref": "p4",
       "product_id": "AMZ-B0FY6CJ6KL",
       "asin": "B0FY6CJ6KL",
-      "amazon_title": "【 歯科医師 × 国内デンタルケアブランド 】 V CRYSTAL（Vクリスタル） 虫歯 口臭ケア パープル歯磨き粉 フレッシュミント 日本製",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/81nOe4NoBDL._AC_UL320_.jpg",
+      "amazon_title": "MOUTH LABO V CRYSTAL フレッシュミント30g",
+      "brand": "MOUTH LABO",
+      "image_url": "https://m.media-amazon.com/images/I/81nOe4NoBDL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.4,
       "matched_comparison_axes": [],
-      "search_key": "V CRYSTAL（Vクリスタル） 虫歯 口臭ケア パープル歯磨"
+      "search_key": "V CRYSTAL（Vクリスタル） 虫歯 口臭ケア パープル歯磨",
+      "selected_variant": {
+        "pack": "30g×1個",
+        "flavour": "フレッシュミント",
+        "form": "紫色ペースト",
+        "listing_specs": "色補正表現は販売者の主張であり、持続的漂白効果として扱わない",
+        "capacity": "30g"
+      }
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0FXX44BML",
-      "asin": "B0FXX44BML",
-      "amazon_title": "【歯科医師 × 国内デンタルケアブランド】 WHITE SHINE PACK ホワイトニング 虫歯 口臭ケア ホワイトニングシート 28枚 (1個)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/81RwfV5uyRL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0D8VLKYVY",
+      "asin": "B0D8VLKYVY",
+      "amazon_title": "TaVaTeee 薬用ホワイトニングジェル40g",
+      "brand": "TaVaTeee",
+      "image_url": "https://m.media-amazon.com/images/I/71vxRhTnOJL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.4,
       "matched_comparison_axes": [],
-      "search_key": "WHITE SHINE PACK ホワイトニング 虫歯 口臭ケア"
+      "search_key": "WHITE SHINE PACK ホワイトニング 虫歯 口臭ケア",
+      "selected_variant": {
+        "pack": "40g×1本、ガイドブック付、簡易包装",
+        "flavour": "マスカットミント",
+        "form": "歯磨きジェル",
+        "listing_specs": "医薬部外品。配合成分や効能・対象年齢の断定は別途一次資料で審査"
+      }
     },
     {
       "ref": "p6",
       "product_id": "AMZ-B0FMXJ1XC3",
       "asin": "B0FMXJ1XC3",
-      "amazon_title": "【公式】 医薬部外品 薬用 なたまめ柿渋歯磨き 120g ホワイトニング対策 口臭対策 歯周炎予防 日本製 京都やまちや",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71R-aI3S-LL._AC_UL320_.jpg",
+      "amazon_title": "京都やまちや 薬用なたまめ柿渋歯磨き120g",
+      "brand": "京都やまちや",
+      "image_url": "https://m.media-amazon.com/images/I/71R-aI3S-LL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.4,
       "matched_comparison_axes": [],
-      "search_key": "医薬部外品 薬用 なたまめ柿渋歯磨き 120g ホワイトニング対"
+      "search_key": "医薬部外品 薬用 なたまめ柿渋歯磨き 120g ホワイトニング対",
+      "selected_variant": {
+        "pack": "120g×1",
+        "form": "歯磨き粉",
+        "packaging_note": "新旧パッケージ混在告知あり"
+      }
     }
   ]
 }

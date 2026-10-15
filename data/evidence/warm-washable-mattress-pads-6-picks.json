@@ -45,9 +45,9 @@
       "ref": "p1",
       "product_id": "AMZ-B0HCNBLFV7",
       "asin": "B0HCNBLFV7",
-      "amazon_title": "RASYN 敷きパッド シングル 厚手【新7層構造】冬用 帝人機能わた 抗菌防臭 吸湿発熱 エアロゲルW断熱 洗える 100x200cm ブラウン",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71g9vKJ4wJL._AC_UL320_.jpg",
+      "amazon_title": "RASYN 7層構造敷きパッド",
+      "brand": "RASYN",
+      "image_url": "https://m.media-amazon.com/images/I/71g9vKJ4wJL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.685,
@@ -55,45 +55,65 @@
         "fit",
         "warmth"
       ],
-      "search_key": "RASYN 敷きパッド シングル 厚手 冬用 帝人機能わた 抗菌"
+      "search_key": "RASYN 敷きパッド シングル 厚手 冬用 帝人機能わた 抗菌",
+      "selected_variant": {
+        "size": "シングル100×200cm",
+        "colour": "ブラウン",
+        "material": "ポリエステル、機能わたの詳しい配合率は未検証",
+        "washable": "タイトルに洗える記載。具体的洗濯条件は表示確認"
+      }
     },
     {
       "ref": "p2",
       "product_id": "AMZ-B0HJQ7S9Z1",
       "asin": "B0HJQ7S9Z1",
-      "amazon_title": "タンスのゲン もはや、こたつ。 敷パッド セミダブル 吸湿発熱 洗える ベッドパッド 冬用 暖かい 敷きパッド 冬 22200063(128952)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71Fa+9XLtiL._AC_UL320_.jpg",
+      "amazon_title": "タンスのゲン 22200063(128952)",
+      "brand": "タンスのゲン",
+      "image_url": "https://m.media-amazon.com/images/I/71Fa+9XLtiL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [
         "warmth"
       ],
-      "search_key": "タンスのゲン もはや、こたつ。 敷パッド セミダブル 吸湿発熱"
+      "search_key": "タンスのゲン もはや、こたつ。 敷パッド セミダブル 吸湿発熱",
+      "selected_variant": {
+        "size": "セミダブル120×200cm",
+        "colour": "トープブラウン",
+        "material": "側地ポリエステル100%、中綿機能合繊10%/ポリエステル90%",
+        "washable": "ネット使用",
+        "weight_note": "詳細は中綿1kg、汎用訴求800gと不一致"
+      }
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0HDN8VQX3",
-      "asin": "B0HDN8VQX3",
-      "amazon_title": "敷きパッド シングル リバーシブル 冬 蓄熱保温 ふんわり やわらか 抗菌防臭中綿 あったか フランネルなめらかタッチ 洗える 静電気防止加工 オールシーズン快適 シーツ ベッドパッド 100x200cm ローズ",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71YTBku4oXL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0HDP128ND",
+      "asin": "B0HDP128ND",
+      "amazon_title": "FUWASARA リバーシブル敷きパッド",
+      "brand": "FUWASARA",
+      "image_url": "https://m.media-amazon.com/images/I/71fSHV4CO1L._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [
         "fit"
       ],
-      "search_key": "敷きパッド シングル リバーシブル 冬 蓄熱保温 ふんわり やわ"
+      "search_key": "敷きパッド シングル リバーシブル 冬 蓄熱保温 ふんわり やわ",
+      "selected_variant": {
+        "size": "キング180×200cm",
+        "colour": "グレー",
+        "material": "ポリエステル100%",
+        "washable": "丸洗い可の記載あり",
+        "installation": "四隅ゴム"
+      }
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0FYNSS1D4",
-      "asin": "B0FYNSS1D4",
-      "amazon_title": "タンスのゲン ボックスシーツ シングル【敷パッド 一体型ボックスシーツ】吸湿発熱 調温 洗える 抗菌 防臭 81900209(115181)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/819ehg3f7OL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0FYNSHD5D",
+      "asin": "B0FYNSHD5D",
+      "amazon_title": "タンスのゲン 81900209(115178)",
+      "brand": "タンスのゲン",
+      "image_url": "https://m.media-amazon.com/images/I/81xG0xfcp2L._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
@@ -101,37 +121,57 @@
         "fit",
         "warmth"
       ],
-      "search_key": "タンスのゲン ボックスシーツ シングル 吸湿発熱 調温 洗える"
+      "search_key": "タンスのゲン ボックスシーツ シングル 吸湿発熱 調温 洗える",
+      "selected_variant": {
+        "size": "シングル100×200cm、マチ30cm",
+        "colour": "アッシュラベンダー",
+        "material": "表ポリエステル82%/レーヨン18%、中綿ポリエステル70%/レーヨン30%",
+        "washable": "ネット使用",
+        "type": "敷きパッド一体型ボックスシーツ"
+      }
     },
     {
       "ref": "p5",
       "product_id": "AMZ-B0FPFMVSZ4",
       "asin": "B0FPFMVSZ4",
-      "amazon_title": "nishikawa 【 西川 】 セブンデイズ あったか敷きパッド シングル 洗える 柔らか あたたか ズレにくい 四隅ゴム付 ベージュ CM05032034",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/611RGxWzuSL._AC_UL320_.jpg",
+      "amazon_title": "西川 セブンデイズ CM05032034",
+      "brand": "西川",
+      "image_url": "https://m.media-amazon.com/images/I/611RGxWzuSL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [
         "fit"
       ],
-      "search_key": "nishikawa セブンデイズ あったか敷きパッド シングル"
+      "search_key": "nishikawa セブンデイズ あったか敷きパッド シングル",
+      "selected_variant": {
+        "size": "シングル100×200cm",
+        "colour": "ベージュ",
+        "material": "表裏/中綿ポリエステル100%",
+        "washable": "ネット使用",
+        "installation": "四隅ゴム"
+      }
     },
     {
       "ref": "p6",
       "product_id": "AMZ-B0FMRQ59XH",
       "asin": "B0FMRQ59XH",
-      "amazon_title": "RAKU HOME 敷きパッド シングル 冬 シーツ あったか【肌想いの6大温感テクノ搭載】暖かい ネイビー",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71bGfIxCkpL._AC_UL320_.jpg",
+      "amazon_title": "RAKU HOME 潤暖 敷きパッド",
+      "brand": "RAKU HOME",
+      "image_url": "https://m.media-amazon.com/images/I/71bGfIxCkpL._AC_SL1280_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [
         "fit"
       ],
-      "search_key": "RAKU HOME 敷きパッド シングル 冬 シーツ あったか"
+      "search_key": "RAKU HOME 敷きパッド シングル 冬 シーツ あったか",
+      "selected_variant": {
+        "size": "シングル100×205cm",
+        "colour": "ネイビー",
+        "material": "フランネル、多機能中綿、アルミシート",
+        "washable": "丸洗い可能の出品記載。温度/乾燥方法はラベル確認"
+      }
     }
   ]
 }

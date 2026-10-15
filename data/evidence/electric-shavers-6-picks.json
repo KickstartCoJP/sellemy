@@ -54,11 +54,11 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0H1VKR6C9",
-      "asin": "B0H1VKR6C9",
-      "amazon_title": "ひげそり 電動シェーバー 【往復式三枚刃・60枚内刃深剃り・IPX7防水】 電気シェーバー 髭剃り 電動 シェーバー メンズ 電動髭剃り 3枚刃 往復式 3Dフローティングヘッド 鏡面仕上げ LED残量表示 バッテリー残量表示 1.5H急速充電 Type-C充電 トラベルロック IPX7防水 乾湿両用 お風呂剃り対応 長持ちバッテリー 低騒音 電気カミソリ 男性用 コンパクト 軽量 持ち運び便利 出張/旅行/外出 ビジネス用 父の日 ギフト (1, ブラック)",
-      "brand": "ブランド: BMOVOR",
-      "image_url": "https://m.media-amazon.com/images/I/61rWHnX5xQL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0CCN9WFRM",
+      "asin": "B0CCN9WFRM",
+      "amazon_title": "Panasonic ラムダッシュ ES-LT8C-A 青 洗浄器付き",
+      "brand": "Panasonic",
+      "image_url": "https://m.media-amazon.com/images/I/71XChRQMskL._AC_SL1500_.jpg",
       "observed_price": 3580,
       "discovery_score": 1,
       "selection_score": 0.855,
@@ -66,30 +66,41 @@
         "shave_type",
         "skin_care"
       ],
-      "search_key": "BMOVOR ひげそり 電動シェーバー 電気シェーバー 髭剃り 電動 シェーバ"
+      "search_key": "BMOVOR ひげそり 電動シェーバー 電気シェーバー 髭剃り 電動 シェーバ",
+      "selected_variant": {
+        "model_number": "ES-LT8C-A",
+        "color": "青",
+        "package": "洗浄充電器付き単品",
+        "pack_count": 1
+      }
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0BPH5GT67",
-      "asin": "B0BPH5GT67",
-      "amazon_title": "ボディシェーバー メンズ VIO シェーバー 10 段階長さ調節 3-12mm 電動バリカン ムダ毛処理 IPX5 防水 水洗い お風呂剃り可 USB 充電式 Vellope RS01",
-      "brand": "ブランド: Vellope",
-      "image_url": "https://m.media-amazon.com/images/I/61xLzBz7I0L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0CP7N12YY",
+      "asin": "B0CP7N12YY",
+      "amazon_title": "Philips S5880/60 セルリアンブルー",
+      "brand": "Philips",
+      "image_url": "https://m.media-amazon.com/images/I/41+RqA8As0L._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": 3180,
       "discovery_score": 1,
       "selection_score": 0.625,
       "matched_comparison_axes": [
         "maintenance"
       ],
-      "search_key": "Vellope ボディシェーバー メンズ VIO シェーバー 10 段階長さ調節"
+      "search_key": "Vellope ボディシェーバー メンズ VIO シェーバー 10 段階長さ調節",
+      "selected_variant": {
+        "model_number": "S5880/60",
+        "color": "セルリアンブルー",
+        "pack_count": 1
+      }
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0GFF1QTC2",
-      "asin": "B0GFF1QTC2",
-      "amazon_title": "電気シェーバー メンズ 全金属ボディ マグネット式ヘッド 往復式3D浮動3枚刃 深剃り IPX7防水 お風呂剃り・丸洗い可 Type-C急速充電",
-      "brand": "ブランド: Oliforu",
-      "image_url": "https://m.media-amazon.com/images/I/71Ns8fx+67L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0DCMNN9RP",
+      "asin": "B0DCMNN9RP",
+      "amazon_title": "マクセルイズミ IZF-V553W-R レッド",
+      "brand": "マクセルイズミ",
+      "image_url": "https://m.media-amazon.com/images/I/614e-pkJ6pL._AC_SL1500_.jpg",
       "observed_price": 5978,
       "discovery_score": 1,
       "selection_score": 0.495,
@@ -97,46 +108,68 @@
         "shave_type",
         "skin_care"
       ],
-      "search_key": "Oliforu 電気シェーバー メンズ 全金属ボディ マグネット式ヘッド 往復式"
+      "search_key": "Oliforu 電気シェーバー メンズ 全金属ボディ マグネット式ヘッド 往復式",
+      "selected_variant": {
+        "model_number": "IZF-V553W-R",
+        "color": "レッド",
+        "pack_count": 1
+      }
     },
     {
       "ref": "p4",
       "product_id": "AMZ-B0DSJB2627",
       "asin": "B0DSJB2627",
-      "amazon_title": "ブラウン 電気シェーバー シリーズ9 SPORT 電動 髭剃り メンズ 9360cc 【Amazon.co.jp 限定】6in1アルコール洗浄システム付 シェーバーケース付 ブラック",
-      "brand": "Braunのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/61c-XLj-ShL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "amazon_title": "Braun シリーズ9 Sport+ 9360cc ブラック 6in1洗浄器",
+      "brand": "Braun",
+      "image_url": "https://m.media-amazon.com/images/I/61c-XLj-ShL._AC_SL1000_.jpg",
       "observed_price": 31368,
       "discovery_score": 1,
       "selection_score": 0.495,
       "matched_comparison_axes": [],
-      "search_key": "Braun ブラウン 電気シェーバー シリーズ9 SPORT 電動 髭剃り"
+      "search_key": "Braun ブラウン 電気シェーバー シリーズ9 SPORT 電動 髭剃り",
+      "selected_variant": {
+        "model": "9360cc Sport+",
+        "color": "ブラック",
+        "set": "6in1洗浄器・ケース付き"
+      }
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0H8RGX1GM",
-      "asin": "B0H8RGX1GM",
-      "amazon_title": "電動シェーバー メンズ 髭剃り IPX7防水 Type-C急速充電 LED残量表示 3D浮動ヘッド 乾湿両用 旅行ロック 出張 旅行",
-      "brand": "ブランド: decooine",
-      "image_url": "https://m.media-amazon.com/images/I/618VhcrVCgL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0F593KQRY",
+      "asin": "B0F593KQRY",
+      "amazon_title": "Panasonic ラムダッシュ パームイン ES-PV70-A 藍",
+      "brand": "Panasonic",
+      "image_url": "https://m.media-amazon.com/images/I/61dqBROwaBL._AC_SL1500_.jpg",
       "observed_price": 3499,
       "discovery_score": 1,
       "selection_score": 0.445,
       "matched_comparison_axes": [],
-      "search_key": "decooine 電動シェーバー メンズ 髭剃り IPX7防水 Type-C急速充"
+      "search_key": "decooine 電動シェーバー メンズ 髭剃り IPX7防水 Type-C急速充",
+      "selected_variant": {
+        "model_number": "ES-PV70-A",
+        "color": "藍",
+        "package": "単品",
+        "pack_count": 1
+      }
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0H6WPBVFM",
-      "asin": "B0H6WPBVFM",
-      "amazon_title": "ひげそり 電動シェーバー シェーバー ひげそり 髭剃り",
-      "brand": "WONSEFOOのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/61XsgtbskOL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B01B5JCT4E",
+      "asin": "B01B5JCT4E",
+      "amazon_title": "Braun シリーズ3 3010s ブルー",
+      "brand": "Braun",
+      "image_url": "https://m.media-amazon.com/images/I/61KkuEqAATL._AC_SL1500_.jpg",
       "observed_price": 2979,
       "discovery_score": 1,
       "selection_score": 0.445,
       "matched_comparison_axes": [],
-      "search_key": "WONSEFOO ひげそり 電動シェーバー シェーバー ひげそり 髭剃り"
+      "search_key": "WONSEFOO ひげそり 電動シェーバー シェーバー ひげそり 髭剃り",
+      "selected_variant": {
+        "model_number": "3010s",
+        "color": "ブルー",
+        "package": "通常本体セット、洗浄器なし",
+        "pack_count": 1
+      }
     }
   ]
 }

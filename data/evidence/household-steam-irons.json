@@ -39,9 +39,9 @@
     {
       "amazon_title": "ティファール コードレススチームアイロン ジェットスチーム最大80g/分 本体色ローズ フッ素樹脂かけ面「フリームーブ ミニ」 FV6111J0",
       "asin": "B0C2PKGGB9",
-      "brand": "",
+      "brand": "ティファール",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51PKMU+63fL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51PKMU+63fL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "power_and_workflow",
         "soleplate_and_weight"
@@ -50,14 +50,19 @@
       "product_id": "AMZ-B0C2PKGGB9",
       "ref": "p1",
       "search_key": "ティファール コードレススチームアイロン ジェットスチーム最大8",
-      "selection_score": 0.685
+      "selection_score": 0.685,
+      "model": "T-fal FV6111J0",
+      "selected_variant": {
+        "colour": "ローズ",
+        "type": "コードレススチーム"
+      }
     },
     {
       "amazon_title": "TOSHIBA(東芝) スチームアイロン コード付き 大容量 給水手間削減 TA-B75(H)",
       "asin": "B08JG1LS86",
-      "brand": "",
+      "brand": "東芝",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71wob+YzDfL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71wob+YzDfL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "power_and_workflow",
         "temperature_steam_and_care"
@@ -66,59 +71,85 @@
       "product_id": "AMZ-B08JG1LS86",
       "ref": "p2",
       "search_key": "TOSHIBA(東芝) スチームアイロン コード付き 大容量 給",
-      "selection_score": 0.505
+      "selection_score": 0.505,
+      "model": "東芝 TA-B75(H)",
+      "selected_variant": {
+        "colour": "グレー",
+        "type": "コード付き"
+      }
     },
     {
-      "amazon_title": "Jack & Rose 衣類スチームアイロン 100-240V 海外対応 変圧器不要 150ml LEDディスプレイ 出張・旅行",
-      "asin": "B0H8Y37GVW",
-      "brand": "",
+      "amazon_title": "【2026最新型 コードレス】パナソニック コードレススチームアイロン NI-WL710-K カームブラック Wヘッド ステンレス×ニッケルコート",
+      "asin": "B0GHMQ3Z5W",
+      "brand": "パナソニック",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61JAueX-TvL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71g4wKxcE7L._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0H8Y37GVW",
+      "product_id": "AMZ-B0GHMQ3Z5W",
       "ref": "p3",
       "search_key": "Jack & Rose 衣類スチームアイロン 100-240V",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "model": "パナソニック NI-WL710-K",
+      "selected_variant": {
+        "color": "カームブラック",
+        "type": "コードレススチームアイロン"
+      }
     },
     {
-      "amazon_title": "真空吸着 スチームアイロン 25秒立ち上がり1200W衣類スチーマー ハンガー掛けたまま 最大6400Pa 3段階吸引力 6種類生地モード",
-      "asin": "B0H716ZNZ3",
-      "brand": "",
+      "amazon_title": "東芝 アイロン コードレス パワフルスチーム TA-FDX970(K)",
+      "asin": "B0F8H5Q9MH",
+      "brand": "東芝",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61cb6+QG7YL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51WOLD6hjGL._AC_SL1118_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0H716ZNZ3",
+      "product_id": "AMZ-B0F8H5Q9MH",
       "ref": "p4",
       "search_key": "真空吸着 スチームアイロン 25秒立ち上がり1200W衣類スチー",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "model": "東芝 TA-FDX970(K)",
+      "selected_variant": {
+        "color": "ブラックスチール",
+        "type": "コードレススチームアイロン"
+      }
     },
     {
-      "amazon_title": "スチームアイロン「革新設計 超軽量」衣類スチーマー 小型 ハンガーにかけたまま",
-      "asin": "B0FJDPSL53",
-      "brand": "",
+      "amazon_title": "【オンライン限定】 ティファール コード付スチームアイロン パワフルスチーム 最大140g/分 オートクリーン加工 「アルティメット」FV6829J0",
+      "asin": "B0GXW3K3XM",
+      "brand": "ティファール",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61mq9-0j8FL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/710spWr0f7L._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0FJDPSL53",
+      "product_id": "AMZ-B0GXW3K3XM",
       "ref": "p5",
       "search_key": "スチームアイロン「革新設計 超軽量」衣類スチーマー 小型 ハンガ",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "model": "T-fal FV6829J0",
+      "selected_variant": {
+        "colour": "ネオンブルー×ブラック",
+        "type": "オンライン限定コード付き"
+      }
     },
     {
-      "amazon_title": "衣類スチーマー スチームアイロン 1500W作動 ハンガーにかけたまま 日本語取扱説明書 プロ仕様 黒",
-      "asin": "B0FHB7XMNX",
-      "brand": "",
+      "amazon_title": "アイリスオーヤマ スチームアイロン 最短30秒スピード立上 フッ素加工 霧吹き機能 スチームショット ブルー SIR-01-A",
+      "asin": "B015YVOPQO",
+      "brand": "IRIS OHYAMA",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61WxxcoQxyL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/5146Y8zakaL._AC_SL1000_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0FHB7XMNX",
+      "product_id": "AMZ-B015YVOPQO",
       "ref": "p6",
       "search_key": "衣類スチーマー スチームアイロン 1500W作動 ハンガーにかけ",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "model": "アイリスオーヤマ SIR-01-A",
+      "selected_variant": {
+        "color": "ブルー",
+        "type": "コード付きスチームアイロン",
+        "quantity": 1
+      }
     }
   ],
   "selection": {

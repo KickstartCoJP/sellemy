@@ -38,11 +38,11 @@
   "eyecatch_image": "https://www.sellemy.jp/img/desktop-basic-calculators/desktop-basic-calculators.png",
   "products": [
     {
-      "amazon_title": "シャープ 電卓 セミデスクトップタイプ 12桁表示 チルト機能付き EL-SA72-X",
+      "amazon_title": "シャープ EL-SA72-X",
       "asin": "B07V5F7143",
-      "brand": "",
+      "brand": "シャープ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61ilCzEmoYL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/81hR+U1ltbL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "display"
       ],
@@ -50,14 +50,15 @@
       "product_id": "AMZ-B07V5F7143",
       "ref": "p1",
       "search_key": "シャープ 電卓 セミデスクトップタイプ 12桁表示 チルト機能付",
-      "selection_score": 0.49
+      "selection_score": 0.49,
+      "selected_variant": "EL-SA72-X・12桁・1台"
     },
     {
-      "amazon_title": "カシオ W税率電卓 10桁 税計算 ホワイト ミニジャストタイプ MW-100TC-WE-N",
+      "amazon_title": "カシオ MW-100TC-WE ホワイト",
       "asin": "B07S8W1429",
-      "brand": "",
+      "brand": "カシオ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71bQAD9wkLL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71bQAD9wkLL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "calculation_power"
       ],
@@ -65,59 +66,64 @@
       "product_id": "AMZ-B07S8W1429",
       "ref": "p2",
       "search_key": "カシオ W税率電卓 10桁 税計算 ホワイト ミニジャストタイプ",
-      "selection_score": 0.49
+      "selection_score": 0.49,
+      "selected_variant": "MW-100TC-WE-N ホワイト・10桁・1台"
     },
     {
-      "amazon_title": "卓上電卓 ツイン液晶 事務用電卓 大型キー",
-      "asin": "B0HHXQ3GYR",
-      "brand": "",
+      "amazon_title": "キヤノン HS-1220TUB",
+      "asin": "B0CV4QKBTX",
+      "brand": "キヤノン",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71uB8oW7RiL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/811-nfX+JXL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0HHXQ3GYR",
+      "product_id": "AMZ-B0CV4QKBTX",
       "ref": "p3",
       "search_key": "卓上電卓 ツイン液晶 事務用電卓 大型キー",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": "HS-1220TUB・12桁・1台"
     },
     {
-      "amazon_title": "卓上電卓 大型LCDディスプレイ 12桁 数字ビッグボタン 税金会計計算機 電池式 太陽光発電 デスク オフィス 自宅 ビジネス用 (× 2)",
-      "asin": "B0HGNRV337",
-      "brand": "",
+      "amazon_title": "アスカ リーサムルフト C1258BK",
+      "asin": "B0C6QBQMMK",
+      "brand": "アスカ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71k48fRS+oL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71SUaw09MdL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0HGNRV337",
+      "product_id": "AMZ-B0C6QBQMMK",
       "ref": "p4",
       "search_key": "卓上電卓 大型LCDディスプレイ 12桁 数字ビッグボタン 税金",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": "ブラック・本体1個"
     },
     {
-      "amazon_title": "電卓 計算機 12桁 大型 見やすい 税率設定 可能 早打ち対応 シンプル ボタンが大きい ソーラー デスク オフィス 学校 ビジネス用 経理 簿記 ホワイト",
-      "asin": "B0FN7LQYZ3",
-      "brand": "",
+      "amazon_title": "アスカ ビジネス電卓 C1256W ホワイト",
+      "asin": "B0CP5GVZVH",
+      "brand": "アスカ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61JzzCAWEFL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61gr4J6PD6L._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0FN7LQYZ3",
+      "product_id": "AMZ-B0CP5GVZVH",
       "ref": "p5",
       "search_key": "電卓 計算機 12桁 大型 見やすい 税率設定 可能 早打ち対応",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": "ホワイト・12桁・本体1台"
     },
     {
-      "amazon_title": "電卓 計算機 12桁 大型 見やすい 税率設定 可能 早打ち対応 シンプル ボタンが大きい ソーラー デスク オフィス 学校 ビジネス用 経理 簿記 ブラック",
-      "asin": "B0FN7JDDVL",
-      "brand": "",
+      "amazon_title": "無印良品 電卓12桁 KK-1154MS 37355538",
+      "asin": "B08FZQMR3L",
+      "brand": "無印良品",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/719383DPhmL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61lLMkXy0aL._AC_SL1260_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0FN7JDDVL",
+      "product_id": "AMZ-B08FZQMR3L",
       "ref": "p6",
       "search_key": "電卓 計算機 12桁 大型 見やすい 税率設定 可能 早打ち対応",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": "KK-1154MS/37355538・ホワイト・12桁・1台"
     }
   ],
   "selection": {

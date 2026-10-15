@@ -1,70 +1,103 @@
 {
   "slug": "compact-mini-pcs-6-picks",
   "category": "gadget",
-  "h1": "スリムなのに頼れる！ミニPC6選",
-  "lead": "在宅ワークやクリエイティブ制作、動画視聴まで幅広く使えるミニPCの人気が高まっています。今回は処理性能とメモリ構成、設置のしやすさ、接続ポートの充実度という3つの切り口から、タイプの異なる6機種を2台ずつ比較しました。CPUパワー重視か省スペース重視かなど、用途によって最適な一台は変わります。デスク環境やマルチモニター運用に合わせて、自分に合う一台選びの参考にしてください。",
-  "summary": "今回比較した6機種は、高性能チップを積んだモデルから省スペース型、拡張性に優れたモデルまで個性が分かれます。処理性能とメモリ構成ではCPU世代や搭載メモリ量の違いが作業効率を左右し、設置のしやすさでは本体サイズや省電力設計が置き場所の自由度を決めます。接続ポートの充実度を見れば、複数モニターや周辺機器をどこまで同時に扱えるかが分かります。",
+  "h1": "小型ミニPC6製品比較｜搭載容量・OS・接続端子で選ぶ",
+  "lead": "机を広く使えるミニPCでも、搭載OSや初期メモリ、保存容量、外部機器のつなぎ方は製品ごとに異なります。今回はMac miniと5つの小型PCを、選択したCPU・メモリ・SSDの構成で比較します。同じシリーズ名の別構成や、増設できる最大容量を購入時の仕様と混同しないことが選び方の基本です。",
+  "summary": "macOSを使うならMac mini M6の16GB・512GB構成。GEEKOM A6は32GB・1TB、AIR12は8GB・256GBです。GMKtec K11とMINISFORUM UM890 ProはOCuLinkなどの端子を検討したい候補。Beelink SER8は8845HS・32GB・1TBですが、選択商品のOS欄がDOS表記である点も比較に含めます。",
+  "how_to_choose": "最初に使うアプリの対応OSを確認し、次にCPUの型番、搭載メモリ、SSD容量をそろえて比べましょう。最大増設容量は購入時の搭載量ではありません。モニター、キーボード、マウスなど必要な周辺機器と、接続用ケーブルも別に考えます。USB-C端子の形だけで映像出力や給電機能を判断せず、使う端子ごとの対応を確認してください。設置時は通気口をふさがず、指定の電源用品を使います。OCuLinkなどの内部バスを外へ出す接続は、対応機器と電源を切る手順を守りましょう。ベンチマークの宣伝値だけで実際の作業時間や静音性を決めず、必要な構成と接続条件を優先します。",
+  "conclusion": "OSを先に決めると、Mac miniとそれ以外の構成を整理しやすくなります。保存するファイルや同時に使うアプリに合わせて初期メモリ・SSDを選び、足りない端子や周辺機器がないか確認しましょう。OCuLinkを使う候補では電源を切って接続すること、UM890 ProではSSDスロットとの共有条件も重要です。SER8はDOS表記の選択商品として、OS導入を含めた準備まで考えて比較してください。",
   "comparison_groups": [
     {
-      "id": "performance_memory",
-      "title": "処理性能・メモリ構成で選ぶ",
-      "angle": "Apple製チップのモデルと、高クロックCPUを積んだモデルを比較し、CPU世代とメモリ容量が作業効率に与える違いを確認します。",
+      "id": "os_capacity",
+      "title": "macOSとWindows構成を先に分ける",
+      "angle": "Mac miniはM6・16GB・512GB、A6はRyzen 7 6800H・32GB・1TBでWindows 11 Proの案内があります。使うアプリの対応を優先します。",
       "product_refs": [
         "p1",
         "p2"
       ]
     },
     {
-      "id": "size_installation",
-      "title": "サイズ・設置性で選ぶ",
-      "angle": "ディスプレイ一体型の超小型モデルと、三画面出力に対応した省電力モデルを比較し、設置スペースと筐体サイズの違いを確認します。",
+      "id": "initial_capacity",
+      "title": "初期容量とOSの準備で比べる",
+      "angle": "AIR12は8GB・256GB、SER8は32GB・1TB。SER8はDOS表記なのでWindowsプリインストール構成として扱いません。",
       "product_refs": [
         "p3",
-        "p4"
+        "p6"
       ]
     },
     {
-      "id": "connectivity",
-      "title": "接続ポート・拡張性で選ぶ",
-      "angle": "2.5G LANやSDカードスロットを備えた2機種を比較し、接続ポートの充実度と拡張性の違いを確認します。",
+      "id": "expansion",
+      "title": "OCuLinkを含む端子と共有条件",
+      "angle": "K11とUM890 ProはRyzen 9 8945HS・32GB・1TB。OCuLinkの電源手順と、UM890 ProのSSDスロット占有条件も比較します。",
       "product_refs": [
-        "p5",
-        "p6"
+        "p4",
+        "p5"
       ]
     }
   ],
   "products": [
     {
       "ref": "p1",
-      "h3": "Apple製12コアチップ搭載、静かな高性能デスクトップ",
-      "description": "12コアCPUと12コアGPUを統合した最新チップを搭載し、動画編集や3DCG制作のような負荷の高い作業でも処理が滞りにくいのが特長です。電力効率の高い設計により長時間の連続稼働でも発熱を抑えやすく、ファン音が気になりにくい点も魅力です。同じ処理性能・メモリ構成の軸で並ぶGEEKOM A7は高クロックのRyzenと32GBメモリを積んだWindows機で、アプリの互換性や拡張性を重視するなら有力な選択肢になります。用途やOSの好みに応じて、どちらの処理性能タイプが自分に合うか比較してみてください。本体は手のひらサイズに近いコンパクトな筐体で、リビングのテレビ台やデスクの隅にも置きやすく、映像出力もクリアで高精細です。クリエイティブ用途はもちろん、日常的な作業までこなす万能型の一台として検討できます。"
+      "h3": "Apple Mac mini M6｜16GB・512GBのmacOSモデル",
+      "description": "比較対象のMac miniは、M6の12コアCPU・12コアGPU、16GBユニファイドメモリ、512GB SSDの構成です。幅と奥行きは12.7cmで、macOSのアプリを使う小さなデスクトップを探す人に向きます。前面にはUSB-Cポート2基、背面にはThunderbolt 4ポート3基とHDMI、Ethernetを備えます。USB-Cという同じ形でも前後で対応規格が異なる点に注意しましょう。付属品は本体と電源コードのため、画面や入力機器も用意する必要があります。Windows向けソフトをそのまま使えるとは限らず、普段のアプリのmacOS対応を先に確認してください。",
+      "amazon_product_url": "https://www.amazon.co.jp/dp/B0HGGGHGRP",
+      "amazon_affiliate_url": "https://www.amazon.co.jp/dp/B0HGGGHGRP?tag=sellemy-22",
+      "rakuten_search_url": "https://search.rakuten.co.jp/search/mall/Apple%20Mac%20mini%20M6%2016GB%20512GB/",
+      "yahoo_search_url": "https://shopping.yahoo.co.jp/search?p=Apple%20Mac%20mini%20M6%2016GB%20512GB"
     },
     {
       "ref": "p2",
-      "h3": "Ryzen7世代CPUと32GBメモリで余裕の処理性能",
-      "description": "最大5.1GHzで動作するAMD Ryzen 7 7840HSに32GB DDR5メモリと1TB SSDを組み合わせ、複数アプリを同時に開く作業や大容量ファイルの読み書きでもきびきびと動く処理性能が魅力です。Windows環境のため業務ソフトや周辺機器との互換性が高く、普段使いのPCをそのまま置き換えやすいのも利点です。比較対象のMac miniは12コアチップによる電力効率の高さと静音性に優れますが、こちらはクロック重視の構成で重めの処理を素早くこなしたい人に向いています。ストレージ容量にも余裕があるため、大きな動画素材や複数のプロジェクトファイルを抱えるクリエイター用途でも安心して使えます。設置性や拡張性より、まず処理速度を優先したい場合に検討したいモデルです。"
+      "h3": "GEEKOM A6｜Ryzen 7 6800H・32GB・1TB",
+      "description": "GEEKOM A6の選択モデルは、ホワイトのRyzen 7 6800H搭載機で、32GB DDR5メモリと1TB SSDを組み合わせています。商品説明はWindows 11 Proのプリインストール、HDMI2基、USB-C系ポート、SDカードスロットを案内しています。複数の周辺機器とまとまったメモリ容量を使う構成を、小さな本体で検討したい人の候補です。VESAマウント付属の記載もあるため、対応モニターの背面へ置く方法も比較できます。ただし、装着できる寸法や通気スペースを確認し、画面数の表記からすべての出力で同じ解像度を得られるとは考えないようにしましょう。",
+      "amazon_product_url": "https://www.amazon.co.jp/dp/B0HDCBHPS1",
+      "amazon_affiliate_url": "https://www.amazon.co.jp/dp/B0HDCBHPS1?tag=sellemy-22",
+      "rakuten_search_url": "https://search.rakuten.co.jp/search/mall/GEEKOM%20A6%206800H%2032GB%201TB%20%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88/",
+      "yahoo_search_url": "https://shopping.yahoo.co.jp/search?p=GEEKOM%20A6%206800H%2032GB%201TB%20%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88"
     },
     {
       "ref": "p3",
-      "h3": "三画面出力に対応した省電力設計のコンパクト機",
-      "description": "Intel製省電力プロセッサーを採用し、発熱や消費電力を抑えながら8Kの三画面同時出力に対応できるのが特長です。本体サイズはコンパクトながら64GBメモリと4TBまでのSSD拡張に対応し、省スペースでも将来的な容量不足を心配しにくい構成になっています。設置性を重視したい場面では、デスク上は無論、壁掛けやモニター裏への設置を想定した薄型筐体が役立ち、配線もすっきりまとめやすくなります。比較対象のディスプレイ付きミニPCは手軽に単体導入しやすい一台ですが、こちらは複数画面での資料作成や監視業務など、省スペースのまま高い作業効率を求める用途に向いています。オフィスでの常時稼働やAIエージェントを使った業務自動化など、業務用途での常設運用を考えている人に適したモデルです。"
+      "h3": "GEEKOM AIR12｜Pentium Gold 7505・8GB・256GB",
+      "description": "GEEKOM AIR12は、Pentium Gold 7505、8GBメモリ、256GB SSDの選択構成です。今回の32GB・1TBモデルとは、初期状態のメモリと保存容量に差があります。文書作成やWeb閲覧など、使うソフトと保存量を絞って小型パソコンを選びたい人の比較候補です。商品説明にある最大拡張容量は購入時の搭載量ではないため、8GB・256GBを基準に考えましょう。HDMI、Mini DisplayPort、USB-Cの記載はありますが、具体的な解像度や同時出力の組み合わせは接続機器に合わせて確認してください。長期無停止運転や静音性能を保証する製品としては評価しません。",
+      "amazon_product_url": "https://www.amazon.co.jp/dp/B0GR8VCQMT",
+      "amazon_affiliate_url": "https://www.amazon.co.jp/dp/B0GR8VCQMT?tag=sellemy-22",
+      "rakuten_search_url": "https://search.rakuten.co.jp/search/mall/GEEKOM%20AIR12%207505%208GB%20256GB/",
+      "yahoo_search_url": "https://shopping.yahoo.co.jp/search?p=GEEKOM%20AIR12%207505%208GB%20256GB"
     },
     {
       "ref": "p4",
-      "h3": "ディスプレイ一体型で設置場所を選ばない小型モデル",
-      "description": "Intel N95プロセッサーに8GBメモリと256GB SSDを組み合わせ、NVMe規格での容量追加にも対応する手のひらサイズの超小型設計が特長です。HDMI2.1やDisplayPort、Type-Cを備え、4K解像度での2画面同時出力にも対応するため、省スペースなのに作業領域を広く確保できます。自動調整式の冷却ファンを搭載し、負荷に応じて回転数を調整することで、狭い設置場所でも発熱がこもりにくい点も安心材料です。比較対象のGEEKOM Air12は三画面出力や大容量拡張に強みを持つ一方、こちらはより省スペースで導入しやすい単体完結型の一台として、在宅ワークや書斎の限られたスペースに向いています。WIFI6やBluetooth5.2にも対応し、USBポートを含めた周辺機器接続も一通りそろっている点が魅力です。"
+      "h3": "GMKtec NucBox K11｜32GB・1TBと拡張端子",
+      "description": "GMKtec NucBox K11は、Ryzen 9 8945HS、32GB DDR5メモリ、1TB SSDのモデルです。商品説明はUSB4ポート2基、HDMI、DisplayPort、2.5GbE LAN2基、OCuLinkを案内しています。接続するストレージや画面、ネットワーク機器が多く、端子の種類を重視する人の候補です。OCuLinkは対応する外付けGPUドックなどを使うための接続で、GPUそのものが付属するという意味ではありません。抜き差しは必ず電源を切った状態で行う必要があります。付属120W DC電源アダプターの記載があり、USB-Cポートなら任意の充電器で動くとは考えず、指定された給電条件で使いましょう。",
+      "amazon_product_url": "https://www.amazon.co.jp/dp/B0DPCH1232",
+      "amazon_affiliate_url": "https://www.amazon.co.jp/dp/B0DPCH1232?tag=sellemy-22",
+      "rakuten_search_url": "https://search.rakuten.co.jp/search/mall/GMKtec%20NucBox%20K11%208945HS%2032GB%201TB/",
+      "yahoo_search_url": "https://shopping.yahoo.co.jp/search?p=GMKtec%20NucBox%20K11%208945HS%2032GB%201TB"
     },
     {
       "ref": "p5",
-      "h3": "2.5G LANとSDスロットを備えた拡張性重視モデル",
-      "description": "AMD Ryzen 7730Uを採用し、標準で32GBの大容量メモリを搭載しながら最大128GBまでの増設にも対応する余裕のある構成です。接続面では2.5G LANポートに加えてSDカードスロットを備え、有線での安定した通信とカメラ素材の取り込みを一台で完結できます。4画面同時の8K出力に対応しているため、複数モニターを使った資料作成やトレードモニタリングなど、画面数を必要とする業務用途にも向いています。比較対象のGEEKOM A5も同じく2.5G LANと複数画面出力に対応しますが、こちらはケンジントンロックに対応し、オフィスや共有スペースでの盗難対策を考慮したい場面で安心感があります。拡張性と接続性を両立したモデルを探しているなら、有力な候補になる一台です。"
+      "h3": "MINISFORUM UM890 Pro｜OCuLinkの占有条件も確認",
+      "description": "MINISFORUM UM890 Proの比較対象は、Ryzen 9 8945HS、32GBメモリ、1TB SSDのセットです。Windows 11 Proの構成として記録され、USB4ポート2基、HDMI、DisplayPort、2.5GbE LAN2基とOCuLinkを備えると説明されています。複数の接続端子を使い分ける机上環境を考える人の候補です。特にOCuLinkはホットスワップ非対応で、M.2 2280 PCIe4.0 SSDスロットの一つを占有するという注意があります。外付けGPUと内部ストレージ拡張を同時に検討する場合は、この共有条件を先に確認してください。最大拡張容量と標準搭載の32GB・1TBは分けて比較しましょう。",
+      "amazon_product_url": "https://www.amazon.co.jp/dp/B0FH1QP6KY",
+      "amazon_affiliate_url": "https://www.amazon.co.jp/dp/B0FH1QP6KY?tag=sellemy-22",
+      "rakuten_search_url": "https://search.rakuten.co.jp/search/mall/MINISFORUM%20UM890%20Pro%208945HS%2032GB%201TB/",
+      "yahoo_search_url": "https://shopping.yahoo.co.jp/search?p=MINISFORUM%20UM890%20Pro%208945HS%2032GB%201TB"
     },
     {
       "ref": "p6",
-      "h3": "静音設計とマルチ出力を両立した高耐久モデル",
-      "description": "8コア16スレッド、最大4.5GHzで動作するRyzen 7730Uを搭載し、2.5G LANとWIFI6、Bluetooth5.4までそろえた接続性の高さが魅力です。SDカードリーダーを備えるため、カメラやドローンで撮影した素材をケーブルレスでそのまま取り込めるのも実務的なポイントです。4画面での8K同時出力に対応し、ストレージも最大10TBまで拡張できるため、映像データを大量に扱う現場でも容量不足になりにくい構成です。比較対象のGEEKOM A7は32GBメモリを標準搭載する点で処理面の余裕を重視していますが、こちらは24時間稼働を想定した耐久設計と動作音を抑えた静かな運用に強みがあります。長時間の連続稼働や常時接続のサーバー的な使い方を想定するなら、検討したい一台です。"
+      "h3": "Beelink SER8｜8845HS・32GB・1TBのシルバー",
+      "description": "Beelink SER8は、Ryzen 7 8845HS、32GBメモリ、1TB SSDのシルバー構成を選んでいます。同じSER8でもCPUやメモリが異なる選択肢があるため、8745HSや16GBモデルとは区別してください。CPUは8コア16スレッドの案内があり、搭載CPUと初期容量をそろえて比較したい人の候補です。この選択商品のOS欄はDOS表記で、Windowsがインストールされた状態で届くことを前提にはできません。使用するOSの用意や導入条件まで含めて検討し、すぐにWindows環境を使いたい人はプリインストールが明記された構成と分けて選びましょう。",
+      "amazon_product_url": "https://www.amazon.co.jp/dp/B0DHRHDK5P",
+      "amazon_affiliate_url": "https://www.amazon.co.jp/dp/B0DHRHDK5P?tag=sellemy-22",
+      "rakuten_search_url": "https://search.rakuten.co.jp/search/mall/Beelink%20SER8%208845HS%2032GB%201TB%20%E3%82%B7%E3%83%AB%E3%83%90%E3%83%BC/",
+      "yahoo_search_url": "https://shopping.yahoo.co.jp/search?p=Beelink%20SER8%208845HS%2032GB%201TB%20%E3%82%B7%E3%83%AB%E3%83%90%E3%83%BC"
     }
   ],
-  "how_to_choose": "選び方の基本は、まず用途に見合う処理性能とメモリ構成を見極めることです。写真編集や複数アプリの同時起動が多いなら、CPU世代が新しく大容量メモリを積んだモデルが安心です。次に設置場所との相性も重要で、デスク上のスペースが限られるならコンパクトな筐体や省電力設計のモデルが向いています。さらに外部モニターや周辺機器を多用するなら、HDMI出力や有線LAN、USBポート数など接続ポートの充実度を確認しましょう。将来的な拡張性やメンテナンス性も含めて、日々の使い方に無理のない一台を選ぶことが満足度につながります。",
-  "conclusion": "ミニPCは年々進化しており、省スペースでも妥協のない処理性能や拡張性を備えたモデルが増えています。今回紹介した6機種を参考に、CPUとメモリのバランス、設置のしやすさ、接続ポートの充実度を見比べながら、日々の作業スタイルに合った一台を見つけてください。"
+  "status": "READY",
+  "publish_allowed": false,
+  "recovery_qa_provenance": {
+    "original_status": "AUTHOR_READY_PENDING_INDEPENDENT_QA",
+    "source_body_sha256": "f55963ffca8b196a90ede8be111ce592eebe734328aef08aad08cd8d73110acb",
+    "source_evidence_sha256": "26256b4e69af7a0617a5902316db88f4b18695344f668bc91fb251f3963538f6",
+    "independent_qa_verdict": "PASS",
+    "note": "only workflow status transitioned after exact independent QA SHA match; prose unchanged"
+  }
 }

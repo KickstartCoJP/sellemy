@@ -41,9 +41,9 @@
     {
       "amazon_title": "サンワダイレクト ボイスレコーダー 小型 乾電池式 メモリ16GB内蔵 microSDカード対応 録音機 会議用 400-SCNICR5",
       "asin": "B0HCXLBCN2",
-      "brand": "",
+      "brand": "サンワダイレクト",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61YK1VhQ2BL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61YK1VhQ2BL._AC_SL1280_.jpg",
       "matched_comparison_axes": [
         "data_power"
       ],
@@ -51,72 +51,122 @@
       "product_id": "AMZ-B0HCXLBCN2",
       "ref": "p1",
       "search_key": "サンワダイレクト ボイスレコーダー 小型 乾電池式 メモリ16G",
-      "selection_score": 0.505
+      "selection_score": 0.505,
+      "selected_variant": {
+        "color": "N/A（色選択なし）",
+        "size": "小型本体1台（サイズバリエーションなし）",
+        "capacity": "内蔵16GB、microSD最大64GB",
+        "pack_and_contents": "本体＋USBケーブル＋取扱説明書",
+        "selected_variations": {}
+      }
     },
     {
       "amazon_title": "ボイスレコーダー 小型 icレコーダー【デュアルマイク搭載 &大ボタン簡単操作& 32GB大容量】 1536kbps",
       "asin": "B0HHGX6K7T",
-      "brand": "",
+      "brand": "GOHHME",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71PHx531ohL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71PHx531ohL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B0HHGX6K7T",
       "ref": "p2",
       "search_key": "ボイスレコーダー 小型 icレコーダー 1536kbps",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "color": "N/A（色選択なし）",
+        "size": "厚さ14mm（説明欄）、サイズバリエーションなし",
+        "capacity": "内蔵32GB",
+        "pack_and_contents": "本体＋充電ケーブル＋説明書",
+        "selected_variations": {}
+      }
     },
     {
       "amazon_title": "ボイスレコーダー 32GB大容量 ICレコーダー 3072kbps ワンボタン録音 音声検知 Type-C充電 パスワード保護 黒",
       "asin": "B0HFWLN46X",
-      "brand": "",
+      "brand": "Olycism",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71v7DbldKfL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71v7DbldKfL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B0HFWLN46X",
       "ref": "p3",
       "search_key": "ボイスレコーダー 32GB大容量 ICレコーダー 3072kbp",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "color": "黒",
+        "size": "サイズ選択なし。寸法欄100×15×80mm",
+        "capacity": "内蔵32GB",
+        "pack_and_contents": "本体＋有線イヤホン＋Type-C充電データケーブル",
+        "selected_variations": {
+          "memory_storage_capacity": "32.0 GB"
+        }
+      }
     },
     {
       "amazon_title": "ボイスレコーダー ペン型 32GB メモリカード付属 長時間録音 ワンタッチ録音 VOR 音声検知 ノイズ低減",
       "asin": "B0HFSJ129B",
-      "brand": "",
+      "brand": "Olycism",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61dtRQ53AWL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61dtRQ53AWL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B0HFSJ129B",
       "ref": "p4",
       "search_key": "ボイスレコーダー ペン型 32GB メモリカード付属 長時間録音",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "color": "シルバー",
+        "size": "ペン型、寸法欄140×13×15mm",
+        "capacity": "付属32GBメモリーカード",
+        "pack_and_contents": "本体、有線イヤホン、USB充電ケーブル、カード、説明書、替芯6本、ドライバー",
+        "selected_variations": {
+          "memory_storage_capacity": "32.0 GB"
+        }
+      }
     },
     {
-      "amazon_title": "Comulytic Note Pro AIボイスレコーダー 文字起こし無料・無制限 AI議事録作成 98%高精度 話者識別 最大45時間録音",
-      "asin": "B0H7RXWKBM",
-      "brand": "",
+      "amazon_title": "Notta Memo AIボイスレコーダー (Type-C充電対応 / 32GB) 自動文字起こし 議事録 翻訳/専用マグネットケース付属 ブラック",
+      "asin": "B0G3GH1H1K",
+      "brand": "notta",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/512Ks4mrzgL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/618uJWopcvL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0H7RXWKBM",
+      "product_id": "AMZ-B0G3GH1H1K",
       "ref": "p5",
       "search_key": "Comulytic Note Pro AIボイスレコーダー 文字",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "color": "ブラック",
+        "size": "0.3×5.5×8.6cm",
+        "capacity": "32GB",
+        "pack_and_contents": "本体＋Type-C対応専用マグネットケース",
+        "selected_variations": {
+          "color_name": "ブラック"
+        }
+      }
     },
     {
       "amazon_title": "BOYA Notra AI ボイスレコーダー 文字起こし 600分無料 Bluetooth/通話/環境音録音モード 多言語対応 ブラック",
       "asin": "B0H4Z6K65T",
-      "brand": "",
+      "brand": "BOYA",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61ntE2+xi5L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61ntE2+xi5L._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B0H4Z6K65T",
       "ref": "p6",
       "search_key": "BOYA Notra AI ボイスレコーダー 文字起こし 600",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "color": "ブラック",
+        "size": "6.3×6.3×0.7cm",
+        "capacity": "64GB",
+        "pack_and_contents": "本体、Type-Cケーブル、Type-A変換、マグネットリング",
+        "selected_variations": {
+          "color_name": "ブラック"
+        }
+      }
     }
   ],
   "selection": {

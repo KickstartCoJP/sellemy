@@ -48,8 +48,8 @@
       "product_id": "AMZ-B0HCM3CLK5",
       "asin": "B0HCM3CLK5",
       "amazon_title": "ヘッドホン bluetooth ワイヤレスヘッドホン yjjc ブルートゥース ヘッドホン オーバーイヤー 音漏れ防止 密閉型 ANCノイズキャンセリング 自動ペアリング 有線 無線両用 折りたたみ可能 内蔵マイク付き Type-C急速充電 3.5mmケーブル付き 通勤通学/WEB会議 に適用 iOS/Android（ブラック1.01）",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/619Wiv6mjjL._AC_UL320_.jpg",
+      "brand": "yjjc",
+      "image_url": "https://m.media-amazon.com/images/I/619Wiv6mjjL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.71,
@@ -57,15 +57,20 @@
         "battery_life",
         "noise_cancelling"
       ],
-      "search_key": "ヘッドホン bluetooth ワイヤレスヘッドホン yjjc"
+      "search_key": "ヘッドホン bluetooth ワイヤレスヘッドホン yjjc",
+      "selected_variant": {
+        "model": "R01",
+        "color": "ブラック1.01",
+        "pack_count": 1
+      }
     },
     {
       "ref": "p2",
       "product_id": "AMZ-B0H7GSXP9D",
       "asin": "B0H7GSXP9D",
       "amazon_title": "【Amazon.co.jp限定】Bluetooth5.4 ヘッドホン bluetooth ワイヤレスヘッドホン 搭載ANCノイズキャンセリング 有線/無線 両用 最大50時間再生 マイク内蔵 ハンズフリー通話対応 マルチポイント対応 SBC/AAC対応 快適装着 軽量 オーバーイヤーヘッドホン 音漏れ防止 包耳式デザイン 折り畳み可能 3.5mmケーブル付き",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71T23r7O2DL._AC_UL320_.jpg",
+      "brand": "Zyrvox",
+      "image_url": "https://m.media-amazon.com/images/I/71T23r7O2DL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.53,
@@ -73,63 +78,90 @@
         "fit_weight",
         "noise_cancelling"
       ],
-      "search_key": "Bluetooth5.4 ヘッドホン bluetooth ワイヤ"
+      "search_key": "Bluetooth5.4 ヘッドホン bluetooth ワイヤ",
+      "selected_variant": {
+        "color": "ブラック",
+        "pack_count": 1,
+        "model_scope": "selected ASIN; exact manufacturer technical model pending"
+      }
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0GSXRR42R",
-      "asin": "B0GSXRR42R",
-      "amazon_title": "オーディオテクニカ ATH-AL5NC (E) 開放型 ワイヤレスヘッドホン オリジナルステッカー付き",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/8193mfw7bOL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0F77PMC1P",
+      "asin": "B0F77PMC1P",
+      "amazon_title": "ソニー(SONY)WH-1000XM6 ブラック:ワイヤレスヘッドホン 世界最高クラスノイズキャンセリング Bluetooth ロングバッテリー 折りたたみ 外音取り込み",
+      "brand": "SONY",
+      "image_url": "https://m.media-amazon.com/images/I/41aRyTb8uPL._AC_SL1100_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "オーディオテクニカ ATH-AL5NC (E) 開放型 ワイヤレ"
+      "search_key": "オーディオテクニカ ATH-AL5NC (E) 開放型 ワイヤレ",
+      "selected_variant": {
+        "model": "WH-1000XM6 B",
+        "color": "ブラック",
+        "set": "単品",
+        "pack_count": 1
+      }
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0GLSPPZJ4",
-      "asin": "B0GLSPPZJ4",
-      "amazon_title": "Marshall ワイヤレスノイズキャンセリングオンイヤーヘッドホン Milton A.N.C ブラック Bluetooth / 連続再生50時間 / 通話対応 【国内正規品】",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/81+nyGQ4AzL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0B6GHW1SX",
+      "asin": "B0B6GHW1SX",
+      "amazon_title": "ゼンハイザー(Sennheiser) MOMENTUM 4 Wireless ワイヤレスヘッドホン ブラック 高性能ドライバー Bluetooth ノイズキャンセリング 最大60時間再生 タッチパネル 低遅延 aptX Adaptive マルチポイント 【国内正規品】",
+      "brand": "Sennheiser",
+      "image_url": "https://m.media-amazon.com/images/I/71ZJS3GimlL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [
         "battery_life"
       ],
-      "search_key": "Marshall ワイヤレスノイズキャンセリングオンイヤーヘッド"
+      "search_key": "Marshall ワイヤレスノイズキャンセリングオンイヤーヘッド",
+      "selected_variant": {
+        "model": "MOMENTUM4 Wireless",
+        "color": "ブラック",
+        "set": "単品",
+        "pack_count": 1
+      }
     },
     {
       "ref": "p5",
       "product_id": "AMZ-B0FR42VLMX",
       "asin": "B0FR42VLMX",
       "amazon_title": "QCY H3S ワイヤレスヘッドホン Bluetooth6.0 ノイズキャンセリング 56dB ハイレゾ対応 デュアルドライバー 最大102時間再生",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61MCydb-vNL._AC_UL320_.jpg",
+      "brand": "QCY",
+      "image_url": "https://m.media-amazon.com/images/I/61MCydb-vNL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "QCY H3S ワイヤレスヘッドホン Bluetooth6.0"
+      "search_key": "QCY H3S ワイヤレスヘッドホン Bluetooth6.0",
+      "selected_variant": {
+        "model": "H3S",
+        "color": "ブラック",
+        "pack_count": 1
+      }
     },
     {
       "ref": "p6",
       "product_id": "AMZ-B0FL2KNHYM",
       "asin": "B0FL2KNHYM",
       "amazon_title": "Bose QuietComfort Ultra Headphones LE（第2世代） 空間オーディオ 完全 ワイヤレス オーバーイヤー型 ヘッドホン ノイズキャンセリング Bluetooth接続 マイク搭載 最大30時間再生 急速充電 デザートゴールド",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61ipIa0WTKL._AC_UL320_.jpg",
+      "brand": "Bose",
+      "image_url": "https://m.media-amazon.com/images/I/61ipIa0WTKL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [
         "battery_life"
       ],
-      "search_key": "Bose QuietComfort Ultra Headphon"
+      "search_key": "Bose QuietComfort Ultra Headphon",
+      "selected_variant": {
+        "model": "QuietComfort Ultra Headphones LE2nd",
+        "color": "デザートゴールド",
+        "pack_count": 1
+      }
     }
   ]
 }

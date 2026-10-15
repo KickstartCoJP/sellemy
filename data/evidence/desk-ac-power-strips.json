@@ -37,11 +37,11 @@
   "eyecatch_image": "https://www.sellemy.jp/img/desk-ac-power-strips/desk-ac-power-strips.png",
   "products": [
     {
-      "amazon_title": "サンワサプライ クランプ固定式タップ（AC4個口＋USB-C×3＋USB-A×1・PD65W・ブラック） TAP-B114UC-2BK",
+      "amazon_title": "サンワサプライ TAP-B114UC-2BK",
       "asin": "B0GGP5CP1S",
-      "brand": "",
+      "brand": "サンワサプライ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61Y1rL70AtL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61Y1rL70AtL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "installation_fit"
       ],
@@ -49,42 +49,64 @@
       "product_id": "AMZ-B0GGP5CP1S",
       "ref": "p1",
       "search_key": "サンワサプライ クランプ固定式タップ（AC4個口＋USB-C×3",
-      "selection_score": 0.48
+      "selection_score": 0.48,
+      "selected_variant": {
+        "model": "TAP-B114UC-2BK",
+        "colour": "ブラック",
+        "cord": "2m",
+        "configuration": "AC4口・USB-C3・USB-A1",
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "ClimatePartner Verified",
-      "asin": "B0GTKDCZ8D",
-      "brand": "",
+      "amazon_title": "Panasonic ザ・タップX WHA2526WP",
+      "asin": "B005FDE7WY",
+      "brand": "パナソニック",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51YsqlBYipL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/81M0IgRXSpL._SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0GTKDCZ8D",
+      "product_id": "AMZ-B005FDE7WY",
       "ref": "p2",
       "search_key": "ClimatePartner Verified",
-      "selection_score": 0.3
+      "selection_score": 0.3,
+      "selected_variant": {
+        "model": "WHA2526WP",
+        "colour": "ホワイト",
+        "cord": "2m",
+        "outlets": 6,
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "グリーンハウス 電源タップホルダー 工事不要のクランプ式 ホワイト GH-OTHA-WH",
-      "asin": "B0DQWYNF65",
-      "brand": "",
+      "amazon_title": "オーム電機 HS-T62BHL3-W",
+      "asin": "B0BP9FJJ2Q",
+      "brand": "オーム電機",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51g-ZOP76KL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/610izd65XTL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "installation_fit"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0DQWYNF65",
+      "product_id": "AMZ-B0BP9FJJ2Q",
       "ref": "p3",
       "search_key": "グリーンハウス 電源タップホルダー 工事不要のクランプ式 ホワイ",
-      "selection_score": 0.3
+      "selection_score": 0.3,
+      "selected_variant": {
+        "model": "HS-T62BHL3-W 00-5282",
+        "colour": "ホワイト",
+        "cord": "2m",
+        "outlets": 6,
+        "configuration": "雷ガード・ブレーカー付き",
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "エルパ(ELPA) デスクUSBタップ 4個口 集中スイッチ ブラック USB-A 2ポート付 クランプ式 固定タップ 延長コード 2m 耐雷サージ機能付 絶縁カバー トラッキング防止 節電 省エネ WLS-DS4232SUA(BK)",
+      "amazon_title": "ELPA WLS-DS4232SUA(BK)",
       "asin": "B0CZL67DL1",
-      "brand": "",
+      "brand": "ELPA",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/619RJdwMo9L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/619RJdwMo9L._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "installation_fit"
       ],
@@ -92,27 +114,43 @@
       "product_id": "AMZ-B0CZL67DL1",
       "ref": "p4",
       "search_key": "エルパ(ELPA) デスクUSBタップ 4個口 集中スイッチ ブ",
-      "selection_score": 0.3
+      "selection_score": 0.3,
+      "selected_variant": {
+        "model": "WLS-DS4232SUA(BK)",
+        "colour": "ブラック",
+        "cord": "2m",
+        "configuration": "AC4口・USB-A2",
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "エレコム 電源タップ タワー型 延長コード [ 12個口 ] 固定パーツ付 雷ガード ほこりシャッター 2m ブラック TT-03-1220BK",
-      "asin": "B0C9Q3NFKQ",
-      "brand": "",
+      "amazon_title": "エレコム ECT-0720BK タワー型12口タップ2m",
+      "asin": "B08HLFTN17",
+      "brand": "エレコム",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51bxOfASZ8L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61PiUOKx14L._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0C9Q3NFKQ",
+      "product_id": "AMZ-B08HLFTN17",
       "ref": "p5",
       "search_key": "エレコム 電源タップ タワー型 延長コード 固定パーツ付 雷ガー",
-      "selection_score": 0.3
+      "selection_score": 0.3,
+      "selected_variant": {
+        "model": "ECT-0720BK",
+        "color": "ブラック",
+        "cord_m": 2,
+        "ac_outlets": 12,
+        "usb_ports": "USB-A×5",
+        "pack_count": 1,
+        "jan": "4549550174732"
+      }
     },
     {
-      "amazon_title": "サンワサプライ(Sanwa Supply) 電源タップ 10個口・2P (1m) たくさん挿せるレイアウト 雷ガード マグネット ほこりシャッター 一括集中スイッチ スイングプラグ ブラック TAP-SP2110N-1BK",
+      "amazon_title": "サンワサプライ TAP-SP2110N-1BK",
       "asin": "B0C9CQQVVW",
-      "brand": "",
+      "brand": "サンワサプライ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61OvW3kvZJL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61OvW3kvZJL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "installation_fit"
       ],
@@ -120,7 +158,14 @@
       "product_id": "AMZ-B0C9CQQVVW",
       "ref": "p6",
       "search_key": "サンワサプライ(Sanwa Supply) 電源タップ 10個口",
-      "selection_score": 0.3
+      "selection_score": 0.3,
+      "selected_variant": {
+        "model": "TAP-SP2110N-1BK",
+        "colour": "ブラック",
+        "cord": "1m",
+        "outlets": 10,
+        "pack_count": 1
+      }
     }
   ],
   "selection": {

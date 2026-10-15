@@ -37,84 +37,113 @@
   "eyecatch_image": "https://www.sellemy.jp/img/compact-cordless-screwdrivers/compact-cordless-screwdrivers.png",
   "products": [
     {
-      "amazon_title": "電動ドライバー 3.6V コードレス ドライバーキット 電動トルク 6N.m 手動 20N.m 調整 USB Type-C 充電式 家庭用 小型家具 組み立て 修理 DIY",
-      "asin": "B0B469RJVW",
-      "brand": "",
+      "amazon_title": "ベッセル(VESSEL) 電動 ボールグリップ ドライバー ビット1本付 電ドラボール 220USB-1",
+      "asin": "B07KSBSK4Z",
+      "brand": "ベッセル",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71Xy1Aiv5zL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61pRoMSgUxL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "drive_control"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0B469RJVW",
+      "product_id": "AMZ-B07KSBSK4Z",
       "ref": "p1",
       "search_key": "電動ドライバー 3.6V コードレス ドライバーキット 電動トル",
-      "selection_score": 0.49
+      "selection_score": 0.49,
+      "selected_variant": {
+        "colour": "ブラック",
+        "package": "ビット1本付",
+        "body_count": 1
+      }
     },
     {
-      "amazon_title": "電動ドリル 電動ドライバー 【締めすぎ防止！25 段階の精密トルク調整 &1台3役】インパクトドライバー 電動ドライバー 小型 21V 最大42N.m 25+3段階トルク調節 LEDライト付き 無断変速 二段変速 正逆転切替 スピード調節 バッテリー2個付き コードレス 小型 軽量 DIY家具組み立て 穴あけ ネジ締め 收纳ケース 日本語取扱説明書（イエロー）",
-      "asin": "B0HH965N1K",
-      "brand": "",
+      "amazon_title": "パナソニック(Panasonic) 電動ドライバー USB Type-C 充電式 3.7V 850mAh 正転・逆転 手締め機 ブレーキ付 LEDライト ビットセット 充電ケーブル付属 軽量 小型 ネジ締め DIY 電動工具 ミニ EZ1D11S-B ブラック",
+      "asin": "B0BV9S6MG5",
+      "brand": "パナソニック",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/81IVuPu+HCL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51X21bvRUXL._AC_SL1000_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0HH965N1K",
+      "product_id": "AMZ-B0BV9S6MG5",
       "ref": "p2",
       "search_key": "電動ドリル 電動ドライバー インパクトドライバー 電動ドライバー",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": {
+        "colour": "ブラック",
+        "package": "ビットセット・USBケーブル付",
+        "body_count": 1
+      }
     },
     {
-      "amazon_title": "電動ドライバー【2WAY変形・最大トルク20N.m】充電式 小型 コードレス 電動ドリル 約280g 軽量 ストレート/L型切替 正逆転・ロック機能 LEDライト Type-C充電 強磁力チャック 45点ビットセット 延長棒 収納ケース付き 家具組立 DIY 家庭修理 日本語説明書付き",
-      "asin": "B0HFJ3CLD9",
-      "brand": "",
+      "amazon_title": "コードレスドライバー",
+      "asin": "B0C2HCM97F",
+      "brand": "ボッシュ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/719XL8CFypL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51GfTgcumBL._AC_SY300_SX300_QL70_ML2_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0HFJ3CLD9",
+      "product_id": "AMZ-B0C2HCM97F",
       "ref": "p3",
       "search_key": "電動ドライバー 充電式 小型 コードレス 電動ドリル 約280g",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": {
+        "colour": "グリーン",
+        "variant_label": "IXO7／ドライバー本体",
+        "body_count": 1
+      }
     },
     {
-      "amazon_title": "電動ドリル 電動ドライバー 【2026新登場＆1台3役】インパクトドライバー 電動ドライバー 小型 コードレス 21V 最大42N.m 25+3段階トルク調節 無断変速 2000mAh*2大容量 スピード調節 正逆転切替 LEDライト 23点豪華ドリル部品 延長アダプター 充電式ドライバー ネジ締め 穴あけ DIY家具組み立て 收纳ケース 日本語取扱説明書 (イエローブラック)",
-      "asin": "B0HF8F7RSJ",
-      "brand": "",
+      "amazon_title": "ブラックアンドデッカー(BLACK+DECKER) コードレス プッシュドライバー DIY 電動工具 締付工具 5段階調節 コンパクト LEDライト搭載 3.6V ビット 26種 キャリングケース 付き BD40K27",
+      "asin": "B0811L889V",
+      "brand": "BLACK+DECKER",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71kTJpdj1sL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/41X4YBSd3oL._AC_SL1000_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0HF8F7RSJ",
+      "product_id": "AMZ-B0811L889V",
       "ref": "p4",
       "search_key": "電動ドリル 電動ドライバー インパクトドライバー 電動ドライバー",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": {
+        "colour": "ブラック",
+        "package": "通常版、26種ビット・ケース付き",
+        "body_count": 1
+      }
     },
     {
-      "amazon_title": "Bingoods 電動ドライバー 小型 充電式 電動ドライバー 手動・電動兼用 最大3N·m/10N·m 160g S2鋼ビット14本 6.35mmアルミ合金チャック LEDライト付き コードレス DIY 家具組立 修理 初心者向け",
-      "asin": "B0HCYFFBHS",
-      "brand": "",
+      "amazon_title": "HiKOKI(ハイコーキ) 3.6V コードレスドライバードリル 充電式 1.5Ahリチウムイオン電池、急速充電器、予備電池、ケース付 DB3DL2(2LCSK)",
+      "asin": "B006OSX6VC",
+      "brand": "HiKOKI",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71BIsk489SL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51yQ4qaKw5L._AC_SL1000_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0HCYFFBHS",
+      "product_id": "AMZ-B006OSX6VC",
       "ref": "p5",
       "search_key": "Bingoods 電動ドライバー 小型 充電式 電動ドライバー",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": {
+        "package": "電池・予備電池・充電器・ケース付 2LCSK",
+        "body_count": 1
+      }
     },
     {
-      "amazon_title": "電動ドライバー【2026年 全面アップグレード 】電動ドリルドライバー・ブラシレスモーター・52N.m電動ドリル 8000mAh（4000mAh*2個）大容量バッテリー付き 25+3段階トルク 無段変速 スピード調節 リアノック 電量表示 正逆転切替 LEDライト 25点セット インパクトドライバー 強力 穴あけ DIY 電動工具 女性 初心者対応 家具組立 家庭用 日本語説明書",
-      "asin": "B0HCP79VCS",
-      "brand": "",
+      "amazon_title": "マキタ(Makita) 充電式ペンドライバドリル 7.2V 1.5Ah バッテリ2本・充電器・アルミケース付 DF012DSHX",
+      "asin": "B01L930FUQ",
+      "brand": "マキタ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/81t4h1ZUXNL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61SgYiR4S3L._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0HCP79VCS",
+      "product_id": "AMZ-B01L930FUQ",
       "ref": "p6",
       "search_key": "電動ドライバー 電動ドリルドライバー・ブラシレスモーター・52N",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": {
+        "colour": "青",
+        "package": "バッテリー2本・充電器・アルミケース付",
+        "body_count": 1
+      }
     }
   ],
   "selection": {

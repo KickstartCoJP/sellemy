@@ -46,11 +46,11 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0G6LQ2DYB",
-      "asin": "B0G6LQ2DYB",
-      "amazon_title": "アイブロウペンシル 極細0.1mm 24時間落ちない 防水防汗 ウォータープルーフ 毛流し再現 自然な仕上がり ブラシ付き 初心者向け 眉毛 ペンシル 人気 長持ち 消えない眉筆 ブロウパウダーインペンシル 眉メイク 両端が使用可能 男女兼用 (03 ダークブラウン)",
-      "brand": "ZXIYUEのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/611RTv1IePL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B079TMJ5XV",
+      "asin": "B079TMJ5XV",
+      "amazon_title": "セザンヌ 超細芯アイブロウ 03 ナチュラルブラウン",
+      "brand": "セザンヌ",
+      "image_url": "https://m.media-amazon.com/images/I/41U9DJIP35L._AC_SL1000_.jpg",
       "observed_price": 1188,
       "discovery_score": 1,
       "selection_score": 0.88,
@@ -58,15 +58,22 @@
         "ease_of_use",
         "formula_type"
       ],
-      "search_key": "ZXIYUE アイブロウペンシル 極細0.1mm 24時間落ちない 防水防汗"
+      "search_key": "ZXIYUE アイブロウペンシル 極細0.1mm 24時間落ちない 防水防汗",
+      "selected_variant": {
+        "model": "超細芯アイブロウ",
+        "colour": "03 ナチュラルブラウン",
+        "net_amount": "0.02g",
+        "pack_count": 1,
+        "JAN": "4939553040910"
+      }
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0HJHCGW81",
-      "asin": "B0HJHCGW81",
-      "amazon_title": "デジャヴュ パウダリーブロウティント ナチュラルブラウン アイブロウ 先行販売",
-      "brand": "ブランド: AMURELIA Shop",
-      "image_url": "https://m.media-amazon.com/images/I/41ao5DHV3aL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0HJHDPWXF",
+      "asin": "B0HJHDPWXF",
+      "amazon_title": "デジャヴュ パウダリーブロウティント キャメルブラウン アイブロウ 先行販売",
+      "brand": "デジャヴュ",
+      "image_url": "https://m.media-amazon.com/images/I/41UbWafMy9L._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": 2060,
       "discovery_score": 1,
       "selection_score": 0.7,
@@ -74,61 +81,94 @@
         "color_range",
         "formula_type"
       ],
-      "search_key": "AMURELIA Shop デジャヴュ パウダリーブロウティント ナチュラルブラウン アイブ"
+      "search_key": "AMURELIA Shop デジャヴュ パウダリーブロウティント ナチュラルブラウン アイブ",
+      "selected_variant": {
+        "model": "パウダリーブロウティント",
+        "colour": "キャメルブラウン",
+        "pack_count": 1
+      }
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0HCZZ1N4F",
-      "asin": "B0HCZZ1N4F",
-      "amazon_title": "Milk touch ミルクタッチ シルバーベール ティッシュオフ リップタトゥー (03 ラズベリーベール)",
-      "brand": "MILKTOUCHのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/6114cv2S6+L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B071XTGPN2",
+      "asin": "B071XTGPN2",
+      "amazon_title": "KATE(ケイト) ケイト アイブロウ デザイニングアイブロウ3D ブラウン系 EX-5 単品",
+      "brand": "KATE",
+      "image_url": "https://m.media-amazon.com/images/I/81ItHh9ES5L._AC_SL1500_.jpg",
       "observed_price": 1760,
       "discovery_score": 1,
       "selection_score": 0.52,
       "matched_comparison_axes": [],
-      "search_key": "MILKTOUCH Milk touch ミルクタッチ シルバーベール ティッシュオ"
+      "search_key": "MILKTOUCH Milk touch ミルクタッチ シルバーベール ティッシュオ",
+      "selected_variant": {
+        "model": "デザイニングアイブロウ3D",
+        "colour": "EX-5 ブラウン系",
+        "net_amount": "2.2g",
+        "pack_count": 1,
+        "configuration": "ケース・ブラシ付の単品",
+        "JAN": "4973167208397"
+      }
     },
     {
       "ref": "p4",
       "product_id": "AMZ-B0B685DDCM",
       "asin": "B0B685DDCM",
       "amazon_title": "パピリオ公式 Papilio ステイブロウG リフィル単品 ライトブラウン 落ちない スルスル描ける まゆ墨",
-      "brand": "パピリオ(Papilio)のストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/518jImA3kyL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "brand": "パピリオ",
+      "image_url": "https://m.media-amazon.com/images/I/518jImA3kyL._AC_SL1500_.jpg",
       "observed_price": 2090,
       "discovery_score": 1,
       "selection_score": 0.52,
       "matched_comparison_axes": [],
-      "search_key": "パピリオ(Papilio) パピリオ公式 Papilio ステイブロウG リフィル単品 ライ"
+      "search_key": "パピリオ(Papilio) パピリオ公式 Papilio ステイブロウG リフィル単品 ライ",
+      "selected_variant": {
+        "model": "ステイブロウG リフィル",
+        "colour": "001 ライトブラウン",
+        "pack_count": 1,
+        "configuration": "リフィルのみ。本体別売",
+        "JAN": "4562181032318"
+      }
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B089T97PTM",
-      "asin": "B089T97PTM",
-      "amazon_title": "Fujiko(フジコ) 眉ティントSVR 01ショコラブラウン 6グラム (x 1)[Fujiko公式] フジコ 眉ティントSVR アイブロウ アイブロー 眉マスカラ 眉ティント 眉毛ティント セルフタンニング 落ちにくい 消えにくい ウォータープルーフ (ライトブラウン)",
-      "brand": "ブランド: Fujiko(フジコ)",
-      "image_url": "https://m.media-amazon.com/images/I/81gn57w+4QL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0FC66D869",
+      "asin": "B0FC66D869",
+      "amazon_title": "Fujiko(フジコ) 眉ティントADV (01ショコラブラウン) アイブロウ アイブロー 眉マスカラ 眉ティント 眉毛ティント セルフタンニング 落ちにくい 消えにくい ウォータープルーフ",
+      "brand": "Fujiko",
+      "image_url": "https://m.media-amazon.com/images/I/41rh36uEu3L._AC_SL1000_.jpg",
       "observed_price": 2200,
       "discovery_score": 1,
       "selection_score": 0.52,
       "matched_comparison_axes": [
         "formula_type"
       ],
-      "search_key": "Fujiko(フジコ) 眉ティントSVR 01ショコラブラウン 6グラム (x 1) フ"
+      "search_key": "Fujiko(フジコ) 眉ティントSVR 01ショコラブラウン 6グラム (x 1) フ",
+      "selected_variant": {
+        "model": "眉ティントADV",
+        "colour": "01 ショコラブラウン",
+        "net_amount": "6g",
+        "pack_count": 1,
+        "JAN": "4589474249161"
+      }
     },
     {
       "ref": "p6",
       "product_id": "AMZ-B0BVZ7C49Y",
       "asin": "B0BVZ7C49Y",
       "amazon_title": "rom&nd HAN ALL BROW CARAロムアンドハンオールブロウカラ (02 マイルドウッディー)",
-      "brand": "rom&ndのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/61H3wZPanaL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "brand": "rom&nd",
+      "image_url": "https://m.media-amazon.com/images/I/613bN5SNC3L._AC_SL1500_.jpg",
       "observed_price": 1210,
       "discovery_score": 1,
       "selection_score": 0.47,
       "matched_comparison_axes": [],
-      "search_key": "rom&nd HAN ALL BROW CARAロムアンドハンオールブロウカラ"
+      "search_key": "rom&nd HAN ALL BROW CARAロムアンドハンオールブロウカラ",
+      "selected_variant": {
+        "model": "HAN ALL BROW CARA",
+        "colour": "02 マイルドウッディー",
+        "pack_count": 1,
+        "GTIN": "8809625246679"
+      }
     }
   ]
 }

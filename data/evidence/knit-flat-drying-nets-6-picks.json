@@ -45,11 +45,11 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0FZK7Q5HM",
-      "asin": "B0FZK7Q5HM",
-      "amazon_title": "平干しネット 折りたたみ式 2段構造 物干しネット 平ぼしネット 衣類変形防止 ニット 干し 大容量 防風 通気 型崩れしにくい コンパクト 干し柿ネット 屋内外両用 洗濯物虫よけ カメムシ 干し物ネット 家庭用 吊り下げ式フック (長方形楕円型)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71kpqOlzvLL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0CXXMZ8SZ",
+      "asin": "B0CXXMZ8SZ",
+      "amazon_title": "フランドリー (FLaundry) 平干しネット セーター・ニット・おしゃれ着の伸びや型くずれ防止物干しネット お部屋用 縦60cm×横59cm×高さ26cm 通気性の良い立体アーチ形状 室内干し 陰干し 紫外線・花粉対策 コンパクトに収納 折りたたみ ダイヤ Daiya 058158",
+      "brand": "ダイヤ",
+      "image_url": "https://m.media-amazon.com/images/I/51EuKyEIHaL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.89,
@@ -58,30 +58,40 @@
         "installation",
         "storage"
       ],
-      "search_key": "平干しネット 折りたたみ式 2段構造 物干しネット 平ぼしネット"
+      "search_key": "平干しネット 折りたたみ式 2段構造 物干しネット 平ぼしネット",
+      "selected_variant": {
+        "model": "058158",
+        "style": "お部屋用",
+        "size": "60×59×26cm"
+      }
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0HB9VCJL7",
-      "asin": "B0HB9VCJL7",
-      "amazon_title": "フランドリー (FLaundry) 洗濯ネット 美しさ続く やさしくキープネット おしゃれ着ネット 衣類が動きにくいキープシート しわ 型崩れ 毛玉 糸クズ 防止 ホームクリーニング 衝撃吸収 無蛍光 マシュマロメッシュ 立体 ニット セーター スラックス ロングスカート ランドリーネット ダイヤ Daiya 横42cm×縦17cm×底マチ10cm 058194",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/51avRgyEoeL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0H4V7FC71",
+      "asin": "B0H4V7FC71",
+      "amazon_title": "無印良品 ナイロンメッシュ 平干しネット・１段 約幅70×奥行50×高さ（フック含む）56.5cm 76953951",
+      "brand": "無印良品",
+      "image_url": "https://m.media-amazon.com/images/I/61B4hca+WjL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [
         "drying_area"
       ],
-      "search_key": "フランドリー (FLaundry) 洗濯ネット 美しさ続く やさ"
+      "search_key": "フランドリー (FLaundry) 洗濯ネット 美しさ続く やさ",
+      "selected_variant": {
+        "model": "76953951",
+        "tiers": 1,
+        "size": "70×50×56.5cm"
+      }
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0GLHBPQX8",
-      "asin": "B0GLHBPQX8",
-      "amazon_title": "Billbotk 折りたたみ平干しネット 1 層タイプ 風飛び防止フック付き ニット枕ぬいぐるみ平干し 変形防止 速乾 コンパクト収納（いちだんしき）",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71QJR-X4GxL._AC_UL320_.jpg",
+      "product_id": "AMZ-B001JBNJGG",
+      "asin": "B001JBNJGG",
+      "amazon_title": "ダイヤ (Daiya) 洗濯 物干し 平干しネット 物干しネット 折りたたみ 2段 型崩れ防止 円形 落下防止 ラウンドガード ニット セーター ぬいぐるみ 枕 乾燥 直径69cm x 高さ71.5cm 057254",
+      "brand": "ダイヤ",
+      "image_url": "https://m.media-amazon.com/images/I/61KXH+jb5pL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
@@ -89,15 +99,24 @@
         "installation",
         "storage"
       ],
-      "search_key": "Billbotk 折りたたみ平干しネット 1 層タイプ 風飛び防"
+      "search_key": "Billbotk 折りたたみ平干しネット 1 層タイプ 風飛び防",
+      "selected_variant": {
+        "model": "057254",
+        "jan": "4901948572542",
+        "color": "青縁/白ネット",
+        "diameter": "69cm",
+        "hanging_height": "71.5cm",
+        "tiers": 2,
+        "pack_count": 1
+      }
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0G63G2TT6",
-      "asin": "B0G63G2TT6",
-      "amazon_title": "3 段折りたたみコンパクト 平干しネット ニットセーター型崩れ防止 大容量物干し 防風落下防止 平置き干し網 家庭用",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61wfN7LdKqL._AC_UL320_.jpg",
+      "product_id": "AMZ-B085NNJHPD",
+      "asin": "B085NNJHPD",
+      "amazon_title": "パール金属 セーター干しネット 2段 シンプルピュア HB-5064 ホワイト",
+      "brand": "パール金属",
+      "image_url": "https://m.media-amazon.com/images/I/61v9L-XejBL._AC_SL1410_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
@@ -105,15 +124,20 @@
         "drying_area",
         "storage"
       ],
-      "search_key": "3 段折りたたみコンパクト 平干しネット ニットセーター型崩れ防"
+      "search_key": "3 段折りたたみコンパクト 平干しネット ニットセーター型崩れ防",
+      "selected_variant": {
+        "model": "HB-5064",
+        "tiers": 2,
+        "color": "ホワイト"
+      }
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0FK4G8H21",
-      "asin": "B0FK4G8H21",
-      "amazon_title": "平干しネット 物干しネット 干し網 平ぼしネット セーター干しネット 2段 型崩れ防止 防風 落下防止 大容量 平置き 折りたたみ式 コンパクト収納 通気性 洗濯便利グッズ 干しネット 平干し 枕干しネット 干し物ネット セーター/ニット/ぬいぐるみ/枕/洗濯物干しに最適 61x61x80cm",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61oUxTwSkNL._AC_UL320_.jpg",
+      "product_id": "AMZ-B09KLQ7Z8L",
+      "asin": "B09KLQ7Z8L",
+      "amazon_title": "アストロ 平干しネット グレー 下段ファスナー式 2段 物干しネット 洗濯ハンガー セーター 型崩れ防止 折りたたみ 730-21",
+      "brand": "アストロ",
+      "image_url": "https://m.media-amazon.com/images/I/71vDvt-bczL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
@@ -121,15 +145,24 @@
         "drying_area",
         "storage"
       ],
-      "search_key": "平干しネット 物干しネット 干し網 平ぼしネット セーター干しネ"
+      "search_key": "平干しネット 物干しネット 干し網 平ぼしネット セーター干しネ",
+      "selected_variant": {
+        "model": "730-21",
+        "jan": "4936602730211",
+        "color": "グレー",
+        "diameter": "61cm",
+        "hanging_height": "70cm",
+        "tiers": 2,
+        "pack_count": 1
+      }
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0F8W25H74",
-      "asin": "B0F8W25H74",
-      "amazon_title": "平干しネット 物干しネット 洗濯干しネット 厚み増強ハニカムメッシュ 3 段 折りたたみ 型崩れ防止 防風 ニット セーター ぬいぐるみ 枕 コンパクト収納 (グレー 3 段 78cm)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/81mbgTseKkL._AC_UL320_.jpg",
+      "product_id": "AMZ-B00A7JDPBU",
+      "asin": "B00A7JDPBU",
+      "amazon_title": "積水樹脂商事(Sekisuijushishoji)セキスイｾｰﾀｰ干しネットSW-1",
+      "brand": "セキスイ",
+      "image_url": "https://m.media-amazon.com/images/I/515OWlarQ-L._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
@@ -137,7 +170,15 @@
         "drying_area",
         "storage"
       ],
-      "search_key": "平干しネット 物干しネット 洗濯干しネット 厚み増強ハニカムメッ"
+      "search_key": "平干しネット 物干しネット 洗濯干しネット 厚み増強ハニカムメッ",
+      "selected_variant": {
+        "model": "SW-1",
+        "jan": "4906648100118",
+        "color": "ホワイト",
+        "size": "72×72×16cm",
+        "tiers_in_package": 1,
+        "pack_count": 1
+      }
     }
   ]
 }

@@ -45,11 +45,11 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0FTYRZGWR",
-      "asin": "B0FTYRZGWR",
-      "amazon_title": "ラボン(Lavons) トゥザムーン シャレボン おしゃれ着洗剤 洗濯洗剤 グリーンヘブンの香り 詰め替え 400ml",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71jv12LlaoL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0F2D35RWM",
+      "asin": "B0F2D35RWM",
+      "amazon_title": "エマール 洗濯洗剤 おしゃれ着 ハリ感チャージ成分２倍配合！洗うたびシワカタチ回復 リフレッシュグリーンの香り つめかえ用 １４００ｇ",
+      "brand": "花王",
+      "image_url": "https://m.media-amazon.com/images/I/71Znwgo1EKL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.685,
@@ -57,78 +57,171 @@
         "cost",
         "finish"
       ],
-      "search_key": "ラボン(Lavons) トゥザムーン シャレボン おしゃれ着洗剤"
+      "search_key": "ラボン(Lavons) トゥザムーン シャレボン おしゃれ着洗剤",
+      "selected_variant": {
+        "capacity": "1400g",
+        "pack_count": 1,
+        "format": "詰替えパウチ",
+        "scent": "リフレッシュグリーン"
+      }
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0H4V6ZFWQ",
-      "asin": "B0H4V6ZFWQ",
-      "amazon_title": "【100%天然由来 ふんわり仕上げ】博雲堂 おしゃれ着用 洗剤 シルク カシミヤ ニット ダウン セーター デニム 毛糸洗い 除菌 静電気抑制 無香料 オシャレ着 御洒落着 (440ml)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/612wZh5anxL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0HB2TXBV3",
+      "asin": "B0HB2TXBV3",
+      "amazon_title": "アクロン おしゃれぎ用洗剤 ふんわりなめらかケア 本体 430ml フローラルブーケの香り 伸び・ヨレ戻して復活 ダメージレス洗浄 洗濯洗剤",
+      "brand": "ライオン",
+      "image_url": "https://m.media-amazon.com/images/I/71zmuCc1DaL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.505,
       "matched_comparison_axes": [
         "fabric"
       ],
-      "search_key": "博雲堂 おしゃれ着用 洗剤 シルク カシミヤ ニット ダウン セ"
+      "search_key": "博雲堂 おしゃれ着用 洗剤 シルク カシミヤ ニット ダウン セ",
+      "selected_variant": {
+        "current_selection_text": "",
+        "overview": "ブランド アクロン 商品の形状 液体 香り フローラル ユニット数 430.0 ミリリットル 素材の特徴 蛍光剤無添加 商品の個数 1 商品用途・使用方法 手洗い, 洗濯機洗い 商品特長 柔軟成分配合 メーカー ライオン 表示を増やす",
+        "selected_detail_fields": [
+          {
+            "field": "ユニット数",
+            "value": "ユニット数 430.0 ミリリットル"
+          },
+          {
+            "field": "商品の個数",
+            "value": "商品の個数 1"
+          },
+          {
+            "field": "ユニット数",
+            "value": "ユニット数 430.0 ミリリットル"
+          }
+        ]
+      }
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0GM6K3VC1",
-      "asin": "B0GM6K3VC1",
-      "amazon_title": "アタックZERO 衣類から洗濯槽まで、アタックZERO液体史上 最高峰の消臭 大本体 570ｇ",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61KTIu5PN2L._AC_UL320_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.325,
-      "matched_comparison_axes": [],
-      "search_key": "アタックZERO 衣類から洗濯槽まで、アタックZERO液体史上"
-    },
-    {
-      "ref": "p4",
       "product_id": "AMZ-B0FTYSD9JK",
       "asin": "B0FTYSD9JK",
       "amazon_title": "ラボン(Lavons) トゥザムーン シャレボン おしゃれ着洗剤 洗濯洗剤 グリーンヘブンの香り 500ml",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61tQbyc7h-L._AC_UL320_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.325,
-      "matched_comparison_axes": [
-        "finish"
-      ],
-      "search_key": "ラボン(Lavons) トゥザムーン シャレボン おしゃれ着洗剤"
-    },
-    {
-      "ref": "p5",
-      "product_id": "AMZ-B0F47ZSG19",
-      "asin": "B0F47ZSG19",
-      "amazon_title": "洗濯工房 ダウン&ニット衣類のクリーニング洗剤 80mL ダウン ニット クリーニング 洗剤 自宅で洗える 手洗い 洗濯機 酵素 汚れ 分解 弱酸性",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71k+HbxM4GL._AC_UL320_.jpg",
+      "brand": "ネイチャーラボ",
+      "image_url": "https://m.media-amazon.com/images/I/61tQbyc7h-L._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [],
-      "search_key": "洗濯工房 ダウン&ニット衣類のクリーニング洗剤 80mL ダウン"
+      "search_key": "アタックZERO 衣類から洗濯槽まで、アタックZERO液体史上",
+      "selected_variant": {
+        "current_selection_text": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. 色: グリーンヘブン 色の選択ができます おすすめ出品がない0オプションを見る ← 1 →",
+        "overview": "ブランド Lavons(ラボン) 商品の形状 液体 香り グリーンヘブン ユニット数 500.0 ミリリットル 商品の個数 1 商品用途・使用方法 洗濯機洗い 商品特長 抗菌 メーカー ネイチャーラボ 表示を増やす",
+        "selected_detail_fields": [
+          {
+            "field": "ユニット数",
+            "value": "ユニット数 500.0 ミリリットル"
+          },
+          {
+            "field": "商品の個数",
+            "value": "商品の個数 1"
+          },
+          {
+            "field": "ユニット数",
+            "value": "ユニット数 500.0 ミリリットル"
+          }
+        ]
+      }
     },
     {
-      "ref": "p6",
-      "product_id": "AMZ-B0F2D35RWM",
-      "asin": "B0F2D35RWM",
-      "amazon_title": "エマール 洗濯洗剤 おしゃれ着 ハリ感チャージ成分２倍配合！洗うたびシワカタチ回復 リフレッシュグリーンの香り つめかえ用 １４００ｇ",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71Znwgo1EKL._AC_UL320_.jpg",
+      "ref": "p4",
+      "product_id": "AMZ-B08K9S86B7",
+      "asin": "B08K9S86B7",
+      "amazon_title": "ECOVER(エコベール) エコベール おしゃれ着洗剤 本体 ウォーターリリーの香り 750ml×2個 液体洗剤 ecover デリケートウォッシュ 肌に優しい 植物由来 海外 赤ちゃん laundry 日用品 ベビー まとめ買い",
+      "brand": "エコベール",
+      "image_url": "https://m.media-amazon.com/images/I/719qdr7OuXS._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [
         "finish"
       ],
-      "search_key": "エマール 洗濯洗剤 おしゃれ着 ハリ感チャージ成分２倍配合！洗う"
+      "search_key": "ラボン(Lavons) トゥザムーン シャレボン おしゃれ着洗剤",
+      "selected_variant": {
+        "capacity_each": "750mL",
+        "pack_count": 2,
+        "scent": "ウォーターリリー",
+        "format": "本体2本"
+      }
+    },
+    {
+      "ref": "p5",
+      "product_id": "AMZ-B0916L3MQ9",
+      "asin": "B0916L3MQ9",
+      "amazon_title": "【Amazon.co.jp 限定】UYEKI(ウエキ) ドライニング おしゃれ着洗剤 ノンシリコン 液体タイプ 本体 500mL",
+      "brand": "UYEKI",
+      "image_url": "https://m.media-amazon.com/images/I/71ANCY1BVXS._AC_SL1500_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [],
+      "search_key": "洗濯工房 ダウン&ニット衣類のクリーニング洗剤 80mL ダウン",
+      "selected_variant": {
+        "capacity": "500mL",
+        "pack_count": 1,
+        "format": "本体ボトル",
+        "listing": "Amazon.co.jp限定",
+        "scent": "オレンジ"
+      }
+    },
+    {
+      "ref": "p6",
+      "product_id": "AMZ-B08NSHJXQB",
+      "asin": "B08NSHJXQB",
+      "amazon_title": "アイメディア(Aimedia) 洗濯洗剤 液体洗剤 おしゃれ着洗剤 80g ダウン ニット クリーニング屋さん 業務用 洗濯 仕上げ剤",
+      "brand": "アイメディア",
+      "image_url": "https://m.media-amazon.com/images/I/61L4zw92dYL._AC_SL1000_.jpg",
+      "observed_price": null,
+      "discovery_score": 1,
+      "selection_score": 0.325,
+      "matched_comparison_axes": [
+        "finish"
+      ],
+      "search_key": "エマール 洗濯洗剤 おしゃれ着 ハリ感チャージ成分２倍配合！洗う",
+      "selected_variant": {
+        "current_selection_text": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. フレーバー名: ダウンも洗えるニット洗い洗剤 80g フレーバー名の選択ができます ダウンも洗えるニット洗い洗剤 80g ダウン・おしゃれ着用ボール型洗剤 / 3袋セット ダウンも洗えるニット洗い洗剤 180g ダウン・おしゃれ着用ボール型洗剤 / 単品 布団・毛布用ボール型洗剤 / 単品 洗濯機で洗うダウン専用洗剤 / 単品 ダウン汚れ水洗い不要の泡洗剤 / 単品 おすすめ出品がない0オプションを見る ← 1 →",
+        "overview": "ブランド アイメディア(Aimedia) 商品の形状 液体 香り 無香料 ユニット数 80.0 グラム 素材タイプフリー パラベンフリー, 漂白剤不使用, 無着色, 無香料 商品の個数 1 商品用途・使用方法 個人, 業務用 商品の重量 80 グラム 商品寸法 (長さx幅x高さ) 32 x 45 x 120 mm 商品のハイライト 洗濯 縮み補修 スクワラン配合 弱酸性 ドライマーク対応 手洗い ドライコース おしゃれ着洗剤 表示を増やす",
+        "selected_detail_fields": [
+          {
+            "field": "ユニット数",
+            "value": "ユニット数 80.0 グラム"
+          },
+          {
+            "field": "素材タイプフリー",
+            "value": "素材タイプフリー パラベンフリー, 漂白剤不使用, 無着色, 無香料"
+          },
+          {
+            "field": "商品の個数",
+            "value": "商品の個数 1"
+          },
+          {
+            "field": "内容量/サイズ",
+            "value": "内容量/サイズ 80g / 180g 160ml 70g / 175g 収納時/(約)直径22×厚み6cm、使用時/(約)直径60×高さ75cm"
+          },
+          {
+            "field": "ユニット数",
+            "value": "ユニット数 80.0 グラム"
+          },
+          {
+            "field": "商品本体サイズ",
+            "value": "商品本体サイズ 32 x 45 x 120 mm"
+          },
+          {
+            "field": "パッケージサイズ名",
+            "value": "パッケージサイズ名 80g"
+          },
+          {
+            "field": "防カビ加工",
+            "value": "防カビ加工 パラベンフリー, 漂白剤不使用, 無着色, 無香料"
+          }
+        ]
+      }
     }
   ]
 }

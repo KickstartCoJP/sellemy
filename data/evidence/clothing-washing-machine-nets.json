@@ -40,11 +40,11 @@
   "eyecatch_image": "https://www.sellemy.jp/img/clothing-washing-machine-nets/clothing-washing-machine-nets.png",
   "products": [
     {
-      "amazon_title": "ダイヤ (Daiya) 洗濯ネット ランドリーネット SS角型洗たくネットビック 大型 ドラム式対応 乾燥機対応 YKKファスナー こだわり洗い 1枚入れ ジャストサイズ 約10%水切れが良い水切れガードメッシュ 長袖パーカー 長袖スウェット 横30×縦34cm 057991",
+      "amazon_title": "ダイヤ SS角型洗たくネットビッグ057991",
       "asin": "B0GGGX373P",
-      "brand": "",
+      "brand": "ダイヤ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/616mW5HV9AL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/616mW5HV9AL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "load_shape",
         "machine_compatibility"
@@ -53,74 +53,116 @@
       "product_id": "AMZ-B0GGGX373P",
       "ref": "p1",
       "search_key": "ダイヤ (Daiya) 洗濯ネット ランドリーネット SS角型洗",
-      "selection_score": 0.66
+      "selection_score": 0.66,
+      "model": "057991 SS角型洗たくネットビッグ",
+      "selected_variant": {
+        "model": "057991 SS角型洗たくネットビッグ",
+        "colour": "本体ホワイト・ファスナーネイビー",
+        "size": "30×34cm",
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "洗濯ネット 細かい網目 衣類保護 絡み防止 型崩れ防止",
-      "asin": "B0HG93SZ32",
-      "brand": "",
+      "amazon_title": "レック HLa 丸型洗濯ネット 特大 粗目 W-443 3個セット",
+      "asin": "B0DP3ZG97V",
+      "brand": "レック",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61SmdFQAPiL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71Dr+ptRV9L._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "mesh_structure"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0HG93SZ32",
+      "product_id": "AMZ-B0DP3ZG97V",
       "ref": "p2",
       "search_key": "洗濯ネット 細かい網目 衣類保護 絡み防止 型崩れ防止",
-      "selection_score": 0.48
+      "selection_score": 0.48,
+      "model": "W-443",
+      "selected_variant": {
+        "model": "W-443",
+        "shape": "丸型",
+        "diameter_cm": 38,
+        "mesh": "粗目",
+        "pack_count": 3
+      }
     },
     {
-      "amazon_title": "フランドリー (FLaundry) 洗濯ネット 美しさ続く やさしくキープネットワイド おしゃれ着ネット 衣類が動きにくいキープシート しわ 型崩れ 毛玉 糸クズ 防止 ホームクリーニング 衝撃吸収 無蛍光 マシュマロメッシュ 立体 ニット セーター スラックス ロングスカート ランドリーネット ダイヤ Daiya 横52cm×縦17cm×底マチ10cm 058195",
+      "amazon_title": "ダイヤ フランドリー・やさしくキープネットワイド058195",
       "asin": "B0HB9NBDDX",
-      "brand": "",
+      "brand": "ダイヤ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51NnWe7AFML._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51NnWe7AFML._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B0HB9NBDDX",
       "ref": "p3",
       "search_key": "フランドリー (FLaundry) 洗濯ネット 美しさ続く やさ",
-      "selection_score": 0.3
+      "selection_score": 0.3,
+      "model": "058195 やさしくキープネットワイド",
+      "selected_variant": {
+        "model": "058195 やさしくキープネットワイド",
+        "colour": "ホワイト 無蛍光生地",
+        "size": "52×17×底マチ10cm",
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "藤栄(FUJIEI) HUG COTTON オーガニックコットン ランドリーネット S (目安：靴下3足) | 日本製 洗濯ネット 巾着型 衣類ケア おしゃれ着洗い マイクロプラスチック 対策 脱プラ プラスチックフリー HG-001",
+      "amazon_title": "藤栄 HUG COTTONランドリーネットS HG-001",
       "asin": "B0H4QTQK9Y",
-      "brand": "",
+      "brand": "藤栄",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71RN8NVM8zL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71RN8NVM8zL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B0H4QTQK9Y",
       "ref": "p4",
       "search_key": "藤栄(FUJIEI) HUG COTTON オーガニックコットン",
-      "selection_score": 0.3
+      "selection_score": 0.3,
+      "model": "HG-001 HUG COTTON",
+      "selected_variant": {
+        "model": "HG-001 HUG COTTON",
+        "size": "S・20×30cm",
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "【家事のプロ監修】 洗濯ネット バリエーションセット 7枚セット S/M/L/XL（25×35・30×40・40×50・50×60・cm） ランドリーネット 極細メッシュ 抗菌 丈夫 長持ち 型崩れ防止 下着 旅行 収納",
-      "asin": "B0GYR8BT5R",
-      "brand": "",
+      "amazon_title": "無印良品 ポリエステル両面使える洗濯ネット丸型・小83932350",
+      "asin": "B0F6CKTX3Q",
+      "brand": "無印良品",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61N7WZyxnqL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51FWJMHBbGL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0GYR8BT5R",
+      "product_id": "AMZ-B0F6CKTX3Q",
       "ref": "p5",
       "search_key": "洗濯ネット バリエーションセット 7枚セット S/M/L/XL（",
-      "selection_score": 0.3
+      "selection_score": 0.3,
+      "model": "83932350",
+      "selected_variant": {
+        "model": "83932350",
+        "variant": "ポリエステル両面使える洗濯ネット丸型・小",
+        "colour": "ホワイト",
+        "size": "36.5×25×25cm",
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "【家事のプロ監修】 洗濯ネット 大型 増量8枚セット 快適ファスナー L40×50cm M30×40cm おしゃれ着 セーター バスタオル対応 丈夫 日本企画 品質検査合格済み グレー",
-      "asin": "B0F27T26GK",
-      "brand": "",
+      "amazon_title": "アイセン 洗濯ネット角型色柄物用LE218",
+      "asin": "B009SJG0DU",
+      "brand": "アイセン",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71ch93y5hYL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71HVs2euMxL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0F27T26GK",
+      "product_id": "AMZ-B009SJG0DU",
       "ref": "p6",
       "search_key": "洗濯ネット 大型 増量8枚セット 快適ファスナー L40×50c",
-      "selection_score": 0.3
+      "selection_score": 0.3,
+      "model": "LE218",
+      "selected_variant": {
+        "model": "LE218",
+        "size": "40×50cm",
+        "pack_count": 1
+      }
     }
   ],
   "selection": {

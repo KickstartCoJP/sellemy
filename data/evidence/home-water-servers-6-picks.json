@@ -56,11 +56,11 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0HGND8RK7",
-      "asin": "B0HGND8RK7",
-      "amazon_title": "ウォーターサーバー 底面給水式 オフィス向け 床置き型 ３口独立給水 冷温水対応 ディスペンサー(お湯 + 常温水 + 冷水,グレー)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/51cDPVC2n9L._AC_UL320_.jpg",
+      "product_id": "AMZ-B09NLVTK6Z",
+      "asin": "B09NLVTK6Z",
+      "amazon_title": "【Toffy/トフィー】 ウォーターサーバー K-WS2 アッシュホワイト 卓上型温冷両用タイプ 市販の2Lペットボトル対応 ほこり防止機能付き 安全ロック機能付き レトロ コンパクト K-WS2-AW",
+      "brand": "Toffy",
+      "image_url": "https://m.media-amazon.com/images/I/51owJJVbfwL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.76,
@@ -68,15 +68,21 @@
         "installation",
         "temperature"
       ],
-      "search_key": "ウォーターサーバー 底面給水式 オフィス向け 床置き型 ３口独立"
+      "search_key": "ウォーターサーバー 底面給水式 オフィス向け 床置き型 ３口独立",
+      "model": "Toffy K-WS2-AW",
+      "selected_variant": {
+        "color": "アッシュホワイト",
+        "type": "2Lペットボトル対応 卓上温冷サーバー",
+        "quantity": 1
+      }
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0CS2JQ3DP",
-      "asin": "B0CS2JQ3DP",
-      "amazon_title": "【ウォーターサーバー用】FUJI BLUE 富士山の天然水 2本セット ミネラルウォーター 追加ボトル 常温水サーバー 減容ボトル (7L角ボトル) バナジウム・シリカ含有 世界優秀味覚賞2025最高金賞",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71mZqcTqduL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0BC818MDL",
+      "asin": "B0BC818MDL",
+      "amazon_title": "【NEWモデル】卓上ウォーターサーバー ペットボトル対応 【冷水9℃～温水90℃】折りたたみトレー付 小型の鍋 インスタント食品が置けるトレー コンパクト 安全機能付 ホット＆コールド両用 エコな節電タイプ 節水 手軽に給水 保温 保冷 家庭用 インテリア (ホワイト) SY-108N",
+      "brand": "SOUYI",
+      "image_url": "https://m.media-amazon.com/images/I/61suGi3jT5L._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.58,
@@ -84,65 +90,96 @@
         "temperature",
         "water_source"
       ],
-      "search_key": "FUJI BLUE 富士山の天然水 2本セット ミネラルウォータ"
+      "search_key": "FUJI BLUE 富士山の天然水 2本セット ミネラルウォータ",
+      "model": "SOUYI SY-108N",
+      "selected_variant": {
+        "color": "ホワイト",
+        "type": "ペットボトル対応 卓上温冷サーバー",
+        "quantity": 1
+      }
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0HHLWJMYB",
-      "asin": "B0HHLWJMYB",
-      "amazon_title": "浄水型ウォーターサーバー 卓上 水道水対応 冷温切替 電気式 温度制御 高速加熱 キッチン オフィス 家庭用 (ホワイト,氷、温かい、熱い)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/4147ycfKjbL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0CHRSSRYY",
+      "asin": "B0CHRSSRYY",
+      "amazon_title": "浄水型 ウォーターサーバー 小型 浄水器 「PURE」 卓上 コーヒーメーカー カフェ お茶 温水 急速加熱 RO水 RO逆浸透膜 浄水 ろ過 ワンタッチ 水温調節 整水器 K-CUP キューリグ コーヒー 温水器 取り付け簡単 SOLEMOOD YHR1203-A (水道直結用部品付き, ミッドナイト)",
+      "brand": "SOLEMOOD",
+      "image_url": "https://m.media-amazon.com/images/I/51AgR9tzY7L._AC_SL1300_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.4,
       "matched_comparison_axes": [],
-      "search_key": "浄水型ウォーターサーバー 卓上 水道水対応 冷温切替 電気式 温"
+      "search_key": "浄水型ウォーターサーバー 卓上 水道水対応 冷温切替 電気式 温",
+      "model": "SOLEMOOD PURE YHR1203-A",
+      "selected_variant": {
+        "color": "ミッドナイト",
+        "package": "水道直結用部品付き",
+        "type": "卓上浄水温水サーバー",
+        "quantity": 1
+      }
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0HGF4B92L",
-      "asin": "B0HGF4B92L",
-      "amazon_title": "ウォーターサーバー 卓上、浄水型ウォーターサーバー 3.5L 6段階温度調整 3秒即湯チャイルドロック安全設計タッチスクリーン操作定量給水機能8段階に調節可能です コンパクトで省スペース キッチンオフィス寝室など様々な場所で使用可能 (ホワイト,単体ユニット＋ウォーターポンプ配管)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/617K6gT6bZL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0DK7HVR5F",
+      "asin": "B0DK7HVR5F",
+      "amazon_title": "水道直結型浄水器内蔵ウォーターサーバー卓上型 SD30 ホワイト 冷水、温水、常温水吐水タイプ",
+      "brand": "EauDeVie",
+      "image_url": "https://m.media-amazon.com/images/I/31ph0BO1HqL._AC_SL1200_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.4,
       "matched_comparison_axes": [
         "installation"
       ],
-      "search_key": "ウォーターサーバー 卓上、浄水型ウォーターサーバー 3.5L 6"
+      "search_key": "ウォーターサーバー 卓上、浄水型ウォーターサーバー 3.5L 6",
+      "model": "EauDeVie SD30",
+      "selected_variant": {
+        "color": "ホワイト",
+        "type": "水道直結型浄水器内蔵 卓上サーバー",
+        "quantity": 1
+      }
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0HGDNSB9F",
-      "asin": "B0HGDNSB9F",
-      "amazon_title": "NYHGOXM ウォーターサーバー 下置きボトル式 冷水・常温水・温水対応 3口独立出水 同時給水可能 カッププッシュ 家庭用 オフィス用 据え置き型 (温水＋常温水＋冷水,ブラック)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/51BjHndG-NL._AC_UL320_.jpg",
+      "product_id": "AMZ-B092HX9ZM8",
+      "asin": "B092HX9ZM8",
+      "amazon_title": "マリン 家庭用卓上型 コンパクトウォーターサーバー AQUA CUBE2 AQC-002 新型 コンパクトタイプ初の冷水7℃を実現！/冷水/温水/水分補給/",
+      "brand": "マリン商事",
+      "image_url": "https://m.media-amazon.com/images/I/51+oXBrNqWS._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.4,
       "matched_comparison_axes": [
         "temperature"
       ],
-      "search_key": "NYHGOXM ウォーターサーバー 下置きボトル式 冷水・常温水"
+      "search_key": "NYHGOXM ウォーターサーバー 下置きボトル式 冷水・常温水",
+      "model": "マリン商事 AQUACUBE2 AQC-002",
+      "selected_variant": {
+        "color": "ホワイト",
+        "type": "2Lペットボトル対応 卓上温冷サーバー",
+        "quantity": 1,
+        "electrical_requirement": "100Vコンセント（メーカー取説p1）"
+      }
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0HD5VB6LH",
-      "asin": "B0HD5VB6LH",
-      "amazon_title": "卓上ウォーターサーバー 浄水型 定温 即熱/冷水 5 段温度調節 スマートカラー画面 定量吐出 5Lタンク 浄水対応 (ホース・スタンド・フィルター,グレー)",
+      "product_id": "AMZ-B07LGJYD48",
+      "asin": "B07LGJYD48",
+      "amazon_title": "ペットボトル瞬湯器 ぱッ湯 （パッ湯） ID5100",
       "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/51G2PCqjKmL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/31Gzj8YhI5L._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.4,
       "matched_comparison_axes": [
         "temperature"
       ],
-      "search_key": "卓上ウォーターサーバー 浄水型 定温 即熱/冷水 5 段温度調節"
+      "search_key": "卓上ウォーターサーバー 浄水型 定温 即熱/冷水 5 段温度調節",
+      "model": "バイワールド ぱッ湯 ID5100",
+      "selected_variant": {
+        "type": "ペットボトル瞬湯器（温水専用）",
+        "quantity": 1
+      }
     }
   ]
 }

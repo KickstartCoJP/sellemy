@@ -44,83 +44,142 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0FP585WR3",
-      "asin": "B0FP585WR3",
-      "amazon_title": "Erindeアドベントカレンダー コスメ 12個入り アドベントカレンダー コフレ アドベントカレンダー 女性向け クリスマス コスメセット クリスマスコフレ メイクセット フル美容メイクアップ ハンドクリーム アイシャドウ 口紅 アクセサリークリスマスプレゼント 新年限定デザイン",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/81PTv0dDSnL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0HJ5V5R1H",
+      "asin": "B0HJ5V5R1H",
+      "amazon_title": "ロクシタン(L'OCCITANE) アドベントカレンダー 2026",
+      "brand": "ロクシタン",
+      "image_url": "https://m.media-amazon.com/images/I/61hYIMjG5KL._AC_SL1000_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.53,
       "matched_comparison_axes": [
         "design"
       ],
-      "search_key": "Erindeアドベントカレンダー コスメ 12個入り アドベント"
+      "search_key": "Erindeアドベントカレンダー コスメ 12個入り アドベント",
+      "selected_variant": {
+        "year": 2026,
+        "manufacturer_reference": "JPOCVKIW02070",
+        "items": 24,
+        "calendar_count": 1,
+        "edition": "通常24点版"
+      }
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0HKVLLPG1",
-      "asin": "B0HKVLLPG1",
-      "amazon_title": "サンリオ キッズコスメ アドベントカレンダー Sanrio Kids Cosme Advent Calendar",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/51I9K7rxYWL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0H8QHVKWF",
+      "asin": "B0H8QHVKWF",
+      "amazon_title": "KORRES アドベントカレンダー 2026年 24日間 ホリデー スキンケア ギフトセット 女性用",
+      "brand": "KORRES",
+      "image_url": "https://m.media-amazon.com/images/I/81AupYtYgJL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "サンリオ キッズコスメ アドベントカレンダー Sanrio Ki"
+      "search_key": "サンリオ キッズコスメ アドベントカレンダー Sanrio Ki",
+      "selected_variant": {
+        "year": 2026,
+        "calendar_count": 1,
+        "doors": 24,
+        "full_size_count": 6,
+        "travel_minis": 17,
+        "ornament_count": 1,
+        "edition": "Under the Gold and Silver Sky; $472 value international edition",
+        "contents_source": "https://www.korres.com/products/advent-calendar-2026"
+      }
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0HDT7TPBK",
-      "asin": "B0HDT7TPBK",
-      "amazon_title": "メイクアップアドベントカレンダー2026、24点入りクリスマスホリデーギフトセット、2026年クリスマスカウントダウンカレンダー、美容・コスメのホリデーサプライズメイクアップギフトキット女性・ティーン・女の子向け",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/81XLRUSlNdL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0H1NWMJ59",
+      "asin": "B0H1NWMJ59",
+      "amazon_title": "Burt's Bees ホリデー リップクリーム ギフトセット 保湿リップバーム 12個",
+      "brand": "Burt’s Bees",
+      "image_url": "https://m.media-amazon.com/images/I/81V58LHpUlL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "メイクアップアドベントカレンダー2026、24点入りクリスマスホ"
+      "search_key": "メイクアップアドベントカレンダー2026、24点入りクリスマスホ",
+      "selected_variant": {
+        "items": 12,
+        "calendar_count": 1,
+        "manufacturer_reference": "TU_5530511",
+        "flavours": [
+          "Cranberry Spritz",
+          "Sugar Cookie",
+          "Lavender Vanilla",
+          "Salted Caramel",
+          "Coconut & Pear",
+          "Cookies & Cream",
+          "Peppermint Bark",
+          "Vanilla Bean",
+          "Cinnamon Apple Crisp",
+          "Peppermint",
+          "Vanilla Maple",
+          "Pomegranate"
+        ],
+        "tint": "Pomegranate only sheer tint; other11 untinted",
+        "edition": "Amazon exclusive peppermint-bark composition",
+        "individual_net_weight": "not stated in selected JP text; do not infer from other lip-balm packs"
+      }
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0HDPFPNDJ",
-      "asin": "B0HDPFPNDJ",
-      "amazon_title": "メイクアップアドベントカレンダー2026、24日間のクリスマスメイクセット・ビューティーギフト、2026年クリスマスカウントダウンカレンダー、女性・ティーン・女の子向け個別包装のフルメイクキット24点セット",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/81g7x9z-GnL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0FHXWQV5R",
+      "asin": "B0FHXWQV5R",
+      "amazon_title": "ChapStick コージー カウントダウン アドベントカレンダー リップクリーム 12個パック 各4.25g",
+      "brand": "ChapStick",
+      "image_url": "https://m.media-amazon.com/images/I/91YOBPTLdeL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "メイクアップアドベントカレンダー2026、24日間のクリスマスメ"
+      "search_key": "メイクアップアドベントカレンダー2026、24日間のクリスマスメ",
+      "selected_variant": {
+        "calendar_count": 1,
+        "doors": 12,
+        "lip_balm_count": 12,
+        "net_weight_g_each": 4.25,
+        "edition": "Cozy Countdown; 8 seasonal flavours plus4 classics",
+        "edition_year": "not specified in selected JP title; original US shortlink path says2025; do not call2026 new release"
+      }
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0HBJ7TPCQ",
-      "asin": "B0HBJ7TPCQ",
-      "amazon_title": "メイクアップアドベントカレンダー １２日間",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/81zDLzEfvpL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0HFYPSJKW",
+      "asin": "B0HFYPSJKW",
+      "amazon_title": "キッチュホリデーアドベントカレンダー2026 – 女性への12日間のセルフケアギフト",
+      "brand": "Kitsch",
+      "image_url": "https://m.media-amazon.com/images/I/91eq3sPDTfL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "メイクアップアドベントカレンダー １２日間"
+      "search_key": "メイクアップアドベントカレンダー １２日間",
+      "selected_variant": "12日分・12引き出しの美容／ヘアケア混合セット1箱。ヘア香水はPistachio Latte 20mL。他の内容品容量・色は一括推定しない。"
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0HBBPQN42",
-      "asin": "B0HBBPQN42",
-      "amazon_title": "クリスマス カレンダー メイク アドベント コスメ セット",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/714JPbxJUgL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0HK2CLJPH",
+      "asin": "B0HK2CLJPH",
+      "amazon_title": "Sephora Collection 限定版アドベントカレンダー - 24のビューティーサプライズ",
+      "brand": "Sephora Collection",
+      "image_url": "https://m.media-amazon.com/images/I/81rWAUrzWCL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "クリスマス カレンダー メイク アドベント コスメ セット"
+      "search_key": "クリスマス カレンダー メイク アドベント コスメ セット",
+      "selected_variant": {
+        "calendar_count": 1,
+        "doors": 24,
+        "full_size_count": 13,
+        "travel_size_count": 5,
+        "accessory_count": 6,
+        "colour": "ピンク",
+        "upc": "842780147410",
+        "edition": "クラッカー式コンパートメント・Sephora Collection単一ブランド。25点のSephora Favoritesとは別商品。",
+        "edition_year": "selected JP title does not state year; do not infer solely from listing date"
+      }
     }
   ]
 }

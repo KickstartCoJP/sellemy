@@ -1,70 +1,103 @@
 {
-  "slug": "gaming-mice-6-picks",
-  "category": "gadget",
-  "h1": "eスポーツにも！ゲーミングマウス6選",
-  "lead": "ゲーミングマウスは接続方式やセンサーのトラッキング精度、そして手になじむ形状によって快適さが大きく変わります。本記事では静音設計のワイヤレスモデルから、eスポーツシーンで使われる超軽量フラッグシップまで6製品を厳選し、センサー性能・接続方式・形状という3つの軸で比較しました。普段使いから競技志向まで、自分のプレイスタイルや手のサイズに合わせて選ぶ際の参考にしてください。",
-  "summary": "6製品は静音ワイヤレスの普段使いモデル、戻る/進むボタンや3段階DPIを備えたエントリー向けゲーミングマウス、光学スイッチを採用したeスポーツ向けフラッグシップ、そして49gクラスの超軽量モデルまで幅広くカバーしています。センサー性能・接続方式・形状の観点から特徴を比較し、用途に合った1台を見つけやすくまとめました。",
+  "h1": "ゲーミングマウス6選｜有線・無線、握り方と追加操作で選ぶ",
+  "lead": "ゲーミングマウスは、センサーの最大数値だけで選ぶと、手に合う形や使いたいボタンを見落としがちです。有線で充電を気にせず使うか、無線でケーブルの抵抗を減らすかを決めたうえで、重さと親指まわりの操作を比べましょう。ここでは小型の有線モデルから軽量ワイヤレス、多ボタン型まで6製品を紹介します。",
+  "summary": "小ぶりな有線ならRazer Cobra、乾電池式でBluetoothも使いたいならG309。右手向けの非対称形状を求めるならPRO X SUPERLIGHT 2 DEX、黒色で約49gの軽さを重視するならViper V4 Proが候補です。ホイールや親指の操作を増やしたい人はG502 XとAerox 5 Wirelessを比べてください。",
+  "how_to_choose": "まず、有線ケーブルを置ける範囲とUSBレシーバーを接続する場所を確認します。Bluetooth対応の有無は製品ごとに異なり、「無線」だけでは接続方式を判断できません。次に、左右対称に見える形でもサイドボタンの位置が利き手に合うか、手の大きさと握り方に合わせて確認しましょう。重量は電池やケーブルを含む条件をそろえて比較します。ボタン割り当てなどの高度な設定はメーカーのソフトウェアと対応OSの確認が必要です。最大DPIやポーリングレートが高いことだけで、ゲームの成績が上がるわけではありません。",
+  "conclusion": "充電管理を減らすならCobraやG502 Xの有線、電池交換とBluetoothの使い分けならG309が選びやすいでしょう。軽量ワイヤレスはDEXの右手向け形状とViper V4 Proの形・重さを比較し、追加操作をまとめたい人はAerox 5 Wirelessも検討してください。最後はボタンに無理なく指が届くかを優先すると、用途に合う一台を絞れます。",
   "comparison_groups": [
     {
       "id": "connection",
-      "title": "接続方式で選ぶ普段使いワイヤレスマウス",
-      "angle": "どちらもBluetoothと2.4GHzを切り替えられる普段使い向けワイヤレスマウスですが、静音性重視のシンプルなモデルか、DPI切り替えや追加ボタンで細かな操作性を求めるかで選び方が分かれます。",
+      "title": "接続と電源の管理で選ぶ",
+      "angle": "小型有線のCobraと、乾電池式のデュアルワイヤレスG309を比較。",
       "product_refs": [
         "p1",
         "p2"
       ]
     },
     {
-      "id": "sensor_dpi",
-      "title": "センサー性能で選ぶeスポーツフラッグシップ",
-      "angle": "光学式スイッチを採用したLogicool G PROシリーズのフラッグシップ同士の比較です。最新世代の反応速度を追求するか、実績のある先代モデルの安定感を選ぶかがポイントになります。",
+      "id": "shape_weight",
+      "title": "軽量ワイヤレスを形と重さで選ぶ",
+      "angle": "右手向け非対称のDEXと、黒色約49gのViper V4 Pro。",
       "product_refs": [
         "p3",
-        "p5"
+        "p4"
       ]
     },
     {
-      "id": "ergonomics",
-      "title": "形状・重量で選ぶ超軽量モデル",
-      "angle": "49g前後まで重量を切り詰めたRazerの最新モデルと、競技シーンで実績を積んだLogicoolの定番軽量モデルを比較し、握り方や好みの重心バランスに合わせて選べるようにしています。",
+      "id": "extra_controls",
+      "title": "追加の操作をマウスにまとめる",
+      "angle": "ホイール操作も活用できる有線G502 Xと、9ボタンのAerox 5 Wireless。",
       "product_refs": [
-        "p4",
+        "p5",
         "p6"
       ]
     }
   ],
+  "slug": "gaming-mice-6-picks",
+  "category": "gadget",
   "products": [
     {
       "ref": "p1",
-      "h3": "静音設計の充電式ワイヤレスマウス",
-      "description": "自宅や図書館などで音を気にせず使える静音スイッチと、2.4GHzレシーバー/Bluetooth 5.1を切り替えられる2WAY接続を組み合わせたワイヤレスマウスです。パソコンからタブレットまで幅広い機器とペアリングできる汎用性の高さも魅力で、USB Type-C対応の充電式のためケーブルの取り回しにも困りません。左右どちらの手でも握れるアンビデクストラス形状で利き手を選ばず、コンパクトで軽量な本体はノートパソコンと合わせて持ち歩く普段使いに向いています。2.4GHzモードに切り替えれば遅延を抑えた操作感も得られるため、ライトなゲーム用途にも対応できるでしょう。無線モジュールはTELEC認証を取得済みで、日本国内でも安心して電波を使える点も見逃せません。"
+      "h3": "Razer Cobra｜約58gの小型有線モデル",
+      "description": "ブラックの有線Cobraは、ケーブルを除く重量が約58g。長さ119.6×幅62.5×高さ38.1mmのコンパクトな形で、6つのプログラム可能ボタンを備えます。Speedflexケーブルで接続するため、充電残量を管理せず使いたい人に向いています。第3世代の光学式スイッチとRGBライティングを搭載。無線のCobra Proとは別モデルで、ケーブルを動かす余裕は机上に必要です。小さめの形を好む人の比較候補になります。",
+      "amazon_product_url": "https://www.amazon.co.jp/dp/B0C5XNRVWM",
+      "amazon_affiliate_url": "https://www.amazon.co.jp/dp/B0C5XNRVWM?tag=sellemy-22",
+      "rakuten_search_url": "https://search.rakuten.co.jp/search/mall/Razer%20Cobra%20%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF/",
+      "yahoo_search_url": "https://shopping.yahoo.co.jp/search?p=Razer%20Cobra%20%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF"
     },
     {
       "ref": "p2",
-      "h3": "戻る進むボタン付きの3段階DPIマウス",
-      "description": "Mac・Windows・Surfaceなど幅広い機器とすぐにペアリングできる手軽さが持ち味で、Bluetooth 5.2と2.4GHzレシーバーを使い分けられる2WAY接続に対応したワイヤレスマウスです。光学センサーは3段階のDPI切り替えに対応しており、デスクワークでの精密な操作からカジュアルなゲームプレイまで感度を用途別に調整できます。戻る・進むボタンを搭載しているため、ブラウジングや一部のゲーム操作をワンタッチでこなせるのも便利なポイントです。クリック音を抑えた静音設計と高耐久性のボディを組み合わせており、長期間使い続けやすいエントリー向けゲーミングマウスといえます。静音ワイヤレスモデルから一歩進んだ操作性を求めるユーザーへのステップアップ機としても選びやすいでしょう。"
+      "h3": "Logicool G309｜単3形電池と2種類の無線接続",
+      "description": "ブラックのG309 LIGHTSPEEDは、USBレシーバーによるLIGHTSPEEDとBluetoothを切り替えて使うモデル。単3形乾電池1本を入れた重量は約86gで、6つのボタンをG HUBで設定できます。電池交換式が好みで、ゲーム用の接続とBluetoothを使い分けたい人に向く構成です。約68gという数値は、電池を外して別途POWERPLAYシステムと組み合わせた場合のもの。通常の乾電池使用時と混同せず比較してください。",
+      "amazon_product_url": "https://www.amazon.co.jp/dp/B0D7YT6HZ9",
+      "amazon_affiliate_url": "https://www.amazon.co.jp/dp/B0D7YT6HZ9?tag=sellemy-22",
+      "rakuten_search_url": "https://search.rakuten.co.jp/search/mall/Logicool%20G309WL-BK/",
+      "yahoo_search_url": "https://shopping.yahoo.co.jp/search?p=Logicool%20G309WL-BK"
     },
     {
       "ref": "p3",
-      "h3": "光学スイッチ搭載のフラッグシップ軽量マウス",
-      "description": "プロ選手のフィードバックをもとに磨き上げられたフラッグシップのワイヤレスゲーミングマウスで、光学式スイッチの採用により機械式スイッチにありがちなチャタリングやクリックのばらつきを抑え、常に一定の反応速度でクリックを検知できます。LIGHTSPEEDワイヤレス技術によって有線接続に迫る低遅延な通信を実現しており、反応速度が勝敗を左右するFPSタイトルとの相性は抜群です。センサーはトラッキングの安定性を重視した設計で、素早いマウス移動でもポインタがずれにくく、高いDPI設定でも精密なエイムを支えます。競技志向のプレイヤーが妥協のない性能を求めるなら、有力な候補に挙がる一台です。"
+      "h3": "Logicool PRO X SUPERLIGHT 2 DEX｜右手向け非対称の約60g",
+      "description": "ブラックのGPROXSL-WLDEXBKdを選択。右手向けの非対称形状と約60gの重量を組み合わせたLIGHTSPEEDワイヤレスモデルです。5ボタン構成で、HERO 2センサーとLIGHTFORCEスイッチを備えます。親指側の形状を重視し、軽量な無線マウスを探す人に向く候補です。左右対称の形を好む人や左手で使う人は、形状をよく比較しましょう。この選択品は1年保証版の型番で、同名シリーズの別保証版とは区別して確認してください。",
+      "amazon_product_url": "https://www.amazon.co.jp/dp/B0D9VWPG1T",
+      "amazon_affiliate_url": "https://www.amazon.co.jp/dp/B0D9VWPG1T?tag=sellemy-22",
+      "rakuten_search_url": "https://search.rakuten.co.jp/search/mall/GPROXSL-WLDEXBKd/",
+      "yahoo_search_url": "https://shopping.yahoo.co.jp/search?p=GPROXSL-WLDEXBKd"
     },
     {
       "ref": "p4",
-      "h3": "49g級の超軽量エルゴノミクスマウス",
-      "description": "49g前後まで徹底的に軽量化されたボディに、最新世代のHyperSpeedワイヤレス技術と8,000Hz対応ドングルを組み合わせたフラッグシップモデルです。Focus Proオプティカルセンサーは高DPI設定でも安定したトラッキング性能を発揮し、素早いフリックやエイム操作でも位置情報のズレを抑えます。第4世代のオプティカルマウススイッチにより、クリックの反応が速く連続入力でも安定した押下感を維持できるのも強みです。左右対称に近いエルゴノミクスシェイプはつかみ持ちや指先操作の双方に対応しやすく、長時間のプレイでも手への負担を抑えやすい形状にまとまっています。180時間駆動のバッテリーを備えているため、充電切れを気にせず集中力を保ったプレイにつながります。"
+      "h3": "Razer Viper V4 Pro｜ブラック約49gのワイヤレス",
+      "description": "RZ01-05630100-R3A1のブラックは、ケーブルとドングルを除いて約49g。無線と有線に対応し、6つのプログラム可能ボタンを備えたモデルです。光学式の第4世代スイッチを採用し、RGB照明はありません。軽さを優先して、広くマウスを動かしたい人の比較候補になります。公称電池持続時間は1000Hzで最大180時間、8000Hzでは最大45時間と設定で変わります。高いポーリング設定を使う場合も、実際の環境や電池消費との釣り合いで選びましょう。",
+      "amazon_product_url": "https://www.amazon.co.jp/dp/B0GLM7WKVH",
+      "amazon_affiliate_url": "https://www.amazon.co.jp/dp/B0GLM7WKVH?tag=sellemy-22",
+      "rakuten_search_url": "https://search.rakuten.co.jp/search/mall/Razer%20Viper%20V4%20Pro%20RZ01-05630100-R3A1/",
+      "yahoo_search_url": "https://shopping.yahoo.co.jp/search?p=Razer%20Viper%20V4%20Pro%20RZ01-05630100-R3A1"
     },
     {
       "ref": "p5",
-      "h3": "先代モデルの光学スイッチ軽量マウス",
-      "description": "光学式スイッチによる高速かつ安定したクリック応答を持ち味とする、X3の前身に位置するフラッグシップのワイヤレスゲーミングマウスです。機械式スイッチのようなチャタリングが起こりにくく、連続クリックが求められるシューティングゲームでも一定した反応を維持しやすくなっています。LIGHTSPEEDワイヤレス接続を採用しているため、有線マウスに近い低遅延な操作感を無線環境のまま得られるのも魅力です。センサーは高DPI設定時でもトラッキングが安定するよう調整されており、繊細なエイム操作にもしっかり応えます。すでに多くの競技シーンで採用されてきた実績があり、安定した性能を評価軸に選びたいプレイヤーに向いています。"
+      "h3": "Logicool G502 X｜ホイールとDPIシフトを使い分ける",
+      "description": "ブラックのG502X-BKは有線モデルで、重量は約89g。親指付近のDPIシフトボタンは取り外して向きを変えたり、付属のカバーと交換したりできます。ホイールは高速回転とラチェットを切り替えられ、左右への傾きにも操作を割り当てられます。指の届きやすさを調整しながら、ゲームや日常操作をまとめたい人に向く構成です。軽量さだけならほかの候補も比較し、無線のG502 X LIGHTSPEEDやPLUSと取り違えないように選んでください。",
+      "amazon_product_url": "https://www.amazon.co.jp/dp/B0BHKRD3GY",
+      "amazon_affiliate_url": "https://www.amazon.co.jp/dp/B0BHKRD3GY?tag=sellemy-22",
+      "rakuten_search_url": "https://search.rakuten.co.jp/search/mall/Logicool%20G502X-BK/",
+      "yahoo_search_url": "https://shopping.yahoo.co.jp/search?p=Logicool%20G502X-BK"
     },
     {
       "ref": "p6",
-      "h3": "定番の超軽量ワイヤレスマウス",
-      "description": "無駄を徹底的にそぎ落としたシンプルなボディに仕上げられた、G PROシリーズの中でも軽量性を追求したワイヤレスゲーミングマウスです。左右対称のアンビデクストラス形状のため、つかみ持ち・かぶせ持ち・つまみ持ちのいずれでも扱いやすく、長時間のプレイでも手首への負担を感じにくい設計になっています。LIGHTSPEEDワイヤレス接続とHEROセンサーを組み合わせており、高DPI設定でも安定したトラッキング性能を発揮します。多くの競技シーンで採用されてきた実績があるため、まず軽量フラッグシップを試したいプレイヤーにとって基準となる存在といえるでしょう。PTFE素材のマウスソールが滑らかな滑走感を高めてくれます。"
+      "h3": "SteelSeries Aerox 5 Wireless｜9ボタンを備える約74g",
+      "description": "ブラックのAerox 5 Wireless 62406は、約74gの穴あきシェルと9つのプログラム可能ボタンを組み合わせたモデルです。サイドパネルの上下フリックスイッチも使え、複数の操作を親指まわりに集めたい人に向きます。2.4GHz無線とBluetoothに対応するため、接続方式も選択できます。機能を多く割り当てるほど、ボタンの配置と押し分けやすさが重要です。有線Aerox 5とは接続方式・重量が違うので、Wireless表記を確認してください。",
+      "amazon_product_url": "https://www.amazon.co.jp/dp/B09W1B5S5W",
+      "amazon_affiliate_url": "https://www.amazon.co.jp/dp/B09W1B5S5W?tag=sellemy-22",
+      "rakuten_search_url": "https://search.rakuten.co.jp/search/mall/SteelSeries%20Aerox%205%20Wireless%2062406/",
+      "yahoo_search_url": "https://shopping.yahoo.co.jp/search?p=SteelSeries%20Aerox%205%20Wireless%2062406"
     }
   ],
-  "how_to_choose": "選ぶ際はまず接続方式を確認しましょう。オフィスや自宅での普段使いなら省電力なBluetooth/2.4GHzモデルで十分ですが、反応速度を求めるなら低遅延な高速無線規格を備えたモデルが有利です。次にセンサー性能は、DPIの数値だけでなく追従の安定性や応答速度を重視すると失敗が減ります。最後に重さと形状は指先でつまむように操作するか手全体で包み込むように持つかで最適解が変わるため、自分の握り方に近いエルゴノミクス設計を選ぶことが快適な操作感につながります。",
-  "conclusion": "どのモデルにも共通して言えるのは、接続方式・センサー性能・形状の3つがプレイ体感を左右するという点です。普段使いを重視するなら静音ワイヤレスタイプ、勝率を追求するなら光学スイッチや超軽量ボディを備えたフラッグシップを選ぶと、目的に合った一台に出会いやすくなります。"
+  "status": "READY",
+  "publish_allowed": false,
+  "recovery_qa_provenance": {
+    "original_status": "AUTHOR_READY_PENDING_INDEPENDENT_QA",
+    "source_body_sha256": "11ee76ddc85cf08b6a1821e8fd8faeced298130b107fa285c4176a41d5df9e3a",
+    "source_evidence_sha256": "d9590f2fb4ef7289f98f82ced148a61a496fa12d5d7fb84ba0e9ccb14689288e",
+    "independent_qa_verdict": "PASS",
+    "note": "only workflow status transitioned after exact independent QA SHA match; prose unchanged"
+  }
 }

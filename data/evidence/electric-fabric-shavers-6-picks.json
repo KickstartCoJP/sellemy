@@ -45,11 +45,11 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0FZBL866M",
-      "asin": "B0FZBL866M",
-      "amazon_title": "Sunytree 毛玉取り 電動 【大容量バッテリー&プロ仕様大型モデル】強力 けだまとり 持ちやすい LED液晶ディスプレイ 風合いガード3段階 ランキング 毛玉クリーナー USB充電式 毛玉取り器 様々な衣類に対応 掃除用ブラシ付き/替刃付き/プレゼント用/家庭用 （ブラック）",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71XyZqFiSAL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0FNMNPCC5",
+      "asin": "B0FNMNPCC5",
+      "amazon_title": "パナソニック 毛玉クリーナー NI-LC300-A ネイビー",
+      "brand": "パナソニック",
+      "image_url": "https://m.media-amazon.com/images/I/61zpsekfESL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.865,
@@ -58,41 +58,47 @@
         "maintenance",
         "power"
       ],
-      "search_key": "Sunytree 毛玉取り 電動 強力 けだまとり 持ちやすい"
+      "search_key": "Sunytree 毛玉取り 電動 強力 けだまとり 持ちやすい",
+      "model": "NI-LC300-A",
+      "selected_variant": "ネイビー・本体1台・USB A-Cケーブル/ブラシ付・ACアダプター別売"
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0HJ4TVPJ3",
-      "asin": "B0HJ4TVPJ3",
-      "amazon_title": "Global Recycled Standard",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71-F+VBNq5L._AC_UL320_.jpg",
+      "product_id": "AMZ-B08KHBKNHR",
+      "asin": "B08KHBKNHR",
+      "amazon_title": "レコルト ケダマトリ RKR-1(W) ナチュラルホワイト",
+      "brand": "レコルト",
+      "image_url": "https://m.media-amazon.com/images/I/41c-w1mH1oL._AC_SL1000_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [],
-      "search_key": "Global Recycled Standard"
+      "search_key": "Global Recycled Standard",
+      "model": "RKR-1(W)",
+      "selected_variant": "ナチュラルホワイト・本体1台・microUSBケーブル/清掃ブラシ付"
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0HHMJHD28",
-      "asin": "B0HHMJHD28",
-      "amazon_title": "Global Recycled Standard",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/713u-WZpFEL._AC_UL320_.jpg",
+      "product_id": "AMZ-B09MZKC359",
+      "asin": "B09MZKC359",
+      "amazon_title": "Steamery Pilo 2 ファブリックシェーバー チャコールグレー",
+      "brand": "Steamery",
+      "image_url": "https://m.media-amazon.com/images/I/61g4HiVFG0L._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [],
-      "search_key": "Global Recycled Standard"
+      "search_key": "Global Recycled Standard",
+      "model": "Pilo 2",
+      "selected_variant": "チャコールグレー・国内正規品本体1台"
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0HF4G9MY3",
-      "asin": "B0HF4G9MY3",
-      "amazon_title": "電動毛玉取り器 USB充電式 コンパクト6枚刃2 60分連稼働 軽量 生地保護 毛玉クリーナー 高速 2枚替刃付き 毛玉カッター ベージュ",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/614ifavOCcL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0DFPX8B7G",
+      "asin": "B0DFPX8B7G",
+      "amazon_title": "Toffy 毛玉リムーバー HW-LR1-PA ペールアクア",
+      "brand": "Toffy",
+      "image_url": "https://m.media-amazon.com/images/I/51uelrF-pJL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
@@ -100,37 +106,43 @@
         "maintenance",
         "power"
       ],
-      "search_key": "電動毛玉取り器 USB充電式 コンパクト6枚刃2 60分連稼働"
+      "search_key": "電動毛玉取り器 USB充電式 コンパクト6枚刃2 60分連稼働",
+      "model": "HW-LR1-PA",
+      "selected_variant": "ペールアクア・本体1台・替刃/掃除ブラシ/USBケーブル付"
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0HDRQ1SHJ",
-      "asin": "B0HDRQ1SHJ",
-      "amazon_title": "【2026新登場 強力6枚刃 Type-C充電式 毛玉取り器】電動 毛玉クリーナー けだまとり 3段階調整 大容量コードレス（ホワイト）",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61c6BbkSq7L._AC_UL320_.jpg",
+      "product_id": "AMZ-B0FW4WKVTG",
+      "asin": "B0FW4WKVTG",
+      "amazon_title": "コイズミ 毛玉クリーナー KKT-0100/H",
+      "brand": "コイズミ",
+      "image_url": "https://m.media-amazon.com/images/I/614DO3PaiHL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [
         "power"
       ],
-      "search_key": "電動 毛玉クリーナー けだまとり 3段階調整 大容量コードレス（"
+      "search_key": "電動 毛玉クリーナー けだまとり 3段階調整 大容量コードレス（",
+      "model": "KKT-0100/H",
+      "selected_variant": "グレー・本体1台"
     },
     {
       "ref": "p6",
       "product_id": "AMZ-B0GVYK2QKF",
       "asin": "B0GVYK2QKF",
-      "amazon_title": "【オンライン限定】 ティファール 毛玉取り器 電動 Type-C 「 充電式 毛玉クリーナー 」 3枚刃 電動 ブルー JB8002J0",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61pz0V8wZkL._AC_UL320_.jpg",
+      "amazon_title": "ティファール 充電式毛玉クリーナー JB8002J0",
+      "brand": "ティファール",
+      "image_url": "https://m.media-amazon.com/images/I/61pz0V8wZkL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [
         "power"
       ],
-      "search_key": "ティファール 毛玉取り器 電動 Type-C 「 充電式 毛玉ク"
+      "search_key": "ティファール 毛玉取り器 電動 Type-C 「 充電式 毛玉ク",
+      "model": "JB8002J0",
+      "selected_variant": "ブルー・本体1台"
     }
   ]
 }

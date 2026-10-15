@@ -37,56 +37,72 @@
   "eyecatch_image": "https://www.sellemy.jp/img/hand-dishwashing-detergents/hand-dishwashing-detergents.png",
   "products": [
     {
-      "amazon_title": "食器用洗剤 油汚れに強い台所用石けん 業務用 4000ml 詰め替え 専用ノズル付 大容量 液体石鹸 手荒れ 敏感肌 エコ",
-      "asin": "B0H3361482",
-      "brand": "",
+      "amazon_title": "【ミヨシ石鹸】無添加　食器洗いせっけん　３７０ｍｌ ×３個セット",
+      "asin": "B00XJ3KVW2",
+      "brand": "ミヨシ石鹸",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61RYBsd-sHL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/31SWp9-mmvL._AC_SY300_SX300_QL70_ML2_.jpg",
       "matched_comparison_axes": [
         "container"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0H3361482",
+      "product_id": "AMZ-B00XJ3KVW2",
       "ref": "p1",
       "search_key": "食器用洗剤 油汚れに強い台所用石けん 業務用 4000ml 詰め",
-      "selection_score": 0.505
+      "selection_score": 0.505,
+      "model": "ミヨシ 無添加食器洗いせっけん",
+      "selected_variant": {
+        "volume_ml": 370,
+        "count": 3
+      }
     },
     {
-      "amazon_title": "ジャンピカ 万能洗剤 アルカリクリーナー 業務用 油汚れ 手垢 ヤニ キッチン 壁 床 多目的洗剤 希釈タイプ 100ml",
-      "asin": "B0GZLYYLVB",
-      "brand": "",
+      "amazon_title": "花王 食器用洗剤 キュキュット 本体 240ml オレンジ",
+      "asin": "B00N0915B6",
+      "brand": "花王",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51Yb78TPS1L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/411Y41QziVL._AC_SL1000_.jpg",
       "matched_comparison_axes": [
         "usage"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0GZLYYLVB",
+      "product_id": "AMZ-B00N0915B6",
       "ref": "p2",
       "search_key": "ジャンピカ 万能洗剤 アルカリクリーナー 業務用 油汚れ 手垢",
-      "selection_score": 0.505
+      "selection_score": 0.505,
+      "model": "花王 キュキュット オレンジ",
+      "selected_variant": {
+        "volume_ml": 240,
+        "type": "本体"
+      }
     },
     {
-      "amazon_title": "CLEAN HOUSE 食器用洗剤 業務用 4L 大容量 【油汚れに強い】 特大 中性 台所 詰め替え用 注ぎ口ノズル付 キッチン用 ライムの香り グリーン 液体 飲食店 工場 備蓄 まとめ買い コスパ 洗浄力 泡立ち 4リットル 詰め替えボトル 買い置き ストック キッチン用品",
-      "asin": "B0GR9VDYCJ",
-      "brand": "",
+      "amazon_title": "arau. アラウ 台所用 せっけん 本体 400ml (× 2)",
+      "asin": "B0H99K15J5",
+      "brand": "サラヤ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71b5whKEIZL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51ANzuJMuyL._AC_SY300_SX300_QL70_ML2_.jpg",
       "matched_comparison_axes": [
         "container"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0GR9VDYCJ",
+      "product_id": "AMZ-B0H99K15J5",
       "ref": "p3",
       "search_key": "CLEAN HOUSE 食器用洗剤 業務用 4L 大容量 特大",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "model": "サラヤ arau. 台所用せっけん",
+      "selected_variant": {
+        "volume_ml": 400,
+        "count": 2,
+        "pack": "本体2本"
+      }
     },
     {
       "amazon_title": "CHARMY Magica チャーミーマジカ 手肌+（プラス）除菌 詰替大容量950ml グレープフルーツ＆ガーデンの香り 食器用洗剤",
       "asin": "B0GKNW2BQL",
-      "brand": "",
+      "brand": "ライオン",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/713kvFbiY1L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/713kvFbiY1L._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "container"
       ],
@@ -94,33 +110,48 @@
       "product_id": "AMZ-B0GKNW2BQL",
       "ref": "p4",
       "search_key": "CHARMY Magica チャーミーマジカ 手肌+（プラス）除",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "model": "CHARMY Magica 手肌+除菌",
+      "selected_variant": {
+        "volume_ml": 950,
+        "type": "詰替",
+        "scent": "グレープフルーツ&ガーデン"
+      }
     },
     {
-      "amazon_title": "さらさ ジョイ 食器用洗剤 本体 280ml 台所 キッチン 無添加 赤ちゃん デリケートな手肌",
-      "asin": "B0GFW87QVK",
-      "brand": "",
+      "amazon_title": "さらさ ジョイ 食器用洗剤 本体280mL+詰替1060mL 台所 キッチン 無添加 赤ちゃん デリケートな手肌",
+      "asin": "B0GYPCG1TQ",
+      "brand": "P&G",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61q-wJHMFxL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71GJEsVYMNL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0GFW87QVK",
+      "product_id": "AMZ-B0GYPCG1TQ",
       "ref": "p5",
       "search_key": "さらさ ジョイ 食器用洗剤 本体 280ml 台所 キッチン 無",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "model": "さらさジョイ",
+      "selected_variant": {
+        "pack": "本体280ml+詰替1060ml"
+      }
     },
     {
       "amazon_title": "ジョイ PRO洗浄 手洗い用食器洗剤 まとめ洗い用 逆さボトル 本体 280ml",
       "asin": "B0FW4KYGFD",
-      "brand": "",
+      "brand": "P&G",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71NskEadnrL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71NskEadnrL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B0FW4KYGFD",
       "ref": "p6",
       "search_key": "ジョイ PRO洗浄 手洗い用食器洗剤 まとめ洗い用 逆さボトル",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "model": "ジョイPRO まとめ洗い用",
+      "selected_variant": {
+        "volume_ml": 280,
+        "type": "逆さボトル本体"
+      }
     }
   ],
   "selection": {

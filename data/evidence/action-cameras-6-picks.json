@@ -50,11 +50,11 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0HJGJYPLG",
-      "asin": "B0HJGJYPLG",
-      "amazon_title": "[Maplefea]航空級ブレ補正ミニカメラ 真の4K アクションカメラ 小型 ハンディカメラ ミニ軽量ボディ スマホ連携",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/51b1Q6nG0YL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0FH22RB4S",
+      "asin": "B0FH22RB4S",
+      "amazon_title": "Insta360 GO Ultra｜カメラを小さく装着して散策を記録",
+      "brand": "Insta360",
+      "image_url": "https://m.media-amazon.com/images/I/611hCV9yo9L._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.76,
@@ -62,58 +62,62 @@
         "image-quality",
         "portability"
       ],
-      "search_key": "航空級ブレ補正ミニカメラ 真の4K アクションカメラ 小型 ハン"
+      "search_key": "航空級ブレ補正ミニカメラ 真の4K アクションカメラ 小型 ハン",
+      "model": "GO Ultra"
     },
     {
       "ref": "p2",
       "product_id": "AMZ-B0H5CR9LZF",
       "asin": "B0H5CR9LZF",
-      "amazon_title": "Insta360 X6 通常版 8K 360度カメラ 1/1.1インチセンサー AI編集 最大140分撮影 防水 Vlog アクションカメラ",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61nE70GPAKL._AC_UL320_.jpg",
+      "amazon_title": "Insta360 X6｜周囲を撮影し、あとから見せる方向を選ぶ",
+      "brand": "Insta360",
+      "image_url": "https://m.media-amazon.com/images/I/61nE70GPAKL._AC_SX300_SY300_QL70_ML2_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.58,
       "matched_comparison_axes": [
         "durability"
       ],
-      "search_key": "Insta360 X6 通常版 8K 360度カメラ 1/1.1"
+      "search_key": "Insta360 X6 通常版 8K 360度カメラ 1/1.1",
+      "model": "X6"
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0HKM8BD5B",
-      "asin": "B0HKM8BD5B",
-      "amazon_title": "アクションカメラ ウェアラブルカメラ、160度広角、WiFiスマホ連携、32GBメモリーカード付属、タイムラプス撮影、旅行・アウトドア・スポーツ対応、ブラックアクションカメラ ウェアラブルカメラ Vlogビデオカメラ ボディカメラ 160度広角小型",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61rUjYteGEL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0DHD6SFJB",
+      "asin": "B0DHD6SFJB",
+      "amazon_title": "Insta360 Ace Pro 2｜フリップ画面で構図を確認する広角モデル",
+      "brand": "Insta360",
+      "image_url": "https://m.media-amazon.com/images/I/61+3zaSUKNL._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.4,
       "matched_comparison_axes": [],
-      "search_key": "アクションカメラ ウェアラブルカメラ、160度広角、WiFiスマ"
+      "search_key": "アクションカメラ ウェアラブルカメラ、160度広角、WiFiスマ",
+      "model": "Ace Pro 2"
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0H1MFVT6Y",
-      "asin": "B0H1MFVT6Y",
-      "amazon_title": "【2026新型】アクションカメラ 330°自動顏認識追従回転 ビデオカメラ 4K 330°左右回転 180°上下回転 小型カメラ 1.72インチタッチパネル 手ブレ補正 美肌 vlog カメラ Wi-Fi転送 コンパクト ライブ配信 TikTok YouTube対応 32GBカード付き 日本語説明書 スペースグレー",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61BDtz5SxgL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0DCS3J96Q",
+      "asin": "B0DCS3J96Q",
+      "amazon_title": "GoPro HERO13 Black 公式ストア限定セット（Enduroバッテリー計3個）",
+      "brand": "GoPro",
+      "image_url": "https://m.media-amazon.com/images/I/61K7wwawgJL._AC_SL1000_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.4,
       "matched_comparison_axes": [
         "image-quality"
       ],
-      "search_key": "アクションカメラ 330°自動顏認識追従回転 ビデオカメラ 4K"
+      "search_key": "アクションカメラ 330°自動顏認識追従回転 ビデオカメラ 4K",
+      "model": "HERO13 Black / CHDHX-131-FW 本体を含むセット"
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0H15291KM",
-      "asin": "B0H15291KM",
-      "amazon_title": "AiMike アクションカメラ ポケットサイズ 4K 7500万画素 シングル軸330度自動追跡 回転レンズ WIFI転送機能 全画素高速AF 1.72インチタッチ操作 32GBマイクロSDカード付き 自動顔追跡 スマホに送れる 小型Vlogビデオ デジカメ ボディ ウェアラブル デジタルカメラ 2400mAhバッテリー内蔵 軽量 コンパクト 旅行 アウトドア ブラック",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/510TbqT3-vL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0FBFZM45S",
+      "asin": "B0FBFZM45S",
+      "amazon_title": "DJI Osmo Nano｜52gのカメラと内蔵ストレージで身軽に撮る",
+      "brand": "DJI",
+      "image_url": "https://m.media-amazon.com/images/I/61JbRkb8q+L._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.4,
@@ -121,20 +125,22 @@
         "image-quality",
         "portability"
       ],
-      "search_key": "AiMike アクションカメラ ポケットサイズ 4K 7500万"
+      "search_key": "AiMike アクションカメラ ポケットサイズ 4K 7500万",
+      "model": "Osmo Nano"
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0G93LS8S3",
-      "asin": "B0G93LS8S3",
-      "amazon_title": "Global Recycled Standard",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71d3hiUSWmL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0FM3X3DW5",
+      "asin": "B0FM3X3DW5",
+      "amazon_title": "DJI Osmo Action 6｜防水条件と長時間撮影の設定を確認して選ぶ",
+      "brand": "DJI",
+      "image_url": "https://m.media-amazon.com/images/I/71UHRHDByzL._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.4,
       "matched_comparison_axes": [],
-      "search_key": "Global Recycled Standard"
+      "search_key": "Global Recycled Standard",
+      "model": "Osmo Action 6"
     }
   ]
 }

@@ -48,11 +48,11 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0HDCTYL84",
-      "asin": "B0HDCTYL84",
-      "amazon_title": "MENLITE ヘアワックス メンズ ハードワックス パーマ・くせ毛用 自然なツヤ 束感・毛流れを整える クリームタイプ スタイリング剤 100g",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/51DVMuVXZhL._AC_UL320_.jpg",
+      "product_id": "AMZ-B002SW2OQQ",
+      "asin": "B002SW2OQQ",
+      "amazon_title": "ロレッタ メイクアップワックス4.0 65g",
+      "brand": "ロレッタ",
+      "image_url": "https://m.media-amazon.com/images/I/61s71XpOcNL._AC_SL1000_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.67,
@@ -60,58 +60,78 @@
         "finish_texture",
         "styling_purpose"
       ],
-      "search_key": "MENLITE ヘアワックス メンズ ハードワックス パーマ・く"
+      "search_key": "MENLITE ヘアワックス メンズ ハードワックス パーマ・く",
+      "selected_variant": {
+        "capacity_g": 65,
+        "count": 1,
+        "type": "本体"
+      }
     },
     {
       "ref": "p2",
       "product_id": "AMZ-B0H8LWXNTJ",
       "asin": "B0H8LWXNTJ",
-      "amazon_title": "GATSBY(ギャツビー) ムービングラバー カジュアルマット ヘアワックス シトラスフローラルの香り 80g",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61Ss6of0YzL._AC_UL320_.jpg",
+      "amazon_title": "ギャツビー ムービングラバー カジュアルマット 80g",
+      "brand": "ギャツビー",
+      "image_url": "https://m.media-amazon.com/images/I/61Ss6of0YzL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
       "matched_comparison_axes": [
         "finish_texture"
       ],
-      "search_key": "GATSBY(ギャツビー) ムービングラバー カジュアルマット"
+      "search_key": "GATSBY(ギャツビー) ムービングラバー カジュアルマット",
+      "selected_variant": {
+        "capacity_g": 80,
+        "count": 1,
+        "type": "本体"
+      }
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0H8LRGV6C",
-      "asin": "B0H8LRGV6C",
-      "amazon_title": "GATSBY(ギャツビー) ムービングラバー エアロモーション ヘアワックス シトラスフローラルの香り 80g",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61ilB9LPa4L._AC_UL320_.jpg",
+      "product_id": "AMZ-B0F6BR6WTG",
+      "asin": "B0F6BR6WTG",
+      "amazon_title": "オーシャントリコ ヘアワックス エアー N 80g リニューアル本体",
+      "brand": "オーシャントリコ",
+      "image_url": "https://m.media-amazon.com/images/I/41JD0Oo7tNL._AC_SL1000_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
       "matched_comparison_axes": [],
-      "search_key": "GATSBY(ギャツビー) ムービングラバー エアロモーション"
+      "search_key": "GATSBY(ギャツビー) ムービングラバー エアロモーション",
+      "selected_variant": {
+        "capacity_g": 80,
+        "count": 1,
+        "type": "本体"
+      }
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0H8LHK4WJ",
-      "asin": "B0H8LHK4WJ",
-      "amazon_title": "GATSBY(ギャツビー) ムービングラバー エクストリームマットＫ ヘアワックス シトラスフローラルの香り 80g",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61b4xGKK-OL._AC_UL320_.jpg",
+      "product_id": "AMZ-B01KUV8942",
+      "asin": "B01KUV8942",
+      "amazon_title": "ウーノ マットエフェクター ワックス 80g",
+      "brand": "ウーノ",
+      "image_url": "https://m.media-amazon.com/images/I/71glRYJhX3L._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
       "matched_comparison_axes": [
         "finish_texture"
       ],
-      "search_key": "GATSBY(ギャツビー) ムービングラバー エクストリームマッ"
+      "search_key": "GATSBY(ギャツビー) ムービングラバー エクストリームマッ",
+      "selected_variant": {
+        "capacity_g": 80,
+        "count": 1,
+        "type": "本体"
+      }
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0H847CJF1",
-      "asin": "B0H847CJF1",
-      "amazon_title": "Rerum リラム マットハードワックス メンズ ヘアワックス 強力セット 束感 マット ハーブウッドの香り 洗い流しやすい 70g",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71PL6HQCMXL._AC_UL320_.jpg",
+      "product_id": "AMZ-B001NRCG06",
+      "asin": "B001NRCG06",
+      "amazon_title": "アリミノ ピース プロデザインシリーズ フリーズキープワックス 80g",
+      "brand": "アリミノ",
+      "image_url": "https://m.media-amazon.com/images/I/71V99favhsL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
@@ -119,22 +139,32 @@
         "finish_texture",
         "styling_purpose"
       ],
-      "search_key": "Rerum リラム マットハードワックス メンズ ヘアワックス"
+      "search_key": "Rerum リラム マットハードワックス メンズ ヘアワックス",
+      "selected_variant": {
+        "capacity_g": 80,
+        "count": 1,
+        "type": "本体"
+      }
     },
     {
       "ref": "p6",
       "product_id": "AMZ-B0H1MDB3BZ",
       "asin": "B0H1MDB3BZ",
-      "amazon_title": "ナカノ スタイリング タント ワックス 5 90g ヘアワックス ファイバータイプ",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/51nv7P5DPmL._AC_UL320_.jpg",
+      "amazon_title": "ナカノ スタイリング タント ワックス5 90g",
+      "brand": "中野製薬",
+      "image_url": "https://m.media-amazon.com/images/I/51nv7P5DPmL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
       "matched_comparison_axes": [
         "finish_texture"
       ],
-      "search_key": "ナカノ スタイリング タント ワックス 5 90g ヘアワックス"
+      "search_key": "ナカノ スタイリング タント ワックス 5 90g ヘアワックス",
+      "selected_variant": {
+        "capacity_g": 90,
+        "count": 1,
+        "type": "本体"
+      }
     }
   ]
 }

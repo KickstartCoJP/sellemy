@@ -54,8 +54,8 @@
       "ref": "p1",
       "product_id": "AMZ-B0HDC2CPCZ",
       "asin": "B0HDC2CPCZ",
-      "amazon_title": "レイメイ藤井 手帳 2027 スケジュール帳 カードサイズダイアリー 月間 ブロック グリーン 27RFD727M 2026年 12月始まり",
-      "brand": "レイメイ藤井のストアを表示",
+      "amazon_title": "レイメイ藤井 27RFD727M 2027 グリーン",
+      "brand": "レイメイ藤井",
       "image_url": "https://m.media-amazon.com/images/I/71HLgMD6BnL._AC_SX300_SY300_QL70_ML2_.jpg",
       "observed_price": 554,
       "discovery_score": 1,
@@ -63,42 +63,66 @@
       "matched_comparison_axes": [
         "size_portability"
       ],
-      "search_key": "レイメイ藤井 手帳 2027 スケジュール帳 カードサイズダイアリー 月間 ブ"
+      "search_key": "レイメイ藤井 手帳 2027 スケジュール帳 カードサイズダイアリー 月間 ブ",
+      "model": "27RFD727M",
+      "selected_variant": {
+        "edition": 2027,
+        "model": "27RFD727M",
+        "color": "グリーン",
+        "format": "カードサイズ 月間",
+        "item_count": 1
+      }
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0G2BZRLWM",
-      "asin": "B0G2BZRLWM",
-      "amazon_title": "VANRA 手帳 2026-2027 A5 マンスリー ウィークリー スケジュール帳 年間計画帳 月間ブロック カレンダー手帳 コイル式 メモ インデックス付き 18月 2026年7月始まり 学校 ビジネス 家庭用 (ブラック)",
-      "brand": "VANRAのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/71kSmYNIHoL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0H1Q21CR8",
+      "asin": "B0H1Q21CR8",
+      "amazon_title": "NOLTY トリムA5-3 6607 2027 ネイビー",
+      "brand": "NOLTY",
+      "image_url": "https://m.media-amazon.com/images/I/6125Ez8ZbwL._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": 2780,
       "discovery_score": 1,
       "selection_score": 0.675,
       "matched_comparison_axes": [
         "format"
       ],
-      "search_key": "VANRA 手帳 2026-2027 A5 マンスリー ウィークリー スケジ"
+      "search_key": "VANRA 手帳 2026-2027 A5 マンスリー ウィークリー スケジ",
+      "model": "6607",
+      "selected_variant": {
+        "edition": 2027,
+        "model": "6607",
+        "color": "ネイビー",
+        "format": "A5 週間バーチカル",
+        "item_count": 1
+      }
     },
     {
       "ref": "p3",
       "product_id": "AMZ-B0HBQ56ZDL",
       "asin": "B0HBQ56ZDL",
-      "amazon_title": "学研ステイフル 手帳 2027 スケジュール帳 ツイン手帳 A5 チャコールグレー M17801 2026年 10月始まり",
-      "brand": "ブランド: 学研ステイフル(Gakken Sta:Ful)",
+      "amazon_title": "学研ステイフル ツイン手帳 M17801 2027 チャコールグレー",
+      "brand": "学研ステイフル",
       "image_url": "https://m.media-amazon.com/images/I/5193J8hpE5L._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": 1958,
       "discovery_score": 1,
       "selection_score": 0.495,
       "matched_comparison_axes": [],
-      "search_key": "学研ステイフル(Gakken Sta:Ful) 学研ステイフル 手帳 2027 スケジュール帳"
+      "search_key": "学研ステイフル(Gakken Sta:Ful) 学研ステイフル 手帳 2027 スケジュール帳",
+      "model": "M17801",
+      "selected_variant": {
+        "edition": 2027,
+        "model": "M17801",
+        "color": "チャコールグレー",
+        "format": "A5変形 ツイン",
+        "item_count": 1
+      }
     },
     {
       "ref": "p4",
       "product_id": "AMZ-B0HCTSFQ7M",
       "asin": "B0HCTSFQ7M",
-      "amazon_title": "グリーティングライフ ココちゃん 手帳 2027年 A5 スリム マンスリー ソフトカバー CD-1457-RY （2026年12月始まり） ピンク",
-      "brand": "GreetingLife(グリーティングライフ)のストアを表示",
+      "amazon_title": "グリーティングライフ ココちゃん CD-1457-RY 2027 ピンク",
+      "brand": "グリーティングライフ",
       "image_url": "https://m.media-amazon.com/images/I/71eEIJUaSbL._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": 1320,
       "discovery_score": 1,
@@ -106,29 +130,45 @@
       "matched_comparison_axes": [
         "format"
       ],
-      "search_key": "GreetingLife(グリーティングライフ) グリーティングライフ ココちゃん 手帳 202"
+      "search_key": "GreetingLife(グリーティングライフ) グリーティングライフ ココちゃん 手帳 202",
+      "model": "CD-1457-RY",
+      "selected_variant": {
+        "edition": 2027,
+        "model": "CD-1457-RY",
+        "color": "ピンク",
+        "format": "A5スリム 月間",
+        "item_count": 1
+      }
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0HCTPZYF1",
-      "asin": "B0HCTPZYF1",
-      "amazon_title": "ダイゴー 手帳 2027 スケジュール帳 ハンディピック ウィークリー レフト ラージ 濃ブルー E1090 2027年 1月始まり",
-      "brand": "ダイゴーのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/4169KPe-5fL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0HCTMPM6J",
+      "asin": "B0HCTMPM6J",
+      "amazon_title": "ダイゴー アポイント E1347 2027 ブラック",
+      "brand": "ダイゴー",
+      "image_url": "https://m.media-amazon.com/images/I/51Hw-6dBwKL._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": 719,
       "discovery_score": 1,
       "selection_score": 0.445,
       "matched_comparison_axes": [
         "format"
       ],
-      "search_key": "ダイゴー 手帳 2027 スケジュール帳 ハンディピック ウィークリー レ"
+      "search_key": "ダイゴー 手帳 2027 スケジュール帳 ハンディピック ウィークリー レ",
+      "model": "E1347",
+      "selected_variant": {
+        "edition": 2027,
+        "model": "E1347",
+        "color": "ブラック",
+        "format": "A5 週間レフト",
+        "item_count": 1
+      }
     },
     {
       "ref": "p6",
       "product_id": "AMZ-B0H32WHJWV",
       "asin": "B0H32WHJWV",
-      "amazon_title": "ホールマーク ディズニー 手帳 2027年 A5 マンスリー ファミリー手帳 853709 (2026年 12月始まり)",
-      "brand": "ブランド: Hallmark",
+      "amazon_title": "ホールマーク 853709 ディズニー A5ファミリー 2027",
+      "brand": "ホールマーク",
       "image_url": "https://m.media-amazon.com/images/I/617boBr6fPL._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": 1557,
       "discovery_score": 1,
@@ -136,7 +176,15 @@
       "matched_comparison_axes": [
         "format"
       ],
-      "search_key": "Hallmark ホールマーク ディズニー 手帳 2027年 A5 マンスリー フ"
+      "search_key": "Hallmark ホールマーク ディズニー 手帳 2027年 A5 マンスリー フ",
+      "model": "853709",
+      "selected_variant": {
+        "edition": 2027,
+        "model": "853709",
+        "design": "ディズニー",
+        "format": "A5 ファミリー月間",
+        "item_count": 1
+      }
     }
   ]
 }

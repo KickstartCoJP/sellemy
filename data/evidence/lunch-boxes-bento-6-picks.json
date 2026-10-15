@@ -55,11 +55,11 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0C4SVPQJ4",
-      "asin": "B0C4SVPQJ4",
-      "amazon_title": "スケーター(Skater) 保温弁当箱 丼型 2段 1050ml 大容量 男性 ステンレス ランチジャー 保温保冷 真空断熱構造 STLB3AG",
-      "brand": "スケーター(Skater)のストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/71Ty7cojf5L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0F5PWYQYT",
+      "asin": "B0F5PWYQYT",
+      "amazon_title": "【セット買い】スケーター(Skater) 保温 弁当箱 丼ぶりタイプ 1050ml 大容量 真空断熱構造 抗菌 STLB3AG + コンビセット ブラック ドット 箸 21cm スプーン 食洗機対応 男性用 CCS45SA",
+      "brand": "スケーター",
+      "image_url": "https://m.media-amazon.com/images/I/51yTYWFLn7L._AC_SL1001_.jpg",
       "observed_price": 2991,
       "discovery_score": 1,
       "selection_score": 0.84,
@@ -67,15 +67,19 @@
         "capacity_design",
         "insulation"
       ],
-      "search_key": "スケーター(Skater) 保温弁当箱 丼型 2段 1050ml 大容量 男性 ステンレス"
+      "search_key": "スケーター(Skater) 保温弁当箱 丼型 2段 1050ml 大容量 男性 ステンレス",
+      "selected_variant": {
+        "capacity_ml": 1050,
+        "pack": "弁当箱+ブラックドット箸スプーンコンビセット"
+      }
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0HJWY1KPS",
-      "asin": "B0HJWY1KPS",
-      "amazon_title": "304 ステンレス製 弁当箱 2 仕切り 大容量 高密閉クリップ式 汁漏れ防止 ランチボックス 食器洗い機対応 大人 男性 中高生 通勤 通学 保存容器 850ml(食器セットとバッグが含まれています)",
-      "brand": "ブランド: ノーブランド品",
-      "image_url": "https://m.media-amazon.com/images/I/71Y3JrlWDQL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B001UIYNTU",
+      "asin": "B001UIYNTU",
+      "amazon_title": "工房アイザワ ランチボックス 角長スリム 2段 70134",
+      "brand": "工房アイザワ",
+      "image_url": "https://m.media-amazon.com/images/I/51nLGr8wjeL._AC_SL1000_.jpg",
       "observed_price": 3599,
       "discovery_score": 1,
       "selection_score": 0.66,
@@ -83,61 +87,87 @@
         "capacity_design",
         "material"
       ],
-      "search_key": "ノー品 304 ステンレス製 弁当箱 2 仕切り 大容量 高密閉クリップ"
+      "search_key": "ノー品 304 ステンレス製 弁当箱 2 仕切り 大容量 高密閉クリップ",
+      "selected_variant": {
+        "type": "角長スリム2段ランチボックス",
+        "material": "ステンレス",
+        "quantity": 1
+      }
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0D8FR4CPM",
-      "asin": "B0D8FR4CPM",
-      "amazon_title": "保温弁当箱 保温ランチジャー 保温ご飯ジャー ランチジャー ステンレスランチジャー ランチボックス ランチ 2段 /3段 大容量 長期保温 密閉 漏れ防止 耐久性 通勤 通学 携帯便利 男女兼用 (レッド,1.5L) (1.5L,レッド)",
-      "brand": "ブランド: Jirrtco",
-      "image_url": "https://m.media-amazon.com/images/I/51FXcFKNvBL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B01K1QPBK6",
+      "asin": "B01K1QPBK6",
+      "amazon_title": "タイガー魔法瓶(TIGER) タイガー 魔法瓶 保温 弁当箱 ステンレス ランチ ジャー 茶碗 約 2.3 杯分 ポーチ付き ブラック LWY-E461-K Tiger",
+      "brand": "タイガー魔法瓶",
+      "image_url": "https://m.media-amazon.com/images/I/816ueUo5PQS._AC_SL1500_.jpg",
       "observed_price": 4704,
       "discovery_score": 1,
       "selection_score": 0.48,
       "matched_comparison_axes": [
         "capacity_design"
       ],
-      "search_key": "Jirrtco 保温弁当箱 保温ランチジャー 保温ご飯ジャー ランチジャー ステ"
+      "search_key": "Jirrtco 保温弁当箱 保温ランチジャー 保温ご飯ジャー ランチジャー ステ",
+      "selected_variant": {
+        "color": "ブラック",
+        "package": "保温弁当箱・ポーチ付き",
+        "quantity": 1
+      }
     },
     {
       "ref": "p4",
       "product_id": "AMZ-B01I8RJA7K",
       "asin": "B01I8RJA7K",
       "amazon_title": "象印 保温弁当箱 ステンレスランチジャー 茶碗 約4杯分 約 1.6合 電子レンジ 対応 SL-XE20-AD",
-      "brand": "象印マホービン(ZOJIRUSHI)のストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/517D+88eJ8L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "brand": "象印マホービン",
+      "image_url": "https://m.media-amazon.com/images/I/517D+88eJ8L._AC_SL1080_.jpg",
       "observed_price": 3244,
       "discovery_score": 1,
       "selection_score": 0.48,
       "matched_comparison_axes": [],
-      "search_key": "象印マホービン(ZOJIRUSHI) 象印 保温弁当箱 ステンレスランチジャー 茶碗 約4杯分"
+      "search_key": "象印マホービン(ZOJIRUSHI) 象印 保温弁当箱 ステンレスランチジャー 茶碗 約4杯分",
+      "selected_variant": {
+        "color": "ネイビー",
+        "package": "ステンレスランチジャー",
+        "quantity": 1
+      }
     },
     {
       "ref": "p5",
       "product_id": "AMZ-B00M1ECQZ0",
       "asin": "B00M1ECQZ0",
       "amazon_title": "サーモス サーモス ステンレスランチジャー 約0.6合 ネイビー JBC-801 NVY",
-      "brand": "サーモス(THERMOS)のストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/61adhZ-4oTL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "brand": "サーモス",
+      "image_url": "https://m.media-amazon.com/images/I/61adhZ-4oTL._AC_SL1000_.jpg",
       "observed_price": 3762,
       "discovery_score": 1,
       "selection_score": 0.48,
       "matched_comparison_axes": [],
-      "search_key": "サーモス(THERMOS) サーモス サーモス ステンレスランチジャー 約0.6合 ネイビー"
+      "search_key": "サーモス(THERMOS) サーモス サーモス ステンレスランチジャー 約0.6合 ネイビー",
+      "selected_variant": {
+        "color": "ネイビー",
+        "package": "ステンレスランチジャー単品（容器・箸・袋付き）",
+        "quantity": 1
+      }
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0H3TQSM6K",
-      "asin": "B0H3TQSM6K",
-      "amazon_title": "耐熱ガラス 弁当箱 密閉 耐熱容器 電子レンジ対応 男性 女性 (パープル1個セット, 弁当箱640ml・バッグ・箸箱)",
-      "brand": "Medichefのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/61uj8AYchiL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0FB7WSLFZ",
+      "asin": "B0FB7WSLFZ",
+      "amazon_title": "アスベル 弁当箱 パッキン一体型 ランタス WTL-650 650ml ベージュ 冷凍可 抗菌 1段",
+      "brand": "アスベル",
+      "image_url": "https://m.media-amazon.com/images/I/41SpJupL7qL._AC_SL1000_.jpg",
       "observed_price": 2640,
       "discovery_score": 1,
       "selection_score": 0.43,
       "matched_comparison_axes": [],
-      "search_key": "Medichef 耐熱ガラス 弁当箱 密閉 耐熱容器 電子レンジ対応 男性 女性"
+      "search_key": "Medichef 耐熱ガラス 弁当箱 密閉 耐熱容器 電子レンジ対応 男性 女性",
+      "selected_variant": {
+        "color": "ベージュ（サンドベージュ）",
+        "volume": "650ml",
+        "type": "1段・パッキン一体型",
+        "quantity": 1
+      }
     }
   ]
 }

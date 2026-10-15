@@ -52,83 +52,121 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0GJS21966",
-      "asin": "B0GJS21966",
-      "amazon_title": "b.ris veil ビーリスベールモイストカラーシャンプー 280ml ブラック 3本｜白髪ケア 白髪染め ヘナ｜ベルガモットジャスミンの香り",
-      "brand": "ｂ．ｒｉｓ＼ビーリスのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/71xtUns7bPL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0CVMQNFVR",
+      "asin": "B0CVMQNFVR",
+      "amazon_title": "ブローネ カラートリートメント カカオブラウン 180g",
+      "brand": "花王 ブローネ",
+      "image_url": "https://m.media-amazon.com/images/I/71G1mkZNgzL._AC_SL1500_.jpg",
       "observed_price": 13446,
       "discovery_score": 1,
       "selection_score": 0.65,
       "matched_comparison_axes": [
         "texture_scent"
       ],
-      "search_key": "ｂ．ｒｉｓ＼ビーリス b.ris veil ビーリスベールモイストカラーシャンプー 2"
+      "search_key": "ｂ．ｒｉｓ＼ビーリス b.ris veil ビーリスベールモイストカラーシャンプー 2",
+      "selected_variant": {
+        "color": "カカオブラウン",
+        "capacity_g": 180,
+        "count": 1
+      }
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0GL8NXRS6",
-      "asin": "B0GL8NXRS6",
-      "amazon_title": "【1本7役 新感覚ヘアカラートリートメント】大容量200g ノアリス ヘアカラートリートメント 白髪染め",
-      "brand": "Gleonのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/71pVpN003fL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0BB2Q88YN",
+      "asin": "B0BB2Q88YN",
+      "amazon_title": "シエロ カラートリートメント 全体用 ダークブラウン 230g",
+      "brand": "ホーユー シエロ",
+      "image_url": "https://m.media-amazon.com/images/I/51nPkUp1vAL._AC_SL1431_.jpg",
       "observed_price": 2980,
       "discovery_score": 1,
       "selection_score": 0.52,
       "matched_comparison_axes": [],
-      "search_key": "Gleon 大容量200g ノアリス ヘアカラートリートメント 白髪染め"
+      "search_key": "Gleon 大容量200g ノアリス ヘアカラートリートメント 白髪染め",
+      "selected_variant": {
+        "color": "ダークブラウン",
+        "capacity_g": 230,
+        "count": 1
+      }
     },
     {
       "ref": "p3",
       "product_id": "AMZ-B0H8CM7XHY",
       "asin": "B0H8CM7XHY",
-      "amazon_title": "パーフェクトワン ヘアネスト ヘアーカラートリートメント 25g×5包 個包装 白髪染め (手袋 コーム付 ナチュラルブラック)",
-      "brand": "パーフェクトワンのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/51mwCOHE0OL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "amazon_title": "パーフェクトワン ヘアネスト ヘアカラートリートメント ナチュラルブラック 25g×5包 手袋・コーム付き",
+      "brand": "新日本製薬 パーフェクトワン",
+      "image_url": "https://m.media-amazon.com/images/I/51mwCOHE0OL._AC_SX679_PIbundle-5,TopRight,0,0_SH20_.jpg",
       "observed_price": 3300,
       "discovery_score": 1,
       "selection_score": 0.52,
       "matched_comparison_axes": [],
-      "search_key": "パーフェクトワン ヘアネスト ヘアーカラートリートメント 25g×5包 個包装 白"
+      "search_key": "パーフェクトワン ヘアネスト ヘアーカラートリートメント 25g×5包 個包装 白",
+      "selected_variant": {
+        "color": "ナチュラルブラック",
+        "capacity_g_per_sachet": 25,
+        "count": 5,
+        "accessories": [
+          "手袋",
+          "コーム"
+        ]
+      }
     },
     {
       "ref": "p4",
       "product_id": "AMZ-B0CJT7NBMW",
       "asin": "B0CJT7NBMW",
-      "amazon_title": "［ オーガニック 白髪ケア ］biseno(ビセノ) ヘアカラートリートメント ナチュラルブラック 150g×1 (約1か月分)",
-      "brand": "bisenoのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/61Eo2KWHcaL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "amazon_title": "biseno ヘアカラートリートメント ナチュラルブラック 150g 1本",
+      "brand": "biseno",
+      "image_url": "https://m.media-amazon.com/images/I/61Eo2KWHcaL._AC_SL1500_.jpg",
       "observed_price": 3980,
       "discovery_score": 1,
       "selection_score": 0.52,
       "matched_comparison_axes": [],
-      "search_key": "biseno ［ オーガニック 白髪ケア ］biseno(ビセノ) ヘアカラー"
+      "search_key": "biseno ［ オーガニック 白髪ケア ］biseno(ビセノ) ヘアカラー",
+      "selected_variant": {
+        "color": "ナチュラルブラック",
+        "capacity_g": 150,
+        "count": 1
+      }
     },
     {
       "ref": "p5",
       "product_id": "AMZ-B09X1DSRNF",
       "asin": "B09X1DSRNF",
-      "amazon_title": "50の恵 頭皮いたわりカラートリートメント ダークブラウン 2個セット(白髪染め 酸化染料フリー)+極潤サシェット付",
-      "brand": "50の恵のストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/81v8tJiU8fL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "amazon_title": "50の恵 頭皮いたわりカラートリートメント ダークブラウン 2個セット・極潤サシェット付き",
+      "brand": "ロート製薬 50の恵",
+      "image_url": "https://m.media-amazon.com/images/I/81v8tJiU8fL._AC_SL1500_.jpg",
       "observed_price": 3300,
       "discovery_score": 1,
       "selection_score": 0.52,
       "matched_comparison_axes": [],
-      "search_key": "50の恵 頭皮いたわりカラートリートメント ダークブラウン 2個セット(白"
+      "search_key": "50の恵 頭皮いたわりカラートリートメント ダークブラウン 2個セット(白",
+      "selected_variant": {
+        "color": "ダークブラウン",
+        "capacity_g_per_tube": 150,
+        "count": 2,
+        "accessories": [
+          "極潤サシェット（時期によりおまけ品変更の表示あり）"
+        ]
+      }
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B09L3S9XH5",
-      "asin": "B09L3S9XH5",
-      "amazon_title": "【シリーズ累計530万本突破】 ルプルプ エッセンス カラートリートメント エボニーブラック 170g 約1ヵ月分 LPLP",
+      "product_id": "AMZ-B0CHLTY67B",
+      "asin": "B0CHLTY67B",
+      "amazon_title": "サイオス カラートリートメント ダークブラウン 180g おまけ付き",
       "brand": "ルプルプ(LPLP)のストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/61yUFHBuL9L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61jQK2k2NNL._AC_SL1500_.jpg",
       "observed_price": 3630,
       "discovery_score": 1,
       "selection_score": 0.52,
       "matched_comparison_axes": [],
-      "search_key": "ルプルプ(LPLP) ルプルプ エッセンス カラートリートメント エボニーブラック 1"
+      "search_key": "ルプルプ(LPLP) ルプルプ エッセンス カラートリートメント エボニーブラック 1",
+      "selected_variant": {
+        "color": "ダークブラウン",
+        "capacity_g": 180,
+        "count": 1,
+        "bonus": "ヘアブラシ・コーム・ケープのいずれか1点、選択不可"
+      }
     }
   ]
 }

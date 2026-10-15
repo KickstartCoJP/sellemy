@@ -41,43 +41,55 @@
   "eyecatch_image": "https://www.sellemy.jp/img/hdmi-input-switchers/hdmi-input-switchers.png",
   "products": [
     {
-      "amazon_title": "4K@60Hz/2K@120Hz HDMI切替器 3入力1出力 18Gbps リモコン 自動・手動切替 日本語取説・USB電源ケーブルが付属",
-      "asin": "B0DXKP5CRH",
-      "brand": "",
+      "amazon_title": "サンワサプライ SW-HDR8K31L",
+      "asin": "B0C9CPLKJ7",
+      "brand": "サンワサプライ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/713pHOZ2aJL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61CmAk1E+ZL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "connection_layout",
         "switching_and_power",
         "video_and_audio_support"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0DXKP5CRH",
+      "product_id": "AMZ-B0C9CPLKJ7",
       "ref": "p1",
       "search_key": "4K@60Hz/2K@120Hz HDMI切替器 3入力1出力",
-      "selection_score": 0.85
+      "selection_score": 0.85,
+      "selected_variant": {
+        "model": "SW-HDR8K31L",
+        "color": "ブラック",
+        "count": 1,
+        "configuration": "3入力1出力"
+      }
     },
     {
-      "amazon_title": "Sprolink HDMIスプリッター 1x4 4K@30Hz 3D フルHD 1入力4出力ディストリビューター 電源ACアダプター付き Fire TV Stick、PS5、HDTV、Xbox、ゲームモニター対応 取扱説明書付属",
-      "asin": "B0GFM5YZSZ",
-      "brand": "",
+      "amazon_title": "バッファロー BSAK302",
+      "asin": "B006SS6IGS",
+      "brand": "バッファロー",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61mZwhRf+wL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51jJ2G6gDQL._AC_SL1001_.jpg",
       "matched_comparison_axes": [
         "video_and_audio_support"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0GFM5YZSZ",
+      "product_id": "AMZ-B006SS6IGS",
       "ref": "p2",
       "search_key": "Sprolink HDMIスプリッター 1x4 4K@30Hz",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": {
+        "model": "BSAK302",
+        "color": "ブラック",
+        "count": 1,
+        "configuration": "3入力1出力/リモコン付"
+      }
     },
     {
-      "amazon_title": "llano 4K HDMI切替器 (2-in-1 Out, 双方向) 超小型 4K HDR 3Dコンテンツ対応 PS5・4 / Nintendo Switch/Xbox 360 /Fire TV Stick",
+      "amazon_title": "llano 4K HDMI双方向切替器 LA-4K-H204-Switch",
       "asin": "B0F62P2KT3",
-      "brand": "",
+      "brand": "llano",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/611qMZzNv5L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/611qMZzNv5L._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "connection_layout",
         "video_and_audio_support"
@@ -86,27 +98,39 @@
       "product_id": "AMZ-B0F62P2KT3",
       "ref": "p3",
       "search_key": "llano 4K HDMI切替器 (2-in-1 Out, 双方",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": {
+        "model": "H204",
+        "color": "ブラック",
+        "count": 1,
+        "configuration": "2入力1出力/1入力2出力の双方向"
+      }
     },
     {
-      "amazon_title": "ClimatePartner Verified",
-      "asin": "B0DLN4RLQF",
-      "brand": "",
+      "amazon_title": "ラトックシステム RS-HDSW41-8KA",
+      "asin": "B0BQ31Y3WS",
+      "brand": "ラトックシステム",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61++s0S292L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/41t0WWt2aEL._AC_SL1000_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0DLN4RLQF",
+      "product_id": "AMZ-B0BQ31Y3WS",
       "ref": "p4",
       "search_key": "ClimatePartner Verified",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": {
+        "model": "RS-HDSW41-8KA",
+        "color": "ブラック",
+        "count": 1,
+        "configuration": "4入力1出力/リモコン・ACアダプター付"
+      }
     },
     {
-      "amazon_title": "エレコム HDMI切替器 4K 60Hz 4入力1出力 リモコン付き 【自動・手動切替が選べる】 PS5・4 / Nintendo Switch/Fire TV Stick 他 DH-SW4KB41BK/E",
+      "amazon_title": "エレコム DH-SW4KB41BK/E 4入力1出力",
       "asin": "B0DDKSRTJW",
-      "brand": "",
+      "brand": "エレコム",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/718eBQVpLAL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/718eBQVpLAL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "connection_layout",
         "switching_and_power",
@@ -116,14 +140,20 @@
       "product_id": "AMZ-B0DDKSRTJW",
       "ref": "p5",
       "search_key": "エレコム HDMI切替器 4K 60Hz 4入力1出力 リモコン",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": {
+        "model": "DH-SW4KB41BK/E",
+        "color": "ブラック",
+        "count": 1,
+        "configuration": "4入力1出力/リモコン付"
+      }
     },
     {
-      "amazon_title": "エレコム HDMI切替器 4K 60Hz 2入力1出力 双方向 薄型(12mm) PS5・4 / Nintendo Switch/Fire TV Stick 他 DH-SW4KBD21BK/E",
+      "amazon_title": "エレコム DH-SW4KBD21BK/E 双方向2入力切替器",
       "asin": "B0DDKSDZ98",
-      "brand": "",
+      "brand": "エレコム",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51QdIW3vZAL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51QdIW3vZAL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "connection_layout",
         "video_and_audio_support"
@@ -132,7 +162,13 @@
       "product_id": "AMZ-B0DDKSDZ98",
       "ref": "p6",
       "search_key": "エレコム HDMI切替器 4K 60Hz 2入力1出力 双方向",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": {
+        "model": "DH-SW4KBD21BK/E",
+        "color": "ブラック",
+        "count": 1,
+        "configuration": "2入力1出力/1入力2出力の双方向"
+      }
     }
   ],
   "selection": {

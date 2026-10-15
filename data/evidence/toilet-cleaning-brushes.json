@@ -37,84 +37,115 @@
   "eyecatch_image": "https://www.sellemy.jp/img/toilet-cleaning-brushes/toilet-cleaning-brushes.png",
   "products": [
     {
-      "amazon_title": "18個セット トイレブラシ 長柄設計 壁掛け収納 交換式ヘッド 内蔵洗剤 頑丈構造 衛生的 防滴 バスルーム清掃用 オフィスに適応, ホワイト24ヘッド",
-      "asin": "B0GD2H8GZN",
-      "brand": "",
+      "amazon_title": "マーナ (marna) スクエア トイレブラシ 収納 ケース付き ( ホワイト / スリム ) トイレ掃除 ブラシ ( コンパクト / 衛生的 ) トイレ W061W",
+      "asin": "B000L1YJFK",
+      "brand": "マーナ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61XfkZZpD2L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/41vgi1D+THL._AC_SL1000_.jpg",
       "matched_comparison_axes": [
         "replacement_and_detergent"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0GD2H8GZN",
+      "product_id": "AMZ-B000L1YJFK",
       "ref": "p1",
       "search_key": "18個セット トイレブラシ 長柄設計 壁掛け収納 交換式ヘッド",
-      "selection_score": 0.505
+      "selection_score": 0.505,
+      "selected_variant": {
+        "color": "ホワイト",
+        "set": "ブラシ・ケース",
+        "type": "2種類植毛・水はねエプロン"
+      }
     },
     {
-      "amazon_title": "ステンレス壁掛け式トイレブラシホルダーセット 衛生的密閉収納と交換用ブラシ付 バスルーム清掃用 家庭 RV対応 1Set",
-      "asin": "B0GKV6XKW3",
-      "brand": "",
+      "amazon_title": "無印良品 トイレブラシ・ケース付 幅10×奥行10×高さ38cm 38755654 白",
+      "asin": "B07CGLX8H1",
+      "brand": "無印良品",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51A2zIX3Q7L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/41P2yMGZjkL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0GKV6XKW3",
+      "product_id": "AMZ-B07CGLX8H1",
       "ref": "p2",
       "search_key": "ステンレス壁掛け式トイレブラシホルダーセット 衛生的密閉収納と交",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "color": "ホワイト",
+        "set": "ブラシ・ケース",
+        "dimensions_cm": "10×10×38"
+      }
     },
     {
-      "amazon_title": "【本体&18個詰め替えセット】 トイレブラシ 使い捨て トイレクリーナー ケース付き スポンジ ブラシヘッド 収納ホルダー 長柄設計 壁掛け式 自動洗浄液付き 簡単交換 衛生的 シンク バスタブ 洗面器 トイレ清掃 家庭用 清掃用品",
-      "asin": "B0G637ZNGS",
-      "brand": "",
+      "amazon_title": "スクラビングバブル (Scrubbing Bubbles) 流せるトイレブラシ フローラルソープの香り 本体+付け替え用 (16個) トイレ洗剤 黒ズミ トイレ掃除 ブラシ 使い捨て 洗剤 まとめ買い",
+      "asin": "B085SJGVZQ",
+      "brand": "スクラビングバブル",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51C9FtPsBDL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/810Grvcc5vL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0G637ZNGS",
+      "product_id": "AMZ-B085SJGVZQ",
       "ref": "p3",
       "search_key": "トイレブラシ 使い捨て トイレクリーナー ケース付き スポンジ",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "scent": "フローラルソープ",
+        "set": "本体ハンドル1・ホルダー1・付替ブラシ16（4+12）",
+        "purchase": "1回限り"
+      }
     },
     {
-      "amazon_title": "【本体&12個詰め替えセット】 トイレブラシ 使い捨て トイレクリーナー ケース付き スポンジ ブラシヘッド 収納ホルダー 長柄設計 壁掛け式 自動洗浄液付き 簡単交換 衛生的 シンク バスタブ 洗面器 トイレ清掃 家庭用 清掃用品",
-      "asin": "B0G62QHHK1",
-      "brand": "",
+      "amazon_title": "レック KAKU トイレブラシ ケース付き (ホワイト) パナソニック・アラウーノ対応 B00178",
+      "asin": "B07JPHN7ML",
+      "brand": "レック",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51n8Lw2XIOL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/41eUfCLG-UL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0G62QHHK1",
+      "product_id": "AMZ-B07JPHN7ML",
       "ref": "p4",
       "search_key": "トイレブラシ 使い捨て トイレクリーナー ケース付き スポンジ",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "color": "ホワイト",
+        "set": "ブラシ・ケース",
+        "dimensions_cm": "9.5×10×35.5"
+      }
     },
     {
-      "amazon_title": "山崎実業(Yamazaki) 替えブラシ 収納付き 流せるトイレブラシスタンド ホワイト W6.5×D20.2×H17cm プレート Plate トイレブラシケース 10051",
-      "asin": "B0FLNHXV6D",
-      "brand": "",
+      "amazon_title": "日本クリンテック(Nihon Clean tech) Ka:z Clean トイレブラシ ケース付 ポリプロピレン ホワイト 幅9.5cm 全長46cm",
+      "asin": "B015DM7M9G",
+      "brand": "日本クリンテック",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51d4YrXTO8L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51rCX14UmnL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0FLNHXV6D",
+      "product_id": "AMZ-B015DM7M9G",
       "ref": "p5",
       "search_key": "山崎実業(Yamazaki) 替えブラシ 収納付き 流せるトイレ",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "color": "ホワイト",
+        "set": "ブラシ・ケース",
+        "case_dimensions_cm": "9.5×14×46"
+      }
     },
     {
-      "amazon_title": "山崎実業(Yamazaki) 【穴が目立ちにくい石こうボードピンセット・木ネジ 付属】 ウォール 替えブラシ 収納付き 流せるトイレブラシホルダー 石こうボード壁対応 ホワイト W11×D7.4×H36.7cm プレート Plate 浮かせる収納 トイレブラシケース 10032",
-      "asin": "B0F9KYLC27",
-      "brand": "",
+      "amazon_title": "サンコー やわらか トイレブラシ ケース付 水だけでも汚れが落とせる特殊繊維 傷がつきにくい レギュラー ホワイト びっくりフレッシュ 日本製 BL-93",
+      "asin": "B003P1DINW",
+      "brand": "サンコー",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/41wGdlCIzsL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/41riVWZ3hQL._AC_SL1105_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0F9KYLC27",
+      "product_id": "AMZ-B003P1DINW",
       "ref": "p6",
       "search_key": "山崎実業(Yamazaki) ウォール 替えブラシ 収納付き 流",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "color": "ホワイト",
+        "size": "レギュラー",
+        "set": "ブラシ・ケース",
+        "brush_material": "ポリエステル特殊繊維"
+      }
     }
   ],
   "selection": {

@@ -39,9 +39,9 @@
     {
       "amazon_title": "オーエ ボディタオル やわらかめ ピンク 約幅28×長さ100cm あわゆき 体洗い タオル 豊かな 泡立ち 日本製",
       "asin": "B00KL6DG18",
-      "brand": "",
+      "brand": "オーエ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/81wzTWOYh4L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/81wzTWOYh4L._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "dimensions"
       ],
@@ -49,72 +49,108 @@
       "product_id": "AMZ-B00KL6DG18",
       "ref": "p1",
       "search_key": "オーエ ボディタオル やわらかめ ピンク 約幅28×長さ100c",
-      "selection_score": 0.505
+      "selection_score": 0.505,
+      "model": "オーエ あわゆき ナイロンタオルやわらか",
+      "selected_variant": {
+        "colour": "ピンク",
+        "type": "やわらか",
+        "size": "28x100cm",
+        "count": 1
+      }
     },
     {
-      "amazon_title": "[Bebemax]ボディブラシ シリコンバスブラシ 両面使える極厚シリコンボディタオル 90cm",
-      "asin": "B0HDB949W9",
-      "brand": "",
+      "amazon_title": "キクロン アワスター ピンク 幅28×長さ100ｃｍ 1個 (× 2)",
+      "asin": "B0H99VRLXV",
+      "brand": "キクロン",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71KA+w9a5HL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71Wuq4eGfeL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0HDB949W9",
+      "product_id": "AMZ-B0H99VRLXV",
       "ref": "p2",
       "search_key": "ボディブラシ シリコンバスブラシ 両面使える極厚シリコンボディタ",
-      "selection_score": 0.325
-    },
-    {
-      "amazon_title": "【セット販売】ごリラックス (バッグ サウナハット サウナマット ボディタオル)サウナ サ活 ゴリラックス GORELAX バス用品 お風呂 銭湯 入浴 水風呂 バッグ 旅行 かわいい プレゼント スーパー銭湯 温泉 銭湯 岩盤浴 効果 人気 メリット 頭皮保護 素材の違い サウナハットの選び方 (グリーン)",
-      "asin": "B0H6LK2RST",
-      "brand": "",
-      "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61Wos0Qd5aL._AC_UL320_.jpg",
-      "matched_comparison_axes": [],
-      "observed_price": null,
-      "product_id": "AMZ-B0H6LK2RST",
-      "ref": "p3",
-      "search_key": "ごリラックス (バッグ サウナハット サウナマット ボディタオル",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "model": "キクロン アワスター ピンク",
+      "selected_variant": {
+        "colour": "ピンク",
+        "size": "28x100cm",
+        "count": 2
+      }
     },
     {
       "amazon_title": "無印良品 泡立てボディタオル ふつう／約25×95cm 76416951",
       "asin": "B0GZZJBMWP",
-      "brand": "",
+      "brand": "無印良品",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71cBnACVq2L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71cBnACVq2L._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B0GZZJBMWP",
+      "ref": "p3",
+      "search_key": "ごリラックス (バッグ サウナハット サウナマット ボディタオル",
+      "selection_score": 0.325,
+      "model": "無印良品 泡立てボディタオル 76416951",
+      "selected_variant": {
+        "type": "ふつう",
+        "size": "25x95cm",
+        "count": 1
+      }
+    },
+    {
+      "amazon_title": "サラックス 浴用ボディタオル ふつう ブルー×2個セット",
+      "asin": "B01J9UDUJY",
+      "brand": "サラックス",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51E8j33irjL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "matched_comparison_axes": [],
+      "observed_price": null,
+      "product_id": "AMZ-B01J9UDUJY",
       "ref": "p4",
       "search_key": "無印良品 泡立てボディタオル ふつう／約25×95cm 7641",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "model": "サラックス 浴用ボディタオル ふつう ブルー",
+      "selected_variant": {
+        "colour": "パステルブルー",
+        "type": "ふつう",
+        "size": "28x95cm",
+        "count": 2
+      }
     },
     {
-      "amazon_title": "【セット販売】ごリラックス (カゴ サウナハット サウナマット ボディタオル)サウナ サ活 ゴリラックス GORELAX バス用品 お風呂 銭湯 入浴 水風呂 バッグ 旅行 かわいい プレゼント スーパー銭湯 温泉 銭湯 岩盤浴 効果 人気 メリット 頭皮保護 素材の違い サウナハットの選び方 (ブルー)",
-      "asin": "B0GYPYYRFG",
-      "brand": "",
+      "amazon_title": "たまご肌ボディタオル",
+      "asin": "B001TM6WRS",
+      "brand": "マーナ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61f8OYHyE9L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/21YIdPmHEiL._AC_SY300_SX300_QL70_ML2_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0GYPYYRFG",
+      "product_id": "AMZ-B001TM6WRS",
       "ref": "p5",
       "search_key": "ごリラックス (カゴ サウナハット サウナマット ボディタオル)",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "model": "たまご肌ボディタオル A943",
+      "selected_variant": {
+        "count": 1,
+        "size": "約25x90cm"
+      }
     },
     {
-      "amazon_title": "【す・なお公式】 こんにゃく生タオル 1枚入 ボディウォッシュ用 日本製 敏感肌対応 赤ちゃん ボディケア ギフト",
-      "asin": "B0GH81JHSF",
-      "brand": "",
+      "amazon_title": "アイセン(AISEN) 天然素材 贅沢ソフトなふわっと新疆綿 やわ肌 綿ボディタオル ホワイト BN217",
+      "asin": "B089NMN932",
+      "brand": "アイセン",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/6114wuR21jL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71mKtQJZmYL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0GH81JHSF",
+      "product_id": "AMZ-B089NMN932",
       "ref": "p6",
       "search_key": "こんにゃく生タオル 1枚入 ボディウォッシュ用 日本製 敏感肌対",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "model": "アイセン 綿ボディタオル BN217",
+      "selected_variant": {
+        "colour": "ホワイト",
+        "count": 1
+      }
     }
   ],
   "selection": {

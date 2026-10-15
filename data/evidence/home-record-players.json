@@ -41,9 +41,9 @@
     {
       "amazon_title": "デノン Denon DP-200USB レコードプレーヤー フォノイコライザー付 フルオート カートリッジ付属 ブラック DP-200USBK",
       "asin": "B001IZ6UDC",
-      "brand": "",
+      "brand": "Denon",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/618L-g4bq0L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/618L-g4bq0L._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "audio_connection",
         "playback_operation",
@@ -53,58 +53,80 @@
       "product_id": "AMZ-B001IZ6UDC",
       "ref": "p1",
       "search_key": "デノン Denon DP-200USB レコードプレーヤー フォ",
-      "selection_score": 0.865
+      "selection_score": 0.865,
+      "selected_variant": {
+        "model": "DP-200USBK",
+        "color": "ブラック",
+        "set": "本体のみ"
+      }
     },
     {
-      "amazon_title": "オーディオテクニカ レコードプレーヤー AT-LP60X DGM ダークガンメタリック フルオート 自動再生 ベルトドライブ フォノイコライザー内蔵 スピーカー ＆＆クリーナー ＆ マイクロファイバー セット",
-      "asin": "B0HHD579CP",
-      "brand": "",
+      "amazon_title": "オーディオテクニカ AT-LP60X DGM フルオート レコードプレーヤー ダークガンメタリック",
+      "asin": "B07QKTWB6H",
+      "brand": "audio-technica",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/617ervizbjL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71pIcGZzOZL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "audio_connection",
         "playback_operation"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0HHD579CP",
+      "product_id": "AMZ-B07QKTWB6H",
       "ref": "p2",
       "search_key": "オーディオテクニカ レコードプレーヤー AT-LP60X DGM",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "model_number": "AT-LP60X DGM",
+        "color": "ダークガンメタリック",
+        "style": "有線",
+        "package": "単品",
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "VOKSUN レコードプレーヤー Bluetooth送信と受信 USBで録音と音楽再生 スピーカー内蔵 RCAでスピーカー繋ぎ 赤胡桃色 S450",
-      "asin": "B0HDNK9RNF",
-      "brand": "",
+      "amazon_title": "ION Audioレコードプレーヤー スピーカー内蔵 USB ヘッドホン端子 レコードの音をUSB接続でPCに録音可能 33-1/3、45、78回転対応 アイオン Max LP 木目",
+      "asin": "B00COC61LO",
+      "brand": "ION Audio",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/6179q5ajtBL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71JFdYFphNL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "audio_connection"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0HDNK9RNF",
+      "product_id": "AMZ-B00COC61LO",
       "ref": "p3",
       "search_key": "VOKSUN レコードプレーヤー Bluetooth送信と受信",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "model_number": "Max LP",
+        "color": "木目",
+        "package": "スピーカー内蔵プレーヤー本体セット",
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "木製レトロレコードプレーヤー Bluetooth 5.0搭載 33/45/78回転対応 内蔵ステレオスピーカー",
-      "asin": "B0H5BB6HTD",
-      "brand": "",
+      "amazon_title": "ソニー レコードプレーヤー Bluetooth対応 PS-LX3BT",
+      "asin": "B0GGLJ6PQ1",
+      "brand": "SONY",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/81JwuFJ5IAL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/4109iGn9nVL._AC_SL1000_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0H5BB6HTD",
+      "product_id": "AMZ-B0GGLJ6PQ1",
       "ref": "p4",
       "search_key": "木製レトロレコードプレーヤー Bluetooth 5.0搭載 3",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "model_number": "PS-LX3BT",
+        "pack_count": 1
+      }
     },
     {
       "amazon_title": "オーディオテクニカ AT-LP7X レコードプレーヤー マニュアル ベルトドライブ ターンテーブル 有線",
       "asin": "B0GHMJZ8XJ",
-      "brand": "",
+      "brand": "audio-technica",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61ZMebCH5UL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61ZMebCH5UL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "playback_operation"
       ],
@@ -112,20 +134,29 @@
       "product_id": "AMZ-B0GHMJZ8XJ",
       "ref": "p5",
       "search_key": "オーディオテクニカ AT-LP7X レコードプレーヤー マニュア",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "model": "AT-LP7X",
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "[セット商品]オーディオテクニカ レコードプレーヤー&スピーカーセット ブラック×ホワイト",
-      "asin": "B0GF29G2FH",
-      "brand": "",
+      "amazon_title": "Technics SL-50C-K ダイレクトドライブターンテーブルシステム テクニクス ブラック",
+      "asin": "B0FWHNSJ2L",
+      "brand": "Technics",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/41yVo4PwWPL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61T5dOZazCL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0GF29G2FH",
+      "product_id": "AMZ-B0FWHNSJ2L",
       "ref": "p6",
       "search_key": "オーディオテクニカ レコードプレーヤー&スピーカーセット ブラッ",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "model_number": "SL-50C-K",
+        "color": "ブラック",
+        "pack_count": 1
+      }
     }
   ],
   "selection": {

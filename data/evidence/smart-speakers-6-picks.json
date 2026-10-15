@@ -47,9 +47,9 @@
       "ref": "p1",
       "product_id": "AMZ-B0DM1BLVZ6",
       "asin": "B0DM1BLVZ6",
-      "amazon_title": "Sonos Arc Ultra | プレミアムスマートサウンドバー Dolby Atmos 重低音 Bluetooth Alexa搭載 ブラック",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61WbdzYBy8L._AC_UL320_.jpg",
+      "amazon_title": "Sonos Arc Ultra",
+      "brand": "Sonos",
+      "image_url": "https://m.media-amazon.com/images/I/61WbdzYBy8L._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.71,
@@ -57,15 +57,19 @@
         "sound-quality",
         "voice-assistant"
       ],
-      "search_key": "Sonos Arc Ultra | プレミアムスマートサウンドバ"
+      "search_key": "Sonos Arc Ultra | プレミアムスマートサウンドバ",
+      "selected_variant": {
+        "color": "ブラック",
+        "type": "Alexa soundbar"
+      }
     },
     {
       "ref": "p2",
       "product_id": "AMZ-B0DKLWZY2Z",
       "asin": "B0DKLWZY2Z",
-      "amazon_title": "Amazon Echo Dot Max (エコードットマックス)(2025年発売) - Alexaスピーカー、部屋中に広がるサウンド、スマートホームハブ内蔵、グラファイト",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71ozCbsdgZL._AC_UL320_.jpg",
+      "amazon_title": "Echo Dot Max 2025",
+      "brand": "Amazon",
+      "image_url": "https://m.media-amazon.com/images/I/61TeWv6FXaL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.53,
@@ -73,61 +77,83 @@
         "smart-home-integration",
         "voice-assistant"
       ],
-      "search_key": "Amazon Echo Dot Max (エコードットマックス)"
+      "search_key": "Amazon Echo Dot Max (エコードットマックス)",
+      "selected_variant": {
+        "color": "グラファイト",
+        "voice": "Alexa"
+      }
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0GT8ZFVFC",
-      "asin": "B0GT8ZFVFC",
-      "amazon_title": "Sonos Era 100 SL | スマートスピーカー マイク非搭載 Wi-Fi 6 Bluetooth ステレオペア対応 ホワイト",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/713fMjFMftL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0BXPJFFMX",
+      "asin": "B0BXPJFFMX",
+      "amazon_title": "Sonos Era100",
+      "brand": "Sonos",
+      "image_url": "https://m.media-amazon.com/images/I/814U6uU0WVL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [
         "sound-quality"
       ],
-      "search_key": "Sonos Era 100 SL | スマートスピーカー マイク"
+      "search_key": "Sonos Era 100 SL | スマートスピーカー マイク",
+      "selected_variant": {
+        "color": "ホワイト",
+        "voice": "Alexa",
+        "microphone": true
+      }
     },
     {
       "ref": "p4",
       "product_id": "AMZ-B0GPXY14ML",
       "asin": "B0GPXY14ML",
-      "amazon_title": "Bose Lifestyle Ultra Speaker - TrueSpatial Audio CleanBass AirPlay ＆ Google Cast対応 Bluetooth Wi-Fi接続 ワイヤレスホームスピーカー ドリフトウッドサンド",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/81XxChLXxCL._AC_UL320_.jpg",
+      "amazon_title": "Bose Lifestyle Ultra Speaker",
+      "brand": "Bose",
+      "image_url": "https://m.media-amazon.com/images/I/81XxChLXxCL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "Bose Lifestyle Ultra Speaker - T"
+      "search_key": "Bose Lifestyle Ultra Speaker - T",
+      "selected_variant": {
+        "color": "ドリフトウッドサンド",
+        "connectivity": "WiFi/Bluetooth/AirPlay/GoogleCast",
+        "voice": "Alexa controls perlisting"
+      }
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0GLZWT71G",
-      "asin": "B0GLZWT71G",
-      "amazon_title": "Global Recycled Standard",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/41EwwZXMiiL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0DXMYB4XN",
+      "asin": "B0DXMYB4XN",
+      "amazon_title": "Echo Studio 2025",
+      "brand": "Amazon",
+      "image_url": "https://m.media-amazon.com/images/I/71omOZ8WvzL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "Global Recycled Standard"
+      "search_key": "Global Recycled Standard",
+      "selected_variant": {
+        "color": "グラファイト",
+        "voice": "Alexa"
+      }
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0GCFT1YLL",
-      "asin": "B0GCFT1YLL",
-      "amazon_title": "テレビ スピーカー ワイヤレス【テレビ全機種対応★2.4G送信機同梱】手元スピーカー テレビ用 最大30m 低遅延 27時間連続再生",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71P8WB+X4YL._AC_UL320_.jpg",
+      "product_id": "AMZ-B09B8SZLLG",
+      "asin": "B09B8SZLLG",
+      "amazon_title": "Echo Dot 第5世代",
+      "brand": "Amazon",
+      "image_url": "https://m.media-amazon.com/images/I/7192zNrJLDL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "テレビ スピーカー ワイヤレス 手元スピーカー テレビ用 最大3"
+      "search_key": "テレビ スピーカー ワイヤレス 手元スピーカー テレビ用 最大3",
+      "selected_variant": {
+        "color": "チャコール",
+        "voice": "Alexa"
+      }
     }
   ]
 }

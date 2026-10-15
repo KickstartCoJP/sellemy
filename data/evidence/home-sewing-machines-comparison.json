@@ -37,93 +37,121 @@
   "eyecatch_image": "https://www.sellemy.jp/img/home-sewing-machines-comparison/home-sewing-machines-comparison.png",
   "products": [
     {
-      "amazon_title": "電動ミシン コンパクト家庭用ミシンセット 初心者 14種の縫い目 小型 ミニ ポータブル 低騒音 返し縫い フットコントローラー スピード可調整 拡張ボード 収納袋 DIYコットン柄の織物7枚 12色ミシン糸 日本語取扱説明書付き",
-      "asin": "B0G58PL536",
-      "brand": "",
+      "amazon_title": "ブラザー PS202X",
+      "asin": "B09DS8Z3HC",
+      "brand": "ブラザー",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71lFR1C16+L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/41Q2T8R+GGL._AC_SX300_SY300_QL70_ML2_.jpg",
       "matched_comparison_axes": [
         "operation_workspace",
         "stitch_control"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0G58PL536",
+      "product_id": "AMZ-B09DS8Z3HC",
       "ref": "p1",
       "search_key": "電動ミシン コンパクト家庭用ミシンセット 初心者 14種の縫い目",
-      "selection_score": 0.67
+      "selection_score": 0.67,
+      "selected_variant": {
+        "model": "PS202X/CPN1001",
+        "color": "ピンク",
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "【大阪Deco】台座付 電動ミシン 小型 フットペダル・フットコントローラー付 家庭用 ACアダプタ [ボビン6個 ミシン針 糸通し]",
-      "asin": "B0HJ1L5MN5",
-      "brand": "",
+      "amazon_title": "ジャガー KJM-3102/W",
+      "asin": "B0D49CCY58",
+      "brand": "ジャガー",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/611F46wh+CL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71MH72dXn5L._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "operation_workspace"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0HJ1L5MN5",
+      "product_id": "AMZ-B0D49CCY58",
       "ref": "p2",
       "search_key": "台座付 電動ミシン 小型 フットペダル・フットコントローラー付",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": {
+        "model": "KJM-3102/W",
+        "color": "ホワイト",
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "子育てにちょうどいい電動ミシン 家庭用ミシン 初心者向け 簡単操作 手芸 ソーイング 洋裁 小物作り",
-      "asin": "B0HHX3K1S1",
-      "brand": "",
+      "amazon_title": "アックスヤマザキ MM-11",
+      "asin": "B0H6M48NBW",
+      "brand": "アックスヤマザキ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/41lgXcGTkQL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51rIclSoTHL._AC_SL1000_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0HHX3K1S1",
+      "product_id": "AMZ-B0H6M48NBW",
       "ref": "p3",
       "search_key": "子育てにちょうどいい電動ミシン 家庭用ミシン 初心者向け 簡単操",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": {
+        "model": "MM-11",
+        "version": "2026スタンダード",
+        "color": "ブラック",
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "電動ミシン 小型 コンパクト家庭用全自動ミシン 初心者向け 卓上 軽量 12種類縫い目 自動糸通し 返し縫い LEDライト",
-      "asin": "B0HGLTCZFX",
-      "brand": "",
+      "amazon_title": "ジャノメ NP3000",
+      "asin": "B07RMCVBM6",
+      "brand": "ジャノメ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51kN5irnUrL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/517VtnvjwwL._AC_SL1000_.jpg",
       "matched_comparison_axes": [
         "stitch_control"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0HGLTCZFX",
+      "product_id": "AMZ-B07RMCVBM6",
       "ref": "p4",
       "search_key": "電動ミシン 小型 コンパクト家庭用全自動ミシン 初心者向け 卓上",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": {
+        "color": "white"
+      }
     },
     {
-      "amazon_title": "ミシン 電動ミシン 初心者向けのソーイング 12種類の縫い目 返し縫い機能 2way給電 趣味・DIY手作り スピード調整可 42PCS裁縫用アクセサリー 日本語説明書付",
-      "asin": "B0HGL1XHN9",
-      "brand": "",
+      "amazon_title": "JUKI GRACE HZL-G100B",
+      "asin": "B00YBEVIJS",
+      "brand": "JUKI",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61uHJkOlVOL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61CwjjdHzVL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "stitch_control"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0HGL1XHN9",
+      "product_id": "AMZ-B00YBEVIJS",
       "ref": "p5",
       "search_key": "ミシン 電動ミシン 初心者向けのソーイング 12種類の縫い目 返",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": {
+        "model": "HZL-G100B",
+        "color": "グレー",
+        "pack_count": 1,
+        "power": "AC100V 50/60Hz"
+      }
     },
     {
-      "amazon_title": "ミシン 初心者向け 電子ミシン 12種類の縫い目 返し縫い機能 2way給電 日常手作り縫製 42PCS裁縫セット付き スピード調整可能 持ち運び便利 日本語説明書付き",
-      "asin": "B0HF7NPXQV",
-      "brand": "",
+      "amazon_title": "SINGER SC227",
+      "asin": "B07B617FYV",
+      "brand": "シンガー",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61MB-mI0wIL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51otlaLWyPL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "stitch_control"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0HF7NPXQV",
+      "product_id": "AMZ-B07B617FYV",
       "ref": "p6",
       "search_key": "ミシン 初心者向け 電子ミシン 12種類の縫い目 返し縫い機能",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": {
+        "color": "white"
+      }
     }
   ],
   "selection": {

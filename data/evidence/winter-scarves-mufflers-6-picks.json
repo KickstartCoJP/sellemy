@@ -47,8 +47,8 @@
       "product_id": "AMZ-B0DFNRWFLZ",
       "asin": "B0DFNRWFLZ",
       "amazon_title": "[LA-Hazel] マフラー レディース 人気 カシミヤタッチ ストール 大判 冬 マフラー クリスマスプレゼント 両面 使える ギフトボックス付き 肌触り良い ストール 大判 秋冬 厚手 暖かい 可愛い マフラー",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61yjKDUXIuL._AC_UL320_.jpg",
+      "brand": "LA-Hazel",
+      "image_url": "https://m.media-amazon.com/images/I/61yjKDUXIuL._AC_SL1153_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.685,
@@ -56,78 +56,115 @@
         "material_warmth",
         "size_style"
       ],
-      "search_key": "マフラー レディース 人気 カシミヤタッチ ストール 大判 冬"
+      "search_key": "マフラー レディース 人気 カシミヤタッチ ストール 大判 冬",
+      "selected_variant": {
+        "size": "70×200cm",
+        "material": "Exact composition not established; cashmere-touch is not cashmere content",
+        "pack": "1 stole with gift box",
+        "colour": "両面ベージュ"
+      }
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0H6C42SFX",
-      "asin": "B0H6C42SFX",
-      "amazon_title": "[BRMM MIA] マフラー ストール 春夏用 柔らかボヘミアン風 綿麻 冷房・UV対策 薄手 ギフト オールシーズン",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/91JN8PultiL._AC_UL320_.jpg",
+      "product_id": "AMZ-B07YYGV7BG",
+      "asin": "B07YYGV7BG",
+      "amazon_title": "[Vita Natur] ストール レディース メンズ 兼用 カシミヤ混 190cm ×50cm 大判",
+      "brand": "Vita Natur",
+      "image_url": "https://m.media-amazon.com/images/I/81dGgIN2uSL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [],
-      "search_key": "マフラー ストール 春夏用 柔らかボヘミアン風 綿麻 冷房・UV"
+      "search_key": "マフラー ストール 春夏用 柔らかボヘミアン風 綿麻 冷房・UV",
+      "selected_variant": {
+        "size": "50×190cm",
+        "material": "ウール95%、カシミヤ5%",
+        "pack": "1",
+        "colour": "ロイヤルスチュワート"
+      }
     },
     {
       "ref": "p3",
       "product_id": "AMZ-B0H3ZKRCVH",
       "asin": "B0H3ZKRCVH",
-      "amazon_title": "[カジュアルボックス] ORIM 日本製 コットン100% 洗える たおるマフラー [ フリーサイズ / 10色あり ] 今治タオル UVカット ストール",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/613+cEMBUCL._AC_UL320_.jpg",
+      "amazon_title": "ORIM 日本製 コットン100% 洗える たおるマフラー [ フリーサイズ / 10色あり ] 今治タオル UVカット ストール",
+      "brand": "ORIM",
+      "image_url": "https://m.media-amazon.com/images/I/613+cEMBUCL._AC_SL1200_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [],
-      "search_key": "ORIM 日本製 コットン100% 洗える たおるマフラー 今治"
+      "search_key": "ORIM 日本製 コットン100% 洗える たおるマフラー 今治",
+      "selected_variant": {
+        "size": "Free Size",
+        "material": "コットン100%",
+        "pack": "1",
+        "use": "Lightweight all-season cotton; not equivalent to heavy winter insulation",
+        "colour": "ブラック"
+      }
     },
     {
       "ref": "p4",
       "product_id": "AMZ-B0FZRND6B1",
       "asin": "B0FZRND6B1",
       "amazon_title": "[cumaco] カシミヤ 100% マフラー ストール レディース メンズ ユニセックス180cm×30cm 【23色】 C-C0011B",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/81jh+YxaU5L._AC_UL320_.jpg",
+      "brand": "cumaco",
+      "image_url": "https://m.media-amazon.com/images/I/81jh+YxaU5L._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [
         "material_warmth"
       ],
-      "search_key": "カシミヤ 100% マフラー ストール レディース メンズ ユニ"
+      "search_key": "カシミヤ 100% マフラー ストール レディース メンズ ユニ",
+      "selected_variant": {
+        "size": "F、約180×30cm（フリンジ込み）",
+        "material": "カシミヤ100%",
+        "pack": "1",
+        "colour": "22.インディゴベージュ"
+      }
     },
     {
       "ref": "p5",
       "product_id": "AMZ-B0FNMGQLG6",
       "asin": "B0FNMGQLG6",
-      "amazon_title": "男女兼用 大判 マフラー ストール チェック 無地 スクール 学生 中学生 高校生 大人 プレゼント ギフト クリスマス 定番 秋 冬 レディース メンズ",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/81H1M20XrUL._AC_UL320_.jpg",
+      "amazon_title": "[ウィゴー] 男女兼用 大判 マフラー ストール チェック 無地 スクール 学生 中学生 高校生 大人 プレゼント ギフト クリスマス 定番 秋 冬 レディース メンズ",
+      "brand": "WEGO",
+      "image_url": "https://m.media-amazon.com/images/I/81H1M20XrUL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [
         "size_style"
       ],
-      "search_key": "男女兼用 大判 マフラー ストール チェック 無地 スクール 学"
+      "search_key": "男女兼用 大判 マフラー ストール チェック 無地 スクール 学",
+      "selected_variant": {
+        "size": "F、縦180cm・横65cm・フリンジ20cm",
+        "material": "アクリル100％",
+        "pack": "1",
+        "colour": "大判(タイプB)：ネイビー"
+      }
     },
     {
       "ref": "p6",
       "product_id": "AMZ-B0DJNWFSZS",
       "asin": "B0DJNWFSZS",
       "amazon_title": "[Allanve] マフラー レディース 大判ストール 【高級な雰囲気・柔肌ふんわり・暖かい防風】 レディースマフラー ブランケット ひざ掛け",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/710BjQVhWVL._AC_UL320_.jpg",
+      "brand": "Allanve",
+      "image_url": "https://m.media-amazon.com/images/I/710BjQVhWVL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [
         "size_style"
       ],
-      "search_key": "マフラー レディース 大判ストール レディースマフラー ブランケ"
+      "search_key": "マフラー レディース 大判ストール レディースマフラー ブランケ",
+      "selected_variant": {
+        "size": "Selected single large stole; do not invent dimensions",
+        "material": "ポリエステル100％",
+        "pack": "1",
+        "colour": "無地/ブラック"
+      }
     }
   ]
 }
