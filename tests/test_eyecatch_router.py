@@ -27,16 +27,17 @@ class EyecatchRouterTests(unittest.TestCase):
         }
 
     def test_reserve_threshold_forces_api(self):
-        route, meta = eyecatch_router._choose_route(
-            self.config(), {'remaining_percent': 20.0}
-        )
+        with patch.object(eyecatch_router, 'active_policy', return_value=None):
+            route, meta = eyecatch_router._choose_route(
+                self.config(), {'remaining_percent': 20.0}
+            )
         self.assertEqual(route, 'openai_api')
         self.assertEqual(meta['reason'], 'codex_reserve_threshold')
 
     def test_weighted_random_can_select_codex_or_api(self):
-        with patch.object(eyecatch_router.secrets, 'randbelow', return_value=10):
+        with patch.object(eyecatch_router, 'active_policy', return_value=None), patch.object(eyecatch_router.secrets, 'randbelow', return_value=10):
             self.assertEqual(eyecatch_router._choose_route(self.config(), None)[0], 'codex')
-        with patch.object(eyecatch_router.secrets, 'randbelow', return_value=90):
+        with patch.object(eyecatch_router, 'active_policy', return_value=None), patch.object(eyecatch_router.secrets, 'randbelow', return_value=90):
             self.assertEqual(eyecatch_router._choose_route(self.config(), None)[0], 'openai_api')
 
     def test_api_failure_falls_back_to_codex_and_records_route(self):
@@ -47,6 +48,8 @@ class EyecatchRouterTests(unittest.TestCase):
             with (
                 patch.object(eyecatch_router, 'ROOT', root),
                 patch.object(eyecatch_router, '_existing_valid', return_value=None),
+                patch.object(eyecatch_router, 'active_policy', return_value=None),
+                patch.object(eyecatch_router, 'require_local_provider_allowed', return_value=None),
                 patch.object(eyecatch_router, '_load_config', return_value=self.config()),
                 patch.object(
                     eyecatch_router, '_latest_codex_rate_limit',

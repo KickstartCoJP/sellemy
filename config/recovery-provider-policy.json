@@ -1,0 +1,21 @@
+{
+  "schema": "sellemy-recovery-provider-policy/v1",
+  "active": false,
+  "codex_allowed": false,
+  "claude_allowed": false,
+  "responses_api_allowed": true,
+  "responses_primary_model": "gpt-6.1-sol",
+  "responses_escalation_model": "gpt-6.1-sol",
+  "api_failure_policy": "fail_closed",
+  "note": "P0 recovery/runtime: Local Ollama Qwen3.5 27B for Writing and split semantic QA; Python machine QA; ChatGPT chat surface full final review. Only ChatGPT CERTIFIED + publish_allowed=true may publish. Codex/Claude prohibited. Responses remains available for other explicitly configured stages, not Writer/QA.",
+  "execution_mode": "local_ollama_writing_split_qa_python_machine_qa_chatgpt_full_review",
+  "astra_allowed": false,
+  "pilot_budget_usd": 10.0,
+  "pilot_scope_articles": 20,
+  "low_risk_chat_audit_rate": 1.0,
+  "local_ollama_allowed": true,
+  "writer_provider": "ollama",
+  "qa_provider": "ollama_split",
+  "chatgpt_final_review_required": true,
+  "chatgpt_full_review_rate": 1.0
+}

@@ -10,6 +10,7 @@ from pathlib import Path
 CONTRACT_PATH = Path(__file__).resolve().parents[1] / 'config' / 'comparison-acceptance.md'
 CONTRACT = CONTRACT_PATH.read_text(encoding='utf-8')
 VALIDATOR_VERSION = 'comparison-acceptance-v1'
+ALLOWED_INDEPENDENT_REVIEWERS = {'independent_responses_review', 'independent_chat_review'}
 VERSION = hashlib.sha256((VALIDATOR_VERSION + '\n' + CONTRACT).encode()).hexdigest()
 
 
@@ -31,8 +32,18 @@ def normalized(value):
 
 
 def source_text(product):
-    # Current discovery supplies listing text, not verified performance measurements.
-    return str(product.get('amazon_title') or '')
+    # Listing text is discovery evidence. Verified source excerpts/facts may add
+    # stronger manufacturer/official/manual anchors for identity and comparison.
+    parts = [str(product.get('amazon_title') or '')]
+    for source in product.get('sources') or []:
+        if not isinstance(source, dict) or source.get('verified') is not True:
+            continue
+        parts.append(str(source.get('title') or ''))
+        parts.append(str(source.get('excerpt') or ''))
+        for fact in source.get('facts') or []:
+            if isinstance(fact, dict):
+                parts.extend(str(fact.get(k) or '') for k in ('name', 'value', 'quote'))
+    return ' '.join(x for x in parts if x).strip()
 
 
 def evidence_issues(evidence):
@@ -45,10 +56,20 @@ def evidence_issues(evidence):
     axes = evidence['comparison_axes']
     issues, covered = [], set()
     for product in evidence['products']:
-        matches = _axis_matches(product, axes)
+        corpus = source_text(product).lower()
+        matches = {
+            axis['id'] for axis in axes
+            if any(str(word).lower() in corpus for word in axis.get('keywords', []))
+        }
         if not matches:
             issues.append(f"{product['ref']}: no grounded topic-axis screening match")
         covered.update(matches)
+        for source in product.get('sources') or []:
+            if not isinstance(source, dict):
+                issues.append(f"{product['ref']}: malformed source evidence")
+                continue
+            if source.get('verified') is True and not str(source.get('url') or '').startswith('https://'):
+                issues.append(f"{product['ref']}: verified source lacks https URL")
     if len(covered) < 2:
         issues.append('fewer than two supported topic axes')
     return issues
@@ -142,8 +163,10 @@ def review_issues(review, evidence, *, article=False):
     return issues
 
 
-def make_receipt(evidence, review, metadata, payload=None):
-    return {'contract_version': VERSION, 'reviewer': 'independent_responses_review',
+def make_receipt(evidence, review, metadata, payload=None, *, reviewer='independent_responses_review'):
+    if reviewer not in ALLOWED_INDEPENDENT_REVIEWERS:
+        raise ValueError(f'unsupported independent reviewer: {reviewer}')
+    return {'contract_version': VERSION, 'reviewer': reviewer,
             'evidence_sha256': digest(evidence_content(evidence)),
             'payload_sha256': digest(payload) if payload is not None else None,
             'review': review, 'metadata': metadata}
@@ -153,7 +176,7 @@ def receipt_issues(receipt, evidence, payload=None):
     if not isinstance(receipt, dict):
         return ['independent acceptance missing']
     if (receipt.get('contract_version') != VERSION
-            or receipt.get('reviewer') != 'independent_responses_review'
+            or receipt.get('reviewer') not in ALLOWED_INDEPENDENT_REVIEWERS
             or receipt.get('evidence_sha256') != digest(evidence_content(evidence))
             or receipt.get('payload_sha256') != (digest(payload) if payload is not None else None)):
         return ['independent acceptance stale or invalid']

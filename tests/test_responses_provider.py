@@ -69,15 +69,15 @@ class ResponsesTests(unittest.TestCase):
         env = {'SELLEMY_PLANNER_API_WEIGHT': '100', 'SELLEMY_PLANNER_CODEX_WEIGHT': '0',
                'SELLEMY_WRITER_API_WEIGHT': '0', 'SELLEMY_WRITER_CODEX_WEIGHT': '100'}
         local = lambda: ({}, {'writer_provider_used': 'codex', 'fallback_used': False})
-        with patch.dict(os.environ, env, clear=True), patch.object(rp, 'generate', return_value=({}, {'model': 'm'})) as api:
+        with patch.object(rp, 'require_responses_allowed', return_value={}), patch.dict(os.environ, env, clear=True), patch.object(rp, 'generate', return_value=({}, {'model': 'm'})) as api:
             self.assertEqual(rp.route('planner', {}, '', local)[1]['route_selected'], 'openai_responses')
             self.assertEqual(rp.route('writer', {}, '', local)[1]['route_selected'], 'codex')
             self.assertEqual(api.call_count, 1)
         for draw, expected in [(0.249, 'openai_responses'), (0.25, 'codex')]:
-            with patch.dict(os.environ, {'SELLEMY_WRITER_API_WEIGHT': '25', 'SELLEMY_WRITER_CODEX_WEIGHT': '75'}, clear=True), patch.object(rp.random, 'random', return_value=draw), patch.object(rp, 'generate', return_value=({}, {'model': 'm'})):
+            with patch.object(rp, 'require_responses_allowed', return_value={}), patch.dict(os.environ, {'SELLEMY_WRITER_API_WEIGHT': '25', 'SELLEMY_WRITER_CODEX_WEIGHT': '75'}, clear=True), patch.object(rp.random, 'random', return_value=draw), patch.object(rp, 'generate', return_value=({}, {'model': 'm'})):
                 self.assertEqual(rp.route('writer', {}, '', local)[1]['route_selected'], expected)
         for weight in ['-1', 'nan', 'inf', 'bad']:
-            with patch.dict(os.environ, {'SELLEMY_WRITER_API_WEIGHT': weight}, clear=True):
+            with patch.object(rp, 'require_responses_allowed', return_value={}), patch.dict(os.environ, {'SELLEMY_WRITER_API_WEIGHT': weight}, clear=True):
                 with self.assertRaises(ValueError): rp.route('writer', {}, '', local)
 
     def test_each_stage_api_success_and_fallback_chain(self):
@@ -88,7 +88,7 @@ class ResponsesTests(unittest.TestCase):
                 fixture = writer_tests.WriterProviderTests(); fixture.setUp(); env = fixture.env
             env = dict(env, **{f'SELLEMY_{stage.upper()}_API_WEIGHT': '100', f'SELLEMY_{stage.upper()}_CODEX_WEIGHT': '0'})
             for fail_api, fail_codex in [(False, False), (True, False), (True, True)]:
-                with patch.dict(os.environ, env, clear=True), patch.object(rp, 'generate', side_effect=rp.ResponsesError('safe', kind='transport') if fail_api else None, return_value=(copy.deepcopy(payload), {'model': 'api-model'})), patch.object(module, 'codex_generate_persistent', side_effect=CodexProviderError('limit') if fail_codex else None, return_value=(copy.deepcopy(payload), {})) as codex, patch.object(module.subprocess, 'run', return_value=completed(payload=payload)) as claude, self.assertLogs(rp.LOG, level='WARNING') as logs:
+                with patch.object(rp, 'require_responses_allowed', return_value={}), patch.object(module, 'require_local_provider_allowed', return_value=None), patch.dict(os.environ, env, clear=True), patch.object(rp, 'generate', side_effect=rp.ResponsesError('safe', kind='transport') if fail_api else None, return_value=(copy.deepcopy(payload), {'model': 'api-model'})), patch.object(module, 'codex_generate_persistent', side_effect=CodexProviderError('limit') if fail_codex else None, return_value=(copy.deepcopy(payload), {})) as codex, patch.object(module.subprocess, 'run', return_value=completed(payload=payload)) as claude, self.assertLogs(rp.LOG, level='WARNING') as logs:
                     result = invoke()
                 meta = result[1] if stage == 'writer' else result.provider_metadata
                 field = 'writer' if stage == 'writer' else 'planning'

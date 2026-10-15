@@ -24,6 +24,10 @@ def completed(returncode=0, *, stderr='', payload=None):
 
 class WriterProviderTests(unittest.TestCase):
     def setUp(self):
+        self.policy_patch = patch('responses_provider.require_responses_allowed', return_value={})
+        self.local_policy_patch = patch.object(writer_runtime, 'require_local_provider_allowed', return_value=None)
+        self.policy_patch.start(); self.local_policy_patch.start()
+        self.addCleanup(self.policy_patch.stop); self.addCleanup(self.local_policy_patch.stop)
         self.env = {
             'SELLEMY_WRITER_API_WEIGHT': '0',
             'SELLEMY_WRITER_CODEX_WEIGHT': '100',

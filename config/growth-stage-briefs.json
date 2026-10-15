@@ -1,0 +1,12 @@
+{
+  "schema": "sellemy-stage-brief-projection/v1",
+  "max_rules_per_stage": 8,
+  "rules": {
+    "planning": [],
+    "product_evidence": [],
+    "writer": [],
+    "qa": [],
+    "designer": [],
+    "publish": []
+  }
+}

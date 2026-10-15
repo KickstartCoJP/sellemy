@@ -28,6 +28,12 @@ def candidate(slug='new-topic', category='beauty', score=.8):
 
 
 class ContinuousPlanningTests(unittest.TestCase):
+    def setUp(self):
+        self.policy_patch = patch('responses_provider.require_responses_allowed', return_value={})
+        self.local_policy_patch = patch.object(planning_runtime, 'require_local_provider_allowed', return_value=None)
+        self.policy_patch.start(); self.local_policy_patch.start()
+        self.addCleanup(self.policy_patch.stop); self.addCleanup(self.local_policy_patch.stop)
+
     def _env(self):
         return {
             'SELLEMY_PLANNER_API_WEIGHT': '0',

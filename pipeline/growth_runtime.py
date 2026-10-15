@@ -28,6 +28,7 @@ from eyecatch_router import EyecatchRoutingError, ensure_routed_eyecatch
 from codex_provider import DESIGNER_SURFACE, PLANNING_SURFACE, context_session_id, record_context_quality
 from payload_schema import validate_evidence, validate_payload, match_refs
 from planning_runtime import PlanningError, discover_candidates, rank_candidates
+from chat_publish_approval import require_chat_publish_approval
 from publish_gate import (
     require_publishing_enabled, PublishGate, PublishGateError, recover_unpublished_commit_after_remote_race, sync_clean_main,
 )
@@ -39,6 +40,8 @@ from qa import run_qa
 from renderer import render_article
 from review_gate import run_review_gate
 from writer_runtime import WriterInvocationError, invoke_writer
+from recovery_provider_policy import active_policy, require_local_provider_allowed
+from local_semantic_review import split_local_review
 from growth_recovery import (
     all_jobs, create_job, eligible_job, job_dir, load_job, mark_failure, mark_published,
     materialize_for_publish, read_artifact, record_execution, save_eyecatch,
@@ -175,11 +178,14 @@ def build_evidence(topic: dict, products: list[dict], selection: dict | None = N
     return evidence
 
 
-def evaluate_candidate(payload: dict, evidence: dict, *, acceptance: dict | None = None) -> tuple[str, list[str], dict]:
+def evaluate_candidate(payload: dict, evidence: dict, *, acceptance: dict | None = None, require_semantic_acceptance: bool = True) -> tuple[str, list[str], dict]:
     validate_payload(payload); match_refs(payload, evidence)
     rendered = render_article(payload, evidence)
     findings = [repr(finding) for finding in run_review_gate(payload, evidence)]
-    return rendered, findings, run_qa(rendered, payload, evidence, acceptance=acceptance)
+    return rendered, findings, run_qa(
+        rendered, payload, evidence, acceptance=acceptance,
+        require_semantic_acceptance=require_semantic_acceptance,
+    )
 
 
 def _gate_feedback(findings: list[str], qa: dict) -> dict:
@@ -243,7 +249,7 @@ def _publish(slug: str, category: str) -> str:
 
 
 def _unfinished_jobs() -> list[dict]:
-    return [row for row in all_jobs() if row.get('status') not in {'PUBLISHED', 'DISCARDED', 'FAILED'}]
+    return [row for row in all_jobs() if row.get('status') not in {'PUBLISHED', 'DISCARDED', 'FAILED', 'RETIRED'}]
 
 
 def _runtime_failure(exc: Exception) -> bool:
@@ -344,7 +350,9 @@ def _reconcile_already_published_jobs() -> list[str]:
 def _writer_stage(slug: str, result: dict) -> None:
     state = load_job(slug)
     failures = int((state.get('retry_count_by_stage') or {}).get('writer') or 0)
-    if failures >= WRITER_MAX_ATTEMPTS:
+    from operating_profile import normal_profile
+    quality_ng=int((state.get('quality_ng_by_gate') or {}).get('writer') or 0)
+    if quality_ng >= 3 if normal_profile() else failures >= WRITER_MAX_ATTEMPTS:
         raise GrowthRuntimeError(f'writer retry exhausted for {slug}')
     topic = read_artifact(slug, 'topic.json')
     evidence = read_artifact(slug, 'evidence.json')
@@ -369,25 +377,44 @@ def _writer_stage(slug: str, result: dict) -> None:
             write_artifact(slug, 'writer-blocked.json', payload)
             request_product_reselection(slug, payload.get('reasons') or ['Writer reported missing facts'])
             raise GrowthRuntimeError(f'needs_product_reselection for {slug}')
+        policy = active_policy() or {}
+        local_qa_mode = policy.get('qa_provider') == 'ollama_split'
+        acceptance = None
+        if local_qa_mode:
+            require_local_provider_allowed('ollama')
+            local_review = split_local_review(evidence, payload)
+            write_artifact(slug, 'local-qa.json', local_review)
+            write_artifact(slug, 'acceptance.json', {})
+            if local_review.get('needs_product_reselection') is True or local_review.get('status') == 'BLOCKED':
+                request_product_reselection(slug, [local_review.get('reason') or 'Local split QA found product/evidence defects'])
+                raise GrowthRuntimeError(f'needs_product_reselection for {slug}')
+            review = local_review
+        else:
+            try:
+                acceptance = independent_review(evidence, payload)
+            except ResponsesError as exc:
+                mark_failure(slug, stage='review', failure_class='runtime_infrastructure',
+                             failure_code='INDEPENDENT_REVIEW_UNAVAILABLE', reason=str(exc), role='review')
+                raise GrowthRuntimeError(f'independent review unavailable for {slug}') from exc
+            write_artifact(slug, 'acceptance.json', acceptance)
+            review = acceptance.get('review') or {}
+            if review.get('needs_product_reselection') is True or review.get('status') == 'BLOCKED':
+                request_product_reselection(slug, [review.get('reason') or 'Independent review found missing facts'])
+                raise GrowthRuntimeError(f'needs_product_reselection for {slug}')
         try:
-            acceptance = independent_review(evidence, payload)
-        except ResponsesError as exc:
-            mark_failure(slug, stage='review', failure_class='runtime_infrastructure',
-                         failure_code='INDEPENDENT_REVIEW_UNAVAILABLE', reason=str(exc), role='review')
-            raise GrowthRuntimeError(f'independent review unavailable for {slug}') from exc
-        write_artifact(slug, 'acceptance.json', acceptance)
-        review = acceptance.get('review') or {}
-        if review.get('needs_product_reselection') is True or review.get('status') == 'BLOCKED':
-            request_product_reselection(slug, [review.get('reason') or 'Independent review found missing facts'])
-            raise GrowthRuntimeError(f'needs_product_reselection for {slug}')
-        try:
-            rendered, findings, qa = evaluate_candidate(payload, evidence, acceptance=acceptance)
+            rendered, findings, qa = evaluate_candidate(
+                payload, evidence, acceptance=acceptance,
+                require_semantic_acceptance=not local_qa_mode,
+            )
         except Exception as qa_exc:
             findings = [f'{type(qa_exc).__name__}: {qa_exc}']
             qa = {'overall_pass': False, 'evaluation_exception': findings[0]}
             rendered = ''
         feedback = _gate_feedback(findings, qa)
         feedback['semantic_review'] = review
+        if local_qa_mode and review.get('status') == 'REVISION_REQUIRED':
+            feedback['local_split_qa_requires_revision'] = True
+            qa['overall_pass'] = False
         if not qa.get('overall_pass') and qa.get('evaluation_exception'):
             feedback['evaluation_exception'] = qa['evaluation_exception']
         passed = not findings and bool(qa.get('overall_pass'))
@@ -415,8 +442,11 @@ def _writer_stage(slug: str, result: dict) -> None:
     except GrowthRuntimeError:
         raise
     except ResponsesError as exc:
-        mark_failure(slug, stage='writer', failure_class='role_quality',
-                     failure_code='ASTRA_QUALITY_EXHAUSTED', reason=str(exc), role_return=True, role='writer')
+        from operating_profile import normal_profile
+        infrastructure=normal_profile() and exc.kind in {'transport','config'}
+        mark_failure(slug, stage='writer', failure_class='runtime_infrastructure' if infrastructure else 'role_quality',
+                     failure_code='WRITER_PROVIDER_UNAVAILABLE' if infrastructure else 'ASTRA_QUALITY_EXHAUSTED',
+                     reason=str(exc), role_return=not infrastructure, role='writer')
         raise GrowthRuntimeError(f'Writer output quality exhausted for {slug}') from exc
     except Exception as exc:
         failure_class = 'runtime_infrastructure' if _runtime_failure(exc) or isinstance(exc, WriterInvocationError) else 'role_quality'
@@ -442,6 +472,9 @@ def _eyecatch_and_publish(slug: str, result: dict) -> str:
     category = state['category']
     require_publishing_enabled(ROOT)
     require_acceptance(payload, evidence, read_artifact(slug, 'acceptance.json'))
+    from operating_profile import normal_profile
+    if not normal_profile():
+        require_chat_publish_approval(read_artifact(slug, 'chat-publish-approval.json'), payload=payload, evidence=evidence)
 
     if state.get('current_stage') == 'PUBLISH_PENDING':
         try:
@@ -586,6 +619,14 @@ def _execute_job(slug: str, result: dict, *, cache_only: bool = False) -> str:
         if stage in {'WRITER_PENDING', 'QA_FAILED'}:
             _writer_stage(slug, result)
             continue
+        if stage == 'CHAT_REVIEW_PENDING':
+            from operating_profile import normal_profile
+            if normal_profile():
+                set_stage(slug, 'EYECATCH_PENDING', event='NORMAL_PROFILE_NO_PREPUBLICATION_CEO_GATE')
+                continue
+            result['status'] = 'awaiting_chatgpt_final_review'
+            result['published'] = False
+            return None
         if stage in {'EYECATCH_PENDING', 'PUBLISH_PENDING'}:
             issues = product_issues(evidence)
             if issues:
@@ -603,7 +644,53 @@ def _execute_job(slug: str, result: dict, *, cache_only: bool = False) -> str:
         raise GrowthRuntimeError(f'non-retryable recovery state for {slug}: {stage}')
 
 
+def _reconcile_ceo_audit_delivery(result: dict) -> None:
+    """Idempotent delivery retry for selected published articles; never blocks production."""
+    from operating_profile import normal_profile
+    if not normal_profile():
+        return
+    config=json.loads((ROOT/'config/operating-profile.json').read_text())
+    if config.get('postpublish_ceo_enabled') is not True:
+        return
+    from ceo_audit_bridge import submit_postpublish_audit
+    for job in all_jobs():
+        slug=job.get('slug')
+        if job.get('status')!='PUBLISHED' or job.get('operating_profile')!='normal' or not slug:
+            continue
+        selected=read_artifact(slug,'postpublish-ceo-selection.json',None)
+        if not selected or read_artifact(slug,'postpublish-ceo-delivered.json',None):
+            continue
+        try:
+            receipt=submit_postpublish_audit(
+                sample=selected, category=job['category'],
+                product_evidence_ref=str(job_dir(slug)/'evidence.json'),
+                article_file_path=str(ROOT/'article'/job['category']/(slug+'.html')))
+            write_artifact(slug,'postpublish-ceo-delivered.json',receipt)
+            result.setdefault('postpublish_ceo_deliveries',[]).append(receipt)
+        except Exception as exc:
+            result.setdefault('postpublish_ceo_delivery_errors',[]).append({
+                'slug':slug,'error_type':type(exc).__name__})
+
+
 def _post_publish(adaptive: AdaptivePublishController, result: dict, slug: str, commit: str) -> None:
+    # CEO audit is a POST-publication observation, never a publish authorization.
+    # Preserve a journal receipt in the existing job; actual Portal dispatch requires
+    # its separate verified integration and cannot be claimed by this local write.
+    try:
+        from operating_profile import normal_profile,ROOT as profile_root
+        from postpublish_ceo_sampling import pending_review_receipt
+        if normal_profile():
+            policy=json.loads((profile_root/'config/operating-profile.json').read_text())
+            every_n=int(policy.get('ceo_review_every_n_articles',10))
+            sampling=pending_review_receipt(jobs=all_jobs(),current_slug=slug,every_n=every_n)
+            result['postpublish_ceo_selection']=sampling
+            selected=sampling['ready_to_dispatch']
+            if selected:
+                selected_slug=selected['slug']
+                write_artifact(selected_slug,'postpublish-ceo-selection.json',selected)
+                _reconcile_ceo_audit_delivery(result)
+    except Exception as audit_exc:
+        result['postpublish_ceo_selection_error']=f'{type(audit_exc).__name__}: {audit_exc}'
     try:
         post_publish_feedback, controller_after = adaptive.evaluate_and_record(
             slug=slug, commit=commit, growth_run=result,
@@ -650,11 +737,44 @@ def run(
 ) -> dict:
     result = {
         'started_at': datetime.now(timezone.utc).isoformat(),
-        'route': ['recovery_queue', 'continuous_planning', 'product_selection', 'writer', 'qa', 'eyecatch', 'publish'],
+        'route': ['recovery_queue', 'continuous_planning', 'product_selection', 'writer', 'local_qa', 'machine_qa', 'chatgpt_final_review', 'eyecatch', 'publish'],
         'published': False,
     }
     if publish:
         require_publishing_enabled(ROOT)
+    # Reconcile existing CEO inspection receipts as a nonblocking side effect.
+    if publish:
+        try:
+            from operating_profile import normal_profile
+            if normal_profile():
+                policy=json.loads((ROOT/'config/operating-profile.json').read_text())
+                if policy.get('ceo_failed_ten_enabled') is True:
+                    from ceo_failure_bridge import submit_failed_ten_inspection
+                    for item in all_jobs():
+                        name=item.get('slug')
+                        if not name or read_artifact(name,'ceo-inspection-delivered.json',None):continue
+                        req=read_artifact(name,'ceo-inspection-required.json',None)
+                        if req:
+                            try:
+                                delivered=submit_failed_ten_inspection(req)
+                                write_artifact(name,'ceo-inspection-delivered.json',delivered)
+                            except Exception as exc:
+                                result.setdefault('ceo_inspection_errors',[]).append(f'{name}:{type(exc).__name__}:{exc}')
+        except Exception as exc:
+            result['ceo_inspection_reconcile_error']=f'{type(exc).__name__}:{exc}'
+    try:
+        _reconcile_ceo_audit_delivery(result)
+    except Exception as exc:
+        result['postpublish_ceo_reconcile_error']=type(exc).__name__
+    if publish:
+        try:
+            from ceo_audit_feedback import reconcile_feedback
+            canonical=Path(os.environ.get('SELLEMY_AI_OS_CANONICAL_ROOT',str(Path.home()/'Library/Application Support/AIManagementOS/canonical')))
+            result['postpublish_ceo_feedback']=reconcile_feedback(
+                canonical_root=canonical,jobs=all_jobs(),
+                read_artifact=read_artifact,write_artifact=write_artifact)
+        except Exception as exc:
+            result['postpublish_ceo_feedback_error']=type(exc).__name__
     adaptive = controller or AdaptivePublishController(ROOT)
     try:
         controller_state = adaptive.current_state()
@@ -705,6 +825,14 @@ def run(
                 planning_provider=planning_provider, viability_probes=viability_probes,
             )
             slug = job['slug']
+            if publish and scheduled:
+                decision = result.get('controller_decision') or {}
+                if decision.get('allowed'):
+                    write_artifact(slug, 'scheduled-admission.json', {
+                        'admission_id': (decision.get('receipt') or {}).get('admission_id'),
+                        'slot': decision.get('slot'),
+                        'admitted_at': (decision.get('receipt') or {}).get('admitted_at'),
+                    })
             planning_meta = ((planning_provider or {}).get('codex_runtime') or {})
             if planning_meta:
                 record_execution(slug=slug, role='planning', event_type='turn', stage='planning', metadata=planning_meta)
@@ -716,6 +844,8 @@ def run(
             return result
 
         commit = _execute_job(slug, result, cache_only=cache_only)
+        if commit is None and result.get('status') == 'awaiting_chatgpt_final_review':
+            return result
         result['commit'] = commit
         result['published'] = True
         result['status'] = 'published'
@@ -728,6 +858,12 @@ def run(
         if publish and scheduled and not result.get('published') and decision.get('allowed'):
             try:
                 result['recovery_schedule'] = adaptive.reschedule_after_failure(failed_slot=decision['slot'])
+                if 'slug' in locals():
+                    write_artifact(slug, 'slot-compensation.json', {
+                        'reason': 'scheduled_runtime_failure',
+                        'failed_slot': decision['slot'],
+                        'schedule': result['recovery_schedule'],
+                    })
             except Exception as recovery_error:
                 result['recovery_schedule_error'] = f'{type(recovery_error).__name__}: {recovery_error}'
         raise

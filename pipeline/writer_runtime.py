@@ -11,6 +11,9 @@ from comparison_acceptance import CONTRACT, blocked, product_issues
 from dataclasses import dataclass
 from pathlib import Path
 from codex_provider import CodexProviderError, generate_persistent as codex_generate_persistent
+from recovery_provider_policy import require_local_provider_allowed, active_policy
+from local_ollama_provider import generate_json as local_generate_json
+from responses_provider import validate_output
 
 
 class WriterInvocationError(RuntimeError):
@@ -108,10 +111,10 @@ def _command() -> list[str]:
 def _prompt(topic: dict, evidence: dict, *, previous_payload: dict | None = None, gate_feedback: dict | None = None) -> str:
     prompt = CONTRACT + '\n' + (
         'You are the Writer stage for a Japanese product-comparison publication. Return only structured JSON. '
-        'Write all public-facing Japanese prose yourself; scripts may not expand, paraphrase, or pad it. Ground claims only in evidence. '
+        'Write all public-facing Japanese prose yourself; scripts may not expand, paraphrase, or pad it. Ground every material claim only in supplied Evidence and preserve source uncertainty. Marketplace marketing text is not proof of performance or compatibility. '
         'Do not state prices, internal workflow terms, ASINs, or affiliate operations. Do not copy raw listing titles verbatim. '
         'Design exactly 3 semantic comparison groups from the topic-specific comparison_axes, with exactly 2 products in each group; groups must partition all six refs exactly once. '
-        'Price may be discussed only as a non-specific constraint, never as a fixed low/mid/high article structure. '
+        'Price may be discussed only as a non-specific constraint, never as a fixed low/mid/high article structure. Make each recommendation concrete about who should choose it and why, based on actual differences. If the six products do not represent one coherent product class or Evidence cannot support the promised comparison, return BLOCKED instead of writing cautious filler. '
         'Keep descriptions distinct. Targets: lead 180-230, summary 130-170, how_to_choose 190-270, descriptions 320-400, h3 6-45, rendered main 3000-3400. '
         'Preserve slug, category, and refs exactly.\n\n'
         f'TOPIC:\n{json.dumps(topic, ensure_ascii=False, sort_keys=True)}\n\n'
@@ -131,6 +134,8 @@ def _invoke(provider: WriterProvider, prompt: str, *, usage_key: str = "") -> tu
         raise WriterInvocationError(f'{provider.name} Writer command unavailable', availability=True)
     if not provider.model:
         raise WriterInvocationError(f'{provider.name} Writer model is not configured', availability=True)
+    if provider.kind in {'codex', 'claude'}:
+        require_local_provider_allowed(provider.kind)
     if provider.kind == 'codex':
         try:
             payload, codex_meta = codex_generate_persistent(
@@ -201,6 +206,17 @@ def invoke_writer(topic: dict, evidence: dict, *, previous_payload: dict | None 
     if issues:
         return {**blocked(issues), 'slug': topic.get('slug'), 'category': topic.get('category')}, {'writer_invoked': False}
     prompt = _prompt(topic, evidence, previous_payload=previous_payload, gate_feedback=gate_feedback)
+    policy = active_policy() or {}
+    if policy.get('writer_provider') == 'ollama':
+        require_local_provider_allowed('ollama')
+        payload, metadata = local_generate_json(schema=WRITER_JSON_SCHEMA, prompt=prompt)
+        validate_output(payload, WRITER_JSON_SCHEMA)
+        metadata.update({
+            'writer_provider_requested': 'ollama', 'writer_provider_used': 'ollama',
+            'writer_model_requested': metadata.get('model'), 'writer_model_used': metadata.get('model'),
+            'fallback_used': False, 'fallback_reason': None, 'writer_attempt_count': 1,
+        })
+        return payload, metadata
     return route(
         'writer', WRITER_JSON_SCHEMA, prompt,
         lambda: _invoke_local_writer(

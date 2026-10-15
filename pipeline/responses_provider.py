@@ -10,6 +10,7 @@ import urllib.request
 from pathlib import Path
 
 from codex_provider import _ensure_brief, _runtime_paths, _strict_schema, _validate_required_shape
+from recovery_provider_policy import require_responses_allowed
 
 LOG = logging.getLogger(__name__)
 
@@ -47,21 +48,25 @@ def _shared_prompt(stage: str, prompt: str) -> str:
     bridge_path = root / 'config' / 'sellemy-codex-canon-bootstrap.md'
     if not bridge_path.is_file():
         raise ResponsesError('shared canon bridge unavailable', kind='config')
+    # Owner-accepted, independently QA-verified bounded stage rules only.
+    from owner_brief_learning import load_brief_rules
+    learned=load_brief_rules('planning' if stage=='planner' else 'writer',root=root)
     return (
         'Use the same Sellemy canon bridge and runtime brief used by the Codex route. '
         'Current task input and Evidence override stale memory.\n\n'
         'CANON_BRIDGE:\n' + bridge_path.read_text(encoding='utf-8') +
         '\n\nRUNTIME_BRIEF:\n' + brief_path.read_text(encoding='utf-8') +
-        '\n\nCURRENT_TASK:\n' + prompt
+        '\n\nACCEPTED_STAGE_RULES:\n' + learned + '\n\nCURRENT_TASK:\n' + prompt
     )
 
 
 def generate(stage, schema, prompt, *, model: str | None = None):
+    policy = require_responses_allowed()
     prefix = f'SELLEMY_{stage.upper()}'
     token = os.environ.get(prefix + '_OPENAI_API_KEY', '').strip()
     if not token:
         raise ResponsesError('stage credential unavailable', kind='config')
-    model = model or os.environ.get(prefix + '_OPENAI_MODEL', 'gpt-6.1-sol')
+    model = model or os.environ.get(prefix + '_OPENAI_MODEL', str(policy.get('responses_primary_model') or 'gpt-6.1-sol'))
     strict = _strict_schema(schema)
     body = {'model': model, 'input': _shared_prompt(stage, prompt), 'store': False,
             'text': {'format': {'type': 'json_schema', 'name': stage,
@@ -98,15 +103,32 @@ def generate(stage, schema, prompt, *, model: str | None = None):
 
 
 def route(stage, schema, prompt, local, *, escalate: bool = False):
-    """Route with Sol by default, Astra for quality escalation, then local fallback."""
+    """Route recovery work through Responses only; fail closed instead of local fallback."""
+    policy = require_responses_allowed()
     prefix = f'SELLEMY_{stage.upper()}'
-    api = float(os.environ.get(prefix + '_API_WEIGHT', '100'))
-    codex = float(os.environ.get(prefix + '_CODEX_WEIGHT', '0'))
+    if policy:
+        api, codex = 100.0, 0.0
+    else:
+        from operating_profile import normal_profile
+        if normal_profile():
+            from normal_provider_routing import get_route
+            settings=get_route(stage)
+            api=float(os.environ.get(prefix + '_API_WEIGHT', settings['api_weight']))
+            codex=float(os.environ.get(prefix + '_CODEX_WEIGHT', settings['codex_weight']))
+        else:
+            api=float(os.environ.get(prefix + '_API_WEIGHT','100'))
+            codex=float(os.environ.get(prefix + '_CODEX_WEIGHT','0'))
     if not all(math.isfinite(w) and w >= 0 for w in (api, codex)) or api + codex <= 0:
         raise ValueError('routing weights must be finite, nonnegative, and have a positive total')
     selected = 'openai_responses' if random.random() * (api + codex) < api else 'codex'
-    primary_model = os.environ.get(prefix + '_OPENAI_MODEL', 'gpt-6.1-sol')
-    escalation_model = os.environ.get(prefix + '_OPENAI_ESCALATION_MODEL', 'gpt-6-astra')
+    primary_model = os.environ.get(prefix + '_OPENAI_MODEL', str(policy.get('responses_primary_model') or 'gpt-6.1-sol'))
+    escalation_model = os.environ.get(prefix + '_OPENAI_ESCALATION_MODEL', str(policy.get('responses_escalation_model') or 'gpt-6-astra'))
+    if not policy:
+        from operating_profile import normal_profile
+        if normal_profile():
+            settings=get_route(stage)
+            primary_model=os.environ.get(prefix + '_OPENAI_MODEL',settings['api_model'])
+            escalation_model=os.environ.get(prefix + '_OPENAI_ESCALATION_MODEL',settings['escalation_model'])
     route_meta = {
         'route_selected': selected,
         'route_weights': {'api': api, 'codex': codex},
@@ -136,6 +158,8 @@ def route(stage, schema, prompt, local, *, escalate: bool = False):
                 if exc.kind == 'output':
                     # Astra quality exhaustion must not become availability fallback.
                     raise
+                if policy and policy.get('api_failure_policy') == 'fail_closed':
+                    raise
                 api_failed = True
                 break
             else:
@@ -156,6 +180,8 @@ def route(stage, schema, prompt, local, *, escalate: bool = False):
                             stage, model, bool(index > 0))
                 return value, {**meta, **route_meta}
 
+    if policy:
+        raise ResponsesError('local fallback prohibited by active recovery provider policy', kind='config')
     try:
         value, meta = local()
     except Exception:
