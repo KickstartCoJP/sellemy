@@ -766,6 +766,15 @@ def run(
         _reconcile_ceo_audit_delivery(result)
     except Exception as exc:
         result['postpublish_ceo_reconcile_error']=type(exc).__name__
+    if publish:
+        try:
+            from ceo_audit_feedback import reconcile_feedback
+            canonical=Path(os.environ.get('SELLEMY_AI_OS_CANONICAL_ROOT',str(Path.home()/'Library/Application Support/AIManagementOS/canonical')))
+            result['postpublish_ceo_feedback']=reconcile_feedback(
+                canonical_root=canonical,jobs=all_jobs(),
+                read_artifact=read_artifact,write_artifact=write_artifact)
+        except Exception as exc:
+            result['postpublish_ceo_feedback_error']=type(exc).__name__
     adaptive = controller or AdaptivePublishController(ROOT)
     try:
         controller_state = adaptive.current_state()
