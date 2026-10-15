@@ -49,91 +49,103 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0H5Q6YFWZ",
-      "asin": "B0H5Q6YFWZ",
-      "amazon_title": "[ＰＡＦＨＬ] ダウンジャケット メンズ 超軽量 収納袋付き ポケッタブル ダウン コート 冬 防寒 服 暖かい あったか コンパクト 薄手 男性用 立ち襟",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61vF+PbkCRL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0FPX2QT5W",
+      "asin": "B0FPX2QT5W",
+      "amazon_title": "[コロンビア] ウッドロード ダウンジャケット XE3482 メンズ",
+      "brand": "コロンビア",
+      "image_url": "https://m.media-amazon.com/images/I/41imzq41MrL._AC_SX342_SY445_QL70_ML2_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.53,
       "matched_comparison_axes": [
         "lightweight_pack"
       ],
-      "search_key": "ダウンジャケット メンズ 超軽量 収納袋付き ポケッタブル ダウ"
+      "search_key": "ダウンジャケット メンズ 超軽量 収納袋付き ポケッタブル ダウ",
+      "model": "XE3482",
+      "selected_variant": "ブラック・M・1着"
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0G7ZBJ41M",
-      "asin": "B0G7ZBJ41M",
-      "amazon_title": "[青欣] ダウンジャケット メンズ 冬服 ダウンコート ショート丈 アウター おしゃれ 厚手 保温 暖かい 防寒着 防風 防寒 軽量 無地 ダウン ジャケット アウトドア ゆったり カジュアル 通勤 通学 秋冬",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/51hLzrDjY0L._AC_UL320_.jpg",
+      "product_id": "AMZ-B0FHWH8HBX",
+      "asin": "B0FHWH8HBX",
+      "amazon_title": "[タイオン] インナーダウンジャケット クルーネックボタン メンズ 800FP 104",
+      "brand": "TAION",
+      "image_url": "https://m.media-amazon.com/images/I/51WyeiZdfKL._AC_SL1200_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [
         "lightweight_pack"
       ],
-      "search_key": "ダウンジャケット メンズ 冬服 ダウンコート ショート丈 アウタ"
+      "search_key": "ダウンジャケット メンズ 冬服 ダウンコート ショート丈 アウタ",
+      "model": "TAION-104",
+      "selected_variant": "ブラック・XL・1着"
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0G7YQFJSZ",
-      "asin": "B0G7YQFJSZ",
-      "amazon_title": "[青欣] ダウンジャケット メンズ 冬服 ダウンコート ショート丈 アウター おしゃれ 防寒着 厚手 暖かい 保温 防風 防寒 軽量 無地 ダウン ジャケット ゆったり カジュアル アウトドア 通勤 通学 秋冬",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/51uvKBkSYlL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0B15MBYS2",
+      "asin": "B0B15MBYS2",
+      "amazon_title": "パタゴニア ダウン・セーター84675 ブラックL 並行輸入品",
+      "brand": "パタゴニア",
+      "image_url": "https://m.media-amazon.com/images/I/61v0D++sDPL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [
         "lightweight_pack"
       ],
-      "search_key": "ダウンジャケット メンズ 冬服 ダウンコート ショート丈 アウタ"
+      "search_key": "ダウンジャケット メンズ 冬服 ダウンコート ショート丈 アウタ",
+      "model": "84675",
+      "selected_variant": "Black・メンズL・並行輸入品"
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0G3H135X1",
-      "asin": "B0G3H135X1",
-      "amazon_title": "[BUTMYJ] ダウンジャケット レディースメンズ 中綿ジャケット フード付き 長袖 冬服 男女兼用アウター オシャレ コート",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/51T5CHPPFxL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0DPJJQWD1",
+      "asin": "B0DPJJQWD1",
+      "amazon_title": "THE NORTH FACE ダウン ジャケットバルトロジャケット ユニセックスメンズ",
+      "brand": "ザ・ノース・フェイス",
+      "image_url": "https://m.media-amazon.com/images/I/51gWSDFNqOL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "ダウンジャケット レディースメンズ 中綿ジャケット フード付き"
+      "search_key": "ダウンジャケット レディースメンズ 中綿ジャケット フード付き",
+      "model": "ND92553",
+      "selected_variant": "ブラック・L・1着"
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0FXM79T8B",
-      "asin": "B0FXM79T8B",
-      "amazon_title": "[MoFiz] ダウンジャケット メンズ 冬 軽量 防寒 防風 撥水 アウター コート 大きいサイズ ゆったり 保温性 アウトドア 日常着 通勤 カジュアル 登山 無地 シンプル",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/810cc2kgHJL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0D93D4XSF",
+      "asin": "B0D93D4XSF",
+      "amazon_title": "ナンガ オーロラテックス ダウンジャケットND2441-1A001-A ブラックL",
+      "brand": "ナンガ",
+      "image_url": "https://m.media-amazon.com/images/I/41tzwkCn7mL._AC_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [
         "lightweight_pack"
       ],
-      "search_key": "ダウンジャケット メンズ 冬 軽量 防寒 防風 撥水 アウター"
+      "search_key": "ダウンジャケット メンズ 冬 軽量 防寒 防風 撥水 アウター",
+      "model": "ND2441-1A001-A / N0001502",
+      "selected_variant": "BLK・L"
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0FQT7YKW7",
-      "asin": "B0FQT7YKW7",
-      "amazon_title": "[YSENTO] メンズ 超軽量 ダウンジャケット 防水透湿 多機能 折りたたみ 綿入りジャケット 防寒着 フロントジッパー 撥水性 コンパクト 専用収納袋付き スキー カジュアル トレッキング コート アウトドアウエア 男女兼用 春秋冬",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61oi8wP27GL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0FL55VY9F",
+      "asin": "B0FL55VY9F",
+      "amazon_title": "[メンズビギ] WOOLRICH/ウールリッチ 別注アークティックパーカ",
+      "brand": "メンズビギ / WOOLRICH",
+      "image_url": "https://m.media-amazon.com/images/I/41wUMAvZBGL._AC_SX342_SY445_QL70_ML2_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [
         "lightweight_pack"
       ],
-      "search_key": "メンズ 超軽量 ダウンジャケット 防水透湿 多機能 折りたたみ"
+      "search_key": "メンズ 超軽量 ダウンジャケット 防水透湿 多機能 折りたたみ",
+      "model": "M0154FJM122",
+      "selected_variant": "ブラック・3（Amazonサイズ表示L）・1着"
     }
   ]
 }

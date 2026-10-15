@@ -38,95 +38,101 @@
   "eyecatch_image": "https://www.sellemy.jp/img/external-computer-optical-drives/external-computer-optical-drives.png",
   "products": [
     {
-      "amazon_title": "BRJR CD DVDドライブ 外付けDVDドライブ 高速処理 8XDVD& 24XCD 光学ドライブ外付け 読取/書込可 バスパワー USB 2.0/3.0&Type-C両接続 外付けCDドライブ Window/Vista/Linux/Mac OS対応 MAC CDドライブ 外付け DVD/CDドライブ 極静音 薄型ポータブル (ホワイト)",
-      "asin": "B0D22K597V",
-      "brand": "",
+      "amazon_title": "バッファロー DVSM-PTC8U3-BKB ブラック",
+      "asin": "B0B3X9WHS7",
+      "brand": "BUFFALO",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61LS9ryrSDL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/31vOeWE0p+L._AC_SX679_.jpg",
       "matched_comparison_axes": [
         "connection_and_power",
         "disc_operations"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0D22K597V",
+      "product_id": "AMZ-B0B3X9WHS7",
       "ref": "p1",
       "search_key": "BRJR CD DVDドライブ 外付けDVDドライブ 高速処理",
-      "selection_score": 0.66
+      "selection_score": 0.66,
+      "selected_variant": "ブラック・本体1台"
     },
     {
-      "amazon_title": "ブルーレイドライブ外付け USB-A/C対応 再生/読み込み/書き込み/焼き対応 BD DVDプレーヤー ポータブル Blu-ray ドライブ Windows/Mac対応 外付けブルーレイドライブ",
-      "asin": "B0HKWDX18X",
-      "brand": "",
+      "amazon_title": "I-O DATA BRP-UB6SK/H ブラック",
+      "asin": "B0DJQ9HT5M",
+      "brand": "I-O DATA",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71h-TXMjtjL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61Cq71MSoJL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "disc_operations"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0HKWDX18X",
+      "product_id": "AMZ-B0DJQ9HT5M",
       "ref": "p2",
       "search_key": "ブルーレイドライブ外付け USB-A/C対応 再生/読み込み/書",
-      "selection_score": 0.3
+      "selection_score": 0.3,
+      "selected_variant": "ブラック・本体1台・USB-A接続ケーブル付"
     },
     {
-      "amazon_title": "conreruru 4K UHD Blu-ray対応・HDR映像対応 外付けブルーレイドライブ BDXL 128GB対応 BD/DVD/CD 読み込み・書き込み・再生 USB3.0/Type-C M-DISC対応 Windows 7-11 Mac対応 薄型 ブラック",
-      "asin": "B0HK44SCW5",
-      "brand": "",
+      "amazon_title": "バッファロー BRXL-PTV6U3-BKB ブラック",
+      "asin": "B0B3X9BRRK",
+      "brand": "BUFFALO",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61qZ3V+70OL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/41hPMQGlzuL._AC_SX679_.jpg",
       "matched_comparison_axes": [
         "disc_operations"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0HK44SCW5",
+      "product_id": "AMZ-B0B3X9BRRK",
       "ref": "p3",
       "search_key": "conreruru 4K UHD Blu-ray対応・HDR映像",
-      "selection_score": 0.3
+      "selection_score": 0.3,
+      "selected_variant": "ブラック・本体1台"
     },
     {
-      "amazon_title": "ブルーレイドライブ外付け blu-rayプレイヤー再生読み書usb-aと (type-c)BD/DVD CDプレーヤー 外付けブルーレイ ドライブ ブルーレイディスク対応WIN7-11/MAC対応 blu-rayプレイヤー （white）",
-      "asin": "B0HH3TJ6K9",
-      "brand": "",
+      "amazon_title": "ASUS ZenDrive U9M SDRW-08U9M-U シルバー",
+      "asin": "B0774LPJHV",
+      "brand": "ASUS",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61+650HiyaL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61E+oeGSW3L._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "disc_operations"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0HH3TJ6K9",
+      "product_id": "AMZ-B0774LPJHV",
       "ref": "p4",
       "search_key": "ブルーレイドライブ外付け blu-rayプレイヤー再生読み書us",
-      "selection_score": 0.3
+      "selection_score": 0.3,
+      "selected_variant": "シルバー・本体1台・USB A/C用ケーブル2本付"
     },
     {
-      "amazon_title": "ブルーレイドライブ外付け blu-rayプレイヤー再生読み書usb-aと (type-c)BD DVDプレーヤー 外付けブルーレイ ドライブ ブルーレイディスク対応WIN7-11/MAC対応 blu-ray けドライブ（黒）",
-      "asin": "B0HCJGKNSW",
-      "brand": "",
+      "amazon_title": "ロジテック LDR-PXA8CU2VBK ブラック",
+      "asin": "B0DZWQPN98",
+      "brand": "Logitec",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71n6Mfrpe7L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61eViCyBeIL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "disc_operations"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0HCJGKNSW",
+      "product_id": "AMZ-B0DZWQPN98",
       "ref": "p5",
       "search_key": "ブルーレイドライブ外付け blu-rayプレイヤー再生読み書us",
-      "selection_score": 0.3
+      "selection_score": 0.3,
+      "selected_variant": "ブラック・本体1台・USB Type-Cケーブル約55cm・ライセンスシート"
     },
     {
-      "amazon_title": "ブルーレイドライブ外付け BDプレイヤー再生読み書usb-aと (type-c) 対応外付け ポータブルBD/DVD Windows7-11/MAC OS対応 一年 日本語取扱書付き（black）",
-      "asin": "B0H9R93925",
-      "brand": "",
+      "amazon_title": "I-O DATA DVRP-UC8SK/H ブラック",
+      "asin": "B0DJQ9ZS4K",
+      "brand": "I-O DATA",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71SAaFOLuSL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51kf86t2LEL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "disc_operations"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0H9R93925",
+      "product_id": "AMZ-B0DJQ9ZS4K",
       "ref": "p6",
       "search_key": "ブルーレイドライブ外付け BDプレイヤー再生読み書usb-aと",
-      "selection_score": 0.3
+      "selection_score": 0.3,
+      "selected_variant": "ブラック・本体1台"
     }
   ],
   "selection": {

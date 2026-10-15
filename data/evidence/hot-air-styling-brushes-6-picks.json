@@ -44,87 +44,99 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0HJ281BZV",
-      "asin": "B0HJ281BZV",
-      "amazon_title": "3-in-1 ホットエアコームヘアドライヤーコードレスヒートブラシ ブラシアイロン コードレスヘアブラシ セラミックコーティング",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/51zPFRAv4PL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0GSYYHWC7",
+      "asin": "B0GSYYHWC7",
+      "amazon_title": "【2026年発売】パナソニック くるくるドライヤー イオニティ マイナスイオン ブラシ1本 シルバー調 EH-KE1N-S",
+      "brand": "パナソニック",
+      "image_url": "https://m.media-amazon.com/images/I/51ag+fyloEL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.53,
       "matched_comparison_axes": [
         "portability"
       ],
-      "search_key": "3-in-1 ホットエアコームヘアドライヤーコードレスヒートブラ"
+      "search_key": "3-in-1 ホットエアコームヘアドライヤーコードレスヒートブラ",
+      "model": "Panasonic EH-KE1N-S",
+      "selected_variant": "シルバー調、本体1台+ブローブラシ1本"
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B097JJLXS4",
-      "asin": "B097JJLXS4",
-      "amazon_title": "【5in1 多機能】KLD ヘアドライヤーブラシ1200 w くるくるドライヤー クルクルドライヤー 3 段階冷熱風 温度調節 大風量 多機能 マイナスイオン ホットエアーブラシ 電熱 カール 付属品5種 低騒音 過熱防止機能 速乾ヘアブラシ ヘアケア ストレートとカール適用 日本語説明書付き 恒温ヘアケア ストレート/カーリーヘア/ボリュームアップ 家庭用/ヘアサロン/出張/旅行用",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/711Rx3R+pfL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0CL3ST8TZ",
+      "asin": "B0CL3ST8TZ",
+      "amazon_title": "コイズミ カーリングドライヤー ツインマイナスイオン 海外対応 軽量 スリム ゴールド KDD-0053/N",
+      "brand": "コイズミ",
+      "image_url": "https://m.media-amazon.com/images/I/615Qo5AnimL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.53,
       "matched_comparison_axes": [
         "power"
       ],
-      "search_key": "KLD ヘアドライヤーブラシ1200 w くるくるドライヤー ク"
+      "search_key": "KLD ヘアドライヤーブラシ1200 w くるくるドライヤー ク",
+      "model": "KOIZUMI KDD-0053/N",
+      "selected_variant": "ゴールド、1台、先玉ボリュームキャッチブラシ付き"
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0HGBWFQVW",
-      "asin": "B0HGBWFQVW",
-      "amazon_title": "【Amazon.co.jp限定】ヒートブラシ コードレス ブラシアイロン スタイリングブラシ ヘアブラシ ヘアコーム ヘアアレンジ対応 5億マイナスイオン ヒート機能搭載 USB充電式 3段階温度調節 160～200℃ 自動電源OFF 火傷防止 コンパクト 持ち運び便利 プレゼント（ホワイト）",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71NJjDVARhL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0CCNJDJQX",
+      "asin": "B0CCNJDJQX",
+      "amazon_title": "パナソニック くるくるドライヤー ナノケア 高浸透ナノイー イオンチャージ ディープネイビー EH-KN0J-A",
+      "brand": "パナソニック",
+      "image_url": "https://m.media-amazon.com/images/I/516MtkE2YCL._AC_SL1405_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [
         "portability"
       ],
-      "search_key": "ヒートブラシ コードレス ブラシアイロン スタイリングブラシ ヘ"
+      "search_key": "ヒートブラシ コードレス ブラシアイロン スタイリングブラシ ヘ",
+      "model": "Panasonic ナノケア EH-KN0J-A",
+      "selected_variant": "ディープネイビー、1台、5種アタッチメント"
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0HC1XG254",
-      "asin": "B0HC1XG254",
-      "amazon_title": "【人気美容師｜共同開発】 icoelle(イコエル) ケア スチームブラシアイロン マイナスイオン 時短スタイリング",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61ZzOhlCemL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0D2ZWJGXQ",
+      "asin": "B0D2ZWJGXQ",
+      "amazon_title": "テスコム (TESCOM) カールドライヤー マイナスイオン 豚毛 4方向調整 冷温風 < 海外対応 Cタイプ変換プラグ付き > ラク抜きプラグ ヘアドライヤー ブラック TC565A-K",
+      "brand": "テスコム",
+      "image_url": "https://m.media-amazon.com/images/I/51I6vnhXsJL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "icoelle(イコエル) ケア スチームブラシアイロン マイナ"
+      "search_key": "icoelle(イコエル) ケア スチームブラシアイロン マイナ",
+      "model": "TESCOM TC565A-K",
+      "selected_variant": "ブラック、1台、豚毛ブローブラシ・Cタイプ変換プラグ付き"
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0H4G4F7Q3",
-      "asin": "B0H4G4F7Q3",
-      "amazon_title": "ストレートブラシ マイナスイオン搭載 ブラシアイロン 16段階温度調整 80～230℃対応 ヒートブラシ LEDディスプレイ 温度記憶機能 火傷防止設計 静電気対策 自動電源OFF ツヤ髪スタイリング 耐熱手袋付き",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/41v82rIIUAL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0DMVQM4TC",
+      "asin": "B0DMVQM4TC",
+      "amazon_title": "Dyson Airwrap",
+      "brand": "Dyson",
+      "image_url": "https://m.media-amazon.com/images/I/21ez50TOZBL._AC_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "ストレートブラシ マイナスイオン搭載 ブラシアイロン 16段階温"
+      "search_key": "ストレートブラシ マイナスイオン搭載 ブラシアイロン 16段階温",
+      "model": "Dyson Airwrap HS05 VLP ENT",
+      "selected_variant": "セラミックピンク、シンプルモデル、1台・3種スタイリングアタッチメント"
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0GVRWLPD4",
-      "asin": "B0GVRWLPD4",
-      "amazon_title": "Wavytalk スチームブラシアイロン ストレートヒートブラシ ヘアアイロン スチームでダメージ軽減・髪を栄養しながらすばやくスタイリング マイナスイオン 急速加熱 2way くせ毛直し 海外対応",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61FL+z6KvmL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0DG1QNGX8",
+      "asin": "B0DG1QNGX8",
+      "amazon_title": "Shark シャーク ドライヤー FlexStyle ヘアドライヤー ツヤ 速乾 HD434JPK フラミンゴピンク",
+      "brand": "Shark",
+      "image_url": "https://m.media-amazon.com/images/I/51zD1MArYTL._AC_SL1056_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "Wavytalk スチームブラシアイロン ストレートヒートブラシ"
+      "search_key": "Wavytalk スチームブラシアイロン ストレートヒートブラシ",
+      "model": "Shark FlexStyle HD434JPK",
+      "selected_variant": "フラミンゴピンク、国内HD434Jシリーズ標準セット1台"
     }
   ]
 }

@@ -57,8 +57,8 @@
       "product_id": "AMZ-B0FM74Z91L",
       "asin": "B0FM74Z91L",
       "amazon_title": "[MayCherry] インナー インナーシャツ レディース 防寒 カップ付き 約6℃昇温 3Dパッド付き 防寒保温 インナー トップス 長袖 冬 あったかインナー Uネック 吸湿発熱 無地 ストレッチ 柔らかい ゆったり",
-      "brand": "MayCherryのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/51PEDYTSVOL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "brand": "MayCherry",
+      "image_url": "https://m.media-amazon.com/images/I/51PEDYTSVOL._AC_SL1200_.jpg",
       "observed_price": 1602,
       "discovery_score": 1,
       "selection_score": 0.855,
@@ -66,15 +66,23 @@
         "fit_comfort",
         "warmth_technology"
       ],
-      "search_key": "MayCherry インナー インナーシャツ レディース 防寒 カップ付き 約6℃昇"
+      "search_key": "MayCherry インナー インナーシャツ レディース 防寒 カップ付き 約6℃昇",
+      "model": "MayCherry カップ付きUネック長袖",
+      "selected_variant": {
+        "gender": "レディース",
+        "colour": "ホワイト",
+        "size": "L",
+        "pack": "トップス1枚、カップ付",
+        "material": "出品詳細レーヨン95%/スパンデックス5%"
+      }
     },
     {
       "ref": "p2",
       "product_id": "AMZ-B09KTWMVX5",
       "asin": "B09KTWMVX5",
       "amazon_title": "[Boyzn] あったかインナー メンズ 春夏対応 吸湿速乾 保温インナー 上下セット 裏起毛 ヒートテッ 中厚 防寒肌着",
-      "brand": "Boyznのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/61GLK7v516L._AC_SY445_SX342_QL70_ML2_.jpg",
+      "brand": "Boyzn",
+      "image_url": "https://m.media-amazon.com/images/I/61GLK7v516L._AC_SL1500_.jpg",
       "observed_price": 3580,
       "discovery_score": 1,
       "selection_score": 0.675,
@@ -82,61 +90,105 @@
         "moisture_control",
         "warmth_technology"
       ],
-      "search_key": "Boyzn あったかインナー メンズ 春夏対応 吸湿速乾 保温インナー 上下"
+      "search_key": "Boyzn あったかインナー メンズ 春夏対応 吸湿速乾 保温インナー 上下",
+      "model": "Boyzn 裏起毛上下セット",
+      "selected_variant": {
+        "gender": "メンズ",
+        "colour": "ブラック",
+        "size": "S",
+        "pack": "上下セット",
+        "material": "ポリエステル混紡、正確な混率未確定"
+      }
     },
     {
       "ref": "p3",
       "product_id": "AMZ-B0CS665WPV",
       "asin": "B0CS665WPV",
       "amazon_title": "[ひだまり] 紳士用 タイツ 前閉じ エベレストX(エックス)[サピウム][3重袖シリーズ] EVXS960",
-      "brand": "ひだまりのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/4133GxDweeL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "brand": "ひだまり",
+      "image_url": "https://m.media-amazon.com/images/I/4133GxDweeL._AC_SL1000_.jpg",
       "observed_price": 15400,
       "discovery_score": 1,
       "selection_score": 0.495,
       "matched_comparison_axes": [],
-      "search_key": "ひだまり 紳士用 タイツ 前閉じ エベレストX(エックス) EVXS960"
+      "search_key": "ひだまり 紳士用 タイツ 前閉じ エベレストX(エックス) EVXS960",
+      "model": "ひだまり エベレストX EVXS960",
+      "selected_variant": {
+        "gender": "紳士",
+        "colour": "ダークブラック",
+        "size": "M",
+        "pack": "前閉じタイツ1枚",
+        "material": "表アクリル70%/毛30%、中ナイロン95%/ポリウレタン5%、裏PVC100%",
+        "care": "洗濯機可、乾燥機不可"
+      }
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B09X16SZTN",
-      "asin": "B09X16SZTN",
+      "product_id": "AMZ-B09X13Y68Q",
+      "asin": "B09X13Y68Q",
       "amazon_title": "[テスラ] あったかインナー レディース 上下セット[吸湿保温・伸縮性] 裏起毛 防寒インナー 秋冬用 冷え対策 ヒートテック",
-      "brand": "TESLA(テスラ)のストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/41rZSMd8KvL._AC_SY445_SX342_QL70_ML2_.jpg",
+      "brand": "TESLA",
+      "image_url": "https://m.media-amazon.com/images/I/41rZSMd8KvL._AC_SL1000_.jpg",
       "observed_price": 3690,
       "discovery_score": 1,
       "selection_score": 0.495,
       "matched_comparison_axes": [
         "warmth_technology"
       ],
-      "search_key": "TESLA(テスラ) あったかインナー レディース 上下セット 裏起毛 防寒インナー"
+      "search_key": "TESLA(テスラ) あったかインナー レディース 上下セット 裏起毛 防寒インナー",
+      "model": "TESLA 裏起毛上下セット",
+      "selected_variant": {
+        "gender": "レディース",
+        "colour": "上下ブラック",
+        "size": "S",
+        "pack": "長袖トップス＋ロングレギンス",
+        "material": "ポリエステル90%/スパン10%という出品記載",
+        "care": "冷水洗濯"
+      }
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0GQXNRJJ4",
-      "asin": "B0GQXNRJJ4",
-      "amazon_title": "[Duerfusa] インナー メンズ インナーシャツ 半袖 白 3枚組 (白/ｸﾙｰﾈｯｸ半袖, L)",
-      "brand": "Duerfusaのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/61cZJuh7h3L._AC_SX342_SY445_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0FND9JJFG",
+      "asin": "B0FND9JJFG",
+      "amazon_title": "GUNZE(グンゼ) インナーシャツホットマジック 柔らか温か クルーネック9分袖 MH1908メンズ",
+      "brand": "GUNZE",
+      "image_url": "https://m.media-amazon.com/images/I/41lG+649mLL._AC_SL1000_.jpg",
       "observed_price": 2480,
       "discovery_score": 1,
       "selection_score": 0.445,
       "matched_comparison_axes": [],
-      "search_key": "Duerfusa インナー メンズ インナーシャツ 半袖 白 3枚組 (白/ｸﾙｰ"
+      "search_key": "Duerfusa インナー メンズ インナーシャツ 半袖 白 3枚組 (白/ｸﾙｰ",
+      "model": "GUNZE ホットマジック MH1908",
+      "selected_variant": {
+        "gender": "メンズ",
+        "colour": "Vオフホワイト",
+        "size": "M",
+        "pack": "クルーネック9分袖シャツ1枚",
+        "material": "出品100%アクリル表記はメーカー表示照合前に断定しない",
+        "origin": "V色名はベトナム製の注記"
+      }
     },
     {
       "ref": "p6",
       "product_id": "AMZ-B0FNDCPGR8",
       "asin": "B0FNDCPGR8",
       "amazon_title": "GUNZE(グンゼ) タイツホットマジック 柔らか温か 前あき MH1901メンズ",
-      "brand": "GUNZE(グンゼ)のストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/51p50KEOSBL._AC_SX342_SY445_QL70_ML2_.jpg",
+      "brand": "GUNZE",
+      "image_url": "https://m.media-amazon.com/images/I/51p50KEOSBL._AC_SL1000_.jpg",
       "observed_price": 1710,
       "discovery_score": 1,
       "selection_score": 0.445,
       "matched_comparison_axes": [],
-      "search_key": "GUNZE(グンゼ) タイツホットマジック 柔らか温か 前あき MH1901メンズ"
+      "search_key": "GUNZE(グンゼ) タイツホットマジック 柔らか温か 前あき MH1901メンズ",
+      "model": "GUNZE ホットマジック MH1901",
+      "selected_variant": {
+        "gender": "メンズ",
+        "colour": "Vネービーブルー",
+        "size": "L",
+        "pack": "前あきタイツ1枚",
+        "material": "出品100%アクリル表記はメーカー表示照合前に断定しない",
+        "origin": "V色名はベトナム製の注記"
+      }
     }
   ]
 }

@@ -1,70 +1,103 @@
 {
-  "category": "gadget",
+  "h1": "外付け光学ドライブ6選｜DVD・Blu-rayと付属ソフトで選ぶ",
+  "lead": "ドライブのないパソコンで音楽CDを使う、DVDを見る、写真やデータをディスクに残す。外付け光学ドライブは似た形でも、扱えるメディアと付属ソフトが違います。USB端子だけで決めず、DVD/CD用かBlu-ray対応か、再生用か保存用かを分けて選びましょう。",
+  "summary": "DVDの再生ソフトまでそろえたいならバッファローやロジテック、Blu-rayへのデータ保存ならアイ・オー・データとバッファローのBDモデルが候補です。ASUSはA/C両方のケーブルを使い分ける薄型DVD機、DVRP-UC8SK/Hはデータ保存向けのDVD機として比較します。",
+  "how_to_choose": "最初に手持ちのディスクを確認しましょう。DVD/CD用ドライブではBlu-rayは扱えません。また、Blu-rayを読み込める機械でも、映画の再生には対応ソフト、OS、パソコンの性能や著作権保護への対応が必要です。Ultra HD Blu-ray再生を通常のBD対応と同じ意味に扱わないでください。\n\nUSB-AかUSB-Cか、変換アダプターやケーブルが付くかも大切です。USBの通信速度とディスクの書き込み倍速は別の数値。最大倍速は対応メディアと動作環境がそろった場合の値です。付属ソフトの多くはWindows向けで、MacやChromeOSの対応範囲とは区別して確認します。給電不足時は各メーカー指定の補助給電方法を使用し、書き込み中は接続を外したりドライブを動かしたりしないようにしましょう。",
   "comparison_groups": [
     {
-      "angle": "Blu-ray対応の候補と、BDXL・M-DISCを掲げるconreruruです。媒体ごとに読み書きの条件を確認します。",
-      "id": "disc_operations",
+      "id": "dvd_playback",
+      "title": "WindowsでDVD再生も始めたい",
+      "angle": "DVD用ソフトを備えるバッファローとロジテックを、接続端子と給電方法で比較します。",
+      "product_refs": [
+        "p1",
+        "p5"
+      ]
+    },
+    {
+      "id": "bd_storage",
+      "title": "Blu-rayへデータを保存したい",
+      "angle": "BD対応の2台。付属ソフトとUSB接続の構成を確認し、映画再生とは切り分けて選びます。",
       "product_refs": [
         "p2",
         "p3"
-      ],
-      "title": "規格別の読み込み・書き込みを照合"
+      ]
     },
     {
-      "angle": "BRJRはバスパワーを明示。白色のBlu-ray候補はUSB-A・Type-Cを記載しますが、給電条件は不明です。",
-      "id": "connection_and_power",
+      "id": "dvd_data",
+      "title": "DVD/CDを薄型ドライブで使いたい",
+      "angle": "ASUSとアイ・オー・データのDVD機を、A/C接続とデータ保存ソフトで比べます。",
       "product_refs": [
-        "p1",
-        "p4"
-      ],
-      "title": "端子の組み合わせと給電条件を確認"
-    },
-    {
-      "angle": "黒色の二候補はWindows・Macに言及。日本語説明書の記載もありますが、ソフトとライセンスは未確認です。",
-      "id": "software_and_os",
-      "product_refs": [
-        "p5",
+        "p4",
         "p6"
-      ],
-      "title": "OS対応と再生ソフトの付属を分ける"
+      ]
     }
   ],
-  "conclusion": "類似候補の製品差とソフト・給電条件が不足しています。独立した六製品かを確認し、媒体別の動作と使用環境が揃うまで、性能の順位付けと購入推奨は保留します。",
-  "h1": "外付け光学ドライブ比較｜対応ディスク・接続・ソフトを確認",
-  "how_to_choose": "最初に使うディスクの規格と容量、読み込み・書き込み・映像再生のどれが目的かを整理します。BD・DVD・CDという名称だけで判断せず、媒体ごとの対応表を確認してください。接続はUSB端子の形、転送規格、付属ケーブル、バスパワーと補助電源の条件を分けて見ます。次にOSの版と、再生用・書き込み用それぞれのソフト名、ライセンスの有無を照合します。色違いや似た説明の候補は型番と販売内容を確認し、接続できることと目的の操作ができることを区別しましょう。",
-  "lead": "外付け光学ドライブは、ディスクのデータを読む、書き込む、映像を再生するという目的を分けて選びたい機器です。今回の候補にはCD・DVDの読み書きやBlu-ray対応、USB-A・Type-C接続を掲げるものがあります。ただし、対応するディスクの細かな区分、給電条件、付属ソフトの情報は揃っていません。色違いの可能性がある候補も含むため、六つを独立した製品として順位付けせず、用途ごとに必要な仕様と確認点を整理します。",
+  "conclusion": "DVD再生が目的なら再生ソフトの有無、データ保存なら対応メディアと書き込みソフトから選ぶと迷いにくくなります。端子の形だけでなく、パソコンのOS、付属品、給電条件まで合わせて確認しましょう。Blu-ray対応という表示だけで、市販映画やUHD映像まで再生できるとは考えないことが大切です。",
+  "slug": "external-computer-optical-drives",
+  "category": "gadget",
   "products": [
     {
-      "description": "バスパワーを掲げるBRJRのホワイトは、CD・DVDの読み取りと書き込みに対応すると紹介されています。USB 2.0・3.0とType-Cへの言及がありますが、端子形状と転送規格が混在した表示で、付属ケーブルの構成は未確認です。Type-Cが変換アダプターなのか、別のケーブルなのかも分かりません。バスパワーという説明だけでは、すべての接続先で補助電源なしに動作するとは判断できず、必要な給電条件を照合する必要があります。DVDの8倍速、CDの24倍速という記載も、対象媒体や読み書きのどちらに適用されるかは不明です。Windows、Vista、Linux、Macへの言及はありますが、詳細な版とソフトの条件は示されていません。BRJRでは使用するディスクと接続先を決め、ケーブルの内訳と給電条件を先に確かめます。",
-      "h3": "BRJRはバスパワーとCD・DVDの読み書きを記載",
-      "ref": "p1"
+      "ref": "p1",
+      "h3": "バッファロー DVSM-PTC8U3-BKB｜DVD再生ソフトとType-C変換付き",
+      "description": "ブラックのDVD/CD用ポータブルドライブです。USB-A接続のケーブルにUSB Type-C変換アダプターが付属し、端子の違うパソコンにも合わせやすい構成。Windows専用のPowerDVDやPower2Goなどをダウンロード提供するため、DVD再生とデータ保存の両方を始めたい人に向きます。ソフトは使用するパソコン1台へのインストールに限られます。電力不足を知らせるLEDと補助給電用Boostケーブルも特徴ですが、必ずどのパソコンでも外部電源不要というわけではありません。必要に応じて指定ACアダプターを使います。Blu-rayには対応しないので、手持ちのディスク形式を先に確認してください。",
+      "amazon_product_url": "https://www.amazon.co.jp/dp/B0B3X9WHS7",
+      "amazon_affiliate_url": "https://www.amazon.co.jp/dp/B0B3X9WHS7?tag=sellemy-22",
+      "rakuten_search_url": "https://search.rakuten.co.jp/search/mall/DVSM-PTC8U3-BKB/",
+      "yahoo_search_url": "https://shopping.yahoo.co.jp/search?p=DVSM-PTC8U3-BKB"
     },
     {
-      "description": "USB-A・Type-C対応を紹介する候補は、外付けBlu-rayドライブとして、再生・読み込み・書き込みへの言及があります。BDとDVDの名称は読めますが、記録型や書き換え型などの区分、対応する層数と容量、媒体別の速度は示されていません。Blu-ray対応という一つの表示を、すべてのBDで同じ操作ができる意味にはできません。WindowsとMacへの対応も記載されていますが、OSの版や再生ソフトの名称、付属ライセンスは未確認です。プレーヤーという呼び名だけで、パソコンを使わず映像を再生できる機器とは判断できません。まずメーカー名と型番を特定し、手持ちのディスクで行いたい操作に対応するかを確認する必要があります。映像鑑賞を目的にする場合は、読み込み対応の確認に加え、使うパソコンと再生ソフトの条件まで揃えたい候補です。",
-      "h3": "USB-A・C対応の候補はBDの操作範囲を確認",
-      "ref": "p2"
+      "ref": "p2",
+      "h3": "アイ・オー・データ BRP-UB6SK/H｜USB-A接続のBlu-ray保存用",
+      "description": "ブラックのBRP-UB6SK/Hは、Blu-ray・DVD・CDを扱えるデータ保存向けモデルです。Windows用B’s Recorder 20のダウンロード版が付属し、入手と初回起動にはインターネット接続とユーザー登録が必要。付属ケーブルは約60cmのUSB-A－microBで、Type-C変換アダプター付きの構成ではありません。BD-R一層・二層は最大6倍速、BDXLは最大4倍速の書き込みに対応しますが、メディアや接続条件で速度は変わります。Macの標準機能によるデータ書き込みとBD映画再生は別で、ChromeOSは読み取り専用です。本体は水平に設置し、給電不足時はメーカー指定の別売電源を検討しましょう。",
+      "amazon_product_url": "https://www.amazon.co.jp/dp/B0DJQ9HT5M",
+      "amazon_affiliate_url": "https://www.amazon.co.jp/dp/B0DJQ9HT5M?tag=sellemy-22",
+      "rakuten_search_url": "https://search.rakuten.co.jp/search/mall/BRP-UB6SK/H/",
+      "yahoo_search_url": "https://shopping.yahoo.co.jp/search?p=BRP-UB6SK/H"
     },
     {
-      "description": "BDXLの128GB対応とM-DISC対応を掲げるconreruruは、BD・DVD・CDの読み込み、書き込み、再生に言及しています。4K UHD Blu-rayやHDR映像への対応も紹介されていますが、各表示に対応するパソコン構成と再生ソフトの条件は示されていません。128GBという容量も、どの媒体でどの操作に対応する値かを個別に照合する必要があります。M-DISCは種類や容量の内訳が不明で、読み取りと書き込みの対応を一括して確定することはできません。USB3.0とType-C、Windows 7〜11とMacの記載がありますが、Mac側の対応版や付属ソフトは未確認です。正式な型番と媒体別の対応表を確認し、UHD・HDRを使う際は、ドライブの対応表示に加えて機器とソフトの組み合わせを確かめてください。",
-      "h3": "conreruruはBDXLとM-DISCの適用条件が要点",
-      "ref": "p3"
+      "ref": "p3",
+      "h3": "バッファロー BRXL-PTV6U3-BKB｜Boost給電付きのBD対応機",
+      "description": "ブラックのBlu-ray対応モデルです。BD-R一層・二層は最大6倍速、3層・4層のBDXLは最大4倍速で書き込め、DVD/CDも利用できます。データを残すメディアの選択肢を増やしたい人向き。USBケーブルと補助給電用Boostケーブルを本体に収納でき、持ち運ぶ際にまとめやすい構造です。Type-C変換アダプターは付属しないため、USB-Cしかないパソコンでは接続方法を別に確認してください。付属ソフトはWindows用で、使用するパソコン1台に限られます。映画用BDやUltra HD Blu-rayの再生可否は別条件になるため、保存用ドライブとしての機能と混同しないようにしましょう。",
+      "amazon_product_url": "https://www.amazon.co.jp/dp/B0B3X9BRRK",
+      "amazon_affiliate_url": "https://www.amazon.co.jp/dp/B0B3X9BRRK?tag=sellemy-22",
+      "rakuten_search_url": "https://search.rakuten.co.jp/search/mall/BRXL-PTV6U3-BKB/",
+      "yahoo_search_url": "https://shopping.yahoo.co.jp/search?p=BRXL-PTV6U3-BKB"
     },
     {
-      "description": "白色の候補には、USB-AとType-C、BD・DVD・CD、再生と読み書きへの言及があります。Windows 7〜11とMac対応も記載されていますが、接続用ケーブルの本数や長さ、着脱の可否は示されていません。二種類の端子が使えるという紹介を、二本のケーブルが付属する意味に置き換えることはできません。バスパワーや補助電源の条件も不明で、BRJRにある給電方式をこちらへ当てはめる根拠はありません。ディスクごとの読み込み・書き込み速度や、映像再生に必要なソフトの情報も未確認です。黒色の類似候補とは説明が重なっていますが、色以外の構造差や同一モデルかどうかは確定できません。製品名と選択仕様を特定してから、パソコンの空いている端子、電源の必要条件、ケーブルを含む販売内容を照合することが先になります。",
-      "h3": "白色のBlu-ray候補は接続部品と電源を照合",
-      "ref": "p4"
+      "ref": "p4",
+      "h3": "ASUS ZenDrive U9M｜A/Cケーブルを使い分ける薄型DVD機",
+      "description": "シルバーのSDRW-08U9M-U/SIL/G/AS/P2Gです。USB-A用とUSB-C用のケーブルが付くDVD/CDドライブで、厚さ13.9mmの薄型形状。端子の異なるパソコンを使い分けたい人の候補です。USBインターフェースは2.0で、DVD±Rの最大書き込み速度は8倍速、CD-Rは24倍速。Blu-rayドライブではありません。Power2Go 8などの付属ソフトはWindows向けであり、DVD映像の再生ソフト付きという意味ではない点に注意しましょう。Macで使う場合も、対応OSと必要な作業に合うソフトを確認してから選んでください。",
+      "amazon_product_url": "https://www.amazon.co.jp/dp/B0774LPJHV",
+      "amazon_affiliate_url": "https://www.amazon.co.jp/dp/B0774LPJHV?tag=sellemy-22",
+      "rakuten_search_url": "https://search.rakuten.co.jp/search/mall/SDRW-08U9M-U/SIL/G/AS/P2G/",
+      "yahoo_search_url": "https://shopping.yahoo.co.jp/search?p=SDRW-08U9M-U/SIL/G/AS/P2G"
     },
     {
-      "description": "Windows 7〜11とMacへの対応を掲げる黒色の候補は、Blu-rayドライブとしてUSB-A・Type-C接続、BD・DVDの再生や読み書きを紹介しています。ただし、OS対応の記載と、映像再生ソフトの付属は別の情報です。ソフト名、対応OSの詳細、ライセンスの利用条件は示されていません。書き込みについても対応媒体とソフトの組み合わせが不明で、接続後すぐに目的の作業を始められるとは確定できません。白色候補にはCDへの言及がありますが、その説明をこの販売内容へ転用することは避けます。一方、記載がないことだけでCD非対応とも判断できません。メーカー名と型番がなく、類似した黒色候補との製品差も未確認です。使用予定のOSで、データ読み込み・書き込み・映像再生のどこまで対応するかを操作別に整理し、必要なソフトを確認する対象です。",
-      "h3": "黒色の類似候補はOSとソフトの対応を分ける",
-      "ref": "p5"
+      "ref": "p5",
+      "h3": "ロジテック LDR-PXA8CU2VBK｜USB-CパソコンでDVDを使う",
+      "description": "ブラックのDVD/CD用モデル。パソコン側USB Type-C、ドライブ側miniBの約55cmケーブルが付属し、USB-CポートのWindowsパソコンで再生・編集・書き込みを行いたい人に向きます。Windows用のPowerDVD for DVD、Power2Go for DVDなどはダウンロード方式で、ネット接続が必要です。ARMプロセッサ搭載機は対応対象外なので、端子が同じという理由だけで選ばないようにしましょう。USB2.0接続、本体は約230gで水平設置です。DVD±R一層は最大8倍速、CD-Rは最大24倍速。Mac用ソフトは付属せず、Blu-rayも扱えません。給電不足時は指定の別売ACアダプターを使います。",
+      "amazon_product_url": "https://www.amazon.co.jp/dp/B0DZWQPN98",
+      "amazon_affiliate_url": "https://www.amazon.co.jp/dp/B0DZWQPN98?tag=sellemy-22",
+      "rakuten_search_url": "https://search.rakuten.co.jp/search/mall/LDR-PXA8CU2VBK/",
+      "yahoo_search_url": "https://shopping.yahoo.co.jp/search?p=LDR-PXA8CU2VBK"
     },
     {
-      "description": "日本語の取扱説明書付きと記載する黒色の候補は、BD・DVDの外付けドライブとして紹介されています。USB-AとType-C、Windows 7〜11とMac OS、再生と読み書きへの言及がありますが、説明書の付属は再生・書き込みソフトの同梱を意味しません。付属ライセンスの有無やソフトの入手方法、対応するOSの詳細を確認する必要があります。本体寸法、重量、給電方式、ケーブル収納方法も未確認です。説明書で確認したいのは、初回接続の手順に加え、媒体別の操作と使用するソフトの条件です。ほかの黒色候補と似た説明でも、付属品や動作条件が同じとは確定できません。正式名称と型番を特定し、日本語説明書がその製品に対応することを確認したうえで、接続から目的の読み書き・再生までに必要なものを揃えて検討します。",
-      "h3": "日本語説明書付き候補はライセンス内容が未確認",
-      "ref": "p6"
+      "ref": "p6",
+      "h3": "アイ・オー・データ DVRP-UC8SK/H｜A/C対応のDVDデータ保存用",
+      "description": "ブラックのDVD/CD用ドライブで、USB Type-CとUSB-A搭載パソコンに対応します。付属するのはWindows用B’s Recorder 20のダウンロード版。写真や資料をディスクへ保存したり、音楽CDを作ったりする用途を中心に選ぶ人向けです。DVDミレルやB’s Recorder GOLD 20が付く別シリーズとは構成が異なります。ソフトの入手にはユーザー登録とネット接続が必要です。Macでは対応OSの標準書き込み機能やDVD-Video再生機能を利用しますが、テレビ録画のDVD-VR・AVCREC再生には対応しません。ChromeOSは読み取り専用。Blu-ray用ではないことも確認してください。",
+      "amazon_product_url": "https://www.amazon.co.jp/dp/B0DJQ9ZS4K",
+      "amazon_affiliate_url": "https://www.amazon.co.jp/dp/B0DJQ9ZS4K?tag=sellemy-22",
+      "rakuten_search_url": "https://search.rakuten.co.jp/search/mall/DVRP-UC8SK/H/",
+      "yahoo_search_url": "https://shopping.yahoo.co.jp/search?p=DVRP-UC8SK/H"
     }
   ],
-  "slug": "external-computer-optical-drives",
-  "summary": "BRJRはCD・DVDの読み書きとバスパワー、conreruruはBDXLやM-DISCへの対応を掲げています。ほかの候補にもBlu-rayやUSB-A・Type-Cの記載がありますが、規格別の動作と付属ソフトは未確認です。類似候補の製品差を確かめ、接続できることと映像を再生できることを分けます。"
+  "status": "READY",
+  "publish_allowed": false,
+  "recovery_qa_provenance": {
+    "original_status": "AUTHOR_READY_PENDING_INDEPENDENT_QA",
+    "source_body_sha256": "57a549c05ef56447a9c2cd37ca0dc5610897e6e77e39a9232fa4c6b1f30a803e",
+    "source_evidence_sha256": "767d4f1d1cb9990b7b4a7d79ecda85edadfc12c472e134e35c75f67f22a4c6da",
+    "independent_qa_verdict": "PASS",
+    "note": "only workflow status transitioned after exact independent QA SHA match; prose unchanged"
+  }
 }

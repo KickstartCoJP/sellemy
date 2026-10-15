@@ -45,11 +45,11 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0H6W2GKDL",
-      "asin": "B0H6W2GKDL",
-      "amazon_title": "交換用リモコン for Fire-TV Stick 第1/2/3世代/4K/4K Max/Lite/TV Cube 対応 プリセットAPPボタン搭載 音声認識機能付きテレビコントロール、日本語取扱説明書付属 電池別売 (L5B83G)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/513pz9DoGmL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0G2TXBSWJ",
+      "asin": "B0G2TXBSWJ",
+      "amazon_title": "Amazon Fire TV Stick 4K Max(マックス) | Fire TV Stick史上最もパワフル | ストリーミングメディアプレイヤー",
+      "brand": "Amazon",
+      "image_url": "https://m.media-amazon.com/images/I/61dPQpIF4+L._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.67,
@@ -57,76 +57,110 @@
         "remote_control",
         "video_resolution"
       ],
-      "search_key": "交換用リモコン for Fire-TV Stick 第1/2/3"
+      "search_key": "交換用リモコン for Fire-TV Stick 第1/2/3",
+      "model": "Fire TV Stick 4K Max 第2世代",
+      "selected_variant": {
+        "model": "第2世代",
+        "remote": "TVer/YouTubeボタン付",
+        "bundle": "本体のみ"
+      }
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0H7QP68X5",
-      "asin": "B0H7QP68X5",
-      "amazon_title": "MAXWIN Fire TV Stick HD 第2世代対応 車載 アダプター ディスプレイオーディオ HDMI入力 ワイヤレス CarPlay Android Auto 2K解像度 ミラーリング 車でネットフリックス YouTube 見る カーナビ 外部入力",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/51vE+M8AzIL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0F4X6G1WV",
+      "asin": "B0F4X6G1WV",
+      "amazon_title": "ETOE Google TV ボックス、Netflix 認定、ストリーミング メディア プレーヤー サポート Google cast/Google Assistant/Wifi 2.4G 5G/Bluetooth 5.0 - くろいろ",
+      "brand": "ETOE",
+      "image_url": "https://m.media-amazon.com/images/I/61-u4kcYBoL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.49,
       "matched_comparison_axes": [
         "app_support"
       ],
-      "search_key": "MAXWIN Fire TV Stick HD 第2世代対応 車"
+      "search_key": "MAXWIN Fire TV Stick HD 第2世代対応 車",
+      "model": "D2861-GTV（メーカー型番欄D2861）",
+      "selected_variant": {
+        "model": "D2861-GTV",
+        "color": "ブラック",
+        "quantity": 1
+      }
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0H7SZ5CN8",
-      "asin": "B0H7SZ5CN8",
-      "amazon_title": "スマートTV Stick (第3世代) | HD対応スタンダードモデル | ストリーミングメディアプレイヤー【2021年発売】",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/51Pa7JgD5LL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0G2TXCWFH",
+      "asin": "B0G2TXCWFH",
+      "amazon_title": "Amazon Fire TV Stick 4K Select",
+      "brand": "Amazon",
+      "image_url": "https://m.media-amazon.com/images/I/61h4VcwkI6L._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
       "matched_comparison_axes": [],
-      "search_key": "スマートTV Stick (第3世代) | HD対応スタンダード"
+      "search_key": "スマートTV Stick (第3世代) | HD対応スタンダード",
+      "model": "Fire TV Stick 4K Select（2025年発売）",
+      "selected_variant": {
+        "release": "2025年発売",
+        "remote": "TVer/YouTubeボタン付",
+        "bundle": "本体のみ"
+      }
     },
     {
       "ref": "p4",
       "product_id": "AMZ-B0H262JBF7",
       "asin": "B0H262JBF7",
-      "amazon_title": "【セット買い】Amazon Fire TV Stick 4K Plus + Amazon Fire TV Soundbar Plus",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/31gudm9sFKL._AC_UL320_.jpg",
+      "amazon_title": "Amazon Fire TV Stick 4K Plus＋Fire TV Soundbar Plus セット",
+      "brand": "Amazon",
+      "image_url": "https://m.media-amazon.com/images/I/31gudm9sFKL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
       "matched_comparison_axes": [
         "video_resolution"
       ],
-      "search_key": "Amazon Fire TV Stick 4K Plus + A"
+      "search_key": "Amazon Fire TV Stick 4K Plus + A",
+      "model": "Fire TV Stick 4K Plus＋Fire TV Soundbar Plus（2024年発売サウンドバー）",
+      "selected_variant": {
+        "remote": "TVer/YouTubeボタン付",
+        "bundle": "本体＋サウンドバー"
+      }
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0GW8SG4Z3",
-      "asin": "B0GW8SG4Z3",
-      "amazon_title": "スマートTV Stick セレクト HD対応スタンダードモデル ストリーミングメディアプレイヤー",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/51Pa7JgD5LL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0DHKMWXJJ",
+      "asin": "B0DHKMWXJJ",
+      "amazon_title": "Google TV Streamer(4K) 有線LAN・WiFi対応/音声検索リモコン/スマートホーム連携/4K HDR/Dolby Vision/Dolby Atmos/Chromecast(クロームキャスト) 後継[2024年 GA05662-JP",
+      "brand": "Google",
+      "image_url": "https://m.media-amazon.com/images/I/41hV0anBGYL._AC_SL1000_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
       "matched_comparison_axes": [],
-      "search_key": "スマートTV Stick セレクト HD対応スタンダードモデル"
+      "search_key": "スマートTV Stick セレクト HD対応スタンダードモデル",
+      "model": "GA05662-JP",
+      "selected_variant": {
+        "color": "Porcelain（Amazon表記ホワイト）",
+        "size": "161.6×75.6×26.7mm（メーカー公式。Amazon表の16.2×7.6×2.7cmは丸め値）"
+      }
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0GT8C1PB9",
-      "asin": "B0GT8C1PB9",
-      "amazon_title": "スマートTV Stick HD対応スタンダードモデル ストリーミングメディアプレイヤー2024年発売",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61p-9rg-oTL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0C7K814LB",
+      "asin": "B0C7K814LB",
+      "amazon_title": "Amazon Fire TV Cube(キューブ) | 究極の体験をハンズフリーで | ストリーミングメディアプレイヤー",
+      "brand": "Amazon",
+      "image_url": "https://m.media-amazon.com/images/I/71W8HhdY5hL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
       "matched_comparison_axes": [],
-      "search_key": "スマートTV Stick HD対応スタンダードモデル ストリーミ"
+      "search_key": "スマートTV Stick HD対応スタンダードモデル ストリーミ",
+      "model": "Fire TV Cube 第3世代",
+      "selected_variant": {
+        "generation": "第3世代",
+        "remote": "TVer/U-NEXTボタン付",
+        "bundle": "本体のみ"
+      }
     }
   ]
 }
