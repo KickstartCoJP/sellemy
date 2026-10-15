@@ -9,6 +9,7 @@ from pathlib import Path
 
 from codex_eyecatch import CodexEyecatchError, ensure_codex_eyecatch
 from eyecatch_adapter import EyecatchGenerationError, EyecatchGenerator
+from recovery_provider_policy import active_policy, require_local_provider_allowed
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG_PATH = ROOT / 'config' / 'eyecatch_routing.json'
@@ -89,7 +90,10 @@ def _api_available() -> bool:
 
 
 def _choose_route(config: dict, usage: dict | None) -> tuple[str, dict]:
+    policy = active_policy()
     remaining = usage.get('remaining_percent') if usage else None
+    if policy and policy.get('codex_allowed') is not True:
+        return 'openai_api', {'reason': 'recovery_codex_prohibited', 'roll': None, 'remaining_percent': remaining}
     reserve = float(config['codex_reserve_percent'])
     if remaining is not None and remaining <= reserve:
         return 'openai_api', {
@@ -163,6 +167,7 @@ def ensure_routed_eyecatch(*, slug: str, title: str, category: str, evidence: di
     errors: list[str] = []
 
     def run_codex() -> dict:
+        require_local_provider_allowed('codex')
         return ensure_codex_eyecatch(
             slug=slug, title=title, category=category, evidence=evidence, payload=payload,
         )
@@ -171,10 +176,12 @@ def ensure_routed_eyecatch(*, slug: str, title: str, category: str, evidence: di
         return _generate_api(slug=slug, payload=payload, evidence=evidence, config=config)
 
     order = [selected]
-    if selected == 'codex' and config['api_fallback_on_codex_failure']:
-        order.append('openai_api')
-    elif selected == 'openai_api' and config['codex_fallback_on_api_failure']:
-        order.append('codex')
+    policy = active_policy()
+    if not policy:
+        if selected == 'codex' and config['api_fallback_on_codex_failure']:
+            order.append('openai_api')
+        elif selected == 'openai_api' and config['codex_fallback_on_api_failure']:
+            order.append('codex')
 
     for index, route in enumerate(order):
         try:

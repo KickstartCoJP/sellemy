@@ -3,8 +3,8 @@
   "codex_share": 0,
   "api_share": 100,
   "codex_reserve_percent": 20,
-  "api_fallback_on_codex_failure": true,
-  "codex_fallback_on_api_failure": true,
+  "api_fallback_on_codex_failure": false,
+  "codex_fallback_on_api_failure": false,
   "api_model": "gpt-image-2.5-sunburst",
   "api_quality": "high"
 }

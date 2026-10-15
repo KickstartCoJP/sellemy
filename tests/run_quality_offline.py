@@ -13,7 +13,7 @@ from unittest.mock import patch
 ROOT = Path(__file__).resolve().parents[1]
 sys.path[:0] = [str(ROOT / 'pipeline'), str(ROOT / 'tests')]
 MODULES = [
-    'test_comparison_acceptance', 'test_planning_and_selection', 'test_growth_runtime',
+    'test_comparison_acceptance', 'test_recovery_provider_policy', 'test_planning_and_selection', 'test_growth_runtime',
     'test_growth_recovery', 'test_writer_providers', 'test_responses_provider',
     'test_review_gate', 'test_qa', 'test_payload_schema', 'test_renderer',
     'test_publication_unit', 'test_adaptive_publish', 'test_codex_provider',

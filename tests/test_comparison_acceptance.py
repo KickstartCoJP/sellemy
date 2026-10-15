@@ -121,7 +121,8 @@ class ContractTests(unittest.TestCase):
         self.assertFalse(meta['writer_invoked'])
 
     def test_astra_output_exhaustion_does_not_fall_back_to_local(self):
-        with patch.dict(os.environ, {'SELLEMY_WRITER_API_WEIGHT':'100', 'SELLEMY_WRITER_CODEX_WEIGHT':'0'}), \
+        with patch.object(rp, 'require_responses_allowed', return_value={}), \
+             patch.dict(os.environ, {'SELLEMY_WRITER_API_WEIGHT':'100', 'SELLEMY_WRITER_CODEX_WEIGHT':'0'}), \
              patch.object(rp, 'generate', side_effect=rp.ResponsesError('invalid', kind='output')) as generate:
             with self.assertRaises(rp.ResponsesError):
                 rp.route('writer', {}, '', lambda: self.fail('quality exhaustion cannot invoke local fallback'))
@@ -180,7 +181,8 @@ class RecoveryContractTests(RecoveryCase):
                 self.assertEqual(gr.load_job(e['slug'])['retry_count_by_stage']['writer'], 0)
                 self.assertEqual(reviewer.call_count, int(source == 'reviewer'))
 
-    def test_sol_quality_failure_retries_astra_and_astra_failure_is_terminal(self):
+    @patch('operating_profile.normal_profile', return_value=False)
+    def test_sol_quality_failure_retries_astra_and_astra_failure_is_terminal(self, _legacy):
         p, e, a = self.create()
         a['review'].update(status='REVISION_REQUIRED', buying_guidance=False)
         with patch.object(runtime, 'invoke_writer', side_effect=[(p, {'quality_escalated':False}), (p, {'quality_escalated':True})]) as writer, \
@@ -403,5 +405,12 @@ class AdditionalBoundaryTests(unittest.TestCase):
         with self.assertRaises(PayloadValidationError):
             validate_payload(value)
 
+
+
+    def test_chat_surface_independent_receipt_is_accepted(self):
+        payload, evidence = fixture('good-reading-stands')
+        assessment = review(evidence, article=True)
+        receipt = make_receipt(evidence, assessment, {'surface': 'chat'}, payload, reviewer='independent_chat_review')
+        self.assertEqual(receipt_issues(receipt, evidence, payload), [])
 
 if __name__ == '__main__': unittest.main()

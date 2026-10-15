@@ -116,8 +116,8 @@ def find_shared_openings_endings(descriptions: list[str], prefix_len: int = 12, 
     return dup_openings, dup_endings
 
 
-def run_qa(html: str, payload: dict, evidence: dict, *, acceptance: dict | None = None) -> dict:
-    issues = acceptance_issues(payload, evidence, acceptance)
+def run_qa(html: str, payload: dict, evidence: dict, *, acceptance: dict | None = None, require_semantic_acceptance: bool = True) -> dict:
+    issues = acceptance_issues(payload, evidence, acceptance) if require_semantic_acceptance else []
     results: dict = {'semantic_acceptance_pass': not issues, 'semantic_acceptance_issues': issues}
 
     results['lead_len'] = len(payload['lead'])

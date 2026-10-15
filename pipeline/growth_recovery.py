@@ -17,7 +17,7 @@ JOBS_ROOT = STATE_ROOT / 'jobs'
 EVENTS_PATH = STATE_ROOT / 'events.jsonl'
 EXECUTION_EVENTS_PATH = STATE_ROOT / 'execution-events.jsonl'
 
-TERMINAL_STATUSES = {'PUBLISHED', 'DISCARDED', 'FAILED'}
+TERMINAL_STATUSES = {'PUBLISHED', 'DISCARDED', 'FAILED', 'RETIRED'}
 RETRYABLE_STAGES = {'WRITER_PENDING', 'QA_FAILED', 'EYECATCH_PENDING', 'PUBLISH_PENDING'}
 WRITER_MAX_ATTEMPTS = int(os.environ.get('SELLEMY_WRITER_MAX_ATTEMPTS_PER_SLUG', '5'))
 
@@ -209,8 +209,10 @@ def save_writer_result(slug: str, *, payload: dict, qa: dict, findings: list[str
             turns.append(marker)
         state['writer_turn_ids'] = turns
     if passed:
-        state['current_stage'] = 'EYECATCH_PENDING'
-        state['next_retry_at'] = _iso()
+        from operating_profile import normal_profile
+        write_artifact(slug, 'chat-publish-approval.json', {})
+        state['current_stage'] = 'EYECATCH_PENDING' if normal_profile() else 'CHAT_REVIEW_PENDING'
+        state['next_retry_at'] = None
         state['last_failure_class'] = None
         state['last_failure_code'] = None
         state['last_failure_reason'] = None
@@ -237,6 +239,38 @@ def mark_failure(slug: str, *, stage: str, failure_class: str, failure_code: str
     retries[stage] = int(retries.get(stage) or 0) + 1
     state['retry_count_by_stage'] = retries
     attempt = retries[stage]
+    from operating_profile import normal_profile
+    normal = normal_profile()
+    if normal and failure_class == 'role_quality':
+        ng=dict(state.get('quality_ng_by_gate') or {})
+        ng[stage]=int(ng.get(stage) or 0)+1
+        state['quality_ng_by_gate']=ng
+        if ng[stage]>=3:
+            state['status']='FAILED'
+            state['current_stage']=stage.upper()+'_FAILED'
+            state['next_retry_at']=None
+            state['last_failure_class']=failure_class
+            state['last_failure_code']=failure_code
+            state['last_failure_reason']=reason[:2000]
+            state['operating_profile']='normal'
+            receipt=_save_state(state,event='QUALITY_GATE_THREE_NG',detail={'stage':stage,'ng_count':ng[stage]})
+            recent=sorted((x for x in all_jobs() if x.get('operating_profile')=='normal'
+                           and x.get('status') in {'PUBLISHED','FAILED','DISCARDED','RETIRED'}),
+                          key=lambda x:(x.get('updated_at') or '',x.get('slug') or ''))
+            if len(recent)>=10 and all(x.get('status')=='FAILED' for x in recent[-10:]) and (len(recent)==10 or recent[-11].get('status')!='FAILED'):
+                if recent[-1].get('slug') == slug:
+                    write_artifact(slug,'ceo-inspection-required.json',{
+                        'schema':'sellemy-failed-10-inspection/v1',
+                        'status':'REQUIRES_CEO_INSPECTION',
+                        'reason':'10 consecutive normal production turns FAILED',
+                        'slugs':[x['slug'] for x in recent[-10:]],
+                        'latest_failed_at':receipt.get('updated_at'),
+                        'publication_blocked_by_this_receipt':False})
+            write_artifact(slug,'owner-quality-case.json',{
+                'schema':'sellemy-owner-quality-case/v1','slug':slug,
+                'stage':stage,'ng_count':ng[stage],'failure_code':failure_code,
+                'case_state':'AWAITING_OWNER_ANALYSIS','job_state_revision':receipt.get('updated_at')})
+            return receipt
     state['last_failure_class'] = failure_class
     state['last_failure_code'] = failure_code
     state['last_failure_reason'] = reason[:2000]
@@ -252,7 +286,7 @@ def mark_failure(slug: str, *, stage: str, failure_class: str, failure_code: str
 
     if stage == 'writer':
         state['current_stage'] = 'QA_FAILED'
-        if attempt >= WRITER_MAX_ATTEMPTS or failure_code == 'ASTRA_QUALITY_EXHAUSTED':
+        if (not normal) and (attempt >= WRITER_MAX_ATTEMPTS or failure_code == 'ASTRA_QUALITY_EXHAUSTED'):
             state['status'] = 'FAILED'
             state['current_stage'] = 'WRITER_FAILED'
             state['next_retry_at'] = None
@@ -273,6 +307,19 @@ def mark_published(slug: str, commit: str) -> dict:
     state['status'] = 'PUBLISHED'
     state['current_stage'] = 'PUBLISHED'
     state['published_commit'] = commit
+    state['published_at'] = state.get('published_at') or _iso()
+    from operating_profile import normal_profile
+    if normal_profile():
+        state['operating_profile'] = 'normal'
+        import hashlib
+        selection_hash=hashlib.sha256(f'{slug}:{commit}'.encode()).hexdigest()
+        if int(selection_hash[:8],16)%10 == 0:
+            write_artifact(slug,'owner-success-case.json',{
+                'schema':'sellemy-owner-learning-sample/v1',
+                'slug':slug,'commit':commit,'selection_sha256':selection_hash,
+                'sampling_rule':'sha256(slug:commit) modulo10 = 0',
+                'case_state':'AWAITING_OWNER_ANALYSIS',
+                'evidence_artifacts':['topic.json','selection.json','evidence.json','payload.json','qa.json','acceptance.json']})
     state['next_retry_at'] = None
     state['last_failure_class'] = None
     state['last_failure_code'] = None
@@ -287,6 +334,15 @@ def discard(slug: str, reason: str) -> dict:
     state['discard_reason'] = reason
     state['next_retry_at'] = None
     return _save_state(state, event='DISCARDED', detail={'reason': reason})
+
+
+def retire(slug: str, reason: str) -> dict:
+    state = load_job(slug)
+    state['status'] = 'RETIRED'
+    state['current_stage'] = 'RETIRED'
+    state['discard_reason'] = reason
+    state['next_retry_at'] = None
+    return _save_state(state, event='RETIRED', detail={'reason': reason})
 
 
 def request_product_reselection(slug: str, reasons: list[str]) -> dict:
@@ -309,7 +365,7 @@ def replace_product_evidence(slug: str, evidence: dict, selection: dict) -> dict
     write_artifact(slug, 'evidence.json', evidence)
     write_artifact(slug, 'selection.json', selection)
     for name in ('payload.json', 'acceptance.json', 'qa.json', 'gate-feedback.json',
-                 'eyecatch-receipt.json'):
+                 'eyecatch-receipt.json', 'chat-publish-approval.json'):
         write_artifact(slug, name, {})
     write_artifact(slug, 'product-blocker.json', {})
     return set_stage(slug, 'WRITER_PENDING', event='PRODUCT_RESELECTION_ACCEPTED')
@@ -322,11 +378,13 @@ def materialize_for_publish(slug: str, repo: Path = ROOT) -> None:
         raise RuntimeError(f'recovery artifacts incomplete for publish: {slug}')
     from comparison_acceptance import require_acceptance
     from publish_gate import require_publishing_enabled
+    from chat_publish_approval import require_chat_publish_approval
     acceptance = read_artifact(slug, 'acceptance.json')
     if (read_artifact(slug, 'product-blocker.json', {}) or {}).get('needs_product_reselection'):
         raise ValueError('comparison acceptance refused: needs_product_reselection')
     require_publishing_enabled(repo)
     require_acceptance(payload, evidence, acceptance)
+    require_chat_publish_approval(read_artifact(slug, 'chat-publish-approval.json'), payload=payload, evidence=evidence)
     _atomic_json(repo / 'data' / 'acceptance' / f'{slug}.json', acceptance)
     _atomic_json(repo / 'data' / 'evidence' / f'{slug}.json', evidence)
     _atomic_json(repo / 'data' / 'payloads' / f'{slug}.json', payload)

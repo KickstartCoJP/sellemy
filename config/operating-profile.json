@@ -1,0 +1,7 @@
+{
+  "schema": "sellemy-operating-profile/v1",
+  "mode": "normal",
+  "ceo_review_every_n_articles": 10,
+  "postpublish_ceo_enabled": true,
+  "ceo_failed_ten_enabled": true
+}

@@ -14,6 +14,7 @@ from analytics_feedback import load_feedback, topic_signal
 from category_metadata import CATEGORIES
 from writer_runtime import AVAILABILITY_PATTERN, _diagnostic
 from codex_provider import CodexProviderError, generate_persistent as codex_generate_persistent
+from recovery_provider_policy import require_local_provider_allowed
 
 ROOT = Path(__file__).resolve().parents[1]
 ARTICLES = ROOT / 'json' / 'articles.json'
@@ -109,6 +110,8 @@ def _planning_provider(name: str) -> tuple[str, list[str], str, bool]:
 def _invoke_planning(kind: str, command: list[str], model: str, prompt: str, timeout: int) -> dict:
     if not command or not model:
         raise PlanningError('planning provider is unconfigured')
+    if kind in {'codex', 'claude'}:
+        require_local_provider_allowed(kind)
     if kind == 'codex':
         try:
             value, _meta = codex_generate_persistent(
@@ -139,7 +142,7 @@ def _invoke_planning(kind: str, command: list[str], model: str, prompt: str, tim
 
 
 def discover_candidates() -> list[dict]:
-    prompt = CONTRACT + '\nPlanning candidates are provisional until Product/Evidence acceptance. Propose observable topic-specific axes, not generic promotional terms.\n' + 'You plan Japanese Sellemy product-comparison topics. Generate fresh candidates from current season, search/purchase intent, product viability and the supplied context. Return structured JSON only.\n' + json.dumps(_context(), ensure_ascii=False)
+    prompt = CONTRACT + '\nPlanning candidates are provisional until Product/Evidence acceptance. Propose observable topic-specific axes, not generic promotional terms. Evidence availability means that product identity and decision-critical comparison facts can realistically be sourced from manufacturer/official pages, manuals/specifications, or other traceable reliable sources; marketplace title availability alone is not sufficient. Keep the topic to one coherent product class and purchase decision; accessories/refills/parts belong only when the search intent explicitly targets them.\n' + 'You plan Japanese Sellemy product-comparison topics. Generate fresh candidates from current season, search/purchase intent, product viability and the supplied context. Return structured JSON only.\n' + json.dumps(_context(), ensure_ascii=False)
     def local():
         batch = _discover_local_candidates(prompt)
         return {'candidates': list(batch)}, batch.provider_metadata
