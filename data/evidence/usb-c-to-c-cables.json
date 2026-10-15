@@ -39,82 +39,128 @@
   "eyecatch_image": "https://www.sellemy.jp/img/usb-c-to-c-cables/usb-c-to-c-cables.png",
   "products": [
     {
-      "amazon_title": "usb c ケーブル 4本セット CarPlayサポート PD3.0対応 データ同期 ナイロン編 1M+1M+2M+2M ホワイト",
-      "asin": "B0H8CT4MPW",
-      "brand": "",
+      "amazon_title": "エレコム MPA-CCECSS10BK",
+      "asin": "B0DBHJ31TX",
+      "brand": "エレコム",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71uxaG4ozCL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51SU2uxrXYL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0H8CT4MPW",
+      "product_id": "AMZ-B0DBHJ31TX",
       "ref": "p1",
       "search_key": "usb c ケーブル 4本セット CarPlayサポート PD3",
-      "selection_score": 0.292857
+      "selection_score": 0.292857,
+      "selected_variant": {
+        "length": "1m",
+        "colour": "ブラック",
+        "power": "PD100W",
+        "type": "USB-C to C、シリコン",
+        "data": "データ通信対応。映像出力対応とはしない"
+      }
     },
     {
-      "amazon_title": "USB-C ケーブル 7m ブラック 5Gbps データ転送 60W 超急速充電 PD3.0 対応 PD3.1 互換 4K@60Hz 映像出力 ポータブルモニター・車載機器・ノート PC・ドッキングステーション・USB ハブ・SSD 対応 高耐久素材 在宅勤務・オフィス・出張・旅行に最適 汎用ロングケーブル,長 7m usb type c.",
-      "asin": "B0H32Q57GP",
-      "brand": "",
+      "amazon_title": "UGREEN USB-C 240W 10Gbps",
+      "asin": "B0G2SBRQG4",
+      "brand": "UGREEN",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/81bwWyjmDdL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71m3HJgLTZL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0H32Q57GP",
+      "product_id": "AMZ-B0G2SBRQG4",
       "ref": "p2",
       "search_key": "USB-C ケーブル 7m ブラック 5Gbps データ転送 6",
-      "selection_score": 0.292857
+      "selection_score": 0.292857,
+      "selected_variant": {
+        "length": "2m（選択タイトル）",
+        "power": "PD3.1最大240W",
+        "data": "USB3.2 Gen2 10Gbps",
+        "video": "4K60、DP Alt Mode対応機器が必要",
+        "note": "共通説明に1m混在、選択品2mを優先"
+      }
     },
     {
-      "amazon_title": "Type C to Type C ケーブル 6M 240W 急速充電 PD対応 20Gbps 高速転送 4K@120Hz、8K@60Hz 映像出力 USB Gen2x2 USB-C to USB-C ケーブル スマートフォン・タブレット・パソコン・ゲーム機等タイプC機器対応48根尼龙编织",
-      "asin": "B0GZ35WGSV",
-      "brand": "",
+      "amazon_title": "エレコム MPA-CCEC5GL20BK",
+      "asin": "B0GKF4B7PC",
+      "brand": "エレコム",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71ylTup2TVL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61QiKeFgb4L._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0GZ35WGSV",
+      "product_id": "AMZ-B0GKF4B7PC",
       "ref": "p3",
       "search_key": "Type C to Type C ケーブル 6M 240W 急速",
-      "selection_score": 0.292857
+      "selection_score": 0.292857,
+      "selected_variant": {
+        "length": "2m",
+        "colour": "ブラック",
+        "power": "PD100W",
+        "data": "USB3.2 Gen1 5Gbps",
+        "type": "USB-C to C、L字",
+        "video": "映像出力対応、機器側対応が必要"
+      }
     },
     {
-      "amazon_title": "USB-C ケーブル 2m 長め ナイロン編み 80Gbps 高速データ転送 240W PD急速充電 16K@60Hz 映像出力 Thunderbolt 5/4/3互換 ノートPC・タブレット対応",
-      "asin": "B0GVQ4BG79",
-      "brand": "",
+      "amazon_title": "Amazonベーシック USB4 240W",
+      "asin": "B0C93G2M83",
+      "brand": "Amazonベーシック",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71ehnoyenwL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61krG1Oz-LL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0GVQ4BG79",
+      "product_id": "AMZ-B0C93G2M83",
       "ref": "p4",
       "search_key": "USB-C ケーブル 2m 長め ナイロン編み 80Gbps 高",
-      "selection_score": 0.292857
+      "selection_score": 0.292857,
+      "selected_variant": {
+        "length": "約1m、タイトル1.01m表記",
+        "colour": "ブラック",
+        "power": "最大240W、全機器EPR対応条件",
+        "data": "USB4 40Gbps",
+        "video": "8K60等はDP仕様と機器条件付き",
+        "certification": "出品者Amazon自身のUSB-IF認証取得記載。独立データベース照合は未実施"
+      }
     },
     {
-      "amazon_title": "usb c ケーブル 1m 2in1多機能 USB3.2 Gen2X2 20Gbps高速データ転送 4K@60Hz映像出力 100W(5A)PD急速充電 Thunderbolt3/4対応 編組仕様 usb a to c変換対応 type-c",
+      "amazon_title": "HOTUTUKI 2in1 Cケーブル",
       "asin": "B0GT41BT7C",
-      "brand": "",
+      "brand": "HOTUTUKI",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71Bv+qNlZML._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71Bv+qNlZML._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B0GT41BT7C",
       "ref": "p5",
       "search_key": "usb c ケーブル 1m 2in1多機能 USB3.2 Gen",
-      "selection_score": 0.292857
+      "selection_score": 0.292857,
+      "selected_variant": {
+        "length": "1m",
+        "type": "USB-C to C、着脱USB-A変換付",
+        "power": "CtoC時最大100Wという記載",
+        "data": "CtoC時USB3.2 Gen2x2 20Gbpsという記載",
+        "video": "CtoC時4K60という記載",
+        "warning": "USB-A時の60Wなどの販売者記載は追加検証前に転記しない"
+      }
     },
     {
-      "amazon_title": "エレコム USB Type C ケーブル 1m 240W 映像出力 PD対応 高耐久 ナイロンメッシュ 高速充電 10Gbps USB3.2 (Gen2) ブラック MPA-CCEC1GS10BK",
+      "amazon_title": "エレコム MPA-CCEC1GS10BK",
       "asin": "B0GKDZ2VYS",
-      "brand": "",
+      "brand": "エレコム",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/611qNLocfHL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/611qNLocfHL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B0GKDZ2VYS",
       "ref": "p6",
       "search_key": "エレコム USB Type C ケーブル 1m 240W 映像出",
-      "selection_score": 0.292857
+      "selection_score": 0.292857,
+      "selected_variant": {
+        "length": "1m",
+        "colour": "ブラック",
+        "power": "PD240W",
+        "data": "USB3.2 Gen2 10Gbps",
+        "type": "USB-C to C、ナイロンメッシュ",
+        "video": "映像出力対応、機器側条件あり"
+      }
     }
   ],
   "selection": {

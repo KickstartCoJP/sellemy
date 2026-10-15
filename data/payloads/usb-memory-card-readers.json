@@ -2,69 +2,100 @@
   "category": "gadget",
   "comparison_groups": [
     {
-      "angle": "KikoSakaと2in1候補はカードの種類を記載。SDXCやUHS規格、容量上限は示されておらず、詳細な適合確認が必要です。",
       "id": "card_compatibility",
+      "title": "カード読み取りに絞る2in1",
+      "angle": "KikoSakaとwnunbg 2in1は、USB-C接続でSD・microSDを扱う構成です。カード2枚の同時使用とは分けて比較します。",
       "product_refs": [
         "p2",
         "p3"
-      ],
-      "title": "SD・microSDとSD・TFの対応表示を確認"
+      ]
     },
     {
-      "angle": "SUNTRSIは二種類の端子、YOFEEPOPはType-CとiPhoneの機種名を紹介。対応OSや機種別の条件は未確認です。",
       "id": "host_compatibility",
+      "title": "USB周辺機器のポートも必要か",
+      "angle": "SUNTRSIはSD・microSDにUSB周辺機器用ポートを追加。YOFEEPOPはSD・microSDの2in1です。",
       "product_refs": [
         "p5",
         "p6"
-      ],
-      "title": "接続端子とスマートフォンの条件を照合"
+      ]
     },
     {
-      "angle": "エレコムは二スロット同時使用、3in1候補はUSB3.0を明示。転送速度や複数機器の併用条件は別に確認します。",
       "id": "transfer_conditions",
+      "title": "二つのホスト端子か、周辺機器用ポートか",
+      "angle": "エレコムはUSB-C・USB-Aのプラグとカード同時使用。wnunbg 3in1はUSB-C接続に周辺機器用ポートを組み合わせています。",
       "product_refs": [
         "p1",
         "p4"
-      ],
-      "title": "同時使用とUSB転送規格を分ける"
+      ]
     }
   ],
-  "conclusion": "類似候補の製品差と機種別の動作条件が未確認です。六製品の独立性、カード規格、対応OSが確認できるまで、転送性能の順位付けと購入推奨は保留します。",
-  "h1": "メモリーカードリーダー比較｜カード規格・接続先・転送条件を確認",
-  "how_to_choose": "まず手持ちのカードの種類、容量、SDXCやUHSなどの規格を確認し、リーダー側の対応一覧と照合します。次に端末のUSB-C・USB-Aなどの端子と、機種・OSの条件を分けて確認してください。転送はUSB側の規格とカード側の条件を揃え、高速という表現だけで順位付けしないことが大切です。複数スロットがあっても同時使用できるとは限りません。直挿しかケーブル付きか、本体寸法とケーブル長も確認し、2in1・3in1の数が何を表すかまで整理して選びましょう。",
-  "lead": "メモリーカードリーダーは、SDやmicroSDを挿せることに加え、カードの規格、接続する端末とOS、複数スロットの使用条件を確認して選びたい機器です。今回の候補にはUSB-CとUSB-Aの両対応、二スロット同時使用、USB3.0を掲げる製品があります。ただし、端子の形が合うことと、手持ちの端末で動作することは別です。容量上限や転送速度の条件も十分に揃っていないため、記載された違いと購入前の確認点を三つの観点で整理します。",
+  "conclusion": "カード2枚の同時使用と端子の使い分けを重視するなら、条件を明記するエレコム MR3C-D21EBKが選びやすい構成です。USB-C接続でSD・microSDを扱うだけなら2in1、USBメモリーやキーボードなども接続したいならUSB周辺機器用ポートを持つ3in1を比較しましょう。カードの容量・規格、端末のOSと外部ストレージ対応を合わせて確認し、数値上の通信速度よりも自分の作業に必要な端子と機能を優先してください。",
+  "h1": "メモリーカードリーダー6製品比較｜接続端子・カード・同時使用で選ぶ",
+  "how_to_choose": "まず端末側がUSB-CかUSB-Aかを確かめ、次にカードがSDかmicroSDか、容量と規格を確認します。TFはmicroSDを指す表記です。2in1・3in1という数だけでなく、カードスロットとUSB周辺機器用ポートの内訳を見ましょう。複数スロットがあっても同時使用できるとは限りません。USB3.0や5Gbpsは接続規格の説明で、カードの実際の読み書き速度とは別です。スマートフォンでは外部ストレージへの対応やOSの条件も確認してください。大切な写真は別の場所にも保存し、読み書き中にカードやリーダーを抜かないようにします。",
+  "lead": "カメラのSDカードとスマートフォンで使うmicroSDを整理するなら、カードリーダーの接続端子とスロット構成を先に決めましょう。今回は、USB-C・USB-Aを使い分けられる直挿し型、USB-C接続の2in1、USB周辺機器用ポートも備える3in1を比較します。カード2枚の同時使用が必要か、カード以外もつなぐかで候補を絞ると選びやすくなります。",
   "products": [
     {
-      "description": "SDとmicroSDの二スロット同時使用を掲げるエレコムのMR3C-D21EBKは、USB-CとUSB-Aに両対応する直挿し型です。UHS-I対応、アルミ筐体、ブラック、ドライバ不要の記載もあります。カードの種類と同時使用を分けて確認できる一方、USB側の転送規格や実測速度は示されていません。同時使用についても、二枚間のコピー方法や同時転送時の速度配分までは不明です。ドライバ不要との説明は、すべてのOSやスマートフォンで動作することを意味するものではなく、対応端末の照合が必要です。直挿し構造では本体寸法も確認したいところですが、端末のケースや隣接端子との収まりを判断する情報はありません。この候補は二種類の端子と二スロットを使う構成を起点に、接続先ごとの動作条件と同時使用の範囲を確かめる対象です。",
-      "h3": "エレコムは二スロット同時使用を明示",
-      "ref": "p1"
+      "description": "エレコム MR3C-D21EBKのブラックは、USB-CとUSB-Aのプラグを備える直挿し型です。SDとmicroSDの2スロット同時使用に対応し、カード間のデータ移行をしたい人にも向く構成です。両スロットはUHS-I対応で、最大104MB/sは理論値として案内されています。厚み約9mm、重量約13gのアルミ筐体で、端子を使い分けながら持ち歩きたい人の候補になります。複数カードを接続した際の実効速度や、端末ケースとの干渉までは同じではないため、使用環境も合わせて確認しましょう。",
+      "h3": "エレコム MR3C-D21EBK｜USB-C・USB-Aとカード同時使用",
+      "ref": "p1",
+      "amazon_product_url": "https://www.amazon.co.jp/dp/B0H8NM5MPP",
+      "amazon_affiliate_url": "https://www.amazon.co.jp/dp/B0H8NM5MPP?tag=sellemy-22",
+      "rakuten_search_url": "https://search.rakuten.co.jp/search/mall/%E3%82%A8%E3%83%AC%E3%82%B3%E3%83%A0%20MR3C-D21EBK%20%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF/",
+      "yahoo_search_url": "https://shopping.yahoo.co.jp/search?p=%E3%82%A8%E3%83%AC%E3%82%B3%E3%83%A0%20MR3C-D21EBK%20%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF"
     },
     {
-      "description": "KikoSakaの2in1は、USB Type-C接続でSDとmicroSDの両対応を紹介するカードリーダーです。カメラのカードを端末へ取り込む用途を検討できますが、カードの種類に加えて確認したいSDXCへの対応、UHS規格、容量上限は示されていません。SDとmicroSDの二つが挙がっていても、同時に読み取れることやカード間で直接転送できることは未確認です。Type-Cという端子名からUSB3.0の転送規格やスマートフォンへの対応を補う根拠もありません。対応OS、使用するアプリ、ケーブルの有無と長さも不明です。カメラアダプタという名称を、カメラ本体へ直接接続する機器との説明に広げないことも大切です。この候補ではSD・microSD両対応を入口に、カードの詳細規格と接続する端末の条件を揃えたいところです。",
-      "h3": "KikoSakaはType-Cと二種類のカードを記載",
-      "ref": "p2"
+      "description": "KikoSakaは、ホワイトのSD・microSD対応2in1です。USB-C接続で、商品説明にはOTGとスマートフォン・カード間の双方向転送、専用アプリ不要の記載があります。カメラで使うSDと小型機器で使うmicroSDを、一つのリーダーで扱いたい人向けの構成です。USB3.0という表記はありますが、カード側のUHS規格や実際の読み書き速度を示すものではありません。2枚同時使用を選ぶ理由にはせず、使うカードと端末が対応条件に合うかを確認して選びましょう。",
+      "h3": "KikoSaka 2in1｜SDとmicroSDをUSB-Cで読み込む",
+      "ref": "p2",
+      "amazon_product_url": "https://www.amazon.co.jp/dp/B0H8ZN5LLG",
+      "amazon_affiliate_url": "https://www.amazon.co.jp/dp/B0H8ZN5LLG?tag=sellemy-22",
+      "rakuten_search_url": "https://search.rakuten.co.jp/search/mall/KikoSaka%202in1%20SD%20MicroSD%20%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88/",
+      "yahoo_search_url": "https://shopping.yahoo.co.jp/search?p=KikoSaka%202in1%20SD%20MicroSD%20%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88"
     },
     {
-      "description": "Type-C接続とSD・TF対応を掲げる2in1の候補です。メモリーカードリーダーとして紹介されていますが、メーカー名や型番、対応容量の一覧は示されていません。まず正式な製品を特定しなければ、どのカード規格に対応する仕様かを説明書と照合できない状態です。2in1という名称も、二枚のカードを同時に使えることや二種類の端末へ接続できることを意味するとは確認できません。KikoSakaの候補とはType-Cと二種類のカードを扱う説明が似ていますが、同一製品か別モデルかを決める情報はありません。USB転送規格、UHS規格、接続先の条件、ケーブル長は未記載です。この候補は外観や名称の似方で機能を補わず、メーカー・型番と選択仕様を確定してから、SD・TFそれぞれの対応範囲を確認する必要があります。",
-      "h3": "SD・TF対応の2in1は製品の特定が先",
-      "ref": "p3"
+      "description": "wnunbgの2in1は、ホワイトのUSB-C接続モデルです。SD・SDHC・SDXCと、microSD・microSDHC・microSDXCのカードスロットを備えると説明されています。OTGと双方向転送にも言及しており、カードの写真や資料を対応端末へ取り込む用途の候補になります。同ブランドの3in1とは異なり、ここで選んでいるのはカード用の2in1です。USB周辺機器をつなぎたい場合は3in1と区別しましょう。5Gbps表記をカードの実効速度や2枚同時使用の保証として扱わないことも大切です。",
+      "h3": "wnunbg 2in1｜カード読み取りに絞ったSD・TF構成",
+      "ref": "p3",
+      "amazon_product_url": "https://www.amazon.co.jp/dp/B0H8NZ5BJF",
+      "amazon_affiliate_url": "https://www.amazon.co.jp/dp/B0H8NZ5BJF?tag=sellemy-22",
+      "rakuten_search_url": "https://search.rakuten.co.jp/search/mall/wnunbg%202in1%20TF%20SD%20Type-C%20%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88/",
+      "yahoo_search_url": "https://shopping.yahoo.co.jp/search?p=wnunbg%202in1%20TF%20SD%20Type-C%20%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88"
     },
     {
-      "description": "USB3.0とOTG機能を記載するType-Cの候補は、USB・SD・TFの3in1として紹介されています。転送規格の表示はありますが、どの接続部に適用されるか、カードを読み取る際の速度がどこまで出るかは示されていません。USBという項目についても端子の形状や用途の説明がなく、USB-Aの端末へ直接接続できる製品と確定することはできません。3in1という数から、三つの接続部を同時に使えるとは判断できません。OTGへの言及も、対応する機種やOS、給電条件を示す情報には不足があります。メーカー名と型番がなく、カード容量やUHS規格も未確認です。この候補ではUSB3.0という表示を実測速度に置き換えず、各接続部の役割と複数使用時の制限を先に照合することが要点になります。",
-      "h3": "USB3.0の3in1は各接続部の役割を確認",
-      "ref": "p4"
+      "description": "wnunbgの3in1は、USB-C接続のSD・TFカードリーダーにUSB周辺機器用ポートを加えたモデルです。カードの読み取りに加え、USBメモリー、キーボード、マウスなどへの対応が説明されています。カードだけでなく周辺機器もつなぐ用途を考えている人向けの構成です。このUSBポートは機器を接続するためのもので、リーダー本体をパソコンのUSB-A端子へ直接挿すプラグとは異なります。3端子の同時使用や給電能力は明示されていないため、多数の機器や電力を必要とする機器の接続を前提に選ばないようにしましょう。",
+      "h3": "wnunbg 3in1｜USB周辺機器用ポートを追加",
+      "ref": "p4",
+      "amazon_product_url": "https://www.amazon.co.jp/dp/B0H8NW6NW2",
+      "amazon_affiliate_url": "https://www.amazon.co.jp/dp/B0H8NW6NW2?tag=sellemy-22",
+      "rakuten_search_url": "https://search.rakuten.co.jp/search/mall/wnunbg%203in1%20USB%20SD%20TF%20%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88/",
+      "yahoo_search_url": "https://shopping.yahoo.co.jp/search?p=wnunbg%203in1%20USB%20SD%20TF%20%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88"
     },
     {
-      "description": "Type-CとLightningへの言及があるSUNTRSIのホワイトは、USB・TF・SDの3in1を掲げています。最大1TB対応、OTG、双方向転送、アプリ不要・設定不要との記載もあります。ただし、1TBがどのカードや接続条件に適用されるかは不明で、すべてのスロットと端末に共通する上限とは確定できません。全スマホ対応という紹介についても、対応OSの版や機種別の制限がなく、手持ちのスマートフォンで使える保証としては扱えません。二種類の端子が一体なのか、付属アダプターを使う構成なのかも確認が必要です。高速や双方向という表現から、USBの転送規格や具体的な読み書き速度を補うことはできません。この候補では端子の構成と最大容量の対象を特定し、使う機種・カード・転送方向の組み合わせを照合したいところです。",
-      "h3": "SUNTRSIは端子と最大1TBの条件を照合",
-      "ref": "p5"
+      "description": "SUNTRSIのホワイトは、SD・microSDとUSB周辺機器用ポートを備える3in1です。USB-C端末への対応に加え、スマートフォンとカード間の双方向転送、専用アプリ不要を商品説明で案内しています。カードとUSB周辺機器の同時認識にも言及しており、カードの取り込み以外にキーボードやUSBメモリーを使う人の比較候補になります。ただし、同時認識は複数機器で同じ速度の読み書きができる保証ではありません。ここではUSB-C端末での用途を比較対象とし、機種やOS、接続機器の消費電力に合うかを確認して選びます。",
+      "h3": "SUNTRSI 3in1｜カードとUSB周辺機器をまとめて扱う",
+      "ref": "p5",
+      "amazon_product_url": "https://www.amazon.co.jp/dp/B0H87RZ19J",
+      "amazon_affiliate_url": "https://www.amazon.co.jp/dp/B0H87RZ19J?tag=sellemy-22",
+      "rakuten_search_url": "https://search.rakuten.co.jp/search/mall/SUNTRSI%203in1%20SD%20TF%20USB%20%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88/",
+      "yahoo_search_url": "https://shopping.yahoo.co.jp/search?p=SUNTRSI%203in1%20SD%20TF%20USB%20%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88"
     },
     {
-      "description": "iPhone17・16・15への対応を掲げるYOFEEPOPは、Type-C接続でSDとmicroSDを扱う候補です。USB3.0とOTG対応の記載もあり、端子に加えて接続先の機種名を手がかりにできます。ただし、各シリーズの対応モデルやOSの版、使用時の条件までは示されていません。USB3.0についても実測速度や測定に使ったカードの情報はなく、エレコムのUHS-I対応候補より速いとは判断できません。SDXCやUHS規格、容量上限、二枚同時使用の可否も未確認です。OTG対応という表示から、SUNTRSIにあるアプリ不要や双方向転送の条件を引き継ぐことはできません。この候補では対応機種名を入口に、手持ちの端末のOSとカードの詳細規格を揃え、読み込み・書き込みそれぞれの条件を確認する対象になります。",
-      "h3": "YOFEEPOPはiPhoneの機種名とUSB3.0を記載",
-      "ref": "p6"
+      "description": "YOFEEPOPは、USB-C接続でSDとmicroSDを扱う2in1モデルです。商品説明は、対応スマートフォンやタブレットへ接続するOTG機能と、小型・軽量の持ち運びやすい構成を案内しています。外出先でカードの写真を確認したり、撮影後に保存データを整理したりする用途の候補です。二種類のカードへの対応を重視して選び、2枚同時使用を前提にはしないようにしましょう。最大5Gbpsという記載は実測のカード読み取り速度ではないため、他の候補より速いと決めず、使うカードと端末の対応条件を優先して比較してください。",
+      "h3": "YOFEEPOP 2in1｜持ち歩くSD・microSDリーダー",
+      "ref": "p6",
+      "amazon_product_url": "https://www.amazon.co.jp/dp/B0H35SKYNW",
+      "amazon_affiliate_url": "https://www.amazon.co.jp/dp/B0H35SKYNW?tag=sellemy-22",
+      "rakuten_search_url": "https://search.rakuten.co.jp/search/mall/YOFEEPOP%20Type-C%20SD%20MicroSD/",
+      "yahoo_search_url": "https://shopping.yahoo.co.jp/search?p=YOFEEPOP%20Type-C%20SD%20MicroSD"
     }
   ],
   "slug": "usb-memory-card-readers",
-  "summary": "エレコムはUSB-C・USB-A、UHS-I、二スロット同時使用を明示しています。ほかにもUSB3.0やスマートフォンへの対応を掲げる候補がありますが、対応OSやカード容量の条件は不足しています。2in1・3in1という名称を同時使用の意味にせず、カード側と端末側の仕様を分けて照合します。"
+  "summary": "USB-CとUSB-Aの両方を使い、SD・microSDを同時に接続したい人にはエレコム。USB-Cでカードを読む用途ならKikoSaka、wnunbg 2in1、YOFEEPOP、USBメモリーなども使うならwnunbg 3in1やSUNTRSIが比較候補です。USB側の通信規格だけでカードの転送速度を順位付けしないことが大切です。",
+  "status": "READY",
+  "publish_allowed": false,
+  "migration_acceptance": {
+    "source": "Sellemy final-consolidated-handoff-0336",
+    "review_type": "working-article-content-accepted",
+    "note": "publication is directed by site owner; previous draft workflow status no longer controls migration"
+  }
 }

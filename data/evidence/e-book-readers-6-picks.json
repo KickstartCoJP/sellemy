@@ -57,8 +57,8 @@
       "product_id": "AMZ-B0CX8Y3CMG",
       "asin": "B0CX8Y3CMG",
       "amazon_title": "Amazon Kindle Colorsoft シグニチャーエディション | 32GBストレージ、防水、7インチカラーディスプレイ、色調調節ライト、最大8週間持続バッテリー、広告無し、メタリックブラック (2025年発売)",
-      "brand": "ブランド: Amazon",
-      "image_url": "https://m.media-amazon.com/images/I/818j1AMHBIL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "brand": "Amazon",
+      "image_url": "https://m.media-amazon.com/images/I/818j1AMHBIL._AC_SL1500_.jpg",
       "observed_price": 44980,
       "discovery_score": 1,
       "selection_score": 1.06,
@@ -67,15 +67,21 @@
         "display",
         "storage"
       ],
-      "search_key": "Amazon Kindle Colorsoft シグニチャーエディション |"
+      "search_key": "Amazon Kindle Colorsoft シグニチャーエディション |",
+      "selected_variant": {
+        "colour": "メタリックブラック",
+        "storage": "32GB",
+        "package": "本体のみ、Kindle Unlimited3ヵ月付帯なし",
+        "count": 1
+      }
     },
     {
       "ref": "p2",
       "product_id": "AMZ-B0GD6Q4HJN",
       "asin": "B0GD6Q4HJN",
       "amazon_title": "Bigme B7 Pro 7インチ 電子書籍リーダー, 8GB RAM/256GB ROM, 4G LTE対応, Android 14搭載 カラー電子ペーパーディスプレイ, Dimensity 1080 オクタコアプロセッサー (緑)",
-      "brand": "Bigmeのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/61G3xR9XsjL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "brand": "Bigme",
+      "image_url": "https://m.media-amazon.com/images/I/61G3xR9XsjL._AC_SL1500_.jpg",
       "observed_price": 69000,
       "discovery_score": 1,
       "selection_score": 0.52,
@@ -83,15 +89,21 @@
         "display",
         "storage"
       ],
-      "search_key": "Bigme B7 Pro 7インチ 電子書籍リーダー, 8GB RAM/25"
+      "search_key": "Bigme B7 Pro 7インチ 電子書籍リーダー, 8GB RAM/25",
+      "selected_variant": {
+        "colour": "緑",
+        "memory": "8GB",
+        "storage": "256GB",
+        "count": 1
+      }
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0H7RCX7N3",
-      "asin": "B0H7RCX7N3",
-      "amazon_title": "Atyhao 5.7インチHD画面搭載電子書籍リーダー 8MPカメラ内蔵スピーカー付き 16GB対応Android 8.1 Wi-Fi Bluetooth GPS対応 マルチメディア27",
-      "brand": "Atyhaoのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/61fa8ccNIgL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0FPL3M2CP",
+      "asin": "B0FPL3M2CP",
+      "amazon_title": "BOOX Go 7電子書籍リーダー 7インチ 白黒 64GB 300ppi Android 13 フロントライト BT WiFi (ブラック)",
+      "brand": "BOOX",
+      "image_url": "https://m.media-amazon.com/images/I/71+UxIDaqKL._AC_SL1282_.jpg",
       "observed_price": 9204,
       "discovery_score": 1,
       "selection_score": 0.47,
@@ -99,15 +111,21 @@
         "display",
         "storage"
       ],
-      "search_key": "Atyhao 5.7インチHD画面搭載電子書籍リーダー 8MPカメラ内蔵スピー"
+      "search_key": "Atyhao 5.7インチHD画面搭載電子書籍リーダー 8MPカメラ内蔵スピー",
+      "selected_variant": {
+        "colour": "ブラック",
+        "display": "白黒",
+        "storage": "64GB",
+        "count": 1
+      }
     },
     {
       "ref": "p4",
       "product_id": "AMZ-B0GY4MWDV9",
       "asin": "B0GY4MWDV9",
       "amazon_title": "XTEINK X3 電子書籍リーダー 3.7インチ E-Ink搭載 58g軽量 カードサイズ 16GB内蔵 SD対応 ミストレグレー",
-      "brand": "XTEINKのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/51FaBHkohdL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "brand": "XTEINK",
+      "image_url": "https://m.media-amazon.com/images/I/51FaBHkohdL._AC_SL1500_.jpg",
       "observed_price": 11119,
       "discovery_score": 1,
       "selection_score": 0.47,
@@ -115,33 +133,50 @@
         "display",
         "storage"
       ],
-      "search_key": "XTEINK X3 電子書籍リーダー 3.7インチ E-Ink搭載 58g軽量"
+      "search_key": "XTEINK X3 電子書籍リーダー 3.7インチ E-Ink搭載 58g軽量",
+      "selected_variant": {
+        "colour": "ミストグレー",
+        "storage": "16GB",
+        "count": 1
+      }
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0FX88JH7K",
-      "asin": "B0FX88JH7K",
-      "amazon_title": "【セット買い】Amazon Kindle Colorsoft シグニチャーエディション【純正 植物性レザーカバー (ブラック) + 保護フィルム セット】",
-      "brand": "ブランド: Amazon",
-      "image_url": "https://m.media-amazon.com/images/I/818j1AMHBIL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0FRSDQ9JN",
+      "asin": "B0FRSDQ9JN",
+      "amazon_title": "Kobo Clara Colour カラー 電子書籍リーダー 6インチ 防水 ホワイト",
+      "brand": "Rakuten Kobo",
+      "image_url": "https://m.media-amazon.com/images/I/51dz1BzZOwL._AC_SL1000_.jpg",
       "observed_price": 52540,
       "discovery_score": 1,
       "selection_score": 0.4,
       "matched_comparison_axes": [],
-      "search_key": "Amazon Kindle Colorsoft シグニチャーエディション"
+      "search_key": "Amazon Kindle Colorsoft シグニチャーエディション",
+      "selected_variant": {
+        "colour": "ホワイト",
+        "display": "カラー6インチ",
+        "storage": "16GB",
+        "count": 1
+      }
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0FX87SND3",
-      "asin": "B0FX87SND3",
-      "amazon_title": "【セット買い】Amazon Kindle Colorsoft【純正 植物性レザーカバー (ブラック) + 保護フィルム セット】",
-      "brand": "ブランド: Amazon",
-      "image_url": "https://m.media-amazon.com/images/I/71TSGT8v5mL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0CGVXN52X",
+      "asin": "B0CGVXN52X",
+      "amazon_title": "PocketBook Verse Pro E-Reader Waterproof | Eye-Friendly 6'' E-Ink Carta™ HD Touchscreen | Audio-Book & E-Book Reader | Text-to-Speech Function | SMARTlight | 16GB | WiFi & Bluetooth | Azure",
+      "brand": "PocketBook",
+      "image_url": "https://m.media-amazon.com/images/I/51XAWTOHLHL._AC_SL1024_.jpg",
       "observed_price": 47209,
       "discovery_score": 1,
       "selection_score": 0.4,
       "matched_comparison_axes": [],
-      "search_key": "Amazon Kindle Colorsoft"
+      "search_key": "Amazon Kindle Colorsoft",
+      "selected_variant": {
+        "colour": "Azure",
+        "display": "白黒6インチ",
+        "storage": "16GB",
+        "count": 1
+      }
     }
   ]
 }

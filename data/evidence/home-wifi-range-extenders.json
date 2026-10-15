@@ -40,39 +40,49 @@
   "eyecatch_image": "https://www.sellemy.jp/img/home-wifi-range-extenders/home-wifi-range-extenders.png",
   "products": [
     {
-      "amazon_title": "エレコム WiFi 無線LAN 中継器 Wi-Fi6 11ax 2402＋574Mbps コンセント直挿し EasyMesh対応 離れ家モード搭載 ホワイト WTC-W602-W",
-      "asin": "B0GLMXSFV5",
-      "brand": "",
+      "amazon_title": "エレコム 無線LAN中継器/11ax.ac.n.a.g.b/1201+574Mbps/ホワイト",
+      "asin": "B09HBHJGV1",
+      "brand": "エレコム",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/516eXTcKo7L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51WaObHkIoL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "placement_and_interfaces"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0GLMXSFV5",
+      "product_id": "AMZ-B09HBHJGV1",
       "ref": "p1",
       "search_key": "エレコム WiFi 無線LAN 中継器 Wi-Fi6 11ax",
-      "selection_score": 0.48
+      "selection_score": 0.48,
+      "selected_variant": {
+        "model_number": "WTC-X1800GC-W",
+        "color": "ホワイト",
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "【2点セット【Amazon.co.jp限定】】バッファロー WiFi 無線LAN 中継機 Wi-Fi 6 11ax / 11ac 4803 + 573Mbps Easy Mesh 対応 WEX-5400AX6/N + WiFi ルーター 無線 LAN Wi-Fi 7 11be デュアルバンド 2882+688Mbps WSR3600BE4P/NBK",
-      "asin": "B0FX8ND1KV",
-      "brand": "",
+      "amazon_title": "【Amazon.co.jp限定】 バッファロー WiFi 無線LAN 中継機 Wi-Fi 6 11ax / 11ac 4803 + 573Mbps Easy Mesh 対応 【iPhone 15 / 14 / 13 / iPhone SE(第三世代) メーカー動作確認済み 】 エコパッケージ WEX-5400AX6/N",
+      "asin": "B0BJTSFN8Z",
+      "brand": "バッファロー",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/41Eh7LkuNLL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/41J3z24XTrL._AC_SL1000_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0FX8ND1KV",
+      "product_id": "AMZ-B0BJTSFN8Z",
       "ref": "p2",
       "search_key": "】バッファロー WiFi 無線LAN 中継機 Wi-Fi 6 1",
-      "selection_score": 0.3
+      "selection_score": 0.3,
+      "selected_variant": {
+        "model_number": "WEX-5400AX6/N",
+        "package": "エコパッケージ単品",
+        "pack_count": 1
+      }
     },
     {
       "amazon_title": "バッファロー Wi-Fi 6 中継機 2401+573Mbps EasyMesh コンセント直挿し 内蔵アンテナ WEX-3000AX4/N",
       "asin": "B0DJVBC15T",
-      "brand": "",
+      "brand": "バッファロー",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51zZkUsVouL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51zZkUsVouL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "placement_and_interfaces"
       ],
@@ -80,29 +90,39 @@
       "product_id": "AMZ-B0DJVBC15T",
       "ref": "p3",
       "search_key": "バッファロー Wi-Fi 6 中継機 2401+573Mbps",
-      "selection_score": 0.3
+      "selection_score": 0.3,
+      "selected_variant": {
+        "model": "WEX-3000AX4/N",
+        "style": "内蔵アンテナ",
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "バッファロー Wi-Fi 6 中継機 2401+573Mbps EasyMesh コンセント直挿し 外付けアンテナ WEX-3000AX4EA/N",
-      "asin": "B0DJV98JTL",
-      "brand": "",
+      "amazon_title": "TP-Link Wi-Fi 無線LAN 中継器 Wi-Fi6 対応 2402 + 574Mbps 11ax/ac APモード HE160 ブリッジモードギガ有線LANポート RE705X/A",
+      "asin": "B0BH7Y3SDB",
+      "brand": "TP-Link",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51OzTAVVrxL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/31v4p9pX+5L._AC_SL1000_.jpg",
       "matched_comparison_axes": [
         "placement_and_interfaces"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0DJV98JTL",
+      "product_id": "AMZ-B0BH7Y3SDB",
       "ref": "p4",
       "search_key": "バッファロー Wi-Fi 6 中継機 2401+573Mbps",
-      "selection_score": 0.3
+      "selection_score": 0.3,
+      "selected_variant": {
+        "model_number": "RE705X/A",
+        "standard": "Wi-Fi6 AX3000",
+        "pack_count": 1
+      }
     },
     {
       "amazon_title": "バッファロー Wi-Fi 5 中継機 866+300Mbps コンセント直挿し WEX-1166DHPL/N",
       "asin": "B0D2NXKK3X",
-      "brand": "",
+      "brand": "バッファロー",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61+hqTatFML._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61+hqTatFML._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "placement_and_interfaces"
       ],
@@ -110,14 +130,19 @@
       "product_id": "AMZ-B0D2NXKK3X",
       "ref": "p5",
       "search_key": "バッファロー Wi-Fi 5 中継機 866+300Mbps コ",
-      "selection_score": 0.3
+      "selection_score": 0.3,
+      "selected_variant": {
+        "model": "WEX-1166DHPL/N",
+        "year": 2024,
+        "pack_count": 1
+      }
     },
     {
       "amazon_title": "TP-Link Wi-Fi 無線LAN 中継器 wifi中継機 Wi-Fi6 対応 1201 + 300Mbps 11ax APモード メッシュWiFi ：EasyMesh対応 ギガ有線LANポート RE500X/A",
       "asin": "B0CRHFHHMM",
-      "brand": "",
+      "brand": "TP-Link",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51BjohqGI8L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51BjohqGI8L._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "placement_and_interfaces"
       ],
@@ -125,7 +150,12 @@
       "product_id": "AMZ-B0CRHFHHMM",
       "ref": "p6",
       "search_key": "TP-Link Wi-Fi 無線LAN 中継器 wifi中継機",
-      "selection_score": 0.3
+      "selection_score": 0.3,
+      "selected_variant": {
+        "model": "RE500X/A",
+        "standard": "AX1500 Wi-Fi6",
+        "pack_count": 1
+      }
     }
   ],
   "selection": {
