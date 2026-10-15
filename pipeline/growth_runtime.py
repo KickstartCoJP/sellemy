@@ -589,9 +589,14 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
         selected, selection = select_six(products, topic, load_feedback())
         evidence = build_evidence(topic, selected, selection)
         prior=read_artifact(slug,'evidence.json',{})
-        from comparison_acceptance import digest, evidence_content
+        from comparison_acceptance import digest
+        def semantic_source_fingerprint(value):
+            records=sorted(({'asin':item.get('asin'),'title':item.get('amazon_title'),
+                             'brand':item.get('brand'),'sources':item.get('sources',[])}
+                            for item in value.get('products',[])),key=lambda row:str(row['asin']))
+            return digest({'comparison_axes':value.get('comparison_axes'),'products':records})
         if (prior.get('product_acceptance') and product_issues(prior)
-                and digest(evidence_content(prior)) == digest(evidence_content(evidence))):
+                and semantic_source_fingerprint(prior) == semantic_source_fingerprint(evidence)):
             request_product_reselection(slug,['unchanged evidence from previously rejected independent semantic review'])
             raise GrowthRuntimeError(f'needs_product_reselection for {slug}; exact evidence unchanged')
         evidence['product_acceptance'] = independent_review(evidence)
