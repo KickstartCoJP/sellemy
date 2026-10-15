@@ -644,6 +644,34 @@ def _execute_job(slug: str, result: dict, *, cache_only: bool = False) -> str:
         raise GrowthRuntimeError(f'non-retryable recovery state for {slug}: {stage}')
 
 
+def _reconcile_ceo_audit_delivery(result: dict) -> None:
+    """Idempotent delivery retry for selected published articles; never blocks production."""
+    from operating_profile import normal_profile
+    if not normal_profile():
+        return
+    config=json.loads((ROOT/'config/operating-profile.json').read_text())
+    if config.get('postpublish_ceo_enabled') is not True:
+        return
+    from ceo_audit_bridge import submit_postpublish_audit
+    for job in all_jobs():
+        slug=job.get('slug')
+        if job.get('status')!='PUBLISHED' or job.get('operating_profile')!='normal' or not slug:
+            continue
+        selected=read_artifact(slug,'postpublish-ceo-selection.json',None)
+        if not selected or read_artifact(slug,'postpublish-ceo-delivered.json',None):
+            continue
+        try:
+            receipt=submit_postpublish_audit(
+                sample=selected, category=job['category'],
+                product_evidence_ref=str(job_dir(slug)/'evidence.json'),
+                article_file_path=str(ROOT/'article'/job['category']/(slug+'.html')))
+            write_artifact(slug,'postpublish-ceo-delivered.json',receipt)
+            result.setdefault('postpublish_ceo_deliveries',[]).append(receipt)
+        except Exception as exc:
+            result.setdefault('postpublish_ceo_delivery_errors',[]).append({
+                'slug':slug,'error_type':type(exc).__name__})
+
+
 def _post_publish(adaptive: AdaptivePublishController, result: dict, slug: str, commit: str) -> None:
     # CEO audit is a POST-publication observation, never a publish authorization.
     # Preserve a journal receipt in the existing job; actual Portal dispatch requires
@@ -660,13 +688,7 @@ def _post_publish(adaptive: AdaptivePublishController, result: dict, slug: str, 
             if selected:
                 selected_slug=selected['slug']
                 write_artifact(selected_slug,'postpublish-ceo-selection.json',selected)
-                if policy.get('postpublish_ceo_enabled') is True:
-                    from ceo_audit_bridge import submit_postpublish_audit
-                    selected_state=load_job(selected_slug)
-                    result['postpublish_ceo_task']=submit_postpublish_audit(
-                        sample=selected, category=selected_state['category'],
-                        product_evidence_ref=str(job_dir(selected_slug) / 'evidence.json'),
-                        article_file_path=str(ROOT / 'article' / selected_state['category'] / (selected_slug+'.html')))
+                _reconcile_ceo_audit_delivery(result)
     except Exception as audit_exc:
         result['postpublish_ceo_selection_error']=f'{type(audit_exc).__name__}: {audit_exc}'
     try:
@@ -740,6 +762,10 @@ def run(
                                 result.setdefault('ceo_inspection_errors',[]).append(f'{name}:{type(exc).__name__}:{exc}')
         except Exception as exc:
             result['ceo_inspection_reconcile_error']=f'{type(exc).__name__}:{exc}'
+    try:
+        _reconcile_ceo_audit_delivery(result)
+    except Exception as exc:
+        result['postpublish_ceo_reconcile_error']=type(exc).__name__
     adaptive = controller or AdaptivePublishController(ROOT)
     try:
         controller_state = adaptive.current_state()
