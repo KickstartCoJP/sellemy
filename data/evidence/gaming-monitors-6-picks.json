@@ -56,8 +56,8 @@
       "product_id": "AMZ-B0GGZ49QMY",
       "asin": "B0GGZ49QMY",
       "amazon_title": "KEY TO COMBAT 27インチ WQHD 240Hz ゲーミングモニター FAST IPS HDR400 sRGB100% DCI-P3 95% Adaptive-Sync ブルーライトカット スピーカー付き RGBライト付き 多角度調整 VESAマウント対応 KTC モニター H27E6S",
-      "brand": "KEY TO COMBATのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/71um3RXhAyL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "brand": "KTC",
+      "image_url": "https://m.media-amazon.com/images/I/71um3RXhAyL._AC_SL1500_.jpg",
       "observed_price": 26980,
       "discovery_score": 1,
       "selection_score": 1.06,
@@ -66,15 +66,21 @@
         "refresh",
         "resolution"
       ],
-      "search_key": "KEY TO COMBAT 27インチ WQHD 240Hz ゲーミングモニター FAST"
+      "search_key": "KEY TO COMBAT 27インチ WQHD 240Hz ゲーミングモニター FAST",
+      "selected_variant": {
+        "size": "27型",
+        "resolution": "WQHD",
+        "colour": "前面ブラック／背面ホワイト（商品画像の配色）",
+        "count": 1
+      }
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0GWQWWP4Z",
-      "asin": "B0GWQWWP4Z",
-      "amazon_title": "KTC 27インチ ゲーミングモニター WQHD 240Hz Fast IPS HDR400 H27E6S",
-      "brand": "KTCのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/71kQ5QvJ98L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0CYSF13MW",
+      "asin": "B0CYSF13MW",
+      "amazon_title": "MSI ゲーミングモニター G274QPX 27インチ/WQHD/RAPID IPSパネル/240Hz/1ms(GTG)/G-SYNC Compatible/DisplayHDR 400/HDMI/DP/USB Type-C(最大65W)/縦横回転・高さ調整/メーカー3年保証",
+      "brand": "MSI",
+      "image_url": "https://m.media-amazon.com/images/I/61t04dTiY6L._AC_SL1200_.jpg",
       "observed_price": 27980,
       "discovery_score": 1,
       "selection_score": 0.52,
@@ -83,45 +89,63 @@
         "refresh",
         "resolution"
       ],
-      "search_key": "KTC 27インチ ゲーミングモニター WQHD 240Hz Fast"
+      "search_key": "KTC 27インチ ゲーミングモニター WQHD 240Hz Fast",
+      "selected_variant": {
+        "size": "27型",
+        "resolution": "WQHD",
+        "colour": "ブラック",
+        "count": 1
+      }
     },
     {
       "ref": "p3",
       "product_id": "AMZ-B0F7X3VJ99",
       "asin": "B0F7X3VJ99",
       "amazon_title": "IODATA GigaCrysta ゲーミングモニター 27型 WQHD 200Hz MiniLED (HDMI/DP) EX-GDQ271JLAQ",
-      "brand": "アイオーデータのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/81+j7k-BLoL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "brand": "I-O DATA",
+      "image_url": "https://m.media-amazon.com/images/I/81+j7k-BLoL._AC_SL1500_.jpg",
       "observed_price": 49800,
       "discovery_score": 1,
       "selection_score": 0.52,
       "matched_comparison_axes": [
         "resolution"
       ],
-      "search_key": "アイオーデータ IODATA GigaCrysta ゲーミングモニター 27型"
+      "search_key": "アイオーデータ IODATA GigaCrysta ゲーミングモニター 27型",
+      "selected_variant": {
+        "size": "27型",
+        "resolution": "WQHD",
+        "package": "MiniLEDモデル単品",
+        "count": 1
+      }
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0HCZND2CP",
-      "asin": "B0HCZND2CP",
-      "amazon_title": "24インチ モニター IPSパネル 1K FHD 1920×1080 200Hz 1ms 広視野角178° HDR FreeSync G-Sync互換 低ブルーライト ディスプレイ ゲーミングモニター PCモニター HDMI2.0*1 DP1.4*1 VESA75×75mm 在宅勤務 事務用 ゲーム用 Switch PS4 PS5 X-BOX",
-      "brand": "OYCSのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/81sohZydULL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0DT3NLNCC",
+      "asin": "B0DT3NLNCC",
+      "amazon_title": "BenQ MOBIUZ EX251 24.5インチ IPS フルHD 220Hz 1ms ゲーミングモニター",
+      "brand": "BenQ",
+      "image_url": "https://m.media-amazon.com/images/I/71q5w8TChKL._AC_SL1500_.jpg",
       "observed_price": 13999,
       "discovery_score": 1,
       "selection_score": 0.47,
       "matched_comparison_axes": [
         "panel"
       ],
-      "search_key": "OYCS 24インチ モニター IPSパネル 1K FHD 1920×10"
+      "search_key": "OYCS 24インチ モニター IPSパネル 1K FHD 1920×10",
+      "selected_variant": {
+        "size": "24.5型",
+        "resolution": "フルHD",
+        "package": "EX251単品",
+        "count": 1
+      }
     },
     {
       "ref": "p5",
       "product_id": "AMZ-B0D95RTDF8",
       "asin": "B0D95RTDF8",
       "amazon_title": "cocopar モニター 24.5インチ 白 Type-C 200Hz ゲーミングモニター 無輝点保証 65W急速充電 120%sRGB広色域 350nit高輝度 1ms 1080p 非光沢IPS VESA対応 角度調整 HDMI DP FreeSync/HDR/チルト/スピーカー内蔵 180Hz/165Hz/144Hz/120Hz ホワイト HG-245HCW",
-      "brand": "cocoparのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/61dIGiApJJL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "brand": "cocopar",
+      "image_url": "https://m.media-amazon.com/images/I/61dIGiApJJL._AC_SL1000_.jpg",
       "observed_price": 20999,
       "discovery_score": 1,
       "selection_score": 0.47,
@@ -129,22 +153,34 @@
         "panel",
         "refresh"
       ],
-      "search_key": "cocopar モニター 24.5インチ 白 Type-C 200Hz ゲーミン"
+      "search_key": "cocopar モニター 24.5インチ 白 Type-C 200Hz ゲーミン",
+      "selected_variant": {
+        "size": "24.5型",
+        "resolution": "フルHD",
+        "colour": "ホワイト",
+        "count": 1
+      }
     },
     {
       "ref": "p6",
       "product_id": "AMZ-B0GZ4765RY",
       "asin": "B0GZ4765RY",
       "amazon_title": "LG ゲーミング モニター 25G550B-B 24.5インチ/フルHD/300Hz/IPS/GTG 1ms/HDMI×2、DP/多機能スタンド",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71Uvt9ZLt1L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "brand": "LG",
+      "image_url": "https://m.media-amazon.com/images/I/71Uvt9ZLt1L._AC_SL1500_.jpg",
       "observed_price": 29800,
       "discovery_score": 1,
       "selection_score": 0.4,
       "matched_comparison_axes": [
         "panel"
       ],
-      "search_key": "LG ゲーミング モニター 25G550B-B 24.5インチ"
+      "search_key": "LG ゲーミング モニター 25G550B-B 24.5インチ",
+      "selected_variant": {
+        "size": "24.5型",
+        "resolution": "フルHD",
+        "colour": "ブラック",
+        "count": 1
+      }
     }
   ]
 }
