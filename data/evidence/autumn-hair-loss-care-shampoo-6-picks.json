@@ -52,89 +52,101 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0DT9R5RM3",
-      "asin": "B0DT9R5RM3",
-      "amazon_title": "YOLU ヨル シャンプー トリートメント セット カームナイトリペア 集中補修 摩擦軽減 ダメージケア 保湿 地肌ケア ネロリ&ピオニー",
-      "brand": "YOLU(ヨル)のストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/81eZVQxBw+L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B00BB6P6GA",
+      "asin": "B00BB6P6GA",
+      "amazon_title": "キュレル シャンプー ポンプ420mL",
+      "brand": "花王 キュレル",
+      "image_url": "https://m.media-amazon.com/images/I/61Jf5rdHJUS._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": 3080,
       "discovery_score": 1,
       "selection_score": 0.66,
       "matched_comparison_axes": [
         "scalp_care"
       ],
-      "search_key": "YOLU(ヨル) YOLU ヨル シャンプー トリートメント セット カームナイト"
+      "search_key": "YOLU(ヨル) YOLU ヨル シャンプー トリートメント セット カームナイト",
+      "model": "キュレル シャンプー",
+      "selected_variant": "本体ポンプ420mL"
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0C3BVXYNJ",
-      "asin": "B0C3BVXYNJ",
-      "amazon_title": "［サロン級美髪］Q+ クオリタス シャンプー トリートメント セット ヘアケアトラベルセット (ダメージケア/400ml/フルーティフローラル)",
-      "brand": "クオリタスのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/6181YeB745L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B07ZB81Q8J",
+      "asin": "B07ZB81Q8J",
+      "amazon_title": "haru kurokamiスカルプ（オリジナル）400mL",
+      "brand": "haru",
+      "image_url": "https://m.media-amazon.com/images/I/61+vMDxaz-L._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": 2996,
       "discovery_score": 1,
       "selection_score": 0.61,
       "matched_comparison_axes": [
         "scent"
       ],
-      "search_key": "クオリタス ［サロン級美髪］Q+ クオリタス シャンプー トリートメント セ"
+      "search_key": "クオリタス ［サロン級美髪］Q+ クオリタス シャンプー トリートメント セ",
+      "model": "haru kurokamiスカルプ オリジナル",
+      "selected_variant": "400mL・オリジナル"
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B094Y11QWH",
-      "asin": "B094Y11QWH",
-      "amazon_title": "【DALEAF】 クロレラシャンプー 500ml ㅣ 抜け毛対策 頭皮ケア ヘアケア スカルプシャンプー 植物由来 低刺激 ディープクレンジング 毛根強化 毛根ケア",
-      "brand": "daleafのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/51shxdkK3yL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0HF76N3M1",
+      "asin": "B0HF76N3M1",
+      "amazon_title": "コラージュフルフル ネクストシャンプー すっきりさらさら400mL おまけ付き",
+      "brand": "持田ヘルスケア",
+      "image_url": "https://m.media-amazon.com/images/I/71qP1Av7ftL._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": 1999,
       "discovery_score": 1,
       "selection_score": 0.61,
       "matched_comparison_axes": [
         "cleansing"
       ],
-      "search_key": "daleaf クロレラシャンプー 500ml ㅣ 抜け毛対策 頭皮ケア ヘアケ"
+      "search_key": "daleaf クロレラシャンプー 500ml ㅣ 抜け毛対策 頭皮ケア ヘアケ",
+      "model": "コラージュフルフル ネクストシャンプー",
+      "selected_variant": "すっきりさらさらタイプ 本体400mL・おまけ付き"
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0DT9S8Y8M",
-      "asin": "B0DT9S8Y8M",
-      "amazon_title": "YOLU ヨル シャンプー トリートメント セット 詰め替え 大容量 カームナイトリペア 【通常品詰替3個分】 ＊",
-      "brand": "YOLU(ヨル)のストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/91B5MeuVXmL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0746CRZ5Z",
+      "asin": "B0746CRZ5Z",
+      "amazon_title": "スカルプD ボーテ ナチュラスター スカルプシャンプー350mL",
+      "brand": "アンファー",
+      "image_url": "https://m.media-amazon.com/images/I/71xfm8eXApL._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": 6600,
       "discovery_score": 1,
       "selection_score": 0.54,
       "matched_comparison_axes": [
         "price"
       ],
-      "search_key": "YOLU(ヨル) YOLU ヨル シャンプー トリートメント セット 詰め替え 大"
+      "search_key": "YOLU(ヨル) YOLU ヨル シャンプー トリートメント セット 詰め替え 大",
+      "model": "スカルプD ボーテ ナチュラスター シャンプー",
+      "selected_variant": "350mL・ペア＆リリー"
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0F9CP7Q8X",
-      "asin": "B0F9CP7Q8X",
-      "amazon_title": "haru(ハル) 薬用 スカルプエッセンス100 3個セット 130ml（約2ヶ月分） 医薬部外品 育毛剤 女性用 レディース育毛剤",
-      "brand": "HARU(ハル)のストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/71yFiqCtXML._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B013FIYEN2",
+      "asin": "B013FIYEN2",
+      "amazon_title": "ミノン薬用ヘアシャンプー 450mL",
+      "brand": "第一三共ヘルスケア ミノン",
+      "image_url": "https://m.media-amazon.com/images/I/61pijDQlomL._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": 11045,
       "discovery_score": 1,
       "selection_score": 0.48,
       "matched_comparison_axes": [],
-      "search_key": "HARU(ハル) 薬用 スカルプエッセンス100 3個セット 130ml（約2ヶ月"
+      "search_key": "HARU(ハル) 薬用 スカルプエッセンス100 3個セット 130ml（約2ヶ月",
+      "model": "ミノン 薬用ヘアシャンプー",
+      "selected_variant": "本体450mL"
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0DS1QHPG4",
-      "asin": "B0DS1QHPG4",
-      "amazon_title": "[more than 8] スカルプ シャンプー | ふんわり さらさら 頭皮環境を整える | マツタケエキス配合 ヴィーガン処方 ノンシリコン 韓国ヘアケア | 300ml",
-      "brand": "Morethan8のストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/61EErR+H67L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B09X1DC1YZ",
+      "asin": "B09X1DC1YZ",
+      "amazon_title": "メディクイックH 頭皮のメディカルシャンプー 本体200mL×2個",
+      "brand": "ロート製薬",
+      "image_url": "https://m.media-amazon.com/images/I/81ullD9Hg3L._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": 3423,
       "discovery_score": 1,
       "selection_score": 0.48,
       "matched_comparison_axes": [],
-      "search_key": "Morethan8 スカルプ シャンプー | ふんわり さらさら 頭皮環境を整える"
+      "search_key": "Morethan8 スカルプ シャンプー | ふんわり さらさら 頭皮環境を整える",
+      "model": "メディクイックH 頭皮のメディカルシャンプー",
+      "selected_variant": "すっきりタイプ・本体200mL×2個・リフレッシュシトラス"
     }
   ]
 }

@@ -38,86 +38,141 @@
   "eyecatch_image": "https://www.sellemy.jp/img/electric-air-dusters/electric-air-dusters.png",
   "products": [
     {
-      "amazon_title": "電動エアダスター エアダスター 充電式【2026業界超強風革新版！吹くだけで完全清掃！爆風ブロワー150m/s・380,000RPM・無段階風量調整・120分連続稼働 】コードレス充電版 3種類ノズル付き 洗車 小型 軽量 Type-C充電式 車内清掃/PC掃除/パソコン/キーボード用/空気入れ/家庭掃除 日本語説明書",
-      "asin": "B0HGR4RN7F",
-      "brand": "",
+      "amazon_title": "サンワサプライ 電動エアダスター AC電源 42m/s 風量 無段階調整 連続15分 逆さ対応 3mコード 3種ノズル CD-ADE8BK",
+      "asin": "B0FTSFHNSZ",
+      "brand": "サンワサプライ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71pbMBADf1L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51y2esj0nWL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "power_maintenance"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0HGR4RN7F",
+      "product_id": "AMZ-B0FTSFHNSZ",
       "ref": "p1",
       "search_key": "電動エアダスター エアダスター 充電式【2026業界超強風革新版",
-      "selection_score": 0.505
+      "selection_score": 0.505,
+      "selected_variant": {
+        "current_selection_text": "",
+        "overview": "ブランド サンワサプライ(Sanwa Supply) メーカー サンワサプライ 商品の個数 1",
+        "selected_detail_fields": [
+          {
+            "field": "商品の個数",
+            "value": "商品の個数 1"
+          }
+        ]
+      }
     },
     {
-      "amazon_title": "エアダスター 軽量で携帯しやすく、複数の接続が可能なヘッドアクセサリーは、キーボードやパソコン本体の隙間からほこりを除去するのに適しています。",
-      "asin": "B0HHD85YZJ",
-      "brand": "",
+      "amazon_title": "サンワダイレクト 電動エアダスター AC電源 強力 ノズル3種類付属 ケーブル長3m PC 掃除 200-CD079",
+      "asin": "B0BV5RHNM1",
+      "brand": "サンワダイレクト",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/41o4mg51J0L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61rNsczA1yL._AC_SL1280_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0HHD85YZJ",
+      "product_id": "AMZ-B0BV5RHNM1",
       "ref": "p2",
       "search_key": "エアダスター 軽量で携帯しやすく、複数の接続が可能なヘッドアクセ",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "model_number": "200-CD079",
+        "color": "ブラック",
+        "power": "AC100V",
+        "pack_count": 1,
+        "package": "本体・ノズル3種類・3m電源コード"
+      }
     },
     {
-      "amazon_title": "エアダスター軽量ボディ、複数の交換可能なヘッド、多様なシーンに対応した隙間のほこり掃除ツール",
-      "asin": "B0HHCVN6BY",
-      "brand": "",
+      "amazon_title": "エレコム 電動エアダスター 充電式 強力 3段階風量調整 LEDライト付き 部位別ブラシ付き AD-ALB01BK",
+      "asin": "B0DJDZ86MD",
+      "brand": "エレコム",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/413L5U1QhZL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51rX+W9xAqL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0HHCVN6BY",
+      "product_id": "AMZ-B0DJDZ86MD",
       "ref": "p3",
       "search_key": "エアダスター軽量ボディ、複数の交換可能なヘッド、多様なシーンに対",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "current_selection_text": "",
+        "overview": "ブランド エレコム(ELECOM) 商品の重量 420 グラム 商品の寸法 11幅 x 21高さ cm パック数 1 メーカー エレコム",
+        "selected_detail_fields": []
+      }
     },
     {
-      "amazon_title": "エアダスター 電動 ブロワー 300000RPM高速回転 洗車 小型 軽量 車内清掃/PC掃除/キーボード用/空気入れ/家庭掃除",
-      "asin": "B0HCZ6N3MM",
-      "brand": "",
+      "amazon_title": "ナカバヤシ電動エアダスター充電式 ブラック DAD-101BK 1台 top1-ds-2590373 [独自簡易包装]",
+      "asin": "B0F948XYRS",
+      "brand": "ナカバヤシ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61ovHRFxRXL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/31LC6R5NpDL._AC_SY300_SX300_QL70_ML2_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0HCZ6N3MM",
+      "product_id": "AMZ-B0F948XYRS",
       "ref": "p4",
       "search_key": "エアダスター 電動 ブロワー 300000RPM高速回転 洗車",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "current_selection_text": "",
+        "overview": "",
+        "selected_detail_fields": []
+      }
     },
     {
-      "amazon_title": "AAL エアダスター 電動エアダスター【圧巻の風速150m/s·LEDライト搭載】 ブロワー 小型 強力 300000RPM高速回転 5種類ノズル付き",
-      "asin": "B0H6SDNHH9",
-      "brand": "",
+      "amazon_title": "マキタ(Makita) 充電式エアダスタ 18V バッテリ・充電器・ケース別売 AS180DZ",
+      "asin": "B0BZHKNHHV",
+      "brand": "マキタ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/81MnRle4rUL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51BsYpXo0sL._AC_SY300_SX300_QL70_ML2_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0H6SDNHH9",
+      "product_id": "AMZ-B0BZHKNHHV",
       "ref": "p5",
       "search_key": "AAL エアダスター 電動エアダスター ブロワー 小型 強力 3",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "current_selection_text": "",
+        "overview": "",
+        "selected_detail_fields": [
+          {
+            "field": "梱包サイズ",
+            "value": "梱包サイズ ‎27.4 x 19.6 x 15.9 cm; 1.5 kg"
+          },
+          {
+            "field": "色",
+            "value": "色 ‎青"
+          }
+        ]
+      }
     },
     {
-      "amazon_title": "AAL エアダスター 電動エアダスター 【2026新登場· 圧倒的な風圧 ·LEDライト付き】小型 ブロワー 洗車 300000RPM高速回転 4段階風量調整 5種類ノズル付き ブロアー 充電式 車内/PC掃除/キーボード/洗車用/照明/空気入れ 収納ボックス 日本語取扱説明書",
-      "asin": "B0H1WNMLLD",
-      "brand": "",
+      "amazon_title": "HiKOKI(ハイコーキ) 18V エアダスター 小型 軽量 高風速122m/sc RA18DA 無段階風速調整機能付き 蓄電池・充電器別売り 充電式 エアブローガン エアダスターガン RA18DA (NN)",
+      "asin": "B0BH4HC27D",
+      "brand": "HiKOKI",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/614saKJ3o6L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/41lGVehNGyL._AC_SY300_SX300_QL70_ML2_.jpg",
       "matched_comparison_axes": [
         "power_maintenance"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0H1WNMLLD",
+      "product_id": "AMZ-B0BH4HC27D",
       "ref": "p6",
       "search_key": "AAL エアダスター 電動エアダスター 小型 ブロワー 洗車 3",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "current_selection_text": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. 色: アグレッシブグリーン 色の選択ができます おすすめ出品がない0オプションを見る ← 1 → パターン名: 18V/本体のみ(電池・充電器 別売) パターン名の選択ができます 10.8V/本体のみ(電池・充電器 別売) 18V/本体のみ(電池・充電器 別売) 18V/本体のみ(電池・充電器 別売)+フラットノズル 18V/スターターキット3 セット 18V/スターターキット4 セット",
+        "overview": "ブランド HiKOKI(ハイコーキ) 商品の寸法 9.4幅 x 25高さ cm メーカー HiKOKI(ハイコーキ) ユニット数 1.0 個",
+        "selected_detail_fields": [
+          {
+            "field": "ユニット数",
+            "value": "ユニット数 1.0 個"
+          },
+          {
+            "field": "ユニット数",
+            "value": "ユニット数 1.0 個"
+          }
+        ]
+      }
     }
   ],
   "selection": {

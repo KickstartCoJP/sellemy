@@ -51,11 +51,11 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0HDXYLRKY",
-      "asin": "B0HDXYLRKY",
-      "amazon_title": "ドキュメントスキャナー 書画カメラ A4対応 1600万画素 高速スキャン 1秒/枚 OCR文字認識 連続撮影 タイマー撮影 バーコード認識 自動補正 トリミング 傾き補正 USB接続 折りたたみ式 書類・教科書・レシート・名刺対応 ブラック",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71NPuDNE74L._AC_UL320_.jpg",
+      "product_id": "AMZ-B0FF9FSLV6",
+      "asin": "B0FF9FSLV6",
+      "amazon_title": "リコー PFU ドキュメントスキャナー ScanSnap iX2500 (高速毎分45枚/両面読取/ADF/5インチタッチパネル/Wi-Fi対応/USB接続/フラグシップ/書類/レシート/名刺/写真/領収書)(Black)",
+      "brand": "RICOH / PFU",
+      "image_url": "https://m.media-amazon.com/images/I/61d-n-+6JhL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.67,
@@ -63,80 +63,86 @@
         "document_support",
         "saving"
       ],
-      "search_key": "ドキュメントスキャナー 書画カメラ A4対応 1600万画素 高"
+      "search_key": "ドキュメントスキャナー 書画カメラ A4対応 1600万画素 高",
+      "selected_variant": "Black・本体1台"
     },
     {
       "ref": "p2",
       "product_id": "AMZ-B0HK83SQF1",
       "asin": "B0HK83SQF1",
       "amazon_title": "ET24Pro ボックス付きブックスキャナー A3対応 2400万画素 非破壊 高速スキャン 3本レーザー補正搭載 Windows/Mac対応 電子帳簿保存法対応 OCR機能 自動平坦化 歪み補正 HDMI出力 日本国内専用 光学ドライブ不要",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/5111AowrTyL._AC_UL320_.jpg",
+      "brand": "CZUR",
+      "image_url": "https://m.media-amazon.com/images/I/5111AowrTyL._AC_SX679_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
       "matched_comparison_axes": [
         "saving"
       ],
-      "search_key": "ET24Pro ボックス付きブックスキャナー A3対応 2400"
+      "search_key": "ET24Pro ボックス付きブックスキャナー A3対応 2400",
+      "selected_variant": "ET24Proボックス付き・日本国内専用・本体1台"
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0HH8HWGW7",
-      "asin": "B0HH8HWGW7",
-      "amazon_title": "iCODIS スキャナー A4対応 500万画素 ドキュメントスキャナー: OCR対応 PDF変換 折りたたみ式 USB接続",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71X8XNycgvL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0CX48H1JG",
+      "asin": "B0CX48H1JG",
+      "amazon_title": "ブラザー ドキュメントスキャナー ADS-1800W (無線LAN対応/30ppm/タッチパネル/USBバスパワー対応)",
+      "brand": "brother",
+      "image_url": "https://m.media-amazon.com/images/I/51jeGKshLwL._AC_SL1200_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
       "matched_comparison_axes": [
         "saving"
       ],
-      "search_key": "iCODIS スキャナー A4対応 500万画素 ドキュメントス"
+      "search_key": "iCODIS スキャナー A4対応 500万画素 ドキュメントス",
+      "selected_variant": "本体1台・標準構成（別売ACキット/排紙トレーなし）"
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0H6MF2SMQ",
-      "asin": "B0H6MF2SMQ",
-      "amazon_title": "スキャナー A3対応 ブックスキャナー ドキュメントスキャナー 書画カメラ : 2300万画素 OCR 非破壊 Windows/Mac対応",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/616clhKpb4L._AC_UL320_.jpg",
+      "product_id": "AMZ-B07HG9JLKG",
+      "asin": "B07HG9JLKG",
+      "amazon_title": "エプソン スキャナー ES-60WB (モバイル/A4/USB対応/Wi-Fi対応/ブラック)",
+      "brand": "EPSON",
+      "image_url": "https://m.media-amazon.com/images/I/512MLGXu5xL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
       "matched_comparison_axes": [
         "saving"
       ],
-      "search_key": "スキャナー A3対応 ブックスキャナー ドキュメントスキャナー"
+      "search_key": "スキャナー A3対応 ブックスキャナー ドキュメントスキャナー",
+      "selected_variant": "ブラック・本体1台"
     },
     {
       "ref": "p5",
       "product_id": "AMZ-B0H4LPTPV4",
       "asin": "B0H4LPTPV4",
       "amazon_title": "CZUR FancySPro-USB ドキュメントスキャナー 書画カメラ",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61supWDLN-L._AC_UL320_.jpg",
+      "brand": "CZUR",
+      "image_url": "https://m.media-amazon.com/images/I/61supWDLN-L._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
       "matched_comparison_axes": [],
-      "search_key": "CZUR FancySPro-USB ドキュメントスキャナー 書"
+      "search_key": "CZUR FancySPro-USB ドキュメントスキャナー 書",
+      "selected_variant": "USB版・日本国内専用・本体1台"
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0H35LSSMT",
-      "asin": "B0H35LSSMT",
-      "amazon_title": "スキャナー A3対応 ドキュメントスキャナー ブックスキャナー 1300万画素 非破壊 OCR 自動平坦化 書画カメラ",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61QboPY7ATL._AC_UL320_.jpg",
+      "product_id": "AMZ-B07G13HG3V",
+      "asin": "B07G13HG3V",
+      "amazon_title": "キヤノン Canon カラーフラットベッドスキャナ CANOSCAN LIDE 400",
+      "brand": "Canon",
+      "image_url": "https://m.media-amazon.com/images/I/91ByFXPy8-L._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
       "matched_comparison_axes": [
         "saving"
       ],
-      "search_key": "スキャナー A3対応 ドキュメントスキャナー ブックスキャナー"
+      "search_key": "スキャナー A3対応 ドキュメントスキャナー ブックスキャナー",
+      "selected_variant": "本体1台・国内モデル"
     }
   ]
 }

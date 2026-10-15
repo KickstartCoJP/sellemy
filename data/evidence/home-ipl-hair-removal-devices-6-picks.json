@@ -55,11 +55,11 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B09VK7Q9FS",
-      "asin": "B09VK7Q9FS",
-      "amazon_title": "Yete（エイティー）脱毛器 家庭用脱毛器 IPL光脱毛器 レディー脱毛器 冷感脱毛 無限照射回数 5段階照射 全身ムダ毛処理 (クリーム)",
-      "brand": "Beautigoのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/51amJPVrP-L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0F5B4QNB4",
+      "asin": "B0F5B4QNB4",
+      "amazon_title": "パナソニック スムースエピ パワー＆クール VIO対応 ES-WG0B-H＋VIO専用シェーバー ES-WV63-E",
+      "brand": "パナソニック",
+      "image_url": "https://m.media-amazon.com/images/I/41S9o2KyM5L._AC_SL1001_.jpg",
       "observed_price": 29800,
       "discovery_score": 1,
       "selection_score": 1.035,
@@ -68,15 +68,17 @@
         "power",
         "running_cost"
       ],
-      "search_key": "Beautigo Yete（エイティー）脱毛器 家庭用脱毛器 IPL光脱毛器 レデ"
+      "search_key": "Beautigo Yete（エイティー）脱毛器 家庭用脱毛器 IPL光脱毛器 レデ",
+      "model": "Panasonic ES-WG0B-H＋ES-WV63-E",
+      "selected_variant": "スムースエピ パワー＆クール グレー1台＋VIOシェーバー ベージュ1台のセット"
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0GN1XY9LP",
-      "asin": "B0GN1XY9LP",
-      "amazon_title": "パナソニック 脱毛器 【Amazon.co.jp限定】 スムースエピ 髭・VIO対応 冷却機能付 光美容器 ES-NWHJC-H",
-      "brand": "パナソニック(Panasonic)のストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/61tXu6IE7kL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0DQ74F646",
+      "asin": "B0DQ74F646",
+      "amazon_title": "JOVS T3 Pro max （ティースリー プロマックス） 脱毛器 光美容器 VIO対応 顔脱毛 冷却ICE Max技術 （クリーナー付）",
+      "brand": "JOVS",
+      "image_url": "https://m.media-amazon.com/images/I/714O5wyi3gL._AC_SL1500_.jpg",
       "observed_price": 49995,
       "discovery_score": 1,
       "selection_score": 0.675,
@@ -84,30 +86,34 @@
         "comfort",
         "coverage"
       ],
-      "search_key": "パナソニック(Panasonic) パナソニック 脱毛器 スムースエピ 髭・VIO対応 冷却機能"
+      "search_key": "パナソニック(Panasonic) パナソニック 脱毛器 スムースエピ 髭・VIO対応 冷却機能",
+      "model": "JOVS T3 Pro max（Amazon商品コードJ978_c）",
+      "selected_variant": "グリーン、1台、クリーナー付き構成"
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0GQ3HMW1R",
-      "asin": "B0GQ3HMW1R",
-      "amazon_title": "【公式ストア限定】STELLA BEAUTE ステラボーテ IPL&NIR 光美容器 PRO ギフト用バッグ付き グレー (ミスティグレー)",
-      "brand": "Stella Beauteのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/51XyXTgO+cL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0GNYP2MDQ",
+      "asin": "B0GNYP2MDQ",
+      "amazon_title": "【正規品】ブラウン 脱毛器 シルクエキスパートPro5 男女兼用 VIO対応 【Amazon.co.jp限定】 光脱毛器 PL5431 【スマートフレックスヘッドx業界最高峰パワー x 刺激レス】IPL VIO対応たった2回で効果実感 魔法のツヤすべ肌へ",
+      "brand": "ブラウン",
+      "image_url": "https://m.media-amazon.com/images/I/714+XRMpUuL._AC_SL1500_.jpg",
       "observed_price": 78000,
       "discovery_score": 1,
       "selection_score": 0.495,
       "matched_comparison_axes": [
         "power"
       ],
-      "search_key": "Stella Beaute ステラボーテ IPL&NIR 光美容器 PRO ギフト用バッグ付"
+      "search_key": "Stella Beaute ステラボーテ IPL&NIR 光美容器 PRO ギフト用バッグ付",
+      "model": "Braun シルクエキスパート Pro5 PL5431",
+      "selected_variant": "Amazon限定PL5431、1台・付属ヘッド構成"
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0GF1TYC21",
-      "asin": "B0GF1TYC21",
-      "amazon_title": "JOVS 脱毛器 Dora Scroll(スクロール) 2026年モデル 光美容器 家庭用 メンズ レディース 髭/全身/vio 冷却機能",
-      "brand": "JOVSのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/71bTqkUX0UL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0DGQH76BD",
+      "asin": "B0DGQH76BD",
+      "amazon_title": "スムーズスキン pure unplugged 家庭用脱毛器 メンズ脱毛器 コードレス脱毛器 男性用 脱毛器 ヒゲ脱毛 ヒゲ脱毛器すね毛脱毛 ワキ脱毛 腕脱毛 胸脱毛 全身脱毛 家庭用 光美容器 10段階調整 ムダ毛処理 ピンポイント照射 100万発 ヘッド付き 連射 高速照射 冷却不要 IPL光 イギリス サロン級 プロ仕様 SMOOTHSKIN 男女兼用 2年保証",
+      "brand": "スムーズスキン",
+      "image_url": "https://m.media-amazon.com/images/I/61HtloxkHUL._AC_SL1500_.jpg",
       "observed_price": 49130,
       "discovery_score": 1,
       "selection_score": 0.495,
@@ -115,35 +121,41 @@
         "comfort",
         "coverage"
       ],
-      "search_key": "JOVS 脱毛器 Dora Scroll(スクロール) 2026年モデル"
+      "search_key": "JOVS 脱毛器 Dora Scroll(スクロール) 2026年モデル",
+      "model": "SMOOTHSKIN Pure Unplugged SSGPURE-UNPLUGGED",
+      "selected_variant": "ブラック、充電式本体1台・プレシジョンヘッド付き"
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0D78WDCFC",
-      "asin": "B0D78WDCFC",
-      "amazon_title": "SMOOTHSKIN Pure Adapt 脱毛器 連射モード 光美容器 レディース メンズ ヒゲ シャンパン",
-      "brand": "SMOOTHSKINのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/71d8f82+GhL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0DC1RFY7L",
+      "asin": "B0DC1RFY7L",
+      "amazon_title": "MYTREX マイトレックス 脱毛器 MiRAY AiR コードレス IPL 全身 冷却 ムダ毛 光美容器 MT-MRA24B (ミライエアー)",
+      "brand": "MYTREX",
+      "image_url": "https://m.media-amazon.com/images/I/6178AvdBrdL._AC_SL1500_.jpg",
       "observed_price": 47500,
       "discovery_score": 1,
       "selection_score": 0.495,
       "matched_comparison_axes": [],
-      "search_key": "SMOOTHSKIN Pure Adapt 脱毛器 連射モード 光美容器 レディース"
+      "search_key": "SMOOTHSKIN Pure Adapt 脱毛器 連射モード 光美容器 レディース",
+      "model": "MYTREX MiRAY AiR MT-MRA24B",
+      "selected_variant": "ブラック、1台・ACアダプター/充電USBコード/保護メガネ/携帯用布袋"
     },
     {
       "ref": "p6",
       "product_id": "AMZ-B091F7BL35",
       "asin": "B091F7BL35",
       "amazon_title": "エムテック ケノン KE-NON 光美容器 日本製 髭 VIO対応 メーカー2年保証 正規品 USPL式 シャンパンゴールド",
-      "brand": "KE-NONのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/61ebc4b1DaL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "brand": "エムテック",
+      "image_url": "https://m.media-amazon.com/images/I/61ebc4b1DaL._AC_SL1500_.jpg",
       "observed_price": 79800,
       "discovery_score": 1,
       "selection_score": 0.495,
       "matched_comparison_axes": [
         "coverage"
       ],
-      "search_key": "KE-NON エムテック ケノン KE-NON 光美容器 日本製 髭 VIO対"
+      "search_key": "KE-NON エムテック ケノン KE-NON 光美容器 日本製 髭 VIO対",
+      "model": "エムテック ケノン KE-NON-G / KEG",
+      "selected_variant": "シャンパンゴールド、本体・スーパープレミアムカートリッジ2・ゴーグル・保冷剤2個・電源ケーブル・取説"
     }
   ]
 }

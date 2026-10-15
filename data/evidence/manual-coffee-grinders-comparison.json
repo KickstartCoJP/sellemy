@@ -39,9 +39,9 @@
     {
       "amazon_title": "手挽きコーヒーミル 手動 コーヒー豆挽き 挽き目調整可能 セラミック臼 ステンレス製 コンパクト 携帯用 家庭用 アウトドア キャンプ コーヒー用品",
       "asin": "B0HHR8DX7B",
-      "brand": "",
+      "brand": "Aionios",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61rBD4lX7OL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61rBD4lX7OL._AC_SL1342_.jpg",
       "matched_comparison_axes": [
         "burr_maintenance"
       ],
@@ -49,55 +49,79 @@
       "product_id": "AMZ-B0HHR8DX7B",
       "ref": "p1",
       "search_key": "手挽きコーヒーミル 手動 コーヒー豆挽き 挽き目調整可能 セラミ",
-      "selection_score": 0.505
+      "selection_score": 0.505,
+      "selected_variant": {
+        "color": "シルバー",
+        "pack_count": 1,
+        "model_number": "not supplied; selected ASIN identifies listing"
+      }
     },
     {
-      "amazon_title": "電動コーヒーミル コードレス セラミック臼式【30段階挽き目調整&外側ダイヤル式】コンパクト 静音設計 約2杯分対応 水洗い可能 お手入れ簡単",
-      "asin": "B0H5Q2LYJQ",
-      "brand": "",
+      "amazon_title": "ハリオ コーヒーミル・セラミックスリム MSS-1B",
+      "asin": "B001804CLY",
+      "brand": "HARIO",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71OdHvS0OPL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71eBibyUbvL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "burr_maintenance"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0H5Q2LYJQ",
+      "product_id": "AMZ-B001804CLY",
       "ref": "p2",
       "search_key": "電動コーヒーミル コードレス セラミック臼式 コンパクト 静音設",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "color": "ブラック",
+        "model_number": "MSS-1B",
+        "pack_count": 1,
+        "selected_style": "セラミックスリム",
+        "selected_pattern": "単品",
+        "grounds_capacity": "約24g（coffee grounds, not bean hopper measured capacity）"
+      }
     },
     {
-      "amazon_title": "コーヒーミル 電動【2026最新型】電動コーヒーミル コードレス 臼式 コニカル式 セラミック刃 コーヒーグラインダー Type C充電式 粗挽き 細挽き 粒度調整 自動停止 水洗い可能 小型 コンパクト 操作簡単 お手入れ簡単 掃除ブラシ付 日本語取扱説明書 ブラック",
-      "asin": "B0H2963TCY",
-      "brand": "",
+      "amazon_title": "ポーレックス コーヒーミル2 ミニ",
+      "asin": "B082L26FLX",
+      "brand": "PORLEX",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71aqqU99GeL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/41IrAyKXHCL._AC_SL1200_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0H2963TCY",
+      "product_id": "AMZ-B082L26FLX",
       "ref": "p3",
       "search_key": "コーヒーミル 電動 電動コーヒーミル コードレス 臼式 コニカル",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "color": "シルバー",
+        "model": "コーヒーミルII ミニ",
+        "pack_count": 1,
+        "bean_capacity": "約20g per official II manual"
+      }
     },
     {
       "amazon_title": "ONE SECOND 【心地よい木目調】 コーヒーミル 手動 41段階 木目調 セラミック刃 臼式 静音 軽量 水洗い可能 コーヒーグラインダー ワンセカンド",
       "asin": "B0GP5LTBTH",
-      "brand": "",
+      "brand": "ONE SECOND",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/614eY+T8yqL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/614eY+T8yqL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B0GP5LTBTH",
       "ref": "p4",
       "search_key": "ONE SECOND コーヒーミル 手動 41段階 木目調 セラ",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "color": "木目調",
+        "pack_count": 1,
+        "burr": "セラミック"
+      }
     },
     {
       "amazon_title": "CIRCLE JOY コーヒーミル 手動 研磨時に発熱しないセラミック臼 40段階外部調整 ダブルベアリングの 位置決め 容量30グラム 携帯性に優れ お手入れ簡単 ステンレス製コーヒーグラインダー エスプレッソ フレンチプレス プールオーバー対応 シルバー",
       "asin": "B0G1YS6CSB",
-      "brand": "",
+      "brand": "CIRCLE JOY",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61xNP-aA0AL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61xNP-aA0AL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "burr_maintenance"
       ],
@@ -105,20 +129,31 @@
       "product_id": "AMZ-B0G1YS6CSB",
       "ref": "p5",
       "search_key": "CIRCLE JOY コーヒーミル 手動 研磨時に発熱しないセラ",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "color": "B-ステンレス",
+        "burr": "セラミック 臼式",
+        "capacity": "30g as selected listing",
+        "pack_count": 1
+      }
     },
     {
       "amazon_title": "カリタ Kalita コーヒーミル 木製 粒度の安定性が高いアルミ製グラインダー KH-9 ac ブラウン BR 粗さ調整可能 手挽きコーヒーミル ミル グラインダー 手動 プレゼント ギフト 贈り物 #42228",
       "asin": "B0FWR7Y26K",
-      "brand": "",
+      "brand": "Kalita",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61tns7x135L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61tns7x135L._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B0FWR7Y26K",
       "ref": "p6",
       "search_key": "カリタ Kalita コーヒーミル 木製 粒度の安定性が高いアル",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "color": "ブラウン",
+        "model_number": "KH-9 ac BR / #42228",
+        "pack_count": 1
+      }
     }
   ],
   "selection": {

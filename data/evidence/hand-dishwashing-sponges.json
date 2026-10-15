@@ -37,11 +37,11 @@
   "eyecatch_image": "https://www.sellemy.jp/img/hand-dishwashing-sponges/hand-dishwashing-sponges.png",
   "products": [
     {
-      "amazon_title": "【Amazon.co.jp限定】3M スポンジ キッチン 食器 キズつけない グリーナークリーン PLAメッシュネット 4個 スコッチブライト GC-PLA MN 4P A",
+      "amazon_title": "3M スコッチ・ブライト PLAメッシュネット 4個パック",
       "asin": "B0BGLGF5SR",
-      "brand": "",
+      "brand": "3M スコッチ・ブライト",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/81C5k+AMSdL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/81C5k+AMSdL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "sponge_structure"
       ],
@@ -49,72 +49,108 @@
       "product_id": "AMZ-B0BGLGF5SR",
       "ref": "p1",
       "search_key": "3M スポンジ キッチン 食器 キズつけない グリーナークリーン",
-      "selection_score": 0.505
+      "selection_score": 0.505,
+      "model": "GC-PLA MN 4P A",
+      "selected_variant": {
+        "type": "PLAメッシュネット",
+        "count": 4
+      }
     },
     {
-      "amazon_title": "食器用スポンジ 両面ウエスト型 10×8×2cm 24個入",
-      "asin": "B0GWP9RT71",
-      "brand": "",
+      "amazon_title": "マーナ おさかなスポンジ ディープピンク 5個セット",
+      "asin": "B0CZXKPTHP",
+      "brand": "マーナ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/912HaFda4rL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71cnYbbkNxL._AC_SL1428_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0GWP9RT71",
+      "product_id": "AMZ-B0CZXKPTHP",
       "ref": "p2",
       "search_key": "食器用スポンジ 両面ウエスト型 10×8×2cm 24個入",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "model": "R502DP",
+      "selected_variant": {
+        "color": "ディープピンク",
+        "count": 5
+      }
     },
     {
-      "amazon_title": "オーエ キッチンスポンジ 約縦10.8cm×横6.8cm×厚さ3.5cm アイボリー モノプレミアム 台所 スポンジ 泡立ち 清潔 長持ち 日本製",
-      "asin": "B0FYLRHTWL",
-      "brand": "",
+      "amazon_title": "オーエ モノプレミアム 台所スポンジ 泡立ち アイボリー 5個組",
+      "asin": "B0G2LDD5PG",
+      "brand": "オーエ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/81RF5A9WaML._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/81qkUsquW+L._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0FYLRHTWL",
+      "product_id": "AMZ-B0G2LDD5PG",
       "ref": "p3",
       "search_key": "オーエ キッチンスポンジ 約縦10.8cm×横6.8cm×厚さ3",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "model": "モノプレミアム 泡立ち（単品50117に対応する5個組）",
+      "selected_variant": {
+        "color": "アイボリー",
+        "type": "泡立ち",
+        "count": 5
+      }
     },
     {
-      "amazon_title": "キクロン キッチンスポンジ ソフトタイプ ピンク 1個入 たっぷり泡立つ 日本製 あわもっちー",
+      "amazon_title": "キクロン あわもっちー キッチンスポンジ ピンク 1個",
       "asin": "B0FXW4LSZW",
-      "brand": "",
+      "brand": "キクロン",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61t6uhUcUQL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61t6uhUcUQL._AC_SL1000_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B0FXW4LSZW",
       "ref": "p4",
       "search_key": "キクロン キッチンスポンジ ソフトタイプ ピンク 1個入 たっぷ",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "model": "あわもっちー キッチンスポンジ",
+      "selected_variant": {
+        "color": "ピンク",
+        "count": 1
+      }
     },
     {
-      "amazon_title": "ダスキン【公式】「台所用スポンジ ソフトタイプ 3色セット」",
+      "amazon_title": "ダスキン 台所用スポンジ ソフトタイプ 3色セット",
       "asin": "B0FTLH2YBZ",
-      "brand": "",
+      "brand": "ダスキン",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/41-Wqcg+GIL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/41-Wqcg+GIL._AC_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B0FTLH2YBZ",
       "ref": "p5",
       "search_key": "ダスキン 「台所用スポンジ ソフトタイプ 3色セット」",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "model": "台所用スポンジ ソフトタイプ",
+      "selected_variant": {
+        "colors": [
+          "ライトグレー",
+          "ベージュ",
+          "ピンク"
+        ],
+        "count": 3
+      }
     },
     {
-      "amazon_title": "ダスキン【公式】「台所用スポンジ ハードタイプ 3色セット モノトーン」",
-      "asin": "B0FTF5GKHJ",
-      "brand": "",
+      "amazon_title": "サンサンスポンジ ノーマル ブラック 4個セット",
+      "asin": "B07T243JW4",
+      "brand": "ダイニチ・コーポレーション",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51E+UnzG4pL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71RXfv7EUGL._AC_SL1494_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0FTF5GKHJ",
+      "product_id": "AMZ-B07T243JW4",
       "ref": "p6",
       "search_key": "ダスキン 「台所用スポンジ ハードタイプ 3色セット モノトーン",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "model": "サンサンスポンジ ノーマル",
+      "selected_variant": {
+        "color": "ブラック",
+        "hardness": "ノーマル",
+        "count": 4
+      }
     }
   ],
   "selection": {

@@ -40,9 +40,9 @@
     {
       "amazon_title": "Guermok HDMI キャプチャーボード USB3.0 1080P60FPS・2K30FPS録画 4Kパススルー Switch対応 低遅延録画",
       "asin": "B0H4SXF15W",
-      "brand": "",
+      "brand": "Guermok",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71zwpHy7S-L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71zwpHy7S-L._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "passthrough_and_audio"
       ],
@@ -50,14 +50,18 @@
       "product_id": "AMZ-B0H4SXF15W",
       "ref": "p1",
       "search_key": "Guermok HDMI キャプチャーボード USB3.0 10",
-      "selection_score": 0.48
+      "selection_score": 0.48,
+      "selected_variant": {
+        "model_context": "Guermok USB3.0 HDMIキャプチャー",
+        "color_name": "ブラック"
+      }
     },
     {
       "amazon_title": "HDMI キャプチャーボード USB Type-C/USB-A両対応 4K入力 1080P/60fps録画 HDMI ビデオキャプチャー UVC/UAC ドライバー不要 低遅延 ゲーム実況 ライブ配信 OBS/Switch/PS5/Xbox/Windows/MacOS/Android対応",
       "asin": "B0H44SQVC9",
-      "brand": "",
+      "brand": "ORIVISION",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61NC1cfWw1L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61NC1cfWw1L._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "computer_compatibility"
       ],
@@ -65,55 +69,73 @@
       "product_id": "AMZ-B0H44SQVC9",
       "ref": "p2",
       "search_key": "HDMI キャプチャーボード USB Type-C/USB-A両",
-      "selection_score": 0.48
+      "selection_score": 0.48,
+      "selected_variant": {
+        "model_context": "ORIVISION USB2.0 A/Cキャプチャー",
+        "set_name": "標準版"
+      }
     },
     {
       "amazon_title": "HDMI キャプチャーボード USB3.0 Type-C/USB-A両対応",
       "asin": "B0H44Q5J4G",
-      "brand": "",
+      "brand": "ORIVISION",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/613YsynVFmL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/613YsynVFmL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B0H44Q5J4G",
       "ref": "p3",
       "search_key": "HDMI キャプチャーボード USB3.0 Type-C/USB",
-      "selection_score": 0.3
+      "selection_score": 0.3,
+      "selected_variant": {
+        "model_context": "ORIVISION USB3.0 A/Cキャプチャー",
+        "set_name": "高速版"
+      }
     },
     {
       "amazon_title": "HDMIキャプチャーボード 4K Switch PS5対応 1080p60fps USB3.0",
       "asin": "B0GZ217M7G",
-      "brand": "",
+      "brand": "Wasachi",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/81lTWZUTOZL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/81lTWZUTOZL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B0GZ217M7G",
       "ref": "p4",
       "search_key": "HDMIキャプチャーボード 4K Switch PS5対応 10",
-      "selection_score": 0.3
+      "selection_score": 0.3,
+      "selected_variant": {
+        "model_context": "Wasachi HDMIキャプチャー",
+        "color_name": "ブルー"
+      }
     },
     {
-      "amazon_title": "2026年新登場 USB-A HDMIキャプチャーボード 4K入力/1080P録画 低遅延 電源不要 ドライバー不要",
-      "asin": "B0G91JQV2P",
-      "brand": "",
+      "amazon_title": "アイ・オー・データ IODATA HDMI キャプチャー 4K対応 2K120pパススルー・録画対応 PS5 ゲーム録画 実況 録画・編集ソフト付き 日本メーカー GV-USB3HDS/E",
+      "asin": "B09S64DXFD",
+      "brand": "アイオーデータ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51Fc5Z-0XFL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/81+akG4Jy7L._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "computer_compatibility"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0G91JQV2P",
+      "product_id": "AMZ-B09S64DXFD",
       "ref": "p5",
       "search_key": "2026年新登場 USB-A HDMIキャプチャーボード 4K入",
-      "selection_score": 0.3
+      "selection_score": 0.3,
+      "selected_variant": {
+        "model": "GV-USB3HDS/E",
+        "jan": "4957180155630",
+        "quantity": 1,
+        "status": "EXACT_ASIN_PRIMARY_BOUND"
+      }
     },
     {
       "amazon_title": "キャプチャーボード Switch 1/2 対応, 4K HDMI パススルー 1080P 60FPS 録画",
       "asin": "B0G1BMVC2P",
-      "brand": "",
+      "brand": "Fonestuff",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/81LOUKQIVqL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/81LOUKQIVqL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "passthrough_and_audio"
       ],
@@ -121,7 +143,11 @@
       "product_id": "AMZ-B0G1BMVC2P",
       "ref": "p6",
       "search_key": "キャプチャーボード Switch 1/2 対応, 4K HDMI",
-      "selection_score": 0.3
+      "selection_score": 0.3,
+      "selected_variant": {
+        "model_context": "Fonestuff HDMIキャプチャー",
+        "selection_basis": "ASIN-specific listing; no selectable variation block in retrieved source"
+      }
     }
   ],
   "selection": {

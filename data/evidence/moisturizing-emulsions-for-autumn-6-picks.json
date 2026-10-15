@@ -48,8 +48,8 @@
       "product_id": "AMZ-B0CC5JWFMK",
       "asin": "B0CC5JWFMK",
       "amazon_title": "ケアセラ(CareCera) APフェイス&ボディ乳液 大容量本体 400ml (セラミドプラス×7種の天然型セラミド配合)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71YfRFWMf9L._AC_UL320_.jpg",
+      "brand": "CareCera",
+      "image_url": "https://m.media-amazon.com/images/I/71YfRFWMf9L._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.685,
@@ -57,15 +57,16 @@
         "moisturizing_ingredients",
         "packaging"
       ],
-      "search_key": "ケアセラ(CareCera) APフェイス&ボディ乳液 大容量本"
+      "search_key": "ケアセラ(CareCera) APフェイス&ボディ乳液 大容量本",
+      "selected_variant": "大容量本体400mL1本、無香料"
     },
     {
       "ref": "p2",
       "product_id": "AMZ-B0B8Z51S5F",
       "asin": "B0B8Z51S5F",
       "amazon_title": "【高濃度セラミド】トゥヴェール ナノエマルジョン ディープ 乳液 60mL 乾燥肌 敏感肌 高保湿 インナードライ しっとり セラミド 高濃度 12％ ヒアルロン酸",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/51h7j3aB1ML._AC_UL320_.jpg",
+      "brand": "TOUT VERT",
+      "image_url": "https://m.media-amazon.com/images/I/51h7j3aB1ML._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.505,
@@ -73,61 +74,66 @@
         "moisturizing_ingredients",
         "texture"
       ],
-      "search_key": "トゥヴェール ナノエマルジョン ディープ 乳液 60mL 乾燥肌"
+      "search_key": "トゥヴェール ナノエマルジョン ディープ 乳液 60mL 乾燥肌",
+      "selected_variant": "60mL1本、ラベンダーローズの香り"
     },
     {
       "ref": "p3",
       "product_id": "AMZ-B0HFS2SH24",
       "asin": "B0HFS2SH24",
       "amazon_title": "【牛乳石鹸が提案する生態系発想のスキンケア】 AKA バランシングミルク 100g 乳液 牛乳石鹸 無添加 スキンケア 乳液 整肌 敏感肌",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/51pYUh0rZnL._AC_UL320_.jpg",
+      "brand": "AKA",
+      "image_url": "https://m.media-amazon.com/images/I/51pYUh0rZnL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [],
-      "search_key": "AKA バランシングミルク 100g 乳液 牛乳石鹸 無添加 ス"
+      "search_key": "AKA バランシングミルク 100g 乳液 牛乳石鹸 無添加 ス",
+      "selected_variant": "100g1本、微香性フレッシュフローラル"
     },
     {
       "ref": "p4",
       "product_id": "AMZ-B0H6W5QFG8",
       "asin": "B0H6W5QFG8",
       "amazon_title": "ソフィーナ BASIC⁺ うるおいターボ乳液 120ml 角層細胞レベルまででうるおい変わる",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71hoGlr7OWL._AC_UL320_.jpg",
+      "brand": "SOFINA",
+      "image_url": "https://m.media-amazon.com/images/I/71hoGlr7OWL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [],
-      "search_key": "ソフィーナ BASIC⁺ うるおいターボ乳液 120ml 角層細"
+      "search_key": "ソフィーナ BASIC⁺ うるおいターボ乳液 120ml 角層細",
+      "selected_variant": "本体120mL1本、無香料"
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0GCH8SBGG",
-      "asin": "B0GCH8SBGG",
-      "amazon_title": "【医薬品メーカー発】セラミド 美容液 個包装 敏感肌 乾燥肌 保湿 肌荒れ キメ 日本製 無香料 パーセラムCE 14包",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/51gtgS-+IfL._AC_UL320_.jpg",
+      "product_id": "AMZ-B001JF68MY",
+      "asin": "B001JF68MY",
+      "amazon_title": "キュレル 潤浸保湿 乳液 120ml",
+      "brand": "Curél",
+      "image_url": "https://m.media-amazon.com/images/I/61wFeqqEO0L._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [
         "moisturizing_ingredients"
       ],
-      "search_key": "セラミド 美容液 個包装 敏感肌 乾燥肌 保湿 肌荒れ キメ 日"
+      "search_key": "セラミド 美容液 個包装 敏感肌 乾燥肌 保湿 肌荒れ キメ 日",
+      "selected_variant": "120mL本体1本"
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0G6ZBCRRJ",
-      "asin": "B0G6ZBCRRJ",
-      "amazon_title": "ドモホルンリンクル 基本4点ハーフセット 保湿液 美活肌エキス クリーム20 保護乳液 スキンケア 化粧水 美容液",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/41b-RkbQpwL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0FL71H92V",
+      "asin": "B0FL71H92V",
+      "amazon_title": "【Amazon.co.jp限定】 ミノン アミノモイスト モイストチャージ ミルク 100g サンプル付き 【敏感肌向け】 【乾燥肌向け】 【低刺激性処方】 保湿乳液 浸透 うるおいを閉じ込める",
+      "brand": "MINON",
+      "image_url": "https://m.media-amazon.com/images/I/71moR44c9iL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [],
-      "search_key": "ドモホルンリンクル 基本4点ハーフセット 保湿液 美活肌エキス"
+      "search_key": "ドモホルンリンクル 基本4点ハーフセット 保湿液 美活肌エキス",
+      "selected_variant": "現行100g本体1本、Amazon限定サンプル付き。サンプルの種類・量は取得主欄で未指定。"
     }
   ]
 }

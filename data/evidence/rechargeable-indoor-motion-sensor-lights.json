@@ -42,7 +42,7 @@
     {
       "amazon_title": "WESTBERRY 人感センサーライト 室内 USB-C充電式 マグネット 足元灯 3色切替 無段階調光",
       "asin": "B0H9CSG55S",
-      "brand": "",
+      "brand": "WESTBERRY",
       "discovery_score": 1,
       "image_url": "https://m.media-amazon.com/images/I/61l8MFyFNqL._AC_UL320_.jpg",
       "matched_comparison_axes": [
@@ -52,12 +52,14 @@
       "product_id": "AMZ-B0H9CSG55S",
       "ref": "p1",
       "search_key": "WESTBERRY 人感センサーライト 室内 USB-C充電式",
-      "selection_score": 0.49
+      "selection_score": 0.49,
+      "model": "WB-MSL01",
+      "selected_variant": "シルバー／1個"
     },
     {
       "amazon_title": "ZHOUMIN 人感センサーライト LED、Type-C 充電式、自動人感点灯、無段階調光機能搭載、薄型デザイン、間接照明・足元灯として活用可能、寝室、浴室、階段、収納棚、廊下など屋内全シーン適用、1個セット、日本語取扱説明書付き",
       "asin": "B0H6T9N5HQ",
-      "brand": "",
+      "brand": "ZHOUMIN",
       "discovery_score": 1,
       "image_url": "https://m.media-amazon.com/images/I/61XBEKS+IZL._AC_UL320_.jpg",
       "matched_comparison_axes": [],
@@ -65,12 +67,14 @@
       "product_id": "AMZ-B0H6T9N5HQ",
       "ref": "p2",
       "search_key": "ZHOUMIN 人感センサーライト LED、Type-C 充電式",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "model": "Zhoumin-sensor-light-02",
+      "selected_variant": "ホワイト／1個セット／電球色"
     },
     {
       "amazon_title": "Mirela 人感センサーライト 室内 充電式 LEDバー キッチン用ライト 25cm クローゼット 3色調色 無段階調光 マグネット式 工事不要 薄型 収納 玄関 廊下",
       "asin": "B0H2W6DKV2",
-      "brand": "",
+      "brand": "‎Mirela",
       "discovery_score": 1,
       "image_url": "https://m.media-amazon.com/images/I/81q-SoRPfrL._AC_UL320_.jpg",
       "matched_comparison_axes": [
@@ -80,12 +84,14 @@
       "product_id": "AMZ-B0H2W6DKV2",
       "ref": "p3",
       "search_key": "Mirela 人感センサーライト 室内 充電式 LEDバー キッ",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "model": "603085",
+      "selected_variant": "シルバー／長さ25cm／1個"
     },
     {
       "amazon_title": "【30cm 2本】人感センサーライト 室内 充電式 薄型 バーライト クローゼット照明（3色切替・無段階調光・900mAh）マグネット 足元照明",
       "asin": "B0H1MK1PW7",
-      "brand": "",
+      "brand": "WOBANE",
       "discovery_score": 1,
       "image_url": "https://m.media-amazon.com/images/I/71SBbuAEHPL._AC_UL320_.jpg",
       "matched_comparison_axes": [
@@ -95,12 +101,14 @@
       "product_id": "AMZ-B0H1MK1PW7",
       "ref": "p4",
       "search_key": "人感センサーライト 室内 充電式 薄型 バーライト クローゼット",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "model": "WBE037-2PC-JP",
+      "selected_variant": "30cm／2本／電球色・温白色・昼白色"
     },
     {
       "amazon_title": "人感センサーライト 室内 360度回転 足元灯 壁灯 間接照明 省エネ 自動点灯 マグネット 木製 玄関 おしゃれ LEDライト USB充電式 廊下",
       "asin": "B0H14FXQDP",
-      "brand": "",
+      "brand": "funttogo",
       "discovery_score": 1,
       "image_url": "https://m.media-amazon.com/images/I/71k7CuUSaKL._AC_UL320_.jpg",
       "matched_comparison_axes": [
@@ -110,12 +118,14 @@
       "product_id": "AMZ-B0H14FXQDP",
       "ref": "p5",
       "search_key": "人感センサーライト 室内 360度回転 足元灯 壁灯 間接照明",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "model": "1625",
+      "selected_variant": "ダックブラウン／1個"
     },
     {
       "amazon_title": "レーダー人感センサーライト 充電式 マグネット 棚下 Type-C 30cm 2本",
       "asin": "B0GKY8KPVV",
-      "brand": "",
+      "brand": "Pinaned",
       "discovery_score": 1,
       "image_url": "https://m.media-amazon.com/images/I/71LSLeFcr6L._AC_UL320_.jpg",
       "matched_comparison_axes": [
@@ -125,7 +135,9 @@
       "product_id": "AMZ-B0GKY8KPVV",
       "ref": "p6",
       "search_key": "レーダー人感センサーライト 充電式 マグネット 棚下 Type-",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "model": "ZF-2M-30CM-LD",
+      "selected_variant": "レーダー式／30cm／2本"
     }
   ],
   "selection": {

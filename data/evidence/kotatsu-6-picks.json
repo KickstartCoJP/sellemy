@@ -51,11 +51,11 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0D9GBJCBQ",
-      "asin": "B0D9GBJCBQ",
-      "amazon_title": "Keusnix こたつ布団 長方形 190×240cm 単品売り 発熱綿使用 高密度フランネル こたつ掛け布団 リバーシブル 両面使える 高い保温性 ふわふわ ぽかぽか 撥水防ダニ加工 抗菌防臭 洗える 静電気防止 毛抜けない こたつふとん 火燵布団 ダークグレー・グレー",
-      "brand": "Keusnixのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/81XhVhZX3CL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0CLC95S17",
+      "asin": "B0CLC95S17",
+      "amazon_title": "萩原 エリプス＋メレンゲ こたつ2点セット",
+      "brand": "萩原",
+      "image_url": "https://m.media-amazon.com/images/I/51sP0xodxjL._AC_SL1000_.jpg",
       "observed_price": 5593,
       "discovery_score": 1,
       "selection_score": 0.93,
@@ -63,15 +63,25 @@
         "set_contents",
         "size_shape"
       ],
-      "search_key": "Keusnix こたつ布団 長方形 190×240cm 単品売り 発熱綿使用 高"
+      "search_key": "Keusnix こたつ布団 長方形 190×240cm 単品売り 発熱綿使用 高",
+      "selected_variant": {
+        "table_color": "white wash",
+        "blanket_color": "ivory",
+        "table_size": "90×50×35.5cm",
+        "included": [
+          "こたつ本体",
+          "掛け布団"
+        ],
+        "pack_count": 1
+      }
     },
     {
       "ref": "p2",
       "product_id": "AMZ-B0FHVZ8433",
       "asin": "B0FHVZ8433",
-      "amazon_title": "[山善] 家具調 こたつ テーブル 幅120×奥行80cm 専用布団セット 長方形 高さ4段階調節 ファン付きヒーター 中間入切スイッチ 天然木 継脚 ウォルナットブラウン GEXN-F1201H4N(WBR)-FSET",
-      "brand": "山善(YAMAZEN)のストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/71raPdEGmsL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "amazon_title": "山善 ピタ高 GEXN-F1201H4N(WBR)-FSET 120×80cm 布団セット",
+      "brand": "山善",
+      "image_url": "https://m.media-amazon.com/images/I/71raPdEGmsL._AC_SL1500_.jpg",
       "observed_price": 42500,
       "discovery_score": 1,
       "selection_score": 0.57,
@@ -79,61 +89,107 @@
         "set_contents",
         "size_shape"
       ],
-      "search_key": "山善(YAMAZEN) 家具調 こたつ テーブル 幅120×奥行80cm 専用布団セット"
+      "search_key": "山善(YAMAZEN) 家具調 こたつ テーブル 幅120×奥行80cm 専用布団セット",
+      "selected_variant": {
+        "model": "GEXN-F1201H4N(WBR)-FSET",
+        "size": "120×80cm",
+        "color": "ウォルナットブラウン",
+        "included": [
+          "こたつ本体",
+          "専用掛け布団"
+        ]
+      }
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0DPM58SSG",
-      "asin": "B0DPM58SSG",
-      "amazon_title": "ユアサプライムス おふたり様用こたつテーブル なごみ NGM-N75DLH(FBR) 75×75×57(38)cm 二人用 4点セット",
-      "brand": "YUASA PRIMUSのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/81d40-c4wjL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0BSQQVJ2Y",
+      "asin": "B0BSQQVJ2Y",
+      "amazon_title": "ステージ2 ハイタイプこたつ 4点セット",
+      "brand": "ステージ2",
+      "image_url": "https://m.media-amazon.com/images/I/81d6xVQ6UNL._AC_SL1500_.jpg",
       "observed_price": 29800,
       "discovery_score": 1,
       "selection_score": 0.57,
       "matched_comparison_axes": [],
-      "search_key": "YUASA PRIMUS ユアサプライムス おふたり様用こたつテーブル なごみ NGM-N"
+      "search_key": "YUASA PRIMUS ユアサプライムス おふたり様用こたつテーブル なごみ NGM-N",
+      "selected_variant": {
+        "table_color": "brown",
+        "blanket_color": "brown",
+        "table_size": "80×60×65cm",
+        "included": [
+          "こたつ本体",
+          "椅子2脚",
+          "掛け布団"
+        ],
+        "pack_count": 1
+      }
     },
     {
       "ref": "p4",
       "product_id": "AMZ-B0DG8LTWPJ",
       "asin": "B0DG8LTWPJ",
-      "amazon_title": "高さ調節機能付き ダイニングこたつ アコード 90x60cm ブラウン こたつのみ",
-      "brand": "マストバイ(MUSTBUY)のストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/51RhMrrbCmL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "amazon_title": "MUSTBUY／SAI 彩 ACCORD アコード 90×60cm ブラウン 本体のみ",
+      "brand": "MUSTBUY／SAI 彩",
+      "image_url": "https://m.media-amazon.com/images/I/51RhMrrbCmL._AC_SL1280_.jpg",
       "observed_price": 40200,
       "discovery_score": 1,
       "selection_score": 0.57,
       "matched_comparison_axes": [],
-      "search_key": "マストバイ(MUSTBUY) 高さ調節機能付き ダイニングこたつ アコード 90x60cm ブ"
+      "search_key": "マストバイ(MUSTBUY) 高さ調節機能付き ダイニングこたつ アコード 90x60cm ブ",
+      "selected_variant": {
+        "model": "アコード 90×60",
+        "color": "ブラウン",
+        "size": "90×60cm",
+        "included": [
+          "本体のみ"
+        ]
+      }
     },
     {
       "ref": "p5",
       "product_id": "AMZ-B0BBZNN2HY",
       "asin": "B0BBZNN2HY",
-      "amazon_title": "タンスのゲン こたつ 3点セット 長方形 120×75cm とろける肌触り こたつ布団 こたつテーブル 高さ調整 61140533(134603)",
-      "brand": "タンスのゲンのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/81bFl1r8txL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "amazon_title": "タンスのゲン こたつ3点セット 61140533 120×75cm",
+      "brand": "タンスのゲン",
+      "image_url": "https://m.media-amazon.com/images/I/81bFl1r8txL._AC_SL1500_.jpg",
       "observed_price": 31800,
       "discovery_score": 1,
       "selection_score": 0.57,
       "matched_comparison_axes": [
         "size_shape"
       ],
-      "search_key": "タンスのゲン こたつ 3点セット 長方形 120×75cm とろける肌触り こ"
+      "search_key": "タンスのゲン こたつ 3点セット 長方形 120×75cm とろける肌触り こ",
+      "selected_variant": {
+        "model": "61140533(134603)",
+        "color": "天板ブラウン/布団ペールベージュ",
+        "size": "120×75cm",
+        "included": [
+          "こたつ本体",
+          "掛け布団",
+          "敷き布団"
+        ]
+      }
     },
     {
       "ref": "p6",
       "product_id": "AMZ-B0DG8KRH8H",
       "asin": "B0DG8KRH8H",
-      "amazon_title": "パワフルヒーター 6段階に高さ調節できるダイニングこたつ スクット 90x60cm ナチュラル こたつ本体のみ",
-      "brand": "マストバイ(MUSTBUY)のストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/51pCssIaZ+L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "amazon_title": "MUSTBUY／SAI 彩 SKUTT スクット 90×60cm ナチュラル 本体のみ",
+      "brand": "MUSTBUY／SAI 彩",
+      "image_url": "https://m.media-amazon.com/images/I/51pCssIaZ+L._AC_SL1280_.jpg",
       "observed_price": 39600,
       "discovery_score": 1,
       "selection_score": 0.45,
       "matched_comparison_axes": [],
-      "search_key": "マストバイ(MUSTBUY) パワフルヒーター 6段階に高さ調節できるダイニングこたつ スクッ"
+      "search_key": "マストバイ(MUSTBUY) パワフルヒーター 6段階に高さ調節できるダイニングこたつ スクッ",
+      "selected_variant": {
+        "model": "スクット 90×60",
+        "color": "ナチュラル",
+        "size": "90×60cm",
+        "included": [
+          "本体のみ"
+        ]
+      }
     }
   ]
 }

@@ -54,89 +54,101 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0HCC71LHV",
-      "asin": "B0HCC71LHV",
-      "amazon_title": "加湿器付き空気清浄機 30畳 遠隔操作 3段階風量調節 上から給水 7色変換ライト タイマー付き 消臭 除菌 集じん三層HEPAフィルター",
-      "brand": "Afloiaのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/717Diahm00L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0FPM8P4PQ",
+      "asin": "B0FPM8P4PQ",
+      "amazon_title": "アイリスオーヤマ 加湿空気清浄機 気化式 10畳 上から給水 丸洗い AZAP-SH20B-WB ホワイト/ブラック",
+      "brand": "アイリスオーヤマ",
+      "image_url": "https://m.media-amazon.com/images/I/61WBm0ymjOL._AC_SL1000_.jpg",
       "observed_price": 12999,
       "discovery_score": 1,
       "selection_score": 0.75,
       "matched_comparison_axes": [
         "filtration"
       ],
-      "search_key": "Afloia 加湿器付き空気清浄機 30畳 遠隔操作 3段階風量調節 上から給"
+      "search_key": "Afloia 加湿器付き空気清浄機 30畳 遠隔操作 3段階風量調節 上から給",
+      "model": "IRIS OHYAMA AZAP-SH20B-WB",
+      "selected_variant": "ホワイト/ブラック、1台"
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0FPM8P4PQ",
-      "asin": "B0FPM8P4PQ",
-      "amazon_title": "アイリスオーヤマ 加湿空気清浄機 気化式 10畳 上から給水 丸洗い AZAP-SH20B-WB ホワイト/ブラック",
-      "brand": "アイリスオーヤマ(IRIS OHYAMA)のストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/61WBm0ymjOL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0DP2KSZDK",
+      "asin": "B0DP2KSZDK",
+      "amazon_title": "【2024年モデル】シャープ SHARP プラズマクラスター7000搭載 加湿空気清浄機 ホワイト系 KC-T50-W",
+      "brand": "SHARP",
+      "image_url": "https://m.media-amazon.com/images/I/11aUgUqyc+L._AC_.jpg",
       "observed_price": 12500,
       "discovery_score": 1,
       "selection_score": 0.7,
       "matched_comparison_axes": [
         "humidification"
       ],
-      "search_key": "アイリスオーヤマ(IRIS OHYAMA) アイリスオーヤマ 加湿空気清浄機 気化式 10畳 上"
+      "search_key": "アイリスオーヤマ(IRIS OHYAMA) アイリスオーヤマ 加湿空気清浄機 気化式 10畳 上",
+      "model": "SHARP KC-T50-W",
+      "selected_variant": "2024年モデル、ホワイト系、1台"
     },
     {
       "ref": "p3",
       "product_id": "AMZ-B0D8KJ4PVQ",
       "asin": "B0D8KJ4PVQ",
       "amazon_title": "シャープ 衣類乾燥 除湿加湿空気清浄機 KI-SD50-W 除湿 加湿 空気浄化 プラズマクラスター25000 空気清浄 21畳 加湿量 約400ml/h 除湿 5.0/5.6L/日 衣類乾燥 キャスター付 コンパクト",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/41cCQ2dQzZL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "brand": "シャープ",
+      "image_url": "https://m.media-amazon.com/images/I/41cCQ2dQzZL._AC_SL1000_.jpg",
       "observed_price": 43800,
       "discovery_score": 1,
       "selection_score": 0.63,
       "matched_comparison_axes": [
         "noise_size"
       ],
-      "search_key": "シャープ 衣類乾燥 除湿加湿空気清浄機 KI-SD50-W 除湿"
+      "search_key": "シャープ 衣類乾燥 除湿加湿空気清浄機 KI-SD50-W 除湿",
+      "model": "SHARP KI-SD50-W",
+      "selected_variant": "ホワイト、1台"
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0G25B75M5",
-      "asin": "B0G25B75M5",
-      "amazon_title": "【2026改良モデル・AIスマート】 加湿器 大容量 5L 知能恒湿 ハイブリッド加湿器 加熱式 &超音波式 4重除菌 マイナスイオン 空気清浄機能",
-      "brand": "Ｔｒｏｓｔｏｎのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/61B+rMkEihL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0FLWK72DR",
+      "asin": "B0FLWK72DR",
+      "amazon_title": "ダイキン【2026年モデル】除湿 加湿 空気清浄機 MCZ706A-T 21畳（新基準） うるるとさらら空気清浄機 10年間フィルター交換不要",
+      "brand": "ダイキン",
+      "image_url": "https://m.media-amazon.com/images/I/61UXO0rf01L._AC_SL1500_.jpg",
       "observed_price": 9980,
       "discovery_score": 1,
       "selection_score": 0.52,
       "matched_comparison_axes": [],
-      "search_key": "Ｔｒｏｓｔｏｎ 加湿器 大容量 5L 知能恒湿 ハイブリッド加湿器 加熱式 &超"
+      "search_key": "Ｔｒｏｓｔｏｎ 加湿器 大容量 5L 知能恒湿 ハイブリッド加湿器 加熱式 &超",
+      "model": "DAIKIN MCZ706A-T",
+      "selected_variant": "ブラウン、2026年モデル、1台"
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0G1Y5PZT9",
-      "asin": "B0G1Y5PZT9",
-      "amazon_title": "加湿器 大容量 3.5L 【新改良モデル・一体化設計・UVライト除菌】 ダブル吹出口 静音 上から注水 無段階ミスト調整 54時間連続運転",
-      "brand": "ブランド: Cheery",
-      "image_url": "https://m.media-amazon.com/images/I/51+AnvvoR5L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0DGQ1SY48",
+      "asin": "B0DGQ1SY48",
+      "amazon_title": "パナソニック 加湿 空気清浄機 ナノイーX 48兆 エコナビ搭載 手ごわい花粉を抑制し、パワフルに吸引 ~40畳 ホワイト F-VXW90-W",
+      "brand": "パナソニック",
+      "image_url": "https://m.media-amazon.com/images/I/51VRouWqIeL._AC_SL1500_.jpg",
       "observed_price": 4599,
       "discovery_score": 1,
       "selection_score": 0.52,
       "matched_comparison_axes": [],
-      "search_key": "Cheery 加湿器 大容量 3.5L ダブル吹出口 静音 上から注水 無段階"
+      "search_key": "Cheery 加湿器 大容量 3.5L ダブル吹出口 静音 上から注水 無段階",
+      "model": "Panasonic F-VXW90-W",
+      "selected_variant": "ホワイト、1台"
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0FKMXPJGK",
-      "asin": "B0FKMXPJGK",
-      "amazon_title": "【 AIスマート & 知能恒湿・改良モデル】 加湿器 大容量 ハイブリッド式 9L AI湿度調整 加熱式加湿器 超音波 マイナスイオン 空気清浄",
-      "brand": "HQQのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/511NjSsn70L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0DGXK9LD2",
+      "asin": "B0DGXK9LD2",
+      "amazon_title": "Dyson(ダイソン) 扇風機 空気清浄機 加湿器 Dyson Purifier Humidify+Cool PH2 De-NOx 加湿空気清浄機 ホワイト／ゴールド (PH05 WG) サーキュレーター ホルムアルデヒド分解【空気をきれいにしながら、快適な湿度に】",
+      "brand": "Dyson",
+      "image_url": "https://m.media-amazon.com/images/I/51l9k1rvoNL._AC_SL1080_.jpg",
       "observed_price": 11990,
       "discovery_score": 1,
       "selection_score": 0.52,
       "matched_comparison_axes": [
         "humidification"
       ],
-      "search_key": "HQQ 加湿器 大容量 ハイブリッド式 9L AI湿度調整 加熱式加湿器"
+      "search_key": "HQQ 加湿器 大容量 ハイブリッド式 9L AI湿度調整 加熱式加湿器",
+      "model": "Dyson PH05 WG",
+      "selected_variant": "ホワイト/ゴールド、1台、Purifier Humidify+Cool PH2 De-NOx"
     }
   ]
 }

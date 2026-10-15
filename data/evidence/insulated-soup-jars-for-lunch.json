@@ -46,11 +46,11 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0DZN7Q9S2",
-      "asin": "B0DZN7Q9S2",
-      "amazon_title": "【セット品】【食洗機対応モデル】 サーモス 真空断熱スープジャー 300ml ブラック 全パーツ食洗機OK 保温保冷 お手入れ簡単 口当たりがやさしい丸口設計 スタンダードモデル JED-300 BKサーモス スープジャーポーチ ブラック RES-003 BK",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/51zm8jE2K-L._AC_UL320_.jpg",
+      "product_id": "AMZ-B0HB4G33SK",
+      "asin": "B0HB4G33SK",
+      "amazon_title": "TYESO スープジャー 220ml 真空断熱 手のひらサイズ 食洗機対応 お弁当用",
+      "brand": "TYESO",
+      "image_url": "https://m.media-amazon.com/images/I/61clDz0FWvL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.865,
@@ -59,15 +59,20 @@
         "cleaning",
         "insulation"
       ],
-      "search_key": "サーモス 真空断熱スープジャー 300ml ブラック 全パーツ食"
+      "search_key": "サーモス 真空断熱スープジャー 300ml ブラック 全パーツ食",
+      "selected_variant": {
+        "colour": "ピンク",
+        "capacity_ml": 220,
+        "count": 1
+      }
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0HC5CB4M2",
-      "asin": "B0HC5CB4M2",
-      "amazon_title": "【食洗機対応モデル】 サーモス 真空断熱スープランチセット 800ml ブラック スープジャー・容器セット JEE-801 BK",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/41pa48ym4uL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0D9XZLXLG",
+      "asin": "B0D9XZLXLG",
+      "amazon_title": "【食洗機対応モデル】 サーモス 真空断熱スープジャー 300ml グレーグリーン 全パーツ食洗機OK 保温保冷 お手入れ簡単 口当たりがやさしい丸口設計 スタンダードモデル JED-300 GYG",
+      "brand": "THERMOS",
+      "image_url": "https://m.media-amazon.com/images/I/71l8ROvSPjL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
@@ -75,15 +80,20 @@
         "cleaning",
         "insulation"
       ],
-      "search_key": "サーモス 真空断熱スープランチセット 800ml ブラック スー"
+      "search_key": "サーモス 真空断熱スープランチセット 800ml ブラック スー",
+      "selected_variant": {
+        "colour": "グレーグリーン",
+        "capacity_ml": 300,
+        "count": 1
+      }
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0HB4G33SK",
-      "asin": "B0HB4G33SK",
-      "amazon_title": "TYESO スープジャー 220ml 真空断熱 手のひらサイズ 食洗機対応 お弁当用",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61clDz0FWvL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0FJXMKF34",
+      "asin": "B0FJXMKF34",
+      "amazon_title": "象印 スープジャー 400ml 大きめ茶碗サイズ 【おいしく保温・保冷】 食洗機対応 洗いやすい シームレスせん お弁当 広口 クラウドグレー SW-LA40-HM",
+      "brand": "象印",
+      "image_url": "https://m.media-amazon.com/images/I/412MbiybUVL._AC_SL1200_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
@@ -91,46 +101,67 @@
         "cleaning",
         "insulation"
       ],
-      "search_key": "TYESO スープジャー 220ml 真空断熱 手のひらサイズ"
+      "search_key": "TYESO スープジャー 220ml 真空断熱 手のひらサイズ",
+      "selected_variant": {
+        "colour": "クラウドグレー",
+        "capacity_ml": 400,
+        "count": 1
+      }
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0FKGNHSYD",
-      "asin": "B0FKGNHSYD",
-      "amazon_title": "エコマーク",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/41JkwCPOX1L._AC_UL320_.jpg",
+      "product_id": "AMZ-B0FGD7GWSY",
+      "asin": "B0FGD7GWSY",
+      "amazon_title": "【パッキン一体型・食洗機対応】 タイガー魔法瓶(TIGER) スープジャー 500ml 保温 保冷 軽量 広口 洗いやすい クラウドブルー MKL-W050AL",
+      "brand": "タイガー",
+      "image_url": "https://m.media-amazon.com/images/I/61HbxXBtu5L._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [],
-      "search_key": "エコマーク"
+      "search_key": "エコマーク",
+      "selected_variant": {
+        "colour": "クラウドブルー",
+        "capacity_ml": 500,
+        "count": 1
+      }
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0FKGFFYJ6",
-      "asin": "B0FKGFFYJ6",
-      "amazon_title": "エコマーク",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/51ZFST8epXL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0HFJRDMHR",
+      "asin": "B0HFJRDMHR",
+      "amazon_title": "Rivers (リバーズ) スープジャーモク 400ml 真空断熱 保温ジャー BPAフリー 軽量 フードジャー ランチ ライム",
+      "brand": "RIVERS",
+      "image_url": "https://m.media-amazon.com/images/I/51ZyL8OVHkL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [],
-      "search_key": "エコマーク"
+      "search_key": "エコマーク",
+      "selected_variant": {
+        "colour": "ライム",
+        "capacity_ml": 400,
+        "count": 1
+      }
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0FKGBZZ56",
-      "asin": "B0FKGBZZ56",
-      "amazon_title": "エコマーク",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/51FQsCdVWZL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0FKGFFYJ6",
+      "asin": "B0FKGFFYJ6",
+      "amazon_title": "【食洗機対応モデル】 サーモス 真空断熱スープジャー 400ml グレージュ 洗いやすさを追求したパッキン一体構造 まる洗ユニット 洗うパーツ3つでお手入れ簡単 保温保冷 JEF-400 GG",
+      "brand": "THERMOS",
+      "image_url": "https://m.media-amazon.com/images/I/51ZFST8epXL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [],
-      "search_key": "エコマーク"
+      "search_key": "エコマーク",
+      "selected_variant": {
+        "colour": "グレージュ",
+        "capacity_ml": 400,
+        "count": 1,
+        "style": "まる洗ユニット"
+      }
     }
   ]
 }

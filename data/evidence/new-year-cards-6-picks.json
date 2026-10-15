@@ -41,81 +41,129 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0G2R6CR98",
-      "asin": "B0G2R6CR98",
-      "amazon_title": "年賀状じまい 年賀はがき【4枚】終活年賀状 お年玉付 ●選べるデザイン 4枚 差出人印刷込み（デザイン：JE05）",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/51zK6E2yRmL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0BCG5JJZ3",
+      "asin": "B0BCG5JJZ3",
+      "amazon_title": "[メイドインたんたん] 年賀状じまい はがき 10枚 年賀状での挨拶をやめる 文章印刷済み (k829花（私製10枚)",
+      "brand": "メイドインたんたん",
+      "image_url": "https://m.media-amazon.com/images/I/51k1ZBd8+FL._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [],
-      "search_key": "年賀状じまい 年賀はがき 終活年賀状 お年玉付 ●選べるデザイン"
+      "search_key": "年賀状じまい 年賀はがき 終活年賀状 お年玉付 ●選べるデザイン",
+      "selected_variant": {
+        "design": "k829花",
+        "count": 10,
+        "postage_included": false,
+        "preprinted_text": "年賀状じまい",
+        "year_specific": false
+      }
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0FWC7VQHS",
-      "asin": "B0FWC7VQHS",
-      "amazon_title": "年賀状じまいハガキ 10枚 私製はがき アルファプリントサービス〈S-NJ214 彩り〉",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/51UMrGyldUL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0BCHVM7ZP",
+      "asin": "B0BCHVM7ZP",
+      "amazon_title": "年賀状じまいハガキ 10枚 私製はがき アルファプリントサービス〈S-NJ202 コスモス〉",
+      "brand": "アルファプリントサービス",
+      "image_url": "https://m.media-amazon.com/images/I/61RFZPw8YrL._AC_SL1057_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [],
-      "search_key": "年賀状じまいハガキ 10枚 私製はがき アルファプリントサービス"
+      "search_key": "年賀状じまいハガキ 10枚 私製はがき アルファプリントサービス",
+      "selected_variant": {
+        "design": "S-NJ202 コスモス",
+        "count": 10,
+        "postage_included": false,
+        "preprinted_text": "年賀状じまい",
+        "year_specific": false
+      }
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0FTYN9LD4",
-      "asin": "B0FTYN9LD4",
-      "amazon_title": "年賀状じまい文章付き 喪中はがき 10枚 インクジェット対応 弔事用私製ハガキ アルファプリントサービス〈S-MJ204 優花〉",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/51MJLirC6kL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0DT42RHZZ",
+      "asin": "B0DT42RHZZ",
+      "amazon_title": "年賀状じまい文章付き 喪中はがき 10枚（時代変遷）インクジェット対応 弔事用私製ハガキ アルファプリントサービス〈S-MJ202 胡蝶蘭〉",
+      "brand": "アルファプリントサービス",
+      "image_url": "https://m.media-amazon.com/images/I/51s5PXIzwSL._AC_SL1057_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [],
-      "search_key": "年賀状じまい文章付き 喪中はがき 10枚 インクジェット対応 弔"
+      "search_key": "年賀状じまい文章付き 喪中はがき 10枚 インクジェット対応 弔",
+      "selected_variant": {
+        "design": "S-MJ202 胡蝶蘭",
+        "count": 10,
+        "postage_included": false,
+        "preprinted_text": "喪中・年賀状じまい（時代変遷）",
+        "inkjet_compatible": true,
+        "year_specific": false
+      }
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0FTGB1P85",
-      "asin": "B0FTGB1P85",
-      "amazon_title": "喪中はがき 20枚 年賀状じまい文/手書き記入式 私製はがき パピレイ MJF-214-20",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71N7WwD1cJL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0FTYMW3VF",
+      "asin": "B0FTYMW3VF",
+      "amazon_title": "年賀状じまい文章付き 喪中はがき 10枚（記入タイプ）インクジェット対応 弔事用私製ハガキ アルファプリントサービス〈S-MJ205 ゆり〉",
+      "brand": "アルファプリントサービス",
+      "image_url": "https://m.media-amazon.com/images/I/51AMKiAJyML._AC_SL1057_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [],
-      "search_key": "喪中はがき 20枚 年賀状じまい文/手書き記入式 私製はがき パ"
+      "search_key": "喪中はがき 20枚 年賀状じまい文/手書き記入式 私製はがき パ",
+      "selected_variant": {
+        "design": "S-MJ205 ゆり",
+        "count": 10,
+        "postage_included": false,
+        "preprinted_text": "喪中・年賀状じまい",
+        "deceased_information": "記入タイプ",
+        "inkjet_compatible": true,
+        "year_specific": false
+      }
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0FTF9B85W",
-      "asin": "B0FTF9B85W",
-      "amazon_title": "パピレイ 年賀状じまい ハガキ 新年お知らせ 10枚入り 私製はがき JIM-143",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71R0grAqeRL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0DFFL1RGX",
+      "asin": "B0DFFL1RGX",
+      "amazon_title": "年賀状じまいハガキ 10枚（高齢者向け／文字大きめ）私製はがき アルファプリントサービス〈S-NJ207 秋桜〉",
+      "brand": "アルファプリントサービス",
+      "image_url": "https://m.media-amazon.com/images/I/61yJCoX+mzL._AC_SL1057_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [],
-      "search_key": "パピレイ 年賀状じまい ハガキ 新年お知らせ 10枚入り 私製は"
+      "search_key": "パピレイ 年賀状じまい ハガキ 新年お知らせ 10枚入り 私製は",
+      "selected_variant": {
+        "design": "S-NJ207 秋桜",
+        "count": 10,
+        "postage_included": false,
+        "preprinted_text": "年賀状じまい",
+        "type": "文字大きめ",
+        "year_specific": false
+      }
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0FT7GPTRS",
-      "asin": "B0FT7GPTRS",
-      "amazon_title": "年賀状 2027 お年玉付き 年賀 はがき【12枚 筆ペン付き】年賀状じまいシール付 ●選べるデザイン 差出人印刷込み（デザイン：HA127）",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61ecFqxx0fL._AC_UL320_.jpg",
+      "product_id": "AMZ-B07ZKGMY5M",
+      "asin": "B07ZKGMY5M",
+      "amazon_title": "コクヨ カラーLBPPPC用はがき用紙 両面50枚 [LBP-F2630] 2個セット",
+      "brand": "コクヨ",
+      "image_url": "https://m.media-amazon.com/images/I/51FSR5NU7uL._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [],
-      "search_key": "年賀状 2027 お年玉付き 年賀 はがき 年賀状じまいシール付"
+      "search_key": "年賀状 2027 お年玉付き 年賀 はがき 年賀状じまいシール付",
+      "selected_variant": {
+        "manufacturer_reference": "LBP-F2630",
+        "sheets_per_pack": 50,
+        "pack_count": 2,
+        "total_sheets": 100,
+        "type": "両面はがき用紙",
+        "year_specific": false,
+        "preprinted_new_year_design": false
+      }
     }
   ]
 }

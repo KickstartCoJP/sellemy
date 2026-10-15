@@ -41,81 +41,124 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0HDNFX278",
-      "asin": "B0HDNFX278",
-      "amazon_title": "美顔器 EMS RF 皮膚科医監修・ペン型 目元ケア 口元 ほうれい線 ラジオ波 赤色LED 温感 約49g 家庭用 UR-TLSP",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/81RD3KTqnJL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0FRQBK244",
+      "asin": "B0FRQBK244",
+      "amazon_title": "パナソニック EH-SB50-W",
+      "brand": "Panasonic",
+      "image_url": "https://m.media-amazon.com/images/I/614N4k0ruaL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "美顔器 EMS RF 皮膚科医監修・ペン型 目元ケア 口元 ほう"
+      "search_key": "美顔器 EMS RF 皮膚科医監修・ペン型 目元ケア 口元 ほう",
+      "model": "パナソニック EH-SB50-W",
+      "selected_variant": {
+        "model": "EH-SB50-W",
+        "color": "ホワイト",
+        "pack_count": 1
+      }
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0HBB66KS8",
-      "asin": "B0HBB66KS8",
-      "amazon_title": "ヘア＆フェイシャル用スチーマー 2-in-1 – ナノイオン蒸気による深い保湿、アームの長さ調節可能、お手入れ簡単な広口タンク、家庭用・サロン用",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61wSie5pXNL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0CXDKB3VS",
+      "asin": "B0CXDKB3VS",
+      "amazon_title": "SALONIA ピュアブライトスチーマー SAL22207SL",
+      "brand": "SALONIA",
+      "image_url": "https://m.media-amazon.com/images/I/51EfXC3HlqL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "ヘア＆フェイシャル用スチーマー 2-in-1 – ナノイオン蒸気"
+      "search_key": "ヘア＆フェイシャル用スチーマー 2-in-1 – ナノイオン蒸気",
+      "model": "SALONIA ピュアブライトスチーマー SAL22207SL",
+      "selected_variant": {
+        "model": "SAL22207SL",
+        "color": "グレー",
+        "set": "Amazon限定ステッカー付き",
+        "pack_count": 1
+      }
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0GXJPNYXG",
-      "asin": "B0GXJPNYXG",
-      "amazon_title": "Global Recycled Standard",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61curaZ6dtL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0B5T5CY9C",
+      "asin": "B0B5T5CY9C",
+      "amazon_title": "ヤーマン フォトケア YJSB0N",
+      "brand": "YA-MAN",
+      "image_url": "https://m.media-amazon.com/images/I/61kzbWZtWBL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "Global Recycled Standard"
+      "search_key": "Global Recycled Standard",
+      "model": "ヤーマン フォトケア YJSB0N",
+      "selected_variant": {
+        "model": "YJSB0N",
+        "color": "シャンパンゴールド",
+        "pack_count": 1
+      }
     },
     {
       "ref": "p4",
       "product_id": "AMZ-B0GWHPT6X7",
       "asin": "B0GWHPT6X7",
-      "amazon_title": "【美人百花微粒子化スチーマー美顔器部門NO1】ANLAN フェイススチーマー 美顔器 スチーマー 濃密ナノミスト 温熱ケア 美容 保湿 水道水OK 鏡 ノズル調節可能 コンパクト 毛穴ケアスチーマー 顔 髪 乾燥対策 PSE認証済み 誕生日 母の日 プレゼント (紫)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/51u4L6Gmx5L._AC_UL320_.jpg",
+      "amazon_title": "ANLAN フェイススチーマー Z32",
+      "brand": "ANLAN",
+      "image_url": "https://m.media-amazon.com/images/I/51u4L6Gmx5L._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "ANLAN フェイススチーマー 美顔器 スチーマー 濃密ナノミス"
+      "search_key": "ANLAN フェイススチーマー 美顔器 スチーマー 濃密ナノミス",
+      "model": "Z32",
+      "selected_variant": {
+        "model": "Z32",
+        "color": "紫",
+        "pack_count": 1,
+        "upc": "780745780909",
+        "included": [
+          "本体",
+          "取扱説明書"
+        ]
+      }
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0GTYF6L5Q",
-      "asin": "B0GTYF6L5Q",
-      "amazon_title": "フェイススチーマー オゾンスチーマー 加湿器 顔 美顔器 （ 伸縮アーム付き360°回転）卓上プロ用スチーマー 400ml大容量タンク美容・スパ・家庭用フェイシャルスチーマー、",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61mccwzp3iL._AC_UL320_.jpg",
+      "product_id": "AMZ-B09HG8RB88",
+      "asin": "B09HG8RB88",
+      "amazon_title": "パナソニック EH-SA3C-N",
+      "brand": "パナソニック",
+      "image_url": "https://m.media-amazon.com/images/I/61N3lNpqLuL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "フェイススチーマー オゾンスチーマー 加湿器 顔 美顔器 （ 伸"
+      "search_key": "フェイススチーマー オゾンスチーマー 加湿器 顔 美顔器 （ 伸",
+      "model": "パナソニック EH-SA3C-N",
+      "selected_variant": {
+        "model": "EH-SA3C-N",
+        "color": "ゴールド調",
+        "type": "コンパクト温スチーム",
+        "pack_count": 1
+      }
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0GGRX17FQ",
-      "asin": "B0GGRX17FQ",
-      "amazon_title": "スチーマー美顔器 濃密ナノミスト 毛穴ケア 保湿 温熱ケアフェイススチーマー アロマ機能付き 顔 髪 乾燥対策美容家電 URUFEE",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/511K1LJ10kL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0BN35NNH3",
+      "asin": "B0BN35NNH3",
+      "amazon_title": "FESTINO SMHB-033",
+      "brand": "FESTINO",
+      "image_url": "https://m.media-amazon.com/images/I/51HCXYQZIDL._AC_SL1200_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "スチーマー美顔器 濃密ナノミスト 毛穴ケア 保湿 温熱ケアフェイ"
+      "search_key": "スチーマー美顔器 濃密ナノミスト 毛穴ケア 保湿 温熱ケアフェイ",
+      "model": "FESTINO SMHB-033",
+      "selected_variant": {
+        "model": "SMHB-033",
+        "color": "サンドベージュ",
+        "pack_count": 1
+      }
     }
   ]
 }

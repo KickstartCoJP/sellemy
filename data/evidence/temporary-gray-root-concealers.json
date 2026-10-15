@@ -40,9 +40,9 @@
     {
       "amazon_title": "Yvonne 白髪隠しスティック コーム一体型 生え際・根元カバー 一時着色 手を汚しにくい 携帯用 20g (#03 コーヒーブラウン)",
       "asin": "B0HHHPSFPB",
-      "brand": "",
+      "brand": "Yvonne",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61OsldxdGbL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61OsldxdGbL._AC_SL1254_.jpg",
       "matched_comparison_axes": [
         "application_area",
         "formula_and_shade"
@@ -51,30 +51,49 @@
       "product_id": "AMZ-B0HHHPSFPB",
       "ref": "p1",
       "search_key": "Yvonne 白髪隠しスティック コーム一体型 生え際・根元カバ",
-      "selection_score": 0.67
+      "selection_score": 0.67,
+      "selected_variant": {
+        "color": "#03 コーヒーブラウン",
+        "size": "20g",
+        "capacity": "20g",
+        "pack_and_contents": "コーム一体型スティック1本",
+        "selected_variations": {
+          "color_name": "#03 コーヒーブラウン"
+        }
+      }
     },
     {
-      "amazon_title": "Yvonne 白髪隠しスティック コーム一体型 生え際・根元カバー 一時着色 手を汚しにくい 携帯用 20g (#02 ブラックブラウン)",
-      "asin": "B0HHHLB36Z",
-      "brand": "",
+      "amazon_title": "綺和美 白髪隠し 白髪かくし 白髪染め スティック ダークブラウン 部分染め 生え際",
+      "asin": "B00EPYLGMS",
+      "brand": "綺和美",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61ikn-GGPhL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61ocaoZonAL._AC_SL1200_.jpg",
       "matched_comparison_axes": [
         "application_area",
         "formula_and_shade"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0HHHLB36Z",
+      "product_id": "AMZ-B00EPYLGMS",
       "ref": "p2",
       "search_key": "Yvonne 白髪隠しスティック コーム一体型 生え際・根元カバ",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": {
+        "color": "ダークブラウン",
+        "size": "1本 (20グラム)",
+        "capacity": "20g",
+        "pack_and_contents": "ポンプ式カラーリングブラシ1本",
+        "selected_variations": {
+          "size_name": "1本 (20グラム)",
+          "color_name": "ダークブラウン"
+        }
+      }
     },
     {
       "amazon_title": "Yvonne ヘアカラーパウダー 白髪・生え際カバー パフ一体型 ミラー付き 物理着色 自然な仕上がり 12g (#01 ブラック)",
       "asin": "B0HHHKFCLB",
-      "brand": "",
+      "brand": "Yvonne",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61XqVnoAYFL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61XqVnoAYFL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "application_area",
         "formula_and_shade"
@@ -83,14 +102,23 @@
       "product_id": "AMZ-B0HHHKFCLB",
       "ref": "p3",
       "search_key": "Yvonne ヘアカラーパウダー 白髪・生え際カバー パフ一体型",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": {
+        "color": "#01 ブラック",
+        "size": "12g",
+        "capacity": "12g",
+        "pack_and_contents": "粉末本体＋パフ＋ミラー1点",
+        "selected_variations": {
+          "color_name": "#01 ブラック"
+        }
+      }
     },
     {
       "amazon_title": "ヘアラインシャドウ 3色 防水 生え際 分け目 カバー 薄毛 隠し ナチュラル",
       "asin": "B0HH87CLC6",
-      "brand": "",
+      "brand": "Qin Derdom",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/613w6kGQfBL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/613w6kGQfBL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "application_area"
       ],
@@ -98,14 +126,24 @@
       "product_id": "AMZ-B0HH87CLC6",
       "ref": "p4",
       "search_key": "ヘアラインシャドウ 3色 防水 生え際 分け目 カバー 薄毛 隠",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": {
+        "color": "#03 ライトブラウン",
+        "size": "1本",
+        "capacity": "N/A（販売単位は1本、グラム量での選択なし）",
+        "pack_and_contents": "スポンジヘッド付き1本",
+        "selected_variations": {
+          "color_name": "#03 ライトブラウン",
+          "size_name": "1本"
+        }
+      }
     },
     {
       "amazon_title": "One. ワンドット クイックヘアカバーショット ヘアファンデーション 白髪隠し 分け目・生え際カバー 浮き毛ケア パフ付き 6g ダークブラウン 1点",
       "asin": "B0H1W1CCK2",
-      "brand": "",
+      "brand": "One.",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51UCEgaGyCL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51UCEgaGyCL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "application_area"
       ],
@@ -113,14 +151,24 @@
       "product_id": "AMZ-B0H1W1CCK2",
       "ref": "p5",
       "search_key": "One. ワンドット クイックヘアカバーショット ヘアファンデー",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": {
+        "color": "ダークブラウン",
+        "size": "1点",
+        "capacity": "6g",
+        "pack_and_contents": "本体＋パフ1点",
+        "selected_variations": {
+          "color_name": "ダークブラウン",
+          "size_name": "1点"
+        }
+      }
     },
     {
       "amazon_title": "最新【正規品】ララチュー ヘアファンデーション プレミアムEX レフィル ダークブラウン lalachuu 白髪隠し ボリュームアップ 薄毛隠し 増毛 抜け毛 円形脱毛症 生え際 (ダークブラウン, 9g)",
       "asin": "B0GRTDS8F7",
-      "brand": "",
+      "brand": "ララチュー",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61lwjL1eQvL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61lwjL1eQvL._AC_SL1000_.jpg",
       "matched_comparison_axes": [
         "application_area"
       ],
@@ -128,7 +176,14 @@
       "product_id": "AMZ-B0GRTDS8F7",
       "ref": "p6",
       "search_key": "最新 ララチュー ヘアファンデーション プレミアムEX レフィル",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": {
+        "color": "ダークブラウン",
+        "size": "レフィル",
+        "capacity": "9g",
+        "pack_and_contents": "詰替レフィル1個",
+        "selected_variations": {}
+      }
     }
   ],
   "selection": {

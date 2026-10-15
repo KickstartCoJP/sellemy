@@ -54,11 +54,11 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0C9TLCFBX",
-      "asin": "B0C9TLCFBX",
-      "amazon_title": "新田ゼラチン ハピコラサプリ (180粒 / ブルーベリーの香り) タブレットで手軽にコラーゲン補給 コラーゲンサプリ (コラーゲンペプチド 2,500mg配合 / プロアントシアニジン / ビタミンB2 B6 C E) コラーゲン 美容",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/41alsEI7-EL._AC_UL320_.jpg",
+      "product_id": "AMZ-B014CAWENY",
+      "asin": "B014CAWENY",
+      "amazon_title": "DHC コラーゲン 徳用90日分",
+      "brand": "DHC",
+      "image_url": "https://m.media-amazon.com/images/I/61Vxtb55yXL._AC_SL1000_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.865,
@@ -67,45 +67,51 @@
         "ingredients",
         "taste"
       ],
-      "search_key": "新田ゼラチン ハピコラサプリ (180粒 / ブルーベリーの香り"
+      "search_key": "新田ゼラチン ハピコラサプリ (180粒 / ブルーベリーの香り",
+      "model": "コラーゲン 徳用90日分 / JAN4511413403990",
+      "selected_variant": "540粒・1袋"
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0H9QGCN26",
-      "asin": "B0H9QGCN26",
-      "amazon_title": "5大成分＋ビタミン8種類ミネラル成分(60日分)特許成分【非変性】金のプロテオグリカン【非変性】金のイタドリ【非変性】金のⅡ型コラーゲン、ロコモオールインワンのチカラ",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/81FVpZJZTCL._AC_UL320_.jpg",
+      "product_id": "AMZ-B08WLKKDS7",
+      "asin": "B08WLKKDS7",
+      "amazon_title": "ファンケル ディープチャージ コラーゲン",
+      "brand": "ファンケル",
+      "image_url": "https://m.media-amazon.com/images/I/61rZfEDO48L._AC_SL1200_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [
         "ingredients"
       ],
-      "search_key": "5大成分＋ビタミン8種類ミネラル成分(60日分)特許成分 金のプ"
+      "search_key": "5大成分＋ビタミン8種類ミネラル成分(60日分)特許成分 金のプ",
+      "model": "5935 / 機能性表示食品G164",
+      "selected_variant": "30日分180粒・1袋"
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0H31TJZRV",
-      "asin": "B0H31TJZRV",
-      "amazon_title": "【60日分】50倍濃縮プラセンタ13500mg +４大美容成分 ピュアセラム プラセンタ ナイアシンアミド CICA 超低分子コラーゲン 日本製 美肌 美容 サプリ 美容クリニック監修 セラミド エラスチン 大豆イソフラボン配合",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/81oypjBJXTL._AC_UL320_.jpg",
+      "product_id": "AMZ-B07NPSLX52",
+      "asin": "B07NPSLX52",
+      "amazon_title": "明治 アミノコラーゲン プレミアム",
+      "brand": "明治",
+      "image_url": "https://m.media-amazon.com/images/I/71N9DVV8qLL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [
         "ingredients"
       ],
-      "search_key": "50倍濃縮プラセンタ13500mg +４大美容成分 ピュアセラム"
+      "search_key": "50倍濃縮プラセンタ13500mg +４大美容成分 ピュアセラム",
+      "model": "アミノコラーゲンプレミアム98g / JAN4902777302768",
+      "selected_variant": "98g・約14日分・1袋"
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0GXK6CHBM",
-      "asin": "B0GXK6CHBM",
-      "amazon_title": "【高濃度 アスタキサンチン 12mg 60日分 + 美容成分26種】日本製 サプリ レチノール（ビタミンA） ナイアシンアミド グルタチオン酵母 リポソームビタミンC CICA セラミド ルテイン マルチビタミン 1日1粒 美容クリニック監修 AstaiN あすたきさんちん",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71yfhlm-O+L._AC_UL320_.jpg",
+      "product_id": "AMZ-B0DRP4MP67",
+      "asin": "B0DRP4MP67",
+      "amazon_title": "資生堂 ザ・コラーゲン〈パウダー〉",
+      "brand": "資生堂",
+      "image_url": "https://m.media-amazon.com/images/I/61rCS8hTRaL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
@@ -113,15 +119,17 @@
         "format",
         "ingredients"
       ],
-      "search_key": "日本製 サプリ レチノール（ビタミンA） ナイアシンアミド グル"
+      "search_key": "日本製 サプリ レチノール（ビタミンA） ナイアシンアミド グル",
+      "model": "H61601",
+      "selected_variant": "126g・1袋・2025年発売品"
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0FWBKBDYX",
-      "asin": "B0FWBKBDYX",
-      "amazon_title": "ナンバーサプリ21 プラセンタ サプリ 1袋に50倍濃縮 450,000mg 美容 サプリメント 12成分配合 国産 無添加 90粒 30日分",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/713T4niBhnL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0DT5B6KS3",
+      "asin": "B0DT5B6KS3",
+      "amazon_title": "アース製薬 コラーゲンCゼリー ピーチ味",
+      "brand": "アース製薬",
+      "image_url": "https://m.media-amazon.com/images/I/61Mb1pi4dhL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
@@ -129,22 +137,26 @@
         "format",
         "ingredients"
       ],
-      "search_key": "ナンバーサプリ21 プラセンタ サプリ 1袋に50倍濃縮 450"
+      "search_key": "ナンバーサプリ21 プラセンタ サプリ 1袋に50倍濃縮 450",
+      "model": "コラーゲンCゼリー ピーチ味34本入",
+      "selected_variant": "10g×34本・ピーチ/ライチ果汁22%・1箱"
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0F9WL32ZS",
-      "asin": "B0F9WL32ZS",
-      "amazon_title": "【高純度99％ β-NMN18000mg×臨床試験済×薬剤師監修】MyWellsy NMN サプリメント サプリ 日本製 30日分×2袋 21種美容成分 コラーゲン ヒアルロン酸 プラセンタ エクソソーム レスベラトロール 耐酸性カプセル 国内GMP工場 国産 マイウェルシー (90日分)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61RRSXnr3YL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0CSK1NLH6",
+      "asin": "B0CSK1NLH6",
+      "amazon_title": "新田ゼラチン コラゲネイド ビタミンゼリー 柚子レモン味",
+      "brand": "新田ゼラチン",
+      "image_url": "https://m.media-amazon.com/images/I/61-ecHoC+1L._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [
         "ingredients"
       ],
-      "search_key": "MyWellsy NMN サプリメント サプリ 日本製 30日分"
+      "search_key": "MyWellsy NMN サプリメント サプリ 日本製 30日分",
+      "model": "101012",
+      "selected_variant": "20g×15本・1箱"
     }
   ]
 }

@@ -36,83 +36,93 @@
   "eyecatch_image": "https://www.sellemy.jp/img/hand-blenders-for-cooking/hand-blenders-for-cooking.png",
   "products": [
     {
-      "amazon_title": "ブラウン ハンドブレンダー マルチクイック7 MQ7035IGWH 簡単操作 時短 離乳食 下ごしらえ スムージー スープ つぶす 混ぜる 泡立て きざむ みじん切り 氷 大根おろし 1台6役 ハイパワー400W お手入れ簡単 食洗機 ドイツ設計 直感操作 500mlチョッパー 【2026年パッケージマイナーチェンジ】",
-      "asin": "B0GJRTWHNF",
-      "brand": "",
+      "amazon_title": "ブラウン ハンドブレンダー マルチクイック7 1台11役 400W つぶす 混ぜる 泡立てる きざむ おろす ブラック/シルバー MQ7085XBG",
+      "asin": "B0FTMS88CG",
+      "brand": "ブラウン",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71X3o95MLjL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71ZKcaTOhtL._AC_SX300_SY300_QL70_ML2_.jpg",
       "matched_comparison_axes": [
         "attachments_care",
         "food_compatibility"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0GJRTWHNF",
+      "product_id": "AMZ-B0FTMS88CG",
       "ref": "p1",
       "search_key": "ブラウン ハンドブレンダー マルチクイック7 MQ7035IGW",
-      "selection_score": 0.67
+      "selection_score": 0.67,
+      "model": "Braun MQ7085XBG",
+      "selected_variant": "ブラック/シルバー、MQ7085XBGセット"
     },
     {
-      "amazon_title": "ハンドブレンダー 500Wハイパワー 1台3役「つぶす・混ぜる・泡立てる」 ブレンダー ジューサー/スムージー/離乳食/スープ/マヨネーズ/氷も砕ける",
-      "asin": "B0HFRMB4M2",
-      "brand": "",
+      "amazon_title": "テスコム ハンドブレンダー ハンドミキサー < つぶす まぜる きざむ おろす 泡立てる > 食洗器対応 ラク抜きプラグ レシピブック付き 離乳食 金属製 正規品 TBL30A-W",
+      "asin": "B0CJDNRMXW",
+      "brand": "テスコム",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61DPIb8fS4L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71vT3BloDzL._AC_SY300_SX300_QL70_ML2_.jpg",
       "matched_comparison_axes": [
         "food_compatibility"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0HFRMB4M2",
+      "product_id": "AMZ-B0CJDNRMXW",
       "ref": "p2",
       "search_key": "ハンドブレンダー 500Wハイパワー 1台3役「つぶす・混ぜる",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "model": "TESCOM TBL30A-W",
+      "selected_variant": "ホワイト、1台5役セット"
     },
     {
-      "amazon_title": "sology (ソロジー) 1台5役 氷も砕ける 電動 ハンドブレンダー (容量 300ml / チタンコート 刃)",
-      "asin": "B0GF7LF7GV",
-      "brand": "",
+      "amazon_title": "パナソニック ブレンダー ハンドブレンダー 1台4役(混ぜる/つぶす/きざむ/泡立て)離乳食 速度調整 誤使用防止設計 レシピブック付 ホワイト MX-S302-W",
+      "asin": "B088G2HDCH",
+      "brand": "パナソニック",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71dtMZ1y8eL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61ksFco+11L._AC_SX300_SY300_QL70_ML2_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0GF7LF7GV",
+      "product_id": "AMZ-B088G2HDCH",
       "ref": "p3",
       "search_key": "sology (ソロジー) 1台5役 氷も砕ける 電動 ハンドブ",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "model": "Panasonic MX-S302-W",
+      "selected_variant": "ホワイト、1台4役セット"
     },
     {
-      "amazon_title": "ハンドブレンダー【無段階変速・氷も砕ける】ブレンダー 1台多役 電動ミキサー フードプロセッサー 鍋キズ防止 離乳食/スムージー/スープ",
-      "asin": "B0G4RJVCKW",
-      "brand": "",
+      "amazon_title": "BRUNO ブルーノ マルチスティックブレンダー2 離乳食 1台5役 (混ぜる つぶす 刻む 砕く 泡立てる) アイボリー ギフト プレゼント お祝い 人気 キッチン家電 ミキサー フードミキサー フードプロセッサー 氷も砕ける 泡立て 泡立て器 洗いやすい おしゃれ かわいい 刻む 氷対応 初心者 つぶす アタッチメント 5役 BOE140-IV",
+      "asin": "B0F161NNQF",
+      "brand": "BRUNO",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61xceIDAWpL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61CbDj8QIcL._AC_SX300_SY300_QL70_ML2_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0G4RJVCKW",
+      "product_id": "AMZ-B0F161NNQF",
       "ref": "p4",
       "search_key": "ハンドブレンダー ブレンダー 1台多役 電動ミキサー フードプロ",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "model": "BRUNO BOE140-IV",
+      "selected_variant": "アイボリー、マルチスティックブレンダー2、5役セット"
     },
     {
-      "amazon_title": "ブラウン ハンドブレンダー マルチクイック7 MQ7085XBG つぶす 混ぜる 泡立てる かき混ぜる きざむ おろす スライス 千切り こねる 時短 離乳食 ギフト プレゼント 400W 1台11役 ドイツ設計 簡単お手入れ",
-      "asin": "B0FTMS88CG",
-      "brand": "",
+      "amazon_title": "ティファール ハンドブレンダー「ハンドブレンダー べビーマルチ」 HB65H8JPA",
+      "asin": "B09N6K39Q7",
+      "brand": "T-fal",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71ZKcaTOhtL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61gXWz0dLnL._AC_SY300_SX300_QL70_ML2_.jpg",
       "matched_comparison_axes": [
         "food_compatibility"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0FTMS88CG",
+      "product_id": "AMZ-B09N6K39Q7",
       "ref": "p5",
       "search_key": "ブラウン ハンドブレンダー マルチクイック7 MQ7085XBG",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "model": "T-fal HB65H8JPA",
+      "selected_variant": "ハンドブレンダー ベビーマルチ、1台6役"
     },
     {
       "amazon_title": "ZWILLING ツヴィリング 「 エクステンド ハンドブレンダー スターターセット (バッテリー・チャージャー付) 」 ブレンダー コードレス 簡単操作 時短 軽量 静音 離乳食 スムージー スープ つぶす まぜる 【日本正規販売品】 XTEND Z1030-457",
       "asin": "B0F42GHS1M",
-      "brand": "",
+      "brand": "ツヴィリング",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51XQGa3lt7L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51XQGa3lt7L._AC_SX300_SY300_QL70_ML2_.jpg",
       "matched_comparison_axes": [
         "food_compatibility"
       ],
@@ -120,7 +130,9 @@
       "product_id": "AMZ-B0F42GHS1M",
       "ref": "p6",
       "search_key": "ZWILLING ツヴィリング 「 エクステンド ハンドブレンダ",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "model": "ZWILLING XTEND Z1030-457",
+      "selected_variant": "ブラック、スターターセット、バッテリー・チャージャー付き"
     }
   ],
   "selection": {

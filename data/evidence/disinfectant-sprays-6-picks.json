@@ -55,11 +55,11 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B07WSMHYJK",
-      "asin": "B07WSMHYJK",
-      "amazon_title": "クイックル 【まとめ買い】 joan(ジョアン) 除菌スプレー ノンアルコール 香り気にならない微香性 本体 + 詰め替え 計550ml",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/613uwDsmx6L._AC_UL320_.jpg",
+      "product_id": "AMZ-B0HJY71X6Q",
+      "asin": "B0HJY71X6Q",
+      "amazon_title": "クイックル Joan(ジョアン) 除菌スプレー ノンアルコール 香り気にならない微香性 本体 300ml (× 2)",
+      "brand": "花王",
+      "image_url": "https://m.media-amazon.com/images/I/51IpVdF8A7L._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 1.07,
@@ -69,43 +69,61 @@
         "portability",
         "price"
       ],
-      "search_key": "クイックル joan(ジョアン) 除菌スプレー ノンアルコール"
+      "search_key": "クイックル joan(ジョアン) 除菌スプレー ノンアルコール",
+      "model": "花王 クイックル Joan 除菌スプレー",
+      "selected_variant": {
+        "volume": "300ml",
+        "quantity": 2,
+        "package": "スプレー本体2個"
+      }
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0HBRGW9N8",
-      "asin": "B0HBRGW9N8",
-      "amazon_title": "【医療機関使用実績あり| 強力消臭除菌99.9%】 プレミアム 超強力消臭スプレー 有効成分2倍 \"プロ仕様業務用\" 除菌 強力 大容量 500ml",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61Klf+Z5KXL._AC_UL320_.jpg",
+      "product_id": "AMZ-B007QAVHPO",
+      "asin": "B007QAVHPO",
+      "amazon_title": "ジェームズマーティン フレッシュサニタイザー 500mlスプレー入り",
+      "brand": "JAMES MARTIN",
+      "image_url": "https://m.media-amazon.com/images/I/51ylC-myggL._AC_SL1000_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [
         "price"
       ],
-      "search_key": "プレミアム 超強力消臭スプレー 有効成分2倍 \"プロ仕様業務用\""
+      "search_key": "プレミアム 超強力消臭スプレー 有効成分2倍 \"プロ仕様業務用\"",
+      "model": "ジェームズマーティン フレッシュサニタイザー",
+      "selected_variant": {
+        "volume": "500ml",
+        "quantity": 1,
+        "package": "スプレー本体"
+      }
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0GZ9NLH8T",
-      "asin": "B0GZ9NLH8T",
-      "amazon_title": "[DASH] 消臭スプレー【消臭・除菌・防臭】【第三者機関試験済】お部屋 玄関 トイレ リビング 衣類 ファブリック 強力消臭 スピード除菌",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71mh3evqI-L._AC_UL320_.jpg",
+      "product_id": "AMZ-B0CYZ47V6D",
+      "asin": "B0CYZ47V6D",
+      "amazon_title": "サラヤ 食品添加物アルコール製剤 アルペットNV 500ml スプレー付 40079",
+      "brand": "サラヤ",
+      "image_url": "https://m.media-amazon.com/images/I/61ZxkTG-ngL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "消臭スプレー お部屋 玄関 トイレ リビング 衣類 ファブリック"
+      "search_key": "消臭スプレー お部屋 玄関 トイレ リビング 衣類 ファブリック",
+      "model": "SARAYA アルペットNV 40079",
+      "selected_variant": {
+        "volume": "500ml",
+        "quantity": 1,
+        "package": "スプレー付"
+      }
     },
     {
       "ref": "p4",
       "product_id": "AMZ-B0FT86F572",
       "asin": "B0FT86F572",
       "amazon_title": "除菌スプレー Sourif (スリーフ) 500ml ウイルス 菌 消臭 ノンアルコール 水の成分99.9%以上 赤ちゃん ベビー キッズ 安心 除菌 無刺激 テーブル キッチン 花粉 スプレー 花粉対策 大容量 2年間保存OK 日本製 キュービックスクエア",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/51yDOXqpkJL._AC_UL320_.jpg",
+      "brand": "Sourif",
+      "image_url": "https://m.media-amazon.com/images/I/51yDOXqpkJL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
@@ -114,35 +132,53 @@
         "gentleness",
         "price"
       ],
-      "search_key": "除菌スプレー Sourif (スリーフ) 500ml ウイルス"
+      "search_key": "除菌スプレー Sourif (スリーフ) 500ml ウイルス",
+      "model": "Sourif スリーフ",
+      "selected_variant": {
+        "volume": "500ml",
+        "quantity": 1
+      }
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0FJLZ1YB6",
-      "asin": "B0FJLZ1YB6",
-      "amazon_title": "アルコール除菌 キッチン用 スプレー 本体400ml ×2個 【食卓・調理台の除菌・消臭】 抗菌1ヵ月持続 100%天然生まれ +おまけ付",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61jBZYUq9pL._AC_UL320_.jpg",
+      "product_id": "AMZ-B08LLBVDT1",
+      "asin": "B08LLBVDT1",
+      "amazon_title": "アルコール除菌 食品用アルコール除菌フードキーパー 300ml",
+      "brand": "フマキラー",
+      "image_url": "https://m.media-amazon.com/images/I/610ofMIUIxL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [
         "efficacy"
       ],
-      "search_key": "アルコール除菌 キッチン用 スプレー 本体400ml ×2個 抗"
+      "search_key": "アルコール除菌 キッチン用 スプレー 本体400ml ×2個 抗",
+      "model": "フマキラー 食品用アルコール除菌フードキーパー",
+      "selected_variant": {
+        "volume": "300ml",
+        "quantity": 1,
+        "jan": "4902424445817",
+        "package": "スプレー本体"
+      }
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0D9N6QY7S",
-      "asin": "B0D9N6QY7S",
-      "amazon_title": "シューズスプレー 180ml 靴 消臭スプレー 99.9% 徹底消臭 靴クリーナー 消臭・除菌・除湿の 靴のニオイ 悩みに終止符 (1本)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61MsjdyrKjL._AC_UL320_.jpg",
+      "product_id": "AMZ-B001JZ0DBG",
+      "asin": "B001JZ0DBG",
+      "amazon_title": "ドーバー パストリーゼ77 スプレーヘッド付 500ml 【HTRC3】",
+      "brand": "ドーバー",
+      "image_url": "https://m.media-amazon.com/images/I/61dC04k2a2L._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "シューズスプレー 180ml 靴 消臭スプレー 99.9% 徹底"
+      "search_key": "シューズスプレー 180ml 靴 消臭スプレー 99.9% 徹底",
+      "model": "ドーバー パストリーゼ77",
+      "selected_variant": {
+        "volume": "500ml",
+        "quantity": 1,
+        "package": "スプレーヘッド付"
+      }
     }
   ]
 }

@@ -35,11 +35,11 @@
   "eyecatch_image": "https://www.sellemy.jp/img/structured-jacket-coat-hangers/structured-jacket-coat-hangers.png",
   "products": [
     {
-      "amazon_title": "木製ハンガー スーツ 6本組 肩幅広め 型崩れ防止 高級天然木 スーツハンガー 360度回転フック 滑り止めバー付き メンズ レディース ジャケット コート用(ナチュラルな木の色)",
+      "amazon_title": "HAIPAIONE 木製スーツハンガー6本 幅45cm・肩厚5.5cm",
       "asin": "B0H8D8KWG7",
-      "brand": "",
+      "brand": "HAIPAIONE",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71j73X2gZ5L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71j73X2gZ5L._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "hanging_features"
       ],
@@ -47,72 +47,117 @@
       "product_id": "AMZ-B0H8D8KWG7",
       "ref": "p1",
       "search_key": "木製ハンガー スーツ 6本組 肩幅広め 型崩れ防止 高級天然木",
-      "selection_score": 0.48
+      "selection_score": 0.48,
+      "model": "HAIPAIONE 木製スーツハンガー",
+      "selected_variant": {
+        "colour": "天然木色ブラウン",
+        "pack": "6本",
+        "size": "幅45cm、肩厚5.5cm",
+        "material": "天然木、具体樹種未確認"
+      }
     },
     {
-      "amazon_title": "高級木製ハンガー スーツ・コート用 肩厚立体構造 型崩れ防止 360度回転 頑丈 洋服ハンガー 多機能 収納 6本組 ブラウン",
+      "amazon_title": "HaLotus 木製ハンガー6本 幅45×高さ25cmのブラウン",
       "asin": "B0H97XB5B3",
-      "brand": "",
+      "brand": "HaLotus",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61XI6sJlbLL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61XI6sJlbLL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B0H97XB5B3",
       "ref": "p2",
       "search_key": "高級木製ハンガー スーツ・コート用 肩厚立体構造 型崩れ防止 3",
-      "selection_score": 0.3
+      "selection_score": 0.3,
+      "model": "HaLotus 木製ハンガー",
+      "selected_variant": {
+        "colour": "ブラウン",
+        "pack": "6本",
+        "size": "幅45×高さ25cm、最薄部約2.5cmという記載",
+        "material": "天然木、樹種未確認"
+      }
     },
     {
-      "amazon_title": "サワフジ コートハンガー コート革ジャン専用ハンガー ブラック 肩厚68mm【2個セット】日本製 NNC-44",
+      "amazon_title": "サワフジ NNC-44 ブラックの樹脂製コートハンガー2本",
       "asin": "B0GYRHF71H",
-      "brand": "",
+      "brand": "サワフジ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/513B+kgWzsL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/513B+kgWzsL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B0GYRHF71H",
       "ref": "p3",
       "search_key": "サワフジ コートハンガー コート革ジャン専用ハンガー ブラック",
-      "selection_score": 0.3
+      "selection_score": 0.3,
+      "model": "サワフジ NNC-44",
+      "selected_variant": {
+        "colour": "ブラック",
+        "pack": "2本",
+        "material": "本体PP、フックスチール",
+        "size": "詳細44×24×厚6.5cm、タイトル肩厚68mmと不一致",
+        "weight": "1本約210g"
+      }
     },
     {
-      "amazon_title": "クモリ(Kumori) スーツハンガー 天然木×肩幅ワイド かたくずれ防止 ハンガー 木製 滑り止め 360回転 コートハンガー ナチュラル 6本組",
+      "amazon_title": "Kumori 天然木スーツハンガー6本 イジュ材・ナチュラル",
       "asin": "B0GY51WBN2",
-      "brand": "",
+      "brand": "Kumori",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/617jwlTeu3L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/617jwlTeu3L._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B0GY51WBN2",
       "ref": "p4",
       "search_key": "クモリ(Kumori) スーツハンガー 天然木×肩幅ワイド かた",
-      "selection_score": 0.3
+      "selection_score": 0.3,
+      "model": "Kumori 天然木スーツハンガー",
+      "selected_variant": {
+        "colour": "ナチュラル",
+        "pack": "6本",
+        "material": "イジュ材",
+        "size": "幅44.5×高さ23×肩厚5.5cm"
+      }
     },
     {
-      "amazon_title": "クモリ(Kumori) スーツハンガー 天然木×肩幅ワイド かたくずれ防止 ハンガー 木製 滑り止め 360回転 コートハンガー ナチュラル 4本組",
-      "asin": "B0GY4QC642",
-      "brand": "",
+      "amazon_title": "シンコハンガー ザ・ビギー46 肩幅46cm・厚さ9cmの1本",
+      "asin": "B005R2CQYY",
+      "brand": "シンコハンガー",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/511mW8YjT2L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51buSziuAGL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0GY4QC642",
+      "product_id": "AMZ-B005R2CQYY",
       "ref": "p5",
       "search_key": "クモリ(Kumori) スーツハンガー 天然木×肩幅ワイド かた",
-      "selection_score": 0.3
+      "selection_score": 0.3,
+      "model": "シンコハンガー ザ・ビギー46",
+      "selected_variant": {
+        "colour": "ブラック",
+        "pack": "1本",
+        "material": "本体PP、ストップバーHIPS/ラバー加工",
+        "size": "肩幅46×厚9×高さ29cm",
+        "weight": "約322g"
+      }
     },
     {
-      "amazon_title": "クモリ(Kumori) スーツハンガー 天然木×肩幅ワイド かたくずれ防止 ハンガー 木製 滑り止め 360回転 コートハンガー ブラウン 4本組",
-      "asin": "B0GY4JXN12",
-      "brand": "",
+      "amazon_title": "TITIROBA 木製ハンガー4本 スモークブラウン・幅44.5cm",
+      "asin": "B09Q34Y5J1",
+      "brand": "TITIROBA",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61tuxydoeyL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71wJgAIL3KL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0GY4JXN12",
+      "product_id": "AMZ-B09Q34Y5J1",
       "ref": "p6",
       "search_key": "クモリ(Kumori) スーツハンガー 天然木×肩幅ワイド かた",
-      "selection_score": 0.3
+      "selection_score": 0.3,
+      "model": "TITIROBA 木製ハンガー",
+      "selected_variant": {
+        "colour": "スモークブラウン",
+        "pack": "4本",
+        "material": "天然木、金属フック",
+        "size": "幅44.5×高さ23×厚5.5cm",
+        "weight": "1本約220g"
+      }
     }
   ],
   "selection": {

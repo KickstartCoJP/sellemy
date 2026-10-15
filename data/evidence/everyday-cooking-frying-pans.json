@@ -37,11 +37,11 @@
   "eyecatch_image": "https://www.sellemy.jp/img/everyday-cooking-frying-pans/everyday-cooking-frying-pans.png",
   "products": [
     {
-      "amazon_title": "ティファール 取っ手のとれる フライパン 22cm「インジニオ･ネオ IHステンレス ルミエール フライパン」グレースシリーズ同仕様 L89303",
+      "amazon_title": "ティファール インジニオ・ネオ IHステンレス ルミエール フライパン22cm L89303",
       "asin": "B0HDNFW6ZS",
-      "brand": "",
+      "brand": "ティファール",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/716dAn+kaPL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/716dAn+kaPL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "heat_source_and_size",
         "surface_and_cooking_conditions"
@@ -50,14 +50,21 @@
       "product_id": "AMZ-B0HDNFW6ZS",
       "ref": "p1",
       "search_key": "ティファール 取っ手のとれる フライパン 22cm「インジニオ･",
-      "selection_score": 0.66
+      "selection_score": 0.66,
+      "model": "L89303",
+      "selected_variant": {
+        "model": "L89303",
+        "size": "22cm",
+        "quantity": 1,
+        "handle_included": false
+      }
     },
     {
-      "amazon_title": "ナンセンジャパン 底が広い フライパン 18cm IH対応 ガス火対応 目玉焼きが一気に2個焼ける 縁をフランジ加工して強度UP",
+      "amazon_title": "ナンセンジャパン 底が広〜いフライパン2 18cm",
       "asin": "B0H4QS85CX",
-      "brand": "",
+      "brand": "ナンセンジャパン",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/31Nq1SxlXRL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/31Nq1SxlXRL._AC_SX300_SY300_QL70_ML2_.jpg",
       "matched_comparison_axes": [
         "heat_source_and_size"
       ],
@@ -65,69 +72,104 @@
       "product_id": "AMZ-B0H4QS85CX",
       "ref": "p2",
       "search_key": "ナンセンジャパン 底が広い フライパン 18cm IH対応 ガス",
-      "selection_score": 0.3
+      "selection_score": 0.3,
+      "model": "底が広〜いフライパン2（2023年フランジ加工モデル）",
+      "selected_variant": {
+        "model": "底が広〜いフライパン2（2023年フランジ加工モデル）",
+        "size": "18cm",
+        "quantity": 1,
+        "manufacturer_catalog_jan": "4560255099205",
+        "amazon_jan_observed": false
+      }
     },
     {
-      "amazon_title": "フライパン 20cm ステンレス ハイブリッド ノンスティック加工 蓋付き PFOAフリー IH・ガス火対応",
-      "asin": "B0GXTC8JT7",
-      "brand": "",
+      "amazon_title": "ビタクラフト スーパー鉄 フライパン26cm No.2002",
+      "asin": "B01LXOCMYQ",
+      "brand": "ビタクラフト",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71Mle6-emSL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/511Src38IGL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "heat_source_and_size",
         "surface_and_cooking_conditions"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0GXTC8JT7",
+      "product_id": "AMZ-B01LXOCMYQ",
       "ref": "p3",
       "search_key": "フライパン 20cm ステンレス ハイブリッド ノンスティック加",
-      "selection_score": 0.3
+      "selection_score": 0.3,
+      "model": "2002",
+      "selected_variant": {
+        "model": "2002",
+        "size": "26cm",
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "SENSARTE 炒め鍋 22cm 中華鍋 IH/ガス火対応 焦げ付かない PFOAフリー 蓋付き 深型フライパン 一年保証 ブラック",
-      "asin": "B0GVY1359F",
-      "brand": "",
+      "amazon_title": "サーモス デュラブルシリーズ 炒め鍋26cm KFM-026D レッド",
+      "asin": "B0CTMG84SY",
+      "brand": "サーモス",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61N85KqOQML._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51PEUa3i-PL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "heat_source_and_size"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0GVY1359F",
+      "product_id": "AMZ-B0CTMG84SY",
       "ref": "p4",
       "search_key": "SENSARTE 炒め鍋 22cm 中華鍋 IH/ガス火対応 焦",
-      "selection_score": 0.3
+      "selection_score": 0.3,
+      "model": "KFM-026D R",
+      "selected_variant": {
+        "model": "KFM-026D R",
+        "color": "レッド",
+        "diameter_cm": 26,
+        "type": "超深型炒め鍋",
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "鉄フライパン 26cm 深型 炒め鍋 中華鍋 窒化加工 コーティングなし 錆びにくい 高温調理 ガラス蓋付き 木製ハンドル IH・ガス火対応",
-      "asin": "B0GH6K4WQG",
-      "brand": "",
+      "amazon_title": "リバーライト 極JAPAN フライパン26cm J1226",
+      "asin": "B01N1711EH",
+      "brand": "リバーライト",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61xXuNpLU7L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/6133gbn9I8L._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "heat_source_and_size",
         "surface_and_cooking_conditions"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0GH6K4WQG",
+      "product_id": "AMZ-B01N1711EH",
       "ref": "p5",
       "search_key": "鉄フライパン 26cm 深型 炒め鍋 中華鍋 窒化加工 コーティ",
-      "selection_score": 0.3
+      "selection_score": 0.3,
+      "model": "J1226",
+      "selected_variant": {
+        "model": "J1226",
+        "size": "26cm",
+        "pack_count": 1,
+        "lid_included": false
+      }
     },
     {
-      "amazon_title": "フライパン 20cm 焦げ付かない 軽量 IH ガス火対応 PFOAなどの有害物質不使用 高密度5層の究極の焦げ付き防止表面 高熱効率 手入れが簡単 食器洗い機対応 耐熱ハンドル付き [並行輸入品]",
-      "asin": "B0DNCWH211",
-      "brand": "",
+      "amazon_title": "グリーンパン ヴェニス プロ フライパン26cm CC000652-001",
+      "asin": "B01N3CY5HS",
+      "brand": "グリーンパン",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/41aY+AuIMaL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51ZsQlUF8tL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "heat_source_and_size"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0DNCWH211",
+      "product_id": "AMZ-B01N3CY5HS",
       "ref": "p6",
       "search_key": "フライパン 20cm 焦げ付かない 軽量 IH ガス火対応 PF",
-      "selection_score": 0.3
+      "selection_score": 0.3,
+      "model": "CC000652-001",
+      "selected_variant": {
+        "model": "CC000652-001",
+        "size": "26cm",
+        "pack_count": 1
+      }
     }
   ],
   "selection": {

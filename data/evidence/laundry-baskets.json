@@ -50,11 +50,11 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0FRMJZZP7",
-      "asin": "B0FRMJZZP7",
-      "amazon_title": "洗濯カゴ 洗濯かご ランドリーバスケット 折りたたみ 大容量 メッシュ 自立式 超軽量 ランドリーバッグ 持ち手付き 洗濯物入れ 収納 洗濯物",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61C3gQv0dwL._AC_UL320_.jpg",
+      "product_id": "AMZ-B08GNXRJQ3",
+      "asin": "B08GNXRJQ3",
+      "amazon_title": "フレディレック(Freddy Leck) ランドリーバスケット スリム 20L FL-218",
+      "brand": "Freddy Leck",
+      "image_url": "https://m.media-amazon.com/images/I/71qmUCtEIOL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.865,
@@ -63,15 +63,17 @@
         "sorting_maintenance",
         "transport"
       ],
-      "search_key": "洗濯カゴ 洗濯かご ランドリーバスケット 折りたたみ 大容量 メ"
+      "search_key": "洗濯カゴ 洗濯かご ランドリーバスケット 折りたたみ 大容量 メ",
+      "model": "FL-218",
+      "selected_variant": "ホワイト・スリム20L・1個"
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0H8S66YBD",
-      "asin": "B0H8S66YBD",
-      "amazon_title": "VECELO ランドリーバスケット 折りたたみ 大容量 75L メッシュ 通気性 洗濯物 収納かご 衣類バッグ 軽量 両手取っ手付きで持ち運び便利 省スペース スリム 収納ケース 旅行にも オシャレ 横型 58×36×36cm クリーム",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71HD6Ouo0TL._AC_UL320_.jpg",
+      "product_id": "AMZ-B07WPD4MWX",
+      "asin": "B07WPD4MWX",
+      "amazon_title": "ランドリーバスケット タワー キャスター付き4776",
+      "brand": "山崎実業",
+      "image_url": "https://m.media-amazon.com/images/I/714Ct-YWjoL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
@@ -79,30 +81,34 @@
         "size_capacity",
         "sorting_maintenance"
       ],
-      "search_key": "VECELO ランドリーバスケット 折りたたみ 大容量 75L"
+      "search_key": "VECELO ランドリーバスケット 折りたたみ 大容量 75L",
+      "model": "4776",
+      "selected_variant": "ホワイト・キャスター付き本体1台"
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0H4NZ9NNF",
-      "asin": "B0H4NZ9NNF",
-      "amazon_title": "【有名雑誌掲載】洗濯かご 折りたたみ ランドリーバスケット 42L 壁掛けフック付き 自立式 メッシュ 超軽量 省スペース 一人暮らし、ブラック",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61XhIteLH4L._AC_UL320_.jpg",
+      "product_id": "AMZ-B082FX66HB",
+      "asin": "B082FX66HB",
+      "amazon_title": "スタッキングランドリーバスケットL LBB-12C",
+      "brand": "like-it",
+      "image_url": "https://m.media-amazon.com/images/I/71OSSh0DMVL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [
         "sorting_maintenance"
       ],
-      "search_key": "洗濯かご 折りたたみ ランドリーバスケット 42L 壁掛けフック"
+      "search_key": "洗濯かご 折りたたみ ランドリーバスケット 42L 壁掛けフック",
+      "model": "LBB-12C",
+      "selected_variant": "グレー・Lサイズ本体1個・キャスター別売"
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0H2VYQ1CJ",
-      "asin": "B0H2VYQ1CJ",
-      "amazon_title": "NiHome 洗濯かご ランドリーバスケット 折りたたみ 横型 3マス 3分割 ランドリーかご 大容量 92L 軽量 ランドリー収納",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71mom0r2+PL._AC_UL320_.jpg",
+      "product_id": "AMZ-B08QMNY7QM",
+      "asin": "B08QMNY7QM",
+      "amazon_title": "Joseph Joseph Tota ふた付きランドリー分別バスケット90リットル、取っ手付きランドリーバッグ2個(取り外し可能) - グレー 【正規品】50003",
+      "brand": "Joseph Joseph",
+      "image_url": "https://m.media-amazon.com/images/I/81NVEslM0sL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
@@ -110,30 +116,34 @@
         "size_capacity",
         "sorting_maintenance"
       ],
-      "search_key": "NiHome 洗濯かご ランドリーバスケット 折りたたみ 横型"
+      "search_key": "NiHome 洗濯かご ランドリーバスケット 折りたたみ 横型",
+      "model": "50003",
+      "selected_variant": "グレー・90L・2分別バッグ付き本体1台"
     },
     {
       "ref": "p5",
       "product_id": "AMZ-B0GY2ZD9MT",
       "asin": "B0GY2ZD9MT",
-      "amazon_title": "フランドリー (FLaundry) やわらかランドリーバスケット 片手で持てる 洗濯かご 大容量 容量30L 洗濯物かご ランドリー用収納 ポリエチレン素材 柔軟性 通気性 スリム ダイヤ Daiya 058185",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61zWER+XJ+L._AC_UL320_.jpg",
+      "amazon_title": "フランドリー・やわらかランドリーバスケット30L",
+      "brand": "ダイヤ",
+      "image_url": "https://m.media-amazon.com/images/I/61zWER+XJ+L._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [
         "size_capacity"
       ],
-      "search_key": "フランドリー (FLaundry) やわらかランドリーバスケット"
+      "search_key": "フランドリー (FLaundry) やわらかランドリーバスケット",
+      "model": "058185",
+      "selected_variant": "30L・本体1個"
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0F9WPDW92",
-      "asin": "B0F9WPDW92",
-      "amazon_title": "ｂｅｎｒｉｉ ランドリーバスケット 折りたたみ 洗濯カゴ 大容量 70L メッシュ 省スペース ランドリーバッグ 収納 洗濯物 かご 持ち運び可能 軽量 旅行 36cm×36cm×58cm ブラック",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/91vW+d8iVnL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0DDPJR8L1",
+      "asin": "B0DDPJR8L1",
+      "amazon_title": "ニトリ(NITORI) 折りたたみメッシュバスケット L グレー YT01 8500952",
+      "brand": "ニトリ",
+      "image_url": "https://m.media-amazon.com/images/I/41a5vebQxEL._AC_SL1000_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
@@ -141,7 +151,9 @@
         "size_capacity",
         "sorting_maintenance"
       ],
-      "search_key": "ｂｅｎｒｉｉ ランドリーバスケット 折りたたみ 洗濯カゴ 大容量"
+      "search_key": "ｂｅｎｒｉｉ ランドリーバスケット 折りたたみ 洗濯カゴ 大容量",
+      "model": "YT01 / 8500952",
+      "selected_variant": "L・グレー・1個"
     }
   ]
 }

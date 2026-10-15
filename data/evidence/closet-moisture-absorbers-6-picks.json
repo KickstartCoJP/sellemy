@@ -53,11 +53,11 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0CQN1JJJL",
-      "asin": "B0CQN1JJJL",
-      "amazon_title": "活性炭臭気吸収剤、強い臭いのための臭気除去剤、家庭用カークローゼットペット用竹炭空気清浄バッグ、スモークルーム消臭剤(10 x 100g、無香料)",
-      "brand": "ブランド: Innmily",
-      "image_url": "https://m.media-amazon.com/images/I/918ZRE-uX6L._AC_SX300_SY300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B00P2AVMSM",
+      "asin": "B00P2AVMSM",
+      "amazon_title": "ドライペット [まとめ買い] 除湿剤 シートタイプ クローゼット用 2枚入×2個 衣類 吊り下げ 乾燥剤 湿気取り",
+      "brand": "エステー",
+      "image_url": "https://m.media-amazon.com/images/I/81+kJ0iRxEL._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": 2498,
       "discovery_score": 1,
       "selection_score": 0.79,
@@ -65,78 +65,84 @@
         "design",
         "placement"
       ],
-      "search_key": "Innmily 活性炭臭気吸収剤、強い臭いのための臭気除去剤、家庭用カークローゼ"
+      "search_key": "Innmily 活性炭臭気吸収剤、強い臭いのための臭気除去剤、家庭用カークローゼ",
+      "selected_variant": "クローゼット用 2枚入×2個（計4枚）"
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0H8W7J1HQ",
-      "asin": "B0H8W7J1HQ",
-      "amazon_title": "除湿剤 550ml 12個 湿気取り 押入れ クローゼット 靴箱用",
-      "brand": "ブランド: Poinplus",
-      "image_url": "https://m.media-amazon.com/images/I/61c4kuMiHFL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B01AJILKEW",
+      "asin": "B01AJILKEW",
+      "amazon_title": "フマキラー 激乾 除湿剤 湿気取り 400ml 3個パック",
+      "brand": "フマキラー",
+      "image_url": "https://m.media-amazon.com/images/I/613UqDZ386L._AC_SX300_SY300_QL70_ML2_.jpg",
       "observed_price": 1900,
       "discovery_score": 1,
       "selection_score": 0.48,
       "matched_comparison_axes": [
         "placement"
       ],
-      "search_key": "Poinplus 除湿剤 550ml 12個 湿気取り 押入れ クローゼット 靴箱"
+      "search_key": "Poinplus 除湿剤 550ml 12個 湿気取り 押入れ クローゼット 靴箱",
+      "selected_variant": "400mL×3個"
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0H8MY3WZ4",
-      "asin": "B0H8MY3WZ4",
-      "amazon_title": "【550mL×3個入×3パックセット（合計9個）】水とりぞうさん 湿気とり 除湿剤 押入れ クローゼット まとめ買い VIALONTA",
-      "brand": "ブランド: VIALONTA",
-      "image_url": "https://m.media-amazon.com/images/I/81ZnHW0FqaL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0034L0CSW",
+      "asin": "B0034L0CSW",
+      "amazon_title": "水とりぞうさん550ml 3コパック 湿気とり除湿剤",
+      "brand": "オカモト／水とりぞうさん",
+      "image_url": "https://m.media-amazon.com/images/I/71XqkZ0w8-L._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": 2180,
       "discovery_score": 1,
       "selection_score": 0.48,
       "matched_comparison_axes": [
         "placement"
       ],
-      "search_key": "VIALONTA 水とりぞうさん 湿気とり 除湿剤 押入れ クローゼット まとめ買"
+      "search_key": "VIALONTA 水とりぞうさん 湿気とり 除湿剤 押入れ クローゼット まとめ買",
+      "selected_variant": "550mL×3個、無香タイプ"
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0H13QGJ96",
-      "asin": "B0H13QGJ96",
-      "amazon_title": "【まとめ買い】6個 ド ラ イ & ド ラ イ U P 引き出し・衣装ケース用 12シート 除湿剤 無香 消臭 湿気取り 大容量 防カビ ダニよけ",
-      "brand": "ブランド: ノーブランド品",
-      "image_url": "https://m.media-amazon.com/images/I/91LFwWrts1L._AC_SX300_SY300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0H28YW7K9",
+      "asin": "B0H28YW7K9",
+      "amazon_title": "ドライ＆ドライUP クローゼット用 2シート入×2P 除湿剤 消臭 湿気取り 大容量 防カビ ダニよけ 乾燥剤 白元アース",
+      "brand": "白元アース",
+      "image_url": "https://m.media-amazon.com/images/I/813sp0z1OiL._AC_SL1500_.jpg",
       "observed_price": 4680,
       "discovery_score": 1,
       "selection_score": 0.48,
       "matched_comparison_axes": [],
-      "search_key": "ノー品 6個 ド ラ イ & ド ラ イ U P 引き出し・衣装ケース用"
+      "search_key": "ノー品 6個 ド ラ イ & ド ラ イ U P 引き出し・衣装ケース用",
+      "selected_variant": "クローゼット用2シート×2パック（計4シート）"
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0BJV8VTG9",
-      "asin": "B0BJV8VTG9",
-      "amazon_title": "クモリ(Kumori) 除湿シート シングル 湿気対策 洗える 消臭 防ダニ 防カビ シリカゲル入り 吸湿センサー付き 結露対策 梅雨 吸湿 調湿 除湿マット 吸湿シート 寝具用除湿マット 寝具用 除湿マット 湿気取り 繰り返し使える 90X190cm グレー",
-      "brand": "クモリ(Kumori)のストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/71Lj3IpIBYL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B09TDCGYY7",
+      "asin": "B09TDCGYY7",
+      "amazon_title": "炭八 押入れ用 北欧グレー 4個セット 内容量3L 調湿木炭 結露 湿気 対策 出雲カーボン",
+      "brand": "出雲カーボン／炭八",
+      "image_url": "https://m.media-amazon.com/images/I/71j4+AwMJzL._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": 1962,
       "discovery_score": 1,
       "selection_score": 0.48,
       "matched_comparison_axes": [],
-      "search_key": "クモリ(Kumori) 除湿シート シングル 湿気対策 洗える 消臭 防ダニ 防カビ シ"
+      "search_key": "クモリ(Kumori) 除湿シート シングル 湿気対策 洗える 消臭 防ダニ 防カビ シ",
+      "selected_variant": "押入れ用 北欧グレー 3L×4袋"
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B09JSCPCXB",
-      "asin": "B09JSCPCXB",
-      "amazon_title": "CLEVAST 靴 消臭 除湿剤 乾燥剤 消臭剤 湿気取り 車 靴箱 下駄箱 クローゼット 75ｇ*14個",
-      "brand": "CLEVASTのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/91o9H+wGFqL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B098XCNSTJ",
+      "asin": "B098XCNSTJ",
+      "amazon_title": "東洋ケース サラリカ クローゼット用シリカゲル乾燥剤 2本入 SRLC-C 除湿 脱臭 再利用",
+      "brand": "東洋ケース",
+      "image_url": "https://m.media-amazon.com/images/I/51Qf1nKhUoS._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": 2390,
       "discovery_score": 1,
       "selection_score": 0.48,
       "matched_comparison_axes": [
         "placement"
       ],
-      "search_key": "CLEVAST 靴 消臭 除湿剤 乾燥剤 消臭剤 湿気取り 車 靴箱 下駄箱 ク"
+      "search_key": "CLEVAST 靴 消臭 除湿剤 乾燥剤 消臭剤 湿気取り 車 靴箱 下駄箱 ク",
+      "selected_variant": "SRLC-C クローゼット用 2本入"
     }
   ]
 }

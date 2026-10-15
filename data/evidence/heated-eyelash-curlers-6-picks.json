@@ -45,11 +45,11 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0HDTSN1Q7",
-      "asin": "B0HDTSN1Q7",
-      "amazon_title": "ホットビューラー 【多機能 まつ毛コーム＆ピンセット 2in1】 ビューラー 10秒急速予熱 40℃/50℃/60℃ 3段階温度調整 まつ毛カーラー type-C充電式 軽量40g 携帯便利 5 分自動電源オフ 温度記憶機能 プレゼントに最適",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61vHbdDH1dL._AC_UL320_.jpg",
+      "product_id": "AMZ-B084347R9Q",
+      "asin": "B084347R9Q",
+      "amazon_title": "パナソニック まつげくるん ナチュラルカール ミストブルー EH-SE11-A",
+      "brand": "パナソニック",
+      "image_url": "https://m.media-amazon.com/images/I/618yki58ypL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.89,
@@ -58,15 +58,17 @@
         "heater",
         "power"
       ],
-      "search_key": "ホットビューラー ビューラー 10秒急速予熱 40℃/50℃/6"
+      "search_key": "ホットビューラー ビューラー 10秒急速予熱 40℃/50℃/6",
+      "model": "EH-SE11-A",
+      "selected_variant": "ミストブルー・本体1台"
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0HFRQ2Y1G",
-      "asin": "B0HFRQ2Y1G",
-      "amazon_title": "ホットビューラー【美容師監修】 ビューラー まつ毛カーラー まつ毛 アイラッシュカーラ USB充電式 自動電源OFF 三段階温度 10秒急速予熱 超軽量 時短メイク ホットカーラー まつげ 睫毛 フェイスケア(ホワイト)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61DhDRwA98L._AC_UL320_.jpg",
+      "product_id": "AMZ-B0CNR21181",
+      "asin": "B0CNR21181",
+      "amazon_title": "コイズミ アイラッシュカーラー 2WAYコーム カーブヘッドタイプ USB充電式 ブラック KLC-0981/K",
+      "brand": "コイズミ",
+      "image_url": "https://m.media-amazon.com/images/I/61SJCc0iz8L._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
@@ -74,15 +76,17 @@
         "head",
         "power"
       ],
-      "search_key": "ホットビューラー ビューラー まつ毛カーラー まつ毛 アイラッシ"
+      "search_key": "ホットビューラー ビューラー まつ毛カーラー まつ毛 アイラッシ",
+      "model": "KLC-0981/K",
+      "selected_variant": "ブラック・本体1台"
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0HD6N1MNM",
-      "asin": "B0HD6N1MNM",
-      "amazon_title": "ホットビューラー 【やけどしない・透明ヘッド根元が見える】 ビューラー 挟む 長時間 まつげカーラー 充電式 まつ毛ビューラー 一重用ビューラー",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/612lqAuYxfL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0GKPLL724",
+      "asin": "B0GKPLL724",
+      "amazon_title": "のぞキュンホットカーラー まつ毛用 ビューラー",
+      "brand": "コージー本舗",
+      "image_url": "https://m.media-amazon.com/images/I/612ttGL3biL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
@@ -90,30 +94,34 @@
         "head",
         "power"
       ],
-      "search_key": "ホットビューラー ビューラー 挟む 長時間 まつげカーラー 充電"
+      "search_key": "ホットビューラー ビューラー 挟む 長時間 まつげカーラー 充電",
+      "model": "1CR0599 / JAN4972915005998",
+      "selected_variant": "のぞキュンホットカーラー・単品"
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0H999YR72",
-      "asin": "B0H999YR72",
-      "amazon_title": "モノンズ(Monons) ホットビューラー 挟むタイプ まつ毛カーラー 15秒急速予熱 まつ毛 ビューラー 3段階温度調節",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61Rgh3DvcAL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0DRYLM8D1",
+      "asin": "B0DRYLM8D1",
+      "amazon_title": "モノンズ(Monons) ホットビューラー 挟む まつ毛カーラー USB充電式 3段階温度調節 15秒予熱 自動電源OFF ホワイト",
+      "brand": "MONONS",
+      "image_url": "https://m.media-amazon.com/images/I/61API0nQZuL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [
         "head"
       ],
-      "search_key": "モノンズ(Monons) ホットビューラー 挟むタイプ まつ毛カ"
+      "search_key": "モノンズ(Monons) ホットビューラー 挟むタイプ まつ毛カ",
+      "model": "J150",
+      "selected_variant": "ホワイト・本体1台"
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0H7RXMR3J",
-      "asin": "B0H7RXMR3J",
-      "amazon_title": "ホットビューラー【Luna掲載モデル】まつ毛カーラー【JIS認証断熱設計】10秒急速予熱 4段階温度調整 長時間カールキープ",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61HkM3+XshL._AC_UL320_.jpg",
+      "product_id": "AMZ-B09NR78HMT",
+      "asin": "B09NR78HMT",
+      "amazon_title": "フェスティノ ホット アイラッシュ カーラー SMHB-005 FESTINO (サンドベージュ)",
+      "brand": "FESTINO",
+      "image_url": "https://m.media-amazon.com/images/I/41f4sy92TAL._AC_SL1280_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
@@ -121,15 +129,17 @@
         "head",
         "heater"
       ],
-      "search_key": "ホットビューラー まつ毛カーラー 10秒急速予熱 4段階温度調整"
+      "search_key": "ホットビューラー まつ毛カーラー 10秒急速予熱 4段階温度調整",
+      "model": "SMHB-005-SB",
+      "selected_variant": "サンドベージュ・本体1台"
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0H6FSYWCW",
-      "asin": "B0H6FSYWCW",
-      "amazon_title": "【10秒速熱 ホットビューラー】VIOLUS まつげカーラー 充電式 長持ちカール 2段階温度 感温シリコン (まつ毛コーム＆ピンセット付き)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61MF9EEfJvL._AC_UL320_.jpg",
+      "product_id": "AMZ-B09C1MLHH2",
+      "asin": "B09C1MLHH2",
+      "amazon_title": "テスコム ホットビューラー USB充電式 2段階温度設定 角度調整 2種コーム メルティピンク TK350A-P",
+      "brand": "テスコム",
+      "image_url": "https://m.media-amazon.com/images/I/51CtA5GaeQL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
@@ -137,7 +147,9 @@
         "head",
         "power"
       ],
-      "search_key": "VIOLUS まつげカーラー 充電式 長持ちカール 2段階温度"
+      "search_key": "VIOLUS まつげカーラー 充電式 長持ちカール 2段階温度",
+      "model": "TESCOM elims me TK350A-P",
+      "selected_variant": "メルティピンク、USB充電式1台、キャップ/充電専用ケーブル付き"
     }
   ]
 }

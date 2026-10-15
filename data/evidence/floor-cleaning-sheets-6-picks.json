@@ -46,85 +46,124 @@
       "ref": "p1",
       "product_id": "AMZ-B0H327ZK69",
       "asin": "B0H327ZK69",
-      "amazon_title": "【20枚入✕３個セット】 レック 水の激落ち 超厚 ウェットシート 20枚入 ３個セット ウェットシート フローリングシート アルカリ電解水使用",
-      "brand": "ブランド: VIALONTA",
-      "image_url": "https://m.media-amazon.com/images/I/71cWc10d-vL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "amazon_title": "レック 水の激落ち超厚ウエットシート SS-180 20枚×3袋",
+      "brand": "レック",
+      "image_url": "https://m.media-amazon.com/images/I/71cWc10d-vL._AC_SL1335_.jpg",
       "observed_price": 1590,
       "discovery_score": 1,
       "selection_score": 0.7,
       "matched_comparison_axes": [
         "wipe_power"
       ],
-      "search_key": "VIALONTA レック 水の激落ち 超厚 ウェットシート 20枚入 ３個セット"
+      "search_key": "VIALONTA レック 水の激落ち 超厚 ウェットシート 20枚入 ３個セット",
+      "selected_variant": {
+        "model": "SS-180",
+        "sheets_per_pack": 20,
+        "pack_count": 3,
+        "total_sheets": 60
+      }
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B07QL7HYL5",
-      "asin": "B07QL7HYL5",
-      "amazon_title": "Bona フローリングモップ 床拭きモップ マイクロファイバー モップ floor mop 伸縮式ハンドル 軽量設計",
-      "brand": "Bonaのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/71IGx96HX+L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0F73XFSCY",
+      "asin": "B0F73XFSCY",
+      "amazon_title": "山崎産業 コンドル 極厚 フローリング用ドライシート 20枚入",
+      "brand": "山崎産業",
+      "image_url": "https://m.media-amazon.com/images/I/71hkYF+5CoL._AC_SL1500_.jpg",
       "observed_price": 5280,
       "discovery_score": 1,
       "selection_score": 0.7,
       "matched_comparison_axes": [
         "portability"
       ],
-      "search_key": "Bona フローリングモップ 床拭きモップ マイクロファイバー モップ f"
+      "search_key": "Bona フローリングモップ 床拭きモップ マイクロファイバー モップ f",
+      "selected_variant": {
+        "model": "MO976-025X-MB",
+        "product_code": "209156",
+        "sheet_size_cm": "30×20",
+        "sheets_per_pack": 20,
+        "pack_count": 1,
+        "type": "ドライシート"
+      }
     },
     {
       "ref": "p3",
       "product_id": "AMZ-B0H44SZ17G",
       "asin": "B0H44SZ17G",
-      "amazon_title": "【まとめ買い】クイッ クル 立体吸着ウエットシート 空間の超消臭 ストロンググリーンの香り 96枚入 (12枚×8) floor wipes quickle Household moppings・Cleaning wipes",
-      "brand": "ブランド: ノーブランド品",
+      "amazon_title": "クイックル ストロング 空間の超消臭 12枚×8袋",
+      "brand": "花王",
       "image_url": "https://m.media-amazon.com/images/I/61Z++I4YVmL._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": 4980,
       "discovery_score": 1,
       "selection_score": 0.52,
       "matched_comparison_axes": [],
-      "search_key": "ノー品 クイッ クル 立体吸着ウエットシート 空間の超消臭 ストロンググ"
+      "search_key": "ノー品 クイッ クル 立体吸着ウエットシート 空間の超消臭 ストロンググ",
+      "selected_variant": {
+        "model": "クイックルワイパー立体吸着ウエットシート ストロング 空間の超消臭",
+        "fragrance": "ストロンググリーン",
+        "sheets_per_pack": 12,
+        "pack_count": 8,
+        "total_sheets": 96
+      }
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0DVYNSKKX",
-      "asin": "B0DVYNSKKX",
-      "amazon_title": "TENSI JAPAN ワンタッチ着脱 シート選ばず フロアワイパー 自立型 天使のワンタッチクリーパー (ホワイト,コンパクト)",
-      "brand": "ブランド: 天使の椅子",
-      "image_url": "https://m.media-amazon.com/images/I/51MMTK+cVoL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B00OPWIRGS",
+      "asin": "B00OPWIRGS",
+      "amazon_title": "3M スコッチ・ブライト フロア用ドライシート18枚 FW-DSM18",
+      "brand": "3M",
+      "image_url": "https://m.media-amazon.com/images/I/71lcN0Ufk5L._AC_SL1500_.jpg",
       "observed_price": 2980,
       "discovery_score": 1,
       "selection_score": 0.52,
       "matched_comparison_axes": [],
-      "search_key": "天使の椅子 TENSI JAPAN ワンタッチ着脱 シート選ばず フロアワイ"
+      "search_key": "天使の椅子 TENSI JAPAN ワンタッチ着脱 シート選ばず フロアワイ",
+      "selected_variant": {
+        "model": "FW-DSM18",
+        "sheets_per_pack": 18,
+        "pack_count": 1,
+        "total_sheets": 18
+      }
     },
     {
       "ref": "p5",
       "product_id": "AMZ-B0CTX44129",
       "asin": "B0CTX44129",
-      "amazon_title": "【ケース販売】昭和 ラクリーナ フローリング用 ３層ウエットシート 400枚 （20枚入りパックX2０パック）",
-      "brand": "ブランド: 昭和紙工",
-      "image_url": "https://m.media-amazon.com/images/I/81OF4oiILYL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "amazon_title": "昭和紙工 ラクリーナ フローリング用3層ウエットシート20枚×20袋",
+      "brand": "昭和紙工",
+      "image_url": "https://m.media-amazon.com/images/I/81OF4oiILYL._AC_SL1500_.jpg",
       "observed_price": 3980,
       "discovery_score": 1,
       "selection_score": 0.52,
       "matched_comparison_axes": [],
-      "search_key": "昭和紙工 昭和 ラクリーナ フローリング用 ３層ウエットシート 400枚"
+      "search_key": "昭和紙工 昭和 ラクリーナ フローリング用 ３層ウエットシート 400枚",
+      "selected_variant": {
+        "model": "ラクリーナ フローリング用3層ウエットシート",
+        "sheets_per_pack": 20,
+        "pack_count": 20,
+        "total_sheets": 400
+      }
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0CQ3VZFNB",
-      "asin": "B0CQ3VZFNB",
-      "amazon_title": "レック 業務用 激落ちくん 超厚 ウェットシート 20枚入✕12個 (240枚) フローリングシート/アルカリ電解水 使用/除菌/抗菌",
-      "brand": "激落ちくんのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/71qU7PNoU-L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0FZK76BQP",
+      "asin": "B0FZK76BQP",
+      "amazon_title": "キレキラ！ワイパー ドライ×ウエットシート16枚",
+      "brand": "エリエール",
+      "image_url": "https://m.media-amazon.com/images/I/61mydNye-wL._AC_SL1100_.jpg",
       "observed_price": 2983,
       "discovery_score": 1,
       "selection_score": 0.52,
       "matched_comparison_axes": [
         "wipe_power"
       ],
-      "search_key": "激落ちくん レック 業務用 激落ちくん 超厚 ウェットシート 20枚入✕12"
+      "search_key": "激落ちくん レック 業務用 激落ちくん 超厚 ウェットシート 20枚入✕12",
+      "selected_variant": {
+        "model": "キレキラ！ワイパー ドライ×ウエットシート",
+        "jan": "4902011121438",
+        "sheets_per_pack": 16,
+        "pack_count": 1
+      }
     }
   ]
 }

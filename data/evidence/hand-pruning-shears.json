@@ -37,86 +37,119 @@
   "eyecatch_image": "https://www.sellemy.jp/img/hand-pruning-shears/hand-pruning-shears.png",
   "products": [
     {
-      "amazon_title": "【2026年秋新登場】VOTREK® 本格剪定ばさみ 密閉式バネ SK5高炭素鋼 太枝もスムーズに切断 最大切断径20mm 丈夫で長持ち 剪定鋏",
-      "asin": "B0HJBQR3Z4",
-      "brand": "",
+      "amazon_title": "アルスコーポレーション アルス 剪定鋏 ブイエスエイト VS-8Z 生木切断能力約15mm",
+      "asin": "B005Q4LU1I",
+      "brand": "アルス",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71iAtgWXgzL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61lLIqs+9oL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "blade_branch_fit"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0HJBQR3Z4",
+      "product_id": "AMZ-B005Q4LU1I",
       "ref": "p1",
       "search_key": "VOTREK® 本格剪定ばさみ 密閉式バネ SK5高炭素鋼 太枝",
-      "selection_score": 0.505
+      "selection_score": 0.505,
+      "selected_variant": {
+        "model": "VS-8Z",
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "剪定ばさみ 剪定鋏 最大25.4mm太枝切断 249g軽量設計 手が疲れない省力テコ構造 日本製SK5高炭素鋼バイパス刃 衝撃吸収ラバーグリップ 錆びにくい安全ロック 枝切りバサミ 園芸用はさみ 果樹 庭木 盆栽 観葉植物 花切り 庭園作業 女性 高齢者 関節炎 プレゼント (ブラック＆レッド)",
-      "asin": "B0HL7Z6CVD",
-      "brand": "",
+      "amazon_title": "Felco フェルコ 剪定鋏 FELCO2 215mm",
+      "asin": "B0044RXC1Y",
+      "brand": "FELCO",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71JDmdAMJfL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71-P-JugoWL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0HL7Z6CVD",
+      "product_id": "AMZ-B0044RXC1Y",
       "ref": "p2",
       "search_key": "剪定ばさみ 剪定鋏 最大25.4mm太枝切断 249g軽量設計",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "model": "FELCO2",
+        "length": "215mm",
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "剪定ばさみ 園芸用 枝切りばさみ 2段階開口調整 省力スプリング 安全ロック 充実セット",
-      "asin": "B0H6TZWV2X",
-      "brand": "",
+      "amazon_title": "アルスコーポレーション アンビル剪定鋏 ブイエーエイト 200mm VA-8Z",
+      "asin": "B08FDQMVQT",
+      "brand": "アルス",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/710cs-6owtL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/518PEioYwBL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0H6TZWV2X",
+      "product_id": "AMZ-B08FDQMVQT",
       "ref": "p3",
       "search_key": "剪定ばさみ 園芸用 枝切りばさみ 2段階開口調整 省力スプリング",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "model_number": "VA-8Z",
+        "length": "200mm",
+        "package": "本体単品",
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "剪定ばさみ 園芸ばさみ 枝切りばさみ アンビル式 二重チタン＆フッ素コーティング 太い枝に対応 最大切断幅25mm 剪定工具 (木目調, 単品)",
-      "asin": "B0H6FG12JP",
-      "brand": "",
+      "amazon_title": "岡恒 剪定鋏 200mm NO.103",
+      "asin": "B001Y54F88",
+      "brand": "岡恒",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71vwXCcZdhL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61lm3qNKgUL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "blade_branch_fit"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0H6FG12JP",
+      "product_id": "AMZ-B001Y54F88",
       "ref": "p4",
       "search_key": "剪定ばさみ 園芸ばさみ 枝切りばさみ アンビル式 二重チタン＆フ",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "length_mm": 200,
+        "type": "本体単品",
+        "handle_colour": "赤／白"
+      }
     },
     {
-      "amazon_title": "プロ仕様シリーズ 剪定ばさみ 剪定バサミ 三面研磨刃剪定鋏 軽い力で切れる｜日本製SK-5鋼 園芸ハサミ 切れ味長持ち｜軽量化 女性 握りやすい 花切りバサミ｜深冷焼入れ 刃こぼれしにくい ｜錆びにくい 枝切りバサミ｜疲れにくい人間工学アルミ合金グリップ せんていばさみ｜生け花 果樹 庭木 盆栽 庭園作業 ガーデニング 観葉植物 えだきりばさみ",
-      "asin": "B0H1RPJ63R",
-      "brand": "",
+      "amazon_title": "坂源(Sakagen) 剪定鋏 ハンドクリエーション P180 フッ素コーティング 約18×5.5cm 日本製 レッド 145",
+      "asin": "B07B7GCFZK",
+      "brand": "坂源",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/81pesxc7uoL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51ShgSyP7FL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0H1RPJ63R",
+      "product_id": "AMZ-B07B7GCFZK",
       "ref": "p5",
       "search_key": "プロ仕様シリーズ 剪定ばさみ 剪定バサミ 三面研磨刃剪定鋏 軽い",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "colour": "レッド",
+        "length_cm": 18,
+        "width_cm": 5.5,
+        "weight_g": 116,
+        "coating": "フッ素コーティング",
+        "quantity": 1
+      }
     },
     {
-      "amazon_title": "【2026年モデル&プロ監修】剪定ばさみ Orsonz 最大切断25mm 剪定鋏 剪定バサミ せんていばさみ 軽量220g SK5高炭素鋼採用 人間工学グリップ 疲れにくい 女性や高齢者にも優しい 省力バネ内蔵 フッ素コート錆びにくい 安全ロック付き 枝切りバサミ 果樹 庭木 盆栽 庭園作業 ガーデニング 観葉植物 花切り 収穫用 (ブラック)",
-      "asin": "B0GYF7PT8J",
-      "brand": "",
+      "amazon_title": "チカマサ 軽量タイプ剪定鋏 ウルトラロッソ8N 210mm PSN-8G",
+      "asin": "B0BSMW2WTV",
+      "brand": "近正",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/81iKbNXbBXL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51HOJGLw7aL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0GYF7PT8J",
+      "product_id": "AMZ-B0BSMW2WTV",
       "ref": "p6",
       "search_key": "剪定ばさみ Orsonz 最大切断25mm 剪定鋏 剪定バサミ",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "model": "PSN-8G",
+        "length": "210mm",
+        "pack_count": 1
+      }
     }
   ],
   "selection": {

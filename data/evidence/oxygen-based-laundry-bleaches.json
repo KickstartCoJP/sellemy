@@ -43,9 +43,9 @@
     {
       "amazon_title": "MIYOSHI 暮らしの酸素系漂白剤 粉末 750g (× 2)",
       "asin": "B0H99P6XFT",
-      "brand": "",
+      "brand": "ミヨシ石鹸",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71YFaMHtZdL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71YFaMHtZdL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "formula_dosing"
       ],
@@ -53,27 +53,29 @@
       "product_id": "AMZ-B0H99P6XFT",
       "ref": "p1",
       "search_key": "MIYOSHI 暮らしの酸素系漂白剤 粉末 750g (× 2)",
-      "selection_score": 0.49
+      "selection_score": 0.49,
+      "selected_variant": "粉末750g×2袋"
     },
     {
       "amazon_title": "Pix オキシフィニッシュ 1kg スプーン付 漂白 消臭 除菌",
       "asin": "B0FPWLV5M4",
-      "brand": "",
+      "brand": "ライオンケミカル Pix",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71FVgcZvPcL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71FVgcZvPcL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B0FPWLV5M4",
       "ref": "p2",
       "search_key": "Pix オキシフィニッシュ 1kg スプーン付 漂白 消臭 除菌",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": "1000g本体1個、スプーン付き"
     },
     {
       "amazon_title": "ワイドハイター PRO 衣料用漂白剤 パワフルな汚れ落ち・消臭力。おしゃれ着・赤ちゃん服にもOK！ 粉末 本体 500g",
       "asin": "B0F634XSCC",
-      "brand": "",
+      "brand": "花王 ワイドハイター",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71DqgQlVcVL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71DqgQlVcVL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "formula_dosing"
       ],
@@ -81,50 +83,54 @@
       "product_id": "AMZ-B0F634XSCC",
       "ref": "p3",
       "search_key": "ワイドハイター PRO 衣料用漂白剤 パワフルな汚れ落ち・消臭力",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": "本体500g1個"
     },
     {
-      "amazon_title": "ワイドハイター PRO 衣料用漂白剤 パワフルな汚れ落ち・消臭力。おしゃれ着・赤ちゃん服にもOK！ 粉末 つめかえ用 １３００ｇ",
-      "asin": "B0F633LM7R",
-      "brand": "",
+      "amazon_title": "オキシクリーン パワーリキッド 660ml 液体 酸素系漂白剤 衣類用 洗濯 クリーンフローラルの香り",
+      "asin": "B0CVQ8NWLJ",
+      "brand": "オキシクリーン",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/81kE1qIfkML._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71o1VDQbvIL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "formula_dosing"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0F633LM7R",
+      "product_id": "AMZ-B0CVQ8NWLJ",
       "ref": "p4",
       "search_key": "ワイドハイター PRO 衣料用漂白剤 パワフルな汚れ落ち・消臭力",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": "660mL本体1本、クリーンフローラルの香り"
     },
     {
       "amazon_title": "arau. アラウ. 酸素系漂白剤 850g 無添加 ラベンダー＆スペアミントの香り",
       "asin": "B0DZ2M92M4",
-      "brand": "",
+      "brand": "サラヤ アラウ.",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71hT2huI9XL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71hT2huI9XL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B0DZ2M92M4",
       "ref": "p5",
       "search_key": "arau. アラウ. 酸素系漂白剤 850g 無添加 ラベンダー",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": "850g1袋、ラベンダー＆スペアミント"
     },
     {
-      "amazon_title": "花王(Kao) 【大容量】 ワイドハイター EXパワー 粉末タイプ 3.5kg 業務用 衣料用漂白剤 色柄に安心 酸素系 除菌 漂白 消臭 プロフェッショナル・サービス 【Amazon.co.jp限定】",
-      "asin": "B0DSL415WX",
-      "brand": "",
+      "amazon_title": "シャボン玉 酸素系漂白剤 750g 漂白 消臭 除菌 染み抜き ナチュラルクリーニング",
+      "asin": "B07HFMH2F3",
+      "brand": "シャボン玉石けん",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71VbjyVFK6L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61rdoC70L+L._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "formula_dosing"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0DSL415WX",
+      "product_id": "AMZ-B07HFMH2F3",
       "ref": "p6",
       "search_key": "花王(Kao) ワイドハイター EXパワー 粉末タイプ 3.5k",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": "750g1袋"
     }
   ],
   "selection": {

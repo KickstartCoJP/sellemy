@@ -46,11 +46,11 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0FTZ11K8J",
-      "asin": "B0FTZ11K8J",
-      "amazon_title": "TCL エアコン 6畳 2.2kW AI節電シリーズ 省エネ 優しい気流 2027年省エネ基準達成100％ 冷暖房 除湿 お休みモード 内部クリーン 室温パイロール 入切タイマー 上下左右自動ルーバー リモコン操作 ルームエアコン スリムエアコン 保証1年 家庭用/一人暮らし 大風量快適 新生活 TAC-P2225I-W/TAC-P2225O【商品配達のみ】",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/81ZIb28F7ZL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0F9DR7L9Y",
+      "asin": "B0F9DR7L9Y",
+      "amazon_title": "ダイキン エアコン 6畳 S225ATES-W 2025年 ホワイト Eシリーズ",
+      "brand": "ダイキン",
+      "image_url": "https://m.media-amazon.com/images/I/41ndox3f3FL._AC_SL1368_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.89,
@@ -59,78 +59,140 @@
         "energy_efficiency",
         "room_size"
       ],
-      "search_key": "TCL エアコン 6畳 2.2kW AI節電シリーズ 省エネ 優"
+      "search_key": "TCL エアコン 6畳 2.2kW AI節電シリーズ 省エネ 優",
+      "selected_variant": {
+        "size": "主に6畳用",
+        "style": "商品配達のみ／設置工事なし",
+        "set_contents": [
+          "室内機",
+          "室外機",
+          "リモコン"
+        ],
+        "item_count": "1台分セット"
+      }
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0HH9C2S9C",
-      "asin": "B0HH9C2S9C",
-      "amazon_title": "ミニポータブルエアコン 壁掛け工事不要 冷暖両用 低騒音 リモコン付き 温度調整可能 (リモコン+タッチコントロール,1)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/41VX0vqWoOL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0F99PKXMH",
+      "asin": "B0F99PKXMH",
+      "amazon_title": "三菱電機(MITSUBISHI ELECTRIC) エアコン 6畳 MSZ-GV2225-W 2025年 ピュアホワイト 霧ヶ峰 GVシリーズ",
+      "brand": "三菱電機",
+      "image_url": "https://m.media-amazon.com/images/I/41dLFXPNneL._AC_SX342_SY445_QL70_ML2_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "ミニポータブルエアコン 壁掛け工事不要 冷暖両用 低騒音 リモコ"
+      "search_key": "ミニポータブルエアコン 壁掛け工事不要 冷暖両用 低騒音 リモコ",
+      "selected_variant": {
+        "size": "主に6畳用",
+        "style": "商品配達のみ／設置工事なし",
+        "set_contents": [
+          "室内機",
+          "室外機",
+          "リモコン"
+        ],
+        "item_count": "1台分セット"
+      }
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0HFNGF7SM",
-      "asin": "B0HFNGF7SM",
-      "amazon_title": "窓用エアコン 冷暖房兼用 小型エアコン 壁掛けエアコン 工事不要 据え置き両用 シリコン結晶発熱板搭載 16～35℃精密温度調節 ABS 素材採用 静音稼働 8 時間タイマー機能付き リモコン付き 広角送風 急速昇温 衣類乾燥可能 梅雨対策 一年中使える 寝室・オフィスなど室内空間に対応",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/514nbwbZErL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0F62F3TBX",
+      "asin": "B0F62F3TBX",
+      "amazon_title": "エアコン 2025年 Cシリーズ AS-C225S-W［主に6畳用・100V］配送のみ/設置工事なし",
+      "brand": "ノクリア",
+      "image_url": "https://m.media-amazon.com/images/I/61M0tVSpX3L._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [
         "room_size"
       ],
-      "search_key": "窓用エアコン 冷暖房兼用 小型エアコン 壁掛けエアコン 工事不要"
+      "search_key": "窓用エアコン 冷暖房兼用 小型エアコン 壁掛けエアコン 工事不要",
+      "selected_variant": {
+        "size": "主に6畳用",
+        "style": "商品配達のみ／設置工事なし",
+        "set_contents": [
+          "室内機",
+          "室外機",
+          "リモコン"
+        ],
+        "item_count": "1台分セット"
+      }
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0HCKM52ZR",
-      "asin": "B0HCKM52ZR",
-      "amazon_title": "冷暖両用小型エアコン 工事不要 壁掛け対応 リモコン付 3秒速熱 IPX4防水 タイマー 静音 脱衣所 トイレ 寝室用 (ホワイト)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/41D91a1s91L._AC_UL320_.jpg",
+      "product_id": "AMZ-B0FCFCWD7J",
+      "asin": "B0FCFCWD7J",
+      "amazon_title": "RAS-AJ2225S(日立)",
+      "brand": "日立",
+      "image_url": "https://m.media-amazon.com/images/I/31akffbfKBL._AC_SX342_SY445_QL70_ML2_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "冷暖両用小型エアコン 工事不要 壁掛け対応 リモコン付 3秒速熱"
+      "search_key": "冷暖両用小型エアコン 工事不要 壁掛け対応 リモコン付 3秒速熱",
+      "selected_variant": {
+        "size": "主に6畳用",
+        "style": "商品配達のみ／設置工事なし",
+        "set_contents": [
+          "室内機",
+          "室外機",
+          "リモコン"
+        ],
+        "item_count": "1台分セット"
+      }
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0HCB1MQ8W",
-      "asin": "B0HCB1MQ8W",
-      "amazon_title": "Kanuri家庭用冷暖両用移動式小型エアコン、ミニ冷暖房エアコン 移動式壁掛け リモコン付き タイミングー 低騷音 操作簡単 一体型機器 工事不要、壁取付け可能、18度から45度まで調節可能 ポータブル 年中使える 温風機能 除湿機能 (ハイエンドリモコンモデル)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/41kGmsyvYjL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0FC27BP7W",
+      "asin": "B0FC27BP7W",
+      "amazon_title": "パナソニック(Panasonic) エアコン 6畳 CS-225DFL-W 2025年",
+      "brand": "パナソニック",
+      "image_url": "https://m.media-amazon.com/images/I/51Ywa17BBjL._AC_SX342_SY445_QL70_ML2_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [
         "room_size"
       ],
-      "search_key": "Kanuri家庭用冷暖両用移動式小型エアコン、ミニ冷暖房エアコン"
+      "search_key": "Kanuri家庭用冷暖両用移動式小型エアコン、ミニ冷暖房エアコン",
+      "selected_variant": {
+        "size": "主に6畳用",
+        "style": "商品配達のみ／設置工事なし",
+        "set_contents": [
+          "室内機",
+          "室外機",
+          "リモコン"
+        ],
+        "item_count": "1台分セット"
+      }
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0H624115N",
-      "asin": "B0H624115N",
-      "amazon_title": "【GBFT Online限定 標準工事費込み】工事保証3年付属TOSHIBA 東芝 RAS-2216TM-W（TMシリーズ）ルームエアコン 6畳用 2.2kW 冷暖房 100V ホワイト",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/51JCTlQLVPL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0H6271N41",
+      "asin": "B0H6271N41",
+      "amazon_title": "シャープ(SHARP) エアコン 6畳 AY-U22DH-W 2026年 DHシリーズ",
+      "brand": "シャープ",
+      "image_url": "https://m.media-amazon.com/images/I/51Pz5rHlsKL._AC_SL1000_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [
         "room_size"
       ],
-      "search_key": "工事保証3年付属TOSHIBA 東芝 RAS-2216TM-W（"
+      "search_key": "工事保証3年付属TOSHIBA 東芝 RAS-2216TM-W（",
+      "model": "AY-U22DH-W",
+      "selected_variant": {
+        "size": "主に6畳用",
+        "style": "商品配達のみ／設置工事なし",
+        "colour": "ホワイト",
+        "set_contents": [
+          "室内機AY-U22DH",
+          "室外機AU-U22DHY",
+          "リモコン"
+        ],
+        "item_count": "1台分セット"
+      }
     }
   ]
 }

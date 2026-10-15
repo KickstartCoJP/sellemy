@@ -47,46 +47,49 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0HJCF86DQ",
-      "asin": "B0HJCF86DQ",
-      "amazon_title": "DVDプレーヤー テレビ用 1080P HDMI/AV出力 リージョンフリー CPRM対応 再生専用プレーヤー USB再生 多形式 DVD±R/RW・CD・VCD対応 AV/HDMIケーブル付 リモコン付 日本語説明書付 ブルーレイ非対応",
+      "product_id": "AMZ-B0FM3HKFYJ",
+      "asin": "B0FM3HKFYJ",
+      "amazon_title": "ポータブルDVDプレーヤー【目の保護モード 14.1インチ液晶大画面 】cd dvdプレーヤー ポータブル 5時間連続再生 リージョンフリー CPRM対応 レジューム機能 270度回転 TV同期可能 SDカード/USBに対応 軽量 持運び お年寄りや子供向き 操作簡単 日本語説明書",
       "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71e8yO6E74L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61++6tt6A1L._AC_SL1300_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.505,
       "matched_comparison_axes": [
         "disc_compatibility"
       ],
-      "search_key": "DVDプレーヤー テレビ用 1080P HDMI/AV出力 リー"
+      "search_key": "DVDプレーヤー テレビ用 1080P HDMI/AV出力 リー",
+      "selected_variant": "14.1インチ・ホワイト、本体1台"
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0HH8XFF82",
-      "asin": "B0HH8XFF82",
-      "amazon_title": "【2026年新登場 人気】 DVDプレーヤー リージョンフリー 超小型 1080P CDプレーヤー HDMI/USB対応 語学学習",
+      "product_id": "AMZ-B0CW9FYK2N",
+      "asin": "B0CW9FYK2N",
+      "amazon_title": "Yoton ポータブルDVDプレーヤー 12.5型 10.5インチ液晶 4～6時間再生 CPRM・車載対応 リージョンフリー ホワイト",
       "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71OLpDCdcFL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/81lGKjo0lXL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [],
-      "search_key": "DVDプレーヤー リージョンフリー 超小型 1080P CDプレ"
+      "search_key": "DVDプレーヤー リージョンフリー 超小型 1080P CDプレ",
+      "selected_variant": "ホワイト、本体1台"
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0H41V69TX",
-      "asin": "B0H41V69TX",
-      "amazon_title": "ポータブルDVDプレーヤー 業界初 type-c急速充電 モバイルバッテリー充電応対 目の保護モード 12.5型 10.5インチ液晶 cd dvdプレーヤー ポータブル 最大5時間連続再生 リージョンフリー CPRM対応 レジューム機能 270度回転 TV同期可能 SDカード/USBに対応 軽量 持運び 操作簡単 日本語説明書 ブラック VOSCORDER",
+      "product_id": "AMZ-B0F6CT6VNG",
+      "asin": "B0F6CT6VNG",
+      "amazon_title": "【新機種·15.6インチHD大画面】Surfola ポータブルDVDプレーヤー 17.9型 cd/dvdプレーヤー 車載用 リージョンフリー CPRM対応 ６時間連続再生 USB/SDカード対応 レジューム機能 AV入出力 TV同期再生 270°回転/180°反転 持ち運び お年寄りや子供向き 語学学習 日本語取扱説明書 ブルーレイ非対応 ブラック",
       "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61WYxqnxNtL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71SmaAFDrHL._AC_SL1376_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [
         "disc_compatibility"
       ],
-      "search_key": "ポータブルDVDプレーヤー 業界初 type-c急速充電 モバイ"
+      "search_key": "ポータブルDVDプレーヤー 業界初 type-c急速充電 モバイ",
+      "selected_variant": "ブラック、本体1台"
     },
     {
       "ref": "p4",
@@ -94,27 +97,29 @@
       "asin": "B0H3KQ625Y",
       "amazon_title": "【11.6インチ ポータブルDVDプレーヤー】 1366×768 液晶 CPRM対応 リージョンフリー USB・SDカード対応 約3～5時間再生 車載バッグ・イヤホン・日本語説明書付き 車中泊・長距離ドライブ・旅行・家庭用 大人・子供・高齢者向け",
       "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/81drlq2ZwOL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/81drlq2ZwOL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [
         "disc_compatibility"
       ],
-      "search_key": "1366×768 液晶 CPRM対応 リージョンフリー USB"
+      "search_key": "1366×768 液晶 CPRM対応 リージョンフリー USB",
+      "selected_variant": "ブラック、11.6インチ液晶、本体1台"
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0H364B62J",
-      "asin": "B0H364B62J",
-      "amazon_title": "13.3インチの広視野角HDスクリーンを搭載したポータブルDVDプレーヤー 車内、家庭、旅行に最適です。",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/81LJBggZLUL._AC_UL320_.jpg",
+      "product_id": "AMZ-B08WZ3GJZ9",
+      "asin": "B08WZ3GJZ9",
+      "amazon_title": "東芝 SD-P910S ポータブルDVDプレーヤー",
+      "brand": "東芝",
+      "image_url": "https://m.media-amazon.com/images/I/61zvTAuzEZL._AC_SL1000_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [],
-      "search_key": "13.3インチの広視野角HDスクリーンを搭載したポータブルDVD"
+      "search_key": "13.3インチの広視野角HDスクリーンを搭載したポータブルDVD",
+      "selected_variant": "SD-P910S／9V型／ブラック／本体1台"
     },
     {
       "ref": "p6",
@@ -122,12 +127,13 @@
       "asin": "B0G9318MNS",
       "amazon_title": "ポータブルDVDプレーヤー 2026年業界革新 目の保護モード搭載 15.6インチ 超大画面 PS液晶狭額縁 軽量 ポータブルDVD 5000mAh大容量 6時間連続再生 リージョンフリー レジューム機能 270度回転 SDカード/USBに対応 語学学習 操作簡単 お年寄りや子供へプレゼント 旅行/車内/病院 ブルーレイ非対応",
       "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61MtR+EPUWL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61MtR+EPUWL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [],
-      "search_key": "ポータブルDVDプレーヤー 2026年業界革新 目の保護モード搭"
+      "search_key": "ポータブルDVDプレーヤー 2026年業界革新 目の保護モード搭",
+      "selected_variant": "15.6インチ・ホワイト、本体1台"
     }
   ]
 }

@@ -47,93 +47,139 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0HKRZB89M",
-      "asin": "B0HKRZB89M",
-      "amazon_title": "毛糸 ウール糸 並太糸 カラフル段染め毛糸 編みバッグ用糸 編み糸 手編み糸 カーフカーディガン用 カシミヤ糸 手芸糸 (2玉セット,216)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61-1gVHK48L._AC_UL320_.jpg",
+      "product_id": "AMZ-B006HY0KAI",
+      "asin": "B006HY0KAI",
+      "amazon_title": "ハマナカ ソノモノ アルパカウール 毛糸 極太 col.45 グレー 系 40g 約60m 0093",
+      "brand": "ハマナカ",
+      "image_url": "https://m.media-amazon.com/images/I/813zrca6-RL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.49,
       "matched_comparison_axes": [
         "fiber_composition"
       ],
-      "search_key": "毛糸 ウール糸 並太糸 カラフル段染め毛糸 編みバッグ用糸 編み"
+      "search_key": "毛糸 ウール糸 並太糸 カラフル段染め毛糸 編みバッグ用糸 編み",
+      "selected_variant": {
+        "colour": "Col.45 グレー",
+        "unit_count": 1,
+        "weight_per_ball": "40g",
+        "length_per_ball": "約60m",
+        "material": "ウール60%、アルパカ40%",
+        "weight_class": "極太"
+      }
     },
     {
       "ref": "p2",
       "product_id": "AMZ-B0HJH1MJ5B",
       "asin": "B0HJH1MJ5B",
       "amazon_title": "綿ウール混紡毛糸 コットン 綿ウール糸 手編み毛糸 グラデーション 虹色 編み物糸 並太 ハンドメイド糸 中細 秋冬 手芸 (2玉セット,09)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61PuDT24rCL._AC_UL320_.jpg",
+      "brand": "Jingjing",
+      "image_url": "https://m.media-amazon.com/images/I/61PuDT24rCL._AC_SL1000_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
       "matched_comparison_axes": [
         "fiber_composition"
       ],
-      "search_key": "綿ウール混紡毛糸 コットン 綿ウール糸 手編み毛糸 グラデーショ"
+      "search_key": "綿ウール混紡毛糸 コットン 綿ウール糸 手編み毛糸 グラデーショ",
+      "selected_variant": {
+        "colour": "09",
+        "unit_count": 2,
+        "weight_per_ball": "約50g",
+        "material": "コットン混・ウール混。配合率非公表"
+      }
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0HCZM62K3",
-      "asin": "B0HCZM62K3",
-      "amazon_title": "ポンポンウール 毛糸 3玉セット 並太 カラフル 柔らかい 編み糸 手編み 編み物 手芸用 ハンドメイド DIY 手芸用 ニット マフラー ショール セーター 帽子 小物作り 7号棒針2本付き",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61d5c00+V4L._AC_UL320_.jpg",
+      "product_id": "AMZ-B0DC6N6XT7",
+      "asin": "B0DC6N6XT7",
+      "amazon_title": "元廣（MOTOHIRO）スキー毛糸 ミニスポーツメランジ 並太 COL. 204 レッド系",
+      "brand": "元廣",
+      "image_url": "https://m.media-amazon.com/images/I/71rOj+g9OUL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
       "matched_comparison_axes": [
         "fiber_composition"
       ],
-      "search_key": "ポンポンウール 毛糸 3玉セット 並太 カラフル 柔らかい 編み"
+      "search_key": "ポンポンウール 毛糸 3玉セット 並太 カラフル 柔らかい 編み",
+      "selected_variant": {
+        "colour": "Col.204 レッド系",
+        "unit_count": 1,
+        "weight_per_ball": "約30g",
+        "length_per_ball": "約57m",
+        "material": "ウール100%",
+        "weight_class": "並太"
+      }
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0G48KRFCG",
-      "asin": "B0G48KRFCG",
-      "amazon_title": "毛糸 グラデーション 毛糸 ウール 毛布糸 中細糸 並太 編み糸 カシミヤ 段染 油絵の色 かぎ針編み用糸 手編み 5玉セット 10玉セット 15玉セット 20玉セット 1玉約50g 合太 段染タイプ カラフル 柔らかい糸 カギ針 とじ針 柔らかい糸 たわし マフラー 帽子 編み物 小物 デコレーション ギフト (5玉セット,06)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/613QDiLQIuL._AC_UL320_.jpg",
+      "product_id": "AMZ-B09NPCWQZ4",
+      "asin": "B09NPCWQZ4",
+      "amazon_title": "原ウール knitworm 毛糸 5玉セット メリノ M 並太 40g (約80m) ウール 日本製 4.赤",
+      "brand": "原ウール",
+      "image_url": "https://m.media-amazon.com/images/I/714Kw0MZGAL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
       "matched_comparison_axes": [
         "fiber_composition"
       ],
-      "search_key": "毛糸 グラデーション 毛糸 ウール 毛布糸 中細糸 並太 編み糸"
+      "search_key": "毛糸 グラデーション 毛糸 ウール 毛布糸 中細糸 並太 編み糸",
+      "selected_variant": {
+        "colour": "4.赤",
+        "unit_count": 5,
+        "weight_per_ball": "40g",
+        "length_per_ball": "約80m",
+        "material": "メリノウール100%",
+        "weight_class": "並太"
+      }
     },
     {
       "ref": "p5",
       "product_id": "AMZ-B0G1S1WKRC",
       "asin": "B0G1S1WKRC",
       "amazon_title": "清原 毛糸 ウール ブレンド 並太 87m×5玉入り BK ブラック AEY-01",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/618oTckti2L._AC_UL320_.jpg",
+      "brand": "清原",
+      "image_url": "https://m.media-amazon.com/images/I/618oTckti2L._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
       "matched_comparison_axes": [
         "fiber_composition"
       ],
-      "search_key": "清原 毛糸 ウール ブレンド 並太 87m×5玉入り BK ブラ"
+      "search_key": "清原 毛糸 ウール ブレンド 並太 87m×5玉入り BK ブラ",
+      "selected_variant": {
+        "colour": "BK ブラック",
+        "unit_count": 5,
+        "weight_per_ball": "約35g",
+        "length_per_ball": "約87m",
+        "material": "アクリル70%、ウール30%",
+        "weight_class": "並太"
+      }
     },
     {
       "ref": "p6",
       "product_id": "AMZ-B0FN7ZS9L8",
       "asin": "B0FN7ZS9L8",
       "amazon_title": "手編み毛糸 メリノ ウール 並太 COL. 24 レッド 系 約40ｇ 88ｍ 6700",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/511vQZPOYnL._AC_UL320_.jpg",
+      "brand": "DARUMA",
+      "image_url": "https://m.media-amazon.com/images/I/511vQZPOYnL._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
       "matched_comparison_axes": [
         "fiber_composition"
       ],
-      "search_key": "手編み毛糸 メリノ ウール 並太 COL. 24 レッド 系 約"
+      "search_key": "手編み毛糸 メリノ ウール 並太 COL. 24 レッド 系 約",
+      "selected_variant": {
+        "colour": "Col.24 レッド系",
+        "unit_count": 1,
+        "weight_per_ball": "約40g",
+        "length_per_ball": "約88m",
+        "material": "メリノウール100%",
+        "weight_class": "並太"
+      }
     }
   ]
 }

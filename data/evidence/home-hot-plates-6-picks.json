@@ -53,9 +53,9 @@
       "ref": "p1",
       "product_id": "AMZ-B0DK5HTM42",
       "asin": "B0DK5HTM42",
-      "amazon_title": "SOLEMOOD ホットプレート 焼肉 たこ焼き 3枚のプレート付き 多用途 しゃぶしゃぶ グリル鍋 深鍋 焼肉プレート すぐに温まる プレート取り外し可能 着脱式 1台多役 A4サイズ 1200W おしゃれ かわいい コンパクト 温度調節 洗いやすい 1人 2人 3人 (四枚セット-ホワイト)",
-      "brand": "SOLEMOODのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/71HJR0ocIEL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "amazon_title": "SOLEMOOD WL-G107 4枚セット",
+      "brand": "SOLEMOOD",
+      "image_url": "https://m.media-amazon.com/images/I/71HJR0ocIEL._AC_SL1500_.jpg",
       "observed_price": 15000,
       "discovery_score": 1,
       "selection_score": 0.88,
@@ -63,78 +63,114 @@
         "plate_variety",
         "size_capacity"
       ],
-      "search_key": "SOLEMOOD ホットプレート 焼肉 たこ焼き 3枚のプレート付き 多用途 しゃ"
+      "search_key": "SOLEMOOD ホットプレート 焼肉 たこ焼き 3枚のプレート付き 多用途 しゃ",
+      "model": "WL-G107",
+      "selected_variant": {
+        "model": "WL-G107",
+        "color": "ホワイト",
+        "plate_count": 4,
+        "pack_count": 1
+      }
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0HJ2H51Y8",
-      "asin": "B0HJ2H51Y8",
-      "amazon_title": "【家電批評 ベストバイ受賞】保温プレート 高速電気保温トレイ 9段階の温度調整40℃〜120℃ ホットプレート 多機能食品断熱ボード チャイルドロック 折りたたみ式 フードウォーマー 自動シャットオフ レストラン/パーティー/イベント/家族ディナーにぴったり お手入れ簡単",
-      "brand": "ブランド: Perano",
-      "image_url": "https://m.media-amazon.com/images/I/710ARkStPgL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0D5VCC5FJ",
+      "asin": "B0D5VCC5FJ",
+      "amazon_title": "象印 EA-HA30-HZ",
+      "brand": "象印マホービン",
+      "image_url": "https://m.media-amazon.com/images/I/71ZBr2-Oq6L._AC_SL1500_.jpg",
       "observed_price": 8499,
       "discovery_score": 1,
       "selection_score": 0.75,
       "matched_comparison_axes": [
         "temp_control"
       ],
-      "search_key": "Perano 保温プレート 高速電気保温トレイ 9段階の温度調整40℃〜120"
+      "search_key": "Perano 保温プレート 高速電気保温トレイ 9段階の温度調整40℃〜120",
+      "model": "象印 EA-HA30-HZ",
+      "selected_variant": {
+        "color": "charcoal",
+        "plates": 3,
+        "pack_count": 1
+      }
     },
     {
       "ref": "p3",
       "product_id": "AMZ-B0BMPXXV1C",
       "asin": "B0BMPXXV1C",
-      "amazon_title": "BRUNO ブルーノ コンパクトホットプレート 本体 プレート2種(たこ焼き 平面) チャコール おしゃれ かわいい これ1台 蓋 ふた付き 1200w 温度調節 洗いやすい 1人 2人 3人用 小型 小さいサイズ 少人数用 ひとり暮らしにも BOE021-CH",
-      "brand": "BRUNOのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/612XVAwKtTL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "amazon_title": "BRUNO BOE021-CH",
+      "brand": "BRUNO",
+      "image_url": "https://m.media-amazon.com/images/I/612XVAwKtTL._AC_SL1500_.jpg",
       "observed_price": 11000,
       "discovery_score": 1,
       "selection_score": 0.57,
       "matched_comparison_axes": [
         "size_capacity"
       ],
-      "search_key": "BRUNO ブルーノ コンパクトホットプレート 本体 プレート2種(たこ焼き"
+      "search_key": "BRUNO ブルーノ コンパクトホットプレート 本体 プレート2種(たこ焼き",
+      "model": "BOE021-CH",
+      "selected_variant": {
+        "model": "BOE021-CH",
+        "color": "チャコール",
+        "plate_count": 2,
+        "pack_count": 1
+      }
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0946TDFQD",
-      "asin": "B0946TDFQD",
-      "amazon_title": "Hanchen 恒温ホットプレート 20*40cm 110V電源コード デュアル温度表示 室温～400℃ タイマー付 高精度1％ 説明書付 恒温ステーション 均一で速い加熱 航空用アルミ 断熱フレーム 予熱器プラットフォーム 携帯修理/溶接/基板予熱/pcb予熱/樹脂成型など (20*40cm)",
-      "brand": "Hanchenのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/51aE41MFLlS._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B00E3J6L7K",
+      "asin": "B00E3J6L7K",
+      "amazon_title": "タイガー CRC-A300-T",
+      "brand": "タイガー魔法瓶",
+      "image_url": "https://m.media-amazon.com/images/I/81niJwNXFzL._AC_SL1500_.jpg",
       "observed_price": 37000,
       "discovery_score": 1,
       "selection_score": 0.57,
       "matched_comparison_axes": [],
-      "search_key": "Hanchen 恒温ホットプレート 20*40cm 110V電源コード デュアル"
+      "search_key": "Hanchen 恒温ホットプレート 20*40cm 110V電源コード デュアル",
+      "model": "タイガー CRC-A300-T",
+      "selected_variant": {
+        "color": "brown",
+        "plates": 3,
+        "pack_count": 1
+      }
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0G5F2CZ8V",
-      "asin": "B0G5F2CZ8V",
-      "amazon_title": "ホットプレート 卓上電気焼肉器 大きいサイズ お手入れ簡単 温度5段階調節 低煙 無煙調理 家庭用焼肉 海鮮 串焼き用 電気焼肉器 卓上で簡単調理 肉料理 ガスなし焼肉プレート (40*23cm)",
-      "brand": "ブランド: JourneyJolt",
-      "image_url": "https://m.media-amazon.com/images/I/512Cs5MtI7L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0DFY13L1K",
+      "asin": "B0DFY13L1K",
+      "amazon_title": "Panasonic NF-HM310-K",
+      "brand": "Panasonic",
+      "image_url": "https://m.media-amazon.com/images/I/71HXQxFR5ZL._AC_SL1500_.jpg",
       "observed_price": 4470,
       "discovery_score": 1,
       "selection_score": 0.52,
       "matched_comparison_axes": [
         "plate_variety"
       ],
-      "search_key": "JourneyJolt ホットプレート 卓上電気焼肉器 大きいサイズ お手入れ簡単 温度"
+      "search_key": "JourneyJolt ホットプレート 卓上電気焼肉器 大きいサイズ お手入れ簡単 温度",
+      "model": "Panasonic NF-HM310-K",
+      "selected_variant": {
+        "color": "black",
+        "plates": 3
+      }
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0FQMWN6KK",
-      "asin": "B0FQMWN6KK",
-      "amazon_title": "WGMホットプレート恒温ホットプレート複数の仕様が利用可能 PCB予熱ステーション PID制御 室温0~400℃ 110V 450-800w基板製作 加熱エリア (BY940-110V)",
-      "brand": "ブランド: WGM",
-      "image_url": "https://m.media-amazon.com/images/I/51dx0UP0KgL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B09MLP5B91",
+      "asin": "B09MLP5B91",
+      "amazon_title": "アイリスオーヤマ DPOL-W31-C",
+      "brand": "アイリスオーヤマ",
+      "image_url": "https://m.media-amazon.com/images/I/61+aO446LSL._AC_SL1000_.jpg",
       "observed_price": 6788,
       "discovery_score": 1,
       "selection_score": 0.52,
       "matched_comparison_axes": [],
-      "search_key": "WGM ホットプレート恒温ホットプレート複数の仕様が利用可能 PCB予"
+      "search_key": "WGM ホットプレート恒温ホットプレート複数の仕様が利用可能 PCB予",
+      "model": "アイリスオーヤマ DPOL-W31-C",
+      "selected_variant": {
+        "color": "ivory",
+        "plates": 3
+      }
     }
   ]
 }

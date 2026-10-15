@@ -53,87 +53,120 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0GQLHJLTL",
-      "asin": "B0GQLHJLTL",
-      "amazon_title": "【公式】medivita シルキークレンジングバーム ブラック 黒炭配合 毛穴汚れ・角栓ケア 吸着洗浄 クレンジングバーム W洗顔不要 しっとり保湿 メイク落とし 韓国スキンケア スパチュラ付き",
-      "brand": "ブランド: medivita",
-      "image_url": "https://m.media-amazon.com/images/I/719qdLtlEpL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0DYDK9HPF",
+      "asin": "B0DYDK9HPF",
+      "amazon_title": "【乾燥小じわ・ハリケア】 DUO ザ クレンジングバーム 66g クレンジング メイク落とし ローズの香り",
+      "brand": "DUO",
+      "image_url": "https://m.media-amazon.com/images/I/61LWryzMRdL._AC_SL1043_.jpg",
       "observed_price": 1377,
       "discovery_score": 1,
       "selection_score": 0.75,
       "matched_comparison_axes": [
         "cleansing_power"
       ],
-      "search_key": "medivita シルキークレンジングバーム ブラック 黒炭配合 毛穴汚れ・角栓ケ"
+      "search_key": "medivita シルキークレンジングバーム ブラック 黒炭配合 毛穴汚れ・角栓ケ",
+      "selected_variant": {
+        "net_content": "66g",
+        "scent": "rose",
+        "pack_count": 1,
+        "container": "original balm jar"
+      }
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0GP8WGTL8",
-      "asin": "B0GP8WGTL8",
-      "amazon_title": "BIVABOO ミラージュ クレンジングバーム +ピーリング/メイク落とし まつエクOK スキンケア ビバブー W洗顔不要 クレンジング ゴマージュ 角質 保湿 毛穴ケア 黒ずみ 高保湿 うるおい AHA PHA BA",
-      "brand": "銀座ステファニー化粧品のストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/61mEzo-bw4L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0GCDNCH21",
+      "asin": "B0GCDNCH21",
+      "amazon_title": "パーフェクトワンフォーカス PERFECT ONE FOCUS スムースクレンジングバーム 75g (【リニューアル】黄色a (単品))",
+      "brand": "パーフェクトワン フォーカス",
+      "image_url": "https://m.media-amazon.com/images/I/6146UPInJlL._AC_SL1200_.jpg",
       "observed_price": 2980,
       "discovery_score": 1,
       "selection_score": 0.75,
       "matched_comparison_axes": [
         "skin_feel"
       ],
-      "search_key": "銀座ステファニー化粧品 BIVABOO ミラージュ クレンジングバーム +ピーリング/メ"
+      "search_key": "銀座ステファニー化粧品 BIVABOO ミラージュ クレンジングバーム +ピーリング/メ",
+      "selected_variant": {
+        "net_content": "75g",
+        "selected_option": "renewed yellow a; single jar",
+        "scent": "orange and bergamot essential oils (current body manufacturer evidence)",
+        "pack_count": 1
+      }
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0DYDK9HPF",
-      "asin": "B0DYDK9HPF",
-      "amazon_title": "【乾燥小じわ・ハリケア】 DUO ザ クレンジングバーム 66g クレンジング メイク落とし ローズの香り",
-      "brand": "DUO（デュオ）のストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/61LWryzMRdL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B07D5C86RX",
+      "asin": "B07D5C86RX",
+      "amazon_title": "Clinique(クリニーク)テイク ザ デイ オフ クレンジング バーム 125mL | メイク落とし 化粧落とし",
+      "brand": "クリニーク",
+      "image_url": "https://m.media-amazon.com/images/I/619Iok4kpXL._AC_SL1500_.jpg",
       "observed_price": 2970,
       "discovery_score": 1,
       "selection_score": 0.75,
       "matched_comparison_axes": [
         "texture_scent"
       ],
-      "search_key": "DUO（デュオ） DUO ザ クレンジングバーム 66g クレンジング メイク落と"
+      "search_key": "DUO（デュオ） DUO ザ クレンジングバーム 66g クレンジング メイク落と",
+      "selected_variant": {
+        "net_content": "125mL",
+        "selected_option": "regular type, not charcoal",
+        "fragrance": "no added fragrance per existing primary evidence",
+        "pack_count": 1
+      }
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0GCDNCH21",
-      "asin": "B0GCDNCH21",
-      "amazon_title": "パーフェクトワンフォーカス 75g スムースクレンジングバーム 毛穴 黒ずみ 角栓 メイク落とし W洗顔不要 マツエクOK ビタミンC 保湿 PERFECT ONE FOCUS（【リニューアル】黄色a (単品)）",
-      "brand": "PERFECT ONE FOCUSのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/6146UPInJlL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B07B2PZZWX",
+      "asin": "B07B2PZZWX",
+      "amazon_title": "ink.(インク）クレンジングバーム 単品 (無香料)",
+      "brand": "ink.",
+      "image_url": "https://m.media-amazon.com/images/I/31oBH1pT2hL._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": 2970,
       "discovery_score": 1,
       "selection_score": 0.57,
       "matched_comparison_axes": [],
-      "search_key": "PERFECT ONE FOCUS パーフェクトワンフォーカス 75g スムースクレンジングバー"
+      "search_key": "PERFECT ONE FOCUS パーフェクトワンフォーカス 75g スムースクレンジングバー",
+      "selected_variant": {
+        "net_content": "90g",
+        "scent": "unscented, normal type",
+        "pack_count": 1
+      }
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0CV3DZF5P",
-      "asin": "B0CV3DZF5P",
-      "amazon_title": "【美容成分81.4％配合】 クレンジング メイク落とし 毛穴洗浄 クレンジングバーム 酵素洗顔 毛穴ケア いちご鼻 角栓 毛穴パック (黒 85g)",
-      "brand": "ホワイトスキンベールのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/71fQ1LZKxtL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0GP8WGTL8",
+      "asin": "B0GP8WGTL8",
+      "amazon_title": "BIVABOO ミラージュ クレンジングバーム +ピーリング/メイク落とし まつエクOK スキンケア ビバブー W洗顔不要 クレンジング ゴマージュ 角質 保湿 毛穴ケア 黒ずみ 高保湿 うるおい AHA PHA BA",
+      "brand": "BIVABOO",
+      "image_url": "https://m.media-amazon.com/images/I/61mEzo-bw4L._AC_SL1500_.jpg",
       "observed_price": 2760,
       "discovery_score": 1,
       "selection_score": 0.57,
       "matched_comparison_axes": [],
-      "search_key": "ホワイトスキンベール クレンジング メイク落とし 毛穴洗浄 クレンジングバーム 酵素洗"
+      "search_key": "ホワイトスキンベール クレンジング メイク落とし 毛穴洗浄 クレンジングバーム 酵素洗",
+      "selected_variant": {
+        "net_content": "100mL",
+        "pack_count": 1,
+        "included": "spatula"
+      }
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0C937T7ZR",
-      "asin": "B0C937T7ZR",
-      "amazon_title": "[バニラコ]BANILACO カバーリシャスアルティメットホワイトクッション 本品 (19 Light) SPF38++ 14g クッションファンデ セミマット",
-      "brand": "BANILA COのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/41lRxlamG9L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0C28F3272",
+      "asin": "B0C28F3272",
+      "amazon_title": "ロゼット 夢みる アクネクリアモイスチャー 90g",
+      "brand": "ロゼット",
+      "image_url": "https://m.media-amazon.com/images/I/71lIehUNJiL._AC_SL1500_.jpg",
       "observed_price": 3300,
       "discovery_score": 1,
       "selection_score": 0.57,
       "matched_comparison_axes": [],
-      "search_key": "BANILA CO BANILACO カバーリシャスアルティメットホワイトクッション"
+      "search_key": "BANILA CO BANILACO カバーリシャスアルティメットホワイトクッション",
+      "selected_variant": {
+        "net_content": "90g",
+        "pack_count": 1,
+        "product_class": "quasi-drug as displayed in Amazon product features"
+      }
     }
   ]
 }

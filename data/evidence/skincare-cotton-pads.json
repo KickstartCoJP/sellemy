@@ -37,11 +37,11 @@
   "eyecatch_image": "https://www.sellemy.jp/img/skincare-cotton-pads/skincare-cotton-pads.png",
   "products": [
     {
-      "amazon_title": "Winner コットンパフ 大判 100％天然コットン 化粧水用 美顔器用 薄手 520枚 6x7cm パッティング専用 メイク落としシート 防塵蓋付き 拭き取り 毛羽立ちなし 無添加 高保湿 スキンケア ネイルケア 化粧落とし (1)",
+      "amazon_title": "Winner コットンパフ 薄手 520枚",
       "asin": "B0995Y5TD1",
-      "brand": "",
+      "brand": "Winner",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61-ObeVwLmL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61-ObeVwLmL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "intended_use"
       ],
@@ -49,72 +49,84 @@
       "product_id": "AMZ-B0995Y5TD1",
       "ref": "p1",
       "search_key": "Winner コットンパフ 大判 100％天然コットン 化粧水用",
-      "selection_score": 0.505
+      "selection_score": 0.505,
+      "model": "408007",
+      "selected_variant": "6×7cm・520枚・1箱"
     },
     {
-      "amazon_title": "フェイシャル コットン 500枚入 化粧用 7ｘ７ｃｍ ふきとり用 エステティック用 カットコットン メイク落とし ネイル落とし 厚め",
+      "amazon_title": "QUANTALY フェイシャルコットン 7×7cm 約500枚",
       "asin": "B0HDBJVFH6",
-      "brand": "",
+      "brand": "QUANTALY",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51JywKfEaNL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51JywKfEaNL._AC_SL1000_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B0HDBJVFH6",
       "ref": "p2",
       "search_key": "フェイシャル コットン 500枚入 化粧用 7ｘ７ｃｍ ふきとり",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "model": "hzm2687",
+      "selected_variant": "7×7cm・約500枚・1袋"
     },
     {
-      "amazon_title": "OEKO-TEX STANDARD 100",
-      "asin": "B0HBCT1Q1V",
-      "brand": "",
+      "amazon_title": "ITO スーパー弾力コットン 200枚×3個セット",
+      "asin": "B09KCKKNYT",
+      "brand": "ITO",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/617CCiu2BhL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61tZTvSN1IL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0HBCT1Q1V",
+      "product_id": "AMZ-B09KCKKNYT",
       "ref": "p3",
       "search_key": "OEKO-TEX STANDARD 100",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "model": "ITO スーパー弾力コットン",
+      "selected_variant": "200枚×3袋、計600枚"
     },
     {
-      "amazon_title": "【2倍に伸ばせて密着】シルコット うるのびコットン 240枚 (80枚×3個) コットンパフ パック うるうる 【Amazon.co.jp限定】",
+      "amazon_title": "シルコット うるのびコットン 80枚×3個",
       "asin": "B0GQYM93TC",
-      "brand": "",
+      "brand": "ユニ・チャーム",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61H7Rdd2yQL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61H7Rdd2yQL._AC_SL1000_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B0GQYM93TC",
       "ref": "p4",
       "search_key": "シルコット うるのびコットン 240枚 (80枚×3個) コット",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "model": "4903111022212",
+      "selected_variant": "Amazon限定80枚×3個、計240枚"
     },
     {
-      "amazon_title": "by Amazon ナチュラルコットンパフ レギュラーサイズ 500枚入",
+      "amazon_title": "by Amazon ナチュラルコットンパフ レギュラー 500枚",
       "asin": "B0F787VKD7",
-      "brand": "",
+      "brand": "by Amazon",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/716niDlJGEL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/716niDlJGEL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B0F787VKD7",
       "ref": "p5",
       "search_key": "by Amazon ナチュラルコットンパフ レギュラーサイズ 5",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "model": "4560314969319",
+      "selected_variant": "レギュラー・500枚・1袋"
     },
     {
-      "amazon_title": "Winner コットンパフ 大判 天然コットン100% 化粧水用 美顔器用 薄手 6×7cm 520枚入×2個セット",
-      "asin": "B0C23Z8W7J",
-      "brand": "",
+      "amazon_title": "セブンエステ コットン 5×6cm 700枚",
+      "asin": "B079TL7ZX5",
+      "brand": "セブンエステ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/614XOOKx55L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61YPPbLPSeL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0C23Z8W7J",
+      "product_id": "AMZ-B079TL7ZX5",
       "ref": "p6",
       "search_key": "Winner コットンパフ 大判 天然コットン100% 化粧水用",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "model": "10444",
+      "selected_variant": "5×6cm・700枚・1袋"
     }
   ],
   "selection": {

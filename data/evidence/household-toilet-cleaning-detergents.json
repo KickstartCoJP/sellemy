@@ -41,9 +41,9 @@
     {
       "amazon_title": "アイメディア(Aimedia) 尿石取りジェル 140g 密着タイプ 尿石除去剤 トイレ洗剤 業務用 日本製 トイレ掃除 黄ばみ 悪臭除去 除菌",
       "asin": "B0CZXMQGCJ",
-      "brand": "",
+      "brand": "アイメディア",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51VQI8qfuFL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51VQI8qfuFL._AC_SL1000_.jpg",
       "matched_comparison_axes": [
         "stains_formula"
       ],
@@ -51,29 +51,39 @@
       "product_id": "AMZ-B0CZXMQGCJ",
       "ref": "p1",
       "search_key": "アイメディア(Aimedia) 尿石取りジェル 140g 密着タ",
-      "selection_score": 0.49
+      "selection_score": 0.49,
+      "selected_variant": {
+        "capacity": "140g",
+        "purpose": "尿石取り",
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "【Amazon.co.jp 限定】スクラビングバブル トイレ掃除 アルコール除菌 プッシュタイプ 本体 300ml+詰め替え用 250ml×2本セット 日本製 トイレ 洗剤 除菌シート 除菌剤 エタノール 除菌 便座クリーナー まとめ買い",
-      "asin": "B07NVVG5JS",
-      "brand": "",
+      "amazon_title": "スクラビングバブル 除菌剤 プッシュタイプ アルコール除菌 トイレ用 本体 300ml",
+      "asin": "B01ISJOMHQ",
+      "brand": "スクラビングバブル",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/81LzKpdSixL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71Hb1WCwBwL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "surfaces"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B07NVVG5JS",
+      "product_id": "AMZ-B01ISJOMHQ",
       "ref": "p2",
       "search_key": "スクラビングバブル トイレ掃除 アルコール除菌 プッシュタイプ",
-      "selection_score": 0.49
+      "selection_score": 0.49,
+      "selected_variant": {
+        "capacity": "300mL",
+        "package": "本体ボトル",
+        "pack_count": 1
+      }
     },
     {
       "amazon_title": "花王(Kao) KAO 【大容量】 トイレマジックリン 消臭・洗浄スプレー 4.5L 業務用 トイレ用 洗剤 プロフェッショナル・サービス",
       "asin": "B003OBO25Q",
-      "brand": "",
+      "brand": "花王",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71kZZMzMDVL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71kZZMzMDVL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "procedure"
       ],
@@ -81,46 +91,69 @@
       "product_id": "AMZ-B003OBO25Q",
       "ref": "p3",
       "search_key": "花王(Kao) KAO トイレマジックリン 消臭・洗浄スプレー",
-      "selection_score": 0.49
+      "selection_score": 0.49,
+      "selected_variant": {
+        "capacity": "4.5L",
+        "pack_count": 1
+      }
     },
     {
       "amazon_title": "ブルーレット トイレ洗浄中 さぼったリング大盛り泡 黒ズミ対策 こすらず泡洗浄 8包 小林製薬 トイレ掃除 洗浄剤【Amazon.co.jp限定】",
       "asin": "B0GQ2X81SP",
-      "brand": "",
+      "brand": "小林製薬",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/912-XiMCy+L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/912-XiMCy+L._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B0GQ2X81SP",
       "ref": "p4",
       "search_key": "ブルーレット トイレ洗浄中 さぼったリング大盛り泡 黒ズミ対策",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": {
+        "JAN": "4987072100431",
+        "pack_count": 8,
+        "pack_unit": "包",
+        "individual_mass_verified": false,
+        "package": "Amazon.co.jp限定8包入り"
+      }
     },
     {
       "amazon_title": "トイレマジックリン こすらずスッキリ泡パック トイレ洗剤 トイレは泡パックでほったらかし掃除！消臭も ウォーターミントの香り つめかえ用 １０８０ｍｌ",
       "asin": "B0FR9RQKMG",
-      "brand": "",
+      "brand": "花王",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/81jmWygH8uL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/81jmWygH8uL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B0FR9RQKMG",
       "ref": "p5",
       "search_key": "トイレマジックリン こすらずスッキリ泡パック トイレ洗剤 トイレ",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": {
+        "capacity": "1080mL",
+        "scent": "ウォーターミント",
+        "format": "詰替え",
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "トイレマジックリン こすらずスッキリ泡パック トイレ洗剤 トイレは泡パックでほったらかし掃除！消臭も サボン＆シトラスの香り つめかえ用 １０８０ｍｌ",
-      "asin": "B0FR9G4CXL",
-      "brand": "",
+      "amazon_title": "ルック まめピカ 抗菌プラス トイレのふき取りクリーナー 210ml (× 2)",
+      "asin": "B0H99S177L",
+      "brand": "ライオン",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/81bJmVU0idL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61tr5BjqBAL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0FR9G4CXL",
+      "product_id": "AMZ-B0H99S177L",
       "ref": "p6",
       "search_key": "トイレマジックリン こすらずスッキリ泡パック トイレ洗剤 トイレ",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": {
+        "capacity_each": "210mL",
+        "pack_count": 2,
+        "total_capacity": "420mL",
+        "package": "本体ボトル2本"
+      }
     }
   ],
   "selection": {

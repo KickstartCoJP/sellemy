@@ -39,9 +39,9 @@
     {
       "amazon_title": "UGREEN USB C 有線LANアダプター 6-in-1 LAN ハブ LANポート付き RJ45 ギガビットイーサネット USB-Cポート拡張",
       "asin": "B0D1XLP7T5",
-      "brand": "",
+      "brand": "UGREEN",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61QWEFzrV7L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61QWEFzrV7L._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "ethernet_conditions",
         "host_connection"
@@ -50,14 +50,15 @@
       "product_id": "AMZ-B0D1XLP7T5",
       "ref": "p1",
       "search_key": "UGREEN USB C 有線LANアダプター 6-in-1 L",
-      "selection_score": 0.67
+      "selection_score": 0.67,
+      "selected_variant": "グレー／USB C LAN ハブ"
     },
     {
       "amazon_title": "USB C 有線LANアダプター 6-in-1 (USB-C 3.2+USB-A 3.2 拡張) 2500Mbps LAN ハブ",
       "asin": "B0HCNHJFF6",
-      "brand": "",
+      "brand": "YERENN",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51glht4MCeL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51glht4MCeL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "host_connection"
       ],
@@ -65,61 +66,66 @@
       "product_id": "AMZ-B0HCNHJFF6",
       "ref": "p2",
       "search_key": "USB C 有線LANアダプター 6-in-1 (USB-C 3",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": "グレー／USB3.2+2500MbpsLAN"
     },
     {
-      "amazon_title": "Recycled Claim Standard Blended",
+      "amazon_title": "Acer USB C 有線LANアダプター 6-in-1 タイプC ハブ 10Gbps USB-A & USB-C LAN 1000Mbps",
       "asin": "B0H981R9GT",
-      "brand": "",
+      "brand": "Acer",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71c-VWW87BL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71c-VWW87BL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B0H981R9GT",
       "ref": "p3",
       "search_key": "Recycled Claim Standard Blended",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": "スペースグレー／6-in-1 1000Mbps"
     },
     {
-      "amazon_title": "USB-C 10Gbps LANアダプター 10GbE対応 USB Type-C 有線LAN変換アダプター RJ45 アダプター",
-      "asin": "B0H4LFXM87",
-      "brand": "",
+      "amazon_title": "Cable Matters USB-C 5GbE LANアダプター 5Gbps有線LAN タイプC",
+      "asin": "B0D3FM7Z4L",
+      "brand": "Cable Matters",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61CSq5HvbZL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/718tDSk1yjL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "host_connection"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0H4LFXM87",
+      "product_id": "AMZ-B0D3FM7Z4L",
       "ref": "p4",
       "search_key": "USB-C 10Gbps LANアダプター 10GbE対応 US",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": "グレー／5GbE"
     },
     {
       "amazon_title": "バッファロー 有線LANアダプター Giga Type-A USB3.2(Gen1)対応 ブラック LUA6-U3-AGTE-NBK",
       "asin": "B0GFNDZR6X",
-      "brand": "",
+      "brand": "バッファロー",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/518-kEk6hCL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/518-kEk6hCL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B0GFNDZR6X",
       "ref": "p5",
       "search_key": "バッファロー 有線LANアダプター Giga Type-A US",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": "ブラック／2026年モデル／USB Type-A"
     },
     {
       "amazon_title": "バッファロー 有線LANアダプター Giga Type-C USB3.2(Gen1)対応 ブラック LUA6-U3-CGTE-NBK",
       "asin": "B0GFMXZ3L3",
-      "brand": "",
+      "brand": "バッファロー",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51nRjed3QnL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51nRjed3QnL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B0GFMXZ3L3",
       "ref": "p6",
       "search_key": "バッファロー 有線LANアダプター Giga Type-C US",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": "ブラック／2026年モデル／USB Type-C"
     }
   ],
   "selection": {

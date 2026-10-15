@@ -37,27 +37,36 @@
   "eyecatch_image": "https://www.sellemy.jp/img/stovetop-saucepans/stovetop-saucepans.png",
   "products": [
     {
-      "amazon_title": "雪平鍋 片手鍋 IH対応 ガス火対応 両側注ぎ口付き アルミ合金製 軽量 焦げ付きにくい 金コーティング ガラス蓋付き マルチポット 味噌汁 煮物 一人暮らし ギフト (雪平鍋 20)",
-      "asin": "B0H74YLKQ9",
-      "brand": "",
+      "amazon_title": "MICHELANGELO 雪平鍋 20cm 2.5L 三層鋼 深型 IH・ガス火対応 両口注ぎ 木製ハンドル",
+      "asin": "B0G4DB33KB",
+      "brand": "MICHELANGELO",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61W6quErhqL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71i6ThGJXfL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "material_and_heat_source",
         "pouring_and_handling"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0H74YLKQ9",
+      "product_id": "AMZ-B0G4DB33KB",
       "ref": "p1",
       "search_key": "雪平鍋 片手鍋 IH対応 ガス火対応 両側注ぎ口付き アルミ合金",
-      "selection_score": 0.685
+      "selection_score": 0.685,
+      "selected_variant": {
+        "color": "白い（色欄表記、色の選択肢なし）",
+        "size": "20cm選択、外寸37×20.5×8.7cm",
+        "capacity": "2.5L（販売容量表示。調理適正量の保証ではない）",
+        "pack_and_contents": "片手雪平鍋本体1個、ガラス蓋付属の表示なし",
+        "selected_variations": {
+          "size_name": "20cm/2.5L"
+        }
+      }
     },
     {
       "amazon_title": "【燕三条製】TETSUNAGI（テツナギ）片手鍋 16cm 小鍋 ステンレス鍋 ガラス蓋付き IH・ガス対応 目盛り付き 両口注ぎ 1.8L 食洗機対応 日本製｜毎日の調理に使いやすい T102100",
       "asin": "B0H8SGG7VP",
-      "brand": "",
+      "brand": "TETSUNAGI",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71vn+hkh4eL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71vn+hkh4eL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "material_and_heat_source"
       ],
@@ -65,27 +74,46 @@
       "product_id": "AMZ-B0H8SGG7VP",
       "ref": "p2",
       "search_key": "TETSUNAGI（テツナギ）片手鍋 16cm 小鍋 ステンレス",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "color": "シルバー",
+        "size": "16cm、外寸31×17.4×13.6cm",
+        "capacity": "満水1.8L",
+        "pack_and_contents": "片手鍋＋蒸気穴付きガラス蓋1セット",
+        "selected_variations": {
+          "item_shape": "16cm 目盛・蓋付き"
+        }
+      }
     },
     {
       "amazon_title": "SENSARTE 片手鍋 20cm 2.4L 蓋付き IH/ガス対応 ノンスティック PFOA PFOSフリー 一人鍋 軽 パープル",
       "asin": "B0H8F8TFV6",
-      "brand": "",
+      "brand": "SENSARTE",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/6150FcIectL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/6150FcIectL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B0H8F8TFV6",
       "ref": "p3",
       "search_key": "SENSARTE 片手鍋 20cm 2.4L 蓋付き IH/ガス",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "color": "パープル",
+        "size": "20cm選択、外寸34.5×20×9cm",
+        "capacity": "2.4L（販売容量表示。調理適正量の保証ではない）",
+        "pack_and_contents": "片手鍋＋蓋＋ドライバー1セット",
+        "selected_variations": {
+          "size_name": "20cm",
+          "color_name": "パープル"
+        }
+      }
     },
     {
       "amazon_title": "アイリスオーヤマ 片手鍋 18cm 鍋 蓋つき ガス火/IH対応 ダイヤモンドコート こびりつきにくい お手入れ簡単 DCS-P18 メタリックバーガンディ",
       "asin": "B0GX3GPR8R",
-      "brand": "",
+      "brand": "アイリスオーヤマ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/513rUyA7mLL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/513rUyA7mLL._AC_SL1000_.jpg",
       "matched_comparison_axes": [
         "material_and_heat_source"
       ],
@@ -93,38 +121,66 @@
       "product_id": "AMZ-B0GX3GPR8R",
       "ref": "p4",
       "search_key": "アイリスオーヤマ 片手鍋 18cm 鍋 蓋つき ガス火/IH対応",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "color": "メタリックバーガンディ、リニューアル選択",
+        "size": "直径18cm、調理面深さ8.3cm",
+        "capacity": "満水約2.1L",
+        "pack_and_contents": "片手鍋＋強化ガラス蓋1セット（本体約530g＋蓋約330g）",
+        "selected_variations": {
+          "color_name": "メタリックバーガンディ",
+          "set_name": "(リニューアル)"
+        }
+      }
     },
     {
-      "amazon_title": "KOCH SYSTEME CS 片手鍋 14cm 蓋つき ステンレス鍋 IH対応",
-      "asin": "B0GVM6K5NS",
-      "brand": "",
+      "amazon_title": "【オンライン限定】 パール金属 ミルクパン 14cm つぼ型 鍋 片手鍋 ステンレス製 目盛付 日本製 IH対応 サテン仕上げ ワイヤーハンドル AZ-7096",
+      "asin": "B0FY335RQW",
+      "brand": "パール金属",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61pAIiPdeML._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/510kFi7kVRL._AC_SL1227_.jpg",
       "matched_comparison_axes": [
         "material_and_heat_source"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0GVM6K5NS",
+      "product_id": "AMZ-B0FY335RQW",
       "ref": "p5",
       "search_key": "KOCH SYSTEME CS 片手鍋 14cm 蓋つき ステン",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "color": "シルバー",
+        "size": "14cm（ミルクパン）選択、説明欄全長28×幅14.5×高さ9.5cm",
+        "capacity": "満水1.1L",
+        "pack_and_contents": "つぼ型ミルクパン本体1個",
+        "selected_variations": {
+          "style_name": "14cm(ミルクパン)"
+        }
+      }
     },
     {
-      "amazon_title": "片手鍋 ミルクパン IH対応 ガス対応 軽量 一人暮らし 焦げ付かない 両側注ぎ口 お手入れ簡単 味噌汁用 離乳食調理 朝食準備 (500ml,直線)",
-      "asin": "B0GTYHTHWY",
-      "brand": "",
+      "amazon_title": "下村企販 食洗機対応 液だれしにくい ミルクパン 12cm 【日本製】 1.0L 直火専用 注ぎやすい 分量の目安になる 目盛り付き 少量のスープ作り 離乳食 ミルクの温め 片手鍋 小 コロンとかわいいフォルム ステンレス 燕三条 44299",
+      "asin": "B09LLRLQV6",
+      "brand": "下村企販",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61VxyzMRyML._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51XHP-yu3NL._AC_SL1000_.jpg",
       "matched_comparison_axes": [
         "material_and_heat_source",
         "pouring_and_handling"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0GTYHTHWY",
+      "product_id": "AMZ-B09LLRLQV6",
       "ref": "p6",
       "search_key": "片手鍋 ミルクパン IH対応 ガス対応 軽量 一人暮らし 焦げ付",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "color": "01.)ミルクパン12cm（色選択ラベル）",
+        "size": "内径12cm×深さ8.2cm、底径10cm、幅25.5×奥行13×高さ11cm",
+        "capacity": "1.0L（販売容量表示。調理適正量の保証ではない）",
+        "pack_and_contents": "ミルクパン本体1個、付属品なし",
+        "selected_variations": {
+          "color_name": "01.)ミルクパン 12cm"
+        }
+      }
     }
   ],
   "selection": {

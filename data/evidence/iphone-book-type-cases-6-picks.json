@@ -45,11 +45,11 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0GCZC32QY",
-      "asin": "B0GCZC32QY",
-      "amazon_title": "for iPhone 15 ケース 手帳型 アイフォン 15 手帳 ケース 耐衝撃 炭素繊維テクスチャ カード収納 スタンド機能 高級な炭素繊維風 縦のライン",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71yctcD+FyL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0FPCH4C5S",
+      "asin": "B0FPCH4C5S",
+      "amazon_title": "iFace Reflection iPhone 17 手帳型クリアケース",
+      "brand": "iFace",
+      "image_url": "https://m.media-amazon.com/images/I/61EFU8HhfML._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.71,
@@ -57,78 +57,111 @@
         "function",
         "protection"
       ],
-      "search_key": "for iPhone 15 ケース 手帳型 アイフォン 15 手"
+      "search_key": "for iPhone 15 ケース 手帳型 アイフォン 15 手",
+      "selected_variant": {
+        "phone": "iPhone 17",
+        "color": "black",
+        "pack_count": 1
+      }
     },
     {
       "ref": "p2",
       "product_id": "AMZ-B0FL72LHVH",
       "asin": "B0FL72LHVH",
-      "amazon_title": "COGURE 互換 iPhone 17 ケース 手帳型 本革 PDE オレンジ",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71SSsSHcNEL._AC_UL320_.jpg",
+      "amazon_title": "COGURE COPDE iPhone 17 手帳型ケース オレンジ",
+      "brand": "COGURE",
+      "image_url": "https://m.media-amazon.com/images/I/71SSsSHcNEL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.53,
       "matched_comparison_axes": [
         "material"
       ],
-      "search_key": "COGURE 互換 iPhone 17 ケース 手帳型 本革 P"
+      "search_key": "COGURE 互換 iPhone 17 ケース 手帳型 本革 P",
+      "selected_variant": {
+        "model": "COPDE-17 Orange",
+        "phone": "iPhone 17",
+        "color": "オレンジ",
+        "pack_count": 1
+      }
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0GZQDD8Y1",
-      "asin": "B0GZQDD8Y1",
-      "amazon_title": "CASSYOOK 適合 iphone se ケース 手帳型 iphone se2/se3 ケース おしゃれ 表面ポケット便利 iphone8 ケース 手帳型 スマホケース se マグネット式 スマホカバー iphone se 手帳型ケース アイフォンse ケース 手帳型 全面保護 カード収納(アプリコット)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/81BwKCCd1mL._AC_UL320_.jpg",
+      "product_id": "AMZ-B09T6XFFHL",
+      "asin": "B09T6XFFHL",
+      "amazon_title": "Spigen ウォレットS ACS04413",
+      "brand": "Spigen",
+      "image_url": "https://m.media-amazon.com/images/I/71Op9qWXljL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [
         "function"
       ],
-      "search_key": "CASSYOOK 適合 iphone se ケース 手帳型 ip"
+      "search_key": "CASSYOOK 適合 iphone se ケース 手帳型 ip",
+      "selected_variant": {
+        "phone": "iPhone SE 2022/2020・iPhone 8/7",
+        "color": "black",
+        "pack_count": 1
+      }
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0GH119RPQ",
-      "asin": "B0GH119RPQ",
-      "amazon_title": "Rssviss iPhone 17 用 ケース 手帳型 2in1 分離式 MagSafe対応 6.3インチ ブラック",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/81uddZBbgHL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0FPWNT3JZ",
+      "asin": "B0FPWNT3JZ",
+      "amazon_title": "エレコム MAGKEEP PM-A25APLFMGCA",
+      "brand": "ELECOM",
+      "image_url": "https://m.media-amazon.com/images/I/71u9shX58uL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "Rssviss iPhone 17 用 ケース 手帳型 2in1"
+      "search_key": "Rssviss iPhone 17 用 ケース 手帳型 2in1",
+      "selected_variant": {
+        "phone": "iPhone 17",
+        "color": "camel",
+        "pack_count": 1
+      }
     },
     {
       "ref": "p5",
       "product_id": "AMZ-B0FPWR167Y",
       "asin": "B0FPWR167Y",
-      "amazon_title": "エレコム iPhone 17 ケース カバー 手帳型 薄型 軽量 スエード素材使用 ソフトレザー TPU 磁石付 カードポケット スタンド機能 4つ角エアークッション PM-A25APLFUSBK",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71W3sz06XNL._AC_UL320_.jpg",
+      "amazon_title": "エレコム iPhone 17 手帳型ケース UltraSlim Ultrasuede PM-A25APLFUSBK ブラック",
+      "brand": "ELECOM",
+      "image_url": "https://m.media-amazon.com/images/I/71W3sz06XNL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [
         "function"
       ],
-      "search_key": "エレコム iPhone 17 ケース カバー 手帳型 薄型 軽量"
+      "search_key": "エレコム iPhone 17 ケース カバー 手帳型 薄型 軽量",
+      "selected_variant": {
+        "model": "PM-A25APLFUSBK",
+        "phone": "iPhone 17",
+        "color": "ブラック",
+        "pack_count": 1
+      }
     },
     {
       "ref": "p6",
       "product_id": "AMZ-B0FMXMKDH2",
       "asin": "B0FMXMKDH2",
-      "amazon_title": "HANATORA for iPhone 18Pro 17Pro ケース 手帳型 レザー PH-17Pro-BlueIndigo",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71L-XuGSAuL._AC_UL320_.jpg",
+      "amazon_title": "HANATORA Edel PH シュリンクカーフレザー 手帳型 iPhone 17 Pro用 ブルーインディゴ",
+      "brand": "HANATORA",
+      "image_url": "https://m.media-amazon.com/images/I/71L-XuGSAuL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "HANATORA for iPhone 18Pro 17Pro"
+      "search_key": "HANATORA for iPhone 18Pro 17Pro",
+      "selected_variant": {
+        "model": "PH-17Pro-BlueIndigo",
+        "phone": "iPhone 17 Pro",
+        "color": "ブルーインディゴ",
+        "pack_count": 1
+      }
     }
   ]
 }

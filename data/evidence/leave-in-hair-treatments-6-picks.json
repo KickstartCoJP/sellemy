@@ -56,8 +56,8 @@
       "product_id": "AMZ-B0DZM6J6KH",
       "asin": "B0DZM6J6KH",
       "amazon_title": "plus eau (プリュスオー) ハイドロミルク 無香料 ヘアミルク 洗い流さないトリートメント 美容液 150ml ポンプ 本体",
-      "brand": "plus eau(プリュスオー)のストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/51bxfeFKkCL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "brand": "plus eau",
+      "image_url": "https://m.media-amazon.com/images/I/51bxfeFKkCL._AC_SL1500_.jpg",
       "observed_price": 1445,
       "discovery_score": 1,
       "selection_score": 0.855,
@@ -65,15 +65,21 @@
         "scent",
         "texture"
       ],
-      "search_key": "plus eau(プリュスオー) plus eau (プリュスオー) ハイドロミルク 無香料 ヘ"
+      "search_key": "plus eau(プリュスオー) plus eau (プリュスオー) ハイドロミルク 無香料 ヘ",
+      "selected_variant": {
+        "capacity": "150mL",
+        "scent": "無香料",
+        "pack_count": 1,
+        "container": "ポンプ本体"
+      }
     },
     {
       "ref": "p2",
       "product_id": "AMZ-B0H25LSFN7",
       "asin": "B0H25LSFN7",
       "amazon_title": "Kaminii カミニー ヘアミルク リッチモイスト ＜無香料＞ 洗い流さないトリートメント アウトバス ダメージ補修 保湿 ヒートケア",
-      "brand": "Kaminiiのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/71LvowuHdoL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "brand": "Kaminii",
+      "image_url": "https://m.media-amazon.com/images/I/71LvowuHdoL._AC_SL1500_.jpg",
       "observed_price": 1980,
       "discovery_score": 1,
       "selection_score": 0.495,
@@ -81,67 +87,98 @@
         "scent",
         "texture"
       ],
-      "search_key": "Kaminii カミニー ヘアミルク リッチモイスト ＜無香料＞ 洗い流さないト"
+      "search_key": "Kaminii カミニー ヘアミルク リッチモイスト ＜無香料＞ 洗い流さないト",
+      "selected_variant": {
+        "capacity": "80mL",
+        "scent": "無香料",
+        "pack_count": 1,
+        "edition": "2026 renewed formulation"
+      }
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0GYCV5LBH",
-      "asin": "B0GYCV5LBH",
-      "amazon_title": "ファブリーズ レノアハピネスミスト 消臭スプレー(衣類・布用)【5つ星ホテル推奨 消臭・除菌】本体370mL+詰替1240mL ホワイトティーの香り",
-      "brand": "ファブリーズのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/71T7sll9LgL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B06WLJYWF7",
+      "asin": "B06WLJYWF7",
+      "amazon_title": "オルビス( ORBIS ) エッセンスイン ヘアミルク ( 洗い流さない / 無香料 ) ヘアトリートメント パサつき ダメージケア",
+      "brand": "ORBIS",
+      "image_url": "https://m.media-amazon.com/images/I/41+UMFS-W3L._AC_SL1500_.jpg",
       "observed_price": 1935,
       "discovery_score": 1,
       "selection_score": 0.495,
       "matched_comparison_axes": [
         "texture"
       ],
-      "search_key": "ファブリーズ レノアハピネスミスト 消臭スプレー(衣類・布用) 本体370mL"
+      "search_key": "ファブリーズ レノアハピネスミスト 消臭スプレー(衣類・布用) 本体370mL",
+      "selected_variant": {
+        "capacity": "140g",
+        "scent": "無香料",
+        "pack_count": 1,
+        "container": "通常ボトル",
+        "model_number": "009474"
+      }
     },
     {
       "ref": "p4",
       "product_id": "AMZ-B0GN4R93K1",
       "asin": "B0GN4R93K1",
       "amazon_title": "KANTANSERIES カンタンシリーズ さらけあ 95g 洗い流さないトリートメント ホワイトリリー ヘアミルク",
-      "brand": "KANTANSERIESのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/51TzcJ9B1oL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "brand": "KANTANSERIES",
+      "image_url": "https://m.media-amazon.com/images/I/51TzcJ9B1oL._AC_SL1500_.jpg",
       "observed_price": 2420,
       "discovery_score": 1,
       "selection_score": 0.495,
       "matched_comparison_axes": [
         "texture"
       ],
-      "search_key": "KANTANSERIES カンタンシリーズ さらけあ 95g 洗い流さないトリートメント"
+      "search_key": "KANTANSERIES カンタンシリーズ さらけあ 95g 洗い流さないトリートメント",
+      "selected_variant": {
+        "capacity": "95g",
+        "scent": "ホワイトリリー",
+        "pack_count": 1,
+        "type": "ヘアミルク"
+      }
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0G8HZX2PD",
-      "asin": "B0G8HZX2PD",
-      "amazon_title": "ヘアオイル メンズ 洗い流さないトリートメント シトラスとヒノキの香り",
-      "brand": "ブランド: アイムレスト",
-      "image_url": "https://m.media-amazon.com/images/I/61w7BdLKbUL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B074DPN4KV",
+      "asin": "B074DPN4KV",
+      "amazon_title": "ナプラ N. ポリッシュオイル 150ml",
+      "brand": "napla",
+      "image_url": "https://m.media-amazon.com/images/I/51KB4QT-+5L._AC_SL1242_.jpg",
       "observed_price": 2380,
       "discovery_score": 1,
       "selection_score": 0.495,
       "matched_comparison_axes": [
         "texture"
       ],
-      "search_key": "アイムレスト ヘアオイル メンズ 洗い流さないトリートメント シトラスとヒノキ"
+      "search_key": "アイムレスト ヘアオイル メンズ 洗い流さないトリートメント シトラスとヒノキ",
+      "selected_variant": {
+        "capacity": "150mL",
+        "scent": "マンダリンオレンジ＆ベルガモット（通常品）",
+        "pack_count": 1,
+        "pump_inclusion": "not established or promised"
+      }
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0F8MPL39B",
-      "asin": "B0F8MPL39B",
-      "amazon_title": "アネラホワイト ヘアミルク 洗い流さないトリートメント ミルク ヘアケア【深層ダメージ補修xまとまるうるサラ髪へ】",
-      "brand": "ブランド: ANELA WHITE",
-      "image_url": "https://m.media-amazon.com/images/I/51yx+JGHlYL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B00KOT949U",
+      "asin": "B00KOT949U",
+      "amazon_title": "ミルボン ディーセス エルジューダ エマルジョン 120g",
+      "brand": "MILBON",
+      "image_url": "https://m.media-amazon.com/images/I/51f1acyi-zL._AC_SL1000_.jpg",
       "observed_price": 2280,
       "discovery_score": 1,
       "selection_score": 0.495,
       "matched_comparison_axes": [
         "texture"
       ],
-      "search_key": "ANELA WHITE アネラホワイト ヘアミルク 洗い流さないトリートメント ミルク"
+      "search_key": "ANELA WHITE アネラホワイト ヘアミルク 洗い流さないトリートメント ミルク",
+      "selected_variant": {
+        "capacity": "120g",
+        "pack_count": 1,
+        "formula": "エマルジョン、not エマルジョン＋",
+        "jan": "4954835290678"
+      }
     }
   ]
 }

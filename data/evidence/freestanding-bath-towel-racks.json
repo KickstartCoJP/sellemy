@@ -37,11 +37,11 @@
   "eyecatch_image": "https://www.sellemy.jp/img/freestanding-bath-towel-racks/freestanding-bath-towel-racks.png",
   "products": [
     {
-      "amazon_title": "HEIAN SHINDO バスタオルスタンド マットホワイト 耐荷重1kgx5 幅75cm STH-40WH 平安伸銅工業",
+      "amazon_title": "平安伸銅工業 バスタオルハンガー STH-40WH",
       "asin": "B0D25HRZ5N",
-      "brand": "",
+      "brand": "平安伸銅工業",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51kTi0xvS1L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51kTi0xvS1L._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "bar_layout"
       ],
@@ -49,74 +49,105 @@
       "product_id": "AMZ-B0D25HRZ5N",
       "ref": "p1",
       "search_key": "HEIAN SHINDO バスタオルスタンド マットホワイト 耐",
-      "selection_score": 0.505
+      "selection_score": 0.505,
+      "selected_variant": {
+        "model": "STH-40WH",
+        "color": "マットホワイト",
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "AMUU バスタオルハンガー 伸縮式 おりたたみ タオル 折りたたみ スリム 幅広 洗濯物 衣類 干し分け角ハンガー プラスチック ビッグサイズ 屋外 室内4本セット (グレー)",
-      "asin": "B0C3PV36M1",
-      "brand": "",
+      "amazon_title": "アイリスオーヤマ スタイルタオルハンガー THS-680",
+      "asin": "B0DF7BNM8V",
+      "brand": "アイリスオーヤマ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61p-R7sdk4L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61js11bl3jL._AC_SL1000_.jpg",
       "matched_comparison_axes": [
         "installation_and_storage"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0C3PV36M1",
+      "product_id": "AMZ-B0DF7BNM8V",
       "ref": "p2",
       "search_key": "AMUU バスタオルハンガー 伸縮式 おりたたみ タオル 折りた",
-      "selection_score": 0.505
+      "selection_score": 0.505,
+      "selected_variant": {
+        "model": "THS-680",
+        "color": "ホワイト",
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "無印良品 アルミ バスタオル用伸縮ハンガー 約幅44cm 伸長時：約幅77 cm 76953937 (× 4)",
-      "asin": "B0H96VLXKT",
-      "brand": "",
+      "amazon_title": "天馬 ポーリッシュ ブラック物干し バスタオルスタンド PSBK-02",
+      "asin": "B0C5X47WS3",
+      "brand": "天馬",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61ql1dOS8QL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61kghvL+vhL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0H96VLXKT",
+      "product_id": "AMZ-B0C5X47WS3",
       "ref": "p3",
       "search_key": "無印良品 アルミ バスタオル用伸縮ハンガー 約幅44cm 伸長時",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "model": "PSBK-02",
+        "color": "マットブラック",
+        "quantity": 1
+      }
     },
     {
-      "amazon_title": "レック 「5つ干し」 ダブル 大判 バスタオル ・ トレーナー ハンガー 2本組×2個パック / 最大干し幅約70cm / W-425",
-      "asin": "B0GLYZQKXZ",
-      "brand": "",
+      "amazon_title": "グローバルアロー BIERTA クロスドライヤー H04-5013",
+      "asin": "B01CG1OACE",
+      "brand": "グローバルアロー",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61Ah0hs8zAL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/41a7N3GWvQL._AC_SY300_SX300_QL70_ML2_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0GLYZQKXZ",
+      "product_id": "AMZ-B01CG1OACE",
       "ref": "p4",
       "search_key": "レック 「5つ干し」 ダブル 大判 バスタオル ・ トレーナー",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "model": "H04-5013",
+        "color": "ナチュラル",
+        "jan": "4544632215167",
+        "quantity": 1
+      }
     },
     {
-      "amazon_title": "UTIMIU バスタオルスタンド バスタオルハンガー スリム タオル掛け ３段 横から掛けられる 物干し ハンガー タオル ラック 大判サイズ対応 ふきん掛け バスタオル掛け棚付き キャスター付き アジャスター付き 洗濯物ハンガー 浴室 洗面所 トイレ 風呂場 隙間収納 ワゴン 約W67.5×D17.5×H86cm (ホワイト)",
-      "asin": "B0F632K66T",
-      "brand": "",
+      "amazon_title": "山崎実業 横から掛けられるバスタオルハンガー3連 タワー ブラック4980",
+      "asin": "B085XN24D7",
+      "brand": "山崎実業",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61yLlEVdOKL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61qVDzVfORL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0F632K66T",
+      "product_id": "AMZ-B085XN24D7",
       "ref": "p5",
       "search_key": "UTIMIU バスタオルスタンド バスタオルハンガー スリム タ",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "model": "4980",
+        "color": "ブラック",
+        "quantity": 1
+      }
     },
     {
-      "amazon_title": "アイリスオーヤマ スタイルタオルハンガー 洗濯物干し 室内 部屋干し バスタオルスタンド ホワイト 幅約68×奥行約25.5×高さ約82 コンパクトでスペースを有効活用 インテリアに馴染みやすい 工具不要でカチッとはめるだけ 衣類ハンガー THSー680",
-      "asin": "B0DF7BNM8V",
-      "brand": "",
+      "amazon_title": "エカンズ 伸縮式タオルハンガー OT-60W オフホワイト",
+      "asin": "B0CVPH1TS3",
+      "brand": "エカンズ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61js11bl3jL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71YPILuDTmL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0DF7BNM8V",
+      "product_id": "AMZ-B0CVPH1TS3",
       "ref": "p6",
       "search_key": "アイリスオーヤマ スタイルタオルハンガー 洗濯物干し 室内 部屋",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "model": "OT-60W",
+        "color": "オフホワイト（Amazonホワイト）",
+        "quantity": 1
+      }
     }
   ],
   "selection": {

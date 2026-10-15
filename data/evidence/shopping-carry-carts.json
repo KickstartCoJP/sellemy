@@ -39,9 +39,9 @@
     {
       "amazon_title": "【大容量35L・折りたたみ】ショッピングカート 買い物カート 35L 2WAY リュック キャリーカート 保冷保温 (ブラック)",
       "asin": "B0GRGY8KRL",
-      "brand": "",
+      "brand": "R・BOOM",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61YxVVuzjrL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61YxVVuzjrL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "carrying_capacity"
       ],
@@ -49,14 +49,18 @@
       "product_id": "AMZ-B0GRGY8KRL",
       "ref": "p1",
       "search_key": "ショッピングカート 買い物カート 35L 2WAY リュック キ",
-      "selection_score": 0.505
+      "selection_score": 0.505,
+      "selected_variant": {
+        "color": "ブラック",
+        "capacity_l": 35
+      }
     },
     {
       "amazon_title": "EcoCa エコカエクセラ 【保冷バッグ2個セット】 ハンドル高さ調節 下段にカゴ設置可能 ショッピング 買い物 カート キャリー ＜ECE020S＞",
       "asin": "B0FQ55V7BN",
-      "brand": "",
+      "brand": "EcoCa",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61WIrFIqmML._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61WIrFIqmML._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "wheels_handle"
       ],
@@ -64,53 +68,77 @@
       "product_id": "AMZ-B0FQ55V7BN",
       "ref": "p2",
       "search_key": "EcoCa エコカエクセラ ハンドル高さ調節 下段にカゴ設置可能",
-      "selection_score": 0.505
+      "selection_score": 0.505,
+      "selected_variant": {
+        "color": "ブラックフレーム/チャコールバッグ",
+        "bags": 2,
+        "max_load_kg": 35
+      }
     },
     {
-      "amazon_title": "[COVANK]ショッピングキャリー キャリーカート 折りたたみ ショッピングカート キャスター付き エコバッグ 軽量 高さ調節可能 取り外し可能",
-      "asin": "B0HJWDNCX9",
-      "brand": "",
+      "amazon_title": "レップ(Rep) Cocoro(コ・コロ) ショッピングカート トート カートセット ブラック 22L 荷物フック付き 折り畳み式 保冷 保温 エコバッグ 買い物 おしゃれ 可愛い シンプル 便利 コンパクト 軽量 キャンプ 運動会 花見 運動会 550731",
+      "asin": "B0CRKQQCL7",
+      "brand": "レップ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61RJypdv0ML._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71f95tX7UzL._SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0HJWDNCX9",
+      "product_id": "AMZ-B0CRKQQCL7",
       "ref": "p3",
       "search_key": "ショッピングキャリー キャリーカート 折りたたみ ショッピングカ",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "color": "ブラック",
+        "capacity_l": 22,
+        "bag_cm": [
+          30,
+          18.5,
+          40.5
+        ]
+      }
     },
     {
       "amazon_title": "［神戸リベラル］ 【日本製YKKファスナー】 【大型ダブルキャスター】保温保冷 ショッピングキャリー 折り畳み可能 横押し 軽量 ショッピングカート 組み立て済み 605 (ブラックヘアライン)",
       "asin": "B0GNMBQ8VX",
-      "brand": "",
+      "brand": "BAGING",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71q5vPx5YDL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71q5vPx5YDL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B0GNMBQ8VX",
       "ref": "p4",
       "search_key": "［神戸リベラル］ 保温保冷 ショッピングキャリー 折り畳み可能",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "color": "ブラックヘアライン",
+        "capacity_l": 30,
+        "weight_kg": 1.9
+      }
     },
     {
       "amazon_title": "ナイスウェイ 軽量 2段ショッピングカート 折りたたみ 耐荷重25kg",
       "asin": "B0GJD3TW8W",
-      "brand": "",
+      "brand": "ナイスウェイ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61nNdKDsQ8L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61nNdKDsQ8L._AC_SL1000_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B0GJD3TW8W",
       "ref": "p5",
       "search_key": "ナイスウェイ 軽量 2段ショッピングカート 折りたたみ 耐荷重2",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "color": "ブラック",
+        "max_load_kg": 25,
+        "weight_kg": 4.2
+      }
     },
     {
-      "amazon_title": "【5輪+大容量33L】ショッピングカート 折りたたみ カートセットショッピングキャリー 横押し 5輪 保冷機能付き ハンドル長さ調節3段階軽量 2WAY 買い物かご 取り外し可能 簡単組立 荷物運び便利グッズ、ピクニック、キャンプ、運動会、花見、防災グッズ",
+      "amazon_title": "Vtuesxn【5輪+大容量33L】ショッピングカート 折りたたみ カートセットショッピングキャリー 横押し 5輪 保冷機能付き ハンドル長さ調節3段階軽量 2WAY 買い物かご 取り外し可能 簡単組立 荷物運び便利グッズ、ピクニック、キャンプ、運動会、花見、防災グッズ",
       "asin": "B0DZTWJHPZ",
-      "brand": "",
+      "brand": "Vtuesxn",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61Fl1nf6bCL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61Fl1nf6bCL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "carrying_capacity"
       ],
@@ -118,7 +146,12 @@
       "product_id": "AMZ-B0DZTWJHPZ",
       "ref": "p6",
       "search_key": "ショッピングカート 折りたたみ カートセットショッピングキャリー",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "color": "ブラック",
+        "capacity_l": 33,
+        "max_load_kg": 20
+      }
     }
   ],
   "selection": {

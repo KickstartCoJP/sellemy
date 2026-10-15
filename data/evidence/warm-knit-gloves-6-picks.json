@@ -55,8 +55,8 @@
       "product_id": "AMZ-B0FQQFRW1H",
       "asin": "B0FQQFRW1H",
       "amazon_title": "[SLEEPSINERO] 手袋 防寒 レディース スマホ対応 【360°暖かい裏起毛！3本指タッチパネル】 保温 あったか 防風 伸縮 柔らかい",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71EqLydR7ZL._AC_UL320_.jpg",
+      "brand": "SLEEPSINERO",
+      "image_url": "https://m.media-amazon.com/images/I/71EqLydR7ZL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.865,
@@ -65,82 +65,102 @@
         "material",
         "smartphone"
       ],
-      "search_key": "手袋 防寒 レディース スマホ対応 保温 あったか 防風 伸縮"
+      "search_key": "手袋 防寒 レディース スマホ対応 保温 あったか 防風 伸縮",
+      "selected_variant": [
+        "ベージュ"
+      ]
     },
     {
       "ref": "p2",
       "product_id": "AMZ-B0HJ76FRL6",
       "asin": "B0HJ76FRL6",
       "amazon_title": "[Luxiwear] 防寒手袋 メンズ 指なし 冬 【1枚2役！カブセで速攻極暖】 手袋 ニット 厚手 裏起毛 スマホ対応",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/81OOIy1uYuL._AC_UL320_.jpg",
+      "brand": "Luxiwear",
+      "image_url": "https://m.media-amazon.com/images/I/81OOIy1uYuL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [
         "material"
       ],
-      "search_key": "防寒手袋 メンズ 指なし 冬 手袋 ニット 厚手 裏起毛 スマホ"
+      "search_key": "防寒手袋 メンズ 指なし 冬 手袋 ニット 厚手 裏起毛 スマホ",
+      "selected_variant": [
+        "Free Size",
+        "ブラック"
+      ]
     },
     {
       "ref": "p3",
       "product_id": "AMZ-B0HC3DR3XY",
       "asin": "B0HC3DR3XY",
       "amazon_title": "[HORADON] 手袋 メンズ 冬 防寒 ニット手袋 【裏起毛・まるで暖炉のように暖かい・スマホ対応・ 瞬間5℃上昇】 冬 防寒 ニットグローブ",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61dnk+duF8L._AC_UL320_.jpg",
+      "brand": "HORADON",
+      "image_url": "https://m.media-amazon.com/images/I/61dnk+duF8L._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [
         "material"
       ],
-      "search_key": "手袋 メンズ 冬 防寒 ニット手袋 冬 防寒 ニットグローブ"
+      "search_key": "手袋 メンズ 冬 防寒 ニット手袋 冬 防寒 ニットグローブ",
+      "selected_variant": [
+        "漆黒 厚手裏起毛"
+      ]
     },
     {
       "ref": "p4",
       "product_id": "AMZ-B0FRM4SRXP",
       "asin": "B0FRM4SRXP",
       "amazon_title": "[HORADON] 手袋 メンズ 冬 防寒 ニット手袋 スマホ対応・裏起毛・瞬時に5℃加温 ファション 冬 防寒 温かい ニットグローブ 厚手 暖かい",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71F9GiseaQL._AC_UL320_.jpg",
+      "brand": "HORADON",
+      "image_url": "https://m.media-amazon.com/images/I/71F9GiseaQL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [
         "material"
       ],
-      "search_key": "手袋 メンズ 冬 防寒 ニット手袋 スマホ対応・裏起毛・瞬時に5"
+      "search_key": "手袋 メンズ 冬 防寒 ニット手袋 スマホ対応・裏起毛・瞬時に5",
+      "selected_variant": [
+        "ダークグレー"
+      ]
     },
     {
       "ref": "p5",
       "product_id": "AMZ-B0FRLTLZX5",
       "asin": "B0FRLTLZX5",
       "amazon_title": "[MOWO] 手袋 防寒 メンズ スマホ対応 冬 【即刻発熱の防寒グローブ・極上の着け心地・裏起毛】 ニットグローブ ニット手袋 暖かい 厚手",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71t4bgqbzHL._AC_UL320_.jpg",
+      "brand": "MOWO",
+      "image_url": "https://m.media-amazon.com/images/I/71t4bgqbzHL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [
         "material"
       ],
-      "search_key": "手袋 防寒 メンズ スマホ対応 冬 ニットグローブ ニット手袋"
+      "search_key": "手袋 防寒 メンズ スマホ対応 冬 ニットグローブ ニット手袋",
+      "selected_variant": [
+        "Free Size",
+        "ブラック"
+      ]
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0FPLQ14DJ",
-      "asin": "B0FPLQ14DJ",
-      "amazon_title": "[HORADON] 手袋 メンズ 冬 ニットグローブ 防寒 【スマホ対応・裏起毛・ 瞬間5℃上昇・ふんわり柔らかくて暖かい】 冬 防寒 厚手",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71rKm5Q4XXL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0BJDKHJ98",
+      "asin": "B0BJDKHJ98",
+      "amazon_title": "[ARZER] 手袋 ニット メンズ スマホ対応 グローブ【裏起毛・二重構造・弾性手首・快適フィット】 防風防寒 厚手 保温 男性用 自転車てぶくろ 全指 通勤 通学 アウトドア プレゼント",
+      "brand": "ARZER",
+      "image_url": "https://m.media-amazon.com/images/I/71ody0SA-cL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [
         "material"
       ],
-      "search_key": "手袋 メンズ 冬 ニットグローブ 防寒 冬 防寒 厚手"
+      "search_key": "手袋 メンズ 冬 ニットグローブ 防寒 冬 防寒 厚手",
+      "selected_variant": [
+        "ブラック"
+      ]
     }
   ]
 }

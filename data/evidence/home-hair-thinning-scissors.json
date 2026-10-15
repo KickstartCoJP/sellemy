@@ -37,82 +37,127 @@
   "eyecatch_image": "https://www.sellemy.jp/img/home-hair-thinning-scissors/home-hair-thinning-scissors.png",
   "products": [
     {
-      "amazon_title": "UPBEATLIFE すきばさみ 髪用 散髪用ハサミ セット 低すき率15% セルフカット初心者向け ヘアカットハサミ カットシザー セニングシザー 調整可能 ステンレス製 日本語説明書付き ケース付き 家庭用",
-      "asin": "B0HHQX7T19",
-      "brand": "",
+      "amazon_title": "貝印 KQ3201 セルフ用スキバサミ",
+      "asin": "B06WRXGGFS",
+      "brand": "貝印",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61Lt-EbFmqL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/81J5GarNCIL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0HHQX7T19",
+      "product_id": "AMZ-B06WRXGGFS",
       "ref": "p1",
       "search_key": "UPBEATLIFE すきばさみ 髪用 散髪用ハサミ セット 低",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "model_number": "KQ3201",
+        "style": "セルフ用スキバサミ",
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "散髪用ハサミ すきばさみ セット【低すき率・9CRステンレス製】髪切りハサミ 毛量調整 セルフカット 前髪カット 10点セット 初心者 ケース付き",
-      "asin": "B0H9DJYMB2",
-      "brand": "",
+      "amazon_title": "DEEDS 日本の鋏専門メーカー DP-02 セニング 6.0インチ 高級鍛造仕上 15% 前後 ガタガタにならない スキ鋏 美容師 散髪 すきばさみ ハサミ",
+      "asin": "B07JBHY49L",
+      "brand": "DEEDS",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/811VFZRvAkL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51aWcBiqCjL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0H9DJYMB2",
+      "product_id": "AMZ-B07JBHY49L",
       "ref": "p2",
       "search_key": "散髪用ハサミ すきばさみ セット 髪切りハサミ 毛量調整 セルフ",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "model": "DP-02",
+        "type": "セニング単品",
+        "size_inches": 6.0,
+        "manufacturer_thinning_rate": "15%前後; actual result depends on use",
+        "length_mm": 173,
+        "blade_length_mm": 71,
+        "weight_g": 51,
+        "quantity": 1
+      }
     },
     {
-      "amazon_title": "【初心者向けで安心して使える設計・プロ監修9点セット】ヘアカットはさみセット 散髪シザー 前髪カット対応 すきばさみ＆カットシザー",
-      "asin": "B0GRGS6MDT",
-      "brand": "",
+      "amazon_title": "貝印 関孫六 スキハサミ(オールステンレス) HC3519",
+      "asin": "B018RTMM3S",
+      "brand": "貝印",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71Tn-GYss9L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61UL3OAawIL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0GRGS6MDT",
+      "product_id": "AMZ-B018RTMM3S",
       "ref": "p3",
       "search_key": "ヘアカットはさみセット 散髪シザー 前髪カット対応 すきばさみ＆",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "model_number": "HC3519",
+        "style": "スキハサミ・オールステンレス",
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "seathestars 散髪 ハサミ すきばさみ セット 低すき率 髪切りハサミ 高品質ステンレス ケース クリップ くし付き 初心者 プロ 美容師",
-      "asin": "B0FJFHLKC9",
-      "brand": "",
+      "amazon_title": "グリーンベル 匠の技 ステンレス製 スキはさみ G-5002 単品 1個 (x 1)",
+      "asin": "B000FQS9C0",
+      "brand": "グリーンベル",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51IOUqJdoaL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/81m2CsVdSdL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0FJFHLKC9",
+      "product_id": "AMZ-B000FQS9C0",
       "ref": "p4",
       "search_key": "seathestars 散髪 ハサミ すきばさみ セット 低すき",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "model_number": "G-5002",
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "【2025年プロ美容師監修・初心者向け9点セット】すきばさみ セルフカット 【日本国内2重検品】ハイランク 散髪 はさみ セット 切れ味 抜群 段刃 低 すき率 ヘアカット ハサミ 髪切りはさみ 前髪 ヘアカット 自宅 さんぱつ キッズ 赤ちゃん 子供 大人 家庭用 ステンレス製 本格 理容 プロ仕様 収納ポーチ付き 失敗しない",
-      "asin": "B0DW3TWWVL",
-      "brand": "",
+      "amazon_title": "すきばさみ 髪用 ヘアカットハサミ 子供 セルフカット すきバサミ 家族で使える 毛量調整 右利き 調整工具 (スキばさみ)",
+      "asin": "B08941FJL1",
+      "brand": "LICEL",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71W9yzfJA0L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/517bG2FvEuL._AC_SL1000_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0DW3TWWVL",
+      "product_id": "AMZ-B08941FJL1",
       "ref": "p5",
       "search_key": "すきばさみ セルフカット ハイランク 散髪 はさみ セット 切れ",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "colour": "シルバー",
+        "hand": "右手",
+        "quantity": 1,
+        "style": "すきばさみ単品",
+        "exclusions": [
+          "カットばさみ無し",
+          "保管ケース無し"
+        ]
+      }
     },
     {
-      "amazon_title": "スキバサミ 10% プロ仕様 散髪用ハサミ 髪切り ヘアカットすきバサミ 散髪 シザー 初心者 セルフカット",
-      "asin": "B0DRSSSM7V",
-      "brand": "",
+      "amazon_title": "ベビースマイル ヘアカットセット S-935",
+      "asin": "B0F12Y8JKY",
+      "brand": "ベビースマイル",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61Cu+lQ5YaL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51fD7XM1bBL._AC_SL1000_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0DRSSSM7V",
+      "product_id": "AMZ-B0F12Y8JKY",
       "ref": "p6",
       "search_key": "スキバサミ 10% プロ仕様 散髪用ハサミ 髪切り ヘアカットす",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "model_number": "S-935",
+        "color": "ミントグリーン",
+        "pack_count": 1,
+        "included_pieces": [
+          "cut scissors",
+          "thinning scissors",
+          "comb",
+          "case"
+        ]
+      }
     }
   ],
   "selection": {

@@ -45,89 +45,210 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0GXDSW9GQ",
-      "asin": "B0GXDSW9GQ",
-      "amazon_title": "【プロネイリスト監修】 1日1回ぬるだけ ネイルオイル キューティクルオイル 10ml ハイポニキウム 保湿 ハイポニキウム育成 ネイルケアオイル ネイル 爪 (ロールオンタイプ)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/51f2kmkUyDL._AC_UL320_.jpg",
+      "product_id": "AMZ-B00BCU7S48",
+      "asin": "B00BCU7S48",
+      "amazon_title": "uka(ウカ)【ネイルサロン監修】 ネイルオイル 13:00 (レモン＆ミントの香り)5ml / 保湿 ささくれ 二枚爪 補修 セルフネイル ジェルネイル ネイルケア",
+      "brand": "uka",
+      "image_url": "https://m.media-amazon.com/images/I/61Ybpp7LRqL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.505,
       "matched_comparison_axes": [
         "applicator"
       ],
-      "search_key": "1日1回ぬるだけ ネイルオイル キューティクルオイル 10ml"
+      "search_key": "1日1回ぬるだけ ネイルオイル キューティクルオイル 10ml",
+      "selected_variant": {
+        "capacity": "5mL",
+        "pack_count": 1,
+        "scent": "レモン＆ミント",
+        "model": "13:00"
+      }
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B09SFTFGQ5",
-      "asin": "B09SFTFGQ5",
-      "amazon_title": "MIKAGAMI ネイルオイル 5つの保湿成分配合 14ml (大容量タイプ)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71-kQdnpCdL._AC_UL320_.jpg",
+      "product_id": "AMZ-B07CMP39R1",
+      "asin": "B07CMP39R1",
+      "amazon_title": "NAIL HOLIC(ネイルホリック) キューティクルオイル 5mL",
+      "brand": "ネイルホリック",
+      "image_url": "https://m.media-amazon.com/images/I/61AkHDiY4OL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.505,
       "matched_comparison_axes": [
         "value"
       ],
-      "search_key": "MIKAGAMI ネイルオイル 5つの保湿成分配合 14ml ("
+      "search_key": "MIKAGAMI ネイルオイル 5つの保湿成分配合 14ml (",
+      "selected_variant": {
+        "capacity": "5mL",
+        "pack_count": 1,
+        "JAN": "4971710471021",
+        "version": "従来キューティクルオイル（L01ではない）",
+        "scent": "柑橘系（香料無添加表記とは別）"
+      }
     },
     {
       "ref": "p3",
       "product_id": "AMZ-B01L8MK8EQ",
       "asin": "B01L8MK8EQ",
       "amazon_title": "JAPONEIRA ネイルケア 生の椿油 ジャポネイラ 保湿,保護 透明 国産キューティクルオイルネイルオイル ローズの香り 爪 甘皮 指先 ケア 椿オイル ツバキ油 ネイル美容液 (1本)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/41fDduzot1L._AC_UL320_.jpg",
+      "brand": "ジャポネイラ",
+      "image_url": "https://m.media-amazon.com/images/I/41fDduzot1L._AC_SL1000_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.505,
       "matched_comparison_axes": [
         "texture"
       ],
-      "search_key": "JAPONEIRA ネイルケア 生の椿油 ジャポネイラ 保湿,保"
+      "search_key": "JAPONEIRA ネイルケア 生の椿油 ジャポネイラ 保湿,保",
+      "selected_variant": {
+        "current_selection_text": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. サイズ: 1個 (x 1) サイズの選択ができます 1本(HELLO KITTYコラボ) 1個 (x 1) 2本 2本（キティコラボ+キティコラボ） 2本（通常+キティコラボ） おすすめ出品がない0オプションを見る ← 1 →",
+        "overview": "ブランド JAPONEIRA 商品の形状 オイル 商品の重量 13 グラム 液体容量 2.5 ミリリットル 専門分野 保湿,保護 商品の個数 1 ユニット数 1.00 本 香り Rose メーカー 株式会社椿 サイズ 1個 (x 1) 表示を増やす",
+        "selected_detail_fields": [
+          {
+            "field": "液体容量",
+            "value": "液体容量 2.5 ミリリットル"
+          },
+          {
+            "field": "商品の個数",
+            "value": "商品の個数 1"
+          },
+          {
+            "field": "ユニット数",
+            "value": "ユニット数 1.00 本"
+          },
+          {
+            "field": "サイズ",
+            "value": "サイズ 1個 (x 1)"
+          },
+          {
+            "field": "ユニット数",
+            "value": "ユニット数 1.00 本"
+          },
+          {
+            "field": "サイズ",
+            "value": "サイズ 1個 (x 1)"
+          }
+        ]
+      }
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0H1KZPLG6",
-      "asin": "B0H1KZPLG6",
-      "amazon_title": "ネイルケアオイル ネイルオイル 爪補修 保湿 甘皮ケア ダメージ爪 乾燥 二枚爪対策 美爪ケア ネイル後 水仕事用(01-ネイルケア)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61XmzsH5A7L._AC_UL320_.jpg",
+      "product_id": "AMZ-B0G3XS895Y",
+      "asin": "B0G3XS895Y",
+      "amazon_title": "ロクシタン(L'OCCITANE) カリテコンフォート ネイルオイル 7.5mL 乾燥 保湿 女性 レディース 男性 メンズ 人気",
+      "brand": "ロクシタン",
+      "image_url": "https://m.media-amazon.com/images/I/41WcUTxt-GL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [],
-      "search_key": "ネイルケアオイル ネイルオイル 爪補修 保湿 甘皮ケア ダメージ"
+      "search_key": "ネイルケアオイル ネイルオイル 爪補修 保湿 甘皮ケア ダメージ",
+      "selected_variant": {
+        "current_selection_text": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. スタイル: シアネイルオイル スタイルの選択ができます おすすめ出品がない3オプションを見る ← 1 →",
+        "overview": "",
+        "selected_detail_fields": [
+          {
+            "field": "商品の個数",
+            "value": "商品の個数 1"
+          },
+          {
+            "field": "ユニット数",
+            "value": "ユニット数 7.5 ミリリットル"
+          },
+          {
+            "field": "商品本体サイズ",
+            "value": "商品本体サイズ 19 x 19 x 102 mm"
+          },
+          {
+            "field": "ユニット数",
+            "value": "ユニット数 7.5 ミリリットル"
+          },
+          {
+            "field": "商品本体サイズ",
+            "value": "商品本体サイズ 19 x 19 x 102 mm"
+          },
+          {
+            "field": "ユニット数",
+            "value": "ユニット数 7.5 ミリリットル"
+          },
+          {
+            "field": "特長",
+            "value": "特長 サラリとなじむテクスチャーでしっかり保湿して、心ほどける手ざわりに手肌を整えるハンドクリーム。持ち運びに便利なポータブルサイズ。 サラリとなじむテクスチャーでしっかり保湿して、心ほどける手ざわりに手肌を整えるハンドクリーム。 サラリとなじむテクスチャーでしっかり保湿して、心ほどける手ざわりに手肌を整えるハンドクリーム。たっぷり使える大容量タイプ。 10秒でケア。爪、すこやかに保つ。シアオイル30%配合のネイルオイル。 ハンドマスクとしても使える、乾燥ピークの手肌を素早くケアする濃密バーム。たっぷり使える大容量タイプ。 ハンドマスクとしても使える、乾燥ピークの手肌を素早くケアする濃密バーム。"
+          }
+        ]
+      }
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0GVDNZBPB",
-      "asin": "B0GVDNZBPB",
-      "amazon_title": "ネイルオイル ペンタイプ ジャスミン キューティクルオイル 甘皮ケア 保湿 ネイルケア 美容液 指先 爪保護 ハンドケア",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/41RAkfIgEoL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0D448LLDF",
+      "asin": "B0D448LLDF",
+      "amazon_title": "無印良品 ネイルケアオイル 3.2 g OAQ01A4S",
+      "brand": "無印良品",
+      "image_url": "https://m.media-amazon.com/images/I/41aOemcJIPL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [
         "applicator"
       ],
-      "search_key": "ネイルオイル ペンタイプ ジャスミン キューティクルオイル 甘皮"
+      "search_key": "ネイルオイル ペンタイプ ジャスミン キューティクルオイル 甘皮",
+      "selected_variant": {
+        "current_selection_text": "",
+        "overview": "ブランド 無印良品 商品体積 3.2 未知の修飾語 商品寸法 (長さx幅x高さ) 12.5 x 2.5 x 1.8 cm 対象年齢 大人 特徴 うるおいを与える 商品の個数 1 商品の形状 オイル ユニット数 3.2 グラム 表示を増やす",
+        "selected_detail_fields": [
+          {
+            "field": "商品の個数",
+            "value": "商品の個数 1"
+          },
+          {
+            "field": "ユニット数",
+            "value": "ユニット数 3.2 グラム"
+          },
+          {
+            "field": "特長・備考",
+            "value": "特長・備考 植物性オイル配合で爪にうるおいを与え乾燥からまもります。肌なじみがよく指先のマッサージにもお使い頂けます。 甘皮をやわらかくして除去しやすくします。とろみがあるので垂れにくく、爪に優しい植物性オイルを配合しました。 唇の乾燥を防ぎ、うるおいとツヤを与える美容液です。 うるおい感のある仕上がりのリップスティックです。滑らかな塗り心地で、つけたときの発色が続く色移りしにくいタイプです。"
+          },
+          {
+            "field": "商品本体サイズ",
+            "value": "商品本体サイズ 12.5 x 2.5 x 1.8 cm"
+          },
+          {
+            "field": "ユニット数",
+            "value": "ユニット数 3.2 グラム"
+          }
+        ]
+      }
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0GRVSCTN8",
-      "asin": "B0GRVSCTN8",
-      "amazon_title": "TOMICCA ネイルオイル ココナッツ 15ml ネイルオイル 複数の保湿成分を配合 爪 甘皮 保湿",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61dWWm+nqNL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0B31J8GQ5",
+      "asin": "B0B31J8GQ5",
+      "amazon_title": "ジルスチュアート アロマティックフラワー ネイルオイル_8mL／ネイルオイル (01 pink essence)",
+      "brand": "ジルスチュアート",
+      "image_url": "https://m.media-amazon.com/images/I/51O1fqqL+nL._AC_SL1153_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [],
-      "search_key": "TOMICCA ネイルオイル ココナッツ 15ml ネイルオイル"
+      "search_key": "TOMICCA ネイルオイル ココナッツ 15ml ネイルオイル",
+      "selected_variant": {
+        "current_selection_text": "",
+        "overview": "ブランド JILL by JILLSTUART(ジル バイ ジルスチュアート) 商品体積 8 ミリリットル 対象年齢 大人 特徴 うるおいを与える 商品の個数 1 商品の形状 ドロップ ユニット数 1.00 個",
+        "selected_detail_fields": [
+          {
+            "field": "商品の個数",
+            "value": "商品の個数 1"
+          },
+          {
+            "field": "ユニット数",
+            "value": "ユニット数 1.00 個"
+          },
+          {
+            "field": "ユニット数",
+            "value": "ユニット数 1.00 個"
+          }
+        ]
+      }
     }
   ]
 }

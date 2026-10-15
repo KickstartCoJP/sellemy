@@ -42,9 +42,9 @@
     {
       "amazon_title": "Perixx PERIMICE-522 Iron トラックボールマウス 人差し指操作 有線 エルゴノミクス 40 mm トラックボール",
       "asin": "B0HJW6WB35",
-      "brand": "",
+      "brand": "Perixx",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61idWJmXWQL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61TzKIN-HGL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "connection",
         "control_style"
@@ -53,14 +53,20 @@
       "product_id": "AMZ-B0HJW6WB35",
       "ref": "p1",
       "search_key": "Perixx PERIMICE-522 Iron トラックボール",
-      "selection_score": 0.67
+      "selection_score": 0.67,
+      "selected_variant": {
+        "model": "PERIMICE-522 Iron",
+        "colour": "black body / silver ball",
+        "specification": "40mm ball / wired",
+        "pack_count": 1
+      }
     },
     {
       "amazon_title": "ProtoArc EM03 NL トラックボールマウス 静音 人差し指操作 手首負担軽減 Bluetooth 無線2.4GHz 3台同時接続",
       "asin": "B0HBX1RT98",
-      "brand": "",
+      "brand": "ProtoArc",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61-FuSUwXOL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61-FuSUwXOL._AC_SL1448_.jpg",
       "matched_comparison_axes": [
         "connection",
         "control_style"
@@ -69,29 +75,41 @@
       "product_id": "AMZ-B0HBX1RT98",
       "ref": "p2",
       "search_key": "ProtoArc EM03 NL トラックボールマウス 静音 人",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": {
+        "model": "EM03 NL",
+        "colour": "black body / grey ball",
+        "specification": "44mm ball / wireless",
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "ワイヤレストラックボールマウス 親指操作対応 携帯型人差し指トラックボール 長使用に 左右クリ対応 ノートパソコン用",
-      "asin": "B0H2S7WNL7",
-      "brand": "",
+      "amazon_title": "Kensington ケンジントン オービットトラックボールウィズスクロールリング K72337JP ブラック",
+      "asin": "B09CCMXX2L",
+      "brand": "Kensington",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51JoD2250YL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/81Ef2w9WjJL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "control_style"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0H2S7WNL7",
+      "product_id": "AMZ-B09CCMXX2L",
       "ref": "p3",
       "search_key": "ワイヤレストラックボールマウス 親指操作対応 携帯型人差し指トラ",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": {
+        "model": "Orbit K72337JP",
+        "colour": "black body / blue ball",
+        "specification": "40mm ball / wired",
+        "pack_count": 1
+      }
     },
     {
       "amazon_title": "エレコム トラックボールマウス bitra 静音 親指操作 Bluetooth 無線2.4GHz 2台マルチペアリング 5ボタン 専用収納ケース付 ホワイト M-MT1MRSAWH",
       "asin": "B0FZGBSKBC",
-      "brand": "",
+      "brand": "エレコム",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/515P2nooiHL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/515P2nooiHL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "connection",
         "control_style"
@@ -100,38 +118,58 @@
       "product_id": "AMZ-B0FZGBSKBC",
       "ref": "p4",
       "search_key": "エレコム トラックボールマウス bitra 静音 親指操作 Bl",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": {
+        "model": "bitra M-MT1MRSAWH",
+        "colour": "white body / silver ball",
+        "specification": "thumb control / receiver+Bluetooth",
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "エレコム トラックボールマウス bitra 静音 人差し指操作 Bluetooth 無線2.4GHz 2台マルチペアリング 5ボタン 専用収納ケース付 ブラック M-MT2MRSABK",
-      "asin": "B0FZG9YXQ4",
-      "brand": "",
+      "amazon_title": "【Amazon.co.jp限定】 ロジクール 静音 ワイヤレス トラックボール マウス 無線 M575SPd 国内正規品",
+      "asin": "B0D9Y1J4NH",
+      "brand": "ロジクール",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71qqivDOY9L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/619NsX0xdiL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "connection",
         "control_style"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0FZG9YXQ4",
+      "product_id": "AMZ-B0D9Y1J4NH",
       "ref": "p5",
       "search_key": "エレコム トラックボールマウス bitra 静音 人差し指操作",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": {
+        "model": "ERGO M575SPd",
+        "manufacturer_part_number": "910-007037",
+        "colour": "ブラック＋ブルーボール",
+        "specification": "thumb control / BLE+Logi Bolt",
+        "pack_count": 1,
+        "warranty_years": 1
+      }
     },
     {
-      "amazon_title": "ProtoArc EM03 NLトラックボールマウス 人差し指 中指操作 静音 無線 2.4GHz Bluetooth 3台同時接続 手首が楽",
-      "asin": "B0FVXTH7F2",
-      "brand": "",
+      "amazon_title": "サンワサプライ トラックボール Bluetooth エルゴノミクス チルトホイール マルチペアリング ブラック MA-BTTB179BK",
+      "asin": "B08T5P14NN",
+      "brand": "サンワサプライ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61u6p+HGyfL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/717eLyB9X+L._AC_SL1280_.jpg",
       "matched_comparison_axes": [
         "connection"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0FVXTH7F2",
+      "product_id": "AMZ-B08T5P14NN",
       "ref": "p6",
       "search_key": "ProtoArc EM03 NLトラックボールマウス 人差し指",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": {
+        "model": "MA-BTTB179BK",
+        "colour": "black body / red ball",
+        "specification": "34mm ball / Bluetooth",
+        "pack_count": 1
+      }
     }
   ],
   "selection": {

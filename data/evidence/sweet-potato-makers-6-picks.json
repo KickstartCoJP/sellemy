@@ -54,11 +54,11 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0GZGVM4RZ",
-      "asin": "B0GZGVM4RZ",
-      "amazon_title": "Sariny石焼き芋器 業務用グリルソーセージ 石やきいも機 火山石ソーセージグリル、ガス式夜市ホットドッググリル ガス火力 大容量 焼き芋メーカー ソーセージグリル機 やきいもメーカー 温度調節 コンビニ キッチンカー 移動販売 家庭用 防錆 速い熱伝導 うもろこし/栗など器 (方形（ガラスカバーなし）)",
-      "brand": "ブランド: Sariny",
-      "image_url": "https://m.media-amazon.com/images/I/51+ritDYc0L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0HDBVP1SD",
+      "asin": "B0HDBVP1SD",
+      "amazon_title": "【自宅で本格焼き芋】ドウシシャ 焼き芋メーカー さつまいもアンバサダー協会認定 温度調節機能付 タイマー付 プレート丸洗い可能 レシピ付 ブラック WFB-122BK Bake Free",
+      "brand": "ドウシシャ(DOSHISHA)",
+      "image_url": "https://m.media-amazon.com/images/I/61Xfyhte2IL._AC_SL1000_.jpg",
       "observed_price": 33899,
       "discovery_score": 1,
       "selection_score": 0.83,
@@ -66,78 +66,120 @@
         "capacity",
         "heating_method"
       ],
-      "search_key": "Sariny 石焼き芋器 業務用グリルソーセージ 石やきいも機 火山石ソーセー"
+      "search_key": "Sariny 石焼き芋器 業務用グリルソーセージ 石やきいも機 火山石ソーセー",
+      "selected_variant": {
+        "color": "ブラック",
+        "size": "幅35×奥行25×高さ15cm（収納時）",
+        "capacity": "標準食材サイズ：長さ22cm・太さ5.5cm（kg容量での選択なし）",
+        "pack_and_contents": "本体＋着脱式上下焼き芋プレート＋説明書/保証書＋レシピ（表題）",
+        "selected_variations": {}
+      }
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0H38M875C",
-      "asin": "B0H38M875C",
-      "amazon_title": "焼き芋器 焼き芋メーカー 鋳鉄 石焼鍋 石焼きいも器 IH・ガスコンロ対応 多機能鋳鉄鍋 錆びない 熱伝導が速い 家庭用および商業用 自家製焼 き芋鍋、バーベキューポテト、コーンマシン、銑鉄、防錆 速い熱伝導 (22CM,ブラック)",
-      "brand": "ブランド: AGTEA",
-      "image_url": "https://m.media-amazon.com/images/I/51jekdSmAaL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0BGMWKCBP",
+      "asin": "B0BGMWKCBP",
+      "amazon_title": "高木金属工業 石焼きいも器 琺瑯 HA-IY24S",
+      "brand": "高木金属工業",
+      "image_url": "https://m.media-amazon.com/images/I/41WxtCwb9gL._AC_SL1000_.jpg",
       "observed_price": 3626,
       "discovery_score": 1,
       "selection_score": 0.52,
       "matched_comparison_axes": [
         "heating_method"
       ],
-      "search_key": "AGTEA 焼き芋器 焼き芋メーカー 鋳鉄 石焼鍋 石焼きいも器 IH・ガス"
+      "search_key": "AGTEA 焼き芋器 焼き芋メーカー 鋳鉄 石焼鍋 石焼きいも器 IH・ガス",
+      "selected_variant": {
+        "color": "ブラック",
+        "size": "幅310×奥行268×高さ142mm",
+        "pack_and_contents": "本体・ふた・専用天然石約1100g"
+      }
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0GKY1GGJM",
-      "asin": "B0GKY1GGJM",
-      "amazon_title": "石焼き芋器 焼き芋機 鋳鉄 鍋 石焼鍋 石焼きいも器 両手鍋 蓋付き ガスコンロ対応 防錆 速い熱伝導 鋳物ホーロー鍋 鋳鉄製サツマイモ焼き器 厚底 一体成型 焼きトウモロコシ 栗など器 調理器具 多機能 家庭用 業務用 速い熱伝導と 家庭用 (B,直径28CM)",
-      "brand": "ブランド: Hobiku",
-      "image_url": "https://m.media-amazon.com/images/I/51tieVnvELL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B001GLOSH8",
+      "asin": "B001GLOSH8",
+      "amazon_title": "尾上製作所(ONOE) いもやききやっくんDX [密閉型でむし焼効果 焼き芋 芋の甘さと水気を逸すことなくおいしく焼き上げる とうもろこし・もち・しいたけ・なす等も キャンプ バーベキュー 日本製]",
+      "brand": "尾上製作所",
+      "image_url": "https://m.media-amazon.com/images/I/61cpvTN78LL._AC_SL1500_.jpg",
       "observed_price": 8659,
       "discovery_score": 1,
       "selection_score": 0.52,
       "matched_comparison_axes": [
         "heating_method"
       ],
-      "search_key": "Hobiku 石焼き芋器 焼き芋機 鋳鉄 鍋 石焼鍋 石焼きいも器 両手鍋 蓋"
+      "search_key": "Hobiku 石焼き芋器 焼き芋機 鋳鉄 鍋 石焼鍋 石焼きいも器 両手鍋 蓋",
+      "selected_variant": {
+        "color": "シルバー",
+        "size": "約直径245×高さ140mm",
+        "pack_and_contents": "本体・網・ふた・熱制御盤"
+      }
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0DNMFWVXT",
-      "asin": "B0DNMFWVXT",
-      "amazon_title": "eモンズ ［当社製品保証１年！インボイス対応！］ 業務用 電気式 石やきいも機 【 石焼さん太郎 】 日本語マニュアル付き やきいも機 焼き芋 おいも 黒玉石 グリル 業務用 大容量 自動保温 電気焼き芋機 ヒーター さつまいも 調理機器 調理器具 700W 300℃ タイマー カス受け お祭 屋台 出店 コンビニ キッチンカー 移動販売",
-      "brand": "eモンズのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/71+TKv0lxYL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B000JBYGUK",
+      "asin": "B000JBYGUK",
+      "amazon_title": "池永鉄工 石焼鍋 22cm IH対応 さつまいも 焼き芋 ブラック いも次郎",
+      "brand": "池永鉄工(Ikenaga Iron Works)",
+      "image_url": "https://m.media-amazon.com/images/I/91wK7GA4scL._AC_SL1500_.jpg",
       "observed_price": 77777,
       "discovery_score": 1,
       "selection_score": 0.52,
       "matched_comparison_axes": [
         "capacity"
       ],
-      "search_key": "eモンズ ［当社製品保証１年！インボイス対応！］ 業務用 電気式 石やきい"
+      "search_key": "eモンズ ［当社製品保証１年！インボイス対応！］ 業務用 電気式 石やきい",
+      "selected_variant": {
+        "color": "ブラック",
+        "size": "22cm選択",
+        "capacity": "2.5L",
+        "pack_and_contents": "鋳鉄鍋＋共蓋1セット",
+        "selected_variations": {
+          "style_name": "22cm"
+        }
+      }
     },
     {
       "ref": "p5",
       "product_id": "AMZ-B0BMZXZ3VW",
       "asin": "B0BMZXZ3VW",
       "amazon_title": "ドウシシャ ビックオーブントースター 甘熟焼き芋ケース付き 無段階温度調節 60分タイマー 4枚焼き ピエリア",
-      "brand": "ドウシシャ(DOSHISHA)のストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/51rJvqI56EL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "brand": "ドウシシャ(DOSHISHA)",
+      "image_url": "https://m.media-amazon.com/images/I/51rJvqI56EL._AC_SL1000_.jpg",
       "observed_price": 9890,
       "discovery_score": 1,
       "selection_score": 0.52,
       "matched_comparison_axes": [],
-      "search_key": "ドウシシャ(DOSHISHA) ドウシシャ ビックオーブントースター 甘熟焼き芋ケース付き 無段"
+      "search_key": "ドウシシャ(DOSHISHA) ドウシシャ ビックオーブントースター 甘熟焼き芋ケース付き 無段",
+      "selected_variant": {
+        "color": "グレー",
+        "size": "34×34.5×23cm",
+        "capacity": "トースト4枚",
+        "pack_and_contents": "本体、甘熟焼き芋ケース、受け皿、ハンドル、レシピ",
+        "selected_variations": {}
+      }
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B07J34MZ54",
-      "asin": "B07J34MZ54",
-      "amazon_title": "ドウシシャ 焼き芋メーカー 3枚プレート付(焼き芋、平面、焼きおにぎり) 温度調節機能付き BakeFree WFT-103",
-      "brand": "ブランド: ドウシシャ(DOSHISHA)",
-      "image_url": "https://m.media-amazon.com/images/I/513w1ZAUVeL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0BN3DHZCZ",
+      "asin": "B0BN3DHZCZ",
+      "amazon_title": "YSN 焼き芋 メーカー ベージュ | 焼き芋器 とうもろこし焼き 電気 できたての いも トウモロコシ 簡単 調理",
+      "brand": "YSN",
+      "image_url": "https://m.media-amazon.com/images/I/71dyCsrO9wL._AC_SL1500_.jpg",
       "observed_price": 27500,
       "discovery_score": 1,
       "selection_score": 0.52,
       "matched_comparison_axes": [],
-      "search_key": "ドウシシャ(DOSHISHA) ドウシシャ 焼き芋メーカー 3枚プレート付(焼き芋、平面、焼きお"
+      "search_key": "ドウシシャ(DOSHISHA) ドウシシャ 焼き芋メーカー 3枚プレート付(焼き芋、平面、焼きお",
+      "selected_variant": {
+        "color": "ベージュ",
+        "size": "約12×11.5×22cm、食材長さ21cm×最大径6cm",
+        "capacity": "食材サイズ上限で管理",
+        "pack_and_contents": "本体＋レシピ小冊子＋説明書",
+        "selected_variations": {
+          "color_name": "ベージュ"
+        }
+      }
     }
   ]
 }

@@ -37,26 +37,28 @@
   "eyecatch_image": "https://www.sellemy.jp/img/adhesive-lint-rollers-for-fabrics/adhesive-lint-rollers-for-fabrics.png",
   "products": [
     {
-      "amazon_title": "住友スリーエム(3M) スコッチ・ブライト(TM) ペタコロ(TM) 粘着クリーナー 衣類用 取りかえ用ロール 56シート(2巻入) 836RP56-JA (× 2)",
-      "asin": "B0GYC8D89Q",
-      "brand": "",
+      "amazon_title": "3M ペタコロ PG-30B+R 本体＋取替2巻セット",
+      "asin": "B09RHRD56S",
+      "brand": "3M",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51TqxKOhl8L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71apfui0wZL._AC_SY300_SX300_QL70_ML2_.jpg",
       "matched_comparison_axes": [
         "compatible_surfaces"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0GYC8D89Q",
+      "product_id": "AMZ-B09RHRD56S",
       "ref": "p1",
       "search_key": "住友スリーエム(3M) スコッチ・ブライト(TM) ペタコロ(T",
-      "selection_score": 0.505
+      "selection_score": 0.505,
+      "model": "PG-30B+R",
+      "selected_variant": "本体1個30シート＋取替2巻各56シート"
     },
     {
-      "amazon_title": "ニトムズ コロコロ 本体 ミニ 洋服用 花粉落とし ほこり取り 生地を傷めない テープ幅80mm 90周 1巻入 ピンク C0020",
+      "amazon_title": "ニトムズ コロコロミニ C0020",
       "asin": "B000X3NPVA",
-      "brand": "",
+      "brand": "ニトムズ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/514pkm1UGlL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/514pkm1UGlL._AC_SY300_SX300_QL70_ML2_.jpg",
       "matched_comparison_axes": [
         "roller_operation"
       ],
@@ -64,67 +66,77 @@
       "product_id": "AMZ-B000X3NPVA",
       "ref": "p2",
       "search_key": "ニトムズ コロコロ 本体 ミニ 洋服用 花粉落とし ほこり取り",
-      "selection_score": 0.505
+      "selection_score": 0.505,
+      "model": "C0020",
+      "selected_variant": "洋服用本体、ピンク、幅80mm90周巻1巻"
     },
     {
-      "amazon_title": "Yemax 粘着クリーナー 粘着ローラー 斜めめくり ケース付き ミニサイズ コンパクト 携帯用 衣類クリーナー 抜け毛取り 犬の毛 猫の毛 2個セット ピンク/ブルー",
-      "asin": "B0GY8BLRG1",
-      "brand": "",
+      "amazon_title": "無印良品 携帯用衣類クリーナー 44832059",
+      "asin": "B0CX5DPH9C",
+      "brand": "無印良品",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61h8SErMz0L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/31IxX1rS54L._AC_SY300_SX300_QL70_ML2_.jpg",
       "matched_comparison_axes": [
         "compatible_surfaces"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0GY8BLRG1",
+      "product_id": "AMZ-B0CX5DPH9C",
       "ref": "p3",
       "search_key": "Yemax 粘着クリーナー 粘着ローラー 斜めめくり ケース付き",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "model": "44832059 / MA0EJA1A",
+      "selected_variant": "携帯用本体、白、直径2.6×高さ11.5cm"
     },
     {
-      "amazon_title": "CAWKAY 携帯粘着ローラー 水洗い可能 繰り返し使用 小型粘着式クリーナー 埃取り 毛玉取り 衣服 ペットの毛、ソファ、カーペット 花粉対策 旅行 (2, ゴールド(2個セット）)",
-      "asin": "B0GVQL5496",
-      "brand": "",
+      "amazon_title": "ニトムズ コロコロ スマート CC0074",
+      "asin": "B0GKNZ2MZC",
+      "brand": "ニトムズ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61NmVpp2mqL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/610MNdL2H+L._AC_SY300_SX300_QL70_ML2_.jpg",
       "matched_comparison_axes": [
         "compatible_surfaces"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0GVQL5496",
+      "product_id": "AMZ-B0GKNZ2MZC",
       "ref": "p4",
       "search_key": "CAWKAY 携帯粘着ローラー 水洗い可能 繰り返し使用 小型粘",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "model": "CC0074",
+      "selected_variant": "衣類用本体、オフホワイト"
     },
     {
-      "amazon_title": "EsiFare 粘着式クリーナー 粘着ローラー 繰り返し使用可能 携帯便利 ホコリ取り 洋服 携帯用衣類クリーナー 衣類、家具、犬と猫の毛用 髪の毛 掃除 掃除用品 リントローラー 犬用粘着ローラー (Yellow)",
-      "asin": "B0G1C4Q74S",
-      "brand": "",
+      "amazon_title": "アイリスオーヤマ NC-DH",
+      "asin": "B0CRN7Y9FN",
+      "brand": "アイリスオーヤマ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51ZI4cTCtlL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/41Ohfdau+IL._AC_SY300_SX300_QL70_ML2_.jpg",
       "matched_comparison_axes": [
         "compatible_surfaces"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0G1C4Q74S",
+      "product_id": "AMZ-B0CRN7Y9FN",
       "ref": "p5",
       "search_key": "EsiFare 粘着式クリーナー 粘着ローラー 繰り返し使用可能",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "model": "NC-DH",
+      "selected_variant": "カーペット用本体、ホワイト"
     },
     {
-      "amazon_title": "粘着式クリーナー 衣類クリーナー 携帯用衣類クリーナー 粘着クリーナー 花粉取り 簡単な操作 携帯に便利 衣類 家具 寝具に適用（白+青+黒+ピンク）",
-      "asin": "B0FWCKQH8V",
-      "brand": "",
+      "amazon_title": "アズマ FAZ351WH",
+      "asin": "B0061I810Q",
+      "brand": "アズマ工業",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61cS-vJVIhL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/31IyYmzTvrL._AC_SY300_SX300_QL70_ML2_.jpg",
       "matched_comparison_axes": [
         "compatible_surfaces"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0FWCKQH8V",
+      "product_id": "AMZ-B0061I810Q",
       "ref": "p6",
       "search_key": "粘着式クリーナー 衣類クリーナー 携帯用衣類クリーナー 粘着クリ",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "model": "FAZ351WH / AZ351WH",
+      "selected_variant": "伸縮柄本体、白、62〜97cm"
     }
   ],
   "selection": {

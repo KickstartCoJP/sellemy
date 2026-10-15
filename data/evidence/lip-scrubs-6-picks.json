@@ -52,83 +52,116 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0HHMDX6PX",
-      "asin": "B0HHMDX6PX",
-      "amazon_title": "【話題アイテム】Bi festa リップスクラブバーム 10g(×１)｜シュガースクラブ 唇用 リップケア・保湿・角質ケア",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/51GfKA4iO9L._AC_UL320_.jpg",
+      "product_id": "AMZ-B0D9W3ZZ5N",
+      "asin": "B0D9W3ZZ5N",
+      "amazon_title": "Bifesta(ビフェスタ) リップスクラブバーム[ 唇 くすみ 保湿 ]10g",
+      "brand": "Bifesta",
+      "image_url": "https://m.media-amazon.com/images/I/61GCCZZHGqL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.53,
       "matched_comparison_axes": [
         "exfoliation"
       ],
-      "search_key": "Bi festa リップスクラブバーム 10g(×１)｜シュガー"
+      "search_key": "Bi festa リップスクラブバーム 10g(×１)｜シュガー",
+      "selected_variant": {
+        "capacity": "10g",
+        "count": 1,
+        "type": "リップスクラブバーム、セラムパックではない"
+      }
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0GFNLHT89",
-      "asin": "B0GFNLHT89",
-      "amazon_title": "ノイズカットリップパック 15g | リップクリーム リップバーム 唇パック ナイトパック リップマスク 高保湿 無添加 乾燥 荒れ 皮むけ 縦ジワ 対策 敏感肌 レディース メンズ ギフト プレゼント Mediplus メディプラス (白)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/612esgVMTEL._AC_UL320_.jpg",
+      "product_id": "AMZ-B07KP5YQMY",
+      "asin": "B07KP5YQMY",
+      "amazon_title": "レブロン キス シュガー スクラブ 111 シュガーミント 2.6g",
+      "brand": "REVLON",
+      "image_url": "https://m.media-amazon.com/images/I/71TqtjXxVwL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "ノイズカットリップパック 15g | リップクリーム リップバー"
+      "search_key": "ノイズカットリップパック 15g | リップクリーム リップバー",
+      "selected_variant": {
+        "capacity": "2.6g",
+        "count": 1,
+        "shade": "111 シュガーミント、通常柄"
+      }
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0DHTX9Z91",
-      "asin": "B0DHTX9Z91",
-      "amazon_title": "TAKAMI タカミリップ 7g 唇用美容液 リップバーム 高保湿 唇ケア なめらか ツヤ 荒れ リップケア リップ美容液 唇 美容液 保湿",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/51YCsLmSBSL._AC_UL320_.jpg",
+      "product_id": "AMZ-B08V4RGLW4",
+      "asin": "B08V4RGLW4",
+      "amazon_title": "キャンメイク 保湿 プランプリップケアスクラブ01 1個 (x 1)",
+      "brand": "CANMAKE",
+      "image_url": "https://m.media-amazon.com/images/I/51BudsdDmHL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "TAKAMI タカミリップ 7g 唇用美容液 リップバーム 高保"
+      "search_key": "TAKAMI タカミリップ 7g 唇用美容液 リップバーム 高保",
+      "selected_variant": {
+        "count": 1,
+        "shade": "01 クリア",
+        "series": "プランプリップケアスクラブ（プラスではない）"
+      }
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0D3HJNQ7B",
-      "asin": "B0D3HJNQ7B",
-      "amazon_title": "リップスクラブ リップクリーム 、リップスクラブ 唇の集中水分補給及び維持、角質鎮静、栄養補給、唇パック ビタミンC、ビーガン、 プランプリップケアスクラブ",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71dhIs6t3XL._AC_UL320_.jpg",
+      "product_id": "AMZ-B09C86QN4G",
+      "asin": "B09C86QN4G",
+      "amazon_title": "ハウスオブローゼ Oh!Baby スクラブリップバーム 4g 無色 角質ケア",
+      "brand": "HOUSE OF ROSE",
+      "image_url": "https://m.media-amazon.com/images/I/51Tuna8H9oL._AC_SL1000_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "リップスクラブ リップクリーム 、リップスクラブ 唇の集中水分補"
+      "search_key": "リップスクラブ リップクリーム 、リップスクラブ 唇の集中水分補",
+      "selected_variant": {
+        "capacity": "4g",
+        "count": 1,
+        "shade": "無色",
+        "scent": "バニラミント",
+        "model": "44863"
+      }
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0BT4FN3X6",
-      "asin": "B0BT4FN3X6",
-      "amazon_title": "ラネージュ リップスリーピングマスク グレープフルーツ 20g リップクリーム リップマスク リップバーム リップスクラブ 唇 パック 保湿 韓国",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61xiYuqUKPL._AC_UL320_.jpg",
+      "product_id": "AMZ-B001QXDBEM",
+      "asin": "B001QXDBEM",
+      "amazon_title": "トレンドホリック リップピーリング リップ 角質くすみ シュガースクラブ リップスクラブ 8g",
+      "brand": "Trendholic",
+      "image_url": "https://m.media-amazon.com/images/I/71JPO+B67PL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "ラネージュ リップスリーピングマスク グレープフルーツ 20g"
+      "search_key": "ラネージュ リップスリーピングマスク グレープフルーツ 20g",
+      "selected_variant": {
+        "capacity": "8g",
+        "count": 1,
+        "scent": "レモンパイ"
+      }
     },
     {
       "ref": "p6",
       "product_id": "AMZ-B09WMCC58N",
       "asin": "B09WMCC58N",
       "amazon_title": "【unpa公式】BubiBubi リップケアセット (スクラブ+マスクセット)",
-      "brand": "",
+      "brand": "unpa",
       "image_url": "https://m.media-amazon.com/images/I/51-IDILyVpL._AC_UL320_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "BubiBubi リップケアセット (スクラブ+マスクセット)"
+      "search_key": "BubiBubi リップケアセット (スクラブ+マスクセット)",
+      "selected_variant": {
+        "count": 2,
+        "bundle": "スクラブ10ml＋リップマスク9g",
+        "scrub_flavor": "ピーチ、ピンク容器",
+        "not_included": "バターリップバーム"
+      }
     }
   ]
 }

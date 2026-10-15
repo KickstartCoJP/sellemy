@@ -57,8 +57,8 @@
       "product_id": "AMZ-B0CL4R54X4",
       "asin": "B0CL4R54X4",
       "amazon_title": "SwitchBot 気化式加湿器 Alexa 大容量 4.5L 21畳対応 省エネ 上から給水 18dB静音 抗菌 フィルター洗濯機可 スマートホーム",
-      "brand": "スイッチボット(SwitchBot)のストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/613Lg5YeEEL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "brand": "SwitchBot",
+      "image_url": "https://m.media-amazon.com/images/I/613Lg5YeEEL._AC_SL1500_.jpg",
       "observed_price": 19800,
       "discovery_score": 1,
       "selection_score": 0.985,
@@ -67,15 +67,25 @@
         "maintenance",
         "tank_capacity"
       ],
-      "search_key": "スイッチボット(SwitchBot) SwitchBot 気化式加湿器 Alexa 大容量 4."
+      "search_key": "スイッチボット(SwitchBot) SwitchBot 気化式加湿器 Alexa 大容量 4.",
+      "selected_variant": {
+        "current_selection_text": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. パターン名: 気化式 パターン名の選択ができます 気化式 超音波式 おすすめ出品がない0オプションを見る ← 1 →",
+        "overview": "ブランド スイッチボット(SwitchBot) 特徴 タイマー, リモートコントロール, 水量低下インジケーター 色 ホワイト 容量 4.5 L 動作モード 連続",
+        "selected_detail_fields": [
+          {
+            "field": "色",
+            "value": "色 ホワイト"
+          }
+        ]
+      }
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0HCBQM5HK",
-      "asin": "B0HCBQM5HK",
-      "amazon_title": "加湿器 大容量 4.5L 【上から給水・UVライト除菌・マイナスイオン】 超音波式 ダブル吹出口 6段階ミスト 4段階タイマー 静音 55時間連続運転",
-      "brand": "ブランド: Vootic",
-      "image_url": "https://m.media-amazon.com/images/I/61Agu-vsR8L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B082TQMYQZ",
+      "asin": "B082TQMYQZ",
+      "amazon_title": "カドー 超音波式加湿器（木造10畳まで/プレハブ洋室17畳まで) cado STEM 630i HM-C630i ホワイト",
+      "brand": "cado",
+      "image_url": "https://m.media-amazon.com/images/I/31LrzgUEKJS._AC_SL1061_.jpg",
       "observed_price": 3999,
       "discovery_score": 1,
       "selection_score": 0.495,
@@ -83,15 +93,25 @@
         "humidify_method",
         "tank_capacity"
       ],
-      "search_key": "Vootic 加湿器 大容量 4.5L 超音波式 ダブル吹出口 6段階ミスト"
+      "search_key": "Vootic 加湿器 大容量 4.5L 超音波式 ダブル吹出口 6段階ミスト",
+      "selected_variant": {
+        "current_selection_text": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. 色: ホワイト 色の選択ができます おすすめ出品がない0オプションを見る ← 1 →",
+        "overview": "ブランド cado 特徴 抗菌 色 ホワイト 容量 0.4 L 床面積 27.54 平方メートル",
+        "selected_detail_fields": [
+          {
+            "field": "色",
+            "value": "色 ホワイト"
+          }
+        ]
+      }
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0HDMY98L5",
-      "asin": "B0HDMY98L5",
-      "amazon_title": "加湿器 大容量 6L 超音波式【最長60時間・4重除菌浄化】45-95%恒湿 上から給水 最大350mL/h 25dB静音 睡眠モード 26W省エネ 水漏れ防止 アロマ対応 透明タンク設計 タッチ操作／リモコン操作 空焚き防止 お手入れ簡単 乾燥対策 タワー式加湿器 オフィス/会社/寝室/家庭用",
-      "brand": "HAGOOGIのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/51pRD45aZuL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0DCDPCSS5",
+      "asin": "B0DCDPCSS5",
+      "amazon_title": "ダイニチ (Dainichi) 加湿器 ハイブリッド式(木造和室8.5畳まで/プレハブ洋室14畳まで) RXCタイプ サンドホワイト HD-RXC500C-W",
+      "brand": "ダイニチ",
+      "image_url": "https://m.media-amazon.com/images/I/61AB+xdo6qL._AC_SL1450_.jpg",
       "observed_price": 11280,
       "discovery_score": 1,
       "selection_score": 0.495,
@@ -99,45 +119,71 @@
         "humidify_method",
         "tank_capacity"
       ],
-      "search_key": "HAGOOGI 加湿器 大容量 6L 超音波式 45-95%恒湿 上から給水 最"
+      "search_key": "HAGOOGI 加湿器 大容量 6L 超音波式 45-95%恒湿 上から給水 最",
+      "selected_variant": {
+        "model_number": "HD-RXC500C-W",
+        "color": "サンドホワイト",
+        "tank_capacity": "5L",
+        "pack_count": 1
+      }
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0H6M16Q8N",
-      "asin": "B0H6M16Q8N",
-      "amazon_title": "加湿器 大容量 9L 【2026新モデル】 6重除菌浄化&AI知能調湿 加熱＆超音波 ハイブリッド加湿器 乾燥対策 空気清浄 上から給水 タワー 透明",
-      "brand": "Yutogen(ユトゲン)のストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/71mwUmb9wrL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0FPWXNQ3G",
+      "asin": "B0FPWXNQ3G",
+      "amazon_title": "シャープ ハイブリッド式 加湿器 HV-T55-W プラズマクラスター7000 どっちも給水 レギュラー 加湿550mL タンク4L ホワイト",
+      "brand": "シャープ",
+      "image_url": "https://m.media-amazon.com/images/I/31WxuCZjbkL._AC_SL1000_.jpg",
       "observed_price": 12980,
       "discovery_score": 1,
       "selection_score": 0.495,
       "matched_comparison_axes": [
         "tank_capacity"
       ],
-      "search_key": "Yutogen(ユトゲン) 加湿器 大容量 9L 6重除菌浄化&AI知能調湿 加熱＆超音波"
+      "search_key": "Yutogen(ユトゲン) 加湿器 大容量 9L 6重除菌浄化&AI知能調湿 加熱＆超音波",
+      "selected_variant": {
+        "current_selection_text": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. スタイル: 寝室 スタイルの選択ができます パーソナル リビング 寝室 色: ホワイト 色の選択ができます おすすめ出品がない0オプションを見る ← 1 →",
+        "overview": "ブランド シャープ(SHARP) 特徴 タンク取り外し可能, 水位窓, 水量低下インジケーター 色 ホワイト 容量 4000 ml 床面積 15 平方メートル",
+        "selected_detail_fields": [
+          {
+            "field": "色",
+            "value": "色 ホワイト"
+          }
+        ]
+      }
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0G38JLPCZ",
-      "asin": "B0G38JLPCZ",
-      "amazon_title": "【実測データ公開中】 加湿器 ハイブリッド ULRIO (ウルリオ) 1.5倍速で潤う 17畳対応 大容量 6L 自動湿度調整 ±5%高精度センサー 除菌率99% 静音 25dB 省エネ 上部給水",
-      "brand": "ULRIOのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/61vYAXf9VFL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0HGF5B9D8",
+      "asin": "B0HGF5B9D8",
+      "amazon_title": "象印マホービン 加湿器 スチーム式 4.0L ホワイト EE-DG50-WA",
+      "brand": "象印",
+      "image_url": "https://m.media-amazon.com/images/I/5129Bqe4J1L._AC_SL1500_.jpg",
       "observed_price": 14999,
       "discovery_score": 1,
       "selection_score": 0.495,
       "matched_comparison_axes": [
         "tank_capacity"
       ],
-      "search_key": "ULRIO 加湿器 ハイブリッド ULRIO (ウルリオ) 1.5倍速で潤う"
+      "search_key": "ULRIO 加湿器 ハイブリッド ULRIO (ウルリオ) 1.5倍速で潤う",
+      "selected_variant": {
+        "current_selection_text": "",
+        "overview": "ブランド 象印マホービン(ZOJIRUSHI) 色 ホワイト 商品の寸法 27.5奥行き x 24幅 x 36.5高さ cm 付属コンポーネント ユーザーマニュアル メーカー 象印マホービン(ZOJIRUSHI)",
+        "selected_detail_fields": [
+          {
+            "field": "色",
+            "value": "色 ホワイト"
+          }
+        ]
+      }
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0G25CGM1T",
-      "asin": "B0G25CGM1T",
-      "amazon_title": "【2026改良モデル・AIスマート】 加湿器 大容量 5L 知能恒湿 ハイブリッド加湿器 加熱式 &超音波式 4重除菌 マイナスイオン 空気清浄機能",
-      "brand": "Ｔｒｏｓｔｏｎのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/61h7TsYBRwL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0HH8BJW91",
+      "asin": "B0HH8BJW91",
+      "amazon_title": "アイリスオーヤマ 加湿器 気化式 加湿量：550ml タンク容量：4L 分解丸洗い お手入れ簡単 上から給水 お休みモード付き 省エネ",
+      "brand": "アイリスオーヤマ",
+      "image_url": "https://m.media-amazon.com/images/I/61zLozK2WhL._AC_SL1000_.jpg",
       "observed_price": 9980,
       "discovery_score": 1,
       "selection_score": 0.495,
@@ -145,7 +191,15 @@
         "humidify_method",
         "tank_capacity"
       ],
-      "search_key": "Ｔｒｏｓｔｏｎ 加湿器 大容量 5L 知能恒湿 ハイブリッド加湿器 加熱式 &超"
+      "search_key": "Ｔｒｏｓｔｏｎ 加湿器 大容量 5L 知能恒湿 ハイブリッド加湿器 加熱式 &超",
+      "selected_variant": {
+        "model_number": "AHM-MVU55A-DH",
+        "color": "ダークグレー",
+        "tank_capacity": "4L",
+        "pack_count": 1,
+        "selected_set_label": "500ml",
+        "rated_output_from_features": "550ml/h"
+      }
     }
   ]
 }

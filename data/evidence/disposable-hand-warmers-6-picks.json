@@ -54,11 +54,11 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0HG5XMTC1",
-      "asin": "B0HG5XMTC1",
-      "amazon_title": "貼れないカイロ 60個×2箱 合計120個 使い捨てカイロ 持続時間16時間 日本製 寒さ対策 通勤 通学 屋外作業 まとめ買い",
-      "brand": "ブランド: Goodnetta",
-      "image_url": "https://m.media-amazon.com/images/I/71aDB2FDDKL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B000FP3JF8",
+      "asin": "B000FP3JF8",
+      "amazon_title": "桐灰カイロ 貼らない カイロ 24時間持続 30個入",
+      "brand": "小林製薬",
+      "image_url": "https://m.media-amazon.com/images/I/91v8CBHTWHL._AC_SL1500_.jpg",
       "observed_price": 3890,
       "discovery_score": 1,
       "selection_score": 0.83,
@@ -66,76 +66,197 @@
         "cost",
         "heat"
       ],
-      "search_key": "Goodnetta 貼れないカイロ 60個×2箱 合計120個 使い捨てカイロ 持続"
+      "search_key": "Goodnetta 貼れないカイロ 60個×2箱 合計120個 使い捨てカイロ 持続",
+      "selected_variant": {
+        "current_selection_text": "",
+        "overview": "サイズ 30個 (x 1) ブランド 桐灰 電源 電気不要式 ユニット数 1 個 メーカー 小林製薬",
+        "selected_detail_fields": [
+          {
+            "field": "サイズ",
+            "value": "サイズ 30個 (x 1)"
+          },
+          {
+            "field": "ユニット数",
+            "value": "ユニット数 1 個"
+          },
+          {
+            "field": "特長",
+            "value": "特長 ポケットにぴったりのミニサイズ！ 小さくても長持ち12時間が自慢です。 当社のカイロはすべて厳しいISO管理の基に生産されています。「カイロ」の代表的商品。安定した暖かさが24時間持続します。 当社のカイロはすべて厳しいISO管理の基に生産されています。「カイロ」の代表的商品。安定した暖かさが24時間持続します。"
+          },
+          {
+            "field": "ユニット数",
+            "value": "ユニット数 1 個"
+          },
+          {
+            "field": "サイズ",
+            "value": "サイズ 30個 (x 1)"
+          }
+        ]
+      }
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0DK2W8B9V",
-      "asin": "B0DK2W8B9V",
-      "amazon_title": "使い捨てカイロ 貼る ほん わか 低 温タイプ 10時間持続 ミニサイズ 30枚入り × 1個 冷え性 キャンプ",
-      "brand": "ブランド: ノーブランド品",
-      "image_url": "https://m.media-amazon.com/images/I/7197q9L80NL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0156C90S4",
+      "asin": "B0156C90S4",
+      "amazon_title": "ホッカイロ ぬくぬく日和 貼らない レギュラー 30個入",
+      "brand": "興和",
+      "image_url": "https://m.media-amazon.com/images/I/71RjtGP9IUL._AC_SL1200_.jpg",
       "observed_price": 1980,
       "discovery_score": 1,
       "selection_score": 0.7,
       "matched_comparison_axes": [
         "size"
       ],
-      "search_key": "ノー品 使い捨てカイロ 貼る ほん わか 低 温タイプ 10時間持続 ミ"
+      "search_key": "ノー品 使い捨てカイロ 貼る ほん わか 低 温タイプ 10時間持続 ミ",
+      "selected_variant": {
+        "current_selection_text": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. パターン名: レギュラー パターン名の選択ができます サイズ: 30個 サイズの選択ができます 10個 (× 2) 30個 10個 おすすめ出品がない1オプションを見る ← 1 →",
+        "overview": "サイズ 30個 ブランド Hokkairon 色 ホワイト 材質 ウール 製品の推奨用途 アウトドア, インドア",
+        "selected_detail_fields": [
+          {
+            "field": "サイズ",
+            "value": "サイズ 30個"
+          },
+          {
+            "field": "色",
+            "value": "色 ホワイト"
+          },
+          {
+            "field": "ユニット数",
+            "value": "ユニット数 30 個"
+          },
+          {
+            "field": "サイズ",
+            "value": "サイズ 30個"
+          }
+        ]
+      }
     },
     {
       "ref": "p3",
       "product_id": "AMZ-B09K43DP28",
       "asin": "B09K43DP28",
       "amazon_title": "アイリスオーヤマ 使い捨てカイロ 貼る 240枚 日本製 ぽかぽか家族",
-      "brand": "ブランド: ぽかぽか家族",
-      "image_url": "https://m.media-amazon.com/images/I/6195u9RmF4L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "brand": "アイリスオーヤマ",
+      "image_url": "https://m.media-amazon.com/images/I/6195u9RmF4L._AC_SL1000_.jpg",
       "observed_price": 5280,
       "discovery_score": 1,
       "selection_score": 0.52,
       "matched_comparison_axes": [],
-      "search_key": "ぽかぽか家族 アイリスオーヤマ 使い捨てカイロ 貼る 240枚 日本製 ぽかぽ"
+      "search_key": "ぽかぽか家族 アイリスオーヤマ 使い捨てカイロ 貼る 240枚 日本製 ぽかぽ",
+      "selected_variant": {
+        "current_selection_text": "",
+        "overview": "サイズ 240枚 ブランド ぽかぽか家族 色 ホワイト 材質 金属 製品の推奨用途 衣類",
+        "selected_detail_fields": [
+          {
+            "field": "サイズ",
+            "value": "サイズ 240枚"
+          },
+          {
+            "field": "色",
+            "value": "色 ホワイト"
+          },
+          {
+            "field": "ユニット数",
+            "value": "ユニット数 240 枚"
+          },
+          {
+            "field": "サイズ",
+            "value": "サイズ 240枚"
+          }
+        ]
+      }
     },
     {
       "ref": "p4",
       "product_id": "AMZ-B0CHDX2J3L",
       "asin": "B0CHDX2J3L",
       "amazon_title": "【Amazon.co.jp限定】 命の母カイロ おなか用 【公式】 じんわり温まる 衣類に貼る 10個入×4個 冷え対策に (おまけ付き)",
-      "brand": "命の母カイロのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/81Jz7D8K0gL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "brand": "小林製薬",
+      "image_url": "https://m.media-amazon.com/images/I/81Jz7D8K0gL._AC_SL1500_.jpg",
       "observed_price": 1629,
       "discovery_score": 1,
       "selection_score": 0.47,
       "matched_comparison_axes": [
         "heat"
       ],
-      "search_key": "命の母カイロ おなか用 じんわり温まる 衣類に貼る 10個入×4個 冷え対策に"
+      "search_key": "命の母カイロ おなか用 じんわり温まる 衣類に貼る 10個入×4個 冷え対策に",
+      "selected_variant": {
+        "current_selection_text": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. パターン名: じんわり温かい パターン名の選択ができます おすすめ出品がない0オプションを見る ← 1 →",
+        "overview": "サイズ 10個 (x 4) ブランド 命の母カイロ 色 ピンク 材質 カーボンファイバー 付属コンポーネント なし",
+        "selected_detail_fields": [
+          {
+            "field": "サイズ",
+            "value": "サイズ 10個 (x 4)"
+          },
+          {
+            "field": "色",
+            "value": "色 ピンク"
+          },
+          {
+            "field": "ユニット数",
+            "value": "ユニット数 4 個"
+          },
+          {
+            "field": "サイズ",
+            "value": "サイズ 10個 (x 4)"
+          }
+        ]
+      }
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B09DQ6CVHC",
-      "asin": "B09DQ6CVHC",
-      "amazon_title": "アイリスオーヤマ 使い捨て低温カイロ ミニ 貼る 30枚 日本製",
-      "brand": "ぽかぽか家族のストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/7187C8hG3oL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0CLGWXKGC",
+      "asin": "B0CLGWXKGC",
+      "amazon_title": "オンパックス 貼る カイロ ミニ 10個入 [日本製/持続時間約10時間] はるオンパックス 貼るカイロ R",
+      "brand": "エステー",
+      "image_url": "https://m.media-amazon.com/images/I/71MzFAlpu+L._AC_SL1500_.jpg",
       "observed_price": 950,
       "discovery_score": 1,
       "selection_score": 0.47,
       "matched_comparison_axes": [],
-      "search_key": "ぽかぽか家族 アイリスオーヤマ 使い捨て低温カイロ ミニ 貼る 30枚 日本製"
+      "search_key": "ぽかぽか家族 アイリスオーヤマ 使い捨て低温カイロ ミニ 貼る 30枚 日本製",
+      "selected_variant": {
+        "type": "貼るミニ",
+        "pack_count": 1,
+        "pieces_per_pack": 10,
+        "selected_type": "新タイプ",
+        "duration": "約10時間"
+      }
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B01KWWQDGA",
-      "asin": "B01KWWQDGA",
-      "amazon_title": "温熱シート じかばり 直貼 肩・首用 12枚入 コリ 痛みに 温熱が効く 久光製薬",
-      "brand": "久光製薬のストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/51Z9jcvfy5L._SX342_SY445_QL70_ML2_.jpg",
+      "product_id": "AMZ-B005JZ81B6",
+      "asin": "B005JZ81B6",
+      "amazon_title": "ホカロン 貼るカイロ 10個入",
+      "brand": "ロッテ",
+      "image_url": "https://m.media-amazon.com/images/I/71F0UnsdNdL._AC_SL1500_.jpg",
       "observed_price": 748,
       "discovery_score": 1,
       "selection_score": 0.47,
       "matched_comparison_axes": [],
-      "search_key": "久光製薬 温熱シート じかばり 直貼 肩・首用 12枚入 コリ 痛みに 温"
+      "search_key": "久光製薬 温熱シート じかばり 直貼 肩・首用 12枚入 コリ 痛みに 温",
+      "selected_variant": {
+        "current_selection_text": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. 商品荷物数: 1",
+        "overview": "サイズ 215x125x48mm ブランド ロッテ 色 ナチュラル 材質 不織布 付属コンポーネント なし",
+        "selected_detail_fields": [
+          {
+            "field": "サイズ",
+            "value": "サイズ 215x125x48mm"
+          },
+          {
+            "field": "色",
+            "value": "色 ナチュラル"
+          },
+          {
+            "field": "ユニット数",
+            "value": "ユニット数 1 個"
+          },
+          {
+            "field": "サイズ",
+            "value": "サイズ 215x125x48mm"
+          }
+        ]
+      }
     }
   ]
 }

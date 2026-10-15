@@ -37,78 +37,83 @@
   "eyecatch_image": "https://www.sellemy.jp/img/external-hard-disk-drives/external-hard-disk-drives.png",
   "products": [
     {
-      "amazon_title": "「整備済み」外付けハードディスク ポータブル 超薄 外付けHDD USB3.0 大容量 PC/Mac/PS5/テレビ録画対応 オフェス 750GB",
-      "asin": "B0H2PLM1Z8",
-      "brand": "",
+      "amazon_title": "I-O DATA HDCX-UTL4K",
+      "asin": "B09Z2VK5BR",
+      "brand": "I-O DATA",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61gXRFwBCML._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61JP1pIxqAL._AC_SY300_SX300_QL70_ML2_.jpg",
       "matched_comparison_axes": [
         "capacity_and_backup"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0H2PLM1Z8",
+      "product_id": "AMZ-B09Z2VK5BR",
       "ref": "p1",
       "search_key": "「整備済み」外付けハードディスク ポータブル 超薄 外付けHDD",
-      "selection_score": 0.505
+      "selection_score": 0.505,
+      "selected_variant": "ブラック・4TB"
     },
     {
-      "amazon_title": "6TB 外付けHDD ポータブルHDD USB 3.0 外付けハードディスク ストレージドライブ",
-      "asin": "B0HKM7Z81R",
-      "brand": "",
+      "amazon_title": "Western Digital WD Elements Portable WDBU6Y0020BBK-WESN",
+      "asin": "B06W55K9N6",
+      "brand": "Western Digital",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51wkwOEp0rL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51wZUxvfHqL._AC_SY300_SX300_QL70_ML2_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0HKM7Z81R",
+      "product_id": "AMZ-B06W55K9N6",
       "ref": "p2",
       "search_key": "6TB 外付けHDD ポータブルHDD USB 3.0 外付けハ",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": "ブラック・2TB・国内正規代理店品としてのAmazon.co.jp出品"
     },
     {
-      "amazon_title": "【整備済み品】外付けHDD 500GB テレビ録画用 USB3.0 ポータブル Type-C変換アダプター付 ブラック",
-      "asin": "B0HJ7LKGLT",
-      "brand": "",
+      "amazon_title": "Seagate One Touch STKY2000400",
+      "asin": "B094QZLJQ6",
+      "brand": "Seagate",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71hEnMPwfxL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71VDyTlZCwL._AC_SY300_SX300_QL70_ML2_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0HJ7LKGLT",
+      "product_id": "AMZ-B094QZLJQ6",
       "ref": "p3",
       "search_key": "外付けHDD 500GB テレビ録画用 USB3.0 ポータブル",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": "ブラック・2TB・パスワード機能付き"
     },
     {
-      "amazon_title": "外付けハードディスク 外付けHDD 500GB 超高速データ転送 テレビ録画 超薄型 2.5インチ USB3.0に対応 /PC/Mac/PS4/XBox 携帯便利 収納袋付属",
-      "asin": "B0H1KR4WQP",
-      "brand": "",
+      "amazon_title": "Transcend TS2TSJ25M3S",
+      "asin": "B07B4KXTQK",
+      "brand": "Transcend",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51A-aZUpOCL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71ANWItmjuL._AC_SY300_SX300_QL70_ML2_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0H1KR4WQP",
+      "product_id": "AMZ-B07B4KXTQK",
       "ref": "p4",
       "search_key": "外付けハードディスク 外付けHDD 500GB 超高速データ転送",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": "アイロングレー・2TB・Type-A・Amazon海外ダイレクト出品"
     },
     {
-      "amazon_title": "UnionSine 3.5インチ 外付けハードディスク 14TB, USB3.0外付けhdd",
-      "asin": "B0F5PPNLVH",
-      "brand": "",
+      "amazon_title": "LaCie Rugged Mini LAC9000298",
+      "asin": "B00IRV005E",
+      "brand": "LaCie",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51-+l3dnGjL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/81h+P-kLOnL._AC_SY300_SX300_QL70_ML2_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0F5PPNLVH",
+      "product_id": "AMZ-B00IRV005E",
       "ref": "p5",
       "search_key": "UnionSine 3.5インチ 外付けハードディスク 14TB",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": "2TB・シルバー／オレンジ・Amazon海外ダイレクト出品"
     },
     {
-      "amazon_title": "バッファロー 外付けHDD Seagate製ドライブ内蔵 HD-SGDA4U3-B [ブラック] [容量:4TB インターフェース:USB3.2 Gen1]",
+      "amazon_title": "BUFFALO HD-SGDA4U3-B",
       "asin": "B0F4K8FY1R",
-      "brand": "",
+      "brand": "BUFFALO",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/21eo1QjO23L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/21eo1QjO23L._AC_QL70_ML2_.jpg",
       "matched_comparison_axes": [
         "capacity_and_backup"
       ],
@@ -116,7 +121,8 @@
       "product_id": "AMZ-B0F4K8FY1R",
       "ref": "p6",
       "search_key": "バッファロー 外付けHDD Seagate製ドライブ内蔵 HD-",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": "ブラック・4TB"
     }
   ],
   "selection": {

@@ -37,92 +37,98 @@
   "eyecatch_image": "https://www.sellemy.jp/img/home-entryway-shoehorns/home-entryway-shoehorns.png",
   "products": [
     {
-      "amazon_title": "山崎実業(Yamazaki) 【石こうボードピンセット・木ネジ 付属】 壁付け 靴ベラスタンド ブラック タワー tower 11049",
-      "asin": "B0H8398J93",
-      "brand": "",
+      "amazon_title": "アズマ工業(Azuma Industrial) スマート 靴ベラ マグネット収納 磁石でくっつく 玄関収納 立ったまま使いやすい 全長約60cm sm@rt988",
+      "asin": "B0BLXZLGVH",
+      "brand": "アズマ工業",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61F-w2xMXdL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51H4oTSe0zL._AC_SX300_SY300_QL70_ML2_.jpg",
       "matched_comparison_axes": [
         "entryway_storage"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0H8398J93",
+      "product_id": "AMZ-B0BLXZLGVH",
       "ref": "p1",
       "search_key": "山崎実業(Yamazaki) 壁付け 靴ベラスタンド ブラック",
-      "selection_score": 0.49
+      "selection_score": 0.49,
+      "selected_variant": "ホワイト・60cm"
     },
     {
-      "amazon_title": "スマート 靴ベラ マグネット収納 磁石でくっつく 玄関収納 立ったまま使いやすい 全長約60cm sm@rt988",
-      "asin": "B0BLXZLGVH",
-      "brand": "",
+      "amazon_title": "ideaco(イデアコ) 靴べら スタンド付き ロング stand noppo (スタンドノッポ アッシュグレー) マグネットなし 197AGY",
+      "asin": "B0D1G795Q4",
+      "brand": "ideaco",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51H4oTSe0zL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/31WV-M6G-rL._AC_SY300_SX300_QL70_ML2_.jpg",
       "matched_comparison_axes": [
         "length_and_posture"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0BLXZLGVH",
+      "product_id": "AMZ-B0D1G795Q4",
       "ref": "p2",
       "search_key": "スマート 靴ベラ マグネット収納 磁石でくっつく 玄関収納 立っ",
-      "selection_score": 0.49
+      "selection_score": 0.49,
+      "selected_variant": "アッシュグレー・スタンド付・マグネットなし"
     },
     {
-      "amazon_title": "山崎実業(Yamazaki) マグネット 靴ベラ 65cm ブラック タワー tower 10891",
-      "asin": "B0H7WFKKFL",
-      "brand": "",
+      "amazon_title": "藤代工芸 選べる靴べら ロング スタンド セット 75cm 木製 うるし塗タイプ ナチュラル塗タイプ (うるし塗) クッション材入り",
+      "asin": "B01MSIOB54",
+      "brand": "藤代工芸",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51+NN2EK6XL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/41mUr7z0g7L._AC_SY300_SX300_QL70_ML2_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0H7WFKKFL",
+      "product_id": "AMZ-B01MSIOB54",
       "ref": "p3",
       "search_key": "山崎実業(Yamazaki) マグネット 靴ベラ 65cm ブラ",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": "うるし塗・75cm・スタンド付"
     },
     {
-      "amazon_title": "[COREDA] コレダ 靴べら 幸運と長寿の木けやき使用 3サイズ品揃え 靴べら ロング くつべら スタンド付き",
-      "asin": "B0GSJH4WK6",
-      "brand": "",
+      "amazon_title": "コサイン(cosine)　木の靴べら　S　メープル SH-02NM-D",
+      "asin": "B003GAGF6O",
+      "brand": "コサイン",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/4121b4j78JL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/21IHtg+rRcL._AC_QL70_ML2_.jpg",
       "matched_comparison_axes": [
         "entryway_storage"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0GSJH4WK6",
+      "product_id": "AMZ-B003GAGF6O",
       "ref": "p4",
       "search_key": "コレダ 靴べら 幸運と長寿の木けやき使用 3サイズ品揃え 靴べら",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": "S・メープル・靴べら単体（スタンドなし）"
     },
     {
-      "amazon_title": "国産ヒノキ 靴ベラスタンド 木製 玄関収納 日本製 9x9cm スタンド奥行5.5cm",
-      "asin": "B0GHXYJLZ4",
-      "brand": "",
+      "amazon_title": "無印良品 木製くつべら 小 MAD22A3A",
+      "asin": "B0D62KJSDY",
+      "brand": "無印良品",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51+22JOAvWL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/41W8vRhh2IL._AC_SY300_SX300_QL70_ML2_.jpg",
       "matched_comparison_axes": [
         "entryway_storage"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0GHXYJLZ4",
+      "product_id": "AMZ-B0D62KJSDY",
       "ref": "p5",
       "search_key": "国産ヒノキ 靴ベラスタンド 木製 玄関収納 日本製 9x9cm",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": "ナチュラル・小"
     },
     {
-      "amazon_title": "[Sin.] スタンド ロング 靴べら 自立式 シンプルデザイン",
-      "asin": "B0D879TFM3",
-      "brand": "",
+      "amazon_title": "レザリアン ミドルシューホーン オレンジ",
+      "asin": "B004Q8PHGY",
+      "brand": "コロンブス",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/41D+v9DmWsL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/619TuDxNZ9L._AC_SY395_SX395_QL70_ML2_.jpg",
       "matched_comparison_axes": [
         "entryway_storage"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0D879TFM3",
+      "product_id": "AMZ-B004Q8PHGY",
       "ref": "p6",
       "search_key": "スタンド ロング 靴べら 自立式 シンプルデザイン",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "selected_variant": "オレンジ・約25cm"
     }
   ],
   "selection": {

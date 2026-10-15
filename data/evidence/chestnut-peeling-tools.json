@@ -47,11 +47,11 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0H9919XLT",
-      "asin": "B0H9919XLT",
-      "amazon_title": "GOKEI 栗むき器 栗剥きハサミ 替刃式 鬼皮・渋皮対応 ギザ刃 ロック機能 保護キャップ付き 左右手対応 スクレーパー・指サック付き 1個セット",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71Em7q4eroL._AC_UL320_.jpg",
+      "product_id": "AMZ-B009G9ZYUM",
+      "asin": "B009G9ZYUM",
+      "amazon_title": "諏訪田製作所 栗の皮むき鋏 新型栗くり坊主 ブラック",
+      "brand": "SUWADA",
+      "image_url": "https://m.media-amazon.com/images/I/61EZpk38nQL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.67,
@@ -59,80 +59,107 @@
         "blade_structure",
         "peeling_scope"
       ],
-      "search_key": "GOKEI 栗むき器 栗剥きハサミ 替刃式 鬼皮・渋皮対応 ギザ"
+      "search_key": "GOKEI 栗むき器 栗剥きハサミ 替刃式 鬼皮・渋皮対応 ギザ",
+      "selected_variant": {
+        "colour": "ブラック",
+        "count": 1
+      }
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0HJLRH692",
-      "asin": "B0HJLRH692",
-      "amazon_title": "栗むき器 くりむき器 栗 皮むき 栗の鬼皮・渋皮むき 栗むき ハサミ 栗の皮むき鋏 一字切れ目 鋸歯状の刃 ロック付き （ブラウン）",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71HziIX6LRL._AC_UL320_.jpg",
+      "product_id": "AMZ-B00MIEQ91U",
+      "asin": "B00MIEQ91U",
+      "amazon_title": "下村工業 日本製 味わい食房 ラクラク栗の皮むき 殻剥き ARK-682 新潟 燕三条製",
+      "brand": "下村工業",
+      "image_url": "https://m.media-amazon.com/images/I/51xDUWaasOL._AC_SL1200_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
       "matched_comparison_axes": [
         "peeling_scope"
       ],
-      "search_key": "栗むき器 くりむき器 栗 皮むき 栗の鬼皮・渋皮むき 栗むき ハ"
+      "search_key": "栗むき器 くりむき器 栗 皮むき 栗の鬼皮・渋皮むき 栗むき ハ",
+      "selected_variant": {
+        "model": "ARK-682",
+        "count": 1
+      }
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0HJ4J11C2",
-      "asin": "B0HJ4J11C2",
-      "amazon_title": "aninako 栗むき器 木製 十字切り 鬼皮・渋皮むき 簡単 くり剥き 皮むき具",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/616VlMR4tzL._AC_UL320_.jpg",
+      "product_id": "AMZ-B01LWKZICQ",
+      "asin": "B01LWKZICQ",
+      "amazon_title": "貝印 KAI 栗の皮むき器 栗の殻向き器 栗 むけちゃいました キッチンツール Kai House Select 日本製 DH2057",
+      "brand": "貝印",
+      "image_url": "https://m.media-amazon.com/images/I/41mT9Z4I9pL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
       "matched_comparison_axes": [
         "peeling_scope"
       ],
-      "search_key": "aninako 栗むき器 木製 十字切り 鬼皮・渋皮むき 簡単"
+      "search_key": "aninako 栗むき器 木製 十字切り 鬼皮・渋皮むき 簡単",
+      "selected_variant": {
+        "type": "栗ピーラー",
+        "count": 1
+      }
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0HG6SDQY1",
-      "asin": "B0HG6SDQY1",
-      "amazon_title": "栗むき器 栗むきハサミ 栗剥き器 鬼皮・渋皮をまとめてむける 一文字 ロック機能付き ブラック",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61F9npI4NHL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0CWZ6J5VW",
+      "asin": "B0CWZ6J5VW",
+      "amazon_title": "貝印 KAI 栗 カッター 生栗 ゆで栗 しぶ皮 剥き 収納 便利な キャップ 付 KAI KITCHEN 日本製 DH8183",
+      "brand": "貝印",
+      "image_url": "https://m.media-amazon.com/images/I/51Bcf6ptqNL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
       "matched_comparison_axes": [
         "peeling_scope"
       ],
-      "search_key": "栗むき器 栗むきハサミ 栗剥き器 鬼皮・渋皮をまとめてむける 一"
+      "search_key": "栗むき器 栗むきハサミ 栗剥き器 鬼皮・渋皮をまとめてむける 一",
+      "selected_variant": {
+        "colour": "ホワイト",
+        "type": "栗カッター",
+        "package": "カッター＋キャップ",
+        "count": 1
+      }
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0HFJFYJRG",
-      "asin": "B0HFJFYJRG",
-      "amazon_title": "GOKEI 栗剥き 栗むきハサミ 指サック・スクレーパー付き ロック機能 十字切れ目 先端フック 刃先キャップ・十字刃カバー",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71S8oHqTFvL._AC_UL320_.jpg",
+      "product_id": "AMZ-B08F1WQVJ7",
+      "asin": "B08F1WQVJ7",
+      "amazon_title": "下村企販 皮むき器 栗 【日本製】 渋皮もむける 手が痛くならない 滑りにくい ロック機能付き 栗むき器 栗カッター 殻むき 栗ご飯 炊き込みご飯 甘露煮 マロン デザート 製菓 スゴ切れ 燕三条 38995",
+      "brand": "下村企販",
+      "image_url": "https://m.media-amazon.com/images/I/51UeJxqNztL._AC_SL1000_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
       "matched_comparison_axes": [],
-      "search_key": "GOKEI 栗剥き 栗むきハサミ 指サック・スクレーパー付き ロ"
+      "search_key": "GOKEI 栗剥き 栗むきハサミ 指サック・スクレーパー付き ロ",
+      "selected_variant": {
+        "colour": "ブラウン",
+        "count": 1
+      }
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0HDYTB8LX",
-      "asin": "B0HDYTB8LX",
-      "amazon_title": "栗むき器 くりむき器 栗 皮むき 栗の鬼皮・渋皮むき 栗むき ハサミ 栗の皮むき鋏 一字切れ目 鋸歯状の刃 ロック付き",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61X60lUwNhL._AC_UL320_.jpg",
+      "product_id": "AMZ-B003RRBNRW",
+      "asin": "B003RRBNRW",
+      "amazon_title": "エコー金属 栗とオレンジの皮むき 0336-361",
+      "brand": "エコー金属",
+      "image_url": "https://m.media-amazon.com/images/I/617thNX+pNL._AC_SL1001_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
       "matched_comparison_axes": [
         "peeling_scope"
       ],
-      "search_key": "栗むき器 くりむき器 栗 皮むき 栗の鬼皮・渋皮むき 栗むき ハ"
+      "search_key": "栗むき器 くりむき器 栗 皮むき 栗の鬼皮・渋皮むき 栗むき ハ",
+      "selected_variant": {
+        "colour": "ブラウン",
+        "type": "栗とオレンジ用、木柄",
+        "count": 1
+      }
     }
   ]
 }

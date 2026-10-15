@@ -39,27 +39,35 @@
   "eyecatch_image": "https://www.sellemy.jp/img/gratin-baking-dishes-6-picks/gratin-baking-dishes-6-picks.png",
   "products": [
     {
-      "amazon_title": "三陶(Santo) 萬古焼 グラタン皿 一人用 楕円 オーバル 直径約21cm モノトーン 耐熱 陶器 オーブン対応 電子レンジ 食洗機対応 ブラウン 日本製 06282 (× 2)",
-      "asin": "B0GYC3BH9X",
-      "brand": "",
+      "amazon_title": "TAMAKI ギャザー オーバルグラタンS ブラウン T-763049",
+      "asin": "B07144RV8J",
+      "brand": "TAMAKI",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61IBelArrJL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71-BdYclAxL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "heating_compatibility",
         "serving_care"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0GYC3BH9X",
+      "product_id": "AMZ-B07144RV8J",
       "ref": "p1",
       "search_key": "三陶(Santo) 萬古焼 グラタン皿 一人用 楕円 オーバル",
-      "selection_score": 0.67
+      "selection_score": 0.67,
+      "model": "T-763049",
+      "selected_variant": {
+        "model": "T-763049",
+        "color": "ブラウン",
+        "capacity_ml": 480,
+        "quantity": 1,
+        "jan": "4965643763049"
+      }
     },
     {
-      "amazon_title": "HARIO(ハリオ) 日本製 耐熱ガラス製 トースター皿 400ml BUONO kitchen HTZ-40-BK クリア (× 2)",
+      "amazon_title": "HARIO HTZ-40-BK",
       "asin": "B0GGH9CK3G",
-      "brand": "",
+      "brand": "HARIO",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51uQMO-qoDL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51uQMO-qoDL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "heating_compatibility"
       ],
@@ -67,40 +75,61 @@
       "product_id": "AMZ-B0GGH9CK3G",
       "ref": "p2",
       "search_key": "HARIO(ハリオ) 日本製 耐熱ガラス製 トースター皿 400",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "model": "HTZ-40-BK",
+      "selected_variant": {
+        "model": "HTZ-40-BK",
+        "capacity_ml": 400,
+        "pack_count": 2
+      }
     },
     {
-      "amazon_title": "グリルパン 焼肉プレート 鉄鋳物 魚焼き グリルプレート グラタン皿 焼き肉 プレート 直火 焼肉プレート オーブントースター トレー ステーキ 鉄板キャンプ バーベキュー 深型フライパン 焼肉料理 サムギョプサル 家庭用 キャンプ用 (角型カセットオーブン)",
-      "asin": "B0FVRQSNG1",
-      "brand": "",
+      "amazon_title": "STAUB Ceramiqueオーバル23cm 40508-604-0",
+      "asin": "B0758JJS1J",
+      "brand": "STAUB",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71UI-t3LrLL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51TZv3cw+yL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0FVRQSNG1",
+      "product_id": "AMZ-B0758JJS1J",
       "ref": "p3",
       "search_key": "グリルパン 焼肉プレート 鉄鋳物 魚焼き グリルプレート グラタ",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "model": "40508-604-0",
+      "selected_variant": {
+        "model": "40508-604-0",
+        "color": "グランブルー",
+        "size": "23cm",
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "ハーフサイズ オーブントースター 皿 ブラック 2個組",
-      "asin": "B0D5LXMVHL",
-      "brand": "",
+      "amazon_title": "KINTO ほっくり オーバルグラタン 茶 16477",
+      "asin": "B006B3J1PA",
+      "brand": "KINTO",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51blHeu2CcL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51vcyUT5ymL._AC_SL1000_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0D5LXMVHL",
+      "product_id": "AMZ-B006B3J1PA",
       "ref": "p4",
       "search_key": "ハーフサイズ オーブントースター 皿 ブラック 2個組",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "model": "16477",
+      "selected_variant": {
+        "model": "16477",
+        "color": "茶",
+        "jan": "4963264493161",
+        "quantity": 1,
+        "included": "コルクマット"
+      }
     },
     {
-      "amazon_title": "iwaki(イワキ) 耐熱ガラス オーブントースター皿 ベーシックシリーズ ハーフ 144×120×39mm 340ml BC3840",
+      "amazon_title": "iwaki BC3840",
       "asin": "B0B5QJXX81",
-      "brand": "",
+      "brand": "iwaki",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51VJa1aSJ2L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51VJa1aSJ2L._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "heating_compatibility"
       ],
@@ -108,22 +137,35 @@
       "product_id": "AMZ-B0B5QJXX81",
       "ref": "p5",
       "search_key": "iwaki(イワキ) 耐熱ガラス オーブントースター皿 ベーシッ",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "model": "BC3840",
+      "selected_variant": {
+        "model": "BC3840",
+        "capacity_ml": 340,
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "HARIO(ハリオ) 日本製 耐熱ガラス製 トースター皿 900ml BUONO kitchen HTZ-90-BK クリア",
-      "asin": "B09WH4QS2X",
-      "brand": "",
+      "amazon_title": "アデリア セラベイク スクエアロースターS K-9426",
+      "asin": "B0BD4LP9BL",
+      "brand": "アデリア",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/41HcrRd123L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51HFAlHumNL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "heating_compatibility"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B09WH4QS2X",
+      "product_id": "AMZ-B0BD4LP9BL",
       "ref": "p6",
       "search_key": "HARIO(ハリオ) 日本製 耐熱ガラス製 トースター皿 900",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "model": "K-9426",
+      "selected_variant": {
+        "model": "K-9426",
+        "color": "透明（セラミックコーティング）",
+        "capacity_ml": 400,
+        "quantity": 1
+      }
     }
   ],
   "selection": {

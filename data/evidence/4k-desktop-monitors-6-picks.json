@@ -47,8 +47,8 @@
       "ref": "p1",
       "product_id": "AMZ-B0H29BM2PR",
       "asin": "B0H29BM2PR",
-      "amazon_title": "【Amazon.co.jp限定】JAPANNEXT 27インチ IPSパネル搭載 120Hz/1ms(MPRT)対応 4K(3840×2160)解像度 ゲーミングモニター JN-iA27G120U2 HDMI2.1 DP sRGB:100% HDR400相当 PS5 4K:120Hz接続 VRR【2年保証】",
-      "brand": "JAPANNEXTのストアを表示",
+      "amazon_title": "JAPANNEXT JN-iA27G120U2｜27型4K・120Hz",
+      "brand": "JAPANNEXT",
       "image_url": "https://m.media-amazon.com/images/I/71PiMbVV0AL._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": 33980,
       "discovery_score": 1,
@@ -57,29 +57,43 @@
         "connectivity",
         "resolution_size"
       ],
-      "search_key": "JAPANNEXT 27インチ IPSパネル搭載 120Hz/1ms(MPRT)対応"
+      "search_key": "JAPANNEXT 27インチ IPSパネル搭載 120Hz/1ms(MPRT)対応",
+      "model": "JN-iA27G120U2",
+      "selected_variant": {
+        "screen_inches": 27,
+        "color": "ブラック",
+        "unit_count": 1,
+        "bundle": "monitor with normal manufacturer-supplied accessories, not additional monitor bundle"
+      }
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0GZ89WZBN",
-      "asin": "B0GZ89WZBN",
-      "amazon_title": "ハイセンス【3年保証】75V型 75E60S 4K 量子ドット 倍速パネル 144Hz VRR ゲームモード ネット動画 スマート ダブル録画 チューナー内蔵 Alexa AirPlay2 液晶 テレビ",
-      "brand": "Hisenseのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/81u5NF4bdhL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0F4P9XTNW",
+      "asin": "B0F4P9XTNW",
+      "amazon_title": "Dell P3225QE｜31.5型4K USB-Cハブモニター",
+      "brand": "Dell",
+      "image_url": "https://m.media-amazon.com/images/I/41oR5MTyYzL._AC_SX300_SY300_QL70_ML2_.jpg",
       "observed_price": 149800,
       "discovery_score": 1,
       "selection_score": 0.52,
       "matched_comparison_axes": [
         "resolution_size"
       ],
-      "search_key": "Hisense ハイセンス 75V型 75E60S 4K 量子ドット 倍速パネル"
+      "search_key": "Hisense ハイセンス 75V型 75E60S 4K 量子ドット 倍速パネル",
+      "model": "P3225QE",
+      "selected_variant": {
+        "screen_inches": 31.5,
+        "color": "ブラック",
+        "unit_count": 1,
+        "bundle": "monitor with normal manufacturer-supplied accessories, not additional monitor bundle"
+      }
     },
     {
       "ref": "p3",
       "product_id": "AMZ-B0GWHWRBW4",
       "asin": "B0GWHWRBW4",
-      "amazon_title": "INNOCN GA32V1M MAX 32インチ 4K ゲーミングモニター QD-MiniLED AR低反射×ATW広視野角 4K 160Hz/FHD 320Hz デュアルモード 2304ゾーン HDR1000 0.5ms MPCS Type-C 90W KVM USBハブ HDMI2.1 PS5対応 ホワイト",
-      "brand": "INNOCNのストアを表示",
+      "amazon_title": "INNOCN GA32V1M MAX｜32型Mini-LED・デュアルモード",
+      "brand": "INNOCN",
       "image_url": "https://m.media-amazon.com/images/I/61Iq1-A-XOL._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": 113810,
       "discovery_score": 1,
@@ -88,15 +102,22 @@
         "connectivity",
         "resolution_size"
       ],
-      "search_key": "INNOCN GA32V1M MAX 32インチ 4K ゲーミングモニター Q"
+      "search_key": "INNOCN GA32V1M MAX 32インチ 4K ゲーミングモニター Q",
+      "model": "GA32V1M MAX",
+      "selected_variant": {
+        "screen_inches": 32,
+        "color": "ホワイト",
+        "unit_count": 1,
+        "bundle": "monitor with normal manufacturer-supplied accessories, not additional monitor bundle"
+      }
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0FYMDT5PZ",
-      "asin": "B0FYMDT5PZ",
-      "amazon_title": "InnoView 15.6インチ 4K デュアル モバイルモニター ドライバー不要 モバイルモニター2画面 3840x2160P 100% sRGB 折りたたみ式デュアルディスプレイ モバイルディスプレイ 自動回転315° フル機能Type-C/DP/標準HDMI IPSパネル 壁掛けに対応 自立スタンド付き",
-      "brand": "InnoViewのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/71Ngt9CrALL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B093VZKJQF",
+      "asin": "B093VZKJQF",
+      "amazon_title": "ASUS ProArt PA279CV-J｜27型4K・最大65W USB-C給電",
+      "brand": "ASUS",
+      "image_url": "https://m.media-amazon.com/images/I/61X52-6tsOL._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": 69999,
       "discovery_score": 1,
       "selection_score": 0.52,
@@ -104,14 +125,21 @@
         "connectivity",
         "resolution_size"
       ],
-      "search_key": "InnoView 15.6インチ 4K デュアル モバイルモニター ドライバー不要"
+      "search_key": "InnoView 15.6インチ 4K デュアル モバイルモニター ドライバー不要",
+      "model": "PA279CV-J",
+      "selected_variant": {
+        "screen_inches": 27,
+        "color": "ブラック",
+        "unit_count": 1,
+        "bundle": "monitor with normal manufacturer-supplied accessories, not additional monitor bundle"
+      }
     },
     {
       "ref": "p5",
       "product_id": "AMZ-B0DPQCL4C7",
       "asin": "B0DPQCL4C7",
-      "amazon_title": "KTC A32Q8 スマートモニター 32インチ 4K UHD 3840 * 2160P | Google TV搭載｜HDR10 | Dolby Audio対応｜USB-C＆HDMI&DP 多機能ポート｜分割画面機能｜キーボード＆マウス一元管理｜ストリーミング＆キャスティング対応｜テレワーク＆エンタメに最適 | 5W*2 Dolby Audio",
-      "brand": "KTCのストアを表示",
+      "amazon_title": "KTC A32Q8｜32型4K・Google TV内蔵",
+      "brand": "KTC",
       "image_url": "https://m.media-amazon.com/images/I/71RezHkrAmL._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": 49980,
       "discovery_score": 1,
@@ -120,15 +148,22 @@
         "connectivity",
         "resolution_size"
       ],
-      "search_key": "KTC A32Q8 スマートモニター 32インチ 4K UHD 3840"
+      "search_key": "KTC A32Q8 スマートモニター 32インチ 4K UHD 3840",
+      "model": "A32Q8",
+      "selected_variant": {
+        "screen_inches": 32,
+        "color": "ブラック",
+        "unit_count": 1,
+        "bundle": "monitor with normal manufacturer-supplied accessories, not additional monitor bundle"
+      }
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0GXFY2N8C",
-      "asin": "B0GXFY2N8C",
-      "amazon_title": "CRUA 28インチ 4K+ 60Hz PCモニター 3840×2560 IPS Type-C HDMI2.0 DP1.4 スピーカー内蔵 ブラック",
-      "brand": "CRUAのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/71LVWQYxtCL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0CCDHFB37",
+      "asin": "B0CCDHFB37",
+      "amazon_title": "BenQ PD2706U｜27型4K・P3対応と90W USB-C給電",
+      "brand": "BenQ",
+      "image_url": "https://m.media-amazon.com/images/I/613dFdX9YSL._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": 22999,
       "discovery_score": 1,
       "selection_score": 0.47,
@@ -136,7 +171,14 @@
         "connectivity",
         "resolution_size"
       ],
-      "search_key": "CRUA 28インチ 4K+ 60Hz PCモニター 3840×2560"
+      "search_key": "CRUA 28インチ 4K+ 60Hz PCモニター 3840×2560",
+      "model": "PD2706U",
+      "selected_variant": {
+        "screen_inches": 27,
+        "color": "ブラック",
+        "unit_count": 1,
+        "bundle": "monitor with normal manufacturer-supplied accessories, not additional monitor bundle"
+      }
     }
   ]
 }

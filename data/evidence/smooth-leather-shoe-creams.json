@@ -34,27 +34,31 @@
   "eyecatch_image": "https://www.sellemy.jp/img/smooth-leather-shoe-creams/smooth-leather-shoe-creams.png",
   "products": [
     {
-      "amazon_title": "レザー 補修クリーム 靴クリーム キズ補修 革専用 靴磨き 保湿 補色 レザーマニキュア レザーコンシーラー スムースレザー 皮革製品 革靴 革小物 メンズ レディース",
-      "asin": "B08Z8DSYD1",
-      "brand": "",
+      "amazon_title": "M.モゥブレィ キズ補修・補色用クリーム 革靴/小物/コバ 調色可 セルフケア 傷隠し レザーコンシーラー",
+      "asin": "B07FCXT25M",
+      "brand": "M.MOWBRAY",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/615PxIFpo+L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/81dp-SLK8uL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "color_finish",
         "leather_compatibility"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B08Z8DSYD1",
+      "product_id": "AMZ-B07FCXT25M",
       "ref": "p1",
       "search_key": "レザー 補修クリーム 靴クリーム キズ補修 革専用 靴磨き 保湿",
-      "selection_score": 0.66
+      "selection_score": 0.66,
+      "selected_variant": [
+        "15ml",
+        "ネイビーブルー"
+      ]
     },
     {
       "amazon_title": "ガラスレザー ツヤ出し 簡単お手入れ ローファー 学生靴 就活 無色 ガラスレザークリーム",
       "asin": "B0F8MXXC61",
-      "brand": "",
+      "brand": "M.MOWBRAY",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/613LtFqykiL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/613LtFqykiL._AC_SL1184_.jpg",
       "matched_comparison_axes": [
         "color_finish"
       ],
@@ -62,27 +66,35 @@
       "product_id": "AMZ-B0F8MXXC61",
       "ref": "p2",
       "search_key": "ガラスレザー ツヤ出し 簡単お手入れ ローファー 学生靴 就活",
-      "selection_score": 0.3
+      "selection_score": 0.3,
+      "selected_variant": {
+        "color": "無色",
+        "size": "N/A: 容器外寸は比較対象外。選択色・内容量で商品を識別"
+      }
     },
     {
-      "amazon_title": "革 補修 レザーケアキット 革 補修クリーム レザーリペア 革色落ち補修 レザー補修クリーム 革 色 補修 革製品 キズ補修 皮革用",
+      "amazon_title": "DEWEL 革 補修 レザーケアキット 革 補修クリーム レザーリペア 革色落ち補修 レザー補修クリーム 革 色 補修 革製品 キズ補修 皮革用",
       "asin": "B0CHHTYQ5H",
-      "brand": "",
+      "brand": "DEWEL",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/717fzZc51oL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/717fzZc51oL._SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B0CHHTYQ5H",
       "ref": "p3",
       "search_key": "革 補修 レザーケアキット 革 補修クリーム レザーリペア 革色",
-      "selection_score": 0.3
+      "selection_score": 0.3,
+      "selected_variant": {
+        "color": "ブラック・ホワイト・タン・ウォルナット・チョコレート",
+        "size": "N/A: 容器外寸は比較対象外。選択色・内容量で商品を識別"
+      }
     },
     {
       "amazon_title": "[コロンブス] キズも色あせもクリームで上書き カラーリペア 手軽に使える 革靴専用の補色剤",
       "asin": "B09PY4DMHP",
-      "brand": "",
+      "brand": "コロンブス",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71RI9u6U+EL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71RI9u6U+EL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "color_finish"
       ],
@@ -90,35 +102,45 @@
       "product_id": "AMZ-B09PY4DMHP",
       "ref": "p4",
       "search_key": "キズも色あせもクリームで上書き カラーリペア 手軽に使える 革靴",
-      "selection_score": 0.3
+      "selection_score": 0.3,
+      "selected_variant": [
+        "ディープブラウン"
+      ]
     },
     {
-      "amazon_title": "【10色セット】レザークリーム 補修クリーム 補色クリーム 革製品 保革・補色・ツヤ出し チューブタイプ 靴 バッグ 座席などの皮革製品 補修専用",
-      "asin": "B096FSMQ6Z",
-      "brand": "",
+      "amazon_title": "[SEISSO] 革 補修 クリーム レザー 補修 靴 補修 革色落ち補修 革クリーム レザーシート 補修 革ハンドル 補修 合成皮革 補修 ソファ 財布 チャイルドシート ベルト補修 靴 傷消し",
+      "asin": "B0CXNY7525",
+      "brand": "SEISSO",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61q2oJVXbPL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51yvHbHzgtL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "color_finish"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B096FSMQ6Z",
+      "product_id": "AMZ-B0CXNY7525",
       "ref": "p5",
       "search_key": "レザークリーム 補修クリーム 補色クリーム 革製品 保革・補色",
-      "selection_score": 0.3
+      "selection_score": 0.3,
+      "selected_variant": [
+        "アンバーイエロー"
+      ]
     },
     {
       "amazon_title": "[サフィール] 圧倒的なツヤ 保湿力 靴クリーム クレム1925 高級 靴磨き シュークリーム 革靴 クリーム 手入れ 傷 靴墨 保湿 保革 着色",
       "asin": "B083NQ4521",
-      "brand": "",
+      "brand": "SAPHIR",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61wTvnluncL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61wTvnluncL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B083NQ4521",
       "ref": "p6",
       "search_key": "圧倒的なツヤ 保湿力 靴クリーム クレム1925 高級 靴磨き",
-      "selection_score": 0.3
+      "selection_score": 0.3,
+      "selected_variant": [
+        "75ml",
+        "16 ベージュ"
+      ]
     }
   ],
   "selection": {

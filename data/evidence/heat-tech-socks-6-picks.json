@@ -42,91 +42,97 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0G2LPMR38",
-      "asin": "B0G2LPMR38",
-      "amazon_title": "[MIZIKIRIN] 靴下 メンズ 冬 ソックス あったか靴下【足首をぐるりと厚くガード・冷えから守る保温設計】 極厚手 冬用 防寒 吸汗消臭 耐久性 保温 アウトドア ルームソックス 暖かい 防寒グッズ メンズ プレゼント 25-27cm",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71oALn95mWL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0H8K5P1CF",
+      "asin": "B0H8K5P1CF",
+      "amazon_title": "[オカモト] 靴下サプリ まるでこたつおでかけソックス 外用 あったか靴下 寒さ対策",
+      "brand": "オカモト 靴下サプリ",
+      "image_url": "https://m.media-amazon.com/images/I/61+GV7UrDdL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.505,
       "matched_comparison_axes": [
         "warmth"
       ],
-      "search_key": "靴下 メンズ 冬 ソックス あったか靴下 極厚手 冬用 防寒 吸"
+      "search_key": "靴下 メンズ 冬 ソックス あったか靴下 極厚手 冬用 防寒 吸",
+      "selected_variant": "レディース23〜25cm、アイボリー（ショップ限定色）、1足"
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0H8K5P1CF",
-      "asin": "B0H8K5P1CF",
-      "amazon_title": "[オカモト] 靴下サプリ まるでこたつおでかけソックス 外用 あったか靴下 寒さ対策",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61+GV7UrDdL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0DCFDQYGC",
+      "asin": "B0DCFDQYGC",
+      "amazon_title": "[サーモス] &ONDO アンドオンド 起毛であったかルームソックス ロング丈 22-25cm ベージュ 魔法びんのような保温効果 冷え対策 防寒 冬 あったかグッズ あったか靴下 靴下",
+      "brand": "サーモス ＆ONDO",
+      "image_url": "https://m.media-amazon.com/images/I/61BdUOgkicL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [],
-      "search_key": "靴下サプリ まるでこたつおでかけソックス 外用 あったか靴下 寒"
+      "search_key": "靴下サプリ まるでこたつおでかけソックス 外用 あったか靴下 寒",
+      "selected_variant": "ベージュ、ロング丈22-25cm、1足"
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0FRR4HDK7",
-      "asin": "B0FRR4HDK7",
-      "amazon_title": "靴下サプリ とにかくあったかい まるでこたつソックス 二足組 靴下 ハイソックス レディース 冷え対策 発熱",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61pc177uadL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0DBZGWFTX",
+      "asin": "B0DBZGWFTX",
+      "amazon_title": "[グンゼ] ファイヤーアセドロン ソックス 吸湿発熱 【ミドル丈】 あったか靴下 22~24cm AG1615 レディース",
+      "brand": "グンゼ",
+      "image_url": "https://m.media-amazon.com/images/I/61pStHKPrgL._AC_SL1000_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [
         "warmth"
       ],
-      "search_key": "靴下サプリ とにかくあったかい まるでこたつソックス 二足組 靴"
+      "search_key": "靴下サプリ とにかくあったかい まるでこたつソックス 二足組 靴",
+      "selected_variant": "選択表示25AW_ネ－ビ－、22.0-24.0cm、1足"
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0FQCFSLS3",
-      "asin": "B0FQCFSLS3",
-      "amazon_title": "【3足/2足/1足入り】電熱ソックス アプリ45-75℃温度調節 つま先発熱対応 2個8000mAhバッテリー付 5段階タイミング 高弾性",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71j+3FFArpL._AC_UL320_.jpg",
+      "product_id": "AMZ-B09X6KC1L7",
+      "asin": "B09X6KC1L7",
+      "amazon_title": "不思議なくつ下 桐灰 足の冷えない レギュラーソックス 厚手 足冷え専用 靴下 フリーサイズ 黒色 (おまけ付き) 【Amazon.co.jp限定】",
+      "brand": "小林製薬 桐灰",
+      "image_url": "https://m.media-amazon.com/images/I/71+9-iCjPyL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [
         "warmth"
       ],
-      "search_key": "電熱ソックス アプリ45-75℃温度調節 つま先発熱対応 2個8"
+      "search_key": "電熱ソックス アプリ45-75℃温度調節 つま先発熱対応 2個8",
+      "selected_variant": "黒・フリー目安23-27cm、1足、Amazon限定おまけ付き構成（おまけの具体内容は未表示）"
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0DK2VYF59",
-      "asin": "B0DK2VYF59",
-      "amazon_title": "靴下サプリ とにかくあったかい まるでこたつソックス 二足組 靴下 ハイソックス レディース 冷え対策 発熱(グレー×ブラック、23-25cm)",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61N7Y5Zxj-L._AC_UL320_.jpg",
+      "product_id": "AMZ-B0G523Z66X",
+      "asin": "B0G523Z66X",
+      "amazon_title": "MIZUNO(ミズノ) アウトドアウェアブレスサーモ ウール厚手ソックス 発熱素材 B2JXD512メンズ",
+      "brand": "ミズノ",
+      "image_url": "https://m.media-amazon.com/images/I/61WXLu3BT1L._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [
         "warmth"
       ],
-      "search_key": "靴下サプリ とにかくあったかい まるでこたつソックス 二足組 靴"
+      "search_key": "靴下サプリ とにかくあったかい まるでこたつソックス 二足組 靴",
+      "selected_variant": "ウール厚手、チャコールグレー、22〜24cm、1足"
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0DJ31C9XF",
-      "asin": "B0DJ31C9XF",
-      "amazon_title": "[MOSOTECH] 靴下 メンズ 冬 暖かい 5足セット 厚手 防寒 あったか 耐久性 保温 登山 靴下 24-28cm/28-30cm",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/616WzA0Un7L._AC_UL320_.jpg",
+      "product_id": "AMZ-B0F9FM7VC7",
+      "asin": "B0F9FM7VC7",
+      "amazon_title": "[モンベル] Montbell メリノウール トレッキング ソックス Men's男性用 1118421 保温性と吸放湿性 クッション性 アウトドア 登山 (JP, アルファベット, M, ネイビー (IND))",
+      "brand": "モンベル",
+      "image_url": "https://m.media-amazon.com/images/I/61KjmSMLFkL._AC_SL1000_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.325,
       "matched_comparison_axes": [
         "warmth"
       ],
-      "search_key": "靴下 メンズ 冬 暖かい 5足セット 厚手 防寒 あったか 耐久"
+      "search_key": "靴下 メンズ 冬 暖かい 5足セット 厚手 防寒 あったか 耐久",
+      "selected_variant": "M（24〜26cm）、ネイビー/IND、1足"
     }
   ]
 }

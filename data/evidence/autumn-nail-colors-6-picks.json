@@ -53,11 +53,11 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0DGGWV11R",
-      "asin": "B0DGGWV11R",
-      "amazon_title": "キャンメイク カラフルネイルズ N110 木枯らし 8ml ネイル 高発色 速乾 パール ブラウン",
-      "brand": "キャンメイクのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/517yiuxtEaL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0GWPVVS85",
+      "asin": "B0GWPVVS85",
+      "amazon_title": "キャンメイク カラフルネイルズ N125 キンモクセイルチル 8ml ネイル 高発色 速乾 ベージュ",
+      "brand": "キャンメイク",
+      "image_url": "https://m.media-amazon.com/images/I/51wAVQXkUYL._AC_SL1280_.jpg",
       "observed_price": 871,
       "discovery_score": 1,
       "selection_score": 0.88,
@@ -65,15 +65,21 @@
         "color",
         "texture"
       ],
-      "search_key": "キャンメイク カラフルネイルズ N110 木枯らし 8ml ネイル 高発色 速"
+      "search_key": "キャンメイク カラフルネイルズ N110 木枯らし 8ml ネイル 高発色 速",
+      "model": "CANMAKE カラフルネイルズ",
+      "selected_variant": {
+        "colour_code_and_name": "N125 キンモクセイルチル",
+        "capacity": "8mL",
+        "item_count": 1
+      }
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0FW3WHXVZ",
-      "asin": "B0FW3WHXVZ",
-      "amazon_title": "uka(ウカ)【ネイルサロン監修】 カラー ベースコート 17/0 (ココアブラウン)10mL / 速乾 マニキュア 色長持ち ネイルポリッシュ セルフネイル ジェル風ツヤ",
-      "brand": "ウカ(uka)のストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/61bQNyT0TNL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B07P3Z5NYV",
+      "asin": "B07P3Z5NYV",
+      "amazon_title": "excel(エクセル)ネイルポリッシュNNL02(フラワークラウン)ネイル マニキュア",
+      "brand": "エクセル",
+      "image_url": "https://m.media-amazon.com/images/I/61fgWEClDOL._AC_SL1500_.jpg",
       "observed_price": 2200,
       "discovery_score": 1,
       "selection_score": 0.7,
@@ -81,61 +87,91 @@
         "color",
         "durability"
       ],
-      "search_key": "ウカ(uka) uka(ウカ) カラー ベースコート 17/0 (ココアブラウン"
+      "search_key": "ウカ(uka) uka(ウカ) カラー ベースコート 17/0 (ココアブラウン",
+      "model": "excel ネイルポリッシュN",
+      "selected_variant": {
+        "colour_code_and_name": "NL02 フラワークラウン",
+        "capacity": "10mL",
+        "item_count": 1
+      }
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0D8KSCRSC",
-      "asin": "B0D8KSCRSC",
-      "amazon_title": "MODELONES マグネットジェル 磁石付き キャッツアイジェル マグネット キラキラ マグネットネイル カラージェル 微粒子 猫目 セルフネイル 6色セット uv/led対応 ジェルネイル カラー（星空のグリーン）",
-      "brand": "modelonesのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/815CsRYZWhL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0G8TQ7ZPP",
+      "asin": "B0G8TQ7ZPP",
+      "amazon_title": "ネイルホリック モードカラーズ BE065D 5mL",
+      "brand": "ネイルホリック",
+      "image_url": "https://m.media-amazon.com/images/I/51KYXLR04oL._AC_SL1500_.jpg",
       "observed_price": 2464,
       "discovery_score": 1,
       "selection_score": 0.52,
       "matched_comparison_axes": [
         "color"
       ],
-      "search_key": "modelones マグネットジェル 磁石付き キャッツアイジェル マグネット キラ"
+      "search_key": "modelones マグネットジェル 磁石付き キャッツアイジェル マグネット キラ",
+      "model": "NAIL HOLIC モードカラーズ",
+      "selected_variant": {
+        "colour_code_and_name": "BE065D",
+        "capacity": "5mL",
+        "item_count": 1
+      }
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0FB82PZQY",
-      "asin": "B0FB82PZQY",
-      "amazon_title": "MIKAGAMI マニキュア 速乾 ネイル ポリッシュ 日本製 8mL(シアーベージュ)",
-      "brand": "ＭＩＫＡＧＡＭＩのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/71g6fugNbaL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0CRFSRGTG",
+      "asin": "B0CRFSRGTG",
+      "amazon_title": "OPI(オーピーアイ) 速乾 マニキュア 色長持ち ジェル風ツヤ 茶色 15ｍL (インフィニットシャイン ISLF15-) ギフト プレゼント 【国内正規品】",
+      "brand": "OPI",
+      "image_url": "https://m.media-amazon.com/images/I/61yngjwpjXL._AC_SL1500_.jpg",
       "observed_price": 1180,
       "discovery_score": 1,
       "selection_score": 0.47,
       "matched_comparison_axes": [],
-      "search_key": "ＭＩＫＡＧＡＭＩ MIKAGAMI マニキュア 速乾 ネイル ポリッシュ 日本製"
+      "search_key": "ＭＩＫＡＧＡＭＩ MIKAGAMI マニキュア 速乾 ネイル ポリッシュ 日本製",
+      "model": "OPI インフィニットシャイン",
+      "selected_variant": {
+        "colour_code_and_name": "ISLF15 You Don’t Know Jacques",
+        "capacity": "15mL",
+        "item_count": 1
+      }
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0DXPFDXWQ",
-      "asin": "B0DXPFDXWQ",
-      "amazon_title": "GAOY ビルダージェル 長さだしジェル クリアジェル ジェルネイル UV・LED対応 クリア 16ml",
-      "brand": "GAOYのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/61eG1U-jNbL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B08FMP1PDG",
+      "asin": "B08FMP1PDG",
+      "amazon_title": "ナチュラルネイルカラーN 122 オレンジピール",
+      "brand": "デュカート",
+      "image_url": "https://m.media-amazon.com/images/I/51VmOP4AXUL._AC_SL1000_.jpg",
       "observed_price": 999,
       "discovery_score": 1,
       "selection_score": 0.47,
       "matched_comparison_axes": [],
-      "search_key": "GAOY ビルダージェル 長さだしジェル クリアジェル ジェルネイル UV"
+      "search_key": "GAOY ビルダージェル 長さだしジェル クリアジェル ジェルネイル UV",
+      "model": "Ducato ナチュラルネイルカラーN",
+      "selected_variant": {
+        "colour_code_and_name": "122 オレンジピール",
+        "capacity": "11mL",
+        "item_count": 1
+      }
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0B36JF96T",
-      "asin": "B0B36JF96T",
-      "amazon_title": "【TVシューイチで紹介】 VITOMS 爪磨き 爪やすり ガラスネイルシャイナー 艶出し 【仕上がりが変わるスポンジファイル付】 男女兼用 メンズ レディース 介護 子供 ネイルケアセット ブラック 黒 ケース付 (スタンダード/ストレート)",
-      "brand": "VITOMSのストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/8107dS5pGJL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "product_id": "AMZ-B0GW8JFY5Z",
+      "asin": "B0GW8JFY5Z",
+      "amazon_title": "【爪のうるおい守る/速乾】オサジ アップリフトネイルカラー 「ハーブエキス配合 美しい光沢感 発色がよい」10ml (49 Sakazuki〈盃〉, 10ミリリットル)",
+      "brand": "OSAJI",
+      "image_url": "https://m.media-amazon.com/images/I/61D0AfK2hpL._AC_SL1500_.jpg",
       "observed_price": 998,
       "discovery_score": 1,
       "selection_score": 0.47,
       "matched_comparison_axes": [],
-      "search_key": "VITOMS 爪磨き 爪やすり ガラスネイルシャイナー 艶出し 男女兼用 メン"
+      "search_key": "VITOMS 爪磨き 爪やすり ガラスネイルシャイナー 艶出し 男女兼用 メン",
+      "model": "OSAJI アップリフトネイルカラー",
+      "selected_variant": {
+        "colour_code_and_name": "49 Sakazuki 盃",
+        "capacity": "10mL",
+        "item_count": 1
+      }
     }
   ]
 }

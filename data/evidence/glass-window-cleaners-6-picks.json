@@ -54,11 +54,11 @@
   "products": [
     {
       "ref": "p1",
-      "product_id": "AMZ-B0FF986T8L",
-      "asin": "B0FF986T8L",
-      "amazon_title": "LIFIX CLEAR (Sea Green) 拭き筋残さず高速乾 ガラスクリーナー 視界が変わる視認性 圧倒的透明感 油脂 手垢 排気ガス 汚れを強力分解 脱脂剤としても効果的◎ 万能クリーナー ブルーハワイ ハイビスカス グアバ３段階の香り 内窓外窓どちらも可 ライフィックス クリア夏仕様 500ml",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/41oOgi0dwFL._AC_UL320_.jpg",
+      "product_id": "AMZ-B07JG63L6K",
+      "asin": "B07JG63L6K",
+      "amazon_title": "【まとめ買い】ガラスマジックリン ガラスクリーナ スプレータイプ 本体+詰め替え",
+      "brand": "花王",
+      "image_url": "https://m.media-amazon.com/images/I/71xZpuBkeqL._AC_SL1000_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.71,
@@ -66,15 +66,21 @@
         "cleaning_power",
         "streak_free_finish"
       ],
-      "search_key": "LIFIX CLEAR (Sea Green) 拭き筋残さず高速"
+      "search_key": "LIFIX CLEAR (Sea Green) 拭き筋残さず高速",
+      "selected_variant": {
+        "bottle_capacity": "400mL",
+        "refill_capacity": "350mL",
+        "pack_count": 2,
+        "format": "本体1＋詰替1"
+      }
     },
     {
       "ref": "p2",
-      "product_id": "AMZ-B0CQVQV2GT",
-      "asin": "B0CQVQV2GT",
-      "amazon_title": "【まとめ買い】花王 ガラスマジックリン ガラスクリーナー スプレータイプ 本体400ml+詰め替え350ml×2 窓掃除 窓拭き",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71JvECUspYL._AC_UL320_.jpg",
+      "product_id": "AMZ-B00XD8BPKA",
+      "asin": "B00XD8BPKA",
+      "amazon_title": "【まとめ買い】スクラビングバブル ガラスクリーナー 本体 ×2セット",
+      "brand": "ジョンソン",
+      "image_url": "https://m.media-amazon.com/images/I/41afFmgpHoL._AC_SY300_SX300_QL70_ML2_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.71,
@@ -82,65 +88,91 @@
         "formulation",
         "price_range"
       ],
-      "search_key": "花王 ガラスマジックリン ガラスクリーナー スプレータイプ 本体"
+      "search_key": "花王 ガラスマジックリン ガラスクリーナー スプレータイプ 本体",
+      "selected_variant": {
+        "per_bottle_capacity": "500mL per manufacturer current glass-cleaner bottle",
+        "pack_count": 2,
+        "format": "本体2本"
+      }
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0HDBPQLC8",
-      "asin": "B0HDBPQLC8",
-      "amazon_title": "[mocoly]ガラス泡クリーナー 激泡ガラスクリーナー 強力洗浄 浴室水垢ナー 中性洗剤 油膜除去剤 車用 家庭用 万能洗剤",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/81IUd80LY2L._AC_UL320_.jpg",
+      "product_id": "AMZ-B0F1Y5LZ4Q",
+      "asin": "B0F1Y5LZ4Q",
+      "amazon_title": "【まとめ買い】 リンレイ ガラス透明クリーナー 480ml 3本セット 透明感アップ",
+      "brand": "リンレイ",
+      "image_url": "https://m.media-amazon.com/images/I/71u40-xAZWL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [
         "cleaning_power"
       ],
-      "search_key": "ガラス泡クリーナー 激泡ガラスクリーナー 強力洗浄 浴室水垢ナー"
+      "search_key": "ガラス泡クリーナー 激泡ガラスクリーナー 強力洗浄 浴室水垢ナー",
+      "selected_variant": {
+        "per_bottle_capacity": "480mL",
+        "pack_count": 3,
+        "format": "エアゾール缶3本"
+      }
     },
     {
       "ref": "p4",
-      "product_id": "AMZ-B0HBVXBVTT",
-      "asin": "B0HBVXBVTT",
-      "amazon_title": "【掃除のプロ監修 | トリプルブロック処方】 結露防止スプレー 窓ガラス用 \"水滴・カビ・曇り防止\" 結露対策 防カビ 100ml 日本製",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/61QKTxXJvoL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0765YFWW6",
+      "asin": "B0765YFWW6",
+      "amazon_title": "アズマ 洗剤 アズマジックガラス洗剤 正味量:400㎖ 窓ガラス・鏡のくもりや皮脂汚れを落とす。 CH856",
+      "brand": "アズマ工業",
+      "image_url": "https://m.media-amazon.com/images/I/61gJyKUubRL._AC_SL1000_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [
         "formulation"
       ],
-      "search_key": "結露防止スプレー 窓ガラス用 \"水滴・カビ・曇り防止\" 結露対策"
+      "search_key": "結露防止スプレー 窓ガラス用 \"水滴・カビ・曇り防止\" 結露対策",
+      "selected_variant": {
+        "model": "CH856",
+        "capacity": "400mL",
+        "pack_count": 1
+      }
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0FG33BP9S",
-      "asin": "B0FG33BP9S",
-      "amazon_title": "【本体＋詰替セット】スクラビングバブル ガラス用洗剤 クリーナー 液体タイプ 本体 500ml + 詰め替え用 400ml 鏡 窓ガラス用 掃除グッズ 汚れ落とし",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/51Ubb4Dd9ML._AC_UL320_.jpg",
+      "product_id": "AMZ-B00ZTQ1D1K",
+      "asin": "B00ZTQ1D1K",
+      "amazon_title": "激落ちシート窓用15枚",
+      "brand": "レック",
+      "image_url": "https://m.media-amazon.com/images/I/71b6919tolL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [
         "price_range"
       ],
-      "search_key": "スクラビングバブル ガラス用洗剤 クリーナー 液体タイプ 本体"
+      "search_key": "スクラビングバブル ガラス用洗剤 クリーナー 液体タイプ 本体",
+      "selected_variant": {
+        "model": "SS-037",
+        "sheet_count": 15,
+        "pack_count": 1
+      }
     },
     {
       "ref": "p6",
-      "product_id": "AMZ-B0DNJYKJ9V",
-      "asin": "B0DNJYKJ9V",
-      "amazon_title": "AstroAI 車用フロントガラスクリーニングツール 車用 ワイパー マイクロファイバークロス付",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/713FOFap4WL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0026R7544",
+      "asin": "B0026R7544",
+      "amazon_title": "アズマ工業(Azuma Industrial) ガラス拭きウェットシート20P 洗剤・水・道具不要 桃の香りのガラス用お掃除シート くもり止め効果 拭き後が残らない 除菌99% 20枚 シートサイズ30×20cm 日本製 AZ791",
+      "brand": "アズマ工業",
+      "image_url": "https://m.media-amazon.com/images/I/61nwaHFIuSL._AC_SL1000_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.35,
       "matched_comparison_axes": [],
-      "search_key": "AstroAI 車用フロントガラスクリーニングツール 車用 ワイ"
+      "search_key": "AstroAI 車用フロントガラスクリーニングツール 車用 ワイ",
+      "selected_variant": {
+        "model": "AZ791",
+        "sheet_count": 20,
+        "sheet_size": "30×20cm",
+        "pack_count": 1
+      }
     }
   ]
 }

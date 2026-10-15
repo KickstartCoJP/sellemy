@@ -39,80 +39,110 @@
     {
       "amazon_title": "プラチナレーベル ハトムギピーリングジェル 300グラム (x 2)",
       "asin": "B0GYCSX6LM",
-      "brand": "",
+      "brand": "プラチナレーベル",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/718qJLEEmBL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/718qJLEEmBL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B0GYCSX6LM",
       "ref": "p1",
       "search_key": "プラチナレーベル ハトムギピーリングジェル 300グラム (x",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "net_weight_g_per_bottle": 300,
+        "bottle_count": 2
+      }
     },
     {
       "amazon_title": "PLATINUM LABEL(プラチナレーベル) VCグルタチオンシリーズ ピーリングジェル 300g 日本製",
       "asin": "B0FHKJXRDZ",
-      "brand": "",
+      "brand": "プラチナレーベル",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51OI1b4uiVL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51OI1b4uiVL._AC_SL1000_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B0FHKJXRDZ",
       "ref": "p2",
       "search_key": "PLATINUM LABEL(プラチナレーベル) VCグルタチオ",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "capacity": "300g",
+        "pack_count": 1
+      }
     },
     {
       "amazon_title": "【公式】むき肌つるん ぽろぽろとれる杏ジェル 110g 1本 日本製 ピーリングジェル 角質ケア 首ポツ くすみ 保湿 敏感肌対応",
       "asin": "B0FH9MXF6X",
-      "brand": "",
+      "brand": "フレージュ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61orY59+hML._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61orY59+hML._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B0FH9MXF6X",
       "ref": "p3",
       "search_key": "むき肌つるん ぽろぽろとれる杏ジェル 110g 1本 日本製 ピ",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "capacity": "110g",
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "NILE ピーリングジェル 角質取り 顔 メンズ レディース バス用品セット (CALIFORNIA（グレープフルーツ）の香り)",
-      "asin": "B0F3NLTCJ8",
-      "brand": "",
+      "amazon_title": "NILE ピーリングジェル 角質取り 顔 メンズレディース 詰め替え用 140ml(CALIFORNIA（グレープフルーツ）の香り)",
+      "asin": "B0FKBDT4WT",
+      "brand": "NILE",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51xCkG4KAvL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61co5uH3iCL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0F3NLTCJ8",
+      "product_id": "AMZ-B0FKBDT4WT",
       "ref": "p4",
       "search_key": "NILE ピーリングジェル 角質取り 顔 メンズ レディース バ",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "type": "詰め替え用",
+        "net_weight_g": 140,
+        "pack_count": 1,
+        "fragrance": "CALIFORNIA（グレープフルーツ）",
+        "package_code": "RPG140_01"
+      }
     },
     {
       "amazon_title": "DETクリア (ディーイーティークリア) (ディーイーティークリア) ブライト&ピール ピーリングジェリー <ミックスフルーツの香り> 180mL 日本製 (角質/毛穴ケア) 【Amazon.co.jp限定】",
       "asin": "B0C6DT3T22",
-      "brand": "",
+      "brand": "DETクリア",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51retWnHyEL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51retWnHyEL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
       "product_id": "AMZ-B0C6DT3T22",
       "ref": "p5",
       "search_key": "DETクリア (ディーイーティークリア) (ディーイーティークリ",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "capacity": "180mL",
+        "scent": "ミックスフルーツ",
+        "pack_count": 1,
+        "package": "Amazon限定"
+      }
     },
     {
-      "amazon_title": "Dr.G(ドクタージー) ブライトニングピーリング (120g)",
-      "asin": "B0BRR9S1NN",
-      "brand": "",
+      "amazon_title": "CURE Cure(キュア) ナチュラルアクアジェル ピーリングジェル ピーリング ジェル 角質 ケア 取り 除去 顔 全身 250g 1本",
+      "asin": "B07GPPWPGJ",
+      "brand": "Cure",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/41cuNAzdfeL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51xpynEQ9nS._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0BRR9S1NN",
+      "product_id": "AMZ-B07GPPWPGJ",
       "ref": "p6",
       "search_key": "Dr.G(ドクタージー) ブライトニングピーリング (120g)",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "net_weight_g": 250,
+        "bottle_count": 1,
+        "fragrance": "無香料"
+      }
     }
   ],
   "selection": {

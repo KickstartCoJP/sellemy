@@ -34,11 +34,11 @@
   "eyecatch_image": "https://www.sellemy.jp/img/food-preparation-kitchen-scissors/food-preparation-kitchen-scissors.png",
   "products": [
     {
-      "amazon_title": "【ミシュラン掲載店オーナー愛用】キッチンバサミ キッチンハサミ 料理ばさみ 食洗機対応 分解 洗える ステンレス 青池隆明 AosTavola",
+      "amazon_title": "Aos Tavola キッチンバサミ",
       "asin": "B0H982112X",
-      "brand": "",
+      "brand": "Aos Tavola",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61pnpOfl7rL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61pnpOfl7rL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "cleaning"
       ],
@@ -46,29 +46,39 @@
       "product_id": "AMZ-B0H982112X",
       "ref": "p1",
       "search_key": "キッチンバサミ キッチンハサミ 料理ばさみ 食洗機対応 分解 洗",
-      "selection_score": 0.505
+      "selection_score": 0.505,
+      "selected_variant": {
+        "model": "KSH01",
+        "colour": "ブラック×グレー",
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "【雑誌掲載モデル】 キッチンバサミ キッチンはさみ 分解して洗える オールステンレス 食洗機対応 先細刃 ギザ刃 鶏肉 魚 衛生的 多機能 栓抜き 殻割り 蓋開け 持ち運び 鶏肉 魚 下処理 万能 まな板いらず(1本セット)",
-      "asin": "B0FV1SV6WY",
-      "brand": "",
+      "amazon_title": "HENCKELS クールカット料理バサミ",
+      "asin": "B001TUTG00",
+      "brand": "ヘンケルス",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61wVOMbyNvL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/41mZO9LKftL._SL1000_.jpg",
       "matched_comparison_axes": [
         "cleaning"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0FV1SV6WY",
+      "product_id": "AMZ-B001TUTG00",
       "ref": "p2",
       "search_key": "キッチンバサミ キッチンはさみ 分解して洗える オールステンレス",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "model": "13969-002",
+        "colour": "クリアハンドル／ステンレス刃",
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "コモライフ ステンレス製 食事用ハサミ キッチン 料理 ばさみ ギザ刃 食洗機OK 分解して洗える ケース付",
+      "amazon_title": "コモライフ ステンレス製食事用ハサミ",
       "asin": "B0FRR4Q26X",
-      "brand": "",
+      "brand": "コモライフ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61ogXuxWLOL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61ogXuxWLOL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "cleaning"
       ],
@@ -76,52 +86,72 @@
       "product_id": "AMZ-B0FRR4Q26X",
       "ref": "p3",
       "search_key": "コモライフ ステンレス製 食事用ハサミ キッチン 料理 ばさみ",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "model": "392210",
+        "colour": "ステンレス色・ケース付き",
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "WORKPRO キッチンハサミ 料理ばさみ 多機能ハサミ 野菜 肉カット 食品調理 ステンレス鋼材質 鋭い切れ味 ナッツクラッカー 栓抜き 分解洗浄可能",
-      "asin": "B0FB84NZWY",
-      "brand": "",
+      "amazon_title": "CANARY キッチンハサミ",
+      "asin": "B000O1PC6C",
+      "brand": "長谷川刃物",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71MOOfQxnTL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71oATqgWGPL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "cleaning"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0FB84NZWY",
+      "product_id": "AMZ-B000O1PC6C",
       "ref": "p4",
       "search_key": "WORKPRO キッチンハサミ 料理ばさみ 多機能ハサミ 野菜",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "model": "EL-210",
+        "colour": "ブラック",
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "厚刃 キッチンバサミ 骨切り対応 鶏骨・軟骨もカット 分解できる オールステンレス 食洗機対応 錆びにくい 多機能 調理ばさみ",
-      "asin": "B0F1F4W3VJ",
-      "brand": "",
+      "amazon_title": "PLUS フィットカットカーブ 多機能料理ばさみ",
+      "asin": "B0BHKXLKL9",
+      "brand": "PLUS",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61SLbONTNcL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51eU94E-+nL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "cleaning"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0F1F4W3VJ",
+      "product_id": "AMZ-B0BHKXLKL9",
       "ref": "p5",
       "search_key": "厚刃 キッチンバサミ 骨切り対応 鶏骨・軟骨もカット 分解できる",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "model": "SC-200SWM 35-709",
+        "colour": "マッシュルームホワイト",
+        "pack_count": 1
+      }
     },
     {
-      "amazon_title": "キッチンバサミ 多機能 調理用はさみ ステンレス製 分解洗浄可 軽量 食洗機対応 ギザ刃付き 肉・魚・野菜・乾物に最適 栓抜き＆蓋開け対応 [並行輸入品]",
-      "asin": "B0DJ8MPTT8",
-      "brand": "",
+      "amazon_title": "貝印 関孫六 鍛造オールステンレスカーブキッチン鋏",
+      "asin": "B079Z84Z2M",
+      "brand": "貝印",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/41ceZD1F1vL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/619YkfxoydL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "cleaning"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0DJ8MPTT8",
+      "product_id": "AMZ-B079Z84Z2M",
       "ref": "p6",
       "search_key": "キッチンバサミ 多機能 調理用はさみ ステンレス製 分解洗浄可",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": {
+        "model": "DH3346",
+        "colour": "ステンレス色",
+        "pack_count": 1
+      }
     }
   ],
   "selection": {

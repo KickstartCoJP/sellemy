@@ -48,8 +48,8 @@
       "product_id": "AMZ-B0GY5D2R6Z",
       "asin": "B0GY5D2R6Z",
       "amazon_title": "洗濯槽クリーナー 発泡タブレット 24個入り 酸素系＋酵素でW洗浄 洗剤カス・皮脂汚れ・ニオイの原因を洗浄 ドラム式・縦型・HE対応 1回1錠 洗濯槽の定期お手入れに",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/914mO2Oxv7L._AC_UL320_.jpg",
+      "brand": "ECOFRESHEET",
+      "image_url": "https://m.media-amazon.com/images/I/914mO2Oxv7L._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.67,
@@ -57,45 +57,64 @@
         "compatibility",
         "formula"
       ],
-      "search_key": "洗濯槽クリーナー 発泡タブレット 24個入り 酸素系＋酵素でW洗"
+      "search_key": "洗濯槽クリーナー 発泡タブレット 24個入り 酸素系＋酵素でW洗",
+      "model": "ECOFRESHEET 発泡タブレット24個",
+      "selected_variant": {
+        "pack": "24錠入り1箱",
+        "form": "酸素系＋酵素タブレット",
+        "compatibility": "出品記載はドラム式・縦型・HE対応。機種取扱説明書を優先"
+      }
     },
     {
       "ref": "p2",
       "product_id": "AMZ-B0HFV7ZCZM",
       "asin": "B0HFV7ZCZM",
       "amazon_title": "洗濯槽クリーナー ドラム式洗濯機用 N- W 2 750ml",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/516abRlb6eL._AC_UL320_.jpg",
+      "brand": "パナソニック（出品ブランド欄はノーブランド品）",
+      "image_url": "https://m.media-amazon.com/images/I/516abRlb6eL._AC_SL1000_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
       "matched_comparison_axes": [
         "compatibility"
       ],
-      "search_key": "洗濯槽クリーナー ドラム式洗濯機用 N- W 2 750ml"
+      "search_key": "洗濯槽クリーナー ドラム式洗濯機用 N- W 2 750ml",
+      "model": "パナソニック N-W2",
+      "selected_variant": {
+        "pack": "750ml×1本",
+        "form": "液体",
+        "compatibility": "ドラム式用",
+        "catalogue_note": "ブランド欄はノーブランド品だがメーカー欄パナソニック・タイトルN-W2。メーカー公式販売店という保証はしない"
+      }
     },
     {
       "ref": "p3",
-      "product_id": "AMZ-B0GY5N24K9",
-      "asin": "B0GY5N24K9",
-      "amazon_title": "洗濯槽クリーナー ペットの毛分解 30個(1年以上分) 酵素＋活性酸素 黒カビ・ヌメリ・ニオイ除去 ドラム式/縦型対応 無香料 タブレット1回使い切り",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/91czwvROsQL._AC_UL320_.jpg",
+      "product_id": "AMZ-B077GRCZF3",
+      "asin": "B077GRCZF3",
+      "amazon_title": "洗浄力 [まとめ買い] 洗濯槽クリーナー 塩素タイプ 液体タイプ 550g×2個 (ドラム式にもOK) 洗濯機 洗濯 洗たく槽 クリーナー",
+      "brand": "エステー",
+      "image_url": "https://m.media-amazon.com/images/I/81Jed9KGxTL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
       "matched_comparison_axes": [
         "compatibility"
       ],
-      "search_key": "洗濯槽クリーナー ペットの毛分解 30個(1年以上分) 酵素＋活"
+      "search_key": "洗濯槽クリーナー ペットの毛分解 30個(1年以上分) 酵素＋活",
+      "model": "洗浄力 洗たく槽クリーナー 液体550g",
+      "selected_variant": {
+        "pack": "550g×2本",
+        "form": "塩素系液体",
+        "compatibility": "メーカーはドラム式・ななめドラム式の使用手順を掲載。機種の取扱説明書を優先"
+      }
     },
     {
       "ref": "p4",
       "product_id": "AMZ-B0GX5DL939",
       "asin": "B0GX5DL939",
       "amazon_title": "レック 激落ちストロング 洗濯槽クリーナー PRO 塩素系 (粉末タイプ 1回分) 縦型 ドラム式 両用/除菌 カビ除去率 99.99% / 消臭効果/日本製/カビ・汚れを溶かして強力除去/激落ちくん/白",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71XM44+2d3L._AC_UL320_.jpg",
+      "brand": "レック",
+      "image_url": "https://m.media-amazon.com/images/I/71XM44+2d3L._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
@@ -103,15 +122,21 @@
         "compatibility",
         "formula"
       ],
-      "search_key": "レック 激落ちストロング 洗濯槽クリーナー PRO 塩素系 (粉"
+      "search_key": "レック 激落ちストロング 洗濯槽クリーナー PRO 塩素系 (粉",
+      "model": "レック 激落ちストロング PRO",
+      "selected_variant": {
+        "pack": "150g×1袋、1回分",
+        "form": "塩素系粉末",
+        "compatibility": "縦型・ドラム式両用"
+      }
     },
     {
       "ref": "p5",
-      "product_id": "AMZ-B0GVDKCP4J",
-      "asin": "B0GVDKCP4J",
-      "amazon_title": "洗たく槽カビキラーPRO 手袋付き カビ取り 塩素系 洗濯機 縦型 ドラム式 顆粒タイプ",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/81HILh9sYyL._AC_UL320_.jpg",
+      "product_id": "AMZ-B0824R99HC",
+      "asin": "B0824R99HC",
+      "amazon_title": "【まとめ買い】カビキラー 洗濯槽クリーナー 550g×3本 お掃除手袋つき 除菌 消臭 洗剤 洗濯機 洗浄 カビ取り ドラム式対応 つけおき すくい不要",
+      "brand": "ジョンソン",
+      "image_url": "https://m.media-amazon.com/images/I/71su+lstfkL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
@@ -119,15 +144,21 @@
         "compatibility",
         "formula"
       ],
-      "search_key": "洗たく槽カビキラーPRO 手袋付き カビ取り 塩素系 洗濯機 縦"
+      "search_key": "洗たく槽カビキラーPRO 手袋付き カビ取り 塩素系 洗濯機 縦",
+      "model": "ジョンソン 洗たく槽カビキラー 液体",
+      "selected_variant": {
+        "pack": "550g×3本＋お掃除手袋",
+        "form": "塩素系液体",
+        "compatibility": "ドラム式対応の出品記載あり"
+      }
     },
     {
       "ref": "p6",
       "product_id": "AMZ-B0GN4WBC31",
       "asin": "B0GN4WBC31",
       "amazon_title": "洗濯槽クリーナー ドラム式 縦型 風呂釜洗浄剤 &eco 風呂釜・洗濯槽クリーナー 250g 酸素系 粉末 全自動 日本製",
-      "brand": "",
-      "image_url": "https://m.media-amazon.com/images/I/71nRVxCH9AL._AC_UL320_.jpg",
+      "brand": "&eco",
+      "image_url": "https://m.media-amazon.com/images/I/71nRVxCH9AL._AC_SL1500_.jpg",
       "observed_price": null,
       "discovery_score": 1,
       "selection_score": 0.31,
@@ -135,7 +166,14 @@
         "compatibility",
         "formula"
       ],
-      "search_key": "洗濯槽クリーナー ドラム式 縦型 風呂釜洗浄剤 &eco 風呂釜"
+      "search_key": "洗濯槽クリーナー ドラム式 縦型 風呂釜洗浄剤 &eco 風呂釜",
+      "model": "&eco 風呂釜・洗濯槽クリーナー",
+      "selected_variant": {
+        "pack": "250g×1袋",
+        "form": "酸素系粉末",
+        "compatibility": "出品記載はドラム式・縦型対応",
+        "dose_note": "販売元表示は10Lあたり約30g。250g全量を常に1回分とみなさない。"
+      }
     }
   ]
 }

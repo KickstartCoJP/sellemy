@@ -37,94 +37,100 @@
   "eyecatch_image": "https://www.sellemy.jp/img/bookends-for-shelves-and-desks/bookends-for-shelves-and-desks.png",
   "products": [
     {
-      "amazon_title": "8 枚 高さ21 cm 本立て 白 T型 ブックエンド 金属製 滑り止め付き倒れない 卓上収納 4 セット 新聞 ファイルCD 辞書 雑誌 書類入れ 多機能のブックスタンド 固く変形しにくい 文房具 事務用品 整理整頓の仕切りスタンド",
-      "asin": "B0H957V4FB",
-      "brand": "",
+      "amazon_title": "コクヨ ブックエンド 大 黒 滑止め付 BS-34ND",
+      "asin": "B0012R2QYS",
+      "brand": "コクヨ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51I3p5Hxv4L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51DkdHQEcML._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "size_fit",
         "stability_access",
         "support_structure"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0H957V4FB",
+      "product_id": "AMZ-B0012R2QYS",
       "ref": "p1",
       "search_key": "8 枚 高さ21 cm 本立て 白 T型 ブックエンド 金属製",
-      "selection_score": 0.89
+      "selection_score": 0.89,
+      "selected_variant": "黒・大・2枚組"
     },
     {
-      "amazon_title": "ブックエンド 本立て 人型 2個セット 滑り止め付き 倒れにくい 金属製 折りたたみ式 本棚 整理 おしゃれ 面白い インテリア (寄り添う読書)",
-      "asin": "B0HCBD1723",
-      "brand": "",
+      "amazon_title": "プラス ブックエンド Lサイズ 2枚組 36-332 BS-201 ブルー",
+      "asin": "B002NEQ9VA",
+      "brand": "プラス",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61pQYNvUK1L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51bkb7o1wXL._AC_SL1002_.jpg",
       "matched_comparison_axes": [
         "stability_access"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0HCBD1723",
+      "product_id": "AMZ-B002NEQ9VA",
       "ref": "p2",
       "search_key": "ブックエンド 本立て 人型 2個セット 滑り止め付き 倒れにくい",
-      "selection_score": 0.35
+      "selection_score": 0.35,
+      "selected_variant": "Lサイズ、ブルー、2枚組"
     },
     {
-      "amazon_title": "ブックスタンド 伸縮 ブックエンド 本立て 約10~50×13.5×16.5cm,安定・静音・バリなし・伸縮スムーズ 倒れない 金属製 おしゃれ 本棚 卓上 教科書 収納 書類立て ファイル立て ブラック",
-      "asin": "B0H3JNFMFZ",
-      "brand": "",
+      "amazon_title": "カール事務器 伸縮ブックエンド ブックスタンド 高さ20.5cm ブラック ALB-55-K",
+      "asin": "B07W6K7582",
+      "brand": "カール事務器",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71cD2tosr0L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51rCZ+ejNbL._AC_SL1000_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0H3JNFMFZ",
+      "product_id": "AMZ-B07W6K7582",
       "ref": "p3",
       "search_key": "ブックスタンド 伸縮 ブックエンド 本立て 約10~50×13.",
-      "selection_score": 0.35
+      "selection_score": 0.35,
+      "selected_variant": "ブラック・高さ20.5cm・本体1台"
     },
     {
-      "amazon_title": "多機能ブックエンド 伸縮 折り畳み式 本収納 サイズ調節 省スペース 仕切り ペンホルダー付き カスタマイズ 倒れにくい オフィス",
-      "asin": "B0H2D2CFZ4",
-      "brand": "",
+      "amazon_title": "ナカバヤシ キャパティ ブックスタンド スライドスタンド ホワイト FB-SS-1-WH",
+      "asin": "B0GSV4TNMT",
+      "brand": "ナカバヤシ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/512RMs3Z8OL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/31AU3a2WU1L._AC_SL1000_.jpg",
       "matched_comparison_axes": [
         "support_structure"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0H2D2CFZ4",
+      "product_id": "AMZ-B0GSV4TNMT",
       "ref": "p4",
       "search_key": "多機能ブックエンド 伸縮 折り畳み式 本収納 サイズ調節 省スペ",
-      "selection_score": 0.35
+      "selection_score": 0.35,
+      "selected_variant": "ホワイト・単品"
     },
     {
-      "amazon_title": "ブックエンド 本立て 伸縮式 倒れにくい 金属製 A4対応 幅10-48cm 卓上本棚 学習机 デスク整理 教科書 書類 (ホワイト)",
-      "asin": "B0H1GLPXQF",
-      "brand": "",
+      "amazon_title": "リヒトラブ ブックエンド 本立て ワイドタイプ マグネット付 白 A7352-0",
+      "asin": "B07VKT81VH",
+      "brand": "リヒトラブ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71R-p+1TwtL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/31TNPSoYujL._AC_SL1000_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0H1GLPXQF",
+      "product_id": "AMZ-B07VKT81VH",
       "ref": "p5",
       "search_key": "ブックエンド 本立て 伸縮式 倒れにくい 金属製 A4対応 幅1",
-      "selection_score": 0.35
+      "selection_score": 0.35,
+      "selected_variant": "白、1枚"
     },
     {
-      "amazon_title": "4 枚 ブックエンド 黒 T型 高さ21 cm 金属製 本立て ブラック 滑り止め付き 倒れない 卓上収納 2 セット 新聞 ファイルCD 辞書 雑誌 書類入れ 多機能のブックスタンド 固く変形しにくい 文房具 事務用品 整理整頓の仕切りスタンド",
-      "asin": "B0GT9BJTL2",
-      "brand": "",
+      "amazon_title": "ソニック(Sonic) ブックエンド マグネット付 L型 ワイド 1枚 白 DA-7164-W",
+      "asin": "B0BK8X2JDH",
+      "brand": "ソニック",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61YjHSNZZ1L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/2168NoGeS8L._AC_SL1001_.jpg",
       "matched_comparison_axes": [
         "size_fit",
         "stability_access",
         "support_structure"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0GT9BJTL2",
+      "product_id": "AMZ-B0BK8X2JDH",
       "ref": "p6",
       "search_key": "4 枚 ブックエンド 黒 T型 高さ21 cm 金属製 本立て",
-      "selection_score": 0.35
+      "selection_score": 0.35,
+      "selected_variant": "白・L型ワイド・1枚"
     }
   ],
   "selection": {

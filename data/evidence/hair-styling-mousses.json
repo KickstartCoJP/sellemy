@@ -37,27 +37,28 @@
   "eyecatch_image": "https://www.sellemy.jp/img/hair-styling-mousses/hair-styling-mousses.png",
   "products": [
     {
-      "amazon_title": "Karseell カールクリーム 500g カール キープ やわらかな仕上がりへ 保湿 ツヤ 広がり・パサつきを抑え 洗い流さないトリートメント くせ毛・天然パーマ・パーマヘアに",
-      "asin": "B0H79477YR",
-      "brand": "",
+      "amazon_title": "リーゼ うるおいパーマもどしフォーム 本体 200ml",
+      "asin": "B008XT4OES",
+      "brand": "リーゼ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/617QD+zPQjL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61OFKNOHLAL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "declared_finish",
         "styling_purpose"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0H79477YR",
+      "product_id": "AMZ-B008XT4OES",
       "ref": "p1",
       "search_key": "Karseell カールクリーム 500g カール キープ やわ",
-      "selection_score": 0.685
+      "selection_score": 0.685,
+      "selected_variant": "本体ポンプ200mL・1本"
     },
     {
       "amazon_title": "GATSBY(ギャツビー) メタラバー バブル パーマスタイルクリエイター [ ヘアフォーム メンズ ] 180グラム (x 2)",
       "asin": "B0G5GMXYQ4",
-      "brand": "",
+      "brand": "GATSBY",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71Zs4T-hyyL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71Zs4T-hyyL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "styling_purpose"
       ],
@@ -65,14 +66,15 @@
       "product_id": "AMZ-B0G5GMXYQ4",
       "ref": "p2",
       "search_key": "GATSBY(ギャツビー) メタラバー バブル パーマスタイルク",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": "180g×2本"
     },
     {
       "amazon_title": "LUX(ラックス) 美容液スタイリング アクティブウェーブフォーム ヘアムース 整髪料(スタイリング剤) 本体 130g",
       "asin": "B0DYRTBD96",
-      "brand": "",
+      "brand": "LUX",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51gvLrpchBL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51gvLrpchBL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "styling_purpose"
       ],
@@ -80,50 +82,54 @@
       "product_id": "AMZ-B0DYRTBD96",
       "ref": "p3",
       "search_key": "LUX(ラックス) 美容液スタイリング アクティブウェーブフォー",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": "130g・1本"
     },
     {
-      "amazon_title": "レタッチ RETOUCH ヘアジェル パーマ パーマ用 ホールド WAVEGEL メンズ くせ毛 スタイリング 180g",
-      "asin": "B0DQGFJXBH",
-      "brand": "",
+      "amazon_title": "tirie(トリエ) フォーム 6 200g",
+      "asin": "B004IZ46M6",
+      "brand": "LebeL",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51yJ2fSvsJL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51mqk2L9fGL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "styling_purpose"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0DQGFJXBH",
+      "product_id": "AMZ-B004IZ46M6",
       "ref": "p4",
       "search_key": "レタッチ RETOUCH ヘアジェル パーマ パーマ用 ホールド",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": "200g・1本"
     },
     {
-      "amazon_title": "【しっとりスタイルキープ】リノン ロックオイル アイロン専用 カールキープ スタイリングオイル ホワイトフローラル ヘアフレグランス",
-      "asin": "B0CQPQLW5V",
-      "brand": "",
+      "amazon_title": "サロンスタイル ナノチャージムース くっきりW 150g ×2セット",
+      "asin": "B00HJE5UOQ",
+      "brand": "サロンスタイル",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61Hn6qnXETL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/41QsPEsjI+L._AC_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0CQPQLW5V",
+      "product_id": "AMZ-B00HJE5UOQ",
       "ref": "p5",
       "search_key": "リノン ロックオイル アイロン専用 カールキープ スタイリングオ",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": "くっきりウェービー・150g×2本セット"
     },
     {
-      "amazon_title": "レタッチ RETOUCH パーマ用 ウェーブワックス WAVE ワックス クリーム メンズ くせ毛 スタイリング 90g",
-      "asin": "B0BYZDDLRD",
-      "brand": "",
+      "amazon_title": "デミコスメティクス UEVO(ウェーボ) スプリングパフ 200g",
+      "asin": "B001AGOFFY",
+      "brand": "DEMI",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51XijWAKh6L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/41dFli-CgbL._AC_SL1000_.jpg",
       "matched_comparison_axes": [
         "styling_purpose"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0BYZDDLRD",
+      "product_id": "AMZ-B001AGOFFY",
       "ref": "p6",
       "search_key": "レタッチ RETOUCH パーマ用 ウェーブワックス WAVE",
-      "selection_score": 0.325
+      "selection_score": 0.325,
+      "selected_variant": "200g・1本"
     }
   ],
   "selection": {

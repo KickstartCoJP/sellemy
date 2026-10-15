@@ -38,86 +38,126 @@
   "eyecatch_image": "https://www.sellemy.jp/img/bathroom-stools/bathroom-stools.png",
   "products": [
     {
-      "amazon_title": "お風呂椅子 収納棚付き 耐荷重150kg 折りたたみシャワーチェアー 5段 階高さ調節 風呂 椅子 U型溝座面 背もたれ付 介護用 肘掛け付き 立ち上がり補助 カビない コンパクト アルミ合金製 滑り止め付き 高齢者/妊婦用 日本語説明書付 丈夫 組み立て簡単(ブルー, U型溝座面)",
-      "asin": "B0HFGD884R",
-      "brand": "",
+      "amazon_title": "I'mD (アイムディー) ハイチェア RETTO レットー ホワイト RETHCH W バスチェア 風呂イス",
+      "asin": "B0047M530Y",
+      "brand": "岩谷マテリアル",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61X5DBW5KdL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51OJ14wCISL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "leg_structure"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0HFGD884R",
+      "product_id": "AMZ-B0047M530Y",
       "ref": "p1",
       "search_key": "お風呂椅子 収納棚付き 耐荷重150kg 折りたたみシャワーチェ",
-      "selection_score": 0.49
+      "selection_score": 0.49,
+      "model": "RETTO RETHCH W",
+      "selected_variant": {
+        "colour": "white",
+        "pack_count": 1,
+        "seat_height_cm": 31
+      }
     },
     {
-      "amazon_title": "ザッカLab. セット販売 バスチェアEX+湯おけ 座面高さ30cm サンドベージュ",
-      "asin": "B0FGPMC59D",
-      "brand": "",
+      "amazon_title": "リッチェル(Richell) ハユール 腰かけ TL グリーン 31.5×25×19cm 風呂 椅子 国産 抗菌 ポリプロピレン 110165",
+      "asin": "B0BS8S1DSL",
+      "brand": "リッチェル",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51uHQ4rRuxL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51z8MtkL0kL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "seat_dimensions"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0FGPMC59D",
+      "product_id": "AMZ-B0BS8S1DSL",
       "ref": "p2",
       "search_key": "ザッカLab. セット販売 バスチェアEX+湯おけ 座面高さ30",
-      "selection_score": 0.49
+      "selection_score": 0.49,
+      "model": "リッチェル ハユール 腰かけTL グリーン 110165",
+      "selected_variant": {
+        "model_number": "110165",
+        "color": "グリーン",
+        "pack_count": 1,
+        "overall_dimensions_cm": "31.5×25×19",
+        "overall_height_cm": 19
+      }
     },
     {
-      "amazon_title": "マグネットで浮かせる風呂イス40cm バスチェア 風呂椅子 磁石 壁面収納 浮かせる収納 アルミ脚 軽量 お風呂 浴室 ホワイト",
-      "asin": "B0HFRHM26P",
-      "brand": "",
+      "amazon_title": "山崎実業(Yamazaki) マグネット 風呂イス SH25 ホワイト タワー tower 6925",
+      "asin": "B0BV1971T4",
+      "brand": "山崎実業",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51YHWd6-63L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51e89+ONUmL._AC_SL1500_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0HFRHM26P",
+      "product_id": "AMZ-B0BV1971T4",
       "ref": "p3",
       "search_key": "マグネットで浮かせる風呂イス40cm バスチェア 風呂椅子 磁石",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "model": "tower SH25 6925",
+      "selected_variant": {
+        "colour": "white",
+        "pack_count": 1,
+        "seat_height_cm": 25,
+        "configuration": "chair only, no basin/dispenser bundle"
+      }
     },
     {
-      "amazon_title": "Homwom バスチェア 風呂椅子 アルミ脚 壁掛け収納。 (ホワイト, 32x25x30)",
-      "asin": "B0H2M24VF2",
-      "brand": "",
+      "amazon_title": "リッチェル カラリ 腰かけ 30H スモークブラウン",
+      "asin": "B00P7LGGKK",
+      "brand": "リッチェル",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61T6fAPHPHL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/41lGE9BP+IL._AC_SL1000_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0H2M24VF2",
+      "product_id": "AMZ-B00P7LGGKK",
       "ref": "p4",
       "search_key": "Homwom バスチェア 風呂椅子 アルミ脚 壁掛け収納。 (ホ",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "model": "Richell カラリ 30H",
+      "selected_variant": {
+        "colour": "smoke brown",
+        "pack_count": 1,
+        "seat_height_cm": 30
+      }
     },
     {
-      "amazon_title": "【25年度グッドデザイン賞】アスベル 風呂いす 40㎝ 風呂椅子 オシャレ 洗いやすい 4本脚 通気性 乾きやすい 高め 介護 抗菌加工 Ag+ 広い座面 浴槽に掛けられる 洗いやすい カビ防止 衛生的 立ち座りが楽 ライトグレー バスチェア EX40 ASVEL",
-      "asin": "B0FJQH6RNF",
-      "brand": "",
+      "amazon_title": "【25年度グッドデザイン賞】アスベル 風呂いす 30㎝ 風呂椅子 オシャレ 4本脚 通気性 乾きやすい カウンター付き浴室に最適 介護 抗菌加工 Ag+ 広い座面 浴槽に掛けられる 洗いやすい カビ防止 衛生的 立ち座りが楽 ライトグレー バスチェア EX30 ASVEL",
+      "asin": "B0FJQM6DM6",
+      "brand": "アスベル",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/515g5+OLyfL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51+w-XHhgHL._AC_SL1210_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0FJQH6RNF",
+      "product_id": "AMZ-B0FJQM6DM6",
       "ref": "p5",
       "search_key": "アスベル 風呂いす 40㎝ 風呂椅子 オシャレ 洗いやすい 4本",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "model": "ASVEL EX30 A5317",
+      "selected_variant": {
+        "colour": "light grey",
+        "pack_count": 1,
+        "nominal_seat_height_cm": 30
+      }
     },
     {
-      "amazon_title": "Umimile バスチェア 風呂イス ステップ 多機能 アルミ脚 ホワイト 40cm/35cm/30cm/25cm選択可能 (高さ30cm)",
-      "asin": "B0F8QJJHPL",
-      "brand": "",
+      "amazon_title": "アイリスオーヤマ 浴用いす パールホワイト BI-300AG",
+      "asin": "B000WM21TY",
+      "brand": "アイリスオーヤマ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/41eftvvsiuL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51jU9veuSYL._AC_SL1000_.jpg",
       "matched_comparison_axes": [],
       "observed_price": null,
-      "product_id": "AMZ-B0F8QJJHPL",
+      "product_id": "AMZ-B000WM21TY",
       "ref": "p6",
       "search_key": "Umimile バスチェア 風呂イス ステップ 多機能 アルミ脚",
-      "selection_score": 0.31
+      "selection_score": 0.31,
+      "model": "IRIS OHYAMA BI-300AG",
+      "selected_variant": {
+        "colour": "pearl white",
+        "pack_count": 1,
+        "seat_height_cm": 30,
+        "configuration": "chair only, no basin bundle"
+      }
     }
   ],
   "selection": {

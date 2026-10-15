@@ -39,94 +39,127 @@
   "eyecatch_image": "https://www.sellemy.jp/img/makeup-brushes-for-face-products/makeup-brushes-for-face-products.png",
   "products": [
     {
-      "amazon_title": "スライド式化粧ブラシ フェイスパウダーブラシ チークブラシ マルチユース メイク筆 携帯用 防塵設計 柔らかい刷毛 収納便利 補妆用",
-      "asin": "B0HJQN12K7",
-      "brand": "",
-      "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/518wGaAlP0L._AC_UL320_.jpg",
-      "matched_comparison_axes": [
-        "cosmetic_compatibility"
-      ],
-      "observed_price": null,
-      "product_id": "AMZ-B0HJQN12K7",
-      "ref": "p1",
-      "search_key": "スライド式化粧ブラシ フェイスパウダーブラシ チークブラシ マル",
-      "selection_score": 0.53
-    },
-    {
-      "amazon_title": "パウダーブラシ 顔用ルース 特大サイズフェイスブラシ 部分メイクキープ 顔用メイク道具 メイクキープ・顔全体均一メイクに最適",
-      "asin": "B0H265MN6G",
-      "brand": "",
-      "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/410TKtMAieL._AC_UL320_.jpg",
-      "matched_comparison_axes": [
-        "cosmetic_compatibility"
-      ],
-      "observed_price": null,
-      "product_id": "AMZ-B0H265MN6G",
-      "ref": "p2",
-      "search_key": "パウダーブラシ 顔用ルース 特大サイズフェイスブラシ 部分メイク",
-      "selection_score": 0.35
-    },
-    {
       "amazon_title": "貝印 KAIフェイスパウダーリッチブラシ パウダー対応 フェイスブラシ メイクブラシ KQ2151",
       "asin": "B0GWYSFPHB",
-      "brand": "",
+      "brand": "貝印",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51vYcMbBZpL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/51vYcMbBZpL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "cosmetic_compatibility"
       ],
       "observed_price": null,
       "product_id": "AMZ-B0GWYSFPHB",
+      "ref": "p1",
+      "search_key": "スライド式化粧ブラシ フェイスパウダーブラシ チークブラシ マル",
+      "selection_score": 0.53,
+      "selected_variant": {
+        "model": "KQ2151",
+        "jan": "4901601081831",
+        "pack_count": 1
+      }
+    },
+    {
+      "amazon_title": "SIXPLUS シックスプラス 大きいサイズのパウダーブラシ（ブラック）F31",
+      "asin": "B07PBBXCD9",
+      "brand": "SIXPLUS",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51oLvYU2QXL._AC_SL1200_.jpg",
+      "matched_comparison_axes": [
+        "cosmetic_compatibility"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B07PBBXCD9",
+      "ref": "p2",
+      "search_key": "パウダーブラシ 顔用ルース 特大サイズフェイスブラシ 部分メイク",
+      "selection_score": 0.35,
+      "selected_variant": {
+        "model": "F31 / 210042",
+        "color": "ブラック",
+        "quantity": 1
+      }
+    },
+    {
+      "amazon_title": "SHISEIDO(資生堂) ファンデーション ブラシ 131 (専用ケース付き)",
+      "asin": "B00483TNK8",
+      "brand": "資生堂",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/611byvGxdAL._AC_SL1500_.jpg",
+      "matched_comparison_axes": [
+        "cosmetic_compatibility"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B00483TNK8",
       "ref": "p3",
       "search_key": "貝印 KAIフェイスパウダーリッチブラシ パウダー対応 フェイス",
-      "selection_score": 0.35
+      "selection_score": 0.35,
+      "selected_variant": {
+        "model": "131 / 63650",
+        "quantity": 1,
+        "jan": "4901872636501",
+        "included": "専用ケース"
+      }
     },
     {
-      "amazon_title": "KGD メイクブラシ 12本セット 化粧ブラシ 超柔らかい チクチクせず 敏感肌適用 メイクブラシセット アイシャドウブラシ パウダーブラシ 化粧ポーチ付き ブラック",
-      "asin": "B0FXX5T56R",
-      "brand": "",
+      "amazon_title": "ロージーローザ マルチファンデブラシ【全ファンデーション対応メイクブラシ】 シルバー 1個 (x 1)",
+      "asin": "B0B211FTQ3",
+      "brand": "ロージーローザ",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/81JesAAkTuL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61HOXlXHgWL._AC_SL1336_.jpg",
       "matched_comparison_axes": [
         "cosmetic_compatibility"
       ],
       "observed_price": null,
-      "product_id": "AMZ-B0FXX5T56R",
+      "product_id": "AMZ-B0B211FTQ3",
       "ref": "p4",
       "search_key": "KGD メイクブラシ 12本セット 化粧ブラシ 超柔らかい チク",
-      "selection_score": 0.35
-    },
-    {
-      "amazon_title": "MSQ メイクブラシ 1本 パウダーブラシ フェイスブラシ フェイスメイク 塗りやすい 抜け毛なし とても柔らかい毛 ブラックシリーズ",
-      "asin": "B0FDFF2B75",
-      "brand": "",
-      "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51RH3TFTPoL._AC_UL320_.jpg",
-      "matched_comparison_axes": [
-        "cosmetic_compatibility"
-      ],
-      "observed_price": null,
-      "product_id": "AMZ-B0FDFF2B75",
-      "ref": "p5",
-      "search_key": "MSQ メイクブラシ 1本 パウダーブラシ フェイスブラシ フェ",
-      "selection_score": 0.35
+      "selection_score": 0.35,
+      "selected_variant": {
+        "model": "マルチファンデブラシ",
+        "color": "シルバー",
+        "quantity": 1,
+        "jan": "4901604455967"
+      }
     },
     {
       "amazon_title": "DUcare パウダーブラシ スライド式 化粧ブラシ カブキメイクブラシ 化粧筆 フェイスブラシ 高密度毛 全パウダー対応メイクブラシ マルチフェイスブラシ 伸縮チークブラシ ふわふわ DS017",
       "asin": "B0FB3LMGMZ",
-      "brand": "",
+      "brand": "DUcare",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/610bY9aM2xL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/610bY9aM2xL._AC_SL1500_.jpg",
       "matched_comparison_axes": [
         "cosmetic_compatibility"
       ],
       "observed_price": null,
       "product_id": "AMZ-B0FB3LMGMZ",
+      "ref": "p5",
+      "search_key": "MSQ メイクブラシ 1本 パウダーブラシ フェイスブラシ フェ",
+      "selection_score": 0.35,
+      "selected_variant": {
+        "model": "DS017",
+        "color": "黒",
+        "pack_count": 1
+      }
+    },
+    {
+      "amazon_title": "ポリエステル携帯用チークブラシ 繰り出し式 直径24×全長93mm 44594575",
+      "asin": "B0BXWXMYVH",
+      "brand": "無印良品",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51W3GQ9849L._AC_SL1500_.jpg",
+      "matched_comparison_axes": [
+        "cosmetic_compatibility"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0BXWXMYVH",
       "ref": "p6",
       "search_key": "DUcare パウダーブラシ スライド式 化粧ブラシ カブキメイ",
-      "selection_score": 0.35
+      "selection_score": 0.35,
+      "selected_variant": {
+        "model": "44594575",
+        "jan": "4550344594575",
+        "quantity": 1,
+        "length_mm": 93
+      }
     }
   ],
   "selection": {
