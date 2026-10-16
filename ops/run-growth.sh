@@ -115,30 +115,60 @@ export SELLEMY_PRECLAIMED_ADMISSION_ID
 fi # publication-only recovery, git sync and slot admission
 if [[ ! -x "$GA4PY" ]]; then echo "$(date -Iseconds) GA4 venv missing; abort"; exit 4; fi
 "$GA4PY" pipeline/ga4_sync.py --days 28
-COLLECT_FROM="$(date -v-7d +%F)"
-COLLECT_TO="$(date +%F)"
-AMAZON_COLLECT_RC=0
-"$PY" pipeline/run_with_timeout.py 120 "$GA4PY" pipeline/firefox_collectors.py --provider amazon --start-date "$COLLECT_FROM" --end-date "$COLLECT_TO" || AMAZON_COLLECT_RC=$?
-RAKUTEN_COLLECT_RC=0
-"$PY" pipeline/run_with_timeout.py 120 "$GA4PY" pipeline/firefox_collectors.py --provider rakuten --start-date "$COLLECT_FROM" --end-date "$COLLECT_TO" || RAKUTEN_COLLECT_RC=$?
 QUALITY_DIR="$HOME/Library/Application Support/Sellemy/analytics"
 mkdir -p "$QUALITY_DIR"
-"$GA4PY" - "$AMAZON_COLLECT_RC" "$RAKUTEN_COLLECT_RC" "$QUALITY_DIR/acquisition-quality.json" <<'PYQ'
+COLLECT_DUE="$("$GA4PY" - "$QUALITY_DIR/acquisition-attempt.json" <<'PYDUE'
 import json,sys
+from datetime import datetime,timedelta,timezone
+from pathlib import Path
+path=Path(sys.argv[1])
+if not path.exists():
+    print('1')
+else:
+    try:
+        value=json.loads(path.read_text())
+        attempted=datetime.fromisoformat(value['attempted_at'])
+        assert attempted.tzinfo is not None
+        assert all(type(value[p]['collector_rc']) is int for p in ('amazon','rakuten'))
+        age=datetime.now(timezone.utc)-attempted
+        print('1' if timedelta(hours=6) <= age <= timedelta(days=3650) else '0')
+    except (ValueError,TypeError,KeyError,AssertionError,OverflowError):
+        print('0')  # Invalid state must not trigger another browser run.
+PYDUE
+)"
+if [[ "$COLLECT_DUE" == "1" ]]; then
+  COLLECT_FROM="$(date -v-7d +%F)"
+  COLLECT_TO="$(date +%F)"
+  AMAZON_COLLECT_RC=0
+  "$PY" pipeline/run_with_timeout.py 120 "$GA4PY" pipeline/firefox_collectors.py --provider amazon --start-date "$COLLECT_FROM" --end-date "$COLLECT_TO" || AMAZON_COLLECT_RC=$?
+  RAKUTEN_COLLECT_RC=0
+  "$PY" pipeline/run_with_timeout.py 120 "$GA4PY" pipeline/firefox_collectors.py --provider rakuten --start-date "$COLLECT_FROM" --end-date "$COLLECT_TO" || RAKUTEN_COLLECT_RC=$?
+  "$GA4PY" - "$AMAZON_COLLECT_RC" "$RAKUTEN_COLLECT_RC" "$QUALITY_DIR" <<'PYQ'
+import json,os,sys,tempfile
 from datetime import datetime,timezone
-a,r,path=int(sys.argv[1]),int(sys.argv[2]),sys.argv[3]
-value={"updated_at":datetime.now(timezone.utc).isoformat(),"amazon":{"state":"available" if a==0 else "degraded","collector_rc":a},"rakuten":{"state":"available" if r==0 else "degraded","collector_rc":r}}
-open(path,"w").write(json.dumps(value,ensure_ascii=False,indent=2,sort_keys=True)+"\n")
+from pathlib import Path
+a,r,directory=int(sys.argv[1]),int(sys.argv[2]),Path(sys.argv[3])
+now=datetime.now(timezone.utc).isoformat()
+for name,value in (
+    ('acquisition-quality.json',{"updated_at":now,"amazon":{"state":"available" if a==0 else "degraded","collector_rc":a},"rakuten":{"state":"available" if r==0 else "degraded","collector_rc":r}}),
+    ('acquisition-attempt.json',{"attempted_at":now,"amazon":{"collector_rc":a},"rakuten":{"collector_rc":r}}),
+):
+    with tempfile.NamedTemporaryFile(mode='w',dir=directory,delete=False) as f:
+        json.dump(value,f,ensure_ascii=False,indent=2,sort_keys=True)
+        f.write('\n')
+        tmp=f.name
+    os.replace(tmp,directory/name)
 PYQ
+  if (( AMAZON_COLLECT_RC != 0 || RAKUTEN_COLLECT_RC != 0 )); then
+    echo "$(date -Iseconds) affiliate browser collectors degraded; continuing with last verified raw/curated data"
+  fi
+fi
 AFFILIATE_ARGS=(--mode daily)
 if [[ -r "$HOME/.config/valuecommerce/report-api.json" ]]; then
   AFFILIATE_ARGS+=(--fetch)
 fi
 "$GA4PY" pipeline/affiliate_pipeline.py "${AFFILIATE_ARGS[@]}"
 "$GA4PY" pipeline/actuals_adapter.py --sync
-if (( AMAZON_COLLECT_RC != 0 || RAKUTEN_COLLECT_RC != 0 )); then
-  echo "$(date -Iseconds) affiliate browser collectors degraded; continuing with last verified raw/curated data"
-fi
 GROWTH_RC=0
 if [[ "$PUBLISH_ALLOWED" == "1" ]]; then
   "$PY" pipeline/growth_runtime.py --publish --scheduled || GROWTH_RC=$?
