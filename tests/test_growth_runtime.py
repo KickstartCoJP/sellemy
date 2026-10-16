@@ -149,6 +149,29 @@ class ProductViabilityPlanningTests(unittest.TestCase):
         self.assertEqual(discover.call_count, 2)
         self.assertEqual([p['candidate_count'] for p in probes], [0, 6])
 
+    def test_axis_rejected_first_topic_scans_valid_second_without_creating_job(self):
+        first, second = self._topic('first-topic'), self._topic('second-topic')
+        products = [{'asin': f'B0TEST{i:04d}'} for i in range(8)]
+        accepted = {'review': {'status': 'ACCEPTED'}}
+        with (
+            patch.object(growth_runtime, 'rank_candidates', return_value=[first, second]),
+            patch.object(growth_runtime, 'discover_products', side_effect=[products, products]),
+            patch.object(growth_runtime, 'select_six', side_effect=[
+                growth_runtime.ProductSelectionError('only 5 documented topic-axis matches'),
+                (products[:6], {}),
+            ]),
+            patch.object(growth_runtime, 'independent_review', return_value=accepted),
+            patch.object(growth_runtime, 'receipt_issues', return_value=[]),
+            patch.object(growth_runtime, 'create_job') as create,
+        ):
+            topic, rows, probes = growth_runtime.select_viable_topic([first, second], {}, cache_only=False)
+        self.assertEqual(topic['slug'], 'second-topic')
+        self.assertIs(rows, products)
+        self.assertEqual([probe['slug'] for probe in probes], ['first-topic', 'second-topic'])
+        self.assertEqual(probes[0]['candidate_count'], 8)
+        self.assertIn('only 5 documented topic-axis matches', str(probes[0]['acceptance']))
+        create.assert_not_called()
+
     def test_scans_beyond_first_six_candidates(self):
         topics = [self._topic(f'topic-{i}') for i in range(7)]
         products = [{'asin': f'B0TEST{i:04d}'} for i in range(6)]
@@ -183,8 +206,11 @@ class ProductViabilityPlanningTests(unittest.TestCase):
             patch.object(growth_runtime, 'rank_candidates', return_value=topics),
             patch.object(growth_runtime, 'discover_products', side_effect=[[], RuntimeError('temporary search failure')]),
         ):
-            with self.assertRaises(planning_runtime.PlanningError):
+            with self.assertRaises(planning_runtime.PlanningError) as failure:
                 growth_runtime.select_viable_topic(topics, {}, cache_only=False)
+        self.assertEqual([probe['slug'] for probe in failure.exception.viability_probes],
+                         ['first-topic', 'second-topic'])
+        self.assertIn('require 6 documented products', str(failure.exception))
 
 
 class RuntimeFailClosedTests(unittest.TestCase):

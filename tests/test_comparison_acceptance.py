@@ -14,6 +14,7 @@ from quality_fixtures import fixture, accepted_fixture, independent, review
 import semantic_review
 import growth_recovery as gr
 import growth_runtime as runtime
+from planning_runtime import PlanningError
 import publish_payload as publisher
 import publish_gate
 import writer_runtime
@@ -265,18 +266,19 @@ class PublishContractTests(unittest.TestCase):
 
 
 class BoundaryRecoveryTests(RecoveryCase):
-    def test_initial_weak_selection_is_durable_without_semantic_api_or_writer(self):
+    def test_initial_weak_selection_is_probe_only_without_semantic_api_or_writer(self):
         p, e = fixture('book-reading-stands')
         topic = {'slug': e['slug'], 'category': e['category'], 'title': p['h1'],
                  'query': '読書台', 'comparison_axes': e['comparison_axes']}
         with patch.object(runtime, 'rank_candidates', return_value=[topic]), \
              patch.object(runtime, 'discover_products', return_value=e['products']), \
              patch.object(runtime, 'independent_review') as reviewer:
-            with self.assertRaisesRegex(runtime.GrowthRuntimeError, 'needs_product_reselection'):
+            with self.assertRaisesRegex(PlanningError, 'no planned topic passed product acceptance') as failure:
                 runtime.select_viable_topic([topic], {}, cache_only=True)
         reviewer.assert_not_called()
-        self.assertTrue(gr.read_artifact(topic['slug'], 'product-blocker.json')['needs_product_reselection'])
-        self.assertEqual(gr.load_job(topic['slug'])['retry_count_by_stage']['writer'], 0)
+        self.assertEqual(len(failure.exception.viability_probes), 1)
+        self.assertTrue(failure.exception.viability_probes[0]['acceptance'])
+        self.assertEqual(gr.all_jobs(), [])
 
     def test_initial_semantic_rejection_is_not_a_viable_topic(self):
         p, e, a = accepted_fixture()
@@ -290,10 +292,10 @@ class BoundaryRecoveryTests(RecoveryCase):
         with patch.object(runtime, 'rank_candidates', return_value=[topic]), \
              patch.object(runtime, 'discover_products', return_value=e['products']), \
              patch.object(runtime, 'independent_review', side_effect=reject):
-            with self.assertRaisesRegex(runtime.GrowthRuntimeError, 'needs_product_reselection'):
+            with self.assertRaisesRegex(PlanningError, 'no planned topic passed product acceptance') as failure:
                 runtime.select_viable_topic([topic], {}, cache_only=True)
-        self.assertEqual(gr.load_job(topic['slug'])['last_failure_code'], 'NEEDS_PRODUCT_RESELECTION')
-        self.assertEqual(len(gr.all_jobs()), 1)
+        self.assertTrue(failure.exception.viability_probes[0]['acceptance'])
+        self.assertEqual(gr.all_jobs(), [])
 
     def test_viable_selection_receipt_survives_final_evidence_build(self):
         p, e, a = accepted_fixture()
