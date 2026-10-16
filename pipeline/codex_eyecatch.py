@@ -9,7 +9,7 @@ import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
 
-from codex_provider import CodexProviderError, generate_persistent
+from codex_provider import CodexProviderError, generate_isolated as generate_persistent
 
 ROOT = Path(__file__).resolve().parents[1]
 DESIGNER_ROLE = 'bu-codex-sellemy-designer'

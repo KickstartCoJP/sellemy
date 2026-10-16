@@ -526,10 +526,11 @@ def _rotate_context(command: tuple[str, ...], model: str, root: Path, surface_ke
 def _ensure_brief(path: Path, surface_key: str) -> None:
     if path.exists():
         return
-    if surface_key == DESIGNER_SURFACE:
-        raise CodexProviderError('Designer brief is missing')
     safe = ''.join(ch if ch.isalnum() or ch in '-_' else '-' for ch in surface_key)
-    configured = Path(__file__).resolve().parents[1] / 'config' / f'codex-brief-{safe}.md'
+    base = Path(__file__).resolve().parents[1] / 'config'
+    configured = (base / 'sellemy-codex-shared-brief.md' if surface_key in
+                  {PLANNING_SURFACE, 'bu-codex-sellemy-writer'} else
+                  base / f'codex-brief-{safe}.md')
     if configured.is_file():
         path.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(configured, path)
@@ -878,18 +879,27 @@ def generate_isolated(command: tuple[str, ...], model: str, schema: dict, prompt
             '\nACCEPTED_RULES:\n' + learned + '\nTASK:\n' + prompt +
             '\nOUTPUT_SCHEMA:\n' + json.dumps(_strict_schema(schema), ensure_ascii=False))
     effort = os.environ.get('SELLEMY_CODEX_REASONING_EFFORT', 'low').strip() or 'low'
-    args = [*command, 'exec', '--ephemeral', '--json', '--skip-git-repo-check',
-            '--sandbox', 'read-only', '--model', model, '--config', f'model_reasoning_effort={effort}', '-']
+    # Designer rollout is persisted only as an image generation audit receipt; it is
+    # never resumed by a subsequent task, so previous images cannot accumulate.
+    keep_rollout = surface_key == DESIGNER_SURFACE
+    args = [*command, 'exec']
+    if not keep_rollout:
+        args.append('--ephemeral')
+    args += ['--json', '--skip-git-repo-check', '--sandbox', 'read-only',
+             '--model', model, '--config', f'model_reasoning_effort={effort}', '-']
     completed = _run(args, prompt=task, timeout=timeout, cwd=root)
     if completed.returncode:
         raise CodexProviderError('Isolated Codex execution failed: ' + (completed.stderr or completed.stdout)[-700:])
     final = ''
     usage = {}
+    thread_id = None
     for line in completed.stdout.splitlines():
         try:
             event = json.loads(line)
         except json.JSONDecodeError:
             continue
+        if event.get('type') == 'thread.started':
+            thread_id = event.get('thread_id')
         if event.get('type') == 'item.completed' and (event.get('item') or {}).get('type') == 'agent_message':
             final = (event['item'].get('text') or '')
         if event.get('type') == 'turn.completed':
@@ -900,7 +910,10 @@ def generate_isolated(command: tuple[str, ...], model: str, schema: dict, prompt
     _validate_required_shape(value, _strict_schema(schema))
     _append_usage(root, surface_key, stage=stage or 'generation', model=model,
                   session_id='', session_turn=1, usage=usage, operation_key=usage_key)
-    return value, {'surface': surface_key, 'session_persisted': False,
+    if keep_rollout and not thread_id:
+        raise CodexProviderError('Designer rollout lacks thread ID for image generation attestation')
+    return value, {'surface': surface_key, 'session_id': thread_id,
+                   'session_persisted': keep_rollout,
                    'reasoning_effort': effort, 'brief_path': str(brief_path), **usage}
 
 
