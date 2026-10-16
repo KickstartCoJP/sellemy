@@ -11,6 +11,30 @@ import codex_provider
 
 
 class CodexProviderTests(unittest.TestCase):
+    def test_isolated_designer_keeps_attestation_without_resuming_previous_transcript(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / 'config').mkdir()
+            (root / 'config/sellemy-codex-canon-bootstrap.md').write_text('Brief is authoritative.')
+            schema = {'type': 'object', 'properties': {'ok': {'type': 'boolean'}}}
+            records = [
+                {'type': 'thread.started', 'thread_id': '00000000-0000-4000-8000-000000000009'},
+                {'type': 'item.completed', 'item': {'type': 'agent_message', 'text': '{"ok":true}'}},
+                {'type': 'turn.completed', 'usage': {'input_tokens': 100, 'cached_input_tokens': 0, 'output_tokens': 5}},
+            ]
+            stdout = '\n'.join(json.dumps(item) for item in records)
+            with patch.object(codex_provider, '_member_binding', return_value={'binding_revision': 7}) as binding, \
+                 patch.object(codex_provider, '_run', return_value=subprocess.CompletedProcess([], 0, stdout, '')) as runner:
+                value, meta = codex_provider.generate_isolated(
+                    ('/bin/codex',), 'gpt-6-sol', schema, 'Create an image', timeout=10,
+                    root=root, surface_key=codex_provider.DESIGNER_SURFACE, stage='eyecatch'
+                )
+            self.assertTrue(value['ok'])
+            self.assertEqual(meta['member_binding_revision'], 7)
+            self.assertEqual(meta['session_id'], '00000000-0000-4000-8000-000000000009')
+            self.assertNotIn('--ephemeral', runner.call_args.args[0])
+            binding.assert_called_once_with(codex_provider.DESIGNER_SURFACE)
+
     def test_context_rotation_due_after_three_oversize_planning_turns(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

@@ -864,6 +864,9 @@ def generate_isolated(command: tuple[str, ...], model: str, schema: dict, prompt
                       usage_key: str = '') -> tuple[dict, dict]:
     """LINE-style stage execution: fresh, ephemeral thread with only the current Brief/task."""
     root = Path(root).resolve()
+    # The persistent Member binding identifies the authorized role, not the
+    # transcript to resume. Every article/image still gets its own new session.
+    binding = _member_binding(surface_key)
     _, brief_path = _runtime_paths(root, surface_key)
     _ensure_brief(brief_path, surface_key)
     bridge = _canon_bridge(root, surface_key)
@@ -913,6 +916,7 @@ def generate_isolated(command: tuple[str, ...], model: str, schema: dict, prompt
     if keep_rollout and not thread_id:
         raise CodexProviderError('Designer rollout lacks thread ID for image generation attestation')
     return value, {'surface': surface_key, 'session_id': thread_id,
+                   'member_binding_revision': binding['binding_revision'],
                    'session_persisted': keep_rollout,
                    'reasoning_effort': effort, 'brief_path': str(brief_path), **usage}
 
