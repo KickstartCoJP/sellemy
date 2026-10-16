@@ -7,8 +7,16 @@ FIXTURES = Path(__file__).parent / 'fixtures' / 'quality_recovery'
 
 
 def fixture(name='good-reading-stands'):
-    return tuple(json.loads((FIXTURES / f'{name}.{kind}.json').read_text())
-                 for kind in ('payloads', 'evidence'))
+    payload, evidence = tuple(json.loads((FIXTURES / f'{name}.{kind}.json').read_text())
+                              for kind in ('payloads', 'evidence'))
+    if name == 'good-reading-stands':
+        for product in evidence['products']:
+            product['sources'] = [{
+                'source_type': 'manufacturer_official', 'verified': True,
+                'url': f"https://example.com/mock/{product['asin']}",
+                'excerpt': product['amazon_title'],
+            }]
+    return payload, evidence
 
 
 def review(evidence, *, article=True):

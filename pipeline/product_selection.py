@@ -53,7 +53,7 @@ class ProductSelectionError(RuntimeError):
 
 
 def _text(candidate: dict) -> str:
-    parts = [str(candidate.get(key, '')).lower() for key in ('amazon_title', 'brand')]
+    parts = []
     for source in candidate.get('sources') or []:
         if isinstance(source, dict) and source.get('verified') is True:
             parts.append(str(source.get('excerpt') or '').lower())

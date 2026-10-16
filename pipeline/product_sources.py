@@ -130,15 +130,28 @@ def fetch_manufacturer_source(url, product):
     listing = _normalized(product.get('amazon_title', ''))
     brand = _normalized(product.get('brand', ''))
     normalized = _normalized(body)
-    # Require a distinctive product title segment, brand, and manufacturer attribution.
+    # Require a distinctive product identity and independent manufacturer attribution.
     title_tokens = re.findall(r'[A-Za-z][A-Za-z0-9-]{3,}|[ァ-ヶー]{4,}|[一-龥]{3,}',
                               unicodedata.normalize('NFKC', product.get('amazon_title', '')))
     distinctive = [t for t in title_tokens if len(_normalized(t)) >= 5 and _normalized(t) != brand]
     identity = next((t for t in distinctive if _normalized(t) in normalized), None)
-    if not identity or not brand or brand not in _normalized(body + ' ' + image_text):
+    if not identity or (brand and brand not in _normalized(body + ' ' + image_text)):
         return None
-    official_title = bool(re.search(r'[【\[〖]公式[】\]〗]', title) and re.search(r'SOLIA SHOP|'+re.escape(product.get('brand', '')), title, re.I))
+    official_title = bool(brand and urlsplit(response.url).hostname.lower().endswith('alo-organic.com')
+                          and re.search(r'[【\[〖]公式[】\]〗]', title)
+                          and re.search(r'SOLIA SHOP', title, re.I))
     attribution = bool(re.search(r'(?:製造販売元|販売元|会社名|製造元|メーカー|manufacturer|brand owner)\s*[:：]\s*[^\s:：]{2,}', ownership_text, re.I))
+    if not brand:
+        # Without a listing brand, a generic product name on an arbitrary shop is insufficient.
+        # A model code plus a named company and its matching domain establishes the association.
+        model = next((t for t in title_tokens if re.search(r'[A-Za-z]', t) and re.search(r'\d', t)
+                      and len(_normalized(t)) >= 5 and _normalized(t) in normalized), None)
+        host_label = urlsplit(response.url).hostname.lower().split('.')[-2]
+        company = re.search(r'(?:製造販売元|販売元|会社名|製造元|メーカー|manufacturer|brand owner)\s*[:：]\s*([^\s:：]{2,})', ownership_text, re.I)
+        company_text = _normalized(company.group(1)) if company else ''
+        if not (model and company and len(host_label) >= 4 and
+                _normalized(host_label) in company_text + _normalized(body + ' ' + title)):
+            return None
     if not (official_title or attribution):
         return None
     excerpt = '\n'.join(x for x in lines if brand in _normalized(x) or _normalized(identity) in _normalized(x)
