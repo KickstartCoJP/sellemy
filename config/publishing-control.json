@@ -1,4 +1,4 @@
 {
-  "enabled": true,
-  "reason": "CEO-directed BU-002 autonomous normal Growth restart 2026-10-16; independent QA and postpublish nonblocking CEO audit required"
+  "enabled": false,
+  "reason": "CEO halted unapproved API execution on 2026-10-16; explicit authorization required before restart"
 }
