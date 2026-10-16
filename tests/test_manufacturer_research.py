@@ -2,6 +2,7 @@ import json
 import sys
 from pathlib import Path
 from unittest.mock import Mock, patch
+import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'pipeline'))
 from product_sources import fetch_manufacturer_source
@@ -10,7 +11,7 @@ from manufacturer_research import research_selected
 PRODUCT = {'asin': 'B012345678', 'brand': 'AMBiQUE',
            'amazon_title': 'AMBiQUE スパークリングスカルプシャンプー 250g', 'sources': []}
 URL = 'https://www.alo-organic.com/shop/products/amb008_1'
-HTML = '<html><title>AMBiQUE 公式</title><main><h1>AMBiQUE アンビーク スパークリングスカルプシャンプー</h1><p>内容量：250g</p><p>販売元：株式会社アロオーガニック</p></main></html>'
+HTML = '<html><title>AMBiQUE 公式</title><main><h1>AMBiQUE アンビーク スパークリングスカルプシャンプー</h1><p>内容量：250g</p><p>販売元：株式会社アロオーガニック</p></main><footer>株式会社 AMBiQUE</footer></html>'
 
 
 def response(url=URL, body=HTML):
@@ -37,11 +38,11 @@ def test_rejects_marketplace_redirect_and_identity_mismatch():
 
 
 def test_official_solia_shop_structure_and_verbatim_usage():
-    html = '''<html><head><title>アンビーク スパークリングスカルプシャンプー｜【公式】SOLIA SHOP</title></head>
+    html = '''<html><head><title>AMBiQUE アンビーク スパークリングスカルプシャンプー｜【公式】SOLIA SHOP</title></head>
     <main><h1>アンビーク スパークリングスカルプシャンプー</h1>
     <img alt="AMBiQUE（アンビーク）スパークリングスカルプシャンプー" src="x">
     <p>内容量：250g</p><h2>使用方法</h2><p>レモン１個分程度の泡を手に取ります。</p>
-    <p>頭皮全体をマッサージするように、優しく洗ってください。</p></main></html>'''
+    <p>頭皮全体をマッサージするように、優しく洗ってください。</p></main><footer>株式会社 AMBiQUE</footer></html>'''
     with patch('product_sources.requests.get', return_value=response(body=html)):
         source = fetch_manufacturer_source(URL, PRODUCT)
     assert source is not None
@@ -91,3 +92,53 @@ def test_official_claim_on_unrelated_host_is_insufficient():
     url = 'https://unrelated.example/item'
     with patch('product_sources.requests.get', return_value=response(url=url, body=html)):
         assert fetch_manufacturer_source(url, PRODUCT) is None
+
+
+@pytest.mark.parametrize('url,brand,listing,title,footer', [
+    ('https://www.ankerjapan.com/products/a2663', 'Anker', 'Anker Nano II 65W 急速充電器',
+     'Anker Nano II 65W | Anker GaN II搭載の急速充電器 | Anker Japan 公式オンラインストア',
+     '© 2026 Anker Japan Co., Ltd.'),
+    ('https://connectinternationalone.co.jp/cioproduct/adapter/novaport/novaport-trio/',
+     'CIO', 'CIO NovaPort TRIO 65W 急速充電器',
+     'NovaPort TRIO 65W | 株式会社CIO（シーアイオー）公式HP', 'Copyright © CIO Co.,Ltd.'),
+    ('https://ugreen.jp/products/nexode-pro-65w-gan-charger', 'UGREEN',
+     'UGREEN Nexode Pro 65W GaN 急速充電器', 'UGREEN Nexode Pro 65W GaN 急速充電器',
+     '株式会社ユーグリーン・ジャパン'),
+])
+def test_current_official_charger_pages(url, brand, listing, title, footer):
+    html = f'<html><title>{title}</title><main><h1>{listing}</h1></main><footer>{footer}</footer></html>'
+    product = {'brand': brand, 'amazon_title': listing}
+    with patch('product_sources.requests.get', return_value=response(url=url, body=html)):
+        source = fetch_manufacturer_source(url, product)
+    assert source is not None
+    assert source['title'] == title
+    assert listing in source['excerpt']
+
+
+def test_unrelated_host_cannot_claim_official_with_corporate_footer():
+    url = 'https://unrelated.example/products/nexode-pro'
+    html = ('<title>UGREEN Nexode Pro 65W 公式</title><main>UGREEN Nexode Pro 65W</main>'
+            '<footer>Copyright © Unrelated Co., Ltd.</footer>')
+    product = {'brand': 'UGREEN', 'amazon_title': 'UGREEN Nexode Pro 65W'}
+    with patch('product_sources.requests.get', return_value=response(url=url, body=html)):
+        assert fetch_manufacturer_source(url, product) is None
+
+
+def test_anker_nano_short_name_requires_two_exact_tokens_and_official_ownership():
+    url = 'https://www.ankerjapan.com/products/a2663'
+    title = 'Anker Nano II 65W | Anker GaN II搭載の急速充電器 | Anker Japan 公式オンラインストア'
+    product = {'brand': 'Anker', 'amazon_title': 'Anker Nano II 65W'}
+    footer = '<footer>© 2026 Anker Japan Co., Ltd.</footer>'
+    html = f'<title>{title}</title><main><h1>Anker Nano II 65W</h1></main>{footer}'
+    with patch('product_sources.requests.get', return_value=response(url=url, body=html)):
+        source = fetch_manufacturer_source(url, product)
+    assert source is not None
+    assert source['verified'] is True
+    assert source['title'] == title
+
+    for body in (html.replace('Nano', 'Nanos'),
+                 f'<title>Anker 公式オンラインストア</title><main>Anker</main>{footer}'):
+        with patch('product_sources.requests.get', return_value=response(url=url, body=body)):
+            assert fetch_manufacturer_source(url, product) is None
+    with patch('product_sources.requests.get', return_value=response(url='https://fake.example/products/a2663', body=html)):
+        assert fetch_manufacturer_source(url, product) is None

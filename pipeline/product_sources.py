@@ -96,6 +96,10 @@ def fetch_manufacturer_source(url, product):
     from urllib.parse import urlsplit
     from bs4 import BeautifulSoup
 
+    def site_name(host):
+        labels = host.lower().split('.')
+        return labels[-3] if len(labels) >= 3 and labels[-2:] in (['co', 'jp'], ['com', 'jp']) else labels[-2] if len(labels) >= 2 else ''
+
     def allowed(value):
         parts = urlsplit(str(value))
         host = (parts.hostname or '').lower()
@@ -120,6 +124,7 @@ def fetch_manufacturer_source(url, product):
     soup = BeautifulSoup(response.text, 'html.parser')
     title = soup.title.get_text(' ', strip=True) if soup.title else ''
     ownership_text = ' '.join(x.get_text(' ', strip=True) for x in soup.select('main, footer'))
+    footer_text = ' '.join(x.get_text(' ', strip=True) for x in soup.select('footer'))
     image_text = ' '.join(x.get('alt', '') for x in soup.select('main img'))
     for node in soup(['script', 'style', 'nav', 'footer', 'header']):
         node.decompose()
@@ -131,15 +136,34 @@ def fetch_manufacturer_source(url, product):
     brand = _normalized(product.get('brand', ''))
     normalized = _normalized(body)
     # Require a distinctive product identity and independent manufacturer attribution.
-    title_tokens = re.findall(r'[A-Za-z][A-Za-z0-9-]{3,}|[ァ-ヶー]{4,}|[一-龥]{3,}',
+    title_tokens = re.findall(r'[A-Za-z][A-Za-z0-9-]{3,}|[0-9]+[A-Za-z][A-Za-z0-9-]*|[ァ-ヶー]{4,}|[一-龥]{3,}',
                               unicodedata.normalize('NFKC', product.get('amazon_title', '')))
     distinctive = [t for t in title_tokens if len(_normalized(t)) >= 5 and _normalized(t) != brand]
     identity = next((t for t in distinctive if _normalized(t) in normalized), None)
-    if not identity or (brand and brand not in _normalized(body + ' ' + image_text)):
+    if brand and brand not in _normalized(body + ' ' + image_text):
         return None
-    official_title = bool(brand and urlsplit(response.url).hostname.lower().endswith('alo-organic.com')
-                          and re.search(r'[【\[〖]公式[】\]〗]', title)
-                          and re.search(r'SOLIA SHOP', title, re.I))
+    site = _normalized(site_name(urlsplit(response.url).hostname))
+    domain_brand = bool(brand and len(brand) >= 3 and brand in site)
+    official_title = bool(brand and brand in _normalized(title) and
+                          re.search(r'公式|official', title, re.I))
+    # Corporate footers can use legal-name syntax without a labeled field.
+    corporate_footer = bool(re.search(r'株式会社|(?:co\.?\s*,?\s*ltd\.?|corporation|inc\.?|合同会社)', footer_text, re.I))
+    footer_brand = bool(brand and brand in _normalized(footer_text))
+    # Japanese legal names sometimes transliterate a Roman brand (UGREEN -> ユーグリーン).
+    romanized_brand = {'ugreen': 'ユーグリーン'}
+    footer_brand = footer_brand or bool(brand in romanized_brand and
+                                         _normalized(romanized_brand[brand]) in _normalized(footer_text))
+    corporate_relation = bool(corporate_footer and footer_brand and official_title)
+    if not identity:
+        # Short model names need two separate exact product tokens, with stronger ownership proof.
+        page_text = unicodedata.normalize('NFKC', body).lower()
+        short_tokens = {t.lower() for t in title_tokens if len(_normalized(t)) >= 3
+                        and _normalized(t) != brand}
+        matches = [t for t in short_tokens if re.search(
+            r'(?<![a-z0-9])' + re.escape(t) + r'(?![a-z0-9])', page_text)]
+        if not (len(matches) >= 2 and domain_brand and corporate_relation):
+            return None
+        identity = matches[0]
     attribution = bool(re.search(r'(?:製造販売元|販売元|会社名|製造元|メーカー|manufacturer|brand owner)\s*[:：]\s*[^\s:：]{2,}', ownership_text, re.I))
     if not brand:
         # Without a listing brand, a generic product name on an arbitrary shop is insufficient.
@@ -152,7 +176,9 @@ def fetch_manufacturer_source(url, product):
         if not (model and company and len(host_label) >= 4 and
                 _normalized(host_label) in company_text + _normalized(body + ' ' + title)):
             return None
-    if not (official_title or attribution):
+    if brand and not (domain_brand or corporate_relation):
+        return None
+    if not (domain_brand or corporate_relation or (not brand and attribution)):
         return None
     excerpt = '\n'.join(x for x in lines if brand in _normalized(x) or _normalized(identity) in _normalized(x)
                         or re.search(r'メーカー|製造販売元|販売元|会社名|製造元|manufacturer|brand owner|内容量|成分|容量|使用方法|洗浄|泡|頭皮|250g', x, re.I))[:6000]
