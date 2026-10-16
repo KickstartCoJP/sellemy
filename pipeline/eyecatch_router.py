@@ -95,6 +95,11 @@ def _choose_route(config: dict, usage: dict | None) -> tuple[str, dict]:
     if policy and policy.get('codex_allowed') is not True:
         return 'openai_api', {'reason': 'recovery_codex_prohibited', 'roll': None, 'remaining_percent': remaining}
     reserve = float(config['codex_reserve_percent'])
+    # A zero API share is a hard prohibition, including reserve/fallback routing.
+    if int(config['api_share']) == 0:
+        if int(config['codex_share']) <= 0:
+            raise EyecatchRoutingError('no authorized eyecatch provider')
+        return 'codex', {'reason': 'codex_only', 'roll': None, 'remaining_percent': remaining}
     if remaining is not None and remaining <= reserve:
         return 'openai_api', {
             'reason': 'codex_reserve_threshold',

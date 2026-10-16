@@ -5,13 +5,15 @@
       "api_weight": 0,
       "codex_weight": 100,
       "api_model": "gpt-6.1-sol",
-      "escalation_model": "gpt-6-astra"
+      "escalation_model": "gpt-6-astra",
+      "codex_model": "gpt-6-sol"
     },
     "writer": {
       "api_weight": 0,
       "codex_weight": 100,
       "api_model": "gpt-6.1-sol",
-      "escalation_model": "gpt-6-astra"
+      "escalation_model": "gpt-6-astra",
+      "codex_model": "gpt-6-sol"
     }
   }
 }

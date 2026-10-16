@@ -20,15 +20,7 @@ for stage in planner writer; do
 done
 # Use the project associated with the existing project-scoped API key.
 unset SELLEMY_OPENAI_PROJECT_ID
-if [[ "${SELLEMY_OPENAI_API_KEY:-}" != sk-* ]]; then
-  echo "$(date -Iseconds) ERROR: Sellemy Designer API credential unavailable; selected API route will be recorded as failed and may fall back to Codex for publication continuity" >&2
-fi
-export SELLEMY_EYECATCH_ENDPOINT=https://api.openai.com/v1/images/generations
-export SELLEMY_EYECATCH_TOKEN_ENV=SELLEMY_OPENAI_API_KEY
-export SELLEMY_EYECATCH_PROVIDER=openai
-export SELLEMY_EYECATCH_MODEL=gpt-image-2.5-sunburst
-export SELLEMY_EYECATCH_QUALITY=high
-export SELLEMY_EYECATCH_TIMEOUT_SECONDS=300
+# The production image route is Codex-only; do not configure API fallback here.
 # Normal production routing is freshly read from config/normal-provider-routing.json.
 # Recovery-only overrides remain in force exclusively for an explicitly active P0 recovery policy.
 SELLEMY_RECOVERY_POLICY_ACTIVE="$($PY - <<'PYPOLICY'
@@ -41,24 +33,23 @@ except Exception:
  print('1')
 PYPOLICY
 )"
+# CEO-approved runtime: Codex only, no paid Responses API even under recovery flags.
 if [[ "$SELLEMY_RECOVERY_POLICY_ACTIVE" == "1" ]]; then
-  export SELLEMY_PLANNER_API_WEIGHT=100
-  export SELLEMY_PLANNER_CODEX_WEIGHT=0
-  export SELLEMY_WRITER_API_WEIGHT=100
-  export SELLEMY_WRITER_CODEX_WEIGHT=0
-  export SELLEMY_PLANNER_OPENAI_MODEL=gpt-6.1-sol
-  export SELLEMY_WRITER_OPENAI_MODEL=gpt-6.1-sol
-  export SELLEMY_PLANNER_OPENAI_ESCALATION_MODEL=gpt-6-astra
-  export SELLEMY_WRITER_OPENAI_ESCALATION_MODEL=gpt-6-astra
-  export SELLEMY_PLANNER_API_WEIGHT=100
-  export SELLEMY_PLANNER_CODEX_WEIGHT=0
-  export SELLEMY_WRITER_API_WEIGHT=100
-  export SELLEMY_WRITER_CODEX_WEIGHT=0
-  unset SELLEMY_WRITER_PRIMARY_COMMAND SELLEMY_WRITER_PRIMARY_KIND SELLEMY_WRITER_PRIMARY_MODEL
-  unset SELLEMY_WRITER_SECONDARY_COMMAND SELLEMY_WRITER_SECONDARY_KIND SELLEMY_WRITER_SECONDARY_MODEL SELLEMY_WRITER_SECONDARY_CERTIFIED
-  unset SELLEMY_PLANNING_PRIMARY_COMMAND SELLEMY_PLANNING_PRIMARY_KIND SELLEMY_PLANNING_PRIMARY_MODEL
-  unset SELLEMY_PLANNING_SECONDARY_COMMAND SELLEMY_PLANNING_SECONDARY_KIND SELLEMY_PLANNING_SECONDARY_MODEL SELLEMY_PLANNING_SECONDARY_CERTIFIED
+  echo 'Sellemy recovery API routing is disabled: explicit CEO reauthorization required' >&2
+  exit 1
 fi
+export SELLEMY_PLANNER_API_WEIGHT=0
+export SELLEMY_PLANNER_CODEX_WEIGHT=100
+export SELLEMY_WRITER_API_WEIGHT=0
+export SELLEMY_WRITER_CODEX_WEIGHT=100
+export SELLEMY_PLANNING_PRIMARY_COMMAND=/opt/homebrew/bin/codex
+export SELLEMY_PLANNING_PRIMARY_KIND=codex
+export SELLEMY_PLANNING_PRIMARY_MODEL=gpt-6-sol
+export SELLEMY_WRITER_PRIMARY_COMMAND=/opt/homebrew/bin/codex
+export SELLEMY_WRITER_PRIMARY_KIND=codex
+export SELLEMY_WRITER_PRIMARY_MODEL=gpt-6-sol
+export SELLEMY_EYECATCH_CODEX_MODEL=gpt-6-sol
+
 # The publication switch does not disable analytics, monitoring or site serving.
 PUBLISH_ALLOWED="$("$PY" - <<'PYSWITCH'
 import sys

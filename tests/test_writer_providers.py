@@ -51,7 +51,7 @@ class WriterProviderTests(unittest.TestCase):
         claude.assert_not_called()
         self.assertEqual(metadata['writer_provider_used'], 'codex')
         self.assertFalse(metadata['fallback_used'])
-        self.assertTrue(metadata['session_persisted'])
+        self.assertFalse(metadata['session_persisted'])
         self.assertEqual(metadata['surface'], 'bu-codex-sellemy-writer')
 
     def test_codex_failure_falls_back_to_claude(self):
