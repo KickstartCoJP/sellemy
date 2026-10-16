@@ -10,7 +10,7 @@ from responses_provider import LOG, route
 from comparison_acceptance import CONTRACT, blocked, product_issues
 from dataclasses import dataclass
 from pathlib import Path
-from codex_provider import CodexProviderError, generate_persistent as codex_generate_persistent
+from codex_provider import CodexProviderError, generate_isolated as codex_generate_persistent
 from recovery_provider_policy import require_local_provider_allowed, active_policy
 from local_ollama_provider import generate_json as local_generate_json
 from responses_provider import validate_output
@@ -146,7 +146,7 @@ def _invoke(provider: WriterProvider, prompt: str, *, usage_key: str = "") -> tu
         except CodexProviderError as exc:
             raise WriterInvocationError(f'{provider.name} Writer {exc}', availability=True) from exc
         return payload, {'runtime': provider.command[0], 'model': provider.model,
-                         'cost_usd': None, 'duration_api_ms': None, 'session_persisted': True,
+                         'cost_usd': None, 'duration_api_ms': None, 'session_persisted': False,
                          **codex_meta}
     if provider.kind != 'claude':
         raise WriterInvocationError(f'unknown Writer provider kind: {provider.kind}')

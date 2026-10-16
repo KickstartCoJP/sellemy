@@ -13,7 +13,7 @@ from pathlib import Path
 from analytics_feedback import load_feedback, topic_signal
 from category_metadata import CATEGORIES
 from writer_runtime import AVAILABILITY_PATTERN, _diagnostic
-from codex_provider import CodexProviderError, generate_persistent as codex_generate_persistent
+from codex_provider import CodexProviderError, generate_isolated as codex_generate_persistent
 from recovery_provider_policy import require_local_provider_allowed
 
 ROOT = Path(__file__).resolve().parents[1]

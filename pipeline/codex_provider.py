@@ -858,6 +858,52 @@ def _refresh_brief(command: tuple[str, ...], model: str, session_id: str, root: 
         return usage
 
 
+def generate_isolated(command: tuple[str, ...], model: str, schema: dict, prompt: str, *,
+                      timeout: int, root: Path, surface_key: str, stage: str = '',
+                      usage_key: str = '') -> tuple[dict, dict]:
+    """LINE-style stage execution: fresh, ephemeral thread with only the current Brief/task."""
+    root = Path(root).resolve()
+    _, brief_path = _runtime_paths(root, surface_key)
+    _ensure_brief(brief_path, surface_key)
+    bridge = _canon_bridge(root, surface_key)
+    if not bridge.is_file():
+        raise CodexProviderError('Sellemy Codex canon bootstrap is missing')
+    from owner_brief_learning import load_brief_rules
+    learned_stage = 'planning' if stage == 'planning' else 'writer'
+    learned = load_brief_rules(learned_stage, root=root) if stage in ('planning', 'writer') else ''
+    task = ('Execute independently. Do not inspect old sessions, past output, or unrelated files. '
+            'Use only the supplied canonical bridge, stage Brief, accepted rules and current task. '
+            'Do not call an API. Return exactly one JSON object.\nCANON_BRIDGE:\n' +
+            bridge.read_text(encoding='utf-8') + '\nBRIEF:\n' + brief_path.read_text(encoding='utf-8') +
+            '\nACCEPTED_RULES:\n' + learned + '\nTASK:\n' + prompt +
+            '\nOUTPUT_SCHEMA:\n' + json.dumps(_strict_schema(schema), ensure_ascii=False))
+    effort = os.environ.get('SELLEMY_CODEX_REASONING_EFFORT', 'low').strip() or 'low'
+    args = [*command, 'exec', '--ephemeral', '--json', '--skip-git-repo-check',
+            '--sandbox', 'read-only', '--model', model, '--config', f'model_reasoning_effort={effort}', '-']
+    completed = _run(args, prompt=task, timeout=timeout, cwd=root)
+    if completed.returncode:
+        raise CodexProviderError('Isolated Codex execution failed: ' + (completed.stderr or completed.stdout)[-700:])
+    final = ''
+    usage = {}
+    for line in completed.stdout.splitlines():
+        try:
+            event = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        if event.get('type') == 'item.completed' and (event.get('item') or {}).get('type') == 'agent_message':
+            final = (event['item'].get('text') or '')
+        if event.get('type') == 'turn.completed':
+            usage = event.get('usage') or {}
+    if not final:
+        raise CodexProviderError('Isolated Codex returned no final output')
+    value = _json_object(final)
+    _validate_required_shape(value, _strict_schema(schema))
+    _append_usage(root, surface_key, stage=stage or 'generation', model=model,
+                  session_id='', session_turn=1, usage=usage, operation_key=usage_key)
+    return value, {'surface': surface_key, 'session_persisted': False,
+                   'reasoning_effort': effort, 'brief_path': str(brief_path), **usage}
+
+
 def generate_persistent(command: tuple[str, ...], model: str, schema: dict, prompt: str, *,
                         timeout: int, root: Path, surface_key: str = 'bu-codex-sellemy',
                         max_turns: int | None = None, stage: str = '', usage_key: str = '') -> tuple[dict, dict]:
