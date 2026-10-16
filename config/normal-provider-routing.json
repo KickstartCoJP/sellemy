@@ -2,14 +2,14 @@
   "schema": "sellemy-growth-provider-routing/v1",
   "stages": {
     "planner": {
-      "api_weight": 100,
-      "codex_weight": 0,
+      "api_weight": 0,
+      "codex_weight": 100,
       "api_model": "gpt-6.1-sol",
       "escalation_model": "gpt-6-astra"
     },
     "writer": {
-      "api_weight": 100,
-      "codex_weight": 0,
+      "api_weight": 0,
+      "codex_weight": 100,
       "api_model": "gpt-6.1-sol",
       "escalation_model": "gpt-6-astra"
     }
