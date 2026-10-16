@@ -904,11 +904,30 @@ def generate_persistent(command: tuple[str, ...], model: str, schema: dict, prom
 
     checkpoint = max_turns or int(os.environ.get('SELLEMY_CODEX_BRIEF_CHECKPOINT_TURNS', '10'))
     if not binding_changed and previous_session == session_id and turns >= checkpoint:
-        brief_usage = _refresh_brief(command, model, session_id, root, brief_path, timeout=timeout, surface_key=surface_key)
-        _append_usage(root, surface_key, stage='brief_refresh', model=model, session_id=session_id,
-                      session_turn=turns + 1, usage=brief_usage)
-        brief_refreshed = True
-        turns = 0
+        if surface_key in ('bu-codex-sellemy-writer', DESIGNER_SURFACE):
+            # A brief refresh without rotating retains all previous article/image turns.
+            # Use the existing canonical binding rotation to carry forward only learned rules.
+            control = _read_context_control(root)
+            row = dict((control.get('surfaces') or {}).get(surface_key) or {})
+            row.update({'session_id': session_id, 'rotation_due': True})
+            control.setdefault('surfaces', {})[surface_key] = row
+            _write_context_control(root, control)
+            context_rotation = _rotate_context(
+                command, model, root, surface_key, binding, state_path, brief_path, timeout=timeout
+            )
+            if not context_rotation:
+                raise CodexProviderError('Writer/Designer checkpoint rotation did not complete')
+            binding = _member_binding(surface_key)
+            session_id = binding['current_url']
+            state = _read_state(state_path)
+            turns = int(state.get('turns') or 0)
+            brief_refreshed = True
+        else:
+            brief_usage = _refresh_brief(command, model, session_id, root, brief_path, timeout=timeout, surface_key=surface_key)
+            _append_usage(root, surface_key, stage='brief_refresh', model=model, session_id=session_id,
+                          session_turn=turns + 1, usage=brief_usage)
+            brief_refreshed = True
+            turns = 0
 
     canon_bridge = _canon_bridge(root, surface_key)
     if not canon_bridge.is_file():

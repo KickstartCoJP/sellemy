@@ -208,6 +208,34 @@ class CodexProviderTests(unittest.TestCase):
             self.assertEqual(calls, [bindings[0]['current_url'], bindings[0]['current_url'], bindings[1]['current_url']])
             self.assertIn('比較軸ごとの差を先に整理', (root / '.runtime/sellemy-codex/brief.md').read_text())
 
+    def test_writer_checkpoint_rotates_instead_of_reusing_article_history(self):
+        schema = {'type': 'object', 'properties': {'ok': {'type': 'boolean'}}}
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            first = {'current_url': '00000000-0000-4000-8000-000000000001', 'binding_revision': 1}
+            second = {'current_url': '00000000-0000-4000-8000-000000000002', 'binding_revision': 2}
+            member = {'binding': first}
+            calls = []
+            def fake_queue(command, model, thread_id, root_arg, prompt, **kwargs):
+                calls.append(thread_id)
+                return ('{"ok":true}', {})
+            def fake_rotate(command, model, root_arg, surface_key, binding, state_path, brief_path, **kwargs):
+                self.assertTrue(codex_provider._context_rotation_due(root, surface_key, first['current_url']))
+                member['binding'] = second
+                codex_provider._write_state(state_path, {'session_id': second['current_url'], 'turns': 0})
+                return {'rotated': True}
+            with patch.object(codex_provider, '_member_binding', side_effect=lambda surface: member['binding']), \
+                 patch.object(codex_provider, '_queue_turn', side_effect=fake_queue), \
+                 patch.object(codex_provider, '_rotate_context', side_effect=fake_rotate) as rotate, \
+                 patch.object(codex_provider, '_refresh_brief') as refresh:
+                codex_provider.generate_persistent(('/bin/codex',), 'model', schema, 'first', timeout=30, root=root, surface_key='bu-codex-sellemy-writer', max_turns=1)
+                _, meta = codex_provider.generate_persistent(('/bin/codex',), 'model', schema, 'second', timeout=30, root=root, surface_key='bu-codex-sellemy-writer', max_turns=1)
+            self.assertEqual(rotate.call_count, 1)
+            refresh.assert_not_called()
+            self.assertEqual(calls, [first['current_url'], second['current_url']])
+            self.assertEqual(meta['session_id'], second['current_url'])
+            self.assertTrue(meta['brief_refreshed'])
+
     def test_brief_checkpoint_does_not_change_member_thread(self):
         schema = {'type': 'object', 'properties': {'ok': {'type': 'boolean'}}}
         with tempfile.TemporaryDirectory() as tmp:
