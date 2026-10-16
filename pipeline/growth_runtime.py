@@ -106,10 +106,20 @@ def discover_products(topic: dict, *, cache_only: bool) -> list[dict]:
 
         with ThreadPoolExecutor(max_workers=6) as executor:
             sources = executor.map(verified_source, candidates)
-            candidates = [dict(candidate, brand=source.get('brand') or candidate['brand'], sources=[source])
-                          for candidate, source in zip(candidates, sources) if source]
+            candidates = [dict(candidate, brand=(source or {}).get('brand') or candidate['brand'],
+                               sources=[source] if source else [], provisional=not bool(source))
+                          for candidate, source in zip(candidates, sources)]
     distinct, _removed = dedupe_content_products(candidates)
     return distinct
+
+
+def _researchable_candidates(products: list[dict], *, cache_only: bool) -> bool:
+    return not cache_only and bool(products) and all(
+        isinstance(product, dict)
+        and all(product.get(key) for key in ('asin', 'amazon_title', 'image_url'))
+        and isinstance(product.get('sources'), list)
+        for product in products
+    )
 
 
 def select_viable_topic(
@@ -134,10 +144,10 @@ def select_viable_topic(
                 probes.append({'round': round_index + 1, 'slug': topic['slug'], 'candidate_count': 0, 'error': f'{type(exc).__name__}: {exc}'})
             if len(products) >= 6:
                 try:
-                    six, selection = select_six(products, topic, feedback)
-                    if not source_research_used and not cache_only:
-                        six = research_selected(six)
+                    if not source_research_used and _researchable_candidates(products, cache_only=cache_only):
+                        products = research_selected(products)
                         source_research_used = True
+                    six, selection = select_six(products, topic, feedback)
                     evidence = build_evidence(topic, six, selection)
                     acceptance = independent_review(evidence)
                     issues = receipt_issues(acceptance, evidence)
@@ -599,8 +609,9 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
     topic.pop('_product_acceptance', None)
     try:
         products = discover_products(topic, cache_only=cache_only)
+        if _researchable_candidates(products, cache_only=cache_only):
+            products = research_selected(products)
         selected, selection = select_six(products, topic, load_feedback())
-        selected = research_selected(selected, cache_only=cache_only)
         evidence = build_evidence(topic, selected, selection)
         prior=read_artifact(slug,'evidence.json',{})
         from comparison_acceptance import digest

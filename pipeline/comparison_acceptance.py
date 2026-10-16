@@ -32,9 +32,8 @@ def normalized(value):
 
 
 def source_text(product):
-    # Listing text is discovery evidence. Verified source excerpts/facts may add
-    # stronger manufacturer/official/manual anchors for identity and comparison.
-    parts = [str(product.get('amazon_title') or '')]
+    # Search listings are discovery leads, never QA evidence.
+    parts = []
     for source in product.get('sources') or []:
         if not isinstance(source, dict) or source.get('verified') is not True:
             continue

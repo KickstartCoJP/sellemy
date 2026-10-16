@@ -74,3 +74,20 @@ def test_batch_search_response_is_candidate_only_and_cache_never_browses():
     with patch('manufacturer_research.subprocess.run') as cli:
         assert research_selected([PRODUCT], cache_only=True) == [PRODUCT]
         cli.assert_not_called()
+
+
+def test_missing_brand_requires_model_company_and_host():
+    product = {**PRODUCT, 'brand': '', 'amazon_title': 'Panasonic EH-NA0J ヘアドライヤー'}
+    html = '<title>EH-NA0J</title><main><h1>Panasonic EH-NA0J</h1><p>メーカー：Panasonic</p><p>風量 1.6m3/分</p></main>'
+    url = 'https://panasonic.jp/hair/products/EH-NA0J.html'
+    with patch('product_sources.requests.get', return_value=response(url=url, body=html)):
+        assert fetch_manufacturer_source(url, product)['verified'] is True
+    with patch('product_sources.requests.get', return_value=response(url='https://fake.example/item', body=html)):
+        assert fetch_manufacturer_source('https://fake.example/item', product) is None
+
+
+def test_official_claim_on_unrelated_host_is_insufficient():
+    html = '<title>AMBiQUE 【公式】</title><main><h1>AMBiQUE スパークリングスカルプシャンプー</h1></main>'
+    url = 'https://unrelated.example/item'
+    with patch('product_sources.requests.get', return_value=response(url=url, body=html)):
+        assert fetch_manufacturer_source(url, PRODUCT) is None

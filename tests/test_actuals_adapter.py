@@ -1,4 +1,5 @@
 import sys, unittest
+from unittest.mock import patch
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -26,7 +27,11 @@ class ActualsAdapterTests(unittest.TestCase):
             {'date':'2026-09-17','published_article_count_daily':2,'published_article_count':44},
             {'date':'2026-09-18','published_article_count_daily':1,'published_article_count':45}]}
         ga4={'grain':'date','metric':'screenPageViews','generated_at':'2026-09-18T00:00:00+00:00','rows':[{'date':'20260918','page_views':5}]}
-        rows=actuals_adapter.build_actuals(pub,ga4,now=datetime(2026,9,18,17,0,tzinfo=ZoneInfo('Asia/Tokyo')))
+        with patch.object(actuals_adapter, 'affiliate_actuals', return_value=[
+            {'period': '2026-09', 'metric_id': 'revenue', 'value': 0,
+             'source': 'affiliate_provider_reconciled_explicit_zero', 'updated_at': '2026-09-18'}
+        ]):
+            rows=actuals_adapter.build_actuals(pub,ga4,now=datetime(2026,9,18,17,0,tzinfo=ZoneInfo('Asia/Tokyo')))
         self.assertTrue(any(r['metric_id']=='published_article_count' and r['value']==45 for r in rows))
         self.assertTrue(any(r['metric_id']=='cost' and r['value']==0 for r in rows))
         self.assertTrue(any(r['metric_id']=='revenue' and r['value']==0 for r in rows))

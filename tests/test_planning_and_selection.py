@@ -162,6 +162,8 @@ class VariableProductSelectionTests(unittest.TestCase):
                 'asin': f'B0TEST{i:04d}', 'amazon_title': ('高性能 ' if i in (6, 7) else 'やさしい ') + str(i),
                 'brand': f'Brand{i % 4}', 'image_url': f'https://example.com/{i}.jpg',
                 'observed_price': (i + 1) * 1000, 'discovery_score': 1,
+                'sources': [{'verified': True, 'url': f'https://example.com/mock/{i}',
+                             'excerpt': ('高性能 ' if i in (6, 7) else 'やさしい ') + str(i)}],
             })
         selected, metadata = select_six(rows, topic, {'product_metrics': []})
         self.assertEqual(len(selected), 6)

@@ -36,8 +36,9 @@ def test_live_sources_are_bounded_parallel_and_keep_search_order():
 
     assert peak == 6
     assert len(called) == 18
-    assert [product['asin'] for product in products] == [row['asin'] for row in rows[:18] if row != rows[2]]
-    assert all(product['sources'][0]['verified'] for product in products)
+    assert [product['asin'] for product in products] == [row['asin'] for row in rows[:18]]
+    assert products[2]['sources'] == [] and products[2]['provisional'] is True
+    assert all(product['sources'][0]['verified'] for index, product in enumerate(products) if index != 2)
 
 
 def test_cache_only_never_fetches_live_sources():
@@ -64,7 +65,8 @@ def test_failed_source_does_not_discard_other_products():
          patch.object(growth_runtime, 'fetch_amazon_item_source', side_effect=fetch):
         products = growth_runtime.discover_products({'query': 'desk light'}, cache_only=False)
 
-    assert [product['asin'] for product in products] == [row['asin'] for row in rows if row != rows[1]]
+    assert [product['asin'] for product in products] == [row['asin'] for row in rows]
+    assert products[1]['sources'] == [] and products[1]['provisional'] is True
 
 
 def test_verified_item_brand_populates_blank_search_brand():

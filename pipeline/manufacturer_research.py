@@ -4,6 +4,7 @@ import os
 import re
 import shlex
 import subprocess
+from concurrent.futures import ThreadPoolExecutor
 
 from product_sources import fetch_manufacturer_source
 
@@ -11,7 +12,7 @@ from product_sources import fetch_manufacturer_source
 def research_selected(products, *, cache_only=False):
     if cache_only or not products:
         return products
-    needs = [p for p in products[:6] if not any(
+    needs = [p for p in products[:18] if not any(
         s.get('source_type') == 'manufacturer_official' and s.get('verified')
         for s in p.get('sources', []) if isinstance(s, dict))]
     if not needs:
@@ -27,7 +28,7 @@ def research_selected(products, *, cache_only=False):
         result = subprocess.run([*command, '--search', 'exec', '--ephemeral', '--json',
                                  '--skip-git-repo-check', '--sandbox', 'read-only',
                                  '--model', 'gpt-6-sol', '-'], input=prompt, text=True,
-                                capture_output=True, timeout=120)
+                                capture_output=True, timeout=75)
         if result.returncode:
             return products
         messages = []
@@ -49,7 +50,7 @@ def research_selected(products, *, cache_only=False):
         rows = json.loads(raw).get('items', [])
         if not isinstance(rows, list):
             return products
-        candidates = {str(row.get('asin')): row.get('url') for row in rows[:6] if isinstance(row, dict)}
+        candidates = {str(row.get('asin')): row.get('url') for row in rows[:18] if isinstance(row, dict)}
         if usage:
             from pathlib import Path
             from codex_provider import _append_usage
@@ -58,8 +59,15 @@ def research_selected(products, *, cache_only=False):
                           session_turn=1, usage=usage)
     except (OSError, subprocess.TimeoutExpired, ValueError, TypeError):
         return products
-    enriched = []
-    for product in products:
-        source = fetch_manufacturer_source(candidates.get(product.get('asin')), product)
-        enriched.append({**product, 'sources': [*(product.get('sources') or []), source]} if source else product)
-    return enriched
+    def fetch(product):
+        url = candidates.get(product.get('asin'))
+        if not url:
+            return None
+        try:
+            return fetch_manufacturer_source(url, product)
+        except Exception:
+            return None
+    with ThreadPoolExecutor(max_workers=6) as executor:
+        sources = list(executor.map(fetch, products))
+    return [{**p, 'sources': [*(p.get('sources') or []), source], 'provisional': False}
+            if source else p for p, source in zip(products, sources)]

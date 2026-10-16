@@ -149,6 +149,19 @@ class ProductViabilityPlanningTests(unittest.TestCase):
         self.assertEqual(discover.call_count, 2)
         self.assertEqual([p['candidate_count'] for p in probes], [0, 6])
 
+    def test_live_candidate_research_runs_before_selection(self):
+        topic = self._topic('research-topic')
+        products = [{'asin': f'B0TEST{i:04d}', 'amazon_title': f'Model {i}',
+                     'image_url': f'https://example.com/{i}.jpg', 'sources': []}
+                    for i in range(6)]
+        with (patch.object(growth_runtime, 'rank_candidates', return_value=[topic]),
+              patch.object(growth_runtime, 'discover_products', return_value=products),
+              patch.object(growth_runtime, 'research_selected', return_value=products) as research,
+              patch.object(growth_runtime, 'select_six', return_value=([], {})) as select):
+            growth_runtime.select_viable_topic([topic], {}, cache_only=False)
+        research.assert_called_once_with(products)
+        select.assert_called_once_with(products, topic, {})
+
     def test_axis_rejected_first_topic_scans_valid_second_without_creating_job(self):
         first, second = self._topic('first-topic'), self._topic('second-topic')
         products = [{'asin': f'B0TEST{i:04d}'} for i in range(8)]
