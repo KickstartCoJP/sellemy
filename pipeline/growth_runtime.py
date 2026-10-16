@@ -125,29 +125,19 @@ def select_viable_topic(
                     issues = receipt_issues(acceptance, evidence)
                     if issues:
                         probes[-1]['acceptance'] = blocked(issues)
-                        evidence['product_acceptance'] = acceptance
-                        create_job(topic=topic, evidence=evidence, selection=selection,
-                                   planning_provider=getattr(source, 'provider_metadata', None),
-                                   viability_probes=probes)
-                        request_product_reselection(topic['slug'], issues)
-                        raise GrowthRuntimeError(f"needs_product_reselection for {topic['slug']}")
+                        continue
                 except ProductSelectionError as exc:
                     reasons = [str(exc)]
                     probes[-1]['acceptance'] = blocked(reasons)
-                    # Retain observed candidates, not fabricated accepted selections.
-                    evidence = {'slug': topic['slug'], 'category': topic['category'],
-                                'comparison_axes': topic['comparison_axes'], 'products': products}
-                    create_job(topic=topic, evidence=evidence, selection={'provisional': True},
-                               planning_provider=getattr(source, 'provider_metadata', None),
-                               viability_probes=probes)
-                    request_product_reselection(topic['slug'], reasons)
-                    raise GrowthRuntimeError(f"needs_product_reselection for {topic['slug']}") from exc
+                    continue
                 selected = {**topic, '_product_acceptance': acceptance,
                             'selection_reason': 'six products passed independent evidence acceptance'}
                 if getattr(source, 'provider_metadata', None):
                     selected['_planning_provider_metadata'] = source.provider_metadata
                 return selected, products, probes
-    raise PlanningError('no planned topic passed live product viability after full candidate scan and replanning: require at least 6 products')
+    error = PlanningError('no planned topic passed product acceptance after full candidate scan and replanning: require 6 documented products matching topic axes')
+    error.viability_probes = probes
+    raise error
 
 
 def _compact_search_key(product: dict) -> str:
@@ -865,6 +855,8 @@ def run(
     except Exception as exc:
         result['status'] = 'published_feedback_failed' if result.get('published') else 'blocked_before_publish'
         result['blocker'] = f'{type(exc).__name__}: {exc}'
+        if hasattr(exc, 'viability_probes'):
+            result['viability_probes'] = exc.viability_probes
         decision = result.get('controller_decision') or {}
         if publish and scheduled and not result.get('published') and decision.get('allowed'):
             try:
