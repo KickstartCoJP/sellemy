@@ -223,16 +223,19 @@ class PublishContractTests(unittest.TestCase):
                     publish_gate.require_publishing_enabled(root)
 
     def test_scheduled_and_manual_stop_before_any_work_when_disabled(self):
-        for scheduled in [True, False]:
-            with patch.object(runtime, 'AdaptivePublishController') as controller, \
-                 patch.object(runtime, '_reconcile_already_published_jobs') as reconcile:
+        # Runtime production switch is enabled, but the environment kill switch
+        # must remain authoritative for scheduled and manual invocations.
+        with patch.dict(os.environ, {'SELLEMY_PUBLISH_DISABLED': '1'}):
+            for scheduled in [True, False]:
+                with patch.object(runtime, 'AdaptivePublishController') as controller, \
+                     patch.object(runtime, '_reconcile_already_published_jobs') as reconcile:
+                    with self.assertRaises(publish_gate.PublishGateError):
+                        runtime.run(publish=True, scheduled=scheduled, report_path=None)
+                    controller.assert_not_called(); reconcile.assert_not_called()
+            with patch.object(publisher, '_load') as load:
                 with self.assertRaises(publish_gate.PublishGateError):
-                    runtime.run(publish=True, scheduled=scheduled, report_path=None)
-                controller.assert_not_called(); reconcile.assert_not_called()
-        with patch.object(publisher, '_load') as load:
-            with self.assertRaises(publish_gate.PublishGateError):
-                publisher.run('anything', apply=True, allow_existing=True)
-            load.assert_not_called()
+                    publisher.run('anything', apply=True, allow_existing=True)
+                load.assert_not_called()
 
     def test_publish_missing_blocked_stale_acceptance_before_render_or_mutation(self):
         p,e,a=accepted_fixture()

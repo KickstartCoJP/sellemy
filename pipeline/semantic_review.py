@@ -1,14 +1,39 @@
-"""Fresh independent semantic review within Product/Evidence and Review stages.
+"""Fresh independent Sol semantic review within Product/Evidence and Review stages.
 
-Uses the Writer stage's existing API credentials/shared brief, but no Writer
-conversation, payload self-assessment, persistent role, or local fallback.
+Uses the authorized BU-002 Writer Member account only for identity, but creates a
+new isolated CLI session; never reads the Writer's output conversation/history.
 """
 from __future__ import annotations
 import json
+import os
+import shlex
+from pathlib import Path
 from comparison_acceptance import (
     CONTRACT, blocked, evidence_content, evidence_issues, make_receipt, review_issues,
 )
-from responses_provider import generate
+from codex_provider import CodexProviderError, generate_isolated
+from recovery_provider_policy import require_local_provider_allowed
+from responses_provider import ResponsesError
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+def generate(stage: str, schema: dict, prompt: str) -> tuple[dict, dict]:
+    """Compatibility interface: independent Codex Sol, never Responses API."""
+    if stage != 'writer':
+        raise ResponsesError('Unsupported semantic review stage', kind='config')
+    require_local_provider_allowed('codex')
+    model = os.environ.get('SELLEMY_REVIEW_CODEX_MODEL', '').strip() or 'gpt-6-sol'
+    command = shlex.split(os.environ.get('SELLEMY_WRITER_PRIMARY_COMMAND', '/opt/homebrew/bin/codex'))
+    if not command:
+        raise ResponsesError('Independent review Codex command missing', kind='config')
+    try:
+        return generate_isolated(
+            tuple(command), model, schema, prompt, timeout=int(os.environ.get('SELLEMY_REVIEW_TIMEOUT_SECONDS', '600')),
+            root=ROOT, surface_key='bu-codex-sellemy-writer', stage='independent_review',
+        )
+    except CodexProviderError as exc:
+        raise ResponsesError('Independent Codex review unavailable: ' + str(exc), kind='config') from exc
 
 
 def obj(properties):
