@@ -8,6 +8,7 @@ import subprocess
 import requests
 import sys
 import time
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -34,6 +35,8 @@ from publish_gate import (
 )
 from purpose_relation_discovery import run as run_purpose_relation_discovery
 from product_selection import ProductSelectionError, dedupe_content_products, select_six
+from product_sources import fetch_amazon_item_source
+from manufacturer_research import research_selected
 from publish_payload import run as publish_payload
 from production_deploy import verify as verify_production_deploy, ProductionDeployError
 from qa import run_qa
@@ -83,7 +86,7 @@ def discover_products(topic: dict, *, cache_only: bool) -> list[dict]:
     adapter = AutositeDiscoveryAdapter()
     rows = adapter.search_cache(topic['query'], limit=30) if cache_only else adapter.search_amazon_live(topic['query'], limit=18)
     candidates, seen = [], set()
-    for row in rows:
+    for row in rows[:18] if not cache_only else rows:
         asin = (row.get('asin') or '').upper()
         title, image = (row.get('title') or '').strip(), (row.get('image_url') or '').strip()
         if not re.fullmatch(r'[A-Z0-9]{10}', asin) or not title or not image or asin in seen:
@@ -94,6 +97,17 @@ def discover_products(topic: dict, *, cache_only: bool) -> list[dict]:
             'image_url': image, 'observed_price': _price(row.get('price')),
             'discovery_score': row.get('score', 1),
         })
+    if not cache_only and candidates:
+        def verified_source(candidate):
+            try:
+                return fetch_amazon_item_source(candidate['asin'], candidate['amazon_title'])
+            except Exception:
+                return None
+
+        with ThreadPoolExecutor(max_workers=6) as executor:
+            sources = executor.map(verified_source, candidates)
+            candidates = [dict(candidate, brand=source.get('brand') or candidate['brand'], sources=[source])
+                          for candidate, source in zip(candidates, sources) if source]
     distinct, _removed = dedupe_content_products(candidates)
     return distinct
 
@@ -102,6 +116,7 @@ def select_viable_topic(
     planning_candidates: list[dict] | None, feedback: dict, *, cache_only: bool, max_rounds: int = 3
 ) -> tuple[dict, list[dict], list[dict]]:
     probes = []
+    source_research_used = False
     tried_slugs: set[str] = set()
     rounds = 1 if planning_candidates is not None else max(1, int(max_rounds))
     for round_index in range(rounds):
@@ -120,6 +135,9 @@ def select_viable_topic(
             if len(products) >= 6:
                 try:
                     six, selection = select_six(products, topic, feedback)
+                    if not source_research_used and not cache_only:
+                        six = research_selected(six)
+                        source_research_used = True
                     evidence = build_evidence(topic, six, selection)
                     acceptance = independent_review(evidence)
                     issues = receipt_issues(acceptance, evidence)
@@ -134,6 +152,11 @@ def select_viable_topic(
                             'selection_reason': 'six products passed independent evidence acceptance'}
                 if getattr(source, 'provider_metadata', None):
                     selected['_planning_provider_metadata'] = source.provider_metadata
+                enriched_by_asin = {p['asin']: p for p in six}
+                for product in products:
+                    enriched = enriched_by_asin.get(product['asin'])
+                    if enriched and enriched.get('sources') != product.get('sources'):
+                        product['sources'] = enriched['sources']
                 return selected, products, probes
     error = PlanningError('no planned topic passed product acceptance after full candidate scan and replanning: require 6 documented products matching topic axes')
     error.viability_probes = probes
@@ -577,6 +600,7 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
     try:
         products = discover_products(topic, cache_only=cache_only)
         selected, selection = select_six(products, topic, load_feedback())
+        selected = research_selected(selected, cache_only=cache_only)
         evidence = build_evidence(topic, selected, selection)
         prior=read_artifact(slug,'evidence.json',{})
         from comparison_acceptance import digest

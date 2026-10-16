@@ -53,7 +53,11 @@ class ProductSelectionError(RuntimeError):
 
 
 def _text(candidate: dict) -> str:
-    return ' '.join(str(candidate.get(key, '')).lower() for key in ('amazon_title', 'brand'))
+    parts = [str(candidate.get(key, '')).lower() for key in ('amazon_title', 'brand')]
+    for source in candidate.get('sources') or []:
+        if isinstance(source, dict) and source.get('verified') is True:
+            parts.append(str(source.get('excerpt') or '').lower())
+    return ' '.join(parts)
 
 
 def _axis_matches(candidate: dict, axes: list[dict]) -> set[str]:
