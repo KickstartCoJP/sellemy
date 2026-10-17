@@ -153,6 +153,29 @@ def all_jobs() -> list[dict]:
     return rows
 
 
+
+def reopen_product_failed_for_reselection(slug: str) -> dict:
+    """Reopen a historical product-only failure under the new batch policy.
+
+    Preserve original evidence, history and job identity. Discarded or published
+    work must never be silently reopened.
+    """
+    state = load_job(slug)
+    if (state.get('status'), state.get('current_stage')) != ('FAILED', 'PRODUCT_FAILED'):
+        raise ValueError('only FAILED PRODUCT_FAILED jobs may be reopened')
+    if not read_artifact(slug, 'topic.json') or not read_artifact(slug, 'evidence.json'):
+        raise ValueError('cannot resume a job without topic and evidence')
+    state['status'] = 'ACTIVE'
+    state['current_stage'] = 'WRITER_PENDING'
+    state['next_retry_at'] = _iso()
+    ng = dict(state.get('quality_ng_by_gate') or {})
+    ng['product'] = 0
+    state['quality_ng_by_gate'] = ng
+    state['reselection_batch_policy'] = 'initial_18_plus_9_batches'
+    return _save_state(state, event='REOPENED_FOR_BATCH_RESELECTION',
+                       detail={'previous_quality_ng': 3, 'policy': state['reselection_batch_policy']})
+
+
 def eligible_job(*, now: datetime | None = None) -> dict | None:
     current = now or utcnow()
     eligible = []
