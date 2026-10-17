@@ -122,45 +122,72 @@ def discover_products(topic: dict, *, cache_only: bool) -> list[dict]:
 
 
 
-def replenish_products(topic: dict, products: list[dict], *, cache_only: bool, max_batches: int = 9) -> tuple[list[dict], list[dict]]:
-    """Accumulate at most 18 NEW, unique ASINs per batch (not 18 duplicate hits)."""
-    if cache_only:
-        return products, []
+def _product_queries(topic: dict):
+    """Only product-oriented terms, never editorial comparison instructions."""
     base = product_search_query(topic)
     if not base:
+        return
+    terms = ('', '型番', 'メーカー', '容量', '規格', '製品', '用途', '機能',
+             'サイズ', 'ブランド', '種類', '国内正規品', '大容量', '業務用',
+             'コンパクト', '高性能', '単品', 'セット', '標準', '高耐久')
+    for term in terms:
+        yield f'{base} {term}'.strip()
+
+
+def collect_unique_products(topic: dict, *, cache_only: bool, existing: list[dict] | None = None,
+                            target_new: int = 18, used_queries: set[str] | None = None,
+                            max_searches: int = 20) -> tuple[list[dict], dict]:
+    """Collect EXACTLY target_new fresh ASINs before completing a batch.
+
+    Product identity is checked *as each hit is encountered*, not after a
+    nominal page of 18. If search is exhausted, report incomplete explicitly.
+    """
+    prior, _ = dedupe_content_products(list(existing or []))
+    known = {p['asin'] for p in prior}
+    additions = []
+    attempts = []
+    seen_queries = used_queries if used_queries is not None else set()
+    for query in _product_queries(topic):
+        if len(additions) >= target_new or len(attempts) >= max_searches:
+            break
+        if query in seen_queries:
+            continue
+        seen_queries.add(query)
+        try:
+            candidates = discover_products({**topic, 'query': query}, cache_only=cache_only)
+            count = 0
+            for candidate in candidates:
+                asin = candidate['asin']
+                if asin in known:
+                    continue
+                known.add(asin)
+                additions.append(candidate)
+                count += 1
+                if len(additions) == target_new:
+                    break
+            attempts.append({'query': query, 'found': len(candidates), 'new': count})
+        except Exception as exc:
+            attempts.append({'query': query, 'found': 0, 'new': 0,
+                             'error': f'{type(exc).__name__}: {exc}'})
+    return additions, {'added_unique': len(additions),
+                       'complete': len(additions) == target_new,
+                       'attempts': attempts}
+
+
+def replenish_products(topic: dict, products: list[dict], *, cache_only: bool,
+                       max_batches: int = 9) -> tuple[list[dict], list[dict]]:
+    if cache_only:
         return products, []
-    modifiers = ('', '型番', 'メーカー', '容量', '規格', '製品', '用途',
-                 '機能', 'サイズ', 'ブランド', '種類', '国内正規品', '大容量',
-                 '業務用', 'コンパクト', '高性能', '単品', 'セット', '標準', '高耐久')
-    queries = [f'{base} {term}'.strip() for term in modifiers]
-    traces = []
     merged, _ = dedupe_content_products(list(products))
-    used = {str(topic.get('query') or '')}
-    query_index = 0
+    used_queries = {str(topic.get('query') or '')}
+    traces = []
     for batch_no in range(1, max_batches + 1):
-        before = len(merged)
-        attempts = []
-        # Try alternative concise searches to fill one batch with 18 fresh ASINs.
-        while len(merged) - before < 18 and query_index < len(queries):
-            query = queries[query_index]
-            query_index += 1
-            if query in used:
-                continue
-            used.add(query)
-            try:
-                rows = discover_products({**topic, 'query': query}, cache_only=False)
-                previous = {row['asin'] for row in merged}
-                merged, _ = dedupe_content_products([*merged, *rows])
-                # Cap at exactly 18 unique additions per batch.
-                if len(merged) - before > 18:
-                    old = {row['asin'] for row in products}
-                    merged = [row for row in merged if row['asin'] in old or row['asin'] in previous][:before + 18]
-                attempts.append({'query': query, 'found': len(rows), 'new': len(merged) - len(previous)})
-            except Exception as exc:
-                attempts.append({'query': query, 'found': 0, 'new': 0, 'error': f'{type(exc).__name__}: {exc}'})
-        traces.append({'batch': batch_no, 'added_unique': len(merged) - before, 'unique_total': len(merged), 'attempts': attempts})
-        products = list(merged)
-        if query_index >= len(queries) or not attempts:
+        added, trace = collect_unique_products(topic, cache_only=False,
+                                               existing=merged, used_queries=used_queries)
+        # Never mark a partial batch as successfully collected.
+        merged.extend(added)
+        traces.append({'batch': batch_no, 'unique_total': len(merged), **trace})
+        if not trace['complete']:
             break
     return merged, traces
 
