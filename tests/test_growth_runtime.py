@@ -450,6 +450,33 @@ if __name__ == '__main__':
     unittest.main()
 
 class AmazonSearchDiscoveryTests(unittest.TestCase):
+    def test_verification_interstitial_is_not_zero_products(self):
+        from discovery_adapters import AutositeDiscoveryAdapter
+        response = Mock(status_code=200, text='<meta http-equiv="refresh" content="bm-verify=abc">')
+        rows = [{'asin': 'B012345678', 'title': 'Item', 'image_url': 'https://example.com/a.jpg'}]
+        with (patch('requests.get') as request,
+              patch('discovery_adapters._amazon_search_browser', return_value=rows) as browser):
+            request.return_value = response
+            self.assertEqual(AutositeDiscoveryAdapter().search_amazon_live('USB C', limit=18), rows)
+        browser.assert_called_once()
+
+    def test_real_http_search_cards_do_not_open_browser(self):
+        from discovery_adapters import AutositeDiscoveryAdapter
+        html = '<div data-component-type="s-search-result" data-asin="B012345678"><h2>Item A</h2><img class="s-image" src="https://example.com/a.jpg"></div>'
+        with (patch('requests.get', return_value=Mock(status_code=200, text=html)) as request,
+              patch('discovery_adapters._amazon_search_browser') as browser):
+            rows = AutositeDiscoveryAdapter().search_amazon_live('USB C', limit=18)
+        self.assertEqual(len(rows), 1)
+        browser.assert_not_called()
+
+    def test_http_503_uses_browser_without_accepting_unverified_facts(self):
+        from discovery_adapters import AutositeDiscoveryAdapter
+        rows = [{'asin': 'B012345678', 'title': 'Item', 'image_url': 'https://example.com/a.jpg'}]
+        with (patch('requests.get', return_value=Mock(status_code=503)) as request,
+              patch('discovery_adapters._amazon_search_browser', return_value=rows)):
+            self.assertEqual(AutositeDiscoveryAdapter().search_amazon_live('USB C'), rows)
+        self.assertNotIn('verified', rows[0])
+
     def test_amazon_search_html_yields_product_identity_without_autosite_repo(self):
         from discovery_adapters import parse_amazon_search_results
         html = '''<div role="listitem" data-asin="B012345678" data-component-type="s-search-result"><h2><span>商品 A</span></h2><img class="s-image" src="https://example.com/a.jpg"></div><div role="listitem" data-asin="B087654321" data-component-type="s-search-result"><h2><span>商品 B</span></h2><img class="s-image" src="https://example.com/b.jpg"></div>'''
