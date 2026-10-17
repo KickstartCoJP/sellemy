@@ -1,0 +1,303 @@
+{
+  "stage3_base": "5f3c9fa639e74bb3eb3b191f3681cd7a2dbc939e",
+  "production_head": "a8d1f5838bacf784115904f13d41b078798645cb",
+  "scope_total": 57,
+  "counts": {
+    "conflict_or_requires_line_review": 17,
+    "already_in_production": 17,
+    "not_appropriate_for_runtime_merge": 20,
+    "integration_required": 3
+  },
+  "files": [
+    {
+      "path": "config/comparison-acceptance.md",
+      "classification": "conflict_or_requires_line_review",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "config/publishing-control.json",
+      "classification": "conflict_or_requires_line_review",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "config/sellemy-codex-canon-bootstrap.md",
+      "classification": "already_in_production",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "data/evidence/home-inkjet-printers-nengajo-6-picks.json",
+      "classification": "not_appropriate_for_runtime_merge",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "data/payloads/aroma-diffusers-6-picks.json",
+      "classification": "not_appropriate_for_runtime_merge",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "data/payloads/autumn-humidifiers-6-picks.json",
+      "classification": "not_appropriate_for_runtime_merge",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "data/payloads/concealer-6-picks.json",
+      "classification": "not_appropriate_for_runtime_merge",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "data/payloads/digital-thermometers-6-picks.json",
+      "classification": "not_appropriate_for_runtime_merge",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "data/payloads/disinfectant-sprays-6-picks.json",
+      "classification": "not_appropriate_for_runtime_merge",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "data/payloads/disposable-hand-warmers-6-picks.json",
+      "classification": "not_appropriate_for_runtime_merge",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "data/payloads/heat-tech-socks-6-picks.json",
+      "classification": "not_appropriate_for_runtime_merge",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "data/payloads/home-inkjet-printers-nengajo-6-picks.json",
+      "classification": "not_appropriate_for_runtime_merge",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "data/payloads/non-metal-tire-chains-6-picks.json",
+      "classification": "not_appropriate_for_runtime_merge",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "data/payloads/pet-heating-beds-6-picks.json",
+      "classification": "not_appropriate_for_runtime_merge",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "data/payloads/retinol-serums-6-picks.json",
+      "classification": "not_appropriate_for_runtime_merge",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "data/payloads/slow-cookers-6-picks.json",
+      "classification": "not_appropriate_for_runtime_merge",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "ops/run-growth.sh",
+      "classification": "conflict_or_requires_line_review",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "pipeline/adaptive_publish.py",
+      "classification": "already_in_production",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "pipeline/comparison_acceptance.py",
+      "classification": "conflict_or_requires_line_review",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "pipeline/growth_recovery.py",
+      "classification": "conflict_or_requires_line_review",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "pipeline/growth_runtime.py",
+      "classification": "conflict_or_requires_line_review",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "pipeline/payload_schema.py",
+      "classification": "already_in_production",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "pipeline/planning_runtime.py",
+      "classification": "conflict_or_requires_line_review",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "pipeline/product_selection.py",
+      "classification": "conflict_or_requires_line_review",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "pipeline/publish_gate.py",
+      "classification": "already_in_production",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "pipeline/publish_payload.py",
+      "classification": "already_in_production",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "pipeline/qa.py",
+      "classification": "integration_required",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "pipeline/responses_provider.py",
+      "classification": "conflict_or_requires_line_review",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "pipeline/review_gate.py",
+      "classification": "already_in_production",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "pipeline/semantic_review.py",
+      "classification": "conflict_or_requires_line_review",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "pipeline/writer_runtime.py",
+      "classification": "conflict_or_requires_line_review",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "tests/fixtures.py",
+      "classification": "already_in_production",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "tests/fixtures/quality_recovery/README.md",
+      "classification": "already_in_production",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "tests/fixtures/quality_recovery/book-reading-stands.evidence.json",
+      "classification": "already_in_production",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "tests/fixtures/quality_recovery/book-reading-stands.payloads.json",
+      "classification": "already_in_production",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "tests/fixtures/quality_recovery/good-reading-stands.evidence.json",
+      "classification": "already_in_production",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "tests/fixtures/quality_recovery/good-reading-stands.payloads.json",
+      "classification": "already_in_production",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "tests/fixtures/quality_recovery/replacement-bathtub-covers.evidence.json",
+      "classification": "already_in_production",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "tests/fixtures/quality_recovery/replacement-bathtub-covers.payloads.json",
+      "classification": "already_in_production",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "tests/fixtures/quality_recovery/tabletop-insulated-serving-pots-6-picks.evidence.json",
+      "classification": "already_in_production",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "tests/fixtures/quality_recovery/tabletop-insulated-serving-pots-6-picks.payloads.json",
+      "classification": "already_in_production",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "tests/quality_fixtures.py",
+      "classification": "conflict_or_requires_line_review",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "tests/run_quality_offline.py",
+      "classification": "conflict_or_requires_line_review",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "tests/test_adaptive_publish.py",
+      "classification": "already_in_production",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "tests/test_comparison_acceptance.py",
+      "classification": "conflict_or_requires_line_review",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "tests/test_growth_runtime.py",
+      "classification": "conflict_or_requires_line_review",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "tests/test_responses_provider.py",
+      "classification": "conflict_or_requires_line_review",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "tests/test_writer_providers.py",
+      "classification": "conflict_or_requires_line_review",
+      "source": "tracked_stage3_diff"
+    },
+    {
+      "path": "CODEX_STAGE3_REPORT.md",
+      "classification": "not_appropriate_for_runtime_merge",
+      "source": "untracked"
+    },
+    {
+      "path": "config/staged/brief.md",
+      "classification": "not_appropriate_for_runtime_merge",
+      "source": "untracked"
+    },
+    {
+      "path": "config/staged/shared-brief.patch",
+      "classification": "not_appropriate_for_runtime_merge",
+      "source": "untracked"
+    },
+    {
+      "path": "pipeline/amazon_browser_audit_runtime.py",
+      "classification": "not_appropriate_for_runtime_merge",
+      "source": "untracked"
+    },
+    {
+      "path": "pipeline/amazon_visible_capture.mjs",
+      "classification": "not_appropriate_for_runtime_merge",
+      "source": "untracked"
+    },
+    {
+      "path": "pipeline/product_image_audit.py",
+      "classification": "integration_required",
+      "source": "untracked"
+    },
+    {
+      "path": "pipeline/sellemy_audit_pipeline.py",
+      "classification": "not_appropriate_for_runtime_merge",
+      "source": "untracked"
+    },
+    {
+      "path": "pipeline/sellemy_visual_compare.py",
+      "classification": "not_appropriate_for_runtime_merge",
+      "source": "untracked"
+    },
+    {
+      "path": "tests/test_product_image_audit.py",
+      "classification": "integration_required",
+      "source": "untracked"
+    }
+  ],
+  "notes": [
+    "Comparison is against Stage3 dirty worktree, preserving its uncommitted changes; not a blanket cherry-pick.",
+    "Stage3 base commit is in its own repository history, not current production HEAD.",
+    "Untracked stage3-artifacts excluded (three generated audit files)."
+  ]
+}
