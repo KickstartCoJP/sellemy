@@ -149,6 +149,19 @@ def select_viable_topic(
                     evidence = build_evidence(topic, six, selection)
                     acceptance = independent_review(evidence)
                     issues = receipt_issues(acceptance, evidence)
+                    if issues and _researchable_candidates(six, cache_only=cache_only):
+                        # Do not make official URLs a global prerequisite. Escalate only
+                        # when independent QA finds the existing attributable facts weak.
+                        enriched = research_selected(six, prefer_official=True)
+                        new_sources = {row['asin']: row.get('sources') for row in enriched}
+                        if any(row.get('sources') != prior.get('sources')
+                               for row, prior in zip(enriched, six)):
+                            products = [{**row, 'sources': new_sources[row['asin']]}
+                                        if row['asin'] in new_sources else row for row in products]
+                            six, selection = select_six(products, topic, feedback)
+                            evidence = build_evidence(topic, six, selection)
+                            acceptance = independent_review(evidence)
+                            issues = receipt_issues(acceptance, evidence)
                     if issues:
                         probes[-1]['acceptance'] = blocked(issues)
                         continue

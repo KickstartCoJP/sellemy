@@ -176,6 +176,29 @@ class ProductViabilityPlanningTests(unittest.TestCase):
         self.assertEqual(topic['slug'], 'research-second')
         self.assertEqual(research.call_count, 2)
 
+    def test_official_research_retries_only_after_independent_rejection(self):
+        topic = self._topic('evidence-escalation')
+        rows = [{'asin': f'B0TEST{i:04d}', 'amazon_title': f'Model {i}',
+                 'image_url': f'https://example.com/{i}.jpg',
+                 'sources': [{'source_type': 'marketplace_item', 'verified': True,
+                              'excerpt': f'Model {i} details'}]} for i in range(6)]
+        enriched = [{**p, 'sources': [*p['sources'], {'source_type': 'manufacturer_official',
+                     'verified': True, 'excerpt': f'Model {i} official facts'}]}
+                    for i, p in enumerate(rows)]
+        with (patch.object(growth_runtime, 'rank_candidates', return_value=[topic]),
+              patch.object(growth_runtime, 'discover_products', return_value=rows),
+              patch.object(growth_runtime, 'research_selected', side_effect=[rows, enriched]) as research,
+              patch.object(growth_runtime, 'select_six', side_effect=[(rows, {}), (enriched, {})]),
+              patch.object(growth_runtime, 'receipt_issues', side_effect=[['facts insufficient'], []]) as check,
+              patch.object(growth_runtime, 'independent_review') as review):
+            chosen, candidates, _ = growth_runtime.select_viable_topic([topic], {}, cache_only=False)
+        self.assertEqual(chosen['slug'], 'evidence-escalation')
+        self.assertEqual(candidates, enriched)
+        self.assertEqual(research.call_count, 2)
+        self.assertEqual(research.call_args_list[1].kwargs, {'prefer_official': True})
+        self.assertEqual(review.call_count, 2)
+        self.assertEqual(check.call_count, 2)
+
     def test_axis_rejected_first_topic_scans_valid_second_without_creating_job(self):
         first, second = self._topic('first-topic'), self._topic('second-topic')
         products = [{'asin': f'B0TEST{i:04d}'} for i in range(8)]
