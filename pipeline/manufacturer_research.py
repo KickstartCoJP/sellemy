@@ -9,7 +9,7 @@ from concurrent.futures import ThreadPoolExecutor
 from product_sources import fetch_manufacturer_source
 
 
-def research_selected(products, *, cache_only=False):
+def research_selected(products, *, cache_only=False, prefer_official=False):
     if cache_only or not products:
         return products
     # Manufacturer research is supplementary, not a mandatory fetch stage.
@@ -17,6 +17,7 @@ def research_selected(products, *, cache_only=False):
     # the independent reviewer still decides whether they are adequate for each claim.
     needs = [p for p in products[:18] if not any(
         s.get('verified') is True and str(s.get('excerpt') or '').strip()
+        and (not prefer_official or s.get('source_type') == 'manufacturer_official')
         for s in p.get('sources', []) if isinstance(s, dict))]
     if not needs:
         return products
@@ -31,7 +32,7 @@ def research_selected(products, *, cache_only=False):
         result = subprocess.run([*command, '--search', 'exec', '--ephemeral', '--json',
                                  '--skip-git-repo-check', '--sandbox', 'read-only',
                                  '--model', 'gpt-6-sol', '-'], input=prompt, text=True,
-                                capture_output=True, timeout=75)
+                                capture_output=True, timeout=140)
         if result.returncode:
             return products
         messages = []

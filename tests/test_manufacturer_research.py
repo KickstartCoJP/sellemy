@@ -180,3 +180,13 @@ def test_verified_marketplace_item_makes_official_lookup_optional():
     with patch('manufacturer_research.subprocess.run') as codex:
         assert research_selected([product]) == [product]
     codex.assert_not_called()
+
+
+def test_official_escalation_researches_marketplace_only_source():
+    product = {**PRODUCT, 'sources': [{'source_type': 'marketplace_item', 'verified': True,
+                                     'url': 'https://www.amazon.co.jp/dp/B012345678',
+                                     'excerpt': 'AMBiQUE 250g'}]}
+    with patch('manufacturer_research.subprocess.run') as codex:
+        codex.return_value = Mock(returncode=1, stdout='')
+        assert research_selected([product], prefer_official=True) == [product]
+    codex.assert_called_once()
