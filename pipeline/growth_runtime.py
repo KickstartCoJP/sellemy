@@ -126,7 +126,6 @@ def select_viable_topic(
     planning_candidates: list[dict] | None, feedback: dict, *, cache_only: bool, max_rounds: int = 3
 ) -> tuple[dict, list[dict], list[dict]]:
     probes = []
-    source_research_used = False
     tried_slugs: set[str] = set()
     rounds = 1 if planning_candidates is not None else max(1, int(max_rounds))
     for round_index in range(rounds):
@@ -144,9 +143,8 @@ def select_viable_topic(
                 probes.append({'round': round_index + 1, 'slug': topic['slug'], 'candidate_count': 0, 'error': f'{type(exc).__name__}: {exc}'})
             if len(products) >= 6:
                 try:
-                    if not source_research_used and _researchable_candidates(products, cache_only=cache_only):
+                    if _researchable_candidates(products, cache_only=cache_only):
                         products = research_selected(products)
-                        source_research_used = True
                     six, selection = select_six(products, topic, feedback)
                     evidence = build_evidence(topic, six, selection)
                     acceptance = independent_review(evidence)
