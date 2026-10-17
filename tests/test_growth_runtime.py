@@ -170,11 +170,13 @@ class ProductViabilityPlanningTests(unittest.TestCase):
         with (patch.object(growth_runtime, 'rank_candidates', return_value=[first, second]),
               patch.object(growth_runtime, 'discover_products', return_value=rows),
               patch.object(growth_runtime, 'research_selected', return_value=rows) as research,
+              patch.object(growth_runtime, 'replenish_products', return_value=(rows, [])),
               patch.object(growth_runtime, 'select_six', side_effect=[
-                  growth_runtime.ProductSelectionError('not enough evidence'), (rows, {})])):
+                  growth_runtime.ProductSelectionError('not enough evidence'),
+                  growth_runtime.ProductSelectionError('still not enough evidence'), (rows, {})])):
             topic, _, _ = growth_runtime.select_viable_topic([first, second], {}, cache_only=False)
         self.assertEqual(topic['slug'], 'research-second')
-        self.assertEqual(research.call_count, 2)
+        self.assertEqual(research.call_count, 3)
 
     def test_official_research_retries_only_after_independent_rejection(self):
         topic = self._topic('evidence-escalation')
@@ -231,8 +233,10 @@ class ProductViabilityPlanningTests(unittest.TestCase):
         with (
             patch.object(growth_runtime, 'rank_candidates', return_value=[first, second]),
             patch.object(growth_runtime, 'discover_products', side_effect=[products, products]),
+            patch.object(growth_runtime, 'replenish_products', return_value=(products, [])),
             patch.object(growth_runtime, 'select_six', side_effect=[
                 growth_runtime.ProductSelectionError('only 5 documented topic-axis matches'),
+                growth_runtime.ProductSelectionError('still 5 matches'),
                 (products[:6], {}),
             ]),
             patch.object(growth_runtime, 'independent_review', return_value=accepted),

@@ -113,6 +113,37 @@ def discover_products(topic: dict, *, cache_only: bool) -> list[dict]:
     return distinct
 
 
+
+def replenish_products(topic: dict, products: list[dict], *, cache_only: bool, max_batches: int = 9) -> tuple[list[dict], list[dict]]:
+    """Collect additional, nonidentical batches of up to 18; never invent QA facts."""
+    if cache_only:
+        return products, []
+    axes = topic.get('comparison_axes') or []
+    variants = [
+        f"{topic['query']} {axis.get('label', '')}".strip()
+        for axis in axes
+        if axis.get('label')
+    ]
+    variants.extend((f"{topic['query']} 人気", f"{topic['query']} メーカー", f"{topic['query']} 型番", f"{topic['query']} おすすめ", f"{topic['query']} 比較 2026", f"{topic['query']} ブランド", f"{topic['query']} 最新", f"{topic['query']} 商品一覧", f"{topic['query']} 種類"))
+    traces, seen_queries = [], {topic['query']}
+    merged = list(products)
+    for query in variants[:max_batches]:
+        if query in seen_queries:
+            continue
+        seen_queries.add(query)
+        try:
+            batch = discover_products({**topic, 'query': query}, cache_only=False)
+        except Exception as exc:
+            traces.append({'query': query, 'fetched': 0, 'added': 0, 'error': f'{type(exc).__name__}: {exc}'})
+            continue
+        known = {p['asin'] for p in merged}
+        added = [p for p in batch if p['asin'] not in known]
+        merged, _ = dedupe_content_products([*merged, *added])
+        traces.append({'query': query, 'fetched': len(batch), 'added': len(merged) - len(products), 'error': ''})
+        products = list(merged)
+    return merged, traces
+
+
 def _researchable_candidates(products: list[dict], *, cache_only: bool) -> bool:
     return not cache_only and bool(products) and all(
         isinstance(product, dict)
@@ -204,6 +235,26 @@ def select_viable_topic(
                         continue
                 except ProductSelectionError as exc:
                     reasons = [str(exc)]
+                    if not cache_only:
+                        products, batches = replenish_products(topic, products, cache_only=False)
+                        probes[-1]['additional_batches'] = batches
+                        probes[-1]['candidate_count_after_replenish'] = len(products)
+                        if _researchable_candidates(products, cache_only=False):
+                            products = research_selected(products)
+                        try:
+                            six, selection = select_six(products, topic, feedback)
+                            evidence = build_evidence(topic, six, selection)
+                            acceptance = independent_review(evidence)
+                            issues = receipt_issues(acceptance, evidence)
+                            if not issues:
+                                selected = {**topic, '_product_acceptance': acceptance,
+                                            'selection_reason': 'six products passed independent evidence acceptance'}
+                                if getattr(source, 'provider_metadata', None):
+                                    selected['_planning_provider_metadata'] = source.provider_metadata
+                                return selected, products, probes
+                            reasons.extend(issues)
+                        except ProductSelectionError as retry_error:
+                            reasons.append(str(retry_error))
                     probes[-1]['acceptance'] = blocked(reasons)
                     continue
                 selected = {**topic, '_product_acceptance': acceptance,
