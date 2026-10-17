@@ -162,6 +162,43 @@ def select_viable_topic(
                             evidence = build_evidence(topic, six, selection)
                             acceptance = independent_review(evidence)
                             issues = receipt_issues(acceptance, evidence)
+                    if issues and not cache_only and len(products) > 6:
+                        # Remove only product identities the independent reviewer
+                        # explicitly rejected; never bypass a rejection or reuse its receipt.
+                        reviewed = acceptance.get('review', {})
+                        by_ref = {row['ref']: row['asin'] for row in evidence['products']}
+                        rejected = {by_ref[row['ref']] for row in reviewed.get('products', [])
+                                    if isinstance(row, dict) and row.get('ref') in by_ref
+                                    and (row.get('adequate_facts') is False or row.get('topic_fit') is False)}
+                        alternates = [row for row in products if row['asin'] not in rejected]
+                        if rejected and len(alternates) >= 6:
+                            try:
+                                replacement_six, replacement_selection = select_six(alternates, topic, feedback)
+                                if {r['asin'] for r in replacement_six} != {r['asin'] for r in six}:
+                                    replacement_evidence = build_evidence(topic, replacement_six, replacement_selection)
+                                    replacement_acceptance = independent_review(replacement_evidence)
+                                    replacement_issues = receipt_issues(replacement_acceptance, replacement_evidence)
+                                    if replacement_issues and _researchable_candidates(replacement_six, cache_only=False):
+                                        enriched = research_selected(replacement_six, prefer_official=True)
+                                        if any(row.get('sources') != prior.get('sources')
+                                               for row, prior in zip(enriched, replacement_six)):
+                                            new_sources = {row['asin']: row.get('sources') for row in enriched}
+                                            alternates = [{**row, 'sources': new_sources[row['asin']]}
+                                                          if row['asin'] in new_sources else row for row in alternates]
+                                            replacement_six, replacement_selection = select_six(alternates, topic, feedback)
+                                            replacement_evidence = build_evidence(topic, replacement_six, replacement_selection)
+                                            replacement_acceptance = independent_review(replacement_evidence)
+                                            replacement_issues = receipt_issues(replacement_acceptance, replacement_evidence)
+                                    if not replacement_issues:
+                                        six, selection, evidence, acceptance, issues = (
+                                            replacement_six, replacement_selection,
+                                            replacement_evidence, replacement_acceptance, [])
+                                        by_asin = {row['asin']: row for row in alternates}
+                                        products = [by_asin.get(row['asin'], row) for row in products]
+                                    else:
+                                        issues = [*issues, *replacement_issues]
+                            except ProductSelectionError as exc:
+                                issues = [*issues, str(exc)]
                     if issues:
                         probes[-1]['acceptance'] = blocked(issues)
                         continue

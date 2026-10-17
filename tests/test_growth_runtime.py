@@ -199,6 +199,31 @@ class ProductViabilityPlanningTests(unittest.TestCase):
         self.assertEqual(review.call_count, 2)
         self.assertEqual(check.call_count, 2)
 
+    def test_reviewer_rejected_identity_can_be_replaced_by_verified_alternate(self):
+        topic = self._topic('alternate-evidence')
+        products = [{'asin': f'B0ALT{i:05d}', 'amazon_title': f'Model {i}',
+                     'image_url': f'https://example.com/{i}.jpg',
+                     'sources': [{'verified': True, 'excerpt': f'Model {i} genuine facts'}]}
+                    for i in range(7)]
+        initial, replacement = products[:6], [*products[:5], products[6]]
+        rejected_review = {'review': {'products': [
+            {'ref': f'p{i+1}', 'adequate_facts': i != 5, 'topic_fit': True}
+            for i in range(6)]}}
+        accepted_review = {'review': {'status': 'ACCEPTED', 'products': []}}
+        with (patch.object(growth_runtime, 'rank_candidates', return_value=[topic]),
+              patch.object(growth_runtime, 'discover_products', return_value=products),
+              patch.object(growth_runtime, 'research_selected', side_effect=[products, initial]) as research,
+              patch.object(growth_runtime, 'select_six', side_effect=[(initial, {}), (replacement, {})]),
+              patch.object(growth_runtime, 'build_evidence', side_effect=lambda t, rows, selection: {
+                  'products': [{'ref': f'p{i+1}', 'asin': p['asin']} for i, p in enumerate(rows)]}),
+              patch.object(growth_runtime, 'independent_review', side_effect=[rejected_review, accepted_review]) as reviewer,
+              patch.object(growth_runtime, 'receipt_issues', side_effect=[['p6 lacks evidence'], []])):
+            selected_topic, candidates, _ = growth_runtime.select_viable_topic([topic], {}, cache_only=False)
+        self.assertEqual(selected_topic['slug'], 'alternate-evidence')
+        self.assertEqual({p['asin'] for p in candidates}, {p['asin'] for p in products})
+        self.assertEqual(research.call_count, 2)
+        self.assertEqual(reviewer.call_count, 2)
+
     def test_axis_rejected_first_topic_scans_valid_second_without_creating_job(self):
         first, second = self._topic('first-topic'), self._topic('second-topic')
         products = [{'asin': f'B0TEST{i:04d}'} for i in range(8)]
