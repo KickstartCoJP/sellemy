@@ -41,3 +41,10 @@
 - Added source-anchored structured `manufacturer`, `series`, `model` validation to deterministic Evidence gate. Different ASINs within the same verified manufacturer+series now cause a rejection; no claim is made for unstructured or unattributed series data.
 - Added regression for two ASINs in one verified series. Isolated worktree now **327 passed / 19 subtests**.
 - Unresolved: structured identity provenance across all six products, image downloader integration, full 436 corpus replay, live independent QA calibration and deployed read-back. **Still NO-GO**.
+
+## Conditional release gate execution (2026-10-18 05:14 JST)
+- Full isolated regression: 327 passed, 19 subtests passed.
+- Representative critical bad corpus: 8/8 rejected, 0 missed (3 historic article evidence failures, duplicate independent identity across ASIN, duplicate source-anchored manufacturer series across ASIN, missing independent acceptance, unfinished-publication hold, duplicate image URL).
+- This 8-case set **does not certify the required zero missed across all known serious failures or the 436 corpus**.
+- Deployment remains blocked: image-byte acquisition is not connected to QA, manufacturer/model/series structured verification is incomplete for arbitrary real products, independent live QA accuracy has not been calibrated on a held-out corpus, and deployed read-back has not been demonstrated.
+- No production promotion, publication enablement or new article authoring was performed. Production HEAD preserved as a8d1f58. Growth LaunchAgent is absent from launchctl list.
