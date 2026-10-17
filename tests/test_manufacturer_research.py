@@ -171,3 +171,12 @@ def test_anker_nano_short_name_requires_two_exact_tokens_and_official_ownership(
             assert fetch_manufacturer_source(url, product) is None
     with patch('product_sources.requests.get', return_value=response(url='https://fake.example/products/a2663', body=html)):
         assert fetch_manufacturer_source(url, product) is None
+
+
+def test_verified_marketplace_item_makes_official_lookup_optional():
+    product = {**PRODUCT, 'sources': [{'source_type': 'marketplace_item', 'verified': True,
+                                     'url': 'https://www.amazon.co.jp/dp/B012345678',
+                                     'excerpt': 'AMBiQUE スパークリングスカルプシャンプー 容量250g'}]}
+    with patch('manufacturer_research.subprocess.run') as codex:
+        assert research_selected([product]) == [product]
+    codex.assert_not_called()
