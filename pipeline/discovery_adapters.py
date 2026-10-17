@@ -61,25 +61,6 @@ def parse_amazon_search_results(body,limit=5):
   if len(out)>=limit:break
  return out
 
-def search_amazon_browser(url,limit=5):
- """Use an actual browser when direct HTTP yields errors or no product cards."""
- from playwright.sync_api import sync_playwright
- with sync_playwright() as playwright:
-  browser=playwright.chromium.launch(headless=True,
-   executable_path='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
-   args=['--no-first-run'])
-  try:
-   page=browser.new_page()
-   response=page.goto(url,wait_until='domcontentloaded',timeout=25000)
-   if response is None or response.status != 200:
-    raise RuntimeError(f'Amazon browser search status={response.status if response else None}')
-   rows=parse_amazon_search_results(page.content(),limit=limit)
-   if not rows:
-    raise RuntimeError('Amazon browser search returned no verified listing cards')
-   return rows
-  finally:
-   browser.close()
-
 class AutositeDiscoveryAdapter:
  def __init__(self):
   self.amazon=_load(AMAZON_DATA);self.yahoo=_load(YAHOO_DATA)
@@ -108,14 +89,9 @@ class AutositeDiscoveryAdapter:
   import requests
   base="https://www.amazon.co.jp/s?k="+urllib.parse.quote(query)
   headers={"User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/131 Safari/537.36"}
-  try:
-   response=requests.get(base,headers=headers,timeout=20)
-   response.raise_for_status()
-   rows=parse_amazon_search_results(response.text,limit=limit)
-   if rows:return rows
-  except requests.RequestException:
-   pass
-  return search_amazon_browser(base,limit=limit)
+  response=requests.get(base,headers=headers,timeout=20)
+  response.raise_for_status()
+  return parse_amazon_search_results(response.text,limit=limit)
  def search_yahoo_live(self,query,limit=5):
   collector=_module("autosite_yahoo_collector",AUTOSITE/"yahoo_item/yahoo_url_collector.py")
   scraper=_module("autosite_yahoo_scraper",AUTOSITE/"yahoo_item/yahoo_scraper.py")
