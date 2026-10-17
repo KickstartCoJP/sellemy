@@ -36,3 +36,8 @@
 
 ## Decision
 **NO-GO for Production.** The isolated audit integration is testable, but image evidence ingestion, series identity validation, full known-critical corpus and read-back proof are incomplete. Preserve 436 existing recovery work and hold new article production. No publication resumption is authorized by this audit.
+
+## Follow-up implementation (2026-10-18)
+- Added source-anchored structured `manufacturer`, `series`, `model` validation to deterministic Evidence gate. Different ASINs within the same verified manufacturer+series now cause a rejection; no claim is made for unstructured or unattributed series data.
+- Added regression for two ASINs in one verified series. Isolated worktree now **327 passed / 19 subtests**.
+- Unresolved: structured identity provenance across all six products, image downloader integration, full 436 corpus replay, live independent QA calibration and deployed read-back. **Still NO-GO**.
