@@ -752,41 +752,110 @@ def _eyecatch_and_publish(slug: str, result: dict) -> str:
         raise GrowthRuntimeError(f'publish failed for {slug}; retained for retry: {exc}') from exc
 
 def _reselect_products(slug: str, *, cache_only: bool) -> None:
+    """Keep a durable candidate pool; only return after six products pass QA.
+
+    A failed independent review discards the rejected six-item combination,
+    not the whole discovery history. Search expands on later invocations.
+    """
     topic = dict(read_artifact(slug, 'topic.json'))
     topic.pop('_product_acceptance', None)
+    progress = read_artifact(slug, 'product-search-progress.json', {}) or {}
+    pool = list(progress.get('candidates') or [])
+    excluded = set(progress.get('excluded_asins') or [])
+    tried = list(progress.get('queries') or [])
+    reviewed_sets = set(progress.get('reviewed_sets') or [])
+    previous = read_artifact(slug, 'evidence.json', {})
+    pool.extend(p for p in previous.get('products', [])
+                if all(p.get(k) for k in ('asin', 'amazon_title', 'image_url')))
+    pool, _ = dedupe_content_products(pool)
+
+    def save_progress():
+        write_artifact(slug, 'product-search-progress.json', {
+            'candidates': pool, 'excluded_asins': sorted(excluded),
+            'queries': tried, 'reviewed_sets': sorted(reviewed_sets),
+            'complete': False,
+        })
+
     try:
-        products = discover_products(topic, cache_only=cache_only)
-        if not cache_only and topic.get('query'):
-            previous = read_artifact(slug, 'evidence.json', {})
-            retained = [p for p in previous.get('products', []) if all(p.get(k) for k in ('asin','amazon_title','image_url'))]
-            products, _ = dedupe_content_products([*retained, *products])
-            products, batches = replenish_products(topic, products, cache_only=False)
-            write_artifact(slug, 'reselection-batches.json', batches)
-        if _researchable_candidates(products, cache_only=cache_only):
-            products = research_selected(products)
-        selected, selection = select_six(products, topic, load_feedback())
-        evidence = build_evidence(topic, selected, selection)
-        prior=read_artifact(slug,'evidence.json',{})
-        from comparison_acceptance import digest
-        def semantic_source_fingerprint(value):
-            records=sorted(({'asin':item.get('asin'),'title':item.get('amazon_title'),
-                             'brand':item.get('brand'),'sources':item.get('sources',[])}
-                            for item in value.get('products',[])),key=lambda row:str(row['asin']))
-            return digest({'comparison_axes':value.get('comparison_axes'),'products':records})
-        if (prior.get('product_acceptance') and product_issues(prior)
-                and semantic_source_fingerprint(prior) == semantic_source_fingerprint(evidence)):
-            request_product_reselection(slug,['unchanged evidence from previously rejected independent semantic review'])
-            raise GrowthRuntimeError(f'needs_product_reselection for {slug}; exact evidence unchanged')
-        evidence['product_acceptance'] = independent_review(evidence)
-        issues = product_issues(evidence)
-        if issues:
-            request_product_reselection(slug, issues)
-            raise GrowthRuntimeError(f'needs_product_reselection for {slug}; evidence still insufficient')
-        replace_product_evidence(slug, evidence, selection)
+        # Each invocation performs bounded work; retries resume the persisted pool.
+        # The query space expands deterministically rather than repeating the
+        # original six products forever.
+        terms = ('', '型番', 'メーカー', '製品', '仕様', '容量', 'サイズ',
+                 '標準', '国内正規品', '機能', '比較', '新型', '高耐久',
+                 '家庭用', '業務用', 'ブランド', '種類', '用途')
+        base = product_search_query(topic)
+        cursor = len(tried)
+        for offset in range(3):
+            n = cursor + offset
+            if n < len(terms):
+                suffix = terms[n]
+            else:
+                left = terms[1 + ((n-len(terms)) % (len(terms)-1))]
+                right = terms[1 + ((n-len(terms)) // (len(terms)-1) % (len(terms)-1))]
+                suffix = left + ' ' + right
+            query = (base + ' ' + suffix).strip()
+            found = discover_products({**topic, 'query': query}, cache_only=cache_only)
+            pool, _ = dedupe_content_products([*pool, *found])
+            tried.append({'query': query, 'new_pool_total': len(pool)})
+            save_progress()
+
+        available = [p for p in pool if p.get('asin') not in excluded]
+        if _researchable_candidates(available, cache_only=cache_only):
+            available = research_selected(available[:18]) + available[18:]
+            updated = {p['asin']: p for p in available}
+            pool = [updated.get(p['asin'], p) for p in pool]
+            save_progress()
+        feedback = load_feedback()
+        while len(available) >= 6:
+            selected, selection = select_six(available, topic, feedback)
+            six_asins = tuple(sorted(p['asin'] for p in selected))
+            signature = '|'.join(six_asins)
+            if signature in reviewed_sets:
+                break
+            evidence = build_evidence(topic, selected, selection)
+            if previous.get('product_acceptance') and product_issues(previous):
+                from comparison_acceptance import digest
+                def fingerprint(value):
+                    records = sorted(({'asin': item.get('asin'), 'title': item.get('amazon_title'),
+                                       'brand': item.get('brand'), 'sources': item.get('sources', [])}
+                                      for item in value.get('products', [])), key=lambda x: str(x['asin']))
+                    return digest({'comparison_axes': value.get('comparison_axes'), 'products': records})
+                if fingerprint(previous) == fingerprint(evidence):
+                    reviewed_sets.add(signature)
+                    save_progress()
+                    request_product_reselection(slug, ['exact evidence unchanged from rejected review'])
+                    raise GrowthRuntimeError(f'exact evidence unchanged for {slug}')
+            evidence['product_acceptance'] = independent_review(evidence)
+            issues = product_issues(evidence)
+            reviewed_sets.add(signature)
+            if not issues:
+                replace_product_evidence(slug, evidence, selection)
+                write_artifact(slug, 'product-search-progress.json', {
+                    'candidates': pool, 'excluded_asins': sorted(excluded),
+                    'queries': tried, 'reviewed_sets': sorted(reviewed_sets),
+                    'complete': True,
+                })
+                return
+            review = (evidence.get('product_acceptance') or {}).get('review') or {}
+            by_ref = {p['ref']: p['asin'] for p in evidence['products']}
+            rejected = {by_ref[p['ref']] for p in review.get('products', [])
+                        if isinstance(p, dict) and p.get('ref') in by_ref
+                        and (p.get('adequate_facts') is False or p.get('topic_fit') is False)}
+            # Never remove all six without reviewer-specific rejection evidence.
+            if not rejected:
+                break
+            excluded.update(rejected)
+            available = [p for p in pool if p.get('asin') not in excluded]
+            save_progress()
+        save_progress()
+        request_product_reselection(slug, ['continue candidate search until six products pass independent evidence QA'])
+        raise GrowthRuntimeError(f'product discovery still in progress for {slug}')
     except ProductSelectionError as exc:
+        save_progress()
         request_product_reselection(slug, [str(exc)])
         raise GrowthRuntimeError(f'needs_product_reselection for {slug}') from exc
     except (ResponsesError, OSError, requests.RequestException) as exc:
+        save_progress()
         mark_failure(slug, stage='product', failure_class='runtime_infrastructure',
                      failure_code='PRODUCT_RESELECTION_UNAVAILABLE', reason=str(exc), role='planning')
         raise GrowthRuntimeError(f'product reselection unavailable for {slug}') from exc
