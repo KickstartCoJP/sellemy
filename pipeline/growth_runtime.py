@@ -708,6 +708,12 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
     topic.pop('_product_acceptance', None)
     try:
         products = discover_products(topic, cache_only=cache_only)
+        if not cache_only and topic.get('query'):
+            previous = read_artifact(slug, 'evidence.json', {})
+            retained = [p for p in previous.get('products', []) if all(p.get(k) for k in ('asin','amazon_title','image_url'))]
+            products, _ = dedupe_content_products([*retained, *products])
+            products, batches = replenish_products(topic, products, cache_only=False)
+            write_artifact(slug, 'reselection-batches.json', batches)
         if _researchable_candidates(products, cache_only=cache_only):
             products = research_selected(products)
         selected, selection = select_six(products, topic, load_feedback())
