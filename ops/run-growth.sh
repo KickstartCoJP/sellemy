@@ -7,9 +7,20 @@ PY="$ROOT/.venv/bin/python"
 GA4PY="$ROOT/.venv/bin/python"
 export SELLEMY_ROOT="$ROOT"
 SECRETS=/Users/kickstart/ai-management-os/.env
-LOCK=/tmp/sellemy-growth.lock
-if ! mkdir "$LOCK" 2>/dev/null; then echo "$(date -Iseconds) already running"; exit 0; fi
-trap 'rmdir "$LOCK"' EXIT
+# OS-managed advisory lock releases even after SIGKILL; no stale directory can block production.
+if [[ "${SELLEMY_GROWTH_LOCKED:-}" != "1" ]]; then
+  export SELLEMY_GROWTH_LOCKED=1
+  if /usr/bin/lockf -t 0 /tmp/sellemy-growth.lockfile /bin/zsh "$0" "$@"; then
+    exit 0
+  else
+    LOCK_RC=$?
+    if (( LOCK_RC == 75 )); then
+      echo "$(date -Iseconds) already running"
+      exit 0
+    fi
+    exit "$LOCK_RC"
+  fi
+fi
 cd "$ROOT"
 if [[ -f "$SECRETS" ]]; then set -a; source "$SECRETS"; set +a; fi
 SELLEMY_SECRETS="$HOME/Library/Application Support/Sellemy/secrets/openai.env"
