@@ -91,7 +91,13 @@ def select_six(candidates: list[dict], topic: dict, feedback: dict) -> tuple[lis
             brand_bonus = .12 if candidate.get('brand') and candidate['brand'].lower() not in brands else 0
             coverage_bonus = .18 * len(matches - covered)
             price_balance = .05 if median and candidate.get('observed_price') and ((candidate['observed_price'] <= median) != any(p.get('observed_price', median) <= median for p in selected)) else 0
-            score = relevance * .30 + identity * .25 + learning * .10 + brand_bonus + coverage_bonus + price_balance
+            # Prefer comparable products with independent official documentation;
+            # source presence is a ranking signal, not a substitute for QA acceptance.
+            sources = [source for source in candidate.get('sources') or []
+                       if isinstance(source, dict) and source.get('verified') is True]
+            source_bonus = .22 if any(s.get('source_type') == 'manufacturer_official'
+                                          for s in sources) else (.08 if sources else 0)
+            score = relevance * .30 + identity * .25 + learning * .10 + brand_bonus + coverage_bonus + price_balance + source_bonus
             scored.append((score, candidate['asin'], candidate, matches))
         score, _asin, choice, matches = max(scored, key=lambda row: (row[0], row[1]))
         selected.append({**choice, 'selection_score': round(score, 6), 'matched_comparison_axes': sorted(matches)})
