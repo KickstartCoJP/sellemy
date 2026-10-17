@@ -90,7 +90,7 @@ print('1' if pending else '0')
 PYRECOVERY
 )"
 if [[ "$RECOVERY_PENDING" == "1" ]]; then
-  "$PY" pipeline/growth_runtime.py --publish
+  "$PY" pipeline/run_with_timeout.py 900 "$PY" pipeline/growth_runtime.py --publish
   "$PY" pipeline/article_publication_metrics.py >/dev/null || true
   "$GA4PY" pipeline/actuals_adapter.py --sync || true
   exit 0
@@ -182,7 +182,7 @@ fi
 "$GA4PY" pipeline/actuals_adapter.py --sync
 GROWTH_RC=0
 if [[ "$PUBLISH_ALLOWED" == "1" ]]; then
-  "$PY" pipeline/growth_runtime.py --publish --scheduled || GROWTH_RC=$?
+  "$PY" pipeline/run_with_timeout.py 900 "$PY" pipeline/growth_runtime.py --publish --scheduled || GROWTH_RC=$?
 else
   echo "$(date -Iseconds) global publishing kill switch disabled; metrics remain enabled"
 fi
