@@ -162,6 +162,20 @@ class ProductViabilityPlanningTests(unittest.TestCase):
         research.assert_called_once_with(products)
         select.assert_called_once_with(products, topic, {})
 
+    def test_source_research_runs_again_for_next_topic_after_first_rejected(self):
+        first, second = self._topic('research-first'), self._topic('research-second')
+        rows = [{'asin': f'B0RESE{i:04d}', 'amazon_title': f'Model {i}',
+                 'image_url': f'https://example.com/{i}.jpg', 'sources': []}
+                for i in range(6)]
+        with (patch.object(growth_runtime, 'rank_candidates', return_value=[first, second]),
+              patch.object(growth_runtime, 'discover_products', return_value=rows),
+              patch.object(growth_runtime, 'research_selected', return_value=rows) as research,
+              patch.object(growth_runtime, 'select_six', side_effect=[
+                  growth_runtime.ProductSelectionError('not enough evidence'), (rows, {})])):
+            topic, _, _ = growth_runtime.select_viable_topic([first, second], {}, cache_only=False)
+        self.assertEqual(topic['slug'], 'research-second')
+        self.assertEqual(research.call_count, 2)
+
     def test_axis_rejected_first_topic_scans_valid_second_without_creating_job(self):
         first, second = self._topic('first-topic'), self._topic('second-topic')
         products = [{'asin': f'B0TEST{i:04d}'} for i in range(8)]

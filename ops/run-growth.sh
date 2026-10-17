@@ -131,7 +131,7 @@ else:
         assert attempted.tzinfo is not None
         assert all(type(value[p]['collector_rc']) is int for p in ('amazon','rakuten'))
         age=datetime.now(timezone.utc)-attempted
-        print('1' if timedelta(hours=6) <= age <= timedelta(days=3650) else '0')
+        print('1' if timedelta(hours=1 if any(value[p]['collector_rc'] != 0 for p in ('amazon','rakuten')) else 6) <= age <= timedelta(days=3650) else '0')
     except (ValueError,TypeError,KeyError,AssertionError,OverflowError):
         print('0')  # Invalid state must not trigger another browser run.
 PYDUE

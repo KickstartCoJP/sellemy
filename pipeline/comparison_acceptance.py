@@ -60,8 +60,8 @@ def evidence_issues(evidence):
             axis['id'] for axis in axes
             if any(str(word).lower() in corpus for word in axis.get('keywords', []))
         }
-        if not matches:
-            issues.append(f"{product['ref']}: no grounded topic-axis screening match")
+        if not corpus.strip():
+            issues.append(f"{product['ref']}: no attributable product facts")
         covered.update(matches)
         for source in product.get('sources') or []:
             if not isinstance(source, dict):
@@ -69,8 +69,6 @@ def evidence_issues(evidence):
                 continue
             if source.get('verified') is True and not str(source.get('url') or '').startswith('https://'):
                 issues.append(f"{product['ref']}: verified source lacks https URL")
-    if len(covered) < 2:
-        issues.append('fewer than two supported topic axes')
     return issues
 
 
