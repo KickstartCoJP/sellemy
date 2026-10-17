@@ -46,6 +46,37 @@ def _normalized(value):
     return re.sub(r'[^a-z0-9ぁ-んァ-ヶ一-龥]', '', unicodedata.normalize('NFKC', value).lower())
 
 
+def _manufacturer_excerpt(soup, brand, identity):
+    """Keep verbatim product blocks from a page whose identity is already verified."""
+    from bs4 import BeautifulSoup
+
+    root = soup.select_one('main') or soup.select_one('article') or soup.body or soup
+    content = BeautifulSoup(str(root), 'html.parser')
+    for node in content.select('script, style, nav, header, footer, aside, form, noscript'):
+        node.decompose()
+    unrelated = re.compile(r'おすすめ|関連商品|こちらもチェック|人気商品|you may also like|related products|recommendations', re.I)
+    for node in content.select('section, article, div'):
+        if node.parent is None:
+            continue
+        label = ' '.join((node.get('id', ''), ' '.join(node.get('class', []))))
+        heading = node.find(re.compile(r'^h[1-6]$'), recursive=False)
+        if unrelated.search(label) or (heading and unrelated.search(heading.get_text(' ', strip=True))):
+            node.decompose()
+    blocks = []
+    for node in content.find_all(re.compile(r'^h[1-6]$|^(p|li|dt|dd|tr)$')):
+        if node.find_parent(['p', 'li', 'dt', 'dd', 'tr']):
+            continue
+        value = re.sub(r'\s+', ' ', node.get_text(' ', strip=True)).strip()
+        if value and len(value) <= 1000 and value not in blocks:
+            blocks.append(value)
+    if not blocks:
+        blocks = [re.sub(r'\s+', ' ', x).strip() for x in content.stripped_strings]
+    # Keep the product heading and its adjacent facts; a model mention need not recur
+    # in every specification row. The verified page, not search text, supplies all lines.
+    excerpt = '\n'.join(blocks)
+    return excerpt[:8000].rsplit('\n', 1)[0] if len(excerpt) > 8000 and '\n' in excerpt[:8000] else excerpt[:8000]
+
+
 def fetch_amazon_item_source(asin, listing_title):
     """Return only text fetched from the matching HTTPS item page."""
     if not re.fullmatch(r'[A-Z0-9]{10}', asin or ''):
@@ -122,6 +153,7 @@ def fetch_manufacturer_source(url, product):
     if urlsplit(url).hostname.lower() != urlsplit(response.url).hostname.lower():
         return None
     soup = BeautifulSoup(response.text, 'html.parser')
+    excerpt_soup = BeautifulSoup(response.text, 'html.parser')
     title = soup.title.get_text(' ', strip=True) if soup.title else ''
     ownership_text = ' '.join(x.get_text(' ', strip=True) for x in soup.select('main, footer'))
     footer_text = ' '.join(x.get_text(' ', strip=True) for x in soup.select('footer'))
@@ -180,8 +212,7 @@ def fetch_manufacturer_source(url, product):
         return None
     if not (domain_brand or corporate_relation or (not brand and attribution)):
         return None
-    excerpt = '\n'.join(x for x in lines if brand in _normalized(x) or _normalized(identity) in _normalized(x)
-                        or re.search(r'メーカー|製造販売元|販売元|会社名|製造元|manufacturer|brand owner|内容量|成分|容量|使用方法|洗浄|泡|頭皮|250g', x, re.I))[:6000]
+    excerpt = _manufacturer_excerpt(excerpt_soup, brand, identity)
     if not excerpt:
         return None
     return {'url': response.url, 'title': title, 'excerpt': excerpt,
