@@ -115,6 +115,35 @@ def test_current_official_charger_pages(url, brand, listing, title, footer):
     assert listing in source['excerpt']
 
 
+def test_verified_charger_excerpt_keeps_spec_blocks_and_excludes_chrome():
+    url = 'https://www.ankerjapan.com/products/a2663'
+    product = {'brand': 'Anker', 'amazon_title': 'Anker Nano II 65W 急速充電器'}
+    html = '''<html><title>Anker Nano II 65W | Anker 公式</title>
+    <header>会員登録でお得</header><nav>全商品一覧</nav><main>
+    <h1>Anker Nano II 65W 急速充電器</h1>
+    <p>USB-Cポートの最大出力は65Wです。</p>
+    <h2>製品仕様</h2><table><tr><th>ポート数</th><td>USB-C 1ポート</td></tr>
+    <tr><th>対応規格</th><td>USB PD / PPS</td></tr></table>
+    <ul><li>GaN IIを採用しています。</li></ul>
+    <section class="related-products"><h2>関連商品</h2><p>別の充電器をおすすめします。</p></section>
+    </main><footer>© Anker Japan Co., Ltd.</footer></html>'''
+    with patch('product_sources.requests.get', return_value=response(url=url, body=html)):
+        source = fetch_manufacturer_source(url, product)
+    assert source is not None
+    for fact in ('USB-Cポートの最大出力は65Wです。', '製品仕様', 'USB-C 1ポート',
+                 'USB PD / PPS', 'GaN IIを採用しています。'):
+        assert fact in source['excerpt']
+    assert '会員登録でお得' not in source['excerpt']
+    assert '別の充電器' not in source['excerpt']
+
+
+def test_verified_shampoo_excerpt_keeps_usage_without_keyword():
+    html = HTML.replace('</main>', '<h2>使い方</h2><p>適量を手に取り、よくすすいでください。</p></main>')
+    with patch('product_sources.requests.get', return_value=response(body=html)):
+        source = fetch_manufacturer_source(URL, PRODUCT)
+    assert '適量を手に取り、よくすすいでください。' in source['excerpt']
+
+
 def test_unrelated_host_cannot_claim_official_with_corporate_footer():
     url = 'https://unrelated.example/products/nexode-pro'
     html = ('<title>UGREEN Nexode Pro 65W 公式</title><main>UGREEN Nexode Pro 65W</main>'
