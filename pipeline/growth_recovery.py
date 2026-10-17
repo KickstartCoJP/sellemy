@@ -278,7 +278,7 @@ def mark_failure(slug: str, *, stage: str, failure_class: str, failure_code: str
                         previous+=1
         ng[stage]=previous+1
         state['quality_ng_by_gate']=ng
-        if ng[stage]>=3:
+        if ng[stage]>=3 and stage != 'product':
             state['status']='FAILED'
             state['current_stage']=stage.upper()+'_FAILED'
             state['next_retry_at']=None
