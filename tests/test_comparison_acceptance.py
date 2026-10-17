@@ -74,6 +74,16 @@ class ContractTests(unittest.TestCase):
         receipt['review']['products'][1]['identity_key'] = receipt['review']['products'][0]['identity_key']
         self.assertIn('same independent product identity across listings', receipt_issues(receipt, evidence, payload))
 
+    def test_different_asins_same_verified_manufacturer_series_fail(self):
+        payload, evidence, receipt = accepted_fixture()
+        for index in (0, 1):
+            product = evidence['products'][index]
+            product['sources'][0]['identity'] = {'manufacturer': 'SampleMaker', 'series': 'Series100', 'model': f'Model{index}'}
+            product['sources'][0]['excerpt'] += f" SampleMaker Series100 Model{index}"
+        issues = evidence_issues(evidence)
+        self.assertTrue(any('same manufacturer series' in issue for issue in issues), issues)
+        self.assertTrue(acceptance_issues(payload, evidence, receipt))
+
     def test_source_anchors_missing_product_and_unfulfilled_criteria_fail(self):
         for mutate in [lambda r: r['products'].pop(),
                        lambda r: r['products'][0]['axis_support'][0].update(quote='invented fact'),

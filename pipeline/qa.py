@@ -1,5 +1,6 @@
 from __future__ import annotations
 import re
+import os
 from comparison_acceptance import acceptance_issues
 
 from affiliate_config import AMAZON_TRACKING_ID
@@ -116,7 +117,7 @@ def find_shared_openings_endings(descriptions: list[str], prefix_len: int = 12, 
     return dup_openings, dup_endings
 
 
-def run_qa(html: str, payload: dict, evidence: dict, *, acceptance: dict | None = None, require_semantic_acceptance: bool = True) -> dict:
+def run_qa(html: str, payload: dict, evidence: dict, *, acceptance: dict | None = None, require_semantic_acceptance: bool = True, image_audit: dict | None = None) -> dict:
     issues = acceptance_issues(payload, evidence, acceptance) if require_semantic_acceptance else []
     results: dict = {'semantic_acceptance_pass': not issues, 'semantic_acceptance_issues': issues}
 
@@ -198,6 +199,9 @@ def run_qa(html: str, payload: dict, evidence: dict, *, acceptance: dict | None 
     results['fixed_price_hits'] = fixed_prices
     results['fixed_price_pass'] = not fixed_prices
 
+    require_image_audit = os.environ.get('SELLEMY_REQUIRE_PRODUCT_IMAGE_AUDIT') == '1'
+    if require_image_audit or image_audit is not None:
+        results['product_image_audit_pass'] = (image_audit or {}).get('status') == 'PASS'
     results['overall_pass'] = all([
         results['semantic_acceptance_pass'],
         results['lead_in_range'], results['summary_in_range'], results['how_to_choose_in_range'],
@@ -206,5 +210,6 @@ def run_qa(html: str, payload: dict, evidence: dict, *, acceptance: dict | None 
         results['no_repeated_sentences_pass'], results['distinct_openings_endings_pass'],
         results['nav_footer_pass'], results['category_pass'], results['canonical_pass'], results['asin_pass'],
         results['affiliate_pass'], results['image_identity_pass'], results['fixed_price_pass'],
+        (not require_image_audit or results.get('product_image_audit_pass') is True),
     ])
     return results

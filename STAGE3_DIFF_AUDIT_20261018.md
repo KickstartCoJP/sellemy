@@ -1,0 +1,56 @@
+# Sellemy Stage 3 differential audit — 2026-10-18
+
+## Scope and integrity
+- Stage 3 base: `5f3c9fa` (pre-modification); Stage 3 dirty worktree: `/Users/kickstart/sellemy-revalidation/work-20261010/runtime`.
+- Production baseline: `a8d1f5838bacf784115904f13d41b078798645cb`; untouched.
+- Stage 3 source units audited: **57** (48 tracked modified + 9 substantive untracked, excluding three generated artifacts).
+- Classification counts: {'conflict_or_requires_line_review': 17, 'already_in_production': 17, 'not_appropriate_for_runtime_merge': 20, 'integration_required': 3}. Detailed per-file classification: `audit-stage3-manifest.json`.
+- Independent worktree: `/tmp/sellemy-stage3-audit-20261018`. No Production merge, push, publish, job mutation, or restart.
+
+## Integrated in audit worktree only
+- New `pipeline/product_image_audit.py` from Stage 3: image URL / binary SHA-256 duplicates fail; perceptual dHash similarities require review; missing/unreadable image cannot PASS.
+- New image audit tests adapted for current production fixtures/imports.
+- `pipeline/qa.py`: preserve current `require_semantic_acceptance` signature, add opt-in `image_audit` evidence and `SELLEMY_REQUIRE_PRODUCT_IMAGE_AUDIT=1` fail-closed guard. **Flag is not enabled; no image downloading is wired.** Unverified image guard is NOT certified as active in production.
+- Stage 3 business/data JSON payload changes, independent runtime runner/scraper files, staged shared brief, old scheduler/publish and routing revisions are excluded. These would overwrite newer Production logic or evidence without provenance review.
+
+## Gate audit
+- Same-series variant ASINs: **OPEN**. Current ProductSelection content dedupe uses normalized full title and canonical image URL; reviewer checks unique `identity_key` but does not deterministically collapse all brand/series variants. Separate ASIN is not sufficient; regression with same-series different model names remains required.
+- Manufacturer/model/series identity: **PARTIAL**. Independent review requires source quote anchored identity, but dedicated manufacturer/model/series structure is not universally required.
+- Unknown identity: independent review fails without source quote; **model-level unknown identity not proven impossible**.
+- Six distinct products: six review refs and unique normalized identity keys enforced, but distinct series remains open.
+- Evidence/axes: source quotes, two axis coverage and adequate-facts review enforced, but live reviewer accuracy is uncalibrated.
+- Product images: duplicate bytes/URL/missing -> FAIL or REVIEW_REQUIRED in isolated audit module; QA integration flag remains disabled and image retrieval unconnected.
+- Category/unfinished/unsubstantiated writing: mechanical category checks, blocked article rejection and independent article review exist; complete real-world fail-corpus not yet executed.
+- Independent QA to publishing: hash-bound receipt and publisher gates already present in Production; source/tool integration unchanged.
+- Postpublish read-back: no newly executed deployed read-back proof; offline tests alone cannot certify it.
+
+## Regression evidence
+- Stage 3 report claims 202 offline tests at its original 2026-10-10 base; not directly comparable to evolving Production count.
+- Current production base had 322 tests on prior execution. Audit worktree: **326 passed, 19 subtests passed** with four new image tests; `git diff --check` to verify separately.
+- Known-bad fixtures: bathtub covers, tabletop insulated pots, reading stands covered by existing independent acceptance tests. Live-reviewer blind-spot testing, full series-variant corpus, page read-back and complete recovery-436 regression **not proven**.
+- **Required criterion of 0 missed known-critical FAIL cases is NOT certified.** Do not mark release PASS.
+
+## Production state and rollback
+- Existing Production `config/publishing-control.json` inspected and had `enabled: true`, contrary to requested held/stopped state. LaunchAgent service was subsequently absent from `launchctl list`, and no growth processes were observed. No Production file was changed. The active publish config is a release blocker; verify that nothing re-registers LaunchAgent and apply a separately approved publication kill switch before rollout.
+- Prepare rollback before future deployment: record HEAD and backups of control config and job snapshots; stage changes in isolated branch; merge only with approval; if deployment is later authorized, disable publication first and restore previous git commit by safe revert (never hard reset shared data), keep job/acceptance evidence immutable, validate source/published read-back.
+
+## Decision
+**NO-GO for Production.** The isolated audit integration is testable, but image evidence ingestion, series identity validation, full known-critical corpus and read-back proof are incomplete. Preserve 436 existing recovery work and hold new article production. No publication resumption is authorized by this audit.
+
+## Follow-up implementation (2026-10-18)
+- Added source-anchored structured `manufacturer`, `series`, `model` validation to deterministic Evidence gate. Different ASINs within the same verified manufacturer+series now cause a rejection; no claim is made for unstructured or unattributed series data.
+- Added regression for two ASINs in one verified series. Isolated worktree now **327 passed / 19 subtests**.
+- Unresolved: structured identity provenance across all six products, image downloader integration, full 436 corpus replay, live independent QA calibration and deployed read-back. **Still NO-GO**.
+
+## Conditional release gate execution (2026-10-18 05:14 JST)
+- Full isolated regression: 327 passed, 19 subtests passed.
+- Representative critical bad corpus: 8/8 rejected, 0 missed (3 historic article evidence failures, duplicate independent identity across ASIN, duplicate source-anchored manufacturer series across ASIN, missing independent acceptance, unfinished-publication hold, duplicate image URL).
+- This 8-case set **does not certify the required zero missed across all known serious failures or the 436 corpus**.
+- Deployment remains blocked: image-byte acquisition is not connected to QA, manufacturer/model/series structured verification is incomplete for arbitrary real products, independent live QA accuracy has not been calibrated on a held-out corpus, and deployed read-back has not been demonstrated.
+- No production promotion, publication enablement or new article authoring was performed. Production HEAD preserved as a8d1f58. Growth LaunchAgent is absent from launchctl list.
+
+## Continued integration execution (2026-10-18)
+- Added `audit_remote_product_images`: downloads only HTTPS Amazon image hosts, rejects redirects, non-image responses, missing/corrupt/oversized image files. It passes downloaded bytes to URL/SHA256/dHash audit. This is wired to `publish_payload.run` only under `SELLEMY_REQUIRE_PRODUCT_IMAGE_AUDIT=1` and uses fail-closed QA. The Production env is not changed.
+- Added deployed article read-back to `production_deploy.verify`: requires exactly six ASINs matching local evidence and canonical URL in final live HTML, in addition to existing GitHub Pages build, HTTP 200, OG image, and TOP checks. Test rejects wrong deployed ASINs.
+- Test suite: 330 passed / 19 subtests; all changes are isolated. Existing 436 recovery QA progress from its separate track: 436 processed, 32 INPUT_BLOCKED, 391 REWORK_REQUIRED, 13 CHECK_ERROR, chat review deferred, publish_allowed false. These recovery states are not considered new-production acceptance.
+- Remaining launch blockers: actual accepted six real products with source-backed manufacturer/model/series and image retrieval, independent reviewer validation against held-out known failure corpus, published positive read-back in approved staging, controlled rollback pilot. No production authorization inferred from mocked unit tests.

@@ -45,6 +45,23 @@ def source_text(product):
     return ' '.join(x for x in parts if x).strip()
 
 
+def _verified_series_identity(product):
+    """Only structured, attributed source data can establish a series key."""
+    for source in product.get('sources') or []:
+        if not isinstance(source, dict) or source.get('verified') is not True:
+            continue
+        fields = source.get('identity') or {}
+        if not isinstance(fields, dict):
+            continue
+        manufacturer = str(fields.get('manufacturer') or '').strip()
+        series = str(fields.get('series') or '').strip()
+        model = str(fields.get('model') or '').strip()
+        text = source_text(product)
+        if manufacturer and series and model and all(v in text for v in (manufacturer, series, model)):
+            return (normalized(manufacturer), normalized(series))
+    return None
+
+
 def evidence_issues(evidence):
     from payload_schema import validate_evidence
     from product_selection import _axis_matches
@@ -54,7 +71,15 @@ def evidence_issues(evidence):
         return [f'invalid evidence: {exc}']
     axes = evidence['comparison_axes']
     issues, covered = [], set()
+    seen_series = {}
     for product in evidence['products']:
+        series_identity = _verified_series_identity(product)
+        if series_identity is not None:
+            if series_identity in seen_series:
+                issues.append(f"{product['ref']}: same manufacturer series as {seen_series[series_identity]} (distinct ASIN is insufficient)")
+            else:
+                seen_series[series_identity] = product['ref']
+
         corpus = source_text(product).lower()
         matches = {
             axis['id'] for axis in axes
