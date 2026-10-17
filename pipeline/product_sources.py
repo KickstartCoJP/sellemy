@@ -2,6 +2,7 @@
 from html.parser import HTMLParser
 import re
 import unicodedata
+from threading import BoundedSemaphore
 
 import requests
 
@@ -77,6 +78,29 @@ def _manufacturer_excerpt(soup, brand, identity):
     return excerpt[:8000].rsplit('\n', 1)[0] if len(excerpt) > 8000 and '\n' in excerpt[:8000] else excerpt[:8000]
 
 
+_ITEM_BROWSER_LIMIT = BoundedSemaphore(2)
+
+
+def _fetch_item_via_browser(url):
+    """Obtain a product page only when direct HTTP returned an access/error page."""
+    from playwright.sync_api import sync_playwright
+    with _ITEM_BROWSER_LIMIT:
+        with sync_playwright() as playwright:
+            browser = playwright.chromium.launch(
+                headless=True,
+                executable_path='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+                args=['--no-first-run'],
+            )
+            try:
+                page = browser.new_page()
+                response = page.goto(url, wait_until='domcontentloaded', timeout=25000)
+                if response is None or response.status != 200:
+                    return None
+                return {'url': page.url, 'status_code': response.status, 'text': page.content()}
+            finally:
+                browser.close()
+
+
 def fetch_amazon_item_source(asin, listing_title):
     """Return only text fetched from the matching HTTPS item page."""
     if not re.fullmatch(r'[A-Z0-9]{10}', asin or ''):
@@ -84,18 +108,44 @@ def fetch_amazon_item_source(asin, listing_title):
     url = f'https://www.amazon.co.jp/dp/{asin}'
     try:
         response = requests.get(url, timeout=20, headers={'User-Agent': 'Mozilla/5.0'})
-        response.raise_for_status()
+        direct = {'url': response.url, 'status_code': response.status_code, 'text': response.text}
     except requests.RequestException:
+        direct = None
+    valid_url = lambda value: bool(re.match(
+        r'^https://www\.amazon\.co\.jp/(?:dp|gp/product)/' + re.escape(asin) + r'(?:[/?#]|$)',
+        str(value or ''), re.I))
+    if direct is not None and not valid_url(direct['url']):
         return None
-    if (not re.match(r'^https://www\.amazon\.co\.jp/(?:dp|gp/product)/' + re.escape(asin) + r'(?:[/?#]|$)', response.url, re.I)
-            or response.status_code != 200):
+    usable = bool(direct and direct['status_code'] == 200 and
+                  re.search(r'(?<![A-Z0-9])' + re.escape(asin) + r'(?![A-Z0-9])', direct['text'], re.I) and
+                  re.search(r'id=["\']productTitle["\']', direct['text'], re.I))
+    if not usable:
+        try:
+            direct = _fetch_item_via_browser(url)
+        except Exception:
+            return None
+    if not direct or direct['status_code'] != 200 or not valid_url(direct['url']):
         return None
-    body = response.text
-    # Amazon search/challenge pages and cross-ASIN redirects cannot establish identity.
+    body = direct['text']
     if not re.search(r'(?<![A-Z0-9])' + re.escape(asin) + r'(?![A-Z0-9])', body, re.I):
         return None
+    # Exclude page scripts and CSS from the attribution excerpt, retaining the real item fields.
+    from bs4 import BeautifulSoup
+    soup = BeautifulSoup(body, 'html.parser')
+    identifiers = ('productTitle', 'feature-bullets', 'productDetails_detailBullets_sections1',
+                   'productDetails_techSpec_section_1', 'productOverview_feature_div', 'bylineInfo')
+    nodes = [soup.find(id=identifier) for identifier in identifiers]
+    nodes = [node for node in nodes if node is not None]
+    if not nodes or nodes[0].get('id') != 'productTitle':
+        return None
+    parts = []
+    for node in nodes:
+        for unwanted in node.select('script, style, noscript'):
+            unwanted.decompose()
+        parts.append(str(node))
+    clean_body = ''.join(parts)
     parser = _ItemText()
-    parser.feed(body)
+    parser.feed(clean_body)
     if not parser.lines:
         return None
     title = parser.lines[0]
@@ -117,8 +167,8 @@ def fetch_amazon_item_source(asin, listing_title):
         if match:
             brand = match.group(1).strip()
             break
-    return {'url': response.url, 'title': title, 'excerpt': excerpt,
-            'source_type': 'marketplace_item', 'http_status': response.status_code,
+    return {'url': direct['url'], 'title': title, 'excerpt': excerpt,
+            'source_type': 'marketplace_item', 'http_status': direct['status_code'],
             'verified': True, 'brand': brand}
 
 
