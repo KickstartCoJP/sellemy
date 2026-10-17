@@ -128,52 +128,62 @@ if [[ ! -x "$GA4PY" ]]; then echo "$(date -Iseconds) GA4 venv missing; abort"; e
 "$GA4PY" pipeline/ga4_sync.py --days 28
 QUALITY_DIR="$HOME/Library/Application Support/Sellemy/analytics"
 mkdir -p "$QUALITY_DIR"
-COLLECT_DUE="$("$GA4PY" - "$QUALITY_DIR/acquisition-attempt.json" <<'PYDUE'
+COLLECT_FROM="$(date -v-7d +%F)"
+COLLECT_TO="$(date +%F)"
+# Each provider has its own attempt clock. A failed provider retries hourly,
+# while successful collections are refreshed every six hours.
+for PROVIDER in amazon rakuten; do
+  PROVIDER_DUE="$("$GA4PY" - "$QUALITY_DIR/acquisition-attempt.json" "$PROVIDER" <<'PYDUE'
 import json,sys
 from datetime import datetime,timedelta,timezone
 from pathlib import Path
-path=Path(sys.argv[1])
+path,provider=Path(sys.argv[1]),sys.argv[2]
 if not path.exists():
-    print('1')
+ print('1')
 else:
-    try:
-        value=json.loads(path.read_text())
-        attempted=datetime.fromisoformat(value['attempted_at'])
-        assert attempted.tzinfo is not None
-        assert all(type(value[p]['collector_rc']) is int for p in ('amazon','rakuten'))
-        age=datetime.now(timezone.utc)-attempted
-        print('1' if timedelta(hours=1 if any(value[p]['collector_rc'] != 0 for p in ('amazon','rakuten')) else 6) <= age <= timedelta(days=3650) else '0')
-    except (ValueError,TypeError,KeyError,AssertionError,OverflowError):
-        print('0')  # Invalid state must not trigger another browser run.
+ try:
+  value=json.loads(path.read_text())
+  if provider not in value:
+   print('1');sys.exit(0)
+  record=value[provider]
+  attempted=datetime.fromisoformat(record.get('attempted_at') or value['attempted_at'])
+  assert attempted.tzinfo is not None
+  assert type(record['collector_rc']) is int
+  age=datetime.now(timezone.utc)-attempted
+  due=timedelta(hours=1 if record['collector_rc'] else 6)
+  print('1' if due<=age<=timedelta(days=3650) else '0')
+ except (ValueError,TypeError,KeyError,AssertionError,OverflowError):
+  print('0')
 PYDUE
 )"
-if [[ "$COLLECT_DUE" == "1" ]]; then
-  COLLECT_FROM="$(date -v-7d +%F)"
-  COLLECT_TO="$(date +%F)"
-  AMAZON_COLLECT_RC=0
-  "$PY" pipeline/run_with_timeout.py 120 "$GA4PY" pipeline/firefox_collectors.py --provider amazon --start-date "$COLLECT_FROM" --end-date "$COLLECT_TO" || AMAZON_COLLECT_RC=$?
-  RAKUTEN_COLLECT_RC=0
-  "$PY" pipeline/run_with_timeout.py 120 "$GA4PY" pipeline/firefox_collectors.py --provider rakuten --start-date "$COLLECT_FROM" --end-date "$COLLECT_TO" || RAKUTEN_COLLECT_RC=$?
-  "$GA4PY" - "$AMAZON_COLLECT_RC" "$RAKUTEN_COLLECT_RC" "$QUALITY_DIR" <<'PYQ'
+  if [[ "$PROVIDER_DUE" != "1" ]]; then continue; fi
+  COLLECT_RC=0
+  "$PY" pipeline/run_with_timeout.py 120 "$GA4PY" pipeline/firefox_collectors.py --provider "$PROVIDER" --start-date "$COLLECT_FROM" --end-date "$COLLECT_TO" || COLLECT_RC=$?
+  "$GA4PY" - "$COLLECT_RC" "$PROVIDER" "$QUALITY_DIR" <<'PYQ'
 import json,os,sys,tempfile
 from datetime import datetime,timezone
 from pathlib import Path
-a,r,directory=int(sys.argv[1]),int(sys.argv[2]),Path(sys.argv[3])
+rc,provider,directory=int(sys.argv[1]),sys.argv[2],Path(sys.argv[3])
 now=datetime.now(timezone.utc).isoformat()
-for name,value in (
-    ('acquisition-quality.json',{"updated_at":now,"amazon":{"state":"available" if a==0 else "degraded","collector_rc":a},"rakuten":{"state":"available" if r==0 else "degraded","collector_rc":r}}),
-    ('acquisition-attempt.json',{"attempted_at":now,"amazon":{"collector_rc":a},"rakuten":{"collector_rc":r}}),
-):
-    with tempfile.NamedTemporaryFile(mode='w',dir=directory,delete=False) as f:
-        json.dump(value,f,ensure_ascii=False,indent=2,sort_keys=True)
-        f.write('\n')
-        tmp=f.name
-    os.replace(tmp,directory/name)
+for name in ('acquisition-quality.json','acquisition-attempt.json'):
+ path=directory/name
+ try: value=json.loads(path.read_text())
+ except (OSError,ValueError): value={}
+ if not isinstance(value,dict): value={}
+ value['updated_at' if name=='acquisition-quality.json' else 'attempted_at']=now
+ record={'collector_rc':rc}
+ if name=='acquisition-quality.json':record['state']='available' if rc==0 else 'degraded'
+ else:record['attempted_at']=now
+ value[provider]=record
+ with tempfile.NamedTemporaryFile(mode='w',dir=directory,delete=False) as f:
+  json.dump(value,f,ensure_ascii=False,indent=2,sort_keys=True)
+  f.write('\n');tmp=f.name
+ os.replace(tmp,path)
 PYQ
-  if (( AMAZON_COLLECT_RC != 0 || RAKUTEN_COLLECT_RC != 0 )); then
-    echo "$(date -Iseconds) affiliate browser collectors degraded; continuing with last verified raw/curated data"
+  if (( COLLECT_RC != 0 )); then
+    echo "$(date -Iseconds) $PROVIDER affiliate collector degraded; retry in one hour without blocking the other provider"
   fi
-fi
+done
 AFFILIATE_ARGS=(--mode daily)
 if [[ -r "$HOME/.config/valuecommerce/report-api.json" ]]; then
   AFFILIATE_ARGS+=(--fetch)
