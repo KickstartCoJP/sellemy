@@ -12,6 +12,6 @@ def test_product_evidence_three_quality_ng_not_infrastructure():
   assert s.get('quality_ng_by_gate',{}).get('product',0)==0
   for i in range(3):
    s=growth_recovery.request_product_reselection('insufficient-product-facts',['facts insufficient'])
-   assert s['status']==('FAILED' if i==2 else 'ACTIVE')
+   assert s['status']=='ACTIVE'
   assert s['quality_ng_by_gate']['product']==3
-  assert growth_recovery.read_artifact('insufficient-product-facts','owner-quality-case.json')['stage']=='product'
+  assert s['current_stage']=='WRITER_PENDING' and s['next_retry_at'] is not None
