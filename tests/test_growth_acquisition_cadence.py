@@ -20,29 +20,36 @@ class GrowthAcquisitionCadenceTests(unittest.TestCase):
             directory = Path(tmp)
             marker = directory / "acquisition-attempt.json"
 
-            def check():
+            def check(provider):
                 return subprocess.check_output(
-                    [sys.executable, "-c", due, str(marker)], text=True
+                    [sys.executable, "-c", due, str(marker), provider], text=True
                 ).strip()
 
-            self.assertEqual(check(), "1")
-            subprocess.run(
-                [sys.executable, "-c", record, "124", "1", tmp], check=True
-            )
-            self.assertEqual(check(), "0")
-            self.assertEqual(json.loads(marker.read_text())["amazon"]["collector_rc"], 124)
+            def record_result(provider, code):
+                subprocess.run([sys.executable, "-c", record, str(code), provider, tmp], check=True)
+
+            self.assertEqual(check("amazon"), "1")
+            self.assertEqual(check("rakuten"), "1")
+            record_result("amazon", 124)
+            self.assertEqual(check("amazon"), "0")
+            self.assertEqual(check("rakuten"), "1")
+            record_result("rakuten", 0)
             value = json.loads(marker.read_text())
-            value["attempted_at"] = (datetime.now(timezone.utc) - timedelta(hours=1, minutes=1)).isoformat()
+            self.assertEqual(value["amazon"]["collector_rc"], 124)
+            self.assertEqual(value["rakuten"]["collector_rc"], 0)
+            value["amazon"]["attempted_at"] = (datetime.now(timezone.utc) - timedelta(hours=1, minutes=1)).isoformat()
             marker.write_text(json.dumps(value))
-            self.assertEqual(check(), "1")
-            subprocess.run([sys.executable, "-c", record, "0", "0", tmp], check=True)
-            self.assertEqual(check(), "0")
+            self.assertEqual(check("amazon"), "1")
+            self.assertEqual(check("rakuten"), "0")
+            record_result("amazon", 0)
             value = json.loads(marker.read_text())
-            value["attempted_at"] = (datetime.now(timezone.utc) - timedelta(hours=6, minutes=1)).isoformat()
+            value["amazon"]["attempted_at"] = (datetime.now(timezone.utc) - timedelta(hours=6, minutes=1)).isoformat()
             marker.write_text(json.dumps(value))
-            self.assertEqual(check(), "1")
+            self.assertEqual(check("amazon"), "1")
+            self.assertEqual(check("rakuten"), "0")
             marker.write_text("{malformed")
-            self.assertEqual(check(), "0")
+            self.assertEqual(check("amazon"), "0")
+
 
 
 if __name__ == "__main__":
