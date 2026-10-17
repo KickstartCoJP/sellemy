@@ -72,3 +72,37 @@ def audit_product_images(products: list[dict], image_bytes: dict[str, bytes], *,
         'requires_product_identity_review': bool(suspects),
         'method': 'url+sha256+dhash64',
     }
+
+
+def audit_remote_product_images(products: list[dict], *, timeout: int = 8) -> dict:
+    """Fetch actual images, fail closed on absent/untrusted/inaccessible content."""
+    import requests
+    from urllib.parse import urlsplit
+    images = {}
+    errors = []
+    for product in products:
+        ref = str(product.get('ref') or '')
+        url = str(product.get('image_url') or '')
+        host = (urlsplit(url).hostname or '').lower()
+        if urlsplit(url).scheme != 'https' or not (
+            host == 'm.media-amazon.com' or host.endswith('.ssl-images-amazon.com')
+        ):
+            errors.append(f'{ref}: image host not trusted')
+            continue
+        try:
+            response = requests.get(url, timeout=timeout, allow_redirects=False,
+                                    headers={'User-Agent': 'Mozilla/5.0'})
+            if response.status_code != 200 or not response.headers.get('content-type', '').lower().startswith('image/'):
+                errors.append(f'{ref}: invalid image HTTP response')
+                continue
+            if not 128 <= len(response.content) <= 8_000_000:
+                errors.append(f'{ref}: invalid image size')
+                continue
+            images[ref] = response.content
+        except requests.RequestException:
+            errors.append(f'{ref}: image fetch unavailable')
+    result = audit_product_images(products, images)
+    if errors:
+        result['status'] = 'FAIL'
+        result['issues'].extend(errors)
+    return result

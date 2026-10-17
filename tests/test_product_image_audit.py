@@ -39,3 +39,23 @@ class IntegrationContractTests(unittest.TestCase):
             result = run_qa(render_article(payload, evidence), payload, evidence)
         self.assertFalse(result['product_image_audit_pass'])
         self.assertFalse(result['overall_pass'])
+
+class RemoteAuditBoundaryTests(unittest.TestCase):
+    def test_disallowed_image_hosts_fail_without_network(self):
+        from unittest.mock import patch
+        from product_image_audit import audit_remote_product_images
+        products = [{'ref':f'p{i}', 'image_url':f'https://example.test/{i}.png'} for i in range(6)]
+        with patch('requests.get') as get:
+            receipt = audit_remote_product_images(products)
+        get.assert_not_called()
+        self.assertEqual(receipt['status'], 'FAIL')
+
+    def test_remote_image_http_failure_cannot_pass(self):
+        from unittest.mock import patch, Mock
+        from product_image_audit import audit_remote_product_images
+        products = [{'ref':f'p{i}', 'image_url':f'https://m.media-amazon.com/images/I/{i}.jpg'} for i in range(6)]
+        response = Mock(status_code=503, headers={'content-type':'text/html'}, content=b'')
+        with patch('requests.get', return_value=response):
+            receipt = audit_remote_product_images(products)
+        self.assertEqual(receipt['status'], 'FAIL')
+        self.assertEqual(len(receipt['issues']) >= 6, True)

@@ -305,7 +305,12 @@ def run(slug: str, *, apply: bool, allow_existing: bool) -> dict:
     require_acceptance(payload, evidence, acceptance)
     rendered = render_article(payload, evidence, related_features=article_related_features(slug))
     findings = run_review_gate(payload, evidence)
-    qa = run_qa(rendered, payload, evidence, acceptance=acceptance)
+    import os
+    image_audit = None
+    if os.environ.get('SELLEMY_REQUIRE_PRODUCT_IMAGE_AUDIT') == '1':
+        from product_image_audit import audit_remote_product_images
+        image_audit = audit_remote_product_images(evidence['products'])
+    qa = run_qa(rendered, payload, evidence, acceptance=acceptance, image_audit=image_audit)
     result = {'slug': slug, 'review_findings': [repr(finding) for finding in findings], 'qa': qa, 'applied': False}
     if findings or not qa['overall_pass'] or not apply:
         return result

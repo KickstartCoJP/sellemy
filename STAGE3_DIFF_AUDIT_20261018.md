@@ -48,3 +48,9 @@
 - This 8-case set **does not certify the required zero missed across all known serious failures or the 436 corpus**.
 - Deployment remains blocked: image-byte acquisition is not connected to QA, manufacturer/model/series structured verification is incomplete for arbitrary real products, independent live QA accuracy has not been calibrated on a held-out corpus, and deployed read-back has not been demonstrated.
 - No production promotion, publication enablement or new article authoring was performed. Production HEAD preserved as a8d1f58. Growth LaunchAgent is absent from launchctl list.
+
+## Continued integration execution (2026-10-18)
+- Added `audit_remote_product_images`: downloads only HTTPS Amazon image hosts, rejects redirects, non-image responses, missing/corrupt/oversized image files. It passes downloaded bytes to URL/SHA256/dHash audit. This is wired to `publish_payload.run` only under `SELLEMY_REQUIRE_PRODUCT_IMAGE_AUDIT=1` and uses fail-closed QA. The Production env is not changed.
+- Added deployed article read-back to `production_deploy.verify`: requires exactly six ASINs matching local evidence and canonical URL in final live HTML, in addition to existing GitHub Pages build, HTTP 200, OG image, and TOP checks. Test rejects wrong deployed ASINs.
+- Test suite: 330 passed / 19 subtests; all changes are isolated. Existing 436 recovery QA progress from its separate track: 436 processed, 32 INPUT_BLOCKED, 391 REWORK_REQUIRED, 13 CHECK_ERROR, chat review deferred, publish_allowed false. These recovery states are not considered new-production acceptance.
+- Remaining launch blockers: actual accepted six real products with source-backed manufacturer/model/series and image retrieval, independent reviewer validation against held-out known failure corpus, published positive read-back in approved staging, controlled rollback pilot. No production authorization inferred from mocked unit tests.

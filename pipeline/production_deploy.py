@@ -48,6 +48,19 @@ def verify(slug: str, category: str, commit: str, *, timeout_seconds: int = 420,
     if status != 200:
         raise ProductionDeployError(f"article HTTP {status}: {final}")
     text = body.decode("utf-8", "replace")
+    # Verify the deployed six-product identity against the commit being certified.
+    repo_root = Path(__file__).resolve().parents[1]
+    evidence_file = repo_root / 'data' / 'evidence' / f'{slug}.json'
+    if not evidence_file.is_file():
+        raise ProductionDeployError('read-back evidence missing')
+    evidence = json.loads(evidence_file.read_text(encoding='utf-8'))
+    expected_asins = {p['asin'] for p in evidence['products']}
+    observed_asins = re.findall(r'data-asin=["\']([A-Z0-9]{10})["\']', text)
+    if len(observed_asins) != 6 or set(observed_asins) != expected_asins:
+        raise ProductionDeployError('deployed article product ASIN mismatch')
+    canonical = str(evidence.get('canonical_url') or '')
+    if not canonical or canonical not in text:
+        raise ProductionDeployError('deployed article canonical mismatch')
     match = re.search(r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)', text, re.I)
     if not match:
         match = re.search(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\']', text, re.I)
