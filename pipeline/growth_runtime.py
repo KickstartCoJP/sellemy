@@ -1194,15 +1194,14 @@ def run(
             slug = recovery['slug']
             result['recovery_mode'] = True
             result['recovery_slug'] = slug
-        elif unfinished:
-            result['recovery_mode'] = True
-            result['status'] = 'waiting_recovery_backoff'
-            result['recovery_waiting'] = [
-                {'slug': x['slug'], 'stage': x.get('current_stage'), 'next_retry_at': x.get('next_retry_at')}
-                for x in sorted(unfinished, key=lambda x: x.get('created_at') or '')[:20]
-            ]
-            return result
         else:
+            # Backoff of an unfinished article must not block admission of new work.
+            # Due recovery jobs are still selected first above.
+            if unfinished:
+                result['recovery_waiting'] = [
+                    {'slug': x['slug'], 'stage': x.get('current_stage'), 'next_retry_at': x.get('next_retry_at')}
+                    for x in sorted(unfinished, key=lambda x: x.get('created_at') or '')[:20]
+                ]
             result['recovery_mode'] = False
             result['base_head'] = require_clean_current_main()
             feedback = load_feedback()
