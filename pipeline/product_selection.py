@@ -73,11 +73,20 @@ def select_six(candidates: list[dict], topic: dict, feedback: dict) -> tuple[lis
             f'require at least 6; removed={removed_duplicates}'
         )
     axes = topic['comparison_axes']
-    # Keyword overlap is a ranking signal, not a compulsory QA gate.
-    # Independent evidence acceptance still checks actual source-grounded claims.
-    remaining = [p for p in distinct_candidates if _text(p).strip()]
+    # Planning's topic axes must be supported by verified product evidence.
+    # A listing-only or axis-empty candidate must never consume a six-product
+    # slot and then fail its first independent QA check for a known defect.
+    from comparison_acceptance import source_text
+    def has_grounded_axis(product):
+        corpus = source_text(product).lower()
+        return bool(corpus and any(any(str(word).lower() in corpus for word in axis.get('keywords', []))
+                                   for axis in axes))
+    remaining = [p for p in distinct_candidates if _text(p).strip() and has_grounded_axis(p)]
     if len(remaining) < 6:
-        raise ProductSelectionError('needs_product_reselection: fewer than six products with attributable specification text')
+        raise ProductSelectionError('needs_product_reselection: fewer than six products with verified topic-axis evidence')
+    supported_axes = set().union(*(_axis_matches(p, axes) for p in remaining))
+    if len(supported_axes) < 2:
+        raise ProductSelectionError('needs_product_reselection: fewer than two grounded comparison axes')
     selected, brands, covered = [], set(), set()
     prices = sorted(p['observed_price'] for p in distinct_candidates if p.get('observed_price') is not None)
     median = prices[len(prices) // 2] if prices else None
