@@ -86,19 +86,30 @@ def _fetch_item_via_browser(url):
     from playwright.sync_api import sync_playwright
     with _ITEM_BROWSER_LIMIT:
         with sync_playwright() as playwright:
-            browser = playwright.chromium.launch(
-                headless=True,
-                executable_path='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
-                args=['--no-first-run'],
-            )
-            try:
-                page = browser.new_page()
-                response = page.goto(url, wait_until='domcontentloaded', timeout=25000)
-                if response is None or response.status != 200:
-                    return None
-                return {'url': page.url, 'status_code': response.status, 'text': page.content()}
-            finally:
-                browser.close()
+            # Chrome can return a valid HTTP error page despite an available
+            # product. A second browser engine must be tried before declaring
+            # verified source evidence unavailable.
+            for engine, options in (
+                (playwright.chromium, {'headless': True,
+                    'executable_path': '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+                    'args': ['--no-first-run']}),
+                (playwright.webkit, {'headless': True}),
+                (playwright.webkit, {'headless': False}),
+            ):
+                browser = None
+                try:
+                    browser = engine.launch(**options)
+                    page = browser.new_page()
+                    response = page.goto(url, wait_until='domcontentloaded', timeout=25000)
+                    if response is not None and response.status == 200 and page.locator('#productTitle').count():
+                        return {'url': page.url, 'status_code': response.status,
+                                'text': page.content()}
+                except Exception:
+                    pass
+                finally:
+                    if browser is not None:
+                        browser.close()
+    return None
 
 
 def fetch_amazon_item_source(asin, listing_title):

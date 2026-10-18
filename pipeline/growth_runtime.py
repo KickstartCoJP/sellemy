@@ -756,6 +756,34 @@ def _eyecatch_and_publish(slug: str, result: dict) -> str:
         _cleanup_expected_dirty(slug, category, original_head)
         raise GrowthRuntimeError(f'publish failed for {slug}; retained for retry: {exc}') from exc
 
+def _backfill_missing_amazon_sources(pool: list[dict], attempted: set[str], *, limit: int = 8) -> tuple[list[dict], set[str]]:
+    """Recover verifiable item facts for historical discovery-only candidates.
+
+    An ASIN with no source is not a researched product. Record bounded attempts
+    separately from research completion so old pools remain eligible for recovery.
+    """
+    from concurrent.futures import ThreadPoolExecutor
+    pending = [p for p in pool if p.get('asin') not in attempted and not any(
+        isinstance(source, dict) and source.get('verified') is True and str(source.get('excerpt') or '').strip()
+        for source in p.get('sources') or [])]
+    pending = sorted(pending, key=lambda row: (not bool(row.get('brand')), -float(row.get('discovery_score') or 0)))[:limit]
+    if not pending:
+        return pool, attempted
+    def fetch(p):
+        try:
+            return fetch_amazon_item_source(p['asin'], p.get('amazon_title', ''))
+        except Exception:
+            return None
+    with ThreadPoolExecutor(max_workers=2) as executor:
+        recovered = list(executor.map(fetch, pending))
+    new_sources = {item['asin']: source for item, source in zip(pending, recovered)
+                   if isinstance(source, dict) and source.get('verified') is True
+                   and str(source.get('excerpt') or '').strip()}
+    rows = [{**item, 'sources': [*(item.get('sources') or []), new_sources[item['asin']]]}
+            if item.get('asin') in new_sources else item for item in pool]
+    return rows, attempted | {item['asin'] for item in pending}
+
+
 def _reselect_products(slug: str, *, cache_only: bool) -> None:
     """Keep a durable candidate pool; only return after six products pass QA.
 
@@ -770,6 +798,7 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
     tried = list(progress.get('queries') or [])
     reviewed_sets = set(progress.get('reviewed_sets') or [])
     researched_asins = set(progress.get('researched_asins') or [])
+    source_backfill_attempted = set(progress.get('source_backfill_attempted') or [])
     previous = read_artifact(slug, 'evidence.json', {})
     pool.extend(p for p in previous.get('products', [])
                 if all(p.get(k) for k in ('asin', 'amazon_title', 'image_url')))
@@ -780,6 +809,7 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
             'candidates': pool, 'excluded_asins': sorted(excluded),
             'queries': tried, 'reviewed_sets': sorted(reviewed_sets),
             'researched_asins': sorted(researched_asins),
+            'source_backfill_attempted': sorted(source_backfill_attempted),
             'complete': False,
         })
 
@@ -814,6 +844,10 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
             by_asin = {p['asin']: p for p in enriched}
             pool = [by_asin.get(p['asin'], p) for p in pool]
             researched_asins.update(p['asin'] for p in batch)
+            save_progress()
+        if not cache_only:
+            pool, source_backfill_attempted = _backfill_missing_amazon_sources(
+                pool, source_backfill_attempted)
             save_progress()
         if previous.get('product_acceptance') and product_issues(previous) and not any(p.get('sources') for p in pool):
             save_progress()
@@ -898,7 +932,9 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
                 write_artifact(slug, 'product-search-progress.json', {
                     'candidates': pool, 'excluded_asins': sorted(excluded),
                     'queries': tried, 'reviewed_sets': sorted(reviewed_sets),
-                    'researched_asins': sorted(researched_asins), 'complete': True,
+                    'researched_asins': sorted(researched_asins),
+                    'source_backfill_attempted': sorted(source_backfill_attempted),
+                    'complete': True,
                 })
                 return
             # Record the actionable QA defects; do not count an unchanged retry
