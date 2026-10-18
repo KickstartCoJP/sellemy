@@ -12,12 +12,11 @@ from product_sources import fetch_manufacturer_source
 def research_selected(products, *, cache_only=False, prefer_official=False):
     if cache_only or not products:
         return products
-    # Manufacturer research is supplementary, not a mandatory fetch stage.
-    # A verified matching marketplace item page can provide attributable product facts;
-    # the independent reviewer still decides whether they are adequate for each claim.
+    # Marketplace evidence is valid, but does not suppress the separate
+    # manufacturer-source lookup. Preserve both kinds of evidence.
     needs = [p for p in products[:18] if not any(
         s.get('verified') is True and str(s.get('excerpt') or '').strip()
-        and (not prefer_official or s.get('source_type') == 'manufacturer_official')
+        and s.get('source_type') == 'manufacturer_official'
         for s in p.get('sources', []) if isinstance(s, dict))]
     if not needs:
         return products

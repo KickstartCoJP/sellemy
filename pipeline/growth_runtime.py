@@ -804,7 +804,7 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
             pending = [p for p in available if p.get('asin') not in researched_asins]
         batch = pending[:18]
         if batch:
-            enriched = research_selected(batch) if _researchable_candidates(batch, cache_only=cache_only) else batch
+            enriched = research_selected(batch, prefer_official=True) if _researchable_candidates(batch, cache_only=cache_only) else batch
             # Keep all source receipts and move the cursor only after the entire batch.
             by_asin = {p['asin']: p for p in enriched}
             pool = [by_asin.get(p['asin'], p) for p in pool]
@@ -840,6 +840,18 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
                     raise GrowthRuntimeError(f'exact evidence unchanged for {slug}')
             evidence['product_acceptance'] = independent_review(evidence)
             issues = product_issues(evidence)
+            if issues and _researchable_candidates(selected, cache_only=cache_only):
+                # Research owns remediation: obtain additional attributed facts
+                # before QA may permanently reject or replace this selection.
+                enriched = research_selected(selected, prefer_official=True)
+                if any(new.get('sources') != old.get('sources')
+                       for new, old in zip(enriched, selected)):
+                    new_by_asin = {item['asin']: item for item in enriched}
+                    pool = [new_by_asin.get(item['asin'], item) for item in pool]
+                    selected = [new_by_asin.get(item['asin'], item) for item in selected]
+                    evidence = build_evidence(topic, selected, selection)
+                    evidence['product_acceptance'] = independent_review(evidence)
+                    issues = product_issues(evidence)
             # Preserve the complete independent result before mutating the pool.
             # A later candidate selection must not erase why a product was rejected.
             write_artifact(slug, 'product-review-' + signature.replace('|', '-') + '.json', {
@@ -863,8 +875,14 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
             rejected = {by_ref[p['ref']] for p in review.get('products', [])
                         if isinstance(p, dict) and p.get('ref') in by_ref
                         and (p.get('adequate_facts') is False or p.get('topic_fit') is False)}
-            # Never remove all six without reviewer-specific rejection evidence.
+            # The product research owner, not QA, decides whether to research
+            # missing facts. A fact-insufficiency verdict is NOT a product rejection.
+            # Only explicit topic mismatch removes a candidate permanently.
+            rejected = {by_ref[p['ref']] for p in review.get('products', [])
+                        if isinstance(p, dict) and p.get('ref') in by_ref
+                        and p.get('topic_fit') is False}
             if not rejected:
+                save_progress()
                 break
             excluded.update(rejected)
             available = [p for p in pool if p.get('asin') not in excluded]
