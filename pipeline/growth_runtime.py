@@ -764,6 +764,7 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
     excluded = set(progress.get('excluded_asins') or [])
     tried = list(progress.get('queries') or [])
     reviewed_sets = set(progress.get('reviewed_sets') or [])
+    researched_asins = set(progress.get('researched_asins') or [])
     previous = read_artifact(slug, 'evidence.json', {})
     pool.extend(p for p in previous.get('products', [])
                 if all(p.get(k) for k in ('asin', 'amazon_title', 'image_url')))
@@ -773,38 +774,50 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
         write_artifact(slug, 'product-search-progress.json', {
             'candidates': pool, 'excluded_asins': sorted(excluded),
             'queries': tried, 'reviewed_sets': sorted(reviewed_sets),
+            'researched_asins': sorted(researched_asins),
             'complete': False,
         })
 
     try:
-        # Each invocation performs bounded work; retries resume the persisted pool.
-        # The query space expands deterministically rather than repeating the
-        # original six products forever.
-        terms = ('', '型番', 'メーカー', '製品', '仕様', '容量', 'サイズ',
-                 '標準', '国内正規品', '機能', '比較', '新型', '高耐久',
-                 '家庭用', '業務用', 'ブランド', '種類', '用途')
-        base = product_search_query(topic)
-        cursor = len(tried)
-        for offset in range(3):
-            n = cursor + offset
-            if n < len(terms):
-                suffix = terms[n]
-            else:
-                left = terms[1 + ((n-len(terms)) % (len(terms)-1))]
-                right = terms[1 + ((n-len(terms)) // (len(terms)-1) % (len(terms)-1))]
-                suffix = left + ' ' + right
+        # Process the already found candidates in sequential non-overlapping
+        # batches. Never research the same ASIN twice on evidence-quality failure.
+        # A transient network failure is handled by the infrastructure retry path.
+        available = [p for p in pool if p.get('asin') not in excluded]
+        pending = [p for p in available if p.get('asin') not in researched_asins]
+        if cache_only:
+            discover_products(topic, cache_only=True)
+        if not pending:
+            terms = ('', '型番', 'メーカー', '製品', '仕様', '容量', 'サイズ',
+                     '標準', '国内正規品', '機能', '比較', '新型', '高耐久',
+                     '家庭用', '業務用', 'ブランド', '種類', '用途')
+            base = product_search_query(topic)
+            cursor = len(tried)
+            suffix = terms[cursor] if cursor < len(terms) else (
+                terms[1 + ((cursor-len(terms)) % (len(terms)-1))] + ' ' +
+                terms[1 + ((cursor-len(terms)) // (len(terms)-1) % (len(terms)-1))])
             query = (base + ' ' + suffix).strip()
             found = discover_products({**topic, 'query': query}, cache_only=cache_only)
             pool, _ = dedupe_content_products([*pool, *found])
             tried.append({'query': query, 'new_pool_total': len(pool)})
             save_progress()
-
-        available = [p for p in pool if p.get('asin') not in excluded]
-        if _researchable_candidates(available, cache_only=cache_only):
-            available = research_selected(available[:18]) + available[18:]
-            updated = {p['asin']: p for p in available}
-            pool = [updated.get(p['asin'], p) for p in pool]
+            available = [p for p in pool if p.get('asin') not in excluded]
+            pending = [p for p in available if p.get('asin') not in researched_asins]
+        batch = pending[:18]
+        if batch:
+            enriched = research_selected(batch) if _researchable_candidates(batch, cache_only=cache_only) else batch
+            # Keep all source receipts and move the cursor only after the entire batch.
+            by_asin = {p['asin']: p for p in enriched}
+            pool = [by_asin.get(p['asin'], p) for p in pool]
+            researched_asins.update(p['asin'] for p in batch)
             save_progress()
+        if previous.get('product_acceptance') and product_issues(previous) and not any(p.get('sources') for p in pool):
+            save_progress()
+            request_product_reselection(slug, ['exact evidence unchanged from rejected review'])
+            raise GrowthRuntimeError(f'exact evidence unchanged for {slug}')
+        available = [p for p in pool if p.get('asin') not in excluded
+                     and any(isinstance(source, dict) and source.get('verified') is True
+                             and str(source.get('excerpt') or '').strip()
+                             for source in p.get('sources') or [])]
         feedback = load_feedback()
         while len(available) >= 6:
             selected, selection = select_six(available, topic, feedback)
@@ -833,6 +846,7 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
                 write_artifact(slug, 'product-search-progress.json', {
                     'candidates': pool, 'excluded_asins': sorted(excluded),
                     'queries': tried, 'reviewed_sets': sorted(reviewed_sets),
+            'researched_asins': sorted(researched_asins),
                     'complete': True,
                 })
                 return
