@@ -27,6 +27,7 @@ def test_legacy_writer_pass_waits_for_chat_review():
     with patch('operating_profile.normal_profile', return_value=False), tempfile.TemporaryDirectory() as tmp, patch.object(growth_recovery, 'STATE_ROOT', Path(tmp)), patch.object(growth_recovery, 'JOBS_ROOT', Path(tmp)/'jobs'), patch.object(growth_recovery, 'EVENTS_PATH', Path(tmp)/'events.jsonl'), patch.object(growth_recovery, 'EXECUTION_EVENTS_PATH', Path(tmp)/'execution.jsonl'):
         topic={'slug':'x','category':'gadget'}
         growth_recovery.create_job(topic=topic,evidence=valid_evidence(),selection={},planning_provider=None,viability_probes=[])
+        growth_recovery.write_artifact('x', 'acceptance.json', {'review': {'status': 'ACCEPTED'}})
         growth_recovery.save_writer_result('x', payload=valid_payload(), qa={'overall_pass':True}, findings=[], feedback={}, metadata={}, passed=True)
         state=growth_recovery.load_job('x')
         assert state['current_stage']=='CHAT_REVIEW_PENDING'

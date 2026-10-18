@@ -222,6 +222,7 @@ def set_stage(slug: str, stage: str, *, event: str = 'STAGE_ADVANCED', detail: d
 
 def save_writer_result(slug: str, *, payload: dict, qa: dict, findings: list[str], feedback: dict,
                        metadata: dict, passed: bool) -> dict:
+    from qa_certification import certify
     state = load_job(slug)
     write_artifact(slug, 'payload.json', payload)
     write_artifact(slug, 'qa.json', qa)
@@ -237,7 +238,8 @@ def save_writer_result(slug: str, *, payload: dict, qa: dict, findings: list[str
         state['writer_turn_ids'] = turns
     if passed:
         from operating_profile import normal_profile
-        write_artifact(slug, 'chat-publish-approval.json', {})
+        approval = certify(payload, read_artifact(slug, 'evidence.json'), qa, read_artifact(slug, 'acceptance.json'))
+        write_artifact(slug, 'qa-certification.json', approval)
         state['current_stage'] = 'EYECATCH_PENDING' if normal_profile() else 'CHAT_REVIEW_PENDING'
         state['next_retry_at'] = None
         state['last_failure_class'] = None
@@ -413,7 +415,7 @@ def replace_product_evidence(slug: str, evidence: dict, selection: dict) -> dict
         raise ValueError('replacement evidence not accepted: ' + '; '.join(issues))
     write_artifact(slug, 'evidence.json', evidence)
     write_artifact(slug, 'selection.json', selection)
-    for name in ('payload.json', 'acceptance.json', 'qa.json', 'gate-feedback.json',
+    for name in ('payload.json', 'acceptance.json', 'qa.json', 'qa-certification.json', 'gate-feedback.json',
                  'eyecatch-receipt.json', 'chat-publish-approval.json'):
         write_artifact(slug, name, {})
     write_artifact(slug, 'product-blocker.json', {})
@@ -433,6 +435,9 @@ def materialize_for_publish(slug: str, repo: Path = ROOT) -> None:
         raise ValueError('comparison acceptance refused: needs_product_reselection')
     require_publishing_enabled(repo)
     require_acceptance(payload, evidence, acceptance)
+    from qa_certification import require_certification
+    require_certification(read_artifact(slug, 'qa-certification.json', {}), payload, evidence,
+                          read_artifact(slug, 'qa.json', {}), acceptance)
     from operating_profile import normal_profile
     if not normal_profile():
         require_chat_publish_approval(read_artifact(slug, 'chat-publish-approval.json'), payload=payload, evidence=evidence)
