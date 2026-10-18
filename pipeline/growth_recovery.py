@@ -200,6 +200,8 @@ def _backoff(stage: str, attempt: int, failure_class: str) -> timedelta:
         return timedelta(0)
     if stage == 'product' and failure_class == 'missing_evidence':
         return timedelta(0)
+    if stage == 'product' and failure_class == 'runtime_infrastructure':
+        return timedelta(minutes=15)
     schedule = [0, 5, 15, 30, 60, 120]
     minutes = schedule[min(max(attempt, 1), len(schedule)) - 1]
     if stage == 'publish':
