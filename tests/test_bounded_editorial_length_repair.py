@@ -1,0 +1,21 @@
+import sys
+from pathlib import Path
+from unittest.mock import patch
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'pipeline'))
+from writer_runtime import revise_length_fields
+from quality_fixtures import accepted_fixture
+
+def test_repair_edits_only_original_writer_prose_fields_and_keeps_products():
+    original,_,_=accepted_fixture()
+    changes={'summary':'要点を照合しましょう。'*9,
+             'how_to_choose':'機器の対応条件を確認しましょう。'*13,
+             'conclusion':'購入時の仕様を確認しましょう。'*9}
+    with patch('writer_runtime.require_local_provider_allowed'),\
+         patch('writer_runtime.codex_generate_persistent',return_value=(changes,{'model':'test'})) as writer:
+        revised,metadata=revise_length_fields(original,rendered_main_len=3433)
+    assert metadata['model']=='test'
+    assert writer.call_count==1
+    assert revised['products']==original['products']
+    assert revised['comparison_groups']==original['comparison_groups']
+    assert revised['summary']==changes['summary']
+    assert revised['conclusion']==changes['conclusion']
