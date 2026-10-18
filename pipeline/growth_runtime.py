@@ -840,6 +840,14 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
                     raise GrowthRuntimeError(f'exact evidence unchanged for {slug}')
             evidence['product_acceptance'] = independent_review(evidence)
             issues = product_issues(evidence)
+            # Preserve the complete independent result before mutating the pool.
+            # A later candidate selection must not erase why a product was rejected.
+            write_artifact(slug, 'product-review-' + signature.replace('|', '-') + '.json', {
+                'asins': list(six_asins),
+                'evidence': evidence,
+                'issues': issues,
+                'review': (evidence.get('product_acceptance') or {}).get('review'),
+            })
             reviewed_sets.add(signature)
             if not issues:
                 replace_product_evidence(slug, evidence, selection)
