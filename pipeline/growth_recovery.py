@@ -199,7 +199,7 @@ def _backoff(stage: str, attempt: int, failure_class: str) -> timedelta:
     if failure_class == 'role_quality':
         return timedelta(0)
     if stage == 'product' and failure_class == 'missing_evidence':
-        return timedelta(0)
+        return timedelta(minutes=15)
     if stage == 'product' and failure_class == 'runtime_infrastructure':
         return timedelta(minutes=1)
     schedule = [0, 5, 15, 30, 60, 120]
