@@ -938,8 +938,14 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
             six_asins = tuple(sorted(p['asin'] for p in selected))
             signature = '|'.join(six_asins)
             if signature in reviewed_sets:
-                # Skip the unchanged set; research or select a new replacement.
-                break
+                # A large durable pool can keep ranking the same rejected six forever.
+                # Exclude one non-pinned member of this already-reviewed combination
+                # for this selection pass, then select another distinct combination.
+                removable = next((asin for asin in six_asins if asin not in pin_set), None)
+                if removable is None:
+                    break
+                available = [p for p in available if p['asin'] != removable]
+                continue
             evidence = build_evidence(topic, selected, selection)
             evidence['product_acceptance'] = independent_review(evidence)
             issues = product_issues(evidence)
