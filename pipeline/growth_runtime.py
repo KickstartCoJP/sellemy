@@ -352,9 +352,14 @@ def evaluate_candidate(payload: dict, evidence: dict, *, acceptance: dict | None
     validate_payload(payload); match_refs(payload, evidence)
     rendered = render_article(payload, evidence)
     findings = [repr(finding) for finding in run_review_gate(payload, evidence)]
+    image_audit = None
+    if os.environ.get('SELLEMY_REQUIRE_PRODUCT_IMAGE_AUDIT') == '1':
+        from product_image_audit import audit_remote_product_images
+        image_audit = audit_remote_product_images(evidence['products'])
     return rendered, findings, run_qa(
         rendered, payload, evidence, acceptance=acceptance,
         require_semantic_acceptance=require_semantic_acceptance,
+        image_audit=image_audit,
     )
 
 
