@@ -951,7 +951,16 @@ def _execute_job(slug: str, result: dict, *, cache_only: bool = False) -> str:
         evidence = read_artifact(slug, 'evidence.json', {})
         result['selected_asins'] = [p.get('asin') for p in evidence.get('products', [])]
         result['candidate_count'] = len(evidence.get('products', []))
-        if (read_artifact(slug, 'product-blocker.json', {}) or {}).get('needs_product_reselection'):
+        blocker = read_artifact(slug, 'product-blocker.json', {}) or {}
+        if blocker.get('needs_product_reselection'):
+            # A newer independently accepted receipt supersedes an older blocker.
+            # Never repeat discovery after a verified six-product acceptance.
+            if evidence.get('product_acceptance') and not product_issues(evidence):
+                write_artifact(slug, 'product-blocker.json', {})
+                progress = read_artifact(slug, 'product-search-progress.json', {}) or {}
+                progress['complete'] = True
+                write_artifact(slug, 'product-search-progress.json', progress)
+                continue
             _reselect_products(slug, cache_only=cache_only)
             continue
         if stage in {'WRITER_PENDING', 'QA_FAILED'}:
