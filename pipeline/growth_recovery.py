@@ -198,6 +198,8 @@ def eligible_job(*, now: datetime | None = None) -> dict | None:
 def _backoff(stage: str, attempt: int, failure_class: str) -> timedelta:
     if failure_class == 'role_quality':
         return timedelta(0)
+    if stage == 'product' and failure_class == 'missing_evidence':
+        return timedelta(0)
     schedule = [0, 5, 15, 30, 60, 120]
     minutes = schedule[min(max(attempt, 1), len(schedule)) - 1]
     if stage == 'publish':
