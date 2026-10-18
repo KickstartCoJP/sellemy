@@ -67,7 +67,7 @@ def independent_review(evidence, payload=None):
         'Return ACCEPTED only if ALL applicable contract criteria are met. '
         'Evidence-only review assesses whether a useful comparison CAN be written; '
         'article review assesses whether THIS prose delivers it. '
-        'Use BLOCKED/needs_product_reselection=true when facts or identities are insufficient. '
+        'Check only the supplied evidence against the existing topic comparison_axes and, when present, the submitted article. Do not invent comparison axes, change the article plan, or demand a manufacturer source solely because of its source type. A verified matching marketplace excerpt is valid evidence for what it explicitly states. Reject unsupported or ambiguous claims, not a source category. Use BLOCKED/needs_product_reselection=true when submitted facts or identities are insufficient. '
         'Use REVISION_REQUIRED/false for writing defects with adequate evidence. '
         'identity_key must be a literal identifying substring contained in identity_quote, using the same language/script as the source. Choose the shortest source-backed brand + base model/family string that still distinguishes the product; exclude seller, ASIN, color, quantity and bundles. Do not invent an English canonical key for a Japanese source. '
         'Cite exact substrings from that product source corpus (listing title plus verified source excerpts/facts) for identity_quote and axis_support.quote. Prefer manufacturer/official/manual anchors for decision-critical facts. Marketing claims are not proof of performance. Reject accessories/refills/parts mixed into a main-product comparison unless the topic explicitly targets them. '
