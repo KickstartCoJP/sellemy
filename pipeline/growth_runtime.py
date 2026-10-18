@@ -435,7 +435,7 @@ def _runtime_failure(exc: Exception) -> bool:
         'selected model is at capacity', 'websocket closed', 'stream disconnected', 'reconnecting...',
         'rollout has no completed built-in image_gen execution evidence',
     )
-    return isinstance(exc, (PublishGateError, ProductionDeployError)) or any(x in text for x in runtime_markers)
+    return isinstance(exc, (TypeError, AttributeError, ImportError, NameError, PublishGateError, ProductionDeployError)) or any(x in text for x in runtime_markers)
 
 
 def _cleanup_expected_dirty(slug: str, category: str, base_head: str) -> None:
