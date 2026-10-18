@@ -282,6 +282,18 @@ def mark_failure(slug: str, *, stage: str, failure_class: str, failure_code: str
                         previous+=1
         ng[stage]=previous+1
         state['quality_ng_by_gate']=ng
+        if ng[stage]>=3 and stage == 'eyecatch':
+            state['status'] = 'ACTIVE'
+            state['current_stage'] = 'OWNER_EYECATCH_PENDING'
+            state['next_retry_at'] = None
+            state['last_failure_code'] = failure_code
+            state['last_failure_reason'] = reason[:2000]
+            write_artifact(slug, 'owner-quality-case.json', {
+                'schema': 'sellemy-owner-quality-case/v1', 'slug': slug,
+                'stage': stage, 'ng_count': ng[stage], 'failure_code': failure_code,
+                'case_state': 'OWNER_IMAGE_REQUESTED',
+            })
+            return _save_state(state, event='EYECATCH_OWNER_DELEGATED')
         if ng[stage]>=3 and stage != 'product':
             state['status']='FAILED'
             state['current_stage']=stage.upper()+'_FAILED'

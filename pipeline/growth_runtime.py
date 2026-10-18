@@ -711,6 +711,14 @@ def _eyecatch_and_publish(slug: str, result: dict) -> str:
                             failure_code='EYECATCH_GENERATION_FAILED', reason=f'{type(exc).__name__}: {exc}',
                             role_return=role_return, role='designer',
                         )
+                        if load_job(slug).get('current_stage') == 'OWNER_EYECATCH_PENDING':
+                            from eyecatch_owner_bridge import ensure_owner_request
+                            try:
+                                result['owner_eyecatch_request'] = ensure_owner_request(
+                                    slug=slug, title=topic['title'], category=category,
+                                    evidence=evidence, payload=payload)
+                            except Exception as owner_exc:
+                                result['owner_eyecatch_request_error'] = f'{type(owner_exc).__name__}: {owner_exc}'
                         session = context_session_id(DESIGNER_SURFACE)
                         if role_return:
                             record_context_quality(ROOT, DESIGNER_SURFACE, False, session_id=session, reason=str(exc))

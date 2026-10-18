@@ -103,10 +103,10 @@ def ensure_owner_request(*, slug: str, title: str, category: str, evidence: dict
         'required_actions': [
             'sellemy-ops Chat itself generates one article-specific 1536x1024 PNG with image generation; do not use OpenAI API or Codex.',
             f'Register the exact generated PNG into the pending package with: cd {ROOT} && .venv/bin/python pipeline/register_chat_eyecatch.py {slug} <PNG_PATH> --pending --chat-ref {message_id}',
-            f'Resume the exact pending publication with: cd {ROOT} && .venv/bin/python pipeline/resume_pending_eyecatch.py {slug}',
-            'Read back the published slug and published_at and return RESULT to the same Task.',
+            f'Return the approved image to normal publication route: cd {ROOT} && .venv/bin/python pipeline/resume_pending_eyecatch.py {slug}',
+            'Return image delivery receipt; the normal runtime owns publishing and verification.',
         ],
-        'next_action': 'Generate, pending-register, resume, and verify the exact same article publication. Do not plan a replacement topic while this request is unresolved.',
+        'next_action': 'Produce only the eyecatch and return it to the normal publication runtime; other articles must continue.',
         'next_responsibility_role_id': OWNER_ROLE, 'project_completed': False,
     }
     if not _history_has_message(task_dir, message_id):
@@ -125,7 +125,7 @@ def ensure_owner_request(*, slug: str, title: str, category: str, evidence: dict
         'Required: one article-specific 1536x1024 PNG; no category-copy, montage fallback, OpenAI API, or Codex. '
         f'Pending publication package: {root}. After generation, pending-register the exact PNG with '
         f'pipeline/register_chat_eyecatch.py {slug} <PNG_PATH> --pending --chat-ref {message_id}; then run '
-        f'pipeline/resume_pending_eyecatch.py {slug}. Verify the real published slug and published_at and return RESULT.'
+        f'pipeline/resume_pending_eyecatch.py {slug}. Return the image delivery result; leave publishing to the normal runtime.'
     )
     try:
         _run([py, str(role_script), 'send', '--chat-id', chat_id, '--message-id', message_id,
