@@ -1,0 +1,156 @@
+{
+  "contract_version": "bf7d78a8237179bb977f6ca29f54f732162e9d387723eb0c936bc77316835b8f",
+  "evidence_sha256": "7fb88c1c99c5d23d5677504157da2d7dff548f358fe549a232f4f53f5560c9e5",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 14848,
+    "input_tokens": 34396,
+    "member_binding_revision": 12,
+    "output_tokens": 1243,
+    "reasoning_effort": "low",
+    "reasoning_output_tokens": 75,
+    "session_id": "01a14d5f-04c2-7e32-9a7d-2dc5a1042247",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-writer"
+  },
+  "payload_sha256": "55a6407e51e752e1e1e1b5eefe949be446a40e196c1f52129089b4c9878ea56c",
+  "review": {
+    "buying_guidance": true,
+    "claims_grounded": true,
+    "complete_comparison": true,
+    "distinct_products": true,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "device_compatibility",
+            "quote": "NX-F2CL256G / 256 GB"
+          },
+          {
+            "axis_id": "recording_speed",
+            "quote": "V30(最低継続書き込み保証速度30 MB/s)"
+          },
+          {
+            "axis_id": "warranty_and_conditions",
+            "quote": "ご購入日より5年間"
+          }
+        ],
+        "identity_key": "Nextorage NX-F2CL",
+        "identity_quote": "Nextorage NX-F2CL",
+        "reason": "公式資料で256GBモデル、SDXC・UHS-I、V30、5年保証と動作温度を確認できる。本文は読み出し速度の条件と販売元による保証条件も区別している。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "device_compatibility",
+            "quote": "ProGrade Digital SDXC UHS-II V60 GOLD 1TB メモリーカード"
+          },
+          {
+            "axis_id": "recording_speed",
+            "quote": "minimum write speeds of at least 60 MB/s"
+          },
+          {
+            "axis_id": "warranty_and_conditions",
+            "quote": "保証期間：購入より3年間"
+          }
+        ],
+        "identity_key": "ProGrade Digital SDXC UHS-II V60 GOLD",
+        "identity_quote": "ProGrade Digital SDXC UHS-II V60 GOLD 1TB メモリーカード",
+        "reason": "1TBのUHS-II・V60製品として識別できる。本文は最大速度とV60を分け、国内掲載と公式資料の保証・動作温度の相違を未確定としている。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "device_compatibility",
+            "quote": "SanDisk Extreme PRO SD UHS-II (V90) Card"
+          },
+          {
+            "axis_id": "recording_speed",
+            "quote": "最大300MB/秒 [2] 書き込み速度"
+          }
+        ],
+        "identity_key": "SanDisk Extreme PRO SD UHS-II (V90)",
+        "identity_quote": "SanDisk Extreme PRO SD UHS-II (V90) Card",
+        "reason": "128GBのUHS-II・V90系列を確認できる。本文は最大書き込み速度を公称値として扱い、国内保証を海外向け資料から断定していない。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "device_compatibility",
+            "quote": "SanDisk Extreme SD UHS-I Card"
+          },
+          {
+            "axis_id": "recording_speed",
+            "quote": "Shot speeds up to 130MB/s"
+          }
+        ],
+        "identity_key": "SanDisk Extreme SD UHS-I",
+        "identity_quote": "SanDisk Extreme SD UHS-I Card",
+        "reason": "512GBのExtreme系列で、公式資料はUHS-Iと公称速度を示す。掲載品と公式資料の型番末尾の違いを本文で明示し、掲載品固有の保証値とはしていない。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "device_compatibility",
+            "quote": "UHS-I SDXCカード 64GB"
+          },
+          {
+            "axis_id": "recording_speed",
+            "quote": "ビデオスピードクラスV30"
+          },
+          {
+            "axis_id": "warranty_and_conditions",
+            "quote": "国内でのサポートはありません。"
+          }
+        ],
+        "identity_key": "SanDisk サンディスク Extreme Pro SDXC UHS-I",
+        "identity_quote": "SanDisk サンディスク Extreme Pro SDXC UHS-I U3 V30対応",
+        "reason": "販売ページは64GB、UHS-I、V30、公称速度と国内サポートなしを明記している。本文は掲載情報として限定し、購入条件を選択上の違いに結び付けている。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "device_compatibility",
+            "quote": "GIGASTONE SDカード 512GB 4K Camera Pro SDXC UHS-I"
+          },
+          {
+            "axis_id": "recording_speed",
+            "quote": "A1 V30 U3 C10 100 MB/s"
+          },
+          {
+            "axis_id": "warranty_and_conditions",
+            "quote": "5年間メーカー保証付き"
+          }
+        ],
+        "identity_key": "GIGASTONE SDカード 512GB 4K Camera Pro",
+        "identity_quote": "GIGASTONE SDカード 512GB 4K Camera Pro SDXC UHS-I",
+        "reason": "販売ページは512GB、SDXC・UHS-I、V30、5年保証を明記している。本文は100MB/sの読み書き区分と保証詳細が不明な点を留保し、個別機器への対応や耐久性を保証していない。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reason": "6製品はブランドと製品系列で区別でき、いずれもフルサイズSDカードに該当する。本文は機器の対応規格、速度クラス、容量、保証・購入条件を根拠の範囲で比較し、各製品の選び方を示している。型番末尾や保証条件が一致しない箇所も、確定事項として扱っていない。",
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}

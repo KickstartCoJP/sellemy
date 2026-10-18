@@ -1,0 +1,384 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/full-size-sd-memory-cards.html",
+  "category": "gadget",
+  "comparison_axes": [
+    {
+      "id": "device_compatibility",
+      "keywords": [
+        "SDHC",
+        "SDXC",
+        "UHS-I",
+        "UHS-II"
+      ],
+      "label": "SD規格とカメラ側の対応条件"
+    },
+    {
+      "id": "recording_speed",
+      "keywords": [
+        "ビデオスピードクラス",
+        "最低書込速度",
+        "公称書込速度",
+        "測定条件"
+      ],
+      "label": "動画記録に関わる速度クラスと公称速度"
+    },
+    {
+      "id": "warranty_and_conditions",
+      "keywords": [
+        "国内正規品",
+        "保証期間",
+        "動作温度",
+        "保証対象"
+      ],
+      "label": "国内保証と使用環境の条件"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/full-size-sd-memory-cards/full-size-sd-memory-cards.png",
+  "product_acceptance": {
+    "contract_version": "bf7d78a8237179bb977f6ca29f54f732162e9d387723eb0c936bc77316835b8f",
+    "evidence_sha256": "7fb88c1c99c5d23d5677504157da2d7dff548f358fe549a232f4f53f5560c9e5",
+    "metadata": {},
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "device_compatibility",
+              "quote": "フォームファクタ\nSDXC\nインターフェース\nUHS-I"
+            },
+            {
+              "axis_id": "recording_speed",
+              "quote": "V30(最低継続書き込み保証速度30 MB/s)"
+            },
+            {
+              "axis_id": "warranty_and_conditions",
+              "quote": "ご購入日より5年間"
+            }
+          ],
+          "identity_key": "NX-F2CL",
+          "identity_quote": "NX-F2CLシリーズ｜SDXC UHS-I U3 V30 メモリーカード",
+          "reason": "公式資料で系列、SDXC・UHS-I、V30、5年保証と動作温度を確認できる。最大読出し速度200MB/sには指定リーダーなどの条件がある。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "device_compatibility",
+              "quote": "ProGrade Digital SDXC UHS-II V60 GOLD 1TB メモリーカード"
+            },
+            {
+              "axis_id": "recording_speed",
+              "quote": "Write Speed\nUp to 130MB/s"
+            }
+          ],
+          "identity_key": "ProGrade Digital SDXC UHS-II V60 GOLD",
+          "identity_quote": "ProGrade Digital SDXC UHS-II V60 GOLD 1TB メモリーカード",
+          "reason": "UHS-II・V60と最大書込速度を確認できる。国内向け掲載と公式サイトで保証期間・動作温度が異なるため、その条件は確定できない。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "device_compatibility",
+              "quote": "SanDisk 128GB Extreme PRO SDXC UHS-II メモリーカード"
+            },
+            {
+              "axis_id": "recording_speed",
+              "quote": "最大300MB/秒 [2] 書き込み速度"
+            }
+          ],
+          "identity_key": "SanDisk Extreme PRO SD UHS-II (V90)",
+          "identity_quote": "SanDisk Extreme PRO SD UHS-II (V90) Card",
+          "reason": "掲載品と公式資料で系列、SDXC・UHS-II、V90を確認できる。最大300MB/秒は公称値として扱い、実機での記録性能を保証する記述には使えない。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "device_compatibility",
+              "quote": "SanDisk Extreme SD UHS-I Card"
+            },
+            {
+              "axis_id": "recording_speed",
+              "quote": "Shot speeds up to 130MB/s"
+            }
+          ],
+          "identity_key": "SanDisk Extreme SD UHS-I",
+          "identity_quote": "SanDisk Extreme SD UHS-I Card",
+          "reason": "公式資料で系列、UHS-I、最大読出し180MB/sと最大撮影速度130MB/sを確認できる。掲載品と公式資料の型番末尾が異なるため、個別パッケージの保証条件は確定できない。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "device_compatibility",
+              "quote": "UHS-I SDXCカード 64GB"
+            },
+            {
+              "axis_id": "recording_speed",
+              "quote": "最大読込速度95MB/s　最大書込速度90MB/s\nビデオスピードクラスV30"
+            },
+            {
+              "axis_id": "warranty_and_conditions",
+              "quote": "海外パッケージ品の為、国内でのサポートはありません。"
+            }
+          ],
+          "identity_key": "SanDisk サンディスク Extreme Pro SDXC UHS-I",
+          "identity_quote": "SanDisk サンディスク Extreme Pro SDXC UHS-I U3 V30対応",
+          "reason": "確認済み掲載文にUHS-I、V30と公称読込・書込速度が明記されている。並行輸入品で国内サポートがない旨も明記されており、購入条件の差として扱える。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "device_compatibility",
+              "quote": "4K Camera Pro SDXC UHS-I A1 V30 U3 C10"
+            },
+            {
+              "axis_id": "recording_speed",
+              "quote": "A1V30クラス10"
+            },
+            {
+              "axis_id": "warranty_and_conditions",
+              "quote": "安心の5年間メーカー保証付き。"
+            }
+          ],
+          "identity_key": "GIGASTONE SDカード 512GB 4K Camera Pro",
+          "identity_quote": "GIGASTONE SDカード 512GB 4K Camera Pro SDXC UHS-I",
+          "reason": "確認済み掲載文でCamera Pro系列、SDXC・UHS-I、V30と5年間メーカー保証を確認できる。100MB/sは読込・書込の別が明示されていないため、書込速度として比較してはならない。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reason": "証拠のみの審査。6件はそれぞれ識別可能なフルサイズSDカードで、製品系列の重複は見られない。UHS規格、動画速度クラス、公称速度など複数の比較軸で購入判断に役立つ記事を作成できる。ただし国内保証を全製品について比較できる証拠はなく、p2の保証期間・動作温度は掲載元間で異なるため、記事で断定してはならない。",
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_chat_review"
+  },
+  "products": [
+    {
+      "amazon_title": "Nextorage 日本メーカー UHS-I SDカード 256GB SDXC V30 U3 4K F2CL",
+      "asin": "B0DLWYDXJN",
+      "brand": "Nextorage",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61xE5AlVzUL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "device_compatibility",
+        "recording_speed",
+        "warranty_and_conditions"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0DLWYDXJN",
+      "provisional": false,
+      "ref": "p1",
+      "search_key": "Nextorage 日本メーカー UHS-I SDカード 256GB SDXC V3",
+      "selection_score": 1.05,
+      "sources": [
+        {
+          "brand": "Nextorage",
+          "excerpt": "Nextorage 日本メーカー UHS-I SDカード 256GB SDXC V30 U3 4K F2CL\nこの商品について\n【警告・注意】Nextorage株式会社は、AmazonでのNextorageブランド製品の販売をNextorageダイレクトに限り認めております。 Nextorageダイレクトで購入した製品を、新品として無断でAmazon内にて転売することは不当で、転売された製品は保証対象外となります。Nextorageダイレクト以外の転売ショップで購入されたNextorage製品はメーカー保証対象外になりますので購入しないようお気を付けください。\nNextorage (ネクストレージ) について：Nextorageはソニーカメラ用のメモリーカードを20年間以上開発してきた元ソニーエンジニアメンバーが立ち上げた日本の会社です。クリエイティブからエンターテインメントまで、強い信頼性が求められる様々なシーンに最適化した製品を提供しています。\n幅広い撮影シーンで活躍するエントリーモデル：NX-F2CLシリーズは、UHS-I対応のデジタル一眼レフやミラーレス一眼での静止画をはじめ、高画質動画の撮影にも最適なメモリーカードです。\n最大読出し速度：200MB/s　※注1：Nextorage デュアルスロット SDカードリーダー「NX-DF1CL」を使用した場合、注2：ご使用の環境により読出し速度は異なる場合がありますので予めご了承ください。\nSDスピードクラス：CL10、UHSスピードクラス：U3\nビデオスピードクラスV30に対応：最低継続書き込み保証速度30 MB/sのV30対応のため、フルHDや4K動画の撮影においてもフレーム落ちが発生しにくく、安定した録画を実現します。\nデータ復旧ソフトウェア対応：万が一データが破損してしまった場合は、Nextorageウェブサイトのサポートページからデータ復旧ソフトウェア「メモリーカードファイルレスキュー」の特典を無料でご利用いただけます。 *すべてのデータにおいて復旧を保証するものではございません。\n豊富な対応機種：CanonやNikon、ソニー等のデジタル一眼レフカメラに最適なSDXCメモリーカードです。\nパッケージ内容：SDXCメモリーカード本体、専用ケース、メモリーカードファイルレスキュー (ダウンロード特典)、カスタマーサポート 表示件数を増やす › もっと見る\nブランド Nextorage\nモデル名 NX-F2CL\nフラッシュメモリタイプ SDXCカード\nメモリストレージ容量 256 GB\n対応デバイス カメラ\nNextorageのストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Nextorage 日本メーカー UHS-I SDカード 256GB SDXC V30 U3 4K F2CL",
+          "url": "https://www.amazon.co.jp/dp/B0DLWYDXJN",
+          "verified": true
+        },
+        {
+          "excerpt": "NX-F2CLシリーズ｜SDXC UHS-I U3 V30 メモリーカード\n512 GB / 256 GB / 128 GB\n外部サイトで購入\n幅広いシーンで活躍する エントリーモデル\nNX-F2CLシリーズは、UHS-I対応のデジタル一眼レフやミラーレス一眼での静止画をはじめ、高画質動画の撮影にも最適なメモリーカードです。\nV30・U3対応で動画記録も安定\nビデオスピードクラスV30(最低継続書き込み保証速度30 MB/s)に対応し、フルHDや4K動画の撮影においてもフレーム落ちが発生しにくく、安定した録画を実現。UHSスピードクラス3 (U3)にも対応し、UHS-I対応ホスト機器における4KやフルHDなどの動画撮影性能を最大限活用できます。 デイリーユースからプロフェッショナルな現場まで、安定した記録をサポートします。\nNX-F2CLシリーズは、読み出し速度最大200 MB/s 1 を実現。SDカード用デュアルスロットカードリーダー「NX-DF1CL」と組み合わせてご使用いただくことで、最大限のパフォーマンスを発揮いたします。\nNX-DF1CL (Amazon) ▸\n連写をする習慣のないコスプレ撮影ですが、1回で1,000枚を超えるような撮影をする傾向があるため、撮影後にPCやSSDなどへの読み出しが速いことがストレスのかからないワークフローとして重要です。\n充実したユーザーサポート\nNX-F2CLシリーズは安心のメーカー5年保証付き製品です。国内に専用のサポートセンターを設け、メールや電話でのサポートに対応いたします。 万が一データが破損してしまった場合は、Nextorageウェブサイトのサポートページからデータ復旧ソフトウェア「メモリーカードファイルレスキュー」の特典を無料でご利用いただけます。復旧の対象となるファイルを独自のアルゴリズムにより可能な範囲で復旧させることができるため、安心してメモリーカードをお使いいただくことができます。\n安心の耐久性能\nNX-F2CLシリーズは7種類の保護耐久 2 テストをクリアしています。 屋内外の様々な環境で安心してお使いになれるよう大切なデータを守ります\n耐温度：-25 ℃ ～ 85 ℃\n耐衝撃：高さ1.5 mからの落下耐性テスト済\n曲げ耐性：10 N(ニュートン)加圧テスト済\n耐挿抜：10,000回のカード挿抜耐性テスト済\n耐X線：ISO 7816-1準拠\n耐磁性：Nextorage独自環境にてテスト実施済\n耐静電：IEC 61000-4-2準拠\n信頼の互換性\nNX-F2CLシリーズは各社UHS-Iメモリーカード対応カメラにおいて最高のパフォーマンスを発揮できるよう、最新機種との互換検証を行っています。\nメモリーカード ファイルレスキュー\nNextorage製メモリーカードご購入特典｜誤って削除してしまったデータを可能な限り復元するソフトウェアです。\n著作権保護されたデータの復元には対応していません。また、データの復元を保証するものではありません。ダウンロードにはPC環境が必要です。\n5年間の製品保証\nご購入後5年間の製品保証と国内サポートに対応します\n仕様\nモデル名 / 容量*\nNX-F2CL512G / 512 GB NX-F2CL256G / 256 GB NX-F2CL128G / 128 GB\n* 容量は10億バイトを1 GBとして表記しています。実際に使用可能な領域は、システムファイル領域があるため、表示されている内容より少なくなります。\nフォームファクタ\nSDXC\nインターフェース\nUHS-I\nNANDフラッシュメモリ\nNX-F2CL512G / 3D QLC NX-F2CL256G / 3D QLC NX-F2CL128G / 3D TLC\nスピードクラス\nClass 10 (SDスピードクラス) Class 3 (UHSスピードクラス) V30 (ビデオスピードクラス)\n最大転送速度 (読み出し) 1\n200 MB/s\n動作温度範囲\n-25 ℃ ~ 85 ℃ (結露のないこと)\n保存温度範囲\n-40 ℃ ~ 85 ℃ (結露のないこと)\n外形寸法 (W×L×D)\n24 mm x 32 mm x 2.1 mm\n質量\n約 2 g\n同梱物\nハードケース\n保証\nご購入日より5年間\n耐久性 2\n耐衝撃\n高さ1.5mからの落下耐性テスト済\n曲げ耐性\n10 N（ニュートン）加圧テスト済\n耐挿抜\n10,000 回のカード挿抜耐性テスト済\n耐温度\n-25 ℃ ~ 85 ℃（結露のないこと）\n耐X線\nISO 7816-1準拠\n空港でのX線手荷物検査によるデータへの影響がありません\n耐磁性\nNextorage独自環境にてテスト実施済\n耐静電\nIEC 61000-4-2準拠\nソフトウェアダウンロード / 製品対応情報 / 取扱説明書\nNextorage内部テストによります。実際の性能は環境によって異なる場合があります。\n耐久性評価は、Nextorageの試験条件に基づいています。製品の破損やデータの破損は、すべての状況において保証されるものではありません。\nデザイン、仕様は予告なく変更する場合があります SDXC ロゴはSD-3C、LLCの商標です",
+          "http_status": 200,
+          "source_type": "manufacturer_official",
+          "title": "NX-F2CL: UHS-I SDカード - Nextorage",
+          "url": "https://www.nextorage.net/cards/sd/f2cl/",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "ProGrade Digital SDXC UHS-II V60 GOLD 1TB メモリーカード プログレードデジタル 正規輸入品",
+      "asin": "B0F7Y1W68L",
+      "brand": "ProGrade Digital",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61z-HgFlzKL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "device_compatibility",
+        "warranty_and_conditions"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0F7Y1W68L",
+      "provisional": false,
+      "ref": "p2",
+      "search_key": "ProGrade Digital SDXC UHS-II V60 GOLD 1TB メモリーカー",
+      "selection_score": 0.65,
+      "sources": [
+        {
+          "brand": "ProGrade Digital",
+          "excerpt": "ProGrade Digital SDXC UHS-II V60 GOLD 1TB メモリーカード プログレードデジタル 正規輸入品\nこの商品について\n✅最大転送速度：読込250MB/s 書込130MB/s　✅スピードクラス：V60, U3, C10\n✅耐久性：耐熱性（動作温度-25℃～85℃）／耐Ｘ線\n✅「Refresh Pro」対応\n✅保証期間：購入より3年間\n✅製造国：台湾 › もっと見る\nブランド ProGrade Digital\nモデル名 ProGrade Digital SDXC UHS-II V60 GOLD 1TB メモリーカード\nフラッシュメモリタイプ SDXCカード\nメモリストレージ容量 1 TB\n対応デバイス SDスロット搭載デジタルカメラ／デジタルビデオカメラ\nProGrade Digitalのストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "ProGrade Digital SDXC UHS-II V60 GOLD 1TB メモリーカード プログレードデジタル 正規輸入品",
+          "url": "https://www.amazon.co.jp/dp/B0F7Y1W68L",
+          "verified": true
+        },
+        {
+          "excerpt": "\"These cards are fantastic. They reach the advertised speed, are built way more solid than the competition and they are a great price. These have definitely become my go-to memory cards.\"\nMatthew D.\nProGrade Digital SDXC UHS-II V60 250R Gold Memory Card\n$ 129.99 USD\nRead 250MB/s | Write 100MB/s\nSustained write 60MB/s for 4K/UHD/Full HD\nShock & X-ray proof\nLimited Lifetime Warranty, Refresh Pro™ enabled\nPlease select all options.\nFree USA Shipping\n30-Day Returns\nProduct Specifications\nCapacity\n128GB / 256GB / 512GB / 1TB\nRead Speed\nUp to 250MB/s\nWrite Speed\nUp to 130MB/s\nRefresh Pro\nCompatible with Refresh Pro. This tool will ensure that your cards will always perform at their best. (Refresh Pro sold separately)\nSave Battery\nLow power consumption for extended battery life when recording continuous video.\nWarranty\nLimited Lifetime Warranty\nTemperature\nOperating Temperature: -12°C to 72°C Storage Temperature: -20°C to 85°C\nForm Factor\nSDXC V60\nDimensions\nSDXC V60: 32mm x 24mm x 2.1mm\nOverview\nThe UHS-II SDXC V60 Memory Card from ProGrade Digital features a storage capacity of up to 1TB per card and takes advantage of the UHS-II bus to support maximum read speeds of 250 MB/s and maximum write speeds of 130 MB/s. This SD card has also been designed with the V60 Video Speed Class rating, which guarantees minimum write speeds of at least 60 MB/s, allowing the memory card to be used in DSLRs, mirrorless cameras, camcorders, and digital cinema cameras to produce 4K, UHD 4K, 3D, Full HD, and high bit rate MPEG-4 video. It is also well suited for raw photos and rapid-fire bursts.\nUHS-II memory cards achieve their speed through an extra row of pins and while this SDXC card has been designed for cameras that are UHS-II / V60 compatible, it may be used in devices that do not support UHS-II / V60. However, bear in mind that this card will then default to your device's speed class and bus rating, such as UHS-II and V30, which supports minimum write speeds of 30 MB/s, or UHS-I and U3, which also supports minimum write speeds of 30 MB/s. If your device does not support U3, this SD card is compatible with the U1 and Class 10 standards, each of which guarantee minimum write speeds of 10 MB/s.\nBuilt for extreme conditions, ProGrade Digital's UHS-II SDXC Memory Cards are able to withstand temperatures from -13 to 185°F, allowing you to take this card with you into extreme environments, such as snow and deserts. It is also X-ray proof and shockproof, and a built-in write protect switch helps to safeguard your content from being erased.\nNOTE: If you're using an GH5, GH5s, EOS-R, A7RIII, A7RIV we recommend using our V90 cards.\nSD V60 Card – Up to 130MB/s Write Speed and 250 MB/s Read Speed | For Professional Vloggers, Filmmakers, Photographers & Content Curators –Update Firmware Included – By ProGrade Digital\nTURN YOUR PASSION INTO PROFIT – CALLING ALL VLOGGERS, INFLUENCERS, FILMMAKERS, PHOTOGRAPHERS & VIDEOGRAPHERS: Become an instant pro by adding our professional line of SD V60 cards to your kit. Focus on curating the finest content for your clients/audience while our SDXC Cards do the backend heavy lifting of storing and uploading your work efficiently every time.\nHIGH-SPEED SD CARDS FOR DIGITAL CAMERAS – INSTANTLY SAVE high resolution recordings to your device, ALL WHILE maintaining super sharp focus. STOP waiting around for your images/recordings to upload, with our Read Speed of 250 MB/s even your most robust work can be uploaded in seconds!\nCOUNTERFEITS ARE CRUMBLED: CUSTOM LASER-ETCHED SERIAL NUMBERS keep cheap counterfeiters at bay because our SD Cards are so difficult to mimic. Forged in our premium ProGrade Digital Lab, we meticulously inspect each SDXC Memory Card before it ships out and laser etch a custom code on each one.\nADVANCED RECOVERY PRO SOFTWARE: NEVER WORRY AGAIN ABOUT losing photos or videos from being “corrupted”. At ProGrade Digital, we’ve engineered the most advanced all-inclusive video and photo restoration software out there. Although not included in this package, you can find it on our site and know right away if your files can be restored before you even purchase the program!\nWHY INVEST THOUSANDS ON CAMERA EQUIPMENT, BUT CHEAP OUT ON SD CARDS? KEEP YOUR CARDS PERFORMING LIKE NEW with ProGrade Digital Refresh Pro software (available separately). All flash memory slows down over time; Refresh or sanitize your card to keep it at peak performance. And monitor the health of your cards before an important shoot.\nCARDS ARE SDA COMPLIANT and also provide UHS-I DDR-104 and U3 speed class ratings which ensure maximum compatibility in all applications from single shot stills to high resolution 4K video recording .\nREFRESH PRO™ enabled to quickly refresh SD V60 card performance and monitor card health\nOFFICIAL MEMORY CARD Supplier to the FIA World Rally Championship\nReviews\nFrequently Asked Questions\nBrowse answers by topic.\nWhat is the SDXC card?\nThe SDXC memory card allows you to do more with your device. Whether you’re looking for camera, video, or action-cam compatibility, the faster bus speeds enable improvements like professional-level recording.\nWhat is UHS-I VS UHS-II?\nAs far as physical differences between the cards, UHS-I cards have one row of pins on the back of the card and UHS-II cards have two rows. ProGrade Digital only manufactures UHS-II cards.\nWhat is the difference between SDXC V60 and SDXC V90 SD Cards?\nTo understand the difference between V60 and V90 SD Cards, just remember that a V60 card is tested to have a minimum sustained write speed of at least 60MB/s while a V90 card has a minimum sustained write speed of at least 90MB/s.\nWhat is the difference between professional-level and consumer-level cards?\nI've heard a lot about the speed of the card but it's confusing. What do I need to know about it?\nCard speeds are important to the overall performance of your camera. Here are three things you should consider: Transfer speed: How quickly data (images or video) can be downloaded from the card. Faster transfer speeds require less time to import photos or ingest video to your computer. Write speed: How well a card performs in a camera. Most camera manufacturers do not disclose an exact specification. Instead, they simply specify the speed class rating that the camera requires. Speed class: Professional-level cameras typically require higher speed specifications. For SD and microSD that is typically UHS-II and further defined for video with the video speed class V60 and V90. It’s best to match the speed of the memory card to the requirements of the camera.\nWhich memory card formats do you offer and in what capacities?\nFormat Speed Capacities CFexpress 4.0 Type B Iridium Up to 3550MB/s read speed Up to 3000MB/s write speed 400GB, 800GB, 1.6TB CFexpress 4.0 Type B Gold Up to 3400MB/s read speed Up to 3000MB/s write speed 256GB, 512GB, 1TB, 2TB CFexpress 4.0 Type A Iridium Up to 1800MB/s read speed Up to 1700MB/s write speed 480GB, 960GB CFepress 2.0 Type B Gold Up to 1700MB/s read speed Up to 1500MB/ write speed 128GB, 256GB, 512GB, 1TB CFexpress 2.0 Type A Gold Up to 900MB/s read speed Up to 800MB/s write speed 240GB, 480GB SDXC UHS-II V90 Up to 300MB/s read speed Up to 250MB/s write speed 64GB, 128GB, 256GB, 512GB SDXC UHS-II V60 Up to 250MB/s read speed Up to 130MB/s write speed 128GB, 256GB, 512GB microSDXC UHS-II V60 Up to 250MB/s read speed Up to 130MB/s write speed 128GB, 256GB, 512GB\nThere are many memory card suppliers. Why should I choose ProGrade Digital?",
+          "http_status": 200,
+          "source_type": "manufacturer_official",
+          "title": "V60 Gold SD Cards | ProGrade Digital",
+          "url": "https://shop.progradedigital.com/collections/cards/products/sdxc-uhs-ii-v60-250r-gold-memory-card",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "SanDisk 128GB Extreme PRO SDXC UHS-II メモリーカード - 最大300MB/秒の読み取りと書き込み速度、V90、8K、4K UHD、SDカード - SDSDXDM-128G-GN4IN。",
+      "asin": "B0DLWTWM4R",
+      "brand": "SANDISK",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71kJg5K7ujL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "device_compatibility"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0DLWTWM4R",
+      "provisional": false,
+      "ref": "p3",
+      "search_key": "SANDISK 128GB Extreme PRO SDXC UHS-II メモ",
+      "selection_score": 0.51,
+      "sources": [
+        {
+          "brand": "SANDISK",
+          "excerpt": "SanDisk 128GB Extreme PRO SDXC UHS-II メモリーカード - 最大300MB/秒の読み取りと書き込み速度、V90、8K、4K UHD、SDカード - SDSDXDM-128G-GN4IN。\nこの商品について\n最大300MB/秒 [2] 書き込み速度により、カメラのバッファを高速にクリアし、すべての素晴らしいショットをキャプチャできます。\n最大512GB[1]のストレージで、最大352分の4K UHDビデオを保存。[3] 60 fpsで撮影、最大286分の8Kビデオ[3] を30fpsで撮影。カードを交換したりデータをオフロードしたりする必要はありません。 [5]\n最大300MB/秒[2]の転送速度により、編集プロセスが合理化され、より迅速に配信されます。\n過酷な条件やストレスに耐えるように設計されたこのカードは、IP68の耐水性と防塵性があり、最大6メートル(19.6フィート)の落下に耐えることがテストされています。 [6]\nRescuePRO Deluxeデータ復旧ソフトウェアを使用して、誤って削除、紛失、破損したファイルを2年間無料で復元および復元できます。 › もっと見る\nブランド SANDISK\nモデル名 SanDisk Extreme PRO SD UHS-II (V90) Card\nフラッシュメモリタイプ SDXCカード\nメモリストレージ容量 128 GB\n対応デバイス カメラ",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "SanDisk 128GB Extreme PRO SDXC UHS-II メモリーカード - 最大300MB/秒の読み取りと書き込み速度、V90、8K、4K UHD、SDカード - SDSDXDM-128G-GN4IN。",
+          "url": "https://www.amazon.co.jp/dp/B0DLWTWM4R",
+          "verified": true
+        },
+        {
+          "excerpt": "Αριθμός μοντέλου: {{currentSku}} {{productBadgesInfo.tagTitle}} Κάρτα SanDisk Extreme PRO SD UHS-II (V90) - {{getUnEscapedHTMLContent(variantTagData)}}\n{{customPromotionInfo.ctaLabel}} {{customPromotionInfo.ctaLabel}}\n{{formatPrice(inventory.prices.list.amount, inventory.prices.list.currency)}}\n{{formatPrice(inventory.prices.sale.amount, inventory.prices.sale.currency)}}\n{{formatPrice(inventory.prices.sale.amount, inventory.prices.sale.currency)}} / {{inventory.prices.sale.billingPlanName}}\n{{volumePrice.minQuantity}}+ {{volumePrice.amountFormatted}} /Ea.\n{{inventory.prices.maxQuantity}}+ Αίτημα για προσφορά\nSD Cards\nΚάρτα SanDisk Extreme PRO SD UHS-II (V90)\n{{inventory.prices.list.amountFormatted}}\n{{inventory.prices.sale.amountFormatted}} / {{inventory.prices.sale.billingPlanName}}\nCapacity : 64GB\nΕπιτυχής! Λάβετε ειδοποίηση μέσω e-mail όταν αυτό το προϊόν γίνει ξανά διαθέσιμο. {{email}}\nCapacity : 128GB\nCapacity : 256 GB\nCapacity : 512GB\nOops! Something went wrong. Please try again later.\nΕυχαριστούμε για το αίτημά σας. Εξετάζουμε το αίτημά προσφοράς σας και θα επικοινωνήσουμε μαζί σας εντός τριών εργάσιμων ημερών.\n{{inventory.prices.list.amountFormatted}} Price {{inventory.prices.list.amountFormatted}}\n{{inventory.prices.sale.amountFormatted}} Offer Price {{inventory.prices.sale.amountFormatted}}\n{{inventory.prices.list.amountFormatted}} Actual Price {{inventory.prices.list.amountFormatted}}\n{{inventory.prices.sale.amountFormatted}} Offer Price {{inventory.prices.sale.amountFormatted}} / {{inventory.prices.sale.billingPlanName}}\nΑγοράζετε για την επιχείρησή σας;\nΕξετάστε το ενδεχόμενο να δημιουργήσετε έναν επαγγελματικό λογαριασμό σήμερα και απολαύστε\nΕκπτώσεις στην τιμολόγηση μεγάλων ποσοτήτων\nΠρόσβαση στους καταλόγους σε πραγματικό χρόνο\nΆμεση αγορά από τον κατασκευαστή\nΕυελιξία στις πληρωμές, μέσω του Sandisk Credit\nΈχετε ήδη επαγγελματικό λογαριασμό; Είσοδος\nΠρογράμματος ανάκτησης δεδομένων της Sandisk\nΞέγνοιαστα\nΗ Ontrack ® προσφέρει δεκαετίες τεχνογνωσίας στην ανάκτηση δεδομένων με ένα πολύ υψηλό ποσοστό επιτυχίας.\nΕγγύηση επιστροφής χρημάτων\nΕάν η Ontrack δεν μπορέσει να ανακτήσει δεδομένα, εξαιτίας συμβάντων απώλειας δεδομένων που καλύπτονται από το πρόγραμμα, η Sandisk θα σας επιστρέψει το σύνολο της τιμής του προγράμματος. 1\nΟικονομική λύση\nΧωρίς πρόγραμμα ανάκτησης δεδομένων, οι ανακτήσεις από μονές μονάδες δίσκου, σύμφωνα με το Βασικό Επίπεδο Υπηρεσιών της Ontrack μπορεί να κυμαίνονται από ~1000 € έως 2000 €. 2\nΣυνεργαστήκαμε με την Ontrack®, για να σας παρέχουμε προστασία για τυπικά και ακραία σενάρια απώλειας δεδομένων, όπως το σφάλμα μονάδας δίσκου, οι ιοί και τα προβλήματα των λογισμικών. Το πρόγραμμα περιλαμβάνει μία εργαστηριακή, δοκιμαστική προσπάθεια ανάκτησης δεδομένων, τα έξοδα μεταφοράς προς και από την Ontrack και, στις περισσότερες περιπτώσεις, μία εγγύηση αντικατάστασης συσκευής. 1\nΈχετε ερωτήσεις; Μάθετε περισσότερα\n1. Ισχύουν περιορισμοί συμμετοχής. Δείτε τους Όρους & Προϋποθέσεις του Προγράμματος Ανάκτησης Δεδομένων. 2. Πηγή: Στοιχεία της Ontrack για το ημερολογιακό έτος 2022. Το εύρος του κόστους θα εξαρτηθεί από το Επίπεδο Παροχής Υπηρεσιών, τον τύπο της συσκευής, την αιτία της απώλειας δεδομένων, την κατάσταση της μονάδας δίσκου και άλλους παράγοντες.\nΣας ευχαριστούμε! Εξετάζουμε το αίτημά σας και θα επικοινωνήσουμε σύντομα μαζί σας.\nΠολιτική Επιστροφών\nΜε την επιφύλαξη των εξαιρέσεων στην Πολιτική Επιστροφών, τα προϊόντα πληρούν τις προϋποθέσεις για δωρεάν επιστροφές εντός 30 ημερών από την ημερομηνία αποστολής.\nΔεν θα γίνονται δεκτές eπιστροφές που δεν είναι στην αρχική συσκευασία ή λείπουν εξαρτήματα και αξεσουάρ. Μόνο προϊόντα που έχουν αγοραστεί στο SanDisk.com γίνονται δεκτά για διαδικτυακές επιστροφές.\nΕπιστροφές και Αντικαταστάσεις\nΔωρεάν αποστολή\nΛεπτομέρειες & Εξαιρέσεις\nΟι πελάτες που δεν είναι μέλη δικαιούνται δωρεάν βασική αποστολή για παραγγελίες αξίας τουλάχιστον €50, χωρίς τα έξοδα αποστολής και μετά την καταχώριση τυχόν κουπονιών. Τα μέλη του καταστήματος της Sandisk δικαιούνται δωρεάν βασική αποστολή για όλες τις παραγγελίες τους. Η βασική δωρεάν αποστολή ισχύει για αγορές που παραδίδονται εντός της χώρας Ελλάδα (ενδέχεται να ισχύουν εξαιρέσεις). Η Sandisk διατηρεί το δικαίωμα να αλλάξει ή να καταργήσει αυτούς τους όρους, ανά πάσα στιγμή, χωρίς ειδοποίηση.\nΚαταγράψτε καρέ που κόβουν την ανάσα.\nΑξιοποιήστε την απόδοση επαγγελματικής κλάσης Με ταχύτητες εγγραφής έως και 300 MB/s 2 , διασφαλίστε ότι η ενδιάμεση μνήμη της φωτογραφικής σας μηχανής θα εκκαθαρίζεται γρήγορα κατά τη διάρκεια συνεχών λήψεων και θα καταγράφει κάθε αξιοσημείωτη λήψη.\nΚαταγράψτε περισσότερα χωρίς διακοπές Με έως και 512 GB 1 αποθηκευτικού χώρου, αποθηκεύστε έως και 352 λεπτά λήψης βίντεο 4K UHD 3 στα 60 fps και έως και 286 λεπτά λήψης βίντεο 8K 3 στα 30 fps χωρίς να χρειάζεται να αλλάξετε κάρτες ή να εκφορτώσετε δεδομένα. Ιδανικό για ημέρες μεγάλων εκδηλώσεων και φωτογραφίσεις. 5\nΕπιταχυμένη ροή εργασιών από τη σκηνή στην οθόνη Οι ταχύτητες μεταφοράς έως και 300 MB/s 2 σημαίνουν λιγότερο χρόνο αναμονής και περισσότερο χρόνο δημιουργίας. Βελτιστοποιήστε τη διαδικασία επεξεργασίας και επιταχύνετε την παράδοση.\nΟ αξιόπιστος συνεργάτης σας στο πλατό Σχεδιασμένη για να αντέχει τις δυσκολίες των ταξιδιών και των λήψεων σε εξωτερικούς χώρους, αυτή η κάρτα είναι ανθεκτική στο νερό και τη σκόνη με πιστοποίηση IP68, ενώ έχει δοκιμαστεί για να αντέχει σε πτώσεις έως και 6 μέτρων (19,6 ποδιών). 6\nΕπανακτώντας ό,τι έχει σημασία Ανακτήστε και επαναφέρετε αρχεία με το λογισμικό ανάκτησης δεδομένων RescuePRO® Deluxe, 7 δωρεάν, για δύο ολόκληρα έτη. Μετά τη λήψη και την εγκατάσταση, η εφαρμογή μπορεί να επαναφέρει αποτελεσματικά φωτογραφίες, βίντεο, έγγραφα και άλλους τύπους αρχείων σε ένα ευρύ φάσμα μορφών που έχουν διαγραφεί κατά λάθος, καταστραφεί ή χαθεί λόγω μορφοποίησης. Ανακτήστε την ψηφιακή σας ζωή, εύκολα.\nΚατασκευασμένη για να αντέχει Με περιορισμένη εγγύηση εφ’ όρου ζωής, 8 οι επώνυμες κάρτες SanDisk έχουν μακροπρόθεσμη απόδοση, ώστε να μπορείτε να τις εμπιστευτείτε στις πιο σημαντικές στιγμές σας.\nΠροδιαγραφές\nΟι ταχύτητες εγγραφής έως και 300 MB/s εξασφαλίζουν γρήγορη εκκαθάριση της ενδιάμεσης μνήμης της φωτογραφικής μηχανής, ώστε να καταγράφετε κάθε αξιοσημείωτη λήψη.\nΚαταγράψτε περισσότερα χωρίς διακοπές με υψηλές χωρητικότητες για την αποθήκευση βίντεο 4K UHD και βίντεο 8K χωρίς να χρειάζεται να αλλάξετε κάρτες ή να εκφορτώσετε δεδομένα.\nΣχεδιασμένη για να αντέχει σε ακραίες συνθήκες και καταπόνηση, αυτή η κάρτα είναι ανθεκτική στο νερό και τη σκόνη με πιστοποίηση IP68 και έχει δοκιμαστεί για να αντέχει σε πτώσεις έως και από 6 μέτρα (19,6 πόδια).\nΦωτογραφικές μηχανές χωρίς μηχανισμό καθρέφτη (MIL) με δυνατότητα εγγραφής βίντεο 4K, 6K ή 8K\nΦωτογραφικές μηχανές DSLR για επαγγελματίες καταναλωτές και επαγγελματίες\nΒιντεοκάμερες υψηλής ποιότητας και επαγγελματικές κάμερες βίντεο\nΠώς συγκρίνεται\nΜέχρι την τιμή {{formatPrice(baseObj.skuPrice.prices.list.amount, baseObj.skuPrice.prices.list.currency)}}\n{{formatPrice(baseObj.skuPrice.prices.sale.amount, baseObj.skuPrice.prices.sale.currency)}}\n{{skuObj.label}} {{skuObj.label}} {{skuObj.tooltip}} {{val}} {{ val }} {{ val.substring(0, 80) }} {{ val }}\nΚοινοποίηση αυτής της σελίδας\n{{compareErrorMsg}}\nΑξιολογήσεις και κριτικές\nΥποστήριξη & Πόροι\nΥποστήριξη για Κάρτα SanDisk Extreme PRO SD UHS-II (V90) Αποκτήστε πρόσβαση στις πλέον πρόσφατες λήψεις, άρθρα, συμβουλές αντιμετώπισης προβλημάτων και υπηρεσίες εγγύησης. Επισκεφτείτε την υποστήριξη προϊόντων\n30 Προβολή λεπτομερειών Λήψη\nData Sheet Λήψη\nΔήλωση Συμμόρφωσης προς τη Νομοθεσία της ΕΕ Μάθετε περισσότερα\nΔηλώσεις\n1 GB = 1.000.000.000 byte. Ο πραγματικός χώρος αποθήκευσης μπορεί να είναι λιγότερος.",
+          "http_status": 200,
+          "source_type": "manufacturer_official",
+          "title": "128GB Κάρτα SanDisk Extreme PRO SD UHS-II (V90) | Sandisk",
+          "url": "https://www.sandisk.com/el-gr/products/memory-cards/sd-cards/sandisk-extreme-pro-uhs-ii-v90-sd?sku=SDSDXDM-128G-GN4IN",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "【Amazon.co.jp限定】 SanDisk SD カード Extreme SDSDXVV-512G-GHJIN 簡易デザインパッケージ",
+      "asin": "B0BFZXR6XJ",
+      "brand": "SANDISK",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61HPbcSXDYL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "device_compatibility"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0BFZXR6XJ",
+      "provisional": false,
+      "ref": "p4",
+      "search_key": "SANDISK SD カード Extreme SDSDXVV-512G-GHJI",
+      "selection_score": 0.39,
+      "sources": [
+        {
+          "brand": "SANDISK",
+          "excerpt": "【Amazon.co.jp限定】 SanDisk SD カード Extreme SDSDXVV-512G-GHJIN 簡易デザインパッケージ\nこの商品について\n最大180MB/秒の転送速度に対応した、サンディスクエクストリームシリーズ\n【Amazon限定】壁紙ダウンロード付き › もっと見る\nブランド SANDISK\nモデル名 Extreme SD\nフラッシュメモリタイプ SDXCカード\nメモリストレージ容量 512 GB\n対応デバイス カメラ",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "【Amazon.co.jp限定】 SanDisk SD カード Extreme SDSDXVV-512G-GHJIN 簡易デザインパッケージ",
+          "url": "https://www.amazon.co.jp/dp/B0BFZXR6XJ",
+          "verified": true
+        },
+        {
+          "excerpt": "Model Number: {{currentSku}} {{productBadgesInfo.tagTitle}} SanDisk Extreme SD UHS-I Card - {{getUnEscapedHTMLContent(variantTagData)}}\n{{customPromotionInfo.ctaLabel}} {{customPromotionInfo.ctaLabel}}\nWith the SanDisk Extreme SD UHS-I memory card save time transferring media with read speeds of up to 180MB/s 6 powered by SanDisk® QuickFlow™ Technology 8 (64GB - 512GB). Pair with the SanDisk Professional PRO-READER SD and microSD to achieve maximum speeds (sold separately). With shot speeds of up to 130MB/s 6 and UHS speed Class 3 (U3) 2 recording, you’re ready to capture high-resolution, stutter-free 4K UHD video 1 . Plus, it’s built to withstand weather, water, shocks, and other less-than-ideal conditions so you can rest assured that it’s good to go wherever you go.\n{{formatPrice(inventory.prices.list.amount, inventory.prices.list.currency)}}\n{{formatPrice(inventory.prices.sale.amount, inventory.prices.sale.currency)}}\n{{formatPrice(inventory.prices.sale.amount, inventory.prices.sale.currency)}} / {{inventory.prices.sale.billingPlanName}}\n{{volumePrice.minQuantity}}+ {{volumePrice.amountFormatted}} /Ea.\n{{inventory.prices.maxQuantity}}+ Request a Quote\nMemory Cards\nSanDisk Extreme SD UHS-I Card\n{{inventory.prices.list.amountFormatted}}\n{{inventory.prices.sale.amountFormatted}} / {{inventory.prices.sale.billingPlanName}}\nCapacity : 32GB\nWhen this product becomes available, an email notification will be sent to : {{email}}\nCapacity : 64GB\nCapacity : 128GB\nCapacity : 256GB\nCapacity : 512GB\nOops! Something went wrong. Please try again later.\nThank You for Your Request We are reviewing your quote request, and will get back to you within three business days.\n{{inventory.prices.list.amountFormatted}} Price {{inventory.prices.list.amountFormatted}}\n{{inventory.prices.sale.amountFormatted}} Offer Price {{inventory.prices.sale.amountFormatted}}\n{{inventory.prices.list.amountFormatted}} Actual Price {{inventory.prices.list.amountFormatted}}\n{{inventory.prices.sale.amountFormatted}} Offer Price {{inventory.prices.sale.amountFormatted}} / {{inventory.prices.sale.billingPlanName}}\nBuying for a business?\nConsider creating a business account today and enjoy\nVolume pricing discounts\nReal-time inventory\nPurchase direct from manufacturer\nFlexible payment options through Sandisk Credit\nAlready have a business account? Sign In\nSandisk Data Recovery Plan\nWorry-Free\nOntrack ® offers decades of expertise in data recovery with a very high success rate.\nMoney-Back Guarantee\nIf Ontrack cannot retrieve data due to covered data loss events, Sandisk will refund you the full plan price. 1\nAffordable Solution\nWithout a Data Recovery plan, single drive recoveries under Ontrack’s Standard Service Level can range from ~$1,000 - $2,000. 2\nWe’ve partnered with Ontrack to provide protection for routine and extreme data loss scenarios such as drive failure, viruses, and software issues. For a low, one-time fee, the plan includes one in-lab data recovery attempt, shipping costs to and from Ontrack, and in most cases, a warranty replacement device. 1\nHave Questions? Learn More\n1. Limitations apply. See Data Recovery Plan Terms & Conditions . 2. Source: Ontrack data for calendar year 2022. Cost range will vary depending upon Service Level, type of device, cause of data loss, drive condition, and other factors.\nThank you! We are reviewing your request and will contact you shortly.\nReturn Policy\nSubject to exclusions in our Return Policy, products are eligible for free returns within 30-days of the shipment date.\nReturns not in the original packaging or that are missing parts and accessories will not be accepted. Only products purchased on SanDisk.com are eligible for online returns.\nReturns & Replacements\nFree Shipping\nDetails & Exclusions\nSandisk online store members receive free standard shipping on all eligible orders. Non-members receive free standard shipping on orders of at least $50 excluding taxes and shipping costs, and after any applicable coupons have been applied. Free standard shipping (UPS Ground), applies to purchases delivered within the contiguous United States, excluding addresses in Hawaii, Alaska, Puerto Rico and other U.S. territories (other exclusions may apply). Sandisk reserves the right to change or discontinue these terms at any time without notice.​\nPerfect for 4K UHD video and Sequential Burst Mode Photography\nImprove your workflow efficiency With SanDisk QuickFlow™ Technology 8 (64GB - 512GB), this card optimizes performance for timesaving media offloads with quick transfer speeds up to 180MB/s. 6 Pair with the SanDisk Professional PRO-READER SD and microSD to achieve maximum speeds (sold separately).\nShot speeds up to 130MB/s With shot speeds up to 130MB/s 6 the card is perfect for capturing the action as it happens, without missing a beat.\nPerfect for 4K UHD video Sometimes speed is what you need. The SanDisk Extreme SD UHS-I card delivers the performance to capture stunning, uninterrupted 4K UHD video 1 .\nDurability you can count on Built for and tested in harsh conditions 3 , the SanDisk Extreme SD UHS-I card is temperature-proof, waterproof, shock-proof, and x-ray-proof.\nRecover images you accidentally deleted Includes an offer for RescuePRO® Deluxe data recovery software which lets you restore images you accidentally deleted. 5\nSpecifications\nShot speeds up to 130MB/s\nTransfer speeds up to 180MB/s\nPerfect for 4K UHD video\nCompatible with SanDisk SD UHS-I Card Reader for speeds up to 90MB/s 6\nHow It Compares\nAs low as {{formatPrice(baseObj.skuPrice.prices.list.amount, baseObj.skuPrice.prices.list.currency)}}\n{{formatPrice(baseObj.skuPrice.prices.sale.amount, baseObj.skuPrice.prices.sale.currency)}}\n{{skuObj.label}} {{skuObj.label}} {{skuObj.tooltip}} {{val}} {{ val }} {{ val.substring(0, 80) }} {{ val }}\nShare this page\n{{compareErrorMsg}}\nRatings & Reviews\nSupport & Resources\nSupport for SanDisk Extreme SD UHS-I Card Access the latest downloads, articles, troubleshooting tips, and warranty services. Visit Product Support\nData Sheet Download\nRescuePRO The card comes with a RescuePRO Deluxe data recovery software download offer. This software makes it easy to recover files that have been accidentally deleted (download required). Learn More\nDisclosures\nFull HD (1920x1080) and 4K UHD (3840 x 2160) video support may vary based upon host device, file attributes, and other factors. See: www.sandisk.com/HD\nUHS Speed Class 3 designates a performance option designed to support 4K UHD video recording with enabled UHS host devices. UHS Video Speed Class 30 (V30), sustained video capture rate of 30MB/s, designates a performance option designed to support real-time video recording with UHS enabled host devices. See www.sdcard.org/consumers/speed .\nCard only. See product packaging or www.sandisk.com/proof for additional information and limitations.\nRegistration required; Terms and conditions apply.\n1 GB=1,000,000,000 bytes. Actual user storage less.\nSanDisk® QuickFlow™ Technology is only available for 64GB, 128GB, 256GB, and 512GB capacities.\n30-year warranty in Germany, Canada and regions not recognizing lifetime warranty. See Warranty | Sandisk\n{{ skuObj.title.length < 15 ? skuObj.title : skuObj.title.substring(0,14) + \"...\" }}\nSelect options\n{{item.text}}\n{{alertMessage}}",
+          "http_status": 200,
+          "source_type": "manufacturer_official",
+          "title": "512GB SanDisk Extreme SD UHS-I Card | Sandisk",
+          "url": "https://www.sandisk.com/products/memory-cards/sd-cards/sandisk-extreme-uhs-i-sd?sku=SDSDXVV-512G-GNCIN",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "【64GB】 SanDisk サンディスク Extreme Pro SDXC UHS-I U3 V30対応 海外リテール [並行輸入品]",
+      "asin": "B01J5RHD58",
+      "brand": "SANDISK",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81JegW7B+QL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "device_compatibility",
+        "recording_speed"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B01J5RHD58",
+      "provisional": false,
+      "ref": "p5",
+      "search_key": "SANDISK サンディスク Extreme Pro SDXC UHS-I U3",
+      "selection_score": 0.39,
+      "sources": [
+        {
+          "brand": "SANDISK",
+          "excerpt": "【64GB】 SanDisk サンディスク Extreme Pro SDXC UHS-I U3 V30対応 海外リテール [並行輸入品]\nこの商品について\nUHS-I SDXCカード 64GB\n最大読込速度95MB/s　最大書込速度90MB/s\nビデオスピードクラスV30\nUHS Speed Class 3 / class 10\n海外パッケージ品の為、国内でのサポートはありません。 › もっと見る\nブランド SANDISK\nフラッシュメモリタイプ SDHCカード, SDXCカード\nメモリストレージ容量 64 GB\n対応デバイス カメラ\n色 ブラック",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "【64GB】 SanDisk サンディスク Extreme Pro SDXC UHS-I U3 V30対応 海外リテール [並行輸入品]",
+          "url": "https://www.amazon.co.jp/dp/B01J5RHD58",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "【5年データ復旧・無償交換保証】GIGASTONE SDカード 512GB 4K Camera Pro SDXC UHS-I A1 V30 U3 C10 100 MB/s 高速 4K UHD & Full HD ビデオ Canon Nikon Sony Pentax Kodak Olympus Panasonicなど デジタルカメラ 一眼レフ対応 ミニケース1個付き",
+      "asin": "B093BQPC1K",
+      "brand": "Gigastone",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51X7LQX9ljL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B093BQPC1K",
+      "provisional": false,
+      "ref": "p6",
+      "search_key": "Gigastone SDカード 512GB 4K Camera Pro SDXC U",
+      "sources": [
+        {
+          "brand": "Gigastone",
+          "excerpt": "【5年データ復旧・無償交換保証】GIGASTONE SDカード 512GB 4K Camera Pro SDXC UHS-I A1 V30 U3 C10 100 MB/s 高速 4K UHD & Full HD ビデオ Canon Nikon Sony Pentax Kodak Olympus Panasonicなど デジタルカメラ 一眼レフ対応 ミニケース1個付き\nこの商品について\n【スピード】最大速度100MB/sでスピーディーなデータ移行を可能に。従来のSDカードの約2.5倍の速さでPCやデジタル一眼レフ、ビデオカメラで快適にお使いいただけます。ミニケース1個付き\n【4K UHD対応】4K UHD & フルHD撮影と再生に最適のA1V30クラス10、4K Ultra HDのスピードクラスです。\n【耐久保護機能搭載】あらゆる環境下でも耐えうる防水 耐熱 耐衝撃 耐磁性 耐X-ray機能搭載。ご使用の幅がぐっとひろがります。Gigastoneの製品は、品質基準チェック、速度テスト、繰り返しの抜き差しなどの耐久検証を行なっており、安心してお使いいただけます。\n【互換性】ノートパソコン, PC, カメラ, DSLR, 一眼カメラ, キャノン, ニコン, ソニー, ペンタックス, オリンパス, コダック, パナソニックなどのデジカメラブランドに対応します。\n【保証】 安心の5年間メーカー保証付き。Gigastoneは世界各国に製品を販売するグローバルなブランドです。 アメリカ、日本、中国、韓国、台湾など多くの国に支社を持つことで、お客様とのコミュニケーションやサポートを迅速に行っています。東京新宿にある日本支社でサポート対応しておりますので、安心してご使用いただけます。 › もっと見る\nブランド Gigastone\nフラッシュメモリタイプ SDXCカード\nメモリストレージ容量 512 GB\n対応デバイス カメラ, パソコン\n色 512GB 4K Camera Pro 1枚セット\nブランド: Gigastone",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "【5年データ復旧・無償交換保証】GIGASTONE SDカード 512GB 4K Camera Pro SDXC UHS-I A1 V30 U3 C10 100 MB/s 高速 4K UHD & Full HD ビデオ Canon Nikon Sony Pentax Kodak Olympus Panasonicなど デジタルカメラ 一眼レフ対応 ミニケース1個付き",
+          "url": "https://www.amazon.co.jp/dp/B093BQPC1K",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "selection": {
+    "retained_qa_passed_asins": [
+      "B0DLWYDXJN",
+      "B0F7Y1W68L",
+      "B0DLWTWM4R",
+      "B0BFZXR6XJ"
+    ],
+    "targeted_replacement": true
+  },
+  "slug": "full-size-sd-memory-cards"
+}

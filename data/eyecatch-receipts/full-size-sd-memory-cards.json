@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-10-18T09:08:18.677922+00:00",
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "generation_route_attestation": "codex_rollout_extension",
+  "height": 1024,
+  "image_generation_internal_usage_exposed": false,
+  "image_sha256": "b34925c7f77d70923f05b76760fbc19ab17ba9d601b64eb3840e453f82309169",
+  "member_binding_revision": 9,
+  "model": "gpt-6-sol",
+  "model_reported_generation_route": "built-in_image_gen",
+  "role_id": "bu-codex-sellemy-designer",
+  "routing": {
+    "api_share": 0,
+    "codex_reserve_percent": 20.0,
+    "codex_share": 100,
+    "codex_usage": {
+      "remaining_percent": 72.0,
+      "resets_at": 1792874505,
+      "source": "/Users/kickstart/.codex/sessions/2026/10/18/rollout-2026-10-18T18-06-00-01a14e42-c451-7821-a69f-a146fcad16bd.jsonl",
+      "used_percent": 28.0,
+      "window_minutes": 10080
+    },
+    "errors_before_success": [],
+    "executed_route": "codex",
+    "fallback_from": null,
+    "mode": "weighted_random",
+    "reason": "codex_only",
+    "remaining_percent": 72.0,
+    "roll": null,
+    "selected_route": "codex"
+  },
+  "routing_recorded_at": "2026-10-18T09:08:18.679628+00:00",
+  "summary": "カメラのカードスロットとSDカードを確認する暮らしの一場面。PNG形式と1536x1024の寸法を確認済み。",
+  "thread_id": "01a14e44-08a3-7792-ace4-dea961d4006c",
+  "token_usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 98944,
+    "input_tokens": 109301,
+    "output_tokens": 776,
+    "reasoning_output_tokens": 73,
+    "total_tokens": null,
+    "uncached_input_tokens": null
+  },
+  "token_usage_source": "codex_rollout.turn_token_usage",
+  "visual_family": "editorial lifestyle",
+  "width": 1536
+}
