@@ -65,17 +65,19 @@ def parse_amazon_search_results(body,limit=5):
  return out
 
 def _amazon_search_browser(url, limit):
- """Try installed browser engines in order, retaining verified item-page gate."""
+ """Keep first attempt headless; show a visible browser only on search failure."""
  from playwright.sync_api import sync_playwright
  failures=[]
- browsers=(('chrome','chromium','/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'),
-           ('firefox','firefox',None),
-           ('safari','webkit',None))
+ # Chrome runs headless as usual. A real visible WebKit window is the
+ # alternate on error; it has been verified against Amazon search on macOS.
+ browsers=(('chrome','chromium',True,'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'),
+           ('safari','webkit',False,None),
+           ('firefox','firefox',False,None))
  with sync_playwright() as playwright:
-  for label,engine,path in browsers:
+  for label,engine,headless,path in browsers:
    browser=None
    try:
-    options={'headless':True}
+    options={'headless':headless}
     if path:options['executable_path']=path
     browser=getattr(playwright,engine).launch(**options)
     page=browser.new_page()
