@@ -146,6 +146,22 @@ def _prompt(topic: dict, evidence: dict, *, previous_payload: dict | None = None
             f'PREVIOUS_PAYLOAD:\n{json.dumps(previous_payload, ensure_ascii=False, sort_keys=True)}\n\n'
             f'GATE_FEEDBACK:\n{json.dumps(gate_feedback or {}, ensure_ascii=False, sort_keys=True)}'
         )
+    if previous_payload is not None and isinstance(gate_feedback, dict):
+        # Last in the prompt so it cannot be buried below the large evidence and
+        # previous payload. These are Writer instructions, not scripted edits.
+        measurements = gate_feedback.get('measurements') or {}
+        if (gate_feedback.get('qa_failures') or {}).get('main_in_range') is False:
+            main_len = measurements.get('main_len')
+            if isinstance(main_len,int) and main_len > 3400:
+                prompt += ('\n\nFINAL MANDATORY REVISION CHECKLIST: The previous rendered main body '
+                           f'contained {main_len} characters. The maximum is 3400. '
+                           'Make the new rendered main body no more than 3300 by shortening the '
+                           'editorial text, while preserving all grounded decision facts. '
+                           'Choose concise product descriptions (320-335 each), comparison-group '
+                           'angle text (max 65 each), summary (140-155), how_to_choose (200-225), '
+                           'and conclusion (120-145). Keep each public field within its own '
+                           'hard QA bounds; do not rely on source JSON or HTML markup in length calculations. '
+                           'Return revised prose as the COMPLETE JSON payload, not a patch.\n')
     return prompt
 
 
