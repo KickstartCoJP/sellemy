@@ -16,5 +16,5 @@ def test_503_browser_failure_is_typed_retryable_outage():
             assert False,'Expected a retryable outage'
 
 def test_product_infrastructure_outage_uses_backoff():
-    assert _backoff('product',1,'runtime_infrastructure') == timedelta(minutes=15)
+    assert _backoff('product',1,'runtime_infrastructure') == timedelta(minutes=1)
     assert _backoff('product',1,'missing_evidence') == timedelta(0)
