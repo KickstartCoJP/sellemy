@@ -191,7 +191,7 @@ def eligible_job(*, now: datetime | None = None) -> dict | None:
             due = current
         if due <= current:
             eligible.append(row)
-    eligible.sort(key=lambda row: (row.get('created_at') or '', row.get('slug') or ''))
+    eligible.sort(key=lambda row: (row.get('updated_at') or row.get('created_at') or '', row.get('slug') or ''))
     return eligible[0] if eligible else None
 
 
