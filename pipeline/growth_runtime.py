@@ -890,6 +890,14 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
         save_progress()
         request_product_reselection(slug, ['continue candidate search until six products pass independent evidence QA'])
         raise GrowthRuntimeError(f'product discovery still in progress for {slug}')
+    except Exception as exc:
+        from discovery_adapters import AmazonSearchUnavailable
+        if isinstance(exc, AmazonSearchUnavailable):
+            save_progress()
+            mark_failure(slug, stage='product', failure_class='runtime_infrastructure',
+                         failure_code='AMAZON_SEARCH_UNAVAILABLE', reason=str(exc), role='planning')
+            raise GrowthRuntimeError(f'Amazon search temporarily unavailable for {slug}: {exc}') from exc
+        raise
     except ProductSelectionError as exc:
         save_progress()
         request_product_reselection(slug, [str(exc)])

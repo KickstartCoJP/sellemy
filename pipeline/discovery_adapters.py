@@ -23,6 +23,9 @@ def terms(query):
  return [normalize(x) for x in re.findall(r"[A-Za-z][A-Za-z0-9-]{2,}|[ぁ-んァ-ヶ一-龠]{2,}",query or "") if len(normalize(x))>=2]
 
 
+class AmazonSearchUnavailable(RuntimeError):
+ pass
+
 class _AmazonSearchParser(HTMLParser):
  VOID_TAGS={'area','base','br','col','embed','hr','img','input','link','meta','param','source','track','wbr'}
  def __init__(self):
@@ -77,10 +80,10 @@ def _amazon_search_browser(url, limit):
    page=browser.new_page()
    response=page.goto(url, wait_until='domcontentloaded', timeout=25000)
    if response is None or response.status != 200:
-    raise RuntimeError(f'Amazon browser search status={response.status if response else None}')
+    raise AmazonSearchUnavailable(f'Amazon browser search status={response.status if response else None}')
    rows=parse_amazon_search_results(page.content(),limit=limit)
    if not rows:
-    raise RuntimeError('Amazon browser search returned no product cards')
+    raise AmazonSearchUnavailable('Amazon browser search returned no product cards')
    return rows
   finally:
    browser.close()
@@ -126,8 +129,8 @@ class AutositeDiscoveryAdapter:
    if 'bm-verify=' in body or 'validatecaptcha' in body or 'robot check' in body:
     return _amazon_search_browser(base,limit)
    return rows
-  except requests.RequestException:
-   raise
+  except requests.RequestException as exc:
+   raise AmazonSearchUnavailable(f'Amazon HTTP search unavailable: {type(exc).__name__}') from exc
  def search_yahoo_live(self,query,limit=5):
   collector=_module("autosite_yahoo_collector",AUTOSITE/"yahoo_item/yahoo_url_collector.py")
   scraper=_module("autosite_yahoo_scraper",AUTOSITE/"yahoo_item/yahoo_scraper.py")
