@@ -535,6 +535,9 @@ def _writer_stage(slug: str, result: dict) -> None:
     if issues:
         request_product_reselection(slug, issues)
         raise GrowthRuntimeError(f'needs_product_reselection for {slug}')
+    # Invalidate previous QA certification before beginning a new Writer/QA attempt.
+    write_artifact(slug, 'qa-certification.json', {})
+    write_artifact(slug, 'chat-publish-approval.json', {})
     previous = read_artifact(slug, 'payload.json')
     gate_feedback = read_artifact(slug, 'gate-feedback.json', {})
     started = time.monotonic()
@@ -655,6 +658,9 @@ def _eyecatch_and_publish(slug: str, result: dict) -> str:
     category = state['category']
     require_publishing_enabled(ROOT)
     require_acceptance(payload, evidence, read_artifact(slug, 'acceptance.json'))
+    from qa_certification import require_certification
+    require_certification(read_artifact(slug, 'qa-certification.json', {}), payload, evidence,
+                          read_artifact(slug, 'qa.json', {}), read_artifact(slug, 'acceptance.json'))
     from operating_profile import normal_profile
     if not normal_profile():
         require_chat_publish_approval(read_artifact(slug, 'chat-publish-approval.json'), payload=payload, evidence=evidence)

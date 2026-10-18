@@ -164,7 +164,8 @@ class RecoveryContractTests(RecoveryCase):
         self.assertEqual(state['current_stage'], 'WRITER_PENDING')
         self.assertEqual(state['retry_count_by_stage']['writer'], 0)
         self.assertEqual(state['retry_count_by_stage']['product'], 1)
-        self.assertEqual(gr.eligible_job()['slug'], e['slug'])
+        self.assertIsNone(gr.eligible_job())
+        self.assertIsNotNone(gr.load_job(e['slug'])['next_retry_at'])
         self.assertTrue(gr.read_artifact(e['slug'], 'product-blocker.json')['needs_product_reselection'])
 
     def test_same_slug_reselection_clears_stale_authorizations(self):
