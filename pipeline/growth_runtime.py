@@ -900,18 +900,17 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
             replacement_candidates = [p for p in available if p['asin'] not in pin_set
                                       and p['asin'] not in known_bad]
             selected_pool = pinned_rows + replacement_candidates
-            if len(pinned_rows) == len(pin_set) and len(selected_pool) >= 6:
-                available = selected_pool
+            # No falling back to the already rejected products when replacements
+            # are insufficient; stay in source research instead.
+            available = selected_pool
         while len(available) >= 6:
-            if pin_set and len(pin_set) < 6:
+            if pin_set:
                 by_asin = {p['asin']: p for p in available}
                 retained = [by_asin[a] for a in pinned if a in by_asin]
-                others = [p for p in available if p['asin'] not in pin_set]
-                if len(retained) + len(others) < 6: break
-                # Rank only substitutes; the known-good set is not reselected.
-                replacement, _ = select_six(others, topic, feedback) if len(others) >= 6 else (others, {})
-                selected = retained + replacement[:6-len(retained)]
-                selection = {'retained_qa_passed_asins': pinned, 'targeted_replacement': True}
+                if len(retained) != len(pin_set):
+                    break
+                selected, selection = select_six(available, topic, feedback, pinned=retained)
+                selection['targeted_replacement'] = True
             else:
                 selected, selection = select_six(available, topic, feedback)
             six_asins = tuple(sorted(p['asin'] for p in selected))

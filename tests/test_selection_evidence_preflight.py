@@ -25,3 +25,13 @@ def test_selection_requires_two_grounded_axes():
  for row in rows:row['sources'][0]['excerpt']='洗浄成分'
  with pytest.raises(ProductSelectionError,match='two grounded'):
   select_six(rows,TOPIC,{})
+
+def test_targeted_replacement_counts_axes_from_previously_accepted_products():
+    rows=candidates()
+    pinned=rows[:3]
+    for row in rows[3:]:row['sources'][0]['excerpt']='洗浄成分'
+    selected,meta=select_six(rows,TOPIC,{},pinned=pinned)
+    assert len(selected)==6
+    assert set(p['asin'] for p in pinned).issubset({p['asin'] for p in selected})
+    assert meta['retained_qa_passed_asins']==sorted(p['asin'] for p in pinned)
+    assert {'formula','application'}.issubset(set(meta['comparison_axes_covered']))

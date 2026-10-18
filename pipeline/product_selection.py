@@ -65,8 +65,14 @@ def _axis_matches(candidate: dict, axes: list[dict]) -> set[str]:
     return {axis['id'] for axis in axes if any(str(word).lower() in text for word in axis.get('keywords', []))}
 
 
-def select_six(candidates: list[dict], topic: dict, feedback: dict) -> tuple[list[dict], dict]:
-    distinct_candidates, removed_duplicates = dedupe_content_products(candidates)
+def select_six(candidates: list[dict], topic: dict, feedback: dict, *, pinned: list[dict] | None = None) -> tuple[list[dict], dict]:
+    """Select six distinct products, retaining independently accepted members.
+
+    Topic-axis coverage is evaluated over the complete six, not just the
+    replacement subset.  Replacements still need their own grounded axis.
+    """
+    pinned = list(pinned or [])
+    distinct_candidates, removed_duplicates = dedupe_content_products([*pinned, *candidates])
     if len(distinct_candidates) < 6:
         raise ProductSelectionError(
             f'product evidence incomplete after content dedupe: found {len(distinct_candidates)} distinct products, '
@@ -81,13 +87,19 @@ def select_six(candidates: list[dict], topic: dict, feedback: dict) -> tuple[lis
         corpus = source_text(product).lower()
         return bool(corpus and any(any(str(word).lower() in corpus for word in axis.get('keywords', []))
                                    for axis in axes))
-    remaining = [p for p in distinct_candidates if _text(p).strip() and has_grounded_axis(p)]
-    if len(remaining) < 6:
+    pin_asins = {p['asin'] for p in pinned}
+    selected = [p for p in distinct_candidates if p['asin'] in pin_asins]
+    if len(selected) != len(pin_asins) or any(not has_grounded_axis(p) for p in selected):
+        raise ProductSelectionError('retained product lacks verified topic-axis evidence')
+    remaining = [p for p in distinct_candidates if p['asin'] not in pin_asins
+                 and _text(p).strip() and has_grounded_axis(p)]
+    if len(selected) + len(remaining) < 6:
         raise ProductSelectionError('needs_product_reselection: fewer than six products with verified topic-axis evidence')
-    supported_axes = set().union(*(_axis_matches(p, axes) for p in remaining))
+    supported_axes = set().union(*(_axis_matches(p, axes) for p in [*selected,*remaining]))
     if len(supported_axes) < 2:
         raise ProductSelectionError('needs_product_reselection: fewer than two grounded comparison axes')
-    selected, brands, covered = [], set(), set()
+    brands = {str(p['brand']).lower() for p in selected if p.get('brand')}
+    covered = set().union(*(_axis_matches(p, axes) for p in selected)) if selected else set()
     prices = sorted(p['observed_price'] for p in distinct_candidates if p.get('observed_price') is not None)
     median = prices[len(prices) // 2] if prices else None
     while remaining and len(selected) < 6:
@@ -116,4 +128,5 @@ def select_six(candidates: list[dict], topic: dict, feedback: dict) -> tuple[lis
         covered.update(matches)
     if len(selected) != 6:
         raise ProductSelectionError('could not select six unique products')
-    return selected, {'comparison_axes_covered': sorted(covered), 'brand_count': len(brands), 'price_used_as_constraint_only': True, 'content_duplicates_removed': removed_duplicates}
+    return selected, {'comparison_axes_covered': sorted(covered), 'brand_count': len(brands), 'price_used_as_constraint_only': True, 'content_duplicates_removed': removed_duplicates,
+                      'retained_qa_passed_asins': sorted(pin_asins)}
