@@ -845,7 +845,16 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
                 else:
                     known_bad.add(asin)
         pin_set = set(pinned)
+        if latest and not (read_artifact(slug, 'product-qa-remediation.json', {}) or {}).get('signature'):
+            write_artifact(slug, 'product-qa-remediation.json', {
+                'retained_asins': pinned, 'needs_remediation_asins': sorted(known_bad),
+                'issues': old.get('issues') or [],
+                'signature': '|'.join(sorted(old.get('asins') or [])),
+            })
         # Choose the previous accepted products first. Only replace the failed slots.
+        if known_bad and not pin_set:
+            # None of the reviewed products passed: do not select them again.
+            available = [p for p in available if p['asin'] not in known_bad]
         if pin_set:
             available_by_asin = {p['asin']: p for p in available}
             pinned_rows = [available_by_asin[a] for a in pinned if a in available_by_asin]
@@ -869,6 +878,7 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
             six_asins = tuple(sorted(p['asin'] for p in selected))
             signature = '|'.join(six_asins)
             if signature in reviewed_sets:
+                # Skip the unchanged set; research or select a new replacement.
                 break
             evidence = build_evidence(topic, selected, selection)
             evidence['product_acceptance'] = independent_review(evidence)
