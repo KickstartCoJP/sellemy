@@ -65,28 +65,33 @@ def parse_amazon_search_results(body,limit=5):
  return out
 
 def _amazon_search_browser(url, limit):
- """Read a real Amazon results page after HTTP challenge/error responses.
-
- Browser HTML is only a discovery lead; item identity/facts still need their
- separate product-page verification and independent editorial QA.
- """
+ """Try installed browser engines in order, retaining verified item-page gate."""
  from playwright.sync_api import sync_playwright
+ failures=[]
+ browsers=(('chrome','chromium','/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'),
+           ('firefox','firefox',None),
+           ('safari','webkit',None))
  with sync_playwright() as playwright:
-  browser=playwright.chromium.launch(
-   headless=True,
-   executable_path='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
-   args=['--no-first-run'])
-  try:
-   page=browser.new_page()
-   response=page.goto(url, wait_until='domcontentloaded', timeout=25000)
-   if response is None or response.status != 200:
-    raise AmazonSearchUnavailable(f'Amazon browser search status={response.status if response else None}')
-   rows=parse_amazon_search_results(page.content(),limit=limit)
-   if not rows:
-    raise AmazonSearchUnavailable('Amazon browser search returned no product cards')
-   return rows
-  finally:
-   browser.close()
+  for label,engine,path in browsers:
+   browser=None
+   try:
+    options={'headless':True}
+    if path:options['executable_path']=path
+    browser=getattr(playwright,engine).launch(**options)
+    page=browser.new_page()
+    response=page.goto(url,wait_until='domcontentloaded',timeout=25000)
+    status=response.status if response else None
+    if status != 200:
+     failures.append(f'{label}: HTTP {status}')
+     continue
+    rows=parse_amazon_search_results(page.content(),limit=limit)
+    if rows:return rows
+    failures.append(f'{label}: no product cards')
+   except Exception as exc:
+    failures.append(f'{label}: {type(exc).__name__}: {str(exc).splitlines()[0][:150]}')
+   finally:
+    if browser:browser.close()
+ raise AmazonSearchUnavailable('Amazon browser search unavailable: '+'; '.join(failures))
 
 class AutositeDiscoveryAdapter:
  def __init__(self):
