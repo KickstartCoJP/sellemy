@@ -68,9 +68,9 @@ def _amazon_search_browser(url, limit):
  """Keep first attempt headless; show a visible browser only on search failure."""
  from playwright.sync_api import sync_playwright
  failures=[]
- # Chrome runs headless as usual. A real visible WebKit window is the
- # alternate on error; it has been verified against Amazon search on macOS.
- browsers=(('chrome','chromium',True,'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'),
+ # Use headless Chrome normally, then visible Chrome, WebKit and Firefox.
+ browsers=(('chrome-headless','chromium',True,'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'),
+           ('chrome-visible','chromium',False,'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'),
            ('safari','webkit',False,None),
            ('firefox','firefox',False,None))
  with sync_playwright() as playwright:
