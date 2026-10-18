@@ -1,0 +1,140 @@
+{
+  "contract_version": "bf7d78a8237179bb977f6ca29f54f732162e9d387723eb0c936bc77316835b8f",
+  "evidence_sha256": "6305ebc591c3ff8f939c91f8263f70c143897d50d25d9f09fbaf7d9ceb542699",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 15104,
+    "input_tokens": 28916,
+    "member_binding_revision": 12,
+    "output_tokens": 1383,
+    "reasoning_effort": "low",
+    "reasoning_output_tokens": 106,
+    "session_id": "01a14d76-425e-7be2-b4ce-de0ff0918757",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-writer"
+  },
+  "payload_sha256": "f5d50b8efa02258f87c4d35949ce7bcac1aaf25fca41b9e74be8292b6cb00a11",
+  "review": {
+    "buying_guidance": true,
+    "claims_grounded": true,
+    "complete_comparison": true,
+    "distinct_products": true,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "cleansing_formula",
+            "quote": "5種のアミノ酸洗浄成分の配合"
+          },
+          {
+            "axis_id": "hair_application",
+            "quote": "36～38度で2分程予洗いを行ってください。1〜1.5プッシュを基準に髪を揉み込みながら泡立ててください。"
+          }
+        ],
+        "identity_key": "NILE 濃密泡スカルプシャンプー",
+        "identity_quote": "NILE 濃密泡スカルプシャンプー メンズ アミノ酸シャンプー ノンシリコン",
+        "reason": "メーカー資料で洗浄成分と予洗い・泡立て・すすぎの手順を確認でき、本文の推奨もその範囲に収まる。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "cleansing_formula",
+            "quote": "ココイルグルタミン酸Naなど5種類の アミノ酸 系・植物系洗浄成分"
+          },
+          {
+            "axis_id": "usage_frequency",
+            "quote": "毎日手軽にケアできるよう、髪表面を整える成分*配合。"
+          }
+        ],
+        "identity_key": "チャップアップ リンスイン スカルプシャンプー",
+        "identity_quote": "チャップアップ リンスイン スカルプシャンプー アミノ酸シャンプー",
+        "reason": "確認済み販売資料に洗浄成分と毎日のリンスイン使用が明記されている。本文は仕上がりの宣伝表現を実証済みの効果として扱っていない。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "cleansing_formula",
+            "quote": "ニオイの元となる頑固な皮脂をやさしく落とすシャンプー。植物由来100％の洗浄成分"
+          },
+          {
+            "axis_id": "hair_application",
+            "quote": "髪をしっかりすすぎます。その後、適量を手にとって地肌と髪を洗い、よくすすいでください。"
+          }
+        ],
+        "identity_key": "イオリコミント クレンジング icy",
+        "identity_quote": "イオリコミント クレンジング icy",
+        "reason": "メーカーが通常版と別に掲載し、強い清涼感を好む人向けと明示する。皮脂を対象とする説明と使用手順も本文に対応する。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "cleansing_formula",
+            "quote": "ニオイの元となる頑固な皮脂をやさしく落とすシャンプー。植物由来100％の洗浄成分"
+          },
+          {
+            "axis_id": "hair_application",
+            "quote": "髪をしっかりすすぎます。その後、適量を手にとって地肌と髪を洗い、よくすすいでください。"
+          }
+        ],
+        "identity_key": "イオリコミント クレンジング",
+        "identity_quote": "イオリコミント クレンジング\nシャンプー",
+        "reason": "メーカーの独立した製品ページで通常版と確認でき、おだやかな清涼感というicyとの選択差がある。本文は容量差を性能差としていない。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "usage_frequency",
+            "quote": "使用量の目安：ショート5mL、ミディアム10mL、ロング15mL。"
+          },
+          {
+            "axis_id": "hair_application",
+            "quote": "アプリケーターに入れて使用します。"
+          }
+        ],
+        "identity_key": "デミコスメティクス ヘアシーズンズ クレンジングリキッド",
+        "identity_quote": "デミコスメティクス ヘアシーズンズ クレンジングリキッド 500ml レフィル シャンプー",
+        "reason": "確認済み販売資料は髪の付着汚れ、使用量、アプリケーター使用を明示する。本文は除去性能を断定せず、容器の仕様と入手方法を購入前の確認点にしている。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "cleansing_formula",
+            "quote": "植物オイル洗浄成分*で皮脂や汚れを落とし"
+          },
+          {
+            "axis_id": "hair_application",
+            "quote": "適量を手にとり頭皮全体になじませ、指の腹で丁寧に洗います。"
+          }
+        ],
+        "identity_key": "ジオ フレイマン クレンジング",
+        "identity_quote": "ジオ フレイマン クレンジング",
+        "reason": "メーカー資料で洗浄成分、対象となる汚れ、頭皮への使用手順を確認できる。本文は実際の使用感や洗浄力の優劣を断定していない。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reason": "6製品の識別、既存の比較軸に沿った根拠、本文の主な記述と製品別の選び分けを確認できる。icyと通常版はメーカーが別製品として掲載し、清涼感の対象者も区別している。使用頻度の記載がない製品について本文は推測を避けている。",
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}

@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-10-18T09:06:21.529598+00:00",
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "generation_route_attestation": "codex_rollout_extension",
+  "height": 1024,
+  "image_generation_internal_usage_exposed": false,
+  "image_sha256": "b621a208e883494f90ee248d89ad8654b8188bf1d9a099e2743c6fa8af899bd3",
+  "member_binding_revision": 9,
+  "model": "gpt-6-sol",
+  "model_reported_generation_route": "built-in_image_gen",
+  "role_id": "bu-codex-sellemy-designer",
+  "routing": {
+    "api_share": 0,
+    "codex_reserve_percent": 20.0,
+    "codex_share": 100,
+    "codex_usage": {
+      "remaining_percent": 72.0,
+      "resets_at": 1792874504,
+      "source": "/Users/kickstart/.codex/sessions/2026/10/18/rollout-2026-10-18T18-03-17-01a14e40-47bc-79a3-8f12-639389307be7.jsonl",
+      "used_percent": 28.0,
+      "window_minutes": 10080
+    },
+    "errors_before_success": [],
+    "executed_route": "codex",
+    "fallback_from": null,
+    "mode": "weighted_random",
+    "reason": "codex_only",
+    "remaining_percent": 72.0,
+    "roll": null,
+    "selected_route": "codex"
+  },
+  "routing_recorded_at": "2026-10-18T09:06:21.531375+00:00",
+  "summary": "頭皮を洗う準備をする洗面台の一場面。PNG形式、1536x1024を検証済み。",
+  "thread_id": "01a14e42-5717-7f83-9082-2cd42d9f40be",
+  "token_usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 77056,
+    "input_tokens": 85139,
+    "output_tokens": 663,
+    "reasoning_output_tokens": 8,
+    "total_tokens": null,
+    "uncached_input_tokens": null
+  },
+  "token_usage_source": "codex_rollout.turn_token_usage",
+  "visual_family": "refined bathroom vanity lifestyle",
+  "width": 1536
+}

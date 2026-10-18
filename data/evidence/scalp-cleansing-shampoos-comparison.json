@@ -1,0 +1,394 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/scalp-cleansing-shampoos-comparison.html",
+  "category": "beauty",
+  "comparison_axes": [
+    {
+      "id": "cleansing_formula",
+      "keywords": [
+        "洗浄成分",
+        "皮脂",
+        "整髪料"
+      ],
+      "label": "洗浄成分と対象となる汚れ"
+    },
+    {
+      "id": "usage_frequency",
+      "keywords": [
+        "使用頻度",
+        "併用",
+        "使用量"
+      ],
+      "label": "推奨使用頻度と通常シャンプーとの使い分け"
+    },
+    {
+      "id": "hair_application",
+      "keywords": [
+        "濡らし方",
+        "泡立て",
+        "すすぎ"
+      ],
+      "label": "髪と頭皮への使用手順"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/scalp-cleansing-shampoos-comparison/scalp-cleansing-shampoos-comparison.png",
+  "product_acceptance": {
+    "contract_version": "bf7d78a8237179bb977f6ca29f54f732162e9d387723eb0c936bc77316835b8f",
+    "evidence_sha256": "6305ebc591c3ff8f939c91f8263f70c143897d50d25d9f09fbaf7d9ceb542699",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 14848,
+      "input_tokens": 26128,
+      "member_binding_revision": 12,
+      "output_tokens": 1479,
+      "reasoning_effort": "low",
+      "reasoning_output_tokens": 238,
+      "session_id": "01a14d6c-fbde-7fe1-9885-ba85b069bfea",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-writer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "cleansing_formula",
+              "quote": "5種のアミノ酸洗浄成分の配合と、ノンシリコン処方"
+            },
+            {
+              "axis_id": "hair_application",
+              "quote": "36～38度で2分程予洗いを行ってください。1〜1.5プッシュを基準に髪を揉み込みながら泡立ててください。"
+            }
+          ],
+          "identity_key": "NILE 濃密泡スカルプシャンプー",
+          "identity_quote": "NILE 濃密泡スカルプシャンプー メンズ アミノ酸シャンプー ノンシリコン",
+          "reason": "The official source identifies the shampoo, states its amino acid cleansing formulation, and gives a specific washing procedure. Its gentleness and cleaning performance should not be treated as independently established.",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "cleansing_formula",
+              "quote": "ココイルグルタミン酸Naなど5種類の アミノ酸 系・植物系洗浄成分"
+            },
+            {
+              "axis_id": "usage_frequency",
+              "quote": "毎日手軽にケアできるよう"
+            }
+          ],
+          "identity_key": "チャップアップ リンスイン スカルプシャンプー",
+          "identity_quote": "チャップアップ リンスイン スカルプシャンプー アミノ酸シャンプー",
+          "reason": "The verified listing identifies a rinse-in scalp shampoo and explicitly states its cleansing ingredient type and intended daily use. Claims about lasting scalp condition or improved hair strength are marketing claims, not established outcomes.",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "cleansing_formula",
+              "quote": "ニオイの元となる頑固な皮脂をやさしく落とすシャンプー。植物由来100％の洗浄成分"
+            },
+            {
+              "axis_id": "hair_application",
+              "quote": "髪をしっかりすすぎます。その後、適量を手にとって地肌と髪を洗い、よくすすいでください。"
+            }
+          ],
+          "identity_key": "イオリコミント クレンジング icy",
+          "identity_quote": "イオリコミント クレンジング icy",
+          "reason": "The official product page identifies icy as its own shampoo and describes the targeted scalp sebum, cooling preference, and washing steps. Its separate official page and icy designation distinguish it from p4 beyond refill size.",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "cleansing_formula",
+              "quote": "ニオイの元となる頑固な皮脂をやさしく落とすシャンプー。植物由来100％の洗浄成分"
+            },
+            {
+              "axis_id": "hair_application",
+              "quote": "髪をしっかりすすぎます。その後、適量を手にとって地肌と髪を洗い、よくすすいでください。"
+            }
+          ],
+          "identity_key": "イオリコミント クレンジング",
+          "identity_quote": "イオリコミント クレンジング\nシャンプー",
+          "reason": "The official page separately identifies this shampoo and specifies its targeted scalp sebum, milder cooling preference, and washing steps. The distinction from p3 rests on the separately identified icy and standard products, not their package volumes.",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "cleansing_formula",
+              "quote": "髪に付着したシリコンなどの汚れを取り除きます。"
+            },
+            {
+              "axis_id": "hair_application",
+              "quote": "使用量の目安：ショート5mL、ミディアム10mL、ロング15mL。\nアプリケーターに入れて使用します。"
+            }
+          ],
+          "identity_key": "デミコスメティクス ヘアシーズンズ クレンジングリキッド",
+          "identity_quote": "デミコスメティクス ヘアシーズンズ クレンジングリキッド 500ml レフィル シャンプー",
+          "reason": "The verified listing identifies a shampoo and explicitly describes its target as buildup on hair, with amount guidance and an applicator step. Its stated silicone-removal performance remains a listing claim; the evidence does not establish recommended frequency or routine-shampoo pairing.",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "cleansing_formula",
+              "quote": "植物オイル洗浄成分*で皮脂や汚れを落とし"
+            },
+            {
+              "axis_id": "hair_application",
+              "quote": "①髪をしっかりと予洗いします。 ②適量を手にとり頭皮全体になじませ、指の腹で丁寧に洗います。 ③しっかりと頭皮から洗い流してください。"
+            }
+          ],
+          "identity_key": "ジオ フレイマン クレンジング",
+          "identity_quote": "ジオ フレイマン クレンジング\nシャンプー",
+          "reason": "The official page identifies a distinct shampoo and specifies a plant-oil cleansing ingredient, sebum and dirt as targets, and a three-step washing method.",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reason": "Evidence-only review. Six products have distinct source-backed identities and fit a scalp or hair cleansing shampoo comparison. The supplied evidence supports useful differences in cleansing approach, targeted dirt, usage guidance, and washing steps. The article-only criteria cannot be assessed because no article was submitted.",
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
+  "products": [
+    {
+      "amazon_title": "NILE 濃密泡スカルプシャンプー メンズ アミノ酸シャンプー ノンシリコン（LAFRANCE（ラフランス）の香り）",
+      "asin": "B0DLJP1FMD",
+      "brand": "Nile",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61l6J64GFML._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0DLJP1FMD",
+      "provisional": false,
+      "ref": "p1",
+      "search_key": "Nile 濃密泡スカルプシャンプー メンズ アミノ酸シャンプー ノンシリコ",
+      "sources": [
+        {
+          "brand": "Nile",
+          "excerpt": "NILE 濃密泡スカルプシャンプー メンズ アミノ酸シャンプー ノンシリコン（LAFRANCE（ラフランス）の香り）\nこの商品について\n【内容量】300ml\n【濃密泡で頭皮に至福のひとときを】頭皮を洗い髪を整えるスカルプシャンプー。アミノ酸活性剤を使用し頭皮に優しく、極上の洗浄を実現。濃密泡を作り出すシャンプーは頭皮に優しいアミノ酸活性剤を使用している証。サロンでも味わえないような濃厚泡体験をご自宅でご堪能ください。\n【ノンシリコンでもサラッとした洗い上がり】頭皮への影響も考慮し、5種のアミノ酸洗浄成分の配合と、ノンシリコン処方で頭皮をサポートしながらさっぱり洗浄。コンディションを整えるリンス成分（ポリクオタニウム-10）を配合。（リンス成分はシリコン成分ではありません。）メンズ・レディース問わずご使用いただけます。\n【頭皮に合わなかった場合】アミノ酸洗浄成分をベースとして処方を構成しており、マイルド洗浄処方になっておりますが、個人差で合わない場合がございます。頭皮に異変や違和感を感じた場合は、使用を中断してください。\n【ご使用方法】36～38度で2分程予洗いを行ってください。1〜1.5プッシュを基準に髪を揉み込みながら泡立ててください。このとき爪を立ててしまうと、頭皮トラブルの原因になる場合がございますので、指の腹で優しく揉み込んでください。最後に頭皮から毛先まで洗い残しがないように36～38度で洗い流してください。 › もっと見る\nブランド Nile\n商品の形状 ジェル\n髪質 全髪質\n香り LAFRANCE（ラフランス）の香り\n対象年齢 大人\nNileのストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "NILE 濃密泡スカルプシャンプー メンズ アミノ酸シャンプー ノンシリコン（LAFRANCE（ラフランス）の香り）",
+          "url": "https://www.amazon.co.jp/dp/B0DLJP1FMD",
+          "verified": true
+        },
+        {
+          "excerpt": "Nile\nNILE 濃密泡スカルプシャンプー メンズ アミノ酸シャンプー ノンシリコン\n【濃密泡で頭皮に至福のひとときを】頭皮を洗い髪を整えるスカルプシャンプー。アミノ酸活性剤を使用し頭皮に優しく、極上の洗浄を実現。濃密泡を作り出すシャンプーは頭皮に優しいアミノ酸活性剤を使用している証。サロンでも味わえないような濃厚泡体験をご自宅でご堪能ください。\n【ノンシリコンでもサラッとした洗い上がり】頭皮への影響も考慮し、5種のアミノ酸洗浄成分の配合と、ノンシリコン処方で頭皮をサポートしながらさっぱり洗浄。コンディションを整えるリンス成分（ポリクオタニウム-10）を配合。（リンス成分はシリコン成分ではありません。）メンズ・レディース問わずご使用いただけます。\n【頭皮に合わなかった場合】アミノ酸洗浄成分をベースとして処方を構成しており、マイルド洗浄処方になっておりますが、個人差で合わない場合がございます。頭皮に異変や違和感を感じた場合は、使用を中断してください。\n【ご使用方法】36～38度で2分程予洗いを行ってください。1〜1.5プッシュを基準に髪を揉み込みながら泡立ててください。このとき爪を立ててしまうと、頭皮トラブルの原因になる場合がございますので、指の腹で優しく揉み込んでください。最後に頭皮から毛先まで洗い残しがないように36～38度で洗い流してください。\nCustomer Reviews",
+          "http_status": 200,
+          "source_type": "manufacturer_official",
+          "title": "NILE 濃密泡スカルプシャンプー メンズ アミノ酸シャンプー ノンシリコン – Nile official",
+          "url": "https://nile-official.jp/products/nile-scalp-shampoo",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "【濃密泡で叶えるスカルプケア革命】 チャップアップ リンスイン スカルプシャンプー アミノ酸シャンプー オールインワン シャンプー 300mL×1本",
+      "asin": "B09DP1ZJV2",
+      "brand": "チャップアップ（CHAPUP）",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71xgVqJi2EL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B09DP1ZJV2",
+      "provisional": false,
+      "ref": "p2",
+      "search_key": "チャップアップ（CHAPUP） チャップアップ リンスイン スカルプシャンプー アミノ酸シャンプ",
+      "sources": [
+        {
+          "brand": "チャップアップ（CHAPUP）",
+          "excerpt": "【濃密泡で叶えるスカルプケア革命】 チャップアップ リンスイン スカルプシャンプー アミノ酸シャンプー オールインワン シャンプー 300mL×1本\nこの商品について\n🛁【WEB売上NO.1*の育毛剤メーカーが贈るリンスインスカルプシャンプー】 シリーズ累計1400万本を突破*2した育毛剤メーカーが、毛髪診断士(R)と共同開発。こだわりのリンスイン スカルプ シャンプーが、 濃密泡 で頭皮を包み込み、汚れをスッキリと洗い流します。アミノ酸シャンプー特有の洗浄成分が必要な潤いを守り、健やかな頭皮環境へと導きます。ワンランク上のスカルプケアをご体感ください。*2025年12月通販新聞調べ ウェブを中心に展開する主な「男性向け育毛剤」の売上高において(2023年4月～2024年3月) ※2 2026年4月ソーシャルテック調べ\n🛁【5種のアミノ酸系洗浄成分で優しく洗い上げる】 デリケートな男性の頭皮を考え抜き、ココイルグルタミン酸Naなど5種類の アミノ酸 系・植物系洗浄成分を贅沢に配合。汚れをしっかり落としながら潤いを守る、理想的なメンズシャンプーです。頭皮と同じ弱酸性かつ ノンシリコン 処方により、1日中さらっとベタつきの気にならない清潔な頭皮環境をキープします。\n🛁【 ノンシリコン でもハリ・コシUP】 「洗うたびに髪が細くなる気がする」という悩みに応え、コアセルベーション処方を採用。すすぐ際に髪の潤い守り、まとまり感・手触りの良さを実現。髪の立ち上がりも良くし、理想のハリ・コシへと導きます。\n🛁【1本で完結、忙しい現代男性のためのリンスイン】 毎日手軽にケアできるよう、髪表面を整える成分*配合。1本で指通りの良いなめらかな仕上がりを実現するリンスインシャンプー仕様です。洗髪後のきしみ感を抑え、忙しい朝のスタイリングもスムーズに。時短とクオリティを両立させた、働き盛りの男性のための新習慣です。*γ-ドコサラクトン（配合目的：保湿剤）\n🛁【爽やかで清潔感あふれるフレッシュグリーンの香り】 香水や整髪料の香りを邪魔しない、爽やかで清潔感のある「フレッシュグリーンの香り」。使用感と香りのバランスにこだわり、毎日のバスタイムを贅沢なリフレッシュの時間へと変貌させます。濃密な泡が頭皮のすみずみまで包み込み、不快臭を抑えます。\n🛁【毎日安心して使える7つの無添加設計】 頭皮への負担を極限まで減らすため、サルフェート、シリコン、パラベン、鉱物油、石油系界面活性剤、合成着色料、紫外線吸収剤不使用。国内工場で製造されたメイドインジャパンの高品質製品。万が一商品に不備がある場合は、お気軽にお問い合わせください。 › もっと見る\nブランド チャップアップ（CHAPUP）\n商品の形状 液体\n髪質 カラーリング, ドライ\n香り フレッシュグリーン\n対象年齢 大人\nチャップアップ（CHAPUP）のストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "【濃密泡で叶えるスカルプケア革命】 チャップアップ リンスイン スカルプシャンプー アミノ酸シャンプー オールインワン シャンプー 300mL×1本",
+          "url": "https://www.amazon.co.jp/dp/B09DP1ZJV2",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "ルベル イオ リコミント クレンジング icy 2500ml 詰め替え用 業務用 シャンプー アイシー エイジング シリコーンフリー Lebel iau",
+      "asin": "B00OB0YS62",
+      "brand": "Lebel",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/31a0jqSxKkL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B00OB0YS62",
+      "provisional": false,
+      "ref": "p3",
+      "search_key": "Lebel ルベル イオ リコミント クレンジング icy 2500ml 詰",
+      "sources": [
+        {
+          "brand": "Lebel",
+          "excerpt": "ルベル イオ リコミント クレンジング icy 2500ml 詰め替え用 業務用 シャンプー アイシー エイジング シリコーンフリー Lebel iau\nこの商品について\n商品仕様: ルベル イオ リコミント クレンジング icy 2500ml 詰め替え用 業務用 シャンプー アイシー トマト ミント配合\nシリコーンフリー処方: 地肌をすっきりと洗い上げるシリコーンフリーのシャンプーで、ベタつきやニオイの要因をケアします\n清涼感のある使用感: メントール配合により清涼感のある洗い心地で、地肌をさわやかに保ちながらうるおいをチャージします\nトマトエキスとミント配合: トマト果実エキスとミントが調和したハーバルトマトグリーンの香りで、地肌も気持ちもリフレッシュします\nクリーミーな泡立ち: 弾力のあるクリーミーな泡が、うるおいを守りながら地肌を清浄に洗い上げます › もっと見る\nブランド Lebel\n商品の形状 液体\n髪質 エイジング\n香り ミント\n対象年齢 大人\nブランド: Lebel",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "ルベル イオ リコミント クレンジング icy 2500ml 詰め替え用 業務用 シャンプー アイシー エイジング シリコーンフリー Lebel iau",
+          "url": "https://www.amazon.co.jp/dp/B00OB0YS62",
+          "verified": true
+        },
+        {
+          "excerpt": "HAIR CARE\nIAU\nイオリコミント クレンジング icy\nシャンプー\nヘアサロン専売品\nエイジング地肌をさわやかに。 地肌のうるおい低下やニオイの元となる頑固な皮脂をやさしく落とすシャンプー。植物由来100％の洗浄成分が、うるおいを与えながら、すっきりやさしく洗い上げます。 use for ・清涼感が大好きな方に\nトマトとミントのハーバルトマトグリーンの香り シリコーンフリー 200mL／￥1,980 600mL／￥4,180 2500mL（リフィル／ヘアサロン技術者専用） ※価格はすべてメーカー希望小売価格（税込）です。 ＜ご使用方法＞ 髪をしっかりすすぎます。その後、適量を手にとって地肌と髪を洗い、よくすすいでください。\nご購入はこちら 「会員制オンラインストア BEAUTY CITY」\nBEAUTY CITYへの登録方法はこちら\nご購入などのお問い合わせはこちら\nOTHER\nラインナップ\nイオリコミント クレンジング",
+          "http_status": 200,
+          "source_type": "manufacturer_official",
+          "title": "イオリコミント クレンジング icy | PRODUCTS |  LebeL（ルベル）オフィシャルサイト",
+          "url": "https://www.lebel.co.jp/products/item/375/",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "ルベル イオ リコミント クレンジング 1000ml 詰め替え用 業務用 シャンプー エイジング シリコーンフリー Lebel iau Lycomint",
+      "asin": "B00OB0YAS8",
+      "brand": "Lebel",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41dwtvI8TJL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B00OB0YAS8",
+      "provisional": false,
+      "ref": "p4",
+      "search_key": "Lebel ルベル イオ リコミント クレンジング 1000ml 詰め替え用",
+      "sources": [
+        {
+          "brand": "Lebel",
+          "excerpt": "ルベル イオ リコミント クレンジング 1000ml 詰め替え用 業務用 シャンプー エイジング シリコーンフリー Lebel iau Lycomint\nこの商品について\n気になるニオイやベタつきに、エイジング地肌が求めるうるおいと清涼感を。 地肌をいたわり、髪すこやかに。自然生まれの「イオリコミント」 元気の源トマト トマトに含まれる赤い色素「リコピン」は、エイジングに影響するといわれる活性酸素に対する働き(抗酸化力)が高いことで注目が集まっています。 › もっと見る\nブランド Lebel\n商品の形状 液体\n髪質 ダメージ, ノーマル, パーマ・カラーリング\n香り 食品系\n対象年齢 大人\nブランド: Lebel",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "ルベル イオ リコミント クレンジング 1000ml 詰め替え用 業務用 シャンプー エイジング シリコーンフリー Lebel iau Lycomint",
+          "url": "https://www.amazon.co.jp/dp/B00OB0YAS8",
+          "verified": true
+        },
+        {
+          "excerpt": "HAIR CARE\nIAU\nイオリコミント クレンジング\nシャンプー\nヘアサロン専売品\nエイジング地肌をさわやかに。 地肌のうるおい低下やニオイの元となる頑固な皮脂をやさしく落とすシャンプー。植物由来100％の洗浄成分が、うるおいを与えながら、すっきりやさしく洗い上げます。 use for ・おだやかな清涼感が好きな方に\nトマトとミントのハーバルトマトグリーンの香り シリコーンフリー 200mL／￥1,980 600mL／￥4,180 1000mL（リフィル）／￥5,500 2500mL（リフィル／ヘアサロン技術者専用） ※価格はすべてメーカー希望小売価格（税込）です。 ＜ご使用方法＞ 髪をしっかりすすぎます。その後、適量を手にとって地肌と髪を洗い、よくすすいでください。\nご購入はこちら 「会員制オンラインストア BEAUTY CITY」\nBEAUTY CITYへの登録方法はこちら\nご購入などのお問い合わせはこちら\nOTHER\nラインナップ\nイオリコミント クレンジング icy",
+          "http_status": 200,
+          "source_type": "manufacturer_official",
+          "title": "イオリコミント クレンジング | PRODUCTS |  LebeL（ルベル）オフィシャルサイト",
+          "url": "https://www.lebel.co.jp/products/item/377/",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "デミコスメティクス ヘアシーズンズ クレンジングリキッド 500ml レフィル シャンプー",
+      "asin": "B00DRA9PY2",
+      "brand": "デミコスメティクス",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51d+qhDckmL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "usage_frequency"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B00DRA9PY2",
+      "provisional": false,
+      "ref": "p5",
+      "search_key": "デミコスメティクス ヘアシーズンズ クレンジングリキッド 500ml レフィル シャ",
+      "selection_score": 0.78,
+      "sources": [
+        {
+          "brand": "デミコスメティクス",
+          "excerpt": "デミコスメティクス ヘアシーズンズ クレンジングリキッド 500ml レフィル シャンプー\nこの商品について\nトリプルクレンジング成分が、髪に付着したシリコンなどの汚れを取り除きます。\n髪を素髪の状態に戻します。\nベタつきや汚れの蓄積が気になる方に。\n使用量の目安：ショート5mL、ミディアム10mL、ロング15mL。\nアプリケーターに入れて使用します。 › もっと見る\nブランド デミコスメティクス\n商品の形状 シャンプー\n髪質 全髪質\n香り フローラル\n対象年齢 大人\nブランド: デミコスメティクス",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "デミコスメティクス ヘアシーズンズ クレンジングリキッド 500ml レフィル シャンプー",
+          "url": "https://www.amazon.co.jp/dp/B00DRA9PY2",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "ルベル ジオ フレイマン クレンジング 500ml",
+      "asin": "B084561326",
+      "brand": "Lebel",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/319nYiYooBL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "cleansing_formula"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B084561326",
+      "provisional": false,
+      "ref": "p6",
+      "search_key": "Lebel ルベル ジオ フレイマン クレンジング 500ml",
+      "selection_score": 0.62,
+      "sources": [
+        {
+          "brand": "Lebel",
+          "excerpt": "ルベル ジオ フレイマン クレンジング 500ml\nこの商品について\nクリーミーな泡で髪と頭皮を優しく洗い上げます › もっと見る\nブランド Lebel\n香り アプリコット\n対象年齢 大人\n肌タイプ 普通肌\n商品パッケージ数 1\n商品特長 モイスチャライジング\n特徴 プロ・サロン用\n商品の形状 液体\nユニット数 500.0 ミリリットル\n色 クリア 表示を増やす\nブランド: Lebel",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "ルベル ジオ フレイマン クレンジング 500ml",
+          "url": "https://www.amazon.co.jp/dp/B084561326?th=1",
+          "verified": true
+        },
+        {
+          "excerpt": "HAIR CARE\nMEN'S\nTHEÓ\nジオ フレイマン クレンジング\nシャンプー\nヘアサロン専売品\n植物オイル洗浄成分*で皮脂や汚れを落とし、クリーミーな泡で頭皮と髪をしっとり洗い上げる。 ＊ アプリコット核油ポリグリセリル-6エステルズ\n500mL／￥4,400 1600mL（リフィル）／￥8,800 ※価格はすべてメーカー希望小売価格（税込）です。 ＜ご使用方法＞ ①髪をしっかりと予洗いします。 ②適量を手にとり頭皮全体になじませ、指の腹で丁寧に洗います。 ③しっかりと頭皮から洗い流してください。\nご購入などのお問い合わせはこちら\nラインナップ\nジオ フレイマン ルートウェイク\nOTHER\nジオ フレイマン モイストジェリッシュ\nジオ スキャルプビルダー（販売名：スキャルプエッセンス SB）\n〈医薬部外品〉",
+          "http_status": 200,
+          "source_type": "manufacturer_official",
+          "title": "ジオ フレイマン クレンジング | PRODUCTS |  LebeL（ルベル）オフィシャルサイト",
+          "url": "https://www.lebel.co.jp/products/item/233/",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "selection": {
+    "brand_count": 4,
+    "comparison_axes_covered": [
+      "cleansing_formula",
+      "hair_application",
+      "usage_frequency"
+    ],
+    "content_duplicates_removed": [
+      {
+        "asin": "B0DLJP1FMD",
+        "duplicate_of_asin": "B0DLJP1FMD",
+        "reason": "normalized_title_exact"
+      },
+      {
+        "asin": "B09DP1ZJV2",
+        "duplicate_of_asin": "B09DP1ZJV2",
+        "reason": "normalized_title_exact"
+      },
+      {
+        "asin": "B00OB0YS62",
+        "duplicate_of_asin": "B00OB0YS62",
+        "reason": "normalized_title_exact"
+      },
+      {
+        "asin": "B00OB0YAS8",
+        "duplicate_of_asin": "B00OB0YAS8",
+        "reason": "normalized_title_exact"
+      }
+    ],
+    "price_used_as_constraint_only": true,
+    "retained_qa_passed_asins": [
+      "B00OB0YAS8",
+      "B00OB0YS62",
+      "B09DP1ZJV2",
+      "B0DLJP1FMD"
+    ],
+    "targeted_replacement": true
+  },
+  "slug": "scalp-cleansing-shampoos-comparison"
+}
