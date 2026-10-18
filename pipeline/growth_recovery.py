@@ -496,3 +496,35 @@ def summarize_execution() -> dict:
         item.pop('duration_observed', None)
         result.append(item)
     return {'roles': sorted(result, key=lambda row: row['role'])}
+
+
+def reopen_writer_failed_after_owner_remediation(slug: str, *, reason: str, verified_revision: str) -> dict:
+    """Resume a specific owner-analyzed Writer failure, retaining its history.
+
+    This requires an existing quality incident and a concrete remediation revision.
+    It is not an automatic bypass of the three-NG quality gate.
+    """
+    state = load_job(slug)
+    case = read_artifact(slug, 'owner-quality-case.json', {}) or {}
+    if (state.get('status'), state.get('current_stage')) != ('FAILED', 'WRITER_FAILED'):
+        raise ValueError('only FAILED WRITER_FAILED jobs may be resumed')
+    if case.get('case_state') != 'AWAITING_OWNER_ANALYSIS' or case.get('job_state_revision') != state.get('updated_at'):
+        raise ValueError('matching owner quality case required')
+    if not str(reason).strip() or len(str(verified_revision).strip()) < 7:
+        raise ValueError('owner remediation reason and deployed revision required')
+    from comparison_acceptance import product_issues
+    evidence = read_artifact(slug, 'evidence.json', {}) or {}
+    if product_issues(evidence) or (read_artifact(slug, 'product-blocker.json', {}) or {}).get('needs_product_reselection'):
+        raise ValueError('product QA must still be accepted before Writer recovery')
+    write_artifact(slug, 'owner-quality-case.json', {**case, 'case_state': 'REMEDIATED',
+        'remediation_reason': reason, 'verified_revision': verified_revision})
+    state['status'] = 'ACTIVE'
+    state['current_stage'] = 'QA_FAILED'
+    state['next_retry_at'] = _iso()
+    state['quality_ng_by_gate'] = {**(state.get('quality_ng_by_gate') or {}), 'writer': 0}
+    state['last_failure_code'] = None
+    state['last_failure_class'] = None
+    state['last_failure_reason'] = None
+    return _save_state(state, event='OWNER_REMEDIATION_WRITER_RESUMED',
+        detail={'reason': reason, 'verified_revision': verified_revision,
+                'prior_quality_ng': case.get('ng_count')})
