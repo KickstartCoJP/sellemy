@@ -120,6 +120,26 @@ def _prompt(topic: dict, evidence: dict, *, previous_payload: dict | None = None
         f'TOPIC:\n{json.dumps(topic, ensure_ascii=False, sort_keys=True)}\n\n'
         f'EVIDENCE:\n{json.dumps(evidence, ensure_ascii=False, sort_keys=True)}'
     )
+    if previous_payload is not None and isinstance(gate_feedback, dict):
+        measures = gate_feedback.get('measurements') or {}
+        failures = gate_feedback.get('qa_failures') or {}
+        length = measures.get('main_len')
+        if failures.get('main_in_range') is False and isinstance(length, int):
+            if length > 3400:
+                prompt += (f'\nCRITICAL LENGTH CORRECTION: previous rendered main = {length}, '
+                           f'which exceeds the absolute maximum 3400 by {length - 3400}. '
+                           'Shorten total public prose by at least the excess plus 120 Japanese '
+                           'characters without removing grounded material facts; aim for rendered main '
+                           '3150-3250. Never count source JSON as article prose.\n')
+            elif length < 3000:
+                prompt += (f'\nCRITICAL LENGTH CORRECTION: previous rendered main = {length}, '
+                           f'which is short by {3000 - length}. Increase useful comparison '
+                           'detail by at least the deficit plus 80 characters; aim 3150-3250.\n')
+        for field, low, high in (('summary',130,170),('how_to_choose',190,270)):
+            length = measures.get(field + '_len')
+            if isinstance(length,int) and failures.get(field + '_in_range') is False:
+                prompt += (f'\nCRITICAL {field} LENGTH: prior {length}, required '
+                           f'{low}-{high}, aim {low + (high-low)//2}; revise this field.\n')
     if previous_payload is not None:
         prompt += (
             '\n\nRewrite the complete payload using the gate diagnostics. Do not patch with scripted filler.\n\n'
