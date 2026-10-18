@@ -167,7 +167,6 @@ def ensure_codex_eyecatch(*, slug: str, title: str, category: str, evidence: dic
             _prompt(slug=slug, title=title, category=category, evidence=evidence, payload=payload, output=ROOT),
             timeout=int(os.environ.get('SELLEMY_EYECATCH_CODEX_TIMEOUT_SECONDS', '900')),
             root=ROOT, surface_key=DESIGNER_ROLE, stage='eyecatch', usage_key=slug,
-            max_turns=int(os.environ.get('SELLEMY_EYECATCH_CODEX_CHECKPOINT_TURNS', '20')),
         )
     except CodexProviderError as exc:
         raise CodexEyecatchError(str(exc)) from exc
