@@ -819,45 +819,62 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
                              and str(source.get('excerpt') or '').strip()
                              for source in p.get('sources') or [])]
         feedback = load_feedback()
+        # Preserve products passing independent QA and exact source-anchor checks.
+        # Failed products alone are replaced; an unchanged rejected set is never retried.
+        from comparison_acceptance import normalized, source_text
+        import re as _re
+        latest = sorted(job_dir(slug).glob('product-review-*.json'),
+                        key=lambda path: path.stat().st_mtime, reverse=True)
+        pinned, known_bad = [], set()
+        if latest:
+            old = read_artifact(slug, latest[0].name, {}) or {}
+            old_evidence = (old.get('evidence') or {}).get('products') or []
+            old_checks = ((old.get('review') or {}).get('products') or [])
+            by_ref_old = {item['ref']: item for item in old_evidence}
+            for check in old_checks:
+                product = by_ref_old.get(check.get('ref'))
+                if not product: continue
+                asin = product.get('asin')
+                quote = check.get('identity_quote') or ''
+                key = normalized(str(check.get('identity_key') or ''))
+                anchored = bool(key and len(key) >= 3 and quote and quote in source_text(product)
+                                and key in normalized(quote))
+                if (check.get('adequate_facts') is True and check.get('topic_fit') is True
+                        and anchored):
+                    pinned.append(asin)
+                else:
+                    known_bad.add(asin)
+        pin_set = set(pinned)
+        # Choose the previous accepted products first. Only replace the failed slots.
+        if pin_set:
+            available_by_asin = {p['asin']: p for p in available}
+            pinned_rows = [available_by_asin[a] for a in pinned if a in available_by_asin]
+            replacement_candidates = [p for p in available if p['asin'] not in pin_set
+                                      and p['asin'] not in known_bad]
+            selected_pool = pinned_rows + replacement_candidates
+            if len(pinned_rows) == len(pin_set) and len(selected_pool) >= 6:
+                available = selected_pool
         while len(available) >= 6:
-            selected, selection = select_six(available, topic, feedback)
+            if pin_set and len(pin_set) < 6:
+                by_asin = {p['asin']: p for p in available}
+                retained = [by_asin[a] for a in pinned if a in by_asin]
+                others = [p for p in available if p['asin'] not in pin_set]
+                if len(retained) + len(others) < 6: break
+                # Rank only substitutes; the known-good set is not reselected.
+                replacement, _ = select_six(others, topic, feedback) if len(others) >= 6 else (others, {})
+                selected = retained + replacement[:6-len(retained)]
+                selection = {'retained_qa_passed_asins': pinned, 'targeted_replacement': True}
+            else:
+                selected, selection = select_six(available, topic, feedback)
             six_asins = tuple(sorted(p['asin'] for p in selected))
             signature = '|'.join(six_asins)
             if signature in reviewed_sets:
                 break
             evidence = build_evidence(topic, selected, selection)
-            if previous.get('product_acceptance') and product_issues(previous):
-                from comparison_acceptance import digest
-                def fingerprint(value):
-                    records = sorted(({'asin': item.get('asin'), 'title': item.get('amazon_title'),
-                                       'brand': item.get('brand'), 'sources': item.get('sources', [])}
-                                      for item in value.get('products', [])), key=lambda x: str(x['asin']))
-                    return digest({'comparison_axes': value.get('comparison_axes'), 'products': records})
-                if fingerprint(previous) == fingerprint(evidence):
-                    reviewed_sets.add(signature)
-                    save_progress()
-                    request_product_reselection(slug, ['exact evidence unchanged from rejected review'])
-                    raise GrowthRuntimeError(f'exact evidence unchanged for {slug}')
             evidence['product_acceptance'] = independent_review(evidence)
             issues = product_issues(evidence)
-            if issues and _researchable_candidates(selected, cache_only=cache_only):
-                # Research owns remediation: obtain additional attributed facts
-                # before QA may permanently reject or replace this selection.
-                enriched = research_selected(selected, prefer_official=True)
-                if any(new.get('sources') != old.get('sources')
-                       for new, old in zip(enriched, selected)):
-                    new_by_asin = {item['asin']: item for item in enriched}
-                    pool = [new_by_asin.get(item['asin'], item) for item in pool]
-                    selected = [new_by_asin.get(item['asin'], item) for item in selected]
-                    evidence = build_evidence(topic, selected, selection)
-                    evidence['product_acceptance'] = independent_review(evidence)
-                    issues = product_issues(evidence)
-            # Preserve the complete independent result before mutating the pool.
-            # A later candidate selection must not erase why a product was rejected.
             write_artifact(slug, 'product-review-' + signature.replace('|', '-') + '.json', {
-                'asins': list(six_asins),
-                'evidence': evidence,
-                'issues': issues,
+                'asins': list(six_asins), 'evidence': evidence, 'issues': issues,
                 'review': (evidence.get('product_acceptance') or {}).get('review'),
             })
             reviewed_sets.add(signature)
@@ -866,27 +883,32 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
                 write_artifact(slug, 'product-search-progress.json', {
                     'candidates': pool, 'excluded_asins': sorted(excluded),
                     'queries': tried, 'reviewed_sets': sorted(reviewed_sets),
-            'researched_asins': sorted(researched_asins),
-                    'complete': True,
+                    'researched_asins': sorted(researched_asins), 'complete': True,
                 })
                 return
+            # Record the actionable QA defects; do not count an unchanged retry
+            # as an independent QA failure on the following scheduler tick.
             review = (evidence.get('product_acceptance') or {}).get('review') or {}
-            by_ref = {p['ref']: p['asin'] for p in evidence['products']}
-            rejected = {by_ref[p['ref']] for p in review.get('products', [])
-                        if isinstance(p, dict) and p.get('ref') in by_ref
-                        and (p.get('adequate_facts') is False or p.get('topic_fit') is False)}
-            # The product research owner, not QA, decides whether to research
-            # missing facts. A fact-insufficiency verdict is NOT a product rejection.
-            # Only explicit topic mismatch removes a candidate permanently.
-            rejected = {by_ref[p['ref']] for p in review.get('products', [])
-                        if isinstance(p, dict) and p.get('ref') in by_ref
-                        and p.get('topic_fit') is False}
-            if not rejected:
-                save_progress()
-                break
-            excluded.update(rejected)
-            available = [p for p in pool if p.get('asin') not in excluded]
+            by_ref = {row['ref']: row for row in evidence['products']}
+            good = []
+            rejected = set()
+            for check in review.get('products') or []:
+                product = by_ref.get(check.get('ref'))
+                if product is None: continue
+                quote = check.get('identity_quote') or ''
+                key = normalized(str(check.get('identity_key') or ''))
+                anchor_ok = bool(len(key)>=3 and quote and quote in source_text(product)
+                                 and key in normalized(quote))
+                if check.get('adequate_facts') is True and check.get('topic_fit') is True and anchor_ok:
+                    good.append(product['asin'])
+                else:
+                    rejected.add(product['asin'])
+            write_artifact(slug, 'product-qa-remediation.json', {
+                'retained_asins': good, 'needs_remediation_asins': sorted(rejected),
+                'issues': issues, 'signature': signature,
+            })
             save_progress()
+            break
         save_progress()
         request_product_reselection(slug, ['continue candidate search until six products pass independent evidence QA'])
         raise GrowthRuntimeError(f'product discovery still in progress for {slug}')
