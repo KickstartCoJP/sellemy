@@ -552,6 +552,14 @@ def _writer_stage(slug: str, result: dict) -> None:
             write_artifact(slug, 'writer-blocked.json', payload)
             request_product_reselection(slug, payload.get('reasons') or ['Writer reported missing facts'])
             raise GrowthRuntimeError(f'needs_product_reselection for {slug}')
+        if os.environ.get('SELLEMY_ENABLE_WRITER_LENGTH_REPAIR') == '1' and payload.get('status') == 'READY':
+            from qa import main_text_length
+            measured_main = main_text_length(render_article(payload, evidence))
+            if measured_main > 3400 or len(payload.get('summary','')) > 170 or len(payload.get('how_to_choose','')) > 270:
+                from writer_runtime import revise_length_fields
+                payload, repair_meta = revise_length_fields(payload, rendered_main_len=measured_main)
+                metadata = {**metadata, 'length_repair_attempted': True,
+                            'length_repair_metadata': repair_meta}
         policy = active_policy() or {}
         local_qa_mode = policy.get('qa_provider') == 'ollama_split'
         acceptance = None

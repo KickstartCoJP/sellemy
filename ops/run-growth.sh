@@ -62,6 +62,8 @@ export SELLEMY_WRITER_PRIMARY_MODEL=gpt-6-sol
 export SELLEMY_EYECATCH_CODEX_MODEL=gpt-6-sol
 # Fail closed unless all six Amazon product images pass byte-level identity audit.
 export SELLEMY_REQUIRE_PRODUCT_IMAGE_AUDIT=1
+# Bounded original-Writer prose revision before independent QA for measurable length misses.
+export SELLEMY_ENABLE_WRITER_LENGTH_REPAIR=1
 
 # The publication switch does not disable analytics, monitoring or site serving.
 PUBLISH_ALLOWED="$("$PY" - <<'PYSWITCH'
