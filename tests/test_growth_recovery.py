@@ -58,6 +58,30 @@ class GrowthRecoveryTests(unittest.TestCase):
         self.assertIsNone(gr.eligible_job(now=datetime.now(timezone.utc)))
         self.assertIsNone(row['discard_reason'])
 
+    def test_identical_product_reselection_is_held_without_repeating_qa(self):
+        self._job('stuck')
+        gr.write_artifact('stuck', 'product-search-progress.json', {
+            'candidates': [{'asin': 'A1'}], 'queries': [{'query': 'x'}],
+            'researched_asins': ['A1'], 'reviewed_sets': ['A1|B2']})
+        first = gr.request_product_reselection('stuck', ['six evidence-ready products absent'])
+        self.assertEqual(first['retry_count_by_stage']['product'], 1)
+        second = gr.request_product_reselection('stuck', ['six evidence-ready products absent'])
+        self.assertEqual(second['current_stage'], 'PRODUCT_HOLD')
+        self.assertEqual(second['retry_count_by_stage']['product'], 1)
+        self.assertIsNone(second['next_retry_at'])
+        self.assertIsNone(gr.eligible_job())
+        self._job('healthy')
+        self.assertEqual(gr.eligible_job()['slug'], 'healthy')
+
+    def test_changed_product_candidates_do_not_trigger_hold(self):
+        self._job('changed')
+        gr.write_artifact('changed', 'product-search-progress.json', {'candidates': [{'asin':'A1'}]})
+        gr.request_product_reselection('changed', ['incomplete'])
+        gr.write_artifact('changed', 'product-search-progress.json', {'candidates': [{'asin':'A1'}, {'asin':'B2'}]})
+        row = gr.request_product_reselection('changed', ['incomplete'])
+        self.assertEqual(row['current_stage'], 'WRITER_PENDING')
+        self.assertEqual(row['retry_count_by_stage']['product'], 2)
+
     def test_runtime_retry_does_not_increment_role_returns(self):
         self._job()
         row=gr.mark_failure('same-slug',stage='eyecatch',failure_class='runtime_infrastructure',failure_code='ATTEST',reason='parser mismatch',role='designer')

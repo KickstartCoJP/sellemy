@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import hashlib
 import os
 import shutil
 import tempfile
@@ -399,6 +400,30 @@ def retire(slug: str, reason: str) -> dict:
 def request_product_reselection(slug: str, reasons: list[str]) -> dict:
     # Control outcome inside the existing job, not a new queue or state enum.
     from comparison_acceptance import blocked
+    progress = read_artifact(slug, 'product-search-progress.json', {}) or {}
+    # A source/candidate change permits a new attempt; the identical failed
+    # search state must not consume another QA turn or block other articles.
+    signal = {
+        'asins': sorted(str(x.get('asin')) for x in progress.get('candidates', []) if isinstance(x, dict)),
+        'researched': sorted(progress.get('researched_asins') or []),
+        'queries': progress.get('queries') or [],
+        'reviewed': sorted(progress.get('reviewed_sets') or []),
+        'reason': sorted(set(str(x) for x in reasons)),
+    }
+    signature = hashlib.sha256(json.dumps(signal, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
+    previous = read_artifact(slug, 'product-attempt-fingerprint.json', {}) or {}
+    if previous.get('signature') == signature:
+        state = load_job(slug)
+        state['current_stage'] = 'PRODUCT_HOLD'
+        state['status'] = 'ACTIVE'
+        state['next_retry_at'] = None
+        state['last_failure_class'] = 'missing_evidence'
+        state['last_failure_code'] = 'UNCHANGED_PRODUCT_SEARCH'
+        state['last_failure_reason'] = '; '.join(reasons)[:2000]
+        write_artifact(slug, 'product-blocker.json', blocked(reasons))
+        write_artifact(slug, 'product-hold.json', {'signature': signature, 'reason': 'unchanged input and failure', 'resume_condition': 'new product or evidence or owner intervention'})
+        return _save_state(state, event='PRODUCT_NO_PROGRESS_HOLD', detail={'signature': signature})
+    write_artifact(slug, 'product-attempt-fingerprint.json', {'signature': signature})
     write_artifact(slug, 'product-blocker.json', blocked(reasons))
     write_artifact(slug, 'acceptance.json', blocked(reasons))
     set_stage(slug, 'WRITER_PENDING', event='PRODUCT_RESELECTION_REQUESTED')
