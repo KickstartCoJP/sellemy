@@ -1,0 +1,402 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/electronic-writing-tablets.html",
+  "category": "gadget",
+  "comparison_axes": [
+    {
+      "id": "writing_area",
+      "keywords": [
+        "筆記面寸法",
+        "表示方式",
+        "筆圧"
+      ],
+      "label": "筆記面の実寸と表示方式"
+    },
+    {
+      "id": "erase",
+      "keywords": [
+        "消去ボタン",
+        "ロック",
+        "部分消去"
+      ],
+      "label": "消去操作と誤消去防止"
+    },
+    {
+      "id": "retention",
+      "keywords": [
+        "保存機能",
+        "電池",
+        "交換方法"
+      ],
+      "label": "メモの保存可否と電源方式"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/electronic-writing-tablets/electronic-writing-tablets.png",
+  "product_acceptance": {
+    "contract_version": "bf7d78a8237179bb977f6ca29f54f732162e9d387723eb0c936bc77316835b8f",
+    "evidence_sha256": "528c40ea182f19e0b03e0ba40b015b69be30b3896f6bb62d42fe30aa7f16331e",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 14848,
+      "input_tokens": 26233,
+      "member_binding_revision": 4,
+      "output_tokens": 1795,
+      "reasoning_effort": "low",
+      "reasoning_output_tokens": 611,
+      "session_id": "01a17047-18a1-7012-b791-8b3c4ab8d30a",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "writing_area",
+              "quote": "14.4×7.4cm表示領域"
+            },
+            {
+              "axis_id": "erase",
+              "quote": "「消去ロック機能」で誤消去を防止"
+            },
+            {
+              "axis_id": "retention",
+              "quote": "付属のCR2016ボタン電池1個"
+            }
+          ],
+          "identity_key": "Elegirme 電子メモパッド",
+          "identity_quote": "Elegirme 電子メモパッド デジタルノート 6.5インチ",
+          "reason": "Identifiable 6.5-inch model with stated display dimensions, erase lock, and CR2016 battery. The stated erase-count and comfort claims are unverified marketing claims.",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "writing_area",
+              "quote": "液晶寸法：310×215mm"
+            },
+            {
+              "axis_id": "erase",
+              "quote": "ロック機能は、偶発的な削除を回避"
+            },
+            {
+              "axis_id": "retention",
+              "quote": "ボタン電池（CR2025）1個"
+            }
+          ],
+          "identity_key": "FVEREY 16インチ電子メモパッド",
+          "identity_quote": "FVEREY 16インチ電子メモパッド 描画色ストラップ付",
+          "reason": "Identifiable large-screen model with stated LCD dimensions, one-button erase, lock, and CR2025 battery. Durability and eye-comfort claims should not become established performance claims.",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "writing_area",
+              "quote": "画面サイズ 15 インチ"
+            },
+            {
+              "axis_id": "erase",
+              "quote": "消去ロック機能付き"
+            },
+            {
+              "axis_id": "retention",
+              "quote": "本体や他の媒体にデータとして保存する機能はありません"
+            }
+          ],
+          "identity_key": "電子パッド McCyeks",
+          "identity_quote": "15インチ電子メモパッド(ブラック) 描画色(単色) 【映像クリエイター推奨】ストラップ付 お絵描きボード 電池式 大画面 電子パッド McCyeks",
+          "reason": "Source identifies a distinct 15-inch product. It explicitly states erase lock, replaceable button battery, and lack of digital saving; usable writing dimensions are not stated.",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "writing_area",
+              "quote": "12インチのデジタルメモパッド"
+            },
+            {
+              "axis_id": "erase",
+              "quote": "スライド式のロック機能"
+            },
+            {
+              "axis_id": "retention",
+              "quote": "電池交換可能"
+            }
+          ],
+          "identity_key": "EP-12BK-AZ",
+          "identity_quote": "エレコム 電子メモパッド 電子メモ帳 12インチ ロック機能付き ワンタッチ消去 電池交換可能 単語帳 筆談ボード 伝言ボード 書いて消せるボード ブラック EP-12BK-AZ",
+          "reason": "Brand and model number distinguish this 12-inch product. Source states one-touch erase, a sliding lock, and battery replacement. It does not establish digital saving.",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "writing_area",
+              "quote": "8.5インチの感圧式LCD液晶"
+            },
+            {
+              "axis_id": "erase",
+              "quote": "ロック中は画面が消去できなくなる"
+            },
+            {
+              "axis_id": "retention",
+              "quote": "電池：CR2025(テスト電池付属)"
+            }
+          ],
+          "identity_key": "prendre 電子メモパッド",
+          "identity_quote": "prendre 電子メモパッド 8.5インチ 感圧式 LCD 液晶 消去ロック機能 電池交換対応 メモ帳 メッセージ ボード 伝言板 繰り返し （ブラック） PR-LCDPAD02-BK",
+          "reason": "The PR-LCDPAD02-BK model identifies this product separately from the other 8.5-inch candidate. Pressure-sensitive LCD, erase lock, and CR2025 battery are stated.",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "writing_area",
+              "quote": "感圧式LCD液晶パネル"
+            },
+            {
+              "axis_id": "erase",
+              "quote": "背面には誤消去を防ぐロックスライドスイッチを搭載"
+            },
+            {
+              "axis_id": "retention",
+              "quote": "CR2025コイン電池交換式"
+            }
+          ],
+          "identity_key": "DMP0519",
+          "identity_quote": "製品型番\n‎DMP0519",
+          "reason": "The source identifies brand UPBEATLIFE and model DMP0519, distinct from p5 despite similar size and features. It states pressure-sensitive LCD, a rear erase lock, and replaceable CR2025 battery. Conflicting weight figures should be omitted.",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reason": "Evidence-only review. Six products have distinct source-backed brand and product identities, fit the electronic writing tablet topic, and provide explicit facts across writing area, erase controls, and power or retention. The evidence supports a useful comparison. No article was submitted, so article-only judgments remain false. Listing claims about durability, eye comfort, and battery life should not be treated as verified performance.",
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
+  "products": [
+    {
+      "amazon_title": "【雑誌掲載】Elegirme 電子メモパッド デジタルノート 6.5インチ 超薄型 0.5mm極細線幅",
+      "asin": "B0H3JWLCC8",
+      "brand": "Elegirme",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61dvONF-0mL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "erase",
+        "retention",
+        "writing_area"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H3JWLCC8",
+      "provisional": false,
+      "ref": "p1",
+      "search_key": "Elegirme 電子メモパッド デジタルノート 6.5インチ 超薄型 0.5mm",
+      "selection_score": 0.6,
+      "sources": [
+        {
+          "brand": "Elegirme",
+          "excerpt": "【雑誌掲載】Elegirme 電子メモパッド デジタルノート 6.5インチ 超薄型 0.5mm極細線幅\n【6.5インチ全面スクリーン＆超薄設計】　「1.2mm極細ベゼル」で画面占有率93.5%を実現。5.2mmの薄型ボディはノート感覚で携帯可能（製品サイズ：15.5×7.5×0.5cm）。広々とした14.4×7.4cm表示領域で、スケッチ練習、デッサン描画、書道練習、学生の下書き、マインドマップ作成、会議議事録、メモなど、多様な使用シーンに対応しています。\n【0.5mm超狭筆跡対応で高精細な筆記】0.5mm筆圧感知技術で、細密な線描きや文字書きが可能。手のひらや指の接触を自動認識し、意図しない着色を防止。爪など硬い物体のみ痕跡を残せる誤触防止設計。\n【目に優しい読書体験】バックライト不使用の反射式画面で、自然光下での紙のような視認性を再現。ブルーライトゼロ設計により長時間使用でも目が疲れません（※暗所使用は非推奨）。\n【消去ロック機能＆スロット式ペン収納】重要なメモは「消去ロック機能」で誤消去を防止。大切な情報をしっかり保護し、安心して長くご利用いただけます。付属ペンは本体右側のスロットに収納でき、収納・携帯に便利。\n【長期駆動設計】付属のCR2016ボタン電池1個で約100,000回の消去が可能。電池ケースは誤作動防止のネジ固定式（電池交換には別途精密ドライバー必要）で安心設計。0～40℃の室内環境に対応し、オフィス・学習・アイデアメモに最適な耐久設計です。 › もっと見る\nASIN B0H3JWLCC8\nおすすめ度\n5.0 5つ星のうち5.0\n(2)\n5つ星のうち5.0\nAmazon 売れ筋ランキング\n文房具・オフィス用品 - 2,904位 (文房具・オフィス用品の売れ筋ランキングを見る)\nデジタルメモ - 2位\nAmazon.co.jp での取り扱い開始日 2026/6/1\nブランド\n‎Elegirme\n商品の数量\n‎1\nサイズ\n‎6.5\"(本体のみ)\n付属品\n‎CR2016ボタン電池（内蔵）*1, 取扱説明書*1, 専用ペン*1, 電子パッド*1\n梱包サイズ\n‎15.9 x 8.5 x 0.9 cm; 60 g\n細断形状\n‎ロック機能, ワンタッチ消去, 極細線幅, 超軽量\nElegirmeのストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "【雑誌掲載】Elegirme 電子メモパッド デジタルノート 6.5インチ 超薄型 0.5mm極細線幅",
+          "url": "https://www.amazon.co.jp/dp/B0H3JWLCC8",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "FVEREY 16インチ電子メモパッド 描画色ストラップ付 お絵描きボード 電池式 お絵かき 電子パッド 、ワンタッチ、ペンと消去板、デジタルメモ帳、タブレット、図面、タブレット、伝言板 学生 勉強 ビジネス 業務用",
+      "asin": "B0D9B73RV2",
+      "brand": "FVEREY",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71QmNWsBiZL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "erase",
+        "retention",
+        "writing_area"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0D9B73RV2",
+      "provisional": false,
+      "ref": "p2",
+      "search_key": "FVEREY 16インチ電子メモパッド 描画色ストラップ付 お絵描きボード 電",
+      "selection_score": 0.6,
+      "sources": [
+        {
+          "brand": "FVEREY",
+          "excerpt": "FVEREY 16インチ電子メモパッド 描画色ストラップ付 お絵描きボード 電池式 お絵かき 電子パッド 、ワンタッチ、ペンと消去板、デジタルメモ帳、タブレット、図面、タブレット、伝言板 学生 勉強 ビジネス 業務用\nこの商品について\n【製品仕様】サイズ：このデジタルメモパッドは、特別な耐衝撃性のABS素材でできており、損傷しにくい頑丈なケーシングを備えています、1メートルで落としても壊れず。ペン本体はpom素材でできており、耐摩耗性、耐熱性、耐衝撃性があります。ペン本体の表面がなめらかで握り心地が良く、長時間の書き込みでも疲れにくいです。お子様にもお使いいただけます。ペンの紛失を防ぐため、筆談ボードの右上にペンスロットを設計しました。軽量で持ち運びに便利なデザインで、旅行の負担を軽減し、いつでもどこでも便利に使える！16インチ/外径寸法：330×262×8mm/液晶寸法：310×215mm/材質：ABS、POM、LCD液晶/セット内容：本体×１、スタイラスペン×１、ボタン電池（CR2025）1個、説明書×１。新しいマットな質感、シンプルな黒のボーダー、快適な丸いエッジのデザイン。7mmの超薄型ボディ、わずか303g。\n【ワンタッチで消去●低消費電力】FVEREY 電子パッドにはスイッチング電源がなく、いつでも書き込むことができ、使いやすいです。付属のスタイラスペンを取り出して、液晶部分の書き込みエリアに直接書き込んでください。メモパッドの中央ボタンをクリックすると、1つのキーで画面の内容を簡単に消去できます。機密事項や顧客情報を即座に削除できるため、情報漏えいを防ぐことができます。ロック機能は、偶発的な削除を回避し、ワンクリックで瞬間をフリーズし、あなたの創造性を保持し、共有します。FVEREYデジタルメモは、環境に合わせて設計されています。当社の16インチ大画面電子パッドは、500,000回以上再利用できるため、紙のコストを削減できます。書き込み中は電力を消費せず、画面をクリアするときも電力をほとんど消費しないため、頻繁にバッテリーを交換する必要はありません。（電池カバーはネジで補強されているので、コイン電池が滑り落ちず、お子様にも安心です。）\n【広く使われている16インチ電子メモパッド】 これは、子供、学生、デザイナー、ビジネスマン、教師、学生、芸術家へのプレゼントに最適です。FVEREY電子メモは、学習、作業、創造性を次のレベルに引き上げるように設計されています。この電子メモは、あらゆる年齢層の方に適しています、さまざまなシーンで使用できます。ビジネスマンはビジネス交渉（ビジネスプランの完成）、会議の議事録/やることリストの作成、電話メモの作成、インスピレーションの取得、マインドマップの描画に使用できます。学生は数学計算、描画、単語の口述に使用できます。子供は次のことができます。落書きを描いたり、子供の想像力と創造性を育んだりするために使用されます。親と教師は、それを早期教育ツールとして使用したり、子供たちが宿題をするのを手伝ったりすることができます。また、聴覚障害者のための日常のコミュニケーションツールとして使用することもできます。磁石と一緒に使用すると、冷蔵庫に取り付けて、メモボード、メッセージボード、ショッピングリストとして使用できます。\n【面白くて目に優しいカラフルスクリーン】FVEREY 筆圧が大きいほど、手書きは太くなります。特殊なスタイラス（POM素材：耐摩耗性、快適性）を装備しているため、より優れた筆記体験を実現し、筆記の遅延をなくすことができます。電子メモ帳によって描かれた線ははっきりと目を引くものであり、手書きの太さは筆圧の影響を受けます。電子メモパッドは、最新のハイテクフレキシブル液晶技術を採用しています。液晶画面はカラフルで、より生き生きとした気持ちをもたらし、液晶コントラストが従来より50％アップなので、色がもっと鮮明となり、青色光のないフレキシブルスクリーン自体は発光しないため、長期間使用した後の目の疲れを効果的に防ぎます。インクなし、放射線フリー、安全で衛生。鉛筆、チョーク、絵具が微量の毒素を含んで、長時聞で書くと、子供の健康に影響を与える。手書を代わるお絵かきボードが体と目に優しい。従来の紙の筆記体験と液晶画面の滑らかな体験を兼ね備えています。紙のメモ帳と違って、書いたものを消去できます。用紙コストの削減にも貢献、環境にもやさしい、ペンと紙の経費も節約する。森を守ることは、未来を守ること。\n【アフターサービス】この商品は1年間の保証が付いています。製品が出荷される前に、当社はすでに十分な検査を行いました。もしあなたが受け取った製品に破損、破断、汚れなどの問題があれば、輸送過程による可能性があります。すぐに当社に連絡してください。当社は最高のアフターサービスを使用して、あなたが直面している問題を解決するために、できるだけ早く無料で交換したり、全額返金したりします。連絡先：アマゾンページの「アカウントサービス」→「注文履歴」→「販売者への連絡」をクリックして、弊社にメールを送ります。弊社はメールを受け取った最初の時間にご連絡します。 › もっと見る › もっと見る\nブランド FVEREY\n色 ホワイト\n材質 アクリロニトリルブタジエンスチレン（ABS）\n製品の推奨用途 ホーム\n取り付けタイプ ウォールマウント\nブランド: FVEREY",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "FVEREY 16インチ電子メモパッド 描画色ストラップ付 お絵描きボード 電池式 お絵かき 電子パッド 、ワンタッチ、ペンと消去板、デジタルメモ帳、タブレット、図面、タブレット、伝言板 学生 勉強 ビジネス 業務用",
+          "url": "https://www.amazon.co.jp/dp/B0D9B73RV2",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "15インチ電子メモパッド(ブラック) 描画色(単色) 【映像クリエイター推奨】ストラップ付 お絵描きボード 電池式 大画面 電子パッド McCyeks",
+      "asin": "B0CX8XRVH1",
+      "brand": "McCyeks",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71mHZ23ytPL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0CX8XRVH1",
+      "provisional": false,
+      "ref": "p3",
+      "search_key": "McCyeks 15インチ電子メモパッド(ブラック) 描画色(単色) ストラップ",
+      "sources": [
+        {
+          "brand": "McCyeks",
+          "excerpt": "15インチ電子メモパッド(ブラック) 描画色(単色) 【映像クリエイター推奨】ストラップ付 お絵描きボード 電池式 大画面 電子パッド McCyeks\nこの商品について\n本体カラー：ブラック、描画色：単色\n✅【ペン探しのストレスゼロへ！紛失防止ストラップ付】「ペンがどこかにいった！」という経験はありませんか？本製品は本体とペンを繋ぐ伸縮性のあるストラップが付属しており、紛失のリスクを大幅に減らせます。「今回は紐付きで安心」とのお声も多数。お子様が夢中で遊んでも、ペンは常に手元にあるので安心です。\n✅【広々描ける15インチ大画面】「もっと描きたいのにスペースが足りない…」そんな悩みも解決。A4サイズより大きい15インチで、のびのびと自由な発想を広げられます。「数式を全部書ける」「図形も大きく描けてわかりやすい」と大好評。\n✅【滑らかな書き心地】筆圧に合わせて線の太さを調整できます。「スラスラ書けて気持ちいい」と好評で、お絵描きはもちろん、文字の練習にも最適。ボタン一つで瞬時に消せるので、集中力を途切れさせません。ボタン電池も内蔵（交換可能）されていますので届いてすぐ使えるのも嬉しいポイントです。\n✅【子育てから仕事までマルチに活躍】お子様のお絵描きや漢字練習はもちろん、家族への伝言、筆談ボードなど使い方は無限大。ホワイトボードと違い、マーカーのにおいや消しカスが出ないので、リビングや食卓でも清潔に使えます。「薄くて軽いので持ち運びも楽」と場所を選ばず活躍します。\n✅【目と家計に優しい安心設計】バックライトを使わないので、ブルーライトの心配がなく、長時間使っても目が疲れにくい設計です。紙やインクを消費しないので、環境にもお財布にも優しいのが特徴。「子供に安心して渡せる」との声も。消去ロック機能付きで、大切なメモを誤って消す心配もありません。 ※本製品には、本体や他の媒体にデータとして保存する機能はありません › もっと見る\nブランド McCyeks\nオペレーティングシステム なし\n特徴 消去ロック機能\n画面サイズ 15 インチ\n色 ブラック\nブランド: McCyeks",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "15インチ電子メモパッド(ブラック) 描画色(単色) 【映像クリエイター推奨】ストラップ付 お絵描きボード 電池式 大画面 電子パッド McCyeks",
+          "url": "https://www.amazon.co.jp/dp/B0CX8XRVH1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "エレコム 電子メモパッド 電子メモ帳 12インチ ロック機能付き ワンタッチ消去 電池交換可能 単語帳 筆談ボード 伝言ボード 書いて消せるボード ブラック EP-12BK-AZ",
+      "asin": "B0CJQV2317",
+      "brand": "エレコム(ELECOM)",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51YFZwBV8KL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0CJQV2317",
+      "provisional": false,
+      "ref": "p4",
+      "search_key": "エレコム(ELECOM) エレコム 電子メモパッド 電子メモ帳 12インチ ロック機能付き",
+      "sources": [
+        {
+          "brand": "エレコム(ELECOM)",
+          "excerpt": "エレコム 電子メモパッド 電子メモ帳 12インチ ロック機能付き ワンタッチ消去 電池交換可能 単語帳 筆談ボード 伝言ボード 書いて消せるボード ブラック EP-12BK-AZ\nこの商品について\n書いて消して繰り返し使える、12インチのデジタルメモパッドです。メモだけでなく、イラストやお子さんのお絵かきにも使える大画面。はめ込みタイプの筐体設計と強度の高いフィルムで、耐久性に優れた長く使える本体構造です。付属の専用タッチペンは持ちやすい丸型形状で、ペン先は細く、細かい字もなめらかに書けます。\nメモだけでなく、イラストやお子さんのお絵かきにも使える大画面の12インチです。\nワンタッチで画面消去が可能。本体中央のボタンを押すだけで、書いたものを簡単に消せます。\nスライド式のロック機能が搭載されているので、ボタンをスライドするだけで大切な情報をうっかり消してしまうミスを防ぎます。\nはめ込みタイプの筐体設計と強度の高いフィルムで、耐久性に優れた長く使える本体構造です。フィルムやボタンは10万回の耐久テストで検証済みです。 › もっと見る\nブランド エレコム(ELECOM)\n色 ブラック\n材質 高強度フィルム。\n製品の推奨用途 オフィス、教室、作業スペース。\n取り付けタイプ テーブルトップマウント\nエレコム(ELECOM)のストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "エレコム 電子メモパッド 電子メモ帳 12インチ ロック機能付き ワンタッチ消去 電池交換可能 単語帳 筆談ボード 伝言ボード 書いて消せるボード ブラック EP-12BK-AZ",
+          "url": "https://www.amazon.co.jp/dp/B0CJQV2317",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "prendre 電子メモパッド 8.5インチ 感圧式 LCD 液晶 消去ロック機能 電池交換対応 メモ帳 メッセージ ボード 伝言板 繰り返し （ブラック） PR-LCDPAD02-BK",
+      "asin": "B09N11MBML",
+      "brand": "prendre",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71NaMXZZ6gL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B09N11MBML",
+      "provisional": false,
+      "ref": "p5",
+      "search_key": "prendre 電子メモパッド 8.5インチ 感圧式 LCD 液晶 消去ロック機",
+      "sources": [
+        {
+          "brand": "prendre",
+          "excerpt": "prendre 電子メモパッド 8.5インチ 感圧式 LCD 液晶 消去ロック機能 電池交換対応 メモ帳 メッセージ ボード 伝言板 繰り返し （ブラック） PR-LCDPAD02-BK\nこの商品について\n8.5インチの画面にスケジュールなどのメモを書いたりお絵かきをしたりなど用途は色々!!\n8.5インチの感圧式LCD液晶で筆圧を感知することで文字などを書くことができます。\n本体についている消去ボタンを押すだけで簡単に画面に書いた文字を消去できます。\n誤消去を防ぐロック機能がついており、ロック中は画面が消去できなくなるので、誤ってメモなどを消したくないときに便利な機能です。\nサイズ(約)：22.7×14.6×0.5cm　電池：CR2025(テスト電池付属)　入力圧力(約)：100～200g　動作温度(約)：0～40度　材質：ABS　重量(約)：94g › もっと見る\nブランド prendre\n色 ブラック\n材質 アクリロニトリルブタジエンスチレン（ABS）\n製品の推奨用途 オフィス\n取り付けタイプ テーブルトップマウント\nブランド: prendre",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "prendre 電子メモパッド 8.5インチ 感圧式 LCD 液晶 消去ロック機能 電池交換対応 メモ帳 メッセージ ボード 伝言板 繰り返し （ブラック） PR-LCDPAD02-BK",
+          "url": "https://www.amazon.co.jp/dp/B09N11MBML",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "電子メモパッド 電子メモ帳 デジタルメモ 8.5インチ 超軽量94g 薄型0.5cm ロック機能搭載 ワンタッチ消去 電池交換可能 ペン収納＆紛失防止ストラップ付き 感圧式LCD液晶 電子メモ お絵かきボード 筆談ボード 伝言板 学習メモ ビジネス 家庭用 (ブラック, 8.5インチ)",
+      "asin": "B0H28PTD9P",
+      "brand": "UPBEATLIFE",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61+AkTlHHAL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "erase",
+        "retention",
+        "writing_area"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H28PTD9P",
+      "provisional": false,
+      "ref": "p6",
+      "search_key": "UPBEATLIFE 電子メモパッド 電子メモ帳 デジタルメモ 8.5インチ 超軽量9",
+      "selection_score": 0.6,
+      "sources": [
+        {
+          "brand": "UPBEATLIFE",
+          "excerpt": "電子メモパッド 電子メモ帳 デジタルメモ 8.5インチ 超軽量94g 薄型0.5cm ロック機能搭載 ワンタッチ消去 電池交換可能 ペン収納＆紛失防止ストラップ付き 感圧式LCD液晶 電子メモ お絵かきボード 筆談ボード 伝言板 学習メモ ビジネス 家庭用 (ブラック, 8.5インチ)\n【超軽量＆薄型設計でどこでもサッと使える】 電子ノートとして、メモ・伝言・アイデア整理・お絵かきなど幅広いシーンで活躍する8.5インチ電子メモパッドです。約94gの軽量設計＆厚さ約0.5cmのスリムボディで、バッグやリュックにもすっきり収納可能。B5ノート感覚で持ち運べるため、自宅・学校・オフィス・外出先でも気軽に使用できます。必要な時にサッと取り出してすぐ書ける、毎日の暮らしに便利なデジタルメモです。\n【ワンタッチ消去＆ロック機能搭載】 電子メモパッドは、ボタンを押すだけで画面を瞬時に消去できるシンプル操作。紙や消しゴム不要で、何度でも繰り返し使えるため、メモ帳代わりとしても便利です。さらに、背面には誤消去を防ぐロックスライドスイッチを搭載。大切なメモや伝言、アイデアを書き残したい時も、うっかり消してしまう心配を軽減できます。必要な時にすぐ書いて、すぐ消せる便利な電子メモです。\n【なめらかに書ける見やすいLCD液晶】 電子メモは感圧式LCD液晶パネルを採用し、筆圧に合わせて線の太さが変化する自然な書き心地を実現。付属の専用タッチペンで、文字・図形・イラストもなめらかに筆記できます。視認性が高く、長時間使用しやすいシンプルな画面設計で、家庭用の伝言板、筆談ボード、学習メモ、お絵かきボードなど幅広い用途に対応。紙を使わず繰り返し使用できるため、ペーパーレスにも役立ちます。※輸送や保管時の圧力により、初回使用時に画面へ筆跡のような跡が表示される場合がありますが、異常ではありません。消去ボタンを押していただくことで消去できます。\n【電池交換式＆ペン紛失防止ストラップ付き】 CR2025コイン電池交換式を採用し、長く繰り返し使える電子メモ帳です。電池交換に対応しているため、買い替えの手間を減らし、日常使いにも便利。専用タッチペンは本体収納式で、さらにペン紛失防止ストラップ付き。持ち運び時や保管時にもペンをなくしにくく、使いたい時にすぐ使用できます。ビジネスや家庭など、さまざまなシーンで使いやすい設計です\n【30日間の長期安心保証】 ご購入後30日以内の初期不良につきましては、返金または交換にて対応いたします。万が一、商品に不具合やご不明な点がございましたら、Amazonの「注文履歴」より該当のご注文を選択し、「注文の詳細」→「商品について質問する」からご連絡ください。確認次第、迅速かつ誠意をもって対応いたします。 › もっと見る\nASIN B0H28PTD9P\nおすすめ度\n4.1 5つ星のうち4.1\n(50)\n5つ星のうち4.1\nAmazon 売れ筋ランキング\n文房具・オフィス用品 - 4,339位 (文房具・オフィス用品の売れ筋ランキングを見る)\nデジタルメモ - 7位\nAmazon.co.jp での取り扱い開始日 2026/5/19\nブランド\n‎UPBEATLIFE\n製品型番\n‎DMP0519\n色\n‎ブラック\n商品の数量\n‎20\nサイズ\n‎8.5インチ\n製品サイズ\n‎22.6 x 14.4 x 0.5 cm; 150 g\nUPBEATLIFEのストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "電子メモパッド 電子メモ帳 デジタルメモ 8.5インチ 超軽量94g 薄型0.5cm ロック機能搭載 ワンタッチ消去 電池交換可能 ペン収納＆紛失防止ストラップ付き 感圧式LCD液晶 電子メモ お絵かきボード 筆談ボード 伝言板 学習メモ ビジネス 家庭用 (ブラック, 8.5インチ)",
+          "url": "https://www.amazon.co.jp/dp/B0H28PTD9P",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "selection": {
+    "brand_count": 6,
+    "comparison_axes_covered": [
+      "erase",
+      "retention",
+      "writing_area"
+    ],
+    "content_duplicates_removed": [
+      {
+        "asin": "B0H3JWLCC8",
+        "duplicate_of_asin": "B0H3JWLCC8",
+        "reason": "normalized_title_exact"
+      },
+      {
+        "asin": "B0D9B73RV2",
+        "duplicate_of_asin": "B0D9B73RV2",
+        "reason": "normalized_title_exact"
+      },
+      {
+        "asin": "B0CX8XRVH1",
+        "duplicate_of_asin": "B0CX8XRVH1",
+        "reason": "normalized_title_exact"
+      },
+      {
+        "asin": "B0CJQV2317",
+        "duplicate_of_asin": "B0CJQV2317",
+        "reason": "normalized_title_exact"
+      },
+      {
+        "asin": "B09N11MBML",
+        "duplicate_of_asin": "B09N11MBML",
+        "reason": "normalized_title_exact"
+      }
+    ],
+    "price_used_as_constraint_only": true,
+    "retained_qa_passed_asins": [
+      "B09N11MBML",
+      "B0CJQV2317",
+      "B0CX8XRVH1",
+      "B0D9B73RV2",
+      "B0H3JWLCC8"
+    ],
+    "targeted_replacement": true
+  },
+  "slug": "electronic-writing-tablets"
+}

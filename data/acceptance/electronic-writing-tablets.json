@@ -1,0 +1,164 @@
+{
+  "contract_version": "bf7d78a8237179bb977f6ca29f54f732162e9d387723eb0c936bc77316835b8f",
+  "evidence_sha256": "528c40ea182f19e0b03e0ba40b015b69be30b3896f6bb62d42fe30aa7f16331e",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 14848,
+    "input_tokens": 28779,
+    "member_binding_revision": 4,
+    "output_tokens": 1934,
+    "reasoning_effort": "low",
+    "reasoning_output_tokens": 627,
+    "session_id": "01a17048-a0d2-7660-87ab-fb0f0cf9e75a",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "f52390722f1ae89da95203dbb354395138bdf5b7d34c66b596c224c0751240c1",
+  "review": {
+    "buying_guidance": true,
+    "claims_grounded": true,
+    "complete_comparison": true,
+    "distinct_products": true,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "writing_area",
+            "quote": "広々とした14.4×7.4cm表示領域"
+          },
+          {
+            "axis_id": "erase",
+            "quote": "消去ロック機能"
+          },
+          {
+            "axis_id": "retention",
+            "quote": "電池交換には別途精密ドライバー必要"
+          }
+        ],
+        "identity_key": "Elegirme 電子メモパッド デジタルノート 6.5インチ",
+        "identity_quote": "Elegirme 電子メモパッド デジタルノート 6.5インチ",
+        "reason": "表示領域の実寸、消去ロック、電池と交換時の条件が明記され、小型の携帯用メモとして比較できる。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "writing_area",
+            "quote": "液晶寸法：310×215mm"
+          },
+          {
+            "axis_id": "erase",
+            "quote": "メモパッドの中央ボタンをクリックすると、1つのキーで画面の内容を簡単に消去できます。"
+          },
+          {
+            "axis_id": "retention",
+            "quote": "ボタン電池（CR2025）1個"
+          }
+        ],
+        "identity_key": "FVEREY 16インチ電子メモパッド",
+        "identity_quote": "FVEREY 16インチ電子メモパッド",
+        "reason": "液晶寸法、全消去とロック、電池型番があり、広い筆記面を求める用途との適合を判断できる。宣伝上の性能値を本文は実証済みとして扱っていない。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "writing_area",
+            "quote": "画面サイズ 15 インチ"
+          },
+          {
+            "axis_id": "erase",
+            "quote": "消去ロック機能付き"
+          },
+          {
+            "axis_id": "retention",
+            "quote": "本体や他の媒体にデータとして保存する機能はありません"
+          }
+        ],
+        "identity_key": "電子パッド McCyeks",
+        "identity_quote": "15インチ電子メモパッド(ブラック) 描画色(単色) 【映像クリエイター推奨】ストラップ付 お絵描きボード 電池式 大画面 電子パッド McCyeks",
+        "reason": "15インチの単色描画、消去ロック、データ保存不可が明記される。筆記面の実寸と電池型番が不明であることも本文は明示している。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "writing_area",
+            "quote": "12インチのデジタルメモパッド"
+          },
+          {
+            "axis_id": "erase",
+            "quote": "スライド式のロック機能が搭載されている"
+          },
+          {
+            "axis_id": "retention",
+            "quote": "電池交換可能"
+          }
+        ],
+        "identity_key": "エレコム 電子メモパッド",
+        "identity_quote": "エレコム 電子メモパッド 電子メモ帳 12インチ ロック機能付き ワンタッチ消去 電池交換可能 単語帳 筆談ボード 伝言ボード 書いて消せるボード ブラック EP-12BK-AZ",
+        "reason": "型番EP-12BK-AZで識別でき、12インチ画面、中央の消去ボタン、スライド式ロックを根拠に比較できる。電池型番や保存機能は本文で不明としている。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "writing_area",
+            "quote": "8.5インチの感圧式LCD液晶"
+          },
+          {
+            "axis_id": "erase",
+            "quote": "ロック中は画面が消去できなくなる"
+          },
+          {
+            "axis_id": "retention",
+            "quote": "電池：CR2025(テスト電池付属)"
+          }
+        ],
+        "identity_key": "prendre 電子メモパッド",
+        "identity_quote": "prendre 電子メモパッド 8.5インチ 感圧式 LCD 液晶 消去ロック機能 電池交換対応 メモ帳 メッセージ ボード 伝言板 繰り返し （ブラック） PR-LCDPAD02-BK",
+        "reason": "型番PR-LCDPAD02-BKで識別でき、感圧式画面、消去ロック、CR2025電池が確認できる。本体寸法を筆記面寸法と取り違えていない。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "writing_area",
+            "quote": "電子メモは感圧式LCD液晶パネルを採用"
+          },
+          {
+            "axis_id": "erase",
+            "quote": "背面には誤消去を防ぐロックスライドスイッチを搭載"
+          },
+          {
+            "axis_id": "retention",
+            "quote": "CR2025コイン電池交換式を採用"
+          }
+        ],
+        "identity_key": "DMP0519",
+        "identity_quote": "‎DMP0519",
+        "reason": "出典の製品型番で識別でき、8.5インチの感圧式画面、背面ロック、交換式CR2025とペン保持方法が比較に使える。重量の食い違いも本文で留保している。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reason": "6製品は出典中のブランド・型番または識別可能な製品名で区別でき、いずれも電子メモパッドとして題材に合う。筆記面、消去操作、電源・保存可否について出典に沿った比較と具体的な用途別助言があり、不明点も断定していない。",
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}
