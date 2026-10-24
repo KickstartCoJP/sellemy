@@ -98,10 +98,10 @@ def _planning_provider(name: str) -> tuple[str, list[str], str, bool]:
     if configured:
         command = shlex.split(configured)
     elif name == 'primary':
-        command = shlex.split(os.environ.get('SELLEMY_PLANNING_COMMAND', '').strip())
+        command = shlex.split(os.environ.get('SELLEMY_PLANNING_COMMAND', '/opt/homebrew/bin/codex').strip())
     else:
         command = []
-    default_model = os.environ.get('SELLEMY_PLANNING_MODEL', '') if name == 'primary' else ''
+    default_model = os.environ.get('SELLEMY_PLANNING_MODEL', 'gpt-6-sol') if name == 'primary' else ''
     model = os.environ.get(f'SELLEMY_PLANNING_{upper}_MODEL', default_model).strip()
     certified = name == 'primary' or os.environ.get('SELLEMY_PLANNING_SECONDARY_CERTIFIED', '').lower() in ('1', 'true', 'yes')
     return kind, command, model, certified

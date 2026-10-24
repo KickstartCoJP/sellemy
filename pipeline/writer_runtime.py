@@ -81,7 +81,7 @@ class WriterProvider:
 
 
 def _default_executable() -> str | None:
-    return next((str(p) for p in (Path('/opt/homebrew/bin/claude'), Path('/usr/local/bin/claude')) if p.is_file()), shutil.which('claude'))
+    return next((str(p) for p in (Path('/opt/homebrew/bin/codex'), Path('/usr/local/bin/codex')) if p.is_file()), shutil.which('codex'))
 
 
 def _provider(name: str) -> WriterProvider:
@@ -94,9 +94,9 @@ def _provider(name: str) -> WriterProvider:
         command = (executable,) if executable else ()
     else:
         command = ()
-    model = os.environ.get(f'SELLEMY_WRITER_{upper}_MODEL', 'sonnet' if name == 'primary' else '').strip()
+    model = os.environ.get(f'SELLEMY_WRITER_{upper}_MODEL', 'gpt-6-sol' if name == 'primary' else '').strip()
     certified = name == 'primary' or os.environ.get('SELLEMY_WRITER_SECONDARY_CERTIFIED', '').lower() in ('1', 'true', 'yes')
-    kind = os.environ.get(f'SELLEMY_WRITER_{upper}_KIND', 'claude').strip().lower()
+    kind = os.environ.get(f'SELLEMY_WRITER_{upper}_KIND', 'codex' if name == 'primary' else 'claude').strip().lower()
     return WriterProvider(name=name, command=command, model=model, certified=certified, kind=kind)
 
 
