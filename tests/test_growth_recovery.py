@@ -73,11 +73,22 @@ class GrowthRecoveryTests(unittest.TestCase):
         self._job('healthy')
         self.assertEqual(gr.eligible_job()['slug'], 'healthy')
 
+    def test_query_variation_without_new_evidence_is_held(self):
+        self._job('query-only')
+        progress={'candidates':[{'asin':'A1','sources':[{'verified':True,'excerpt':'fixed'}]}], 'queries':[{'query':'first'}]}
+        gr.write_artifact('query-only','product-search-progress.json',progress)
+        gr.request_product_reselection('query-only',['unchanged facts'])
+        progress['queries'].append({'query':'second'})
+        gr.write_artifact('query-only','product-search-progress.json',progress)
+        held=gr.request_product_reselection('query-only',['unchanged facts'])
+        self.assertEqual(held['current_stage'],'PRODUCT_HOLD')
+        self.assertEqual(held['retry_count_by_stage']['product'],1)
+
     def test_changed_product_candidates_do_not_trigger_hold(self):
         self._job('changed')
-        gr.write_artifact('changed', 'product-search-progress.json', {'candidates': [{'asin':'A1'}]})
+        gr.write_artifact('changed', 'product-search-progress.json', {'candidates': [{'asin':'A1','sources':[{'verified':True,'excerpt':'fact A1'}]}]})
         gr.request_product_reselection('changed', ['incomplete'])
-        gr.write_artifact('changed', 'product-search-progress.json', {'candidates': [{'asin':'A1'}, {'asin':'B2'}]})
+        gr.write_artifact('changed', 'product-search-progress.json', {'candidates': [{'asin':'A1','sources':[{'verified':True,'excerpt':'fact A1'}]}, {'asin':'B2','sources':[{'verified':True,'excerpt':'fact B2'}]}]})
         row = gr.request_product_reselection('changed', ['incomplete'])
         self.assertEqual(row['current_stage'], 'WRITER_PENDING')
         self.assertEqual(row['retry_count_by_stage']['product'], 2)

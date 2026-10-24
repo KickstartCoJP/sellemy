@@ -404,9 +404,11 @@ def request_product_reselection(slug: str, reasons: list[str]) -> dict:
     # A source/candidate change permits a new attempt; the identical failed
     # search state must not consume another QA turn or block other articles.
     signal = {
-        'asins': sorted(str(x.get('asin')) for x in progress.get('candidates', []) if isinstance(x, dict)),
-        'researched': sorted(progress.get('researched_asins') or []),
-        'queries': progress.get('queries') or [],
+        'qualified_evidence': sorted((str(x.get('asin')), hashlib.sha256(
+            json.dumps([z for z in (x.get('sources') or []) if isinstance(z, dict) and z.get('verified') is True and str(z.get('excerpt') or '').strip()],
+                       sort_keys=True, ensure_ascii=False, default=str).encode()).hexdigest())
+            for x in progress.get('candidates', []) if isinstance(x, dict)
+            and any(isinstance(z, dict) and z.get('verified') is True and str(z.get('excerpt') or '').strip() for z in x.get('sources') or [])),
         'reviewed': sorted(progress.get('reviewed_sets') or []),
         'reason': sorted(set(str(x) for x in reasons)),
     }

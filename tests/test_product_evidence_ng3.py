@@ -11,7 +11,7 @@ def test_product_evidence_three_quality_ng_not_infrastructure():
   s=growth_recovery.mark_failure('insufficient-product-facts',stage='product',failure_class='runtime_infrastructure',failure_code='TRANSPORT',reason='timeout')
   assert s.get('quality_ng_by_gate',{}).get('product',0)==0
   for i in range(3):
-   growth_recovery.write_artifact('insufficient-product-facts','product-search-progress.json',{'candidates':[{'asin':f'A{n}'} for n in range(i+1)]})
+   growth_recovery.write_artifact('insufficient-product-facts','product-search-progress.json',{'candidates':[{'asin':f'A{n}','sources':[{'verified':True,'excerpt':f'fact {n}'}]} for n in range(i+1)]})
    s=growth_recovery.request_product_reselection('insufficient-product-facts',['facts insufficient'])
    assert s['status']=='ACTIVE'
   assert s['quality_ng_by_gate']['product']==3
