@@ -1,7 +1,7 @@
 """Fresh independent Sol semantic review within Product/Evidence and Review stages.
 
-Uses the authorized BU-002 Writer Member account only for identity, but creates a
-new isolated CLI session; never reads the Writer's output conversation/history.
+Uses the authorized BU-002 Reviewer Member for an isolated CLI session;
+never reads the Writer's output conversation/history.
 """
 from __future__ import annotations
 import json
@@ -30,7 +30,7 @@ def generate(stage: str, schema: dict, prompt: str) -> tuple[dict, dict]:
     try:
         return generate_isolated(
             tuple(command), model, schema, prompt, timeout=int(os.environ.get('SELLEMY_REVIEW_TIMEOUT_SECONDS', '600')),
-            root=ROOT, surface_key='bu-codex-sellemy-writer', stage='independent_review',
+            root=ROOT, surface_key='bu-codex-sellemy-reviewer', stage='independent_review',
         )
     except CodexProviderError as exc:
         raise ResponsesError('Independent Codex review unavailable: ' + str(exc), kind='config') from exc

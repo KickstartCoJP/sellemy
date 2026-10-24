@@ -864,6 +864,8 @@ def generate_isolated(command: tuple[str, ...], model: str, schema: dict, prompt
                       usage_key: str = '') -> tuple[dict, dict]:
     """LINE-style stage execution: fresh, ephemeral thread with only the current Brief/task."""
     root = Path(root).resolve()
+    from api_role_binding import require_codex_route
+    require_codex_route(surface_key, stage)
     # The persistent Member binding identifies the authorized role, not the
     # transcript to resume. Every article/image still gets its own new session.
     binding = _member_binding(surface_key)
@@ -933,6 +935,8 @@ def generate_persistent(command: tuple[str, ...], model: str, schema: dict, prom
     if not command or not model:
         raise CodexProviderError('Codex command or model is missing')
     root = Path(root).resolve()
+    from api_role_binding import require_codex_route
+    require_codex_route(surface_key, stage)
     state_path, brief_path = _runtime_paths(root, surface_key)
     _ensure_brief(brief_path, surface_key)
     binding = _member_binding(surface_key)
