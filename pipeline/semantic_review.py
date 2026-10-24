@@ -96,6 +96,21 @@ def independent_review(evidence, payload=None):
                         'Do not change the facts to force acceptance; if an identity '
                         'cannot be supported, explicitly mark adequate_facts false.')
         review, metadata = generate('writer', REVIEW_SCHEMA, correction)
+    # Individual PASS and whole-set FAIL can coexist (e.g. two variants of the
+    # same series). Require an actionable, source-grounded reason once rather
+    # than replaying hundreds of searches with all six products pinned.
+    if payload is None and len(review.get('products') or []) == 6 and all(
+        isinstance(x, dict) and x.get('adequate_facts') is True and x.get('topic_fit') is True
+        for x in review['products']
+    ) and (review.get('distinct_products') is False or review.get('sufficient_evidence') is False):
+        correction = (prompt + '\nCONTRADICTORY WHOLE-SET QA: All six individual product facts and topic fit PASS, '
+                      'but distinct_products or sufficient_evidence is false. Recheck this assessment '
+                      'independently. If two products are the same base series, identify exact refs and '
+                      'source-backed shared manufacturer/series in reason; if evidence is insufficient, '
+                      'identify the missing decision-critical facts and affected refs. Do not force PASS. '
+                      'Do not repeat a generic reason. Previous result (untrusted): '
+                      + json.dumps(review, ensure_ascii=False))
+        review, metadata = generate('writer', REVIEW_SCHEMA, correction)
     # Facts take precedence over a contradictory status. Never escalate writing
     # when the review's own identity/source/factual checks require reselection.
     factual_view = {**review, 'status': 'ACCEPTED', 'needs_product_reselection': False}
