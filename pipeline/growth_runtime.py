@@ -906,6 +906,12 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
                 else:
                     known_bad.add(asin)
         pin_set = set(pinned)
+        if len(pin_set) == 6 and latest:
+            previous_review = read_artifact(slug, latest[0].name, {}) or {}
+            if previous_review.get('issues'):
+                from growth_recovery import hold_product_review_conflict
+                hold_product_review_conflict(slug, reasons=previous_review['issues'], pinned_asins=pinned)
+                raise GrowthRuntimeError(f'product reviewer criteria conflict held for {slug}')
         if latest and not (read_artifact(slug, 'product-qa-remediation.json', {}) or {}).get('signature'):
             write_artifact(slug, 'product-qa-remediation.json', {
                 'retained_asins': pinned, 'needs_remediation_asins': sorted(known_bad),

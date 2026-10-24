@@ -397,6 +397,25 @@ def retire(slug: str, reason: str) -> dict:
     return _save_state(state, event='RETIRED', detail={'reason': reason})
 
 
+def hold_product_review_conflict(slug: str, *, reasons: list[str], pinned_asins: list[str]) -> dict:
+    """Stop a contradictory six-product QA outcome without losing its evidence."""
+    state = load_job(slug)
+    if state.get('status') != 'ACTIVE':
+        raise ValueError('only active jobs may be placed on product hold')
+    write_artifact(slug, 'product-hold.json', {
+        'reason': 'all six products individually pass, but whole-set QA fails',
+        'issues': reasons, 'retained_asins': sorted(pinned_asins),
+        'resume_condition': 'reviewer criterion conflict resolved or material evidence revision',
+    })
+    state['current_stage'] = 'PRODUCT_HOLD'
+    state['next_retry_at'] = None
+    state['last_failure_class'] = 'missing_evidence'
+    state['last_failure_code'] = 'PRODUCT_REVIEW_CRITERIA_CONFLICT'
+    state['last_failure_reason'] = '; '.join(reasons)[:2000]
+    return _save_state(state, event='PRODUCT_REVIEW_CONFLICT_HOLD',
+                       detail={'pinned_count': len(pinned_asins)})
+
+
 def request_product_reselection(slug: str, reasons: list[str]) -> dict:
     # Control outcome inside the existing job, not a new queue or state enum.
     from comparison_acceptance import blocked
