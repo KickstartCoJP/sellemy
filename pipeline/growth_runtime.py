@@ -334,7 +334,7 @@ def build_evidence(topic: dict, products: list[dict], selection: dict | None = N
     evidence_products = []
     for index, product in enumerate(products, 1):
         asin = product['asin'].upper()
-        evidence_products.append({'ref': f'p{index}', 'product_id': f'AMZ-{asin}', **product, 'asin': asin, 'search_key': _compact_search_key(product)})
+        evidence_products.append({**product, 'ref': f'p{index}', 'product_id': f'AMZ-{asin}', 'asin': asin, 'search_key': _compact_search_key(product)})
     evidence = {
         'slug': topic['slug'], 'category': topic['category'],
         'canonical_url': f'{BASE}/article/{topic["category"]}/{topic["slug"]}.html',
