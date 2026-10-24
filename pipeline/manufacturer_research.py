@@ -31,7 +31,7 @@ def research_selected(products, *, cache_only=False, prefer_official=False):
         result = subprocess.run([*command, '--search', 'exec', '--ephemeral', '--json',
                                  '--skip-git-repo-check', '--sandbox', 'read-only',
                                  '--model', 'gpt-6-sol', '-'], input=prompt, text=True,
-                                capture_output=True, timeout=140)
+                                capture_output=True, timeout=int(os.environ.get("SELLEMY_OFFICIAL_SEARCH_TIMEOUT_SECONDS", "35")))
         if result.returncode:
             return products
         messages = []
