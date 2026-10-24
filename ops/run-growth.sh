@@ -80,25 +80,8 @@ else:
 PYSWITCH
 )"
 if [[ "$PUBLISH_ALLOWED" == "1" ]]; then
-# Recovery fast-path: while durable unfinished article jobs exist, skip acquisition
-# refresh/admission overhead and spend this invocation directly on the oldest eligible
-# recovery item. Once the queue is empty, normal scheduled operation resumes below.
-RECOVERY_PENDING="$("$PY" - <<'PYRECOVERY'
-import sys
-from pathlib import Path
-root=Path(__import__('os').environ['SELLEMY_ROOT'])
-sys.path.insert(0, str(root/'pipeline'))
-from growth_recovery import all_jobs
-pending=any(r.get('status') not in {'PUBLISHED','DISCARDED','FAILED'} for r in all_jobs())
-print('1' if pending else '0')
-PYRECOVERY
-)"
-if [[ "$RECOVERY_PENDING" == "1" ]]; then
-  "$PY" pipeline/run_with_timeout.py 900 "$PY" pipeline/growth_runtime.py --publish
-  "$PY" pipeline/article_publication_metrics.py >/dev/null || true
-  "$GA4PY" pipeline/actuals_adapter.py --sync || true
-  exit 0
-fi
+# Both eligible recovery and fresh planning use the existing scheduled admission.
+# A backoff/HOLD job does not block new theme selection.
 "$PY" - <<'PYSYNC'
 import sys
 import os
