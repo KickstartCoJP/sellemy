@@ -202,16 +202,26 @@ def _researchable_candidates(products: list[dict], *, cache_only: bool) -> bool:
 
 
 def select_viable_topic(
-    planning_candidates: list[dict] | None, feedback: dict, *, cache_only: bool, max_rounds: int = 3
+    planning_candidates: list[dict] | None, feedback: dict, *, cache_only: bool, max_rounds: int | None = None
 ) -> tuple[dict, list[dict], list[dict]]:
+    # A cap on product research for ONE theme must never become a global cap
+    # on how many fresh themes Planning may explore.
+    from itertools import count
     probes = []
     tried_slugs: set[str] = set()
-    rounds = 1 if planning_candidates is not None else max(1, int(max_rounds))
-    for round_index in range(rounds):
+    rounds = range(1) if planning_candidates is not None else (range(max_rounds) if max_rounds is not None else count())
+    no_new_rounds = 0
+    for round_index in rounds:
         source = planning_candidates if planning_candidates is not None else discover_candidates()
         ranked = [row for row in rank_candidates(source, feedback) if row['slug'] not in tried_slugs]
         if not ranked and planning_candidates is not None:
             raise PlanningError('continuous planning produced no eligible non-duplicate topic; no publish')
+        if not ranked:
+            no_new_rounds += 1
+            if no_new_rounds >= 3:
+                raise PlanningError('planning repeatedly returned no novel theme; inspect planning input, not product retry limit')
+            continue
+        no_new_rounds = 0
         for topic in ranked:
             tried_slugs.add(topic['slug'])
             try:

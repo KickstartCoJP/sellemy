@@ -279,6 +279,19 @@ class ProductViabilityPlanningTests(unittest.TestCase):
         self.assertEqual(planning.call_count, 2)
         self.assertEqual([p['round'] for p in probes], [1, 1, 2])
 
+    def test_uncapped_planning_moves_past_three_failed_themes(self):
+        batches = [[self._topic(f'fresh-{n}')] for n in range(5)]
+        products = [{'asin': f'B0TEST{i:04d}'} for i in range(6)]
+        with (
+            patch.object(growth_runtime, 'discover_candidates', side_effect=batches) as planning,
+            patch.object(growth_runtime, 'rank_candidates', side_effect=batches),
+            patch.object(growth_runtime, 'discover_products', side_effect=[[], [], [], [], products]),
+        ):
+            topic, _, probes = growth_runtime.select_viable_topic(None, {}, cache_only=False)
+        self.assertEqual(topic['slug'], 'fresh-4')
+        self.assertEqual(planning.call_count, 5)
+        self.assertEqual([p['round'] for p in probes], [1, 2, 3, 4, 5])
+
     def test_all_unviable_topics_fail_closed(self):
         topics = [self._topic('first-topic'), self._topic('second-topic')]
         with (
