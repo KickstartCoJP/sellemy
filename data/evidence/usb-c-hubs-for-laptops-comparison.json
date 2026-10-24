@@ -1,0 +1,436 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/usb-c-hubs-for-laptops-comparison.html",
+  "category": "gadget",
+  "comparison_axes": [
+    {
+      "id": "host_compatibility",
+      "keywords": [
+        "USB-C",
+        "対応OS",
+        "対応機種"
+      ],
+      "label": "PC側の端子と対応OS"
+    },
+    {
+      "id": "video",
+      "keywords": [
+        "HDMI",
+        "解像度",
+        "リフレッシュレート"
+      ],
+      "label": "映像出力の対応条件"
+    },
+    {
+      "id": "power_ports",
+      "keywords": [
+        "PD",
+        "給電",
+        "USB端子"
+      ],
+      "label": "給電条件と周辺機器用端子"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/usb-c-hubs-for-laptops-comparison/usb-c-hubs-for-laptops-comparison.png",
+  "product_acceptance": {
+    "contract_version": "bf7d78a8237179bb977f6ca29f54f732162e9d387723eb0c936bc77316835b8f",
+    "evidence_sha256": "45efeea8fd029415f4046e6e01eeab98bff29858c40495f4e34acec992c49982",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 14848,
+      "input_tokens": 30331,
+      "member_binding_revision": 4,
+      "output_tokens": 1179,
+      "reasoning_effort": "low",
+      "reasoning_output_tokens": 0,
+      "session_id": "01a16f75-75c7-7303-b950-b03c4ac4c0f6",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "video",
+              "quote": "・2 x 最大4K@60Hz対応HDMIポート"
+            },
+            {
+              "axis_id": "power_ports",
+              "quote": "実際の出力は最大85Wとなります"
+            }
+          ],
+          "identity_key": "Anker Nano USB-C ハブ (8-in-1, Dual Display)",
+          "identity_quote": "Anker Nano USB-C ハブ (8-in-1, Dual Display)",
+          "reason": "メーカー資料でHDMIを2基、最大4K@60Hz、PCへの最大85W給電と各USB端子の用途を確認できる。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "video",
+              "quote": "最大4K@60Hzの解像度のディスプレイをサポート"
+            },
+            {
+              "axis_id": "power_ports",
+              "quote": "そのうち15Wはハブ本体の動作に使用されます"
+            }
+          ],
+          "identity_key": "Belkin 8-in-1 USB-C ハブ",
+          "identity_quote": "Belkin 8-in-1 USB-C ハブ 100W USB-C PD高速充電",
+          "reason": "確認済みの商品資料に製品名があり、メーカー資料でHDMI、端子構成、給電条件を確認できる。100Wはハブ本体が使う15Wを考慮して説明する必要がある。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "video",
+              "quote": "4K UHD (3840 x 2160) @60Hz"
+            },
+            {
+              "axis_id": "power_ports",
+              "quote": "supports up to 85W USB C pass-through charging"
+            }
+          ],
+          "identity_key": "UGREEN Revodok Pro USB-C Hub 8-in-1",
+          "identity_quote": "UGREEN Revodok Pro USB-C Hub 8-in-1",
+          "reason": "メーカー資料でHDMI出力、USB端子、カードリーダー、最大85Wのパススルー給電を確認できる。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "power_ports",
+              "quote": "ラップトップの USB-C ポートを4xUSB-Cデータ ポートに変換します"
+            },
+            {
+              "axis_id": "video",
+              "quote": "ノートパソコンの充電やビデオ出力はサポートしていません"
+            }
+          ],
+          "identity_key": "UGREEN USB-C ハブ 4ポート4xUSB-C",
+          "identity_quote": "UGREEN USB-C ハブ 4ポート4xUSB-C USB3.2 Gen2 10Gbps高速データ転送",
+          "reason": "確認済みの商品資料に4基のデータ用USB-C端子と、PC給電・映像出力の非対応が明記されている。データ端子の増設を目的とする候補として比較できる。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "host_compatibility",
+              "quote": "【対応OS】Windows 11、Windows 10、macOS、Chrome OS"
+            },
+            {
+              "axis_id": "video",
+              "quote": "DisplayPort 1.2 / HDMI 2.0"
+            },
+            {
+              "axis_id": "power_ports",
+              "quote": "90W以上のUSB-C ACアダプターを使用することで、最大65WをPCへ給電可能"
+            }
+          ],
+          "identity_key": "HP 純正 ユニバーサル USB Type-C ハブ",
+          "identity_quote": "HP 純正 ユニバーサル USB Type-C ハブ",
+          "reason": "確認済みの商品資料に対応OS、映像・周辺機器用端子、給電に必要なACアダプター条件が明記されている。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "host_compatibility",
+              "quote": "Windows 10以降およびmacOSに対応します"
+            },
+            {
+              "axis_id": "video",
+              "quote": "4K@60Hz対応HDMI出力"
+            },
+            {
+              "axis_id": "power_ports",
+              "quote": "USB3.0×3、4K@60Hz対応HDMI出力、100W PD急速充電、SDカード、TFカード、ギガビットLANポートを搭載"
+            }
+          ],
+          "identity_key": "ORVISION USB C ドッキングステーション 8in1",
+          "identity_quote": "ORVISION USB C ドッキングステーション 8in1 タッチスクリーン搭載",
+          "reason": "確認済みの商品資料に対応OS、HDMI、PD、USB端子が明記されている。操作パネルも備えるため、その用途が必要な読者向けの候補として比較できる。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reason": "証拠のみの審査。6製品の識別根拠があり、指定された比較軸について購入判断に使える差を記述できる。p4は映像出力とPC給電に非対応で、p6は操作パネルも備える。記事がないため本文の主張と購入案内は未審査。",
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
+  "products": [
+    {
+      "amazon_title": "Anker Nano USB-C ハブ (8-in-1, Dual Display)",
+      "asin": "B0GQ41RXKL",
+      "brand": "Anker",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51z1t+uBD6L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "host_compatibility",
+        "power_ports",
+        "video"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GQ41RXKL",
+      "provisional": false,
+      "ref": "p1",
+      "search_key": "Anker Nano USB-C ハブ (8-in-1, Dual Disp",
+      "selection_score": 1.23,
+      "sources": [
+        {
+          "brand": "Anker",
+          "excerpt": "Anker Nano USB-C ハブ (8-in-1, Dual Display)\nこの商品について\n8つのポートが1つに：2つのUSB-Cと2つのUSB-A、最大4K（60Hz）対応のHDMIポートに加え、SD & microSDカードスロットなど合計8つのポートを搭載。これ1台で、あらゆる周辺機器との接続が可能\n高画質の画面出力：外部モニターへ最大4K (60Hz) の\n鮮明な画面出力が可能\n複数画面出力に対応：HDMIポートを2つ搭載し、最大3画面の同時投影が可能。並行作業をスムーズにする「拡張モード」も、会議に便利な「複製モード」も自由自在\n最大10Gbpsで高速データ転送：データ転送用USB 3.2 Gen 2 対応、USB-Cポートと2つのUSB-Aポートから最大10Gbpsで大容量ファイルも瞬時にデータ転送が可能\nパススルー急速充電：データ転送やHDMI接続などハブとして使用しながらも、お使いのノートPCに最大85Wの高出力でパススルー急速充電が可能\nコンパクトで持ち運びに便利：約15mmの薄さで、出張や旅行などの持ち運びに便利\nパッケージ内容：Anker Nano USB-C ハブ (8-in-1, Dual Display)、取扱説明書、最大24ヶ月保証、カスタマーサポート › もっと見る\nブランド Anker\n色 グレー\n特徴 パススルー急速充電\nデータ転送レート 10 ギガビット毎秒\n商品の寸法 14長さ x 4.8幅 x 1.5高さ cm",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Anker Nano USB-C ハブ (8-in-1, Dual Display)",
+          "url": "https://www.amazon.co.jp/dp/B0GQ41RXKL?th=1",
+          "verified": true
+        },
+        {
+          "excerpt": "特徴\n製品仕様\n比較表\nレビュー\nグレー\nAnker Nano USB-C ハブ (8-in-1, Dual Display)\n¥5,990\n単価\n/ あたり\n法人特別価格あり。 法人アカウントでログイン すると割引額が表示されます\n支払い方法 は注文画面で選択できます。\nAnker オンラインストア会員限定の特典\nマイルが貯まる・交換できる 購入金額に応じて最大10%還元\n製品の保証期間を6ヶ月延長 一部製品を除く・ 保証について\n会員ランクごとの限定特典をご用意\n8つのポートが1つに\n2つのUSB-Cと2つのUSB-A、最大4K（60Hz）対応のHDMIポートに加え、SD & microSDカードスロットなど合計8つのポートを搭載。これ1台で、あらゆる周辺機器との接続が可能\n高画質の画面出力\n外部モニターへ最大4K (60Hz) の鮮明な画面出力が可能\n複数画面出力に対応\nHDMIポートを2つ搭載し、最大3画面の同時投影が可能。並行作業をスムーズにする「拡張モード」も、会議に便利な「複製モード」も自由自在\n最大10Gbpsで高速データ転送\nデータ転送用USB 3.2 Gen 2 対応、USB-Cポートと2つのUSB-Aポートから最大10Gbpsで大容量ファイルも瞬時にデータ転送が可能\nパススルー急速充電\nデータ転送やHDMI接続などハブとして使用しながらも、お使いのノートPCに最大85Wの高出力でパススルー急速充電が可能\nコンパクトで持ち運びに便利\n約15mmの薄さで、出張や旅行などの持ち運びに便利\nカートに商品を追加する\n製品比較表\nAnker Nano USB-C ハブ (8-in-1, Dual Display) Anker USB-C ハブ (5-in-1, 4K, HDMI) Anker 332 USB-C ハブ (5-in-1) Anker PowerExpand 8-in-1 USB-C PD 10Gbps データ ハブ Anker PowerExpand+ 7-in-1 USB-C PD イーサネット ハブ Anker 364 USB-C ハブ (10-in-1, Dual 4K HDMI) Anker Nano USB-C ハブ(7-in-1, 4K, HDMI)\n価格 ¥5,990 （税込） 22%OFF ¥2,790 ¥2,190 （税込） ¥2,990 ~ （税込） ¥6,990 （税込） ¥6,490 （税込） 在庫切れ ¥9,990 （税込） 在庫切れ ¥4,990 （税込）\nサイズ 約140 x 48 x 15mm 約120 × 30 × 12mm (ケーブル：約25cm) 約122 × 41 × 12mm 約121 × 55 × 15mm 約117 × 53 × 16mm 約142 × 63 × 16mm 約131 × 37 × 12mm (ケーブル：約25cm)\n重さ 約109g 約56g 約50g 約109g 約114g 約100g 約67g\nカラー グレー グレー ブラック グレー グレー ブラック ブラック\nUSB-C パススルー充電 (最大出力) 85W (USB PD 100W 急速充電器利用時) 90W (USB PD 100W 急速充電器利用時) 85W (USB PD 100W 急速充電器利用時) 85W (USB PD 100W 急速充電器利用時) 48W (60W PD 急速充電器利用時) 85W (USB PD 100W 急速充電器利用時) 85W (USB PD 100W 急速充電器利用時)\nUSB-A ポート数 2 (10Gbps) 3 2 (USB-A 3.2 Gen1 × 2) 2 (USB-A 3.1 Gen2 × 2) 2 (USB-A 3.0 × 2) 3 (USB-A 3.2 Gen1 × 1、2.0 × 2) 2 (USB-A 3.2 Gen1 × 2)\nUSB-C ポート数 2 (PD対応充電ポート x 1、データ転送ポート x 1) 1 (USB PD対応 × 1) 2 (USB PD対応充電用 × 1、3.2 Gen 1 × 1) 2 (USB PD対応充電用 × 1、3.1 Gen2 × 1) 1 (USB PD対応充電用 × 1) 2 (USB PD対応充電用 × 1、3.2 Gen 1 × 1) 2 (USB PD対応充電用 × 1、3.2 × 1)\nUSB-C アップストリーム ポート数 - - - - - 1 -\nHDMI ポート数 2 1 1 1 1 2 1\nVGA ポート数 - - - - - - -\nイーサネット ポート数 - - - 1 1 1 -\nディスプレイ ポート数 - - - - - - -\nオーディオ ポート数 - - - - - - -\nmicroSD / SDカード スロット microSD/SD - - microSD / SD microSD / SD SD microSD / SD\n製品詳細ページ もっと詳しく もっと詳しく もっと詳しく もっと詳しく もっと詳しく もっと詳しく もっと詳しく\nサイズ 約140 x 48 x 15mm\n重さ 約109g\n搭載ポート詳細 ・1 x データ転送用USB-Cポート (最大10Gbps) ※充電や映像出力に非対応 ・2 x データ転送用USB-Aポート (最大10Gbps) ※充電や映像出力に非対応 ・1 x USB PD対応USB-C充電ポート (最大入力100W) ※データ転送や映像出力に非対応 ・2 x 最大4K@60Hz対応HDMIポート ・1 x microSDカードスロット ・1 x SDカードスロット\n取扱説明書 取扱説明書ダウンロード クイックスタートガイドダウンロード\nパッケージ内容 Anker Nano USB-C ハブ (8-in-1, Dual Display)、取扱説明書、18ヶ月保証 + 6ヶ月 (Ankerで会員登録後) 、カスタマーサポート\n製品型番 A210BNA1 (ブラック) ※製品の仕様は予告なく変更されることがありますので、予めご了承ください。\n発売月 2026年7月\nご注意 ・映像出力に対応しているのはHDMIポートのみです。データ転送用USB-AポートとUSB-Cポートは映像出力や充電には対応しておりません。 ・USB PD対応の充電用USB-Cポートはデータ転送や映像出力には対応しておりません。 ・USB PDによる充電を行うためには、100W出力に対応した急速充電器とケーブルをお使いください。急速充電器とケーブルは別売りです。 ・ハブ本体に15Wの給電を要するため、実際の出力は最大85Wとなります。 ・本製品にポーチは付属しておりません ・使用中本製品が熱くなることがありますが製品の異常ではございません。 ・製品パッケージは予告なく変更になる場合がございます。ご購入時期によっては異なる製品パッケージでお届けする可能性がございますので、予めご了承ください。なお、製品自体には違いはございません。\n商品レビュー\nUSBハブ/アダプタのセール対象\nAnker USB-C ハブ (5-in-1, 4K, HDMI) 22%OFF ¥2,790 ¥2,190 （税込）\nAnker Nano USB-C ハブ (6-in-1, 5Gbps) 25%OFF ¥3,990 ¥2,990 （税込）\nAnker Prime ドッキングステーション (14-in-1, 8K, Thunderbolt 5) 24%OFF ¥49,990 ¥37,990 （税込）\nAnker 675 USB-C ドッキングステーション (12-in-1, Monitor Stand, Wireless) 30%OFF ¥32,990 ¥22,990 （税込）\nAnker PowerExpand 13-in-1 USB-C Dock ドッキングステーション 30%OFF ¥26,990 ¥18,990 （税込）\nAnker Nano ドッキングステーション (13-in-1, 着脱式USB-C ハブ) 24%OFF ¥16,990 ¥12,990 （税込）\nAnker PowerExpand Elite 13-in-1 Thunderbolt 3 Dock ドッキングステーション 22%OFF ¥36,990 ¥28,990 （税込）\nAnker PowerExpand+ 5-in-1 USB-C イーサネットハブ 22%OFF ¥5,090 ¥3,980 （税込）\nお客様の閲覧履歴",
+          "http_status": 200,
+          "source_type": "manufacturer_official",
+          "title": "Anker Nano USB-C ハブ (8-in-1, Dual Display) | USB Hubの製品情報 | Anker Japan 公式オンラインストア",
+          "url": "https://www.ankerjapan.com/products/a210b",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "Belkin 8-in-1 USB-C ハブ 100W USB-C PD高速充電 4K@60Hz HDMI出力対応 10Gbps高速データ転送",
+      "asin": "B0FXDVQMQG",
+      "brand": "Belkin",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61z5OWMDITL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "host_compatibility",
+        "power_ports",
+        "video"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0FXDVQMQG",
+      "provisional": false,
+      "ref": "p2",
+      "search_key": "Belkin 8-in-1 USB-C ハブ 100W USB-C PD高速充",
+      "selection_score": 0.69,
+      "sources": [
+        {
+          "brand": "Belkin",
+          "excerpt": "Belkin 8-in-1 USB-C ハブ 100W USB-C PD高速充電 4K@60Hz HDMI出力対応 10Gbps高速データ転送\nこの商品について\n【8-in-1 USB-C マルチポートハブ】USB-Cポート1つで、ノートパソコンの接続性を大幅に拡張できる8-in-1 USB-Cハブ。HDMI、有線LAN、USBポートなどを搭載し、外部モニター、マウス、キーボード、外付けHDDなど複数の周辺機器をまとめて接続できます。\n【最大100W USB-C PD充電対応】USB-C Power Deliveryに対応し、最大100Wの高出力充電が可能。周辺機器を接続しながら、MacBook Pro、ノートパソコン、タブレットなどへ効率よく給電できます。※100W出力には対応するUSB-C充電器とケーブルが必要。\n【HDMI 4K/60Hz対応で高画質出力】HDMIポートは最大4K@60HzのUltra HD映像出力に対応。外部ディスプレイやテレビに接続して、鮮明で滑らかな映像を楽しめます。資料作成、動画視聴、オンライン会議、マルチディスプレイ作業など、在宅勤務やビジネス用途にもおすすめ。\n【最大10Gbps 高速データ転送】USBポートは最大10Gbpsの高速データ転送に対応し、写真、動画、大容量ファイルの移動やバックアップもスムーズに行えます。外付けSSD、USBメモリ、ハードドライブなど複数のデバイス接続に便利で、USB 3.0よりも高速なデータ転送環境を実現。\n【2.5Gbps有線LAN＋安全設計＋2年保証】最大2.5Gbpsの有線LANポートを搭載し、Wi-Fiが不安定な環境でも高速で安定したインターネット接続が可能。さらに、過電圧、過負荷、過電流、過熱、短絡保護に対応した安全設計を採用。安心の2年保証付き。 › もっと見る\nブランド Belkin\n色 8-in-1 ブラック\nハードウェアインターフェイス HDMI, USB, USB-C\n特徴 パススルーチャージ\nUSBポートの総数 8",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Belkin 8-in-1 USB-C ハブ 100W USB-C PD高速充電 4K@60Hz HDMI出力対応 10Gbps高速データ転送",
+          "url": "https://www.amazon.co.jp/dp/B0FXDVQMQG?th=1",
+          "verified": true
+        },
+        {
+          "excerpt": "製品\nドック & ハブ\nUSB & USB-C Hubs\n8ポートUSB-Cハブ（2.5Gbイーサネット対応）\n周辺機器用のポートを増やしたいとお考えのお客様は、1本のUSB-Cケーブルで最大8台のデバイスを接続し、ワークステーションの電源供給と拡張を同時に実現できます。このハブは、ホストデバイスに最大100Wの電力供給、 † 4K@60Hzの解像度、最大2.5Gbのイーサネットを提供します。 § 生産性を向上させたい場合でも、ファイルを素早く転送したい場合でも、自宅、オフィス、外出先など、場所を問わずすぐに使えます。’’’\n主な特長\n同梱物\n互換性\n仕様\nサポート\nUSB-C接続1つで追加ポート8個を利用可能\n最大4K@60Hzの解像度のディスプレイをサポート\nホストデバイスへの充電時に最大100Wの電力供給により、デバイスに安全かつ効率的に電力を供給 †\n最大10Gbpsの高速データ転送速度で、転送時間を減らし、仕事に集中できる時間を増やしましょう\n最大2.5Gbの専用イーサネットポートにより、高速で信頼性の高い有線ネットワークアクセスを保証 §\n一体型USB-Cケーブルの長さ：20cm\n6つの安全対策システムにより安心感を提供 過電圧保護、過負荷保護、過電流保護、過熱保護、短絡保護、耐火性材料、\n再生プラスチックを使用*\n2年間の製品保証付き\nConnect 8ポートUSB-Cハブ（2.5Gbイーサネット対応）\n仕様 仕様\n一体型USB-Cケーブル（20cm）\n12cm x 5cm x 1.6cm\n２年間の製品保証\nUSB-Aポート×2、USB-Cポート、USB-C Power Delivery（PD）ポート、イーサネットポート、HDMIポート、microSDカードリーダー、SDカードリーダー\n8個のポート\n2x USB-Cポート\n最大4K@60Hzモニターをサポート\n最大100Wの電力供給\n最大10Gbpsのデータ転送速度\n2.5Gbイーサネット\nご注意\n† USB-Cポートは、データ転送および最大100Wのパススルー充電に対応していますが、そのうち15Wはハブ本体の動作に使用されます。他のハブ機能の使用中に最大45Wのパススルー充電を行うには、60W以上の充電器（別売）を使用してください。パフォーマンスは接続するノートパソコンのスペックによって異なります。 § 速度はホストデバイスと接続状況によって異なります。 *筐体（ケーブル外被を除く）の75%以上に、PCRプラスチックが使用されています。\nCover every base.\nBelkin has partnered with WarrantyLife to offer you an exclusive device protection plan.\nWhat you get with",
+          "http_status": 200,
+          "source_type": "manufacturer_official",
+          "title": "8ポートUSB-Cハブ（2.5Gbイーサネット対応） | Belkin",
+          "url": "https://www.belkin.com/jp/p/8%E3%83%9D%E3%83%BC%E3%83%88usb-c%E3%83%8F%E3%83%96%EF%BC%882.5gb%E3%82%A4%E3%83%BC%E3%82%B5%E3%83%8D%E3%83%83%E3%83%88%E5%AF%BE%E5%BF%9C%EF%BC%89/INC024fqBK.html",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "UGREEN Revodok Pro USB-C ハブ Type-c 8-in-1 100W PD急速充電 10Gbps高速データ転送",
+      "asin": "B0DY1BD3T2",
+      "brand": "UGREEN",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71n3EV8NMLL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "host_compatibility",
+        "power_ports",
+        "video"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0DY1BD3T2",
+      "provisional": false,
+      "ref": "p3",
+      "search_key": "UGREEN Revodok Pro USB-C ハブ Type-c 8-in",
+      "selection_score": 0.69,
+      "sources": [
+        {
+          "brand": "UGREEN",
+          "excerpt": "UGREEN Revodok Pro USB-C ハブ Type-c 8-in-1 100W PD急速充電 10Gbps高速データ転送\nこの商品について\n【8-in-1 ハブ！一台で全て解決 】UGREEN USB-C ハブ には、4K@60Hz HDMI出力、USB-C×2／USB-A×2データポート、100W PD給電、SD／microSDカードリーダー搭載（ケーブル長30cm）。ノートPCのUSB-Cポートを最大限に活用します。※安心の24ケ月間製品保証も付属し、何か不具合などがあれば無料で交換いたします。（購入履歴→購入商品→販売者→質問する欄からご連絡できます）\n【10Gbps超高速転送速度・作業効率の向上】最新規格USB3.2 Gen2対応のUSB‑C／USB‑Aデュアルポートを装備。外付けSSDやHDD、フラッシュドライブ、周辺機器を同時接続しながら、動画・写真・大容量ファイルを最大10Gbps※の速度でストレスフリーに転送。業務効率やクリエイティブワークを強力にサポートします。※理論値であり、実際の転送速度は接続機器や環境により異なります。\n【4K@60Hz出力対応・高精細映像出力】MacBook ProなどのUSB-Cポートに接続するだけで、USB-CハブのHDMI端子から4K UHD（3,840×2,160）@60Hzの映像をHDTV、モニター、プロジェクターへそのままミラーリングまたは拡張出力できます。細部まで鮮明に映し出せるので、写真や動画の編集作業にも最適です。\n【100W PD急速充電・充電も給電も可能】最大100W入力対応のPower Delivery（PD）ポートを搭載し、Type‑C PDポートから最大85Wのパススルー給電に対応しています。MacBook ProやXPSをしっかり充電しつつ、残り15WをHDMIやUSBポート、カードリーダーに振り分けるので、充電と拡張機能を同時にストレスなく使えます。※ご注意：実際の給電量や動作状況は接続機器や使用環境により異なる場合があります。\n【幅広い互換性・USB-C対応機器に最適】この 8-in-1 USB-Cハブは、MacBook Pro、MacBook Air、MacBook M1、M2、M3、M4、iMac、iPad Pro、iPhone 18 Pro/Pro Max、Chromebook、Surface、Switch、Steam Deck、Rog Allyなど、ほとんどのUSB-C機器と互換性があります。iPhone 18 Pro / Pro Max / Duo ご使用時は、4K@60Hz（1画面のみ）、10Gbps高速データ転送、SD/microSDカードの読み込み、USB PD充電に対応します。 › もっと見る\nブランド UGREEN\n色 ブラック\nハードウェアインターフェイス HDMI, USB 2.0タイプ A, USB 3.2 Gen 2, USB-C\n対応デバイス USBフラッシュドライブ, ラップトップパソコン, キーボード, マウス, カードリーダー\nUSBポートの総数 4\nポート数 8\n商品の重量 80 グラム\nHDMIポート総数 1\nワット数 100 W\n商品の個数 1 表示を増やす",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "UGREEN Revodok Pro USB-C ハブ Type-c 8-in-1 100W PD急速充電 10Gbps高速データ転送",
+          "url": "https://www.amazon.co.jp/dp/B0DY1BD3T2?th=1",
+          "verified": true
+        },
+        {
+          "excerpt": "UGREEN Revodok Pro USB-C Hub 8-in-1\n【8-in-1 USB C Hub】: Inspire more potential of your laptop’s USB-C port with SD/Micro SD 170MB/S card reader and 4K@60Hz HDMI, 2 USB-C & 2 USB-A data ports, 100W Power Delivery video adapter with cable length 30CM\n【10Gbps Data Transfer】Transfer files, movies, and photos at speeds up to 10 Gbps via the USB-C data port and USB-A ports. easily fulfills your multiple needs, the USB C data port enables you to connect multiple USB C devices to your devices and quickly transfer files, such as hard drives, flash drives, mice, etc.\n【Enjoy Crystal-Clear 4K@60Hz Video】 This USB C Dock mirrors or extend your screen with USB C hub’s HDMI port and directly stream 4K UHD (3840 x 2160) @60Hz video converter to HDTV, monitor or projector to see all in sharp and glorious detail, perfect for photographer and video editor\n【Heat dissipation fast】With our advanced technology and aluminum shell design, the USB C adapter features double heat dissipation and stable connections to keep your devices safe and your data secure.\n【Lightweight and portable】The C Hub is suitable for business trips, travel, classes, gaming and other occasions, it can be easily carried in a backpack or computer bag without any extra burden.\n【Widely Compatible】The Type C Hub is compatible with iPhone 16/17, MacBook Pro/Air, iPad Pro, Samsung Galaxy Tab S9/S8, Huawei MateBook/MatePad, Microsoft Surface, Lenovo ThinkPad, HP Spectre, Dell XPS, ASUS ZenBook, and more USB-C laptops, tablets, smartphones. Also compatible with Hard drives, keyboard, mouse, 4K projectors, smart TVs, portable monitors, and external displays for extended viewing\n【Powerful 100W Charging】USB C hub for laptop supports up to 85W USB C pass-through charging via Type-C port to keep your laptop powered. 15W is reserved for other interface operations.\n【What You Get】 1* USB C Hub 8-in-1, 1*user manual, 24-month warranty, 24-hour customer service, lifetime technical support.\nSpecs\nSku 75027\nColour Card Reader Hub\nHardware interface HDMI, MiniSD, USB 2.0 Type A, USB 3.2 Gen 2, USB Type C\nCompatible devices MacBook Air, MacBook Pro, iPad Pro, thinkpad, xps\nTotal USB ports 4",
+          "http_status": 200,
+          "source_type": "manufacturer_official",
+          "title": "UGREEN Revodok Pro USB-C Hub 8-in-1\n – UGREEN Official Site",
+          "url": "https://www.ugreen.com/en-ae/products/ae-75027",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "UGREEN USB-C ハブ 4ポート4xUSB-C USB3.2 Gen2 10Gbps高速データ転送",
+      "asin": "B0CR6JBJDH",
+      "brand": "UGREEN",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61KytWUwxnL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "host_compatibility",
+        "power_ports",
+        "video"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0CR6JBJDH",
+      "provisional": false,
+      "ref": "p4",
+      "search_key": "UGREEN USB-C ハブ 4ポート4xUSB-C USB3.2 Gen2",
+      "selection_score": 0.57,
+      "sources": [
+        {
+          "brand": "UGREEN",
+          "excerpt": "UGREEN USB-C ハブ 4ポート4xUSB-C USB3.2 Gen2 10Gbps高速データ転送\nこの商品について\n【10 Gbps 時代の始まり 】4 ポート4xUSB-C ハブは、最大 10Gbps データ転送速度をサポートします。従来のUSB2.0より約20倍速く、最大10Gbps(理論値)の高速データ転送に対応、数秒でHD動画/ファイル/写真等大容量のデータを転送できます。 これは 20 GB のファイルをわずか 16.4 秒で転送できるほどの速さで、待ち時間を大幅に節約できます。【ご注意】このハブはデータ転送のみをサポートし、ノートパソコンの充電やビデオ出力はサポートしていません。映像出力にも対応できません。\n【4-IN-1 USB C から4xUSB-C】USB C 3.2 ハブは、ラップトップの USB-C ポートを4xUSB-Cデータ ポートに変換します。2023年新登場USB C ハブは USB C*1ポートをUSB C*4ポートに増やし、USB-Cポート不足の悩みを解決。外付けHDD、USBメモリ、マウス、キーボードなど複数の USB Type-C機器を同時に接続できるようにします。\n【幅広い互換性】USB Cハブは、MacBook Pro/MacBook Air、iPad Mini、iPad Pro/iPad Air、Surface Book、XPS 17/などのほとんどの USB-C または Thunderbolt デバイスと互換性があります。iPhone Duo/18pro/18pro max、Galaxy S26/Foldおよびその他のスマートフォン/ラップトップ/タブレットに対応します。 Windows、Mac OS、Chrome OS、Linux、iPad OS、Android など、ほとんどのオペレーティング システムで動作します。ドライバーは不要、挿すだけで使用できます。\n【優れたデザイン】 アルミニウム シェルと30cm 編組ナイロン ケーブルのUSB-C 3.2ハブで設計されており、強力なマルチポート機能を提供しながら、スリムでエレガントな外観を備えています。 軽量でポータブル、いつでもどこでも使用でき、データの収集、ファイルの転送などが簡単にできます。\n【24ヶ月の保証期間】：当店でご購入の製品は24ヶ月間の保証サービスをご提供しております。お客様が製品を購入された時点から24ヶ月後の応当日まで保証いたします。 ご注意：お客様または第三者による故意の破損が認められる場合は、保証の対象外となります。 › もっと見る\nブランド UGREEN\n色 黒い\nハードウェアインターフェイス USB-C\n特徴 高速データ転送\n対応デバイス MacBook Pro/Air 、 iMac、iPad Pro/iPad Air 、iPhone 15/15 Pro、 Galaxy S23/ S24",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "UGREEN USB-C ハブ 4ポート4xUSB-C USB3.2 Gen2 10Gbps高速データ転送",
+          "url": "https://www.amazon.co.jp/dp/B0CR6JBJDH?th=1",
+          "verified": true
+        },
+        {
+          "excerpt": "USB-C Hub\n40 % OFF UGREEN USB C 7 in 1 Hub with 4K 60Hz HDMI (3) Code: DL60515 Copy €29,99 €49,99\n28 % OFF UGREEN Revodok Pro 210 10-in-1 USB-C Hub (Dual HDMI 4K@60Hz, 100W PD) (3) €49,99 €69,99\n33 % OFF UGREEN 4-in-1 USB C Hub No reviews €19,99 €29,99\n25 % OFF UGREEN Revodok Pro 106 4K@60Hz 10Gbps USB-C Hub (3) €29,99 €39,99\n16 % OFF UGREEN Revodok 6-IN-1 USB-C Hub Ethernet, 4K@60Hz HDMI Display (5) Code: DL45364 Copy €29,99 €35,99\n30 % OFF UGREEN Revodok 105 USB C Hub 5 in 1 Multiport Adapter 4K HDMI (1) €17,99 €25,99\n25 % OFF UGREEN Revodok USB-C Hub (9-Port, 10Gbps, 4K@60Hz, 100W) (9) Code: DL75028 Copy €29,99 €39,99\n37 % OFF UGREEN Revodok USB-C Hub (8-Port, 10Gbps, 4K@60Hz, 100W) No reviews €24,99 €39,99\n14 % OFF UGREEN Revodok Pro 7-IN-1 USB-C Hub (DisplayPort 4K@60Hz, Ethernet, 100W PD) (5) €59,99 €69,99\n40 % OFF UGREEN Revodok Pro 6-in-1 USB-C Hub (4K@60Hz, 4x 10Gbps, 100W PD) No reviews €29,99 €49,99\n40 % OFF UGREEN Revodok Pro USB-C Hub (6-Port, 4K@60Hz, 10Gbps, 100W) 1 review €29,99 €49,99\n15 % OFF UGREEN Revodok Maxidok 10-in-1 Thunderbolt™ 5 Mac mini Dock with M.2 NVMe SSD Slot, Dual 6K Displays for Mac mini M4/M4 Pro No reviews €305,99 €359,99\n30-day Risk-Free Trial\n2-year Product Warranty\nFast Shipping\nLifetime Customer Support\nStill no idea which to choose?",
+          "http_status": 200,
+          "source_type": "manufacturer_official",
+          "title": "USB C Hub | UGREEN EU",
+          "url": "https://eu.ugreen.com/collections/usb-c-hub",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "HP 純正 ユニバーサル USB Type-C ハブ",
+      "asin": "B0DYF17KQF",
+      "brand": "HP",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61QVezriEmL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "host_compatibility",
+        "power_ports",
+        "video"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0DYF17KQF",
+      "provisional": false,
+      "ref": "p5",
+      "search_key": "HP 純正 ユニバーサル USB Type-C ハブ",
+      "selection_score": 0.55,
+      "sources": [
+        {
+          "brand": "HP",
+          "excerpt": "HP 純正 ユニバーサル USB Type-C ハブ\nこの商品について\nデータ、映像、ネットワーク。主要なポートが揃った USB-Cマルチポートハブ。90W以上のUSB-C ACアダプターを使用することで、最大65WをPCへ給電可能。持ち運びにも便利な小型軽量デザイン。\n【対応OS】Windows 11、Windows 10、macOS、Chrome OS　※本製品はHP製品以外にも使用可能\n【ポート】DisplayPort 1.2 / HDMI 2.0 / RJ-45 / USB 3.2 x2 / USB Type-C 3.2 / USB Type-C パワーパススルー\n【サイズ/質量】 約5.5x15x2cm(ケーブルを除く)/約115g › もっと見る\nブランド HP\n色 ブラック\n特徴 パススルーチャージ\n商品の寸法 15長さ x 5.5幅 x 2.2高さ cm\nポート数 7\nHPのストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "HP 純正 ユニバーサル USB Type-C ハブ",
+          "url": "https://www.amazon.co.jp/dp/B0DYF17KQF",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "ORVISION USB C ドッキングステーション 8in1 タッチスクリーン搭載 ストリームコントローラーデック 12個のカスタムキー マクロ対応",
+      "asin": "B0HD6MTL77",
+      "brand": "ORIVISION",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/6112PJcLUoL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "host_compatibility",
+        "power_ports",
+        "video"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HD6MTL77",
+      "provisional": false,
+      "ref": "p6",
+      "search_key": "ORIVISION ORVISION USB C ドッキングステーション 8in1",
+      "selection_score": 0.55,
+      "sources": [
+        {
+          "brand": "ORIVISION",
+          "excerpt": "ORVISION USB C ドッキングステーション 8in1 タッチスクリーン搭載 ストリームコントローラーデック 12個のカスタムキー マクロ対応\nこの商品について\n【タッチスクリーン搭載・シーンごとに自由にカスタマイズ】タッチスクリーンを搭載した次世代型USB-Cドッキングステーション。1シーンにつき最大10ページ、各ページに12個のショートカットキーを設定可能。1シーンで最大120個のショートカットを登録でき、『100シーン』以上に対応。用途に応じて複数のシーンを自由に切り替えられます。アプリの起動、Webサイト、ファイル、システム機能、マクロ操作などをワンタッチで実行し、作業効率を大幅に向上。PNG・JPG・GIFアイコンにも対応し、自分だけの操作パネルを作成できます。\n【カスタムマクロ機能・複雑な操作をワンタッチ化】複数のキー入力や操作手順を1つのキーに登録できるマクロ機能を搭載。繰り返し行う操作を自動化でき、動画編集、ライブ配信、画像制作、オフィス作業、ゲーム操作など、幅広いシーンで活躍します。自分専用のショートカットパネルとして、快適なPC操作環境を実現します。\n【8in1高性能ドッキングステーション・豊富な接続機能】USB-Cポート1つで8種類の機能を拡張可能。USB3.0×3、4K@60Hz対応HDMI出力、100W PD急速充電、SDカード、TFカード、ギガビットLANポートを搭載。ノートPCをデスクトップ環境へ簡単に拡張し、仕事・動画編集・クリエイティブ作業を効率化します。\n【4K60Hz映像出力・高速データ転送対応】最大4K@60Hz HDMI出力に対応し、外部ディスプレイで高精細な映像表示を実現。USB3.0による高速データ転送、SD/TFカード読み取り、有線ギガビットLAN接続に対応。仕事、動画編集、配信など幅広いPC作業に活用できます。Windows 10以降およびmacOSに対応します。SDカードとTFカードは同時使用できません。どちらか一方のみ使用可能です。\n【技術サポート・ファームウェアアップグレード対応】ORIVISIONは20年以上の映像伝送機器の製造経験に基づき、遠隔サポート・ファームウェアアップグレードを提供。製品に関するご質問やサポートが必要な場合は、注文履歴からお問い合わせいただけます。安心して導入・運用が可能です。 › もっと見る\nブランド ORIVISION\nハードウェアインターフェイス HDMI, MicroSD, SDカード, USB 3.0, イーサネット\n対応デバイス Windows PC, Mac, Laptop, Notebook PC\nUSBポートの総数 3\n商品の寸法 13.9長さ x 5.6幅 x 1.5高さ cm\nポート数 8\n商品の重量 0.1 キログラム\nHDMIポート総数 1\n入力電圧 5 ボルト\n商品の個数 1 表示を増やす\nORIVISIONのストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "ORVISION USB C ドッキングステーション 8in1 タッチスクリーン搭載 ストリームコントローラーデック 12個のカスタムキー マクロ対応",
+          "url": "https://www.amazon.co.jp/dp/B0HD6MTL77",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "selection": {
+    "brand_count": 5,
+    "comparison_axes_covered": [
+      "host_compatibility",
+      "power_ports",
+      "video"
+    ],
+    "content_duplicates_removed": [
+      {
+        "asin": "B0GQ41RXKL",
+        "duplicate_of_asin": "B0GQ41RXKL",
+        "reason": "normalized_title_exact"
+      },
+      {
+        "asin": "B0FXDVQMQG",
+        "duplicate_of_asin": "B0FXDVQMQG",
+        "reason": "normalized_title_exact"
+      },
+      {
+        "asin": "B0DY1BD3T2",
+        "duplicate_of_asin": "B0DY1BD3T2",
+        "reason": "normalized_title_exact"
+      },
+      {
+        "asin": "B0CR6JBJDH",
+        "duplicate_of_asin": "B0CR6JBJDH",
+        "reason": "normalized_title_exact"
+      },
+      {
+        "asin": "B0DYF17KQF",
+        "duplicate_of_asin": "B0DYF17KQF",
+        "reason": "normalized_title_exact"
+      }
+    ],
+    "price_used_as_constraint_only": true,
+    "retained_qa_passed_asins": [
+      "B0CR6JBJDH",
+      "B0DY1BD3T2",
+      "B0DYF17KQF",
+      "B0FXDVQMQG",
+      "B0GQ41RXKL"
+    ],
+    "targeted_replacement": true
+  },
+  "slug": "usb-c-hubs-for-laptops-comparison"
+}

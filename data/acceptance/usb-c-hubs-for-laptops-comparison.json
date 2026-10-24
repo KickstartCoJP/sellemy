@@ -1,0 +1,156 @@
+{
+  "contract_version": "bf7d78a8237179bb977f6ca29f54f732162e9d387723eb0c936bc77316835b8f",
+  "evidence_sha256": "45efeea8fd029415f4046e6e01eeab98bff29858c40495f4e34acec992c49982",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 14848,
+    "input_tokens": 31245,
+    "member_binding_revision": 4,
+    "output_tokens": 1650,
+    "reasoning_effort": "low",
+    "reasoning_output_tokens": 187,
+    "session_id": "01a16f83-5cee-7c22-9eb4-b69d3d6fbba7",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "bc7d597c2955eeb33eee2d32adf9191d5a52ad29695d394488630f0bc53c3f59",
+  "review": {
+    "buying_guidance": true,
+    "claims_grounded": true,
+    "complete_comparison": true,
+    "distinct_products": true,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "video",
+            "quote": "2 x 最大4K@60Hz対応HDMIポート"
+          },
+          {
+            "axis_id": "power_ports",
+            "quote": "85W (USB PD 100W 急速充電器利用時)"
+          }
+        ],
+        "identity_key": "Anker Nano USB-C ハブ (8-in-1, Dual Display)",
+        "identity_quote": "Anker Nano USB-C ハブ (8-in-1, Dual Display)",
+        "reason": "HDMIを2基備える製品として識別できる。映像出力、データ端子の役割、最大85Wの給電条件が明示され、複数モニターを使う人への案内を支えている。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "video",
+            "quote": "最大4K@60Hzの解像度のディスプレイをサポート"
+          },
+          {
+            "axis_id": "power_ports",
+            "quote": "USB-Aポート×2、USB-Cポート、USB-C Power Delivery（PD）ポート、イーサネットポート、HDMIポート、microSDカードリーダー、SDカードリーダー"
+          },
+          {
+            "axis_id": "power_ports",
+            "quote": "そのうち15Wはハブ本体の動作に使用されます"
+          }
+        ],
+        "identity_key": "Belkin 8-in-1 USB-C ハブ",
+        "identity_quote": "Belkin 8-in-1 USB-C ハブ 100W USB-C PD高速充電 4K@60Hz HDMI出力対応 10Gbps高速データ転送",
+        "reason": "8ポート構成と2.5Gbイーサネットで識別できる。映像、端子、給電時のハブ本体による電力消費が明示され、有線LANを重視する選択理由を支えている。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "video",
+            "quote": "4K@60Hz HDMI"
+          },
+          {
+            "axis_id": "power_ports",
+            "quote": "2 USB-C & 2 USB-A data ports, 100W Power Delivery"
+          },
+          {
+            "axis_id": "power_ports",
+            "quote": "supports up to 85W USB C pass-through charging"
+          }
+        ],
+        "identity_key": "UGREEN Revodok Pro USB-C Hub 8-in-1",
+        "identity_quote": "UGREEN Revodok Pro USB-C Hub 8-in-1",
+        "reason": "Revodok Proの8-in-1製品として識別できる。HDMI、カードリーダー、USB端子と最大85Wのパススルー給電が明示され、カードとモニターを併用する案内を支えている。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "power_ports",
+            "quote": "ラップトップの USB-C ポートを4xUSB-Cデータ ポートに変換します"
+          },
+          {
+            "axis_id": "video",
+            "quote": "このハブはデータ転送のみをサポートし、ノートパソコンの充電やビデオ出力はサポートしていません。"
+          }
+        ],
+        "identity_key": "UGREEN USB-C ハブ 4ポート4xUSB-C",
+        "identity_quote": "UGREEN USB-C ハブ 4ポート4xUSB-C USB3.2 Gen2 10Gbps高速データ転送",
+        "reason": "USB-Cデータ端子を4つに増やす製品として識別できる。映像出力とPC充電に非対応という制約が明示され、用途をデータ端子の増設に絞る案内を支えている。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "host_compatibility",
+            "quote": "【対応OS】Windows 11、Windows 10、macOS、Chrome OS　※本製品はHP製品以外にも使用可能"
+          },
+          {
+            "axis_id": "video",
+            "quote": "DisplayPort 1.2 / HDMI 2.0"
+          },
+          {
+            "axis_id": "power_ports",
+            "quote": "90W以上のUSB-C ACアダプターを使用することで、最大65WをPCへ給電可能"
+          }
+        ],
+        "identity_key": "HP 純正 ユニバーサル USB Type-C ハブ",
+        "identity_quote": "HP 純正 ユニバーサル USB Type-C ハブ",
+        "reason": "HPのユニバーサルUSB Type-Cハブとして識別できる。対応OS、映像端子、有線LAN、最大65Wの給電条件が明示され、DisplayPortを含む端子構成を重視する案内を支えている。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "host_compatibility",
+            "quote": "Windows 10以降およびmacOSに対応します"
+          },
+          {
+            "axis_id": "video",
+            "quote": "4K@60Hz対応HDMI出力"
+          },
+          {
+            "axis_id": "power_ports",
+            "quote": "USB3.0×3、4K@60Hz対応HDMI出力、100W PD急速充電、SDカード、TFカード、ギガビットLANポートを搭載"
+          }
+        ],
+        "identity_key": "ORVISION USB C ドッキングステーション 8in1 タッチスクリーン搭載 ストリームコントローラーデック",
+        "identity_quote": "ORVISION USB C ドッキングステーション 8in1 タッチスクリーン搭載 ストリームコントローラーデック 12個のカスタムキー マクロ対応",
+        "reason": "操作パネル付きの8-in-1ドッキングステーションとして識別できる。USB、HDMI、PD、LAN、カード端子と対応OSが明示され、操作パネルも使う人向けという限定した案内を支えている。PCに届く給電量は記事でも確定していない。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reason": "6製品はそれぞれ識別でき、いずれもノートPCのUSB-C接続に関する比較対象として成立する。映像出力、給電条件、周辺機器用端子について製品ごとの明示的な根拠があり、記事は端子の役割や制約を踏まえて用途別に選択理由を示している。",
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}
