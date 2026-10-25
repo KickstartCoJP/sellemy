@@ -31,6 +31,20 @@ class ScheduledRouteTests(unittest.TestCase):
         self.assertNotIn('pipeline/grow.py', script)
         self.assertNotIn('pipeline/run.py', script)
 
+    def test_optional_analytics_failures_cannot_prevent_admitted_growth(self):
+        script = (ROOT / 'ops' / 'run-growth.sh').read_text(encoding='utf-8')
+        for command in ('pipeline/ga4_sync.py --days 28',
+                        'pipeline/affiliate_pipeline.py "${AFFILIATE_ARGS[@]}"',
+                        'pipeline/actuals_adapter.py --sync'):
+            lines = [line for line in script.splitlines() if command in line]
+            self.assertTrue(lines)
+            self.assertTrue(any('||' in line and 'degraded' in line for line in lines))
+
+    def test_recovery_fast_path_is_explicitly_recovery_only(self):
+        script = (ROOT / 'ops' / 'run-growth.sh').read_text(encoding='utf-8')
+        self.assertIn('pipeline/growth_runtime.py --publish --recovery-only', script)
+        self.assertIn('exit "$RECOVERY_RC"', script)
+
     def test_minute_scheduler_and_algorithmic_24_per_day_cap(self):
         plist = (ROOT / 'ops' / 'com.kickstart.sellemy-growth.plist').read_text(encoding='utf-8')
         self.assertIn('<key>StartInterval</key><integer>60</integer>', plist)
@@ -329,6 +343,29 @@ class RuntimeFailClosedTests(unittest.TestCase):
     def tearDown(self):
         for item in reversed(self._recovery_patches): item.stop()
         shutil.rmtree(self._recovery_tmp, ignore_errors=True)
+
+    def test_recovery_only_never_plans_without_eligible_job(self):
+        with (patch.object(growth_runtime, 'eligible_job', return_value=None),
+              patch.object(growth_runtime, '_unfinished_jobs', return_value=[]),
+              patch.object(growth_runtime, 'select_viable_topic') as planning):
+            result = growth_runtime.run(publish=True, recovery_only=True,
+                                        controller=self._allowing_controller(), report_path=None)
+        self.assertEqual(result['status'], 'recovery_no_eligible_job')
+        planning.assert_not_called()
+
+    def test_recovery_only_deferred_reselection_does_not_admit_fresh_article(self):
+        deferred = {'slug': 'held-job', 'current_stage': 'PRODUCT_HOLD',
+                    'next_retry_at': None, 'status': 'ACTIVE'}
+        with (patch.object(growth_runtime, 'eligible_job', return_value=deferred),
+              patch.object(growth_runtime, '_unfinished_jobs', return_value=[deferred]),
+              patch.object(growth_runtime, 'load_job', return_value=deferred),
+              patch.object(growth_runtime, '_execute_job', side_effect=growth_runtime.GrowthRuntimeError('needs_product_reselection for held-job')),
+              patch.object(growth_runtime, 'select_viable_topic') as planning):
+            result = growth_runtime.run(publish=True, recovery_only=True,
+                                        controller=self._allowing_controller(), report_path=None)
+        self.assertEqual(result['status'], 'recovery_deferred')
+        self.assertFalse(result['published'])
+        planning.assert_not_called()
 
     @staticmethod
     def _allowing_controller():

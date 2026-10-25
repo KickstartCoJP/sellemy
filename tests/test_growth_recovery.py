@@ -32,6 +32,42 @@ class GrowthRecoveryTests(unittest.TestCase):
         evidence={'slug':slug,'products':[{'asin':str(i)} for i in range(6)]}
         return gr.create_job(topic=topic,evidence=evidence,selection={},planning_provider={},viability_probes=[])
 
+    def test_corrupt_states_are_held_without_losing_bytes_or_starving_healthy_jobs(self):
+        self._job('healthy-job')
+        bad_inputs = {
+            'bad-json': b'{', 'empty-json': b'', 'array-state': b'[]',
+            'null-state': b'null',
+            'bad-field-type': json.dumps({'schema_version': 1, 'slug': 'bad-field-type',
+                                          'status': 'ACTIVE', 'current_stage': 'WRITER_PENDING',
+                                          'created_at': '2026-10-25T01:00:00+00:00',
+                                          'updated_at': '2026-10-25T01:00:00+00:00',
+                                          'next_retry_at': []}).encode(),
+            'wrong-slug': json.dumps({'slug': 'other', 'status': 'PUBLISHED',
+                                     'current_stage': 'PUBLISHED'}).encode(),
+        }
+        for slug, contents in bad_inputs.items():
+            directory = gr.JOBS_ROOT / slug
+            directory.mkdir(parents=True, exist_ok=True)
+            (directory / 'state.json').write_bytes(contents)
+        missing = gr.JOBS_ROOT / 'missing-state'
+        missing.mkdir(parents=True, exist_ok=True)
+        (missing / 'topic.json').write_text('{"category": "gadget"}', encoding='utf-8')
+        rows = gr.all_jobs()
+        self.assertEqual(len(rows), 8)
+        self.assertEqual(gr.eligible_job()['slug'], 'healthy-job')
+        for slug, original in bad_inputs.items():
+            held = gr.load_job(slug)
+            self.assertEqual((held['status'], held['current_stage']), ('ACTIVE', 'STATE_HOLD'))
+            self.assertIsNone(held['next_retry_at'])
+            self.assertEqual(Path(held['invalid_state_backup']).read_bytes(), original)
+            self.assertNotEqual(gr.eligible_job(now=datetime.now(timezone.utc))['slug'], slug)
+        self.assertEqual(gr.load_job('missing-state')['current_stage'], 'STATE_HOLD')
+        event_counts = {slug: (gr.job_dir(slug) / 'history.jsonl').read_text().count('STATE_CHECKPOINT_INVALID_HOLD')
+                        for slug in bad_inputs}
+        gr.all_jobs()
+        self.assertTrue(all((gr.job_dir(slug) / 'history.jsonl').read_text().count('STATE_CHECKPOINT_INVALID_HOLD') == count
+                            for slug, count in event_counts.items()))
+
     def test_six_product_commit_creates_durable_writer_job(self):
         row=self._job()
         self.assertEqual(row['current_stage'],'WRITER_PENDING')

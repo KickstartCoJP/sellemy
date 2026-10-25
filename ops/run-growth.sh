@@ -90,10 +90,11 @@ print('1' if eligible_job() else '0')
 PYRECOVERY
 )"
 if [[ "$RECOVERY_DUE" == "1" ]]; then
-  "$PY" pipeline/run_with_timeout.py 900 "$PY" pipeline/growth_runtime.py --publish
+  RECOVERY_RC=0
+  "$PY" pipeline/run_with_timeout.py 900 "$PY" pipeline/growth_runtime.py --publish --recovery-only || RECOVERY_RC=$?
   "$PY" pipeline/article_publication_metrics.py >/dev/null || true
   "$GA4PY" pipeline/actuals_adapter.py --sync || true
-  exit 0
+  exit "$RECOVERY_RC"
 fi
 "$PY" - <<'PYSYNC'
 import sys
@@ -125,7 +126,7 @@ fi
 export SELLEMY_PRECLAIMED_ADMISSION_ID
 fi # publication-only recovery, git sync and slot admission
 if [[ ! -x "$GA4PY" ]]; then echo "$(date -Iseconds) GA4 venv missing; abort"; exit 4; fi
-"$GA4PY" pipeline/ga4_sync.py --days 28
+"$GA4PY" pipeline/ga4_sync.py --days 28 || echo "$(date -Iseconds) GA4 acquisition degraded; article processing continues" >&2
 QUALITY_DIR="$HOME/Library/Application Support/Sellemy/analytics"
 mkdir -p "$QUALITY_DIR"
 COLLECT_FROM="$(date -v-7d +%F)"
@@ -188,8 +189,8 @@ AFFILIATE_ARGS=(--mode daily)
 if [[ -r "$HOME/.config/valuecommerce/report-api.json" ]]; then
   AFFILIATE_ARGS+=(--fetch)
 fi
-"$GA4PY" pipeline/affiliate_pipeline.py "${AFFILIATE_ARGS[@]}"
-"$GA4PY" pipeline/actuals_adapter.py --sync
+"$GA4PY" pipeline/affiliate_pipeline.py "${AFFILIATE_ARGS[@]}" || echo "$(date -Iseconds) affiliate acquisition degraded; article processing continues" >&2
+"$GA4PY" pipeline/actuals_adapter.py --sync || echo "$(date -Iseconds) actuals sync degraded; article processing continues" >&2
 GROWTH_RC=0
 if [[ "$PUBLISH_ALLOWED" == "1" ]]; then
   "$PY" pipeline/run_with_timeout.py 900 "$PY" pipeline/growth_runtime.py --publish --scheduled || GROWTH_RC=$?

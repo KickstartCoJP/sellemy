@@ -1161,13 +1161,15 @@ def _post_publish(adaptive: AdaptivePublishController, result: dict, slug: str, 
 def run(
     *, publish: bool, cache_only: bool = False, report_path: Path | None = REPORT,
     planning_candidates: list[dict] | None = None, scheduled: bool = False,
-    controller: AdaptivePublishController | None = None,
+    controller: AdaptivePublishController | None = None, recovery_only: bool = False,
 ) -> dict:
     result = {
         'started_at': datetime.now(timezone.utc).isoformat(),
         'route': ['recovery_queue', 'continuous_planning', 'product_selection', 'writer', 'local_qa', 'machine_qa', 'chatgpt_final_review', 'eyecatch', 'publish'],
         'published': False,
     }
+    if recovery_only and (not publish or scheduled):
+        raise ValueError('recovery-only requires publish without scheduled admission')
     if publish:
         require_publishing_enabled(ROOT)
     # Reconcile existing CEO inspection receipts as a nonblocking side effect.
@@ -1261,6 +1263,9 @@ def run(
             result['recovery_mode'] = True
             result['recovery_slug'] = slug
         else:
+            if recovery_only:
+                result['status'] = 'recovery_no_eligible_job'
+                return result
             # Backoff of an unfinished article must not block admission of new work.
             # Due recovery jobs are still selected first above.
             if unfinished:
@@ -1291,6 +1296,9 @@ def run(
             if not product_blocked:
                 raise
             result['skipped_recovery'] = {'slug': slug, 'reason': str(recovery_error), 'next_retry_at': current.get('next_retry_at')}
+            if recovery_only:
+                result['status'] = 'recovery_deferred'
+                return result
             result['recovery_mode'] = False
             slug = _create_fresh_job()
             commit = _execute_job(slug, result, cache_only=cache_only)
@@ -1328,9 +1336,11 @@ def main() -> None:
     parser = argparse.ArgumentParser(description='Fail-closed continuous Sellemy operating runtime.')
     parser.add_argument('--publish', action='store_true'); parser.add_argument('--cache-only', action='store_true')
     parser.add_argument('--scheduled', action='store_true', help='Apply adaptive publish slot admission.')
+    parser.add_argument('--recovery-only', action='store_true', help='Never create a new article without scheduled admission.')
     args = parser.parse_args()
     try:
-        result = run(publish=args.publish, cache_only=args.cache_only, scheduled=args.scheduled)
+        result = run(publish=args.publish, cache_only=args.cache_only, scheduled=args.scheduled,
+                     recovery_only=args.recovery_only)
     except Exception as exc:
         try:
             failure = json.loads(REPORT.read_text(encoding='utf-8'))

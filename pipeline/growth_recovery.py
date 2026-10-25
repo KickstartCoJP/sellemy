@@ -142,15 +142,68 @@ def create_job(*, topic: dict, evidence: dict, selection: dict, planning_provide
     return _save_state(state, event='JOB_CREATED', detail={'source': source})
 
 
+def _hold_invalid_state(directory: Path, raw: bytes | None, reason: str) -> dict:
+    """Preserve the unreadable checkpoint and keep the affected job non-runnable.
+
+    Do not silently drop a damaged job or re-create it as a fresh article.
+    The existing job directory remains the sole recovery authority.
+    """
+    backup = None
+    if raw is not None:
+        digest = hashlib.sha256(raw).hexdigest()
+        backup = directory / f'state.invalid.{digest[:16]}.bin'
+        if not backup.exists():
+            _atomic_bytes(backup, raw)
+    topic = read_artifact(directory.name, 'topic.json', {})
+    category = topic.get('category') if isinstance(topic, dict) else None
+    state = {
+        'schema_version': 1, 'slug': directory.name, 'category': category,
+        'status': 'ACTIVE', 'current_stage': 'STATE_HOLD',
+        'created_at': _iso(), 'updated_at': _iso(), 'next_retry_at': None,
+        'last_failure_class': 'runtime_infrastructure',
+        'last_failure_code': 'STATE_CHECKPOINT_INVALID',
+        'last_failure_reason': reason,
+        'invalid_state_backup': str(backup) if backup else None,
+        'invalid_state_sha256': hashlib.sha256(raw).hexdigest() if raw is not None else None,
+    }
+    return _save_state(state, event='STATE_CHECKPOINT_INVALID_HOLD', detail={
+        'reason': reason, 'backup': str(backup) if backup else None,
+    })
+
+
+def _atomic_bytes(path: Path, value: bytes) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with tempfile.NamedTemporaryFile('wb', dir=path.parent, prefix='.' + path.name + '.', delete=False) as handle:
+        handle.write(value)
+        handle.flush()
+        os.fsync(handle.fileno())
+        temporary = Path(handle.name)
+    os.replace(temporary, path)
+
+
 def all_jobs() -> list[dict]:
     if not JOBS_ROOT.is_dir():
         return []
     rows = []
-    for path in JOBS_ROOT.glob('*/state.json'):
-        try:
-            rows.append(json.loads(path.read_text(encoding='utf-8')))
-        except (OSError, json.JSONDecodeError):
+    for directory in sorted(path for path in JOBS_ROOT.iterdir() if path.is_dir()):
+        state_file = directory / 'state.json'
+        if not state_file.is_file() and not any(directory.iterdir()):
             continue
+        raw = state_file.read_bytes() if state_file.is_file() else None
+        try:
+            row = json.loads(raw) if raw is not None else None
+            if (not isinstance(row, dict) or row.get('schema_version') != 1
+                    or row.get('slug') != directory.name
+                    or row.get('status') not in {'ACTIVE', *TERMINAL_STATUSES}
+                    or not isinstance(row.get('current_stage'), str)
+                    or not row['current_stage']
+                    or not all(isinstance(row.get(name), str) and row[name]
+                               for name in ('created_at', 'updated_at'))
+                    or not isinstance(row.get('next_retry_at'), (str, type(None)))):
+                raise ValueError('wrong type, identity, or state fields')
+        except (ValueError, UnicodeDecodeError, TypeError) as exc:
+            row = _hold_invalid_state(directory, raw, f'{type(exc).__name__}: {exc}')
+        rows.append(row)
     return rows
 
 
