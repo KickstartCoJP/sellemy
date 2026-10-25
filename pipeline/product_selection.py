@@ -24,27 +24,66 @@ def content_identity(candidate: dict) -> tuple[str, str]:
     return (_normalize_identity_text(candidate.get('amazon_title') or ''), _canonical_image_url(candidate.get('image_url') or ''))
 
 
+_COLOR_VARIANT = re.compile(r"(?:\s*[（(]\s*(?:アクア|ブルー|クリア|ホワイト|ブラック|グレー|ベージュ|ピンク|レッド|グリーン|イエロー|パープル|オレンジ|ネイビー|シルバー|ゴールド|透明|白|黒|青|赤|緑|灰色)\s*[）)])\s*$")
+
+
+DUPLICATE_CHECK_ITEMS = (
+    'same_product_body', 'color_design_only', 'sales_packaging_only',
+    'size_capacity_difference', 'function_structure_difference',
+    'series_generation_difference', 'manufacturer_brand_relation',
+    'independent_comparison_value',
+)
+
+
+def _color_variant_identity(candidate: dict) -> str:
+    title = str(candidate.get('amazon_title') or '').strip()
+    stem = _COLOR_VARIANT.sub('', title)
+    if stem == title:
+        return ''
+    brand = _normalize_identity_text(candidate.get('brand') or '')
+    key = _normalize_identity_text(stem)
+    return f'{brand}:{key}' if brand and len(key) >= 12 else ''
+
+
+def duplicate_check(a: dict, b: dict) -> dict:
+    """Itemized, evidence-conservative pair screen. UNKNOWN never proves duplication."""
+    fields = {key: 'UNKNOWN' for key in DUPLICATE_CHECK_ITEMS}
+    reasons = []
+    left, right = content_identity(a), content_identity(b)
+    left_asin, right_asin = str(a.get('asin') or ''), str(b.get('asin') or '')
+    color_a, color_b = _color_variant_identity(a), _color_variant_identity(b)
+    duplicate = False
+    if left_asin and left_asin == right_asin:
+        fields['same_product_body'] = 'FAIL'
+        reasons.append('same_asin')
+        duplicate = True
+    elif left[0] and left[0] == right[0]:
+        fields['same_product_body'] = 'FAIL'
+        reasons.append('normalized_title_exact')
+        duplicate = True
+    elif left[1] and left[1] == right[1]:
+        fields['same_product_body'] = 'FAIL'
+        reasons.append('canonical_image_exact')
+        duplicate = True
+    elif color_a and color_a == color_b:
+        fields['color_design_only'] = 'FAIL'
+        reasons.append('same_named_model_color_variant')
+        duplicate = True
+    return {'status': 'DUPLICATE' if duplicate else 'UNDETERMINED',
+            'items': fields, 'reasons': reasons, 'pair': [left_asin, right_asin]}
+
+
 def dedupe_content_products(candidates: list[dict]) -> tuple[list[dict], list[dict]]:
     kept, removed = [], []
-    seen_titles: dict[str, str] = {}
-    seen_images: dict[str, str] = {}
     for candidate in candidates:
-        title_key, image_key = content_identity(candidate)
-        duplicate_of = None
-        reason = None
-        if title_key and title_key in seen_titles:
-            duplicate_of, reason = seen_titles[title_key], 'normalized_title_exact'
-        elif image_key and image_key in seen_images:
-            duplicate_of, reason = seen_images[image_key], 'canonical_image_exact'
-        if duplicate_of:
-            removed.append({'asin': candidate.get('asin'), 'duplicate_of_asin': duplicate_of, 'reason': reason})
-            continue
-        asin = str(candidate.get('asin') or '')
-        if title_key:
-            seen_titles[title_key] = asin
-        if image_key:
-            seen_images[image_key] = asin
-        kept.append(candidate)
+        match = next(((previous, duplicate_check(previous, candidate)) for previous in kept
+                      if duplicate_check(previous, candidate)['status'] == 'DUPLICATE'), None)
+        if match:
+            previous, check = match
+            removed.append({'asin': candidate.get('asin'), 'duplicate_of_asin': previous.get('asin'),
+                            'reason': check['reasons'][0], 'check_items': check['items']})
+        else:
+            kept.append(candidate)
     return kept, removed
 
 

@@ -173,6 +173,12 @@ def review_issues(review, evidence, *, article=False):
         issues.append('review refs do not partition evidence')
     if len(set(identities)) != 6:
         issues.append('same independent product identity across listings')
+    if review.get('distinct_products') is False and not any(
+        normalized(str(check.get('identity_key') or '')) == normalized(str(other.get('identity_key') or ''))
+        for i, check in enumerate(checks) for other in checks[i+1:]
+        if isinstance(check, dict) and isinstance(other, dict)
+    ):
+        issues.append('duplicate pair not substantiated by matching product identities')
     if len(covered) < 2:
         issues.append('review lacks two grounded topic axes')
     required = ['distinct_products', 'meaningful_comparison', 'sufficient_evidence']
