@@ -1,0 +1,140 @@
+{
+  "contract_version": "bf7d78a8237179bb977f6ca29f54f732162e9d387723eb0c936bc77316835b8f",
+  "evidence_sha256": "0bcdcb79f4f7d2004401921555fdf84d1851dc5684c1a7381996a1bebc297d3b",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 14848,
+    "input_tokens": 26728,
+    "member_binding_revision": 4,
+    "output_tokens": 1405,
+    "reasoning_effort": "low",
+    "reasoning_output_tokens": 79,
+    "session_id": "01a17420-d2ee-7611-9cc0-8668986150fa",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "4fd852ee7e42b230b3df03f2433d729daa3a1b8e4d0bf59b53ebd2a99386e972",
+  "review": {
+    "buying_guidance": true,
+    "claims_grounded": true,
+    "complete_comparison": true,
+    "distinct_products": true,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "hair_condition",
+            "quote": "タオルドライ後の髪または乾いた髪に"
+          },
+          {
+            "axis_id": "application",
+            "quote": "適量を手に取り、タオルドライ後の髪または乾いた髪に、毛先を中心になじませてください。"
+          }
+        ],
+        "identity_key": "無添加生活 ヘアミルク",
+        "identity_quote": "無添加生活 ヘアミルク 140g 無香料 日本製",
+        "reason": "製品名を識別でき、タオルドライ後と乾いた髪への使用、毛先中心の塗り方が明記されている。記事は速乾の訴求を確認済みの効果として扱っていない。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "hair_condition",
+            "quote": "ダメージによるうねり変化を感じる大人髪に"
+          },
+          {
+            "axis_id": "heat_guidance",
+            "quote": "ドライヤー前"
+          }
+        ],
+        "identity_key": "Gyutto（ギュット） コルセットヘアミルク",
+        "identity_quote": "Gyutto（ギュット） コルセットヘアミルク 120g",
+        "reason": "ダメージによるうねりを想定した製品で、ドライヤー前という使用場面も記載されている。記事は使用量や詳しい塗り方が不明な点を明示している。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "hair_condition",
+            "quote": "乾燥やダメージによるパサつきを抑えて"
+          },
+          {
+            "axis_id": "heat_guidance",
+            "quote": "タオルドライした濡れ髪になじませてからドライヤーを。"
+          }
+        ],
+        "identity_key": "Kaminii カミニー ヘアミルク リッチモイスト",
+        "identity_quote": "Kaminii カミニー ヘアミルク リッチモイスト ＜ホワイトティーの香り＞",
+        "reason": "製品を識別でき、タオルドライした濡れ髪に塗ってから乾かす順序が明記されている。記事は仕上がりや熱への効果を実測事実として断定していない。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "hair_condition",
+            "quote": "シャンプー後、タオルドライした髪に塗布します。"
+          },
+          {
+            "axis_id": "application",
+            "quote": "中間から毛先にかけてしっかりとなじませてください。"
+          }
+        ],
+        "identity_key": "ケラスターゼ グロスアブソリュ フリズグレイズ クリーム",
+        "identity_quote": "ケラスターゼ グロスアブソリュ フリズグレイズ クリーム ヘアミルク 240ml",
+        "reason": "製品を識別でき、タオルドライ後に中間から毛先へ塗る方法が明記されている。記事はドライヤーとの順序が不明なことを明示し、湿気への効果を比較上の優位性として断定していない。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "application",
+            "quote": "適量を手に取り、毛先からやさしく揉み込むようになじませます"
+          },
+          {
+            "axis_id": "heat_guidance",
+            "quote": "ドライヤーで根元から乾かし、仕上げに少量を追加するとツヤ感がアップします"
+          }
+        ],
+        "identity_key": "アネラホワイト ヘアミルク",
+        "identity_quote": "アネラホワイト ヘアミルク 洗い流さないトリートメント",
+        "reason": "製品を識別でき、毛先への塗布、ドライヤー使用、仕上げの追加という手順が記載されている。記事は熱による効果や使用感を販売ページの訴求として扱っている。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "hair_condition",
+            "quote": "日々受けている熱ダメージやカラーダメージ、紫外線ダメージなど"
+          },
+          {
+            "axis_id": "heat_guidance",
+            "quote": "毎日のドライヤーやヘアアイロンによって髪が受ける“熱”によるダメージにも着目。"
+          }
+        ],
+        "identity_key": "plus eau (プリュスオー) ハイドロミルク",
+        "identity_quote": "plus eau (プリュスオー) ハイドロミルク 無香料 ヘアミルク",
+        "reason": "製品を識別でき、熱やカラーによるダメージを想定した説明がある。記事は熱を加える前後の使用順序が不明なことを明示し、補修や使用感の訴求を実証結果として扱っていない。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reason": "6製品はブランドと製品名で区別でき、いずれも洗い流さないヘアミルクに該当する。提示資料は各製品について少なくとも一つの比較軸を支え、記事は髪の状態、塗布方法、熱を使う際の案内を区別している。効果や使用感の訴求を実測結果として扱わず、各製品に具体的な選び方を示している。",
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}

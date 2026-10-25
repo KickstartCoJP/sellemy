@@ -1,0 +1,395 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/leave-in-hair-milks.html",
+  "category": "beauty",
+  "comparison_axes": [
+    {
+      "id": "hair_condition",
+      "keywords": [
+        "乾燥",
+        "濡れた髪",
+        "乾いた髪"
+      ],
+      "label": "想定する髪の状態と使用場面"
+    },
+    {
+      "id": "application",
+      "keywords": [
+        "使用量",
+        "塗布",
+        "毛先"
+      ],
+      "label": "使用量と塗布方法"
+    },
+    {
+      "id": "heat_guidance",
+      "keywords": [
+        "ドライヤー",
+        "ヘアアイロン",
+        "使用順序"
+      ],
+      "label": "ドライヤーやアイロン使用時の案内"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/leave-in-hair-milks/leave-in-hair-milks.png",
+  "product_acceptance": {
+    "contract_version": "bf7d78a8237179bb977f6ca29f54f732162e9d387723eb0c936bc77316835b8f",
+    "evidence_sha256": "0bcdcb79f4f7d2004401921555fdf84d1851dc5684c1a7381996a1bebc297d3b",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 14848,
+      "input_tokens": 24062,
+      "member_binding_revision": 4,
+      "output_tokens": 1210,
+      "reasoning_effort": "low",
+      "reasoning_output_tokens": 73,
+      "session_id": "01a1741b-5ecf-75b1-9666-42a74c5f7ac7",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "hair_condition",
+              "quote": "タオルドライ後の髪または乾いた髪に"
+            },
+            {
+              "axis_id": "application",
+              "quote": "適量を手に取り、タオルドライ後の髪または乾いた髪に、毛先を中心になじませてください。"
+            }
+          ],
+          "identity_key": "無添加生活 ヘアミルク",
+          "identity_quote": "無添加生活 ヘアミルク 140g 無香料 日本製",
+          "reason": "A distinct hair milk with explicit instructions for towel-dried or dry hair and application to the ends. The dryer-time benefit is a marketing claim, not verified performance.",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "hair_condition",
+              "quote": "ダメージによるうねり変化を感じる大人髪に"
+            },
+            {
+              "axis_id": "heat_guidance",
+              "quote": "ドライヤー前"
+            }
+          ],
+          "identity_key": "Gyutto（ギュット） コルセットヘアミルク",
+          "identity_quote": "Gyutto（ギュット） コルセットヘアミルク 120g",
+          "reason": "A distinct hair milk aimed at hair with damage-related waviness. The excerpt also identifies use before a dryer, but gives no detailed application method or verified result.",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "hair_condition",
+              "quote": "乾燥やダメージによるパサつき"
+            },
+            {
+              "axis_id": "application",
+              "quote": "タオルドライした濡れ髪になじませてからドライヤーを。"
+            },
+            {
+              "axis_id": "heat_guidance",
+              "quote": "タオルドライした濡れ髪になじませてからドライヤーを。"
+            }
+          ],
+          "identity_key": "Kaminii カミニー ヘアミルク リッチモイスト",
+          "identity_quote": "Kaminii カミニー ヘアミルク リッチモイスト ＜ホワイトティーの香り＞",
+          "reason": "A distinct hair milk with an explicit towel-dried-hair and dryer sequence. Claims about the resulting finish should be attributed to the listing rather than treated as measured performance.",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "hair_condition",
+              "quote": "シャンプー後、タオルドライした髪に塗布します。"
+            },
+            {
+              "axis_id": "application",
+              "quote": "中間から毛先にかけてしっかりとなじませてください。洗い流しません。"
+            }
+          ],
+          "identity_key": "ケラスターゼ グロスアブソリュ フリズグレイズ クリーム",
+          "identity_quote": "ケラスターゼ グロスアブソリュ フリズグレイズ クリーム ヘアミルク",
+          "reason": "A distinct leave-in cream presented as a hair milk, with explicit instructions for towel-dried hair and application from mid-lengths to ends. Its moisture and humidity claims are not independently verified.",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "application",
+              "quote": "適量を手に取り、毛先からやさしく揉み込むようになじませます"
+            },
+            {
+              "axis_id": "heat_guidance",
+              "quote": "ドライヤーで根元から乾かし、仕上げに少量を追加するとツヤ感がアップします"
+            }
+          ],
+          "identity_key": "アネラホワイト ヘアミルク",
+          "identity_quote": "アネラホワイト ヘアミルク 洗い流さないトリートメント",
+          "reason": "A distinct hair milk with explicit instructions to work an appropriate amount into the ends, dry from the roots, and optionally add a little afterward. Repair and heat-protection effects remain listing claims.",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "hair_condition",
+              "quote": "パサつき・ごわつく“砂漠髪”"
+            },
+            {
+              "axis_id": "heat_guidance",
+              "quote": "毎日のドライヤーやヘアアイロンによって髪が受ける“熱”によるダメージにも着目。"
+            }
+          ],
+          "identity_key": "プリュスオー ハイドロミルク",
+          "identity_quote": "髪の補修乳液トリートメント「プリュスオー ハイドロミルク」",
+          "reason": "A distinct leave-in hair milk positioned for dry or damaged hair. The excerpt discusses dryer and iron heat but does not give a use order or verify repair performance.",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reason": "Evidence-only review: six distinct leave-in hair milks are identifiable. Each has explicit support for at least one existing comparison axis, and the set supports all three axes. The evidence can support a useful comparison if the article distinguishes stated use instructions from unverified performance claims. No article was submitted, so article-only assessments are false.",
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
+  "products": [
+    {
+      "amazon_title": "無添加生活 ヘアミルク 140g 無香料 日本製",
+      "asin": "B0H4V3BYPC",
+      "brand": "無添加生活",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/5149r7Rj2iL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "application",
+        "hair_condition",
+        "heat_guidance"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H4V3BYPC",
+      "provisional": false,
+      "ref": "p1",
+      "search_key": "無添加生活 ヘアミルク 140g 無香料 日本製",
+      "selection_score": 1.14,
+      "sources": [
+        {
+          "brand": "無添加生活",
+          "excerpt": "無添加生活 ヘアミルク 140g 無香料 日本製\nこの商品について\n【毎日のドライヤー時間がラクに】 なめらか速乾、サッとうるおいするんとまとまるヘアミルク\n【無添加処方】 カチオン界面活性剤・香料・着色料・鉱物油・エタノール・パラベン　フリー\n【毛髪保護・毛髪補修成分配合】 リンゴ酸ジイソステアリル・加水分解シルク\n【3歳以上のお子様にも使える】 子どもの細くて柔らかい髪でも使いやすいミルクタイプ\n【内容量】140g 【全成分】 水、ＢＧ、ジメチコン、セテアリルアルコール、安息香酸アルキル（Ｃ１２-１５）、リンゴ酸ジイソステアリル、（アクリル酸Ｎａ/アクリロイルジメチルタウリンＮａ）コポリマー、フェノキシエタノール、イソヘキサデカン、エチルヘキシルグリセリン、ポリソルベート８０、アミノプロピルジメチコン、加水分解シルク 【ご使用方法】 適量を手に取り、タオルドライ後の髪または乾いた髪に、毛先を中心になじませてください。 › もっと見る\n商品特長 コンディショニング\n髪質 すべて\n商品の形状 クリーム\nブランド 無添加生活\n商品の個数 1\nユニット数 1.0 個\nメーカー マックス\n商品のハイライト 洗い流さないトリートメント、ヘアケア、スタイリング、速乾、時短、毛髪保護、毛髪補修、子どもから大人まで使える 表示を増やす\n無添加生活のストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "無添加生活 ヘアミルク 140g 無香料 日本製",
+          "url": "https://www.amazon.co.jp/dp/B0H4V3BYPC",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "Gyutto（ギュット） コルセットヘアミルク 120g （うねりケア ダメ―ジ集中補修）",
+      "asin": "B0H3MR68N6",
+      "brand": "Gyutto（ギュット）",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51EePVjrbHL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "hair_condition",
+        "heat_guidance"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H3MR68N6",
+      "provisional": false,
+      "ref": "p2",
+      "search_key": "Gyutto（ギュット） コルセットヘアミルク 120g （うねりケア ダメ―ジ集中補修）",
+      "selection_score": 0.6,
+      "sources": [
+        {
+          "brand": "Gyutto（ギュット）",
+          "excerpt": "Gyutto（ギュット） コルセットヘアミルク 120g （うねりケア ダメ―ジ集中補修）\nこの商品について\nダメージによるうねり変化を感じる大人髪に\n独自のアクアコルセット技術※1により、紫外線、湿度変化、乾燥などのダメージにより変形した髪一本一本に芯からアプローチ。 ※1：ヒアルロン酸K、乳酸、PVP（補修成分）\nさらっと軽いヘアミルクで日中もうるおってまとまりが持続。\nグリーンティー＆ペアーの香り。 › もっと見る\n商品特長 うねりコントロール\n髪質 すべて\n商品の形状 クリーム\nブランド Gyutto（ギュット）\n商品の個数 1\nユニット数 120.0 グラム\nメーカー ロート製薬\n商品のハイライト ヘアミルク、洗い流さないトリートメント、髪の乾燥、髪のパサつき、ドライヤー前 表示を増やす\nGyutto（ギュット）のストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Gyutto（ギュット） コルセットヘアミルク 120g （うねりケア ダメ―ジ集中補修）",
+          "url": "https://www.amazon.co.jp/dp/B0H3MR68N6",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "Kaminii カミニー ヘアミルク リッチモイスト ＜ホワイトティーの香り＞ 洗い流さないトリートメント アウトバス ダメージ補修 保湿 ヒートケア",
+      "asin": "B0H25CSHTX",
+      "brand": "Kaminii",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71dJt92l8GL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "application",
+        "hair_condition",
+        "heat_guidance"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H25CSHTX",
+      "provisional": false,
+      "ref": "p3",
+      "search_key": "Kaminii カミニー ヘアミルク リッチモイスト ＜ホワイトティーの香り＞",
+      "selection_score": 0.6,
+      "sources": [
+        {
+          "brand": "Kaminii",
+          "excerpt": "Kaminii カミニー ヘアミルク リッチモイスト ＜ホワイトティーの香り＞ 洗い流さないトリートメント アウトバス ダメージ補修 保湿 ヒートケア\nこの商品について\n【密着補修×うるおい密着ヴェール】毛先までなめらかにまとまるミルクタイプ。濃密なうるおい感がありながら重くなりすぎず、乾燥やダメージによるパサつきを抑えて、しっとりツヤのある仕上がりへ導きます。\n【補修・保湿成分でうるおいチャージ】加水分解シルク、加水分解コラーゲン、ペリセア:などの補修・保湿成分を配合。髪にうるおいを与えながら、なめらかでまとまりやすい髪へ導きます。*ジラウロイルグルタミン酸リシンNa\n【タオルドライ後の新習慣】タオルドライした濡れ髪になじませてからドライヤーを。ヒートケア成分が熱に反応して髪の表面をコートし、指通りなめらか、まとまりの仕上がりへ。\n【透明感あふれるホワイトティーの香り】ホワイトティーを基調に、やさしく上品に香るフレグランス。毎日のヘアケアタイムを心地よいひとときに。\n【サロン帰りの仕上がりを、毎日のケアに】 YouTube登録者数130万人超えの毛髪診断士AYAMAR（あやまる）監修。補修・保湿成分が髪に密着し、パサつきや広がりを抑えて毛先までなめらかな仕上がりへ。 › もっと見る\nブランド Kaminii\n商品の形状 液体\n髪質 ダメージ\nユニット数 80.0 ミリリットル\n商品の個数 1\nKaminiiのストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Kaminii カミニー ヘアミルク リッチモイスト ＜ホワイトティーの香り＞ 洗い流さないトリートメント アウトバス ダメージ補修 保湿 ヒートケア",
+          "url": "https://www.amazon.co.jp/dp/B0H25CSHTX",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "ケラスターゼ グロスアブソリュ フリズグレイズ クリーム ヘアミルク 240ml ウォータープルーフ 洗い流さないトリートメント ハリ・コシのある髪へ なめらかな質感",
+      "asin": "B0G7HJFJVH",
+      "brand": "KÉRASTASE(ケラスターゼ)",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51yeDE-foJL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "application"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0G7HJFJVH",
+      "provisional": false,
+      "ref": "p4",
+      "search_key": "KÉRASTASE(ケラスターゼ) ケラスターゼ グロスアブソリュ フリズグレイズ クリーム ヘ",
+      "selection_score": 0.6,
+      "sources": [
+        {
+          "brand": "KÉRASTASE(ケラスターゼ)",
+          "excerpt": "ケラスターゼ グロスアブソリュ フリズグレイズ クリーム ヘアミルク 240ml ウォータープルーフ 洗い流さないトリートメント ハリ・コシのある髪へ なめらかな質感\nこの商品について\nシャンプー後、タオルドライした髪に塗布します。 中間から毛先にかけてしっかりとなじませてください。洗い流しません。 › もっと見る\nブランド KÉRASTASE(ケラスターゼ)\n商品の形状 クリーム\n髪質 全髪質\n商品特長 髪を芯まで保湿し、うるおいを与える。 ウォータープルーフテクノロジーでキューティクルをなめらかに整え、湿気から守り、広がりを抑える。 髪を補修し、ハリ・コシのある髪へと導く。 思わず指を通したくなるような、なめらかな質感へと導く。髪を芯まで保湿し、うるおいを与える。 ウォータープルーフテクノロジーでキューティクルをなめらかに整え… 表示を増やす\nユニット数 1.0 個\nKÉRASTASE(ケラスターゼ)のストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "ケラスターゼ グロスアブソリュ フリズグレイズ クリーム ヘアミルク 240ml ウォータープルーフ 洗い流さないトリートメント ハリ・コシのある髪へ なめらかな質感",
+          "url": "https://www.amazon.co.jp/dp/B0G7HJFJVH",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "アネラホワイト ヘアミルク 洗い流さないトリートメント ミルク ヘアケア【深層ダメージ補修xまとまるうるサラ髪へ】",
+      "asin": "B0F8MPL39B",
+      "brand": "ANELA WHITE",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51yx+JGHlYL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "application",
+        "heat_guidance"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0F8MPL39B",
+      "provisional": false,
+      "ref": "p5",
+      "search_key": "ANELA WHITE アネラホワイト ヘアミルク 洗い流さないトリートメント ミルク",
+      "selection_score": 0.6,
+      "sources": [
+        {
+          "brand": "ANELA WHITE",
+          "excerpt": "アネラホワイト ヘアミルク 洗い流さないトリートメント ミルク ヘアケア【深層ダメージ補修xまとまるうるサラ髪へ】\nこの商品について\n✨【一日中まとまるサラつや髪へ】パサつきや広がり、ごわつき、うねりなどの悩みをオールケア。軽くエアリーなのにしっとり潤いに満ちた艶髪へ導く洗い流さないトリートメント\n✨【べたつかず軽い仕上がり】深層濃密リペア処方でハイダメージも芯から補修して潤いをキープ。サロン帰りのようなサラサラな指通りに。湿気に強くスタイリング効果が持続\n✨【美容補修成分が浸透】先端成分フラーレン、加水分解卵殻膜、コラーゲンをはじめ5種の毛髪補修成分で強くしなやかな髪へ。ドライヤーの熱で保湿コーティングするヒートプロテクト効果も\n✨【心地よく香るヘアミルク】髪も手もべたつかない快適な使用感と、ホワイトリリーの甘く清らかな香りがふんわり広がる心地よさを叶える、アウトバストリートメント\n✨【こだわりの低刺激処方】髪と頭皮にやさしく、安全性に優れた厳選成分を使用【ご使用方法】①適量を手に取り、毛先からやさしく揉み込むようになじませます②ドライヤーで根元から乾かし、仕上げに少量を追加するとツヤ感がアップします › もっと見る\nブランド ANELA WHITE\n商品の形状 高密着ヘアミルク\n髪質 ダメージ\n商品特長 うるおい, 保湿\nユニット数 100.0 グラム\nブランド: ANELA WHITE",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "アネラホワイト ヘアミルク 洗い流さないトリートメント ミルク ヘアケア【深層ダメージ補修xまとまるうるサラ髪へ】",
+          "url": "https://www.amazon.co.jp/dp/B0F8MPL39B",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "plus eau (プリュスオー) ハイドロミルク 無香料 ヘアミルク 洗い流さないトリートメント 美容液 150ml ポンプ 本体",
+      "asin": "B0DZM6J6KH",
+      "brand": "plus eau(プリュスオー)",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51bxfeFKkCL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "hair_condition",
+        "heat_guidance"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0DZM6J6KH",
+      "provisional": false,
+      "ref": "p6",
+      "search_key": "plus eau(プリュスオー) plus eau (プリュスオー) ハイドロミルク 無香料 ヘ",
+      "selection_score": 0.6,
+      "sources": [
+        {
+          "brand": "plus eau(プリュスオー)",
+          "excerpt": "plus eau (プリュスオー) ハイドロミルク 無香料 ヘアミルク 洗い流さないトリートメント 美容液 150ml ポンプ 本体\nこの商品について\n日々受けている熱ダメージやカラーダメージ、紫外線ダメージなど、多くの現代女性が感じている髪の蓄積ダメージ悩みに寄り添う、髪の補修乳液トリートメント「プリュスオー ハイドロミルク」\n【マルチケラチン処方の補修乳液トリートメントでサロン級のダメージリペア】パサつき・ごわつく“砂漠髪”も、５種類のケラチン補修成分配合で、まとまる柔らかな髪へ導く洗い流さないヘアミルク。\n【“熱”を味方にダメージを補修】毎日のドライヤーやヘアアイロンによって髪が受ける“熱”によるダメージにも着目。“熱”を味方につけてダメージ箇所を密着補修してくれるヒートリペア成分が髪表面のキューティクルのダメージを徹底ケア。\n【髪の芯まで潤い補給＆キープ】髪内部の約5%を構成する細胞間脂質CMC（Cell Membrane Complex）がダメージにより劣化すると、髪は乾燥しやすくなり、パサつきやすくなります。また、枝毛や切れ毛が増え、髪のツヤや弾力も失われます。プリュスオー ハイドロミルクには4種のヒト型セラミド（セラミドEOP・セラミドNG・セラミドNP・セラミドAP）や液晶コレステロールなどの美髪を保つのに必要不可欠なCMC成分をたっぷりと配合。蓄積ダメージにより髪内部から不足してしまったCMC成分をふんだんに補給することで、髪の潤いと柔軟性を高めて内側からハリやツヤを感じる扱いやすい美髪をキープします。また、髪に潤いを補給してツヤや柔軟性を与える保湿成分として2種のボタニカルオイル（ホホバ種子油、アルガンオイル*⁷）も配合しています。\n【重ね使いしやすい「無香料」】乳液のような滑らかで軽いミルクで、手も髪もベタつきを残しません。ミストやオイルと重ね使いしても重くなりにくい仕上がり。あえて無香料にすることで、シャンプーやトリートメント、ヘアオイルなどの香りを邪魔せず、どんなアイテムとも組み合わせやすくしました。ダメージレベルに合わせて「プリュスオー ハイドロミスト」や「プリュスオー ヘアオイルシリーズ」と重ね使いしてもお使いいただけます。 › もっと見る\n商品特長 コンディショニング, ダメージコントロール, マルチケラチン処方, モイスチャライジング, 無香料\n髪質 すべて, カラーリング, ダメージ, ドライ, パーマ\n素材タイプフリー 無香料\n香り 無香料\n商品の形状 クリーム\nブランド plus eau(プリュスオー)\n商品の個数 1\nユニット数 150.0 ミリリットル\n商品体積 150 ミリリットル\n対象ユーザー 傷んだ髪を持つ大人、専門のヘアケア製品に投資する意思がある大人、潜在的に香りに敏感な方 表示を増やす\nplus eau(プリュスオー)のストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "plus eau (プリュスオー) ハイドロミルク 無香料 ヘアミルク 洗い流さないトリートメント 美容液 150ml ポンプ 本体",
+          "url": "https://www.amazon.co.jp/dp/B0DZM6J6KH",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "selection": {
+    "brand_count": 6,
+    "comparison_axes_covered": [
+      "application",
+      "hair_condition",
+      "heat_guidance"
+    ],
+    "content_duplicates_removed": [
+      {
+        "asin": "B0H4V3BYPC",
+        "duplicate_of_asin": "B0H4V3BYPC",
+        "reason": "normalized_title_exact"
+      },
+      {
+        "asin": "B0H3MR68N6",
+        "duplicate_of_asin": "B0H3MR68N6",
+        "reason": "normalized_title_exact"
+      },
+      {
+        "asin": "B0H25CSHTX",
+        "duplicate_of_asin": "B0H25CSHTX",
+        "reason": "normalized_title_exact"
+      },
+      {
+        "asin": "B0G7HJFJVH",
+        "duplicate_of_asin": "B0G7HJFJVH",
+        "reason": "normalized_title_exact"
+      },
+      {
+        "asin": "B0F8MPL39B",
+        "duplicate_of_asin": "B0F8MPL39B",
+        "reason": "normalized_title_exact"
+      }
+    ],
+    "price_used_as_constraint_only": true,
+    "retained_qa_passed_asins": [
+      "B0F8MPL39B",
+      "B0G7HJFJVH",
+      "B0H25CSHTX",
+      "B0H3MR68N6",
+      "B0H4V3BYPC"
+    ],
+    "targeted_replacement": true
+  },
+  "slug": "leave-in-hair-milks"
+}
