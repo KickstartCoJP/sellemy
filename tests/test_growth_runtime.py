@@ -26,19 +26,17 @@ class ScheduledRouteTests(unittest.TestCase):
         script = (ROOT / 'ops' / 'run-growth.sh').read_text(encoding='utf-8')
         self.assertIn('pipeline/growth_runtime.py --publish --scheduled', script)
         self.assertIn('admit_scheduled()', script)
-        self.assertLess(script.index('admit_scheduled()'), script.index('pipeline/ga4_sync.py'))
+        self.assertLess(script.index('admit_scheduled()'), script.index('pipeline/growth_runtime.py --publish --scheduled'))
         self.assertIn('SELLEMY_PRECLAIMED_ADMISSION_ID', script)
         self.assertNotIn('pipeline/grow.py', script)
         self.assertNotIn('pipeline/run.py', script)
 
-    def test_optional_analytics_failures_cannot_prevent_admitted_growth(self):
+    def test_analytics_is_not_invoked_by_article_production(self):
         script = (ROOT / 'ops' / 'run-growth.sh').read_text(encoding='utf-8')
-        for command in ('pipeline/ga4_sync.py --days 28',
-                        'pipeline/affiliate_pipeline.py "${AFFILIATE_ARGS[@]}"',
-                        'pipeline/actuals_adapter.py --sync'):
-            lines = [line for line in script.splitlines() if command in line]
-            self.assertTrue(lines)
-            self.assertTrue(any('||' in line and 'degraded' in line for line in lines))
+        for command in ('ga4_sync.py', 'firefox_collectors.py',
+                        'affiliate_pipeline.py', 'actuals_adapter.py',
+                        'article_publication_metrics.py'):
+            self.assertNotIn(command, script)
 
     def test_recovery_fast_path_is_explicitly_recovery_only(self):
         script = (ROOT / 'ops' / 'run-growth.sh').read_text(encoding='utf-8')

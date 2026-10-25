@@ -9,11 +9,12 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
+BI_RUNNER = Path("/Users/kickstart/ai-management-os/scripts/run_sellemy_bi_acquisition.sh")
 
 
 class GrowthAcquisitionCadenceTests(unittest.TestCase):
     def test_attempt_marker_controls_collection(self):
-        script = (ROOT / "ops/run-growth.sh").read_text()
+        script = BI_RUNNER.read_text()
         due = re.search(r"<<'PYDUE'\n(.*?)\nPYDUE", script, re.S).group(1)
         record = re.search(r"<<'PYQ'\n(.*?)\nPYQ", script, re.S).group(1)
         with tempfile.TemporaryDirectory() as tmp:

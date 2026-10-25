@@ -92,8 +92,6 @@ PYRECOVERY
 if [[ "$RECOVERY_DUE" == "1" ]]; then
   RECOVERY_RC=0
   "$PY" pipeline/run_with_timeout.py 900 "$PY" pipeline/growth_runtime.py --publish --recovery-only || RECOVERY_RC=$?
-  "$PY" pipeline/article_publication_metrics.py >/dev/null || true
-  "$GA4PY" pipeline/actuals_adapter.py --sync || true
   exit "$RECOVERY_RC"
 fi
 "$PY" - <<'PYSYNC'
@@ -125,82 +123,10 @@ if [[ "$SELLEMY_PREFLIGHT_ALLOWED" != "1" ]]; then
 fi
 export SELLEMY_PRECLAIMED_ADMISSION_ID
 fi # publication-only recovery, git sync and slot admission
-if [[ ! -x "$GA4PY" ]]; then echo "$(date -Iseconds) GA4 venv missing; abort"; exit 4; fi
-"$GA4PY" pipeline/ga4_sync.py --days 28 || echo "$(date -Iseconds) GA4 acquisition degraded; article processing continues" >&2
-QUALITY_DIR="$HOME/Library/Application Support/Sellemy/analytics"
-mkdir -p "$QUALITY_DIR"
-COLLECT_FROM="$(date -v-7d +%F)"
-COLLECT_TO="$(date +%F)"
-# Each provider has its own attempt clock. A failed provider retries hourly,
-# while successful collections are refreshed every six hours.
-for PROVIDER in amazon rakuten; do
-  PROVIDER_DUE="$("$GA4PY" - "$QUALITY_DIR/acquisition-attempt.json" "$PROVIDER" <<'PYDUE'
-import json,sys
-from datetime import datetime,timedelta,timezone
-from pathlib import Path
-path,provider=Path(sys.argv[1]),sys.argv[2]
-if not path.exists():
- print('1')
-else:
- try:
-  value=json.loads(path.read_text())
-  if provider not in value:
-   print('1');sys.exit(0)
-  record=value[provider]
-  attempted=datetime.fromisoformat(record.get('attempted_at') or value['attempted_at'])
-  assert attempted.tzinfo is not None
-  assert type(record['collector_rc']) is int
-  age=datetime.now(timezone.utc)-attempted
-  due=timedelta(hours=1 if record['collector_rc'] else 6)
-  print('1' if due<=age<=timedelta(days=3650) else '0')
- except (ValueError,TypeError,KeyError,AssertionError,OverflowError):
-  print('0')
-PYDUE
-)"
-  if [[ "$PROVIDER_DUE" != "1" ]]; then continue; fi
-  COLLECT_RC=0
-  "$PY" pipeline/run_with_timeout.py 120 "$GA4PY" pipeline/firefox_collectors.py --provider "$PROVIDER" --start-date "$COLLECT_FROM" --end-date "$COLLECT_TO" || COLLECT_RC=$?
-  "$GA4PY" - "$COLLECT_RC" "$PROVIDER" "$QUALITY_DIR" <<'PYQ'
-import json,os,sys,tempfile
-from datetime import datetime,timezone
-from pathlib import Path
-rc,provider,directory=int(sys.argv[1]),sys.argv[2],Path(sys.argv[3])
-now=datetime.now(timezone.utc).isoformat()
-for name in ('acquisition-quality.json','acquisition-attempt.json'):
- path=directory/name
- try: value=json.loads(path.read_text())
- except (OSError,ValueError): value={}
- if not isinstance(value,dict): value={}
- value['updated_at' if name=='acquisition-quality.json' else 'attempted_at']=now
- record={'collector_rc':rc}
- if name=='acquisition-quality.json':record['state']='available' if rc==0 else 'degraded'
- else:record['attempted_at']=now
- value[provider]=record
- with tempfile.NamedTemporaryFile(mode='w',dir=directory,delete=False) as f:
-  json.dump(value,f,ensure_ascii=False,indent=2,sort_keys=True)
-  f.write('\n');tmp=f.name
- os.replace(tmp,path)
-PYQ
-  if (( COLLECT_RC != 0 )); then
-    echo "$(date -Iseconds) $PROVIDER affiliate collector degraded; retry in one hour without blocking the other provider"
-  fi
-done
-AFFILIATE_ARGS=(--mode daily)
-if [[ -r "$HOME/.config/valuecommerce/report-api.json" ]]; then
-  AFFILIATE_ARGS+=(--fetch)
-fi
-"$GA4PY" pipeline/affiliate_pipeline.py "${AFFILIATE_ARGS[@]}" || echo "$(date -Iseconds) affiliate acquisition degraded; article processing continues" >&2
-"$GA4PY" pipeline/actuals_adapter.py --sync || echo "$(date -Iseconds) actuals sync degraded; article processing continues" >&2
 GROWTH_RC=0
 if [[ "$PUBLISH_ALLOWED" == "1" ]]; then
   "$PY" pipeline/run_with_timeout.py 900 "$PY" pipeline/growth_runtime.py --publish --scheduled || GROWTH_RC=$?
 else
   echo "$(date -Iseconds) global publishing kill switch disabled; metrics remain enabled"
-fi
-MONITOR_RC=0
-"$PY" pipeline/article_publication_metrics.py >/dev/null || MONITOR_RC=$?
-"$GA4PY" pipeline/actuals_adapter.py --sync || MONITOR_RC=$?
-if (( MONITOR_RC != 0 )); then
-  echo "$(date -Iseconds) publication monitoring refresh failed; publication outcome preserved"
 fi
 exit "$GROWTH_RC"
