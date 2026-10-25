@@ -1,0 +1,1118 @@
+{
+  "contract_version": "bf7d78a8237179bb977f6ca29f54f732162e9d387723eb0c936bc77316835b8f",
+  "evidence_sha256": "3f07947f09812825e978bd465385730f6786d740a7dc5d41f66085c2a0001727",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 14848,
+    "input_tokens": 41801,
+    "member_binding_revision": 4,
+    "output_tokens": 7256,
+    "reasoning_effort": "low",
+    "reasoning_output_tokens": 364,
+    "session_id": "01a17532-9f27-7571-8d08-11382e5dc45c",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "23917e4c44c56fb22d800ddba1b2b027b2a531854a1f476f3f99934dfeeb1305",
+  "review": {
+    "buying_guidance": true,
+    "claims_grounded": true,
+    "complete_comparison": true,
+    "distinct_products": true,
+    "duplicate_pair_checks": [
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "同一筐体の証拠はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "",
+            "reason": "色・意匠違いのみとは確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "包装違いのみとは確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "比較できる寸法がそろわない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "USB Type-C(TM)プラグとUSB-Aプラグを両方搭載",
+            "reason": "記載された接続端子構成が異なる。",
+            "right_quote": "USB-C ポート数 1 (機器接続用 × 1)",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代関係は確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "エレコム(ELECOM)",
+            "reason": "異なるブランドとして記載される。",
+            "right_quote": "Anker",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "2スロット同時使用可能",
+            "reason": "同時使用の明示と接続条件に選択上の違いがある。",
+            "right_quote": "Anker USB-C 2-in-1 カードリーダー",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "異なるブランドと接続構成が示され、同一製品の証拠はない。",
+        "right_ref": "p2"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "同一筐体の証拠はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "",
+            "reason": "色・意匠違いのみとは確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "包装違いのみとは確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "比較できる寸法がそろわない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "SD/microSD 2スロット同時使用可能",
+            "reason": "明示される併用対象が異なる。",
+            "right_quote": "USBデバイスを使用したデータ転送もサポートします",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代関係は確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "エレコム(ELECOM)",
+            "reason": "異なるブランドとして記載される。",
+            "right_quote": "SUNTRSI",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "SD/microSD 2スロット同時使用可能",
+            "reason": "二枚のカードとUSB周辺機器で、明示された併用用途が異なる。",
+            "right_quote": "SD/MicroカードとUSB周辺機器は同時に認識できます",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "ブランドと明示された用途が異なり、同一製品の証拠はない。",
+        "right_ref": "p3"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "同一筐体の証拠はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "",
+            "reason": "色・意匠違いのみとは確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "包装違いのみとは確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "比較できる寸法がそろわない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "",
+            "reason": "両者に二種類の端子と二つのカードスロットの記載があり、構造差は確定できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代関係は確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "エレコム(ELECOM)",
+            "reason": "異なるブランドとして記載される。",
+            "right_quote": "aceyoon",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "UHS-I(最大104MB/s)に対応",
+            "reason": "明示された速度規格の範囲が異なり、購入時に確認する条件がある。",
+            "right_quote": "USB3.0規格に対応",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "ブランドと製品識別情報が異なり、同一製品の証拠はない。",
+        "right_ref": "p4"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "同一筐体の証拠はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "",
+            "reason": "色・意匠違いのみとは確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "包装違いのみとは確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "一方は厚み、他方は全寸法の記載であり、差を判定できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "",
+            "reason": "両者に二種類の端子とカード同時使用の記載があり、構造差は確定できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代関係は確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "エレコム(ELECOM)",
+            "reason": "異なるブランドとして記載される。",
+            "right_quote": "TP-Link",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "最大104MB/s(理論値)",
+            "reason": "出典に明示されたカード側速度条件と対応OSの情報量を比較できる。",
+            "right_quote": "UHS-I対応： 最大200MB/秒の読み取り速度",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "ブランドと型番が異なり、同一製品の証拠はない。",
+        "right_ref": "p5"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "同一筐体の証拠はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "",
+            "reason": "色・意匠違いのみとは確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "包装違いのみとは確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "比較できる寸法がそろわない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "直挿し",
+            "reason": "直挿しとケーブル構成の違いが明示される。",
+            "right_quote": "USB Type-C/A dual cord design",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代関係は確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "エレコム(ELECOM)",
+            "reason": "異なるブランドとして記載される。",
+            "right_quote": "BENFEI",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "2スロット同時使用可能",
+            "reason": "カード同時使用の明示と接続形状に選択上の違いがある。",
+            "right_quote": "USB Type-C/A dual cord design",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "ブランドと接続形状が異なり、同一製品の証拠はない。",
+        "right_ref": "p6"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "同一筐体の証拠はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "",
+            "reason": "色・意匠違いのみとは確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "包装違いのみとは確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "比較できる寸法がそろわない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "SDスロットとMicro SDスロットを搭載",
+            "reason": "後者にはカード以外の周辺機器用途が明示される。",
+            "right_quote": "USBデバイスを使用したデータ転送もサポートします",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代関係は確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Anker",
+            "reason": "異なるブランドとして記載される。",
+            "right_quote": "SUNTRSI",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "Anker USB-C 2-in-1 カードリーダー",
+            "reason": "USB周辺機器との併用が後者の選択理由になる。",
+            "right_quote": "SD/MicroカードとUSB周辺機器は同時に認識できます",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p2",
+        "reason": "ブランドと明示された用途が異なり、同一製品の証拠はない。",
+        "right_ref": "p3"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "同一筐体の証拠はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "",
+            "reason": "色・意匠違いのみとは確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "包装違いのみとは確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "比較できる寸法がそろわない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "USB-C ポート数 1 (機器接続用 × 1)",
+            "reason": "記載された接続端子構成が異なる。",
+            "right_quote": "USB-CとUSB-Aの双頭対応",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代関係は確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Anker",
+            "reason": "異なるブランドとして記載される。",
+            "right_quote": "aceyoon",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "USB-C 2-in-1 カードリーダー",
+            "reason": "端子構成と同時使用条件に選択上の違いがある。",
+            "right_quote": "SD＋TFデュアルスロットで同時読み書き可能",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p2",
+        "reason": "ブランドと接続構成が異なり、同一製品の証拠はない。",
+        "right_ref": "p4"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "同一筐体の証拠はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "",
+            "reason": "色・意匠違いのみとは確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "包装違いのみとは確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "比較できる寸法がそろわない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "USB-C ポート数 1 (機器接続用 × 1)",
+            "reason": "記載された接続端子構成が異なる。",
+            "right_quote": "Type-C＆A デュアルコネクター",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代関係は確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Anker",
+            "reason": "異なるブランドとして記載される。",
+            "right_quote": "TP-Link",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "Anker USB-C 2-in-1 カードリーダー",
+            "reason": "端子構成とカード同時使用の明示に選択上の違いがある。",
+            "right_quote": "同時読み書き可能なデュアルスロット",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p2",
+        "reason": "ブランドと接続構成が異なり、同一製品の証拠はない。",
+        "right_ref": "p5"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "同一筐体の証拠はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "",
+            "reason": "色・意匠違いのみとは確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "包装違いのみとは確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "比較できる寸法がそろわない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "USB-C 2-in-1 カードリーダー",
+            "reason": "後者には二種類の端子を使うケーブル構成が明示される。",
+            "right_quote": "USB Type-C/A dual cord design",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代関係は確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Anker",
+            "reason": "異なるブランドとして記載される。",
+            "right_quote": "BENFEI",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "USB-C ポート数 1 (機器接続用 × 1)",
+            "reason": "使用する端子と接続形状を比較できる。",
+            "right_quote": "USB Type-C/A dual cord design",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p2",
+        "reason": "ブランドと接続構成が異なり、同一製品の証拠はない。",
+        "right_ref": "p6"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "同一筐体の証拠はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "",
+            "reason": "色・意匠違いのみとは確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "包装違いのみとは確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "比較できる寸法がそろわない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "USBデバイスを使用したデータ転送もサポートします",
+            "reason": "周辺機器用途と二種類のホスト端子という異なる構成が記載される。",
+            "right_quote": "USB-CとUSB-Aの双頭対応",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代関係は確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "SUNTRSI",
+            "reason": "異なるブランドとして記載される。",
+            "right_quote": "aceyoon",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "SD/MicroカードとUSB周辺機器は同時に認識できます",
+            "reason": "同時利用の対象が異なる。",
+            "right_quote": "SD＋TFデュアルスロットで同時読み書き可能",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p3",
+        "reason": "ブランドと明示された接続用途が異なり、同一製品の証拠はない。",
+        "right_ref": "p4"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "同一筐体の証拠はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "",
+            "reason": "色・意匠違いのみとは確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "包装違いのみとは確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "比較できる寸法がそろわない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "USBデバイスを使用したデータ転送もサポートします",
+            "reason": "周辺機器接続と二種類のホスト端子という異なる構成が記載される。",
+            "right_quote": "Type-C＆A デュアルコネクター",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代関係は確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "SUNTRSI",
+            "reason": "異なるブランドとして記載される。",
+            "right_quote": "TP-Link",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "SD/MicroカードとUSB周辺機器は同時に認識できます",
+            "reason": "周辺機器併用と二枚のカードの同時作業を比較できる。",
+            "right_quote": "同時読み書き可能なデュアルスロット",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p3",
+        "reason": "ブランドと明示された用途が異なり、同一製品の証拠はない。",
+        "right_ref": "p5"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "同一筐体の証拠はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "",
+            "reason": "色・意匠違いのみとは確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "包装違いのみとは確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "比較できる寸法がそろわない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "USBデバイスを使用したデータ転送もサポートします",
+            "reason": "周辺機器用途と二種類の端子を備えるケーブル構成が異なる。",
+            "right_quote": "USB Type-C/A dual cord design",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代関係は確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "SUNTRSI",
+            "reason": "異なるブランドとして記載される。",
+            "right_quote": "BENFEI",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "SD/MicroカードとUSB周辺機器は同時に認識できます",
+            "reason": "周辺機器併用と接続形状を比較できる。",
+            "right_quote": "USB Type-C/A dual cord design",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p3",
+        "reason": "ブランドと明示された用途が異なり、同一製品の証拠はない。",
+        "right_ref": "p6"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "同一筐体の証拠はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "",
+            "reason": "色・意匠違いのみとは確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "包装違いのみとは確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "比較できる寸法がそろわない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "",
+            "reason": "両者に二種類の端子とカード同時使用の記載があり、構造差は確定できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代関係は確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "aceyoon",
+            "reason": "異なるブランドとして記載される。",
+            "right_quote": "TP-Link",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "OTG対応のAndroidスマホ",
+            "reason": "明示された端末・OS条件とカード側速度規格の情報量が異なる。",
+            "right_quote": "Windows・Linux OS・macOS・Android・ChromeOS・iPadOS・iOSに対応",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p4",
+        "reason": "ブランドと製品識別情報が異なり、同一製品の証拠はない。",
+        "right_ref": "p5"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "同一筐体の証拠はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "",
+            "reason": "色・意匠違いのみとは確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "包装違いのみとは確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "比較できる寸法がそろわない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "そのまま挿すだけ",
+            "reason": "直挿しとケーブル構成の違いが明示される。",
+            "right_quote": "USB Type-C/A dual cord design",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代関係は確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "aceyoon",
+            "reason": "異なるブランドとして記載される。",
+            "right_quote": "BENFEI",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "SD＋TFデュアルスロットで同時読み書き可能",
+            "reason": "カード同時使用の明示と接続形状に選択上の違いがある。",
+            "right_quote": "USB Type-C/A dual cord design",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p4",
+        "reason": "ブランドと接続形状が異なり、同一製品の証拠はない。",
+        "right_ref": "p6"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "同一筐体の証拠はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "",
+            "reason": "色・意匠違いのみとは確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "包装違いのみとは確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "比較できる寸法がそろわない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "",
+            "reason": "両者ともUSB-CとUSB-Aへの対応が記載されるが、出典だけで構造差は確定できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代関係は確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "TP-Link",
+            "reason": "異なるブランドとして記載される。",
+            "right_quote": "BENFEI",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "同時読み書き可能なデュアルスロット",
+            "reason": "カード同時使用の明示と接続形状に選択上の違いがある。",
+            "right_quote": "USB Type-C/A dual cord design",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p5",
+        "reason": "ブランドと型番・製品名が異なり、同一製品の証拠はない。",
+        "right_ref": "p6"
+      }
+    ],
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "card_support",
+            "quote": "SD/microSD 2スロット同時使用可能"
+          },
+          {
+            "axis_id": "transfer",
+            "quote": "UHS-I対応・最大104MB/s(理論値)"
+          },
+          {
+            "axis_id": "device_fit",
+            "quote": "USB Type-C(TM)プラグとUSB-Aプラグを両方搭載"
+          }
+        ],
+        "identity_key": "エレコム カードリーダー USB Type-C & USB-A 両対応 SD/microSD 2スロット同時使用 UHS-I対応 直挿し アルミ筐体 ドライバ不要 ブラック MR3C-D21EBK",
+        "identity_quote": "エレコム カードリーダー USB Type-C & USB-A 両対応 SD/microSD 2スロット同時使用 UHS-I対応 直挿し アルミ筐体 ドライバ不要 ブラック MR3C-D21EBK",
+        "reason": "型番、カード二枚の同時使用、両端子、UHS-Iの理論値が明示される。記事も速度上限と直挿し時の確認点を適切に説明する。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "card_support",
+            "quote": "SDスロットとMicro SDスロットを搭載"
+          },
+          {
+            "axis_id": "device_fit",
+            "quote": "USB-C ポート数 1 (機器接続用 × 1)"
+          }
+        ],
+        "identity_key": "Anker USB-C 2-in-1 カードリーダー",
+        "identity_quote": "Anker USB-C 2-in-1 カードリーダー",
+        "reason": "公式ページに製品名と型番があり、二種類のカードとUSB-C接続が確認できる。記事は二枚同時使用とカード側速度規格を未確認として扱う。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "card_support",
+            "quote": "SD/MicroカードとUSB周辺機器は同時に認識できます"
+          },
+          {
+            "axis_id": "device_fit",
+            "quote": "USB Cコネクタを搭載したPhone 15-17シリーズ、Pad、Android、Macbook、タブレットPCに対応しています"
+          }
+        ],
+        "identity_key": "SUNTRSI 3-in-1",
+        "identity_quote": "SUNTRSI 3-in-1 Type-c/ライトニングー カードリーダー",
+        "reason": "ブランドと製品系列、カードとUSB周辺機器の使用条件が示される。記事は販売文の速度・耐久性を実測性能とせず、二枚のカードの同時使用も未確認としている。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "card_support",
+            "quote": "SD＋TFデュアルスロットで同時読み書き可能"
+          },
+          {
+            "axis_id": "transfer",
+            "quote": "USB3.0規格に対応"
+          },
+          {
+            "axis_id": "device_fit",
+            "quote": "USB-CとUSB-Aの双頭対応"
+          }
+        ],
+        "identity_key": "aceyoon SDカードリーダー USB-C/A SD TF 4in1",
+        "identity_quote": "aceyoon SDカードリーダー USB-C/A SD TF 4in1 デュアルスロット（SD/TFカード）USB3.0",
+        "reason": "ブランドと製品系列が示され、二枚の同時使用、両端子、USB 3.0が明示される。記事は5Gbpsをカードの実効速度と扱わない。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "card_support",
+            "quote": "SDカードとmicroSDカードの両方で同時に読み書きでき"
+          },
+          {
+            "axis_id": "transfer",
+            "quote": "UHS-I対応： 最大200MB/秒の読み取り速度"
+          },
+          {
+            "axis_id": "device_fit",
+            "quote": "Windows・Linux OS・macOS・Android・ChromeOS・iPadOS・iOSに対応"
+          }
+        ],
+        "identity_key": "TP-Link SDカードリーダー USB3.0 高速転送 Type-C/Type-A 2-in-1",
+        "identity_quote": "TP-Link SDカードリーダー USB3.0 高速転送 Type-C/Type-A 2-in-1",
+        "reason": "identity_keyとidentity_quoteは当該製品の検証済み掲載タイトルに連続して存在する同一の原文部分文字列であり、ブランドと製品系列を識別できる。掲載タイトルと公式資料には型番UA430Dもある。公式仕様でカード同時読み書き、両端子、対応OSと速度条件を確認でき、記事はUSB規格値とカード側の論理上限を分けて説明する。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "card_support",
+            "quote": "BENFEI SD/Micro SD card reader provides high data speed access to 2 different card type"
+          },
+          {
+            "axis_id": "transfer",
+            "quote": "transfer rates in UHS-I mode up to 104MB/sec"
+          },
+          {
+            "axis_id": "device_fit",
+            "quote": "USB Type-C/A dual cord design"
+          }
+        ],
+        "identity_key": "BENFEI SDカードリーダー USB-C対応 デュアルスロット",
+        "identity_quote": "BENFEI SDカードリーダー USB-C対応 デュアルスロット（SD/MicroSD/TFカード）",
+        "reason": "ブランドと製品名に加え、公式ページに型番がある。二種類のカード、両端子を使うケーブル構成、条件付きのUHS-I速度が示され、記事は二枚同時読み書きを未確認として扱う。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reason": "六製品は各出典のブランドと製品系列または型番で識別でき、重複を示す積極的な証拠はない。カード対応、接続条件、確認できる速度規格に基づく比較が成立する。記事は二枚同時使用が未確認の製品について断定を避け、規格上の最大速度と実速度を区別し、用途ごとの選択理由を示している。",
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}

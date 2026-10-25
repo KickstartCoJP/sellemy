@@ -25596,13 +25596,13 @@
   {
     "productId": "AMZ-B0H8NM5MPP",
     "asin": "B0H8NM5MPP",
-    "name": "エレコムは二スロット同時使用を明示",
-    "brand": "",
+    "name": "エレコム｜二枚の同時使用と二種類の端子",
+    "brand": "エレコム(ELECOM)",
     "amazonUrl": "https://www.amazon.co.jp/dp/B0H8NM5MPP?tag=sellemy-22",
     "imageUrl": "https://m.media-amazon.com/images/I/51cOrpapdzL._AC_UL320_.jpg",
-    "description": "SDとmicroSDの二スロット同時使用を掲げるエレコムのMR3C-D21EBKは、USB-CとUSB-Aに両対応する直挿し型です。UHS-I対応、アルミ筐体、ブラック、ドライバ不要の記載もあります。カードの種類と同時使用を分けて確認できる一方、USB側の転送規格や実測速度は示されていません。同時使用についても、二枚間のコピー方法や同時転送時の速度配分までは不明です。ドライバ不要との説明は、すべてのOSやスマートフォンで動作することを意味するものではなく、対応端末の照合が必要です。直挿し構造では本体寸法も確認したいところですが、端末のケースや隣接端子との収まりを判断する情報はありません。この候補は二種類の端子と二スロットを使う構成を起点に、接続先ごとの動作条件と同時使用の範囲を確かめる対象です。",
-    "articleSlug": "usb-memory-card-readers",
-    "articleTitle": "メモリーカードリーダー比較｜カード規格・接続先・転送条件を確認",
+    "description": "エレコムのMR3C-D21EBKは、SDとmicroSDの二つのスロットを同時に使えると掲載されています。カメラと別の機器のカードを一度に接続したい人の候補です。USB-CとUSB-Aの両プラグがあり、異なる端子の機器を使い分ける場合にも合います。両スロットはUHS-I対応とされ、最大104MB/sは理論値です。UHS-IIやSD Expressのカードも読み書き可能とされていますが、転送速度はUHS-I相当と明記されています。速いカードを挿しても、カード本来の上限まで転送できるという意味ではありません。直挿し型なので、端末の端子周辺に差し込める余地も確認してください。二枚の同時使用と接続先の選択肢を重視し、速度規格の違いも確認して選びたい人向けです。",
+    "articleSlug": "usb-c-multiport-card-readers",
+    "articleTitle": "USB-Cカードリーダー比較｜対応カード・転送規格・端末との接続で選ぶ",
     "category": "gadget"
   },
   {
@@ -25644,13 +25644,13 @@
   {
     "productId": "AMZ-B0H87RZ19J",
     "asin": "B0H87RZ19J",
-    "name": "SUNTRSIは端子と最大1TBの条件を照合",
-    "brand": "",
+    "name": "SUNTRSI｜カードとUSB周辺機器の併用に注目",
+    "brand": "SUNTRSI",
     "amazonUrl": "https://www.amazon.co.jp/dp/B0H87RZ19J?tag=sellemy-22",
     "imageUrl": "https://m.media-amazon.com/images/I/61WgeCg3xsL._AC_UL320_.jpg",
-    "description": "Type-CとLightningへの言及があるSUNTRSIのホワイトは、USB・TF・SDの3in1を掲げています。最大1TB対応、OTG、双方向転送、アプリ不要・設定不要との記載もあります。ただし、1TBがどのカードや接続条件に適用されるかは不明で、すべてのスロットと端末に共通する上限とは確定できません。全スマホ対応という紹介についても、対応OSの版や機種別の制限がなく、手持ちのスマートフォンで使える保証としては扱えません。二種類の端子が一体なのか、付属アダプターを使う構成なのかも確認が必要です。高速や双方向という表現から、USBの転送規格や具体的な読み書き速度を補うことはできません。この候補では端子の構成と最大容量の対象を特定し、使う機種・カード・転送方向の組み合わせを照合したいところです。",
-    "articleSlug": "usb-memory-card-readers",
-    "articleTitle": "メモリーカードリーダー比較｜カード規格・接続先・転送条件を確認",
+    "description": "SUNTRSIの3-in-1カードリーダーは、SDまたはmicroSDに加え、USB周辺機器を接続する使い方が掲載されています。販売ページには、SD・microSDカードとUSB周辺機器を同時に認識できるとの記載があります。カードを読みながらUSBメモリなども使いたい人は候補にできますが、接続予定の周辺機器と端末の対応条件を個別に確認してください。USB-C端子を持つスマートフォン、タブレット、MacBookなどが対応先として挙げられています。ただし、広い対応機種の表現だけで手元の機器での動作は確約できません。転送速度や耐久性の宣伝表現も、実際の作業時間や寿命の根拠にはできません。二枚のカードの同時読み書きは別途確認が必要です。カードと周辺機器の併用を優先して選びましょう。",
+    "articleSlug": "usb-c-multiport-card-readers",
+    "articleTitle": "USB-Cカードリーダー比較｜対応カード・転送規格・端末との接続で選ぶ",
     "category": "gadget"
   },
   {
@@ -31532,5 +31532,53 @@
     "articleSlug": "leave-in-hair-milks",
     "articleTitle": "洗い流さないヘアミルク比較｜使う髪の状態・塗り方・ドライヤー前後で選ぶ",
     "category": "beauty"
+  },
+  {
+    "productId": "AMZ-B07P1XB7BG",
+    "asin": "B07P1XB7BG",
+    "name": "Anker｜USB-C端末で使う二つのカードスロット",
+    "brand": "Anker",
+    "amazonUrl": "https://www.amazon.co.jp/dp/B07P1XB7BG?tag=sellemy-22",
+    "imageUrl": "https://m.media-amazon.com/images/I/613I61kPGSL._AC_UL320_.jpg",
+    "description": "AnkerのUSB-C 2-in-1カードリーダーは、公式製品ページでSDとmicroSDのスロット、USB-C接続、型番A83700A2を確認できます。USB-C端末で二種類のカードを使い、USB-A接続は必要ない人向けです。公式ページにはMacBookや一部のiPad、Galaxyなど対応機種の例があります。ただし、同じシリーズ名でも世代や端子は異なるため、自分の機種と照合してください。提示資料からは二枚を同時に読み書きできるか、カード側がどの速度規格に対応するかまでは確定できません。並行作業や速度規格が購入条件なら、事前の確認が必要です。USB-C接続でSDとmicroSDの両方を扱いたい人は、まずこの構成が用途に合うかを確かめましょう。",
+    "articleSlug": "usb-c-multiport-card-readers",
+    "articleTitle": "USB-Cカードリーダー比較｜対応カード・転送規格・端末との接続で選ぶ",
+    "category": "gadget"
+  },
+  {
+    "productId": "AMZ-B0H4QRNNWY",
+    "asin": "B0H4QRNNWY",
+    "name": "aceyoon｜USB-C・USB-Aを直挿しで使い分ける",
+    "brand": "aceyoon",
+    "amazonUrl": "https://www.amazon.co.jp/dp/B0H4QRNNWY?tag=sellemy-22",
+    "imageUrl": "https://m.media-amazon.com/images/I/616Rnwf7V3L._AC_UL320_.jpg",
+    "description": "aceyoonのカードリーダーは、USB-CとUSB-Aの端子を一体化した直挿し型です。USB-CのスマートフォンとUSB-Aのパソコンを行き来する人は、端子の使い分けが購入判断の軸になります。販売ページにはSDとmicroSDのスロットがあり、二枚を同時に読み書きできると記載されています。撮影データを二種類のカードで整理したい人には、この同時使用の記載が判断材料です。USB 3.0対応の表示は端末との接続規格を示します。併記された最大5Gbpsを、カードからの実効転送速度と読み替えないでください。Android端末ではOTG対応が条件とされるため、端子の形だけでなく端末の仕様も確認しましょう。二枚の同時使用と二種類の端子を直挿しで使うことを重視する人向けです。",
+    "articleSlug": "usb-c-multiport-card-readers",
+    "articleTitle": "USB-Cカードリーダー比較｜対応カード・転送規格・端末との接続で選ぶ",
+    "category": "gadget"
+  },
+  {
+    "productId": "AMZ-B0FJ1ZG8VZ",
+    "asin": "B0FJ1ZG8VZ",
+    "name": "TP-Link UA430D｜カードとOSの条件を詳しく確認できる",
+    "brand": "TP-Link",
+    "amazonUrl": "https://www.amazon.co.jp/dp/B0FJ1ZG8VZ?tag=sellemy-22",
+    "imageUrl": "https://m.media-amazon.com/images/I/61KYjIvR98L._AC_UL320_.jpg",
+    "description": "TP-Link UA430Dは、公式製品ページでSDとmicroSDの同時読み書きが明示されています。二枚を抜き差しせずに扱いたい人に適しています。USB-CとUSB-Aの両方を備え、Windows、macOS、iPadOS、iOS、Android、Linux、ChromeOSへの対応も公式仕様に記載されています。複数の端末を使うなら、自分のOSと端子を照合してください。カード側はUHS-I対応で、最大200MB/秒の読み取り速度が示されています。ただし公式注記では、対応デバイスを使った場合の論理上の最大値で、実速度は環境によって変わるとされています。USB 3.0の最大5Gbpsは別の規格値です。二つの数字から取り込み時間を予測せず、同時作業と対応条件の明示を軸に選びましょう。",
+    "articleSlug": "usb-c-multiport-card-readers",
+    "articleTitle": "USB-Cカードリーダー比較｜対応カード・転送規格・端末との接続で選ぶ",
+    "category": "gadget"
+  },
+  {
+    "productId": "AMZ-B0D9K82TNL",
+    "asin": "B0D9K82TNL",
+    "name": "BENFEI｜USB-C・USB-Aをケーブルで接続",
+    "brand": "BENFEI",
+    "amazonUrl": "https://www.amazon.co.jp/dp/B0D9K82TNL?tag=sellemy-22",
+    "imageUrl": "https://m.media-amazon.com/images/I/71zLBIy8QqL._AC_UL320_.jpg",
+    "description": "BENFEIのカードリーダーは、公式製品ページでSDとmicroSDへの対応、USB-CとUSB-Aを使うケーブル式の接続構成が示されています。直挿し型では端子周辺の空間が気になる人は、形状を比較してください。公式ページにはUSB 3.0またはUSB-C接続時のUHS-Iモードで最大104MB/秒と記載されています。ただし最終的な速度はカードとUSB端子の種類で決まるとの注記があり、表示値を常に出る速度として扱えません。iPhone 15 Proや一部のMacBookなど対応機種の例もあります。購入前に自分の機種と端子を照合しましょう。二つのスロットがある一方、二枚の同時読み書きは提示資料では確定できません。同時作業より、ケーブル式の形状と二種類の端子を優先する人向けです。",
+    "articleSlug": "usb-c-multiport-card-readers",
+    "articleTitle": "USB-Cカードリーダー比較｜対応カード・転送規格・端末との接続で選ぶ",
+    "category": "gadget"
   }
 ]

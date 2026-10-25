@@ -1,0 +1,1440 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/usb-c-multiport-card-readers.html",
+  "category": "gadget",
+  "comparison_axes": [
+    {
+      "id": "card_support",
+      "keywords": [
+        "SD",
+        "microSD",
+        "同時使用"
+      ],
+      "label": "対応カードと同時使用条件"
+    },
+    {
+      "id": "transfer",
+      "keywords": [
+        "USB規格",
+        "UHS",
+        "転送速度"
+      ],
+      "label": "USBとカードの速度規格"
+    },
+    {
+      "id": "device_fit",
+      "keywords": [
+        "USB-C",
+        "OS",
+        "ケーブル長"
+      ],
+      "label": "端末・OSとの接続条件"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/usb-c-multiport-card-readers/usb-c-multiport-card-readers.png",
+  "product_acceptance": {
+    "contract_version": "bf7d78a8237179bb977f6ca29f54f732162e9d387723eb0c936bc77316835b8f",
+    "evidence_sha256": "3f07947f09812825e978bd465385730f6786d740a7dc5d41f66085c2a0001727",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 14848,
+      "input_tokens": 31154,
+      "member_binding_revision": 4,
+      "output_tokens": 5775,
+      "reasoning_effort": "low",
+      "reasoning_output_tokens": 133,
+      "session_id": "01a1752f-93a4-78a2-987f-49ed699b1edc",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "",
+              "reason": "No shared body established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "",
+              "reason": "No variant relationship established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "",
+              "reason": "No packaging relationship established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "",
+              "reason": "Not established for both.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "USB Type-C & USB-A 両対応",
+              "reason": "The cited connection designs differ.",
+              "right_quote": "USB-C 2-in-1 カードリーダー",
+              "status": "PASS"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "",
+              "reason": "No shared series established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "エレコム(ELECOM)",
+              "reason": "Different identified brands.",
+              "right_quote": "Anker",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "USB Type-C & USB-A 両対応",
+              "reason": "Connection choice is meaningful.",
+              "right_quote": "USB-C 2-in-1 カードリーダー",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p1",
+          "reason": "Different brands and documented connection designs; no affirmative duplication evidence.",
+          "right_ref": "p2"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "",
+              "reason": "No shared body established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "",
+              "reason": "No variant relationship established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "",
+              "reason": "No packaging relationship established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "",
+              "reason": "Not established for both.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "USB Type-C(TM)プラグとUSB-Aプラグを両方搭載",
+              "reason": "Documented connection and peripheral functions differ.",
+              "right_quote": "SD/MicroカードとUSB周辺機器は同時に認識できます",
+              "status": "PASS"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "",
+              "reason": "No shared series established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "エレコム(ELECOM)",
+              "reason": "Different identified brands.",
+              "right_quote": "SUNTRSI",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "USB Type-C(TM)プラグとUSB-Aプラグを両方搭載",
+              "reason": "These functions support different connection needs.",
+              "right_quote": "SD/MicroカードとUSB周辺機器は同時に認識できます",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p1",
+          "reason": "Different brands and cited functions; no affirmative duplication evidence.",
+          "right_ref": "p3"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "",
+              "reason": "No shared body established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "",
+              "reason": "No variant relationship established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "",
+              "reason": "No packaging relationship established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "",
+              "reason": "Not established for both.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "",
+              "reason": "Both describe dual connectors and card slots; body differences are unverified.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "",
+              "reason": "No shared series established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "エレコム(ELECOM)",
+              "reason": "Different identified brands.",
+              "right_quote": "aceyoon",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "UHS-I対応・最大104MB/s(理論値)",
+              "reason": "The sources specify different transfer-standard details for comparison.",
+              "right_quote": "USB3.0規格に対応",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p1",
+          "reason": "No affirmative evidence that these differently branded products share an identity.",
+          "right_ref": "p4"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "",
+              "reason": "No shared body established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "",
+              "reason": "No variant relationship established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "",
+              "reason": "No packaging relationship established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "",
+              "reason": "Not established for both.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "",
+              "reason": "Both describe dual connectors and slots; body differences are unverified.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "",
+              "reason": "No shared series established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "エレコム(ELECOM)",
+              "reason": "Different identified brands.",
+              "right_quote": "TP-Link",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "最大104MB/s(理論値)",
+              "reason": "The stated UHS-I limits differ and are explicitly qualified.",
+              "right_quote": "最大200MB/秒の読み取り速度",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p1",
+          "reason": "Different source-backed models and brands; no affirmative duplication evidence.",
+          "right_ref": "p5"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "",
+              "reason": "No shared body established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "",
+              "reason": "No variant relationship established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "",
+              "reason": "No packaging relationship established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "",
+              "reason": "Not established for both.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "",
+              "reason": "A body difference is not established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "",
+              "reason": "No shared series established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "エレコム(ELECOM)",
+              "reason": "Different identified brands.",
+              "right_quote": "BENFEI",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "2スロット同時使用可能",
+              "reason": "Simultaneous use is explicit for p1 but not established for p6.",
+              "right_quote": "Dual Slot Memory Card Reader",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p1",
+          "reason": "Different brands and product identities; no affirmative duplication evidence.",
+          "right_ref": "p6"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "",
+              "reason": "No shared body established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "",
+              "reason": "No variant relationship established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "",
+              "reason": "No packaging relationship established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "",
+              "reason": "Not established for both.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "USB-C 2-in-1 カードリーダー",
+              "reason": "p3 explicitly describes USB-peripheral use absent from p2's documented card-reader functions.",
+              "right_quote": "SD/MicroカードとUSB周辺機器は同時に認識できます",
+              "status": "PASS"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "",
+              "reason": "No shared series established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "Anker",
+              "reason": "Different identified brands.",
+              "right_quote": "SUNTRSI",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "SDスロットとMicro SDスロット",
+              "reason": "The documented peripheral function creates a purchase distinction.",
+              "right_quote": "SD/MicroカードとUSB周辺機器は同時に認識できます",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p2",
+          "reason": "Different brands and documented functions; no affirmative duplication evidence.",
+          "right_ref": "p3"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "",
+              "reason": "No shared body established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "",
+              "reason": "No variant relationship established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "",
+              "reason": "No packaging relationship established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "",
+              "reason": "Not established for both.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "USB-C 2-in-1 カードリーダー",
+              "reason": "p4 explicitly provides two host-connector types.",
+              "right_quote": "USB-CとUSB-Aの双頭対応",
+              "status": "PASS"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "",
+              "reason": "No shared series established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "Anker",
+              "reason": "Different identified brands.",
+              "right_quote": "aceyoon",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "USB-C 2-in-1 カードリーダー",
+              "reason": "Host-connector choice differs.",
+              "right_quote": "USB-CとUSB-Aの双頭対応",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p2",
+          "reason": "Different brands and cited connector designs; no affirmative duplication evidence.",
+          "right_ref": "p4"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "",
+              "reason": "No shared body established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "",
+              "reason": "No variant relationship established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "",
+              "reason": "No packaging relationship established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "",
+              "reason": "Not established for both.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "USB-C 2-in-1 カードリーダー",
+              "reason": "p5 explicitly offers USB-C and USB-A connections.",
+              "right_quote": "Type-C＆A デュアルコネクター",
+              "status": "PASS"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "",
+              "reason": "No shared series established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "Anker",
+              "reason": "Different identified brands.",
+              "right_quote": "TP-Link",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "USB-C 2-in-1 カードリーダー",
+              "reason": "Host-connector choice differs.",
+              "right_quote": "Type-C＆A デュアルコネクター",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p2",
+          "reason": "Different brands and documented connector designs; no affirmative duplication evidence.",
+          "right_ref": "p5"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "",
+              "reason": "No shared body established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "",
+              "reason": "No variant relationship established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "",
+              "reason": "No packaging relationship established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "",
+              "reason": "Not established for both.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "USB-C 2-in-1 カードリーダー",
+              "reason": "p6 explicitly describes a USB-C/A cord design.",
+              "right_quote": "USB Type-C/A dual cord design",
+              "status": "PASS"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "",
+              "reason": "No shared series established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "Anker",
+              "reason": "Different identified brands.",
+              "right_quote": "BENFEI",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "USB-C 2-in-1 カードリーダー",
+              "reason": "The documented connection options differ.",
+              "right_quote": "USB Type-C/A dual cord design",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p2",
+          "reason": "Different brands and cited connection designs; no affirmative duplication evidence.",
+          "right_ref": "p6"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "",
+              "reason": "No shared body established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "",
+              "reason": "No variant relationship established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "",
+              "reason": "No packaging relationship established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "",
+              "reason": "Not established for both.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "SD/MicroカードとUSB周辺機器は同時に認識できます",
+              "reason": "The documented peripheral and host-connector functions differ.",
+              "right_quote": "USB-CとUSB-Aの双頭対応",
+              "status": "PASS"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "",
+              "reason": "No shared series established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "SUNTRSI",
+              "reason": "Different identified brands.",
+              "right_quote": "aceyoon",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "SD/MicroカードとUSB周辺機器は同時に認識できます",
+              "reason": "They document different simultaneous-use cases.",
+              "right_quote": "SD＋TFデュアルスロットで同時読み書き可能",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p3",
+          "reason": "Different brands and documented functions; no affirmative duplication evidence.",
+          "right_ref": "p4"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "",
+              "reason": "No shared body established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "",
+              "reason": "No variant relationship established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "",
+              "reason": "No packaging relationship established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "",
+              "reason": "Not established for both.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "SD/MicroカードとUSB周辺機器は同時に認識できます",
+              "reason": "The cited functions address different connection needs.",
+              "right_quote": "Type-C＆A デュアルコネクター",
+              "status": "PASS"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "",
+              "reason": "No shared series established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "SUNTRSI",
+              "reason": "Different identified brands.",
+              "right_quote": "TP-Link",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "USB周辺機器は同時に認識できます",
+              "reason": "Peripheral use and specified card-read standard offer different selection reasons.",
+              "right_quote": "最大200MB/秒の読み取り速度",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p3",
+          "reason": "Different brands and documented functions; no affirmative duplication evidence.",
+          "right_ref": "p5"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "",
+              "reason": "No shared body established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "",
+              "reason": "No variant relationship established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "",
+              "reason": "No packaging relationship established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "",
+              "reason": "Not established for both.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "USB周辺機器は同時に認識できます",
+              "reason": "The cited functions differ.",
+              "right_quote": "USB Type-C/A dual cord design",
+              "status": "PASS"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "",
+              "reason": "No shared series established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "SUNTRSI",
+              "reason": "Different identified brands.",
+              "right_quote": "BENFEI",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "USB周辺機器は同時に認識できます",
+              "reason": "The documented use cases differ.",
+              "right_quote": "USB Type-C/A dual cord design",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p3",
+          "reason": "Different brands and documented functions; no affirmative duplication evidence.",
+          "right_ref": "p6"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "",
+              "reason": "No shared body established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "",
+              "reason": "No variant relationship established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "",
+              "reason": "No packaging relationship established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "",
+              "reason": "Not established for both.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "",
+              "reason": "Both describe USB-C/A connectors and dual card slots; body differences are unverified.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "",
+              "reason": "No shared series established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "aceyoon",
+              "reason": "Different identified brands.",
+              "right_quote": "TP-Link",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "USB3.0規格に対応",
+              "reason": "p5 specifies a card-interface limit that p4's excerpt does not establish.",
+              "right_quote": "UHS-I対応： 最大200MB/秒の読み取り速度",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p4",
+          "reason": "Different source-backed brands and model identities; no affirmative duplication evidence.",
+          "right_ref": "p5"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "",
+              "reason": "No shared body established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "",
+              "reason": "No variant relationship established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "",
+              "reason": "No packaging relationship established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "",
+              "reason": "Not established for both.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "",
+              "reason": "A body difference is not established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "",
+              "reason": "No shared series established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "aceyoon",
+              "reason": "Different identified brands.",
+              "right_quote": "BENFEI",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "SDカードとmicroSD（TF）カードを同時に挿せる",
+              "reason": "Simultaneous use is explicit for p4 but not established for p6.",
+              "right_quote": "Dual Slot Memory Card Reader",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p4",
+          "reason": "Different brands and source-backed identities; no affirmative duplication evidence.",
+          "right_ref": "p6"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "",
+              "reason": "No shared body established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "",
+              "reason": "No variant relationship established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "",
+              "reason": "No packaging relationship established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "",
+              "reason": "Not established for both.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "",
+              "reason": "Both describe USB-C/A connections and dual slots; body differences are unverified.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "",
+              "reason": "No shared series established.",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "TP-Link",
+              "reason": "Different identified brands.",
+              "right_quote": "BENFEI",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "最大200MB/秒の読み取り速度",
+              "reason": "Their stated card-read limits differ; both require real-world qualification.",
+              "right_quote": "UHS-I mode up to 104MB/sec",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p5",
+          "reason": "Different source-backed brands and models; no affirmative duplication evidence.",
+          "right_ref": "p6"
+        }
+      ],
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "card_support",
+              "quote": "SD/microSD 2スロット同時使用可能"
+            },
+            {
+              "axis_id": "device_fit",
+              "quote": "USB Type-C(TM)プラグとUSB-Aプラグを両方搭載"
+            },
+            {
+              "axis_id": "transfer",
+              "quote": "UHS-I対応・最大104MB/s(理論値)"
+            }
+          ],
+          "identity_key": "エレコム カードリーダー USB Type-C & USB-A 両対応 SD/microSD 2スロット同時使用 UHS-I対応 直挿し アルミ筐体 ドライバ不要 ブラック MR3C-D21EBK",
+          "identity_quote": "エレコム カードリーダー USB Type-C & USB-A 両対応 SD/microSD 2スロット同時使用 UHS-I対応 直挿し アルミ筐体 ドライバ不要 ブラック MR3C-D21EBK",
+          "reason": "The model is identified by MR3C-D21EBK. The verified excerpt explicitly supports simultaneous SD/microSD use, both host connectors, and UHS-I; its 104MB/s figure is theoretical. The identity key must be shortened to the literal source substring “MR3C-D21EBK” only if a model-only key is permitted; the supplied title does not contain a contiguous brand-plus-model substring.",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "card_support",
+              "quote": "microSD / SDカード スロット microSD / SD"
+            },
+            {
+              "axis_id": "device_fit",
+              "quote": "製品型番 A83700A2（グレー）"
+            }
+          ],
+          "identity_key": "Anker USB-C 2-in-1 カードリーダー",
+          "identity_quote": "Anker USB-C 2-in-1 カードリーダー",
+          "reason": "The official source identifies this product and model A83700A2. It supports SD and microSD and USB-C devices. Do not treat marketplace speed or durability language as measured performance.",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "card_support",
+              "quote": "SD/MicroカードとUSB周辺機器は同時に認識できます"
+            },
+            {
+              "axis_id": "device_fit",
+              "quote": "USB Cコネクタを搭載したPhone 15-17シリーズ、Pad、Android、Macbook、タブレットPCに対応しています"
+            }
+          ],
+          "identity_key": "SUNTRSI 3-in-1",
+          "identity_quote": "SDカードリーダー SUNTRSI 3-in-1 Type-c/ライトニングー カードリーダー",
+          "reason": "The source identifies a SUNTRSI 3-in-1 reader and explicitly describes card and USB-peripheral use with USB-C devices. Its speed and broad compatibility claims require qualification; they should not be presented as verified real-world results.",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "card_support",
+              "quote": "SD＋TFデュアルスロットで同時読み書き可能"
+            },
+            {
+              "axis_id": "device_fit",
+              "quote": "USB-CとUSB-Aの双頭対応"
+            },
+            {
+              "axis_id": "transfer",
+              "quote": "USB3.0規格に対応"
+            }
+          ],
+          "identity_key": "aceyoon SDカードリーダー USB-C/A SD TF 4in1",
+          "identity_quote": "aceyoon SDカードリーダー USB-C/A SD TF 4in1 デュアルスロット",
+          "reason": "The listing identifies a branded 4-in-1 reader and supplies explicit dual-slot, simultaneous-use, USB-C/A and USB 3.0 facts. The stated 5Gbps is a USB interface maximum, not demonstrated card throughput.",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "card_support",
+              "quote": "SDカードとmicroSDカードの両方で同時に読み書きでき"
+            },
+            {
+              "axis_id": "device_fit",
+              "quote": "macOS・Windows・iPadOS・iOS・Android・Linux OS・ChromeOSに対応"
+            },
+            {
+              "axis_id": "transfer",
+              "quote": "UHS-I対応： 最大200MB/秒の読み取り速度"
+            }
+          ],
+          "identity_key": "UA430D",
+          "identity_quote": "UA430D",
+          "reason": "TP-Link's official page identifies UA430D and details simultaneous SD/microSD access, USB-C/A, supported OSs, USB 3.0, and UHS-I. Its 200MB/s figure is an expressly conditional maximum. The source corpus has separate brand and model strings, but no contiguous brand-plus-model substring; the literal model key is the shortest distinguishing anchor.",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "card_support",
+              "quote": "BENFEI SD/Micro SD card reader provides high data speed access to 2 different card type"
+            },
+            {
+              "axis_id": "device_fit",
+              "quote": "USB Type-C/A dual cord design"
+            },
+            {
+              "axis_id": "transfer",
+              "quote": "transfer rates in UHS-I mode up to 104MB/sec"
+            }
+          ],
+          "identity_key": "BENFEI SD Card Reader",
+          "identity_quote": "BENFEI SD Card Reader, USB C to SD Micro SD Card Memory Card Adapter Dual Slot",
+          "reason": "The official product page identifies the reader and model 000381grey, with SD/microSD slots, a USB-C/A cord design, and a qualified UHS-I maximum. Simultaneous card operation is not established by the supplied excerpt and must not be claimed.",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reason": "Evidence-only review. Six products have source-backed identities, fit the USB-C card-reader topic, and support a useful comparison across card support, transfer standards, and device connections. The supplied evidence does not establish any duplicate pair. No article was submitted, so article-only criteria remain false.",
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
+  "products": [
+    {
+      "amazon_title": "エレコム カードリーダー USB Type-C & USB-A 両対応 SD/microSD 2スロット同時使用 UHS-I対応 直挿し アルミ筐体 ドライバ不要 ブラック MR3C-D21EBK",
+      "asin": "B0H8NM5MPP",
+      "brand": "エレコム(ELECOM)",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51cOrpapdzL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "card_support",
+        "device_fit",
+        "transfer"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H8NM5MPP",
+      "provisional": false,
+      "ref": "p1",
+      "search_key": "エレコム(ELECOM) エレコム カードリーダー USB Type-C & USB-A",
+      "selection_score": 1.05,
+      "sources": [
+        {
+          "brand": "エレコム(ELECOM)",
+          "excerpt": "エレコム カードリーダー USB Type-C & USB-A 両対応 SD/microSD 2スロット同時使用 UHS-I対応 直挿し アルミ筐体 ドライバ不要 ブラック MR3C-D21EBK\nこの商品について\n【USB Type-C(TM)とUSB-Aの両対応】**USB Type-C(TM)プラグとUSB-Aプラグを両方搭載。パソコンだけでなく、スマートフォンやタブレットにもこれ1台で接続でき、幅広い機器でご使用いただけます。\n【SD/microSD 2スロット同時使用可能】**デジタルカメラやアクションカメラで撮影した写真・動画データの取込みに便利。2枚のカードを同時接続できるので、まとめてデータを取り込んだり、カード間でデータを移行したりする作業もスムーズです。\n【UHS-I対応・最大104MB/s(理論値)の高速転送】**2つのスロットともUHS-I(最大104MB/s)に対応し、大容量の写真・動画データも高速転送。UHS-IIおよびSD Express対応カードの読み書きも可能です（※転送速度はUHS-I相当）。\n【ドライバ不要・薄型9mmのコンパクト設計】**専用ドライバのインストール不要で、USBポートに挿すだけですぐに使用可能。厚み約9mm・重量約13gのスリムボディでかばんやポーチにすっきり収納でき、付属ストラップで持ち運びにも便利です。\n【高品質アルミ筐体・安心の1年保証】**放熱性・耐ノイズ性に優れたアルミ筐体を採用し、アクセスランプでメディアの状態を確認可能。対応OS：Windows 11/10、macOS Sequoia 26、iOS/iPadOS 26、Android(TM) 16/15/14。保証期間1年。 › もっと見る\nブランド エレコム(ELECOM)\nメディアタイプ MicroSD, SDカード\n接続技術 USB Type A, USB Type C\n色 ブラック\n対応デバイス スマートフォン, タブレット, デスクトップ, ノートパソコン\nエレコム(ELECOM)のストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "エレコム カードリーダー USB Type-C & USB-A 両対応 SD/microSD 2スロット同時使用 UHS-I対応 直挿し アルミ筐体 ドライバ不要 ブラック MR3C-D21EBK",
+          "url": "https://www.amazon.co.jp/dp/B0H8NM5MPP",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "Anker USB-C 2-in-1 カードリーダー",
+      "asin": "B07P1XB7BG",
+      "brand": "Anker",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/613I61kPGSL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "card_support",
+        "device_fit"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B07P1XB7BG",
+      "provisional": false,
+      "ref": "p2",
+      "search_key": "Anker USB-C 2-in-1 カードリーダー",
+      "selection_score": 0.65,
+      "sources": [
+        {
+          "brand": "Anker",
+          "excerpt": "Anker USB-C 2-in-1 カードリーダー\nこの商品について\n優れた互換性：幅広いUSB-Cポート搭載機器で動作するように設計されています。\nより多くの機能を：SDスロットとMicro SDスロットを搭載し手軽にファイルの同期や転送、共有ができます。\n超コンパクトとスマートフォンに最適：他の周辺機器向けに使用中のUSBポートの隣でも干渉することなく使用することができます。USB-C経由で接続してお使いのスマートフォンの容量を大幅に拡張します。\n高速データ転送と高い耐久性：フォトアルバムや動画、映画などを5Gbps以上のスピードで瞬時に転送することができます。高品質な素材を使用し、10,000回以上におよぶ接続にも耐えられるよう設計しました。\nパッケージ内容：Anker USB-C 2-in-1 カードリーダー、取扱説明書、カスタマーサポート › もっと見る\nブランド Anker\nメディアタイプ 画像ファイル、動画ファイル、ドキュメントファイル\n接続技術 USB Type C\n特徴 多機能,超コンパクト,高速データ転送,耐久性\n対応デバイス スマートフォン,ラップトップ,タブレット",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Anker USB-C 2-in-1 カードリーダー",
+          "url": "https://www.amazon.co.jp/dp/B07P1XB7BG",
+          "verified": true
+        },
+        {
+          "excerpt": "特徴\n製品仕様\n比較表\nレビュー\nグレー\nAnker USB-C 2-in-1 カードリーダー\n¥1,490\n単価\n/ あたり\n法人特別価格あり。 法人アカウントでログイン すると割引額が表示されます\n支払い方法 は注文画面で選択できます。\nAnker オンラインストア会員限定の特典\nマイルが貯まる・交換できる 購入金額に応じて最大10%還元\n製品の保証期間を6ヶ月延長 一部製品を除く・ 保証について\n会員ランクごとの限定特典をご用意\nカートに商品を追加する\n優れた互換性\nより多くの機能を\n超コンパクト\nスマートフォンに最適\n高速データ転送\n高い耐久性\n製品比較表\nAnker USB-C 2-in-1 カードリーダー Anker MagGo USB-C カードリーダー (3-in-1, 10Gbps) Anker USB-C PowerExpand 2-in-1 SD 4.0 カードリーダー Anker USB-C & USB-A PowerExpand 2-in-1 SD 3.0 カードリーダー\n価格 ¥1,490 （税込） ¥3,990 （税込） ¥3,590 （税込） 在庫切れ ¥2,290 （税込） 在庫切れ\nサイズ - 約60 × 60 × 15mm 約57 × 35 × 11mm 約78 × 19 × 11mm\n重さ - 約45g 30g 約14g\nカラー グレー - グレー グレー\nUSB-C パススルー充電 (最大出力) - 42.5W - -\nUSB-A ポート数 - - - 1 (機器接続用 × 1)\nUSB-C ポート数 1 (機器接続用 × 1) 2 (USB PD対応充電用 × 1、機器接続用 × 1) 1 (機器接続用 × 1) 1 (機器接続用 × 1)\nUSB-C アップストリーム ポート数 - - - -\nHDMI ポート数 - - - -\nVGA ポート数 - - - -\nイーサネット ポート数 - - - -\nディスプレイ ポート数 - - - -\nオーディオ ポート数 - - - -\nmicroSD / SDカード スロット microSD / SD microSD / SD microSD / SD microSD / SD\n製品詳細ページ もっと詳しく もっと詳しく もっと詳しく もっと詳しく\n対応機種 -ノートPC ・MacBook ・MacBook Pro ・ChromeBook ・XPS -タブレット端末 ・iPad Pro 12.9 インチ (第5世代) / iPad Pro 12.9 インチ (第4世代) / iPad Pro 12.9 インチ (第3世代) / iPad Pro 11 インチ (第3世代) / iPad Pro 11 インチ (第2世代) / iPad Pro 11 インチ(第1世代) / iPad Air (第 4 世代) -スマートフォン ・Galaxy S10 / S10+ / S9 / S9+ / S8 / S8+ 他\n非対応機種 ・ニンテンドースイッチ\nパッケージ内容 Anker USB-C 2-in-1カードリーダー、18ヶ月保証 (※正規販売店からの注文に限ります。詳細は「出品者のコメント」をご確認ください。なお注文番号が保証書の代わりとなります。)、カスタマーサポート\n製品型番 A83700A2（グレー） ※製品の仕様は予告なく変更されることがありますので、予めご了承ください。\n発売月 2019年4月\n商品レビュー\nお客様の閲覧履歴",
+          "http_status": 200,
+          "source_type": "manufacturer_official",
+          "title": "Anker USB-C 2-in-1 カードリーダー｜アダプタの製品情報 | Anker Japan 公式オンラインストア",
+          "url": "https://www.ankerjapan.com/products/a83700a2",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "SDカードリーダー SUNTRSI 3-in-1 Type-c/ライトニングー カードリーダー アプリ不要 OTG機能 タイプc USB/TF/SDカード microSDカード カメラリーダー 双方向高速データ転送 写真/ビデオ/動画 i-Phone/i-Pad/Mac/Android/PCスマホなどのデバイスに対応 最大1TB容量対応 【12ヵ月商品保障】",
+      "asin": "B0H87RZ19J",
+      "brand": "SUNTRSI",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61WgeCg3xsL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "card_support",
+        "device_fit",
+        "transfer"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H87RZ19J",
+      "provisional": false,
+      "ref": "p3",
+      "search_key": "SUNTRSI SDカードリーダー SUNTRSI 3-in-1 Type-c",
+      "selection_score": 0.51,
+      "sources": [
+        {
+          "brand": "SUNTRSI",
+          "excerpt": "SDカードリーダー SUNTRSI 3-in-1 Type-c/ライトニングー カードリーダー アプリ不要 OTG機能 タイプc USB/TF/SDカード microSDカード カメラリーダー 双方向高速データ転送 写真/ビデオ/動画 i-Phone/i-Pad/Mac/Android/PCスマホなどのデバイスに対応 最大1TB容量対応 【12ヵ月商品保障】\nこの商品について\n⚡⚡【高速双方向転送・数秒で転送完成】このSDカードリーダーのデータ転送速度は200mbps-480mbpsに達し、カメラの写真や動画を数秒でデバイスに転送でき、転送時間を大幅に短縮します。スマホにデータを転送するだけではなく、逆方向のスマホからSDカードへの転送もサポートします、双方向データの読み取りが可能です。(双方向転送機能はiOS13とその以降バージョンおよびAndroidデバイスで利用可能です)\n✨✨【OTG機能・設置、アプリ不要・接続だけで転送でき】SDカードリーダーを使用する際、アプリのダウンロードは不要です。SDカードやTFカードの読み取りが可能なだけでなく、カメラ、USBメモリ、キーボード、マウス、ハードディスクなどのUSBデバイスを使用したデータ転送もサポートします。Type-C変換アタブターを使えば、写真や動画をi-Phone 全シリーズやType-Cポート搭載のデバイスにコピーすることができます。カメラから写真や動画を短時間でコピーするための最適な選択です\n☄️☄️【コンパクト設計/耐久性抜群】このSDカードリーダーは、軽量でコンパクトなデザインを採用。ケーブルコアには高速安定伝送を実現する高品質の錫メッキ銅を、ケーブル表面には断裂を防ぐ強化素材を使用し、20000回以上の曲げテストに合格しています。\n🌟🌟【対応デバイス】JPERやRAWを含む標準写真フォーマット、H.264やMPEG-4を含むSDまたはHDビデオフォーマットに対応しています。 USB Cコネクタを搭載したPhone 15-17シリーズ、Pad、Android、Macbook、タブレットPCに対応しています、SD/MicroカードとUSB周辺機器は同時に認識できます。\n👍👍【優れたオフィス性能】軽量で信頼性が高く、短いケーブル接続でパフォーマンスが向上します。 USBアダプタとしてPCのキーボードやマウスをiPadに直接接続して、タイピング速度と生産性を向上させることができます\n💖💖【12ヶ月間品質保証】製品に品質上の問題がございましたら、新品の無料再送、もしくは全額返金の対応をさせていただきます。どうぞご安心してお買い求めください。お問い合わせ方法：注文履歴 →ご注文 →「出品者」→「出品者に連絡」、100％満足できるのアフターサービスを提供します、ご安心ください。 › もっと見る\nブランド SUNTRSI\nメディアタイプ SDカード, TFカード, USBメモリ\n接続技術 USB Type C\n特徴 高速双方向転送\n色 ホワイト\nSUNTRSIのストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "SDカードリーダー SUNTRSI 3-in-1 Type-c/ライトニングー カードリーダー アプリ不要 OTG機能 タイプc USB/TF/SDカード microSDカード カメラリーダー 双方向高速データ転送 写真/ビデオ/動画 i-Phone/i-Pad/Mac/Android/PCスマホなどのデバイスに対応 最大1TB容量対応 【12ヵ月商品保障】",
+          "url": "https://www.amazon.co.jp/dp/B0H87RZ19J",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "aceyoon SDカードリーダー USB-C/A SD TF 4in1 デュアルスロット（SD/TFカード）USB3.0 メモリカードリーダー アルミ合金製 プラグ＆プレイ OTG対応 双頭変換アダプタ 軽量 高速転送 スマホ タブレット MacBook Windows PCに適用 SD Card Reader",
+      "asin": "B0H4QRNNWY",
+      "brand": "aceyoon",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/616Rnwf7V3L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "card_support",
+        "device_fit"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H4QRNNWY",
+      "provisional": false,
+      "ref": "p4",
+      "search_key": "aceyoon SDカードリーダー USB-C/A SD TF 4in1 デュア",
+      "selection_score": 0.51,
+      "sources": [
+        {
+          "brand": "aceyoon",
+          "excerpt": "aceyoon SDカードリーダー USB-C/A SD TF 4in1 デュアルスロット（SD/TFカード）USB3.0 メモリカードリーダー アルミ合金製 プラグ＆プレイ OTG対応 双頭変換アダプタ 軽量 高速転送 スマホ タブレット MacBook Windows PCに適用 SD Card Reader\nこの商品について\n【USB-CとUSB-Aの双頭対応】SDカードリーダーはパソコン用USB-A端子とスマホ・タブレット用USB-C端子を一体化。MacBookやWindows PCはもちろん、OTG対応のAndroidスマホにもそのまま挿すだけでご使用いただけます。\n【SD＋TFデュアルスロットで同時読み書き可能】このカードリーダーはSDカードとmicroSD（TF）カードを同時に挿せる2つのスロットを搭載。カードの抜き差しなしで2枚のデータを同時に転送でき、撮影現場やデータ整理の効率が上がります。\n【USB3.0高速転送で大容量もスムーズ】双頭変換アダプタはUSB3.0規格に対応し、最大5Gbpsの高速データ転送を実現。写真や動画などの大容量ファイルも短時間で移動・コピーでき、待ち時間を大幅に短縮します。\n【アルミ合金製の軽量コンパクトボディ】二合一変換アダプタは外装には放熱性と耐久性に優れたアルミ合金を採用。非常に軽量でポケットやカメラバッグにすっきり収まり、持ち運びに最適なサイズです。\n【プラグ＆プレイ＆OTG対応で面倒な設定不要】本品はドライバーやアプリのインストールは一切不要。対応機器に差し込むだけで自動認識し、すぐにSDカード内のデータを読み取れます。現場でのクイックなデータ確認にも便利です。 › もっと見る\nブランド aceyoon\nメディアタイプ MicroSD, SDカード\n特徴 プラグ＆プレイ、双頭対応、デュアルスロット、高速転送、コンパクト\nモデル名 ACY_CARD_READER\nパック数 1\naceyoonのストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "aceyoon SDカードリーダー USB-C/A SD TF 4in1 デュアルスロット（SD/TFカード）USB3.0 メモリカードリーダー アルミ合金製 プラグ＆プレイ OTG対応 双頭変換アダプタ 軽量 高速転送 スマホ タブレット MacBook Windows PCに適用 SD Card Reader",
+          "url": "https://www.amazon.co.jp/dp/B0H4QRNNWY",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "TP-Link SDカードリーダー USB3.0 高速転送 Type-C/Type-A 2-in-1 SD/microSD対応 マイクロ SD iPhone/Android/iPad/PC UHS-I 最大200MB/s OTG対応 メーカー保証1年 UA430D",
+      "asin": "B0FJ1ZG8VZ",
+      "brand": "TP-Link",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61KYjIvR98L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0FJ1ZG8VZ",
+      "provisional": false,
+      "ref": "p5",
+      "search_key": "TP-Link SDカードリーダー USB3.0 高速転送 Type-C/Typ",
+      "sources": [
+        {
+          "brand": "TP-Link",
+          "excerpt": "TP-Link SDカードリーダー USB3.0 高速転送 Type-C/Type-A 2-in-1 SD/microSD対応 マイクロ SD iPhone/Android/iPad/PC UHS-I 最大200MB/s OTG対応 メーカー保証1年 UA430D\nこの商品について\n【💾 2-in-1カードリーダー】SD／SDHC／SDXC／ microSD／microSDHC／microSDXC（最大2 TB）に対応し、GoProや一眼レフのデータもこれ一台で管理。\n【⚡ USB3.0 高速転送】USB 3.0（最大5 Gbps）対応、USB-C／USB-A両対応でiPad／ノートPC／Androidスマホなどに直挿しOK。OTG機能（スマホやタブレットに直接接続できる機能）にも対応！\n【🚀 UHS-I 最大200MB/s】UHS-I規格（高速転送規格）対応で、大容量写真や4K動画もサクサク転送。編集作業やPCへの取り込みがスピーディ。\n【🔄 同時読み書き可能】SDとmicroSDの2スロットに対応し、抜き差し不要でバックアップやファイル移動もスムーズ。効率重視派にぴったり。\n【🔌 プラグ＆プレイ対応】面倒なドライバーインストール不要。差し込むだけですぐ使えるので、初心者や初めてのカードリーダー購入にも安心。 › もっと見る\nブランド TP-Link\nメディアタイプ MicroSD, SDカード\n特徴 OTG対応、USB-C/USB-A両対応\n色 Type C\nモデル名 UA430D\nTP-Linkのストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "TP-Link SDカードリーダー USB3.0 高速転送 Type-C/Type-A 2-in-1 SD/microSD対応 マイクロ SD iPhone/Android/iPad/PC UHS-I 最大200MB/s OTG対応 メーカー保証1年 UA430D",
+          "url": "https://www.amazon.co.jp/dp/B0FJ1ZG8VZ",
+          "verified": true
+        },
+        {
+          "excerpt": "製品情報\n仕様\nサポート\n/ 9 Download\nUA430D\nUSB 3.0 Type-C＆A SDカードリーダー\nSDカード＆microSD（TF）カード： SD・SDHC・SDXC・microSD・microSDHC・microSDXC（最大2TB）を使用できます。\nUSB 3.0規格に準拠： USB Type-CやType-Aポートに接続すれば、最大5Gbpsの高速データ転送が可能です。\nUHS-I対応： 最大200MB/秒の読み取り速度で転送効率がアップします。 *\nデュアルスロット搭載： SDカードとmicroSDカードの両方で同時に読み書きでき、メモリーカードを何度も抜き差しする必要がないので、写真のダウンロード・動画編集・3Dプリンターへのファイル転送が効率的＆スムーズに行えます。\nプラグ＆プレイ + 幅広い互換性： Windows・Linux OS・macOS・Android・ChromeOS・iPadOS・iOSに対応しており、デスクトップPC・ノートPC・スマートフォン・タブレット等のデバイスと組み合わせて使用できます。\nコンパクトで持ち運びに便利： 耐久性の高いアルミ合金ボディの小型軽量デザインを採用しており、シーンを選ばず好きな時にファイルを転送できます。\nSD & microSD にアクセス\n最大 5Gbps の転送速度\nデュアルスロット\nUHS-I 200MB/秒\n耐久性＆携帯性◎\nOTG 対応\nType-C＆A デュアルコネクター\n使用可能なSD＆microSD\nTFカード\nmicroSD\nmicroSDHC\nmicroSDXC\nSDカード\nSD\nSDHC\nSDXC\n最大 2TB 対応 （microSDXC）\n幅広い互換性\nデバイス\nOS\nデスクトップPC\nノートPC\nタブレット\nスマートフォン\nMac\nWindows\nLinux\niPadOS\niOS\nAndroid\nChrome\nUSB 3.0規格で最大5Gbpsの高速データ転送\nUSB Type-C＆Type-Aポートの両方で最大5Gbpsのデータ転送が可能になります。USB 2.0/ 1.1とも下位互換性があり、HD動画もあっという間に転送できるので、とても便利に使用できます。\n同時読み書き可能なデュアルスロット\n2種類のカードスロットを搭載しているため、SDとmicroSDカードの両方から同時にデータを転送したり、一方のカードからもう一方へ相互に送り合ったりすることができます。UHS-Iカード対応で、最大200MB/秒の読み込み速度で大容量ファイルもサクサク転送可能です。 *\nコンパクトで持ち運びに便利\n耐久性の高いアルミ合金ボディの小型軽量デザインを採用しており、シーンを選ばず好きな時にファイルを転送できます。\nプラグ＆プレイ + 幅広い互換性\nmacOS・Windows・iPadOS・iOS・Android・Linux OS・ChromeOSに対応した、USB Type-CやType-A搭載のデスクトップPC・ノートPC・スマートフォン・タブレットにつなぐだけで、面倒な設定をすることなく、すぐにデータ転送を開始できます。\nハードウェア\nコネクタ USB 3.0 Type-Cポート×1（5Gbps） USB 3.0 Type-Aポート×1（5Gbps）\nポート数 2\nSDインターフェース SDスロット×1（UHS-I規格・最大200MB/秒・最大2TB）\nmicroSDインターフェース microSD（TF）スロット×1（USH-I規格・最大200MB/秒・最大2TB）\nその他\n対応OS Windows macOS iPadOS iOS Andriod Linux OS ChromeOS\n認証 CE, FCC, BSMI\n動作環境 動作温度：0℃～40℃ 動作湿度：10～90% RH 結露を避けてください 保存湿度：5～90% RH 結露を避けてください\nフィジカル\n筐体 アルミ合金ボディ\n寸法 75 × 22.9 × 9.3mm\n製品構成 UA430D本体 かんたん設定ガイド\n* 最大200MB/秒の転送速度とは、UHS-I規格に対応するデバイスを使用した場合の論理上の最大転送速度です。実際の転送速度はデバイスの状態や環境要因によって左右される為、保証されるものではありません。",
+          "http_status": 200,
+          "source_type": "manufacturer_official",
+          "title": "UA430D | USB 3.0 Type-C＆A SDカードリーダー | TP-Link 日本",
+          "url": "https://www.tp-link.com/jp/home-networking/usb-c-hub-and-converter/ua430d/",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "BENFEI SDカードリーダー USB-C対応 デュアルスロット（SD/MicroSD/TFカード） iPhone 15 Pro/Max・MacBook Pro/Air 2023・iPad Pro・iMac・Galaxy S23・XPS 17・Surface Book 3など幅広い機種に高速接続可能なコンパクトアダプター",
+      "asin": "B0D9K82TNL",
+      "brand": "BENFEI",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71zLBIy8QqL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "card_support",
+        "device_fit",
+        "transfer"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0D9K82TNL",
+      "provisional": false,
+      "ref": "p6",
+      "search_key": "BENFEI SDカードリーダー USB-C対応 デュアルスロット（SD/Mi",
+      "selection_score": 0.65,
+      "sources": [
+        {
+          "brand": "BENFEI",
+          "excerpt": "BENFEI SDカードリーダー USB-C対応 デュアルスロット（SD/MicroSD/TFカード） iPhone 15 Pro/Max・MacBook Pro/Air 2023・iPad Pro・iMac・Galaxy S23・XPS 17・Surface Book 3など幅広い機種に高速接続可能なコンパクトアダプター\nこの商品について\n✅【デュアルスロット高速読み書き】SD＆Micro SDカード対応のUSB Type-C/A両用リーダー。USB3.0/2.0/Type-C(Thunderbolt3)ポートで最大104MB/sの超高速転送。\n✅【最新デバイスに最適化】iPhone15/MacBook/Surface/GalaxyなどUSB-C/A搭載機器と幅広く互換。スマホやPCで写真/動画を即時表示可能。\n✅【安定した高性能転送】内蔵ICチップが信号を最適化し、HD動画も数秒で転送。データ損失を防ぐ信頼性の高い設計。\n✅【コンパクトで便利】軽量ボディで持ち運びに最適。ノートPC/タブレット/スマホなどあらゆる環境で使用可能。\n✅【18ヶ月保証付き】BENFEI独自の長期保証と充実したカスタマーサポートで安心の購入後サポートを提供。 › もっと見る\nブランド BENFEI\nメディアタイプ Micro SDHC, MicroSD, SDHC, SDXC, SDカード\n接続技術 USB Type C\n特徴 デュアルスロット\n色 グレー\nBENFEIのストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "BENFEI SDカードリーダー USB-C対応 デュアルスロット（SD/MicroSD/TFカード） iPhone 15 Pro/Max・MacBook Pro/Air 2023・iPad Pro・iMac・Galaxy S23・XPS 17・Surface Book 3など幅広い機種に高速接続可能なコンパクトアダプター",
+          "url": "https://www.amazon.co.jp/dp/B0D9K82TNL",
+          "verified": true
+        },
+        {
+          "excerpt": "在模态窗口中打开媒体文件 1\n在模态窗口中打开媒体文件 2\n在模态窗口中打开媒体文件 3\n在模态窗口中打开媒体文件 4\n在模态窗口中打开媒体文件 5\n在模态窗口中打开媒体文件 6\nBENFEI\nBENFEI SD Card Reader, USB C to SD Micro SD Card Memory Card Adapter Dual Slot Compatible with iPhone 15 Pro/Max, MacBook Pro/Air 2023, iPad Pro, iMac, S23, XPS 17, Surface Book 3 and More\nFeatures:\nDual Slot Memory Card Reader： BENFEI SD/Micro SD card reader provides high data speed access to 2 different card type, the SD(Secure Digital) and Micro SD(TF). With compact USB Type-C/A dual cord design, BENFEI card reader could works with computer or laptop by USB 3.0/2.0 slot or the latest USB Type-C(Thunderbolt 3) slot.\nINCREDIBLE PERFORMANCE： With latest USB Type-C or the USB 3.0 port, fully enjoy the transfer rates in UHS-I mode up to 104MB/sec, backward Compatible with USB 2.0/1.1. Browse and view photos instantly on your USB-C/USB3.0 smartphones/laptops. (NOTE: The final data speed is decided by the card and USB slot Type ).\nSUPERIOR STABILITY： Built-in advanced IC chip handle the USB-C/USB high speed data transfer signal, allow HD movies trasfer in just seconds.\nBROAD COMPATIBILITY：Compatible with iPhone 15 Pro/Pro Max, MacBook Pro (2023~2016), MacBook (2022~2015), iMac Pro (iMac), Acer Aspire Switch 12S/R13, Predator 15/17X, XPS 13/15/17, Alienware 13/15/17, Spectre x360, Microsoft Surface Pro, Book 2, Razer Blade 15/Stealth 13/Pro 17, Samsung Galaxy Tab Pro, S23/ S22 Ultra/ S21/ S20 and most other USB-C / A devices.\n18 MONTH WARRANTY: Exclusive BENFEI Unconditional 18-month Warranty ensures long-time protection of your purchase; Friendly and easy-to-reach customer service to solve your problems timely.\nProduct Details:\nBrand: ‎BENFEI\nItem model number: ‎000381grey\nManufacturer: ‎BENFEI\nCountry of Origin: ‎China\nDate First Available: ‎June 16, 2024\nHandling We will ship all orders within 3 business day of payment.\nDelivery We Do Not Ship Outside of the Continental US.\nReturn Policy All items qualify for returns within 30 days of receipt. Buyer is responsible for return shipping on any item that is not damaged.\nFeedback We take our reputation seriously, we buy and sell online, so we understand the value of trust. If you are unsatisfied with your order, please contact us and we will work with you to resolve it to your satisfaction.\nvideo",
+          "http_status": 200,
+          "source_type": "manufacturer_official",
+          "title": "BENFEI SD Card Reader, USB C to SD Micro SD Card Memory Card Adapter D\n – Benfei",
+          "url": "https://www.benfei.com/zh/products/benfei-sd-card-reader-usb-c-to-sd-micro-sd-card-memory-card-adapter-dual-slot-compatible-with-iphone-15-pro-max-macbook-pro-air-2023-ipad-pro-imac-s23-xps-17-surface-book-3-and-more",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "selection": {
+    "brand_count": 6,
+    "comparison_axes_covered": [
+      "card_support",
+      "device_fit",
+      "transfer"
+    ],
+    "content_duplicates_removed": [
+      {
+        "asin": "B0H8NM5MPP",
+        "check_items": {
+          "color_design_only": "UNKNOWN",
+          "function_structure_difference": "UNKNOWN",
+          "independent_comparison_value": "UNKNOWN",
+          "manufacturer_brand_relation": "UNKNOWN",
+          "sales_packaging_only": "UNKNOWN",
+          "same_product_body": "FAIL",
+          "series_generation_difference": "UNKNOWN",
+          "size_capacity_difference": "UNKNOWN"
+        },
+        "duplicate_of_asin": "B0H8NM5MPP",
+        "reason": "same_asin"
+      },
+      {
+        "asin": "B07P1XB7BG",
+        "check_items": {
+          "color_design_only": "UNKNOWN",
+          "function_structure_difference": "UNKNOWN",
+          "independent_comparison_value": "UNKNOWN",
+          "manufacturer_brand_relation": "UNKNOWN",
+          "sales_packaging_only": "UNKNOWN",
+          "same_product_body": "FAIL",
+          "series_generation_difference": "UNKNOWN",
+          "size_capacity_difference": "UNKNOWN"
+        },
+        "duplicate_of_asin": "B07P1XB7BG",
+        "reason": "same_asin"
+      },
+      {
+        "asin": "B0H87RZ19J",
+        "check_items": {
+          "color_design_only": "UNKNOWN",
+          "function_structure_difference": "UNKNOWN",
+          "independent_comparison_value": "UNKNOWN",
+          "manufacturer_brand_relation": "UNKNOWN",
+          "sales_packaging_only": "UNKNOWN",
+          "same_product_body": "FAIL",
+          "series_generation_difference": "UNKNOWN",
+          "size_capacity_difference": "UNKNOWN"
+        },
+        "duplicate_of_asin": "B0H87RZ19J",
+        "reason": "same_asin"
+      },
+      {
+        "asin": "B0H4QRNNWY",
+        "check_items": {
+          "color_design_only": "UNKNOWN",
+          "function_structure_difference": "UNKNOWN",
+          "independent_comparison_value": "UNKNOWN",
+          "manufacturer_brand_relation": "UNKNOWN",
+          "sales_packaging_only": "UNKNOWN",
+          "same_product_body": "FAIL",
+          "series_generation_difference": "UNKNOWN",
+          "size_capacity_difference": "UNKNOWN"
+        },
+        "duplicate_of_asin": "B0H4QRNNWY",
+        "reason": "same_asin"
+      },
+      {
+        "asin": "B0FJ1ZG8VZ",
+        "check_items": {
+          "color_design_only": "UNKNOWN",
+          "function_structure_difference": "UNKNOWN",
+          "independent_comparison_value": "UNKNOWN",
+          "manufacturer_brand_relation": "UNKNOWN",
+          "sales_packaging_only": "UNKNOWN",
+          "same_product_body": "FAIL",
+          "series_generation_difference": "UNKNOWN",
+          "size_capacity_difference": "UNKNOWN"
+        },
+        "duplicate_of_asin": "B0FJ1ZG8VZ",
+        "reason": "same_asin"
+      }
+    ],
+    "price_used_as_constraint_only": true,
+    "retained_qa_passed_asins": [
+      "B07P1XB7BG",
+      "B0FJ1ZG8VZ",
+      "B0H4QRNNWY",
+      "B0H87RZ19J",
+      "B0H8NM5MPP"
+    ],
+    "targeted_replacement": true
+  },
+  "slug": "usb-c-multiport-card-readers"
+}
