@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-10-25T23:34:25.409631+00:00",
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "generation_route_attestation": "codex_rollout_extension",
+  "height": 1024,
+  "image_generation_internal_usage_exposed": false,
+  "image_sha256": "488cbddd79ab389c92ee974a635dee378f6540dd1b785c769ce7da35452a1979",
+  "member_binding_revision": 9,
+  "model": "gpt-6-sol",
+  "model_reported_generation_route": "built-in_image_gen",
+  "role_id": "bu-codex-sellemy-designer",
+  "routing": {
+    "api_share": 0,
+    "codex_reserve_percent": 20.0,
+    "codex_share": 100,
+    "codex_usage": {
+      "remaining_percent": 87.0,
+      "resets_at": 1793513442,
+      "source": "/Users/kickstart/.codex/sessions/2026/10/26/rollout-2026-10-26T08-31-12-01a17567-652d-7f70-993f-09e50e60e35b.jsonl",
+      "used_percent": 13.0,
+      "window_minutes": 10080
+    },
+    "errors_before_success": [],
+    "executed_route": "codex",
+    "fallback_from": null,
+    "mode": "weighted_random",
+    "reason": "codex_only",
+    "remaining_percent": 87.0,
+    "roll": null,
+    "selected_route": "codex"
+  },
+  "routing_recorded_at": "2026-10-25T23:34:25.410687+00:00",
+  "summary": "野菜をシリコン保存袋に入れる家庭のキッチン場面。PNG形式と1536x1024の寸法を確認済み。",
+  "thread_id": "01a17569-a22a-7773-ae2f-f3e140d35ce5",
+  "token_usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 78592,
+    "input_tokens": 88390,
+    "output_tokens": 586,
+    "reasoning_output_tokens": 0,
+    "total_tokens": null,
+    "uncached_input_tokens": null
+  },
+  "token_usage_source": "codex_rollout.turn_token_usage",
+  "visual_family": "lived-in kitchen editorial scene",
+  "width": 1536
+}

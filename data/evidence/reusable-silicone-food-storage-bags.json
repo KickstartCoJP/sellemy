@@ -1,0 +1,1415 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/reusable-silicone-food-storage-bags.html",
+  "category": "dailygoods",
+  "comparison_axes": [
+    {
+      "id": "capacity",
+      "keywords": [
+        "容量",
+        "外寸",
+        "マチ"
+      ],
+      "label": "容量と袋の実寸"
+    },
+    {
+      "id": "closure",
+      "keywords": [
+        "留め具",
+        "密閉",
+        "自立"
+      ],
+      "label": "口の閉じ方と自立の可否"
+    },
+    {
+      "id": "use_conditions",
+      "keywords": [
+        "耐熱温度",
+        "冷凍",
+        "電子レンジ",
+        "食洗機"
+      ],
+      "label": "食品の加熱・冷凍・洗浄に関する明示条件"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/reusable-silicone-food-storage-bags/reusable-silicone-food-storage-bags.png",
+  "product_acceptance": {
+    "contract_version": "bf7d78a8237179bb977f6ca29f54f732162e9d387723eb0c936bc77316835b8f",
+    "evidence_sha256": "fe6d73fd048f0b9fbe63cf78340ce9aec0a36e969d490a4445387a237e974c4c",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 14848,
+      "input_tokens": 28112,
+      "member_binding_revision": 4,
+      "output_tokens": 6644,
+      "reasoning_effort": "low",
+      "reasoning_output_tokens": 160,
+      "session_id": "01a17565-c415-7910-a8ad-4115ed9ffc4c",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "HARON シリコン保存袋",
+              "reason": "No shared body is identified.",
+              "right_quote": "ジップロック シリコーンマルチバッグ",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "2600ml",
+              "reason": "Stated capacities differ.",
+              "right_quote": "946 ml",
+              "status": "FAIL"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "ピンク (M)",
+              "reason": "Packaging equivalence is unestablished.",
+              "right_quote": "1個入",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "容量 2600 ml",
+              "reason": "Capacity differs.",
+              "right_quote": "容量 946 ml",
+              "status": "PASS"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "自立型",
+              "reason": "Both stand; structural equivalence is unestablished.",
+              "right_quote": "自立する",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "HARON シリコン保存袋",
+              "reason": "No series relationship is stated.",
+              "right_quote": "ジップロック シリコーンマルチバッグ",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "ブランド HARONHOME",
+              "reason": "Different stated brands.",
+              "right_quote": "ブランド Ziploc",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "容量 2600 ml",
+              "reason": "The capacity difference supports a separate buying decision.",
+              "right_quote": "容量 946 ml",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p1",
+          "reason": "Different named products and stated capacities; no affirmative duplicate evidence.",
+          "right_ref": "p2"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "HARON シリコン保存袋",
+              "reason": "No shared body is identified.",
+              "right_quote": "【Modéré】やわらかシリコンバッグ",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "2600ml",
+              "reason": "Stated capacities differ.",
+              "right_quote": "1500ml",
+              "status": "FAIL"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "ピンク (M)",
+              "reason": "Packaging equivalence is unestablished.",
+              "right_quote": "ホワイト1500ml",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "容量 2600 ml",
+              "reason": "Capacity differs.",
+              "right_quote": "容量 1500 ml",
+              "status": "PASS"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "密閉構造",
+              "reason": "Closure descriptions differ, but body equivalence is unestablished.",
+              "right_quote": "完全密閉ではない",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "HARON シリコン保存袋",
+              "reason": "No series relationship is stated.",
+              "right_quote": "【Modéré】やわらかシリコンバッグ",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "ブランド HARONHOME",
+              "reason": "The second brand field does not establish a manufacturer.",
+              "right_quote": "ブランド ノーブランド品",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "容量 2600 ml",
+              "reason": "Capacity and stated closure conditions support separate consideration.",
+              "right_quote": "容量 1500 ml",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p1",
+          "reason": "Different named products and capacities; no affirmative duplicate evidence.",
+          "right_ref": "p3"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "HARON シリコン保存袋",
+              "reason": "No shared body is identified.",
+              "right_quote": "icokka シリコンバッグ M",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "2600ml",
+              "reason": "Stated capacities differ.",
+              "right_quote": "650ml",
+              "status": "FAIL"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "ピンク (M)",
+              "reason": "Packaging alone does not establish identity.",
+              "right_quote": "M3個",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "容量 2600 ml",
+              "reason": "Capacity differs.",
+              "right_quote": "Mサイズ(650ml)",
+              "status": "PASS"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "密閉構造",
+              "reason": "The available descriptions do not establish structural equivalence.",
+              "right_quote": "ストッパー/PS樹脂",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "HARON シリコン保存袋",
+              "reason": "No series relationship is stated.",
+              "right_quote": "icokka シリコンバッグ M",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "ブランド HARONHOME",
+              "reason": "Different stated brands.",
+              "right_quote": "ブランド: icokka",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "容量 2600 ml",
+              "reason": "Capacity and the stated stopper construction support separate consideration.",
+              "right_quote": "Mサイズ(650ml)",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p1",
+          "reason": "Different stated brands and capacities; no affirmative duplicate evidence.",
+          "right_ref": "p4"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "HARON シリコン保存袋",
+              "reason": "No shared body is identified.",
+              "right_quote": "EZサンドイッチ",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "2600ml",
+              "reason": "Stated capacities differ.",
+              "right_quote": "容量450ml",
+              "status": "FAIL"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "ピンク (M)",
+              "reason": "Packaging equivalence is unestablished.",
+              "right_quote": "レインボースプラッシュ",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "容量 2600 ml",
+              "reason": "Capacity differs.",
+              "right_quote": "容量450ml",
+              "status": "PASS"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "自立型",
+              "reason": "The sources describe different features without establishing body equivalence.",
+              "right_quote": "ピンチロックシステム",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "HARON シリコン保存袋",
+              "reason": "No shared series is stated.",
+              "right_quote": "EZシリーズ",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "ブランド HARONHOME",
+              "reason": "Different stated brands.",
+              "right_quote": "ブランド Stasher",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "容量 2600 ml",
+              "reason": "Capacity and closure evidence support separate consideration.",
+              "right_quote": "容量450ml",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p1",
+          "reason": "Different stated brands, named designs and capacities.",
+          "right_ref": "p5"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "HARON シリコン保存袋",
+              "reason": "No shared body is identified.",
+              "right_quote": "スタンドアップ ミディアム",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "2600ml",
+              "reason": "Stated capacities differ.",
+              "right_quote": "容量1.6L",
+              "status": "FAIL"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "ピンク (M)",
+              "reason": "Packaging equivalence is unestablished.",
+              "right_quote": "クリア スタンドアップ",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "容量 2600 ml",
+              "reason": "Capacity differs.",
+              "right_quote": "容量1.6L",
+              "status": "PASS"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "自立型",
+              "reason": "Both stand; body equivalence is unestablished.",
+              "right_quote": "自立できるマチつきタイプ",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "HARON シリコン保存袋",
+              "reason": "No shared series is stated.",
+              "right_quote": "スタンドアップ ミディアム",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "ブランド HARONHOME",
+              "reason": "Different stated brands.",
+              "right_quote": "ブランド Stasher",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "容量 2600 ml",
+              "reason": "Capacity difference supports a separate buying decision.",
+              "right_quote": "容量1.6L",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p1",
+          "reason": "Different stated brands, named designs and capacities.",
+          "right_ref": "p6"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "ジップロック シリコーンマルチバッグ",
+              "reason": "No shared body is identified.",
+              "right_quote": "【Modéré】やわらかシリコンバッグ",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "946 ml",
+              "reason": "Stated capacities differ.",
+              "right_quote": "1500 ml",
+              "status": "FAIL"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "1個入",
+              "reason": "Equal quantities do not establish identity.",
+              "right_quote": "商品の個数 1",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "容量 946 ml",
+              "reason": "Capacity differs.",
+              "right_quote": "容量 1500 ml",
+              "status": "PASS"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "自立する",
+              "reason": "Body equivalence is unestablished.",
+              "right_quote": "ファスナーを開けてから加熱",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "シリコーンマルチバッグ",
+              "reason": "No series relationship is stated.",
+              "right_quote": "やわらかシリコンバッグ",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "ブランド Ziploc",
+              "reason": "The second brand field does not establish a manufacturer.",
+              "right_quote": "ブランド ノーブランド品",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "容量 946 ml",
+              "reason": "Capacity and stated use conditions support separate consideration.",
+              "right_quote": "容量 1500 ml",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p2",
+          "reason": "Different named products and capacities; no affirmative duplicate evidence.",
+          "right_ref": "p3"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "ジップロック シリコーンマルチバッグ",
+              "reason": "No shared body is identified.",
+              "right_quote": "icokka シリコンバッグ M",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "946 ml",
+              "reason": "Stated capacities differ.",
+              "right_quote": "650ml",
+              "status": "FAIL"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "1個入",
+              "reason": "Quantity difference alone does not establish product identity.",
+              "right_quote": "M3個",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "容量 946 ml",
+              "reason": "Capacity differs.",
+              "right_quote": "Mサイズ(650ml)",
+              "status": "PASS"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "両サイドにつまみ",
+              "reason": "Different features are stated; body equivalence is unestablished.",
+              "right_quote": "ストッパー/PS樹脂",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "シリコーンマルチバッグ",
+              "reason": "No series relationship is stated.",
+              "right_quote": "シリコンバッグ M",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "ブランド Ziploc",
+              "reason": "Different stated brands.",
+              "right_quote": "ブランド: icokka",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "容量 946 ml",
+              "reason": "Capacity and construction evidence support separate consideration.",
+              "right_quote": "Mサイズ(650ml)",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p2",
+          "reason": "Different stated brands and capacities; no affirmative duplicate evidence.",
+          "right_ref": "p4"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "ジップロック シリコーンマルチバッグ",
+              "reason": "No shared body is identified.",
+              "right_quote": "EZサンドイッチ",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "946 ml",
+              "reason": "Stated capacities differ.",
+              "right_quote": "容量450ml",
+              "status": "FAIL"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "1個入",
+              "reason": "Packaging equivalence is unestablished.",
+              "right_quote": "レインボースプラッシュ",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "容量 946 ml",
+              "reason": "Capacity differs.",
+              "right_quote": "容量450ml",
+              "status": "PASS"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "両サイドにつまみ",
+              "reason": "Different features are stated; body equivalence is unestablished.",
+              "right_quote": "ピンチロックシステム",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "シリコーンマルチバッグ",
+              "reason": "No shared series is stated.",
+              "right_quote": "EZシリーズ",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "ブランド Ziploc",
+              "reason": "Different stated brands.",
+              "right_quote": "ブランド Stasher",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "容量 946 ml",
+              "reason": "Capacity and closure evidence support separate consideration.",
+              "right_quote": "容量450ml",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p2",
+          "reason": "Different stated brands, named designs and capacities.",
+          "right_ref": "p5"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "ジップロック シリコーンマルチバッグ",
+              "reason": "No shared body is identified.",
+              "right_quote": "スタンドアップ ミディアム",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "946 ml",
+              "reason": "Stated capacities differ.",
+              "right_quote": "容量1.6L",
+              "status": "FAIL"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "1個入",
+              "reason": "Packaging equivalence is unestablished.",
+              "right_quote": "クリア スタンドアップ",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "容量 946 ml",
+              "reason": "Capacity differs.",
+              "right_quote": "容量1.6L",
+              "status": "PASS"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "マチのある深型",
+              "reason": "Both have a gusset; body equivalence is unestablished.",
+              "right_quote": "自立できるマチつきタイプ",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "シリコーンマルチバッグ",
+              "reason": "No shared series is stated.",
+              "right_quote": "スタンドアップ ミディアム",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "ブランド Ziploc",
+              "reason": "Different stated brands.",
+              "right_quote": "ブランド Stasher",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "容量 946 ml",
+              "reason": "Capacity and closure evidence support separate consideration.",
+              "right_quote": "容量1.6L",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p2",
+          "reason": "Different stated brands, named designs and capacities.",
+          "right_ref": "p6"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "【Modéré】やわらかシリコンバッグ",
+              "reason": "No shared body is identified.",
+              "right_quote": "icokka シリコンバッグ M",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "1500ml",
+              "reason": "Stated capacities differ.",
+              "right_quote": "650ml",
+              "status": "FAIL"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "商品の個数 1",
+              "reason": "Quantity difference alone does not establish identity.",
+              "right_quote": "M3個",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "容量 1500 ml",
+              "reason": "Capacity differs.",
+              "right_quote": "Mサイズ(650ml)",
+              "status": "PASS"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "ファスナー",
+              "reason": "Different closure components are stated; body equivalence is unestablished.",
+              "right_quote": "ストッパー/PS樹脂",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "やわらかシリコンバッグ",
+              "reason": "No series relationship is stated.",
+              "right_quote": "シリコンバッグ M",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "ブランド ノーブランド品",
+              "reason": "The first brand field does not establish a manufacturer.",
+              "right_quote": "ブランド: icokka",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "容量 1500 ml",
+              "reason": "Capacity and closure evidence support separate consideration.",
+              "right_quote": "Mサイズ(650ml)",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p3",
+          "reason": "Different named products and capacities; no affirmative duplicate evidence.",
+          "right_ref": "p4"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "【Modéré】やわらかシリコンバッグ",
+              "reason": "No shared body is identified.",
+              "right_quote": "EZサンドイッチ",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "1500ml",
+              "reason": "Stated capacities differ.",
+              "right_quote": "容量450ml",
+              "status": "FAIL"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "ホワイト1500ml",
+              "reason": "Packaging equivalence is unestablished.",
+              "right_quote": "レインボースプラッシュ",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "容量 1500 ml",
+              "reason": "Capacity differs.",
+              "right_quote": "容量450ml",
+              "status": "PASS"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "完全密閉ではない",
+              "reason": "Sources explicitly describe different closure conditions.",
+              "right_quote": "ピンチロックシステムで密閉できる",
+              "status": "PASS"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "やわらかシリコンバッグ",
+              "reason": "No shared series is stated.",
+              "right_quote": "EZシリーズ",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "ブランド ノーブランド品",
+              "reason": "The first brand field does not establish a manufacturer.",
+              "right_quote": "ブランド Stasher",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "完全密閉ではない",
+              "reason": "Closure condition is a meaningful separate buying consideration.",
+              "right_quote": "ピンチロックシステムで密閉できる",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p3",
+          "reason": "Different named products, capacities and stated closure conditions.",
+          "right_ref": "p5"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "【Modéré】やわらかシリコンバッグ",
+              "reason": "No shared body is identified.",
+              "right_quote": "スタンドアップ ミディアム",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "1500ml",
+              "reason": "Stated capacities differ.",
+              "right_quote": "容量1.6L",
+              "status": "FAIL"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "ホワイト1500ml",
+              "reason": "Packaging equivalence is unestablished.",
+              "right_quote": "クリア スタンドアップ",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "容量 1500 ml",
+              "reason": "Capacity differs.",
+              "right_quote": "容量1.6L",
+              "status": "PASS"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "完全密閉ではない",
+              "reason": "Sources explicitly describe different closure conditions.",
+              "right_quote": "ピンチロックシステムで密閉できる",
+              "status": "PASS"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "やわらかシリコンバッグ",
+              "reason": "No shared series is stated.",
+              "right_quote": "スタンドアップ ミディアム",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "ブランド ノーブランド品",
+              "reason": "The first brand field does not establish a manufacturer.",
+              "right_quote": "ブランド Stasher",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "横向きに保管すると中身が漏れることがあります",
+              "reason": "The stated closure conditions support a separate buying decision.",
+              "right_quote": "ピンチロックシステムで密閉できる",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p3",
+          "reason": "Different named products and explicitly different closure conditions.",
+          "right_ref": "p6"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "icokka シリコンバッグ M",
+              "reason": "No shared body is identified.",
+              "right_quote": "EZサンドイッチ",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "650ml",
+              "reason": "Stated capacities differ.",
+              "right_quote": "容量450ml",
+              "status": "FAIL"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "M3個",
+              "reason": "Packaging equivalence is unestablished.",
+              "right_quote": "レインボースプラッシュ",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "Mサイズ(650ml)",
+              "reason": "Capacity differs.",
+              "right_quote": "容量450ml",
+              "status": "PASS"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "ストッパー/PS樹脂",
+              "reason": "Different closure descriptions do not establish body equivalence.",
+              "right_quote": "ピンチロックシステム",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "シリコンバッグ M",
+              "reason": "No shared series is stated.",
+              "right_quote": "EZシリーズ",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "ブランド: icokka",
+              "reason": "Different stated brands.",
+              "right_quote": "ブランド Stasher",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "Mサイズ(650ml)",
+              "reason": "Capacity and closure evidence support separate consideration.",
+              "right_quote": "容量450ml",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p4",
+          "reason": "Different stated brands, named designs and capacities.",
+          "right_ref": "p5"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "icokka シリコンバッグ M",
+              "reason": "No shared body is identified.",
+              "right_quote": "スタンドアップ ミディアム",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "650ml",
+              "reason": "Stated capacities differ.",
+              "right_quote": "容量1.6L",
+              "status": "FAIL"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "M3個",
+              "reason": "Packaging equivalence is unestablished.",
+              "right_quote": "クリア スタンドアップ",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "Mサイズ(650ml)",
+              "reason": "Capacity differs.",
+              "right_quote": "容量1.6L",
+              "status": "PASS"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "ストッパー/PS樹脂",
+              "reason": "Different closure descriptions do not establish body equivalence.",
+              "right_quote": "ピンチロックシステム",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "シリコンバッグ M",
+              "reason": "No shared series is stated.",
+              "right_quote": "スタンドアップ ミディアム",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "ブランド: icokka",
+              "reason": "Different stated brands.",
+              "right_quote": "ブランド Stasher",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "Mサイズ(650ml)",
+              "reason": "Capacity and closure evidence support separate consideration.",
+              "right_quote": "容量1.6L",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p4",
+          "reason": "Different stated brands, named designs and capacities.",
+          "right_ref": "p6"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "EZサンドイッチ",
+              "reason": "Official sources name different designs with different dimensions and capacities.",
+              "right_quote": "スタンドアップ ミディアム",
+              "status": "FAIL"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "縦19.1×横19.3×マチ2.6cm/容量450ml",
+              "reason": "The official dimensions and capacity differences exceed color or design decoration.",
+              "right_quote": "縦18×横21.6×マチ9cm/容量1.6L",
+              "status": "FAIL"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "【本体サイズ】 縦19.1×横19.3×マチ2.6cm/容量450ml",
+              "reason": "The stated body sizes differ.",
+              "right_quote": "【本体サイズ】縦18×横21.6×マチ9cm/容量1.6L",
+              "status": "FAIL"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "容量450ml",
+              "reason": "Capacity differs.",
+              "right_quote": "容量1.6L",
+              "status": "PASS"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "口の部分が進化した新シリーズ",
+              "reason": "Official sources describe different opening and standing designs.",
+              "right_quote": "自立できるマチつきタイプ",
+              "status": "PASS"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "EZシリーズ",
+              "reason": "Official sources give different named product lines.",
+              "right_quote": "スタンドアップ ミディアム",
+              "status": "PASS"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "ブランド Stasher",
+              "reason": "Same brand, with different official product identities.",
+              "right_quote": "ブランド Stasher",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "容量450ml",
+              "reason": "The large capacity and shape differences support distinct buying decisions.",
+              "right_quote": "容量1.6L",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p5",
+          "reason": "Official product pages establish different Stasher designs, body dimensions and capacities.",
+          "right_ref": "p6"
+        }
+      ],
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "capacity",
+              "quote": "容量 2600 ml"
+            },
+            {
+              "axis_id": "closure",
+              "quote": "自立型で倒れない"
+            },
+            {
+              "axis_id": "use_conditions",
+              "quote": "食洗機対応"
+            }
+          ],
+          "identity_key": "HARON シリコン保存袋",
+          "identity_quote": "HARON シリコン保存袋 シリコンバッグ 自立型 2600ml",
+          "reason": "The verified listing identifies a reusable silicone storage bag and explicitly states capacity, standing design, microwave use, freezing and dishwasher compatibility. Avoid treating its durability or leak-prevention marketing as proven performance.",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "capacity",
+              "quote": "容量 946 ml"
+            },
+            {
+              "axis_id": "closure",
+              "quote": "自立する"
+            },
+            {
+              "axis_id": "use_conditions",
+              "quote": "食洗機での洗浄も可能です。"
+            }
+          ],
+          "identity_key": "ジップロック シリコーンマルチバッグ",
+          "identity_quote": "Ziploc ジップロック シリコーンマルチバッグ 1個入",
+          "reason": "The verified listing identifies the bag and explicitly gives 946 ml capacity, standing design, cooking and freezing uses, and dishwasher washing. No particular seal performance should be inferred.",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "capacity",
+              "quote": "本体サイズ：約幅230×高さ190×奥行75㎜"
+            },
+            {
+              "axis_id": "closure",
+              "quote": "完全密閉ではないため、横向きに保管すると中身が漏れることがあります。"
+            },
+            {
+              "axis_id": "use_conditions",
+              "quote": "電子レンジで使用する際は、ファスナーを開けてから加熱してください。"
+            }
+          ],
+          "identity_key": "【Modéré】やわらかシリコンバッグ",
+          "identity_quote": "【Modéré】やわらかシリコンバッグ 冷凍 湯せん レンジ 調理",
+          "reason": "The verified listing gives body dimensions, capacity, temperature limits and explicit handling restrictions. Its warning that the closure is not completely sealed is decision-critical. The listing's generic brand field does not establish its manufacturer.",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "capacity",
+              "quote": "Mサイズ(650ml)：高さ約140mm×幅約230mm×マチ約60mm"
+            },
+            {
+              "axis_id": "closure",
+              "quote": "材質：本体/シリコーンゴム　 ストッパー/PS樹脂"
+            },
+            {
+              "axis_id": "use_conditions",
+              "quote": "耐熱温度：本体/250℃　ストッパー/80℃"
+            }
+          ],
+          "identity_key": "icokka シリコンバッグ M",
+          "identity_quote": "icokka シリコンバッグ M 650ml ×3",
+          "reason": "The verified listing identifies the M-size bag, gives its capacity, dimensions and gusset, and distinguishes the silicone body from its PS-resin stopper with separate temperature limits. Heating guidance must preserve that component distinction.",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "capacity",
+              "quote": "縦19.1×横19.3×マチ2.6cm/容量450ml"
+            },
+            {
+              "axis_id": "closure",
+              "quote": "ピンチロックシステムで密閉できる"
+            },
+            {
+              "axis_id": "use_conditions",
+              "quote": "電子レンジ、オーブン、湯せんでの調理、冷蔵、冷凍での保存、食洗機での洗浄が可能です。"
+            }
+          ],
+          "identity_key": "EZサンドイッチ",
+          "identity_quote": "EZサンドイッチ\n使いやすさNo.1！一番売れてるサンドイッチサイズ",
+          "reason": "The matching official product page identifies a 450 ml EZ sandwich bag and supplies dimensions, closure, temperature limits, cooking modes, freezing and washing conditions. Sales superlatives and real-world leak performance need not be repeated.",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "capacity",
+              "quote": "縦18×横21.6×マチ9cm/容量1.6L"
+            },
+            {
+              "axis_id": "closure",
+              "quote": "自立できるマチつきタイプ"
+            },
+            {
+              "axis_id": "use_conditions",
+              "quote": "電子レンジ、オーブン、湯せんでの調理、冷蔵、冷凍での保存、食洗機での洗浄が可能です。"
+            }
+          ],
+          "identity_key": "スタンドアップ ミディアム",
+          "identity_quote": "スタンドアップ ミディアム\n100％プラスチックフリーのシリコーン製保存容器スタッシャー",
+          "reason": "The matching official product page identifies a distinct 1.6 L standing bag and supplies body dimensions, gusset, closure, temperature limits, cooking modes, freezing and washing conditions. Its capacity and standing form distinguish its buying use from p5.",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reason": "Evidence-only review. Six products have source-backed identities and fit the reusable silicone food-storage-bag topic. The supplied facts support capacity plus at least one other planned axis for every product. The two Stasher products are different named designs with materially different capacity and shape. No submitted article exists, so article-only criteria are false.",
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
+  "products": [
+    {
+      "amazon_title": "HARON シリコン保存袋 シリコンバッグ 自立型 2600ml 食品保存 電子レンジ 食洗機対応 ピンク (M)",
+      "asin": "B0H2Z5W9WN",
+      "brand": "HARONHOME",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61M1S3IwHfL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "capacity",
+        "closure",
+        "use_conditions"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H2Z5W9WN",
+      "provisional": false,
+      "ref": "p1",
+      "search_key": "HARONHOME HARON シリコン保存袋 シリコンバッグ 自立型 2600ml",
+      "selection_score": 0.55,
+      "sources": [
+        {
+          "brand": "HARONHOME",
+          "excerpt": "HARON シリコン保存袋 シリコンバッグ 自立型 2600ml 食品保存 電子レンジ 食洗機対応 ピンク (M)\nこの商品について\n食品級シリコン採用: BPAフリーの純シリコンを使用した食品グレード素材で、食品を直接入れても安心。赤ちゃんの離乳食や作り置きおかずの保存にも、毎日安心してお使いいただけます\n湯せん・電子レンジOK: お湯での湯せん調理も、電子レンジでの解凍・再加熱もこの1枚で完結。冷凍した作り置きをそのままレンジで温めて食卓へ出せて、加熱後はそのまま保存もできるので洗い物が減ります\n冷凍・冷蔵で鮮度キープ: 冷凍庫での長期保存も、冷蔵庫での日常保存も対応。お肉・お魚の小分け冷凍やカット野菜・果物の保存、作り置きのストックに便利で、食材をムダなく使い切れます\n自立型で倒れない: 底が広くしっかり自立する設計で、中身を入れても倒れにくく片手でスムーズに移し替え可能。スープや下味をつけたお肉も安心の密閉構造で、冷蔵庫に立てて収納もできます\n繰り返し使えるエコ設計: 洗って何度でも使えるから、使い捨てビニール袋の代替として経済的。食洗機対応でお手入れもラクラク、厚手で丈夫な作りなので長く愛用できてキッチンのゴミも減らせます › もっと見る\nブランド HARONHOME\n材質 食品グレードシリコン\n容量 2600 ml\n商品の寸法 9幅 x 15高さ cm\n製品の推奨用途 毎日のランチ、お弁当、作り置き、離乳食、食材保管、冷凍・冷蔵ストック、キッチン収納、普段使い、ギフト\nHARONHOMEのストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "HARON シリコン保存袋 シリコンバッグ 自立型 2600ml 食品保存 電子レンジ 食洗機対応 ピンク (M)",
+          "url": "https://www.amazon.co.jp/dp/B0H2Z5W9WN",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "Ziploc ジップロック シリコーンマルチバッグ 1個入 シリコーン素材 電子レンジ 湯せん オーブン調理 冷凍保存 食洗器 時短料理",
+      "asin": "B0DWXR1ZYJ",
+      "brand": "Ziploc",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/812Yf7WTywL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0DWXR1ZYJ",
+      "provisional": false,
+      "ref": "p2",
+      "search_key": "Ziploc ジップロック シリコーンマルチバッグ 1個入 シリコーン素材 電",
+      "sources": [
+        {
+          "brand": "Ziploc",
+          "excerpt": "Ziploc ジップロック シリコーンマルチバッグ 1個入 シリコーン素材 電子レンジ 湯せん オーブン調理 冷凍保存 食洗器 時短料理\nこの商品について\nシリコーン素材で電子レンジ、湯せん、オーブン調理にも対応。冷凍保存もでき、マルチに活躍します。\nソフトなシリコーン素材で、自立するので食材の出し入れも楽にできます。\nマチのある深型で、コンパクトなのに容量はたっぷり入るので、電子レンジで時短料理が手軽にできます。\n両サイドにつまみがついているので、レンジ加熱後でも取り出しやすくなっています。\n食洗機での洗浄も可能です。 › もっと見る\nブランド Ziploc\n材質 シリコーン\n容量 946 ml\n商品の寸法 28.5幅 x 15.5高さ cm\n製品の推奨用途 調理\nZiplocのストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Ziploc ジップロック シリコーンマルチバッグ 1個入 シリコーン素材 電子レンジ 湯せん オーブン調理 冷凍保存 食洗器 時短料理",
+          "url": "https://www.amazon.co.jp/dp/B0DWXR1ZYJ",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "【Modéré】やわらかシリコンバッグ 冷凍 湯せん レンジ 調理 大き目のマチ 大きくひらく クック バッグ 湯煎 自立型 ファスナー 食洗機 (ホワイト1500ml)",
+      "asin": "B0DHWKRXDM",
+      "brand": "ノーブランド品",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51cJNL0FGkL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0DHWKRXDM",
+      "provisional": false,
+      "ref": "p3",
+      "search_key": "ノー品 やわらかシリコンバッグ 冷凍 湯せん レンジ 調理 大き目のマチ",
+      "sources": [
+        {
+          "brand": "ノーブランド品",
+          "excerpt": "【Modéré】やわらかシリコンバッグ 冷凍 湯せん レンジ 調理 大き目のマチ 大きくひらく クック バッグ 湯煎 自立型 ファスナー 食洗機 (ホワイト1500ml)\nこの商品について\n内容量：1500ml\n本体サイズ：約幅230×高さ190×奥行75㎜\n本体重量：約120g\n耐熱温度：220℃\n耐冷温度：-40℃\n【注意事項】 ●本製品を本来の用途以外に使用しないでください。 ●直火でのご使用はおやめください。 ●初めてご使用の際は、必ず中性洗剤で洗ってからご使用ください。 ●本体に記載されている目盛りは目安です。計量を目的として使用することはできません。 ●加熱直後は、本体の開口部から熱い蒸気が出る場合があります。やけどにご注意ください。 ●油脂、塩分や糖分の多い食品を加熱、解凍する際には、耐熱温度を超えないようご注意ください。 ●色の濃い食品、または合成着色料を含む食品を使用する際は、色移りすることがありますのでご注意ください。 ●冷凍する場合、食品によっては内容物が膨張するおそれがあります。\n●電子レンジで使用する際は、ファスナーを開けてから加熱してください。 ●液状のものを冷凍する際は、液体が漏れるおそれがあるため、必ず受け皿などをご使用ください。 ●揚げ物や煮物などの高温食品を入れる場合は、完全に冷ましてから入れてください。 ●ファスナーは必ず端までしっかり閉めてください。完全密閉ではないため、横向きに保管すると中身が漏れることがあります。 ●本製品に食品を入れすぎた状態で閉めると、無理な力が加わり破損の原因になります。ファスナーを締めて使用する場合は、食品の量はMax線以下で使用してください。 ●シリコーン特有のにおいがする場合がありますが、徐々ににおいが弱くなります。食品衛生上の問題はありません。 ●強く引っ張ったり、引掛けたりすると破損する恐れがあります。\n●火気や熱源のそば、直射日光が当たる場所、湿気の多い場所に放置しないでください。 ●ペットや乳幼児の手が届かない場所でご使用または保管してください。 ●使用後は、洗った後良く乾燥させ、保管してください。 ●尖ったものや鋭利な刃物などで傷をつけないようご注意ください。 ●破損した場合はただちに使用を中止してください。 ●破損の場合は各自治体の指示に従ってください。 ●品質には万全を期しておりますが、使用後の破損などトラブルが発生した場合、弊社では対応いたしかねます。 › もっと見る\nブランド ノーブランド品\n容量 1500 ml\n商品の寸法 23幅 x 19高さ cm\n商品の個数 1\n特徴 ジッパー付き, フレキシブル, 冷凍庫対応, 電子レンジ対応\nブランド: ノーブランド品",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "【Modéré】やわらかシリコンバッグ 冷凍 湯せん レンジ 調理 大き目のマチ 大きくひらく クック バッグ 湯煎 自立型 ファスナー 食洗機 (ホワイト1500ml)",
+          "url": "https://www.amazon.co.jp/dp/B0DHWKRXDM",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "icokka シリコンバッグ M 650ml ×3 調理バッグ クッキングバッグ 電子レンジ調理 (赤レッド, M3個)",
+      "asin": "B0D7HBJ6H1",
+      "brand": "icokka",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/518bVJLVamL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0D7HBJ6H1",
+      "provisional": false,
+      "ref": "p4",
+      "search_key": "icokka シリコンバッグ M 650ml ×3 調理バッグ クッキングバッ",
+      "sources": [
+        {
+          "brand": "icokka",
+          "excerpt": "icokka シリコンバッグ M 650ml ×3 調理バッグ クッキングバッグ 電子レンジ調理 (赤レッド, M3個)\nMサイズ(650ml)：高さ約140mm×幅約230mm×マチ約60mm\nLサイズ(1200ml)：[高さ約180mm×幅約280mm×マチ約85mm]\n耐熱温度：本体/250℃　ストッパー/80℃\n耐冷温度：本体/-40℃ 　ストッパー/-40℃\n材質：本体/シリコーンゴム　 ストッパー/PS樹脂 › もっと見る\nブランド: icokka",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "icokka シリコンバッグ M 650ml ×3 調理バッグ クッキングバッグ 電子レンジ調理 (赤レッド, M3個)",
+          "url": "https://www.amazon.co.jp/dp/B0D7HBJ6H1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "【日本正規販売品】スタッシャーシリコーンバッグ EZサンドイッチ (レインボースプラッシュ)",
+      "asin": "B0BZGJVH2P",
+      "brand": "Stasher",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71oV2rgtQ3L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "capacity",
+        "closure",
+        "use_conditions"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0BZGJVH2P",
+      "provisional": false,
+      "ref": "p5",
+      "search_key": "Stasher スタッシャーシリコーンバッグ EZサンドイッチ (レインボースプ",
+      "selection_score": 0.69,
+      "sources": [
+        {
+          "brand": "Stasher",
+          "excerpt": "【日本正規販売品】スタッシャーシリコーンバッグ EZサンドイッチ (レインボースプラッシュ)\nこの商品について\n【繰り返し使えるエコなシリコーン保存袋】 洗って何度でも使えるため、使い捨てのプラスチック袋を減らせます。環境にも家計にもやさしいサステナブルな保存容器です。\n【ピュアプラチナシリコーン100％で安心安全】 医療用・ベビー用品にも使われる高品質素材を使用。食品保存はもちろん、離乳食やお弁当にも安心して使えます。\n【電子レンジ・オーブン・冷凍OKの万能バッグ】 耐熱250℃／耐冷-18℃で、電子レンジ調理・オーブン・湯せん・冷凍保存までこれ1つで対応。作り置きや低温調理にも最適です。\n【密閉力の高いピンチロックで液漏れ防止】 しっかり閉まる構造で液体も安心して保存可能。食品保存はもちろん、作り置きや冷凍ストック、お弁当や持ち運び用のフードコンテナとして幅広く活躍します。\n【食洗機対応でお手入れ簡単＆衛生的】 食洗機対応でお手入れ簡単。広口設計で洗いやすく、汚れやニオイが残りにくく清潔に保てます。 › もっと見る\nブランド Stasher\n材質 シリコーン\n商品の寸法 19.3幅 x 19.1高さ cm\n特徴 再利用可能,耐熱耐冷,電子レンジ対応,食洗機対応,漏れにくい,プラスチックフリー,開閉しやすい\n色 マルチカラー\nStasherのストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "【日本正規販売品】スタッシャーシリコーンバッグ EZサンドイッチ (レインボースプラッシュ)",
+          "url": "https://www.amazon.co.jp/dp/B0BZGJVH2P",
+          "verified": true
+        },
+        {
+          "excerpt": "EZサンドイッチ\n使いやすさNo.1！一番売れてるサンドイッチサイズ\n100％プラスチックフリーのシリコーン製保存容器スタッシャー サイズ：EZサンドイッチ サンドイッチやフルーツを入れたり残り物のご飯や作り置きのおかずを保存するのにもピッタリな大活躍サイズ♪ 【EZシリーズの説明】 口の部分が進化した新シリーズ。力が弱い方でも指が小さい方でも簡単に開けることができます。\n【本体サイズ】 縦19.1×横19.3×マチ2.6cm/容量450ml 【パッケージサイズ】 縦19.5×横19.3×マチ1.7cm\n洗えば何回でもリユースできます。\n原料は多くの医療用器具や乳幼児用の製品に使用されているピュアプラチナシリコーン100％\n耐熱温度は250℃、耐冷温度は-18度。加熱・冷凍OK！幅広い温度に対応しています。\n電子レンジ、オーブン、湯せんでの調理、冷蔵、冷凍での保存、食洗機での洗浄が可能です。\nピンチロックシステムで密閉できるので、液漏れもしません。\nこの商品を使ったレシピ\n漬けて焼くだけ！鶏むね肉照り焼き\nスタッシャーでしっとりよだれ鶏\nメディア実績\n雑誌「anan」にてご紹介いただきました。\n雑誌「CLASSY」にてご紹介いただきました。\n雑誌「アンドガール プリュス」にてご紹介いただきました。\nコラム\n食品ロスを減らそう！今日からできる食材保存の工夫\nポスカでお絵描き！スタッシャーを自分好みにアレンジしよう\n秋のハイキングをもっと楽しもう。スタッシャーで身軽に楽しむ秋のお出かけ",
+          "http_status": 200,
+          "source_type": "manufacturer_official",
+          "title": "スタッシャー EZサンドイッチlスタッシャー公式オンラインショップ（通販）",
+          "url": "https://stasherbag.jp/products/stasher-ez-sandwich",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "Stasher 【日本正規販売品】スタッシャー シリコーンバッグ クリア スタンドアップ stasher、レンジ、保存、調理 SSUK",
+      "asin": "B085P4WVSP",
+      "brand": "Stasher",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/812d8QtN2EL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "capacity",
+        "closure",
+        "use_conditions"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B085P4WVSP",
+      "provisional": false,
+      "ref": "p6",
+      "search_key": "Stasher スタッシャー シリコーンバッグ クリア スタンドアップ stas",
+      "selection_score": 0.57,
+      "sources": [
+        {
+          "brand": "Stasher",
+          "excerpt": "Stasher 【日本正規販売品】スタッシャー シリコーンバッグ クリア スタンドアップ stasher、レンジ、保存、調理 SSUK\nこの商品について\nサイズ:19×21.5×6.5cm\n材質・シリコーンゴム(プラチナシリコーン)\n原産国・中国\n耐熱温度・250℃\n耐冷温度・-18℃ › もっと見る\nブランド Stasher\n材質 シリコーン\n容量 1600 ml\n商品の寸法 19幅 x 21.5高さ cm\n製品の推奨用途 冷蔵, 調理\nStasherのストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Stasher 【日本正規販売品】スタッシャー シリコーンバッグ クリア スタンドアップ stasher、レンジ、保存、調理 SSUK",
+          "url": "https://www.amazon.co.jp/dp/B085P4WVSP",
+          "verified": true
+        },
+        {
+          "excerpt": "スタンドアップ ミディアム\n100％プラスチックフリーのシリコーン製保存容器スタッシャー サイズ：スタンドアップ ミディアム 自立できるマチつきタイプ。カレーやスープなどの調理・保存にも便利！\n【本体サイズ】縦18×横21.6×マチ9cm/容量1.6L 【パッケージのサイズ】縦19.5×横21×マチ6.2cm\n洗えば何回でもリユースできます。\n原料は多くの医療用器具や乳幼児用の製品に使用されているピュアプラチナシリコーン100％\n耐熱温度は250℃、耐冷温度は-18度。加熱・冷凍OK！幅広い温度に対応しています。\n電子レンジ、オーブン、湯せんでの調理、冷蔵、冷凍での保存、食洗機での洗浄が可能です。\nピンチロックシステムで密閉できるので、液漏れもしません。\nこの商品を使ったレシピ\nキャンプに最適！スタッシャーで漬けこむタンドリーチキン\nレンジですぐ出来る！夏野菜の温サラダ 和風トマトソース掛け\nスタッシャーでモチモチかぼちゃ蒸しパン（卵・乳不使用）\nメディア実績\n雑誌「クロワッサン」にてご紹介いただきました。\n雑誌「CREA」にてご紹介いただきました。\n雑誌「Hanako 特別編集 はじめてのSDGsガイドブック」にてご紹介いただきました。\nコラム\n愛犬との暮らしにスタッシャーを取り入れよう\n防災の日だけじゃない。秋に見直したい「食の備え」\nスタッシャーを保管するための小さな工夫",
+          "http_status": 200,
+          "source_type": "manufacturer_official",
+          "title": "スタッシャースタンドアップ ミディアムlスタッシャー公式オンラインショップ（通販）",
+          "url": "https://stasherbag.jp/products/stasher-standup-medium",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "selection": {
+    "brand_count": 5,
+    "comparison_axes_covered": [
+      "capacity",
+      "closure",
+      "use_conditions"
+    ],
+    "content_duplicates_removed": [
+      {
+        "asin": "B0H2Z5W9WN",
+        "check_items": {
+          "color_design_only": "UNKNOWN",
+          "function_structure_difference": "UNKNOWN",
+          "independent_comparison_value": "UNKNOWN",
+          "manufacturer_brand_relation": "UNKNOWN",
+          "sales_packaging_only": "UNKNOWN",
+          "same_product_body": "FAIL",
+          "series_generation_difference": "UNKNOWN",
+          "size_capacity_difference": "UNKNOWN"
+        },
+        "duplicate_of_asin": "B0H2Z5W9WN",
+        "reason": "same_asin"
+      },
+      {
+        "asin": "B0DWXR1ZYJ",
+        "check_items": {
+          "color_design_only": "UNKNOWN",
+          "function_structure_difference": "UNKNOWN",
+          "independent_comparison_value": "UNKNOWN",
+          "manufacturer_brand_relation": "UNKNOWN",
+          "sales_packaging_only": "UNKNOWN",
+          "same_product_body": "FAIL",
+          "series_generation_difference": "UNKNOWN",
+          "size_capacity_difference": "UNKNOWN"
+        },
+        "duplicate_of_asin": "B0DWXR1ZYJ",
+        "reason": "same_asin"
+      },
+      {
+        "asin": "B0DHWKRXDM",
+        "check_items": {
+          "color_design_only": "UNKNOWN",
+          "function_structure_difference": "UNKNOWN",
+          "independent_comparison_value": "UNKNOWN",
+          "manufacturer_brand_relation": "UNKNOWN",
+          "sales_packaging_only": "UNKNOWN",
+          "same_product_body": "FAIL",
+          "series_generation_difference": "UNKNOWN",
+          "size_capacity_difference": "UNKNOWN"
+        },
+        "duplicate_of_asin": "B0DHWKRXDM",
+        "reason": "same_asin"
+      },
+      {
+        "asin": "B0D7HBJ6H1",
+        "check_items": {
+          "color_design_only": "UNKNOWN",
+          "function_structure_difference": "UNKNOWN",
+          "independent_comparison_value": "UNKNOWN",
+          "manufacturer_brand_relation": "UNKNOWN",
+          "sales_packaging_only": "UNKNOWN",
+          "same_product_body": "FAIL",
+          "series_generation_difference": "UNKNOWN",
+          "size_capacity_difference": "UNKNOWN"
+        },
+        "duplicate_of_asin": "B0D7HBJ6H1",
+        "reason": "same_asin"
+      }
+    ],
+    "price_used_as_constraint_only": true,
+    "retained_qa_passed_asins": [
+      "B0D7HBJ6H1",
+      "B0DHWKRXDM",
+      "B0DWXR1ZYJ",
+      "B0H2Z5W9WN"
+    ],
+    "targeted_replacement": true
+  },
+  "slug": "reusable-silicone-food-storage-bags"
+}
