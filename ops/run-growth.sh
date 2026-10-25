@@ -80,8 +80,21 @@ else:
 PYSWITCH
 )"
 if [[ "$PUBLISH_ALLOWED" == "1" ]]; then
-# Both eligible recovery and fresh planning use the existing scheduled admission.
-# A backoff/HOLD job does not block new theme selection.
+# Keep fast recovery, but only for a job eligible NOW. Backoff/HOLD is not
+# pending executable work and must not prevent normal planning admission.
+RECOVERY_DUE="$($PY - <<'PYRECOVERY'
+import sys
+sys.path.insert(0, 'pipeline')
+from growth_recovery import eligible_job
+print('1' if eligible_job() else '0')
+PYRECOVERY
+)"
+if [[ "$RECOVERY_DUE" == "1" ]]; then
+  "$PY" pipeline/run_with_timeout.py 900 "$PY" pipeline/growth_runtime.py --publish
+  "$PY" pipeline/article_publication_metrics.py >/dev/null || true
+  "$GA4PY" pipeline/actuals_adapter.py --sync || true
+  exit 0
+fi
 "$PY" - <<'PYSYNC'
 import sys
 import os

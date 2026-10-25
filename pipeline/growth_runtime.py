@@ -210,18 +210,15 @@ def select_viable_topic(
     probes = []
     tried_slugs: set[str] = set()
     rounds = range(1) if planning_candidates is not None else (range(max_rounds) if max_rounds is not None else count())
-    no_new_rounds = 0
     for round_index in rounds:
         source = planning_candidates if planning_candidates is not None else discover_candidates()
         ranked = [row for row in rank_candidates(source, feedback) if row['slug'] not in tried_slugs]
         if not ranked and planning_candidates is not None:
             raise PlanningError('continuous planning produced no eligible non-duplicate topic; no publish')
         if not ranked:
-            no_new_rounds += 1
-            if no_new_rounds >= 3:
-                raise PlanningError('planning repeatedly returned no novel theme; inspect planning input, not product retry limit')
-            continue
-        no_new_rounds = 0
+            # Provider did not supply any unseen themes. Fail explicitly rather
+            # than inventing a global quota on distinct rejected themes.
+            raise PlanningError('planning produced no novel themes; requires a changed candidate set')
         for topic in ranked:
             tried_slugs.add(topic['slug'])
             try:
@@ -1224,21 +1221,7 @@ def run(
         reconciled = _reconcile_already_published_jobs() if publish else []
         if reconciled:
             result['reconciled_already_published'] = reconciled
-        recovery = eligible_job()
-        unfinished = _unfinished_jobs()
-        if recovery:
-            slug = recovery['slug']
-            result['recovery_mode'] = True
-            result['recovery_slug'] = slug
-        else:
-            # Backoff of an unfinished article must not block admission of new work.
-            # Due recovery jobs are still selected first above.
-            if unfinished:
-                result['recovery_waiting'] = [
-                    {'slug': x['slug'], 'stage': x.get('current_stage'), 'next_retry_at': x.get('next_retry_at')}
-                    for x in sorted(unfinished, key=lambda x: x.get('created_at') or '')[:20]
-                ]
-            result['recovery_mode'] = False
+        def _create_fresh_job() -> str:
             result['base_head'] = require_clean_current_main()
             feedback = load_feedback()
             topic, candidates, viability_probes = select_viable_topic(
@@ -1269,6 +1252,25 @@ def run(
                 record_execution(slug=slug, role='planning', event_type='success', stage='planning', metadata=planning_meta)
                 record_context_quality(ROOT, PLANNING_SURFACE, True, session_id=planning_meta.get('session_id'))
 
+            return slug
+
+        recovery = eligible_job()
+        unfinished = _unfinished_jobs()
+        if recovery:
+            slug = recovery['slug']
+            result['recovery_mode'] = True
+            result['recovery_slug'] = slug
+        else:
+            # Backoff of an unfinished article must not block admission of new work.
+            # Due recovery jobs are still selected first above.
+            if unfinished:
+                result['recovery_waiting'] = [
+                    {'slug': x['slug'], 'stage': x.get('current_stage'), 'next_retry_at': x.get('next_retry_at')}
+                    for x in sorted(unfinished, key=lambda x: x.get('created_at') or '')[:20]
+                ]
+            result['recovery_mode'] = False
+            slug = _create_fresh_job()
+
         if not publish:
             result['status'] = 'recovery_staged' if result['recovery_mode'] else 'staged'
             return result
@@ -1290,31 +1292,7 @@ def run(
                 raise
             result['skipped_recovery'] = {'slug': slug, 'reason': str(recovery_error), 'next_retry_at': current.get('next_retry_at')}
             result['recovery_mode'] = False
-            result['base_head'] = require_clean_current_main()
-            feedback = load_feedback()
-            topic, candidates, viability_probes = select_viable_topic(planning_candidates, feedback, cache_only=cache_only)
-            planning_provider = topic.pop('_planning_provider_metadata', None)
-            result['planning_provider'] = planning_provider
-            result['topic'] = topic
-            result['viability_probes'] = viability_probes
-            selected, selection = select_six(candidates, topic, feedback)
-            evidence = build_evidence(topic, selected, selection)
-            job = create_job(topic=topic, evidence=evidence, selection=selection,
-                             planning_provider=planning_provider, viability_probes=viability_probes)
-            slug = job['slug']
-            if publish and scheduled:
-                decision = result.get('controller_decision') or {}
-                if decision.get('allowed'):
-                    write_artifact(slug, 'scheduled-admission.json', {
-                        'admission_id': (decision.get('receipt') or {}).get('admission_id'),
-                        'slot': decision.get('slot'),
-                        'admitted_at': (decision.get('receipt') or {}).get('admitted_at'),
-                    })
-            planning_meta = ((planning_provider or {}).get('codex_runtime') or {})
-            if planning_meta:
-                record_execution(slug=slug, role='planning', event_type='turn', stage='planning', metadata=planning_meta)
-                record_execution(slug=slug, role='planning', event_type='success', stage='planning', metadata=planning_meta)
-                record_context_quality(ROOT, PLANNING_SURFACE, True, session_id=planning_meta.get('session_id'))
+            slug = _create_fresh_job()
             commit = _execute_job(slug, result, cache_only=cache_only)
         if commit is None and result.get('status') == 'awaiting_chatgpt_final_review':
             return result
