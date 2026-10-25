@@ -1,0 +1,164 @@
+{
+  "contract_version": "bf7d78a8237179bb977f6ca29f54f732162e9d387723eb0c936bc77316835b8f",
+  "evidence_sha256": "4f190441c802b3218927276f8b89300fedc53f4b5386adcc3cd840f124d5c83f",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 14848,
+    "input_tokens": 37406,
+    "member_binding_revision": 4,
+    "output_tokens": 1431,
+    "reasoning_effort": "low",
+    "reasoning_output_tokens": 200,
+    "session_id": "01a17122-af7c-77b2-a54d-0f68f8a9b7d1",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "e372ed872dae5d8f7bcb645c688702b2a257f30f9d837b9d07821dd64217f3f1",
+  "review": {
+    "buying_guidance": true,
+    "claims_grounded": true,
+    "complete_comparison": true,
+    "distinct_products": true,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "power",
+            "quote": "USB Type-Cポート：67W、USB Type-Aポート：30W、自動巻き取り式ケーブル：60W"
+          },
+          {
+            "axis_id": "ports",
+            "quote": "USB Type-C+自動巻き取り式ケーブル：20W+45W"
+          },
+          {
+            "axis_id": "portability",
+            "quote": "65cmのUSB Type-Cケーブルが付属"
+          }
+        ],
+        "identity_key": "Mcdodo FreeGo",
+        "identity_quote": "Mcdodo FreeGoシリーズの67Wの自動巻き取り式ケーブル充電器",
+        "reason": "FreeGoシリーズの67W充電器として識別できる。本文は内蔵ケーブルとポートの出力差を選択条件にしている。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "power",
+            "quote": "up to 45W output with dynamic 45–60W power adjustment"
+          },
+          {
+            "axis_id": "ports",
+            "quote": "one built-in retractable USB-C cable and one additional USB-C port"
+          },
+          {
+            "axis_id": "portability",
+            "quote": "本体サイズはわずか64×53×29.5mmです。折りたたみ式プラグを備え"
+          }
+        ],
+        "identity_key": "ESR Xtend 45W",
+        "identity_quote": "ESR Xtend 45W巻き取り式充電器",
+        "reason": "Xtend 45Wとして識別できる。本文は内蔵ケーブルの長さと追加ポートを示し、不明な同時使用時の配分を推測していない。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "power",
+            "quote": "2 つの USB-C ポートはそれぞれ最大 20W と 65W の単一出力をサポートし、USB-A ポートは 18W の単一出力を提供します"
+          },
+          {
+            "axis_id": "ports",
+            "quote": "2 つの Type-C ポートと 1 つの USB-A ポートを備えており"
+          },
+          {
+            "axis_id": "portability",
+            "quote": "折りたたみ式プラグを採用しており"
+          }
+        ],
+        "identity_key": "Leadele 65W Type-C急速充電",
+        "identity_quote": "Leadele 65W Type-C急速充電は、C2ポートで65Wの出力を実現",
+        "reason": "ブランド、出力、端子構成から識別できる。本文はPCに使う端子を示し、不明な同時使用時の配分を留保している。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "power",
+            "quote": "USB PD 45Wで高速充電"
+          },
+          {
+            "axis_id": "ports",
+            "quote": "2台同時接続時は30Wと10Wで出力します"
+          },
+          {
+            "axis_id": "portability",
+            "quote": "幅約62×奥行約37×高さ約48.5mm、約145gです"
+          }
+        ],
+        "identity_key": "EC-AC12945BK",
+        "identity_quote": "ブラック EC-AC12945BK",
+        "reason": "掲載タイトルの型番で識別できる。本文は単独使用時と2台接続時の出力差、寸法と重量を購入判断につなげている。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "power",
+            "quote": "20V⎓3.25A (Max 65W)"
+          },
+          {
+            "axis_id": "ports",
+            "quote": "ポート USB-C×1"
+          },
+          {
+            "axis_id": "portability",
+            "quote": "サイズ 約 52.5 × 30 × 26.5 mm\n重さ 約 74 g"
+          }
+        ],
+        "identity_key": "NovaPort SOLOⅡ 65W1C",
+        "identity_quote": "NovaPort SOLOⅡ 65W1C",
+        "reason": "メーカー公式資料の製品名で識別できる。本文は1ポート、出力条件、寸法と重量、温度に応じた出力調整を反映している。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "power",
+            "quote": "USB-Cポート単独使用時に最大45W出力に対応"
+          },
+          {
+            "axis_id": "ports",
+            "quote": "30W+15W or 15W+30W or 20W+20W（45W Max）"
+          },
+          {
+            "axis_id": "portability",
+            "quote": "本体サイズは約78.8×44.2×12.5mm、重量は約70g"
+          }
+        ],
+        "identity_key": "NovaPort SLIM DUO II 45W2C",
+        "identity_quote": "NovaPort SLIM DUO II 45W2C",
+        "reason": "メーカー公式資料の製品名で識別できる。本文は掲載先の矛盾を示し、公式仕様に基づく2ポートの配分と携帯性を比較している。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reason": "6製品は資料中の製品系列または型番で区別できる。本文は給電条件、複数接続時の配分、携帯性を比較し、不明な配分を推測せず、各製品の選択条件を示している。",
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}

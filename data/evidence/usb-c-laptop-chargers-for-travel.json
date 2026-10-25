@@ -1,0 +1,423 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/usb-c-laptop-chargers-for-travel.html",
+  "category": "gadget",
+  "comparison_axes": [
+    {
+      "id": "power",
+      "keywords": [
+        "USB PD",
+        "最大出力",
+        "対応電圧"
+      ],
+      "label": "PCが必要とする給電条件との適合"
+    },
+    {
+      "id": "ports",
+      "keywords": [
+        "ポート数",
+        "同時充電",
+        "出力配分"
+      ],
+      "label": "複数端子使用時の出力配分"
+    },
+    {
+      "id": "portability",
+      "keywords": [
+        "寸法",
+        "重量",
+        "折りたたみプラグ"
+      ],
+      "label": "本体寸法とプラグ形状"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/usb-c-laptop-chargers-for-travel/usb-c-laptop-chargers-for-travel.png",
+  "product_acceptance": {
+    "contract_version": "bf7d78a8237179bb977f6ca29f54f732162e9d387723eb0c936bc77316835b8f",
+    "evidence_sha256": "4f190441c802b3218927276f8b89300fedc53f4b5386adcc3cd840f124d5c83f",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 14848,
+      "input_tokens": 34634,
+      "member_binding_revision": 4,
+      "output_tokens": 1405,
+      "reasoning_effort": "low",
+      "reasoning_output_tokens": 135,
+      "session_id": "01a1711e-204b-74e0-8625-aaf53ea0c1c3",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "power",
+              "quote": "USB Type-Cの単一ポート出力は最大67W"
+            },
+            {
+              "axis_id": "ports",
+              "quote": "USB Type-C+自動巻き取り式ケーブル：20W+45W"
+            },
+            {
+              "axis_id": "portability",
+              "quote": "折りたたみ式プラグ"
+            }
+          ],
+          "identity_key": "Mcdodo FreeGoシリーズの67W",
+          "identity_quote": "Mcdodo FreeGoシリーズの67Wの自動巻き取り式ケーブル充電器",
+          "reason": "The identified charger has a built-in retractable cable, a separate USB-C port, and stated output allocations. The cable's 60W limit differs from the port's 67W limit.",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "power",
+              "quote": "up to 45W output with dynamic 45–60W power adjustment"
+            },
+            {
+              "axis_id": "ports",
+              "quote": "one built-in retractable USB-C cable and one additional USB-C port"
+            },
+            {
+              "axis_id": "portability",
+              "quote": "本体サイズはわずか64×53×29.5mmです。折りたたみ式プラグを備え"
+            }
+          ],
+          "identity_key": "ESR Xtend 45W",
+          "identity_quote": "ESR Xtend 45W巻き取り式充電器",
+          "reason": "The sources identify the charger and support its output range, two connections, dimensions, and folding plug. They do not specify a numeric split during two-device charging.",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "power",
+              "quote": "C2ポートで65Wの出力"
+            },
+            {
+              "axis_id": "ports",
+              "quote": "2 つの USB-C ポートはそれぞれ最大 20W と 65W の単一出力をサポートし、USB-A ポートは 18W の単一出力を提供します"
+            },
+            {
+              "axis_id": "portability",
+              "quote": "折りたたみ式プラグを採用"
+            }
+          ],
+          "identity_key": "Leadele 65W タイプC 急速充電器",
+          "identity_quote": "Leadele 65W タイプC 急速充電器は折りたたみ式プラグを採用",
+          "reason": "The listing identifies the charger and states individual port limits and a folding plug. Its simultaneous-use power allocation remains unspecified.",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "power",
+              "quote": "USB PD 45Wで高速充電"
+            },
+            {
+              "axis_id": "ports",
+              "quote": "2台同時接続時は30Wと10Wで出力します"
+            },
+            {
+              "axis_id": "portability",
+              "quote": "幅約62×奥行約37×高さ約48.5mm、約145gです"
+            }
+          ],
+          "identity_key": "EC-AC12945BK",
+          "identity_quote": "エレコム 充電器 急速充電 Type-C USB-C USB PD PPS対応 45W ケーブル一体型 巻き取り式 0.64m GaN 2ポート PSE認証 ノートPC対応 スマホ コンパクト ブラック EC-AC12945BK",
+          "reason": "The listing ties the specific model number to エレコム and states its 45W rating, simultaneous output split, dimensions, and weight.",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "power",
+              "quote": "出力 USB-C:5V⎓3A/9V⎓3A/12V⎓3A/15V⎓3A/20V⎓3.25A (Max 65W)"
+            },
+            {
+              "axis_id": "ports",
+              "quote": "ポート USB-C×1"
+            },
+            {
+              "axis_id": "portability",
+              "quote": "サイズ 約 52.5 × 30 × 26.5 mm\n重さ 約 74 g"
+            }
+          ],
+          "identity_key": "CIO NovaPort SOLOⅡ 65W",
+          "identity_quote": "CIO NovaPort SOLOⅡ 65W PD急速充電器",
+          "reason": "The marketplace title identifies the CIO model, and the matching official page specifies one USB-C port, output voltages, size, weight, and temperature-based output adjustment.",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "power",
+              "quote": "USB-Cポート単独使用時に最大45W出力"
+            },
+            {
+              "axis_id": "ports",
+              "quote": "30W+15W、15W+30W、20W+20Wなどのパターンで電力配分"
+            },
+            {
+              "axis_id": "portability",
+              "quote": "本体サイズは約78.8×44.2×12.5mm、重量は約70g"
+            }
+          ],
+          "identity_key": "CIO NovaPort SLIM DUOII 45W2C",
+          "identity_quote": "CIO NovaPort SLIM DUOII 45W2C PD急速充電器",
+          "reason": "The marketplace title identifies the model, and the matching official page establishes its two USB-C ports, output allocations, and thin form. The marketplace excerpt's one-port, 65W specifications conflict with that official page and should not be used.",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reason": "Evidence-only review. The six chargers have distinct, source-anchored product identities and fit the travel laptop-charger topic. The supplied evidence supports useful comparisons of power, connections, and portability. ESR's two-device output split is unspecified; p6's official specifications resolve conflicting marketplace details. No article was submitted, so article-only criteria were not assessed.",
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
+  "products": [
+    {
+      "amazon_title": "Mcdodo 67W GaN 急速充電器 PD充電器 Type-C充電器 USB-C & USB-Aポート搭載【伸縮式USB-Cケーブル付き/出力デジタル表示/GaN新技術】折りたたみ式プラグ PD3.0/QC4.0/PPS等規格対応 MacBook iPad iPhone 18 Pro Galaxy Pixel Xperia Android 各種対応 PSE技術基準適合 ブラック",
+      "asin": "B0DWX6XTMG",
+      "brand": "mcdodo",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61Hnb-ZZ4zL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "ports",
+        "power"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0DWX6XTMG",
+      "provisional": false,
+      "ref": "p1",
+      "search_key": "mcdodo 67W GaN 急速充電器 PD充電器 Type-C充電器 US",
+      "selection_score": 0.51,
+      "sources": [
+        {
+          "brand": "mcdodo",
+          "excerpt": "Mcdodo 67W GaN 急速充電器 PD充電器 Type-C充電器 USB-C & USB-Aポート搭載【伸縮式USB-Cケーブル付き/出力デジタル表示/GaN新技術】折りたたみ式プラグ PD3.0/QC4.0/PPS等規格対応 MacBook iPad iPhone 18 Pro Galaxy Pixel Xperia Android 各種対応 PSE技術基準適合 ブラック\nこの商品について\n【67W GaN 伸縮式ケーブル充電器】：ケーブルと充電器が一体化したMcdodo FreeGoシリーズの67Wの自動巻き取り式ケーブル充電器で、急速充電をお楽しみください。リアルタイムで表示、充電出力。自動巻き取り式USB Type-Cケーブル。引っ張り出すだけですぐに使用できます。最新のGaNテクノロジーを採用しており、安全性がさらに高まります。3つの急速充電ポート、幅広い互換性。PD3.0/2.0、QC4.0/3.0/2.0、PPS、Samsung SFC2.0/SFC/AFC、Huawei SCP/FCP、BC1.2などのプロトコルに対応。MacBook/ThinkPad/NEC Lenovo/Dell/HP EliteBook/Fujitsu laptop/Microsoft laptop/DynabookなどノートPC、iPad/Idea Tab/LAVIE Tab/Surface Pro/AQUOS Pad/Galaxy Tabなどのタブレット、iPhone 18 Pro/18 Pro Max、iPhone 17/16/15/14/13/12/11/XS/XR/SE(第3世代/第2世代)/8/7/6/5シリーズ・iPhone Air・AQUOS・Galaxy・Xperia・Pixel・Arrowsなどのスマホ、その他のAndroidデバイスなどUSB周辺機器を対応します。\n【アップグレードした新モデルは、充電出力がスクリーンに表示】：充電時には総電力と急速充電アイコンをそのまま見ることができるので、充電状況が一目でわかります。【伸縮式ケーブル付き、引っ張り出すだけで使用】：65cmのUSB Type-Cケーブルが付属しており、静かに引っ張り出すことができ、使いたい時にすぐに使用できます。10000回以上、引き出すことができる。10000回以上、プラグの抜き差しができる。10000回以上、曲げることができる。7段階の伸縮調整が可能。自宅、オフィス、旅行など、あらゆるシナリオに対応します。\n【最新のGaNテクノロジーにより、67Wの急速充電を実現】：最新のGaNテクノロジーを搭載しており、より安定した性能を発揮できます。USB Type-Cの単一ポート出力は最大67Wで、高性能なノートパソコン、タブレット、スマートフォンの急速充電に対応します。iPhone 15の充電：30分で約60%充電。Samsung S23の充電：30分で約60%充電。MacBook Pro 14の充電：30分で約40%充電。※上記のテストデータはMcdodo研究所によるもので、USB Type-Cケーブル単体の最大出力は60Wです。インテリジェント温度管理チップと放熱ジェルを内蔵しており、温度はあんぜん基準の範囲内に保たれ、発熱によるあんぜん問題の心配はありません。【磁気吸引式のカードスロット、ケーブルを引っ張るだけで収納でき、手動でケーブルを整える必要がありません】：「カチッ」。デスクトップがすっきり片付き、旅行時の保管も簡単です。\n【幅広い互換性があり、1つでこと足りる】：ノートパソコン：Apple、Lenovo、Fujitsu、Microsoft、Dell、HP、Acer、Huawei、Xiaomi、ASUSなど対応します。タブレット：iPad、Idea Tab、Legion Tab、LAVIE Tab、Surface Pro、Dynabook、LIMNO、Galaxy Tab、MatePadなど互換します。スマホ：iPhone、Google、Samsung、Sharp、Sony、FCNT、Huawei、Xiaomi、Redmi、VIVO、OPPOなど互換します。その他：ワイヤレスイヤホン・スマートウォッチ・モバイルバッテリー・ゲーム機・カメラー・電子書籍などお手元のデバイスを幅広い互換します。【3台のデバイスを、同時にフル充電できる】：同時充電時には、インテリジェントに電力が配分されます。単一ポート使用時：USB Type-Cポート：67W、USB Type-Aポート：30W、自動巻き取り式ケーブル：60W（USB-C伸縮式ケーブルは、最大対応60W出力について、これはAppleデバイスを対象とした仕様です）。2つのポートを使用する場合、USB Type-C+USB Type-A：5V/3A。USB Type-C+自動巻き取り式ケーブル：20W+45W。USB Type-A+自動巻き取り式ケーブル：18W+45W。3つのポートを使用する場合。USB Type-C+USB Type-A+自動巻き取り式ケーブル：5V/3A+45W。※本製品がSamsung SFC3.0プロトコルを対応しません。\n【複数の保護機能が付いており、急速充電の際もデバイスが傷つきません】：過電圧保護、短絡保護、静電気保護、低電圧保護、干渉防止保護、過電力保護、過電流保護、インテリジェント温度制御保護。【世界中で使用可能で、出張の際に便利】：100V〜240Vと幅広い範囲の電圧入力に対応しています。【構造の最適化とアップグレードにより、自動巻き取り式ケーブルを引っ張っても、抜け落ちにくくなりました】：本体はコンパクトで壁面にぴったりとフィットします。壁にプラグを差し込んだ際のバランスと安定性が大幅に向上し、ケーブルが落ちるのを効果的に防ぐことができます。本製品の最大対応出力は67Wです。70W未満の機器とご併用いただくことをお勧めします。【パッケージ内容】：Mcdodo 67W 急速充電器 自動巻き取り式USB-Cケーブル付き GaN充電器 ＊1つ、取扱説明書＊1つ、保証カード＊1つ。 › もっと見る\nブランド mcdodo\nコネクタタイプ USB-Cコネクタ＆USB-Aコネクタ&USB-Cケーブル\n対応デバイス ノートパソコン・タブレット・スマホ・ゲーム機など対応\n対応電話モデル MacBook Pro/Airシリーズ、Dellシリーズ、ThinkPadシリーズ、Surfaceシリーズ、iPhone 17/16/15/14/13/12/11/XS/XR/SE/8/7/6/5シリーズ、iPad/iPod/AirPods、Galaxy/Xperia/Pixel/Xiaomi/Huawei/Switch/LG/Androidなど対応MacBook Pro/Airシリーズ、Dellシリーズ、ThinkPadシリーズ、Surfaceシリーズ、iPhone 17/16/15/14/13/12/11/XS/XR/SE/8/7/6/5シリーズ… 表示を増やす\n色 ブラック\n商品の個数 1\nmcdodoのストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Mcdodo 67W GaN 急速充電器 PD充電器 Type-C充電器 USB-C & USB-Aポート搭載【伸縮式USB-Cケーブル付き/出力デジタル表示/GaN新技術】折りたたみ式プラグ PD3.0/QC4.0/PPS等規格対応 MacBook iPad iPhone 18 Pro Galaxy Pixel Xperia Android 各種対応 PSE技術基準適合 ブラック",
+          "url": "https://www.amazon.co.jp/dp/B0DWX6XTMG",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "ESR Xtend 45W巻き取り式充電器 最大60W出力ダイナミック電源アダプタ",
+      "asin": "B0HCNF6Y62",
+      "brand": "ESR",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61LrjziBF4L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0HCNF6Y62",
+      "provisional": false,
+      "ref": "p2",
+      "search_key": "ESR Xtend 45W巻き取り式充電器 最大60W出力ダイナミック電",
+      "sources": [
+        {
+          "brand": "ESR",
+          "excerpt": "ESR Xtend 45W巻き取り式充電器 最大60W出力ダイナミック電源アダプタ\nこの商品について\n【引くだけで最大60Wの高速充電】 PD 3.2 AVSとGaNテクノロジーに対応し、45～60Wのダイナミック出力で接続した端末に合わせて充電します。iPhone 17 Pro Maxをわずか20分で50%まで充電できます。\n【コンパクト設計で旅行に最適】本体サイズはわずか64×53×29.5mmです。折りたたみ式プラグを備え、出張や旅行にもすっきり持ち運べます。\n【内蔵巻き取り式ケーブルでスマートに充電】95cmの高耐久ナイロン編み込みUSB Type-Cケーブルを内蔵しています。20,000回以上の巻き取り・引き出しと、10,000回以上の折り曲げテストをクリアし、毎日の使用に適した耐久性を備えています。\n【2台の端末を同時充電】 内蔵巻き取り式USB Type-CケーブルとUSB Type-Cポートを搭載し、2台の端末を同時に充電できます。2台同時に充電する場合は、別途USB Type-Cケーブルが必要です（ケーブルは付属していません）。\n【TUV認証の安全設計】 過電圧・低電圧保護、過電流保護、リアルタイム温度モニタリング、難燃素材を採用し、より安全な充電をサポートします。同梱物： ESR Xtend 45W巻き取り式充電器（USB-Cケーブル内蔵）、12か月の製品保護、個別サポート。\n【Apple製品専用、幅広い機器に対応】 MacBook Pro／MacBook Air（2025～2020年モデル）、iPad Pro／iPad Air／iPad（2025～2020年モデル）、iPhone 12シリーズ以降（iPhone Duo、18Pro Max、 17e、16eを含む）、Apple Watch Series 11～7、SE 3～1、Ultra 2／Ultra、AirPods Pro 3／2／1、AirPods 4／3／2に対応します。Androidスマホ、その他のノートPC、タブレットなどのUSB-C機器にも使用できます。 › もっと見る\nブランド ESR\nコネクタタイプ USB Type C\n対応デバイス iPhone Duo/18 Pro Max/18 Pro/17/16/15/14/13/12 , iPhone Air/17e/16e; Galaxy S26/S25/S24/S23/S22/S21, Galaxy Z Fold8/Fold7/Fold6/Fold5, Pixel 11/10iPhone Duo/18 Pro Max/18 Pro/17/16/15/14/13/12 , iPhone Air/17e/16e; Galaxy S26/S25/S24/S23/… 表示を増やす\n対応電話モデル iPhone Duo/18 Pro Max/18 Pro/17/16/15/14/13/12 , iPhone Air/17e/16e; Galaxy S26/S25/S24/S23/S22/S21, Galaxy Z Fold8/Fold7/Fold6/Fold5, Pixel 11/10 表示を増やす\n付属コンポーネント ESR Xtend 45W格納式充電器、取扱説明書、包括的な12ヶ月保護プラン、生涯サポート、パーソナライズされたヘルプ。\n特徴 AVSで最大60Wのダイナミックパワー、95cm編組格納式USB-Cケーブル内蔵、2台のデバイスを同時に充電\n色 ブラック\n入力電圧 240 ボルト (AC)\nアンペア数 2.25 アンペア\nUSBポートの総数 2 表示を増やす\nESRのストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "ESR Xtend 45W巻き取り式充電器 最大60W出力ダイナミック電源アダプタ",
+          "url": "https://www.amazon.co.jp/dp/B0HCNF6Y62",
+          "verified": true
+        },
+        {
+          "excerpt": "Xtend 45W Retractable Charger - US Plug - White\n15% Off Sitewide\nCode: BOO15\n20% Off Any 2\nCode: BOO20\n25% Off Any 2 Code: BOO25\nCompact 45W retractable charger with a built-in 3.1 ft cable, made to power Apple devices and more with less bulk—perfect for travel, bedside, and everyday use.\nPay with Ease\nDelivery Method\nESR Super User Benefits\nEarn points with every purchase, enjoy exclusive member-only offers.\nFree shipping on qualified orders\n30-Day Money-Back Guarantee\nLifetime Customer Support\nSecure, Easy Payments\nCompatibility : supports PD 3.2 AVS and PPS for fast charging across compatible USB-C devices, including MacBook Pro/Air (2025–2020), iPad Pro/Air/iPad (2025–2020), iPhone 12 series and later (including 17e and 16e), Apple Watch Series 11-7, SE, Ultra 2/Ultra, AirPods; Samsung Galaxy S27–S21, Z Fold 7–5, A56–A54; Google Pixel 10–6; and other compatible USB-C laptops, tablets, and devices\nOne Pull, 1.6X Faster Charging: up to 45W output with dynamic 45–60W power adjustment that intelligently adapts to your device; charge an iPhone 17 Pro Max to 50% in 20 minutes, with built-in temperature monitoring for safer charging\nCompact Design, Ready for Every Trip: a built-in 3.1 ft retractable cable and foldable plug combine charging and cable storage in one compact design, making it easy to pack for travel and mobile work\nCharge Two Devices at Once: one built-in retractable USB-C cable and one additional USB-C port let you fast-charge two devices simultaneously, keeping your phone, tablet, or laptop powered with fewer chargers\nColor: White Retractable Phone Charger\nCustomer Reviews\nI travel with way too many cables between my phone, cameras, laptop and other tech, so I really like the idea of having the USB-C cable built directly into the charger. The retractable cable comes out to a little over 3 feet and disappears back inside when you’re done, so there’s one less loose cable getting tangled in my bag.You also get another USB-C port if you need to charge two devices. With one compatible device connected, it can dynamically output up to 60W, which is enough for more than just a phone. The plug folds in too, which makes the whole thing much easier to pack.I like the compact look and the charger is extremely easy to use. ESR makes quality products so I trust this should hold up over time. It’s not the tiniest charger I own, but having the cable built in more than makes up for that when I’m traveling. It's a little pricey at it's original price, but when under $40, this is a good value.\nThis ESR Xtend retractable charger is a great option for keeping charging gear organized and easy to carry. The retractable cable design is especially convenient because it helps eliminate loose cables getting tangled in a bag, backpack, or travel case.I really like having two ports available, making it possible to charge multiple devices when needed. The 45W charging capability also makes this a versatile option for everyday use at home, work, or while traveling.The compact design makes it easy to take along without adding much bulk. The retractable cable is a particularly nice feature for travel since it keeps everything contained and neat when the charger isn't being used.Overall, this is a well-designed and practical charging accessory. The retractable cable, two-port setup, and high-power charging capability make it a convenient choice for anyone who wants to keep their charging setup simple and organized.\nI chose the white version of this ESR Xtend charger, and the material quality is excellent, it gives off a very premium, high tech vibe! I primarily use it to charge my iPad Pro and iPhone 16/17 Pro Max, and the charging speed is incredibly fast and highly stable. Thanks to the AVS technology and GaN support, it delivers up to 60W of dynamic power, efficiently charging devices like the iPhone 17 Pro Max to 50% in just 20 minutes. The built in 3.1 ft retractable braided cable is another brilliant feature; it is rated for over 20,000 pulls and keeps everything looking incredibly neat and futuristic. If you want a fast, stable, and sleek 2 port wall charger for your Apple ecosystem, this is an outstanding choice!\nImpossibly Small, Incredibly More\n60W Max Charging With a Single Pull\nTUV-Certified for Safe Charging\nPowered by GaN Technology\nImpossibly Small, Perfect for Every Trip\nCharge 2 Devices Together\nMaximized speed for two devices with smart power distribution\nCharge Your Way With Extended Cable\nBuilt to Last Longer\nBuilt for Apple, Ready for More\nSupports PD 3.2 and PPS for fast charging across USB-C devices",
+          "http_status": 200,
+          "source_type": "manufacturer_official",
+          "title": "White 45W AVS GaN Retractable Wall Charger, US Plug | ESR Xtend",
+          "url": "https://www.esrtech.com/products/white-45w-avs-gan-retractable-wall-charger-us-plug-xtend",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "65W 充電器 type-c 急速充電器【超小型·超軽量·PSE認証済·折りたたみ式プラグ】で3台のデバイスを同時に充電可能 PD対応 USB-C x 2とUSB A ポート GaN(窒化ガリウム) PSE技術規格対応 PD3.0/QC3.0/PPS/SCP規格/iPhone/Android/iPad/MacBook/ノートパソコン 各種対応 そのUSB-C/USB-A機対応",
+      "asin": "B0H8QZMKVH",
+      "brand": "Leadele",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51EV30TIK1L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0H8QZMKVH",
+      "provisional": false,
+      "ref": "p3",
+      "search_key": "Leadele 65W 充電器 type-c 急速充電器 で3台のデバイスを同時",
+      "sources": [
+        {
+          "brand": "Leadele",
+          "excerpt": "65W 充電器 type-c 急速充電器【超小型·超軽量·PSE認証済·折りたたみ式プラグ】で3台のデバイスを同時に充電可能 PD対応 USB-C x 2とUSB A ポート GaN(窒化ガリウム) PSE技術規格対応 PD3.0/QC3.0/PPS/SCP規格/iPhone/Android/iPad/MacBook/ノートパソコン 各種対応 そのUSB-C/USB-A機対応\nこの商品について\n【より速く、より安全に！ 】Leadele 65W Type-C急速充電は、C2ポートで65Wの出力を実現できるため、このUSB PD充電器は従来のUSB充電器よりも約7倍高速になり、外出中や忙しい生活の中でデバイスの充電を待つ時間を大幅に短縮します。 高速充電器 type-cは、先進的なGaNIII（GaN III）素材と「3Dチップロック技術」を採用しています。この特別な組み合わせにより、充電器はコンパクトでありながら、内部の熱を可能な限り低く抑えて効率的な電力変換を行うことができます。さらに、この電源充電器は PSE、CE、UL、FCC 規格に準拠しています。充電器には、過電流保護、過電圧保護、短絡保護、過熱保護、放射線保護、干渉保護、耐火保護の 8 つの保護機能が備えられています。デバイスを包括的に保護します。デバイスの電力が80％に達すると、急速充電器は自動的に過充電保護モードに入るため、夜間の過充電によるバッテリーの損傷を心配する必要はありません。\n【より小さく、より軽く！ 】Leadele 65W タイプC 急速充電器は折りたたみ式プラグを採用しており、プラグを簡単に隠してより簡潔なスペースを確保できるため、他の物にぶつかっても傷がつきにくく、どこにでも簡単に持ち運べます。 オリジナルの Apple 充電器 と比べて、65% 小型、55% 軽量化されたこのコンパクトで高速な usb c 充電器 65Wは、収納しやすく、旅行や出張に最適です。まさに、65W usb-c 充電器 65w を1台持つことは、パソコン用＋携帯電話用＋小型機器用のacアダプターを1台持つことに相当し、テンポの良い充電ライフを実現します。100％の価値を発揮します。\n【新しい多機能設計】新しく設計された PD 65W急速充電器 は、2 つの Type-C ポートと 1 つの USB-A ポートを備えており、複数のデバイスの充電ニーズに完全に対応できます。 2 つの USB-C ポートはそれぞれ最大 20W と 65W の単一出力をサポートし、USB-A ポートは 18W の単一出力を提供します。 急速充電器 type-c 3 ポート設計は家族や同僚と共有するのに最適で、リビングルームやオフィスで複数のデバイスを同時に充電できるため、使用するデバイスごとに異なる充電器を持ち運ぶ必要がありません。家庭でもオフィスでも、このタイプc 充電器は全会一致で最適な選択としておすすめされる！\n【幅広い互換性】PD3.0に加えて、充電器 usb c 65WはQC4+、PPS、SCP、FCPなどの充電規格もサポートしており、さまざまなデバイスの急速充電ニーズを満たすことができます。 弊社の急速充電器 PD は、市場の主流ブランドのスマートフォン、タブレット、ラップトップに広く適用でき、さまざまなデバイスの充電ニーズを満たします。また、世界各国の電圧（AC100-240V）に対応しており、アメリカ、ヨーロッパ、韓国、中国、台湾、オーストラリアなどでも安心してご使用いただけますので。\n【アフターセールス保証】usb c 急速充電器には 2 年間のメーカー保証が付いています。何か問題がございましたら、お気軽にお問い合わせください。24 時間以内に問題を解決いたします。当社はお客様からのフィードバックを重視し、今後もサービスの向上に努めてまいります。PD USB充電器使用する場合は、互換性のあるケーブルと急速充電をサポートするデバイスを選択してください。 ※プラグの形状は国によって異なる場合がありますが、海外でもご使用いただけます。 › もっと見る\nブランド Leadele\nコネクタタイプ USB Type C\n対応デバイス Airpods, Android スマートフォン, Ipad, Iphone, タブレット\n対応電話モデル Iphone 12, Iphone 13, Iphone 14\n色 黑\n入力電圧 20 ボルト (DC)\nUSBポートの総数 3\nワット数 65 W\n商品の個数 1\n出力電流 5 アンペア 表示を増やす\nブランド: Leadele",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "65W 充電器 type-c 急速充電器【超小型·超軽量·PSE認証済·折りたたみ式プラグ】で3台のデバイスを同時に充電可能 PD対応 USB-C x 2とUSB A ポート GaN(窒化ガリウム) PSE技術規格対応 PD3.0/QC3.0/PPS/SCP規格/iPhone/Android/iPad/MacBook/ノートパソコン 各種対応 そのUSB-C/USB-A機対応",
+          "url": "https://www.amazon.co.jp/dp/B0H8QZMKVH",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "エレコム 充電器 急速充電 Type-C USB-C USB PD PPS対応 45W ケーブル一体型 巻き取り式 0.64m GaN 2ポート PSE認証 ノートPC対応 スマホ コンパクト ブラック EC-AC12945BK",
+      "asin": "B0H3TNNX57",
+      "brand": "エレコム(ELECOM)",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61RTuzoQSRL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "ports",
+        "power"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H3TNNX57",
+      "provisional": false,
+      "ref": "p4",
+      "search_key": "エレコム(ELECOM) エレコム 充電器 急速充電 Type-C USB-C USB P",
+      "selection_score": 0.51,
+      "sources": [
+        {
+          "brand": "エレコム(ELECOM)",
+          "excerpt": "エレコム 充電器 急速充電 Type-C USB-C USB PD PPS対応 45W ケーブル一体型 巻き取り式 0.64m GaN 2ポート PSE認証 ノートPC対応 スマホ コンパクト ブラック EC-AC12945BK\nこの商品について\n巻き取りケーブル一体型：長さ約64cmの巻き取り式USB Type-Cケーブルを内蔵し、ケーブルを別途持ち歩かずすっきり収納できます\nUSB PD 45Wで高速充電：USB Power DeliveryとPPS規格に対応し、スマホやタブレットからノートパソコンまで充電できます\n2ポートで同時充電：一体型ケーブルに加えUSB Type-Cポートを搭載し、2台同時接続時は30Wと10Wで出力します\nGaN II Plus採用で小型：窒化ガリウムICを採用し高出力ながらコンパクト。幅約62×奥行約37×高さ約48.5mm、約145gです\nPSE認証で安心設計：電気用品安全法の認証品で、Thermal Protectionが通電時の温度を監視・制御し機器を守ります › もっと見る\nブランド エレコム(ELECOM)\nコネクタタイプ USB Type C\n対応デバイス iPhone、タブレット、出力内で充電できるパソコン\n対応電話モデル USB Power Delivery 45WおよびPPS(Programmable Power Supply)33Wの規格内で充電が可能なノートパソコン、スマートフォンなどの機器\n付属コンポーネント 無し\n特徴 リール式ケーブル\n色 ブラック\n入力電圧 100 ボルト\nアンペア数 3 アンペア\nワット数 45 W 表示を増やす\nエレコム(ELECOM)のストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "エレコム 充電器 急速充電 Type-C USB-C USB PD PPS対応 45W ケーブル一体型 巻き取り式 0.64m GaN 2ポート PSE認証 ノートPC対応 スマホ コンパクト ブラック EC-AC12945BK",
+          "url": "https://www.amazon.co.jp/dp/B0H3TNNX57",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "CIO NovaPort SOLOⅡ 65W PD急速充電器 USB-C×1 単ポート NovaSafety2.0搭載 世界最小級 （ブラック）",
+      "asin": "B0FKN5MCC3",
+      "brand": "CIO",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61viRP+ha9L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0FKN5MCC3",
+      "provisional": false,
+      "ref": "p5",
+      "search_key": "CIO NovaPort SOLOⅡ 65W PD急速充電器 USB-C",
+      "sources": [
+        {
+          "brand": "CIO",
+          "excerpt": "CIO NovaPort SOLOⅡ 65W PD急速充電器 USB-C×1 単ポート NovaSafety2.0搭載 世界最小級 （ブラック）\nこの商品について\n【従来の充電器の常識を覆す小ささ】65W高出力の急速充電器とは思えないほどの、圧倒的コンパクトサイズ。片手にすっぽり収まり、持ち運び時はガジェットポーチはもちろん、カバンの小さなポケットにも難なく収まります。折り畳みプラグ式だから安全に持ち運べ、使用時もコンセント干渉がなく、コンセント周りをスッキリすることができます。オフィスでご使用になる際もかさばらず、デスク周りをスッキリとお使いいただけます。\n【ノートPCからiPhoneまで幅広く充電】GaN（窒化ガリウム）テクノロジーを採用し極限まで小型化しつつ発熱を抑え、最大出力65WでPC充電にも対応！ MacBook Proだけでなく、PD対応の様々なWindowsノートPCにも充電可能。 スマートフォンからノートPCまで幅広い機器に対応しています。 デバイス毎に異なる充電器を持ち運ぶ必要はありません。\n本製品は、NovaSafety 2.0に搭載された温度センサーが製品内部の温度状況を常時モニタリングし、過剰な発熱や部品の劣化リスクを抑えるため、内部温度に応じて自動的に出力電力を調整しています。ノートPCやスマートフォンなどのデバイスでは、充電開始時に高出力が必要ですが、一定時間経過後はデバイス側の電力要求が下がるため、NovaSafety2.0によっても充電速度への影響はほとんどありません。そのため、日常のご使用では充電速度の低下などの体感をいただくことはほとんどなく、安心してご利用いただけます。 一方で、電子負荷装置や工業用途など、常時65Wフルパワーで連続出力を必要とする特殊な使用環境では、安全保護機能により出力が制御される場合があります。 そのため、こうした特殊用途でのご使用には適しておりません。あらかじめご理解くださいますようお願いいたします。\n対応機種：ノートパソコン(Windows、Macbook 、Type-Cポート対応のLenovoやPanasonic製品など)、Apple iPhone 17 / iPhone 17 pro / iPhone 17 pro Max / iPhone Air / iPhone16 / iPhone16 Pro / iPhone16 Pro Max / iPhone15 / iPhone15 Plus / iPhone15 Pro / iPhone15 Pro Max / iPhone14 / iPhone14 Plus / iPhone14 Pro / iPhone14 Pro Max / iPhone13 / iPhone13 Pro / iPhone13 Pro Max / iPhone13 mini / iPhone12 / iPhone12 Pro / iPhone12 Pro Max / iPhone12 miniに対応。\n【外観にも機能性をプラス】 製品をいつまでも長くご愛用いただきたい思いから、表面に一眼レフカメラのボディのようなザラザラとした傷がつきにくいシボ加工を実装。いつまでも綺麗な状態でお使いいただけます。また、プラグ側は、壁にすき間なくピタッとささるフルフラットデザインに変更。壁コンセントに挿し込んだ際の安定性が向上。機能性や安定性に加え、洗練された所持欲満たされるオシャレなデザインを目指しました。\n【充電器回収サービス】 株式会社CIOは充電器のメーカーとして、適切な再利用及び廃棄を促進しており、その一環として不要になったAC充電器の回収を行っております。CIOが製造する全ての充電器、および他社製品が対象となります。 AC充電器の買い替えを検討されている方は弊社公式HPよりアクセスの上申請ください。ささやかではございますがお得に購入いただけるクーポンを発行させていただきます。回収サービスを通じて本体及び資源の再利用を進めるとともに、最新の製品に触れていただきやすくなることで生活がより便利になり、未来を感じていただきやすくなることで、持続的に、そしてより多くの方に“わくわく”が広がる社会の実現を目指しています。回収した充電器はメンテナンス後、取り組みに賛同いただける企業様や地方自治体等へお配りし、再活用いただく予定です。\n【CIO 安心保証対応】 日本メーカーとして動作不良にもしっかりと対応させていただきます。初期不良やご使用中の製品不良の際はまずはお問い合わせくださいませ。お問い合わせ時はご注文番号をお伝えいただくとスムーズです。※動作検品時に製品を開封し、問題ないものを納品させていただいております為、開封痕がある場合がございます。間違いなく新品未使用の為ご安心いただけますと幸いです。 › もっと見る\nブランド CIO\nコネクタタイプ USB Type C\n対応デバイス ゲーム機, スマートフォン, タブレット, ノートパソコン\n対応電話モデル 対応機種：ノートパソコン(Windows、Macbook 、Type-Cポート対応のLenovoやPanasonic製品など)\n付属コンポーネント ユーザーマニュアル\n特徴 トラベル, 格納式プラグ, 軽量デザイン, 高速充電\n色 ブラック\n入力電圧 240 ボルト (AC)\nUSBポートの総数 1\nワット数 65 W 表示を増やす\nCIOのストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "CIO NovaPort SOLOⅡ 65W PD急速充電器 USB-C×1 単ポート NovaSafety2.0搭載 世界最小級 （ブラック）",
+          "url": "https://www.amazon.co.jp/dp/B0FKN5MCC3",
+          "verified": true
+        },
+        {
+          "excerpt": "充電器\nワイヤレス充電器\nモバイルバッテリー\nケーブル\nウェアラブル\nその他\n限定\n福袋\n最大65W 1ポート GaN急速充電器 USB-C スマホからノートPCまで充電可能 USB PD 超小型 NovaPort 第二世代\nNovaPort SOLOⅡ 65W1C\nメーカー希望小売価格：￥4,380（税込）\n製品特徴\nトライアルサポートを実施中です。 詳しくはこちら\n従来の充電器の常識を覆す小ささ\n65W高出力の急速充電器とは思えないほどの、圧倒的コンパクトサイズ。片手にすっぽり収まり、持ち運び時はガジェットポーチはもちろん、カバンの小さなポケットにも難なく収まります。折り畳みプラグ式だから安全に持ち運べ、使用時もコンセント干渉がなく、コンセント周りをスッキリすることができます。オフィスでご使用になる際もかさばらず、デスク周りをスッキリとお使いいただけます。\nノートPCからiPhoneまで幅広く充電\nGaN（窒化ガリウム）テクノロジーを採用し極限まで小型化しつつ発熱を抑え、最大出力65WでPC充電にも対応！ MacBook Proだけでなく、PD対応の様々なWindowsノートPCにも充電可能。 スマートフォンからノートPCまで幅広い機器に対応しています。 デバイス毎に異なる充電器を持ち運ぶ必要はありません。 本製品は、NovaSafety 2.0に搭載された温度センサーが製品内部の温度状況を常時モニタリングし、過剰な発熱や部品の劣化リスクを抑えるため、内部温度に応じて自動的に出力電力を調整しています。ノートPCやスマートフォンなどのデバイスでは、充電開始時に高出力が必要ですが、一定時間経過後はデバイス側の電力要求が下がるため、NovaSafety2.0によっても充電速度への影響はほとんどありません。そのため、日常のご使用では充電速度の低下などの体感をいただくことはほとんどなく、安心してご利用いただけます。 一方で、電子負荷装置や工業用途など、常時65Wフルパワーで連続出力を必要とする特殊な使用環境では、安全保護機能により出力が制御される場合があります。 そのため、こうした特殊用途でのご使用には適しておりません。あらかじめご理解くださいますようお願いいたします。\n新技術 NovaEngine搭載\n次世代半導体のGaNチップを用いる事でエネルギーのロスを減らし、変換効率の向上を実現しました。充電器本体の発熱を抑制し、充電速度と安定性を追求した充電器です。\n進化した安全保護機能 NovaSafety2.0搭載\n製品温度を常に監視し、高負荷時、高温時に自動的に電力調整、温度管理を行います。より安全で快適なスマホ、タブレット、ノートPCの充電が実現しています。\n外観にも機能性をプラス\n製品をいつまでも長くご愛用いただきたい思いから、表面に一眼レフカメラのボディのようなザラザラとした傷がつきにくいシボ加工を実装。いつまでも綺麗な状態でお使いいただけます。また、プラグ側は、壁にすき間なくピタッとささるフルフラットデザインに変更。壁コンセントに挿し込んだ際の安定性が向上。機能性や安定性に加え、洗練された所持欲満たされるオシャレなデザインを目指しました。\nフルフラットデザイン\nプラグ側は、壁にすき間なくピタッとささるフルフラットデザインに変更。壁コンセントに挿し込んだ際の安定性が向上。機能性や安定性に加え、洗練された所持欲満たされるオシャレなデザインを目指しました。\n折りたたみプラグを採用\n折りたたみのプラグを採用しているので、持ち歩きにも最適。旅行や出張にも安心してお使いいただけます。\n充電器回収サービス\n株式会社CIOは充電器のメーカーとして、適切な再利用及び廃棄を促進しており、その一環として不要になったAC充電器の回収を行っております。CIOが製造する全ての充電器、および他社製品が対象となります。 AC充電器の買い替えを検討されている方は弊社公式HPよりアクセスの上申請ください。ささやかではございますがお得に購入いただけるクーポンを発行させていただきます。回収サービスを通じて本体及び資源の再利用を進めるとともに、最新の製品に触れていただきやすくなることで生活がより便利になり、未来を感じていただきやすくなることで、持続的に、そしてより多くの方に“わくわく”が広がる社会の実現を目指しています。回収した充電器はメンテナンス後、取り組みに賛同いただける企業様や地方自治体等へお配りし、再活用いただく予定です。\nよくある質問\nQ：ノートPCなど65W出力対応品に使えますか？ A：はい、ご使用いただけます。充電開始から20～30分ほど経過すると、本体内部の温度状況に応じておおよそ55W程度まで出力が調整される仕組みです。 これは部品の温度上昇による劣化を抑える設計上の仕様で、長期的な性能維持に寄与します。ノートPCやスマートフォンなどの多くのデバイスは充電が進むにつれて電力の必要量が減少するため、体感として充電速度の低下を感じることはほとんどありません。 なお、工業用途や電子負荷試験のように高出力が長時間続く環境下では、内蔵の制御機構により出力が抑制される場合があります。 Q：どうして最初は65Wなのに、途中から下がるのですか？ A：ノートPCやスマートフォンは、充電開始時に比較的高い電力を必要とします。 そのため、本製品は充電初期に約65Wでしっかりと電力供給し、時間の経過とともに機器側の要求電力が落ち着いてきたタイミングで、温度制御とともに出力を調整する設計になっています。 この仕様により、安定した性能と製品内部部品の長期的なコンディション維持が両立されています。 Q：充電中に出力が停止すると聞きましたが本当ですか？ A：通常のPCやスマートフォンの使用において、出力が突然止まることは基本的にありません。 ただし、検証用の電子負荷装置などを使って、一定の出力を長時間連続して引き続けるような特殊な環境では、制御機構が働き、一時的に出力が遮断される場合があります。 これは、想定を超える発熱に対し製品保護を優先する仕組みによるものです。 Q：この充電器は高温になっても壊れませんか？ A：本製品は、GaNパワーMOSFETを2基内蔵した最新チップを採用し、発熱を抑える(Nove Engine)ことで、高温時でも安定動作するよう設計しています。 さらに、NovaSafety 2.0による内部温度の常時モニタリングと出力制御により、過剰な発熱や部品の劣化リスクを未然に防いでいます。 コスト重視ではなく、安定性と寿命優先で材料や部品選定を行っています。\n製品仕様\n型番 CIO-G65W1C-N2\nJANコード CIO-G65W1C-N2-BKN（4570188384002） CIO-G65W1C-N2-WHN（4570188384019）\n入力 100-240VAC 50/60Hz 1.5A\n出力 USB-C:5V⎓3A/9V⎓3A/12V⎓3A/15V⎓3A/20V⎓3.25A (Max 65W) PPS：5-11V⎓5A\n急速充電規格 PD3.0 / QC+4.0 / PPS\n付属品 取扱説明書（日本語/English）\nポート USB-C×1\nサイズ 約 52.5 × 30 × 26.5 mm\n重さ 約 74 g\n対応機種 ノートパソコン(Windows、Macbook 、Type-Cポート対応のLenovoやPanasonic製品など) Apple iPhone16 / iPhone16 Pro / iPhone16 Pro Max / iPhone15 / iPhone15 Plus / iPhone15 Pro / iPhone15 Pro Max / iPhone14 / iPhone14 Plus / iPhone14 Pro / iPhone14 Pro Max / iPhone13 / iPhone13 Pro / iPhone13 Pro Max / iPhone13 mini / iPhone12 / iPhone12 Pro / iPhone12 Pro Max / iPhone12 mini / iPhone11 / iPhone11 Pro Xperia / Galaxy / Huawei / Zenfone / AQUOS / その他Androidスマホ / MP3プレーヤー / Nintendo Switchなどのゲーム機まで幅広い機器に対応。 ※お使いの端末すべてに最大出力での充電を保証しておりません。 各出力での給電に対応している製品であるか、搭載のUSB-CはPD充電対応しているのかを製品もしくはメーカーに直接ご確認くださいますようお願いいたします。\n注意事項 ※お使いの端末すべてに最大出力での充電を保証しておりません。 ※PCへのPD充電は各メーカーによって必要な電圧・電力が異なりますので、詳しくはPC各メーカーにお問い合わせください。 ※PowerDelivery(PD)充電・QuickCharge（QC）を行う際は、PD・QC対応デバイス機器に対し、PD・QC対応 ケーブルをご使用いただく必要がございます。 ※高出力での充電中は本製品が熱くなる場合がございますが、デバイス機器側の充電が満充電に近づくにつれ、通常の温度に戻ります。 ※本製品を長時間使用しないときは、本製品を家庭用コンセントから抜いてください。故障の原因となります。",
+          "http_status": 200,
+          "source_type": "manufacturer_official",
+          "title": "NovaPort SOLOⅡ 65W1C | 株式会社CIO（シーアイオー）公式HP 充電器・モバイルバッテリーメーカー",
+          "url": "https://connectinternationalone.co.jp/cioproduct/adapter/novaport/cio-g65w1c-n2/",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "CIO NovaPort SLIM DUOII 45W2C PD急速充電器 USB-C×2 180°スイングプラグ 薄型軽量70g (ホワイト)",
+      "asin": "B0H326NVRT",
+      "brand": "CIO",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51s0AEjWB6L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "portability",
+        "ports"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H326NVRT",
+      "provisional": false,
+      "ref": "p6",
+      "search_key": "CIO NovaPort SLIM DUOII 45W2C PD急速充電",
+      "selection_score": 0.53,
+      "sources": [
+        {
+          "brand": "CIO",
+          "excerpt": "CIO NovaPort SLIM DUOII 45W2C PD急速充電器 USB-C×2 180°スイングプラグ 薄型軽量70g (ホワイト)\nこの商品について\n充電器 › もっと見る\nブランド CIO\nコネクタタイプ USB Type C\n対応デバイス ノートパソコン\n対応電話モデル 対応機種：ノートパソコン(Windows、Type-Cポート対応のLenovoやPanasonic製品など)\n付属コンポーネント ユーザーマニュアル\n特徴 高速充電\n色 ホワイト\n入力電圧 240 ボルト\nUSBポートの総数 1\nワット数 65 W 表示を増やす\nCIOのストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "CIO NovaPort SLIM DUOII 45W2C PD急速充電器 USB-C×2 180°スイングプラグ 薄型軽量70g (ホワイト)",
+          "url": "https://www.amazon.co.jp/dp/B0H326NVRT",
+          "verified": true
+        },
+        {
+          "excerpt": "充電器\nワイヤレス充電器\nモバイルバッテリー\nケーブル\nウェアラブル\nその他\n限定\n福袋\nCIO 充電器 Type-C 45W 2ポート 急速充電 PD PPS スイングプラグ 薄型 軽量70g NovaPort SLIM DUOII 45W 2C\nNovaPort SLIM DUO II 45W2C\nメーカー希望小売価格：￥4,280（税込）\n製品特徴\n【単ポート最大45Wでタブレット・省電力ノートPCにも対応】\nUSB-Cポート単独使用時に最大45W出力に対応した急速充電器です。MacBook Airなどの省電力ノートPC、iPad向け、Switch2、iPhone、Androidスマートフォンまで、1台で幅広いデバイスへ充電できます。出張先や外出先で、ノートPCやスマートフォンを1台で対応したいビジネス用途に適しています。\n【2ポート同時で合計45W出力】\nUSB-Cを2ポート搭載し、2ポート同時使用時も合計最大45Wで出力。30W+15W、15W+30W、20W+20Wなどのパターンで電力配分されるため、ノートPC＋スマートフォン、タブレット＋スマートフォンなど、タイプCの2台同時充電にも対応します。\n【CIO独自制御技術 NovaIntelligence搭載】\n接続されたデバイスに合わせて最適な電力を瞬時に判別し、自動で振り分けるCIO独自の制御技術「NovaIntelligence」を搭載。ポートごとの出力を意識せず、繋ぐだけで端末ごとに最適化された急速充電を行えます。\n【NovaSafety2.0で温度を自動コントロール】\nNovaPort SLIMⅡに搭載された安全保護機能「NovaSafety2.0」が、本体温度を常に監視し、発熱を自動でコントロール。出張や旅行先など長時間の充電シーンでも、温度に配慮した制御で使いやすい設計です。\n【180°スイングプラグでコンセント周りの取り回し向上】\nプラグは180°まで開閉できるスイング構造を採用。新幹線の取っ手部分の差し口、カフェの低い位置のコンセント、壁際の家具裏側など、向きや角度に制約のあるコンセントでも差し込みやすい設計です。持ち運び時は折りたたみプラグとしてコンパクトに収納できます。\n【薄さ約12.5mm・約70gのスリム設計】\n本体サイズは約78.8×44.2×12.5mm、重量は約70g。USB-C 2ポートで45W出力に対応しながら、ショルダーバッグやポーチに収まりやすい薄型・軽量設計のUSB-C充電器です。タブレット用や省電力ノートPC用の充電器を持ち歩きたいビジネスシーンや旅行・出張にも適しています。\n【PD・PPS対応急速充電器】\nUSB Power Delivery（PD）に加え、PPS（5-11V=4.05A）にも対応。MacBook Air、iPhone、Galaxy、Pixel、iPad向け、Switch2など、各種USB-C急速充電対応デバイスに対し、規格に沿った効率的な充電が行えます。ACアダプター入力は100-240V対応で海外コンセントの電圧にも対応します。Type-C充電器として幅広い機器にご利用いただけます。\n【シボ加工×アルミプレートロゴ・ブラック/ホワイト2色】\n表面には一眼レフカメラにも採用されるシボ加工を施し、傷や指紋が目立ちにくい仕上がり。中央にはCIOのロゴをアルミプレートで配置しています。カラーはブラックとホワイトの2色展開で、デスクや持ち歩きシーンに合わせて選べます。\n【NovaEngine／平面トランス採用の新設計】\n180°スイングプラグ構造によって生まれる限られた内部スペースの中で、薄型ボディと最大45W出力を両立するため、CIO独自の新世代設計「NovaEngine」を採用。平面トランスの採用により内部部品の薄型化に貢献し、さらに基板レイアウトや構造を最適化することで、約12.5mmのスリム設計とUSB-C 2ポート搭載を実現しました。NovaPort SLIMⅡならではの内部構造です。\n製品仕様\n型番 CIO-G45W2C-N2-S\nJANコード CIO-G45W2C-N2-S-BK（4570188385337） CIO-G45W2C-N2-S-WH（4570188385344）\nポート数 USB-C×2\n入力 100-240V~50/60Hz, 1.2A Max\n出力（USB-C1/C2） 5V⎓3A / 9V⎓3A / 12V⎓3A / 15V⎓3A / 20V⎓2.25A(Max 45W)/PPS:5-11V⎓4.05A\n出力（USB-C1＋C2） 30W+15W or 15W+30W or 20W+20W（45W Max）\n出力（USB-C1/C2）30W 5V⎓3A / 9V⎓3A / 12V⎓2.5A / 15V⎓2A / 20V⎓1.5A(Max 30W)/PPS: 5-11V⎓2.7A\n出力（USB-C1/C2）20W 5V⎓3A / 9V⎓2.22A / 12V⎓1.67A PPS: 5-11V⎓1.8A\n出力（USB-C1/C2）15W 5V⎓3A / 9V⎓1.66A / 12V⎓1.25A\nサイズ 約44.2×78.8×12.5mm（プラグ部除く）\n重量 約70g\n付属品 本製品 取扱説明書",
+          "http_status": 200,
+          "source_type": "manufacturer_official",
+          "title": "NovaPort SLIM DUO II 45W2C | 株式会社CIO（シーアイオー）公式HP 充電器・モバイルバッテリーメーカー",
+          "url": "https://connectinternationalone.co.jp/cioproduct/adapter/novaport/novaport-slim-duo-ii-45w2c/",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "selection": {
+    "brand_count": 5,
+    "comparison_axes_covered": [
+      "portability",
+      "ports",
+      "power"
+    ],
+    "content_duplicates_removed": [
+      {
+        "asin": "B0DWX6XTMG",
+        "duplicate_of_asin": "B0DWX6XTMG",
+        "reason": "normalized_title_exact"
+      },
+      {
+        "asin": "B0HCNF6Y62",
+        "duplicate_of_asin": "B0HCNF6Y62",
+        "reason": "normalized_title_exact"
+      },
+      {
+        "asin": "B0H8QZMKVH",
+        "duplicate_of_asin": "B0H8QZMKVH",
+        "reason": "normalized_title_exact"
+      },
+      {
+        "asin": "B0H3TNNX57",
+        "duplicate_of_asin": "B0H3TNNX57",
+        "reason": "normalized_title_exact"
+      },
+      {
+        "asin": "B0FKN5MCC3",
+        "duplicate_of_asin": "B0FKN5MCC3",
+        "reason": "normalized_title_exact"
+      }
+    ],
+    "price_used_as_constraint_only": true,
+    "retained_qa_passed_asins": [
+      "B0DWX6XTMG",
+      "B0FKN5MCC3",
+      "B0H3TNNX57",
+      "B0H8QZMKVH",
+      "B0HCNF6Y62"
+    ],
+    "targeted_replacement": true
+  },
+  "slug": "usb-c-laptop-chargers-for-travel"
+}

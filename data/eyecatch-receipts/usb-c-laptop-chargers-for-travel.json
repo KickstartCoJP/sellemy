@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-10-25T14:05:15.919211+00:00",
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "generation_route_attestation": "codex_rollout_extension",
+  "height": 1024,
+  "image_generation_internal_usage_exposed": false,
+  "image_sha256": "55defd2dbd9a0a0e90a7c1f8936b56434a8b652548374fdbbb37f8bdfc377ae2",
+  "member_binding_revision": 9,
+  "model": "gpt-6-sol",
+  "model_reported_generation_route": "built-in_image_gen",
+  "role_id": "bu-codex-sellemy-designer",
+  "routing": {
+    "api_share": 0,
+    "codex_reserve_percent": 20.0,
+    "codex_share": 100,
+    "codex_usage": {
+      "remaining_percent": 78.0,
+      "resets_at": 1793383603,
+      "source": "/Users/kickstart/.codex/sessions/2026/10/25/rollout-2026-10-25T12-24-49-01a17116-e766-7301-a301-187624406ad7.jsonl",
+      "used_percent": 22.0,
+      "window_minutes": 10080
+    },
+    "errors_before_success": [],
+    "executed_route": "codex",
+    "fallback_from": null,
+    "mode": "weighted_random",
+    "reason": "codex_only",
+    "remaining_percent": 78.0,
+    "roll": null,
+    "selected_route": "codex"
+  },
+  "routing_recorded_at": "2026-10-25T14:05:15.920317+00:00",
+  "summary": "旅行の荷造り中にUSB-C充電器をポーチへ入れる編集的な生活シーン。PNG形式、1536x1024を確認済み。",
+  "thread_id": "01a17360-7b0a-74a1-94d1-98b273656914",
+  "token_usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 61952,
+    "input_tokens": 86802,
+    "output_tokens": 775,
+    "reasoning_output_tokens": 28,
+    "total_tokens": null,
+    "uncached_input_tokens": null
+  },
+  "token_usage_source": "codex_rollout.turn_token_usage",
+  "visual_family": "travel preparation lifestyle",
+  "width": 1536
+}
