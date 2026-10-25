@@ -142,6 +142,7 @@ def duplicate_pair_issues(review, evidence):
         return ['duplicate pair checks missing']
     sources = {p['ref']: source_text(p) for p in evidence.get('products', [])}
     issues, proven = [], False
+    expected = {tuple(sorted((a, b))) for i, a in enumerate(sources) for b in list(sources)[i+1:]}
     used = set()
     for pair in checks:
         if not isinstance(pair, dict):
@@ -174,6 +175,9 @@ def duplicate_pair_issues(review, evidence):
                 issues.append(f'{left}/{right}: duplicate conclusion lacks two grounded source anchors')
             else:
                 proven = True
+    missing = expected - used
+    if missing:
+        issues.append(f'duplicate pair coverage incomplete: {len(missing)} missing of {len(expected)}')
     if review.get('distinct_products') is False and not proven:
         issues.append('distinct_products=false without proven duplicate pair')
     if review.get('distinct_products') is True and proven:
@@ -232,8 +236,7 @@ def review_issues(review, evidence, *, article=False):
         if isinstance(check, dict) and isinstance(other, dict)
     ):
         issues.append('duplicate pair not substantiated by matching product identities')
-    if 'duplicate_pair_checks' in review or review.get('distinct_products') is False:
-        issues.extend(duplicate_pair_issues(review, evidence))
+    issues.extend(duplicate_pair_issues(review, evidence))
     if len(covered) < 2:
         issues.append('review lacks two grounded topic axes')
     required = ['distinct_products', 'meaningful_comparison', 'sufficient_evidence']

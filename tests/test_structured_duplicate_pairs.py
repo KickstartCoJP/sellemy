@@ -35,3 +35,16 @@ def test_missing_check_item_fails():
     p = pair()
     p['items'].pop()
     assert any('incomplete' in x for x in duplicate_pair_issues({'distinct_products': False, 'duplicate_pair_checks': [p]}, evidence()))
+
+
+def test_six_products_require_all_fifteen_pairs():
+    e = {'products': [
+        {'ref': f'p{i}', 'sources': [{'verified': True, 'title': f'Product {i}', 'excerpt': ''}]}
+        for i in range(1, 7)]}
+    checks = []
+    for i in range(1, 7):
+        for j in range(i+1, 7):
+            checks.append({'left_ref': f'p{i}', 'right_ref': f'p{j}', 'is_duplicate': False, 'reason': 'No duplicate established',
+                           'items': [{'item': key, 'status': 'UNKNOWN', 'left_quote': '', 'right_quote': '', 'reason': 'No affirmative duplicate'} for key in DUPLICATE_ITEMS]})
+    assert duplicate_pair_issues({'distinct_products': True, 'duplicate_pair_checks': checks}, e) == []
+    assert any('coverage incomplete' in x for x in duplicate_pair_issues({'distinct_products': True, 'duplicate_pair_checks': checks[:-1]}, e))

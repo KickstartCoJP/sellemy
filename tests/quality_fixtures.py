@@ -26,6 +26,12 @@ def review(evidence, *, article=True):
         'reason': 'Offline mock: distinct source identities, dimensions and use-specific guidance.',
         **{k: True for k in ('distinct_products', 'meaningful_comparison', 'sufficient_evidence')},
         **{k: article for k in ('claims_grounded', 'buying_guidance', 'complete_comparison')},
+        'duplicate_pair_checks': [{
+            'left_ref': left['ref'], 'right_ref': right['ref'], 'is_duplicate': False,
+            'reason': 'Offline fixture distinct products',
+            'items': [{'item': key, 'status': 'UNKNOWN', 'left_quote': '', 'right_quote': '', 'reason': 'Not established as duplicate'}
+                      for key in __import__('comparison_acceptance').DUPLICATE_ITEMS],
+        } for i, left in enumerate(evidence['products']) for right in evidence['products'][i+1:]],
         'products': [{
             'ref': p['ref'], 'identity_key': ' '.join(p['amazon_title'].split(' ')[:2]),
             'identity_quote': ' '.join(p['amazon_title'].split(' ')[:2]),
