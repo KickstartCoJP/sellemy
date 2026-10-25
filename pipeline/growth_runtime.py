@@ -1273,7 +1273,49 @@ def run(
             result['status'] = 'recovery_staged' if result['recovery_mode'] else 'staged'
             return result
 
-        commit = _execute_job(slug, result, cache_only=cache_only)
+        try:
+            commit = _execute_job(slug, result, cache_only=cache_only)
+        except GrowthRuntimeError as recovery_error:
+            # A single unready product-reselection job must not consume the
+            # whole admitted publication slot. Its retry/hold state is already
+            # durable; continue with an independently selected fresh theme.
+            current = load_job(slug)
+            product_blocked = (
+                result.get('recovery_mode') is True
+                and str(recovery_error).startswith(('product discovery still in progress', 'needs_product_reselection'))
+                and current.get('current_stage') in {'WRITER_PENDING', 'PRODUCT_HOLD'}
+                and (current.get('next_retry_at') is None or datetime.fromisoformat(current['next_retry_at']) > datetime.now(timezone.utc))
+            )
+            if not product_blocked:
+                raise
+            result['skipped_recovery'] = {'slug': slug, 'reason': str(recovery_error), 'next_retry_at': current.get('next_retry_at')}
+            result['recovery_mode'] = False
+            result['base_head'] = require_clean_current_main()
+            feedback = load_feedback()
+            topic, candidates, viability_probes = select_viable_topic(planning_candidates, feedback, cache_only=cache_only)
+            planning_provider = topic.pop('_planning_provider_metadata', None)
+            result['planning_provider'] = planning_provider
+            result['topic'] = topic
+            result['viability_probes'] = viability_probes
+            selected, selection = select_six(candidates, topic, feedback)
+            evidence = build_evidence(topic, selected, selection)
+            job = create_job(topic=topic, evidence=evidence, selection=selection,
+                             planning_provider=planning_provider, viability_probes=viability_probes)
+            slug = job['slug']
+            if publish and scheduled:
+                decision = result.get('controller_decision') or {}
+                if decision.get('allowed'):
+                    write_artifact(slug, 'scheduled-admission.json', {
+                        'admission_id': (decision.get('receipt') or {}).get('admission_id'),
+                        'slot': decision.get('slot'),
+                        'admitted_at': (decision.get('receipt') or {}).get('admitted_at'),
+                    })
+            planning_meta = ((planning_provider or {}).get('codex_runtime') or {})
+            if planning_meta:
+                record_execution(slug=slug, role='planning', event_type='turn', stage='planning', metadata=planning_meta)
+                record_execution(slug=slug, role='planning', event_type='success', stage='planning', metadata=planning_meta)
+                record_context_quality(ROOT, PLANNING_SURFACE, True, session_id=planning_meta.get('session_id'))
+            commit = _execute_job(slug, result, cache_only=cache_only)
         if commit is None and result.get('status') == 'awaiting_chatgpt_final_review':
             return result
         result['commit'] = commit
