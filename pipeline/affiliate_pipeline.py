@@ -319,8 +319,12 @@ def reconcile(db: sqlite3.Connection) -> dict[str, Any]:
     for provider in providers:
         raw = db.execute("SELECT COUNT(*),MIN(period_start),MAX(period_end) FROM raw_files WHERE provider=?", (provider,)).fetchone()
         cur = db.execute("SELECT COUNT(*),MIN(event_date),MAX(event_date) FROM curated_orders WHERE provider=?", (provider,)).fetchone()
-        covered_from = cur[1] or raw[1]
-        covered_to = cur[2] or raw[2]
+        # Reporting coverage is the period of an acquired official report,
+        # not the last day on which a commission happened.
+        covered_from = raw[1] or cur[1]
+        covered_to = max(filter(None, (raw[2], cur[2])), default=None)
+        if covered_to:
+            covered_to = min(covered_to, date.today().isoformat())
         state = "available" if raw[0] else "missing"
         db.execute("""INSERT OR REPLACE INTO provider_watermarks
           (provider,covered_from,covered_to,raw_file_count,curated_row_count,last_success_at,state)

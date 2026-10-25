@@ -20,7 +20,7 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.firefox.options import Options
 
-FIREFOX = str(Path.home() / "Applications/FirefoxESR/Firefox.app/Contents/MacOS/firefox")
+FIREFOX = str(Path.home() / "Applications/SellemyFirefox158.app/Contents/MacOS/firefox")
 PROFILE_ROOT = Path.home() / "Library/Application Support/Sellemy/browser-profiles"
 RAW_DIR = Path.home() / "Library/Application Support/Sellemy/analytics/affiliate-raw"
 
