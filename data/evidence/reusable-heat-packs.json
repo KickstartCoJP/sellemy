@@ -1,0 +1,366 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/reusable-heat-packs.html",
+  "category": "dailygoods",
+  "comparison_axes": [
+    {
+      "id": "activation",
+      "keywords": [
+        "加熱方法",
+        "発熱方法",
+        "準備"
+      ],
+      "label": "発熱させる手順と必要な道具"
+    },
+    {
+      "id": "duration",
+      "keywords": [
+        "持続時間",
+        "使用環境",
+        "温度"
+      ],
+      "label": "公表された使用時間と測定条件"
+    },
+    {
+      "id": "reuse",
+      "keywords": [
+        "再使用",
+        "冷却",
+        "注意事項"
+      ],
+      "label": "再使用までの手順と使用上の注意"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/reusable-heat-packs/reusable-heat-packs.png",
+  "product_acceptance": {
+    "contract_version": "bf7d78a8237179bb977f6ca29f54f732162e9d387723eb0c936bc77316835b8f",
+    "evidence_sha256": "2d448ea210b26132038cd4d5c0115f025ab177f494b668f84b5faa54cf115c64",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 14848,
+      "input_tokens": 26265,
+      "member_binding_revision": 4,
+      "output_tokens": 1590,
+      "reasoning_effort": "low",
+      "reasoning_output_tokens": 328,
+      "session_id": "01a17098-54e5-72d2-83d0-557ef92827e1",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "activation",
+              "quote": "スイッチを入れたらわずか10秒で温まり"
+            },
+            {
+              "axis_id": "duration",
+              "quote": "連続使用時間:弱/約5時間、強/約3.5時間（室温25℃時）"
+            },
+            {
+              "axis_id": "reuse",
+              "quote": "充電時間:約3.8時間（室温25℃時）"
+            }
+          ],
+          "identity_key": "Francfranc フランフラン 繰り返し使えるカイロ",
+          "identity_quote": "Francfranc フランフラン 繰り返し使えるカイロ キルト ピンク",
+          "reason": "A rechargeable hand warmer with stated heat settings, charging time, duration at 25℃, and use precautions. Duration is conditional on setting and environment.",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "activation",
+              "quote": "【3段階温度調節で好みの温度にカスタマイズ】"
+            },
+            {
+              "axis_id": "duration",
+              "quote": "低温モードで7-14時間、中温モードで5-7時間、高温モードで4-6時間。(2つカイロの使用時間総合です。)"
+            }
+          ],
+          "identity_key": "YUSIDO 充電式カイロ",
+          "identity_quote": "YUSIDO 充電式カイロ 電子カイロ モバイルバッテリー機能付き",
+          "reason": "A rechargeable two-piece hand warmer with stated heat settings and mode-dependent durations. The published durations are totals for two warmers and must not be presented as per-piece runtime.",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "activation",
+              "quote": "6段階（40℃/45℃/50℃/55℃/60℃/65℃）の温度調整が可能"
+            },
+            {
+              "axis_id": "reuse",
+              "quote": "付属の充電ケーブルには2つのType-Cポートが搭載されており、2台のデバイスを同時に充電できる"
+            }
+          ],
+          "identity_key": "SUKITEN 充電式カイロ",
+          "identity_quote": "SUKITEN 充電式カイロ【Poco'ce雑誌紹介・日本限定・星空ディスプレイ】",
+          "reason": "A rechargeable, separable hand warmer with stated temperature settings and a two-port charging cable. No use duration is supplied; a comparison must leave that value unknown.",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "activation",
+              "quote": "ボタンを押してわずか2秒で本体が温かくなります"
+            },
+            {
+              "axis_id": "duration",
+              "quote": "低温モードで7-12時間、中温モードで5-8時間、高温モードで4-7時間。(2つカイロの使用時間総合です。"
+            },
+            {
+              "axis_id": "reuse",
+              "quote": "付属の2 in 1ケーブルで2個同時に充電可能"
+            }
+          ],
+          "identity_key": "HAGOOGI 充電式カイロ",
+          "identity_quote": "HAGOOGI 充電式カイロ 電気カイロ 2秒急速発熱",
+          "reason": "A rechargeable, separable hand warmer with stated settings, simultaneous charging, and mode-dependent durations. The detailed duration ranges are explicitly totals for two warmers.",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "activation",
+              "quote": "500W：約30〜60秒、600W：約25〜50秒"
+            },
+            {
+              "axis_id": "duration",
+              "quote": "約30分（室温）※使用環境により異なります。"
+            },
+            {
+              "axis_id": "reuse",
+              "quote": "加熱する際にはカバーを必ず外し、シリカゲルが入った中袋単体で加熱してください。"
+            }
+          ],
+          "identity_key": "ネコティ ハンドウォーマー",
+          "identity_quote": "ネコティ ハンドウォーマーの背中をあけるとシリカゲルが入った専用の中袋がセットされています。",
+          "reason": "A reusable microwave-heated hand warmer with stated heating times, approximate room-temperature duration, reuse count, and a required cover-removal step.",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "activation",
+              "quote": "金属ボタンを押し曲げるだけで即発熱"
+            },
+            {
+              "axis_id": "reuse",
+              "quote": "沸騰したお湯の中にカイロを入れ、結晶が完全になくなり、元の透明色になるまで煮てからご使用ください。"
+            }
+          ],
+          "identity_key": "リウォームカイロ",
+          "identity_quote": "リウォームカイロ 軽量 ブルー 10個入",
+          "reason": "A reusable sodium-acetate hand warmer with explicit button activation and boiling-water reset steps. The source gives conflicting duration figures of about 20–30 minutes and about 40 minutes, so no single duration should be asserted.",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reason": "Evidence-only review: six products have distinguishable source-backed identities and fit the reusable hand-warmer topic. The supplied facts support activation, published duration, and reuse differences across the set, so a useful comparison can be written. Writing must preserve the stated duration conditions: two-unit totals for p2 and p4, no published duration for p3, and conflicting duration figures for p6. Marketplace performance language must not become an independently verified claim.",
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
+  "products": [
+    {
+      "amazon_title": "【2026年モデル】Francfranc フランフラン 繰り返し使えるカイロ キルト ピンク",
+      "asin": "B0HM2YRR71",
+      "brand": "Francfranc",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71InauJ+jmL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "duration",
+        "reuse"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HM2YRR71",
+      "provisional": false,
+      "ref": "p1",
+      "search_key": "Francfranc フランフラン 繰り返し使えるカイロ キルト ピンク",
+      "selection_score": 0.91,
+      "sources": [
+        {
+          "brand": "Francfranc",
+          "excerpt": "【2026年モデル】Francfranc フランフラン 繰り返し使えるカイロ キルト ピンク\nこの商品について\n「使い捨てない」カイロです。スイッチを入れたらわずか10秒で温まり、最大約5時間持続します。充電式なので繰り返し使うことができ、経済的です。温かさは強（約50℃）・弱（約45℃）の2段階で調整できます。付属のUSBコードをACアダプターやパソコンに繋いで充電でき、モバイルバッテリーとしても使用可能です。\n本体底面に充電コネクターと電源スイッチの必要最低限の機能を配置した設計で、機械が苦手な方でも簡単に扱えます。持ち運びに便利な巾着タイプの収納バッグ付き。鞄やポケットの中で本体に傷がつくことを防げるだけでなく、稼働中に熱さを抑えたい時はカバーとしても使えます。\n※使い初めに熱によって内部の電子部品や樹脂部分の固有のにおいが出てくることがありますが、商品本体に問題はありません。また、時間の経過と共ににおいはなくなります。\nサイズ：W21×D72×H111mm\n注意事項：■付属品:本体、USBコード（Type-C to C）、収納バッグ、ストラップ■電源:USB給電/リチウムイオン電池 3.7V、5000mAh■モバイルバッテリー出力:10W■充電時間:約3.8時間（室温25℃時）■連続使用時間:弱/約5時間、強/約3.5時間（室温25℃時）※最大約6時間で電池がなくなりオフになります。■温度:2段階 弱/約45℃、強/約50℃■取扱説明書:有■保証書:有 保証期間:1年※連続使用時間と温度は、使用する環境温度とカイロ本体の保持のしかたや、保管状態などの使用状況で変わります。※モバイルバッテリー機能は全てのUSB接続機器の充電を保証するものではありません。機器によっては動作しないこともあります。■電源は付属のUSBコードをご使用ください。■長時間同じ個所にあてて使用しないでください。■ご使用にならない際は電池の切り忘れにご注意ください。■熱すぎると感じたら収納バッグに入れるか、またはご使用を中止してください。■取扱説明書をお読みになり、正しくご使用ください。■原産国:中国 › もっと見る\nブランド Francfranc\n色 キルト ピンク\n材質 ABS\n付属コンポーネント USBコード（Type-C to C）、収納バッグ、ストラップ\nメーカー Francfranc\nFrancfrancのストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "【2026年モデル】Francfranc フランフラン 繰り返し使えるカイロ キルト ピンク",
+          "url": "https://www.amazon.co.jp/dp/B0HM2YRR71",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "YUSIDO 充電式カイロ 電子カイロ モバイルバッテリー機能付き【10000mAh大容量 14時間連続使用 急速発熱】防災 寒さ対策 小型 超軽量",
+      "asin": "B0H6P58ZDB",
+      "brand": "YUSIDO",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71o4gfru7SL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "activation",
+        "duration"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H6P58ZDB",
+      "provisional": false,
+      "ref": "p2",
+      "search_key": "YUSIDO 充電式カイロ 電子カイロ モバイルバッテリー機能付き 防災 寒さ",
+      "selection_score": 0.73,
+      "sources": [
+        {
+          "brand": "YUSIDO",
+          "excerpt": "YUSIDO 充電式カイロ 電子カイロ モバイルバッテリー機能付き【10000mAh大容量 14時間連続使用 急速発熱】防災 寒さ対策 小型 超軽量\nこの商品について\n【3秒急速発熱で即座に暖かさを実感】YUSIDO充電式カイロは、優れた熱伝導性を持つアルミニウム合金を採用し、たった3秒で急速に発熱します。手元に持つだけで、瞬時に指先から手のひら全体が暖かさに包まれるため、寒い日でも待つことなく快適に過ごせます。また、360度全方位から均等に暖かさを提供し、手全体がバランス良く温まるため、冬の厳しい寒さの中でも確実に体を守ってくれます。寒冷地での通勤やアウトドア、スポーツ観戦など、寒さが気になるあらゆるシーンで役立つ優れたアイテムです。\n【3段階温度調節で好みの温度にカスタマイズ】YUSIDOカイロは、環境や体調に合わせて3段階の温度調節が可能です。低温モード（40～45℃）、中温モード（45～50℃）、高温モード（50～55℃）の中から、お好みの温度に設定できるため、どんな場面でも快適に過ごせます。長時間の使用にも耐え、低温モードで7-14時間、中温モードで5-7時間、高温モードで4-6時間。(2つカイロの使用時間総合です。)（実際の使用時間は、環境や使用状況などにより異なる場合があります。）寒い季節に最適な一台です。\n【一石二鳥・モバイル電源にもなるカイロ】ハンドウォーマーとしてだけでなく、10000mAhの大容量モバイルバッテリーとしても使える一台二役のアイテムです。スマートフォンとワイヤレスイヤホンなど、2台のデバイスを同時に充電可能。寒い季節の外出時には暖かさと電力の両方を確保でき、また防災バッグに常備すれば、いざという時に避寒と緊急充電の両方に対応できるため、別途バッテリーを持ち歩く必要がなく、荷物を増やさずに安心をご提供します。\n【急速充電で時間を有効活用】付属のTypeC急速充電ケーブルを使用すると、YUSIDOカイロは従来の製品に比べ、充電時間が大幅に短縮されます。2つのハンドウォーマーを同時に充電することができ、わずか数時間でフル充電が完了します。これにより、急な外出や旅行前でもスムーズに準備ができ、時間を有効に使うことが可能です。さらに、付属の充電ケーブルはiPhone 17など多くの最新デバイスにも対応しているため、多機能性が高く便利です。\n【超軽量＆ポケットサイズで持ち運びやすい】1台あたりわずか125gという超軽量設計で、コンパクトサイズ（2×3×11cm）はポケットやバッグに簡単に収納できます。女性や子供の手にもフィットし、持ち運びが非常に便利です。この小型カイロは、どんなシーンでも手軽に使えて、寒い日の外出時に最適です。寒さを感じる時、すぐに取り出して使えるこの便利なサイズ感が、あらゆる年齢層の人におすすめです。 › もっと見る\nブランド YUSIDO\n材質 ABS, アルミ合金\n商品の重量 250 グラム\nメーカー YUSIDO\n商品のハイライト 3段階温度調節 usb 電気 あったかグッズ クリスマスプレゼント ギフト エコ おしゃれ 2個セット（シャンパン）\nYUSIDOのストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "YUSIDO 充電式カイロ 電子カイロ モバイルバッテリー機能付き【10000mAh大容量 14時間連続使用 急速発熱】防災 寒さ対策 小型 超軽量",
+          "url": "https://www.amazon.co.jp/dp/B0H6P58ZDB",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "SUKITEN 充電式カイロ【Poco'ce雑誌紹介・日本限定・星空ディスプレイ】電気カイロ 10,000mAh大容量 PSE認証済み 2個セット",
+      "asin": "B0HGKVFVMJ",
+      "brand": "SUKITEN",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61pZAqjCrYL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "duration"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0HGKVFVMJ",
+      "provisional": false,
+      "ref": "p3",
+      "search_key": "SUKITEN 充電式カイロ 電気カイロ 10,000mAh大容量 PSE認証済",
+      "selection_score": 0.55,
+      "sources": [
+        {
+          "brand": "SUKITEN",
+          "excerpt": "SUKITEN 充電式カイロ【Poco'ce雑誌紹介・日本限定・星空ディスプレイ】電気カイロ 10,000mAh大容量 PSE認証済み 2個セット\nこの商品について\n【星空ディスプレイ付き充電式カイロ・お洒落とともに実用！】おしゃれなデザイン・高い実用性・優れたコスト性能。これらがSUKITENの一貫した理念です。2in1マグネット分離式のこの充電式カイロは、美しい和風デザインが光るLED星空ディスプレイが最大の魅力。舞い散る桜や雄大な富士山、夜空を駆ける流れ星、雪で遊ぶ子猫たちなど――季節の風情を感じさせる繊細なパターンが、優しい光でゆらめき、あなたの冬の装いを上品に彩ります。ただ温めるだけでなく、眺めるたびに心まで癒される存在をつくりたい――その想いから生まれたのが、このSUKITEN 星空ディスプレイ付き携帯カイロで、日本の冬の、新しいたのしみ方。\n【肌触りが良い素材・抗菌設計】SUKITEN 充電式カイロは、肌に優しいシリコーンオイル表面処理技術を採用し、なめらかで心地よい触り心地を実現！また、充電式カイロの表面には抗菌素材を使用しているため、雑菌の繁殖を抑制し、指紋の付着も防ぎます。 お手入れも簡単で、湿らせたティッシュで拭くだけで表面の汚れをすっきり除去。携帯カイロは手と顔を同時に温かく包み込むので、厳しい寒さも気にせず、冬の時間をゆったりとお過ごしいただけます。\n【6段階温度調整・3秒で急速両面発熱】充電式カイロは6段階（40℃/45℃/50℃/55℃/60℃/65℃）の温度調整が可能で、使用シーンに合わせて最適な温度をお選びいただけます。業界最高レベルの65℃を実現した充電式カイロです！さらに、熱伝導に優れたアルミ合金素材を採用しているため、スイッチを入れてわずか3秒で温まります。※ご注意：高温環境や直射日光が当たる場所での保管・使用は避けてください。発火の危険があります。\n【マグネット分離式・5V/2A急速充電】革新的なマグネット式設計により、2つに分離して使える充電式カイロ。友人や家族、恋人と温かさをシェアできる新感覚の一品です。また、外出時には左右別々に使っても、片手だけで軽く持っても便利。さらに、２つをつなげれば、両手を同時にしっかり温めます。付属の充電ケーブルには2つのType-Cポートが搭載されており、2台のデバイスを同時に充電できるため、充電時間を半分に短縮できます。携帯カイロには寒い冬の間も暖かく過ごせる万能アイテムです。\n【AI保護チップ・温かな贈り物に最適】SUKITEN の電気カイロは、AI保護チップが内蔵されており、過熱・過電流・過電圧などを防止します。安全性に優れたモデルなら、長時間使用するときでも安心です。カラーはブラック、ピンク、ベージュの3色展開で男女や年齢問わず使えるデザイン性なので、万人におすすめできる電気カイロです。大切な人への贈り物に！「プレゼント」でも、きっと喜ばれる充電式カイロ！\n【PSE認証取得済み・安心サービス&日本語取扱説明書付】パッケージ内容：充電式カイロ本体、収納バッグ、日本語取扱説明書。本電子カイロは日本国内におけて、特許を取得済みの製品です。ご購入後も保証期間内に製品の不具合が生じた場合、SUKITENのカスタマーサポートへお問い合わせいただければ、弊社にて確認後、同一製品の新品と交換対応いたします。 › もっと見る\nサイズ 10,000mAh\nブランド SUKITEN\n色 ピンク\n材質 アルミニウム\n付属コンポーネント 充電ケーブル\nSUKITENのストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "SUKITEN 充電式カイロ【Poco'ce雑誌紹介・日本限定・星空ディスプレイ】電気カイロ 10,000mAh大容量 PSE認証済み 2個セット",
+          "url": "https://www.amazon.co.jp/dp/B0HGKVFVMJ",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "HAGOOGI 充電式カイロ 電気カイロ 2秒急速発熱 6000mAh大容量 最大14時間連続使用 超軽量 防災/寒さ対策 プレゼント ゴールド",
+      "asin": "B0H6JMS8DM",
+      "brand": "HAGOOGI",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71gws8VCSLL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "duration"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0H6JMS8DM",
+      "provisional": false,
+      "ref": "p4",
+      "search_key": "HAGOOGI 充電式カイロ 電気カイロ 2秒急速発熱 6000mAh大容量 最",
+      "selection_score": 0.55,
+      "sources": [
+        {
+          "brand": "HAGOOGI",
+          "excerpt": "HAGOOGI 充電式カイロ 電気カイロ 2秒急速発熱 6000mAh大容量 最大14時間連続使用 超軽量 防災/寒さ対策 プレゼント ゴールド\nこの商品について\n✅【2026年日本初上陸！圧倒的コスパ！新世代充電式カイロ】もう使い捨てカイロに頼る必要はありません。1日限りで捨ててしまうと、3ヶ月で約3,600円のコストに…。HAGOOGIの充電式カイロなら、1回の充電は約1.26円、3ヶ月使っても300円未満。さらに、温度調節機能付きでシーンに合わせて快適に。充電すればくり返し使えるから、ゴミも出さずスマートに冬を楽しめます。お財布にも地球にもやさしい、この冬はもう手放せない！\n✅【超軽量・コンパクト・携帯便利】HAGOOGI電気カイロは95×52×20mmの手のひらサイズ。握りやすさを追求した薄型デザインで、ポケットやバッグにすっきり収まります。小さなお子様や女性でも使いやすく、指先までしっかり温めます。寒い朝の通勤や通学、厳寒地、屋外、学校、キャンプ、雪山、登山、野外ライブ、釣り、スキー、スノボ、雪遊びなど、寒い日の外出のお守り代わりに活躍します。冬の外出を快適にする頼れるアイテムです。\n✅【2秒速暖・3段温度調節】高い熱伝導率を誇るグラフェン素材を採用し、ボタンを押してわずか2秒で本体が温かくなります。カイロは、環境や体調に合わせて3段階の温度調節が可能です。低温モード（40～45℃）、中温モード（45～50℃）、高温モード（50～55℃）の中から、お好みの温度に設定できるため、どんな場面でも快適に過ごせます。寒さの厳しい冬に欠かせない一台です。\n✅【磁気式/分離式設計・2個セット】HAGOOGI電気式 カイロは合体・分離可能。両手を同時に温められますので、寒い冬を快適に過ごせる効率が、さらにアップ！2つに分けて使えるから、1台で2人が暖まれる！寒い日のデートやお出かけも一緒にぬくぬく。ハンドウォーマーとしてだけではなく、肩や足、腰など気になる部位の温めにも最適です。\n✅【2台同時充電可能・6000mAh大容量】付属の2 in 1ケーブルで2個同時に充電可能！2つで6000mAhの電池容量がありますので長時間の使用にも耐え、低温モードで7-12時間、中温モードで5-8時間、高温モードで4-7時間。(2つカイロの使用時間総合です。実際の使用時間は、環境や使用状況などにより異なる場合があります。\n✅【温度が確認できる液晶表示・充電指示ランプ付き】LED大画面ディスプレイで設定温度を簡単に確認できます。夜間や屋外でも見やすく、よりスマートに使用できます。充電残量がひと目でわかるインジケーターで、充電状況はLEDランプで一目瞭然。ランプ1つ点減：充電0%~33%、ランプ1つ点灯+1つ点減：充電34%~66%、ランプ2つ点灯+1つ点滅：充電67%~99%、全点灯：充電完了。\n✅【多重な安全保護・1年間保証サービス】HAGOOGIの工場は、過去3年だけで充電式 カイロを100万台超製造してきました。高い品質基準を保証するために、すべての製品は、開発段階から量産まで、HAGOOGI 専門的な経験によってサポートされ、徹底的にテストされています。充電カイロはPSE認証済みで、過熱防止や過充電防止などの6つ安全機能を搭載しています。過電流・過充電による故障や、温度の上がりすぎを心配する必要はありません。さらに購入後1年間のメーカー保証付き。万が一初期不良や不具合があれば、迅速に対応いたします。 › もっと見る\nブランド HAGOOGI\n色 ゴールド\n商品の個数 1\nユニット数 1.0 本\nメーカー HAGOOGI\nHAGOOGIのストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "HAGOOGI 充電式カイロ 電気カイロ 2秒急速発熱 6000mAh大容量 最大14時間連続使用 超軽量 防災/寒さ対策 プレゼント ゴールド",
+          "url": "https://www.amazon.co.jp/dp/B0H6JMS8DM",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "【レンジ式】 カイロ 貼らない レンジで温める 繰り返し使える 洗えるカバー ハンドウォーマー ねこ エコハンドウォーマー ネコティ グレー",
+      "asin": "B0GX94B7NJ",
+      "brand": "Amplimle",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81Fw521LobL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "duration"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GX94B7NJ",
+      "provisional": false,
+      "ref": "p5",
+      "search_key": "Amplimle カイロ 貼らない レンジで温める 繰り返し使える 洗えるカバー",
+      "selection_score": 0.55,
+      "sources": [
+        {
+          "brand": "Amplimle",
+          "excerpt": "【レンジ式】 カイロ 貼らない レンジで温める 繰り返し使える 洗えるカバー ハンドウォーマー ねこ エコハンドウォーマー ネコティ グレー\nこの商品について\n✅『ふかふかのネコのネコティが手元をぽかぽかに』 寒い季節、そっと寄り添ってくれるネコティ。ふわふわの毛並みと、ちょっととぼけた表情が愛らしい癒し系のハンドウォーマーです。ぬいぐるみのような見た目と、電子レンジで繰り返し使えるエコ仕様のカイロがひとつになった、かわいいものが好きな方にぴったりのあったかエコカイロです。\n✅『繰り返し使えるエコなカイロ』ネコティ ハンドウォーマーの背中をあけるとシリカゲルが入った専用の中袋がセットされています。中袋を電子レンジで温めることで、シリカゲルがじんわりと熱を蓄え手のひらにやさしいぬくもりを届けてくれます。使い捨てカイロとは違って繰り返し使えるエコ仕様で、約150回の使用が可能。環境にもお財布にもやさしいのが嬉しいポイントです。寒い季節に、あたたかさとサステナブルな選択を両立したい方にぴったりのアイテムです。\n✅『腕の中にすっぽり収まる、ぬいぐるみサイズ』 ほどよく抱きかかえやすい大きさで、ソファでのくつろぎ時間やデスクでのひと息にぴったり。あたたかさと一緒に、ほっとするひとときを届けます。コードレスなのでおうちやオフィス、車の中などどんな場所でもネコティと一緒にぬくぬく過ごせます。寒い日のおともにぴったりで、ふかふかの感触とかわいくゆるい雰囲気のフォルムに気分も和みます。\n✅【サイズ（約）】W210×D80×H280（mm） 【材質】カバー：ポリエステル100%、中袋：シリカゲル ※中袋はお洗濯できません\n✅【加熱時間の目安】500W：約30〜60秒、600W：約25〜50秒 【持続時間の目安】約30分（室温）※使用環境により異なります。 【繰り返し使用回数の目安】約150回\n✅『ご注意』加熱する際にはカバーを必ず外し、シリカゲルが入った中袋単体で加熱してください。\n✅『安心の国内（日本）ブランド』日本企業による企画・開発・販売・サポートで、お問合せや故障など、すぐにご対応いたします。 › もっと見る\nブランド Amplimle\nユニット数 1 個\n特徴 電子レンジ対応\n用途 手, 腰\n材質 ポリエステル\n色 グレー\n商品特長 リラックス\n商品寸法 (長さx幅x高さ) 28 x 21 x 8 cm\nサイズ Lサイズ\nスタイル カジュアル 表示を増やす\nAmplimleのストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "【レンジ式】 カイロ 貼らない レンジで温める 繰り返し使える 洗えるカバー ハンドウォーマー ねこ エコハンドウォーマー ネコティ グレー",
+          "url": "https://www.amazon.co.jp/dp/B0GX94B7NJ",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "リサイクルエコカイロ はらないタイプ エコカイロ 丸型 繰り返し使える かわいい リウォームカイロ 軽量 ブルー 10個入",
+      "asin": "B0G4C5TRTD",
+      "brand": "大王製作所",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61+T+UES04L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "duration",
+        "reuse"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0G4C5TRTD",
+      "provisional": false,
+      "ref": "p6",
+      "search_key": "大王製作所 リサイクルエコカイロ はらないタイプ エコカイロ 丸型 繰り返し",
+      "selection_score": 0.55,
+      "sources": [
+        {
+          "brand": "大王製作所",
+          "excerpt": "リサイクルエコカイロ はらないタイプ エコカイロ 丸型 繰り返し使える かわいい リウォームカイロ 軽量 ブルー 10個入\nこの商品について\n何度でも使えるエコロジー&とてもエコなリウォームカイロ、リサイクルカイロとも言います。\n繰り返し使えるエコな携帯カイロ — 使い捨てではなく、何度でも使えて環境にも財布にも優しいです。約50 ℃でじんわり暖かく、約20〜30分間持続（使用状況により変動） 通勤・通学・オフィス・外出時に便利\n使い方簡単：金属ボタンを押し曲げるだけで即発熱。冷えたら沸騰湯で再加熱するだけで再利用可能です。 コンパクト＆軽量（直径約10 cm、約85 g）でポケットやバッグに収まりやすく、アウトドアや通勤にもおすすめです。\n内溶液の化学反応を利用した原理で、ボタンを押し曲げると即座に温まるのが特徴。リウォームカイロのピーク温度は約50℃です 。使用後は液体が固体化します。\n【材質】カバー：PVC、内用液：酢酸ナトリウム水溶液、ボタン：ステンレススチール【サイズ】直径φ10cm【重量】1個あたり約85g（±5g）【その他】ピーク温度：約50℃ 保温持続力：約40分\n【注意事項】商品によっては届いた際、既に白く結晶化されているものもありますが、冷めて固くなっただけで不良ではありません。沸騰したお湯の中にカイロを入れ、結晶が完全になくなり、元の透明色になるまで煮てからご使用ください。その他注意事項は商品説明をご覧ください。 › もっと見る\nサイズ 10個入\nブランド 大王製作所\n色 ブルー\n材質 PVC\n付属コンポーネント 無\n大王製作所のストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "リサイクルエコカイロ はらないタイプ エコカイロ 丸型 繰り返し使える かわいい リウォームカイロ 軽量 ブルー 10個入",
+          "url": "https://www.amazon.co.jp/dp/B0G4C5TRTD",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "selection": {
+    "brand_count": 6,
+    "comparison_axes_covered": [
+      "activation",
+      "duration",
+      "reuse"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true,
+    "retained_qa_passed_asins": []
+  },
+  "slug": "reusable-heat-packs"
+}

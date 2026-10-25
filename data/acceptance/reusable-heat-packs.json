@@ -1,0 +1,160 @@
+{
+  "contract_version": "bf7d78a8237179bb977f6ca29f54f732162e9d387723eb0c936bc77316835b8f",
+  "evidence_sha256": "2d448ea210b26132038cd4d5c0115f025ab177f494b668f84b5faa54cf115c64",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 14848,
+    "input_tokens": 28911,
+    "member_binding_revision": 4,
+    "output_tokens": 1517,
+    "reasoning_effort": "low",
+    "reasoning_output_tokens": 218,
+    "session_id": "01a1709f-e61e-7660-af6d-7a8ff7b4cffa",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "1d399a82f404832a390143337fef1ab865e0c66c975011a2b9c75e6b99be37d0",
+  "review": {
+    "buying_guidance": true,
+    "claims_grounded": true,
+    "complete_comparison": true,
+    "distinct_products": true,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "activation",
+            "quote": "スイッチを入れたらわずか10秒で温まり"
+          },
+          {
+            "axis_id": "duration",
+            "quote": "連続使用時間:弱/約5時間、強/約3.5時間（室温25℃時）"
+          },
+          {
+            "axis_id": "reuse",
+            "quote": "充電時間:約3.8時間（室温25℃時）"
+          }
+        ],
+        "identity_key": "Francfranc フランフラン 繰り返し使えるカイロ",
+        "identity_quote": "Francfranc フランフラン 繰り返し使えるカイロ キルト ピンク",
+        "reason": "充電式の発熱操作、設定別の使用時間と条件、充電時間、使用上の注意が明示され、本文の選び方を支えている。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "activation",
+            "quote": "たった3秒で急速に発熱します"
+          },
+          {
+            "axis_id": "duration",
+            "quote": "低温モードで7-14時間、中温モードで5-7時間、高温モードで4-6時間。(2つカイロの使用時間総合です。)"
+          },
+          {
+            "axis_id": "reuse",
+            "quote": "2つのハンドウォーマーを同時に充電することができ"
+          }
+        ],
+        "identity_key": "YUSIDO 充電式カイロ",
+        "identity_quote": "YUSIDO 充電式カイロ 電子カイロ モバイルバッテリー機能付き",
+        "reason": "2個組の充電式として設定別の時間と2個合計という条件が示され、本文も片方の連続使用時間と取り違えていない。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "activation",
+            "quote": "6段階（40℃/45℃/50℃/55℃/60℃/65℃）の温度調整が可能"
+          },
+          {
+            "axis_id": "reuse",
+            "quote": "付属の充電ケーブルには2つのType-Cポートが搭載されており、2台のデバイスを同時に充電できる"
+          }
+        ],
+        "identity_key": "SUKITEN 星空ディスプレイ付き携帯カイロ",
+        "identity_quote": "SUKITEN 星空ディスプレイ付き携帯カイロ",
+        "reason": "分離、温度設定、同時充電の記載が選択理由を支える。使用時間の数値がないことも本文で明示されている。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "activation",
+            "quote": "ボタンを押してわずか2秒で本体が温かくなります"
+          },
+          {
+            "axis_id": "duration",
+            "quote": "低温モードで7-12時間、中温モードで5-8時間、高温モードで4-7時間。(2つカイロの使用時間総合です。"
+          },
+          {
+            "axis_id": "reuse",
+            "quote": "付属の2 in 1ケーブルで2個同時に充電可能"
+          }
+        ],
+        "identity_key": "HAGOOGI 充電式カイロ",
+        "identity_quote": "HAGOOGI 充電式カイロ 電気カイロ",
+        "reason": "分離式の構成、温度設定、2個合計の使用時間、同時充電が示され、本文は時間表示の条件を正しく伝えている。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "activation",
+            "quote": "500W：約30〜60秒、600W：約25〜50秒"
+          },
+          {
+            "axis_id": "duration",
+            "quote": "約30分（室温）※使用環境により異なります。"
+          },
+          {
+            "axis_id": "reuse",
+            "quote": "加熱する際にはカバーを必ず外し、シリカゲルが入った中袋単体で加熱してください。"
+          }
+        ],
+        "identity_key": "ネコティ",
+        "identity_quote": "エコハンドウォーマー ネコティ グレー",
+        "reason": "レンジ加熱の対象と時間、室温での持続目安、再使用時の注意が明示され、本文の自宅での短時間使用という案内を支えている。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "activation",
+            "quote": "金属ボタンを押し曲げるだけで即発熱"
+          },
+          {
+            "axis_id": "duration",
+            "quote": "約20〜30分間持続（使用状況により変動）"
+          },
+          {
+            "axis_id": "reuse",
+            "quote": "結晶が完全になくなり、元の透明色になるまで煮てからご使用ください。"
+          }
+        ],
+        "identity_key": "リウォームカイロ",
+        "identity_quote": "かわいい リウォームカイロ 軽量 ブルー 10個入",
+        "reason": "ボタンによる発熱と湯による復元手順が明示されている。持続時間には資料内で食い違いがあるが、本文は確定値として扱わず、購入前の確認を促している。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reason": "6製品はそれぞれ識別可能で、発熱方法、使用時間の表示条件、再使用手順について根拠に沿った比較ができている。本文は2個合計の使用時間、数値の欠落や食い違いを明示し、各製品に具体的な選び方を示している。",
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}

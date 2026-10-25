@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-10-25T01:15:53.611748+00:00",
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "generation_route_attestation": "codex_rollout_extension",
+  "height": 1024,
+  "image_generation_internal_usage_exposed": false,
+  "image_sha256": "2e7f560e694b590ce287b6b02cb465297cda6aeda36cb377590624bfccdba51f",
+  "member_binding_revision": 9,
+  "model": "gpt-6-sol",
+  "model_reported_generation_route": "built-in_image_gen",
+  "role_id": "bu-codex-sellemy-designer",
+  "routing": {
+    "api_share": 0,
+    "codex_reserve_percent": 20.0,
+    "codex_share": 100,
+    "codex_usage": {
+      "remaining_percent": 82.0,
+      "resets_at": 1793383603,
+      "source": "/Users/kickstart/.codex/sessions/2026/10/25/rollout-2026-10-25T10-14-55-01a1709f-fdb4-79e3-a137-ebc999d19d6c.jsonl",
+      "used_percent": 18.0,
+      "window_minutes": 10080
+    },
+    "errors_before_success": [],
+    "executed_route": "codex",
+    "fallback_from": null,
+    "mode": "weighted_random",
+    "reason": "codex_only",
+    "remaining_percent": 82.0,
+    "roll": null,
+    "selected_route": "codex"
+  },
+  "routing_recorded_at": "2026-10-25T01:15:53.612833+00:00",
+  "summary": "冬の外出準備で繰り返し使えるカイロを手に取る、自然な室内の一場面。PNG形式と1536x1024の寸法を確認済み。",
+  "thread_id": "01a170a0-2ce6-7b21-9032-4cb9dde0ca3c",
+  "token_usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 78592,
+    "input_tokens": 89396,
+    "output_tokens": 809,
+    "reasoning_output_tokens": 25,
+    "total_tokens": null,
+    "uncached_input_tokens": null
+  },
+  "token_usage_source": "codex_rollout.turn_token_usage",
+  "visual_family": "editorial lifestyle",
+  "width": 1536
+}
