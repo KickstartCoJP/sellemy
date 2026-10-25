@@ -136,48 +136,57 @@ DUPLICATE_ITEMS = (
 )
 
 
+def machine_pair_screen(evidence):
+    """Enumerate all pairs locally; only unresolved pairs require semantic review."""
+    from product_selection import duplicate_check
+    products = evidence.get('products', [])
+    rows = []
+    for index, left in enumerate(products):
+        for right in products[index + 1:]:
+            result = duplicate_check(left, right)
+            rows.append({'left_ref': left['ref'], 'right_ref': right['ref'],
+                         'status': result['status'], 'items': result['items'],
+                         'reasons': result['reasons']})
+    return rows
+
+
 def duplicate_pair_issues(review, evidence):
-    checks = review.get('duplicate_pair_checks')
-    if not isinstance(checks, list):
-        return ['duplicate pair checks missing']
+    pairs = review.get('duplicate_pair_checks')
+    if not isinstance(pairs, list):
+        return ['unresolved duplicate pair checks missing']
+    machine = machine_pair_screen(evidence)
+    expected_rows = {tuple(sorted((p['left_ref'], p['right_ref']))): p for p in machine
+                     if p['status'] == 'UNDETERMINED'}
+    expected = set(expected_rows)
     sources = {p['ref']: source_text(p) for p in evidence.get('products', [])}
-    issues, proven = [], False
-    expected = {tuple(sorted((a, b))) for i, a in enumerate(sources) for b in list(sources)[i+1:]}
-    used = set()
-    for pair in checks:
+    issues, used = [], set()
+    proven = any(p['status'] == 'DUPLICATE' for p in machine)
+    for pair in pairs:
         if not isinstance(pair, dict):
-            issues.append('invalid duplicate pair check')
-            continue
-        left, right = pair.get('left_ref'), pair.get('right_ref')
-        if left not in sources or right not in sources or left == right:
-            issues.append('invalid duplicate pair refs')
-            continue
-        key = tuple(sorted((left, right)))
-        if key in used:
-            issues.append('duplicate pair assessed twice')
+            issues.append('invalid duplicate pair check'); continue
+        a, b = pair.get('left_ref'), pair.get('right_ref')
+        if a not in sources or b not in sources or a == b:
+            issues.append('invalid duplicate pair refs'); continue
+        key = tuple(sorted((a, b)))
+        if key in used or key not in expected:
+            issues.append('duplicate pair duplicated or not requested')
         used.add(key)
         items = pair.get('items')
-        if not isinstance(items, list) or len(items) != len(DUPLICATE_ITEMS) or {x.get('item') for x in items if isinstance(x, dict)} != set(DUPLICATE_ITEMS):
-            issues.append(f'{left}/{right}: incomplete duplicate check items')
-            continue
-        for item in items:
-            if item.get('status') not in ('PASS', 'FAIL', 'UNKNOWN', 'N/A'):
-                issues.append(f'{left}/{right}: invalid duplicate check status')
+        needed = {name for name, status in expected_rows.get(key, {}).get('items', {}).items() if status == 'UNKNOWN'}
+        if not isinstance(items, list) or len(items) != len(needed) or {v.get('item') for v in items if isinstance(v,dict)} != needed:
+            issues.append(f'{a}/{b}: incomplete duplicate check items'); continue
+        if any(v.get('status') not in ('PASS', 'FAIL', 'UNKNOWN', 'N/A') for v in items):
+            issues.append(f'{a}/{b}: invalid duplicate check status')
         if pair.get('is_duplicate') is True:
-            proof = False
-            for item in items:
-                if item.get('item') not in ('same_product_body','color_design_only','sales_packaging_only') or item.get('status') != 'FAIL':
-                    continue
-                lq, rq = item.get('left_quote'), item.get('right_quote')
-                if lq and rq and lq in sources[left] and rq in sources[right] and str(item.get('reason') or '').strip():
-                    proof = True
-            if not proof:
-                issues.append(f'{left}/{right}: duplicate conclusion lacks two grounded source anchors')
-            else:
-                proven = True
-    missing = expected - used
-    if missing:
-        issues.append(f'duplicate pair coverage incomplete: {len(missing)} missing of {len(expected)}')
+            grounded = any(v.get('status') == 'FAIL'
+                and v.get('item') in ('same_product_body','color_design_only','sales_packaging_only')
+                and v.get('left_quote') and v['left_quote'] in sources[a]
+                and v.get('right_quote') and v['right_quote'] in sources[b]
+                and str(v.get('reason') or '').strip() for v in items)
+            if grounded: proven = True
+            else: issues.append(f'{a}/{b}: duplicate conclusion lacks two grounded source anchors')
+    if expected != used:
+        issues.append(f'unresolved pair coverage incomplete: {len(expected - used)} missing')
     if review.get('distinct_products') is False and not proven:
         issues.append('distinct_products=false without proven duplicate pair')
     if review.get('distinct_products') is True and proven:
