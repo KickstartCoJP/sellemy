@@ -48,6 +48,19 @@ REVIEW_SCHEMA = obj({
     'needs_product_reselection': BOOL, 'reason': STRING,
     **{k: BOOL for k in ('distinct_products', 'meaningful_comparison', 'sufficient_evidence',
                          'claims_grounded', 'buying_guidance', 'complete_comparison')},
+    'duplicate_pair_checks': {'type': 'array', 'items': obj({
+        'left_ref': STRING, 'right_ref': STRING,
+        'items': {'type': 'array', 'items': obj({
+            'item': {'type': 'string', 'enum': [
+                'same_product_body', 'color_design_only', 'sales_packaging_only',
+                'size_capacity_difference', 'function_structure_difference',
+                'series_generation_difference', 'manufacturer_brand_relation',
+                'independent_comparison_value']},
+            'status': {'type': 'string', 'enum': ['PASS', 'FAIL', 'UNKNOWN', 'N/A']},
+            'left_quote': STRING, 'right_quote': STRING, 'reason': STRING,
+        })},
+        'is_duplicate': BOOL, 'reason': STRING,
+    })},
     'products': {'type': 'array', 'items': obj({
         'ref': STRING, 'identity_key': STRING, 'identity_quote': STRING,
         'adequate_facts': BOOL, 'topic_fit': BOOL, 'reason': STRING,
@@ -71,6 +84,7 @@ def independent_review(evidence, payload=None):
         'Use REVISION_REQUIRED/false for writing defects with adequate evidence. '
         'identity_key must be a literal identifying substring contained in identity_quote, using the same language/script as the source. Choose the shortest source-backed brand + base model/family string that still distinguishes the product; exclude seller, ASIN, color, quantity and bundles. Do not invent an English canonical key for a Japanese source. '
         'Cite exact substrings from that product source corpus (listing title plus verified source excerpts/facts) for identity_quote and axis_support.quote. Prefer manufacturer/official/manual anchors for decision-critical facts. Marketing claims are not proof of performance. Reject accessories/refills/parts mixed into a main-product comparison unless the topic explicitly targets them. '
+        'Fill duplicate_pair_checks for each pair you suspect duplicates, with exactly 8 items, one per check item; cite verbatim left_quote/right_quote from each product source when asserting duplicate. Set is_duplicate=true only on affirmative product identity evidence, not a missing model number. If distinct_products=false, at least one such duplicate pair must be present. ' 
         'Assess product duplication item by item for EACH suspected pair: (1) same product body, (2) color/design only, (3) packaging/quantity only, (4) size/capacity, (5) function/structure, (6) series/generation, (7) manufacturer/brand relation, (8) meaningful independent buying decision. Use PASS, FAIL, UNKNOWN or N/A for each item in your reasoning. A missing model number is UNKNOWN, never proof of duplicate identity. If distinct_products=false, name the exact pair refs and cite the specific positive evidence establishing duplication; if no specific duplicate pair is established, do not assert distinct_products=false merely due to an unspecified model. Assess essential evidence insufficiency separately under sufficient_evidence. ' 
         'Explain each product decision and the overall decision; do not accept generic caution '
         'as buying guidance. Do not reject reasonable local uncertainty alone. '

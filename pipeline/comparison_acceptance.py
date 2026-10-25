@@ -128,6 +128,59 @@ def article_issues(payload):
     return issues
 
 
+DUPLICATE_ITEMS = (
+    'same_product_body', 'color_design_only', 'sales_packaging_only',
+    'size_capacity_difference', 'function_structure_difference',
+    'series_generation_difference', 'manufacturer_brand_relation',
+    'independent_comparison_value',
+)
+
+
+def duplicate_pair_issues(review, evidence):
+    checks = review.get('duplicate_pair_checks')
+    if not isinstance(checks, list):
+        return ['duplicate pair checks missing']
+    sources = {p['ref']: source_text(p) for p in evidence.get('products', [])}
+    issues, proven = [], False
+    used = set()
+    for pair in checks:
+        if not isinstance(pair, dict):
+            issues.append('invalid duplicate pair check')
+            continue
+        left, right = pair.get('left_ref'), pair.get('right_ref')
+        if left not in sources or right not in sources or left == right:
+            issues.append('invalid duplicate pair refs')
+            continue
+        key = tuple(sorted((left, right)))
+        if key in used:
+            issues.append('duplicate pair assessed twice')
+        used.add(key)
+        items = pair.get('items')
+        if not isinstance(items, list) or len(items) != len(DUPLICATE_ITEMS) or {x.get('item') for x in items if isinstance(x, dict)} != set(DUPLICATE_ITEMS):
+            issues.append(f'{left}/{right}: incomplete duplicate check items')
+            continue
+        for item in items:
+            if item.get('status') not in ('PASS', 'FAIL', 'UNKNOWN', 'N/A'):
+                issues.append(f'{left}/{right}: invalid duplicate check status')
+        if pair.get('is_duplicate') is True:
+            proof = False
+            for item in items:
+                if item.get('item') not in ('same_product_body','color_design_only','sales_packaging_only') or item.get('status') != 'FAIL':
+                    continue
+                lq, rq = item.get('left_quote'), item.get('right_quote')
+                if lq and rq and lq in sources[left] and rq in sources[right] and str(item.get('reason') or '').strip():
+                    proof = True
+            if not proof:
+                issues.append(f'{left}/{right}: duplicate conclusion lacks two grounded source anchors')
+            else:
+                proven = True
+    if review.get('distinct_products') is False and not proven:
+        issues.append('distinct_products=false without proven duplicate pair')
+    if review.get('distinct_products') is True and proven:
+        issues.append('distinct_products=true contradicts confirmed duplicate pair')
+    return issues
+
+
 def review_issues(review, evidence, *, article=False):
     """Verify independent judgments and exact source anchors; never accept a bare pass."""
     if not isinstance(review, dict):
@@ -179,6 +232,8 @@ def review_issues(review, evidence, *, article=False):
         if isinstance(check, dict) and isinstance(other, dict)
     ):
         issues.append('duplicate pair not substantiated by matching product identities')
+    if 'duplicate_pair_checks' in review or review.get('distinct_products') is False:
+        issues.extend(duplicate_pair_issues(review, evidence))
     if len(covered) < 2:
         issues.append('review lacks two grounded topic axes')
     required = ['distinct_products', 'meaningful_comparison', 'sufficient_evidence']
