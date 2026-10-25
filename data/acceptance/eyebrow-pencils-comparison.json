@@ -1,0 +1,132 @@
+{
+  "contract_version": "bf7d78a8237179bb977f6ca29f54f732162e9d387723eb0c936bc77316835b8f",
+  "evidence_sha256": "3a978d678e79a6471ab7eafed6218109dbc5a69f73314f27ee6e7c99c2ab71e0",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 14848,
+    "input_tokens": 25615,
+    "member_binding_revision": 4,
+    "output_tokens": 1682,
+    "reasoning_effort": "low",
+    "reasoning_output_tokens": 516,
+    "session_id": "01a173d5-695f-7b71-b756-c7017bcf4ba9",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "2c6efe70c49b3b7bc13a8c685a11450626d063f5b1c0f46592ed41e29af4fac8",
+  "review": {
+    "buying_guidance": true,
+    "claims_grounded": true,
+    "complete_comparison": true,
+    "distinct_products": true,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "mechanism",
+            "quote": "ブラシ付アイブロウ繰り出し"
+          },
+          {
+            "axis_id": "blending_tool",
+            "quote": "ブラシ付アイブロウ繰り出し"
+          }
+        ],
+        "identity_key": "セザンヌ ブラシ付アイブロウ繰り出し",
+        "identity_quote": "セザンヌ ブラシ付アイブロウ繰り出し 02 オリーブブラウン 0.23g",
+        "reason": "独立した製品として識別できる。商品名がブラシ付きの繰り出し式を明示し、本文は不明な芯形状やブラシ形状を断定していない。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "tip_shape",
+            "quote": "平らな面とエッジを活用"
+          },
+          {
+            "axis_id": "blending_tool",
+            "quote": "ブラシ内蔵"
+          }
+        ],
+        "identity_key": "ETUDE [エチュード公式] ドローイングアイブロウペンシルプロ",
+        "identity_quote": "ETUDE [エチュード公式] ドローイングアイブロウペンシルプロ 01 ダークブラウン 0.25g ブラシ内蔵",
+        "reason": "製品名で識別できる。平らな面とエッジ、内蔵ブラシが明示されており、本文は線幅や描き心地の優劣を断定していない。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "blending_tool",
+            "quote": "ペンシル・パウダー・ブラシの３機能1体型アイブロウ"
+          }
+        ],
+        "identity_key": "excel(エクセル) ザ プライムアイブロウ",
+        "identity_quote": "excel(エクセル) ザ プライムアイブロウ PE01 ナチュラルブラウン",
+        "reason": "ニューボーンとは異なる製品名で識別できる。ペンシル・パウダー・ブラシの構成が明示され、本文は未確認の芯やブラシの差を作っていない。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "tip_shape",
+            "quote": "【0.1mm極細ブレード芯】"
+          },
+          {
+            "axis_id": "blending_tool",
+            "quote": "【スクリューブラシ付き】"
+          }
+        ],
+        "identity_key": "眉美容師 アイブロウペンシル",
+        "identity_quote": "眉美容師 アイブロウペンシル 0.1mm 極細 ブレード型",
+        "reason": "製品名が識別の根拠になる。ブレード型の芯とスクリューブラシが明示され、本文は0.1mm表示や持続性を実測の比較結果として扱っていない。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "blending_tool",
+            "quote": "パウダー・ペンシル・ブラシの３機能"
+          }
+        ],
+        "identity_key": "New Born(ニューボーン) パーフェクトアイブロウ",
+        "identity_quote": "New Born(ニューボーン) パーフェクトアイブロウ 01 グレイッシュブラウン",
+        "reason": "excelとは異なる製品名で識別できる。パウダー・ペンシル・ブラシの構成が明示され、本文は未確認の使用感や耐汗性を比較上の優位としていない。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "tip_shape",
+            "quote": "0.9mmの極細芯"
+          },
+          {
+            "axis_id": "blending_tool",
+            "quote": "スクリューブラシを内蔵"
+          }
+        ],
+        "identity_key": "[PARISBROW(パリブロウ)] スリムブロウペンシル",
+        "identity_quote": "[PARISBROW(パリブロウ)] スリムブロウペンシル 02/オリーブグレー",
+        "reason": "製品名で識別できる。0.9mm芯、内蔵スクリューブラシ、芯を出す長さの注意が明示され、本文は耐久性の比較を断定していない。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reason": "6製品はそれぞれ識別でき、眉用ペンシルという主題に適合する。芯の形と太さ、繰り出し方式、付属するブラシやパウダーについて、提示された出典が明示する範囲で比較している。本文は未確認の仕様や持続性を優劣に使わず、各製品に具体的な選択理由を示している。",
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}

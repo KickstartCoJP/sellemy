@@ -1,0 +1,343 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/eyebrow-pencils-comparison.html",
+  "category": "beauty",
+  "comparison_axes": [
+    {
+      "id": "tip_shape",
+      "keywords": [
+        "芯形状",
+        "芯径",
+        "先端"
+      ],
+      "label": "芯の形と太さ"
+    },
+    {
+      "id": "mechanism",
+      "keywords": [
+        "繰り出し",
+        "鉛筆型",
+        "削り方"
+      ],
+      "label": "繰り出し式と削る方式"
+    },
+    {
+      "id": "blending_tool",
+      "keywords": [
+        "スクリューブラシ",
+        "ブラシ",
+        "付属品"
+      ],
+      "label": "付属するぼかし用具"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/eyebrow-pencils-comparison/eyebrow-pencils-comparison.png",
+  "product_acceptance": {
+    "contract_version": "bf7d78a8237179bb977f6ca29f54f732162e9d387723eb0c936bc77316835b8f",
+    "evidence_sha256": "3a978d678e79a6471ab7eafed6218109dbc5a69f73314f27ee6e7c99c2ab71e0",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 14848,
+      "input_tokens": 22964,
+      "member_binding_revision": 4,
+      "output_tokens": 1829,
+      "reasoning_effort": "low",
+      "reasoning_output_tokens": 652,
+      "session_id": "01a173d3-84c6-7591-970e-8628da905d3c",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "mechanism",
+              "quote": "ブラシ付アイブロウ繰り出し"
+            },
+            {
+              "axis_id": "blending_tool",
+              "quote": "ブラシ付アイブロウ繰り出し"
+            }
+          ],
+          "identity_key": "セザンヌ ブラシ付アイブロウ繰り出し",
+          "identity_quote": "セザンヌ ブラシ付アイブロウ繰り出し 02 オリーブブラウン 0.23g",
+          "reason": "製品名からブラシ付きの繰り出し式と確認できる。芯の形や太さは不明。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "tip_shape",
+              "quote": "平らな面とエッジを活用した、綺麗で繊細な線を手軽に演出"
+            },
+            {
+              "axis_id": "blending_tool",
+              "quote": "ブラシ内蔵"
+            }
+          ],
+          "identity_key": "ETUDE [エチュード公式] ドローイングアイブロウペンシルプロ",
+          "identity_quote": "ETUDE [エチュード公式] ドローイングアイブロウペンシルプロ 01 ダークブラウン 0.25g ブラシ内蔵",
+          "reason": "ブラシ内蔵と、平らな面およびエッジを使う芯の形状が明記されている。方式は不明。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "blending_tool",
+              "quote": "ペンシル・パウダー・ブラシの３機能1体型アイブロウ"
+            }
+          ],
+          "identity_key": "excel(エクセル) ザ プライムアイブロウ",
+          "identity_quote": "excel(エクセル) ザ プライムアイブロウ PE01 ナチュラルブラウン",
+          "reason": "ペンシル、パウダー、ブラシの一体型と確認できる。p5と確認済みの機能が近く、芯形状や方式の違いは示されていない。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "tip_shape",
+              "quote": "【0.1mm極細ブレード芯】"
+            },
+            {
+              "axis_id": "blending_tool",
+              "quote": "【スクリューブラシ付き】"
+            }
+          ],
+          "identity_key": "眉美容師 アイブロウペンシル",
+          "identity_quote": "眉美容師 アイブロウペンシル 0.1mm 極細 ブレード型",
+          "reason": "ブレード型芯とスクリューブラシが明記されている。0.1mmの表示や耐久性、持続性は検証済み性能として扱わない。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "blending_tool",
+              "quote": "パウダー・ペンシル・ブラシの３機能"
+            }
+          ],
+          "identity_key": "New Born(ニューボーン) パーフェクトアイブロウ",
+          "identity_quote": "New Born(ニューボーン) パーフェクトアイブロウ 01 グレイッシュブラウン",
+          "reason": "パウダー、ペンシル、ブラシの3機能が明記されている。p3との機能上の優劣を示す根拠はない。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "tip_shape",
+              "quote": "0.9mmの極細芯"
+            },
+            {
+              "axis_id": "blending_tool",
+              "quote": "スクリューブラシを内蔵"
+            }
+          ],
+          "identity_key": "PARISBROW(パリブロウ)] スリムブロウペンシル",
+          "identity_quote": "PARISBROW(パリブロウ)] スリムブロウペンシル 02/オリーブグレー",
+          "reason": "0.9mm芯と内蔵スクリューブラシが明記されている。折れにくさや描き心地は実証済み性能として扱わない。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reason": "6商品はそれぞれ異なるブランドと製品名で識別でき、いずれもアイブロウペンシルの比較対象に合う。提示された出典には、芯の形と太さ、付属するぼかし用具について比較に使える明示的な記載がある。繰り出し方式が確認できるのはp1のみであり、他商品の方式や使用時の性能は推測しない。p3とp5は確認できる機能が近いため、記事ではその共通点を示し、確認できない差を作らずに選び方を説明する必要がある。記事未提出のため本文に関する判定項目はfalse。",
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
+  "products": [
+    {
+      "amazon_title": "セザンヌ ブラシ付アイブロウ繰り出し 02 オリーブブラウン 0.23g",
+      "asin": "B06XCG6Q9X",
+      "brand": "セザンヌ",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51wqKAtB+vL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "blending_tool",
+        "mechanism"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B06XCG6Q9X",
+      "provisional": false,
+      "ref": "p1",
+      "search_key": "セザンヌ ブラシ付アイブロウ繰り出し 02 オリーブブラウン 0.23g",
+      "selection_score": 0.96,
+      "sources": [
+        {
+          "brand": "セザンヌ",
+          "excerpt": "セザンヌ ブラシ付アイブロウ繰り出し 02 オリーブブラウン 0.23g\nこの商品について\n商品サイズ (幅×奥行×高さ) :34mm×12mm×170mm\n原産国:日本\n内容量:0.23g › もっと見る\nブランド セザンヌ\n商品の形状 ペンシル\n色 オリーブブラウン\n素材の特徴 長持ち\n商品特長 ウォータープルーフ\n商品寸法 (長さx幅x高さ) 12 x 34 x 170 mm\n原産国/地域 日本\n梱包タイプ スティック\n対象年齢 大人\n商品の個数 1 表示を増やす\nセザンヌのストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "セザンヌ ブラシ付アイブロウ繰り出し 02 オリーブブラウン 0.23g",
+          "url": "https://www.amazon.co.jp/dp/B06XCG6Q9X",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "ETUDE [エチュード公式] ドローイングアイブロウペンシルプロ 01 ダークブラウン 0.25g ブラシ内蔵 ふんわり ナチュラル 眉毛 茶色",
+      "asin": "B0GL8C1789",
+      "brand": "ETUDE",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/516ybEsmqxL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "blending_tool"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0GL8C1789",
+      "provisional": false,
+      "ref": "p2",
+      "search_key": "ETUDE ドローイングアイブロウペンシルプロ 01 ダークブラウン 0.2",
+      "selection_score": 0.6,
+      "sources": [
+        {
+          "brand": "ETUDE",
+          "excerpt": "ETUDE [エチュード公式] ドローイングアイブロウペンシルプロ 01 ダークブラウン 0.25g ブラシ内蔵 ふんわり ナチュラル 眉毛 茶色\nこの商品について\nなめらかな描き心地 ふんわりナチュラル眉毛\nより使いやすく快適に使えるようにアップグレード！\n綺麗な発色をしっかりキープ！\n平らな面とエッジを活用した、綺麗で繊細な線を手軽に演出\nスルスルとなめらかな書き心地UP！ › もっと見る\nブランド ETUDE\n商品の形状 ペンシル\n色 ダークブラウン(ペンシルプロ)\n素材の特徴 長持ち\n商品特長 シールの剝がしやすさアップ！, 塗り心地アップ！, 容器の耐久性アップ！, 眉補正, 肌に嬉しい保湿成分*配合　*水添ダイズ油、水添野菜油、トコフェロール\n商品の重量 0.25 グラム\n商品寸法 (長さx幅x高さ) 15.2 x 12.7 x 2.1 cm\n原産国/地域 大韓民国\n肌の色調 オール\n対象年齢 大人 表示を増やす\nETUDEのストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "ETUDE [エチュード公式] ドローイングアイブロウペンシルプロ 01 ダークブラウン 0.25g ブラシ内蔵 ふんわり ナチュラル 眉毛 茶色",
+          "url": "https://www.amazon.co.jp/dp/B0GL8C1789",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "【New】excel(エクセル) ザ プライムアイブロウ PE01 ナチュラルブラウン アイブロウペンシル アイブロウブラシ アイブロウパウダー 3機能一体 眉",
+      "asin": "B0FJRRVML7",
+      "brand": "Excel",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61uLH9GRY7L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "blending_tool"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0FJRRVML7",
+      "provisional": false,
+      "ref": "p3",
+      "search_key": "Excel (エクセル) ザ プライムアイブロウ PE01 ナチュラルブラウ",
+      "selection_score": 0.6,
+      "sources": [
+        {
+          "brand": "Excel",
+          "excerpt": "【New】excel(エクセル) ザ プライムアイブロウ PE01 ナチュラルブラウン アイブロウペンシル アイブロウブラシ アイブロウパウダー 3機能一体 眉\nこの商品について\nパワーアップして遂にリニューアル！25年の歳月が作り上げたアイブロウの完成形。1本で洗練された美しい眉へ、ペンシル・パウダー・ブラシの３機能1体型アイブロウ。 › もっと見る\nブランド Excel\n商品の形状 ペンシル\n色 PE01(ナチュラルブラウン)\n素材の特徴 無毒性\n商品特長 眉補正\n肌の色調 オール\n商品の個数 1\nユニット数 1.0 個\nメーカー 常盤薬品工業株式会社\n仕上げタイプ ナチュラル 表示を増やす\nExcelのストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "【New】excel(エクセル) ザ プライムアイブロウ PE01 ナチュラルブラウン アイブロウペンシル アイブロウブラシ アイブロウパウダー 3機能一体 眉",
+          "url": "https://www.amazon.co.jp/dp/B0FJRRVML7",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "【新バージョン】眉美容師 アイブロウペンシル 0.1mm 極細 ブレード型 眉ペンシル ウォータープルーフ 落ちにくい 汗・皮脂に強い なぎなた型 眉毛ペンシル スクリューブラシ付き 自然な眉メイク 長持ち 男女兼用",
+      "asin": "B0DPMCCWS3",
+      "brand": "Lashcharm",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61Enx2m9J5L._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "blending_tool"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0DPMCCWS3",
+      "provisional": false,
+      "ref": "p4",
+      "search_key": "Lashcharm 眉美容師 アイブロウペンシル 0.1mm 極細 ブレード型 眉ペ",
+      "selection_score": 0.6,
+      "sources": [
+        {
+          "brand": "Lashcharm",
+          "excerpt": "【新バージョン】眉美容師 アイブロウペンシル 0.1mm 極細 ブレード型 眉ペンシル ウォータープルーフ 落ちにくい 汗・皮脂に強い なぎなた型 眉毛ペンシル スクリューブラシ付き 自然な眉メイク 長持ち 男女兼用\nこの商品について\n【0.1mm極細ブレード芯】自然な毛流れ眉へ、独自のブレード型芯で、細いラインも面でのぼかしも描きやすいアイブロウペンシルです。眉尻の繊細なライン、眉頭のふんわり感、すき間の描き足しまで1本で自然に仕上げます。\n【汗・水・皮脂に強い】落ちにくいウォータープルーフ処方、汗や水、皮脂によるにじみを抑え、描きたてのような美しい眉メイクを長時間キープ。通勤、外出、スポーツ、マスク着用時のメイクにも使いやすい処方です。\n【なめらかな描き心地】高発色でムラになりにくい、硬すぎず柔らかすぎない芯で、肌に引っかかりにくくスムーズに発色。重ねても濃くなりすぎにくく、初心者でも自然な濃淡を調整しやすい設計です。\n【スクリューブラシ付き】描く・ぼかす・整えるが1本で完了、反対側にはスクリューブラシを搭載。描いたラインを自然にぼかし、毛流れを整えることで、ふんわり立体感のある眉に仕上がります。メイク直しや持ち運びにも便利です。\n【選べる5色展開&品質保証】髪色やメイクに合わせやすい：ナチュラルブラック、グレー、ライトブラウン、レッドブラウン、ダークブラウンなど、髪色や瞳の色、メイクの雰囲気に合わせて選べるカラー展開。普段使いはもちろん、オフィス、デート、外出用にもおすすめです。尚、お買上げから、お客様の満足度No.1を目指しております。万が一初期不良などご満足頂けなかった場合、ご購入のショップからメールで弊社にお問い合わせください。各種サポートにて24時間受け付けております。 › もっと見る\nブランド Lashcharm\n商品の形状 ペンシル\n色 MB-03ライトブラウン\n素材の特徴 ナチュラル\n商品特長 化粧品科学者のチームによって作られた画期的なアイブロウペンシル\n商品寸法 (長さx幅x高さ) 10 x 10 x 150 mm\n肌の色調 オール\n対象年齢 大人\n商品の個数 1\nユニット数 1.0 本 表示を増やす\nLashcharmのストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "【新バージョン】眉美容師 アイブロウペンシル 0.1mm 極細 ブレード型 眉ペンシル ウォータープルーフ 落ちにくい 汗・皮脂に強い なぎなた型 眉毛ペンシル スクリューブラシ付き 自然な眉メイク 長持ち 男女兼用",
+          "url": "https://www.amazon.co.jp/dp/B0DPMCCWS3",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "New Born(ニューボーン) パーフェクトアイブロウ 01 グレイッシュブラウン アイブロウペンシル アイブロウパウダー アイブロウブラシ 眉毛",
+      "asin": "B0DKXBK7LV",
+      "brand": "New Born(ニューボーン)",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71s99jSDclL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "blending_tool"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0DKXBK7LV",
+      "provisional": false,
+      "ref": "p5",
+      "search_key": "New Born(ニューボーン) パーフェクトアイブロウ 01 グレイッシュブラウン アイブロウ",
+      "selection_score": 0.6,
+      "sources": [
+        {
+          "brand": "New Born(ニューボーン)",
+          "excerpt": "New Born(ニューボーン) パーフェクトアイブロウ 01 グレイッシュブラウン アイブロウペンシル アイブロウパウダー アイブロウブラシ 眉毛\nこの商品について\nパウダー・ペンシル・ブラシの３機能で洗練されたナチュラル眉に。 › もっと見る\nブランド New Born(ニューボーン)\n商品の形状 ペンシル\n色 01 グレイッシュブラウン\n素材の特徴 耐汗性\n商品特長 眉補正\n肌の色調 オール\n商品の個数 1\nユニット数 1 本\nメーカー 常盤薬品工業\n特徴 耐汗性 表示を増やす\nNew Born(ニューボーン)のストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "New Born(ニューボーン) パーフェクトアイブロウ 01 グレイッシュブラウン アイブロウペンシル アイブロウパウダー アイブロウブラシ 眉毛",
+          "url": "https://www.amazon.co.jp/dp/B0DKXBK7LV",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "[PARISBROW(パリブロウ)] スリムブロウペンシル 02/オリーブグレー 極細 折れにくくスルスルかける 0.9mm超細芯アイブロウ",
+      "asin": "B0C2V6VDM5",
+      "brand": "PARISBROW",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41eFQSos4kL._AC_UL320_.jpg",
+      "matched_comparison_axes": [
+        "blending_tool"
+      ],
+      "observed_price": null,
+      "product_id": "AMZ-B0C2V6VDM5",
+      "provisional": false,
+      "ref": "p6",
+      "search_key": "PARISBROW スリムブロウペンシル 02/オリーブグレー 極細 折れにくくスル",
+      "selection_score": 0.6,
+      "sources": [
+        {
+          "brand": "PARISBROW",
+          "excerpt": "[PARISBROW(パリブロウ)] スリムブロウペンシル 02/オリーブグレー 極細 折れにくくスルスルかける 0.9mm超細芯アイブロウ\nこの商品について\n狙ったところに毛を一本一本描き足すことができる極細ペンシル。眉頭や眉尻など、自眉毛が足りない部分の描き足しに最適です。 ・02 オリーブグレー／男性も使いやすい絶妙な自眉毛カラー\n0.9mmの極細芯で、まるで自分の眉毛のように描ける\n折れにくく、スルスル描ける しなやかな硬さの芯で、力を入れなくてもしっかり発色\n眉の描き始めと仕上げにマストなスクリューブラシを内蔵。毛流れを整えて描きやすくし、描いたところをぼかす際に使用します。\n【使用方法】①眉頭や眉尻、中間など自眉が足りない部分を一本一本足すように描きます。 ②はみだしたり濃くなりすぎた部分はペンシル後ろ側のスクリューブラシでぼかします。 ※極細なので1mm以上出すと折れる可能性がございます。 › もっと見る\nブランド PARISBROW\n商品の形状 ペンシル\n色 02/オリーブグレー\n梱包タイプ スティック\n肌の色調 オール\n対象年齢 大人\n商品の個数 1\nユニット数 1.00 個\nメーカー PARISBROW\n仕上げタイプ ナチュラル 表示を増やす\nPARISBROWのストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "[PARISBROW(パリブロウ)] スリムブロウペンシル 02/オリーブグレー 極細 折れにくくスルスルかける 0.9mm超細芯アイブロウ",
+          "url": "https://www.amazon.co.jp/dp/B0C2V6VDM5",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "selection": {
+    "brand_count": 6,
+    "comparison_axes_covered": [
+      "blending_tool",
+      "mechanism"
+    ],
+    "content_duplicates_removed": [],
+    "price_used_as_constraint_only": true,
+    "retained_qa_passed_asins": []
+  },
+  "slug": "eyebrow-pencils-comparison"
+}
