@@ -12,7 +12,10 @@ class QualityGateError(ValueError):
 
 def _judge(prompt):
     command=[os.environ.get('SELLEMY_EDITORIAL_CLAIM_CODEX','/opt/homebrew/bin/codex'),'exec','--ephemeral','--skip-git-repo-check','--sandbox','read-only','--model',os.environ.get('SELLEMY_EDITORIAL_CLAIM_MODEL','gpt-6-sol'),'-']
-    run=subprocess.run(command,input=prompt,text=True,capture_output=True,timeout=210)
+    try:
+        run=subprocess.run(command,input=prompt,text=True,capture_output=True,timeout=210)
+    except (subprocess.TimeoutExpired,OSError) as exc:
+        raise QualityGateError('reviewer_runtime',str(exc)) from exc
     if run.returncode:raise QualityGateError('reviewer_runtime',run.stderr[-500:] or 'review invocation failed')
     text=run.stdout
     try:return json.loads(text[text.index('{'):text.rindex('}')+1])

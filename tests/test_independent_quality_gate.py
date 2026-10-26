@@ -16,3 +16,15 @@ class GateTests(unittest.TestCase):
    with self.assertRaises(QualityGateError) as err:issue_receipts({}, {}, {})
    self.assertEqual(err.exception.gate,'product')
 if __name__=='__main__':unittest.main()
+
+class PrelaunchNoPublishTests(unittest.TestCase):
+ def test_real_reviewer_transport_failure_is_infrastructure_not_editorial(self):
+  from independent_quality_gate import _judge,QualityGateError
+  with patch('independent_quality_gate.subprocess.run',side_effect=__import__('subprocess').TimeoutExpired('codex',210)):
+   with self.assertRaises(QualityGateError) as caught:_judge('article')
+  self.assertEqual(caught.exception.gate,'reviewer_runtime')
+ def test_product_fail_never_calls_reviewer(self):
+  reviewer=unittest.mock.Mock(side_effect=AssertionError('should not call reviewer'))
+  with patch('independent_quality_gate.product_issues',return_value=['missing evidence']):
+   with self.assertRaises(QualityGateError):issue_receipts({}, {}, {}, judge=reviewer)
+  reviewer.assert_not_called()
