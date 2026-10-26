@@ -1,16 +1,16 @@
 # Sellemy Editorial QA — independent editorial gate
 
-Purpose: judge whether a finished article helps readers discover and choose products. Do not grade product identities, citations, sales status, images, or source sufficiency here; those belong to Product QA and Claim QA.
+Purpose: judge whether finished prose helps readers discover and choose products. Product identity, specifications, citations and source sufficiency are evaluated separately by Product QA and Claim QA.
 
-Input: full rendered article prose (h1, lead, summary, comparison group titles/angles, 6 product descriptions, buying guide, conclusion); compact editorial brief when available. No raw marketplace search results or source corpora.
+Input: complete article prose, six product descriptions, editorial brief when available. Do not include the raw product-evidence corpus.
 
-PASS only when all conditions hold:
-1. A defensible first recommendation and concrete, distinct reader/use-case recommendations are identifiable from the article.
-2. All six product descriptions convey their unique value, not six interchangeable specification dumps.
-3. Readable, natural consumer editorial voice; no overbearing bureaucratic jargon, internal investigation or QA narrative, or repeated interchangeable boilerplate.
-4. Does not outsource product research, decisive product comparison, or the final recommendation to the reader. Necessary safety/device requirements may be explained without turning the entire recommendation into a checklist.
-5. The whole article is coherent: introduction, headings, individual products and conclusion agree.
+PASS conditions:
+1. The article makes an actionable recommendation: either a justified overall first choice or clear, specific first choices for distinct use cases. Do not require a universal winner when needs legitimately differ. A list of options without deciding between overlapping products is insufficient.
+2. Each of the six products has a differentiated reason to recommend it to a particular reader or use case.
+3. The writing is appealing, natural Japanese appropriate to Sellemy rather than a bureaucratic specification report, with no internal QA or investigation narrative.
+4. The article does not delegate essential product research or final selection to the reader. Necessary safety and device checks can appear briefly when required.
+5. Introduction, six product sections and conclusion support consistent recommendations.
 
-Review the actual text; do not judge by individual banned words alone. Provide exact failing quotation(s), failure category and concrete editorial repair. An uncertain borderline case is FAIL with a reason, not an invented PASS. Record product-truth validation as NOT_EVALUATED; an editorial PASS never authorizes publication.
+Judge the whole prose, not a banned-word list. For each FAIL provide exact article quotations and a concrete failing condition. Do not fail just because there is no universal #1. Record product factual validation as NOT_EVALUATED. Editorial PASS alone never authorizes publication.
 
-Separate dependency keys: ProductQA=(product_manifest,evidence,comparison_axes,product_contract); EditorialQA=(rendered_article,editorial_brief,editorial_contract); ClaimQA=(article_claims,evidence,claim_contract). Any dependency change invalidates only its dependent QA. Publication requires current PASS for all three and final HTML checks.
+Dependencies: ProductQA=(product manifest,evidence,comparison axes,contract); EditorialQA=(article prose,editorial brief,editorial contract); ClaimQA=(article claims,evidence,contract). Invalidate only receipts affected by changed dependencies. Publication requires all current receipts plus final assembled HTML gate.
