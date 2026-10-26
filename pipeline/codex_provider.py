@@ -524,19 +524,16 @@ def _rotate_context(command: tuple[str, ...], model: str, root: Path, surface_ke
 
 
 def _stage_brief_text(path: Path, stage: str) -> str:
-    # Writer gets editorial rules only. Full historical Evidence/QA learnings
-    # remain available to Planning/Product QA and independent Review.
+    content = path.read_text(encoding='utf-8')
     if stage != 'writer':
-        return path.read_text(encoding='utf-8')
-    return (
-        'Sellemy Writer editorial brief: Recommend products from the reader perspective. '
-        'Lead with the reader use case, explain useful differences in natural polite Japanese, '
-        'and end with an affirmative concrete recommendation. '
-        'Use verified product facts without narrating the verification process. '
-        'Do not copy QA limitations, missing-source notes or research methods into public copy. '
-        'Safety and material purchasing limits must remain specific and accurate. '
-        'Use persona-appropriate technical vocabulary. Never pad prose to fill space.'
-    )
+        return content
+    # Preserve approved reusable editorial knowledge. Filter research workflow
+    # instructions rather than replacing the complete learned brief.
+    lines = content.splitlines()
+    audit_terms = ('source anchor', 'Evidence不足はBLOCKED', 'Marketplace listing',
+                   '調査は公式一覧', '名称・型番・選択仕様', '数値は対象・単位',
+                   '調整可能をカット可能', '端子・通信規格', '成分・対象素材')
+    return '\n'.join(line for line in lines if not any(term in line for term in audit_terms))
 
 
 def _ensure_brief(path: Path, surface_key: str) -> None:

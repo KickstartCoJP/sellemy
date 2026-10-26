@@ -30,25 +30,26 @@ def test_new_planning_requires_reader_persona():
         validate_candidate(item)
 
 
-def test_no_artificial_per_product_or_total_main_minimum():
-    assert DESCRIPTION_HARD_MIN == 0
-    assert MAIN_RANGE[0] == 1
+def test_informative_length_floor_without_old_padding_targets():
+    assert DESCRIPTION_HARD_MIN == 160
+    assert MAIN_RANGE == (2400, 3400)
     prompt=_prompt({'slug':'example'}, {'products':[]})
-    assert 'No per-product minimum' in prompt
-    assert 'no minimum or filler' in prompt
+    assert 'at least 160 meaningful characters' in prompt
+    assert 'without filler' in prompt
 
 
 def test_writer_stage_scope_excludes_evidence_audit_history():
     from codex_provider import _stage_brief_text
-    from comparison_acceptance import WRITER_CONTRACT, CONTRACT
+    from comparison_acceptance import CONTRACT
     from pathlib import Path
     root=Path(__file__).resolve().parents[1]
     brief=root/'.runtime/sellemy-codex/brief.md'
     writer=_stage_brief_text(brief,'writer')
     assert 'source anchor' not in writer
     assert '明示仕様→用途との照合' not in writer
-    assert 'natural polite Japanese' in writer
+    assert '## Learned' in writer
+    assert '冒頭と結び' in writer or '用途' in writer
     assert 'source anchor' in _stage_brief_text(brief,'planning')
     prompt=_prompt({'slug':'article'}, {'products':[]})
     assert CONTRACT not in prompt
-    assert WRITER_CONTRACT in prompt
+    assert 'Ground material claims in supplied facts' in prompt

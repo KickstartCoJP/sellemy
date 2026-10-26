@@ -9,22 +9,6 @@ from pathlib import Path
 
 CONTRACT_PATH = Path(__file__).resolve().parents[1] / 'config' / 'comparison-acceptance.md'
 CONTRACT = CONTRACT_PATH.read_text(encoding='utf-8')
-# Stage-scoped authoring projection: full contract is retained for independent
-# acceptance and publish gates, not dumped into buyer-facing writing instructions.
-WRITER_CONTRACT = (
-    "Sellemy sells a confident, enjoyable product choice, not a research audit. "
-    "Recommend six distinct products within three meaningful two-product groups. "
-    "Ground every material specification and product recommendation in supplied verified facts. "
-    "Do not fabricate performance, compatibility, durability or use experience. "
-    "If essential product facts cannot support a concrete recommendation, return BLOCKED with "
-    "needs_product_reselection=true, never fill missing facts with caveats. "
-    "Keep optional source uncertainty in internal assessment rather than mentioning the research "
-    "process to readers. Convey only material safety warnings and purchase-impacting limits in plain Japanese. "
-    "Open from the reader's scenario, write in consistent natural polite Japanese, and end in a useful "
-    "affirmative recommendation. Adapt technical depth to the supplied reader persona. "
-    "Never list source contradictions, lack of testing, unverified marketing claims or QA language in article prose. "
-)
-
 VALIDATOR_VERSION = 'comparison-acceptance-v1'
 ALLOWED_INDEPENDENT_REVIEWERS = {'independent_responses_review', 'independent_chat_review'}
 VERSION = hashlib.sha256((VALIDATOR_VERSION + '\n' + CONTRACT).encode()).hexdigest()

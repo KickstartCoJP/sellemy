@@ -13,9 +13,9 @@ from category_metadata import get_category
 LEAD_RANGE = (180, 230)
 SUMMARY_RANGE = (130, 170)
 HOW_TO_CHOOSE_RANGE = (190, 270)
-MAIN_RANGE = (1, 3400)
-DESCRIPTION_TARGET_RANGE = (1, 10000)
-DESCRIPTION_HARD_MIN = 0
+MAIN_RANGE = (2400, 3400)
+DESCRIPTION_TARGET_RANGE = (200, 400)
+DESCRIPTION_HARD_MIN = 160
 H3_LEN_RANGE = (6, 45)
 NEAR_DUPLICATE_CONTAINMENT_THRESHOLD = 0.9
 REPEATED_SENTENCE_MIN_LEN = 10
@@ -133,7 +133,7 @@ def run_qa(html: str, payload: dict, evidence: dict, *, acceptance: dict | None 
     descriptions = [p['description'] for p in payload['products']]
     desc_lens = [len(d) for d in descriptions]
     results['description_lens'] = desc_lens
-    results['description_hard_min_pass'] = all(bool(d.strip()) for d in descriptions)
+    results['description_hard_min_pass'] = all(len(d.strip()) >= DESCRIPTION_HARD_MIN for d in descriptions)
     results['description_target_pass'] = all(check_range(n, DESCRIPTION_TARGET_RANGE) for n in desc_lens)
 
     h3_lens = [len(p['h3']) for p in payload['products']]

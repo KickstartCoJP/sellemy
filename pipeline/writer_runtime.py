@@ -7,7 +7,7 @@ import shlex
 import shutil
 import subprocess
 from responses_provider import LOG, route
-from comparison_acceptance import WRITER_CONTRACT, blocked, product_issues
+from comparison_acceptance import blocked, product_issues
 from dataclasses import dataclass
 from pathlib import Path
 from codex_provider import CodexProviderError, generate_isolated as codex_generate_persistent
@@ -109,13 +109,13 @@ def _command() -> list[str]:
 
 
 def _prompt(topic: dict, evidence: dict, *, previous_payload: dict | None = None, gate_feedback: dict | None = None) -> str:
-    prompt = WRITER_CONTRACT + '\n' + (
+    prompt = (
         'You are the Writer stage for a Japanese product-comparison publication. Return only structured JSON. '
         'Write all public-facing Japanese prose yourself; scripts may not expand, paraphrase, or pad it. Ground material claims in supplied facts. Keep source uncertainty internal rather than surfacing audit notes to readers. '
         'Do not state prices, internal workflow terms, ASINs, or affiliate operations. Do not copy raw listing titles verbatim. '
         'Design exactly 3 semantic comparison groups from the topic-specific comparison_axes, with exactly 2 products in each group; groups must partition all six refs exactly once. '
         'Price may be discussed only as a non-specific constraint, never as a fixed low/mid/high article structure. Make each recommendation concrete about who should choose it and why, based on actual differences. If the six products do not represent one coherent product class or Evidence cannot support the promised comparison, return BLOCKED instead of writing cautious filler. '
-        'Keep descriptions distinct and substantive. No per-product minimum: do not invent or pad details. Targets: lead 180-230, summary 130-170, how_to_choose 190-270, h3 6-45, rendered main up to 3400; no minimum or filler. '
+        'Keep descriptions distinct and substantive. Keep each product description informative (at least 160 meaningful characters) without padding. Targets: lead 180-230, summary 130-170, how_to_choose 190-270, h3 6-45, rendered main 2400-3400 without filler. '
         'Preserve slug, category, and refs exactly.\n\n'
         f'TOPIC:\n{json.dumps(topic, ensure_ascii=False, sort_keys=True)}\n\n'
         f'EVIDENCE:\n{json.dumps(evidence, ensure_ascii=False, sort_keys=True)}'
