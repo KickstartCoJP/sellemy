@@ -526,9 +526,17 @@ def _existing_publish_commit(slug: str, category: str) -> str | None:
 def _reconcile_already_published_jobs() -> list[str]:
     reconciled = []
     for row in _unfinished_jobs():
+        # Only publishing that already passed CEO approval may be reconciled.
+        # A previously live slug is not proof that a newly rewritten version
+        # was approved; do not clear CHAT_REVIEW_PENDING or QA_FAILED.
+        if row.get('current_stage') != 'PUBLISH_PENDING':
+            continue
         slug = row['slug']; category = row['category']
         approval = read_artifact(slug, 'chat-publish-approval.json', {}) or {}
-        if approval.get('decision') == 'REWORK' or approval.get('publish_allowed') is False:
+        payload = read_artifact(slug, 'payload.json', {}) or {}
+        evidence = read_artifact(slug, 'evidence.json', {}) or {}
+        from chat_publish_approval import approval_issues
+        if approval_issues(approval, payload=payload, evidence=evidence):
             continue
         commit = _existing_publish_commit(slug, category)
         if commit:
