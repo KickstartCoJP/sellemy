@@ -299,7 +299,11 @@ def save_writer_result(slug: str, *, payload: dict, qa: dict, findings: list[str
         state['last_failure_class'] = None
         state['last_failure_code'] = None
         state['last_failure_reason'] = None
-        return _save_state(state, event='WRITER_QA_PASSED')
+        saved = _save_state(state, event='WRITER_QA_PASSED')
+        from adaptive_publish import AdaptivePublishController
+        from comparison_acceptance import digest
+        AdaptivePublishController(ROOT).record_ceo_review_arrival(slug, digest(payload))
+        return saved
     return _save_state(state, event='WRITER_RESULT_SAVED', detail={'passed': False})
 
 

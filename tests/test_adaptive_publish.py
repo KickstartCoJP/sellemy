@@ -26,6 +26,7 @@ def feedback(event_id: str, grade: str, issues: list[str] | None = None) -> dict
         'commit': f'commit-{event_id}',
         'evaluated_at': '2026-09-17T00:00:00+00:00',
         'overall': grade,
+        'evaluation_basis': 'ceo_review_arrival',
         'issues': issues or [],
     }
 
@@ -39,6 +40,25 @@ class AdaptiveControllerTests(unittest.TestCase):
         config_path = state / 'adaptive_publish.test.json'
         config_path.write_text(json.dumps(config, ensure_ascii=False), encoding='utf-8')
         return AdaptivePublishController(root, state_dir=state, config_path=config_path)
+
+    def test_legacy_machine_green_does_not_raise_target(self):
+        with tempfile.TemporaryDirectory() as directory:
+            controller = self.controller(ROOT, Path(directory))
+            rows = [feedback(f'legacy-{i}', 'green') for i in range(20)]
+            for row in rows:
+                row.pop('evaluation_basis')
+            state = controller.derive_state(rows)
+            self.assertEqual(state['target_per_day'], 2)
+            self.assertEqual(state['green_streak'], 0)
+
+    def test_ceo_review_arrival_is_idempotent(self):
+        with tempfile.TemporaryDirectory() as directory:
+            controller = self.controller(ROOT, Path(directory))
+            first, _ = controller.record_ceo_review_arrival('slug-a', 'hash-a')
+            second, state = controller.record_ceo_review_arrival('slug-a', 'hash-a')
+            self.assertEqual(first['event_id'], second['event_id'])
+            self.assertEqual(state['feedback_count'], 1)
+            self.assertEqual(first['evaluation_basis'], 'ceo_review_arrival')
 
     def test_green_streak_increases_frequency_stepwise(self):
         with tempfile.TemporaryDirectory() as directory:

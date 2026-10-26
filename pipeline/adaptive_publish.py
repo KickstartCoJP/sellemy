@@ -310,6 +310,7 @@ class AdaptivePublishController:
         recent = records[-int(self.config['evaluation_window']):]
         minimum = int(self.config['minimum_target_per_day'])
         maximum = int(self.config['maximum_target_per_day'])
+        # Legacy publication QA Green is not evidence of CEO review arrival.
         seed_count = int(self.config.get('target_seed_feedback_count', 0))
         if not 0 <= seed_count <= len(records):
             raise AdaptivePublishError('target seed feedback count is outside available feedback history')
@@ -319,6 +320,8 @@ class AdaptivePublishController:
         green_streak = 0
         minimum_red_streak = 0
         for row in records[seed_count:]:
+            if row.get('overall') == 'green' and row.get('evaluation_basis') != 'ceo_review_arrival':
+                continue
             grade = row.get('overall')
             if grade == 'green':
                 green_streak += 1
@@ -537,6 +540,18 @@ class AdaptivePublishController:
             state = self.derive_state(records)
             _atomic_json(self.state_path, state)
             return feedback, state
+
+    def record_ceo_review_arrival(self, slug: str, payload_sha256: str) -> tuple[dict, dict]:
+        # One Green for each article version actually delivered to CEO review.
+        event_id = _sha256_bytes(f'ceo-review-arrival:{slug}:{payload_sha256}'.encode())
+        feedback = {
+            'schema_version': 1, 'event_id': event_id, 'slug': slug,
+            'commit': '', 'evaluated_at': datetime.now(timezone.utc).isoformat(),
+            'overall': 'green', 'evaluation_basis': 'ceo_review_arrival',
+            'payload_sha256': payload_sha256, 'issues': [],
+            'artifacts': {'payload_sha256': payload_sha256},
+        }
+        return self.record_feedback(feedback)
 
     def record_quality_control_failure(
         self, *, slug: str, commit: str, growth_run: dict, error: BaseException, issue: str,
