@@ -326,6 +326,8 @@ class RuntimeFailClosedTests(unittest.TestCase):
             patch.object(growth_runtime, 'receipt_issues', return_value=[]),
             patch.object(growth_runtime, 'require_acceptance'),
             patch.object(growth_runtime, 'require_chat_publish_approval'),
+            patch('independent_quality_gate.issue_receipts', return_value={'editorial': {'verdict': 'PASS'}, 'claim': {'verdict': 'PASS'}}),
+            patch('independent_quality_gate.require_receipts', return_value=True),
             patch.object(growth_runtime, 'independent_review', return_value={'review': {'status': 'ACCEPTED'}}),
             patch.object(growth_runtime, 'save_writer_result', side_effect=lambda slug, payload, qa, findings, feedback, metadata, passed: growth_recovery.save_writer_result(slug, payload=payload, qa=qa, findings=findings, feedback=feedback, metadata=metadata, passed=passed)),
             patch.object(growth_runtime, 'record_context_quality'),

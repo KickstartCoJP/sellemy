@@ -544,6 +544,7 @@ def _writer_stage(slug: str, result: dict) -> None:
         raise GrowthRuntimeError(f'needs_product_reselection for {slug}')
     # Invalidate previous QA certification before beginning a new Writer/QA attempt.
     write_artifact(slug, 'qa-certification.json', {})
+    write_artifact(slug, 'independent-quality-receipts.json', {})
     write_artifact(slug, 'chat-publish-approval.json', {})
     previous = read_artifact(slug, 'payload.json')
     gate_feedback = read_artifact(slug, 'gate-feedback.json', {})
@@ -621,6 +622,19 @@ def _writer_stage(slug: str, result: dict) -> None:
         result['review_findings'] = findings
         result['qa'] = qa
         if passed:
+            from independent_quality_gate import issue_receipts, QualityGateError
+            try:
+                independent_receipts=issue_receipts(payload,evidence,acceptance)
+                write_artifact(slug,'independent-quality-receipts.json',independent_receipts)
+            except QualityGateError as exc:
+                write_artifact(slug,'independent-quality-receipts.json',{})
+                if exc.gate in ('evidence','product'):
+                    request_product_reselection(slug,exc.issues)
+                    raise GrowthRuntimeError(f'needs_product_reselection for {slug}: {exc}') from exc
+                feedback['independent_quality_gate']={'gate':exc.gate,'issues':exc.issues}
+                write_artifact(slug,'gate-feedback.json',feedback)
+                mark_failure(slug,stage='writer',failure_class='role_quality',failure_code='INDEPENDENT_QUALITY_FAILED',reason=str(exc),role_return=True,role='writer')
+                raise GrowthRuntimeError(f'independent quality failed for {slug}: {exc}') from exc
             record_context_quality(ROOT, 'bu-codex-sellemy-writer', True, session_id=metadata.get('session_id'))
             record_execution(slug=slug, role='writer', event_type='success', stage='writer', metadata=metadata)
             return
@@ -665,6 +679,9 @@ def _eyecatch_and_publish(slug: str, result: dict) -> str:
     category = state['category']
     require_publishing_enabled(ROOT)
     require_acceptance(payload, evidence, read_artifact(slug, 'acceptance.json'))
+    from independent_quality_gate import require_receipts
+    require_receipts(payload, evidence, read_artifact(slug, 'acceptance.json'),
+                     read_artifact(slug, 'independent-quality-receipts.json', {}))
     from qa_certification import require_certification
     require_certification(read_artifact(slug, 'qa-certification.json', {}), payload, evidence,
                           read_artifact(slug, 'qa.json', {}), read_artifact(slug, 'acceptance.json'))
@@ -1066,6 +1083,16 @@ def _execute_job(slug: str, result: dict, *, cache_only: bool = False) -> str:
                 set_stage(slug, 'QA_FAILED', event='ACCEPTANCE_REVALIDATION_REQUIRED')
                 write_artifact(slug, 'gate-feedback.json', {'semantic_acceptance_issues': issues})
                 raise GrowthRuntimeError(f'acceptance revalidation required for {slug}')
+            from independent_quality_gate import require_receipts, QualityGateError
+            try:
+                require_receipts(payload,evidence,read_artifact(slug,'acceptance.json'),read_artifact(slug,'independent-quality-receipts.json',{}))
+            except QualityGateError as exc:
+                if exc.gate in ('product','evidence'):
+                    request_product_reselection(slug,exc.issues)
+                else:
+                    set_stage(slug,'QA_FAILED',event='INDEPENDENT_QA_REVALIDATION_REQUIRED')
+                    write_artifact(slug,'gate-feedback.json',{'independent_quality_gate':{'gate':exc.gate,'issues':exc.issues}})
+                raise GrowthRuntimeError(f'independent QA revalidation required for {slug}: {exc}') from exc
             return _eyecatch_and_publish(slug, result)
         if stage == 'PUBLISHED':
             return str(state.get('published_commit') or '')
