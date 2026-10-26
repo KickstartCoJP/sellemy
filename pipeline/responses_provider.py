@@ -51,7 +51,9 @@ def _shared_prompt(stage: str, prompt: str) -> str:
     # Owner-accepted, independently QA-verified bounded stage rules only.
     from owner_brief_learning import load_brief_rules
     learned=load_brief_rules('planning' if stage=='planner' else 'writer',root=root)
+    editorial_role = (root / 'config' / 'writer-editorial-role.md').read_text(encoding='utf-8') if stage == 'writer' else ''
     return (
+        (('WRITER_ROLE:\n' + editorial_role + '\n\n') if editorial_role else '') +
         'Use the same Sellemy canon bridge and runtime brief used by the Codex route. '
         'Current task input and Evidence override stale memory.\n\n'
         'CANON_BRIDGE:\n' + bridge_path.read_text(encoding='utf-8') +

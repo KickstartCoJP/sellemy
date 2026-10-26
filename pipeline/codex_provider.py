@@ -877,7 +877,8 @@ def generate_isolated(command: tuple[str, ...], model: str, schema: dict, prompt
     from owner_brief_learning import load_brief_rules
     learned_stage = 'planning' if stage == 'planning' else 'writer'
     learned = load_brief_rules(learned_stage, root=root) if stage in ('planning', 'writer') else ''
-    task = ('Execute independently. Do not inspect old sessions, past output, or unrelated files. '
+    editorial_role = (root / 'config' / 'writer-editorial-role.md').read_text(encoding='utf-8') if stage == 'writer' else ''
+    task = (('WRITER_ROLE:\n' + editorial_role + '\n\n') if editorial_role else '') + ('Execute independently. Do not inspect old sessions, past output, or unrelated files. '
             'Use only the supplied canonical bridge, stage Brief, accepted rules and current task. '
             'Do not call an API. Return exactly one JSON object.\nCANON_BRIDGE:\n' +
             bridge.read_text(encoding='utf-8') + '\nBRIEF:\n' + brief_path.read_text(encoding='utf-8') +
