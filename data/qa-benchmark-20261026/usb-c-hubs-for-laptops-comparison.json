@@ -1,13 +1,14 @@
 {
   "slug": "usb-c-hubs-for-laptops-comparison",
   "verdict": "PASS",
-  "reason": "HDMIを2基使う人へのAnkerを先頭の推薦として示し、有線LAN、カード併用、データ用USB-Cの増設、操作パネルという用途別に6製品を選び分けている。端子と給電の注意は選択に必要な範囲で説明され、結論も本文と一致する。商品事実の妥当性はNOT_EVALUATED。公開可否は別QAの結果を要する。",
+  "reason": "モニター2台、有線LAN、カード併用、データ用USB-C端子、操作パネルなど、6製品に異なる用途を割り当てている。AnkerとBelkinの違いも端子構成から説明できており、結論まで推薦が一貫している。PCの映像出力と給電の確認は、この製品群に必要な適合確認に収まる。",
   "quotes": [
     "HDMIを2基使うならAnker、有線LANにはBelkinやHPが候補。",
+    "HDMIを2基持つAnkerと比べると、有線LANを加えられることが主な選択理由です。",
     "必要なのがデータ用USB-C端子の増設だけなら、用途を絞った候補です。",
     "アプリの起動や操作のショートカットを机上のパネルに置きたい人には、ほかの候補と異なる選択理由になります。"
   ],
-  "contract_version": "b5d727a0ffb532d6e2e2b5f8828b82c527e1df2ca9bca3805ad6882f6e72f2f4",
-  "article_sha256": "ab39d7b247d5ab8cc92fef78c66165ff1aadc0fcf169b1c523f7147781c41fda",
+  "contract_version": "6aa8f38cc0b32a056d86572dfd92fabc7c04f32bdf4038166721c36ee853fcb8",
+  "article_sha256": "4a54737b68e2124c43e4c9b995cdcb1f0f45dee6499631a4569541d60ee5adac",
   "receipt_issues": []
 }
