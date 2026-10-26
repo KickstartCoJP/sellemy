@@ -294,7 +294,7 @@ def save_writer_result(slug: str, *, payload: dict, qa: dict, findings: list[str
         from operating_profile import normal_profile
         approval = certify(payload, read_artifact(slug, 'evidence.json'), qa, read_artifact(slug, 'acceptance.json'))
         write_artifact(slug, 'qa-certification.json', approval)
-        state['current_stage'] = 'EYECATCH_PENDING' if normal_profile() else 'CHAT_REVIEW_PENDING'
+        state['current_stage'] = 'CHAT_REVIEW_PENDING'
         state['next_retry_at'] = None
         state['last_failure_class'] = None
         state['last_failure_code'] = None
@@ -538,8 +538,7 @@ def materialize_for_publish(slug: str, repo: Path = ROOT) -> None:
     require_certification(read_artifact(slug, 'qa-certification.json', {}), payload, evidence,
                           read_artifact(slug, 'qa.json', {}), acceptance)
     from operating_profile import normal_profile
-    if not normal_profile():
-        require_chat_publish_approval(read_artifact(slug, 'chat-publish-approval.json'), payload=payload, evidence=evidence)
+    require_chat_publish_approval(read_artifact(slug, 'chat-publish-approval.json'), payload=payload, evidence=evidence)
     _atomic_json(repo / 'data' / 'acceptance' / f'{slug}.json', acceptance)
     _atomic_json(repo / 'data' / 'evidence' / f'{slug}.json', evidence)
     _atomic_json(repo / 'data' / 'payloads' / f'{slug}.json', payload)

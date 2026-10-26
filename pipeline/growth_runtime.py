@@ -696,8 +696,7 @@ def _eyecatch_and_publish(slug: str, result: dict) -> str:
     require_certification(read_artifact(slug, 'qa-certification.json', {}), payload, evidence,
                           read_artifact(slug, 'qa.json', {}), read_artifact(slug, 'acceptance.json'))
     from operating_profile import normal_profile
-    if not normal_profile():
-        require_chat_publish_approval(read_artifact(slug, 'chat-publish-approval.json'), payload=payload, evidence=evidence)
+    require_chat_publish_approval(read_artifact(slug, 'chat-publish-approval.json'), payload=payload, evidence=evidence)
 
     if state.get('current_stage') == 'PUBLISH_PENDING':
         try:
@@ -1076,9 +1075,6 @@ def _execute_job(slug: str, result: dict, *, cache_only: bool = False) -> str:
             continue
         if stage == 'CHAT_REVIEW_PENDING':
             from operating_profile import normal_profile
-            if normal_profile():
-                set_stage(slug, 'EYECATCH_PENDING', event='NORMAL_PROFILE_NO_PREPUBLICATION_CEO_GATE')
-                continue
             result['status'] = 'awaiting_chatgpt_final_review'
             result['published'] = False
             return None
