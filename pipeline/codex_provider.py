@@ -523,6 +523,22 @@ def _rotate_context(command: tuple[str, ...], model: str, root: Path, surface_ke
         }
 
 
+def _stage_brief_text(path: Path, stage: str) -> str:
+    # Writer gets editorial rules only. Full historical Evidence/QA learnings
+    # remain available to Planning/Product QA and independent Review.
+    if stage != 'writer':
+        return path.read_text(encoding='utf-8')
+    return (
+        'Sellemy Writer editorial brief: Recommend products from the reader perspective. '
+        'Lead with the reader use case, explain useful differences in natural polite Japanese, '
+        'and end with an affirmative concrete recommendation. '
+        'Use verified product facts without narrating the verification process. '
+        'Do not copy QA limitations, missing-source notes or research methods into public copy. '
+        'Safety and material purchasing limits must remain specific and accurate. '
+        'Use persona-appropriate technical vocabulary. Never pad prose to fill space.'
+    )
+
+
 def _ensure_brief(path: Path, surface_key: str) -> None:
     if path.exists():
         return
@@ -881,7 +897,7 @@ def generate_isolated(command: tuple[str, ...], model: str, schema: dict, prompt
     task = (('WRITER_ROLE:\n' + editorial_role + '\n\n') if editorial_role else '') + ('Execute independently. Do not inspect old sessions, past output, or unrelated files. '
             'Use only the supplied canonical bridge, stage Brief, accepted rules and current task. '
             'Do not call an API. Return exactly one JSON object.\nCANON_BRIDGE:\n' +
-            bridge.read_text(encoding='utf-8') + '\nBRIEF:\n' + brief_path.read_text(encoding='utf-8') +
+            bridge.read_text(encoding='utf-8') + '\nBRIEF:\n' + _stage_brief_text(brief_path, stage) +
             '\nACCEPTED_RULES:\n' + learned + '\nTASK:\n' + prompt +
             '\nOUTPUT_SCHEMA:\n' + json.dumps(_strict_schema(schema), ensure_ascii=False))
     effort = os.environ.get('SELLEMY_CODEX_REASONING_EFFORT', 'low').strip() or 'low'

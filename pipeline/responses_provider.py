@@ -9,7 +9,7 @@ import random
 import urllib.request
 from pathlib import Path
 
-from codex_provider import _ensure_brief, _runtime_paths, _strict_schema, _validate_required_shape
+from codex_provider import _ensure_brief, _runtime_paths, _strict_schema, _validate_required_shape, _stage_brief_text
 from recovery_provider_policy import require_responses_allowed
 
 LOG = logging.getLogger(__name__)
@@ -57,7 +57,7 @@ def _shared_prompt(stage: str, prompt: str) -> str:
         'Use the same Sellemy canon bridge and runtime brief used by the Codex route. '
         'Current task input and Evidence override stale memory.\n\n'
         'CANON_BRIDGE:\n' + bridge_path.read_text(encoding='utf-8') +
-        '\n\nRUNTIME_BRIEF:\n' + brief_path.read_text(encoding='utf-8') +
+        '\n\nRUNTIME_BRIEF:\n' + _stage_brief_text(brief_path, 'writer' if stage == 'writer' else 'planning') +
         '\n\nACCEPTED_STAGE_RULES:\n' + learned + '\n\nCURRENT_TASK:\n' + prompt
     )
 

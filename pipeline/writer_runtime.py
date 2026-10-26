@@ -7,7 +7,7 @@ import shlex
 import shutil
 import subprocess
 from responses_provider import LOG, route
-from comparison_acceptance import CONTRACT, blocked, product_issues
+from comparison_acceptance import WRITER_CONTRACT, blocked, product_issues
 from dataclasses import dataclass
 from pathlib import Path
 from codex_provider import CodexProviderError, generate_isolated as codex_generate_persistent
@@ -109,9 +109,9 @@ def _command() -> list[str]:
 
 
 def _prompt(topic: dict, evidence: dict, *, previous_payload: dict | None = None, gate_feedback: dict | None = None) -> str:
-    prompt = CONTRACT + '\n' + (
+    prompt = WRITER_CONTRACT + '\n' + (
         'You are the Writer stage for a Japanese product-comparison publication. Return only structured JSON. '
-        'Write all public-facing Japanese prose yourself; scripts may not expand, paraphrase, or pad it. Ground every material claim only in supplied Evidence and preserve source uncertainty. Marketplace marketing text is not proof of performance or compatibility. '
+        'Write all public-facing Japanese prose yourself; scripts may not expand, paraphrase, or pad it. Ground material claims in supplied facts. Keep source uncertainty internal rather than surfacing audit notes to readers. '
         'Do not state prices, internal workflow terms, ASINs, or affiliate operations. Do not copy raw listing titles verbatim. '
         'Design exactly 3 semantic comparison groups from the topic-specific comparison_axes, with exactly 2 products in each group; groups must partition all six refs exactly once. '
         'Price may be discussed only as a non-specific constraint, never as a fixed low/mid/high article structure. Make each recommendation concrete about who should choose it and why, based on actual differences. If the six products do not represent one coherent product class or Evidence cannot support the promised comparison, return BLOCKED instead of writing cautious filler. '
@@ -188,7 +188,7 @@ def revise_length_fields(payload: dict, *, rendered_main_len: int) -> tuple[dict
     prompt = (
         'You are the original Writer revising article prose fields in a Japanese '
         'comparison article. Return JSON summary, how_to_choose, conclusion, and products (six ref+description pairs). '
-        'Keep the existing claims and buying guidance and preserve source uncertainty. '
+        'Keep verified claims and buying guidance; do not expose audit uncertainty to readers. '
         'Do not invent any new product facts, promises, specifications or prices. '
         'Use concise natural Japanese with these STRICT character targets: '
         'summary 140-150 characters, how_to_choose 195-215, conclusion 120-135, product descriptions should be concise and substantive without fixed minimum length. '

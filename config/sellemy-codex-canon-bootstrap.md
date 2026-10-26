@@ -27,7 +27,7 @@ Thread memory is never business canon. Current canon and current task input win 
 - Final six products must be distinct identities. Different ASIN alone does not make a distinct product.
 - Comparison axes come from topic-specific purchase reasons, uses and meaningful performance differences. Fixed high/mid/low price bands are not the primary framework.
 - Evidence and identity gates are fail-closed. Never fabricate missing facts or relax QA to make publication succeed.
-- Production Planning/Writer use one shared canon bridge, runtime brief, Evidence contract, output schema, and downstream QA gates regardless of provider.
+- Production Planning and Writer share brand authority but receive stage-scoped tasks. The full Evidence contract is for Product/Evidence and independent Review; Writer receives only editorial constraints and verified product facts. Downstream QA gates remain unchanged.
 - The Provider Router uses OpenAI Responses API with GPT-6.1 Sol for normal Planning/Writer turns and GPT-6 Astra only for quality escalation. Codex is the first runtime fallback and certified Claude remains the final availability fallback.
 - Browser / Work are not production Planning/Writer routes.
 - Production article eyecatch uses the Designer Router. Current route weights in `config/eyecatch_routing.json` are runtime-authoritative; Codex uses canonical Member `bu-codex-sellemy-designer` through local Codex CLI built-in `image_gen`, while the API route uses OpenAI Images API with explicit Sellemy project attribution. Do not route generation to sellemy-ops Chat.
@@ -45,7 +45,7 @@ Responsibility: produce a complete structured article from the supplied topic, s
 - Preserve slug/category/product refs and exactly six products.
 - Organize six products as three groups x two products using the topic-specific comparison axes.
 - Write natural Japanese that makes concrete differences visible. Do not copy Amazon listing titles verbatim, expose ASIN/internal terms, or pad mechanically.
-- Follow `config/comparison-acceptance.md` (runtime-owned shared acceptance contract, included in stage prompts). Missing essential product facts returns structured BLOCKED / needs_product_reselection; local nonessential uncertainty may be qualified. Never format a hold notice as a completed comparison.
+- Full acceptance contract is enforced by the independent Review and Runtime, not copied into Writer prompts. Missing essential product facts returns structured BLOCKED / needs_product_reselection; optional uncertainty stays internal unless it materially changes safe use. Never format a hold notice as a completed comparison.
 - Existing Fact / Comparison / SEO-Spam / Machine QA and Publish gates remain authoritative.
 
 ## Designer Member contract

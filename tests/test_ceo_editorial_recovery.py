@@ -36,3 +36,19 @@ def test_no_artificial_per_product_or_total_main_minimum():
     prompt=_prompt({'slug':'example'}, {'products':[]})
     assert 'No per-product minimum' in prompt
     assert 'no minimum or filler' in prompt
+
+
+def test_writer_stage_scope_excludes_evidence_audit_history():
+    from codex_provider import _stage_brief_text
+    from comparison_acceptance import WRITER_CONTRACT, CONTRACT
+    from pathlib import Path
+    root=Path(__file__).resolve().parents[1]
+    brief=root/'.runtime/sellemy-codex/brief.md'
+    writer=_stage_brief_text(brief,'writer')
+    assert 'source anchor' not in writer
+    assert '明示仕様→用途との照合' not in writer
+    assert 'natural polite Japanese' in writer
+    assert 'source anchor' in _stage_brief_text(brief,'planning')
+    prompt=_prompt({'slug':'article'}, {'products':[]})
+    assert CONTRACT not in prompt
+    assert WRITER_CONTRACT in prompt
