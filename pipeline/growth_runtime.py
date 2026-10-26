@@ -527,6 +527,9 @@ def _reconcile_already_published_jobs() -> list[str]:
     reconciled = []
     for row in _unfinished_jobs():
         slug = row['slug']; category = row['category']
+        approval = read_artifact(slug, 'chat-publish-approval.json', {}) or {}
+        if approval.get('decision') == 'REWORK' or approval.get('publish_allowed') is False:
+            continue
         commit = _existing_publish_commit(slug, category)
         if commit:
             mark_published(slug, commit)
