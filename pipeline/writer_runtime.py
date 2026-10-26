@@ -115,7 +115,7 @@ def _prompt(topic: dict, evidence: dict, *, previous_payload: dict | None = None
         'Do not state prices, internal workflow terms, ASINs, or affiliate operations. Do not copy raw listing titles verbatim. '
         'Design exactly 3 semantic comparison groups from the topic-specific comparison_axes, with exactly 2 products in each group; groups must partition all six refs exactly once. '
         'Price may be discussed only as a non-specific constraint, never as a fixed low/mid/high article structure. Make each recommendation concrete about who should choose it and why, based on actual differences. If the six products do not represent one coherent product class or Evidence cannot support the promised comparison, return BLOCKED instead of writing cautious filler. '
-        'Keep descriptions distinct. Targets: lead 180-230, summary 130-170, how_to_choose 190-270, descriptions 320-400, h3 6-45, rendered main 3000-3400. '
+        'Keep descriptions distinct and substantive. No per-product minimum: do not invent or pad details. Targets: lead 180-230, summary 130-170, how_to_choose 190-270, h3 6-45, rendered main up to 3400; no minimum or filler. '
         'Preserve slug, category, and refs exactly.\n\n'
         f'TOPIC:\n{json.dumps(topic, ensure_ascii=False, sort_keys=True)}\n\n'
         f'EVIDENCE:\n{json.dumps(evidence, ensure_ascii=False, sort_keys=True)}'
@@ -131,15 +131,14 @@ def _prompt(topic: dict, evidence: dict, *, previous_payload: dict | None = None
                            'Shorten total public prose by at least the excess plus 120 Japanese '
                            'characters without removing grounded material facts; aim for rendered main '
                            '3150-3250. Never count source JSON as article prose.\n')
-            elif length < 3000:
-                prompt += (f'\nCRITICAL LENGTH CORRECTION: previous rendered main = {length}, '
-                           f'which is short by {3000 - length}. Increase useful comparison '
-                           'detail by at least the deficit plus 80 characters; aim 3150-3250.\n')
         for field, low, high in (('summary',130,170),('how_to_choose',190,270)):
             length = measures.get(field + '_len')
             if isinstance(length,int) and failures.get(field + '_in_range') is False:
                 prompt += (f'\nCRITICAL {field} LENGTH: prior {length}, required '
                            f'{low}-{high}, aim {low + (high-low)//2}; revise this field.\n')
+    persona=topic.get('reader_persona') if isinstance(topic,dict) else None
+    if isinstance(persona,dict):
+        prompt += '\nREADER_PERSONA (follow this reader through introduction, terminology and recommendation): '+json.dumps(persona,ensure_ascii=False)+'\n'
     if previous_payload is not None:
         prompt += (
             '\n\nRewrite the complete payload using the gate diagnostics. Do not patch with scripted filler.\n\n'
@@ -157,11 +156,13 @@ def _prompt(topic: dict, evidence: dict, *, previous_payload: dict | None = None
                            f'contained {main_len} characters. The maximum is 3400. '
                            'Make the new rendered main body no more than 3300 by shortening the '
                            'editorial text, while preserving all grounded decision facts. '
-                           'Choose concise product descriptions (320-335 each), comparison-group '
+                           'Choose concise, substantive product descriptions without padding, comparison-group '
                            'angle text (max 65 each), summary (140-155), how_to_choose (200-225), '
                            'and conclusion (120-145). Keep each public field within its own '
                            'hard QA bounds; do not rely on source JSON or HTML markup in length calculations. '
                            'Return revised prose as the COMPLETE JSON payload, not a patch.\n')
+    if isinstance(gate_feedback,dict) and gate_feedback.get('ceo_rework'):
+        prompt += '\nMANDATORY CEO REWORK: '+str(gate_feedback['ceo_rework'])+'\nDo not repeat the cited defects.\n'
     return prompt
 
 
@@ -190,7 +191,7 @@ def revise_length_fields(payload: dict, *, rendered_main_len: int) -> tuple[dict
         'Keep the existing claims and buying guidance and preserve source uncertainty. '
         'Do not invent any new product facts, promises, specifications or prices. '
         'Use concise natural Japanese with these STRICT character targets: '
-        'summary 140-150 characters, how_to_choose 195-215, conclusion 120-135, each product description 325-350. '
+        'summary 140-150 characters, how_to_choose 195-215, conclusion 120-135, product descriptions should be concise and substantive without fixed minimum length. '
         'No ellipses, fragments or ungrounded filler; shorten only redundant wording. '
         f'Previous RENDERED main body is {rendered_main_len} characters, maximum allowed 3400. '
         'Keep refs unchanged; all other fields stay unchanged and machine QA and independent factual '

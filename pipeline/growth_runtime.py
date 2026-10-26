@@ -571,7 +571,7 @@ def _writer_stage(slug: str, result: dict) -> None:
         if os.environ.get('SELLEMY_ENABLE_WRITER_LENGTH_REPAIR', '1') == '1' and payload.get('status') == 'READY':
             from qa import main_text_length
             measured_main = main_text_length(render_article(payload, evidence))
-            if (measured_main > 3400 or len(payload.get('summary','')) > 170 or len(payload.get('how_to_choose','')) > 270 or any(not 320 <= len(x.get('description','')) <= 400 for x in payload.get('products', []))):
+            if (measured_main > 3400 or len(payload.get('summary','')) > 170 or len(payload.get('how_to_choose','')) > 270):
                 from writer_runtime import revise_length_fields
                 payload, repair_meta = revise_length_fields(payload, rendered_main_len=measured_main)
                 metadata = {**metadata, 'length_repair_attempted': True,
@@ -590,7 +590,7 @@ def _writer_stage(slug: str, result: dict) -> None:
             review = local_review
         else:
             try:
-                acceptance = independent_review(evidence, payload)
+                acceptance = independent_review(evidence, payload, editorial_context={'reader_persona': topic.get('reader_persona'), 'ceo_rework': gate_feedback.get('ceo_rework')})
             except ResponsesError as exc:
                 mark_failure(slug, stage='review', failure_class='runtime_infrastructure',
                              failure_code='INDEPENDENT_REVIEW_UNAVAILABLE', reason=str(exc), role='review')
@@ -610,6 +610,8 @@ def _writer_stage(slug: str, result: dict) -> None:
             qa = {'overall_pass': False, 'evaluation_exception': findings[0]}
             rendered = ''
         feedback = _gate_feedback(findings, qa)
+        if isinstance(gate_feedback, dict) and gate_feedback.get('ceo_rework'):
+            feedback['ceo_rework'] = gate_feedback['ceo_rework']
         feedback['semantic_review'] = review
         if local_qa_mode and review.get('status') == 'REVISION_REQUIRED':
             feedback['local_split_qa_requires_revision'] = True

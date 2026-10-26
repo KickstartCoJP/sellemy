@@ -30,10 +30,11 @@ PLANNING_SCHEMA = {
     'type': 'object', 'additionalProperties': False, 'required': ['candidates'],
     'properties': {'candidates': {'type': 'array', 'minItems': 6, 'maxItems': 30, 'items': {
         'type': 'object', 'additionalProperties': False,
-        'required': ['slug', 'category', 'query', 'title', 'intent_key', 'comparison_axes', 'signals'],
+        'required': ['slug', 'category', 'query', 'title', 'intent_key', 'reader_persona', 'comparison_axes', 'signals'],
         'properties': {
             'slug': {'type': 'string'}, 'category': {'type': 'string'}, 'query': {'type': 'string'},
             'title': {'type': 'string'}, 'intent_key': {'type': 'string'},
+            'reader_persona': {'type': 'object', 'additionalProperties': False, 'required': ['reader', 'knowledge_level', 'purchase_goal', 'editorial_depth'], 'properties': {key: {'type': 'string', 'minLength': 4} for key in ('reader','knowledge_level','purchase_goal','editorial_depth')}},
             'comparison_axes': {'type': 'array', 'minItems': 2, 'maxItems': 6, 'items': {'type': 'object', 'required': ['id', 'label', 'keywords'], 'properties': {'id': {'type': 'string'}, 'label': {'type': 'string'}, 'keywords': {'type': 'array', 'minItems': 1, 'items': {'type': 'string'}}}}},
             'signals': {'type': 'object', 'required': ['search_demand', 'purchase_intent', 'product_viability', 'seasonality', 'profitability', 'evidence_availability'], 'properties': {key: {'type': 'number'} for key in ('search_demand', 'purchase_intent', 'product_viability', 'seasonality', 'profitability', 'evidence_availability')}},
         },
@@ -142,7 +143,7 @@ def _invoke_planning(kind: str, command: list[str], model: str, prompt: str, tim
 
 
 def discover_candidates() -> list[dict]:
-    prompt = CONTRACT + '\nPlanning candidates are provisional until Product/Evidence acceptance. Propose observable topic-specific axes, not generic promotional terms. Evidence availability means that product identity and decision-critical comparison facts can realistically be sourced from manufacturer/official pages, manuals/specifications, or other traceable reliable sources; marketplace title availability alone is not sufficient. Keep the topic to one coherent product class and purchase decision; accessories/refills/parts belong only when the search intent explicitly targets them.\n' + 'You plan Japanese Sellemy product-comparison topics. Generate fresh candidates from current season, search/purchase intent, product viability and the supplied context. Return structured JSON only.\n' + json.dumps(_context(), ensure_ascii=False)
+    prompt = CONTRACT + '\nPlanning candidates are provisional until Product/Evidence acceptance. Include reader_persona with a concrete reader, prior knowledge, buying purpose, and appropriate editorial depth for each candidate. Propose observable topic-specific axes, not generic promotional terms. Evidence availability means that product identity and decision-critical comparison facts can realistically be sourced from manufacturer/official pages, manuals/specifications, or other traceable reliable sources; marketplace title availability alone is not sufficient. Keep the topic to one coherent product class and purchase decision; accessories/refills/parts belong only when the search intent explicitly targets them.\n' + 'You plan Japanese Sellemy product-comparison topics. Generate fresh candidates from current season, search/purchase intent, product viability and the supplied context. Return structured JSON only.\n' + json.dumps(_context(), ensure_ascii=False)
     def local():
         batch = _discover_local_candidates(prompt)
         return {'candidates': list(batch)}, batch.provider_metadata
@@ -176,9 +177,12 @@ def _discover_local_candidates(prompt: str) -> list[dict]:
 
 
 def validate_candidate(candidate: dict) -> None:
-    for field in ('slug', 'category', 'query', 'title', 'intent_key', 'comparison_axes', 'signals'):
+    for field in ('slug', 'category', 'query', 'title', 'intent_key', 'reader_persona', 'comparison_axes', 'signals'):
         if field not in candidate:
             raise PlanningError(f'candidate missing {field}')
+    persona=candidate.get('reader_persona')
+    if persona is not None and (not isinstance(persona,dict) or any(not str(persona.get(k) or '').strip() for k in ('reader','knowledge_level','purchase_goal','editorial_depth'))):
+        raise PlanningError('reader_persona requires reader, knowledge_level, purchase_goal and editorial_depth')
     if candidate['category'] not in CATEGORIES:
         raise PlanningError(f'candidate category outside canon: {candidate["category"]}')
     if not isinstance(candidate['comparison_axes'], list) or len(candidate['comparison_axes']) < 2:
