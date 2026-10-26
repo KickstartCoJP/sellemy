@@ -16,7 +16,9 @@ def _judge(prompt):
     # documented final-message artifact is authoritative for a QA verdict.
     with tempfile.TemporaryDirectory(prefix='sellemy-qa-review-') as tmp:
         output=Path(tmp)/'last-message.txt'
-        command=[os.environ.get('SELLEMY_EDITORIAL_CLAIM_CODEX','/opt/homebrew/bin/codex'),'exec','--ephemeral','--skip-git-repo-check','--sandbox','read-only','--model',os.environ.get('SELLEMY_EDITORIAL_CLAIM_MODEL','gpt-6-sol'),'--output-last-message',str(output),'-']
+        from api_role_binding import require_codex_settings
+        model, effort = require_codex_settings('bu-codex-sellemy-reviewer', 'independent_review')
+        command=[os.environ.get('SELLEMY_EDITORIAL_CLAIM_CODEX','/opt/homebrew/bin/codex'),'exec','--ephemeral','--skip-git-repo-check','--sandbox','read-only','--model',model,'--config',f'model_reasoning_effort={effort}','--output-last-message',str(output),'-']
         try:
             run=subprocess.run(command,input=prompt,text=True,capture_output=True,timeout=210)
         except (subprocess.TimeoutExpired,OSError) as exc:

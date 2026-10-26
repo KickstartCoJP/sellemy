@@ -43,3 +43,26 @@ def require_codex_route(surface: str, stage: str, *, path: Path | None = None) -
             raise SellemyRouteConfigError('Sellemy eyecatch briefing binding missing')
         # Portal role is a user-editable label, not the canonical Member Role ID.
     return keys
+
+
+def require_codex_settings(surface: str, stage: str, *, model: str | None = None,
+                           path: Path | None = None) -> tuple[str, str]:
+    # Read the saved Portal execution settings; never infer defaults.
+    keys = require_codex_route(surface, stage, path=path)
+    if not keys:
+        raise SellemyRouteConfigError(f'unknown Sellemy Codex execution binding: {surface}/{stage}')
+    p = path or Path(os.environ.get('SELLEMY_API_ROLE_DRAFTS_PATH', str(DRAFTS)))
+    try:
+        rows = json.loads(p.read_text(encoding='utf-8'))
+        row = rows[keys[0]]
+        configured_model = row['codex_model']
+        effort = row['codex_effort']
+    except (OSError, ValueError, KeyError, TypeError) as exc:
+        raise SellemyRouteConfigError('Sellemy Codex model/effort settings unavailable') from exc
+    if not isinstance(configured_model, str) or not configured_model.strip():
+        raise SellemyRouteConfigError(f'Sellemy Codex model unset: {keys[0]}')
+    if effort not in {'low', 'medium', 'high', 'xhigh'}:
+        raise SellemyRouteConfigError(f'Sellemy Codex effort unset or invalid: {keys[0]}')
+    if model is not None and model != configured_model:
+        raise SellemyRouteConfigError(f'Sellemy Codex model mismatch: {keys[0]}')
+    return configured_model, effort

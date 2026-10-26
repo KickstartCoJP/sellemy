@@ -417,7 +417,7 @@ def _archive_context(root: Path, surface_key: str, session_id: str, binding: dic
 def _start_compacted_thread(command: tuple[str, ...], model: str, root: Path,
                             surface_key: str, brief_path: Path, *, timeout: int) -> tuple[str, dict]:
     canon_bridge = root / 'config' / 'sellemy-codex-canon-bootstrap.md'
-    effort = os.environ.get('SELLEMY_CODEX_REASONING_EFFORT', 'low').strip() or 'low'
+    effort = _required_effort(surface_key, 'planning' if surface_key == PLANNING_SURFACE else 'writer' if surface_key == 'bu-codex-sellemy-writer' else 'independent_review' if surface_key == 'bu-codex-sellemy-reviewer' else 'eyecatch', model)
     prompt = (
         'Initialize a fresh compact Sellemy Codex session for canonical role ' + surface_key + '. '
         'Read only ' + str(canon_bridge) + ' and ' + str(brief_path) + '. '
@@ -521,6 +521,12 @@ def _rotate_context(command: tuple[str, ...], model: str, root: Path, surface_ke
             'seed_usage': seed_usage,
             'brief_usage': brief_usage,
         }
+
+
+def _required_effort(surface_key: str, stage: str, model: str) -> str:
+    from api_role_binding import require_codex_settings
+    _, effort = require_codex_settings(surface_key, stage, model=model)
+    return effort
 
 
 def _stage_brief_text(path: Path, stage: str) -> str:
@@ -854,7 +860,7 @@ def _refresh_brief(command: tuple[str, ...], model: str, session_id: str, root: 
             'If there is no durable new learning, preserve the current Learned section meaning without adding filler.\n\n'
             'CURRENT_BRIEF:\n' + brief_path.read_text(encoding='utf-8')
         )
-        effort = os.environ.get('SELLEMY_CODEX_REASONING_EFFORT', 'low').strip() or 'low'
+        effort = _required_effort(surface_key, 'planning' if surface_key == PLANNING_SURFACE else 'writer' if surface_key == 'bu-codex-sellemy-writer' else 'independent_review' if surface_key == 'bu-codex-sellemy-reviewer' else 'eyecatch', model)
         queue_prompt = prompt + '\n\nReturn one raw JSON object only, no Markdown. OUTPUT_SCHEMA:\n' + json.dumps(_strict_schema(schema), ensure_ascii=False)
         final, usage = _queue_turn(command, model, session_id, root, queue_prompt, timeout=timeout, effort=effort)
         value = _json_object(final)
@@ -897,7 +903,7 @@ def generate_isolated(command: tuple[str, ...], model: str, schema: dict, prompt
             bridge.read_text(encoding='utf-8') + '\nBRIEF:\n' + _stage_brief_text(brief_path, stage) +
             '\nACCEPTED_RULES:\n' + learned + '\nTASK:\n' + prompt +
             '\nOUTPUT_SCHEMA:\n' + json.dumps(_strict_schema(schema), ensure_ascii=False))
-    effort = os.environ.get('SELLEMY_CODEX_REASONING_EFFORT', 'low').strip() or 'low'
+    effort = _required_effort(surface_key, 'planning' if surface_key == PLANNING_SURFACE else 'writer' if surface_key == 'bu-codex-sellemy-writer' else 'independent_review' if surface_key == 'bu-codex-sellemy-reviewer' else 'eyecatch', model)
     # Designer rollout is persisted only as an image generation audit receipt; it is
     # never resumed by a subsequent task, so previous images cannot accumulate.
     keep_rollout = surface_key == DESIGNER_SURFACE
@@ -1025,7 +1031,7 @@ def generate_persistent(command: tuple[str, ...], model: str, schema: dict, prom
         '\n\nYour final response MUST be one raw JSON object only, with no Markdown or commentary. OUTPUT_SCHEMA:\n' +
         json.dumps(strict_schema, ensure_ascii=False)
     )
-    effort = os.environ.get('SELLEMY_CODEX_REASONING_EFFORT', 'low').strip() or 'low'
+    effort = _required_effort(surface_key, 'planning' if surface_key == PLANNING_SURFACE else 'writer' if surface_key == 'bu-codex-sellemy-writer' else 'independent_review' if surface_key == 'bu-codex-sellemy-reviewer' else 'eyecatch', model)
     final, usage = _queue_turn(command, model, session_id, root, task_prompt, timeout=timeout, effort=effort)
     value = _json_object(final)
     _validate_required_shape(value, strict_schema)
