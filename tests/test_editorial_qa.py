@@ -17,3 +17,14 @@ class EditorialQATests(unittest.TestCase):
   s=make_input(self.article);v={'contract_version':VERSION,'article_sha256':fingerprint(s),'verdict':'FAIL','reason':'不適切','quotes':['存在しない表現']}
   self.assertIn('quote not grounded in article',validate_verdict(v,s))
 if __name__=='__main__': unittest.main()
+
+class EditorialIsolationTests(unittest.TestCase):
+ def test_prompt_scoped_to_one_article(self):
+  from editorial_qa import review_prompt,make_input
+  p={'h1':'A','lead':'B','summary':'C','how_to_choose':'D','conclusion':'E','comparison_groups':[{'title':'X','angle':'Y'}]*3,'products':[{'ref':str(i),'h3':'製品','description':'特徴'} for i in range(6)]}
+  self.assertIn('ONLY this one article',review_prompt(make_input(p)))
+ def test_reject_other_article_quote(self):
+  from editorial_qa import make_receipt,make_input
+  p={'h1':'A','lead':'B','summary':'C','how_to_choose':'D','conclusion':'E','comparison_groups':[{'title':'X','angle':'Y'}]*3,'products':[{'ref':str(i),'h3':'製品','description':'特徴'} for i in range(6)]}
+  with self.assertRaisesRegex(ValueError,'quote not grounded'):
+   make_receipt({'verdict':'PASS','reason':'use-case recommendations','quotes':['違う記事の文章']},make_input(p))

@@ -27,3 +27,21 @@ def validate_verdict(value,subject):
     if value['verdict']=='FAIL' and not value.get('quotes'):return ['FAIL requires exact quotes']
     if any(q not in json.dumps(subject['article'],ensure_ascii=False) for q in value.get('quotes',[])):return ['quote not grounded in article']
     return []
+
+def review_prompt(subject):
+    """One article per request; never permit cross-article quotation bleed."""
+    if not isinstance(subject,dict) or not isinstance(subject.get('article'),dict):
+        raise ValueError('invalid editorial subject')
+    return (CONTRACT + '\nEvaluate ONLY this one article. Return JSON with verdict, reason, quotes. '
+            'Every quote must be a literal substring from this same article; do not paraphrase quotes. '
+            'PASS may return an empty quotes array. FAIL must include exact failing excerpts. '
+            'No ranking or universal best product is required.\nARTICLE:\n' +
+            json.dumps(subject['article'],ensure_ascii=False))
+
+def make_receipt(verdict,subject):
+    """Reject, never sanitize or silently drop, invented citations."""
+    if not isinstance(verdict,dict):raise ValueError('invalid reviewer response')
+    value={**verdict,'article_sha256':fingerprint(subject),'contract_version':VERSION}
+    problems=validate_verdict(value,subject)
+    if problems:raise ValueError('editorial review invalid: '+', '.join(problems))
+    return value
