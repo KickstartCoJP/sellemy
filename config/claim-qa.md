@@ -1,0 +1,5 @@
+# Sellemy Claim QA
+
+Independent factual verification of the final article against the current six-product Evidence. Do not assess editorial charm, rankings, or product selection strategy. For every concrete product statement about capabilities, materials, dimensions, compatibility, performance, bundled items, warranties, modes and use, identify an attributable verified evidence excerpt for the SAME product ref. Marketing claims remain attributed claims rather than proven outcomes. Absence, mismatch or ambiguity requires FAIL with affected product ref, exact article excerpt and missing/contradictory supporting evidence. Do not invent sources or infer specifications.
+
+Input: full six-product article prose with refs, verified source excerpts keyed by corresponding product ref, and current topic comparison axes. Output: verdict PASS/FAIL, reason and zero or more per-claim findings including product_ref, article_quote, verdict SUPPORTED/UNSUPPORTED/CONTRADICTED, evidence_quote, reason. FAIL when any material claim unsupported or contradicted. Publish requires independent current PASS for Product, Editorial and Claim QA plus assembled-page review.
