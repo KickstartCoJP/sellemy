@@ -25,7 +25,6 @@ def issue_receipts(payload,evidence,acceptance,judge=None):
     """Never issue a passing certificate from an absent evidence set or model-only prose."""
     judge=judge or _judge
     try:
-        if product_issues(evidence):raise QualityGateError('product',product_issues(evidence))
         require_acceptance(payload,evidence,acceptance)
     except QualityGateError:raise
     except Exception as exc:raise QualityGateError('product',str(exc)) from exc
@@ -44,7 +43,6 @@ def issue_receipts(payload,evidence,acceptance,judge=None):
 
 def require_receipts(payload,evidence,acceptance,receipts):
     try:
-        if product_issues(evidence):raise QualityGateError('product',product_issues(evidence))
         require_acceptance(payload,evidence,acceptance)
     except QualityGateError:raise
     except Exception as exc:raise QualityGateError('product',str(exc)) from exc

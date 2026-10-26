@@ -612,15 +612,6 @@ def _writer_stage(slug: str, result: dict) -> None:
         if not qa.get('overall_pass') and qa.get('evaluation_exception'):
             feedback['evaluation_exception'] = qa['evaluation_exception']
         passed = not findings and bool(qa.get('overall_pass'))
-        save_writer_result(
-            slug, payload=payload, qa=qa, findings=findings, feedback=feedback,
-            metadata=metadata, passed=passed,
-        )
-        result.setdefault('writer_attempts', []).append({
-            'gate_attempt': failures + 1, **metadata, 'gate_pass': passed,
-        })
-        result['review_findings'] = findings
-        result['qa'] = qa
         if passed:
             from independent_quality_gate import issue_receipts, QualityGateError
             try:
@@ -635,12 +626,23 @@ def _writer_stage(slug: str, result: dict) -> None:
                     mark_failure(slug,stage='review',failure_class='runtime_infrastructure',failure_code='INDEPENDENT_QA_PROVIDER_FAILED',reason=str(exc),role='review')
                     raise GrowthRuntimeError(f'independent QA provider unavailable for {slug}: {exc}') from exc
                 feedback['independent_quality_gate']={'gate':exc.gate,'issues':exc.issues}
-                write_artifact(slug,'gate-feedback.json',feedback)
+                save_writer_result(
+                    slug,payload=payload,qa={**qa,'overall_pass':False},
+                    findings=findings+[str(exc)],feedback=feedback,metadata=metadata,passed=False,
+                )
                 mark_failure(slug,stage='writer',failure_class='role_quality',failure_code='INDEPENDENT_QUALITY_FAILED',reason=str(exc),role_return=True,role='writer')
                 raise GrowthRuntimeError(f'independent quality failed for {slug}: {exc}') from exc
+            save_writer_result(
+                slug, payload=payload, qa=qa, findings=findings, feedback=feedback,
+                metadata=metadata, passed=True,
+            )
             record_context_quality(ROOT, 'bu-codex-sellemy-writer', True, session_id=metadata.get('session_id'))
             record_execution(slug=slug, role='writer', event_type='success', stage='writer', metadata=metadata)
             return
+        save_writer_result(
+            slug, payload=payload, qa=qa, findings=findings, feedback=feedback,
+            metadata=metadata, passed=False,
+        )
         mark_failure(
             slug, stage='writer', failure_class='role_quality',
             failure_code='ASTRA_QUALITY_EXHAUSTED' if metadata.get('quality_escalated') else 'REVIEW_QA_FAILED',
