@@ -53,3 +53,15 @@ def test_writer_stage_scope_excludes_evidence_audit_history():
     prompt=_prompt({'slug':'article'}, {'products':[]})
     assert CONTRACT not in prompt
     assert 'Ground material claims in supplied facts' in prompt
+
+
+def test_historic_publish_does_not_clear_new_ceo_review(monkeypatch):
+    import growth_runtime as g
+    monkeypatch.setattr(g, '_unfinished_jobs', lambda: [
+        {'slug': 'old-live', 'category': 'beauty', 'current_stage': 'CHAT_REVIEW_PENDING'},
+        {'slug': 'rework', 'category': 'beauty', 'current_stage': 'QA_FAILED'},
+    ])
+    def forbid(*args, **kwargs):
+        raise AssertionError('historic publication lookup must not run before current CEO certification')
+    monkeypatch.setattr(g, '_existing_publish_commit', forbid)
+    assert g._reconcile_already_published_jobs() == []
