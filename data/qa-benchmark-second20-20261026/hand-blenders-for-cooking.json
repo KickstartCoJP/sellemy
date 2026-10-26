@@ -1,0 +1,11 @@
+{
+  "verdict": "FAIL",
+  "reason": "条件3：一部の製品説明に、読者向けの紹介文ではなく品番照合や事実確認の作業を記録したような表現が残っています。製品の事実関係はNOT_EVALUATEDです。",
+  "quotes": [
+    "Amazonでの選択品番はHB65H8JPA、メーカー公式の品番表記はHB65H8JPです。",
+    "旧型BOE034やBabyセットとは構成を分け、電子レンジ対応を刃や本体まで広げて解釈しないでください。"
+  ],
+  "article_sha256": "00e8ffb1ce675c8e6516ad02ca6a5d99ab0f5b146200bd180b06ede1b1e895f7",
+  "contract_version": "6aa8f38cc0b32a056d86572dfd92fabc7c04f32bdf4038166721c36ee853fcb8",
+  "slug": "hand-blenders-for-cooking"
+}
