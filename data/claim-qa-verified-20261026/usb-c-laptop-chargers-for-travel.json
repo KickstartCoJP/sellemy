@@ -1,0 +1,191 @@
+{
+  "verdict": "FAIL",
+  "reason": "大半の製品仕様は対応する製品の資料で確認できます。ただし、p4の同時接続時にPC側が30Wになるという記述には端子別の配分を示す証拠がなく、p6の同時接続時のPC側出力の説明は、資料にある15Wの配分を落としています。",
+  "findings": [
+    {
+      "product_ref": "p1",
+      "article_quote": "約65cmの巻き取り式USB-Cケーブルに加え、USB-CポートとUSB-Aポートを備えます。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "65cmのUSB Type-Cケーブルが付属しており、静かに引っ張り出すことができ、使いたい時にすぐに使用できます。",
+      "reason": "ケーブル長と巻き取り構造を確認できます。端子構成は同じ資料の「コネクタタイプ USB-Cコネクタ＆USB-Aコネクタ&USB-Cケーブル」で確認できます。"
+    },
+    {
+      "product_ref": "p1",
+      "article_quote": "掲載情報による単独使用時の上限はUSB-Cポートが67W、内蔵ケーブルが60W。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "単一ポート使用時：USB Type-Cポート：67W、USB Type-Aポート：30W、自動巻き取り式ケーブル：60W（USB-C伸縮式ケーブルは、最大対応60W出力について、これはAppleデバイスを対象とした仕様です）。",
+      "reason": "数値は一致します。ただし、資料は内蔵ケーブルの60W仕様にAppleデバイスを対象とする注記を付けています。"
+    },
+    {
+      "product_ref": "p1",
+      "article_quote": "USB-Cポートと内蔵ケーブルの同時使用時は20W＋45Wと示され",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "USB Type-C+自動巻き取り式ケーブル：20W+45W。",
+      "reason": "接続先と配分が一致します。"
+    },
+    {
+      "product_ref": "p1",
+      "article_quote": "プラグは折りたたみ式で、ケーブルを本体に収納できます。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "折りたたみ式プラグ",
+      "reason": "プラグ形状を確認できます。ケーブル収納は同じ資料の「ケーブルを引っ張るだけで収納でき」で確認できます。"
+    },
+    {
+      "product_ref": "p2",
+      "article_quote": "約95cmの巻き取り式USB-Cケーブルと追加のUSB-Cポートを備え、プラグも折りたためます。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "【2台の端末を同時充電】 内蔵巻き取り式USB Type-CケーブルとUSB Type-Cポートを搭載し、2台の端末を同時に充電できます。",
+      "reason": "構成を確認できます。長さは「95cmの高耐久ナイロン編み込みUSB Type-Cケーブルを内蔵しています。」、プラグは「折りたたみ式プラグを備え」で確認できます。"
+    },
+    {
+      "product_ref": "p2",
+      "article_quote": "掲載寸法は64×53×29.5mm。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "本体サイズはわずか64×53×29.5mmです。",
+      "reason": "寸法が一致します。"
+    },
+    {
+      "product_ref": "p2",
+      "article_quote": "メーカーは45W出力と、対応機器に応じた45～60Wの動的な出力調整を説明しています",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "One Pull, 1.6X Faster Charging: up to 45W output with dynamic 45–60W power adjustment that intelligently adapts to your device; charge an iPhone 17 Pro Max to 50% in 20 minutes, with built-in temperature monitoring for safer charging",
+      "reason": "メーカーの説明として適切に帰属しています。"
+    },
+    {
+      "product_ref": "p2",
+      "article_quote": "追加ポートで2台をつなぐには別のUSB-Cケーブルが必要です。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "2台同時に充電する場合は、別途USB Type-Cケーブルが必要です（ケーブルは付属していません）。",
+      "reason": "必要な別ケーブルと非付属が明記されています。"
+    },
+    {
+      "product_ref": "p2",
+      "article_quote": "2台同時使用時の数値配分は提供資料で確認できません。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "Charge Two Devices at Once: one built-in retractable USB-C cable and one additional USB-C port let you fast-charge two devices simultaneously, keeping your phone, tablet, or laptop powered with fewer chargers",
+      "reason": "資料は同時充電に言及しますが、2系統の数値配分を示していません。"
+    },
+    {
+      "product_ref": "p3",
+      "article_quote": "掲載情報ではUSB-Cが2口、USB-Aが1口。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "2 つの Type-C ポートと 1 つの USB-A ポートを備えており",
+      "reason": "端子数が一致します。"
+    },
+    {
+      "product_ref": "p3",
+      "article_quote": "単独使用時の上限はUSB-Cの一方が20W、もう一方が65W、USB-Aが18Wとされます。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "2 つの USB-C ポートはそれぞれ最大 20W と 65W の単一出力をサポートし、USB-A ポートは 18W の単一出力を提供します。",
+      "reason": "各端子の単独出力が一致します。"
+    },
+    {
+      "product_ref": "p3",
+      "article_quote": "プラグは折りたたみ式。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "Leadele 65W タイプC 急速充電器は折りたたみ式プラグを採用しており",
+      "reason": "プラグ形状が一致します。"
+    },
+    {
+      "product_ref": "p3",
+      "article_quote": "複数端子を同時に使う際の出力配分は提供資料で確認できません。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "2 つの USB-C ポートはそれぞれ最大 20W と 65W の単一出力をサポートし、USB-A ポートは 18W の単一出力を提供します。",
+      "reason": "提示資料には単独出力はありますが、同時使用時の数値配分はありません。"
+    },
+    {
+      "product_ref": "p4",
+      "article_quote": "約64cmの巻き取り式USB-Cケーブルを使い、もう1台をUSB-Cポートにつなぎたい人向けです。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "巻き取りケーブル一体型：長さ約64cmの巻き取り式USB Type-Cケーブルを内蔵し、ケーブルを別途持ち歩かずすっきり収納できます",
+      "reason": "ケーブル仕様が一致します。追加端子は「一体型ケーブルに加えUSB Type-Cポートを搭載」で確認できます。"
+    },
+    {
+      "product_ref": "p4",
+      "article_quote": "単独使用時のUSB PD出力は45Wで、2台同時接続時は30Wと10Wと示されています。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "2ポートで同時充電：一体型ケーブルに加えUSB Type-Cポートを搭載し、2台同時接続時は30Wと10Wで出力します",
+      "reason": "同時接続時の数値が一致します。45WのUSB PD対応は同じ資料の「USB PD 45Wで高速充電」で確認できます。"
+    },
+    {
+      "product_ref": "p4",
+      "article_quote": "PC側が30Wで足りるかも確かめましょう。",
+      "verdict": "UNSUPPORTED",
+      "evidence_quote": "",
+      "reason": "資料は2台接続時の出力を「30Wと10W」としますが、ケーブルと追加ポートのどちらが30Wかを示していません。PC側が30Wになる前提は確認できません。"
+    },
+    {
+      "product_ref": "p4",
+      "article_quote": "寸法は幅約62×奥行約37×高さ約48.5mm、重量は約145gです。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "幅約62×奥行約37×高さ約48.5mm、約145gです",
+      "reason": "寸法と重量が一致します。"
+    },
+    {
+      "product_ref": "p5",
+      "article_quote": "USB-Cは1ポートで、公式仕様の最大出力は65W。対応出力に20V・3.25Aも含まれます。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "出力 USB-C:5V⎓3A/9V⎓3A/12V⎓3A/15V⎓3A/20V⎓3.25A (Max 65W) PPS：5-11V⎓5A",
+      "reason": "公式仕様に出力が明記されています。ポート数は「ポート USB-C×1」で確認できます。"
+    },
+    {
+      "product_ref": "p5",
+      "article_quote": "本体は約52.5×30×26.5mm、約74gで、プラグは折りたたみ式です。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "サイズ 約 52.5 × 30 × 26.5 mm\n重さ 約 74 g",
+      "reason": "寸法と重量が一致します。プラグは「折りたたみプラグを採用」で確認できます。"
+    },
+    {
+      "product_ref": "p5",
+      "article_quote": "PCの給電条件に合うUSB-Cケーブルは別に用意します。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "付属品 取扱説明書（日本語/English）",
+      "reason": "公式仕様の付属品にケーブルは記載されていません。公式の注意事項も「PD・QC対応 ケーブルをご使用いただく必要がございます。」としています。"
+    },
+    {
+      "product_ref": "p5",
+      "article_quote": "メーカーは内部温度に応じて出力を調整すると説明しており、65Wを長時間一定で供給する前提では選べません。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "本製品は、NovaSafety 2.0に搭載された温度センサーが製品内部の温度状況を常時モニタリングし、過剰な発熱や部品の劣化リスクを抑えるため、内部温度に応じて自動的に出力電力を調整しています。",
+      "reason": "メーカー説明として帰属しています。公式FAQも継続使用時の出力調整を説明しています。"
+    },
+    {
+      "product_ref": "p6",
+      "article_quote": "メーカー公式仕様ではUSB-Cが2ポートあり、単独使用時は最大45W、同時使用時は合計最大45Wです。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "【2ポート同時で合計45W出力】\nUSB-Cを2ポート搭載し、2ポート同時使用時も合計最大45Wで出力。",
+      "reason": "2ポートと同時使用時の合計上限が一致します。単独上限は「USB-Cポート単独使用時に最大45W出力」で確認できます。"
+    },
+    {
+      "product_ref": "p6",
+      "article_quote": "配分は30W＋15W、15W＋30W、20W＋20Wと示されています。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "出力（USB-C1＋C2） 30W+15W or 15W+30W or 20W+20W（45W Max）",
+      "reason": "配分が一致します。"
+    },
+    {
+      "product_ref": "p6",
+      "article_quote": "スマホと同時に使う際はPC側が最大30Wまたは20Wになる点を確認しましょう。",
+      "verdict": "CONTRADICTED",
+      "evidence_quote": "出力（USB-C1＋C2） 30W+15W or 15W+30W or 20W+20W（45W Max）",
+      "reason": "公式仕様には15W側になる配分もあります。PC側の出力を30Wまたは20Wに限定できません。"
+    },
+    {
+      "product_ref": "p6",
+      "article_quote": "本体はプラグ部を除き約44.2×78.8×12.5mm、約70gで、プラグは180度動く構造です。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "サイズ 約44.2×78.8×12.5mm（プラグ部除く）\n重量 約70g",
+      "reason": "寸法と重量が一致します。プラグ構造は「プラグは180°まで開閉できるスイング構造を採用」で確認できます。"
+    },
+    {
+      "product_ref": "p6",
+      "article_quote": "掲載先の一部に1ポート・65Wという異なる記載があるため、製品名と一致するメーカー公式仕様の2ポート・45Wを基準に比較します。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "USBポートの総数 1\nワット数 65 W",
+      "reason": "提供された掲載先に異なる記載があります。対応するメーカー公式仕様は「ポート数 USB-C×2」および「20V⎓2.25A(Max 45W)」です。"
+    }
+  ],
+  "subject_sha256": "2df2429027f6fe4f3eafd0b8ffe5f52b1310a92708b95b48b3c950abd2cb9856",
+  "contract_version": "513e1846d94cc1731997111d10b7a5adad1c53c344eab75506c5bfd5e1bd8974",
+  "slug": "usb-c-laptop-chargers-for-travel"
+}

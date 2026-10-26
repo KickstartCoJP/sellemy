@@ -1,0 +1,156 @@
+{
+  "verdict": "PASS",
+  "reason": "6製品の具体的な構成、芯の表示寸法、色、内容量、使用上の注意は、それぞれ同じ製品refの資料で確認できます。描き心地や持続性に関する販売ページの表現は、実証された比較結果として扱われていません。",
+  "findings": [
+    {
+      "product_ref": "p2",
+      "article_quote": "芯の平らな面とエッジを使う形状",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "平らな面とエッジを活用した、綺麗で繊細な線を手軽に演出",
+      "reason": "同じ製品の芯の使い方が明示されています。"
+    },
+    {
+      "product_ref": "p2",
+      "article_quote": "ブラシも内蔵され",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "ブラシ内蔵",
+      "reason": "商品名の記載と一致します。"
+    },
+    {
+      "product_ref": "p2",
+      "article_quote": "今回確認した色はダークブラウン",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "色 ダークブラウン(ペンシルプロ)",
+      "reason": "確認された色と一致します。"
+    },
+    {
+      "product_ref": "p4",
+      "article_quote": "ブレード型の芯とスクリューブラシを備えます",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "【0.1mm極細ブレード芯】自然な毛流れ眉へ、独自のブレード型芯で、細いラインも面でのぼかしも描きやすいアイブロウペンシルです。眉尻の繊細なライン、眉頭のふんわり感、すき間の描き足しまで1本で自然に仕上げます。\n【汗・水・皮脂に強い】落ちにくいウォータープルーフ処方、汗や水、皮脂によるにじみを抑え、描きたてのような美しい眉メイクを長時間キープ。通勤、外出、スポーツ、マスク着用時のメイクにも使いやすい処方です。\n【なめらかな描き心地】高発色でムラになりにくい、硬すぎず柔らかすぎない芯で、肌に引っかかりにくくスムーズに発色。重ねても濃くなりすぎにくく、初心者でも自然な濃淡を調整しやすい設計です。\n【スクリューブラシ付き】描く・ぼかす・整えるが1本で完了、反対側にはスクリューブラシを搭載。",
+      "reason": "ブレード型の芯と付属ブラシの両方が記載されています。"
+    },
+    {
+      "product_ref": "p4",
+      "article_quote": "芯について0.1mmという表示があります",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "【0.1mm極細ブレード芯】",
+      "reason": "表示値を表示として扱っています。"
+    },
+    {
+      "product_ref": "p4",
+      "article_quote": "今回確認した色はライトブラウンです",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "色 MB-03ライトブラウン",
+      "reason": "確認された色と一致します。"
+    },
+    {
+      "product_ref": "p4",
+      "article_quote": "水や汗への強さ、長時間の仕上がりについては販売ページに訴求があります",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "【汗・水・皮脂に強い】落ちにくいウォータープルーフ処方、汗や水、皮脂によるにじみを抑え、描きたてのような美しい眉メイクを長時間キープ。",
+      "reason": "販売ページの訴求として正しく帰属されています。"
+    },
+    {
+      "product_ref": "p6",
+      "article_quote": "0.9mmの芯と内蔵スクリューブラシ",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "0.9mmの極細芯で、まるで自分の眉毛のように描ける\n折れにくく、スルスル描ける しなやかな硬さの芯で、力を入れなくてもしっかり発色\n眉の描き始めと仕上げにマストなスクリューブラシを内蔵。",
+      "reason": "芯の表示寸法とブラシの内蔵が記載されています。"
+    },
+    {
+      "product_ref": "p6",
+      "article_quote": "眉頭や眉尻など、毛が足りないと感じる場所に線を描き足したい人",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "眉頭や眉尻など、自眉毛が足りない部分の描き足しに最適です。",
+      "reason": "販売ページが示す用途に沿っています。"
+    },
+    {
+      "product_ref": "p6",
+      "article_quote": "描いた後にぼかす道具",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "描いたところをぼかす際に使用します。",
+      "reason": "内蔵ブラシの用途と一致します。"
+    },
+    {
+      "product_ref": "p6",
+      "article_quote": "今回の色はオリーブグレー",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "色 02/オリーブグレー",
+      "reason": "確認された色と一致します。"
+    },
+    {
+      "product_ref": "p6",
+      "article_quote": "販売ページには折れにくさや描き心地への言及があります",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "折れにくく、スルスル描ける しなやかな硬さの芯で、力を入れなくてもしっかり発色",
+      "reason": "販売ページの表現として帰属されています。"
+    },
+    {
+      "product_ref": "p6",
+      "article_quote": "1mm以上出さないよう案内されています",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "※極細なので1mm以上出すと折れる可能性がございます。",
+      "reason": "使用上の注意と一致します。"
+    },
+    {
+      "product_ref": "p1",
+      "article_quote": "ブラシ付きの繰り出し式",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "セザンヌ ブラシ付アイブロウ繰り出し 02 オリーブブラウン 0.23g",
+      "reason": "商品名にブラシ付きと繰り出し式が明示されています。"
+    },
+    {
+      "product_ref": "p1",
+      "article_quote": "今回確認した色はオリーブブラウンで、内容量は0.23gです",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "セザンヌ ブラシ付アイブロウ繰り出し 02 オリーブブラウン 0.23g",
+      "reason": "色と内容量が一致します。"
+    },
+    {
+      "product_ref": "p1",
+      "article_quote": "販売ページには持続性や水への強さを示唆する表示もあります",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "素材の特徴 長持ち\n商品特長 ウォータープルーフ",
+      "reason": "販売ページ上の表示として正しく帰属されています。"
+    },
+    {
+      "product_ref": "p3",
+      "article_quote": "ペンシル、パウダー、ブラシの3機能を一体にした製品です",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "ペンシル・パウダー・ブラシの３機能1体型アイブロウ。",
+      "reason": "3機能の構成が一致します。"
+    },
+    {
+      "product_ref": "p3",
+      "article_quote": "今回確認したPE01はナチュラルブラウン",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "色 PE01(ナチュラルブラウン)",
+      "reason": "品番と色が一致します。"
+    },
+    {
+      "product_ref": "p5",
+      "article_quote": "パウダー、ペンシル、ブラシの3機能が示された一体型です",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "パウダー・ペンシル・ブラシの３機能で洗練されたナチュラル眉に。",
+      "reason": "3機能が記載されています。"
+    },
+    {
+      "product_ref": "p5",
+      "article_quote": "今回確認した01はグレイッシュブラウンです",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "色 01 グレイッシュブラウン",
+      "reason": "品番と色が一致します。"
+    },
+    {
+      "product_ref": "p5",
+      "article_quote": "販売ページの耐汗性という表示",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "特徴 耐汗性",
+      "reason": "表示の存在のみを述べ、持続時間の実証とは扱っていません。"
+    }
+  ],
+  "subject_sha256": "a5a0fb9e8e704b01e2793979ce1ba9a402de9ab37a9bfae01ca9379bc799b6e8",
+  "contract_version": "513e1846d94cc1731997111d10b7a5adad1c53c344eab75506c5bfd5e1bd8974",
+  "slug": "eyebrow-pencils-comparison"
+}

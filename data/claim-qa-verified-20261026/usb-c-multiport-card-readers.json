@@ -1,0 +1,184 @@
+{
+  "verdict": "FAIL",
+  "reason": "p2のシリーズに関する記述を、対応する資料から確認できません。ほかの製品仕様は各製品refの資料で裏付けられています。販売ページの速度や耐久性の表現は、実測された成果としては扱いません。",
+  "findings": [
+    {
+      "product_ref": "p1",
+      "article_quote": "エレコムのMR3C-D21EBKは、SDとmicroSDの二つのスロットを同時に使えると掲載されています。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "【SD/microSD 2スロット同時使用可能】**デジタルカメラやアクションカメラで撮影した写真・動画データの取込みに便利。2枚のカードを同時接続できるので、まとめてデータを取り込んだり、カード間でデータを移行したりする作業もスムーズです。",
+      "reason": "同時使用が明記されています。"
+    },
+    {
+      "product_ref": "p1",
+      "article_quote": "USB-CとUSB-Aの両プラグがあり、異なる端子の機器を使い分ける場合にも合います。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "USB Type-C(TM)プラグとUSB-Aプラグを両方搭載。",
+      "reason": "両プラグの搭載が明記されています。"
+    },
+    {
+      "product_ref": "p1",
+      "article_quote": "両スロットはUHS-I対応とされ、最大104MB/sは理論値です。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "【UHS-I対応・最大104MB/s(理論値)の高速転送】**2つのスロットともUHS-I(最大104MB/s)に対応し、大容量の写真・動画データも高速転送。",
+      "reason": "両スロットの規格と理論値が記載されています。"
+    },
+    {
+      "product_ref": "p1",
+      "article_quote": "UHS-IIやSD Expressのカードも読み書き可能とされていますが、転送速度はUHS-I相当と明記されています。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "UHS-IIおよびSD Express対応カードの読み書きも可能です（※転送速度はUHS-I相当）。",
+      "reason": "対応カードと速度上の条件が一致します。"
+    },
+    {
+      "product_ref": "p1",
+      "article_quote": "直挿し型なので、端末の端子周辺に差し込める余地も確認してください。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "エレコム カードリーダー USB Type-C & USB-A 両対応 SD/microSD 2スロット同時使用 UHS-I対応 直挿し アルミ筐体 ドライバ不要 ブラック MR3C-D21EBK",
+      "reason": "直挿し形状が製品名に記載されています。端子周辺の確認は購入時の助言です。"
+    },
+    {
+      "product_ref": "p2",
+      "article_quote": "AnkerのUSB-C 2-in-1カードリーダーは、公式製品ページでSDとmicroSDのスロット、USB-C接続、型番A83700A2を確認できます。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "USB-C ポート数 1 (機器接続用 × 1) 2 (USB PD対応充電用 × 1、機器接続用 × 1) 1 (機器接続用 × 1) 1 (機器接続用 × 1)\nUSB-C アップストリーム ポート数 - - - -\nHDMI ポート数 - - - -\nVGA ポート数 - - - -\nイーサネット ポート数 - - - -\nディスプレイ ポート数 - - - -\nオーディオ ポート数 - - - -\nmicroSD / SDカード スロット microSD / SD microSD / SD microSD / SD microSD / SD",
+      "reason": "公式比較表の対象製品欄にUSB-Cと両カードスロットがあります。型番は同じ資料の「製品型番 A83700A2（グレー）」で確認できます。"
+    },
+    {
+      "product_ref": "p2",
+      "article_quote": "公式ページにはMacBookや一部のiPad、Galaxyなど対応機種の例があります。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "対応機種 -ノートPC ・MacBook ・MacBook Pro ・ChromeBook ・XPS -タブレット端末 ・iPad Pro 12.9 インチ (第5世代) / iPad Pro 12.9 インチ (第4世代) / iPad Pro 12.9 インチ (第3世代) / iPad Pro 11 インチ (第3世代) / iPad Pro 11 インチ (第2世代) / iPad Pro 11 インチ(第1世代) / iPad Air (第 4 世代) -スマートフォン ・Galaxy S10 / S10+ / S9 / S9+ / S8 / S8+ 他",
+      "reason": "挙げられた機種群が対応例として記載されています。"
+    },
+    {
+      "product_ref": "p2",
+      "article_quote": "ただし、同じシリーズ名でも世代や端子は異なるため、自分の機種と照合してください。",
+      "verdict": "UNSUPPORTED",
+      "evidence_quote": "",
+      "reason": "資料には別製品との比較表がありますが、「同じシリーズ名」の世代差や端子差を裏付ける記述はありません。"
+    },
+    {
+      "product_ref": "p3",
+      "article_quote": "SUNTRSIの3-in-1カードリーダーは、SDまたはmicroSDに加え、USB周辺機器を接続する使い方が掲載されています。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "SDカードやTFカードの読み取りが可能なだけでなく、カメラ、USBメモリ、キーボード、マウス、ハードディスクなどのUSBデバイスを使用したデータ転送もサポートします。",
+      "reason": "カードとUSB機器の利用が販売ページに記載されています。"
+    },
+    {
+      "product_ref": "p3",
+      "article_quote": "販売ページには、SD・microSDカードとUSB周辺機器を同時に認識できるとの記載があります。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "SD/MicroカードとUSB周辺機器は同時に認識できます。",
+      "reason": "販売ページの記載として正確に帰属されています。二枚のカード同士の同時読み書きまでは示していません。"
+    },
+    {
+      "product_ref": "p3",
+      "article_quote": "USB-C端子を持つスマートフォン、タブレット、MacBookなどが対応先として挙げられています。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "USB Cコネクタを搭載したPhone 15-17シリーズ、Pad、Android、Macbook、タブレットPCに対応しています",
+      "reason": "販売ページが挙げる対応先の要約です。個々の端末での動作保証を意味しません。"
+    },
+    {
+      "product_ref": "p4",
+      "article_quote": "aceyoonのカードリーダーは、USB-CとUSB-Aの端子を一体化した直挿し型です。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "SDカードリーダーはパソコン用USB-A端子とスマホ・タブレット用USB-C端子を一体化。MacBookやWindows PCはもちろん、OTG対応のAndroidスマホにもそのまま挿すだけでご使用いただけます。",
+      "reason": "端子の一体化と直接挿す使い方が記載されています。"
+    },
+    {
+      "product_ref": "p4",
+      "article_quote": "販売ページにはSDとmicroSDのスロットがあり、二枚を同時に読み書きできると記載されています。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "【SD＋TFデュアルスロットで同時読み書き可能】このカードリーダーはSDカードとmicroSD（TF）カードを同時に挿せる2つのスロットを搭載。カードの抜き差しなしで2枚のデータを同時に転送でき、撮影現場やデータ整理の効率が上がります。",
+      "reason": "販売ページの主張として正確に帰属されています。"
+    },
+    {
+      "product_ref": "p4",
+      "article_quote": "USB 3.0対応の表示は端末との接続規格を示します。併記された最大5Gbpsを、カードからの実効転送速度と読み替えないでください。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "双頭変換アダプタはUSB3.0規格に対応し、最大5Gbpsの高速データ転送を実現。",
+      "reason": "資料はUSB規格と最大値を述べています。記事は実効速度だとは主張していません。"
+    },
+    {
+      "product_ref": "p4",
+      "article_quote": "Android端末ではOTG対応が条件とされるため、端子の形だけでなく端末の仕様も確認しましょう。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "OTG対応のAndroidスマホにもそのまま挿すだけでご使用いただけます。",
+      "reason": "対応先はOTG対応のAndroidスマートフォンとして示されています。"
+    },
+    {
+      "product_ref": "p5",
+      "article_quote": "TP-Link UA430Dは、公式製品ページでSDとmicroSDの同時読み書きが明示されています。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "デュアルスロット搭載： SDカードとmicroSDカードの両方で同時に読み書きでき、メモリーカードを何度も抜き差しする必要がないので、写真のダウンロード・動画編集・3Dプリンターへのファイル転送が効率的＆スムーズに行えます。",
+      "reason": "公式ページが同時読み書きを明記しています。"
+    },
+    {
+      "product_ref": "p5",
+      "article_quote": "USB-CとUSB-Aの両方を備え、Windows、macOS、iPadOS、iOS、Android、Linux、ChromeOSへの対応も公式仕様に記載されています。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "プラグ＆プレイ + 幅広い互換性： Windows・Linux OS・macOS・Android・ChromeOS・iPadOS・iOSに対応しており、デスクトップPC・ノートPC・スマートフォン・タブレット等のデバイスと組み合わせて使用できます。",
+      "reason": "OS一覧が一致します。両端子は同じ公式資料の「Type-C＆A デュアルコネクター」で確認できます。"
+    },
+    {
+      "product_ref": "p5",
+      "article_quote": "カード側はUHS-I対応で、最大200MB/秒の読み取り速度が示されています。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "UHS-I対応： 最大200MB/秒の読み取り速度で転送効率がアップします。 *",
+      "reason": "規格と読み取り速度の表示が一致します。"
+    },
+    {
+      "product_ref": "p5",
+      "article_quote": "ただし公式注記では、対応デバイスを使った場合の論理上の最大値で、実速度は環境によって変わるとされています。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "* 最大200MB/秒の転送速度とは、UHS-I規格に対応するデバイスを使用した場合の論理上の最大転送速度です。実際の転送速度はデバイスの状態や環境要因によって左右される為、保証されるものではありません。",
+      "reason": "公式注記を正確に要約しています。"
+    },
+    {
+      "product_ref": "p5",
+      "article_quote": "USB 3.0の最大5Gbpsは別の規格値です。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "USB 3.0規格に準拠： USB Type-CやType-Aポートに接続すれば、最大5Gbpsの高速データ転送が可能です。",
+      "reason": "USB側の規格値として記載されています。"
+    },
+    {
+      "product_ref": "p6",
+      "article_quote": "BENFEIのカードリーダーは、公式製品ページでSDとmicroSDへの対応、USB-CとUSB-Aを使うケーブル式の接続構成が示されています。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "Dual Slot Memory Card Reader： BENFEI SD/Micro SD card reader provides high data speed access to 2 different card type, the SD(Secure Digital) and Micro SD(TF). With compact USB Type-C/A dual cord design, BENFEI card reader could works with computer or laptop by USB 3.0/2.0 slot or the latest USB Type-C(Thunderbolt 3) slot.",
+      "reason": "カード種別とUSB Type-C/Aのケーブル構成が公式ページに記載されています。"
+    },
+    {
+      "product_ref": "p6",
+      "article_quote": "公式ページにはUSB 3.0またはUSB-C接続時のUHS-Iモードで最大104MB/秒と記載されています。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "INCREDIBLE PERFORMANCE： With latest USB Type-C or the USB 3.0 port, fully enjoy the transfer rates in UHS-I mode up to 104MB/sec, backward Compatible with USB 2.0/1.1.",
+      "reason": "公式ページの表示値として一致します。"
+    },
+    {
+      "product_ref": "p6",
+      "article_quote": "ただし最終的な速度はカードとUSB端子の種類で決まるとの注記があり、表示値を常に出る速度として扱えません。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "(NOTE: The final data speed is decided by the card and USB slot Type ).",
+      "reason": "速度に関する注記の内容が一致します。"
+    },
+    {
+      "product_ref": "p6",
+      "article_quote": "iPhone 15 Proや一部のMacBookなど対応機種の例もあります。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "BROAD COMPATIBILITY：Compatible with iPhone 15 Pro/Pro Max, MacBook Pro (2023~2016), MacBook (2022~2015), iMac Pro (iMac), Acer Aspire Switch 12S/R13, Predator 15/17X, XPS 13/15/17, Alienware 13/15/17, Spectre x360, Microsoft Surface Pro, Book 2, Razer Blade 15/Stealth 13/Pro 17, Samsung Galaxy Tab Pro, S23/ S22 Ultra/ S21/ S20 and most other USB-C / A devices.",
+      "reason": "公式ページの対応例と一致します。"
+    },
+    {
+      "product_ref": "p6",
+      "article_quote": "二つのスロットがある一方、二枚の同時読み書きは提示資料では確定できません。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "Dual Slot Memory Card Reader： BENFEI SD/Micro SD card reader provides high data speed access to 2 different card type, the SD(Secure Digital) and Micro SD(TF).",
+      "reason": "二つのカード種別への対応は確認できます。提示資料には二枚の同時読み書きを明示する記述がなく、記事も確定できないとしています。"
+    }
+  ],
+  "subject_sha256": "f26086698cd7319d2806c7c8538f612be784fe0de7780136a34dd04613235533",
+  "contract_version": "513e1846d94cc1731997111d10b7a5adad1c53c344eab75506c5bfd5e1bd8974",
+  "slug": "usb-c-multiport-card-readers"
+}

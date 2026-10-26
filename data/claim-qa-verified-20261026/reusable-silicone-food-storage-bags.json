@@ -1,0 +1,247 @@
+{
+  "verdict": "PASS",
+  "reason": "記事中の製品固有の容量、寸法、構造、素材、対応する使用方法、温度条件、注意事項は、対応する製品refの提示資料で確認できる。密閉や液漏れに関する販売元の表現も、実証された性能として断定していない。",
+  "findings": [
+    {
+      "product_ref": "p1",
+      "article_quote": "HARONのシリコン保存袋は容量2600ml。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "容量 2600 ml",
+      "reason": "容量が一致する。"
+    },
+    {
+      "product_ref": "p1",
+      "article_quote": "今回の6製品で記載容量が最も大きく",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "容量 2600 ml",
+      "reason": "他の5製品の提示容量はいずれも2600ml未満。"
+    },
+    {
+      "product_ref": "p1",
+      "article_quote": "掲載情報には底が広い自立型とあり",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "自立型で倒れない: 底が広くしっかり自立する設計で",
+      "reason": "販売ページの記載として正確に帰属している。"
+    },
+    {
+      "product_ref": "p1",
+      "article_quote": "冷蔵・冷凍のほか、湯せん、電子レンジ、食洗機への対応も記載されています。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "湯せん・電子レンジOK: お湯での湯せん調理も、電子レンジでの解凍・再加熱もこの1枚で完結。冷凍した作り置きをそのままレンジで温めて食卓へ出せて、加熱後はそのまま保存もできるので洗い物が減ります\n冷凍・冷蔵で鮮度キープ: 冷凍庫での長期保存も、冷蔵庫での日常保存も対応。お肉・お魚の小分け冷凍やカット野菜・果物の保存、作り置きのストックに便利で、食材をムダなく使い切れます\n自立型で倒れない: 底が広くしっかり自立する設計で、中身を入れても倒れにくく片手でスムーズに移し替え可能。スープや下味をつけたお肉も安心の密閉構造で、冷蔵庫に立てて収納もできます\n繰り返し使えるエコ設計: 洗って何度でも使えるから、使い捨てビニール袋の代替として経済的。食洗機対応でお手入れもラクラク",
+      "reason": "各対応方法が販売ページに記載されている。"
+    },
+    {
+      "product_ref": "p1",
+      "article_quote": "「密閉構造」という表現",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "安心の密閉構造",
+      "reason": "販売ページの表現を引用しており、漏れにくさを実証済みとは述べていない。"
+    },
+    {
+      "product_ref": "p6",
+      "article_quote": "スタッシャー スタンドアップ ミディアムは容量1.6Lで、公式ページに縦18×横21.6×マチ9cmと記載されています。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "【本体サイズ】縦18×横21.6×マチ9cm/容量1.6L",
+      "reason": "公式ページの本体寸法と容量が一致する。"
+    },
+    {
+      "product_ref": "p6",
+      "article_quote": "自立するマチ付きの形",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "自立できるマチつきタイプ。",
+      "reason": "形状の記載が一致する。"
+    },
+    {
+      "product_ref": "p6",
+      "article_quote": "450mlのEZサンドイッチより容量が大きく、マチも広いため",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "【本体サイズ】縦18×横21.6×マチ9cm/容量1.6L",
+      "reason": "同ブランドのp5に記載された450ml・マチ2.6cmとの比較が一致する。"
+    },
+    {
+      "product_ref": "p6",
+      "article_quote": "公式ページはピンチロック式の口",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "ピンチロックシステムで密閉できるので、液漏れもしません。",
+      "reason": "口の方式は公式ページに明記されている。液漏れの文言は販売元の主張として扱う。"
+    },
+    {
+      "product_ref": "p6",
+      "article_quote": "耐熱250℃・耐冷−18℃",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "耐熱温度は250℃、耐冷温度は-18度。",
+      "reason": "温度が一致する。"
+    },
+    {
+      "product_ref": "p6",
+      "article_quote": "電子レンジ、オーブン、湯せん、冷蔵・冷凍、食洗機への対応",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "電子レンジ、オーブン、湯せんでの調理、冷蔵、冷凍での保存、食洗機での洗浄が可能です。",
+      "reason": "列挙された使用方法が一致する。"
+    },
+    {
+      "product_ref": "p6",
+      "article_quote": "口について密閉できるとの説明はあります",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "ピンチロックシステムで密閉できるので、液漏れもしません。",
+      "reason": "公式ページの主張として帰属している。"
+    },
+    {
+      "product_ref": "p2",
+      "article_quote": "ジップロックのシリコーンマルチバッグは容量946ml。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "容量 946 ml",
+      "reason": "容量が一致する。"
+    },
+    {
+      "product_ref": "p2",
+      "article_quote": "掲載情報ではマチのある深型で自立するとされ",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "ソフトなシリコーン素材で、自立するので食材の出し入れも楽にできます。\nマチのある深型で",
+      "reason": "形状と自立についての販売ページの記載が一致する。"
+    },
+    {
+      "product_ref": "p2",
+      "article_quote": "幅28.5×高さ15.5cmの寸法が記載されています",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "商品の寸法 28.5幅 x 15.5高さ cm",
+      "reason": "寸法が一致する。"
+    },
+    {
+      "product_ref": "p2",
+      "article_quote": "販売ページには電子レンジ、湯せん、オーブンでの調理、冷凍保存、食洗機での洗浄が記載されています。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "シリコーン素材で電子レンジ、湯せん、オーブン調理にも対応。冷凍保存もでき、マルチに活躍します。\nソフトなシリコーン素材で、自立するので食材の出し入れも楽にできます。\nマチのある深型で、コンパクトなのに容量はたっぷり入るので、電子レンジで時短料理が手軽にできます。\n両サイドにつまみがついているので、レンジ加熱後でも取り出しやすくなっています。\n食洗機での洗浄も可能です。",
+      "reason": "列挙された使用方法が販売ページに記載されている。"
+    },
+    {
+      "product_ref": "p5",
+      "article_quote": "スタッシャー EZサンドイッチは容量450mlで、公式ページの本体寸法は縦19.1×横19.3×マチ2.6cm。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "【本体サイズ】 縦19.1×横19.3×マチ2.6cm/容量450ml",
+      "reason": "公式ページの本体寸法と容量が一致する。"
+    },
+    {
+      "product_ref": "p5",
+      "article_quote": "6製品で容量が最も小さく",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "【本体サイズ】 縦19.1×横19.3×マチ2.6cm/容量450ml",
+      "reason": "他の5製品の提示容量はいずれも450ml超。"
+    },
+    {
+      "product_ref": "p5",
+      "article_quote": "1.6Lのスタンドアップ ミディアムとは同じブランドでも形と容量が異なり",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "【本体サイズ】 縦19.1×横19.3×マチ2.6cm/容量450ml",
+      "reason": "p6の公式ページに記載された1.6L・マチ9cmとの比較が一致する。"
+    },
+    {
+      "product_ref": "p5",
+      "article_quote": "口はピンチロック式と明示されています。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "ピンチロックシステムで密閉できるので、液漏れもしません。",
+      "reason": "口の方式が明記されている。"
+    },
+    {
+      "product_ref": "p5",
+      "article_quote": "耐熱250℃・耐冷−18℃",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "耐熱温度は250℃、耐冷温度は-18度。",
+      "reason": "温度が一致する。"
+    },
+    {
+      "product_ref": "p5",
+      "article_quote": "電子レンジ、オーブン、湯せん、冷蔵・冷凍、食洗機への対応",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "電子レンジ、オーブン、湯せんでの調理、冷蔵、冷凍での保存、食洗機での洗浄が可能です。",
+      "reason": "列挙された使用方法が一致する。"
+    },
+    {
+      "product_ref": "p5",
+      "article_quote": "公式ページの密閉や液漏れに関する説明",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "ピンチロックシステムで密閉できるので、液漏れもしません。",
+      "reason": "公式ページの主張として帰属し、あらゆる状況での性能保証には広げていない。"
+    },
+    {
+      "product_ref": "p3",
+      "article_quote": "Modéré やわらかシリコンバッグは容量1500ml、本体サイズは約幅230×高さ190×奥行75mmと記載されています。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "内容量：1500ml\n本体サイズ：約幅230×高さ190×奥行75㎜",
+      "reason": "容量と寸法が一致する。"
+    },
+    {
+      "product_ref": "p3",
+      "article_quote": "販売ページはファスナーを端まで閉めるよう求める一方、完全密閉ではなく、横向きに保管すると中身が漏れる場合があると明記しています。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "●ファスナーは必ず端までしっかり閉めてください。完全密閉ではないため、横向きに保管すると中身が漏れることがあります。",
+      "reason": "閉じ方と漏れに関する注意が一致する。"
+    },
+    {
+      "product_ref": "p3",
+      "article_quote": "液状の食品を冷凍するときも受け皿の使用が案内されており",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "●液状のものを冷凍する際は、液体が漏れるおそれがあるため、必ず受け皿などをご使用ください。",
+      "reason": "受け皿の使用条件が一致する。"
+    },
+    {
+      "product_ref": "p3",
+      "article_quote": "耐熱220℃・耐冷−40℃",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "耐熱温度：220℃\n耐冷温度：-40℃",
+      "reason": "温度が一致する。"
+    },
+    {
+      "product_ref": "p3",
+      "article_quote": "電子レンジではファスナーを開けて加熱する条件があります。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "●電子レンジで使用する際は、ファスナーを開けてから加熱してください。",
+      "reason": "電子レンジ使用時の条件が一致する。"
+    },
+    {
+      "product_ref": "p3",
+      "article_quote": "加熱直後の蒸気にも注意が必要です。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "●加熱直後は、本体の開口部から熱い蒸気が出る場合があります。やけどにご注意ください。",
+      "reason": "注意事項が一致する。"
+    },
+    {
+      "product_ref": "p4",
+      "article_quote": "icokkaのシリコンバッグMは1袋650mlで、高さ約140×幅約230×マチ約60mmと記載されています。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "Mサイズ(650ml)：高さ約140mm×幅約230mm×マチ約60mm",
+      "reason": "Mサイズ1袋の容量と寸法が一致する。"
+    },
+    {
+      "product_ref": "p4",
+      "article_quote": "掲載されているMサイズ3個の構成",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "icokka シリコンバッグ M 650ml ×3 調理バッグ クッキングバッグ 電子レンジ調理 (赤レッド, M3個)",
+      "reason": "商品名にMサイズ3個と記載されている。"
+    },
+    {
+      "product_ref": "p4",
+      "article_quote": "本体がシリコーンゴム、ストッパーがPS樹脂",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "材質：本体/シリコーンゴム　 ストッパー/PS樹脂",
+      "reason": "部品ごとの材質が一致する。"
+    },
+    {
+      "product_ref": "p4",
+      "article_quote": "本体250℃に対してストッパー80℃、耐冷温度は両部品とも−40℃",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "耐熱温度：本体/250℃　ストッパー/80℃\n耐冷温度：本体/-40℃ 　ストッパー/-40℃",
+      "reason": "部品ごとの温度が一致する。"
+    },
+    {
+      "product_ref": "p4",
+      "article_quote": "商品名に電子レンジ調理の記載があります",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "icokka シリコンバッグ M 650ml ×3 調理バッグ クッキングバッグ 電子レンジ調理",
+      "reason": "商品名の記載として正確に帰属している。"
+    }
+  ],
+  "subject_sha256": "6ad6ac90c8893a46d98ba0611bcf4128ed82d9cfa9c8a2f64304b54291d97abf",
+  "contract_version": "513e1846d94cc1731997111d10b7a5adad1c53c344eab75506c5bfd5e1bd8974",
+  "slug": "reusable-silicone-food-storage-bags"
+}

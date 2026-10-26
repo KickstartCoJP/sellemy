@@ -1,0 +1,184 @@
+{
+  "verdict": "FAIL",
+  "reason": "V90の数値上の意味と、SanDisk Extreme掲載品とメーカー資料の型番末尾の相違を、対応する製品refの証拠で確認できません。以下のSUPPORTEDは資料に記載された仕様・販売上の主張を支持するものであり、実機性能を実証するものではありません。",
+  "findings": [
+    {
+      "product_ref": "p1",
+      "article_quote": "NX-F2CLの256GBモデルはSDXC・UHS-I対応。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "NX-F2CL256G / 256 GB",
+      "reason": "同じ資料の仕様欄に「SDXC」と「UHS-I」も記載されています。"
+    },
+    {
+      "product_ref": "p1",
+      "article_quote": "メーカーはU3と、最低継続書き込み速度30MB/sを示すV30を明記しています。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "ビデオスピードクラスV30(最低継続書き込み保証速度30 MB/s)に対応し、フルHDや4K動画の撮影においてもフレーム落ちが発生しにくく、安定した録画を実現。UHSスピードクラス3 (U3)にも対応し",
+      "reason": "メーカーの規格表示を正しく帰属させています。"
+    },
+    {
+      "product_ref": "p1",
+      "article_quote": "最大200MB/sは読み出しの公称値で、指定カードリーダーとの組み合わせなど条件があります。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "最大読出し速度：200MB/s　※注1：Nextorage デュアルスロット SDカードリーダー「NX-DF1CL」を使用した場合、注2：ご使用の環境により読出し速度は異なる場合がありますので予めご了承ください。",
+      "reason": "速度の種類と測定条件が一致します。"
+    },
+    {
+      "product_ref": "p1",
+      "article_quote": "公式仕様には購入日から5年間の製品保証、国内サポート、結露のない状態での動作温度−25〜85℃も記載されています。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "ご購入後5年間の製品保証と国内サポートに対応します",
+      "reason": "同じ公式仕様に「-25 ℃ ~ 85 ℃ (結露のないこと)」と「ご購入日より5年間」もあります。"
+    },
+    {
+      "product_ref": "p1",
+      "article_quote": "ただし販売元によって保証対象が変わる旨の案内があるため、購入先の確認が必要です。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "Nextorageダイレクト以外の転売ショップで購入されたNextorage製品はメーカー保証対象外になりますので購入しないようお気を付けください。",
+      "reason": "販売経路による保証除外の注意が記載されています。"
+    },
+    {
+      "product_ref": "p6",
+      "article_quote": "4K Camera Proの掲載品は512GBのSDXC・UHS-Iカードで、販売ページにU3とV30の表示があります。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "【5年データ復旧・無償交換保証】GIGASTONE SDカード 512GB 4K Camera Pro SDXC UHS-I A1 V30 U3 C10 100 MB/s 高速 4K UHD & Full HD ビデオ Canon Nikon Sony Pentax Kodak Olympus Panasonicなど デジタルカメラ 一眼レフ対応 ミニケース1個付き",
+      "reason": "掲載品の表題に各表示があります。"
+    },
+    {
+      "product_ref": "p6",
+      "article_quote": "ただし記載された100MB/sは読み出しと書き込みの別が明示されていません。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "【スピード】最大速度100MB/sでスピーディーなデータ移行を可能に。",
+      "reason": "提示された速度記載は読み出し・書き込みを区別していません。"
+    },
+    {
+      "product_ref": "p6",
+      "article_quote": "販売ページには5年間のメーカー保証と国内拠点によるサポートも記載されていますが、保証対象や申請方法の詳細は確認できません。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "【保証】 安心の5年間メーカー保証付き。Gigastoneは世界各国に製品を販売するグローバルなブランドです。 アメリカ、日本、中国、韓国、台湾など多くの国に支社を持つことで、お客様とのコミュニケーションやサポートを迅速に行っています。東京新宿にある日本支社でサポート対応しておりますので、安心してご使用いただけます。",
+      "reason": "保証期間と国内サポートは掲載上の主張です。提示資料には対象範囲や申請方法の詳細がありません。"
+    },
+    {
+      "product_ref": "p6",
+      "article_quote": "耐久性や幅広い機種への対応をうたう掲載文も、個別のカメラでの動作や撮影結果を保証する根拠にはなりません。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "【互換性】ノートパソコン, PC, カメラ, DSLR, 一眼カメラ, キャノン, ニコン, ソニー, ペンタックス, オリンパス, コダック, パナソニックなどのデジカメラブランドに対応します。",
+      "reason": "掲載文は広い互換性を主張していますが、個別機種の検証結果は示していません。耐久性についても掲載文の主張にとどまります。"
+    },
+    {
+      "product_ref": "p2",
+      "article_quote": "ProGrade Digital GOLDの掲載品は1TBのSDXC・UHS-IIカードです。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "ProGrade Digital SDXC UHS-II V60 GOLD 1TB メモリーカード プログレードデジタル 正規輸入品",
+      "reason": "掲載品の表題に一致します。"
+    },
+    {
+      "product_ref": "p2",
+      "article_quote": "メーカーはV60、最大読み出し250MB/s、最大書き込み130MB/sを示しています。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "The UHS-II SDXC V60 Memory Card from ProGrade Digital features a storage capacity of up to 1TB per card and takes advantage of the UHS-II bus to support maximum read speeds of 250 MB/s and maximum write speeds of 130 MB/s.",
+      "reason": "メーカー側資料の公称値に一致します。"
+    },
+    {
+      "product_ref": "p2",
+      "article_quote": "V60は最低継続書き込み速度60MB/sのクラスで、最大書き込み速度とは別の指標。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "This SD card has also been designed with the V60 Video Speed Class rating, which guarantees minimum write speeds of at least 60 MB/s",
+      "reason": "最低速度の説明があり、最大書き込み速度は別に記載されています。"
+    },
+    {
+      "product_ref": "p2",
+      "article_quote": "メーカーはUHS-II非対応機器でも使用できる場合を説明していますが、速度は機器側の対応条件に制約されます。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "it may be used in devices that do not support UHS-II / V60. However, bear in mind that this card will then default to your device's speed class and bus rating",
+      "reason": "使用可能性と機器側による速度制約の両方が示されています。"
+    },
+    {
+      "product_ref": "p2",
+      "article_quote": "国内向け掲載とメーカー公式資料では保証期間と動作温度の記載が異なり、購入品に適用される条件は確定できません。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "✅耐久性：耐熱性（動作温度-25℃～85℃）／耐Ｘ線\n✅「Refresh Pro」対応\n✅保証期間：購入より3年間",
+      "reason": "国内向け掲載の値です。メーカー資料には「Limited Lifetime Warranty」と「Operating Temperature: -12°C to 72°C」があり、相違します。"
+    },
+    {
+      "product_ref": "p3",
+      "article_quote": "この128GBモデルはSanDisk Extreme PROのSDXC・UHS-II、V90系列として確認できます。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "SanDisk 128GB Extreme PRO SDXC UHS-II メモリーカード - 最大300MB/秒の読み取りと書き込み速度、V90、8K、4K UHD、SDカード - SDSDXDM-128G-GN4IN。",
+      "reason": "掲載品の表題に一致します。"
+    },
+    {
+      "product_ref": "p3",
+      "article_quote": "V90は最低継続書き込み速度90MB/sを示すクラスです。",
+      "verdict": "UNSUPPORTED",
+      "evidence_quote": "",
+      "reason": "p3の提示資料にはV90の表示はありますが、最低継続書き込み速度90MB/sという定義はありません。他製品refの資料では補えません。"
+    },
+    {
+      "product_ref": "p3",
+      "article_quote": "メーカー資料には最大書き込み300MB/sとありますが、これは公称値で、実際のカメラで常に出る速度ではありません。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "Με ταχύτητες εγγραφής έως και 300 MB/s 2",
+      "reason": "メーカー資料は書き込み速度を「最大300MB/s」と記載しています。実機での常時達成を主張する記載はありません。"
+    },
+    {
+      "product_ref": "p3",
+      "article_quote": "海外向けの公式ページには耐水・防塵などの説明がありますが、その記載から国内購入品の保証条件を一律には決められません。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "αυτή η κάρτα είναι ανθεκτική στο νερό και τη σκόνη με πιστοποίηση IP68",
+      "reason": "海外向けメーカー資料に耐水・防塵の説明があります。提示資料は国内購入品の保証条件を特定していません。"
+    },
+    {
+      "product_ref": "p4",
+      "article_quote": "掲載品は512GBのSanDisk Extreme SDカードです。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "【Amazon.co.jp限定】 SanDisk SD カード Extreme SDSDXVV-512G-GHJIN 簡易デザインパッケージ",
+      "reason": "掲載品の表題と容量表示に一致します。"
+    },
+    {
+      "product_ref": "p4",
+      "article_quote": "メーカーの同系列資料にはUHS-I、最大読み出し180MB/s、最大撮影速度130MB/sとあります。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "With the SanDisk Extreme SD UHS-I memory card save time transferring media with read speeds of up to 180MB/s 6 powered by SanDisk® QuickFlow™ Technology 8 (64GB - 512GB). Pair with the SanDisk Professional PRO-READER SD and microSD to achieve maximum speeds (sold separately). With shot speeds of up to 130MB/s 6",
+      "reason": "同系列のメーカー資料にある公称値として正しく限定しています。"
+    },
+    {
+      "product_ref": "p4",
+      "article_quote": "最大読み出し速度は対応リーダーなど使用環境に左右され、最大撮影速度も継続書き込みを保証する値ではありません。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "Pair with the SanDisk Professional PRO-READER SD and microSD to achieve maximum speeds (sold separately). With shot speeds of up to 130MB/s 6",
+      "reason": "最大速度には指定リーダーの条件があり、撮影速度も最大値として表記されています。"
+    },
+    {
+      "product_ref": "p4",
+      "article_quote": "公式資料にはU3やV30の説明がありますが、掲載品と公式資料では型番末尾が異なります。",
+      "verdict": "UNSUPPORTED",
+      "evidence_quote": "",
+      "reason": "p4の公式資料抜粋には比較できる具体的な型番末尾がありません。掲載品の型番だけでは相違を検証できません。"
+    },
+    {
+      "product_ref": "p5",
+      "article_quote": "この64GBのExtreme Proは、掲載情報でSDXC・UHS-I、U3、V30とされています。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "【64GB】 SanDisk サンディスク Extreme Pro SDXC UHS-I U3 V30対応 海外リテール [並行輸入品]",
+      "reason": "掲載品の表題に一致します。"
+    },
+    {
+      "product_ref": "p5",
+      "article_quote": "最大読み出し95MB/s、最大書き込み90MB/sも掲載上の公称値で、撮影時の継続速度を保証するものではありません。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "最大読込速度95MB/s　最大書込速度90MB/s",
+      "reason": "掲載情報は両方を最大値として示し、継続速度とは記載していません。"
+    },
+    {
+      "product_ref": "p5",
+      "article_quote": "海外パッケージの並行輸入品で国内サポートがないと明記されている点が重要です。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "海外パッケージ品の為、国内でのサポートはありません。",
+      "reason": "国内サポートに関する掲載条件に一致します。並行輸入品であることも掲載品の表題に明記されています。"
+    }
+  ],
+  "subject_sha256": "ff9f5e9c4d9f52f02ec99f71ee187f3bd3f5261667299d1337e3c18a14f619ec",
+  "contract_version": "513e1846d94cc1731997111d10b7a5adad1c53c344eab75506c5bfd5e1bd8974",
+  "slug": "full-size-sd-memory-cards"
+}

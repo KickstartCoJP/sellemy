@@ -1,0 +1,212 @@
+{
+  "verdict": "PASS",
+  "reason": "確認した製品固有の具体的な記述は、対応する製品refの提供資料で裏付けられています。資料にない筆記面寸法やデータ保存機能は、記事でも不明として扱っています。販売ページの性能表現を実証済みの結果として断定していません。",
+  "findings": [
+    {
+      "product_ref": "p1",
+      "article_quote": "Elegirmeの6.5インチ製品",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "Elegirme 電子メモパッド デジタルノート 6.5インチ",
+      "reason": "ブランドと画面の呼び寸法が一致します。"
+    },
+    {
+      "product_ref": "p1",
+      "article_quote": "表示領域は14.4×7.4cm、本体は15.5×7.5×0.5cm",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "製品サイズ：15.5×7.5×0.5cm）。広々とした14.4×7.4cm表示領域",
+      "reason": "両寸法が一致します。"
+    },
+    {
+      "product_ref": "p1",
+      "article_quote": "付属ペンは側面のスロットに収納し、消去ロックで伝言を表示したまま持ち運べます。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "重要なメモは「消去ロック機能」で誤消去を防止。大切な情報をしっかり保護し、安心して長くご利用いただけます。付属ペンは本体右側のスロットに収納でき、収納・携帯に便利。",
+      "reason": "ペン収納と消去ロックの記載があります。伝言を表示したまま持ち運ぶことは、ロック機能を用いた使い方の提案です。"
+    },
+    {
+      "product_ref": "p1",
+      "article_quote": "電源はCR2016ボタン電池で、電池ケースはネジ固定式。交換には別途精密ドライバーが必要とされています。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "付属のCR2016ボタン電池1個で約100,000回の消去が可能。電池ケースは誤作動防止のネジ固定式（電池交換には別途精密ドライバー必要）",
+      "reason": "電池型番、ケース構造、交換工具が一致します。"
+    },
+    {
+      "product_ref": "p2",
+      "article_quote": "FVEREYの16インチ製品",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "FVEREY 16インチ電子メモパッド",
+      "reason": "ブランドと呼び寸法が一致します。"
+    },
+    {
+      "product_ref": "p2",
+      "article_quote": "液晶寸法310×215mm、外径330×262×8mm",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "16インチ/外径寸法：330×262×8mm/液晶寸法：310×215mm",
+      "reason": "両寸法が一致します。"
+    },
+    {
+      "product_ref": "p2",
+      "article_quote": "中央のボタンで画面全体を消去し、誤消去を避けるロックもあります。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "メモパッドの中央ボタンをクリックすると、1つのキーで画面の内容を簡単に消去できます。機密事項や顧客情報を即座に削除できるため、情報漏えいを防ぐことができます。ロック機能は、偶発的な削除を回避し",
+      "reason": "中央ボタンによる画面消去とロック機能の記載があります。"
+    },
+    {
+      "product_ref": "p2",
+      "article_quote": "筆圧で線の太さが変わるとの説明があり",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "FVEREY 筆圧が大きいほど、手書きは太くなります。",
+      "reason": "販売者による説明として正確に帰属されています。"
+    },
+    {
+      "product_ref": "p2",
+      "article_quote": "電源はCR2025ボタン電池1個で、電池カバーはネジ固定と記載。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "セット内容：本体×１、スタイラスペン×１、ボタン電池（CR2025）1個、説明書×１。",
+      "reason": "電池型番と個数が一致します。カバーについても同じ資料に「電池カバーはネジで補強されている」とあります。"
+    },
+    {
+      "product_ref": "p3",
+      "article_quote": "McCyeksの15インチ製品",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "McCyeks 15インチ電子メモパッド",
+      "reason": "ブランドと呼び寸法が一致します。"
+    },
+    {
+      "product_ref": "p3",
+      "article_quote": "描画色は単色と明記され、伸縮性ストラップで付属ペンと本体をつなげます。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "本体カラー：ブラック、描画色：単色\n✅【ペン探しのストレスゼロへ！紛失防止ストラップ付】「ペンがどこかにいった！」という経験はありませんか？本製品は本体とペンを繋ぐ伸縮性のあるストラップが付属しており",
+      "reason": "描画色とストラップの仕様が一致します。"
+    },
+    {
+      "product_ref": "p3",
+      "article_quote": "ボタンで画面を消す方式で、消去ロックも記載されています。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "ボタン一つで瞬時に消せるので、集中力を途切れさせません。",
+      "reason": "ボタン消去の記載があります。同じ資料に「消去ロック機能付き」とも明記されています。"
+    },
+    {
+      "product_ref": "p3",
+      "article_quote": "電池は交換可能なボタン電池とされるものの、型番や交換手順は今回の情報では分かりません。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "ボタン電池も内蔵（交換可能）されています",
+      "reason": "電池の種類と交換可否が一致し、提供資料に型番と交換手順はありません。"
+    },
+    {
+      "product_ref": "p3",
+      "article_quote": "本体にも他の媒体にも、書いた内容をデータ保存できないと明記されています。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "※本製品には、本体や他の媒体にデータとして保存する機能はありません",
+      "reason": "保存不可の対象と範囲が一致します。"
+    },
+    {
+      "product_ref": "p4",
+      "article_quote": "エレコムのEP-12BK-AZ",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "エレコム 電子メモパッド 電子メモ帳 12インチ ロック機能付き ワンタッチ消去 電池交換可能 単語帳 筆談ボード 伝言ボード 書いて消せるボード ブラック EP-12BK-AZ",
+      "reason": "ブランドと型番が一致します。"
+    },
+    {
+      "product_ref": "p4",
+      "article_quote": "画面は12インチと記載され、中央のボタンで全体を消去します。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "ワンタッチで画面消去が可能。本体中央のボタンを押すだけで、書いたものを簡単に消せます。",
+      "reason": "中央ボタンによる画面消去が一致します。同じ資料に12インチと記載されています。"
+    },
+    {
+      "product_ref": "p4",
+      "article_quote": "スライド式ロックもあり",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "スライド式のロック機能が搭載されているので、ボタンをスライドするだけで大切な情報をうっかり消してしまうミスを防ぎます。",
+      "reason": "ロック方式が一致します。"
+    },
+    {
+      "product_ref": "p4",
+      "article_quote": "付属の専用ペンは丸型で、細いペン先と説明されています。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "付属の専用タッチペンは持ちやすい丸型形状で、ペン先は細く、細かい字もなめらかに書けます。",
+      "reason": "付属ペンの形状とペン先の説明が一致します。"
+    },
+    {
+      "product_ref": "p4",
+      "article_quote": "電池交換可能とされます",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "エレコム 電子メモパッド 電子メモ帳 12インチ ロック機能付き ワンタッチ消去 電池交換可能",
+      "reason": "商品名に電池交換可能と記載されています。"
+    },
+    {
+      "product_ref": "p5",
+      "article_quote": "prendreのPR-LCDPAD02-BK",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "prendre 電子メモパッド 8.5インチ 感圧式 LCD 液晶 消去ロック機能 電池交換対応 メモ帳 メッセージ ボード 伝言板 繰り返し （ブラック） PR-LCDPAD02-BK",
+      "reason": "ブランドと型番が一致します。"
+    },
+    {
+      "product_ref": "p5",
+      "article_quote": "8.5インチの感圧式LCDを採用し、本体のボタンで内容を消去します。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "8.5インチの感圧式LCD液晶で筆圧を感知することで文字などを書くことができます。\n本体についている消去ボタンを押すだけで簡単に画面に書いた文字を消去できます。",
+      "reason": "表示方式と消去操作が一致します。"
+    },
+    {
+      "product_ref": "p5",
+      "article_quote": "ロック中は消去できないと明記され",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "ロック中は画面が消去できなくなる",
+      "reason": "ロック時の動作が一致します。"
+    },
+    {
+      "product_ref": "p5",
+      "article_quote": "本体は約22.7×14.6×0.5cm",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "サイズ(約)：22.7×14.6×0.5cm",
+      "reason": "寸法が一致します。記事は筆記面の寸法と区別しています。"
+    },
+    {
+      "product_ref": "p5",
+      "article_quote": "電池はCR2025で、付属品はテスト電池とされています。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "電池：CR2025(テスト電池付属)",
+      "reason": "電池型番とテスト電池の付属が一致します。"
+    },
+    {
+      "product_ref": "p6",
+      "article_quote": "UPBEATLIFEのDMP0519",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "ブランド\n‎UPBEATLIFE\n製品型番\n‎DMP0519",
+      "reason": "ブランドと型番が一致します。"
+    },
+    {
+      "product_ref": "p6",
+      "article_quote": "感圧式LCDを採用し、付属ペンを本体に収納でき、紛失防止用ストラップも付くと記載されています。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "電子メモは感圧式LCD液晶パネルを採用し",
+      "reason": "表示方式が一致します。同じ資料に「専用タッチペンは本体収納式で、さらにペン紛失防止ストラップ付き。」と記載されています。"
+    },
+    {
+      "product_ref": "p6",
+      "article_quote": "ボタンで消去し、背面のスライドスイッチで誤消去を防ぐ構成です。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "ボタンを押すだけで画面を瞬時に消去できるシンプル操作。",
+      "reason": "ボタン消去が一致します。同じ資料に「背面には誤消去を防ぐロックスライドスイッチを搭載。」と記載されています。"
+    },
+    {
+      "product_ref": "p6",
+      "article_quote": "電池は交換式のCR2025。",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "CR2025コイン電池交換式を採用し",
+      "reason": "電池型番と交換方式が一致します。"
+    },
+    {
+      "product_ref": "p6",
+      "article_quote": "販売情報には重量の異なる記載があり",
+      "verdict": "SUPPORTED",
+      "evidence_quote": "約94gの軽量設計＆厚さ約0.5cmのスリムボディ",
+      "reason": "同じ資料の製品サイズ欄には「22.6 x 14.4 x 0.5 cm; 150 g」とあり、重量の記載が異なります。"
+    }
+  ],
+  "subject_sha256": "8834a650c4f3883389dd91573b2238ff735e74ab6dd9f1850917a28c297a9295",
+  "contract_version": "513e1846d94cc1731997111d10b7a5adad1c53c344eab75506c5bfd5e1bd8974",
+  "slug": "electronic-writing-tablets"
+}
