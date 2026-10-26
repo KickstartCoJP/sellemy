@@ -1065,6 +1065,24 @@ def _execute_job(slug: str, result: dict, *, cache_only: bool = False) -> str:
         result['candidate_count'] = len(evidence.get('products', []))
         blocker = read_artifact(slug, 'product-blocker.json', {}) or {}
         if blocker.get('needs_product_reselection'):
+            # A contract-only version change must trigger fresh independent review
+            # of unchanged evidence, rather than an unrelated Amazon reselection loop.
+            from comparison_acceptance import VERSION, digest, evidence_content
+            old_acceptance = evidence.get('product_acceptance') or {}
+            if (len(evidence.get('products') or []) == 6
+                    and old_acceptance.get('contract_version') != VERSION
+                    and old_acceptance.get('evidence_sha256') == digest(evidence_content(evidence))):
+                from semantic_review import independent_review
+                fresh = independent_review(evidence)
+                evidence['product_acceptance'] = fresh
+                if not product_issues(evidence):
+                    write_artifact(slug, 'evidence.json', evidence)
+                    write_artifact(slug, 'product-blocker.json', {})
+                    write_artifact(slug, 'contract-revalidation.json', {
+                        'previous_version': old_acceptance.get('contract_version'),
+                        'current_version': VERSION, 'result': 'ACCEPTED',
+                    })
+                    continue
             # A newer independently accepted receipt supersedes an older blocker.
             # Never repeat discovery after a verified six-product acceptance.
             if evidence.get('product_acceptance') and not product_issues(evidence):
