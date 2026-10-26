@@ -5,7 +5,7 @@ Purpose: judge whether finished prose helps readers discover and choose products
 Input: complete article prose, six product descriptions, editorial brief when available. Do not include the raw product-evidence corpus.
 
 PASS conditions:
-1. The article makes an actionable recommendation: either a justified overall first choice or clear, specific first choices for distinct use cases. Do not require a universal winner when needs legitimately differ. A list of options without deciding between overlapping products is insufficient.
+1. The article makes an actionable recommendation: clear recommendations for distinct reader needs and use cases. Do not rank products, require a top choice, or invent a universal winner. Explain meaningful differences where products overlap; merely listing specs without recommending an appropriate use is insufficient.
 2. Each of the six products has a differentiated reason to recommend it to a particular reader or use case.
 3. The writing is appealing, natural Japanese appropriate to Sellemy rather than a bureaucratic specification report, with no internal QA or investigation narrative.
 4. The article does not delegate essential product research or final selection to the reader. Necessary safety and device checks can appear briefly when required.
