@@ -1,0 +1,13 @@
+{
+  "slug": "usb-c-hubs-for-laptops-comparison",
+  "verdict": "PASS",
+  "reason": "HDMIを2基使う人へのAnkerを先頭の推薦として示し、有線LAN、カード併用、データ用USB-Cの増設、操作パネルという用途別に6製品を選び分けている。端子と給電の注意は選択に必要な範囲で説明され、結論も本文と一致する。商品事実の妥当性はNOT_EVALUATED。公開可否は別QAの結果を要する。",
+  "quotes": [
+    "HDMIを2基使うならAnker、有線LANにはBelkinやHPが候補。",
+    "必要なのがデータ用USB-C端子の増設だけなら、用途を絞った候補です。",
+    "アプリの起動や操作のショートカットを机上のパネルに置きたい人には、ほかの候補と異なる選択理由になります。"
+  ],
+  "contract_version": "b5d727a0ffb532d6e2e2b5f8828b82c527e1df2ca9bca3805ad6882f6e72f2f4",
+  "article_sha256": "ab39d7b247d5ab8cc92fef78c66165ff1aadc0fcf169b1c523f7147781c41fda",
+  "receipt_issues": []
+}
