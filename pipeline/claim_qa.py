@@ -25,6 +25,10 @@ def validate_receipt(receipt,subject):
     if not str(receipt.get('reason') or '').strip():problems.append('reason absent')
     findings=receipt.get('findings')
     if not isinstance(findings,list):return problems+['findings absent']
+    if not findings:problems.append('empty claim findings')
+    covered={x.get('product_ref') for x in findings if isinstance(x,dict)}
+    expected={p['ref'] for p in subject.get('article',{}).get('products',[]) if isinstance(p,dict)}
+    if receipt.get('verdict')=='PASS' and covered!=expected:problems.append('PASS without all six products assessed')
     all_article=json.dumps(subject['article'],ensure_ascii=False)
     for item in findings:
         if not isinstance(item,dict):problems.append('malformed finding');continue

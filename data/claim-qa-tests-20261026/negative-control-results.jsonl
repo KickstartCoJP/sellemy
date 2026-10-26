@@ -1,0 +1,4 @@
+{"case": "baseline", "expected": "PASS", "actual": "FAIL", "status": "MISMATCH", "reason": "Anker製品の世代差に関する記述と、エレコム製品の端子周辺に必要な空間に関する記述は、対応する製品の提示資料では確認できません。その他の製品固有の主な仕様は、各製品refの資料で確認できます。", "findings": 25}
+{"case": "fabricated_spec", "expected": "FAIL", "actual": "FAIL", "status": "MATCH", "reason": "p1の「500TBの内蔵SSD」は、対応する製品資料に記載がありません。ほかの確認対象の製品固有の主張は、各製品の資料で裏付けられます。販売ページの性能・互換性の表現は、記載された主張として扱い、実測結果とはみなしません。", "findings": 24}
+{"case": "unsupported_claim", "expected": "FAIL", "actual": "FAIL", "status": "MATCH", "reason": "p2の「水深100mで動作する防水仕様」は、対応する製品の提示資料に記載がありません。その他の確認対象となる製品固有の主張は、各製品refの資料で裏付けられます。", "findings": 26}
+{"case": "swapped_evidence", "expected": "FAIL", "actual": "FAIL", "status": "MATCH", "reason": "p1とp2の製品参照に対応する証拠が入れ替わっています。両製品の具体的な記述は、同じproduct_refの証拠で裏付けられません。ほかの製品にも、提示された証拠だけでは確認できない記述があります。", "findings": 24}
