@@ -74,12 +74,12 @@ def submit_postpublish_audit(*, sample: dict, category: str, product_evidence_re
     detail={'next_action':f'CEO review artifact_url={url} 公開後監査。公開・次記事制作は停止しない。 review_points={json.dumps(review_points,ensure_ascii=False,separators=(",",":"))}',
             'slug':slug,'commit':commit,'source_group_sha256':group_sha,
             'article_url':url,'product_evidence_ref':product_evidence_ref,'evidence_sha256':evidence_sha,'html_sha256':article_sha,'product_count':6,
-            'nonblocking_postpublish_audit':True,
+            'nonblocking_postpublish_audit':True,'ceo_check_only':True,'from_role_id':'system',
             'required_actions':['公開済み記事の品質を事後確認'],
             'next_responsibility_role_id':'sellemy-ops'}
     result=act('ai_management_os.actions.task_append',{'task_id':task_id,
         'message_id':'CEO-AUDIT-'+fingerprint,'actor_role_id':'sellemy-ops',
-        'role_id':'os-chief','status':'review_required','detail':detail})
+        'role_id':'sellemy-ops','status':'review_required','detail':detail})
     if result.get('message_id')!='CEO-AUDIT-'+fingerprint:
         raise CEOAuditBridgeError('audit Task/Event readback mismatch')
     return {'required':True,'duplicate':False,'task_id':task_id,'article_url':url,'message_id':result['message_id']}

@@ -21,7 +21,9 @@ def test_audit_creates_separate_task_and_nonblocking_request():
             result=ceo_audit_bridge.submit_postpublish_audit(sample=sample,category='gadget',product_evidence_ref=str(evidence),article_file_path=str(article))
         assert result['required'] and len(events)==3
         assert events[-1][1]['status']=='review_required'
-        assert events[-1][1]['role_id']=='os-chief'
+        assert events[-1][1]['role_id']=='sellemy-ops'
+        assert events[-1][1]['detail']['from_role_id']=='system'
+        assert events[-1][1]['detail']['ceo_check_only'] is True
         assert events[-1][1]['detail']['nonblocking_postpublish_audit'] is True
         assert 'CEO review artifact_url=https://www.sellemy.jp/article/gadget/test-slug.html' in events[-1][1]['detail']['next_action']
         assert events[0][1]['task_id'].startswith('TASK-BU002-POSTPUBLISH-CEO-AUDIT-')

@@ -28,6 +28,7 @@ def test_real_taskfiles_accept_postpublish_audit_and_failed_ten():
    sample={'schema':'sellemy-ceo-sample/v1','slug':'test-article','commit':'sha','group_sha256':'a'*64}
    a=ceo_audit_bridge.submit_postpublish_audit(sample=sample,category='gadget',product_evidence_ref=str(evidence),article_file_path=str(article))
    assert tasks.read(a['task_id'])['latest']['status']=='review_required'
+   assert tasks.read(a['task_id'])['latest']['role_id']=='sellemy-ops'
    b=ceo_audit_bridge.submit_postpublish_audit(sample=sample,category='gadget',product_evidence_ref=str(evidence),article_file_path=str(article))
    assert b['duplicate'] is True
    failed={'schema':'sellemy-failed-10-inspection/v1','status':'REQUIRES_CEO_INSPECTION','slugs':[f'failed-{i}' for i in range(10)]}
