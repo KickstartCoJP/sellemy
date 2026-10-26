@@ -32,3 +32,10 @@ class ClaimCoverageTests(unittest.TestCase):
   from claim_qa import make_receipt
   v={'verdict':'PASS','reason':'all supported','findings':[{'product_ref':f'p{i}','article_quote':f'容量{i}ml','evidence_quote':f'容量{i}ml','verdict':'SUPPORTED'} for i in range(1,7)]}
   self.assertEqual(make_receipt(v,self.subject)['verdict'],'PASS')
+
+class ClaimCrossRefTests(unittest.TestCase):
+ def test_article_quote_must_belong_to_same_product(self):
+  from claim_qa import make_receipt
+  subject={'article':{'products':[{'ref':'p1','description':'容量100ml'},{'ref':'p2','description':'容量200ml'}]},'verified_sources':{'p1':'容量200ml','p2':'容量200ml'},'comparison_axes':[]}
+  v={'verdict':'PASS','reason':'claimed','findings':[{'product_ref':'p1','article_quote':'容量200ml','evidence_quote':'容量200ml','verdict':'SUPPORTED'},{'product_ref':'p2','article_quote':'容量200ml','evidence_quote':'容量200ml','verdict':'SUPPORTED'}]}
+  with self.assertRaisesRegex(ValueError,'same-product'):make_receipt(v,subject)

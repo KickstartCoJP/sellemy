@@ -1,0 +1,4 @@
+{"case": "fully_supported", "expected": "PASS", "actual": "PASS", "correct": true, "findings": 6}
+{"case": "invented_spec", "expected": "FAIL", "actual": "FAIL", "correct": true, "findings": 7}
+{"case": "missing_evidence", "expected": "FAIL", "actual": "FAIL", "correct": true, "findings": 7}
+{"case": "wrong_ref", "expected": "FAIL", "actual": "FAIL", "correct": true, "findings": 6}

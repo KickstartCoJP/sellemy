@@ -29,12 +29,13 @@ def validate_receipt(receipt,subject):
     covered={x.get('product_ref') for x in findings if isinstance(x,dict)}
     expected={p['ref'] for p in subject.get('article',{}).get('products',[]) if isinstance(p,dict)}
     if receipt.get('verdict')=='PASS' and covered!=expected:problems.append('PASS without all six products assessed')
+    article_by_ref={p['ref']:p for p in subject['article'].get('products',[]) if isinstance(p,dict) and p.get('ref')}
     all_article=json.dumps(subject['article'],ensure_ascii=False)
     for item in findings:
         if not isinstance(item,dict):problems.append('malformed finding');continue
         ref=item.get('product_ref');quote=item.get('article_quote');equote=item.get('evidence_quote')
         if ref not in subject['verified_sources']:problems.append('unknown product ref');continue
-        if not isinstance(quote,str) or not quote or quote not in all_article:problems.append('unanchored article claim')
+        if not isinstance(quote,str) or not quote or quote not in json.dumps(article_by_ref.get(ref,{}),ensure_ascii=False):problems.append('unanchored same-product article claim')
         if item.get('verdict') not in ('SUPPORTED','UNSUPPORTED','CONTRADICTED'):problems.append('invalid finding status')
         if item.get('verdict')=='SUPPORTED' and (not equote or equote not in subject['verified_sources'][ref]):problems.append('unanchored source proof')
     if receipt.get('verdict')=='PASS' and any(x.get('verdict')!='SUPPORTED' for x in findings if isinstance(x,dict)):
