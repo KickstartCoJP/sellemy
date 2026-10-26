@@ -104,6 +104,17 @@ def _axis_matches(candidate: dict, axes: list[dict]) -> set[str]:
     return {axis['id'] for axis in axes if any(str(word).lower() in text for word in axis.get('keywords', []))}
 
 
+def identification_priority(candidate: dict) -> int:
+    """Tie-break only; absence never rejects a product."""
+    sources = [s for s in candidate.get('sources') or []
+               if isinstance(s, dict) and s.get('verified') is True]
+    official = any(s.get('source_type') == 'manufacturer_official' for s in sources)
+    # A model identifier must be explicitly supplied by an identified product source.
+    # Do not infer a model from a brand name, product title or ASIN.
+    model = bool(str(candidate.get('model_number') or '').strip()) and bool(sources)
+    return int(model) + int(official)
+
+
 def select_six(candidates: list[dict], topic: dict, feedback: dict, *, pinned: list[dict] | None = None) -> tuple[list[dict], dict]:
     """Select six distinct products, retaining independently accepted members.
 
@@ -148,18 +159,13 @@ def select_six(candidates: list[dict], topic: dict, feedback: dict, *, pinned: l
             relevance = min(1.0, float(candidate.get('discovery_score') or 0) / max(1, len(str(topic.get('query', '')).split())))
             identity = sum(bool(candidate.get(k)) for k in ('asin', 'amazon_title', 'image_url')) / 3
             learning = product_signal(feedback, candidate['asin'])
-            brand_bonus = .12 if candidate.get('brand') and candidate['brand'].lower() not in brands else 0
             coverage_bonus = .18 * len(matches - covered)
             price_balance = .05 if median and candidate.get('observed_price') and ((candidate['observed_price'] <= median) != any(p.get('observed_price', median) <= median for p in selected)) else 0
-            # Prefer comparable products with independent official documentation;
-            # source presence is a ranking signal, not a substitute for QA acceptance.
-            sources = [source for source in candidate.get('sources') or []
-                       if isinstance(source, dict) and source.get('verified') is True]
-            source_bonus = .22 if any(s.get('source_type') == 'manufacturer_official'
-                                          for s in sources) else (.08 if sources else 0)
-            score = relevance * .30 + identity * .25 + learning * .10 + brand_bonus + coverage_bonus + price_balance + source_bonus
-            scored.append((score, candidate['asin'], candidate, matches))
-        score, _asin, choice, matches = max(scored, key=lambda row: (row[0], row[1]))
+            # Official source and model identifiers influence ties only.
+            # Do not count official evidence twice (score and tie-break).
+            score = relevance * .30 + identity * .25 + learning * .10 + coverage_bonus + price_balance
+            scored.append((score, identification_priority(candidate), candidate['asin'], candidate, matches))
+        score, _priority, _asin, choice, matches = max(scored, key=lambda row: (row[0], row[1], row[2]))
         selected.append({**choice, 'selection_score': round(score, 6), 'matched_comparison_axes': sorted(matches)})
         remaining = [row for row in remaining if row['asin'] != choice['asin']]
         if choice.get('brand'):

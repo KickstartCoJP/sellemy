@@ -30,26 +30,42 @@ class _AmazonSearchParser(HTMLParser):
  VOID_TAGS={'area','base','br','col','embed','hr','img','input','link','meta','param','source','track','wbr'}
  def __init__(self):
   super().__init__(convert_charrefs=True)
-  self.depth=0;self.card_depth=None;self.card=None;self.in_h2=False;self.h2_depth=None;self.title_parts=[];self.rows=[]
+  self.depth=0;self.card_depth=None;self.card=None;self.in_h2=False;self.h2_depth=None;self.title_parts=[];self.rows=[];self.in_rating=False;self.in_count=False
  def handle_starttag(self,tag,attrs):
   if tag not in self.VOID_TAGS:self.depth+=1
   a=dict(attrs)
   if tag=='div' and a.get('data-component-type')=='s-search-result' and re.fullmatch(r'[A-Z0-9]{10}',a.get('data-asin','')):
-   self.card_depth=self.depth;self.card={'asin':a['data-asin'],'title':'','image_url':'','price':None}
+   self.card_depth=self.depth;self.card={'asin':a['data-asin'],'title':'','image_url':'','price':None,'rating':None,'review_count':None,'sponsored':False}
   if self.card is not None:
+   label=a.get('aria-label') or ''
+   if re.search(r'(?i)sponsored|スポンサー|スポンサード',label):
+    self.card['sponsored']=True
+   if tag=='span' and ('s-underline-text' in (a.get('class') or '').split() or re.search(r'(?i)customerReviews|acrCustomerReviewText',str(a.get('id','')))):
+    self.in_count=True
+   if tag=='span' and a.get('class') and 'a-icon-alt' in a.get('class','').split():
+    self.in_rating=True
    if tag=='h2' and not self.in_h2:
     self.in_h2=True;self.h2_depth=self.depth;self.title_parts=[]
    if tag=='img' and 's-image' in (a.get('class') or '').split() and not self.card['image_url']:
     self.card['image_url']=(a.get('src') or '').strip()
  def handle_data(self,data):
+  if self.card is not None and re.fullmatch(r'(?i)sponsored|スポンサー|スポンサード',data.strip()):
+   self.card['sponsored']=True
+  if self.card is not None and self.in_count:
+   m=re.fullmatch(r'\s*([0-9][0-9,]*)\s*',data)
+   if m:self.card['review_count']=int(m.group(1).replace(',',''))
+  if self.card is not None and self.in_rating:
+   m=re.search(r'5つ星のうち\s*([0-5](?:[.,][0-9])?)|([0-5](?:[.,][0-9])?)\s*(?:out of 5|つ星のうち)',data,re.I)
+   if m:self.card['rating']=float((m.group(1) or m.group(2)).replace(',','.'))
   if self.card is not None and self.in_h2:
    value=data.strip()
    if value:self.title_parts.append(value)
  def handle_endtag(self,tag):
+  if tag=='span':self.in_rating=False;self.in_count=False
   if self.card is not None and self.in_h2 and tag=='h2' and self.depth==self.h2_depth:
    self.card['title']=' '.join(self.title_parts).strip();self.in_h2=False;self.h2_depth=None
   if self.card is not None and tag=='div' and self.depth==self.card_depth:
-   if self.card['title'] and self.card['image_url']:
+   if self.card['title'] and self.card['image_url'] and not self.card['sponsored']:
     self.card['item_url']=f"https://www.amazon.co.jp/dp/{self.card['asin']}"
     self.rows.append(self.card)
    self.card=None;self.card_depth=None;self.in_h2=False;self.h2_depth=None;self.title_parts=[]

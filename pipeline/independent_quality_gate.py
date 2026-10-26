@@ -1,6 +1,7 @@
 """Fail-closed Product/Editorial/Claim prepublication barrier."""
 from __future__ import annotations
-import json,subprocess,os
+import json,subprocess,os,tempfile
+from pathlib import Path
 from editorial_qa import make_input as editorial_input,review_prompt as editorial_prompt,make_receipt as editorial_receipt,validate_verdict
 from claim_qa import make_input as claim_input,review_prompt as claim_prompt,make_receipt as claim_receipt,validate_receipt
 from comparison_acceptance import product_issues,require_acceptance
@@ -11,15 +12,24 @@ class QualityGateError(ValueError):
         super().__init__(f'{gate}: '+ '; '.join(map(str,self.issues)))
 
 def _judge(prompt):
-    command=[os.environ.get('SELLEMY_EDITORIAL_CLAIM_CODEX','/opt/homebrew/bin/codex'),'exec','--ephemeral','--skip-git-repo-check','--sandbox','read-only','--model',os.environ.get('SELLEMY_EDITORIAL_CLAIM_MODEL','gpt-6-sol'),'-']
-    try:
-        run=subprocess.run(command,input=prompt,text=True,capture_output=True,timeout=210)
-    except (subprocess.TimeoutExpired,OSError) as exc:
-        raise QualityGateError('reviewer_runtime',str(exc)) from exc
-    if run.returncode:raise QualityGateError('reviewer_runtime',run.stderr[-500:] or 'review invocation failed')
-    text=run.stdout
-    try:return json.loads(text[text.index('{'):text.rindex('}')+1])
-    except (ValueError,json.JSONDecodeError) as exc:raise QualityGateError('reviewer_runtime','invalid JSON reply') from exc
+    # Codex stdout can contain progress and multiple JSON objects; only its
+    # documented final-message artifact is authoritative for a QA verdict.
+    with tempfile.TemporaryDirectory(prefix='sellemy-qa-review-') as tmp:
+        output=Path(tmp)/'last-message.txt'
+        command=[os.environ.get('SELLEMY_EDITORIAL_CLAIM_CODEX','/opt/homebrew/bin/codex'),'exec','--ephemeral','--skip-git-repo-check','--sandbox','read-only','--model',os.environ.get('SELLEMY_EDITORIAL_CLAIM_MODEL','gpt-6-sol'),'--output-last-message',str(output),'-']
+        try:
+            run=subprocess.run(command,input=prompt,text=True,capture_output=True,timeout=210)
+        except (subprocess.TimeoutExpired,OSError) as exc:
+            raise QualityGateError('reviewer_runtime',str(exc)) from exc
+        if run.returncode:
+            raise QualityGateError('reviewer_runtime',run.stderr[-500:] or 'review invocation failed')
+        raw=output.read_text() if output.exists() else ''
+        try:
+            value=json.loads(raw.strip())
+            if not isinstance(value,dict):raise ValueError('not an object')
+            return value
+        except (ValueError,json.JSONDecodeError) as exc:
+            raise QualityGateError('reviewer_runtime','invalid final-message JSON reply') from exc
 
 def issue_receipts(payload,evidence,acceptance,judge=None):
     """Never issue a passing certificate from an absent evidence set or model-only prose."""
@@ -35,9 +45,17 @@ def issue_receipts(payload,evidence,acceptance,judge=None):
     if er['verdict']!='PASS':raise QualityGateError('editorial',er.get('reason','FAIL'))
     try:cs=claim_input(payload,evidence)
     except Exception as exc:raise QualityGateError('evidence',str(exc)) from exc
-    try:cr=claim_receipt(judge(claim_prompt(cs)),cs)
-    except QualityGateError:raise
-    except Exception as exc:raise QualityGateError('claim',str(exc)) from exc
+    claim_base_prompt=claim_prompt(cs)
+    for attempt in range(2):
+        try:
+            cr=claim_receipt(judge(claim_base_prompt if attempt==0 else claim_base_prompt +
+                '\nRETRY: The previous receipt contained a quotation absent from the same product entry or its source. '
+                'For every finding copy article_quote VERBATIM from that finding product_ref description, '
+                'and evidence_quote VERBATIM from the identical product_ref evidence. Never paraphrase.'),cs)
+            break
+        except QualityGateError:raise
+        except Exception as exc:
+            if attempt==1:raise QualityGateError('claim',str(exc)) from exc
     if cr['verdict']!='PASS':raise QualityGateError('claim',cr.get('reason','FAIL'))
     return {'editorial':er,'claim':cr}
 

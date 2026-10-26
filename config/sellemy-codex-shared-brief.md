@@ -15,6 +15,7 @@ SellemyのPlanning / Writerを、Evidenceと現行Gateに従って高品質か�
 - P0 436記事Recovery中はResponses APIのみを使用し、Codex / Claude / local fallbackは禁止。API transport/config failureはfail-closed。Solは通常、AstraはEvidenceが足りている文章・意味品質の昇格時だけ使用する。
 
 ## Learned
+- 2026-10実記事A/B：商品説明の同義反復を削ると6商品の説明合計が2038字から951字になり、独立Editorial QAはPASSした。ただし280字/商品というMachine QA下限を満たさない。情報の追加なしに下限まで水増しせず、字数制約と根拠情報量の衝突として切り分ける。
 - 2026-10品質インシデント：6 ASINは6独立商品を意味しない。brand + base model/family等のsource anchorでidentityを確認し、色・数量・bundle・seller・listing wording差だけで別製品扱いしない。
 - Marketplace listingは候補発見には使えるが、性能・互換性・材質・耐久性などdecision-critical claimの自動証拠にはしない。メーカー公式商品ページ・仕様・説明書等を優先し、marketing claimや記載なしを事実へ変換しない。
 - Topic/search intent・比較軸・6商品・本文は同じ商品クラスと購入判断を扱う。周辺品、交換品、別カテゴリ混入はWriterで修辞修正せずProduct/Evidenceへ戻す。

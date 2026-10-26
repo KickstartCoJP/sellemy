@@ -99,11 +99,16 @@ def discover_products(topic: dict, *, cache_only: bool) -> list[dict]:
         title, image = (row.get('title') or '').strip(), (row.get('image_url') or '').strip()
         if not re.fullmatch(r'[A-Z0-9]{10}', asin) or not title or not image or asin in seen:
             continue
+        if row.get('sponsored'):
+            continue
+        rating, count = row.get('rating'), row.get('review_count')
+        if not cache_only and (rating is None or count is None or rating < 4.0 or count < 100):
+            continue
         seen.add(asin)
         candidates.append({
             'asin': asin, 'amazon_title': title, 'brand': (row.get('brand') or '').strip(),
             'image_url': image, 'observed_price': _price(row.get('price')),
-            'discovery_score': row.get('score', 1),
+            'discovery_score': row.get('score', 1), 'rating': rating, 'review_count': count,
         })
     if not cache_only and candidates:
         def verified_source(candidate):

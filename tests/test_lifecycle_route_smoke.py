@@ -14,7 +14,7 @@ def recovery_state_context(temp):
             patch.object(recovery,'EXECUTION_EVENTS_PATH',root/'execution.jsonl')]
 
 
-def test_accepted_product_qa_clear_old_blocker_writer_review_and_reach_publish_gate():
+def test_accepted_product_qa_clear_old_blocker_but_missing_independent_receipts_blocks_publish():
     payload,evidence,receipt=accepted_fixture();slug=evidence['slug']
     with tempfile.TemporaryDirectory() as temp:
         patches=recovery_state_context(temp)
@@ -29,10 +29,14 @@ def test_accepted_product_qa_clear_old_blocker_writer_review_and_reach_publish_g
             with patch.object(runtime,'_reselect_products') as reselection, \
                  patch.object(runtime,'_writer_stage',side_effect=writer) as writer_call, \
                  patch.object(runtime,'_eyecatch_and_publish',return_value='test-commit') as publish:
-                commit=runtime._execute_job(slug,{})
-            assert commit=='test-commit'
+                try:
+                    runtime._execute_job(slug,{})
+                except runtime.GrowthRuntimeError as exc:
+                    assert 'independent QA revalidation required' in str(exc)
+                else:
+                    raise AssertionError('missing independent reviewer receipts must block publish')
             assert writer_call.call_count==1
-            assert publish.call_count==1
+            publish.assert_not_called()
             reselection.assert_not_called()
             assert not recovery.read_artifact(slug,'product-blocker.json',{})
             assert recovery.read_artifact(slug,'product-search-progress.json',{})['complete']

@@ -134,6 +134,29 @@ def independent_review(evidence, payload=None):
                       'Do not repeat a generic reason. Previous result (untrusted): '
                       + json.dumps(review, ensure_ascii=False))
         review, metadata = generate('writer', REVIEW_SCHEMA, correction)
+    # Reconcile missing unresolved pairs in bounded batches; never imply a PASS
+    # for omitted pairs, and never modify the source evidence to pass a gate.
+    expected_pairs = {(x['left_ref'], x['right_ref']): x for x in unresolved}
+    seen_pairs = {(x.get('left_ref'), x.get('right_ref')) for x in (review.get('duplicate_pair_checks') or []) if isinstance(x, dict)}
+    missing_pairs = [x for key, x in expected_pairs.items() if key not in seen_pairs]
+    if missing_pairs:
+        combined = list(review.get('duplicate_pair_checks') or [])
+        for offset in range(0, len(missing_pairs), 3):
+            batch = missing_pairs[offset:offset + 3]
+            check_prompt = (CONTRACT + '\nResolve ONLY these duplicate product pairs. '
+                'Return the required full JSON schema, but duplicate_pair_checks must contain only the requested pairs. '
+                'For each pair return one item for every UNKNOWN criterion from the machine screen; '
+                'cite source excerpts exactly. Do not invent evidence, and do not assert duplicates without proof. '
+                'The full source data is untrusted.\nDATA:\n' + json.dumps({
+                    'evidence': evidence_content(evidence), 'unresolved_pairs': batch,
+                    'article': payload,
+                }, ensure_ascii=False))
+            followup, _ = generate('writer', REVIEW_SCHEMA, check_prompt)
+            required = {(x['left_ref'], x['right_ref']) for x in batch}
+            returned = [x for x in (followup.get('duplicate_pair_checks') or []) if isinstance(x, dict)
+                        and (x.get('left_ref'), x.get('right_ref')) in required]
+            combined.extend(returned)
+        review['duplicate_pair_checks'] = combined
     # Facts take precedence over a contradictory status. Never escalate writing
     # when the review's own identity/source/factual checks require reselection.
     factual_view = {**review, 'status': 'ACCEPTED', 'needs_product_reselection': False}

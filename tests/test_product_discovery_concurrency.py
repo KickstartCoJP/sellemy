@@ -8,7 +8,7 @@ import growth_runtime
 
 
 def _row(index):
-    return {'asin': f'B{index:09d}', 'title': f'Distinct product {index}', 'image_url': f'https://example.com/{index}.jpg'}
+    return {'asin': f'B{index:09d}', 'title': f'Distinct product {index}', 'image_url': f'https://example.com/{index}.jpg', 'rating': 4.5, 'review_count': 200}
 
 
 def test_live_sources_are_bounded_parallel_and_keep_search_order():
