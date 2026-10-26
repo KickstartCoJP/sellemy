@@ -47,7 +47,10 @@ def load_brief_rules(stage: str, *, root: Path | None = None) -> str:
     if not isinstance(rows,dict):raise OwnerLearningError('brief rules malformed')
     selected=rows.get(stage,[])
     if not isinstance(selected,list) or len(selected)>max_rules:raise OwnerLearningError('brief overflow')
-    rules=[]
+    baseline=(doc.get('baseline') or {}).get(stage, [])
+    if not isinstance(baseline,list) or len(baseline)>4 or any(not isinstance(x,str) or not x.strip() or len(x)>250 for x in baseline):
+        raise OwnerLearningError('baseline brief malformed')
+    rules=list(baseline)
     for record in selected:
         item=verify_owner_lesson({'stage':record.get('stage'),'rule_id':record.get('rule_id'),
            'actionable_rule':record.get('rule'),'owner_verdict':record.get('owner_verdict'),

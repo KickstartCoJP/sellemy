@@ -41,6 +41,15 @@ exact evidence and article hashes and contract version. Review, QA and Publish
 require this receipt, including manual and resumed publication. No acceptance,
 blocked acceptance, stale hashes or unavailable review => no publication.
 
+## Recommendation and voice acceptance (Sellemy)
+
+- An article must recommend specific products to specific readers or uses, state which to choose, and explain why using verified facts. Listing differences while leaving the final choice to the reader is a FAIL.
+- No public prose outsourcing the research or decision: "確認してください", "選びましょう", "ご自身で判断", "公式仕様で確認", or equivalent phrasing as a substitute for a recommendation is a FAIL. Evaluate intent in context, not isolated keywords.
+- No internal production or QA trace in public copy: "提示資料", "今回確認した範囲", "実測していない", "根拠不足", "比較できない" as an editorial excuse is a FAIL. Essential missing evidence must return BLOCKED and route to Product/Evidence rather than turn into caveats.
+- Keep copy accessible, concrete, friendly, and natural. Dense terminology such as "互換性", "適合条件", "公称値" and instruction-manual-style disclaimers must not dominate reader-facing text; express necessary distinctions in everyday Japanese without altering verified facts.
+- Necessary safety/use restrictions remain mandatory but must be specific and plainly worded. Never invent compatibility or guarantees to avoid cautious wording.
+- Reviewer must return separate recommendation_conclusion, reader_decision_outsourcing, internal_qa_leak, editorial_voice, and evidence_gap judgments; absent or failing critical judgments do not authorize publication. Rework writing defects in Writer; resolve evidence gaps upstream.
+
 ## Incident-derived unified quality conditions
 
 These conditions apply consistently to Planning, Product/Evidence, Writer, independent Review/QA and Publish. A stage may not reinterpret or weaken them.

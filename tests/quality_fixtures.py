@@ -25,7 +25,7 @@ def review(evidence, *, article=True):
         'status': 'ACCEPTED', 'needs_product_reselection': False,
         'reason': 'Offline mock: distinct source identities, dimensions and use-specific guidance.',
         **{k: True for k in ('distinct_products', 'meaningful_comparison', 'sufficient_evidence')},
-        **{k: article for k in ('claims_grounded', 'buying_guidance', 'complete_comparison')},
+        **{k: article for k in ('claims_grounded', 'buying_guidance', 'complete_comparison', 'recommendation_conclusion', 'reader_decision_outsourcing_absent', 'internal_qa_leak_absent', 'editorial_voice_appropriate')},
         'duplicate_pair_checks': [{
             'left_ref': left['ref'], 'right_ref': right['ref'], 'is_duplicate': False,
             'reason': 'Offline fixture distinct products',

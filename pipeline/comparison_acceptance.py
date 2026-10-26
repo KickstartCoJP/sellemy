@@ -250,7 +250,9 @@ def review_issues(review, evidence, *, article=False):
         issues.append('review lacks two grounded topic axes')
     required = ['distinct_products', 'meaningful_comparison', 'sufficient_evidence']
     if article:
-        required += ['claims_grounded', 'buying_guidance', 'complete_comparison']
+        required += ['claims_grounded', 'buying_guidance', 'complete_comparison',
+                     'recommendation_conclusion', 'reader_decision_outsourcing_absent',
+                     'internal_qa_leak_absent', 'editorial_voice_appropriate']
     if any(review.get(key) is not True for key in required):
         issues.append('independent semantic criteria not satisfied')
     if not str(review.get('reason') or '').strip():

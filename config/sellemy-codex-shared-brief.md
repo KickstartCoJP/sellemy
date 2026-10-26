@@ -9,7 +9,7 @@ SellemyのPlanning / Writerを、Evidenceと現行Gateに従って高品質か�
 - Writer: 渡されたEvidence以外を事実根拠にしない。slug/category/refは変更しない。
 - 6商品を必ず3グループ×2商品へ一意に分割する。比較軸はtopic固有の軸を使う。
 - Amazon listing titleの丸写し、ASIN、内部運用語、固定価格帯構造、根拠のない断定は禁止。
-- Writer本文は自然な日本語で、商品ごとの差を具体化する。scriptによる水増しは禁止。
+- Writer本文は用途ごとの具体的なおすすめと理由を先に示す。選択・重要仕様の調査を読者に丸投げしない。内部QA・資料の不足・過剰な言い訳や堅苦しい専門用語の羅列を本文に出さず、自然な日本語にする。安全上必要な注意は正確に伝える。scriptによる水増しは禁止。
 - 後段Review / Machine QA / Publish Gateは緩和しない。情報不足はfail-closed。
 - Planning / Writerはアイキャッチ生成を担当しない。
 - P0 436記事Recovery中はResponses APIのみを使用し、Codex / Claude / local fallbackは禁止。API transport/config failureはfail-closed。Solは通常、AstraはEvidenceが足りている文章・意味品質の昇格時だけ使用する。

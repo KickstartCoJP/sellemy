@@ -90,7 +90,11 @@ class ContractTests(unittest.TestCase):
                        lambda r: r['products'][0].update(adequate_facts=False),
                        lambda r: r.update(buying_guidance=False),
                        lambda r: r.update(claims_grounded=False),
-                       lambda r: r.update(complete_comparison=False)]:
+                       lambda r: r.update(complete_comparison=False),
+                       lambda r: r.update(recommendation_conclusion=False),
+                       lambda r: r.update(reader_decision_outsourcing_absent=False),
+                       lambda r: r.update(internal_qa_leak_absent=False),
+                       lambda r: r.update(editorial_voice_appropriate=False)]:
             payload, evidence, receipt = accepted_fixture()
             mutate(receipt['review'])
             self.assertTrue(acceptance_issues(payload, evidence, receipt))

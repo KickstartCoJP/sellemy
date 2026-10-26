@@ -47,7 +47,9 @@ REVIEW_SCHEMA = obj({
     'status': {'type': 'string', 'enum': ['ACCEPTED', 'BLOCKED', 'REVISION_REQUIRED']},
     'needs_product_reselection': BOOL, 'reason': STRING,
     **{k: BOOL for k in ('distinct_products', 'meaningful_comparison', 'sufficient_evidence',
-                         'claims_grounded', 'buying_guidance', 'complete_comparison')},
+                         'claims_grounded', 'buying_guidance', 'complete_comparison',
+                         'recommendation_conclusion', 'reader_decision_outsourcing_absent',
+                         'internal_qa_leak_absent', 'editorial_voice_appropriate')},
     'duplicate_pair_checks': {'type': 'array', 'items': obj({
         'left_ref': STRING, 'right_ref': STRING,
         'items': {'type': 'array', 'items': obj({
