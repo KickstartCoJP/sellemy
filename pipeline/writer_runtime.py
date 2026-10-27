@@ -109,6 +109,8 @@ def _command() -> list[str]:
 
 
 def _prompt(topic: dict, evidence: dict, *, previous_payload: dict | None = None, gate_feedback: dict | None = None) -> str:
+    from editorial_plan import build_editorial_plan
+    plan = build_editorial_plan(topic, evidence, str((gate_feedback or {}).get('ceo_rework') or ''))
     prompt = (
         'You are the Writer stage for a Japanese product-comparison publication. Return only structured JSON. '
         'Write all public-facing Japanese prose yourself; scripts may not expand, paraphrase, or pad it. Ground material claims in supplied facts. Keep source uncertainty internal rather than surfacing audit notes to readers. '
@@ -119,6 +121,8 @@ def _prompt(topic: dict, evidence: dict, *, previous_payload: dict | None = None
         'Preserve slug, category, and refs exactly.\n\n'
         f'TOPIC:\n{json.dumps(topic, ensure_ascii=False, sort_keys=True)}\n\n'
         f'EVIDENCE:\n{json.dumps(evidence, ensure_ascii=False, sort_keys=True)}'
+        '\nEDITORIAL_PLAN: Every requirement ID is mandatory; write natural prose, not a checklist.\n'
+        + json.dumps(plan, ensure_ascii=False, sort_keys=True)
     )
     if previous_payload is not None and isinstance(gate_feedback, dict):
         measures = gate_feedback.get('measurements') or {}

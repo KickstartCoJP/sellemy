@@ -564,6 +564,9 @@ def _writer_stage(slug: str, result: dict) -> None:
     write_artifact(slug, 'chat-publish-approval.json', {})
     previous = read_artifact(slug, 'payload.json')
     gate_feedback = read_artifact(slug, 'gate-feedback.json', {})
+    from editorial_plan import build_editorial_plan
+    editorial_plan = build_editorial_plan(topic, evidence, str((gate_feedback or {}).get('ceo_rework') or ''))
+    write_artifact(slug, 'editorial-plan.json', editorial_plan)
     started = time.monotonic()
     metadata: dict = {}
     payload: dict | None = None
@@ -601,7 +604,7 @@ def _writer_stage(slug: str, result: dict) -> None:
             review = local_review
         else:
             try:
-                acceptance = independent_review(evidence, payload, editorial_context={'reader_persona': topic.get('reader_persona'), 'ceo_rework': gate_feedback.get('ceo_rework')})
+                acceptance = independent_review(evidence, payload, editorial_context={'editorial_plan': editorial_plan, 'reader_persona': topic.get('reader_persona'), 'ceo_rework': gate_feedback.get('ceo_rework')})
             except ResponsesError as exc:
                 mark_failure(slug, stage='review', failure_class='runtime_infrastructure',
                              failure_code='INDEPENDENT_REVIEW_UNAVAILABLE', reason=str(exc), role='review')
