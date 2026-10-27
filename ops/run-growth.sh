@@ -80,20 +80,9 @@ else:
 PYSWITCH
 )"
 if [[ "$PUBLISH_ALLOWED" == "1" ]]; then
-# Keep fast recovery, but only for a job eligible NOW. Backoff/HOLD is not
-# pending executable work and must not prevent normal planning admission.
-RECOVERY_DUE="$($PY - <<'PYRECOVERY'
-import sys
-sys.path.insert(0, 'pipeline')
-from growth_recovery import eligible_job
-print('1' if eligible_job() else '0')
-PYRECOVERY
-)"
-if [[ "$RECOVERY_DUE" == "1" ]]; then
-  RECOVERY_RC=0
-  "$PY" pipeline/run_with_timeout.py 900 "$PY" pipeline/growth_runtime.py --publish --recovery-only || RECOVERY_RC=$?
-  exit "$RECOVERY_RC"
-fi
+# Run recovery inside the normal scheduled production cycle. The runtime
+# may skip a deferred Product/Evidence job and select a new topic in the SAME
+# admitted slot. Never terminate the heartbeat in recovery-only mode.
 "$PY" - <<'PYSYNC'
 import sys
 import os

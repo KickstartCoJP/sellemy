@@ -38,10 +38,11 @@ class ScheduledRouteTests(unittest.TestCase):
                         'article_publication_metrics.py'):
             self.assertNotIn(command, script)
 
-    def test_recovery_fast_path_is_explicitly_recovery_only(self):
+    def test_recovery_does_not_starve_scheduled_planning(self):
         script = (ROOT / 'ops' / 'run-growth.sh').read_text(encoding='utf-8')
-        self.assertIn('pipeline/growth_runtime.py --publish --recovery-only', script)
-        self.assertIn('exit "$RECOVERY_RC"', script)
+        self.assertNotIn('pipeline/growth_runtime.py --publish --recovery-only', script)
+        self.assertNotIn('exit "$RECOVERY_RC"', script)
+        self.assertIn('pipeline/growth_runtime.py --publish --scheduled', script)
 
     def test_minute_scheduler_and_algorithmic_24_per_day_cap(self):
         plist = (ROOT / 'ops' / 'com.kickstart.sellemy-growth.plist').read_text(encoding='utf-8')
