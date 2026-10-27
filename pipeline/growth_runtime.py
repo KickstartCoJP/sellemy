@@ -634,7 +634,23 @@ def _writer_stage(slug: str, result: dict) -> None:
             feedback['evaluation_exception'] = qa['evaluation_exception']
         passed = not findings and bool(qa.get('overall_pass'))
         if passed:
+            from editorial_plan_review import independent_plan_review, EditorialPlanError
             from independent_quality_gate import issue_receipts, QualityGateError
+            try:
+                plan_receipt = independent_plan_review(editorial_plan, payload)
+                write_artifact(slug, 'editorial-plan-review.json', plan_receipt)
+            except EditorialPlanError as exc:
+                write_artifact(slug, 'editorial-plan-review.json', {})
+                feedback['editorial_plan_requirements'] = str(exc)
+                save_writer_result(slug, payload=payload, qa={**qa, 'overall_pass': False},
+                    findings=findings+[str(exc)], feedback=feedback, metadata=metadata, passed=False)
+                mark_failure(slug, stage='writer', failure_class='role_quality',
+                    failure_code='EDITORIAL_PLAN_NOT_MET', reason=str(exc), role_return=True, role='writer')
+                raise GrowthRuntimeError(f'editorial plan review failed for {slug}: {exc}') from exc
+            except QualityGateError as exc:
+                mark_failure(slug, stage='review', failure_class='runtime_infrastructure',
+                    failure_code='EDITORIAL_PLAN_REVIEW_UNAVAILABLE', reason=str(exc), role='review')
+                raise GrowthRuntimeError(f'editorial plan reviewer unavailable for {slug}: {exc}') from exc
             try:
                 independent_receipts=issue_receipts(payload,evidence,acceptance)
                 write_artifact(slug,'independent-quality-receipts.json',independent_receipts)
