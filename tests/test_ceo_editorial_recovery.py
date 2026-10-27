@@ -7,11 +7,16 @@ from qa import DESCRIPTION_HARD_MIN, MAIN_RANGE
 import pytest
 
 
+def valid_editorial_evidence():
+    return {'products':[{'ref':f'p{i}','amazon_title':f'Item {i}'} for i in range(1,7)],
+            'comparison_axes':[{'id':'a','label':'A'},{'id':'b','label':'B'}]}
+
+
 def test_ceo_rework_is_final_mandatory_instruction_and_persona_is_transferred():
     topic={'slug':'example','reader_persona':{
         'reader':'mobile photographers','knowledge_level':'expert',
         'purchase_goal':'dual card workflow','editorial_depth':'retain bus standards'}}
-    prompt=_prompt(topic, {'products':[]}, previous_payload={'h1':'old'},
+    prompt=_prompt(topic, valid_editorial_evidence(), previous_payload={'h1':'old'},
         gate_feedback={'ceo_rework':'Remove reader-facing QA disclaimers.'})
     assert 'READER_PERSONA' in prompt
     assert 'mobile photographers' in prompt
@@ -33,7 +38,7 @@ def test_new_planning_requires_reader_persona():
 def test_informative_length_floor_without_old_padding_targets():
     assert DESCRIPTION_HARD_MIN == 160
     assert MAIN_RANGE == (2400, 3400)
-    prompt=_prompt({'slug':'example'}, {'products':[]})
+    prompt=_prompt({'slug':'example'}, valid_editorial_evidence())
     assert 'at least 160 meaningful characters' in prompt
     assert 'without filler' in prompt
 
@@ -50,7 +55,7 @@ def test_writer_stage_scope_excludes_evidence_audit_history():
     assert '## Learned' in writer
     assert '冒頭と結び' in writer or '用途' in writer
     assert 'source anchor' in _stage_brief_text(brief,'planning')
-    prompt=_prompt({'slug':'article'}, {'products':[]})
+    prompt=_prompt({'slug':'article'}, valid_editorial_evidence())
     assert CONTRACT not in prompt
     assert 'Ground material claims in supplied facts' in prompt
 
