@@ -1092,13 +1092,12 @@ def _execute_job(slug: str, result: dict, *, cache_only: bool = False) -> str:
         result['candidate_count'] = len(evidence.get('products', []))
         blocker = read_artifact(slug, 'product-blocker.json', {}) or {}
         if blocker.get('needs_product_reselection'):
-            # A contract-only version change must trigger fresh independent review
-            # of unchanged evidence, rather than an unrelated Amazon reselection loop.
+            # Revalidate all six retained products when the acceptance contract changes.
+            # Evidence drift invalidates old receipts but does not prove product failure.
             from comparison_acceptance import VERSION, digest, evidence_content
             old_acceptance = evidence.get('product_acceptance') or {}
             if (len(evidence.get('products') or []) == 6
-                    and old_acceptance.get('contract_version') != VERSION
-                    and old_acceptance.get('evidence_sha256') == digest(evidence_content(evidence))):
+                    and old_acceptance.get('contract_version') != VERSION):
                 from semantic_review import independent_review
                 fresh = independent_review(evidence)
                 evidence['product_acceptance'] = fresh
@@ -1109,7 +1108,22 @@ def _execute_job(slug: str, result: dict, *, cache_only: bool = False) -> str:
                         'previous_version': old_acceptance.get('contract_version'),
                         'current_version': VERSION, 'result': 'ACCEPTED',
                     })
+                    set_stage(slug, 'WRITER_PENDING', event='EXISTING_PRODUCTS_REVALIDATED')
                     continue
+                issues = product_issues(evidence)
+                review = fresh.get('review') or {}
+                checks = review.get('products') or []
+                write_artifact(slug, 'contract-revalidation.json', {
+                    'previous_version': old_acceptance.get('contract_version'),
+                    'current_version': VERSION, 'result': 'BLOCKED', 'issues': issues,
+                })
+                if len(checks) == 6 and all(
+                        isinstance(c, dict) and c.get('adequate_facts') is True
+                        and c.get('topic_fit') is True for c in checks):
+                    from growth_recovery import hold_product_review_conflict
+                    hold_product_review_conflict(slug, reasons=issues,
+                        pinned_asins=[p['asin'] for p in evidence['products']])
+                    raise GrowthRuntimeError(f'independent review conflict held for {slug}')
             # A newer independently accepted receipt supersedes an older blocker.
             # Never repeat discovery after a verified six-product acceptance.
             if evidence.get('product_acceptance') and not product_issues(evidence):
