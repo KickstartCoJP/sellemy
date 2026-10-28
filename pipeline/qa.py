@@ -123,6 +123,12 @@ def run_qa(html: str, payload: dict, evidence: dict, *, acceptance: dict | None 
 
     results['lead_len'] = len(payload['lead'])
     results['lead_in_range'] = check_range(results['lead_len'], LEAD_RANGE)
+    # Reject exact, identifiable brand names in the introduction; generic product
+    # class words (e.g. electronic writing tablet) are allowed.
+    brands = {str(p.get('brand') or '').strip() for p in evidence.get('products', [])}
+    brands = {b for b in brands if len(b) >= 3 and b not in {'ノーブランド', 'Generic', 'ブランドなし'}}
+    results['lead_brand_hits'] = sorted(b for b in brands if b.casefold() in payload['lead'].casefold())
+    results['lead_brand_free_pass'] = not results['lead_brand_hits']
     results['summary_len'] = len(payload['summary'])
     results['summary_in_range'] = check_range(results['summary_len'], SUMMARY_RANGE)
     results['how_to_choose_len'] = len(payload['how_to_choose'])
@@ -204,7 +210,7 @@ def run_qa(html: str, payload: dict, evidence: dict, *, acceptance: dict | None 
         results['product_image_audit_pass'] = (image_audit or {}).get('status') == 'PASS'
     results['overall_pass'] = all([
         results['semantic_acceptance_pass'],
-        results['lead_in_range'], results['summary_in_range'], results['how_to_choose_in_range'],
+        results['lead_in_range'], results['lead_brand_free_pass'], results['summary_in_range'], results['how_to_choose_in_range'],
         results['main_in_range'], results['description_hard_min_pass'], results['h3_len_pass'],
         results['banned_phrase_pass'], results['description_uniqueness_pass'],
         results['no_repeated_sentences_pass'], results['distinct_openings_endings_pass'],
