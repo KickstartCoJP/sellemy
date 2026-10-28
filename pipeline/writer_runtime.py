@@ -216,7 +216,7 @@ def revise_length_fields(payload: dict, *, rendered_main_len: int) -> tuple[dict
         'Keep verified claims and buying guidance; do not expose audit uncertainty to readers. '
         'Do not invent any new product facts, promises, specifications or prices. '
         'Use concise natural Japanese with these STRICT character targets: '
-        'summary 140-150 characters, how_to_choose 195-215, conclusion 120-135, product descriptions should be concise and substantive without fixed minimum length. '
+        'summary 140-150 characters, how_to_choose 195-215, conclusion 120-135, each of six product descriptions must be 210-245 Japanese characters (QA target 200-400). '
         'No ellipses, fragments or ungrounded filler; shorten only redundant wording. '
         f'Previous RENDERED main body is {rendered_main_len} characters, maximum allowed 3400. '
         'Keep refs unchanged; all other fields stay unchanged and machine QA and independent factual '
