@@ -520,11 +520,6 @@ def _reconcile_already_published_jobs() -> list[str]:
 
 def _writer_stage(slug: str, result: dict) -> None:
     state = load_job(slug)
-    failures = int((state.get('retry_count_by_stage') or {}).get('writer') or 0)
-    from operating_profile import normal_profile
-    quality_ng=int((state.get('quality_ng_by_gate') or {}).get('writer') or 0)
-    if quality_ng >= 3 if normal_profile() else failures >= WRITER_MAX_ATTEMPTS:
-        raise GrowthRuntimeError(f'writer retry exhausted for {slug}')
     topic = read_artifact(slug, 'topic.json')
     evidence = read_artifact(slug, 'evidence.json')
     issues = product_issues(evidence)
@@ -942,8 +937,7 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
             previous_review = read_artifact(slug, latest[0].name, {}) or {}
             if previous_review.get('issues'):
                 from growth_recovery import hold_product_review_conflict
-                hold_product_review_conflict(slug, reasons=previous_review['issues'], pinned_asins=pinned)
-                raise GrowthRuntimeError(f'product reviewer criteria conflict held for {slug}')
+                raise GrowthRuntimeError(f'planning_restart_required for {slug}: incompatible product review')
         if latest and not (read_artifact(slug, 'product-qa-remediation.json', {}) or {}).get('signature'):
             write_artifact(slug, 'product-qa-remediation.json', {
                 'retained_asins': pinned, 'needs_remediation_asins': sorted(known_bad),
@@ -1026,8 +1020,8 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
             save_progress()
             break
         save_progress()
-        request_product_reselection(slug, ['continue candidate search until six products pass independent evidence QA'])
-        raise GrowthRuntimeError(f'product discovery still in progress for {slug}')
+        request_product_reselection(slug, ['candidate pool exhausted; return to Planning'])
+        raise GrowthRuntimeError(f'planning_restart_required for {slug}')
     except Exception as exc:
         from discovery_adapters import AmazonSearchUnavailable
         if isinstance(exc, AmazonSearchUnavailable):
@@ -1284,6 +1278,8 @@ def run(
                 result['status'] = 'skipped_by_controller'
                 return result
 
+        from growth_recovery import recover_legacy_failed_jobs
+        result['recovered_legacy_failed'] = recover_legacy_failed_jobs() if publish else []
         reconciled = _reconcile_already_published_jobs() if publish else []
         if reconciled:
             result['reconciled_already_published'] = reconciled
@@ -1357,6 +1353,22 @@ def run(
         try:
             commit = _execute_job(slug, result, cache_only=cache_only)
         except GrowthRuntimeError as recovery_error:
+            if result.get('recovery_mode') and str(recovery_error).startswith('planning_restart_required'):
+                from growth_recovery import discard
+                discard(slug, 'Automatically returned to Planning after exhausting product options')
+                result['replanned_from'] = slug
+                if recovery_only:
+                    result['status'] = 'planning_restart_queued'
+                    return result
+                result['recovery_mode'] = False
+                slug = _create_fresh_job()
+                commit = _execute_job(slug, result, cache_only=cache_only)
+                if commit is None and result.get('status') == 'awaiting_chatgpt_final_review':
+                    return result
+                result['commit'] = commit
+                result['published'] = True
+                _post_publish(adaptive, result, slug, commit)
+                return result
             # A single unready product-reselection job must not consume the
             # whole admitted publication slot. Its retry/hold state is already
             # durable; continue with an independently selected fresh theme.

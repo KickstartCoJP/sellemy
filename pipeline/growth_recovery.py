@@ -230,6 +230,19 @@ def reopen_product_failed_for_reselection(slug: str) -> dict:
                        detail={'previous_quality_ng': 3, 'policy': state['reselection_batch_policy']})
 
 
+def recover_legacy_failed_jobs() -> list[str]:
+    recovered = []
+    for row in all_jobs():
+        if row.get('status') == 'FAILED' and row.get('current_stage') == 'WRITER_FAILED':
+            row['status'] = 'ACTIVE'
+            row['current_stage'] = 'QA_FAILED'
+            row['next_retry_at'] = _iso()
+            row['quality_ng_by_gate'] = {**(row.get('quality_ng_by_gate') or {}), 'writer': 0}
+            _save_state(row, event='LEGACY_WRITER_FAILURE_RESUMED')
+            recovered.append(row['slug'])
+    return recovered
+
+
 def eligible_job(*, now: datetime | None = None) -> dict | None:
     current = now or utcnow()
     eligible = []
@@ -354,44 +367,15 @@ def mark_failure(slug: str, *, stage: str, failure_class: str, failure_code: str
                         previous+=1
         ng[stage]=previous+1
         state['quality_ng_by_gate']=ng
-        if ng[stage]>=3 and stage == 'eyecatch':
-            state['status'] = 'ACTIVE'
-            state['current_stage'] = 'OWNER_EYECATCH_PENDING'
-            state['next_retry_at'] = None
-            state['last_failure_code'] = failure_code
-            state['last_failure_reason'] = reason[:2000]
-            write_artifact(slug, 'owner-quality-case.json', {
-                'schema': 'sellemy-owner-quality-case/v1', 'slug': slug,
-                'stage': stage, 'ng_count': ng[stage], 'failure_code': failure_code,
-                'case_state': 'OWNER_IMAGE_REQUESTED',
-            })
-            return _save_state(state, event='EYECATCH_OWNER_DELEGATED')
-        if ng[stage]>=3 and stage != 'product':
-            state['status']='FAILED'
-            state['current_stage']=stage.upper()+'_FAILED'
-            state['next_retry_at']=None
-            state['last_failure_class']=failure_class
-            state['last_failure_code']=failure_code
-            state['last_failure_reason']=reason[:2000]
-            state['operating_profile']='normal'
-            receipt=_save_state(state,event='QUALITY_GATE_THREE_NG',detail={'stage':stage,'ng_count':ng[stage]})
-            recent=sorted((x for x in all_jobs() if x.get('operating_profile')=='normal'
-                           and x.get('status') in {'PUBLISHED','FAILED','DISCARDED','RETIRED'}),
-                          key=lambda x:(x.get('updated_at') or '',x.get('slug') or ''))
-            if len(recent)>=10 and all(x.get('status')=='FAILED' for x in recent[-10:]) and (len(recent)==10 or recent[-11].get('status')!='FAILED'):
-                if recent[-1].get('slug') == slug:
-                    write_artifact(slug,'ceo-inspection-required.json',{
-                        'schema':'sellemy-failed-10-inspection/v1',
-                        'status':'REQUIRES_CEO_INSPECTION',
-                        'reason':'10 consecutive normal production turns FAILED',
-                        'slugs':[x['slug'] for x in recent[-10:]],
-                        'latest_failed_at':receipt.get('updated_at'),
-                        'publication_blocked_by_this_receipt':False})
-            write_artifact(slug,'owner-quality-case.json',{
-                'schema':'sellemy-owner-quality-case/v1','slug':slug,
-                'stage':stage,'ng_count':ng[stage],'failure_code':failure_code,
-                'case_state':'AWAITING_OWNER_ANALYSIS','job_state_revision':receipt.get('updated_at')})
-            return receipt
+        state['consecutive_quality_failures'] = int(state.get('consecutive_quality_failures') or 0) + 1
+        count = state['consecutive_quality_failures']
+        if count >= 10 and count % 10 == 0:
+            write_artifact(slug, 'ceo-inspection-required.json', {
+                'schema':'sellemy-failed-10-inspection/v1',
+                'status':'REQUIRES_CEO_INSPECTION',
+                'reason':'10 consecutive quality failures', 'slugs':[slug],
+                'failure_count':count,'latest_failed_at':_iso(),
+                'publication_blocked_by_this_receipt':False})
     state['last_failure_class'] = failure_class
     state['last_failure_code'] = failure_code
     state['last_failure_reason'] = reason[:2000]
@@ -407,11 +391,6 @@ def mark_failure(slug: str, *, stage: str, failure_class: str, failure_code: str
 
     if stage == 'writer':
         state['current_stage'] = 'QA_FAILED'
-        if (not normal) and (attempt >= WRITER_MAX_ATTEMPTS or failure_code == 'ASTRA_QUALITY_EXHAUSTED'):
-            state['status'] = 'FAILED'
-            state['current_stage'] = 'WRITER_FAILED'
-            state['next_retry_at'] = None
-            return _save_state(state, event='WRITER_RETRY_EXHAUSTED', detail={'attempt': attempt})
     elif stage == 'eyecatch':
         state['current_stage'] = 'EYECATCH_PENDING'
     elif stage == 'publish':
