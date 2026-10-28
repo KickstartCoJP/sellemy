@@ -107,6 +107,22 @@ if decision.get('allowed'):
 PYADMIT
 )"
 if [[ "$SELLEMY_PREFLIGHT_ALLOWED" != "1" ]]; then
+  # A publication slot controls new topic admission, not remediation of existing jobs.
+  # Run only an already due recovery job; never create a new topic off-slot.
+  if [[ "$SELLEMY_PREFLIGHT_REASON" == "slot_not_enabled_for_target" ]]; then
+    RECOVERY_DUE="$($PY - <<'PYRECOVERY'
+import sys
+sys.path.insert(0, 'pipeline')
+from growth_recovery import eligible_job
+print('1' if eligible_job() else '0')
+PYRECOVERY
+)"
+    if [[ "$RECOVERY_DUE" == "1" ]]; then
+      echo "$(date -Iseconds) growth recovering due job off-slot"
+      "$PY" pipeline/run_with_timeout.py 900 "$PY" pipeline/growth_runtime.py --publish --recovery-only
+      exit $?
+    fi
+  fi
   echo "$(date -Iseconds) growth preflight skipped: $SELLEMY_PREFLIGHT_REASON"
   exit 0
 fi

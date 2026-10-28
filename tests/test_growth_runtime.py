@@ -40,9 +40,13 @@ class ScheduledRouteTests(unittest.TestCase):
 
     def test_recovery_does_not_starve_scheduled_planning(self):
         script = (ROOT / 'ops' / 'run-growth.sh').read_text(encoding='utf-8')
-        self.assertNotIn('pipeline/growth_runtime.py --publish --recovery-only', script)
-        self.assertNotIn('exit "$RECOVERY_RC"', script)
+        self.assertIn('if [[ "$SELLEMY_PREFLIGHT_ALLOWED" != "1" ]]', script)
+        self.assertIn('if [[ "$SELLEMY_PREFLIGHT_REASON" == "slot_not_enabled_for_target" ]]', script)
+        self.assertIn('if [[ "$RECOVERY_DUE" == "1" ]]', script)
+        self.assertIn('pipeline/growth_runtime.py --publish --recovery-only', script)
         self.assertIn('pipeline/growth_runtime.py --publish --scheduled', script)
+        self.assertLess(script.index('if [[ "$SELLEMY_PREFLIGHT_ALLOWED" != "1" ]]'), script.index('pipeline/growth_runtime.py --publish --recovery-only'))
+        self.assertLess(script.index('pipeline/growth_runtime.py --publish --recovery-only'), script.index('pipeline/growth_runtime.py --publish --scheduled'))
 
     def test_minute_scheduler_and_algorithmic_24_per_day_cap(self):
         plist = (ROOT / 'ops' / 'com.kickstart.sellemy-growth.plist').read_text(encoding='utf-8')
