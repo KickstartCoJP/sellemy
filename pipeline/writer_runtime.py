@@ -112,17 +112,17 @@ def _prompt(topic: dict, evidence: dict, *, previous_payload: dict | None = None
     from editorial_plan import build_editorial_plan
     plan = build_editorial_plan(topic, evidence, str((gate_feedback or {}).get('ceo_rework') or ''))
     prompt = (
-        'You are the Writer stage for a Japanese product-comparison publication. Return only structured JSON. '
-        'Write all public-facing Japanese prose yourself; scripts may not expand, paraphrase, or pad it. Ground material claims in supplied facts. Keep source uncertainty internal rather than surfacing audit notes to readers. '
-        'Do not state prices, internal workflow terms, ASINs, or affiliate operations. Do not copy raw listing titles verbatim. Neither lead nor summary (both displayed before comparisons) may name any specific product or brand. Introduce reader needs, scenarios and comparison criteria in both. Only the product cassettes may contain specific product names, product-by-product verification, citations or specification evidence. Lead, summary, comparison-group prose, buying guide and conclusion must avoid product names, brand names, verification narratives and unnecessary technical proof. Conclude with a short natural reader-focused closing, not a repeat of product recommendations. '
-        'Design exactly 3 semantic comparison groups from the topic-specific comparison_axes, with exactly 2 products in each group; groups must partition all six refs exactly once. '
-        'Price may be discussed only as a non-specific constraint, never as a fixed low/mid/high article structure. Make each recommendation concrete about who should choose it and why, based on actual differences. If the six products do not represent one coherent product class or Evidence cannot support the promised comparison, return BLOCKED instead of writing cautious filler. '
-        'Each of the SIX product descriptions MUST contain at least 160 meaningful characters of Japanese prose, with distinct source-backed purchase reasons, fit, and comparisons; write 190-240 meaningful characters per item to prevent underlength. Explain two or more user situations in how_to_choose. Target lead 180-230, summary 130-170, how_to_choose 190-270, h3 6-45, rendered main 2600-3200 without filler, repeated sentences, or ungrounded padding. The conclusion must NEVER name specific products or brands, repeat specifications or explain how products were verified. Keep it brief and reader-facing. The six product cassettes must contain the grounded, explicit product recommendations; the rest of the article should be editorial rather than technical justification. Check all eight E01-E08 before returning JSON. '
-        'Preserve slug, category, and refs exactly.\n\n'
+        'You are an editor for Sellemy, a Japanese shopping magazine. Return structured JSON only. '
+        'Write concise, natural, enjoyable prose that helps readers choose; do not sound like an audit, manual, or specifications report. '
+        'Use supplied evidence for accuracy without describing the verification process. Never invent facts or personal experience. '
+        'No specific product names, brands, or product-by-product proofs outside the six product cassettes. '
+        'Lead and summary introduce the reader situation. Comparison introductions and buying guide describe practical choices. '
+        'The conclusion is a short, name-free closing, not a repeated comparison. '
+        'Use exactly six distinct products organized into three pairs. Explain practical reasons to choose each product in its own cassette. '
+        'Do not write filler, boilerplate cautions, internal QA language or unnecessary specifications. Preserve slug, category and refs.\n\n'
         f'TOPIC:\n{json.dumps(topic, ensure_ascii=False, sort_keys=True)}\n\n'
         f'EVIDENCE:\n{json.dumps(evidence, ensure_ascii=False, sort_keys=True)}'
-        '\nEDITORIAL_PLAN: Every requirement ID is mandatory; write natural prose, not a checklist.\n'
-        + json.dumps(plan, ensure_ascii=False, sort_keys=True)
+        '\nEDITORIAL_PLAN:\n' + json.dumps(plan, ensure_ascii=False, sort_keys=True)
     )
     if previous_payload is not None and isinstance(gate_feedback, dict):
         measures = gate_feedback.get('measurements') or {}
