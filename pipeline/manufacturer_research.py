@@ -14,7 +14,7 @@ def research_selected(products, *, cache_only=False, prefer_official=False):
         return products
     # Marketplace evidence is valid, but does not suppress the separate
     # manufacturer-source lookup. Preserve both kinds of evidence.
-    needs = [p for p in products[:18] if not any(
+    needs = [p for p in products[:20] if not any(
         s.get('verified') is True and str(s.get('excerpt') or '').strip()
         and s.get('source_type') == 'manufacturer_official'
         for s in p.get('sources', []) if isinstance(s, dict))]
@@ -53,7 +53,7 @@ def research_selected(products, *, cache_only=False, prefer_official=False):
         rows = json.loads(raw).get('items', [])
         if not isinstance(rows, list):
             return products
-        candidates = {str(row.get('asin')): row.get('url') for row in rows[:18] if isinstance(row, dict)}
+        candidates = {str(row.get('asin')): row.get('url') for row in rows[:20] if isinstance(row, dict)}
         if usage:
             from pathlib import Path
             from codex_provider import _append_usage
