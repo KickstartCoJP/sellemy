@@ -92,9 +92,9 @@ def product_search_query(topic: dict) -> str:
 
 def discover_products(topic: dict, *, cache_only: bool) -> list[dict]:
     adapter = AutositeDiscoveryAdapter()
-    rows = adapter.search_cache(topic['query'], limit=30) if cache_only else adapter.search_amazon_live(product_search_query(topic), limit=18)
+    rows = adapter.search_cache(topic['query'], limit=30) if cache_only else adapter.search_amazon_live(product_search_query(topic), limit=20)
     candidates, seen = [], set()
-    for row in rows[:18] if not cache_only else rows:
+    for row in rows[:20] if not cache_only else rows:
         asin = (row.get('asin') or '').upper()
         title, image = (row.get('title') or '').strip(), (row.get('image_url') or '').strip()
         if not re.fullmatch(r'[A-Z0-9]{10}', asin) or not title or not image or asin in seen:
