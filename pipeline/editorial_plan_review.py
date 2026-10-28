@@ -22,7 +22,7 @@ def validate_receipt(plan, payload, receipt):
     errors = []
     for item in items:
         if item.get('verdict') != 'PASS':
-            errors.append(str(item.get('id')) + ': not passed')
+            errors.append(str(item.get('id')) + ': not passed: ' + str(item.get('reason') or 'reviewer supplied no reason')[:450])
         quote = item.get('article_quote')
         if not isinstance(quote,str) or len(quote.strip()) < 3 or quote not in article:
             errors.append(str(item.get('id')) + ': missing article quote')
