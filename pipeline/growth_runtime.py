@@ -149,24 +149,33 @@ def collect_unique_products(topic: dict, *, cache_only: bool, existing: list[dic
                             target_new: int = 20, used_queries: set[str] | None = None,
                             max_searches: int = 3) -> tuple[list[dict], dict]:
     prior, _ = dedupe_content_products(list(existing or []))
-    known = {p['asin'] for p in prior}
+    kept = list(prior)
     additions, attempts = [], []
-    for query in _product_queries(topic):
+    axes = topic['comparison_axes']
+    for axis, query in zip(axes, _product_queries(topic)):
+        accepted = []
         try:
             candidates = discover_products({**topic, 'query': query}, cache_only=cache_only)
-            count = 0
             for candidate in candidates:
-                if candidate['asin'] in known:
+                if len(accepted) >= 10:
+                    break
+                # Deduplicate both inside the axis and across all three axes.
+                distinct, _ = dedupe_content_products([*kept, candidate])
+                if len(distinct) == len(kept):
                     continue
-                known.add(candidate['asin'])
-                additions.append(candidate)
-                count += 1
-            attempts.append({'query': query, 'found': len(candidates), 'new': count})
+                candidate = {**candidate, 'discovery_axis_id': axis['id']}
+                accepted.append(candidate)
+                kept.append(candidate)
+            additions.extend(accepted)
+            attempts.append({'axis_id': axis['id'], 'query': query,
+                             'found': len(candidates), 'new': len(accepted),
+                             'complete': len(accepted) >= 2})
         except Exception as exc:
-            attempts.append({'query': query, 'found': 0, 'new': 0,
+            attempts.append({'axis_id': axis['id'], 'query': query, 'found': 0,
+                             'new': 0, 'complete': False,
                              'error': f'{type(exc).__name__}: {exc}'})
     return additions, {'added_unique': len(additions),
-                       'complete': len(prior) + len(additions) >= target_new,
+                       'complete': len(attempts) == 3 and all(x['complete'] for x in attempts),
                        'attempts': attempts}
 
 
@@ -211,7 +220,7 @@ def select_viable_topic(
             except Exception as exc:
                 products = []
                 probes.append({'round': round_index + 1, 'slug': topic['slug'], 'candidate_count': 0, 'error': f'{type(exc).__name__}: {exc}'})
-            if len(products) >= 20:
+            if len(products) >= 6 and discovery_trace['complete']:
                 try:
                     if _researchable_candidates(products, cache_only=cache_only):
                         products = research_selected(products)

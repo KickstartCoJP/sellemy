@@ -120,7 +120,7 @@ def identification_priority(candidate: dict) -> int:
 
 
 def select_six(candidates: list[dict], topic: dict, feedback: dict, *, pinned: list[dict] | None = None) -> tuple[list[dict], dict]:
-    """Select six by AI from twenty independently identifiable, evidenced products."""
+    """Select two products from each of three axes, from up to thirty evidenced candidates."""
     from comparison_acceptance import source_text
     pinned = list(pinned or [])
     distinct, removed = dedupe_content_products([*pinned, *candidates])
@@ -132,23 +132,27 @@ def select_six(candidates: list[dict], topic: dict, feedback: dict, *, pinned: l
             str(word).lower() in corpus for axis in axes for word in axis.get('keywords', [])))
 
     pool = [p for p in distinct if eligible(p)]
-    if len(pool) < 20:
-        raise ProductSelectionError(f'needs_product_reselection: {len(pool)} eligible candidates; require 20')
+    if len(pool) < 6:
+        raise ProductSelectionError(f'needs_product_reselection: {len(pool)} eligible candidates; require 6')
+    for axis in axes:
+        if sum(p.get('discovery_axis_id') == axis['id'] for p in pool) < 2:
+            raise ProductSelectionError(f'needs_product_reselection: fewer than two eligible products in axis {axis["id"]}')
     pinned_asins = {p['asin'] for p in pinned}
     if not pinned_asins.issubset({p['asin'] for p in pool}):
         raise ProductSelectionError('retained product lacks verified topic-axis evidence')
-    pool = [*pinned, *[p for p in pool if p['asin'] not in pinned_asins]][:20]
+    pool = [*pinned, *[p for p in pool if p['asin'] not in pinned_asins]][:30]
     if len(pinned_asins) > 6:
         raise ProductSelectionError('more than six pinned products')
     items = [{
         'asin': p['asin'], 'title': p.get('amazon_title'), 'brand': p.get('brand'),
         'price': p.get('observed_price'), 'verified_facts': _text(p)[:2400],
         'covered_axes': sorted(_axis_matches(p, axes)),
+        'discovery_axis_id': p.get('discovery_axis_id'),
     } for p in pool]
-    prompt = ("""あなたはSellemyの商品選定担当です。モノとの出会いを大切にし、20商品から記事に掲載する異なる6商品を選んでください。
+    prompt = ("""あなたはSellemyの商品選定担当です。モノとの出会いを大切にし、最大30商品から記事に掲載する異なる6商品を選んでください。
 検索順位や形式的なスコアで決めず、読者の購入目的、商品それぞれの特徴・用途・使用場面、選択肢としての違いを根拠情報から判断してください。
 確認できない事実や使用経験を作らないでください。同一商品の色違い、パッケージ違い、実質的な重複を選ばないでください。
-retained_asinsに記載した独立審査済みの商品は必ず維持してください。
+各企画軸（discovery_axis_id）から必ず2商品ずつ選んでください。retained_asinsに記載した独立審査済みの商品は必ず維持してください。
 出力はJSONのみ。形式は {"selected_asins":["ASIN",...]} とし、入力候補に含まれる相異なるASINをちょうど6件指定してください。
 """+json.dumps({'topic': {k:topic.get(k) for k in ('title','query','intent_key','reader_persona','comparison_axes')},
                    'retained_asins': sorted(pinned_asins), 'candidates':items}, ensure_ascii=False))
@@ -188,11 +192,13 @@ retained_asinsに記載した独立審査済みの商品は必ず維持してく
             or not pinned_asins.issubset(set(selected_asins))):
         raise ProductSelectionError('AI selection returned invalid six ASINs or omitted retained products')
     selected = [by_asin[asin] for asin in selected_asins]
+    if any(sum(p.get('discovery_axis_id') == axis['id'] for p in selected) != 2 for axis in axes):
+        raise ProductSelectionError('AI selection must contain exactly two products per axis')
     covered = set().union(*(_axis_matches(p, axes) for p in selected))
     if len(covered) < 2:
         raise ProductSelectionError('AI selected six lack two grounded topic axes')
     return selected, {
-        'method': 'ai_selection_from_20', 'candidate_count': len(pool),
+        'method': 'ai_selection_three_axes_two_each', 'candidate_count': len(pool),
         'comparison_axes_covered': sorted(covered),
         'brand_count': len({str(p.get('brand') or '').lower() for p in selected if p.get('brand')}),
         'content_duplicates_removed': removed,
