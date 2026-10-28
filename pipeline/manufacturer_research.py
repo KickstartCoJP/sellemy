@@ -20,6 +20,8 @@ def research_selected(products, *, cache_only=False, prefer_official=False):
         for s in p.get('sources', []) if isinstance(s, dict))]
     if not needs:
         return products
+    from api_role_binding import require_codex_settings
+    model, effort = require_codex_settings('bu-codex-sellemy-planning', 'planning')
     command = shlex.split(os.environ.get('SELLEMY_WRITER_PRIMARY_COMMAND', '/opt/homebrew/bin/codex'))
     prompt = ('Search the web for the product manufacturer’s own product detail page for each item. '
               'Return ONLY JSON {"items":[{"asin":"...","url":"https://..."}]} with at most one URL per ASIN. '
@@ -30,7 +32,7 @@ def research_selected(products, *, cache_only=False, prefer_official=False):
     try:
         result = subprocess.run([*command, '--search', 'exec', '--ephemeral', '--json',
                                  '--skip-git-repo-check', '--sandbox', 'read-only',
-                                 '--model', 'gpt-6-sol', '-'], input=prompt, text=True,
+                                 '--model', model, '--config', f'model_reasoning_effort={effort}', '-'], input=prompt, text=True,
                                 capture_output=True, timeout=int(os.environ.get("SELLEMY_OFFICIAL_SEARCH_TIMEOUT_SECONDS", "35")))
         if result.returncode:
             return products
@@ -58,7 +60,7 @@ def research_selected(products, *, cache_only=False, prefer_official=False):
             from pathlib import Path
             from codex_provider import _append_usage
             _append_usage(Path(__file__).resolve().parents[1], 'bu-codex-sellemy-writer',
-                          stage='source_research', model='gpt-6-sol', session_id='',
+                          stage='source_research', model=model, session_id='',
                           session_turn=1, usage=usage)
     except (OSError, subprocess.TimeoutExpired, ValueError, TypeError):
         return products

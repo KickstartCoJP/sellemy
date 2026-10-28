@@ -103,7 +103,11 @@ def _planning_provider(name: str) -> tuple[str, list[str], str, bool]:
     else:
         command = []
     default_model = os.environ.get('SELLEMY_PLANNING_MODEL', 'gpt-6-sol') if name == 'primary' else ''
-    model = os.environ.get(f'SELLEMY_PLANNING_{upper}_MODEL', default_model).strip()
+    if name == 'primary' and kind == 'codex':
+        from api_role_binding import require_codex_settings
+        model, _effort = require_codex_settings('bu-codex-sellemy-planning', 'planning')
+    else:
+        model = os.environ.get(f'SELLEMY_PLANNING_{upper}_MODEL', default_model).strip()
     certified = name == 'primary' or os.environ.get('SELLEMY_PLANNING_SECONDARY_CERTIFIED', '').lower() in ('1', 'true', 'yes')
     return kind, command, model, certified
 

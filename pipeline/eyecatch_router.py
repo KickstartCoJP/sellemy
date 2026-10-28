@@ -132,6 +132,8 @@ def _stamp_receipt(slug: str, receipt: dict, routing: dict) -> dict:
 
 
 def _generate_api(*, slug: str, payload: dict, evidence: dict, config: dict) -> dict:
+    from api_role_binding import require_codex_route
+    require_codex_route('bu-codex-sellemy-designer', 'eyecatch')
     if not _api_available():
         raise EyecatchGenerationError('Sellemy OpenAI API key unavailable')
     generator = EyecatchGenerator(

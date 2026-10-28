@@ -100,11 +100,9 @@ def _rollout_has_imagegen(session_id: str | None, slug: str) -> bool:
     return bool(active and generated)
 
 def _model() -> str:
-    return (
-        os.environ.get('SELLEMY_EYECATCH_CODEX_MODEL', '').strip()
-        or os.environ.get('SELLEMY_WRITER_PRIMARY_MODEL', '').strip()
-        or 'gpt-6-astra'
-    )
+    from api_role_binding import require_codex_settings
+    model, _effort = require_codex_settings('bu-codex-sellemy-designer', 'eyecatch')
+    return model
 
 
 def _prompt(*, slug: str, title: str, category: str, evidence: dict, payload: dict, output: Path) -> str:

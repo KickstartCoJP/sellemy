@@ -152,12 +152,14 @@ retained_asinsに記載した独立審査済みの商品は必ず維持してく
 出力はJSONのみ。形式は {"selected_asins":["ASIN",...]} とし、入力候補に含まれる相異なるASINをちょうど6件指定してください。
 """+json.dumps({'topic': {k:topic.get(k) for k in ('title','query','intent_key','reader_persona','comparison_axes')},
                    'retained_asins': sorted(pinned_asins), 'candidates':items}, ensure_ascii=False))
+    from api_role_binding import require_codex_settings
+    model, effort = require_codex_settings('bu-codex-sellemy-planning', 'planning')
     command = shlex.split(os.environ.get('SELLEMY_PRODUCT_SELECTOR_COMMAND',
                                           os.environ.get('SELLEMY_PLANNING_COMMAND', '/opt/homebrew/bin/codex')))
     try:
         result = subprocess.run([*command, 'exec', '--ephemeral', '--json',
                                  '--skip-git-repo-check', '--sandbox', 'read-only',
-                                 '--model', os.environ.get('SELLEMY_PRODUCT_SELECTOR_MODEL', 'gpt-6-sol'), '-'],
+                                 '--model', model, '--config', f'model_reasoning_effort={effort}', '-'],
                                 input=prompt, text=True, capture_output=True,
                                 timeout=int(os.environ.get('SELLEMY_PRODUCT_SELECTOR_TIMEOUT_SECONDS', '300')))
         if result.returncode:

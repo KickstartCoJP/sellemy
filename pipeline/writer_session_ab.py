@@ -20,7 +20,8 @@ OUT_ROOT = Path.home() / 'Library/Application Support/Sellemy/writer-session-ab'
 
 def _fresh(topic: dict, evidence: dict, previous: dict | None, feedback: dict | None) -> tuple[dict, dict]:
     command = os.environ.get('SELLEMY_WRITER_AB_CODEX_COMMAND', '/opt/homebrew/bin/codex')
-    model = os.environ.get('SELLEMY_WRITER_AB_MODEL', 'gpt-6-astra')
+    from api_role_binding import require_codex_settings
+    model, effort = require_codex_settings('bu-codex-sellemy-writer', 'writer')
     schema = _strict_schema(WRITER_JSON_SCHEMA)
     base = _prompt(topic, evidence, previous_payload=previous, gate_feedback=feedback)
     canon = ROOT / 'config' / 'sellemy-codex-canon-bootstrap.md'
@@ -33,7 +34,7 @@ def _fresh(topic: dict, evidence: dict, previous: dict | None, feedback: dict | 
         tmp = Path(tmp); schema_path = tmp / 'schema.json'; output = tmp / 'response.json'
         schema_path.write_text(json.dumps(schema, ensure_ascii=False), encoding='utf-8')
         args = [command, 'exec', '--ephemeral', '--json', '--sandbox', 'read-only', '--skip-git-repo-check',
-                '--cd', str(ROOT), '--model', model, '--output-schema', str(schema_path),
+                '--cd', str(ROOT), '--model', model, '--config', f'model_reasoning_effort={effort}', '--output-schema', str(schema_path),
                 '--output-last-message', str(output), '-']
         started = time.monotonic()
         completed = subprocess.run(args, input=prompt, text=True, capture_output=True, timeout=900, check=False)

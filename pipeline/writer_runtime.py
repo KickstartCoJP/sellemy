@@ -94,7 +94,11 @@ def _provider(name: str) -> WriterProvider:
         command = (executable,) if executable else ()
     else:
         command = ()
-    model = os.environ.get(f'SELLEMY_WRITER_{upper}_MODEL', 'gpt-6-sol' if name == 'primary' else '').strip()
+    if name == 'primary':
+        from api_role_binding import require_codex_settings
+        model, _effort = require_codex_settings('bu-codex-sellemy-writer', 'writer')
+    else:
+        model = os.environ.get(f'SELLEMY_WRITER_{upper}_MODEL', '').strip()
     certified = name == 'primary' or os.environ.get('SELLEMY_WRITER_SECONDARY_CERTIFIED', '').lower() in ('1', 'true', 'yes')
     kind = os.environ.get(f'SELLEMY_WRITER_{upper}_KIND', 'codex' if name == 'primary' else 'claude').strip().lower()
     return WriterProvider(name=name, command=command, model=model, certified=certified, kind=kind)
@@ -191,7 +195,8 @@ def revise_length_fields(payload: dict, *, rendered_main_len: int) -> tuple[dict
     """
     require_local_provider_allowed('codex')
     command = tuple(shlex.split(os.environ.get('SELLEMY_WRITER_PRIMARY_COMMAND', '/opt/homebrew/bin/codex')))
-    model = os.environ.get('SELLEMY_WRITER_PRIMARY_MODEL', 'gpt-6-sol')
+    from api_role_binding import require_codex_settings
+    model, _effort = require_codex_settings('bu-codex-sellemy-writer', 'writer')
     if not command:
         raise WriterInvocationError('Codex Writer command missing for editorial revision', availability=True)
     prompt = (

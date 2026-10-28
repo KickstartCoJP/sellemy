@@ -23,7 +23,8 @@ def generate(stage: str, schema: dict, prompt: str) -> tuple[dict, dict]:
     if stage != 'writer':
         raise ResponsesError('Unsupported semantic review stage', kind='config')
     require_local_provider_allowed('codex')
-    model = os.environ.get('SELLEMY_REVIEW_CODEX_MODEL', '').strip() or 'gpt-6-sol'
+    from api_role_binding import require_codex_settings
+    model, _effort = require_codex_settings('bu-codex-sellemy-reviewer', 'independent_review')
     command = shlex.split(os.environ.get('SELLEMY_WRITER_PRIMARY_COMMAND', '/opt/homebrew/bin/codex'))
     if not command:
         raise ResponsesError('Independent review Codex command missing', kind='config')
