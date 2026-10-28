@@ -34,8 +34,9 @@ def build_editorial_plan(topic, evidence, ceo_rework=''):
         'reader':topic.get('reader_persona') or {},
         'search_intent':topic.get('search_intent') or '',
         'comparison_axes':[{'id':a['id'], 'label':a.get('label','')} for a in axes],
+        'selected_axis_groups':(evidence.get('selection') or {}).get('axes') or [],
         'products':[{'ref':p['ref'], 'name':p.get('amazon_title') or p['ref'],
-                     'supported_axes':p.get('matched_comparison_axes') or []} for p in products],
+                     'supported_axes':p.get('matched_comparison_axes') or [], 'discovery_axis_id':p.get('discovery_axis_id'), 'selection_reason':p.get('selection_reason') or ''} for p in products],
         'requirements':requirements,
         'prohibitions':['無根拠な効能','内部QAの露出','商品名の羅列','注意文だけの結論','水増し'],
     }

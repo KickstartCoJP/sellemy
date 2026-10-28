@@ -124,6 +124,7 @@ def _prompt(topic: dict, evidence: dict, *, previous_payload: dict | None = None
         '商品カセットでは、6つの異なる商品を2商品ずつ3組に構成してください。その商品の実用的な補足をしてください。\\n\\n'
         '文脈を壊す不用意な水増し文章、定型的な注意書き、内部QA用語、不要な仕様説明を書かないでください。slug、category、商品参照IDを維持してください。\\n\\n'
         f'TOPIC:\n{json.dumps(topic, ensure_ascii=False, sort_keys=True)}\n\n'
+        '3組の商品はEvidence.selection.axesの軸別割当をそのまま使い、軸をまたいで並べ替えないでください。選定理由は確認済み事実の範囲で商品の説明に反映してください。\n'
         f'EVIDENCE:\n{json.dumps(evidence, ensure_ascii=False, sort_keys=True)}'
         '\nEDITORIAL_PLAN:\n' + json.dumps(plan, ensure_ascii=False, sort_keys=True)
     )

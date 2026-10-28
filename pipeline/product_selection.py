@@ -149,11 +149,12 @@ def select_six(candidates: list[dict], topic: dict, feedback: dict, *, pinned: l
         'covered_axes': sorted(_axis_matches(p, axes)),
         'discovery_axis_id': p.get('discovery_axis_id'),
     } for p in pool]
-    prompt = ("""あなたはSellemyの商品選定担当です。モノとの出会いを大切にし、最大30商品から記事に掲載する異なる6商品を選んでください。
-検索順位や形式的なスコアで決めず、読者の購入目的、商品それぞれの特徴・用途・使用場面、選択肢としての違いを根拠情報から判断してください。
+    prompt = ("""あなたはSellemyの商品選定担当です。モノとの出会いを大切にし、各軸最大10商品から掲載する異なる2商品、3軸で6商品を選んでください。
+検索順位や形式的なスコアで決めず、読者の購入目的、商品の特徴・用途・使用場面、選択肢としての違いを根拠情報から判断してください。特に読者が買いやすい商品であることは重要です。
 確認できない事実や使用経験を作らないでください。同一商品の色違い、パッケージ違い、実質的な重複を選ばないでください。
 各企画軸（discovery_axis_id）から必ず2商品ずつ選んでください。retained_asinsに記載した独立審査済みの商品は必ず維持してください。
-出力はJSONのみ。形式は {"selected_asins":["ASIN",...]} とし、入力候補に含まれる相異なるASINをちょうど6件指定してください。
+出力はJSONのみ。形式は {"axes":[{"axis_id":"企画軸ID","products":[{"asin":"ASIN","reason":"確認可能な選定理由"},{"asin":"ASIN","reason":"確認可能な選定理由"}]}]} です。
+axesは入力の3軸を1回ずつ含め、各軸の商品は相異なる2件、全軸のASINも相異なる6件としてください。各商品の選定理由には読者の買いやすさと当該軸で紹介する具体的根拠を含めてください。
 """+json.dumps({'topic': {k:topic.get(k) for k in ('title','query','intent_key','reader_persona','comparison_axes')},
                    'retained_asins': sorted(pinned_asins), 'candidates':items}, ensure_ascii=False))
     from api_role_binding import require_codex_settings
@@ -181,24 +182,44 @@ def select_six(candidates: list[dict], topic: dict, feedback: dict, *, pinned: l
         raw = messages[-1].strip()
         if raw.startswith('```'):
             raw = re.sub(r'^```(?:json)?\s*|\s*```$', '', raw)
-        selected_asins = json.loads(raw)['selected_asins']
+        axis_output = json.loads(raw)['axes']
     except ProductSelectionError:
         raise
     except (OSError, subprocess.TimeoutExpired, ValueError, TypeError, KeyError) as exc:
         raise ProductSelectionError(f'AI product selection failed: {type(exc).__name__}') from exc
-    by_asin = {p['asin']:p for p in pool}
-    if (not isinstance(selected_asins, list) or len(selected_asins) != 6
-            or len(set(selected_asins)) != 6 or any(asin not in by_asin for asin in selected_asins)
-            or not pinned_asins.issubset(set(selected_asins))):
-        raise ProductSelectionError('AI selection returned invalid six ASINs or omitted retained products')
-    selected = [by_asin[asin] for asin in selected_asins]
-    if any(sum(p.get('discovery_axis_id') == axis['id'] for p in selected) != 2 for axis in axes):
-        raise ProductSelectionError('AI selection must contain exactly two products per axis')
+    by_asin = {p['asin']: p for p in pool}
+    expected_axes = [axis['id'] for axis in axes]
+    if not isinstance(axis_output, list) or len(axis_output) != 3:
+        raise ProductSelectionError('AI selection requires exactly three axis groups')
+    selected_asins, reasons, selection_axes = [], {}, []
+    for index, group in enumerate(axis_output):
+        if not isinstance(group, dict) or group.get('axis_id') != expected_axes[index]:
+            raise ProductSelectionError('AI selection axis order or identity mismatch')
+        rows = group.get('products')
+        if not isinstance(rows, list) or len(rows) != 2:
+            raise ProductSelectionError('AI selection requires two products per axis')
+        selections = []
+        for entry in rows:
+            if not isinstance(entry, dict):
+                raise ProductSelectionError('AI selection product entry invalid')
+            asin, reason = entry.get('asin'), entry.get('reason')
+            if (not isinstance(asin, str) or asin not in by_asin
+                    or by_asin[asin].get('discovery_axis_id') != expected_axes[index]
+                    or not isinstance(reason, str) or not reason.strip()):
+                raise ProductSelectionError('AI selection ASIN/axis/reason invalid')
+            selected_asins.append(asin)
+            reasons[asin] = reason.strip()
+            selections.append({'asin': asin, 'reason': reason.strip()})
+        selection_axes.append({'axis_id': expected_axes[index], 'products': selections})
+    if len(set(selected_asins)) != 6 or not pinned_asins.issubset(set(selected_asins)):
+        raise ProductSelectionError('AI selection has repeated ASIN or omitted retained product')
+    selected = [{**by_asin[asin], 'selection_reason': reasons[asin]} for asin in selected_asins]
     covered = set().union(*(_axis_matches(p, axes) for p in selected))
     if len(covered) < 2:
         raise ProductSelectionError('AI selected six lack two grounded topic axes')
     return selected, {
         'method': 'ai_selection_three_axes_two_each', 'candidate_count': len(pool),
+        'axes': selection_axes,
         'comparison_axes_covered': sorted(covered),
         'brand_count': len({str(p.get('brand') or '').lower() for p in selected if p.get('brand')}),
         'content_duplicates_removed': removed,

@@ -51,7 +51,8 @@ def test_one_axis_under_two_blocks_topic():
 
 def fake_ai(selected):
     def run(command, **kwargs):
-        return SimpleNamespace(returncode=0,stdout=json.dumps({'type':'item.completed','item':{'type':'agent_message','text':json.dumps({'selected_asins':selected})}})+'\n')
+        groups = [{'axis_id': a['id'], 'products': [{'asin': asin, 'reason': f'購入目的と{a["id"]}の仕様に適合'} for asin in selected[i*2:i*2+2]]} for i,a in enumerate(AXES)]
+        return SimpleNamespace(returncode=0,stdout=json.dumps({'type':'item.completed','item':{'type':'agent_message','text':json.dumps({'axes':groups})}})+'\n')
     return run
 
 def six():
@@ -68,7 +69,7 @@ def test_ai_rejects_imbalanced_six():
     rows=six()+[product(10,'compact')]
     selected=[r['asin'] for r in rows[:4]]+[rows[4]['asin'],rows[-1]['asin']]
     with patch('product_selection.subprocess.run', fake_ai(selected)):
-        with pytest.raises(ProductSelectionError,match='exactly two products per axis'):
+        with pytest.raises(ProductSelectionError,match='ASIN/axis/reason invalid'):
             select_six(rows,TOPIC,{})
 
 def test_pinned_retention():
@@ -110,5 +111,5 @@ def test_model_management_used_for_ai_selection():
 def test_ai_unknown_asin_rejected():
     rows=six()
     with patch('product_selection.subprocess.run',fake_ai([r['asin'] for r in rows[:5]]+['B999999999'])):
-        with pytest.raises(ProductSelectionError,match='invalid six'):
+        with pytest.raises(ProductSelectionError,match='ASIN/axis/reason invalid'):
             select_six(rows,TOPIC,{})

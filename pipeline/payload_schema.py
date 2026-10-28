@@ -155,3 +155,12 @@ def match_refs(payload: dict, evidence: dict) -> None:
         raise PayloadValidationError(f'payload.slug ({payload["slug"]}) does not match evidence.slug ({evidence["slug"]})')
     if payload['category'] != evidence['category']:
         raise PayloadValidationError('payload.category does not match evidence.category')
+    selected_groups = (evidence.get('selection') or {}).get('axes') or []
+    if selected_groups:
+        if len(selected_groups) != 3 or len(payload['comparison_groups']) != 3:
+            raise PayloadValidationError('article groups must match selected three axes')
+        by_asin = {p['asin']: p['ref'] for p in evidence['products']}
+        for article_group, selected_group in zip(payload['comparison_groups'], selected_groups):
+            expected = [by_asin[p['asin']] for p in selected_group['products']]
+            if article_group['id'] != selected_group['axis_id'] or article_group['product_refs'] != expected:
+                raise PayloadValidationError('article group axis or product order differs from Planning selection')
