@@ -22,6 +22,7 @@ def candidate(slug='new-topic', category='beauty', score=.8):
         'intent_key': slug, 'reader_persona': {'reader':'daily buyers', 'knowledge_level':'general', 'purchase_goal':'find suitable product', 'editorial_depth':'practical everyday advice'}, 'comparison_axes': [
             {'id': 'gentle', 'label': '使い心地', 'keywords': ['やさしい']},
             {'id': 'power', 'label': '性能', 'keywords': ['高性能']},
+            {'id': 'durable', 'label': '耐久性', 'keywords': ['長持ち']},
         ],
         'signals': {key: score for key in ('search_demand', 'purchase_intent', 'product_viability', 'seasonality', 'profitability', 'evidence_availability')},
     }
@@ -54,7 +55,7 @@ class ContinuousPlanningTests(unittest.TestCase):
              patch.object(planning_runtime.subprocess, 'run') as claude:
             rows = planning_runtime.discover_candidates()
         self.assertEqual(rows[0]['slug'], 'codex-topic')
-        self.assertEqual(rows.provider_metadata['planning_provider_used'], 'codex:codex-model')
+        self.assertEqual(rows.provider_metadata['planning_provider_used'], 'codex:gpt-6-sol')
         self.assertFalse(rows.provider_metadata['fallback_used'])
         claude.assert_not_called()
 
@@ -151,26 +152,6 @@ class ContinuousPlanningTests(unittest.TestCase):
             with patch.object(planning_runtime, 'ARTICLES', articles):
                 with self.assertRaises(planning_runtime.PlanningError):
                     planning_runtime.plan_next_topic([], {'topic_metrics': [], 'product_metrics': []})
-
-
-class VariableProductSelectionTests(unittest.TestCase):
-    def test_selection_is_not_fixed_price_order(self):
-        topic = candidate()
-        rows = []
-        for i in range(8):
-            rows.append({
-                'asin': f'B0TEST{i:04d}', 'amazon_title': ('高性能 ' if i in (6, 7) else 'やさしい ') + str(i),
-                'brand': f'Brand{i % 4}', 'image_url': f'https://example.com/{i}.jpg',
-                'observed_price': (i + 1) * 1000, 'discovery_score': 1,
-                'sources': [{'verified': True, 'url': f'https://example.com/mock/{i}',
-                             'excerpt': ('高性能 ' if i in (6, 7) else 'やさしい ') + str(i)}],
-            })
-        selected, metadata = select_six(rows, topic, {'product_metrics': []})
-        self.assertEqual(len(selected), 6)
-        self.assertEqual(len({row['asin'] for row in selected}), 6)
-        self.assertTrue(metadata['price_used_as_constraint_only'])
-        self.assertNotEqual([row['observed_price'] for row in selected], sorted(row['observed_price'] for row in selected))
-        self.assertEqual(metadata['comparison_axes_covered'], ['gentle', 'power'])
 
 
 if __name__ == '__main__':

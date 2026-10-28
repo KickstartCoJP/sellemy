@@ -5,7 +5,7 @@ import pytest
 from growth_runtime import _product_queries, collect_unique_products
 from product_selection import ProductSelectionError, select_six
 
-AXES = [{'id': x, 'keywords': [x]} for x in ('compact', 'quiet', 'safe')]
+AXES = [{'id': x, 'label': x, 'keywords': [x]} for x in ('compact', 'quiet', 'safe')]
 TOPIC = {'query': 'kettle', 'title': 'A kettle for small homes', 'comparison_axes': AXES}
 
 def product(i, axis):
@@ -113,3 +113,30 @@ def test_ai_unknown_asin_rejected():
     with patch('product_selection.subprocess.run',fake_ai([r['asin'] for r in rows[:5]]+['B999999999'])):
         with pytest.raises(ProductSelectionError,match='ASIN/axis/reason invalid'):
             select_six(rows,TOPIC,{})
+
+def test_axis_group_reasons_survive_selection_and_evidence():
+    from growth_runtime import build_evidence
+    rows = six()
+    complete_topic = {**TOPIC, 'slug':'three-axis-test', 'category':'gadget'}
+    with patch('product_selection.subprocess.run', fake_ai([r['asin'] for r in rows])):
+        selected, metadata = select_six(rows, complete_topic, {})
+    evidence = build_evidence(complete_topic, selected, metadata)
+    assert len(evidence['selection']['axes']) == 3
+    assert [x['discovery_axis_id'] for x in evidence['products']] == [a['id'] for a in AXES for _ in range(2)]
+    assert all(x['selection_reason'] for x in evidence['products'])
+    assert all(len(x['products']) == 2 for x in evidence['selection']['axes'])
+
+def test_axis_group_order_is_enforced_at_article_boundary():
+    from growth_runtime import build_evidence
+    from payload_schema import match_refs, PayloadValidationError
+    rows = six()
+    topic = {**TOPIC, 'slug':'three-axis-test', 'category':'gadget'}
+    with patch('product_selection.subprocess.run', fake_ai([r['asin'] for r in rows])):
+        selected, metadata = select_six(rows, topic, {})
+    evidence = build_evidence(topic, selected, metadata)
+    groups = [{'id':a['id'], 'product_refs':[f'p{i*2+1}',f'p{i*2+2}']} for i,a in enumerate(AXES)]
+    payload = {'slug':topic['slug'], 'category':topic['category'], 'products':[{'ref':f'p{i+1}'} for i in range(6)], 'comparison_groups':groups}
+    match_refs(payload, evidence)
+    groups[0]['product_refs'].reverse()
+    with pytest.raises(PayloadValidationError,match='axis or product order'):
+        match_refs(payload,evidence)
