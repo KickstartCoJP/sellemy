@@ -877,23 +877,14 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
         pending = [p for p in available if p.get('asin') not in researched_asins]
         if cache_only:
             discover_products(topic, cache_only=True)
-        if not pending:
-            terms = ('', '型番', 'メーカー', '製品', '仕様', '容量', 'サイズ',
-                     '標準', '国内正規品', '機能', '比較', '新型', '高耐久',
-                     '家庭用', '業務用', 'ブランド', '種類', '用途')
-            base = product_search_query(topic)
-            cursor = len(tried)
-            suffix = terms[cursor] if cursor < len(terms) else (
-                terms[1 + ((cursor-len(terms)) % (len(terms)-1))] + ' ' +
-                terms[1 + ((cursor-len(terms)) // (len(terms)-1) % (len(terms)-1))])
-            query = (base + ' ' + suffix).strip()
-            found = discover_products({**topic, 'query': query}, cache_only=cache_only)
-            pool, _ = dedupe_content_products([*pool, *found])
-            tried.append({'query': query, 'new_pool_total': len(pool)})
+        if not pending and not pool:
+            found, trace = collect_unique_products(topic, cache_only=cache_only)
+            pool, _ = dedupe_content_products(found)
+            tried.extend(trace['attempts'])
             save_progress()
             available = [p for p in pool if p.get('asin') not in excluded]
             pending = [p for p in available if p.get('asin') not in researched_asins]
-        batch = pending[:18]
+        batch = pending[:30]
         if batch:
             enriched = research_selected(batch, prefer_official=True) if _researchable_candidates(batch, cache_only=cache_only) else batch
             # Keep all source receipts and move the cursor only after the entire batch.
