@@ -117,7 +117,7 @@ def _prompt(topic: dict, evidence: dict, *, previous_payload: dict | None = None
         'Do not state prices, internal workflow terms, ASINs, or affiliate operations. Do not copy raw listing titles verbatim. '
         'Design exactly 3 semantic comparison groups from the topic-specific comparison_axes, with exactly 2 products in each group; groups must partition all six refs exactly once. '
         'Price may be discussed only as a non-specific constraint, never as a fixed low/mid/high article structure. Make each recommendation concrete about who should choose it and why, based on actual differences. If the six products do not represent one coherent product class or Evidence cannot support the promised comparison, return BLOCKED instead of writing cautious filler. '
-        'Each of the SIX product descriptions MUST contain at least 160 meaningful characters of Japanese prose, with distinct source-backed purchase reasons, fit, and comparisons; write 190-240 meaningful characters per item to prevent underlength. Explain two or more user situations in how_to_choose. Target lead 180-230, summary 130-170, how_to_choose 190-270, h3 6-45, rendered main 2600-3200 without filler, repeated sentences, or ungrounded padding. The final conclusion MUST name recommended actual products and the reason, not end in an inspection warning. Check all seven E01-E07 before returning JSON. ' 
+        'Each of the SIX product descriptions MUST contain at least 160 meaningful characters of Japanese prose, with distinct source-backed purchase reasons, fit, and comparisons; write 190-240 meaningful characters per item to prevent underlength. Explain two or more user situations in how_to_choose. Target lead 180-230, summary 130-170, how_to_choose 190-270, h3 6-45, rendered main 2600-3200 without filler, repeated sentences, or ungrounded padding. The final conclusion MUST name recommended actual products and the reason, not end in an inspection warning. Check all eight E01-E08 before returning JSON. '
         'Preserve slug, category, and refs exactly.\n\n'
         f'TOPIC:\n{json.dumps(topic, ensure_ascii=False, sort_keys=True)}\n\n'
         f'EVIDENCE:\n{json.dumps(evidence, ensure_ascii=False, sort_keys=True)}'
@@ -170,7 +170,7 @@ def _prompt(topic: dict, evidence: dict, *, previous_payload: dict | None = None
                    + str(gate_feedback['editorial_plan_requirements'])[:1600]
                    + '\nRewrite all affected public prose in clear, natural Japanese. Do not merely assert that the '
                    'criterion is satisfied. Eliminate unnatural phrases, internal audit commentary, unsupported '
-                   'comparisons, and repeated formulaic descriptions. Recheck E07 on the final complete article.\n')
+                   'comparisons, and repeated formulaic descriptions. Recheck E07 language quality and E08 evidence-grounded factual accuracy on the final complete article.\n')
     if isinstance(gate_feedback,dict) and gate_feedback.get('ceo_rework'):
         prompt += '\nMANDATORY CEO REWORK: '+str(gate_feedback['ceo_rework'])+'\nDo not repeat the cited defects.\n'
     return prompt

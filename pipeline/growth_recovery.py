@@ -19,7 +19,7 @@ EVENTS_PATH = STATE_ROOT / 'events.jsonl'
 EXECUTION_EVENTS_PATH = STATE_ROOT / 'execution-events.jsonl'
 
 TERMINAL_STATUSES = {'PUBLISHED', 'DISCARDED', 'FAILED', 'RETIRED'}
-RETRYABLE_STAGES = {'WRITER_PENDING', 'QA_FAILED', 'EYECATCH_PENDING', 'PUBLISH_PENDING'}
+RETRYABLE_STAGES = {'WRITER_PENDING', 'QA_FAILED', 'EYECATCH_PENDING', 'PUBLISH_PENDING', 'PRODUCT_HOLD'}
 WRITER_MAX_ATTEMPTS = int(os.environ.get('SELLEMY_WRITER_MAX_ATTEMPTS_PER_SLUG', '5'))
 
 
@@ -239,10 +239,17 @@ def eligible_job(*, now: datetime | None = None) -> dict | None:
         if row.get('current_stage') not in RETRYABLE_STAGES:
             continue
         raw = row.get('next_retry_at')
-        try:
-            due = datetime.fromisoformat(raw) if raw else current
-        except ValueError:
-            due = current
+        if row.get('current_stage') == 'PRODUCT_HOLD' and not raw:
+            # Retry discovery at most hourly so unchanged candidates cannot starve Writer.
+            try:
+                due = datetime.fromisoformat(row['updated_at']) + timedelta(hours=1)
+            except (ValueError, KeyError):
+                due = current + timedelta(hours=1)
+        else:
+            try:
+                due = datetime.fromisoformat(raw) if raw else current
+            except ValueError:
+                due = current
         if due <= current:
             eligible.append(row)
     eligible.sort(key=lambda row: (row.get('updated_at') or row.get('created_at') or '', row.get('slug') or ''))

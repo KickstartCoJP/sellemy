@@ -13,7 +13,8 @@ def build_editorial_plan(topic, evidence, ceo_rework=''):
         {'id':'E04','section':'products','instruction':'全6商品それぞれの固有の推薦理由・対象読者・差を説明する'},
         {'id':'E05','section':'how_to_choose','instruction':'複数の利用場面に応じた選定基準と候補を説明する'},
         {'id':'E06','section':'conclusion','instruction':'購入候補を明確に選び、調査を読者へ丸投げしない'},
-        {'id':'E07','section':'all','instruction':'自然な日本語。内部QAを露出せず事実を創作しない'},
+        {'id':'E07','section':'all','instruction':'自然な日本語で書き、内部QAや制作工程の情報を記事に露出しない'},
+        {'id':'E08','section':'all','instruction':'記事の商品名・仕様・比較・推薦の事実が検証済みEvidenceで裏付けられ、事実を創作していない'},
     ]
     if ceo_rework.strip():
         import re

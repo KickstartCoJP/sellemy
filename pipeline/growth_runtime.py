@@ -637,7 +637,7 @@ def _writer_stage(slug: str, result: dict) -> None:
             from editorial_plan_review import independent_plan_review, EditorialPlanError
             from independent_quality_gate import issue_receipts, QualityGateError
             try:
-                plan_receipt = independent_plan_review(editorial_plan, payload)
+                plan_receipt = independent_plan_review(editorial_plan, payload, evidence=evidence)
                 write_artifact(slug, 'editorial-plan-review.json', plan_receipt)
             except EditorialPlanError as exc:
                 write_artifact(slug, 'editorial-plan-review.json', {})
