@@ -19,8 +19,13 @@ def build_editorial_plan(topic, evidence, ceo_rework=''):
     if ceo_rework.strip():
         import re
         parts = [x.strip() for x in re.split(r'[。\n]+', ceo_rework) if x.strip()]
-        for i, part in enumerate(parts, 1):
-            requirements.append({'id':f'C{i:02d}', 'section':'all', 'instruction':part,
+        for part in parts:
+            # Execution instructions belong to the runtime, not article prose QA.
+            if any(term in part for term in ('QAをやり直す','再QA','再執筆','差戻し処理','レビュー再提出')):
+                continue
+            if '最初の商品紹介はcomparison_groups' in part:
+                continue
+            requirements.append({'id':f'C{len(requirements)-7:02d}', 'section':'all', 'instruction':part,
                                  'source':'CEO', 'original':ceo_rework})
     return {
         'schema':'sellemy-editorial-plan/v1',
