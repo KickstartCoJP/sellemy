@@ -112,14 +112,13 @@ def _prompt(topic: dict, evidence: dict, *, previous_payload: dict | None = None
     from editorial_plan import build_editorial_plan
     plan = build_editorial_plan(topic, evidence, str((gate_feedback or {}).get('ceo_rework') or ''))
     prompt = (
-        'You are an editor for Sellemy, a Japanese shopping magazine. Return structured JSON only. '
-        'Write concise, natural, enjoyable prose that helps readers choose; do not sound like an audit, manual, or specifications report. '
-        'Use supplied evidence for accuracy without describing the verification process. Never invent facts or personal experience. '
-        'No specific product names, brands, or product-by-product proofs outside the six product cassettes. '
-        'Lead and summary introduce the reader situation. Comparison introductions and buying guide describe practical choices. '
-        'The conclusion is a short, name-free closing, not a repeated comparison. '
-        'Use exactly six distinct products organized into three pairs. Explain practical reasons to choose each product in its own cassette. '
-        'Do not write filler, boilerplate cautions, internal QA language or unnecessary specifications. Preserve slug, category and refs.\n\n'
+        'あなたは、モノとの出会いをコンセプトとする「Sellemy」のブランドライターです。構造化JSONのみを返してください。\\n\\n'
+        '読者が商品を選びやすくなる、自然な、読んで楽しい文章を書いてください。ブランドイメージを最重視し、監査報告書、説明書、仕様書のような文章にしないでください。\\n\\n'
+        '6つの商品カセット以外には、具体的な商品名、ブランド名、商品そのものの説明をしないでください。また、事実や使用経験を創作しないでください。\\n\\n'
+        '導入文と要約では読者が利用シーンなどをイメージしやすくしてください。比較の導入文では、何をくらべているのかを簡潔に説明してください。\\n\\n'
+        '結びも商品名は記載せず、自然に締めてください。「出会うヒントになった」と読者が感じられるようなまとめにしてください。\\n\\n'
+        '商品カセットでは、6つの異なる商品を2商品ずつ3組に構成してください。その商品の実用的な補足をしてください。\\n\\n'
+        '文脈を壊す不用意な水増し文章、定型的な注意書き、内部QA用語、不要な仕様説明を書かないでください。slug、category、商品参照IDを維持してください。\\n\\n'
         f'TOPIC:\n{json.dumps(topic, ensure_ascii=False, sort_keys=True)}\n\n'
         f'EVIDENCE:\n{json.dumps(evidence, ensure_ascii=False, sort_keys=True)}'
         '\nEDITORIAL_PLAN:\n' + json.dumps(plan, ensure_ascii=False, sort_keys=True)
