@@ -1013,6 +1013,8 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
                     good.append(product['asin'])
                 else:
                     rejected.add(product['asin'])
+            for rejected_asin in rejected:
+                set_ng(rejected_asin, 'product QA rejected identity or topic fitness', source=slug)
             write_artifact(slug, 'product-qa-remediation.json', {
                 'retained_asins': good, 'needs_remediation_asins': sorted(rejected),
                 'issues': issues, 'signature': signature,
@@ -1022,6 +1024,9 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
         save_progress()
         request_product_reselection(slug, ['candidate pool exhausted; return to Planning'])
         raise GrowthRuntimeError(f'planning_restart_required for {slug}')
+    except ProductSelectionError as exc:
+        save_progress()
+        raise GrowthRuntimeError(f'planning_restart_required for {slug}: {exc}') from exc
     except Exception as exc:
         from discovery_adapters import AmazonSearchUnavailable
         if isinstance(exc, AmazonSearchUnavailable):
@@ -1030,10 +1035,6 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
                          failure_code='AMAZON_SEARCH_UNAVAILABLE', reason=str(exc), role='planning')
             raise GrowthRuntimeError(f'Amazon search temporarily unavailable for {slug}: {exc}') from exc
         raise
-    except ProductSelectionError as exc:
-        save_progress()
-        request_product_reselection(slug, [str(exc)])
-        raise GrowthRuntimeError(f'needs_product_reselection for {slug}') from exc
     except (ResponsesError, OSError, requests.RequestException) as exc:
         save_progress()
         mark_failure(slug, stage='product', failure_class='runtime_infrastructure',

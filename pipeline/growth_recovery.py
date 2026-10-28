@@ -296,6 +296,8 @@ def set_stage(slug: str, stage: str, *, event: str = 'STAGE_ADVANCED', detail: d
     state['last_failure_class'] = None
     state['last_failure_code'] = None
     state['last_failure_reason'] = None
+    if stage in {'WRITER_PENDING', 'EYECATCH_PENDING', 'PUBLISH_PENDING', 'CHAT_REVIEW_PENDING'}:
+        state['consecutive_quality_failures'] = 0
     return _save_state(state, event=event, detail=detail)
 
 
@@ -316,6 +318,7 @@ def save_writer_result(slug: str, *, payload: dict, qa: dict, findings: list[str
             turns.append(marker)
         state['writer_turn_ids'] = turns
     if passed:
+        state['consecutive_quality_failures'] = 0
         from operating_profile import normal_profile
         approval = certify(payload, read_artifact(slug, 'evidence.json'), qa, read_artifact(slug, 'acceptance.json'))
         write_artifact(slug, 'qa-certification.json', approval)

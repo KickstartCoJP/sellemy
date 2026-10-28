@@ -144,6 +144,18 @@ def validate_evidence(evidence: dict) -> None:
         if product['ref'] in seen_refs:
             raise PayloadValidationError(f'evidence.products has duplicate ref: {product["ref"]}')
         seen_refs.add(product['ref'])
+    selection_groups = (evidence.get('selection') or {}).get('axes') or []
+    if selection_groups:
+        if len(selection_groups) != 3 or len(axes) != 3:
+            raise PayloadValidationError('selected axes must contain exactly three groups')
+        expected = []
+        for axis, group in zip(axes, selection_groups):
+            if group.get('axis_id') != axis['id'] or len(group.get('products') or []) != 2:
+                raise PayloadValidationError('selection axis identity or size mismatch')
+            expected.extend((entry['asin'], axis['id']) for entry in group['products'])
+        actual = [(p['asin'], p.get('discovery_axis_id')) for p in products]
+        if expected != actual:
+            raise PayloadValidationError('selection ASIN or axis mismatch with evidence product refs')
 
 
 def match_refs(payload: dict, evidence: dict) -> None:
