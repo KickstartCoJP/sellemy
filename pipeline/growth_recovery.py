@@ -310,7 +310,7 @@ def set_stage(slug: str, stage: str, *, event: str = 'STAGE_ADVANCED', detail: d
     state['last_failure_class'] = None
     state['last_failure_code'] = None
     state['last_failure_reason'] = None
-    if stage in {'WRITER_PENDING', 'EYECATCH_PENDING', 'PUBLISH_PENDING', 'CHAT_REVIEW_PENDING'}:
+    if event in {'PRODUCT_RESELECTION_ACCEPTED', 'WRITER_QA_PASSED', 'PUBLISHED'}:
         state['consecutive_quality_failures'] = 0
     return _save_state(state, event=event, detail=detail)
 
@@ -332,6 +332,7 @@ def save_writer_result(slug: str, *, payload: dict, qa: dict, findings: list[str
             turns.append(marker)
         state['writer_turn_ids'] = turns
     if passed:
+        _update_quality_streak(slug=slug, failed=False)
         state['consecutive_quality_failures'] = 0
         from operating_profile import normal_profile
         approval = certify(payload, read_artifact(slug, 'evidence.json'), qa, read_artifact(slug, 'acceptance.json'))
@@ -361,6 +362,17 @@ def save_eyecatch(slug: str, *, receipt: dict, image_path: Path) -> dict:
     return _save_state(state, event='EYECATCH_PASSED')
 
 
+def _update_quality_streak(*, slug: str, failed: bool) -> int:
+    path = STATE_ROOT / 'quality-failure-streak.json'
+    current = {}
+    if path.is_file():
+        current = json.loads(path.read_text(encoding='utf-8'))
+    count = (int(current.get('count') or 0) + 1) if failed else 0
+    recent = ([*(current.get('recent_slugs') or []), slug][-10:]) if failed else []
+    _atomic_json(path, {'count': count, 'recent_slugs': recent, 'last_slug': slug, 'at': _iso()})
+    return count
+
+
 def mark_failure(slug: str, *, stage: str, failure_class: str, failure_code: str,
                  reason: str, role_return: bool = False, role: str | None = None) -> dict:
     state = load_job(slug)
@@ -385,7 +397,7 @@ def mark_failure(slug: str, *, stage: str, failure_class: str, failure_code: str
         ng[stage]=previous+1
         state['quality_ng_by_gate']=ng
         state['consecutive_quality_failures'] = int(state.get('consecutive_quality_failures') or 0) + 1
-        count = state['consecutive_quality_failures']
+        count = _update_quality_streak(slug=slug, failed=True)
         if count >= 10 and count % 10 == 0:
             write_artifact(slug, 'ceo-inspection-required.json', {
                 'schema':'sellemy-failed-10-inspection/v1',
@@ -530,6 +542,7 @@ def replace_product_evidence(slug: str, evidence: dict, selection: dict) -> dict
                  'eyecatch-receipt.json', 'chat-publish-approval.json'):
         write_artifact(slug, name, {})
     write_artifact(slug, 'product-blocker.json', {})
+    _update_quality_streak(slug=slug, failed=False)
     return set_stage(slug, 'WRITER_PENDING', event='PRODUCT_RESELECTION_ACCEPTED')
 
 

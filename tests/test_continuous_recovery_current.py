@@ -15,6 +15,7 @@ def test_tenth_quality_failure_is_nonblocking(tmp_path, monkeypatch):
     import growth_recovery as gr
     monkeypatch.setattr(gr, 'JOBS_ROOT', tmp_path/'jobs')
     monkeypatch.setattr(gr, 'EVENTS_PATH',tmp_path/'events.jsonl')
+    monkeypatch.setattr(gr, 'STATE_ROOT',tmp_path)
     initial={'schema_version':1,'slug':'testcase','status':'ACTIVE','current_stage':'WRITER_PENDING',
              'created_at':gr._iso(),'updated_at':gr._iso(),'next_retry_at':gr._iso()}
     gr._save_state(initial,event='CREATED')
