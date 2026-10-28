@@ -38,6 +38,15 @@ class EditorialPlanTests(unittest.TestCase):
             self.assertIsNone(growth_recovery.eligible_job(now=now))
             self.assertEqual(growth_recovery.eligible_job(now=now+timedelta(minutes=2))['slug'],'hold')
 
+    def test_writer_recovery_precedes_old_product_holds(self):
+        now=datetime(2026,10,28,5,tzinfo=timezone.utc)
+        rows=[{'slug':'held','status':'ACTIVE','current_stage':'PRODUCT_HOLD',
+               'updated_at':(now-timedelta(hours=3)).isoformat(),'next_retry_at':None},
+              {'slug':'writer','status':'ACTIVE','current_stage':'QA_FAILED',
+               'updated_at':now.isoformat(),'next_retry_at':now.isoformat()}]
+        with patch.object(growth_recovery,'all_jobs',return_value=rows):
+            self.assertEqual(growth_recovery.eligible_job(now=now)['slug'],'writer')
+
     def test_invalid_six_refs_fail_closed(self):
         with self.assertRaises(ValueError):
             build_editorial_plan({}, {'products':[{'ref':'p1'}]*6,'comparison_axes':[{'id':'a'},{'id':'b'}]})

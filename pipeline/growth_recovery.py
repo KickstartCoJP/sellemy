@@ -252,7 +252,12 @@ def eligible_job(*, now: datetime | None = None) -> dict | None:
                 due = current
         if due <= current:
             eligible.append(row)
-    eligible.sort(key=lambda row: (row.get('updated_at') or row.get('created_at') or '', row.get('slug') or ''))
+    # Finish existing QA-ready work before retrying unchanged product discovery.
+    priority = {'QA_FAILED': 0, 'WRITER_PENDING': 1, 'EYECATCH_PENDING': 2,
+                'PUBLISH_PENDING': 3, 'PRODUCT_HOLD': 4}
+    eligible.sort(key=lambda row: (priority.get(row.get('current_stage'), 9),
+                                   row.get('updated_at') or row.get('created_at') or '',
+                                   row.get('slug') or ''))
     return eligible[0] if eligible else None
 
 
