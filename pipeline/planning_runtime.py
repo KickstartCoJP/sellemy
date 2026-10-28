@@ -151,6 +151,7 @@ def discover_candidates() -> list[dict]:
         "企画テーマは、一貫した商品カテゴリと購入目的に絞ってください。アクセサリー、詰め替え品、交換部品などは、検索意図が明確にそれらを対象としている場合に限り、企画に含めてください。\n"
         "あなたは、モノとの出会いを創り出すサイト、Sellemyの商品紹介記事の企画を担当します。\n"
         "現在の季節、検索意図、購買意図、商品選定の成立可能性、提供されたコンテキストをもとに、新しい企画候補を生成してください。\n"
+        "記事タイトル（title）に「比較」という文字列を含めないでください。\n"
         "構造化JSONのみを返してください。\n"
     ) + json.dumps(_context(), ensure_ascii=False)
     def local():
@@ -189,6 +190,8 @@ def validate_candidate(candidate: dict) -> None:
     for field in ('slug', 'category', 'query', 'title', 'intent_key', 'reader_persona', 'comparison_axes', 'signals'):
         if field not in candidate:
             raise PlanningError(f'candidate missing {field}')
+    if '比較' in str(candidate['title']):
+        raise PlanningError('candidate title must not contain 比較')
     persona=candidate.get('reader_persona')
     if persona is not None and (not isinstance(persona,dict) or any(not str(persona.get(k) or '').strip() for k in ('reader','knowledge_level','purchase_goal','editorial_depth'))):
         raise PlanningError('reader_persona requires reader, knowledge_level, purchase_goal and editorial_depth')
