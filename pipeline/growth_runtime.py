@@ -128,73 +128,52 @@ def discover_products(topic: dict, *, cache_only: bool) -> list[dict]:
 
 
 def _product_queries(topic: dict):
-    """Only product-oriented terms, never editorial comparison instructions."""
+    """Exactly three searches: approved theme x each of three approved axes."""
     base = product_search_query(topic)
-    if not base:
-        return
-    terms = ('', '型番', 'メーカー', '容量', '規格', '製品', '用途', '機能',
-             'サイズ', 'ブランド', '種類', '国内正規品', '大容量', '業務用',
-             'コンパクト', '高性能', '単品', 'セット', '標準', '高耐久')
-    for term in terms:
-        yield f'{base} {term}'.strip()
+    axes = topic.get('comparison_axes') or []
+    if not base or len(axes) != 3:
+        raise ProductSelectionError('product discovery requires a theme and exactly three approved axes')
+    queries = []
+    for axis in axes:
+        keywords = axis.get('keywords') or []
+        if not keywords or not str(keywords[0]).strip():
+            raise ProductSelectionError('product discovery axis lacks Amazon search keyword')
+        query = f'{base} {str(keywords[0]).strip()}'
+        if query in queries:
+            raise ProductSelectionError('product discovery axes produced duplicate search keywords')
+        queries.append(query)
+    return queries
 
 
 def collect_unique_products(topic: dict, *, cache_only: bool, existing: list[dict] | None = None,
-                            target_new: int = 18, used_queries: set[str] | None = None,
-                            max_searches: int = 20) -> tuple[list[dict], dict]:
-    """Collect EXACTLY target_new fresh ASINs before completing a batch.
-
-    Product identity is checked *as each hit is encountered*, not after a
-    nominal page of 18. If search is exhausted, report incomplete explicitly.
-    """
+                            target_new: int = 20, used_queries: set[str] | None = None,
+                            max_searches: int = 3) -> tuple[list[dict], dict]:
     prior, _ = dedupe_content_products(list(existing or []))
     known = {p['asin'] for p in prior}
-    additions = []
-    attempts = []
-    seen_queries = used_queries if used_queries is not None else set()
+    additions, attempts = [], []
     for query in _product_queries(topic):
-        if len(additions) >= target_new or len(attempts) >= max_searches:
-            break
-        if query in seen_queries:
-            continue
-        seen_queries.add(query)
         try:
             candidates = discover_products({**topic, 'query': query}, cache_only=cache_only)
             count = 0
             for candidate in candidates:
-                asin = candidate['asin']
-                if asin in known:
+                if candidate['asin'] in known:
                     continue
-                known.add(asin)
+                known.add(candidate['asin'])
                 additions.append(candidate)
                 count += 1
-                if len(additions) == target_new:
-                    break
             attempts.append({'query': query, 'found': len(candidates), 'new': count})
         except Exception as exc:
             attempts.append({'query': query, 'found': 0, 'new': 0,
                              'error': f'{type(exc).__name__}: {exc}'})
     return additions, {'added_unique': len(additions),
-                       'complete': len(additions) == target_new,
+                       'complete': len(prior) + len(additions) >= target_new,
                        'attempts': attempts}
 
 
 def replenish_products(topic: dict, products: list[dict], *, cache_only: bool,
-                       max_batches: int = 9) -> tuple[list[dict], list[dict]]:
-    if cache_only:
-        return products, []
-    merged, _ = dedupe_content_products(list(products))
-    used_queries = {str(topic.get('query') or '')}
-    traces = []
-    for batch_no in range(1, max_batches + 1):
-        added, trace = collect_unique_products(topic, cache_only=False,
-                                               existing=merged, used_queries=used_queries)
-        # Never mark a partial batch as successfully collected.
-        merged.extend(added)
-        traces.append({'batch': batch_no, 'unique_total': len(merged), **trace})
-        if not trace['complete']:
-            break
-    return merged, traces
+                       max_batches: int = 1) -> tuple[list[dict], list[dict]]:
+    # No second search round or generic keyword supplementation.
+    return products, []
 
 
 def _researchable_candidates(products: list[dict], *, cache_only: bool) -> bool:
@@ -227,17 +206,13 @@ def select_viable_topic(
         for topic in ranked:
             tried_slugs.add(topic['slug'])
             try:
-                products = discover_products(topic, cache_only=cache_only)
-                probes.append({'round': round_index + 1, 'slug': topic['slug'], 'candidate_count': len(products), 'error': ''})
+                products, discovery_trace = collect_unique_products(topic, cache_only=cache_only)
+                probes.append({'round': round_index + 1, 'slug': topic['slug'], 'candidate_count': len(products), 'discovery': discovery_trace, 'error': ''})
             except Exception as exc:
                 products = []
                 probes.append({'round': round_index + 1, 'slug': topic['slug'], 'candidate_count': 0, 'error': f'{type(exc).__name__}: {exc}'})
-            if len(products) >= 6:
+            if len(products) >= 20:
                 try:
-                    if not cache_only and len(products) < 20:
-                        products, batches = replenish_products(topic, products, cache_only=False)
-                        probes[-1]['additional_batches'] = batches
-                        probes[-1]['candidate_count_after_replenish'] = len(products)
                     if _researchable_candidates(products, cache_only=cache_only):
                         products = research_selected(products)
                     six, selection = select_six(products, topic, feedback)
@@ -299,26 +274,6 @@ def select_viable_topic(
                         continue
                 except ProductSelectionError as exc:
                     reasons = [str(exc)]
-                    if not cache_only:
-                        products, batches = replenish_products(topic, products, cache_only=False)
-                        probes[-1]['additional_batches'] = batches
-                        probes[-1]['candidate_count_after_replenish'] = len(products)
-                        if _researchable_candidates(products, cache_only=False):
-                            products = research_selected(products)
-                        try:
-                            six, selection = select_six(products, topic, feedback)
-                            evidence = build_evidence(topic, six, selection)
-                            acceptance = independent_review(evidence)
-                            issues = receipt_issues(acceptance, evidence)
-                            if not issues:
-                                selected = {**topic, '_product_acceptance': acceptance,
-                                            'selection_reason': 'six products passed independent evidence acceptance'}
-                                if getattr(source, 'provider_metadata', None):
-                                    selected['_planning_provider_metadata'] = source.provider_metadata
-                                return selected, products, probes
-                            reasons.extend(issues)
-                        except ProductSelectionError as retry_error:
-                            reasons.append(str(retry_error))
                     probes[-1]['acceptance'] = blocked(reasons)
                     continue
                 selected = {**topic, '_product_acceptance': acceptance,

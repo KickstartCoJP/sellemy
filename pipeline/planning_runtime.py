@@ -35,7 +35,7 @@ PLANNING_SCHEMA = {
             'slug': {'type': 'string'}, 'category': {'type': 'string'}, 'query': {'type': 'string'},
             'title': {'type': 'string'}, 'intent_key': {'type': 'string'},
             'reader_persona': {'type': 'object', 'additionalProperties': False, 'required': ['reader', 'knowledge_level', 'purchase_goal', 'editorial_depth'], 'properties': {key: {'type': 'string', 'minLength': 4} for key in ('reader','knowledge_level','purchase_goal','editorial_depth')}},
-            'comparison_axes': {'type': 'array', 'minItems': 2, 'maxItems': 6, 'items': {'type': 'object', 'required': ['id', 'label', 'keywords'], 'properties': {'id': {'type': 'string'}, 'label': {'type': 'string'}, 'keywords': {'type': 'array', 'minItems': 1, 'items': {'type': 'string'}}}}},
+            'comparison_axes': {'type': 'array', 'minItems': 3, 'maxItems': 3, 'items': {'type': 'object', 'required': ['id', 'label', 'keywords'], 'properties': {'id': {'type': 'string'}, 'label': {'type': 'string'}, 'keywords': {'type': 'array', 'minItems': 1, 'items': {'type': 'string'}}}}},
             'signals': {'type': 'object', 'required': ['search_demand', 'purchase_intent', 'product_viability', 'seasonality', 'profitability', 'evidence_availability'], 'properties': {key: {'type': 'number'} for key in ('search_demand', 'purchase_intent', 'product_viability', 'seasonality', 'profitability', 'evidence_availability')}},
         },
     }}}
@@ -156,6 +156,7 @@ def discover_candidates() -> list[dict]:
         "あなたは、モノとの出会いを創り出すサイト、Sellemyの商品紹介記事の企画を担当します。\n"
         "現在の季節、検索意図、購買意図、商品選定の成立可能性、提供されたコンテキストをもとに、新しい企画候補を生成してください。\n"
         "記事タイトル（title）に「比較」という文字列を含めないでください。\n"
+        "企画軸（comparison_axes）は必ず3つにしてください。各軸のkeywordsには、そのテーマと組み合わせてAmazonで実際の商品を探せる具体的な検索語を先頭に設定してください。\n"
         "構造化JSONのみを返してください。\n"
     ) + json.dumps(_context(), ensure_ascii=False)
     def local():
@@ -201,8 +202,8 @@ def validate_candidate(candidate: dict) -> None:
         raise PlanningError('reader_persona requires reader, knowledge_level, purchase_goal and editorial_depth')
     if candidate['category'] not in CATEGORIES:
         raise PlanningError(f'candidate category outside canon: {candidate["category"]}')
-    if not isinstance(candidate['comparison_axes'], list) or len(candidate['comparison_axes']) < 2:
-        raise PlanningError('candidate requires at least two topic-specific comparison axes')
+    if not isinstance(candidate['comparison_axes'], list) or len(candidate['comparison_axes']) != 3:
+        raise PlanningError('candidate requires exactly three topic-specific comparison axes')
     axis_ids = set()
     for axis in candidate['comparison_axes']:
         if not isinstance(axis, dict) or not axis.get('id') or not axis.get('label') or not axis.get('keywords'):
