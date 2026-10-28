@@ -7,7 +7,7 @@ def build_editorial_plan(topic, evidence, ceo_rework=''):
     if len(products) != 6 or len({p.get('ref') for p in products}) != 6 or len(axes) < 2:
         raise ValueError('editorial plan requires 6 refs and 2 axes')
     requirements = [
-        {'id':'E01','section':'lead','instruction':'読者の悩みと使用場面を具体化して導入する'},
+        {'id':'E01','section':'lead','instruction':'読者の悩みと使用場面・比較ポイントを具体化して導入する。冒頭のleadには商品名・ブランド名を記載しない'},
         {'id':'E02','section':'summary','instruction':'第一候補と用途別候補を理由付きで示す'},
         {'id':'E03','section':'comparison_groups','instruction':'3組2商品ずつの相違と選び分けを説明する'},
         {'id':'E04','section':'products','instruction':'全6商品それぞれの固有の推薦理由・対象読者・差を説明する'},
