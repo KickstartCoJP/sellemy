@@ -286,6 +286,8 @@ def select_viable_topic(
                     probes[-1]['acceptance'] = blocked(reasons)
                     continue
                 selected = {**topic, '_product_acceptance': acceptance,
+                            '_accepted_selection_asins': [p['asin'] for p in six],
+                            '_accepted_selection_metadata': selection,
                             'selection_reason': 'six products passed independent evidence acceptance'}
                 if getattr(source, 'provider_metadata', None):
                     selected['_planning_provider_metadata'] = source.provider_metadata
@@ -1290,7 +1292,14 @@ def run(
             result['planning_provider'] = planning_provider
             result['topic'] = topic
             result['viability_probes'] = viability_probes
-            selected, selection = select_six(candidates, topic, feedback)
+            accepted_asins = topic.pop('_accepted_selection_asins', None)
+            accepted_selection = topic.pop('_accepted_selection_metadata', None)
+            if accepted_asins and accepted_selection:
+                by_asin = {p['asin']: p for p in candidates}
+                selected = [by_asin[a] for a in accepted_asins]
+                selection = accepted_selection
+            else:
+                selected, selection = select_six(candidates, topic, feedback)
             evidence = build_evidence(topic, selected, selection)
             job = create_job(
                 topic=topic, evidence=evidence, selection=selection,
