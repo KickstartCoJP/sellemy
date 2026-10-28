@@ -96,6 +96,9 @@ def discover_products(topic: dict, *, cache_only: bool) -> list[dict]:
     candidates, seen = [], set()
     for row in rows[:20] if not cache_only else rows:
         asin = (row.get('asin') or '').upper()
+        from product_candidate_registry import is_ng
+        if is_ng(asin):
+            continue
         title, image = (row.get('title') or '').strip(), (row.get('image_url') or '').strip()
         if not re.fullmatch(r'[A-Z0-9]{10}', asin) or not title or not image or asin in seen:
             continue
@@ -851,7 +854,8 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
     topic = dict(read_artifact(slug, 'topic.json'))
     topic.pop('_product_acceptance', None)
     progress = read_artifact(slug, 'product-search-progress.json', {}) or {}
-    pool = list(progress.get('candidates') or [])
+    from product_candidate_registry import is_ng, set_ng
+    pool = [p for p in (progress.get('candidates') or []) if not is_ng(p.get('asin'))]
     excluded = set(progress.get('excluded_asins') or [])
     tried = list(progress.get('queries') or [])
     reviewed_sets = set(progress.get('reviewed_sets') or [])
@@ -860,7 +864,7 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
     previous = read_artifact(slug, 'evidence.json', {})
     pool.extend(p for p in previous.get('products', [])
                 if all(p.get(k) for k in ('asin', 'amazon_title', 'image_url')))
-    pool, _ = dedupe_content_products(pool)
+    pool, _ = dedupe_content_products([p for p in pool if not is_ng(p.get('asin'))])
 
     def save_progress():
         write_artifact(slug, 'product-search-progress.json', {
@@ -932,6 +936,7 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
                     pinned.append(asin)
                 else:
                     known_bad.add(asin)
+                    set_ng(asin, 'independent product review NG', source=slug)
         pin_set = set(pinned)
         if len(pin_set) == 6 and latest:
             previous_review = read_artifact(slug, latest[0].name, {}) or {}

@@ -131,7 +131,8 @@ def select_six(candidates: list[dict], topic: dict, feedback: dict, *, pinned: l
         return bool(_text(item).strip() and corpus and any(
             str(word).lower() in corpus for axis in axes for word in axis.get('keywords', [])))
 
-    pool = [p for p in distinct if eligible(p)]
+    from product_candidate_registry import is_ng
+    pool = [p for p in distinct if eligible(p) and not is_ng(p.get('asin'))]
     if len(pool) < 6:
         raise ProductSelectionError(f'needs_product_reselection: {len(pool)} eligible candidates; require 6')
     for axis in axes:
