@@ -1354,7 +1354,10 @@ def run(
 
             return slug
 
-        recovery = eligible_job()
+        # Scheduled admission is reserved for fresh production. A slow or repeatedly
+        # failing recovery is handled by off-slot recovery-only ticks and must not
+        # monopolize the daily CEO-review pipeline.
+        recovery = None if scheduled and not recovery_only else eligible_job()
         unfinished = _unfinished_jobs()
         if recovery:
             slug = recovery['slug']
