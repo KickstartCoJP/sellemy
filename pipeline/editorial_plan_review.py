@@ -3,7 +3,9 @@ import json
 from comparison_acceptance import digest
 
 class EditorialPlanError(ValueError):
-    pass
+    def __init__(self, message, *, receipt=None):
+        super().__init__(message)
+        self.receipt = receipt if isinstance(receipt, dict) else {}
 
 def validate_receipt(plan, payload, receipt):
     if not isinstance(receipt, dict):
@@ -50,5 +52,5 @@ def independent_plan_review(plan, payload, judge=None, *, evidence=None):
     receipt = judge(instruction + json.dumps(data,ensure_ascii=False))
     errors = validate_receipt(plan,payload,receipt)
     if errors:
-        raise EditorialPlanError('; '.join(errors))
+        raise EditorialPlanError('; '.join(errors), receipt=receipt)
     return receipt

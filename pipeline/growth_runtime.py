@@ -640,7 +640,8 @@ def _writer_stage(slug: str, result: dict) -> None:
                 plan_receipt = independent_plan_review(editorial_plan, payload, evidence=evidence)
                 write_artifact(slug, 'editorial-plan-review.json', plan_receipt)
             except EditorialPlanError as exc:
-                write_artifact(slug, 'editorial-plan-review.json', {})
+                # Preserve rejected per-criterion evidence for independent owner analysis.
+                write_artifact(slug, 'editorial-plan-review.json', exc.receipt)
                 feedback['editorial_plan_requirements'] = str(exc)
                 save_writer_result(slug, payload=payload, qa={**qa, 'overall_pass': False},
                     findings=findings+[str(exc)], feedback=feedback, metadata=metadata, passed=False)

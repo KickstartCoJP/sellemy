@@ -3,7 +3,7 @@ import json
 from datetime import datetime, timezone, timedelta
 from unittest.mock import patch
 from editorial_plan import build_editorial_plan
-from editorial_plan_review import independent_plan_review
+from editorial_plan_review import independent_plan_review, EditorialPlanError
 from comparison_acceptance import digest
 import growth_recovery
 
@@ -29,6 +29,20 @@ class EditorialPlanTests(unittest.TestCase):
                     'payload_hash':digest(payload),
                     'items':[{'id':r['id'],'verdict':'PASS','article_quote':payload['lead'], 'reason':'ok'} for r in plan['requirements']]}
         self.assertEqual(len(independent_plan_review(plan,payload,judge,evidence=evidence)['items']),8)
+
+    def test_rejected_review_keeps_criterion_receipt(self):
+        evidence={'products':[{'ref':f'p{i}'} for i in range(1,7)],
+                  'comparison_axes':[{'id':'a'},{'id':'b'}]}
+        plan=build_editorial_plan({},evidence)
+        payload={'lead':'読者の使用場面を説明する'}
+        receipt={'schema':'sellemy-editorial-plan-review/v1',
+                 'plan_hash':digest(plan),'payload_hash':digest(payload),
+                 'items':[{'id':x['id'],'verdict':'FAIL','article_quote':payload['lead'],
+                           'reason':'未達'} for x in plan['requirements']]}
+        with self.assertRaises(EditorialPlanError) as caught:
+            independent_plan_review(plan,payload,lambda prompt:receipt,evidence=evidence)
+        self.assertEqual(caught.exception.receipt,receipt)
+        self.assertIn('E08',str(caught.exception))
 
     def test_product_hold_is_retried_hourly(self):
         now=datetime(2026,10,28,5,tzinfo=timezone.utc)
