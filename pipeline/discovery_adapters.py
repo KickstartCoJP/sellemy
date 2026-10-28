@@ -40,8 +40,10 @@ class _AmazonSearchParser(HTMLParser):
    label=a.get('aria-label') or ''
    if re.search(r'(?i)sponsored|スポンサー|スポンサード',label):
     self.card['sponsored']=True
-   if tag=='span' and ('s-underline-text' in (a.get('class') or '').split() or re.search(r'(?i)customerReviews|acrCustomerReviewText',str(a.get('id','')))):
+   if tag in {'span','a'} and ('s-underline-text' in (a.get('class') or '').split() or re.search(r'(?i)customerReviews|acrCustomerReviewText',str(a.get('id','')))):
     self.in_count=True
+   count_match=re.search(r'^\s*([0-9][0-9,]*)\s*(?:レーティング|ratings?)',label,re.I)
+   if count_match:self.card['review_count']=int(count_match.group(1).replace(',',''))
    if tag=='span' and a.get('class') and 'a-icon-alt' in a.get('class','').split():
     self.in_rating=True
    if tag=='h2' and not self.in_h2:
@@ -52,7 +54,7 @@ class _AmazonSearchParser(HTMLParser):
   if self.card is not None and re.fullmatch(r'(?i)sponsored|スポンサー|スポンサード',data.strip()):
    self.card['sponsored']=True
   if self.card is not None and self.in_count:
-   m=re.fullmatch(r'\s*([0-9][0-9,]*)\s*',data)
+   m=re.fullmatch(r'\s*\(?([0-9][0-9,]*)\)?\s*',data)
    if m:self.card['review_count']=int(m.group(1).replace(',',''))
   if self.card is not None and self.in_rating:
    m=re.search(r'5つ星のうち\s*([0-5](?:[.,][0-9])?)|([0-5](?:[.,][0-9])?)\s*(?:out of 5|つ星のうち)',data,re.I)
@@ -63,7 +65,9 @@ class _AmazonSearchParser(HTMLParser):
  def handle_endtag(self,tag):
   if tag=='span':self.in_rating=False;self.in_count=False
   if self.card is not None and self.in_h2 and tag=='h2' and self.depth==self.h2_depth:
-   self.card['title']=' '.join(self.title_parts).strip();self.in_h2=False;self.h2_depth=None
+   title=' '.join(self.title_parts).strip()
+   if title and not self.card['title'] and title.lower()!='climatepartner verified':self.card['title']=title
+   self.in_h2=False;self.h2_depth=None
   if self.card is not None and tag=='div' and self.depth==self.card_depth:
    if self.card['title'] and self.card['image_url'] and not self.card['sponsored']:
     self.card['item_url']=f"https://www.amazon.co.jp/dp/{self.card['asin']}"
