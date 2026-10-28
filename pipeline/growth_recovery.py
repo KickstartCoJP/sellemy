@@ -231,14 +231,28 @@ def reopen_product_failed_for_reselection(slug: str) -> dict:
 
 
 def recover_legacy_failed_jobs() -> list[str]:
+    """Automatically replace pre-axis-selection work with fresh Planning.
+
+    A legacy job cannot satisfy current 3-axis QA by rewriting alone.
+    """
     recovered = []
     for row in all_jobs():
-        if row.get('status') == 'FAILED' and row.get('current_stage') == 'WRITER_FAILED':
+        if row.get('status') not in {'ACTIVE', 'FAILED'} or row.get('current_stage') in {'STATE_HOLD', 'CHAT_REVIEW_PENDING'}:
+            continue
+        selection = read_artifact(row['slug'], 'selection.json', {}) or {}
+        if len(selection.get('axes') or []) != 3:
+            write_artifact(row['slug'], 'planning-restart-required.json', {
+                'reason': 'legacy selection lacks 3 axis groups',
+                'previous_stage': row.get('current_stage'),
+                'topic': read_artifact(row['slug'], 'topic.json', {}),
+            })
+            discard(row['slug'], 'Superseded by current three-axis Planning specification')
+            recovered.append(row['slug'])
+        elif row.get('status') == 'FAILED':
             row['status'] = 'ACTIVE'
             row['current_stage'] = 'QA_FAILED'
             row['next_retry_at'] = _iso()
-            row['quality_ng_by_gate'] = {**(row.get('quality_ng_by_gate') or {}), 'writer': 0}
-            _save_state(row, event='LEGACY_WRITER_FAILURE_RESUMED')
+            _save_state(row, event='NONTERMINAL_WRITER_RECOVERY')
             recovered.append(row['slug'])
     return recovered
 

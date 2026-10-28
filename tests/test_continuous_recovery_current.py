@@ -24,3 +24,15 @@ def test_tenth_quality_failure_is_nonblocking(tmp_path, monkeypatch):
     assert result['status']=='ACTIVE'
     assert result['current_stage']=='QA_FAILED'
     assert gr.read_artifact('testcase','ceo-inspection-required.json')['failure_count']==10
+
+def test_legacy_selection_requires_new_planning(tmp_path, monkeypatch):
+    import growth_recovery as gr
+    monkeypatch.setattr(gr,'JOBS_ROOT',tmp_path/'jobs')
+    monkeypatch.setattr(gr,'EVENTS_PATH',tmp_path/'events.jsonl')
+    s={'schema_version':1,'slug':'old-case','status':'FAILED','current_stage':'WRITER_FAILED',
+       'created_at':gr._iso(),'updated_at':gr._iso(),'next_retry_at':None}
+    gr._save_state(s,event='CREATED')
+    gr.write_artifact('old-case','topic.json',{'slug':'old-case'})
+    assert gr.recover_legacy_failed_jobs()==['old-case']
+    assert gr.load_job('old-case')['status']=='DISCARDED'
+    assert gr.read_artifact('old-case','planning-restart-required.json')['previous_stage']=='WRITER_FAILED'
