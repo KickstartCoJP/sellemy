@@ -234,6 +234,10 @@ def select_viable_topic(
                 probes.append({'round': round_index + 1, 'slug': topic['slug'], 'candidate_count': 0, 'error': f'{type(exc).__name__}: {exc}'})
             if len(products) >= 6:
                 try:
+                    if not cache_only and len(products) < 20:
+                        products, batches = replenish_products(topic, products, cache_only=False)
+                        probes[-1]['additional_batches'] = batches
+                        probes[-1]['candidate_count_after_replenish'] = len(products)
                     if _researchable_candidates(products, cache_only=cache_only):
                         products = research_selected(products)
                     six, selection = select_six(products, topic, feedback)
