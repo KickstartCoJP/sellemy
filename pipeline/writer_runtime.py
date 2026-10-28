@@ -165,6 +165,12 @@ def _prompt(topic: dict, evidence: dict, *, previous_payload: dict | None = None
                            'and conclusion (120-145). Keep each public field within its own '
                            'hard QA bounds; do not rely on source JSON or HTML markup in length calculations. '
                            'Return revised prose as the COMPLETE JSON payload, not a patch.\n')
+    if isinstance(gate_feedback,dict) and gate_feedback.get('editorial_plan_requirements'):
+        prompt += ('\nMANDATORY EDITORIAL QUALITY REMEDIATION: Previous independent editorial review failed: '
+                   + str(gate_feedback['editorial_plan_requirements'])[:1600]
+                   + '\nRewrite all affected public prose in clear, natural Japanese. Do not merely assert that the '
+                   'criterion is satisfied. Eliminate unnatural phrases, internal audit commentary, unsupported '
+                   'comparisons, and repeated formulaic descriptions. Recheck E07 on the final complete article.\n')
     if isinstance(gate_feedback,dict) and gate_feedback.get('ceo_rework'):
         prompt += '\nMANDATORY CEO REWORK: '+str(gate_feedback['ceo_rework'])+'\nDo not repeat the cited defects.\n'
     return prompt
