@@ -143,7 +143,16 @@ def _invoke_planning(kind: str, command: list[str], model: str, prompt: str, tim
 
 
 def discover_candidates() -> list[dict]:
-    prompt = CONTRACT + '\nPlanning candidates are provisional until Product/Evidence acceptance. Include reader_persona with a concrete reader, prior knowledge, buying purpose, and appropriate editorial depth for each candidate. Propose observable topic-specific axes, not generic promotional terms. Evidence availability means that product identity and decision-critical comparison facts can realistically be sourced from manufacturer/official pages, manuals/specifications, or other traceable reliable sources; marketplace title availability alone is not sufficient. Keep the topic to one coherent product class and purchase decision; accessories/refills/parts belong only when the search intent explicitly targets them.\n' + 'You plan Japanese Sellemy product-comparison topics. Generate fresh candidates from current season, search/purchase intent, product viability and the supplied context. Return structured JSON only.\n' + json.dumps(_context(), ensure_ascii=False)
+    prompt = CONTRACT + '\n' + (
+        "企画候補は、商品選定・根拠情報の審査に合格するまで暫定的なものとして扱ってください。\n"
+        "各候補には、具体的な想定読者、事前知識、購入目的、適切な説明の深さを含む `reader_persona` を設定してください。\n"
+        "一般的な宣伝文句ではなく、テーマ固有の客観的に確認できる軸で提案してください。\n"
+        "根拠情報の入手可能性を評価する際には、商品の識別情報と購入判断に重要な比較事実を、メーカー公式ページ、取扱説明書、仕様書、その他追跡可能で信頼できる情報源から現実的に取得できることを基準にしてください。ECサイトの商品タイトルが見つかるだけでは不十分です。\n"
+        "企画テーマは、一貫した商品カテゴリと購入目的に絞ってください。アクセサリー、詰め替え品、交換部品などは、検索意図が明確にそれらを対象としている場合に限り、企画に含めてください。\n"
+        "あなたは、モノとの出会いを創り出すサイト、Sellemyの商品紹介記事の企画を担当します。\n"
+        "現在の季節、検索意図、購買意図、商品選定の成立可能性、提供されたコンテキストをもとに、新しい企画候補を生成してください。\n"
+        "構造化JSONのみを返してください。\n"
+    ) + json.dumps(_context(), ensure_ascii=False)
     def local():
         batch = _discover_local_candidates(prompt)
         return {'candidates': list(batch)}, batch.provider_metadata
