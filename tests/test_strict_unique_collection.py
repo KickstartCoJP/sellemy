@@ -2,7 +2,7 @@ from unittest.mock import patch
 import sys
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'pipeline'))
-import growth_runtime as g
+import growth_role_business as g
 
 
 def _p(i):

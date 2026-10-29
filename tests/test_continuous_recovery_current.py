@@ -1,5 +1,5 @@
 import inspect
-from growth_runtime import _writer_stage
+from role_execution_writer import writer as _writer_stage
 from growth_recovery import mark_failure
 
 def test_writer_has_no_retry_limit():

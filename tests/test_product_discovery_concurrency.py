@@ -4,7 +4,7 @@ from threading import Barrier, Lock
 from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'pipeline'))
-import growth_runtime
+import growth_role_business as growth_runtime
 
 
 def _row(index):

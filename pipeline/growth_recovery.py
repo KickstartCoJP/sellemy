@@ -106,7 +106,8 @@ def read_artifact(slug: str, name: str, default: Any = None) -> Any:
 
 
 def create_job(*, topic: dict, evidence: dict, selection: dict, planning_provider: dict | None,
-               viability_probes: list[dict], source: str = 'runtime') -> dict:
+               viability_probes: list[dict], source: str = 'runtime',
+               save_planning_provider: bool = True) -> dict:
     slug = str(topic['slug'])
     if state_path(slug).is_file():
         return load_job(slug)
@@ -137,7 +138,8 @@ def create_job(*, topic: dict, evidence: dict, selection: dict, planning_provide
     write_artifact(slug, 'topic.json', topic)
     write_artifact(slug, 'evidence.json', evidence)
     write_artifact(slug, 'selection.json', selection)
-    write_artifact(slug, 'planning-provider.json', planning_provider or {})
+    if save_planning_provider:
+        write_artifact(slug, 'planning-provider.json', planning_provider or {})
     write_artifact(slug, 'viability-probes.json', viability_probes)
     return _save_state(state, event='JOB_CREATED', detail={'source': source})
 
@@ -316,10 +318,11 @@ def set_stage(slug: str, stage: str, *, event: str = 'STAGE_ADVANCED', detail: d
 
 
 def save_writer_result(slug: str, *, payload: dict, qa: dict, findings: list[str], feedback: dict,
-                       metadata: dict, passed: bool) -> dict:
+                       metadata: dict, passed: bool, persist_payload: bool = True) -> dict:
     from qa_certification import certify
     state = load_job(slug)
-    write_artifact(slug, 'payload.json', payload)
+    if persist_payload:
+        write_artifact(slug, 'payload.json', payload)
     write_artifact(slug, 'qa.json', qa)
     write_artifact(slug, 'review-findings.json', findings)
     write_artifact(slug, 'gate-feedback.json', feedback)

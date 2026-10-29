@@ -11,7 +11,7 @@ from pathlib import Path
 
 from codex_provider import _strict_schema, _usage
 from growth_recovery import job_dir, read_artifact
-from growth_runtime import evaluate_candidate, _gate_feedback
+from growth_role_business import evaluate_candidate, _gate_feedback
 from writer_runtime import WRITER_JSON_SCHEMA, _prompt, invoke_writer
 
 ROOT = Path(__file__).resolve().parents[1]

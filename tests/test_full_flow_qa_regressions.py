@@ -3,7 +3,7 @@ from pathlib import Path
 from unittest.mock import patch
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'pipeline'))
 from tests.fixtures import valid_payload,valid_evidence
-from growth_runtime import evaluate_candidate
+from growth_role_business import evaluate_candidate
 
 def test_writer_qa_receives_real_image_audit_when_mandatory():
     p,e=valid_payload(),valid_evidence()

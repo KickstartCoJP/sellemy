@@ -1,6 +1,6 @@
 from copy import deepcopy
 from quality_fixtures import accepted_fixture
-from growth_runtime import build_evidence
+from growth_role_business import build_evidence
 
 
 def test_reselected_source_ref_cannot_override_canonical_product_refs():

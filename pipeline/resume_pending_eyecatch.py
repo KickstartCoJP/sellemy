@@ -7,7 +7,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from eyecatch_owner_bridge import pending_dir
-from growth_runtime import ROOT, _publish
+from growth_role_business import ROOT
 from publish_gate import PublishGate
 from publish_payload import run as publish_payload
 

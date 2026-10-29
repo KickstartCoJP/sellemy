@@ -15,6 +15,7 @@ sys.path.insert(0, str(ROOT / 'pipeline'))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import growth_runtime  # noqa: E402
+import growth_role_business as business  # noqa: E402
 import growth_recovery  # noqa: E402
 import planning_runtime  # noqa: E402
 import writer_runtime  # noqa: E402
@@ -85,7 +86,7 @@ class ScheduledRouteTests(unittest.TestCase):
         )
 
     def test_production_entry_has_no_finite_topic_queue(self):
-        source = (ROOT / 'pipeline' / 'growth_runtime.py').read_text(encoding='utf-8')
+        source = (ROOT / 'pipeline' / 'growth_role_business.py').read_text(encoding='utf-8')
         self.assertNotIn('growth_topics', source)
         self.assertNotIn('def next_topic', source)
         self.assertNotIn('TOPICS =', source)
@@ -94,12 +95,12 @@ class ScheduledRouteTests(unittest.TestCase):
     def test_porcelain_parser_preserves_first_modified_path(self):
         output = ' M data/sellemy.db\n?? article/gadget/new.html\n'
         self.assertEqual(
-            growth_runtime._parse_porcelain_paths(output),
+            business._parse_porcelain_paths(output),
             {'data/sellemy.db', 'article/gadget/new.html'},
         )
 
     def test_compact_search_key_is_bounded(self):
-        key = growth_runtime._compact_search_key({
+        key = business._compact_search_key({
             'brand': 'Exampleのストアを表示',
             'amazon_title': '【2026新モデル】 加湿器 大容量 9L 超高機能 長時間運転 その他の非常に長い販売文句' * 3,
         })
@@ -108,7 +109,7 @@ class ScheduledRouteTests(unittest.TestCase):
         self.assertNotIn('【', key)
 
     def test_publication_unit_includes_catalog_and_top(self):
-        paths = growth_runtime._expected_publish_paths('new', 'beauty')
+        paths = business._expected_publish_paths('new', 'beauty')
         self.assertIn('json/products.json', paths)
         self.assertIn('index.html', paths)
         self.assertIn('data/sellemy.db', paths)
@@ -121,18 +122,17 @@ class ScheduledRouteTests(unittest.TestCase):
         self.assertNotIn('HEAD differs from origin/main; abort', script)
 
     def test_runtime_uses_common_publish_gate(self):
-        source = (ROOT / 'pipeline' / 'growth_runtime.py').read_text(encoding='utf-8')
+        source = (ROOT / 'pipeline' / 'role_execution_publish.py').read_text(encoding='utf-8')
         self.assertIn('with PublishGate(ROOT).acquire()', source)
-        gate = source.index('with PublishGate(ROOT).acquire()')
-        designer = source.index('receipt = ensure_routed_eyecatch')
-        publish = source.index('commit = _publish')
-        self.assertLess(gate, designer)
-        self.assertLess(designer, publish)
+        self.assertIn('receipt = ensure_routed_eyecatch', source)
+        self.assertIn('commit = _publish', source)
+        self.assertIn("if load_job(slug).get('current_stage') != 'PUBLISH_PENDING'", source)
 
     def test_existing_ga4_measurement_is_preserved(self):
         ga4 = (ROOT / 'js' / 'ga4.js').read_text(encoding='utf-8')
         self.assertIn('G-SZ5RQR5H7L', ga4)
-        rendered = growth_runtime.render_article(valid_payload(), valid_evidence())
+        from renderer import render_article
+        rendered = render_article(valid_payload(), valid_evidence())
         self.assertIn('G-SZ5RQR5H7L', rendered)
 
 
@@ -140,10 +140,10 @@ class ProductViabilityPlanningTests(unittest.TestCase):
     def setUp(self):
         # These tests cover candidate scanning, not product acceptance. The contract
         # integration tests exercise actual source/semantic rejection separately.
-        for item in [patch.object(growth_runtime, 'select_six', return_value=([], {})),
-                     patch.object(growth_runtime, 'build_evidence', return_value={}),
-                     patch.object(growth_runtime, 'independent_review', return_value={}),
-                     patch.object(growth_runtime, 'receipt_issues', return_value=[])]:
+        for item in [patch.object(business, 'select_six', return_value=([], {})),
+                     patch.object(business, 'build_evidence', return_value={}),
+                     patch.object(business, 'independent_review', return_value={}),
+                     patch.object(business, 'receipt_issues', return_value=[])]:
             item.start(); self.addCleanup(item.stop)
 
     def _topic(self, slug):
@@ -157,10 +157,10 @@ class ProductViabilityPlanningTests(unittest.TestCase):
         first, second = self._topic('first-topic'), self._topic('second-topic')
         products = [{'asin': f'B0TEST{i:04d}'} for i in range(6)]
         with (
-            patch.object(growth_runtime, 'rank_candidates', return_value=[first, second]),
-            patch.object(growth_runtime, 'discover_products', side_effect=[[], products]) as discover,
+            patch.object(business, 'rank_candidates', return_value=[first, second]),
+            patch.object(business, 'discover_products', side_effect=[[], products]) as discover,
         ):
-            topic, rows, probes = growth_runtime.select_viable_topic([first, second], {}, cache_only=False)
+            topic, rows, probes = business.select_viable_topic([first, second], {}, cache_only=False)
         self.assertEqual(topic['slug'], 'second-topic')
         self.assertIs(rows, products)
         self.assertEqual(discover.call_count, 2)
@@ -171,11 +171,11 @@ class ProductViabilityPlanningTests(unittest.TestCase):
         products = [{'asin': f'B0TEST{i:04d}', 'amazon_title': f'Model {i}',
                      'image_url': f'https://example.com/{i}.jpg', 'sources': []}
                     for i in range(6)]
-        with (patch.object(growth_runtime, 'rank_candidates', return_value=[topic]),
-              patch.object(growth_runtime, 'discover_products', return_value=products),
-              patch.object(growth_runtime, 'research_selected', return_value=products) as research,
-              patch.object(growth_runtime, 'select_six', return_value=([], {})) as select):
-            growth_runtime.select_viable_topic([topic], {}, cache_only=False)
+        with (patch.object(business, 'rank_candidates', return_value=[topic]),
+              patch.object(business, 'discover_products', return_value=products),
+              patch.object(business, 'research_selected', return_value=products) as research,
+              patch.object(business, 'select_six', return_value=([], {})) as select):
+            business.select_viable_topic([topic], {}, cache_only=False)
         research.assert_called_once_with(products)
         select.assert_called_once_with(products, topic, {})
 
@@ -184,14 +184,14 @@ class ProductViabilityPlanningTests(unittest.TestCase):
         rows = [{'asin': f'B0RESE{i:04d}', 'amazon_title': f'Model {i}',
                  'image_url': f'https://example.com/{i}.jpg', 'sources': []}
                 for i in range(6)]
-        with (patch.object(growth_runtime, 'rank_candidates', return_value=[first, second]),
-              patch.object(growth_runtime, 'discover_products', return_value=rows),
-              patch.object(growth_runtime, 'research_selected', return_value=rows) as research,
-              patch.object(growth_runtime, 'replenish_products', return_value=(rows, [])),
-              patch.object(growth_runtime, 'select_six', side_effect=[
-                  growth_runtime.ProductSelectionError('not enough evidence'),
-                  growth_runtime.ProductSelectionError('still not enough evidence'), (rows, {})])):
-            topic, _, _ = growth_runtime.select_viable_topic([first, second], {}, cache_only=False)
+        with (patch.object(business, 'rank_candidates', return_value=[first, second]),
+              patch.object(business, 'discover_products', return_value=rows),
+              patch.object(business, 'research_selected', return_value=rows) as research,
+              patch.object(business, 'replenish_products', return_value=(rows, [])),
+              patch.object(business, 'select_six', side_effect=[
+                  business.ProductSelectionError('not enough evidence'),
+                  business.ProductSelectionError('still not enough evidence'), (rows, {})])):
+            topic, _, _ = business.select_viable_topic([first, second], {}, cache_only=False)
         self.assertEqual(topic['slug'], 'research-second')
         self.assertEqual(research.call_count, 3)
 
@@ -204,13 +204,13 @@ class ProductViabilityPlanningTests(unittest.TestCase):
         enriched = [{**p, 'sources': [*p['sources'], {'source_type': 'manufacturer_official',
                      'verified': True, 'excerpt': f'Model {i} official facts'}]}
                     for i, p in enumerate(rows)]
-        with (patch.object(growth_runtime, 'rank_candidates', return_value=[topic]),
-              patch.object(growth_runtime, 'discover_products', return_value=rows),
-              patch.object(growth_runtime, 'research_selected', side_effect=[rows, enriched]) as research,
-              patch.object(growth_runtime, 'select_six', side_effect=[(rows, {}), (enriched, {})]),
-              patch.object(growth_runtime, 'receipt_issues', side_effect=[['facts insufficient'], []]) as check,
-              patch.object(growth_runtime, 'independent_review') as review):
-            chosen, candidates, _ = growth_runtime.select_viable_topic([topic], {}, cache_only=False)
+        with (patch.object(business, 'rank_candidates', return_value=[topic]),
+              patch.object(business, 'discover_products', return_value=rows),
+              patch.object(business, 'research_selected', side_effect=[rows, enriched]) as research,
+              patch.object(business, 'select_six', side_effect=[(rows, {}), (enriched, {})]),
+              patch.object(business, 'receipt_issues', side_effect=[['facts insufficient'], []]) as check,
+              patch.object(business, 'independent_review') as review):
+            chosen, candidates, _ = business.select_viable_topic([topic], {}, cache_only=False)
         self.assertEqual(chosen['slug'], 'evidence-escalation')
         self.assertEqual(candidates, enriched)
         self.assertEqual(research.call_count, 2)
@@ -229,15 +229,15 @@ class ProductViabilityPlanningTests(unittest.TestCase):
             {'ref': f'p{i+1}', 'adequate_facts': i != 5, 'topic_fit': True}
             for i in range(6)]}}
         accepted_review = {'review': {'status': 'ACCEPTED', 'products': []}}
-        with (patch.object(growth_runtime, 'rank_candidates', return_value=[topic]),
-              patch.object(growth_runtime, 'discover_products', return_value=products),
-              patch.object(growth_runtime, 'research_selected', side_effect=[products, initial]) as research,
-              patch.object(growth_runtime, 'select_six', side_effect=[(initial, {}), (replacement, {})]),
-              patch.object(growth_runtime, 'build_evidence', side_effect=lambda t, rows, selection: {
+        with (patch.object(business, 'rank_candidates', return_value=[topic]),
+              patch.object(business, 'discover_products', return_value=products),
+              patch.object(business, 'research_selected', side_effect=[products, initial]) as research,
+              patch.object(business, 'select_six', side_effect=[(initial, {}), (replacement, {})]),
+              patch.object(business, 'build_evidence', side_effect=lambda t, rows, selection: {
                   'products': [{'ref': f'p{i+1}', 'asin': p['asin']} for i, p in enumerate(rows)]}),
-              patch.object(growth_runtime, 'independent_review', side_effect=[rejected_review, accepted_review]) as reviewer,
-              patch.object(growth_runtime, 'receipt_issues', side_effect=[['p6 lacks evidence'], []])):
-            selected_topic, candidates, _ = growth_runtime.select_viable_topic([topic], {}, cache_only=False)
+              patch.object(business, 'independent_review', side_effect=[rejected_review, accepted_review]) as reviewer,
+              patch.object(business, 'receipt_issues', side_effect=[['p6 lacks evidence'], []])):
+            selected_topic, candidates, _ = business.select_viable_topic([topic], {}, cache_only=False)
         self.assertEqual(selected_topic['slug'], 'alternate-evidence')
         self.assertEqual({p['asin'] for p in candidates}, {p['asin'] for p in products})
         self.assertEqual(research.call_count, 2)
@@ -248,19 +248,19 @@ class ProductViabilityPlanningTests(unittest.TestCase):
         products = [{'asin': f'B0TEST{i:04d}'} for i in range(8)]
         accepted = {'review': {'status': 'ACCEPTED'}}
         with (
-            patch.object(growth_runtime, 'rank_candidates', return_value=[first, second]),
-            patch.object(growth_runtime, 'discover_products', side_effect=[products, products]),
-            patch.object(growth_runtime, 'replenish_products', return_value=(products, [])),
-            patch.object(growth_runtime, 'select_six', side_effect=[
-                growth_runtime.ProductSelectionError('only 5 documented topic-axis matches'),
-                growth_runtime.ProductSelectionError('still 5 matches'),
+            patch.object(business, 'rank_candidates', return_value=[first, second]),
+            patch.object(business, 'discover_products', side_effect=[products, products]),
+            patch.object(business, 'replenish_products', return_value=(products, [])),
+            patch.object(business, 'select_six', side_effect=[
+                business.ProductSelectionError('only 5 documented topic-axis matches'),
+                business.ProductSelectionError('still 5 matches'),
                 (products[:6], {}),
             ]),
-            patch.object(growth_runtime, 'independent_review', return_value=accepted),
-            patch.object(growth_runtime, 'receipt_issues', return_value=[]),
-            patch.object(growth_runtime, 'create_job') as create,
+            patch.object(business, 'independent_review', return_value=accepted),
+            patch.object(business, 'receipt_issues', return_value=[]),
+            patch.object(business, 'create_job') as create,
         ):
-            topic, rows, probes = growth_runtime.select_viable_topic([first, second], {}, cache_only=False)
+            topic, rows, probes = business.select_viable_topic([first, second], {}, cache_only=False)
         self.assertEqual(topic['slug'], 'second-topic')
         self.assertIs(rows, products)
         self.assertEqual([probe['slug'] for probe in probes], ['first-topic', 'second-topic'])
@@ -272,10 +272,10 @@ class ProductViabilityPlanningTests(unittest.TestCase):
         topics = [self._topic(f'topic-{i}') for i in range(7)]
         products = [{'asin': f'B0TEST{i:04d}'} for i in range(6)]
         with (
-            patch.object(growth_runtime, 'rank_candidates', return_value=topics),
-            patch.object(growth_runtime, 'discover_products', side_effect=[[], [], [], [], [], [], products]) as discover,
+            patch.object(business, 'rank_candidates', return_value=topics),
+            patch.object(business, 'discover_products', side_effect=[[], [], [], [], [], [], products]) as discover,
         ):
-            topic, rows, probes = growth_runtime.select_viable_topic(topics, {}, cache_only=False)
+            topic, rows, probes = business.select_viable_topic(topics, {}, cache_only=False)
         self.assertEqual(topic['slug'], 'topic-6')
         self.assertIs(rows, products)
         self.assertEqual(discover.call_count, 7)
@@ -286,11 +286,11 @@ class ProductViabilityPlanningTests(unittest.TestCase):
         second_round = [self._topic('round-two-a')]
         products = [{'asin': f'B0TEST{i:04d}'} for i in range(6)]
         with (
-            patch.object(growth_runtime, 'discover_candidates', side_effect=[first_round, second_round]) as planning,
-            patch.object(growth_runtime, 'rank_candidates', side_effect=[first_round, second_round]),
-            patch.object(growth_runtime, 'discover_products', side_effect=[[], [], products]),
+            patch.object(business, 'discover_candidates', side_effect=[first_round, second_round]) as planning,
+            patch.object(business, 'rank_candidates', side_effect=[first_round, second_round]),
+            patch.object(business, 'discover_products', side_effect=[[], [], products]),
         ):
-            topic, rows, probes = growth_runtime.select_viable_topic(None, {}, cache_only=False, max_rounds=2)
+            topic, rows, probes = business.select_viable_topic(None, {}, cache_only=False, max_rounds=2)
         self.assertEqual(topic['slug'], 'round-two-a')
         self.assertIs(rows, products)
         self.assertEqual(planning.call_count, 2)
@@ -300,11 +300,11 @@ class ProductViabilityPlanningTests(unittest.TestCase):
         batches = [[self._topic(f'fresh-{n}')] for n in range(5)]
         products = [{'asin': f'B0TEST{i:04d}'} for i in range(6)]
         with (
-            patch.object(growth_runtime, 'discover_candidates', side_effect=batches) as planning,
-            patch.object(growth_runtime, 'rank_candidates', side_effect=batches),
-            patch.object(growth_runtime, 'discover_products', side_effect=[[], [], [], [], products]),
+            patch.object(business, 'discover_candidates', side_effect=batches) as planning,
+            patch.object(business, 'rank_candidates', side_effect=batches),
+            patch.object(business, 'discover_products', side_effect=[[], [], [], [], products]),
         ):
-            topic, _, probes = growth_runtime.select_viable_topic(None, {}, cache_only=False)
+            topic, _, probes = business.select_viable_topic(None, {}, cache_only=False)
         self.assertEqual(topic['slug'], 'fresh-4')
         self.assertEqual(planning.call_count, 5)
         self.assertEqual([p['round'] for p in probes], [1, 2, 3, 4, 5])
@@ -312,130 +312,73 @@ class ProductViabilityPlanningTests(unittest.TestCase):
     def test_all_unviable_topics_fail_closed(self):
         topics = [self._topic('first-topic'), self._topic('second-topic')]
         with (
-            patch.object(growth_runtime, 'rank_candidates', return_value=topics),
-            patch.object(growth_runtime, 'discover_products', side_effect=[[], RuntimeError('temporary search failure')]),
+            patch.object(business, 'rank_candidates', return_value=topics),
+            patch.object(business, 'discover_products', side_effect=[[], RuntimeError('temporary search failure')]),
         ):
             with self.assertRaises(planning_runtime.PlanningError) as failure:
-                growth_runtime.select_viable_topic(topics, {}, cache_only=False)
+                business.select_viable_topic(topics, {}, cache_only=False)
         self.assertEqual([probe['slug'] for probe in failure.exception.viability_probes],
                          ['first-topic', 'second-topic'])
         self.assertIn('require 6 documented products', str(failure.exception))
 
 
 class RuntimeFailClosedTests(unittest.TestCase):
-    def setUp(self):
-        self._recovery_tmp = Path(tempfile.mkdtemp(prefix='sellemy-recovery-test-'))
-        self._recovery_patches = [
-            patch.object(growth_runtime, 'require_publishing_enabled'),
-            patch.object(growth_runtime, 'product_issues', return_value=[]),
-            patch.object(growth_runtime, 'receipt_issues', return_value=[]),
-            patch.object(growth_runtime, 'require_acceptance'),
-            patch.object(growth_runtime, 'require_chat_publish_approval'),
-            patch('independent_quality_gate.issue_receipts', return_value={'editorial': {'verdict': 'PASS'}, 'claim': {'verdict': 'PASS'}}),
-            patch('independent_quality_gate.require_receipts', return_value=True),
-            patch.object(growth_runtime, 'independent_review', return_value={'review': {'status': 'ACCEPTED'}}),
-            patch.object(growth_runtime, 'save_writer_result', side_effect=lambda slug, payload, qa, findings, feedback, metadata, passed: growth_recovery.save_writer_result(slug, payload=payload, qa=qa, findings=findings, feedback=feedback, metadata=metadata, passed=passed)),
-            patch.object(growth_runtime, 'record_context_quality'),
-            patch.object(growth_runtime, '_reconcile_already_published_jobs', return_value=[]),
-            patch.object(growth_runtime, '_existing_publish_commit', return_value=None),
-            patch.object(growth_recovery, 'STATE_ROOT', self._recovery_tmp),
-            patch.object(growth_recovery, 'JOBS_ROOT', self._recovery_tmp / 'jobs'),
-            patch.object(growth_recovery, 'EVENTS_PATH', self._recovery_tmp / 'events.jsonl'),
-            patch.object(growth_recovery, 'EXECUTION_EVENTS_PATH', self._recovery_tmp / 'execution-events.jsonl'),
-        ]
-        for item in self._recovery_patches: item.start()
-
-    def tearDown(self):
-        for item in reversed(self._recovery_patches): item.stop()
-        shutil.rmtree(self._recovery_tmp, ignore_errors=True)
+    """All public gates are retained across Role subprocess boundaries."""
 
     def test_recovery_only_never_plans_without_eligible_job(self):
-        with (patch.object(growth_runtime, 'eligible_job', return_value=None),
-              patch.object(growth_runtime, '_unfinished_jobs', return_value=[]),
-              patch.object(growth_runtime, 'select_viable_topic') as planning):
-            result = growth_runtime.run(publish=True, recovery_only=True,
-                                        controller=self._allowing_controller(), report_path=None)
-        self.assertEqual(result['status'], 'recovery_no_eligible_job')
-        planning.assert_not_called()
+        from test_role_artifact_io_run import test_recovery_only_does_not_admit_new_article
+        test_recovery_only_does_not_admit_new_article()
 
     def test_recovery_only_deferred_reselection_does_not_admit_fresh_article(self):
+        from role_stage_client import RoleStageFailure
         deferred = {'slug': 'held-job', 'current_stage': 'PRODUCT_HOLD',
                     'next_retry_at': None, 'status': 'ACTIVE'}
-        with (patch.object(growth_runtime, 'eligible_job', return_value=deferred),
-              patch.object(growth_runtime, '_unfinished_jobs', return_value=[deferred]),
-              patch.object(growth_runtime, 'load_job', return_value=deferred),
-              patch.object(growth_runtime, '_execute_job', side_effect=growth_runtime.GrowthRuntimeError('needs_product_reselection for held-job')),
-              patch.object(growth_runtime, 'select_viable_topic') as planning):
-            result = growth_runtime.run(publish=True, recovery_only=True,
-                                        controller=self._allowing_controller(), report_path=None)
+        requested = []
+        def role(name, slug='', **kwargs):
+            requested.append(name)
+            if name == 'scheduler': return {'publish_paused': False, 'target_per_day': 2}
+            if name == 'ceo_reconcile': return {}
+            if name == 'recovery': return {'recovered_legacy_failed': []}
+            if name == 'already_published': return {'slugs': []}
+            if name == 'state_queue': return {'eligible': deferred, 'unfinished': [deferred]}
+            raise AssertionError(name)
+        with patch.object(growth_runtime, 'require_publishing_enabled'), \
+             patch.object(growth_runtime, 'execute_role', side_effect=role), \
+             patch.object(growth_runtime, 'load_job', return_value=deferred), \
+             patch.object(growth_runtime, '_execute_job', side_effect=growth_runtime.GrowthRuntimeError('needs_product_reselection for held-job')):
+            result = growth_runtime.run(publish=True, recovery_only=True, report_path=None)
         self.assertEqual(result['status'], 'recovery_deferred')
-        self.assertFalse(result['published'])
-        planning.assert_not_called()
+        self.assertNotIn('planning', requested)
 
-    @staticmethod
-    def _allowing_controller():
-        controller = Mock()
-        controller.current_state.return_value = {'publish_paused': False, 'target_per_day': 2}
-        return controller
-
-    @patch.object(growth_runtime, 'ensure_routed_eyecatch', return_value={'generation_method': 'codex_cli_imagegen'})
-    @patch.object(growth_runtime, 'require_clean_current_main', return_value='abc')
-    @patch.object(growth_runtime, 'select_viable_topic', return_value=({'slug': 'x', 'category': 'gadget', 'query': 'x', 'title': 'x', 'comparison_axes': [{'id': 'use', 'label': '用途'}]}, [{'asin': f'B0TEST{i:04d}'} for i in range(6)], []))
-    @patch.object(growth_runtime, 'select_six', return_value=([{'asin': f'B0TEST{i:04d}'} for i in range(6)], {}))
-    @patch.object(growth_runtime, 'build_evidence', return_value=valid_evidence())
-    @patch.object(growth_runtime, 'invoke_writer', side_effect=RuntimeError('runtime unavailable'))
-    @patch.object(growth_runtime, 'publish_payload')
-    def test_writer_failure_prevents_apply(self, publish_stage, *_mocks):
-        with self.assertRaises(RuntimeError):
-            growth_runtime.run(publish=True, report_path=None, controller=self._allowing_controller())
-        publish_stage.assert_not_called()
+    def test_writer_failure_prevents_apply(self):
+        from test_role_artifact_io_run import test_writer_failed_does_not_enter_publish
+        test_writer_failed_does_not_enter_publish()
 
     def test_review_failure_is_detected_before_publish(self):
         payload = valid_payload()
         payload['lead'] = 'Amazonで実在を確認した商品です。' * 12
-        _html, findings, qa = growth_runtime.evaluate_candidate(payload, valid_evidence())
+        _rendered, findings, qa = business.evaluate_candidate(payload, valid_evidence())
         self.assertTrue(findings)
         self.assertFalse(qa['banned_phrase_pass'])
 
     def test_qa_failure_is_detected_before_publish(self):
         payload = valid_payload()
         payload['lead'] = '短い本文'
-        _html, _findings, qa = growth_runtime.evaluate_candidate(payload, valid_evidence())
+        _rendered, _findings, qa = business.evaluate_candidate(payload, valid_evidence())
         self.assertFalse(qa['overall_pass'])
 
-    def _run_with_gate_result(self, findings, qa):
-        topic = {'slug': 'test-widgets-6-picks', 'category': 'gadget', 'query': 'x', 'title': 'x', 'comparison_axes': [{'id': 'use', 'label': '用途'}]}
-        products = [{'asin': f'B0TEST{i:04d}'} for i in range(6)]
-        with (
-            patch.object(growth_runtime, 'ensure_routed_eyecatch', return_value={'generation_method': 'codex_cli_imagegen'}),
-            patch.object(growth_runtime, 'save_eyecatch', side_effect=lambda slug, **kw: growth_recovery.set_stage(slug, 'PUBLISH_PENDING')),
-            patch.object(growth_runtime, 'materialize_for_publish'),
-            patch.object(growth_runtime, 'require_clean_current_main', return_value='abc'),
-            patch.object(growth_runtime, 'select_viable_topic', return_value=(topic, products, [])),
-            patch.object(growth_runtime, 'select_six', return_value=(products, {})),
-            patch.object(growth_runtime, 'build_evidence', return_value=valid_evidence()),
-            patch.object(growth_runtime, 'invoke_writer', return_value=(valid_payload(), {'runtime': 'test'})),
-            patch('writer_runtime.revise_length_fields', side_effect=lambda payload, **kwargs: (payload, {'test_fixture': True})),
-            patch.object(growth_runtime, 'evaluate_candidate', return_value=('html', findings, qa)),
-            patch.object(growth_runtime, 'publish_payload') as publish_stage,
-        ):
-            with self.assertRaises(growth_runtime.GrowthRuntimeError):
-                growth_runtime.run(publish=True, report_path=None, controller=self._allowing_controller())
-            publish_stage.assert_not_called()
-
     def test_independent_review_failure_prevents_apply_and_publish(self):
-        self._run_with_gate_result(['finding'], {'overall_pass': True})
+        from test_role_artifact_io_roles import test_reviewer_failed_quality_never_advances_to_ceo_review
+        test_reviewer_failed_quality_never_advances_to_ceo_review()
 
     def test_machine_qa_failure_prevents_apply_and_publish(self):
-        self._run_with_gate_result([], {'overall_pass': False})
+        from test_role_artifact_io_roles import test_publish_never_mutates_repository_after_acceptance_rejection
+        test_publish_never_mutates_repository_after_acceptance_rejection()
 
     def test_gate_feedback_contains_only_diagnostics_not_generated_prose(self):
-        feedback = growth_runtime._gate_feedback([], {
-            'main_in_range': False,
-            'overall_pass': False,
-            'main_len': 3520,
-            'lead_len': 188,
-            'summary_len': 152,
+        feedback = business._gate_feedback([], {
+            'main_in_range': False, 'overall_pass': False,
+            'main_len': 3520, 'lead_len': 188, 'summary_len': 152,
             'how_to_choose_len': 228,
             'description_lens': [322, 331, 341, 336, 334, 341],
             'h3_lens': [23, 27, 22, 24, 25, 23],
@@ -444,68 +387,36 @@ class RuntimeFailClosedTests(unittest.TestCase):
         self.assertEqual(feedback['measurements']['main_len'], 3520)
 
     def test_publish_command_is_normal_push_only(self):
-        source = (ROOT / 'pipeline' / 'growth_runtime.py').read_text(encoding='utf-8')
+        source = (ROOT / 'pipeline' / 'growth_role_business.py').read_text(encoding='utf-8')
         self.assertIn("['git', 'push', 'origin', 'main']", source)
-        self.assertNotIn('--force', source)
-
+        self.assertNotIn("['git', 'push', '--force'", source)
 
     def test_remote_push_race_rebuilds_and_retries_inside_gate(self):
-        topic = {'slug': 'test-widgets-6-picks', 'category': 'gadget', 'query': 'x', 'title': 'x', 'comparison_axes': [{'id': 'use', 'label': '用途'}]}
-        products = [{'asin': f'B0TEST{i:04d}'} for i in range(6)]
-        controller = Mock()
-        controller.current_state.return_value = {'publish_paused': False, 'target_per_day': 2}
-        controller.evaluate_and_record.return_value = ({'event_id': 'feedback-1'}, {'target_per_day': 2})
-        gate = nullcontext({'head_after': 'base', 'origin_main': 'base', 'clean': True})
-        with (
-            patch.object(growth_runtime, 'ensure_routed_eyecatch', return_value={'generation_method': 'codex_cli_imagegen'}),
-            patch.object(growth_runtime, 'save_eyecatch', side_effect=lambda slug, **kw: growth_recovery.set_stage(slug, 'PUBLISH_PENDING')),
-            patch.object(growth_runtime, 'materialize_for_publish'),
-            patch.object(growth_runtime, 'require_clean_current_main', return_value='base'),
-            patch.object(growth_runtime, 'select_viable_topic', return_value=(topic, products, [])),
-            patch.object(growth_runtime, 'select_six', return_value=(products, {})),
-            patch.object(growth_runtime, 'build_evidence', return_value=valid_evidence()),
-            patch.object(growth_runtime, 'invoke_writer', return_value=(valid_payload(), {'runtime': 'test'})),
-            patch('writer_runtime.revise_length_fields', side_effect=lambda payload, **kwargs: (payload, {'test_fixture': True})),
-            patch.object(growth_runtime, 'evaluate_candidate', return_value=('html', [], {'overall_pass': True})),
-            patch.object(growth_runtime, '_write_json'),
-            patch.object(growth_runtime, 'publish_payload', return_value={'applied': True}) as apply_stage,
-            patch.object(growth_runtime.PublishGate, 'acquire', side_effect=[gate, nullcontext({'head_after': 'remote', 'origin_main': 'remote', 'clean': True})]),
-            patch.object(growth_runtime, '_publish', side_effect=[growth_runtime.PublishRaceError('race', candidate_commit='candidate'), 'published-commit']) as publish_call,
-            patch.object(growth_runtime, 'recover_unpublished_commit_after_remote_race', return_value={'already_published': False, 'head_after': 'remote', 'origin_main': 'remote', 'clean': True}) as recovery,
-        ):
-            result = growth_runtime.run(publish=True, report_path=None, controller=controller)
-        self.assertTrue(result['published'])
+        from role_execution_publish import publish
+        from growth_role_business import PublishRaceError
+        gate = lambda: nullcontext({'head_after': 'base', 'origin_main': 'base', 'clean': True})
+        with patch('role_execution_publish._preflight', return_value=({}, {}, {}, 'gadget')), \
+             patch('role_execution_publish.load_job', return_value={'current_stage': 'PUBLISH_PENDING'}), \
+             patch('role_execution_publish._existing_publish_commit', return_value=None), \
+             patch('role_execution_publish._git', return_value='base'), \
+             patch('role_execution_publish.PublishGate') as locker, \
+             patch('role_execution_publish.materialize_for_publish'), \
+             patch('publish_payload.run', return_value={'applied': True}) as apply, \
+             patch('role_execution_publish._publish', side_effect=[
+                 PublishRaceError('race', candidate_commit='candidate'), 'published-commit']) as push, \
+             patch('role_execution_publish.recover_unpublished_commit_after_remote_race', return_value={'already_published': False}) as recovery, \
+             patch('role_execution_publish.mark_published'), \
+             patch('role_execution_publish.record_execution'):
+            locker.return_value.acquire.side_effect = [gate(), gate()]
+            result = publish('sample')
         self.assertEqual(result['commit'], 'published-commit')
-        self.assertEqual(publish_call.call_count, 2)
-        self.assertEqual(apply_stage.call_count, 2)
-        recovery.assert_called_once_with(growth_runtime.ROOT, 'candidate')
+        self.assertEqual(push.call_count, 2)
+        self.assertEqual(apply.call_count, 2)
+        recovery.assert_called_once_with(ROOT, 'candidate')
 
     def test_successful_publish_runs_post_publish_feedback_and_controller(self):
-        topic = {'slug': 'test-widgets-6-picks', 'category': 'gadget', 'query': 'x', 'title': 'x', 'comparison_axes': [{'id': 'use', 'label': '用途'}]}
-        products = [{'asin': f'B0TEST{i:04d}'} for i in range(6)]
-        controller = Mock()
-        controller.current_state.return_value = {'publish_paused': False, 'target_per_day': 2}
-        controller.evaluate_and_record.return_value = ({'event_id': 'feedback-1'}, {'target_per_day': 2})
-        with (
-            patch.object(growth_runtime, 'ensure_routed_eyecatch', return_value={'generation_method': 'codex_cli_imagegen'}),
-            patch.object(growth_runtime, 'save_eyecatch', side_effect=lambda slug, **kw: growth_recovery.set_stage(slug, 'PUBLISH_PENDING')),
-            patch.object(growth_runtime, 'materialize_for_publish'),
-            patch.object(growth_runtime, 'require_clean_current_main', return_value='abc'),
-            patch.object(growth_runtime, 'select_viable_topic', return_value=(topic, products, [])),
-            patch.object(growth_runtime, 'select_six', return_value=(products, {})),
-            patch.object(growth_runtime, 'build_evidence', return_value=valid_evidence()),
-            patch.object(growth_runtime, 'invoke_writer', return_value=(valid_payload(), {'runtime': 'test'})),
-            patch('writer_runtime.revise_length_fields', side_effect=lambda payload, **kwargs: (payload, {'test_fixture': True})),
-            patch.object(growth_runtime, 'evaluate_candidate', return_value=('html', [], {'overall_pass': True})),
-            patch.object(growth_runtime, '_write_json'),
-            patch.object(growth_runtime, 'publish_payload', return_value={'applied': True}),
-            patch.object(growth_runtime, '_publish', return_value='published-commit'),
-            patch.object(growth_runtime.PublishGate, 'acquire', return_value=nullcontext({'head_after': 'abc', 'origin_main': 'abc', 'clean': True})),
-        ):
-            result = growth_runtime.run(publish=True, report_path=None, controller=controller)
-        self.assertTrue(result['published'])
-        self.assertEqual(result['post_publish_feedback']['event_id'], 'feedback-1')
-        controller.evaluate_and_record.assert_called_once()
+        from test_role_artifact_io_run import test_successful_publishing_dispatches_postpublish
+        test_successful_publishing_dispatches_postpublish()
 
 
 if __name__ == '__main__':
@@ -553,7 +464,7 @@ class ProductContentIdentityTests(unittest.TestCase):
             {'asin': 'B0AAAA0001', 'amazon_title': '同じ 商品 タイトル', 'image_url': 'https://m.media-amazon.com/images/I/a._AC_UL320_.jpg'},
             {'asin': 'B0BBBB0002', 'amazon_title': '同じ　商品タイトル', 'image_url': 'https://m.media-amazon.com/images/I/b._AC_UL320_.jpg'},
         ]
-        kept, removed = growth_runtime.dedupe_content_products(rows)
+        kept, removed = business.dedupe_content_products(rows)
         self.assertEqual([x['asin'] for x in kept], ['B0AAAA0001'])
         self.assertEqual(removed[0]['duplicate_of_asin'], 'B0AAAA0001')
         self.assertEqual(removed[0]['reason'], 'normalized_title_exact')
@@ -563,7 +474,7 @@ class ProductContentIdentityTests(unittest.TestCase):
             {'asin': 'B0AAAA0001', 'amazon_title': '商品 A', 'image_url': 'https://m.media-amazon.com/images/I/abc._AC_UL320_.jpg'},
             {'asin': 'B0BBBB0002', 'amazon_title': '商品 B', 'image_url': 'https://m.media-amazon.com/images/I/abc._AC_UL640_.jpg'},
         ]
-        kept, removed = growth_runtime.dedupe_content_products(rows)
+        kept, removed = business.dedupe_content_products(rows)
         self.assertEqual([x['asin'] for x in kept], ['B0AAAA0001'])
         self.assertEqual(removed[0]['reason'], 'canonical_image_exact')
 
@@ -577,51 +488,21 @@ class EvidenceContentDuplicateGateTests(unittest.TestCase):
             validate_evidence(evidence)
 
 
-class DesignerEyecatchRouteTests(RuntimeFailClosedTests):
+class DesignerEyecatchRouteTests(unittest.TestCase):
     def test_publish_invokes_designer_after_writer_qa_pass(self):
-        topic = {'slug': 'test-widgets-6-picks', 'category': 'gadget', 'query': 'x', 'title': 'x', 'comparison_axes': [{'id': 'use', 'label': '用途'}]}
-        products = [{'asin': f'B0TEST{i:04d}'} for i in range(6)]
-        controller = Mock(); controller.current_state.return_value = {'publish_paused': False, 'target_per_day': 2}
-        controller.evaluate_and_record.return_value = ({'event_id': 'feedback-1'}, {'target_per_day': 2})
-        with (
-            patch.object(growth_runtime, 'require_clean_current_main', return_value='abc'),
-            patch.object(growth_runtime, 'select_viable_topic', return_value=(topic, products, [])),
-            patch.object(growth_runtime, 'select_six', return_value=(products, {})),
-            patch.object(growth_runtime, 'build_evidence', return_value=valid_evidence()),
-            patch.object(growth_runtime, 'invoke_writer', return_value=(valid_payload(), {'runtime': 'test'})),
-            patch('writer_runtime.revise_length_fields', side_effect=lambda payload, **kwargs: (payload, {'test_fixture': True})),
-            patch.object(growth_runtime, 'evaluate_candidate', return_value=('html', [], {'overall_pass': True})),
-            patch.object(growth_runtime, 'ensure_routed_eyecatch', return_value={'generation_method': 'codex_cli_imagegen'}) as designer,
-            patch.object(growth_runtime, 'save_eyecatch', side_effect=lambda slug, **kw: growth_recovery.set_stage(slug, 'PUBLISH_PENDING')),
-            patch.object(growth_runtime, 'materialize_for_publish'),
-            patch.object(growth_runtime, '_write_json'),
-            patch.object(growth_runtime, 'publish_payload', return_value={'applied': True}),
-            patch.object(growth_runtime, '_publish', return_value='published-commit'),
-            patch.object(growth_runtime.PublishGate, 'acquire', return_value=nullcontext({'head_after': 'abc', 'origin_main': 'abc', 'clean': True})),
-        ):
-            result = growth_runtime.run(publish=True, report_path=None, controller=controller)
-        self.assertTrue(result['published'])
-        designer.assert_called_once()
-        self.assertEqual(result['eyecatch']['generation_method'], 'codex_cli_imagegen')
+        from test_role_artifact_io_roles import test_coordinator_separates_designer_and_publish
+        test_coordinator_separates_designer_and_publish()
 
     def test_designer_failure_fails_closed_before_publication(self):
-        topic = {'slug': 'test-widgets-6-picks', 'category': 'gadget', 'query': 'x', 'title': 'x', 'comparison_axes': [{'id': 'use', 'label': '用途'}]}
-        products = [{'asin': f'B0TEST{i:04d}'} for i in range(6)]
-        controller = Mock(); controller.current_state.return_value = {'publish_paused': False, 'target_per_day': 2}
-        with (
-            patch.object(growth_runtime, 'require_clean_current_main', return_value='abc'),
-            patch.object(growth_runtime, 'select_viable_topic', return_value=(topic, products, [])),
-            patch.object(growth_runtime, 'select_six', return_value=(products, {})),
-            patch.object(growth_runtime, 'build_evidence', return_value=valid_evidence()),
-            patch.object(growth_runtime, 'invoke_writer', return_value=(valid_payload(), {'runtime': 'test'})),
-            patch('writer_runtime.revise_length_fields', side_effect=lambda payload, **kwargs: (payload, {'test_fixture': True})),
-            patch.object(growth_runtime, 'evaluate_candidate', return_value=('html', [], {'overall_pass': True})),
-            patch.object(growth_runtime, 'ensure_routed_eyecatch', side_effect=growth_runtime.EyecatchRoutingError('designer unavailable')),
-            patch.object(growth_runtime, 'context_session_id', return_value='test-designer-thread'),
-            patch.object(growth_runtime, 'record_context_quality'),
-            patch.object(growth_runtime.PublishGate, 'acquire', return_value=nullcontext({'head_after': 'abc', 'origin_main': 'abc', 'clean': True})),
-            patch.object(growth_runtime, 'publish_payload') as publish_stage,
-        ):
+        from role_stage_client import RoleStageFailure
+        invoked = []
+        def execute(name, slug='', **kwargs):
+            invoked.append(name)
+            if name == 'inspect': return {'action': 'designer'}
+            if name == 'designer': raise RoleStageFailure('Eyecatch generation failed')
+            raise AssertionError(f'unexpected stage after designer failure: {name}')
+        with patch.object(growth_runtime, 'load_job', return_value={'current_stage': 'EYECATCH_PENDING'}), \
+             patch.object(growth_runtime, 'execute_role', side_effect=execute):
             with self.assertRaisesRegex(growth_runtime.GrowthRuntimeError, 'Eyecatch generation failed'):
-                growth_runtime.run(publish=True, report_path=None, controller=controller)
-        publish_stage.assert_not_called()
+                growth_runtime._execute_job('sample', {})
+        self.assertNotIn('publish', invoked)

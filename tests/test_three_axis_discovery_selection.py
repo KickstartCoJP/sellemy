@@ -2,7 +2,7 @@ import json
 from types import SimpleNamespace
 from unittest.mock import patch
 import pytest
-from growth_runtime import _product_queries, collect_unique_products
+from growth_role_business import _product_queries, collect_unique_products
 from product_selection import ProductSelectionError, select_six
 
 AXES = [{'id': x, 'label': x, 'keywords': [x]} for x in ('compact', 'quiet', 'safe')]
@@ -29,7 +29,7 @@ def test_exactly_three_queries():
 
 def test_each_axis_capped_at_ten_and_total_thirty():
     fake, seen = search_factory({a['id']: range(i*11, i*11+11) for i,a in enumerate(AXES)})
-    with patch('growth_runtime.discover_products', fake):
+    with patch('growth_role_business.discover_products', fake):
         products, status = collect_unique_products(TOPIC, cache_only=False)
     assert [a['new'] for a in status['attempts']] == [10,10,10]
     assert len(products) == 30 and len(set(p['asin'] for p in products)) == 30
@@ -37,14 +37,14 @@ def test_each_axis_capped_at_ten_and_total_thirty():
 
 def test_cross_axis_duplicates_and_floor():
     fake, seen = search_factory({'compact':[1,2,3], 'quiet':[3,4,5], 'safe':[5,6,7]})
-    with patch('growth_runtime.discover_products', fake):
+    with patch('growth_role_business.discover_products', fake):
         products, status = collect_unique_products(TOPIC, cache_only=False)
     assert [a['new'] for a in status['attempts']] == [3,2,2]
     assert len(products) == 7 and status['complete'] and len(seen)==3
 
 def test_one_axis_under_two_blocks_topic():
     fake, _ = search_factory({'compact':[1,2], 'quiet':[2,3], 'safe':[4,5]})
-    with patch('growth_runtime.discover_products', fake):
+    with patch('growth_role_business.discover_products', fake):
         products, status = collect_unique_products(TOPIC, cache_only=False)
     assert not status['complete']
     assert [a['new'] for a in status['attempts']] == [2,1,2]
@@ -90,7 +90,7 @@ def test_duplicate_different_asin_same_product_title_rejected():
         if topic['query'].endswith('quiet'):
             rows[0]['amazon_title']='Unique model 1'
         return rows
-    with patch('growth_runtime.discover_products', same_title):
+    with patch('growth_role_business.discover_products', same_title):
         products,status=collect_unique_products(TOPIC,cache_only=False)
     assert [x['new'] for x in status['attempts']]==[2,1,2]
     assert not status['complete']
@@ -115,7 +115,7 @@ def test_ai_unknown_asin_rejected():
             select_six(rows,TOPIC,{})
 
 def test_axis_group_reasons_survive_selection_and_evidence():
-    from growth_runtime import build_evidence
+    from growth_role_business import build_evidence
     rows = six()
     complete_topic = {**TOPIC, 'slug':'three-axis-test', 'category':'gadget'}
     with patch('product_selection.subprocess.run', fake_ai([r['asin'] for r in rows])):
@@ -127,7 +127,7 @@ def test_axis_group_reasons_survive_selection_and_evidence():
     assert all(len(x['products']) == 2 for x in evidence['selection']['axes'])
 
 def test_axis_group_order_is_enforced_at_article_boundary():
-    from growth_runtime import build_evidence
+    from growth_role_business import build_evidence
     from payload_schema import match_refs, PayloadValidationError
     rows = six()
     topic = {**TOPIC, 'slug':'three-axis-test', 'category':'gadget'}

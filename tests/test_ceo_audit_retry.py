@@ -2,7 +2,7 @@ import sys,tempfile
 from pathlib import Path
 from unittest.mock import patch
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'pipeline'))
-import growth_runtime as g
+import growth_role_business as g
 
 def test_ceo_audit_transport_error_retries_nonblocking():
     with tempfile.TemporaryDirectory() as tmp:
