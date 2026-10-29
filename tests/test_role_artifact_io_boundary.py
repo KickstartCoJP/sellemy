@@ -51,3 +51,19 @@ def test_role_operations_preserve_existing_file_names():
     from role_stage_client import execute_role
     assert callable(writer) and callable(reviewer)
     assert callable(designer) and callable(publish) and callable(execute_role)
+
+
+def test_reviewer_revocation_is_owned_by_real_subprocess_and_keeps_payload(tmp_path):
+    from role_stage_client import execute_role
+    root = tmp_path / 'recovery'
+    directory = root / 'jobs' / 'sample-article'
+    directory.mkdir(parents=True)
+    existing_payload = '{"status":"READY","signature":"unchanged"}\n'
+    (directory / 'payload.json').write_text(existing_payload, encoding='utf-8')
+    with patch.dict(os.environ, {'SELLEMY_GROWTH_RECOVERY_ROOT': str(root)}):
+        receipt = execute_role('review_reset', 'sample-article')
+    assert receipt == {'review_authorizations_revoked': True}
+    for name in ('qa-certification.json', 'independent-quality-receipts.json',
+                 'chat-publish-approval.json'):
+        assert (directory / name).read_text(encoding='utf-8').strip() == '{}'
+    assert (directory / 'payload.json').read_text(encoding='utf-8') == existing_payload

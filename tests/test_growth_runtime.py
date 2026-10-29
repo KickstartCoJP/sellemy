@@ -138,12 +138,18 @@ class ScheduledRouteTests(unittest.TestCase):
 
 class ProductViabilityPlanningTests(unittest.TestCase):
     def setUp(self):
-        # These tests cover candidate scanning, not product acceptance. The contract
-        # integration tests exercise actual source/semantic rejection separately.
-        for item in [patch.object(business, 'select_six', return_value=([], {})),
-                     patch.object(business, 'build_evidence', return_value={}),
-                     patch.object(business, 'independent_review', return_value={}),
-                     patch.object(business, 'receipt_issues', return_value=[])]:
+        # Candidate ranking/scanning only. Batch discovery, independent facts and
+        # source acceptance are covered in their own contract test modules.
+        def discover(topic, *, cache_only):
+            rows = business.discover_products(topic, cache_only=cache_only)
+            return rows, {'complete': len(rows) >= 6, 'attempts': []}
+        for item in [patch.object(business, 'collect_unique_products', side_effect=discover),
+                     patch.object(business, 'select_six', side_effect=lambda rows, topic, feedback: (rows[:6], {})),
+                     patch.object(business, 'build_evidence', side_effect=lambda topic, rows, selection: {'products': rows}),
+                     patch.object(business, 'research_selected', side_effect=lambda rows, **kwargs: rows),
+                     patch.object(business, 'independent_review', return_value={'review': {'status': 'ACCEPTED'}}),
+                     patch.object(business, 'receipt_issues', return_value=[]),
+                     patch.object(business, 'product_issues', return_value=[])]:
             item.start(); self.addCleanup(item.stop)
 
     def _topic(self, slug):
@@ -189,11 +195,10 @@ class ProductViabilityPlanningTests(unittest.TestCase):
               patch.object(business, 'research_selected', return_value=rows) as research,
               patch.object(business, 'replenish_products', return_value=(rows, [])),
               patch.object(business, 'select_six', side_effect=[
-                  business.ProductSelectionError('not enough evidence'),
-                  business.ProductSelectionError('still not enough evidence'), (rows, {})])):
+                  business.ProductSelectionError('not enough evidence'), (rows, {})])):
             topic, _, _ = business.select_viable_topic([first, second], {}, cache_only=False)
         self.assertEqual(topic['slug'], 'research-second')
-        self.assertEqual(research.call_count, 3)
+        self.assertEqual(research.call_count, 2)
 
     def test_official_research_retries_only_after_independent_rejection(self):
         topic = self._topic('evidence-escalation')
@@ -253,7 +258,6 @@ class ProductViabilityPlanningTests(unittest.TestCase):
             patch.object(business, 'replenish_products', return_value=(products, [])),
             patch.object(business, 'select_six', side_effect=[
                 business.ProductSelectionError('only 5 documented topic-axis matches'),
-                business.ProductSelectionError('still 5 matches'),
                 (products[:6], {}),
             ]),
             patch.object(business, 'independent_review', return_value=accepted),

@@ -8,6 +8,7 @@ from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'pipeline'))
 import codex_provider
+from api_role_binding import require_codex_settings
 
 
 class CodexProviderTests(unittest.TestCase):
@@ -197,8 +198,8 @@ class CodexProviderTests(unittest.TestCase):
                 return '{"ok": true}', {'input_tokens': 10, 'cached_input_tokens': 4, 'cache_write_input_tokens': 0, 'output_tokens': 2, 'reasoning_output_tokens': 0, 'uncached_input_tokens': 6}
             with patch.object(codex_provider, '_member_binding', return_value=binding), \
                  patch.object(codex_provider, '_queue_turn', side_effect=fake_queue):
-                one, meta1 = codex_provider.generate_persistent(('/bin/codex',), 'model', schema, 'first', timeout=30, root=root, surface_key='bu-codex-sellemy-writer')
-                two, meta2 = codex_provider.generate_persistent(('/bin/codex',), 'model', schema, 'second', timeout=30, root=root, surface_key='bu-codex-sellemy-writer')
+                one, meta1 = codex_provider.generate_persistent(('/bin/codex',), require_codex_settings('bu-codex-sellemy-writer', 'writer')[0], schema, 'first', timeout=30, root=root, surface_key='bu-codex-sellemy-writer')
+                two, meta2 = codex_provider.generate_persistent(('/bin/codex',), require_codex_settings('bu-codex-sellemy-writer', 'writer')[0], schema, 'second', timeout=30, root=root, surface_key='bu-codex-sellemy-writer')
             self.assertTrue(one['ok'] and two['ok'])
             self.assertEqual(meta1['session_id'], binding['current_url'])
             self.assertEqual(meta2['member_binding_revision'], 7)
@@ -224,8 +225,8 @@ class CodexProviderTests(unittest.TestCase):
                 return next(responses)
             with patch.object(codex_provider, '_member_binding', side_effect=bindings), \
                  patch.object(codex_provider, '_queue_turn', side_effect=fake_queue):
-                codex_provider.generate_persistent(('/bin/codex',), 'model', schema, 'first', timeout=30, root=root, surface_key='bu-codex-sellemy-writer')
-                _, meta = codex_provider.generate_persistent(('/bin/codex',), 'model', schema, 'second', timeout=30, root=root, surface_key='bu-codex-sellemy-writer')
+                codex_provider.generate_persistent(('/bin/codex',), require_codex_settings('bu-codex-sellemy-writer', 'writer')[0], schema, 'first', timeout=30, root=root, surface_key='bu-codex-sellemy-writer')
+                _, meta = codex_provider.generate_persistent(('/bin/codex',), require_codex_settings('bu-codex-sellemy-writer', 'writer')[0], schema, 'second', timeout=30, root=root, surface_key='bu-codex-sellemy-writer')
             self.assertTrue(meta['member_binding_changed'])
             self.assertTrue(meta['brief_refreshed'])
             self.assertEqual(meta['session_id'], bindings[1]['current_url'])
@@ -252,8 +253,8 @@ class CodexProviderTests(unittest.TestCase):
                  patch.object(codex_provider, '_queue_turn', side_effect=fake_queue), \
                  patch.object(codex_provider, '_rotate_context', side_effect=fake_rotate) as rotate, \
                  patch.object(codex_provider, '_refresh_brief') as refresh:
-                codex_provider.generate_persistent(('/bin/codex',), 'model', schema, 'first', timeout=30, root=root, surface_key='bu-codex-sellemy-writer', max_turns=1)
-                _, meta = codex_provider.generate_persistent(('/bin/codex',), 'model', schema, 'second', timeout=30, root=root, surface_key='bu-codex-sellemy-writer', max_turns=1)
+                codex_provider.generate_persistent(('/bin/codex',), require_codex_settings('bu-codex-sellemy-writer', 'writer')[0], schema, 'first', timeout=30, root=root, surface_key='bu-codex-sellemy-writer', max_turns=1)
+                _, meta = codex_provider.generate_persistent(('/bin/codex',), require_codex_settings('bu-codex-sellemy-writer', 'writer')[0], schema, 'second', timeout=30, root=root, surface_key='bu-codex-sellemy-writer', max_turns=1)
             self.assertEqual(rotate.call_count, 1)
             refresh.assert_not_called()
             self.assertEqual(calls, [first['current_url'], second['current_url']])
@@ -276,8 +277,8 @@ class CodexProviderTests(unittest.TestCase):
                 return next(responses)
             with patch.object(codex_provider, '_member_binding', return_value=binding), \
                  patch.object(codex_provider, '_queue_turn', side_effect=fake_queue):
-                codex_provider.generate_persistent(('/bin/codex',), 'model', schema, 'first', timeout=30, root=root, surface_key='bu-codex-sellemy-planning', max_turns=1)
-                _, meta = codex_provider.generate_persistent(('/bin/codex',), 'model', schema, 'second', timeout=30, root=root, surface_key='bu-codex-sellemy-planning', max_turns=1)
+                codex_provider.generate_persistent(('/bin/codex',), require_codex_settings('bu-codex-sellemy-planning', 'planning')[0], schema, 'first', timeout=30, root=root, surface_key='bu-codex-sellemy-planning', max_turns=1)
+                _, meta = codex_provider.generate_persistent(('/bin/codex',), require_codex_settings('bu-codex-sellemy-planning', 'planning')[0], schema, 'second', timeout=30, root=root, surface_key='bu-codex-sellemy-planning', max_turns=1)
             self.assertFalse(meta['member_binding_changed'])
             self.assertTrue(meta['brief_refreshed'])
             self.assertEqual(meta['session_id'], binding['current_url'])

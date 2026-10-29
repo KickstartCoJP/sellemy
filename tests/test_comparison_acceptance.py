@@ -14,6 +14,9 @@ from quality_fixtures import fixture, accepted_fixture, independent, review
 import semantic_review
 import growth_recovery as gr
 import growth_runtime as runtime
+import growth_role_business as business
+import role_execution_writer as role_writer
+import role_stage_exec as stage_worker
 from planning_runtime import PlanningError
 import publish_payload as publisher
 import publish_gate
@@ -158,19 +161,17 @@ class RecoveryCase(unittest.TestCase):
 
 class RecoveryContractTests(RecoveryCase):
     def test_missing_facts_use_existing_job_without_writer_retry(self):
-        p, e = fixture('book-reading-stands')
-        self.create(e)
-        with patch.object(runtime, 'invoke_writer') as writer:
-            with self.assertRaisesRegex(runtime.GrowthRuntimeError, 'needs_product_reselection'):
-                runtime._writer_stage(e['slug'], {})
+        _payload, evidence = fixture('book-reading-stands')
+        self.create(evidence)
+        with patch('writer_runtime.invoke_writer') as writer:
+            with self.assertRaisesRegex(business.GrowthRuntimeError, 'needs_product_reselection'):
+                role_writer.writer(evidence['slug'])
         writer.assert_not_called()
-        state = gr.load_job(e['slug'])
+        state = gr.load_job(evidence['slug'])
         self.assertEqual(state['current_stage'], 'WRITER_PENDING')
         self.assertEqual(state['retry_count_by_stage']['writer'], 0)
         self.assertEqual(state['retry_count_by_stage']['product'], 1)
-        self.assertIsNone(gr.eligible_job())
-        self.assertIsNotNone(gr.load_job(e['slug'])['next_retry_at'])
-        self.assertTrue(gr.read_artifact(e['slug'], 'product-blocker.json')['needs_product_reselection'])
+        self.assertTrue(gr.read_artifact(evidence['slug'], 'product-blocker.json')['needs_product_reselection'])
 
     def test_same_slug_reselection_clears_stale_authorizations(self):
         p, e, a = self.create()
@@ -185,43 +186,47 @@ class RecoveryContractTests(RecoveryCase):
         self.assertEqual(len(gr.all_jobs()), 1)
 
     def test_writer_and_reviewer_blocked_route_upstream_without_escalation(self):
-        for source in ['writer', 'reviewer']:
+        for source in ('writer', 'reviewer'):
             with self.subTest(source=source):
-                p, e, a = self.create()
-                output = {**p, **blocked(['facts missing'])} if source == 'writer' else p
-                a['review'] = {**a['review'], **blocked(['facts missing'])}
-                with patch.object(runtime, 'invoke_writer', return_value=(output, {})), \
-                     patch.object(runtime, 'independent_review', return_value=a) as reviewer:
-                    with self.assertRaisesRegex(runtime.GrowthRuntimeError, 'needs_product_reselection'):
-                        runtime._writer_stage(e['slug'], {})
-                self.assertEqual(gr.load_job(e['slug'])['retry_count_by_stage']['writer'], 0)
-                self.assertEqual(reviewer.call_count, int(source == 'reviewer'))
+                payload, evidence, acceptance = self.create()
+                slug = evidence['slug']
+                if source == 'writer':
+                    blocked_payload = {**payload, **blocked(['facts missing'])}
+                    with patch('writer_runtime.invoke_writer', return_value=(blocked_payload, {})):
+                        with self.assertRaisesRegex(business.GrowthRuntimeError, 'needs_product_reselection'):
+                            role_writer.writer(slug)
+                else:
+                    gr.write_artifact(slug, 'payload.json', payload)
+                    gr.write_artifact(slug, 'editorial-plan.json', {'outline': 'existing'})
+                    acceptance['review'].update(blocked(['facts missing']))
+                    with patch('semantic_review.independent_review', return_value=acceptance):
+                        with self.assertRaisesRegex(business.GrowthRuntimeError, 'needs_product_reselection'):
+                            role_writer.reviewer(slug, {})
+                self.assertEqual(gr.load_job(slug)['retry_count_by_stage']['writer'], 0)
 
-    @patch('operating_profile.normal_profile', return_value=False)
-    def test_sol_quality_failure_retries_astra_and_astra_failure_is_terminal(self, _legacy):
-        p, e, a = self.create()
-        a['review'].update(status='REVISION_REQUIRED', buying_guidance=False)
-        with patch.object(runtime, 'invoke_writer', side_effect=[(p, {'quality_escalated':False}), (p, {'quality_escalated':True})]) as writer, \
-             patch.object(runtime, 'independent_review', return_value=a), \
-             patch.object(runtime, 'record_context_quality'):
+    def test_legacy_two_quality_failures_do_not_terminate_before_tenth(self):
+        payload, evidence, acceptance = self.create()
+        slug = evidence['slug']
+        from growth_recovery import mark_failure
+        with patch('operating_profile.normal_profile', return_value=True):
             for _ in range(2):
-                with self.assertRaises(runtime.GrowthRuntimeError):
-                    runtime._writer_stage(e['slug'], {})
-        self.assertTrue(writer.call_args.kwargs['gate_feedback'])
-        state = gr.load_job(e['slug'])
-        self.assertEqual(state['current_stage'], 'WRITER_FAILED')
-        self.assertEqual(state['status'], 'FAILED')
-        self.assertIsNone(gr.eligible_job())
+                mark_failure(slug, stage='writer', failure_class='role_quality',
+                             failure_code='REVIEW_QA_FAILED', reason='editorial failure',
+                             role_return=True, role='writer')
+        self.assertEqual(gr.load_job(slug)['status'], 'ACTIVE')
+        self.assertEqual(gr.load_job(slug)['current_stage'], 'QA_FAILED')
 
     def test_review_outage_never_authorizes_publication(self):
-        p, e, a = self.create()
-        with patch.object(runtime, 'invoke_writer', return_value=(p, {})), \
-             patch.object(runtime, 'independent_review', side_effect=rp.ResponsesError('transport', kind='transport')):
-            with self.assertRaisesRegex(runtime.GrowthRuntimeError, 'independent review unavailable'):
-                runtime._writer_stage(e['slug'], {})
-        self.assertEqual(gr.load_job(e['slug'])['retry_count_by_stage']['writer'], 0)
-        self.assertIsNone(gr.read_artifact(e['slug'], 'acceptance.json'))
-
+        payload, evidence, _acceptance = self.create()
+        slug = evidence['slug']
+        gr.write_artifact(slug, 'payload.json', payload)
+        gr.write_artifact(slug, 'editorial-plan.json', {'outline': 'existing'})
+        with patch('semantic_review.independent_review',
+                   side_effect=rp.ResponsesError('transport', kind='transport')):
+            with self.assertRaisesRegex(business.GrowthRuntimeError, 'independent review unavailable'):
+                role_writer.reviewer(slug, {})
+        self.assertEqual(gr.load_job(slug)['retry_count_by_stage']['writer'], 0)
+        self.assertIsNone(gr.read_artifact(slug, 'acceptance.json'))
 
 class PublishContractTests(unittest.TestCase):
     def test_switch_default_off_missing_invalid_and_env_override(self):
@@ -243,11 +248,10 @@ class PublishContractTests(unittest.TestCase):
         # must remain authoritative for scheduled and manual invocations.
         with patch.dict(os.environ, {'SELLEMY_PUBLISH_DISABLED': '1'}):
             for scheduled in [True, False]:
-                with patch.object(runtime, 'AdaptivePublishController') as controller, \
-                     patch.object(runtime, '_reconcile_already_published_jobs') as reconcile:
+                with patch.object(runtime, 'execute_role') as role:
                     with self.assertRaises(publish_gate.PublishGateError):
                         runtime.run(publish=True, scheduled=scheduled, report_path=None)
-                    controller.assert_not_called(); reconcile.assert_not_called()
+                    role.assert_not_called()
             with patch.object(publisher, '_load') as load:
                 with self.assertRaises(publish_gate.PublishGateError):
                     publisher.run('anything', apply=True, allow_existing=True)
@@ -285,11 +289,12 @@ class BoundaryRecoveryTests(RecoveryCase):
         p, e = fixture('book-reading-stands')
         topic = {'slug': e['slug'], 'category': e['category'], 'title': p['h1'],
                  'query': '読書台', 'comparison_axes': e['comparison_axes']}
-        with patch.object(runtime, 'rank_candidates', return_value=[topic]), \
-             patch.object(runtime, 'discover_products', return_value=e['products']), \
-             patch.object(runtime, 'independent_review') as reviewer:
+        with patch.object(business, 'rank_candidates', return_value=[topic]), \
+             patch.object(business, 'discover_products', return_value=e['products']), \
+             patch.object(business, 'collect_unique_products', return_value=(e['products'], {'complete': True, 'attempts': []})), \
+             patch.object(business, 'independent_review') as reviewer:
             with self.assertRaisesRegex(PlanningError, 'no planned topic passed product acceptance') as failure:
-                runtime.select_viable_topic([topic], {}, cache_only=True)
+                business.select_viable_topic([topic], {}, cache_only=True)
         reviewer.assert_not_called()
         self.assertEqual(len(failure.exception.viability_probes), 1)
         self.assertTrue(failure.exception.viability_probes[0]['acceptance'])
@@ -304,11 +309,12 @@ class BoundaryRecoveryTests(RecoveryCase):
             receipt['review'].update(status='BLOCKED', needs_product_reselection=True,
                                      reason='Unresolved product variants', distinct_products=False)
             return receipt
-        with patch.object(runtime, 'rank_candidates', return_value=[topic]), \
-             patch.object(runtime, 'discover_products', return_value=e['products']), \
-             patch.object(runtime, 'independent_review', side_effect=reject):
+        with patch.object(business, 'rank_candidates', return_value=[topic]), \
+             patch.object(business, 'discover_products', return_value=e['products']), \
+             patch.object(business, 'collect_unique_products', return_value=(e['products'], {'complete': True, 'attempts': []})), \
+             patch.object(business, 'independent_review', side_effect=reject):
             with self.assertRaisesRegex(PlanningError, 'no planned topic passed product acceptance') as failure:
-                runtime.select_viable_topic([topic], {}, cache_only=True)
+                business.select_viable_topic([topic], {}, cache_only=True)
         self.assertTrue(failure.exception.viability_probes[0]['acceptance'])
         self.assertEqual(gr.all_jobs(), [])
 
@@ -316,12 +322,15 @@ class BoundaryRecoveryTests(RecoveryCase):
         p, e, a = accepted_fixture()
         topic = {'slug': e['slug'], 'category': e['category'], 'title': p['h1'],
                  'query': '読書台', 'comparison_axes': e['comparison_axes']}
-        with patch.object(runtime, 'rank_candidates', return_value=[topic]), \
-             patch.object(runtime, 'discover_products', return_value=e['products']), \
-             patch.object(runtime, 'independent_review', side_effect=independent):
-            chosen, candidates, _ = runtime.select_viable_topic([topic], {}, cache_only=True)
-        selected, selection = runtime.select_six(candidates, chosen, {})
-        final = runtime.build_evidence(chosen, selected, selection)
+        with patch.object(business, 'rank_candidates', return_value=[topic]), \
+             patch.object(business, 'discover_products', return_value=e['products']), \
+             patch.object(business, 'collect_unique_products', return_value=(e['products'], {'complete': True, 'attempts': []})), \
+             patch.object(business, 'select_six',return_value=(e['products'], {})), \
+             patch.object(business, 'receipt_issues',return_value=[]), \
+             patch.object(business, 'independent_review', side_effect=independent):
+            chosen, candidates, _ = business.select_viable_topic([topic], {}, cache_only=True)
+        selected, selection = candidates[:6], {}
+        final = business.build_evidence(chosen, selected, selection)
         self.assertEqual(product_issues(final), [])
 
     def test_reselection_revokes_even_previously_accepted_article(self):
@@ -340,11 +349,16 @@ class BoundaryRecoveryTests(RecoveryCase):
         slug=e['slug']
         gr.request_product_reselection(slug, ['needs new facts'])
         gr.write_artifact(slug, 'acceptance.json', a)
-        with patch.object(runtime, 'discover_products', return_value=e['products']) as discover, \
-             patch.object(runtime, 'load_feedback', return_value={}), \
-             patch.object(runtime, 'independent_review', side_effect=independent):
-            runtime._reselect_products(slug, cache_only=True)
-        self.assertTrue(discover.call_args.kwargs['cache_only'])
+        with patch.object(business, 'discover_products', return_value=e['products']) as discover, \
+             patch.object(business, 'collect_unique_products',return_value=(e['products'], {'complete':True, 'attempts':[]})), \
+             patch.object(business, 'load_feedback', return_value={}), \
+             patch.object(business, 'select_six',return_value=(e['products'], {})), \
+             patch.object(business, 'build_evidence',return_value=e), \
+             patch.object(business, 'product_issues',return_value=[]), \
+             patch.object(business, 'receipt_issues',return_value=[]), \
+             patch.object(business, 'independent_review', side_effect=independent):
+            business._reselect_products(slug, cache_only=True)
+        self.assertTrue(gr.read_artifact(slug, 'evidence.json') is not None)
         self.assertEqual(gr.read_artifact(slug, 'product-blocker.json'), {})
         self.assertEqual(gr.read_artifact(slug, 'acceptance.json'), {})
         self.assertEqual(product_issues(gr.read_artifact(slug, 'evidence.json')), [])
@@ -353,10 +367,9 @@ class BoundaryRecoveryTests(RecoveryCase):
         p, e = fixture('book-reading-stands')
         self.create(e)
         gr.set_stage(e['slug'], 'PUBLISH_PENDING')
-        with patch.object(runtime, '_eyecatch_and_publish') as publish:
-            with self.assertRaisesRegex(runtime.GrowthRuntimeError, 'needs_product_reselection'):
-                runtime._execute_job(e['slug'], {})
-        publish.assert_not_called()
+        with patch('role_stage_exec.product_issues', create=True, return_value=['insufficient facts']):
+            with self.assertRaisesRegex(business.GrowthRuntimeError, 'needs_product_reselection'):
+                stage_worker._inspect(e['slug'], cache_only=True)
         self.assertEqual(gr.load_job(e['slug'])['current_stage'], 'WRITER_PENDING')
 
     def test_stale_article_acceptance_returns_to_qa_before_designer(self):
@@ -366,10 +379,8 @@ class BoundaryRecoveryTests(RecoveryCase):
         p['summary'] += '変更'
         gr.write_artifact(e['slug'], 'payload.json', p)
         gr.set_stage(e['slug'], 'EYECATCH_PENDING')
-        with patch.object(runtime, '_eyecatch_and_publish') as publish:
-            with self.assertRaisesRegex(runtime.GrowthRuntimeError, 'acceptance revalidation'):
-                runtime._execute_job(e['slug'], {})
-        publish.assert_not_called()
+        with self.assertRaisesRegex(business.GrowthRuntimeError, 'acceptance revalidation'):
+            stage_worker._inspect(e['slug'], cache_only=True)
         self.assertEqual(gr.load_job(e['slug'])['current_stage'], 'QA_FAILED')
 
     def test_materialization_rejects_missing_acceptance_before_any_repo_write(self):

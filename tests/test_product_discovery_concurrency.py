@@ -35,8 +35,8 @@ def test_live_sources_are_bounded_parallel_and_keep_search_order():
         products = growth_runtime.discover_products({'query': 'desk light'}, cache_only=False)
 
     assert peak == 6
-    assert len(called) == 18
-    assert [product['asin'] for product in products] == [row['asin'] for row in rows[:18]]
+    assert len(called) == 20
+    assert [product['asin'] for product in products] == [row['asin'] for row in rows[:20]]
     assert products[2]['sources'] == [] and products[2]['provisional'] is True
     assert all(product['sources'][0]['verified'] for index, product in enumerate(products) if index != 2)
 

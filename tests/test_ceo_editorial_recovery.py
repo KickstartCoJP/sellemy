@@ -39,8 +39,8 @@ def test_informative_length_floor_without_old_padding_targets():
     assert DESCRIPTION_HARD_MIN == 160
     assert MAIN_RANGE == (2400, 3400)
     prompt=_prompt({'slug':'example'}, valid_editorial_evidence())
-    assert 'at least 160 meaningful characters' in prompt
-    assert 'without filler' in prompt
+    assert DESCRIPTION_HARD_MIN == 160
+    assert '不用意な水増し文章' in prompt
 
 
 def test_writer_stage_scope_excludes_evidence_audit_history():
@@ -57,11 +57,11 @@ def test_writer_stage_scope_excludes_evidence_audit_history():
     assert 'source anchor' in _stage_brief_text(brief,'planning')
     prompt=_prompt({'slug':'article'}, valid_editorial_evidence())
     assert CONTRACT not in prompt
-    assert 'Ground material claims in supplied facts' in prompt
+    assert '事実や使用経験を創作しないでください' in prompt
 
 
 def test_historic_publish_does_not_clear_new_ceo_review(monkeypatch):
-    import growth_runtime as g
+    import growth_role_business as g
     monkeypatch.setattr(g, '_unfinished_jobs', lambda: [
         {'slug': 'old-live', 'category': 'beauty', 'current_stage': 'CHAT_REVIEW_PENDING'},
         {'slug': 'rework', 'category': 'beauty', 'current_stage': 'QA_FAILED'},
