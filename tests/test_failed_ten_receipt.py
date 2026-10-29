@@ -12,6 +12,6 @@ def test_tenth_consecutive_normal_failed_requests_ceo_inspection():
    growth_recovery.create_job(topic={'slug':slug,'category':'gadget'},evidence=valid_evidence(),selection={},planning_provider=None,viability_probes=[])
    for _ in range(3):growth_recovery.mark_failure(slug,stage='writer',failure_class='role_quality',failure_code='QA_NG',reason='x')
   receipt=growth_recovery.read_artifact('failed-9','ceo-inspection-required.json')
-  assert receipt['status']=='REQUIRES_CEO_INSPECTION' and len(receipt['slugs'])==10
+  assert receipt['status']=='REQUIRES_CEO_INSPECTION' and receipt['failure_count']==30 and receipt['slugs']==['failed-9']
   assert receipt['publication_blocked_by_this_receipt'] is False
   assert growth_recovery.read_artifact('failed-8','ceo-inspection-required.json',None) is None

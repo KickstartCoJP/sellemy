@@ -13,9 +13,11 @@ def submit_failed_ten_inspection(receipt:dict,*,ai_os_root:Path|None=None,ai_os_
     if receipt.get('schema')!='sellemy-failed-10-inspection/v1' or receipt.get('status')!='REQUIRES_CEO_INSPECTION':
         raise CEOFailureBridgeError('invalid inspection receipt')
     slugs=receipt.get('slugs')
-    if not isinstance(slugs,list) or len(slugs)!=10 or len(set(slugs))!=10:
-        raise CEOFailureBridgeError('exact 10 unique failed turns required')
-    signature=hashlib.sha256('|'.join(slugs).encode()).hexdigest()[:20].upper()
+    if (not isinstance(slugs,list) or not 1 <= len(slugs) <= 10
+            or len(set(slugs)) != len(slugs)
+            or int(receipt.get('failure_count') or 0) < 10):
+        raise CEOFailureBridgeError('inspection requires ten failed turns and their source jobs')
+    signature=hashlib.sha256(('|'.join(slugs)+'|'+str(int(receipt['failure_count'])//10)).encode()).hexdigest()[:20].upper()
     task_id='TASK-BU002-FAILED-TEN-CEO-'+signature
     ai_os_root=Path(ai_os_root or os.environ.get('SELLEMY_AI_OS_ROOT','/Users/kickstart/ai-management-os'))
     ai_os_python=ai_os_python or os.environ.get('SELLEMY_AI_OS_PYTHON',str(ai_os_root/'.venv/bin/python'))
@@ -35,7 +37,7 @@ def submit_failed_ten_inspection(receipt:dict,*,ai_os_root:Path|None=None,ai_os_
         except (OSError,ValueError):continue
     detail={'next_action':'CEO検査依頼: Sellemy Growthで通常制作10件が連続failed。失敗10件の証跡を点検し、Ownerに品質回復と再開条件を指示してください。既存の公開記事は変更せず、日次投稿数の一律上限を設けない。',
       'requested_to':'ceo','reason':'通常制作10ターンが連続failed。品質根本原因の検査と回復判断が必要','required_actions':['10件の原因分析と品質回復判断'],
-      'failed_slugs':slugs,'source':'sellemy-normal-quality-gate',
+      'failed_slugs':slugs,'failure_count':receipt['failure_count'],'source':'sellemy-normal-quality-gate',
       'resume_role_id':'os-chief','next_responsibility_role_id':'os-chief'}
     result=call('ai_management_os.actions.task_append',{'task_id':task_id,
         'message_id':'FAILED10-'+signature,'actor_role_id':'sellemy-ops',
