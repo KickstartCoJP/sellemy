@@ -3,9 +3,9 @@
 Uses existing Task/Event, not a second Role delivery or an article publication gate.
 """
 from __future__ import annotations
-import hashlib,os
+import hashlib,os,json,subprocess
 from pathlib import Path
-from feedback_task_bridge import _run_action
+
 
 class CEOFailureBridgeError(ValueError):pass
 
@@ -23,7 +23,12 @@ def submit_failed_ten_inspection(receipt:dict,*,ai_os_root:Path|None=None,ai_os_
     ai_os_python=ai_os_python or os.environ.get('SELLEMY_AI_OS_PYTHON',str(ai_os_root/'.venv/bin/python'))
     canonical=Path(os.environ.get('SELLEMY_AI_OS_CANONICAL_ROOT',str(Path.home()/'Library/Application Support/AIManagementOS/canonical')))
     folder=canonical/'tasks'/task_id
-    def call(module,payload):return _run_action(python=ai_os_python,ai_os_root=ai_os_root,module=module,payload=payload)
+    def call(module,payload):
+        completed=subprocess.run([ai_os_python,'-m',module],cwd=ai_os_root,input=json.dumps(payload,ensure_ascii=False),text=True,capture_output=True,timeout=180)
+        if completed.returncode:
+            raise CEOFailureBridgeError(f'{module} failed: {(completed.stderr or completed.stdout)[-1800:]}')
+        return json.loads(completed.stdout)
+
     if not (folder/'task.json').exists():
         call('ai_management_os.actions.task_create',{'task_id':task_id,'task_name':'Sellemy品質NG 10連続：CEO検査',
              'project_id':'BU-002','creator_role_id':'sellemy-ops','owner_role_id':'sellemy-ops',
@@ -31,10 +36,15 @@ def submit_failed_ten_inspection(receipt:dict,*,ai_os_root:Path|None=None,ai_os_
              'parent_task_id':None,'ceo_direct':False,'receiving_role_id':'os-chief'})
     for path in (folder/'history').glob('*.json'):
         try:
-            import json
             if json.loads(path.read_text()).get('message_id')=='FAILED10-'+signature:
                 return {'required':True,'duplicate':True,'task_id':task_id}
         except (OSError,ValueError):continue
+    history_dir=folder/'history'
+    if not list(history_dir.glob('*.json')):
+        call('ai_management_os.actions.task_append',{'task_id':task_id,
+            'message_id':'FAILED10-ASSIGN-'+signature,'actor_role_id':'sellemy-ops',
+            'role_id':'os-chief','status':'in_progress',
+            'detail':{'next_action':'品質失敗10回到達、CEO検査への引き継ぎ','next_responsibility_role_id':'os-chief','source':'sellemy-normal-quality-gate'}})
     detail={'next_action':'CEO検査依頼: Sellemy Growthで通常制作10件が連続failed。失敗10件の証跡を点検し、Ownerに品質回復と再開条件を指示してください。既存の公開記事は変更せず、日次投稿数の一律上限を設けない。',
       'requested_to':'ceo','reason':'通常制作10ターンが連続failed。品質根本原因の検査と回復判断が必要','required_actions':['10件の原因分析と品質回復判断'],
       'failed_slugs':slugs,'failure_count':receipt['failure_count'],'source':'sellemy-normal-quality-gate',
