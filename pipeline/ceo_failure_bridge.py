@@ -45,7 +45,7 @@ def submit_failed_ten_inspection(receipt:dict,*,ai_os_root:Path|None=None,ai_os_
             'message_id':'FAILED10-ASSIGN-'+signature,'actor_role_id':'sellemy-ops',
             'role_id':'os-chief','status':'in_progress',
             'detail':{'next_action':'品質失敗10回到達、CEO検査への引き継ぎ','next_responsibility_role_id':'os-chief','source':'sellemy-normal-quality-gate'}})
-    detail={'next_action':'CEO検査依頼: Sellemy Growthで通常制作10件が連続failed。失敗10件の証跡を点検し、Ownerに品質回復と再開条件を指示してください。既存の公開記事は変更せず、日次投稿数の一律上限を設けない。',
+    detail={'next_action':'CEO検査依頼: Sellemy Growthで品質NGが10回連続。対象記事の各失敗履歴を点検し、Ownerに品質回復と再開条件を指示してください。既存の公開記事は変更せず、日次投稿数の一律上限を設けない。',
       'requested_to':'ceo','reason':'通常制作10ターンが連続failed。品質根本原因の検査と回復判断が必要','required_actions':['10件の原因分析と品質回復判断'],
       'failed_slugs':slugs,'failure_count':receipt['failure_count'],'source':'sellemy-normal-quality-gate',
       'resume_role_id':'os-chief','next_responsibility_role_id':'os-chief'}

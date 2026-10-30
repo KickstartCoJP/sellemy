@@ -20,7 +20,7 @@ EXECUTION_EVENTS_PATH = STATE_ROOT / 'execution-events.jsonl'
 
 TERMINAL_STATUSES = {'PUBLISHED', 'DISCARDED', 'FAILED', 'RETIRED'}
 RETRYABLE_STAGES = {'WRITER_PENDING', 'QA_FAILED', 'EYECATCH_PENDING', 'PUBLISH_PENDING', 'PRODUCT_HOLD'}
-WRITER_MAX_ATTEMPTS = int(os.environ.get('SELLEMY_WRITER_MAX_ATTEMPTS_PER_SLUG', '5'))
+WRITER_MAX_ATTEMPTS = int(os.environ.get('SELLEMY_WRITER_MAX_ATTEMPTS_PER_SLUG', '10'))
 
 
 def utcnow() -> datetime:
@@ -427,7 +427,16 @@ def mark_failure(slug: str, *, stage: str, failure_class: str, failure_code: str
         state['current_stage'] = 'EYECATCH_PENDING'
     elif stage == 'publish':
         state['current_stage'] = 'PUBLISH_PENDING'
-    state['next_retry_at'] = _iso(utcnow() + _backoff(stage, attempt, failure_class))
+    # The tenth consecutive quality failure is the terminal FAILED gate.
+    # CEO inspection is requested separately; no publication gate is bypassed.
+    terminal_quality_failure = (normal and failure_class in {'role_quality', 'missing_evidence'}
+                                and count >= 10)
+    if terminal_quality_failure:
+        state['status'] = 'FAILED'
+        state['current_stage'] = 'WRITER_FAILED' if stage == 'writer' else f'{stage.upper()}_FAILED'
+        state['next_retry_at'] = None
+    else:
+        state['next_retry_at'] = _iso(utcnow() + _backoff(stage, attempt, failure_class))
     return _save_state(state, event='STAGE_FAILED', detail={
         'stage': stage, 'attempt': attempt, 'failure_class': failure_class,
         'failure_code': failure_code, 'role_return': role_return,

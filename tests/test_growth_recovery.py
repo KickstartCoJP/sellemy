@@ -84,13 +84,16 @@ class GrowthRecoveryTests(unittest.TestCase):
         self.assertEqual(row['role_returns']['writer'],1)
         self.assertEqual(gr.read_artifact('same-slug','payload.json')['slug'],'same-slug')
 
-    def test_writer_fifth_failure_is_failed_not_discarded(self):
+    def test_writer_tenth_consecutive_failure_is_failed_not_discarded(self):
         self._job()
         row=None
-        for _ in range(5):
+        for _ in range(9):
             row=gr.mark_failure('same-slug',stage='writer',failure_class='role_quality',failure_code='QA',reason='bad',role_return=True,role='writer')
+            self.assertEqual(row['status'], 'ACTIVE')
+        row=gr.mark_failure('same-slug',stage='writer',failure_class='role_quality',failure_code='QA',reason='bad',role_return=True,role='writer')
         self.assertEqual(row['status'],'FAILED')
         self.assertEqual(row['current_stage'],'WRITER_FAILED')
+        self.assertEqual(gr.read_artifact('same-slug','ceo-inspection-required.json')['failure_count'],10)
         self.assertIsNone(gr.eligible_job(now=datetime.now(timezone.utc)))
         self.assertIsNone(row['discard_reason'])
 
