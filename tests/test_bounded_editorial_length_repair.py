@@ -16,6 +16,9 @@ def test_repair_edits_prose_but_preserves_product_refs_and_groups():
         revised,metadata=revise_length_fields(original,rendered_main_len=3433)
     assert metadata['model']=='test'
     assert writer.call_count==1
+    repair_prompt=writer.call_args.args[3]
+    assert 'SUMMARY, HOW_TO_CHOOSE AND CONCLUSION MUST CONTAIN NO PRODUCT NAMES OR BRAND NAMES' in repair_prompt
+    assert 'remove them and replace' in repair_prompt
     assert [p['ref'] for p in revised['products']]==[p['ref'] for p in original['products']]
     assert revised['comparison_groups']==original['comparison_groups']
     assert revised['summary']==changes['summary']
