@@ -251,11 +251,9 @@ def recover_legacy_failed_jobs() -> list[str]:
             discard(row['slug'], 'Superseded by current three-axis Planning specification')
             recovered.append(row['slug'])
         elif row.get('status') == 'FAILED':
-            row['status'] = 'ACTIVE'
-            row['current_stage'] = 'QA_FAILED'
-            row['next_retry_at'] = _iso()
-            _save_state(row, event='NONTERMINAL_WRITER_RECOVERY')
-            recovered.append(row['slug'])
+            # A terminal quality failure requires verified owner remediation;
+            # never silently reopen it on the scheduler's next tick.
+            continue
     return recovered
 
 
@@ -430,7 +428,7 @@ def mark_failure(slug: str, *, stage: str, failure_class: str, failure_code: str
     # The tenth consecutive quality failure is the terminal FAILED gate.
     # CEO inspection is requested separately; no publication gate is bypassed.
     terminal_quality_failure = (normal and failure_class in {'role_quality', 'missing_evidence'}
-                                and count >= 10)
+                                and int(state.get('consecutive_quality_failures') or 0) >= 10)
     if terminal_quality_failure:
         state['status'] = 'FAILED'
         state['current_stage'] = 'WRITER_FAILED' if stage == 'writer' else f'{stage.upper()}_FAILED'

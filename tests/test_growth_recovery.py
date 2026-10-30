@@ -97,6 +97,18 @@ class GrowthRecoveryTests(unittest.TestCase):
         self.assertIsNone(gr.eligible_job(now=datetime.now(timezone.utc)))
         self.assertIsNone(row['discard_reason'])
 
+    def test_terminal_writer_failure_never_automatically_reopens(self):
+        self._job()
+        gr.write_artifact('same-slug', 'selection.json', {'axes': [{'id': 'a'}, {'id': 'b'}, {'id': 'c'}]})
+        for _ in range(10):
+            row = gr.mark_failure('same-slug', stage='writer', failure_class='role_quality',
+                                  failure_code='QA', reason='bad', role_return=True, role='writer')
+        self.assertEqual((row['status'], row['current_stage']), ('FAILED', 'WRITER_FAILED'))
+        self.assertEqual(gr.recover_legacy_failed_jobs(), [])
+        self.assertEqual((gr.load_job('same-slug')['status'], gr.load_job('same-slug')['current_stage']),
+                         ('FAILED', 'WRITER_FAILED'))
+        self.assertIsNone(gr.eligible_job())
+
     def test_identical_product_reselection_is_held_without_repeating_qa(self):
         self._job('stuck')
         gr.write_artifact('stuck', 'product-search-progress.json', {
