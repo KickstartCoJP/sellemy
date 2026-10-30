@@ -40,4 +40,4 @@ def test_insufficient_unique_does_not_pass_batch():
     assert added==[]
     assert receipt['complete'] is False
     assert receipt['added_unique']==0
-    assert search.call_count==3
+    assert search.call_count==12

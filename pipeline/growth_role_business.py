@@ -157,28 +157,33 @@ def collect_unique_products(topic: dict, *, cache_only: bool, existing: list[dic
     axes = topic['comparison_axes']
     for axis, query in zip(axes, _product_queries(topic)):
         accepted = []
-        try:
-            candidates = discover_products({**topic, 'query': query}, cache_only=cache_only)
-            for candidate in candidates:
-                if len(accepted) >= 10:
-                    break
-                # Deduplicate both inside the axis and across all three axes.
-                distinct, _ = dedupe_content_products([*kept, candidate])
-                if len(distinct) == len(kept):
-                    continue
-                candidate = {**candidate, 'discovery_axis_id': axis['id']}
-                accepted.append(candidate)
-                kept.append(candidate)
-            additions.extend(accepted)
-            attempts.append({'axis_id': axis['id'], 'query': query,
-                             'found': len(candidates), 'new': len(accepted),
-                             'complete': len(accepted) >= 2})
-        except Exception as exc:
-            attempts.append({'axis_id': axis['id'], 'query': query, 'found': 0,
-                             'new': 0, 'complete': False,
-                             'error': f'{type(exc).__name__}: {exc}'})
+        # Initial search plus at most three bounded retries. Every axis retains
+        # its own ten-candidate ceiling; never broaden to unrelated products.
+        for retry in range(max_searches + 1):
+            if len(accepted) >= 2:
+                break
+            try:
+                candidates = discover_products({**topic, 'query': query}, cache_only=cache_only)
+                for candidate in candidates:
+                    if len(accepted) >= 10:
+                        break
+                    distinct, _ = dedupe_content_products([*kept, candidate])
+                    if len(distinct) == len(kept):
+                        continue
+                    candidate = {**candidate, 'discovery_axis_id': axis['id']}
+                    accepted.append(candidate)
+                    kept.append(candidate)
+                attempts.append({'axis_id': axis['id'], 'query': query,
+                                 'retry': retry, 'found': len(candidates),
+                                 'new': len(accepted), 'complete': len(accepted) >= 2})
+            except Exception as exc:
+                attempts.append({'axis_id': axis['id'], 'query': query,
+                                 'retry': retry, 'found': 0, 'new': len(accepted),
+                                 'complete': False,
+                                 'error': f'{type(exc).__name__}: {exc}'})
+        additions.extend(accepted)
     return additions, {'added_unique': len(additions),
-                       'complete': len(attempts) == 3 and all(x['complete'] for x in attempts),
+                       'complete': all(sum(p['discovery_axis_id'] == axis['id'] for p in additions) >= 2 for axis in axes),
                        'attempts': attempts}
 
 

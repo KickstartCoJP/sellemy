@@ -47,7 +47,8 @@ def test_one_axis_under_two_blocks_topic():
     with patch('growth_role_business.discover_products', fake):
         products, status = collect_unique_products(TOPIC, cache_only=False)
     assert not status['complete']
-    assert [a['new'] for a in status['attempts']] == [2,1,2]
+    assert [a['new'] for a in status['attempts']] == [2,1,1,1,1,2]
+    assert [a['retry'] for a in status['attempts'] if a['axis_id']=='quiet'] == [0,1,2,3]
 
 def fake_ai(selected):
     def run(command, **kwargs):
@@ -92,7 +93,7 @@ def test_duplicate_different_asin_same_product_title_rejected():
         return rows
     with patch('growth_role_business.discover_products', same_title):
         products,status=collect_unique_products(TOPIC,cache_only=False)
-    assert [x['new'] for x in status['attempts']]==[2,1,2]
+    assert [x['new'] for x in status['attempts']]==[2,1,1,1,1,2]
     assert not status['complete']
 
 def test_model_management_used_for_ai_selection():
