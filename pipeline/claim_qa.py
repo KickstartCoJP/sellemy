@@ -11,7 +11,7 @@ VERSION=hashlib.sha256(CONTRACT.encode()).hexdigest()
 def make_input(payload,evidence):
     article=article_text(payload)
     sources={p['ref']:source_text(p) for p in evidence.get('products',[])}
-    if len(sources)!=6 or any(not s for s in sources.values()):raise ValueError('six verified product sources required')
+    if len(sources)!=6 or any(not s for s in sources.values()):raise ValueError('six identifiable product listings required')
     refs={p['ref'] for p in article['products']}
     if refs!=set(sources):raise ValueError('article and evidence refs differ')
     return {'contract_version':VERSION,'article':article,'verified_sources':sources,'comparison_axes':evidence.get('comparison_axes',[])}
@@ -36,9 +36,9 @@ def validate_receipt(receipt,subject):
         ref=item.get('product_ref');quote=item.get('article_quote');equote=item.get('evidence_quote')
         if ref not in subject['verified_sources']:problems.append('unknown product ref');continue
         if not isinstance(quote,str) or not quote or (quote not in json.dumps(article_by_ref.get(ref,{}),ensure_ascii=False) and quote not in shared_article):problems.append('unanchored same-product article claim')
-        if item.get('verdict') not in ('SUPPORTED','UNSUPPORTED','CONTRADICTED'):problems.append('invalid finding status')
+        if item.get('verdict') not in ('SUPPORTED','UNSUPPORTED','CONTRADICTED','NO_CLAIM'):problems.append('invalid finding status')
         if item.get('verdict')=='SUPPORTED' and (not equote or equote not in subject['verified_sources'][ref]):problems.append('unanchored source proof')
-    if receipt.get('verdict')=='PASS' and any(x.get('verdict')!='SUPPORTED' for x in findings if isinstance(x,dict)):
+    if receipt.get('verdict')=='PASS' and any(x.get('verdict') not in ('SUPPORTED','NO_CLAIM') for x in findings if isinstance(x,dict)):
         problems.append('PASS with adverse finding')
     if receipt.get('verdict')=='FAIL' and not any(x.get('verdict') in ('UNSUPPORTED','CONTRADICTED') for x in findings if isinstance(x,dict)):
         problems.append('FAIL without concrete adverse finding')
@@ -54,6 +54,6 @@ def review_prompt(subject):
     return (CONTRACT+'\nVerify only this one article against the corresponding product sources. '
             'Return one JSON object: verdict PASS/FAIL, reason, findings array. '
             'For each material product-specific factual claim give product_ref, exact article_quote, '
-            'verdict SUPPORTED/UNSUPPORTED/CONTRADICTED, exact evidence_quote if supported, reason. '
-            'Every quotation must be verbatim. If a quote is not in the provided evidence, mark UNSUPPORTED. '
+            'verdict SUPPORTED/UNSUPPORTED/CONTRADICTED/NO_CLAIM, exact evidence_quote if supported, reason. '
+            'Every quotation must be verbatim. An Amazon listing title may establish identity but NEVER proves a capability, performance or material. If a concrete claim lacks a verified support quote, mark UNSUPPORTED. If a product has no objective concrete claim, emit one NO_CLAIM finding with an exact quote from its description and empty evidence_quote. Do not invent a supporting claim to fill coverage. '
             'Never infer a source.\nINPUT:\n'+json.dumps(subject,ensure_ascii=False))

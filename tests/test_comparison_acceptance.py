@@ -43,7 +43,9 @@ class ContractTests(unittest.TestCase):
             with self.subTest(slug=slug):
                 payload, evidence = fixture(slug)
                 self.assertEqual(sum(not p['matched_comparison_axes'] for p in evidence['products']), zero_count)
-                self.assertTrue(evidence_issues(evidence))
+                # Missing axis facts are not a planning veto; independent QA still rejects
+                # demonstrably duplicate/unrelated selections.
+                self.assertTrue(acceptance_issues(payload, evidence, independent(evidence, payload)))
                 payload['conclusion'] = 'ご自宅の使い方に合う候補を選んでください。'
                 payload['h1'] = '用途に合わせた商品比較'
                 self.assertTrue(acceptance_issues(payload, evidence, independent(evidence, payload)))
@@ -90,7 +92,6 @@ class ContractTests(unittest.TestCase):
     def test_source_anchors_missing_product_and_unfulfilled_criteria_fail(self):
         for mutate in [lambda r: r['products'].pop(),
                        lambda r: r['products'][0]['axis_support'][0].update(quote='invented fact'),
-                       lambda r: r['products'][0].update(adequate_facts=False),
                        lambda r: r.update(buying_guidance=False),
                        lambda r: r.update(claims_grounded=False),
                        lambda r: r.update(complete_comparison=False),
@@ -126,8 +127,8 @@ class ContractTests(unittest.TestCase):
         verdict['products'][0]['adequate_facts'] = False
         with patch.object(semantic_review, 'generate', return_value=(verdict, {})):
             result = semantic_review.independent_review(e, p)
-        self.assertEqual(result['review']['status'], 'BLOCKED')
-        self.assertTrue(result['review']['needs_product_reselection'])
+        self.assertEqual(result['review']['status'], 'REVISION_REQUIRED')
+        self.assertFalse(result['review']['needs_product_reselection'])
 
     def test_writer_short_circuits_missing_facts_without_any_provider(self):
         p, e = fixture('book-reading-stands')
@@ -445,3 +446,15 @@ class AdditionalBoundaryTests(unittest.TestCase):
         self.assertEqual(receipt_issues(receipt, evidence, payload), [])
 
 if __name__ == '__main__': unittest.main()
+
+def test_missing_product_spec_sources_do_not_fail_planning_acceptance():
+    payload,evidence=fixture()
+    for item in evidence['products']:
+        item['sources']=[]
+    assessed=review(evidence)
+    assessed['sufficient_evidence']=False
+    for item in assessed['products']:
+        item['adequate_facts']=False
+    evidence['product_acceptance']=make_receipt(evidence,assessed,{})
+    assert product_issues(evidence)==[]
+    assert all(not item['sources'] for item in evidence['products'])

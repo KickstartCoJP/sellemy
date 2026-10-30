@@ -32,8 +32,8 @@ def normalized(value):
 
 
 def source_text(product):
-    # Search listings are discovery leads, never QA evidence.
-    parts = []
+    # Listing titles establish product identity/class, not performance claims.
+    parts = [str(product.get('amazon_title') or '').strip()]
     for source in product.get('sources') or []:
         if not isinstance(source, dict) or source.get('verified') is not True:
             continue
@@ -220,11 +220,11 @@ def review_issues(review, evidence, *, article=False):
                 or identity not in normalized(quote)
                 or identity == normalized(str(by_ref.get(ref, {}).get('asin') or ''))):
             issues.append(f'{ref}: identity has no source anchor')
-        if check.get('adequate_facts') is not True or check.get('topic_fit') is not True:
-            issues.append(f'{ref}: insufficient facts or topic fit')
+        if check.get('topic_fit') is not True:
+            issues.append(f'{ref}: product does not fit the topic')
         supports = check.get('axis_support')
-        if not isinstance(supports, list) or not supports:
-            issues.append(f'{ref}: no grounded comparison axis')
+        if not isinstance(supports, list):
+            issues.append(f'{ref}: comparison axis assessment missing')
         else:
             for support in supports:
                 axis = support.get('axis_id')
@@ -246,9 +246,9 @@ def review_issues(review, evidence, *, article=False):
     ):
         issues.append('duplicate pair not substantiated by matching product identities')
     issues.extend(duplicate_pair_issues(review, evidence))
-    if len(covered) < 2:
-        issues.append('review lacks two grounded topic axes')
-    required = ['distinct_products', 'meaningful_comparison', 'sufficient_evidence']
+    # Topic fit and meaningful comparison are judged semantically. Unknown
+    # specification anchors do not by themselves reject an identifiable product.
+    required = ['distinct_products', 'meaningful_comparison']
     if article:
         required += ['claims_grounded', 'buying_guidance', 'complete_comparison',
                      'recommendation_conclusion', 'reader_decision_outsourcing_absent',

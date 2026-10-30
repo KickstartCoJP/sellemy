@@ -89,8 +89,8 @@ def independent_review(evidence, payload=None, *, editorial_context=None):
         'Return ACCEPTED only if ALL applicable contract criteria are met. '
         'Evidence-only review assesses whether a useful comparison CAN be written; '
         'article review assesses whether THIS prose delivers it. '
-        'Check only the supplied evidence against the existing topic comparison_axes and, when present, the submitted article. Do not invent comparison axes, change the article plan, or demand a manufacturer source solely because of its source type. A verified matching marketplace excerpt is valid evidence for what it explicitly states. Reject unsupported or ambiguous claims, not a source category. Use BLOCKED/needs_product_reselection=true when submitted facts or identities are insufficient. '
-        'Use REVISION_REQUIRED/false for writing defects with adequate evidence. '
+        'Check only the supplied evidence against the existing topic comparison_axes and, when present, the submitted article. Do not invent comparison axes, change the article plan, or demand a manufacturer source solely because of its source type. A verified matching marketplace excerpt is valid evidence for what it explicitly states. Reject unsupported or ambiguous concrete claims, not a source category. Missing verified specifications are UNKNOWN, not automatic grounds for rejecting a relevant product or its planning QA. Use BLOCKED/needs_product_reselection=true for demonstrably irrelevant products, proved duplicates or fundamentally invalid product identities; do not block solely because technical evidence could not be fetched. '
+        'Use REVISION_REQUIRED/false for unsubstantiated article sentences: quote the exact unsupported concrete wording and instruct deletion, then instruct the Writer to replace the lost length with grounded facts or natural general buying guidance. Do not demand new product research solely for unsupported prose. '
         'identity_key must be a literal identifying substring contained in identity_quote, using the same language/script as the source. Choose the shortest source-backed brand + base model/family string that still distinguishes the product; exclude seller, ASIN, color, quantity and bundles. Do not invent an English canonical key for a Japanese source. '
         'Cite exact substrings from that product source corpus (listing title plus verified source excerpts/facts) for identity_quote and axis_support.quote. Prefer manufacturer/official/manual anchors for decision-critical facts. Marketing claims are not proof of performance. Reject accessories/refills/parts mixed into a main-product comparison unless the topic explicitly targets them. '
         'Fill duplicate_pair_checks ONLY for the unresolved pairs provided in machine_screen; return ONLY the items marked UNKNOWN in each unresolved pair; do not reassess machine-confirmed items or duplicate pairs; cite verbatim left_quote/right_quote from each product source when asserting duplicate. Set is_duplicate=true only on affirmative product identity evidence, not a missing model number. If distinct_products=false, at least one such duplicate pair must be present. '
@@ -127,7 +127,7 @@ def independent_review(evidence, payload=None, *, editorial_context=None):
     if payload is None and len(review.get('products') or []) == 6 and all(
         isinstance(x, dict) and x.get('adequate_facts') is True and x.get('topic_fit') is True
         for x in review['products']
-    ) and (review.get('distinct_products') is False or review.get('sufficient_evidence') is False):
+    ) and review.get('distinct_products') is False:
         correction = (prompt + '\nCONTRADICTORY WHOLE-SET QA: All six individual product facts and topic fit PASS, '
                       'but distinct_products or sufficient_evidence is false. Recheck this assessment '
                       'independently. If two products are the same base series, identify exact refs and '

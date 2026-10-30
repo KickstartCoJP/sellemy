@@ -124,6 +124,7 @@ def _prompt(topic: dict, evidence: dict, *, previous_payload: dict | None = None
         '結びも商品名は記載せず、自然に締めてください。「出会うヒントになった」と読者が感じられるようなまとめにしてください。\\n\\n'
         '商品カセットでは、6つの異なる商品を2商品ずつ3組に構成してください。その商品の実用的な補足をしてください。\\n\\n'
         '文脈を壊す不用意な水増し文章、定型的な注意書き、内部QA用語、不要な仕様説明を書かないでください。slug、category、商品参照IDを維持してください。\\n\\n'
+        '編集QAで根拠のない具体表現（仕様・数値・性能・効果・使用体験）が指摘されたら、該当表現は削除して再利用せず、確認できた事実と一般的な選び方・利用場面の自然な文章で所定の文字量を補ってください。確認できない事実を創作して補完しないでください。\\n\\n'
         f'TOPIC:\n{json.dumps(topic, ensure_ascii=False, sort_keys=True)}\n\n'
         '3組の商品はEvidence.selection.axesの軸別割当をそのまま使い、軸をまたいで並べ替えないでください。選定理由は確認済み事実の範囲で商品の説明に反映してください。\n'
         f'EVIDENCE:\n{json.dumps(evidence, ensure_ascii=False, sort_keys=True)}'
@@ -134,6 +135,12 @@ def _prompt(topic: dict, evidence: dict, *, previous_payload: dict | None = None
         failures = gate_feedback.get('qa_failures') or {}
         length = measures.get('main_len')
         if failures.get('main_in_range') is False and isinstance(length, int):
+            if length < 2400:
+                prompt += (f'\nCRITICAL LENGTH RESTORATION: previous rendered main = {length}, '
+                           f'below minimum 2400 by {2400 - length}. After deleting every unsupported '
+                           'specific claim, add substantial, natural, evidence-safe buying guidance '
+                           'and reader use-case context until the rendered article reaches 2700-3100 '
+                           'characters. Never reintroduce a deleted unsupported fact.\n')
             if length > 3400:
                 prompt += (f'\nCRITICAL LENGTH CORRECTION: previous rendered main = {length}, '
                            f'which exceeds the absolute maximum 3400 by {length - 3400}. '

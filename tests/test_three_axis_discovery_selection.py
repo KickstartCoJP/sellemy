@@ -79,7 +79,7 @@ def test_pinned_retention():
         selected,_=select_six(rows,TOPIC,{},pinned=pinned)
     assert {r['asin'] for r in pinned}.issubset({r['asin'] for r in selected})
 
-def test_insufficient_evidence_blocks_selection():
+def test_unrelated_source_evidence_blocks_selection():
     rows=six();rows[0]['sources']=[{'verified':True,'excerpt':'irrelevant fact'}]
     with pytest.raises(ProductSelectionError):
         select_six(rows,TOPIC,{})

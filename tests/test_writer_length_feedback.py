@@ -20,3 +20,11 @@ def test_length_correction_is_last_instruction_after_prior_payload():
         'measurements':{'main_len':3443}, 'qa_failures':{'main_in_range':False}})
     assert text.index('PREVIOUS_PAYLOAD') < text.index('FINAL MANDATORY REVISION CHECKLIST')
     assert 'no more than 3300' in text
+
+def test_short_article_after_unsupported_claim_removal_has_replacement_instruction():
+    text=_prompt({'slug':'slug'},valid_editorial_evidence(),previous_payload={'slug':'slug'},gate_feedback={
+        'measurements':{'main_len':2150},'qa_failures':{'main_in_range':False},
+        'independent_quality_gate':{'gate':'claim','issues':['削除対象の具体文言: 容量300ml']}})
+    assert 'below minimum 2400 by 250' in text
+    assert 'Never reintroduce a deleted unsupported fact' in text
+    assert '削除対象の具体文言' in text

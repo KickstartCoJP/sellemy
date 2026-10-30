@@ -39,3 +39,32 @@ class ClaimCrossRefTests(unittest.TestCase):
   subject={'article':{'products':[{'ref':'p1','description':'容量100ml'},{'ref':'p2','description':'容量200ml'}]},'verified_sources':{'p1':'容量200ml','p2':'容量200ml'},'comparison_axes':[]}
   v={'verdict':'PASS','reason':'claimed','findings':[{'product_ref':'p1','article_quote':'容量200ml','evidence_quote':'容量200ml','verdict':'SUPPORTED'},{'product_ref':'p2','article_quote':'容量200ml','evidence_quote':'容量200ml','verdict':'SUPPORTED'}]}
   with self.assertRaisesRegex(ValueError,'same-product'):make_receipt(v,subject)
+
+def test_unverified_product_with_only_general_guidance_can_pass_claim_check():
+    subject={'article':{'products':[{'ref':'p1','description':'日々の使い方を考えて選びましょう'}]},
+             'verified_sources':{'p1':'商品名だけが判明'},'comparison_axes':[]}
+    verdict={'verdict':'PASS','reason':'no concrete specifications asserted',
+             'findings':[{'product_ref':'p1','article_quote':'日々の使い方を考えて選びましょう',
+                          'evidence_quote':'','verdict':'NO_CLAIM','reason':'general buying guidance'}]}
+    assert make_receipt(verdict,subject)['verdict']=='PASS'
+
+def test_editorial_rework_receives_exact_unsupported_quote():
+    from unittest.mock import patch
+    from independent_quality_gate import issue_receipts,QualityGateError
+    claim={'verdict':'FAIL','reason':'unsupported detail',
+           'findings':[{'product_ref':'p1','article_quote':'容量300ml','verdict':'UNSUPPORTED'}]}
+    with patch('independent_quality_gate.require_acceptance'), \
+         patch('independent_quality_gate.editorial_input',return_value={}), \
+         patch('independent_quality_gate.editorial_prompt',return_value='editorial'), \
+         patch('independent_quality_gate.editorial_receipt',return_value={'verdict':'PASS'}), \
+         patch('independent_quality_gate.claim_input',return_value={}), \
+         patch('independent_quality_gate.claim_prompt',return_value='claim'), \
+         patch('independent_quality_gate.claim_receipt',return_value=claim):
+        try:
+            issue_receipts({}, {}, {},judge=lambda prompt: {})
+        except QualityGateError as error:
+            assert error.gate=='claim'
+            assert '容量300ml' in str(error)
+            assert '削除' in str(error)
+        else:
+            raise AssertionError('unsupported statement must be rejected')

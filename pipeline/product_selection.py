@@ -127,7 +127,7 @@ def select_six(candidates: list[dict], topic: dict, feedback: dict, *, pinned: l
     axes = topic['comparison_axes']
 
     def eligible(item):
-        corpus = source_text(item).lower()
+        corpus = source_text(item).lower()  # Listing identity is usable for topic fit; not a performance proof.
         return bool(_text(item).strip() and corpus and any(
             str(word).lower() in corpus for axis in axes for word in axis.get('keywords', [])))
 

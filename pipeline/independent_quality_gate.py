@@ -58,7 +58,13 @@ def issue_receipts(payload,evidence,acceptance,judge=None):
         except QualityGateError:raise
         except Exception as exc:
             if attempt==1:raise QualityGateError('claim',str(exc)) from exc
-    if cr['verdict']!='PASS':raise QualityGateError('claim',cr.get('reason','FAIL'))
+    if cr['verdict']!='PASS':
+        quotes=[x.get('article_quote') for x in cr.get('findings',[])
+                if isinstance(x,dict) and x.get('verdict') in ('UNSUPPORTED','CONTRADICTED')
+                and x.get('article_quote')]
+        raise QualityGateError('claim',[cr.get('reason','FAIL'),
+            '削除対象の具体文言: '+json.dumps(quotes,ensure_ascii=False),
+            '該当文言を破棄し、根拠ある内容と一般的な選び方で所定文字数まで補って再編集'])
     return {'editorial':er,'claim':cr}
 
 def require_receipts(payload,evidence,acceptance,receipts):
