@@ -85,14 +85,11 @@ def parse_amazon_search_results(body,limit=5):
  return out
 
 def _amazon_search_browser(url, limit):
- """Keep first attempt headless; show a visible browser only on search failure."""
+ """Try headless Chrome once as the Amazon HTTP search fallback."""
  from playwright.sync_api import sync_playwright
  failures=[]
- # Use headless Chrome normally, then visible Chrome, WebKit and Firefox.
- browsers=(('chrome-headless','chromium',True,'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'),
-           ('chrome-visible','chromium',False,'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'),
-           ('safari','webkit',False,None),
-           ('firefox','firefox',False,None))
+ # Use Chrome only for Amazon search browser fallback.
+ browsers=(('chrome-headless','chromium',True,'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'),)
  with sync_playwright() as playwright:
   for label,engine,headless,path in browsers:
    browser=None
