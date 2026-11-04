@@ -79,6 +79,8 @@ def _portfolio_signals(articles: list[dict]) -> dict:
 
 
 def _context() -> dict:
+    from amazon_search_retry import next_themes
+    retry_themes = next_themes()
     articles = json.loads(ARTICLES.read_text(encoding='utf-8'))
     recent = articles[-36:]
     return {
@@ -88,7 +90,8 @@ def _context() -> dict:
         'existing_slugs': [str(row.get('slug') or '') for row in articles if row.get('slug')],
         'recent_articles': [{k: row.get(k) for k in ('slug', 'category', 'title')} for row in recent],
         'portfolio': _portfolio_signals(articles),
-        'instruction': 'Explore fresh search and purchase intents every cycle. Seeds are inspiration, never a queue. Existing slugs are a compact duplicate guard; exact and normalized duplicate rejection is enforced again by Runtime against the full article catalog. Actively diversify underrepresented categories and avoid repeating the same distinctive topic family in the recent portfolio. Return novel candidates across all categories.',
+        'amazon_search_recovery_themes': retry_themes,
+        'instruction': 'Prioritize re-evaluating the provided historical Amazon access-failure recovery themes as newly viable topics, regenerating complete current-schema proposals and rejecting any stale or duplicate intent through normal Planning QA. These historical failures were infrastructure errors, not quality rejections. Continue exploring fresh intents, respect the full article duplicate guard, and diversify across categories.',
     }
 
 

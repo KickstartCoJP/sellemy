@@ -29,3 +29,22 @@ def test_503_browser_failure_is_typed_retryable_outage():
 def test_product_infrastructure_outage_uses_backoff():
     assert _backoff('product',1,'runtime_infrastructure') == timedelta(minutes=1)
     assert _backoff('product',1,'missing_evidence') == timedelta(minutes=15)
+
+
+def test_amazon_search_recovery_queue_rotates_without_dropping_jobs(tmp_path):
+    import json
+    from unittest.mock import patch
+    from amazon_search_retry import next_themes, mark_restarted
+    queue = tmp_path / 'queue.json'
+    queue.write_text(json.dumps({'cursor': 0, 'entries': [
+        {'slug': 'a', 'status': 'pending'},
+        {'slug': 'b', 'status': 'pending'},
+        {'slug': 'c', 'status': 'pending'}]}))
+    with patch('amazon_search_retry.QUEUE', queue):
+        assert next_themes(2) == ['a', 'b']
+        assert next_themes(2) == ['c', 'a']
+        mark_restarted('a')
+        assert next_themes(2) == ['c', 'b']
+    state = json.loads(queue.read_text())
+    assert len(state['entries']) == 3
+    assert state['entries'][0]['status'] == 'restarted'

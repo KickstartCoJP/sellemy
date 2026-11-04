@@ -140,6 +140,8 @@ def _commit_planning(slug: str, *, provider: dict | None, admission: dict | None
     from growth_recovery import write_artifact, record_execution
     from codex_provider import PLANNING_SURFACE, record_context_quality
     write_artifact(slug, 'planning-provider.json', provider or {})
+    from amazon_search_retry import mark_restarted
+    mark_restarted(slug)
     if admission and admission.get('allowed'):
         receipt = admission.get('receipt') or {}
         write_artifact(slug, 'scheduled-admission.json', {
