@@ -219,12 +219,10 @@ def _researchable_candidates(products: list[dict], *, cache_only: bool) -> bool:
 def select_viable_topic(
     planning_candidates: list[dict] | None, feedback: dict, *, cache_only: bool, max_rounds: int | None = None
 ) -> tuple[dict, list[dict], list[dict]]:
-    # A cap on product research for ONE theme must never become a global cap
-    # on how many fresh themes Planning may explore.
-    from itertools import count
+    # The first ranked topic is the only job attempt in this run.
     probes = []
     tried_slugs: set[str] = set()
-    rounds = range(1) if planning_candidates is not None else (range(max_rounds) if max_rounds is not None else count())
+    rounds = range(1)
     for round_index in rounds:
         source = planning_candidates if planning_candidates is not None else discover_candidates()
         ranked = [row for row in rank_candidates(source, feedback) if row['slug'] not in tried_slugs]
@@ -234,13 +232,13 @@ def select_viable_topic(
             # Provider did not supply any unseen themes. Fail explicitly rather
             # than inventing a global quota on distinct rejected themes.
             raise PlanningError('planning produced no novel themes; requires a changed candidate set')
-        for topic in ranked:
+        for topic in ranked[:1]:
             tried_slugs.add(topic['slug'])
             try:
                 products, discovery_trace = collect_unique_products(topic, cache_only=cache_only)
                 probes.append({'round': round_index + 1, 'slug': topic['slug'], 'candidate_count': len(products), 'discovery': discovery_trace, 'error': ''})
             except Exception as exc:
-                products = []
+                products, discovery_trace = [], {'complete': False, 'attempts': []}
                 probes.append({'round': round_index + 1, 'slug': topic['slug'], 'candidate_count': 0, 'error': f'{type(exc).__name__}: {exc}'})
             if len(products) == 6 and discovery_trace['complete']:
                 try:
@@ -316,7 +314,7 @@ def select_viable_topic(
                     if enriched and enriched.get('sources') != product.get('sources'):
                         product['sources'] = enriched['sources']
                 return selected, products, probes
-    error = PlanningError('no planned topic passed product acceptance after full candidate scan and replanning: require 6 documented products matching topic axes')
+    error = PlanningError('chosen topic did not pass product acceptance: require 6 documented products matching topic axes')
     error.viability_probes = probes
     raise error
 

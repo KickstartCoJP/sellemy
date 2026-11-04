@@ -161,18 +161,14 @@ class ProductViabilityPlanningTests(unittest.TestCase):
             'signals': {key: .8 for key in ('search_demand', 'purchase_intent', 'product_viability', 'seasonality', 'profitability', 'evidence_availability')},
         }
 
-    def test_skips_unviable_top_topic_and_reuses_viable_probe(self):
+    def test_first_candidate_failure_does_not_switch_to_second(self):
         first, second = self._topic('first-topic'), self._topic('second-topic')
-        products = [{'asin': f'B0TEST{i:04d}'} for i in range(6)]
-        with (
-            patch.object(business, 'rank_candidates', return_value=[first, second]),
-            patch.object(business, 'discover_products', side_effect=[[], products]) as discover,
-        ):
-            topic, rows, probes = business.select_viable_topic([first, second], {}, cache_only=False)
-        self.assertEqual(topic['slug'], 'second-topic')
-        self.assertIs(rows, products)
-        self.assertEqual(discover.call_count, 2)
-        self.assertEqual([p['candidate_count'] for p in probes], [0, 6])
+        with (patch.object(business, 'rank_candidates', return_value=[first, second]),
+              patch.object(business, 'discover_products', return_value=[]) as discover):
+            with self.assertRaises(planning_runtime.PlanningError) as failure:
+                business.select_viable_topic([first, second], {}, cache_only=False)
+        self.assertEqual([row['slug'] for row in failure.exception.viability_probes], ['first-topic'])
+        discover.assert_called_once()
 
     def test_initial_six_go_directly_to_selection(self):
         topic = self._topic('research-topic')
@@ -187,20 +183,19 @@ class ProductViabilityPlanningTests(unittest.TestCase):
         research.assert_not_called()
         select.assert_called_once_with(products, topic, {})
 
-    def test_selector_rejection_advances_next_topic_without_extra_research(self):
+    def test_selector_rejection_ends_this_one_topic(self):
         first, second = self._topic('research-first'), self._topic('research-second')
         rows = [{'asin': f'B0RESE{i:04d}', 'amazon_title': f'Model {i}',
-                 'image_url': f'https://example.com/{i}.jpg', 'sources': [{'verified':True,'excerpt':'fixture facts'}]}
-                for i in range(6)]
+                 'image_url': f'https://example.com/{i}.jpg',
+                 'sources': [{'verified':True,'excerpt':'fixture facts'}]} for i in range(6)]
         with (patch.object(business, 'rank_candidates', return_value=[first, second]),
-              patch.object(business, 'discover_products', return_value=rows),
-              patch.object(business, 'research_selected', return_value=rows) as research,
-              patch.object(business, 'replenish_products', return_value=(rows, [])),
-              patch.object(business, 'select_six', side_effect=[
-                  business.ProductSelectionError('not enough evidence'), (rows, {})])):
-            topic, _, _ = business.select_viable_topic([first, second], {}, cache_only=False)
-        self.assertEqual(topic['slug'], 'research-second')
-        research.assert_not_called()
+              patch.object(business, 'discover_products', return_value=rows) as discover,
+              patch.object(business, 'select_six', side_effect=business.ProductSelectionError('not enough evidence')) as selector):
+            with self.assertRaises(planning_runtime.PlanningError) as failure:
+                business.select_viable_topic([first, second], {}, cache_only=False)
+        self.assertEqual([row['slug'] for row in failure.exception.viability_probes], ['research-first'])
+        discover.assert_called_once()
+        selector.assert_called_once()
 
     def test_missing_sources_replaced_before_independent_qa(self):
         topic = self._topic('missing-sources')
@@ -276,70 +271,47 @@ class ProductViabilityPlanningTests(unittest.TestCase):
         self.assertEqual(reviewer.call_count, 2)
         self.assertEqual(probes[0]['qa_research'][0]['replaced'], 1)
 
-    def test_axis_rejected_first_topic_scans_valid_second_without_creating_job(self):
+    def test_selection_rejection_does_not_scan_the_next_topic(self):
         first, second = self._topic('first-topic'), self._topic('second-topic')
-        products = [{'asin': f'B0TEST{i:04d}'} for i in range(6)]
-        accepted = {'review': {'status': 'ACCEPTED'}}
-        with (
-            patch.object(business, 'rank_candidates', return_value=[first, second]),
-            patch.object(business, 'discover_products', side_effect=[products, products]),
-            patch.object(business, 'replenish_products', return_value=(products, [])),
-            patch.object(business, 'select_six', side_effect=[
-                business.ProductSelectionError('only 5 documented topic-axis matches'),
-                (products[:6], {}),
-            ]),
-            patch.object(business, 'independent_review', return_value=accepted),
-            patch.object(business, 'receipt_issues', return_value=[]),
-            patch.object(business, 'create_job') as create,
-        ):
-            topic, rows, probes = business.select_viable_topic([first, second], {}, cache_only=False)
-        self.assertEqual(topic['slug'], 'second-topic')
-        self.assertIs(rows, products)
-        self.assertEqual([probe['slug'] for probe in probes], ['first-topic', 'second-topic'])
-        self.assertEqual(probes[0]['candidate_count'], 6)
-        self.assertIn('only 5 documented topic-axis matches', str(probes[0]['acceptance']))
+        products = [{'asin': f'B0TEST{i:04d}', 'sources': [{'verified': True, 'excerpt': 'facts'}]} for i in range(6)]
+        with (patch.object(business, 'rank_candidates', return_value=[first, second]),
+              patch.object(business, 'discover_products', return_value=products) as discover,
+              patch.object(business, 'select_six', side_effect=business.ProductSelectionError('only 5 documented topic-axis matches')),
+              patch.object(business, 'create_job') as create):
+            with self.assertRaises(planning_runtime.PlanningError) as failure:
+                business.select_viable_topic([first, second], {}, cache_only=False)
+        self.assertEqual([p['slug'] for p in failure.exception.viability_probes], ['first-topic'])
+        self.assertIn('only 5 documented topic-axis matches', str(failure.exception.viability_probes[0]['acceptance']))
+        discover.assert_called_once()
         create.assert_not_called()
 
-    def test_scans_beyond_first_six_candidates(self):
+    def test_one_run_evaluates_only_first_topic_of_seven(self):
         topics = [self._topic(f'topic-{i}') for i in range(7)]
-        products = [{'asin': f'B0TEST{i:04d}'} for i in range(6)]
-        with (
-            patch.object(business, 'rank_candidates', return_value=topics),
-            patch.object(business, 'discover_products', side_effect=[[], [], [], [], [], [], products]) as discover,
-        ):
-            topic, rows, probes = business.select_viable_topic(topics, {}, cache_only=False)
-        self.assertEqual(topic['slug'], 'topic-6')
-        self.assertIs(rows, products)
-        self.assertEqual(discover.call_count, 7)
-        self.assertEqual([p['candidate_count'] for p in probes], [0, 0, 0, 0, 0, 0, 6])
+        with (patch.object(business, 'rank_candidates', return_value=topics),
+              patch.object(business, 'discover_products', return_value=[]) as discover):
+            with self.assertRaises(planning_runtime.PlanningError) as failure:
+                business.select_viable_topic(topics, {}, cache_only=False)
+        self.assertEqual([p['slug'] for p in failure.exception.viability_probes], ['topic-0'])
+        discover.assert_called_once()
 
-    def test_replans_after_full_candidate_set_is_unviable(self):
+    def test_direct_discovery_calls_planning_only_once(self):
         first_round = [self._topic('round-one-a'), self._topic('round-one-b')]
-        second_round = [self._topic('round-two-a')]
-        products = [{'asin': f'B0TEST{i:04d}'} for i in range(6)]
-        with (
-            patch.object(business, 'discover_candidates', side_effect=[first_round, second_round]) as planning,
-            patch.object(business, 'rank_candidates', side_effect=[first_round, second_round]),
-            patch.object(business, 'discover_products', side_effect=[[], [], products]),
-        ):
-            topic, rows, probes = business.select_viable_topic(None, {}, cache_only=False, max_rounds=2)
-        self.assertEqual(topic['slug'], 'round-two-a')
-        self.assertIs(rows, products)
-        self.assertEqual(planning.call_count, 2)
-        self.assertEqual([p['round'] for p in probes], [1, 1, 2])
+        with (patch.object(business, 'discover_candidates', return_value=first_round) as planning,
+              patch.object(business, 'rank_candidates', return_value=first_round),
+              patch.object(business, 'discover_products', return_value=[])):
+            with self.assertRaises(planning_runtime.PlanningError):
+                business.select_viable_topic(None, {}, cache_only=False, max_rounds=20)
+        planning.assert_called_once()
 
-    def test_uncapped_planning_moves_past_three_failed_themes(self):
-        batches = [[self._topic(f'fresh-{n}')] for n in range(5)]
-        products = [{'asin': f'B0TEST{i:04d}'} for i in range(6)]
-        with (
-            patch.object(business, 'discover_candidates', side_effect=batches) as planning,
-            patch.object(business, 'rank_candidates', side_effect=batches),
-            patch.object(business, 'discover_products', side_effect=[[], [], [], [], products]),
-        ):
-            topic, _, probes = business.select_viable_topic(None, {}, cache_only=False)
-        self.assertEqual(topic['slug'], 'fresh-4')
-        self.assertEqual(planning.call_count, 5)
-        self.assertEqual([p['round'] for p in probes], [1, 2, 3, 4, 5])
+    def test_no_automatic_replanning_after_topic_failure(self):
+        topics = [self._topic(f'fresh-{n}') for n in range(5)]
+        with (patch.object(business, 'discover_candidates', return_value=topics) as planning,
+              patch.object(business, 'rank_candidates', return_value=topics),
+              patch.object(business, 'discover_products', return_value=[])):
+            with self.assertRaises(planning_runtime.PlanningError) as failure:
+                business.select_viable_topic(None, {}, cache_only=False)
+        planning.assert_called_once()
+        self.assertEqual([p['slug'] for p in failure.exception.viability_probes], ['fresh-0'])
 
     def test_all_unviable_topics_fail_closed(self):
         topics = [self._topic('first-topic'), self._topic('second-topic')]
@@ -350,7 +322,7 @@ class ProductViabilityPlanningTests(unittest.TestCase):
             with self.assertRaises(planning_runtime.PlanningError) as failure:
                 business.select_viable_topic(topics, {}, cache_only=False)
         self.assertEqual([probe['slug'] for probe in failure.exception.viability_probes],
-                         ['first-topic', 'second-topic'])
+                         ['first-topic'])
         self.assertIn('require 6 documented products', str(failure.exception))
 
 
@@ -381,6 +353,48 @@ class RuntimeFailClosedTests(unittest.TestCase):
             result = growth_runtime.run(publish=True, recovery_only=True, report_path=None)
         self.assertEqual(result['status'], 'recovery_deferred')
         self.assertNotIn('planning', requested)
+
+    def test_fresh_creation_failure_never_triggers_another_planning(self):
+        from role_stage_client import RoleStageFailure
+        requested = []
+        def role(name, slug='', **kwargs):
+            requested.append(name)
+            if name == 'scheduler': return {'publish_paused': False, 'target_per_day': 2}
+            if name == 'ceo_reconcile': return {}
+            if name == 'recovery': return {'recovered_legacy_failed': []}
+            if name == 'already_published': return {'slugs': []}
+            if name == 'state_queue': return {'eligible': None, 'unfinished': []}
+            if name == 'planning': return {'candidates': [{'slug': 'first'}], 'provider': None}
+            if name == 'fresh_create':
+                raise RoleStageFailure('first topic rejected', details={
+                    'viability_probes': [{'slug': 'first', 'acceptance': 'rejected'}]})
+            raise AssertionError(name)
+        with patch.object(growth_runtime, 'require_publishing_enabled'), \
+             patch.object(growth_runtime, 'execute_role', side_effect=role):
+            with self.assertRaises(RoleStageFailure):
+                growth_runtime.run(publish=True, report_path=None)
+        self.assertEqual(requested.count('planning'), 1)
+        self.assertEqual(requested.count('fresh_create'), 1)
+
+    def test_deferred_recovery_does_not_admit_new_topic_same_run(self):
+        deferred = {'slug': 'held-job', 'current_stage': 'PRODUCT_HOLD',
+                    'next_retry_at': None, 'status': 'ACTIVE'}
+        requested = []
+        def role(name, slug='', **kwargs):
+            requested.append(name)
+            if name == 'scheduler': return {'publish_paused': False, 'target_per_day': 2}
+            if name == 'ceo_reconcile': return {}
+            if name == 'recovery': return {'recovered_legacy_failed': []}
+            if name == 'already_published': return {'slugs': []}
+            if name == 'state_queue': return {'eligible': deferred, 'unfinished': [deferred]}
+            raise AssertionError(name)
+        with patch.object(growth_runtime, 'require_publishing_enabled'), \
+             patch.object(growth_runtime, 'execute_role', side_effect=role), \
+             patch.object(growth_runtime, 'load_job', return_value=deferred), \
+             patch.object(growth_runtime, '_execute_job', side_effect=growth_runtime.GrowthRuntimeError('needs_product_reselection for held-job')):
+            result = growth_runtime.run(publish=True, report_path=None)
+        self.assertEqual(result['status'], 'recovery_deferred')
+        self.assertEqual(requested.count('planning'), 0)
 
     def test_writer_failure_prevents_apply(self):
         from test_role_artifact_io_run import test_writer_failed_does_not_enter_publish

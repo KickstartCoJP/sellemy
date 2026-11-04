@@ -294,7 +294,7 @@ class BoundaryRecoveryTests(RecoveryCase):
              patch.object(business, 'discover_products', return_value=e['products']), \
              patch.object(business, 'collect_unique_products', return_value=(e['products'], {'complete': True, 'attempts': []})), \
              patch.object(business, 'independent_review') as reviewer:
-            with self.assertRaisesRegex(PlanningError, 'no planned topic passed product acceptance') as failure:
+            with self.assertRaisesRegex(PlanningError, 'chosen topic did not pass product acceptance') as failure:
                 business.select_viable_topic([topic], {}, cache_only=True)
         reviewer.assert_not_called()
         self.assertEqual(len(failure.exception.viability_probes), 1)
@@ -314,7 +314,7 @@ class BoundaryRecoveryTests(RecoveryCase):
              patch.object(business, 'discover_products', return_value=e['products']), \
              patch.object(business, 'collect_unique_products', return_value=(e['products'], {'complete': True, 'attempts': []})), \
              patch.object(business, 'independent_review', side_effect=reject):
-            with self.assertRaisesRegex(PlanningError, 'no planned topic passed product acceptance') as failure:
+            with self.assertRaisesRegex(PlanningError, 'chosen topic did not pass product acceptance') as failure:
                 business.select_viable_topic([topic], {}, cache_only=True)
         self.assertTrue(failure.exception.viability_probes[0]['acceptance'])
         self.assertEqual(gr.all_jobs(), [])

@@ -113,30 +113,23 @@ def run(*, publish: bool, cache_only: bool = False, report_path: Path | None = R
             result['recovered_legacy_failed'] = []
 
         def create_fresh() -> str:
-            excluded: set[str] = set()
-            while True:
-                planned = execute_role('planning', request={
-                    'planning_candidates': planning_candidates, 'exclude': sorted(excluded)})
-                try:
-                    created = execute_role('fresh_create', cache_only=cache_only,
-                        request={'candidates': planned['candidates'],
-                                 'provider': planned.get('provider'),
-                                 'admission': result.get('controller_decision') if scheduled else None})
-                except RoleStageFailure as exc:
-                    probes = exc.details.get('viability_probes') or []
-                    result.setdefault('viability_probes', []).extend(probes)
-                    if planning_candidates is not None or not probes:
-                        raise
-                    newly = {row.get('slug') for row in probes if row.get('slug')}
-                    if not (newly - excluded):
-                        raise
-                    excluded.update(newly)
-                    continue
-                result.update({key: value for key, value in created.items() if key != 'slug'})
-                execute_role('planning_commit', created['slug'], request={
-                    'provider': planned.get('provider'),
-                    'admission': result.get('controller_decision') if scheduled else None})
-                return created['slug']
+            # One execution owns exactly one chosen theme; a rejection ends this run.
+            planned = execute_role('planning', request={
+                'planning_candidates': planning_candidates, 'exclude': []})
+            try:
+                created = execute_role('fresh_create', cache_only=cache_only,
+                    request={'candidates': planned['candidates'],
+                             'provider': planned.get('provider'),
+                             'admission': result.get('controller_decision') if scheduled else None})
+            except RoleStageFailure as exc:
+                result.setdefault('viability_probes', []).extend(
+                    exc.details.get('viability_probes') or [])
+                raise
+            result.update({key: value for key, value in created.items() if key != 'slug'})
+            execute_role('planning_commit', created['slug'], request={
+                'provider': planned.get('provider'),
+                'admission': result.get('controller_decision') if scheduled else None})
+            return created['slug']
 
         queue = execute_role('state_queue')
         recovery = None if scheduled and not recovery_only else queue.get('eligible')
@@ -162,34 +155,20 @@ def run(*, publish: bool, cache_only: bool = False, report_path: Path | None = R
             commit = _execute_job(slug, result, cache_only=cache_only)
         except GrowthRuntimeError as exc:
             if result.get('recovery_mode') and str(exc).startswith('planning_restart_required'):
-                discard(slug, 'Automatically returned to Planning after exhausting product options')
-                result['replanned_from'] = slug
-                if recovery_only:
-                    result['status'] = 'planning_restart_queued'
-                    return result
-                result['recovery_mode'] = False
-                slug = create_fresh()
-                commit = _execute_job(slug, result, cache_only=cache_only)
-            else:
+                # Terminate this job; the next scheduled run owns new Planning.
+                discard(slug, 'Product options exhausted; next run may select a new theme')
+                result['status'] = 'planning_restart_queued'
+                return result
+            if result.get('recovery_mode') and str(exc).startswith((
+                    'product discovery still in progress', 'needs_product_reselection')):
                 state = load_job(slug)
-                deferred = (
-                    result.get('recovery_mode') is True
-                    and str(exc).startswith(('product discovery still in progress',
-                                            'needs_product_reselection'))
-                    and state.get('current_stage') in {'WRITER_PENDING', 'PRODUCT_HOLD'}
-                    and (state.get('next_retry_at') is None or
-                         datetime.fromisoformat(state['next_retry_at']) > datetime.now(timezone.utc))
-                )
-                if not deferred:
-                    raise
-                result['skipped_recovery'] = {'slug': slug, 'reason': str(exc),
-                                              'next_retry_at': state.get('next_retry_at')}
-                if recovery_only:
+                if state.get('current_stage') in {'WRITER_PENDING', 'PRODUCT_HOLD'}:
+                    result['skipped_recovery'] = {
+                        'slug': slug, 'reason': str(exc),
+                        'next_retry_at': state.get('next_retry_at')}
                     result['status'] = 'recovery_deferred'
                     return result
-                result['recovery_mode'] = False
-                slug = create_fresh()
-                commit = _execute_job(slug, result, cache_only=cache_only)
+            raise
         if commit is None and result.get('status') == 'awaiting_chatgpt_final_review':
             return result
         result.update({'commit': commit, 'published': True, 'status': 'published'})
