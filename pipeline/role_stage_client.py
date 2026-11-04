@@ -1,6 +1,8 @@
 """Launch the owning role in an isolated process. Runtime does not open artifacts."""
 from __future__ import annotations
 import json
+import os
+import signal
 import subprocess
 import sys
 from pathlib import Path
@@ -23,16 +25,26 @@ def execute_role(role: str, slug: str = '', *, cache_only: bool = False, request
         argv += ['--slug', slug]
     if cache_only:
         argv += ['--cache-only']
+    # Each role gets its own 15-minute budget; a parent runtime has no shared timer.
     try:
-        completed = subprocess.run(argv, input=json.dumps(request or {}, ensure_ascii=False), text=True, capture_output=True,
-                                   cwd=ROOT, timeout=1800, check=False)
-    except (OSError, subprocess.TimeoutExpired) as exc:
+        process = subprocess.Popen(argv, stdin=subprocess.PIPE, stdout=subprocess.PIPE,
+                                   stderr=subprocess.PIPE, text=True, cwd=ROOT,
+                                   start_new_session=True)
+        try:
+            stdout, _stderr = process.communicate(
+                input=json.dumps(request or {}, ensure_ascii=False), timeout=900)
+        except subprocess.TimeoutExpired as exc:
+            # Kill this role's entire subprocess tree, not any other BU process.
+            os.killpg(process.pid, signal.SIGKILL)
+            process.communicate()
+            raise RoleStageFailure(f'{role} exceeded its 15-minute limit') from exc
+    except OSError as exc:
         raise RoleStageFailure(f'{role} process unavailable: {exc}') from exc
     try:
-        message = json.loads(completed.stdout.strip().splitlines()[-1])
+        message = json.loads(stdout.strip().splitlines()[-1])
     except (ValueError, IndexError) as exc:
-        raise RoleStageFailure(f'{role} did not return a process receipt ({completed.returncode})') from exc
-    if completed.returncode or message.get('ok') is not True:
+        raise RoleStageFailure(f'{role} did not return a process receipt ({process.returncode})') from exc
+    if process.returncode or message.get('ok') is not True:
         raise RoleStageFailure(str(message.get('error', 'role stage failed')),
                                details={**(message.get('result') or {}),
                                         'error_type': message.get('error_type')})

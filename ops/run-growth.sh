@@ -119,7 +119,7 @@ PYRECOVERY
 )"
     if [[ "$RECOVERY_DUE" == "1" ]]; then
       echo "$(date -Iseconds) growth recovering due job off-slot"
-      "$PY" pipeline/run_with_timeout.py 900 "$PY" pipeline/growth_runtime.py --publish --recovery-only
+      "$PY" pipeline/growth_runtime.py --publish --recovery-only
       exit $?
     fi
   fi
@@ -130,7 +130,7 @@ export SELLEMY_PRECLAIMED_ADMISSION_ID
 fi # publication-only recovery, git sync and slot admission
 GROWTH_RC=0
 if [[ "$PUBLISH_ALLOWED" == "1" ]]; then
-  "$PY" pipeline/run_with_timeout.py 900 "$PY" pipeline/growth_runtime.py --publish --scheduled || GROWTH_RC=$?
+  "$PY" pipeline/growth_runtime.py --publish --scheduled || GROWTH_RC=$?
 else
   echo "$(date -Iseconds) global publishing kill switch disabled; metrics remain enabled"
 fi

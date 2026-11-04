@@ -67,3 +67,29 @@ def test_reviewer_revocation_is_owned_by_real_subprocess_and_keeps_payload(tmp_p
                  'chat-publish-approval.json'):
         assert (directory / name).read_text(encoding='utf-8').strip() == '{}'
     assert (directory / 'payload.json').read_text(encoding='utf-8') == existing_payload
+
+
+def test_each_role_has_own_900_second_timeout_and_kills_only_its_tree():
+    from role_stage_client import execute_role, RoleStageFailure
+    from unittest.mock import MagicMock
+    process = MagicMock()
+    process.pid = 123456
+    process.communicate.side_effect = [subprocess.TimeoutExpired('role', 900), ('', '')]
+    with patch('role_stage_client.subprocess.Popen', return_value=process) as opened, \
+         patch('role_stage_client.os.killpg') as kill_group:
+        try:
+            execute_role('fresh_create', request={'candidates': []})
+        except RoleStageFailure as exc:
+            assert 'fresh_create exceeded its 15-minute limit' in str(exc)
+        else:
+            raise AssertionError('role timeout was ignored')
+    assert opened.call_args.kwargs['start_new_session'] is True
+    assert process.communicate.call_args_list[0].kwargs['timeout'] == 900
+    kill_group.assert_called_once_with(123456, __import__('signal').SIGKILL)
+
+
+def test_runtime_shell_no_longer_caps_entire_job_at_900_seconds():
+    script = (ROOT / 'ops' / 'run-growth.sh').read_text()
+    assert 'run_with_timeout.py 900' not in script
+    assert 'pipeline/growth_runtime.py --publish --scheduled' in script
+    assert 'pipeline/growth_runtime.py --publish --recovery-only' in script
