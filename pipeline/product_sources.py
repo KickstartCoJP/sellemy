@@ -82,34 +82,30 @@ _ITEM_BROWSER_LIMIT = BoundedSemaphore(2)
 
 
 def _fetch_item_via_browser(url):
-    """Obtain a product page only when direct HTTP returned an access/error page."""
-    from playwright.sync_api import sync_playwright
+    """Fetch in isolated VM visible Chrome without sharing other BU desktops."""
+    import json
+    import subprocess
+    from pathlib import Path
+    script = str(Path(__file__).with_name('vm_amazon_item.py'))
+    argv = ['/opt/homebrew/bin/colima', 'ssh', '--', 'xvfb-run', '-a',
+            '/home/kickstart.guest/.ai-role-playwright/bin/python', script, url]
     with _ITEM_BROWSER_LIMIT:
-        with sync_playwright() as playwright:
-            # Chrome can return a valid HTTP error page despite an available
-            # product. A second browser engine must be tried before declaring
-            # verified source evidence unavailable.
-            for engine, options in (
-                (playwright.chromium, {'headless': True,
-                    'executable_path': '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
-                    'args': ['--no-first-run']}),
-                (playwright.webkit, {'headless': True}),
-                (playwright.webkit, {'headless': False}),
-            ):
-                browser = None
-                try:
-                    browser = engine.launch(**options)
-                    page = browser.new_page()
-                    response = page.goto(url, wait_until='domcontentloaded', timeout=25000)
-                    if response is not None and response.status == 200 and page.locator('#productTitle').count():
-                        return {'url': page.url, 'status_code': response.status,
-                                'text': page.content()}
-                except Exception:
-                    pass
-                finally:
-                    if browser is not None:
-                        browser.close()
-    return None
+        try:
+            result = subprocess.run(argv, capture_output=True, text=True, timeout=40)
+            if result.returncode:
+                return None
+            receipt = json.loads(result.stdout)
+            path = Path(receipt.get('html_path') or '')
+            allowed = Path('/Users/kickstart/Library/Application Support/Sellemy/tmp')
+            if path.parent != allowed or not path.name.startswith('amazon-vm-item-'):
+                return None
+            try:
+                html = path.read_text(encoding='utf-8')
+            finally:
+                path.unlink(missing_ok=True)
+            return {'url': receipt['url'], 'status_code': receipt['status_code'], 'text': html}
+        except (OSError, ValueError, KeyError, subprocess.TimeoutExpired):
+            return None
 
 
 def fetch_amazon_item_source(asin, listing_title):
