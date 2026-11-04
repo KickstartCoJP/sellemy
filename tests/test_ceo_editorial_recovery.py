@@ -37,7 +37,7 @@ def test_new_planning_requires_reader_persona():
 
 def test_informative_length_floor_without_old_padding_targets():
     assert DESCRIPTION_HARD_MIN == 160
-    assert MAIN_RANGE == (2400, 3400)
+    assert MAIN_RANGE == (1800, 2800)
     prompt=_prompt({'slug':'example'}, valid_editorial_evidence())
     assert DESCRIPTION_HARD_MIN == 160
     assert '不用意な水増し文章' in prompt
