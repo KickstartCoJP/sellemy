@@ -140,8 +140,10 @@ class ProductViabilityPlanningTests(unittest.TestCase):
     def setUp(self):
         # Candidate ranking/scanning only. Batch discovery, independent facts and
         # source acceptance are covered in their own contract test modules.
-        def discover(topic, *, cache_only):
+        def discover(topic, *, cache_only, **kwargs):
             rows = business.discover_products(topic, cache_only=cache_only)
+            for row in rows:
+                row.setdefault('sources', [{'verified': True, 'excerpt': 'fixture evidence'}])
             return rows, {'complete': len(rows) >= 6, 'attempts': []}
         for item in [patch.object(business, 'collect_unique_products', side_effect=discover),
                      patch.object(business, 'select_six', side_effect=lambda rows, topic, feedback: (rows[:6], {})),
@@ -172,23 +174,23 @@ class ProductViabilityPlanningTests(unittest.TestCase):
         self.assertEqual(discover.call_count, 2)
         self.assertEqual([p['candidate_count'] for p in probes], [0, 6])
 
-    def test_live_candidate_research_runs_before_selection(self):
+    def test_initial_six_go_directly_to_selection(self):
         topic = self._topic('research-topic')
         products = [{'asin': f'B0TEST{i:04d}', 'amazon_title': f'Model {i}',
-                     'image_url': f'https://example.com/{i}.jpg', 'sources': []}
+                     'image_url': f'https://example.com/{i}.jpg', 'sources': [{'verified':True,'excerpt':'fixture facts'}]}
                     for i in range(6)]
         with (patch.object(business, 'rank_candidates', return_value=[topic]),
               patch.object(business, 'discover_products', return_value=products),
               patch.object(business, 'research_selected', return_value=products) as research,
               patch.object(business, 'select_six', return_value=([], {})) as select):
             business.select_viable_topic([topic], {}, cache_only=False)
-        research.assert_called_once_with(products)
+        research.assert_not_called()
         select.assert_called_once_with(products, topic, {})
 
-    def test_source_research_runs_again_for_next_topic_after_first_rejected(self):
+    def test_selector_rejection_advances_next_topic_without_extra_research(self):
         first, second = self._topic('research-first'), self._topic('research-second')
         rows = [{'asin': f'B0RESE{i:04d}', 'amazon_title': f'Model {i}',
-                 'image_url': f'https://example.com/{i}.jpg', 'sources': []}
+                 'image_url': f'https://example.com/{i}.jpg', 'sources': [{'verified':True,'excerpt':'fixture facts'}]}
                 for i in range(6)]
         with (patch.object(business, 'rank_candidates', return_value=[first, second]),
               patch.object(business, 'discover_products', return_value=rows),
@@ -198,59 +200,85 @@ class ProductViabilityPlanningTests(unittest.TestCase):
                   business.ProductSelectionError('not enough evidence'), (rows, {})])):
             topic, _, _ = business.select_viable_topic([first, second], {}, cache_only=False)
         self.assertEqual(topic['slug'], 'research-second')
-        self.assertEqual(research.call_count, 2)
+        research.assert_not_called()
 
-    def test_official_research_retries_only_after_independent_rejection(self):
-        topic = self._topic('evidence-escalation')
-        rows = [{'asin': f'B0TEST{i:04d}', 'amazon_title': f'Model {i}',
-                 'image_url': f'https://example.com/{i}.jpg',
-                 'sources': [{'source_type': 'marketplace_item', 'verified': True,
-                              'excerpt': f'Model {i} details'}]} for i in range(6)]
-        enriched = [{**p, 'sources': [*p['sources'], {'source_type': 'manufacturer_official',
-                     'verified': True, 'excerpt': f'Model {i} official facts'}]}
-                    for i, p in enumerate(rows)]
+    def test_missing_sources_replaced_before_independent_qa(self):
+        topic = self._topic('missing-sources')
+        usable = lambda i: {'asin': f'B0GOOD{i:04d}', 'sources': [{'verified': True, 'excerpt': 'verified facts'}]}
+        initial = [usable(i) for i in range(4)] + [
+            {'asin': 'B0BAD00001', 'sources': []}, {'asin': 'B0BAD00002', 'sources': []}]
+        replacement = [*initial[:4], usable(4), usable(5)]
+        calls = []
+        def collect(t, *, cache_only, existing=None, rejected_asins=None, **kwargs):
+            calls.append((existing, rejected_asins))
+            return (initial if existing is None else replacement), {'complete': True, 'attempts': []}
         with (patch.object(business, 'rank_candidates', return_value=[topic]),
-              patch.object(business, 'discover_products', return_value=rows),
-              patch.object(business, 'research_selected', side_effect=[rows, enriched]) as research,
-              patch.object(business, 'select_six', side_effect=[(rows, {}), (enriched, {})]),
-              patch.object(business, 'receipt_issues', side_effect=[['facts insufficient'], []]) as check,
-              patch.object(business, 'independent_review') as review):
-            chosen, candidates, _ = business.select_viable_topic([topic], {}, cache_only=False)
-        self.assertEqual(chosen['slug'], 'evidence-escalation')
-        self.assertEqual(candidates, enriched)
-        self.assertEqual(research.call_count, 2)
-        self.assertEqual(research.call_args_list[1].kwargs, {'prefer_official': True})
-        self.assertEqual(review.call_count, 2)
-        self.assertEqual(check.call_count, 2)
+              patch.object(business, 'collect_unique_products', side_effect=collect),
+              patch.object(business, 'select_six', side_effect=lambda rows,*args,**kwargs:(rows, {})),
+              patch.object(business, 'build_evidence', side_effect=lambda t, rows, selection: {'products': rows}),
+              patch.object(business, 'independent_review', return_value={'review': {'status': 'ACCEPTED'}}) as review,
+              patch.object(business, 'receipt_issues', return_value=[])):
+            chosen, products, probes = business.select_viable_topic([topic], {}, cache_only=False)
+        self.assertEqual(chosen['slug'], topic['slug'])
+        self.assertEqual(products, replacement)
+        self.assertEqual(len(calls[1][0]), 4)
+        self.assertEqual(calls[1][1], {'B0BAD00001', 'B0BAD00002'})
+        self.assertEqual(probes[0]['source_refill'][0]['replaced'], 2)
+        review.assert_called_once()
 
-    def test_reviewer_rejected_identity_can_be_replaced_by_verified_alternate(self):
+    def test_global_qa_rejection_searches_new_six_before_rechecking(self):
+        topic = self._topic('global-qa-retry')
+        initial = [{'asin': f'B0TEST{i:04d}', 'sources': [{'verified':True,'excerpt':'facts'}]} for i in range(6)]
+        replacement = [{'asin': f'B0NEW{i:05d}', 'sources': [{'verified':True,'excerpt':'facts'}]} for i in range(6)]
+        calls = []
+        def collect(t, *, cache_only, existing=None, rejected_asins=None, **kwargs):
+            calls.append((existing, rejected_asins))
+            return (initial if existing is None else replacement), {'complete': True, 'attempts': []}
+        with (patch.object(business, 'rank_candidates', return_value=[topic]),
+              patch.object(business, 'collect_unique_products', side_effect=collect),
+              patch.object(business, 'select_six', side_effect=lambda rows, *args, **kwargs:(rows, {})),
+              patch.object(business, 'build_evidence', side_effect=lambda t, rows, selection: {
+                  'products': [{'ref': f'p{i+1}', 'asin': p['asin']} for i,p in enumerate(rows)]}),
+              patch.object(business, 'independent_review', return_value={'review': {'products': []}}) as review,
+              patch.object(business, 'receipt_issues', side_effect=[['global QA failure'], []])):
+            chosen, products, probes = business.select_viable_topic([topic], {}, cache_only=False)
+        self.assertEqual(chosen['slug'], topic['slug'])
+        self.assertEqual(products, replacement)
+        self.assertEqual(len(calls), 2)
+        self.assertEqual(calls[1][0], [])
+        self.assertEqual(calls[1][1], {p['asin'] for p in initial})
+        self.assertEqual(review.call_count, 2)
+        self.assertEqual(probes[0]['qa_research'][0]['replaced'], 6)
+
+    def test_reviewer_rejected_identity_keeps_five_and_replaces_one(self):
         topic = self._topic('alternate-evidence')
-        products = [{'asin': f'B0ALT{i:05d}', 'amazon_title': f'Model {i}',
-                     'image_url': f'https://example.com/{i}.jpg',
-                     'sources': [{'verified': True, 'excerpt': f'Model {i} genuine facts'}]}
-                    for i in range(7)]
-        initial, replacement = products[:6], [*products[:5], products[6]]
-        rejected_review = {'review': {'products': [
+        initial = [{'asin': f'B0ALT{i:05d}', 'sources': [{'verified':True,'excerpt':'facts'}]} for i in range(6)]
+        new = {'asin': 'B0ALT00006', 'sources': [{'verified':True,'excerpt':'facts'}]}
+        calls = []
+        def collect(t, *, cache_only, existing=None, rejected_asins=None, **kwargs):
+            calls.append((existing, rejected_asins))
+            return (initial if existing is None else [*existing,new]), {'complete': True, 'attempts': []}
+        reviewed = {'review': {'products': [
             {'ref': f'p{i+1}', 'adequate_facts': i != 5, 'topic_fit': True}
             for i in range(6)]}}
-        accepted_review = {'review': {'status': 'ACCEPTED', 'products': []}}
         with (patch.object(business, 'rank_candidates', return_value=[topic]),
-              patch.object(business, 'discover_products', return_value=products),
-              patch.object(business, 'research_selected', side_effect=[products, initial]) as research,
-              patch.object(business, 'select_six', side_effect=[(initial, {}), (replacement, {})]),
+              patch.object(business, 'collect_unique_products', side_effect=collect),
+              patch.object(business, 'select_six', side_effect=lambda rows,*args,**kwargs:(rows, {})),
               patch.object(business, 'build_evidence', side_effect=lambda t, rows, selection: {
-                  'products': [{'ref': f'p{i+1}', 'asin': p['asin']} for i, p in enumerate(rows)]}),
-              patch.object(business, 'independent_review', side_effect=[rejected_review, accepted_review]) as reviewer,
+                  'products': [{'ref': f'p{i+1}', 'asin': p['asin']} for i,p in enumerate(rows)]}),
+              patch.object(business, 'independent_review', side_effect=[reviewed, {'review': {'status': 'ACCEPTED'}}]) as reviewer,
               patch.object(business, 'receipt_issues', side_effect=[['p6 lacks evidence'], []])):
-            selected_topic, candidates, _ = business.select_viable_topic([topic], {}, cache_only=False)
-        self.assertEqual(selected_topic['slug'], 'alternate-evidence')
-        self.assertEqual({p['asin'] for p in candidates}, {p['asin'] for p in products})
-        self.assertEqual(research.call_count, 2)
+            selected, products, probes = business.select_viable_topic([topic], {}, cache_only=False)
+        self.assertEqual(selected['slug'], topic['slug'])
+        self.assertEqual({p['asin'] for p in products}, {p['asin'] for p in initial[:5]} | {new['asin']})
+        self.assertEqual(len(calls[1][0]), 5)
+        self.assertEqual(calls[1][1], {initial[5]['asin']})
         self.assertEqual(reviewer.call_count, 2)
+        self.assertEqual(probes[0]['qa_research'][0]['replaced'], 1)
 
     def test_axis_rejected_first_topic_scans_valid_second_without_creating_job(self):
         first, second = self._topic('first-topic'), self._topic('second-topic')
-        products = [{'asin': f'B0TEST{i:04d}'} for i in range(8)]
+        products = [{'asin': f'B0TEST{i:04d}'} for i in range(6)]
         accepted = {'review': {'status': 'ACCEPTED'}}
         with (
             patch.object(business, 'rank_candidates', return_value=[first, second]),
@@ -268,7 +296,7 @@ class ProductViabilityPlanningTests(unittest.TestCase):
         self.assertEqual(topic['slug'], 'second-topic')
         self.assertIs(rows, products)
         self.assertEqual([probe['slug'] for probe in probes], ['first-topic', 'second-topic'])
-        self.assertEqual(probes[0]['candidate_count'], 8)
+        self.assertEqual(probes[0]['candidate_count'], 6)
         self.assertIn('only 5 documented topic-axis matches', str(probes[0]['acceptance']))
         create.assert_not_called()
 

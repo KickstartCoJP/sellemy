@@ -27,27 +27,27 @@ def test_exactly_three_queries():
     with pytest.raises(ProductSelectionError):
         _product_queries({**TOPIC, 'comparison_axes': AXES[:2]})
 
-def test_each_axis_capped_at_ten_and_total_thirty():
+def test_initial_discovery_limits_two_per_axis_and_six_total():
     fake, seen = search_factory({a['id']: range(i*11, i*11+11) for i,a in enumerate(AXES)})
     with patch('growth_role_business.discover_products', fake):
         products, status = collect_unique_products(TOPIC, cache_only=False)
-    assert [a['new'] for a in status['attempts']] == [10,10,10]
-    assert len(products) == 30 and len(set(p['asin'] for p in products)) == 30
+    assert [a['new'] for a in status['attempts']] == [2,2,2]
+    assert len(products) == 6 and len(set(p['asin'] for p in products)) == 6
     assert status['complete'] and len(seen) == 3
 
 def test_cross_axis_duplicates_and_floor():
     fake, seen = search_factory({'compact':[1,2,3], 'quiet':[3,4,5], 'safe':[5,6,7]})
     with patch('growth_role_business.discover_products', fake):
         products, status = collect_unique_products(TOPIC, cache_only=False)
-    assert [a['new'] for a in status['attempts']] == [3,2,2]
-    assert len(products) == 7 and status['complete'] and len(seen)==3
+    assert [a['new'] for a in status['attempts']] == [2,2,2]
+    assert len(products) == 6 and status['complete'] and len(seen)==3
 
 def test_one_axis_under_two_blocks_topic():
     fake, _ = search_factory({'compact':[1,2], 'quiet':[2,3], 'safe':[4,5]})
     with patch('growth_role_business.discover_products', fake):
         products, status = collect_unique_products(TOPIC, cache_only=False)
     assert not status['complete']
-    assert [a['new'] for a in status['attempts']] == [2,1,1,1,1,2]
+    assert [a['new'] for a in status['attempts']] == [2,1,0,0,0,2]
     assert [a['retry'] for a in status['attempts'] if a['axis_id']=='quiet'] == [0,1,2,3]
 
 def fake_ai(selected):
@@ -93,14 +93,14 @@ def test_duplicate_different_asin_same_product_title_rejected():
         return rows
     with patch('growth_role_business.discover_products', same_title):
         products,status=collect_unique_products(TOPIC,cache_only=False)
-    assert [x['new'] for x in status['attempts']]==[2,1,1,1,1,2]
+    assert [x['new'] for x in status['attempts']]==[2,1,0,0,0,2]
     assert not status['complete']
 
 def test_model_management_used_for_ai_selection():
-    rows=six(); captured=[]
+    rows=six()+[product(99,'compact')]; captured=[]
     def run(command,**kwargs):
         captured.append((command,kwargs))
-        return fake_ai([r['asin'] for r in rows])(command,**kwargs)
+        return fake_ai([r['asin'] for r in rows[:6]])(command,**kwargs)
     with patch('product_selection.subprocess.run',run):
         select_six(rows,TOPIC,{})
     from api_role_binding import require_codex_settings
@@ -110,7 +110,7 @@ def test_model_management_used_for_ai_selection():
     assert args[args.index('--config')+1]==f'model_reasoning_effort={effort}'
 
 def test_ai_unknown_asin_rejected():
-    rows=six()
+    rows=six()+[product(99,'compact')]
     with patch('product_selection.subprocess.run',fake_ai([r['asin'] for r in rows[:5]]+['B999999999'])):
         with pytest.raises(ProductSelectionError,match='ASIN/axis/reason invalid'):
             select_six(rows,TOPIC,{})

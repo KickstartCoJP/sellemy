@@ -11,9 +11,9 @@ def _row(index):
     return {'asin': f'B{index:09d}', 'title': f'Distinct product {index}', 'image_url': f'https://example.com/{index}.jpg', 'rating': 4.5, 'review_count': 200}
 
 
-def test_live_sources_are_bounded_parallel_and_keep_search_order():
+def test_live_sources_fetch_only_two_initial_candidates_in_parallel():
     rows = [_row(i) for i in range(20)]
-    barrier = Barrier(6, timeout=3)
+    barrier = Barrier(2, timeout=3)
     lock = Lock()
     active = peak = 0
     called = []
@@ -28,17 +28,17 @@ def test_live_sources_are_bounded_parallel_and_keep_search_order():
             barrier.wait()
         with lock:
             active -= 1
-        return None if asin == rows[2]['asin'] else {'url': f'https://www.amazon.co.jp/dp/{asin}', 'verified': True}
+        return None if asin == rows[1]['asin'] else {'url': f'https://www.amazon.co.jp/dp/{asin}', 'verified': True}
 
     with patch.object(growth_runtime.AutositeDiscoveryAdapter, 'search_amazon_live', return_value=rows), \
          patch.object(growth_runtime, 'fetch_amazon_item_source', side_effect=fetch):
         products = growth_runtime.discover_products({'query': 'desk light'}, cache_only=False)
 
-    assert peak == 6
-    assert len(called) == 20
-    assert [product['asin'] for product in products] == [row['asin'] for row in rows[:20]]
-    assert products[2]['sources'] == [] and products[2]['provisional'] is True
-    assert all(product['sources'][0]['verified'] for index, product in enumerate(products) if index != 2)
+    assert peak == 2
+    assert len(called) == 2
+    assert [product['asin'] for product in products] == [row['asin'] for row in rows[:2]]
+    assert products[1]['sources'] == [] and products[1]['provisional'] is True
+    assert all(product['sources'][0]['verified'] for index, product in enumerate(products) if index != 1)
 
 
 def test_cache_only_never_fetches_live_sources():
@@ -65,7 +65,7 @@ def test_failed_source_does_not_discard_other_products():
          patch.object(growth_runtime, 'fetch_amazon_item_source', side_effect=fetch):
         products = growth_runtime.discover_products({'query': 'desk light'}, cache_only=False)
 
-    assert [product['asin'] for product in products] == [row['asin'] for row in rows]
+    assert [product['asin'] for product in products] == [row['asin'] for row in rows[:2]]
     assert products[1]['sources'] == [] and products[1]['provisional'] is True
 
 

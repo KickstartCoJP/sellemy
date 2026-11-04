@@ -93,6 +93,8 @@ def product_search_query(topic: dict) -> str:
 def discover_products(topic: dict, *, cache_only: bool) -> list[dict]:
     adapter = AutositeDiscoveryAdapter()
     rows = adapter.search_cache(topic['query'], limit=30) if cache_only else adapter.search_amazon_live(product_search_query(topic), limit=20)
+    excluded = set(topic.get('_exclude_asins') or [])
+    max_products = int(topic.get('_max_products', 2)) if not cache_only else 30
     candidates, seen = [], set()
     for row in rows[:20] if not cache_only else rows:
         asin = (row.get('asin') or '').upper()
@@ -100,7 +102,7 @@ def discover_products(topic: dict, *, cache_only: bool) -> list[dict]:
         if is_ng(asin):
             continue
         title, image = (row.get('title') or '').strip(), (row.get('image_url') or '').strip()
-        if not re.fullmatch(r'[A-Z0-9]{10}', asin) or not title or not image or asin in seen:
+        if not re.fullmatch(r'[A-Z0-9]{10}', asin) or not title or not image or asin in seen or asin in excluded:
             continue
         if row.get('sponsored'):
             continue
@@ -113,6 +115,8 @@ def discover_products(topic: dict, *, cache_only: bool) -> list[dict]:
             'image_url': image, 'observed_price': _price(row.get('price')),
             'discovery_score': row.get('score', 1), 'rating': rating, 'review_count': count,
         })
+        if len(candidates) >= max_products:
+            break
     if not cache_only and candidates:
         def verified_source(candidate):
             try:
@@ -149,42 +153,52 @@ def _product_queries(topic: dict):
 
 
 def collect_unique_products(topic: dict, *, cache_only: bool, existing: list[dict] | None = None,
-                            target_new: int = 20, used_queries: set[str] | None = None,
-                            max_searches: int = 3) -> tuple[list[dict], dict]:
-    prior, _ = dedupe_content_products(list(existing or []))
-    kept = list(prior)
-    additions, attempts = [], []
-    axes = topic['comparison_axes']
-    for axis, query in zip(axes, _product_queries(topic)):
-        accepted = []
-        # Initial search plus at most three bounded retries. Every axis retains
-        # its own ten-candidate ceiling; never broaden to unrelated products.
+                            target_new: int = 6, used_queries: set[str] | None = None,
+                            max_searches: int = 3, rejected_asins: set[str] | None = None) -> tuple[list[dict], dict]:
+    """Choose only two distinct items per axis; retain QA-passed items on replacement."""
+    kept, _ = dedupe_content_products(list(existing or []))
+    excluded_prior = {p['asin'] for p in kept}
+    kept = [p for p in kept if p.get('discovery_axis_id') in {a['id'] for a in topic['comparison_axes']}]
+    rejected = set(rejected_asins or []) | (excluded_prior - {p['asin'] for p in kept})
+    retained_count = len(kept)
+    attempts = []
+    for axis, query in zip(topic['comparison_axes'], _product_queries(topic)):
+        axis_id = axis['id']
         for retry in range(max_searches + 1):
-            if len(accepted) >= 2:
+            count = sum(p.get('discovery_axis_id') == axis_id for p in kept)
+            if count >= 2:
                 break
+            excluded = rejected | {p['asin'] for p in kept}
             try:
-                candidates = discover_products({**topic, 'query': query}, cache_only=cache_only)
+                candidates = discover_products({**topic, 'query': query,
+                    '_exclude_asins': sorted(excluded), '_max_products': 2 - count},
+                    cache_only=cache_only)
+                new = 0
                 for candidate in candidates:
-                    if len(accepted) >= 10:
+                    if sum(p.get('discovery_axis_id') == axis_id for p in kept) >= 2:
                         break
+                    if candidate.get('asin') in excluded:
+                        continue
                     distinct, _ = dedupe_content_products([*kept, candidate])
                     if len(distinct) == len(kept):
+                        rejected.add(candidate['asin'])
                         continue
-                    candidate = {**candidate, 'discovery_axis_id': axis['id']}
-                    accepted.append(candidate)
-                    kept.append(candidate)
-                attempts.append({'axis_id': axis['id'], 'query': query,
-                                 'retry': retry, 'found': len(candidates),
-                                 'new': len(accepted), 'complete': len(accepted) >= 2})
+                    kept.append({**candidate, 'discovery_axis_id': axis_id})
+                    new += 1
+                attempts.append({'axis_id': axis_id, 'query': query, 'retry': retry,
+                                 'found': len(candidates), 'new': new,
+                                 'complete': sum(p.get('discovery_axis_id') == axis_id for p in kept) == 2})
+                if not new:
+                    rejected.update(p['asin'] for p in candidates)
             except Exception as exc:
-                attempts.append({'axis_id': axis['id'], 'query': query,
-                                 'retry': retry, 'found': 0, 'new': len(accepted),
-                                 'complete': False,
+                attempts.append({'axis_id': axis_id, 'query': query, 'retry': retry,
+                                 'found': 0, 'new': 0, 'complete': False,
                                  'error': f'{type(exc).__name__}: {exc}'})
-        additions.extend(accepted)
-    return additions, {'added_unique': len(additions),
-                       'complete': all(sum(p['discovery_axis_id'] == axis['id'] for p in additions) >= 2 for axis in axes),
-                       'attempts': attempts}
+    complete = len(kept) == 6 and all(
+        sum(p.get('discovery_axis_id') == a['id'] for p in kept) == 2
+        for a in topic['comparison_axes'])
+    return kept, {'added_unique': len(kept) - retained_count,
+                  'complete': complete, 'attempts': attempts}
 
 
 def replenish_products(topic: dict, products: list[dict], *, cache_only: bool,
@@ -228,70 +242,67 @@ def select_viable_topic(
             except Exception as exc:
                 products = []
                 probes.append({'round': round_index + 1, 'slug': topic['slug'], 'candidate_count': 0, 'error': f'{type(exc).__name__}: {exc}'})
-            if len(products) >= 6 and discovery_trace['complete']:
+            if len(products) == 6 and discovery_trace['complete']:
                 try:
-                    if _researchable_candidates(products, cache_only=cache_only):
-                        products = research_selected(products)
+                    # Machine evidence gate: replace only items lacking a readable source.
+                    source_rejected = set()
+                    for refill in range(2):
+                        invalid = {p['asin'] for p in products if not any(
+                            isinstance(src, dict) and src.get('verified') is True and str(src.get('excerpt') or '').strip()
+                            for src in p.get('sources') or [])}
+                        if not invalid:
+                            break
+                        retained = [p for p in products if p['asin'] not in invalid]
+                        source_rejected.update(invalid)
+                        products, refill_trace = collect_unique_products(topic, cache_only=cache_only,
+                            existing=retained, rejected_asins=source_rejected, max_searches=1)
+                        probes[-1].setdefault('source_refill', []).append({
+                            'round': refill + 1, 'replaced': len(invalid), 'retained': len(retained),
+                            'discovery': refill_trace})
+                        if len(products) != 6 or not refill_trace['complete']:
+                            break
+                    if len(products) != 6 or any(not any(
+                            isinstance(src, dict) and src.get('verified') is True and str(src.get('excerpt') or '').strip()
+                            for src in p.get('sources') or []) for p in products):
+                        probes[-1]['acceptance'] = blocked(['Six source-verified products unavailable'])
+                        continue
                     six, selection = select_six(products, topic, feedback)
                     evidence = build_evidence(topic, six, selection)
                     acceptance = independent_review(evidence)
                     issues = receipt_issues(acceptance, evidence)
-                    if issues and _researchable_candidates(six, cache_only=cache_only):
-                        # Do not make official URLs a global prerequisite. Escalate only
-                        # when independent QA finds the existing attributable facts weak.
-                        enriched = research_selected(six, prefer_official=True)
-                        new_sources = {row['asin']: row.get('sources') for row in enriched}
-                        if any(row.get('sources') != prior.get('sources')
-                               for row, prior in zip(enriched, six)):
-                            products = [{**row, 'sources': new_sources[row['asin']]}
-                                        if row['asin'] in new_sources else row for row in products]
-                            six, selection = select_six(products, topic, feedback)
-                            evidence = build_evidence(topic, six, selection)
-                            acceptance = independent_review(evidence)
-                            issues = receipt_issues(acceptance, evidence)
-                    if issues and not cache_only and len(products) > 6:
-                        # Remove only product identities the independent reviewer
-                        # explicitly rejected; never bypass a rejection or reuse its receipt.
-                        reviewed = acceptance.get('review', {})
-                        by_ref = {row['ref']: row['asin'] for row in evidence['products']}
-                        rejected = {by_ref[row['ref']] for row in reviewed.get('products', [])
-                                    if isinstance(row, dict) and row.get('ref') in by_ref
-                                    and (row.get('adequate_facts') is False or row.get('topic_fit') is False)}
-                        alternates = [row for row in products if row['asin'] not in rejected]
-                        if rejected and len(alternates) >= 6:
-                            try:
-                                replacement_six, replacement_selection = select_six(alternates, topic, feedback)
-                                if {r['asin'] for r in replacement_six} != {r['asin'] for r in six}:
-                                    replacement_evidence = build_evidence(topic, replacement_six, replacement_selection)
-                                    replacement_acceptance = independent_review(replacement_evidence)
-                                    replacement_issues = receipt_issues(replacement_acceptance, replacement_evidence)
-                                    if replacement_issues and _researchable_candidates(replacement_six, cache_only=False):
-                                        enriched = research_selected(replacement_six, prefer_official=True)
-                                        if any(row.get('sources') != prior.get('sources')
-                                               for row, prior in zip(enriched, replacement_six)):
-                                            new_sources = {row['asin']: row.get('sources') for row in enriched}
-                                            alternates = [{**row, 'sources': new_sources[row['asin']]}
-                                                          if row['asin'] in new_sources else row for row in alternates]
-                                            replacement_six, replacement_selection = select_six(alternates, topic, feedback)
-                                            replacement_evidence = build_evidence(topic, replacement_six, replacement_selection)
-                                            replacement_acceptance = independent_review(replacement_evidence)
-                                            replacement_issues = receipt_issues(replacement_acceptance, replacement_evidence)
-                                    if not replacement_issues:
-                                        six, selection, evidence, acceptance, issues = (
-                                            replacement_six, replacement_selection,
-                                            replacement_evidence, replacement_acceptance, [])
-                                        by_asin = {row['asin']: row for row in alternates}
-                                        products = [by_asin.get(row['asin'], row) for row in products]
-                                    else:
-                                        issues = [*issues, *replacement_issues]
-                            except ProductSelectionError as exc:
-                                issues = [*issues, str(exc)]
+                    excluded = set()
+                    # Only rejected identities are replaced. Successful items keep their axis.
+                    for qa_retry in range(2):
+                        if not issues or cache_only:
+                            break
+                        reviewed = (acceptance.get('review') or {}).get('products') or []
+                        by_ref = {row['ref']: row for row in evidence['products']}
+                        failed_refs = {row['ref'] for row in reviewed if isinstance(row, dict)
+                                       and (row.get('adequate_facts') is False or row.get('topic_fit') is False)}
+                        # Global or pair-level QA failures have no certified survivors.
+                        rejected = {by_ref[ref]['asin'] for ref in failed_refs if ref in by_ref}
+                        if not rejected:
+                            rejected = {row['asin'] for row in six}
+                        excluded.update(rejected)
+                        retained = [p for p in six if p['asin'] not in rejected]
+                        products, retry_trace = collect_unique_products(
+                            topic, cache_only=cache_only, existing=retained, rejected_asins=excluded,
+                            max_searches=1)
+                        probes[-1].setdefault('qa_research', []).append({
+                            'round': qa_retry + 1, 'replaced': len(rejected),
+                            'retained': len(retained), 'discovery': retry_trace})
+                        if len(products) != 6 or not retry_trace['complete']:
+                            issues = ['QA-rejected products could not be replenished']
+                            break
+                        six, selection = select_six(products, topic, feedback, pinned=retained)
+                        evidence = build_evidence(topic, six, selection)
+                        acceptance = independent_review(evidence)
+                        issues = receipt_issues(acceptance, evidence)
                     if issues:
                         probes[-1]['acceptance'] = blocked(issues)
                         continue
                 except ProductSelectionError as exc:
-                    reasons = [str(exc)]
-                    probes[-1]['acceptance'] = blocked(reasons)
+                    probes[-1]['acceptance'] = blocked([str(exc)])
                     continue
                 selected = {**topic, '_product_acceptance': acceptance,
                             '_accepted_selection_asins': [p['asin'] for p in six],

@@ -18,7 +18,7 @@ def _topic(query):
         {'id':'light','keywords':['軽量'],'label':'重量'}]}
 
 
-def test_search_continues_until_eighteen_unique_products():
+def test_initial_collection_keeps_six_new_products():
     previous=[_p(i) for i in range(18)]
     first=[*previous[:5],*[_p(i) for i in range(18,24)]]
     second=[*previous[5:10],*[_p(i) for i in range(24,30)]]
@@ -26,9 +26,9 @@ def test_search_continues_until_eighteen_unique_products():
     with patch.object(g,'discover_products',side_effect=[first,second,third]) as search:
         added,receipt=g.collect_unique_products(_topic('SDカード 比較'),cache_only=False,existing=previous)
     assert receipt['complete'] is True
-    assert receipt['added_unique']==18
-    assert len(added)==18
-    assert len({p['asin'] for p in [*previous,*added]})==36
+    assert receipt['added_unique']==6
+    assert len(added)==6
+    assert len({p['asin'] for p in [*previous,*added]})==24
     assert search.call_count==3
     assert [row['axis_id'] for row in receipt['attempts']]==['small','fast','light']
     assert all('比較' not in call.args[0]['query'] for call in search.call_args_list)
