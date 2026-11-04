@@ -93,3 +93,22 @@ def test_runtime_shell_no_longer_caps_entire_job_at_900_seconds():
     assert 'run_with_timeout.py 900' not in script
     assert 'pipeline/growth_runtime.py --publish --scheduled' in script
     assert 'pipeline/growth_runtime.py --publish --recovery-only' in script
+
+
+def test_only_product_qa_role_may_issue_terminal_candidate_rejection(tmp_path):
+    from role_stage_client import execute_role
+    from unittest.mock import patch
+    with patch.dict(os.environ, {'SELLEMY_GROWTH_RECOVERY_ROOT': str(tmp_path)}):
+        rejected = execute_role('product_qa_disposition', request={
+            'viability_probes': [{'slug': 'one-topic', 'candidate_count': 4,
+                                  'acceptance': {'reasons': ['six products unavailable']}}]})
+        held = execute_role('product_qa_disposition', request={
+            'viability_probes': [{'slug': 'network-topic', 'candidate_count': 0,
+                                  'error': 'Amazon connection failed'}]})
+    assert rejected['role'] == 'product_qa'
+    assert rejected['decision'] == 'BLOCKED'
+    assert rejected['qa']['reasons'] == ['six products unavailable']
+    assert held['decision'] == 'HOLD'
+    receipts = [json.loads(row) for row in (tmp_path / 'product-qa-dispositions.jsonl').read_text().splitlines()]
+    assert [row['decision'] for row in receipts] == ['BLOCKED', 'HOLD']
+    assert list((tmp_path / 'jobs').glob('*/state.json')) == [] if (tmp_path / 'jobs').exists() else True

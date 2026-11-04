@@ -16,7 +16,7 @@ class RoleStageFailure(RuntimeError):
 
 
 def execute_role(role: str, slug: str = '', *, cache_only: bool = False, request: dict | None = None) -> dict:
-    if role not in {'writer', 'reviewer', 'review_reset', 'product', 'inspect', 'designer', 'publish', 'postpublish', 'ceo_reconcile', 'planning', 'planning_commit', 'fresh_create', 'already_published', 'slot_compensation', 'recovery', 'report', 'state_queue', 'scheduler'}:
+    if role not in {'writer', 'reviewer', 'review_reset', 'product', 'inspect', 'designer', 'publish', 'postpublish', 'ceo_reconcile', 'planning', 'planning_commit', 'fresh_create', 'product_qa_disposition', 'already_published', 'slot_compensation', 'recovery', 'report', 'state_queue', 'scheduler'}:
         raise RoleStageFailure('unrecognized role')
     if slug and ('/' in slug or slug.startswith('.')):
         raise RoleStageFailure('invalid job identity')

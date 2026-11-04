@@ -122,9 +122,20 @@ def run(*, publish: bool, cache_only: bool = False, report_path: Path | None = R
                              'provider': planned.get('provider'),
                              'admission': result.get('controller_decision') if scheduled else None})
             except RoleStageFailure as exc:
-                result.setdefault('viability_probes', []).extend(
-                    exc.details.get('viability_probes') or [])
-                raise
+                probes = exc.details.get('viability_probes') or []
+                result.setdefault('viability_probes', []).extend(probes)
+                if not probes:
+                    # A Role error is not permission to reject a topic.
+                    raise
+                qa = execute_role('product_qa_disposition', request={'viability_probes': probes})
+                result['product_qa_disposition'] = qa
+                if qa['decision'] == 'BLOCKED':
+                    result['status'] = 'qa_rejected_topic'
+                elif qa['decision'] == 'HOLD':
+                    result['status'] = 'product_research_hold'
+                else:
+                    raise GrowthRuntimeError('unexpected product QA decision')
+                return ''
             result.update({key: value for key, value in created.items() if key != 'slug'})
             execute_role('planning_commit', created['slug'], request={
                 'provider': planned.get('provider'),
@@ -148,6 +159,8 @@ def run(*, publish: bool, cache_only: bool = False, report_path: Path | None = R
                     for row in sorted(unfinished, key=lambda x: x.get('created_at') or '')[:20]]
             result['recovery_mode'] = False
             slug = create_fresh()
+            if not slug and result.get('status') in {'qa_rejected_topic', 'product_research_hold'}:
+                return result
         if not publish:
             result['status'] = 'recovery_staged' if result['recovery_mode'] else 'staged'
             return result
@@ -155,9 +168,9 @@ def run(*, publish: bool, cache_only: bool = False, report_path: Path | None = R
             commit = _execute_job(slug, result, cache_only=cache_only)
         except GrowthRuntimeError as exc:
             if result.get('recovery_mode') and str(exc).startswith('planning_restart_required'):
-                # Terminate this job; the next scheduled run owns new Planning.
-                discard(slug, 'Product options exhausted; next run may select a new theme')
-                result['status'] = 'planning_restart_queued'
+                # Existing article remains held for QA; no Runtime termination.
+                result['status'] = 'product_research_hold'
+                result['held_slug'] = slug
                 return result
             if result.get('recovery_mode') and str(exc).startswith((
                     'product discovery still in progress', 'needs_product_reselection')):

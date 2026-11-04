@@ -206,7 +206,7 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument('--role', choices=(
         'writer', 'reviewer', 'review_reset', 'product', 'inspect', 'designer', 'publish', 'postpublish', 'ceo_reconcile',
-        'planning', 'planning_commit', 'fresh_create', 'already_published', 'slot_compensation', 'recovery', 'report', 'state_queue', 'scheduler'), required=True)
+        'planning', 'planning_commit', 'fresh_create', 'product_qa_disposition', 'already_published', 'slot_compensation', 'recovery', 'report', 'state_queue', 'scheduler'), required=True)
     parser.add_argument('--slug', default='')
     parser.add_argument('--cache-only', action='store_true')
     args = parser.parse_args()
@@ -248,6 +248,24 @@ def main() -> None:
         elif args.role == 'planning_commit':
             result = _commit_planning(args.slug, provider=request.get('provider'),
                                       admission=request.get('admission'))
+        elif args.role == 'product_qa_disposition':
+            from growth_recovery import STATE_ROOT, _append_jsonl, utcnow
+            from comparison_acceptance import blocked
+            probes = request.get('viability_probes') or []
+            if len(probes) != 1 or not probes[0].get('slug'):
+                raise ValueError('QA requires one identifiable attempted topic')
+            probe = probes[0]
+            # Transport/search failures are operational HOLD, not a quality rejection.
+            decision = ('HOLD' if probe.get('error') else 'BLOCKED')
+            acceptance = probe.get('acceptance') or {}
+            reasons = (acceptance.get('reasons') if isinstance(acceptance, dict) else None) or [
+                f"Only {probe.get('candidate_count', 0)} of 6 required products passed evidence collection"]
+            receipt = {'at': utcnow().isoformat(), 'role': 'product_qa',
+                       'slug': probe['slug'], 'decision': decision,
+                       'qa': blocked(reasons) if decision == 'BLOCKED' else {'status': 'HOLD', 'reasons': [probe['error']]},
+                       'viability_probes': probes}
+            _append_jsonl(STATE_ROOT / 'product-qa-dispositions.jsonl', receipt)
+            result = receipt
         elif args.role == 'fresh_create':
             result = _create_job(cache_only=args.cache_only,
                                  candidates=request['candidates'],

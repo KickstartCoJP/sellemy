@@ -367,14 +367,17 @@ class RuntimeFailClosedTests(unittest.TestCase):
             if name == 'planning': return {'candidates': [{'slug': 'first'}], 'provider': None}
             if name == 'fresh_create':
                 raise RoleStageFailure('first topic rejected', details={
-                    'viability_probes': [{'slug': 'first', 'acceptance': 'rejected'}]})
+                    'viability_probes': [{'slug': 'first', 'candidate_count': 3}]})
+            if name == 'product_qa_disposition':
+                return {'decision': 'BLOCKED', 'slug': 'first', 'qa': {'status': 'BLOCKED'}}
             raise AssertionError(name)
         with patch.object(growth_runtime, 'require_publishing_enabled'), \
              patch.object(growth_runtime, 'execute_role', side_effect=role):
-            with self.assertRaises(RoleStageFailure):
-                growth_runtime.run(publish=True, report_path=None)
+            result = growth_runtime.run(publish=True, report_path=None)
+        self.assertEqual(result['status'], 'qa_rejected_topic')
         self.assertEqual(requested.count('planning'), 1)
         self.assertEqual(requested.count('fresh_create'), 1)
+        self.assertEqual(requested.count('product_qa_disposition'), 1)
 
     def test_deferred_recovery_does_not_admit_new_topic_same_run(self):
         deferred = {'slug': 'held-job', 'current_stage': 'PRODUCT_HOLD',
