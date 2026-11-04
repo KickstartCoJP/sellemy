@@ -85,32 +85,23 @@ def parse_amazon_search_results(body,limit=5):
  return out
 
 def _amazon_search_browser(url, limit):
- """Try visible Chrome once as the Amazon HTTP search fallback."""
- from playwright.sync_api import sync_playwright
- failures=[]
- # Use Chrome only for Amazon search browser fallback.
- browsers=(('chrome-visible','chromium',False,'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'),)
- with sync_playwright() as playwright:
-  for label,engine,headless,path in browsers:
-   browser=None
-   try:
-    options={'headless':headless}
-    if path:options['executable_path']=path
-    browser=getattr(playwright,engine).launch(**options)
-    page=browser.new_page()
-    response=page.goto(url,wait_until='domcontentloaded',timeout=25000)
-    status=response.status if response else None
-    if status != 200:
-     failures.append(f'{label}: HTTP {status}')
-     continue
-    rows=parse_amazon_search_results(page.content(),limit=limit)
-    if rows:return rows
-    failures.append(f'{label}: no product cards')
-   except Exception as exc:
-    failures.append(f'{label}: {type(exc).__name__}: {str(exc).splitlines()[0][:150]}')
-   finally:
-    if browser:browser.close()
- raise AmazonSearchUnavailable('Amazon browser search unavailable: '+'; '.join(failures))
+ """Use isolated visible Chrome in the VM; never use a host desktop session."""
+ import subprocess
+ guest_script=str(Path(__file__).with_name('vm_amazon_search.py'))
+ argv=['/opt/homebrew/bin/colima','ssh','--','xvfb-run','-a',
+       '/home/kickstart.guest/.ai-role-playwright/bin/python',guest_script,url,str(limit)]
+ try:
+  result=subprocess.run(argv,capture_output=True,text=True,timeout=45,check=False)
+ except (OSError,subprocess.TimeoutExpired) as exc:
+  raise AmazonSearchUnavailable(f'Amazon VM Chrome unavailable: {type(exc).__name__}') from exc
+ if result.returncode:
+  detail=(result.stderr or '').strip().splitlines()
+  raise AmazonSearchUnavailable('Amazon VM Chrome unavailable: '+(detail[-1][:250] if detail else str(result.returncode)))
+ try:rows=json.loads(result.stdout)
+ except json.JSONDecodeError as exc:
+  raise AmazonSearchUnavailable('Amazon VM Chrome returned an invalid receipt') from exc
+ if not rows:raise AmazonSearchUnavailable('Amazon VM Chrome returned no product cards')
+ return rows
 
 class AutositeDiscoveryAdapter:
  def __init__(self):

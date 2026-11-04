@@ -5,6 +5,17 @@ from unittest.mock import Mock,patch
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'pipeline'))
 from discovery_adapters import AutositeDiscoveryAdapter,AmazonSearchUnavailable
 from growth_recovery import _backoff
+from discovery_adapters import _amazon_search_browser
+
+
+def test_visible_chrome_uses_isolated_vm_display():
+    rows = [{'asin': 'B012345678', 'title': 'Item'}]
+    with patch('subprocess.run', return_value=Mock(returncode=0, stdout=__import__('json').dumps(rows), stderr='')) as run:
+        assert _amazon_search_browser('https://www.amazon.co.jp/s?k=test', 1) == rows
+    argv = run.call_args.args[0]
+    assert argv[:5] == ['/opt/homebrew/bin/colima', 'ssh', '--', 'xvfb-run', '-a']
+    assert '/home/kickstart.guest/.ai-role-playwright/bin/python' in argv
+    assert 'Google Chrome.app' not in ' '.join(argv)
 
 def test_503_browser_failure_is_typed_retryable_outage():
     with patch('requests.get',return_value=Mock(status_code=503)),patch('discovery_adapters._amazon_search_browser',side_effect=AmazonSearchUnavailable('Amazon browser search status=503')):
