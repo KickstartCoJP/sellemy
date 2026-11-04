@@ -144,31 +144,6 @@ def select_six(candidates: list[dict], topic: dict, feedback: dict, *, pinned: l
     pool = [*pinned, *[p for p in pool if p['asin'] not in pinned_asins]][:30]
     if len(pinned_asins) > 6:
         raise ProductSelectionError('more than six pinned products')
-    if len(pool) == 6 and all(sum(p.get('discovery_axis_id') == axis['id'] for p in pool) == 2 for axis in axes):
-        # With exactly two source-backed candidates per axis there is no AI ranking decision.
-        # Give all six to independent QA without a redundant product-selector model call.
-        ordered = [p for axis in axes for p in pool if p.get('discovery_axis_id') == axis['id']]
-        covered = set().union(*(_axis_matches(p, axes) for p in ordered))
-        if len(covered) < 2:
-            raise ProductSelectionError('six candidates lack two grounded topic axes')
-        groups = []
-        selected = []
-        for axis in axes:
-            group = []
-            for product in ordered:
-                if product.get('discovery_axis_id') != axis['id']:
-                    continue
-                source_excerpt = _text(product)[:160]
-                reason = f"{axis['label']}: {source_excerpt}"
-                selected.append({**product, 'selection_reason': reason})
-                group.append({'asin': product['asin'], 'reason': reason})
-            groups.append({'axis_id': axis['id'], 'products': group})
-        return selected, {'method': 'six_candidates_direct_to_independent_qa',
-                          'candidate_count': 6, 'axes': groups,
-                          'comparison_axes_covered': sorted(covered),
-                          'brand_count': len({str(p.get('brand') or '').lower() for p in selected if p.get('brand')}),
-                          'content_duplicates_removed': removed,
-                          'retained_qa_passed_asins': sorted(pinned_asins)}
     items = [{
         'asin': p['asin'], 'title': p.get('amazon_title'), 'brand': p.get('brand'),
         'price': p.get('observed_price'), 'verified_facts': _text(p)[:2400],
