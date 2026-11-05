@@ -400,7 +400,7 @@ class AdditionalBoundaryTests(unittest.TestCase):
         self.assertFalse(qa['overall_pass'])
         self.assertFalse(qa['semantic_acceptance_pass'])
         self.assertTrue(all(v for k,v in qa.items() if (k.endswith('_pass') or k.endswith('_in_range'))
-                            and k not in {'overall_pass','semantic_acceptance_pass','main_in_range','description_target_pass'}))
+                            and k not in {'overall_pass','semantic_acceptance_pass','description_target_pass'}))
 
     def test_no_literal_leakage_but_unsupported_buying_advice_rejected(self):
         p,e,a=accepted_fixture()

@@ -13,7 +13,6 @@ from category_metadata import get_category
 LEAD_RANGE = (180, 230)
 SUMMARY_RANGE = (130, 170)
 HOW_TO_CHOOSE_RANGE = (190, 270)
-MAIN_RANGE = (1800, 2800)  # Editorial guidance only; length alone does not fail QA.
 DESCRIPTION_TARGET_RANGE = (160, 260)  # Product-specific editorial target.
 DESCRIPTION_HARD_MIN = 160
 H3_LEN_RANGE = (6, 45)
@@ -138,7 +137,6 @@ def run_qa(html: str, payload: dict, evidence: dict, *, acceptance: dict | None 
     results['how_to_choose_len'] = len(payload['how_to_choose'])
     results['how_to_choose_in_range'] = check_range(results['how_to_choose_len'], HOW_TO_CHOOSE_RANGE)
     results['main_len'] = main_text_length(html)
-    results['main_in_range'] = check_range(results['main_len'], MAIN_RANGE)
 
     descriptions = [p['description'] for p in payload['products']]
     desc_lens = [len(d) for d in descriptions]

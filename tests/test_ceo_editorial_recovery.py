@@ -3,7 +3,7 @@ import sys
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'pipeline'))
 from writer_runtime import _prompt
 from planning_runtime import PLANNING_SCHEMA, validate_candidate, PlanningError
-from qa import DESCRIPTION_HARD_MIN, MAIN_RANGE
+from qa import DESCRIPTION_HARD_MIN
 import pytest
 
 
@@ -37,7 +37,7 @@ def test_new_planning_requires_reader_persona():
 
 def test_informative_length_floor_without_old_padding_targets():
     assert DESCRIPTION_HARD_MIN == 160
-    assert MAIN_RANGE == (1800, 2800)
+    assert '記事全体や一般解説合計に文字数目標を設けず' in _prompt({'slug':'example'}, valid_editorial_evidence())
     prompt=_prompt({'slug':'example'}, valid_editorial_evidence())
     assert DESCRIPTION_HARD_MIN == 160
     assert '不用意な水増し文章' in prompt
