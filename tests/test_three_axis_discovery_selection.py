@@ -79,10 +79,23 @@ def test_pinned_retention():
         selected,_=select_six(rows,TOPIC,{},pinned=pinned)
     assert {r['asin'] for r in pinned}.issubset({r['asin'] for r in selected})
 
-def test_unrelated_source_evidence_blocks_selection():
-    rows=six();rows[0]['sources']=[{'verified':True,'excerpt':'irrelevant fact'}]
-    with pytest.raises(ProductSelectionError):
-        select_six(rows,TOPIC,{})
+def test_source_keyword_mismatch_reaches_independent_product_selection():
+    rows=six()
+    for row in rows:
+        row['sources']=[{'verified':True,'excerpt':'仕様と使用条件を説明する一次情報', 'source_type':'manufacturer_official'}]
+    with patch('product_selection.subprocess.run', side_effect=fake_ai([r['asin'] for r in rows])) as ai:
+        selected, metadata = select_six(rows, TOPIC, {})
+    assert ai.call_count == 1
+    assert len(selected) == 6
+    assert metadata['candidate_count'] == 6
+
+
+def test_unverified_source_still_blocks_before_selection():
+    rows=six(); rows[0]['sources']=[{'verified':False,'excerpt':'compact kettle specification'}]
+    with patch('product_selection.subprocess.run') as ai:
+        with pytest.raises(ProductSelectionError,match='eligible candidates'):
+            select_six(rows,TOPIC,{})
+        ai.assert_not_called()
 
 def test_duplicate_different_asin_same_product_title_rejected():
     fake, _ = search_factory({'compact':[1,2], 'quiet':[3,4], 'safe':[5,6]})

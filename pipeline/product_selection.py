@@ -127,9 +127,11 @@ def select_six(candidates: list[dict], topic: dict, feedback: dict, *, pinned: l
     axes = topic['comparison_axes']
 
     def eligible(item):
-        corpus = source_text(item).lower()  # Listing identity is usable for topic fit; not a performance proof.
-        return bool(_text(item).strip() and corpus and any(
-            str(word).lower() in corpus for axis in axes for word in axis.get('keywords', [])))
+        # Keyword matches in source excerpts are not an admission gate. Axis
+        # searches identify candidates; the independent Product QA judges fit.
+        # Retain source presence and identity checks without claiming that an
+        # absent literal keyword proves the product unrelated.
+        return bool(_text(item).strip() and source_text(item).strip())
 
     from product_candidate_registry import is_ng
     pool = [p for p in distinct if eligible(p) and not is_ng(p.get('asin'))]
@@ -140,7 +142,7 @@ def select_six(candidates: list[dict], topic: dict, feedback: dict, *, pinned: l
             raise ProductSelectionError(f'needs_product_reselection: fewer than two eligible products in axis {axis["id"]}')
     pinned_asins = {p['asin'] for p in pinned}
     if not pinned_asins.issubset({p['asin'] for p in pool}):
-        raise ProductSelectionError('retained product lacks verified topic-axis evidence')
+        raise ProductSelectionError('retained product lacks verified source or eligible identity')
     pool = [*pinned, *[p for p in pool if p['asin'] not in pinned_asins]][:30]
     if len(pinned_asins) > 6:
         raise ProductSelectionError('more than six pinned products')
@@ -215,9 +217,9 @@ axesは入力の3軸を1回ずつ含め、各軸の商品は相異なる2件、�
     if len(set(selected_asins)) != 6 or not pinned_asins.issubset(set(selected_asins)):
         raise ProductSelectionError('AI selection has repeated ASIN or omitted retained product')
     selected = [{**by_asin[asin], 'selection_reason': reasons[asin]} for asin in selected_asins]
+    # Diagnostic only: literal term coverage does not establish semantic fit.
+    # Independent Product QA remains responsible for rejecting weak axes.
     covered = set().union(*(_axis_matches(p, axes) for p in selected))
-    if len(covered) < 2:
-        raise ProductSelectionError('AI selected six lack two grounded topic axes')
     return selected, {
         'method': 'ai_selection_three_axes_two_each', 'candidate_count': len(pool),
         'axes': selection_axes,
