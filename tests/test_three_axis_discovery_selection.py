@@ -90,12 +90,13 @@ def test_source_keyword_mismatch_reaches_independent_product_selection():
     assert metadata['candidate_count'] == 6
 
 
-def test_unverified_source_still_blocks_before_selection():
+def test_unverified_source_is_recorded_without_preempting_topic_review():
     rows=six(); rows[0]['sources']=[{'verified':False,'excerpt':'compact kettle specification'}]
-    with patch('product_selection.subprocess.run') as ai:
-        with pytest.raises(ProductSelectionError,match='eligible candidates'):
-            select_six(rows,TOPIC,{})
-        ai.assert_not_called()
+    with patch('product_selection.subprocess.run', side_effect=fake_ai([r['asin'] for r in rows])) as ai:
+        selected, meta = select_six(rows,TOPIC,{})
+    assert len(selected) == 6
+    assert meta['candidate_count'] == 6
+    assert ai.call_count == 1
 
 def test_duplicate_different_asin_same_product_title_rejected():
     fake, _ = search_factory({'compact':[1,2], 'quiet':[3,4], 'safe':[5,6]})

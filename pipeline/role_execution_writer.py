@@ -125,7 +125,7 @@ def reviewer(slug: str, metadata: dict) -> dict:
             raise GrowthRuntimeError(f'independent review unavailable for {slug}') from exc
         write_artifact(slug, 'acceptance.json', acceptance)
         review = acceptance.get('review') or {}
-    if review.get('needs_product_reselection') is True or review.get('status') == 'BLOCKED':
+    if review.get('status') == 'BLOCKED' and review.get('needs_product_reselection') is True:
         request_product_reselection(slug, [review.get('reason') or 'Review found missing product facts'])
         raise GrowthRuntimeError(f'needs_product_reselection for {slug}')
 

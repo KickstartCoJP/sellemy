@@ -167,8 +167,8 @@ class ProductViabilityPlanningTests(unittest.TestCase):
               patch.object(business, 'discover_products', return_value=[]) as discover):
             with self.assertRaises(planning_runtime.PlanningError) as failure:
                 business.select_viable_topic([first, second], {}, cache_only=False)
-        self.assertEqual([row['slug'] for row in failure.exception.viability_probes], ['first-topic'])
-        discover.assert_called_once()
+        self.assertEqual([row['slug'] for row in failure.exception.viability_probes], ['first-topic', 'second-topic'])
+        self.assertEqual(discover.call_count, 2)
 
     def test_initial_six_go_directly_to_selection(self):
         topic = self._topic('research-topic')
@@ -193,11 +193,11 @@ class ProductViabilityPlanningTests(unittest.TestCase):
               patch.object(business, 'select_six', side_effect=business.ProductSelectionError('not enough evidence')) as selector):
             with self.assertRaises(planning_runtime.PlanningError) as failure:
                 business.select_viable_topic([first, second], {}, cache_only=False)
-        self.assertEqual([row['slug'] for row in failure.exception.viability_probes], ['research-first'])
-        discover.assert_called_once()
-        selector.assert_called_once()
+        self.assertEqual([row['slug'] for row in failure.exception.viability_probes], ['research-first', 'research-second'])
+        self.assertEqual(discover.call_count, 2)
+        self.assertEqual(selector.call_count, 2)
 
-    def test_missing_sources_replaced_before_independent_qa(self):
+    def test_missing_sources_are_recorded_and_sent_to_independent_qa(self):
         topic = self._topic('missing-sources')
         usable = lambda i: {'asin': f'B0GOOD{i:04d}', 'sources': [{'verified': True, 'excerpt': 'verified facts'}]}
         initial = [usable(i) for i in range(4)] + [
@@ -215,13 +215,12 @@ class ProductViabilityPlanningTests(unittest.TestCase):
               patch.object(business, 'receipt_issues', return_value=[])):
             chosen, products, probes = business.select_viable_topic([topic], {}, cache_only=False)
         self.assertEqual(chosen['slug'], topic['slug'])
-        self.assertEqual(products, replacement)
-        self.assertEqual(len(calls[1][0]), 4)
-        self.assertEqual(calls[1][1], {'B0BAD00001', 'B0BAD00002'})
-        self.assertEqual(probes[0]['source_refill'][0]['replaced'], 2)
+        self.assertEqual(products, initial)
+        self.assertEqual(len(calls), 1)
+        self.assertEqual(probes[0]['unavailable_source_asins'], ['B0BAD00001', 'B0BAD00002'])
         review.assert_called_once()
 
-    def test_global_qa_rejection_searches_new_six_before_rechecking(self):
+    def test_proven_topic_mismatch_replaces_failed_six_before_rechecking(self):
         topic = self._topic('global-qa-retry')
         initial = [{'asin': f'B0TEST{i:04d}', 'sources': [{'verified':True,'excerpt':'facts'}]} for i in range(6)]
         replacement = [{'asin': f'B0NEW{i:05d}', 'sources': [{'verified':True,'excerpt':'facts'}]} for i in range(6)]
@@ -234,7 +233,8 @@ class ProductViabilityPlanningTests(unittest.TestCase):
               patch.object(business, 'select_six', side_effect=lambda rows, *args, **kwargs:(rows, {})),
               patch.object(business, 'build_evidence', side_effect=lambda t, rows, selection: {
                   'products': [{'ref': f'p{i+1}', 'asin': p['asin']} for i,p in enumerate(rows)]}),
-              patch.object(business, 'independent_review', return_value={'review': {'products': []}}) as review,
+              patch.object(business, 'independent_review', return_value={'review': {'products': [
+                  {'ref': f'p{i+1}', 'topic_fit': False} for i in range(6)]}}) as review,
               patch.object(business, 'receipt_issues', side_effect=[['global QA failure'], []])):
             chosen, products, probes = business.select_viable_topic([topic], {}, cache_only=False)
         self.assertEqual(chosen['slug'], topic['slug'])
@@ -254,7 +254,7 @@ class ProductViabilityPlanningTests(unittest.TestCase):
             calls.append((existing, rejected_asins))
             return (initial if existing is None else [*existing,new]), {'complete': True, 'attempts': []}
         reviewed = {'review': {'products': [
-            {'ref': f'p{i+1}', 'adequate_facts': i != 5, 'topic_fit': True}
+            {'ref': f'p{i+1}', 'adequate_facts': i != 5, 'topic_fit': i != 5}
             for i in range(6)]}}
         with (patch.object(business, 'rank_candidates', return_value=[topic]),
               patch.object(business, 'collect_unique_products', side_effect=collect),
@@ -280,38 +280,38 @@ class ProductViabilityPlanningTests(unittest.TestCase):
               patch.object(business, 'create_job') as create):
             with self.assertRaises(planning_runtime.PlanningError) as failure:
                 business.select_viable_topic([first, second], {}, cache_only=False)
-        self.assertEqual([p['slug'] for p in failure.exception.viability_probes], ['first-topic'])
+        self.assertEqual([p['slug'] for p in failure.exception.viability_probes], ['first-topic', 'second-topic'])
         self.assertIn('only 5 documented topic-axis matches', str(failure.exception.viability_probes[0]['acceptance']))
-        discover.assert_called_once()
+        self.assertEqual(discover.call_count, 2)
         create.assert_not_called()
 
-    def test_one_run_evaluates_only_first_topic_of_seven(self):
+    def test_one_run_evaluates_all_seven_novel_topics(self):
         topics = [self._topic(f'topic-{i}') for i in range(7)]
         with (patch.object(business, 'rank_candidates', return_value=topics),
               patch.object(business, 'discover_products', return_value=[]) as discover):
             with self.assertRaises(planning_runtime.PlanningError) as failure:
                 business.select_viable_topic(topics, {}, cache_only=False)
-        self.assertEqual([p['slug'] for p in failure.exception.viability_probes], ['topic-0'])
-        discover.assert_called_once()
+        self.assertEqual([p['slug'] for p in failure.exception.viability_probes], [f'topic-{i}' for i in range(7)])
+        self.assertEqual(discover.call_count, 7)
 
-    def test_direct_discovery_calls_planning_only_once(self):
+    def test_direct_discovery_stops_when_provider_repeats_old_topics(self):
         first_round = [self._topic('round-one-a'), self._topic('round-one-b')]
         with (patch.object(business, 'discover_candidates', return_value=first_round) as planning,
               patch.object(business, 'rank_candidates', return_value=first_round),
               patch.object(business, 'discover_products', return_value=[])):
             with self.assertRaises(planning_runtime.PlanningError):
                 business.select_viable_topic(None, {}, cache_only=False, max_rounds=20)
-        planning.assert_called_once()
+        self.assertEqual(planning.call_count, 2)
 
-    def test_no_automatic_replanning_after_topic_failure(self):
+    def test_replanning_rejects_duplicate_topic_groups(self):
         topics = [self._topic(f'fresh-{n}') for n in range(5)]
         with (patch.object(business, 'discover_candidates', return_value=topics) as planning,
               patch.object(business, 'rank_candidates', return_value=topics),
               patch.object(business, 'discover_products', return_value=[])):
             with self.assertRaises(planning_runtime.PlanningError) as failure:
                 business.select_viable_topic(None, {}, cache_only=False)
-        planning.assert_called_once()
-        self.assertEqual([p['slug'] for p in failure.exception.viability_probes], ['fresh-0'])
+        self.assertEqual(planning.call_count, 2)
+        self.assertEqual([p['slug'] for p in failure.exception.viability_probes], [f'fresh-{i}' for i in range(5)])
 
     def test_all_unviable_topics_fail_closed(self):
         topics = [self._topic('first-topic'), self._topic('second-topic')]
@@ -322,8 +322,8 @@ class ProductViabilityPlanningTests(unittest.TestCase):
             with self.assertRaises(planning_runtime.PlanningError) as failure:
                 business.select_viable_topic(topics, {}, cache_only=False)
         self.assertEqual([probe['slug'] for probe in failure.exception.viability_probes],
-                         ['first-topic'])
-        self.assertIn('require 6 documented products', str(failure.exception))
+                         ['first-topic', 'second-topic'])
+        self.assertIn('novel planning candidates', str(failure.exception))
 
 
 class RuntimeFailClosedTests(unittest.TestCase):
