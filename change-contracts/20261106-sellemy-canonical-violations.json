@@ -1,0 +1,36 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "BU002-CANONICAL-VIOLATIONS-20261106",
+  "instruction_ref": "CEO request 2026-11-06: で、さっきの違反実装の修正を。",
+  "instruction": "Correct identified deviations: one-topic planning stop, evidence-unavailable planning veto, and editorial review misrouting to product reselection. No quality criterion relaxation or approval bypass.",
+  "implementer": "ChatGPT direct Python edit on Mac Studio, no Codex modification",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3",
+    "https://app.notion.com/p/3dc67ec6a1008196b017ee01e1824bba",
+    "https://app.notion.com/p/3fd67ec6a10081339edef6932aae8d0e"
+  ],
+  "allowed_paths": [
+    "change-contracts/20261106-sellemy-canonical-violations.json",
+    "pipeline/growth_role_business.py",
+    "pipeline/product_selection.py",
+    "pipeline/role_execution_writer.py",
+    "tests/test_growth_runtime.py",
+    "tests/test_three_axis_discovery_selection.py",
+    "tests/test_canonical_violation_regressions.py",
+    "tests/test_comparison_acceptance.py",
+    "pipeline/role_stage_exec.py"
+  ],
+  "preserved_rules": [
+    "Six distinct items remain in three axes with two products per axis",
+    "Independent Product QA cannot be bypassed or forged",
+    "Identity duplication and invalid product class still fail",
+    "Existing CEO gate, publication approval and QA thresholds unchanged",
+    "No direct main push; CEO-authorized independent PR review required"
+  ],
+  "acceptance_tests": [
+    "tests/test_growth_runtime.py",
+    "tests/test_three_axis_discovery_selection.py",
+    "tests/test_canonical_violation_regressions.py",
+    "tests/test_comparison_acceptance.py"
+  ]
+}

@@ -129,9 +129,8 @@ def select_six(candidates: list[dict], topic: dict, feedback: dict, *, pinned: l
     def eligible(item):
         # Keyword matches in source excerpts are not an admission gate. Axis
         # searches identify candidates; the independent Product QA judges fit.
-        # Retain source presence and identity checks without claiming that an
-        # absent literal keyword proves the product unrelated.
-        return bool(_text(item).strip() and source_text(item).strip())
+        # Missing verified excerpt is an UNKNOWN fact, not an automatic rejection.
+        return bool(source_text(item).strip())
 
     from product_candidate_registry import is_ng
     pool = [p for p in distinct if eligible(p) and not is_ng(p.get('asin'))]
