@@ -308,12 +308,9 @@ def select_viable_topic(
                             'selection_reason': 'six products passed independent evidence acceptance'}
                 if getattr(source, 'provider_metadata', None):
                     selected['_planning_provider_metadata'] = source.provider_metadata
-                enriched_by_asin = {p['asin']: p for p in six}
-                for product in products:
-                    enriched = enriched_by_asin.get(product['asin'])
-                    if enriched and enriched.get('sources') != product.get('sources'):
-                        product['sources'] = enriched['sources']
-                return selected, products, probes
+                # Pass the exact reviewed six onward: discovery rows may lack
+                # selection_reason and must not replace signed QA evidence.
+                return selected, six, probes
     error = PlanningError('chosen topic did not pass product acceptance: require 6 documented products matching topic axes')
     error.viability_probes = probes
     raise error

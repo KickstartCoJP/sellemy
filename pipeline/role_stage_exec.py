@@ -126,6 +126,10 @@ def _create_job(*, cache_only: bool, candidates: list, provider: dict | None,
     else:
         selected, selection = select_six(products, topic, feedback)
     evidence = build_evidence(topic, selected, selection)
+    from comparison_acceptance import product_issues
+    issues = product_issues(evidence)
+    if issues:
+        raise ValueError('approved product evidence changed before job creation: ' + '; '.join(issues))
     job = create_job(topic=topic, evidence=evidence, selection=selection,
                      planning_provider=provider, viability_probes=probes,
                      save_planning_provider=True)
