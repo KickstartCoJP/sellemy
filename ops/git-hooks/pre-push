@@ -1,0 +1,4 @@
+#!/bin/sh
+set -eu
+ROOT=$(git rev-parse --show-toplevel)
+exec python3 "$ROOT/ops/change_contract_gate.py" --pre-push

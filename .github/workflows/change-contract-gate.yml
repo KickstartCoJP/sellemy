@@ -1,0 +1,44 @@
+name: Change contract gate
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened]
+  pull_request_review:
+    types: [submitted, dismissed]
+permissions:
+  contents: read
+  pull-requests: read
+jobs:
+  change-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+      - name: Verify request is within explicit change contract
+        run: |
+          python3 ops/change_contract_gate.py --base '${{ github.event.pull_request.base.sha }}' --head '${{ github.event.pull_request.head.sha }}' --destination refs/heads/pr
+          python3 -m unittest discover -s tests -p 'test_change_contract_gate.py' -v
+      - name: Require independent approving review
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_AUTHOR: ${{ github.event.pull_request.user.login }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          python3 - <<'PY'
+          import json, os, subprocess, sys
+          repo = os.environ['REPOSITORY']
+          number = os.environ['PR_NUMBER']
+          author = os.environ['PR_AUTHOR'].lower()
+          reviews = sum(json.loads(subprocess.check_output(['gh','api',f'repos/{repo}/pulls/{number}/reviews','--paginate','--slurp'], text=True)), [])
+          latest = {}
+          for review in reviews:
+              reviewer = (review.get('user') or {}).get('login','').lower()
+              if reviewer and reviewer != author and review.get('state') in ('APPROVED','CHANGES_REQUESTED','DISMISSED'):
+                  latest[reviewer] = review['state']
+          if not any(state == 'APPROVED' for state in latest.values()):
+              print('DENIED: a separate GitHub reviewer must approve this change', file=sys.stderr)
+              sys.exit(1)
+          PY

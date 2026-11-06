@@ -1,0 +1,24 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "OS-CHANGE-CONTRACT-GATE-20261106",
+  "instruction_ref": "CEO instruction 2026-11-06: implement the proposed change contract gate",
+  "instruction": "Block uncontracted code changes and out-of-scope edits while retaining Sellemy's existing article-publication path.",
+  "implementer": "ChatGPT direct Python development (not Codex)",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3",
+    "https://app.notion.com/p/3dc67ec6a1008196b017ee01e1824bba"
+  ],
+  "allowed_paths": [
+    "ops/change_contract_gate.py",
+    "ops/git-hooks/pre-push",
+    ".github/workflows/change-contract-gate.yml",
+    "tests/test_change_contract_gate.py",
+    "change-contracts/20261106-sellemy-change-gate.json"
+  ],
+  "preserved_rules": [
+    "Sellemy production publication remains exactly one existing 11-file publication unit",
+    "No product/article quality gates or thresholds change",
+    "No new Runtime, Queue, credential, billing, or deployment route"
+  ],
+  "acceptance_tests": ["tests/test_change_contract_gate.py"]
+}
