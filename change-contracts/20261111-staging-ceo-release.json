@@ -1,0 +1,23 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "BU002-STAGING-CEO-RELEASE-20261111",
+  "instruction_ref": "CEO explicit request 2026-11-11: Staging implementation, portal review, approval promotes to production",
+  "instruction": "Stagingに実装し、CEOがポータルで成果物を承認したら承認済みSHAだけを本番反映。承認後のAI起動不要。",
+  "implementer": "sellemy-ops via Mac Studio (no Codex)",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3"
+  ],
+  "allowed_paths": [
+    ".github/workflows/change-contract-gate.yml",
+    "tests/test_change_contract_gate.py",
+    "change-contracts/20261111-staging-ceo-release.json"
+  ],
+  "preserved_rules": [
+    "No direct code push to main",
+    "Existing Product QA and article publishing unchanged",
+    "No self-attested CEO approvals"
+  ],
+  "acceptance_tests": [
+    "tests/test_change_contract_gate.py"
+  ]
+}

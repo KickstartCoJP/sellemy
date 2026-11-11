@@ -57,6 +57,11 @@ class ChangeContractGateTests(unittest.TestCase):
         data = {**self.data, 'canonical_refs': []}
         self.assertTrue(any('canonical_refs' in x for x in self.validate([self.contract_path, self.code_path, self.test_path], data)))
 
+    def test_staging_contract_requires_exact_paths(self):
+        self.assertEqual(self.validate([self.contract_path, self.code_path, self.test_path]), [])
+        issues=self.validate([self.contract_path, self.code_path, self.test_path, 'ops/unauthorized.py'])
+        self.assertTrue(any('out-of-scope' in item for item in issues))
+
     def test_direct_main_development_rejected(self):
         changed = {self.contract_path, self.code_path, self.test_path}
         with patch.object(gate, 'changed_paths', return_value=changed), patch.object(gate, 'is_publication_only', return_value=False):
