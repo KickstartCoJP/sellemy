@@ -1,0 +1,59 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "TASK-BU002-PURPOSE-PRODUCTION-IMPLEMENT-20261007-001",
+  "instruction_ref": "CEO instruction 2026-11-15: 通常の特集アイキャッチ制作ルートで作る。特集詳細ページの表現を全面修正し、比較表現も外す。",
+  "instruction": "特集アイキャッチをDesigner Routerのproduction routeへ組み込み、6既存特集を正式生成物へ差し替える。特集詳細ページは状態変化を主語に統一し、比較・まず整えたい・あわせて取り入れたい等の旧表現を削除する。記事本体タイトルは変更せず、特集内表示だけ比較語を除去する。",
+  "implementer": "sellemy-purpose-ops",
+  "canonical_refs": [
+    "TASK-BU002-PURPOSE-PRODUCTION-IMPLEMENT-20261007-001"
+  ],
+  "allowed_paths": [
+    "change-contracts/20261115-feature-eyecatch-and-detail-expression.json",
+    "config/purpose_features_seed.json",
+    "css/style.css",
+    "data/feature-eyecatch-receipts/",
+    "data/feature-eyecatch-receipts/desk-environment.json",
+    "data/feature-eyecatch-receipts/easier-housework.json",
+    "data/feature-eyecatch-receipts/easy-daily-cooking.json",
+    "data/feature-eyecatch-receipts/grooming-routine.json",
+    "data/feature-eyecatch-receipts/relax-at-home.json",
+    "data/feature-eyecatch-receipts/warm-home.json",
+    "data/sellemy.db",
+    "img/themes/desk-environment.png",
+    "img/themes/desk-environment.webp",
+    "img/themes/easier-housework.png",
+    "img/themes/easier-housework.webp",
+    "img/themes/easy-daily-cooking.png",
+    "img/themes/easy-daily-cooking.webp",
+    "img/themes/grooming-routine.png",
+    "img/themes/grooming-routine.webp",
+    "img/themes/relax-at-home.png",
+    "img/themes/relax-at-home.webp",
+    "img/themes/warm-home.png",
+    "img/themes/warm-home.webp",
+    "pipeline/codex_eyecatch.py",
+    "pipeline/codex_provider.py",
+    "pipeline/eyecatch_adapter.py",
+    "pipeline/eyecatch_router.py",
+    "pipeline/purpose_feature_runtime.py",
+    "tests/test_purpose_feature_runtime.py",
+    "tests/test_purpose_grooming_release.py",
+    "themes/desk-environment.html",
+    "themes/easier-housework.html",
+    "themes/easy-daily-cooking.html",
+    "themes/grooming-routine.html",
+    "themes/index.html",
+    "themes/relax-at-home.html",
+    "themes/warm-home.html"
+  ],
+  "preserved_rules": [
+    "Purpose Hub URL/Relation構造を維持する",
+    "記事本体のタイトル・本文・Affiliate CTAを変更しない",
+    "PH-GROOMINGの18Relationと3見出し構成を維持する",
+    "Designer Routerの既存routing weights/fallback policyを変更しない"
+  ],
+  "acceptance_tests": [
+    "tests/test_purpose_feature_runtime.py",
+    "tests/test_purpose_grooming_release.py"
+  ]
+}

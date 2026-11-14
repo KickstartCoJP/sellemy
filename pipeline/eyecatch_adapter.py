@@ -37,7 +37,19 @@ def _atomic_write(path: Path, raw: bytes) -> None:
 
 
 def _prompt(payload: dict, evidence: dict) -> str:
-    product_names = [p['h3'] for p in payload['products']]
+    product_names = [str(p.get('h3') or '') for p in payload.get('products', []) if isinstance(p, dict)]
+    asset_type = str(evidence.get('asset_type') or 'article')
+    if asset_type == 'feature':
+        return (
+            'Create one production feature eyecatch image for Sellemy, a Japanese product-discovery and comparison media brand. '
+            'The image represents an editorial feature/theme, not a specific product. Show one coherent lifestyle scene that makes the desired state immediately understandable. '
+            'Do not create a collage, montage, grid, contact sheet, product-card layout, screenshot, ad banner, or composition of listing images. '
+            'Do not place title text, logos, prices, badges, buttons, rankings, CTA, or long copy in the image. '
+            f"Feature title: {payload['h1']}. Feature summary: {payload['summary']}. "
+            f"Theme cues: {', '.join(product_names)}. "
+            'Use refined, calm Japanese lifestyle/editorial art direction with natural light and believable lived-in context. '
+            'Create exactly one 1536x1024 PNG suitable for both the feature card and feature hero.'
+        )
     return (
         'Create one article-specific editorial eyecatch image for Sellemy, a Japanese product-discovery and comparison media brand. '
         'The result must be a coherent single generated illustration/photo-real editorial visual, not a collage, montage, grid, contact sheet, '

@@ -1,0 +1,51 @@
+{
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "generation_route_attestation": "codex_rollout_extension",
+  "model_reported_generation_route": "built-in_image_gen",
+  "role_id": "bu-codex-sellemy-designer",
+  "thread_id": "01a1dc06-cbe8-7d60-ac3e-d05bdeed59e3",
+  "member_binding_revision": 10,
+  "model": "gpt-6-astra",
+  "visual_family": "Lifestyle Scene",
+  "summary": "朝の自然光が入る洗面所で髪を整える、日常の身だしなみシーン。歯ブラシとシェーバーが用途を補足。文字・ロゴなしの単一構図を目視確認し、PNG形式・1536x1024を検証済み。",
+  "image_sha256": "657a2fd40638a0b1adf8838a97736a5e90f33fb3dcb2a8f8b23ded1edc7e514b",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-11-14T21:49:10.021690+00:00",
+  "token_usage_source": "codex_rollout.turn_token_usage",
+  "image_generation_internal_usage_exposed": false,
+  "token_usage": {
+    "input_tokens": 131281,
+    "cached_input_tokens": 122752,
+    "cache_write_input_tokens": 0,
+    "uncached_input_tokens": 8529,
+    "output_tokens": 767,
+    "reasoning_output_tokens": 0,
+    "total_tokens": 132048
+  },
+  "routing": {
+    "mode": "weighted_random",
+    "selected_route": "openai_api",
+    "codex_share": 0,
+    "api_share": 100,
+    "codex_reserve_percent": 20.0,
+    "codex_usage": {
+      "used_percent": 49.0,
+      "remaining_percent": 51.0,
+      "resets_at": 1794984313,
+      "window_minutes": 10080,
+      "source": "/Users/kickstart/.codex/sessions/2026/11/15/rollout-2026-11-15T06-46-35-01a1dc06-cbe8-7d60-ac3e-d05bdeed59e3.jsonl"
+    },
+    "reason": "weighted_random",
+    "roll": 57,
+    "remaining_percent": 51.0,
+    "total_weight": 100,
+    "fallback_from": "openai_api",
+    "executed_route": "codex",
+    "errors_before_success": [
+      "openai_api:EyecatchGenerationError:Sellemy OpenAI API key unavailable"
+    ]
+  },
+  "routing_recorded_at": "2026-11-14T21:49:10.022714+00:00"
+}
