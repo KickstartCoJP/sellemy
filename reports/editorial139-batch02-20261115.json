@@ -1,0 +1,345 @@
+{
+  "task_id": "TASK-BU002-EDITORIAL-139-RECOVERY-20261115",
+  "articles": [
+    {
+      "slug": "autumn-hair-dryers-6-picks",
+      "sequence": 10,
+      "qa": "PASS_CHANGED_PARTS_ONLY",
+      "approval": "PENDING_CEO_PORTAL",
+      "production": "UNCHANGED",
+      "edited_fields": [
+        "lead",
+        "summary",
+        "comparison_groups[0].title",
+        "comparison_groups[0].angle",
+        "comparison_groups[1].title",
+        "comparison_groups[1].angle",
+        "comparison_groups[2].title",
+        "comparison_groups[2].angle",
+        "html.toc_heading"
+      ],
+      "files": [
+        {
+          "path": "article/beauty/autumn-hair-dryers-6-picks.html",
+          "before_sha256": "020042e3bdcd6949e1f14a676d7428e5cbe5bf2bd561f9a70a53548fa8f00bf9",
+          "after_sha256": "831b1dfe740b43c005ca2fe147cca8e860033523fb2de29d46ba504eb9688d51"
+        },
+        {
+          "path": "data/payloads/autumn-hair-dryers-6-picks.json",
+          "before_sha256": "7dc60a5cd79abda7ce395165e5a64fe25006f7ef7b29813045098cc8fc8b9270",
+          "after_sha256": "51d8761a36562298b38e103c32f0164066a49d8349e86ef65f157d5c3193a930"
+        }
+      ],
+      "claim_support": "Evidence amazon_title: p1 LCD15 modes; p3 NIPLUX auto cold/hot; p2 MERIN ion switch; p5 KINUJO3 temp; p4 Brighte shower dryer; p6 Dyson name/color. No new hair damage, drying speed or efficacy claim.",
+      "attention": [
+        "既存未編集本文にイオンの効果・髪の負担等の未再認証主張あり。変更部分限定QA。"
+      ],
+      "preserved_html_signature": "6e20a490c79e386a5fbef049dbddbca0ea0605340f172eeaa400754db970b927",
+      "preserved_products_sha256": "deb890fe94a4d65db2a4f1bf351ce5dbfb1d6cbec58116cf6f192ff401e3b1f0",
+      "preserved_group_refs": [
+        [
+          "p1",
+          "p3"
+        ],
+        [
+          "p2",
+          "p5"
+        ],
+        [
+          "p4",
+          "p6"
+        ]
+      ]
+    },
+    {
+      "slug": "bathroom-mold-removers-6-picks",
+      "sequence": 14,
+      "qa": "PASS_CHANGED_PARTS_ONLY",
+      "approval": "PENDING_CEO_PORTAL",
+      "production": "UNCHANGED",
+      "edited_fields": [
+        "lead",
+        "comparison_groups[1].title",
+        "html.toc_heading"
+      ],
+      "files": [
+        {
+          "path": "article/dailygoods/bathroom-mold-removers-6-picks.html",
+          "before_sha256": "074f20ae2df851cc9ef976317003daecaaee37d3e8b0aa45c1a1183371176654",
+          "after_sha256": "44587feede00d9dcd299024ad82f799fa868b82afd4502d0ca023784d2928ec4"
+        },
+        {
+          "path": "data/payloads/bathroom-mold-removers-6-picks.json",
+          "before_sha256": "661d57abef0a7fe60024d26d2fbfd91120cbb8484a6dbb4b02046ab86e58dc5f",
+          "after_sha256": "2a17b010c736b4421034a55809e854f575a074617015eae759b0345606b7b234"
+        }
+      ],
+      "claim_support": "Existing evidence types and targeted surfaces retained. Useful comparisons and safety/label-check instructions unchanged. No removal efficacy or product mixing claim added.",
+      "attention": [
+        "既存の対象素材や使用条件の比較は読者に有用なため保持。既存商品主張の再認証は未実施。"
+      ],
+      "preserved_html_signature": "8d63b3948b2dd4c672021d24753d991b50974a18ad22b6b4ca42e8b33af7e3ac",
+      "preserved_products_sha256": "de80ef52387fecd4cb232ba6471ed14d01b4ace353ed90c5ce9254b33f54fa2d",
+      "preserved_group_refs": [
+        [
+          "p1",
+          "p5"
+        ],
+        [
+          "p3",
+          "p4"
+        ],
+        [
+          "p2",
+          "p6"
+        ]
+      ]
+    },
+    {
+      "slug": "bb-cc-creams-6-picks",
+      "sequence": 15,
+      "qa": "PASS_CHANGED_PARTS_ONLY",
+      "approval": "PENDING_CEO_PORTAL",
+      "production": "UNCHANGED",
+      "edited_fields": [
+        "lead",
+        "summary",
+        "comparison_groups[0].title",
+        "comparison_groups[0].angle",
+        "comparison_groups[1].title",
+        "comparison_groups[1].angle",
+        "comparison_groups[2].title",
+        "comparison_groups[2].angle",
+        "html.toc_heading"
+      ],
+      "files": [
+        {
+          "path": "article/beauty/bb-cc-creams-6-picks.html",
+          "before_sha256": "d8ecddd31e6a6f09de04a9be0d56f07a965d7530db19b2ac4fd5b6b5b39a5901",
+          "after_sha256": "a7f9c64fbb224b6b6f437e52ae9f0aac172a213533e538a6a097a3911d2bcf5d"
+        },
+        {
+          "path": "data/payloads/bb-cc-creams-6-picks.json",
+          "before_sha256": "52817a3e4ddcc4a3c041a08d8eed5ac0577c55ba6b147e48c13b6210a82edc78",
+          "after_sha256": "d4b4c7ca650d22e6894403b0d774f564c16fe1d46ee29ad22c0a3d030448c50a"
+        }
+      ],
+      "claim_support": "Evidence amazon_title: MISSHA No23, ONEC BB+CC, Obagi vitaminC, PICOMONTE CC, Chifure30g, Decorte35g. No efficacy, quality hierarchy or skin suitability added.",
+      "attention": [
+        "既存商品本文その他の肌適合・効果は再認証未実施。変更部分限定QA。"
+      ],
+      "preserved_html_signature": "1f1f251f17b9e8b9bd1bd01c5766fa27a7b1bbd914e7a58749417d2cf13086e8",
+      "preserved_products_sha256": "42ec6b37d6e2b903510dbf38b839b19cec732b78e9a1d94b7d0900321576267c",
+      "preserved_group_refs": [
+        [
+          "p6",
+          "p1"
+        ],
+        [
+          "p4",
+          "p3"
+        ],
+        [
+          "p2",
+          "p5"
+        ]
+      ]
+    },
+    {
+      "slug": "beginner-friendly-coffee-makers",
+      "sequence": 16,
+      "qa": "PASS_CHANGED_PARTS_ONLY",
+      "approval": "PENDING_CEO_PORTAL",
+      "production": "UNCHANGED",
+      "edited_fields": [
+        "lead",
+        "summary",
+        "toc_and_h2_0",
+        "toc_and_h2_1",
+        "toc_and_h2_2"
+      ],
+      "files": [
+        {
+          "path": "article/gadget/beginner-friendly-coffee-makers.html",
+          "before_sha256": "262d9ace65c576935199ca377e5239618b378b304d863a793bd71d71c09a2bd1",
+          "after_sha256": "57f31bd8c9868fe52869462e5679acdc4c57ea1738130f3e38e0596c8ec6f91d"
+        }
+      ],
+      "claim_support": "No product claims added. Preserved price grouping, removed price-quality hierarchy.",
+      "attention": [
+        "No structured evidence available. Existing individual product claims not recertified."
+      ],
+      "preserved_html_signature": "5a3fb11c04db02fd2a62edd98effc749df78d6dd247bd44cfd540e06e60e9820"
+    },
+    {
+      "slug": "best-cooking-tools-6-selection",
+      "sequence": 17,
+      "qa": "PASS_CHANGED_PARTS_ONLY",
+      "approval": "PENDING_CEO_PORTAL",
+      "production": "UNCHANGED",
+      "edited_fields": [
+        "summary",
+        "toc_and_h2_0",
+        "toc_and_h2_1",
+        "toc_and_h2_2"
+      ],
+      "files": [
+        {
+          "path": "article/dailygoods/best-cooking-tools-6-selection.html",
+          "before_sha256": "529132967a9ceaf910639576816cc9b52850d1bf0299ab16cc6dff37067f2a99",
+          "after_sha256": "ec0236d3711b20abf5b837ffb2b86471822ca95d5753c441354823f92ade94e7"
+        }
+      ],
+      "claim_support": "No product claims added. Preserved price grouping, removed price-quality hierarchy.",
+      "attention": [
+        "No structured evidence available. Existing individual product claims not recertified."
+      ],
+      "preserved_html_signature": "2ba79890f56e821e53181b96eab61fa6cc9bc4e3b74a9e7937430ad96b6a3c61"
+    },
+    {
+      "slug": "best-face-powders-6-picks",
+      "sequence": 18,
+      "qa": "PASS_CHANGED_PARTS_ONLY",
+      "approval": "PENDING_CEO_PORTAL",
+      "production": "UNCHANGED",
+      "edited_fields": [
+        "summary",
+        "toc_and_h2_0",
+        "toc_and_h2_1",
+        "toc_and_h2_2"
+      ],
+      "files": [
+        {
+          "path": "article/beauty/best-face-powders-6-picks.html",
+          "before_sha256": "e3c6e34614eae6bdb7739c3ac2b83f6dff1baf31d6cf8f588a2d1218adab3241",
+          "after_sha256": "0e06abdbdc7f6405c4dfdc8fc0231aa8214499a3639d692a1abbce14dc6ad49b"
+        }
+      ],
+      "claim_support": "No product claims added. Preserved price grouping, removed price-quality hierarchy.",
+      "attention": [
+        "No structured evidence available. Existing individual product claims not recertified."
+      ],
+      "preserved_html_signature": "c5fc7f80b30fa6c4efa515d8a2998af53fc38bbac7988cfa525207ae12e1f04a"
+    },
+    {
+      "slug": "best-high-quality-earphones-6-picks",
+      "sequence": 19,
+      "qa": "PASS_CHANGED_PARTS_ONLY",
+      "approval": "PENDING_CEO_PORTAL",
+      "production": "UNCHANGED",
+      "edited_fields": [
+        "toc_and_h2_1",
+        "toc_and_h2_2"
+      ],
+      "files": [
+        {
+          "path": "article/gadget/best-high-quality-earphones-6-picks.html",
+          "before_sha256": "ff90c8efe9e1991c7afd033d39fd62c4f784a6b6b7e175ba9e84cf4b332655a1",
+          "after_sha256": "7d95c90d9870fbecb3eac0065281e3fafcae1187f71a4b99c5f01a5e059fccd4"
+        }
+      ],
+      "claim_support": "No product claims added. Preserved price grouping, removed price-quality hierarchy.",
+      "attention": [
+        "No structured evidence available. Existing individual product claims not recertified."
+      ],
+      "preserved_html_signature": "a03fa725756fbfabe968d3f253b5b17a79eda3d2cefabb3bc2a6eb0a67106d59"
+    },
+    {
+      "slug": "ceiling-lights-6-picks",
+      "sequence": 22,
+      "qa": "PASS_CHANGED_PARTS_ONLY",
+      "approval": "PENDING_CEO_PORTAL",
+      "production": "UNCHANGED",
+      "edited_fields": [
+        "lead",
+        "summary",
+        "comparison_groups[0].title",
+        "comparison_groups[0].angle",
+        "comparison_groups[1].title",
+        "comparison_groups[1].angle",
+        "comparison_groups[2].title",
+        "comparison_groups[2].angle",
+        "html.toc_heading"
+      ],
+      "files": [
+        {
+          "path": "article/gadget/ceiling-lights-6-picks.html",
+          "before_sha256": "1b2bbf889d581ddfc355cfe897d7a07d233c7f8f5d4ffdc46625ea10004ff2f5",
+          "after_sha256": "bfcd4348c9be777faf88131160b6fecee91469aa88fe34a7e5250b47cdb98336"
+        },
+        {
+          "path": "data/payloads/ceiling-lights-6-picks.json",
+          "before_sha256": "468392c9aeec3ba8a34d821caf75c55c54de6fef0565e03a3f1c9f6fc3876f4e",
+          "after_sha256": "42cefae39ed6176ae9fa874f56ac8b7e78ab60a82ccb873767b31b04981386c9"
+        }
+      ],
+      "claim_support": "Evidence amazon_title: KOVOL room sizes6/8/10; Doshisha20; standard stepless dim/color; YAMAZEN10 steps off timer LCG12; Iris round CEAA12DLP; sgledcldp12bk remote. No brand reliability superiority or efficiency claim added.",
+      "attention": [
+        "既存本文の性能等は再認証未実施。変更部分限定QA。"
+      ],
+      "preserved_html_signature": "c5d5fb9d1735892d99f836e6b1143d908960de18f8467f49ba88f61b8d0fc1a3",
+      "preserved_products_sha256": "2b8724df7f9e10e0d92c455b2492f4ba7e5538698d5e188d1e04d0c71c41c644",
+      "preserved_group_refs": [
+        [
+          "p1",
+          "p3"
+        ],
+        [
+          "p2",
+          "p4"
+        ],
+        [
+          "p5",
+          "p6"
+        ]
+      ]
+    },
+    {
+      "slug": "christmas-gift-wrapping-supplies-6-picks",
+      "sequence": 23,
+      "qa": "PASS_CHANGED_PARTS_ONLY",
+      "approval": "PENDING_CEO_PORTAL",
+      "production": "UNCHANGED",
+      "edited_fields": [
+        "summary",
+        "comparison_groups[0].angle",
+        "comparison_groups[1].angle",
+        "comparison_groups[2].angle",
+        "html.toc_heading"
+      ],
+      "files": [
+        {
+          "path": "article/dailygoods/christmas-gift-wrapping-supplies-6-picks.html",
+          "before_sha256": "ca43553c4a6f41f57ebdb2ea32394b4012fec038e42f1407bab32c39c27dda59",
+          "after_sha256": "98ae1797e7d87483e8ad639819a546b8349f8656373e169a277f95d99f37e5d2"
+        },
+        {
+          "path": "data/payloads/christmas-gift-wrapping-supplies-6-picks.json",
+          "before_sha256": "0e4e774b38cfa7183f8fee34bc42d47fa215d7d510e425cfd43294d1882cbe4c",
+          "after_sha256": "7126e9ced0ba5c92d41fc316705a85fd5a4541b8dd0978645fa99df1ae8f20cd"
+        }
+      ],
+      "claim_support": "Evidence ASIN order exactly matches HTML six cards. Product title: p4 red Santa ribbon; p5 CCINEE craft tree/reindeer; p1 setA p3 setC; p2 large3; p6 3sizes5colors. Existing useful lead/titles retained.",
+      "attention": [
+        "既存商品本文は再認証未実施。変更部分限定QA。"
+      ],
+      "preserved_html_signature": "9cd8ff423085ac4a173ec7b6e759579174041e944da334155e4afded1780831a",
+      "preserved_products_sha256": "71a13b06c33a99bfc1b411c60b117b63875d528b4f6b7b0a56fdf99b8d75f56e",
+      "preserved_group_refs": [
+        [
+          "p4",
+          "p5"
+        ],
+        [
+          "p1",
+          "p3"
+        ],
+        [
+          "p2",
+          "p6"
+        ]
+      ]
+    }
+  ],
+  "scope_note": "Only changed editorial portions independently reviewed. Existing claims are not recertified. No approval or production completion implied."
+}

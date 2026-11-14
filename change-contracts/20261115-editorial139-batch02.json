@@ -1,0 +1,41 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "TASK-BU002-EDITORIAL-139-RECOVERY-20261115",
+  "instruction_ref": "CEO formal editorial139 instruction 20261115 and direct COO execution correction",
+  "instruction": "Edit only approved139 wording/editorial targets sequentially. Preserve six products, ordering, URLs, HTML layout, CSS and images. No fabricated claims; retain useful comparison. No publication until new CEO portal approval. Batch02 contains nine baseline-matched reviewed candidates only; other articles excluded.",
+  "implementer": "COO direct manual editorial work; independent changed-portions QA",
+  "canonical_refs": [
+    "https://github.com/KickstartCoJP/sellemy",
+    "TASK-BU002-EDITORIAL-139-RECOVERY-20261115"
+  ],
+  "allowed_paths": [
+    "article/beauty/autumn-hair-dryers-6-picks.html",
+    "article/beauty/bb-cc-creams-6-picks.html",
+    "article/beauty/best-face-powders-6-picks.html",
+    "article/dailygoods/bathroom-mold-removers-6-picks.html",
+    "article/dailygoods/best-cooking-tools-6-selection.html",
+    "article/dailygoods/christmas-gift-wrapping-supplies-6-picks.html",
+    "article/gadget/beginner-friendly-coffee-makers.html",
+    "article/gadget/best-high-quality-earphones-6-picks.html",
+    "article/gadget/ceiling-lights-6-picks.html",
+    "change-contracts/20261115-editorial139-batch02.json",
+    "data/payloads/autumn-hair-dryers-6-picks.json",
+    "data/payloads/bathroom-mold-removers-6-picks.json",
+    "data/payloads/bb-cc-creams-6-picks.json",
+    "data/payloads/ceiling-lights-6-picks.json",
+    "data/payloads/christmas-gift-wrapping-supplies-6-picks.json",
+    "reports/editorial139-batch02-20261115.json",
+    "tests/test_editorial139_batch02.py"
+  ],
+  "preserved_rules": [
+    "No runtime/pipeline or workflow changes",
+    "No product reselection; same six products and order, images and URLs",
+    "No layouts/CSS changed; only reviewed editorial text and description metadata",
+    "Existing passed content untouched; existing factual claims not recertified",
+    "CEO portal approval required; no self-approval or merge",
+    "Excluded25 replan and legacy436 not processed"
+  ],
+  "acceptance_tests": [
+    "tests/test_editorial139_batch02.py"
+  ]
+}
