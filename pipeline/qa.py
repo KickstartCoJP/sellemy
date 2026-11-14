@@ -10,9 +10,9 @@ from category_metadata import get_category
 # payload/evidence pair that produced it. It is intentionally separate from
 # review_gate.py's content-integrity checks (which run first, before this QA pass).
 
-LEAD_RANGE = (180, 230)
-SUMMARY_RANGE = (130, 170)
-HOW_TO_CHOOSE_RANGE = (190, 270)
+LEAD_MIN = 180
+SUMMARY_MIN = 130
+HOW_TO_CHOOSE_MIN = 190
 DESCRIPTION_TARGET_RANGE = (160, 260)  # Product-specific editorial target.
 DESCRIPTION_HARD_MIN = 160
 H3_LEN_RANGE = (6, 45)
@@ -121,7 +121,7 @@ def run_qa(html: str, payload: dict, evidence: dict, *, acceptance: dict | None 
     results: dict = {'semantic_acceptance_pass': not issues, 'semantic_acceptance_issues': issues}
 
     results['lead_len'] = len(payload['lead'])
-    results['lead_in_range'] = check_range(results['lead_len'], LEAD_RANGE)
+    results['lead_in_range'] = results['lead_len'] >= LEAD_MIN
     # Reject exact, identifiable brand names in the introduction; generic product
     # class words (e.g. electronic writing tablet) are allowed.
     brands = {str(p.get('brand') or '').strip() for p in evidence.get('products', [])}
@@ -133,9 +133,9 @@ def run_qa(html: str, payload: dict, evidence: dict, *, acceptance: dict | None 
     results['conclusion_brand_hits'] = sorted(b for b in brands if b.casefold() in payload['conclusion'].casefold())
     results['conclusion_brand_free_pass'] = not results['conclusion_brand_hits']
     results['summary_len'] = len(payload['summary'])
-    results['summary_in_range'] = check_range(results['summary_len'], SUMMARY_RANGE)
+    results['summary_in_range'] = results['summary_len'] >= SUMMARY_MIN
     results['how_to_choose_len'] = len(payload['how_to_choose'])
-    results['how_to_choose_in_range'] = check_range(results['how_to_choose_len'], HOW_TO_CHOOSE_RANGE)
+    results['how_to_choose_in_range'] = results['how_to_choose_len'] >= HOW_TO_CHOOSE_MIN
     results['main_len'] = main_text_length(html)
 
     descriptions = [p['description'] for p in payload['products']]

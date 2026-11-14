@@ -120,7 +120,7 @@ def _prompt(topic: dict, evidence: dict, *, previous_payload: dict | None = None
         '読者が商品を選びやすくなる、自然な、読んで楽しい文章を書いてください。ブランドイメージを最重視し、監査報告書、説明書、仕様書のような文章にしないでください。\\n\\n'
         '6つの商品カセット以外には、具体的な商品名、ブランド名、商品そのものの説明をしないでください。また、事実や使用経験を創作しないでください。\\n\\n'
         '導入文は商品の用途・読者が得られる価値と比較ポイントを自然に伝えてください。困りごとや具体的な利用シーンを無理に設定する必要はありません。用途・特徴・選定ポイントから直接始めても構いません。架空の体験談や不自然な状況設定を避けてください。比較記事であることを毎回宣言する必要はありません。家電・ガジェットでは「比べます」も自然に使えます。美容・コスメでは機械的な比較宣言を避け、カテゴリと文脈に合う自然な導入を選んでください。\\n\\n'
-        '導入文leadは日本語180〜230文字、推奨200〜210文字にしてください。確認できない商品の形状・端子位置・性能差を推測で記述しないでください。\\n\\n'
+        '導入文leadは日本語180文字以上にしてください。上限は設けず、内容に必要な分量で自然に書いてください。確認できない商品の形状・端子位置・性能差を推測で記述しないでください。\\n\\n'
         '結びも商品名は記載せず、自然に短く締めてください。結びで比較済み機能・スペック・商品別条件を再列挙せず、読者が自分の用途に合う一台を選ぶ気持ちになれる自然な一文で締めてください。\\n\\n'
         '商品カセットでは、6つの異なる商品を2商品ずつ3組に構成してください。各商品について、検証済みの固有の特徴、向く人、選ぶ理由、他候補と異なる点を具体的に説明してください。各商品説明の目安は160〜260字で、字数合わせの水増しは不要です。\\n\\n'
         '文脈を壊す不用意な水増し文章、定型的な注意書き、内部QA用語、不要な仕様説明を書かないでください。slug、category、商品参照IDを維持してください。\\n\\n'
@@ -136,11 +136,12 @@ def _prompt(topic: dict, evidence: dict, *, previous_payload: dict | None = None
         failures = gate_feedback.get('qa_failures') or {}
         # Overall article length is a soft editorial guide, never a numeric QA failure.
         # A short draft must be revised only for substantive issues identified by QA.
-        for field, low, high in (('summary',130,170),('how_to_choose',190,270)):
+        for field, minimum in (('summary',130),('how_to_choose',190)):
             length = measures.get(field + '_len')
-            if isinstance(length,int) and failures.get(field + '_in_range') is False:
+            if (isinstance(length,int) and length < minimum
+                    and failures.get(field + '_in_range') is False):
                 prompt += (f'\nCRITICAL {field} LENGTH: prior {length}, required '
-                           f'{low}-{high}, aim {low + (high-low)//2}; revise this field.\n')
+                           f'at least {minimum} characters; revise this field without padding.\n')
     persona=topic.get('reader_persona') if isinstance(topic,dict) else None
     if isinstance(persona,dict):
         prompt += '\nREADER_PERSONA (follow this reader through introduction, terminology and recommendation): '+json.dumps(persona,ensure_ascii=False)+'\n'
@@ -154,7 +155,7 @@ def _prompt(topic: dict, evidence: dict, *, previous_payload: dict | None = None
         failed = gate_feedback.get('qa_failures') or {}
         semantic = gate_feedback.get('semantic_review') or {}
         if failed.get('lead_in_range') is False:
-            prompt += '\nMANDATORY: Rewrite lead to 200-210 Japanese characters (allowed 180-230).\n'
+            prompt += '\nMANDATORY: Rewrite lead to at least 180 Japanese characters, with no upper limit or padding.\n'
         if failed.get('semantic_acceptance_pass') is False:
             prompt += ('\nMANDATORY: Correct the cited semantic QA failure, do not invent an unsupported differentiator. '
                        'Every product-specific advantage must appear in its verified source. '
