@@ -26,6 +26,16 @@ class CategorySemanticTests(unittest.TestCase):
         self.assertEqual(report['counts']['public_mappings_approved'],0)
         self.assertTrue(all(not a['public_mapping_approved'] for a in report['articles']))
 
+    def test_source_assignments_have_product_word_or_hold_rationale(self):
+        for genre in ('beauty', 'dailygoods', 'gadget'):
+            p = ROOT/'staging/category-association/source'/f'{genre}.json'
+            data = json.loads(p.read_text())
+            self.assertTrue(data['assignments'])
+            for row in data['assignments']:
+                self.assertTrue(row['reason'])
+                if row['confidence'] == 'high':
+                    self.assertIn('商品語「', row['reason'])
+
     def test_cross_genre_mapping_fails_closed(self):
         target = self.published[0]
         foreign = next(p['id'] for p in self.tax['pillars'] if p['parent_id'] != 'genre:'+self.by_genre[target['category']])

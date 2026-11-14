@@ -168,7 +168,7 @@
       "image_url": "https://www.sellemy.jp/img/best-cooking-tools-6-selection/best-cooking-tools-6-selection.png",
       "pillar_id": "pillar:日用品:kitchen",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「料理」から調理器具・キッチン雑貨候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -181,7 +181,7 @@
       "image_url": "https://www.sellemy.jp/img/enjoy-refreshing-shower-heads-6-picks/enjoy-refreshing-shower-heads-6-picks.png",
       "pillar_id": "pillar:日用品:bath",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「シャワー」からバス・トイレ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -194,7 +194,7 @@
       "image_url": "https://www.sellemy.jp/img/summer-skin-protection-primers-6-choices/summer-skin-protection-primers-6-choices.png",
       "pillar_id": "pillar:美容:makeup",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「primer」からメイクアップ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -207,7 +207,7 @@
       "image_url": "https://www.sellemy.jp/img/after-sun-lotion-6-choices/after-sun-lotion-6-choices.png",
       "pillar_id": "pillar:美容:skin",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「肌」からスキンケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -220,7 +220,7 @@
       "image_url": "https://www.sellemy.jp/img/summer-nail-polish-6-selection/summer-nail-polish-6-selection.png",
       "pillar_id": "pillar:美容:makeup",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「ネイル」からメイクアップ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -233,7 +233,7 @@
       "image_url": "https://www.sellemy.jp/img/cool-bedding-6-selection/cool-bedding-6-selection.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -246,7 +246,7 @@
       "image_url": "https://www.sellemy.jp/img/best-vitamin-e-serums-for-summer/best-vitamin-e-serums-for-summer.png",
       "pillar_id": "pillar:美容:skin",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「肌」からスキンケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -259,7 +259,7 @@
       "image_url": "https://www.sellemy.jp/img/foot-massagers-for-summer-relaxation-6-picks/foot-massagers-for-summer-relaxation-6-picks.png",
       "pillar_id": "pillar:日用品:health",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「マッサージ」から健康・セルフケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -272,7 +272,7 @@
       "image_url": "https://www.sellemy.jp/img/stay-cool-at-home-6-best-evaporative-coolers/stay-cool-at-home-6-best-evaporative-coolers.png",
       "pillar_id": "pillar:家電:climate",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「冷風扇」から空調・季節家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -285,7 +285,7 @@
       "image_url": "https://www.sellemy.jp/img/high-performance-air-circulators-6/high-performance-air-circulators-6.png",
       "pillar_id": "pillar:家電:climate",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「空気」から空調・季節家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -298,7 +298,7 @@
       "image_url": "https://www.sellemy.jp/img/sleep-aid-devices-6-selection/sleep-aid-devices-6-selection.png",
       "pillar_id": "pillar:家電:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「その他家電」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -311,7 +311,7 @@
       "image_url": "https://www.sellemy.jp/img/home-projectors-6-recommendations/home-projectors-6-recommendations.png",
       "pillar_id": "pillar:家電:av",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「projector」からテレビ・オーディオ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -324,7 +324,7 @@
       "image_url": "https://www.sellemy.jp/img/best-high-quality-earphones-6-picks/best-high-quality-earphones-6-picks.png",
       "pillar_id": "pillar:家電:av",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「earphone」からテレビ・オーディオ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -337,7 +337,7 @@
       "image_url": "https://www.sellemy.jp/img/best-face-powders-6-picks/best-face-powders-6-picks.png",
       "pillar_id": "pillar:美容:makeup",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「パウダー」からメイクアップ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -363,7 +363,7 @@
       "image_url": "https://www.sellemy.jp/img/cool-towels-for-summer-6-picks/cool-towels-for-summer-6-picks.png",
       "pillar_id": "pillar:日用品:daily",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「タオル」から衛生・生活ケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -376,7 +376,7 @@
       "image_url": "https://www.sellemy.jp/img/enjoy-summer-portable-fans-6-picks/enjoy-summer-portable-fans-6-picks.png",
       "pillar_id": "pillar:家電:climate",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「扇風機」から空調・季節家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -389,7 +389,7 @@
       "image_url": "https://www.sellemy.jp/img/easy-aroma-candles-6-picks/easy-aroma-candles-6-picks.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -402,7 +402,7 @@
       "image_url": "https://www.sellemy.jp/img/summer-refresh-body-scrubs-6-picks/summer-refresh-body-scrubs-6-picks.png",
       "pillar_id": "pillar:美容:body",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「body-」からボディ・フットケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -415,7 +415,7 @@
       "image_url": "https://www.sellemy.jp/img/summer-comfort-fan-selection/summer-comfort-fan-selection.png",
       "pillar_id": "pillar:家電:climate",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「fan-」から空調・季節家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -428,7 +428,7 @@
       "image_url": "https://www.sellemy.jp/img/comfortable-morning-toasters/comfortable-morning-toasters.png",
       "pillar_id": "pillar:家電:kitchen_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「トースタ」からキッチン家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -441,7 +441,7 @@
       "image_url": "https://www.sellemy.jp/img/air-purifiers-top-6/air-purifiers-top-6.png",
       "pillar_id": "pillar:家電:climate",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「空気」から空調・季節家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -454,7 +454,7 @@
       "image_url": "https://www.sellemy.jp/img/summer-sunscreen-top6/summer-sunscreen-top6.png",
       "pillar_id": "pillar:美容:skin",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「日焼け」からスキンケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -467,7 +467,7 @@
       "image_url": "https://www.sellemy.jp/img/beginner-friendly-coffee-makers/beginner-friendly-coffee-makers.png",
       "pillar_id": "pillar:家電:kitchen_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「コーヒー」からキッチン家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -480,7 +480,7 @@
       "image_url": "https://www.sellemy.jp/img/mineral-foundation-six-selection/mineral-foundation-six-selection.png",
       "pillar_id": "pillar:美容:makeup",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「foundation」からメイクアップ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -493,7 +493,7 @@
       "image_url": "https://www.sellemy.jp/img/must-have-kitchen-appliances/must-have-kitchen-appliances.png",
       "pillar_id": "pillar:家電:kitchen_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「kitchen」からキッチン家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -506,7 +506,7 @@
       "image_url": "https://www.sellemy.jp/img/seasonal-moisturizing-creams-6/seasonal-moisturizing-creams-6.png",
       "pillar_id": "pillar:美容:skin",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「保湿」からスキンケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -532,7 +532,7 @@
       "image_url": "https://www.sellemy.jp/img/home-relaxation-goods-6-selection/home-relaxation-goods-6-selection.png",
       "pillar_id": "pillar:日用品:health",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「リラックス」から健康・セルフケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -545,7 +545,7 @@
       "image_url": "https://www.sellemy.jp/img/smart-home-appliances-top-6/smart-home-appliances-top-6.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「smart-」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -558,7 +558,7 @@
       "image_url": "https://www.sellemy.jp/img/eco-friendly-detergents-6picks/eco-friendly-detergents-6picks.png",
       "pillar_id": "pillar:日用品:laundry",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「detergent」から洗濯・掃除候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -571,7 +571,7 @@
       "image_url": "https://www.sellemy.jp/img/vitamin-c-serums/vitamin-c-serums.png",
       "pillar_id": "pillar:美容:skin",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「serum」からスキンケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -584,7 +584,7 @@
       "image_url": "https://www.sellemy.jp/img/cordless-vacuum-cleaners-6-picks/cordless-vacuum-cleaners-6-picks.png",
       "pillar_id": "pillar:家電:household_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「掃除」から生活家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -597,7 +597,7 @@
       "image_url": "https://www.sellemy.jp/img/robot-vacuum-cleaners-6-picks/robot-vacuum-cleaners-6-picks.png",
       "pillar_id": "pillar:家電:household_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「掃除」から生活家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -610,7 +610,7 @@
       "image_url": "https://www.sellemy.jp/img/electric-kettles-6-picks/electric-kettles-6-picks.png",
       "pillar_id": "pillar:家電:kitchen_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「kettle」からキッチン家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -623,7 +623,7 @@
       "image_url": "https://www.sellemy.jp/img/wireless-speakers-6-picks/wireless-speakers-6-picks.png",
       "pillar_id": "pillar:家電:av",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「speaker」からテレビ・オーディオ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -636,7 +636,7 @@
       "image_url": "https://www.sellemy.jp/img/mobile-batteries-6-picks/mobile-batteries-6-picks.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「バッテリー」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -649,7 +649,7 @@
       "image_url": "https://www.sellemy.jp/img/usb-c-chargers-6-picks/usb-c-chargers-6-picks.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「USB-」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -662,7 +662,7 @@
       "image_url": "https://www.sellemy.jp/img/led-desk-lights-6-picks/led-desk-lights-6-picks.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「LEDデスク」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -675,7 +675,7 @@
       "image_url": "https://www.sellemy.jp/img/autumn-humidifiers-6-picks/autumn-humidifiers-6-picks.png",
       "pillar_id": "pillar:家電:climate",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「humidif」から空調・季節家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -688,7 +688,7 @@
       "image_url": "https://www.sellemy.jp/img/autumn-hair-loss-care-shampoo-6-picks/autumn-hair-loss-care-shampoo-6-picks.png",
       "pillar_id": "pillar:美容:hair",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「hair」からヘアケア・スタイリング候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -701,7 +701,7 @@
       "image_url": "https://www.sellemy.jp/img/electric-blankets-6-picks/electric-blankets-6-picks.png",
       "pillar_id": "pillar:家電:climate",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「電気毛布」から空調・季節家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -714,7 +714,7 @@
       "image_url": "https://www.sellemy.jp/img/autumn-hand-creams-6-picks/autumn-hand-creams-6-picks.png",
       "pillar_id": "pillar:美容:body",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「ハンドクリーム」からボディ・フットケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -727,7 +727,7 @@
       "image_url": "https://www.sellemy.jp/img/seasonal-clothing-storage-6-picks/seasonal-clothing-storage-6-picks.png",
       "pillar_id": "pillar:日用品:laundry",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「clothing-storage」から洗濯・掃除候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -740,7 +740,7 @@
       "image_url": "https://www.sellemy.jp/img/home-dehumidifiers-6-picks/home-dehumidifiers-6-picks.png",
       "pillar_id": "pillar:家電:climate",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「humidif」から空調・季節家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -753,7 +753,7 @@
       "image_url": "https://www.sellemy.jp/img/autumn-lip-balms-6-picks/autumn-lip-balms-6-picks.png",
       "pillar_id": "pillar:美容:makeup",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「lip-」からメイクアップ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -766,7 +766,7 @@
       "image_url": "https://www.sellemy.jp/img/autumn-facial-toners-6-picks/autumn-facial-toners-6-picks.png",
       "pillar_id": "pillar:美容:skin",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「肌」からスキンケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -779,7 +779,7 @@
       "image_url": "https://www.sellemy.jp/img/autumn-hair-dryers-6-picks/autumn-hair-dryers-6-picks.png",
       "pillar_id": "pillar:美容:hair",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「hair」からヘアケア・スタイリング候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -792,7 +792,7 @@
       "image_url": "https://www.sellemy.jp/img/ceramic-fan-heaters-6-picks/ceramic-fan-heaters-6-picks.png",
       "pillar_id": "pillar:家電:climate",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「fan-」から空調・季節家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -805,7 +805,7 @@
       "image_url": "https://www.sellemy.jp/img/home-hot-plates-6-picks/home-hot-plates-6-picks.png",
       "pillar_id": "pillar:家電:kitchen_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「hot-plate」からキッチン家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -818,7 +818,7 @@
       "image_url": "https://www.sellemy.jp/img/compact-dishwashers-6-picks/compact-dishwashers-6-picks.png",
       "pillar_id": "pillar:家電:kitchen_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「dishwasher」からキッチン家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -831,7 +831,7 @@
       "image_url": "https://www.sellemy.jp/img/kotatsu-6-picks/kotatsu-6-picks.png",
       "pillar_id": "pillar:家電:climate",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「こたつ」から空調・季節家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -844,7 +844,7 @@
       "image_url": "https://www.sellemy.jp/img/usb-hand-warmers-6-picks/usb-hand-warmers-6-picks.png",
       "pillar_id": "pillar:家電:climate",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「カイロ」から空調・季節家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -857,7 +857,7 @@
       "image_url": "https://www.sellemy.jp/img/fitness-smartwatches-6-picks/fitness-smartwatches-6-picks.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「スマート」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -870,7 +870,7 @@
       "image_url": "https://www.sellemy.jp/img/futon-dryers-6-picks/futon-dryers-6-picks.png",
       "pillar_id": "pillar:家電:household_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「乾燥機」から生活家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -883,7 +883,7 @@
       "image_url": "https://www.sellemy.jp/img/rice-cookers-6-picks/rice-cookers-6-picks.png",
       "pillar_id": "pillar:家電:kitchen_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「cooker」からキッチン家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -896,7 +896,7 @@
       "image_url": "https://www.sellemy.jp/img/electric-toothbrushes-6-picks/electric-toothbrushes-6-picks.png",
       "pillar_id": "pillar:家電:household_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「電動歯」から生活家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -909,7 +909,7 @@
       "image_url": "https://www.sellemy.jp/img/air-fryers-6-picks/air-fryers-6-picks.png",
       "pillar_id": "pillar:家電:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「その他家電」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -922,7 +922,7 @@
       "image_url": "https://www.sellemy.jp/img/autumn-moisturizing-sheet-masks-6-picks/autumn-moisturizing-sheet-masks-6-picks.png",
       "pillar_id": "pillar:美容:skin",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「保湿」からスキンケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -935,7 +935,7 @@
       "image_url": "https://www.sellemy.jp/img/electric-pressure-cookers-6-picks/electric-pressure-cookers-6-picks.png",
       "pillar_id": "pillar:家電:kitchen_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「cooker」からキッチン家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -948,7 +948,7 @@
       "image_url": "https://www.sellemy.jp/img/facial-beauty-devices-6-picks/facial-beauty-devices-6-picks.png",
       "pillar_id": "pillar:美容:beauty_device",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「美顔器」から美容機器・美容道具候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -961,7 +961,7 @@
       "image_url": "https://www.sellemy.jp/img/portable-power-stations-6-picks/portable-power-stations-6-picks.png",
       "pillar_id": "pillar:家電:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「その他家電」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -974,7 +974,7 @@
       "image_url": "https://www.sellemy.jp/img/electric-shavers-6-picks/electric-shavers-6-picks.png",
       "pillar_id": "pillar:家電:household_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「シェーバ」から生活家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -987,7 +987,7 @@
       "image_url": "https://www.sellemy.jp/img/electric-carpets-6-picks/electric-carpets-6-picks.png",
       "pillar_id": "pillar:家電:climate",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「ホットカーペット」から空調・季節家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1000,7 +1000,7 @@
       "image_url": "https://www.sellemy.jp/img/down-comforters-6-picks/down-comforters-6-picks.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -1013,7 +1013,7 @@
       "image_url": "https://www.sellemy.jp/img/autumn-hair-irons-6-picks/autumn-hair-irons-6-picks.png",
       "pillar_id": "pillar:美容:hair",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「hair」からヘアケア・スタイリング候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1039,7 +1039,7 @@
       "image_url": "https://www.sellemy.jp/img/panel-heaters-6-picks/panel-heaters-6-picks.png",
       "pillar_id": "pillar:家電:climate",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「heater」から空調・季節家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1065,7 +1065,7 @@
       "image_url": "https://www.sellemy.jp/img/massage-guns-6-picks/massage-guns-6-picks.png",
       "pillar_id": "pillar:家電:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「その他家電」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -1078,7 +1078,7 @@
       "image_url": "https://www.sellemy.jp/img/e-book-readers-6-picks/e-book-readers-6-picks.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「電子書籍」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1091,7 +1091,7 @@
       "image_url": "https://www.sellemy.jp/img/wireless-chargers-6-picks/wireless-chargers-6-picks.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「充電」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1104,7 +1104,7 @@
       "image_url": "https://www.sellemy.jp/img/smart-rings-6-picks/smart-rings-6-picks.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「smart-」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1117,7 +1117,7 @@
       "image_url": "https://www.sellemy.jp/img/noise-cancelling-earbuds-6-picks/noise-cancelling-earbuds-6-picks.png",
       "pillar_id": "pillar:家電:av",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「earbud」からテレビ・オーディオ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1130,7 +1130,7 @@
       "image_url": "https://www.sellemy.jp/img/home-security-cameras-6-picks/home-security-cameras-6-picks.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「camera」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1143,7 +1143,7 @@
       "image_url": "https://www.sellemy.jp/img/dash-cameras-6-picks/dash-cameras-6-picks.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「ドライブ」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1156,7 +1156,7 @@
       "image_url": "https://www.sellemy.jp/img/sweet-potato-makers-6-picks/sweet-potato-makers-6-picks.png",
       "pillar_id": "pillar:家電:kitchen_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「maker」からキッチン家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1169,7 +1169,7 @@
       "image_url": "https://www.sellemy.jp/img/autumn-winter-face-masks-6-picks/autumn-winter-face-masks-6-picks.png",
       "pillar_id": "pillar:日用品:health",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「感染」から健康・セルフケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1182,7 +1182,7 @@
       "image_url": "https://www.sellemy.jp/img/autumn-bath-salts-6-picks/autumn-bath-salts-6-picks.png",
       "pillar_id": "pillar:美容:body",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「入浴」からボディ・フットケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1195,7 +1195,7 @@
       "image_url": "https://www.sellemy.jp/img/garment-steamers-6-picks/garment-steamers-6-picks.png",
       "pillar_id": "pillar:家電:household_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「衣類スチーマ」から生活家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1208,7 +1208,7 @@
       "image_url": "https://www.sellemy.jp/img/portable-ssd-6-picks/portable-ssd-6-picks.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「SSD」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1221,7 +1221,7 @@
       "image_url": "https://www.sellemy.jp/img/disposable-hand-warmers-6-picks/disposable-hand-warmers-6-picks.png",
       "pillar_id": "pillar:日用品:health",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「カイロ」から健康・セルフケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1234,7 +1234,7 @@
       "image_url": "https://www.sellemy.jp/img/home-bakery-bread-makers-6-picks/home-bakery-bread-makers-6-picks.png",
       "pillar_id": "pillar:家電:kitchen_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「maker」からキッチン家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1247,7 +1247,7 @@
       "image_url": "https://www.sellemy.jp/img/ceiling-lights-6-picks/ceiling-lights-6-picks.png",
       "pillar_id": "pillar:家電:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「その他家電」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -1260,7 +1260,7 @@
       "image_url": "https://www.sellemy.jp/img/gray-hair-color-treatments-6-picks/gray-hair-color-treatments-6-picks.png",
       "pillar_id": "pillar:美容:hair",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「hair」からヘアケア・スタイリング候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1273,7 +1273,7 @@
       "image_url": "https://www.sellemy.jp/img/microwave-ovens-6-picks/microwave-ovens-6-picks.png",
       "pillar_id": "pillar:家電:kitchen_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「電子レンジ」からキッチン家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1286,7 +1286,7 @@
       "image_url": "https://www.sellemy.jp/img/emergency-backpacks-6-picks/emergency-backpacks-6-picks.png",
       "pillar_id": "pillar:日用品:security",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「emergency」から防犯・防災候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1299,7 +1299,7 @@
       "image_url": "https://www.sellemy.jp/img/eye-creams-for-autumn-dryness-6-picks/eye-creams-for-autumn-dryness-6-picks.png",
       "pillar_id": "pillar:美容:skin",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「クリーム」からスキンケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1312,7 +1312,7 @@
       "image_url": "https://www.sellemy.jp/img/bone-conduction-earphones-6-picks/bone-conduction-earphones-6-picks.png",
       "pillar_id": "pillar:家電:av",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「earphone」からテレビ・オーディオ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1325,7 +1325,7 @@
       "image_url": "https://www.sellemy.jp/img/autumn-body-lotions-6-picks/autumn-body-lotions-6-picks.png",
       "pillar_id": "pillar:美容:body",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「body-」からボディ・フットケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1338,7 +1338,7 @@
       "image_url": "https://www.sellemy.jp/img/insulated-tumblers-for-autumn-6-picks/insulated-tumblers-for-autumn-6-picks.png",
       "pillar_id": "pillar:日用品:table",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「タンブラー」から食器・弁当候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1351,7 +1351,7 @@
       "image_url": "https://www.sellemy.jp/img/body-composition-scales-6-picks/body-composition-scales-6-picks.png",
       "pillar_id": "pillar:家電:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「その他家電」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -1390,7 +1390,7 @@
       "image_url": "https://www.sellemy.jp/img/autumn-gentle-face-cleansers-6-picks/autumn-gentle-face-cleansers-6-picks.png",
       "pillar_id": "pillar:美容:skin",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「face-」からスキンケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1403,7 +1403,7 @@
       "image_url": "https://www.sellemy.jp/img/autumn-eyeshadow-palettes-6-picks/autumn-eyeshadow-palettes-6-picks.png",
       "pillar_id": "pillar:美容:makeup",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「eyeshadow」からメイクアップ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1416,7 +1416,7 @@
       "image_url": "https://www.sellemy.jp/img/autumn-lip-colors-6-picks/autumn-lip-colors-6-picks.png",
       "pillar_id": "pillar:美容:makeup",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「lip-」からメイクアップ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1429,7 +1429,7 @@
       "image_url": "https://www.sellemy.jp/img/dust-mite-vacuum-cleaners-6-picks/dust-mite-vacuum-cleaners-6-picks.png",
       "pillar_id": "pillar:家電:household_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「vacuum」から生活家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1442,7 +1442,7 @@
       "image_url": "https://www.sellemy.jp/img/autumn-nail-colors-6-picks/autumn-nail-colors-6-picks.png",
       "pillar_id": "pillar:美容:makeup",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「ネイル」からメイクアップ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1468,7 +1468,7 @@
       "image_url": "https://www.sellemy.jp/img/mascaras-6-picks/mascaras-6-picks.png",
       "pillar_id": "pillar:美容:makeup",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「mascara」からメイクアップ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1481,7 +1481,7 @@
       "image_url": "https://www.sellemy.jp/img/aroma-diffusers-6-picks/aroma-diffusers-6-picks.png",
       "pillar_id": "pillar:家電:climate",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「アロマディフューザ」から空調・季節家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1494,7 +1494,7 @@
       "image_url": "https://www.sellemy.jp/img/usb-desktop-humidifiers-6-picks/usb-desktop-humidifiers-6-picks.png",
       "pillar_id": "pillar:家電:climate",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「humidif」から空調・季節家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1507,7 +1507,7 @@
       "image_url": "https://www.sellemy.jp/img/electric-heated-mattress-pads-6-picks/electric-heated-mattress-pads-6-picks.png",
       "pillar_id": "pillar:家電:climate",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「電気敷きパッド」から空調・季節家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1520,7 +1520,7 @@
       "image_url": "https://www.sellemy.jp/img/electric-neck-warmers-6-picks/electric-neck-warmers-6-picks.png",
       "pillar_id": "pillar:家電:climate",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「ネックウォーマ」から空調・季節家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1533,7 +1533,7 @@
       "image_url": "https://www.sellemy.jp/img/compact-clothes-dryers-6-picks/compact-clothes-dryers-6-picks.png",
       "pillar_id": "pillar:家電:household_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「乾燥機」から生活家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1546,7 +1546,7 @@
       "image_url": "https://www.sellemy.jp/img/portable-monitors-6-picks/portable-monitors-6-picks.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「モニター」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1559,7 +1559,7 @@
       "image_url": "https://www.sellemy.jp/img/neck-shoulder-massagers-6-picks/neck-shoulder-massagers-6-picks.png",
       "pillar_id": "pillar:家電:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「その他家電」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -1572,7 +1572,7 @@
       "image_url": "https://www.sellemy.jp/img/eyelash-serums-6-picks/eyelash-serums-6-picks.png",
       "pillar_id": "pillar:美容:makeup",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「eyelash」からメイクアップ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1585,7 +1585,7 @@
       "image_url": "https://www.sellemy.jp/img/autumn-perfumes-6-picks/autumn-perfumes-6-picks.png",
       "pillar_id": "pillar:美容:fragrance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「perfume」から香水・フレグランス候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1598,7 +1598,7 @@
       "image_url": "https://www.sellemy.jp/img/retinol-serums-6-picks/retinol-serums-6-picks.png",
       "pillar_id": "pillar:美容:skin",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「serum」からスキンケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1611,7 +1611,7 @@
       "image_url": "https://www.sellemy.jp/img/wireless-keyboard-mouse-sets-6-picks/wireless-keyboard-mouse-sets-6-picks.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「keyboard」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1624,7 +1624,7 @@
       "image_url": "https://www.sellemy.jp/img/ergonomic-office-chairs-6-picks/ergonomic-office-chairs-6-picks.png",
       "pillar_id": "pillar:家電:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「その他家電」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -1637,7 +1637,7 @@
       "image_url": "https://www.sellemy.jp/img/monitor-arms-6-picks/monitor-arms-6-picks.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「モニター」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1650,7 +1650,7 @@
       "image_url": "https://www.sellemy.jp/img/leave-in-hair-treatments-6-picks/leave-in-hair-treatments-6-picks.png",
       "pillar_id": "pillar:美容:hair",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「hair」からヘアケア・スタイリング候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1663,7 +1663,7 @@
       "image_url": "https://www.sellemy.jp/img/wifi-routers-6-picks/wifi-routers-6-picks.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「wifi」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1676,7 +1676,7 @@
       "image_url": "https://www.sellemy.jp/img/webcams-6-picks/webcams-6-picks.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「カメラ」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1689,7 +1689,7 @@
       "image_url": "https://www.sellemy.jp/img/gaming-headsets-6-picks/gaming-headsets-6-picks.png",
       "pillar_id": "pillar:家電:av",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「ヘッドセット」からテレビ・オーディオ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1702,7 +1702,7 @@
       "image_url": "https://www.sellemy.jp/img/gaming-mice-6-picks/gaming-mice-6-picks.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「マウス」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1715,7 +1715,7 @@
       "image_url": "https://www.sellemy.jp/img/automatic-folding-umbrellas-6-picks/automatic-folding-umbrellas-6-picks.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -1728,7 +1728,7 @@
       "image_url": "https://www.sellemy.jp/img/kerosene-fan-heaters-6-picks/kerosene-fan-heaters-6-picks.png",
       "pillar_id": "pillar:家電:climate",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「fan-」から空調・季節家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1741,7 +1741,7 @@
       "image_url": "https://www.sellemy.jp/img/hot-sandwich-makers-6-picks/hot-sandwich-makers-6-picks.png",
       "pillar_id": "pillar:家電:kitchen_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「maker」からキッチン家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1754,7 +1754,7 @@
       "image_url": "https://www.sellemy.jp/img/sleep-pillows-6-picks/sleep-pillows-6-picks.png",
       "pillar_id": "pillar:日用品:health",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「枕」から健康・セルフケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1767,7 +1767,7 @@
       "image_url": "https://www.sellemy.jp/img/standing-desks-6-picks/standing-desks-6-picks.png",
       "pillar_id": "pillar:家電:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「その他家電」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -1780,7 +1780,7 @@
       "image_url": "https://www.sellemy.jp/img/cushion-foundations-6-picks/cushion-foundations-6-picks.png",
       "pillar_id": "pillar:美容:makeup",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「foundation」からメイクアップ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1793,7 +1793,7 @@
       "image_url": "https://www.sellemy.jp/img/4k-desktop-monitors-6-picks/4k-desktop-monitors-6-picks.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「モニター」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1806,7 +1806,7 @@
       "image_url": "https://www.sellemy.jp/img/color-contacts-6-picks/color-contacts-6-picks.png",
       "pillar_id": "pillar:美容:makeup",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「カラーコンタクト」からメイクアップ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1819,7 +1819,7 @@
       "image_url": "https://www.sellemy.jp/img/humidifying-air-purifiers-6-picks/humidifying-air-purifiers-6-picks.png",
       "pillar_id": "pillar:家電:climate",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「humidif」から空調・季節家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1832,7 +1832,7 @@
       "image_url": "https://www.sellemy.jp/img/electric-coffee-grinders-6-picks/electric-coffee-grinders-6-picks.png",
       "pillar_id": "pillar:家電:kitchen_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「コーヒー」からキッチン家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1845,7 +1845,7 @@
       "image_url": "https://www.sellemy.jp/img/autumn-cheek-blush-6-picks/autumn-cheek-blush-6-picks.png",
       "pillar_id": "pillar:美容:makeup",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「メイク」からメイクアップ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1871,7 +1871,7 @@
       "image_url": "https://www.sellemy.jp/img/slow-cookers-6-picks/slow-cookers-6-picks.png",
       "pillar_id": "pillar:家電:kitchen_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「cooker」からキッチン家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1884,7 +1884,7 @@
       "image_url": "https://www.sellemy.jp/img/mens-hair-growth-tonics-6-picks/mens-hair-growth-tonics-6-picks.png",
       "pillar_id": "pillar:美容:hair",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「hair」からヘアケア・スタイリング候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1897,7 +1897,7 @@
       "image_url": "https://www.sellemy.jp/img/shoe-dryers-6-picks/shoe-dryers-6-picks.png",
       "pillar_id": "pillar:家電:household_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「乾燥機」から生活家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1910,7 +1910,7 @@
       "image_url": "https://www.sellemy.jp/img/donabe-hot-pot-cookware-6-picks/donabe-hot-pot-cookware-6-picks.png",
       "pillar_id": "pillar:家電:kitchen_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「pot-」からキッチン家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1923,7 +1923,7 @@
       "image_url": "https://www.sellemy.jp/img/drum-washer-dryers-6-picks/drum-washer-dryers-6-picks.png",
       "pillar_id": "pillar:家電:household_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「washer」から生活家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1936,7 +1936,7 @@
       "image_url": "https://www.sellemy.jp/img/home-exercise-bikes-6-picks/home-exercise-bikes-6-picks.png",
       "pillar_id": "pillar:家電:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「その他家電」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -1949,7 +1949,7 @@
       "image_url": "https://www.sellemy.jp/img/personal-blenders-6-picks/personal-blenders-6-picks.png",
       "pillar_id": "pillar:家電:kitchen_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「blender」からキッチン家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1962,7 +1962,7 @@
       "image_url": "https://www.sellemy.jp/img/portable-gas-stoves-6-picks/portable-gas-stoves-6-picks.png",
       "pillar_id": "pillar:家電:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「その他家電」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -1975,7 +1975,7 @@
       "image_url": "https://www.sellemy.jp/img/gaming-monitors-6-picks/gaming-monitors-6-picks.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「モニター」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -1988,7 +1988,7 @@
       "image_url": "https://www.sellemy.jp/img/capsule-coffee-makers-6-picks/capsule-coffee-makers-6-picks.png",
       "pillar_id": "pillar:家電:kitchen_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「コーヒー」からキッチン家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2001,7 +2001,7 @@
       "image_url": "https://www.sellemy.jp/img/concealer-6-picks/concealer-6-picks.png",
       "pillar_id": "pillar:美容:makeup",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「concealer」からメイクアップ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2014,7 +2014,7 @@
       "image_url": "https://www.sellemy.jp/img/water-flossers-6-picks/water-flossers-6-picks.png",
       "pillar_id": "pillar:家電:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「その他家電」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -2027,7 +2027,7 @@
       "image_url": "https://www.sellemy.jp/img/handheld-vacuum-cleaners-6-picks/handheld-vacuum-cleaners-6-picks.png",
       "pillar_id": "pillar:家電:household_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「vacuum」から生活家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2040,7 +2040,7 @@
       "image_url": "https://www.sellemy.jp/img/heated-vests-6-picks/heated-vests-6-picks.png",
       "pillar_id": "pillar:家電:climate",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「ヒーター」から空調・季節家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2053,7 +2053,7 @@
       "image_url": "https://www.sellemy.jp/img/desk-foot-warmers-6-picks/desk-foot-warmers-6-picks.png",
       "pillar_id": "pillar:家電:climate",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「foot-warmer」から空調・季節家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2066,7 +2066,7 @@
       "image_url": "https://www.sellemy.jp/img/gaming-keyboards-6-picks/gaming-keyboards-6-picks.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「keyboard」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2079,7 +2079,7 @@
       "image_url": "https://www.sellemy.jp/img/heated-gloves-6-picks/heated-gloves-6-picks.png",
       "pillar_id": "pillar:家電:climate",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「電熱」から空調・季節家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2092,7 +2092,7 @@
       "image_url": "https://www.sellemy.jp/img/autumn-face-oils-6-picks/autumn-face-oils-6-picks.png",
       "pillar_id": "pillar:美容:skin",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「フェイス」からスキンケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2105,7 +2105,7 @@
       "image_url": "https://www.sellemy.jp/img/smart-item-trackers-6-picks/smart-item-trackers-6-picks.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「smart-」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2118,7 +2118,7 @@
       "image_url": "https://www.sellemy.jp/img/autumn-bedding-cover-sets-6-picks/autumn-bedding-cover-sets-6-picks.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -2131,7 +2131,7 @@
       "image_url": "https://www.sellemy.jp/img/closet-moisture-absorbers-6-picks/closet-moisture-absorbers-6-picks.png",
       "pillar_id": "pillar:日用品:laundry",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「除湿剤」から洗濯・掃除候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2144,7 +2144,7 @@
       "image_url": "https://www.sellemy.jp/img/warm-room-slippers-6-picks/warm-room-slippers-6-picks.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -2157,7 +2157,7 @@
       "image_url": "https://www.sellemy.jp/img/warming-eye-masks-6-picks/warming-eye-masks-6-picks.png",
       "pillar_id": "HOLD",
       "confidence": "low",
-      "classification_reason": "商品種類を特定できない",
+      "classification_reason": "商品種類の分類根拠不足",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -2170,7 +2170,7 @@
       "image_url": "https://www.sellemy.jp/img/lunch-boxes-bento-6-picks/lunch-boxes-bento-6-picks.png",
       "pillar_id": "pillar:日用品:table",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「lunch」から食器・弁当候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2183,7 +2183,7 @@
       "image_url": "https://www.sellemy.jp/img/rain-boots-6-picks/rain-boots-6-picks.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -2196,7 +2196,7 @@
       "image_url": "https://www.sellemy.jp/img/all-in-one-gel-6-picks/all-in-one-gel-6-picks.png",
       "pillar_id": "pillar:美容:skin",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「スキン」からスキンケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2209,7 +2209,7 @@
       "image_url": "https://www.sellemy.jp/img/cleansing-balms-6-picks/cleansing-balms-6-picks.png",
       "pillar_id": "pillar:美容:skin",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「クレンジング」からスキンケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2222,7 +2222,7 @@
       "image_url": "https://www.sellemy.jp/img/food-storage-containers-6-picks/food-storage-containers-6-picks.png",
       "pillar_id": "pillar:日用品:kitchen",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「保存容器」から調理器具・キッチン雑貨候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2235,7 +2235,7 @@
       "image_url": "https://www.sellemy.jp/img/deodorant-antiperspirants-6-picks/deodorant-antiperspirants-6-picks.png",
       "pillar_id": "pillar:美容:body",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「制汗」からボディ・フットケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2248,7 +2248,7 @@
       "image_url": "https://www.sellemy.jp/img/pore-care-nose-strips-6-picks/pore-care-nose-strips-6-picks.png",
       "pillar_id": "pillar:美容:skin",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「毛穴」からスキンケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2261,7 +2261,7 @@
       "image_url": "https://www.sellemy.jp/img/halloween-party-goods-6-picks/halloween-party-goods-6-picks.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -2274,7 +2274,7 @@
       "image_url": "https://www.sellemy.jp/img/moisturizing-body-wash-6-picks/moisturizing-body-wash-6-picks.png",
       "pillar_id": "pillar:美容:body",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「body-」からボディ・フットケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2287,7 +2287,7 @@
       "image_url": "https://www.sellemy.jp/img/2027-schedule-planners-6-picks/2027-schedule-planners-6-picks.png",
       "pillar_id": "pillar:日用品:stationery",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「手帳」から文具・オフィス候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2300,7 +2300,7 @@
       "image_url": "https://www.sellemy.jp/img/niacinamide-serums-6-picks/niacinamide-serums-6-picks.png",
       "pillar_id": "pillar:美容:skin",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「serum」からスキンケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2313,7 +2313,7 @@
       "image_url": "https://www.sellemy.jp/img/christmas-trees-ornaments-6-picks/christmas-trees-ornaments-6-picks.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -2326,7 +2326,7 @@
       "image_url": "https://www.sellemy.jp/img/floor-cleaning-sheets-6-picks/floor-cleaning-sheets-6-picks.png",
       "pillar_id": "pillar:日用品:laundry",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「掃除」から洗濯・掃除候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2339,7 +2339,7 @@
       "image_url": "https://www.sellemy.jp/img/travel-packing-organizers-6-picks/travel-packing-organizers-6-picks.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -2352,7 +2352,7 @@
       "image_url": "https://www.sellemy.jp/img/thermal-innerwear-6-picks/thermal-innerwear-6-picks.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -2365,7 +2365,7 @@
       "image_url": "https://www.sellemy.jp/img/self-gel-nail-kits-6-picks/self-gel-nail-kits-6-picks.png",
       "pillar_id": "pillar:美容:makeup",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「ネイル」からメイクアップ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2378,7 +2378,7 @@
       "image_url": "https://www.sellemy.jp/img/home-delivery-boxes-6-picks/home-delivery-boxes-6-picks.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -2391,7 +2391,7 @@
       "image_url": "https://www.sellemy.jp/img/eyebrow-makeup-6-picks/eyebrow-makeup-6-picks.png",
       "pillar_id": "pillar:美容:makeup",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「makeup」からメイクアップ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2404,7 +2404,7 @@
       "image_url": "https://www.sellemy.jp/img/throw-blankets-6-picks/throw-blankets-6-picks.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -2443,7 +2443,7 @@
       "image_url": "https://www.sellemy.jp/img/portable-photo-printers-6-picks/portable-photo-printers-6-picks.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「プリンター」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2456,7 +2456,7 @@
       "image_url": "https://www.sellemy.jp/img/smart-locks-6-picks/smart-locks-6-picks.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「smart-」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2469,7 +2469,7 @@
       "image_url": "https://www.sellemy.jp/img/warm-water-bidet-toilet-seats-6-picks/warm-water-bidet-toilet-seats-6-picks.png",
       "pillar_id": "pillar:家電:household_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「温水洗浄便座」から生活家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2482,7 +2482,7 @@
       "image_url": "https://www.sellemy.jp/img/electric-fabric-shavers-6-picks/electric-fabric-shavers-6-picks.png",
       "pillar_id": "pillar:家電:household_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「shaver」から生活家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2495,7 +2495,7 @@
       "image_url": "https://www.sellemy.jp/img/window-insulation-films-6-picks/window-insulation-films-6-picks.png",
       "pillar_id": "pillar:日用品:laundry",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「窓」から洗濯・掃除候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2508,7 +2508,7 @@
       "image_url": "https://www.sellemy.jp/img/delicate-laundry-detergents-6-picks/delicate-laundry-detergents-6-picks.png",
       "pillar_id": "pillar:日用品:laundry",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「洗濯」から洗濯・掃除候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2521,7 +2521,7 @@
       "image_url": "https://www.sellemy.jp/img/knit-flat-drying-nets-6-picks/knit-flat-drying-nets-6-picks.png",
       "pillar_id": "pillar:日用品:laundry",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「drying」から洗濯・掃除候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2534,7 +2534,7 @@
       "image_url": "https://www.sellemy.jp/img/autumn-cuticle-oils-6-picks/autumn-cuticle-oils-6-picks.png",
       "pillar_id": "pillar:美容:body",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「ネイルオイル」からボディ・フットケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2547,7 +2547,7 @@
       "image_url": "https://www.sellemy.jp/img/rice-storage-bins-6-picks/rice-storage-bins-6-picks.png",
       "pillar_id": "pillar:日用品:kitchen",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「米びつ」から調理器具・キッチン雑貨候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2560,7 +2560,7 @@
       "image_url": "https://www.sellemy.jp/img/closet-moth-repellents-6-picks/closet-moth-repellents-6-picks.png",
       "pillar_id": "pillar:日用品:laundry",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「防虫」から洗濯・掃除候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2573,7 +2573,7 @@
       "image_url": "https://www.sellemy.jp/img/autumn-cleansing-milks-6-picks/autumn-cleansing-milks-6-picks.png",
       "pillar_id": "pillar:美容:skin",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「クレンジング」からスキンケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2586,7 +2586,7 @@
       "image_url": "https://www.sellemy.jp/img/usb-c-docking-stations-6-picks/usb-c-docking-stations-6-picks.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「USB-」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2599,7 +2599,7 @@
       "image_url": "https://www.sellemy.jp/img/heel-moisturizing-creams-6-picks/heel-moisturizing-creams-6-picks.png",
       "pillar_id": "pillar:美容:body",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「かかと」からボディ・フットケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2612,7 +2612,7 @@
       "image_url": "https://www.sellemy.jp/img/washing-machine-drum-cleaners-6-picks/washing-machine-drum-cleaners-6-picks.png",
       "pillar_id": "pillar:日用品:laundry",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「洗濯」から洗濯・掃除候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2625,7 +2625,7 @@
       "image_url": "https://www.sellemy.jp/img/hair-brushes-for-frizz-6-picks/hair-brushes-for-frizz-6-picks.png",
       "pillar_id": "pillar:美容:hair",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「hair」からヘアケア・スタイリング候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2638,7 +2638,7 @@
       "image_url": "https://www.sellemy.jp/img/range-hood-degreasers-6-picks/range-hood-degreasers-6-picks.png",
       "pillar_id": "pillar:日用品:laundry",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「掃除」から洗濯・掃除候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2651,7 +2651,7 @@
       "image_url": "https://www.sellemy.jp/img/bathroom-mold-removers-6-picks/bathroom-mold-removers-6-picks.png",
       "pillar_id": "pillar:日用品:bath",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「bathroom」からバス・トイレ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2664,7 +2664,7 @@
       "image_url": "https://www.sellemy.jp/img/automatic-soup-makers/automatic-soup-makers.png",
       "pillar_id": "pillar:家電:kitchen_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「調理」からキッチン家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2677,7 +2677,7 @@
       "image_url": "https://www.sellemy.jp/img/bamboo-steamers-6-picks/bamboo-steamers-6-picks.png",
       "pillar_id": "pillar:日用品:kitchen",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「料理」から調理器具・キッチン雑貨候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2690,7 +2690,7 @@
       "image_url": "https://www.sellemy.jp/img/makeup-setting-sprays-6-picks/makeup-setting-sprays-6-picks.png",
       "pillar_id": "pillar:美容:makeup",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「メイク」からメイクアップ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2703,7 +2703,7 @@
       "image_url": "https://www.sellemy.jp/img/folding-indoor-drying-racks-6-picks/folding-indoor-drying-racks-6-picks.png",
       "pillar_id": "pillar:日用品:laundry",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「drying」から洗濯・掃除候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2716,7 +2716,7 @@
       "image_url": "https://www.sellemy.jp/img/heated-eyelash-curlers-6-picks/heated-eyelash-curlers-6-picks.png",
       "pillar_id": "pillar:美容:beauty_device",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「ホットビューラー」から美容機器・美容道具候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2729,7 +2729,7 @@
       "image_url": "https://www.sellemy.jp/img/dishwasher-detergents-6-picks/dishwasher-detergents-6-picks.png",
       "pillar_id": "pillar:日用品:laundry",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「detergent」から洗濯・掃除候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2742,7 +2742,7 @@
       "image_url": "https://www.sellemy.jp/img/kitchen-oil-pots-6-picks/kitchen-oil-pots-6-picks.png",
       "pillar_id": "pillar:日用品:kitchen",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「kitchen」から調理器具・キッチン雑貨候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2755,7 +2755,7 @@
       "image_url": "https://www.sellemy.jp/img/home-paper-shredders-6-picks/home-paper-shredders-6-picks.png",
       "pillar_id": "pillar:家電:household_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「シュレッダ」から生活家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2768,7 +2768,7 @@
       "image_url": "https://www.sellemy.jp/img/compact-pressure-washers-for-home/compact-pressure-washers-for-home.png",
       "pillar_id": "pillar:家電:household_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「掃除」から生活家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2781,7 +2781,7 @@
       "image_url": "https://www.sellemy.jp/img/serum-foundations-6-picks/serum-foundations-6-picks.png",
       "pillar_id": "pillar:美容:makeup",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「foundation」からメイクアップ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2794,7 +2794,7 @@
       "image_url": "https://www.sellemy.jp/img/led-lanterns-for-autumn-outings-6-picks/led-lanterns-for-autumn-outings-6-picks.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「lan」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2807,7 +2807,7 @@
       "image_url": "https://www.sellemy.jp/img/liquid-eyeliners-6-picks/liquid-eyeliners-6-picks.png",
       "pillar_id": "pillar:美容:makeup",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「アイライナー」からメイクアップ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2820,7 +2820,7 @@
       "image_url": "https://www.sellemy.jp/img/washable-bath-mats-6-picks/washable-bath-mats-6-picks.png",
       "pillar_id": "pillar:日用品:bath",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「バス」からバス・トイレ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2833,7 +2833,7 @@
       "image_url": "https://www.sellemy.jp/img/smart-plugs-6-picks/smart-plugs-6-picks.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「smart-」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2846,7 +2846,7 @@
       "image_url": "https://www.sellemy.jp/img/vacuum-food-sealers-6-picks/vacuum-food-sealers-6-picks.png",
       "pillar_id": "pillar:家電:kitchen_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「food-」からキッチン家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2859,7 +2859,7 @@
       "image_url": "https://www.sellemy.jp/img/clothing-antistatic-sprays-6-picks/clothing-antistatic-sprays-6-picks.png",
       "pillar_id": "pillar:日用品:laundry",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「衣類」から洗濯・掃除候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2872,7 +2872,7 @@
       "image_url": "https://www.sellemy.jp/img/insulated-soup-jars-for-lunch/insulated-soup-jars-for-lunch.png",
       "pillar_id": "pillar:日用品:table",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「lunch」から食器・弁当候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2885,7 +2885,7 @@
       "image_url": "https://www.sellemy.jp/img/warm-washable-mattress-pads-6-picks/warm-washable-mattress-pads-6-picks.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -2898,7 +2898,7 @@
       "image_url": "https://www.sellemy.jp/img/rinse-out-hair-masks-6-picks/rinse-out-hair-masks-6-picks.png",
       "pillar_id": "pillar:美容:hair",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「hair」からヘアケア・スタイリング候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2911,7 +2911,7 @@
       "image_url": "https://www.sellemy.jp/img/facial-steamers-for-home-6-picks/facial-steamers-for-home-6-picks.png",
       "pillar_id": "pillar:美容:beauty_device",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「フェイススチーマー」から美容機器・美容道具候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2924,7 +2924,7 @@
       "image_url": "https://www.sellemy.jp/img/window-condensation-absorbers-6-picks/window-condensation-absorbers-6-picks.png",
       "pillar_id": "pillar:日用品:laundry",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「結露」から洗濯・掃除候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2937,7 +2937,7 @@
       "image_url": "https://www.sellemy.jp/img/new-year-cards-6-picks/new-year-cards-6-picks.png",
       "pillar_id": "pillar:日用品:stationery",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「年賀」から文具・オフィス候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2950,7 +2950,7 @@
       "image_url": "https://www.sellemy.jp/img/winter-scarves-mufflers-6-picks/winter-scarves-mufflers-6-picks.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -2963,7 +2963,7 @@
       "image_url": "https://www.sellemy.jp/img/holiday-makeup-gift-sets-6-picks/holiday-makeup-gift-sets-6-picks.png",
       "pillar_id": "pillar:美容:makeup",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「makeup」からメイクアップ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -2976,7 +2976,7 @@
       "image_url": "https://www.sellemy.jp/img/warm-knit-gloves-6-picks/warm-knit-gloves-6-picks.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -2989,7 +2989,7 @@
       "image_url": "https://www.sellemy.jp/img/streaming-media-players-6-picks/streaming-media-players-6-picks.png",
       "pillar_id": "pillar:家電:av",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「テレビ」からテレビ・オーディオ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3002,7 +3002,7 @@
       "image_url": "https://www.sellemy.jp/img/thermal-insulation-curtains-6-picks/thermal-insulation-curtains-6-picks.png",
       "pillar_id": "pillar:日用品:laundry",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「insulation」から洗濯・掃除候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3015,7 +3015,7 @@
       "image_url": "https://www.sellemy.jp/img/down-jackets-6-picks/down-jackets-6-picks.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -3028,7 +3028,7 @@
       "image_url": "https://www.sellemy.jp/img/winter-loungewear-pajamas-6-picks/winter-loungewear-pajamas-6-picks.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -3041,7 +3041,7 @@
       "image_url": "https://www.sellemy.jp/img/winter-area-rugs-6-picks/winter-area-rugs-6-picks.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -3054,7 +3054,7 @@
       "image_url": "https://www.sellemy.jp/img/electric-cleansing-brushes-6-picks/electric-cleansing-brushes-6-picks.png",
       "pillar_id": "pillar:美容:beauty_device",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「電動洗顔」から美容機器・美容道具候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3067,7 +3067,7 @@
       "image_url": "https://www.sellemy.jp/img/scalp-massagers-6-picks/scalp-massagers-6-picks.png",
       "pillar_id": "pillar:美容:hair",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「scalp」からヘアケア・スタイリング候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3080,7 +3080,7 @@
       "image_url": "https://www.sellemy.jp/img/suitcases-for-year-end-travel-6-picks/suitcases-for-year-end-travel-6-picks.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -3093,7 +3093,7 @@
       "image_url": "https://www.sellemy.jp/img/tablets-6-picks/tablets-6-picks.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「tablet」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3106,7 +3106,7 @@
       "image_url": "https://www.sellemy.jp/img/leg-warmers-6-picks/leg-warmers-6-picks.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -3119,7 +3119,7 @@
       "image_url": "https://www.sellemy.jp/img/odor-blocking-trash-cans-6-picks/odor-blocking-trash-cans-6-picks.png",
       "pillar_id": "pillar:日用品:laundry",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「trash」から洗濯・掃除候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3132,7 +3132,7 @@
       "image_url": "https://www.sellemy.jp/img/smart-speakers-6-picks/smart-speakers-6-picks.png",
       "pillar_id": "pillar:家電:av",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「speaker」からテレビ・オーディオ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3145,7 +3145,7 @@
       "image_url": "https://www.sellemy.jp/img/action-cameras-6-picks/action-cameras-6-picks.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「camera」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3158,7 +3158,7 @@
       "image_url": "https://www.sellemy.jp/img/osechi-jubako-boxes-6-picks/osechi-jubako-boxes-6-picks.png",
       "pillar_id": "pillar:日用品:table",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「お重」から食器・弁当候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3171,7 +3171,7 @@
       "image_url": "https://www.sellemy.jp/img/whitening-toothpaste-6-picks/whitening-toothpaste-6-picks.png",
       "pillar_id": "pillar:美容:body",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「歯磨」からボディ・フットケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3197,7 +3197,7 @@
       "image_url": "https://www.sellemy.jp/img/home-water-servers-6-picks/home-water-servers-6-picks.png",
       "pillar_id": "pillar:家電:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「その他家電」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -3210,7 +3210,7 @@
       "image_url": "https://www.sellemy.jp/img/heat-tech-socks-6-picks/heat-tech-socks-6-picks.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -3223,7 +3223,7 @@
       "image_url": "https://www.sellemy.jp/img/acne-spot-patches-6-picks/acne-spot-patches-6-picks.png",
       "pillar_id": "pillar:美容:skin",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「肌」からスキンケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3236,7 +3236,7 @@
       "image_url": "https://www.sellemy.jp/img/moisturizing-emulsions-for-autumn-6-picks/moisturizing-emulsions-for-autumn-6-picks.png",
       "pillar_id": "pillar:美容:skin",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「乳液」からスキンケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3249,7 +3249,7 @@
       "image_url": "https://www.sellemy.jp/img/fabric-softeners-6-picks/fabric-softeners-6-picks.png",
       "pillar_id": "pillar:日用品:laundry",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「柔軟剤」から洗濯・掃除候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3262,7 +3262,7 @@
       "image_url": "https://www.sellemy.jp/img/refrigerators-6-picks/refrigerators-6-picks.png",
       "pillar_id": "pillar:家電:kitchen_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「冷蔵庫」からキッチン家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3275,7 +3275,7 @@
       "image_url": "https://www.sellemy.jp/img/winter-beanies-ear-muffs-6-picks/winter-beanies-ear-muffs-6-picks.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -3288,7 +3288,7 @@
       "image_url": "https://www.sellemy.jp/img/beauty-collagen-supplements-6-picks/beauty-collagen-supplements-6-picks.png",
       "pillar_id": "pillar:美容:body",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「コラーゲン」からボディ・フットケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3301,7 +3301,7 @@
       "image_url": "https://www.sellemy.jp/img/mouthwash-oral-care-6-picks/mouthwash-oral-care-6-picks.png",
       "pillar_id": "pillar:美容:body",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「mouthwash」からボディ・フットケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3314,7 +3314,7 @@
       "image_url": "https://www.sellemy.jp/img/2027-wall-desk-calendars-6-picks/2027-wall-desk-calendars-6-picks.png",
       "pillar_id": "pillar:日用品:stationery",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「calendar」から文具・オフィス候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3340,7 +3340,7 @@
       "image_url": "https://www.sellemy.jp/img/glass-window-cleaners-6-picks/glass-window-cleaners-6-picks.png",
       "pillar_id": "pillar:日用品:laundry",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「clean」から洗濯・掃除候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3353,7 +3353,7 @@
       "image_url": "https://www.sellemy.jp/img/iphone-book-type-cases-6-picks/iphone-book-type-cases-6-picks.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「Phone」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3366,7 +3366,7 @@
       "image_url": "https://www.sellemy.jp/img/oseibo-gift-sets-6-picks/oseibo-gift-sets-6-picks.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -3379,7 +3379,7 @@
       "image_url": "https://www.sellemy.jp/img/hot-pot-soup-bases-6-picks/hot-pot-soup-bases-6-picks.png",
       "pillar_id": "pillar:日用品:kitchen",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「鍋」から調理器具・キッチン雑貨候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3392,7 +3392,7 @@
       "image_url": "https://www.sellemy.jp/img/lip-oils-glosses-6-picks/lip-oils-glosses-6-picks.png",
       "pillar_id": "pillar:美容:makeup",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「lip-」からメイクアップ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3405,7 +3405,7 @@
       "image_url": "https://www.sellemy.jp/img/eyelid-tape-double-eyelid-6-picks/eyelid-tape-double-eyelid-6-picks.png",
       "pillar_id": "pillar:美容:makeup",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「メイク」からメイクアップ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3418,7 +3418,7 @@
       "image_url": "https://www.sellemy.jp/img/wireless-game-controllers-6-picks/wireless-game-controllers-6-picks.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「game」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3431,7 +3431,7 @@
       "image_url": "https://www.sellemy.jp/img/open-ear-wireless-earbuds-6-picks/open-ear-wireless-earbuds-6-picks.png",
       "pillar_id": "pillar:家電:av",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「earbud」からテレビ・オーディオ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3444,7 +3444,7 @@
       "image_url": "https://www.sellemy.jp/img/dog-winter-clothes-6-picks/dog-winter-clothes-6-picks.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -3457,7 +3457,7 @@
       "image_url": "https://www.sellemy.jp/img/non-metal-tire-chains-6-picks/non-metal-tire-chains-6-picks.png",
       "pillar_id": "pillar:日用品:security",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「タイヤチェーン」から防犯・防災候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3470,7 +3470,7 @@
       "image_url": "https://www.sellemy.jp/img/face-roller-gua-sha-tools-6-picks/face-roller-gua-sha-tools-6-picks.png",
       "pillar_id": "pillar:美容:beauty_device",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「face-roller」から美容機器・美容道具候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3483,7 +3483,7 @@
       "image_url": "https://www.sellemy.jp/img/laptops-6-picks/laptops-6-picks.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「パソコン」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3509,7 +3509,7 @@
       "image_url": "https://www.sellemy.jp/img/new-year-decorations-6-picks/new-year-decorations-6-picks.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -3522,7 +3522,7 @@
       "image_url": "https://www.sellemy.jp/img/air-conditioners-6-picks/air-conditioners-6-picks.png",
       "pillar_id": "pillar:家電:climate",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「air-condition」から空調・季節家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3535,7 +3535,7 @@
       "image_url": "https://www.sellemy.jp/img/4k-liquid-crystal-tvs-6-picks/4k-liquid-crystal-tvs-6-picks.png",
       "pillar_id": "pillar:家電:av",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「テレビ」からテレビ・オーディオ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3548,7 +3548,7 @@
       "image_url": "https://www.sellemy.jp/img/womens-hair-growth-serums-6-picks/womens-hair-growth-serums-6-picks.png",
       "pillar_id": "pillar:美容:hair",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「hair」からヘアケア・スタイリング候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3561,7 +3561,7 @@
       "image_url": "https://www.sellemy.jp/img/anti-slip-snow-boots-6-picks/anti-slip-snow-boots-6-picks.png",
       "pillar_id": "pillar:日用品:security",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「凍結」から防犯・防災候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3574,7 +3574,7 @@
       "image_url": "https://www.sellemy.jp/img/christmas-cakes-6-picks/christmas-cakes-6-picks.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -3587,7 +3587,7 @@
       "image_url": "https://www.sellemy.jp/img/overnight-sleeping-masks-6-picks/overnight-sleeping-masks-6-picks.png",
       "pillar_id": "pillar:美容:skin",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「sleeping-mask」からスキンケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3600,7 +3600,7 @@
       "image_url": "https://www.sellemy.jp/img/rain-coats-ponchos-6-picks/rain-coats-ponchos-6-picks.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -3613,7 +3613,7 @@
       "image_url": "https://www.sellemy.jp/img/autumn-winter-moisturizing-primers-6-picks/autumn-winter-moisturizing-primers-6-picks.png",
       "pillar_id": "pillar:美容:makeup",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「primer」からメイクアップ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3626,7 +3626,7 @@
       "image_url": "https://www.sellemy.jp/img/entrance-doormats-6-picks/entrance-doormats-6-picks.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -3639,7 +3639,7 @@
       "image_url": "https://www.sellemy.jp/img/lip-scrubs-6-picks/lip-scrubs-6-picks.png",
       "pillar_id": "pillar:美容:makeup",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「lip-」からメイクアップ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3652,7 +3652,7 @@
       "image_url": "https://www.sellemy.jp/img/highlighter-contour-palette-6-picks/highlighter-contour-palette-6-picks.png",
       "pillar_id": "pillar:美容:makeup",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「メイク」からメイクアップ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3665,7 +3665,7 @@
       "image_url": "https://www.sellemy.jp/img/cat-litter-6-picks/cat-litter-6-picks.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -3678,7 +3678,7 @@
       "image_url": "https://www.sellemy.jp/img/pet-heating-beds-6-picks/pet-heating-beds-6-picks.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -3691,7 +3691,7 @@
       "image_url": "https://www.sellemy.jp/img/top-load-washing-machines-6-picks/top-load-washing-machines-6-picks.png",
       "pillar_id": "pillar:家電:household_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「washing」から生活家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3704,7 +3704,7 @@
       "image_url": "https://www.sellemy.jp/img/compact-mini-pcs-6-picks/compact-mini-pcs-6-picks.png",
       "pillar_id": "pillar:家電:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「その他家電」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -3717,7 +3717,7 @@
       "image_url": "https://www.sellemy.jp/img/car-windshield-deicer-sprays-6-picks/car-windshield-deicer-sprays-6-picks.png",
       "pillar_id": "pillar:日用品:security",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「凍結」から防犯・防災候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3730,7 +3730,7 @@
       "image_url": "https://www.sellemy.jp/img/dry-shampoo-6-picks/dry-shampoo-6-picks.png",
       "pillar_id": "pillar:美容:hair",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「shampoo」からヘアケア・スタイリング候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3743,7 +3743,7 @@
       "image_url": "https://www.sellemy.jp/img/heated-car-seat-cushions-6-picks/heated-car-seat-cushions-6-picks.png",
       "pillar_id": "pillar:家電:climate",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「ヒーター」から空調・季節家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3756,7 +3756,7 @@
       "image_url": "https://www.sellemy.jp/img/mens-all-in-one-skincare-6-picks/mens-all-in-one-skincare-6-picks.png",
       "pillar_id": "pillar:美容:skin",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「スキン」からスキンケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3769,7 +3769,7 @@
       "image_url": "https://www.sellemy.jp/img/compression-socks-6-picks/compression-socks-6-picks.png",
       "pillar_id": "pillar:日用品:health",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「着圧」から健康・セルフケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3782,7 +3782,7 @@
       "image_url": "https://www.sellemy.jp/img/beauty-advent-calendars-6-picks/beauty-advent-calendars-6-picks.png",
       "pillar_id": "pillar:美容:makeup",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「コスメ」からメイクアップ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3795,7 +3795,7 @@
       "image_url": "https://www.sellemy.jp/img/vr-headsets-6-picks/vr-headsets-6-picks.png",
       "pillar_id": "pillar:家電:av",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「ヘッドセット」からテレビ・オーディオ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3808,7 +3808,7 @@
       "image_url": "https://www.sellemy.jp/img/microfiber-cleaning-cloths-6-picks/microfiber-cleaning-cloths-6-picks.png",
       "pillar_id": "pillar:日用品:laundry",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「掃除」から洗濯・掃除候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3821,7 +3821,7 @@
       "image_url": "https://www.sellemy.jp/img/halloween-face-paint-makeup-6-picks/halloween-face-paint-makeup-6-picks.png",
       "pillar_id": "pillar:美容:makeup",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「メイク」からメイクアップ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3834,7 +3834,7 @@
       "image_url": "https://www.sellemy.jp/img/christmas-gift-wrapping-supplies-6-picks/christmas-gift-wrapping-supplies-6-picks.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -3847,7 +3847,7 @@
       "image_url": "https://www.sellemy.jp/img/electric-nasal-aspirators-6-picks/electric-nasal-aspirators-6-picks.png",
       "pillar_id": "pillar:家電:household_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「鼻水吸引」から生活家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3860,7 +3860,7 @@
       "image_url": "https://www.sellemy.jp/img/multipurpose-moisture-balms-6-picks/multipurpose-moisture-balms-6-picks.png",
       "pillar_id": "pillar:美容:skin",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「肌」からスキンケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3873,7 +3873,7 @@
       "image_url": "https://www.sellemy.jp/img/press-on-nail-stickers-6-picks/press-on-nail-stickers-6-picks.png",
       "pillar_id": "pillar:美容:makeup",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「ネイル」からメイクアップ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3886,7 +3886,7 @@
       "image_url": "https://www.sellemy.jp/img/kitchen-knives-6-picks/kitchen-knives-6-picks.png",
       "pillar_id": "pillar:日用品:kitchen",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「kitchen」から調理器具・キッチン雑貨候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3899,7 +3899,7 @@
       "image_url": "https://www.sellemy.jp/img/usb-condenser-microphones-6-picks/usb-condenser-microphones-6-picks.png",
       "pillar_id": "pillar:家電:av",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「マイク」からテレビ・オーディオ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3912,7 +3912,7 @@
       "image_url": "https://www.sellemy.jp/img/over-ear-noise-cancelling-headphones-6-picks/over-ear-noise-cancelling-headphones-6-picks.png",
       "pillar_id": "pillar:家電:av",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「headphone」からテレビ・オーディオ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3925,7 +3925,7 @@
       "image_url": "https://www.sellemy.jp/img/cutting-boards-6-picks/cutting-boards-6-picks.png",
       "pillar_id": "pillar:日用品:kitchen",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「料理」から調理器具・キッチン雑貨候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3938,7 +3938,7 @@
       "image_url": "https://www.sellemy.jp/img/home-inkjet-printers-nengajo-6-picks/home-inkjet-printers-nengajo-6-picks.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「プリンター」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3951,7 +3951,7 @@
       "image_url": "https://www.sellemy.jp/img/emergency-food-stockpile-6-picks/emergency-food-stockpile-6-picks.png",
       "pillar_id": "pillar:日用品:security",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「emergency」から防犯・防災候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3964,7 +3964,7 @@
       "image_url": "https://www.sellemy.jp/img/led-illumination-lights-6-picks/led-illumination-lights-6-picks.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -3977,7 +3977,7 @@
       "image_url": "https://www.sellemy.jp/img/throat-lozenges-gargle-6-picks/throat-lozenges-gargle-6-picks.png",
       "pillar_id": "pillar:日用品:health",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「のど」から健康・セルフケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -3990,7 +3990,7 @@
       "image_url": "https://www.sellemy.jp/img/door-draft-stoppers-6-picks/door-draft-stoppers-6-picks.png",
       "pillar_id": "pillar:日用品:laundry",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「draft-stopper」から洗濯・掃除候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4003,7 +4003,7 @@
       "image_url": "https://www.sellemy.jp/img/micellar-cleansing-water-6-picks/micellar-cleansing-water-6-picks.png",
       "pillar_id": "pillar:美容:skin",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「クレンジング」からスキンケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4029,7 +4029,7 @@
       "image_url": "https://www.sellemy.jp/img/hiking-trekking-shoes-6-picks/hiking-trekking-shoes-6-picks.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -4042,7 +4042,7 @@
       "image_url": "https://www.sellemy.jp/img/halloween-candy-treat-sets-6-picks/halloween-candy-treat-sets-6-picks.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -4055,7 +4055,7 @@
       "image_url": "https://www.sellemy.jp/img/bb-cc-creams-6-picks/bb-cc-creams-6-picks.png",
       "pillar_id": "pillar:美容:makeup",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「BB・CC」からメイクアップ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4068,7 +4068,7 @@
       "image_url": "https://www.sellemy.jp/img/usb-heated-insoles-6-picks/usb-heated-insoles-6-picks.png",
       "pillar_id": "pillar:家電:climate",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「電熱」から空調・季節家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4081,7 +4081,7 @@
       "image_url": "https://www.sellemy.jp/img/foot-spa-baths-6-picks/foot-spa-baths-6-picks.png",
       "pillar_id": "pillar:家電:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「その他家電」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -4094,7 +4094,7 @@
       "image_url": "https://www.sellemy.jp/img/usb-flash-drives-32gb-6-picks/usb-flash-drives-32gb-6-picks.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「usb-」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4107,7 +4107,7 @@
       "image_url": "https://www.sellemy.jp/img/futon-compression-bags-6-picks/futon-compression-bags-6-picks.png",
       "pillar_id": "pillar:日用品:laundry",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「収納」から洗濯・掃除候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4120,7 +4120,7 @@
       "image_url": "https://www.sellemy.jp/img/home-document-scanners-6-picks/home-document-scanners-6-picks.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「スキャナ」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4133,7 +4133,7 @@
       "image_url": "https://www.sellemy.jp/img/wool-knitting-yarns/wool-knitting-yarns.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -4146,7 +4146,7 @@
       "image_url": "https://www.sellemy.jp/img/hobby-mini-rotary-tools/hobby-mini-rotary-tools.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「ルーター」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4159,7 +4159,7 @@
       "image_url": "https://www.sellemy.jp/img/miso-strainers/miso-strainers.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -4172,7 +4172,7 @@
       "image_url": "https://www.sellemy.jp/img/chestnut-peeling-tools/chestnut-peeling-tools.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -4185,7 +4185,7 @@
       "image_url": "https://www.sellemy.jp/img/magnetic-bathroom-storage-racks/magnetic-bathroom-storage-racks.png",
       "pillar_id": "pillar:日用品:bath",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「bathroom」からバス・トイレ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4198,7 +4198,7 @@
       "image_url": "https://www.sellemy.jp/img/handheld-translation-devices/handheld-translation-devices.png",
       "pillar_id": "pillar:家電:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「その他家電」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -4224,7 +4224,7 @@
       "image_url": "https://www.sellemy.jp/img/portable-dvd-players/portable-dvd-players.png",
       "pillar_id": "pillar:家電:av",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「portable-dvd」からテレビ・オーディオ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4250,7 +4250,7 @@
       "image_url": "https://www.sellemy.jp/img/digital-kitchen-scales/digital-kitchen-scales.png",
       "pillar_id": "pillar:家電:kitchen_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「kitchen」からキッチン家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4263,7 +4263,7 @@
       "image_url": "https://www.sellemy.jp/img/hair-styling-waxes/hair-styling-waxes.png",
       "pillar_id": "pillar:美容:hair",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「hair」からヘアケア・スタイリング候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4289,7 +4289,7 @@
       "image_url": "https://www.sellemy.jp/img/manual-coffee-drippers-6-picks/manual-coffee-drippers-6-picks.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -4302,7 +4302,7 @@
       "image_url": "https://www.sellemy.jp/img/desktop-trackballs-6-picks/desktop-trackballs-6-picks.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「trackball」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4315,7 +4315,7 @@
       "image_url": "https://www.sellemy.jp/img/gratin-baking-dishes-6-picks/gratin-baking-dishes-6-picks.png",
       "pillar_id": "pillar:日用品:table",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「皿」から食器・弁当候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4328,7 +4328,7 @@
       "image_url": "https://www.sellemy.jp/img/cooking-aprons-6-picks/cooking-aprons-6-picks.png",
       "pillar_id": "pillar:日用品:kitchen",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「料理」から調理器具・キッチン雑貨候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4341,7 +4341,7 @@
       "image_url": "https://www.sellemy.jp/img/tabletop-insulated-serving-pots-6-picks/tabletop-insulated-serving-pots-6-picks.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -4354,7 +4354,7 @@
       "image_url": "https://www.sellemy.jp/img/hand-blenders-for-cooking/hand-blenders-for-cooking.png",
       "pillar_id": "pillar:家電:kitchen_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「blender」からキッチン家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4367,7 +4367,7 @@
       "image_url": "https://www.sellemy.jp/img/everyday-false-eyelashes/everyday-false-eyelashes.png",
       "pillar_id": "pillar:美容:makeup",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「eyelash」からメイクアップ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4380,7 +4380,7 @@
       "image_url": "https://www.sellemy.jp/img/home-steam-cleaners/home-steam-cleaners.png",
       "pillar_id": "pillar:家電:household_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「cleaner」から生活家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4393,7 +4393,7 @@
       "image_url": "https://www.sellemy.jp/img/bathroom-stools/bathroom-stools.png",
       "pillar_id": "pillar:日用品:bath",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「bathroom」からバス・トイレ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4406,7 +4406,7 @@
       "image_url": "https://www.sellemy.jp/img/compact-binoculars-for-outings/compact-binoculars-for-outings.png",
       "pillar_id": "pillar:家電:av",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「双眼鏡」からテレビ・オーディオ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4419,7 +4419,7 @@
       "image_url": "https://www.sellemy.jp/img/replacement-bathtub-covers/replacement-bathtub-covers.png",
       "pillar_id": "pillar:日用品:bath",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「風呂」からバス・トイレ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4432,7 +4432,7 @@
       "image_url": "https://www.sellemy.jp/img/structured-jacket-coat-hangers/structured-jacket-coat-hangers.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -4458,7 +4458,7 @@
       "image_url": "https://www.sellemy.jp/img/electric-air-dusters/electric-air-dusters.png",
       "pillar_id": "pillar:家電:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「その他家電」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -4471,7 +4471,7 @@
       "image_url": "https://www.sellemy.jp/img/home-sewing-machines-comparison/home-sewing-machines-comparison.png",
       "pillar_id": "pillar:家電:household_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「ミシン」から生活家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4484,7 +4484,7 @@
       "image_url": "https://www.sellemy.jp/img/manual-coffee-grinders-comparison/manual-coffee-grinders-comparison.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -4497,7 +4497,7 @@
       "image_url": "https://www.sellemy.jp/img/manual-cartridge-razors-comparison/manual-cartridge-razors-comparison.png",
       "pillar_id": "pillar:美容:body",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「razor」からボディ・フットケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4510,7 +4510,7 @@
       "image_url": "https://www.sellemy.jp/img/book-reading-stands/book-reading-stands.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -4523,7 +4523,7 @@
       "image_url": "https://www.sellemy.jp/img/interdental-brushes/interdental-brushes.png",
       "pillar_id": "pillar:美容:body",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「歯間」からボディ・フットケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4536,7 +4536,7 @@
       "image_url": "https://www.sellemy.jp/img/compact-cordless-screwdrivers/compact-cordless-screwdrivers.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「充電」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4549,7 +4549,7 @@
       "image_url": "https://www.sellemy.jp/img/smartphone-photography-tripods/smartphone-photography-tripods.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「phone」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4588,7 +4588,7 @@
       "image_url": "https://www.sellemy.jp/img/picnic-leisure-sheets/picnic-leisure-sheets.png",
       "pillar_id": "pillar:日用品:laundry",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「洗濯」から洗濯・掃除候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4601,7 +4601,7 @@
       "image_url": "https://www.sellemy.jp/img/ready-made-hair-toppers/ready-made-hair-toppers.png",
       "pillar_id": "pillar:美容:hair",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「hair」からヘアケア・スタイリング候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4614,7 +4614,7 @@
       "image_url": "https://www.sellemy.jp/img/electric-kerosene-transfer-pumps/electric-kerosene-transfer-pumps.png",
       "pillar_id": "pillar:家電:climate",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「灯油ポンプ」から空調・季節家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4627,7 +4627,7 @@
       "image_url": "https://www.sellemy.jp/img/bookends-for-shelves-and-desks/bookends-for-shelves-and-desks.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -4640,7 +4640,7 @@
       "image_url": "https://www.sellemy.jp/img/beard-length-trimmers/beard-length-trimmers.png",
       "pillar_id": "pillar:美容:body",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「ヒゲ」からボディ・フットケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4653,7 +4653,7 @@
       "image_url": "https://www.sellemy.jp/img/home-record-players/home-record-players.png",
       "pillar_id": "pillar:家電:av",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「record-player」からテレビ・オーディオ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4666,7 +4666,7 @@
       "image_url": "https://www.sellemy.jp/img/automatic-pet-feeders/automatic-pet-feeders.png",
       "pillar_id": "pillar:家電:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「その他家電」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -4679,7 +4679,7 @@
       "image_url": "https://www.sellemy.jp/img/home-portable-musical-keyboards/home-portable-musical-keyboards.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「keyboard」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4705,7 +4705,7 @@
       "image_url": "https://www.sellemy.jp/img/hand-pruning-shears/hand-pruning-shears.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -4718,7 +4718,7 @@
       "image_url": "https://www.sellemy.jp/img/home-hair-thinning-scissors/home-hair-thinning-scissors.png",
       "pillar_id": "pillar:美容:hair",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「hair」からヘアケア・スタイリング候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4731,7 +4731,7 @@
       "image_url": "https://www.sellemy.jp/img/dish-drying-racks/dish-drying-racks.png",
       "pillar_id": "pillar:日用品:table",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「食器」から食器・弁当候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4744,7 +4744,7 @@
       "image_url": "https://www.sellemy.jp/img/desk-ac-power-strips/desk-ac-power-strips.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「電源タップ」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4770,7 +4770,7 @@
       "image_url": "https://www.sellemy.jp/img/garment-care-brushes/garment-care-brushes.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -4783,7 +4783,7 @@
       "image_url": "https://www.sellemy.jp/img/stovetop-water-kettles/stovetop-water-kettles.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -4796,7 +4796,7 @@
       "image_url": "https://www.sellemy.jp/img/household-toilet-cleaning-detergents/household-toilet-cleaning-detergents.png",
       "pillar_id": "pillar:日用品:bath",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「トイレ」からバス・トイレ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4809,7 +4809,7 @@
       "image_url": "https://www.sellemy.jp/img/clothing-washing-machine-nets/clothing-washing-machine-nets.png",
       "pillar_id": "pillar:日用品:laundry",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「洗濯」から洗濯・掃除候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4822,7 +4822,7 @@
       "image_url": "https://www.sellemy.jp/img/indoor-digital-thermo-hygrometers/indoor-digital-thermo-hygrometers.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「digital」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4835,7 +4835,7 @@
       "image_url": "https://www.sellemy.jp/img/freestanding-ironing-boards/freestanding-ironing-boards.png",
       "pillar_id": "pillar:日用品:laundry",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「収納」から洗濯・掃除候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4848,7 +4848,7 @@
       "image_url": "https://www.sellemy.jp/img/loose-leaf-teapots/loose-leaf-teapots.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -4861,7 +4861,7 @@
       "image_url": "https://www.sellemy.jp/img/usb-memory-card-readers/usb-memory-card-readers.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「usb-」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4874,7 +4874,7 @@
       "image_url": "https://www.sellemy.jp/img/home-ultrasonic-cleaners/home-ultrasonic-cleaners.png",
       "pillar_id": "pillar:家電:household_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「cleaner」から生活家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4887,7 +4887,7 @@
       "image_url": "https://www.sellemy.jp/img/manual-nail-clippers/manual-nail-clippers.png",
       "pillar_id": "pillar:美容:beauty_device",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「爪切り」から美容機器・美容道具候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4900,7 +4900,7 @@
       "image_url": "https://www.sellemy.jp/img/standalone-electric-milk-frothers/standalone-electric-milk-frothers.png",
       "pillar_id": "pillar:家電:kitchen_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「調理」からキッチン家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4913,7 +4913,7 @@
       "image_url": "https://www.sellemy.jp/img/skincare-cotton-pads/skincare-cotton-pads.png",
       "pillar_id": "pillar:美容:skin",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「skin」からスキンケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4939,7 +4939,7 @@
       "image_url": "https://www.sellemy.jp/img/home-document-laminators/home-document-laminators.png",
       "pillar_id": "pillar:家電:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「その他家電」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -4952,7 +4952,7 @@
       "image_url": "https://www.sellemy.jp/img/home-ethernet-switches/home-ethernet-switches.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「スイッチングハブ」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4965,7 +4965,7 @@
       "image_url": "https://www.sellemy.jp/img/kitchen-knife-whetstones/kitchen-knife-whetstones.png",
       "pillar_id": "pillar:日用品:kitchen",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「kitchen」から調理器具・キッチン雑貨候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -4978,7 +4978,7 @@
       "image_url": "https://www.sellemy.jp/img/smooth-leather-shoe-creams/smooth-leather-shoe-creams.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -4991,7 +4991,7 @@
       "image_url": "https://www.sellemy.jp/img/home-yogurt-makers/home-yogurt-makers.png",
       "pillar_id": "pillar:家電:kitchen_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「maker」からキッチン家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5004,7 +5004,7 @@
       "image_url": "https://www.sellemy.jp/img/screenless-drawing-tablets/screenless-drawing-tablets.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「tablet」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5017,7 +5017,7 @@
       "image_url": "https://www.sellemy.jp/img/portable-am-fm-radios/portable-am-fm-radios.png",
       "pillar_id": "pillar:家電:av",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「radio」からテレビ・オーディオ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5030,7 +5030,7 @@
       "image_url": "https://www.sellemy.jp/img/external-computer-optical-drives/external-computer-optical-drives.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「computer」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5043,7 +5043,7 @@
       "image_url": "https://www.sellemy.jp/img/electric-hand-mixers-for-baking/electric-hand-mixers-for-baking.png",
       "pillar_id": "pillar:家電:kitchen_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「製菓」からキッチン家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5056,7 +5056,7 @@
       "image_url": "https://www.sellemy.jp/img/manual-eyelash-curlers/manual-eyelash-curlers.png",
       "pillar_id": "pillar:美容:makeup",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「eyelash」からメイクアップ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5069,7 +5069,7 @@
       "image_url": "https://www.sellemy.jp/img/hair-setting-sprays/hair-setting-sprays.png",
       "pillar_id": "pillar:美容:hair",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「hair」からヘアケア・スタイリング候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5082,7 +5082,7 @@
       "image_url": "https://www.sellemy.jp/img/foundation-makeup-sponges/foundation-makeup-sponges.png",
       "pillar_id": "pillar:美容:makeup",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「foundation」からメイクアップ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5095,7 +5095,7 @@
       "image_url": "https://www.sellemy.jp/img/desktop-basic-calculators/desktop-basic-calculators.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「計算機」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5108,7 +5108,7 @@
       "image_url": "https://www.sellemy.jp/img/immersion-sous-vide-cookers/immersion-sous-vide-cookers.png",
       "pillar_id": "pillar:家電:kitchen_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「cooker」からキッチン家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5121,7 +5121,7 @@
       "image_url": "https://www.sellemy.jp/img/floor-cleaning-wiper-handles/floor-cleaning-wiper-handles.png",
       "pillar_id": "pillar:日用品:laundry",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「clean」から洗濯・掃除候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5134,7 +5134,7 @@
       "image_url": "https://www.sellemy.jp/img/laundry-pretreatment-stain-removers/laundry-pretreatment-stain-removers.png",
       "pillar_id": "pillar:日用品:laundry",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「洗濯」から洗濯・掃除候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5147,7 +5147,7 @@
       "image_url": "https://www.sellemy.jp/img/food-preparation-kitchen-scissors/food-preparation-kitchen-scissors.png",
       "pillar_id": "pillar:日用品:kitchen",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「kitchen」から調理器具・キッチン雑貨候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5160,7 +5160,7 @@
       "image_url": "https://www.sellemy.jp/img/home-umbrella-storage-stands/home-umbrella-storage-stands.png",
       "pillar_id": "pillar:日用品:laundry",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「storage-」から洗濯・掃除候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5173,7 +5173,7 @@
       "image_url": "https://www.sellemy.jp/img/household-trash-bags/household-trash-bags.png",
       "pillar_id": "pillar:日用品:laundry",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「trash」から洗濯・掃除候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5186,7 +5186,7 @@
       "image_url": "https://www.sellemy.jp/img/usb-c-to-c-cables/usb-c-to-c-cables.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「USB-」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5199,7 +5199,7 @@
       "image_url": "https://www.sellemy.jp/img/household-rolling-storage-carts/household-rolling-storage-carts.png",
       "pillar_id": "pillar:日用品:laundry",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「収納」から洗濯・掃除候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5212,7 +5212,7 @@
       "image_url": "https://www.sellemy.jp/img/everyday-replacement-shoe-insoles/everyday-replacement-shoe-insoles.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -5225,7 +5225,7 @@
       "image_url": "https://www.sellemy.jp/img/portable-voice-recorders/portable-voice-recorders.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「録音」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5238,7 +5238,7 @@
       "image_url": "https://www.sellemy.jp/img/body-washing-towels/body-washing-towels.png",
       "pillar_id": "pillar:美容:body",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「body-」からボディ・フットケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5251,7 +5251,7 @@
       "image_url": "https://www.sellemy.jp/img/folding-household-step-stools/folding-household-step-stools.png",
       "pillar_id": "pillar:日用品:laundry",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「収納」から洗濯・掃除候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5264,7 +5264,7 @@
       "image_url": "https://www.sellemy.jp/img/desktop-uninterruptible-power-supplies/desktop-uninterruptible-power-supplies.png",
       "pillar_id": "pillar:家電:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「その他家電」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -5277,7 +5277,7 @@
       "image_url": "https://www.sellemy.jp/img/makeup-brushes-for-face-products/makeup-brushes-for-face-products.png",
       "pillar_id": "pillar:美容:beauty_device",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「ブラシ」から美容機器・美容道具候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5290,7 +5290,7 @@
       "image_url": "https://www.sellemy.jp/img/everyday-cooking-frying-pans/everyday-cooking-frying-pans.png",
       "pillar_id": "pillar:日用品:kitchen",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「調理」から調理器具・キッチン雑貨候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5303,7 +5303,7 @@
       "image_url": "https://www.sellemy.jp/img/home-oxidative-gray-hair-dyes/home-oxidative-gray-hair-dyes.png",
       "pillar_id": "pillar:美容:hair",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「hair」からヘアケア・スタイリング候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5316,7 +5316,7 @@
       "image_url": "https://www.sellemy.jp/img/hdmi-input-switchers/hdmi-input-switchers.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「HDMI」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5329,7 +5329,7 @@
       "image_url": "https://www.sellemy.jp/img/digital-photo-frames/digital-photo-frames.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「デジタル」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5342,7 +5342,7 @@
       "image_url": "https://www.sellemy.jp/img/manual-vegetable-slicers/manual-vegetable-slicers.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -5355,7 +5355,7 @@
       "image_url": "https://www.sellemy.jp/img/bedside-alarm-clocks/bedside-alarm-clocks.png",
       "pillar_id": "pillar:家電:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「その他家電」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -5368,7 +5368,7 @@
       "image_url": "https://www.sellemy.jp/img/rechargeable-indoor-motion-sensor-lights/rechargeable-indoor-motion-sensor-lights.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「充電」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5381,7 +5381,7 @@
       "image_url": "https://www.sellemy.jp/img/nail-polish-removers/nail-polish-removers.png",
       "pillar_id": "pillar:美容:makeup",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「ネイル」からメイクアップ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5394,7 +5394,7 @@
       "image_url": "https://www.sellemy.jp/img/laundry-pinch-hangers/laundry-pinch-hangers.png",
       "pillar_id": "pillar:日用品:laundry",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「洗濯」から洗濯・掃除候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5407,7 +5407,7 @@
       "image_url": "https://www.sellemy.jp/img/laptop-privacy-screen-filters/laptop-privacy-screen-filters.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「ノートPC」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5420,7 +5420,7 @@
       "image_url": "https://www.sellemy.jp/img/home-wifi-range-extenders/home-wifi-range-extenders.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「wifi」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5433,7 +5433,7 @@
       "image_url": "https://www.sellemy.jp/img/usb-wired-ethernet-adapters/usb-wired-ethernet-adapters.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「usb-」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5446,7 +5446,7 @@
       "image_url": "https://www.sellemy.jp/img/hand-dishwashing-detergents/hand-dishwashing-detergents.png",
       "pillar_id": "pillar:日用品:table",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「食器」から食器・弁当候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5459,7 +5459,7 @@
       "image_url": "https://www.sellemy.jp/img/countertop-food-processors/countertop-food-processors.png",
       "pillar_id": "pillar:家電:kitchen_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「food-」からキッチン家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5472,7 +5472,7 @@
       "image_url": "https://www.sellemy.jp/img/lip-liner-pencils/lip-liner-pencils.png",
       "pillar_id": "pillar:美容:makeup",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「lip-」からメイクアップ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5485,7 +5485,7 @@
       "image_url": "https://www.sellemy.jp/img/kitchen-oven-mitts/kitchen-oven-mitts.png",
       "pillar_id": "pillar:日用品:kitchen",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「kitchen」から調理器具・キッチン雑貨候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5498,7 +5498,7 @@
       "image_url": "https://www.sellemy.jp/img/bathroom-water-removal-squeegees/bathroom-water-removal-squeegees.png",
       "pillar_id": "pillar:日用品:bath",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「bathroom」からバス・トイレ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5511,7 +5511,7 @@
       "image_url": "https://www.sellemy.jp/img/oxygen-based-laundry-bleaches/oxygen-based-laundry-bleaches.png",
       "pillar_id": "pillar:日用品:laundry",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「洗濯」から洗濯・掃除候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5524,7 +5524,7 @@
       "image_url": "https://www.sellemy.jp/img/household-steam-irons/household-steam-irons.png",
       "pillar_id": "pillar:家電:household_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「steam-irons」から生活家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5537,7 +5537,7 @@
       "image_url": "https://www.sellemy.jp/img/bluetooth-tv-audio-transmitters/bluetooth-tv-audio-transmitters.png",
       "pillar_id": "pillar:家電:av",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「audio」からテレビ・オーディオ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5550,7 +5550,7 @@
       "image_url": "https://www.sellemy.jp/img/stovetop-saucepans/stovetop-saucepans.png",
       "pillar_id": "pillar:日用品:kitchen",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「調理」から調理器具・キッチン雑貨候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5563,7 +5563,7 @@
       "image_url": "https://www.sellemy.jp/img/kitchen-sink-drain-strainers/kitchen-sink-drain-strainers.png",
       "pillar_id": "pillar:日用品:kitchen",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「kitchen」から調理器具・キッチン雑貨候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5576,7 +5576,7 @@
       "image_url": "https://www.sellemy.jp/img/under-bed-storage-boxes/under-bed-storage-boxes.png",
       "pillar_id": "pillar:日用品:laundry",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「収納」から洗濯・掃除候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5589,7 +5589,7 @@
       "image_url": "https://www.sellemy.jp/img/temporary-gray-root-concealers/temporary-gray-root-concealers.png",
       "pillar_id": "pillar:美容:hair",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「髪」からヘアケア・スタイリング候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5602,7 +5602,7 @@
       "image_url": "https://www.sellemy.jp/img/tabletop-makeup-mirrors/tabletop-makeup-mirrors.png",
       "pillar_id": "pillar:美容:beauty_device",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「メイクミラー」から美容機器・美容道具候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5615,7 +5615,7 @@
       "image_url": "https://www.sellemy.jp/img/toilet-cleaning-brushes/toilet-cleaning-brushes.png",
       "pillar_id": "pillar:日用品:bath",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「トイレ」からバス・トイレ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5628,7 +5628,7 @@
       "image_url": "https://www.sellemy.jp/img/external-hard-disk-drives/external-hard-disk-drives.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「HDD」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5641,7 +5641,7 @@
       "image_url": "https://www.sellemy.jp/img/freestanding-bath-towel-racks/freestanding-bath-towel-racks.png",
       "pillar_id": "pillar:日用品:bath",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「バス」からバス・トイレ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5654,7 +5654,7 @@
       "image_url": "https://www.sellemy.jp/img/computer-numeric-keypads/computer-numeric-keypads.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「computer」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5667,7 +5667,7 @@
       "image_url": "https://www.sellemy.jp/img/facial-peeling-gels/facial-peeling-gels.png",
       "pillar_id": "pillar:美容:skin",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「肌」からスキンケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5680,7 +5680,7 @@
       "image_url": "https://www.sellemy.jp/img/manual-salad-spinners/manual-salad-spinners.png",
       "pillar_id": "pillar:日用品:kitchen",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「サラダ」から調理器具・キッチン雑貨候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5693,7 +5693,7 @@
       "image_url": "https://www.sellemy.jp/img/smartphone-motorized-gimbals/smartphone-motorized-gimbals.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「phone」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5706,7 +5706,7 @@
       "image_url": "https://www.sellemy.jp/img/home-cordless-landline-telephones/home-cordless-landline-telephones.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「コードレス電話」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5719,7 +5719,7 @@
       "image_url": "https://www.sellemy.jp/img/manual-nail-files-for-natural-nails/manual-nail-files-for-natural-nails.png",
       "pillar_id": "pillar:美容:makeup",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「ネイル」からメイクアップ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5732,7 +5732,7 @@
       "image_url": "https://www.sellemy.jp/img/electric-fruit-vegetable-juicers/electric-fruit-vegetable-juicers.png",
       "pillar_id": "pillar:家電:kitchen_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「ジューサー」からキッチン家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5745,7 +5745,7 @@
       "image_url": "https://www.sellemy.jp/img/adhesive-lint-rollers-for-fabrics/adhesive-lint-rollers-for-fabrics.png",
       "pillar_id": "pillar:日用品:laundry",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「クリーナ」から洗濯・掃除候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5758,7 +5758,7 @@
       "image_url": "https://www.sellemy.jp/img/hair-styling-mousses/hair-styling-mousses.png",
       "pillar_id": "pillar:美容:hair",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「hair」からヘアケア・スタイリング候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5771,7 +5771,7 @@
       "image_url": "https://www.sellemy.jp/img/usb-hdmi-video-capture-devices/usb-hdmi-video-capture-devices.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「usb-」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5784,7 +5784,7 @@
       "image_url": "https://www.sellemy.jp/img/electric-hot-water-dispensing-pots/electric-hot-water-dispensing-pots.png",
       "pillar_id": "pillar:家電:kitchen_appliance",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「ポット」からキッチン家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5810,7 +5810,7 @@
       "image_url": "https://www.sellemy.jp/img/freestanding-entryway-shoe-racks/freestanding-entryway-shoe-racks.png",
       "pillar_id": "pillar:日用品:other",
       "confidence": "medium",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "広域分類「生活用品」要編集確認",
       "preview_link_eligible": false,
       "public_mapping_approved": false,
       "classification_state": "HOLD_FOR_EDITORIAL_REVIEW"
@@ -5823,7 +5823,7 @@
       "image_url": "https://www.sellemy.jp/img/hand-dishwashing-sponges/hand-dishwashing-sponges.png",
       "pillar_id": "pillar:日用品:table",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「食器」から食器・弁当候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5836,7 +5836,7 @@
       "image_url": "https://www.sellemy.jp/img/scalp-cleansing-shampoos-comparison/scalp-cleansing-shampoos-comparison.png",
       "pillar_id": "pillar:美容:hair",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「scalp」からヘアケア・スタイリング候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5849,7 +5849,7 @@
       "image_url": "https://www.sellemy.jp/img/full-size-sd-memory-cards/full-size-sd-memory-cards.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「memory」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5862,7 +5862,7 @@
       "image_url": "https://www.sellemy.jp/img/usb-c-hubs-for-laptops-comparison/usb-c-hubs-for-laptops-comparison.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「USB-」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5875,7 +5875,7 @@
       "image_url": "https://www.sellemy.jp/img/electronic-writing-tablets/electronic-writing-tablets.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「tablet」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5888,7 +5888,7 @@
       "image_url": "https://www.sellemy.jp/img/reusable-heat-packs/reusable-heat-packs.png",
       "pillar_id": "pillar:日用品:health",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「カイロ」から健康・セルフケア候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5901,7 +5901,7 @@
       "image_url": "https://www.sellemy.jp/img/usb-c-laptop-chargers-for-travel/usb-c-laptop-chargers-for-travel.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「USB-」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5914,7 +5914,7 @@
       "image_url": "https://www.sellemy.jp/img/eyebrow-pencils-comparison/eyebrow-pencils-comparison.png",
       "pillar_id": "pillar:美容:makeup",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「eyebrow」からメイクアップ候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5927,7 +5927,7 @@
       "image_url": "https://www.sellemy.jp/img/leave-in-hair-milks/leave-in-hair-milks.png",
       "pillar_id": "pillar:美容:hair",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「hair」からヘアケア・スタイリング候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5940,7 +5940,7 @@
       "image_url": "https://www.sellemy.jp/img/usb-c-multiport-card-readers/usb-c-multiport-card-readers.png",
       "pillar_id": "pillar:家電:digital",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「USB-」から情報・スマート家電候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5953,7 +5953,7 @@
       "image_url": "https://www.sellemy.jp/img/reusable-silicone-food-storage-bags/reusable-silicone-food-storage-bags.png",
       "pillar_id": "pillar:日用品:kitchen",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「food-storage」から調理器具・キッチン雑貨候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
@@ -5966,7 +5966,7 @@
       "image_url": "https://www.sellemy.jp/img/countertop-kitchen-scrap-bins-6-picks/countertop-kitchen-scrap-bins-6-picks.png",
       "pillar_id": "pillar:日用品:kitchen",
       "confidence": "high",
-      "classification_reason": "記事の対象商品から分類候補",
+      "classification_reason": "商品語「kitchen」から調理器具・キッチン雑貨候補",
       "preview_link_eligible": true,
       "public_mapping_approved": false,
       "classification_state": "SEMANTIC_PREVIEW_CANDIDATE"
