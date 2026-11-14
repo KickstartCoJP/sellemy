@@ -1,0 +1,874 @@
+{
+  "assignments": [
+    {
+      "slug": "best-cooking-tools-6-selection",
+      "pillar_id": "pillar:日用品:kitchen",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "enjoy-refreshing-shower-heads-6-picks",
+      "pillar_id": "pillar:日用品:bath",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "cool-bedding-6-selection",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "foot-massagers-for-summer-relaxation-6-picks",
+      "pillar_id": "pillar:日用品:health",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "cool-towels-for-summer-6-picks",
+      "pillar_id": "pillar:日用品:daily",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "easy-aroma-candles-6-picks",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "home-relaxation-goods-6-selection",
+      "pillar_id": "pillar:日用品:health",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "eco-friendly-detergents-6picks",
+      "pillar_id": "pillar:日用品:laundry",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "seasonal-clothing-storage-6-picks",
+      "pillar_id": "pillar:日用品:laundry",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "down-comforters-6-picks",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "autumn-winter-face-masks-6-picks",
+      "pillar_id": "pillar:日用品:health",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "disposable-hand-warmers-6-picks",
+      "pillar_id": "pillar:日用品:health",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "emergency-backpacks-6-picks",
+      "pillar_id": "pillar:日用品:security",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "insulated-tumblers-for-autumn-6-picks",
+      "pillar_id": "pillar:日用品:table",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "automatic-folding-umbrellas-6-picks",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "sleep-pillows-6-picks",
+      "pillar_id": "pillar:日用品:health",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "autumn-bedding-cover-sets-6-picks",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "closet-moisture-absorbers-6-picks",
+      "pillar_id": "pillar:日用品:laundry",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "warm-room-slippers-6-picks",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "lunch-boxes-bento-6-picks",
+      "pillar_id": "pillar:日用品:table",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "rain-boots-6-picks",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "food-storage-containers-6-picks",
+      "pillar_id": "pillar:日用品:kitchen",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "halloween-party-goods-6-picks",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "2027-schedule-planners-6-picks",
+      "pillar_id": "pillar:日用品:stationery",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "christmas-trees-ornaments-6-picks",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "floor-cleaning-sheets-6-picks",
+      "pillar_id": "pillar:日用品:laundry",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "travel-packing-organizers-6-picks",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "thermal-innerwear-6-picks",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "home-delivery-boxes-6-picks",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "throw-blankets-6-picks",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "window-insulation-films-6-picks",
+      "pillar_id": "pillar:日用品:laundry",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "delicate-laundry-detergents-6-picks",
+      "pillar_id": "pillar:日用品:laundry",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "knit-flat-drying-nets-6-picks",
+      "pillar_id": "pillar:日用品:laundry",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "rice-storage-bins-6-picks",
+      "pillar_id": "pillar:日用品:kitchen",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "closet-moth-repellents-6-picks",
+      "pillar_id": "pillar:日用品:laundry",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "washing-machine-drum-cleaners-6-picks",
+      "pillar_id": "pillar:日用品:laundry",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "range-hood-degreasers-6-picks",
+      "pillar_id": "pillar:日用品:laundry",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "bathroom-mold-removers-6-picks",
+      "pillar_id": "pillar:日用品:bath",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "bamboo-steamers-6-picks",
+      "pillar_id": "pillar:日用品:kitchen",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "folding-indoor-drying-racks-6-picks",
+      "pillar_id": "pillar:日用品:laundry",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "dishwasher-detergents-6-picks",
+      "pillar_id": "pillar:日用品:laundry",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "kitchen-oil-pots-6-picks",
+      "pillar_id": "pillar:日用品:kitchen",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "washable-bath-mats-6-picks",
+      "pillar_id": "pillar:日用品:bath",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "clothing-antistatic-sprays-6-picks",
+      "pillar_id": "pillar:日用品:laundry",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "insulated-soup-jars-for-lunch",
+      "pillar_id": "pillar:日用品:table",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "warm-washable-mattress-pads-6-picks",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "window-condensation-absorbers-6-picks",
+      "pillar_id": "pillar:日用品:laundry",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "new-year-cards-6-picks",
+      "pillar_id": "pillar:日用品:stationery",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "winter-scarves-mufflers-6-picks",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "warm-knit-gloves-6-picks",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "thermal-insulation-curtains-6-picks",
+      "pillar_id": "pillar:日用品:laundry",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "down-jackets-6-picks",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "winter-loungewear-pajamas-6-picks",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "winter-area-rugs-6-picks",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "suitcases-for-year-end-travel-6-picks",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "leg-warmers-6-picks",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "odor-blocking-trash-cans-6-picks",
+      "pillar_id": "pillar:日用品:laundry",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "osechi-jubako-boxes-6-picks",
+      "pillar_id": "pillar:日用品:table",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "disinfectant-sprays-6-picks",
+      "pillar_id": "pillar:日用品:laundry",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "heat-tech-socks-6-picks",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "fabric-softeners-6-picks",
+      "pillar_id": "pillar:日用品:laundry",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "winter-beanies-ear-muffs-6-picks",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "2027-wall-desk-calendars-6-picks",
+      "pillar_id": "pillar:日用品:stationery",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "medicated-hand-soaps-6-picks",
+      "pillar_id": "pillar:日用品:health",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "glass-window-cleaners-6-picks",
+      "pillar_id": "pillar:日用品:laundry",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "oseibo-gift-sets-6-picks",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "hot-pot-soup-bases-6-picks",
+      "pillar_id": "pillar:日用品:kitchen",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "dog-winter-clothes-6-picks",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "non-metal-tire-chains-6-picks",
+      "pillar_id": "pillar:日用品:security",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "new-year-decorations-6-picks",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "anti-slip-snow-boots-6-picks",
+      "pillar_id": "pillar:日用品:security",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "christmas-cakes-6-picks",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "rain-coats-ponchos-6-picks",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "entrance-doormats-6-picks",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "cat-litter-6-picks",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "pet-heating-beds-6-picks",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "car-windshield-deicer-sprays-6-picks",
+      "pillar_id": "pillar:日用品:security",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "compression-socks-6-picks",
+      "pillar_id": "pillar:日用品:health",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "microfiber-cleaning-cloths-6-picks",
+      "pillar_id": "pillar:日用品:laundry",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "christmas-gift-wrapping-supplies-6-picks",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "kitchen-knives-6-picks",
+      "pillar_id": "pillar:日用品:kitchen",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "cutting-boards-6-picks",
+      "pillar_id": "pillar:日用品:kitchen",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "emergency-food-stockpile-6-picks",
+      "pillar_id": "pillar:日用品:security",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "led-illumination-lights-6-picks",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "throat-lozenges-gargle-6-picks",
+      "pillar_id": "pillar:日用品:health",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "door-draft-stoppers-6-picks",
+      "pillar_id": "pillar:日用品:laundry",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "hiking-trekking-shoes-6-picks",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "halloween-candy-treat-sets-6-picks",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "futon-compression-bags-6-picks",
+      "pillar_id": "pillar:日用品:laundry",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "wool-knitting-yarns",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "miso-strainers",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "chestnut-peeling-tools",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "magnetic-bathroom-storage-racks",
+      "pillar_id": "pillar:日用品:bath",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "manual-pruning-saws",
+      "pillar_id": "pillar:日用品:laundry",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "laundry-baskets",
+      "pillar_id": "pillar:日用品:bath",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "manual-coffee-drippers-6-picks",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "gratin-baking-dishes-6-picks",
+      "pillar_id": "pillar:日用品:table",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "cooking-aprons-6-picks",
+      "pillar_id": "pillar:日用品:kitchen",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "tabletop-insulated-serving-pots-6-picks",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "bathroom-stools",
+      "pillar_id": "pillar:日用品:bath",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "replacement-bathtub-covers",
+      "pillar_id": "pillar:日用品:bath",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "structured-jacket-coat-hangers",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "manual-coffee-grinders-comparison",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "book-reading-stands",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "shopping-carry-carts",
+      "pillar_id": "pillar:日用品:laundry",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "picnic-leisure-sheets",
+      "pillar_id": "pillar:日用品:laundry",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "bookends-for-shelves-and-desks",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "hand-pruning-shears",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "dish-drying-racks",
+      "pillar_id": "pillar:日用品:table",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "garment-care-brushes",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "stovetop-water-kettles",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "household-toilet-cleaning-detergents",
+      "pillar_id": "pillar:日用品:bath",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "clothing-washing-machine-nets",
+      "pillar_id": "pillar:日用品:laundry",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "freestanding-ironing-boards",
+      "pillar_id": "pillar:日用品:laundry",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "loose-leaf-teapots",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "home-entryway-shoehorns",
+      "pillar_id": "pillar:日用品:laundry",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "kitchen-knife-whetstones",
+      "pillar_id": "pillar:日用品:kitchen",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "smooth-leather-shoe-creams",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "floor-cleaning-wiper-handles",
+      "pillar_id": "pillar:日用品:laundry",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "laundry-pretreatment-stain-removers",
+      "pillar_id": "pillar:日用品:laundry",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "food-preparation-kitchen-scissors",
+      "pillar_id": "pillar:日用品:kitchen",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "home-umbrella-storage-stands",
+      "pillar_id": "pillar:日用品:laundry",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "household-trash-bags",
+      "pillar_id": "pillar:日用品:laundry",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "household-rolling-storage-carts",
+      "pillar_id": "pillar:日用品:laundry",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "everyday-replacement-shoe-insoles",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "folding-household-step-stools",
+      "pillar_id": "pillar:日用品:laundry",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "everyday-cooking-frying-pans",
+      "pillar_id": "pillar:日用品:kitchen",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "manual-vegetable-slicers",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "laundry-pinch-hangers",
+      "pillar_id": "pillar:日用品:laundry",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "hand-dishwashing-detergents",
+      "pillar_id": "pillar:日用品:table",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "kitchen-oven-mitts",
+      "pillar_id": "pillar:日用品:kitchen",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "bathroom-water-removal-squeegees",
+      "pillar_id": "pillar:日用品:bath",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "oxygen-based-laundry-bleaches",
+      "pillar_id": "pillar:日用品:laundry",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "stovetop-saucepans",
+      "pillar_id": "pillar:日用品:kitchen",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "kitchen-sink-drain-strainers",
+      "pillar_id": "pillar:日用品:kitchen",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "under-bed-storage-boxes",
+      "pillar_id": "pillar:日用品:laundry",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "toilet-cleaning-brushes",
+      "pillar_id": "pillar:日用品:bath",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "freestanding-bath-towel-racks",
+      "pillar_id": "pillar:日用品:bath",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "manual-salad-spinners",
+      "pillar_id": "pillar:日用品:kitchen",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "adhesive-lint-rollers-for-fabrics",
+      "pillar_id": "pillar:日用品:laundry",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "freestanding-entryway-shoe-racks",
+      "pillar_id": "pillar:日用品:other",
+      "confidence": "medium",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "hand-dishwashing-sponges",
+      "pillar_id": "pillar:日用品:table",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "reusable-heat-packs",
+      "pillar_id": "pillar:日用品:health",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "reusable-silicone-food-storage-bags",
+      "pillar_id": "pillar:日用品:kitchen",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    },
+    {
+      "slug": "countertop-kitchen-scrap-bins-6-picks",
+      "pillar_id": "pillar:日用品:kitchen",
+      "confidence": "high",
+      "reason": "記事の対象商品から分類候補"
+    }
+  ]
+}

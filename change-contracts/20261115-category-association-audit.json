@@ -2,24 +2,56 @@
   "schema": "kickstart-change-contract/v1",
   "task_id": "BU002-CATEGORY-ARTICLE-ASSOCIATION-AUDIT-20261115",
   "instruction_ref": "CEO 2026-11-15: カテゴリの続きを進める",
-  "instruction": "Assess candidate relationships between the existing finalized 720 category tags, 21 navigation pillars, and published Sellemy articles. Generate a reproducible staging-only coverage audit, hold nonmatching and ambiguous candidates, and do not manufacture editorial approval or expose unpublished category pages.",
+  "instruction": "Continue the approved category audit by product-type semantic matching for all 447 published articles, with explicit override/cross-genre validation, 18 noindex/staging preview pages for sufficiently covered pillars, and editorial HOLD for broad or unsafe assignments. No public category pages or article writes.",
   "implementer": "sellemy-ops via Mac Studio v2",
   "canonical_refs": [
     "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3",
     "https://app.notion.com/p/3f467ec6a100818aab57fdb76acb791c"
   ],
   "allowed_paths": [
+    "change-contracts/20261115-category-association-audit.json",
+    "preview/category-pages/beauty/beauty_device.html",
+    "preview/category-pages/beauty/body.html",
+    "preview/category-pages/beauty/hair.html",
+    "preview/category-pages/beauty/makeup.html",
+    "preview/category-pages/beauty/skin.html",
+    "preview/category-pages/dailygoods/bath.html",
+    "preview/category-pages/dailygoods/daily.html",
+    "preview/category-pages/dailygoods/health.html",
+    "preview/category-pages/dailygoods/kitchen.html",
+    "preview/category-pages/dailygoods/laundry.html",
+    "preview/category-pages/dailygoods/security.html",
+    "preview/category-pages/dailygoods/stationery.html",
+    "preview/category-pages/dailygoods/table.html",
+    "preview/category-pages/gadget/av.html",
+    "preview/category-pages/gadget/climate.html",
+    "preview/category-pages/gadget/digital.html",
+    "preview/category-pages/gadget/household_appliance.html",
+    "preview/category-pages/gadget/kitchen_appliance.html",
     "scripts/audit_category_article_links.py",
+    "scripts/stage_category_semantic_review.py",
     "staging/category-association/coverage.json",
+    "staging/category-association/curation-overrides.json",
+    "staging/category-association/semantic-reviewed.json",
+    "staging/category-association/source/beauty.json",
+    "staging/category-association/source/dailygoods.json",
+    "staging/category-association/source/gadget.json",
     "tests/test_category_article_association_audit.py",
-    "change-contracts/20261115-category-association-audit.json"
+    "tests/test_category_semantic_review.py"
   ],
   "preserved_rules": [
     "Existing 3 genre and 21-pillar taxonomy identity/order unchanged",
     "Published articles, article URLs and category top navigation unchanged",
     "Title string matches are candidates for independent editorial review only",
     "No unsupported automatic taxonomy assignment or public category pages",
-    "No production writes or article/QA mutations before CEO Gate"
+    "No production writes or article/QA mutations before CEO Gate",
+    "All 447 published articles are accounted for; ambiguous results are held",
+    "Article metadata and 21-pillar taxonomy retain original identity",
+    "Category page preview links reference only published article URLs and contain noindex/nofollow",
+    "No automatic categorization accepted for production without independent editorial QA"
   ],
-  "acceptance_tests": ["tests/test_category_article_association_audit.py"]
+  "acceptance_tests": [
+    "tests/test_category_article_association_audit.py",
+    "tests/test_category_semantic_review.py"
+  ]
 }
