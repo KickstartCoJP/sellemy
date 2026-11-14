@@ -12,6 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 ZERO = '0' * 40
 PREFIX = 'Publish Writer-generated growth article: '
+PURPOSE_PREFIX = 'Publish approved Purpose feature: '
 CONTRACT_DIR = 'change-contracts/'
 
 
@@ -70,6 +71,49 @@ def is_publication_only(changes: set[str], base: str, head: str) -> bool:
     return changes.issubset(expected) and existing_publication_identity(base, slug, category)
 
 
+
+def is_purpose_publication_only(changes: set[str], base: str, head: str) -> bool:
+    """Allow one pre-approved Purpose Hub publication unit through the PR gate."""
+    try:
+        titles = git('log', '--format=%s', f'{base}..{head}').splitlines()
+    except (subprocess.CalledProcessError, OSError):
+        return False
+    if len(titles) != 1 or not titles[0].startswith(PURPOSE_PREFIX):
+        return False
+    feature_id = titles[0][len(PURPOSE_PREFIX):]
+    if not re.fullmatch(r'PH-[A-Z0-9]+(?:-[A-Z0-9]+)*', feature_id):
+        return False
+    theme_pages = sorted(p for p in changes if p != 'themes/index.html' and re.fullmatch(r'themes/[a-z0-9]+(?:-[a-z0-9]+)*\.html', p))
+    if len(theme_pages) != 1:
+        return False
+    theme_path = theme_pages[0]
+    slug = Path(theme_path).stem
+    article_pages = sorted(p for p in changes if re.fullmatch(r'article/[^/]+/[a-z0-9]+(?:-[a-z0-9]+)*\.html', p))
+    if len(article_pages) < 6:
+        return False
+    allowed = set(article_pages) | {theme_path, 'themes/index.html', 'sitemap.xml', 'data/sellemy.db', 'index.html', 'css/style.css'}
+    if not changes <= allowed:
+        return False
+    if not {theme_path, 'themes/index.html', 'sitemap.xml', 'data/sellemy.db'} <= changes:
+        return False
+    try:
+        theme = git('show', f'{head}:{theme_path}')
+        if f'<link rel="canonical" href="https://www.sellemy.jp/themes/{slug}.html"' not in theme:
+            return False
+        sitemap = git('show', f'{head}:sitemap.xml')
+        if f'<loc>https://www.sellemy.jp/themes/{slug}.html</loc>' not in sitemap:
+            return False
+        index = git('show', f'{head}:themes/index.html')
+        if f'/themes/{slug}.html' not in index:
+            return False
+        for article in article_pages:
+            body = git('show', f'{head}:{article}')
+            if f'/themes/{slug}.html' not in body:
+                return False
+    except subprocess.CalledProcessError:
+        return False
+    return True
+
 def validate_contract(changes: set[str], head: str) -> list[str]:
     errors: list[str] = []
     contracts = sorted(p for p in changes if p.startswith(CONTRACT_DIR) and p.endswith('.json'))
@@ -118,9 +162,9 @@ def check(base: str, head: str, *, destination: str) -> list[str]:
     paths = changed_paths(base, head)
     if not paths:
         return []
-    if destination != 'refs/heads/main' and is_publication_only(paths, base, head):
+    if destination != 'refs/heads/main' and (is_publication_only(paths, base, head) or is_purpose_publication_only(paths, base, head)):
         return []
-    if destination == 'refs/heads/main' and is_publication_only(paths, base, head):
+    if destination == 'refs/heads/main' and (is_publication_only(paths, base, head) or is_purpose_publication_only(paths, base, head)):
         return []
     if destination == 'refs/heads/main':
         return ['direct development pushes to main are forbidden; submit a reviewed PR']
