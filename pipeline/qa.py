@@ -46,7 +46,9 @@ def main_text_length(html: str) -> int:
     match = _MAIN_PATTERN.search(html)
     if not match:
         return 0
-    return len(strip_tags(match.group(1)))
+    # Affiliate disclosure is fixed page chrome, not Writer-authored content.
+    content = re.sub(r'<p class="affiliate-disclosure">.*?</p>', '', match.group(1), flags=re.S)
+    return len(strip_tags(content))
 
 
 def check_range(value: int, bounds: tuple[int, int]) -> bool:
