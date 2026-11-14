@@ -1,0 +1,46 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "TASK-BU002-EDITORIAL-139-RECOVERY-20261115",
+  "instruction_ref": "CEO formal editorial139 instruction 20261115 and direct COO execution correction",
+  "instruction": "Edit only approved139 wording/editorial targets sequentially. Preserve six products, ordering, URLs, HTML layout, CSS and images. No fabricated claims; retain useful comparison. No publication until new CEO portal approval. Batch01 contains ten baseline-matched reviewed candidates only; other articles excluded.",
+  "implementer": "COO direct manual editorial work; independent changed-portions QA",
+  "canonical_refs": [
+    "https://github.com/KickstartCoJP/sellemy",
+    "TASK-BU002-EDITORIAL-139-RECOVERY-20261115"
+  ],
+  "allowed_paths": [
+    "article/beauty/after-sun-lotion-6-choices.html",
+    "article/beauty/all-in-one-gel-6-picks.html",
+    "article/beauty/autumn-cheek-blush-6-picks.html",
+    "article/beauty/autumn-eyeshadow-palettes-6-picks.html",
+    "article/beauty/autumn-lip-colors-6-picks.html",
+    "article/beauty/autumn-moisturizing-sheet-masks-6-picks.html",
+    "article/beauty/autumn-winter-moisturizing-primers-6-picks.html",
+    "article/dailygoods/anti-slip-snow-boots-6-picks.html",
+    "article/dailygoods/automatic-folding-umbrellas-6-picks.html",
+    "article/dailygoods/autumn-bedding-cover-sets-6-picks.html",
+    "change-contracts/20261115-editorial139-batch01.json",
+    "data/payloads/all-in-one-gel-6-picks.json",
+    "data/payloads/anti-slip-snow-boots-6-picks.json",
+    "data/payloads/automatic-folding-umbrellas-6-picks.json",
+    "data/payloads/autumn-bedding-cover-sets-6-picks.json",
+    "data/payloads/autumn-cheek-blush-6-picks.json",
+    "data/payloads/autumn-eyeshadow-palettes-6-picks.json",
+    "data/payloads/autumn-lip-colors-6-picks.json",
+    "data/payloads/autumn-moisturizing-sheet-masks-6-picks.json",
+    "data/payloads/autumn-winter-moisturizing-primers-6-picks.json",
+    "reports/editorial139-batch01-20261115.json",
+    "tests/test_editorial139_batch01.py"
+  ],
+  "preserved_rules": [
+    "No runtime/pipeline or workflow changes",
+    "No product reselection; same six products and order, images and URLs",
+    "No layouts/CSS changed; only reviewed editorial text and description metadata",
+    "Existing passed content untouched; existing factual claims not recertified",
+    "CEO portal approval required; no self-approval or merge",
+    "Excluded25 replan and legacy436 not processed"
+  ],
+  "acceptance_tests": [
+    "tests/test_editorial139_batch01.py"
+  ]
+}
