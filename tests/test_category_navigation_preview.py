@@ -25,9 +25,13 @@ class CategoryNavigationPreviewTests(unittest.TestCase):
             source, page = original.read_text(), preview.read_text()
             groups = [p for p in taxonomy['pillars'] if p['parent_id'] == 'genre:' + genre]
             self.assertEqual(len(groups), count)
-            self.assertEqual(page.count('class="nav-preview-card"'), count)
+            self.assertEqual(page.count('class="category-discovery-links"'), 1)
+            self.assertEqual(page.count('href="#preview-category-'), count)
             self.assertEqual(page.count('class="nav-preview-target"'), count)
-            self.assertTrue(page.index('class="nav-preview"') < page.index('id="articleList"'))
+            self.assertTrue(page.index('class="category-intro"') < page.index('class="category-discovery"') < page.index('id="articleList"'))
+            self.assertIn('<details>', page)
+            self.assertIn('<summary>気になるテーマから探す</summary>', page)
+            self.assertNotIn('class="nav-preview-grid"', page)
             self.assertIn('STAGING PREVIEW', page)
             for i, group in enumerate(groups, 1):
                 self.assertIn(html.escape(group['name']), page)
