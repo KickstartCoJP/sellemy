@@ -81,6 +81,32 @@ class ChangeContractGateTests(unittest.TestCase):
         with patch.object(gate, 'changed_paths', return_value=changed), patch.object(gate, 'git', return_value=gate.PREFIX + slug):
             self.assertEqual(gate.check('old', 'new', destination='refs/heads/pr'), [])
 
+    def test_verified_purpose_publication_pr_is_allowed(self):
+        feature_id, slug = 'PH-GROOMING', 'grooming-routine'
+        articles = {f'article/beauty/article-{i}.html' for i in range(6)}
+        changed = articles | {f'themes/{slug}.html', 'themes/index.html', 'sitemap.xml', 'data/sellemy.db'}
+        def git(*args):
+            if args[:2] == ('log', '--format=%s'):
+                return gate.PURPOSE_PREFIX + feature_id
+            if args == ('show', f'new:themes/{slug}.html'):
+                return f'<link rel="canonical" href="https://www.sellemy.jp/themes/{slug}.html">'
+            if args == ('show', 'new:sitemap.xml'):
+                return f'<loc>https://www.sellemy.jp/themes/{slug}.html</loc>'
+            if args == ('show', 'new:themes/index.html'):
+                return f'<a href="/themes/{slug}.html">x</a>'
+            if len(args) == 2 and args[0] == 'show' and args[1].startswith('new:article/'):
+                return f'<a href="/themes/{slug}.html">Purpose</a>'
+            raise AssertionError(args)
+        with patch.object(gate, 'changed_paths', return_value=changed), patch.object(gate, 'git', side_effect=git):
+            self.assertEqual(gate.check('old', 'new', destination='refs/heads/pr'), [])
+
+    def test_purpose_publication_with_unrelated_file_is_rejected(self):
+        feature_id, slug = 'PH-GROOMING', 'grooming-routine'
+        articles = {f'article/beauty/article-{i}.html' for i in range(6)}
+        changed = articles | {f'themes/{slug}.html', 'themes/index.html', 'sitemap.xml', 'data/sellemy.db', 'pipeline/evil.py'}
+        with patch.object(gate, 'changed_paths', return_value=changed), patch.object(gate, 'git', return_value=gate.PURPOSE_PREFIX + feature_id):
+            self.assertTrue(gate.check('old', 'new', destination='refs/heads/pr'))
+
     def test_publication_with_extra_code_is_rejected(self):
         changed = gate.publication_paths('sample-article', 'dailygoods') | {self.code_path}
         with patch.object(gate, 'changed_paths', return_value=changed), patch.object(gate, 'git', return_value=gate.PREFIX + 'sample-article'):

@@ -1,0 +1,19 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "TASK-BU002-PURPOSE-PRODUCTION-IMPLEMENT-20261007-001",
+  "instruction_ref": "CEO instruction 2026-11-15: candidate rankingをGPT-6 Solへ変更し、運用が回るところまで進める",
+  "instruction": "Purpose HubのCEO承認済みexact artifactをRepository Rule下でPR公開できるよう、change-contract gateにPurpose publication unitを追加する。",
+  "implementer": "sellemy-purpose-ops",
+  "canonical_refs": ["TASK-BU002-PURPOSE-PRODUCTION-IMPLEMENT-20261007-001"],
+  "allowed_paths": [
+    "change-contracts/20261115-purpose-publish-pr-gate.json",
+    "ops/change_contract_gate.py",
+    "tests/test_change_contract_gate.py"
+  ],
+  "preserved_rules": [
+    "一般開発のdirect main push禁止を維持する",
+    "単一記事publication gateを維持する",
+    "Purpose publicationは特集ページ・逆リンク記事・DB・sitemap等の限定された公開単位だけ許可する"
+  ],
+  "acceptance_tests": ["tests/test_change_contract_gate.py"]
+}
