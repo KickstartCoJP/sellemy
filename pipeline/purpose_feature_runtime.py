@@ -217,7 +217,7 @@ def render_related_features(features: list[dict[str, str]]) -> str:
         links = ''.join(
             f'<li><a href="{html.escape(f["url"])}">{html.escape(f["title"])}</a></li>' for f in features
         )
-        inner = f'<aside class="related-features"><h2>関連する目的</h2><ul>{links}</ul></aside>'
+        inner = f'<aside class="related-features"><h2>関連する特集</h2><ul>{links}</ul></aside>'
     return f'{START}{inner}{END}'
 
 
@@ -238,10 +238,11 @@ def _article_path(row: dict[str, Any]) -> Path:
 
 
 def render_feature_page(conn: sqlite3.Connection, feature_id: str) -> str:
-    feature = conn.execute('''SELECT slug,title,purpose_statement,intro,seo_title,meta_description FROM features WHERE feature_id=?''', (feature_id,)).fetchone()
+    feature_cfg = _load_feature(feature_id)
+    feature = conn.execute('''SELECT slug,title,purpose_statement,intro,seo_title,meta_description,hero_image FROM features WHERE feature_id=?''', (feature_id,)).fetchone()
     if not feature:
         raise ValueError(feature_id)
-    slug, title, purpose, intro, seo_title, meta_description = feature
+    slug, title, purpose, intro, seo_title, meta_description, hero_image = feature
     rows = conn.execute('''
       SELECT a.slug,a.title,a.category,a.summary,r.relation_type,r.display_order
       FROM article_feature_relations r JOIN articles a ON a.article_id=r.article_id
@@ -255,58 +256,87 @@ def render_feature_page(conn: sqlite3.Connection, feature_id: str) -> str:
             f'<img src="/img/{html.escape(a_slug)}/{html.escape(a_slug)}.png" alt="{html.escape(a_title)}" />'
             f'<div><h3>{html.escape(a_title)}</h3><p>{html.escape(summary)}</p></div></a>'
         )
-    core = ''.join(card(row) for row in rows if row[4] == 'core')
-    supporting = ''.join(card(row) for row in rows if row[4] == 'supporting')
-    canonical = f'{BASE}/themes/{slug}.html'
+    explicit_sections = feature_cfg.get('ui_sections') if isinstance(feature_cfg, dict) else None
+    if isinstance(explicit_sections, list) and explicit_sections:
+        by_id = {str(row[0]): row for row in rows}
+        rendered_sections=[]; used=set()
+        for section in explicit_sections:
+            if not isinstance(section, dict):
+                continue
+            heading=str(section.get('heading') or '').strip(); cards=[]
+            for article_id in [str(v) for v in (section.get('article_ids') or [])]:
+                row=by_id.get(article_id)
+                if row is None or article_id in used:
+                    continue
+                used.add(article_id); cards.append(card(row))
+            if heading and cards:
+                rendered_sections.append(f'<section><div class="section-title"><h2>{html.escape(heading)}</h2></div><div class="feature-article-list">{"".join(cards)}</div></section>')
+        remaining=[row for row in rows if str(row[0]) not in used]
+        if remaining:
+            rendered_sections.append('<section><div class="section-title"><h2>そのほかの身だしなみケア</h2></div><div class="feature-article-list">'+''.join(card(row) for row in remaining)+'</div></section>')
+        sections_html=''.join(rendered_sections)
+    else:
+        core=''.join(card(row) for row in rows if row[4]=='core')
+        supporting=''.join(card(row) for row in rows if row[4]=='supporting')
+        sections_html=(f'<section><div class="section-title"><h2>まず整えたいアイテム</h2></div><div class="feature-article-list">{core}</div></section>'
+            + (f'<section><div class="section-title"><h2>{html.escape(str(feature_cfg.get("supporting_heading") or "あわせて取り入れたいもの"))}</h2></div><div class="feature-article-list">{supporting}</div></section>' if supporting else ''))
+    canonical=f'{BASE}/themes/{slug}.html'
+    nav='<nav class="site-nav"><ul class="nav-links"><li><a href="/article/beauty/" class="nav-link">美容</a></li><li><a href="/article/dailygoods/" class="nav-link">日用品</a></li><li><a href="/article/gadget/" class="nav-link">家電</a></li><li><a href="/themes/" class="nav-link active">特集</a></li><li><a href="/articles.html" class="nav-link">記事一覧</a></li><li><a href="/products.html" class="nav-link">商品一覧</a></li></ul></nav>'
     return (
         '<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />'
         f'<title>{html.escape(seo_title)}</title><meta name="description" content="{html.escape(meta_description)}" />'
         f'<link rel="canonical" href="{canonical}" /><link rel="stylesheet" href="/css/style.css" />'
         '<script async src="https://www.googletagmanager.com/gtag/js?id=G-SZ5RQR5H7L"></script><script src="/js/ga4.js"></script>'
         '</head><body class="feature-detail" data-category="themes">'
-        '<header class="site-header"><div class="brand"><a href="/index.html"><img src="/img/sellemy-logo.png" alt="Sellemyロゴ" class="logo" /></a>'
-        '<span class="tagline">選びやすくて、わたしにちょうどいい情報ガイド</span></div></header><main>'
-        f'<nav class="breadcrumb"><ul><li><a href="/index.html">Top</a></li><li><a href="/themes/">目的から探す</a></li><li><span>{html.escape(title)}</span></li></ul></nav>'
-        f'<div class="section-title"><h1>{html.escape(title)}</h1></div><p class="feature-purpose">{html.escape(purpose)}</p><p class="lead">{html.escape(intro)}</p>'
-        f'<section><div class="section-title"><h2>まず整えたいアイテム</h2></div><div class="feature-article-list">{core}</div></section>'
-        + (f'<section><div class="section-title"><h2>周辺環境も整える</h2></div><div class="feature-article-list">{supporting}</div></section>' if supporting else '')
+        '<header class="site-header"><div class="brand"><a href="/index.html"><img src="/img/sellemy-logo.png" alt="Sellemyロゴ" class="logo" /></a><span class="tagline">選びやすくて、わたしにちょうどいい情報ガイド</span></div>'+nav+'</header><main>'
+        f'<nav class="breadcrumb"><ul><li><a href="/index.html">Top</a></li><li><a href="/themes/">特集</a></li><li><span>{html.escape(title)}</span></li></ul></nav>'
+        f'<div class="section-title feature-title"><h1>{html.escape(title)}</h1></div>'
+        + (f'<img class="feature-hero-image" src="{html.escape(hero_image)}" alt="{html.escape(title)}" />' if hero_image else '')
+        + f'<p class="feature-purpose">{html.escape(purpose)}</p><p class="lead">{html.escape(intro)}</p>'
+        + sections_html
         + '</main><footer><p>&copy; 2026 Sellemy. All rights reserved.</p></footer></body></html>'
     )
 
 
 def render_themes_index(conn: sqlite3.Connection) -> str:
     rows = conn.execute('''
-      SELECT slug,title,purpose_statement FROM features
+      SELECT slug,title,purpose_statement,hero_image FROM features
       WHERE lifecycle_status='published' AND navigation_visibility IN ('promoted','listed')
       ORDER BY editorial_priority DESC,title
     ''').fetchall()
     cards = ''.join(
-        f'<a class="feature-card" href="/themes/{html.escape(slug)}.html"><h2>{html.escape(title)}</h2><p>{html.escape(purpose)}</p></a>'
-        for slug, title, purpose in rows
+        f'<a class="feature-card" href="/themes/{html.escape(slug)}.html">'
+        + (f'<img class="feature-card-image" src="{html.escape(hero_image)}" alt="" loading="lazy" />' if hero_image else '')
+        + f'<div class="feature-card-copy"><h2>{html.escape(title)}</h2><p>{html.escape(purpose)}</p><span class="feature-card-arrow" aria-hidden="true">→</span></div></a>'
+        for slug, title, purpose, hero_image in rows
     )
     return (
         '<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />'
-        '<title>目的から探す - Sellemy</title><meta name="description" content="暮らしの中で良くしたいこと・整えたいことから、Sellemyの比較記事を探せる特集ページです。" />'
+        '<title>特集 - Sellemy</title><meta name="description" content="暮らしが少しよくなるテーマを、Sellemyの特集としてまとめています。" />'
         f'<link rel="canonical" href="{BASE}/themes/" /><link rel="stylesheet" href="/css/style.css" />'
         '<script async src="https://www.googletagmanager.com/gtag/js?id=G-SZ5RQR5H7L"></script><script src="/js/ga4.js"></script>'
         '</head><body class="feature-index" data-category="themes"><header class="site-header"><div class="brand">'
         '<a href="/index.html"><img src="/img/sellemy-logo.png" alt="Sellemyロゴ" class="logo" /></a>'
-        '<span class="tagline">選びやすくて、わたしにちょうどいい情報ガイド</span></div></header><main>'
-        '<nav class="breadcrumb"><ul><li><a href="/index.html">Top</a></li><li><span>目的から探す</span></li></ul></nav>'
-        '<div class="section-title"><h1>暮らしを、もう少し快適に</h1></div><p class="lead">商品カテゴリではなく、「何を良くしたいか」から比較記事を探せます。</p>'
+        '<span class="tagline">選びやすくて、わたしにちょうどいい情報ガイド</span></div>'
+        '<nav class="site-nav"><ul class="nav-links"><li><a href="/article/beauty/" class="nav-link">美容</a></li><li><a href="/article/dailygoods/" class="nav-link">日用品</a></li><li><a href="/article/gadget/" class="nav-link">家電</a></li><li><a href="/themes/" class="nav-link active">特集</a></li><li><a href="/articles.html" class="nav-link">記事一覧</a></li><li><a href="/products.html" class="nav-link">商品一覧</a></li></ul></nav></header><main>'
+        '<nav class="breadcrumb"><ul><li><a href="/index.html">Top</a></li><li><span>特集</span></li></ul></nav>'
+        '<div class="feature-index-heading"><h1>特集</h1><p>暮らしが少しよくなるテーマを、特集としてまとめています。</p></div>'
         f'<div class="feature-card-list">{cards}</div></main><footer><p>&copy; 2026 Sellemy. All rights reserved.</p></footer></body></html>'
     )
 
 
 def _ensure_top_link() -> None:
     text = TOP.read_text(encoding='utf-8')
-    link = '<li><a href="/themes/" class="nav-link" data-name="themes">目的から探す</a></li>'
-    if link in text:
-        return
-    marker = '<li><a href="/articles.html" class="nav-link" data-name="articles">記事一覧</a></li>'
-    if marker not in text:
-        raise ValueError('TOP nav insertion marker missing')
-    TOP.write_text(text.replace(marker, link + '\n        ' + marker, 1), encoding='utf-8')
+    old = '<li><a href="/themes/" class="nav-link" data-name="themes">目的から探す</a></li>'
+    link = '<li><a href="/themes/" class="nav-link" data-name="themes">特集</a></li>'
+    if old in text:
+        text = text.replace(old, link)
+    elif link not in text:
+        marker = '<li><a href="/articles.html" class="nav-link" data-name="articles">記事一覧</a></li>'
+        if marker not in text:
+            raise ValueError('TOP nav insertion marker missing')
+        text = text.replace(marker, link + '\n        ' + marker, 1)
+    TOP.write_text(text, encoding='utf-8')
 
 
 def _ensure_sitemap_urls(urls: list[str]) -> None:
@@ -336,9 +366,17 @@ def _ensure_css() -> None:
     css = ROOT / 'css' / 'style.css'
     text = css.read_text(encoding='utf-8')
     marker = '/* ========= Purpose Features ========= */'
+    block = '''
+.feature-index main,.feature-detail main{max-width:1080px;margin:0 auto;padding:2rem;line-height:1.8}
+.feature-index-heading{text-align:center;margin:2.5rem auto 2rem;max-width:680px}.feature-index-heading h1{font-size:1.8rem;font-weight:600;color:#444;margin:0 0 .7rem}.feature-index-heading p{margin:0;color:#666}
+.feature-card-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.6rem;margin:2rem 0 2.5rem}.feature-card{display:block;background:#fff;border:1px solid #eee;border-radius:12px;overflow:hidden;text-decoration:none;color:#333;box-shadow:0 2px 6px rgba(0,0,0,.04);transition:transform .2s ease,box-shadow .2s ease}.feature-card:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(0,0,0,.08)}.feature-card-image{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#f7f4f2}.feature-card-copy{position:relative;padding:1.15rem 3rem 1.2rem 1.25rem}.feature-card-copy h2{font-size:1.2rem;margin:0 0 .45rem;line-height:1.45}.feature-card-copy p{font-size:.9rem;color:#666;margin:0;line-height:1.7}.feature-card-arrow{position:absolute;right:1.25rem;top:1.2rem;font-size:1.2rem;color:#9a7d74}
+.feature-hero-image{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:1.25rem 0 1.5rem;background:#f7f4f2}.feature-purpose{font-weight:600;color:#555;margin:1rem 0 .6rem}.feature-detail .lead{margin-top:.4rem}.feature-article-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.25rem;margin:1.5rem 0 2.5rem}.feature-article-card{display:block;background:#fff;border:1px solid #eee;border-radius:8px;padding:1rem;text-decoration:none;color:#333}.feature-article-card:hover{box-shadow:0 0 8px rgba(0,0,0,.08)}.feature-article-card img{width:100%;height:180px;object-fit:contain;border-radius:6px}.feature-article-card h3{font-size:1.05rem;margin:.8rem 0 .4rem}.feature-article-card p{font-size:.9rem;color:#666}.related-features{margin:2rem 0 0;padding:1rem 1.2rem;border-top:1px solid #eee;background:#fafafa;border-radius:8px}.related-features h2{font-size:1rem!important;background:none!important;border:0!important;padding:0!important;margin:0 0 .5rem!important;color:#666!important}.related-features ul{margin:0;padding-left:1.2rem}.related-features a{color:#6d514c;text-decoration:underline}
+@media screen and (max-width:700px){.feature-index main,.feature-detail main{padding:1.25rem}.feature-card-list{grid-template-columns:1fr;gap:1.1rem}.feature-card-copy{padding:1rem 2.8rem 1.05rem 1rem}.feature-card-copy h2{font-size:1.08rem}.feature-card-copy p{font-size:.86rem}.feature-hero-image{border-radius:9px}.feature-index-heading{margin:1.7rem auto 1.3rem}}
+'''
     if marker in text:
-        return
-    text += '''\n\n/* ========= Purpose Features ========= */\n.feature-index main,.feature-detail main{max-width:1000px;margin:0 auto;padding:2rem;line-height:1.8}.feature-card-list,.feature-article-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.25rem;margin:1.5rem 0 2.5rem}.feature-card,.feature-article-card{display:block;background:#fff;border:1px solid #eee;border-radius:8px;padding:1rem;text-decoration:none;color:#333}.feature-card:hover,.feature-article-card:hover{box-shadow:0 0 8px rgba(0,0,0,.08)}.feature-article-card img{width:100%;height:180px;object-fit:contain;border-radius:6px}.feature-article-card h3{font-size:1.05rem;margin:.8rem 0 .4rem}.feature-article-card p,.feature-card p{font-size:.9rem;color:#666}.feature-purpose{font-weight:600;color:#555}.related-features{margin:2rem 0 0;padding:1rem 1.2rem;border-top:1px solid #eee;background:#fafafa;border-radius:8px}.related-features h2{font-size:1rem!important;background:none!important;border:0!important;padding:0!important;margin:0 0 .5rem!important;color:#666!important}.related-features ul{margin:0;padding-left:1.2rem}.related-features a{color:#6d514c;text-decoration:underline}\n'''
+        text = text.split(marker,1)[0].rstrip() + '\n\n' + marker + '\n' + block.strip() + '\n'
+    else:
+        text = text.rstrip() + '\n\n' + marker + '\n' + block.strip() + '\n'
     css.write_text(text, encoding='utf-8')
 
 

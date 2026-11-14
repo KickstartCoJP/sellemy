@@ -5,7 +5,7 @@
     {
       "feature_id": "PH-DESK",
       "slug": "desk-environment",
-      "title": "デスク環境を整える",
+      "title": "デスク環境が整う",
       "purpose_statement": "仕事・学習・配信に使うデスク周りを、作業しやすく快適な環境へ整える。",
       "scope_include": "デスク、椅子、モニター、照明、入力機器、接続機器、通信、会議・配信機器、デスク周辺の快適性を直接改善する商品記事。",
       "scope_exclude": "リビング向け娯楽家電、車載用品、一般的な防寒着、デスク利用との関係が弱い生活家電。",
@@ -13,15 +13,15 @@
       "lifecycle_status": "published",
       "navigation_visibility": "listed",
       "seo_state": "index",
-      "seo_title": "デスク環境を整える｜作業・在宅ワークを快適にする特集 - Sellemy",
+      "seo_title": "デスク環境が整う｜作業・在宅ワークを快適にする特集 - Sellemy",
       "meta_description": "デスク、椅子、モニター、照明、入力機器、USB-C周辺機器、Web会議・配信機器など、仕事や学習のデスク環境を整える比較記事をまとめたSellemyの特集です。",
-      "hero_image": "",
+      "hero_image": "/img/themes/desk-environment.webp",
       "editorial_priority": 10
     },
     {
       "feature_id": "PH-COOKING",
       "slug": "easy-daily-cooking",
-      "title": "毎日のごはんをラクにする",
+      "title": "毎日のごはんがラクになる",
       "purpose_statement": "毎日の調理や下ごしらえ、保存を、無理なく続けやすい形に整える。",
       "scope_include": "日常の調理、下ごしらえ、加熱、保存、キッチン作業を直接ラクにする商品記事。",
       "scope_exclude": "食事そのものの贈答、イベント専用食品、調理との関係が弱い家電・収納用品。",
@@ -29,15 +29,15 @@
       "lifecycle_status": "published",
       "navigation_visibility": "listed",
       "seo_state": "index",
-      "seo_title": "毎日のごはんをラクにする｜調理・保存を快適にする特集 - Sellemy",
+      "seo_title": "毎日のごはんがラクになる｜調理・保存を快適にする特集 - Sellemy",
       "meta_description": "調理家電、キッチン用品、保存用品など、毎日のごはん作りをラクにする比較記事をまとめたSellemyの特集です。",
-      "hero_image": "",
+      "hero_image": "/img/themes/easy-daily-cooking.webp",
       "editorial_priority": 9
     },
     {
       "feature_id": "PH-HOUSEWORK",
       "slug": "easier-housework",
-      "title": "家事をラクにする",
+      "title": "家事がラクになる",
       "purpose_statement": "掃除・洗濯・片付けなどの日常家事を、少ない負担で回しやすくする。",
       "scope_include": "掃除、洗濯、片付け、日常メンテナンスなど、家庭内の家事負担を直接減らす商品記事。",
       "scope_exclude": "趣味用途の機器、調理そのもの、家事との関係が弱い一般家電・デジタル機器。",
@@ -45,15 +45,15 @@
       "lifecycle_status": "published",
       "navigation_visibility": "listed",
       "seo_state": "index",
-      "seo_title": "家事をラクにする｜掃除・洗濯・片付けを快適にする特集 - Sellemy",
+      "seo_title": "家事がラクになる｜掃除・洗濯・片付けを快適にする特集 - Sellemy",
       "meta_description": "掃除、洗濯、片付け、家庭内メンテナンスなど、毎日の家事をラクにする比較記事をまとめたSellemyの特集です。",
-      "hero_image": "",
+      "hero_image": "/img/themes/easier-housework.webp",
       "editorial_priority": 8
     },
     {
       "feature_id": "PH-WARM-HOME",
       "slug": "warm-home",
-      "title": "おうちをあたたかくする",
+      "title": "おうちがあたたかくなる",
       "purpose_statement": "寒い季節の室内を、無理なくあたたかく快適に整える。",
       "scope_include": "暖房、こたつ、電気毛布、床暖房、断熱、室内防寒など、自宅の寒さを直接やわらげる商品記事。",
       "scope_exclude": "外出用防寒だけの商品、車内専用品、睡眠目的だけで室内暖房との関係が弱い商品。",
@@ -61,15 +61,15 @@
       "lifecycle_status": "published",
       "navigation_visibility": "listed",
       "seo_state": "index",
-      "seo_title": "おうちをあたたかくする｜暖房・断熱・室内防寒の特集 - Sellemy",
+      "seo_title": "おうちがあたたかくなる｜暖房・断熱・室内防寒の特集 - Sellemy",
       "meta_description": "暖房、こたつ、電気毛布、足元暖房、断熱用品など、寒い季節のおうちをあたたかく快適にする比較記事をまとめたSellemyの特集です。",
-      "hero_image": "",
+      "hero_image": "/img/themes/warm-home.webp",
       "editorial_priority": 7
     },
     {
       "feature_id": "PH-HOME-RELAX",
       "slug": "relax-at-home",
-      "title": "おうちでリラックスする",
+      "title": "おうちでリラックスできる",
       "purpose_statement": "家で気分を切り替え、休息や趣味の時間を心地よく過ごせるように整える。",
       "scope_include": "香り、入浴、マッサージ、読書、ホームシアターなど、自宅で休息や余暇を楽しむための商品記事。",
       "scope_exclude": "睡眠そのものを主目的にした寝具、治療・医療効果を目的とする商品、外出先専用の娯楽用品。",
@@ -77,10 +77,61 @@
       "lifecycle_status": "published",
       "navigation_visibility": "listed",
       "seo_state": "index",
-      "seo_title": "おうちでリラックスする｜香り・入浴・マッサージ・余暇の特集 - Sellemy",
+      "seo_title": "おうちでリラックスできる｜香り・入浴・マッサージ・余暇の特集 - Sellemy",
       "meta_description": "アロマ、入浴剤、マッサージ用品、電子書籍リーダー、ホームプロジェクターなど、おうちでリラックスするための比較記事をまとめたSellemyの特集です。",
-      "hero_image": "",
+      "hero_image": "/img/themes/relax-at-home.webp",
       "editorial_priority": 6
+    },
+    {
+      "feature_id": "PH-GROOMING",
+      "slug": "grooming-routine",
+      "title": "身だしなみが整う",
+      "purpose_statement": "髪・ひげ・ムダ毛・口元など、日々の身だしなみを整えやすくする。",
+      "scope_include": "ヘアスタイリング、ヘアケア、シェービング、グルーミング、口腔ケアなど外見や清潔感を整える商品記事。",
+      "scope_exclude": "メイクそのもの、スキンケアルーティン、健康管理を主目的とする商品記事。",
+      "intro": "毎日の身だしなみは、髪型やひげ、ムダ毛、口元など複数の小さなケアで成り立ちます。この特集では、外見や清潔感を整えやすくする比較記事をまとめます。",
+      "lifecycle_status": "published",
+      "navigation_visibility": "listed",
+      "seo_state": "index",
+      "seo_title": "身だしなみが整う｜髪・ひげ・口元など身だしなみの特集 - Sellemy",
+      "meta_description": "ヘアスタイリング、シェービング、グルーミング、口腔ケアなど、毎日の身だしなみを整える比較記事をまとめたSellemyの特集です。",
+      "hero_image": "/img/themes/grooming-routine.webp",
+      "editorial_priority": 7,
+      "ui_sections": [
+        {
+          "heading": "髪を整える",
+          "article_ids": [
+            "autumn-hair-loss-care-shampoo-6-picks",
+            "autumn-hair-dryers-6-picks",
+            "autumn-hair-irons-6-picks",
+            "gray-hair-color-treatments-6-picks",
+            "leave-in-hair-treatments-6-picks",
+            "mens-hair-growth-tonics-6-picks",
+            "hair-brushes-for-frizz-6-picks",
+            "hot-air-styling-brushes-6-picks",
+            "rinse-out-hair-masks-6-picks",
+            "womens-hair-growth-serums-6-picks",
+            "hair-setting-sprays"
+          ]
+        },
+        {
+          "heading": "ひげ・ムダ毛を整える",
+          "article_ids": [
+            "electric-shavers-6-picks",
+            "home-ipl-hair-removal-devices-6-picks"
+          ]
+        },
+        {
+          "heading": "口元・汗・香りを整える",
+          "article_ids": [
+            "electric-toothbrushes-6-picks",
+            "water-flossers-6-picks",
+            "mouthwash-oral-care-6-picks",
+            "deodorant-antiperspirants-6-picks",
+            "autumn-perfumes-6-picks"
+          ]
+        }
+      ]
     }
   ]
 }
