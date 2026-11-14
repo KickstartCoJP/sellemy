@@ -77,6 +77,7 @@ def render_article(payload: dict, evidence: dict, *, today: date | None = None, 
         '<header class="site-header"><div class="brand"><a href="/index.html"><img src="/img/sellemy-logo.png" alt="Sellemyロゴ" class="logo" /></a>'
         '<span class="tagline">選びやすくて、わたしにちょうどいい情報ガイド</span></div></header><main>'
         f'<nav class="breadcrumb"><ul><li><a href="/index.html">Top</a></li><li><a href="{category.article_path}">{category.label}</a></li><li><span>{h1}</span></li></ul></nav>'
+        '<p class="affiliate-disclosure">本記事にはアフィリエイト広告が含まれます。商品リンクを通じた購入により、Sellemyが紹介料を受け取ることがあります。</p>'
         f'<div class="section-title"><h1>{h1}</h1></div><div class="item-eyecatch"><img src="{eyecatch}" alt="{h1}" /></div>'
         f'<p class="lead">{html.escape(payload["lead"])}</p><p class="summary">{summary}</p><nav class="toc"><strong>比較軸から選ぶ</strong><ul>{"".join(toc)}</ul></nav>'
         + ''.join(sections)
