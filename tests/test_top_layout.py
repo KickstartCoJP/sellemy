@@ -9,5 +9,5 @@ class TopLayoutTests(unittest.TestCase):
         self.assertIn('body[data-category="top"] .recent-publications > p',css)
         self.assertIn('text-align: center;',css.split('body[data-category="top"] .recent-publications > p',1)[1].split('}',1)[0])
         html=(ROOT/"index.html").read_text()
-        self.assertIn('記事一覧を見る',html)
-        self.assertIn('商品一覧から探す',html)
+        self.assertIn('美容・家電・日用品の比較記事をもっと見る',html)
+        self.assertIn('紹介商品をカテゴリ別に探す',html)
