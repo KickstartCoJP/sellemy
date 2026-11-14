@@ -68,6 +68,21 @@ class GrowthRecoveryTests(unittest.TestCase):
         self.assertTrue(all((gr.job_dir(slug) / 'history.jsonl').read_text().count('STATE_CHECKPOINT_INVALID_HOLD') == count
                             for slug, count in event_counts.items()))
 
+    def test_ceo_approved_publication_precedes_unrelated_upstream_recovery(self):
+        upstream = self._job('upstream-product-reselection')
+        gr.request_product_reselection('upstream-product-reselection', ['insufficient source evidence'])
+        # Keep the older upstream job eligible to prove queue priority, not timing.
+        state = gr.load_job('upstream-product-reselection')
+        state['next_retry_at'] = (datetime.now(timezone.utc)).isoformat()
+        gr._atomic_json(gr.state_path('upstream-product-reselection'), state)
+        ready = self._job('approved-article')
+        gr.set_stage('approved-article', 'EYECATCH_PENDING', event='CEO_EXACT_VERSION_APPROVED')
+        self.assertEqual(gr.eligible_job()['slug'], 'approved-article')
+        gr.set_stage('approved-article', 'PUBLISH_PENDING', event='EYECATCH_PASSED')
+        self.assertEqual(gr.eligible_job()['slug'], 'approved-article')
+        # The failed source job is still available: publishing doesn't mutate it.
+        self.assertEqual(gr.load_job('upstream-product-reselection')['current_stage'], 'WRITER_PENDING')
+
     def test_six_product_commit_creates_durable_writer_job(self):
         row=self._job()
         self.assertEqual(row['current_stage'],'WRITER_PENDING')
