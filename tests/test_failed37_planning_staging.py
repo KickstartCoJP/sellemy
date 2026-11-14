@@ -30,6 +30,15 @@ class Failed37PlanningStagingTest(unittest.TestCase):
             self.assertEqual(v['product_qa']['existing_independent_receipt'],'STALE_CONTRACT')
             self.assertEqual(len(v['original_job_sha256']),len(set(v['original_job_sha256'])))
 
+    def test_first_independent_product_qa_receipt_is_readonly_and_redacted(self):
+        receipt=json.loads((FOLDER/'first-product-qa-readonly.json').read_text())
+        self.assertEqual(receipt['review_status'],'ACCEPTED')
+        self.assertEqual(receipt['product_issues'],[])
+        self.assertFalse(receipt['production_job_changed'])
+        self.assertFalse(receipt['source_evidence_changed'])
+        self.assertNotIn('metadata',receipt)
+        self.assertNotIn('session_id',receipt)
+
     def test_duplicate_family_hints_are_not_conflated_with_decisions(self):
         manifest=json.loads((FOLDER/'manifest.json').read_text())
         known={x['slug'] for x in manifest['entries']}
