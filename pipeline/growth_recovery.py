@@ -279,9 +279,10 @@ def eligible_job(*, now: datetime | None = None) -> dict | None:
                 due = current
         if due <= current:
             eligible.append(row)
-    # Finish existing QA-ready work before retrying unchanged product discovery.
-    priority = {'QA_FAILED': 0, 'WRITER_PENDING': 1, 'EYECATCH_PENDING': 2,
-                'PUBLISH_PENDING': 3, 'PRODUCT_HOLD': 4}
+    # A CEO-approved article must finish its eyecatch/publication independently
+    # of upstream Writer work and product-reselection holds.
+    priority = {'PUBLISH_PENDING': 0, 'EYECATCH_PENDING': 1,
+                'QA_FAILED': 2, 'WRITER_PENDING': 3, 'PRODUCT_HOLD': 4}
     eligible.sort(key=lambda row: (priority.get(row.get('current_stage'), 9),
                                    row.get('updated_at') or row.get('created_at') or '',
                                    row.get('slug') or ''))
