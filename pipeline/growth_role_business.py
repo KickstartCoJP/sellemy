@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import itertools
 import os
 import re
 import subprocess
@@ -217,22 +218,23 @@ def _researchable_candidates(products: list[dict], *, cache_only: bool) -> bool:
 
 
 def select_viable_topic(
-    planning_candidates: list[dict] | None, feedback: dict, *, cache_only: bool, max_rounds: int | None = None
+    planning_candidates: list[dict] | None, feedback: dict, *, cache_only: bool,
+    max_rounds: int | None = None, regenerate_after_supplied: bool = False
 ) -> tuple[dict, list[dict], list[dict]]:
-    # The first ranked topic is the only job attempt in this run.
+    # Consider each novel candidate; request new batches only while they add novel slugs.
     probes = []
     tried_slugs: set[str] = set()
-    rounds = range(1)
+    rounds = range(max_rounds) if max_rounds is not None else itertools.count()
     for round_index in rounds:
-        source = planning_candidates if planning_candidates is not None else discover_candidates()
+        source = (planning_candidates if round_index == 0 and planning_candidates is not None
+                  else discover_candidates())
         ranked = [row for row in rank_candidates(source, feedback) if row['slug'] not in tried_slugs]
-        if not ranked and planning_candidates is not None:
-            raise PlanningError('continuous planning produced no eligible non-duplicate topic; no publish')
         if not ranked:
-            # Provider did not supply any unseen themes. Fail explicitly rather
-            # than inventing a global quota on distinct rejected themes.
-            raise PlanningError('planning produced no novel themes; requires a changed candidate set')
-        for topic in ranked[:1]:
+            # A repeated group is not permission to retry the same topics.
+            error = PlanningError('planning produced no novel themes; requires a changed candidate set')
+            error.viability_probes = probes
+            raise error
+        for topic in ranked:
             tried_slugs.add(topic['slug'])
             try:
                 products, discovery_trace = collect_unique_products(topic, cache_only=cache_only)
@@ -242,28 +244,13 @@ def select_viable_topic(
                 probes.append({'round': round_index + 1, 'slug': topic['slug'], 'candidate_count': 0, 'error': f'{type(exc).__name__}: {exc}'})
             if len(products) == 6 and discovery_trace['complete']:
                 try:
-                    # Machine evidence gate: replace only items lacking a readable source.
-                    source_rejected = set()
-                    for refill in range(2):
-                        invalid = {p['asin'] for p in products if not any(
-                            isinstance(src, dict) and src.get('verified') is True and str(src.get('excerpt') or '').strip()
-                            for src in p.get('sources') or [])}
-                        if not invalid:
-                            break
-                        retained = [p for p in products if p['asin'] not in invalid]
-                        source_rejected.update(invalid)
-                        products, refill_trace = collect_unique_products(topic, cache_only=cache_only,
-                            existing=retained, rejected_asins=source_rejected, max_searches=1)
-                        probes[-1].setdefault('source_refill', []).append({
-                            'round': refill + 1, 'replaced': len(invalid), 'retained': len(retained),
-                            'discovery': refill_trace})
-                        if len(products) != 6 or not refill_trace['complete']:
-                            break
-                    if len(products) != 6 or any(not any(
-                            isinstance(src, dict) and src.get('verified') is True and str(src.get('excerpt') or '').strip()
-                            for src in p.get('sources') or []) for p in products):
-                        probes[-1]['acceptance'] = blocked(['Six source-verified products unavailable'])
-                        continue
+                    # Source fetch failure is a recorded unknown, not a planning veto.
+                    unavailable = [p['asin'] for p in products if not any(
+                        isinstance(src, dict) and src.get('verified') is True
+                        and str(src.get('excerpt') or '').strip()
+                        for src in p.get('sources') or [])]
+                    if unavailable:
+                        probes[-1]['unavailable_source_asins'] = unavailable
                     six, selection = select_six(products, topic, feedback)
                     evidence = build_evidence(topic, six, selection)
                     acceptance = independent_review(evidence)
@@ -276,11 +263,11 @@ def select_viable_topic(
                         reviewed = (acceptance.get('review') or {}).get('products') or []
                         by_ref = {row['ref']: row for row in evidence['products']}
                         failed_refs = {row['ref'] for row in reviewed if isinstance(row, dict)
-                                       and (row.get('adequate_facts') is False or row.get('topic_fit') is False)}
-                        # Global or pair-level QA failures have no certified survivors.
+                                       and row.get('topic_fit') is False}
+                        # Missing sources alone never replace all six products.
                         rejected = {by_ref[ref]['asin'] for ref in failed_refs if ref in by_ref}
                         if not rejected:
-                            rejected = {row['asin'] for row in six}
+                            break
                         excluded.update(rejected)
                         retained = [p for p in six if p['asin'] not in rejected]
                         products, retry_trace = collect_unique_products(
@@ -311,7 +298,10 @@ def select_viable_topic(
                 # Pass the exact reviewed six onward: discovery rows may lack
                 # selection_reason and must not replace signed QA evidence.
                 return selected, six, probes
-    error = PlanningError('chosen topic did not pass product acceptance: require 6 documented products matching topic axes')
+        # Supplied candidates are a complete batch; do not regenerate them.
+        if planning_candidates is not None and not regenerate_after_supplied:
+            break
+    error = PlanningError('all novel planning candidates failed independent comparison acceptance')
     error.viability_probes = probes
     raise error
 

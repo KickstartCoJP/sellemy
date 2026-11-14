@@ -114,8 +114,9 @@ def _create_job(*, cache_only: bool, candidates: list, provider: dict | None,
     from growth_recovery import create_job
     base_head = require_clean_current_main()
     feedback = load_feedback()
-    topic, products, probes = select_viable_topic(candidates, feedback,
-                                                cache_only=cache_only)
+    topic, products, probes = select_viable_topic(
+        candidates, feedback, cache_only=cache_only,
+        regenerate_after_supplied=not cache_only)
     topic.pop('_planning_provider_metadata', None)
     accepted_asins = topic.pop('_accepted_selection_asins', None)
     accepted_selection = topic.pop('_accepted_selection_metadata', None)

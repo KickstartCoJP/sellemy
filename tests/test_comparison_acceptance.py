@@ -293,10 +293,12 @@ class BoundaryRecoveryTests(RecoveryCase):
         with patch.object(business, 'rank_candidates', return_value=[topic]), \
              patch.object(business, 'discover_products', return_value=e['products']), \
              patch.object(business, 'collect_unique_products', return_value=(e['products'], {'complete': True, 'attempts': []})), \
-             patch.object(business, 'independent_review') as reviewer:
-            with self.assertRaisesRegex(PlanningError, 'chosen topic did not pass product acceptance') as failure:
+             patch.object(business, 'select_six',return_value=(e['products'], {})), \
+             patch.object(business, 'independent_review', return_value={'review': {'status':'BLOCKED'}}) as reviewer, \
+             patch.object(business, 'receipt_issues', return_value=['independent comparison rejected']):
+            with self.assertRaisesRegex(PlanningError, 'novel planning candidates') as failure:
                 business.select_viable_topic([topic], {}, cache_only=True)
-        reviewer.assert_not_called()
+        reviewer.assert_called_once()
         self.assertEqual(len(failure.exception.viability_probes), 1)
         self.assertTrue(failure.exception.viability_probes[0]['acceptance'])
         self.assertEqual(gr.all_jobs(), [])
@@ -314,7 +316,7 @@ class BoundaryRecoveryTests(RecoveryCase):
              patch.object(business, 'discover_products', return_value=e['products']), \
              patch.object(business, 'collect_unique_products', return_value=(e['products'], {'complete': True, 'attempts': []})), \
              patch.object(business, 'independent_review', side_effect=reject):
-            with self.assertRaisesRegex(PlanningError, 'chosen topic did not pass product acceptance') as failure:
+            with self.assertRaisesRegex(PlanningError, 'novel planning candidates') as failure:
                 business.select_viable_topic([topic], {}, cache_only=True)
         self.assertTrue(failure.exception.viability_probes[0]['acceptance'])
         self.assertEqual(gr.all_jobs(), [])
