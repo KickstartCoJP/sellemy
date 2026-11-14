@@ -444,7 +444,8 @@ def _existing_publish_commit(slug: str, category: str) -> str | None:
     """Return an already-live historical publish without requiring the slug to remain on current TOP."""
     subprocess.run(['git', 'fetch', 'origin', 'main', '--quiet'], cwd=ROOT, check=False)
     completed = subprocess.run(
-        ['git', 'log', '--all', '-n', '1', '--format=%H', '--grep', f'^Publish Writer-generated growth article: {slug}$'],
+        ['git', 'log', '--all', '-n', '1', '--format=%H', '--extended-regexp',
+         '--grep', rf'^Publish Writer-generated growth article: {re.escape(slug)}( \(#[0-9]+\))?$'],
         cwd=ROOT, text=True, capture_output=True, check=False,
     )
     commit = completed.stdout.strip()

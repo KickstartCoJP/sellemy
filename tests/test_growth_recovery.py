@@ -136,6 +136,8 @@ class GrowthRecoveryTests(unittest.TestCase):
         self.assertEqual(second['retry_count_by_stage']['product'], 1)
         self.assertIsNone(second['next_retry_at'])
         self.assertIsNone(gr.eligible_job())
+        from datetime import timedelta
+        self.assertIsNone(gr.eligible_job(now=datetime.now(timezone.utc) + timedelta(days=2)))
         self._job('healthy')
         self.assertEqual(gr.eligible_job()['slug'], 'healthy')
 
