@@ -1,0 +1,22 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "TASK-BU002-FAILED-TEN-CEO-84ABAE0ACBA14008883C",
+  "instruction_ref": "OSCHIEF-FAILED10-AUDIT-20261114-001",
+  "instruction": "既存の証拠不足により再選定待ちとなった古いWRITER_PENDING案件が同じ候補で反復する場合だけ、既存のPRODUCT_HOLDへ正常遷移させる。QA、商品6件条件、記事品質、公開ゲートは変更しない。",
+  "implementer": "sellemy-ops via Mac Studio v2",
+  "canonical_refs": ["https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3"],
+  "allowed_paths": [
+    "pipeline/role_stage_exec.py",
+    "tests/test_stale_recovery_product_hold.py",
+    "change-contracts/20261114-recovery-stale-product-hold.json"
+  ],
+  "preserved_rules": [
+    "Unchanged evidence cannot enter an expensive reselection loop each minute",
+    "Genuinely changed evidence or candidates remain eligible for normal product QA",
+    "Six products with two per approved axis remain mandatory",
+    "All writer, editorial, claim, review and CEO publication gates remain unchanged",
+    "Previously published articles are untouched",
+    "Production rollout requires CEO Staging review"
+  ],
+  "acceptance_tests": ["tests/test_stale_recovery_product_hold.py"]
+}
