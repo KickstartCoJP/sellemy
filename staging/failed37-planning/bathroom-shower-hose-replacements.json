@@ -1,0 +1,158 @@
+{
+  "schema": "sellemy-failed37-planning-review-input/v1",
+  "task_id": "TASK-BU002-FAILED37-REPLAN-20261115",
+  "slug": "bathroom-shower-hose-replacements",
+  "job_state": "FAILED",
+  "failed_stage": "WRITER_FAILED",
+  "original_job_sha256": {
+    "acceptance.json": "2117b81fad6ce1e4eec2d0740e27e44612a9b456f594b48733009ca804c79670",
+    "editorial-plan.json": "cb58b796ec94c836238e81c64472ade15811e6d3a8568052c7c9acab946402b8",
+    "evidence.json": "9ea0a0816c8b637846b6afeb485565eeb2bec26b892b47a0ed64fc0d94c1ccac",
+    "gate-feedback.json": "5168f7614e03e652007b7e59160c730bb9f751c524b733b062bc4f4df63defe5",
+    "payload.json": "4a0b2291a8cf9d4c982bc208790912a64637ef5954dcafc52893df82a7b5d771",
+    "qa.json": "31ed075471a1256c63e9ed81dfb75277f10c6808440249f8845a33451346ce8e",
+    "selection.json": "8460d2bb1d6ba31b9ad03db944f3e60093eb46ade1cc7ddedc05fe6c8e50039b",
+    "topic.json": "59a6ef8d627584ccae9035e8f01915881b928d52522b823c7176f188f71ce790"
+  },
+  "planning_candidate": {
+    "slug": "bathroom-shower-hose-replacements",
+    "category": "dailygoods",
+    "title": "交換用シャワーホース6選｜接続部・長さ・取り回しで選ぶ",
+    "query": "シャワーホース 交換 浴室",
+    "reader_persona": {
+      "editorial_depth": "接続部の寸法と付属アダプター、ホースの長さを図なしでも分かるよう説明する",
+      "knowledge_level": "交換は初めてで、水栓やシャワーヘッドの接続規格には詳しくない",
+      "purchase_goal": "自宅の接続部に合い、使いやすい長さのホースを選ぶ",
+      "reader": "傷んだシャワーホースだけを交換したい人"
+    },
+    "introduction_angles": [
+      {
+        "id": "connection",
+        "label": "水栓・ヘッド側の接続条件",
+        "keywords": [
+          "交換用シャワーホース 接続ねじ",
+          "シャワーホース 交換 アダプター付き"
+        ]
+      },
+      {
+        "id": "length",
+        "label": "ホースの長さ",
+        "keywords": [
+          "交換用シャワーホース 1.6m",
+          "交換用シャワーホース 2m"
+        ]
+      },
+      {
+        "id": "construction",
+        "label": "ホースの構造と手入れ",
+        "keywords": [
+          "交換用シャワーホース 樹脂",
+          "交換用シャワーホース 金属調"
+        ]
+      }
+    ]
+  },
+  "original_product_inventory": [
+    {
+      "ref": "p1",
+      "asin": "B005CIYWRM",
+      "name": "SANEI(サンエイ) シャワーホース マットホワイト ほとんどのメーカー対応 水栓側アダプター付 1.6m G1/2 PS30-86TXA-MW日本製",
+      "prior_individual_selection_reason": "水栓側アダプターが5種類付属し、対応する水栓メーカーが具体的に示されているため、接続条件を確認しながら選びやすい。ヘッド側の金具は回転式で、使用中のねじれにも配慮されている。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p2",
+      "asin": "B00762QHKC",
+      "name": "LIXIL(リクシル) INAX シャワーホース 1.5m 交換用 シャワーホース交換 浴室補修 適合機種をご確認の上ご購入ください 柔軟性と耐久性を両立した素材 PK-A-1882",
+      "prior_individual_selection_reason": "LIXIL・INAX製水栓の補修用で、対応する機種の品番が列挙されている。自宅の品番と照合して購入できるため、対象機種を使う読者には接続可否を判断しやすい選択肢。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p3",
+      "asin": "B00DVDS9TC",
+      "name": "KVK メタリックシャワーホース 1.6m PZKF2BL",
+      "prior_individual_selection_reason": "長さ1.6mのKVK製ホース。現在のホースが同程度の長さで足りている読者が、長さを基準に交換品を探しやすい。購入時には水栓とヘッドの接続規格を別途確認できる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p4",
+      "asin": "B0G1CKR9ZQ",
+      "name": "OFFO シャワーホース 1.6m ステンレス 交換用 防爆漏れ防止 耐久性 G1/2 シャワーほーす シャワーホース交換用品 取り付けかんたん 360°自由回転 ねじれ防止機能付き ニッケル",
+      "prior_individual_selection_reason": "長さ1.6mで、接続ねじはG1/2と明記されているため、必要な長さとねじ寸法を照合して選びやすい。回転するナットは、ヘッドを動かす際の取り回しを重視する読者にも検討しやすい。G1/2で直接付かない水栓では、必要なアダプターの種類を購入前に確認する。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p5",
+      "asin": "B01CFTFI1O",
+      "name": "ガオナ これカモ シャワーホース 取替用 3.0ｍ(アダプター付 ほとんどのメーカーに対応 ホワイト) GA-FF006",
+      "prior_individual_selection_reason": "ホース材は塩化ビニル樹脂で、ヘッド側2種類・混合栓側4種類のアダプターが付属するため、接続部を照合して選びやすい。長さ3.0mなので、洗い場の広い浴室など、長いホースが必要な場合に向く。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p6",
+      "asin": "B07BLTDWGZ",
+      "name": "タカギ(takagi) シャワー シャワーホース(ホワイト) 1.6m 工具不要 取り付けかんたん JSH001WT",
+      "prior_individual_selection_reason": "ホース材は塩化ビニル樹脂で、長さ1.6mの家庭用浴室向け商品。工具不要の取り付けと2年間保証が示されており、樹脂製ホースを初めて交換する読者も検討しやすい。購入前に接続規格を確認する。",
+      "verified_excerpt_sources": 1
+    }
+  ],
+  "original_qa_pass_fields": [
+    "affiliate_pass",
+    "asin_pass",
+    "banned_phrase_pass",
+    "canonical_pass",
+    "category_pass",
+    "conclusion_brand_free_pass",
+    "description_hard_min_pass",
+    "description_target_pass",
+    "description_uniqueness_pass",
+    "distinct_openings_endings_pass",
+    "fixed_price_pass",
+    "h3_len_pass",
+    "image_identity_pass",
+    "lead_brand_free_pass",
+    "nav_footer_pass",
+    "no_repeated_sentences_pass",
+    "product_image_audit_pass",
+    "summary_brand_free_pass"
+  ],
+  "independent_review_required": true,
+  "independent_review_status": "PENDING",
+  "replanning_checks": {
+    "reader_need": {
+      "question": "What concrete product-selection need can be met?",
+      "observed_reader": "傷んだシャワーホースだけを交換したい人",
+      "purchase_goal": "自宅の接続部に合い、使いやすい長さのホースを選ぶ",
+      "pass": null
+    },
+    "six_individual_recommendations": {
+      "question": "Which products each meet the stated need, with source-backed individual value?",
+      "pass": null
+    },
+    "three_discovery_angles": {
+      "question": "Are the 3 angles distinct discovery entrypoints without head-to-head rankings?",
+      "pass": null
+    },
+    "replan_outcome": {
+      "instruction": "Approve existing theme only if reader intent and genuine product recommendations are independently verified; otherwise reselect Planning theme and products.",
+      "pass": null
+    }
+  },
+  "product_qa": {
+    "existing_independent_receipt": "STALE_CONTRACT",
+    "new_product_qa_required": true,
+    "same_product_allowed_if_verified": true,
+    "product_count": 6,
+    "verified_per_product": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "next_action": "independent_planning_qa_then_conditional_product_qa_then_writer_qa_then_ceo_gate",
+  "execution_allowed": false,
+  "production_article_changed": false
+}

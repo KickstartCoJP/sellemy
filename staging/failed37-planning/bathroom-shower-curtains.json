@@ -1,0 +1,154 @@
+{
+  "schema": "sellemy-failed37-planning-review-input/v1",
+  "task_id": "TASK-BU002-FAILED37-REPLAN-20261115",
+  "slug": "bathroom-shower-curtains",
+  "job_state": "FAILED",
+  "failed_stage": "WRITER_FAILED",
+  "original_job_sha256": {
+    "acceptance.json": "732aad7eeb53dfa8ccf3c3be8828791ca4a00fc396fd0d97647bf4ea6bc20b70",
+    "editorial-plan.json": "70b6a2de213c702a688a61e5366522ead585e36969db26ec70f93065e6b715be",
+    "evidence.json": "04da8a4b067c7b08f09d27e9bf921b5d4be4d68deff9ff69418bcebea3687048",
+    "gate-feedback.json": "1f4f9f3a009aa9b3e7aac5437502d3363637ffabee97dcace142ba4572c04452",
+    "payload.json": "f97a7fa4049bda249086d0d83c9f568ff6c4ab2cf79c9a45ae4578b7e9746960",
+    "qa.json": "eb43ecc4128fbf07f17665ae357dc7e37c5f80eb5591368fb484c248992b782f",
+    "selection.json": "2ce09730cce3671727646cf7cfd84507b8611d6c1adc7de52cf479ff6b8952bb",
+    "topic.json": "626d539e40a484bae894a8c115e9a39aa19348519f986f577276b30fefb11089"
+  },
+  "planning_candidate": {
+    "slug": "bathroom-shower-curtains",
+    "category": "dailygoods",
+    "title": "浴室用シャワーカーテン6選｜幅と丈・吊り方・手入れで選ぶ",
+    "query": "浴室 シャワーカーテン 防水 サイズ",
+    "reader_persona": {
+      "editorial_depth": "設置寸法、ハトメとフックの構成、洗濯や拭き取りの条件を説明する",
+      "knowledge_level": "設置場所の寸法は測れるがカーテンの吊り方には詳しくない",
+      "purchase_goal": "浴室の幅と高さに合い、手入れしやすいカーテンを選ぶ",
+      "reader": "浴槽まわりへの水はねを抑えたい人"
+    },
+    "introduction_angles": [
+      {
+        "id": "dimensions",
+        "label": "幅・丈と設置場所の寸法",
+        "keywords": [
+          "浴室 シャワーカーテン 幅 丈"
+        ]
+      },
+      {
+        "id": "hanging",
+        "label": "ハトメ・フックなどの吊り方",
+        "keywords": [
+          "浴室 シャワーカーテン ハトメ フック"
+        ]
+      },
+      {
+        "id": "care",
+        "label": "洗濯や拭き取りの方法",
+        "keywords": [
+          "浴室 シャワーカーテン 洗濯可能"
+        ]
+      }
+    ]
+  },
+  "original_product_inventory": [
+    {
+      "ref": "p1",
+      "asin": "B0CM38Y5V7",
+      "name": "シャワーカーテン 100 x 130cm 小窓カーテン ショート丈 防水 防カビ加工 ユニットバス 風呂 浴室 カフェカーテン 浴室窓 お風呂窓 無地 白 ポリエステル 目隠し用 厚手 取り付け簡単 間仕切り バス用品 バスルーム リング付属 シンプル ホワイト",
+      "prior_individual_selection_reason": "幅100×丈130cmの短めサイズで、浴室の小窓まわりなど丈を抑えたい場所を測って選べる。銅製ハトメとC字型フック8個が付属し、吊り具を別に探さず設置しやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p2",
+      "asin": "B014QOE96G",
+      "name": "Amazonベーシック シャワーカーテン 防カビ加工 フック付き 丈183 cm x 幅183 cm (1枚組), ホワイト",
+      "prior_individual_selection_reason": "幅183×丈183cmで、広めの範囲を仕切りたい人が設置寸法と照らし合わせやすい。撥水加工のポリエステル製でフック12個が付属し、洗濯機も使えるため購入後の設置と手入れを考えやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p3",
+      "asin": "B07XKYZ48D",
+      "name": "AooHome 防カビ シャワーカーテン 半透明 120 x 180cm 防水 バスカーテン ユニットバス 浴室 間仕切り 北欧 クリア 清潔 フック付き 取り付け簡単",
+      "prior_individual_selection_reason": "防錆加工の銅製ハトメとカーテンリング8個が付属し、ポールに掛ける構成を確認して選べる。幅120×丈180cmの半透明タイプで、寸法が合う浴室なら明るさを保ちながら水はねを仕切りたい人にも選びやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p4",
+      "asin": "B00BOE0EBG",
+      "name": "MEIWA 防炎バスカーテン 130cm幅×178cm丈 ライトブルー NVS-400",
+      "prior_individual_selection_reason": "Sカン8個が付属するため、リング付きの商品とは異なる吊り具の選択肢として紹介できる。約幅130×丈178cmのバスカーテンで、設置場所とポールの寸法を確かめて購入できる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p5",
+      "asin": "B086PC4FJP",
+      "name": "AooHome シャワーカーテン 巾150cm 防カビ 防水 ユニットバス お風呂カーテン 軽量 速乾 間仕切り ポリエステル製 ホテル 高級 無地 白 バス用品 リング付き 150x180cm",
+      "prior_individual_selection_reason": "洗濯機使用可能と明記されたポリエステル製で、定期的に洗って手入れしたい人が選びやすい。幅150×丈180cm、防水・防カビ仕様でリング10個も付属し、寸法が合えば必要な吊り具をそろえる手間が少ない。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p6",
+      "asin": "B0GXXKQQSB",
+      "name": "クモリ(Kumori) シャワーカーテン 防水 防カビ 目隠し 明るさキープ 10サイズ展開 リング付き 簡単設置 幅120×丈180cm ベージュ",
+      "prior_individual_selection_reason": "撥水・速乾のポリエステル生地で、洗濯機で丸洗いできると明記されている。幅120×丈180cmと150cm幅の商品より細めで、リング7個が付属するため、設置幅を測って手入れ方法とともに選びやすい。",
+      "verified_excerpt_sources": 1
+    }
+  ],
+  "original_qa_pass_fields": [
+    "affiliate_pass",
+    "asin_pass",
+    "banned_phrase_pass",
+    "canonical_pass",
+    "category_pass",
+    "conclusion_brand_free_pass",
+    "description_hard_min_pass",
+    "description_target_pass",
+    "description_uniqueness_pass",
+    "fixed_price_pass",
+    "h3_len_pass",
+    "image_identity_pass",
+    "lead_brand_free_pass",
+    "nav_footer_pass",
+    "no_repeated_sentences_pass",
+    "product_image_audit_pass",
+    "summary_brand_free_pass"
+  ],
+  "independent_review_required": true,
+  "independent_review_status": "PENDING",
+  "replanning_checks": {
+    "reader_need": {
+      "question": "What concrete product-selection need can be met?",
+      "observed_reader": "浴槽まわりへの水はねを抑えたい人",
+      "purchase_goal": "浴室の幅と高さに合い、手入れしやすいカーテンを選ぶ",
+      "pass": null
+    },
+    "six_individual_recommendations": {
+      "question": "Which products each meet the stated need, with source-backed individual value?",
+      "pass": null
+    },
+    "three_discovery_angles": {
+      "question": "Are the 3 angles distinct discovery entrypoints without head-to-head rankings?",
+      "pass": null
+    },
+    "replan_outcome": {
+      "instruction": "Approve existing theme only if reader intent and genuine product recommendations are independently verified; otherwise reselect Planning theme and products.",
+      "pass": null
+    }
+  },
+  "product_qa": {
+    "existing_independent_receipt": "STALE_CONTRACT",
+    "new_product_qa_required": true,
+    "same_product_allowed_if_verified": true,
+    "product_count": 6,
+    "verified_per_product": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "next_action": "independent_planning_qa_then_conditional_product_qa_then_writer_qa_then_ceo_gate",
+  "execution_allowed": false,
+  "production_article_changed": false
+}

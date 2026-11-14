@@ -1,0 +1,157 @@
+{
+  "schema": "sellemy-failed37-planning-review-input/v1",
+  "task_id": "TASK-BU002-FAILED37-REPLAN-20261115",
+  "slug": "bathtub-cleaning-brushes",
+  "job_state": "FAILED",
+  "failed_stage": "WRITER_FAILED",
+  "original_job_sha256": {
+    "acceptance.json": "a0db1ad232402d2e7f204fc14ef2dc937ec2e10c70bea0cae332d1494fb4f1c4",
+    "editorial-plan.json": "559dbfb760dfe0e379cf64872a460d58273a954c5a27a100da7391de3a4b132b",
+    "evidence.json": "b2f4b5eb4ddefcf15b99941cbde783a184a57d9de6d84165fbabea8c9c9f45db",
+    "gate-feedback.json": "dc5424a85fefe478de4b72bb5a08a958ac7755571fc191c0d2cf8e6475f0ae2e",
+    "payload.json": "ff093f30bcb29447b1adb1eb8f6ba977b5d4d83ee86440b0e5dcbeebb6b840ce",
+    "qa.json": "698795b4e25c7ce9b85d44aacb639ebe1cbc5eb9b60854eb1fea7b2700a3532a",
+    "selection.json": "58aa487bb69d019b814469b95fa9bcee666f49f032a840f983f59f79f930fe6e",
+    "topic.json": "dc6c455c11dad38be1f6f15a26a3f552e36b8a0e4902fca8e0fd87925bbd0f12"
+  },
+  "planning_candidate": {
+    "slug": "bathtub-cleaning-brushes",
+    "category": "dailygoods",
+    "title": "浴槽掃除ブラシ6選｜届く範囲・ブラシの形・収納方法で選ぶ",
+    "query": "浴槽 掃除 ブラシ 柄付き",
+    "reader_persona": {
+      "editorial_depth": "届く場所、ヘッドの動き、保管場所を具体的な掃除動作に沿って説明する",
+      "knowledge_level": "浴室用ブラシの形や柄の違いは詳しくない",
+      "purchase_goal": "浴槽の深さと洗いたい場所に合うブラシを選ぶ",
+      "reader": "かがむ負担を減らしながら浴槽を洗いたい人"
+    },
+    "introduction_angles": [
+      {
+        "id": "reach",
+        "label": "柄の長さと届く場所",
+        "keywords": [
+          "浴槽 掃除 ブラシ ロング 柄",
+          "風呂掃除 ブラシ 伸縮"
+        ]
+      },
+      {
+        "id": "head",
+        "label": "ブラシ面とヘッドの動き",
+        "keywords": [
+          "浴槽 掃除 ブラシ 首振り",
+          "風呂掃除 ブラシ 角用"
+        ]
+      },
+      {
+        "id": "storage",
+        "label": "使用後の収納",
+        "keywords": [
+          "浴槽 掃除 ブラシ 吊り下げ",
+          "風呂掃除 ブラシ 自立"
+        ]
+      }
+    ]
+  },
+  "original_product_inventory": [
+    {
+      "ref": "p1",
+      "asin": "B0BJCLCN7W",
+      "name": "アズマ工業(Azuma Industrial) スマート 浴槽洗いFL 伸縮柄 本体 磁石でくっつく マグネット収納 水だけで汚れが落ちる 水切れが良い お風呂掃除 浴室用ブラシ 全長67~99cm 拭き幅20cm sm@rt778",
+      "prior_individual_selection_reason": "全長約67～99cmに調節でき、深い浴槽の底や奥を立った姿勢で洗いたい人が長さを選びやすい。約20cmの広いブラシ面で浴槽の内側を洗え、汚れたブラシは別売のスペアに交換できる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p2",
+      "asin": "B01KUSQ50A",
+      "name": "レック 激落ちくん お風呂 まるごと バスクリーナー ショート伸縮 47～68cm アミメ状の特殊繊維 バスブラシ お風呂掃除 ブラシ",
+      "prior_individual_selection_reason": "47～68cmの短めの伸縮柄で、長い柄を持て余しやすい浴室でも手元の位置を調整できる。浴槽用と明記され、網目状の繊維を水だけで使えるため、洗剤を使わずに洗いたい人にも選びやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p3",
+      "asin": "B0CJTWSPBY",
+      "name": "レック 激落ちくん ヘッドが曲がる 浴槽クリーナー (伸縮タイプ) 超極細やわらかブラシ",
+      "prior_individual_selection_reason": "ヘッドの先端が柔らかく曲面に沿うため、浴槽の丸みのある内側を洗いたい人に向く。60～81cmの伸縮柄と吊るせる大きめのフックも備え、掃除する姿勢と使用後の置き場所を考えて選べる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p4",
+      "asin": "B01KUSQ57I",
+      "name": "レック 激落ちくん お風呂 まるごと バスクリーナー ミドル伸縮 63～85cm アミメ状の特殊繊維 バスブラシ お風呂掃除 ブラシ",
+      "prior_individual_selection_reason": "網目状の繊維と豊富な毛先で、浴槽内側に加えて風呂ふたの溝や水栓まわりも洗える。63～85cmの伸縮柄が付くので、細かい場所も一つのブラシで洗いたい人が用途を判断して買いやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p5",
+      "asin": "B00R12RPJ4",
+      "name": "山崎産業(Yamazaki Sangyo) お風呂 掃除 ブラシ スポンジ 伸縮 柄 ユニット バスボンくん 抗菌 浴室 浴槽 シンプル ピンク 幅15×奥行10×高さ50－73cm 174973",
+      "prior_individual_selection_reason": "柄を約50～73cmに縮められるため、使った後に長い柄のまま置く必要がない。柔らかい丸形の繊維ブラシは浴槽のカーブにも沿い、浴槽掃除と保管時の長さをあわせて選びやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p6",
+      "asin": "B00365EIG8",
+      "name": "オーエ ブラシ 白 約縦42×横6×高さ11cm サッとる ミドル バス 洗い W植毛",
+      "prior_individual_selection_reason": "全長約42cmの固定柄で、収納時に必要な長さを購入前に確かめやすい。浴槽用と明記された幅約6cmのブラシで、長い伸縮柄を置く場所がない人の選択肢になる。",
+      "verified_excerpt_sources": 1
+    }
+  ],
+  "original_qa_pass_fields": [
+    "affiliate_pass",
+    "asin_pass",
+    "banned_phrase_pass",
+    "canonical_pass",
+    "category_pass",
+    "conclusion_brand_free_pass",
+    "description_hard_min_pass",
+    "description_target_pass",
+    "description_uniqueness_pass",
+    "distinct_openings_endings_pass",
+    "fixed_price_pass",
+    "h3_len_pass",
+    "image_identity_pass",
+    "lead_brand_free_pass",
+    "nav_footer_pass",
+    "no_repeated_sentences_pass",
+    "summary_brand_free_pass"
+  ],
+  "independent_review_required": true,
+  "independent_review_status": "PENDING",
+  "replanning_checks": {
+    "reader_need": {
+      "question": "What concrete product-selection need can be met?",
+      "observed_reader": "かがむ負担を減らしながら浴槽を洗いたい人",
+      "purchase_goal": "浴槽の深さと洗いたい場所に合うブラシを選ぶ",
+      "pass": null
+    },
+    "six_individual_recommendations": {
+      "question": "Which products each meet the stated need, with source-backed individual value?",
+      "pass": null
+    },
+    "three_discovery_angles": {
+      "question": "Are the 3 angles distinct discovery entrypoints without head-to-head rankings?",
+      "pass": null
+    },
+    "replan_outcome": {
+      "instruction": "Approve existing theme only if reader intent and genuine product recommendations are independently verified; otherwise reselect Planning theme and products.",
+      "pass": null
+    }
+  },
+  "product_qa": {
+    "existing_independent_receipt": "STALE_CONTRACT",
+    "new_product_qa_required": true,
+    "same_product_allowed_if_verified": true,
+    "product_count": 6,
+    "verified_per_product": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "next_action": "independent_planning_qa_then_conditional_product_qa_then_writer_qa_then_ceo_gate",
+  "execution_allowed": false,
+  "production_article_changed": false
+}

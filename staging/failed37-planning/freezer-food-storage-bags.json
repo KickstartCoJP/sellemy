@@ -1,0 +1,158 @@
+{
+  "schema": "sellemy-failed37-planning-review-input/v1",
+  "task_id": "TASK-BU002-FAILED37-REPLAN-20261115",
+  "slug": "freezer-food-storage-bags",
+  "job_state": "FAILED",
+  "failed_stage": "WRITER_FAILED",
+  "original_job_sha256": {
+    "acceptance.json": "980b0a1c54f37bb2e64945f09409a6f86c4a45c65840882e8bd14472555cedf9",
+    "editorial-plan.json": "fbab3741a285e4695c89b83ae2b9dc9a32275ee41e132968c7372f873e264cf7",
+    "evidence.json": "823e7afdf9903d2876345ec7a167bb5f3d0df4e5a5290a7e1bc3a46d09456f69",
+    "gate-feedback.json": "f74aab7d8acf405e21f3c7b337ae78b27318efd25563ffadb0e2c1b471f148c7",
+    "payload.json": "6b53c26c6a239d352471c8c80a0dfc33fbedf64a45652f44cd46f2aacaafbb2f",
+    "qa.json": "adb148204d7835217c4b57604cd9ade7e4c3f1b02e95fb3e17603e6d94657aa9",
+    "selection.json": "688bb03b06ce77edf11b1da7a8b33919827e63f1d3d39327364af35b02f199bb",
+    "topic.json": "a8c1b15eaa457331a4b1cc8c3968a7afe22616349e3ad9c00eaf139c2606fe49"
+  },
+  "planning_candidate": {
+    "slug": "freezer-food-storage-bags",
+    "category": "dailygoods",
+    "title": "食品用の冷凍保存袋6選｜袋の閉じ方・使える温度・サイズで選ぶ",
+    "query": "冷凍保存袋 食品用",
+    "reader_persona": {
+      "editorial_depth": "温度表示や容量の読み方を日常語で説明する",
+      "knowledge_level": "保存袋の使い方は知っているが製品ごとの条件は詳しくない",
+      "purchase_goal": "入れる食材と冷凍庫の使い方に合う袋を選びたい",
+      "reader": "食材を小分けして冷凍したい家庭の料理担当者"
+    },
+    "introduction_angles": [
+      {
+        "id": "closure",
+        "label": "袋の閉じ方と口の構造",
+        "keywords": [
+          "冷凍保存袋 ダブルジッパー",
+          "冷凍保存袋 スライダー"
+        ]
+      },
+      {
+        "id": "temperature",
+        "label": "冷凍・解凍時の使用条件",
+        "keywords": [
+          "冷凍保存袋 電子レンジ解凍対応",
+          "冷凍保存袋 耐冷温度"
+        ]
+      },
+      {
+        "id": "size",
+        "label": "食材に合わせた袋の寸法と容量",
+        "keywords": [
+          "冷凍保存袋 Mサイズ 寸法",
+          "冷凍保存袋 大容量"
+        ]
+      }
+    ]
+  },
+  "original_product_inventory": [
+    {
+      "ref": "p1",
+      "asin": "B0DM5YMK47",
+      "name": "ニトリ(NITORI) フリーザーバッグ ダブルジッパー Mサイズ 38枚入り チェリー TWCH 2111200001860",
+      "prior_individual_selection_reason": "ダブルジッパーで口を閉じるMサイズの袋。幅18×高さ22.5cm、38枚入りで、食材を小分けする袋として枚数と寸法を確認して選びやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p2",
+      "asin": "B07CZYC4BG",
+      "name": "by Amazon ダブルジッパーバッグ マチ付きタイプ Lサイズ 80枚(40枚×2箱)",
+      "prior_individual_selection_reason": "ダブルジッパーに加えてマチがあり、厚みのある食材を入れる選択肢になる。横27cm、ジッパーより下の高さ18cm、80枚入りと、入る大きさと購入単位を確認しやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p3",
+      "asin": "B0H99QZVLN",
+      "name": "岩谷マテリアル ポリ袋 アイラップ 100 調理用 エンボス加工 マチ付き 25×35cm 100枚入 電子レンジ ・ 湯せん 使用可 (× 2)",
+      "prior_individual_selection_reason": "商品名に電子レンジと湯せんで使用可能と明記された、25×35cmの調理用ポリ袋。100枚入りの2個セットで、小分け用の袋をまとめて用意したい人が選びやすい。口を結んで使う袋で、ジッパー式ではない。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p4",
+      "asin": "B0CCPB4N5W",
+      "name": "Ziploc ジップロック フリーザーバッグ S80枚入",
+      "prior_individual_selection_reason": "冷凍から電子レンジ解凍まで対応すると明記されたフリーザーバッグ。閉まった感触が分かるジッパー付きで、解凍までの用途と閉じ方を確認して選べる。80枚入りで日常の小分けにも使いやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p5",
+      "asin": "B0FVL2W356",
+      "name": "大日産業 たっぷり冷凍保存フリーザーバッグ 透明 大 50枚(25枚×2箱) 27×28cm Wジッパー",
+      "prior_individual_selection_reason": "27×28cmの大きめの冷凍保存袋で、50枚入り。小さな袋には収めにくい食材向けに寸法を確認して選べ、Wファスナーで口を閉じられる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p6",
+      "asin": "B09HS5SFGZ",
+      "name": "コモライフ 湯せんもできる食品用ポリ袋 80枚入 厚手 食品衛生法適合品 透明 時短 冷凍 下ごしらえ ゴミ袋",
+      "prior_individual_selection_reason": "約縦36×横26cmの食品用ポリ袋で、長さのある食材を入れる際に寸法を比べやすい。80枚入りで日常の小分け用として購入しやすく、冷凍保存に対応し、耐冷温度はマイナス30℃と表示されている。",
+      "verified_excerpt_sources": 1
+    }
+  ],
+  "original_qa_pass_fields": [
+    "affiliate_pass",
+    "asin_pass",
+    "banned_phrase_pass",
+    "canonical_pass",
+    "category_pass",
+    "conclusion_brand_free_pass",
+    "description_hard_min_pass",
+    "description_target_pass",
+    "description_uniqueness_pass",
+    "distinct_openings_endings_pass",
+    "fixed_price_pass",
+    "h3_len_pass",
+    "image_identity_pass",
+    "lead_brand_free_pass",
+    "nav_footer_pass",
+    "no_repeated_sentences_pass",
+    "product_image_audit_pass",
+    "summary_brand_free_pass"
+  ],
+  "independent_review_required": true,
+  "independent_review_status": "PENDING",
+  "replanning_checks": {
+    "reader_need": {
+      "question": "What concrete product-selection need can be met?",
+      "observed_reader": "食材を小分けして冷凍したい家庭の料理担当者",
+      "purchase_goal": "入れる食材と冷凍庫の使い方に合う袋を選びたい",
+      "pass": null
+    },
+    "six_individual_recommendations": {
+      "question": "Which products each meet the stated need, with source-backed individual value?",
+      "pass": null
+    },
+    "three_discovery_angles": {
+      "question": "Are the 3 angles distinct discovery entrypoints without head-to-head rankings?",
+      "pass": null
+    },
+    "replan_outcome": {
+      "instruction": "Approve existing theme only if reader intent and genuine product recommendations are independently verified; otherwise reselect Planning theme and products.",
+      "pass": null
+    }
+  },
+  "product_qa": {
+    "existing_independent_receipt": "STALE_CONTRACT",
+    "new_product_qa_required": true,
+    "same_product_allowed_if_verified": true,
+    "product_count": 6,
+    "verified_per_product": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "next_action": "independent_planning_qa_then_conditional_product_qa_then_writer_qa_then_ceo_gate",
+  "execution_allowed": false,
+  "production_article_changed": false
+}

@@ -1,0 +1,158 @@
+{
+  "schema": "sellemy-failed37-planning-review-input/v1",
+  "task_id": "TASK-BU002-FAILED37-REPLAN-20261115",
+  "slug": "eye-makeup-removers-comparison",
+  "job_state": "FAILED",
+  "failed_stage": "WRITER_FAILED",
+  "original_job_sha256": {
+    "acceptance.json": "090ab0cc83411229363ee8b07a6e532e0aca6b703ac35f0a1b627047331d2886",
+    "editorial-plan.json": "0396bb115c6ae4fd549ce09bc05a2e999e2aa6a8161079eec5e3c9f466c0ea24",
+    "evidence.json": "d653d685c26977b1b067399f820b3627283dc91b2330226b74dc09cdc76099a2",
+    "gate-feedback.json": "8697e011dd0b528e1f04d66f5800b8ca33c73c6b9647333a9a94ea1a6586d84c",
+    "payload.json": "bfd9eeb16d06ddc74f3f5967e166a6ba1286f854f6181e64ebf733e80f204768",
+    "qa.json": "f4fb6fb19d70d1a5068ad7746426e4bde6bc38692205b83038decb5be570a8b3",
+    "selection.json": "b6362a86c7f32f2db11f9c8e8e31dfceee681c2de981906f36c2e7a4f6f05cdc",
+    "topic.json": "69d28b7969d5089c5b75912883c4050c0476c4f9c180f3c481d9702b2167e59b"
+  },
+  "planning_candidate": {
+    "slug": "eye-makeup-removers-comparison",
+    "category": "beauty",
+    "title": "アイメイク用リムーバー6選｜落とし方・使える部位・洗い流し方で選ぶ",
+    "query": "ポイントメイクリムーバー アイメイク",
+    "reader_persona": {
+      "editorial_depth": "剤型、使用部位、拭き取りや洗い流しの手順を日常語で説明する",
+      "knowledge_level": "クレンジングの基本は知っているが、ポイント用製品の違いには詳しくない",
+      "purchase_goal": "普段のアイメイクと使い方に合うリムーバーを選ぶ",
+      "reader": "マスカラやアイラインを落とす際のこすりすぎが気になる人"
+    },
+    "introduction_angles": [
+      {
+        "id": "formula",
+        "label": "液状・ジェルなどの剤型と使い方",
+        "keywords": [
+          "アイメイク リムーバー 二層式",
+          "ポイントメイクリムーバー ジェル"
+        ]
+      },
+      {
+        "id": "makeup_scope",
+        "label": "対象とするアイメイクと使用部位",
+        "keywords": [
+          "ウォータープルーフ マスカラ リムーバー",
+          "目元 口元 ポイントメイクリムーバー"
+        ]
+      },
+      {
+        "id": "removal_steps",
+        "label": "なじませ方と仕上げの手順",
+        "keywords": [
+          "アイメイク リムーバー コットン",
+          "ポイントメイクリムーバー 洗い流し"
+        ]
+      }
+    ]
+  },
+  "original_product_inventory": [
+    {
+      "ref": "p1",
+      "asin": "B0CGX236JD",
+      "name": "MAYBELLINE(メイベリン) メイベリン ニューヨーク アイ + リップ メイクアップリムーバー 70ml クレンジングウォーター メイク落とし 化粧落とし 拭き取り",
+      "prior_individual_selection_reason": "70mlの単品で選びやすい。油性・水溶性のメイクになじむ二層式で、アイメイクとリップメイクの両方に使える。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p2",
+      "asin": "B0089TW1UG",
+      "name": "資生堂 (SHISEIDO) パーフェクトリムーバー(アイ&リップ) 120mL",
+      "prior_individual_selection_reason": "120mlの単品で、日常的に使う量を購入しやすい。液体タイプで、ウォータープルーフのポイントメイクにも対応すると記載されている。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p3",
+      "asin": "B0HPQPM78D",
+      "name": "ヒロインメイクSP スピーディーマスカラリムーバーSK 6.6mL マスカラ用リムーバー 目にしみにくい処方 塗りやすいコーム型 ピンクボトル (× 2)",
+      "prior_individual_selection_reason": "ウォータープルーフマスカラを落としたい人には、対象が明確で選びやすい。まつ毛に塗るコーム型のマスカラ専用リムーバーで、2本セット。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p4",
+      "asin": "B0FZG1KCD5",
+      "name": "【正規品】ビオデルマ（Bioderma）サンシビオ エイチツーオー アイ 125ｍL 3本セット感肌用 ポイントメイククレンジング（ポイントメイク落とし マスカラリムーバー ティントリップリムーバー クレンジングウォーター 敏感肌用 無香料 無着色 エチルアルコール無添加 オイル無添加 パラベンフリー 弱酸性）",
+      "prior_individual_selection_reason": "マスカラとティントリップの両方を落としたい人に用途が合う。目元と口元に使う二層式のポイントメイクリムーバーで、125mlの3本セットをまとめて購入できる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p5",
+      "asin": "B0C4SF6S1C",
+      "name": "Bifesta(ビフェスタ)ミセラーアイメイクアップリムーバー 大容量 [ ポイントメイク落とし クレンジング ] 280ml 【Amazon.co.jp 限定】",
+      "prior_individual_selection_reason": "こすらず落とす使い方を重視する人に選びやすいポイントメイク落とし。280mlの大容量なので、日々の目元のメイク落とし用として量も確保できる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p6",
+      "asin": "B0DDPJW7LK",
+      "name": "Ariul アリウル ストレスリリービングピュアフルリップアンドアイリムーバーパッド 30枚x3個",
+      "prior_individual_selection_reason": "コットンを別に用意せず拭き取れるパッド型で、手順を簡単にしたい人に選びやすい。目元・口元のポイントメイクやウォータープルーフメイクに対応し、30枚入りの3個セット。",
+      "verified_excerpt_sources": 1
+    }
+  ],
+  "original_qa_pass_fields": [
+    "affiliate_pass",
+    "asin_pass",
+    "banned_phrase_pass",
+    "canonical_pass",
+    "category_pass",
+    "conclusion_brand_free_pass",
+    "description_hard_min_pass",
+    "description_target_pass",
+    "description_uniqueness_pass",
+    "distinct_openings_endings_pass",
+    "fixed_price_pass",
+    "h3_len_pass",
+    "image_identity_pass",
+    "lead_brand_free_pass",
+    "nav_footer_pass",
+    "no_repeated_sentences_pass",
+    "product_image_audit_pass",
+    "summary_brand_free_pass"
+  ],
+  "independent_review_required": true,
+  "independent_review_status": "PENDING",
+  "replanning_checks": {
+    "reader_need": {
+      "question": "What concrete product-selection need can be met?",
+      "observed_reader": "マスカラやアイラインを落とす際のこすりすぎが気になる人",
+      "purchase_goal": "普段のアイメイクと使い方に合うリムーバーを選ぶ",
+      "pass": null
+    },
+    "six_individual_recommendations": {
+      "question": "Which products each meet the stated need, with source-backed individual value?",
+      "pass": null
+    },
+    "three_discovery_angles": {
+      "question": "Are the 3 angles distinct discovery entrypoints without head-to-head rankings?",
+      "pass": null
+    },
+    "replan_outcome": {
+      "instruction": "Approve existing theme only if reader intent and genuine product recommendations are independently verified; otherwise reselect Planning theme and products.",
+      "pass": null
+    }
+  },
+  "product_qa": {
+    "existing_independent_receipt": "STALE_CONTRACT",
+    "new_product_qa_required": true,
+    "same_product_allowed_if_verified": true,
+    "product_count": 6,
+    "verified_per_product": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "next_action": "independent_planning_qa_then_conditional_product_qa_then_writer_qa_then_ceo_gate",
+  "execution_allowed": false,
+  "production_article_changed": false
+}

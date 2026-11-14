@@ -1,0 +1,158 @@
+{
+  "schema": "sellemy-failed37-planning-review-input/v1",
+  "task_id": "TASK-BU002-FAILED37-REPLAN-20261115",
+  "slug": "mascara-eyelash-primers",
+  "job_state": "FAILED",
+  "failed_stage": "WRITER_FAILED",
+  "original_job_sha256": {
+    "acceptance.json": "b999838850536b480286ffd6b963024fb2b21c93469147e80d8d6ec165474d49",
+    "editorial-plan.json": "c8f3215b0c9bda6d85a73964f29af9067f447896ae691191a742ad92670a6ab7",
+    "evidence.json": "3cafab71b5d5447d0ec9b9466be0610cff94175ca30bd2f083963c0767b44942",
+    "gate-feedback.json": "03362b559a485984cbd29e148e76f1d203212408c1c8e9b3e101ef79b3ceb592",
+    "payload.json": "ee9562167d2ce09d8f8f4d57a86332514c816ba8dedd7b5e60b63df3bc5b0bcb",
+    "qa.json": "d81bc666cd77ccfdf7809c8a9a30fb055ccdde2be8ad3b80b151aa84465c9ee4",
+    "selection.json": "01062ed9f35191cee27d16d0117528d852c86b639f63fa8c79b49af9332de60a",
+    "topic.json": "9370444178fab38e0e43b8257943c2123771eab0270d4d9d3fe8576d915dc90b"
+  },
+  "planning_candidate": {
+    "slug": "mascara-eyelash-primers",
+    "category": "beauty",
+    "title": "マスカラ下地6選｜仕上がり・ブラシ形状・落とし方で選ぶ",
+    "query": "マスカラ下地",
+    "reader_persona": {
+      "editorial_depth": "美容用語を増やさず、仕上がり、塗る部分、落とし方の違いを説明する",
+      "knowledge_level": "マスカラは使い慣れているが、下地の種類は知らない",
+      "purchase_goal": "手持ちのマスカラと使いやすく、望む仕上がりに合う下地を選びたい",
+      "reader": "マスカラを塗る前のひと手間で仕上がりを整えたい人"
+    },
+    "introduction_angles": [
+      {
+        "id": "finish",
+        "label": "目指す仕上がり",
+        "keywords": [
+          "マスカラ下地 カール",
+          "マスカラ下地 ロング"
+        ]
+      },
+      {
+        "id": "applicator",
+        "label": "ブラシと塗りやすい部分",
+        "keywords": [
+          "マスカラ下地 コームタイプ",
+          "マスカラ下地 細ブラシ"
+        ]
+      },
+      {
+        "id": "removal",
+        "label": "落とし方",
+        "keywords": [
+          "マスカラ下地 お湯で落とせる",
+          "マスカラ下地 クレンジング"
+        ]
+      }
+    ]
+  },
+  "original_product_inventory": [
+    {
+      "ref": "p1",
+      "asin": "B0GHRCJ5B4",
+      "name": "ettusais Mascara Base, Transparent Black, Black Fiber, Waterproof",
+      "prior_individual_selection_reason": "透明ブラックの液と黒い繊維で、自然な長さと濃さを出したい人に。下地だけでも使えると説明されており、手持ちのマスカラと組み合わせるか迷っている人も選びやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p2",
+      "asin": "B09C5C7MB9",
+      "name": "セザンヌ 耐久カールマスカラ 00 クリア 5.0ｇ マスカラ下地 クリア トップコート 強力カール",
+      "prior_individual_selection_reason": "無色でナチュラルな仕上がりを求め、カールを重視する人に。下地・マスカラ・トップコートの3役として使えるため、まず1本試したい人にも選びやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p3",
+      "asin": "B0CCCSHDX9",
+      "name": "ピメル Pmel うそつき下地 マスカラ下地 ナチュラル セパレート クリアマスカラ ウォータープルーフ カールキープ まつげ 美容液 メイク",
+      "prior_individual_selection_reason": "細くコンパクトなストレートブラシで、短めのまつ毛や下まつ毛にも塗りやすいと説明されている。クリアカラーで白く残りにくく、細かい部分を整えたい人が選びやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p4",
+      "asin": "B099PXDD4K",
+      "name": "ヒロインメイク カールキープ マスカラベースWP 01 クリアブラック 4.5g カール持続マスカラ下地 ウォータープルーフ処方 セパレートスリムブラシ",
+      "prior_individual_selection_reason": "セパレートスリムブラシを備えたカール持続用の下地。細いブラシでまつ毛を分けながら塗りたい人に向き、クリアブラックなので仕上がりの色も購入前に判断しやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p5",
+      "asin": "B081QNGT63",
+      "name": "UZU BY FLOWFUSHI (ウズバイフローフシ) モテマスカラ [クリアー] マツエクにも 眉毛にも まつげケア 耐水性 お湯オフ アルコールフリー 低刺激性",
+      "prior_individual_selection_reason": "商品名に「お湯オフ」と明記されたクリアタイプ。ベースにもトップコートにも使えると説明されており、お湯で落とせるものを探しつつ使い道も広げたい人に選びやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p6",
+      "asin": "B09Y8G4NL5",
+      "name": "ヒロインメイク カールキープマスカラベース 50 フルールバイオレット 6g マスカラ下地 カラーマスカラ パール入り 強力カール お湯+洗顔料オフ",
+      "prior_individual_selection_reason": "商品名に「お湯＋洗顔料オフ」と明記されており、落とす手順を購入前に確認できる。紫色のパール入り下地で、カールに加えて色味も楽しみたい人向けの選択肢になる。",
+      "verified_excerpt_sources": 1
+    }
+  ],
+  "original_qa_pass_fields": [
+    "affiliate_pass",
+    "asin_pass",
+    "banned_phrase_pass",
+    "canonical_pass",
+    "category_pass",
+    "conclusion_brand_free_pass",
+    "description_hard_min_pass",
+    "description_target_pass",
+    "description_uniqueness_pass",
+    "distinct_openings_endings_pass",
+    "fixed_price_pass",
+    "h3_len_pass",
+    "image_identity_pass",
+    "lead_brand_free_pass",
+    "nav_footer_pass",
+    "no_repeated_sentences_pass",
+    "product_image_audit_pass",
+    "summary_brand_free_pass"
+  ],
+  "independent_review_required": true,
+  "independent_review_status": "PENDING",
+  "replanning_checks": {
+    "reader_need": {
+      "question": "What concrete product-selection need can be met?",
+      "observed_reader": "マスカラを塗る前のひと手間で仕上がりを整えたい人",
+      "purchase_goal": "手持ちのマスカラと使いやすく、望む仕上がりに合う下地を選びたい",
+      "pass": null
+    },
+    "six_individual_recommendations": {
+      "question": "Which products each meet the stated need, with source-backed individual value?",
+      "pass": null
+    },
+    "three_discovery_angles": {
+      "question": "Are the 3 angles distinct discovery entrypoints without head-to-head rankings?",
+      "pass": null
+    },
+    "replan_outcome": {
+      "instruction": "Approve existing theme only if reader intent and genuine product recommendations are independently verified; otherwise reselect Planning theme and products.",
+      "pass": null
+    }
+  },
+  "product_qa": {
+    "existing_independent_receipt": "STALE_CONTRACT",
+    "new_product_qa_required": true,
+    "same_product_allowed_if_verified": true,
+    "product_count": 6,
+    "verified_per_product": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "next_action": "independent_planning_qa_then_conditional_product_qa_then_writer_qa_then_ceo_gate",
+  "execution_allowed": false,
+  "production_article_changed": false
+}

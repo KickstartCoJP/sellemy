@@ -1,0 +1,158 @@
+{
+  "schema": "sellemy-failed37-planning-review-input/v1",
+  "task_id": "TASK-BU002-FAILED37-REPLAN-20261115",
+  "slug": "bathroom-liquid-soap-dispensers",
+  "job_state": "FAILED",
+  "failed_stage": "WRITER_FAILED",
+  "original_job_sha256": {
+    "acceptance.json": "e5eec808e6db5b991867093750753bb950ffe1e331624fa6152a2bce790a7a36",
+    "editorial-plan.json": "55ba789c2f508d7339b03fbebbe351cd9dd580f1b9efc846065b094594c02c0f",
+    "evidence.json": "140cc99c9de822626334cd4155722294b40d1012269e40bc33cbb861ec095b5b",
+    "gate-feedback.json": "e9f4127c5443468aa02333db5fbb2e53b8469a5a8fc5be9335413db617f13429",
+    "payload.json": "07aaf2a5c3ab7677e7a46c9e7a8039116cfb9d245a0e9604e7d8747822d0e7d8",
+    "qa.json": "c61adaaceee79edec664d8d3dee5d42923a2ba552b9e85dafd49fd3734914889",
+    "selection.json": "2a7ffe609f1e7c4ed26f5f90a925b6f3946af48b15288949c12b9299cfc6354e",
+    "topic.json": "342f6b872a295e3e060af11e14b1b593724979d9518ff77967b70f0bcad593c2"
+  },
+  "planning_candidate": {
+    "slug": "bathroom-liquid-soap-dispensers",
+    "category": "dailygoods",
+    "title": "洗面所の液体ソープディスペンサー6選｜吐出方法・補充口・置き場所で選ぶ",
+    "query": "洗面所 液体ハンドソープ ディスペンサー",
+    "reader_persona": {
+      "editorial_depth": "液体用と泡用を区別し、吐出と補充の仕組みを日常語で説明する",
+      "knowledge_level": "市販のポンプ容器に慣れており、専用容器は初めて選ぶ",
+      "purchase_goal": "洗面台の広さと補充の頻度に合う容器を選ぶ",
+      "reader": "洗面所のハンドソープを詰め替えて使いたい人"
+    },
+    "introduction_angles": [
+      {
+        "id": "dispensing",
+        "label": "液体ソープの吐出方法",
+        "keywords": [
+          "液体ハンドソープ ディスペンサー 手動ポンプ",
+          "液体ハンドソープ ディスペンサー 自動"
+        ]
+      },
+      {
+        "id": "refill",
+        "label": "容量と補充口の構造",
+        "keywords": [
+          "液体ソープ ディスペンサー 広口",
+          "液体ソープ ディスペンサー 大容量"
+        ]
+      },
+      {
+        "id": "placement",
+        "label": "設置方式と本体寸法",
+        "keywords": [
+          "液体ソープ ディスペンサー 壁掛け",
+          "液体ソープ ディスペンサー 卓上"
+        ]
+      }
+    ]
+  },
+  "original_product_inventory": [
+    {
+      "ref": "p1",
+      "asin": "B0863SPFX3",
+      "name": "ハンドソープディスペンサー 304 ステンレス おしゃれ ディスペンサー シャンプー ボトル 食器用洗剤 バスルーム キッチン 洗面所などに適用 350ML (2021)",
+      "prior_individual_selection_reason": "液体ソープをそのまま入れて使える手動ポンプ。押して出す使い慣れた方式で、充電や電池も不要なため初めての詰め替え容器として選びやすい。容量は350ml。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p2",
+      "asin": "B0C5HCB79L",
+      "name": "ソープディスペンサー ガラス ハンドソープ ディスペンサー 広口 シャンプーボトル 手動 洗面台 洗剤ボトル ポンプ シャンプー 食器洗剤 泡 透明",
+      "prior_individual_selection_reason": "手で押すと泡で出るタイプ。透明な容器で残量が見え、広口なので補充しやすい。液体ソープは水で3～8倍に薄める必要があるため、泡での手洗いを希望し、希釈の手間を許容できる人向け。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p3",
+      "asin": "B0BNKDHYFF",
+      "name": "Cheftick ソープディスペンサー ハンドソープ 自動 泡 吐出量4段階調節 オートディスペンサー 充電式 キッチン 洗面所などに適用",
+      "prior_individual_selection_reason": "400mlの透明ボトルで残量を確認でき、補充回数を抑えたい人が容量で選びやすい。センサー式で泡を出す製品だが、液体ハンドソープをそのまま使えるという記載は確認できないため、購入前に使用するソープとの適合確認が必要。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p4",
+      "asin": "B07W41LYHZ",
+      "name": "Umimileユミマイル ソープディスペンサー 泡 自動 ハンドソープディスペンサー オート センサー 電池式 ハンドソープ 食器用洗剤",
+      "prior_individual_selection_reason": "250mlの電池式で、容量を抑えた容器を選びたい人向け。泡ソープはそのまま、液体洗剤は水で2～8倍に薄めて使うと明記されており、補充時の扱いを判断しやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p5",
+      "asin": "B0GZZH7K73",
+      "name": "ソープディスペンサー 自動 泡/液体タイプ 9段階調整 ステンレス製 バッテリー残量表示 オートディスペンサー 非接触 USB充電式 IPX5防水 壁掛け/置き型 350ml大容量 キッチン 洗面所 台所などに適用 (泡タイプ)",
+      "prior_individual_selection_reason": "本体寸法は7.5×7.5×20cmで、付属フックによる壁掛けと卓上置きに対応。洗面台上の置き場所に合わせて設置方法を選びやすい。ただし候補は泡タイプのため、液体ソープをそのまま使いたい場合は適合を確認する必要がある。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p6",
+      "asin": "B0B7RBBFQL",
+      "name": "Dalugo ソープディスペンサー 自動 液体 ハンドソープ 食器洗剤 自動ディスペンサー 壁掛け USB-C充電式 400ml大容量 IPX5防水",
+      "prior_individual_selection_reason": "液体ハンドソープを泡にせず出すセンサー式。寸法は10.6×7.8×19.7cmで、卓上置きと付属フックによる壁掛けに対応する。洗面台上のスペースが足りなければ壁掛けを選べ、400mlの半透明タンクで残量も確認できる。",
+      "verified_excerpt_sources": 1
+    }
+  ],
+  "original_qa_pass_fields": [
+    "affiliate_pass",
+    "asin_pass",
+    "banned_phrase_pass",
+    "canonical_pass",
+    "category_pass",
+    "conclusion_brand_free_pass",
+    "description_hard_min_pass",
+    "description_target_pass",
+    "description_uniqueness_pass",
+    "distinct_openings_endings_pass",
+    "fixed_price_pass",
+    "h3_len_pass",
+    "image_identity_pass",
+    "lead_brand_free_pass",
+    "nav_footer_pass",
+    "no_repeated_sentences_pass",
+    "product_image_audit_pass",
+    "summary_brand_free_pass"
+  ],
+  "independent_review_required": true,
+  "independent_review_status": "PENDING",
+  "replanning_checks": {
+    "reader_need": {
+      "question": "What concrete product-selection need can be met?",
+      "observed_reader": "洗面所のハンドソープを詰め替えて使いたい人",
+      "purchase_goal": "洗面台の広さと補充の頻度に合う容器を選ぶ",
+      "pass": null
+    },
+    "six_individual_recommendations": {
+      "question": "Which products each meet the stated need, with source-backed individual value?",
+      "pass": null
+    },
+    "three_discovery_angles": {
+      "question": "Are the 3 angles distinct discovery entrypoints without head-to-head rankings?",
+      "pass": null
+    },
+    "replan_outcome": {
+      "instruction": "Approve existing theme only if reader intent and genuine product recommendations are independently verified; otherwise reselect Planning theme and products.",
+      "pass": null
+    }
+  },
+  "product_qa": {
+    "existing_independent_receipt": "STALE_CONTRACT",
+    "new_product_qa_required": true,
+    "same_product_allowed_if_verified": true,
+    "product_count": 6,
+    "verified_per_product": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "next_action": "independent_planning_qa_then_conditional_product_qa_then_writer_qa_then_ceo_gate",
+  "execution_allowed": false,
+  "production_article_changed": false
+}

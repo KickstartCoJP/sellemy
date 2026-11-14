@@ -1,0 +1,33 @@
+{
+  "schema": "sellemy-failed37-owner-first-planning-reassessment/v1",
+  "task_id": "TASK-BU002-FAILED37-REPLAN-20261115",
+  "slug": "insulated-lunch-bags-for-daily-use",
+  "status": "OWNER_REVIEWED_REQUIRES_INDEPENDENT_QA",
+  "reader_need": "弁当箱と保冷剤が日常バッグに収まり、持ち運び方に合う保冷ランチバッグを探している",
+  "theme_fit": "Purchase need has a grounded reader persona and a concrete daily-use decision. No mandated head-to-head comparison is necessary.",
+  "discovery_grouping": {
+    "dimensions": "収納寸法と容量に着目",
+    "opening": "弁当箱の出し入れしやすさに着目",
+    "carrying": "手持ち・肩掛けなどの携帯方法に着目"
+  },
+  "original_product_selection_reasons_present": 6,
+  "original_verified_source_excerpt_counts": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "portfolio_collision_concern": [
+    "insulated-lunch-bags-for-daily-commutes",
+    "insulated-lunch-bags-for-daily-carry"
+  ],
+  "provisional_action": "Independent Planning QA must decide if this reader need is sufficiently differentiated from two other failed jobs; if not, replan themes within existing job identities, then renew current Product QA before Writer",
+  "comparison_required": false,
+  "ceo_approval": null,
+  "independent_planning_qa": null,
+  "new_product_qa": null,
+  "writer_qa": null,
+  "production_changed": false
+}

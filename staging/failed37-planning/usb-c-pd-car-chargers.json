@@ -1,0 +1,158 @@
+{
+  "schema": "sellemy-failed37-planning-review-input/v1",
+  "task_id": "TASK-BU002-FAILED37-REPLAN-20261115",
+  "slug": "usb-c-pd-car-chargers",
+  "job_state": "FAILED",
+  "failed_stage": "WRITER_FAILED",
+  "original_job_sha256": {
+    "acceptance.json": "9e74cea7601595fbf14314b4d36e2157e8cae7d0fc7650726f8cda56af4cacda",
+    "editorial-plan.json": "96e7c01a4a6d38ebc4fd2ef6ef509b24f5155faaae170774d3b1180c3ad2753d",
+    "evidence.json": "663670fcbf6407507311b551fd3474b1f7b5ee1bed74892e51e85efdb3a8266b",
+    "gate-feedback.json": "61b7aeeb1e0fd5c65b32cbbde031c5572313b88259e5024ce3916579335edeff",
+    "payload.json": "d720a3b366b7243fffcc0fdadcb8f80f471707e1bb1e48bfe2236257d38b2ab9",
+    "qa.json": "60344b03bae21d14387208ed1390b0bdff87ba85780eff306fbb8eaf81217eda",
+    "selection.json": "28a7a90d649d7902956c30dcf97253c0747e19b6733139757bbc70757a884c86",
+    "topic.json": "db927fda8b1c86aaa28d93b6ca9b87b934b75550b59565a42a030b667eee7cfc"
+  },
+  "planning_candidate": {
+    "slug": "usb-c-pd-car-chargers",
+    "category": "gadget",
+    "title": "車載USB-C充電器6選｜端子数・同時充電時の出力・車への接続で選ぶ",
+    "query": "車載 USB-C PD 充電器 シガーソケット",
+    "reader_persona": {
+      "editorial_depth": "入力電圧、端子ごとの出力、複数台接続時の条件を数値とともに説明する",
+      "knowledge_level": "USB-CとPDの意味はおおむね知っているが、同時充電時の出力配分には詳しくない",
+      "purchase_goal": "車と充電する機器に合う端子構成・出力の製品を選ぶ",
+      "reader": "車内でスマートフォンやタブレットを充電したい人"
+    },
+    "introduction_angles": [
+      {
+        "id": "ports",
+        "label": "USB-C端子数と端子の組み合わせ",
+        "keywords": [
+          "車載 USB-C PD 充電器 2ポート",
+          "シガーソケット USB-C USB-A 充電器"
+        ]
+      },
+      {
+        "id": "power_distribution",
+        "label": "単独・同時充電時の出力配分",
+        "keywords": [
+          "車載 USB-C PD 充電器 同時出力",
+          "車載 PD 充電器 ポート別 出力"
+        ]
+      },
+      {
+        "id": "vehicle_input",
+        "label": "対応する車の入力電圧と本体寸法",
+        "keywords": [
+          "車載 USB-C PD 充電器 12V 24V",
+          "シガーソケット USB-C 充電器 小型"
+        ]
+      }
+    ]
+  },
+  "original_product_inventory": [
+    {
+      "ref": "p1",
+      "asin": "B0BQ3GL5HR",
+      "name": "Anker 323 Car Charger (52.5W)",
+      "prior_individual_selection_reason": "USB-C最大30WとUSB-A最大22.5Wの組み合わせで、端子の異なるスマートフォンやタブレットを車内で2台充電したい人が選びやすい。2台使用時の合計最大52.5Wも確認できる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p2",
+      "asin": "B0FSS7P9FF",
+      "name": "Philips (フィリップス) 2ポート かーチャージャー 30W急速充電 PD&QC対応 シガーソケット USB-A＆USB-C スマートIC搭載 車載充電器 超小型 12/24V車対応 DLP3520N",
+      "prior_individual_selection_reason": "USB-CとUSB-Aを各1口備え、USB-CはPD最大30W、USB-AはQC最大30W。手持ちのケーブルの端子で選びやすい。2台同時使用時は合計5V/5Aのため、各端子の最大30Wを同時に使えるとは限らない点も判断材料になる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p3",
+      "asin": "B0DSBNYRKS",
+      "name": "UGREEN【70cm巻き取り式／合計145W出力／最大PD100W／USB－C＆A-4台同時利用】カーチャージャー シガーソケット EC604",
+      "prior_individual_selection_reason": "最大100WのPD充電と合計最大145W、4台同時利用が示されており、車内でノートPCとほかの機器を充電したい人の候補になる。70cmの巻き取り式ケーブルも使い道が明確。ただし、4台接続時の端子別出力は提示情報から確認できない。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p4",
+      "asin": "B0BNPXS9B7",
+      "name": "エレコム カーチャージャー シガーソケット USB-C 最大40W (2ポート合計) USB PD対応 20W USB-C×2 2台同時充電 12V24V対応 [iPhone 14/13/12/11/SE3/SE2、iPad 等対応] ブラック EC-DC09BK",
+      "prior_individual_selection_reason": "USB-Cを2口備え、各口20W、2口同時使用時は合計40Wと出力条件が明確。スマートフォンを2台充電する人が必要な出力を見積もりやすく、12V・24Vの車に対応する。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p5",
+      "asin": "B0CHY1ZGYB",
+      "name": "UGREEN【最大PD30W／USB－C＆USB－A／ミニ小型】カーチャージャー シガーソケット EC305",
+      "prior_individual_selection_reason": "12V・24Vのアクセサリーソケットに対応し、小型設計と明記されているため、普通車や大型車でソケット周辺の場所を取りたくない人が選びやすい。USB-C最大30WとUSB-Aを備えるが、2台同時使用時は合計出力が下がる場合がある。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p6",
+      "asin": "B0G2BXBZSX",
+      "name": "【2026改良型】シガーソケット USB & USB-C カーチャージャー 66W 5ポート 車載充電器 5台同時に充電 PD 20W+QC3.0ポート 軽量化 急速充電 LED付オート電圧測定スマート識別 カー用品 12V-24V車対応 iPhone/Android適用 タブレットなどに対応(ブラック)",
+      "prior_individual_selection_reason": "12V・24V車に対応し、アクセサリーソケットへ差し込んで使える。5ポートを備えるため、同乗者の機器もつなぎたい人に用途が明確。USB-CのPD20Wは確認できる一方、5台同時使用時の端子別出力と本体寸法は提示情報から確認できない。",
+      "verified_excerpt_sources": 1
+    }
+  ],
+  "original_qa_pass_fields": [
+    "affiliate_pass",
+    "asin_pass",
+    "banned_phrase_pass",
+    "canonical_pass",
+    "category_pass",
+    "conclusion_brand_free_pass",
+    "description_hard_min_pass",
+    "description_target_pass",
+    "description_uniqueness_pass",
+    "distinct_openings_endings_pass",
+    "fixed_price_pass",
+    "h3_len_pass",
+    "image_identity_pass",
+    "lead_brand_free_pass",
+    "nav_footer_pass",
+    "no_repeated_sentences_pass",
+    "product_image_audit_pass",
+    "summary_brand_free_pass"
+  ],
+  "independent_review_required": true,
+  "independent_review_status": "PENDING",
+  "replanning_checks": {
+    "reader_need": {
+      "question": "What concrete product-selection need can be met?",
+      "observed_reader": "車内でスマートフォンやタブレットを充電したい人",
+      "purchase_goal": "車と充電する機器に合う端子構成・出力の製品を選ぶ",
+      "pass": null
+    },
+    "six_individual_recommendations": {
+      "question": "Which products each meet the stated need, with source-backed individual value?",
+      "pass": null
+    },
+    "three_discovery_angles": {
+      "question": "Are the 3 angles distinct discovery entrypoints without head-to-head rankings?",
+      "pass": null
+    },
+    "replan_outcome": {
+      "instruction": "Approve existing theme only if reader intent and genuine product recommendations are independently verified; otherwise reselect Planning theme and products.",
+      "pass": null
+    }
+  },
+  "product_qa": {
+    "existing_independent_receipt": "STALE_CONTRACT",
+    "new_product_qa_required": true,
+    "same_product_allowed_if_verified": true,
+    "product_count": 6,
+    "verified_per_product": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "next_action": "independent_planning_qa_then_conditional_product_qa_then_writer_qa_then_ceo_gate",
+  "execution_allowed": false,
+  "production_article_changed": false
+}

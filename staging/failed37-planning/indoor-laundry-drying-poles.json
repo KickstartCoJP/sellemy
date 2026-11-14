@@ -1,0 +1,157 @@
+{
+  "schema": "sellemy-failed37-planning-review-input/v1",
+  "task_id": "TASK-BU002-FAILED37-REPLAN-20261115",
+  "slug": "indoor-laundry-drying-poles",
+  "job_state": "FAILED",
+  "failed_stage": "WRITER_FAILED",
+  "original_job_sha256": {
+    "acceptance.json": "d3d5301ebf9d6147e0d5fd5761ecfde43bb35f52b2ef2d444ba3669b7305dd5e",
+    "editorial-plan.json": "230eb85abd870af7018975053243d1e56c695ef3c6bb8ab80c4f7bfdb50a9e0a",
+    "evidence.json": "a3d96c2b13181ef0ae8a2fdbec95848cca6f4e747495e8415343f595c7f4a616",
+    "gate-feedback.json": "07daf6654659c0c727b19319586c480e2e7621cb9cac6e612ea81e4d59edff38",
+    "payload.json": "134609b7dfe920350fa438a573ed6ca7a02f0dceab0edd7f2aa567b1e2b37bdf",
+    "qa.json": "9c94029f27e20a6e94a2d45ea73c2f7537b5318519c112b7404e93da0c57c8ef",
+    "selection.json": "51fec6b7d8e62888153db26d65dadb1713b9874ac1ebeb575da03ad053e9b0a7",
+    "topic.json": "1cf42d2a3a6b3322f53c34272acb9c325281c60536230ae9f8027e0afe9c6844"
+  },
+  "planning_candidate": {
+    "slug": "indoor-laundry-drying-poles",
+    "category": "dailygoods",
+    "title": "室内物干し竿6選｜設置方法・長さ・干せる重さで選ぶ",
+    "query": "室内物干し竿 伸縮",
+    "reader_persona": {
+      "editorial_depth": "設置幅と耐荷重の読み方を日常語で説明し、竿単体と支持具を区別する",
+      "knowledge_level": "物干し竿は使ったことがあるが室内の設置条件には詳しくない",
+      "purchase_goal": "自宅の設置幅と支持具に合う竿を買う",
+      "reader": "雨の日や冬場に室内干しを増やしたい人"
+    },
+    "introduction_angles": [
+      {
+        "id": "installation",
+        "label": "支持具への設置方法と必要な形状",
+        "keywords": [
+          "室内物干し竿 伸縮 支持具",
+          "室内物干し竿 ホスクリーン 対応"
+        ]
+      },
+      {
+        "id": "length",
+        "label": "伸縮範囲と設置できる幅",
+        "keywords": [
+          "室内物干し竿 伸縮 1m 2m",
+          "室内物干し竿 長さ調整"
+        ]
+      },
+      {
+        "id": "load",
+        "label": "竿の耐荷重と干し方",
+        "keywords": [
+          "室内物干し竿 耐荷重",
+          "室内物干し竿 洗濯物 重さ"
+        ]
+      }
+    ]
+  },
+  "original_product_inventory": [
+    {
+      "ref": "p1",
+      "asin": "B09XC69KVB",
+      "name": "Bestco Clothes Drying Rack, Can Be Used in Bathroom, Slim, Extendable Rod 3.44~5.91ft, Stainless Steel, White, Short",
+      "prior_individual_selection_reason": "既存の支持具に竿を渡して使いたい人向け。長さは105～180cm、耐荷重は5kgで、先端は転がりにくいD形状。購入前に設置幅と支持具に先端が収まるかを確かめやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p2",
+      "asin": "B0FMF4555F",
+      "name": "MIGABER Tension Rod, No Drilling Required, Strong, Adjustable Length, Load",
+      "prior_individual_selection_reason": "竿受けがなく、向かい合う壁の間に設置したい人向けの突っ張り式。125～225cmに調整でき、工具やねじを使わず取り付けられる。壁面の条件と設置幅を確認して選べる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p3",
+      "asin": "B0B9R483S9",
+      "name": "Sekisuijushoji DSM-18 Stainless Steel Bathroom Telescopic Rod Length 3.8 - 5.9 ft (0.96 - 1.8 m)",
+      "prior_individual_selection_reason": "設置幅が1m前後の浴室にも合わせやすい96～180cmの伸縮竿。内径25mm以上の既設ポールホルダーに載せる仕様が明記されており、幅と支持具の寸法を照らして選べる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p4",
+      "asin": "B09XC7VGZK",
+      "name": "Bestco NY-160 Slim Telescopic Rod, 41.3 - 70.9 inches (105 - 180 cm), White, Short",
+      "prior_individual_selection_reason": "105～180cmの範囲で長さを調整できる細身の竿。最短が105cmなので、設置幅がそれ以上ある場所の候補にしやすい。耐荷重5kgも明記され、干す量を見積もって選べる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p5",
+      "asin": "B0BZ79GP6Q",
+      "name": "チチロバ(Titiroba) 物干し竿 サビに強い304ステンレス ものほしざお 屋外 屋内屋外対応 伸縮自在 ストレート竿 1.68m~3m",
+      "prior_individual_selection_reason": "家族分の洗濯物など、干す量が多い場合の候補。メーカー記載は全体耐荷重50kg、均等に荷重をかける場合は20kgで、干し方による違いを確認できる。長さ168～300cm、竿径29.4mmなので、設置幅と支持具の寸法を確かめて選べる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p6",
+      "asin": "B0F5ZBQ1Z9",
+      "name": "天馬 物干し竿 屋外 洗濯物干し竿 室内 ジョイント伸縮竿 1.7-2.3m 部屋干し竿 ものほしざお サビにくい 物干しスタンド ベランダ ブラック 【サイズ 1.7-2.3m(Φ3.5cm)】【耐荷重 10kg】【PSBK-S1】",
+      "prior_individual_selection_reason": "耐荷重10kgを目安に洗濯物を干したい人向け。長さ170～230cm、直径35mmが明記され、手持ちの支持具に載るか判断しやすい。工具不要で組み立てられる点も購入時の確認事項が少ない。",
+      "verified_excerpt_sources": 1
+    }
+  ],
+  "original_qa_pass_fields": [
+    "affiliate_pass",
+    "asin_pass",
+    "banned_phrase_pass",
+    "canonical_pass",
+    "category_pass",
+    "conclusion_brand_free_pass",
+    "description_hard_min_pass",
+    "description_target_pass",
+    "description_uniqueness_pass",
+    "distinct_openings_endings_pass",
+    "fixed_price_pass",
+    "h3_len_pass",
+    "image_identity_pass",
+    "lead_brand_free_pass",
+    "nav_footer_pass",
+    "no_repeated_sentences_pass",
+    "summary_brand_free_pass"
+  ],
+  "independent_review_required": true,
+  "independent_review_status": "PENDING",
+  "replanning_checks": {
+    "reader_need": {
+      "question": "What concrete product-selection need can be met?",
+      "observed_reader": "雨の日や冬場に室内干しを増やしたい人",
+      "purchase_goal": "自宅の設置幅と支持具に合う竿を買う",
+      "pass": null
+    },
+    "six_individual_recommendations": {
+      "question": "Which products each meet the stated need, with source-backed individual value?",
+      "pass": null
+    },
+    "three_discovery_angles": {
+      "question": "Are the 3 angles distinct discovery entrypoints without head-to-head rankings?",
+      "pass": null
+    },
+    "replan_outcome": {
+      "instruction": "Approve existing theme only if reader intent and genuine product recommendations are independently verified; otherwise reselect Planning theme and products.",
+      "pass": null
+    }
+  },
+  "product_qa": {
+    "existing_independent_receipt": "STALE_CONTRACT",
+    "new_product_qa_required": true,
+    "same_product_allowed_if_verified": true,
+    "product_count": 6,
+    "verified_per_product": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "next_action": "independent_planning_qa_then_conditional_product_qa_then_writer_qa_then_ceo_gate",
+  "execution_allowed": false,
+  "production_article_changed": false
+}

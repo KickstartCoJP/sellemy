@@ -1,0 +1,157 @@
+{
+  "schema": "sellemy-failed37-planning-review-input/v1",
+  "task_id": "TASK-BU002-FAILED37-REPLAN-20261115",
+  "slug": "dishwasher-safe-everyday-chopsticks",
+  "job_state": "FAILED",
+  "failed_stage": "WRITER_FAILED",
+  "original_job_sha256": {
+    "acceptance.json": "4fa878a7e5c1f801e2e1a1b0b7ba1549e16b974d93969837833d0ee1838fe55f",
+    "editorial-plan.json": "15b44f71bfabaa92908547c5095d370d084de813c30032654869fa7334f9a837",
+    "evidence.json": "9f41e9dfded698372e1c1149266345114b1df009fb1c0d8936e4b1b221a239d2",
+    "gate-feedback.json": "28af75b7592f86a71d96ddee2b11507120d819480346c1df5f56fb737539afe4",
+    "payload.json": "d4fcab77ac767cc315c2579e491063628065f312178211e8c892936737d55560",
+    "qa.json": "9808b6cb5f84af372f7388147b301d9d600ac789091e4b4c87d982432bc8dacb",
+    "selection.json": "4908b606e839d67fe24436646de2d2621c454802a24fd1a89b6b35e9aa9762b2",
+    "topic.json": "fe7476f4d09583e1e18aa4144b7069811ef4527b02cb298d3e7952cccd37aa31"
+  },
+  "planning_candidate": {
+    "slug": "dishwasher-safe-everyday-chopsticks",
+    "category": "dailygoods",
+    "title": "食洗機で洗える普段使いの箸6選｜長さ・先端の形・材質で選ぶ",
+    "query": "食洗機対応 箸 普段使い 長さ 先端",
+    "reader_persona": {
+      "editorial_depth": "長さと持ち方、先端の形、表示された洗浄条件を簡潔に説明する",
+      "knowledge_level": "箸の材質や食洗機での扱いの違いは詳しくない",
+      "purchase_goal": "使う人に合う長さで、食洗機に対応した食事用の箸を買う",
+      "reader": "毎日の食器洗いを食洗機で済ませたい家庭"
+    },
+    "introduction_angles": [
+      {
+        "id": "length",
+        "label": "箸の長さと使う人",
+        "keywords": [
+          "食洗機対応 箸 21cm",
+          "食洗機対応 箸 23cm"
+        ]
+      },
+      {
+        "id": "tip",
+        "label": "先端の形と滑り止め加工",
+        "keywords": [
+          "食洗機対応 箸 先角",
+          "食洗機対応 箸 先端 滑り止め"
+        ]
+      },
+      {
+        "id": "material",
+        "label": "材質と食洗機での使用条件",
+        "keywords": [
+          "食洗機対応 木製 箸",
+          "食洗機対応 樹脂 箸"
+        ]
+      }
+    ]
+  },
+  "original_product_inventory": [
+    {
+      "ref": "p1",
+      "asin": "B00D0Z0ZD4",
+      "name": "イシダ 若狭塗箸 夢華 21cm ピンク 食器洗浄乾燥機対応 すべり止め 銀イオン 159265",
+      "prior_individual_selection_reason": "長さ21cmの箸を使う人向け。天然木にアクリルウレタン塗装を施した1膳で、食器洗浄乾燥機対応と滑り止めが表示されている。21cmで箸先の滑りにくさも重視したい人が選びやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p2",
+      "asin": "B0091G6JP4",
+      "name": "カワイ 『箸』 食洗機対応 マジカル レッド 21cm 36953",
+      "prior_individual_selection_reason": "長さ21cmの箸を使う人向け。天然木製の食洗機対応箸で、無地の1膳。家族の人数や好みに合わせて必要な膳数を選びやすく、同じ21cmでも装飾の少ないものを探す人に合う。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p3",
+      "asin": "B0B3WP5L2B",
+      "name": "[福井県小浜 自社工場で製造]［お箸工場］箸 つまみやすく すべらない 先角箸 5膳 セット / 竹 お箸 おはし はし 抗菌 食洗機対応 若狭塗 滑らない 滑り止め付 天然木 シンプル 使いやすい まとめ買い 日本製 国産 業務用 持ちやすい 来客用 ゲスト 普段使い 外国人 土産 みやげ 敬老の日 (竹)",
+      "prior_individual_selection_reason": "23cmの竹製箸で、先角形状と箸先の滑り止めが表示されている。食洗機対応の5膳セットなので、家族用に同じ箸をまとめてそろえたい人が買いやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p4",
+      "asin": "B0BDKVWZS5",
+      "name": "サンライフ 「 コロン Colon 」 箸 食洗機対応 23cm 抗菌仕上げ 先角 ブラウン 若狭塗 日本製 264451",
+      "prior_individual_selection_reason": "23cmの天然竹製で、先角形状の食洗機対応箸。1膳単位なので、先角の箸をまず普段使い用に選びたい人が買いやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p5",
+      "asin": "B005EJI8E2",
+      "name": "イシダ 日本製 箸 客用 5膳セット 藍化粧 食洗機対応 木製 (天然木) 23cm",
+      "prior_individual_selection_reason": "天然木にアクリルウレタン塗装を施した、食洗機対応の23cm箸。5膳セットのため、木製箸を家族用や来客用にまとめてそろえたい人が選びやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p6",
+      "asin": "B00P09YKMK",
+      "name": "福井クラフト(Fukui Craft) 箸 日本製 22.5cm 【食洗機・乾燥機・電子レンジOK】 杵型多久島箸 春慶塗 ZA-411479",
+      "prior_individual_selection_reason": "PBT樹脂製で、商品名に食洗機・乾燥機対応と明記された22.5cmの箸。1膳から買えるため、木製とは異なる材質の箸を普段使いに選びたい人に合う。",
+      "verified_excerpt_sources": 1
+    }
+  ],
+  "original_qa_pass_fields": [
+    "affiliate_pass",
+    "asin_pass",
+    "banned_phrase_pass",
+    "canonical_pass",
+    "category_pass",
+    "conclusion_brand_free_pass",
+    "description_hard_min_pass",
+    "description_target_pass",
+    "description_uniqueness_pass",
+    "distinct_openings_endings_pass",
+    "fixed_price_pass",
+    "h3_len_pass",
+    "image_identity_pass",
+    "lead_brand_free_pass",
+    "nav_footer_pass",
+    "no_repeated_sentences_pass",
+    "summary_brand_free_pass"
+  ],
+  "independent_review_required": true,
+  "independent_review_status": "PENDING",
+  "replanning_checks": {
+    "reader_need": {
+      "question": "What concrete product-selection need can be met?",
+      "observed_reader": "毎日の食器洗いを食洗機で済ませたい家庭",
+      "purchase_goal": "使う人に合う長さで、食洗機に対応した食事用の箸を買う",
+      "pass": null
+    },
+    "six_individual_recommendations": {
+      "question": "Which products each meet the stated need, with source-backed individual value?",
+      "pass": null
+    },
+    "three_discovery_angles": {
+      "question": "Are the 3 angles distinct discovery entrypoints without head-to-head rankings?",
+      "pass": null
+    },
+    "replan_outcome": {
+      "instruction": "Approve existing theme only if reader intent and genuine product recommendations are independently verified; otherwise reselect Planning theme and products.",
+      "pass": null
+    }
+  },
+  "product_qa": {
+    "existing_independent_receipt": "STALE_CONTRACT",
+    "new_product_qa_required": true,
+    "same_product_allowed_if_verified": true,
+    "product_count": 6,
+    "verified_per_product": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "next_action": "independent_planning_qa_then_conditional_product_qa_then_writer_qa_then_ceo_gate",
+  "execution_allowed": false,
+  "production_article_changed": false
+}

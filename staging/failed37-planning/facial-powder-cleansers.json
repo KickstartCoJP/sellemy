@@ -1,0 +1,154 @@
+{
+  "schema": "sellemy-failed37-planning-review-input/v1",
+  "task_id": "TASK-BU002-FAILED37-REPLAN-20261115",
+  "slug": "facial-powder-cleansers",
+  "job_state": "FAILED",
+  "failed_stage": "WRITER_FAILED",
+  "original_job_sha256": {
+    "acceptance.json": "39a256bdac54ee94bfbd284e8550652fa72f9b41cb9ae305e4a41fb18ae10214",
+    "editorial-plan.json": "a715c8ab7060bd723bbec18b38625331f2671c9c55ae144227e94056fbe687b4",
+    "evidence.json": "5ea544d7b9bc9707c148e0b6eaa8591d5316b0b3e2b1dc0b88dc2526290016df",
+    "gate-feedback.json": "b5811911acf085169335352adf3f87e2f7c0e4d94a4e3431f27008e52a66fb23",
+    "payload.json": "88d4a2e866b85265341e96c8ba3d8515a5d6ce9fd5c7070317b88a76687d6a8a",
+    "qa.json": "f16347ceccff096f3569c806ca04cc579fb6943fabeabd7afdca0ff29901019f",
+    "selection.json": "141944357d527e7482ce89651c96622306134b0af1c677217e055e01d532206a",
+    "topic.json": "07e83b42875b94d81c0128af3ae63445bd5a000c43dcb6bb1e60a6f66889533a"
+  },
+  "planning_candidate": {
+    "slug": "facial-powder-cleansers",
+    "category": "beauty",
+    "title": "洗顔パウダー6選｜配合成分・泡立て方・使用頻度で選ぶ",
+    "query": "洗顔パウダー 酵素洗顔 使い方",
+    "reader_persona": {
+      "editorial_depth": "成分表示と使用方法を日常語で説明する",
+      "knowledge_level": "成分名には詳しくない一般読者",
+      "purchase_goal": "肌の状態と使い方に合う洗顔パウダーを選ぶ",
+      "reader": "洗顔パウダーを普段の洗顔に取り入れたい人"
+    },
+    "introduction_angles": [
+      {
+        "id": "formula",
+        "label": "配合成分と洗浄の仕組み",
+        "keywords": [
+          "洗顔パウダー 酵素 配合成分"
+        ]
+      },
+      {
+        "id": "use_frequency",
+        "label": "推奨される使用頻度",
+        "keywords": [
+          "洗顔パウダー 毎日 週 使用頻度"
+        ]
+      },
+      {
+        "id": "preparation",
+        "label": "泡立て方と1回分の形態",
+        "keywords": [
+          "洗顔パウダー 個包装 泡立て"
+        ]
+      }
+    ]
+  },
+  "original_product_inventory": [
+    {
+      "ref": "p1",
+      "asin": "B06XKN42S8",
+      "name": "Obagi(オバジ) オバジC酵素洗顔パウダー (ビタミンC 酵素2種類)30個",
+      "prior_individual_selection_reason": "洗浄成分の酵素2種類と整肌保湿成分のビタミンCを組み合わせた粉末。成分の役割を見比べて選びたい人に分かりやすく、30個入りで1回分ずつ使える。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p2",
+      "asin": "B0BJPZ81Q5",
+      "name": "ILUS 薬用 酵素洗顔パウダー（0.8g✕30包） 毛穴の黒ずみケア ニキビを予防 医薬部外品 13種類の植物成分 30包",
+      "prior_individual_selection_reason": "酵素に加え、ヤシ油由来のアミノ酸系洗浄成分や保湿成分のシロキクラゲ多糖体を配合。洗浄と保湿の両方に着目して選べる薬用タイプで、0.8gずつの30包入りも購入後の使いやすさにつながる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p3",
+      "asin": "B079TPB1MT",
+      "name": "Cure キュア スペシャルパウダーソープ 0.6g×35包",
+      "prior_individual_selection_reason": "使用目安が週2～3回と明記され、毎日の使用も可能とされている。まず週に数回取り入れたい人が頻度を決めやすい。1回分ずつの35包入りで、使う日だけ開封できる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p4",
+      "asin": "B091PJNLCB",
+      "name": "ファンケル FANCL ディープクリア 洗顔パウダー 30個入 洗顔 酵素洗顔 毛穴 黒ずみ 角栓 炭 クレイ 毛穴汚れ 肌荒れ予防 もっちり泡",
+      "prior_individual_selection_reason": "メーカー表示は朝晩いずれか1日1回、1個を使用する30日分。毎日の洗顔に組み込みたい人が使用量を把握しやすく、使い切りの30個入りで1回分を量る必要がない。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p5",
+      "asin": "B09S5X1KVB",
+      "name": "クレンジングリサーチ パウダーウォッシュ 30包 酵素洗顔 洗顔フォーム 角質ケア 毛穴ケア 黒ずみ いちご鼻 角栓 濃密泡",
+      "prior_individual_selection_reason": "30包入りのパウダー洗顔料。1回分を包から出して使いたい人が選びやすく、濃密泡で洗うことと、AHA・トリプル酵素による毛穴汚れや角質のケアを目的に選べる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p6",
+      "asin": "B0C14X59GP",
+      "name": "ファンケル FANCL ディープクリア 洗顔パウダー CICA & VC 30個入 洗顔 酵素洗顔 肌荒れ予防 シカ 毛穴 うるおい",
+      "prior_individual_selection_reason": "1回1個の使い切りポーションタイプで、泡立てネットを使うともっちりした泡を作りやすいと案内されている。1回分の扱い方と泡立て方が明確で購入後に使い始めやすく、CICA・ビタミンC成分を配合したタイプとして紹介できる。",
+      "verified_excerpt_sources": 1
+    }
+  ],
+  "original_qa_pass_fields": [
+    "affiliate_pass",
+    "asin_pass",
+    "banned_phrase_pass",
+    "canonical_pass",
+    "category_pass",
+    "conclusion_brand_free_pass",
+    "description_hard_min_pass",
+    "description_target_pass",
+    "description_uniqueness_pass",
+    "fixed_price_pass",
+    "h3_len_pass",
+    "image_identity_pass",
+    "lead_brand_free_pass",
+    "nav_footer_pass",
+    "no_repeated_sentences_pass",
+    "product_image_audit_pass",
+    "summary_brand_free_pass"
+  ],
+  "independent_review_required": true,
+  "independent_review_status": "PENDING",
+  "replanning_checks": {
+    "reader_need": {
+      "question": "What concrete product-selection need can be met?",
+      "observed_reader": "洗顔パウダーを普段の洗顔に取り入れたい人",
+      "purchase_goal": "肌の状態と使い方に合う洗顔パウダーを選ぶ",
+      "pass": null
+    },
+    "six_individual_recommendations": {
+      "question": "Which products each meet the stated need, with source-backed individual value?",
+      "pass": null
+    },
+    "three_discovery_angles": {
+      "question": "Are the 3 angles distinct discovery entrypoints without head-to-head rankings?",
+      "pass": null
+    },
+    "replan_outcome": {
+      "instruction": "Approve existing theme only if reader intent and genuine product recommendations are independently verified; otherwise reselect Planning theme and products.",
+      "pass": null
+    }
+  },
+  "product_qa": {
+    "existing_independent_receipt": "STALE_CONTRACT",
+    "new_product_qa_required": true,
+    "same_product_allowed_if_verified": true,
+    "product_count": 6,
+    "verified_per_product": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "next_action": "independent_planning_qa_then_conditional_product_qa_then_writer_qa_then_ceo_gate",
+  "execution_allowed": false,
+  "production_article_changed": false
+}

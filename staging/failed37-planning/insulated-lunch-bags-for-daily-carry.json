@@ -1,0 +1,158 @@
+{
+  "schema": "sellemy-failed37-planning-review-input/v1",
+  "task_id": "TASK-BU002-FAILED37-REPLAN-20261115",
+  "slug": "insulated-lunch-bags-for-daily-carry",
+  "job_state": "FAILED",
+  "failed_stage": "WRITER_FAILED",
+  "original_job_sha256": {
+    "acceptance.json": "99e55133e5f66804c3583fcb4ed9412f639868359a977b231d7e54e0cb14037f",
+    "editorial-plan.json": "746151fd4585beecbabf5ecda86b5ddc1ffd09892d4d306d612d45c9d141ad68",
+    "evidence.json": "20a1409f4feb460dd233e7fe323aa6a0cba950d4168db837ea015441724ac380",
+    "gate-feedback.json": "f58d0a41bc104dcc3fd5cd2d863cc47e93c9cf39dd94467d300930b781fad89f",
+    "payload.json": "111e366e5ee611c25669e5bbd6f50744d11e4f92928348f973161c4a5054fd05",
+    "qa.json": "9b1a27b1fa25e544b66a8f7f15b4d79a93742dbf4e959396027914aa1be269d6",
+    "selection.json": "eb0fea2d7362e04f41dd650986a9be90bd8bfb3d14010e5771f732d850fe09e8",
+    "topic.json": "8ff2b8f056a8cecd6a58aecfc5c33ca713c1973ab093599091d61678f866af0b"
+  },
+  "planning_candidate": {
+    "slug": "insulated-lunch-bags-for-daily-carry",
+    "category": "dailygoods",
+    "title": "保冷ランチバッグ6選｜弁当箱の収まり方・開口部・持ち運びやすさで選ぶ",
+    "query": "保冷 ランチバッグ 弁当 持ち運び",
+    "reader_persona": {
+      "editorial_depth": "弁当箱の寸法を起点に、出し入れと携帯方法を日常語で説明する",
+      "knowledge_level": "保冷バッグの構造には詳しくない",
+      "purchase_goal": "手持ちの弁当箱が入り、持ち歩きやすいバッグを選ぶ",
+      "reader": "通勤や通学で弁当を持ち歩く人"
+    },
+    "introduction_angles": [
+      {
+        "id": "fit",
+        "label": "弁当箱が収まる内寸と底面の形",
+        "keywords": [
+          "保冷 ランチバッグ マチ広 弁当箱",
+          "保冷 ランチバッグ 縦型"
+        ]
+      },
+      {
+        "id": "opening",
+        "label": "開口部の形と出し入れ",
+        "keywords": [
+          "保冷 ランチバッグ 大きく開く",
+          "保冷 ランチバッグ ファスナー"
+        ]
+      },
+      {
+        "id": "carry",
+        "label": "持ち手・肩掛けと収納時の形",
+        "keywords": [
+          "保冷 ランチバッグ ショルダー",
+          "保冷 ランチバッグ 折りたたみ"
+        ]
+      }
+    ]
+  },
+  "original_product_inventory": [
+    {
+      "ref": "p1",
+      "asin": "B07J2X2RBD",
+      "name": "スケーター(Skater) 保温弁当箱 丼ぶり型 1050ml STLB3 専用 ランチバッグ カーボントーン KBST3",
+      "prior_individual_selection_reason": "スケーターの丼ぶり型保温弁当箱STLB3（1050ml）専用。手持ちの弁当箱がこの型番なら適合を判断しやすく、丸い弁当箱を持ち歩く人に選びやすい。バッグの公称サイズは直径14.5×高さ14.5cm。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p2",
+      "asin": "B00HULF9DA",
+      "name": "スケーター(Skater) 保冷 がま口 ランチバッグ L ケアフルセレクション KGA2",
+      "prior_individual_selection_reason": "公称サイズは幅26×奥行13×高さ19cmで、横長の弁当箱を検討する際に底面の幅と奥行を照らし合わせやすい。内側はアルミ蒸着フィルム。手持ちの弁当箱の寸法を確認して選べる、専用型ではない候補。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p3",
+      "asin": "B09M851HRD",
+      "name": "サーモス 保冷ランチバッグ 5L ブラック RFC-005 BK",
+      "prior_individual_selection_reason": "口元が大きく開くと明記された5Lの保冷ランチバッグ。弁当箱を上から出し入れする場面を想像しやすく、公称サイズは幅25×奥行15×高さ24.5cmなので手持ちの箱との寸法比較もしやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p4",
+      "asin": "B07Q3PSZSB",
+      "name": "ランチバッグお弁当袋 保温保冷弁当バッグ 折りたたみトートバッグ弁当収納箱女性の為に大きく開く断熱クーランチバック防水サーマル漏れ防止ランチオーガナイザー にとって 男性 ガールズ 子供 アウトドア ピクニック 作業 (Flamingo)",
+      "prior_individual_selection_reason": "ファスナー付きで、商品名にも大きく開く構造が示されている。公称サイズは約22×14×21cm、重量は約100gで、軽さと開け閉めのしやすさを重視する人が選びやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p5",
+      "asin": "B0GKDYN6JP",
+      "name": "サーモス 保冷ショルダーバッグ 7L ブラック RFO-007 BK",
+      "prior_individual_selection_reason": "ショルダーバッグとして販売される7Lの保冷タイプ。通勤・通学で肩に掛けて運びたい人に用途が明確で、公称サイズは幅33.5×奥行15×高さ24cm、重量は約200g。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p6",
+      "asin": "B0948RCLV6",
+      "name": "DEAN & DELUCA(ディーンアンドデルーカ) クーラーバッグ グレー Sサイズ",
+      "prior_individual_selection_reason": "毎日の弁当や飲み物の持ち運び向けと明記されたSサイズ。公称サイズは幅17.5×マチ13×高さ26cmで、肩掛け型より幅の狭いバッグを探す人が、携帯時の大きさを比べて選びやすい。",
+      "verified_excerpt_sources": 1
+    }
+  ],
+  "original_qa_pass_fields": [
+    "affiliate_pass",
+    "asin_pass",
+    "banned_phrase_pass",
+    "canonical_pass",
+    "category_pass",
+    "conclusion_brand_free_pass",
+    "description_hard_min_pass",
+    "description_target_pass",
+    "description_uniqueness_pass",
+    "distinct_openings_endings_pass",
+    "fixed_price_pass",
+    "h3_len_pass",
+    "image_identity_pass",
+    "lead_brand_free_pass",
+    "nav_footer_pass",
+    "no_repeated_sentences_pass",
+    "product_image_audit_pass",
+    "summary_brand_free_pass"
+  ],
+  "independent_review_required": true,
+  "independent_review_status": "PENDING",
+  "replanning_checks": {
+    "reader_need": {
+      "question": "What concrete product-selection need can be met?",
+      "observed_reader": "通勤や通学で弁当を持ち歩く人",
+      "purchase_goal": "手持ちの弁当箱が入り、持ち歩きやすいバッグを選ぶ",
+      "pass": null
+    },
+    "six_individual_recommendations": {
+      "question": "Which products each meet the stated need, with source-backed individual value?",
+      "pass": null
+    },
+    "three_discovery_angles": {
+      "question": "Are the 3 angles distinct discovery entrypoints without head-to-head rankings?",
+      "pass": null
+    },
+    "replan_outcome": {
+      "instruction": "Approve existing theme only if reader intent and genuine product recommendations are independently verified; otherwise reselect Planning theme and products.",
+      "pass": null
+    }
+  },
+  "product_qa": {
+    "existing_independent_receipt": "STALE_CONTRACT",
+    "new_product_qa_required": true,
+    "same_product_allowed_if_verified": true,
+    "product_count": 6,
+    "verified_per_product": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "next_action": "independent_planning_qa_then_conditional_product_qa_then_writer_qa_then_ceo_gate",
+  "execution_allowed": false,
+  "production_article_changed": false
+}

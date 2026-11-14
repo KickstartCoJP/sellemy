@@ -1,0 +1,157 @@
+{
+  "schema": "sellemy-failed37-planning-review-input/v1",
+  "task_id": "TASK-BU002-FAILED37-REPLAN-20261115",
+  "slug": "drawer-storage-dividers",
+  "job_state": "FAILED",
+  "failed_stage": "WRITER_FAILED",
+  "original_job_sha256": {
+    "acceptance.json": "60c2601e971ea3ca3af3311c999dc8be129ed1617e9f2b1505d1e53a4e140b4c",
+    "editorial-plan.json": "1c1edcbb454998662c6ef564f93b4d55465340b57a7a1ac8957fc4733f7ef6df",
+    "evidence.json": "33e5a6f2f8c94444c635fa205d7f513d1aaf8a14cebf20703a9dc77480f783f4",
+    "gate-feedback.json": "45259e1d663e79032f16511bd5523148bec4f646108546336ed4bdba00079ae2",
+    "payload.json": "b21ccb7d0c1503cd4f2b2b775df9c7eba8ec80f29a9509faa771ff798c32be74",
+    "qa.json": "29190fb519f09226f817294092cfc9a842ec59949a52ef1a96f4ee3cfff25b15",
+    "selection.json": "bb4479727bfe468cd79e2cb423e2b512693c51207a283648ab525a9ff165ff3f",
+    "topic.json": "67bf93fd2d5dcd3ba04690246071c0056ded31febf77e3e4d9b22f3248b2617f"
+  },
+  "planning_candidate": {
+    "slug": "drawer-storage-dividers",
+    "category": "dailygoods",
+    "title": "引き出し用仕切り6選｜内寸への合わせ方・固定方法・移し替えやすさで選ぶ",
+    "query": "引き出し 仕切り 収納",
+    "reader_persona": {
+      "editorial_depth": "引き出しの内寸と仕切りの調整範囲を軸に説明する",
+      "knowledge_level": "仕切りの固定方式や必要寸法には詳しくない",
+      "purchase_goal": "手持ちの引き出しに収まる仕切りを選ぶ",
+      "reader": "文具や衣類が引き出しの中で混ざるのを防ぎたい人"
+    },
+    "introduction_angles": [
+      {
+        "id": "fit_dimensions",
+        "label": "必要な内寸と高さ",
+        "keywords": [
+          "引き出し 仕切り 高さ 低め",
+          "引き出し 仕切り 深型"
+        ]
+      },
+      {
+        "id": "adjustment",
+        "label": "長さの調整と固定方法",
+        "keywords": [
+          "引き出し 仕切り 伸縮",
+          "引き出し 仕切り 差し込み"
+        ]
+      },
+      {
+        "id": "rearrangement",
+        "label": "区画の変えやすさ",
+        "keywords": [
+          "引き出し 仕切り 組み替え"
+        ]
+      }
+    ]
+  },
+  "original_product_inventory": [
+    {
+      "ref": "p1",
+      "asin": "B0F928D8N3",
+      "name": "Lifewit Drawer Dividers 10.2cm Height 27-42cm Expandable Dresser Separator for Clothes, Adjustable Drawer Organizer for Bedroom, Lavatory, Bathroom, Kitchen, Office, 9 Pack",
+      "prior_individual_selection_reason": "高さ10.2cm、長さ27〜42cmの伸縮式。引き出しの内寸を測って適合を判断しやすく、文具や衣類の仕切りとして検討できる。9枚入りなので複数の区画を作りたい人にも選びやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p2",
+      "asin": "B0FQ3TPP7H",
+      "name": "Lifewit 5\" Height 4 Pack Drawer Dividers, 30-47cm/11.5-18.5\" Telescopic Drawer Dividers for Clothes, Adjustable Dresser Drawer Organizer, Drawer Separator for Dresser Bathroom Closet Kitchen White",
+      "prior_individual_selection_reason": "高さ12.8cm、長さ29.5〜47cmの伸縮式。深めの引き出しで衣類や靴下を分けたい場合に、高さと必要な内寸を確認して選べる。4枚入りで、先の商品とは対応する長さと高さが異なる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p3",
+      "asin": "B01MR818NY",
+      "name": "Yamazaki 3384 Extendable & Sliding Cutlery Tray, White, Approx. W 9.8 x D 9.7 - 17.7 x H 2.2 inches (25 x 24.6 - 45 x 5.7 cm), Plate, Slide-Type, Cutlery Case",
+      "prior_individual_selection_reason": "幅25cm、奥行き24.6〜45cm、高さ5.7cmのカトラリートレー。奥行きを伸ばして引き出しに合わせる方式で、必要な引き出しの高さは6cm以上と明記されている。箸やスプーンを分けたい人が寸法を照合して選びやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p4",
+      "asin": "B0GK5NTCR5",
+      "name": "Lifewit Drawer Dividers 26-42cm Adjustable Expandable Height 8.2cm for Dresser Bedroom Kitchen Vanity Storage Clothes Accessories Pack of 4 White",
+      "prior_individual_selection_reason": "長さ26〜42cmに調整できる、高さ8.2cmの板状仕切り。上部のボタンで伸縮し、両端のシリコン部分を当てて固定する方式が示されている。引き出しの内寸を測れば適合を判断しやすく、衣類や小物の区画を作れる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p5",
+      "asin": "B09GFJN27K",
+      "name": "Lifewit 25 PCS Drawer Organizer Set Clear Plastic Desk Drawer Divider Tray Dresser Storage Box for Makeup, Jewelry and Gadgets, Bedroom, Bathroom, Office Partition Box",
+      "prior_individual_selection_reason": "4サイズ計25個の独立したトレーを組み合わせる方式。文具、アクセサリー、化粧小物など、収納物が変わってもトレーの配置を変えられる。各サイズと高さ4.6cmが示されており、手持ちの引き出しに入るか確かめて選びやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p6",
+      "asin": "B09GB8ZNLF",
+      "name": "Lifewit Underwear Storage, Underwear Storage Box, Underwear Storage Case, Folding Clothes Drawer Divider Storage, Bra, Underwear, Socks, Accessories Storage, Gray, Set of 4, Prevents Deformation",
+      "prior_individual_selection_reason": "下着・ブラ・靴下・スカーフ向けに区画数が異なる4個の布製ボックスを組み合わせる方式。衣類の種類に応じて箱の配置を変えられ、使わないときはファスナーを開いて折りたためる。衣類を分けたい読者が用途から選びやすい。",
+      "verified_excerpt_sources": 1
+    }
+  ],
+  "original_qa_pass_fields": [
+    "affiliate_pass",
+    "asin_pass",
+    "banned_phrase_pass",
+    "canonical_pass",
+    "category_pass",
+    "conclusion_brand_free_pass",
+    "description_hard_min_pass",
+    "description_target_pass",
+    "description_uniqueness_pass",
+    "distinct_openings_endings_pass",
+    "fixed_price_pass",
+    "h3_len_pass",
+    "image_identity_pass",
+    "lead_brand_free_pass",
+    "nav_footer_pass",
+    "no_repeated_sentences_pass",
+    "product_image_audit_pass",
+    "summary_brand_free_pass"
+  ],
+  "independent_review_required": true,
+  "independent_review_status": "PENDING",
+  "replanning_checks": {
+    "reader_need": {
+      "question": "What concrete product-selection need can be met?",
+      "observed_reader": "文具や衣類が引き出しの中で混ざるのを防ぎたい人",
+      "purchase_goal": "手持ちの引き出しに収まる仕切りを選ぶ",
+      "pass": null
+    },
+    "six_individual_recommendations": {
+      "question": "Which products each meet the stated need, with source-backed individual value?",
+      "pass": null
+    },
+    "three_discovery_angles": {
+      "question": "Are the 3 angles distinct discovery entrypoints without head-to-head rankings?",
+      "pass": null
+    },
+    "replan_outcome": {
+      "instruction": "Approve existing theme only if reader intent and genuine product recommendations are independently verified; otherwise reselect Planning theme and products.",
+      "pass": null
+    }
+  },
+  "product_qa": {
+    "existing_independent_receipt": "STALE_CONTRACT",
+    "new_product_qa_required": true,
+    "same_product_allowed_if_verified": true,
+    "product_count": 6,
+    "verified_per_product": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "next_action": "independent_planning_qa_then_conditional_product_qa_then_writer_qa_then_ceo_gate",
+  "execution_allowed": false,
+  "production_article_changed": false
+}
