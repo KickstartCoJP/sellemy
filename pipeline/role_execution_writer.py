@@ -21,10 +21,8 @@ def reset_review_artifacts(slug: str) -> dict:
 def writer(slug: str) -> dict:
     from comparison_acceptance import product_issues
     from editorial_plan import build_editorial_plan
-    from writer_runtime import invoke_writer, revise_length_fields, WriterInvocationError
+    from writer_runtime import invoke_writer, WriterInvocationError
     from responses_provider import ResponsesError
-    from renderer import render_article
-    from qa import main_text_length
 
     topic = read_artifact(slug, 'topic.json')
     evidence = read_artifact(slug, 'evidence.json')
@@ -49,15 +47,6 @@ def writer(slug: str) -> dict:
             write_artifact(slug, 'writer-blocked.json', payload)
             request_product_reselection(slug, payload.get('reasons') or ['Writer reported missing facts'])
             raise GrowthRuntimeError(f'needs_product_reselection for {slug}')
-        if os.environ.get('SELLEMY_ENABLE_WRITER_LENGTH_REPAIR', '1') == '1' and payload.get('status') == 'READY':
-            measured_main = main_text_length(render_article(payload, evidence))
-            if (not 130 <= len(payload.get('summary', '')) <= 170
-                    or not 190 <= len(payload.get('how_to_choose', '')) <= 270
-                    or any(len(p.get('description', '').strip()) < 160
-                           for p in (payload.get('products') or []))):
-                payload, repair_meta = revise_length_fields(payload, rendered_main_len=measured_main)
-                metadata = {**metadata, 'length_repair_attempted': True,
-                            'length_repair_metadata': repair_meta}
         write_artifact(slug, 'payload.json', payload)
         return {'writer_ready': True, 'metadata': metadata}
     except GrowthRuntimeError:

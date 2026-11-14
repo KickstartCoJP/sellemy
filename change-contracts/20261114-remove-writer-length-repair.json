@@ -1,0 +1,24 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "BU002-REMOVE-WRITER-LENGTH-REPAIR-20261114",
+  "instruction_ref": "CEO explicit approval 2026-11-14: あぁ別のやつにやらせてるのか、、それはダメだな。直して。",
+  "instruction": "執筆完了直後に追加AI呼出しで文章を文字数補修する専用工程を削除する。初稿をそのまま既存QAへ渡し、文字数不合格は通常のQA差戻しでWriterへ戻す。既存文字数条件や記事品質条件は維持する。",
+  "implementer": "sellemy-ops via Mac Studio v2",
+  "canonical_refs": ["https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3"],
+  "allowed_paths": [
+    "pipeline/role_execution_writer.py",
+    "pipeline/writer_runtime.py",
+    "ops/run-growth.sh",
+    "tests/test_bounded_editorial_length_repair.py",
+    "tests/test_role_artifact_io_roles.py",
+    "change-contracts/20261114-remove-writer-length-repair.json"
+  ],
+  "preserved_rules": [
+    "Writer model and original prompt untouched",
+    "Existing mechanical length limits and semantic QA unchanged",
+    "Failed article returns to existing Writer QA feedback route",
+    "Independent editorial, claim, product, CEO review and publication gates unchanged",
+    "No extra provider call for length-only rewriting"
+  ],
+  "acceptance_tests": ["tests/test_bounded_editorial_length_repair.py", "tests/test_role_artifact_io_roles.py"]
+}
