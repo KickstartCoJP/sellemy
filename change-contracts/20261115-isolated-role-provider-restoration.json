@@ -1,0 +1,25 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "TASK-BU002-FAILED37-REPLAN-20261115",
+  "instruction_ref": "BUCHIEF-FAILED37-REPLAN-OWNER-20261115-001 preserve normal new articles and existing QA gates",
+  "instruction": "Restore accidentally removed isolated Codex role executor and helpers from the last working production implementation; Planning/Writer/independent Product QA imports currently fail. No new features, no QA relaxation, no publication changes.",
+  "implementer": "sellemy-ops manual code recovery via Mac Studio v2, no Codex implementation",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3"
+  ],
+  "allowed_paths": [
+    "pipeline/codex_provider.py",
+    "tests/test_isolated_role_provider_regression.py",
+    "change-contracts/20261115-isolated-role-provider-restoration.json"
+  ],
+  "preserved_rules": [
+    "The reviewer executes only on ephemeral read-only Codex turns",
+    "Canonical BU Member route, saved model and reasoning settings remain mandatory",
+    "Planning, Writer and Designer existing API and session isolation retained",
+    "No existing job state, article, QA receipt, CEO gate or production files changed",
+    "CEO Staging approval before production deployment"
+  ],
+  "acceptance_tests": [
+    "tests/test_isolated_role_provider_regression.py"
+  ]
+}
