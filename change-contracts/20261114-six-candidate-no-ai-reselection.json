@@ -1,0 +1,25 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "BU002-SIX-CANDIDATES-NO-AI-RESELECTION-20261114",
+  "instruction_ref": "CEO explicit approval 2026-11-14: それですぐ改修を。",
+  "instruction": "候補が重複排除後にちょうど6件で各軸2件を満たす場合に限り商品再選定AIを省略し、そのまま独立Product QAに渡す。候補7件以上の既存AI選定は維持。",
+  "implementer": "sellemy-ops via Mac Studio v2",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3",
+    "https://app.notion.com/p/3dc67ec6a1008196b017ee01e1824bba"
+  ],
+  "allowed_paths": [
+    "pipeline/product_selection.py",
+    "tests/test_three_axis_discovery_selection.py",
+    "change-contracts/20261114-six-candidate-no-ai-reselection.json"
+  ],
+  "preserved_rules": [
+    "3軸×2商品と計6商品・ASIN重複排除を維持",
+    "Independent Product QA stays mandatory",
+    "No change to planning, writer, editorial QA, CEO review or article publishing",
+    "More than six candidates still use existing AI selector"
+  ],
+  "acceptance_tests": [
+    "tests/test_three_axis_discovery_selection.py"
+  ]
+}

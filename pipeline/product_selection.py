@@ -145,6 +145,27 @@ def select_six(candidates: list[dict], topic: dict, feedback: dict, *, pinned: l
     pool = [*pinned, *[p for p in pool if p['asin'] not in pinned_asins]][:30]
     if len(pinned_asins) > 6:
         raise ProductSelectionError('more than six pinned products')
+    if len(pool) == 6:
+        # Six validated candidates leave no actual choice for an AI selector.
+        # Keep each axis's existing two candidates; Product QA still decides fitness.
+        ordered = [p for axis in axes for p in pool if p.get('discovery_axis_id') == axis['id']]
+        if len(ordered) != 6 or len({p['asin'] for p in ordered}) != 6:
+            raise ProductSelectionError('six candidates must be distinct and belong to the three axes')
+        labels = {axis['id']: str(axis.get('label') or axis['id']) for axis in axes}
+        selected = [{**p, 'selection_reason': '企画軸「' + labels[p['discovery_axis_id']]
+                     + '」の候補として収集。適合性は独立商品QAで判定する。'} for p in ordered]
+        groups = [{'axis_id': axis['id'], 'products': [
+            {'asin': p['asin'], 'reason': p['selection_reason']} for p in selected
+            if p['discovery_axis_id'] == axis['id']]} for axis in axes]
+        covered = set().union(*(_axis_matches(p, axes) for p in selected))
+        return selected, {
+            'method': 'existing_six_candidates_no_ai_reselection',
+            'candidate_count': 6, 'axes': groups,
+            'comparison_axes_covered': sorted(covered),
+            'brand_count': len({str(p.get('brand') or '').lower() for p in selected if p.get('brand')}),
+            'content_duplicates_removed': removed,
+            'retained_qa_passed_asins': sorted(pinned_asins),
+        }
     items = [{
         'asin': p['asin'], 'title': p.get('amazon_title'), 'brand': p.get('brand'),
         'price': p.get('observed_price'), 'verified_facts': _text(p)[:2400],
