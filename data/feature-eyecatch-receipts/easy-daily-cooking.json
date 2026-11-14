@@ -1,0 +1,51 @@
+{
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "generation_route_attestation": "codex_rollout_extension",
+  "model_reported_generation_route": "built-in_image_gen",
+  "role_id": "bu-codex-sellemy-designer",
+  "thread_id": "01a11d25-98da-7391-afa1-4779d261d69d",
+  "member_binding_revision": 9,
+  "model": "gpt-6-astra",
+  "visual_family": "Lifestyle Scene",
+  "summary": "自然光のキッチンで副菜を保存容器に取り分ける場面を通じ、毎日の調理と保存がラクになる暮らしを表現。画像内容を目視確認し、PNG形式・1536x1024を検証済み。",
+  "image_sha256": "587681cb14142ea99b38e8dd70f27102bc53728b9735ba5dd0a66b6e1dc8ad28",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-11-14T21:45:32.984013+00:00",
+  "token_usage_source": "codex_rollout.turn_token_usage",
+  "image_generation_internal_usage_exposed": false,
+  "token_usage": {
+    "input_tokens": 168237,
+    "cached_input_tokens": 162048,
+    "cache_write_input_tokens": 0,
+    "uncached_input_tokens": 6189,
+    "output_tokens": 797,
+    "reasoning_output_tokens": 0,
+    "total_tokens": 169034
+  },
+  "routing": {
+    "mode": "weighted_random",
+    "selected_route": "openai_api",
+    "codex_share": 0,
+    "api_share": 100,
+    "codex_reserve_percent": 20.0,
+    "codex_usage": {
+      "used_percent": 48.0,
+      "remaining_percent": 52.0,
+      "resets_at": 1794984313,
+      "window_minutes": 10080,
+      "source": "/Users/kickstart/.codex/sessions/2026/10/09/rollout-2026-10-09T05-12-45-01a11d25-98da-7391-afa1-4779d261d69d.jsonl"
+    },
+    "reason": "weighted_random",
+    "roll": 34,
+    "remaining_percent": 52.0,
+    "total_weight": 100,
+    "fallback_from": "openai_api",
+    "executed_route": "codex",
+    "errors_before_success": [
+      "openai_api:EyecatchGenerationError:Sellemy OpenAI API key unavailable"
+    ]
+  },
+  "routing_recorded_at": "2026-11-14T21:45:32.985109+00:00"
+}

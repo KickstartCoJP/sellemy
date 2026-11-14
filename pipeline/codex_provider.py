@@ -65,6 +65,10 @@ CONTEXT_ROTATION_DEFAULTS = {
     PLANNING_SURFACE: {'enabled': True, 'input_threshold': 120000, 'hard_threshold': 180000, 'streak': 3},
     'bu-codex-sellemy-writer': {'enabled': True, 'input_threshold': 140000, 'hard_threshold': 200000, 'streak': 3},
     DESIGNER_SURFACE: {'enabled': True, 'input_threshold': 120000, 'hard_threshold': 180000, 'streak': 3},
+    'bu-codex-sellemy-short-creative': {'enabled': True, 'input_threshold': 120000, 'hard_threshold': 180000, 'streak': 3},
+    'bu-codex-sellemy-short-qa': {'enabled': True, 'input_threshold': 120000, 'hard_threshold': 180000, 'streak': 3},
+    'bu-codex-sellemy-purpose-semantic': {'enabled': True, 'input_threshold': 120000, 'hard_threshold': 180000, 'streak': 3},
+    'bu-codex-sellemy-purpose-qa': {'enabled': True, 'input_threshold': 120000, 'hard_threshold': 180000, 'streak': 3},
 }
 
 BRIEF_FIXED = """# Sellemy Codex Brief
@@ -417,7 +421,7 @@ def _archive_context(root: Path, surface_key: str, session_id: str, binding: dic
 def _start_compacted_thread(command: tuple[str, ...], model: str, root: Path,
                             surface_key: str, brief_path: Path, *, timeout: int) -> tuple[str, dict]:
     canon_bridge = root / 'config' / 'sellemy-codex-canon-bootstrap.md'
-    effort = _required_effort(surface_key, 'planning' if surface_key == PLANNING_SURFACE else 'writer' if surface_key == 'bu-codex-sellemy-writer' else 'independent_review' if surface_key == 'bu-codex-sellemy-reviewer' else 'eyecatch', model)
+    effort = os.environ.get('SELLEMY_CODEX_REASONING_EFFORT', 'low').strip() or 'low'
     prompt = (
         'Initialize a fresh compact Sellemy Codex session for canonical role ' + surface_key + '. '
         'Read only ' + str(canon_bridge) + ' and ' + str(brief_path) + '. '
@@ -523,33 +527,13 @@ def _rotate_context(command: tuple[str, ...], model: str, root: Path, surface_ke
         }
 
 
-def _required_effort(surface_key: str, stage: str, model: str) -> str:
-    from api_role_binding import require_codex_settings
-    _, effort = require_codex_settings(surface_key, stage, model=model)
-    return effort
-
-
-def _stage_brief_text(path: Path, stage: str) -> str:
-    content = path.read_text(encoding='utf-8')
-    if stage != 'writer':
-        return content
-    # Preserve approved reusable editorial knowledge. Filter research workflow
-    # instructions rather than replacing the complete learned brief.
-    lines = content.splitlines()
-    audit_terms = ('source anchor', 'Evidence不足はBLOCKED', 'Marketplace listing',
-                   '調査は公式一覧', '名称・型番・選択仕様', '数値は対象・単位',
-                   '調整可能をカット可能', '端子・通信規格', '成分・対象素材')
-    return '\n'.join(line for line in lines if not any(term in line for term in audit_terms))
-
-
 def _ensure_brief(path: Path, surface_key: str) -> None:
     if path.exists():
         return
     safe = ''.join(ch if ch.isalnum() or ch in '-_' else '-' for ch in surface_key)
-    base = Path(__file__).resolve().parents[1] / 'config'
-    configured = (base / 'sellemy-codex-shared-brief.md' if surface_key in
-                  {PLANNING_SURFACE, 'bu-codex-sellemy-writer'} else
-                  base / f'codex-brief-{safe}.md')
+    configured = Path(__file__).resolve().parents[1] / 'config' / f'codex-brief-{safe}.md'
+    if surface_key == DESIGNER_SURFACE and not configured.is_file():
+        raise CodexProviderError('Designer brief is missing')
     if configured.is_file():
         path.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(configured, path)
@@ -860,7 +844,7 @@ def _refresh_brief(command: tuple[str, ...], model: str, session_id: str, root: 
             'If there is no durable new learning, preserve the current Learned section meaning without adding filler.\n\n'
             'CURRENT_BRIEF:\n' + brief_path.read_text(encoding='utf-8')
         )
-        effort = _required_effort(surface_key, 'planning' if surface_key == PLANNING_SURFACE else 'writer' if surface_key == 'bu-codex-sellemy-writer' else 'independent_review' if surface_key == 'bu-codex-sellemy-reviewer' else 'eyecatch', model)
+        effort = os.environ.get('SELLEMY_CODEX_REASONING_EFFORT', 'low').strip() or 'low'
         queue_prompt = prompt + '\n\nReturn one raw JSON object only, no Markdown. OUTPUT_SCHEMA:\n' + json.dumps(_strict_schema(schema), ensure_ascii=False)
         final, usage = _queue_turn(command, model, session_id, root, queue_prompt, timeout=timeout, effort=effort)
         value = _json_object(final)
@@ -878,71 +862,6 @@ def _refresh_brief(command: tuple[str, ...], model: str, session_id: str, root: 
         return usage
 
 
-def generate_isolated(command: tuple[str, ...], model: str, schema: dict, prompt: str, *,
-                      timeout: int, root: Path, surface_key: str, stage: str = '',
-                      usage_key: str = '') -> tuple[dict, dict]:
-    """LINE-style stage execution: fresh, ephemeral thread with only the current Brief/task."""
-    root = Path(root).resolve()
-    from api_role_binding import require_codex_route
-    require_codex_route(surface_key, stage)
-    # The persistent Member binding identifies the authorized role, not the
-    # transcript to resume. Every article/image still gets its own new session.
-    binding = _member_binding(surface_key)
-    _, brief_path = _runtime_paths(root, surface_key)
-    _ensure_brief(brief_path, surface_key)
-    bridge = _canon_bridge(root, surface_key)
-    if not bridge.is_file():
-        raise CodexProviderError('Sellemy Codex canon bootstrap is missing')
-    from owner_brief_learning import load_brief_rules
-    learned_stage = 'planning' if stage == 'planning' else 'writer'
-    learned = load_brief_rules(learned_stage, root=root) if stage in ('planning', 'writer') else ''
-    editorial_role = (root / 'config' / 'writer-editorial-role.md').read_text(encoding='utf-8') if stage == 'writer' else ''
-    task = (('WRITER_ROLE:\n' + editorial_role + '\n\n') if editorial_role else '') + ('Execute independently. Do not inspect old sessions, past output, or unrelated files. '
-            'Use only the supplied canonical bridge, stage Brief, accepted rules and current task. '
-            'Do not call an API. Return exactly one JSON object.\nCANON_BRIDGE:\n' +
-            bridge.read_text(encoding='utf-8') + '\nBRIEF:\n' + _stage_brief_text(brief_path, stage) +
-            '\nACCEPTED_RULES:\n' + learned + '\nTASK:\n' + prompt +
-            '\nOUTPUT_SCHEMA:\n' + json.dumps(_strict_schema(schema), ensure_ascii=False))
-    effort = _required_effort(surface_key, 'planning' if surface_key == PLANNING_SURFACE else 'writer' if surface_key == 'bu-codex-sellemy-writer' else 'independent_review' if surface_key == 'bu-codex-sellemy-reviewer' else 'eyecatch', model)
-    # Designer rollout is persisted only as an image generation audit receipt; it is
-    # never resumed by a subsequent task, so previous images cannot accumulate.
-    keep_rollout = surface_key == DESIGNER_SURFACE
-    args = [*command, 'exec']
-    if not keep_rollout:
-        args.append('--ephemeral')
-    args += ['--json', '--skip-git-repo-check', '--sandbox', 'read-only',
-             '--model', model, '--config', f'model_reasoning_effort={effort}', '-']
-    completed = _run(args, prompt=task, timeout=timeout, cwd=root)
-    if completed.returncode:
-        raise CodexProviderError('Isolated Codex execution failed: ' + (completed.stderr or completed.stdout)[-700:])
-    final = ''
-    usage = {}
-    thread_id = None
-    for line in completed.stdout.splitlines():
-        try:
-            event = json.loads(line)
-        except json.JSONDecodeError:
-            continue
-        if event.get('type') == 'thread.started':
-            thread_id = event.get('thread_id')
-        if event.get('type') == 'item.completed' and (event.get('item') or {}).get('type') == 'agent_message':
-            final = (event['item'].get('text') or '')
-        if event.get('type') == 'turn.completed':
-            usage = event.get('usage') or {}
-    if not final:
-        raise CodexProviderError('Isolated Codex returned no final output')
-    value = _json_object(final)
-    _validate_required_shape(value, _strict_schema(schema))
-    _append_usage(root, surface_key, stage=stage or 'generation', model=model,
-                  session_id='', session_turn=1, usage=usage, operation_key=usage_key)
-    if keep_rollout and not thread_id:
-        raise CodexProviderError('Designer rollout lacks thread ID for image generation attestation')
-    return value, {'surface': surface_key, 'session_id': thread_id,
-                   'member_binding_revision': binding['binding_revision'],
-                   'session_persisted': keep_rollout,
-                   'reasoning_effort': effort, 'brief_path': str(brief_path), **usage}
-
-
 def generate_persistent(command: tuple[str, ...], model: str, schema: dict, prompt: str, *,
                         timeout: int, root: Path, surface_key: str = 'bu-codex-sellemy',
                         max_turns: int | None = None, stage: str = '', usage_key: str = '') -> tuple[dict, dict]:
@@ -955,8 +874,6 @@ def generate_persistent(command: tuple[str, ...], model: str, schema: dict, prom
     if not command or not model:
         raise CodexProviderError('Codex command or model is missing')
     root = Path(root).resolve()
-    from api_role_binding import require_codex_route
-    require_codex_route(surface_key, stage)
     state_path, brief_path = _runtime_paths(root, surface_key)
     _ensure_brief(brief_path, surface_key)
     binding = _member_binding(surface_key)
@@ -991,30 +908,11 @@ def generate_persistent(command: tuple[str, ...], model: str, schema: dict, prom
 
     checkpoint = max_turns or int(os.environ.get('SELLEMY_CODEX_BRIEF_CHECKPOINT_TURNS', '10'))
     if not binding_changed and previous_session == session_id and turns >= checkpoint:
-        if surface_key in ('bu-codex-sellemy-writer', DESIGNER_SURFACE):
-            # A brief refresh without rotating retains all previous article/image turns.
-            # Use the existing canonical binding rotation to carry forward only learned rules.
-            control = _read_context_control(root)
-            row = dict((control.get('surfaces') or {}).get(surface_key) or {})
-            row.update({'session_id': session_id, 'rotation_due': True})
-            control.setdefault('surfaces', {})[surface_key] = row
-            _write_context_control(root, control)
-            context_rotation = _rotate_context(
-                command, model, root, surface_key, binding, state_path, brief_path, timeout=timeout
-            )
-            if not context_rotation:
-                raise CodexProviderError('Writer/Designer checkpoint rotation did not complete')
-            binding = _member_binding(surface_key)
-            session_id = binding['current_url']
-            state = _read_state(state_path)
-            turns = int(state.get('turns') or 0)
-            brief_refreshed = True
-        else:
-            brief_usage = _refresh_brief(command, model, session_id, root, brief_path, timeout=timeout, surface_key=surface_key)
-            _append_usage(root, surface_key, stage='brief_refresh', model=model, session_id=session_id,
-                          session_turn=turns + 1, usage=brief_usage)
-            brief_refreshed = True
-            turns = 0
+        brief_usage = _refresh_brief(command, model, session_id, root, brief_path, timeout=timeout, surface_key=surface_key)
+        _append_usage(root, surface_key, stage='brief_refresh', model=model, session_id=session_id,
+                      session_turn=turns + 1, usage=brief_usage)
+        brief_refreshed = True
+        turns = 0
 
     canon_bridge = _canon_bridge(root, surface_key)
     if not canon_bridge.is_file():
@@ -1031,7 +929,7 @@ def generate_persistent(command: tuple[str, ...], model: str, schema: dict, prom
         '\n\nYour final response MUST be one raw JSON object only, with no Markdown or commentary. OUTPUT_SCHEMA:\n' +
         json.dumps(strict_schema, ensure_ascii=False)
     )
-    effort = _required_effort(surface_key, 'planning' if surface_key == PLANNING_SURFACE else 'writer' if surface_key == 'bu-codex-sellemy-writer' else 'independent_review' if surface_key == 'bu-codex-sellemy-reviewer' else 'eyecatch', model)
+    effort = os.environ.get('SELLEMY_CODEX_REASONING_EFFORT', 'low').strip() or 'low'
     final, usage = _queue_turn(command, model, session_id, root, task_prompt, timeout=timeout, effort=effort)
     value = _json_object(final)
     _validate_required_shape(value, strict_schema)

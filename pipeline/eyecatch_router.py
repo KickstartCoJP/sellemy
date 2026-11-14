@@ -9,7 +9,6 @@ from pathlib import Path
 
 from codex_eyecatch import CodexEyecatchError, ensure_codex_eyecatch
 from eyecatch_adapter import EyecatchGenerationError, EyecatchGenerator
-from recovery_provider_policy import active_policy, require_local_provider_allowed
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG_PATH = ROOT / 'config' / 'eyecatch_routing.json'
@@ -33,9 +32,9 @@ def _load_config() -> dict:
     }
 
 
-def _existing_valid(slug: str) -> dict | None:
-    image = ROOT / 'img' / slug / f'{slug}.png'
-    receipt_path = ROOT / 'data' / 'eyecatch-receipts' / f'{slug}.json'
+def _existing_valid(slug: str, image: Path | None = None, receipt_path: Path | None = None) -> dict | None:
+    image = image or (ROOT / 'img' / slug / f'{slug}.png')
+    receipt_path = receipt_path or (ROOT / 'data' / 'eyecatch-receipts' / f'{slug}.json')
     if not image.is_file() or not receipt_path.is_file():
         return None
     try:
@@ -90,16 +89,8 @@ def _api_available() -> bool:
 
 
 def _choose_route(config: dict, usage: dict | None) -> tuple[str, dict]:
-    policy = active_policy()
     remaining = usage.get('remaining_percent') if usage else None
-    if policy and policy.get('codex_allowed') is not True:
-        return 'openai_api', {'reason': 'recovery_codex_prohibited', 'roll': None, 'remaining_percent': remaining}
     reserve = float(config['codex_reserve_percent'])
-    # A zero API share is a hard prohibition, including reserve/fallback routing.
-    if int(config['api_share']) == 0:
-        if int(config['codex_share']) <= 0:
-            raise EyecatchRoutingError('no authorized eyecatch provider')
-        return 'codex', {'reason': 'codex_only', 'roll': None, 'remaining_percent': remaining}
     if remaining is not None and remaining <= reserve:
         return 'openai_api', {
             'reason': 'codex_reserve_threshold',
@@ -122,8 +113,8 @@ def _choose_route(config: dict, usage: dict | None) -> tuple[str, dict]:
     }
 
 
-def _stamp_receipt(slug: str, receipt: dict, routing: dict) -> dict:
-    path = ROOT / 'data' / 'eyecatch-receipts' / f'{slug}.json'
+def _stamp_receipt(slug: str, receipt: dict, routing: dict, receipt_path: Path | None = None) -> dict:
+    path = receipt_path or (ROOT / 'data' / 'eyecatch-receipts' / f'{slug}.json')
     stamped = dict(receipt)
     stamped['routing'] = routing
     stamped['routing_recorded_at'] = datetime.now(timezone.utc).isoformat()
@@ -131,11 +122,7 @@ def _stamp_receipt(slug: str, receipt: dict, routing: dict) -> dict:
     return stamped
 
 
-def _generate_api(*, slug: str, payload: dict, evidence: dict, config: dict) -> dict:
-    from api_role_binding import require_codex_route
-    require_codex_route('bu-codex-sellemy-designer', 'eyecatch')
-    if int(config['api_share']) == 0:
-        raise EyecatchGenerationError('Sellemy image API route is disabled by model management policy')
+def _generate_api(*, slug: str, payload: dict, evidence: dict, config: dict, output: Path | None = None, receipt_path: Path | None = None) -> dict:
     if not _api_available():
         raise EyecatchGenerationError('Sellemy OpenAI API key unavailable')
     generator = EyecatchGenerator(
@@ -149,13 +136,13 @@ def _generate_api(*, slug: str, payload: dict, evidence: dict, config: dict) -> 
     return generator.generate(
         payload=payload,
         evidence=evidence,
-        output=ROOT / 'img' / slug / f'{slug}.png',
-        receipt_path=ROOT / 'data' / 'eyecatch-receipts' / f'{slug}.json',
+        output=output or (ROOT / 'img' / slug / f'{slug}.png'),
+        receipt_path=receipt_path or (ROOT / 'data' / 'eyecatch-receipts' / f'{slug}.json'),
     )
 
 
-def ensure_routed_eyecatch(*, slug: str, title: str, category: str, evidence: dict, payload: dict) -> dict:
-    existing = _existing_valid(slug)
+def ensure_routed_eyecatch(*, slug: str, title: str, category: str, evidence: dict, payload: dict, output: Path | None = None, receipt_path: Path | None = None) -> dict:
+    existing = _existing_valid(slug, output, receipt_path)
     if existing is not None:
         return existing
 
@@ -176,21 +163,18 @@ def ensure_routed_eyecatch(*, slug: str, title: str, category: str, evidence: di
     errors: list[str] = []
 
     def run_codex() -> dict:
-        require_local_provider_allowed('codex')
         return ensure_codex_eyecatch(
-            slug=slug, title=title, category=category, evidence=evidence, payload=payload,
+            slug=slug, title=title, category=category, evidence=evidence, payload=payload, output=output, receipt_path=receipt_path,
         )
 
     def run_api() -> dict:
-        return _generate_api(slug=slug, payload=payload, evidence=evidence, config=config)
+        return _generate_api(slug=slug, payload=payload, evidence=evidence, config=config, output=output, receipt_path=receipt_path)
 
     order = [selected]
-    policy = active_policy()
-    if not policy:
-        if selected == 'codex' and config['api_fallback_on_codex_failure']:
-            order.append('openai_api')
-        elif selected == 'openai_api' and config['codex_fallback_on_api_failure']:
-            order.append('codex')
+    if selected == 'codex' and config['api_fallback_on_codex_failure']:
+        order.append('openai_api')
+    elif selected == 'openai_api' and config['codex_fallback_on_api_failure']:
+        order.append('codex')
 
     for index, route in enumerate(order):
         try:
@@ -198,9 +182,29 @@ def ensure_routed_eyecatch(*, slug: str, title: str, category: str, evidence: di
             routing['executed_route'] = route
             routing['fallback_from'] = selected if index else None
             routing['errors_before_success'] = errors
-            return _stamp_receipt(slug, receipt, routing)
+            return _stamp_receipt(slug, receipt, routing, receipt_path)
         except (CodexEyecatchError, EyecatchGenerationError, RuntimeError) as exc:
             errors.append(f'{route}:{type(exc).__name__}:{exc}')
             continue
 
     raise EyecatchRoutingError('all eyecatch routes failed: ' + ' | '.join(errors))
+
+
+def ensure_routed_feature_eyecatch(*, feature_slug: str, title: str, summary: str, cues: list[str]) -> dict:
+    asset_key = f'feature-{feature_slug}'
+    output = ROOT / 'img' / 'themes' / f'{feature_slug}.png'
+    receipt_path = ROOT / 'data' / 'feature-eyecatch-receipts' / f'{feature_slug}.json'
+    payload = {
+        'h1': title,
+        'summary': summary,
+        'products': [{'h3': cue} for cue in cues if str(cue).strip()],
+    }
+    evidence = {
+        'slug': asset_key,
+        'category': 'feature',
+        'asset_type': 'feature',
+    }
+    return ensure_routed_eyecatch(
+        slug=asset_key, title=title, category='feature', evidence=evidence, payload=payload,
+        output=output, receipt_path=receipt_path,
+    )

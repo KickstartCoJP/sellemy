@@ -8,6 +8,8 @@ import shutil
 import sqlite3
 from datetime import datetime, timezone
 from pathlib import Path
+
+from eyecatch_router import ensure_routed_feature_eyecatch
 from typing import Any
 import xml.etree.ElementTree as ET
 
@@ -237,6 +239,13 @@ def _article_path(row: dict[str, Any]) -> Path:
     return ROOT / 'article' / row['category'] / f'{row["slug"]}.html'
 
 
+def _feature_display_title(title: str) -> str:
+    value = str(title or '')
+    value = value.replace('徹底比較', '').replace('比較｜', '｜').replace('を比較', '').replace('比較', '')
+    value = value.replace('｜｜', '｜').replace('  ', ' ').strip(' ｜')
+    return value
+
+
 def render_feature_page(conn: sqlite3.Connection, feature_id: str) -> str:
     feature_cfg = _load_feature(feature_id)
     feature = conn.execute('''SELECT slug,title,purpose_statement,intro,seo_title,meta_description,hero_image FROM features WHERE feature_id=?''', (feature_id,)).fetchone()
@@ -251,10 +260,11 @@ def render_feature_page(conn: sqlite3.Connection, feature_id: str) -> str:
     ''', (feature_id,)).fetchall()
     def card(row: tuple) -> str:
         a_slug, a_title, category, summary, _typ, _order = row
+        display_title = _feature_display_title(a_title)
         return (
             f'<a class="feature-article-card" href="/article/{html.escape(category)}/{html.escape(a_slug)}.html">'
-            f'<img src="/img/{html.escape(a_slug)}/{html.escape(a_slug)}.png" alt="{html.escape(a_title)}" />'
-            f'<div><h3>{html.escape(a_title)}</h3><p>{html.escape(summary)}</p></div></a>'
+            f'<img src="/img/{html.escape(a_slug)}/{html.escape(a_slug)}.png" alt="{html.escape(display_title)}" />'
+            f'<div><h3>{html.escape(display_title)}</h3><span class="feature-article-link">記事を見る →</span></div></a>'
         )
     explicit_sections = feature_cfg.get('ui_sections') if isinstance(feature_cfg, dict) else None
     if isinstance(explicit_sections, list) and explicit_sections:
@@ -278,8 +288,9 @@ def render_feature_page(conn: sqlite3.Connection, feature_id: str) -> str:
     else:
         core=''.join(card(row) for row in rows if row[4]=='core')
         supporting=''.join(card(row) for row in rows if row[4]=='supporting')
-        sections_html=(f'<section><div class="section-title"><h2>まず整えたいアイテム</h2></div><div class="feature-article-list">{core}</div></section>'
-            + (f'<section><div class="section-title"><h2>{html.escape(str(feature_cfg.get("supporting_heading") or "あわせて取り入れたいもの"))}</h2></div><div class="feature-article-list">{supporting}</div></section>' if supporting else ''))
+        core_heading = str(feature_cfg.get('core_heading') or '暮らしが少しよくなるもの')
+        sections_html=(f'<section><div class="section-title"><h2>{html.escape(core_heading)}</h2></div><div class="feature-article-list">{core}</div></section>'
+            + (f'<section><div class="section-title"><h2>{html.escape(str(feature_cfg.get("supporting_heading") or "暮らしがもっと心地よくなるもの"))}</h2></div><div class="feature-article-list">{supporting}</div></section>' if supporting else ''))
     canonical=f'{BASE}/themes/{slug}.html'
     nav='<nav class="site-nav"><ul class="nav-links"><li><a href="/article/beauty/" class="nav-link">美容</a></li><li><a href="/article/dailygoods/" class="nav-link">日用品</a></li><li><a href="/article/gadget/" class="nav-link">家電</a></li><li><a href="/themes/" class="nav-link active">特集</a></li><li><a href="/articles.html" class="nav-link">記事一覧</a></li><li><a href="/products.html" class="nav-link">商品一覧</a></li></ul></nav>'
     return (
@@ -370,7 +381,7 @@ def _ensure_css() -> None:
 .feature-index main,.feature-detail main{max-width:1080px;margin:0 auto;padding:2rem;line-height:1.8}
 .feature-index-heading{text-align:center;margin:2.5rem auto 2rem;max-width:680px}.feature-index-heading h1{font-size:1.8rem;font-weight:600;color:#444;margin:0 0 .7rem}.feature-index-heading p{margin:0;color:#666}
 .feature-card-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.6rem;margin:2rem 0 2.5rem}.feature-card{display:block;background:#fff;border:1px solid #eee;border-radius:12px;overflow:hidden;text-decoration:none;color:#333;box-shadow:0 2px 6px rgba(0,0,0,.04);transition:transform .2s ease,box-shadow .2s ease}.feature-card:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(0,0,0,.08)}.feature-card-image{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#f7f4f2}.feature-card-copy{position:relative;padding:1.15rem 3rem 1.2rem 1.25rem}.feature-card-copy h2{font-size:1.2rem;margin:0 0 .45rem;line-height:1.45}.feature-card-copy p{font-size:.9rem;color:#666;margin:0;line-height:1.7}.feature-card-arrow{position:absolute;right:1.25rem;top:1.2rem;font-size:1.2rem;color:#9a7d74}
-.feature-hero-image{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:1.25rem 0 1.5rem;background:#f7f4f2}.feature-purpose{font-weight:600;color:#555;margin:1rem 0 .6rem}.feature-detail .lead{margin-top:.4rem}.feature-article-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.25rem;margin:1.5rem 0 2.5rem}.feature-article-card{display:block;background:#fff;border:1px solid #eee;border-radius:8px;padding:1rem;text-decoration:none;color:#333}.feature-article-card:hover{box-shadow:0 0 8px rgba(0,0,0,.08)}.feature-article-card img{width:100%;height:180px;object-fit:contain;border-radius:6px}.feature-article-card h3{font-size:1.05rem;margin:.8rem 0 .4rem}.feature-article-card p{font-size:.9rem;color:#666}.related-features{margin:2rem 0 0;padding:1rem 1.2rem;border-top:1px solid #eee;background:#fafafa;border-radius:8px}.related-features h2{font-size:1rem!important;background:none!important;border:0!important;padding:0!important;margin:0 0 .5rem!important;color:#666!important}.related-features ul{margin:0;padding-left:1.2rem}.related-features a{color:#6d514c;text-decoration:underline}
+.feature-hero-image{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin:1.25rem 0 1.5rem;background:#f7f4f2}.feature-purpose{font-weight:600;color:#555;margin:1rem 0 .6rem}.feature-detail .lead{margin-top:.4rem}.feature-article-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.25rem;margin:1.5rem 0 2.5rem}.feature-article-card{display:block;background:#fff;border:1px solid #eee;border-radius:8px;padding:1rem;text-decoration:none;color:#333}.feature-article-card:hover{box-shadow:0 0 8px rgba(0,0,0,.08)}.feature-article-card img{width:100%;height:180px;object-fit:contain;border-radius:6px}.feature-article-card h3{font-size:1.05rem;margin:.8rem 0 .5rem}.feature-article-link{font-size:.86rem;color:#8a6a61}.feature-article-card p{font-size:.9rem;color:#666}.related-features{margin:2rem 0 0;padding:1rem 1.2rem;border-top:1px solid #eee;background:#fafafa;border-radius:8px}.related-features h2{font-size:1rem!important;background:none!important;border:0!important;padding:0!important;margin:0 0 .5rem!important;color:#666!important}.related-features ul{margin:0;padding-left:1.2rem}.related-features a{color:#6d514c;text-decoration:underline}
 @media screen and (max-width:700px){.feature-index main,.feature-detail main{padding:1.25rem}.feature-card-list{grid-template-columns:1fr;gap:1.1rem}.feature-card-copy{padding:1rem 2.8rem 1.05rem 1rem}.feature-card-copy h2{font-size:1.08rem}.feature-card-copy p{font-size:.86rem}.feature-hero-image{border-radius:9px}.feature-index-heading{margin:1.7rem auto 1.3rem}}
 '''
     if marker in text:
@@ -385,6 +396,13 @@ def apply_feature_slice(feature_id: str) -> dict[str, Any]:
     relations = _load_relations(feature_id)
     if not relations:
         raise ValueError(f'no reviewed relations: {feature_id}')
+    feature['hero_image'] = feature.get('hero_image') or f'/img/themes/{feature["slug"]}.png'
+    eyecatch_receipt = ensure_routed_feature_eyecatch(
+        feature_slug=feature['slug'],
+        title=feature['title'],
+        summary=feature['purpose_statement'],
+        cues=[str(feature.get('intro') or ''), str(feature.get('scope_include') or '')],
+    )
     backup_dir = Path.home() / 'Library/Application Support/Sellemy/purpose-feature-backups'
     backup_dir.mkdir(parents=True, exist_ok=True)
     stamp = datetime.now().strftime('%Y%m%dT%H%M%S')
@@ -430,6 +448,7 @@ def apply_feature_slice(feature_id: str) -> dict[str, Any]:
         'article_pages_patched': patched,
         'theme_page': f'themes/{feature["slug"]}.html',
         'theme_index': 'themes/index.html',
+        'feature_eyecatch': {k: eyecatch_receipt.get(k) for k in ('generation_method','generation_route','model','image_sha256','width','height')},
         'production_push': False,
     }
 

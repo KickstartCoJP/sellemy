@@ -1,0 +1,51 @@
+{
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "generation_route_attestation": "codex_rollout_extension",
+  "model_reported_generation_route": "built-in_image_gen",
+  "role_id": "bu-codex-sellemy-designer",
+  "thread_id": "01a1dc06-cbe8-7d60-ac3e-d05bdeed59e3",
+  "member_binding_revision": 10,
+  "model": "gpt-6-astra",
+  "visual_family": "Lifestyle Scene",
+  "summary": "冬の自然光が差す日本の居間で、こたつに入りくつろぐ生活シーン。文字・ロゴなしの単一構図を目視確認。PNG形式・1536x1024を検証済み。",
+  "image_sha256": "1ecdef3978a0ccd5e7410c36d2db46f0707e9e5be8cedfceb93c5c95923863c8",
+  "width": 1536,
+  "height": 1024,
+  "generated_at": "2026-11-14T21:48:06.897434+00:00",
+  "token_usage_source": "codex_rollout.turn_token_usage",
+  "image_generation_internal_usage_exposed": false,
+  "token_usage": {
+    "input_tokens": 101621,
+    "cached_input_tokens": 64256,
+    "cache_write_input_tokens": 0,
+    "uncached_input_tokens": 37365,
+    "output_tokens": 734,
+    "reasoning_output_tokens": 0,
+    "total_tokens": 102355
+  },
+  "routing": {
+    "mode": "weighted_random",
+    "selected_route": "openai_api",
+    "codex_share": 0,
+    "api_share": 100,
+    "codex_reserve_percent": 20.0,
+    "codex_usage": {
+      "used_percent": 49.0,
+      "remaining_percent": 51.0,
+      "resets_at": 1794984313,
+      "window_minutes": 10080,
+      "source": "/Users/kickstart/.codex/sessions/2026/10/09/rollout-2026-10-09T05-12-45-01a11d25-98da-7391-afa1-4779d261d69d.jsonl"
+    },
+    "reason": "weighted_random",
+    "roll": 46,
+    "remaining_percent": 51.0,
+    "total_weight": 100,
+    "fallback_from": "openai_api",
+    "executed_route": "codex",
+    "errors_before_success": [
+      "openai_api:EyecatchGenerationError:Sellemy OpenAI API key unavailable"
+    ]
+  },
+  "routing_recorded_at": "2026-11-14T21:48:06.898677+00:00"
+}

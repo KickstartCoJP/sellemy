@@ -74,8 +74,8 @@ def test_themes_ui_uses_feature_label_and_hero_images():
         ('grooming-routine','身だしなみが整う'),
         ('relax-at-home','おうちでリラックスできる'),
     ]:
-        assert f'/img/themes/{slug}.webp' in index
+        assert f'/img/themes/{slug}.png' in index
         page = (root / 'themes' / f'{slug}.html').read_text(encoding='utf-8')
         assert f'<h1>{title}</h1>' in page
-        assert f'/img/themes/{slug}.webp' in page
+        assert f'/img/themes/{slug}.png' in page
         assert '>特集</a>' in page

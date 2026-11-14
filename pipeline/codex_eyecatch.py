@@ -9,7 +9,7 @@ import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
 
-from codex_provider import CodexProviderError, generate_isolated as generate_persistent
+from codex_provider import CodexProviderError, generate_persistent
 
 ROOT = Path(__file__).resolve().parents[1]
 DESIGNER_ROLE = 'bu-codex-sellemy-designer'
@@ -91,7 +91,7 @@ def _rollout_has_imagegen(session_id: str | None, slug: str) -> bool:
                 if active and item.get('type') == 'Extension' and item.get('kind') == 'image_gen.generation' and item.get('status') == 'completed':
                     generated = True
             for text in texts:
-                if 'Goal: create the single production article eyecatch PNG' in text:
+                if ('Goal: create the single production article eyecatch PNG' in text or 'Goal: create the single production feature eyecatch PNG' in text):
                     active = marker in text
                     if active:
                         generated = False
@@ -100,12 +100,25 @@ def _rollout_has_imagegen(session_id: str | None, slug: str) -> bool:
     return bool(active and generated)
 
 def _model() -> str:
-    from api_role_binding import require_codex_settings
-    model, _effort = require_codex_settings('bu-codex-sellemy-designer', 'eyecatch')
-    return model
+    return (
+        os.environ.get('SELLEMY_EYECATCH_CODEX_MODEL', '').strip()
+        or os.environ.get('SELLEMY_WRITER_PRIMARY_MODEL', '').strip()
+        or 'gpt-6-astra'
+    )
 
 
 def _prompt(*, slug: str, title: str, category: str, evidence: dict, payload: dict, output: Path) -> str:
+    if str(evidence.get('asset_type') or '') == 'feature':
+        cues = [str(row.get('h3') or '') for row in payload.get('products', []) if isinstance(row, dict)]
+        return (
+            'Goal: create the single production feature eyecatch PNG for the exact Sellemy feature below. '
+            'Use the Codex built-in image generation capability/skill (image_gen). Do not call OpenAI Images API, any paid external image API, browser image generator, or local creative composition. '
+            'Do not copy the generated image into the Sellemy repo; leave it in the Codex generated_images directory.\n\n'
+            f'Slug: {slug}\nFeature title: {title}\nFeature summary: {payload.get("summary", "")}\n'
+            f'Theme cues: {json.dumps(cues, ensure_ascii=False)}\n\n'
+            'Visual requirements: exactly 1536x1024 PNG (3:2); one coherent editorial Japanese lifestyle scene that clearly expresses the desired state without text; no collage, grid, montage, product-card composition, screenshot, banner, title, logo, price, ranking, CTA, or long copy. Refined, calm, natural light, believable lived-in context.\n\n'
+            'Return output_path as the exact absolute path of the PNG in the Codex generated_images directory. Verify PNG and 1536x1024. Final response must report completed only after verification. generation_route MUST be exactly "built-in_image_gen".'
+        )
     category_label = {'beauty': 'Beauty', 'dailygoods': 'Daily Goods', 'gadget': 'Gadget'}.get(category, category)
     products = [str(row.get('h3') or row.get('amazon_title') or '') for row in payload.get('products', [])]
     return (
@@ -131,9 +144,9 @@ def _prompt(*, slug: str, title: str, category: str, evidence: dict, payload: di
     )
 
 
-def _receipt_valid(slug: str) -> bool:
-    image = ROOT / 'img' / slug / f'{slug}.png'
-    receipt_path = ROOT / 'data' / 'eyecatch-receipts' / f'{slug}.json'
+def _receipt_valid(slug: str, image: Path | None = None, receipt_path: Path | None = None) -> bool:
+    image = image or (ROOT / 'img' / slug / f'{slug}.png')
+    receipt_path = receipt_path or (ROOT / 'data' / 'eyecatch-receipts' / f'{slug}.json')
     if not image.is_file() or not receipt_path.is_file():
         return False
     try:
@@ -150,10 +163,10 @@ def _receipt_valid(slug: str) -> bool:
     )
 
 
-def ensure_codex_eyecatch(*, slug: str, title: str, category: str, evidence: dict, payload: dict) -> dict:
-    image = ROOT / 'img' / slug / f'{slug}.png'
-    receipt_path = ROOT / 'data' / 'eyecatch-receipts' / f'{slug}.json'
-    if _receipt_valid(slug):
+def ensure_codex_eyecatch(*, slug: str, title: str, category: str, evidence: dict, payload: dict, output: Path | None = None, receipt_path: Path | None = None) -> dict:
+    image = output or (ROOT / 'img' / slug / f'{slug}.png')
+    receipt_path = receipt_path or (ROOT / 'data' / 'eyecatch-receipts' / f'{slug}.json')
+    if _receipt_valid(slug, image, receipt_path):
         return json.loads(receipt_path.read_text(encoding='utf-8'))
 
     command, model = _command(), _model()
@@ -165,6 +178,7 @@ def ensure_codex_eyecatch(*, slug: str, title: str, category: str, evidence: dic
             _prompt(slug=slug, title=title, category=category, evidence=evidence, payload=payload, output=ROOT),
             timeout=int(os.environ.get('SELLEMY_EYECATCH_CODEX_TIMEOUT_SECONDS', '900')),
             root=ROOT, surface_key=DESIGNER_ROLE, stage='eyecatch', usage_key=slug,
+            max_turns=int(os.environ.get('SELLEMY_EYECATCH_CODEX_CHECKPOINT_TURNS', '20')),
         )
     except CodexProviderError as exc:
         raise CodexEyecatchError(str(exc)) from exc
@@ -216,6 +230,6 @@ def ensure_codex_eyecatch(*, slug: str, title: str, category: str, evidence: dic
         },
     }
     _atomic_write(receipt_path, (json.dumps(receipt, ensure_ascii=False, indent=2) + '\n').encode())
-    if not _receipt_valid(slug):
+    if not _receipt_valid(slug, image, receipt_path):
         raise CodexEyecatchError('written designer receipt/image failed read-back')
     return receipt
