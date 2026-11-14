@@ -112,7 +112,8 @@ if [[ "$SELLEMY_PREFLIGHT_ALLOWED" != "1" ]]; then
 import sys
 sys.path.insert(0, 'pipeline')
 from growth_recovery import eligible_job
-print('1' if eligible_job() else '0')
+from legacy_article_recovery import has_pending
+print('1' if eligible_job() or has_pending() else '0')
 PYRECOVERY
 )"
     if [[ "$RECOVERY_DUE" == "1" ]]; then

@@ -221,7 +221,7 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument('--role', choices=(
         'writer', 'reviewer', 'review_reset', 'product', 'inspect', 'designer', 'publish', 'postpublish', 'ceo_reconcile',
-        'planning', 'planning_commit', 'fresh_create', 'product_qa_disposition', 'already_published', 'slot_compensation', 'recovery', 'report', 'state_queue', 'scheduler'), required=True)
+        'planning', 'planning_commit', 'fresh_create', 'product_qa_disposition', 'already_published', 'slot_compensation', 'recovery', 'report', 'state_queue', 'scheduler', 'legacy_admit', 'legacy_precheck', 'legacy_review_finish'), required=True)
     parser.add_argument('--slug', default='')
     parser.add_argument('--cache-only', action='store_true')
     args = parser.parse_args()
@@ -286,6 +286,16 @@ def main() -> None:
                                  candidates=request['candidates'],
                                  provider=request.get('provider'),
                                  admission=request.get('admission'))
+        elif args.role == 'legacy_admit':
+            from legacy_article_recovery import import_one
+            result = import_one()
+        elif args.role == 'legacy_precheck':
+            from legacy_article_recovery import precheck
+            result = precheck(args.slug)
+        elif args.role == 'legacy_review_finish':
+            from legacy_article_recovery import finish_initial_review
+            finish_initial_review(args.slug)
+            result = {'finished': True}
         elif args.role == 'scheduler':
             from adaptive_publish import AdaptivePublishController
             scheduler = AdaptivePublishController(ROOT)
