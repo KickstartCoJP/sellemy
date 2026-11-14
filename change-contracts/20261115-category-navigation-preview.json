@@ -1,0 +1,26 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "BU002-CATEGORY-HUB-NAV-PREVIEW-20261115",
+  "instruction_ref": "CEO 2026-11-15: 3ジャンルの中分類リンクは多い気もするが、とりあえず作ってみる",
+  "instruction": "Create review-only visual prototypes for the 3 existing genre tops showing 6/9/6 fixed navigation groups from the approved 21-pillar taxonomy, between intro and article listing. Do not alter live genre tops, taxonomy, published category URLs, article publication, or QA.",
+  "implementer": "sellemy-ops via Mac Studio v2",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3",
+    "https://app.notion.com/p/3f467ec6a100818aab57fdb76acb791c"
+  ],
+  "allowed_paths": [
+    "preview/category-navigation/beauty.html",
+    "preview/category-navigation/dailygoods.html",
+    "preview/category-navigation/gadget.html",
+    "tests/test_category_navigation_preview.py",
+    "change-contracts/20261115-category-navigation-preview.json"
+  ],
+  "preserved_rules": [
+    "Existing 3 genre top pages and live URLs remain unchanged",
+    "The 21 middle categories and their order come from fixed taxonomy",
+    "Preview links go to explicitly labeled same-page mock targets, not missing live category pages",
+    "No premature publication of unreviewed category pages or article links",
+    "Category and Purpose responsibilities and CEO production review remain unchanged"
+  ],
+  "acceptance_tests": ["tests/test_category_navigation_preview.py"]
+}
