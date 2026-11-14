@@ -21,8 +21,7 @@ def test_writer_only_saves_writer_artifacts():
          patch('role_execution_writer.record_execution'), \
          patch('comparison_acceptance.product_issues', return_value=[]), \
          patch('editorial_plan.build_editorial_plan', return_value={'outline': 'a'}), \
-         patch('writer_runtime.invoke_writer', return_value=(payload, {'session_id': 's1'})), \
-         patch.dict(os.environ, {'SELLEMY_ENABLE_WRITER_LENGTH_REPAIR': '0'}):
+         patch('writer_runtime.invoke_writer', return_value=(payload, {'session_id': 's1'})):
         receipt = writer('test-item')
     assert receipt['writer_ready'] is True
     names = [c.args[1] for c in save.call_args_list]

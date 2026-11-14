@@ -1,25 +1,23 @@
-import sys
-from pathlib import Path
+"""Regression: the Writer draft is never rewritten by a separate length-only call."""
 from unittest.mock import patch
-sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'pipeline'))
-from writer_runtime import revise_length_fields
-from quality_fixtures import accepted_fixture
+from role_execution_writer import writer
 
-def test_repair_edits_prose_but_preserves_product_refs_and_groups():
-    original,_,_=accepted_fixture()
-    changes={'summary':'要点を照合しましょう。'*9,
-             'how_to_choose':'機器の対応条件を確認しましょう。'*13,
-             'conclusion':'購入時の仕様を確認しましょう。'*9,
-             'products':[{'ref':p['ref'],'description':p['description']} for p in original['products']]}
-    with patch('writer_runtime.require_local_provider_allowed'),\
-         patch('writer_runtime.codex_generate_persistent',return_value=(changes,{'model':'test'})) as writer:
-        revised,metadata=revise_length_fields(original,rendered_main_len=3433)
-    assert metadata['model']=='test'
-    assert writer.call_count==1
-    repair_prompt=writer.call_args.args[3]
-    assert 'SUMMARY, HOW_TO_CHOOSE AND CONCLUSION MUST CONTAIN NO PRODUCT NAMES OR BRAND NAMES' in repair_prompt
-    assert 'remove them and replace' in repair_prompt
-    assert [p['ref'] for p in revised['products']]==[p['ref'] for p in original['products']]
-    assert revised['comparison_groups']==original['comparison_groups']
-    assert revised['summary']==changes['summary']
-    assert revised['conclusion']==changes['conclusion']
+
+def test_writer_saves_initial_draft_even_when_length_is_outside_limits():
+    draft = {'status': 'READY', 'summary': 'short',
+             'how_to_choose': 'short', 'products': [{'ref':f'p{i}', 'description':'short'} for i in range(1,7)]}
+    artifacts = {'topic.json': {'slug':'test'}, 'evidence.json': {'products': []}}
+    with patch('role_execution_writer.read_artifact',side_effect=lambda slug,name,default=None:artifacts.get(name,default)), \
+         patch('role_execution_writer.write_artifact') as save, \
+         patch('role_execution_writer.record_execution'), \
+         patch('comparison_acceptance.product_issues',return_value=[]), \
+         patch('editorial_plan.build_editorial_plan',return_value={'requirements':[]}), \
+         patch('writer_runtime.invoke_writer',return_value=(draft,{'model':'writer'})) as invoke, \
+         patch('writer_runtime.codex_generate_persistent',side_effect=AssertionError('unexpected second AI call')) as ai:
+        result = writer('test')
+    assert result['writer_ready'] is True
+    assert invoke.call_count == 1
+    ai.assert_not_called()
+    assert [call.args[1] for call in save.call_args_list] == ['editorial-plan.json','payload.json']
+    assert save.call_args_list[-1].args[2] is draft
+    assert 'length_repair_attempted' not in result['metadata']
