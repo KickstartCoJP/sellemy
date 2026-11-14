@@ -82,11 +82,17 @@ def source_acquisition_ready(evidence: dict) -> bool:
 def has_pending(root: Path | None = None) -> bool:
     root = root or source_root()
     for slug in candidates(root):
-        if (job_dir(slug) / MARKER).is_file():
-            continue
-        article = root / 'articles' / slug
-        if source_acquisition_ready(_read_json(article / 'evidence.json')):
+        marker = read_artifact(slug, MARKER)
+        if not isinstance(marker, dict):
             return True
+        state_path = job_dir(slug) / 'state.json'
+        if state_path.is_file():
+            state = load_job(slug)
+            if (state.get('source') == 'legacy_repair' and
+                    state.get('status') == 'ACTIVE' and
+                    state.get('current_stage') == 'PRODUCT_HOLD' and
+                    not source_acquisition_ready(read_artifact(slug, 'evidence.json', {}))):
+                return True
     return False
 
 
@@ -189,17 +195,23 @@ def import_one(root: Path | None = None) -> dict:
         marker = read_artifact(slug, MARKER)
         if isinstance(marker, dict):
             state = load_job(slug)
+            if (state.get('source') == 'legacy_repair' and
+                    state.get('status') == 'ACTIVE' and
+                    state.get('current_stage') == 'PRODUCT_HOLD' and
+                    not source_acquisition_ready(read_artifact(slug, 'evidence.json', {}))):
+                marker['phase'] = 'planning_required'
+                write_artifact(slug, MARKER, marker)
+                set_stage(slug, 'PLANNING_PENDING', event='LEGACY_REPLAN_REQUESTED',
+                          detail={'reason': 'old evidence lacks verified product sources'})
+                return {'slug': slug, 'admitted': True, 'replanning': True}
             if state.get('status') == 'PUBLISHED' and marker.get('phase') in {
                     'initial_precheck', 'initial_reviewer'}:
                 set_stage(slug, 'WRITER_PENDING', event='LEGACY_REPAIR_RESUMED')
                 return {'slug': slug, 'admitted': True, 'resumed': True}
             continue
         article = root / 'articles' / slug
-        # Acquisition MUST precede admission. Incomplete historical evidence
-        # cannot become Writer/Product QA failures or increase failure streaks.
-        # Keep the published baseline and all old QA artifacts untouched.
-        if not source_acquisition_ready(_read_json(article / 'evidence.json')):
-            continue
+        historical = _read_json(article / 'evidence.json')
+        needs_planning = not source_acquisition_ready(historical)
         if not (job_dir(slug) / 'state.json').exists():
             candidate = _read_json(article / 'body.json')
             category = candidate.get('category')
@@ -215,16 +227,35 @@ def import_one(root: Path | None = None) -> dict:
             # No new slug, and never interrupt a separate unfinished article.
             continue
         payload = _read_json(article / 'body.json')
-        evidence = _read_json(article / 'evidence.json')
+        evidence = historical
         selection = _read_json(article / 'selection.json')
         topic = read_artifact(slug, 'topic.json')
-        if not isinstance(topic, dict) or any(x.get('slug') != slug for x in (payload, evidence, selection, topic)):
+        if not isinstance(topic, dict) or topic.get('slug') != slug or payload.get('slug') != slug:
+            raise ValueError('historical/current slug identity mismatch: ' + slug)
+        if not needs_planning and (not isinstance(evidence, dict) or not isinstance(selection, dict)
+                                   or evidence.get('slug') != slug or selection.get('slug') != slug):
             raise ValueError('historical/current slug identity mismatch: ' + slug)
         if not (ROOT / 'article' / state['category'] / (slug + '.html')).is_file():
             raise ValueError('historical article is missing from current site: ' + slug)
-        if state['category'] != payload.get('category') or state['category'] != evidence.get('category'):
+        if state['category'] != payload.get('category'):
             raise ValueError('historical/current category mismatch: ' + slug)
         current_evidence = read_artifact(slug, 'evidence.json') or {}
+        if needs_planning:
+            # Preserve old evidence and every approval until a new, independently
+            # accepted six-product Planning result can be committed.
+            _backup_original(slug)
+            write_artifact(slug, MARKER, {
+                'task_id': 'TASK-BU002-LEGACY-436-CONTINUOUS-RECOVERY-20261115',
+                'phase': 'planning_required',
+                'original_published_commit': state.get('published_commit'),
+            })
+            state['source'] = 'legacy_repair'
+            from growth_recovery import _save_state
+            _save_state(state, event='LEGACY_REPLAN_SOURCE_BOUND')
+            set_stage(slug, 'PLANNING_PENDING', event='LEGACY_REPLAN_ADMITTED')
+            return {'slug': slug, 'admitted': True, 'replanning': True}
+        if state['category'] != evidence.get('category'):
+            raise ValueError('historical/current category mismatch: ' + slug)
         evidence['eyecatch_image'] = evidence.get('eyecatch_image') or current_evidence.get('eyecatch_image')
         if not evidence.get('eyecatch_image'):
             raise ValueError('cannot preserve historical article image: ' + slug)
@@ -255,6 +286,76 @@ def import_one(root: Path | None = None) -> dict:
     return {'admitted': False}
 
 
+
+def replan_one(slug: str) -> dict:
+    """Replan the same published article through live Product QA before Writer.
+
+    Failed Planning/source discovery leaves old site and job evidence intact;
+    it never increments the old Product QA failure streak.
+    """
+    from planning_runtime import replan_published_topic
+    from growth_role_business import collect_unique_products, build_evidence
+    from product_selection import select_six
+    from analytics_feedback import load_feedback
+    from semantic_review import independent_review
+    from comparison_acceptance import product_issues
+    from growth_recovery import _save_state, replace_product_evidence
+
+    state = load_job(slug)
+    marker = read_artifact(slug, MARKER) or {}
+    if (state.get('source') != 'legacy_repair' or state.get('status') != 'ACTIVE'
+            or state.get('current_stage') != 'PLANNING_PENDING'
+            or marker.get('phase') != 'planning_required'
+            or not state.get('published_commit')):
+        raise ValueError('published legacy Planning restart not authorized for ' + slug)
+    old_topic = read_artifact(slug, 'topic.json') or {}
+    old_payload = read_artifact(slug, 'payload.json') or {}
+    original_title = str(old_payload.get('h1') or old_topic.get('title') or '').strip()
+    if not original_title:
+        raise ValueError('published article title missing')
+    try:
+        topic, provider = replan_published_topic(slug=slug, category=state['category'],
+                                                previous_title=original_title)
+        products, trace = collect_unique_products(topic, cache_only=False)
+        if len(products) != 6 or trace.get('complete') is not True:
+            raise ValueError('new Planning product research lacks six distinct items')
+        selected, selection = select_six(products, topic, load_feedback())
+        evidence = build_evidence(topic, selected, selection)
+        original_evidence = read_artifact(slug, 'evidence.json') or {}
+        if not isinstance(original_evidence, dict):
+            raise ValueError('existing published image evidence is invalid')
+        evidence['eyecatch_image'] = original_evidence.get('eyecatch_image')
+        if not evidence['eyecatch_image']:
+            raise ValueError('published image must be preserved')
+        if not source_acquisition_ready(evidence):
+            raise ValueError('replanned six products lack authentic verified source excerpts')
+        evidence['product_acceptance'] = independent_review(evidence)
+        issues = product_issues(evidence)
+        if issues:
+            raise ValueError('new independent Product QA blocked: ' + '; '.join(issues))
+    except Exception as exc:
+        # One bounded attempt; owner must explicitly change the candidate/source
+        # input before retrying, preventing repeated identical quality failures.
+        write_artifact(slug, 'legacy-planning-blocker.json', {
+            'reason': f'{type(exc).__name__}: {exc}'[:1600],
+            'next_action': 'obtain a new Planning candidate and authentic six-product sources',
+        })
+        state = load_job(slug)
+        state['current_stage'] = 'PLANNING_HOLD'
+        state['next_retry_at'] = None
+        _save_state(state, event='LEGACY_REPLAN_HOLD', detail={'reason': str(exc)[:500]})
+        return {'slug': slug, 'action': 'hold', 'reason': str(exc)[:500]}
+    # Final acceptance precedes mutation; revoke all changed-content Gate
+    # receipts via the existing replace_product_evidence implementation.
+    write_artifact(slug, 'topic.json', topic)
+    replace_product_evidence(slug, evidence, selection)
+    write_artifact(slug, 'planning-provider.json', provider)
+    write_artifact(slug, 'legacy-planning-blocker.json', {})
+    marker['phase'] = 'regular_repair'
+    write_artifact(slug, MARKER, marker)
+    return {'slug': slug, 'action': 'writer', 'product_qa': 'PASS'}
+
+
 def precheck(slug: str) -> dict:
     from comparison_acceptance import product_issues
     from semantic_review import independent_review
@@ -262,6 +363,14 @@ def precheck(slug: str) -> dict:
     from growth_recovery import request_product_reselection
     marker = read_artifact(slug, MARKER) or {}
     phase = marker.get('phase')
+    if phase == 'planning_required' and load_job(slug).get('current_stage') == 'WRITER_PENDING':
+        # Recover a crash after accepted Product QA advanced to Writer but
+        # before the legacy marker was finalized.
+        evidence = read_artifact(slug, 'evidence.json')
+        if isinstance(evidence, dict) and not product_issues(evidence):
+            marker['phase'] = 'regular_repair'
+            write_artifact(slug, MARKER, marker)
+            return {'action': 'writer'}
     if phase == 'regular_repair':
         return {'action': 'writer'}
     if phase in {'initial_reviewer', 'review_running'}:

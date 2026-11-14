@@ -18,6 +18,8 @@ def _inspect(slug: str, *, cache_only: bool) -> dict:
     from growth_recovery import (load_job, read_artifact, write_artifact, set_stage,
                                  request_product_reselection)
     state = load_job(slug)
+    if state.get('source') == 'legacy_repair' and state.get('current_stage') == 'PLANNING_PENDING':
+        return {'action': 'replan', 'slug': slug}
     evidence = read_artifact(slug, 'evidence.json', {}) or {}
     topic = read_artifact(slug, 'topic.json', {}) or {}
     selection = read_artifact(slug, 'selection.json', {}) or {}
@@ -221,7 +223,7 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument('--role', choices=(
         'writer', 'reviewer', 'review_reset', 'product', 'inspect', 'designer', 'publish', 'postpublish', 'ceo_reconcile',
-        'planning', 'planning_commit', 'fresh_create', 'product_qa_disposition', 'already_published', 'slot_compensation', 'recovery', 'report', 'state_queue', 'scheduler', 'legacy_admit', 'legacy_precheck', 'legacy_review_finish'), required=True)
+        'planning', 'planning_commit', 'fresh_create', 'product_qa_disposition', 'already_published', 'slot_compensation', 'recovery', 'report', 'state_queue', 'scheduler', 'legacy_admit', 'legacy_replan', 'legacy_precheck', 'legacy_review_finish'), required=True)
     parser.add_argument('--slug', default='')
     parser.add_argument('--cache-only', action='store_true')
     args = parser.parse_args()
@@ -289,6 +291,9 @@ def main() -> None:
         elif args.role == 'legacy_admit':
             from legacy_article_recovery import import_one
             result = import_one()
+        elif args.role == 'legacy_replan':
+            from legacy_article_recovery import replan_one
+            result = replan_one(args.slug)
         elif args.role == 'legacy_precheck':
             from legacy_article_recovery import precheck
             result = precheck(args.slug)
