@@ -16,33 +16,36 @@ class EditorialPlanTests(unittest.TestCase):
         self.assertEqual([x['id'] for x in plan['requirements']][-2:],['C01','C02'])
         self.assertTrue(all(x['id'] and x['section'] for x in plan['requirements']))
         self.assertEqual(plan['reader']['use_case'],'home')
-    def test_editorial_review_receives_verified_evidence(self):
+    def test_generic_plan_does_not_duplicate_editorial_or_claim_qa(self):
         products = [{'ref':f'p{i}','amazon_title':f'item{i}'} for i in range(1,7)]
-        evidence = {'products':products,'comparison_axes':[{'id':'a'},{'id':'b'}], 'sources':['verified source marker']}
+        evidence = {'products':products,'comparison_axes':[{'id':'a'},{'id':'b'}]}
         plan = build_editorial_plan({}, evidence)
         self.assertIn('E08', [r['id'] for r in plan['requirements']])
         payload = {'lead':'読者の使用場面を説明する'}
-        def judge(prompt):
-            data=json.loads(prompt.split('INPUT:',1)[1].strip())
-            self.assertEqual(data['evidence']['sources'],['verified source marker'])
-            return {'schema':'sellemy-editorial-plan-review/v1','plan_hash':digest(plan),
-                    'payload_hash':digest(payload),
-                    'items':[{'id':r['id'],'verdict':'PASS','article_quote':payload['lead'], 'reason':'ok'} for r in plan['requirements']]}
-        self.assertEqual(len(independent_plan_review(plan,payload,judge,evidence=evidence)['items']),8)
+        result = independent_plan_review(plan,payload,
+                                         judge=lambda _:self.fail('generic plan must not invoke AI'),
+                                         evidence=evidence)
+        self.assertEqual(result['items'],[])
 
-    def test_rejected_review_keeps_criterion_receipt(self):
+    def test_ceo_specific_review_receives_evidence_and_retains_failed_receipt(self):
         evidence={'products':[{'ref':f'p{i}'} for i in range(1,7)],
-                  'comparison_axes':[{'id':'a'},{'id':'b'}]}
-        plan=build_editorial_plan({},evidence)
+                  'comparison_axes':[{'id':'a'},{'id':'b'}],
+                  'sources':['verified source marker']}
+        plan=build_editorial_plan({},evidence,'CEO独自の追加要件')
         payload={'lead':'読者の使用場面を説明する'}
         receipt={'schema':'sellemy-editorial-plan-review/v1',
                  'plan_hash':digest(plan),'payload_hash':digest(payload),
-                 'items':[{'id':x['id'],'verdict':'FAIL','article_quote':payload['lead'],
-                           'reason':'未達'} for x in plan['requirements']]}
+                 'items':[{'id':'C01','verdict':'FAIL','article_quote':payload['lead'],
+                           'reason':'追加要件が未達'}]}
+        def judge(prompt):
+            data=json.loads(prompt.split('INPUT:',1)[1].strip())
+            self.assertEqual([r['id'] for r in data['requirements']],['C01'])
+            self.assertEqual(data['evidence']['sources'],['verified source marker'])
+            return receipt
         with self.assertRaises(EditorialPlanError) as caught:
-            independent_plan_review(plan,payload,lambda prompt:receipt,evidence=evidence)
+            independent_plan_review(plan,payload,judge,evidence=evidence)
         self.assertEqual(caught.exception.receipt,receipt)
-        self.assertIn('E08',str(caught.exception))
+        self.assertIn('C01',str(caught.exception))
 
     def test_product_hold_is_retried_hourly(self):
         now=datetime(2026,10,28,5,tzinfo=timezone.utc)

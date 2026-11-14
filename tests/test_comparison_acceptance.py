@@ -92,16 +92,20 @@ class ContractTests(unittest.TestCase):
     def test_source_anchors_missing_product_and_unfulfilled_criteria_fail(self):
         for mutate in [lambda r: r['products'].pop(),
                        lambda r: r['products'][0]['axis_support'][0].update(quote='invented fact'),
-                       lambda r: r.update(buying_guidance=False),
-                       lambda r: r.update(claims_grounded=False),
-                       lambda r: r.update(complete_comparison=False),
-                       lambda r: r.update(recommendation_conclusion=False),
-                       lambda r: r.update(reader_decision_outsourcing_absent=False),
-                       lambda r: r.update(internal_qa_leak_absent=False),
-                       lambda r: r.update(editorial_voice_appropriate=False)]:
+                       lambda r: r.update(distinct_products=False),
+                       lambda r: r.update(meaningful_comparison=False)]:
             payload, evidence, receipt = accepted_fixture()
             mutate(receipt['review'])
             self.assertTrue(acceptance_issues(payload, evidence, receipt))
+
+    def test_editorial_and_claim_flags_are_not_second_vetoes_in_comparison_qa(self):
+        p,e,receipt=accepted_fixture()
+        for field in ('buying_guidance','claims_grounded','complete_comparison',
+                      'recommendation_conclusion','reader_decision_outsourcing_absent',
+                      'internal_qa_leak_absent','editorial_voice_appropriate'):
+            local=__import__('copy').deepcopy(receipt)
+            local['review'][field]=False
+            self.assertEqual(receipt_issues(local,e,p),[],field)
 
     def test_malformed_receipts_fail_closed(self):
         p, e, a = accepted_fixture()
@@ -119,6 +123,25 @@ class ContractTests(unittest.TestCase):
         self.assertIn('INDEPENDENT semantic reviewer', call.call_args.args[2])
         self.assertNotIn('product_acceptance', call.call_args.args[2])
         self.assertEqual(call.call_args.args[0], 'writer')
+
+    def test_prose_only_reviewer_veto_routes_to_editorial_qa(self):
+        p,e,_=accepted_fixture()
+        verdict=review(e)
+        verdict.update(status='REVISION_REQUIRED', reason='結びが不自然',
+                       recommendation_conclusion=False, editorial_voice_appropriate=False)
+        with patch.object(semantic_review,'generate',return_value=(verdict,{})):
+            result=semantic_review.independent_review(e,p)
+        self.assertEqual(result['review']['status'],'ACCEPTED')
+        self.assertEqual(receipt_issues(result,e,p),[])
+
+    def test_comparison_failure_still_blocks_semantic_review(self):
+        p,e,_=accepted_fixture()
+        verdict=review(e)
+        verdict.update(status='REVISION_REQUIRED', reason='商品の比較が成立しない',
+                       meaningful_comparison=False)
+        with patch.object(semantic_review,'generate',return_value=(verdict,{})):
+            result=semantic_review.independent_review(e,p)
+        self.assertTrue(receipt_issues(result,e,p))
 
     def test_inconsistent_reviewer_status_cannot_escalate_missing_facts(self):
         p, e, _ = accepted_fixture()
@@ -404,7 +427,7 @@ class AdditionalBoundaryTests(unittest.TestCase):
         self.assertTrue(all(v for k,v in qa.items() if (k.endswith('_pass') or k.endswith('_in_range'))
                             and k not in {'overall_pass','semantic_acceptance_pass','description_target_pass'}))
 
-    def test_no_literal_leakage_but_unsupported_buying_advice_rejected(self):
+    def test_claim_qa_not_semantic_qa_owns_unsupported_product_fact(self):
         p,e,a=accepted_fixture()
         p['products'][0]['description'] = p['products'][0]['description'].replace('250g', '100g')
         self.assertEqual(article_issues(p), [])
@@ -413,7 +436,10 @@ class AdditionalBoundaryTests(unittest.TestCase):
                        reason='p1 prose claims 100g; source states 250g.')
         with patch.object(semantic_review, 'generate', return_value=(verdict, {})):
             a=semantic_review.independent_review(e,p)
-        self.assertFalse(run_qa(render_article(p,e),p,e,acceptance=a)['semantic_acceptance_pass'])
+        self.assertTrue(run_qa(render_article(p,e),p,e,acceptance=a)['semantic_acceptance_pass'])
+        from independent_quality_gate import require_receipts, QualityGateError
+        with self.assertRaises(QualityGateError):
+            require_receipts(p,e,a,{})  # The independent Claim QA receipt is mandatory.
 
     def test_gate_disabled_precedes_lock_and_git_sync(self):
         with tempfile.TemporaryDirectory() as d, patch.object(publish_gate, 'sync_clean_main') as sync:
