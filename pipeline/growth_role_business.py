@@ -370,20 +370,27 @@ def _expected_publish_paths(slug: str, category: str) -> set[str]:
     }
 
 
+def _expected_update_paths(slug: str, category: str) -> set[str]:
+    # Static catalog pages may be re-generated for an existing article.
+    return _expected_publish_paths(slug, category) | {'articles.html', 'products.html'}
+
+
 def _parse_porcelain_paths(output: str) -> set[str]:
     return {line[3:] for line in output.splitlines() if line}
 
 
-def _publish(slug: str, category: str) -> str:
+def _publish(slug: str, category: str, *, update: bool = False) -> str:
     require_publishing_enabled(ROOT)
     payload = json.loads((ROOT / 'data' / 'payloads' / f'{slug}.json').read_text())
     evidence = json.loads((ROOT / 'data' / 'evidence' / f'{slug}.json').read_text())
     require_acceptance(payload, evidence, load_receipt(ROOT, slug))
-    expected = _expected_publish_paths(slug, category)
+    expected = _expected_update_paths(slug, category) if update else _expected_publish_paths(slug, category)
     changed = _parse_porcelain_paths(subprocess.check_output(['git', 'status', '--porcelain', '--untracked-files=all'], cwd=ROOT, text=True))
-    if changed != expected:
-        raise GrowthRuntimeError(f'publication unit mismatch; expected {sorted(expected)}, observed {sorted(changed)}')
-    subprocess.run(['git', 'add', '--', *sorted(expected)], cwd=ROOT, check=True)
+    article_file = f'article/{category}/{slug}.html'
+    valid = (bool(changed) and changed.issubset(expected) and article_file in changed) if update else changed == expected
+    if not valid:
+        raise GrowthRuntimeError(f'publication unit mismatch; expected subset {sorted(expected)} with article update={update}, observed {sorted(changed)}')
+    subprocess.run(['git', 'add', '--', *sorted(changed)], cwd=ROOT, check=True)
     subprocess.run(['git', 'diff', '--cached', '--check'], cwd=ROOT, check=True)
     subprocess.run(['git', 'commit', '-m', f'Publish Writer-generated growth article: {slug}'], cwd=ROOT, check=True)
     head = _git('rev-parse', 'HEAD')
@@ -396,7 +403,14 @@ def _publish(slug: str, category: str) -> str:
     if deployed_commit != _git('rev-parse', 'origin/main') or _git('status', '--porcelain'):
         raise GrowthRuntimeError('post-push verification failed: HEAD/origin/main/clean mismatch')
     try:
-        verify_production_deploy(slug, category, deployed_commit)
+        if update:
+            import hashlib
+            article_file = ROOT / 'article' / category / f'{slug}.html'
+            verify_production_deploy(
+                slug, category, deployed_commit,
+                expected_html_sha256=hashlib.sha256(article_file.read_bytes()).hexdigest())
+        else:
+            verify_production_deploy(slug, category, deployed_commit)
     except ProductionDeployError as exc:
         raise GrowthRuntimeError(f'production deploy/read-back failed: {exc}') from exc
     return deployed_commit
@@ -424,7 +438,7 @@ def _cleanup_expected_dirty(slug: str, category: str, base_head: str) -> None:
         ['git', 'status', '--porcelain', '--untracked-files=all'], cwd=ROOT, text=True
     )
     changed = _parse_porcelain_paths(output)
-    expected = _expected_publish_paths(slug, category)
+    expected = _expected_update_paths(slug, category)
     if not changed or not changed.issubset(expected):
         return
     tracked = set(subprocess.check_output(['git', 'ls-files'], cwd=ROOT, text=True).splitlines())
@@ -500,6 +514,9 @@ def _reconcile_already_published_jobs() -> list[str]:
         # A previously live slug is not proof that a newly rewritten version
         # was approved; do not clear CHAT_REVIEW_PENDING or QA_FAILED.
         if row.get('current_stage') != 'PUBLISH_PENDING':
+            continue
+        # A published baseline is not proof that its updated content is live.
+        if row.get('published_commit'):
             continue
         slug = row['slug']; category = row['category']
         approval = read_artifact(slug, 'chat-publish-approval.json', {}) or {}

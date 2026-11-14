@@ -1,0 +1,37 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "TASK-BU002-LEGACY-436-CONTINUOUS-RECOVERY-20261115",
+  "instruction_ref": "CEO 2026-11-15: 過去修正分を現行制作ルートに載せたがURLは維持、汎用性があるなら良い、やって",
+  "instruction": "Extend the existing Publish stage with a reusable UPDATE mode for previously published articles. Preserve original slug, category, article identity, canonical URL and published_at, while allowing approved new article content to overwrite the same URL. Prevent stale published commits from being mistaken for the current accepted revision. Require protected release and exact deployed HTML readback before completion. Keep the existing CREATE duplicate protections and all QA/CEO gates.",
+  "implementer": "sellemy-ops via Mac Studio v2, no Codex code edits",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3",
+    "https://app.notion.com/p/3dc67ec6a100816f86daf33e6c7b4bf2"
+  ],
+  "allowed_paths": [
+    "pipeline/publish_payload.py",
+    "pipeline/role_execution_publish.py",
+    "pipeline/growth_role_business.py",
+    "pipeline/production_deploy.py",
+    "ops/change_contract_gate.py",
+    "tests/test_generic_article_update.py",
+    "tests/test_change_contract_gate.py",
+    "tests/test_publication_unit.py",
+    "tests/test_article_release.py",
+    "change-contracts/20261115-generic-existing-article-update.json"
+  ],
+  "preserved_rules": [
+    "Existing CEO approval, QA certification, independent receipts, and publication gate remain required",
+    "CREATE flow still refuses duplicate slugs and retains its current publication-path contract",
+    "UPDATE must match an already-published canonical URL and immutable article identity",
+    "Old published commit never certifies newly written content",
+    "No URL changes, redirect additions, new roles, schedulers or legacy-only publication code",
+    "Protected article release PR and production readback stay mandatory"
+  ],
+  "acceptance_tests": [
+    "tests/test_generic_article_update.py",
+    "tests/test_change_contract_gate.py",
+    "tests/test_publication_unit.py",
+    "tests/test_article_release.py"
+  ]
+}

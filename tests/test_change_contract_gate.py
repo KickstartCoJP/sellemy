@@ -86,6 +86,43 @@ class ChangeContractGateTests(unittest.TestCase):
         with patch.object(gate, 'changed_paths', return_value=changed), patch.object(gate, 'git', return_value=gate.PREFIX + 'sample-article'):
             self.assertTrue(gate.check('old', 'new', destination='refs/heads/main'))
 
+    def test_existing_article_update_allows_only_verified_subset(self):
+        slug, category = 'sample-article', 'dailygoods'
+        changed = {f'article/{category}/{slug}.html',
+                   f'data/evidence/{slug}.json', f'data/payloads/{slug}.json',
+                   'json/articles.json'}
+        registry = [{'slug':slug,'article_id':slug,'category':category,'status':'published'}]
+        evidence = {'canonical_url':f'https://www.sellemy.jp/article/{category}/{slug}.html'}
+        def git(*args):
+            if args[:2] == ('log', '--format=%s'):
+                return gate.PREFIX + slug
+            if args == ('show','old:json/articles.json'):
+                return json.dumps(registry)
+            if args == ('show',f'old:data/evidence/{slug}.json'):
+                return json.dumps(evidence)
+            if args == ('show',f'old:article/{category}/{slug}.html'):
+                return '<html>existing</html>'
+            raise AssertionError(args)
+        with patch.object(gate,'git',side_effect=git):
+            self.assertTrue(gate.is_publication_only(changed,'old','new'))
+            self.assertFalse(gate.is_publication_only(changed | {'pipeline/publish_payload.py'},'old','new'))
+
+    def test_unpublished_or_renamed_article_update_is_rejected(self):
+        slug,category='sample-article','dailygoods'
+        changed={f'article/{category}/{slug}.html','json/articles.json'}
+        for published,canon in [(False,True),(True,False)]:
+            registry=[{'slug':slug,'article_id':slug,'category':category,
+                       'status':'published' if published else 'draft'}]
+            evidence={'canonical_url':f'https://www.sellemy.jp/article/{category}/{slug}.html' if canon else 'https://wrong.example/'}
+            def git(*args):
+                if args[:2]==('log','--format=%s'):return gate.PREFIX+slug
+                if args==('show','old:json/articles.json'):return json.dumps(registry)
+                if args==('show',f'old:data/evidence/{slug}.json'):return json.dumps(evidence)
+                if args==('show',f'old:article/{category}/{slug}.html'):return '<html>old</html>'
+                raise AssertionError(args)
+            with patch.object(gate,'git',side_effect=git):
+                self.assertFalse(gate.is_publication_only(changed,'old','new'))
+
     def test_multiple_publication_commits_not_whitelisted(self):
         changed = gate.publication_paths('sample-article', 'dailygoods')
         with patch.object(gate, 'git', return_value=(gate.PREFIX + 'sample-article\n') * 2):

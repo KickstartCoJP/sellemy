@@ -1,5 +1,5 @@
 from __future__ import annotations
-import json, re, subprocess, time, urllib.request
+import hashlib, json, re, subprocess, time, urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -26,7 +26,7 @@ def _get(url: str, timeout: int = 20):
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return int(r.status), str(r.geturl()), r.read()
 
-def verify(slug: str, category: str, commit: str, *, timeout_seconds: int = 420, poll_seconds: int = 10) -> dict:
+def verify(slug: str, category: str, commit: str, *, timeout_seconds: int = 420, poll_seconds: int = 10, expected_html_sha256: str | None = None) -> dict:
     article = f"{BASE}/article/{category}/{slug}.html"
     deadline = time.monotonic() + timeout_seconds
     triggered = False
@@ -48,6 +48,8 @@ def verify(slug: str, category: str, commit: str, *, timeout_seconds: int = 420,
     if status != 200:
         raise ProductionDeployError(f"article HTTP {status}: {final}")
     text = body.decode("utf-8", "replace")
+    if expected_html_sha256 and hashlib.sha256(body).hexdigest() != expected_html_sha256:
+        raise ProductionDeployError('deployed UPDATE HTML differs from accepted revision')
     # Verify the deployed six-product identity against the commit being certified.
     repo_root = Path(__file__).resolve().parents[1]
     evidence_file = repo_root / 'data' / 'evidence' / f'{slug}.json'
@@ -71,9 +73,9 @@ def verify(slug: str, category: str, commit: str, *, timeout_seconds: int = 420,
     if og_status != 200:
         raise ProductionDeployError(f"OG image HTTP {og_status}: {og_final}")
     top_status, top_final, top_body = _get(f"{BASE}/")
-    if top_status != 200 or slug.encode() not in top_body:
+    if top_status != 200 or (expected_html_sha256 is None and slug.encode() not in top_body):
         raise ProductionDeployError(
-            f"TOP read-back missing slug; status={top_status} url={top_final}"
+            f"TOP read-back missing required content; status={top_status} url={top_final}"
         )
     result = {
         "production_verified": True,
