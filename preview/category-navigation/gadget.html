@@ -15,16 +15,20 @@
   <script src="/js/ga4.js"></script>
 
   <style id="category-navigation-preview">
-    .nav-preview { margin: 32px auto 42px; max-width: 1100px; padding: 24px; background: #fafafa; border-radius: 12px; }
-    .nav-preview h2 { font-size: 1.4rem; margin: 0 0 18px; }
-    .nav-preview-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
-    .nav-preview-card { box-sizing: border-box; min-height: 60px; padding: 16px; display: flex; gap: 12px; align-items: center; justify-content: space-between; border: 1px solid #ddd; border-radius: 8px; background: #fff; text-decoration: none; color: #222; font-weight: 600; }
-    .nav-preview-card:hover, .nav-preview-card:focus-visible { border-color: #777; background: #f4f4f4; }
-    .nav-preview-destinations { margin: 0 auto 30px; max-width: 1100px; padding: 15px; border: 1px dashed #bbb; }
+    .category-discovery { max-width: 1080px; margin: 20px auto 26px; padding: 0 18px; }
+    .category-discovery details { border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
+    .category-discovery summary { cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 15px 2px; color: #555; font-size: .94rem; list-style: none; }
+    .category-discovery summary::-webkit-details-marker { display: none; }
+    .category-discovery summary::after { content: '+'; font-size: 1.3rem; font-weight: 300; }
+    .category-discovery details[open] summary::after { content: '\2212'; }
+    .category-discovery-links { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 20px; padding: 0 2px 18px; }
+    .category-discovery-links a { color: #555; font-size: .92rem; text-underline-offset: 4px; text-decoration-color: #bbb; }
+    .category-discovery-links a:hover, .category-discovery-links a:focus-visible { color: #222; text-decoration-color: currentColor; }
+    .nav-preview-destinations { margin: 14px auto 30px; max-width: 1080px; padding: 12px; border: 1px dashed #bbb; }
     .nav-preview-destinations h2 { font-size: 1rem; }
-    .nav-preview-target { scroll-margin-top: 20px; padding: 8px 0; border-bottom: 1px solid #eee; display: flex; flex-wrap: wrap; gap: 16px; }
-    .nav-preview-target span { color: #666; font-size: .85rem; }
-    @media(max-width:700px) { .nav-preview { padding: 18px 14px; } .nav-preview-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8px; } .nav-preview-card { padding: 12px; min-height: 66px; font-size: .88rem; } }
+    .nav-preview-target { scroll-margin-top: 16px; padding: 6px 0; border-bottom: 1px solid #eee; display: flex; flex-wrap: wrap; gap: 14px; }
+    .nav-preview-target span { color: #666; font-size: .84rem; }
+    @media (max-width: 700px) { .category-discovery { padding: 0 14px; } .category-discovery-links { gap: 14px; } }
   </style>
 </head>
 <body data-preview="category-navigation" data-category="gadget">
@@ -71,13 +75,14 @@
     </section>
 
 
-    <!-- CATEGORY NAVIGATION: PREVIEW ONLY; not site-publishable -->
-    <section class="nav-preview" aria-label="商品カテゴリから探す">
-      <h2>商品カテゴリから探す</h2>
-      <div class="nav-preview-grid"><a class="nav-preview-card" href="#preview-category-1"><span>テレビ・オーディオ</span><span aria-hidden="true">›</span></a><a class="nav-preview-card" href="#preview-category-2"><span>空調・季節家電</span><span aria-hidden="true">›</span></a><a class="nav-preview-card" href="#preview-category-3"><span>キッチン家電</span><span aria-hidden="true">›</span></a><a class="nav-preview-card" href="#preview-category-4"><span>生活家電</span><span aria-hidden="true">›</span></a><a class="nav-preview-card" href="#preview-category-5"><span>情報・スマート家電</span><span aria-hidden="true">›</span></a><a class="nav-preview-card" href="#preview-category-6"><span>その他家電</span><span aria-hidden="true">›</span></a></div>
-    </section>
-    <section class="nav-preview-destinations" aria-label="カテゴリリンクの仮遷移先"><h2>リンク先のプレビュー</h2><div id="preview-category-1" class="nav-preview-target"><strong>テレビ・オーディオ</strong><span>公開ページは未制作。ここは導線確認用の仮表示です。</span></div><div id="preview-category-2" class="nav-preview-target"><strong>空調・季節家電</strong><span>公開ページは未制作。ここは導線確認用の仮表示です。</span></div><div id="preview-category-3" class="nav-preview-target"><strong>キッチン家電</strong><span>公開ページは未制作。ここは導線確認用の仮表示です。</span></div><div id="preview-category-4" class="nav-preview-target"><strong>生活家電</strong><span>公開ページは未制作。ここは導線確認用の仮表示です。</span></div><div id="preview-category-5" class="nav-preview-target"><strong>情報・スマート家電</strong><span>公開ページは未制作。ここは導線確認用の仮表示です。</span></div><div id="preview-category-6" class="nav-preview-target"><strong>その他家電</strong><span>公開ページは未制作。ここは導線確認用の仮表示です。</span></div></section>
-
+    <!-- STAGING ONLY: existing editorial discovery and article list remain primary -->
+    <nav class="category-discovery" aria-label="テーマ別の補助導線">
+      <details>
+        <summary>気になるテーマから探す</summary>
+        <div class="category-discovery-links"><a href="#preview-category-1">テレビ・オーディオ</a><a href="#preview-category-2">空調・季節家電</a><a href="#preview-category-3">キッチン家電</a><a href="#preview-category-4">生活家電</a><a href="#preview-category-5">情報・スマート家電</a><a href="#preview-category-6">その他家電</a></div>
+      </details>
+    </nav>
+    <section class="nav-preview-destinations" aria-label="カテゴリリンクの仮遷移先"><h2>リンク先のプレビュー（制作確認用）</h2><div id="preview-category-1" class="nav-preview-target"><strong>テレビ・オーディオ</strong><span>公開ページ未制作。仮表示です。</span></div><div id="preview-category-2" class="nav-preview-target"><strong>空調・季節家電</strong><span>公開ページ未制作。仮表示です。</span></div><div id="preview-category-3" class="nav-preview-target"><strong>キッチン家電</strong><span>公開ページ未制作。仮表示です。</span></div><div id="preview-category-4" class="nav-preview-target"><strong>生活家電</strong><span>公開ページ未制作。仮表示です。</span></div><div id="preview-category-5" class="nav-preview-target"><strong>情報・スマート家電</strong><span>公開ページ未制作。仮表示です。</span></div><div id="preview-category-6" class="nav-preview-target"><strong>その他家電</strong><span>公開ページ未制作。仮表示です。</span></div></section>
     <div class="section-title"><h2>家電に関する記事一覧</h2></div>
     <div class="article-list" id="articleList"></div>
   </main>
