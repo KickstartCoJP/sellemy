@@ -7,6 +7,7 @@ from datetime import date
 from affiliate_config import amazon_url
 from category_metadata import get_category
 from payload_schema import validate_payload, validate_evidence, match_refs
+from purpose_ui import ensure_theme_nav, render_related_features
 
 BASE = 'https://www.sellemy.jp'
 RAK = 'https://hb.afl.rakuten.co.jp/hgc/47664979.04b12aff.4766497a.9509b1ad/?pc='
@@ -43,12 +44,6 @@ def _render_card(product_payload: dict, product_evidence: dict, amazon_tag: str)
 
 
 
-def _render_related_features(features: list[dict]) -> str:
-    start='<!-- PURPOSE_RELATED_FEATURES_START -->'; end='<!-- PURPOSE_RELATED_FEATURES_END -->'
-    if not features:
-        return start + end
-    links=''.join(f'<li><a href="{html.escape(str(f["url"]))}">{html.escape(str(f["title"]))}</a></li>' for f in features[:3])
-    return start + f'<aside class="related-features"><h2>関連する特集</h2><ul>{links}</ul></aside>' + end
 
 def render_article(payload: dict, evidence: dict, *, today: date | None = None, related_features: list[dict] | None = None) -> str:
     """Insert Writer prose and evidence facts verbatim; never synthesize or pad copy."""
@@ -67,7 +62,7 @@ def render_article(payload: dict, evidence: dict, *, today: date | None = None, 
         toc.append(f'<li><a href="#{group_id}">{title}</a></li>')
         cards = ''.join(_render_card(payload_by_ref[ref], evidence_by_ref[ref], evidence['amazon_tag']) for ref in group['product_refs'])
         sections.append(f'<section id="{group_id}"><div class="section-title"><h2>{title}</h2></div><p class="comparison-angle">{html.escape(group["angle"])}</p><div class="item-list">{cards}</div></section>')
-    return (
+    return ensure_theme_nav(
         '<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />'
         f'<title>{h1} - Sellemy</title><meta name="description" content="{summary}" /><meta property="og:title" content="{h1} - Sellemy" />'
         f'<meta property="og:description" content="{summary}" /><meta property="og:image" content="{eyecatch}" /><meta property="og:type" content="article" />'
@@ -82,6 +77,6 @@ def render_article(payload: dict, evidence: dict, *, today: date | None = None, 
         f'<p class="lead">{html.escape(payload["lead"])}</p><p class="summary">{summary}</p><nav class="toc"><strong>比較軸から選ぶ</strong><ul>{"".join(toc)}</ul></nav>'
         + ''.join(sections)
         + f'<section id="how-to-choose"><div class="section-title"><h2>選ぶときのポイント</h2></div><p>{html.escape(payload["how_to_choose"])}</p><p class="conclusion">{html.escape(payload["conclusion"])}</p></section>'
-        + _render_related_features(related_features or [])
+        + render_related_features(related_features or [])
         + f'</main><footer><p>&copy; {year} Sellemy. All rights reserved.</p></footer></body></html>'
     )
