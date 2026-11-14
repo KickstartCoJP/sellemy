@@ -639,6 +639,8 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
             previous_review = read_artifact(slug, latest[0].name, {}) or {}
             if previous_review.get('issues'):
                 from growth_recovery import hold_product_review_conflict
+                hold_product_review_conflict(slug, reasons=previous_review['issues'],
+                    pinned_asins=sorted(pin_set))
                 raise GrowthRuntimeError(f'planning_restart_required for {slug}: incompatible product review')
         if latest and not (read_artifact(slug, 'product-qa-remediation.json', {}) or {}).get('signature'):
             write_artifact(slug, 'product-qa-remediation.json', {
@@ -728,6 +730,11 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
         raise GrowthRuntimeError(f'planning_restart_required for {slug}')
     except ProductSelectionError as exc:
         save_progress()
+        # Without a state transition this WRITER_PENDING job is reselected every
+        # minute even though the product-selection input has not changed.
+        # The existing evidence fingerprint moves unchanged attempts to
+        # PRODUCT_HOLD; quality requirements remain intact.
+        request_product_reselection(slug, [str(exc)])
         raise GrowthRuntimeError(f'planning_restart_required for {slug}: {exc}') from exc
     except Exception as exc:
         from discovery_adapters import AmazonSearchUnavailable

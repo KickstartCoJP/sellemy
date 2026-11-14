@@ -1,0 +1,20 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "TASK-BU002-FAILED-TEN-CEO-84ABAE0ACBA14008883C",
+  "instruction_ref": "OSCHIEF-FAILED10-AUDIT-20261114-001",
+  "instruction": "Fix only reproduced Sellemy product-reselection state loops where ProductSelectionError or six individually accepted but globally rejected products cause unchanged WRITER_PENDING every scheduler minute. Preserve Product QA and history; stage for CEO production gate.",
+  "implementer": "sellemy-ops via Mac Studio v2",
+  "canonical_refs": ["https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3"],
+  "allowed_paths": [
+    "pipeline/growth_role_business.py",
+    "tests/test_product_reselection_failure_state.py",
+    "change-contracts/20261114-failed-ten-product-hold-loop.json"
+  ],
+  "preserved_rules": [
+    "Independent Product QA and six sourced products mandatory",
+    "No change to Writer QA, claim QA, CEO review, publication gates or daily target",
+    "No automatic production rollout or historical job reopening",
+    "Existing product hold backoff, fingerprints and failed histories retained"
+  ],
+  "acceptance_tests": ["tests/test_product_reselection_failure_state.py"]
+}
