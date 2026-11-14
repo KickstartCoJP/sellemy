@@ -92,16 +92,20 @@ class ContractTests(unittest.TestCase):
     def test_source_anchors_missing_product_and_unfulfilled_criteria_fail(self):
         for mutate in [lambda r: r['products'].pop(),
                        lambda r: r['products'][0]['axis_support'][0].update(quote='invented fact'),
-                       lambda r: r.update(buying_guidance=False),
-                       lambda r: r.update(claims_grounded=False),
-                       lambda r: r.update(complete_comparison=False),
-                       lambda r: r.update(recommendation_conclusion=False),
-                       lambda r: r.update(reader_decision_outsourcing_absent=False),
-                       lambda r: r.update(internal_qa_leak_absent=False),
-                       lambda r: r.update(editorial_voice_appropriate=False)]:
+                       lambda r: r.update(distinct_products=False),
+                       lambda r: r.update(meaningful_comparison=False)]:
             payload, evidence, receipt = accepted_fixture()
             mutate(receipt['review'])
             self.assertTrue(acceptance_issues(payload, evidence, receipt))
+
+    def test_editorial_and_claim_flags_are_not_second_vetoes_in_comparison_qa(self):
+        p,e,receipt=accepted_fixture()
+        for field in ('buying_guidance','claims_grounded','complete_comparison',
+                      'recommendation_conclusion','reader_decision_outsourcing_absent',
+                      'internal_qa_leak_absent','editorial_voice_appropriate'):
+            local=__import__('copy').deepcopy(receipt)
+            local['review'][field]=False
+            self.assertEqual(receipt_issues(local,e,p),[],field)
 
     def test_malformed_receipts_fail_closed(self):
         p, e, a = accepted_fixture()

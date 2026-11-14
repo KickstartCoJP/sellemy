@@ -1,0 +1,25 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "BU002-QA-RESPONSIBILITY-OVERLAP-20261114",
+  "instruction_ref": "CEO explicit approval 2026-11-14: それでやって。",
+  "instruction": "5つのQAを維持。意味・比較QAから文章品質・結び・推薦文・独立ClaimQAとの重複判定を外し、編集企画書QAをCEO・企画固有の指示反映確認に限定。機械QA、編集QA、ClaimQA、ProductQA、CEOレビューは変更しない。",
+  "implementer": "sellemy-ops via Mac Studio v2",
+  "canonical_refs": ["https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3"],
+  "allowed_paths": [
+    "pipeline/semantic_review.py",
+    "pipeline/comparison_acceptance.py",
+    "pipeline/editorial_plan_review.py",
+    "tests/test_comparison_acceptance.py",
+    "tests/test_editorial_plan.py",
+    "tests/test_editorial_plan_review.py",
+    "change-contracts/20261114-qa-responsibility-overlap.json"
+  ],
+  "preserved_rules": [
+    "Product QA still verifies independent product identities and comparison viability",
+    "Editorial QA still checks writing quality, reader guidance, conclusion and natural Japanese",
+    "Claim QA still checks all product factual statements against evidence",
+    "Machine QA, existing editor brief, CEO review and publication gates unchanged",
+    "CEO and topic-specific directions still receive independent plan checks and verifiable failure receipts"
+  ],
+  "acceptance_tests": ["tests/test_editorial_plan_review.py", "tests/test_editorial_plan.py", "tests/test_comparison_acceptance.py"]
+}

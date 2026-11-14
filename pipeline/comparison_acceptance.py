@@ -248,11 +248,10 @@ def review_issues(review, evidence, *, article=False):
     issues.extend(duplicate_pair_issues(review, evidence))
     # Topic fit and meaningful comparison are judged semantically. Unknown
     # specification anchors do not by themselves reject an identifiable product.
+    # Semantic comparison QA owns product identity and comparison viability.
+    # Article prose, conclusions and factual claims have independent editorial
+    # and claim gates; never give this gate a second editorial veto.
     required = ['distinct_products', 'meaningful_comparison']
-    if article:
-        required += ['claims_grounded', 'buying_guidance', 'complete_comparison',
-                     'recommendation_conclusion', 'reader_decision_outsourcing_absent',
-                     'internal_qa_leak_absent', 'editorial_voice_appropriate']
     if any(review.get(key) is not True for key in required):
         issues.append('independent semantic criteria not satisfied')
     if not str(review.get('reason') or '').strip():
