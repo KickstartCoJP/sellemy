@@ -75,6 +75,12 @@ class ChangeContractGateTests(unittest.TestCase):
         with patch.object(gate, 'changed_paths', return_value=changed), patch.object(gate, 'git', return_value=gate.PREFIX + slug):
             self.assertEqual(gate.check('old', 'new', destination='refs/heads/main'), [])
 
+    def test_verified_publication_pr_is_allowed(self):
+        slug, category = 'sample-article', 'dailygoods'
+        changed = gate.publication_paths(slug, category)
+        with patch.object(gate, 'changed_paths', return_value=changed), patch.object(gate, 'git', return_value=gate.PREFIX + slug):
+            self.assertEqual(gate.check('old', 'new', destination='refs/heads/pr'), [])
+
     def test_publication_with_extra_code_is_rejected(self):
         changed = gate.publication_paths('sample-article', 'dailygoods') | {self.code_path}
         with patch.object(gate, 'changed_paths', return_value=changed), patch.object(gate, 'git', return_value=gate.PREFIX + 'sample-article'):

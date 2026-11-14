@@ -1,0 +1,31 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "BU002-RESTORE-PUBLISHING-20261114",
+  "instruction_ref": "2026-11-14 CEO: ちゃんと最後までやれ; previous directive retain CEO review and restore article publishing within new staging gate",
+  "instruction": "Restore existing CEO-approved article auto publishing by moving it from blocked direct main push to validated publication PR, preserving change contract and CEO approvals.",
+  "implementer": "sellemy-ops Mac Studio v2",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3",
+    "https://app.notion.com/p/3dc67ec6a1008196b017ee01e1824bba"
+  ],
+  "allowed_paths": [
+    "change-contracts/20261114-article-publish-pr-gate.json",
+    "pipeline/article_release.py",
+    "pipeline/growth_role_business.py",
+    "ops/change_contract_gate.py",
+    "tests/test_article_release.py",
+    "tests/test_change_contract_gate.py",
+    "tests/test_growth_runtime.py"
+  ],
+  "preserved_rules": [
+    "CEO article approval must precede publication",
+    "Exact eleven publication files only; no unauthorised code or product QA changes",
+    "GitHub main protection remains active",
+    "No additional CEO review for already-approved article"
+  ],
+  "acceptance_tests": [
+    "tests/test_article_release.py",
+    "tests/test_change_contract_gate.py",
+    "tests/test_growth_runtime.py"
+  ]
+}
