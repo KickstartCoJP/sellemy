@@ -61,10 +61,31 @@ def verify_local(root: Path | None = None) -> dict:
     return {'verified_files': len(hashes), 'article_count': len(candidates(root))}
 
 
+def source_acquisition_ready(evidence: dict) -> bool:
+    """Legacy snapshots are eligible for Product QA only with cited product facts.
+
+    This is an intake *prerequisite*, not semantic QA approval. Existing
+    Product/Reviewer/CEO gates remain the sole acceptance authorities.
+    """
+    products = evidence.get('products') if isinstance(evidence, dict) else None
+    return isinstance(products, list) and len(products) == 6 and all(
+        isinstance(product, dict) and any(
+            isinstance(source, dict)
+            and source.get('verified') is True
+            and str(source.get('excerpt') or '').strip()
+            and str(source.get('url') or '').startswith('https://')
+            for source in (product.get('sources') or [])
+        ) for product in products
+    )
+
+
 def has_pending(root: Path | None = None) -> bool:
+    root = root or source_root()
     for slug in candidates(root):
-        marker = job_dir(slug) / MARKER
-        if not marker.is_file():
+        if (job_dir(slug) / MARKER).is_file():
+            continue
+        article = root / 'articles' / slug
+        if source_acquisition_ready(_read_json(article / 'evidence.json')):
             return True
     return False
 
@@ -174,7 +195,11 @@ def import_one(root: Path | None = None) -> dict:
                 return {'slug': slug, 'admitted': True, 'resumed': True}
             continue
         article = root / 'articles' / slug
-        article = root / 'articles' / slug
+        # Acquisition MUST precede admission. Incomplete historical evidence
+        # cannot become Writer/Product QA failures or increase failure streaks.
+        # Keep the published baseline and all old QA artifacts untouched.
+        if not source_acquisition_ready(_read_json(article / 'evidence.json')):
+            continue
         if not (job_dir(slug) / 'state.json').exists():
             candidate = _read_json(article / 'body.json')
             category = candidate.get('category')
