@@ -58,7 +58,8 @@
     "Current independent product acceptance version must be renewed before reuse",
     "All 37 Planning assessments explicitly PENDING, no false passed approvals",
     "Published article paths, live job states, normal new article execution and CEO Gate unchanged",
-    "Legacy436 article repair and failed37 are entirely separate tasks"
+    "Legacy436 article repair and failed37 are entirely separate tasks",
+    "Independent Product QA public staging receipt contains no internal reviewer session identifiers"
   ],
   "acceptance_tests": [
     "tests/test_failed37_planning_staging.py"
