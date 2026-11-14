@@ -38,6 +38,15 @@ def _execute_job(slug: str, result: dict, *, cache_only: bool = False) -> str | 
             if action == 'product':
                 execute_role('product', slug, cache_only=cache_only)
                 continue
+            if action == 'replan':
+                receipt = execute_role('legacy_replan', slug)
+                if receipt.get('action') == 'hold':
+                    result['status'] = 'planning_research_hold'
+                    result['held_slug'] = slug
+                    return None
+                if receipt.get('product_qa') != 'PASS':
+                    raise GrowthRuntimeError('legacy replan omitted independent Product QA PASS')
+                continue
             if action == 'writer':
                 if state.get('current_stage') == 'WRITER_PENDING' and state.get('status') == 'ACTIVE':
                     # The legacy role owns all artifact access; the coordinator
@@ -205,6 +214,8 @@ def run(*, publish: bool, cache_only: bool = False, report_path: Path | None = R
                     result['status'] = 'recovery_deferred'
                     return result
             raise
+        if commit is None and result.get('status') == 'planning_research_hold':
+            return result
         if commit is None and result.get('status') == 'awaiting_chatgpt_final_review':
             return result
         result.update({'commit': commit, 'published': True, 'status': 'published'})

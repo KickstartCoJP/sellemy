@@ -19,7 +19,7 @@ EVENTS_PATH = STATE_ROOT / 'events.jsonl'
 EXECUTION_EVENTS_PATH = STATE_ROOT / 'execution-events.jsonl'
 
 TERMINAL_STATUSES = {'PUBLISHED', 'DISCARDED', 'FAILED', 'RETIRED'}
-RETRYABLE_STAGES = {'WRITER_PENDING', 'QA_FAILED', 'EYECATCH_PENDING', 'PUBLISH_PENDING'}
+RETRYABLE_STAGES = {'PLANNING_PENDING', 'WRITER_PENDING', 'QA_FAILED', 'EYECATCH_PENDING', 'PUBLISH_PENDING'}
 WRITER_MAX_ATTEMPTS = int(os.environ.get('SELLEMY_WRITER_MAX_ATTEMPTS_PER_SLUG', '10'))
 
 
@@ -280,7 +280,7 @@ def eligible_job(*, now: datetime | None = None) -> dict | None:
     # A CEO-approved article must finish its eyecatch/publication independently
     # of upstream Writer work and product-reselection holds.
     priority = {'PUBLISH_PENDING': 0, 'EYECATCH_PENDING': 1,
-                'QA_FAILED': 2, 'WRITER_PENDING': 3}
+                'QA_FAILED': 2, 'WRITER_PENDING': 3, 'PLANNING_PENDING': 4}
     eligible.sort(key=lambda row: (priority.get(row.get('current_stage'), 9),
                                    row.get('updated_at') or row.get('created_at') or '',
                                    row.get('slug') or ''))
