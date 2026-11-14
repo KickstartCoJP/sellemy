@@ -1,0 +1,1126 @@
+{
+  "contract_version": "0e598707b2118a45964053dc559f6a1bb3a7431e8ced92ed14c8d014ef1ed33b",
+  "evidence_sha256": "0cb44b964ae67e243ae51da5be39da1d22a5e908c733187cf29627ede337391c",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 14848,
+    "input_tokens": 41017,
+    "member_binding_revision": 4,
+    "output_tokens": 7312,
+    "reasoning_effort": "medium",
+    "reasoning_output_tokens": 667,
+    "session_id": "01a1da9c-9247-7102-8be4-98a31f3de195",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "510148048ad2f1146db4fd122ac17bcffe9b1038e3c64016bf732c0ab6586a84",
+  "review": {
+    "buying_guidance": false,
+    "claims_grounded": false,
+    "complete_comparison": true,
+    "distinct_products": true,
+    "duplicate_pair_checks": [
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Capacity 8 Liters",
+            "reason": "本体容量と内部構造が異なる。",
+            "right_quote": "Capacity 4 Liters",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "removable inner bucket",
+            "reason": "色や意匠だけの差ではない。",
+            "right_quote": "easy-to-remove drain basket",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "hung inside or outside of a cabinet door",
+            "reason": "設置方法に差がある。",
+            "right_quote": "directly placed on the counter",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "Capacity 8 Liters",
+            "reason": "8Lと4L。",
+            "right_quote": "Capacity 4 Liters",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "removable inner bucket",
+            "reason": "内桶と水切りかごで構造が異なる。",
+            "right_quote": "easy-to-remove drain basket",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代の関係は明示されていない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand SONGMICS",
+            "reason": "同一ブランド。",
+            "right_quote": "Brand SONGMICS",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "Capacity 8 Liters",
+            "reason": "容量と片づけ方で独立した選択になる。",
+            "right_quote": "Capacity 4 Liters",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "同一ブランドだが、8Lの内桶付き容器と4Lの水切りかご付き容器は異なる。",
+        "right_ref": "p2"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Capacity 8 Liters",
+            "reason": "容量と構造が異なる。",
+            "right_quote": "Capacity 1.4 Liters",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "removable inner bucket",
+            "reason": "内部構造が異なる。",
+            "right_quote": "included ring",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "hung inside or outside of a cabinet door",
+            "reason": "使用構造が異なる。",
+            "right_quote": "press the lid onto the body",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "Capacity 8 Liters",
+            "reason": "8Lと1.4L。",
+            "right_quote": "Capacity 1.4 Liters",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "flip up or slide down",
+            "reason": "ふたの操作が異なる。",
+            "right_quote": "Open the air vents on the lid",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "異なるブランド。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand SONGMICS",
+            "reason": "ブランドが異なる。",
+            "right_quote": "Brand シービージャパン(CB JAPAN)",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "Capacity 8 Liters",
+            "reason": "容量とふたの使い方で選べる。",
+            "right_quote": "Capacity 1.4 Liters",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "容量、ふた、内部構造が異なる。",
+        "right_ref": "p3"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "removable inner bucket",
+            "reason": "容器と袋ホルダー。",
+            "right_quote": "Polybag Eco Holder with Lid",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "removable inner bucket",
+            "reason": "ごみを受ける構造が異なる。",
+            "right_quote": "Simply cover with a polybag!",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "removable inner bucket",
+            "reason": "包装だけの差ではない。",
+            "right_quote": "Simply cover with a polybag!",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "袋ホルダーの容量は示されていない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "removable inner bucket",
+            "reason": "内桶付き容器と袋ホルダー。",
+            "right_quote": "Polybag Eco Holder with Lid",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "異なるブランド。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand SONGMICS",
+            "reason": "ブランドが異なる。",
+            "right_quote": "Brand YAMAZAKI",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "removable inner bucket",
+            "reason": "内桶で運ぶか、袋に受けて中身を隠すかで選べる。",
+            "right_quote": "Comes with a lid so that the trash cannot be seen",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "内桶付き容器とふた付き袋ホルダーは別商品。",
+        "right_ref": "p4"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "removable inner bucket",
+            "reason": "容器と袋スタンド。",
+            "right_quote": "Mini Poly Bag Holder",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "flip up or slide down",
+            "reason": "ふたの有無と構造が異なる。",
+            "right_quote": "With Lid No",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "removable inner bucket",
+            "reason": "本体構造が異なる。",
+            "right_quote": "just set the opening of the bag on the stand",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "スタンドの掲載容量と容器容量は直接比較しにくい。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "flip up or slide down",
+            "reason": "ふた付き容器と開放型スタンド。",
+            "right_quote": "Opening Mechanism Open-Top",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "異なるブランド。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand SONGMICS",
+            "reason": "ブランドが異なる。",
+            "right_quote": "Brand 下村企販",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "removable inner bucket",
+            "reason": "内桶か袋かで片づけ方を選べる。",
+            "right_quote": "just set the opening of the bag on the stand",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "ふた・内桶付き容器と開放型袋スタンドは別商品。",
+        "right_ref": "p5"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "removable inner bucket",
+            "reason": "容器と袋ホルダー。",
+            "right_quote": "Marna K821 Poly Bag Holder",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "removable inner bucket",
+            "reason": "構造が異なる。",
+            "right_quote": "it can be folded compactly",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "removable inner bucket",
+            "reason": "包装だけの差ではない。",
+            "right_quote": "it can be folded compactly",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "袋ホルダーに容器容量は示されていない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "flip up or slide down",
+            "reason": "ふた付き容器と折りたたみ式ホルダー。",
+            "right_quote": "folded compactly when not in use",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "異なるブランド。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand SONGMICS",
+            "reason": "ブランドが異なる。",
+            "right_quote": "マーナ(Marna)",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "removable inner bucket",
+            "reason": "片づけ方と収納方法で選べる。",
+            "right_quote": "folded compactly when not in use",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "内桶付き容器と折りたたみ式袋ホルダーは別商品。",
+        "right_ref": "p6"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Capacity 4 Liters",
+            "reason": "容量と内部構造が異なる。",
+            "right_quote": "Capacity 1.4 Liters",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "easy-to-remove drain basket",
+            "reason": "内部部品が異なる。",
+            "right_quote": "included ring",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "easy-to-remove drain basket",
+            "reason": "包装だけの差ではない。",
+            "right_quote": "included ring",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "Capacity 4 Liters",
+            "reason": "4Lと1.4L。",
+            "right_quote": "Capacity 1.4 Liters",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "easy-to-remove drain basket",
+            "reason": "内部部品とふたの操作が異なる。",
+            "right_quote": "Open the air vents on the lid",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "異なるブランド。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand SONGMICS",
+            "reason": "ブランドが異なる。",
+            "right_quote": "Brand シービージャパン(CB JAPAN)",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "Capacity 4 Liters",
+            "reason": "容量と内部部品で選べる。",
+            "right_quote": "Capacity 1.4 Liters",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p2",
+        "reason": "水切りかご付き4L容器と袋用リング付き1.4Lキャニスターは別商品。",
+        "right_ref": "p3"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "easy-to-remove drain basket",
+            "reason": "容器と袋ホルダー。",
+            "right_quote": "Polybag Eco Holder with Lid",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "easy-to-remove drain basket",
+            "reason": "構造が異なる。",
+            "right_quote": "Simply cover with a polybag!",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "easy-to-remove drain basket",
+            "reason": "包装だけの差ではない。",
+            "right_quote": "Simply cover with a polybag!",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "袋ホルダーの容量は示されていない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "easy-to-remove drain basket",
+            "reason": "中身の受け方が異なる。",
+            "right_quote": "Simply cover with a polybag!",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "異なるブランド。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand SONGMICS",
+            "reason": "ブランドが異なる。",
+            "right_quote": "Brand YAMAZAKI",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "easy-to-remove drain basket",
+            "reason": "かごを取り出すか、袋で受けるかで選べる。",
+            "right_quote": "Comes with a lid so that the trash cannot be seen",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p2",
+        "reason": "水切りかご付き容器とふた付き袋ホルダーは別商品。",
+        "right_ref": "p4"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "easy-to-remove drain basket",
+            "reason": "容器と袋スタンド。",
+            "right_quote": "Mini Poly Bag Holder",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "easy-to-remove drain basket",
+            "reason": "構造が異なる。",
+            "right_quote": "With Lid No",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "easy-to-remove drain basket",
+            "reason": "包装だけの差ではない。",
+            "right_quote": "just set the opening of the bag on the stand",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "スタンドの掲載容量と容器容量は直接比較しにくい。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "easy-to-remove drain basket",
+            "reason": "内部かご付き容器と開放型袋スタンド。",
+            "right_quote": "Opening Mechanism Open-Top",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "異なるブランド。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand SONGMICS",
+            "reason": "ブランドが異なる。",
+            "right_quote": "Brand 下村企販",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "easy-to-remove drain basket",
+            "reason": "かごを取り出すか袋を外すかで選べる。",
+            "right_quote": "just set the opening of the bag on the stand",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p2",
+        "reason": "水切りかご付き容器と開放型袋スタンドは別商品。",
+        "right_ref": "p5"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "easy-to-remove drain basket",
+            "reason": "容器と袋ホルダー。",
+            "right_quote": "Marna K821 Poly Bag Holder",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "easy-to-remove drain basket",
+            "reason": "構造が異なる。",
+            "right_quote": "it can be folded compactly",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "easy-to-remove drain basket",
+            "reason": "包装だけの差ではない。",
+            "right_quote": "it can be folded compactly",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "袋ホルダーに容器容量は示されていない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "easy-to-remove drain basket",
+            "reason": "内部かご付き容器と折りたたみ式ホルダー。",
+            "right_quote": "folded compactly when not in use",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "異なるブランド。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand SONGMICS",
+            "reason": "ブランドが異なる。",
+            "right_quote": "マーナ(Marna)",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "easy-to-remove drain basket",
+            "reason": "かごの取り出し方と本体の収納方法で選べる。",
+            "right_quote": "folded compactly when not in use",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p2",
+        "reason": "水切りかご付き容器と折りたたみ式袋ホルダーは別商品。",
+        "right_ref": "p6"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Airtight Food Waste Canister",
+            "reason": "キャニスターと袋ホルダー。",
+            "right_quote": "Polybag Eco Holder with Lid",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "included ring",
+            "reason": "袋の保持構造が異なる。",
+            "right_quote": "Simply cover with a polybag!",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "Open the air vents on the lid",
+            "reason": "ふたの使い方が異なる。",
+            "right_quote": "Comes with a lid so that the trash cannot be seen",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "袋ホルダーの容量は示されていない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "press the lid onto the body",
+            "reason": "容器を閉じる構造と袋を覆う構造。",
+            "right_quote": "Simply cover with a polybag!",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "異なるブランド。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand シービージャパン(CB JAPAN)",
+            "reason": "ブランドが異なる。",
+            "right_quote": "Brand YAMAZAKI",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "Open the air vents on the lid",
+            "reason": "ふたの操作と役割で選べる。",
+            "right_quote": "Comes with a lid so that the trash cannot be seen",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p3",
+        "reason": "密閉操作をするキャニスターと目隠し用のふたを持つ袋ホルダーは別商品。",
+        "right_ref": "p4"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Airtight Food Waste Canister",
+            "reason": "容器と袋スタンド。",
+            "right_quote": "Mini Poly Bag Holder",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "Opening Mechanism Press-Top",
+            "reason": "開口構造が異なる。",
+            "right_quote": "Opening Mechanism Open-Top",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "included ring",
+            "reason": "袋の保持構造が異なる。",
+            "right_quote": "just set the opening of the bag on the stand",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "スタンドの掲載容量と容器容量は直接比較しにくい。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "Open the air vents on the lid",
+            "reason": "ふたの有無と操作が異なる。",
+            "right_quote": "With Lid No",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "異なるブランド。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand シービージャパン(CB JAPAN)",
+            "reason": "ブランドが異なる。",
+            "right_quote": "Brand 下村企販",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "press the lid onto the body",
+            "reason": "ふたを閉じるか開放した袋へ入れるかで選べる。",
+            "right_quote": "Opening Mechanism Open-Top",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p3",
+        "reason": "ふた付きキャニスターと開放型袋スタンドは別商品。",
+        "right_ref": "p5"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Airtight Food Waste Canister",
+            "reason": "容器と袋ホルダー。",
+            "right_quote": "Marna K821 Poly Bag Holder",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "Open the air vents on the lid",
+            "reason": "機能構造が異なる。",
+            "right_quote": "it can be folded compactly",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "included ring",
+            "reason": "袋の保持構造が異なる。",
+            "right_quote": "adjust the opening of the frame",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "袋ホルダーに容器容量は示されていない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "press the lid onto the body",
+            "reason": "密閉操作付き容器と折りたたみ式ホルダー。",
+            "right_quote": "folded compactly when not in use",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "異なるブランド。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand シービージャパン(CB JAPAN)",
+            "reason": "ブランドが異なる。",
+            "right_quote": "マーナ(Marna)",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "Open the air vents on the lid",
+            "reason": "ふたの操作と収納方法で選べる。",
+            "right_quote": "folded compactly when not in use",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p3",
+        "reason": "密閉操作付きキャニスターと折りたたみ式袋ホルダーは別商品。",
+        "right_ref": "p6"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Polybag Eco Holder with Lid",
+            "reason": "異なる袋ホルダー。",
+            "right_quote": "Mini Poly Bag Holder",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "Comes with a lid",
+            "reason": "ふたの有無が異なる。",
+            "right_quote": "With Lid No",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "Comes with a lid",
+            "reason": "本体構造の差。",
+            "right_quote": "With Lid No",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "12 x 13.5 x 16.7 cm",
+            "reason": "掲載寸法が異なる。",
+            "right_quote": "Outer diameter 12.5 cm (common for top and bottom) x Height 10 cm",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "Comes with a lid",
+            "reason": "ふた付きと開放型。",
+            "right_quote": "Opening Mechanism Open-Top",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "異なるブランド。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand YAMAZAKI",
+            "reason": "ブランドが異なる。",
+            "right_quote": "Brand 下村企販",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "Comes with a lid so that the trash cannot be seen",
+            "reason": "中身を隠すか袋の口を開いて使うかで選べる。",
+            "right_quote": "Opening Mechanism Open-Top",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p4",
+        "reason": "ふた付き袋ホルダーとふたのない袋スタンドは別商品。",
+        "right_ref": "p5"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Polybag Eco Holder with Lid",
+            "reason": "異なる袋ホルダー。",
+            "right_quote": "Marna K821 Poly Bag Holder",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "Comes with a lid",
+            "reason": "機能構造が異なる。",
+            "right_quote": "it can be folded compactly",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "Comes with a lid",
+            "reason": "包装だけの差ではない。",
+            "right_quote": "it can be folded compactly",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "12 x 13.5 x 16.7 cm",
+            "reason": "掲載寸法が異なる。",
+            "right_quote": "220 x 180 x 139 mm",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "Comes with a lid",
+            "reason": "ふたと折りたたみ機構が異なる。",
+            "right_quote": "folded compactly when not in use",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "異なるブランド。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand YAMAZAKI",
+            "reason": "ブランドが異なる。",
+            "right_quote": "マーナ(Marna)",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "Comes with a lid so that the trash cannot be seen",
+            "reason": "使用中の目隠しと使用後の収納で選べる。",
+            "right_quote": "folded compactly when not in use",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p4",
+        "reason": "ふた付き袋ホルダーと折りたたみ式袋ホルダーは別商品。",
+        "right_ref": "p6"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Shimomura 44085 Mini Poly Bag Holder",
+            "reason": "異なるブランド・型番の本体。",
+            "right_quote": "Marna K821 Poly Bag Holder",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "can be flipped over",
+            "reason": "機構が異なる。",
+            "right_quote": "it can be folded compactly",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "Material: 18-8 stainless steel",
+            "reason": "本体素材が異なる。",
+            "right_quote": "Body: ABS resin, thermoplastic elastomer",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "Outer diameter 12.5 cm (common for top and bottom) x Height 10 cm",
+            "reason": "使用時寸法が異なる。",
+            "right_quote": "220 x 180 x 139 mm",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "can be flipped over",
+            "reason": "反転利用と折りたたみ収納の違い。",
+            "right_quote": "folded compactly when not in use",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "異なるブランド。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand 下村企販",
+            "reason": "ブランドが異なる。",
+            "right_quote": "マーナ(Marna)",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "Opening Mechanism Open-Top",
+            "reason": "置いて使うスタンドと収納できるホルダーを選べる。",
+            "right_quote": "folded compactly when not in use",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p5",
+        "reason": "素材、寸法、収納構造が異なる独立した袋ホルダー。",
+        "right_ref": "p6"
+      }
+    ],
+    "editorial_voice_appropriate": false,
+    "internal_qa_leak_absent": false,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "capacity",
+            "quote": "Capacity 8 Liters"
+          },
+          {
+            "axis_id": "lid",
+            "quote": "flip up or slide down"
+          },
+          {
+            "axis_id": "emptying",
+            "quote": "removable inner bucket"
+          }
+        ],
+        "identity_key": "SONGMICS Airtight Hanging Trash Can",
+        "identity_quote": "SONGMICS Airtight Hanging Trash Can with Lid 2.8 gal (8 L) Stainless Steel",
+        "reason": "8Lのふた付き容器。作業台置きと扉掛け、内桶の取り外しが明記されている。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "capacity",
+            "quote": "The size is 21 x 20 x 19.5 cm"
+          },
+          {
+            "axis_id": "lid",
+            "quote": "a special handle is provided on the top of the lid"
+          },
+          {
+            "axis_id": "emptying",
+            "quote": "easy-to-remove drain basket with a handle"
+          }
+        ],
+        "identity_key": "SONGMICS Compost Food Garbage Container",
+        "identity_quote": "SONGMICS Compost Food Garbage Container, Tabletop Trash Can with Lid",
+        "reason": "4Lの卓上容器。外寸、水切りかご、ふたの取っ手が明記され、p1とは異なる購入理由が成立する。防臭・防虫の宣伝文句は性能の証明として扱わない。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "capacity",
+            "quote": "Capacity 1.4 Liters"
+          },
+          {
+            "axis_id": "lid",
+            "quote": "Open the air vents on the lid, press the lid onto the body to release excess air, and close the air vents on the lid"
+          },
+          {
+            "axis_id": "emptying",
+            "quote": "Simply hang the garbage bag on the included ring"
+          }
+        ],
+        "identity_key": "CB Japan Trash Can with Lid, Small Size, 1.4L, Freezer Safe, Airtight Trash Canister M Size Atomico",
+        "identity_quote": "CB Japan Trash Can with Lid, Small Size, 1.4L, Freezer Safe, Airtight Trash Canister M Size Atomico",
+        "reason": "atomicoの1.4Lキャニスター。ふたの通気口を操作する構造と袋用リングが明記されている。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "capacity",
+            "quote": "12 x 13.5 x 16.7 cm"
+          },
+          {
+            "axis_id": "lid",
+            "quote": "Comes with a lid so that the trash cannot be seen"
+          },
+          {
+            "axis_id": "emptying",
+            "quote": "Simply cover with a polybag!"
+          }
+        ],
+        "identity_key": "Yamazaki Polybag Eco Holder with Lid, Plate",
+        "identity_quote": "Yamazaki Polybag Eco Holder with Lid, Plate, White, 3353",
+        "reason": "ふた付きポリ袋ホルダー。袋で調理くずを受け、ふたで中身を隠す構造と外寸が明記されている。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "capacity",
+            "quote": "Outer diameter 12.5 cm (common for top and bottom) x Height 10 cm"
+          },
+          {
+            "axis_id": "lid",
+            "quote": "With Lid No"
+          },
+          {
+            "axis_id": "emptying",
+            "quote": "just set the opening of the bag on the stand"
+          }
+        ],
+        "identity_key": "Shimomura 44085 Mini Poly Bag Holder",
+        "identity_quote": "Shimomura 44085 Mini Poly Bag Holder (Made in Japan)",
+        "reason": "開放型の袋スタンド。外寸、袋を掛ける構造、ふたがないことが明記されている。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "capacity",
+            "quote": "220 x 180 x 139 mm"
+          },
+          {
+            "axis_id": "emptying",
+            "quote": "The low convex design makes it easy to clean and easy to maintain"
+          }
+        ],
+        "identity_key": "Marna K821 Poly Bag Holder",
+        "identity_quote": "Marna K821 Poly Bag Holder (Foldable, Compact/Thickness Approx. 1.2 inches",
+        "reason": "折りたたみ式袋ホルダー。使用時寸法、フレームの開き幅、収納時の厚さ、掃除しやすい形状が明記されている。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reader_decision_outsourcing_absent": false,
+    "reason": "6商品はいずれも調理中のくずを手元で受ける用途に適合する。確認済みの掲載情報には、容量、設置方法、ふた、内側の部品、袋の保持方法に具体的な違いがあり、既存の3比較軸で選び分けられる。明白な重複はない。",
+    "recommendation_conclusion": false,
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}
