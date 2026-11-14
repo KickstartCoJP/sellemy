@@ -1,0 +1,158 @@
+{
+  "schema": "sellemy-failed37-planning-review-input/v1",
+  "task_id": "TASK-BU002-FAILED37-REPLAN-20261115",
+  "slug": "usb-c-portable-dac-headphone-amps",
+  "job_state": "FAILED",
+  "failed_stage": "WRITER_FAILED",
+  "original_job_sha256": {
+    "acceptance.json": "87f1ce511370b50ff5063dd335f59664029568e4994c18aa8383c8302f6c4f32",
+    "editorial-plan.json": "74c434dfb5cb0ae3170a619ad72def5495e2a7cc59eb2829e3d5d9f327ad03e8",
+    "evidence.json": "70a67226ac6bd25582e7cb47a551f5004a60ed284a3841800b6b1d81411168da",
+    "gate-feedback.json": "bbd2d420ac6637da68d6b9e6eb81e7c6ed7f59218925c0217ac1f093b4822b2b",
+    "payload.json": "5756d9768bab077436422a7c4d1578b9074c6233b418851407834825bd685654",
+    "qa.json": "5ae6fb4237b773f398e1326ce4233ba41f954bcbecf4ca0d4a2a87abc018019e",
+    "selection.json": "bdefc16a4473cd193e4da2eae4b06e0a7eb287c8900d5b1d75fe1f211f47a794",
+    "topic.json": "c02f9824d92942927dcb32d75ff5f254af7e9931713e93aee240bc73c5e7106c"
+  },
+  "planning_candidate": {
+    "slug": "usb-c-portable-dac-headphone-amps",
+    "category": "gadget",
+    "title": "USB-C接続のポータブルDAC｜イヤホン端子・対応端末・携帯性で選ぶ",
+    "query": "USB-C ポータブル DAC アンプ",
+    "reader_persona": {
+      "editorial_depth": "接続端子、端末の対応条件、給電や操作方法を専門語を使って正確に説明する",
+      "knowledge_level": "USB-Cとイヤホン端子は分かり、音声機器の仕様もある程度読める",
+      "purchase_goal": "手持ちの端末とイヤホンに合う小型DACを選びたい",
+      "reader": "イヤホン端子のないスマホやノートPCで有線イヤホンを使う人"
+    },
+    "introduction_angles": [
+      {
+        "id": "output",
+        "label": "イヤホン出力端子の種類",
+        "keywords": [
+          "USB-C ポータブル DAC 3.5mm",
+          "USB-C ポータブル DAC 4.4mm"
+        ]
+      },
+      {
+        "id": "device_fit",
+        "label": "対応端末と音声入力条件",
+        "keywords": [
+          "USB-C DAC Android 対応",
+          "USB-C DAC Windows 対応"
+        ]
+      },
+      {
+        "id": "portability",
+        "label": "本体形状と操作部",
+        "keywords": [
+          "USB-C DAC ドングル 音量ボタン",
+          "USB-C DAC 小型 ケーブル一体"
+        ]
+      }
+    ]
+  },
+  "original_product_inventory": [
+    {
+      "ref": "p1",
+      "asin": "B0CTHN2QB3",
+      "name": "Fosi Audio DS2 USB C to AUX ヘッドホンアンプ DAC ドングル 3.5mmジャック オーディオ ポータブルアンプ デュアル出力 DSD256 4.4mm バランス出力対応 CS43131 iPhone 15 Pro Max Plus iPad Androidフォン用",
+      "prior_individual_selection_reason": "企画軸「イヤホン出力端子の種類」の候補として収集。適合性は独立商品QAで判定する。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p2",
+      "asin": "B09GTWRTS7",
+      "name": "【VGP 2022 受賞モデル】ラディウス radius RK-DA60C ポータブルヘッドホンアンプ : USB Type-C USB-C タイプC Android アンドロイド スマホ 32bit / 384kHz ハイレゾ 超小型 DAC DACアンプ 3.5mm イヤホン イヤフォン Type-A変換付属 RK-DA60CK",
+      "prior_individual_selection_reason": "企画軸「イヤホン出力端子の種類」の候補として収集。適合性は独立商品QAで判定する。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p3",
+      "asin": "B0FNK5NCTV",
+      "name": "TRN BlackPearl 小型アンプ DAC スマホ AMP 【ハイレゾ対応】 32bit/384kHz DSD256 チップCS43131 イヤホンアンプ ポータブル ヘッドホンアンプ Type-C タイプC 3.5mm+4.4mm ジャック (BlackPearl)",
+      "prior_individual_selection_reason": "企画軸「対応端末と音声入力条件」の候補として収集。適合性は独立商品QAで判定する。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p4",
+      "asin": "B0HDP3Q8JP",
+      "name": "DS3 USB-C DAC/AMPアンプドングル デュアルCS43198搭載 3.5mm / 4.4mm バランス出力 32bit/768kHz DSD256 ハードウェアデコードHi-Fiアンプ 小型 軽量 PC/スマートフォン/PS5/Switch用",
+      "prior_individual_selection_reason": "企画軸「対応端末と音声入力条件」の候補として収集。適合性は独立商品QAで判定する。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p5",
+      "asin": "B09NXKYTDQ",
+      "name": "FIIO KA11 Type-C SIlver Black 【日本正規店より発送・シリアルナンバー付】USB DAC アンプ ポータブル ヘッドホン ヘッドフォン イヤホン イヤフォン (ブラック)",
+      "prior_individual_selection_reason": "企画軸「本体形状と操作部」の候補として収集。適合性は独立商品QAで判定する。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p6",
+      "asin": "B0CZ8P2233",
+      "name": "【VGP 2024金賞】EarFun UA100 USB DAC ヘッドホンアンプ/Hi-Res認証 DAC アンプ 小型/32bit/768kHz DSD 512ハイレゾ対応/3.5mm 4.4mm ケーブル着脱式/Type-C 対応超小型 DAC/アルミニウム合金材質ポータブルヘッドホンアンプ/HD ロスレス音楽",
+      "prior_individual_selection_reason": "企画軸「本体形状と操作部」の候補として収集。適合性は独立商品QAで判定する。",
+      "verified_excerpt_sources": 1
+    }
+  ],
+  "original_qa_pass_fields": [
+    "affiliate_pass",
+    "asin_pass",
+    "banned_phrase_pass",
+    "canonical_pass",
+    "category_pass",
+    "conclusion_brand_free_pass",
+    "description_hard_min_pass",
+    "description_target_pass",
+    "description_uniqueness_pass",
+    "fixed_price_pass",
+    "h3_len_pass",
+    "image_identity_pass",
+    "lead_brand_free_pass",
+    "nav_footer_pass",
+    "no_repeated_sentences_pass",
+    "product_image_audit_pass",
+    "semantic_acceptance_pass",
+    "summary_brand_free_pass"
+  ],
+  "independent_review_required": true,
+  "independent_review_status": "PENDING",
+  "replanning_checks": {
+    "reader_need": {
+      "question": "What concrete product-selection need can be met?",
+      "observed_reader": "イヤホン端子のないスマホやノートPCで有線イヤホンを使う人",
+      "purchase_goal": "手持ちの端末とイヤホンに合う小型DACを選びたい",
+      "pass": null
+    },
+    "six_individual_recommendations": {
+      "question": "Which products each meet the stated need, with source-backed individual value?",
+      "pass": null
+    },
+    "three_discovery_angles": {
+      "question": "Are the 3 angles distinct discovery entrypoints without head-to-head rankings?",
+      "pass": null
+    },
+    "replan_outcome": {
+      "instruction": "Approve existing theme only if reader intent and genuine product recommendations are independently verified; otherwise reselect Planning theme and products.",
+      "pass": null
+    }
+  },
+  "product_qa": {
+    "existing_independent_receipt": "STALE_CONTRACT",
+    "new_product_qa_required": true,
+    "same_product_allowed_if_verified": true,
+    "product_count": 6,
+    "verified_per_product": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "next_action": "independent_planning_qa_then_conditional_product_qa_then_writer_qa_then_ceo_gate",
+  "execution_allowed": false,
+  "production_article_changed": false
+}

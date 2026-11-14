@@ -1,0 +1,158 @@
+{
+  "schema": "sellemy-failed37-planning-review-input/v1",
+  "task_id": "TASK-BU002-FAILED37-REPLAN-20261115",
+  "slug": "adjustable-drawer-dividers-for-home",
+  "job_state": "FAILED",
+  "failed_stage": "PRODUCT_FAILED",
+  "original_job_sha256": {
+    "acceptance.json": "6dc673081dc1b9c4ae448ecf1d66376876212b07bed3861697b0f87608314023",
+    "editorial-plan.json": "eb884e7f7f0b9106b77cfb48efc0f8041e52636a52bc15904faabdae21579193",
+    "evidence.json": "de59b4c8c96b196c6ddbf7d75d18af8629b23190b8086b0a101f0e3c95289d9c",
+    "gate-feedback.json": "3973072e79d7bfe40f429348eff1e6047306ce24243b555f7ec90285008f7849",
+    "payload.json": "317c6f83c2773c3dd9b34296f59dd8dce54063b63a5847d0e235b30981bc6e5f",
+    "qa.json": "bc9e0dc80aaeb50d2a4b9e82528b2d0ad52ff612ca620c10fd16bb788418543d",
+    "selection.json": "d26290ad7a36144d80eeb5a0feadd2e51d6ef63089f406650db54832c54c8615",
+    "topic.json": "ddd6dd1287739f30b49fb93a22fa93041762e1ee20b892d1a8cab663eba178af"
+  },
+  "planning_candidate": {
+    "slug": "adjustable-drawer-dividers-for-home",
+    "category": "dailygoods",
+    "title": "伸縮式の引き出し仕切り6選｜対応寸法・固定方法・仕切り方で選ぶ",
+    "query": "引き出し 仕切り 伸縮",
+    "reader_persona": {
+      "editorial_depth": "伸縮範囲、設置方向、固定部分を実寸の見方とともに説明する",
+      "knowledge_level": "収納用品の専門知識はなく、引き出しの内寸は測れる",
+      "purchase_goal": "手持ちの引き出しに収まり、収納物に合う仕切りを選ぶ",
+      "reader": "衣類や小物を入れた引き出しを整理したい人"
+    },
+    "introduction_angles": [
+      {
+        "id": "fit_range",
+        "label": "引き出し内寸に合う伸縮範囲",
+        "keywords": [
+          "引き出し 仕切り 伸縮 対応幅",
+          "引き出し 仕切り 高さ 寸法"
+        ]
+      },
+      {
+        "id": "fixing_method",
+        "label": "端の固定方法",
+        "keywords": [
+          "引き出し 仕切り 伸縮 バネ 固定",
+          "引き出し 仕切り 滑り止め"
+        ]
+      },
+      {
+        "id": "partition_layout",
+        "label": "仕切る方向と収納物",
+        "keywords": [
+          "引き出し 仕切り 伸縮 衣類 小物",
+          "引き出し 仕切り 縦 横"
+        ]
+      }
+    ]
+  },
+  "original_product_inventory": [
+    {
+      "ref": "p1",
+      "asin": "B0FQ3TPP7H",
+      "name": "Lifewit 5\" Height 4 Pack Drawer Dividers, 30-47cm/11.5-18.5\" Telescopic Drawer Dividers for Clothes, Adjustable Dresser Drawer Organizer, Drawer Separator for Dresser Bathroom Closet Kitchen White",
+      "prior_individual_selection_reason": "高さ12.8cm、伸縮長29.5～47cmの4枚組。衣類を仕切る高さが欲しい人は、引き出しの内寸と照らして選びやすい。縦横どちらにも設置できる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p2",
+      "asin": "B0GK5NTCR5",
+      "name": "Lifewit 引き出しディバイダー 高さ8.2cm 27-42cm 拡張可能なドレッサーセパレーター 衣類用 調節可能な引き出しオーガナイザー 寝室/洗面台/バスルーム/キッチン/オフィスに 4個パック",
+      "prior_individual_selection_reason": "高さ8.2cm、対応する内寸26～42cmの4枚組。浅めの引き出しで下着や靴下を分けたい人が、高さと設置方向の寸法を確認して選びやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p3",
+      "asin": "B0C4L9MTB7",
+      "name": "Lifewit 5pcs Drawer Dividers Plastic Drawer Dividers 10cm Height, 28-44.5cm Adjustable Drawer Organizer for Clothes, Expandable Dresser Dividers for Bedroom Bathroom Kitchen Office Organization and",
+      "prior_individual_selection_reason": "上部ボタンで長さを調整し、バネの張力で固定する5枚組。両端はEVAフォーム製で、引き出しの内面に当たる部分の素材まで確認して選べる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p4",
+      "asin": "B0CR6JVMLL",
+      "name": "Lifewit 5個パック 高さ2.36インチ 引き出し仕切り 28-43.5cm/11-17インチ 調節可能な引き出しオーガナイザー 衣類/調理器具用 引き出しセパレーター ドレッサー/キッチン/寝室/オフィスの整理収納 ホワイト",
+      "prior_individual_selection_reason": "バネの張力と歯型ロックで固定し、両端にシリコン製滑り止めパッドを備える5枚組。固定の仕組みが明示されており、ボタンを押して縮められるため取り外し方も分かりやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p5",
+      "asin": "B0F928K1XV",
+      "name": "Lifewit Drawer Dividers - Expandable Dresser Separator Adjustable Drawer Organizer for Clothes - For Bedroom, Vanity, Bathroom, Kitchen, Office Height 10.2cm 27-42cm 5 Pack",
+      "prior_individual_selection_reason": "厚さ0.9cmの仕切りを縦横どちらにも配置できる5枚組。衣類や下着、小物に合わせて区画を作りたい人が、引き出しの内寸と高さ約10cmを確認して選べる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p6",
+      "asin": "B0DRTTT1R8",
+      "name": "Utoplike Bamboo Drawer Dividers for Underwear Clothes Storage",
+      "prior_individual_selection_reason": "竹製の4枚組で、下着や衣類のほか調理器具にも使える。長さは30～43.2cmだが、商品説明では内寸35.6～40.6cmの引き出しを推奨しており、設置する方向の実寸を測って選べる。",
+      "verified_excerpt_sources": 1
+    }
+  ],
+  "original_qa_pass_fields": [
+    "affiliate_pass",
+    "asin_pass",
+    "banned_phrase_pass",
+    "canonical_pass",
+    "category_pass",
+    "conclusion_brand_free_pass",
+    "description_hard_min_pass",
+    "description_target_pass",
+    "description_uniqueness_pass",
+    "distinct_openings_endings_pass",
+    "fixed_price_pass",
+    "h3_len_pass",
+    "image_identity_pass",
+    "lead_brand_free_pass",
+    "nav_footer_pass",
+    "no_repeated_sentences_pass",
+    "product_image_audit_pass",
+    "summary_brand_free_pass"
+  ],
+  "independent_review_required": true,
+  "independent_review_status": "PENDING",
+  "replanning_checks": {
+    "reader_need": {
+      "question": "What concrete product-selection need can be met?",
+      "observed_reader": "衣類や小物を入れた引き出しを整理したい人",
+      "purchase_goal": "手持ちの引き出しに収まり、収納物に合う仕切りを選ぶ",
+      "pass": null
+    },
+    "six_individual_recommendations": {
+      "question": "Which products each meet the stated need, with source-backed individual value?",
+      "pass": null
+    },
+    "three_discovery_angles": {
+      "question": "Are the 3 angles distinct discovery entrypoints without head-to-head rankings?",
+      "pass": null
+    },
+    "replan_outcome": {
+      "instruction": "Approve existing theme only if reader intent and genuine product recommendations are independently verified; otherwise reselect Planning theme and products.",
+      "pass": null
+    }
+  },
+  "product_qa": {
+    "existing_independent_receipt": "STALE_CONTRACT",
+    "new_product_qa_required": true,
+    "same_product_allowed_if_verified": true,
+    "product_count": 6,
+    "verified_per_product": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "next_action": "independent_planning_qa_then_conditional_product_qa_then_writer_qa_then_ceo_gate",
+  "execution_allowed": false,
+  "production_article_changed": false
+}

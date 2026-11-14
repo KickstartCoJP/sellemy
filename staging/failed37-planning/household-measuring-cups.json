@@ -1,0 +1,158 @@
+{
+  "schema": "sellemy-failed37-planning-review-input/v1",
+  "task_id": "TASK-BU002-FAILED37-REPLAN-20261115",
+  "slug": "household-measuring-cups",
+  "job_state": "FAILED",
+  "failed_stage": "WRITER_FAILED",
+  "original_job_sha256": {
+    "acceptance.json": "ab22bdf7db0591923354a929967687e58d796deb2d2681f96387283756eea545",
+    "editorial-plan.json": "6016bf01a7a59fb09a5e8698e8e242553715757c7272030ef23710ca5e4a1742",
+    "evidence.json": "1f4b3e51d8dc7a29c41e30f33da7dd1f34333a51b7c012af2ab9981b842fcad4",
+    "gate-feedback.json": "dfef551d3f90d371478adbf706c970f8b003ea428813c6d6daa3d0eff1355589",
+    "payload.json": "8a117dbec5039d591d19e76d4c5a1fdb600e80c1a30ea9a0679b02141f552e6b",
+    "qa.json": "e9effcc23acc378a8a5fe829f968265758153a31d7849976ae4b55169caed294",
+    "selection.json": "8ce088b56d0339de374bc019376dbb0b2eadb275865810fc89a9a524471c3c5c",
+    "topic.json": "170ba3675249d29f26cc473464044df269aa87628bbad0e53e28f71dbf1bf011"
+  },
+  "planning_candidate": {
+    "slug": "household-measuring-cups",
+    "category": "dailygoods",
+    "title": "料理用計量カップ6選｜目盛り・容量・注ぎやすさで選ぶ",
+    "query": "料理用 計量カップ",
+    "reader_persona": {
+      "editorial_depth": "目盛りの単位、最大容量、注ぎ口の形を具体的に説明する",
+      "knowledge_level": "計量カップの用途は知っているが、目盛りや材質の違いは意識していない",
+      "purchase_goal": "普段量る分量と洗い方に合うカップを選ぶ",
+      "reader": "料理やお菓子作りで液体を量る計量カップを買い替えたい人"
+    },
+    "introduction_angles": [
+      {
+        "id": "scale",
+        "label": "目盛りの単位と刻み",
+        "keywords": [
+          "計量カップ ml 目盛り 50ml",
+          "計量カップ 大さじ 目盛り"
+        ]
+      },
+      {
+        "id": "capacity",
+        "label": "一度に量れる容量",
+        "keywords": [
+          "計量カップ 200ml 料理用",
+          "計量カップ 500ml 料理用"
+        ]
+      },
+      {
+        "id": "pouring_and_care",
+        "label": "注ぎ口の形と手入れの条件",
+        "keywords": [
+          "計量カップ 注ぎ口付き",
+          "計量カップ 食洗機対応"
+        ]
+      }
+    ]
+  },
+  "original_product_inventory": [
+    {
+      "ref": "p1",
+      "asin": "B00J89XJMU",
+      "name": "貝印 KAI 計量カップ SELECT100 2個組 50ml 日本製 DH3111",
+      "prior_individual_selection_reason": "少量の調味料を量りたい人が選びやすい50mlの2個組。各カップにml・大さじ・小さじの目盛りがあり、透明な液体向けの赤い目盛りと、醤油など濃い色の液体向けのシルバーの目盛りを使い分けられる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p2",
+      "asin": "B0HGBWYDF9",
+      "name": "マーナ (marna) 目盛りが見やすい 計量カップ 200ml (電子レンジ/食洗機対応/耐熱) 注ぎやすい フック穴付き 壁掛け 収納",
+      "prior_individual_selection_reason": "普段の料理で約200mlまで量りたい人が選びやすい。大きな目盛りと縞状の計量線があり、持ったままでも計量ラインを確認しやすい。電子レンジと食洗機にも対応する。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p3",
+      "asin": "B003OCBLHC",
+      "name": "パール金属 BLACKS 食洗機対応耐熱 計量カップ 200ml 【日本製】 C-8621",
+      "prior_individual_selection_reason": "一度に量る量が200ml以内なら選びやすい、取っ手付きの耐熱ガラス製カップ。実用容量が200mlと明記されており、ガラス製を希望する人の選択肢になる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p4",
+      "asin": "B0033W3NTM",
+      "name": "HARIO(ハリオ) メジャーカップ ワイド 耐熱ガラス 取っ手付 マルチ 200ml 日本製 CMJW-200",
+      "prior_individual_selection_reason": "日常的に200mlまで量る人が選びやすい樹脂製のカップ。容量200ml、食洗機対応で、耐熱ガラス製とは材質と手入れの条件で選び分けられる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p5",
+      "asin": "B003I85WQI",
+      "name": "パール金属 日本製 耐熱 計量カップ 500ml 食洗機対応 BLACKS C-8622",
+      "prior_individual_selection_reason": "500mlを一度に量りたい人が選びやすい取っ手付きの樹脂製カップ。商品名に食洗機対応とあり、容量の大きさと洗い方を基準に選べる。注ぎ口の形状は提示情報から確認できない。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p6",
+      "asin": "B0D8TFB1T9",
+      "name": "ダルトン(Dulton) 計量カップ 300ml 磁器 耐熱 食洗機対応 オーブン可 高さ10.5cm 幅15.5cm 奥行9.6cm M-0668-300 PORCELAIN JUG 300ml",
+      "prior_individual_selection_reason": "300ml程度を量る磁器製のジャグを探す人が選びやすい。商品名に食洗機対応・オーブン可とあり、材質と手入れの条件が500mlの樹脂製カップと異なる。注ぎ口の具体的な形状は提示情報から確認できない。",
+      "verified_excerpt_sources": 1
+    }
+  ],
+  "original_qa_pass_fields": [
+    "affiliate_pass",
+    "asin_pass",
+    "banned_phrase_pass",
+    "canonical_pass",
+    "category_pass",
+    "conclusion_brand_free_pass",
+    "description_hard_min_pass",
+    "description_target_pass",
+    "description_uniqueness_pass",
+    "distinct_openings_endings_pass",
+    "fixed_price_pass",
+    "h3_len_pass",
+    "image_identity_pass",
+    "lead_brand_free_pass",
+    "nav_footer_pass",
+    "no_repeated_sentences_pass",
+    "product_image_audit_pass",
+    "summary_brand_free_pass"
+  ],
+  "independent_review_required": true,
+  "independent_review_status": "PENDING",
+  "replanning_checks": {
+    "reader_need": {
+      "question": "What concrete product-selection need can be met?",
+      "observed_reader": "料理やお菓子作りで液体を量る計量カップを買い替えたい人",
+      "purchase_goal": "普段量る分量と洗い方に合うカップを選ぶ",
+      "pass": null
+    },
+    "six_individual_recommendations": {
+      "question": "Which products each meet the stated need, with source-backed individual value?",
+      "pass": null
+    },
+    "three_discovery_angles": {
+      "question": "Are the 3 angles distinct discovery entrypoints without head-to-head rankings?",
+      "pass": null
+    },
+    "replan_outcome": {
+      "instruction": "Approve existing theme only if reader intent and genuine product recommendations are independently verified; otherwise reselect Planning theme and products.",
+      "pass": null
+    }
+  },
+  "product_qa": {
+    "existing_independent_receipt": "STALE_CONTRACT",
+    "new_product_qa_required": true,
+    "same_product_allowed_if_verified": true,
+    "product_count": 6,
+    "verified_per_product": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "next_action": "independent_planning_qa_then_conditional_product_qa_then_writer_qa_then_ceo_gate",
+  "execution_allowed": false,
+  "production_article_changed": false
+}
