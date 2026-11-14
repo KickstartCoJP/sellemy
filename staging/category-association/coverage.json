@@ -1,0 +1,5728 @@
+{
+  "schema": "sellemy-category-association-audit/v1",
+  "status": "CANDIDATES_ONLY_NO_PUBLICATION",
+  "taxonomy_source_sha256": "ee5cc3dbed29c0464c7c406fac5c38a607cbf006204e46702851f22d4c72d384",
+  "counts": {
+    "published_articles": 447,
+    "active_category_tags": 720,
+    "pillar_groups": 21,
+    "NO_LITERAL_MATCH": 325,
+    "CANDIDATE_SINGLE_PILLAR": 120,
+    "AMBIGUOUS_PILLAR": 2
+  },
+  "pillars": [
+    {
+      "id": "pillar:美容:skin",
+      "name": "スキンケア",
+      "genre": "美容",
+      "candidate_articles": 19,
+      "approved_articles": 0,
+      "publication_state": "not_published"
+    },
+    {
+      "id": "pillar:美容:makeup",
+      "name": "メイクアップ",
+      "genre": "美容",
+      "candidate_articles": 15,
+      "approved_articles": 0,
+      "publication_state": "not_published"
+    },
+    {
+      "id": "pillar:美容:hair",
+      "name": "ヘアケア・スタイリング",
+      "genre": "美容",
+      "candidate_articles": 11,
+      "approved_articles": 0,
+      "publication_state": "not_published"
+    },
+    {
+      "id": "pillar:美容:fragrance",
+      "name": "香水・フレグランス",
+      "genre": "美容",
+      "candidate_articles": 1,
+      "approved_articles": 0,
+      "publication_state": "not_published"
+    },
+    {
+      "id": "pillar:美容:beauty_device",
+      "name": "美容機器・美容道具",
+      "genre": "美容",
+      "candidate_articles": 5,
+      "approved_articles": 0,
+      "publication_state": "not_published"
+    },
+    {
+      "id": "pillar:美容:body",
+      "name": "ボディ・フットケア",
+      "genre": "美容",
+      "candidate_articles": 0,
+      "approved_articles": 0,
+      "publication_state": "not_published"
+    },
+    {
+      "id": "pillar:日用品:daily",
+      "name": "衛生・生活ケア",
+      "genre": "日用品",
+      "candidate_articles": 1,
+      "approved_articles": 0,
+      "publication_state": "not_published"
+    },
+    {
+      "id": "pillar:日用品:health",
+      "name": "健康・セルフケア",
+      "genre": "日用品",
+      "candidate_articles": 3,
+      "approved_articles": 0,
+      "publication_state": "not_published"
+    },
+    {
+      "id": "pillar:日用品:laundry",
+      "name": "洗濯・掃除",
+      "genre": "日用品",
+      "candidate_articles": 7,
+      "approved_articles": 0,
+      "publication_state": "not_published"
+    },
+    {
+      "id": "pillar:日用品:kitchen",
+      "name": "調理器具・キッチン雑貨",
+      "genre": "日用品",
+      "candidate_articles": 11,
+      "approved_articles": 0,
+      "publication_state": "not_published"
+    },
+    {
+      "id": "pillar:日用品:table",
+      "name": "食器・弁当",
+      "genre": "日用品",
+      "candidate_articles": 0,
+      "approved_articles": 0,
+      "publication_state": "not_published"
+    },
+    {
+      "id": "pillar:日用品:bath",
+      "name": "バス・トイレ",
+      "genre": "日用品",
+      "candidate_articles": 1,
+      "approved_articles": 0,
+      "publication_state": "not_published"
+    },
+    {
+      "id": "pillar:日用品:stationery",
+      "name": "文具・オフィス",
+      "genre": "日用品",
+      "candidate_articles": 0,
+      "approved_articles": 0,
+      "publication_state": "not_published"
+    },
+    {
+      "id": "pillar:日用品:security",
+      "name": "防犯・防災",
+      "genre": "日用品",
+      "candidate_articles": 0,
+      "approved_articles": 0,
+      "publication_state": "not_published"
+    },
+    {
+      "id": "pillar:日用品:other",
+      "name": "生活用品",
+      "genre": "日用品",
+      "candidate_articles": 0,
+      "approved_articles": 0,
+      "publication_state": "not_published"
+    },
+    {
+      "id": "pillar:家電:av",
+      "name": "テレビ・オーディオ",
+      "genre": "家電",
+      "candidate_articles": 9,
+      "approved_articles": 0,
+      "publication_state": "not_published"
+    },
+    {
+      "id": "pillar:家電:climate",
+      "name": "空調・季節家電",
+      "genre": "家電",
+      "candidate_articles": 13,
+      "approved_articles": 0,
+      "publication_state": "not_published"
+    },
+    {
+      "id": "pillar:家電:kitchen_appliance",
+      "name": "キッチン家電",
+      "genre": "家電",
+      "candidate_articles": 14,
+      "approved_articles": 0,
+      "publication_state": "not_published"
+    },
+    {
+      "id": "pillar:家電:household_appliance",
+      "name": "生活家電",
+      "genre": "家電",
+      "candidate_articles": 9,
+      "approved_articles": 0,
+      "publication_state": "not_published"
+    },
+    {
+      "id": "pillar:家電:digital",
+      "name": "情報・スマート家電",
+      "genre": "家電",
+      "candidate_articles": 5,
+      "approved_articles": 0,
+      "publication_state": "not_published"
+    },
+    {
+      "id": "pillar:家電:other",
+      "name": "その他家電",
+      "genre": "家電",
+      "candidate_articles": 0,
+      "approved_articles": 0,
+      "publication_state": "not_published"
+    }
+  ],
+  "articles": [
+    {
+      "article_slug": "best-cooking-tools-6-selection",
+      "article_title": "手軽に料理！おすすめの調理器具6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "enjoy-refreshing-shower-heads-6-picks",
+      "article_title": "清涼感を楽しむ！シャワーヘッド6選",
+      "genre": "日用品",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:日用品:bath"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:2557",
+          "category_name": "シャワーヘッド",
+          "pillar_id": "pillar:日用品:bath"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "summer-skin-protection-primers-6-choices",
+      "article_title": "夏の美肌を守る！化粧下地6選",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:makeup"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:1237",
+          "category_name": "化粧下地",
+          "pillar_id": "pillar:美容:makeup"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "after-sun-lotion-6-choices",
+      "article_title": "夏の肌に潤いを！アフターサンローション6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "summer-nail-polish-6-selection",
+      "article_title": "夏を彩る！ネイルポリッシュ6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "cool-bedding-6-selection",
+      "article_title": "夏の清涼感を演出！涼感寝具6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "best-vitamin-e-serums-for-summer",
+      "article_title": "夏の肌疲れに最適！ビタミンE美容液6選",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:skin"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:1216",
+          "category_name": "美容液",
+          "pillar_id": "pillar:美容:skin"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "foot-massagers-for-summer-relaxation-6-picks",
+      "article_title": "夏の疲れを癒す！フットマッサージャー6選",
+      "genre": "日用品",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:日用品:health"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:2447",
+          "category_name": "フットマッサージャー",
+          "pillar_id": "pillar:日用品:health"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "stay-cool-at-home-6-best-evaporative-coolers",
+      "article_title": "自宅で涼しく過ごす！冷風扇6選",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:climate"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:2450",
+          "category_name": "冷風扇",
+          "pillar_id": "pillar:家電:climate"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "high-performance-air-circulators-6",
+      "article_title": "家庭で楽しむ！高性能空気循環器6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "sleep-aid-devices-6-selection",
+      "article_title": "快適な睡眠をサポート！安眠グッズ6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "home-projectors-6-recommendations",
+      "article_title": "自宅で楽しむ！ホームプロジェクター6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "best-high-quality-earphones-6-picks",
+      "article_title": "音楽好き必見！高音質イヤホン6選",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:av"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:2520",
+          "category_name": "イヤホン",
+          "pillar_id": "pillar:家電:av"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "best-face-powders-6-picks",
+      "article_title": "さらさら肌へ！フェイスパウダー6選",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:makeup"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:1239",
+          "category_name": "フェイスパウダー",
+          "pillar_id": "pillar:美容:makeup"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "essential-portable-water-bottles-6-choices",
+      "article_title": "夏の必需品！携帯浄水ボトル6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "cool-towels-for-summer-6-picks",
+      "article_title": "夏の涼感をプラス！冷感タオル6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "enjoy-summer-portable-fans-6-picks",
+      "article_title": "夏を楽しむ！アウトドア用携帯扇風機6選",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:climate"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:2680",
+          "category_name": "扇風機",
+          "pillar_id": "pillar:家電:climate"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "easy-aroma-candles-6-picks",
+      "article_title": "手軽に楽しむ！アロマキャンドル6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "summer-refresh-body-scrubs-6-picks",
+      "article_title": "夏のリフレッシュ！ボディスクラブ6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "summer-comfort-fan-selection",
+      "article_title": "夏場の快適生活！扇風機6選",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:climate"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:2680",
+          "category_name": "扇風機",
+          "pillar_id": "pillar:家電:climate"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "comfortable-morning-toasters",
+      "article_title": "快適な朝を迎える！トースター6選",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:kitchen_appliance"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:43",
+          "category_name": "トースター",
+          "pillar_id": "pillar:家電:kitchen_appliance"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "air-purifiers-top-6",
+      "article_title": "冷暖房効率を上げる！空気清浄機6選",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:climate"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:70",
+          "category_name": "空気清浄機",
+          "pillar_id": "pillar:家電:climate"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "summer-sunscreen-top6",
+      "article_title": "夏の紫外線対策！日焼け止めクリーム6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "beginner-friendly-coffee-makers",
+      "article_title": "初心者に優しい！コーヒーメーカー6選",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:kitchen_appliance"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:53",
+          "category_name": "コーヒーメーカー",
+          "pillar_id": "pillar:家電:kitchen_appliance"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "mineral-foundation-six-selection",
+      "article_title": "ナチュラル美肌を叶える！ミネラルファンデーション6選",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:makeup"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:2530",
+          "category_name": "ファンデーション",
+          "pillar_id": "pillar:美容:makeup"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "must-have-kitchen-appliances",
+      "article_title": "料理好き必見！キッチン家電6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "seasonal-moisturizing-creams-6",
+      "article_title": "季節の変わり目対策！保湿クリーム6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "health-management-blood-pressure-monitors",
+      "article_title": "健康管理に役立つ！血圧計6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "home-relaxation-goods-6-selection",
+      "article_title": "おうち時間充実！リラックスグッズ6選",
+      "genre": "日用品",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:日用品:kitchen"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:4770",
+          "category_name": "ラック",
+          "pillar_id": "pillar:日用品:kitchen"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "smart-home-appliances-top-6",
+      "article_title": "家事効率アップ！スマート家電6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "eco-friendly-detergents-6picks",
+      "article_title": "快適生活の新定番！エコ洗剤6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "vitamin-c-serums",
+      "article_title": "わたしにちょうどいい、ビタミンC美容液6選",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:skin"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:1216",
+          "category_name": "美容液",
+          "pillar_id": "pillar:美容:skin"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "cordless-vacuum-cleaners-6-picks",
+      "article_title": "手軽に掃除！コードレス掃除機6選",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:household_appliance"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:55",
+          "category_name": "掃除機",
+          "pillar_id": "pillar:家電:household_appliance"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "robot-vacuum-cleaners-6-picks",
+      "article_title": "家事を効率化！ロボット掃除機6選",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:household_appliance"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:55",
+          "category_name": "掃除機",
+          "pillar_id": "pillar:家電:household_appliance"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "electric-kettles-6-picks",
+      "article_title": "すぐに沸かせる！電気ケトル6選",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:kitchen_appliance"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:5710",
+          "category_name": "電気ケトル",
+          "pillar_id": "pillar:家電:kitchen_appliance"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "wireless-speakers-6-picks",
+      "article_title": "気軽に高音質！ワイヤレススピーカー6選",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:av"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:14",
+          "category_name": "スピーカー",
+          "pillar_id": "pillar:家電:av"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "mobile-batteries-6-picks",
+      "article_title": "外出時も安心！モバイルバッテリー6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "usb-c-chargers-6-picks",
+      "article_title": "充電環境をすっきり！USB-C充電器6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "led-desk-lights-6-picks",
+      "article_title": "作業環境を快適に！LEDデスクライト6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "autumn-humidifiers-6-picks",
+      "article_title": "秋の乾燥対策に！加湿器6選",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:climate"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:72",
+          "category_name": "加湿器",
+          "pillar_id": "pillar:家電:climate"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "autumn-hair-loss-care-shampoo-6-picks",
+      "article_title": "秋の抜け毛が気になる方へ！スカルプケアシャンプー6選",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:hair"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:1343",
+          "category_name": "シャンプー",
+          "pillar_id": "pillar:美容:hair"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "electric-blankets-6-picks",
+      "article_title": "秋冬の冷えにやさしく！電気毛布6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "autumn-hand-creams-6-picks",
+      "article_title": "秋の乾燥対策に！ハンドクリーム6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "seasonal-clothing-storage-6-picks",
+      "article_title": "衣替えをスムーズに！収納グッズ6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "home-dehumidifiers-6-picks",
+      "article_title": "部屋干し・湿気対策に！除湿機6選",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:climate"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:71",
+          "category_name": "除湿機",
+          "pillar_id": "pillar:家電:climate"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "autumn-lip-balms-6-picks",
+      "article_title": "秋の乾燥に負けない！保湿リップクリーム6選",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:skin"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:5140",
+          "category_name": "リップクリーム",
+          "pillar_id": "pillar:美容:skin"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "autumn-facial-toners-6-picks",
+      "article_title": "秋の乾燥肌に！高保湿化粧水6選",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:skin"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:1212",
+          "category_name": "化粧水",
+          "pillar_id": "pillar:美容:skin"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "autumn-hair-dryers-6-picks",
+      "article_title": "秋の髪ケアに！大風量ヘアドライヤー6選",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:beauty_device"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:2505",
+          "category_name": "ドライヤー",
+          "pillar_id": "pillar:美容:beauty_device"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "ceramic-fan-heaters-6-picks",
+      "article_title": "秋冬の足元ぽかぽか！セラミックファンヒーター6選",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:climate"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:2991",
+          "category_name": "セラミックファンヒーター",
+          "pillar_id": "pillar:家電:climate"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "home-hot-plates-6-picks",
+      "article_title": "ホットプレート比較｜おうち鍋・パーティーに使える6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "compact-dishwashers-6-picks",
+      "article_title": "家事時短の味方！食器洗い乾燥機6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "kotatsu-6-picks",
+      "article_title": "冬支度の準備に！こたつ6選",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:climate"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:68",
+          "category_name": "こたつ",
+          "pillar_id": "pillar:家電:climate"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "usb-hand-warmers-6-picks",
+      "article_title": "繰り返し使える！USB充電式カイロ6選",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:climate"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:4128",
+          "category_name": "充電式カイロ",
+          "pillar_id": "pillar:家電:climate"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "fitness-smartwatches-6-picks",
+      "article_title": "秋の運動習慣に！スマートウォッチ6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "futon-dryers-6-picks",
+      "article_title": "秋冬のじめじめ対策に！布団乾燥機6選",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:household_appliance"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:56",
+          "category_name": "布団乾燥機",
+          "pillar_id": "pillar:家電:household_appliance"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "rice-cookers-6-picks",
+      "article_title": "美味しいご飯のために！炊飯器6選",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:kitchen_appliance"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:50",
+          "category_name": "炊飯器",
+          "pillar_id": "pillar:家電:kitchen_appliance"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "electric-toothbrushes-6-picks",
+      "article_title": "毎日の歯磨きをアップデート！電動歯ブラシ6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "air-fryers-6-picks",
+      "article_title": "余分な油をカット！ノンフライヤー6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "autumn-moisturizing-sheet-masks-6-picks",
+      "article_title": "秋の乾燥対策に！保湿シートマスク6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "electric-pressure-cookers-6-picks",
+      "article_title": "ほったらかし調理を叶える電気圧力鍋6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "facial-beauty-devices-6-picks",
+      "article_title": "自宅でエイジングケア！美顔器おすすめ6選 搭載機能とお手入れのしやすさで比較",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:beauty_device"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:2455",
+          "category_name": "美顔器",
+          "pillar_id": "pillar:美容:beauty_device"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "portable-power-stations-6-picks",
+      "article_title": "備えあれば安心！ポータブル電源6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "electric-shavers-6-picks",
+      "article_title": "毎日の髭剃りに！電気シェーバー6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "electric-carpets-6-picks",
+      "article_title": "足元からあたためる！ホットカーペット6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "down-comforters-6-picks",
+      "article_title": "秋冬のあたたかな眠りに！羽毛布団6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "autumn-hair-irons-6-picks",
+      "article_title": "秋の巻き髪スタイリングに！ヘアイロン6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "home-ipl-hair-removal-devices-6-picks",
+      "article_title": "自宅で本格ケア！家庭用光美容器（脱毛器）6選",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:beauty_device"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:75",
+          "category_name": "脱毛器",
+          "pillar_id": "pillar:美容:beauty_device"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "panel-heaters-6-picks",
+      "article_title": "冬支度に！じんわりあたたかパネルヒーター6選",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:climate"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:5809",
+          "category_name": "パネルヒーター",
+          "pillar_id": "pillar:家電:climate"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "wearable-blankets-6-picks",
+      "article_title": "着るだけであったか！着る毛布6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "massage-guns-6-picks",
+      "article_title": "自宅で本格ケア！マッサージガン6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "e-book-readers-6-picks",
+      "article_title": "読書の秋に！電子書籍リーダー6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "wireless-chargers-6-picks",
+      "article_title": "新型スマホと一緒に!ワイヤレス充電器6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "smart-rings-6-picks",
+      "article_title": "見た目もスマートに！スマートリング6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "noise-cancelling-earbuds-6-picks",
+      "article_title": "集中したい時間に選びたい、ノイズキャンセリングイヤホン6選",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:av"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:2520",
+          "category_name": "イヤホン",
+          "pillar_id": "pillar:家電:av"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "home-security-cameras-6-picks",
+      "article_title": "留守中も安心！家庭用防犯カメラ6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "dash-cameras-6-picks",
+      "article_title": "もしもの備えに！ドライブレコーダー6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "sweet-potato-makers-6-picks",
+      "article_title": "おうちで石焼き芋！焼き芋メーカー6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "autumn-winter-face-masks-6-picks",
+      "article_title": "秋冬の感染・花粉対策に！高機能マスク6選",
+      "genre": "日用品",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:日用品:daily"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:1200",
+          "category_name": "マスク",
+          "pillar_id": "pillar:日用品:daily"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "autumn-bath-salts-6-picks",
+      "article_title": "秋冬の冷え対策に！入浴剤・バスソルト6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "garment-steamers-6-picks",
+      "article_title": "秋の衣替えに便利！衣類スチーマー6選",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:household_appliance"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:4528",
+          "category_name": "衣類スチーマー",
+          "pillar_id": "pillar:家電:household_appliance"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "portable-ssd-6-picks",
+      "article_title": "写真・動画のバックアップに！ポータブルSSD6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "disposable-hand-warmers-6-picks",
+      "article_title": "秋冬の冷え対策に！使い捨てカイロ6選",
+      "genre": "日用品",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:日用品:health"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:3632",
+          "category_name": "使い捨てカイロ",
+          "pillar_id": "pillar:日用品:health"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "home-bakery-bread-makers-6-picks",
+      "article_title": "おうちで焼きたてパン！ホームベーカリー6選",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:kitchen_appliance"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:47",
+          "category_name": "ホームベーカリー",
+          "pillar_id": "pillar:家電:kitchen_appliance"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "ceiling-lights-6-picks",
+      "article_title": "秋の日暮れを快適に！LEDシーリングライト6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "gray-hair-color-treatments-6-picks",
+      "article_title": "自宅で簡単ケア！白髪染めトリートメント6選",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:hair"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:2677",
+          "category_name": "白髪染め",
+          "pillar_id": "pillar:美容:hair"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "microwave-ovens-6-picks",
+      "article_title": "毎日の食卓に！電子レンジ6選",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:kitchen_appliance"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:5000",
+          "category_name": "電子レンジ",
+          "pillar_id": "pillar:家電:kitchen_appliance"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "emergency-backpacks-6-picks",
+      "article_title": "台風・地震に備える！防災リュック6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "eye-creams-for-autumn-dryness-6-picks",
+      "article_title": "秋の乾燥対策に！目もと集中ケアアイクリーム6選",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:skin"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:1217",
+          "category_name": "アイクリーム",
+          "pillar_id": "pillar:美容:skin"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "bone-conduction-earphones-6-picks",
+      "article_title": "耳を塞がない！骨伝導イヤホン6選",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:av"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:2520",
+          "category_name": "イヤホン",
+          "pillar_id": "pillar:家電:av"
+        },
+        {
+          "category_id": "category:5264",
+          "category_name": "骨伝導イヤホン",
+          "pillar_id": "pillar:家電:av"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "autumn-body-lotions-6-picks",
+      "article_title": "秋冬の乾燥対策に！全身保湿ボディローション6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "insulated-tumblers-for-autumn-6-picks",
+      "article_title": "秋冬のホットドリンクに！保温タンブラー・マグボトル6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "body-composition-scales-6-picks",
+      "article_title": "秋の健康管理に！体組成計6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "portable-induction-cooktops-6-picks",
+      "article_title": "鍋シーズン到来！卓上IHクッキングヒーター6選",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:kitchen_appliance"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:2436",
+          "category_name": "卓上IHクッキングヒーター",
+          "pillar_id": "pillar:家電:kitchen_appliance"
+        },
+        {
+          "category_id": "category:48",
+          "category_name": "IHクッキングヒーター",
+          "pillar_id": "pillar:家電:kitchen_appliance"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "digital-thermometers-6-picks",
+      "article_title": "秋冬の体調管理に！電子体温計6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "autumn-gentle-face-cleansers-6-picks",
+      "article_title": "秋の乾燥に負けない！低刺激洗顔料6選",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:skin"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:1222",
+          "category_name": "洗顔料",
+          "pillar_id": "pillar:美容:skin"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "autumn-eyeshadow-palettes-6-picks",
+      "article_title": "秋の目もとを彩る！トレンドアイシャドウパレット6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "autumn-lip-colors-6-picks",
+      "article_title": "秋色リップ・リップスティック6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "dust-mite-vacuum-cleaners-6-picks",
+      "article_title": "秋のダニ対策に！ふとん専用クリーナー6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "autumn-nail-colors-6-picks",
+      "article_title": "指先から秋色に！トレンドネイルポリッシュ6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "hot-water-bottles-6-picks",
+      "article_title": "冷える夜に！あったか湯たんぽ6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "mascaras-6-picks",
+      "article_title": "秋メイクの主役に！人気マスカラ6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "aroma-diffusers-6-picks",
+      "article_title": "秋の癒やしを整えるアロマディフューザーおすすめ6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "usb-desktop-humidifiers-6-picks",
+      "article_title": "オフィスの乾燥対策に!USB卓上加湿器6選",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:climate"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:72",
+          "category_name": "加湿器",
+          "pillar_id": "pillar:家電:climate"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "electric-heated-mattress-pads-6-picks",
+      "article_title": "ベッドをあたたかく！電気敷きパッド6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "electric-neck-warmers-6-picks",
+      "article_title": "首元からぽかぽか！USB充電式ネックウォーマー6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "compact-clothes-dryers-6-picks",
+      "article_title": "秋雨シーズンの部屋干しがラクになる衣類乾燥機6選",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:household_appliance"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:40",
+          "category_name": "衣類乾燥機",
+          "pillar_id": "pillar:家電:household_appliance"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "portable-monitors-6-picks",
+      "article_title": "デスク環境をアップデート！モバイルモニター6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "neck-shoulder-massagers-6-picks",
+      "article_title": "肩こり・首こりに！ネックマッサージャー6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "eyelash-serums-6-picks",
+      "article_title": "目もと印象アップ！まつげ美容液6選",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:skin"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:1216",
+          "category_name": "美容液",
+          "pillar_id": "pillar:美容:skin"
+        },
+        {
+          "category_id": "category:1236",
+          "category_name": "まつげ美容液",
+          "pillar_id": "pillar:美容:skin"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "autumn-perfumes-6-picks",
+      "article_title": "秋の装いに寄り添う！香水・フレグランス6選",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:fragrance"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:1174",
+          "category_name": "香水・フレグランス",
+          "pillar_id": "pillar:美容:fragrance"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "retinol-serums-6-picks",
+      "article_title": "秋のエイジングケアに！レチノール美容液6選",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:skin"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:1216",
+          "category_name": "美容液",
+          "pillar_id": "pillar:美容:skin"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "wireless-keyboard-mouse-sets-6-picks",
+      "article_title": "デスク環境を快適に！ワイヤレスキーボード＆マウスセット6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "ergonomic-office-chairs-6-picks",
+      "article_title": "デスク環境を快適に！オフィスチェア6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "monitor-arms-6-picks",
+      "article_title": "デスク環境をスッキリ！モニターアーム6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "leave-in-hair-treatments-6-picks",
+      "article_title": "秋の髪ダメージケアに！洗い流さないトリートメント6選",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:hair"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:2602",
+          "category_name": "洗い流さないトリートメント",
+          "pillar_id": "pillar:美容:hair"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "wifi-routers-6-picks",
+      "article_title": "通信環境を見直す！Wi-Fiルーター6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "webcams-6-picks",
+      "article_title": "在宅ワークを快適に！Webカメラ6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "gaming-headsets-6-picks",
+      "article_title": "臨場感アップ！ゲーミングヘッドセット6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "gaming-mice-6-picks",
+      "article_title": "eスポーツにも！ゲーミングマウス6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "automatic-folding-umbrellas-6-picks",
+      "article_title": "突然の雨に備える！自動開閉折りたたみ傘6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "kerosene-fan-heaters-6-picks",
+      "article_title": "冬支度の本命！石油ファンヒーター6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "hot-sandwich-makers-6-picks",
+      "article_title": "おうちカフェ気分！ホットサンドメーカー6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "sleep-pillows-6-picks",
+      "article_title": "肩こりに寄り添う、秋の安眠枕6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "standing-desks-6-picks",
+      "article_title": "デスク環境をアップグレード！電動昇降デスク6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "cushion-foundations-6-picks",
+      "article_title": "秋の艶肌メイクに導くクッションファンデーション6選",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:makeup"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:2528",
+          "category_name": "クッションファンデーション",
+          "pillar_id": "pillar:美容:makeup"
+        },
+        {
+          "category_id": "category:2530",
+          "category_name": "ファンデーション",
+          "pillar_id": "pillar:美容:makeup"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "4k-desktop-monitors-6-picks",
+      "article_title": "作業効率アップ！4Kデスクトップモニター6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "color-contacts-6-picks",
+      "article_title": "秋のハロウィン＆普段使いに！カラーコンタクト6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "humidifying-air-purifiers-6-picks",
+      "article_title": "乾燥対策と空気清浄を一台で！加湿空気清浄機6選",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:climate"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:70",
+          "category_name": "空気清浄機",
+          "pillar_id": "pillar:家電:climate"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "electric-coffee-grinders-6-picks",
+      "article_title": "香り豊かな一杯に！電動コーヒーミル6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "autumn-cheek-blush-6-picks",
+      "article_title": "秋色メイクに映える！チーク6選",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:makeup"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:1243",
+          "category_name": "チーク",
+          "pillar_id": "pillar:美容:makeup"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "gaming-chairs-6-picks",
+      "article_title": "長時間プレイも快適に！ゲーミングチェア6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "slow-cookers-6-picks",
+      "article_title": "ほったらかし調理に!低温調理器・スロークッカー6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "mens-hair-growth-tonics-6-picks",
+      "article_title": "秋の抜け毛シーズンに！男性用育毛剤6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "shoe-dryers-6-picks",
+      "article_title": "スポーツの秋に！靴乾燥機6選 乾燥方式・対応サイズ・携帯性で徹底比較",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "donabe-hot-pot-cookware-6-picks",
+      "article_title": "鍋シーズン到来！IH対応土鍋・鍋セット6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "drum-washer-dryers-6-picks",
+      "article_title": "家事時間を短縮！ドラム式洗濯乾燥機6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "home-exercise-bikes-6-picks",
+      "article_title": "秋の運動不足解消に！フィットネスバイク（エアロバイク）6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "personal-blenders-6-picks",
+      "article_title": "毎朝のスムージーに！パーソナルブレンダー6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "portable-gas-stoves-6-picks",
+      "article_title": "鍋パーティーが盛り上がる！カセットコンロ＆卓上鍋６選を徹底比較",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "gaming-monitors-6-picks",
+      "article_title": "eスポーツにも！高リフレッシュレートゲーミングモニター6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "capsule-coffee-makers-6-picks",
+      "article_title": "手軽に本格コーヒー！カプセル式コーヒーメーカー6選",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:kitchen_appliance"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:53",
+          "category_name": "コーヒーメーカー",
+          "pillar_id": "pillar:家電:kitchen_appliance"
+        },
+        {
+          "category_id": "category:5619",
+          "category_name": "カプセル式コーヒーメーカー",
+          "pillar_id": "pillar:家電:kitchen_appliance"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "concealer-6-picks",
+      "article_title": "毛穴・クマ悩みに！コンシーラー6選",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:makeup"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:1238",
+          "category_name": "コンシーラー",
+          "pillar_id": "pillar:美容:makeup"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "water-flossers-6-picks",
+      "article_title": "歯間ケアを本格的に！ウォーターフロス6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "handheld-vacuum-cleaners-6-picks",
+      "article_title": "デスクも車内もすっきり！ハンディクリーナー6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "heated-vests-6-picks",
+      "article_title": "秋冬の防寒に！電熱ベスト・ヒーターベスト6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "desk-foot-warmers-6-picks",
+      "article_title": "冷えた足元をぽかぽかに！電気足温器6選",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:climate"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:6137",
+          "category_name": "足温器",
+          "pillar_id": "pillar:家電:climate"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "gaming-keyboards-6-picks",
+      "article_title": "eスポーツにも！ゲーミングキーボード6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "heated-gloves-6-picks",
+      "article_title": "冷える指先に！電熱グローブ6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "autumn-face-oils-6-picks",
+      "article_title": "秋の乾燥対策に！フェイスオイル6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "smart-item-trackers-6-picks",
+      "article_title": "大切なものを見失わない！紛失防止スマートタグ6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "autumn-bedding-cover-sets-6-picks",
+      "article_title": "秋冬の寝室を整える！布団カバー・寝具カバーセット6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "closet-moisture-absorbers-6-picks",
+      "article_title": "秋冬のカビ・湿気対策に！押入れ・クローゼット用除湿剤6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "warm-room-slippers-6-picks",
+      "article_title": "秋冬の足元ぽかぽか！あったかルームシューズ・スリッパ6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "warming-eye-masks-6-picks",
+      "article_title": "秋の目もと疲れに！温感アイマスク6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "lunch-boxes-bento-6-picks",
+      "article_title": "毎日のお弁当に！ランチボックス・弁当箱6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "rain-boots-6-picks",
+      "article_title": "台風・秋雨シーズンに！レインブーツ6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "all-in-one-gel-6-picks",
+      "article_title": "時短スキンケアに！オールインワンジェル6選",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:skin"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:2714",
+          "category_name": "オールインワン",
+          "pillar_id": "pillar:美容:skin"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "cleansing-balms-6-picks",
+      "article_title": "毛穴汚れオフ！クレンジングバーム6選",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:skin"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:2547",
+          "category_name": "クレンジング",
+          "pillar_id": "pillar:美容:skin"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "food-storage-containers-6-picks",
+      "article_title": "作り置きに便利！食品保存容器・タッパー6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "deodorant-antiperspirants-6-picks",
+      "article_title": "汗・ニオイ対策に！制汗剤・デオドラント6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "pore-care-nose-strips-6-picks",
+      "article_title": "秋の毛穴ケアに！鼻パック・毛穴パック6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "halloween-party-goods-6-picks",
+      "article_title": "今年のハロウィンに！仮装・パーティーグッズ6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "moisturizing-body-wash-6-picks",
+      "article_title": "秋冬の乾燥肌に！保湿ボディソープ6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "2027-schedule-planners-6-picks",
+      "article_title": "新年に備える！2027年手帳・スケジュール帳6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "niacinamide-serums-6-picks",
+      "article_title": "毛穴・美白ケアに注目！ナイアシンアミド美容液6選",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:skin"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:1216",
+          "category_name": "美容液",
+          "pillar_id": "pillar:美容:skin"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "christmas-trees-ornaments-6-picks",
+      "article_title": "冬支度に先取り！クリスマスツリー・オーナメント6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "floor-cleaning-sheets-6-picks",
+      "article_title": "手軽にサッと！フローリングワイパー＆お掃除シート6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "travel-packing-organizers-6-picks",
+      "article_title": "秋の行楽シーズンに！旅行用パッキングポーチ6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "thermal-innerwear-6-picks",
+      "article_title": "秋冬の防寒対策に！発熱あたたかインナー6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "self-gel-nail-kits-6-picks",
+      "article_title": "自宅でサロン級ネイルに！セルフジェルネイルキット6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "home-delivery-boxes-6-picks",
+      "article_title": "置き配も安心！戸建て・マンション別 宅配ボックスおすすめ6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "eyebrow-makeup-6-picks",
+      "article_title": "垢抜け眉に！アイブロウ・眉ティント6選",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:makeup"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:1233",
+          "category_name": "アイブロウ",
+          "pillar_id": "pillar:美容:makeup"
+        },
+        {
+          "category_id": "category:5714",
+          "category_name": "眉ティント",
+          "pillar_id": "pillar:美容:makeup"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "throw-blankets-6-picks",
+      "article_title": "寒い夜のおうち時間に！ひざ掛け・ブランケット6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "smart-remote-controllers-6-picks",
+      "article_title": "エアコンも照明も一括管理！スマートリモコン6選",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:av"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:5098",
+          "category_name": "スマートリモコン",
+          "pillar_id": "pillar:家電:av"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "electric-tire-inflators-6-picks",
+      "article_title": "冬前の車の備えに！電動タイヤ空気入れ6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "portable-photo-printers-6-picks",
+      "article_title": "思い出をすぐ形に！モバイルフォトプリンター6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "smart-locks-6-picks",
+      "article_title": "鍵の閉め忘れゼロへ！スマートロック6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "warm-water-bidet-toilet-seats-6-picks",
+      "article_title": "冬の寒さ対策に効く！温水洗浄便座おすすめ6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "electric-fabric-shavers-6-picks",
+      "article_title": "ニットのお手入れに使う電動毛玉取り器6候補",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "window-insulation-films-6-picks",
+      "article_title": "冬前に見直したい窓まわりの断熱シート6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "delicate-laundry-detergents-6-picks",
+      "article_title": "ニットの洗濯に備える！おしゃれ着用洗剤6選",
+      "genre": "日用品",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:日用品:laundry"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:5312",
+          "category_name": "おしゃれ着用洗剤",
+          "pillar_id": "pillar:日用品:laundry"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "knit-flat-drying-nets-6-picks",
+      "article_title": "ニットの平干し用品6製品を比較｜段数・設置方法・収納しやすさ",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "autumn-cuticle-oils-6-picks",
+      "article_title": "秋の指先の乾燥に。甘皮まわりをケアするネイルオイル6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "rice-storage-bins-6-picks",
+      "article_title": "新米の保存に。密閉米びつ6選を容量・保存方法・使い勝手で比較",
+      "genre": "日用品",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:日用品:kitchen"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:2510",
+          "category_name": "米びつ",
+          "pillar_id": "pillar:日用品:kitchen"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "closet-moth-repellents-6-picks",
+      "article_title": "秋の衣類をしまう前に選びたい衣類用防虫剤6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "autumn-cleansing-milks-6-picks",
+      "article_title": "乾燥が気になる季節のクレンジング6選｜ミルクを中心に比較",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:skin"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:2547",
+          "category_name": "クレンジング",
+          "pillar_id": "pillar:美容:skin"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "usb-c-docking-stations-6-picks",
+      "article_title": "ノートPCの接続をまとめるUSB-Cドッキングステーション6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "heel-moisturizing-creams-6-picks",
+      "article_title": "秋冬のかかとケアに選びたい保湿クリーム6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "washing-machine-drum-cleaners-6-picks",
+      "article_title": "洗濯機に合わせて選ぶ洗濯槽クリーナー6選",
+      "genre": "日用品",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:日用品:laundry"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:1701",
+          "category_name": "洗濯槽クリーナー",
+          "pillar_id": "pillar:日用品:laundry"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "hair-brushes-for-frizz-6-picks",
+      "article_title": "乾燥で広がる髪に。ヘアブラシ6選",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:hair"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:3534",
+          "category_name": "ヘアブラシ",
+          "pillar_id": "pillar:美容:hair"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "range-hood-degreasers-6-picks",
+      "article_title": "換気扇の油汚れに使う洗剤6選｜泡・つけ置き・拭き掃除を比較",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "bathroom-mold-removers-6-picks",
+      "article_title": "浴室の黒カビ掃除に。カビ取り剤6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "automatic-soup-makers",
+      "article_title": "温かいスープを手軽に。自動調理ポット6件を比較",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "bamboo-steamers-6-picks",
+      "article_title": "秋の蒸し料理に使いたいせいろ6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "makeup-setting-sprays-6-picks",
+      "article_title": "秋の乾燥崩れに備えるメイクキープミスト6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "folding-indoor-drying-racks-6-picks",
+      "article_title": "秋雨の日の部屋干しに。折りたたみ室内物干し6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "heated-eyelash-curlers-6-picks",
+      "article_title": "まつげの仕上がりで選ぶホットビューラー6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "dishwasher-detergents-6-picks",
+      "article_title": "食洗機用洗剤6選｜毎日の洗浄と庫内ケアを用途別に比較",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "kitchen-oil-pots-6-picks",
+      "article_title": "揚げ物の油を保存しやすいオイルポット6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "home-paper-shredders-6-picks",
+      "article_title": "年末の書類整理に。家庭用シュレッダー6選",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:digital"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:62",
+          "category_name": "シュレッダー",
+          "pillar_id": "pillar:家電:digital"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "compact-pressure-washers-for-home",
+      "article_title": "年末前の屋外掃除に。コンパクトな家庭用高圧洗浄機6機種を比較",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "serum-foundations-6-picks",
+      "article_title": "乾燥が気になる季節に。美容液ファンデーション6選",
+      "genre": "美容",
+      "status": "AMBIGUOUS_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:makeup",
+        "pillar:美容:skin"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:1216",
+          "category_name": "美容液",
+          "pillar_id": "pillar:美容:skin"
+        },
+        {
+          "category_id": "category:2530",
+          "category_name": "ファンデーション",
+          "pillar_id": "pillar:美容:makeup"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "led-lanterns-for-autumn-outings-6-picks",
+      "article_title": "秋の行楽と停電への備えに。LEDランタン6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "liquid-eyeliners-6-picks",
+      "article_title": "描きやすさで選ぶリキッドアイライナー6選",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:makeup"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:1231",
+          "category_name": "アイライナー",
+          "pillar_id": "pillar:美容:makeup"
+        },
+        {
+          "category_id": "category:4434",
+          "category_name": "リキッドアイライナー",
+          "pillar_id": "pillar:美容:makeup"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "washable-bath-mats-6-picks",
+      "article_title": "洗いやすさと乾きやすさで選ぶバスマット6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "smart-plugs-6-picks",
+      "article_title": "家電の電源管理を手軽に。スマートプラグ6選",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:digital"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:6036",
+          "category_name": "スマートプラグ",
+          "pillar_id": "pillar:家電:digital"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "vacuum-food-sealers-6-picks",
+      "article_title": "まとめ買い食材の保存に。家庭用真空パック機6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "clothing-antistatic-sprays-6-picks",
+      "article_title": "秋冬の衣類のまとわりつきに。静電気防止スプレー6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "insulated-soup-jars-for-lunch",
+      "article_title": "温かいお弁当を持ち歩く。スープジャーを比較",
+      "genre": "日用品",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:日用品:kitchen"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:2582",
+          "category_name": "スープジャー",
+          "pillar_id": "pillar:日用品:kitchen"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "warm-washable-mattress-pads-6-picks",
+      "article_title": "冬の寝床に合う敷きパッド6選｜暖かさ・固定方法・洗いやすさで比較",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "rinse-out-hair-masks-6-picks",
+      "article_title": "秋のパサつく髪に。洗い流すヘアマスク6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "facial-steamers-for-home-6-picks",
+      "article_title": "乾燥する季節のスキンケアに。フェイススチーマー6件を比較",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "window-condensation-absorbers-6-picks",
+      "article_title": "冬の窓の結露対策に！結露取りワイパー・吸水シート6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "new-year-cards-6-picks",
+      "article_title": "年賀状じまいから喪中はがき、通常の年賀状まで。年末年始の挨拶ハガキ6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "winter-scarves-mufflers-6-picks",
+      "article_title": "秋冬コーデの防寒に！マフラー・ストール6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "holiday-makeup-gift-sets-6-picks",
+      "article_title": "年末年始に向けて！ホリデー限定コスメ・クリスマスコフレ6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "warm-knit-gloves-6-picks",
+      "article_title": "冷える指先に！あったか防寒手袋6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "streaming-media-players-6-picks",
+      "article_title": "テレビをもっと楽しく！ストリーミングメディアプレーヤー6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "thermal-insulation-curtains-6-picks",
+      "article_title": "冬の暖房効率アップ！防寒・遮熱カーテン6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "down-jackets-6-picks",
+      "article_title": "本格防寒に！冬支度のダウンジャケット6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "winter-loungewear-pajamas-6-picks",
+      "article_title": "秋冬のおうち時間に！あったかルームウェア・パジャマ6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "winter-area-rugs-6-picks",
+      "article_title": "足元からぽかぽか！冬のあったかラグ6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "electric-cleansing-brushes-6-picks",
+      "article_title": "毛穴すっきり！電動洗顔ブラシ6選",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:beauty_device"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:2640",
+          "category_name": "電動洗顔ブラシ",
+          "pillar_id": "pillar:美容:beauty_device"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "scalp-massagers-6-picks",
+      "article_title": "秋の抜け毛対策に！頭皮マッサージャー6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "suitcases-for-year-end-travel-6-picks",
+      "article_title": "年末年始の帰省・旅行に！スーツケース6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "tablets-6-picks",
+      "article_title": "動画も読書も快適に！タブレット端末6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "leg-warmers-6-picks",
+      "article_title": "冷える足元に！あったかレッグウォーマー6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "odor-blocking-trash-cans-6-picks",
+      "article_title": "気になるニオイをブロック！防臭ゴミ箱6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "smart-speakers-6-picks",
+      "article_title": "声で家電を操作！スマートスピーカー6選",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:av"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:14",
+          "category_name": "スピーカー",
+          "pillar_id": "pillar:家電:av"
+        },
+        {
+          "category_id": "category:4239",
+          "category_name": "スマートスピーカー",
+          "pillar_id": "pillar:家電:av"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "action-cameras-6-picks",
+      "article_title": "紅葉シーズンのお出かけに！アクションカメラ6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "osechi-jubako-boxes-6-picks",
+      "article_title": "お正月準備に！おせち料理・お重箱6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "whitening-toothpaste-6-picks",
+      "article_title": "口元印象アップ！ホワイトニング歯磨き粉6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "disinfectant-sprays-6-picks",
+      "article_title": "冬の除菌・消臭スプレー選び方ガイド｜用途別おすすめ6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "home-water-servers-6-picks",
+      "article_title": "冬の温かい飲み物に！ウォーターサーバー6選 水の種類・設置性で比較",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "heat-tech-socks-6-picks",
+      "article_title": "冷える足先にさよなら、発熱あったか靴下6選比較",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "acne-spot-patches-6-picks",
+      "article_title": "気になる肌荒れに！ニキビ吸収パッチ6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "moisturizing-emulsions-for-autumn-6-picks",
+      "article_title": "秋の乾燥対策に。乳液を中心に6商品を比較",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "fabric-softeners-6-picks",
+      "article_title": "洗い上がりにこだわる！柔軟剤6選",
+      "genre": "日用品",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:日用品:laundry"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:1693",
+          "category_name": "柔軟剤",
+          "pillar_id": "pillar:日用品:laundry"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "refrigerators-6-picks",
+      "article_title": "毎日の食材管理に！冷蔵庫6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "winter-beanies-ear-muffs-6-picks",
+      "article_title": "冷える耳元に！防寒ニット帽・イヤーマフ6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "beauty-collagen-supplements-6-picks",
+      "article_title": "年末の美容ケアに！美容コラーゲンサプリメント6選【配合成分・続けやすさで比較】",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "mouthwash-oral-care-6-picks",
+      "article_title": "口元印象アップ！マウスウォッシュ6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "2027-wall-desk-calendars-6-picks",
+      "article_title": "新年の準備に！2027年 壁掛け・卓上カレンダー6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "medicated-hand-soaps-6-picks",
+      "article_title": "冬の感染対策に！薬用ハンドソープ6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "glass-window-cleaners-6-picks",
+      "article_title": "年末の窓拭きに使えるガラスクリーナー6選｜洗浄力と仕上がりで比較",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "iphone-book-type-cases-6-picks",
+      "article_title": "新型iPhoneを守る！手帳型スマホケース6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "oseibo-gift-sets-6-picks",
+      "article_title": "感謝を伝える！お歳暮ギフトセット6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "hot-pot-soup-bases-6-picks",
+      "article_title": "鍋シーズン到来！鍋つゆ・だしの素6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "lip-oils-glosses-6-picks",
+      "article_title": "うるつや唇に！話題のリップオイル・グロス6選をタイプ別に比較",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "eyelid-tape-double-eyelid-6-picks",
+      "article_title": "年末年始のパーティーメイクに！二重まぶたアイテープ6選",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:makeup"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:2654",
+          "category_name": "アイテープ",
+          "pillar_id": "pillar:美容:makeup"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "wireless-game-controllers-6-picks",
+      "article_title": "年末年始のゲームタイムを快適に彩る、ワイヤレスゲームコントローラー6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "open-ear-wireless-earbuds-6-picks",
+      "article_title": "耳を塞がず快適に！オープンイヤー型ワイヤレスイヤホン6選",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:av"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:2520",
+          "category_name": "イヤホン",
+          "pillar_id": "pillar:家電:av"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "dog-winter-clothes-6-picks",
+      "article_title": "愛犬の防寒対策に！犬用あったかウェア6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "non-metal-tire-chains-6-picks",
+      "article_title": "冬の備えに！非金属タイヤチェーン6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "face-roller-gua-sha-tools-6-picks",
+      "article_title": "むくみ・たるみ対策に！フェイスローラー・ガーシャプレート6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "laptops-6-picks",
+      "article_title": "年末年始の買い替えに！ノートパソコン6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "hot-air-styling-brushes-6-picks",
+      "article_title": "乾かしながら整う！ホットエアブラシ6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "new-year-decorations-6-picks",
+      "article_title": "新年を迎える準備に！しめ縄・お正月飾り6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "air-conditioners-6-picks",
+      "article_title": "冷暖房を一台で！エアコン6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "4k-liquid-crystal-tvs-6-picks",
+      "article_title": "年末の買い替えに！4K液晶テレビ6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "womens-hair-growth-serums-6-picks",
+      "article_title": "秋冬の抜け毛・薄毛対策に！女性用育毛剤・育毛エッセンス6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "anti-slip-snow-boots-6-picks",
+      "article_title": "雪道・凍結路に強い！防滑スノーブーツ6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "christmas-cakes-6-picks",
+      "article_title": "年末の食卓を彩る！クリスマスケーキ6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "overnight-sleeping-masks-6-picks",
+      "article_title": "寝ている間にうるおい補給！夜用スリーピングマスク6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "rain-coats-ponchos-6-picks",
+      "article_title": "突然の雨・台風に備える！レインコート・レインポンチョ6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "autumn-winter-moisturizing-primers-6-picks",
+      "article_title": "乾燥する季節に！秋冬向け保湿化粧下地6選",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:makeup"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:1237",
+          "category_name": "化粧下地",
+          "pillar_id": "pillar:美容:makeup"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "entrance-doormats-6-picks",
+      "article_title": "玄関先を快適に！おしゃれな玄関マット6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "lip-scrubs-6-picks",
+      "article_title": "秋冬の唇ケアに！リップスクラブ6選",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:skin"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:5324",
+          "category_name": "リップスクラブ",
+          "pillar_id": "pillar:美容:skin"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "highlighter-contour-palette-6-picks",
+      "article_title": "秋メイクに立体感を！ハイライト・コントゥアパレット6選",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:makeup"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:4313",
+          "category_name": "ハイライト",
+          "pillar_id": "pillar:美容:makeup"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "cat-litter-6-picks",
+      "article_title": "猫も飼い主も快適に暮らせる猫砂6選の比較ガイド",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "pet-heating-beds-6-picks",
+      "article_title": "愛犬・愛猫の冬支度に！ペット用ヒーター・あったかベッド6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "top-load-washing-machines-6-picks",
+      "article_title": "毎日の洗濯をラクに!縦型全自動洗濯機6選",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:household_appliance"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:39",
+          "category_name": "洗濯機",
+          "pillar_id": "pillar:家電:household_appliance"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "compact-mini-pcs-6-picks",
+      "article_title": "スリムなのに頼れる！ミニPC6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "car-windshield-deicer-sprays-6-picks",
+      "article_title": "冬の朝に！車用フロントガラス凍結防止・解氷スプレー6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "dry-shampoo-6-picks",
+      "article_title": "忙しい朝に便利！ドライシャンプー6選",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:hair"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:1343",
+          "category_name": "シャンプー",
+          "pillar_id": "pillar:美容:hair"
+        },
+        {
+          "category_id": "category:2539",
+          "category_name": "ドライシャンプー",
+          "pillar_id": "pillar:美容:hair"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "heated-car-seat-cushions-6-picks",
+      "article_title": "冬の車内をあたたかく！後付けシートヒーター・ホットクッション6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "mens-all-in-one-skincare-6-picks",
+      "article_title": "忙しい男性に！メンズオールインワンスキンケア6選",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:skin"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:2714",
+          "category_name": "オールインワン",
+          "pillar_id": "pillar:美容:skin"
+        },
+        {
+          "category_id": "category:5300",
+          "category_name": "メンズオールインワン",
+          "pillar_id": "pillar:美容:skin"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "compression-socks-6-picks",
+      "article_title": "むくみ・冷え対策に！着圧ソックス6選",
+      "genre": "日用品",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:日用品:health"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:2658",
+          "category_name": "着圧ソックス",
+          "pillar_id": "pillar:日用品:health"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "beauty-advent-calendars-6-picks",
+      "article_title": "冬のときめきを先取り！コスメアドベントカレンダー6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "vr-headsets-6-picks",
+      "article_title": "年末年始に楽しむ！VRヘッドセット6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "microfiber-cleaning-cloths-6-picks",
+      "article_title": "年末の大掃除に！マイクロファイバークロス6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "halloween-face-paint-makeup-6-picks",
+      "article_title": "仮装を本格的に！ハロウィンフェイスペイント＆メイクアイテム6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "christmas-gift-wrapping-supplies-6-picks",
+      "article_title": "クリスマスプレゼントに！ギフトラッピング用品6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "electric-nasal-aspirators-6-picks",
+      "article_title": "鼻水吸引もおうちで本格的に！電動鼻吸い器6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "multipurpose-moisture-balms-6-picks",
+      "article_title": "乾燥肌の万能ケアに！保湿バーム・マルチバーム6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "press-on-nail-stickers-6-picks",
+      "article_title": "貼るだけ可愛く。ネイルシール・ジェルネイルシート6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "kitchen-knives-6-picks",
+      "article_title": "年末年始の贈り物にも！包丁・キッチンナイフ6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "usb-condenser-microphones-6-picks",
+      "article_title": "在宅配信・会議を高音質に！USBコンデンサーマイク6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "over-ear-noise-cancelling-headphones-6-picks",
+      "article_title": "集中力アップ！オーバーイヤー型ノイズキャンセリングヘッドホン6選",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:av"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:2521",
+          "category_name": "ヘッドホン",
+          "pillar_id": "pillar:家電:av"
+        },
+        {
+          "category_id": "category:5466",
+          "category_name": "ノイズキャンセリングヘッドホン",
+          "pillar_id": "pillar:家電:av"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "cutting-boards-6-picks",
+      "article_title": "料理がもっと快適に！まな板6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "home-inkjet-printers-nengajo-6-picks",
+      "article_title": "年賀状準備に！家庭用インクジェットプリンター6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "emergency-food-stockpile-6-picks",
+      "article_title": "台風・地震に備える！非常食・保存食セット6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "led-illumination-lights-6-picks",
+      "article_title": "冬の夜を彩る！LEDイルミネーションライト6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "throat-lozenges-gargle-6-picks",
+      "article_title": "秋冬の喉ケアに！のど飴・うがい薬6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "door-draft-stoppers-6-picks",
+      "article_title": "冬の冷気をブロック！すきま風防止グッズ6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "micellar-cleansing-water-6-picks",
+      "article_title": "忙しい夜にサッと落とす！拭き取り化粧水・クレンジングウォーター6選",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:skin"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:1212",
+          "category_name": "化粧水",
+          "pillar_id": "pillar:美容:skin"
+        },
+        {
+          "category_id": "category:2547",
+          "category_name": "クレンジング",
+          "pillar_id": "pillar:美容:skin"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "womens-body-shavers-6-picks",
+      "article_title": "つるすべ素肌に！レディースボディシェーバー6選",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "hiking-trekking-shoes-6-picks",
+      "article_title": "紅葉シーズンの山歩きに！後悔しないトレッキングシューズ6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "halloween-candy-treat-sets-6-picks",
+      "article_title": "今年のハロウィンに！配りやすいお菓子セット6選",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "bb-cc-creams-6-picks",
+      "article_title": "秋冬の肌に！BB・CCクリーム6選",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:makeup"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:2588",
+          "category_name": "CCクリーム",
+          "pillar_id": "pillar:美容:makeup"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "usb-heated-insoles-6-picks",
+      "article_title": "底冷え対策に！USB充電式電熱インソール・電熱ソックス6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "foot-spa-baths-6-picks",
+      "article_title": "冷えた足元に！フットバス・足湯器6選",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "usb-flash-drives-32gb-6-picks",
+      "article_title": "32GB USBメモリ6選｜端子・読み込み速度・収納方式で比較",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "futon-compression-bags-6-picks",
+      "article_title": "布団圧縮袋6選｜圧縮方法・対応サイズ・収納後の扱いやすさで比較",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "home-document-scanners-6-picks",
+      "article_title": "家庭の書類を電子化するスキャナー比較｜給紙・対応原稿・保存方法の確認点",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "wool-knitting-yarns",
+      "article_title": "手編み用毛糸比較｜素材表示・ゲージ・手入れを確認",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "hobby-mini-rotary-tools",
+      "article_title": "ホビー用ミニルーター比較｜回転数・先端工具・持ち方",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "miso-strainers",
+      "article_title": "味噌こし比較｜網の形・持ち手・洗浄方法を確認",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "chestnut-peeling-tools",
+      "article_title": "栗の皮むき器比較｜むける皮・刃の形・保管方法を確認",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "magnetic-bathroom-storage-racks",
+      "article_title": "浴室用マグネットラック比較｜壁面・収納寸法・水切りを確認",
+      "genre": "日用品",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:日用品:kitchen"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:4770",
+          "category_name": "ラック",
+          "pillar_id": "pillar:日用品:kitchen"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "handheld-translation-devices",
+      "article_title": "携帯翻訳機の比較｜対応言語・通信条件・利用期間を確認",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "manual-pruning-saws",
+      "article_title": "剪定のこぎり比較｜刃の仕様・切断対象・収納と交換を確認",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "portable-dvd-players",
+      "article_title": "ポータブルDVDプレーヤー比較｜ディスク・画面・電源を確認",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:av"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:4",
+          "category_name": "DVDプレーヤー",
+          "pillar_id": "pillar:家電:av"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "home-label-makers",
+      "article_title": "家庭用ラベルライター比較｜入力・テープ・カット方法を確認",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:digital"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:33",
+          "category_name": "ラベルライター",
+          "pillar_id": "pillar:家電:digital"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "digital-kitchen-scales",
+      "article_title": "デジタルキッチンスケール比較｜計量範囲・表示単位・洗浄条件で選ぶ",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:kitchen_appliance"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:81",
+          "category_name": "キッチンスケール",
+          "pillar_id": "pillar:家電:kitchen_appliance"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "hair-styling-waxes",
+      "article_title": "ヘアワックス比較｜作りたい髪型・質感・使い方で選ぶ",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:hair"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:1349",
+          "category_name": "ヘアワックス",
+          "pillar_id": "pillar:美容:hair"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "laundry-baskets",
+      "article_title": "ランドリーバスケット比較｜置ける寸法・持ち運び・洗濯物の分け方で選ぶ",
+      "genre": "日用品",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:日用品:kitchen"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:4763",
+          "category_name": "バスケット",
+          "pillar_id": "pillar:日用品:kitchen"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "manual-coffee-drippers-6-picks",
+      "article_title": "秋のハンドドリップに。ドリッパーと関連用品を杯数・構造・フィルターで比較",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "desktop-trackballs-6-picks",
+      "article_title": "トラックボール比較は製品の区別を確認するまで保留",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "gratin-baking-dishes-6-picks",
+      "article_title": "温かい焼き料理に。グラタン皿を容量・庫内への収まり・手入れで比較",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "cooking-aprons-6-picks",
+      "article_title": "毎日の料理用エプロンを比較｜着脱・覆う範囲・洗濯条件で選ぶ",
+      "genre": "日用品",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:日用品:kitchen"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:2051",
+          "category_name": "エプロン",
+          "pillar_id": "pillar:日用品:kitchen"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "tabletop-insulated-serving-pots-6-picks",
+      "article_title": "卓上保温ポットの比較は製品情報の確認まで保留",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "hand-blenders-for-cooking",
+      "article_title": "ハンドブレンダー比較｜対応食材・操作方法・洗える部分で選ぶ",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:kitchen_appliance"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:2517",
+          "category_name": "ハンドブレンダー",
+          "pillar_id": "pillar:家電:kitchen_appliance"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "everyday-false-eyelashes",
+      "article_title": "普段使いのつけまつげ比較｜毛束・装着範囲・軸の仕様で選ぶ",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "home-steam-cleaners",
+      "article_title": "家庭用スチームクリーナー比較｜対象素材・給水条件・付属品を確認",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "bathroom-stools",
+      "article_title": "風呂椅子比較｜座面の高さ・脚の構造・収納条件を確認",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "compact-binoculars-for-outings",
+      "article_title": "行楽用双眼鏡比較｜倍率・視界・眼鏡使用の確認点",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "replacement-bathtub-covers",
+      "article_title": "風呂ふたの比較は製品の区別と適合条件の確認まで保留",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "structured-jacket-coat-hangers",
+      "article_title": "ジャケット・コート用ハンガー比較｜肩幅・厚み・掛け方の確認点",
+      "genre": "日用品",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:日用品:laundry"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:1691",
+          "category_name": "ハンガー",
+          "pillar_id": "pillar:日用品:laundry"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "electric-nose-hair-trimmers-comparison",
+      "article_title": "電動鼻毛カッター比較｜刃の構造・水洗い・電源の確認点",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "electric-air-dusters",
+      "article_title": "電動エアダスター比較｜風量調節・ノズル・電源の確認点",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "home-sewing-machines-comparison",
+      "article_title": "裾上げ・小物作り用ミシン比較｜糸の準備・縫い目・操作方法の確認点",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:household_appliance"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:57",
+          "category_name": "ミシン",
+          "pillar_id": "pillar:家電:household_appliance"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "manual-coffee-grinders-comparison",
+      "article_title": "手挽きコーヒーミル比較｜挽き目調整・豆容量・手入れの確認点",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "manual-cartridge-razors-comparison",
+      "article_title": "替刃式T字カミソリの比較は本体情報の確認まで保留",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "book-reading-stands",
+      "article_title": "書見台の比較は製品の区別と対応寸法の確認まで保留",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "interdental-brushes",
+      "article_title": "歯間ブラシ比較｜サイズ表示・柄の形・交換方法の確認点",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "compact-cordless-screwdrivers",
+      "article_title": "小型電動ドライバー比較｜締め付け・形状・充電の確認点",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "smartphone-photography-tripods",
+      "article_title": "スマホ撮影用三脚比較｜固定条件・高さ・収納寸法の確認点",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "manual-toothbrushes-for-daily-use",
+      "article_title": "手用歯ブラシ比較｜ヘッド・毛先・ハンドルの確認点",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "shopping-carry-carts",
+      "article_title": "買い物用キャリーカート比較｜容量・車輪・収納条件を確認",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "picnic-leisure-sheets",
+      "article_title": "レジャーシート比較｜広げた寸法・生地構成・洗濯方法で選ぶ",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "ready-made-hair-toppers",
+      "article_title": "頭頂部用の部分ウィッグ比較｜カバー範囲・毛材・固定方法",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:hair"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:2994",
+          "category_name": "ウィッグ",
+          "pillar_id": "pillar:美容:hair"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "electric-kerosene-transfer-pumps",
+      "article_title": "電動灯油ポンプ比較｜容器への適合・停止機能・電源を確認",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "bookends-for-shelves-and-desks",
+      "article_title": "本棚・机上用ブックエンド比較｜支える構造・寸法・出し入れ",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "beard-length-trimmers",
+      "article_title": "ヒゲトリマー比較｜長さ調節・細部用の刃・洗浄条件を確認",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "home-record-players",
+      "article_title": "自宅用レコードプレーヤー比較｜操作・接続・手入れを確認",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "automatic-pet-feeders",
+      "article_title": "犬・猫用自動給餌器比較｜対応フード・給餌設定・手入れ",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "home-portable-musical-keyboards",
+      "article_title": "家庭用電子キーボード比較｜鍵盤・練習機能・設置条件",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "home-food-waste-dryers",
+      "article_title": "家庭用生ごみ処理機比較｜投入条件・設置寸法・手入れ",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:household_appliance"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:60",
+          "category_name": "生ごみ処理機",
+          "pillar_id": "pillar:家電:household_appliance"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "hand-pruning-shears",
+      "article_title": "手動剪定ばさみ比較｜刃の方式・握り・交換部品を確認",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "home-hair-thinning-scissors",
+      "article_title": "家庭用すきばさみ比較｜すく量の表示・刃・持ち手を確認",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "dish-drying-racks",
+      "article_title": "食器用水切りラック比較｜設置寸法・食器の配置・排水を確認",
+      "genre": "日用品",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:日用品:kitchen"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:4770",
+          "category_name": "ラック",
+          "pillar_id": "pillar:日用品:kitchen"
+        },
+        {
+          "category_id": "category:4785",
+          "category_name": "水切りラック",
+          "pillar_id": "pillar:日用品:kitchen"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "desk-ac-power-strips",
+      "article_title": "デスク用電源タップ比較｜差込口・固定方法・保護機構の確認点",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:digital"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:87",
+          "category_name": "電源タップ",
+          "pillar_id": "pillar:家電:digital"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "makeup-cleansing-oils",
+      "article_title": "クレンジングオイル比較｜使用条件・洗顔の要否・容器で選ぶ",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:skin"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:1224",
+          "category_name": "クレンジングオイル",
+          "pillar_id": "pillar:美容:skin"
+        },
+        {
+          "category_id": "category:2547",
+          "category_name": "クレンジング",
+          "pillar_id": "pillar:美容:skin"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "garment-care-brushes",
+      "article_title": "洋服ブラシ比較｜対応生地・毛材・ブラシ面で選ぶ",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "stovetop-water-kettles",
+      "article_title": "やかん比較｜対応熱源・容量表示・注ぎ口の確認点",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "household-toilet-cleaning-detergents",
+      "article_title": "トイレ洗剤比較｜使える場所・対象汚れ・手順の確認点",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "clothing-washing-machine-nets",
+      "article_title": "衣類用洗濯ネット比較｜投入量・網目・洗濯機への対応で選ぶ",
+      "genre": "日用品",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:日用品:laundry"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:3594",
+          "category_name": "洗濯ネット",
+          "pillar_id": "pillar:日用品:laundry"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "indoor-digital-thermo-hygrometers",
+      "article_title": "室内用温湿度計比較｜測定条件・表示・設置方法の確認点",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "freestanding-ironing-boards",
+      "article_title": "スタンド式アイロン台比較｜作業高さ・天板の形・収納条件で選ぶ",
+      "genre": "日用品",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:日用品:kitchen"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:4756",
+          "category_name": "スタンド",
+          "pillar_id": "pillar:日用品:kitchen"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "loose-leaf-teapots",
+      "article_title": "急須比較｜容量・茶こしの構造・注ぎ方で選ぶ",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "usb-memory-card-readers",
+      "article_title": "メモリーカードリーダー比較｜カード規格・接続先・転送条件を確認",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "home-ultrasonic-cleaners",
+      "article_title": "家庭用超音波洗浄機比較｜洗える物・槽の寸法・給排水で選ぶ",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "manual-nail-clippers",
+      "article_title": "爪切り比較｜刃の形・開口部・握り方の確認点",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "standalone-electric-milk-frothers",
+      "article_title": "ミルクフォーマー比較｜対応ミルク・調理量・洗浄条件を確認",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "skincare-cotton-pads",
+      "article_title": "化粧用コットン比較｜素材・シート寸法・使い方の確認点",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "home-entryway-shoehorns",
+      "article_title": "玄関用靴べら比較｜長さ・先端形状・収納条件を確認",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "home-document-laminators",
+      "article_title": "家庭用ラミネーター比較｜加工サイズ・予熱・詰まり対処を確認",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:digital"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:91",
+          "category_name": "ラミネーター",
+          "pillar_id": "pillar:家電:digital"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "home-ethernet-switches",
+      "article_title": "家庭用スイッチングハブ比較｜ポート数・配線・設置条件を確認",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "kitchen-knife-whetstones",
+      "article_title": "包丁用砥石比較｜番手・作業面・使用前後の手入れを確認",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "smooth-leather-shoe-creams",
+      "article_title": "革靴用クリーム比較｜対応する革・色・使用手順を確認",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "home-yogurt-makers",
+      "article_title": "ヨーグルトメーカー比較｜対応容器・設定・手入れの確認点",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "screenless-drawing-tablets",
+      "article_title": "板タブ比較｜作業範囲・ペン仕様・接続条件の確認点",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "portable-am-fm-radios",
+      "article_title": "携帯ラジオ比較｜受信帯域・選局方法・電源条件を確認",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "external-computer-optical-drives",
+      "article_title": "外付け光学ドライブ比較｜対応ディスク・接続・ソフトを確認",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "electric-hand-mixers-for-baking",
+      "article_title": "製菓用ハンドミキサー比較｜対応作業・速度操作・手入れを確認",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:kitchen_appliance"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:2513",
+          "category_name": "ミキサー",
+          "pillar_id": "pillar:家電:kitchen_appliance"
+        },
+        {
+          "category_id": "category:2515",
+          "category_name": "ハンドミキサー",
+          "pillar_id": "pillar:家電:kitchen_appliance"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "manual-eyelash-curlers",
+      "article_title": "手動ビューラー比較｜フレーム・挟む操作・替えゴムを確認",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "hair-setting-sprays",
+      "article_title": "スタイリング用ヘアスプレー比較｜仕上がり・噴霧・落とし方を確認",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:hair"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:1348",
+          "category_name": "ヘアスプレー",
+          "pillar_id": "pillar:美容:hair"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "foundation-makeup-sponges",
+      "article_title": "ファンデーション用スポンジ比較｜剤型・形・手入れを確認",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:makeup"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:2530",
+          "category_name": "ファンデーション",
+          "pillar_id": "pillar:美容:makeup"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "desktop-basic-calculators",
+      "article_title": "卓上電卓比較｜キー配置・表示・計算機能の確認点",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "immersion-sous-vide-cookers",
+      "article_title": "浸水式低温調理器比較｜取付条件・設定・手入れを確認",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "floor-cleaning-wiper-handles",
+      "article_title": "フローリングワイパー本体比較｜ヘッド・固定方法・柄を確認",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "laundry-pretreatment-stain-removers",
+      "article_title": "洗濯前の部分洗い剤比較｜汚れ・生地・塗布手順を確認",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "food-preparation-kitchen-scissors",
+      "article_title": "キッチンばさみ比較｜対象食材・持ち手・分解洗浄を確認",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "home-umbrella-storage-stands",
+      "article_title": "玄関用傘立て比較｜傘の収め方・設置寸法・水受けを確認",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "household-trash-bags",
+      "article_title": "家庭用ゴミ袋比較｜寸法・厚さ・口の形を確認",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "usb-c-to-c-cables",
+      "article_title": "USB-Cケーブル比較｜給電・転送・映像の条件を確認",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "household-rolling-storage-carts",
+      "article_title": "収納ワゴン比較｜棚の内寸・荷重・設置場所を確認",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "everyday-replacement-shoe-insoles",
+      "article_title": "靴用インソール比較｜靴内の余裕・形状・調整条件を確認",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "portable-voice-recorders",
+      "article_title": "ICレコーダー比較｜録音操作・聞き返し・保存条件を確認",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "body-washing-towels",
+      "article_title": "ボディタオル比較｜素材・長さ・手入れの条件を確認",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "folding-household-step-stools",
+      "article_title": "家庭用踏み台比較｜天板の高さ・設置面積・収納条件を確認",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "desktop-uninterruptible-power-supplies",
+      "article_title": "家庭用UPS比較｜接続機器・給電条件・停止時の連携で選ぶ",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "makeup-brushes-for-face-products",
+      "article_title": "フェイス用メイクブラシ比較｜使う化粧品・毛先の形・手入れで選ぶ",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "everyday-cooking-frying-pans",
+      "article_title": "フライパン比較｜熱源・調理面の素材・手入れで選ぶ",
+      "genre": "日用品",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:日用品:kitchen"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:2028",
+          "category_name": "フライパン",
+          "pillar_id": "pillar:日用品:kitchen"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "home-oxidative-gray-hair-dyes",
+      "article_title": "自宅用白髪染めの比較｜剤型・色と購入前の確認点",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:hair"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:2677",
+          "category_name": "白髪染め",
+          "pillar_id": "pillar:美容:hair"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "hdmi-input-switchers",
+      "article_title": "HDMI切替器比較｜入力数・映像条件・切替操作で選ぶ",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "digital-photo-frames",
+      "article_title": "デジタルフォトフレーム比較｜写真の送信方法・画面・設置条件で選ぶ",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "manual-vegetable-slicers",
+      "article_title": "野菜スライサー6商品を比較｜切り方・厚さ調節・ホルダーで選ぶ",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "bedside-alarm-clocks",
+      "article_title": "目覚まし時計比較｜アラーム設定・表示の明るさ・電源で選ぶ",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "rechargeable-indoor-motion-sensor-lights",
+      "article_title": "室内用充電式センサーライト比較｜点灯条件・取り付け・充電で選ぶ",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "nail-polish-removers",
+      "article_title": "除光液比較｜対応するネイル・成分表示・使い方で選ぶ",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "laundry-pinch-hangers",
+      "article_title": "洗濯用ピンチハンガー比較｜干せる配置・吊り方・収納で選ぶ",
+      "genre": "日用品",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:日用品:laundry"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:1691",
+          "category_name": "ハンガー",
+          "pillar_id": "pillar:日用品:laundry"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "laptop-privacy-screen-filters",
+      "article_title": "ノートPC用覗き見防止フィルター6選｜画面サイズ・見え方・着脱方法を比較",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "home-wifi-range-extenders",
+      "article_title": "Wi-Fi中継器比較｜親機との接続条件・設置場所・設定方法で選ぶ",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "usb-wired-ethernet-adapters",
+      "article_title": "USB有線LANアダプター比較｜端子・対応OS・通信条件で選ぶ",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "hand-dishwashing-detergents",
+      "article_title": "手洗い用食器洗剤比較｜使用量・対応素材・容器で選ぶ",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "countertop-food-processors",
+      "article_title": "据え置きフードプロセッサー比較｜対応食材・一回量・洗える部品で選ぶ",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:kitchen_appliance"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:2514",
+          "category_name": "フードプロセッサー",
+          "pillar_id": "pillar:家電:kitchen_appliance"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "lip-liner-pencils",
+      "article_title": "リップライナー比較｜口紅との色合わせ・芯の形・削り方で選ぶ",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "kitchen-oven-mitts",
+      "article_title": "オーブンミトン比較｜耐熱条件・覆う範囲・洗い方で選ぶ",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "bathroom-water-removal-squeegees",
+      "article_title": "浴室用スクイージー比較｜使える面・ヘッド幅・収納方法で選ぶ",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "oxygen-based-laundry-bleaches",
+      "article_title": "洗濯用酸素系漂白剤比較｜使える衣類・投入方法・つけ置き条件で選ぶ",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "household-steam-irons",
+      "article_title": "スチームアイロン比較｜給電方式・かけ面・温度設定で選ぶ",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:household_appliance"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:5132",
+          "category_name": "スチームアイロン",
+          "pillar_id": "pillar:家電:household_appliance"
+        },
+        {
+          "category_id": "category:59",
+          "category_name": "アイロン",
+          "pillar_id": "pillar:家電:household_appliance"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "bluetooth-tv-audio-transmitters",
+      "article_title": "テレビ用Bluetooth送信機6選｜音声端子・遅延対策・接続台数で比較",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "stovetop-saucepans",
+      "article_title": "片手鍋比較｜調理量・対応熱源・注ぎ口と持ち手で選ぶ",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "kitchen-sink-drain-strainers",
+      "article_title": "キッチン排水口のゴミ受け比較｜適合寸法・穴の構造・取り外し方で選ぶ",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "under-bed-storage-boxes",
+      "article_title": "ベッド下収納ケース比較｜外寸・取り出し方・収納物で選ぶ",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "temporary-gray-root-concealers",
+      "article_title": "一時着色の白髪隠し比較｜塗る範囲・剤型・落とし方で選ぶ",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "tabletop-makeup-mirrors",
+      "article_title": "卓上メイクミラー比較｜映る範囲・拡大倍率・照明と設置で選ぶ",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "toilet-cleaning-brushes",
+      "article_title": "トイレブラシ比較｜洗う場所・ヘッドの交換・収納方法で選ぶ",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "external-hard-disk-drives",
+      "article_title": "外付けHDD比較｜バックアップ用途・接続条件・電源方式で選ぶ",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "freestanding-bath-towel-racks",
+      "article_title": "自立式バスタオルハンガー比較｜干せる幅・バー配置・設置寸法を確認",
+      "genre": "日用品",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:日用品:laundry"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:1691",
+          "category_name": "ハンガー",
+          "pillar_id": "pillar:日用品:laundry"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "computer-numeric-keypads",
+      "article_title": "外付けテンキー比較｜キー配列・接続方式・OSとの適合で選ぶ",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "facial-peeling-gels",
+      "article_title": "顔用ピーリングジェル比較｜使用部位・濡れた肌への対応・使用頻度で選ぶ",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:skin"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:1220",
+          "category_name": "ピーリング",
+          "pillar_id": "pillar:美容:skin"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "manual-salad-spinners",
+      "article_title": "サラダスピナー比較｜かごの容量・回す操作・分解と収納で選ぶ",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "smartphone-motorized-gimbals",
+      "article_title": "スマホ用ジンバル比較｜端末の適合・撮影操作・持ち運びで選ぶ",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "home-cordless-landline-telephones",
+      "article_title": "家庭用コードレス電話機比較｜回線への接続・子機構成・着信対応で選ぶ",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "manual-nail-files-for-natural-nails",
+      "article_title": "自爪用ネイルファイル比較｜削る面・形状・手入れで選ぶ",
+      "genre": "美容",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "electric-fruit-vegetable-juicers",
+      "article_title": "ジューサー比較｜搾汁方式・対応食材・分解して洗う部品で選ぶ",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:kitchen_appliance"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:2516",
+          "category_name": "ジューサー",
+          "pillar_id": "pillar:家電:kitchen_appliance"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "adhesive-lint-rollers-for-fabrics",
+      "article_title": "布用粘着クリーナー6選｜使える素材・テープ幅・交換方法を比較",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "hair-styling-mousses",
+      "article_title": "ヘアムース比較｜パーマ向けフォームと別タイプの整髪料を見分ける",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:hair"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:1350",
+          "category_name": "ヘアムース",
+          "pillar_id": "pillar:美容:hair"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "usb-hdmi-video-capture-devices",
+      "article_title": "USB接続キャプチャーデバイス比較｜録画条件・映像出力・対応ソフトで選ぶ",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "electric-hot-water-dispensing-pots",
+      "article_title": "電気ポット比較｜容量・保温温度・給湯方法で選ぶ",
+      "genre": "家電",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:家電:kitchen_appliance"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:5709",
+          "category_name": "電気ポット",
+          "pillar_id": "pillar:家電:kitchen_appliance"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "digital-probe-cooking-thermometers",
+      "article_title": "料理用デジタル温度計比較｜測る位置・温度範囲・洗える部分で選ぶ",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "freestanding-entryway-shoe-racks",
+      "article_title": "玄関用シューズラック比較｜靴の寸法・棚の配置・設置スペースで選ぶ",
+      "genre": "日用品",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:日用品:kitchen"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:4770",
+          "category_name": "ラック",
+          "pillar_id": "pillar:日用品:kitchen"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "hand-dishwashing-sponges",
+      "article_title": "食器洗いスポンジ比較｜使える食器・洗う面の構造・手入れで選ぶ",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "scalp-cleansing-shampoos-comparison",
+      "article_title": "頭皮クレンジングシャンプー比較｜洗浄成分・使用頻度・髪への使い方で選ぶ",
+      "genre": "美容",
+      "status": "AMBIGUOUS_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:hair",
+        "pillar:美容:skin"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:1343",
+          "category_name": "シャンプー",
+          "pillar_id": "pillar:美容:hair"
+        },
+        {
+          "category_id": "category:2547",
+          "category_name": "クレンジング",
+          "pillar_id": "pillar:美容:skin"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "full-size-sd-memory-cards",
+      "article_title": "カメラ用SDカード比較｜機器との適合・速度規格・保証で選ぶ",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "usb-c-hubs-for-laptops-comparison",
+      "article_title": "ノートPC用USB-Cハブ比較｜映像出力・給電・増やせる端子で選ぶ",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "electronic-writing-tablets",
+      "article_title": "電子メモパッド比較｜書ける範囲・消去方法・電池で選ぶ6製品",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "reusable-heat-packs",
+      "article_title": "繰り返し使えるカイロ比較｜温め方・使用時間・再使用手順で選ぶ",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "usb-c-laptop-chargers-for-travel",
+      "article_title": "持ち歩くノートPC用USB-C充電器6製品を比較｜出力・端子・携帯性で選ぶ",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "eyebrow-pencils-comparison",
+      "article_title": "アイブロウペンシル比較｜芯の形とぼかす道具から選ぶ6本",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:makeup"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:1233",
+          "category_name": "アイブロウ",
+          "pillar_id": "pillar:美容:makeup"
+        },
+        {
+          "category_id": "category:2718",
+          "category_name": "アイブロウペンシル",
+          "pillar_id": "pillar:美容:makeup"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "leave-in-hair-milks",
+      "article_title": "洗い流さないヘアミルク比較｜使う髪の状態・塗り方・ドライヤー前後で選ぶ",
+      "genre": "美容",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:美容:beauty_device"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:2505",
+          "category_name": "ドライヤー",
+          "pillar_id": "pillar:美容:beauty_device"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "usb-c-multiport-card-readers",
+      "article_title": "USB-Cカードリーダー比較｜対応カード・転送規格・端末との接続で選ぶ",
+      "genre": "家電",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "reusable-silicone-food-storage-bags",
+      "article_title": "繰り返し使えるシリコン保存袋を比較｜容量・口の構造・使用条件で選ぶ",
+      "genre": "日用品",
+      "status": "CANDIDATE_SINGLE_PILLAR",
+      "candidate_pillars": [
+        "pillar:日用品:kitchen"
+      ],
+      "matched_labels": [
+        {
+          "category_id": "category:6300",
+          "category_name": "保存袋",
+          "pillar_id": "pillar:日用品:kitchen"
+        }
+      ],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    },
+    {
+      "article_slug": "countertop-kitchen-scrap-bins-6-picks",
+      "article_title": "調理中に使う生ごみ容器6選｜容量・ふた・片づけ方で選ぶ",
+      "genre": "日用品",
+      "status": "NO_LITERAL_MATCH",
+      "candidate_pillars": [],
+      "matched_labels": [],
+      "publication_eligible": false,
+      "reason": "taxonomy title match is not an independent category-fit decision"
+    }
+  ]
+}
