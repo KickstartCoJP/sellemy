@@ -64,7 +64,19 @@ def test_ai_selects_six_two_per_axis():
     with patch('product_selection.subprocess.run', fake_ai([r['asin'] for r in rows])):
         selected, meta=select_six(rows,TOPIC,{})
     assert len(selected)==6 and meta['candidate_count']==6
+    assert meta['method']=='existing_six_candidates_no_ai_reselection'
     assert {a['id']:sum(r['discovery_axis_id']==a['id'] for r in selected) for a in AXES} == {a['id']:2 for a in AXES}
+
+def test_exact_six_never_calls_selector_even_when_pinned():
+    rows = six()
+    with patch('product_selection.subprocess.run', side_effect=AssertionError('AI selector must be skipped')) as ai:
+        selected, metadata = select_six(rows, TOPIC, {}, pinned=rows[:2])
+    assert ai.call_count == 0
+    assert [p['asin'] for p in selected] == [p['asin'] for p in rows]
+    assert all(p['selection_reason'] for p in selected)
+    assert metadata['retained_qa_passed_asins'] == sorted(p['asin'] for p in rows[:2])
+    assert all(len(a['products']) == 2 for a in metadata['axes'])
+
 
 def test_ai_rejects_imbalanced_six():
     rows=six()+[product(10,'compact')]
@@ -85,7 +97,7 @@ def test_source_keyword_mismatch_reaches_independent_product_selection():
         row['sources']=[{'verified':True,'excerpt':'仕様と使用条件を説明する一次情報', 'source_type':'manufacturer_official'}]
     with patch('product_selection.subprocess.run', side_effect=fake_ai([r['asin'] for r in rows])) as ai:
         selected, metadata = select_six(rows, TOPIC, {})
-    assert ai.call_count == 1
+    assert ai.call_count == 0
     assert len(selected) == 6
     assert metadata['candidate_count'] == 6
 
@@ -96,7 +108,7 @@ def test_unverified_source_is_recorded_without_preempting_topic_review():
         selected, meta = select_six(rows,TOPIC,{})
     assert len(selected) == 6
     assert meta['candidate_count'] == 6
-    assert ai.call_count == 1
+    assert ai.call_count == 0
 
 def test_duplicate_different_asin_same_product_title_rejected():
     fake, _ = search_factory({'compact':[1,2], 'quiet':[3,4], 'safe':[5,6]})
