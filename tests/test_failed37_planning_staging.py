@@ -39,6 +39,17 @@ class Failed37PlanningStagingTest(unittest.TestCase):
         self.assertNotIn('metadata',receipt)
         self.assertNotIn('session_id',receipt)
 
+    def test_first_independent_planning_qa_detects_real_replanning_need(self):
+        receipt=json.loads((FOLDER/'first-planning-independent-qa.json').read_text())
+        self.assertEqual(receipt['slug'],'insulated-lunch-bags-for-daily-use')
+        self.assertEqual(receipt['verdict'],'REVISE')
+        self.assertTrue(receipt['valid_product_ref_coverage'])
+        self.assertFalse(receipt['original_job_changed'])
+        self.assertFalse(receipt['review']['portfolio_distinctness_sufficient'])
+        self.assertFalse(receipt['review']['three_discovery_angles_useful'])
+        self.assertEqual({x['ref'] for x in receipt['review']['source_ref_findings']},
+                         {'p1','p2','p3','p4','p5','p6'})
+
     def test_duplicate_family_hints_are_not_conflated_with_decisions(self):
         manifest=json.loads((FOLDER/'manifest.json').read_text())
         known={x['slug'] for x in manifest['entries']}

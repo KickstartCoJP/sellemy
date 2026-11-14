@@ -1,0 +1,55 @@
+{
+  "schema": "sellemy-failed37-independent-planning-qa/v1",
+  "slug": "insulated-lunch-bags-for-daily-use",
+  "verdict": "REVISE",
+  "review": {
+    "verdict": "REVISE",
+    "reader_need_fit": true,
+    "all_six_individual_recommendations_supported": false,
+    "three_discovery_angles_useful": false,
+    "portfolio_distinctness_sufficient": false,
+    "reason": "弁当箱と保冷剤が収まり持ち歩きやすいバッグを選ぶ、という購入意図は明確。ただし「内寸」の軸では、内寸が示された商品と本体の外寸しか示されていない商品が混在し、6商品の選定理由を同じ根拠水準で支えられない。開口部と持ち方は発見の入口として有用だが、3軸全体では未成立。さらに既存のdaily-carry記事とは読者、購入目的、3つの軸がほぼ重なり、daily-commutes記事とも通勤時の用途が重なる。",
+    "concrete_actions": [
+      "このテーマはdaily-carry記事の改善候補として扱い、独立記事として進めるなら既存2記事と異なる購入意図を先に定義する。",
+      "内寸を軸に残す場合は、各該当商品の内寸または弁当箱と保冷剤の収まりを確認できる根拠を取得する。取得できなければ軸名と商品構成を見直す。",
+      "差別化したテーマに合わせて6商品の個別の選定理由を再確認し、Product QAをやり直す。"
+    ],
+    "source_ref_findings": [
+      {
+        "ref": "p1",
+        "supported": true,
+        "reason": "弁当箱を置く底面22×11.5cmと容量2Lが出典にある。保冷剤を含めた収まりは未確認として扱える。"
+      },
+      {
+        "ref": "p2",
+        "supported": false,
+        "reason": "容量2Lと本体サイズ21×13×16cmは確認できるが、内寸や弁当箱と保冷剤の収まりは確認できず、「内寸」の軸での個別推薦を支えきれない。"
+      },
+      {
+        "ref": "p3",
+        "supported": true,
+        "reason": "箱型、広い開口部、ダブルファスナー、保冷剤ポケットが出典にある。"
+      },
+      {
+        "ref": "p4",
+        "supported": true,
+        "reason": "広い開口部、容量5L、本体サイズが出典にあり、弁当箱以外も持つ人向けの選択理由を説明できる。"
+      },
+      {
+        "ref": "p5",
+        "supported": true,
+        "reason": "ショルダーバッグ型、容量7L、本体サイズが出典にあり、肩掛けで持ち歩く選択理由を説明できる。"
+      },
+      {
+        "ref": "p6",
+        "supported": true,
+        "reason": "トートバッグ型、容量4L、本体サイズが出典にあり、持ち方を起点にした選択理由を説明できる。"
+      }
+    ]
+  },
+  "valid_product_ref_coverage": true,
+  "input_topic_sha256": "fba469e559e044fc8691237c6149ac8b916e3ad5f77cf11b3a528ca7d0da48ed",
+  "input_evidence_sha256": "7f77cd29b9307306605f2f85e899cabd0d41846a4ab0883a1628f2db9747b039",
+  "original_job_changed": false,
+  "independent_reviewer": "bu-codex-sellemy-reviewer"
+}

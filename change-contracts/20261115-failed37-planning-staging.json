@@ -50,7 +50,8 @@
     "staging/failed37-planning/window-cleaning-squeegees.json",
     "staging/failed37-planning/winter-window-gap-sealing-tapes.json",
     "tests/test_failed37_planning_staging.py",
-    "change-contracts/20261115-failed37-planning-staging.json"
+    "change-contracts/20261115-failed37-planning-staging.json",
+    "staging/failed37-planning/first-planning-independent-qa.json"
   ],
   "preserved_rules": [
     "Exact original request artifact SHA256 verified for all 37 before staging",
@@ -59,7 +60,8 @@
     "All 37 Planning assessments explicitly PENDING, no false passed approvals",
     "Published article paths, live job states, normal new article execution and CEO Gate unchanged",
     "Legacy436 article repair and failed37 are entirely separate tasks",
-    "Independent Product QA public staging receipt contains no internal reviewer session identifiers"
+    "Independent Product QA public staging receipt contains no internal reviewer session identifiers",
+    "First independent Planning QA result is REVISE, not assumed to PASS; source-backed product QA cannot override unfit topic intent"
   ],
   "acceptance_tests": [
     "tests/test_failed37_planning_staging.py"
