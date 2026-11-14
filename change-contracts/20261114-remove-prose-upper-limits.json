@@ -1,0 +1,23 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "BU002-REMOVE-PROSE-UPPER-LIMITS-20261114",
+  "instruction_ref": "CEO explicit approval 2026-11-14: OKそうして。",
+  "instruction": "導入文・要約・選び方の文字数上限だけを撤廃。下限180/130/190は維持。商品説明の160文字下限と結びの上下限なしを維持。Writer指示とQA再執筆フィードバックの上限必須記述を修正する。",
+  "implementer": "sellemy-ops via Mac Studio v2",
+  "canonical_refs": ["https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3"],
+  "allowed_paths": [
+    "pipeline/qa.py",
+    "pipeline/writer_runtime.py",
+    "tests/test_prose_lower_bounds_only.py",
+    "tests/test_writer_length_feedback.py",
+    "change-contracts/20261114-remove-prose-upper-limits.json"
+  ],
+  "preserved_rules": [
+    "Lead minimum remains 180 characters, summary 130, how_to_choose 190",
+    "Product description minimum remains 160; conclusion remains without numeric bounds",
+    "Product, link, structure and all non-length mechanical QA are unchanged",
+    "Editorial, Claim, Product QA, CEO review and publication approvals remain unchanged",
+    "No new AI stages or changed Writer model"
+  ],
+  "acceptance_tests": ["tests/test_prose_lower_bounds_only.py", "tests/test_writer_length_feedback.py"]
+}
