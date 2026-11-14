@@ -50,6 +50,16 @@ def _inspect(slug: str, *, cache_only: bool) -> dict:
                 hold_product_review_conflict(slug, reasons=issues,
                     pinned_asins=[p['asin'] for p in evidence['products']])
                 raise GrowthRuntimeError(f'independent review conflict held for {slug}')
+        # Legacy recovery jobs can remain WRITER_PENDING with the same exhausted
+        # candidate pool. Convert the unchanged search into the existing
+        # PRODUCT_HOLD state instead of re-running the identical search each tick.
+        if (state.get('current_stage') == 'WRITER_PENDING'
+                and state.get('last_failure_code') == 'NEEDS_PRODUCT_RESELECTION'
+                and read_artifact(slug, 'product-attempt-fingerprint.json', None)):
+            request_product_reselection(slug, blocker.get('reasons') or ['candidate pool exhausted; return to Planning'])
+            current = load_job(slug)
+            if current.get('current_stage') == 'PRODUCT_HOLD':
+                raise GrowthRuntimeError(f'planning_restart_required for {slug}')
         if evidence.get('product_acceptance') and not product_issues(evidence):
             write_artifact(slug, 'product-blocker.json', {})
             progress = read_artifact(slug, 'product-search-progress.json', {}) or {}
