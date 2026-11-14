@@ -48,7 +48,7 @@ def _render_related_features(features: list[dict]) -> str:
     if not features:
         return start + end
     links=''.join(f'<li><a href="{html.escape(str(f["url"]))}">{html.escape(str(f["title"]))}</a></li>' for f in features[:3])
-    return start + f'<aside class="related-features"><h2>関連する目的</h2><ul>{links}</ul></aside>' + end
+    return start + f'<aside class="related-features"><h2>関連する特集</h2><ul>{links}</ul></aside>' + end
 
 def render_article(payload: dict, evidence: dict, *, today: date | None = None, related_features: list[dict] | None = None) -> str:
     """Insert Writer prose and evidence facts verbatim; never synthesize or pad copy."""

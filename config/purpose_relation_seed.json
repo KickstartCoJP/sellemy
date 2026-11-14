@@ -2495,6 +2495,16 @@
       "relation_type": "supporting",
       "confidence": 0.84,
       "rationale": "Owner-accepted semantic review 2026-10-03"
+    },
+    {
+      "feature_id": "PH-GROOMING",
+      "feature_title": "身だしなみを整える",
+      "article_id": "hair-setting-sprays",
+      "slug": "hair-setting-sprays",
+      "article_title": "スタイリング用ヘアスプレー比較｜仕上がり・噴霧・落とし方を確認",
+      "relation_type": "core",
+      "confidence": 0.95,
+      "rationale": "前髪や巻き髪の仕上がりを整えるため、噴霧と落とし方を選ぶ記事。"
     }
   ],
   "orphans": [
