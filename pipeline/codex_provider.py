@@ -527,6 +527,25 @@ def _rotate_context(command: tuple[str, ...], model: str, root: Path, surface_ke
         }
 
 
+def _required_effort(surface_key: str, stage: str, model: str) -> str:
+    from api_role_binding import require_codex_settings
+    _, effort = require_codex_settings(surface_key, stage, model=model)
+    return effort
+
+
+def _stage_brief_text(path: Path, stage: str) -> str:
+    content = path.read_text(encoding='utf-8')
+    if stage != 'writer':
+        return content
+    # Preserve approved reusable editorial knowledge. Filter research workflow
+    # instructions rather than replacing the complete learned brief.
+    lines = content.splitlines()
+    audit_terms = ('source anchor', 'Evidence不足はBLOCKED', 'Marketplace listing',
+                   '調査は公式一覧', '名称・型番・選択仕様', '数値は対象・単位',
+                   '調整可能をカット可能', '端子・通信規格', '成分・対象素材')
+    return '\n'.join(line for line in lines if not any(term in line for term in audit_terms))
+
+
 def _ensure_brief(path: Path, surface_key: str) -> None:
     if path.exists():
         return
@@ -860,6 +879,71 @@ def _refresh_brief(command: tuple[str, ...], model: str, session_id: str, root: 
         else:
             _update_standard_brief(brief_path, learned)
         return usage
+
+
+def generate_isolated(command: tuple[str, ...], model: str, schema: dict, prompt: str, *,
+                      timeout: int, root: Path, surface_key: str, stage: str = '',
+                      usage_key: str = '') -> tuple[dict, dict]:
+    """LINE-style stage execution: fresh, ephemeral thread with only the current Brief/task."""
+    root = Path(root).resolve()
+    from api_role_binding import require_codex_route
+    require_codex_route(surface_key, stage)
+    # The persistent Member binding identifies the authorized role, not the
+    # transcript to resume. Every article/image still gets its own new session.
+    binding = _member_binding(surface_key)
+    _, brief_path = _runtime_paths(root, surface_key)
+    _ensure_brief(brief_path, surface_key)
+    bridge = _canon_bridge(root, surface_key)
+    if not bridge.is_file():
+        raise CodexProviderError('Sellemy Codex canon bootstrap is missing')
+    from owner_brief_learning import load_brief_rules
+    learned_stage = 'planning' if stage == 'planning' else 'writer'
+    learned = load_brief_rules(learned_stage, root=root) if stage in ('planning', 'writer') else ''
+    editorial_role = (root / 'config' / 'writer-editorial-role.md').read_text(encoding='utf-8') if stage == 'writer' else ''
+    task = (('WRITER_ROLE:\n' + editorial_role + '\n\n') if editorial_role else '') + ('Execute independently. Do not inspect old sessions, past output, or unrelated files. '
+            'Use only the supplied canonical bridge, stage Brief, accepted rules and current task. '
+            'Do not call an API. Return exactly one JSON object.\nCANON_BRIDGE:\n' +
+            bridge.read_text(encoding='utf-8') + '\nBRIEF:\n' + _stage_brief_text(brief_path, stage) +
+            '\nACCEPTED_RULES:\n' + learned + '\nTASK:\n' + prompt +
+            '\nOUTPUT_SCHEMA:\n' + json.dumps(_strict_schema(schema), ensure_ascii=False))
+    effort = _required_effort(surface_key, 'planning' if surface_key == PLANNING_SURFACE else 'writer' if surface_key == 'bu-codex-sellemy-writer' else 'independent_review' if surface_key == 'bu-codex-sellemy-reviewer' else 'eyecatch', model)
+    # Designer rollout is persisted only as an image generation audit receipt; it is
+    # never resumed by a subsequent task, so previous images cannot accumulate.
+    keep_rollout = surface_key == DESIGNER_SURFACE
+    args = [*command, 'exec']
+    if not keep_rollout:
+        args.append('--ephemeral')
+    args += ['--json', '--skip-git-repo-check', '--sandbox', 'read-only',
+             '--model', model, '--config', f'model_reasoning_effort={effort}', '-']
+    completed = _run(args, prompt=task, timeout=timeout, cwd=root)
+    if completed.returncode:
+        raise CodexProviderError('Isolated Codex execution failed: ' + (completed.stderr or completed.stdout)[-700:])
+    final = ''
+    usage = {}
+    thread_id = None
+    for line in completed.stdout.splitlines():
+        try:
+            event = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        if event.get('type') == 'thread.started':
+            thread_id = event.get('thread_id')
+        if event.get('type') == 'item.completed' and (event.get('item') or {}).get('type') == 'agent_message':
+            final = (event['item'].get('text') or '')
+        if event.get('type') == 'turn.completed':
+            usage = event.get('usage') or {}
+    if not final:
+        raise CodexProviderError('Isolated Codex returned no final output')
+    value = _json_object(final)
+    _validate_required_shape(value, _strict_schema(schema))
+    _append_usage(root, surface_key, stage=stage or 'generation', model=model,
+                  session_id='', session_turn=1, usage=usage, operation_key=usage_key)
+    if keep_rollout and not thread_id:
+        raise CodexProviderError('Designer rollout lacks thread ID for image generation attestation')
+    return value, {'surface': surface_key, 'session_id': thread_id,
+                   'member_binding_revision': binding['binding_revision'],
+                   'session_persisted': keep_rollout,
+                   'reasoning_effort': effort, 'brief_path': str(brief_path), **usage}
 
 
 def generate_persistent(command: tuple[str, ...], model: str, schema: dict, prompt: str, *,
