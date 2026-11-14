@@ -30,7 +30,10 @@ class LegacyArticleRecoveryTests(unittest.TestCase):
         self._save(self.articles/self.slug/'body.json',
                    {'slug': self.slug, 'category': 'gadget', 'products': []})
         self._save(self.articles/self.slug/'evidence.json',
-                   {'slug': self.slug, 'category': 'gadget', 'products': [],
+                   {'slug': self.slug, 'category': 'gadget', 'products': [
+                       {'ref': f'P{i}', 'sources': [{'verified': True,
+                         'url': f'https://example.org/p{i}', 'excerpt': f'Proven item {i}'}]}
+                       for i in range(6)],
                     'eyecatch_image': '/img/sample-article/sample-article.png'})
         self._save(self.articles/self.slug/'selection.json',
                    {'slug': self.slug, 'products': []})
@@ -74,6 +77,26 @@ class LegacyArticleRecoveryTests(unittest.TestCase):
         self.assertEqual((self.repo / 'article/gadget/sample-article.html').read_text(), 'old')
         self.assertEqual(recovery.read_artifact(self.slug, 'legacy-original-20261115/state.json')['status'], 'PUBLISHED')
         self.assertEqual(legacy.import_one(self.source), {'admitted': False})
+
+    def test_incomplete_sources_not_admitted_or_mutated(self):
+        evidence = json.loads((self.articles/self.slug/'evidence.json').read_text())
+        evidence['products'][2]['sources'][0]['verified'] = False
+        self._save(self.articles/self.slug/'evidence.json', evidence)
+        previous = (self.jobs/self.slug/'state.json').read_bytes()
+        self.assertFalse(legacy.has_pending(self.source))
+        self.assertEqual(legacy.import_one(self.source), {'admitted': False})
+        self.assertEqual((self.jobs/self.slug/'state.json').read_bytes(), previous)
+        self.assertFalse((self.jobs/self.slug/legacy.MARKER).exists())
+        self.assertEqual(recovery.read_artifact(self.slug, 'chat-publish-approval.json'),
+                         {'publish_allowed': True})
+
+    def test_unverified_titles_or_unattributed_sources_do_not_qualify(self):
+        evidence = json.loads((self.articles/self.slug/'evidence.json').read_text())
+        evidence['products'][0]['sources'] = [{'verified': True, 'url': 'http://bad',
+                                              'excerpt': 'Product details'}]
+        self._save(self.articles/self.slug/'evidence.json', evidence)
+        self.assertFalse(legacy.has_pending(self.source))
+        self.assertFalse(legacy.import_one(self.source)['admitted'])
 
     def test_skip_ordinary_active_job(self):
         state = recovery.load_job(self.slug)
