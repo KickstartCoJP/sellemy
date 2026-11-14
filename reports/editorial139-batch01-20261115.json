@@ -1,0 +1,473 @@
+{
+  "task_id": "TASK-BU002-EDITORIAL-139-RECOVERY-20261115",
+  "articles": [
+    {
+      "slug": "after-sun-lotion-6-choices",
+      "sequence": 2,
+      "qa": "PASS_CHANGED_PARTS_ONLY",
+      "approval": "PENDING_CEO_PORTAL",
+      "production": "UNCHANGED",
+      "edited_fields": [
+        "toc labels (3)",
+        "section h2 (3)"
+      ],
+      "files": [
+        {
+          "path": "article/beauty/after-sun-lotion-6-choices.html",
+          "before_sha256": "a17cf88a60fd9d70813d3e5583e0cc2df1ca0558473f01bd02c5144fe1c4c036",
+          "after_sha256": "60416c7b2b49b17d9144145653bc350ed8dad450e8f73d99b8004d33c574703d"
+        }
+      ],
+      "claim_support": "No claims added",
+      "attention": [],
+      "preserved_html_signature": "04f7a99956c7ee6da4ee77d00dd59e536e59f3daffc5ba71e4b9db4ef72d8c96"
+    },
+    {
+      "slug": "all-in-one-gel-6-picks",
+      "sequence": 4,
+      "qa": "PASS_CHANGED_PARTS_ONLY",
+      "approval": "PENDING_CEO_PORTAL",
+      "production": "UNCHANGED",
+      "edited_fields": [
+        "lead",
+        "summary",
+        "comparison_groups[0].title",
+        "comparison_groups[0].angle",
+        "comparison_groups[1].title",
+        "comparison_groups[1].angle",
+        "comparison_groups[2].title",
+        "comparison_groups[2].angle",
+        "html.toc_heading"
+      ],
+      "files": [
+        {
+          "path": "article/beauty/all-in-one-gel-6-picks.html",
+          "before_sha256": "417ec32323d5a42855f60791fcd0138726af64a0c529759df5fcd7d22ada8ab5",
+          "after_sha256": "1a06ce97927ba6f395bb28041a802f31cbce08bd8a4e47afa3ba5374ad2a7084"
+        },
+        {
+          "path": "data/payloads/all-in-one-gel-6-picks.json",
+          "before_sha256": "9d30d899e59acf2a09df0d1a69da0352137e52dbe7911c466f8fbe31c4345e50",
+          "after_sha256": "3e7fcd6ebc16950fb0de73e65d56da018e2f00768db24b023aa8b48c06220f6e"
+        }
+      ],
+      "claim_support": "New facts limited to evidence.amazon_title: p2 ceramide/pump, p5 ceramide/hyaluronic acid, p1 moist, p6 sensitive-skin product label, p3 35g, p4 45g+ELDUO1 portion. No efficacy or safety claims added.",
+      "attention": [],
+      "preserved_html_signature": "4592cb2cf1364c92a299ab28426d03e6aaef6883b3fd55c56b3054be4374fd72",
+      "preserved_products_sha256": "6f0c2d93163f591a0ec0cd8d6fdddb81998c7a8cfacb89bd19f86e860aa48509",
+      "preserved_group_refs": [
+        [
+          "p2",
+          "p5"
+        ],
+        [
+          "p1",
+          "p6"
+        ],
+        [
+          "p3",
+          "p4"
+        ]
+      ]
+    },
+    {
+      "slug": "anti-slip-snow-boots-6-picks",
+      "sequence": 5,
+      "qa": "PASS_CHANGED_PARTS_ONLY",
+      "approval": "PENDING_CEO_PORTAL",
+      "production": "UNCHANGED",
+      "edited_fields": [
+        "lead",
+        "summary",
+        "comparison_groups[0].title",
+        "comparison_groups[0].angle",
+        "comparison_groups[1].title",
+        "comparison_groups[1].angle",
+        "comparison_groups[2].title",
+        "comparison_groups[2].angle",
+        "html.toc_heading"
+      ],
+      "files": [
+        {
+          "path": "article/dailygoods/anti-slip-snow-boots-6-picks.html",
+          "before_sha256": "b12203d5a49425a3704419c56ab5ab962b4185b0a4c684bd3d5f91dc1680db64",
+          "after_sha256": "61da0202bb18ad015c155b2f2651934ff9fb422e1e4f7777cb6c13cee18eb6a0"
+        },
+        {
+          "path": "data/payloads/anti-slip-snow-boots-6-picks.json",
+          "before_sha256": "9325ed93c0f49081ceee22dbdb82af07fa5369825f5ad1e40ac99259c8da5336",
+          "after_sha256": "90f8e816d984e5f1600bf3be037742c65072c4743a5e3d966405adaea76e3d05"
+        }
+      ],
+      "claim_support": "Existing evidence amazon_title: p4 short; p6 long; p1 fur lining; p3 brushed lining; p2 hook-loop; p5 low-cut. No new efficacy claim.",
+      "attention": [
+        "既存未編集の商品本文には滑らない・雪道も安心・転倒リスク・耐久性等の裏付け未検証表現あり。変更部分QAと既存主張再認証を区別し、公開前に別途確認が必要。"
+      ],
+      "preserved_html_signature": "632c73cc554b3c7d9af4658c9925e66370b50b2ceb70f5c8d56372429063869a",
+      "preserved_products_sha256": "990949a20f0f50263f2cbfa88a7e5424076231a7ac7ca4d19f528f7d67b88932",
+      "preserved_group_refs": [
+        [
+          "p4",
+          "p6"
+        ],
+        [
+          "p1",
+          "p3"
+        ],
+        [
+          "p2",
+          "p5"
+        ]
+      ]
+    },
+    {
+      "slug": "automatic-folding-umbrellas-6-picks",
+      "sequence": 6,
+      "qa": "PASS_CHANGED_PARTS_ONLY",
+      "approval": "PENDING_CEO_PORTAL",
+      "production": "UNCHANGED",
+      "edited_fields": [
+        "lead",
+        "summary",
+        "comparison_groups[0].title",
+        "comparison_groups[0].angle",
+        "comparison_groups[1].title",
+        "comparison_groups[1].angle",
+        "comparison_groups[2].title",
+        "comparison_groups[2].angle",
+        "html.toc_heading"
+      ],
+      "files": [
+        {
+          "path": "article/dailygoods/automatic-folding-umbrellas-6-picks.html",
+          "before_sha256": "a310cf8f2fe98670609fcdc9faf0d6d23653183d5492ecf7dea5b3db605b4f3a",
+          "after_sha256": "abebf580a66a24c58fae3e75c75db608afb8026790324c348fdab4f87ae77bf7"
+        },
+        {
+          "path": "data/payloads/automatic-folding-umbrellas-6-picks.json",
+          "before_sha256": "1fad32d259db27940b971d5494f282c37f7234c37db894515c20c866ff2b6f60",
+          "after_sha256": "e5918553290e8b8872a5ad6800d781c4e6a248541204899be4a499c82053a86e"
+        }
+      ],
+      "claim_support": "Existing evidence amazon_title: p2 330g; p5 218g 6 ribs; p3 138cm10 ribs; p6 12 ribs reverse; p1 shape-memory; p4 auto open-close. No new efficacy claim.",
+      "attention": [
+        "既存未編集本文・選び方に、骨数やテフロン加工と耐風性の関係など未再検証の主張あり。変更箇所に限定してQAし、全記事事実検証済みとは扱わない。"
+      ],
+      "preserved_html_signature": "2848e7590195d221ff3836c51b09c94be6595f75eaafefa5c4466e61c814482d",
+      "preserved_products_sha256": "39e93d5387966e00dfa5b93c76b15f7d3142595bb904e11d78659990e508b045",
+      "preserved_group_refs": [
+        [
+          "p2",
+          "p5"
+        ],
+        [
+          "p3",
+          "p6"
+        ],
+        [
+          "p1",
+          "p4"
+        ]
+      ]
+    },
+    {
+      "slug": "autumn-bedding-cover-sets-6-picks",
+      "sequence": 7,
+      "qa": "PASS_CHANGED_PARTS_ONLY",
+      "approval": "PENDING_CEO_PORTAL",
+      "production": "UNCHANGED",
+      "edited_fields": [
+        "lead",
+        "summary",
+        "comparison_groups[0].angle",
+        "comparison_groups[1].angle",
+        "comparison_groups[2].angle",
+        "html.toc_heading"
+      ],
+      "files": [
+        {
+          "path": "article/dailygoods/autumn-bedding-cover-sets-6-picks.html",
+          "before_sha256": "b98ba07dfeba9062dabfca6d994dfa3bf50f332818673def9476bac309bb8bd4",
+          "after_sha256": "35c44262550abaac9693385cbda9689d82048dc34cd0ce09727826ddab78400d"
+        },
+        {
+          "path": "data/payloads/autumn-bedding-cover-sets-6-picks.json",
+          "before_sha256": "80fe81660cbf0219d2cc9d997f071e6b904549ed527e01c23f8bd30c8fd3abf7",
+          "after_sha256": "a8a647eb2211d555bae22d1aeb3e962082106a5b406a31ab275688cd34244602"
+        }
+      ],
+      "claim_support": "Evidence amazon_title: p1 beige; p4 grey/black; p2 flannel/microfiber; p5 extra-long staple cotton100 satin Etoile; p3 thick machine washable; p6 waterwash peachskin washable. No performance claims newly added.",
+      "attention": [
+        "既存商品本文・その他未編集部分の事実再認証は未実施。変更部分限定QA。"
+      ],
+      "preserved_html_signature": "25a971e68a0245ba2bf2935208dba7e0d257843148effa089ea0e332fd66bacc",
+      "preserved_products_sha256": "34ebf28a71fefe3b02b84df5eb538b8b2e59a535afd8a7cdd14bc08c741cbf5b",
+      "preserved_group_refs": [
+        [
+          "p1",
+          "p4"
+        ],
+        [
+          "p2",
+          "p5"
+        ],
+        [
+          "p3",
+          "p6"
+        ]
+      ]
+    },
+    {
+      "slug": "autumn-cheek-blush-6-picks",
+      "sequence": 8,
+      "qa": "PASS_CHANGED_PARTS_ONLY",
+      "approval": "PENDING_CEO_PORTAL",
+      "production": "UNCHANGED",
+      "edited_fields": [
+        "lead",
+        "summary",
+        "comparison_groups[0].title",
+        "comparison_groups[0].angle",
+        "comparison_groups[1].title",
+        "comparison_groups[1].angle",
+        "comparison_groups[2].title",
+        "comparison_groups[2].angle",
+        "html.toc_heading"
+      ],
+      "files": [
+        {
+          "path": "article/beauty/autumn-cheek-blush-6-picks.html",
+          "before_sha256": "ab99a0c540f6021969cfef2c12279c92d6edc3f7c5c14d58de62f102d707359c",
+          "after_sha256": "4bf744ec6b21491030b1dc68b5ff74e44db74b9c91e7df832c7b6975d27a5c40"
+        },
+        {
+          "path": "data/payloads/autumn-cheek-blush-6-picks.json",
+          "before_sha256": "cb653a7b794f4f157319493fd33f4d4b6206905a16cc5e0a987b654eab34db65",
+          "after_sha256": "ee1841ec9627670b04d2ed2b204d2cfed690f35722522295d5822ac5e649a71f"
+        }
+      ],
+      "claim_support": "Evidence amazon_title: p1 puff included milk-tea; p2 VIDIVICI liquid blush; p4 2aN08 NUDE HAZE; p3 MilleFee02 mocha mousse; p5 Enamor mellow melting; p6 fwee lip&cheek pudding pot. No finish, persistence, skin-fit claims newly added.",
+      "attention": [
+        "既存商品本文・その他未編集部分の事実再認証は未実施。変更部分限定QA。"
+      ],
+      "preserved_html_signature": "c0ce58b72beeaf330fc32e21d148cb724bc3e33b2e1171ad860c045f567723f3",
+      "preserved_products_sha256": "db572168cf6c998c6aa169030192b7e4dc0212dfc1a29e37d518982d0860ce79",
+      "preserved_group_refs": [
+        [
+          "p1",
+          "p2"
+        ],
+        [
+          "p4",
+          "p3"
+        ],
+        [
+          "p5",
+          "p6"
+        ]
+      ]
+    },
+    {
+      "slug": "autumn-eyeshadow-palettes-6-picks",
+      "sequence": 9,
+      "qa": "PASS_CHANGED_PARTS_ONLY",
+      "approval": "PENDING_CEO_PORTAL",
+      "production": "UNCHANGED",
+      "edited_fields": [
+        "lead",
+        "summary",
+        "comparison_groups[0].title",
+        "comparison_groups[0].angle",
+        "comparison_groups[1].title",
+        "comparison_groups[1].angle",
+        "comparison_groups[2].title",
+        "comparison_groups[2].angle",
+        "html.toc_heading"
+      ],
+      "files": [
+        {
+          "path": "article/beauty/autumn-eyeshadow-palettes-6-picks.html",
+          "before_sha256": "e475fd935c4f6d1b4d9bca96c9a4072e6c381401e9182d897cf19d3847330213",
+          "after_sha256": "708720274c6402d0a3dbcf456be3880f8b3db4dfcb128cf22af7bd375ef1bd73"
+        },
+        {
+          "path": "data/payloads/autumn-eyeshadow-palettes-6-picks.json",
+          "before_sha256": "b7f73ef0c727f66051a139bcb335c1f1ce5001b9ffa3c88039817f5e83ab5f33",
+          "after_sha256": "2e0ee4c95c28b92c5dafb98227a692cf3f8f26382c698332383c904d19f989d2"
+        }
+      ],
+      "claim_support": "Evidence amazon_title: p1 12 colors earth palette; p2 CLIO10 season plum; p3/p4 names/shades; p5 pig motif; p6 ETVOS mineral classy French fig. No texture, efficacy, price hierarchy or safety claim added.",
+      "attention": [
+        "既存商品本文・その他未編集部分の肌へのやさしさ等は再認証未実施。変更部分限定QA。"
+      ],
+      "preserved_html_signature": "af55a0e0512343f4a48a80840b8907d4b6d900d21e09beb457b77228369e2f61",
+      "preserved_products_sha256": "e5e9733c240487ba17b980ab777a2c2e7009f6205be129b231605a5b68c02c04",
+      "preserved_group_refs": [
+        [
+          "p1",
+          "p2"
+        ],
+        [
+          "p3",
+          "p4"
+        ],
+        [
+          "p5",
+          "p6"
+        ]
+      ]
+    },
+    {
+      "slug": "autumn-lip-colors-6-picks",
+      "sequence": 11,
+      "qa": "PASS_CHANGED_PARTS_ONLY",
+      "approval": "PENDING_CEO_PORTAL",
+      "production": "UNCHANGED",
+      "edited_fields": [
+        "lead",
+        "summary",
+        "comparison_groups[0].title",
+        "comparison_groups[0].angle",
+        "comparison_groups[1].title",
+        "comparison_groups[1].angle",
+        "comparison_groups[2].title",
+        "comparison_groups[2].angle",
+        "html.toc_heading",
+        "conclusion"
+      ],
+      "files": [
+        {
+          "path": "article/beauty/autumn-lip-colors-6-picks.html",
+          "before_sha256": "3c513b9c6e4775e1e98f817b680e4ff83b87eaec787cd0e75c12da10939dd279",
+          "after_sha256": "d09642845c7af7d0013ee50922c16f4cde3c301a665cfce49f3eead21255448f"
+        },
+        {
+          "path": "data/payloads/autumn-lip-colors-6-picks.json",
+          "before_sha256": "53893601106db9454005c4a0c537617d87c523c3233f6ca0e885249169bf1340",
+          "after_sha256": "677ca0c482aad50e75bc8fa67e15d8489f3a6ab9b397ec65fb43a462f5f3ab06"
+        }
+      ],
+      "claim_support": "Evidence amazon_title: OPERA417 brown, Cezanne03 cocoa, Maybelline80, romand02, NOONI applewine oil, KATE18. No persistence, moisturizing or finish claims newly added.",
+      "attention": [
+        "既存商品本文・その他未編集部分の事実再認証は未実施。変更部分限定QA。"
+      ],
+      "preserved_html_signature": "646a0cae7a5ccbddf525bf76ac0e45a9f6da1a3c20e0f20e6cd839ccca436e3a",
+      "preserved_products_sha256": "e78ebb3ca57975f26e8d48b64e46c3ca18892323faa5f83f29d3aad269464e09",
+      "preserved_group_refs": [
+        [
+          "p1",
+          "p5"
+        ],
+        [
+          "p4",
+          "p6"
+        ],
+        [
+          "p2",
+          "p3"
+        ]
+      ]
+    },
+    {
+      "slug": "autumn-moisturizing-sheet-masks-6-picks",
+      "sequence": 12,
+      "qa": "PASS_CHANGED_PARTS_ONLY",
+      "approval": "PENDING_CEO_PORTAL",
+      "production": "UNCHANGED",
+      "edited_fields": [
+        "lead",
+        "summary",
+        "comparison_groups[0].title",
+        "comparison_groups[0].angle",
+        "comparison_groups[1].title",
+        "comparison_groups[1].angle",
+        "comparison_groups[2].title",
+        "comparison_groups[2].angle",
+        "html.toc_heading"
+      ],
+      "files": [
+        {
+          "path": "article/beauty/autumn-moisturizing-sheet-masks-6-picks.html",
+          "before_sha256": "9f3564677e48c8656b2651b61aa0014517d2e869858de327ade0f4b5a769a38f",
+          "after_sha256": "c174980a5d6f2d26d087e21bc6686b3285aa623a5017f87ef2dbd78f077c01b9"
+        },
+        {
+          "path": "data/payloads/autumn-moisturizing-sheet-masks-6-picks.json",
+          "before_sha256": "9b600213ba1e27d4d697088b6214ed0e61b908caedb76fb376ba4482f8e945f1",
+          "after_sha256": "50c50c1fec64246ef76023d6f26bac4536463509324776b8098755721657a765"
+        }
+      ],
+      "claim_support": "Evidence amazon_title: p1/p5 ceramide30 sheets; p3 ten; p4 thirtytwo; p2 individual5; p6 quasi-drug4. No low-irritation, no-fragrance or efficacy assertion added.",
+      "attention": [
+        "旧本文の無香料・無着色・低刺激等はEvidenceタイトルに裏付けがなく、編集箇所からは削除。既存商品本文は再認証未実施、限定QA。"
+      ],
+      "preserved_html_signature": "eb9ecd135dc199fd7e494d899644a8edffbb29a7547db70a8eee8cfce7b0e62a",
+      "preserved_products_sha256": "8273e231395e1ddaca558fdf96cb51aeb2cd3b47a725e9393989a7d76d277b59",
+      "preserved_group_refs": [
+        [
+          "p1",
+          "p5"
+        ],
+        [
+          "p3",
+          "p4"
+        ],
+        [
+          "p2",
+          "p6"
+        ]
+      ]
+    },
+    {
+      "slug": "autumn-winter-moisturizing-primers-6-picks",
+      "sequence": 13,
+      "qa": "PASS_CHANGED_PARTS_ONLY",
+      "approval": "PENDING_CEO_PORTAL",
+      "production": "UNCHANGED",
+      "edited_fields": [
+        "lead",
+        "summary",
+        "comparison_groups[0].title",
+        "comparison_groups[0].angle",
+        "comparison_groups[1].title",
+        "comparison_groups[1].angle",
+        "comparison_groups[2].title",
+        "comparison_groups[2].angle",
+        "html.toc_heading"
+      ],
+      "files": [
+        {
+          "path": "article/beauty/autumn-winter-moisturizing-primers-6-picks.html",
+          "before_sha256": "b0da7aeecb940ad6562671b6a097c5b912a0db868fd0cbbec177ce67f42c10cc",
+          "after_sha256": "2244a015410e7b00e1b1d441df90751122628115c1e5a0ca2beb3a87a174ae41"
+        },
+        {
+          "path": "data/payloads/autumn-winter-moisturizing-primers-6-picks.json",
+          "before_sha256": "8800241a2cd571f4a160b9eb95aab3e0310abc79f068dcb28c5f4101a99ed440",
+          "after_sha256": "beaf4ad60603eaf4b86d9b909991d918c169e5f467feffd98502ca10f0b48fd5"
+        }
+      ],
+      "claim_support": "Evidence amazon_title: p2 all-in-one dry-san; p5 Primavista moisture primer; p3 emulsion Ulumina; p6 Eternam essenceUV; p1 Minon low-irritation marketed formulation; p4 ETVOS mineral repair. No skin suitability, efficacy or all-skin safety assertion added.",
+      "attention": [
+        "既存商品本文や選び方の肌質適合・効果の再認証は未実施。変更部分限定QA。"
+      ],
+      "preserved_html_signature": "d6747833afa38d59d83615db9ef1fdb0d607f309ed64e0461c9960b3fa2e5567",
+      "preserved_products_sha256": "f1becdbc6529f5be9eab58dfb9fc419d7751bfb42648c3f012368b88dc7e28e3",
+      "preserved_group_refs": [
+        [
+          "p2",
+          "p5"
+        ],
+        [
+          "p3",
+          "p6"
+        ],
+        [
+          "p1",
+          "p4"
+        ]
+      ]
+    }
+  ],
+  "scope_note": "Only changed editorial portions independently reviewed. Existing claims are not recertified. No approval or production completion implied."
+}
