@@ -1,0 +1,49 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "TASK-BU002-PURPOSE-PRODUCTION-IMPLEMENT-20261007-001",
+  "instruction_ref": "PORTAL-CEO-REREVIEW-BU002-PURPOSE-PHGROOMING-R5-20261115-001",
+  "instruction": "Publish CEO-approved PH-GROOMING rev5 exact artifact through the protected PR release path and preserve its 18 relations, reverse links, semantic UI grouping, canonical, sitemap and navigation.",
+  "implementer": "sellemy-purpose-ops on authorized Mac Studio v2",
+  "canonical_refs": [
+    "Purpose/特集現行正本",
+    "TASK-BU002-PURPOSE-PRODUCTION-IMPLEMENT-20261007-001",
+    "artifact_sha256=7497fb1da081a396c892a193e3c916a8cc1a8737fbb2272239451477e497799e"
+  ],
+  "allowed_paths": [
+    "article/beauty/autumn-hair-dryers-6-picks.html",
+    "article/beauty/autumn-hair-irons-6-picks.html",
+    "article/beauty/autumn-hair-loss-care-shampoo-6-picks.html",
+    "article/beauty/autumn-perfumes-6-picks.html",
+    "article/beauty/deodorant-antiperspirants-6-picks.html",
+    "article/beauty/gray-hair-color-treatments-6-picks.html",
+    "article/beauty/hair-brushes-for-frizz-6-picks.html",
+    "article/beauty/hair-setting-sprays.html",
+    "article/beauty/home-ipl-hair-removal-devices-6-picks.html",
+    "article/beauty/hot-air-styling-brushes-6-picks.html",
+    "article/beauty/leave-in-hair-treatments-6-picks.html",
+    "article/beauty/mens-hair-growth-tonics-6-picks.html",
+    "article/beauty/mouthwash-oral-care-6-picks.html",
+    "article/beauty/rinse-out-hair-masks-6-picks.html",
+    "article/beauty/womens-hair-growth-serums-6-picks.html",
+    "article/gadget/electric-shavers-6-picks.html",
+    "article/gadget/electric-toothbrushes-6-picks.html",
+    "article/gadget/water-flossers-6-picks.html",
+    "change-contracts/20261115-purpose-grooming-r5.json",
+    "css/style.css",
+    "data/sellemy.db",
+    "index.html",
+    "sitemap.xml",
+    "tests/test_purpose_grooming_release.py",
+    "themes/grooming-routine.html",
+    "themes/index.html"
+  ],
+  "preserved_rules": [
+    "Only CEO-approved PH-GROOMING rev5 production bytes are released",
+    "Existing article body and product CTA content remain unchanged outside Purpose related-feature blocks",
+    "Purpose core/supporting remains internal relation metadata and does not define UI heading count",
+    "Existing protected-branch and CEO staging approval gates remain authoritative"
+  ],
+  "acceptance_tests": [
+    "tests/test_purpose_grooming_release.py"
+  ]
+}
