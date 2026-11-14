@@ -60,6 +60,37 @@ def _article_entry(payload: dict, evidence: dict, *, existing: dict | None, now:
     }
 
 
+def require_update_identity(payload: dict, evidence: dict, *, root: Path | None = None) -> str:
+    """Require an existing published article and preserve its immutable URL.
+
+    UPDATE is an explicit publication intent. The existing site and registry,
+    not the incoming rewritten payload, establish the original URL.
+    """
+    site = root or ROOT
+    slug = payload.get('slug')
+    category = payload.get('category')
+    if not isinstance(slug, str) or not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', slug):
+        raise ValueError('UPDATE requires valid original slug')
+    rows = json.loads((site / 'json' / 'articles.json').read_text(encoding='utf-8'))
+    matches = [row for row in rows if row.get('slug') == slug]
+    if len(matches) != 1:
+        raise ValueError('UPDATE requires exactly one existing article')
+    existing = matches[0]
+    if (existing.get('status') != 'published'
+            or existing.get('article_id') != slug
+            or existing.get('category') != category
+            or evidence.get('slug') != slug or evidence.get('category') != category):
+        raise ValueError('UPDATE would change existing article identity')
+    canonical = f'https://www.sellemy.jp/article/{category}/{slug}.html'
+    baseline_path = site / 'data' / 'evidence' / f'{slug}.json'
+    baseline = json.loads(baseline_path.read_text(encoding='utf-8'))
+    if (not isinstance(baseline, dict) or baseline.get('canonical_url') != canonical
+            or evidence.get('canonical_url') != canonical
+            or not (site / 'article' / category / f'{slug}.html').is_file()):
+        raise ValueError('UPDATE would change existing canonical URL or article path')
+    return canonical
+
+
 def _update_articles(payload: dict, evidence: dict, *, allow_existing: bool, now: datetime) -> dict:
     rows = json.loads(ARTICLES.read_text(encoding='utf-8'))
     matches = [i for i, row in enumerate(rows) if row.get('slug') == payload['slug']]
@@ -302,6 +333,8 @@ def run(slug: str, *, apply: bool, allow_existing: bool) -> dict:
     if apply:
         require_publishing_enabled(ROOT)
     payload, evidence = _load(slug)
+    if allow_existing:
+        require_update_identity(payload, evidence)
     acceptance = load_receipt(ROOT, slug)
     require_acceptance(payload, evidence, acceptance)
     rendered = render_article(payload, evidence, related_features=article_related_features(slug))

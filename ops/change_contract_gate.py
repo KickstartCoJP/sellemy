@@ -33,6 +33,23 @@ def publication_paths(slug: str, category: str) -> set[str]:
     }
 
 
+def existing_publication_identity(base: str, slug: str, category: str) -> bool:
+    """Verify UPDATE target already belongs to the base release."""
+    try:
+        registry = json.loads(git('show', f'{base}:json/articles.json'))
+        evidence = json.loads(git('show', f'{base}:data/evidence/{slug}.json'))
+        original = git('show', f'{base}:article/{category}/{slug}.html')
+    except (subprocess.CalledProcessError, ValueError, KeyError, OSError):
+        return False
+    matches = [row for row in registry if row.get('slug') == slug]
+    canonical = f'https://www.sellemy.jp/article/{category}/{slug}.html'
+    return (len(matches) == 1 and matches[0].get('status') == 'published'
+            and matches[0].get('article_id') == slug
+            and matches[0].get('category') == category
+            and isinstance(evidence, dict) and evidence.get('canonical_url') == canonical
+            and bool(original))
+
+
 def is_publication_only(changes: set[str], base: str, head: str) -> bool:
     """Preserve only the existing verified, single-article publication unit."""
     titles = git('log', '--format=%s', f'{base}..{head}').splitlines()
@@ -42,7 +59,15 @@ def is_publication_only(changes: set[str], base: str, head: str) -> bool:
     if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', slug):
         return False
     articles = [p for p in changes if re.fullmatch(r'article/[^/]+/' + re.escape(slug) + r'\.html', p)]
-    return len(articles) == 1 and changes == publication_paths(slug, articles[0].split('/')[1])
+    if len(articles) != 1:
+        return False
+    category = articles[0].split('/')[1]
+    expected = publication_paths(slug, category)
+    if changes == expected:
+        return True  # Original new-article publication contract is untouched.
+    # UPDATE is safe only for an already-published identical URL in base,
+    # and only when every changed file is in this article's publication unit.
+    return changes.issubset(expected) and existing_publication_identity(base, slug, category)
 
 
 def validate_contract(changes: set[str], head: str) -> list[str]:

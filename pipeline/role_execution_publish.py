@@ -88,13 +88,18 @@ def designer(slug: str) -> dict:
 
 
 def publish(slug: str) -> dict:
-    from publish_payload import run as publish_payload
+    from publish_payload import run as publish_payload, require_update_identity
     topic, evidence, payload, category = _preflight(slug)
     if load_job(slug).get('current_stage') != 'PUBLISH_PENDING':
         raise GrowthRuntimeError('publish cannot execute before the designer passed')
-    result = {}
+    # A previously published job is a revision of the same article, not
+    # evidence that the *new* accepted payload was already deployed.
+    update = bool(load_job(slug).get('published_commit'))
+    if update:
+        require_update_identity(payload, evidence, root=ROOT)
+    result = {'publication_mode': 'UPDATE' if update else 'CREATE'}
     try:
-        existing = _existing_publish_commit(slug, category)
+        existing = None if update else _existing_publish_commit(slug, category)
     except Exception as exc:
         existing = None
         result['existing_publish_verification_error'] = f'{type(exc).__name__}: {exc}'
@@ -109,12 +114,12 @@ def publish(slug: str) -> dict:
                 result.setdefault('publish_gate_attempts', []).append({
                     **gate_evidence, 'attempt': publish_attempt})
                 materialize_for_publish(slug, ROOT)
-                applied = publish_payload(slug, apply=True, allow_existing=False)
+                applied = publish_payload(slug, apply=True, allow_existing=update)
                 if not applied['applied']:
                     raise GrowthRuntimeError('publication stage refused retained recovery candidate')
                 result['applied'] = applied
                 try:
-                    commit = _publish(slug, category)
+                    commit = _publish(slug, category, update=update)
                 except PublishRaceError as race:
                     recovery = recover_unpublished_commit_after_remote_race(ROOT, race.candidate_commit)
                     result.setdefault('publish_race_recoveries', []).append(recovery)
