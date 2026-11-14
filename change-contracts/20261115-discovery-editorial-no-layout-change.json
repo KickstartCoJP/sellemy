@@ -1,0 +1,48 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "TASK-BU002-DISCOVERY-EDITORIAL-20261115",
+  "instruction_ref": "CEO 2026-11-15: 比較ではなく3つの軸で各2商品を紹介。『設計しなおせ』『レイアウトはいまのから変えないぞ』『それで修正しろ』",
+  "instruction": "Restore Sellemy's discovery-first product recommendations: three editorial groupings with two distinct products each, independent individual appeal and grounded recommendation instead of mandatory head-to-head comparison. Preserve all live article markup, JSON fields and 3x2 display structure, price eligibility, identity, evidence and independent gates. Stage only until CEO approves promotion.",
+  "implementer": "sellemy-ops via Mac Studio v2; no Codex code edits",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3",
+    "https://app.notion.com/p/3dc67ec6a10081928228c86453863a89",
+    "https://app.notion.com/p/3dc67ec6a10081eebb34ff08d650e532",
+    "https://app.notion.com/p/3fd67ec6a10081339edef6932aae8d0e"
+  ],
+  "allowed_paths": [
+    "config/comparison-acceptance.md",
+    "config/editorial-qa.md",
+    "config/writer-editorial-role.md",
+    "config/sellemy-codex-shared-brief.md",
+    "pipeline/planning_runtime.py",
+    "pipeline/editorial_plan.py",
+    "pipeline/writer_runtime.py",
+    "pipeline/semantic_review.py",
+    "pipeline/local_semantic_review.py",
+    "pipeline/comparison_acceptance.py",
+    "tests/test_discovery_editorial_contract.py",
+    "change-contracts/20261115-discovery-editorial-no-layout-change.json",
+    "tests/test_editorial_plan.py",
+    "tests/test_editorial_qa.py",
+    "tests/test_comparison_acceptance.py",
+    "tests/test_planning_and_selection.py",
+    "tests/test_writer_providers.py"
+  ],
+  "preserved_rules": [
+    "No HTML, CSS, renderer, UI, URL, image, article field or layout modifications",
+    "Retain exactly three editorial groupings and six unique products, two per grouping",
+    "Retain claim grounding, verified source quotes, product identity and duplicate detection",
+    "No ranking/mandatory head-to-head superiority, no fabricated value or performance",
+    "Retain independent QA, publish controls, existing revision and CEO staging approval gates",
+    "Legacy comparison_axes and comparison_groups JSON keys are unchanged for compatibility"
+  ],
+  "acceptance_tests": [
+    "tests/test_discovery_editorial_contract.py",
+    "tests/test_editorial_plan.py",
+    "tests/test_editorial_qa.py",
+    "tests/test_comparison_acceptance.py",
+    "tests/test_planning_and_selection.py",
+    "tests/test_writer_providers.py"
+  ]
+}

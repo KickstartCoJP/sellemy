@@ -50,9 +50,9 @@ def split_local_review(evidence: dict, payload: dict) -> dict:
     )
     identity, identity_meta = generate_json(
         schema=IDENTITY_SCHEMA,
-        prompt=(CONTRACT + '\nTASK 2 ONLY: audit product identity/distinctness/topic fit and whether at least two useful comparison axes are grounded in Evidence. '
+        prompt=(CONTRACT + '\nTASK 2 ONLY: audit product identity/distinctness/topic fit and whether each of three editorial groupings can credibly introduce two distinct products using grounded Evidence. The legacy comparison_axes_ok field means valid editorial grouping, NOT head-to-head comparison. '
                 'Ignore prose wording defects. Color, quantity, bundle, seller, and listing wording are not independent products. '
-                'If the six-product set cannot be safely compared without reselection or Evidence rebuild, needs_product_reselection=true. '
+                'If product identities are demonstrably duplicate, off-topic, or grouping has no product fit, needs_product_reselection=true. Missing head-to-head comparison is not a failure. '
                 'Return JSON only.\nDATA:\n' + data),
     )
     if identity.get('needs_product_reselection') is True or identity.get('identity_ok') is not True or identity.get('comparison_axes_ok') is not True:

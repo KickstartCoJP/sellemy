@@ -246,9 +246,10 @@ def review_issues(review, evidence, *, article=False):
     ):
         issues.append('duplicate pair not substantiated by matching product identities')
     issues.extend(duplicate_pair_issues(review, evidence))
-    # Topic fit and meaningful comparison are judged semantically. Unknown
+    # Topic fit and meaningful per-product recommendation are judged semantically. Unknown
     # specification anchors do not by themselves reject an identifiable product.
-    # Semantic comparison QA owns product identity and comparison viability.
+    # Legacy meaningful_comparison flag now denotes six-product discovery viability.
+    # Product QA owns product identity and fit, not head-to-head comparison.
     # Article prose, conclusions and factual claims have independent editorial
     # and claim gates; never give this gate a second editorial veto.
     required = ['distinct_products', 'meaningful_comparison']
