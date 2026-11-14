@@ -40,7 +40,7 @@ class LegacyArticleRecoveryTests(unittest.TestCase):
         self._save(self.articles/self.slug/'article.html', 'new')
         self._save(self.source/'final-validation.json', {'accepted_bodies': 1})
         self._save(self.jobs/self.slug/'topic.json',
-                   {'slug': self.slug, 'category': 'gadget'})
+                   {'slug': self.slug, 'category': 'gadget', 'title': 'Previous title'})
         self._save(self.jobs/self.slug/'evidence.json',
                    {'slug': self.slug, 'category': 'gadget',
                     'eyecatch_image': '/img/sample-article/sample-article.png'})
@@ -78,25 +78,84 @@ class LegacyArticleRecoveryTests(unittest.TestCase):
         self.assertEqual(recovery.read_artifact(self.slug, 'legacy-original-20261115/state.json')['status'], 'PUBLISHED')
         self.assertEqual(legacy.import_one(self.source), {'admitted': False})
 
-    def test_incomplete_sources_not_admitted_or_mutated(self):
+    def test_incomplete_sources_route_to_planning_and_preserve_original_approval(self):
         evidence = json.loads((self.articles/self.slug/'evidence.json').read_text())
         evidence['products'][2]['sources'][0]['verified'] = False
         self._save(self.articles/self.slug/'evidence.json', evidence)
-        previous = (self.jobs/self.slug/'state.json').read_bytes()
-        self.assertFalse(legacy.has_pending(self.source))
-        self.assertEqual(legacy.import_one(self.source), {'admitted': False})
-        self.assertEqual((self.jobs/self.slug/'state.json').read_bytes(), previous)
-        self.assertFalse((self.jobs/self.slug/legacy.MARKER).exists())
+        self.assertTrue(legacy.has_pending(self.source))
+        self.assertTrue(legacy.import_one(self.source)['replanning'])
+        state = recovery.load_job(self.slug)
+        self.assertEqual((state['status'], state['current_stage']), ('ACTIVE', 'PLANNING_PENDING'))
         self.assertEqual(recovery.read_artifact(self.slug, 'chat-publish-approval.json'),
                          {'publish_allowed': True})
+        self.assertEqual((self.repo/'article/gadget/sample-article.html').read_text(), 'old')
+        self.assertEqual(legacy.import_one(self.source), {'admitted': False})
 
-    def test_unverified_titles_or_unattributed_sources_do_not_qualify(self):
+    def test_unverified_titles_or_unattributed_sources_replan_instead_of_writer(self):
         evidence = json.loads((self.articles/self.slug/'evidence.json').read_text())
         evidence['products'][0]['sources'] = [{'verified': True, 'url': 'http://bad',
                                               'excerpt': 'Product details'}]
         self._save(self.articles/self.slug/'evidence.json', evidence)
-        self.assertFalse(legacy.has_pending(self.source))
-        self.assertFalse(legacy.import_one(self.source)['admitted'])
+        self.assertTrue(legacy.has_pending(self.source))
+        result = legacy.import_one(self.source)
+        self.assertTrue(result['replanning'])
+        self.assertEqual(recovery.load_job(self.slug)['current_stage'], 'PLANNING_PENDING')
+
+    def test_planning_failure_keeps_original_evidence_and_gate(self):
+        evidence = json.loads((self.articles/self.slug/'evidence.json').read_text())
+        evidence['products'][0]['sources'] = []
+        self._save(self.articles/self.slug/'evidence.json', evidence)
+        legacy.import_one(self.source)
+        previous_evidence = (self.jobs/self.slug/'evidence.json').read_bytes()
+        previous_approval = (self.jobs/self.slug/'chat-publish-approval.json').read_bytes()
+        with patch('planning_runtime.replan_published_topic', side_effect=ValueError('source unavailable')):
+            result = legacy.replan_one(self.slug)
+        self.assertEqual(result['action'], 'hold')
+        self.assertEqual(recovery.load_job(self.slug)['current_stage'], 'PLANNING_HOLD')
+        self.assertEqual((self.jobs/self.slug/'evidence.json').read_bytes(), previous_evidence)
+        self.assertEqual((self.jobs/self.slug/'chat-publish-approval.json').read_bytes(), previous_approval)
+        self.assertFalse((self.jobs/self.slug/'product-attempt-fingerprint.json').exists())
+        self.assertEqual((self.repo/'article/gadget/sample-article.html').read_text(), 'old')
+
+    def test_planning_product_qa_pass_resumes_writer_and_revokes_old_gate(self):
+        evidence = json.loads((self.articles/self.slug/'evidence.json').read_text())
+        evidence['products'][0]['sources'] = []
+        self._save(self.articles/self.slug/'evidence.json', evidence)
+        legacy.import_one(self.source)
+        new_products = [{'ref': f'P{i}', 'asin': f'B00000000{i}',
+                         'sources': [{'verified': True, 'url': f'https://example.org/new{i}',
+                                      'excerpt': f'Product {i}'}]} for i in range(6)]
+        topic = {'slug': self.slug, 'category': 'gadget', 'title': 'New title',
+                 'comparison_axes': [{'id': f'axis{i}', 'keywords': ['product'],
+                                      'label': f'Axis {i}'} for i in range(3)]}
+        fresh = {'slug': self.slug, 'category': 'gadget', 'products': new_products}
+        with patch('planning_runtime.replan_published_topic', return_value=(topic, {'provider': 'test'})), \
+             patch('growth_role_business.collect_unique_products', return_value=(new_products, {'complete': True})), \
+             patch('product_selection.select_six', return_value=(new_products, {'axes': []})), \
+             patch('growth_role_business.build_evidence', return_value=fresh), \
+             patch('semantic_review.independent_review', return_value={'status': 'ACCEPTED'}), \
+             patch('comparison_acceptance.product_issues', return_value=[]):
+            result = legacy.replan_one(self.slug)
+        self.assertEqual(result['product_qa'], 'PASS')
+        self.assertEqual(recovery.load_job(self.slug)['current_stage'], 'WRITER_PENDING')
+        self.assertEqual(recovery.read_artifact(self.slug, 'topic.json')['title'], 'New title')
+        self.assertEqual(recovery.read_artifact(self.slug, 'chat-publish-approval.json'), {})
+        self.assertEqual(recovery.read_artifact(self.slug, legacy.MARKER)['phase'], 'regular_repair')
+        self.assertEqual((self.repo/'article/gadget/sample-article.html').read_text(), 'old')
+        self.assertEqual(recovery.read_artifact(self.slug, 'legacy-original-20261115/state.json')['status'], 'PUBLISHED')
+
+    def test_existing_legacy_product_hold_restart_uses_planning(self):
+        self.assertTrue(legacy.import_one(self.source)['admitted'])
+        state = recovery.load_job(self.slug)
+        state.update(current_stage='PRODUCT_HOLD', status='ACTIVE', source='legacy_repair',
+                     next_retry_at=None)
+        recovery._atomic_json(recovery.state_path(self.slug), state)
+        evidence = recovery.read_artifact(self.slug, 'evidence.json')
+        evidence['products'][0]['sources'] = []
+        recovery.write_artifact(self.slug, 'evidence.json', evidence)
+        result = legacy.import_one(self.source)
+        self.assertTrue(result['replanning'])
+        self.assertEqual(recovery.load_job(self.slug)['current_stage'], 'PLANNING_PENDING')
 
     def test_skip_ordinary_active_job(self):
         state = recovery.load_job(self.slug)

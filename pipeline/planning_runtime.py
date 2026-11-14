@@ -194,6 +194,42 @@ def _discover_local_candidates(prompt: str) -> list[dict]:
     return CandidateBatch(value['candidates'], metadata)
 
 
+
+def replan_published_topic(*, slug: str, category: str, previous_title: str) -> tuple[dict, dict]:
+    """Run real Planning for the same published article, not fresh-topic ranking.
+
+    A published slug must remain stable. Fresh topic ranking intentionally
+    rejects existing slugs and therefore must never be used for this route.
+    """
+    import copy
+    schema = copy.deepcopy(PLANNING_SCHEMA)
+    schema['properties']['candidates'].update(minItems=1, maxItems=1)
+    prompt = CONTRACT + '\n' + (
+        '既存の公開済み商品紹介記事を最新のPlanning基準で再企画してください。'
+        '既存URL・slug・カテゴリ・購買目的を厳密に維持し、旧商品の選定結果や旧Evidenceは引き継がないでください。'
+        '独立した商品を3つの紹介切り口ごとに2商品選べる新企画が必要です。'
+        '現在の商品の根拠となる検証可能なメーカー・仕様情報の収集可能性を評価してください。'
+        '候補はちょうど1件のみで、slugとcategoryは入力どおり完全一致としてください。'
+        '既存記事の公開内容は自動変更しません。\n'
+    ) + json.dumps({'slug': slug, 'category': category, 'previous_title': previous_title}, ensure_ascii=False)
+    def local():
+        kind, command, model, _ = _planning_provider('primary')
+        response = _invoke_planning(kind, command, model, prompt,
+                                    int(os.environ.get('SELLEMY_PLANNING_TIMEOUT_SECONDS', '300')))
+        metadata = response.pop('_runtime_meta', {})
+        return response, {'planning_provider_used': kind + ':' + model,
+                          'codex_runtime': metadata}
+    value, metadata = route('planner', schema, prompt, local)
+    candidates = value.get('candidates') if isinstance(value, dict) else None
+    if not isinstance(candidates, list) or len(candidates) != 1:
+        raise PlanningError('published article replan requires exactly one candidate')
+    topic = candidates[0]
+    validate_candidate(topic)
+    if topic['slug'] != slug or topic['category'] != category:
+        raise PlanningError('published article identity must remain unchanged')
+    return topic, metadata
+
+
 def validate_candidate(candidate: dict) -> None:
     for field in ('slug', 'category', 'query', 'title', 'intent_key', 'reader_persona', 'comparison_axes', 'signals'):
         if field not in candidate:
