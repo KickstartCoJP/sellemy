@@ -1,0 +1,11 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "TASK-BU002-FAILED-TEN-CEO-3062268225361A1F9DEA",
+  "instruction_ref": "OSCHIEF-FAILED10-3062268225361A1F9DEA-AUDIT-001",
+  "instruction": "After 8 observed Writer iterations of one DAC article containing title-only specifications and cross-product unsupported comparisons, amend only Writer source anchoring instructions. Keep all QA and existing product gates unchanged and stage for CEO approval.",
+  "implementer": "sellemy-ops via Mac Studio v2",
+  "canonical_refs": ["https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3"],
+  "allowed_paths": ["pipeline/writer_runtime.py", "tests/test_dac_writer_source_anchoring.py", "change-contracts/20261114-dac-writer-source-anchoring.json"],
+  "preserved_rules": ["Product QA, Writer QA, six verified products and CEO review unchanged", "No mass changes, no relaxation, no unsupervised publication", "QA PASS portions remain untouched by programmatic edits"],
+  "acceptance_tests": ["tests/test_dac_writer_source_anchoring.py"]
+}
