@@ -1,0 +1,158 @@
+{
+  "schema": "sellemy-failed37-planning-review-input/v1",
+  "task_id": "TASK-BU002-FAILED37-REPLAN-20261115",
+  "slug": "countertop-kitchen-scrap-bins",
+  "job_state": "FAILED",
+  "failed_stage": "WRITER_FAILED",
+  "original_job_sha256": {
+    "acceptance.json": "59a4c975bf5463a165860faffd19bfa42e094127964241f89d5956d286fc6b25",
+    "editorial-plan.json": "ff67440e6303e394df0f2d7b38634df0ca3c6597f82041ddb74389a576e3c91d",
+    "evidence.json": "17bea7f2f0ab98bd6fa0fe83b270711cca367fab4df807c821c333573541ae48",
+    "gate-feedback.json": "8f260325f3439367d8932977c6e274cdfd7a02d98794d8a0d325916c0dae7ac4",
+    "payload.json": "78d5ac049d0004f5b6ef0b64170dc3cf31ca5c3b28d9a895b74eec198590bb6f",
+    "qa.json": "cab50e88f3db7a0b8336e1c082b2570f14cccd557e4ae50af138b862006a4ae1",
+    "selection.json": "a8d92a5724684968cc8b2382a17a4c7fa309042b07e44bd60c19ffcc92eebd09",
+    "topic.json": "229c434620e4d68865ffeeecd6dfd2a4b6e31dbc8307a250836b6bf0975a0cd1"
+  },
+  "planning_candidate": {
+    "slug": "countertop-kitchen-scrap-bins",
+    "category": "dailygoods",
+    "title": "卓上用の生ごみ容器6選｜置き場所・ふたの構造・捨て方で選ぶ",
+    "query": "キッチン 生ごみ 卓上 容器",
+    "reader_persona": {
+      "editorial_depth": "置く寸法、開け閉め、袋の使い方を日常語で説明する",
+      "knowledge_level": "ごみ箱の構造や容量には詳しくない",
+      "purchase_goal": "調理台に置けて片付けやすい容器を選ぶ",
+      "reader": "調理中に出る野菜くずの置き場に困っている人"
+    },
+    "introduction_angles": [
+      {
+        "id": "footprint",
+        "label": "調理台での設置寸法と容量",
+        "keywords": [
+          "卓上 生ごみ 容器 小型",
+          "キッチン 生ごみ ポット 容量"
+        ]
+      },
+      {
+        "id": "lid",
+        "label": "ふたの開け閉めと投入口",
+        "keywords": [
+          "生ごみ 卓上 容器 ふた付き",
+          "生ごみ ポット ワンタッチ ふた"
+        ]
+      },
+      {
+        "id": "emptying",
+        "label": "中身の捨て方と洗う部品",
+        "keywords": [
+          "生ごみ 卓上 容器 内桶",
+          "生ごみ 容器 袋止め"
+        ]
+      }
+    ]
+  },
+  "original_product_inventory": [
+    {
+      "ref": "p1",
+      "asin": "B0GY8L7DXV",
+      "name": "SONGMICS コンポスト 生ゴミ入れ 卓上 ゴミ箱 7L コバエ対策 臭わない おしゃれ",
+      "prior_individual_selection_reason": "約24×20×19.5cm・7Lで、野菜くずが多く出る調理でもまとめて入れたい人向け。置く場所を寸法で確かめられ、取っ手付きの水切りカゴを取り出して捨てられる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p2",
+      "asin": "B01KXGUPUA",
+      "name": "山崎実業(Yamazaki) ポリ袋エコホルダー L ブラック 約W15×D14.5×H22cm タワー tower 卓上ゴミ箱 三角コーナー 水切り スリムに折り畳める 3181",
+      "prior_individual_selection_reason": "使用時は約幅15×奥行14.5cmで、調理台の空き場所に置けるか判断しやすい。ポリ袋を掛けて使い、使わないときは折り畳めるため、常設する場所を取りにくい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p3",
+      "asin": "B0CQJV94RS",
+      "name": "メパル(mepal) WASTE BIN CALYPSO 蓋付きゴミ箱 カリプソ 1.7L ノルディックホワイト リサイクル素材",
+      "prior_individual_selection_reason": "直径17.5×高さ18.4cmの卓上用ふた付き容器。手で開ける取り外し可能なふたなので、調理中の開け閉めよりも、ふたを外して口を広く使いたい人が選びやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p4",
+      "asin": "B079SX134Q",
+      "name": "ideaco(イデアコ) ゴミ箱 フタ付 1.4L TUBELOR mini flapチューブラー ミニフラップ グレー 222GY",
+      "prior_individual_selection_reason": "プッシュ式のふたで開けるタイプ。幅16.5×奥行8.5×高さ17cmと奥行きが浅く、調理台の手前を空けたい人にも寸法を確認して選べる。推奨される袋の大きさも明記されている。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p5",
+      "asin": "B001TNBXGC",
+      "name": "ideaco(イデアコ) ゴミ箱 丸形 1.2L mini TUBELOR white ミニチューブラー ホワイト 212WH",
+      "prior_individual_selection_reason": "ふたのない1.2Lの容器で、出た野菜くずをそのまま入れやすい。使いやすいゴミ袋の寸法が示されているため、袋ごと中身を捨てる使い方を準備しやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p6",
+      "asin": "B0GQFRJP9D",
+      "name": "マーナ (marna) ポリ袋ホルダー (折りたためてコンパクトに / 薄さ約3cm) 大きく開いて捨てやすい キッチン 生ごみ 卓上ゴミ箱 K821",
+      "prior_individual_selection_reason": "ポリ袋をフレームに掛ける方式で、中身は袋ごと捨てられる。袋口が大きく開き、推奨袋サイズも約幅25×高さ35cmと明記されているので、購入前に手持ちの袋と合わせやすい。凹凸が少なく、余分なパーツがない構造も片付けのしやすさにつながる。",
+      "verified_excerpt_sources": 1
+    }
+  ],
+  "original_qa_pass_fields": [
+    "affiliate_pass",
+    "asin_pass",
+    "banned_phrase_pass",
+    "canonical_pass",
+    "category_pass",
+    "conclusion_brand_free_pass",
+    "description_hard_min_pass",
+    "description_target_pass",
+    "description_uniqueness_pass",
+    "distinct_openings_endings_pass",
+    "fixed_price_pass",
+    "h3_len_pass",
+    "image_identity_pass",
+    "lead_brand_free_pass",
+    "nav_footer_pass",
+    "no_repeated_sentences_pass",
+    "product_image_audit_pass",
+    "summary_brand_free_pass"
+  ],
+  "independent_review_required": true,
+  "independent_review_status": "PENDING",
+  "replanning_checks": {
+    "reader_need": {
+      "question": "What concrete product-selection need can be met?",
+      "observed_reader": "調理中に出る野菜くずの置き場に困っている人",
+      "purchase_goal": "調理台に置けて片付けやすい容器を選ぶ",
+      "pass": null
+    },
+    "six_individual_recommendations": {
+      "question": "Which products each meet the stated need, with source-backed individual value?",
+      "pass": null
+    },
+    "three_discovery_angles": {
+      "question": "Are the 3 angles distinct discovery entrypoints without head-to-head rankings?",
+      "pass": null
+    },
+    "replan_outcome": {
+      "instruction": "Approve existing theme only if reader intent and genuine product recommendations are independently verified; otherwise reselect Planning theme and products.",
+      "pass": null
+    }
+  },
+  "product_qa": {
+    "existing_independent_receipt": "STALE_CONTRACT",
+    "new_product_qa_required": true,
+    "same_product_allowed_if_verified": true,
+    "product_count": 6,
+    "verified_per_product": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "next_action": "independent_planning_qa_then_conditional_product_qa_then_writer_qa_then_ceo_gate",
+  "execution_allowed": false,
+  "production_article_changed": false
+}

@@ -1,0 +1,158 @@
+{
+  "schema": "sellemy-failed37-planning-review-input/v1",
+  "task_id": "TASK-BU002-FAILED37-REPLAN-20261115",
+  "slug": "winter-window-gap-sealing-tapes",
+  "job_state": "FAILED",
+  "failed_stage": "WRITER_FAILED",
+  "original_job_sha256": {
+    "acceptance.json": "589c750265e539b678f1de965677d61aae3843d134afe91a777c161405167249",
+    "editorial-plan.json": "291a94fb4cbc86bf0285006c5896559ae4485fb71be2d6b0c697fad5faf98648",
+    "evidence.json": "66e4fb1524c58a970f78eabea3cef7c65734f74c4dd7c1641c31d6d8210243e0",
+    "gate-feedback.json": "71a3c3409644f0276eb217e8ac070d47ebdb548409a60a8baac382dfff3a4ab9",
+    "payload.json": "f469d01eaa70f303c821cf667f10f2b8caafc0222751740e0ca646701a352ca8",
+    "qa.json": "7c102c5d3a84f3822b540749b14f0a80ad42effa13ec11ecda609daf15ee55e4",
+    "selection.json": "2e7eac5a56a35e0c5f90dc02277139b9101af1642a7b0bd3d7880a63db59f9fb",
+    "topic.json": "c75b098fe1b7889f570334f0a0aa14418da5050fd84946368151bc94ab836e82"
+  },
+  "planning_candidate": {
+    "slug": "winter-window-gap-sealing-tapes",
+    "category": "dailygoods",
+    "title": "窓のすき間テープ6選｜貼る場所・厚み・開閉への影響で選ぶ",
+    "query": "窓のすき間をふさぐテープ",
+    "reader_persona": {
+      "editorial_depth": "貼り付け箇所と寸法の測り方を日常語で説明し、断熱効果を推測しない",
+      "knowledge_level": "窓用フィルムとの違いや、サッシのどこに貼るかを知りたい",
+      "purchase_goal": "窓を開閉できる状態で、すき間の寸法に合うテープを選びたい",
+      "reader": "冬に窓まわりから入る冷気が気になる賃貸住宅の住人"
+    },
+    "introduction_angles": [
+      {
+        "id": "placement",
+        "label": "貼り付ける窓の部位",
+        "keywords": [
+          "窓 サッシ すき間テープ",
+          "引き違い窓 すき間テープ"
+        ]
+      },
+      {
+        "id": "dimensions",
+        "label": "すき間に合う幅と厚み",
+        "keywords": [
+          "窓 すき間テープ 厚さ 3mm",
+          "サッシ すき間テープ 幅"
+        ]
+      },
+      {
+        "id": "installation",
+        "label": "貼り方と窓の開閉条件",
+        "keywords": [
+          "窓 すき間テープ 開閉できる",
+          "窓用 すき間テープ はがせる"
+        ]
+      }
+    ]
+  },
+  "original_product_inventory": [
+    {
+      "ref": "p1",
+      "asin": "B004CHLJ3O",
+      "name": "槌屋 すき間モヘアシール グレー 幅9X高さ9mmX長さ2m No.9090",
+      "prior_individual_selection_reason": "サッシ・建具向けのモヘア型で、幅9mm・高さ9mm・長さ2mと寸法が明記されている。貼る面の幅とすき間を測って選びやすく、窓1か所から試したい人にも長さが適している。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p2",
+      "asin": "B09H3WMVDM",
+      "name": "隙間テープ 10ｍ×9mm×9mm グレー モヘア すき間シール すきまモヘアテープ 網戸用 き間テープ 玄関ドア 戸当たり 窓 サッシ用 隙間対策 (グレー)",
+      "prior_individual_selection_reason": "窓や網戸の戸当たりに使うモヘア型。幅9mm・厚さ9mmで、適用するすき間は4.5〜8.0mmと明記されており、測った寸法と照らし合わせやすい。10m入りなので複数の窓に貼りたい人の選択肢になる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p3",
+      "asin": "B0H3SW4SSX",
+      "name": "隙間テープ クッションテープ 厚さ3x幅10mm スポンジテープ ドア 防音 防振 パッキン 引き戸 窓 扉 玄関 すきまテープ 衝撃吸収 滑り止め",
+      "prior_individual_selection_reason": "厚さ3mm・幅10mmのEVA製テープ。薄いすき間に合わせ、貼る面に10mmの幅があるか確認して選べる。裏面が粘着式で工具なしで貼れるため、寸法が合えば導入しやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p4",
+      "asin": "B09MJCTZS4",
+      "name": "隙間テープ スポンジ NBR/PVC 片面粘着 戸当たり 防音 防風 黒 (厚さ3mm*幅12mm*長さ5m X 3本)",
+      "prior_individual_selection_reason": "厚さ3mm・幅12mmの発泡ゴム製で、同じ3mm厚でも幅が広い貼り面に向く。窓・サッシのすき間が用途に含まれ、ハサミで必要な長さに切れるため、測った場所に合わせて使いやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p5",
+      "asin": "B00JH6HDYE",
+      "name": "槌屋ティスコ ゴールド 開き戸すき間シール ベース幅10mmXブラシ長さ10mmX長さ2m",
+      "prior_individual_selection_reason": "ブラシ部分がすき間に当たる開き戸用シールで、窓の動きを損なわない設計と説明されている。ベース幅10mm・ブラシ長10mmを確認でき、貼る面の汚れを拭いてから両面テープで貼る手順も明記されているため、開閉する箇所に合わせて選びやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p6",
+      "asin": "B006GKUATE",
+      "name": "セメダイン(Cemedine) ドア・サッシ用 高断熱すきま用テープ グレー 10mm×15mm×2m TP-522",
+      "prior_individual_selection_reason": "ドア・サッシ用のフォーム製テープで、厚み10mm・幅15mm・長さ2mが明記されている。戸当たりに15mmの貼り幅があり、閉めたときに10mm厚を受けられる場所か確認して選べる。2m入りで必要な箇所から使いやすい。",
+      "verified_excerpt_sources": 1
+    }
+  ],
+  "original_qa_pass_fields": [
+    "affiliate_pass",
+    "asin_pass",
+    "banned_phrase_pass",
+    "canonical_pass",
+    "category_pass",
+    "conclusion_brand_free_pass",
+    "description_hard_min_pass",
+    "description_target_pass",
+    "description_uniqueness_pass",
+    "distinct_openings_endings_pass",
+    "fixed_price_pass",
+    "h3_len_pass",
+    "image_identity_pass",
+    "lead_brand_free_pass",
+    "nav_footer_pass",
+    "no_repeated_sentences_pass",
+    "product_image_audit_pass",
+    "summary_brand_free_pass"
+  ],
+  "independent_review_required": true,
+  "independent_review_status": "PENDING",
+  "replanning_checks": {
+    "reader_need": {
+      "question": "What concrete product-selection need can be met?",
+      "observed_reader": "冬に窓まわりから入る冷気が気になる賃貸住宅の住人",
+      "purchase_goal": "窓を開閉できる状態で、すき間の寸法に合うテープを選びたい",
+      "pass": null
+    },
+    "six_individual_recommendations": {
+      "question": "Which products each meet the stated need, with source-backed individual value?",
+      "pass": null
+    },
+    "three_discovery_angles": {
+      "question": "Are the 3 angles distinct discovery entrypoints without head-to-head rankings?",
+      "pass": null
+    },
+    "replan_outcome": {
+      "instruction": "Approve existing theme only if reader intent and genuine product recommendations are independently verified; otherwise reselect Planning theme and products.",
+      "pass": null
+    }
+  },
+  "product_qa": {
+    "existing_independent_receipt": "STALE_CONTRACT",
+    "new_product_qa_required": true,
+    "same_product_allowed_if_verified": true,
+    "product_count": 6,
+    "verified_per_product": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "next_action": "independent_planning_qa_then_conditional_product_qa_then_writer_qa_then_ceo_gate",
+  "execution_allowed": false,
+  "production_article_changed": false
+}

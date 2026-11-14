@@ -1,0 +1,155 @@
+{
+  "schema": "sellemy-failed37-planning-review-input/v1",
+  "task_id": "TASK-BU002-FAILED37-REPLAN-20261115",
+  "slug": "kitchen-measuring-cups-for-liquids",
+  "job_state": "FAILED",
+  "failed_stage": "WRITER_FAILED",
+  "original_job_sha256": {
+    "acceptance.json": "b1b38652a8736f19e1dbb00eeeaa9adc5bb0967d983a1aa5a85e6be283286afc",
+    "editorial-plan.json": "2344ecb97046bbbb759f5f72583fd43d503d843f759940e18cb46f03a12bc0bb",
+    "evidence.json": "adc415589b79c4ebe6178915b8f91d13a17a744e01c7d86aba7273d2919605e6",
+    "gate-feedback.json": "8d384dd579713e7cd5f6029688cf7cd3c8ee52fb15f73c5c33c071d31d209b30",
+    "payload.json": "e48e6a4fb6f7aa9a459034a739068a9edb319dee1649910085544c4ffbb9ba5a",
+    "qa.json": "7b3ef65b19a7d2985bcc7de227c1188dd21a840600f93ad8cb0e31ec95bbc76d",
+    "selection.json": "c03d7b57ab39b68ba338abf6e491944704b05ce1053e34690c24194207b6cce1",
+    "topic.json": "4c7fdf98234b952e6bdd1ef2a6b5435d68ed6018a50f662d9cf46528348332f3"
+  },
+  "planning_candidate": {
+    "slug": "kitchen-measuring-cups-for-liquids",
+    "category": "dailygoods",
+    "title": "液体用計量カップ6選｜目盛りの読み方・容量・注ぎやすさで選ぶ",
+    "query": "液体用 計量カップ キッチン",
+    "reader_persona": {
+      "editorial_depth": "目盛りの単位、容量、注ぎ口と加熱条件を説明する",
+      "knowledge_level": "mlの目盛りは読めるが製品差は意識していない",
+      "purchase_goal": "よく量る量と使う熱源に合うカップを選ぶ",
+      "reader": "料理や菓子作りで液体を量る人"
+    },
+    "introduction_angles": [
+      {
+        "id": "scale",
+        "label": "目盛りの単位と最小刻み",
+        "keywords": [
+          "液体用 計量カップ 目盛り 10ml"
+        ]
+      },
+      {
+        "id": "capacity",
+        "label": "一度に量れる容量と本体寸法",
+        "keywords": [
+          "液体用 計量カップ 500ml"
+        ]
+      },
+      {
+        "id": "pour_use",
+        "label": "注ぎ口と使用可能な加熱条件",
+        "keywords": [
+          "液体用 計量カップ 注ぎ口 電子レンジ"
+        ]
+      }
+    ]
+  },
+  "original_product_inventory": [
+    {
+      "ref": "p1",
+      "asin": "B018Q6T34I",
+      "name": "エムテートリマツ SUNNEX MTI ポリプロメジャーカップ 1.0L ポリプロピレン製だからこわれにくい 耐熱温度120℃ 熱湯も量れる",
+      "prior_individual_selection_reason": "10mlの印刷目盛りと50ml刻みの目盛りがあり、細かく量る量と目盛りの見やすさを比べて選べる。容量1Lなので、料理で液体をまとめて量りたい人にも選びやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p2",
+      "asin": "B0DG5DV7Z8",
+      "name": "メジャーカップ 目盛り ジガーカップ カクテル ウイスキー 計量 ステンレス鋼 (ブラック, 30ml / 60ml)",
+      "prior_individual_selection_reason": "10ml・20mlの目盛りが確認でき、少量の液体を量りたい人に選びやすい。両側にカップがあるステンレス製ジガーで、1Lの計量カップとは用途が異なる。ただし記載された容量には食い違いがあるため、購入前に容量を確認したい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p3",
+      "asin": "B003I85WQI",
+      "name": "パール金属 日本製 耐熱 計量カップ 500ml 食洗機対応 BLACKS C-8622",
+      "prior_individual_selection_reason": "容量500ml、サイズは約幅135×奥行88×高さ110mm。一般的な調理で使う量を一度に量れる単品のカップとして選びやすく、食洗機対応も確認できる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p4",
+      "asin": "B0H6ZS3BWJ",
+      "name": "岩崎工業 ラストロウェア 計量カップ メジャーカップ 500ml 2個セット 軽量 耐熱 計量 米 液体 砂糖 小麦粉 食洗機対応 レッド LSX507 日本製",
+      "prior_individual_selection_reason": "1個あたり容量580ml、サイズ167×97×108mmの2個セット。500ml前後を量るカップを複数使いたい人に選びやすく、取っ手と底には滑り止めのエラストマーが使われている。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p5",
+      "asin": "B0CY4QNCS7",
+      "name": "OXO オクソー 計量カップ アングルドメジャーカップ 中 500ml 電子レンジ 食洗機 対応 耐熱 トライタン製",
+      "prior_individual_selection_reason": "容量500mlで、内側の傾斜した目盛りを上から読めるため、量を確認してから液体を移す調理に選びやすい。商品名には電子レンジ・食洗機対応と記載されている。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p6",
+      "asin": "B0C28374NK",
+      "name": "パール金属(PEARL METAL) 計量カップ メジャーカップ 500ml 耐熱 熱湯対応 電子レンジ対応 食洗機対応 日本製 ホワイト Simple use CC-1654",
+      "prior_individual_selection_reason": "容量約500ml、サイズ約幅13.5×奥行8.5×高さ11cm。熱湯・電子レンジ・食洗機への対応が明記されており、温める液体を量る用途で選びやすい。",
+      "verified_excerpt_sources": 1
+    }
+  ],
+  "original_qa_pass_fields": [
+    "affiliate_pass",
+    "asin_pass",
+    "banned_phrase_pass",
+    "canonical_pass",
+    "category_pass",
+    "conclusion_brand_free_pass",
+    "description_hard_min_pass",
+    "description_target_pass",
+    "description_uniqueness_pass",
+    "distinct_openings_endings_pass",
+    "fixed_price_pass",
+    "h3_len_pass",
+    "image_identity_pass",
+    "lead_brand_free_pass",
+    "nav_footer_pass",
+    "no_repeated_sentences_pass",
+    "product_image_audit_pass",
+    "summary_brand_free_pass"
+  ],
+  "independent_review_required": true,
+  "independent_review_status": "PENDING",
+  "replanning_checks": {
+    "reader_need": {
+      "question": "What concrete product-selection need can be met?",
+      "observed_reader": "料理や菓子作りで液体を量る人",
+      "purchase_goal": "よく量る量と使う熱源に合うカップを選ぶ",
+      "pass": null
+    },
+    "six_individual_recommendations": {
+      "question": "Which products each meet the stated need, with source-backed individual value?",
+      "pass": null
+    },
+    "three_discovery_angles": {
+      "question": "Are the 3 angles distinct discovery entrypoints without head-to-head rankings?",
+      "pass": null
+    },
+    "replan_outcome": {
+      "instruction": "Approve existing theme only if reader intent and genuine product recommendations are independently verified; otherwise reselect Planning theme and products.",
+      "pass": null
+    }
+  },
+  "product_qa": {
+    "existing_independent_receipt": "STALE_CONTRACT",
+    "new_product_qa_required": true,
+    "same_product_allowed_if_verified": true,
+    "product_count": 6,
+    "verified_per_product": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "next_action": "independent_planning_qa_then_conditional_product_qa_then_writer_qa_then_ceo_gate",
+  "execution_allowed": false,
+  "production_article_changed": false
+}

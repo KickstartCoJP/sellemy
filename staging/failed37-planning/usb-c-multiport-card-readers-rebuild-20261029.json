@@ -1,0 +1,162 @@
+{
+  "schema": "sellemy-failed37-planning-review-input/v1",
+  "task_id": "TASK-BU002-FAILED37-REPLAN-20261115",
+  "slug": "usb-c-multiport-card-readers-rebuild-20261029",
+  "job_state": "FAILED",
+  "failed_stage": "WRITER_FAILED",
+  "original_job_sha256": {
+    "acceptance.json": "b87391d60638411e7f4b2213562e4bc99312a40258a5593531cc90f68dad0f2b",
+    "editorial-plan.json": "ab7a647e12c88947d28e2d8b9e269ca20873b61dc5c70fe0ad323548bc7fb422",
+    "evidence.json": "c3fa147fe90b94804b70a18e6fabbc12f975fb15645c7311dd6530e4a385ab4f",
+    "eyecatch-receipt.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "gate-feedback.json": "7bc7e30318c9ea234b1ef609ef26455d45b8a942656e35ef248ea0f923cfc2be",
+    "payload.json": "125843d684bf38fd2672ee08845f1bdbe2b91bd4fe6ce24631cd7e7c1f71b266",
+    "qa.json": "e81cdeb875f7ddc8fdbc7c85995b569e01311aca368d369f77ac851ac4477a6f",
+    "selection.json": "cb84ca23a98ba1a2e8afb73e711bf062541904c811844497aab4bfb3a636b547",
+    "topic.json": "1c3f7d460db7a72da2e10385f919e5739dcd7218f910d4d5a3a59eb16b5519dc"
+  },
+  "planning_candidate": {
+    "slug": "usb-c-multiport-card-readers-rebuild-20261029",
+    "category": "gadget",
+    "title": "USB-Cカードリーダー6選｜対応カード・転送規格・端末との接続で選ぶ",
+    "query": "USB-C SD microSD カードリーダー",
+    "reader_persona": {
+      "editorial_depth": "接続端子・同時使用など実務的な仕様を意味とともに説明",
+      "knowledge_level": "PC中級",
+      "purchase_goal": "SD・microSDを手早く読み書きしたい",
+      "reader": "カメラやスマホのSDカードをPCに取り込みたい人"
+    },
+    "introduction_angles": [
+      {
+        "id": "card_support",
+        "label": "対応カードと同時使用条件",
+        "keywords": [
+          "SD",
+          "microSD",
+          "同時使用"
+        ]
+      },
+      {
+        "id": "transfer",
+        "label": "USBとカードの速度規格",
+        "keywords": [
+          "USB規格",
+          "UHS",
+          "転送速度"
+        ]
+      },
+      {
+        "id": "device_fit",
+        "label": "端末・OSとの接続条件",
+        "keywords": [
+          "USB-C",
+          "OS",
+          "ケーブル長"
+        ]
+      }
+    ]
+  },
+  "original_product_inventory": [
+    {
+      "ref": "p1",
+      "asin": "B08CS8T8DC",
+      "name": "UGREEN USB-C カードリーダー SD MicroSD 2枚同時読取 アルミ合金製 放熱性良い タイプC OTG機能 5Gbps",
+      "prior_individual_selection_reason": "SDとmicroSDを2枚同時に読み書きでき、カメラとスマホのカード間でデータを移す人に選びやすい。対応カードは最大2TBで、15cmの一体型ケーブルにより隣のUSBポートも使いやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p2",
+      "asin": "B07P1XB7BG",
+      "name": "Anker USB-C 2-in-1 カードリーダー",
+      "prior_individual_selection_reason": "SDとmicroSDの両スロットを備え、使うカードに合わせて選びやすい。USB-C端子へ直接挿す小型設計で、スマートフォンやノートPCと一緒に持ち歩きたい人に向く。同時使用の可否は掲載情報から確認できない。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p3",
+      "asin": "B07ZKRM12C",
+      "name": "UGREEN SDカードリーダー Type-C OTG対応 1台2役 USB3.0 Microsd 2TBまで大容量カードに対応",
+      "prior_individual_selection_reason": "USB 3.0の最大5GbpsとUHS-I対応が明記され、手持ちのカード規格と照らして選びやすい。USB-AとUSB-Cの両端子を備え、SD・microSDの同時読み書きにも対応するため、PCを替えても使いやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p4",
+      "asin": "B0D7PBQN3Q",
+      "name": "Anker MagGo USB-C カードリーダー (3-in-1, 10Gbps) ホワイト",
+      "prior_individual_selection_reason": "最大10GbpsのUSB転送に対応し、動画など大きなファイルを扱う人の選択肢になる。SD・microSDスロットに加え、使用中に最大42.5Wで充電できるUSB-Cポートがあり、スマートフォンでの長時間作業にも選びやすい。カード側の速度規格は掲載情報で確認できないため、10Gbpsを実際の読み書き速度とは見なさない。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p5",
+      "asin": "B0DG5RJ892",
+      "name": "Acer USB-C SD カードリーダー SD 4.0 2-in-1 SD/SDXC/SDHC/Micro SD (TF)/Micro SDXC/Micro SDHC用 UHS-II対応 iPhone15/16、iPad Pro/Air、MacBook Pro/Air、Androidノートパソコン、タブレットに対応 タイプC 高速転送 メモリーカード リーダー (グレー)",
+      "prior_individual_selection_reason": "USB-C接続で、Windows・macOS・Linux・Chrome OS・Android・iPad・USB-C搭載iPhoneへの対応が明記されており、複数の端末で使う人が選びやすい。SDとmicroSDの両スロットは同時使用でき、UHS-IIカードにも対応する。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p6",
+      "asin": "B0BNBXVLZS",
+      "name": "UGREEN USB-C SDカードリーダー SD 4.0 UHS-II SDXCカード 4K動画 高速転送 UHS-I/UHS-II 用",
+      "prior_individual_selection_reason": "USB-C搭載のMacBook・iPad ProやOTG対応Android端末で使う条件が示され、接続先を確認して選びやすい。隣のポートに干渉しづらい小型設計で、端子が密集した端末にも向く。SD・microSDの両スロットはUHS-II対応で、カード間の転送にも使える。",
+      "verified_excerpt_sources": 1
+    }
+  ],
+  "original_qa_pass_fields": [
+    "affiliate_pass",
+    "asin_pass",
+    "banned_phrase_pass",
+    "canonical_pass",
+    "category_pass",
+    "conclusion_brand_free_pass",
+    "description_hard_min_pass",
+    "description_target_pass",
+    "description_uniqueness_pass",
+    "distinct_openings_endings_pass",
+    "fixed_price_pass",
+    "h3_len_pass",
+    "image_identity_pass",
+    "lead_brand_free_pass",
+    "nav_footer_pass",
+    "no_repeated_sentences_pass",
+    "product_image_audit_pass",
+    "summary_brand_free_pass"
+  ],
+  "independent_review_required": true,
+  "independent_review_status": "PENDING",
+  "replanning_checks": {
+    "reader_need": {
+      "question": "What concrete product-selection need can be met?",
+      "observed_reader": "カメラやスマホのSDカードをPCに取り込みたい人",
+      "purchase_goal": "SD・microSDを手早く読み書きしたい",
+      "pass": null
+    },
+    "six_individual_recommendations": {
+      "question": "Which products each meet the stated need, with source-backed individual value?",
+      "pass": null
+    },
+    "three_discovery_angles": {
+      "question": "Are the 3 angles distinct discovery entrypoints without head-to-head rankings?",
+      "pass": null
+    },
+    "replan_outcome": {
+      "instruction": "Approve existing theme only if reader intent and genuine product recommendations are independently verified; otherwise reselect Planning theme and products.",
+      "pass": null
+    }
+  },
+  "product_qa": {
+    "existing_independent_receipt": "STALE_CONTRACT",
+    "new_product_qa_required": true,
+    "same_product_allowed_if_verified": true,
+    "product_count": 6,
+    "verified_per_product": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "next_action": "independent_planning_qa_then_conditional_product_qa_then_writer_qa_then_ceo_gate",
+  "execution_allowed": false,
+  "production_article_changed": false
+}

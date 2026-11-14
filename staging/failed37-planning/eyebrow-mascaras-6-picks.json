@@ -1,0 +1,158 @@
+{
+  "schema": "sellemy-failed37-planning-review-input/v1",
+  "task_id": "TASK-BU002-FAILED37-REPLAN-20261115",
+  "slug": "eyebrow-mascaras-6-picks",
+  "job_state": "FAILED",
+  "failed_stage": "WRITER_FAILED",
+  "original_job_sha256": {
+    "acceptance.json": "71fa66536b4c7cc428699fac21dd71a481ba526cb6d651518b3503871e26edd7",
+    "editorial-plan.json": "a7934cbcd76767b7289bb31e8e6e00f1421b805c989dea55f83b6bcf9785d89c",
+    "evidence.json": "9d526be3c301b4db6e6d4bc83749251b55655d75513a7a0bd5cf47ec85c8ef33",
+    "gate-feedback.json": "13f568f6289ad8bddf337a3c36fad7d7abd0aa7e9e5e1d61e80b541c8c3f7993",
+    "payload.json": "0b1dae0fa7597a190474687bfa531bcc5e945c520d6257d9942361ed21493733",
+    "qa.json": "f11c9d7461785f99b719cbb33b78d18299d58d8aa3f390bbea4b0bfca472eb69",
+    "selection.json": "ddbb6476b65f3dde3a9a4d618c9fd3abdf575ab2f7c2f7c88d5eb2605606278f",
+    "topic.json": "dae853d88bccea8f9bee02019cbabf707d496a66adddc966be7e3a9c384068cc"
+  },
+  "planning_candidate": {
+    "slug": "eyebrow-mascaras-6-picks",
+    "category": "beauty",
+    "title": "眉マスカラ6選｜色の選び方・ブラシ形状・落とし方で選ぶ",
+    "query": "眉マスカラ 選び方 色 ブラシ",
+    "reader_persona": {
+      "editorial_depth": "色選びと塗り方に関わる違いを日常語で説明する",
+      "knowledge_level": "眉メイクの基本は知っているが、眉マスカラは選び慣れていない",
+      "purchase_goal": "色とブラシが使いやすい眉マスカラを買う",
+      "reader": "眉の色を髪色やメイクになじませたい人"
+    },
+    "introduction_angles": [
+      {
+        "id": "color",
+        "label": "色展開と仕上がりの方向",
+        "keywords": [
+          "眉マスカラ アッシュブラウン",
+          "眉マスカラ ピンクブラウン"
+        ]
+      },
+      {
+        "id": "brush",
+        "label": "ブラシの形と塗れる範囲",
+        "keywords": [
+          "眉マスカラ 極細ブラシ",
+          "眉マスカラ 小型ブラシ"
+        ]
+      },
+      {
+        "id": "removal",
+        "label": "落とし方と使用条件",
+        "keywords": [
+          "眉マスカラ お湯で落とせる",
+          "眉マスカラ クレンジング"
+        ]
+      }
+    ]
+  },
+  "original_product_inventory": [
+    {
+      "ref": "p1",
+      "asin": "B0G6XNH1Q3",
+      "name": "MAYBELLINE(メイベリン) SPフラッフ ブロウ ムース 眉マスカラ 02 アッシュブラウン 4ml",
+      "prior_individual_selection_reason": "02アッシュブラウン。自眉の黒さを抑えて落ち着いた茶系になじませたい人が、色の方向を決めやすい。軽いムース状で固まりにくい仕上がりも選ぶ手がかりになる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p2",
+      "asin": "B0CV4VKB6B",
+      "name": "KISS Thin Eyebrow Maker 02 Ash Beige 0.2 oz (6 g)",
+      "prior_individual_selection_reason": "02アッシュベージュ。自眉の暗さを和らげ、より明るく柔らかい印象にしたい人向け。アッシュブラウンとの仕上がりの違いから選びやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p3",
+      "asin": "B0B3VG1V1Y",
+      "name": "Cezanne Extra Fine Eyebrow Mascara, C1, Pink Brown, 0.1 oz (4.0 g), Nude Color, Ultra Fine Brush, Blood Tone Feel",
+      "prior_individual_selection_reason": "極細ブラシを明記したピンクブラウン。眉尻などの細い範囲を狙って塗りたい人が、ブラシの細さを基準に選びやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p4",
+      "asin": "B0C92KXMC3",
+      "name": "Espoir The Brow Color Fishing Color #1 Beige 3g Eyebrow Mascara Smudge Proof Ultra Fine Brush Korean Cosmetics espoir Official",
+      "prior_individual_selection_reason": "15度傾いた三角すい形の細いブラシで、肌につきにくく眉毛を一本ずつ整えやすい設計。眉頭から眉尻まで毛流れを意識して塗りたい人に選びやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p5",
+      "asin": "B0BG3WDX8Z",
+      "name": "ettusais Eye Edition 05 Ash Olive Eyebrow Mascara, Can Be Removed With Warm Water, 0.2 oz (6 g)",
+      "prior_individual_selection_reason": "ぬるま湯で落としやすいと明記され、汗や皮脂への耐性も示されている。普段の落とし方を購入前に確認して選びたい人に分かりやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p6",
+      "asin": "B0BVZ9HXQS",
+      "name": "rom&nd HAN ALL BROW CARA (04 Mary Blondy)",
+      "prior_individual_selection_reason": "色持ちと落ちにくい保持力が特徴。眉色を長く保ちたい人が使用条件で選べる一方、落とし方は提示情報で確認できないため、購入前に商品表示を確かめたい。",
+      "verified_excerpt_sources": 1
+    }
+  ],
+  "original_qa_pass_fields": [
+    "affiliate_pass",
+    "asin_pass",
+    "banned_phrase_pass",
+    "canonical_pass",
+    "category_pass",
+    "conclusion_brand_free_pass",
+    "description_hard_min_pass",
+    "description_target_pass",
+    "description_uniqueness_pass",
+    "distinct_openings_endings_pass",
+    "fixed_price_pass",
+    "h3_len_pass",
+    "image_identity_pass",
+    "lead_brand_free_pass",
+    "nav_footer_pass",
+    "no_repeated_sentences_pass",
+    "product_image_audit_pass",
+    "summary_brand_free_pass"
+  ],
+  "independent_review_required": true,
+  "independent_review_status": "PENDING",
+  "replanning_checks": {
+    "reader_need": {
+      "question": "What concrete product-selection need can be met?",
+      "observed_reader": "眉の色を髪色やメイクになじませたい人",
+      "purchase_goal": "色とブラシが使いやすい眉マスカラを買う",
+      "pass": null
+    },
+    "six_individual_recommendations": {
+      "question": "Which products each meet the stated need, with source-backed individual value?",
+      "pass": null
+    },
+    "three_discovery_angles": {
+      "question": "Are the 3 angles distinct discovery entrypoints without head-to-head rankings?",
+      "pass": null
+    },
+    "replan_outcome": {
+      "instruction": "Approve existing theme only if reader intent and genuine product recommendations are independently verified; otherwise reselect Planning theme and products.",
+      "pass": null
+    }
+  },
+  "product_qa": {
+    "existing_independent_receipt": "STALE_CONTRACT",
+    "new_product_qa_required": true,
+    "same_product_allowed_if_verified": true,
+    "product_count": 6,
+    "verified_per_product": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "next_action": "independent_planning_qa_then_conditional_product_qa_then_writer_qa_then_ceo_gate",
+  "execution_allowed": false,
+  "production_article_changed": false
+}

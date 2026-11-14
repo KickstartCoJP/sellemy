@@ -1,0 +1,157 @@
+{
+  "schema": "sellemy-failed37-planning-review-input/v1",
+  "task_id": "TASK-BU002-FAILED37-REPLAN-20261115",
+  "slug": "powder-face-washes-6-picks",
+  "job_state": "FAILED",
+  "failed_stage": "WRITER_FAILED",
+  "original_job_sha256": {
+    "acceptance.json": "8ea0baacfe006d019a4a4116c37743d097363bbe703ce588b5f105fa80edf349",
+    "editorial-plan.json": "a35e69dc6617b5f899839b22c6fc18a2ba4f5f43cd6c065aed63de271d3e96ca",
+    "evidence.json": "013f4c05a0a7064f8a7b12118c64112123731a4a540d1ed570fc4d1a34a8b6e2",
+    "gate-feedback.json": "74d9ef8f31ec5d9fc282c80b15a79ec15d9627899d931dd467a352e3c934c6ed",
+    "payload.json": "38f1f5c349fbaaf95893acfa7b03811ec1c09cba0d6f2f2f2be880bfa4d71710",
+    "qa.json": "165a910dce696ce62c8e5fc283c3f2b68049377aef04657c631c13f70af3e475",
+    "selection.json": "95044e52c1f5e9ab5c8490df204511ff91e9f3c45f128e39ad683deb8daf3336",
+    "topic.json": "26cbc8aac315a211081919cb3fae573b7a2ff5efa81d0feb0a478b81e23977f5"
+  },
+  "planning_candidate": {
+    "slug": "powder-face-washes-6-picks",
+    "category": "beauty",
+    "title": "洗顔パウダー6選｜成分・使う頻度・容器から選ぶ",
+    "query": "洗顔パウダー 個包装 ボトル 酵素",
+    "reader_persona": {
+      "editorial_depth": "成分表示、使用量、使用頻度、泡立て方を商品ごとに確認し、効果を推測しない",
+      "knowledge_level": "洗顔の基本は知っているが粉末タイプの使い方には詳しくない",
+      "purchase_goal": "肌の手入れの習慣に合う洗顔パウダーを選ぶ",
+      "reader": "いつもの洗顔料から粉末タイプへの切り替えを考えている人"
+    },
+    "introduction_angles": [
+      {
+        "id": "ingredients",
+        "label": "洗浄成分の構成",
+        "keywords": [
+          "洗顔パウダー 酵素",
+          "洗顔パウダー アミノ酸系"
+        ]
+      },
+      {
+        "id": "usage",
+        "label": "使用量と推奨頻度",
+        "keywords": [
+          "洗顔パウダー 毎日",
+          "洗顔パウダー 週数回"
+        ]
+      },
+      {
+        "id": "package",
+        "label": "容器と一回分の扱い",
+        "keywords": [
+          "洗顔パウダー 個包装",
+          "洗顔パウダー ボトル"
+        ]
+      }
+    ]
+  },
+  "original_product_inventory": [
+    {
+      "ref": "p1",
+      "asin": "B0831M1Y2F",
+      "name": "suisai(スイサイ) スイサイ ビューティクリア パウダーウォッシュN(トライアル) 酵素洗顔 単品 0.4g×15個 |毛穴 黒ずみ 汚れ 角栓 ザラつき 古い角質 ケア|",
+      "prior_individual_selection_reason": "プロテアーゼとリパーゼの2種の酵素に、アミノ酸系洗浄成分を組み合わせた構成を確認できる。0.4g×15個のトライアル個包装で、粉末洗顔を試しやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p2",
+      "asin": "B08Y5QP8L7",
+      "name": "suisai(スイサイ) ビューティクリア ブラック パウダーウォッシュ(トライアル) 酵素洗顔 単品 0.4g×15個 |毛穴 黒ずみ 汚れ 角栓 ザラつき 古い角質 ケア|",
+      "prior_individual_selection_reason": "プロテアーゼとリパーゼに加え、炭とモロッコ溶岩クレイを配合。テカりやベタつきが気になる人が、標準タイプとの成分の違いで選べる。こちらも0.4g×15個のトライアルで購入しやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p3",
+      "asin": "B0D6G6HDZY",
+      "name": "オルビス(ORBIS) POA-TULU ブラックパウダーウォッシュ ボトル入り 50g(酵素洗顔料)",
+      "prior_individual_selection_reason": "50g入りのボトルタイプで、使う量を自分で取り分ける商品として紹介できる。無香料で幅広い肌タイプが対象と記載され、普段の洗顔に取り入れる候補を探しやすい。1回の使用量と推奨頻度は提示情報から確認できない。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p4",
+      "asin": "B0B4NP38WG",
+      "name": "suisai(スイサイ)ビューティクリア ゴールド パウダーウォッシュ(トライアル)酵素洗顔 洗顔パウダー 単品 1回分×15個 |密着泡 保湿 毛穴 黒ずみ 汚れ 角栓 ザラつき 古い角質 ケア|",
+      "prior_individual_selection_reason": "1回分×15個なので、粉末を量る手間なく使用量を決められ、初めてでも試しやすい。保湿成分としてヒマワリ種子油とアボカド油を配合した酵素洗顔料。推奨頻度は提示情報から確認できない。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p5",
+      "asin": "B09S5X1KVB",
+      "name": "クレンジングリサーチ パウダーウォッシュ 30包 酵素洗顔 洗顔フォーム 角質ケア 毛穴ケア 黒ずみ いちご鼻 角栓 濃密泡",
+      "prior_individual_selection_reason": "30包入りで、包単位で持ち運びや残数の管理がしやすい。AHAとトリプル酵素をうたう粉末洗顔料で、グリーンアップルの香りを好む人にも選びやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p6",
+      "asin": "B091PJNLCB",
+      "name": "ファンケル FANCL ディープクリア 洗顔パウダー 30個入 洗顔 酵素洗顔 毛穴 黒ずみ 角栓 炭 クレイ 毛穴汚れ 肌荒れ予防 もっちり泡",
+      "prior_individual_selection_reason": "使い切りポーション30個入りで、1回1個と使用量が明記されている。1日1回なら30日分という目安もあり、購入数を決めやすい。泡立てネットを使う方法も案内されている。",
+      "verified_excerpt_sources": 1
+    }
+  ],
+  "original_qa_pass_fields": [
+    "affiliate_pass",
+    "asin_pass",
+    "banned_phrase_pass",
+    "canonical_pass",
+    "category_pass",
+    "conclusion_brand_free_pass",
+    "description_hard_min_pass",
+    "description_target_pass",
+    "description_uniqueness_pass",
+    "fixed_price_pass",
+    "h3_len_pass",
+    "image_identity_pass",
+    "lead_brand_free_pass",
+    "nav_footer_pass",
+    "no_repeated_sentences_pass",
+    "product_image_audit_pass",
+    "summary_brand_free_pass"
+  ],
+  "independent_review_required": true,
+  "independent_review_status": "PENDING",
+  "replanning_checks": {
+    "reader_need": {
+      "question": "What concrete product-selection need can be met?",
+      "observed_reader": "いつもの洗顔料から粉末タイプへの切り替えを考えている人",
+      "purchase_goal": "肌の手入れの習慣に合う洗顔パウダーを選ぶ",
+      "pass": null
+    },
+    "six_individual_recommendations": {
+      "question": "Which products each meet the stated need, with source-backed individual value?",
+      "pass": null
+    },
+    "three_discovery_angles": {
+      "question": "Are the 3 angles distinct discovery entrypoints without head-to-head rankings?",
+      "pass": null
+    },
+    "replan_outcome": {
+      "instruction": "Approve existing theme only if reader intent and genuine product recommendations are independently verified; otherwise reselect Planning theme and products.",
+      "pass": null
+    }
+  },
+  "product_qa": {
+    "existing_independent_receipt": "STALE_CONTRACT",
+    "new_product_qa_required": true,
+    "same_product_allowed_if_verified": true,
+    "product_count": 6,
+    "verified_per_product": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "next_action": "independent_planning_qa_then_conditional_product_qa_then_writer_qa_then_ceo_gate",
+  "execution_allowed": false,
+  "production_article_changed": false
+}

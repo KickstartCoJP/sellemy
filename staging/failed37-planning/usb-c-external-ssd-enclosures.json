@@ -1,0 +1,157 @@
+{
+  "schema": "sellemy-failed37-planning-review-input/v1",
+  "task_id": "TASK-BU002-FAILED37-REPLAN-20261115",
+  "slug": "usb-c-external-ssd-enclosures",
+  "job_state": "FAILED",
+  "failed_stage": "WRITER_FAILED",
+  "original_job_sha256": {
+    "acceptance.json": "c94f40d08a78e730e50b2a34531223494679c9d3f74939a4ab5b0189135f89a9",
+    "editorial-plan.json": "e0e0a837b2133a401b05c3ba94e06da643284c4d9bb459aced6ac13805df3d6d",
+    "evidence.json": "47af336fe1ea65cddcc0d06bce77ad801a93828dd920d22a581c95532801c1d8",
+    "gate-feedback.json": "7a42da286323f3037cd6af99e747ee6d854f09e9b7fe15304659609489942a68",
+    "payload.json": "ef3efd9ec269052b38ae124225d93981feeaf32ee2af5ca5b07aadaf501e4470",
+    "qa.json": "ef42dfd97a57d9346e11364d77b6affbb8e0f315c8ad55627db02e2e058c443c",
+    "selection.json": "0730ad98188922474244d23c85a7610e500817e3bd532a3371d53023017a1481",
+    "topic.json": "d05b2d1cd0a8d637bf9aa30f679288697d75d5c5d7077eaa30d8cdfd6c78da2d"
+  },
+  "planning_candidate": {
+    "slug": "usb-c-external-ssd-enclosures",
+    "category": "gadget",
+    "title": "USB-C接続のM.2 SSDケースの選び方｜SSDの規格・転送速度・放熱構造で選ぶ",
+    "query": "USB-C M.2 SSD ケース NVMe 対応",
+    "reader_persona": {
+      "editorial_depth": "対応SSDの規格と長さ、USB転送規格、組み立てと放熱構造を正確に説明する",
+      "knowledge_level": "USB-CとSSDの基本は知っているが、NVMeとSATAやサイズの適合を確かめたい",
+      "purchase_goal": "手持ちのSSDを取り付けられるケース本体を選ぶ",
+      "reader": "手持ちのM.2 SSDを外付けストレージとして使いたいPC利用者"
+    },
+    "introduction_angles": [
+      {
+        "id": "ssd_fit",
+        "label": "対応するSSD規格と長さ",
+        "keywords": [
+          "USB-C M.2 SSD ケース NVMe 2280",
+          "USB-C M.2 SSD ケース SATA 対応"
+        ]
+      },
+      {
+        "id": "usb_transfer",
+        "label": "USB側の転送規格と端子",
+        "keywords": [
+          "M.2 SSD ケース USB-C 10Gbps",
+          "M.2 SSD ケース USB-C 20Gbps"
+        ]
+      },
+      {
+        "id": "assembly_cooling",
+        "label": "取り付け方と放熱部材",
+        "keywords": [
+          "M.2 SSD ケース 工具不要 放熱シート",
+          "M.2 SSD ケース アルミ ヒートシンク"
+        ]
+      }
+    ]
+  },
+  "original_product_inventory": [
+    {
+      "ref": "p1",
+      "asin": "B09T97Z7DM",
+      "name": "UGREEN M.2 SSD 外付けケース 10Gbps 高速転送 SSD ケース USB3.2 Type-C NVMe/PCIe 8TB 対応",
+      "prior_individual_selection_reason": "NVMe/PCIeの2230・2242・2260・2280に対応し、手持ちのSSDの規格と長さを照合して選びやすい。SATAには非対応と明記され、USB-C用とUSB-A用のケーブルも付属する。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p2",
+      "asin": "B09C8DPNZJ",
+      "name": "UGREEN M.2 SSD 外付けケース 10Gbps転送 NVMe/SATA両対応 USB3.2 Gen2 8TB容量対応 SSD ケース",
+      "prior_individual_selection_reason": "M.2のNVMeとSATAの両方に対応し、手持ちのSSDがどちらの方式でも候補にしやすい。USB-C用とUSB-A用のケーブルが付属する一方、提示情報には対応するSSDの長さがないため、購入前に長さの確認が必要。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p3",
+      "asin": "B0D53K7HK9",
+      "name": "UGREEN M.2 SSD 外付けケース 10Gbps NVMe/PCIe 専用 USB3.2 Gen2 8TB容量 アルミ製",
+      "prior_individual_selection_reason": "USB 3.2 Gen 2のType-C接続で、規格上の転送速度は10Gbps。NVMe専用で対応サイズも2230～2280と明記され、手持ちのSSDとUSB接続の条件を確認して選びやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p4",
+      "asin": "B0CSD92Q79",
+      "name": "Yottamaster M.2 SSD 外付けケース NVMe SATA 両対応 USB3.2 Gen2 10Gbps 高速転送 2230/2242/2260/2280 工具不要 アルミ製 軽量 小型 USB-C/Aケーブル付-グレー",
+      "prior_individual_selection_reason": "USB 3.2 Gen 2の10Gbpsに対応し、USB-C接続とUSB-A接続に使えるケーブルが付属する。NVMeとSATAの両対応で、接続先の端子や手持ちのSSDに合わせて選びやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p5",
+      "asin": "B0BVB121Y1",
+      "name": "VCOM M.2 SSD 外付けケース NVME/SATA 両対応 10Gbps&6Gbps（SATAプロトコル） 高速データ転送 SSDエンクロージャー 高性能チップ アルミ製 工具不要 取り付け簡単 ハードディスクケース M Key & (M+B) Key 2280/2260/2242/2230 SSD UASP/TRIM対応 Mac OS/Android/Windows等適用",
+      "prior_individual_selection_reason": "工具不要でSSDを取り付けられ、アルミ合金製のケースを採用する。NVMeとSATAの両対応、2230～2280対応、USB-C用とUSB-A用のケーブル付属という情報もあり、取り付け方法と適合条件を確認して買いやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p6",
+      "asin": "B0CYLDM23M",
+      "name": "FIDECO M.2 NVMe SSD 外付けケース SSD エンクロージャー 10Gbps 高速転送 SSDケース 工具不要 簡単取り付け",
+      "prior_individual_selection_reason": "工具不要のサンドイッチ式構造で、サーマルパッドをケースに接触させる設計。NVMeの2230・2242・2260・2280に対応し、SATA非対応も明記されているため、手持ちのSSDに合うか判断しやすい。",
+      "verified_excerpt_sources": 1
+    }
+  ],
+  "original_qa_pass_fields": [
+    "affiliate_pass",
+    "asin_pass",
+    "banned_phrase_pass",
+    "canonical_pass",
+    "category_pass",
+    "conclusion_brand_free_pass",
+    "description_hard_min_pass",
+    "description_target_pass",
+    "description_uniqueness_pass",
+    "distinct_openings_endings_pass",
+    "fixed_price_pass",
+    "h3_len_pass",
+    "image_identity_pass",
+    "lead_brand_free_pass",
+    "nav_footer_pass",
+    "product_image_audit_pass",
+    "summary_brand_free_pass"
+  ],
+  "independent_review_required": true,
+  "independent_review_status": "PENDING",
+  "replanning_checks": {
+    "reader_need": {
+      "question": "What concrete product-selection need can be met?",
+      "observed_reader": "手持ちのM.2 SSDを外付けストレージとして使いたいPC利用者",
+      "purchase_goal": "手持ちのSSDを取り付けられるケース本体を選ぶ",
+      "pass": null
+    },
+    "six_individual_recommendations": {
+      "question": "Which products each meet the stated need, with source-backed individual value?",
+      "pass": null
+    },
+    "three_discovery_angles": {
+      "question": "Are the 3 angles distinct discovery entrypoints without head-to-head rankings?",
+      "pass": null
+    },
+    "replan_outcome": {
+      "instruction": "Approve existing theme only if reader intent and genuine product recommendations are independently verified; otherwise reselect Planning theme and products.",
+      "pass": null
+    }
+  },
+  "product_qa": {
+    "existing_independent_receipt": "STALE_CONTRACT",
+    "new_product_qa_required": true,
+    "same_product_allowed_if_verified": true,
+    "product_count": 6,
+    "verified_per_product": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "next_action": "independent_planning_qa_then_conditional_product_qa_then_writer_qa_then_ceo_gate",
+  "execution_allowed": false,
+  "production_article_changed": false
+}

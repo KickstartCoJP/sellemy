@@ -1,0 +1,158 @@
+{
+  "schema": "sellemy-failed37-planning-review-input/v1",
+  "task_id": "TASK-BU002-FAILED37-REPLAN-20261115",
+  "slug": "bluetooth-mice-for-office-work",
+  "job_state": "FAILED",
+  "failed_stage": "WRITER_FAILED",
+  "original_job_sha256": {
+    "acceptance.json": "80a9cef52ee047fa9ca2d332c93d386f580938e0975116c19394d7c6aa92703f",
+    "editorial-plan.json": "9553fcca60d136f7a05679f2ed59461a16aaaa31c6319ff02c9f75766d95f75a",
+    "evidence.json": "0f14b14c66f5a18ed5b587e8c6f75e88d1d1b322c73a7e7f873d50b505ee4c33",
+    "gate-feedback.json": "1b6cec54f4c73ef5dec6b7429182f79b943b440629b012ea8ddbb3c09d2401da",
+    "payload.json": "97e0740807d243e5d2901ec67d246a6a2d841bb71f39e8a9189d46826b27a196",
+    "qa.json": "27282c249bc05f6a49649c83dbb52a39b06b4b7aee564326a1fbfdc553039188",
+    "selection.json": "cbf364fbceb047383ca427753c509bdb01001452de2fe24ee0a1b1977162cfb3",
+    "topic.json": "447e300b2d424f0ff980ece697b9e2c190f4dff016954bc7f2ae598cf966860f"
+  },
+  "planning_candidate": {
+    "slug": "bluetooth-mice-for-office-work",
+    "category": "gadget",
+    "title": "仕事用Bluetoothマウス6選｜握り方・接続先・ボタンで選ぶ",
+    "query": "Bluetooth マウス 仕事用",
+    "reader_persona": {
+      "editorial_depth": "本体寸法、対応OS、接続先の切り替え、電源方式をPC利用者向けの言葉で説明する",
+      "knowledge_level": "Bluetooth接続は使えるが、複数端末切り替えやボタン設定には詳しくない",
+      "purchase_goal": "手の大きさと作業環境に合う単体マウスを買う",
+      "reader": "ノートPCを職場と自宅で使い、マウスを持ち歩く人"
+    },
+    "introduction_angles": [
+      {
+        "id": "shape_and_size",
+        "label": "握り方に関わる本体寸法と形",
+        "keywords": [
+          "Bluetooth マウス 小型 仕事",
+          "Bluetooth マウス エルゴノミクス"
+        ]
+      },
+      {
+        "id": "device_switching",
+        "label": "接続できる端末と切り替え方法",
+        "keywords": [
+          "Bluetooth マウス 3台 切り替え",
+          "Bluetooth マウス マルチペアリング"
+        ]
+      },
+      {
+        "id": "power_and_buttons",
+        "label": "電源方式と操作ボタン",
+        "keywords": [
+          "Bluetooth マウス 充電式 戻るボタン",
+          "Bluetooth マウス 電池式 静音"
+        ]
+      }
+    ]
+  },
+  "original_product_inventory": [
+    {
+      "ref": "p1",
+      "asin": "B0BKP2XWY5",
+      "name": "【Amazon.co.jp限定】 ロジクールワイヤレスマウス 静音 無線 Signature M550MBKs レギュラー ブラック 国内正規品",
+      "prior_individual_selection_reason": "レギュラーサイズの通常型マウスを選びたい人向け。Bluetooth接続に対応し、USBレシーバーも同梱されるため、職場と自宅のPCで接続方法を選びやすい。サイドボタンを省いたシンプルな形で、SmartWheelと静音クリックを備える。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p2",
+      "asin": "B0D9Y1J4NH",
+      "name": "【Amazon.co.jp限定】 ロジクール 静音 ワイヤレス トラックボール マウス 無線 M575SPd 国内正規品",
+      "prior_individual_selection_reason": "本体を動かす場所を取りにくいトラックボール型。机の作業スペースが限られる人には、通常型とは異なる握り方の選択肢になる。Bluetooth対応でレシーバーも同梱され、単三電池1本で使えるため、購入後に必要な接続・電源を把握しやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p3",
+      "asin": "B0FBKVC1RY",
+      "name": "ワイヤレスマウス Bluetooth 5.2・2.4GHz 静音 3台接続 Type-C充電式 6ボタン 5段階DPI ブラック",
+      "prior_individual_selection_reason": "Bluetoothと内蔵USBレシーバーによる2.4GHz接続に対応し、最大3台の接続先を使い分けられる。職場と自宅のPCを使う人が、レシーバーの収納場所を含めて購入前に接続方法を確認しやすい。12カ月保証も明記されている。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p4",
+      "asin": "B0H8D3HPNV",
+      "name": "PHILIPS SPK7858 国内正規品 ワイヤレスマウス Bluetooth 5.0 USB-C/USB-A 静音 充電式 横スクロール ブラック",
+      "prior_individual_selection_reason": "Bluetooth、USB-Aレシーバー、USB-Cレシーバーに対応し、最大3台を底面ボタンで切り替えられる。PCの端子に合わせて接続方法を選びたい人向けで、WindowsとmacOSの対応範囲、1年間の保証と日本語サポートも明記されている。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p5",
+      "asin": "B0HCBWF1VL",
+      "name": "iClever ワイヤレスマウス bluetooth 2.4GHz マウス 無線 静音 Type-C充電式 小型 戻る/進むボタン搭載 7ボタン 4DPI切替 3台デバイス同時接続可能 軽量 S/Mサイズの手に適当 握りの極み デュアルモード Windows Mac iPad OS iOS Android ChromeOS対応 ホワイト MD179",
+      "prior_individual_selection_reason": "USB-C充電式で、進む・戻るボタンを含む7ボタンを備える。10.2×6.2×3.5cm、87gと寸法・重量が明記されており、持ち歩く人も大きさを判断しやすい。進む・戻るボタンはMac・iOS非対応と明記されているため、使用するOSに合わせて選べる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p6",
+      "asin": "B0F7L9TNM4",
+      "name": "ワイヤレス マウス 無線マウス Bluetooth 5.2 + 2.4Ghz 作業用 超低遅延 Type-C充電式 戻る/進むボタン 軽量 65g 左右クリック 6ボタン 5階段DPI切替 高精度 3台デバイス同時に接続可能 エルゴノミック 静音ワイヤレス Windows 、Mac、Android、PCに対応 (ブラック)",
+      "prior_individual_selection_reason": "USB-C充電式で、進む・戻る用のサイドボタンを含む6ボタンと5段階のDPI切り替えを備える。65gと明記されており、持ち歩き用として重さを比較しやすい。Bluetooth接続にも対応するため、ノートPCでUSBポートを使わずに利用できる。",
+      "verified_excerpt_sources": 1
+    }
+  ],
+  "original_qa_pass_fields": [
+    "affiliate_pass",
+    "asin_pass",
+    "banned_phrase_pass",
+    "canonical_pass",
+    "category_pass",
+    "conclusion_brand_free_pass",
+    "description_hard_min_pass",
+    "description_target_pass",
+    "description_uniqueness_pass",
+    "distinct_openings_endings_pass",
+    "fixed_price_pass",
+    "h3_len_pass",
+    "image_identity_pass",
+    "lead_brand_free_pass",
+    "nav_footer_pass",
+    "no_repeated_sentences_pass",
+    "product_image_audit_pass",
+    "summary_brand_free_pass"
+  ],
+  "independent_review_required": true,
+  "independent_review_status": "PENDING",
+  "replanning_checks": {
+    "reader_need": {
+      "question": "What concrete product-selection need can be met?",
+      "observed_reader": "ノートPCを職場と自宅で使い、マウスを持ち歩く人",
+      "purchase_goal": "手の大きさと作業環境に合う単体マウスを買う",
+      "pass": null
+    },
+    "six_individual_recommendations": {
+      "question": "Which products each meet the stated need, with source-backed individual value?",
+      "pass": null
+    },
+    "three_discovery_angles": {
+      "question": "Are the 3 angles distinct discovery entrypoints without head-to-head rankings?",
+      "pass": null
+    },
+    "replan_outcome": {
+      "instruction": "Approve existing theme only if reader intent and genuine product recommendations are independently verified; otherwise reselect Planning theme and products.",
+      "pass": null
+    }
+  },
+  "product_qa": {
+    "existing_independent_receipt": "STALE_CONTRACT",
+    "new_product_qa_required": true,
+    "same_product_allowed_if_verified": true,
+    "product_count": 6,
+    "verified_per_product": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "next_action": "independent_planning_qa_then_conditional_product_qa_then_writer_qa_then_ceo_gate",
+  "execution_allowed": false,
+  "production_article_changed": false
+}

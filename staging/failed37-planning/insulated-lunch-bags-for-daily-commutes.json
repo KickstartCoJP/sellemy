@@ -1,0 +1,158 @@
+{
+  "schema": "sellemy-failed37-planning-review-input/v1",
+  "task_id": "TASK-BU002-FAILED37-REPLAN-20261115",
+  "slug": "insulated-lunch-bags-for-daily-commutes",
+  "job_state": "FAILED",
+  "failed_stage": "WRITER_FAILED",
+  "original_job_sha256": {
+    "acceptance.json": "55f86e0d5f919a645b5e82b40fe5ba595a4afa70830c06b7fd8df2ef39763e24",
+    "editorial-plan.json": "083fe76a0a6b219345e6020f6355f7d1e4611b1e8606eb4135f74b6db6e78a59",
+    "evidence.json": "3f357b4b92c46aff7ffe7d4978035b1ce21cc4f27dabccd38c02e53320bed60c",
+    "gate-feedback.json": "cfe6c08116cdd3b87cb17ed825acf7fdd5ae7f8ac4f8e39e2ed23a56418743ca",
+    "payload.json": "bfb73edd0fa4386863b44d3c09b0521f3d80aaa0d5bb3f7e0d6a40f892aeee63",
+    "qa.json": "d56e2b65472dc4632b44901955e4a13324b9980fd7e9c2bf9953e0f5989f033c",
+    "selection.json": "8de9734e34328402595697efb2e5856bfbb57b8036afa4d36b0b5ad37df1426b",
+    "topic.json": "5d52316ddeff0f867f3030954ce1a01b104aee27d3b87823ae2b7d596434051d"
+  },
+  "planning_candidate": {
+    "slug": "insulated-lunch-bags-for-daily-commutes",
+    "category": "dailygoods",
+    "title": "通勤用ランチバッグ6選｜弁当箱の収まり・持ち運び・保冷剤の入れ方で選ぶ",
+    "query": "保冷 ランチバッグ 弁当 通勤",
+    "reader_persona": {
+      "editorial_depth": "内寸と弁当箱の形、持ち手、保冷剤を入れる場所を日常語で説明する",
+      "knowledge_level": "保冷バッグの仕様には詳しくない",
+      "purchase_goal": "手持ちの弁当箱が収まり、通勤中に持ち運びやすいバッグを選ぶ",
+      "reader": "通勤時に弁当を持参する人"
+    },
+    "introduction_angles": [
+      {
+        "id": "fit",
+        "label": "弁当箱の収まり方",
+        "keywords": [
+          "保冷 ランチバッグ 弁当箱 立てて入る",
+          "ランチバッグ 内寸"
+        ]
+      },
+      {
+        "id": "carry",
+        "label": "通勤時の持ち運び方",
+        "keywords": [
+          "保冷 ランチバッグ 肩掛け 通勤",
+          "ランチバッグ 持ち手"
+        ]
+      },
+      {
+        "id": "coolant",
+        "label": "保冷剤を入れる場所",
+        "keywords": [
+          "保冷 ランチバッグ 保冷剤 ポケット",
+          "ランチバッグ 内ポケット"
+        ]
+      }
+    ]
+  },
+  "original_product_inventory": [
+    {
+      "ref": "p1",
+      "asin": "B09M851HRD",
+      "name": "サーモス 保冷ランチバッグ 5L ブラック RFC-005 BK",
+      "prior_individual_selection_reason": "口が大きく開く約5Lのタイプ。外寸は約幅25×奥行15×高さ24.5cmで、高さのある弁当箱を持つ人が手持ちの箱と寸法を照らし合わせやすい。内寸は確認できないため、余裕を見て選びたい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p2",
+      "asin": "B00HULF9DA",
+      "name": "スケーター(Skater) 保冷 がま口 ランチバッグ L ケアフルセレクション KGA2",
+      "prior_individual_selection_reason": "外寸は約幅26×奥行13×高さ19cm。幅のある弁当箱を横に収めたい人が、約5.3Lの容量とあわせて検討しやすい。奥行と高さが異なる5Lタイプとの比較で、自分の箱の形に合う方を選べる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p3",
+      "asin": "B0GKDYN6JP",
+      "name": "サーモス 保冷ショルダーバッグ 7L ブラック RFO-007 BK",
+      "prior_individual_selection_reason": "ショルダーバッグ型で、通勤中に肩に掛けて運びたい人向け。約7L、外寸約幅33.5×奥行15×高さ24cm、本体約200gと持ち物に合わせて大きさを判断しやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p4",
+      "asin": "B0G1WMCD8K",
+      "name": "サーモス 保冷ランチバッグ 4L ブラック トートバッグタイプ 高い保冷力 4層断熱構造 RFF-0041 BK",
+      "prior_individual_selection_reason": "手に持つトートバッグ型を選びたい人向け。約4L、外寸約幅30×奥行12×高さ19cm、本体約200gで、通勤時に持つバッグとの組み合わせや弁当箱の大きさを考えて選びやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p5",
+      "asin": "B089R217VZ",
+      "name": "Good Living 保冷 保温 ランチ バッグ がま口 デザイン 通勤 通学 行楽 アウトドアに 保冷剤ポケット付 シンプルデザイン ガバッと開いて出し入れしやすい ブラック",
+      "prior_individual_selection_reason": "保冷剤を入れられるメッシュポケットが明記されている。がま口型の開口部とダブルファスナーで弁当箱を出し入れしやすく、外寸約幅26×マチ13×高さ19cmを手持ちの箱と照らし合わせて選べる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p6",
+      "asin": "B0BM3MR4BD",
+      "name": "サーモス 保冷ランチバッグ 7L ミッフィー ブルーグレー RFF-007B BGY",
+      "prior_individual_selection_reason": "メッシュポケット付きで、保冷剤の置き場所を決めて使いたい人向け。約7Lで500mlペットボトルを縦に入れられると明記されており、弁当と飲み物を一緒に持つ場合の容量を判断しやすい。",
+      "verified_excerpt_sources": 1
+    }
+  ],
+  "original_qa_pass_fields": [
+    "affiliate_pass",
+    "asin_pass",
+    "banned_phrase_pass",
+    "canonical_pass",
+    "category_pass",
+    "conclusion_brand_free_pass",
+    "description_hard_min_pass",
+    "description_target_pass",
+    "description_uniqueness_pass",
+    "distinct_openings_endings_pass",
+    "fixed_price_pass",
+    "h3_len_pass",
+    "image_identity_pass",
+    "lead_brand_free_pass",
+    "nav_footer_pass",
+    "no_repeated_sentences_pass",
+    "product_image_audit_pass",
+    "summary_brand_free_pass"
+  ],
+  "independent_review_required": true,
+  "independent_review_status": "PENDING",
+  "replanning_checks": {
+    "reader_need": {
+      "question": "What concrete product-selection need can be met?",
+      "observed_reader": "通勤時に弁当を持参する人",
+      "purchase_goal": "手持ちの弁当箱が収まり、通勤中に持ち運びやすいバッグを選ぶ",
+      "pass": null
+    },
+    "six_individual_recommendations": {
+      "question": "Which products each meet the stated need, with source-backed individual value?",
+      "pass": null
+    },
+    "three_discovery_angles": {
+      "question": "Are the 3 angles distinct discovery entrypoints without head-to-head rankings?",
+      "pass": null
+    },
+    "replan_outcome": {
+      "instruction": "Approve existing theme only if reader intent and genuine product recommendations are independently verified; otherwise reselect Planning theme and products.",
+      "pass": null
+    }
+  },
+  "product_qa": {
+    "existing_independent_receipt": "STALE_CONTRACT",
+    "new_product_qa_required": true,
+    "same_product_allowed_if_verified": true,
+    "product_count": 6,
+    "verified_per_product": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "next_action": "independent_planning_qa_then_conditional_product_qa_then_writer_qa_then_ceo_gate",
+  "execution_allowed": false,
+  "production_article_changed": false
+}

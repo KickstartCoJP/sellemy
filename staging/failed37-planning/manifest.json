@@ -1,0 +1,325 @@
+{
+  "task_id": "TASK-BU002-FAILED37-REPLAN-20261115",
+  "total": 37,
+  "writer_failed": 34,
+  "product_failed": 3,
+  "entries": [
+    {
+      "slug": "adjustable-drawer-dividers-for-home",
+      "failed_stage": "PRODUCT_FAILED",
+      "request_sha256": "85468d2c206ac3ef8691df4e34ac3a8a61a05ba342b4afe0decacf7fe80d07f3",
+      "planning_review": "PENDING",
+      "product_qa": "RECHECK_REQUIRED"
+    },
+    {
+      "slug": "bathroom-liquid-soap-dispensers",
+      "failed_stage": "WRITER_FAILED",
+      "request_sha256": "d88d84ac97b7c32c893140def2c24cd87bf857b74bd363125d5985e0aa55f879",
+      "planning_review": "PENDING",
+      "product_qa": "RECHECK_REQUIRED"
+    },
+    {
+      "slug": "bathroom-shower-curtains",
+      "failed_stage": "WRITER_FAILED",
+      "request_sha256": "28465b5e9ccc9d6e6a84c8024bb5bbee8546bb4ecb8399e913598328d70fbd32",
+      "planning_review": "PENDING",
+      "product_qa": "RECHECK_REQUIRED"
+    },
+    {
+      "slug": "bathroom-shower-hose-replacements",
+      "failed_stage": "WRITER_FAILED",
+      "request_sha256": "c26f5379614e3b6e204bd09e7c0e5bf9cadbb970ee583fd259b607ecc02db8ed",
+      "planning_review": "PENDING",
+      "product_qa": "RECHECK_REQUIRED"
+    },
+    {
+      "slug": "bathtub-cleaning-brushes",
+      "failed_stage": "WRITER_FAILED",
+      "request_sha256": "2673e01562b0601af728f62807916ad3c33795377c8902f42b713ffab8b82a6b",
+      "planning_review": "PENDING",
+      "product_qa": "RECHECK_REQUIRED"
+    },
+    {
+      "slug": "bluetooth-mice-for-office-work",
+      "failed_stage": "WRITER_FAILED",
+      "request_sha256": "9effc160fb0413e32f31e8ef3b9dc38dedebe24c85652161ded32f625f830806",
+      "planning_review": "PENDING",
+      "product_qa": "RECHECK_REQUIRED"
+    },
+    {
+      "slug": "countertop-kitchen-scrap-bins",
+      "failed_stage": "WRITER_FAILED",
+      "request_sha256": "daa4efc97c545b396ed869d6fe0673afab03ec4c3205fab6315672f889461019",
+      "planning_review": "PENDING",
+      "product_qa": "RECHECK_REQUIRED"
+    },
+    {
+      "slug": "dish-drying-mats-for-kitchen-counters",
+      "failed_stage": "WRITER_FAILED",
+      "request_sha256": "1c4c0182095c43de735e72270dcb11fab3843198649513f53c36168242d6b269",
+      "planning_review": "PENDING",
+      "product_qa": "RECHECK_REQUIRED"
+    },
+    {
+      "slug": "dishwasher-safe-everyday-chopsticks",
+      "failed_stage": "WRITER_FAILED",
+      "request_sha256": "819d7c13faea62094ded5a8a24b4027427839bbc00a613e9cf86d2c9e52e51f0",
+      "planning_review": "PENDING",
+      "product_qa": "RECHECK_REQUIRED"
+    },
+    {
+      "slug": "drawer-storage-dividers",
+      "failed_stage": "WRITER_FAILED",
+      "request_sha256": "d59898d5ed5498071ad6fa8fbb4a7dadee38d20c2e225c21e075e77e06216374",
+      "planning_review": "PENDING",
+      "product_qa": "RECHECK_REQUIRED"
+    },
+    {
+      "slug": "electric-eyebrow-trimmers",
+      "failed_stage": "PRODUCT_FAILED",
+      "request_sha256": "658dfd880d819e92639f47d6db8fa661d5a4dc98d63b04b9506e6ab1d8f515fc",
+      "planning_review": "PENDING",
+      "product_qa": "RECHECK_REQUIRED"
+    },
+    {
+      "slug": "eye-makeup-removers",
+      "failed_stage": "WRITER_FAILED",
+      "request_sha256": "8c74065cbe7bb3dfa83b251c3e71e5407f14ee9f3853148bdf17e64cc7dcbd3e",
+      "planning_review": "PENDING",
+      "product_qa": "RECHECK_REQUIRED"
+    },
+    {
+      "slug": "eye-makeup-removers-comparison",
+      "failed_stage": "WRITER_FAILED",
+      "request_sha256": "79f32d32ede38f4b19737c448ab4081843c7f49749202b90a75ad464cc928e13",
+      "planning_review": "PENDING",
+      "product_qa": "RECHECK_REQUIRED"
+    },
+    {
+      "slug": "eyebrow-mascaras-6-picks",
+      "failed_stage": "WRITER_FAILED",
+      "request_sha256": "df536a32013344766722b2ca2990ce7a5c542ca21929bb2a2d79137af6a461be",
+      "planning_review": "PENDING",
+      "product_qa": "RECHECK_REQUIRED"
+    },
+    {
+      "slug": "facial-powder-cleansers",
+      "failed_stage": "WRITER_FAILED",
+      "request_sha256": "fe5ec27266635c3e5ea6803f62236b47daff1aef6024e13bdce4cc40bedb4b60",
+      "planning_review": "PENDING",
+      "product_qa": "RECHECK_REQUIRED"
+    },
+    {
+      "slug": "freezer-food-storage-bags",
+      "failed_stage": "WRITER_FAILED",
+      "request_sha256": "90a10454462ab482314487cf1ff217ca870bf085c0a1cd17f39ae11d4308d21d",
+      "planning_review": "PENDING",
+      "product_qa": "RECHECK_REQUIRED"
+    },
+    {
+      "slug": "household-measuring-cups",
+      "failed_stage": "WRITER_FAILED",
+      "request_sha256": "bdc4888403535f44b154ad0649a3911dd2a7b7f7180fddbf06b3070de54ba336",
+      "planning_review": "PENDING",
+      "product_qa": "RECHECK_REQUIRED"
+    },
+    {
+      "slug": "indoor-laundry-drying-poles",
+      "failed_stage": "WRITER_FAILED",
+      "request_sha256": "a5c1d1bd728fd51e5c21f750ca2d3bb24bbc8b10aa5bf9e03e5969d654d0de4e",
+      "planning_review": "PENDING",
+      "product_qa": "RECHECK_REQUIRED"
+    },
+    {
+      "slug": "insulated-lunch-bags-for-daily-carry",
+      "failed_stage": "WRITER_FAILED",
+      "request_sha256": "04ccca4b15156d6e0a7632ab775006291c66f978907cfb6a8978730c18fa8f96",
+      "planning_review": "PENDING",
+      "product_qa": "RECHECK_REQUIRED"
+    },
+    {
+      "slug": "insulated-lunch-bags-for-daily-commutes",
+      "failed_stage": "WRITER_FAILED",
+      "request_sha256": "b6148e20bd8985186cfeee0f5758828f8f0cfe95587fc26eaaec65c7bf734146",
+      "planning_review": "PENDING",
+      "product_qa": "RECHECK_REQUIRED"
+    },
+    {
+      "slug": "insulated-lunch-bags-for-daily-use",
+      "failed_stage": "WRITER_FAILED",
+      "request_sha256": "1f36fd609e171d86c6ef3a4da05e36a908257d4de2ed720cb60a9b7954e9e3ad",
+      "planning_review": "PENDING",
+      "product_qa": "RECHECK_REQUIRED"
+    },
+    {
+      "slug": "kitchen-measuring-cups",
+      "failed_stage": "WRITER_FAILED",
+      "request_sha256": "b2441352bf5602b995be68b6c78ca2a8a05705d8257a8c9cf4fc6393351e9281",
+      "planning_review": "PENDING",
+      "product_qa": "RECHECK_REQUIRED"
+    },
+    {
+      "slug": "kitchen-measuring-cups-for-liquids",
+      "failed_stage": "WRITER_FAILED",
+      "request_sha256": "f4e861519f2b28e8ff20c4d3f72961124a797b20383dd2a0dcc89c6973a082ae",
+      "planning_review": "PENDING",
+      "product_qa": "RECHECK_REQUIRED"
+    },
+    {
+      "slug": "kitchen-measuring-spoons",
+      "failed_stage": "WRITER_FAILED",
+      "request_sha256": "cf1aa20c7f79bc755180e9d33cbb3f0761ac13cd538ee076ac766c58fbbf804e",
+      "planning_review": "PENDING",
+      "product_qa": "RECHECK_REQUIRED"
+    },
+    {
+      "slug": "mascara-eyelash-primers",
+      "failed_stage": "WRITER_FAILED",
+      "request_sha256": "a1766c4090cd7e774f20b57a6f0711eff2e98d0d80a9edf1ad7e52cda77b4811",
+      "planning_review": "PENDING",
+      "product_qa": "RECHECK_REQUIRED"
+    },
+    {
+      "slug": "microwave-safe-steamer-containers",
+      "failed_stage": "WRITER_FAILED",
+      "request_sha256": "8f462a2b8525cad39a9323b5f179e09a959c4b00daba7577ba70fc8c08964c3c",
+      "planning_review": "PENDING",
+      "product_qa": "RECHECK_REQUIRED"
+    },
+    {
+      "slug": "microwave-steamer-containers",
+      "failed_stage": "WRITER_FAILED",
+      "request_sha256": "cf58c73c2d5d45ae36e6e37cdde10471b9b1c82c7226aedd0ca4d58a62eedb60",
+      "planning_review": "PENDING",
+      "product_qa": "RECHECK_REQUIRED"
+    },
+    {
+      "slug": "monitor-light-bars-for-desks",
+      "failed_stage": "WRITER_FAILED",
+      "request_sha256": "0424d462ba8969704b0fa416c5607946e18bc2b6427ef7623b436e35a28d7bfe",
+      "planning_review": "PENDING",
+      "product_qa": "RECHECK_REQUIRED"
+    },
+    {
+      "slug": "pc-monitor-light-bars",
+      "failed_stage": "WRITER_FAILED",
+      "request_sha256": "e5fa62a36dc140d3f6b1a8f3b6ee512a7a1a05ae97ddde68e3feb2680505b437",
+      "planning_review": "PENDING",
+      "product_qa": "RECHECK_REQUIRED"
+    },
+    {
+      "slug": "powder-face-washes-6-picks",
+      "failed_stage": "WRITER_FAILED",
+      "request_sha256": "6c4971721f64d146b4713472ee7b037289c319860bc898731b897102ded794f7",
+      "planning_review": "PENDING",
+      "product_qa": "RECHECK_REQUIRED"
+    },
+    {
+      "slug": "powder-face-washes-for-daily-use",
+      "failed_stage": "PRODUCT_FAILED",
+      "request_sha256": "3716876a49b6464d8eaa176843265b932dbca47236e8d8e021b519e551d93cce",
+      "planning_review": "PENDING",
+      "product_qa": "RECHECK_REQUIRED"
+    },
+    {
+      "slug": "usb-c-external-ssd-enclosures",
+      "failed_stage": "WRITER_FAILED",
+      "request_sha256": "1a7b4c47eeb9f64039de83c154326e4eae7830048f39f41d30eb8386649b4947",
+      "planning_review": "PENDING",
+      "product_qa": "RECHECK_REQUIRED"
+    },
+    {
+      "slug": "usb-c-multiport-card-readers-rebuild-20261029",
+      "failed_stage": "WRITER_FAILED",
+      "request_sha256": "1dbd0e619ede54ca734e75cb57bbd40960f63556ff0613c3e8a1f2f3ec4b6f45",
+      "planning_review": "PENDING",
+      "product_qa": "RECHECK_REQUIRED"
+    },
+    {
+      "slug": "usb-c-pd-car-chargers",
+      "failed_stage": "WRITER_FAILED",
+      "request_sha256": "4d1e170c332d18607ae6218e3f82dc540c5a6f53da38c884c0e7af1489794006",
+      "planning_review": "PENDING",
+      "product_qa": "RECHECK_REQUIRED"
+    },
+    {
+      "slug": "usb-c-portable-dac-headphone-amps",
+      "failed_stage": "WRITER_FAILED",
+      "request_sha256": "0b94e0a339e1128db0def6539cbe6ef86e673639c19de0c5e730e55820221bcb",
+      "planning_review": "PENDING",
+      "product_qa": "RECHECK_REQUIRED"
+    },
+    {
+      "slug": "window-cleaning-squeegees",
+      "failed_stage": "WRITER_FAILED",
+      "request_sha256": "8e4a99cebbdc6aa4e216e8a573691b65b4b0a7e730b0e3fcc508ac3b77c7e712",
+      "planning_review": "PENDING",
+      "product_qa": "RECHECK_REQUIRED"
+    },
+    {
+      "slug": "winter-window-gap-sealing-tapes",
+      "failed_stage": "WRITER_FAILED",
+      "request_sha256": "9966c28b0319435c6e88cf4029e830cebdc4dd312d85ec3c828d36ee92f49f6a",
+      "planning_review": "PENDING",
+      "product_qa": "RECHECK_REQUIRED"
+    }
+  ],
+  "original_jobs_changed": false,
+  "publication_changed": false,
+  "production_qa_gate_changed": false,
+  "potential_overlapping_topic_families": [
+    {
+      "family": "insulated_lunch_bags",
+      "slugs": [
+        "insulated-lunch-bags-for-daily-use",
+        "insulated-lunch-bags-for-daily-commutes",
+        "insulated-lunch-bags-for-daily-carry"
+      ]
+    },
+    {
+      "family": "measuring_cups",
+      "slugs": [
+        "household-measuring-cups",
+        "kitchen-measuring-cups",
+        "kitchen-measuring-cups-for-liquids"
+      ]
+    },
+    {
+      "family": "powder_face_cleansers",
+      "slugs": [
+        "powder-face-washes-6-picks",
+        "powder-face-washes-for-daily-use",
+        "facial-powder-cleansers"
+      ]
+    },
+    {
+      "family": "microwave_steamers",
+      "slugs": [
+        "microwave-safe-steamer-containers",
+        "microwave-steamer-containers"
+      ]
+    },
+    {
+      "family": "monitor_light_bars",
+      "slugs": [
+        "pc-monitor-light-bars",
+        "monitor-light-bars-for-desks"
+      ]
+    },
+    {
+      "family": "eye_makeup_removers",
+      "slugs": [
+        "eye-makeup-removers",
+        "eye-makeup-removers-comparison"
+      ]
+    },
+    {
+      "family": "drawer_dividers",
+      "slugs": [
+        "adjustable-drawer-dividers-for-home",
+        "drawer-storage-dividers"
+      ]
+    }
+  ],
+  "topic_overlap_note": "Potential overlap, not proven duplicate. Independent Planning QA must decide on every job; do not auto-delete jobs."
+}

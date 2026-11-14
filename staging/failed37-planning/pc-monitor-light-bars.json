@@ -1,0 +1,161 @@
+{
+  "schema": "sellemy-failed37-planning-review-input/v1",
+  "task_id": "TASK-BU002-FAILED37-REPLAN-20261115",
+  "slug": "pc-monitor-light-bars",
+  "job_state": "FAILED",
+  "failed_stage": "WRITER_FAILED",
+  "original_job_sha256": {
+    "acceptance.json": "a7d063f08bac75e8a4122821b48d4a381f2e95db6b2c2f88c986bd1538f982f1",
+    "editorial-plan.json": "4b4358929d99ca4754f1e8c002434e365f1019b683f51e87bcbaac9b2c459466",
+    "evidence.json": "5f075b1e7e85aac335b855d8271844f845e93a2b10a64c6642bf97436183b774",
+    "gate-feedback.json": "e44bf4ca6087b4b659e03e31266a0e917c15fec3f5270d9720dfd5dee45808fc",
+    "payload.json": "fdad36c450d481411b0a78bcd3cad91ca0b34fe4528d2fdd7781720de7329ded",
+    "qa.json": "be665c6121b68d4a6cd46e061a44ed41112c2f17dd025cc5562cef1cae801ed6",
+    "selection.json": "90bbf4b027e2cd1a94403ec515d4aaffe4cb5a07e00b3af2e0ea4333eb582323",
+    "topic.json": "b56122d830e8161bb7d0a0f83f9216825f8b7120a3a8bcc404cc80ee22d23502"
+  },
+  "planning_candidate": {
+    "slug": "pc-monitor-light-bars",
+    "category": "gadget",
+    "title": "モニターライト6選｜画面への取り付け・照らす範囲・給電方法で選ぶ",
+    "query": "PCモニター ライトバー",
+    "reader_persona": {
+      "editorial_depth": "対応する画面の厚みと形、光の調整、USB給電条件を具体的に扱う",
+      "knowledge_level": "USB給電やモニター形状の違いは理解している",
+      "purchase_goal": "自分の画面に取り付けられ、作業位置を照らせるライトを選びたい",
+      "reader": "机を広く使いながらキーボードや手元を照らしたいPC利用者"
+    },
+    "introduction_angles": [
+      {
+        "id": "mounting",
+        "label": "取り付けられるモニターの形と厚み",
+        "keywords": [
+          "モニターライト 湾曲モニター 対応",
+          "対応厚み",
+          "固定方式"
+        ]
+      },
+      {
+        "id": "lighting",
+        "label": "照らす向きと明るさの調整",
+        "keywords": [
+          "モニターライト 非対称配光",
+          "調光",
+          "色温度"
+        ]
+      },
+      {
+        "id": "power",
+        "label": "給電端子と必要な電源",
+        "keywords": [
+          "モニターライト USB-C 給電",
+          "消費電力",
+          "給電端子"
+        ]
+      }
+    ]
+  },
+  "original_product_inventory": [
+    {
+      "ref": "p1",
+      "asin": "B0G5YPH9SG",
+      "name": "Quntis モニターライト モニター掛け式ライト 40cm 自動調光 画面反射防止 色温度&明るさ調節 目に優しい 省スペース ブラック",
+      "prior_individual_selection_reason": "厚さ0.7～3.5cmの平面・曲面モニターに対応すると明記され、工具を使わず上部に掛けられる。画面上端の厚みを測って適合を判断しやすく、机を広く使いたい人が選びやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p2",
+      "asin": "B0GRDFG23H",
+      "name": "Quntis モニターライト 41cm 無線リモコン搭載 高演色性 4種類の色温度 無段階調光 非対称な配光",
+      "prior_individual_selection_reason": "上端の厚さ7cmまで対応するクリップを備え、平面・曲面モニターに取り付けられる。厚みのある画面にも候補を広げられ、付属のType-Cケーブルと日本語説明書があり導入しやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p3",
+      "asin": "B08W2C5W59",
+      "name": "Xiaomi モニター掛け式ライト USB Type-C 非対称配光 Ra95高演色 無段階調光対応 反射防止 色温度調整対応 ワイヤレスリモコン付属",
+      "prior_individual_selection_reason": "ライト本体の向きを最大25度調整でき、無段階の明るさ・色温度調整をワイヤレスリモコンで操作できる。キーボードや手元に合わせて照射方向を決めたい人が選びやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p4",
+      "asin": "B0CSM3CRWZ",
+      "name": "Quntis モニターライト USBライト 51cm バックライト 無線リモコン搭載 4種類色温度 非対称な配光 間接照明モード",
+      "prior_individual_selection_reason": "51cmの前面ライトに加えて背面ライトを備え、前面のみ・背面のみ・前後同時を選べる。手元の作業と周囲の間接照明を使い分けたい人に用途が明確で、色温度は4種類、明るさは無段階で調整できる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p5",
+      "asin": "B08T6H2W93",
+      "name": "Quntis デスクライト モニターライト 52cm 自動調光 目に優しい 無段階色温度と輝度調整 省スペース USBライト ブラック",
+      "prior_individual_selection_reason": "USB Type-Cポートでの入力条件が5V・1Aと明記され、PCのUSBポートまたはUSB電源に接続できる。必要な電源を購入前に確認しやすく、52cmのライトで手元を照らしたい人に向く。給電には安定したUSBポートか電源が推奨されている。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p6",
+      "asin": "B0FT2B2ZSH",
+      "name": "Quntis モニターライト PC照明 41cm 非対称光学設計 自動調光 タッチ＆リモコン操作 3000K-6500K調節 USB給電 ブルーライトカット Ra98高演色 省スペース 取り付け簡単 在宅ワーク/ゲーム/読書用",
+      "prior_individual_selection_reason": "USB Type-C給電の条件は5V・1Aで、付属の1.5mケーブルを使ってPCやモバイルバッテリーから給電できる。コンセントから離れた机でも電源を用意しやすく、タッチ操作に加えてリモコン操作も選べる。",
+      "verified_excerpt_sources": 1
+    }
+  ],
+  "original_qa_pass_fields": [
+    "affiliate_pass",
+    "asin_pass",
+    "banned_phrase_pass",
+    "canonical_pass",
+    "category_pass",
+    "conclusion_brand_free_pass",
+    "description_hard_min_pass",
+    "description_target_pass",
+    "description_uniqueness_pass",
+    "distinct_openings_endings_pass",
+    "fixed_price_pass",
+    "h3_len_pass",
+    "image_identity_pass",
+    "lead_brand_free_pass",
+    "nav_footer_pass",
+    "no_repeated_sentences_pass",
+    "product_image_audit_pass",
+    "summary_brand_free_pass"
+  ],
+  "independent_review_required": true,
+  "independent_review_status": "PENDING",
+  "replanning_checks": {
+    "reader_need": {
+      "question": "What concrete product-selection need can be met?",
+      "observed_reader": "机を広く使いながらキーボードや手元を照らしたいPC利用者",
+      "purchase_goal": "自分の画面に取り付けられ、作業位置を照らせるライトを選びたい",
+      "pass": null
+    },
+    "six_individual_recommendations": {
+      "question": "Which products each meet the stated need, with source-backed individual value?",
+      "pass": null
+    },
+    "three_discovery_angles": {
+      "question": "Are the 3 angles distinct discovery entrypoints without head-to-head rankings?",
+      "pass": null
+    },
+    "replan_outcome": {
+      "instruction": "Approve existing theme only if reader intent and genuine product recommendations are independently verified; otherwise reselect Planning theme and products.",
+      "pass": null
+    }
+  },
+  "product_qa": {
+    "existing_independent_receipt": "STALE_CONTRACT",
+    "new_product_qa_required": true,
+    "same_product_allowed_if_verified": true,
+    "product_count": 6,
+    "verified_per_product": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "next_action": "independent_planning_qa_then_conditional_product_qa_then_writer_qa_then_ceo_gate",
+  "execution_allowed": false,
+  "production_article_changed": false
+}

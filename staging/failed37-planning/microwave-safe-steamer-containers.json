@@ -1,0 +1,155 @@
+{
+  "schema": "sellemy-failed37-planning-review-input/v1",
+  "task_id": "TASK-BU002-FAILED37-REPLAN-20261115",
+  "slug": "microwave-safe-steamer-containers",
+  "job_state": "FAILED",
+  "failed_stage": "WRITER_FAILED",
+  "original_job_sha256": {
+    "acceptance.json": "46be38255ff189a49a7b1bee7c894a75644193290a139ea227a325fc0793915e",
+    "editorial-plan.json": "c9626c467a93dcfb591b0fd84b8450a7e4dcc8b0e389a27776daf5b3e84d3b56",
+    "evidence.json": "f6483f690fae93d2650e7a6d778b46a64c653267a781755f07fbf95131dc4a31",
+    "gate-feedback.json": "6c59347f7846233ee53df8033fded52bb2f6d918b4fd1809a623bd8ed961aeb9",
+    "payload.json": "b2fbfa898a80775f8bbc17092bf2b0ec4854d63670467759f55d17a455165077",
+    "qa.json": "d5a0c49ca67a7ea156859fbc1c83ec029dcf906da5176340aed10e18e7245874",
+    "selection.json": "449667c00acd95c21d80ad4d5d25da6d4957abdc82e9faac85220cd5f3632d17",
+    "topic.json": "19c186cdaa87bd4266162096e32ec24b2f0e6a47eb8ed965275e59c818cc6a59"
+  },
+  "planning_candidate": {
+    "slug": "microwave-safe-steamer-containers",
+    "category": "dailygoods",
+    "title": "電子レンジ用蒸し調理容器6選｜容量・水の入れ方・洗う部品で選ぶ",
+    "query": "電子レンジ用 蒸し調理容器",
+    "reader_persona": {
+      "editorial_depth": "容量、すのこやふたの構造、加熱条件を日常語で説明する",
+      "knowledge_level": "容器の構造や加熱時の使い方には詳しくない",
+      "purchase_goal": "普段の調理量とレンジに合う蒸し容器を選ぶ",
+      "reader": "電子レンジで野菜やおかずを蒸したい人"
+    },
+    "introduction_angles": [
+      {
+        "id": "capacity_size",
+        "label": "調理容量と容器の外寸",
+        "keywords": [
+          "電子レンジ 蒸し器 容量 サイズ"
+        ]
+      },
+      {
+        "id": "water_structure",
+        "label": "水を入れる場所とふたの構造",
+        "keywords": [
+          "電子レンジ 蒸し器 すのこ 水"
+        ]
+      },
+      {
+        "id": "care",
+        "label": "取り外して洗う部品",
+        "keywords": [
+          "電子レンジ 蒸し器 分解 洗える"
+        ]
+      }
+    ]
+  },
+  "original_product_inventory": [
+    {
+      "ref": "p1",
+      "asin": "B098JTTZZN",
+      "name": "エビス パックスタッフ レンジで簡単 ヘルシー 蒸し野菜 たっぷりサイズ 電子レンジ調 PS-G305",
+      "prior_individual_selection_reason": "容量1L、外寸約19.3×16.8×8.8cmと明記されており、普段の調理量とレンジ庫内の寸法を照らし合わせて選びやすい。たっぷりサイズの蒸し野菜用容器を探す人に向く。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p2",
+      "asin": "B09V2DDY8D",
+      "name": "HARIO(ハリオ) ガラスのレンジ蒸し器 満水容量1200ml レンジで簡単調理 ホワイト 日本製 電子レンジ おかず クリームスープ 手作り XMK-120-W",
+      "prior_individual_selection_reason": "満水容量1.2L、外寸16.8×16.8×11.9cmで、1～2人分のおかずを作れると案内されている。容量に加え、丸い容器の高さまで確認して購入でき、付属のザルで食材から出る水分を落とせる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p3",
+      "asin": "B0DT3MGNL7",
+      "name": "ケヴンハウン(Kevnhaun) シリコンスチーマー オーバル ブルー 電子レンジ調理 蒸し器 せいろ すのこ付き オーブン対応 食洗機対応 冷凍 冷蔵 ケーキ作り レシピブック付き 満水容量1.2L 耐熱220℃ KDS4662",
+      "prior_individual_selection_reason": "付属のすのこに食材を載せて浮かせる構造が明記されている。食材が出した水分に浸かりにくい容器を選びたい人には構造が分かりやすく、満水容量1.2Lと食洗機対応も購入時の判断材料になる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p4",
+      "asin": "B0B41NR6SG",
+      "name": "シービージャパン 蒸し器 スクエア [抗菌] レンジで簡単蒸し調理器 atomico グレー",
+      "prior_individual_selection_reason": "容器・ザル・ふたの3点構造で、蒸し料理では容器にザルを重ねて大さじ2杯程度の水を入れ、食材をザルに並べてふたをする手順が示されている。水の入れ方を確認して選びたい人に分かりやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p5",
+      "asin": "B0D8GSZSDG",
+      "name": "伊原企販 抗菌 電子レンジ用蒸し器 most ふたしなセイロ 15.6×17.5×H13.1cm most1 日本製",
+      "prior_individual_selection_reason": "2段セイロで2つの食材を同時調理でき、食洗機対応と明記されている。段を使い分けたい人が洗い方も踏まえて選びやすく、外寸15.6×17.5×高さ13.1cmをレンジ庫内と照合できる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p6",
+      "asin": "B0HG1LQB1B",
+      "name": "武田コーポレーション 電子レンジ調理器 蒸し器 簡単 チャコールブラック 26×22×高さ11.5cm(ふた含む) 電子ﾚﾝｼﾞ専用調理器 深型蒸しﾄﾚｰ付き DRC-DBK",
+      "prior_individual_selection_reason": "深型蒸しトレー付きの電子レンジ専用容器で、トレーも含めて洗う部品を考えたい人の選択肢になる。実容量約1.3L、ふたを含む外寸約26×22×高さ11.5cmが示されており、調理量とレンジに収まるかを購入前に確認できる。",
+      "verified_excerpt_sources": 1
+    }
+  ],
+  "original_qa_pass_fields": [
+    "affiliate_pass",
+    "asin_pass",
+    "banned_phrase_pass",
+    "canonical_pass",
+    "category_pass",
+    "conclusion_brand_free_pass",
+    "description_hard_min_pass",
+    "description_target_pass",
+    "description_uniqueness_pass",
+    "distinct_openings_endings_pass",
+    "fixed_price_pass",
+    "h3_len_pass",
+    "image_identity_pass",
+    "lead_brand_free_pass",
+    "nav_footer_pass",
+    "no_repeated_sentences_pass",
+    "product_image_audit_pass",
+    "summary_brand_free_pass"
+  ],
+  "independent_review_required": true,
+  "independent_review_status": "PENDING",
+  "replanning_checks": {
+    "reader_need": {
+      "question": "What concrete product-selection need can be met?",
+      "observed_reader": "電子レンジで野菜やおかずを蒸したい人",
+      "purchase_goal": "普段の調理量とレンジに合う蒸し容器を選ぶ",
+      "pass": null
+    },
+    "six_individual_recommendations": {
+      "question": "Which products each meet the stated need, with source-backed individual value?",
+      "pass": null
+    },
+    "three_discovery_angles": {
+      "question": "Are the 3 angles distinct discovery entrypoints without head-to-head rankings?",
+      "pass": null
+    },
+    "replan_outcome": {
+      "instruction": "Approve existing theme only if reader intent and genuine product recommendations are independently verified; otherwise reselect Planning theme and products.",
+      "pass": null
+    }
+  },
+  "product_qa": {
+    "existing_independent_receipt": "STALE_CONTRACT",
+    "new_product_qa_required": true,
+    "same_product_allowed_if_verified": true,
+    "product_count": 6,
+    "verified_per_product": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "next_action": "independent_planning_qa_then_conditional_product_qa_then_writer_qa_then_ceo_gate",
+  "execution_allowed": false,
+  "production_article_changed": false
+}

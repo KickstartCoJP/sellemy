@@ -1,0 +1,158 @@
+{
+  "schema": "sellemy-failed37-planning-review-input/v1",
+  "task_id": "TASK-BU002-FAILED37-REPLAN-20261115",
+  "slug": "dish-drying-mats-for-kitchen-counters",
+  "job_state": "FAILED",
+  "failed_stage": "WRITER_FAILED",
+  "original_job_sha256": {
+    "acceptance.json": "aafa0ad2015776b6e4997a0bc3edffd1b195297a06af788c00e45c615e7ead99",
+    "editorial-plan.json": "33cab6f0a607841c680324374e7e01307f8d37db5c63d7941e7faa1f768804af",
+    "evidence.json": "02664cbb77490f3e9ecfa94dda792d1d24a8f3eb2379f30ecf7c27fac4c8601d",
+    "gate-feedback.json": "10eb6cc1f0a108692a38a0824a87eee091b8f1def03070082b1c2c5d2832c2d4",
+    "payload.json": "725af53ab5a9dba8bec586217009adb87415ce9d29238a5191c300fe5ce92fdd",
+    "qa.json": "f102ecf0c05de1eebcc2b32f7cc145d6e42b5cf94e0b9e52676b36cfeb19e6e2",
+    "selection.json": "833fde4c01c3ef8ad1ea841ae34604035eddc1e1af88eea89fbeaaa2ffb030b0",
+    "topic.json": "67865f68e447ece43e82419bb7f854af301afa3da3a5a4042b6778bd672c30e3"
+  },
+  "planning_candidate": {
+    "slug": "dish-drying-mats-for-kitchen-counters",
+    "category": "dailygoods",
+    "title": "キッチン用水切りマット6選｜置ける広さ・水の扱い・洗い方で選ぶ",
+    "query": "食器 水切りマット キッチン サイズ 洗い方 選び方",
+    "reader_persona": {
+      "editorial_depth": "実寸、吸水または排水の構造、洗浄方法を日常語で説明する",
+      "knowledge_level": "水切りラックは知っているがマットの素材や手入れの違いは詳しくない",
+      "purchase_goal": "置き場所と洗う食器の量に合うマットを選ぶ",
+      "reader": "調理台の一角で洗った食器を乾かしたい人"
+    },
+    "introduction_angles": [
+      {
+        "id": "size",
+        "label": "調理台に置く面積",
+        "keywords": [
+          "食器 水切りマット 大判",
+          "食器 水切りマット コンパクト"
+        ]
+      },
+      {
+        "id": "water",
+        "label": "水を受ける構造",
+        "keywords": [
+          "食器 水切りマット 吸水",
+          "食器 水切りマット 排水"
+        ]
+      },
+      {
+        "id": "care",
+        "label": "洗い方と乾かし方",
+        "keywords": [
+          "食器 水切りマット 洗濯機",
+          "食器 水切りマット シリコン"
+        ]
+      }
+    ]
+  },
+  "original_product_inventory": [
+    {
+      "ref": "p1",
+      "asin": "B0GLDJBFJX",
+      "name": "テイジン あっちこっち水切りマット スリム 10cm×60cm 食器 乾燥用マット 日本製 吸水 速乾 抗菌 ミクロスター (スリムサイズ, 2, 枚)",
+      "prior_individual_selection_reason": "幅10cm・長さ60cmの細長い形で、シンク脇など奥行きが限られた場所に置きやすい。凹凸のある吸水生地で、少量の食器を置きたい人に選びやすい。洗濯機で洗える。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p2",
+      "asin": "B0CM8YWWBC",
+      "name": "水切りマット 抗菌 速乾吸水マット [収納のプロ監修] 40x60cm 食器乾燥マット 丸めて収納 キッチン マイクロファイバー シンク上 ラック 棚シート Sanleaves [グレー]",
+      "prior_individual_selection_reason": "広い置き面を探す人向けの吸水マット。商品名は40×60cmだが、仕様欄は40×40cmと記載が食い違うため、設置場所に収まるか購入前に寸法を確認したい。丸めて収納でき、手洗い指定であることも判断材料になる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p3",
+      "asin": "B0C4DKYKQX",
+      "name": "【脱・水切りカゴ！圧倒的吸水力！】 atRise 厚手起毛の水切りマット【洗濯機・乾燥機OK！】3サイズ 6色 凸凹加工 吊り下げ収納 食器乾燥マット (グレー,S)",
+      "prior_individual_selection_reason": "厚手の起毛・凹凸生地で水滴を吸う構造。45×30cmのSサイズなので、コップや小皿を調理台の一角で乾かしたい人に選びやすい。洗濯機で洗え、乾燥機は弱または低温設定が推奨されている。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p4",
+      "asin": "B0GFWFG3J5",
+      "name": "KitchenRaku 水切りマット PU キッチン 食器乾燥 速乾吸水 抗菌 滑り止め 丸めて収納 収納簡単 洗浄可能洗える 皿置き 耐油 棚シート (グレー, 30*40cm)",
+      "prior_individual_selection_reason": "30×40cmのマットで、水分を吸収・拡散させる構造と説明されている。裏面に滑り止めがあり、限られた置き場所で使いやすい。汚れは拭き取り、必要に応じて中性洗剤で洗える。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p5",
+      "asin": "B0FDKLT12B",
+      "name": "2枚セット食器 水切り 速乾吸水マット 水切りマット 抗菌 洗える 食器乾燥マット，キッチン 台所 洗い物 水切り 30x40cm グレー",
+      "prior_individual_selection_reason": "30×40cmのマイクロファイバー製で、洗った食器の水滴を吸う。2枚組なので、片方を洗って干している間も使いやすく、吊り下げ用の紐もある。お手入れ方法の仕様欄は『手洗いのみ』のため、洗い方を重視する人はこの指定を確認して選べる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p6",
+      "asin": "B07R7H8PPN",
+      "name": "Topsky 水切りマット キッチン 食器乾燥用マット 2枚セット 抗菌速乾吸水マット 大判 衛生 防カビ ドライングマット 丸めて収納 保護シート グレー",
+      "prior_individual_selection_reason": "吸水するマイクロファイバー製の2枚組で、洗い替えを用意したい人に選びやすい。洗濯機で洗え、漂白剤と乾燥機は使用不可と明記されているため、洗濯後は干して乾かす使い方が分かりやすい。",
+      "verified_excerpt_sources": 1
+    }
+  ],
+  "original_qa_pass_fields": [
+    "affiliate_pass",
+    "asin_pass",
+    "banned_phrase_pass",
+    "canonical_pass",
+    "category_pass",
+    "conclusion_brand_free_pass",
+    "description_hard_min_pass",
+    "description_target_pass",
+    "description_uniqueness_pass",
+    "distinct_openings_endings_pass",
+    "fixed_price_pass",
+    "h3_len_pass",
+    "image_identity_pass",
+    "lead_brand_free_pass",
+    "nav_footer_pass",
+    "no_repeated_sentences_pass",
+    "product_image_audit_pass",
+    "summary_brand_free_pass"
+  ],
+  "independent_review_required": true,
+  "independent_review_status": "PENDING",
+  "replanning_checks": {
+    "reader_need": {
+      "question": "What concrete product-selection need can be met?",
+      "observed_reader": "調理台の一角で洗った食器を乾かしたい人",
+      "purchase_goal": "置き場所と洗う食器の量に合うマットを選ぶ",
+      "pass": null
+    },
+    "six_individual_recommendations": {
+      "question": "Which products each meet the stated need, with source-backed individual value?",
+      "pass": null
+    },
+    "three_discovery_angles": {
+      "question": "Are the 3 angles distinct discovery entrypoints without head-to-head rankings?",
+      "pass": null
+    },
+    "replan_outcome": {
+      "instruction": "Approve existing theme only if reader intent and genuine product recommendations are independently verified; otherwise reselect Planning theme and products.",
+      "pass": null
+    }
+  },
+  "product_qa": {
+    "existing_independent_receipt": "STALE_CONTRACT",
+    "new_product_qa_required": true,
+    "same_product_allowed_if_verified": true,
+    "product_count": 6,
+    "verified_per_product": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "next_action": "independent_planning_qa_then_conditional_product_qa_then_writer_qa_then_ceo_gate",
+  "execution_allowed": false,
+  "production_article_changed": false
+}

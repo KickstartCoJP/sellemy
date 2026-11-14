@@ -1,0 +1,158 @@
+{
+  "schema": "sellemy-failed37-planning-review-input/v1",
+  "task_id": "TASK-BU002-FAILED37-REPLAN-20261115",
+  "slug": "electric-eyebrow-trimmers",
+  "job_state": "FAILED",
+  "failed_stage": "PRODUCT_FAILED",
+  "original_job_sha256": {
+    "acceptance.json": "f262c36da4b205268b06d7bcf1bfe060966b0dd7cbaf11fcbac2ae19e5c244ed",
+    "editorial-plan.json": "617d1f5298967e833bafb9524b49ad7c6a967e1f155c9c7b30c2b5e2f6f40b79",
+    "evidence.json": "c777defc323b2293ff101e3025c5be9d2cbc80345cc4ba0e1a66333c25a72677",
+    "gate-feedback.json": "5c52431c3204bb51dbe5753c4c410b4c015100daefad6f052c0f7fca34925bc7",
+    "payload.json": "08d312d8cb07d1085c8fa866f0c8b0551af98bc9daaafa3e0ec37be8388f1644",
+    "qa.json": "5dcc457aa64a26369eb8e94327f04345ba2f2d4523648783c40a7696021a71a9",
+    "selection.json": "95074067d705d76152d5eccd0633d0bb22f59f3bb552685fb7b864010d7e4566",
+    "topic.json": "59d37fe7ab8057436f29da630d047ec8369862eeaa866e9b35c04fd870a236a8"
+  },
+  "planning_candidate": {
+    "slug": "electric-eyebrow-trimmers",
+    "category": "beauty",
+    "title": "電動眉毛シェーバー6選｜刃の形・長さ調整・手入れで選ぶ",
+    "query": "電動 眉毛シェーバー 眉まわり 手入れ",
+    "reader_persona": {
+      "editorial_depth": "刃とコームの役割を簡潔に説明し、使用できる部位と洗える部品を製品ごとに区別する",
+      "knowledge_level": "電動シェーバーの刃や付属品に詳しくない一般読者",
+      "purchase_goal": "眉まわりに使いやすく、必要な調整ができる製品を選ぶ",
+      "reader": "眉の輪郭や長さを自宅で整えたい人"
+    },
+    "introduction_angles": [
+      {
+        "id": "blade",
+        "label": "眉まわりに使う刃の形",
+        "keywords": [
+          "眉毛シェーバー 電動 小刃",
+          "眉シェーバー フェイス用 刃"
+        ]
+      },
+      {
+        "id": "length",
+        "label": "眉の長さを整える方法",
+        "keywords": [
+          "眉毛シェーバー コーム 長さ調整",
+          "電動 眉トリマー コーム付き"
+        ]
+      },
+      {
+        "id": "maintenance",
+        "label": "刃の取り外しと手入れ",
+        "keywords": [
+          "眉毛シェーバー 刃 水洗い",
+          "眉トリマー 替刃"
+        ]
+      }
+    ]
+  },
+  "original_product_inventory": [
+    {
+      "ref": "p1",
+      "asin": "B0F2DXPDR1",
+      "name": "Panasonic ES-WF63-A Face Shaver, Ferie, For Downy Hair and Eyebrows, Dry Battery Operated, Blue",
+      "prior_individual_selection_reason": "眉と顔の産毛に使える製品。約0.12mmの薄い刃と丸みのある刃先、肌の起伏に沿うスイングヘッドが、眉まわりの刃選びの具体的な比較点になる。乾電池式で、付属の清掃ブラシを使って手入れできるため購入後の使い方も分かりやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p2",
+      "asin": "B0FK9ZN46W",
+      "name": "(Amazon.co.jp Exclusive) Rimsge Eyebrow Shaver, Men's, Women's, Type-C Rechargeable, LCD Screen Display, Eyebrow Cutter, Multi-Purpose 1 Unit, 0.04 - 0.2 inches (1 - 6 mm), Face Shaver",
+      "prior_individual_selection_reason": "眉用ヘッドを付け替えて使うタイプで、R型の刃先が特徴。3mm・6mmの眉コームも付属し、輪郭と長さを一台で整えたい人が選びやすい。USB充電式で残量表示がある。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p3",
+      "asin": "B00JFSPQVG",
+      "name": "Panasonic ER-GM20-K Electric Eyebrow Shaver, Black",
+      "prior_individual_selection_reason": "眉用に設計された製品で、眉コームA・Bが付属する。コームを使って眉の長さを整えたい人に、付属品を確認して選べる選択肢。単4形アルカリ乾電池1本で使え、清掃ブラシも付属する。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p4",
+      "asin": "B0DT156HXC",
+      "name": "Nose Hair Cutter, Men's, 2025 Model, 4-in-1, Eyebrow Shaver, Women's, Etiquette, Multifunctional, Hair Cutter, USB-C Rechargeable, Nose Hair Trimmer, Gentle on Skin, 12,000 Rotations, High Speed Rotation, Adjustable Length, Lightweight, Compact, Washable, Multi-purpose, Portable, Low Noise, Electric Shaver, Men, Women's, Unisex Includes cleaning brush (black) )",
+      "prior_individual_selection_reason": "商品情報に長さ調整対応と記載された、眉にも使える4-in-1のトリマー。鼻や耳の毛も一台で手入れしたい人が選びやすく、USB-C充電式でボタン一つで操作できる。長さを調整する具体的な付属品や段階数は提示情報から確認できない。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p5",
+      "asin": "B0GFDLTVRG",
+      "name": "Eyebrow Shaver, Men's, Women's, Multi-purpose, Eyebrow Shaver, USB-C Rechargeable, LED Battery Display Screen, Eyebrow Cutter, Nose Hair Cutter, Replacement Cutter Head, High Precision Stainless Steel",
+      "prior_individual_selection_reason": "眉用と鼻毛用のヘッドを付け替えられるため、部位に応じた刃の使い分けと取り外しに着目して紹介できる。2mm・5mmの眉コームが付属し、USB充電式で残量表示もあるので、長さ調整も求める人が選びやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p6",
+      "asin": "B08DLXJN8X",
+      "name": "Sugarman Eyebrow Trimmer, Men's, USB Rechargeable, Facial Hair Trimmer, Eyebrow Cutter, Women's Trimmer, Electric Trimmer, 2 Blades, Mustache Trimmer, Fine Hair Trimmer, Suitable for Full Body",
+      "prior_individual_selection_reason": "刃を取り外して水洗い・交換でき、替刃と清掃ブラシも付属するため、刃の手入れ方法が具体的に分かる。眉コーム付きで眉の形と長さを整えられ、USB充電式なので電池交換の手間を避けたい人にも選びやすい。",
+      "verified_excerpt_sources": 1
+    }
+  ],
+  "original_qa_pass_fields": [
+    "affiliate_pass",
+    "asin_pass",
+    "banned_phrase_pass",
+    "canonical_pass",
+    "category_pass",
+    "conclusion_brand_free_pass",
+    "description_hard_min_pass",
+    "description_target_pass",
+    "description_uniqueness_pass",
+    "distinct_openings_endings_pass",
+    "fixed_price_pass",
+    "h3_len_pass",
+    "image_identity_pass",
+    "lead_brand_free_pass",
+    "nav_footer_pass",
+    "no_repeated_sentences_pass",
+    "product_image_audit_pass",
+    "summary_brand_free_pass"
+  ],
+  "independent_review_required": true,
+  "independent_review_status": "PENDING",
+  "replanning_checks": {
+    "reader_need": {
+      "question": "What concrete product-selection need can be met?",
+      "observed_reader": "眉の輪郭や長さを自宅で整えたい人",
+      "purchase_goal": "眉まわりに使いやすく、必要な調整ができる製品を選ぶ",
+      "pass": null
+    },
+    "six_individual_recommendations": {
+      "question": "Which products each meet the stated need, with source-backed individual value?",
+      "pass": null
+    },
+    "three_discovery_angles": {
+      "question": "Are the 3 angles distinct discovery entrypoints without head-to-head rankings?",
+      "pass": null
+    },
+    "replan_outcome": {
+      "instruction": "Approve existing theme only if reader intent and genuine product recommendations are independently verified; otherwise reselect Planning theme and products.",
+      "pass": null
+    }
+  },
+  "product_qa": {
+    "existing_independent_receipt": "STALE_CONTRACT",
+    "new_product_qa_required": true,
+    "same_product_allowed_if_verified": true,
+    "product_count": 6,
+    "verified_per_product": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "next_action": "independent_planning_qa_then_conditional_product_qa_then_writer_qa_then_ceo_gate",
+  "execution_allowed": false,
+  "production_article_changed": false
+}

@@ -1,0 +1,158 @@
+{
+  "schema": "sellemy-failed37-planning-review-input/v1",
+  "task_id": "TASK-BU002-FAILED37-REPLAN-20261115",
+  "slug": "kitchen-measuring-spoons",
+  "job_state": "FAILED",
+  "failed_stage": "WRITER_FAILED",
+  "original_job_sha256": {
+    "acceptance.json": "c535cc68a753488823532c38778c974ac8a3cff598e3247ef187bf7420162679",
+    "editorial-plan.json": "ae7e586c071b8b5527968df91a4210f810e4221291f0bbc712f1fc8a648ddaa8",
+    "evidence.json": "a35b952302ccc93cb079564a4e0956ea52614b469becbb410853a5cce6d1b6ac",
+    "gate-feedback.json": "9730d931ced9db72fd73c984f8fd811ae7f3f32d4b8a4575e41d9f346a597fe5",
+    "payload.json": "5764c9781aa180a4537f40bb2b972aa51228edd6cc0c4e4668c3c71a3960923a",
+    "qa.json": "1655b1e384fb633a29723cba7bfd79989164001566dd369196b13d6328a651ba",
+    "selection.json": "59858fdb83278463149733f3324a6214488e57b22cec8a1f5015ff4630b3dcb8",
+    "topic.json": "a1d3a2fd35e9096ea36cf1255ff16865c4a89d788742ac0b4af4717acb19020d"
+  },
+  "planning_candidate": {
+    "slug": "kitchen-measuring-spoons",
+    "category": "dailygoods",
+    "title": "計量スプーン6選｜測れる量・すり切りやすさ・収納方法で選ぶ",
+    "query": "計量スプーン 大さじ 小さじ",
+    "reader_persona": {
+      "editorial_depth": "表示された容量、スプーンの深さと形、連結方法を平易に説明する",
+      "knowledge_level": "大さじ・小さじは知っているが、製品ごとの構造差には詳しくない",
+      "purchase_goal": "よく使う分量を量りやすく、洗って収納しやすいセットを選ぶ",
+      "reader": "料理やお菓子作りで調味料を量る機会がある人"
+    },
+    "introduction_angles": [
+      {
+        "id": "volumes",
+        "label": "付属するスプーンの容量",
+        "keywords": [
+          "計量スプーン 大さじ 小さじ 小さじ2分の1",
+          "計量スプーン 1ml 2.5ml 5ml 15ml"
+        ]
+      },
+      {
+        "id": "shape",
+        "label": "粉末や液体を量るときの形",
+        "keywords": [
+          "計量スプーン 浅型 すり切り",
+          "計量スプーン 深型 液体"
+        ]
+      },
+      {
+        "id": "storage",
+        "label": "分離・連結と収納方法",
+        "keywords": [
+          "計量スプーン マグネット 収納",
+          "計量スプーン リング 取り外し"
+        ]
+      }
+    ]
+  },
+  "original_product_inventory": [
+    {
+      "ref": "p1",
+      "asin": "B09FL6RN3P",
+      "name": "ナガオ 燕三条 極厚ダブル計量スプーン 1cc 2.5cc 18-8ステンレス 日本製",
+      "prior_individual_selection_reason": "1ccと2.5ccを両端で量れる一本。少量の調味料を量る道具を買い足したい人には、必要な容量が明確で選びやすい。ただし大さじ・小さじ用ではない。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p2",
+      "asin": "B07L2SRWJ8",
+      "name": "ドリテック(dretec) スプーンスケール 計量スプーン(大・小2種類) デジタル 300g 0.1g単位 PS-400GN グリーン",
+      "prior_individual_selection_reason": "15mlと30mlの付け替え式スプーンが付き、目盛りでも大さじ・小さじを量れる。g・ml表示も使いたい人に向く。容量と計量方法が明示されており、用途に合うか判断しやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p3",
+      "asin": "B00Q4NPAMA",
+      "name": "OXO 計量 スプーン 6種 スクレーパー付 食洗機 対応 ホワイト",
+      "prior_individual_selection_reason": "フチが平らで粉末をすり切りやすく、スクレーパーも付属する。粉末をレシピの分量に合わせて量りたい人が、形の利点を確かめて選びやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p4",
+      "asin": "B0009WCIG8",
+      "name": "貝印 KAI 計量スプーン SELECT100 DH3006",
+      "prior_individual_selection_reason": "開口部が狭く深い形で、底面が平ら。台に置いたまま醤油やみりんを注げるため、液体を量る場面を想像して選びやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p5",
+      "asin": "B015WG59XO",
+      "name": "OXO オクソー計量スプーン メジャースプーン 4本セット マグネットで連結できる 一体型 大さじ~小さじ1/4 ステンレス製",
+      "prior_individual_selection_reason": "4本をマグネットでまとめて収納できる。大さじ1から小さじ1/4までの容量も明示されており、よく使う分量と収納方法の両方から選びやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p6",
+      "asin": "B0BRWVF95Z",
+      "name": "マグネット計量スプーン8本セット ステンレス 両面",
+      "prior_individual_selection_reason": "各スプーンの中央にマグネットがあり、重ねて収納し、必要な一本を取り出せる。リングの開閉をせずに使いたい人に向き、両端の細長い形と丸い形も購入時の判断材料になる。",
+      "verified_excerpt_sources": 1
+    }
+  ],
+  "original_qa_pass_fields": [
+    "affiliate_pass",
+    "asin_pass",
+    "banned_phrase_pass",
+    "canonical_pass",
+    "category_pass",
+    "conclusion_brand_free_pass",
+    "description_hard_min_pass",
+    "description_target_pass",
+    "description_uniqueness_pass",
+    "distinct_openings_endings_pass",
+    "fixed_price_pass",
+    "h3_len_pass",
+    "image_identity_pass",
+    "lead_brand_free_pass",
+    "nav_footer_pass",
+    "no_repeated_sentences_pass",
+    "product_image_audit_pass",
+    "summary_brand_free_pass"
+  ],
+  "independent_review_required": true,
+  "independent_review_status": "PENDING",
+  "replanning_checks": {
+    "reader_need": {
+      "question": "What concrete product-selection need can be met?",
+      "observed_reader": "料理やお菓子作りで調味料を量る機会がある人",
+      "purchase_goal": "よく使う分量を量りやすく、洗って収納しやすいセットを選ぶ",
+      "pass": null
+    },
+    "six_individual_recommendations": {
+      "question": "Which products each meet the stated need, with source-backed individual value?",
+      "pass": null
+    },
+    "three_discovery_angles": {
+      "question": "Are the 3 angles distinct discovery entrypoints without head-to-head rankings?",
+      "pass": null
+    },
+    "replan_outcome": {
+      "instruction": "Approve existing theme only if reader intent and genuine product recommendations are independently verified; otherwise reselect Planning theme and products.",
+      "pass": null
+    }
+  },
+  "product_qa": {
+    "existing_independent_receipt": "STALE_CONTRACT",
+    "new_product_qa_required": true,
+    "same_product_allowed_if_verified": true,
+    "product_count": 6,
+    "verified_per_product": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "next_action": "independent_planning_qa_then_conditional_product_qa_then_writer_qa_then_ceo_gate",
+  "execution_allowed": false,
+  "production_article_changed": false
+}

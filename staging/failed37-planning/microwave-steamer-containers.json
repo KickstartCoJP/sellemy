@@ -1,0 +1,156 @@
+{
+  "schema": "sellemy-failed37-planning-review-input/v1",
+  "task_id": "TASK-BU002-FAILED37-REPLAN-20261115",
+  "slug": "microwave-steamer-containers",
+  "job_state": "FAILED",
+  "failed_stage": "WRITER_FAILED",
+  "original_job_sha256": {
+    "acceptance.json": "bb9b73dc864e285c630f06248c6372dffd1bfd8cb0254ea7b0ad1b5b934a9f16",
+    "editorial-plan.json": "74be18605687c14309f0310c469a47f52d019a8f175d6d62fa8fee6ae34f69e5",
+    "evidence.json": "23df7b5f8f4c97e008271213ad7de89a8d87795d987972e6dfac78a7f6e52a69",
+    "gate-feedback.json": "84f349e6fdf7015845c9f5cffcf7bc9e17c926c6751f40a02183053c1bb4f1f3",
+    "payload.json": "b23cc5bd7e0868dfa53264864734968b9a7a531e86fb20f389f38b4634df31c0",
+    "qa.json": "570ba678d306856dcaba5ba80ec0dc986602a005cecbac18bf367ef6adb4f25c",
+    "selection.json": "ba5e13d70a041e6cb17d61112fd17d5ed6943058cb3135249995064d825a9899",
+    "topic.json": "c271be75ff2256a41fe8fccadf2d763ee5bff3f5599c78270cf9916dfb02f57c"
+  },
+  "planning_candidate": {
+    "slug": "microwave-steamer-containers",
+    "category": "dailygoods",
+    "title": "電子レンジ用蒸し調理容器6選｜調理量・水の入れ方・洗う部品で選ぶ",
+    "query": "電子レンジ用蒸し調理容器",
+    "reader_persona": {
+      "editorial_depth": "容器の容量、すのこや水受けの構造、使用条件を料理の場面と結びつけて説明する",
+      "knowledge_level": "電子レンジ調理には慣れているが蒸し調理容器は初めて選ぶ",
+      "purchase_goal": "作る量と収納場所に合い、使用後も洗いやすい容器を選ぶ",
+      "reader": "夕食の野菜や一人分のおかずを電子レンジで手早く作りたい人"
+    },
+    "introduction_angles": [
+      {
+        "id": "capacity",
+        "label": "一度に調理できる量と外寸",
+        "keywords": [
+          "電子レンジ 蒸し器 一人用",
+          "電子レンジ 蒸し器 大容量"
+        ]
+      },
+      {
+        "id": "structure",
+        "label": "水受けと食材を置く部分の構造",
+        "keywords": [
+          "電子レンジ 蒸し器 すのこ付き",
+          "電子レンジ 蒸し器 二段"
+        ]
+      },
+      {
+        "id": "care",
+        "label": "分解と洗浄の方法",
+        "keywords": [
+          "電子レンジ 蒸し器 食洗機対応",
+          "電子レンジ 蒸し器 分解 洗える"
+        ]
+      }
+    ]
+  },
+  "original_product_inventory": [
+    {
+      "ref": "p1",
+      "asin": "B0C1Z9SMHF",
+      "name": "アンドエヌイー(&NE) らくチン! レンジ鍋 レコポ recopo スモーキーグリーン 日本製 一人用 レシピ付 レンジ調理鍋 NIM-118-SG",
+      "prior_individual_selection_reason": "満容量約1.5L、外寸約21.5×18.3×11.5cmの一人用レンジ鍋。夕食のおかずを一人分作りたい人が、容量と置き場所を確認して選びやすい。電子レンジ・食洗機に対応するが、食材を水から離す部品は掲載情報で確認できない。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p2",
+      "asin": "B09V2DDY8D",
+      "name": "HARIO(ハリオ) ガラスのレンジ蒸し器 満水容量1200ml レンジで簡単調理 ホワイト 日本製 電子レンジ おかず クリームスープ 手作り XMK-120-W",
+      "prior_individual_selection_reason": "実用容量1,200ml、外寸16.8×16.8×11.9cmで、メーカーは1～2人分のおかずを用途として挙げている。少量の温野菜やおかずを作りたい人が調理量と外寸を見比べて選びやすく、付属のザルで余分な水分を落とせる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p3",
+      "asin": "B0DT3MGNL7",
+      "name": "ケヴンハウン(Kevnhaun) シリコンスチーマー オーバル ブルー 電子レンジ調理 蒸し器 せいろ すのこ付き オーブン対応 食洗機対応 冷凍 冷蔵 ケーキ作り レシピブック付き 満水容量1.2L 耐熱220℃ KDS4662",
+      "prior_individual_selection_reason": "付属のすのこで食材を浮かせて加熱できるため、蒸し野菜や肉を容器底の水分から離して調理したい人に選びやすい。満水容量1.2Lで、電子レンジと食洗機に対応する。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p4",
+      "asin": "B0B5QHXZ76",
+      "name": "iwaki(イワキ) 耐熱ガラス キャセロール 1.5L B683 電子レンジ調理 炊飯 オーブン 蒸し器 煮込み ボウル 食洗機可",
+      "prior_individual_selection_reason": "容量1.5Lの耐熱ガラス製キャセロールで、電子レンジ調理と蒸し器としての用途が示されている。幅24×奥行20×高さ10cmの容器を置ける人には、ほかの調理にも使う選択肢になる。掲載情報ではすのこや独立した水受けは確認できないため、食材を水分から浮かせたい場合には向かない。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p5",
+      "asin": "B0GK11741C",
+      "name": "マーナ (marna) ザルボウル 18cm 4点セット (電子レンジ対応/耐熱/重ねて使える) トレー付き  (食洗機 対応) コランダー",
+      "prior_individual_selection_reason": "18cmの浅ザル・深ザル・ボウル・トレーを取り外して洗え、4点とも食洗機対応。1～2人分の調理向けで、少量のおかずを作り、使用後に各部品を洗いたい人が選びやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p6",
+      "asin": "B0GK116S9W",
+      "name": "マーナ (marna) ザルボウル 21cm 4点セット (電子レンジ対応/耐熱/重ねて使える) トレー付き (食洗機 対応) コランダー",
+      "prior_individual_selection_reason": "21cmの浅ザル・深ザル・ボウル・トレーからなる食洗機対応の4点セット。2～4人分向けなので、一度に多めの野菜を調理したい人が量を基準に選びやすい。18cm品と洗浄方法は同じで、洗う部品は4点ある。",
+      "verified_excerpt_sources": 1
+    }
+  ],
+  "original_qa_pass_fields": [
+    "affiliate_pass",
+    "asin_pass",
+    "banned_phrase_pass",
+    "canonical_pass",
+    "category_pass",
+    "conclusion_brand_free_pass",
+    "description_hard_min_pass",
+    "description_target_pass",
+    "description_uniqueness_pass",
+    "fixed_price_pass",
+    "h3_len_pass",
+    "image_identity_pass",
+    "lead_brand_free_pass",
+    "nav_footer_pass",
+    "no_repeated_sentences_pass",
+    "summary_brand_free_pass"
+  ],
+  "independent_review_required": true,
+  "independent_review_status": "PENDING",
+  "replanning_checks": {
+    "reader_need": {
+      "question": "What concrete product-selection need can be met?",
+      "observed_reader": "夕食の野菜や一人分のおかずを電子レンジで手早く作りたい人",
+      "purchase_goal": "作る量と収納場所に合い、使用後も洗いやすい容器を選ぶ",
+      "pass": null
+    },
+    "six_individual_recommendations": {
+      "question": "Which products each meet the stated need, with source-backed individual value?",
+      "pass": null
+    },
+    "three_discovery_angles": {
+      "question": "Are the 3 angles distinct discovery entrypoints without head-to-head rankings?",
+      "pass": null
+    },
+    "replan_outcome": {
+      "instruction": "Approve existing theme only if reader intent and genuine product recommendations are independently verified; otherwise reselect Planning theme and products.",
+      "pass": null
+    }
+  },
+  "product_qa": {
+    "existing_independent_receipt": "STALE_CONTRACT",
+    "new_product_qa_required": true,
+    "same_product_allowed_if_verified": true,
+    "product_count": 6,
+    "verified_per_product": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "next_action": "independent_planning_qa_then_conditional_product_qa_then_writer_qa_then_ceo_gate",
+  "execution_allowed": false,
+  "production_article_changed": false
+}

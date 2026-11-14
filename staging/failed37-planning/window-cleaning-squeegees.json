@@ -1,0 +1,158 @@
+{
+  "schema": "sellemy-failed37-planning-review-input/v1",
+  "task_id": "TASK-BU002-FAILED37-REPLAN-20261115",
+  "slug": "window-cleaning-squeegees",
+  "job_state": "FAILED",
+  "failed_stage": "WRITER_FAILED",
+  "original_job_sha256": {
+    "acceptance.json": "46b353fca16acd8e5e3aed6829a175d45d8e612b4b7cab3b8805a1e0127fc979",
+    "editorial-plan.json": "2a72a00d5e7031ecbb1b4c8c8d6a613b46a958ccd5618ee437e9e3fae0d56a85",
+    "evidence.json": "8b87fa0a02b7864ef81a02523fcf1c6d864c768fb52f2095d1e6ba71821f714a",
+    "gate-feedback.json": "ef65a727163f66b086543c1c8be4395f6ca37aea913c71efda964918abf8c63d",
+    "payload.json": "4afd36cd11928abd382f1d243e94347c58dc016e1d4487ce2ad41086574757d2",
+    "qa.json": "5d3b56bb9e6307b4ba949a55b334944ba76e504ea3b0152a4601acffd4de0b11",
+    "selection.json": "afc519959c5b9579f576059a769573842825bf081c67c003134c4bbf9490453c",
+    "topic.json": "e5df45686f0c14978e9c31becc03b849c37add6e935fcc59ca1e6384ff31e847"
+  },
+  "planning_candidate": {
+    "slug": "window-cleaning-squeegees",
+    "category": "dailygoods",
+    "title": "窓掃除用スクイージー6選｜ガラスの広さ・持ち手・水の拭き取り方で選ぶ",
+    "query": "窓掃除 スクイージー",
+    "reader_persona": {
+      "editorial_depth": "ヘッド幅、柄の長さ、ブレードの手入れを具体的に説明する",
+      "knowledge_level": "スクイージーを日常的には使わず、ヘッド幅の選び方が分からない",
+      "purchase_goal": "自宅の窓の広さと手の届く範囲に合う道具を選ぶ",
+      "reader": "年末の窓掃除でガラスに残る水筋を減らしたい人"
+    },
+    "introduction_angles": [
+      {
+        "id": "width",
+        "label": "ガラス面に合うヘッド幅",
+        "keywords": [
+          "窓掃除 スクイージー 30cm",
+          "窓掃除 スクイージー 小窓"
+        ]
+      },
+      {
+        "id": "reach",
+        "label": "持ち手の長さと延長方法",
+        "keywords": [
+          "窓掃除 スクイージー 伸縮",
+          "窓掃除 スクイージー ハンディ"
+        ]
+      },
+      {
+        "id": "blade",
+        "label": "ブレードの構造と交換",
+        "keywords": [
+          "窓掃除 スクイージー 替えゴム",
+          "窓掃除 スクイージー ゴム交換"
+        ]
+      }
+    ]
+  },
+  "original_product_inventory": [
+    {
+      "ref": "p1",
+      "asin": "B07B7QX24W",
+      "name": "山崎産業(Yamazaki Sangyo) 窓 ガラス スクイジー Pro-G プログレード BR-30 真鍮タイプ 幅30cm プロ向け 181087",
+      "prior_individual_selection_reason": "幅30cmの真鍮製スクイージー。窓幅に合わせて道具を選びたい読者がヘッド幅を確認しやすく、スクイージー単体が必要な場合の選択肢になる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p2",
+      "asin": "B01C6KUNZI",
+      "name": "MR.SIGAプロな窓拭きセット- 窓ガラス掃除スクイージー＆マイクロファイバーウィンドウスクラバー、ガラス掃除用、35cm",
+      "prior_individual_selection_reason": "幅35cmのスクイージーとマイクロファイバー製ワッシャーのセット。広めのガラスを掃除したい人が、洗ってから水を切る道具を一緒に揃えられる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p3",
+      "asin": "B0781YN6HX",
+      "name": "アズマ工業 TK伸縮自在 ガラス網戸ワイパー ピンク 窓ガラスと網戸のお掃除はこれ1本 ガラスワイパー 網戸ブラシ 拭き幅約25cm 全長63~120cm",
+      "prior_individual_selection_reason": "全長63～120.8cmに伸縮し、拭き幅は24cm。手元から高めの窓まで届く長さを調整でき、網戸掃除から窓の水切りまで1本で行いたい人にも選びやすい。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p4",
+      "asin": "B07ZNSHNVW",
+      "name": "山崎産業 水切り スクイジー ワイパー Satto 伸縮ハンドル セット 192540",
+      "prior_individual_selection_reason": "約25cm幅のスクイージーと、52～100cmに伸縮するハンドルのセット。延長用の柄を別に探さず購入でき、窓の高さに応じて長さを変えられる。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p5",
+      "asin": "B0DHX6XZRL",
+      "name": "アズマ 窓・浴室水切りワイパーシリコン バスルーム 窓掃除 スクイージー 軽量 簡単 BT762",
+      "prior_individual_selection_reason": "幅24cmのシリコン製水切りゴムと、握りやすいゴム製グリップを備える。窓と浴室で兼用しやすく、グリップのフックでタオル掛けに吊るせるため、保管場所も考えて選べる。ブレードの交換可否は確認できない。",
+      "verified_excerpt_sources": 1
+    },
+    {
+      "ref": "p6",
+      "asin": "B087PBHCV7",
+      "name": "MR.SIGA マルチパーパスなシリコン製スクイージー 鏡・ガラス製机・窓及び自動車のウィンドウガラスに最適",
+      "prior_individual_selection_reason": "約25cmのシリコンブレード、ABS製本体、滑りにくい素材で覆った持ち手の構成。窓のほか鏡やシャワードアにも使いたい人に向き、付属の吸盤フックで収納できる。ブレードの交換可否は確認できない。",
+      "verified_excerpt_sources": 1
+    }
+  ],
+  "original_qa_pass_fields": [
+    "affiliate_pass",
+    "asin_pass",
+    "banned_phrase_pass",
+    "canonical_pass",
+    "category_pass",
+    "conclusion_brand_free_pass",
+    "description_hard_min_pass",
+    "description_target_pass",
+    "description_uniqueness_pass",
+    "distinct_openings_endings_pass",
+    "fixed_price_pass",
+    "h3_len_pass",
+    "image_identity_pass",
+    "lead_brand_free_pass",
+    "nav_footer_pass",
+    "no_repeated_sentences_pass",
+    "product_image_audit_pass",
+    "summary_brand_free_pass"
+  ],
+  "independent_review_required": true,
+  "independent_review_status": "PENDING",
+  "replanning_checks": {
+    "reader_need": {
+      "question": "What concrete product-selection need can be met?",
+      "observed_reader": "年末の窓掃除でガラスに残る水筋を減らしたい人",
+      "purchase_goal": "自宅の窓の広さと手の届く範囲に合う道具を選ぶ",
+      "pass": null
+    },
+    "six_individual_recommendations": {
+      "question": "Which products each meet the stated need, with source-backed individual value?",
+      "pass": null
+    },
+    "three_discovery_angles": {
+      "question": "Are the 3 angles distinct discovery entrypoints without head-to-head rankings?",
+      "pass": null
+    },
+    "replan_outcome": {
+      "instruction": "Approve existing theme only if reader intent and genuine product recommendations are independently verified; otherwise reselect Planning theme and products.",
+      "pass": null
+    }
+  },
+  "product_qa": {
+    "existing_independent_receipt": "STALE_CONTRACT",
+    "new_product_qa_required": true,
+    "same_product_allowed_if_verified": true,
+    "product_count": 6,
+    "verified_per_product": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "next_action": "independent_planning_qa_then_conditional_product_qa_then_writer_qa_then_ceo_gate",
+  "execution_allowed": false,
+  "production_article_changed": false
+}
