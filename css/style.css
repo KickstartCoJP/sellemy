@@ -578,3 +578,35 @@ body[data-category="top"] .recent-publications > p {
 }
 .site-advertising-notice h2 { font-size: 14px; margin: 0 0 4px; }
 .site-advertising-notice p { margin: 0; }
+
+/* Keep Amazon participation notice inside the top-page footer only. */
+body[data-category="top"] footer .site-advertising-notice {
+  max-width: 1000px;
+  margin: 0 auto 12px;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #374151;
+}
+
+/* Distinct, calm links below the recent articles, with descriptive anchor text. */
+body[data-category="top"] .recent-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+body[data-category="top"] .recent-navigation a {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 6px;
+  background: #f5f3f2;
+  color: #554b49;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+body[data-category="top"] .recent-navigation a:focus-visible {
+  outline: 2px solid #554b49;
+  outline-offset: 2px;
+}

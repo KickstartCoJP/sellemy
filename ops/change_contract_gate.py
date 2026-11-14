@@ -29,7 +29,7 @@ def publication_paths(slug: str, category: str) -> set[str]:
         f'data/acceptance/{slug}.json', f'data/evidence/{slug}.json',
         f'data/payloads/{slug}.json', f'data/eyecatch-receipts/{slug}.json',
         'data/sellemy.db', 'json/articles.json', 'json/products.json',
-        'index.html', 'sitemap.xml',
+        'index.html', 'articles.html', 'products.html', 'sitemap.xml',
     }
 
 

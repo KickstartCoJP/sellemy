@@ -18,6 +18,7 @@ from qa import run_qa
 from comparison_acceptance import load_receipt, require_acceptance
 from publish_gate import require_publishing_enabled
 from renderer import render_article
+from listing_static import sync as sync_static_catalogs
 from purpose_feature_runtime import article_related_features
 from review_gate import run_review_gate
 
@@ -227,7 +228,7 @@ def _update_top() -> dict:
             f'<img src="/img/{html.escape(row["slug"])}/{html.escape(row["slug"])}.png" alt="{html.escape(row["title"])}" />'
             f'<div class="article-text"><span class="article-category">{category.label}</span><h2>{html.escape(row["title"])}</h2><p class="summary">{html.escape(row["summary"])}</p></div></a>'
         )
-    block = f'{TOP_START}\n<section class="recent-publications"><div class="section-title"><h2>新着記事</h2></div><div class="article-list">{"".join(cards)}</div><p><a href="/articles.html">記事一覧を見る</a> · <a href="/products.html">商品一覧から探す</a></p></section>\n{TOP_END}'
+    block = f'{TOP_START}\n<section class="recent-publications"><div class="section-title"><h2>新着記事</h2></div><div class="article-list">{"".join(cards)}</div><p class="recent-navigation"><a href="/articles.html">美容・家電・日用品の比較記事をもっと見る</a><a href="/products.html">紹介商品をカテゴリ別に探す</a></p></section>\n{TOP_END}'
     if TOP_START in text and TOP_END in text:
         before, rest = text.split(TOP_START, 1)
         _old, after = rest.split(TOP_END, 1)
@@ -329,6 +330,7 @@ def run(slug: str, *, apply: bool, allow_existing: bool) -> dict:
     result['canonical_product_ids'] = _upsert_products(payload, evidence)
     result['products_json'] = _sync_products_json(payload, evidence)
     result['top'] = _update_top()
+    result['static_catalogs'] = sync_static_catalogs()
     result['sitemap'] = _update_sitemap(evidence, updated_at=article_metadata['metadata']['updated_at'])
     result['article_path'] = str(article_path.relative_to(ROOT))
     result['eyecatch_path'] = str(eyecatch_path.relative_to(ROOT))

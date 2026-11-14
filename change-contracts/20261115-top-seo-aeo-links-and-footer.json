@@ -1,0 +1,33 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "TASK-BU002-CEO-TOP-SEO-AEO-FOOTER-20261115",
+  "instruction_ref": "CEO-CHAT-20261115-SELLEMY-TOP-SEO-AEO-DO-IT",
+  "instruction": "Improve TOP link anchor text and presentation for the article and product lists, move the one-time Amazon Associates participant statement into the TOP footer without a standalone section, and make article/product catalog links available in initial HTML. Continue regenerating both static catalog pages with each normal article publication; preserve existing catalog interactions, advertising disclosure and product affiliate URLs.",
+  "implementer": "sellemy-ops on authorized Mac Studio v2",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3",
+    "https://www.sellemy.jp/index.html"
+  ],
+  "allowed_paths": [
+    "articles.html",
+    "change-contracts/20261115-top-seo-aeo-links-and-footer.json",
+    "css/style.css",
+    "index.html",
+    "ops/change_contract_gate.py",
+    "pipeline/listing_static.py",
+    "pipeline/publish_payload.py",
+    "products.html",
+    "tests/test_seo_catalog_snapshots.py",
+    "tests/test_top_layout.py"
+  ],
+  "preserved_rules": [
+    "Existing CEO review and independent publication QA gates remain unchanged",
+    "Advertising disclosure remains above every article title; Amazon notice stays on TOP only",
+    "Existing product/affiliate links, published article content and catalogs are preserved",
+    "Regular article publication remains isolated and continues to refresh all affected generated pages"
+  ],
+  "acceptance_tests": [
+    "tests/test_seo_catalog_snapshots.py",
+    "tests/test_top_layout.py"
+  ]
+}
