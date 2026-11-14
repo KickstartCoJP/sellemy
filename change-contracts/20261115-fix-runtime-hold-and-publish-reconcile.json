@@ -1,0 +1,30 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "BU002-CEO-RUNTIME-RECOVERY-20261115",
+  "instruction_ref": "CEO direct instruction 2026-11-15: 直せ (Sellemy runtime production failures)",
+  "instruction": "Stop unchanged PRODUCT_HOLD article selection in recovery queue; recognize genuine already-published approved article when merge commit includes GitHub PR suffix. Restore normal case scheduling without weakening any QA or changing published content.",
+  "implementer": "sellemy-ops via Mac Studio v2",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3"
+  ],
+  "allowed_paths": [
+    "pipeline/growth_recovery.py",
+    "pipeline/growth_role_business.py",
+    "tests/test_growth_recovery.py",
+    "tests/test_editorial_plan.py",
+    "tests/test_ceo_editorial_recovery.py",
+    "change-contracts/20261115-fix-runtime-hold-and-publish-reconcile.json"
+  ],
+  "preserved_rules": [
+    "No change to QA, six-product or verified-evidence requirements",
+    "Existing CEO review and production PR approval gate remain mandatory",
+    "Published site articles, slugs, images and data are unchanged",
+    "A PRODUCT_HOLD resumes only after material evidence change or owner decision through existing stages",
+    "Reconciliation requires matching CEO approval receipts, exact slug matching, remote ancestry and live article/image HTTP 200"
+  ],
+  "acceptance_tests": [
+    "tests/test_growth_recovery.py",
+    "tests/test_editorial_plan.py",
+    "tests/test_ceo_editorial_recovery.py"
+  ]
+}

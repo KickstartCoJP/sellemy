@@ -47,13 +47,13 @@ class EditorialPlanTests(unittest.TestCase):
         self.assertEqual(caught.exception.receipt,receipt)
         self.assertIn('C01',str(caught.exception))
 
-    def test_product_hold_is_retried_hourly(self):
+    def test_product_hold_requires_material_change_before_retry(self):
         now=datetime(2026,10,28,5,tzinfo=timezone.utc)
         hold={'status':'ACTIVE','current_stage':'PRODUCT_HOLD','slug':'hold',
               'updated_at':(now-timedelta(minutes=59)).isoformat(),'next_retry_at':None}
         with patch.object(growth_recovery,'all_jobs',return_value=[hold]):
             self.assertIsNone(growth_recovery.eligible_job(now=now))
-            self.assertEqual(growth_recovery.eligible_job(now=now+timedelta(minutes=2))['slug'],'hold')
+            self.assertIsNone(growth_recovery.eligible_job(now=now+timedelta(days=3)))
 
     def test_writer_recovery_precedes_old_product_holds(self):
         now=datetime(2026,10,28,5,tzinfo=timezone.utc)

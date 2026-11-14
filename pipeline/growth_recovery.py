@@ -19,7 +19,7 @@ EVENTS_PATH = STATE_ROOT / 'events.jsonl'
 EXECUTION_EVENTS_PATH = STATE_ROOT / 'execution-events.jsonl'
 
 TERMINAL_STATUSES = {'PUBLISHED', 'DISCARDED', 'FAILED', 'RETIRED'}
-RETRYABLE_STAGES = {'WRITER_PENDING', 'QA_FAILED', 'EYECATCH_PENDING', 'PUBLISH_PENDING', 'PRODUCT_HOLD'}
+RETRYABLE_STAGES = {'WRITER_PENDING', 'QA_FAILED', 'EYECATCH_PENDING', 'PUBLISH_PENDING'}
 WRITER_MAX_ATTEMPTS = int(os.environ.get('SELLEMY_WRITER_MAX_ATTEMPTS_PER_SLUG', '10'))
 
 
@@ -266,23 +266,16 @@ def eligible_job(*, now: datetime | None = None) -> dict | None:
         if row.get('current_stage') not in RETRYABLE_STAGES:
             continue
         raw = row.get('next_retry_at')
-        if row.get('current_stage') == 'PRODUCT_HOLD' and not raw:
-            # Retry discovery at most hourly so unchanged candidates cannot starve Writer.
-            try:
-                due = datetime.fromisoformat(row['updated_at']) + timedelta(hours=1)
-            except (ValueError, KeyError):
-                due = current + timedelta(hours=1)
-        else:
-            try:
-                due = datetime.fromisoformat(raw) if raw else current
-            except ValueError:
-                due = current
+        try:
+            due = datetime.fromisoformat(raw) if raw else current
+        except ValueError:
+            due = current
         if due <= current:
             eligible.append(row)
     # A CEO-approved article must finish its eyecatch/publication independently
     # of upstream Writer work and product-reselection holds.
     priority = {'PUBLISH_PENDING': 0, 'EYECATCH_PENDING': 1,
-                'QA_FAILED': 2, 'WRITER_PENDING': 3, 'PRODUCT_HOLD': 4}
+                'QA_FAILED': 2, 'WRITER_PENDING': 3}
     eligible.sort(key=lambda row: (priority.get(row.get('current_stage'), 9),
                                    row.get('updated_at') or row.get('created_at') or '',
                                    row.get('slug') or ''))

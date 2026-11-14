@@ -70,3 +70,30 @@ def test_historic_publish_does_not_clear_new_ceo_review(monkeypatch):
         raise AssertionError('historic publication lookup must not run before current CEO certification')
     monkeypatch.setattr(g, '_existing_publish_commit', forbid)
     assert g._reconcile_already_published_jobs() == []
+
+
+def test_live_publish_reconcile_accepts_git_pr_suffix_only_for_exact_slug(tmp_path, monkeypatch):
+    import json
+    import re
+    from types import SimpleNamespace
+    import growth_role_business as g
+    (tmp_path / 'json').mkdir()
+    (tmp_path / 'json' / 'articles.json').write_text(json.dumps([
+        {'slug': 'target-item', 'status': 'published', 'img': 'https://example.com/image.png'}
+    ]))
+    monkeypatch.setattr(g, 'ROOT', tmp_path)
+    monkeypatch.setattr(g, '_git', lambda *args: 'a' * 40)
+    logs = []
+    def fake_run(args, **kwargs):
+        if args[1] == 'log':
+            pattern = args[args.index('--grep') + 1]
+            assert '--extended-regexp' in args
+            assert re.fullmatch(pattern, 'Publish Writer-generated growth article: target-item (#81)')
+            assert not re.fullmatch(pattern, 'Publish Writer-generated growth article: target-item-copy (#81)')
+            logs.append('log')
+            return SimpleNamespace(stdout='a' * 40 + '\n', returncode=0)
+        return SimpleNamespace(stdout='', returncode=0)
+    monkeypatch.setattr(g.subprocess, 'run', fake_run)
+    monkeypatch.setattr(g.requests, 'get', lambda *args, **kwargs: SimpleNamespace(status_code=200))
+    assert g._existing_publish_commit('target-item', 'dailygoods') == 'a' * 40
+    assert logs == ['log']
