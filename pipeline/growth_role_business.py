@@ -398,25 +398,18 @@ def _publish(slug: str, category: str) -> str:
     subprocess.run(['git', 'commit', '-m', f'Publish Writer-generated growth article: {slug}'], cwd=ROOT, check=True)
     head = _git('rev-parse', 'HEAD')
     require_publishing_enabled(ROOT)
-    pushed = subprocess.run(
-        ['git', 'push', 'origin', 'main'], cwd=ROOT, text=True, capture_output=True, check=False
-    )
-    if pushed.returncode != 0:
-        detail = ((pushed.stderr or '') + '\n' + (pushed.stdout or '')).strip()
-        lowered = detail.lower()
-        if 'fetch first' in lowered or 'non-fast-forward' in lowered or '[rejected]' in lowered:
-            raise PublishRaceError(
-                f'remote writer advanced origin/main during publish: {detail}',
-                candidate_commit=head,
-            )
-        raise GrowthRuntimeError(f'git push origin main failed: {detail}')
-    if head != _git('rev-parse', 'origin/main') or _git('status', '--porcelain'):
+    from article_release import ArticleReleaseError, release
+    try:
+        deployed_commit = release(ROOT, slug, head)
+    except ArticleReleaseError as exc:
+        raise PublishRaceError(str(exc), candidate_commit=head) from exc
+    if deployed_commit != _git('rev-parse', 'origin/main') or _git('status', '--porcelain'):
         raise GrowthRuntimeError('post-push verification failed: HEAD/origin/main/clean mismatch')
     try:
-        verify_production_deploy(slug, category, head)
+        verify_production_deploy(slug, category, deployed_commit)
     except ProductionDeployError as exc:
         raise GrowthRuntimeError(f'production deploy/read-back failed: {exc}') from exc
-    return head
+    return deployed_commit
 
 
 def _unfinished_jobs() -> list[dict]:
@@ -496,14 +489,16 @@ def _existing_publish_commit(slug: str, category: str) -> str | None:
         payload = json.loads((ROOT / 'data' / 'payloads' / f'{slug}.json').read_text())
         evidence = json.loads((ROOT / 'data' / 'evidence' / f'{slug}.json').read_text())
         require_acceptance(payload, evidence, load_receipt(ROOT, slug))
-        pushed = subprocess.run(['git', 'push', 'origin', 'main'], cwd=ROOT, text=True, capture_output=True, check=False)
-        if pushed.returncode == 0:
-            verify_production_deploy(slug, category, commit)
-            return commit
+        from article_release import ArticleReleaseError, release
         try:
-            recover_unpublished_commit_after_remote_race(ROOT, commit)
-        except PublishGateError:
-            pass
+            deployed_commit = release(ROOT, slug, commit)
+            verify_production_deploy(slug, category, deployed_commit)
+            return deployed_commit
+        except (ArticleReleaseError, ProductionDeployError):
+            try:
+                recover_unpublished_commit_after_remote_race(ROOT, commit)
+            except PublishGateError:
+                pass
     return None
 
 

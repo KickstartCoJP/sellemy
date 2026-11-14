@@ -435,9 +435,10 @@ class RuntimeFailClosedTests(unittest.TestCase):
         self.assertNotIn('main_in_range', feedback['qa_failures'])
         self.assertEqual(feedback['measurements']['main_len'], 3520)
 
-    def test_publish_command_is_normal_push_only(self):
+    def test_publish_uses_verified_pr_release_not_direct_main_push(self):
         source = (ROOT / 'pipeline' / 'growth_role_business.py').read_text(encoding='utf-8')
-        self.assertIn("['git', 'push', 'origin', 'main']", source)
+        self.assertIn("from article_release import ArticleReleaseError, release", source)
+        self.assertNotIn("['git', 'push', 'origin', 'main']", source)
         self.assertNotIn("['git', 'push', '--force'", source)
 
     def test_remote_push_race_rebuilds_and_retries_inside_gate(self):

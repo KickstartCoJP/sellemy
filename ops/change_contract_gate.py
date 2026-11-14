@@ -93,6 +93,8 @@ def check(base: str, head: str, *, destination: str) -> list[str]:
     paths = changed_paths(base, head)
     if not paths:
         return []
+    if destination != 'refs/heads/main' and is_publication_only(paths, base, head):
+        return []
     if destination == 'refs/heads/main' and is_publication_only(paths, base, head):
         return []
     if destination == 'refs/heads/main':
