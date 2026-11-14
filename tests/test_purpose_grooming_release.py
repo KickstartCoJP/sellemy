@@ -17,7 +17,7 @@ ARTICLE_SLUGS = [
 class PurposeGroomingReleaseTests(unittest.TestCase):
     def test_feature_page_and_navigation_contract(self):
         text=(ROOT/'themes'/f'{SLUG}.html').read_text(encoding='utf-8')
-        self.assertEqual(re.findall(r'<h2>(.*?)</h2>', text), ['髪を整える','ひげ・ムダ毛を整える','口元・汗・香りを整える'])
+        self.assertEqual(re.findall(r'<h2>(.*?)</h2>', text), ['髪が整う','ひげ・ムダ毛がすっきりする','口元・汗・香りのケアができる'])
         links=set(re.findall(r'href="/article/[^\"]+\.html"', text))
         self.assertEqual(len(links),18)
         self.assertEqual(text.count('https://www.sellemy.jp/themes/grooming-routine.html'),1)

@@ -1,0 +1,11 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "TASK-BU002-PURPOSE-PRODUCTION-IMPLEMENT-20261007-001",
+  "instruction_ref": "CEO-CHAT-20261115-PURPOSE-VISIBLE-SECTION-LABELS",
+  "instruction": "Correct the visible subsection labels on the PH-GROOMING detail page called out by the CEO screenshots; prior relation-title change was the wrong target.",
+  "implementer": "sellemy-purpose-ops on authorized Mac Studio v2",
+  "canonical_refs": ["正本設計・更新マスター正本", "60 特集構造", "CEO screenshot 2026-11-15"],
+  "allowed_paths": ["config/purpose_features_seed.json", "themes/grooming-routine.html", "tests/test_purpose_grooming_release.py", "change-contracts/20261115-purpose-grooming-section-labels.json"],
+  "preserved_rules": ["Preserve PH-GROOMING title, all 18 article links and article grouping", "Only modify the three displayed h2 labels and matching seed/test", "CEO portal approval required before protected production promotion"],
+  "acceptance_tests": ["tests/test_purpose_grooming_release.py"]
+}
