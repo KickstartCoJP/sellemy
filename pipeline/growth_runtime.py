@@ -39,6 +39,21 @@ def _execute_job(slug: str, result: dict, *, cache_only: bool = False) -> str | 
                 execute_role('product', slug, cache_only=cache_only)
                 continue
             if action == 'writer':
+                if state.get('current_stage') == 'WRITER_PENDING' and state.get('status') == 'ACTIVE':
+                    # The legacy role owns all artifact access; the coordinator
+                    # only dispatches the precheck and regular Reviewer stages.
+                    if state.get('source') == 'legacy_repair':
+                        precheck = execute_role('legacy_precheck', slug)
+                        if precheck.get('action') == 'product':
+                            continue
+                        if precheck.get('action') == 'continue':
+                            try:
+                                receipt = execute_role('reviewer', slug, request={'metadata': {}})
+                            finally:
+                                execute_role('legacy_review_finish', slug)
+                            if receipt.get('review_passed') is True:
+                                continue
+                            raise GrowthRuntimeError('legacy Reviewer did not return PASS')
                 reset = execute_role('review_reset', slug)
                 if reset.get('review_authorizations_revoked') is not True:
                     raise GrowthRuntimeError('review gate reset did not acknowledge revocation')
@@ -144,6 +159,14 @@ def run(*, publish: bool, cache_only: bool = False, report_path: Path | None = R
 
         queue = execute_role('state_queue')
         recovery = None if scheduled and not recovery_only else queue.get('eligible')
+        # Only one legacy published article is admitted per otherwise idle
+        # recovery cycle; normal due jobs retain their existing priority.
+        if publish and not scheduled and not recovery:
+            admitted = execute_role('legacy_admit')
+            if admitted.get('admitted'):
+                result['legacy_repair_admission'] = admitted
+                queue = execute_role('state_queue')
+                recovery = queue.get('eligible')
         unfinished = queue.get('unfinished') or []
         if recovery:
             slug = recovery['slug']

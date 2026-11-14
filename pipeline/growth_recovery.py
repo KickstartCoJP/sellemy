@@ -241,6 +241,11 @@ def recover_legacy_failed_jobs() -> list[str]:
     for row in all_jobs():
         if row.get('status') not in {'ACTIVE', 'FAILED'} or row.get('current_stage') in {'STATE_HOLD', 'CHAT_REVIEW_PENDING'}:
             continue
+        # Approved legacy published articles are being repaired using their
+        # original evidence and current independent QA; never discard this
+        # explicitly admitted repair solely for pre-axis Planning metadata.
+        if row.get('source') == 'legacy_repair':
+            continue
         selection = read_artifact(row['slug'], 'selection.json', {}) or {}
         if len(selection.get('axes') or []) != 3:
             write_artifact(row['slug'], 'planning-restart-required.json', {
