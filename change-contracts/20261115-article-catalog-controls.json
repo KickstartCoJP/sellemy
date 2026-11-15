@@ -1,0 +1,27 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "BU002-ARTICLE-CATALOG-FILTER-SHUFFLE-20261115",
+  "instruction_ref": "CEO 2026-11-15: 記事一覧も商品一覧と同じ絞り込みとシャッフル; 商品一覧の説明文と同構成で記事一覧にも説明文を追加",
+  "instruction": "Add the same category filter buttons, active-state styling, and shuffle behavior already present on the product index to the article index, retaining the existing article cards and crawlable static article catalog. Filter only published articles with category values beauty/dailygoods/gadget, shuffle only the current selection, and display the exact three-sentence CEO-provided introduction above the controls. Do not alter public URLs, article bodies, product index, global site navigation, or catalog generation pipeline.",
+  "implementer": "sellemy-ops via Mac Studio v2",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3"
+  ],
+  "allowed_paths": [
+    "articles.html",
+    "tests/test_article_catalog_controls.py",
+    "tests/check_article_catalog_runtime.cjs",
+    "change-contracts/20261115-article-catalog-controls.json"
+  ],
+  "preserved_rules": [
+    "Product index behavior and styling unchanged",
+    "Existing article card DOM/classes unchanged",
+    "Existing static fallback article links intact for SEO",
+    "Only published articles eligible for dynamic interaction",
+    "Shuffling stays within selected category",
+    "No new services or external dependencies in public page"
+  ],
+  "acceptance_tests": [
+    "tests/test_article_catalog_controls.py"
+  ]
+}
