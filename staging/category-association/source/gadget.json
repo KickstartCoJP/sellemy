@@ -1,0 +1,1150 @@
+{
+  "assignments": [
+    {
+      "slug": "stay-cool-at-home-6-best-evaporative-coolers",
+      "pillar_id": "pillar:家電:climate",
+      "confidence": "high",
+      "reason": "商品語「冷風扇」から空調・季節家電候補"
+    },
+    {
+      "slug": "high-performance-air-circulators-6",
+      "pillar_id": "pillar:家電:climate",
+      "confidence": "high",
+      "reason": "商品語「空気」から空調・季節家電候補"
+    },
+    {
+      "slug": "sleep-aid-devices-6-selection",
+      "pillar_id": "pillar:家電:other",
+      "confidence": "medium",
+      "reason": "広域分類「その他家電」要編集確認"
+    },
+    {
+      "slug": "home-projectors-6-recommendations",
+      "pillar_id": "pillar:家電:av",
+      "confidence": "high",
+      "reason": "商品語「projector」からテレビ・オーディオ候補"
+    },
+    {
+      "slug": "best-high-quality-earphones-6-picks",
+      "pillar_id": "pillar:家電:av",
+      "confidence": "high",
+      "reason": "商品語「earphone」からテレビ・オーディオ候補"
+    },
+    {
+      "slug": "essential-portable-water-bottles-6-choices",
+      "pillar_id": "pillar:家電:other",
+      "confidence": "medium",
+      "reason": "広域分類「その他家電」要編集確認"
+    },
+    {
+      "slug": "enjoy-summer-portable-fans-6-picks",
+      "pillar_id": "pillar:家電:climate",
+      "confidence": "high",
+      "reason": "商品語「扇風機」から空調・季節家電候補"
+    },
+    {
+      "slug": "summer-comfort-fan-selection",
+      "pillar_id": "pillar:家電:climate",
+      "confidence": "high",
+      "reason": "商品語「fan-」から空調・季節家電候補"
+    },
+    {
+      "slug": "comfortable-morning-toasters",
+      "pillar_id": "pillar:家電:kitchen_appliance",
+      "confidence": "high",
+      "reason": "商品語「トースタ」からキッチン家電候補"
+    },
+    {
+      "slug": "air-purifiers-top-6",
+      "pillar_id": "pillar:家電:climate",
+      "confidence": "high",
+      "reason": "商品語「空気」から空調・季節家電候補"
+    },
+    {
+      "slug": "beginner-friendly-coffee-makers",
+      "pillar_id": "pillar:家電:kitchen_appliance",
+      "confidence": "high",
+      "reason": "商品語「コーヒー」からキッチン家電候補"
+    },
+    {
+      "slug": "must-have-kitchen-appliances",
+      "pillar_id": "pillar:家電:kitchen_appliance",
+      "confidence": "high",
+      "reason": "商品語「kitchen」からキッチン家電候補"
+    },
+    {
+      "slug": "health-management-blood-pressure-monitors",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「monitor」から情報・スマート家電候補"
+    },
+    {
+      "slug": "smart-home-appliances-top-6",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「smart-」から情報・スマート家電候補"
+    },
+    {
+      "slug": "cordless-vacuum-cleaners-6-picks",
+      "pillar_id": "pillar:家電:household_appliance",
+      "confidence": "high",
+      "reason": "商品語「掃除」から生活家電候補"
+    },
+    {
+      "slug": "robot-vacuum-cleaners-6-picks",
+      "pillar_id": "pillar:家電:household_appliance",
+      "confidence": "high",
+      "reason": "商品語「掃除」から生活家電候補"
+    },
+    {
+      "slug": "electric-kettles-6-picks",
+      "pillar_id": "pillar:家電:kitchen_appliance",
+      "confidence": "high",
+      "reason": "商品語「kettle」からキッチン家電候補"
+    },
+    {
+      "slug": "wireless-speakers-6-picks",
+      "pillar_id": "pillar:家電:av",
+      "confidence": "high",
+      "reason": "商品語「speaker」からテレビ・オーディオ候補"
+    },
+    {
+      "slug": "mobile-batteries-6-picks",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「バッテリー」から情報・スマート家電候補"
+    },
+    {
+      "slug": "usb-c-chargers-6-picks",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「USB-」から情報・スマート家電候補"
+    },
+    {
+      "slug": "led-desk-lights-6-picks",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「LEDデスク」から情報・スマート家電候補"
+    },
+    {
+      "slug": "autumn-humidifiers-6-picks",
+      "pillar_id": "pillar:家電:climate",
+      "confidence": "high",
+      "reason": "商品語「humidif」から空調・季節家電候補"
+    },
+    {
+      "slug": "electric-blankets-6-picks",
+      "pillar_id": "pillar:家電:climate",
+      "confidence": "high",
+      "reason": "商品語「電気毛布」から空調・季節家電候補"
+    },
+    {
+      "slug": "home-dehumidifiers-6-picks",
+      "pillar_id": "pillar:家電:climate",
+      "confidence": "high",
+      "reason": "商品語「humidif」から空調・季節家電候補"
+    },
+    {
+      "slug": "ceramic-fan-heaters-6-picks",
+      "pillar_id": "pillar:家電:climate",
+      "confidence": "high",
+      "reason": "商品語「fan-」から空調・季節家電候補"
+    },
+    {
+      "slug": "home-hot-plates-6-picks",
+      "pillar_id": "pillar:家電:kitchen_appliance",
+      "confidence": "high",
+      "reason": "商品語「hot-plate」からキッチン家電候補"
+    },
+    {
+      "slug": "compact-dishwashers-6-picks",
+      "pillar_id": "pillar:家電:kitchen_appliance",
+      "confidence": "high",
+      "reason": "商品語「dishwasher」からキッチン家電候補"
+    },
+    {
+      "slug": "kotatsu-6-picks",
+      "pillar_id": "pillar:家電:climate",
+      "confidence": "high",
+      "reason": "商品語「こたつ」から空調・季節家電候補"
+    },
+    {
+      "slug": "usb-hand-warmers-6-picks",
+      "pillar_id": "pillar:家電:climate",
+      "confidence": "high",
+      "reason": "商品語「カイロ」から空調・季節家電候補"
+    },
+    {
+      "slug": "fitness-smartwatches-6-picks",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「スマート」から情報・スマート家電候補"
+    },
+    {
+      "slug": "futon-dryers-6-picks",
+      "pillar_id": "pillar:家電:household_appliance",
+      "confidence": "high",
+      "reason": "商品語「乾燥機」から生活家電候補"
+    },
+    {
+      "slug": "rice-cookers-6-picks",
+      "pillar_id": "pillar:家電:kitchen_appliance",
+      "confidence": "high",
+      "reason": "商品語「cooker」からキッチン家電候補"
+    },
+    {
+      "slug": "electric-toothbrushes-6-picks",
+      "pillar_id": "pillar:家電:household_appliance",
+      "confidence": "high",
+      "reason": "商品語「電動歯」から生活家電候補"
+    },
+    {
+      "slug": "air-fryers-6-picks",
+      "pillar_id": "pillar:家電:other",
+      "confidence": "medium",
+      "reason": "広域分類「その他家電」要編集確認"
+    },
+    {
+      "slug": "electric-pressure-cookers-6-picks",
+      "pillar_id": "pillar:家電:kitchen_appliance",
+      "confidence": "high",
+      "reason": "商品語「cooker」からキッチン家電候補"
+    },
+    {
+      "slug": "portable-power-stations-6-picks",
+      "pillar_id": "pillar:家電:other",
+      "confidence": "medium",
+      "reason": "広域分類「その他家電」要編集確認"
+    },
+    {
+      "slug": "electric-shavers-6-picks",
+      "pillar_id": "pillar:家電:household_appliance",
+      "confidence": "high",
+      "reason": "商品語「シェーバ」から生活家電候補"
+    },
+    {
+      "slug": "electric-carpets-6-picks",
+      "pillar_id": "pillar:家電:climate",
+      "confidence": "high",
+      "reason": "商品語「ホットカーペット」から空調・季節家電候補"
+    },
+    {
+      "slug": "panel-heaters-6-picks",
+      "pillar_id": "pillar:家電:climate",
+      "confidence": "high",
+      "reason": "商品語「heater」から空調・季節家電候補"
+    },
+    {
+      "slug": "wearable-blankets-6-picks",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「lan」から情報・スマート家電候補"
+    },
+    {
+      "slug": "massage-guns-6-picks",
+      "pillar_id": "pillar:家電:other",
+      "confidence": "medium",
+      "reason": "広域分類「その他家電」要編集確認"
+    },
+    {
+      "slug": "e-book-readers-6-picks",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「電子書籍」から情報・スマート家電候補"
+    },
+    {
+      "slug": "wireless-chargers-6-picks",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「充電」から情報・スマート家電候補"
+    },
+    {
+      "slug": "smart-rings-6-picks",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「smart-」から情報・スマート家電候補"
+    },
+    {
+      "slug": "noise-cancelling-earbuds-6-picks",
+      "pillar_id": "pillar:家電:av",
+      "confidence": "high",
+      "reason": "商品語「earbud」からテレビ・オーディオ候補"
+    },
+    {
+      "slug": "home-security-cameras-6-picks",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「camera」から情報・スマート家電候補"
+    },
+    {
+      "slug": "dash-cameras-6-picks",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「ドライブ」から情報・スマート家電候補"
+    },
+    {
+      "slug": "sweet-potato-makers-6-picks",
+      "pillar_id": "pillar:家電:kitchen_appliance",
+      "confidence": "high",
+      "reason": "商品語「maker」からキッチン家電候補"
+    },
+    {
+      "slug": "garment-steamers-6-picks",
+      "pillar_id": "pillar:家電:household_appliance",
+      "confidence": "high",
+      "reason": "商品語「衣類スチーマ」から生活家電候補"
+    },
+    {
+      "slug": "portable-ssd-6-picks",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「SSD」から情報・スマート家電候補"
+    },
+    {
+      "slug": "home-bakery-bread-makers-6-picks",
+      "pillar_id": "pillar:家電:kitchen_appliance",
+      "confidence": "high",
+      "reason": "商品語「maker」からキッチン家電候補"
+    },
+    {
+      "slug": "ceiling-lights-6-picks",
+      "pillar_id": "pillar:家電:other",
+      "confidence": "medium",
+      "reason": "広域分類「その他家電」要編集確認"
+    },
+    {
+      "slug": "microwave-ovens-6-picks",
+      "pillar_id": "pillar:家電:kitchen_appliance",
+      "confidence": "high",
+      "reason": "商品語「電子レンジ」からキッチン家電候補"
+    },
+    {
+      "slug": "bone-conduction-earphones-6-picks",
+      "pillar_id": "pillar:家電:av",
+      "confidence": "high",
+      "reason": "商品語「earphone」からテレビ・オーディオ候補"
+    },
+    {
+      "slug": "body-composition-scales-6-picks",
+      "pillar_id": "pillar:家電:other",
+      "confidence": "medium",
+      "reason": "広域分類「その他家電」要編集確認"
+    },
+    {
+      "slug": "portable-induction-cooktops-6-picks",
+      "pillar_id": "pillar:家電:climate",
+      "confidence": "high",
+      "reason": "商品語「ヒーター」から空調・季節家電候補"
+    },
+    {
+      "slug": "digital-thermometers-6-picks",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「digital」から情報・スマート家電候補"
+    },
+    {
+      "slug": "dust-mite-vacuum-cleaners-6-picks",
+      "pillar_id": "pillar:家電:household_appliance",
+      "confidence": "high",
+      "reason": "商品語「vacuum」から生活家電候補"
+    },
+    {
+      "slug": "hot-water-bottles-6-picks",
+      "pillar_id": "pillar:家電:climate",
+      "confidence": "high",
+      "reason": "商品語「湯たんぽ」から空調・季節家電候補"
+    },
+    {
+      "slug": "aroma-diffusers-6-picks",
+      "pillar_id": "pillar:家電:climate",
+      "confidence": "high",
+      "reason": "商品語「アロマディフューザ」から空調・季節家電候補"
+    },
+    {
+      "slug": "usb-desktop-humidifiers-6-picks",
+      "pillar_id": "pillar:家電:climate",
+      "confidence": "high",
+      "reason": "商品語「humidif」から空調・季節家電候補"
+    },
+    {
+      "slug": "electric-heated-mattress-pads-6-picks",
+      "pillar_id": "pillar:家電:climate",
+      "confidence": "high",
+      "reason": "商品語「電気敷きパッド」から空調・季節家電候補"
+    },
+    {
+      "slug": "electric-neck-warmers-6-picks",
+      "pillar_id": "pillar:家電:climate",
+      "confidence": "high",
+      "reason": "商品語「ネックウォーマ」から空調・季節家電候補"
+    },
+    {
+      "slug": "compact-clothes-dryers-6-picks",
+      "pillar_id": "pillar:家電:household_appliance",
+      "confidence": "high",
+      "reason": "商品語「乾燥機」から生活家電候補"
+    },
+    {
+      "slug": "portable-monitors-6-picks",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「モニター」から情報・スマート家電候補"
+    },
+    {
+      "slug": "neck-shoulder-massagers-6-picks",
+      "pillar_id": "pillar:家電:other",
+      "confidence": "medium",
+      "reason": "広域分類「その他家電」要編集確認"
+    },
+    {
+      "slug": "wireless-keyboard-mouse-sets-6-picks",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「keyboard」から情報・スマート家電候補"
+    },
+    {
+      "slug": "ergonomic-office-chairs-6-picks",
+      "pillar_id": "pillar:家電:other",
+      "confidence": "medium",
+      "reason": "広域分類「その他家電」要編集確認"
+    },
+    {
+      "slug": "monitor-arms-6-picks",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「モニター」から情報・スマート家電候補"
+    },
+    {
+      "slug": "wifi-routers-6-picks",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「wifi」から情報・スマート家電候補"
+    },
+    {
+      "slug": "webcams-6-picks",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「カメラ」から情報・スマート家電候補"
+    },
+    {
+      "slug": "gaming-headsets-6-picks",
+      "pillar_id": "pillar:家電:av",
+      "confidence": "high",
+      "reason": "商品語「ヘッドセット」からテレビ・オーディオ候補"
+    },
+    {
+      "slug": "gaming-mice-6-picks",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「マウス」から情報・スマート家電候補"
+    },
+    {
+      "slug": "kerosene-fan-heaters-6-picks",
+      "pillar_id": "pillar:家電:climate",
+      "confidence": "high",
+      "reason": "商品語「fan-」から空調・季節家電候補"
+    },
+    {
+      "slug": "hot-sandwich-makers-6-picks",
+      "pillar_id": "pillar:家電:kitchen_appliance",
+      "confidence": "high",
+      "reason": "商品語「maker」からキッチン家電候補"
+    },
+    {
+      "slug": "standing-desks-6-picks",
+      "pillar_id": "pillar:家電:other",
+      "confidence": "medium",
+      "reason": "広域分類「その他家電」要編集確認"
+    },
+    {
+      "slug": "4k-desktop-monitors-6-picks",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「モニター」から情報・スマート家電候補"
+    },
+    {
+      "slug": "humidifying-air-purifiers-6-picks",
+      "pillar_id": "pillar:家電:climate",
+      "confidence": "high",
+      "reason": "商品語「humidif」から空調・季節家電候補"
+    },
+    {
+      "slug": "electric-coffee-grinders-6-picks",
+      "pillar_id": "pillar:家電:kitchen_appliance",
+      "confidence": "high",
+      "reason": "商品語「コーヒー」からキッチン家電候補"
+    },
+    {
+      "slug": "gaming-chairs-6-picks",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「ゲーミング」から情報・スマート家電候補"
+    },
+    {
+      "slug": "slow-cookers-6-picks",
+      "pillar_id": "pillar:家電:kitchen_appliance",
+      "confidence": "high",
+      "reason": "商品語「cooker」からキッチン家電候補"
+    },
+    {
+      "slug": "shoe-dryers-6-picks",
+      "pillar_id": "pillar:家電:household_appliance",
+      "confidence": "high",
+      "reason": "商品語「乾燥機」から生活家電候補"
+    },
+    {
+      "slug": "donabe-hot-pot-cookware-6-picks",
+      "pillar_id": "pillar:家電:kitchen_appliance",
+      "confidence": "high",
+      "reason": "商品語「pot-」からキッチン家電候補"
+    },
+    {
+      "slug": "drum-washer-dryers-6-picks",
+      "pillar_id": "pillar:家電:household_appliance",
+      "confidence": "high",
+      "reason": "商品語「washer」から生活家電候補"
+    },
+    {
+      "slug": "home-exercise-bikes-6-picks",
+      "pillar_id": "pillar:家電:other",
+      "confidence": "medium",
+      "reason": "広域分類「その他家電」要編集確認"
+    },
+    {
+      "slug": "personal-blenders-6-picks",
+      "pillar_id": "pillar:家電:kitchen_appliance",
+      "confidence": "high",
+      "reason": "商品語「blender」からキッチン家電候補"
+    },
+    {
+      "slug": "portable-gas-stoves-6-picks",
+      "pillar_id": "pillar:家電:other",
+      "confidence": "medium",
+      "reason": "広域分類「その他家電」要編集確認"
+    },
+    {
+      "slug": "gaming-monitors-6-picks",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「モニター」から情報・スマート家電候補"
+    },
+    {
+      "slug": "capsule-coffee-makers-6-picks",
+      "pillar_id": "pillar:家電:kitchen_appliance",
+      "confidence": "high",
+      "reason": "商品語「コーヒー」からキッチン家電候補"
+    },
+    {
+      "slug": "water-flossers-6-picks",
+      "pillar_id": "pillar:家電:other",
+      "confidence": "medium",
+      "reason": "広域分類「その他家電」要編集確認"
+    },
+    {
+      "slug": "handheld-vacuum-cleaners-6-picks",
+      "pillar_id": "pillar:家電:household_appliance",
+      "confidence": "high",
+      "reason": "商品語「vacuum」から生活家電候補"
+    },
+    {
+      "slug": "heated-vests-6-picks",
+      "pillar_id": "pillar:家電:climate",
+      "confidence": "high",
+      "reason": "商品語「ヒーター」から空調・季節家電候補"
+    },
+    {
+      "slug": "desk-foot-warmers-6-picks",
+      "pillar_id": "pillar:家電:climate",
+      "confidence": "high",
+      "reason": "商品語「foot-warmer」から空調・季節家電候補"
+    },
+    {
+      "slug": "gaming-keyboards-6-picks",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「keyboard」から情報・スマート家電候補"
+    },
+    {
+      "slug": "heated-gloves-6-picks",
+      "pillar_id": "pillar:家電:climate",
+      "confidence": "high",
+      "reason": "商品語「電熱」から空調・季節家電候補"
+    },
+    {
+      "slug": "smart-item-trackers-6-picks",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「smart-」から情報・スマート家電候補"
+    },
+    {
+      "slug": "smart-remote-controllers-6-picks",
+      "pillar_id": "pillar:家電:climate",
+      "confidence": "high",
+      "reason": "商品語「エアコン」から空調・季節家電候補"
+    },
+    {
+      "slug": "electric-tire-inflators-6-picks",
+      "pillar_id": "pillar:家電:climate",
+      "confidence": "high",
+      "reason": "商品語「空気」から空調・季節家電候補"
+    },
+    {
+      "slug": "portable-photo-printers-6-picks",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「プリンター」から情報・スマート家電候補"
+    },
+    {
+      "slug": "smart-locks-6-picks",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「smart-」から情報・スマート家電候補"
+    },
+    {
+      "slug": "warm-water-bidet-toilet-seats-6-picks",
+      "pillar_id": "pillar:家電:household_appliance",
+      "confidence": "high",
+      "reason": "商品語「温水洗浄便座」から生活家電候補"
+    },
+    {
+      "slug": "electric-fabric-shavers-6-picks",
+      "pillar_id": "pillar:家電:household_appliance",
+      "confidence": "high",
+      "reason": "商品語「shaver」から生活家電候補"
+    },
+    {
+      "slug": "usb-c-docking-stations-6-picks",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「USB-」から情報・スマート家電候補"
+    },
+    {
+      "slug": "automatic-soup-makers",
+      "pillar_id": "pillar:家電:kitchen_appliance",
+      "confidence": "high",
+      "reason": "商品語「調理」からキッチン家電候補"
+    },
+    {
+      "slug": "home-paper-shredders-6-picks",
+      "pillar_id": "pillar:家電:household_appliance",
+      "confidence": "high",
+      "reason": "商品語「シュレッダ」から生活家電候補"
+    },
+    {
+      "slug": "compact-pressure-washers-for-home",
+      "pillar_id": "pillar:家電:household_appliance",
+      "confidence": "high",
+      "reason": "商品語「掃除」から生活家電候補"
+    },
+    {
+      "slug": "led-lanterns-for-autumn-outings-6-picks",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「lan」から情報・スマート家電候補"
+    },
+    {
+      "slug": "smart-plugs-6-picks",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「smart-」から情報・スマート家電候補"
+    },
+    {
+      "slug": "vacuum-food-sealers-6-picks",
+      "pillar_id": "pillar:家電:kitchen_appliance",
+      "confidence": "high",
+      "reason": "商品語「food-」からキッチン家電候補"
+    },
+    {
+      "slug": "streaming-media-players-6-picks",
+      "pillar_id": "pillar:家電:av",
+      "confidence": "high",
+      "reason": "商品語「テレビ」からテレビ・オーディオ候補"
+    },
+    {
+      "slug": "tablets-6-picks",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「tablet」から情報・スマート家電候補"
+    },
+    {
+      "slug": "smart-speakers-6-picks",
+      "pillar_id": "pillar:家電:av",
+      "confidence": "high",
+      "reason": "商品語「speaker」からテレビ・オーディオ候補"
+    },
+    {
+      "slug": "action-cameras-6-picks",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「camera」から情報・スマート家電候補"
+    },
+    {
+      "slug": "home-water-servers-6-picks",
+      "pillar_id": "pillar:家電:other",
+      "confidence": "medium",
+      "reason": "広域分類「その他家電」要編集確認"
+    },
+    {
+      "slug": "refrigerators-6-picks",
+      "pillar_id": "pillar:家電:kitchen_appliance",
+      "confidence": "high",
+      "reason": "商品語「冷蔵庫」からキッチン家電候補"
+    },
+    {
+      "slug": "iphone-book-type-cases-6-picks",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「Phone」から情報・スマート家電候補"
+    },
+    {
+      "slug": "wireless-game-controllers-6-picks",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「game」から情報・スマート家電候補"
+    },
+    {
+      "slug": "open-ear-wireless-earbuds-6-picks",
+      "pillar_id": "pillar:家電:av",
+      "confidence": "high",
+      "reason": "商品語「earbud」からテレビ・オーディオ候補"
+    },
+    {
+      "slug": "laptops-6-picks",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「パソコン」から情報・スマート家電候補"
+    },
+    {
+      "slug": "air-conditioners-6-picks",
+      "pillar_id": "pillar:家電:climate",
+      "confidence": "high",
+      "reason": "商品語「air-condition」から空調・季節家電候補"
+    },
+    {
+      "slug": "4k-liquid-crystal-tvs-6-picks",
+      "pillar_id": "pillar:家電:av",
+      "confidence": "high",
+      "reason": "商品語「テレビ」からテレビ・オーディオ候補"
+    },
+    {
+      "slug": "top-load-washing-machines-6-picks",
+      "pillar_id": "pillar:家電:household_appliance",
+      "confidence": "high",
+      "reason": "商品語「washing」から生活家電候補"
+    },
+    {
+      "slug": "compact-mini-pcs-6-picks",
+      "pillar_id": "pillar:家電:other",
+      "confidence": "medium",
+      "reason": "広域分類「その他家電」要編集確認"
+    },
+    {
+      "slug": "heated-car-seat-cushions-6-picks",
+      "pillar_id": "pillar:家電:climate",
+      "confidence": "high",
+      "reason": "商品語「ヒーター」から空調・季節家電候補"
+    },
+    {
+      "slug": "vr-headsets-6-picks",
+      "pillar_id": "pillar:家電:av",
+      "confidence": "high",
+      "reason": "商品語「ヘッドセット」からテレビ・オーディオ候補"
+    },
+    {
+      "slug": "electric-nasal-aspirators-6-picks",
+      "pillar_id": "pillar:家電:household_appliance",
+      "confidence": "high",
+      "reason": "商品語「鼻水吸引」から生活家電候補"
+    },
+    {
+      "slug": "usb-condenser-microphones-6-picks",
+      "pillar_id": "pillar:家電:av",
+      "confidence": "high",
+      "reason": "商品語「マイク」からテレビ・オーディオ候補"
+    },
+    {
+      "slug": "over-ear-noise-cancelling-headphones-6-picks",
+      "pillar_id": "pillar:家電:av",
+      "confidence": "high",
+      "reason": "商品語「headphone」からテレビ・オーディオ候補"
+    },
+    {
+      "slug": "home-inkjet-printers-nengajo-6-picks",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「プリンター」から情報・スマート家電候補"
+    },
+    {
+      "slug": "usb-heated-insoles-6-picks",
+      "pillar_id": "pillar:家電:climate",
+      "confidence": "high",
+      "reason": "商品語「電熱」から空調・季節家電候補"
+    },
+    {
+      "slug": "foot-spa-baths-6-picks",
+      "pillar_id": "pillar:家電:other",
+      "confidence": "medium",
+      "reason": "広域分類「その他家電」要編集確認"
+    },
+    {
+      "slug": "usb-flash-drives-32gb-6-picks",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「usb-」から情報・スマート家電候補"
+    },
+    {
+      "slug": "home-document-scanners-6-picks",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「スキャナ」から情報・スマート家電候補"
+    },
+    {
+      "slug": "hobby-mini-rotary-tools",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「ルーター」から情報・スマート家電候補"
+    },
+    {
+      "slug": "handheld-translation-devices",
+      "pillar_id": "pillar:家電:other",
+      "confidence": "medium",
+      "reason": "広域分類「その他家電」要編集確認"
+    },
+    {
+      "slug": "portable-dvd-players",
+      "pillar_id": "pillar:家電:av",
+      "confidence": "high",
+      "reason": "商品語「portable-dvd」からテレビ・オーディオ候補"
+    },
+    {
+      "slug": "home-label-makers",
+      "pillar_id": "pillar:家電:kitchen_appliance",
+      "confidence": "high",
+      "reason": "商品語「maker」からキッチン家電候補"
+    },
+    {
+      "slug": "digital-kitchen-scales",
+      "pillar_id": "pillar:家電:kitchen_appliance",
+      "confidence": "high",
+      "reason": "商品語「kitchen」からキッチン家電候補"
+    },
+    {
+      "slug": "desktop-trackballs-6-picks",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「trackball」から情報・スマート家電候補"
+    },
+    {
+      "slug": "hand-blenders-for-cooking",
+      "pillar_id": "pillar:家電:kitchen_appliance",
+      "confidence": "high",
+      "reason": "商品語「blender」からキッチン家電候補"
+    },
+    {
+      "slug": "home-steam-cleaners",
+      "pillar_id": "pillar:家電:household_appliance",
+      "confidence": "high",
+      "reason": "商品語「cleaner」から生活家電候補"
+    },
+    {
+      "slug": "compact-binoculars-for-outings",
+      "pillar_id": "pillar:家電:av",
+      "confidence": "high",
+      "reason": "商品語「双眼鏡」からテレビ・オーディオ候補"
+    },
+    {
+      "slug": "electric-air-dusters",
+      "pillar_id": "pillar:家電:other",
+      "confidence": "medium",
+      "reason": "広域分類「その他家電」要編集確認"
+    },
+    {
+      "slug": "home-sewing-machines-comparison",
+      "pillar_id": "pillar:家電:household_appliance",
+      "confidence": "high",
+      "reason": "商品語「ミシン」から生活家電候補"
+    },
+    {
+      "slug": "compact-cordless-screwdrivers",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「充電」から情報・スマート家電候補"
+    },
+    {
+      "slug": "smartphone-photography-tripods",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「phone」から情報・スマート家電候補"
+    },
+    {
+      "slug": "electric-kerosene-transfer-pumps",
+      "pillar_id": "pillar:家電:climate",
+      "confidence": "high",
+      "reason": "商品語「灯油ポンプ」から空調・季節家電候補"
+    },
+    {
+      "slug": "home-record-players",
+      "pillar_id": "pillar:家電:av",
+      "confidence": "high",
+      "reason": "商品語「record-player」からテレビ・オーディオ候補"
+    },
+    {
+      "slug": "automatic-pet-feeders",
+      "pillar_id": "pillar:家電:other",
+      "confidence": "medium",
+      "reason": "広域分類「その他家電」要編集確認"
+    },
+    {
+      "slug": "home-portable-musical-keyboards",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「keyboard」から情報・スマート家電候補"
+    },
+    {
+      "slug": "home-food-waste-dryers",
+      "pillar_id": "pillar:家電:kitchen_appliance",
+      "confidence": "high",
+      "reason": "商品語「food-」からキッチン家電候補"
+    },
+    {
+      "slug": "desk-ac-power-strips",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「電源タップ」から情報・スマート家電候補"
+    },
+    {
+      "slug": "indoor-digital-thermo-hygrometers",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「digital」から情報・スマート家電候補"
+    },
+    {
+      "slug": "usb-memory-card-readers",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「usb-」から情報・スマート家電候補"
+    },
+    {
+      "slug": "home-ultrasonic-cleaners",
+      "pillar_id": "pillar:家電:household_appliance",
+      "confidence": "high",
+      "reason": "商品語「cleaner」から生活家電候補"
+    },
+    {
+      "slug": "standalone-electric-milk-frothers",
+      "pillar_id": "pillar:家電:kitchen_appliance",
+      "confidence": "high",
+      "reason": "商品語「調理」からキッチン家電候補"
+    },
+    {
+      "slug": "home-document-laminators",
+      "pillar_id": "pillar:家電:other",
+      "confidence": "medium",
+      "reason": "広域分類「その他家電」要編集確認"
+    },
+    {
+      "slug": "home-ethernet-switches",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「スイッチングハブ」から情報・スマート家電候補"
+    },
+    {
+      "slug": "home-yogurt-makers",
+      "pillar_id": "pillar:家電:kitchen_appliance",
+      "confidence": "high",
+      "reason": "商品語「maker」からキッチン家電候補"
+    },
+    {
+      "slug": "screenless-drawing-tablets",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「tablet」から情報・スマート家電候補"
+    },
+    {
+      "slug": "portable-am-fm-radios",
+      "pillar_id": "pillar:家電:av",
+      "confidence": "high",
+      "reason": "商品語「radio」からテレビ・オーディオ候補"
+    },
+    {
+      "slug": "external-computer-optical-drives",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「computer」から情報・スマート家電候補"
+    },
+    {
+      "slug": "electric-hand-mixers-for-baking",
+      "pillar_id": "pillar:家電:kitchen_appliance",
+      "confidence": "high",
+      "reason": "商品語「製菓」からキッチン家電候補"
+    },
+    {
+      "slug": "desktop-basic-calculators",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「計算機」から情報・スマート家電候補"
+    },
+    {
+      "slug": "immersion-sous-vide-cookers",
+      "pillar_id": "pillar:家電:kitchen_appliance",
+      "confidence": "high",
+      "reason": "商品語「cooker」からキッチン家電候補"
+    },
+    {
+      "slug": "usb-c-to-c-cables",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「USB-」から情報・スマート家電候補"
+    },
+    {
+      "slug": "portable-voice-recorders",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「録音」から情報・スマート家電候補"
+    },
+    {
+      "slug": "desktop-uninterruptible-power-supplies",
+      "pillar_id": "pillar:家電:other",
+      "confidence": "medium",
+      "reason": "広域分類「その他家電」要編集確認"
+    },
+    {
+      "slug": "hdmi-input-switchers",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「HDMI」から情報・スマート家電候補"
+    },
+    {
+      "slug": "digital-photo-frames",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「デジタル」から情報・スマート家電候補"
+    },
+    {
+      "slug": "bedside-alarm-clocks",
+      "pillar_id": "pillar:家電:other",
+      "confidence": "medium",
+      "reason": "広域分類「その他家電」要編集確認"
+    },
+    {
+      "slug": "rechargeable-indoor-motion-sensor-lights",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「充電」から情報・スマート家電候補"
+    },
+    {
+      "slug": "laptop-privacy-screen-filters",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「ノートPC」から情報・スマート家電候補"
+    },
+    {
+      "slug": "home-wifi-range-extenders",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「wifi」から情報・スマート家電候補"
+    },
+    {
+      "slug": "usb-wired-ethernet-adapters",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「usb-」から情報・スマート家電候補"
+    },
+    {
+      "slug": "countertop-food-processors",
+      "pillar_id": "pillar:家電:kitchen_appliance",
+      "confidence": "high",
+      "reason": "商品語「food-」からキッチン家電候補"
+    },
+    {
+      "slug": "household-steam-irons",
+      "pillar_id": "pillar:家電:household_appliance",
+      "confidence": "high",
+      "reason": "商品語「steam-irons」から生活家電候補"
+    },
+    {
+      "slug": "bluetooth-tv-audio-transmitters",
+      "pillar_id": "pillar:家電:av",
+      "confidence": "high",
+      "reason": "商品語「audio」からテレビ・オーディオ候補"
+    },
+    {
+      "slug": "external-hard-disk-drives",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「HDD」から情報・スマート家電候補"
+    },
+    {
+      "slug": "computer-numeric-keypads",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「computer」から情報・スマート家電候補"
+    },
+    {
+      "slug": "smartphone-motorized-gimbals",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「phone」から情報・スマート家電候補"
+    },
+    {
+      "slug": "home-cordless-landline-telephones",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「コードレス電話」から情報・スマート家電候補"
+    },
+    {
+      "slug": "electric-fruit-vegetable-juicers",
+      "pillar_id": "pillar:家電:kitchen_appliance",
+      "confidence": "high",
+      "reason": "商品語「ジューサー」からキッチン家電候補"
+    },
+    {
+      "slug": "usb-hdmi-video-capture-devices",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「usb-」から情報・スマート家電候補"
+    },
+    {
+      "slug": "electric-hot-water-dispensing-pots",
+      "pillar_id": "pillar:家電:kitchen_appliance",
+      "confidence": "high",
+      "reason": "商品語「ポット」からキッチン家電候補"
+    },
+    {
+      "slug": "digital-probe-cooking-thermometers",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「デジタル」から情報・スマート家電候補"
+    },
+    {
+      "slug": "full-size-sd-memory-cards",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「memory」から情報・スマート家電候補"
+    },
+    {
+      "slug": "usb-c-hubs-for-laptops-comparison",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「USB-」から情報・スマート家電候補"
+    },
+    {
+      "slug": "electronic-writing-tablets",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「tablet」から情報・スマート家電候補"
+    },
+    {
+      "slug": "usb-c-laptop-chargers-for-travel",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「USB-」から情報・スマート家電候補"
+    },
+    {
+      "slug": "usb-c-multiport-card-readers",
+      "pillar_id": "pillar:家電:digital",
+      "confidence": "high",
+      "reason": "商品語「USB-」から情報・スマート家電候補"
+    }
+  ]
+}

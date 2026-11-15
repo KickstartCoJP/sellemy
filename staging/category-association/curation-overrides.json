@@ -1,0 +1,30 @@
+{
+  "schema": "sellemy-category-semantic-curation/v1",
+  "reason": "Clear product-type precedence corrections and cross-domain holds on title/slug audit",
+  "overrides": {
+    "home-ipl-hair-removal-devices-6-picks": {"pillar_id": "pillar:美容:beauty_device", "confidence": "high", "reason": "家庭用光脱毛器は美容機器"},
+    "electric-nose-hair-trimmers-comparison": {"pillar_id": "pillar:美容:beauty_device", "confidence": "high", "reason": "鼻毛カッターは美容道具"},
+    "makeup-cleansing-oils": {"pillar_id": "pillar:美容:skin", "confidence": "high", "reason": "クレンジングは洗顔ケア"},
+    "manual-toothbrushes-for-daily-use": {"pillar_id": "pillar:美容:body", "confidence": "high", "reason": "歯ブラシは口腔ケア"},
+    "hot-air-styling-brushes-6-picks": {"pillar_id": "pillar:美容:hair", "confidence": "high", "reason": "ホットエアブラシはヘア用品"},
+    "womens-body-shavers-6-picks": {"pillar_id": "pillar:美容:beauty_device", "confidence": "high", "reason": "電動シェーバーは美容機器"},
+    "medicated-hand-soaps-6-picks": {"pillar_id": "pillar:日用品:daily", "confidence": "high", "reason": "薬用ハンドソープは衛生用品"},
+    "disinfectant-sprays-6-picks": {"pillar_id": "pillar:日用品:daily", "confidence": "high", "reason": "除菌スプレーは衛生用品"},
+    "laundry-baskets": {"pillar_id": "pillar:日用品:laundry", "confidence": "high", "reason": "ランドリーバスケットは洗濯用品"},
+    "manual-pruning-saws": {"pillar_id": "pillar:日用品:other", "confidence": "medium", "reason": "剪定用品は生活雑貨内の園芸用途"},
+    "home-entryway-shoehorns": {"pillar_id": "pillar:日用品:other", "confidence": "medium", "reason": "靴べらは玄関の生活雑貨"},
+    "shopping-carry-carts": {"pillar_id": "pillar:日用品:other", "confidence": "medium", "reason": "買物用品は生活用品の広域候補"},
+    "portable-induction-cooktops-6-picks": {"pillar_id": "pillar:家電:kitchen_appliance", "confidence": "high", "reason": "卓上IHは調理家電"},
+    "home-label-makers": {"pillar_id": "pillar:家電:digital", "confidence": "high", "reason": "ラベルライターは情報機器"},
+    "electric-tire-inflators-6-picks": {"pillar_id": "pillar:家電:other", "confidence": "medium", "reason": "車用空気入れは専用電動工具"},
+    "smart-remote-controllers-6-picks": {"pillar_id": "pillar:家電:digital", "confidence": "high", "reason": "スマートリモコンは情報機器"},
+    "digital-probe-cooking-thermometers": {"pillar_id": "pillar:家電:kitchen_appliance", "confidence": "high", "reason": "調理温度計はキッチン用電子機器"},
+    "home-food-waste-dryers": {"pillar_id": "pillar:家電:kitchen_appliance", "confidence": "high", "reason": "生ごみ処理機はキッチン家電"},
+    "health-management-blood-pressure-monitors": {"pillar_id": "pillar:家電:other", "confidence": "medium", "reason": "血圧計は健康測定器"},
+    "digital-thermometers-6-picks": {"pillar_id": "pillar:家電:other", "confidence": "medium", "reason": "電子体温計は健康測定器"},
+    "gaming-chairs-6-picks": {"pillar_id": "pillar:家電:other", "confidence": "medium", "reason": "ゲーミングチェアは家具"},
+    "wearable-blankets-6-picks": {"pillar_id": "HOLD", "confidence": "low", "reason": "非電動の毛布は家電分類に不適合"},
+    "hot-water-bottles-6-picks": {"pillar_id": "HOLD", "confidence": "low", "reason": "非電動の湯たんぽは家電分類に不適合"},
+    "essential-portable-water-bottles-6-choices": {"pillar_id": "HOLD", "confidence": "low", "reason": "携帯浄水ボトルは家電分類に不適合"}
+  }
+}

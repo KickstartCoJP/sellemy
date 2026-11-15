@@ -1,0 +1,670 @@
+{
+  "assignments": [
+    {
+      "slug": "summer-skin-protection-primers-6-choices",
+      "pillar_id": "pillar:美容:makeup",
+      "confidence": "high",
+      "reason": "商品語「primer」からメイクアップ候補"
+    },
+    {
+      "slug": "after-sun-lotion-6-choices",
+      "pillar_id": "pillar:美容:skin",
+      "confidence": "high",
+      "reason": "商品語「肌」からスキンケア候補"
+    },
+    {
+      "slug": "summer-nail-polish-6-selection",
+      "pillar_id": "pillar:美容:makeup",
+      "confidence": "high",
+      "reason": "商品語「ネイル」からメイクアップ候補"
+    },
+    {
+      "slug": "best-vitamin-e-serums-for-summer",
+      "pillar_id": "pillar:美容:skin",
+      "confidence": "high",
+      "reason": "商品語「肌」からスキンケア候補"
+    },
+    {
+      "slug": "best-face-powders-6-picks",
+      "pillar_id": "pillar:美容:makeup",
+      "confidence": "high",
+      "reason": "商品語「パウダー」からメイクアップ候補"
+    },
+    {
+      "slug": "summer-refresh-body-scrubs-6-picks",
+      "pillar_id": "pillar:美容:body",
+      "confidence": "high",
+      "reason": "商品語「body-」からボディ・フットケア候補"
+    },
+    {
+      "slug": "summer-sunscreen-top6",
+      "pillar_id": "pillar:美容:skin",
+      "confidence": "high",
+      "reason": "商品語「日焼け」からスキンケア候補"
+    },
+    {
+      "slug": "mineral-foundation-six-selection",
+      "pillar_id": "pillar:美容:makeup",
+      "confidence": "high",
+      "reason": "商品語「foundation」からメイクアップ候補"
+    },
+    {
+      "slug": "seasonal-moisturizing-creams-6",
+      "pillar_id": "pillar:美容:skin",
+      "confidence": "high",
+      "reason": "商品語「保湿」からスキンケア候補"
+    },
+    {
+      "slug": "vitamin-c-serums",
+      "pillar_id": "pillar:美容:skin",
+      "confidence": "high",
+      "reason": "商品語「serum」からスキンケア候補"
+    },
+    {
+      "slug": "autumn-hair-loss-care-shampoo-6-picks",
+      "pillar_id": "pillar:美容:hair",
+      "confidence": "high",
+      "reason": "商品語「hair」からヘアケア・スタイリング候補"
+    },
+    {
+      "slug": "autumn-hand-creams-6-picks",
+      "pillar_id": "pillar:美容:body",
+      "confidence": "high",
+      "reason": "商品語「ハンドクリーム」からボディ・フットケア候補"
+    },
+    {
+      "slug": "autumn-lip-balms-6-picks",
+      "pillar_id": "pillar:美容:makeup",
+      "confidence": "high",
+      "reason": "商品語「lip-」からメイクアップ候補"
+    },
+    {
+      "slug": "autumn-facial-toners-6-picks",
+      "pillar_id": "pillar:美容:skin",
+      "confidence": "high",
+      "reason": "商品語「肌」からスキンケア候補"
+    },
+    {
+      "slug": "autumn-hair-dryers-6-picks",
+      "pillar_id": "pillar:美容:hair",
+      "confidence": "high",
+      "reason": "商品語「hair」からヘアケア・スタイリング候補"
+    },
+    {
+      "slug": "autumn-moisturizing-sheet-masks-6-picks",
+      "pillar_id": "pillar:美容:skin",
+      "confidence": "high",
+      "reason": "商品語「保湿」からスキンケア候補"
+    },
+    {
+      "slug": "facial-beauty-devices-6-picks",
+      "pillar_id": "pillar:美容:beauty_device",
+      "confidence": "high",
+      "reason": "商品語「美顔器」から美容機器・美容道具候補"
+    },
+    {
+      "slug": "autumn-hair-irons-6-picks",
+      "pillar_id": "pillar:美容:hair",
+      "confidence": "high",
+      "reason": "商品語「hair」からヘアケア・スタイリング候補"
+    },
+    {
+      "slug": "home-ipl-hair-removal-devices-6-picks",
+      "pillar_id": "pillar:美容:hair",
+      "confidence": "high",
+      "reason": "商品語「hair」からヘアケア・スタイリング候補"
+    },
+    {
+      "slug": "autumn-bath-salts-6-picks",
+      "pillar_id": "pillar:美容:body",
+      "confidence": "high",
+      "reason": "商品語「入浴」からボディ・フットケア候補"
+    },
+    {
+      "slug": "gray-hair-color-treatments-6-picks",
+      "pillar_id": "pillar:美容:hair",
+      "confidence": "high",
+      "reason": "商品語「hair」からヘアケア・スタイリング候補"
+    },
+    {
+      "slug": "eye-creams-for-autumn-dryness-6-picks",
+      "pillar_id": "pillar:美容:skin",
+      "confidence": "high",
+      "reason": "商品語「クリーム」からスキンケア候補"
+    },
+    {
+      "slug": "autumn-body-lotions-6-picks",
+      "pillar_id": "pillar:美容:body",
+      "confidence": "high",
+      "reason": "商品語「body-」からボディ・フットケア候補"
+    },
+    {
+      "slug": "autumn-gentle-face-cleansers-6-picks",
+      "pillar_id": "pillar:美容:skin",
+      "confidence": "high",
+      "reason": "商品語「face-」からスキンケア候補"
+    },
+    {
+      "slug": "autumn-eyeshadow-palettes-6-picks",
+      "pillar_id": "pillar:美容:makeup",
+      "confidence": "high",
+      "reason": "商品語「eyeshadow」からメイクアップ候補"
+    },
+    {
+      "slug": "autumn-lip-colors-6-picks",
+      "pillar_id": "pillar:美容:makeup",
+      "confidence": "high",
+      "reason": "商品語「lip-」からメイクアップ候補"
+    },
+    {
+      "slug": "autumn-nail-colors-6-picks",
+      "pillar_id": "pillar:美容:makeup",
+      "confidence": "high",
+      "reason": "商品語「ネイル」からメイクアップ候補"
+    },
+    {
+      "slug": "mascaras-6-picks",
+      "pillar_id": "pillar:美容:makeup",
+      "confidence": "high",
+      "reason": "商品語「mascara」からメイクアップ候補"
+    },
+    {
+      "slug": "eyelash-serums-6-picks",
+      "pillar_id": "pillar:美容:makeup",
+      "confidence": "high",
+      "reason": "商品語「eyelash」からメイクアップ候補"
+    },
+    {
+      "slug": "autumn-perfumes-6-picks",
+      "pillar_id": "pillar:美容:fragrance",
+      "confidence": "high",
+      "reason": "商品語「perfume」から香水・フレグランス候補"
+    },
+    {
+      "slug": "retinol-serums-6-picks",
+      "pillar_id": "pillar:美容:skin",
+      "confidence": "high",
+      "reason": "商品語「serum」からスキンケア候補"
+    },
+    {
+      "slug": "leave-in-hair-treatments-6-picks",
+      "pillar_id": "pillar:美容:hair",
+      "confidence": "high",
+      "reason": "商品語「hair」からヘアケア・スタイリング候補"
+    },
+    {
+      "slug": "cushion-foundations-6-picks",
+      "pillar_id": "pillar:美容:makeup",
+      "confidence": "high",
+      "reason": "商品語「foundation」からメイクアップ候補"
+    },
+    {
+      "slug": "color-contacts-6-picks",
+      "pillar_id": "pillar:美容:makeup",
+      "confidence": "high",
+      "reason": "商品語「カラーコンタクト」からメイクアップ候補"
+    },
+    {
+      "slug": "autumn-cheek-blush-6-picks",
+      "pillar_id": "pillar:美容:makeup",
+      "confidence": "high",
+      "reason": "商品語「メイク」からメイクアップ候補"
+    },
+    {
+      "slug": "mens-hair-growth-tonics-6-picks",
+      "pillar_id": "pillar:美容:hair",
+      "confidence": "high",
+      "reason": "商品語「hair」からヘアケア・スタイリング候補"
+    },
+    {
+      "slug": "concealer-6-picks",
+      "pillar_id": "pillar:美容:makeup",
+      "confidence": "high",
+      "reason": "商品語「concealer」からメイクアップ候補"
+    },
+    {
+      "slug": "autumn-face-oils-6-picks",
+      "pillar_id": "pillar:美容:skin",
+      "confidence": "high",
+      "reason": "商品語「フェイス」からスキンケア候補"
+    },
+    {
+      "slug": "warming-eye-masks-6-picks",
+      "pillar_id": "HOLD",
+      "confidence": "low",
+      "reason": "商品種類の分類根拠不足"
+    },
+    {
+      "slug": "all-in-one-gel-6-picks",
+      "pillar_id": "pillar:美容:skin",
+      "confidence": "high",
+      "reason": "商品語「スキン」からスキンケア候補"
+    },
+    {
+      "slug": "cleansing-balms-6-picks",
+      "pillar_id": "pillar:美容:skin",
+      "confidence": "high",
+      "reason": "商品語「クレンジング」からスキンケア候補"
+    },
+    {
+      "slug": "deodorant-antiperspirants-6-picks",
+      "pillar_id": "pillar:美容:body",
+      "confidence": "high",
+      "reason": "商品語「制汗」からボディ・フットケア候補"
+    },
+    {
+      "slug": "pore-care-nose-strips-6-picks",
+      "pillar_id": "pillar:美容:skin",
+      "confidence": "high",
+      "reason": "商品語「毛穴」からスキンケア候補"
+    },
+    {
+      "slug": "moisturizing-body-wash-6-picks",
+      "pillar_id": "pillar:美容:body",
+      "confidence": "high",
+      "reason": "商品語「body-」からボディ・フットケア候補"
+    },
+    {
+      "slug": "niacinamide-serums-6-picks",
+      "pillar_id": "pillar:美容:skin",
+      "confidence": "high",
+      "reason": "商品語「serum」からスキンケア候補"
+    },
+    {
+      "slug": "self-gel-nail-kits-6-picks",
+      "pillar_id": "pillar:美容:makeup",
+      "confidence": "high",
+      "reason": "商品語「ネイル」からメイクアップ候補"
+    },
+    {
+      "slug": "eyebrow-makeup-6-picks",
+      "pillar_id": "pillar:美容:makeup",
+      "confidence": "high",
+      "reason": "商品語「makeup」からメイクアップ候補"
+    },
+    {
+      "slug": "autumn-cuticle-oils-6-picks",
+      "pillar_id": "pillar:美容:body",
+      "confidence": "high",
+      "reason": "商品語「ネイルオイル」からボディ・フットケア候補"
+    },
+    {
+      "slug": "autumn-cleansing-milks-6-picks",
+      "pillar_id": "pillar:美容:skin",
+      "confidence": "high",
+      "reason": "商品語「クレンジング」からスキンケア候補"
+    },
+    {
+      "slug": "heel-moisturizing-creams-6-picks",
+      "pillar_id": "pillar:美容:body",
+      "confidence": "high",
+      "reason": "商品語「かかと」からボディ・フットケア候補"
+    },
+    {
+      "slug": "hair-brushes-for-frizz-6-picks",
+      "pillar_id": "pillar:美容:hair",
+      "confidence": "high",
+      "reason": "商品語「hair」からヘアケア・スタイリング候補"
+    },
+    {
+      "slug": "makeup-setting-sprays-6-picks",
+      "pillar_id": "pillar:美容:makeup",
+      "confidence": "high",
+      "reason": "商品語「メイク」からメイクアップ候補"
+    },
+    {
+      "slug": "heated-eyelash-curlers-6-picks",
+      "pillar_id": "pillar:美容:beauty_device",
+      "confidence": "high",
+      "reason": "商品語「ホットビューラー」から美容機器・美容道具候補"
+    },
+    {
+      "slug": "serum-foundations-6-picks",
+      "pillar_id": "pillar:美容:makeup",
+      "confidence": "high",
+      "reason": "商品語「foundation」からメイクアップ候補"
+    },
+    {
+      "slug": "liquid-eyeliners-6-picks",
+      "pillar_id": "pillar:美容:makeup",
+      "confidence": "high",
+      "reason": "商品語「アイライナー」からメイクアップ候補"
+    },
+    {
+      "slug": "rinse-out-hair-masks-6-picks",
+      "pillar_id": "pillar:美容:hair",
+      "confidence": "high",
+      "reason": "商品語「hair」からヘアケア・スタイリング候補"
+    },
+    {
+      "slug": "facial-steamers-for-home-6-picks",
+      "pillar_id": "pillar:美容:beauty_device",
+      "confidence": "high",
+      "reason": "商品語「フェイススチーマー」から美容機器・美容道具候補"
+    },
+    {
+      "slug": "holiday-makeup-gift-sets-6-picks",
+      "pillar_id": "pillar:美容:makeup",
+      "confidence": "high",
+      "reason": "商品語「makeup」からメイクアップ候補"
+    },
+    {
+      "slug": "electric-cleansing-brushes-6-picks",
+      "pillar_id": "pillar:美容:beauty_device",
+      "confidence": "high",
+      "reason": "商品語「電動洗顔」から美容機器・美容道具候補"
+    },
+    {
+      "slug": "scalp-massagers-6-picks",
+      "pillar_id": "pillar:美容:hair",
+      "confidence": "high",
+      "reason": "商品語「scalp」からヘアケア・スタイリング候補"
+    },
+    {
+      "slug": "whitening-toothpaste-6-picks",
+      "pillar_id": "pillar:美容:body",
+      "confidence": "high",
+      "reason": "商品語「歯磨」からボディ・フットケア候補"
+    },
+    {
+      "slug": "acne-spot-patches-6-picks",
+      "pillar_id": "pillar:美容:skin",
+      "confidence": "high",
+      "reason": "商品語「肌」からスキンケア候補"
+    },
+    {
+      "slug": "moisturizing-emulsions-for-autumn-6-picks",
+      "pillar_id": "pillar:美容:skin",
+      "confidence": "high",
+      "reason": "商品語「乳液」からスキンケア候補"
+    },
+    {
+      "slug": "beauty-collagen-supplements-6-picks",
+      "pillar_id": "pillar:美容:body",
+      "confidence": "high",
+      "reason": "商品語「コラーゲン」からボディ・フットケア候補"
+    },
+    {
+      "slug": "mouthwash-oral-care-6-picks",
+      "pillar_id": "pillar:美容:body",
+      "confidence": "high",
+      "reason": "商品語「mouthwash」からボディ・フットケア候補"
+    },
+    {
+      "slug": "lip-oils-glosses-6-picks",
+      "pillar_id": "pillar:美容:makeup",
+      "confidence": "high",
+      "reason": "商品語「lip-」からメイクアップ候補"
+    },
+    {
+      "slug": "eyelid-tape-double-eyelid-6-picks",
+      "pillar_id": "pillar:美容:makeup",
+      "confidence": "high",
+      "reason": "商品語「メイク」からメイクアップ候補"
+    },
+    {
+      "slug": "face-roller-gua-sha-tools-6-picks",
+      "pillar_id": "pillar:美容:beauty_device",
+      "confidence": "high",
+      "reason": "商品語「face-roller」から美容機器・美容道具候補"
+    },
+    {
+      "slug": "hot-air-styling-brushes-6-picks",
+      "pillar_id": "pillar:美容:beauty_device",
+      "confidence": "high",
+      "reason": "商品語「ブラシ」から美容機器・美容道具候補"
+    },
+    {
+      "slug": "womens-hair-growth-serums-6-picks",
+      "pillar_id": "pillar:美容:hair",
+      "confidence": "high",
+      "reason": "商品語「hair」からヘアケア・スタイリング候補"
+    },
+    {
+      "slug": "overnight-sleeping-masks-6-picks",
+      "pillar_id": "pillar:美容:skin",
+      "confidence": "high",
+      "reason": "商品語「sleeping-mask」からスキンケア候補"
+    },
+    {
+      "slug": "autumn-winter-moisturizing-primers-6-picks",
+      "pillar_id": "pillar:美容:makeup",
+      "confidence": "high",
+      "reason": "商品語「primer」からメイクアップ候補"
+    },
+    {
+      "slug": "lip-scrubs-6-picks",
+      "pillar_id": "pillar:美容:makeup",
+      "confidence": "high",
+      "reason": "商品語「lip-」からメイクアップ候補"
+    },
+    {
+      "slug": "highlighter-contour-palette-6-picks",
+      "pillar_id": "pillar:美容:makeup",
+      "confidence": "high",
+      "reason": "商品語「メイク」からメイクアップ候補"
+    },
+    {
+      "slug": "dry-shampoo-6-picks",
+      "pillar_id": "pillar:美容:hair",
+      "confidence": "high",
+      "reason": "商品語「shampoo」からヘアケア・スタイリング候補"
+    },
+    {
+      "slug": "mens-all-in-one-skincare-6-picks",
+      "pillar_id": "pillar:美容:skin",
+      "confidence": "high",
+      "reason": "商品語「スキン」からスキンケア候補"
+    },
+    {
+      "slug": "beauty-advent-calendars-6-picks",
+      "pillar_id": "pillar:美容:makeup",
+      "confidence": "high",
+      "reason": "商品語「コスメ」からメイクアップ候補"
+    },
+    {
+      "slug": "halloween-face-paint-makeup-6-picks",
+      "pillar_id": "pillar:美容:makeup",
+      "confidence": "high",
+      "reason": "商品語「メイク」からメイクアップ候補"
+    },
+    {
+      "slug": "multipurpose-moisture-balms-6-picks",
+      "pillar_id": "pillar:美容:skin",
+      "confidence": "high",
+      "reason": "商品語「肌」からスキンケア候補"
+    },
+    {
+      "slug": "press-on-nail-stickers-6-picks",
+      "pillar_id": "pillar:美容:makeup",
+      "confidence": "high",
+      "reason": "商品語「ネイル」からメイクアップ候補"
+    },
+    {
+      "slug": "micellar-cleansing-water-6-picks",
+      "pillar_id": "pillar:美容:skin",
+      "confidence": "high",
+      "reason": "商品語「クレンジング」からスキンケア候補"
+    },
+    {
+      "slug": "womens-body-shavers-6-picks",
+      "pillar_id": "pillar:美容:body",
+      "confidence": "high",
+      "reason": "商品語「body-」からボディ・フットケア候補"
+    },
+    {
+      "slug": "bb-cc-creams-6-picks",
+      "pillar_id": "pillar:美容:makeup",
+      "confidence": "high",
+      "reason": "商品語「BB・CC」からメイクアップ候補"
+    },
+    {
+      "slug": "hair-styling-waxes",
+      "pillar_id": "pillar:美容:hair",
+      "confidence": "high",
+      "reason": "商品語「hair」からヘアケア・スタイリング候補"
+    },
+    {
+      "slug": "everyday-false-eyelashes",
+      "pillar_id": "pillar:美容:makeup",
+      "confidence": "high",
+      "reason": "商品語「eyelash」からメイクアップ候補"
+    },
+    {
+      "slug": "electric-nose-hair-trimmers-comparison",
+      "pillar_id": "pillar:美容:hair",
+      "confidence": "high",
+      "reason": "商品語「hair」からヘアケア・スタイリング候補"
+    },
+    {
+      "slug": "manual-cartridge-razors-comparison",
+      "pillar_id": "pillar:美容:body",
+      "confidence": "high",
+      "reason": "商品語「razor」からボディ・フットケア候補"
+    },
+    {
+      "slug": "interdental-brushes",
+      "pillar_id": "pillar:美容:body",
+      "confidence": "high",
+      "reason": "商品語「歯間」からボディ・フットケア候補"
+    },
+    {
+      "slug": "manual-toothbrushes-for-daily-use",
+      "pillar_id": "pillar:美容:beauty_device",
+      "confidence": "high",
+      "reason": "商品語「ブラシ」から美容機器・美容道具候補"
+    },
+    {
+      "slug": "ready-made-hair-toppers",
+      "pillar_id": "pillar:美容:hair",
+      "confidence": "high",
+      "reason": "商品語「hair」からヘアケア・スタイリング候補"
+    },
+    {
+      "slug": "beard-length-trimmers",
+      "pillar_id": "pillar:美容:body",
+      "confidence": "high",
+      "reason": "商品語「ヒゲ」からボディ・フットケア候補"
+    },
+    {
+      "slug": "home-hair-thinning-scissors",
+      "pillar_id": "pillar:美容:hair",
+      "confidence": "high",
+      "reason": "商品語「hair」からヘアケア・スタイリング候補"
+    },
+    {
+      "slug": "makeup-cleansing-oils",
+      "pillar_id": "pillar:美容:makeup",
+      "confidence": "high",
+      "reason": "商品語「makeup」からメイクアップ候補"
+    },
+    {
+      "slug": "manual-nail-clippers",
+      "pillar_id": "pillar:美容:beauty_device",
+      "confidence": "high",
+      "reason": "商品語「爪切り」から美容機器・美容道具候補"
+    },
+    {
+      "slug": "skincare-cotton-pads",
+      "pillar_id": "pillar:美容:skin",
+      "confidence": "high",
+      "reason": "商品語「skin」からスキンケア候補"
+    },
+    {
+      "slug": "manual-eyelash-curlers",
+      "pillar_id": "pillar:美容:makeup",
+      "confidence": "high",
+      "reason": "商品語「eyelash」からメイクアップ候補"
+    },
+    {
+      "slug": "hair-setting-sprays",
+      "pillar_id": "pillar:美容:hair",
+      "confidence": "high",
+      "reason": "商品語「hair」からヘアケア・スタイリング候補"
+    },
+    {
+      "slug": "foundation-makeup-sponges",
+      "pillar_id": "pillar:美容:makeup",
+      "confidence": "high",
+      "reason": "商品語「foundation」からメイクアップ候補"
+    },
+    {
+      "slug": "body-washing-towels",
+      "pillar_id": "pillar:美容:body",
+      "confidence": "high",
+      "reason": "商品語「body-」からボディ・フットケア候補"
+    },
+    {
+      "slug": "makeup-brushes-for-face-products",
+      "pillar_id": "pillar:美容:beauty_device",
+      "confidence": "high",
+      "reason": "商品語「ブラシ」から美容機器・美容道具候補"
+    },
+    {
+      "slug": "home-oxidative-gray-hair-dyes",
+      "pillar_id": "pillar:美容:hair",
+      "confidence": "high",
+      "reason": "商品語「hair」からヘアケア・スタイリング候補"
+    },
+    {
+      "slug": "nail-polish-removers",
+      "pillar_id": "pillar:美容:makeup",
+      "confidence": "high",
+      "reason": "商品語「ネイル」からメイクアップ候補"
+    },
+    {
+      "slug": "lip-liner-pencils",
+      "pillar_id": "pillar:美容:makeup",
+      "confidence": "high",
+      "reason": "商品語「lip-」からメイクアップ候補"
+    },
+    {
+      "slug": "temporary-gray-root-concealers",
+      "pillar_id": "pillar:美容:hair",
+      "confidence": "high",
+      "reason": "商品語「髪」からヘアケア・スタイリング候補"
+    },
+    {
+      "slug": "tabletop-makeup-mirrors",
+      "pillar_id": "pillar:美容:beauty_device",
+      "confidence": "high",
+      "reason": "商品語「メイクミラー」から美容機器・美容道具候補"
+    },
+    {
+      "slug": "facial-peeling-gels",
+      "pillar_id": "pillar:美容:skin",
+      "confidence": "high",
+      "reason": "商品語「肌」からスキンケア候補"
+    },
+    {
+      "slug": "manual-nail-files-for-natural-nails",
+      "pillar_id": "pillar:美容:makeup",
+      "confidence": "high",
+      "reason": "商品語「ネイル」からメイクアップ候補"
+    },
+    {
+      "slug": "hair-styling-mousses",
+      "pillar_id": "pillar:美容:hair",
+      "confidence": "high",
+      "reason": "商品語「hair」からヘアケア・スタイリング候補"
+    },
+    {
+      "slug": "scalp-cleansing-shampoos-comparison",
+      "pillar_id": "pillar:美容:hair",
+      "confidence": "high",
+      "reason": "商品語「scalp」からヘアケア・スタイリング候補"
+    },
+    {
+      "slug": "eyebrow-pencils-comparison",
+      "pillar_id": "pillar:美容:makeup",
+      "confidence": "high",
+      "reason": "商品語「eyebrow」からメイクアップ候補"
+    },
+    {
+      "slug": "leave-in-hair-milks",
+      "pillar_id": "pillar:美容:hair",
+      "confidence": "high",
+      "reason": "商品語「hair」からヘアケア・スタイリング候補"
+    }
+  ]
+}
