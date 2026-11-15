@@ -27,6 +27,11 @@ class LegacyArticleRecoveryTests(unittest.TestCase):
         self.jobs.mkdir()
         (self.jobs / self.slug).mkdir()
         self._save(self.repo / 'article/gadget/sample-article.html', 'old')
+        self._save(self.repo / 'data/payloads/sample-article.json',
+                   {'slug': self.slug, 'category': 'gadget', 'h1': 'Existing article'})
+        self._save(self.repo / 'data/evidence/sample-article.json',
+                   {'slug': self.slug, 'category': 'gadget',
+                    'eyecatch_image': '/img/sample-article/sample-article.png'})
         self._save(self.articles/self.slug/'body.json',
                    {'slug': self.slug, 'category': 'gadget', 'products': []})
         self._save(self.articles/self.slug/'evidence.json',
@@ -163,6 +168,27 @@ class LegacyArticleRecoveryTests(unittest.TestCase):
         recovery._atomic_json(recovery.state_path(self.slug), state)
         self.assertEqual(legacy.import_one(self.source), {'admitted': False})
         self.assertFalse((self.jobs/self.slug/legacy.MARKER).exists())
+
+    def test_missing_live_article_does_not_block_all_legacy_repair(self):
+        (self.repo/'article/gadget/sample-article.html').unlink()
+        self.assertFalse(legacy.has_pending(self.source))
+        self.assertEqual(legacy.import_one(self.source), {'admitted': False})
+        self.assertFalse((self.jobs/self.slug/legacy.MARKER).exists())
+        self.assertEqual(recovery.load_job(self.slug)['status'], 'PUBLISHED')
+
+    def test_missing_checkpoint_without_live_article_is_skipped(self):
+        import shutil
+        shutil.rmtree(self.jobs/self.slug)
+        (self.repo/'article/gadget/sample-article.html').unlink()
+        self.assertFalse(legacy.has_pending(self.source))
+        self.assertEqual(legacy.import_one(self.source), {'admitted': False})
+        self.assertFalse((self.jobs/self.slug/'state.json').exists())
+
+    def test_missing_published_payload_does_not_admit_historical_slug(self):
+        self.assertTrue((self.repo/'article/gadget/sample-article.html').exists())
+        (self.repo/'data/payloads/sample-article.json').unlink()
+        self.assertFalse(legacy.has_pending(self.source))
+        self.assertEqual(legacy.import_one(self.source), {'admitted': False})
 
     def test_missing_checkpoint_recovered_from_existing_published_site(self):
         import shutil
