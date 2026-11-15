@@ -1,0 +1,32 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "BU002-CATEGORY-PUBLIC-WORDING-20261115",
+  "instruction_ref": "CEO 2026-11-15 「カテゴリって言葉も違うだろ。いままで何議論してきたんだよ」",
+  "instruction": "Correct public user-facing category hub label to the established Sellemy brand concept モノとの出会い, not the internal taxonomy noun カテゴリ. Keep category tree/category identifiers and URLs technical only. Preserve Purpose Hub public tab 特集, and preserve the full 21 pillar and 18 live page structure, article URLs, article bodies, and discoverability. Correct visible category-list title, navigation labels, genre headings and hero image alt text.",
+  "implementer": "sellemy-ops via Mac Studio v2",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3"
+  ],
+  "allowed_paths": [
+    "article/beauty/index.html",
+    "article/dailygoods/index.html",
+    "article/gadget/index.html",
+    "categories/index.html",
+    "change-contracts/20261115-category-public-wording.json",
+    "index.html",
+    "tests/test_category_live_release.py",
+    "tests/test_category_public_wording.py"
+  ],
+  "preserved_rules": [
+    "Internal category taxonomy untouched",
+    "Public label is モノとの出会い",
+    "Purpose Hub retains 特集",
+    "No search wording, no new pages",
+    "18 live category pages and 21 classification groups preserved",
+    "Published articles and existing URL paths unchanged"
+  ],
+  "acceptance_tests": [
+    "tests/test_category_public_wording.py",
+    "tests/test_category_live_release.py"
+  ]
+}
