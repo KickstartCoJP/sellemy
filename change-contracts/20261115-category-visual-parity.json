@@ -1,0 +1,50 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "BU002-CATEGORY-VISUAL-PARITY-20261115",
+  "instruction_ref": "CEO: プレビューとまったく違う設計じゃん。あと「探す」じゃないからな。",
+  "instruction": "Correct live category design to match the previously CEO-visible preview, without recreating temporary preview paths. Show all 21 category tiles grouped by beauty/dailygoods/gadget, keep 18 live link destinations with publication-ready article groups, show unavailable groups as non-clickable tiles, and use the same horizontal 80px-thumb article-card structure as the original category preview. Replace the search-oriented category CTA and collapsible links with direct discovery-oriented visible tiles. Add a real /categories/ landing accessible from home and each existing genre top. Do not change existing product article bodies, taxonomy, 18 topic URLs or Purpose Hub.",
+  "implementer": "sellemy-ops via Mac Studio v2",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3"
+  ],
+  "allowed_paths": [
+    "article/beauty/index.html",
+    "article/beauty/topics/beauty_device.html",
+    "article/beauty/topics/body.html",
+    "article/beauty/topics/hair.html",
+    "article/beauty/topics/makeup.html",
+    "article/beauty/topics/skin.html",
+    "article/dailygoods/index.html",
+    "article/dailygoods/topics/bath.html",
+    "article/dailygoods/topics/daily.html",
+    "article/dailygoods/topics/health.html",
+    "article/dailygoods/topics/kitchen.html",
+    "article/dailygoods/topics/laundry.html",
+    "article/dailygoods/topics/security.html",
+    "article/dailygoods/topics/stationery.html",
+    "article/dailygoods/topics/table.html",
+    "article/gadget/index.html",
+    "article/gadget/topics/av.html",
+    "article/gadget/topics/climate.html",
+    "article/gadget/topics/digital.html",
+    "article/gadget/topics/household_appliance.html",
+    "article/gadget/topics/kitchen_appliance.html",
+    "categories/index.html",
+    "change-contracts/20261115-category-visual-parity.json",
+    "css/style.css",
+    "index.html",
+    "tests/test_category_live_release.py"
+  ],
+  "preserved_rules": [
+    "All 18 existing topic URLs preserved",
+    "Published article paths and article bodies unchanged",
+    "All 21 canonical pillar labels shown; empty and one-article sections have no fake target",
+    "No search wording or filter/search feature",
+    "No temporary preview page recreated",
+    "Existing Purpose Hub and article lists remain intact",
+    "CEO explicit request for live design correction and prior authorized production verification"
+  ],
+  "acceptance_tests": [
+    "tests/test_category_live_release.py"
+  ]
+}
