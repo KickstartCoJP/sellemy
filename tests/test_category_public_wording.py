@@ -19,4 +19,17 @@ def test_category_public_experience_matches_brand_words():
     assert landing.select_one('.site-nav .active').get_text(strip=True)=='モノとの出会い'
     assert len(landing.select('.category-tiles .category-tile'))==21
     assert len(landing.select('.category-tiles a.category-tile'))==19
-    assert not landing.select('.category-tile small')
+    assert [x.get_text(strip=True) for x in landing.select('.category-tile small')] == ['記事準備中', '記事準備中']
+    assert not landing.select('a.category-tile small')
+
+
+def test_equal_width_genre_bands_and_reusable_title_style():
+    css=(ROOT/'css/style.css').read_text()
+    assert '.article-list {' in css and 'max-width: 1200px' in css
+    assert '.genre-article-heading{max-width:1200px;margin:2rem auto}' in css
+    assert '.category-discovery,.category-catalog{max-width:1200px' in css
+    assert '.category-discovery .section-title{margin:2rem 0}' in css
+    for cat in ('beauty','dailygoods','gadget'):
+        html=BeautifulSoup((ROOT/f'article/{cat}/index.html').read_text(),'html.parser')
+        assert html.select_one('.category-discovery .section-title h2')
+        assert html.select_one('.genre-article-heading.section-title h2')
