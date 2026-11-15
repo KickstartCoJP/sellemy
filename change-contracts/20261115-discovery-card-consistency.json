@@ -1,0 +1,50 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "BU002-DISCOVERY-CARD-CONSISTENCY-20261115",
+  "instruction_ref": "CEO 2026-11-15: 表記、記事数表示、ジャンルトップと同一カード、香水記事",
+  "instruction": "Keep the public brand label モノとの出会い; remove article count badges; render topic article cards with the existing genre-top article-list/article-card markup; show the published autumn-perfumes-6-picks article under fragrance even though it is the only item; retain 21 group names and existing URLs.",
+  "implementer": "sellemy-ops via Mac Studio v2",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3"
+  ],
+  "allowed_paths": [
+    "article/beauty/index.html",
+    "article/beauty/topics/beauty_device.html",
+    "article/beauty/topics/body.html",
+    "article/beauty/topics/fragrance.html",
+    "article/beauty/topics/hair.html",
+    "article/beauty/topics/makeup.html",
+    "article/beauty/topics/skin.html",
+    "article/dailygoods/index.html",
+    "article/dailygoods/topics/bath.html",
+    "article/dailygoods/topics/daily.html",
+    "article/dailygoods/topics/health.html",
+    "article/dailygoods/topics/kitchen.html",
+    "article/dailygoods/topics/laundry.html",
+    "article/dailygoods/topics/security.html",
+    "article/dailygoods/topics/stationery.html",
+    "article/dailygoods/topics/table.html",
+    "article/gadget/index.html",
+    "article/gadget/topics/av.html",
+    "article/gadget/topics/climate.html",
+    "article/gadget/topics/digital.html",
+    "article/gadget/topics/household_appliance.html",
+    "article/gadget/topics/kitchen_appliance.html",
+    "categories/index.html",
+    "change-contracts/20261115-discovery-card-consistency.json",
+    "css/style.css",
+    "tests/test_category_live_release.py",
+    "tests/test_category_public_wording.py"
+  ],
+  "preserved_rules": [
+    "No published product article modifications",
+    "No temporary preview pages",
+    "No internal taxonomy changes",
+    "Purpose Hub remains separate",
+    "Empty groups remain inactive"
+  ],
+  "acceptance_tests": [
+    "tests/test_category_live_release.py",
+    "tests/test_category_public_wording.py"
+  ]
+}

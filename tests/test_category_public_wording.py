@@ -18,4 +18,5 @@ def test_category_public_experience_matches_brand_words():
     assert landing.select_one('h1').get_text(strip=True)=='モノとの出会い'
     assert landing.select_one('.site-nav .active').get_text(strip=True)=='モノとの出会い'
     assert len(landing.select('.category-tiles .category-tile'))==21
-    assert len(landing.select('.category-tiles a.category-tile'))==18
+    assert len(landing.select('.category-tiles a.category-tile'))==19
+    assert not landing.select('.category-tile small')
