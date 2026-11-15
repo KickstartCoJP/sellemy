@@ -16,9 +16,10 @@ def test_category_pages_are_real_and_linked_by_unchanged_genre_tops():
         top = BeautifulSoup((ROOT/'article'/category/'index.html').read_text(), 'html.parser')
         assert top.select_one('section.category-intro')
         assert top.select_one('#articleList')
-        nav = top.select_one('nav.category-discovery')
-        assert nav and nav.select_one('details summary').get_text(strip=True) == '気になるテーマから探す'
-        for a in nav.select('.category-discovery-links a'):
+        nav = top.select_one('section.category-discovery')
+        assert nav and not nav.select_one('details')
+        assert len(nav.select('.category-tiles .category-tile')) == {'beauty':6,'dailygoods':9,'gadget':6}[category]
+        for a in nav.select('.category-tiles a.category-tile'):
             href = a['href']
             assert href.startswith(f'/article/{category}/topics/')
             dest = ROOT / href.lstrip('/')
@@ -28,16 +29,22 @@ def test_category_pages_are_real_and_linked_by_unchanged_genre_tops():
             doc=BeautifulSoup(path.read_text(), 'html.parser')
             assert doc.select_one('link[rel=canonical]')['href'] == 'https://www.sellemy.jp/' + str(path.relative_to(ROOT))
             assert not doc.select_one('meta[name=robots]')
-            assert len(doc.select('.article-list .article-card')) >= 3
-            assert doc.select_one('.site-header') and doc.select_one('footer')
-            assert doc.select_one('.breadcrumb a')['href'] == '/index.html'
-            for a in doc.select('.article-list a.article-card'):
+            assert len(doc.select('.article-grid .article-card')) >= 3
+            assert not doc.select_one('.site-header')
+            assert not doc.select_one('.category-subpage-heading')
+            assert doc.select_one('.category-review h1')
+            assert doc.select_one('.category-review a')['href'] == '/categories/'
+            for a in doc.select('.article-grid a.article-card'):
                 assert re.fullmatch(r'/article/(beauty|dailygoods|gadget)/[a-z0-9-]+\.html',a['href'])
                 slug=Path(a['href']).stem
                 assert slug in published
                 assert (ROOT/a['href'].lstrip('/')).is_file()
                 assert a.select_one('img') and (ROOT/a.select_one('img')['src'].lstrip('/')).is_file()
     assert len(seen_links)==18
+    landing=BeautifulSoup((ROOT/'categories/index.html').read_text(),'html.parser')
+    assert len(landing.select('.category-tiles .category-tile')) == 21
+    assert len(landing.select('.category-tiles a.category-tile')) == 18
+    assert '探す' not in landing.get_text()
 
 
 def test_temporary_preview_pages_are_removed_and_source_articles_intact():
