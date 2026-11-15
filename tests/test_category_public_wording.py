@@ -10,13 +10,13 @@ def test_category_public_experience_matches_brand_words():
         source=(ROOT/path).read_text()
         soup=BeautifulSoup(source,'html.parser')
         nav=soup.select_one('a[href="/categories/"]')
-        if nav: assert nav.get_text(strip=True)=='モノとの出会い'
+        if nav: assert nav.get_text(strip=True)=='テーマ'
         assert 'カテゴリ</' not in source
         assert '気になるテーマから探す' not in source
         assert soup.select_one('a[href="/themes/"]').get_text(strip=True)=='特集'
     landing=BeautifulSoup((ROOT/'categories/index.html').read_text(),'html.parser')
-    assert landing.select_one('h1').get_text(strip=True)=='モノとの出会い'
-    assert landing.select_one('.site-nav .active').get_text(strip=True)=='モノとの出会い'
+    assert landing.select_one('h1').get_text(strip=True)=='テーマで見る'
+    assert landing.select_one('.site-nav .active').get_text(strip=True)=='テーマ'
     assert len(landing.select('.category-tiles .category-tile'))==21
     assert len(landing.select('.category-tiles a.category-tile'))==19
     assert [x.get_text(strip=True) for x in landing.select('.category-tile small')] == ['記事準備中', '記事準備中']
