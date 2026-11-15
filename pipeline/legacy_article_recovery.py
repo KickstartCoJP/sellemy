@@ -79,11 +79,41 @@ def source_acquisition_ready(evidence: dict) -> bool:
     )
 
 
+
+def live_baseline_available(slug: str, category: str | None) -> bool:
+    """Only *currently published* articles can enter published-article repair.
+
+    A signed historical handoff can include obsolete or nonpublic slugs. Those
+    are not a production publication and must never block the whole scheduler.
+    """
+    if category not in {'beauty', 'dailygoods', 'gadget'}:
+        return False
+    return all(p.is_file() for p in (
+        ROOT / 'article' / category / (slug + '.html'),
+        ROOT / 'data' / 'payloads' / (slug + '.json'),
+        ROOT / 'data' / 'evidence' / (slug + '.json'),
+    ))
+
+
+def historical_category(root: Path, slug: str) -> str | None:
+    body = _read_json(root / 'articles' / slug / 'body.json')
+    return body.get('category') if isinstance(body, dict) else None
+
+
 def has_pending(root: Path | None = None) -> bool:
     root = root or source_root()
     for slug in candidates(root):
         marker = read_artifact(slug, MARKER)
         if not isinstance(marker, dict):
+            if not live_baseline_available(slug, historical_category(root, slug)):
+                continue
+            checkpoint = job_dir(slug) / 'state.json'
+            if checkpoint.is_file():
+                state = load_job(slug)
+                if (state.get('status') != 'PUBLISHED'
+                        and not (state.get('status') == 'DISCARDED' and
+                                 'duplicate slug already exists' in str(state.get('discard_reason') or ''))):
+                    continue
             return True
         state_path = job_dir(slug) / 'state.json'
         if state_path.is_file():
@@ -208,6 +238,10 @@ def import_one(root: Path | None = None) -> dict:
                     'initial_precheck', 'initial_reviewer'}:
                 set_stage(slug, 'WRITER_PENDING', event='LEGACY_REPAIR_RESUMED')
                 return {'slug': slug, 'admitted': True, 'resumed': True}
+            continue
+        # A historical export is not evidence that a page exists in today's
+        # live site. Skip missing baselines without mutating any old record.
+        if not live_baseline_available(slug, historical_category(root, slug)):
             continue
         article = root / 'articles' / slug
         historical = _read_json(article / 'evidence.json')
