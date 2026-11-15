@@ -10,7 +10,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from eyecatch_router import ensure_routed_feature_eyecatch
-from purpose_ui import ensure_theme_nav, render_related_features as render_related_features_ui
+from purpose_ui import ensure_theme_nav, nav_for_path, render_related_features as render_related_features_ui
 from typing import Any
 import xml.etree.ElementTree as ET
 
@@ -287,7 +287,7 @@ def render_feature_page(conn: sqlite3.Connection, feature_id: str) -> str:
         sections_html=(f'<section><div class="section-title"><h2>{html.escape(core_heading)}</h2></div><div class="feature-article-list">{core}</div></section>'
             + (f'<section><div class="section-title"><h2>{html.escape(str(feature_cfg.get("supporting_heading") or "暮らしがもっと心地よくなるもの"))}</h2></div><div class="feature-article-list">{supporting}</div></section>' if supporting else ''))
     canonical=f'{BASE}/themes/{slug}.html'
-    nav='<nav class="site-nav"><ul class="nav-links"><li><a href="/article/beauty/" class="nav-link">美容</a></li><li><a href="/article/dailygoods/" class="nav-link">日用品</a></li><li><a href="/article/gadget/" class="nav-link">家電</a></li><li><a href="/themes/" class="nav-link active">特集</a></li><li><a href="/articles.html" class="nav-link">記事一覧</a></li><li><a href="/products.html" class="nav-link">商品一覧</a></li></ul></nav>'
+    nav=nav_for_path('/themes/')
     return (
         '<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />'
         f'<title>{html.escape(seo_title)}</title><meta name="description" content="{html.escape(meta_description)}" />'
@@ -324,25 +324,19 @@ def render_themes_index(conn: sqlite3.Connection) -> str:
         '</head><body class="feature-index" data-category="themes"><header class="site-header"><div class="brand">'
         '<a href="/index.html"><img src="/img/sellemy-logo.png" alt="Sellemyロゴ" class="logo" /></a>'
         '<span class="tagline">選びやすくて、わたしにちょうどいい情報ガイド</span></div>'
-        '<nav class="site-nav"><ul class="nav-links"><li><a href="/article/beauty/" class="nav-link">美容</a></li><li><a href="/article/dailygoods/" class="nav-link">日用品</a></li><li><a href="/article/gadget/" class="nav-link">家電</a></li><li><a href="/themes/" class="nav-link active">特集</a></li><li><a href="/articles.html" class="nav-link">記事一覧</a></li><li><a href="/products.html" class="nav-link">商品一覧</a></li></ul></nav></header><main>'
-        '<nav class="breadcrumb"><ul><li><a href="/index.html">Top</a></li><li><span>特集</span></li></ul></nav>'
-        '<div class="feature-index-heading"><h1>特集</h1><p>暮らしが少しよくなるテーマを、特集としてまとめています。</p></div>'
+        + nav_for_path('/themes/') + '</header><main>'
+        + '<nav class="breadcrumb"><ul><li><a href="/index.html">Top</a></li><li><span>特集</span></li></ul></nav>'
+        '<div class="section-title feature-index-title"><h1>特集</h1></div><div class="feature-index-heading"><p>暮らしが少しよくなるテーマを、特集としてまとめています。</p></div>'
         f'<div class="feature-card-list">{cards}</div></main><footer><p>&copy; 2026 Sellemy. All rights reserved.</p></footer></body></html>'
     )
 
 
 def _ensure_top_link() -> None:
+    """Keep the site-wide seven-link navigation consistent on regeneration."""
     text = TOP.read_text(encoding='utf-8')
-    old = '<li><a href="/themes/" class="nav-link" data-name="themes">目的から探す</a></li>'
-    link = '<li><a href="/themes/" class="nav-link" data-name="themes">特集</a></li>'
-    if old in text:
-        text = text.replace(old, link)
-    elif link not in text:
-        marker = '<li><a href="/articles.html" class="nav-link" data-name="articles">記事一覧</a></li>'
-        if marker not in text:
-            raise ValueError('TOP nav insertion marker missing')
-        text = text.replace(marker, link + '\n        ' + marker, 1)
-    TOP.write_text(text, encoding='utf-8')
+    updated = ensure_theme_nav(text, page_path='/index.html')
+    if updated != text:
+        TOP.write_text(updated, encoding='utf-8')
 
 
 def _ensure_sitemap_urls(urls: list[str]) -> None:

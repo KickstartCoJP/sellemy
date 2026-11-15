@@ -10,33 +10,70 @@ ROOT = Path(__file__).resolve().parents[1]
 FEATURES = ROOT / 'config' / 'purpose_features_seed.json'
 START = '<!-- PURPOSE_RELATED_FEATURES_START -->'
 END = '<!-- PURPOSE_RELATED_FEATURES_END -->'
-NAV_LINK = '<li><a href="/themes/" class="nav-link" data-name="themes">特集</a></li>'
-NAV = ('<nav class="site-nav"><ul class="nav-links">'
-       '<li><a href="/article/beauty/" class="nav-link">美容</a></li>'
-       '<li><a href="/article/dailygoods/" class="nav-link">日用品</a></li>'
-       '<li><a href="/article/gadget/" class="nav-link">家電</a></li>'
-       + NAV_LINK +
-       '<li><a href="/articles.html" class="nav-link">記事一覧</a></li>'
-       '<li><a href="/products.html" class="nav-link">商品一覧</a></li>'
-       '</ul></nav>')
+NAV_ITEMS = (
+    ('/article/beauty/', '美容'),
+    ('/article/dailygoods/', '日用品'),
+    ('/article/gadget/', '家電'),
+    ('/categories/', 'テーマ'),
+    ('/themes/', '特集'),
+    ('/articles.html', '記事一覧'),
+    ('/products.html', '商品一覧'),
+)
 
 
-def ensure_theme_nav(page: str) -> str:
-    """Keep category active states; add only missing Purpose entry or nav."""
+def nav_for_path(path: str = '') -> str:
+    """Single ordered navigation shared by article, genre, theme and feature pages."""
+    from urllib.parse import urlsplit
+    pathname = urlsplit(path).path
+    if pathname.startswith('/article/beauty/') and '/topics/' not in pathname and pathname.endswith(('/index.html', '/')):
+        current = '/article/beauty/'
+    elif pathname.startswith('/article/dailygoods/') and '/topics/' not in pathname and pathname.endswith(('/index.html', '/')):
+        current = '/article/dailygoods/'
+    elif pathname.startswith('/article/gadget/') and '/topics/' not in pathname and pathname.endswith(('/index.html', '/')):
+        current = '/article/gadget/'
+    elif pathname.startswith('/categories/'):
+        current = '/categories/'
+    elif pathname.startswith('/themes/'):
+        current = '/themes/'
+    elif pathname == '/articles.html':
+        current = pathname
+    elif pathname == '/products.html':
+        current = pathname
+    else:
+        current = ''
+    links = ''.join(
+        '<li><a href="' + url + '" class="nav-link' + (' active' if url == current else '') + '"' +
+        (' aria-current="page"' if url == current else '') + '>' + name + '</a></li>'
+        for url, name in NAV_ITEMS
+    )
+    return '<nav class="site-nav"><ul class="nav-links">' + links + '</ul></nav>'
+
+
+NAV = nav_for_path()
+NAV_LINK = '<li><a href="/themes/" class="nav-link">特集</a></li>'
+
+
+def ensure_theme_nav(page: str, page_path: str | None = None) -> str:
+    """Normalize site links and order; preserve only the navigation element."""
     if not re.search(r'<header\b[^>]*class=["\']site-header["\']', page):
         return page
-    m = re.search(r'<nav\b[^>]*class=["\']site-nav["\'][\s\S]*?</nav>', page)
-    if m:
-        nav = m.group(0)
-        if re.search(r'href=["\']/themes/?["\']', nav):
-            return page
-        anchor = re.search(r'<li\b[^>]*>\s*<a\b[^>]*href=["\']/articles\.html["\']', nav)
-        if anchor:
-            nav = nav[:anchor.start()] + NAV_LINK + nav[anchor.start():]
-        else:
-            nav = nav.replace('</ul>', NAV_LINK + '</ul>', 1)
-        return page[:m.start()] + nav + page[m.end():]
-    return page.replace('</header>', NAV + '</header>', 1)
+    if page_path is None:
+        canonical = re.search(r'<link\b[^>]*rel=["\']canonical["\'][^>]*href=["\']([^"\']+)', page)
+        page_path = canonical.group(1) if canonical else ''
+        if not page_path:
+            category = re.search(r'<body\b[^>]*data-category=["\']([^"\']+)', page)
+            value = category.group(1) if category else ''
+            page_path = {'articles': '/articles.html', 'products': '/products.html',
+                         'themes': '/themes/'}.get(value, '')
+        if not page_path:
+            selected = re.search(r'<a\b[^>]*href=["\']([^"\']+)["\'][^>]*class=["\'][^"\']*\bactive\b', page)
+            if selected:
+                page_path = selected.group(1)
+    nav = nav_for_path(page_path)
+    match = re.search(r'<nav\b[^>]*class=["\']site-nav["\'][\s\S]*?</nav>', page)
+    if match:
+        return page[:match.start()] + nav + page[match.end():]
+    return page.replace('</header>', nav + '</header>', 1)
 
 
 def render_related_features(features: list[dict]) -> str:

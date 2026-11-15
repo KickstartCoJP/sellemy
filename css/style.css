@@ -577,3 +577,9 @@ footer {
 .category-catalog section{margin-top:31px}
 
 @media(max-width:700px){.category-discovery,.genre-article-heading{max-width:100%}}
+
+/* Theme and feature overview: same centered section bands as genre tops. */
+.category-catalog>.section-title{max-width:1200px;margin:2rem auto}
+.feature-index main{max-width:1200px}
+.feature-index main>.section-title{max-width:1200px;margin:2rem auto}
+.feature-index-heading{max-width:1200px;margin:0 auto 2rem;text-align:center}
