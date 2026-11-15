@@ -1,0 +1,33 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "BU002-TOPIC-SECTION-LAYOUT-20261115",
+  "instruction_ref": "CEO 2026-11-15: 記事一覧の帯を記事幅へ、テーマ別の見出しを指定し同じ帯に、記事なしのみ準備中",
+  "instruction": "Align the two section title bands on beauty, dailygoods and gadget genre tops to the existing 1200px article-list content width. Change genre discovery heading to exactly <genre>のテーマ別記事, render it with the same section-title band component as the article-list heading, and display 記事準備中 only on the two inactive zero-article cards. Keep the public モノとの出会い navigation wording and do not display article counts on live theme tiles. Preserve 19 live topic pages, original article cards, Purpose features and existing URLs.",
+  "implementer": "sellemy-ops via Mac Studio v2",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3"
+  ],
+  "allowed_paths": [
+    "article/beauty/index.html",
+    "article/dailygoods/index.html",
+    "article/gadget/index.html",
+    "categories/index.html",
+    "css/style.css",
+    "tests/test_category_live_release.py",
+    "tests/test_category_public_wording.py",
+    "change-contracts/20261115-topic-section-layout.json"
+  ],
+  "preserved_rules": [
+    "Article list and article-body HTML unchanged",
+    "Exact heading wording on all three genres",
+    "Same title band styling and max-width for both sections",
+    "Only zero-article topics show preparation label",
+    "No article-count badges",
+    "Existing site-wide navigation intact",
+    "No temporary previews or extra category pages"
+  ],
+  "acceptance_tests": [
+    "tests/test_category_live_release.py",
+    "tests/test_category_public_wording.py"
+  ]
+}

@@ -18,6 +18,10 @@ def test_category_pages_are_real_and_linked_by_unchanged_genre_tops():
         assert top.select_one('#articleList')
         nav = top.select_one('section.category-discovery')
         assert nav and not nav.select_one('details')
+        assert nav.select_one('.section-title h2').get_text(strip=True) == f'{GENRES[category]}のテーマ別記事'
+        assert top.select_one('.genre-article-heading h2').get_text(strip=True) == f'{GENRES[category]}に関する記事一覧'
+        assert [x.get_text(strip=True) for x in nav.select('.category-tile.unavailable small')] == (['記事準備中'] if category in ('dailygoods', 'gadget') else [])
+        assert not nav.select('a.category-tile small')
         assert len(nav.select('.category-tiles .category-tile')) == {'beauty':6,'dailygoods':9,'gadget':6}[category]
         for a in nav.select('.category-tiles a.category-tile'):
             href = a['href']
@@ -44,7 +48,8 @@ def test_category_pages_are_real_and_linked_by_unchanged_genre_tops():
     landing=BeautifulSoup((ROOT/'categories/index.html').read_text(),'html.parser')
     assert len(landing.select('.category-tiles .category-tile')) == 21
     assert len(landing.select('.category-tiles a.category-tile')) == 19
-    assert not landing.select('.category-tile small')
+    assert [x.get_text(strip=True) for x in landing.select('.category-tile small')] == ['記事準備中', '記事準備中']
+    assert not landing.select('a.category-tile small')
     assert '探す' not in landing.get_text()
 
 

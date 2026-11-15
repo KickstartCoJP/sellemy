@@ -563,12 +563,17 @@ footer {
 @media(max-width:540px){.related-features{padding:1rem}.related-feature-card-image{width:96px;height:76px;flex-basis:96px}}
 
 /* Category cards: preserve the CEO visual preview, not a search interface. */
-.category-discovery,.category-catalog{max-width:1080px;margin:26px auto 36px;padding:0 18px}
-.category-discovery h2,.category-catalog h2{font-size:1.17rem;font-weight:600;margin:0 0 15px;color:#393939}
+.category-discovery,.category-catalog{max-width:1200px;margin:26px auto 36px;padding:0}
+.category-catalog h2{font-size:1.17rem;font-weight:600;margin:0 0 15px;color:#393939}
+.genre-article-heading{max-width:1200px;margin:2rem auto}
+.category-discovery .section-title{margin:2rem 0}
 .category-tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:10px}
 .category-tile{display:flex;align-items:center;justify-content:flex-start;gap:12px;background:white;border:1px solid #ddd;border-radius:8px;padding:12px;color:#273c56;text-decoration:none;min-height:38px}
 .category-tile:hover{border-color:#53718d}
+.category-tile.unavailable small{font-size:.77rem;color:#929292;margin-left:auto;white-space:nowrap}
 .category-tile.unavailable{color:#8b8b8b;background:#f1f2f4}
 .category-catalog>h1{font-size:1.55rem;font-weight:600;margin:0 0 10px}
 .category-catalog>p{font-size:.95rem;color:#757575;margin:0 0 28px}
 .category-catalog section{margin-top:31px}
+
+@media(max-width:700px){.category-discovery,.genre-article-heading{max-width:100%}}
