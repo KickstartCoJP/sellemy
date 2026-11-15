@@ -10,6 +10,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from eyecatch_router import ensure_routed_feature_eyecatch
+from purpose_ui import ensure_theme_nav, render_related_features as render_related_features_ui
 from typing import Any
 import xml.etree.ElementTree as ET
 
@@ -214,13 +215,7 @@ def article_related_features(slug: str, *, db_path: Path = DB) -> list[dict[str,
 
 
 def render_related_features(features: list[dict[str, str]]) -> str:
-    inner = ''
-    if features:
-        links = ''.join(
-            f'<li><a href="{html.escape(f["url"])}">{html.escape(f["title"])}</a></li>' for f in features
-        )
-        inner = f'<aside class="related-features"><h2>関連する特集</h2><ul>{links}</ul></aside>'
-    return f'{START}{inner}{END}'
+    return render_related_features_ui(features)
 
 
 def replace_related_features_block(text: str, features: list[dict[str, str]]) -> str:
@@ -228,11 +223,11 @@ def replace_related_features_block(text: str, features: list[dict[str, str]]) ->
     if START in text and END in text:
         before, rest = text.split(START, 1)
         _old, after = rest.split(END, 1)
-        return before + block + after
+        return ensure_theme_nav(before + block + after)
     marker = '</main>'
     if marker not in text:
         raise ValueError('article has no </main> marker')
-    return text.replace(marker, block + marker, 1)
+    return ensure_theme_nav(text.replace(marker, block + marker, 1))
 
 
 def _article_path(row: dict[str, Any]) -> Path:
