@@ -14,7 +14,7 @@ def test_related_feature_block_renders_after_article_content():
     rendered = render_article(valid_payload(), valid_evidence(), related_features=[{'title':'デスク環境が整う','url':'/themes/desk-environment.html'}])
     assert '関連する特集' in rendered
     assert '/themes/desk-environment.html' in rendered
-    assert rendered.index('関連する特集') > rendered.index('選ぶときのポイント')
+    assert rendered.index('関連する特集') > rendered.index('知っておきたいポイント')
 
 
 def test_schema_and_relation_readback(tmp_path):
