@@ -1,0 +1,11 @@
+{
+ "schema":"kickstart-change-contract/v1",
+ "task_id":"BU002-CREATE-PUBLISH-STATIC-CATALOGS-20261116",
+ "instruction_ref":"CEO 2026-11-16: 案件全然出てこないんだけど / production runtime incident investigation",
+ "instruction":"Repair strict new-article publication unit validation to include the two mandatory SEO static catalog pages articles.html and products.html. The publisher has generated these files since the catalog snapshot integration, but its exact expected path set was not updated. Preserve strict exact-match atomic commit, existing QA, CEO approvals, publish content, topic routing, URLs, catalog implementation, and state gate. Add positive and negative regression tests for create publication and unchanged update semantics.",
+ "implementer":"sellemy-ops via Mac Studio v2",
+ "canonical_refs":["https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3"],
+ "allowed_paths":["pipeline/growth_role_business.py","tests/test_generic_article_update.py","change-contracts/20261116-create-publish-static-catalogs.json"],
+ "preserved_rules":["Exact immutable per-article publication unit maintained","No bypass of CEO or QA gates","Static catalog generation remains required","Reject missing or unrelated changed files","No changes to article contents or website layout","Existing pending publish jobs retained for normal retry"],
+ "acceptance_tests":["tests/test_generic_article_update.py"]
+}
