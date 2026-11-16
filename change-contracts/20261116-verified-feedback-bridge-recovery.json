@@ -1,0 +1,39 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "BU002-FEEDBACK-BRIDGE-VERIFIED-RECOVERY-20261116",
+  "instruction_ref": "CEO 2026-11-16: 新規が止まる原因を解消する / 直せ; production control fault post-publish Task bridge 30-second timeout",
+  "instruction": "Restore Sellemy scheduling without bypassing quality or CEO gates. The canonical OS task_append process took ~35 seconds, exceeding the 30-second bridge timeout and recording feedback_task_bridge_failed as a publication pause. Allow a bounded 90s Task bridge operation. When controller has a recorded recoverable quality-control infrastructure fault and no CEO quality alert, retry delivery to the same canonical Task/Event ID, independently rerun post-publish QA against the exact deployed article, and record a deterministic auditable recovery feedback only if Task/Event acknowledgement and green content and novelty QA are verified. Recovery entries must not inflate the publication frequency target. Red/failed QA or Task bridge must keep publication paused.",
+  "implementer": "sellemy-ops via Mac Studio v2",
+  "canonical_refs": ["https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3"],
+  "allowed_paths": [
+    "change-contracts/20261116-verified-feedback-bridge-recovery.json",
+    "pipeline/adaptive_publish.py",
+    "pipeline/feedback_task_bridge.py",
+    "pipeline/growth_runtime.py",
+    "pipeline/role_stage_client.py",
+    "pipeline/role_stage_exec.py",
+    "tests/test_quality_control_verified_recovery_20261116.py",
+    "tests/test_adaptive_publish.py",
+    "tests/test_feedback_task_bridge.py",
+    "tests/test_growth_runtime.py",
+    "tests/test_role_artifact_io_run.py",
+    "tests/test_product_discovery_recovery_20261116.py"
+  ],
+  "preserved_rules": [
+    "Never clear a CEO quality alert automatically",
+    "Never restart publication when actual post-publish QA is red or Task/Event bridge cannot acknowledge",
+    "Task/Event message identity remains deterministic and idempotent",
+    "No modification to historical feedback log or CEO review approval artifacts",
+    "No extra published/CEO-reviewed article counted for quality-control recovery",
+    "No cross-BU source or OS canonical schema changes",
+    "3 discovery angles x 2 products and all independent QA kept",
+    "CEO staging gate required"
+  ],
+  "acceptance_tests": [
+    "tests/test_quality_control_verified_recovery_20261116.py",
+    "tests/test_adaptive_publish.py",
+    "tests/test_feedback_task_bridge.py",
+    "tests/test_growth_runtime.py",
+    "tests/test_role_artifact_io_run.py"
+  ]
+}

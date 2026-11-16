@@ -320,6 +320,10 @@ class AdaptivePublishController:
         green_streak = 0
         minimum_red_streak = 0
         for row in records[seed_count:]:
+            # An audited control recovery clears only the control fault. It is
+            # not an extra newly reviewed/published article for target tuning.
+            if row.get('evaluation_basis') == 'quality_control_recovery':
+                continue
             if row.get('overall') == 'green' and row.get('evaluation_basis') != 'ceo_review_arrival':
                 continue
             grade = row.get('overall')
@@ -583,6 +587,66 @@ class AdaptivePublishController:
             'evaluation_error': f'{type(error).__name__}: {error}', 'artifacts': artifacts,
         }
         return self.record_feedback(feedback)
+
+    def recover_verified_quality_control_fault(self) -> dict:
+        """Reopen only after the exact failed task bridge and published QA pass."""
+        state = self.current_state()
+        fault = state.get('quality_control_fault')
+        if not fault or state.get('ceo_alert_required'):
+            return {'status': 'NO_RECOVERABLE_CONTROL_FAULT'}
+        records = self.feedback()
+        if not records or fault not in (records[-1].get('issues') or []):
+            return {'status': 'FAULT_HISTORY_CHANGED'}
+        failed = records[-1]
+        slug, commit = str(failed.get('slug') or ''), str(failed.get('commit') or '')
+        if not slug or not commit:
+            return {'status': 'FAULT_HAS_NO_PUBLISHED_ARTICLE'}
+
+        bridge_receipt = {'required': False}
+        if fault == 'feedback_task_bridge_failed':
+            # Replay the real, recorded published feedback to the original
+            # deterministic Task ID. This MUST complete before clearing pause.
+            original = next((row for row in reversed(records[:-1])
+                             if row.get('slug') == slug and row.get('commit') == commit
+                             and row.get('canonical_feedback_required') is True
+                             and 'feedback_task_bridge_failed' not in (row.get('issues') or [])), None)
+            if original is None:
+                return {'status': 'MISSING_ORIGINAL_FEEDBACK'}
+            from feedback_task_bridge import sync_feedback_to_task_event
+            bridge_receipt = sync_feedback_to_task_event(
+                feedback=original, controller_state=state, config=self.config)
+            if not bridge_receipt.get('required') or not bridge_receipt.get('message_id'):
+                return {'status': 'BRIDGE_RECEIPT_MISSING'}
+
+        growth = {'published': True, 'commit': commit}
+        reevaluation = evaluate_published_artifact(
+            root=self.root, slug=slug, commit=commit, growth_run=growth,
+            config=self.config, prior_feedback=records)
+        if (reevaluation['overall'] != 'green'
+                or not reevaluation['content_quality'].get('qa_overall_pass')
+                or reevaluation.get('issues')):
+            return {'status': 'PUBLISHED_ARTICLE_QA_STILL_FAILED',
+                    'slug': slug, 'issues': reevaluation.get('issues') or []}
+
+        recovery_receipt = {
+            'source_fault_event_id': failed['event_id'],
+            'reevaluation_event_id': reevaluation['event_id'],
+            'verified_artifacts': reevaluation['artifacts'],
+            'verified_task_message_id': bridge_receipt.get('message_id'),
+        }
+        event_id = _sha256_bytes(_canonical_json(recovery_receipt).encode('utf-8'))
+        recovery_feedback = {
+            **reevaluation, 'event_id': event_id,
+            'evaluation_basis': 'quality_control_recovery',
+            'control_recovery_receipt': recovery_receipt,
+            'canonical_feedback_required': False,
+        }
+        recorded, after = self.record_feedback(recovery_feedback)
+        return {'status': 'VERIFIED_RECOVERED' if not after['publish_paused'] else 'QUALITY_ALERT_STILL_PAUSED',
+                'slug': slug, 'feedback_event_id': recorded['event_id'],
+                'bridge_task_message_id': bridge_receipt.get('message_id'),
+                'publish_paused': after['publish_paused']}
+
 
     def record_evaluation_failure(
         self, *, slug: str, commit: str, growth_run: dict, error: BaseException,
