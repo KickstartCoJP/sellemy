@@ -1,0 +1,47 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "TASK-BU002-FAILED-TEN-CEO-84B375A717A83296F12B",
+  "instruction_ref": "CEO direct instruction 2026-11-17: audit evidence rules across all stages and implement scoped correction with remaining failed-ten fixes",
+  "instruction": "Restore source-sufficiency/Product QA ownership without universally requiring a verified excerpt for each of six products; ensure Article QA never routes back to Product selection; keep unverifiable factual/performance claims forbidden; make exhausted identical Product QA terminal FAILED, preserve existing job artifacts and production CEO gates; correct lifecycle source-versus-listing diagnostics. No published content edits or mass retroactive reconciliation. Existing PRODUCT_HOLD is re-reviewed with preserved identities; only a new explicit Product QA BLOCKED outcome is finalized FAILED, while reviewer/provider faults stay held.",
+  "implementer": "sellemy-ops",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3",
+    "https://app.notion.com/p/3e967ec6a10081208a40f0fee3583043"
+  ],
+  "allowed_paths": [
+    "change-contracts/bu002-evidence-routing-correction-20261117.json",
+    "pipeline/claim_qa.py",
+    "pipeline/growth_recovery.py",
+    "pipeline/lifecycle_audit.py",
+    "pipeline/role_execution_writer.py",
+    "pipeline/role_stage_exec.py",
+    "pipeline/writer_runtime.py",
+    "tests/test_bu002_evidence_routing_correction_20261117.py",
+    "tests/test_bu002_verified_source_preflight_20261117.py",
+    "tests/test_growth_recovery.py",
+    "tests/test_product_reselection_failure_state.py",
+    "tests/test_comparison_acceptance.py",
+    "tests/test_canonical_violation_regressions.py",
+    "tests/test_product_discovery_recovery_20261116.py",
+    "tests/test_dac_writer_source_anchoring.py"
+  ],
+  "preserved_rules": [
+    "CEO SHA-fixed review before production promotion",
+    "No existing published article, SKU/product selection, QA-pass artifact or failure history modified",
+    "Retain product identity, six-product, duplication, Product QA, Claim QA, image QA and publish controls",
+    "Claim QA rejects unsupported actual performance, efficacy, safety, durability and unsourced product claims",
+    "Article QA has no Product reselection route, existing Product QA receipts remain authoritative",
+    "No daily cap or extra jobs / runtime queues introduced",
+    "Historical retrospective admission policy PR #95 is preserved; no arbitrary source fill-in"
+  ],
+  "acceptance_tests": [
+    "tests/test_bu002_evidence_routing_correction_20261117.py",
+    "tests/test_bu002_verified_source_preflight_20261117.py",
+    "tests/test_growth_recovery.py",
+    "tests/test_comparison_acceptance.py",
+    "tests/test_product_reselection_failure_state.py",
+    "tests/test_canonical_violation_regressions.py",
+    "tests/test_product_discovery_recovery_20261116.py",
+    "tests/test_dac_writer_source_anchoring.py"
+  ]
+}

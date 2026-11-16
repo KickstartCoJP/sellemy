@@ -87,7 +87,7 @@ def test_viability_implicit_planning_rounds_are_bounded():
     assert [p['slug'] for p in exc.value.viability_probes]==['first','second']
 
 
-def test_incomplete_sourcing_does_not_resubmit_product_hold(tmp_path):
+def test_incomplete_sourcing_can_trigger_product_review_without_automatic_writer(tmp_path):
     evidence={'products':[{'ref':f'p{i}', 'sources':[] if i==0 else [
         {'verified':True,'excerpt':'Documented feature'}]} for i in range(6)],
         'product_acceptance':{}}
@@ -98,4 +98,4 @@ def test_incomplete_sourcing_does_not_resubmit_product_hold(tmp_path):
           patch('semantic_review.independent_review',side_effect=AssertionError('insufficient source')),
           patch('growth_recovery.set_stage',side_effect=AssertionError('must remain held'))):
         result=stage._recheck_one_product_hold()
-    assert result['status']=='NO_HOLD_TO_RECHECK'
+    assert result['status']=='REVIEW_ERROR'

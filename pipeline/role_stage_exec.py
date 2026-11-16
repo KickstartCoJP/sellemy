@@ -14,7 +14,7 @@ sys.path.insert(0, str(ROOT / 'pipeline'))
 
 def _inspect(slug: str, *, cache_only: bool) -> dict:
     from growth_role_business import GrowthRuntimeError, _reselect_products
-    from comparison_acceptance import VERSION, product_issues, receipt_issues, verified_excerpt_issues
+    from comparison_acceptance import VERSION, product_issues, receipt_issues
     from growth_recovery import (load_job, read_artifact, write_artifact, set_stage,
                                  request_product_reselection)
     state = load_job(slug)
@@ -60,10 +60,9 @@ def _inspect(slug: str, *, cache_only: bool) -> dict:
                 and read_artifact(slug, 'product-attempt-fingerprint.json', None)):
             request_product_reselection(slug, blocker.get('reasons') or ['candidate pool exhausted; return to Planning'])
             current = load_job(slug)
-            if current.get('current_stage') == 'PRODUCT_HOLD':
+            if current.get('current_stage') in {'PRODUCT_HOLD', 'PRODUCT_FAILED'}:
                 raise GrowthRuntimeError(f'planning_restart_required for {slug}')
-        if (evidence.get('product_acceptance') and not product_issues(evidence)
-                and not verified_excerpt_issues(evidence)):
+        if evidence.get('product_acceptance') and not product_issues(evidence):
             write_artifact(slug, 'product-blocker.json', {})
             progress = read_artifact(slug, 'product-search-progress.json', {}) or {}
             progress['complete'] = True
@@ -72,18 +71,17 @@ def _inspect(slug: str, *, cache_only: bool) -> dict:
         return {**details, 'action': 'product'}
     stage = state.get('current_stage')
     if stage in {'WRITER_PENDING', 'QA_FAILED'}:
-        missing = verified_excerpt_issues(evidence)
-        if missing:
-            request_product_reselection(slug, missing)
-            raise GrowthRuntimeError(f'needs_product_reselection for {slug}: ' + '; '.join(missing))
+        # Product acceptance, not the availability of six detailed excerpts,
+        # is the sole product selection gate before Writer.
         return {**details, 'action': 'writer'}
     if stage == 'CHAT_REVIEW_PENDING':
         return {**details, 'action': 'ceo_review'}
     if stage in {'EYECATCH_PENDING', 'PUBLISH_PENDING'}:
         issues = product_issues(evidence)
         if issues:
-            request_product_reselection(slug, issues)
-            raise GrowthRuntimeError(f'needs_product_reselection for {slug}')
+            # Post-Product QA may halt for corrupt/stale evidence, but must
+            # never silently change already accepted product identities.
+            raise GrowthRuntimeError(f'product acceptance integrity fault for {slug}: ' + '; '.join(issues))
         payload = read_artifact(slug, 'payload.json', {})
         acceptance = read_artifact(slug, 'acceptance.json')
         issues = receipt_issues(acceptance, evidence, payload)
@@ -97,11 +95,12 @@ def _inspect(slug: str, *, cache_only: bool) -> dict:
                              read_artifact(slug, 'independent-quality-receipts.json', {}))
         except QualityGateError as exc:
             if exc.gate in ('product', 'evidence'):
-                request_product_reselection(slug, exc.issues)
-            else:
-                set_stage(slug, 'QA_FAILED', event='INDEPENDENT_QA_REVALIDATION_REQUIRED')
-                write_artifact(slug, 'gate-feedback.json', {'independent_quality_gate': {
-                    'gate': exc.gate, 'issues': exc.issues}})
+                # Integrity defects stop advancement; Article QA has no
+                # route back to Product selection.
+                raise GrowthRuntimeError(f'product evidence integrity fault for {slug}: {exc}') from exc
+            set_stage(slug, 'QA_FAILED', event='INDEPENDENT_QA_REVALIDATION_REQUIRED')
+            write_artifact(slug, 'gate-feedback.json', {'independent_quality_gate': {
+                'gate': exc.gate, 'issues': exc.issues}})
             raise GrowthRuntimeError(f'independent QA revalidation required for {slug}: {exc}') from exc
         return {**details, 'action': ('designer' if stage == 'EYECATCH_PENDING' else 'publish')}
     if stage == 'PUBLISHED':
@@ -182,10 +181,10 @@ def _create_job(*, cache_only: bool, candidates: list, provider: dict | None,
     else:
         selected, selection = select_six(products, topic, feedback)
     evidence = build_evidence(topic, selected, selection)
-    from comparison_acceptance import product_issues, verified_excerpt_issues
-    issues = product_issues(evidence) + verified_excerpt_issues(evidence)
+    from comparison_acceptance import product_issues
+    issues = product_issues(evidence)
     if issues:
-        raise ValueError('approved product evidence lacks Writer prerequisites: ' + '; '.join(issues))
+        raise ValueError('approved product evidence changed before job creation: ' + '; '.join(issues))
     job = create_job(topic=topic, evidence=evidence, selection=selection,
                      planning_provider=provider, viability_probes=probes,
                      save_planning_provider=True)
@@ -223,13 +222,8 @@ def _recheck_one_product_hold() -> dict:
         products = evidence.get('products') or []
         if len(products) != 6:
             continue
-        # Missing verifiable item facts is a sourcing task, not a reason to
-        # reapprove or rewrite the whole six-product selection.
-        if any(not any(isinstance(source, dict) and source.get('verified') is True
-                       and str(source.get('excerpt') or '').strip()
-                       for source in product.get('sources') or [])
-               for product in products):
-            continue
+        # Product QA determines suitability. Missing optional source detail
+        # alone is not a reason for an accepted job to remain in PRODUCT_HOLD.
         # Persist the attempt before external calls; a timed-out reviewer is
         # not taken as approval and will be retried on another day.
         _append_jsonl(records_path, {'at': utcnow().isoformat(),
@@ -246,6 +240,16 @@ def _recheck_one_product_hold() -> dict:
         candidate = {**evidence, 'product_acceptance': receipt}
         issues = product_issues(candidate)
         if issues:
+            review = (receipt.get('review') or {}) if isinstance(receipt, dict) else {}
+            if review.get('status') == 'BLOCKED' and review.get('needs_product_reselection') is True:
+                # A fresh independent Product QA has rejected the same
+                # products. This is a terminal quality failure, not a job
+                # to retry forever. Reviewer errors remain on HOLD instead.
+                from growth_recovery import finalize_rechecked_product_failure
+                finalize_rechecked_product_failure(slug, issues)
+                _append_jsonl(records_path, {'at': utcnow().isoformat(),
+                                             'slug': slug, 'status': 'FAILED', 'issues': issues})
+                return {'slug': slug, 'status': 'FAILED', 'issues': issues}
             _append_jsonl(records_path, {'at': utcnow().isoformat(),
                                          'slug': slug, 'status': 'STILL_HELD',
                                          'issues': issues})

@@ -188,14 +188,14 @@ class RecoveryContractTests(RecoveryCase):
         _payload, evidence = fixture('book-reading-stands')
         self.create(evidence)
         with patch('writer_runtime.invoke_writer') as writer:
-            with self.assertRaisesRegex(business.GrowthRuntimeError, 'needs_product_reselection'):
+            with self.assertRaisesRegex(business.GrowthRuntimeError, 'product acceptance integrity fault'):
                 role_writer.writer(evidence['slug'])
         writer.assert_not_called()
         state = gr.load_job(evidence['slug'])
         self.assertEqual(state['current_stage'], 'WRITER_PENDING')
         self.assertEqual(state['retry_count_by_stage']['writer'], 0)
-        self.assertEqual(state['retry_count_by_stage']['product'], 1)
-        self.assertTrue(gr.read_artifact(evidence['slug'], 'product-blocker.json')['needs_product_reselection'])
+        self.assertEqual(state['retry_count_by_stage'].get('product', 0), 0)
+        self.assertFalse((gr.read_artifact(evidence['slug'], 'product-blocker.json', {}) or {}).get('needs_product_reselection'))
 
     def test_same_slug_reselection_clears_stale_authorizations(self):
         p, e, a = self.create()
@@ -396,9 +396,9 @@ class BoundaryRecoveryTests(RecoveryCase):
         self.create(e)
         gr.set_stage(e['slug'], 'PUBLISH_PENDING')
         with patch('role_stage_exec.product_issues', create=True, return_value=['insufficient facts']):
-            with self.assertRaisesRegex(business.GrowthRuntimeError, 'needs_product_reselection'):
+            with self.assertRaisesRegex(business.GrowthRuntimeError, 'product acceptance integrity fault'):
                 stage_worker._inspect(e['slug'], cache_only=True)
-        self.assertEqual(gr.load_job(e['slug'])['current_stage'], 'WRITER_PENDING')
+        self.assertEqual(gr.load_job(e['slug'])['current_stage'], 'PUBLISH_PENDING')
 
     def test_stale_article_acceptance_returns_to_qa_before_designer(self):
         p,e,a=self.create()

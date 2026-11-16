@@ -502,6 +502,24 @@ def hold_product_review_conflict(slug: str, *, reasons: list[str], pinned_asins:
                        detail={'pinned_count': len(pinned_asins)})
 
 
+def finalize_rechecked_product_failure(slug: str, reasons: list[str]) -> dict:
+    """Terminate an existing PRODUCT_HOLD after a fresh explicit Product QA BLOCKED.
+
+    Preserve approved artifacts, past counters and source identities. An
+    invalid reviewer receipt or unavailable reviewer is not proof of failure.
+    """
+    state = load_job(slug)
+    if (state.get('status'), state.get('current_stage')) != ('ACTIVE', 'PRODUCT_HOLD'):
+        raise ValueError('only active PRODUCT_HOLD may be finalized')
+    state['status'] = 'FAILED'
+    state['current_stage'] = 'PRODUCT_FAILED'
+    state['next_retry_at'] = None
+    state['last_failure_class'] = 'role_quality'
+    state['last_failure_code'] = 'PRODUCT_QA_RECHECK_REJECTED'
+    state['last_failure_reason'] = '; '.join(reasons)[:2000]
+    return _save_state(state, event='PRODUCT_QA_RECHECK_FAILED', detail={'issues': reasons[:10]})
+
+
 def request_product_reselection(slug: str, reasons: list[str]) -> dict:
     # Control outcome inside the existing job, not a new queue or state enum.
     from comparison_acceptance import blocked
@@ -521,15 +539,17 @@ def request_product_reselection(slug: str, reasons: list[str]) -> dict:
     previous = read_artifact(slug, 'product-attempt-fingerprint.json', {}) or {}
     if previous.get('signature') == signature:
         state = load_job(slug)
-        state['current_stage'] = 'PRODUCT_HOLD'
-        state['status'] = 'ACTIVE'
+        state['current_stage'] = 'PRODUCT_FAILED'
+        state['status'] = 'FAILED'
         state['next_retry_at'] = None
         state['last_failure_class'] = 'missing_evidence'
         state['last_failure_code'] = 'UNCHANGED_PRODUCT_SEARCH'
         state['last_failure_reason'] = '; '.join(reasons)[:2000]
         write_artifact(slug, 'product-blocker.json', blocked(reasons))
-        write_artifact(slug, 'product-hold.json', {'signature': signature, 'reason': 'unchanged input and failure', 'resume_condition': 'new product or evidence or owner intervention'})
-        return _save_state(state, event='PRODUCT_NO_PROGRESS_HOLD', detail={'signature': signature})
+        write_artifact(slug, 'product-hold.json', {'signature': signature,
+            'reason': 'same product selection exhausted with no new evidence',
+            'resume_condition': 'verified owner remediation only'})
+        return _save_state(state, event='PRODUCT_NO_PROGRESS_FAILED', detail={'signature': signature})
     write_artifact(slug, 'product-attempt-fingerprint.json', {'signature': signature})
     write_artifact(slug, 'product-blocker.json', blocked(reasons))
     write_artifact(slug, 'acceptance.json', blocked(reasons))
