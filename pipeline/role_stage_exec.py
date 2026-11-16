@@ -111,8 +111,27 @@ def _plan(*, provided: list | None, exclude: list[str]) -> dict:
     source = provided if provided is not None else discover_candidates()
     candidates = [c for c in rank_candidates(source, feedback)
                   if c.get('slug') not in set(exclude)]
+    # Preserve one-topic-per-run ownership and avoid immediately retrying a failed
+    # candidate on the next scheduled slot. Progress is durable, not a process log.
+    from datetime import datetime, timedelta, timezone
+    from growth_recovery import STATE_ROOT
+    recent = set()
+    cutoff = datetime.now(timezone.utc) - timedelta(hours=24)
+    for path in (STATE_ROOT / 'fresh-topic-attempts.jsonl',
+                 STATE_ROOT / 'product-qa-dispositions.jsonl'):
+        if not path.exists():
+            continue
+        for line in path.read_text(encoding='utf-8').splitlines():
+            try:
+                event = json.loads(line)
+                at = datetime.fromisoformat(event.get('at', ''))
+                if at >= cutoff and event.get('slug'):
+                    recent.add(event['slug'])
+            except (ValueError, TypeError):
+                continue
+    candidates = [c for c in candidates if c.get('slug') not in recent]
     if not candidates:
-        raise PlanningError('planning produced no novel eligible themes')
+        raise PlanningError('planning produced no unattempted themes in the last 24 hours')
     return {'candidates': candidates,
             'provider': getattr(source, 'provider_metadata', None),
             'candidate_slugs': [c['slug'] for c in candidates]}
@@ -123,12 +142,31 @@ def _create_job(*, cache_only: bool, candidates: list, provider: dict | None,
     from growth_role_business import (require_clean_current_main, select_viable_topic,
                                       select_six, build_evidence)
     from analytics_feedback import load_feedback
-    from growth_recovery import create_job
+    from growth_recovery import create_job, STATE_ROOT, _append_jsonl, utcnow
     base_head = require_clean_current_main()
     feedback = load_feedback()
-    topic, products, probes = select_viable_topic(
-        candidates, feedback, cache_only=cache_only,
-        regenerate_after_supplied=not cache_only)
+    if not candidates:
+        raise ValueError('fresh create requires one topic')
+    # One candidate per 15-minute role. Record the attempt before external
+    # search/QA calls so a hard timeout still leaves a usable diagnostic.
+    candidate = candidates[0]
+    _append_jsonl(STATE_ROOT / 'fresh-topic-attempts.jsonl', {
+        'at': utcnow().isoformat(), 'slug': candidate['slug'],
+        'status': 'STARTED', 'candidate_count': len(candidates),
+        'searches_per_axis_limit': 2})
+    try:
+        topic, products, probes = select_viable_topic(
+            [candidate], feedback, cache_only=cache_only,
+            regenerate_after_supplied=False)
+    except Exception as exc:
+        _append_jsonl(STATE_ROOT / 'fresh-topic-attempts.jsonl', {
+            'at': utcnow().isoformat(), 'slug': candidate['slug'],
+            'status': 'FAILED', 'error_type': type(exc).__name__,
+            'viability_probes': getattr(exc, 'viability_probes', [])})
+        raise
+    _append_jsonl(STATE_ROOT / 'fresh-topic-attempts.jsonl', {
+        'at': utcnow().isoformat(), 'slug': candidate['slug'],
+        'status': 'PRODUCT_QA_ACCEPTED', 'viability_probes': probes})
     topic.pop('_planning_provider_metadata', None)
     accepted_asins = topic.pop('_accepted_selection_asins', None)
     accepted_selection = topic.pop('_accepted_selection_metadata', None)
@@ -151,6 +189,71 @@ def _create_job(*, cache_only: bool, candidates: list, provider: dict | None,
             'planning_provider': provider, 'viability_probes': probes,
             'topic': topic,
             'admission': admission}
+
+
+def _recheck_one_product_hold() -> dict:
+    """Advance one existing product hold using only valid independent QA."""
+    from datetime import datetime, timedelta, timezone
+    from growth_recovery import (all_jobs, read_artifact, write_artifact,
+                                 set_stage, STATE_ROOT, _append_jsonl, utcnow)
+    from comparison_acceptance import product_issues
+    from semantic_review import independent_review
+    records_path = STATE_ROOT / 'product-hold-rechecks.jsonl'
+    recent = set()
+    cutoff = datetime.now(timezone.utc) - timedelta(hours=24)
+    if records_path.exists():
+        for line in records_path.read_text(encoding='utf-8').splitlines():
+            try:
+                item = json.loads(line)
+                if datetime.fromisoformat(item['at']) > cutoff:
+                    recent.add(item['slug'])
+            except (KeyError, ValueError, TypeError):
+                continue
+    rows = [x for x in all_jobs() if x.get('status') == 'ACTIVE'
+            and x.get('current_stage') == 'PRODUCT_HOLD'
+            and x['slug'] not in recent]
+    for row in sorted(rows, key=lambda x: (x.get('updated_at') or '', x['slug'])):
+        slug = row['slug']
+        evidence = read_artifact(slug, 'evidence.json', {}) or {}
+        products = evidence.get('products') or []
+        if len(products) != 6:
+            continue
+        # Missing verifiable item facts is a sourcing task, not a reason to
+        # reapprove or rewrite the whole six-product selection.
+        if any(not any(isinstance(source, dict) and source.get('verified') is True
+                       and str(source.get('excerpt') or '').strip()
+                       for source in product.get('sources') or [])
+               for product in products):
+            continue
+        # Persist the attempt before external calls; a timed-out reviewer is
+        # not taken as approval and will be retried on another day.
+        _append_jsonl(records_path, {'at': utcnow().isoformat(),
+                                     'slug': slug, 'status': 'STARTED'})
+        receipt = evidence.get('product_acceptance') or {}
+        if product_issues(evidence):
+            try:
+                receipt = independent_review(evidence)
+            except Exception as exc:
+                _append_jsonl(records_path, {'at': utcnow().isoformat(),
+                                             'slug': slug, 'status': 'REVIEW_ERROR',
+                                             'error_type': type(exc).__name__})
+                return {'slug': slug, 'status': 'REVIEW_ERROR'}
+        candidate = {**evidence, 'product_acceptance': receipt}
+        issues = product_issues(candidate)
+        if issues:
+            _append_jsonl(records_path, {'at': utcnow().isoformat(),
+                                         'slug': slug, 'status': 'STILL_HELD',
+                                         'issues': issues})
+            return {'slug': slug, 'status': 'STILL_HELD', 'issues': issues}
+        write_artifact(slug, 'evidence.json', candidate)
+        write_artifact(slug, 'product-blocker.json', {})
+        # Old article-specific QA/CEO review authorizations do not follow a
+        # new draft, and already-approved content is not included here.
+        set_stage(slug, 'WRITER_PENDING', event='PRODUCT_HOLD_RECHECK_ACCEPTED')
+        _append_jsonl(records_path, {'at': utcnow().isoformat(),
+                                     'slug': slug, 'status': 'RESUMED'})
+        return {'slug': slug, 'status': 'RESUMED'}
+    return {'status': 'NO_HOLD_TO_RECHECK'}
 
 
 def _commit_planning(slug: str, *, provider: dict | None, admission: dict | None) -> dict:
@@ -223,7 +326,7 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument('--role', choices=(
         'writer', 'reviewer', 'review_reset', 'product', 'inspect', 'designer', 'publish', 'postpublish', 'ceo_reconcile',
-        'planning', 'planning_commit', 'fresh_create', 'product_qa_disposition', 'already_published', 'slot_compensation', 'recovery', 'report', 'state_queue', 'scheduler', 'legacy_admit', 'legacy_replan', 'legacy_precheck', 'legacy_review_finish'), required=True)
+        'planning', 'planning_commit', 'fresh_create', 'product_hold_recheck', 'product_qa_disposition', 'already_published', 'slot_compensation', 'recovery', 'report', 'state_queue', 'scheduler', 'legacy_admit', 'legacy_replan', 'legacy_precheck', 'legacy_review_finish'), required=True)
     parser.add_argument('--slug', default='')
     parser.add_argument('--cache-only', action='store_true')
     args = parser.parse_args()
@@ -273,7 +376,14 @@ def main() -> None:
                 raise ValueError('QA requires one identifiable attempted topic')
             probe = probes[0]
             # Transport/search failures are operational HOLD, not a quality rejection.
-            decision = ('HOLD' if probe.get('error') else 'BLOCKED')
+            # No 6-product set / unavailable sources are research HOLD, not a
+            # proven quality rejection. A semantic BLOCK needs explicit evidence.
+            acceptance = probe.get('acceptance') or {}
+            reasons_text = ' '.join(acceptance.get('reasons') or []) if isinstance(acceptance, dict) else ''
+            proven = any(marker in reasons_text.lower() for marker in (
+                'machine duplicate', 'same independent product identity',
+                'product does not fit the topic', 'proved duplicate'))
+            decision = 'BLOCKED' if proven else 'HOLD'
             acceptance = probe.get('acceptance') or {}
             reasons = (acceptance.get('reasons') if isinstance(acceptance, dict) else None) or [
                 f"Only {probe.get('candidate_count', 0)} of 6 required products passed evidence collection"]
@@ -283,6 +393,8 @@ def main() -> None:
                        'viability_probes': probes}
             _append_jsonl(STATE_ROOT / 'product-qa-dispositions.jsonl', receipt)
             result = receipt
+        elif args.role == 'product_hold_recheck':
+            result = _recheck_one_product_hold()
         elif args.role == 'fresh_create':
             result = _create_job(cache_only=args.cache_only,
                                  candidates=request['candidates'],

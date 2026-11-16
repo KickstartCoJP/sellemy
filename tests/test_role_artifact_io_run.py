@@ -19,6 +19,8 @@ def _base(role, slug='', **kwargs):
         if op=='reschedule_after_failure':return {'failed_slot':'09:00','next_slot':'09:30'}
     if role=='recovery':return {'recovered_legacy_failed':[]}
     if role=='already_published':return {'slugs':[]}
+    if role=='product_hold_recheck':return {'status':'NO_HOLD_TO_RECHECK'}
+    if role=='legacy_admit':return {'admitted':False}
     if role=='state_queue':return {'eligible':None,'unfinished':[]}
     if role=='planning':return {'candidates':[{'slug':'sample','category':'gadget'}],'provider':{}}
     if role=='fresh_create':return {'slug':'sample','base_head':'aabbcc',

@@ -45,8 +45,14 @@ def writer(slug: str) -> dict:
                          duration_ms=int((time.monotonic() - started) * 1000))
         if payload.get('status') == 'BLOCKED' or payload.get('needs_product_reselection') is True:
             write_artifact(slug, 'writer-blocked.json', payload)
-            request_product_reselection(slug, payload.get('reasons') or ['Writer reported missing facts'])
-            raise GrowthRuntimeError(f'needs_product_reselection for {slug}')
+            # Product identity/topic QA already passed at the start of Writer.
+            # Writer cannot reopen Product QA merely because it struggled to
+            # articulate a comparison or lacked a nonessential specification.
+            reason = '; '.join(payload.get('reasons') or []) or 'Writer could not complete grounded product introductions'
+            mark_failure(slug, stage='writer', failure_class='role_quality',
+                         failure_code='WRITER_BLOCKED', reason=reason,
+                         role_return=True, role='writer')
+            raise GrowthRuntimeError(f'Writer requested editorial revision for {slug}')
         write_artifact(slug, 'payload.json', payload)
         return {'writer_ready': True, 'metadata': metadata}
     except GrowthRuntimeError:
@@ -115,8 +121,22 @@ def reviewer(slug: str, metadata: dict) -> dict:
         write_artifact(slug, 'acceptance.json', acceptance)
         review = acceptance.get('review') or {}
     if review.get('status') == 'BLOCKED' and review.get('needs_product_reselection') is True:
-        request_product_reselection(slug, [review.get('reason') or 'Review found missing product facts'])
-        raise GrowthRuntimeError(f'needs_product_reselection for {slug}')
+        # Only an identified, demonstrably unsuitable product/duplicate can
+        # override the previously accepted six-product set. Comparison prose
+        # or unsupported draft claims belong to editorial/claim QA.
+        checks = review.get('products') or []
+        off_topic = [x.get('ref') for x in checks if isinstance(x, dict)
+                     and x.get('topic_fit') is False and str(x.get('reason') or '').strip()]
+        pairs = [x for x in review.get('duplicate_pair_checks') or []
+                 if isinstance(x, dict) and x.get('is_duplicate') is True]
+        if off_topic or pairs:
+            request_product_reselection(slug, [review.get('reason') or 'Proven unsuitable product'] )
+            raise GrowthRuntimeError(f'needs_product_reselection for {slug}')
+        # Keep the draft in Writer QA, not a permanent PRODUCT_HOLD.
+        review = {**review, 'status': 'REVISION_REQUIRED', 'needs_product_reselection': False}
+        if isinstance(acceptance, dict):
+            acceptance = {**acceptance, 'review': review}
+        write_artifact(slug, 'acceptance.json', acceptance or {})
 
     try:
         _rendered, findings, qa = evaluate_candidate(

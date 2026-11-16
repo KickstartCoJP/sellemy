@@ -344,6 +344,8 @@ class RuntimeFailClosedTests(unittest.TestCase):
             if name == 'ceo_reconcile': return {}
             if name == 'recovery': return {'recovered_legacy_failed': []}
             if name == 'already_published': return {'slugs': []}
+            if name == 'product_hold_recheck': return {'status':'NO_HOLD_TO_RECHECK'}
+            if name == 'legacy_admit': return {'admitted':False}
             if name == 'state_queue': return {'eligible': deferred, 'unfinished': [deferred]}
             raise AssertionError(name)
         with patch.object(growth_runtime, 'require_publishing_enabled'), \
@@ -363,6 +365,8 @@ class RuntimeFailClosedTests(unittest.TestCase):
             if name == 'ceo_reconcile': return {}
             if name == 'recovery': return {'recovered_legacy_failed': []}
             if name == 'already_published': return {'slugs': []}
+            if name == 'product_hold_recheck': return {'status':'NO_HOLD_TO_RECHECK'}
+            if name == 'legacy_admit': return {'admitted':False}
             if name == 'state_queue': return {'eligible': None, 'unfinished': []}
             if name == 'planning': return {'candidates': [{'slug': 'first'}], 'provider': None}
             if name == 'fresh_create':
@@ -389,6 +393,8 @@ class RuntimeFailClosedTests(unittest.TestCase):
             if name == 'ceo_reconcile': return {}
             if name == 'recovery': return {'recovered_legacy_failed': []}
             if name == 'already_published': return {'slugs': []}
+            if name == 'product_hold_recheck': return {'status':'NO_HOLD_TO_RECHECK'}
+            if name == 'legacy_admit': return {'admitted':False}
             if name == 'state_queue': return {'eligible': deferred, 'unfinished': [deferred]}
             raise AssertionError(name)
         with patch.object(growth_runtime, 'require_publishing_enabled'), \

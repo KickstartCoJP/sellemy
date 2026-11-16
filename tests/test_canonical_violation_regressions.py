@@ -53,7 +53,7 @@ def test_six_products_with_no_excerpts_reach_independent_qa():
     ('REVISION_REQUIRED', False, False),
     ('BLOCKED', False, False),
     ('REVISION_REQUIRED', True, False),
-    ('BLOCKED', True, True),
+    ('BLOCKED', True, False),
 ])
 def test_reviewer_only_sends_explicit_product_block_back_to_product(status, reselection, wants_product):
     artifacts = {'topic.json': {}, 'evidence.json': {}, 'payload.json': {},
@@ -77,8 +77,26 @@ def test_reviewer_only_sends_explicit_product_block_back_to_product(status, rese
         saved.assert_not_called()
     else:
         product_request.assert_not_called()
-        assert saved.call_args.kwargs['feedback']['semantic_review'] == review
+        expected=({**review,'status':'REVISION_REQUIRED','needs_product_reselection':False}
+                  if status=='BLOCKED' and reselection else review)
+        assert saved.call_args.kwargs['feedback']['semantic_review'] == expected
         assert failed.call_args.kwargs['stage'] == 'writer'
+
+
+def test_proven_offtopic_product_reviewer_reopens_product_qa():
+    artifacts={'topic.json':{},'evidence.json':{},'payload.json':{},
+               'editorial-plan.json':{},'gate-feedback.json':{}}
+    review={'status':'BLOCKED','needs_product_reselection':True,
+            'reason':'p3 is unrelated to theme',
+            'products':[{'ref':'p3','topic_fit':False,'reason':'unrelated product class'}]}
+    with (patch.object(writer_role,'read_artifact',side_effect=lambda slug,name,default=None:artifacts.get(name,default)),
+          patch.object(writer_role,'write_artifact'),
+          patch('recovery_provider_policy.active_policy',return_value={}),
+          patch('semantic_review.independent_review',return_value={'review':review}),
+          patch.object(writer_role,'request_product_reselection') as request):
+        with pytest.raises(writer_role.GrowthRuntimeError,match='needs_product_reselection'):
+            writer_role.reviewer('article-slug',{})
+    request.assert_called_once()
 
 
 def test_repeat_only_topic_group_ends_without_retesting_same_topics():
