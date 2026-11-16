@@ -19,17 +19,17 @@ def reset_review_artifacts(slug: str) -> dict:
 
 
 def writer(slug: str) -> dict:
-    from comparison_acceptance import product_issues, verified_excerpt_issues
+    from comparison_acceptance import product_issues
     from editorial_plan import build_editorial_plan
     from writer_runtime import invoke_writer, WriterInvocationError
     from responses_provider import ResponsesError
 
     topic = read_artifact(slug, 'topic.json')
     evidence = read_artifact(slug, 'evidence.json')
-    issues = product_issues(evidence) + verified_excerpt_issues(evidence)
+    issues = product_issues(evidence)
     if issues:
-        request_product_reselection(slug, issues)
-        raise GrowthRuntimeError(f'needs_product_reselection for {slug}')
+        # A previously accepted product manifest must not be reselected by Writer.
+        raise GrowthRuntimeError(f'product acceptance integrity fault for {slug}: ' + '; '.join(issues))
     previous = read_artifact(slug, 'payload.json')
     gate_feedback = read_artifact(slug, 'gate-feedback.json', {}) or {}
     plan = build_editorial_plan(topic, evidence, str(gate_feedback.get('ceo_rework') or ''))
@@ -121,17 +121,8 @@ def reviewer(slug: str, metadata: dict) -> dict:
         write_artifact(slug, 'acceptance.json', acceptance)
         review = acceptance.get('review') or {}
     if review.get('status') == 'BLOCKED' and review.get('needs_product_reselection') is True:
-        # Only an identified, demonstrably unsuitable product/duplicate can
-        # override the previously accepted six-product set. Comparison prose
-        # or unsupported draft claims belong to editorial/claim QA.
-        checks = review.get('products') or []
-        off_topic = [x.get('ref') for x in checks if isinstance(x, dict)
-                     and x.get('topic_fit') is False and str(x.get('reason') or '').strip()]
-        pairs = [x for x in review.get('duplicate_pair_checks') or []
-                 if isinstance(x, dict) and x.get('is_duplicate') is True]
-        if off_topic or pairs:
-            request_product_reselection(slug, [review.get('reason') or 'Proven unsuitable product'] )
-            raise GrowthRuntimeError(f'needs_product_reselection for {slug}')
+        # Article review is not authorized to reopen a completed Product QA.
+        # Keep the same six products and request Writer correction only.
         # Keep the draft in Writer QA, not a permanent PRODUCT_HOLD.
         review = {**review, 'status': 'REVISION_REQUIRED', 'needs_product_reselection': False}
         if isinstance(acceptance, dict):
@@ -179,8 +170,9 @@ def reviewer(slug: str, metadata: dict) -> dict:
         except QualityGateError as exc:
             write_artifact(slug, 'independent-quality-receipts.json', {})
             if exc.gate in ('evidence', 'product'):
-                request_product_reselection(slug, exc.issues)
-                raise GrowthRuntimeError(f'needs_product_reselection for {slug}: {exc}') from exc
+                # This is an integrity failure in the frozen Product input,
+                # not authorization for Article QA to change the products.
+                raise GrowthRuntimeError(f'product evidence integrity fault for {slug}: {exc}') from exc
             if exc.gate == 'reviewer_runtime':
                 mark_failure(slug, stage='review', failure_class='runtime_infrastructure',
                              failure_code='INDEPENDENT_QA_PROVIDER_FAILED', reason=str(exc), role='review')

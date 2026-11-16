@@ -83,7 +83,7 @@ def test_reviewer_only_sends_explicit_product_block_back_to_product(status, rese
         assert failed.call_args.kwargs['stage'] == 'writer'
 
 
-def test_proven_offtopic_product_reviewer_reopens_product_qa():
+def test_proven_offtopic_article_review_cannot_reopen_product_qa():
     artifacts={'topic.json':{},'evidence.json':{},'payload.json':{},
                'editorial-plan.json':{},'gate-feedback.json':{}}
     review={'status':'BLOCKED','needs_product_reselection':True,
@@ -93,10 +93,15 @@ def test_proven_offtopic_product_reviewer_reopens_product_qa():
           patch.object(writer_role,'write_artifact'),
           patch('recovery_provider_policy.active_policy',return_value={}),
           patch('semantic_review.independent_review',return_value={'review':review}),
-          patch.object(writer_role,'request_product_reselection') as request):
-        with pytest.raises(writer_role.GrowthRuntimeError,match='needs_product_reselection'):
+          patch.object(writer_role,'evaluate_candidate', return_value=('', [], {'overall_pass':False})),
+          patch.object(writer_role,'save_writer_result') as save,
+          patch.object(writer_role,'mark_failure') as failed,
+          patch.object(writer_role,'record_context_quality'),
+          patch.object(writer_role,'record_execution')):
+        with pytest.raises(writer_role.GrowthRuntimeError,match='writer/review/QA failed'):
             writer_role.reviewer('article-slug',{})
-    request.assert_called_once()
+    assert save.call_args.kwargs['feedback']['semantic_review']['needs_product_reselection'] is False
+    assert failed.call_args.kwargs['stage']=='writer'
 
 
 def test_repeat_only_topic_group_ends_without_retesting_same_topics():

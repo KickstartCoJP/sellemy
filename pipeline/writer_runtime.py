@@ -127,7 +127,7 @@ def _prompt(topic: dict, evidence: dict, *, previous_payload: dict | None = None
         '3つのcomparison_groupsは既存JSONキー名にすぎず、本文では比較表や性能順位として見せる必要はありません。企画で定めた紹介切り口ごとに、どんな魅力のモノと出会えるかを伝えてください。商品カードはまずその商品だけの特徴と面白さを伝え、その次に向く使い方を示します。商品同士の差異は読者に必要な場合だけ補足し、価格・機能・大きさの比較表現を機械的に並べないでください。\\n\\n'
         '文脈を壊す不用意な水増し文章、定型的な注意書き、内部QA用語、不要な仕様説明を書かないでください。slug、category、商品参照IDを維持してください。\\n\\n'
         '編集QAで根拠のない具体表現（仕様・数値・性能・効果・使用体験）が指摘されたら、該当表現は削除して再利用せず、確認できた事実と裏付けのある特徴・用途・生活場面を自然に伝える文章へ修正してください。確認できない事実を創作して補完しないでください。\\n\\n'
-        '商品名・販売タイトルにだけ含まれる仕様（端子・付属品・着脱構造など）は検証済み本文の根拠として扱わないでください。各商品カード内の具体的な仕様・比較は、そのカードのproduct_refに属する検証済みexcerptに記載された事項だけに限定してください。QAが削除指定した文言・同じ主張の言い換えを次の稿に戻さず、根拠のある別の特徴で自然に書き直してください。\\n\\n'
+        '商品ページの掲載タイトルから確認できる名称・型番・数量・寸法等は掲載情報として紹介できます。詳細出典がない場合は性能・耐久性・効能などを断定しないでください。追加の仕様が不明なだけで記事をBLOCKEDにせず、確認できる商品の個性と読者の利用場面で自然に紹介してください。商品refが違う根拠を転用せず、QAが削除指定した根拠のない主張を言い換えて戻さないでください。\\n\\n'
         '記事の既存順序を維持してください。leadは読者が発見できる商品や使い道の魅力から入り、summaryはleadを繰り返さず記事で出会えるモノの方向性を伝えます。3組のcomparison_groupsは従来の表示枠名のまま、各2商品の紹介切り口を伝えます。各商品カードでは根拠のある固有の魅力・推薦理由を説明します。how_to_chooseは商品の面白さ・特徴・生活との接点に気づけるヒントを伝え、conclusionは自然に短く締めます。記事全体や一般解説合計に文字数目標を設けず、各パーツの必要な内容を過不足なく記載してください。\n\n'
         f'TOPIC:\n{json.dumps(topic, ensure_ascii=False, sort_keys=True)}\n\n'
         '3組の商品はEvidence.selection.axesの紹介切り口別割当をそのまま使い、切り口をまたいで並べ替えないでください。選定理由は確認済み事実の範囲で商品の説明に反映してください。\n'
@@ -161,7 +161,7 @@ def _prompt(topic: dict, evidence: dict, *, previous_payload: dict | None = None
             prompt += '\nMANDATORY: Rewrite lead to at least 180 Japanese characters, with no upper limit or padding.\n'
         if failed.get('semantic_acceptance_pass') is False:
             prompt += ('\nMANDATORY: Correct the cited semantic QA failure, do not invent an unsupported differentiator. '
-                       'Every product-specific advantage must appear in its verified source. '
+                       'Use only attributable listing facts or verified source facts for objective product claims; never invent performance or efficacy. '
                        'Reviewer issue: ' + str(semantic.get('reason') or '')[:1800] + '\n')
     if isinstance(gate_feedback,dict) and gate_feedback.get('editorial_plan_requirements'):
         prompt += ('\nMANDATORY EDITORIAL QUALITY REMEDIATION: Previous independent editorial review failed: '

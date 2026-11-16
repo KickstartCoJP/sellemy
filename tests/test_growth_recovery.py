@@ -124,7 +124,7 @@ class GrowthRecoveryTests(unittest.TestCase):
                          ('FAILED', 'WRITER_FAILED'))
         self.assertIsNone(gr.eligible_job())
 
-    def test_identical_product_reselection_is_held_without_repeating_qa(self):
+    def test_identical_exhausted_product_reselection_is_failed_without_repeating_qa(self):
         self._job('stuck')
         gr.write_artifact('stuck', 'product-search-progress.json', {
             'candidates': [{'asin': 'A1'}], 'queries': [{'query': 'x'}],
@@ -132,7 +132,7 @@ class GrowthRecoveryTests(unittest.TestCase):
         first = gr.request_product_reselection('stuck', ['six evidence-ready products absent'])
         self.assertEqual(first['retry_count_by_stage']['product'], 1)
         second = gr.request_product_reselection('stuck', ['six evidence-ready products absent'])
-        self.assertEqual(second['current_stage'], 'PRODUCT_HOLD')
+        self.assertEqual(second['current_stage'], 'PRODUCT_FAILED')
         self.assertEqual(second['retry_count_by_stage']['product'], 1)
         self.assertIsNone(second['next_retry_at'])
         self.assertIsNone(gr.eligible_job())
@@ -149,7 +149,7 @@ class GrowthRecoveryTests(unittest.TestCase):
         progress['queries'].append({'query':'second'})
         gr.write_artifact('query-only','product-search-progress.json',progress)
         held=gr.request_product_reselection('query-only',['unchanged facts'])
-        self.assertEqual(held['current_stage'],'PRODUCT_HOLD')
+        self.assertEqual(held['current_stage'],'PRODUCT_FAILED')
         self.assertEqual(held['retry_count_by_stage']['product'],1)
 
     def test_changed_product_candidates_do_not_trigger_hold(self):

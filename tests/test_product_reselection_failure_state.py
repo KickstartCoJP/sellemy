@@ -51,12 +51,12 @@ def test_selector_failure_transitions_out_of_stale_writer_pending(tmp_path):
         with pytest.raises(business.GrowthRuntimeError, match='planning_restart_required'):
             business._reselect_products(slug, cache_only=False)
         second = recovery.load_job(slug)
-        assert second['current_stage'] == 'PRODUCT_HOLD'
+        assert second['current_stage'] == 'PRODUCT_FAILED'
         assert second['last_failure_code'] == 'UNCHANGED_PRODUCT_SEARCH'
         assert second['retry_count_by_stage']['product'] == 1
         assert recovery.eligible_job(now=datetime.now(timezone.utc)) is None
         events = [json.loads(row) for row in (job/'history.jsonl').read_text().splitlines()]
-        assert 'PRODUCT_NO_PROGRESS_HOLD' in [e['event'] for e in events]
+        assert 'PRODUCT_NO_PROGRESS_FAILED' in [e['event'] for e in events]
 
 
 def test_six_accepted_products_with_conflicting_set_review_are_held(tmp_path):

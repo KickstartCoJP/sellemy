@@ -27,8 +27,12 @@ def inspect(slug: str) -> dict:
     pool=search.get('candidates') or []
     if pool:
         from comparison_acceptance import source_text
-        verified=sum(bool(source_text(p)) for p in pool)
-        record('discovery','PASS' if verified>=6 else 'BLOCKED',f'{len(pool)} candidates; {verified} verified-source candidates')
+        identifiable=sum(bool(source_text(p)) for p in pool)
+        with_excerpt=sum(any(isinstance(s,dict) and s.get('verified') is True
+                             and str(s.get('excerpt') or '').strip() for s in p.get('sources') or [])
+                         for p in pool)
+        record('discovery','PASS' if identifiable>=6 else 'BLOCKED',
+               f'{len(pool)} candidates; {identifiable} identifiable; {with_excerpt} with verified excerpts')
     else:
         record('discovery','NOT_REACHED','no candidate progress available')
     if evidence.get('slug')==slug and len(evidence.get('products') or [])==6:

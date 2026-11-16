@@ -1,4 +1,4 @@
-"""CEO incident: do not dispatch Writer without six verified item-specific excerpts."""
+"""Source-presence diagnostics stay available without imposing a universal Writer gate."""
 from __future__ import annotations
 import sys
 from pathlib import Path
@@ -40,17 +40,14 @@ def test_unverified_or_non_https_sources_are_not_counted():
     ]
 
 
-def test_failed_writer_candidate_routes_to_product_without_writer_retry():
+def test_absent_optional_excerpts_do_not_reopen_accepted_product_selection():
     item=evidence((3,5,6))
     artifacts={'evidence.json':item,'topic.json':{},'selection.json':{},'product-blocker.json':{}}
     with patch('growth_recovery.load_job',return_value={'source':'runtime','current_stage':'QA_FAILED','status':'ACTIVE'}), \
          patch('growth_recovery.read_artifact',side_effect=lambda slug,name,default=None:artifacts.get(name,default)), \
          patch('growth_recovery.request_product_reselection') as redirect:
-        with pytest.raises(GrowthRuntimeError,match='needs_product_reselection'):
-            role_stage_exec._inspect('facial-oil-blotting-papers',cache_only=False)
-        redirect.assert_called_once()
-        assert redirect.call_args.args[0]=='facial-oil-blotting-papers'
-        assert len(redirect.call_args.args[1])==3
+        assert role_stage_exec._inspect('facial-oil-blotting-papers',cache_only=False)['action']=='writer'
+        redirect.assert_not_called()
 
 
 def test_complete_verified_sources_reach_writer():
@@ -64,7 +61,7 @@ def test_complete_verified_sources_reach_writer():
         redirect.assert_not_called()
 
 
-def test_existing_product_acceptance_cannot_clear_missing_source_blocker():
+def test_product_qa_pass_can_clear_stale_source_only_blocker():
     from comparison_acceptance import VERSION
     item=evidence((3,5,6))
     item['product_acceptance']={'contract_version':VERSION}
@@ -75,5 +72,5 @@ def test_existing_product_acceptance_cannot_clear_missing_source_blocker():
          patch('growth_recovery.write_artifact') as write, \
          patch('comparison_acceptance.product_issues',return_value=[]):
         result=role_stage_exec._inspect('missing-source-blocker',cache_only=False)
-    assert result['action']=='product'
-    write.assert_not_called()
+    assert result['action']=='continue'
+    write.assert_any_call('missing-source-blocker','product-blocker.json',{})
