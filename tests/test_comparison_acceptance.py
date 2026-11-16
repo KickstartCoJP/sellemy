@@ -209,7 +209,7 @@ class RecoveryContractTests(RecoveryCase):
         self.assertEqual(gr.read_artifact(slug, 'payload.json'), {})
         self.assertEqual(len(gr.all_jobs()), 1)
 
-    def test_writer_and_reviewer_blocked_route_upstream_without_escalation(self):
+    def test_writer_and_reviewer_blocks_without_product_defect_stay_in_writer(self):
         for source in ('writer', 'reviewer'):
             with self.subTest(source=source):
                 payload, evidence, acceptance = self.create()
@@ -217,16 +217,18 @@ class RecoveryContractTests(RecoveryCase):
                 if source == 'writer':
                     blocked_payload = {**payload, **blocked(['facts missing'])}
                     with patch('writer_runtime.invoke_writer', return_value=(blocked_payload, {})):
-                        with self.assertRaisesRegex(business.GrowthRuntimeError, 'needs_product_reselection'):
+                        with self.assertRaisesRegex(business.GrowthRuntimeError, 'editorial revision'):
                             role_writer.writer(slug)
                 else:
                     gr.write_artifact(slug, 'payload.json', payload)
                     gr.write_artifact(slug, 'editorial-plan.json', {'outline': 'existing'})
                     acceptance['review'].update(blocked(['facts missing']))
                     with patch('semantic_review.independent_review', return_value=acceptance):
-                        with self.assertRaisesRegex(business.GrowthRuntimeError, 'needs_product_reselection'):
+                        with self.assertRaisesRegex(business.GrowthRuntimeError, 'writer/review/QA failed'):
                             role_writer.reviewer(slug, {})
-                self.assertEqual(gr.load_job(slug)['retry_count_by_stage']['writer'], 0)
+                state = gr.load_job(slug)
+                self.assertNotEqual(state['current_stage'], 'PRODUCT_HOLD')
+                self.assertGreaterEqual(state['retry_count_by_stage']['writer'], 1)
 
     def test_legacy_two_quality_failures_do_not_terminate_before_tenth(self):
         payload, evidence, acceptance = self.create()

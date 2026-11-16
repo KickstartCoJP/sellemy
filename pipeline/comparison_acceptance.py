@@ -224,7 +224,7 @@ def review_issues(review, evidence, *, article=False):
             issues.append(f'{ref}: product does not fit the topic')
         supports = check.get('axis_support')
         if not isinstance(supports, list):
-            issues.append(f'{ref}: comparison axis assessment missing')
+            issues.append(f'{ref}: discovery group assessment missing')
         else:
             for support in supports:
                 axis = support.get('axis_id')

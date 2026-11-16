@@ -166,6 +166,13 @@ def run(*, publish: bool, cache_only: bool = False, report_path: Path | None = R
                 'admission': result.get('controller_decision') if scheduled else None})
             return created['slug']
 
+        # One legacy product hold is rechecked per normal recovery cycle.
+        # Scheduled production slots prioritize their own admitted job.
+        if publish and not scheduled and not recovery_only:
+            try:
+                result['product_hold_recheck'] = execute_role('product_hold_recheck')
+            except RoleStageFailure as exc:
+                result['product_hold_recheck_error'] = str(exc)
         queue = execute_role('state_queue')
         recovery = None if scheduled and not recovery_only else queue.get('eligible')
         # Only one legacy published article is admitted per otherwise idle

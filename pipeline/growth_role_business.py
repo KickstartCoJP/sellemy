@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import itertools
 import os
 import re
 import subprocess
@@ -155,7 +154,7 @@ def _product_queries(topic: dict):
 
 def collect_unique_products(topic: dict, *, cache_only: bool, existing: list[dict] | None = None,
                             target_new: int = 6, used_queries: set[str] | None = None,
-                            max_searches: int = 3, rejected_asins: set[str] | None = None) -> tuple[list[dict], dict]:
+                            max_searches: int = 1, rejected_asins: set[str] | None = None) -> tuple[list[dict], dict]:
     """Choose only two distinct items per axis; retain QA-passed items on replacement."""
     kept, _ = dedupe_content_products(list(existing or []))
     excluded_prior = {p['asin'] for p in kept}
@@ -224,7 +223,9 @@ def select_viable_topic(
     # Consider each novel candidate; request new batches only while they add novel slugs.
     probes = []
     tried_slugs: set[str] = set()
-    rounds = range(max_rounds) if max_rounds is not None else itertools.count()
+    # Explicitly bounded even for direct callers. The scheduled fresh-create
+    # path passes one candidate with regeneration disabled.
+    rounds = range(max_rounds if max_rounds is not None else 2)
     for round_index in rounds:
         source = (planning_candidates if round_index == 0 and planning_candidates is not None
                   else discover_candidates())
