@@ -44,7 +44,7 @@ def test_new_articles_render_nav_and_cards_without_affecting_main_content():
     assert '<nav class="site-nav">' in rendered
     assert 'href="/themes/"' in rendered
     assert '<a class="related-feature-card" href="/themes/desk-environment.html">' in rendered
-    assert rendered.index('関連する特集') > rendered.index('選ぶときのポイント')
+    assert rendered.index('関連する特集') > rendered.index('知っておきたいポイント')
     assert rendered.index('Amazon') < rendered.index('関連する特集')
 
 

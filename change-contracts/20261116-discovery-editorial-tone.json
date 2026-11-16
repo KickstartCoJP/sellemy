@@ -1,0 +1,38 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "BU002-DISCOVERY-EDITORIAL-TONE-20261116",
+  "instruction_ref": "CEO 2026-11-16: レビュー中の記事はいったんOKだが『選ぶ』『探す』連発でブランドコンセプト無視",
+  "instruction": "Correct future Sellemy article Planning and Writer editorial prompts so product encounters, curiosity and unexpected discoveries dominate over repetitive searching/choosing boilerplate; do not ban natural verbs. Remove two hard-coded choosing/comparison headings from the shared renderer; align the editorial plan's summary and guidance wording. Preserve three angle/two product format, evidence-based product claims, all QA and CEO gates, approved historical article content, and existing published URLs. Review approval decision is CEO-owned and is not altered by the implementation.",
+  "implementer": "sellemy-ops via Mac Studio v2",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3"
+  ],
+  "allowed_paths": [
+    "change-contracts/20261116-discovery-editorial-tone.json",
+    "pipeline/editorial_plan.py",
+    "pipeline/planning_runtime.py",
+    "pipeline/renderer.py",
+    "pipeline/writer_runtime.py",
+    "tests/test_brand_discovery_tone.py",
+    "tests/test_editorial_plan.py",
+    "tests/test_purpose_feature_runtime.py",
+    "tests/test_purpose_site_navigation_cards.py",
+    "tests/test_renderer.py"
+  ],
+  "preserved_rules": [
+    "Do not reject a review solely for the presence of search/choose verbs",
+    "CEO review approvals and already-passed stages remain untouched",
+    "Only future or legitimately regenerated article bodies inherit the new editorial tone",
+    "No mass rewriting existing published articles",
+    "No fabricated product facts, evidence or experiences",
+    "3 discovery axes times 2 products and independent QA preserved",
+    "Staging CEO approval required before production"
+  ],
+  "acceptance_tests": [
+    "tests/test_brand_discovery_tone.py",
+    "tests/test_renderer.py",
+    "tests/test_editorial_plan.py",
+    "tests/test_purpose_feature_runtime.py",
+    "tests/test_purpose_site_navigation_cards.py"
+  ]
+}
