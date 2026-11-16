@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-11-16T04:14:10.995781+00:00",
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "generation_route_attestation": "codex_rollout_extension",
+  "height": 1024,
+  "image_generation_internal_usage_exposed": false,
+  "image_sha256": "57877f7281eee9f6b36350495e4005440b29e1425bce47ac735795043245ee35",
+  "member_binding_revision": 10,
+  "model": "gpt-6-sol",
+  "model_reported_generation_route": "built-in_image_gen",
+  "role_id": "bu-codex-sellemy-designer",
+  "routing": {
+    "api_share": 0,
+    "codex_reserve_percent": 20.0,
+    "codex_share": 100,
+    "codex_usage": {
+      "remaining_percent": 26.0,
+      "resets_at": 1794984313,
+      "source": "/Users/kickstart/.codex/sessions/2026/11/16/rollout-2026-11-16T06-32-10-01a1e11f-f456-7f93-b8b8-07ec541b7f8b.jsonl",
+      "used_percent": 74.0,
+      "window_minutes": 10080
+    },
+    "errors_before_success": [],
+    "executed_route": "codex",
+    "fallback_from": null,
+    "mode": "weighted_random",
+    "reason": "weighted_random",
+    "remaining_percent": 26.0,
+    "roll": 64,
+    "selected_route": "codex",
+    "total_weight": 100
+  },
+  "routing_recorded_at": "2026-11-16T04:14:10.996866+00:00",
+  "summary": "手持ちのスピーカーに小型Bluetooth受信機を接続し、スマートフォンで音楽を選ぶ生活シーン。PNG形式と1536x1024の寸法を検証済み。",
+  "thread_id": "01a1dc06-cbe8-7d60-ac3e-d05bdeed59e3",
+  "token_usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 147712,
+    "input_tokens": 199821,
+    "output_tokens": 846,
+    "reasoning_output_tokens": 84,
+    "total_tokens": 200667,
+    "uncached_input_tokens": 52109
+  },
+  "token_usage_source": "codex_rollout.turn_token_usage",
+  "visual_family": "Connection Detail",
+  "width": 1536
+}
