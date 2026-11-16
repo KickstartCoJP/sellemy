@@ -1,0 +1,1082 @@
+{
+  "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+  "evidence_sha256": "0ebec59f8ffa7609bef8b7e6ad0fa3a8191746425ce66493c9f176cf6208619a",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 14848,
+    "input_tokens": 33383,
+    "member_binding_revision": 4,
+    "output_tokens": 8316,
+    "reasoning_effort": "medium",
+    "reasoning_output_tokens": 1016,
+    "session_id": "01a1e095-4479-7683-9e1a-99731b895391",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "68089934f344e60ff902bf5dfa5b8ab5f2ba0bbc682190e27a2259b63e583f6c",
+  "review": {
+    "buying_guidance": true,
+    "claims_grounded": true,
+    "complete_comparison": true,
+    "distinct_products": true,
+    "duplicate_pair_checks": [
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Buffalo BSH4U125U3BK",
+            "reason": "ブランドと型番が異なる。",
+            "right_quote": "Elecom U3H-S418BBK/EC",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "front 3 ports + 1 side port design",
+            "reason": "色や意匠以外の構成が異なる。",
+            "right_quote": "with Magnet and Switch",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "Buffalo BSH4U125U3BK",
+            "reason": "販売単位だけの違いではない。",
+            "right_quote": "Elecom U3H-S418BBK/EC",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "両商品とも4ポートで、本体寸法の差は示されていない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "front 3 ports + 1 side port design",
+            "reason": "端子配置と個別スイッチという構造上の違いがある。",
+            "right_quote": "Individual switch type",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "Buffalo BSH4U125U3BK",
+            "reason": "異なるブランドの商品。",
+            "right_quote": "Elecom U3H-S418BBK/EC",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand BUFFALO",
+            "reason": "ブランドが異なる。",
+            "right_quote": "Brand エレコム(ELECOM)",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "front 3 ports + 1 side port design",
+            "reason": "机上での使い方について別々の推薦理由がある。",
+            "right_quote": "It features an angled design",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "別ブランド・別型番で、端子配置と設置・操作方法も異なる。",
+        "right_ref": "p2"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Buffalo BSH4U125U3BK",
+            "reason": "ブランドとポート数が異なる。",
+            "right_quote": "iDsonix 7 Port USB Hub 3.0",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "4-Port",
+            "reason": "色や意匠だけの違いではない。",
+            "right_quote": "7 Port USB Hub 3.0",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "4-Port",
+            "reason": "接続口の数が異なる。",
+            "right_quote": "7 Port USB Hub 3.0",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "4-Port",
+            "reason": "4ポートと7ポート。",
+            "right_quote": "7 Port USB Hub 3.0",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "front 3 ports + 1 side port design",
+            "reason": "接続口の構成が異なる。",
+            "right_quote": "convert one USB port into seven",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "Buffalo BSH4U125U3BK",
+            "reason": "異なるブランドの商品。",
+            "right_quote": "iDsonix 7 Port USB Hub 3.0",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand BUFFALO",
+            "reason": "ブランドが異なる。",
+            "right_quote": "Brand iDsonix",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "front 3 ports + 1 side port design",
+            "reason": "端子配置と接続数という別の選択理由がある。",
+            "right_quote": "convert one USB port into seven",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "ブランドとポート数が異なる。",
+        "right_ref": "p3"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Buffalo BSH4U125U3BK",
+            "reason": "ブランドと商品表示が異なる。",
+            "right_quote": "IKERY USB Hub, 4 Type-A Port",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "front 3 ports + 1 side port design",
+            "reason": "端子配置と本体構成に固有の記述がある。",
+            "right_quote": "7.8 x 4 x 1.2 cm",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "Buffalo BSH4U125U3BK",
+            "reason": "販売単位だけの違いを示す資料ではない。",
+            "right_quote": "IKERY USB Hub, 4 Type-A Port",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "両商品とも4ポートで、対応する寸法情報がそろわない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "front 3 ports + 1 side port design",
+            "reason": "確認できる構造上の特徴が異なる。",
+            "right_quote": "30 cm cable directly attached",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "Buffalo BSH4U125U3BK",
+            "reason": "異なるブランドの商品。",
+            "right_quote": "IKERY USB Hub, 4 Type-A Port",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand BUFFALO",
+            "reason": "ブランドが異なる。",
+            "right_quote": "Brand IKERY",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "front 3 ports + 1 side port design",
+            "reason": "端子配置と小型本体について別々に紹介できる。",
+            "right_quote": "Ultra compact USB hub measuring 7.8 x 4 x 1.2 cm",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "別ブランドの商品で、固有の構成と推薦理由がある。",
+        "right_ref": "p4"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Buffalo BSH4U125U3BK",
+            "reason": "ブランドと型番が異なる。",
+            "right_quote": "Elecom U3H-A408SBK",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "Bus Power",
+            "reason": "給電構成が異なる。",
+            "right_quote": "AC Adapter Included, Self-/ Bus",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "Bus Power",
+            "reason": "付属品の違いにとどまらず、セルフパワーに対応する。",
+            "right_quote": "AC Adapter Included, Self-/ Bus",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "両商品とも4ポートで、本体寸法の比較資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "Bus Power",
+            "reason": "外部電源の利用可否が異なる。",
+            "right_quote": "self-powered bus power and AC adapter",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "Buffalo BSH4U125U3BK",
+            "reason": "異なるブランドの商品。",
+            "right_quote": "Elecom U3H-A408SBK",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand BUFFALO",
+            "reason": "ブランドが異なる。",
+            "right_quote": "Brand エレコム(ELECOM)",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "front 3 ports + 1 side port design",
+            "reason": "端子の扱いやすさと外部電源という別の購入理由がある。",
+            "right_quote": "AC Adapter Included, Self-/ Bus",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "別ブランド・別型番で給電構成も異なる。",
+        "right_ref": "p5"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Buffalo BSH4U125U3BK",
+            "reason": "ブランドと型番が異なる。",
+            "right_quote": "Elecom U2H-TZ427SBK",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "Bus Power",
+            "reason": "給電方式が異なる。",
+            "right_quote": "Self-Powered",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "Bus Power",
+            "reason": "機能の違いがある。",
+            "right_quote": "both self-powered and bus-powered",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "両商品とも4ポートで、本体寸法の比較資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "USB 3.0",
+            "reason": "USB規格と給電構成が異なる。",
+            "right_quote": "USB Hub, 2.0, Self-Powered",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "Buffalo BSH4U125U3BK",
+            "reason": "異なるブランドの商品。",
+            "right_quote": "Elecom U2H-TZ427SBK",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand BUFFALO",
+            "reason": "ブランドが異なる。",
+            "right_quote": "Brand エレコム(ELECOM)",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "front 3 ports + 1 side port design",
+            "reason": "端子配置と外部電源で異なる用途を紹介できる。",
+            "right_quote": "both self-powered and bus-powered",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "別ブランド・別型番で、USB規格と給電構成が異なる。",
+        "right_ref": "p6"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Elecom U3H-S418BBK/EC",
+            "reason": "ブランド、型番表示、ポート数が異なる。",
+            "right_quote": "iDsonix 7 Port USB Hub 3.0",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "4 A Ports",
+            "reason": "接続口の数が異なる。",
+            "right_quote": "7 Port USB Hub 3.0",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "4 A Ports",
+            "reason": "数量違いの販売形態ではなく本体のポート数が異なる。",
+            "right_quote": "7 Port USB Hub 3.0",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "4 A Ports",
+            "reason": "4ポートと7ポート。",
+            "right_quote": "7 Port USB Hub 3.0",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "with Magnet and Switch",
+            "reason": "設置・操作機能と接続口の構成が異なる。",
+            "right_quote": "convert one USB port into seven",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "Elecom U3H-S418BBK/EC",
+            "reason": "異なるブランドの商品。",
+            "right_quote": "iDsonix 7 Port USB Hub 3.0",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand エレコム(ELECOM)",
+            "reason": "ブランドが異なる。",
+            "right_quote": "Brand iDsonix",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "It features an angled design",
+            "reason": "抜き差しのしやすさと接続数で別々に薦められる。",
+            "right_quote": "convert one USB port into seven",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p2",
+        "reason": "別ブランドでポート数と固有機能が異なる。",
+        "right_ref": "p3"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Elecom U3H-S418BBK/EC",
+            "reason": "ブランドと商品表示が異なる。",
+            "right_quote": "IKERY USB Hub, 4 Type-A Port",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "with Magnet and Switch",
+            "reason": "意匠以外の特徴がある。",
+            "right_quote": "Ultra compact USB hub measuring 7.8 x 4 x 1.2 cm",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "with Magnet and Switch",
+            "reason": "販売単位以外の構成が異なる。",
+            "right_quote": "30 cm cable directly attached",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "両商品とも4ポートで、本体寸法の比較資料がそろわない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "Individual switch type",
+            "reason": "個別スイッチの有無を含む構成の違いが示される。",
+            "right_quote": "30 cm cable directly attached",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "Elecom U3H-S418BBK/EC",
+            "reason": "異なるブランドの商品。",
+            "right_quote": "IKERY USB Hub, 4 Type-A Port",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand エレコム(ELECOM)",
+            "reason": "ブランドが異なる。",
+            "right_quote": "Brand IKERY",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "Equipped with a strong magnet",
+            "reason": "設置方法と小型さで別々に紹介できる。",
+            "right_quote": "Ultra compact USB hub measuring 7.8 x 4 x 1.2 cm",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p2",
+        "reason": "別ブランドで、設置・操作と小型さに異なる推薦理由がある。",
+        "right_ref": "p4"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Elecom U3H-S418BBK/EC",
+            "reason": "同ブランドだが基本型番が異なる。",
+            "right_quote": "Elecom U3H-A408SBK",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "Bus-Powered, with Magnet and Switch",
+            "reason": "給電構成と操作・設置機能が異なる。",
+            "right_quote": "AC Adapter Included, Self-/ Bus",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "Bus-Powered, with Magnet and Switch",
+            "reason": "付属品だけでなく本体の給電方式が異なる。",
+            "right_quote": "self-powered bus power and AC adapter",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "両商品とも4ポートで、本体寸法の比較資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "Individual switch type",
+            "reason": "個別スイッチとセルフパワーという機能の違いがある。",
+            "right_quote": "self-powered bus power and AC adapter",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "U3H-S418BBK/EC",
+            "reason": "同ブランドの異なる基本型番。",
+            "right_quote": "U3H-A408SBK",
+            "status": "PASS"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand エレコム(ELECOM)",
+            "reason": "同ブランドだが別型番・別機能。",
+            "right_quote": "Brand エレコム(ELECOM)",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "with Magnet and Switch",
+            "reason": "机上の設置・操作と外部電源で別々に薦められる。",
+            "right_quote": "AC Adapter Included, Self-/ Bus",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p2",
+        "reason": "同ブランドだが別型番で、給電方式と固有機能が異なる。",
+        "right_ref": "p5"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Elecom U3H-S418BBK/EC",
+            "reason": "同ブランドだが基本型番が異なる。",
+            "right_quote": "Elecom U2H-TZ427SBK",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "USB 3.0 Hub",
+            "reason": "USB規格と給電構成が異なる。",
+            "right_quote": "USB Hub, 2.0, Self-Powered",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "Bus-Powered, with Magnet and Switch",
+            "reason": "本体の機能に違いがある。",
+            "right_quote": "both self-powered and bus-powered",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "両商品とも4ポートで、本体寸法の比較資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "Individual switch type",
+            "reason": "個別スイッチと外部電源への対応が異なる。",
+            "right_quote": "both self-powered and bus-powered",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "U3H-S418BBK/EC",
+            "reason": "異なる基本型番とUSB規格。",
+            "right_quote": "U2H-TZ427SBK",
+            "status": "PASS"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand エレコム(ELECOM)",
+            "reason": "同ブランドだが別型番・別機能。",
+            "right_quote": "Brand エレコム(ELECOM)",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "It features an angled design",
+            "reason": "机上の操作と外部電源を使う配置で別々に紹介できる。",
+            "right_quote": "With a length of 39.4 inches (100 cm)",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p2",
+        "reason": "同ブランドでも別型番・別規格で、給電構成が異なる。",
+        "right_ref": "p6"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "iDsonix 7 Port USB Hub 3.0",
+            "reason": "ブランドとポート数が異なる。",
+            "right_quote": "IKERY USB Hub, 4 Type-A Port",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "7 Port USB Hub 3.0",
+            "reason": "ポート数が異なる。",
+            "right_quote": "4 Type-A Port",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "7 Port USB Hub 3.0",
+            "reason": "本体の接続口数が異なる。",
+            "right_quote": "4 Type-A Port",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "7 Port USB Hub 3.0",
+            "reason": "7ポートと4ポート。",
+            "right_quote": "4 Type-A Port",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "convert one USB port into seven",
+            "reason": "拡張できる接続口数が異なる。",
+            "right_quote": "Connect up to 4 ports with one USB-A port",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "iDsonix 7 Port USB Hub 3.0",
+            "reason": "異なるブランドの商品。",
+            "right_quote": "IKERY USB Hub, 4 Type-A Port",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand iDsonix",
+            "reason": "ブランドが異なる。",
+            "right_quote": "Brand IKERY",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "convert one USB port into seven",
+            "reason": "接続数と小型さで異なる購入判断を支える。",
+            "right_quote": "Ultra compact USB hub measuring 7.8 x 4 x 1.2 cm",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p3",
+        "reason": "別ブランドでポート数が異なり、両商品に固有の推薦理由がある。",
+        "right_ref": "p4"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "iDsonix 7 Port USB Hub 3.0",
+            "reason": "ブランドとポート数が異なる。",
+            "right_quote": "Elecom U3H-A408SBK",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "7 Port USB Hub 3.0",
+            "reason": "ポート数が異なる。",
+            "right_quote": "4 Ports",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "7 Port USB Hub 3.0",
+            "reason": "接続口数と給電構成が異なる。",
+            "right_quote": "self-powered bus power and AC adapter",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "7 Port USB Hub 3.0",
+            "reason": "7ポートと4ポート。",
+            "right_quote": "4 Ports",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "convert one USB port into seven",
+            "reason": "接続口数と外部電源への対応が異なる。",
+            "right_quote": "self-powered bus power and AC adapter",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "iDsonix 7 Port USB Hub 3.0",
+            "reason": "異なるブランドの商品。",
+            "right_quote": "Elecom U3H-A408SBK",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand iDsonix",
+            "reason": "ブランドが異なる。",
+            "right_quote": "Brand エレコム(ELECOM)",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "convert one USB port into seven",
+            "reason": "接続数と外部電源で別々に薦められる。",
+            "right_quote": "AC Adapter Included, Self-/ Bus",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p3",
+        "reason": "別ブランドでポート数と給電構成が異なる。",
+        "right_ref": "p5"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "iDsonix 7 Port USB Hub 3.0",
+            "reason": "ブランド、ポート数、USB規格が異なる。",
+            "right_quote": "Elecom U2H-TZ427SBK",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "7 Port USB Hub 3.0",
+            "reason": "ポート数とUSB規格が異なる。",
+            "right_quote": "USB Hub, 2.0, Self-Powered, 4 Ports",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "7 Port USB Hub 3.0",
+            "reason": "本体の接続口数と給電構成が異なる。",
+            "right_quote": "Self-Powered, 4 Ports",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "7 Port USB Hub 3.0",
+            "reason": "7ポートと4ポート。",
+            "right_quote": "4 Ports",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "USB 3.0",
+            "reason": "USB規格と給電構成が異なる。",
+            "right_quote": "USB Hub, 2.0, Self-Powered",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "iDsonix 7 Port USB Hub 3.0",
+            "reason": "異なるブランドの商品。",
+            "right_quote": "Elecom U2H-TZ427SBK",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand iDsonix",
+            "reason": "ブランドが異なる。",
+            "right_quote": "Brand エレコム(ELECOM)",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "convert one USB port into seven",
+            "reason": "接続数と外部電源で別々に薦められる。",
+            "right_quote": "both self-powered and bus-powered",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p3",
+        "reason": "別ブランドで、ポート数・USB規格・給電構成が異なる。",
+        "right_ref": "p6"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "IKERY USB Hub, 4 Type-A Port",
+            "reason": "ブランドと商品表示が異なる。",
+            "right_quote": "Elecom U3H-A408SBK",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "Bus-powered",
+            "reason": "給電構成が異なる。",
+            "right_quote": "AC Adapter Included, Self-/ Bus",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "Bus-powered",
+            "reason": "付属品だけでなくセルフパワーへの対応が異なる。",
+            "right_quote": "self-powered bus power and AC adapter",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "両商品とも4ポートで、本体寸法の比較資料がそろわない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "Bus-powered",
+            "reason": "外部電源への対応が異なる。",
+            "right_quote": "self-powered bus power and AC adapter",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "IKERY USB Hub, 4 Type-A Port",
+            "reason": "異なるブランドの商品。",
+            "right_quote": "Elecom U3H-A408SBK",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand IKERY",
+            "reason": "ブランドが異なる。",
+            "right_quote": "Brand エレコム(ELECOM)",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "Ultra compact USB hub measuring 7.8 x 4 x 1.2 cm",
+            "reason": "小型さと外部電源で別々に薦められる。",
+            "right_quote": "AC Adapter Included, Self-/ Bus",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p4",
+        "reason": "別ブランドで給電構成と推薦理由が異なる。",
+        "right_ref": "p5"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "IKERY USB Hub, 4 Type-A Port",
+            "reason": "ブランドと商品表示が異なる。",
+            "right_quote": "Elecom U2H-TZ427SBK",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "USB 3.0",
+            "reason": "USB規格と給電構成が異なる。",
+            "right_quote": "USB Hub, 2.0, Self-Powered",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "Bus-powered",
+            "reason": "本体の給電方式が異なる。",
+            "right_quote": "both self-powered and bus-powered",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "両商品とも4ポートで、本体寸法の比較資料がそろわない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "Bus-powered",
+            "reason": "外部電源への対応が異なる。",
+            "right_quote": "both self-powered and bus-powered",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "IKERY USB Hub, 4 Type-A Port",
+            "reason": "異なるブランドの商品。",
+            "right_quote": "Elecom U2H-TZ427SBK",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand IKERY",
+            "reason": "ブランドが異なる。",
+            "right_quote": "Brand エレコム(ELECOM)",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "Ultra compact USB hub measuring 7.8 x 4 x 1.2 cm",
+            "reason": "小型本体と机上に引き出す配置で別々に紹介できる。",
+            "right_quote": "With a length of 39.4 inches (100 cm)",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p4",
+        "reason": "別ブランドでUSB規格と給電構成が異なる。",
+        "right_ref": "p6"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Elecom U3H-A408SBK",
+            "reason": "同ブランドだが基本型番が異なる。",
+            "right_quote": "Elecom U2H-TZ427SBK",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "USB 3.0 Hub",
+            "reason": "USB規格が異なる。",
+            "right_quote": "USB Hub, 2.0, Self-Powered",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "U3H-A408SBK USB 3.0 Hub",
+            "reason": "包装や数量だけでなく本体の型番と規格が異なる。",
+            "right_quote": "U2H-TZ427SBK USB Hub, 2.0",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "両商品とも4ポートで、本体寸法の比較資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "USB 3.0 Hub",
+            "reason": "対応するUSB規格が異なる。",
+            "right_quote": "USB Hub, 2.0",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "U3H-A408SBK",
+            "reason": "同ブランドの異なる基本型番。",
+            "right_quote": "U2H-TZ427SBK",
+            "status": "PASS"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand エレコム(ELECOM)",
+            "reason": "同ブランドだが別型番・別規格。",
+            "right_quote": "Brand エレコム(ELECOM)",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "USB 3.0 Hub",
+            "reason": "データ接続に用いる規格を踏まえ、各商品を別々に薦められる。",
+            "right_quote": "USB Hub, 2.0, Self-Powered",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p5",
+        "reason": "同ブランドの別型番で、USB 3.0とUSB 2.0という実質的な違いがある。",
+        "right_ref": "p6"
+      }
+    ],
+    "editorial_voice_appropriate": true,
+    "internal_qa_leak_absent": true,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "desk_access",
+            "quote": "Easy-to-use front 3 ports + 1 side port design"
+          }
+        ],
+        "identity_key": "Buffalo BSH4U125U3BK",
+        "identity_quote": "Buffalo BSH4U125U3BK USB Hub, 4-Port, Bus Power",
+        "reason": "4ポートのUSB-Aデータハブ。前面3口・側面1口という端子配置が、机上で抜き差しする用途に結び付く。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "desk_access",
+            "quote": "It features an angled design that makes connectors easy to insert and remove"
+          }
+        ],
+        "identity_key": "Elecom U3H-S418BBK/EC",
+        "identity_quote": "Elecom U3H-S418BBK/EC USB 3.0 Hub",
+        "reason": "4ポートのUSB-Aデータハブ。角度のある端子配置、マグネット、個別スイッチという具体的な机上利用の理由がある。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "many_devices",
+            "quote": "you can easily convert one USB port into seven"
+          }
+        ],
+        "identity_key": "iDsonix 7 Port USB Hub 3.0",
+        "identity_quote": "iDsonix 7 Port USB Hub 3.0 [1m Cable]",
+        "reason": "7ポートのUSBデータハブ。複数の周辺機器をまとめて接続したい用途に対し、ポート数が具体的な推薦理由になる。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "many_devices",
+            "quote": "Supports simultaneous operation of all 4 ports."
+          }
+        ],
+        "identity_key": "IKERY USB Hub, 4 Type-A Port",
+        "identity_quote": "IKERY USB Hub, 4 Type-A Port, 4 in 1, USB 3.0",
+        "reason": "4ポートのUSB-Aデータハブ。4口同時使用と小型本体が、接続数を増やしつつ机上をコンパクトに使う推薦理由になる。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "powered_hub",
+            "quote": "AC Adapter Included, Self-/ Bus"
+          }
+        ],
+        "identity_key": "Elecom U3H-A408SBK",
+        "identity_quote": "Elecom U3H-A408SBK USB 3.0 Hub",
+        "reason": "ACアダプター付属の4ポートUSB 3.0ハブ。外部電源を使う構成とバスパワーの両方を選べる点が、この切り口に合う。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "powered_hub",
+            "quote": "This type is compatible with both self-powered and bus-powered AC adapter"
+          }
+        ],
+        "identity_key": "Elecom U2H-TZ427SBK",
+        "identity_quote": "Elecom U2H-TZ427SBK USB Hub, 2.0, Self-Powered",
+        "reason": "セルフパワーとバスパワーに対応する4ポートUSB 2.0ハブ。約1mのケーブルを含め、デスクトップPCから机上へ置く用途の推薦理由がある。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reader_decision_outsourcing_absent": true,
+    "reason": "6商品はいずれもデスクトップPC向けのUSB-Aデータハブとして紹介できる。出典中のブランド・型番または商品構成で識別でき、明白な重複はない。各商品に既存の紹介切り口を支える固有の事実があり、記事内でも用途に応じた推薦につながっている。",
+    "recommendation_conclusion": true,
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}
