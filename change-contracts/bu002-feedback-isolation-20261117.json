@@ -1,0 +1,29 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "TASK-BU002-RESIDUAL-PUBLISH-RECOVERY-20260924-001",
+  "instruction_ref": "CEO chat instruction 2026-11-17: Sellemy stop cause and explicit change request",
+  "instruction": "Separate transient post-publication control failures from CEO quality stop. Preserve published state on feedback bridge failure and correct pause reason without changing quality or CEO approval gates.",
+  "implementer": "sellemy-ops",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3",
+    "https://app.notion.com/p/3e967ec6a10081208a40f0fee3583043"
+  ],
+  "allowed_paths": [
+    "change-contracts/bu002-feedback-isolation-20261117.json",
+    "pipeline/adaptive_publish.py",
+    "pipeline/growth_runtime.py",
+    "tests/test_adaptive_publish.py",
+    "tests/test_role_artifact_io_run.py"
+  ],
+  "preserved_rules": [
+    "CEO minimum-frequency repeated-red quality pause remains in force",
+    "No new publication or approval bypass",
+    "Task/Event write must be verified before recovery is marked complete",
+    "Published commit identity remains durable; no re-publish on feedback failure",
+    "Existing Runtime and per-day target settings remain unchanged"
+  ],
+  "acceptance_tests": [
+    "tests/test_adaptive_publish.py",
+    "tests/test_role_artifact_io_run.py"
+  ]
+}

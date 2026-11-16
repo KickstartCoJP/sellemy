@@ -319,10 +319,10 @@ class AdaptivePublishController:
             raise AdaptivePublishError('target seed per day is outside configured bounds')
         green_streak = 0
         minimum_red_streak = 0
+        technical_faults = {'post_publish_evaluation_failed', 'feedback_task_bridge_failed'}
         for row in records[seed_count:]:
-            # An audited control recovery clears only the control fault. It is
-            # not an extra newly reviewed/published article for target tuning.
-            if row.get('evaluation_basis') == 'quality_control_recovery':
+            # Technical failures and their verified recovery are not CEO quality votes.
+            if row.get('evaluation_basis') == 'quality_control_recovery' or technical_faults.intersection(row.get('issues') or []):
                 continue
             if row.get('overall') == 'green' and row.get('evaluation_basis') != 'ceo_review_arrival':
                 continue
@@ -340,7 +340,7 @@ class AdaptivePublishController:
             else:
                 raise AdaptivePublishError(f'unsupported feedback grade: {grade!r}')
         ceo_alert = minimum_red_streak >= int(self.config['minimum_red_streak_to_alert'])
-        quality_control_faults = {'post_publish_evaluation_failed', 'feedback_task_bridge_failed'}
+        quality_control_faults = technical_faults
         latest_issues = (records[-1].get('issues') or []) if records else []
         quality_control_fault = next((
             issue for issue in latest_issues if issue in quality_control_faults
@@ -354,7 +354,7 @@ class AdaptivePublishController:
             'minimum_red_streak': minimum_red_streak,
             'ceo_alert_required': ceo_alert,
             'quality_control_fault': quality_control_fault,
-            'publish_paused': bool(ceo_alert or quality_control_fault),
+            'publish_paused': bool(ceo_alert),
             'feedback_count': len(records),
             'latest_feedback_event_id': records[-1]['event_id'] if records else None,
             'recent_feedback_event_ids': [row['event_id'] for row in recent],
@@ -482,7 +482,7 @@ class AdaptivePublishController:
         with self._lock():
             state = self.current_state()
             if state['publish_paused']:
-                return {'allowed': False, 'reason': 'ceo_alert_pause', 'slot': None, 'state': state}
+                return {'allowed': False, 'reason': ('ceo_alert_pause' if state.get('ceo_alert_required') else 'controller_pause'), 'slot': None, 'state': state}
 
             published_today = len(self._published_commits_for_local_date(local.date(), zone))
             if published_today >= int(state['target_per_day']):
