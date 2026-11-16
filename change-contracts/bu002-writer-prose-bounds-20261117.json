@@ -1,0 +1,26 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "TASK-BU002-FAILED-TEN-CEO-84B375A717A83296F12B",
+  "instruction_ref": "CEO restore Sellemy normal production 2026-11-17",
+  "instruction": "Ensure existing Writer mechanical lower bounds are always present in every full-draft instruction, including claim-only rewrites that previously reintroduced under-length summary/how_to_choose; preserve all original QA gates, source policy, and CEO approval gate without filler or fabricated facts.",
+  "implementer": "sellemy-ops",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3",
+    "https://app.notion.com/p/3e967ec6a10081208a40f0fee3583043"
+  ],
+  "allowed_paths": [
+    "pipeline/writer_runtime.py",
+    "tests/test_bu002_writer_prose_bounds_20261117.py",
+    "change-contracts/bu002-writer-prose-bounds-20261117.json"
+  ],
+  "preserved_rules": [
+    "No lowered existing QA length minima",
+    "No unsupported specification or performance assertions",
+    "No automatic product reselection from Article QA",
+    "No modifications to published content, existing article evidence, job state or CEO Gate",
+    "No new daily caps, queues, schemas or standalone production code"
+  ],
+  "acceptance_tests": [
+    "tests/test_bu002_writer_prose_bounds_20261117.py"
+  ]
+}
