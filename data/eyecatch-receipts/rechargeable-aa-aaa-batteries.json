@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-11-16T06:59:44.628065+00:00",
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "generation_route_attestation": "codex_rollout_extension",
+  "height": 1024,
+  "image_generation_internal_usage_exposed": false,
+  "image_sha256": "ca6e3d21eb3594bd47ac60b04fce6984797ac4dd626fb6bd780a0323342e6d91",
+  "member_binding_revision": 11,
+  "model": "gpt-6-sol",
+  "model_reported_generation_route": "built-in_image_gen",
+  "role_id": "bu-codex-sellemy-designer",
+  "routing": {
+    "api_share": 0,
+    "codex_reserve_percent": 20.0,
+    "codex_share": 100,
+    "codex_usage": {
+      "remaining_percent": 24.0,
+      "resets_at": 1794984313,
+      "source": "/Users/kickstart/.codex/sessions/2026/11/16/rollout-2026-11-16T15-42-23-01a1e317-b1be-75d2-abd7-9ed24870242e.jsonl",
+      "used_percent": 76.0,
+      "window_minutes": 10080
+    },
+    "errors_before_success": [],
+    "executed_route": "codex",
+    "fallback_from": null,
+    "mode": "weighted_random",
+    "reason": "weighted_random",
+    "remaining_percent": 24.0,
+    "roll": 1,
+    "selected_route": "codex",
+    "total_weight": 100
+  },
+  "routing_recorded_at": "2026-11-16T06:59:44.629070+00:00",
+  "summary": "家庭の作業机で単3・単4充電池を使う準備場面。PNG形式と1536x1024の寸法を確認済み。",
+  "thread_id": "01a1e303-14f2-7230-8449-03245c3d7f64",
+  "token_usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 121216,
+    "input_tokens": 125857,
+    "output_tokens": 626,
+    "reasoning_output_tokens": 0,
+    "total_tokens": 126483,
+    "uncached_input_tokens": 4641
+  },
+  "token_usage_source": "codex_rollout.turn_token_usage",
+  "visual_family": "editorial home work corner",
+  "width": 1536
+}

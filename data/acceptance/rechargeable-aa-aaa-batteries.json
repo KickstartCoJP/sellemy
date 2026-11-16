@@ -1,0 +1,1082 @@
+{
+  "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+  "evidence_sha256": "7c4fcfc0ad1ee2bae2bb83b4d69d29d5f85f88f5ee4593317810b9250fd58de4",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 14848,
+    "input_tokens": 33926,
+    "member_binding_revision": 4,
+    "output_tokens": 7696,
+    "reasoning_effort": "medium",
+    "reasoning_output_tokens": 1034,
+    "session_id": "01a1dfc6-6a93-71d3-b975-338d93c9ef3f",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "dd17a886b7f655d060b26d42634348ab6edb244c1c48f37d7569f9b4455bb975",
+  "review": {
+    "buying_guidance": false,
+    "claims_grounded": false,
+    "complete_comparison": true,
+    "distinct_products": true,
+    "duplicate_pair_checks": [
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "本体の同一性を直接示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "",
+            "reason": "色・意匠違いを示す資料はない。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "包装違いだけという資料はない。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "容量2800mAh",
+            "reason": "掲載容量が異なる。",
+            "right_quote": "2,000 mAh",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "",
+            "reason": "内部構造の差は未確認。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代関係は未確認。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "ブランド WENJOOP",
+            "reason": "掲載ブランドが異なる。",
+            "right_quote": "Brand Amazon Basics",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "【2800mAh高容量】",
+            "reason": "容量と充電済みという、それぞれの紹介根拠がある。",
+            "right_quote": "arrives pre-charged and ready to use",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "異なるブランドと掲載容量が示され、同一商品との積極的証拠はない。",
+        "right_ref": "p2"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "単3形充電池",
+            "reason": "単3形と単4形で本体サイズが異なる。",
+            "right_quote": "AAA rechargeable high-capacity batteries",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "",
+            "reason": "サイズが異なり、意匠のみの違いではない。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "包装のみの違いではない。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "単3形充電池",
+            "reason": "電池サイズが異なる。",
+            "right_quote": "AAA rechargeable high-capacity batteries",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "",
+            "reason": "内部構造の差は未確認。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代関係は未確認。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "ブランド WENJOOP",
+            "reason": "掲載ブランドが異なる。",
+            "right_quote": "Brand Amazon Basics",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "単3形充電池",
+            "reason": "購入時に必要なサイズの選択が異なる。",
+            "right_quote": "AAA rechargeable high-capacity batteries",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "単3形単独と単4形単独で、購入対象が異なる。",
+        "right_ref": "p3"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "セット内の単3形電池の同一性は未確認。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "",
+            "reason": "意匠のみの違いを示す資料はない。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "単3形の仕様は似るが、単なる詰め合わせ違いかは未確認。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "単3形充電池 4本",
+            "reason": "単3形のみと単3形・単4形の混合セット。",
+            "right_quote": "AAA/AA Rechargeable NiMH Batteries 16 Pack",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "",
+            "reason": "電池本体の構造差は未確認。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代関係は未確認。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "ブランド WENJOOP",
+            "reason": "掲載ブランドが異なる。",
+            "right_quote": "Brand POWEROWL",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "単3形充電池 4本",
+            "reason": "単一サイズを揃えるか両サイズを揃えるかという購入判断が異なる。",
+            "right_quote": "AAA/AA Rechargeable NiMH Batteries 16 Pack",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "異なるブランドの単3形単独商品と両サイズのセットであり、同一本体との証拠はない。",
+        "right_ref": "p4"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "ニッケル水素電池",
+            "reason": "掲載された電池の種類が異なる。",
+            "right_quote": "Lithium Ion",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "",
+            "reason": "電池の種類とセット構成が異なる。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "包装のみの違いではない。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "単3形充電池 4本",
+            "reason": "単3形のみと単3形・単4形のセット。",
+            "right_quote": "4 x AAA Rechargeable Batteries",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "ニッケル水素電池に対応した充電器",
+            "reason": "充電方法が異なる。",
+            "right_quote": "4-in-1 USB-C Charging Cable Included",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代関係は未確認。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "ブランド WENJOOP",
+            "reason": "掲載ブランドが異なる。",
+            "right_quote": "Brand ENEGON",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "ニッケル水素電池に対応した充電器",
+            "reason": "必要な充電手段が異なる。",
+            "right_quote": "4-in-1 USB-C Charging Cable Included",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "電池の種類、充電方法、セット構成が異なる。",
+        "right_ref": "p5"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "ニッケル水素電池",
+            "reason": "掲載された電池の種類が異なる。",
+            "right_quote": "Battery Cell Composition Lithium Ion",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "",
+            "reason": "電池の種類と構成が異なる。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "包装のみの違いではない。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "単3形充電池 4本",
+            "reason": "単3形のみと両サイズのセット。",
+            "right_quote": "4 AA (4070 mWh) + 4 AAA (1100 mWh)",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "ニッケル水素電池に対応した充電器",
+            "reason": "充電方法が異なる。",
+            "right_quote": "4-in-1 USB-C Charging Cable",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代関係は未確認。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "ブランド WENJOOP",
+            "reason": "掲載ブランドが異なる。",
+            "right_quote": "Brand: AKTTKA",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "単3形充電池 4本",
+            "reason": "必要なサイズと充電方法による選択が成立する。",
+            "right_quote": "4 AA (4070 mWh) + 4 AAA (1100 mWh)",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "電池の種類、充電方法、セット構成が異なる。",
+        "right_ref": "p6"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "4 AA NiMH Batteries",
+            "reason": "単3形と単4形で本体サイズが異なる。",
+            "right_quote": "8 AAA NiMH",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "",
+            "reason": "サイズ違いであり、意匠のみの違いではない。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "本数に加えて電池サイズが異なる。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "4 AA NiMH Batteries",
+            "reason": "電池サイズが異なる。",
+            "right_quote": "8 AAA NiMH",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "",
+            "reason": "内部構造の差は未確認。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "同ブランド内の系列・世代関係は未確認。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand Amazon Basics",
+            "reason": "同ブランドだがサイズが異なる。",
+            "right_quote": "Brand Amazon Basics",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "4 AA NiMH Batteries",
+            "reason": "使う機器の電池サイズによって独立した購入判断がある。",
+            "right_quote": "8 AAA NiMH",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p2",
+        "reason": "同ブランドでも単3形と単4形は別の商品として選ぶ必要がある。",
+        "right_ref": "p3"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "セット内の単3形電池の同一性は未確認。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "",
+            "reason": "意匠のみの違いを示す資料はない。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "単なる包装・本数違いとの証拠はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "4 AA NiMH Batteries",
+            "reason": "単3形のみと両サイズのセット。",
+            "right_quote": "AAA/AA Rechargeable NiMH Batteries 16 Pack",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "",
+            "reason": "電池本体の構造差は未確認。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代関係は未確認。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand Amazon Basics",
+            "reason": "掲載ブランドが異なる。",
+            "right_quote": "Brand POWEROWL",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "4 AA NiMH Batteries",
+            "reason": "単3形だけを買うか両サイズを揃えるかで選択が異なる。",
+            "right_quote": "AAA/AA Rechargeable NiMH Batteries 16 Pack",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p2",
+        "reason": "異なるブランドの単3形単独商品と両サイズのセットであり、同一商品との証拠はない。",
+        "right_ref": "p4"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "NiMH",
+            "reason": "掲載された電池の種類が異なる。",
+            "right_quote": "Lithium Ion",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "",
+            "reason": "電池の種類が異なる。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "包装のみの違いではない。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "4 AA NiMH Batteries",
+            "reason": "単3形のみと両サイズのセット。",
+            "right_quote": "4 x AAA Rechargeable Batteries",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "NiMH batteries",
+            "reason": "電池の種類と充電方法が異なる。",
+            "right_quote": "4-in-1 USB-C Charging Cable Included",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代関係は未確認。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand Amazon Basics",
+            "reason": "掲載ブランドが異なる。",
+            "right_quote": "Brand ENEGON",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "4 AA NiMH Batteries",
+            "reason": "電池サイズの構成と充電手段で選択が異なる。",
+            "right_quote": "4-in-1 USB-C Charging Cable Included",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p2",
+        "reason": "電池の種類、充電方法、セット構成が異なる。",
+        "right_ref": "p5"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "NiMH",
+            "reason": "掲載された電池の種類が異なる。",
+            "right_quote": "Lithium Ion",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "",
+            "reason": "電池の種類が異なる。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "包装のみの違いではない。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "4 AA NiMH Batteries",
+            "reason": "単3形のみと両サイズのセット。",
+            "right_quote": "4 AA (4070 mWh) + 4 AAA (1100 mWh)",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "NiMH batteries",
+            "reason": "電池の種類と充電方法が異なる。",
+            "right_quote": "4-in-1 USB-C Charging Cable",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代関係は未確認。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand Amazon Basics",
+            "reason": "掲載ブランドが異なる。",
+            "right_quote": "Brand: AKTTKA",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "4 AA NiMH Batteries",
+            "reason": "電池サイズの構成と充電手段で選択が異なる。",
+            "right_quote": "4-in-1 USB-C Charging Cable",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p2",
+        "reason": "電池の種類、充電方法、セット構成が異なる。",
+        "right_ref": "p6"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "セット内の単4形電池の同一性は未確認。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "",
+            "reason": "意匠のみの違いを示す資料はない。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "単4形電池が包装違いにすぎないとの証拠はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "8 AAA NiMH",
+            "reason": "単4形のみと両サイズのセット。",
+            "right_quote": "AAA/AA Rechargeable NiMH Batteries 16 Pack",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "",
+            "reason": "電池本体の構造差は未確認。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代関係は未確認。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand Amazon Basics",
+            "reason": "掲載ブランドが異なる。",
+            "right_quote": "Brand POWEROWL",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "8 AAA NiMH",
+            "reason": "単4形だけを揃えるか両サイズを揃えるかで選択が異なる。",
+            "right_quote": "AAA/AA Rechargeable NiMH Batteries 16 Pack",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p3",
+        "reason": "異なるブランドの単4形単独商品と両サイズのセットであり、同一商品との証拠はない。",
+        "right_ref": "p4"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "NiMH",
+            "reason": "掲載された電池の種類が異なる。",
+            "right_quote": "Lithium Ion",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "",
+            "reason": "電池の種類が異なる。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "包装のみの違いではない。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "8 AAA NiMH",
+            "reason": "単4形のみと両サイズのセット。",
+            "right_quote": "4 x AAA Rechargeable Batteries",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "NiMH",
+            "reason": "電池の種類と充電方法が異なる。",
+            "right_quote": "4-in-1 USB-C Charging Cable Included",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代関係は未確認。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand Amazon Basics",
+            "reason": "掲載ブランドが異なる。",
+            "right_quote": "Brand ENEGON",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "8 AAA NiMH",
+            "reason": "サイズ構成と充電手段で選択が異なる。",
+            "right_quote": "4-in-1 USB-C Charging Cable Included",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p3",
+        "reason": "電池の種類、充電方法、セット構成が異なる。",
+        "right_ref": "p5"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "NiMH",
+            "reason": "掲載された電池の種類が異なる。",
+            "right_quote": "Lithium Ion",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "",
+            "reason": "電池の種類が異なる。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "包装のみの違いではない。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "8 AAA NiMH",
+            "reason": "単4形のみと両サイズのセット。",
+            "right_quote": "4 AA (4070 mWh) + 4 AAA (1100 mWh)",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "NiMH",
+            "reason": "電池の種類と充電方法が異なる。",
+            "right_quote": "4-in-1 USB-C Charging Cable",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代関係は未確認。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand Amazon Basics",
+            "reason": "掲載ブランドが異なる。",
+            "right_quote": "Brand: AKTTKA",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "8 AAA NiMH",
+            "reason": "サイズ構成と充電手段で選択が異なる。",
+            "right_quote": "4-in-1 USB-C Charging Cable",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p3",
+        "reason": "電池の種類、充電方法、セット構成が異なる。",
+        "right_ref": "p6"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Battery Cell Composition NiMH",
+            "reason": "掲載された電池の種類が異なる。",
+            "right_quote": "Battery Cell Composition Lithium Ion",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "",
+            "reason": "電池の種類が異なる。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "包装のみの違いではない。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "16 Pack",
+            "reason": "掲載セットの構成が異なる。",
+            "right_quote": "4 x AAA Rechargeable Batteries",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "Battery Cell Composition NiMH",
+            "reason": "電池の種類と充電方法が異なる。",
+            "right_quote": "4-in-1 USB-C Charging Cable Included",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代関係は未確認。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand POWEROWL",
+            "reason": "掲載ブランドが異なる。",
+            "right_quote": "Brand ENEGON",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "AAA/AA Rechargeable NiMH Batteries 16 Pack",
+            "reason": "電池の種類と充電方法で選択が異なる。",
+            "right_quote": "4-in-1 USB-C Charging Cable Included",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p4",
+        "reason": "電池の種類と充電方法が異なる。",
+        "right_ref": "p5"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Battery Cell Composition NiMH",
+            "reason": "掲載された電池の種類が異なる。",
+            "right_quote": "Battery Cell Composition Lithium Ion",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "",
+            "reason": "電池の種類が異なる。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "包装のみの違いではない。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "16 Pack",
+            "reason": "掲載セットの構成が異なる。",
+            "right_quote": "4 AA (4070 mWh) + 4 AAA (1100 mWh)",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "Battery Cell Composition NiMH",
+            "reason": "電池の種類と充電方法が異なる。",
+            "right_quote": "4-in-1 USB-C Charging Cable",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代関係は未確認。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand POWEROWL",
+            "reason": "掲載ブランドが異なる。",
+            "right_quote": "Brand: AKTTKA",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "AAA/AA Rechargeable NiMH Batteries 16 Pack",
+            "reason": "電池の種類と充電方法で選択が異なる。",
+            "right_quote": "4-in-1 USB-C Charging Cable",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p4",
+        "reason": "電池の種類と充電方法が異なる。",
+        "right_ref": "p6"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "ほぼ同じ構成だが、電池本体が同一であることを示す型番や製造元の情報はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "",
+            "reason": "意匠だけの違いかは未確認。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "同一電池の包装・販売名違いかは未確認。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "AA 4070 mWh / AAA 1100 mWh",
+            "reason": "掲載容量は同じで、容量から独立性は証明できない。",
+            "right_quote": "AA 4070 mWh / AAA 1100 mWh",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "4-in-1 USB-C Charging Cable Included",
+            "reason": "充電構成は似ており、構造の差は未確認。",
+            "right_quote": "4-in-1 USB-C Charging Cable",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代関係は未確認。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand ENEGON",
+            "reason": "掲載ブランドは異なるが、製造元や再販関係は未確認。",
+            "right_quote": "Brand: AKTTKA",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "Not compatible with high power devices",
+            "reason": "p5は使用制限、p6は同時充電数について、個別の紹介根拠がある。ただしこの差だけで別製造品とは証明しない。",
+            "right_quote": "Can charge up to 4 batteries simultaneously",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p5",
+        "reason": "構成が非常に近いため同一性は未解決。ただし同一電池・単なるブランド違いを示す積極的証拠はなく、重複とは断定しない。",
+        "right_ref": "p6"
+      }
+    ],
+    "editorial_voice_appropriate": false,
+    "internal_qa_leak_absent": false,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "aa_daily",
+            "quote": "リモコン、時計、ワイヤレスマウス、子ども用おもちゃなど、大切な機器にも使いやすい単3形充電池です。"
+          }
+        ],
+        "identity_key": "WENJOOP",
+        "identity_quote": "ブランド WENJOOP",
+        "reason": "単3形のニッケル水素充電池。ブランドに加え、出典には単3形・2800mAh・4本組という識別材料がある。単3形を使う身近な機器向けに紹介できる。基本型番は未確認。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "aa_daily",
+            "quote": "DEVICE COMPATIBLE: Ideal for remote controls, flashlights, clocks, and more"
+          }
+        ],
+        "identity_key": "Amazon Basics Rechargeable Batteries",
+        "identity_quote": "Amazon Basics Rechargeable Batteries, 4 AA NiMH Batteries, High Capacity Battery, 2,000 mAh",
+        "reason": "Amazon Basicsの単3形ニッケル水素充電池として識別できる。4本組、2000mAh、充電済みという掲載情報があり、単3形を使う家庭内の機器向けに紹介できる。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "aaa_small",
+            "quote": "IN THE BOX: 8-pack AAA rechargeable high-capacity batteries; 850 mAh"
+          }
+        ],
+        "identity_key": "Amazon Basic Rechargeable Battery 8 AAA NiMH",
+        "identity_quote": "Amazon Basic Rechargeable Battery 8 AAA NiMH 850mAh 1.2V Up to 500 Cycles Pre-Charged",
+        "reason": "Amazon Basicsの単4形ニッケル水素充電池として、同ブランドの単3形商品と区別できる。8本組で充電済みという掲載情報があり、単4形を揃えたい用途に合う。容量の掲載値には850mAhと800mAhの不一致があり、その数値は未確認として扱う。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "aaa_small",
+            "quote": "Pack of 16 AA/AAA rechargeable NiMH batteries"
+          }
+        ],
+        "identity_key": "POWEROWL AAA/AA Rechargeable NiMH Batteries",
+        "identity_quote": "POWEROWL AAA/AA Rechargeable NiMH Batteries 16 Pack",
+        "reason": "POWEROWLの単3形・単4形混合ニッケル水素充電池セット。両サイズを一緒に揃えたい家庭に固有の推薦理由がある。個々の電池の基本型番は未確認。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "usb_charge",
+            "quote": "The included Type-C cable supports standard charging at 5V/350mA"
+          }
+        ],
+        "identity_key": "ENEGON 4 x AA",
+        "identity_quote": "ENEGON 4 x AA 1100mWh Batteries + 4 x AAA Rechargeable Batteries (1.5V Lithium Battery), 4-in-1 USB-C Charging Cable Included",
+        "reason": "ENEGONの単3形・単4形リチウム系充電池セット。付属ケーブルによる充電と、掲載された高出力機器への使用制限が紹介根拠になる。出典内で単3形の容量表記が食い違うため、容量の具体値は未確認として扱う。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "usb_charge",
+            "quote": "Can charge up to 4 batteries simultaneously, no need for a dedicated charger."
+          }
+        ],
+        "identity_key": "AKTTKA AA 4070 mWh / AAA 1100 mWh",
+        "identity_quote": "AKTTKA AA 4070 mWh / AAA 1100 mWh",
+        "reason": "AKTTKAの単3形・単4形リチウム系充電池セット。付属のUSB-Cケーブルで最大4本を同時に充電できるという掲載情報があり、充電方法の切り口で個別に紹介できる。容量説明には単3形と単4形の取り違えがあるため、その詳細値は未確認として扱う。p5との同一本体性も未確認。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reader_decision_outsourcing_absent": false,
+    "reason": "6商品はいずれも単3形・単4形の充電池またはそのセットで、既存の3つの紹介切り口に各2商品を割り当てられる。p5とp6は構成がよく似るが、出典上のブランドは異なり、同一本体や単なる販売名違いと断定できる積極的証拠はない。型番の欠落だけを重複の証拠にはしない。各商品には、形状・電池の種類・セット構成・充電方法など、個別に紹介する根拠がある。記事の文章品質と個々の主張の審査は、このProduct QAの判定対象外。",
+    "recommendation_conclusion": false,
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}
