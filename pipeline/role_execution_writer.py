@@ -19,14 +19,14 @@ def reset_review_artifacts(slug: str) -> dict:
 
 
 def writer(slug: str) -> dict:
-    from comparison_acceptance import product_issues
+    from comparison_acceptance import product_issues, verified_excerpt_issues
     from editorial_plan import build_editorial_plan
     from writer_runtime import invoke_writer, WriterInvocationError
     from responses_provider import ResponsesError
 
     topic = read_artifact(slug, 'topic.json')
     evidence = read_artifact(slug, 'evidence.json')
-    issues = product_issues(evidence)
+    issues = product_issues(evidence) + verified_excerpt_issues(evidence)
     if issues:
         request_product_reselection(slug, issues)
         raise GrowthRuntimeError(f'needs_product_reselection for {slug}')

@@ -14,7 +14,7 @@ sys.path.insert(0, str(ROOT / 'pipeline'))
 
 def _inspect(slug: str, *, cache_only: bool) -> dict:
     from growth_role_business import GrowthRuntimeError, _reselect_products
-    from comparison_acceptance import VERSION, product_issues, receipt_issues
+    from comparison_acceptance import VERSION, product_issues, receipt_issues, verified_excerpt_issues
     from growth_recovery import (load_job, read_artifact, write_artifact, set_stage,
                                  request_product_reselection)
     state = load_job(slug)
@@ -62,7 +62,8 @@ def _inspect(slug: str, *, cache_only: bool) -> dict:
             current = load_job(slug)
             if current.get('current_stage') == 'PRODUCT_HOLD':
                 raise GrowthRuntimeError(f'planning_restart_required for {slug}')
-        if evidence.get('product_acceptance') and not product_issues(evidence):
+        if (evidence.get('product_acceptance') and not product_issues(evidence)
+                and not verified_excerpt_issues(evidence)):
             write_artifact(slug, 'product-blocker.json', {})
             progress = read_artifact(slug, 'product-search-progress.json', {}) or {}
             progress['complete'] = True
@@ -71,6 +72,10 @@ def _inspect(slug: str, *, cache_only: bool) -> dict:
         return {**details, 'action': 'product'}
     stage = state.get('current_stage')
     if stage in {'WRITER_PENDING', 'QA_FAILED'}:
+        missing = verified_excerpt_issues(evidence)
+        if missing:
+            request_product_reselection(slug, missing)
+            raise GrowthRuntimeError(f'needs_product_reselection for {slug}: ' + '; '.join(missing))
         return {**details, 'action': 'writer'}
     if stage == 'CHAT_REVIEW_PENDING':
         return {**details, 'action': 'ceo_review'}
@@ -177,10 +182,10 @@ def _create_job(*, cache_only: bool, candidates: list, provider: dict | None,
     else:
         selected, selection = select_six(products, topic, feedback)
     evidence = build_evidence(topic, selected, selection)
-    from comparison_acceptance import product_issues
-    issues = product_issues(evidence)
+    from comparison_acceptance import product_issues, verified_excerpt_issues
+    issues = product_issues(evidence) + verified_excerpt_issues(evidence)
     if issues:
-        raise ValueError('approved product evidence changed before job creation: ' + '; '.join(issues))
+        raise ValueError('approved product evidence lacks Writer prerequisites: ' + '; '.join(issues))
     job = create_job(topic=topic, evidence=evidence, selection=selection,
                      planning_provider=provider, viability_probes=probes,
                      save_planning_provider=True)

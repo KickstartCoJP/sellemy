@@ -1,0 +1,29 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "TASK-BU002-FAILED-TEN-CEO-84B375A717A83296F12B",
+  "instruction_ref": "OSCHIEF-FAILED10-84B375-AUDIT-20261117-001 (CEO failed-ten audit; owner correction requested)",
+  "instruction": "For regular and recovery Sellemy articles, before any Writer call require six separately verified product-specific https source excerpts. Reuse existing Product reselection/HOLD for missing evidence, preserve passed content and do not retry Writer with unchanged missing evidence. Do not alter CEO gate, publication, QA thresholds or failure counters.",
+  "implementer": "sellemy-ops",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3",
+    "https://app.notion.com/p/3e967ec6a10081208a40f0fee3583043"
+  ],
+  "allowed_paths": [
+    "change-contracts/bu002-verified-source-prewriter-20261117.json",
+    "pipeline/comparison_acceptance.py",
+    "pipeline/role_stage_exec.py",
+    "pipeline/role_execution_writer.py",
+    "tests/test_bu002_verified_source_preflight_20261117.py"
+  ],
+  "preserved_rules": [
+    "Independent Product QA and Writer QA must remain unchanged",
+    "A missing excerpt is source acquisition/HOLD, never automatic product disqualification",
+    "No synthetic source excerpts, changed source identities or stale approval reuse",
+    "Do not modify already-published content or reset failure counters",
+    "CEO review and SHA-fixed production promotion gate remain intact",
+    "Only pre-Writer source evidence preflight and its acceptance tests are changed"
+  ],
+  "acceptance_tests": [
+    "tests/test_bu002_verified_source_preflight_20261117.py"
+  ]
+}
