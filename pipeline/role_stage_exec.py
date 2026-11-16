@@ -326,7 +326,7 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument('--role', choices=(
         'writer', 'reviewer', 'review_reset', 'product', 'inspect', 'designer', 'publish', 'postpublish', 'ceo_reconcile',
-        'planning', 'planning_commit', 'fresh_create', 'product_hold_recheck', 'product_qa_disposition', 'already_published', 'slot_compensation', 'recovery', 'report', 'state_queue', 'scheduler', 'legacy_admit', 'legacy_replan', 'legacy_precheck', 'legacy_review_finish'), required=True)
+        'planning', 'planning_commit', 'fresh_create', 'product_hold_recheck', 'quality_control_recovery', 'product_qa_disposition', 'already_published', 'slot_compensation', 'recovery', 'report', 'state_queue', 'scheduler', 'legacy_admit', 'legacy_replan', 'legacy_precheck', 'legacy_review_finish'), required=True)
     parser.add_argument('--slug', default='')
     parser.add_argument('--cache-only', action='store_true')
     args = parser.parse_args()
@@ -395,6 +395,9 @@ def main() -> None:
             result = receipt
         elif args.role == 'product_hold_recheck':
             result = _recheck_one_product_hold()
+        elif args.role == 'quality_control_recovery':
+            from adaptive_publish import AdaptivePublishController
+            result = AdaptivePublishController(ROOT).recover_verified_quality_control_fault()
         elif args.role == 'fresh_create':
             result = _create_job(cache_only=args.cache_only,
                                  candidates=request['candidates'],

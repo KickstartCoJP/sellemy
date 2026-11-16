@@ -116,6 +116,12 @@ def run(*, publish: bool, cache_only: bool = False, report_path: Path | None = R
     try:
         controller_state = execute_role('scheduler', request={'operation': 'current_state'})
         result['controller_before'] = controller_state
+        if publish and controller_state['publish_paused'] and controller_state.get('quality_control_fault'):
+            try:
+                result['quality_control_recovery'] = execute_role('quality_control_recovery')
+                controller_state = execute_role('scheduler', request={'operation': 'current_state'})
+            except RoleStageFailure as exc:
+                result['quality_control_recovery_error'] = str(exc)
         if publish and controller_state['publish_paused']:
             result['status'] = 'paused_by_controller'
             return result
