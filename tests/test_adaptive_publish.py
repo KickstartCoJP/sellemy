@@ -252,7 +252,7 @@ class AdaptiveControllerTests(unittest.TestCase):
             self.assertTrue(controller.admit_scheduled(datetime(2026, 9, 18, 8, 0, tzinfo=zone))['allowed'])
             self.assertTrue(controller.admit_scheduled(datetime(2026, 9, 18, 16, 0, tzinfo=zone))['allowed'])
 
-    def test_evaluator_failure_is_durable_red_and_pauses_publication(self):
+    def test_evaluator_failure_is_durable_red_without_stopping_all_publication(self):
         with tempfile.TemporaryDirectory() as directory:
             controller = self.controller(ROOT, Path(directory))
             row, state = controller.record_evaluation_failure(
@@ -261,12 +261,12 @@ class AdaptiveControllerTests(unittest.TestCase):
             )
             self.assertEqual(row['overall'], 'red')
             self.assertIn('post_publish_evaluation_failed', row['issues'])
-            self.assertEqual(state['target_per_day'], 1)
+            self.assertEqual(state['target_per_day'], 2)
             self.assertEqual(state['quality_control_fault'], 'post_publish_evaluation_failed')
-            self.assertTrue(state['publish_paused'])
+            self.assertFalse(state['publish_paused'])
             self.assertFalse(state['ceo_alert_required'])
 
-    def test_bridge_failure_is_durable_red_and_pauses_publication(self):
+    def test_bridge_failure_is_durable_red_without_stopping_all_publication(self):
         with tempfile.TemporaryDirectory() as directory:
             controller = self.controller(ROOT, Path(directory))
             row, state = controller.record_bridge_failure(
@@ -275,8 +275,26 @@ class AdaptiveControllerTests(unittest.TestCase):
             )
             self.assertIn('feedback_task_bridge_failed', row['issues'])
             self.assertEqual(state['quality_control_fault'], 'feedback_task_bridge_failed')
-            self.assertTrue(state['publish_paused'])
+            self.assertFalse(state['publish_paused'])
 
+
+    def test_repeated_technical_failures_do_not_trigger_ceo_quality_stop(self):
+        with tempfile.TemporaryDirectory() as directory:
+            controller = self.controller(ROOT, Path(directory))
+            for index in range(4):
+                controller.record_bridge_failure(
+                    slug=f'bridge-{index}', commit=f'commit-{index}',
+                    growth_run={'published': True, 'commit': f'commit-{index}'},
+                    error=TimeoutError('Task bridge timeout'),
+                )
+            state = controller.current_state()
+            self.assertEqual(state['target_per_day'], 2)
+            self.assertFalse(state['ceo_alert_required'])
+            self.assertFalse(state['publish_paused'])
+            self.assertEqual(state['quality_control_fault'], 'feedback_task_bridge_failed')
+            zone = ZoneInfo('Asia/Tokyo')
+            admission = controller.admit_scheduled(datetime(2026, 9, 18, 0, 0, tzinfo=zone))
+            self.assertTrue(admission['allowed'])
 
     def test_quality_control_fault_clears_after_verified_green_feedback(self):
         with tempfile.TemporaryDirectory() as directory:

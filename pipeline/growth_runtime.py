@@ -116,7 +116,7 @@ def run(*, publish: bool, cache_only: bool = False, report_path: Path | None = R
     try:
         controller_state = execute_role('scheduler', request={'operation': 'current_state'})
         result['controller_before'] = controller_state
-        if publish and controller_state['publish_paused'] and controller_state.get('quality_control_fault'):
+        if publish and controller_state.get('quality_control_fault') and not controller_state.get('ceo_alert_required'):
             try:
                 result['quality_control_recovery'] = execute_role('quality_control_recovery')
                 controller_state = execute_role('scheduler', request={'operation': 'current_state'})
@@ -235,8 +235,10 @@ def run(*, publish: bool, cache_only: bool = False, report_path: Path | None = R
         try:
             result.update(execute_role('postpublish', slug, request={'commit': commit, 'growth_run': result}))
         except RoleStageFailure as exc:
+            # Publication already committed. Keep its identity and retry only the
+            # durable feedback fault; a monitoring failure must not republish it.
             result['status'] = 'published_feedback_failed'
-            raise GrowthRuntimeError(f'post-publish role failed: {exc}') from exc
+            result['postpublish_error'] = str(exc)
         return result
     except Exception as exc:
         result['status'] = ('published_feedback_failed' if result.get('published')

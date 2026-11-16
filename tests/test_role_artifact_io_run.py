@@ -108,3 +108,23 @@ def test_runtime_must_reject_in_process_business_aware_controller():
     with patch.object(runtime,'execute_role',return_value={}):
         with pytest.raises(ValueError,match='in-process controller'):
             runtime.run(publish=False,controller=object(),report_path=None)
+
+
+def test_postpublish_task_bridge_failure_preserves_published_commit():
+    called=[]
+    def role(name, *args, **kwargs):
+        called.append(name)
+        if name=='state_queue':return {'eligible':{'slug':'sample','status':'ACTIVE'},'unfinished':[]}
+        if name=='inspect':return {'action':'publish'}
+        if name=='publish':return {'commit':'published-sha'}
+        if name=='postpublish':raise RoleStageFailure('feedback Task bridge timeout')
+        return _base(name,*args,**kwargs)
+    with patch.object(runtime,'execute_role',side_effect=role), \
+         patch.object(runtime,'require_publishing_enabled'), \
+         patch.object(runtime,'load_job',return_value={'status':'ACTIVE','current_stage':'PUBLISH_PENDING'}):
+        result=runtime.run(publish=True,report_path=None)
+    assert result['published'] is True
+    assert result['commit']=='published-sha'
+    assert result['status']=='published_feedback_failed'
+    assert 'feedback Task bridge timeout' in result['postpublish_error']
+    assert called.count('publish')==1
