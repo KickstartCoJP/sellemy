@@ -1,0 +1,11 @@
+{
+ "schema":"kickstart-change-contract/v1",
+ "task_id":"BU002-TASK-BRIDGE-REAL-93-SECOND-TIMEOUT-20261117",
+ "instruction_ref":"CEO 2026-11-17: 今回はOK．で、1件も出てこないけど。 Accepted PR #119 recovery failed again on its first new postpublication (task_create timeout at 90 sec).",
+ "instruction":"Fix only the repeatedly observed 90-second feedback Task/Event subprocess timeout after actual successful 93.3-second task_append. Raise limit to 180 seconds for existing idempotent OS task events, preserving every publication and CEO Gate and the existing verified recovery procedure. No new controls, queue, content, policies, statuses or routing.",
+ "implementer":"sellemy-ops via Mac Studio v2",
+ "canonical_refs":["https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3"],
+ "allowed_paths":["pipeline/feedback_task_bridge.py","tests/test_quality_control_verified_recovery_20261116.py","tests/test_feedback_task_bridge.py","change-contracts/20261117-task-bridge-real-93-second-timeout.json"],
+ "preserved_rules":["All independent QA / CEO Gates retained","Only timeout changed from 90 to 180 after observed 93.3s success","Task/Event idempotency retained","No new routes or behavior"],
+ "acceptance_tests":["tests/test_quality_control_verified_recovery_20261116.py","tests/test_feedback_task_bridge.py"]
+}

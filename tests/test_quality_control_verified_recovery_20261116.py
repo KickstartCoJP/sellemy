@@ -74,7 +74,7 @@ def test_recovery_does_not_clear_fault_after_bridge_exception(tmp_path):
 
 def test_bridge_subprocess_budget_covers_actual_35_second_task_append(monkeypatch):
     def run(args,**kwargs):
-        assert kwargs['timeout']>=90
+        assert kwargs['timeout']>=180
         from types import SimpleNamespace
         return SimpleNamespace(returncode=0,stdout='{"status":"in_progress"}',stderr='')
     monkeypatch.setattr('feedback_task_bridge.subprocess.run',run)
