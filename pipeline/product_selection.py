@@ -173,11 +173,11 @@ def select_six(candidates: list[dict], topic: dict, feedback: dict, *, pinned: l
         'discovery_axis_id': p.get('discovery_axis_id'),
     } for p in pool]
     prompt = ("""あなたはSellemyの商品選定担当です。モノとの出会いを大切にし、各軸最大10商品から掲載する異なる2商品、3軸で6商品を選んでください。
-検索順位や形式的なスコアで決めず、読者の購入目的、商品の特徴・用途・使用場面、選択肢としての違いを根拠情報から判断してください。特に読者が買いやすい商品であることは重要です。
+検索順位や形式的な比較点で決めず、読者がまだ知らない商品に興味を持つ理由、具体的な用途・生活場面・商品の個性を根拠情報から判断してください。購入可能性も確保してください。各2商品は優劣を競わせる組ではなく、同じ紹介切り口で出会える異なる魅力の2商品です。
 確認できない事実や使用経験を作らないでください。同一商品の色違い、パッケージ違い、実質的な重複を選ばないでください。
 各企画軸（discovery_axis_id）から必ず2商品ずつ選んでください。retained_asinsに記載した独立審査済みの商品は必ず維持してください。
 出力はJSONのみ。形式は {"axes":[{"axis_id":"企画軸ID","products":[{"asin":"ASIN","reason":"確認可能な選定理由"},{"asin":"ASIN","reason":"確認可能な選定理由"}]}]} です。
-axesは入力の3軸を1回ずつ含め、各軸の商品は相異なる2件、全軸のASINも相異なる6件としてください。各商品の選定理由には読者の買いやすさと当該軸で紹介する具体的根拠を含めてください。
+axesは入力の3軸を1回ずつ含め、各軸の商品は相異なる2件、全軸のASINも相異なる6件としてください。各商品の選定理由には、その商品だけの魅力・読者が興味を持つ理由・当該切り口の具体的な裏付けを含めてください。「AよりBが優れる」のような比較を選定理由の定型にしないでください。
 """+json.dumps({'topic': {k:topic.get(k) for k in ('title','query','intent_key','reader_persona','comparison_axes')},
                    'retained_asins': sorted(pinned_asins), 'candidates':items}, ensure_ascii=False))
     from api_role_binding import require_codex_settings
