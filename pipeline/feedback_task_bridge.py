@@ -18,7 +18,7 @@ def _run_action(*, python: str, ai_os_root: Path, module: str, payload: dict) ->
         text=True,
         capture_output=True,
         check=False,
-        timeout=90,
+        timeout=180,
     )
     if completed.returncode != 0:
         raise FeedbackTaskBridgeError(
