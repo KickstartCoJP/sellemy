@@ -107,6 +107,51 @@ class GenericArticleUpdateTests(unittest.TestCase):
         self.assertEqual(identity,0)
         self.assertEqual(existing,1)
 
+    def test_new_article_publish_requires_generated_static_catalogs(self):
+        expected = business._expected_publish_paths(self.slug, self.category)
+        self.assertIn('articles.html', expected)
+        self.assertIn('products.html', expected)
+        self.assertEqual(business._expected_update_paths(self.slug, self.category), expected)
+
+    def test_new_article_create_accepts_exact_publication_unit(self):
+        changed = business._expected_publish_paths(self.slug, self.category)
+        payload_path=self.site/'data/payloads/article-one.json'
+        payload_path.parent.mkdir(parents=True,exist_ok=True)
+        payload_path.write_text(json.dumps(self.payload))
+        evidence_path=self.site/'data/evidence/article-one.json'
+        evidence_path.write_text(json.dumps(self.evidence))
+        status=''.join(' M '+path+'\n' for path in sorted(changed))
+        calls=[]
+        with (patch.object(business,'ROOT',self.site),
+              patch.object(business,'require_publishing_enabled'),
+              patch.object(business,'load_receipt',return_value={}),
+              patch.object(business,'require_acceptance'),
+              patch.object(business.subprocess,'check_output',return_value=status),
+              patch.object(business.subprocess,'run',side_effect=lambda argv,**kwargs: calls.append(argv)),
+              patch.object(business,'_git',side_effect=lambda *args: 'a'*40 if args[:2]==('rev-parse','HEAD') or args[:2]==('rev-parse','origin/main') else ''),
+              patch('article_release.release',return_value='a'*40),
+              patch.object(business,'verify_production_deploy')):
+            self.assertEqual(business._publish(self.slug,self.category,update=False),'a'*40)
+        self.assertEqual(calls[0],['git','add','--',*sorted(changed)])
+
+    def test_new_article_create_rejects_missing_catalog_changes(self):
+        # Static SEO catalogs are part of each publish transaction.
+        changed = business._expected_publish_paths(self.slug, self.category) - {'products.html'}
+        payload_path=self.site/'data/payloads/article-one.json'
+        payload_path.parent.mkdir(parents=True,exist_ok=True)
+        payload_path.write_text(json.dumps(self.payload))
+        evidence_path=self.site/'data/evidence/article-one.json'
+        evidence_path.write_text(json.dumps(self.evidence))
+        status=''.join(' M '+path+'\n' for path in sorted(changed))
+        with (patch.object(business,'ROOT',self.site),
+              patch.object(business,'require_publishing_enabled'),
+              patch.object(business,'load_receipt',return_value={}),
+              patch.object(business,'require_acceptance'),
+              patch.object(business.subprocess,'check_output',return_value=status),
+              patch.object(business.subprocess,'run',side_effect=AssertionError('git write attempted'))):
+            with self.assertRaisesRegex(business.GrowthRuntimeError,'publication unit mismatch'):
+                business._publish(self.slug,self.category,update=False)
+
     def test_update_publishes_changed_subset_and_checks_exact_deployed_bytes(self):
         import hashlib
         html=self.site/'article/gadget/article-one.html'
