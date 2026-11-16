@@ -1,0 +1,1082 @@
+{
+  "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+  "evidence_sha256": "8fd20486a70bb5e003b17d45d5b944eb6d2f5f61a2e8ea71111083d4a7621b59",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 17024,
+    "input_tokens": 36258,
+    "member_binding_revision": 4,
+    "output_tokens": 7683,
+    "reasoning_effort": "medium",
+    "reasoning_output_tokens": 1026,
+    "session_id": "01a1e26a-2b65-7513-80c0-df742856b836",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "b2ed88bd8b667d0586e4434f1c2bc06a81c33084a60a74ad37b31c48d2fd962d",
+  "review": {
+    "buying_guidance": true,
+    "claims_grounded": true,
+    "complete_comparison": true,
+    "distinct_products": true,
+    "duplicate_pair_checks": [
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "共通の本体型番は示されていない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "Power Source Battery Powered",
+            "reason": "給電構造が異なる。",
+            "right_quote": "Power Source Corded Electric",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "Built-in lithium battery",
+            "reason": "包装だけの違いではない。",
+            "right_quote": "power it through the USB port",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "対応する寸法・容量の対比はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "Built-in lithium battery",
+            "reason": "充電式とUSB給電式。",
+            "right_quote": "power it through the USB port",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列関係を示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand Uandear",
+            "reason": "表示ブランドが異なる。",
+            "right_quote": "Brand UGREEN",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "Built-in lithium battery",
+            "reason": "給電場所によって選択が分かれる。",
+            "right_quote": "power it through the USB port",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "異なるブランドと給電方式が示され、同一製品との積極的証拠はない。",
+        "right_ref": "p2"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "共通の本体型番は示されていない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "3.5mm Jack Speaker",
+            "reason": "対応する音声接続が異なる。",
+            "right_quote": "AUX 3.5mm/RCA Audio Receiver",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "3.5mm Jack Speaker",
+            "reason": "接続機能の違いがある。",
+            "right_quote": "AUX 3.5mm/RCA Audio Receiver",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "対応する寸法・容量の対比はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "3.5mm Jack Speaker",
+            "reason": "p3はRCA接続にも対応する。",
+            "right_quote": "AUX 3.5mm/RCA Audio Receiver",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列関係を示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand Uandear",
+            "reason": "表示ブランドが異なる。",
+            "right_quote": "Brand UGREEN",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "3.5mm Jack Speaker",
+            "reason": "RCA入力の有無で購入判断が分かれる。",
+            "right_quote": "AUX 3.5mm/RCA Audio Receiver",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "ブランドと接続構成に違いがあり、同一製品との証拠はない。",
+        "right_ref": "p3"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "共通の本体型番は示されていない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "3.5mm Jack Speaker",
+            "reason": "出力構成が異なる。",
+            "right_quote": "Double AUX Output Ports",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "3.5mm Jack Speaker",
+            "reason": "本体機能の違いがある。",
+            "right_quote": "Double AUX Output Ports",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "対応する寸法・容量の対比はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "3.5mm Jack Speaker",
+            "reason": "p4はAUX出力を二つ備える。",
+            "right_quote": "Double AUX Output Ports",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列関係を示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand Uandear",
+            "reason": "表示ブランドが異なる。",
+            "right_quote": "Brand SONRU",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "3.5mm Jack Speaker",
+            "reason": "RCA接続を含む用途で選択が分かれる。",
+            "right_quote": "1 RCA cable included",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "ブランドと出力構成が異なり、同一製品との証拠はない。",
+        "right_ref": "p4"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "共通の本体型番は示されていない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "Power Source Battery Powered",
+            "reason": "給電構造が異なる。",
+            "right_quote": "Power Source Corded Electric",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "Built-in lithium battery",
+            "reason": "本体の給電方式が異なる。",
+            "right_quote": "the USB-A port is used for powering the product",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "対応する寸法・容量の対比はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "Built-in lithium battery",
+            "reason": "充電式とUSB給電式。",
+            "right_quote": "the USB-A port is used for powering the product",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列関係を示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand Uandear",
+            "reason": "表示ブランドが異なる。",
+            "right_quote": "Brand UGREEN",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "Built-in lithium battery",
+            "reason": "給電環境によって選択が分かれる。",
+            "right_quote": "the USB-A port is used for powering the product",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "ブランドと給電方式が異なり、同一製品との証拠はない。",
+        "right_ref": "p5"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "共通の本体型番は示されていない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "",
+            "reason": "色や外観だけの関係かは確定できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "包装だけの違いかは確定できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "対応する寸法・容量の対比はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "",
+            "reason": "両方とも充電式の3.5mm受信機で、本体構造の差は確定できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列関係を示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand Uandear",
+            "reason": "表示ブランドが異なる。",
+            "right_quote": "Brand UGREEN",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "long service life for 16 hours on a full charge",
+            "reason": "明示された使用時間と音声方式に、それぞれ異なる選択理由がある。",
+            "right_quote": "Supports AAC/SBC",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "表示ブランドと明示された特徴が異なる。同一製品だと示す証拠はない。",
+        "right_ref": "p6"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "共通の本体型番は示されていない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "Power Source Corded Electric",
+            "reason": "給電構造が異なる。",
+            "right_quote": "Power Source Battery Powered",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "power it through the USB port",
+            "reason": "本体の給電方式が異なる。",
+            "right_quote": "Supports USB C charging",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "対応する寸法・容量の対比はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "Simply plug it into the 3.5mm aux jack and power it through the USB port",
+            "reason": "p3はRCA接続にも対応し、充電式。",
+            "right_quote": "AUX 3.5mm/RCA Audio Receiver",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "同ブランドだが系列関係は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand UGREEN",
+            "reason": "同ブランドと確認できる。",
+            "right_quote": "Brand UGREEN",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "power it through the USB port",
+            "reason": "給電方式とRCA接続の必要性で選べる。",
+            "right_quote": "AUX 3.5mm/RCA Audio Receiver",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p2",
+        "reason": "同ブランドだが、接続と給電の構成が異なる。",
+        "right_ref": "p3"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "共通の本体型番は示されていない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "Power Source Corded Electric",
+            "reason": "機能・構造の違いが示される。",
+            "right_quote": "Double AUX Output Ports",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "power it through the USB port",
+            "reason": "包装だけの違いではない。",
+            "right_quote": "Double AUX Output Ports",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "対応する寸法・容量の対比はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "Simply plug it into the 3.5mm aux jack and power it through the USB port",
+            "reason": "給電・出力構成が異なる。",
+            "right_quote": "Double AUX Output Ports",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列関係を示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand UGREEN",
+            "reason": "表示ブランドが異なる。",
+            "right_quote": "Brand SONRU",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "LDAC Codec",
+            "reason": "音声方式とRCA接続用品に異なる選択理由がある。",
+            "right_quote": "1 RCA cable included",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p2",
+        "reason": "ブランドと接続・出力構成が異なり、同一製品との証拠はない。",
+        "right_ref": "p4"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "共通の本体型番は示されていない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "Bluetooth 6.0 and LDAC Codec",
+            "reason": "音声方式とBluetooth世代の記載が異なる。",
+            "right_quote": "Supports AAC/SBC, Bluetooth 5.3",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "Bluetooth 6.0 and LDAC Codec",
+            "reason": "包装だけで説明できない機能差がある。",
+            "right_quote": "Supports AAC/SBC, Bluetooth 5.3",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "対応する寸法・容量の対比はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "supports LDAC codec",
+            "reason": "明示された対応音声方式が異なる。",
+            "right_quote": "Supports AAC/SBC",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "Bluetooth 6.0",
+            "reason": "記載されたBluetooth世代が異なる。",
+            "right_quote": "Bluetooth 5.3",
+            "status": "PASS"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand UGREEN",
+            "reason": "同ブランドと確認できる。",
+            "right_quote": "Brand UGREEN",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "supports LDAC codec",
+            "reason": "音声方式とケーブルの取り回しに異なる選択理由がある。",
+            "right_quote": "it can extend up to 1.5 meters",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p2",
+        "reason": "同ブランドのUSB給電式だが、対応音声方式と世代の記載が異なる。",
+        "right_ref": "p5"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "共通の本体型番は示されていない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "Power Source Corded Electric",
+            "reason": "給電構造が異なる。",
+            "right_quote": "Power Source Battery Powered",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "power it through the USB port",
+            "reason": "本体の給電方式が異なる。",
+            "right_quote": "Fully charge the product before first use",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "対応する寸法・容量の対比はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "power it through the USB port",
+            "reason": "USB給電式と充電式。",
+            "right_quote": "Power Source Battery Powered",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "Bluetooth 6.0",
+            "reason": "記載されたBluetooth世代が異なる。",
+            "right_quote": "Bluetooth 5.3",
+            "status": "PASS"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand UGREEN",
+            "reason": "同ブランドと確認できる。",
+            "right_quote": "Brand UGREEN",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "power it through the USB port",
+            "reason": "設置場所の給電条件で選べる。",
+            "right_quote": "Fully charge the product before first use",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p2",
+        "reason": "同ブランドだが給電方式と世代の記載が異なる。",
+        "right_ref": "p6"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "共通の本体型番は示されていない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "AUX 3.5mm/RCA Audio Receiver",
+            "reason": "出力構成に違いがある。",
+            "right_quote": "Double AUX Output Ports",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "AUX 3.5mm/RCA Audio Receiver",
+            "reason": "本体の出力構成が異なる。",
+            "right_quote": "Double AUX Output Ports",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "対応する寸法・容量の対比はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "LDAC audio codec",
+            "reason": "明示された機能と出力構成が異なる。",
+            "right_quote": "Double AUX Output Ports",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列関係を示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand UGREEN",
+            "reason": "表示ブランドが異なる。",
+            "right_quote": "Brand SONRU",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "RAC cable and charger are not included",
+            "reason": "RCAケーブルの同梱条件で選択が分かれる。",
+            "right_quote": "1 RCA cable included",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p3",
+        "reason": "両方ともRCA用途に合うが、ブランド、出力構成、同梱品が異なる。",
+        "right_ref": "p4"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "共通の本体型番は示されていない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "Power Source Battery Powered",
+            "reason": "給電構造が異なる。",
+            "right_quote": "Power Source Corded Electric",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "AUX 3.5mm/RCA Audio Receiver",
+            "reason": "接続と給電の構成が異なる。",
+            "right_quote": "the USB-A port is used for powering the product",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "対応する寸法・容量の対比はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "AUX 3.5mm/RCA Audio Receiver",
+            "reason": "p3はRCA接続を含む充電式、p5はUSB給電式。",
+            "right_quote": "the USB-A port is used for powering the product",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "Bluetooth 6.0 Chip Technology",
+            "reason": "記載されたBluetooth世代が異なる。",
+            "right_quote": "Bluetooth 5.3",
+            "status": "PASS"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand UGREEN",
+            "reason": "同ブランドと確認できる。",
+            "right_quote": "Brand UGREEN",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "AUX 3.5mm/RCA Audio Receiver",
+            "reason": "RCA入力と給電条件によって選択が分かれる。",
+            "right_quote": "the USB-A port is used for powering the product",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p3",
+        "reason": "同ブランドだが、RCA接続の有無と給電方式が異なる。",
+        "right_ref": "p5"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "共通の本体型番は示されていない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "AUX 3.5mm/RCA Audio Receiver",
+            "reason": "対応する接続構成が異なる。",
+            "right_quote": "car audio AUX input",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "AUX 3.5mm/RCA Audio Receiver",
+            "reason": "接続用途の違いがある。",
+            "right_quote": "car audio AUX input",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "対応する寸法・容量の対比はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "AUX 3.5mm/RCA Audio Receiver",
+            "reason": "p3はRCA接続にも対応する。",
+            "right_quote": "car audio AUX input",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "Bluetooth 6.0 Chip Technology",
+            "reason": "記載されたBluetooth世代が異なる。",
+            "right_quote": "Bluetooth 5.3 chip",
+            "status": "PASS"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand UGREEN",
+            "reason": "同ブランドと確認できる。",
+            "right_quote": "Brand UGREEN",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "AUX 3.5mm/RCA Audio Receiver",
+            "reason": "RCA入力を使うかで選択が分かれる。",
+            "right_quote": "car audio AUX input",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p3",
+        "reason": "同ブランドの充電式だが、RCA接続への対応と世代の記載が異なる。",
+        "right_ref": "p6"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "共通の本体型番は示されていない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "Double AUX Output Ports",
+            "reason": "出力と給電の構成が異なる。",
+            "right_quote": "the USB-A port is used for powering the product",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "Double AUX Output Ports",
+            "reason": "包装だけの違いではない。",
+            "right_quote": "the USB-A port is used for powering the product",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "対応する寸法・容量の対比はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "Double AUX Output Ports",
+            "reason": "p4は二つのAUX出力、p5はUSB給電の構成。",
+            "right_quote": "the USB-A port is used for powering the product",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列関係を示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand SONRU",
+            "reason": "表示ブランドが異なる。",
+            "right_quote": "Brand UGREEN",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "1 RCA cable included",
+            "reason": "RCA接続用品と給電条件に異なる選択理由がある。",
+            "right_quote": "the USB-A port is used for powering the product",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p4",
+        "reason": "ブランド、出力構成、給電条件が異なり、同一製品との証拠はない。",
+        "right_ref": "p5"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "共通の本体型番は示されていない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "Double AUX Output Ports",
+            "reason": "出力構成が異なる。",
+            "right_quote": "car audio AUX input",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "Double AUX Output Ports",
+            "reason": "本体の出力構成に違いがある。",
+            "right_quote": "car audio AUX input",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "対応する寸法・容量の対比はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "Double AUX Output Ports",
+            "reason": "p4は二つのAUX出力を備える。",
+            "right_quote": "car audio AUX input",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列関係を示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand SONRU",
+            "reason": "表示ブランドが異なる。",
+            "right_quote": "Brand UGREEN",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "1 RCA cable included",
+            "reason": "RCAケーブル付きの構成と3.5mm AUX用途で選べる。",
+            "right_quote": "car audio AUX input",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p4",
+        "reason": "ブランドと出力構成が異なり、同一製品との証拠はない。",
+        "right_ref": "p6"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "共通の本体型番は示されていない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "Power Source Corded Electric",
+            "reason": "給電構造が異なる。",
+            "right_quote": "Power Source Battery Powered",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "the USB-A port is used for powering the product",
+            "reason": "本体の給電方式が異なる。",
+            "right_quote": "Fully charge the product before first use",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "対応する寸法・容量の対比はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "the USB-A port is used for powering the product",
+            "reason": "USB給電式と充電式。",
+            "right_quote": "Power Source Battery Powered",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "両方ともBluetooth 5.3で、系列関係は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand UGREEN",
+            "reason": "同ブランドと確認できる。",
+            "right_quote": "Brand UGREEN",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "the USB-A port is used for powering the product",
+            "reason": "設置場所の給電条件で選べる。",
+            "right_quote": "Fully charge the product before first use",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p5",
+        "reason": "同ブランドのBluetooth 5.3受信機だが、給電方式が明確に異なる。",
+        "right_ref": "p6"
+      }
+    ],
+    "editorial_voice_appropriate": true,
+    "internal_qa_leak_absent": true,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "analog",
+            "quote": "3.5mm wired earphones/headphones/speakers"
+          }
+        ],
+        "identity_key": "Uandear",
+        "identity_quote": "Brand Uandear",
+        "reason": "3.5mm接続の受信機。ブランドと商品種別は確認できるが、基本型番は示されていない。充電式、最大16時間との記載、2台接続があり、3.5mm入力のスピーカーを充電式で使いたい人に紹介できる。使用時間は掲載上の値として扱う。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "analog",
+            "quote": "transform your home audio system or speaker into a hands-free Bluetooth device"
+          }
+        ],
+        "identity_key": "UGREEN LDAC対応 Bluetooth 6.0 車載レシーバー",
+        "identity_quote": "UGREEN LDAC対応 Bluetooth 6.0 車載レシーバー（3.5mm Auxアダプター内蔵マイク付き）ハンズフリー通話対応",
+        "reason": "3.5mm AUX接続とUSB給電が明示される。スピーカー用途も掲載され、給電口のある場所で3.5mm入力のスピーカーを使う人に紹介できる。LDAC対応は確認できるが、音質の優劣までは証明しない。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "rca",
+            "quote": "AUX 3.5mm/RCA Audio Receiver"
+          }
+        ],
+        "identity_key": "UGREEN Bluetooth6.0レシーバー 古いステレオ用",
+        "identity_quote": "UGREEN Bluetooth6.0レシーバー 古いステレオ用、ブルートゥース受信機、SBC/AAC/LDAC、3.5mm＋RCA、低遅延 ハイレゾ",
+        "reason": "3.5mmとRCAへの接続、充電式、付属品の内容が明示される。RCA入力のあるステレオに使う人へ、RCAケーブルは別途必要という具体的条件とともに紹介できる。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "rca",
+            "quote": "1 RCA cable included"
+          }
+        ],
+        "identity_key": "SONRU Aux Bluetooth Receiver",
+        "identity_quote": "SONRU Aux Bluetooth Receiver Car Bluetooth Receiver Bluetooth 5.3 Receiver with AUX and RCA Cable",
+        "reason": "二つのAUX出力とRCAケーブルの同梱が明示される。RCA入力のある機器へ付属ケーブルで接続したい人や、複数の有線音声機器を接続したい人に紹介できる。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "power",
+            "quote": "the USB-A port is used for powering the product"
+          }
+        ],
+        "identity_key": "UGREEN Bluetooth5.3 車載レシーバー",
+        "identity_quote": "UGREEN Bluetooth5.3 車載レシーバー 受信機 ハンズフリー通話 3.5mm USB式 SBC対応 マイク内蔵 シルバー",
+        "reason": "3.5mm音声接続とUSB-A給電が明示され、スピーカー用途も掲載される。設置場所にUSB給電口がある人へ、充電の手間を伴わない方式として紹介できる。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "power",
+            "quote": "Fully charge the product before first use"
+          }
+        ],
+        "identity_key": "UGREEN 5.3 Bluetooth レシーバー",
+        "identity_quote": "UGREEN 5.3 Bluetooth レシーバー 3.5mm 受信機 SBC/AAC ブラック車載/AUX/カーオーディオ type-C充電",
+        "reason": "3.5mm AUX入力へ接続する充電式受信機であることが明示される。USBから常時給電する場所を用意せず、先に充電して使いたい人に紹介できる。連続使用時間は未確認のまま扱う。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reader_decision_outsourcing_absent": true,
+    "reason": "6件はいずれもBluetooth音声受信機で、3.5mm接続、RCA接続、給電方法という既存の3つの切り口に各2件を紹介できる。型番が明示されない商品はあるが、同一製品だと積極的に示す資料はなく、接続端子、給電方式、出力構成などに購入判断上の違いがある。ここでの判定は商品識別と推薦成立性に限る。",
+    "recommendation_conclusion": true,
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}
