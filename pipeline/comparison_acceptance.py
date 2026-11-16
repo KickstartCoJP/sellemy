@@ -45,6 +45,23 @@ def source_text(product):
     return ' '.join(x for x in parts if x).strip()
 
 
+def verified_excerpt_issues(evidence):
+    """Only exact per-product verified excerpts qualify a product for Writer."""
+    products = evidence.get('products') or [] if isinstance(evidence, dict) else []
+    if len(products) != 6:
+        return ['Writer requires six product identities']
+    missing = []
+    for index, product in enumerate(products, 1):
+        ref = str(product.get('ref') or f'p{index}') if isinstance(product, dict) else f'p{index}'
+        sources = product.get('sources') or [] if isinstance(product, dict) else []
+        if not any(isinstance(source, dict) and source.get('verified') is True
+                   and str(source.get('url') or '').startswith('https://')
+                   and str(source.get('excerpt') or '').strip()
+                   for source in sources):
+            missing.append(f'{ref}: verified source excerpt absent')
+    return missing
+
+
 def _verified_series_identity(product):
     """Only structured, attributed source data can establish a series key."""
     for source in product.get('sources') or []:
