@@ -39,7 +39,7 @@ def _execute_job(slug: str, result: dict, *, cache_only: bool = False) -> str | 
                 execute_role('product', slug, cache_only=cache_only)
                 continue
             if action == 'replan':
-                receipt = execute_role('legacy_replan', slug)
+                receipt = execute_role('legacy_replan' if state.get('source') == 'legacy_repair' else 'ceo_replan', slug)
                 if receipt.get('action') == 'hold':
                     result['status'] = 'planning_research_hold'
                     result['held_slug'] = slug

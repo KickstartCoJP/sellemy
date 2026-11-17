@@ -268,7 +268,17 @@ def eligible_job(*, now: datetime | None = None) -> dict | None:
     for row in all_jobs():
         if row.get('status') in TERMINAL_STATUSES:
             continue
-        if row.get('current_stage') not in RETRYABLE_STAGES:
+        explicit_ceo_replan = False
+        if row.get('current_stage') == 'PLANNING_HOLD' and row.get('source') == 'runtime' and not row.get('published_commit'):
+            marker = read_artifact(row['slug'], 'planning-restart-required.json', {}) or {}
+            decision = read_artifact(row['slug'], 'ceo-review-decision.json', {}) or {}
+            explicit_ceo_replan = (marker.get('required_stage') == 'PLANNING'
+                and marker.get('retain_slug') == row['slug']
+                and marker.get('retain_category') == row.get('category')
+                and bool(marker.get('product_theme'))
+                and marker.get('attempted') is not True
+                and decision.get('decision') == '差戻し')
+        if row.get('current_stage') not in RETRYABLE_STAGES and not explicit_ceo_replan:
             continue
         raw = row.get('next_retry_at')
         try:
@@ -280,7 +290,7 @@ def eligible_job(*, now: datetime | None = None) -> dict | None:
     # A CEO-approved article must finish its eyecatch/publication independently
     # of upstream Writer work and product-reselection holds.
     priority = {'PUBLISH_PENDING': 0, 'EYECATCH_PENDING': 1,
-                'QA_FAILED': 2, 'WRITER_PENDING': 3, 'PLANNING_PENDING': 4}
+                'QA_FAILED': 2, 'WRITER_PENDING': 3, 'PLANNING_PENDING': 4, 'PLANNING_HOLD': 4}
     eligible.sort(key=lambda row: (priority.get(row.get('current_stage'), 9),
                                    row.get('updated_at') or row.get('created_at') or '',
                                    row.get('slug') or ''))

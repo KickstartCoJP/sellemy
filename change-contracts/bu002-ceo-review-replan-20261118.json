@@ -1,0 +1,33 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "CEO-CHAT-BU002-REWORK-ALL-REVIEWS-20261118",
+  "instruction_ref": "CEO direct instruction: で、レビューに出てる案件全部差し戻して最初からやって。 2026-11-18",
+  "instruction": "After eight previously unpublished CEO review candidates are explicitly returned for full replan, resume exactly those eight from a saved short product theme; run new Planner, Product evidence collection, independent Product QA, then Writer and CEO review in the existing job identity, without fresh article admission or old payload reuse.",
+  "implementer": "sellemy-ops (non-Codex staging)",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3",
+    "https://app.notion.com/p/3dc67ec6a100816f86daf33e6c7b4bf2",
+    "https://app.notion.com/p/41b67ec6a10081758ff5c8b8b4f5fc35"
+  ],
+  "allowed_paths": [
+    "change-contracts/bu002-ceo-review-replan-20261118.json",
+    "pipeline/ceo_review_replanning.py",
+    "pipeline/growth_recovery.py",
+    "pipeline/growth_runtime.py",
+    "pipeline/role_stage_client.py",
+    "pipeline/role_stage_exec.py",
+    "tests/test_ceo_review_replanning_20261118.py"
+  ],
+  "preserved_rules": [
+    "Only existing, explicit CEO-reworked unpublished runtime jobs are eligible for initial restart",
+    "No admission of new, unreviewed article topics",
+    "Published legacy reinspection remains isolated",
+    "Old URLs, slugs, articles, product evidence and related approvals preserved until new independent QA and existing Gate pass",
+    "No automatic retries after a failed Planning attempt",
+    "CEO review still required for new drafts and any production promotion",
+    "No Codex used to create or edit code"
+  ],
+  "acceptance_tests": [
+    "tests/test_ceo_review_replanning_20261118.py"
+  ]
+}
