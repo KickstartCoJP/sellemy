@@ -11,6 +11,7 @@ from datetime import date
 from pathlib import Path
 
 from analytics_feedback import load_feedback, topic_signal
+from article_theme import product_theme
 from category_metadata import CATEGORIES
 from writer_runtime import AVAILABILITY_PATTERN, _diagnostic
 from codex_provider import CodexProviderError, generate_isolated as codex_generate_persistent
@@ -30,10 +31,10 @@ PLANNING_SCHEMA = {
     'type': 'object', 'additionalProperties': False, 'required': ['candidates'],
     'properties': {'candidates': {'type': 'array', 'minItems': 6, 'maxItems': 30, 'items': {
         'type': 'object', 'additionalProperties': False,
-        'required': ['slug', 'category', 'query', 'title', 'intent_key', 'reader_persona', 'comparison_axes', 'signals'],
+        'required': ['slug', 'category', 'query', 'product_theme', 'intent_key', 'reader_persona', 'comparison_axes', 'signals'],
         'properties': {
             'slug': {'type': 'string'}, 'category': {'type': 'string'}, 'query': {'type': 'string'},
-            'title': {'type': 'string'}, 'intent_key': {'type': 'string'},
+            'product_theme': {'type': 'string'}, 'intent_key': {'type': 'string'},
             'reader_persona': {'type': 'object', 'additionalProperties': False, 'required': ['reader', 'knowledge_level', 'purchase_goal', 'editorial_depth'], 'properties': {key: {'type': 'string', 'minLength': 4} for key in ('reader','knowledge_level','purchase_goal','editorial_depth')}},
             'comparison_axes': {'type': 'array', 'minItems': 3, 'maxItems': 3, 'items': {'type': 'object', 'required': ['id', 'label', 'keywords'], 'properties': {'id': {'type': 'string'}, 'label': {'type': 'string'}, 'keywords': {'type': 'array', 'minItems': 1, 'items': {'type': 'string'}}}}},
             'signals': {'type': 'object', 'required': ['search_demand', 'purchase_intent', 'product_viability', 'seasonality', 'profitability', 'evidence_availability'], 'properties': {key: {'type': 'number'} for key in ('search_demand', 'purchase_intent', 'product_viability', 'seasonality', 'profitability', 'evidence_availability')}},
@@ -67,14 +68,9 @@ def _portfolio_signals(articles: list[dict]) -> dict:
     category_counts = {category: sum(row.get('category') == category for row in articles) for category in CATEGORIES}
     recent = articles[-RECENT_PORTFOLIO_WINDOW:]
     recent_category_counts = {category: sum(row.get('category') == category for row in recent) for category in CATEGORIES}
-    token_counts: dict[str, int] = {}
-    for row in recent:
-        for token in _topic_tokens(' '.join(str(row.get(k, '')) for k in ('slug', 'title'))):
-            token_counts[token] = token_counts.get(token, 0) + 1
     return {
         'category_counts': category_counts,
         'recent_category_counts': recent_category_counts,
-        'recent_topic_tokens': dict(sorted(token_counts.items(), key=lambda item: (-item[1], item[0]))[:20]),
     }
 
 
@@ -82,13 +78,12 @@ def _context() -> dict:
     from amazon_search_retry import next_themes
     retry_themes = next_themes()
     articles = json.loads(ARTICLES.read_text(encoding='utf-8'))
-    recent = articles[-36:]
+    themes = [product_theme(row) for row in articles]
     return {
         'today': date.today().isoformat(), 'allowed_categories': list(CATEGORIES),
         'exploration_seeds': json.loads(SEEDS.read_text(encoding='utf-8'))['categories'],
         'existing_article_count': len(articles),
-        'existing_slugs': [str(row.get('slug') or '') for row in articles if row.get('slug')],
-        'recent_articles': [{k: row.get(k) for k in ('slug', 'category', 'title')} for row in recent],
+        'existing_article_themes': list(dict.fromkeys(themes)),
         'portfolio': _portfolio_signals(articles),
         'amazon_search_recovery_themes': retry_themes,
         'instruction': 'Prioritize re-evaluating the provided historical Amazon access-failure recovery themes as newly viable topics, regenerating complete current-schema proposals and rejecting any stale or duplicate intent through normal Planning QA. These historical failures were infrastructure errors, not quality rejections. Continue exploring fresh intents, respect the full article duplicate guard, and diversify across categories.',
@@ -154,14 +149,13 @@ def discover_candidates() -> list[dict]:
     prompt = CONTRACT + '\n' + (
         "企画候補は、商品選定・根拠情報の審査に合格するまで暫定的なものとして扱ってください。\n"
         "各候補には、具体的な想定読者、事前知識、購入目的、適切な説明の深さを含む `reader_persona` を設定してください。\n"
-        "企画の中心は商品を比較して勝者を決めることではなく、読者にとって意外な用途や個性を持つモノを紹介することです。まず一貫した商品テーマの中で『紹介したくなる魅力や発見』を3種類定め、各切り口に魅力の異なる2商品を割り当てられる企画を作ってください。\n"
+        "企画の中心は商品を比較して勝者を決めることではなく、読者にとって意外な用途や個性を持つモノを紹介することです。まず一貫した商品テーマの中で『紹介したくなる用途や特徴』を3種類定め、各切り口に魅力の異なる2商品を割り当てられる企画を作ってください。\n"
         "例：コーヒーメーカーなら『朝の一杯を手軽に楽しむ』『淹れる時間そのものを楽しむ』『置きたくなるデザイン』の3紹介切り口。それぞれ2商品。価格・機能・サイズの優劣を機械的に3組へ分ける比較企画を初期値にしないでください。例はそのまま流用せず、テーマ固有の面白さを考えてください。\n"
         "根拠情報の入手可能性を評価する際には、商品の識別情報と推薦理由に必要な固有の事実を、メーカー公式ページ、取扱説明書、仕様書、その他追跡可能で信頼できる情報源から現実的に取得できることを基準にしてください。ECサイトの商品タイトルが見つかるだけでは不十分です。\n"
         "企画テーマは、一貫した商品カテゴリと購入目的に絞ってください。アクセサリー、詰め替え品、交換部品などは、検索意図が明確にそれらを対象としている場合に限り、企画に含めてください。\n"
-        "あなたは、モノとの出会いを創り出すサイト、Sellemyの商品紹介記事の企画を担当します。\n"
+        "あなたはSellemyの商品紹介記事の企画を担当します。\n"
         "現在の季節、検索意図、購買意図、商品選定の成立可能性、提供されたコンテキストをもとに、新しい企画候補を生成してください。\n"
-        "記事タイトル（title）に「比較」という文字列を含めないでください。\n"
-        "タイトルや見出しに「選ぶ」「探す」を機械的に付けず、モノの魅力・意外な用途・発見のきっかけが伝わる固有表現を優先してください。語そのものを禁止するのではなく、タイトル案が毎回「〇〇から選ぶ」「〇〇を探す」に収束することを避けてください。\n"
+        "記事タイトルは作らず、商品テーマ名をproduct_themeに短い名詞句で記録してください。\n"
         "企画の紹介切り口（既存JSONキー comparison_axes）は必ず3つにしてください。比較や優劣を求める軸ではなく商品発見の切り口です。各軸のkeywordsには、そのテーマと組み合わせてAmazonで実際の商品を探せる具体的な検索語を先頭に設定してください。\n"
         "構造化JSONのみを返してください。\n"
     ) + json.dumps(_context(), ensure_ascii=False)
@@ -198,7 +192,7 @@ def _discover_local_candidates(prompt: str) -> list[dict]:
 
 
 
-def replan_published_topic(*, slug: str, category: str, previous_title: str) -> tuple[dict, dict]:
+def replan_published_topic(*, slug: str, category: str, product_theme_name: str) -> tuple[dict, dict]:
     """Run real Planning for the same published article, not fresh-topic ranking.
 
     A published slug must remain stable. Fresh topic ranking intentionally
@@ -209,12 +203,12 @@ def replan_published_topic(*, slug: str, category: str, previous_title: str) -> 
     schema['properties']['candidates'].update(minItems=1, maxItems=1)
     prompt = CONTRACT + '\n' + (
         '既存の公開済み商品紹介記事を最新のPlanning基準で再企画してください。'
-        '既存URL・slug・カテゴリ・購買目的を厳密に維持し、旧商品の選定結果や旧Evidenceは引き継がないでください。'
+        '指定の商品テーマ、既存URL・slug・カテゴリを維持し、企画の切り口は改めて立案してください。旧商品の選定結果や旧Evidenceは引き継がないでください。'
         '独立した商品を3つの紹介切り口ごとに2商品選べる新企画が必要です。'
         '現在の商品の根拠となる検証可能なメーカー・仕様情報の収集可能性を評価してください。'
         '候補はちょうど1件のみで、slugとcategoryは入力どおり完全一致としてください。'
         '既存記事の公開内容は自動変更しません。\n'
-    ) + json.dumps({'slug': slug, 'category': category, 'previous_title': previous_title}, ensure_ascii=False)
+    ) + json.dumps({'slug': slug, 'category': category, 'product_theme': product_theme_name}, ensure_ascii=False)
     def local():
         kind, command, model, _ = _planning_provider('primary')
         response = _invoke_planning(kind, command, model, prompt,
@@ -230,15 +224,20 @@ def replan_published_topic(*, slug: str, category: str, previous_title: str) -> 
     validate_candidate(topic)
     if topic['slug'] != slug or topic['category'] != category:
         raise PlanningError('published article identity must remain unchanged')
+    if _normalize(topic['product_theme']) != _normalize(product_theme_name):
+        raise PlanningError('published product theme must remain unchanged')
     return topic, metadata
 
 
 def validate_candidate(candidate: dict) -> None:
-    for field in ('slug', 'category', 'query', 'title', 'intent_key', 'reader_persona', 'comparison_axes', 'signals'):
+    for field in ('slug', 'category', 'query', 'product_theme', 'intent_key', 'reader_persona', 'comparison_axes', 'signals'):
         if field not in candidate:
             raise PlanningError(f'candidate missing {field}')
-    if '比較' in str(candidate['title']):
-        raise PlanningError('candidate title must not contain 比較')
+    if 'title' in candidate:
+        raise PlanningError('Planner must not supply an article title')
+    theme = candidate['product_theme']
+    if not isinstance(theme, str) or not theme.strip() or len(theme) > 55 or any(x in theme for x in ('｜', '6選')):
+        raise PlanningError('candidate product_theme must be a concise product category')
     persona=candidate.get('reader_persona')
     if persona is not None and (not isinstance(persona,dict) or any(not str(persona.get(k) or '').strip() for k in ('reader','knowledge_level','purchase_goal','editorial_depth'))):
         raise PlanningError('reader_persona requires reader, knowledge_level, purchase_goal and editorial_depth')
@@ -261,7 +260,7 @@ def rank_candidates(candidates: list[dict], feedback: dict | None = None) -> lis
     feedback = feedback or load_feedback()
     existing = json.loads(ARTICLES.read_text(encoding='utf-8'))
     existing_slugs = {row['slug'] for row in existing}
-    existing_intents = {_normalize(' '.join(str(row.get(k, '')) for k in ('slug', 'title', 'summary'))) for row in existing}
+    existing_intents = {_normalize(' '.join((str(row.get('slug') or ''), product_theme(row)))) for row in existing}
     portfolio = _portfolio_signals(existing)
     category_counts = portfolio['category_counts']
     recent_category_counts = portfolio['recent_category_counts']
@@ -284,10 +283,10 @@ def rank_candidates(candidates: list[dict], feedback: dict | None = None) -> lis
         global_gap = ((max_category_count - category_counts[category]) / max_category_count) if max_category_count else 1.0
         recent_gap = ((max_recent_category_count - recent_category_counts[category]) / max_recent_category_count) if max_recent_category_count else 1.0
         portfolio_balance = global_gap * .65 + recent_gap * .35
-        candidate_tokens = _topic_tokens(' '.join(str(candidate.get(k, '')) for k in ('slug', 'intent_key', 'title')))
+        candidate_tokens = _topic_tokens(' '.join(str(candidate.get(k, '')) for k in ('slug', 'intent_key', 'product_theme')))
         recent_family_hits = []
         for row in recent:
-            row_tokens = _topic_tokens(' '.join(str(row.get(k, '')) for k in ('slug', 'title')))
+            row_tokens = _topic_tokens(' '.join(str(row.get(k, '')) for k in ('slug',)))
             if candidate_tokens & row_tokens:
                 recent_family_hits.append(row.get('slug'))
         topic_diversity = max(0.0, 1.0 - min(1.0, len(recent_family_hits) / 3.0))

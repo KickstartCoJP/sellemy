@@ -1,0 +1,48 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "CEO-CHAT-BU002-THEME-TITLE-BRIEF-20261118",
+  "instruction_ref": "CEO direct instructions in BU-002 Sellemy Chat, 2026-11-18: 新規・過去復旧ともPlannerには商品テーマだけを渡す。商品選定はProduct。Writerでタイトル制作しArticle QAで確定。「選ぶ」「探す」「出会い」「発見」を禁止・義務事項から外し、Briefを含む全入力を検査。今回出した課題の範囲に限り全般的に修正。",
+  "instruction": "Implement theme-only historical article inputs to Planner for new and legacy replan; remove Planner article title output; allow Writer to create h1 from Product QA verified six products; remove repeated lexical tone direction from planning, product selection, Writer, editorial plan and stage briefs; preserve publication/gates.",
+  "implementer": "sellemy-ops (non-Codex staging implementation)",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3",
+    "https://app.notion.com/p/3dc67ec6a100816f86daf33e6c7b4bf2",
+    "https://app.notion.com/p/3dc67ec6a1008196b017ee01e1824bba",
+    "https://app.notion.com/p/41b67ec6a10081758ff5c8b8b4f5fc35"
+  ],
+  "allowed_paths": [
+    "change-contracts/bu002-theme-title-brief-20261118.json",
+    "config/growth-stage-briefs.json",
+    "config/writer-editorial-role.md",
+    "pipeline/article_theme.py",
+    "pipeline/editorial_plan.py",
+    "pipeline/legacy_article_recovery.py",
+    "pipeline/planning_runtime.py",
+    "pipeline/product_selection.py",
+    "pipeline/publish_payload.py",
+    "pipeline/role_execution_publish.py",
+    "pipeline/writer_runtime.py",
+    "tests/test_brand_discovery_tone.py",
+    "tests/test_ceo_editorial_recovery.py",
+    "tests/test_legacy_article_recovery.py",
+    "tests/test_legacy_replan_schema_20261117.py",
+    "tests/test_planning_and_selection.py",
+    "tests/test_theme_title_brief_contract_20261118.py"
+  ],
+  "preserved_rules": [
+    "New article admission remains stopped until the published article reinspection is completed and independently authorized",
+    "Six distinct products in three groups of two, Product Evidence and independent QA unchanged",
+    "Old published content and immutable slug/URL preserved until normal CEO publication approval",
+    "Existing CEO Staging promotion / published-article review gates are never bypassed",
+    "No change to quality thresholds, retry counts, monetization, product searching or provider routing",
+    "No Codex used for code or artifact edits"
+  ],
+  "acceptance_tests": [
+    "tests/test_theme_title_brief_contract_20261118.py",
+    "tests/test_planning_and_selection.py",
+    "tests/test_legacy_article_recovery.py",
+    "tests/test_legacy_replan_schema_20261117.py",
+    "tests/test_brand_discovery_tone.py",
+    "tests/test_ceo_editorial_recovery.py"
+  ]
+}

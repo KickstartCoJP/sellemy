@@ -7,13 +7,13 @@ def build_editorial_plan(topic, evidence, ceo_rework=''):
     if len(products) != 6 or len({p.get('ref') for p in products}) != 6 or len(axes) < 2:
         raise ValueError('editorial plan requires 6 refs and 2 axes')
     requirements = [
-        {'id':'E01','section':'lead','instruction':'冒頭で読者が知らなかった商品の魅力や発見できることを示し、この記事を読む楽しさを先に伝える。商品の用途や使う場面を自然に伝える。困りごとや具体的な利用シーンを無理に作らず、商品の面白さや使い道から直接始めてもよい。比較記事であることを定型的に宣言せず、家電など仕様の違いが重要なカテゴリと美容など使用感が中心のカテゴリで表現を使い分ける。「比べます」の一律禁止はしない。冒頭のleadには商品名・ブランド名を記載しない'},
-        {'id':'E02','section':'summary','instruction':'冒頭に表示されるsummaryではleadの言い換えや重複を避ける。固有の商品名・ブランド名を記載せず、読者が記事で出会える商品の魅力と用途の方向性を簡潔に示す。固有の商品推薦は商品紹介で行う'},
-        {'id':'E03','section':'comparison_groups','instruction':'3つの紹介切り口から各2商品に出会える構成にする。切り口は価格・機能・サイズの横並び比較を初期値にせず、用途・使う時間・楽しみ方・個性などテーマに固有の魅力を中心に作る。各組ではその切り口の魅力を短く伝え、各商品の固有の事実・推薦理由は商品カードへ譲る。商品同士の差異や優劣の説明は必須にしない。商品名や証明・検証経緯は商品カセット以外に記載しない'},
+        {'id':'E01','section':'lead','instruction':'冒頭で記事の対象商品や利用場面に関係する具体的な価値を伝える。商品の用途や使う場面を自然に伝える。困りごとや具体的な利用シーンを無理に作らず、商品の面白さや使い道から直接始めてもよい。比較記事であることを定型的に宣言せず、家電など仕様の違いが重要なカテゴリと美容など使用感が中心のカテゴリで表現を使い分ける。「比べます」の一律禁止はしない。冒頭のleadには商品名・ブランド名を記載しない'},
+        {'id':'E02','section':'summary','instruction':'冒頭に表示されるsummaryではleadの言い換えや重複を避ける。固有の商品名・ブランド名を記載せず、記事で扱う商品の特徴と用途を簡潔に示す。固有の商品推薦は商品紹介で行う'},
+        {'id':'E03','section':'comparison_groups','instruction':'3つの紹介切り口で各2商品を紹介する構成にする。切り口は価格・機能・サイズの横並び比較を初期値にせず、用途・使う時間・楽しみ方・個性などテーマに固有の魅力を中心に作る。各組ではその切り口の魅力を短く伝え、各商品の固有の事実・推薦理由は商品カードへ譲る。商品同士の差異や優劣の説明は必須にしない。商品名や証明・検証経緯は商品カセット以外に記載しない'},
         {'id':'E04','section':'products','instruction':'全6商品それぞれについて、根拠のある固有の特徴、魅力、向く人、推薦する理由を説明する。他商品との比較や優劣を強制しない。読者がその商品を知りたくなる固有の魅力と使用場面を優先する。商品説明は各160〜260字を初期目安とし、根拠のない水増しをしない'},
-        {'id':'E05','section':'how_to_choose','instruction':'商品紹介の後に、読者が商品に興味を持つきっかけや、使い道を想像できるポイントを自然な日本語で説明する。商品カードと同じ事実の再掲ではなく、商品との出会いを広げるヒントを示す。確認事項の羅列で終わらせない。商品名・ブランド名・証明・検証経緯は記載しない'},
-        {'id':'E06','section':'conclusion','instruction':'結びには固有の商品名・ブランド名を記載しない。lead・summary・説明の繰り返し、商品羅列や仕様の再説明を避け、読者が気になる商品との出会いを楽しめる短い締めにする。具体的な推薦は商品紹介内で完結させる'},
-        {'id':'E07','section':'all','instruction':'自然な日本語で書き、内部QAや制作工程の情報を記事に露出しない。「選ぶ」「探す」を含む決まり文句や似た構文をタイトル・見出し・リード・結びで反復させず、モノとの出会いと発見を主役にする。語そのものは文脈に応じて使用してよい'},
+        {'id':'E05','section':'how_to_choose','instruction':'商品紹介の後に、読者が商品に興味を持つきっかけや、使い道を想像できるポイントを自然な日本語で説明する。商品カードと同じ事実の再掲ではなく、商品を理解するための実用的なヒントを示す。確認事項の羅列で終わらせない。商品名・ブランド名・証明・検証経緯は記載しない'},
+        {'id':'E06','section':'conclusion','instruction':'結びには固有の商品名・ブランド名を記載しない。lead・summary・説明の繰り返し、商品羅列や仕様の再説明を避け、記事の内容に合う自然な短い締めにする。具体的な推薦は商品紹介内で完結させる'},
+        {'id':'E07','section':'all','instruction':'自然な日本語で書き、内部QAや制作工程の情報を記事に露出しない。特定語句の使用・不使用を指定せず、商品の特徴と推薦理由に沿った自然な表現を用いる'},
         {'id':'E08','section':'all','instruction':'記事の商品名・仕様・推薦・必要な比較の事実が検証済みEvidenceで裏付けられ、事実を創作していない'},
     ]
     if ceo_rework.strip():
@@ -29,7 +29,7 @@ def build_editorial_plan(topic, evidence, ceo_rework=''):
                                  'source':'CEO', 'original':ceo_rework})
     return {
         'schema':'sellemy-editorial-plan/v1',
-        'topic_hash':digest({k:v for k,v in topic.items() if not k.startswith('_')}),
+        'topic_hash':digest({k:v for k,v in topic.items() if not k.startswith('_') and k != 'title'}),
         'evidence_hash':digest(evidence_content(evidence)),
         'reader':topic.get('reader_persona') or {},
         'search_intent':topic.get('search_intent') or '',

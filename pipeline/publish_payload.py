@@ -46,9 +46,17 @@ def _jst_now() -> datetime:
 def _article_entry(payload: dict, evidence: dict, *, existing: dict | None, now: datetime) -> dict:
     published_at = (existing or {}).get('published_at') or now.isoformat()
     source = (existing or {}).get('published_at_source') or 'publish_event'
+    from growth_recovery import read_artifact
+    from article_theme import product_theme
+    topic = read_artifact(payload['slug'], 'topic.json', {}) or {}
+    theme_source = topic if any(topic.get(k) for k in ('product_theme', 'theme', 'title', 'query')) else (existing or {})
+    if not any(theme_source.get(k) for k in ('product_theme', 'theme', 'title', 'query')):
+        theme_source = {'title': payload['h1']}
+    theme = product_theme(theme_source)
     return {
         'article_id': payload['slug'],
         'title': payload['h1'],
+        'product_theme': theme,
         'slug': payload['slug'],
         'category': payload['category'],
         'img': evidence['eyecatch_image'],

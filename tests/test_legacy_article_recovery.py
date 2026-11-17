@@ -130,11 +130,11 @@ class LegacyArticleRecoveryTests(unittest.TestCase):
         new_products = [{'ref': f'P{i}', 'asin': f'B00000000{i}',
                          'sources': [{'verified': True, 'url': f'https://example.org/new{i}',
                                       'excerpt': f'Product {i}'}]} for i in range(6)]
-        topic = {'slug': self.slug, 'category': 'gadget', 'title': 'New title',
+        topic = {'slug': self.slug, 'category': 'gadget', 'product_theme': '浴室用スクイージー',
                  'comparison_axes': [{'id': f'axis{i}', 'keywords': ['product'],
                                       'label': f'Axis {i}'} for i in range(3)]}
         fresh = {'slug': self.slug, 'category': 'gadget', 'products': new_products}
-        with patch('planning_runtime.replan_published_topic', return_value=(topic, {'provider': 'test'})), \
+        with patch('planning_runtime.replan_published_topic', return_value=(topic, {'provider': 'test'})) as replanner, \
              patch('growth_role_business.collect_unique_products', return_value=(new_products, {'complete': True})), \
              patch('product_selection.select_six', return_value=(new_products, {'axes': []})), \
              patch('growth_role_business.build_evidence', return_value=fresh), \
@@ -142,8 +142,10 @@ class LegacyArticleRecoveryTests(unittest.TestCase):
              patch('comparison_acceptance.product_issues', return_value=[]):
             result = legacy.replan_one(self.slug)
         self.assertEqual(result['product_qa'], 'PASS')
+        self.assertNotIn('previous_title', replanner.call_args.kwargs)
+        self.assertTrue(replanner.call_args.kwargs.get('product_theme_name'))
         self.assertEqual(recovery.load_job(self.slug)['current_stage'], 'WRITER_PENDING')
-        self.assertEqual(recovery.read_artifact(self.slug, 'topic.json')['title'], 'New title')
+        self.assertEqual(recovery.read_artifact(self.slug, 'topic.json')['product_theme'], '浴室用スクイージー')
         self.assertEqual(recovery.read_artifact(self.slug, 'chat-publish-approval.json'), {})
         self.assertEqual(recovery.read_artifact(self.slug, legacy.MARKER)['phase'], 'regular_repair')
         self.assertEqual((self.repo/'article/gadget/sample-article.html').read_text(), 'old')
