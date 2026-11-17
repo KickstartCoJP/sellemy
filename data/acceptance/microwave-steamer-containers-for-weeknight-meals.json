@@ -1,0 +1,1082 @@
+{
+  "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+  "evidence_sha256": "e37849d50381d61f9197256bf3152442b73b245688ba86b722c81c63173e07b2",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 14848,
+    "input_tokens": 32005,
+    "member_binding_revision": 4,
+    "output_tokens": 6988,
+    "reasoning_effort": "medium",
+    "reasoning_output_tokens": 510,
+    "session_id": "01a1e739-131c-7c82-9911-10220d80e561",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "a17515e7943bc2aacc5aa37ddd4446c1b4a0df6249f0749a8c36d238e67d240c",
+  "review": {
+    "buying_guidance": true,
+    "claims_grounded": true,
+    "complete_comparison": true,
+    "distinct_products": true,
+    "duplicate_pair_checks": [
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "外寸と容量は近いが、本体が同一かは不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "",
+            "reason": "色だけの違いかは不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "包装だけの違いを示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "1.5L",
+            "reason": "掲載容量は同じ。",
+            "right_quote": "1.5 L",
+            "status": "N/A"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "",
+            "reason": "鍋の構造差は確認できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列の関係は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand MIクリエーションズ",
+            "reason": "掲載ブランドは異なるが、製造元の関係は不明。",
+            "right_quote": "Brand アンドエヌイー(&NE)",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "1-Person Pot KB-700",
+            "reason": "異なる名称・型番の商品として、それぞれの用途を紹介できる。",
+            "right_quote": "Rakuchin! Recopo NIM-118-BL",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "寸法・容量が近い点は同一本体の肯定証拠ではない。",
+        "right_ref": "p2"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Materials: Polypropylene",
+            "reason": "本体素材が異なる。",
+            "right_quote": "Material and composition: Heat-resistant glass",
+            "status": "FAIL"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "Materials: Polypropylene",
+            "reason": "色だけの違いではない。",
+            "right_quote": "Material and composition: Heat-resistant glass",
+            "status": "FAIL"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "Materials: Polypropylene",
+            "reason": "包装だけの違いではない。",
+            "right_quote": "Material and composition: Heat-resistant glass",
+            "status": "FAIL"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "1.5L",
+            "reason": "掲載容量は同じ。",
+            "right_quote": "Capacity: 1.5L",
+            "status": "N/A"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "1-Person Pot KB-700",
+            "reason": "一人用レンジ鍋とガラス製キャセロール。",
+            "right_quote": "Heat-Resistant Glass Casserole 1.5L B683",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "共通系列を示す資料はない。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand MIクリエーションズ",
+            "reason": "掲載ブランドが異なる。",
+            "right_quote": "Brand Iwaki",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "1-Person Pot KB-700",
+            "reason": "用途と素材に基づく別々の購入判断ができる。",
+            "right_quote": "Heat-Resistant Glass Casserole 1.5L B683",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "本体素材と商品形態が異なる。",
+        "right_ref": "p3"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Materials: Polypropylene",
+            "reason": "本体素材が異なる。",
+            "right_quote": "main body/heat-resistant glass",
+            "status": "FAIL"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "Materials: Polypropylene",
+            "reason": "色だけの違いではない。",
+            "right_quote": "main body/heat-resistant glass",
+            "status": "FAIL"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "Materials: Polypropylene",
+            "reason": "包装だけの違いではない。",
+            "right_quote": "main body/heat-resistant glass",
+            "status": "FAIL"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "1.5L",
+            "reason": "掲載容量が異なる。",
+            "right_quote": "1,200 mL",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "1-Person Pot KB-700",
+            "reason": "一人用鍋とざる付き蒸し器。",
+            "right_quote": "With a colander",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "共通系列を示す資料はない。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand MIクリエーションズ",
+            "reason": "掲載ブランドが異なる。",
+            "right_quote": "Brand HARIO",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "1-Person Pot KB-700",
+            "reason": "調理形態に応じて別々に推薦できる。",
+            "right_quote": "With a colander",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "本体素材と構造が異なる。",
+        "right_ref": "p4"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "両者とも樹脂製だが、同一本体を示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "1-Person Pot KB-700",
+            "reason": "掲載用途と型番が異なる。",
+            "right_quote": "Ebisu PS-G305 Pack Staff Simple Microwave Healthy Steamed Vegetables",
+            "status": "FAIL"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "包装上の関係は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "1.5L",
+            "reason": "掲載容量が異なる。",
+            "right_quote": "1,000 ml",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "single-serving hot pot",
+            "reason": "一人用鍋と蒸し野菜向け容器として掲載されている。",
+            "right_quote": "Healthy Steamed Vegetables",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "共通系列を示す資料はない。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand MIクリエーションズ",
+            "reason": "掲載ブランドは異なるが、製造元の関係は不明。",
+            "right_quote": "Brand Ebisu",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "single-serving hot pot",
+            "reason": "訴求される使い道が異なる。",
+            "right_quote": "Healthy Steamed Vegetables",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "容量と掲載用途が異なり、同一商品を示す証拠はない。",
+        "right_ref": "p5"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Materials: Polypropylene",
+            "reason": "本体素材が異なる。",
+            "right_quote": "Material: Silicone rubber",
+            "status": "FAIL"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "Materials: Polypropylene",
+            "reason": "色だけの違いではない。",
+            "right_quote": "Material: Silicone rubber",
+            "status": "FAIL"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "Materials: Polypropylene",
+            "reason": "包装だけの違いではない。",
+            "right_quote": "Material: Silicone rubber",
+            "status": "FAIL"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "p6の容量は示されていない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "1-Person Pot KB-700",
+            "reason": "レンジ鍋と角型シリコーン蒸し器。",
+            "right_quote": "Silicone Steamer Square",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "共通系列を示す資料はない。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand MIクリエーションズ",
+            "reason": "掲載ブランドが異なる。",
+            "right_quote": "Brand WAHEI FREIZ",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "single-serving hot pot",
+            "reason": "紹介できる用途が異なる。",
+            "right_quote": "Steamed Dishes Simmered Dishes Noodles Cake Making",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "素材と商品形態が異なる。",
+        "right_ref": "p6"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Material: Polypropylene",
+            "reason": "本体素材が異なる。",
+            "right_quote": "Material and composition: Heat-resistant glass",
+            "status": "FAIL"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "Material: Polypropylene",
+            "reason": "色だけの違いではない。",
+            "right_quote": "Material and composition: Heat-resistant glass",
+            "status": "FAIL"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "Material: Polypropylene",
+            "reason": "包装だけの違いではない。",
+            "right_quote": "Material and composition: Heat-resistant glass",
+            "status": "FAIL"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "(1.5 L)",
+            "reason": "掲載容量は同じ。",
+            "right_quote": "Capacity: 1.5L",
+            "status": "N/A"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "Microwave Pot",
+            "reason": "レンジ鍋とガラス製キャセロール。",
+            "right_quote": "Heat-Resistant Glass Casserole",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "共通系列を示す資料はない。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand アンドエヌイー(&NE)",
+            "reason": "掲載ブランドが異なる。",
+            "right_quote": "Brand Iwaki",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "cook and arrange it on the table as is",
+            "reason": "食卓での扱いと素材をそれぞれ紹介できる。",
+            "right_quote": "Material and composition: Heat-resistant glass",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p2",
+        "reason": "本体素材と商品形態が異なる。",
+        "right_ref": "p3"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Material: Polypropylene",
+            "reason": "本体素材が異なる。",
+            "right_quote": "main body/heat-resistant glass",
+            "status": "FAIL"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "Material: Polypropylene",
+            "reason": "色だけの違いではない。",
+            "right_quote": "main body/heat-resistant glass",
+            "status": "FAIL"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "Material: Polypropylene",
+            "reason": "包装だけの違いではない。",
+            "right_quote": "main body/heat-resistant glass",
+            "status": "FAIL"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "(1.5 L)",
+            "reason": "掲載容量が異なる。",
+            "right_quote": "1,200 mL",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "Microwave Pot",
+            "reason": "レンジ鍋とざる付き蒸し器。",
+            "right_quote": "With a colander",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "共通系列を示す資料はない。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand アンドエヌイー(&NE)",
+            "reason": "掲載ブランドが異なる。",
+            "right_quote": "Brand HARIO",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "cook and arrange it on the table as is",
+            "reason": "それぞれ固有の使い道を紹介できる。",
+            "right_quote": "With a colander",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p2",
+        "reason": "本体素材と構造が異なる。",
+        "right_ref": "p4"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "同一本体を示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "Rakuchin! Recopo NIM-118-BL Microwave Pot",
+            "reason": "掲載された商品系列と用途が異なる。",
+            "right_quote": "Ebisu PS-G305 Pack Staff Simple Microwave Healthy Steamed Vegetables",
+            "status": "FAIL"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "包装上の関係は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "(1.5 L)",
+            "reason": "掲載容量が異なる。",
+            "right_quote": "1,000 ml",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "Microwave Pot",
+            "reason": "レンジ鍋と蒸し野菜向け容器として掲載されている。",
+            "right_quote": "Healthy Steamed Vegetables",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "共通系列を示す資料はない。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand アンドエヌイー(&NE)",
+            "reason": "掲載ブランドは異なるが、製造元の関係は不明。",
+            "right_quote": "Brand Ebisu",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "cook and arrange it on the table as is",
+            "reason": "食卓で使う鍋と蒸し野菜向け容器として別々に紹介できる。",
+            "right_quote": "Healthy Steamed Vegetables",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p2",
+        "reason": "容量・掲載用途が異なり、同一商品を示す証拠はない。",
+        "right_ref": "p5"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Material: Polypropylene",
+            "reason": "本体素材が異なる。",
+            "right_quote": "Material: Silicone rubber",
+            "status": "FAIL"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "Material: Polypropylene",
+            "reason": "色だけの違いではない。",
+            "right_quote": "Material: Silicone rubber",
+            "status": "FAIL"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "Material: Polypropylene",
+            "reason": "包装だけの違いではない。",
+            "right_quote": "Material: Silicone rubber",
+            "status": "FAIL"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "p6の容量は示されていない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "Microwave Pot",
+            "reason": "レンジ鍋と角型シリコーン蒸し器。",
+            "right_quote": "Silicone Steamer Square",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "共通系列を示す資料はない。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand アンドエヌイー(&NE)",
+            "reason": "掲載ブランドが異なる。",
+            "right_quote": "Brand WAHEI FREIZ",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "cook and arrange it on the table as is",
+            "reason": "それぞれ異なる使用場面を紹介できる。",
+            "right_quote": "microwave or oven",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p2",
+        "reason": "本体素材と商品形態が異なる。",
+        "right_ref": "p6"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "ガラス製だが、同一本体を示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "Heat-Resistant Glass Casserole 1.5L B683",
+            "reason": "p4にはざるが付く。",
+            "right_quote": "With a colander",
+            "status": "FAIL"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "Heat-Resistant Glass Casserole 1.5L B683",
+            "reason": "掲載された構成は包装差だけではない。",
+            "right_quote": "With a colander",
+            "status": "FAIL"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "Capacity: 1.5L",
+            "reason": "掲載容量が異なる。",
+            "right_quote": "1,200 mL",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "Heat-Resistant Glass Casserole",
+            "reason": "キャセロールとざる付き蒸し器。",
+            "right_quote": "lid and strainer/polypropylene",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "共通系列を示す資料はない。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand Iwaki",
+            "reason": "掲載ブランドが異なる。",
+            "right_quote": "Brand HARIO",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "Capacity: 1.5L",
+            "reason": "容量とざる付き構造に基づき別々に紹介できる。",
+            "right_quote": "With a colander",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p3",
+        "reason": "構成と容量が異なる。",
+        "right_ref": "p4"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Material and composition: Heat-resistant glass",
+            "reason": "本体素材が異なる。",
+            "right_quote": "■Material resin: Polypropylene",
+            "status": "FAIL"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "Material and composition: Heat-resistant glass",
+            "reason": "色だけの違いではない。",
+            "right_quote": "■Material resin: Polypropylene",
+            "status": "FAIL"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "Material and composition: Heat-resistant glass",
+            "reason": "包装だけの違いではない。",
+            "right_quote": "■Material resin: Polypropylene",
+            "status": "FAIL"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "Capacity: 1.5L",
+            "reason": "掲載容量が異なる。",
+            "right_quote": "1,000 ml",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "Heat-Resistant Glass Casserole",
+            "reason": "キャセロールと蒸し野菜向け容器。",
+            "right_quote": "Healthy Steamed Vegetables",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "共通系列を示す資料はない。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand Iwaki",
+            "reason": "掲載ブランドが異なる。",
+            "right_quote": "Brand Ebisu",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "Heat-Resistant Glass Casserole",
+            "reason": "それぞれの用途で推薦できる。",
+            "right_quote": "Healthy Steamed Vegetables",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p3",
+        "reason": "本体素材と用途が異なる。",
+        "right_ref": "p5"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Material and composition: Heat-resistant glass",
+            "reason": "本体素材が異なる。",
+            "right_quote": "Material: Silicone rubber",
+            "status": "FAIL"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "Material and composition: Heat-resistant glass",
+            "reason": "色だけの違いではない。",
+            "right_quote": "Material: Silicone rubber",
+            "status": "FAIL"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "Material and composition: Heat-resistant glass",
+            "reason": "包装だけの違いではない。",
+            "right_quote": "Material: Silicone rubber",
+            "status": "FAIL"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "p6の容量は示されていない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "Heat-Resistant Glass Casserole",
+            "reason": "ガラス製キャセロールとシリコーン蒸し器。",
+            "right_quote": "Silicone Steamer Square",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "共通系列を示す資料はない。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand Iwaki",
+            "reason": "掲載ブランドが異なる。",
+            "right_quote": "Brand WAHEI FREIZ",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "Heat-Resistant Glass Casserole",
+            "reason": "素材と形態に基づいて別々に推薦できる。",
+            "right_quote": "Silicone Steamer Square",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p3",
+        "reason": "本体素材と商品形態が異なる。",
+        "right_ref": "p6"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "main body/heat-resistant glass",
+            "reason": "本体素材が異なる。",
+            "right_quote": "■Material resin: Polypropylene",
+            "status": "FAIL"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "main body/heat-resistant glass",
+            "reason": "色だけの違いではない。",
+            "right_quote": "■Material resin: Polypropylene",
+            "status": "FAIL"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "main body/heat-resistant glass",
+            "reason": "包装だけの違いではない。",
+            "right_quote": "■Material resin: Polypropylene",
+            "status": "FAIL"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "1,200 mL",
+            "reason": "掲載容量が異なる。",
+            "right_quote": "1,000 ml",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "With a colander",
+            "reason": "p4はざる付きガラス製蒸し器、p5は蒸し野菜向け樹脂容器。",
+            "right_quote": "Healthy Steamed Vegetables",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "共通系列を示す資料はない。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand HARIO",
+            "reason": "掲載ブランドが異なる。",
+            "right_quote": "Brand Ebisu",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "With a colander",
+            "reason": "それぞれの構造・用途で推薦できる。",
+            "right_quote": "Healthy Steamed Vegetables",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p4",
+        "reason": "本体素材と掲載構造が異なる。",
+        "right_ref": "p5"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "main body/heat-resistant glass",
+            "reason": "本体素材が異なる。",
+            "right_quote": "Material: Silicone rubber",
+            "status": "FAIL"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "main body/heat-resistant glass",
+            "reason": "色だけの違いではない。",
+            "right_quote": "Material: Silicone rubber",
+            "status": "FAIL"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "main body/heat-resistant glass",
+            "reason": "包装だけの違いではない。",
+            "right_quote": "Material: Silicone rubber",
+            "status": "FAIL"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "p6の容量は示されていない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "With a colander",
+            "reason": "ざる付きガラス製蒸し器と角型シリコーン蒸し器。",
+            "right_quote": "Silicone Steamer Square",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "共通系列を示す資料はない。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand HARIO",
+            "reason": "掲載ブランドが異なる。",
+            "right_quote": "Brand WAHEI FREIZ",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "With a colander",
+            "reason": "それぞれ固有の構造・使い道を紹介できる。",
+            "right_quote": "microwave or oven",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p4",
+        "reason": "本体素材と構造が異なる。",
+        "right_ref": "p6"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "■Material resin: Polypropylene",
+            "reason": "本体素材が異なる。",
+            "right_quote": "Material: Silicone rubber",
+            "status": "FAIL"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "■Material resin: Polypropylene",
+            "reason": "色だけの違いではない。",
+            "right_quote": "Material: Silicone rubber",
+            "status": "FAIL"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "■Material resin: Polypropylene",
+            "reason": "包装だけの違いではない。",
+            "right_quote": "Material: Silicone rubber",
+            "status": "FAIL"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "p6の容量は示されていない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "Healthy Steamed Vegetables",
+            "reason": "蒸し野菜向け樹脂容器と角型シリコーン蒸し器。",
+            "right_quote": "Silicone Steamer Square",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "共通系列を示す資料はない。",
+            "right_quote": "",
+            "status": "N/A"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand Ebisu",
+            "reason": "掲載ブランドが異なる。",
+            "right_quote": "Brand WAHEI FREIZ",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "Healthy Steamed Vegetables",
+            "reason": "蒸し野菜中心と複数の料理用途として別々に紹介できる。",
+            "right_quote": "Steamed Dishes Simmered Dishes Noodles Cake Making",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p5",
+        "reason": "本体素材と掲載用途が異なる。",
+        "right_ref": "p6"
+      }
+    ],
+    "editorial_voice_appropriate": true,
+    "internal_qa_leak_absent": true,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "single_portion",
+            "quote": "Quickly make a single-person pot in the microwave"
+          }
+        ],
+        "identity_key": "MI Creations Microwave Cooking Pot",
+        "identity_quote": "MI Creations Microwave Cooking Pot Brown 1.5L Made in Japan 1-Person Pot KB-700",
+        "reason": "KB-700の一人用レンジ鍋と識別できる。容量、素材、レンジでの一人鍋という使い方が示され、一人分の温かい料理を添える推薦が成立する。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "single_portion",
+            "quote": "Even if you live alone or are not good at cooking"
+          }
+        ],
+        "identity_key": "アンドエヌイー(&NE) Rakuchin! Recopo NIM-118-BL",
+        "identity_quote": "アンドエヌイー(&NE) Rakuchin! Recopo NIM-118-BL Microwave Pot, Blue, Made in Japan",
+        "reason": "レコポの型番付きレンジ鍋と識別できる。容量、素材、調理後に食卓へ出す使い方が示され、一人の食事で使う推薦が成立する。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "shared_dish",
+            "quote": "Material and composition: Heat-resistant glass"
+          }
+        ],
+        "identity_key": "Iwaki Heat-Resistant Glass Casserole 1.5L B683",
+        "identity_quote": "Iwaki Heat-Resistant Glass Casserole 1.5L B683 Microwave Cooking Rice Oven Steamer Simmering Bowl Dishwasher Safe",
+        "reason": "B683の耐熱ガラス製キャセロールと識別できる。容量、素材、レンジ調理用途が示されており、器ごと食卓に出したい人への紹介が成立する。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "shared_dish",
+            "quote": "After steaming ingredients in the microwave, you can also use the bowl for cooking"
+          }
+        ],
+        "identity_key": "HARIO Glass Microwave Steamer",
+        "identity_quote": "HARIO Glass Microwave Steamer, 1200ml Full Capacity, Easy Cooking in Microwave, White, Made in Japan, Microwave, Side Dish, Cream Soup, Handmade, XMK-120-W",
+        "reason": "XMK-120-Wのざる付きガラス製レンジ蒸し器と識別できる。容量、部品構成、1〜2人分の料理例が示され、蒸した後のボウルも使いたい人への推薦が成立する。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "vegetable_prep",
+            "quote": "Simple Microwave Healthy Steamed Vegetables"
+          }
+        ],
+        "identity_key": "Ebisu PS-G305",
+        "identity_quote": "Ebisu PS-G305 Pack Staff Simple Microwave Healthy Steamed Vegetables",
+        "reason": "PS-G305の蒸し野菜向けレンジ容器と識別できる。素材、容量、寸法と用途が示され、野菜を副菜や料理の下ごしらえに使いたい人への推薦が成立する。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "vegetable_prep",
+            "quote": "Steamed Dishes Simmered Dishes Noodles Cake Making"
+          }
+        ],
+        "identity_key": "Wahei Freiz Microwave Cooking Silicone Steamer",
+        "identity_quote": "Wahei Freiz Microwave Cooking Silicone Steamer Square Ivory Steamed Dishes Simmered Dishes Noodles Cake Making Also Compatible with Oven Heat Resistant up to 200 Degrees Celsius Recipe Included",
+        "reason": "和平フレイズの角型シリコーン蒸し器と識別できる。素材、寸法、蒸し料理やほかの料理への用途が示され、野菜を蒸すことから使い始めたい人への推薦が成立する。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reader_decision_outsourcing_absent": true,
+    "reason": "6商品はそれぞれ識別でき、電子レンジ調理容器という企画に適合する。3つの切り口に各2商品が入り、掲載情報に基づいて各商品の用途と推薦理由を説明できる。同一商品の色・包装違いだと確定できる組はない。",
+    "recommendation_conclusion": true,
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}
