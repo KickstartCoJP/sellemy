@@ -1,0 +1,11 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "TASK-BU002-LEGACY-436-CONTINUOUS-RECOVERY-20261115",
+  "instruction_ref": "CEO direct instruction 2026-11-17: resume historical published-article reinspection; do not restart new article creation",
+  "instruction": "Restore historical published-article reinspection only, repair proven provider schema mismatch. Existing articles and CEO review gates remain preserved; no new content admission.",
+  "implementer": "sellemy-ops",
+  "canonical_refs": ["https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3", "https://app.notion.com/p/3e967ec6a10081208a40f0fee3583043"],
+  "allowed_paths": ["change-contracts/bu002-legacy-replan-schema-20261117.json", "pipeline/planning_runtime.py", "tests/test_legacy_replan_schema_20261117.py"],
+  "preserved_rules": ["No fresh topic admission until published-article reinspection completes", "Existing slug, publication URL, source article and product evidence remain unchanged until independent Product QA success", "CEO review gate and existing approvals unchanged", "Normal fresh Planning minItems=6 untouched"],
+  "acceptance_tests": ["tests/test_legacy_replan_schema_20261117.py"]
+}
