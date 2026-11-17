@@ -44,7 +44,7 @@ def designer(slug: str) -> dict:
     started = time.monotonic()
     try:
         with PublishGate(ROOT).acquire():
-            receipt = ensure_routed_eyecatch(slug=slug, title=topic['title'],
+            receipt = ensure_routed_eyecatch(slug=slug, title=payload['h1'],
                                              category=category, evidence=evidence, payload=payload)
             save_eyecatch(slug, receipt=receipt,
                           image_path=ROOT / 'img' / slug / f'{slug}.png')
@@ -73,7 +73,7 @@ def designer(slug: str) -> dict:
             from eyecatch_owner_bridge import ensure_owner_request
             try:
                 owner['owner_eyecatch_request'] = ensure_owner_request(
-                    slug=slug, title=topic['title'], category=category,
+                    slug=slug, title=payload['h1'], category=category,
                     evidence=evidence, payload=payload)
             except Exception as owner_exc:
                 owner['owner_eyecatch_request_error'] = f'{type(owner_exc).__name__}: {owner_exc}'

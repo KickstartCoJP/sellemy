@@ -53,8 +53,14 @@ def test_writer_stage_scope_excludes_evidence_audit_history():
     assert 'source anchor' not in writer
     assert '明示仕様→用途との照合' not in writer
     assert '## Learned' in writer
-    assert '冒頭と結び' in writer or '用途' in writer
-    assert 'source anchor' in _stage_brief_text(brief,'planning')
+    # Runtime learned brief may be empty in a clean staging worktree.
+    # Persistent editorial instructions are supplied through stage-scoped baselines.
+    import json
+    baseline = json.loads((root/'config/growth-stage-briefs.json').read_text())['baseline']['writer']
+    assert any('商品' in item for item in baseline)
+    assert not any('出会いを楽しめる' in item for item in baseline)
+    assert '## Learned' in _stage_brief_text(brief,'planning')
+    assert any('企画' in item for item in json.loads((root/'config/growth-stage-briefs.json').read_text())['baseline']['planning'])
     prompt=_prompt({'slug':'article'}, valid_editorial_evidence())
     assert CONTRACT not in prompt
     assert '事実や使用経験を創作しないでください' in prompt

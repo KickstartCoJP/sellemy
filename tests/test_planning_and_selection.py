@@ -18,7 +18,7 @@ from product_selection import select_six
 
 def candidate(slug='new-topic', category='beauty', score=.8):
     return {
-        'slug': slug, 'category': category, 'query': '新しい商品テーマ', 'title': '新しい商品テーマ6選',
+        'slug': slug, 'category': category, 'query': '新しい商品テーマ', 'product_theme': '新しい商品テーマ',
         'intent_key': slug, 'reader_persona': {'reader':'daily buyers', 'knowledge_level':'general', 'purchase_goal':'find suitable product', 'editorial_depth':'practical everyday advice'}, 'comparison_axes': [
             {'id': 'gentle', 'label': '使い心地', 'keywords': ['やさしい']},
             {'id': 'power', 'label': '性能', 'keywords': ['高性能']},
@@ -91,7 +91,7 @@ class ContinuousPlanningTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             articles = Path(tmp) / 'articles.json'
             rows = [
-                {'slug': f'topic-{i}-item', 'category': 'gadget', 'title': ('長いタイトル' * 30) + str(i), 'summary': 'x' * 500}
+                {'slug': f'topic-{i}-item', 'category': 'gadget', 'product_theme': f'防水マット{i}', 'title': ('長いタイトル' * 30) + str(i), 'summary': 'x' * 500}
                 for i in range(320)
             ]
             articles.write_text(json.dumps(rows, ensure_ascii=False))
@@ -99,8 +99,10 @@ class ContinuousPlanningTests(unittest.TestCase):
             with patch.object(planning_runtime, 'ARTICLES', articles), patch.object(planning_runtime, 'SEEDS', seeds):
                 context = planning_runtime._context()
         self.assertNotIn('existing_articles', context)
-        self.assertEqual(len(context['existing_slugs']), 320)
-        self.assertEqual(len(context['recent_articles']), 36)
+        self.assertNotIn('existing_slugs', context)
+        self.assertNotIn('recent_articles', context)
+        self.assertIn('existing_article_themes', context)
+        self.assertTrue(all('タイトル' not in x for x in context['existing_article_themes']))
         self.assertLess(len(json.dumps(context, ensure_ascii=False)), 30000)
 
     def test_ranking_rejects_existing_intent_and_balances_categories(self):

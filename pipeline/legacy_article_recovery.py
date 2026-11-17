@@ -344,12 +344,11 @@ def replan_one(slug: str) -> dict:
         raise ValueError('published legacy Planning restart not authorized for ' + slug)
     old_topic = read_artifact(slug, 'topic.json') or {}
     old_payload = read_artifact(slug, 'payload.json') or {}
-    original_title = str(old_payload.get('h1') or old_topic.get('title') or '').strip()
-    if not original_title:
-        raise ValueError('published article title missing')
+    from article_theme import product_theme
+    theme = product_theme({**old_topic, 'title': old_payload.get('h1') or old_topic.get('title')})
     try:
         topic, provider = replan_published_topic(slug=slug, category=state['category'],
-                                                previous_title=original_title)
+                                                product_theme_name=theme)
         products, trace = collect_unique_products(topic, cache_only=False)
         if len(products) != 6 or trace.get('complete') is not True:
             raise ValueError('new Planning product research lacks six distinct items')
