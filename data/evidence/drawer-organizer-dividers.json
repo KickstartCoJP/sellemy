@@ -1,0 +1,1373 @@
+{
+  "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/drawer-organizer-dividers.html",
+  "category": "dailygoods",
+  "comparison_axes": [
+    {
+      "id": "fit",
+      "keywords": [
+        "引き出し 仕切り板 伸縮"
+      ],
+      "label": "引き出し内寸に合わせられる範囲"
+    },
+    {
+      "id": "mounting",
+      "keywords": [
+        "引き出し 仕切り板 突っ張り"
+      ],
+      "label": "突っ張り・差し込みなどの固定方法"
+    },
+    {
+      "id": "height",
+      "keywords": [
+        "引き出し 仕切り板 高さ調整"
+      ],
+      "label": "収納物に合う仕切りの高さ"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/drawer-organizer-dividers/drawer-organizer-dividers.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "9f9cf3541ec1cd40ab5d06e819a5cda443e80d1e26f8687797f46f59a3576f86",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 14848,
+      "input_tokens": 38357,
+      "member_binding_revision": 4,
+      "output_tokens": 7325,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 677,
+      "session_id": "01a1ba44-5d3a-7e82-b510-7392cbb76e45",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "",
+              "reason": "同一本体・系列を確定できない。",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "高さ8.2cm",
+              "reason": "高さが異なる。",
+              "right_quote": "12.8 cm",
+              "status": "PASS"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "26 ～ 42 cm",
+              "reason": "対応内寸が異なる。",
+              "right_quote": "29.5 to 47 cm",
+              "status": "PASS"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "高さは 8.2 cm、内幅 26 ～ 42 cm",
+              "reason": "高さと伸縮範囲が異なる。",
+              "right_quote": "12.8 cm) in height, and the length can be adjusted from 11.6 to 18.5 inches (29.5 to 47 cm)",
+              "status": "PASS"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "",
+              "reason": "独立した機構差は不明。",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "",
+              "reason": "系列・世代関係は不明。",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "ブランド Lifewit",
+              "reason": "同一ブランド。",
+              "right_quote": "Brand Lifewit",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "高さは 8.2 cm",
+              "reason": "引き出しの深さで選択が変わる。",
+              "right_quote": "12.8 cm) in height",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p1",
+          "reason": "同一本体を示す根拠はなく、高さと対応内寸に実用上の差がある。",
+          "right_ref": "p2"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "各仕切りの高さは 8.2 cm",
+              "reason": "仕切り板とトレーで本体が異なる。",
+              "right_quote": "25 trays, consisting of 4 different sizes",
+              "status": "PASS"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "拡張可能",
+              "reason": "製品形態が異なる。",
+              "right_quote": "25 trays",
+              "status": "PASS"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "仕切り",
+              "reason": "数量だけの差ではない。",
+              "right_quote": "storage boxes",
+              "status": "PASS"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "高さは 8.2 cm",
+              "reason": "寸法が異なる。",
+              "right_quote": "22.9cm*15.2cm*4.6cm",
+              "status": "PASS"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "便利な上部ボタン",
+              "reason": "伸縮式の板と置き型トレー。",
+              "right_quote": "25 trays",
+              "status": "PASS"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "",
+              "reason": "系列・世代関係は不明。",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "ブランド Lifewit",
+              "reason": "同一ブランド。",
+              "right_quote": "Brand Lifewit",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "内幅 26 ～ 42 cm",
+              "reason": "仕切り板と小物用トレーを用途で選び分けられる。",
+              "right_quote": "4 different sizes",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p1",
+          "reason": "本体構造と収納方法が異なる。",
+          "right_ref": "p3"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "",
+              "reason": "同一本体・系列かは不明。",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "高さ8.2cm",
+              "reason": "高さが異なる。",
+              "right_quote": "Height 10.2cm",
+              "status": "PASS"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "高さ8.2cm",
+              "reason": "数量だけの差ではない。",
+              "right_quote": "Height 10.2cm",
+              "status": "PASS"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "内幅 26 ～ 42 cm",
+              "reason": "対応内寸と高さの記載が異なる。",
+              "right_quote": "27 - 41.5cm",
+              "status": "PASS"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "",
+              "reason": "明確な機構差は不明。",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "",
+              "reason": "系列・世代関係は不明。",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "ブランド Lifewit",
+              "reason": "同一ブランド。",
+              "right_quote": "Brand: Lifewit",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "8.2 cm",
+              "reason": "必要な仕切り高さで選択が変わる。",
+              "right_quote": "10.2cm",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p1",
+          "reason": "同一本体を示す根拠はなく、高さに購入上の差がある。",
+          "right_ref": "p4"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "",
+              "reason": "同一本体・系列かは不明。",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "82高さ mm",
+              "reason": "高さが異なる。",
+              "right_quote": "60H mm",
+              "status": "PASS"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "260奥行き x 16幅 x 82高さ mm",
+              "reason": "寸法が異なる。",
+              "right_quote": "280D x 20W x 60H mm",
+              "status": "PASS"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "260奥行き x 16幅 x 82高さ mm",
+              "reason": "高さと厚みが異なる。",
+              "right_quote": "280D x 20W x 60H mm",
+              "status": "PASS"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "",
+              "reason": "明確な機構差は不明。",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "",
+              "reason": "系列・世代関係は不明。",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "ブランド Lifewit",
+              "reason": "同一ブランド。",
+              "right_quote": "Brand Lifewit",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "8.2 cm",
+              "reason": "引き出しの深さで選択が変わる。",
+              "right_quote": "2.36 inches",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p1",
+          "reason": "同一本体を示す根拠はなく、高さが異なる。",
+          "right_ref": "p5"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "",
+              "reason": "同一本体・系列かは不明。",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "82高さ mm",
+              "reason": "高さが異なる。",
+              "right_quote": "100H mm",
+              "status": "PASS"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "260奥行き x 16幅 x 82高さ mm",
+              "reason": "寸法が異なる。",
+              "right_quote": "280D x 20W x 100H mm",
+              "status": "PASS"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "260奥行き x 16幅 x 82高さ mm",
+              "reason": "本体寸法が異なる。",
+              "right_quote": "280D x 20W x 100H mm",
+              "status": "PASS"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "両端にシリコンストリップ",
+              "reason": "引き出しに接する部材の記載が異なる。",
+              "right_quote": "EVA foam sponge on both ends",
+              "status": "PASS"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "",
+              "reason": "系列・世代関係は不明。",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "ブランド Lifewit",
+              "reason": "同一ブランド。",
+              "right_quote": "Brand Lifewit",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "8.2 cm",
+              "reason": "仕切り高さで選択が変わる。",
+              "right_quote": "10cm Height",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p1",
+          "reason": "同一本体を示す根拠はなく、寸法と接触部材が異なる。",
+          "right_ref": "p6"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "Telescopic Drawer Dividers",
+              "reason": "伸縮式仕切り板とトレー。",
+              "right_quote": "25 trays",
+              "status": "PASS"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "Telescopic Drawer Dividers",
+              "reason": "製品形態が異なる。",
+              "right_quote": "storage boxes",
+              "status": "PASS"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "Telescopic Drawer Dividers",
+              "reason": "数量だけの差ではない。",
+              "right_quote": "storage boxes",
+              "status": "PASS"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "12.8 cm) in height",
+              "reason": "高さが異なる。",
+              "right_quote": "4.6cm",
+              "status": "PASS"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "silicone non-slip feature ensure a secure fit",
+              "reason": "壁間に固定する板と組み合わせるトレー。",
+              "right_quote": "different combinations",
+              "status": "PASS"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "",
+              "reason": "系列・世代関係は不明。",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "Brand Lifewit",
+              "reason": "同一ブランド。",
+              "right_quote": "Brand Lifewit",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "29.5 to 47 cm",
+              "reason": "衣類を板で区切る用途と小物をトレーに収める用途で選べる。",
+              "right_quote": "4 different sizes",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p2",
+          "reason": "本体構造が異なる。",
+          "right_ref": "p3"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "",
+              "reason": "同一本体・系列かは不明。",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "12.8 cm",
+              "reason": "高さが異なる。",
+              "right_quote": "10.2cm",
+              "status": "PASS"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "29.5 to 47 cm",
+              "reason": "対応内寸が異なる。",
+              "right_quote": "27 - 41.5cm",
+              "status": "PASS"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "29.5 to 47 cm",
+              "reason": "伸縮範囲と高さが異なる。",
+              "right_quote": "27 - 41.5cm",
+              "status": "PASS"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "",
+              "reason": "明確な機構差は不明。",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "",
+              "reason": "系列・世代関係は不明。",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "Brand Lifewit",
+              "reason": "同一ブランド。",
+              "right_quote": "Brand: Lifewit",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "12.8 cm",
+              "reason": "引き出しの深さで選択が変わる。",
+              "right_quote": "10.2cm",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p2",
+          "reason": "同一本体を示す根拠はなく、寸法に購入上の差がある。",
+          "right_ref": "p4"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "",
+              "reason": "同一本体・系列かは不明。",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "12.8 cm",
+              "reason": "高さが異なる。",
+              "right_quote": "60H mm",
+              "status": "PASS"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "12.8 cm",
+              "reason": "数量だけの差ではない。",
+              "right_quote": "60H mm",
+              "status": "PASS"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "12.8 cm",
+              "reason": "高さが大きく異なる。",
+              "right_quote": "2.36 inches",
+              "status": "PASS"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "",
+              "reason": "明確な機構差は不明。",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "",
+              "reason": "系列・世代関係は不明。",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "Brand Lifewit",
+              "reason": "同一ブランド。",
+              "right_quote": "Brand Lifewit",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "12.8 cm",
+              "reason": "深い引き出しと浅い引き出しで選択が変わる。",
+              "right_quote": "60H mm",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p2",
+          "reason": "同一本体を示す根拠はなく、高さに実用上の差がある。",
+          "right_ref": "p5"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "",
+              "reason": "同一本体・系列かは不明。",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "12.8 cm",
+              "reason": "高さが異なる。",
+              "right_quote": "10cm Height",
+              "status": "PASS"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "29.5 to 47 cm",
+              "reason": "対応内寸が異なる。",
+              "right_quote": "28-44.5cm",
+              "status": "PASS"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "12.8 cm",
+              "reason": "高さと伸縮範囲が異なる。",
+              "right_quote": "10cm Height",
+              "status": "PASS"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "silicone non-slip pads on both sides",
+              "reason": "接触部材の記載が異なる。",
+              "right_quote": "EVA foam sponge on both ends",
+              "status": "PASS"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "",
+              "reason": "系列・世代関係は不明。",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "Brand Lifewit",
+              "reason": "同一ブランド。",
+              "right_quote": "Brand Lifewit",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "29.5 to 47 cm",
+              "reason": "内寸と高さで選択が変わる。",
+              "right_quote": "28-44.5cm",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p2",
+          "reason": "同一本体を示す根拠はなく、寸法と接触部材が異なる。",
+          "right_ref": "p6"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "25 trays",
+              "reason": "トレーと伸縮式仕切り板。",
+              "right_quote": "Each divider",
+              "status": "PASS"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "storage boxes",
+              "reason": "製品形態が異なる。",
+              "right_quote": "dividers",
+              "status": "PASS"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "4 different sizes",
+              "reason": "数量だけの差ではない。",
+              "right_quote": "expands to fit",
+              "status": "PASS"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "4.6cm",
+              "reason": "高さが異なる。",
+              "right_quote": "10.2cm",
+              "status": "PASS"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "different combinations",
+              "reason": "置き型と壁間固定型。",
+              "right_quote": "Non-slip silicone pads on both ends grip the drawer wall",
+              "status": "PASS"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "",
+              "reason": "系列・世代関係は不明。",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "Brand Lifewit",
+              "reason": "同一ブランド。",
+              "right_quote": "Brand: Lifewit",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "25 trays",
+              "reason": "小物の個別収納と板による区画作りで用途が異なる。",
+              "right_quote": "27 - 41.5cm",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p3",
+          "reason": "本体構造が異なる。",
+          "right_ref": "p4"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "25 trays",
+              "reason": "トレーと伸縮式仕切り板。",
+              "right_quote": "drawer divider",
+              "status": "PASS"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "storage boxes",
+              "reason": "製品形態が異なる。",
+              "right_quote": "drawer divider",
+              "status": "PASS"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "4 different sizes",
+              "reason": "数量だけの差ではない。",
+              "right_quote": "length adjustable from 11 to 17 inches",
+              "status": "PASS"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "4.6cm",
+              "reason": "高さが異なる。",
+              "right_quote": "60H mm",
+              "status": "PASS"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "different combinations",
+              "reason": "置き型と突っ張り式。",
+              "right_quote": "Mounting Type Tension Mount",
+              "status": "PASS"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "",
+              "reason": "系列・世代関係は不明。",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "Brand Lifewit",
+              "reason": "同一ブランド。",
+              "right_quote": "Brand Lifewit",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "4 different sizes",
+              "reason": "小物用トレーと浅い引き出し向けの板を選び分けられる。",
+              "right_quote": "2.36 inches",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p3",
+          "reason": "本体構造が異なる。",
+          "right_ref": "p5"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "25 trays",
+              "reason": "トレーと伸縮式仕切り板。",
+              "right_quote": "drawer dividers",
+              "status": "PASS"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "storage boxes",
+              "reason": "製品形態が異なる。",
+              "right_quote": "drawer dividers",
+              "status": "PASS"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "4 different sizes",
+              "reason": "数量だけの差ではない。",
+              "right_quote": "adjustable from 11 inches to 17.5 inches",
+              "status": "PASS"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "4.6cm",
+              "reason": "高さが異なる。",
+              "right_quote": "100H mm",
+              "status": "PASS"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "different combinations",
+              "reason": "置き型と突っ張り式。",
+              "right_quote": "Mounting Type Tension Mount",
+              "status": "PASS"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "",
+              "reason": "系列・世代関係は不明。",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "Brand Lifewit",
+              "reason": "同一ブランド。",
+              "right_quote": "Brand Lifewit",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "25 trays",
+              "reason": "小物を個別に収める方式と背の高い区画を作る方式で選べる。",
+              "right_quote": "10cm Height",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p3",
+          "reason": "本体構造が異なる。",
+          "right_ref": "p6"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "",
+              "reason": "同一本体・系列かは不明。",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "10.2cm",
+              "reason": "高さが異なる。",
+              "right_quote": "60H mm",
+              "status": "PASS"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "27 - 41.5cm",
+              "reason": "対応内寸が異なる。",
+              "right_quote": "28-43.5cm",
+              "status": "PASS"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "10.2cm",
+              "reason": "高さが異なる。",
+              "right_quote": "2.36 inches",
+              "status": "PASS"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "",
+              "reason": "明確な機構差は不明。",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "",
+              "reason": "系列・世代関係は不明。",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "Brand: Lifewit",
+              "reason": "同一ブランド。",
+              "right_quote": "Brand Lifewit",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "10.2cm",
+              "reason": "収納物と引き出しの深さに応じて選べる。",
+              "right_quote": "60H mm",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p4",
+          "reason": "同一本体を示す根拠はなく、高さに実用上の差がある。",
+          "right_ref": "p5"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "",
+              "reason": "同一本体・系列かは不明。",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "Non-slip silicone pads",
+              "reason": "接触部材が異なる。",
+              "right_quote": "EVA foam sponge",
+              "status": "PASS"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "27 - 41.5cm",
+              "reason": "対応内寸が異なる。",
+              "right_quote": "28-44.5cm",
+              "status": "PASS"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "26.6 x 1.5 x 10.2 cm",
+              "reason": "本体寸法が異なる。",
+              "right_quote": "280D x 20W x 100H mm",
+              "status": "PASS"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "Non-slip silicone pads on both ends",
+              "reason": "接触部材の記載が異なる。",
+              "right_quote": "EVA foam sponge on both ends",
+              "status": "PASS"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "",
+              "reason": "系列・世代関係は不明。",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "Brand: Lifewit",
+              "reason": "同一ブランド。",
+              "right_quote": "Brand Lifewit",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "27 - 41.5cm",
+              "reason": "対応内寸と接触部材で選択できる。",
+              "right_quote": "28-44.5cm",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p4",
+          "reason": "同一本体を示す根拠はなく、寸法と接触部材が異なる。",
+          "right_ref": "p6"
+        },
+        {
+          "is_duplicate": false,
+          "items": [
+            {
+              "item": "same_product_body",
+              "left_quote": "",
+              "reason": "同一本体・系列かは不明。",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "color_design_only",
+              "left_quote": "60H mm",
+              "reason": "高さが異なる。",
+              "right_quote": "100H mm",
+              "status": "PASS"
+            },
+            {
+              "item": "sales_packaging_only",
+              "left_quote": "60H mm",
+              "reason": "数量だけの差ではない。",
+              "right_quote": "100H mm",
+              "status": "PASS"
+            },
+            {
+              "item": "size_capacity_difference",
+              "left_quote": "280D x 20W x 60H mm",
+              "reason": "高さが異なる。",
+              "right_quote": "280D x 20W x 100H mm",
+              "status": "PASS"
+            },
+            {
+              "item": "function_structure_difference",
+              "left_quote": "silicone anti-slip pads",
+              "reason": "接触部材の記載が異なる。",
+              "right_quote": "EVA foam sponge on both ends",
+              "status": "PASS"
+            },
+            {
+              "item": "series_generation_difference",
+              "left_quote": "",
+              "reason": "系列・世代関係は不明。",
+              "right_quote": "",
+              "status": "UNKNOWN"
+            },
+            {
+              "item": "manufacturer_brand_relation",
+              "left_quote": "Brand Lifewit",
+              "reason": "同一ブランド。",
+              "right_quote": "Brand Lifewit",
+              "status": "PASS"
+            },
+            {
+              "item": "independent_comparison_value",
+              "left_quote": "60H mm",
+              "reason": "浅い引き出しと背の高い区画で選択が変わる。",
+              "right_quote": "100H mm",
+              "status": "PASS"
+            }
+          ],
+          "left_ref": "p5",
+          "reason": "同一本体を示す根拠はなく、高さと接触部材が異なる。",
+          "right_ref": "p6"
+        }
+      ],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "fit",
+              "quote": "各仕切りの高さは 8.2 cm、内幅 26 ～ 42 cm の引き出しにフィットするように調整でき"
+            },
+            {
+              "axis_id": "mounting",
+              "quote": "便利な上部ボタンで、素早く長さを調整し、しっかりと固定できます"
+            },
+            {
+              "axis_id": "height",
+              "quote": "各仕切りの高さは 8.2 cm"
+            }
+          ],
+          "identity_key": "Lifewit 引き出しディバイダー 高さ8.2cm",
+          "identity_quote": "Lifewit 引き出しディバイダー 高さ8.2cm 27-42cm",
+          "reason": "高さ8.2cmの伸縮式仕切り板。内寸の下限はタイトルの27cmと本文の26cmで異なるため、記事で単一の値として断定しない。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "fit",
+              "quote": "the length can be adjusted from 11.6 to 18.5 inches (29.5 to 47 cm)"
+            },
+            {
+              "axis_id": "mounting",
+              "quote": "The elasticity on both ends and the silicone non-slip feature ensure a secure fit"
+            },
+            {
+              "axis_id": "height",
+              "quote": "5.0 inches (12.8 cm) in height"
+            }
+          ],
+          "identity_key": "Lifewit 5\" Height 4 Pack Drawer Dividers",
+          "identity_quote": "Lifewit 5\" Height 4 Pack Drawer Dividers, 30-47cm/11.5-18.5\"",
+          "reason": "高さ12.8cm、長さ29.5～47cmの伸縮式仕切り板。衣類用として示され、深さと内寸で選べる。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "fit",
+              "quote": "7.6cm*7.6cm*4.6cm(8pcs), 15.2cm*7.6cm*4.6cm(8pcs), 22.9cm*7.6cm*4.6cm(6pcs), 22.9cm*15.2cm*4.6cm(3pcs)"
+            },
+            {
+              "axis_id": "mounting",
+              "quote": "25 trays, consisting of 4 different sizes"
+            },
+            {
+              "axis_id": "height",
+              "quote": "22.9cm*15.2cm*4.6cm(3pcs)"
+            }
+          ],
+          "identity_key": "Lifewit 25 PCS Drawer Organizer Set",
+          "identity_quote": "Lifewit 25 PCS Drawer Organizer Set Clear Plastic Desk Drawer Divider Tray",
+          "reason": "4サイズの置き型トレー。仕切り板とは異なる収納方式として固定方法軸で比較できるが、伸縮式仕切り板と説明してはならない。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "fit",
+              "quote": "27 - 41.5cm"
+            },
+            {
+              "axis_id": "mounting",
+              "quote": "Non-slip silicone pads on both ends grip the drawer wall firmly"
+            },
+            {
+              "axis_id": "height",
+              "quote": "Height 10.2cm"
+            }
+          ],
+          "identity_key": "Lifewit 引き出しディバイダー - 拡張可能ドレッサーセパレーター 衣類用調節式引き出しオーガナイザー - 寝室、洗面台、バスルーム、キッチン、オフィス用 高さ 10.2cm",
+          "identity_quote": "Lifewit 引き出しディバイダー - 拡張可能ドレッサーセパレーター 衣類用調節式引き出しオーガナイザー - 寝室、洗面台、バスルーム、キッチン、オフィス用 高さ 10.2cm 27-42cm",
+          "reason": "モデル番号24513の伸縮式仕切り板。本文は対応内寸27～41.5cm、タイトルは27～42cmと異なるため、記事では値を混同しない。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "fit",
+              "quote": "28-43.5cm/11-17\""
+            },
+            {
+              "axis_id": "mounting",
+              "quote": "Strong spring tension keeps the drawer organizer upright"
+            },
+            {
+              "axis_id": "height",
+              "quote": "Product Dimensions 280D x 20W x 60H mm"
+            }
+          ],
+          "identity_key": "Lifewit 5 Pack 2.36\" Height Drawer Dividers",
+          "identity_quote": "Lifewit 5 Pack 2.36\" Height Drawer Dividers 28-43.5cm/11-17\"",
+          "reason": "高さ約6cmの伸縮式仕切り板。対応内寸、ばねによる固定、両端のシリコンパッドが示される。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "fit",
+              "quote": "28-44.5cm Adjustable Drawer Organizer"
+            },
+            {
+              "axis_id": "mounting",
+              "quote": "Strong spring tension keeps the drawer organizer upright"
+            },
+            {
+              "axis_id": "height",
+              "quote": "Product Dimensions 280D x 20W x 100H mm"
+            }
+          ],
+          "identity_key": "Lifewit 5pcs Drawer Dividers Plastic Drawer Dividers 10cm Height",
+          "identity_quote": "Lifewit 5pcs Drawer Dividers Plastic Drawer Dividers 10cm Height, 28-44.5cm Adjustable Drawer Organizer",
+          "reason": "高さ10cmの伸縮式仕切り板。対応内寸、ばねによる固定、両端のEVAフォームが示される。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "根拠情報のみの審査。6商品には、仕切りの高さ、対応する内寸、設置方式について購入判断に使える記載がある。p3は置き型トレーであり、伸縮式仕切り板として扱わないことが条件となる。同一商品と断定できる組み合わせは示されていない。記事がないため文章品質は未評価。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
+  "products": [
+    {
+      "amazon_title": "Lifewit 引き出しディバイダー 高さ8.2cm 27-42cm 拡張可能なドレッサーセパレーター 衣類用 調節可能な引き出しオーガナイザー 寝室/洗面台/バスルーム/キッチン/オフィスに 4個パック",
+      "asin": "B0GK5NTCR5",
+      "brand": "Lifewit",
+      "discovery_axis_id": "fit",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/612mBG2QPKL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0GK5NTCR5",
+      "provisional": false,
+      "rating": 4.3,
+      "ref": "p1",
+      "review_count": 391,
+      "search_key": "Lifewit 引き出しディバイダー 高さ8.2cm 27-42cm 拡張可能な",
+      "selection_reason": "長さを26～42cmに調整でき、高さは8.2cm。引き出しの内寸を測って範囲内か確かめやすく、靴下や下着を分けたい人が選びやすい4本セット。",
+      "sources": [
+        {
+          "brand": "Lifewit",
+          "excerpt": "Lifewit 引き出しディバイダー 高さ8.2cm 27-42cm 拡張可能なドレッサーセパレーター 衣類用 調節可能な引き出しオーガナイザー 寝室/洗面台/バスルーム/キッチン/オフィスに 4個パック\nこの商品について\nほとんどの引き出しにフィットする拡張可能: 各仕切りの高さは 8.2 cm、内幅 26 ～ 42 cm の引き出しにフィットするように調整でき、アイテムをきちんと分けておくのに役立ちます。ご購入前に引き出しの内寸を測ってください\nスリムで省スペースなデザイン：厚さわずか0.9cmの仕切りで、引き出しの有効活用スペースを最大限に活用できます。縦置きにも横置きにも設置でき、様々な引き出しの整理に最適です\n頑丈な構造：丈夫で割れにくいプラスチック製。両端にシリコンストリップが付いているので、衝撃を吸収し、使用中の引き出し表面の傷を防ぎます\n上部のボタンで簡単操作：便利な上部ボタンで、素早く長さを調整し、しっかりと固定できます。取り付け前に押して伸ばし、取り外し時は簡単に縮めるので、引き出しを傷つけません\n柔軟な整理：衣類、下着、靴下などの小物に合わせて引き出しをカスタマイズ。必要なものが見やすく、取り出しやすく、必要に応じて整理できます › もっと見る\n商品用途・使用方法 ドレッサー、寝室、クローゼット、キッチン\n材質 プラスチック\n特徴 調節可能\n色 ホワイト\nブランド Lifewit\n仕上げタイプ 研磨\n取り付けタイプ インストール不要\n商品の寸法 260奥行き x 16幅 x 82高さ mm\n商品の重量 400 グラム\nユニット数 4.00 個 表示を増やす\nブランド: Lifewit",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Lifewit 引き出しディバイダー 高さ8.2cm 27-42cm 拡張可能なドレッサーセパレーター 衣類用 調節可能な引き出しオーガナイザー 寝室/洗面台/バスルーム/キッチン/オフィスに 4個パック",
+          "url": "https://www.amazon.co.jp/dp/B0GK5NTCR5",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "Lifewit 高さ5インチ 4個パック 引き出し仕切り、30～47cm/11.5～18.5インチ 伸縮式引き出し仕切り（衣類用）、調節可能なドレッサー引き出しオーガナイザー、ドレッサー/バスルーム/クローゼット/キッチン用引き出しセパレーター ホワイト",
+      "asin": "B0FQ3TPP7H",
+      "brand": "Lifewit",
+      "discovery_axis_id": "fit",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61ds7Qg5b4L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0FQ3TPP7H",
+      "provisional": false,
+      "rating": 4.6,
+      "ref": "p2",
+      "review_count": 158,
+      "search_key": "Lifewit 高さ5インチ 4個パック 引き出し仕切り、30～47cm/11.",
+      "selection_reason": "長さを29.5～47cmに調整でき、もう一方の候補より長い引き出しにも対応する。高さ12.8cmの4本セットで、内寸と引き出しの深さを照らして衣類用に選べる。",
+      "sources": [
+        {
+          "brand": "Lifewit",
+          "excerpt": "Lifewit 5\" Height 4 Pack Drawer Dividers, 30-47cm/11.5-18.5\" Telescopic Drawer Dividers for Clothes, Adjustable Dresser Drawer Organizer, Drawer Separator for Dresser Bathroom Closet Kitchen White\nAbout this item\nAdjustable Length: This drawer divider is 5.0 inches (12.8 cm) in height, and the length can be adjusted from 11.6 to 18.5 inches (29.5 to 47 cm), easily fitting most drawers and helping to organize your belongings\nEasy to install and remove: Adjust the divider to your desired length before installation. The elasticity on both ends and the silicone non-slip feature ensure a secure fit. When not in use, simply press the button and slide the expandable side panel\nExcellent Stability: Structural design prevents cracking, bending and breakage. Two-way self-adjusting mechanism and silicone non-slip pads on both sides make the drawer organizer stay firmly in place with excellent stability\nVersatile Drawer Organizer: Create your own drawer storage space anytime, anywhere. Perfect for keeping drawers tidy and easily finding what you need. Ideal for organizing clothing, accessories, underwear, socks, and more\nSpace-saving Design: At just 0.9 cm (0.4 inches) thick, this drawer divider maximizes your storage space. It can be freely arranged to fit your drawer organization, whether placed vertically or horizontally › See more product details\nMaterial Plastic\nSpecial Feature Adjustable\nColor white\nBrand Lifewit\nFinish Type Polished\nProduct Dimensions 300D x 15W x 128H mm\nItem Weight 900 Grams\nUnit Count 4.0 Set\nNumber of Items 4\nManufacturer Lifewit See more\nBrand: Lifewit",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Lifewit 5\" Height 4 Pack Drawer Dividers, 30-47cm/11.5-18.5\" Telescopic Drawer Dividers for Clothes, Adjustable Dresser Drawer Organizer, Drawer Separator for Dresser Bathroom Closet Kitchen White",
+          "url": "https://www.amazon.co.jp/dp/B0FQ3TPP7H",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "Lifewit 25 PCS引き出しオーガナイザーセットクリアプラスチックデスク引き出し仕切りトレードレッサー収納箱メイクアップ、宝石やガジェット、ベッドルーム、バスルーム、オフィスのための区分け箱",
+      "asin": "B09GFJN27K",
+      "brand": "Lifewit",
+      "discovery_axis_id": "mounting",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71+Rm8PsgzL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B09GFJN27K",
+      "provisional": false,
+      "rating": 4.5,
+      "ref": "p3",
+      "review_count": 11564,
+      "search_key": "Lifewit 25 PCS引き出しオーガナイザーセットクリアプラスチックデスク",
+      "selection_reason": "4サイズ計25個のトレーを引き出し内に組み合わせて置く方式。壁に突っ張らせる仕切り板が合わない場合にも、各トレーの寸法を内寸と照らして化粧品や文具用に選べる。",
+      "sources": [
+        {
+          "brand": "Lifewit",
+          "excerpt": "Lifewit 25 PCS Drawer Organizer Set Clear Plastic Desk Drawer Divider Tray Dresser Storage Box for Makeup, Jewelry and Gadgets, Bedroom, Bathroom, Office Partition Box\nAbout this item\nCustomize to your style: You can customize and use 25 trays, consisting of 4 different sizes, according to your preference Easy to combine and adjust to fit your drawer size or space\nCombination of 4 different sizes: One set includes 25 storage boxes of 4 different sizes, which can be customized in different combinations to store items Package included: 7.6cm*7.6cm*4.6cm(8pcs), 15.2cm*7.6cm*4.6cm(8pcs), 22.9cm*7.6cm*4.6cm(6pcs), 22.9cm*15.2cm*4.6cm(3pcs)\nHIGHLY TRANSPARENT MATERIAL: The material is transparent like a stunning crystal This plastic drawer organizer illuminates the inside of your drawer, creating a well-organized space With a transparent design, you can quickly find what you need when you need it\nMULTI-PURPOSE: All 25 pieces can be easily assembled in any way you want Designed to fit drawer sizes and spaces Perfect for storing miscellaneous items, makeup tools, pins, jewelry, stationery, etc\nEasy to clean: Simply wipe or rinse with water, and dust and dirt will come off, keeping it always clean › See more product details\nBrand Lifewit\nColor clear\nMaterial Plastic\nSpecial Feature Lightweight\nStyle 25 pieces\nRecommended Uses For Product Organize and store small items in drawers (bathroom, kitchen, office, bedroom)\nProduct Dimensions 22.9L x 15.2W x 4.6H cm\nWater Resistance Level Not Water Resistant\nItem Weight 1 Pounds\nShape Rectangular See more\nBrand: Lifewit",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Lifewit 25 PCS Drawer Organizer Set Clear Plastic Desk Drawer Divider Tray Dresser Storage Box for Makeup, Jewelry and Gadgets, Bedroom, Bathroom, Office Partition Box",
+          "url": "https://www.amazon.co.jp/dp/B09GFJN27K?th=1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "Lifewit 引き出しディバイダー - 拡張可能ドレッサーセパレーター 衣類用調節式引き出しオーガナイザー - 寝室、洗面台、バスルーム、キッチン、オフィス用 高さ 10.2cm 27-42cm 5 個パック",
+      "asin": "B0F928K1XV",
+      "brand": "Lifewit",
+      "discovery_axis_id": "mounting",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61-hM5DyZDL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0F928K1XV",
+      "provisional": false,
+      "rating": 4.3,
+      "ref": "p4",
+      "review_count": 687,
+      "search_key": "Lifewit 引き出しディバイダー - 拡張可能ドレッサーセパレーター 衣類用",
+      "selection_reason": "伸ばした板の両端にある滑り止め付きシリコンパッドを引き出しの壁に当てて固定する方式。上部ボタンで縮めて取り外せるため、固定方法を確認して選びやすい。対応する内寸は27～41.5cm。",
+      "sources": [
+        {
+          "brand": "Lifewit",
+          "excerpt": "Lifewit Drawer Dividers - Expandable Dresser Separator Adjustable Drawer Organizer for Clothes - For Bedroom, Vanity, Bathroom, Kitchen, Office Height 10.2cm 27-42cm 5 Pack\nDURABLE AND PROTECTIVE DESIGN: Made of durable and unbreakable ABS plastic, perfect for long term daily use. Non-slip silicone pads on both ends grip the drawer wall firmly and cushion the contact to protect drawers from abrasions, scratches and marks\nSLIM SPACE SAVING DESIGN: 0.4\" (0.9cm) thick slim dividers take up minimal space and maximize usable storage space, creating neat separated sections for organized storage. Can be installed vertically or horizontally to fit a variety of drawer layouts\nADJUSTABLE TO FIT MOST DRAWERS: Each divider is 4\" (10cm) tall and expands to fit inside drawers between 10.5\" - 16.5\" (27 - 41.5cm) deep to help you organize items neatly. Please measure the inside dimensions of your drawer before purchasing\n【Easy Top Button Operation】Convenient top button for quick and accurate length adjustments and a secure fit. Just pull and stretch - dividers lock automatically without buttons. To retract, press the top button first, then slide back for easy removal without damage\nMULTIPURPOSE DRAWER ORGANIZER: Easily create customized drawer sections for clothes, underwear, baby clothes, accessories, files, cookware, tools and other daily necessities. Perfect for dresser, bathroom, bedroom, nursery, cabinet, kitchen, office, closet and more, keeping drawers organized, visible and easily accessible › See more product details\nASIN B0F928K1XV\nCustomer Reviews\n4.3 4.3 out of 5 stars\n(687)\n4.3 out of 5 stars\nAmazon Bestseller\n#15,408 in Home & Kitchen (See Top 100 in Home & Kitchen)\n#7 in Clothes Drawer Organizers\nDate First Available August 3, 2025\nBrand\n‎Lifewit\nModel Number\n‎24513\nProduct Dimensions\n‎26.6 x 1.5 x 10.2 cm; 660 g\nColor\n‎white\nName List for Name Plates\n‎Modern\nMaterial\n‎Plastic\nQuantity\n‎5\nLaser Class\n‎Expandable\nIncluded Components\n‎Instructions\nItem Weight\n‎660 g\nBrand: Lifewit",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Lifewit Drawer Dividers - Expandable Dresser Separator Adjustable Drawer Organizer for Clothes - For Bedroom, Vanity, Bathroom, Kitchen, Office Height 10.2cm 27-42cm 5 Pack",
+          "url": "https://www.amazon.co.jp/dp/B0F928K1XV?th=1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "Lifewit 5個パック 高さ2.36インチ 引き出し仕切り 28-43.5cm/11-17インチ 調節可能な引き出しオーガナイザー 衣類/調理器具用 引き出しセパレーター ドレッサー/キッチン/寝室/オフィスの整理収納 ホワイト",
+      "asin": "B0CR6JVMLL",
+      "brand": "Lifewit",
+      "discovery_axis_id": "height",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61yK02fPhUL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0CR6JVMLL",
+      "provisional": false,
+      "rating": 4.5,
+      "ref": "p5",
+      "review_count": 1346,
+      "search_key": "Lifewit 5個パック 高さ2.36インチ 引き出し仕切り 28-43.5c",
+      "selection_reason": "仕切りの高さは約6cm。浅い引き出しで靴下や調理器具を分けたい人が、引き出しの内側の高さと比べて選べる。長さは約28～43.5cmに調整できる。",
+      "sources": [
+        {
+          "brand": "Lifewit",
+          "excerpt": "Lifewit 5 Pack 2.36\" Height Drawer Dividers 28-43.5cm/11-17\" Adjustable Drawer Organizer for Clothes Cookware, Drawer Separator, Organize Dresser Kitchen Bedroom Office White\nAbout this item\nAdjustable and Expandable: With a width of 0.8 inches, height of 2.36 inches, and length adjustable from 11 to 17 inches, this drawer divider fits most drawers and cabinets, helping to organize and keep your drawers tidy\nEasy to install and remove: Press the button on top to adjust the length before installing, then stretch it again to secure it. Simply tighten the spring slide to firmly secure the divider. Strong spring tension keeps the drawer organizer upright. To store, press the button while pushing in the extended side\nHigh quality material: The adjustable drawer divider is made of high quality ABS material. It is more durable and less likely to crack compared to wooden material. Both ends are equipped with high quality silicone anti-slip pads to prevent scratches or damage to the drawer walls\nStable structure: The toothed lock keeps it firmly in place and is easy to adjust. High elasticity and strong springs, with non-slip mats on both ends, provide a firm grip. Our kitchen drawer organizer is patented (Patent Number: US12133593B2) to provide you with an unparalleled ease of use\nFlexible Arrangement: We offer various sets in different quantities and can be installed both vertically and horizontally, so it can meet various organizing needs. This flexibility allows you to choose the quantity that best suits your needs › See more product details\nSpecific Uses For Product Cookware, Kitchen, Clothing, Socks, Clothes, Cosmetics, Underwear, Bathroom\nMaterial Plastic\nSpecial Feature Adjustable and Expandable\nColor white\nBrand Lifewit\nFinish Type Polished\nMounting Type Tension Mount\nProduct Dimensions 280D x 20W x 60H mm\nItem Weight 700 Grams\nNumber of Compartments 5 See more\nBrand: Lifewit",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Lifewit 5 Pack 2.36\" Height Drawer Dividers 28-43.5cm/11-17\" Adjustable Drawer Organizer for Clothes Cookware, Drawer Separator, Organize Dresser Kitchen Bedroom Office White",
+          "url": "https://www.amazon.co.jp/dp/B0CR6JVMLL?th=1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "Lifewit 5個入 引き出し 仕切り りプラスチック製ドロワーデバイダー 10 cm 高さ、28-44.5 cm 衣類用調節可能なドロワーオーガナイザー、寝室/浴室/キッチン/オフィスの整理と収納の拡張可能なドレッサー用仕切り",
+      "asin": "B0C4L9MTB7",
+      "brand": "Lifewit",
+      "discovery_axis_id": "height",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61ZT-DCZULL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0C4L9MTB7",
+      "provisional": false,
+      "rating": 4.5,
+      "ref": "p6",
+      "review_count": 4580,
+      "search_key": "Lifewit 5個入 引き出し 仕切り りプラスチック製ドロワーデバイダー 1",
+      "selection_reason": "仕切りの高さは10cmで、約6cmの候補より背の高い区画を作れる。衣類を分ける用途が示されており、引き出しの内側の高さと長さ28～44.5cmを測って選べる。",
+      "sources": [
+        {
+          "brand": "Lifewit",
+          "excerpt": "Lifewit 5pcs Drawer Dividers Plastic Drawer Dividers 10cm Height, 28-44.5cm Adjustable Drawer Organizer for Clothes, Expandable Dresser Dividers for Bedroom Bathroom Kitchen Office Organization and\nAbout this item\nSTRETCHABLE & ADJUSTABLE: This drawer divider is 0.8 inches wide, 3.9 inches high, adjustable from 11 inches to 17.5 inches long It easily attaches to most drawers and cabinets, making it the ideal solution for keeping your items and drawers always organized and tidy\nEASY TO INSTALL AND REMOVE: Press the top button to adjust the length, then stretch it again to secure it firmly and then lock it Strong spring tension keeps the drawer organizer upright To store, press the top button and push the extended side\nPREMIUM MATERIALS: Our dresser organizer is made of durable ABS material with high quality EVA foam sponge on both ends This sponge prevents scratches on the inner surfaces of drawers and leaves no marks or residue\nMANY FUNCTIONS: Our drawer organizer can be installed in any drawer in your home or office Perfect for organizing clothing, kitchen utensils, office supplies, cosmetics, and any clutter in the bathroom This is an ideal product that helps you organize and easily find your items\nFlexible Installation: Our clothing drawer dividers come in sets of 5 or 8 pieces, and can be placed vertically or horizontally to meet various organization needs This flexibility allows you to choose the quantity that best suits your needs › See more product details\nSpecific Uses For Product Clothing/Flatware/Socks/Kitchen/Cosmetic/Underwear/Bathroom\nMaterial Acrylonitrile Butadiene Styrene\nSpecial Feature Adjustable/Telescopic\nColor white\nBrand Lifewit\nFinish Type Polished\nMounting Type Tension Mount\nProduct Dimensions 280D x 20W x 100H mm\nItem Weight 1.1 Kilograms\nNumber of Compartments 5 See more\nBrand: Lifewit",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Lifewit 5pcs Drawer Dividers Plastic Drawer Dividers 10cm Height, 28-44.5cm Adjustable Drawer Organizer for Clothes, Expandable Dresser Dividers for Bedroom Bathroom Kitchen Office Organization and",
+          "url": "https://www.amazon.co.jp/dp/B0C4L9MTB7?th=1",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "selection": {
+    "axes": [
+      {
+        "axis_id": "fit",
+        "products": [
+          {
+            "asin": "B0GK5NTCR5",
+            "reason": "長さを26～42cmに調整でき、高さは8.2cm。引き出しの内寸を測って範囲内か確かめやすく、靴下や下着を分けたい人が選びやすい4本セット。"
+          },
+          {
+            "asin": "B0FQ3TPP7H",
+            "reason": "長さを29.5～47cmに調整でき、もう一方の候補より長い引き出しにも対応する。高さ12.8cmの4本セットで、内寸と引き出しの深さを照らして衣類用に選べる。"
+          }
+        ]
+      },
+      {
+        "axis_id": "mounting",
+        "products": [
+          {
+            "asin": "B09GFJN27K",
+            "reason": "4サイズ計25個のトレーを引き出し内に組み合わせて置く方式。壁に突っ張らせる仕切り板が合わない場合にも、各トレーの寸法を内寸と照らして化粧品や文具用に選べる。"
+          },
+          {
+            "asin": "B0F928K1XV",
+            "reason": "伸ばした板の両端にある滑り止め付きシリコンパッドを引き出しの壁に当てて固定する方式。上部ボタンで縮めて取り外せるため、固定方法を確認して選びやすい。対応する内寸は27～41.5cm。"
+          }
+        ]
+      },
+      {
+        "axis_id": "height",
+        "products": [
+          {
+            "asin": "B0CR6JVMLL",
+            "reason": "仕切りの高さは約6cm。浅い引き出しで靴下や調理器具を分けたい人が、引き出しの内側の高さと比べて選べる。長さは約28～43.5cmに調整できる。"
+          },
+          {
+            "asin": "B0C4L9MTB7",
+            "reason": "仕切りの高さは10cmで、約6cmの候補より背の高い区画を作れる。衣類を分ける用途が示されており、引き出しの内側の高さと長さ28～44.5cmを測って選べる。"
+          }
+        ]
+      }
+    ],
+    "brand_count": 1,
+    "candidate_count": 6,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [],
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": []
+  },
+  "slug": "drawer-organizer-dividers"
+}
