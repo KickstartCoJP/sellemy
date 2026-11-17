@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-11-17T20:07:17.261294+00:00",
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "generation_route_attestation": "codex_rollout_extension",
+  "height": 1024,
+  "image_generation_internal_usage_exposed": false,
+  "image_sha256": "3d4cd7ba1808879f6f102d244204e7e04dfd064222b01eb2aaa9e80ed9a661e5",
+  "member_binding_revision": 11,
+  "model": "gpt-6-sol",
+  "model_reported_generation_route": "built-in_image_gen",
+  "role_id": "bu-codex-sellemy-designer",
+  "routing": {
+    "api_share": 0,
+    "codex_reserve_percent": 20.0,
+    "codex_share": 100,
+    "codex_usage": {
+      "remaining_percent": 100.0,
+      "resets_at": 1795549004,
+      "source": "/Users/kickstart/.codex/sessions/2026/11/18/rollout-2026-11-18T04-36-43-01a1eb02-f937-7d73-836b-c688a9cd4697.jsonl",
+      "used_percent": 0.0,
+      "window_minutes": 10080
+    },
+    "errors_before_success": [],
+    "executed_route": "codex",
+    "fallback_from": null,
+    "mode": "weighted_random",
+    "reason": "weighted_random",
+    "remaining_percent": 100.0,
+    "roll": 30,
+    "selected_route": "codex",
+    "total_weight": 100
+  },
+  "routing_recorded_at": "2026-11-17T20:07:17.262310+00:00",
+  "summary": "通勤前に弁当箱を保冷ランチバッグへ収める生活場面。PNG形式と1536x1024の寸法を確認済み。",
+  "thread_id": "01a1e303-14f2-7230-8449-03245c3d7f64",
+  "token_usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 114816,
+    "input_tokens": 145107,
+    "output_tokens": 628,
+    "reasoning_output_tokens": 0,
+    "total_tokens": 145735,
+    "uncached_input_tokens": 30291
+  },
+  "token_usage_source": "codex_rollout.turn_token_usage",
+  "visual_family": "weekday morning home preparation",
+  "width": 1536
+}
