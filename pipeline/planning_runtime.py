@@ -115,7 +115,8 @@ def _planning_provider(name: str) -> tuple[str, list[str], str, bool]:
     return kind, command, model, certified
 
 
-def _invoke_planning(kind: str, command: list[str], model: str, prompt: str, timeout: int) -> dict:
+def _invoke_planning(kind: str, command: list[str], model: str, prompt: str, timeout: int, *, schema: dict | None = None) -> dict:
+    schema = schema if schema is not None else PLANNING_SCHEMA
     if not command or not model:
         raise PlanningError('planning provider is unconfigured')
     if kind in {'codex', 'claude'}:
@@ -123,7 +124,7 @@ def _invoke_planning(kind: str, command: list[str], model: str, prompt: str, tim
     if kind == 'codex':
         try:
             value, _meta = codex_generate_persistent(
-                tuple(command), model, PLANNING_SCHEMA, prompt, timeout=timeout,
+                tuple(command), model, schema, prompt, timeout=timeout,
                 root=ROOT, surface_key='bu-codex-sellemy-planning', stage='planning',
             )
             value['_runtime_meta'] = _meta
@@ -133,7 +134,7 @@ def _invoke_planning(kind: str, command: list[str], model: str, prompt: str, tim
     if kind != 'claude':
         raise PlanningError(f'unknown planning provider kind: {kind}')
     try:
-        completed = subprocess.run(command + ['-p', '--safe-mode', '--no-session-persistence', '--tools', '', '--model', model, '--output-format', 'json', '--json-schema', json.dumps(PLANNING_SCHEMA)], input=prompt, text=True, capture_output=True, timeout=timeout, check=False)
+        completed = subprocess.run(command + ['-p', '--safe-mode', '--no-session-persistence', '--tools', '', '--model', model, '--output-format', 'json', '--json-schema', json.dumps(schema)], input=prompt, text=True, capture_output=True, timeout=timeout, check=False)
     except (OSError, subprocess.TimeoutExpired) as exc:
         raise PlanningError(f'planning provider invocation failed: {type(exc).__name__}') from exc
     diagnostic = _diagnostic(completed)
@@ -217,7 +218,7 @@ def replan_published_topic(*, slug: str, category: str, previous_title: str) -> 
     def local():
         kind, command, model, _ = _planning_provider('primary')
         response = _invoke_planning(kind, command, model, prompt,
-                                    int(os.environ.get('SELLEMY_PLANNING_TIMEOUT_SECONDS', '300')))
+                                    int(os.environ.get('SELLEMY_PLANNING_TIMEOUT_SECONDS', '300')), schema=schema)
         metadata = response.pop('_runtime_meta', {})
         return response, {'planning_provider_used': kind + ':' + model,
                           'codex_runtime': metadata}

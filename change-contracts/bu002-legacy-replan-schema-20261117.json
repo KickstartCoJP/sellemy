@@ -1,0 +1,9 @@
+{
+  "id": "bu002-legacy-replan-schema-20261117",
+  "title": "Repair published legacy replan one-candidate schema mismatch",
+  "scope": "pipeline/planning_runtime.py",
+  "reason": "Legacy replan requests exactly one unchanged-slug candidate, but Codex was validated against normal six-candidate schema, putting 278 existing published repairs into PLANNING_HOLD.",
+  "changes": ["Pass effective schema to both Codex and Claude invocations", "Leave normal fresh-planning six-candidate contract unchanged"],
+  "verification": ["tests/test_legacy_replan_schema_20261117.py"],
+  "rollback": "Revert this change; retain existing published snapshots and their current QA approvals"
+}
