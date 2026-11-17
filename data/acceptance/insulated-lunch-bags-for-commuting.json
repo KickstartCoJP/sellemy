@@ -1,0 +1,1082 @@
+{
+  "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+  "evidence_sha256": "df76fec858d6ac8fb1b376a353f04fe11123aba02386d278e2b8586256bea6f9",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 14848,
+    "input_tokens": 31872,
+    "member_binding_revision": 4,
+    "output_tokens": 7800,
+    "reasoning_effort": "medium",
+    "reasoning_output_tokens": 424,
+    "session_id": "01a1e70d-bce9-7c62-b8eb-083cfb3eb511",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "822e2996267045b0607034a7677aa201371bd397b1005fd686415c4302456e53",
+  "review": {
+    "buying_guidance": true,
+    "claims_grounded": true,
+    "complete_comparison": true,
+    "distinct_products": true,
+    "duplicate_pair_checks": [
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "サーモス 保冷ランチケース 2.0L ブラック RFH-002 BK",
+            "reason": "異なるブランドと型番の商品として識別できる。",
+            "right_quote": "アスベル 保冷バッグ 断熱構造 保冷ランチバック1段用 保冷剤付き 1段 黒 シンプルデザイン A3166",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "RFH-002",
+            "reason": "色や意匠だけの違いを示す資料はない。",
+            "right_quote": "A3166",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "販売形態の詳細は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "p2の寸法・容量は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "when folded flat",
+            "reason": "掲載情報には異なる利用上の特徴がある。",
+            "right_quote": "保冷剤付き 1段",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代の関係は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "サーモス",
+            "reason": "ブランドが異なる。",
+            "right_quote": "アスベル",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "保冷ランチケース 2.0L",
+            "reason": "畳めるケースと保冷剤付き1段用バッグは別の購入候補になる。",
+            "right_quote": "保冷ランチバック1段用 保冷剤付き",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "異なるブランド・型番と用途上の特徴があり、同一商品を示す根拠はない。",
+        "right_ref": "p2"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "RFH-002 BK",
+            "reason": "異なるブランド・型番の商品。",
+            "right_quote": "タワー tower ランチバッグ 保温 保冷 洗濯OK 折り畳み 1940",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "RFH-002",
+            "reason": "色・意匠だけの違いではない。",
+            "right_quote": "1940",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "販売形態の関係は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "22 cm width x 11.5 cm depth",
+            "reason": "示された底面寸法が異なる。",
+            "right_quote": "Base: W 9.8 x D 9.1 inches (25 x 23 cm)",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "Insulated lunch case that fits in your bag!",
+            "reason": "示された持ち運び用途が異なる。",
+            "right_quote": "Super/Convenience Store Bento Fits As-Is",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代の関係は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "サーモス",
+            "reason": "ブランドが異なる。",
+            "right_quote": "山崎実業",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "fits in your bag",
+            "reason": "通勤バッグ内に収める用途と広い底面を使う用途で購入判断が分かれる。",
+            "right_quote": "Base: W 9.8 x D 9.1 inches (25 x 23 cm)",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "ブランド・型番・示された底面寸法が異なる。",
+        "right_ref": "p3"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "サーモス 保冷ランチケース 2.0L ブラック RFH-002 BK",
+            "reason": "異なるブランド・型番の商品。",
+            "right_quote": "スケーター(Skater) 保冷 がま口 ランチバッグ L ケアフルセレクション KGA2",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "RFH-002",
+            "reason": "色・意匠だけの違いを示さない。",
+            "right_quote": "KGA2",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "販売形態の関係は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "p4の寸法は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "when folded flat",
+            "reason": "掲載情報ではケースとがま口型バッグとして区別される。",
+            "right_quote": "がま口 ランチバッグ L",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代の関係は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "サーモス",
+            "reason": "ブランドが異なる。",
+            "right_quote": "スケーター(Skater)",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "fits in your bag",
+            "reason": "収納の仕方と口元の形に異なる関心を持つ読者へ紹介できる。",
+            "right_quote": "がま口 ランチバッグ L",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "異なるブランド・型番で、同一商品を示す根拠はない。",
+        "right_ref": "p4"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "RFH-002 BK",
+            "reason": "同じブランドだが基本型番が異なる。",
+            "right_quote": "RFC-005 BK",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "RFH-002 BK",
+            "reason": "色だけの違いではない。",
+            "right_quote": "RFC-005 BK",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "保冷ランチケース 2.0L",
+            "reason": "数量や包装だけでなく商品種別と容量が異なる。",
+            "right_quote": "保冷ランチバッグ 5L",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "Capacity: 2L",
+            "reason": "容量が異なる。",
+            "right_quote": "Capacity: Approx. 1.7 gal (5 L)",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "Insulated lunch case that fits in your bag!",
+            "reason": "バッグ内に収めるケースと、口が広い大容量バッグとして区別される。",
+            "right_quote": "Insulated lunch bag with wide opening Large capacity type",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代の関係は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "RFH-002 BK",
+            "reason": "同じサーモスでも別型番。",
+            "right_quote": "RFC-005 BK",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "fits in your bag",
+            "reason": "持ち方と容量による独立した購入判断ができる。",
+            "right_quote": "Large capacity type",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "同じブランドだが型番・容量・商品形態が異なる。",
+        "right_ref": "p5"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "RFH-002 BK",
+            "reason": "異なるブランドの商品。",
+            "right_quote": "DEAN & DELUCA(ディーンアンドデルーカ) クーラーバッグ ブラック Sサイズ",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "保冷ランチケース 2.0L",
+            "reason": "色・意匠だけの違いではない。",
+            "right_quote": "クーラーバッグ ブラック Sサイズ",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "販売形態の関係は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "掲載情報の寸法表記だけでは対応する実寸を確定しない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "fits in your bag",
+            "reason": "示された持ち方が異なる。",
+            "right_quote": "Convenient as a secondary bag",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代の関係は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "サーモス",
+            "reason": "ブランドが異なる。",
+            "right_quote": "DEAN & DELUCA",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "fits in your bag",
+            "reason": "通勤バッグ内に収める用途と飲み物を含めて別持ちする用途で選べる。",
+            "right_quote": "a mug bottle",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "異なるブランド・商品形態で、独立した用途が示される。",
+        "right_ref": "p6"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "アスベル 保冷バッグ 断熱構造 保冷ランチバック1段用 保冷剤付き 1段 黒 シンプルデザイン A3166",
+            "reason": "異なるブランド・型番の商品。",
+            "right_quote": "山崎実業(Yamazaki) スーパー・コンビニ弁当がそのまま入る 洗える お弁当バッグ ブラック W51×D25×H18cm(持ち手含まず) タワー tower ランチバッグ 保温 保冷 洗濯OK 折り畳み 1940",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "A3166",
+            "reason": "色・意匠だけの違いではない。",
+            "right_quote": "1940",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "販売形態の関係は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "p2の寸法は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "1段用 保冷剤付き",
+            "reason": "示された対象と付属品が異なる。",
+            "right_quote": "スーパー・コンビニ弁当がそのまま入る",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代の関係は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "アスベル",
+            "reason": "ブランドが異なる。",
+            "right_quote": "山崎実業",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "1段用 保冷剤付き",
+            "reason": "1段弁当と買った弁当の持ち運びという別の用途を紹介できる。",
+            "right_quote": "スーパー・コンビニ弁当がそのまま入る",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p2",
+        "reason": "異なるブランド・型番と用途が示される。",
+        "right_ref": "p3"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "アスベル 保冷バッグ 断熱構造 保冷ランチバック1段用 保冷剤付き 1段 黒 シンプルデザイン A3166",
+            "reason": "異なるブランド・型番の商品。",
+            "right_quote": "スケーター(Skater) 保冷 がま口 ランチバッグ L ケアフルセレクション KGA2",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "A3166",
+            "reason": "色・意匠だけの違いではない。",
+            "right_quote": "KGA2",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "販売形態の関係は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "対応する寸法・容量は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "1段用 保冷剤付き",
+            "reason": "掲載情報に異なる形状・利用上の特徴がある。",
+            "right_quote": "がま口 ランチバッグ L",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代の関係は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "アスベル",
+            "reason": "ブランドが異なる。",
+            "right_quote": "スケーター(Skater)",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "保冷剤付き",
+            "reason": "保冷剤付きの1段用とがま口型という別の魅力で紹介できる。",
+            "right_quote": "がま口",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p2",
+        "reason": "異なるブランド・型番の商品として識別できる。",
+        "right_ref": "p4"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "アスベル 保冷バッグ 断熱構造 保冷ランチバック1段用 保冷剤付き 1段 黒 シンプルデザイン A3166",
+            "reason": "異なるブランド・型番の商品。",
+            "right_quote": "サーモス 保冷ランチバッグ 5L ブラック RFC-005 BK",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "A3166",
+            "reason": "色・意匠だけの違いではない。",
+            "right_quote": "RFC-005 BK",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "販売形態の関係は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "p2の容量は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "1段用 保冷剤付き",
+            "reason": "掲載情報に異なる用途上の特徴がある。",
+            "right_quote": "wide opening Large capacity type",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代の関係は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "アスベル",
+            "reason": "ブランドが異なる。",
+            "right_quote": "サーモス",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "1段用 保冷剤付き",
+            "reason": "1段弁当用と飲み物も持つ大容量の用途で選べる。",
+            "right_quote": "5L",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p2",
+        "reason": "異なるブランド・型番と用途が示される。",
+        "right_ref": "p5"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "アスベル 保冷バッグ 断熱構造 保冷ランチバック1段用 保冷剤付き 1段 黒 シンプルデザイン A3166",
+            "reason": "異なるブランドの商品。",
+            "right_quote": "DEAN & DELUCA(ディーンアンドデルーカ) クーラーバッグ ブラック Sサイズ",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "1段用 保冷剤付き",
+            "reason": "色・意匠だけの違いではない。",
+            "right_quote": "クーラーバッグ ブラック Sサイズ",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "販売形態の関係は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "p2の寸法・容量は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "保冷剤付き",
+            "reason": "掲載情報で示された利用上の特徴が異なる。",
+            "right_quote": "a mug bottle",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代の関係は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "アスベル",
+            "reason": "ブランドが異なる。",
+            "right_quote": "DEAN & DELUCA",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "1段用 保冷剤付き",
+            "reason": "1段弁当用と容器・マグボトルの持ち運びで別の購入判断ができる。",
+            "right_quote": "It also fits S and M size food containers, and a mug bottle",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p2",
+        "reason": "異なるブランドで、掲載情報に別の用途が示される。",
+        "right_ref": "p6"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "タワー tower ランチバッグ 保温 保冷 洗濯OK 折り畳み 1940",
+            "reason": "異なるブランド・型番の商品。",
+            "right_quote": "スケーター(Skater) 保冷 がま口 ランチバッグ L ケアフルセレクション KGA2",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "1940",
+            "reason": "色・意匠だけの違いではない。",
+            "right_quote": "KGA2",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "販売形態の関係は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "p4の底面寸法は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "スーパー・コンビニ弁当がそのまま入る",
+            "reason": "広い底面が示されたバッグとがま口型バッグとして識別できる。",
+            "right_quote": "がま口 ランチバッグ L",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代の関係は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "山崎実業",
+            "reason": "ブランドが異なる。",
+            "right_quote": "スケーター(Skater)",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "Base: W 9.8 x D 9.1 inches (25 x 23 cm)",
+            "reason": "底面と口元という別の着眼点で紹介できる。",
+            "right_quote": "がま口",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p3",
+        "reason": "異なるブランド・型番の商品で、同一商品を示す根拠はない。",
+        "right_ref": "p4"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "1940",
+            "reason": "異なるブランド・型番の商品。",
+            "right_quote": "RFC-005 BK",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "1940",
+            "reason": "色・意匠だけの違いではない。",
+            "right_quote": "RFC-005 BK",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "販売形態の関係は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "対応する容量情報がない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "Super/Convenience Store Bento Fits As-Is",
+            "reason": "掲載情報で強調された用途が異なる。",
+            "right_quote": "Large capacity type",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代の関係は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "山崎実業",
+            "reason": "ブランドが異なる。",
+            "right_quote": "サーモス",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "Base: W 9.8 x D 9.1 inches (25 x 23 cm)",
+            "reason": "幅のある弁当と飲み物を含む荷物という用途で判断が分かれる。",
+            "right_quote": "holds 6 cans of 11.8 fl oz (350 ml) and 4 16.9 fl oz (500 ml) plastic bottles",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p3",
+        "reason": "異なるブランド・型番と用途が示される。",
+        "right_ref": "p5"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "1940",
+            "reason": "異なるブランドの商品。",
+            "right_quote": "DEAN & DELUCA(ディーンアンドデルーカ) クーラーバッグ ブラック Sサイズ",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "スーパー・コンビニ弁当がそのまま入る",
+            "reason": "色・意匠だけの違いではない。",
+            "right_quote": "クーラーバッグ ブラック Sサイズ",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "販売形態の関係は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "対応する底面寸法を比較できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "Super/Convenience Store Bento Fits As-Is",
+            "reason": "掲載情報に異なる利用場面が示される。",
+            "right_quote": "It also fits S and M size food containers, and a mug bottle",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代の関係は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "山崎実業",
+            "reason": "ブランドが異なる。",
+            "right_quote": "DEAN & DELUCA",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "Base: W 9.8 x D 9.1 inches (25 x 23 cm)",
+            "reason": "広い弁当の底面と飲み物の持ち運びという用途で紹介できる。",
+            "right_quote": "a mug bottle",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p3",
+        "reason": "異なるブランドの商品で、利用場面も区別される。",
+        "right_ref": "p6"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "スケーター(Skater) 保冷 がま口 ランチバッグ L ケアフルセレクション KGA2",
+            "reason": "異なるブランド・型番の商品。",
+            "right_quote": "サーモス 保冷ランチバッグ 5L ブラック RFC-005 BK",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "KGA2",
+            "reason": "色・意匠だけの違いではない。",
+            "right_quote": "RFC-005 BK",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "販売形態の関係は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "p4の寸法・容量は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "がま口 ランチバッグ L",
+            "reason": "口元の形と大容量という異なる特徴が示される。",
+            "right_quote": "wide opening Large capacity type",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代の関係は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "スケーター(Skater)",
+            "reason": "ブランドが異なる。",
+            "right_quote": "サーモス",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "がま口 ランチバッグ L",
+            "reason": "口元の形と飲み物も含める容量という別の購入理由がある。",
+            "right_quote": "5L",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p4",
+        "reason": "異なるブランド・型番の商品で、同一商品を示す根拠はない。",
+        "right_ref": "p5"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "スケーター(Skater) 保冷 がま口 ランチバッグ L ケアフルセレクション KGA2",
+            "reason": "異なるブランドの商品。",
+            "right_quote": "DEAN & DELUCA(ディーンアンドデルーカ) クーラーバッグ ブラック Sサイズ",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "がま口 ランチバッグ L",
+            "reason": "色・意匠だけの違いではない。",
+            "right_quote": "クーラーバッグ ブラック Sサイズ",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "販売形態の関係は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "p4の寸法・容量は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "がま口",
+            "reason": "掲載情報に異なる形状・持ち運び上の特徴がある。",
+            "right_quote": "The handle has cushioning",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代の関係は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "スケーター(Skater)",
+            "reason": "ブランドが異なる。",
+            "right_quote": "DEAN & DELUCA",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "がま口 ランチバッグ L",
+            "reason": "口元の形と飲み物を含める持ち方という別の関心に応える。",
+            "right_quote": "a mug bottle",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p4",
+        "reason": "異なるブランドの商品で、同一商品を示す根拠はない。",
+        "right_ref": "p6"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "RFC-005 BK",
+            "reason": "異なるブランドの商品。",
+            "right_quote": "DEAN & DELUCA(ディーンアンドデルーカ) クーラーバッグ ブラック Sサイズ",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "保冷ランチバッグ 5L",
+            "reason": "色・意匠だけの違いではない。",
+            "right_quote": "クーラーバッグ ブラック Sサイズ",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "",
+            "reason": "販売形態の関係は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "",
+            "reason": "掲載された容量・寸法表記の整合性が十分でない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "wide opening Large capacity type",
+            "reason": "示された構造上の特徴が異なる。",
+            "right_quote": "The handle has cushioning",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "系列・世代の関係は不明。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "サーモス",
+            "reason": "ブランドが異なる。",
+            "right_quote": "DEAN & DELUCA",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "Large capacity type",
+            "reason": "容量・口の広さと持ち手・マグボトルの持ち運びという異なる推薦理由がある。",
+            "right_quote": "The handle has cushioning",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p5",
+        "reason": "異なるブランドの商品で、それぞれ固有の紹介理由がある。",
+        "right_ref": "p6"
+      }
+    ],
+    "editorial_voice_appropriate": false,
+    "internal_qa_leak_absent": false,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "compact_bento",
+            "quote": "Insulated lunch case that fits in your bag!"
+          }
+        ],
+        "identity_key": "サーモス 保冷ランチケース 2.0L ブラック RFH-002",
+        "identity_quote": "サーモス 保冷ランチケース 2.0L ブラック RFH-002 BK",
+        "reason": "RFH-002として識別できる保冷ランチケース。掲載資料にバッグ内に収める用途、弁当を置く底面寸法、平らに畳めることが示され、通勤バッグに昼食をまとめたい人へ具体的に紹介できる。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "compact_bento",
+            "quote": "保冷ランチバック1段用 保冷剤付き"
+          }
+        ],
+        "identity_key": "アスベル 保冷バッグ 断熱構造 保冷ランチバック1段用 保冷剤付き 1段 黒 シンプルデザイン A3166",
+        "identity_quote": "アスベル 保冷バッグ 断熱構造 保冷ランチバック1段用 保冷剤付き 1段 黒 シンプルデザイン A3166",
+        "reason": "アスベルのA3166として識別できる。掲載タイトルに1段用と保冷剤付きが明示され、1段弁当と保冷剤を持参する人への推薦理由になる。寸法や通勤バッグへの収まり方は未確認。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "wide_container",
+            "quote": "Internal dimensions: Base: W 9.8 x D 9.1 inches (25 x 23 cm)"
+          }
+        ],
+        "identity_key": "山崎実業(Yamazaki) スーパー・コンビニ弁当がそのまま入る 洗える お弁当バッグ",
+        "identity_quote": "山崎実業(Yamazaki) スーパー・コンビニ弁当がそのまま入る 洗える お弁当バッグ ブラック W51×D25×H18cm(持ち手含まず) タワー tower ランチバッグ 保温 保冷 洗濯OK 折り畳み 1940",
+        "reason": "towerの1940として識別できる。底面内寸と市販弁当を入れる用途が掲載資料にあり、幅のある弁当を底に置きたい人への具体的な推薦が成立する。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "wide_container",
+            "quote": "保冷 がま口 ランチバッグ L"
+          }
+        ],
+        "identity_key": "スケーター(Skater) 保冷 がま口 ランチバッグ L ケアフルセレクション KGA2",
+        "identity_quote": "スケーター(Skater) 保冷 がま口 ランチバッグ L ケアフルセレクション KGA2",
+        "reason": "スケーターのKGA2として識別できる保冷ランチバッグ。掲載タイトルのLサイズとがま口型は、弁当の出し入れや口元の形に関心がある読者への紹介理由になる。底面寸法や幅のある弁当が実際に入るかは未確認で、その適合は断定しない。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "separate_carry",
+            "quote": "holds 6 cans of 11.8 fl oz (350 ml) and 4 16.9 fl oz (500 ml) plastic bottles"
+          }
+        ],
+        "identity_key": "サーモス 保冷ランチバッグ 5L ブラック RFC-005",
+        "identity_quote": "サーモス 保冷ランチバッグ 5L ブラック RFC-005 BK",
+        "reason": "RFC-005として識別でき、p1とは型番・容量・商品形態が異なる。5L容量、広い口、飲料容器を入れる目安が示され、昼食と飲み物を別バッグで手持ちしたい人へ紹介できる。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "separate_carry",
+            "quote": "It also fits S and M size food containers, and a mug bottle"
+          }
+        ],
+        "identity_key": "DEAN & DELUCA(ディーンアンドデルーカ) クーラーバッグ ブラック Sサイズ",
+        "identity_quote": "DEAN & DELUCA(ディーンアンドデルーカ) クーラーバッグ ブラック Sサイズ",
+        "reason": "DEAN & DELUCAのSサイズとして識別できる。掲載資料に食品容器とマグボトルを一緒に入れる用途、クッション付きの持ち手、保冷剤が必要な場面の注意があり、昼食と飲み物を手持ちする人へ具体的に紹介できる。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reader_decision_outsourcing_absent": false,
+    "reason": "6品は商品名に示されたブランド・型番または商品系列で個別に識別でき、同一商品の色・数量違いと確認できる組み合わせはない。3つの既存の紹介切り口に各2品が入り、それぞれに昼食の持ち運び方に沿った紹介理由がある。p2とp4は商品掲載タイトル以外の資料がなく、寸法などは未確認だが、掲載タイトルに明示された特徴の範囲で紹介できる。未確認仕様を理由に商品や企画を棄却しない。",
+    "recommendation_conclusion": false,
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}
