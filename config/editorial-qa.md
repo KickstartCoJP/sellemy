@@ -9,7 +9,8 @@ PASS conditions:
 2. Each of the six products has its own evidence-grounded appeal, a reader or use case, and a clear reason to recommend it. Do not require direct contrasts with the other five.
 3. The writing is appealing, natural Japanese appropriate to Sellemy rather than a bureaucratic specification report, with no internal QA or investigation narrative.
 4. The article does not delegate essential product research or final selection to the reader. Necessary safety and device checks can appear briefly when required.
-5. Introduction, three existing two-product groups, six product sections and conclusion support discovery and consistent recommendations. Preserve the existing layout and field names.
+5. Introduction, three existing two-product groups, six product sections and conclusion support the original reader purchase goal and distinctive discovery angle in the editorial brief. Preserve the existing layout and field names. If the article quietly substitutes another purpose or changes the editorial axis to accommodate chosen products, FAIL with exact article quotations.
+6. Read all six product descriptions and the lead, summary, group angles, buying guide and conclusion. FAIL descriptions that would fit another product after replacing its name; repeat a feature/benefit in adjacent sentences without adding a new reason; or use vague stock closing language instead of helping readers identify a matching use case. Ground each FAIL in exact quotes. Distinguish harmless natural stylistic variation from substantive repetition; never ban isolated words.
 
 Judge the whole prose, not a banned-word list. For each FAIL provide exact article quotations and a concrete failing condition. Do not fail just because there is no universal #1. Record product factual validation as NOT_EVALUATED. Editorial PASS alone never authorizes publication.
 

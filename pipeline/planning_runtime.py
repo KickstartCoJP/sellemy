@@ -64,6 +64,38 @@ def _topic_tokens(value: str) -> set[str]:
     return {part for part in parts if len(part) >= 4 and part not in DIVERSITY_STOPWORDS and not part.isdigit()}
 
 
+def _same_purchase_intent(candidate: dict, prior: dict) -> bool:
+    """Avoid another generic article on the same product theme and search intent.
+
+    Distinct purchase problems are still possible: do not equate a shared
+    category name with an identical reader goal.
+    """
+    theme = _normalize(str(candidate.get('product_theme') or ''))
+    old_theme = _normalize(str(prior.get('product_theme') or ''))
+    if not theme or theme != old_theme:
+        return False
+    query = _normalize(str(candidate.get('query') or candidate.get('intent_key') or ''))
+    previous = _normalize(str(prior.get('query') or prior.get('intent_key') or ''))
+    if not query or not previous:
+        return False
+    # A common generic topic plus a few extra keywords is not a new intent.
+    shorter, longer = sorted((query, previous), key=len)
+    return len(shorter) >= len(theme) and shorter in longer
+
+
+def _active_topic_intents() -> list[dict]:
+    """Inspect existing job artifacts; do not add another index or queue."""
+    from growth_recovery import all_jobs, read_artifact
+    result = []
+    for job in all_jobs():
+        if job.get('status') in {'DISCARDED', 'RETIRED'}:
+            continue
+        topic = read_artifact(job['slug'], 'topic.json', {}) or {}
+        if topic.get('product_theme') and topic.get('query'):
+            result.append(topic)
+    return result
+
+
 def _portfolio_signals(articles: list[dict]) -> dict:
     category_counts = {category: sum(row.get('category') == category for row in articles) for category in CATEGORIES}
     recent = articles[-RECENT_PORTFOLIO_WINDOW:]
@@ -149,6 +181,7 @@ def discover_candidates() -> list[dict]:
     prompt = CONTRACT + '\n' + (
         "企画候補は、商品選定・根拠情報の審査に合格するまで暫定的なものとして扱ってください。\n"
         "各候補には、具体的な想定読者、事前知識、購入目的、適切な説明の深さを含む `reader_persona` を設定してください。\n"
+        "商品テーマを決めるだけで企画成立としないでください。誰が何に興味を持ち、記事を読んでどのような商品に惹かれるか、既存記事と異なる購入課題と読者価値をreader_persona・intent_key・3紹介切り口で具体化してください。商品テーマと一般的な選び方が同じ企画は言い換えで増やさず、別の読者課題が明確に成立する場合に限って候補にしてください。\n"
         "企画の中心は商品を比較して勝者を決めることではなく、読者にとって意外な用途や個性を持つモノを紹介することです。まず一貫した商品テーマの中で『紹介したくなる用途や特徴』を3種類定め、各切り口に魅力の異なる2商品を割り当てられる企画を作ってください。\n"
         "例：コーヒーメーカーなら『朝の一杯を手軽に楽しむ』『淹れる時間そのものを楽しむ』『置きたくなるデザイン』の3紹介切り口。それぞれ2商品。価格・機能・サイズの優劣を機械的に3組へ分ける比較企画を初期値にしないでください。例はそのまま流用せず、テーマ固有の面白さを考えてください。\n"
         "根拠情報の入手可能性を評価する際には、商品の識別情報と推薦理由に必要な固有の事実を、メーカー公式ページ、取扱説明書、仕様書、その他追跡可能で信頼できる情報源から現実的に取得できることを基準にしてください。ECサイトの商品タイトルが見つかるだけでは不十分です。\n"
@@ -204,7 +237,7 @@ def replan_published_topic(*, slug: str, category: str, product_theme_name: str)
     prompt = CONTRACT + '\n' + (
         '既存の公開済み商品紹介記事を最新のPlanning基準で再企画してください。'
         '指定の商品テーマ、既存URL・slug・カテゴリを維持し、企画の切り口は改めて立案してください。旧商品の選定結果や旧Evidenceは引き継がないでください。'
-        '独立した商品を3つの紹介切り口ごとに2商品選べる新企画が必要です。'
+        '独立した商品を3つの紹介切り口ごとに2商品選べる新企画が必要です。既存記事と同じ商品テーマで選び方を言い換えただけなら企画として成立させず、異なる読者課題と得られる価値を確認してください。'
         '現在の商品の根拠となる検証可能なメーカー・仕様情報の収集可能性を評価してください。'
         '候補はちょうど1件のみで、slugとcategoryは入力どおり完全一致としてください。'
         '既存記事の公開内容は自動変更しません。\n'
@@ -261,6 +294,7 @@ def rank_candidates(candidates: list[dict], feedback: dict | None = None) -> lis
     existing = json.loads(ARTICLES.read_text(encoding='utf-8'))
     existing_slugs = {row['slug'] for row in existing}
     existing_intents = {_normalize(' '.join((str(row.get('slug') or ''), product_theme(row)))) for row in existing}
+    active_intents = _active_topic_intents()
     portfolio = _portfolio_signals(existing)
     category_counts = portfolio['category_counts']
     recent_category_counts = portfolio['recent_category_counts']
@@ -271,7 +305,10 @@ def rank_candidates(candidates: list[dict], feedback: dict | None = None) -> lis
     for candidate in candidates:
         validate_candidate(candidate)
         intent = _normalize(candidate['intent_key'])
-        if candidate['slug'] in existing_slugs or not intent or any(intent in old or old in intent for old in existing_intents if old):
+        if (candidate['slug'] in existing_slugs or not intent
+                or any(intent in old or old in intent for old in existing_intents if old)
+                or any(old.get('slug') != candidate['slug']
+                       and _same_purchase_intent(candidate, old) for old in active_intents)):
             continue
         signals = candidate['signals']
         base = sum(max(0.0, min(1.0, float(signals.get(k, 0)))) * weight for k, weight in {

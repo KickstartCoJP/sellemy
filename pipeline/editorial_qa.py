@@ -35,7 +35,7 @@ def review_prompt(subject):
     return (CONTRACT + '\nEvaluate ONLY this one article. Return JSON with verdict, reason, quotes. '
             'Every quote must be a literal substring from this same article; do not paraphrase quotes. '
             'PASS may return an empty quotes array. FAIL must include exact failing excerpts. '
-            'No ranking or universal best product is required.\nARTICLE:\n' +
+            'Read all six product descriptions, every group angle, lead, summary, buying guide and conclusion. Compare each part against the reader goal and editorial brief; quote actual lines for unsupported generic recommendations, repeated claims or changed article intent. No ranking or universal best product is required.\nARTICLE:\n' +
             json.dumps(subject['article'],ensure_ascii=False))
 
 def make_receipt(verdict,subject):

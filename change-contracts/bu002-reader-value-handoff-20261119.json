@@ -1,0 +1,36 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "CEO-CHAT-BU002-READER-VALUE-HANDOFF-20261119",
+  "instruction_ref": "BU-002 Sellemy CEO direct instruction 2026-11-19: 「恒久的に企画が狙い通りになるための修正方針」→「それで改修を。」",
+  "instruction": "Preserve Planning reader purchase goal and distinct article search intent through Product selection, editorial plan, Writer and independent Article QA. Refuse repetitive generic same-theme search intents against live article job topics. Ensure each product selection reason carries verified product-specific detail, not only a group label. Independent Editorial QA evaluates all six product descriptions plus the entire article for generic repetition, changed purpose, unclear recommendations. No changes to numerical thresholds, search/retry quotas, role distribution, publication gates, new article admission, or existing saved job states.",
+  "implementer": "sellemy-ops through isolated Mac Studio staging, direct non-Codex edits",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3",
+    "https://app.notion.com/p/3dc67ec6a1008196b017ee01e1824bba",
+    "https://app.notion.com/p/3fd67ec6a10081339edef6932aae8d0e",
+    "https://app.notion.com/p/41b67ec6a10081758ff5c8b8b4f5fc35"
+  ],
+  "allowed_paths": [
+    "change-contracts/bu002-reader-value-handoff-20261119.json",
+    "config/editorial-qa.md",
+    "pipeline/planning_runtime.py",
+    "pipeline/product_selection.py",
+    "pipeline/editorial_plan.py",
+    "pipeline/writer_runtime.py",
+    "pipeline/editorial_qa.py",
+    "tests/test_reader_value_handoff_20261119.py"
+  ],
+  "preserved_rules": [
+    "No generic lexical blacklist, fixed writing template, numeric editorial score, or new mandatory title format",
+    "Planner takes a product theme and sets reader goal; Writer independently sets final title",
+    "3 discovery axes x up to 10 candidates; article retains exactly 3x2 products",
+    "Missing nonessential evidence remains UNKNOWN and does not alone fail Planning QA",
+    "Reviewer quality receipt remains independent, hash/version bound; prior acceptance is not retroactively rewritten",
+    "No new runtime, queue, table, provider fallback, job status, or change to failure retry limits",
+    "No reopening old published articles or starting new production",
+    "CEO SHA-fixed staging review required before main production changes"
+  ],
+  "acceptance_tests": [
+    "tests/test_reader_value_handoff_20261119.py"
+  ]
+}
