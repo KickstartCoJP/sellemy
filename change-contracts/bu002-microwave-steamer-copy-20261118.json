@@ -1,0 +1,27 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "CEO-CHAT-BU002-MICROWAVE-STEAMER-EDITORIAL-CORRECTION-20261118",
+  "instruction_ref": "CEO direct instruction 2026-11-18: https://www.sellemy.jp/article/dailygoods/microwave-steamer-containers-for-weeknight-meals.html これ承認しちゃったけどおかしな文章の部分直しておいて",
+  "instruction": "Correct unnatural Japanese prose in this one already-published article only. Align static HTML with writer payload while preserving title, six product identities, links, URL, image, category, comparison groups and editorial approval/publish gate. Keep historical acceptance receipt immutable; no reissue of QA signoff.",
+  "implementer": "sellemy-ops via Mac Studio staging (without Codex)",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3",
+    "https://www.sellemy.jp/article/dailygoods/microwave-steamer-containers-for-weeknight-meals.html"
+  ],
+  "allowed_paths": [
+    "article/dailygoods/microwave-steamer-containers-for-weeknight-meals.html",
+    "data/payloads/microwave-steamer-containers-for-weeknight-meals.json",
+    "change-contracts/bu002-microwave-steamer-copy-20261118.json",
+    "tests/test_microwave_steamer_editorial_correction_20261118.py"
+  ],
+  "preserved_rules": [
+    "No changing Amazon ASINs, product H3, selection, category, slug, affiliate link, article title, evidence, image or content structure",
+    "Do not alter acceptance receipt or fabricate new QA pass",
+    "No global Writer prompt or unrelated articles",
+    "CEO portal SHA-fixed staging promotion required for live site",
+    "Editorial-only edits must preserve displayed HTML and structured payload consistency"
+  ],
+  "acceptance_tests": [
+    "tests/test_microwave_steamer_editorial_correction_20261118.py"
+  ]
+}
