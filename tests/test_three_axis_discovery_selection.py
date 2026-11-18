@@ -27,28 +27,31 @@ def test_exactly_three_queries():
     with pytest.raises(ProductSelectionError):
         _product_queries({**TOPIC, 'comparison_axes': AXES[:2]})
 
-def test_initial_discovery_limits_two_per_axis_and_six_total():
+def test_initial_discovery_collects_ten_per_axis_and_thirty_total():
     fake, seen = search_factory({a['id']: range(i*11, i*11+11) for i,a in enumerate(AXES)})
     with patch('growth_role_business.discover_products', fake):
         products, status = collect_unique_products(TOPIC, cache_only=False)
-    assert [a['new'] for a in status['attempts']] == [2,2,2]
-    assert len(products) == 6 and len(set(p['asin'] for p in products)) == 6
+    assert [a['new'] for a in status['attempts']] == [10,10,10]
+    assert len(products) == 30 and len(set(p['asin'] for p in products)) == 30
     assert status['complete'] and len(seen) == 3
 
 def test_cross_axis_duplicates_and_floor():
     fake, seen = search_factory({'compact':[1,2,3], 'quiet':[3,4,5], 'safe':[5,6,7]})
     with patch('growth_role_business.discover_products', fake):
         products, status = collect_unique_products(TOPIC, cache_only=False)
-    assert [a['new'] for a in status['attempts']] == [2,2,2]
-    assert len(products) == 6 and status['complete'] and len(seen)==3
+    assert len(products) == 7 and status['complete']
+    assert sum(p['discovery_axis_id']=='compact' for p in products)==3
+    assert sum(p['discovery_axis_id']=='quiet' for p in products)==2
+    assert sum(p['discovery_axis_id']=='safe' for p in products)==2
+    assert len(seen) <= 12
 
 def test_one_axis_under_two_blocks_topic():
     fake, _ = search_factory({'compact':[1,2], 'quiet':[2,3], 'safe':[4,5]})
     with patch('growth_role_business.discover_products', fake):
         products, status = collect_unique_products(TOPIC, cache_only=False)
     assert not status['complete']
-    assert [a['new'] for a in status['attempts']] == [2,1,0,2]
-    assert [a['retry'] for a in status['attempts'] if a['axis_id']=='quiet'] == [0,1]
+    assert [a['retry'] for a in status['attempts'] if a['axis_id']=='quiet'] == [0,1,2,3]
+    assert sum(p['discovery_axis_id']=='quiet' for p in products)==1
 
 def fake_ai(selected):
     def run(command, **kwargs):
@@ -119,7 +122,7 @@ def test_duplicate_different_asin_same_product_title_rejected():
         return rows
     with patch('growth_role_business.discover_products', same_title):
         products,status=collect_unique_products(TOPIC,cache_only=False)
-    assert [x['new'] for x in status['attempts']]==[2,1,0,2]
+    assert sum(p['discovery_axis_id']=='quiet' for p in products)==1
     assert not status['complete']
 
 def test_model_management_used_for_ai_selection():

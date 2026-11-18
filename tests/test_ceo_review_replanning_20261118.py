@@ -33,7 +33,7 @@ def _read(slug, key, default=None):
 
 def test_explicit_ceo_rework_replans_and_invalidates_earlier_artifacts():
     topic = {'slug': SLUG, 'category': 'dailygoods', 'product_theme': THEME}
-    products = [{'ref': str(i)} for i in range(6)]
+    products = [{'ref': str(i), 'asin': f'B{i:09d}'} for i in range(6)]
     writes = {}
     def capture(slug, name, val): writes[name] = val
     with patch.object(mod, 'load_job', return_value=_state()), \
@@ -148,3 +148,40 @@ def test_replan_commit_marker_is_written_before_external_calls():
         mod.replan_one(SLUG)
     assert written[0][0] == 'planning-restart-required.json'
     assert written[0][1]['attempted'] is True
+
+
+def test_product_qa_rejects_one_product_then_chooses_replacement_without_old_six():
+    topic = {'slug': SLUG, 'category': 'dailygoods', 'product_theme': THEME}
+    products = [{'asin': f'B{i:09d}', 'ref': f'p{i}', 'discovery_axis_id': ['a','b','c'][min(i//4,2)]} for i in range(12)]
+    selections = [
+        ([products[i] for i in [0,1,4,5,8,9]], {'axes': []}),
+        ([products[i] for i in [2,1,4,5,8,9]], {'axes': []})
+    ]
+    written = {}
+    with patch.object(mod, 'load_job', return_value=_state()), \
+         patch.object(mod, 'read_artifact', side_effect=_read), \
+         patch.object(mod, 'write_artifact', side_effect=lambda _, k, v: written.update({k:v})), \
+         patch('planning_runtime.replan_published_topic', return_value=(topic, {})), \
+         patch('growth_role_business.collect_unique_products', return_value=(products, {'complete':True, 'attempts':[]})), \
+         patch('product_selection.select_six', side_effect=selections) as choose, \
+         patch('analytics_feedback.load_feedback', return_value={}), \
+         patch('growth_role_business.build_evidence', side_effect=lambda _, selected, __: {'slug':SLUG, 'products':selected}), \
+         patch('semantic_review.independent_review', return_value={'status':'ACCEPTED'}), \
+         patch('comparison_acceptance.product_issues', side_effect=[['p1: product does not fit the topic'],[]]), \
+         patch('growth_recovery.replace_product_evidence') as replaced:
+        result=mod.replan_one(SLUG)
+    assert result['product_qa']=='PASS'
+    assert choose.call_count == 2
+    assert products[0]['asin'] not in [p['asin'] for p in choose.call_args.args[0]]
+    assert len(written['planning-restart-required.json']['product_qa_attempts']) == 2
+    replaced.assert_called_once()
+
+
+def test_search_contract_separates_30_candidates_from_6_article_products():
+    from growth_role_business import collect_unique_products
+    import inspect
+    source=inspect.getsource(collect_unique_products)
+    assert "count >= 10" in source
+    assert "'_max_products': 10 - count" in source
+    assert "max_searches: int = 3" in source
+    assert 'len(kept) == 6' not in source

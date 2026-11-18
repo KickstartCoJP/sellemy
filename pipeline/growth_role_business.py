@@ -92,11 +92,11 @@ def product_search_query(topic: dict) -> str:
 
 def discover_products(topic: dict, *, cache_only: bool) -> list[dict]:
     adapter = AutositeDiscoveryAdapter()
-    rows = adapter.search_cache(topic['query'], limit=30) if cache_only else adapter.search_amazon_live(product_search_query(topic), limit=20)
+    rows = adapter.search_cache(topic['query'], limit=30) if cache_only else adapter.search_amazon_live(product_search_query(topic), limit=30)
     excluded = set(topic.get('_exclude_asins') or [])
-    max_products = int(topic.get('_max_products', 2)) if not cache_only else 30
+    max_products = min(int(topic.get('_max_products', 10)), 10) if not cache_only else 30
     candidates, seen = [], set()
-    for row in rows[:20] if not cache_only else rows:
+    for row in rows[:30] if not cache_only else rows:
         asin = (row.get('asin') or '').upper()
         from product_candidate_registry import is_ng
         if is_ng(asin):
@@ -154,28 +154,34 @@ def _product_queries(topic: dict):
 
 def collect_unique_products(topic: dict, *, cache_only: bool, existing: list[dict] | None = None,
                             target_new: int = 6, used_queries: set[str] | None = None,
-                            max_searches: int = 1, rejected_asins: set[str] | None = None) -> tuple[list[dict], dict]:
-    """Choose only two distinct items per axis; retain QA-passed items on replacement."""
+                            max_searches: int = 3, rejected_asins: set[str] | None = None) -> tuple[list[dict], dict]:
+    """Collect up to 10 candidates per axis; select final 2 per axis later.
+
+    A lack of optional source excerpts is recorded for Product QA, not used to
+    silently truncate the candidate pool to exactly six items.
+    """
     kept, _ = dedupe_content_products(list(existing or []))
+    axes = topic['comparison_axes']
+    axis_ids = {axis['id'] for axis in axes}
     excluded_prior = {p['asin'] for p in kept}
-    kept = [p for p in kept if p.get('discovery_axis_id') in {a['id'] for a in topic['comparison_axes']}]
+    kept = [p for p in kept if p.get('discovery_axis_id') in axis_ids]
     rejected = set(rejected_asins or []) | (excluded_prior - {p['asin'] for p in kept})
     retained_count = len(kept)
     attempts = []
-    for axis, query in zip(topic['comparison_axes'], _product_queries(topic)):
+    for axis, query in zip(axes, _product_queries(topic)):
         axis_id = axis['id']
-        for retry in range(max_searches + 1):
+        for retry in range(min(max_searches, 3) + 1):
             count = sum(p.get('discovery_axis_id') == axis_id for p in kept)
-            if count >= 2:
+            if count >= 10:
                 break
             excluded = rejected | {p['asin'] for p in kept}
             try:
                 candidates = discover_products({**topic, 'query': query,
-                    '_exclude_asins': sorted(excluded), '_max_products': 2 - count},
+                    '_exclude_asins': sorted(excluded), '_max_products': 10 - count},
                     cache_only=cache_only)
                 new = 0
                 for candidate in candidates:
-                    if sum(p.get('discovery_axis_id') == axis_id for p in kept) >= 2:
+                    if sum(p.get('discovery_axis_id') == axis_id for p in kept) >= 10:
                         break
                     if candidate.get('asin') in excluded:
                         continue
@@ -184,21 +190,20 @@ def collect_unique_products(topic: dict, *, cache_only: bool, existing: list[dic
                         rejected.add(candidate['asin'])
                         continue
                     kept.append({**candidate, 'discovery_axis_id': axis_id})
+                    excluded.add(candidate['asin'])
                     new += 1
                 attempts.append({'axis_id': axis_id, 'query': query, 'retry': retry,
                                  'found': len(candidates), 'new': new,
-                                 'complete': sum(p.get('discovery_axis_id') == axis_id for p in kept) == 2})
-                if not new:
-                    rejected.update(p['asin'] for p in candidates)
+                                 'candidate_count': sum(p.get('discovery_axis_id') == axis_id for p in kept),
+                                 'complete': sum(p.get('discovery_axis_id') == axis_id for p in kept) >= 2})
             except Exception as exc:
                 attempts.append({'axis_id': axis_id, 'query': query, 'retry': retry,
                                  'found': 0, 'new': 0, 'complete': False,
                                  'error': f'{type(exc).__name__}: {exc}'})
-    complete = len(kept) == 6 and all(
-        sum(p.get('discovery_axis_id') == a['id'] for p in kept) == 2
-        for a in topic['comparison_axes'])
+    complete = all(sum(p.get('discovery_axis_id') == a['id'] for p in kept) >= 2
+                   for a in axes)
     return kept, {'added_unique': len(kept) - retained_count,
-                  'complete': complete, 'attempts': attempts}
+                  'candidate_count': len(kept), 'complete': complete, 'attempts': attempts}
 
 
 def replenish_products(topic: dict, products: list[dict], *, cache_only: bool,

@@ -1,0 +1,33 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "CEO-CHAT-BU002-PRODUCT-EXPLORATION-CANON-20261118",
+  "instruction_ref": "CEO direct instruction 2026-11-18: 正本違反。今すぐ修正して落とした企画やり直せ。",
+  "instruction": "Restore documented 3 axes x up to 10 candidate products, initial plus up to 3 search retries per axis; keep final article at 3 x 2 products. Allow Product QA rejected items to be replaced from current candidate pool, preserving independent QA, without reviving any new-topic admission.",
+  "implementer": "sellemy-ops, Mac Studio staging (non-Codex)",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3",
+    "https://app.notion.com/p/3dc67ec6a1008196b017ee01e1824bba",
+    "https://app.notion.com/p/3fd67ec6a10081339edef6932aae8d0e"
+  ],
+  "allowed_paths": [
+    "change-contracts/bu002-product-exploration-canon-20261118.json",
+    "pipeline/ceo_review_replanning.py",
+    "pipeline/growth_role_business.py",
+    "tests/test_ceo_review_replanning_20261118.py",
+    "tests/test_product_discovery_recovery_20261116.py",
+    "tests/test_three_axis_discovery_selection.py"
+  ],
+  "preserved_rules": [
+    "At most 30 product candidates, at most 10 per axis, article output remains exactly six distinct products in 3x2 groups",
+    "No lowering existing Product/Article QA or buyer evidence acceptance",
+    "Preserve CEO pre-publication review gate and immutable published content",
+    "No new article topic admission or unrelated failed job reopen",
+    "One-shot CEO replan job recovery only on explicit instruction; record attempt trace and prior errors",
+    "No Codex tool used to modify code"
+  ],
+  "acceptance_tests": [
+    "tests/test_three_axis_discovery_selection.py",
+    "tests/test_product_discovery_recovery_20261116.py",
+    "tests/test_ceo_review_replanning_20261118.py"
+  ]
+}
