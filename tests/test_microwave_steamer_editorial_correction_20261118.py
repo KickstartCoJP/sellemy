@@ -32,4 +32,7 @@ def test_corrected_article_and_payload_match_without_changing_product_identity()
         "青い鍋を食卓に置くところまで",
         "手持ちのレンジに置く場面も思い描きやすい",
         "道具があれば、ざるで野菜を蒸して",
+        "食洗機と食器乾燥機にも対応しているので、食洗機や食器乾燥機",
+        "食卓での使い道が広がります",
+        "その先の料理にも使える蒸し器",
     ))

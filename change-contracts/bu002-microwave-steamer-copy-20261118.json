@@ -2,7 +2,7 @@
   "schema": "kickstart-change-contract/v1",
   "task_id": "CEO-CHAT-BU002-MICROWAVE-STEAMER-EDITORIAL-CORRECTION-20261118",
   "instruction_ref": "CEO direct instruction 2026-11-18: https://www.sellemy.jp/article/dailygoods/microwave-steamer-containers-for-weeknight-meals.html これ承認しちゃったけどおかしな文章の部分直しておいて",
-  "instruction": "Correct unnatural Japanese prose in this one already-published article only. Align static HTML with writer payload while preserving title, six product identities, links, URL, image, category, comparison groups and editorial approval/publish gate. Keep historical acceptance receipt immutable; no reissue of QA signoff.",
+  "instruction": "Correct unnatural Japanese prose in this one already-published article only. Align static HTML with writer payload while preserving title, six product identities, links, URL, image, category, comparison groups and editorial approval/publish gate. Keep historical acceptance receipt immutable; no reissue of QA signoff. Full-review follow-up 2026-11-18: eliminate remaining tautologies, repetitive product phrasing, and vague comparison-axis introductory copy in all six product paragraphs and all three angle paragraphs.",
   "implementer": "sellemy-ops via Mac Studio staging (without Codex)",
   "canonical_refs": [
     "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3",
