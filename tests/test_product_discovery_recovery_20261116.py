@@ -72,7 +72,7 @@ def test_unaccepted_product_hold_cannot_resume(tmp_path):
 
 
 def test_discovery_search_has_bounded_retries():
-    assert business.collect_unique_products.__kwdefaults__['max_searches']==1
+    assert business.collect_unique_products.__kwdefaults__['max_searches']==3
 
 
 def test_viability_implicit_planning_rounds_are_bounded():

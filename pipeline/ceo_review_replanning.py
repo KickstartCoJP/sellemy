@@ -1,5 +1,6 @@
 """One-shot fresh replan for an explicit CEO-reworked, previously unpublished job."""
 from __future__ import annotations
+import re
 
 from growth_recovery import load_job, read_artifact, write_artifact, set_stage
 
@@ -36,14 +37,34 @@ def replan_one(slug: str) -> dict:
         topic, provider = replan_published_topic(
             slug=slug, category=state['category'], product_theme_name=theme)
         products, trace = collect_unique_products(topic, cache_only=False)
-        if len(products) != 6 or trace.get('complete') is not True:
-            raise ValueError('replanning did not find six independent products')
-        selected, selection = select_six(products, topic, load_feedback())
-        evidence = build_evidence(topic, selected, selection)
-        evidence['product_acceptance'] = independent_review(evidence)
-        issues = product_issues(evidence)
-        if issues:
-            raise ValueError('independent Product QA blocked: ' + '; '.join(issues))
+        marker['product_discovery'] = trace
+        write_artifact(slug, 'planning-restart-required.json', marker)
+        if len(products) < 6 or trace.get('complete') is not True:
+            raise ValueError('replanning did not find at least two candidates in every axis')
+        # A QA rejection of one product does not condemn the theme: select a
+        # different six from the already-collected, at-most-30 candidate pool.
+        excluded_asins = set()
+        for qa_attempt in range(4):  # initial selection + up to 3 replacements
+            eligible = [p for p in products if p['asin'] not in excluded_asins]
+            selected, selection = select_six(eligible, topic, load_feedback())
+            evidence = build_evidence(topic, selected, selection)
+            evidence['product_acceptance'] = independent_review(evidence)
+            issues = product_issues(evidence)
+            marker.setdefault('product_qa_attempts', []).append({
+                'attempt': qa_attempt, 'selected_asins': [p['asin'] for p in selected],
+                'issues': issues[:15]})
+            write_artifact(slug, 'planning-restart-required.json', marker)
+            if not issues:
+                break
+            # Independent QA identifies failing p1..p6; other selected products
+            # remain available for a changed combination on the next attempt.
+            rejected_refs = {int(n) - 1 for issue in issues
+                             for n in re.findall(r'\bp([1-6])\s*:', issue)}
+            if not rejected_refs:
+                raise ValueError('independent Product QA blocked: ' + '; '.join(issues))
+            excluded_asins.update(selected[i]['asin'] for i in rejected_refs)
+        else:
+            raise ValueError('independent Product QA blocked after three replacements: ' + '; '.join(issues))
     except Exception as exc:
         marker['last_error_type'] = type(exc).__name__
         marker['last_error'] = str(exc)[:500]
