@@ -152,8 +152,8 @@ def select_six(candidates: list[dict], topic: dict, feedback: dict, *, pinned: l
         if len(ordered) != 6 or len({p['asin'] for p in ordered}) != 6:
             raise ProductSelectionError('six candidates must be distinct and belong to the three axes')
         labels = {axis['id']: str(axis.get('label') or axis['id']) for axis in axes}
-        selected = [{**p, 'selection_reason': '企画軸「' + labels[p['discovery_axis_id']]
-                     + '」の候補として収集。適合性は独立商品QAで判定する。'} for p in ordered]
+        selected = [{**p, 'selection_reason': ('紹介切り口「' + labels[p['discovery_axis_id']]
+                     + '」の候補。確認済み商品情報: ' + _text(p)[:180])} for p in ordered]
         groups = [{'axis_id': axis['id'], 'products': [
             {'asin': p['asin'], 'reason': p['selection_reason']} for p in selected
             if p['discovery_axis_id'] == axis['id']]} for axis in axes]
@@ -175,7 +175,7 @@ def select_six(candidates: list[dict], topic: dict, feedback: dict, *, pinned: l
     prompt = ("""あなたはSellemyの商品選定担当です。各商品の固有の魅力と根拠を重視し、各軸最大10商品から掲載する異なる2商品、3軸で6商品を選んでください。
 検索順位や形式的な比較点で決めず、読者がまだ知らない商品に興味を持つ理由、具体的な用途・生活場面・商品の個性を根拠情報から判断してください。購入可能性も確保してください。各2商品は優劣を競わせる組ではなく、同じ紹介切り口に合う特徴の異なる2商品です。
 確認できない事実や使用経験を作らないでください。同一商品の色違い、パッケージ違い、実質的な重複を選ばないでください。
-各企画軸（discovery_axis_id）から必ず2商品ずつ選んでください。retained_asinsに記載した独立審査済みの商品は必ず維持してください。
+各商品の採用理由は『この商品でなければ得られない具体的な特徴』『どの読者のどの使い方に向くか』『出典に書かれた事実』を結び付けてください。候補一覧のタイトルを言い換えただけ、一般的なおすすめ理由だけでは採用理由になりません。企画軸のラベルを商品に都合よく書き換えないでください。\n各企画軸（discovery_axis_id）から必ず2商品ずつ選んでください。retained_asinsに記載した独立審査済みの商品は必ず維持してください。
 出力はJSONのみ。形式は {"axes":[{"axis_id":"企画軸ID","products":[{"asin":"ASIN","reason":"確認可能な選定理由"},{"asin":"ASIN","reason":"確認可能な選定理由"}]}]} です。
 axesは入力の3軸を1回ずつ含め、各軸の商品は相異なる2件、全軸のASINも相異なる6件としてください。各商品の選定理由には、その商品だけの魅力・読者が興味を持つ理由・当該切り口の具体的な裏付けを含めてください。「AよりBが優れる」のような比較を選定理由の定型にしないでください。
 """+json.dumps({'topic': {k:topic.get(k) for k in ('title','query','intent_key','reader_persona','comparison_axes')},

@@ -12,7 +12,7 @@ def build_editorial_plan(topic, evidence, ceo_rework=''):
         {'id':'E03','section':'comparison_groups','instruction':'3つの紹介切り口で各2商品を紹介する構成にする。切り口は価格・機能・サイズの横並び比較を初期値にせず、用途・使う時間・楽しみ方・個性などテーマに固有の魅力を中心に作る。各組ではその切り口の魅力を短く伝え、各商品の固有の事実・推薦理由は商品カードへ譲る。商品同士の差異や優劣の説明は必須にしない。商品名や証明・検証経緯は商品カセット以外に記載しない'},
         {'id':'E04','section':'products','instruction':'全6商品それぞれについて、根拠のある固有の特徴、魅力、向く人、推薦する理由を説明する。他商品との比較や優劣を強制しない。読者がその商品を知りたくなる固有の魅力と使用場面を優先する。商品説明は各160〜260字を初期目安とし、根拠のない水増しをしない'},
         {'id':'E05','section':'how_to_choose','instruction':'商品紹介の後に、読者が商品に興味を持つきっかけや、使い道を想像できるポイントを自然な日本語で説明する。商品カードと同じ事実の再掲ではなく、商品を理解するための実用的なヒントを示す。確認事項の羅列で終わらせない。商品名・ブランド名・証明・検証経緯は記載しない'},
-        {'id':'E06','section':'conclusion','instruction':'結びには固有の商品名・ブランド名を記載しない。lead・summary・説明の繰り返し、商品羅列や仕様の再説明を避け、記事の内容に合う自然な短い締めにする。具体的な推薦は商品紹介内で完結させる'},
+        {'id':'E06','section':'conclusion','instruction':'結びには固有の商品名・ブランド名を記載しない。lead・summary・説明の繰り返し、商品羅列や仕様の再説明を避け、記事の内容に合う自然な短い締めにする。内容を言い換えるだけの抽象的な結びではなく、読者が用途を絞れる具体的な判断の手がかりを残す。具体的な推薦は商品紹介内で完結させる'},
         {'id':'E07','section':'all','instruction':'自然な日本語で書き、内部QAや制作工程の情報を記事に露出しない。特定語句の使用・不使用を指定せず、商品の特徴と推薦理由に沿った自然な表現を用いる'},
         {'id':'E08','section':'all','instruction':'記事の商品名・仕様・推薦・必要な比較の事実が検証済みEvidenceで裏付けられ、事実を創作していない'},
     ]
@@ -32,7 +32,8 @@ def build_editorial_plan(topic, evidence, ceo_rework=''):
         'topic_hash':digest({k:v for k,v in topic.items() if not k.startswith('_') and k != 'title'}),
         'evidence_hash':digest(evidence_content(evidence)),
         'reader':topic.get('reader_persona') or {},
-        'search_intent':topic.get('search_intent') or '',
+        'reader_value_goal':(topic.get('reader_persona') or {}).get('purchase_goal') or '',
+        'search_intent':topic.get('intent_key') or topic.get('search_intent') or '',
         'comparison_axes':[{'id':a['id'], 'label':a.get('label','')} for a in axes],
         'selected_axis_groups':(evidence.get('selection') or {}).get('axes') or [],
         'products':[{'ref':p['ref'], 'name':p.get('amazon_title') or p['ref'],
