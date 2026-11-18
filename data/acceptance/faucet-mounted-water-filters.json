@@ -1,0 +1,1082 @@
+{
+  "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+  "evidence_sha256": "2d654a2a8f38611f7e7c2bd15034a4b639b33d744582cc8c4007346ae600888e",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 14848,
+    "input_tokens": 34161,
+    "member_binding_revision": 4,
+    "output_tokens": 8479,
+    "reasoning_effort": "medium",
+    "reasoning_output_tokens": 1275,
+    "session_id": "01a1ed0e-4638-78a3-85fd-69264461462e",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "5fadcec3eec3dda614abbe06e39e6adf75b33afc65890310742cdf09251b0c49",
+  "review": {
+    "buying_guidance": true,
+    "claims_grounded": true,
+    "complete_comparison": true,
+    "distinct_products": true,
+    "duplicate_pair_checks": [
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Kurita RSMX-3087",
+            "reason": "異なるブランドと基本型番の本体。",
+            "right_quote": "Toray Trevino MK307MX-P",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "RSMX-3087",
+            "reason": "色・意匠だけの違いを示す組ではない。",
+            "right_quote": "MK307MX-P",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "RSMX-3087",
+            "reason": "販売単位だけの違いではない。",
+            "right_quote": "MK307MX-P",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "7 x 7.2 x 7.5 cm",
+            "reason": "記載された本体寸法が異なる。",
+            "right_quote": "7.8D x 14.4W x 9.8H cm",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "[Attachable Faucet]",
+            "reason": "p2には3種類の水流切り替えが明記される。",
+            "right_quote": "3 Levels Switchable",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "両商品の世代関係を示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand クリタック",
+            "reason": "ブランドが異なる。",
+            "right_quote": "Brand トレビーノ",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "outer diameter of 16 mm",
+            "reason": "取付条件と日常の水流・手入れという別々の選択理由がある。",
+            "right_quote": "washable spout cover",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "別ブランド・別型番の蛇口直結型本体。",
+        "right_ref": "p2"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Kurita RSMX-3087",
+            "reason": "異なるブランドと基本型番の本体。",
+            "right_quote": "Panasonic TK-CJ24-W",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "RSMX-3087",
+            "reason": "色・意匠だけの違いではない。",
+            "right_quote": "TK-CJ24-W",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "RSMX-3087",
+            "reason": "販売単位だけの違いではない。",
+            "right_quote": "TK-CJ24-W",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "7 x 7.2 x 7.5 cm",
+            "reason": "記載された本体寸法が異なる。",
+            "right_quote": "12L x 13.5W x 7.5H cm",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "[Attachable Faucet]",
+            "reason": "p3にはカートリッジ残量表示が明記される。",
+            "right_quote": "LCD display",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "世代関係を示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand クリタック",
+            "reason": "ブランドが異なる。",
+            "right_quote": "Brand Panasonic",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "outer diameter of 16 mm",
+            "reason": "取付条件と浄水使用量にそれぞれ具体的な選択理由がある。",
+            "right_quote": "Replacement Estimate: 4,000 L (1 year)",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "別ブランド・別型番の本体。",
+        "right_ref": "p3"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Kurita RSMX-3087",
+            "reason": "異なるブランドと基本型番の本体。",
+            "right_quote": "Toray Trebino SX607V",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "RSMX-3087",
+            "reason": "色・意匠だけの違いではない。",
+            "right_quote": "SX607V",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "RSMX-3087",
+            "reason": "販売単位だけの違いではない。",
+            "right_quote": "SX607V",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "7 x 7.2 x 7.5 cm",
+            "reason": "記載された本体寸法が異なる。",
+            "right_quote": "Height 74 x Width 116 x Depth 125 mm",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "[Attachable Faucet]",
+            "reason": "p4には浄水残量表示が明記される。",
+            "right_quote": "Color Digital Sign Equipped",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "世代関係を示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand クリタック",
+            "reason": "ブランドが異なる。",
+            "right_quote": "Brand トレビーノ",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "outer diameter of 16 mm",
+            "reason": "取付条件と浄水・交換管理に別々の選択理由がある。",
+            "right_quote": "Installed cartridge: High removal type STC.VJ",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "別ブランド・別型番の本体。",
+        "right_ref": "p4"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Kurita RSMX-3087",
+            "reason": "異なるブランドと基本型番の本体。",
+            "right_quote": "CB023-WT",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "RSMX-3087",
+            "reason": "色・意匠だけの違いではない。",
+            "right_quote": "CB023-WT",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "RSMX-3087",
+            "reason": "販売単位だけの違いではない。",
+            "right_quote": "CB023-WT",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "7 x 7.2 x 7.5 cm",
+            "reason": "記載された本体寸法が異なる。",
+            "right_quote": "10D x 13.1W x 5.9H cm",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "",
+            "reason": "機能の全体像を直接照合できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "世代関係を示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand クリタック",
+            "reason": "ブランドが異なる。",
+            "right_quote": "Brand CLEANSUI",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "outer diameter of 16 mm",
+            "reason": "取付条件と交換管理にそれぞれ具体的な選択理由がある。",
+            "right_quote": "Included Cartridge: CBC03 x 1 piece",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "別ブランド・別型番の本体。",
+        "right_ref": "p5"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Kurita RSMX-3087",
+            "reason": "p6のセットにはp1と異なる型番の本体が含まれる。",
+            "right_quote": "CSP901-WT Faucet-Mounted Water Filter",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "RSMX-3087",
+            "reason": "色・意匠だけの違いではない。",
+            "right_quote": "CSP901-WT",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "RSMX-3087",
+            "reason": "p6はセット商品だが本体型番も異なる。",
+            "right_quote": "CSP901-WT",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "7 x 7.2 x 7.5 cm",
+            "reason": "記載された本体寸法が異なる。",
+            "right_quote": "119 x 126 x 79 mm",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "",
+            "reason": "機能の全体像を直接照合できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "世代関係を示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand クリタック",
+            "reason": "ブランドが異なる。",
+            "right_quote": "Brand CLEANSUI",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "outer diameter of 16 mm",
+            "reason": "取付条件と交換分の備えに別々の選択理由がある。",
+            "right_quote": "Total of 4 Cartridges Included",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "p6は別型番の浄水器本体を含むセット。",
+        "right_ref": "p6"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Toray Trevino MK307MX-P",
+            "reason": "異なるブランドと基本型番の本体。",
+            "right_quote": "Panasonic TK-CJ24-W",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "MK307MX-P",
+            "reason": "色・意匠だけの違いではない。",
+            "right_quote": "TK-CJ24-W",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "MK307MX-P",
+            "reason": "販売単位だけの違いではない。",
+            "right_quote": "TK-CJ24-W",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "7.8D x 14.4W x 9.8H cm",
+            "reason": "記載された本体寸法が異なる。",
+            "right_quote": "12L x 13.5W x 7.5H cm",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "3 Levels Switchable",
+            "reason": "記載された注目機能が異なる。",
+            "right_quote": "LCD display",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "世代関係を示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand トレビーノ",
+            "reason": "ブランドが異なる。",
+            "right_quote": "Brand Panasonic",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "washable spout cover",
+            "reason": "水流・手入れと浄水使用量に別々の選択理由がある。",
+            "right_quote": "Replacement Estimate: 4,000 L (1 year)",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p2",
+        "reason": "別ブランド・別型番の本体。",
+        "right_ref": "p3"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "MK307MX-P Cassetty Series",
+            "reason": "同ブランドでも型番と系列が異なる本体。",
+            "right_quote": "SX607V Super Series",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "MK307MX-P Cassetty Series",
+            "reason": "色・意匠だけの違いではない。",
+            "right_quote": "SX607V Super Series",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "MK307MX-P",
+            "reason": "販売単位だけの違いではない。",
+            "right_quote": "SX607V",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "7.8D x 14.4W x 9.8H cm",
+            "reason": "記載された本体寸法が異なる。",
+            "right_quote": "Height 74 x Width 116 x Depth 125 mm",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "Washable Spout Cover",
+            "reason": "異なる構成・機能が明記されている。",
+            "right_quote": "Color Digital Sign Equipped",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "Cassetty Series",
+            "reason": "異なる系列として記載される。",
+            "right_quote": "Super Series",
+            "status": "PASS"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand トレビーノ",
+            "reason": "同ブランドだが型番と系列で識別できる。",
+            "right_quote": "Brand トレビーノ",
+            "status": "N/A"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "washable spout cover",
+            "reason": "手入れ・設置と浄水・交換管理に別々の選択理由がある。",
+            "right_quote": "Installed cartridge: High removal type STC.VJ",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p2",
+        "reason": "同ブランドだがカセッティとスーパーシリーズの別本体。",
+        "right_ref": "p4"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Toray Trevino MK307MX-P",
+            "reason": "異なるブランドと基本型番の本体。",
+            "right_quote": "CB023-WT",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "MK307MX-P",
+            "reason": "色・意匠だけの違いではない。",
+            "right_quote": "CB023-WT",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "MK307MX-P",
+            "reason": "販売単位だけの違いではない。",
+            "right_quote": "CB023-WT",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "7.8D x 14.4W x 9.8H cm",
+            "reason": "記載された本体寸法が異なる。",
+            "right_quote": "10D x 13.1W x 5.9H cm",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "",
+            "reason": "機能の全体像を直接照合できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "世代関係を示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand トレビーノ",
+            "reason": "ブランドが異なる。",
+            "right_quote": "Brand CLEANSUI",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "washable spout cover",
+            "reason": "水流・手入れと交換予定に別々の選択理由がある。",
+            "right_quote": "Estimated filter replacement: 3 months",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p2",
+        "reason": "別ブランド・別型番の本体。",
+        "right_ref": "p5"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Toray Trevino MK307MX-P",
+            "reason": "p6のセットには別ブランド・別型番の本体が含まれる。",
+            "right_quote": "CSP901-WT Faucet-Mounted Water Filter",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "MK307MX-P",
+            "reason": "色・意匠だけの違いではない。",
+            "right_quote": "CSP901-WT",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "MK307MX-P",
+            "reason": "p6はセット商品だが本体型番も異なる。",
+            "right_quote": "CSP901-WT",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "7.8D x 14.4W x 9.8H cm",
+            "reason": "記載された本体寸法が異なる。",
+            "right_quote": "119 x 126 x 79 mm",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "",
+            "reason": "機能の全体像を直接照合できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "世代関係を示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand トレビーノ",
+            "reason": "ブランドが異なる。",
+            "right_quote": "Brand CLEANSUI",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "washable spout cover",
+            "reason": "水流・手入れと交換分の備えに別々の選択理由がある。",
+            "right_quote": "Total of 4 Cartridges Included",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p2",
+        "reason": "p6は別ブランド・別型番の本体を含むセット。",
+        "right_ref": "p6"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Panasonic TK-CJ24-W",
+            "reason": "異なるブランドと基本型番の本体。",
+            "right_quote": "Toray Trebino SX607V",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "TK-CJ24-W",
+            "reason": "色・意匠だけの違いではない。",
+            "right_quote": "SX607V",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "TK-CJ24-W",
+            "reason": "販売単位だけの違いではない。",
+            "right_quote": "SX607V",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "12L x 13.5W x 7.5H cm",
+            "reason": "記載された本体寸法が異なる。",
+            "right_quote": "Height 74 x Width 116 x Depth 125 mm",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "LCD display",
+            "reason": "表示機能の記載がそれぞれ異なる。",
+            "right_quote": "Color Digital Sign Equipped",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "世代関係を示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand Panasonic",
+            "reason": "ブランドが異なる。",
+            "right_quote": "Brand トレビーノ",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "Replacement Estimate: 4,000 L (1 year)",
+            "reason": "それぞれの浄水使用量と交換目安に基づく選択理由がある。",
+            "right_quote": "2 months (600L when using 10L per day)",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p3",
+        "reason": "別ブランド・別型番の本体。",
+        "right_ref": "p4"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Panasonic TK-CJ24-W",
+            "reason": "異なるブランドと基本型番の本体。",
+            "right_quote": "CB023-WT",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "TK-CJ24-W",
+            "reason": "色・意匠だけの違いではない。",
+            "right_quote": "CB023-WT",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "TK-CJ24-W",
+            "reason": "販売単位だけの違いではない。",
+            "right_quote": "CB023-WT",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "12L x 13.5W x 7.5H cm",
+            "reason": "記載された本体寸法が異なる。",
+            "right_quote": "10D x 13.1W x 5.9H cm",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "",
+            "reason": "機能の全体像を直接照合できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "世代関係を示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand Panasonic",
+            "reason": "ブランドが異なる。",
+            "right_quote": "Brand CLEANSUI",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "Replacement Estimate: 4,000 L (1 year)",
+            "reason": "浄水使用量と交換管理にそれぞれ具体的な選択理由がある。",
+            "right_quote": "Included Cartridge: CBC03 x 1 piece",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p3",
+        "reason": "別ブランド・別型番の本体。",
+        "right_ref": "p5"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Panasonic TK-CJ24-W",
+            "reason": "p6のセットには別ブランド・別型番の本体が含まれる。",
+            "right_quote": "CSP901-WT Faucet-Mounted Water Filter",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "TK-CJ24-W",
+            "reason": "色・意匠だけの違いではない。",
+            "right_quote": "CSP901-WT",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "TK-CJ24-W",
+            "reason": "p6はセット商品だが本体型番も異なる。",
+            "right_quote": "CSP901-WT",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "12L x 13.5W x 7.5H cm",
+            "reason": "記載された本体寸法が異なる。",
+            "right_quote": "119 x 126 x 79 mm",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "",
+            "reason": "機能の全体像を直接照合できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "世代関係を示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand Panasonic",
+            "reason": "ブランドが異なる。",
+            "right_quote": "Brand CLEANSUI",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "Replacement Estimate: 4,000 L (1 year)",
+            "reason": "浄水使用量と交換分の備えに別々の選択理由がある。",
+            "right_quote": "Total of 4 Cartridges Included",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p3",
+        "reason": "p6は別ブランド・別型番の本体を含むセット。",
+        "right_ref": "p6"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Toray Trebino SX607V",
+            "reason": "異なるブランドと基本型番の本体。",
+            "right_quote": "CB023-WT",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "SX607V",
+            "reason": "色・意匠だけの違いではない。",
+            "right_quote": "CB023-WT",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "SX607V",
+            "reason": "販売単位だけの違いではない。",
+            "right_quote": "CB023-WT",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "Height 74 x Width 116 x Depth 125 mm",
+            "reason": "記載された本体寸法が異なる。",
+            "right_quote": "10D x 13.1W x 5.9H cm",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "",
+            "reason": "機能の全体像を直接照合できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "世代関係を示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand トレビーノ",
+            "reason": "ブランドが異なる。",
+            "right_quote": "Brand CLEANSUI",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "Installed cartridge: High removal type STC.VJ",
+            "reason": "浄水・残量管理と交換周期にそれぞれ具体的な選択理由がある。",
+            "right_quote": "Included Cartridge: CBC03 x 1 piece",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p4",
+        "reason": "別ブランド・別型番の本体。",
+        "right_ref": "p5"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "Toray Trebino SX607V",
+            "reason": "p6のセットには別ブランド・別型番の本体が含まれる。",
+            "right_quote": "CSP901-WT Faucet-Mounted Water Filter",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "SX607V",
+            "reason": "色・意匠だけの違いではない。",
+            "right_quote": "CSP901-WT",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "SX607V",
+            "reason": "p6はセット商品だが本体型番も異なる。",
+            "right_quote": "CSP901-WT",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "Height 74 x Width 116 x Depth 125 mm",
+            "reason": "記載された本体寸法が異なる。",
+            "right_quote": "119 x 126 x 79 mm",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "",
+            "reason": "機能の全体像を直接照合できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "",
+            "reason": "世代関係を示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand トレビーノ",
+            "reason": "ブランドが異なる。",
+            "right_quote": "Brand CLEANSUI",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "Installed cartridge: High removal type STC.VJ",
+            "reason": "浄水・残量管理と交換分の備えに別々の選択理由がある。",
+            "right_quote": "Total of 4 Cartridges Included",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p4",
+        "reason": "p6は別ブランド・別型番の本体を含むセット。",
+        "right_ref": "p6"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "CB023-WT",
+            "reason": "同ブランドでもCB023-WTとCSP901-WTの別型番の本体。",
+            "right_quote": "CSP901-WT Faucet-Mounted Water Filter",
+            "status": "PASS"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "CB Series Compact Model",
+            "reason": "異なる系列として記載され、色・意匠だけの違いではない。",
+            "right_quote": "CSP Series",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "CB023-WT",
+            "reason": "p6は交換用を含むセットだが、本体型番もp5と異なる。",
+            "right_quote": "CSP901-WT",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "10D x 13.1W x 5.9H cm",
+            "reason": "記載された本体寸法が異なる。",
+            "right_quote": "119 x 126 x 79 mm",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "CB Series Compact Model",
+            "reason": "p6には液晶付き本体と記載され、系列も異なる。",
+            "right_quote": "with LCD",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "CB Series",
+            "reason": "異なる系列として記載される。",
+            "right_quote": "CSP Series",
+            "status": "PASS"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "Brand CLEANSUI",
+            "reason": "同ブランドだが別の本体型番と系列で識別できる。",
+            "right_quote": "Brand CLEANSUI",
+            "status": "N/A"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "Included Cartridge: CBC03 x 1 piece",
+            "reason": "異なる本体を選ぶ判断に加え、購入時に備える交換分にも違いがある。",
+            "right_quote": "Total of 4 Cartridges Included",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p5",
+        "reason": "同ブランドのCBシリーズ本体とCSPシリーズ本体であり、p6は後者を含むセット。",
+        "right_ref": "p6"
+      }
+    ],
+    "editorial_voice_appropriate": true,
+    "internal_qa_leak_absent": true,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "installation_and_space",
+            "quote": "[Attachable Faucet] Round universal faucet with a bulge at the tip and an outer diameter of 16 mm, outer screw foam faucet (screw outer diameter 22 mm, thread pitch 1.25), inner screw foam faucet (screw outer diameter 24 mm, thread pitch 1.0)"
+          }
+        ],
+        "identity_key": "Kurita RSMX-3087",
+        "identity_quote": "Kurita RSMX-3087 Roka Shower MX1",
+        "reason": "クリタックのRSMX-3087本体として識別できる。対応蛇口の形状・ねじ寸法と本体寸法が示され、取付条件から選びたい人への紹介が成立する。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "installation_and_space",
+            "quote": "Product Dimensions 7.8D x 14.4W x 9.8H cm"
+          }
+        ],
+        "identity_key": "Toray Trevino MK307MX-P",
+        "identity_quote": "Toray Trevino MK307MX-P Cassetty Series Water Purifier",
+        "reason": "カセッティ系列のMK307MX-P本体として識別できる。本体寸法、水流の切り替え、洗える吐水口カバーが示され、シンク周りの収まりと台所での使い方から紹介できる。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "filtration_needs",
+            "quote": "(New Cartridge) Replacement Estimate: 4,000 L (1 year); Removal Agent: 19 substances"
+          }
+        ],
+        "identity_key": "Panasonic TK-CJ24-W",
+        "identity_quote": "Panasonic TK-CJ24-W Water Purifier",
+        "reason": "パナソニックのTK-CJ24-W本体として識別できる。19物質の除去表示と4,000L・約1年の交換目安があり、飲用や料理での使用量を考える人への推薦が成立する。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "filtration_needs",
+            "quote": "Installed cartridge: High removal type STC.VJ, Cartridge replacement guideline: 2 months (600L when using 10L per day)"
+          }
+        ],
+        "identity_key": "Toray Trebino SX607V",
+        "identity_quote": "Toray Trebino SX607V Super Series Direct Connection Water Purifier Faucet",
+        "reason": "スーパーシリーズのSX607V本体として識別できる。STC.VJカートリッジ、600Lの交換目安、浄水と原水の水流が示され、除去対象と使用量を意識する人への紹介が成立する。PFOS・PFOAは掲載タイトルの除去表示として扱われている。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "cartridge_upkeep",
+            "quote": "Included Cartridge: CBC03 x 1 piece, Estimated filter replacement: 3 months (when using 10 L per day)"
+          }
+        ],
+        "identity_key": "Cleansui Faucet-Mounted Water Filter CB Series Compact Model, 1 Cartridge Included CB023-WT",
+        "identity_quote": "Cleansui Faucet-Mounted Water Filter CB Series Compact Model, 1 Cartridge Included CB023-WT",
+        "reason": "クリンスイCBシリーズのCB023-WT本体として識別できる。付属するCBC03と1日10L使用時の約3か月という交換目安が示され、交換予定を立てて使いたい人への紹介が成立する。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "cartridge_upkeep",
+            "quote": "CSP901-WT Faucet-Mounted Water Filter with LCD, Direct Connection, CSP Series + HGC9SZ-AZ Replacement Cartridges, Total of 4 Cartridges Included"
+          }
+        ],
+        "identity_key": "Cleansui Bundle: CSP901-WT",
+        "identity_quote": "Cleansui Bundle: CSP901-WT Faucet-Mounted Water Filter with LCD",
+        "reason": "クリンスイCSP901-WTの浄水器本体を含むセットとして識別できる。交換用を含む合計4個のカートリッジと交換目安が示され、交換分を購入時にそろえたい人への紹介が成立する。p5のCB023-WTとは別の本体である。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reader_decision_outsourcing_absent": true,
+    "reason": "6つの本体はブランド・型番または系列から個別に識別でき、同一本体の色違い・数量違いと確認される組み合わせはない。p6は交換用カートリッジを含むセットだが、比較対象となるCSP901-WT本体を含み、p5のCB023-WTとは別の本体である。各商品には担当する紹介切り口に沿った具体的な用途と推薦理由があり、記事でもその成立性が保たれている。",
+    "recommendation_conclusion": true,
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}
