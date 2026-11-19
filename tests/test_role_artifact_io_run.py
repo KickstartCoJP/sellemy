@@ -128,3 +128,30 @@ def test_postpublish_task_bridge_failure_preserves_published_commit():
     assert result['status']=='published_feedback_failed'
     assert 'feedback Task bridge timeout' in result['postpublish_error']
     assert called.count('publish')==1
+
+
+@pytest.mark.parametrize('failed_status', ['qa_rejected_topic', 'product_research_hold'])
+def test_one_topic_failure_schedules_next_independent_launch(failed_status):
+    calls=[]
+    def role(name,*args,**kwargs):
+        calls.append((name, kwargs.get('request',{})))
+        if name=='fresh_create':
+            raise RoleStageFailure('selected topic insufficient', details={
+                'viability_probes':[{'slug':'sample','error':'product QA unavailable'}]})
+        if name=='product_qa_disposition':
+            return {'decision': 'BLOCKED' if failed_status=='qa_rejected_topic' else 'HOLD'}
+        return _base(name,*args,**kwargs)
+    with patch.object(runtime,'execute_role',side_effect=role), \
+         patch.object(runtime,'require_publishing_enabled'):
+        result=runtime.run(publish=True,scheduled=True,report_path=None)
+    assert result['status']==failed_status
+    assert result['recovery_schedule']['next_slot']=='09:30'
+    assert len([1 for name,_ in calls if name=='planning'])==1
+    assert len([1 for name,_ in calls if name=='fresh_create'])==1
+    assert any(name=='scheduler' and item.get('operation')=='reschedule_after_failure' for name,item in calls)
+
+
+def test_single_topic_discovery_schema():
+    import planning_runtime
+    schema=planning_runtime.PLANNING_SCHEMA['properties']['candidates']
+    assert (schema['minItems'],schema['maxItems'])==(1,1)

@@ -205,6 +205,12 @@ def run(*, publish: bool, cache_only: bool = False, report_path: Path | None = R
             result['recovery_mode'] = False
             slug = create_fresh()
             if not slug and result.get('status') in {'qa_rejected_topic', 'product_research_hold'}:
+                # A failed single-topic launch ends here. A subsequent launch
+                # is admitted by the existing scheduler, never in this process.
+                decision = result.get('controller_decision') or {}
+                if publish and scheduled and decision.get('allowed'):
+                    result['recovery_schedule'] = execute_role('scheduler', request={
+                        'operation': 'reschedule_after_failure', 'failed_slot': decision['slot']})
                 return result
         if not publish:
             result['status'] = 'recovery_staged' if result['recovery_mode'] else 'staged'

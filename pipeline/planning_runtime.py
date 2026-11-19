@@ -29,7 +29,7 @@ DIVERSITY_STOPWORDS = {
 
 PLANNING_SCHEMA = {
     'type': 'object', 'additionalProperties': False, 'required': ['candidates'],
-    'properties': {'candidates': {'type': 'array', 'minItems': 6, 'maxItems': 30, 'items': {
+    'properties': {'candidates': {'type': 'array', 'minItems': 1, 'maxItems': 1, 'items': {
         'type': 'object', 'additionalProperties': False,
         'required': ['slug', 'category', 'query', 'product_theme', 'intent_key', 'reader_persona', 'comparison_axes', 'signals'],
         'properties': {
@@ -175,7 +175,7 @@ def discover_candidates() -> list[dict]:
         "根拠情報の入手可能性を評価する際には、商品の識別情報と推薦理由に必要な固有の事実を、メーカー公式ページ、取扱説明書、仕様書、その他追跡可能で信頼できる情報源から現実的に取得できることを基準にしてください。ECサイトの商品タイトルが見つかるだけでは不十分です。\n"
         "企画テーマは、一貫した商品カテゴリと購入目的に絞ってください。アクセサリー、詰め替え品、交換部品などは、検索意図が明確にそれらを対象としている場合に限り、企画に含めてください。\n"
         "あなたはSellemyの商品紹介記事の企画を担当します。\n"
-        "現在の季節、検索意図、購買意図、商品選定の成立可能性、提供されたコンテキストをもとに、新しい企画候補を生成してください。\n"
+        "現在の季節、検索意図、購買意図、商品選定の成立可能性、提供されたコンテキストをもとに、今回の起動で扱う新しい企画を1件だけ生成してください。複数案の生成や順位付けのための案出しは不要です。\n"
         "記事タイトルは作らず、商品テーマ名をproduct_themeに短い名詞句で記録してください。\n"
         "企画の紹介切り口（既存JSONキー comparison_axes）は必ず3つにしてください。比較や優劣を求める軸ではなく商品発見の切り口です。各軸のkeywordsには、そのテーマと組み合わせてAmazonで実際の商品を探せる具体的な検索語を先頭に設定してください。\n"
         "構造化JSONのみを返してください。\n"
