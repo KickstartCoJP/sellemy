@@ -22,6 +22,13 @@ if [[ "${SELLEMY_GROWTH_LOCKED:-}" != "1" ]]; then
   fi
 fi
 cd "$ROOT"
+# A single launcher owns both admission modes. New topics remain stopped until
+# the existing CEO decision explicitly enables them via the launch environment.
+NEW_TOPICS_ENABLED="${SELLEMY_NEW_TOPICS_ENABLED:-0}"
+if [[ "$NEW_TOPICS_ENABLED" != "0" && "$NEW_TOPICS_ENABLED" != "1" ]]; then
+  echo 'invalid new-topic admission setting' >&2
+  exit 1
+fi
 if [[ -f "$SECRETS" ]]; then set -a; source "$SECRETS"; set +a; fi
 SELLEMY_SECRETS="$HOME/Library/Application Support/Sellemy/secrets/openai.env"
 if [[ -f "$SELLEMY_SECRETS" ]]; then set -a; source "$SELLEMY_SECRETS"; set +a; fi
@@ -78,6 +85,8 @@ else:
 PYSWITCH
 )"
 if [[ "$PUBLISH_ALLOWED" == "1" ]]; then
+# Always synchronize approved main, including the existing-job fast path.
+# This step is shared by normal scheduling and recovery-only operation.
 # Run recovery inside the normal scheduled production cycle. The runtime
 # may skip a deferred Product/Evidence job and select a new topic in the SAME
 # admitted slot. Never terminate the heartbeat in recovery-only mode.
@@ -90,6 +99,10 @@ sys.path.insert(0, str(root/'pipeline'))
 from publish_gate import sync_clean_main
 print('growth preflight sync:', sync_clean_main(root))
 PYSYNC
+if [[ "$NEW_TOPICS_ENABLED" == "0" ]]; then
+  # Recovery is a fast path into the same article pipeline; no new Planning.
+  exec "$PY" pipeline/growth_runtime.py --publish --recovery-only
+fi
 eval "$("$PY" - <<'PYADMIT'
 import shlex,sys
 import os

@@ -155,3 +155,19 @@ def test_single_topic_discovery_schema():
     import planning_runtime
     schema=planning_runtime.PLANNING_SCHEMA['properties']['candidates']
     assert (schema['minItems'],schema['maxItems'])==(1,1)
+
+
+def test_scheduled_slot_prioritizes_existing_repair_before_new_planning():
+    called=[]
+    def role(name,*args,**kwargs):
+        called.append(name)
+        if name=='state_queue':return {'eligible':{'slug':'existing','status':'ACTIVE'},'unfinished':[]}
+        if name=='inspect':return {'action':'ceo_review'}
+        return _base(name,*args,**kwargs)
+    with patch.object(runtime,'execute_role',side_effect=role), \
+         patch.object(runtime,'require_publishing_enabled'), \
+         patch.object(runtime,'load_job',return_value={'status':'ACTIVE','current_stage':'CHAT_REVIEW_PENDING'}):
+        out=runtime.run(publish=True,scheduled=True,report_path=None)
+    assert out['status']=='awaiting_chatgpt_final_review'
+    assert out['recovery_slug']=='existing'
+    assert 'planning' not in called and 'fresh_create' not in called

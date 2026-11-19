@@ -44,8 +44,8 @@ def _execute_job(slug: str, result: dict, *, cache_only: bool = False) -> str | 
                     result['status'] = 'planning_research_hold'
                     result['held_slug'] = slug
                     return None
-                if receipt.get('product_qa') != 'PASS':
-                    raise GrowthRuntimeError('legacy replan omitted independent Product QA PASS')
+                if receipt.get('action') not in {'product', 'writer'}:
+                    raise GrowthRuntimeError('replanning adapter did not return a common pipeline stage')
                 continue
             if action == 'writer':
                 if state.get('current_stage') == 'WRITER_PENDING' and state.get('status') == 'ACTIVE':
@@ -180,7 +180,7 @@ def run(*, publish: bool, cache_only: bool = False, report_path: Path | None = R
             except RoleStageFailure as exc:
                 result['product_hold_recheck_error'] = str(exc)
         queue = execute_role('state_queue')
-        recovery = None if scheduled and not recovery_only else queue.get('eligible')
+        recovery = queue.get('eligible')
         # Only one legacy published article is admitted per otherwise idle
         # recovery cycle; normal due jobs retain their existing priority.
         if publish and not scheduled and not recovery:

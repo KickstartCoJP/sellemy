@@ -122,53 +122,62 @@ class LegacyArticleRecoveryTests(unittest.TestCase):
         self.assertFalse((self.jobs/self.slug/'product-attempt-fingerprint.json').exists())
         self.assertEqual((self.repo/'article/gadget/sample-article.html').read_text(), 'old')
 
-    def test_planning_product_qa_pass_resumes_writer_and_revokes_old_gate(self):
+    def test_planning_adapter_preserves_baseline_then_calls_shared_product(self):
         evidence = json.loads((self.articles/self.slug/'evidence.json').read_text())
         evidence['products'][0]['sources'] = []
         self._save(self.articles/self.slug/'evidence.json', evidence)
         legacy.import_one(self.source)
-        new_products = [{'ref': f'P{i}', 'asin': f'B00000000{i}',
-                         'sources': [{'verified': True, 'url': f'https://example.org/new{i}',
-                                      'excerpt': f'Product {i}'}]} for i in range(6)]
+        previous_evidence = (self.jobs/self.slug/'evidence.json').read_bytes()
+        previous_approval = (self.jobs/self.slug/'chat-publish-approval.json').read_bytes()
         topic = {'slug': self.slug, 'category': 'gadget', 'product_theme': '浴室用スクイージー',
                  'comparison_axes': [{'id': f'axis{i}', 'keywords': ['product'],
                                       'label': f'Axis {i}'} for i in range(3)]}
-        fresh = {'slug': self.slug, 'category': 'gadget', 'products': new_products}
-        with patch('planning_runtime.replan_published_topic', return_value=(topic, {'provider': 'test'})) as replanner, \
-             patch('growth_role_business.collect_unique_products', return_value=(new_products, {'complete': True})), \
-             patch('product_selection.select_six', return_value=(new_products, {'axes': []})), \
-             patch('growth_role_business.build_evidence', return_value=fresh), \
-             patch('semantic_review.independent_review', return_value={'status': 'ACCEPTED'}), \
-             patch('comparison_acceptance.product_issues', return_value=[]):
+        with patch('planning_runtime.replan_published_topic', return_value=(topic, {'provider': 'test'})) as planner, \
+             patch('growth_role_business.collect_unique_products', side_effect=AssertionError('must be shared Product role')):
             result = legacy.replan_one(self.slug)
-        self.assertEqual(result['product_qa'], 'PASS')
-        self.assertNotIn('previous_title', replanner.call_args.kwargs)
-        self.assertTrue(replanner.call_args.kwargs.get('product_theme_name'))
+        self.assertEqual(result, {'slug': self.slug, 'action': 'product', 'normalized': True})
+        self.assertNotIn('previous_title', planner.call_args.kwargs)
         self.assertEqual(recovery.load_job(self.slug)['current_stage'], 'WRITER_PENDING')
         self.assertEqual(recovery.read_artifact(self.slug, 'topic.json')['product_theme'], '浴室用スクイージー')
-        self.assertEqual(recovery.read_artifact(self.slug, 'chat-publish-approval.json'), {})
+        self.assertEqual((self.jobs/self.slug/'evidence.json').read_bytes(), previous_evidence)
+        self.assertEqual((self.jobs/self.slug/'chat-publish-approval.json').read_bytes(), previous_approval)
+        self.assertFalse(recovery.read_artifact(self.slug, 'product-search-progress.json')['reuse_previous_products'])
+        from role_stage_exec import _inspect
+        with patch('growth_role_business._reselect_products', side_effect=AssertionError('must run only after dispatch')):
+            self.assertEqual(_inspect(self.slug, cache_only=False)['action'], 'product')
         self.assertEqual(recovery.read_artifact(self.slug, legacy.MARKER)['phase'], 'regular_repair')
         self.assertEqual((self.repo/'article/gadget/sample-article.html').read_text(), 'old')
-        self.assertEqual(recovery.read_artifact(self.slug, 'legacy-original-20261115/state.json')['status'], 'PUBLISHED')
 
-    def test_planning_accepts_more_than_six_discovered_candidates(self):
+    def test_replanning_rejects_slug_change_without_touching_published_baseline(self):
         evidence = json.loads((self.articles/self.slug/'evidence.json').read_text())
         evidence['products'][0]['sources'] = []
         self._save(self.articles/self.slug/'evidence.json', evidence)
         legacy.import_one(self.source)
-        candidates = [{'asin': f'B00000000{i}', 'amazon_title': f'Product {i}', 'image_url':'https://example.org/p.png', 'discovery_axis_id':f'axis{i%3}', 'sources':[]} for i in range(9)]
-        selected = [{'ref':f'P{i}', 'asin':f'B00000000{i}', 'sources':[{'verified':True,'url':f'https://example.org/{i}','excerpt':'verified'}]} for i in range(6)]
-        topic = {'slug':self.slug,'category':'gadget','product_theme':'浴室用スクイージー','comparison_axes':[{'id':f'axis{i}','label':f'Axis {i}','keywords':['product']} for i in range(3)]}
-        fresh = {'slug':self.slug,'category':'gadget','products':selected}
-        with patch('planning_runtime.replan_published_topic',return_value=(topic, {'provider':'test'})), \
-             patch('growth_role_business.collect_unique_products',return_value=(candidates,{'complete':True})), \
-             patch('product_selection.select_six',return_value=(selected, {'axes':[]})), \
-             patch('growth_role_business.build_evidence',return_value=fresh), \
-             patch('semantic_review.independent_review',return_value={'status':'ACCEPTED'}), \
-             patch('comparison_acceptance.product_issues',return_value=[]):
+        previous = (self.jobs/self.slug/'evidence.json').read_bytes()
+        with patch('planning_runtime.replan_published_topic',return_value=({'slug':'wrong','category':'gadget'},{})):
             result = legacy.replan_one(self.slug)
-        self.assertEqual(result['action'],'writer')
-        self.assertEqual(recovery.load_job(self.slug)['current_stage'],'WRITER_PENDING')
+        self.assertEqual(result['action'],'hold')
+        self.assertEqual(recovery.load_job(self.slug)['current_stage'],'PLANNING_HOLD')
+        self.assertEqual((self.jobs/self.slug/'evidence.json').read_bytes(),previous)
+        self.assertEqual((self.repo/'article/gadget/sample-article.html').read_text(),'old')
+
+    def test_old_hold_reenters_shared_adapter_once(self):
+        evidence=json.loads((self.articles/self.slug/'evidence.json').read_text())
+        evidence['products'][0]['sources']=[]
+        self._save(self.articles/self.slug/'evidence.json',evidence)
+        legacy.import_one(self.source)
+        state=recovery.load_job(self.slug)
+        state['current_stage']='PLANNING_HOLD'
+        state['next_retry_at']=None
+        recovery._atomic_json(recovery.state_path(self.slug),state)
+        resumed=legacy.import_one(self.source)
+        self.assertTrue(resumed['normalized_retry'])
+        self.assertEqual(recovery.load_job(self.slug)['current_stage'],'PLANNING_PENDING')
+        state=recovery.load_job(self.slug)
+        state['current_stage']='PLANNING_HOLD'
+        state['next_retry_at']=None
+        recovery._atomic_json(recovery.state_path(self.slug),state)
+        self.assertEqual(legacy.import_one(self.source),{'admitted':False})
 
     def test_existing_legacy_product_hold_restart_uses_planning(self):
         self.assertTrue(legacy.import_one(self.source)['admitted'])

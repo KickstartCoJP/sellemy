@@ -39,15 +39,20 @@ class ScheduledRouteTests(unittest.TestCase):
                         'article_publication_metrics.py'):
             self.assertNotIn(command, script)
 
-    def test_recovery_does_not_starve_scheduled_planning(self):
+    def test_single_launcher_preserves_new_topic_stop_and_shared_sync(self):
         script = (ROOT / 'ops' / 'run-growth.sh').read_text(encoding='utf-8')
-        self.assertIn('if [[ "$SELLEMY_PREFLIGHT_ALLOWED" != "1" ]]', script)
-        self.assertIn('if [[ "$SELLEMY_PREFLIGHT_REASON" == "slot_not_enabled_for_target" ]]', script)
-        self.assertIn('if [[ "$RECOVERY_DUE" == "1" ]]', script)
-        self.assertIn('pipeline/growth_runtime.py --publish --recovery-only', script)
-        self.assertIn('pipeline/growth_runtime.py --publish --scheduled', script)
-        self.assertLess(script.index('if [[ "$SELLEMY_PREFLIGHT_ALLOWED" != "1" ]]'), script.index('pipeline/growth_runtime.py --publish --recovery-only'))
-        self.assertLess(script.index('pipeline/growth_runtime.py --publish --recovery-only'), script.index('pipeline/growth_runtime.py --publish --scheduled'))
+        self.assertIn('SELLEMY_NEW_TOPICS_ENABLED:-0',script)
+        self.assertIn('from publish_gate import sync_clean_main',script)
+        self.assertIn('pipeline/growth_runtime.py --publish --recovery-only',script)
+        self.assertIn('pipeline/growth_runtime.py --publish --scheduled',script)
+        self.assertLess(script.index('sync_clean_main(root)'),
+                        script.index('pipeline/growth_runtime.py --publish --recovery-only'))
+        self.assertLess(script.index('pipeline/growth_runtime.py --publish --recovery-only'),
+                        script.index('admit_scheduled()'))
+        plist = (ROOT / 'ops/com.kickstart.sellemy-growth.plist').read_text()
+        self.assertIn('<key>SELLEMY_NEW_TOPICS_ENABLED</key><string>0</string>',plist)
+        self.assertIn('/ops/run-growth.sh',plist)
+        self.assertNotIn('/ops/run-growth-recovery-only.sh',plist)
 
     def test_minute_scheduler_and_algorithmic_24_per_day_cap(self):
         plist = (ROOT / 'ops' / 'com.kickstart.sellemy-growth.plist').read_text(encoding='utf-8')

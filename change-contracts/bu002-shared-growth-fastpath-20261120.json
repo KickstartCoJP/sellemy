@@ -1,0 +1,37 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "CEO-CHAT-BU002-SHARED-FASTPATH-20261120",
+  "instruction_ref": "CEO: 新規とRecoveryを別実装にするな。投入順序を変更し、FMT差分は変換Gateで吸収する。Recoveryは共通Pipelineへのファストパス。作り直せ。",
+  "instruction": "Use the existing Growth Runtime and article Job for both new and historical articles. Prioritize existing due recovery work; adapt legacy Planning inputs to the shared Product role rather than using a second Product research/QA. Replace the special launch with the single approved launcher, sharing Git synchronization, while keeping new-topic admission stopped by default.",
+  "implementer": "sellemy-ops direct Python staging, no Codex",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3",
+    "https://app.notion.com/p/3dc67ec6a100813fb69de3398acf690b",
+    "https://app.notion.com/p/3dc67ec6a1008196b017ee01e1824bba",
+    "https://app.notion.com/p/3fd67ec6a10081339edef6932aae8d0e"
+  ],
+  "allowed_paths": [
+    "change-contracts/bu002-shared-growth-fastpath-20261120.json",
+    "ops/com.kickstart.sellemy-growth.plist",
+    "ops/run-growth.sh",
+    "pipeline/growth_role_business.py",
+    "pipeline/growth_runtime.py",
+    "pipeline/legacy_article_recovery.py",
+    "pipeline/role_stage_exec.py",
+    "tests/test_legacy_article_recovery.py",
+    "tests/test_role_artifact_io_run.py",
+    "tests/test_growth_runtime.py"
+  ],
+  "preserved_rules": [
+    "No new Runtime, Queue, quality threshold or business ledger; same existing single article Job, product QA, writer, reviewer, designer, publish and CEO Gate",
+    "No new topic until explicit CEO authorization: launcher SELLEMY_NEW_TOPICS_ENABLED defaults to 0 and plist pins 0",
+    "Existing published slug/category/commit/evidence/approval and article file are retained until the shared Product role passes acceptance",
+    "Existing common scheduler/admission, role I/O and backoff remain responsible for execution and retries",
+    "Historical PLANNING_HOLD work is admitted only once under the new input adapter revision, never infinitely retried"
+  ],
+  "acceptance_tests": [
+    "tests/test_legacy_article_recovery.py",
+    "tests/test_role_artifact_io_run.py",
+    "tests/test_growth_runtime.py"
+  ]
+}

@@ -227,6 +227,16 @@ def import_one(root: Path | None = None) -> dict:
             state = load_job(slug)
             if (state.get('source') == 'legacy_repair' and
                     state.get('status') == 'ACTIVE' and
+                    state.get('current_stage') == 'PLANNING_HOLD' and
+                    marker.get('phase') == 'planning_required' and
+                    marker.get('adapter_revision') != 'shared-product-v1'):
+                marker['adapter_revision'] = 'shared-product-v1'
+                write_artifact(slug, MARKER, marker)
+                set_stage(slug, 'PLANNING_PENDING', event='LEGACY_INPUT_ADAPTER_RETRY')
+                return {'slug': slug, 'admitted': True, 'replanning': True,
+                        'normalized_retry': True}
+            if (state.get('source') == 'legacy_repair' and
+                    state.get('status') == 'ACTIVE' and
                     state.get('current_stage') == 'PRODUCT_HOLD' and
                     not source_acquisition_ready(read_artifact(slug, 'evidence.json', {}))):
                 marker['phase'] = 'planning_required'
@@ -322,18 +332,13 @@ def import_one(root: Path | None = None) -> dict:
 
 
 def replan_one(slug: str) -> dict:
-    """Replan the same published article through live Product QA before Writer.
+    """Adapt an existing published article's Planning input to the shared pipeline.
 
-    Failed Planning/source discovery leaves old site and job evidence intact;
-    it never increments the old Product QA failure streak.
+    The input adapter owns no Product selection/QA. It preserves the published
+    baseline and hands the single normalized topic to the regular Product role.
     """
     from planning_runtime import replan_published_topic
-    from growth_role_business import collect_unique_products, build_evidence
-    from product_selection import select_six
-    from analytics_feedback import load_feedback
-    from semantic_review import independent_review
-    from comparison_acceptance import product_issues
-    from growth_recovery import _save_state, replace_product_evidence
+    from growth_recovery import _save_state
 
     state = load_job(slug)
     marker = read_artifact(slug, MARKER) or {}
@@ -346,47 +351,43 @@ def replan_one(slug: str) -> dict:
     old_payload = read_artifact(slug, 'payload.json') or {}
     from article_theme import product_theme
     theme = product_theme({**old_topic, 'title': old_payload.get('h1') or old_topic.get('title')})
+    marker['adapter_revision'] = 'shared-product-v1'
+    write_artifact(slug, MARKER, marker)
     try:
         topic, provider = replan_published_topic(slug=slug, category=state['category'],
-                                                product_theme_name=theme)
-        products, trace = collect_unique_products(topic, cache_only=False)
-        if len(products) < 6 or trace.get('complete') is not True:
-            raise ValueError('new Planning product research lacks six distinct items')
-        selected, selection = select_six(products, topic, load_feedback())
-        evidence = build_evidence(topic, selected, selection)
-        original_evidence = read_artifact(slug, 'evidence.json') or {}
-        if not isinstance(original_evidence, dict):
-            raise ValueError('existing published image evidence is invalid')
-        evidence['eyecatch_image'] = original_evidence.get('eyecatch_image')
-        if not evidence['eyecatch_image']:
-            raise ValueError('published image must be preserved')
-        if not source_acquisition_ready(evidence):
-            raise ValueError('replanned six products lack authentic verified source excerpts')
-        evidence['product_acceptance'] = independent_review(evidence)
-        issues = product_issues(evidence)
-        if issues:
-            raise ValueError('new independent Product QA blocked: ' + '; '.join(issues))
+                                                 product_theme_name=theme)
+        if topic.get('slug') != slug or topic.get('category') != state['category']:
+            raise ValueError('normalized Planning identity mismatch')
     except Exception as exc:
-        # One bounded attempt; owner must explicitly change the candidate/source
-        # input before retrying, preventing repeated identical quality failures.
         write_artifact(slug, 'legacy-planning-blocker.json', {
             'reason': f'{type(exc).__name__}: {exc}'[:1600],
-            'next_action': 'obtain a new Planning candidate and authentic six-product sources',
+            'next_action': 'fix Planning input before another attempt',
         })
         state = load_job(slug)
         state['current_stage'] = 'PLANNING_HOLD'
         state['next_retry_at'] = None
-        _save_state(state, event='LEGACY_REPLAN_HOLD', detail={'reason': str(exc)[:500]})
+        _save_state(state, event='LEGACY_INPUT_ADAPTER_HOLD',
+                    detail={'reason': str(exc)[:500]})
         return {'slug': slug, 'action': 'hold', 'reason': str(exc)[:500]}
-    # Final acceptance precedes mutation; revoke all changed-content Gate
-    # receipts via the existing replace_product_evidence implementation.
+    # Existing URL, slug, baseline evidence and published commit are untouched.
+    # Only the next Product role may replace evidence after independent QA PASS.
     write_artifact(slug, 'topic.json', topic)
-    replace_product_evidence(slug, evidence, selection)
     write_artifact(slug, 'planning-provider.json', provider)
+    write_artifact(slug, 'product-search-progress.json', {
+        'candidates': [], 'excluded_asins': [], 'queries': [],
+        'reviewed_sets': [], 'researched_asins': [],
+        'source_backfill_attempted': [], 'complete': False,
+        'reuse_previous_products': False,
+    })
+    write_artifact(slug, 'product-blocker.json', {
+        'needs_product_reselection': True,
+        'reasons': ['normalized existing article requires shared Product QA'],
+    })
     write_artifact(slug, 'legacy-planning-blocker.json', {})
     marker['phase'] = 'regular_repair'
     write_artifact(slug, MARKER, marker)
-    return {'slug': slug, 'action': 'writer', 'product_qa': 'PASS'}
+    set_stage(slug, 'WRITER_PENDING', event='LEGACY_INPUT_ADAPTED')
+    return {'slug': slug, 'action': 'product', 'normalized': True}
 
 
 def precheck(slug: str) -> dict:

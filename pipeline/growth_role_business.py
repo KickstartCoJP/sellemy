@@ -583,8 +583,9 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
     researched_asins = set(progress.get('researched_asins') or [])
     source_backfill_attempted = set(progress.get('source_backfill_attempted') or [])
     previous = read_artifact(slug, 'evidence.json', {})
-    pool.extend(p for p in previous.get('products', [])
-                if all(p.get(k) for k in ('asin', 'amazon_title', 'image_url')))
+    if progress.get('reuse_previous_products', True):
+        pool.extend(p for p in previous.get('products', [])
+                    if all(p.get(k) for k in ('asin', 'amazon_title', 'image_url')))
     pool, _ = dedupe_content_products([p for p in pool if not is_ng(p.get('asin'))])
 
     def save_progress():
@@ -594,6 +595,7 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
             'researched_asins': sorted(researched_asins),
             'source_backfill_attempted': sorted(source_backfill_attempted),
             'complete': False,
+            'reuse_previous_products': progress.get('reuse_previous_products', True),
         })
 
     try:
@@ -623,7 +625,7 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
             pool, source_backfill_attempted = _backfill_missing_amazon_sources(
                 pool, source_backfill_attempted)
             save_progress()
-        if previous.get('product_acceptance') and product_issues(previous) and not any(p.get('sources') for p in pool):
+        if progress.get('reuse_previous_products', True) and previous.get('product_acceptance') and product_issues(previous) and not any(p.get('sources') for p in pool):
             save_progress()
             request_product_reselection(slug, ['exact evidence unchanged from rejected review'])
             raise GrowthRuntimeError(f'exact evidence unchanged for {slug}')
@@ -722,6 +724,7 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
                     'researched_asins': sorted(researched_asins),
                     'source_backfill_attempted': sorted(source_backfill_attempted),
                     'complete': True,
+                    'reuse_previous_products': True,
                 })
                 return
             # Record the actionable QA defects; do not count an unchanged retry
