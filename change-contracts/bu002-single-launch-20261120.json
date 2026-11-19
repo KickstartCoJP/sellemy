@@ -1,0 +1,27 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "CEO-CHAT-BU002-ONE-LAUNCH-ONE-TOPIC-20261120",
+  "instruction_ref": "CEO 2026-11-20 01:11 JST: 1回の立ち上げで1つの企画にしろ。失敗したら2回目の立ち上げを開始しろ。",
+  "instruction": "Generate exactly one new article proposal per scheduled launch. On Product QA blocked/hold, end that launch and schedule a new independent launch through the existing failure rescheduler; preserve existing duplicate and 24-hour failed topic exclusion. No second topic is attempted in the same run.",
+  "implementer": "sellemy-ops direct non-Codex isolated staging",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3",
+    "https://app.notion.com/p/3dc67ec6a1008196b017ee01e1824bba"
+  ],
+  "allowed_paths": [
+    "change-contracts/bu002-single-launch-20261120.json",
+    "pipeline/planning_runtime.py",
+    "pipeline/growth_runtime.py",
+    "tests/test_legacy_replan_schema_20261117.py",
+    "tests/test_role_artifact_io_run.py"
+  ],
+  "preserved_rules": [
+    "No changes to category dedup, 6-product selection, search gates, QA, CEO staging/publish approval or retry budgets",
+    "Existing scheduler remains the only admissions controller; no new queue, daemon or concurrent topic run",
+    "Published article replan remains exactly one candidate"
+  ],
+  "acceptance_tests": [
+    "tests/test_legacy_replan_schema_20261117.py",
+    "tests/test_role_artifact_io_run.py"
+  ]
+}

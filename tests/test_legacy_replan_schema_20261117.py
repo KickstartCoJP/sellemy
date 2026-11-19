@@ -16,7 +16,8 @@ def test_replan_uses_single_candidate_schema_on_codex():
                                           schema={'type': 'object', 'properties': {'candidates': {'type': 'array', 'minItems': 1, 'maxItems': 1}}})
     assert seen['schema']['properties']['candidates']['minItems'] == 1
     assert seen['schema']['properties']['candidates']['maxItems'] == 1
-    assert planning_runtime.PLANNING_SCHEMA['properties']['candidates']['minItems'] == 6
+    assert planning_runtime.PLANNING_SCHEMA['properties']['candidates']['minItems'] == 1
+    assert planning_runtime.PLANNING_SCHEMA['properties']['candidates']['maxItems'] == 1
 
 
 def test_replan_passes_schema_to_provider():
