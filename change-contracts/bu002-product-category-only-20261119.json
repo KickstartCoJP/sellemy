@@ -1,0 +1,26 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "CEO-CHAT-BU002-PRODUCT-CATEGORY-ONLY-20261119",
+  "instruction_ref": "CEO direct instruction 2026-11-19: 商品カテゴリのみで判定しろ。直せよ",
+  "instruction": "One product category equals one article. Reject product_theme duplicate from published and active jobs regardless of query, audience, intent, or angles. Keep highest ranked same-category candidate only within one proposal batch. No new queues or status changes.",
+  "implementer": "sellemy-ops direct Python edits in isolated staging, no Codex modification",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3",
+    "https://app.notion.com/p/3dc67ec6a1008196b017ee01e1824bba"
+  ],
+  "allowed_paths": [
+    "change-contracts/bu002-product-category-only-20261119.json",
+    "pipeline/planning_runtime.py",
+    "tests/test_reader_value_handoff_20261119.py",
+    "tests/test_planning_and_selection.py"
+  ],
+  "preserved_rules": [
+    "Same slug remains eligible for in-place recovery; existing published article is unaffected",
+    "All other Planning score weights, product selection, QA, publishing gates, and retry limits unchanged",
+    "CEO SHA-fixed staging review required before production"
+  ],
+  "acceptance_tests": [
+    "tests/test_reader_value_handoff_20261119.py",
+    "tests/test_planning_and_selection.py"
+  ]
+}

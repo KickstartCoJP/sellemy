@@ -18,7 +18,7 @@ from product_selection import select_six
 
 def candidate(slug='new-topic', category='beauty', score=.8):
     return {
-        'slug': slug, 'category': category, 'query': '新しい商品テーマ', 'product_theme': '新しい商品テーマ',
+        'slug': slug, 'category': category, 'query': '新しい商品テーマ', 'product_theme': slug,
         'intent_key': slug, 'reader_persona': {'reader':'daily buyers', 'knowledge_level':'general', 'purchase_goal':'find suitable product', 'editorial_depth':'practical everyday advice'}, 'comparison_axes': [
             {'id': 'gentle', 'label': '使い心地', 'keywords': ['やさしい']},
             {'id': 'power', 'label': '性能', 'keywords': ['高性能']},

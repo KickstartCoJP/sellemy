@@ -65,22 +65,10 @@ def _topic_tokens(value: str) -> set[str]:
 
 
 def _same_purchase_intent(candidate: dict, prior: dict) -> bool:
-    """Avoid another generic article on the same product theme and search intent.
-
-    Distinct purchase problems are still possible: do not equate a shared
-    category name with an identical reader goal.
-    """
+    """A product class may have only one article, regardless of reader intent."""
     theme = _normalize(str(candidate.get('product_theme') or ''))
     old_theme = _normalize(str(prior.get('product_theme') or ''))
-    if not theme or theme != old_theme:
-        return False
-    query = _normalize(str(candidate.get('query') or candidate.get('intent_key') or ''))
-    previous = _normalize(str(prior.get('query') or prior.get('intent_key') or ''))
-    if not query or not previous:
-        return False
-    # A common generic topic plus a few extra keywords is not a new intent.
-    shorter, longer = sorted((query, previous), key=len)
-    return len(shorter) >= len(theme) and shorter in longer
+    return bool(theme and old_theme and theme == old_theme)
 
 
 def _active_topic_intents() -> list[dict]:
@@ -91,7 +79,7 @@ def _active_topic_intents() -> list[dict]:
         if job.get('status') in {'DISCARDED', 'RETIRED'}:
             continue
         topic = read_artifact(job['slug'], 'topic.json', {}) or {}
-        if topic.get('product_theme') and topic.get('query'):
+        if topic.get('product_theme'):
             result.append(topic)
     return result
 
@@ -118,7 +106,7 @@ def _context() -> dict:
         'existing_article_themes': list(dict.fromkeys(themes)),
         'portfolio': _portfolio_signals(articles),
         'amazon_search_recovery_themes': retry_themes,
-        'instruction': 'Prioritize re-evaluating the provided historical Amazon access-failure recovery themes as newly viable topics, regenerating complete current-schema proposals and rejecting any stale or duplicate intent through normal Planning QA. These historical failures were infrastructure errors, not quality rejections. Continue exploring fresh intents, respect the full article duplicate guard, and diversify across categories.',
+        'instruction': 'Product theme is product class; reject any already-used product class regardless of search intent, audience or angle. Prioritize re-evaluating the provided historical Amazon access-failure recovery themes as newly viable topics, regenerating complete current-schema proposals and rejecting any stale or duplicate intent through normal Planning QA. These historical failures were infrastructure errors, not quality rejections. Continue exploring fresh intents, respect the full article duplicate guard, and diversify across categories.',
     }
 
 
@@ -181,7 +169,7 @@ def discover_candidates() -> list[dict]:
     prompt = CONTRACT + '\n' + (
         "企画候補は、商品選定・根拠情報の審査に合格するまで暫定的なものとして扱ってください。\n"
         "各候補には、具体的な想定読者、事前知識、購入目的、適切な説明の深さを含む `reader_persona` を設定してください。\n"
-        "商品テーマを決めるだけで企画成立としないでください。誰が何に興味を持ち、記事を読んでどのような商品に惹かれるか、既存記事と異なる購入課題と読者価値をreader_persona・intent_key・3紹介切り口で具体化してください。商品テーマと一般的な選び方が同じ企画は言い換えで増やさず、別の読者課題が明確に成立する場合に限って候補にしてください。\n"
+        "商品テーマを決めるだけで企画成立としないでください。誰が何に興味を持ち、記事を読んでどのような商品に惹かれるか、読者価値をreader_persona・intent_key・3紹介切り口で具体化してください。企画テーマは商品カテゴリそのものです。既存記事と同じ商品カテゴリは、用途・読者・検索意図・紹介切り口が異なっても新規候補にしないでください。\n"
         "企画の中心は商品を比較して勝者を決めることではなく、読者にとって意外な用途や個性を持つモノを紹介することです。まず一貫した商品テーマの中で『紹介したくなる用途や特徴』を3種類定め、各切り口に魅力の異なる2商品を割り当てられる企画を作ってください。\n"
         "例：コーヒーメーカーなら『朝の一杯を手軽に楽しむ』『淹れる時間そのものを楽しむ』『置きたくなるデザイン』の3紹介切り口。それぞれ2商品。価格・機能・サイズの優劣を機械的に3組へ分ける比較企画を初期値にしないでください。例はそのまま流用せず、テーマ固有の面白さを考えてください。\n"
         "根拠情報の入手可能性を評価する際には、商品の識別情報と推薦理由に必要な固有の事実を、メーカー公式ページ、取扱説明書、仕様書、その他追跡可能で信頼できる情報源から現実的に取得できることを基準にしてください。ECサイトの商品タイトルが見つかるだけでは不十分です。\n"
@@ -293,7 +281,7 @@ def rank_candidates(candidates: list[dict], feedback: dict | None = None) -> lis
     feedback = feedback or load_feedback()
     existing = json.loads(ARTICLES.read_text(encoding='utf-8'))
     existing_slugs = {row['slug'] for row in existing}
-    existing_intents = {_normalize(' '.join((str(row.get('slug') or ''), product_theme(row)))) for row in existing}
+    existing_themes = {_normalize(product_theme(row)) for row in existing}
     active_intents = _active_topic_intents()
     portfolio = _portfolio_signals(existing)
     category_counts = portfolio['category_counts']
@@ -304,9 +292,9 @@ def rank_candidates(candidates: list[dict], feedback: dict | None = None) -> lis
     ranked = []
     for candidate in candidates:
         validate_candidate(candidate)
-        intent = _normalize(candidate['intent_key'])
-        if (candidate['slug'] in existing_slugs or not intent
-                or any(intent in old or old in intent for old in existing_intents if old)
+        theme = _normalize(candidate['product_theme'])
+        if (candidate['slug'] in existing_slugs or not theme
+                or theme in existing_themes
                 or any(old.get('slug') != candidate['slug']
                        and _same_purchase_intent(candidate, old) for old in active_intents)):
             continue
@@ -333,7 +321,14 @@ def rank_candidates(candidates: list[dict], feedback: dict | None = None) -> lis
             'portfolio_balance': round(portfolio_balance, 6), 'topic_diversity': round(topic_diversity, 6),
             'recent_family_hits': recent_family_hits[-6:],
         })
-    return sorted(ranked, key=lambda row: (-row['planning_score'], row['slug']))
+    unique = []
+    seen_themes = set()
+    for row in sorted(ranked, key=lambda row: (-row['planning_score'], row['slug'])):
+        theme = _normalize(row['product_theme'])
+        if theme not in seen_themes:
+            unique.append(row)
+            seen_themes.add(theme)
+    return unique
 
 
 def plan_next_topic(candidates: list[dict] | None = None, feedback: dict | None = None) -> dict:
