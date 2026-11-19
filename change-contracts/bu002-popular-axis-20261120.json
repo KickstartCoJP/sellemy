@@ -1,0 +1,28 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "CEO-CHAT-BU002-POPULAR-AXIS-20261120",
+  "instruction_ref": "CEO direct 2026-11-20: 1軸は「人気」固定にしなよ。無理やり3つ目作ろうとするから失敗してんじゃん。出会い醸成だからむしろスタンダードベンチマークがあったほうがいい。",
+  "instruction": "Make popular/standard benchmark a system-owned first axis for all new and CEO replan topics; Planner creates exactly two discovery-oriented distinctive axes. Preserve three groups of two items and existing QA/product selection. Use verifiable ratings/reviews as evidence; do not invent sales ranks.",
+  "implementer": "sellemy-ops direct non-Codex isolated staging edit",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3",
+    "https://app.notion.com/p/3dc67ec6a1008196b017ee01e1824bba"
+  ],
+  "allowed_paths": [
+    "change-contracts/bu002-popular-axis-20261120.json",
+    "pipeline/planning_runtime.py",
+    "tests/test_popular_axis_20261120.py",
+    "tests/test_planning_and_selection.py",
+    "tests/test_reader_value_handoff_20261119.py"
+  ],
+  "preserved_rules": [
+    "No changes to category-based dedup, thresholds, attempts, product QA, and CEO approval gate",
+    "Three existing comparison axes in article, six products in 3x2 grid, independent QA remains unchanged",
+    "Popular means evidence-grounded standard benchmark, not unverified sales rank"
+  ],
+  "acceptance_tests": [
+    "tests/test_popular_axis_20261120.py",
+    "tests/test_planning_and_selection.py",
+    "tests/test_reader_value_handoff_20261119.py"
+  ]
+}
