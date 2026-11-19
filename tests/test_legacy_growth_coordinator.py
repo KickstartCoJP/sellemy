@@ -47,6 +47,30 @@ class LegacyGrowthCoordinatorTests(unittest.TestCase):
         self.assertNotIn(('planning', ''), invocations)
         self.assertEqual(invocations.count(('legacy_admit', '')), 1)
 
+    def test_due_writer_does_not_starve_legacy_hold_admission(self):
+        invocations = []
+        def role(name, slug='', **kwargs):
+            invocations.append((name, slug))
+            if name == 'scheduler':
+                return {'publish_paused': False}
+            if name == 'state_queue':
+                return {'eligible': {'slug': 'existing-writer'}, 'unfinished': []}
+            if name == 'legacy_admit':
+                return {'admitted': True, 'slug': 'old-held-article', 'normalized_retry': True}
+            return {}
+        def process(slug, result, **kwargs):
+            self.assertEqual(slug, 'existing-writer')
+            result['status'] = 'awaiting_chatgpt_final_review'
+            return None
+        with (patch.object(growth_runtime, 'execute_role', side_effect=role),
+              patch.object(growth_runtime, '_execute_job', side_effect=process),
+              patch.object(growth_runtime, 'require_publishing_enabled')):
+            result = growth_runtime.run(publish=True, recovery_only=True, report_path=None)
+        self.assertEqual(result['legacy_repair_admission']['slug'], 'old-held-article')
+        self.assertEqual(invocations.count(('legacy_admit', '')), 1)
+        self.assertEqual(result['recovery_slug'], 'existing-writer')
+        self.assertNotIn(('planning', ''), invocations)
+
     def test_normal_scheduled_slot_still_processes_fresh_article(self):
         invocations = []
 

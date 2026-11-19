@@ -181,9 +181,11 @@ def run(*, publish: bool, cache_only: bool = False, report_path: Path | None = R
                 result['product_hold_recheck_error'] = str(exc)
         queue = execute_role('state_queue')
         recovery = queue.get('eligible')
-        # Only one legacy published article is admitted per otherwise idle
-        # recovery cycle; normal due jobs retain their existing priority.
-        if publish and not scheduled and not recovery:
+        # Admit at most one waiting legacy input per recovery-only cycle,
+        # even when other due jobs exist. Otherwise a perpetually eligible
+        # Writer job can starve every PLANNING_HOLD indefinitely. The queue
+        # still chooses the next job with the original stage priorities.
+        if publish and not scheduled:
             admitted = execute_role('legacy_admit')
             if admitted.get('admitted'):
                 result['legacy_repair_admission'] = admitted

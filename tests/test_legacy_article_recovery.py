@@ -170,8 +170,10 @@ class LegacyArticleRecoveryTests(unittest.TestCase):
         state['current_stage']='PLANNING_HOLD'
         state['next_retry_at']=None
         recovery._atomic_json(recovery.state_path(self.slug),state)
+        self.assertTrue(legacy.has_pending(self.source))
         resumed=legacy.import_one(self.source)
         self.assertTrue(resumed['normalized_retry'])
+        self.assertFalse(legacy.has_pending(self.source))
         self.assertEqual(recovery.load_job(self.slug)['current_stage'],'PLANNING_PENDING')
         state=recovery.load_job(self.slug)
         state['current_stage']='PLANNING_HOLD'
