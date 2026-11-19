@@ -36,11 +36,24 @@ PLANNING_SCHEMA = {
             'slug': {'type': 'string'}, 'category': {'type': 'string'}, 'query': {'type': 'string'},
             'product_theme': {'type': 'string'}, 'intent_key': {'type': 'string'},
             'reader_persona': {'type': 'object', 'additionalProperties': False, 'required': ['reader', 'knowledge_level', 'purchase_goal', 'editorial_depth'], 'properties': {key: {'type': 'string', 'minLength': 4} for key in ('reader','knowledge_level','purchase_goal','editorial_depth')}},
-            'comparison_axes': {'type': 'array', 'minItems': 3, 'maxItems': 3, 'items': {'type': 'object', 'required': ['id', 'label', 'keywords'], 'properties': {'id': {'type': 'string'}, 'label': {'type': 'string'}, 'keywords': {'type': 'array', 'minItems': 1, 'items': {'type': 'string'}}}}},
+            'comparison_axes': {'type': 'array', 'minItems': 2, 'maxItems': 2, 'items': {'type': 'object', 'required': ['id', 'label', 'keywords'], 'properties': {'id': {'type': 'string'}, 'label': {'type': 'string'}, 'keywords': {'type': 'array', 'minItems': 1, 'items': {'type': 'string'}}}}},
             'signals': {'type': 'object', 'required': ['search_demand', 'purchase_intent', 'product_viability', 'seasonality', 'profitability', 'evidence_availability'], 'properties': {key: {'type': 'number'} for key in ('search_demand', 'purchase_intent', 'product_viability', 'seasonality', 'profitability', 'evidence_availability')}},
         },
     }}}
 }
+
+
+POPULAR_AXIS = {'id': 'popular', 'label': '人気・定番の基準', 'keywords': ['人気']}
+
+
+def _with_popular_axis(topic: dict) -> dict:
+    """Insert a standard benchmark before two discovery-oriented axes."""
+    axes = topic.get('comparison_axes')
+    if not isinstance(axes, list) or len(axes) != 2:
+        raise PlanningError('Planner must propose exactly two product-specific axes')
+    if any(isinstance(axis, dict) and axis.get('id') == 'popular' for axis in axes):
+        raise PlanningError('popular axis is system-owned')
+    return {**topic, 'comparison_axes': [dict(POPULAR_AXIS), *axes]}
 
 
 class PlanningError(RuntimeError):
@@ -169,22 +182,22 @@ def discover_candidates() -> list[dict]:
     prompt = CONTRACT + '\n' + (
         "企画候補は、商品選定・根拠情報の審査に合格するまで暫定的なものとして扱ってください。\n"
         "各候補には、具体的な想定読者、事前知識、購入目的、適切な説明の深さを含む `reader_persona` を設定してください。\n"
-        "商品テーマを決めるだけで企画成立としないでください。誰が何に興味を持ち、記事を読んでどのような商品に惹かれるか、読者価値をreader_persona・intent_key・3紹介切り口で具体化してください。企画テーマは商品カテゴリそのものです。既存記事と同じ商品カテゴリは、用途・読者・検索意図・紹介切り口が異なっても新規候補にしないでください。\n"
-        "企画の中心は商品を比較して勝者を決めることではなく、読者にとって意外な用途や個性を持つモノを紹介することです。まず一貫した商品テーマの中で『紹介したくなる用途や特徴』を3種類定め、各切り口に魅力の異なる2商品を割り当てられる企画を作ってください。\n"
-        "例：コーヒーメーカーなら『朝の一杯を手軽に楽しむ』『淹れる時間そのものを楽しむ』『置きたくなるデザイン』の3紹介切り口。それぞれ2商品。価格・機能・サイズの優劣を機械的に3組へ分ける比較企画を初期値にしないでください。例はそのまま流用せず、テーマ固有の面白さを考えてください。\n"
+        "商品テーマを決めるだけで企画成立としないでください。誰が何に興味を持ち、記事を読んでどのような商品に惹かれるか、読者価値をreader_persona・intent_key・2つの独自紹介切り口で具体化してください。企画テーマは商品カテゴリそのものです。既存記事と同じ商品カテゴリは、用途・読者・検索意図・紹介切り口が異なっても新規候補にしないでください。\n"
+        "企画の中心は商品を比較して勝者を決めることではなく、読者にとって意外な用途や個性を持つモノを紹介することです。第1軸「人気・定番の基準」はシステム固定です。一般的に選ばれる定番をベンチマークとして紹介し、残りの2軸は定番と異なる魅力や意外な出会いを作る切り口とし、それぞれ2商品を割り当てられる企画を作ってください。\n"
+        "例：コーヒーメーカーなら定番を基準にして、独自軸は『淹れる時間そのものを楽しむ』『置きたくなるデザイン』の2つ。システムが人気・定番軸を先頭に追加し、3軸各2商品。人気を売上順位と断定せず確認できる評価やレビューを根拠にしてください。価格・機能・サイズの優劣を機械的に3組へ分ける比較企画を初期値にしないでください。例はそのまま流用せず、テーマ固有の面白さを考えてください。\n"
         "根拠情報の入手可能性を評価する際には、商品の識別情報と推薦理由に必要な固有の事実を、メーカー公式ページ、取扱説明書、仕様書、その他追跡可能で信頼できる情報源から現実的に取得できることを基準にしてください。ECサイトの商品タイトルが見つかるだけでは不十分です。\n"
         "企画テーマは、一貫した商品カテゴリと購入目的に絞ってください。アクセサリー、詰め替え品、交換部品などは、検索意図が明確にそれらを対象としている場合に限り、企画に含めてください。\n"
         "あなたはSellemyの商品紹介記事の企画を担当します。\n"
         "現在の季節、検索意図、購買意図、商品選定の成立可能性、提供されたコンテキストをもとに、新しい企画候補を生成してください。\n"
         "記事タイトルは作らず、商品テーマ名をproduct_themeに短い名詞句で記録してください。\n"
-        "企画の紹介切り口（既存JSONキー comparison_axes）は必ず3つにしてください。比較や優劣を求める軸ではなく商品発見の切り口です。各軸のkeywordsには、そのテーマと組み合わせてAmazonで実際の商品を探せる具体的な検索語を先頭に設定してください。\n"
+        "企画の独自紹介切り口（既存JSONキー comparison_axes）は必ず2つだけにしてください。人気・定番軸はシステムが第1軸として固定追加します。比較や優劣を求める軸ではなく商品発見の切り口です。各軸のkeywordsには、そのテーマと組み合わせてAmazonで実際の商品を探せる具体的な検索語を先頭に設定してください。\n"
         "構造化JSONのみを返してください。\n"
     ) + json.dumps(_context(), ensure_ascii=False)
     def local():
         batch = _discover_local_candidates(prompt)
         return {'candidates': list(batch)}, batch.provider_metadata
     value, metadata = route('planner', PLANNING_SCHEMA, prompt, local)
-    return CandidateBatch(value['candidates'], metadata)
+    return CandidateBatch([_with_popular_axis(row) for row in value['candidates']], metadata)
 
 
 def _discover_local_candidates(prompt: str) -> list[dict]:
@@ -225,7 +238,7 @@ def replan_published_topic(*, slug: str, category: str, product_theme_name: str)
     prompt = CONTRACT + '\n' + (
         '既存の公開済み商品紹介記事を最新のPlanning基準で再企画してください。'
         '指定の商品テーマ、既存URL・slug・カテゴリを維持し、企画の切り口は改めて立案してください。旧商品の選定結果や旧Evidenceは引き継がないでください。'
-        '独立した商品を3つの紹介切り口ごとに2商品選べる新企画が必要です。既存記事と同じ商品テーマで選び方を言い換えただけなら企画として成立させず、異なる読者課題と得られる価値を確認してください。'
+        '第1軸「人気・定番の基準」はシステム固定のスタンダードベンチマークです。定番との差異が際立つ独自紹介切り口を2つだけ作成してください。システム追加後は計3軸各2商品です。既存記事と同じ商品テーマで選び方を言い換えただけなら企画として成立させず、異なる読者課題と得られる価値を確認してください。'
         '現在の商品の根拠となる検証可能なメーカー・仕様情報の収集可能性を評価してください。'
         '候補はちょうど1件のみで、slugとcategoryは入力どおり完全一致としてください。'
         '既存記事の公開内容は自動変更しません。\n'
@@ -241,7 +254,7 @@ def replan_published_topic(*, slug: str, category: str, product_theme_name: str)
     candidates = value.get('candidates') if isinstance(value, dict) else None
     if not isinstance(candidates, list) or len(candidates) != 1:
         raise PlanningError('published article replan requires exactly one candidate')
-    topic = candidates[0]
+    topic = _with_popular_axis(candidates[0])
     validate_candidate(topic)
     if topic['slug'] != slug or topic['category'] != category:
         raise PlanningError('published article identity must remain unchanged')

@@ -49,7 +49,7 @@ class ContinuousPlanningTests(unittest.TestCase):
         }
 
     def test_codex_primary_success(self):
-        value = {'candidates': [candidate('codex-topic', 'beauty')]}
+        value = {'candidates': [{**candidate('codex-topic', 'beauty'), 'comparison_axes': candidate()['comparison_axes'][:2]}]}
         with patch.dict('os.environ', self._env(), clear=True), \
              patch.object(planning_runtime, 'codex_generate_persistent', return_value=(value, {'session_id': 'sid'})), \
              patch.object(planning_runtime.subprocess, 'run') as claude:
@@ -60,7 +60,7 @@ class ContinuousPlanningTests(unittest.TestCase):
         claude.assert_not_called()
 
     def test_codex_failure_falls_back_to_claude(self):
-        accepted = {'candidates': [candidate('claude-topic', 'beauty')]}
+        accepted = {'candidates': [{**candidate('claude-topic', 'beauty'), 'comparison_axes': candidate()['comparison_axes'][:2]}]}
         stdout = json.dumps({'structured_output': accepted})
         completed = subprocess.CompletedProcess([], 0, stdout=stdout, stderr='')
         with patch.dict('os.environ', self._env(), clear=True), \
