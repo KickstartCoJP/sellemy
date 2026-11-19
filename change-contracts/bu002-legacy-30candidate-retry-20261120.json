@@ -1,0 +1,30 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "TASK-BU002-LEGACY-436-CONTINUOUS-RECOVERY-20261115",
+  "instruction_ref": "CEO 2026-11-20: 公開済み記事のリカバリ対象を全部再検査。復旧できなければ本番から落とす",
+  "instruction": "Legacy published article replan must accept the already approved up-to-30 discovery pool and select six through existing independent QA. Previously it incorrectly required exactly six candidate discoveries, making successful search a failure. Preserve all current QA and release gates. Prevent a published article checkpoint from being erroneously DISCARDED by the old migration when an original publication commit is present.",
+  "implementer": "sellemy-ops direct non-Codex isolated staging",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3",
+    "https://app.notion.com/p/3dc67ec6a1008196b017ee01e1824bba"
+  ],
+  "allowed_paths": [
+    "change-contracts/bu002-legacy-30candidate-retry-20261120.json",
+    "pipeline/legacy_article_recovery.py",
+    "tests/test_legacy_article_recovery.py",
+    "tests/test_legacy_replan_schema_20261117.py",
+    "pipeline/growth_recovery.py",
+    "tests/test_continuous_recovery_current.py"
+  ],
+  "preserved_rules": [
+    "Published legacy articles remain live until an actual failed quality review and controlled retirement",
+    "Three-axis product QA and selection of six unchanged",
+    "No modification to publication or CEO staging approval gates",
+    "No arbitrary auto-retries without candidate/source change"
+  ],
+  "acceptance_tests": [
+    "tests/test_legacy_article_recovery.py",
+    "tests/test_legacy_replan_schema_20261117.py",
+    "tests/test_continuous_recovery_current.py"
+  ]
+}
