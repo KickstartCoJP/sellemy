@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-11-19T02:42:07.209517+00:00",
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "generation_route_attestation": "codex_rollout_extension",
+  "height": 1024,
+  "image_generation_internal_usage_exposed": false,
+  "image_sha256": "5e5399d54b2c31280f2cbb6387a085d63d0464792916af215db9f5fa723f8e74",
+  "member_binding_revision": 12,
+  "model": "gpt-6-sol",
+  "model_reported_generation_route": "built-in_image_gen",
+  "role_id": "bu-codex-sellemy-designer",
+  "routing": {
+    "api_share": 0,
+    "codex_reserve_percent": 20.0,
+    "codex_share": 100,
+    "codex_usage": {
+      "remaining_percent": 62.0,
+      "resets_at": 1795549006,
+      "source": "/Users/kickstart/.codex/sessions/2026/11/19/rollout-2026-11-19T11-30-01-01a1f1a3-b7fa-7851-8693-12c3c5735a96.jsonl",
+      "used_percent": 38.0,
+      "window_minutes": 10080
+    },
+    "errors_before_success": [],
+    "executed_route": "codex",
+    "fallback_from": null,
+    "mode": "weighted_random",
+    "reason": "weighted_random",
+    "remaining_percent": 62.0,
+    "roll": 43,
+    "selected_route": "codex",
+    "total_weight": 100
+  },
+  "routing_recorded_at": "2026-11-19T02:42:07.211264+00:00",
+  "summary": "料理前に計量カップで合わせ調味料を混ぜる台所の一場面。PNG形式と1536x1024の寸法を確認済み。",
+  "thread_id": "01a1eb2a-83cc-70e2-86ac-90959b1a3f75",
+  "token_usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 143232,
+    "input_tokens": 193139,
+    "output_tokens": 660,
+    "reasoning_output_tokens": 0,
+    "total_tokens": 193799,
+    "uncached_input_tokens": 49907
+  },
+  "token_usage_source": "codex_rollout.turn_token_usage",
+  "visual_family": "editorial_lifestyle",
+  "width": 1536
+}

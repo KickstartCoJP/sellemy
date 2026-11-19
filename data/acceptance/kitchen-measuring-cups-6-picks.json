@@ -1,0 +1,1090 @@
+{
+  "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+  "evidence_sha256": "19c8188ec653f9a092343dcb4f5ff53c1c733a267a7c3cb4958720035e847c28",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 14848,
+    "input_tokens": 33658,
+    "member_binding_revision": 4,
+    "output_tokens": 8249,
+    "reasoning_effort": "medium",
+    "reasoning_output_tokens": 940,
+    "session_id": "01a1efb8-c918-78d2-b83e-e099f356842a",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "4cae30b9dd9192188cc77dd74f1752e542ef2720f57127a652a6c1633034bb2b",
+  "review": {
+    "buying_guidance": true,
+    "claims_grounded": true,
+    "complete_comparison": true,
+    "distinct_products": true,
+    "duplicate_pair_checks": [
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "本体の同一性を直接示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "50ml",
+            "reason": "容量と目盛り構造が異なる。",
+            "right_quote": "アングルドメジャーカップ ミニ 60ml",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "2個組 50ml",
+            "reason": "包装数だけの違いではない。",
+            "right_quote": "アングルドメジャーカップ ミニ 60ml",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "50ml",
+            "reason": "表示容量が異なる。",
+            "right_quote": "60ml",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "「ml」「大さじ」「小さじ」の3種の単位の目盛り",
+            "reason": "目盛りの構造と表示が異なる。",
+            "right_quote": "傾斜のついた内側の目盛り",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "SELECT100",
+            "reason": "異なる商品系列として識別できる。",
+            "right_quote": "アングルドメジャーカップ ミニ",
+            "status": "PASS"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "KAI",
+            "reason": "ブランドが異なる。",
+            "right_quote": "OXO",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "「大さじ」「小さじ」",
+            "reason": "少量を量る際の選択理由がそれぞれある。",
+            "right_quote": "内側の目盛りを上から見る",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "別ブランド・別系列で、容量と目盛り構造にも違いがある。",
+        "right_ref": "p2"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "本体の同一性を直接示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "50ml",
+            "reason": "容量と構造が異なる。",
+            "right_quote": "計量カップ 200ml",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "2個組 50ml",
+            "reason": "包装数だけの違いではない。",
+            "right_quote": "計量カップ 200ml",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "50ml",
+            "reason": "表示容量が異なる。",
+            "right_quote": "約200mL",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "「ml」「大さじ」「小さじ」の3種の単位の目盛り",
+            "reason": "示された特徴が異なる。",
+            "right_quote": "持ち手は測ることを追及した「三角断面」グリップ",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "SELECT100",
+            "reason": "異なる商品系列として識別できる。",
+            "right_quote": "目盛りが見やすい 計量カップ",
+            "status": "PASS"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "KAI",
+            "reason": "ブランドが異なる。",
+            "right_quote": "マーナ",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "「大さじ」「小さじ」",
+            "reason": "少量計量と注ぐ動作にそれぞれ推薦理由がある。",
+            "right_quote": "注ぎ口は先端が薄く",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "別ブランドで、容量と示された構造が異なる。",
+        "right_ref": "p3"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "本体の同一性を直接示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "DH3111",
+            "reason": "型番と容量が異なる。",
+            "right_quote": "DH8126",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "2個組 50ml",
+            "reason": "包装数だけの違いではない。",
+            "right_quote": "計量カップ 500ml",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "50ml",
+            "reason": "表示容量が異なる。",
+            "right_quote": "500ml",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "「ml」「大さじ」「小さじ」の3種の単位の目盛り",
+            "reason": "示された用途上の特徴が異なる。",
+            "right_quote": "液だれしにくいかたち",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "SELECT100",
+            "reason": "系列と型番が異なる。",
+            "right_quote": "KAI KITCHEN",
+            "status": "PASS"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "KAI",
+            "reason": "同じブランドだが、それ自体は同一商品の証拠ではない。",
+            "right_quote": "KAI",
+            "status": "N/A"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "少量の調味料計りに便利",
+            "reason": "少量計量とまとまった量を注ぐ用途に別々の推薦理由がある。",
+            "right_quote": "液だれしにくいかたち",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "同じブランドでも系列・型番・容量が異なる。",
+        "right_ref": "p4"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "本体の同一性を直接示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "DH3111",
+            "reason": "型番と容量、フタの有無が異なる。",
+            "right_quote": "DH3126",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "2個組 50ml",
+            "reason": "包装数だけの違いではない。",
+            "right_quote": "フタ付 計量カップ 500ml",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "50ml",
+            "reason": "表示容量が異なる。",
+            "right_quote": "500ml",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "2個セット",
+            "reason": "フタ付きという構造上の違いがある。",
+            "right_quote": "ふた=シリコーンゴム",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "SELECT100",
+            "reason": "同じ系列だが、世代関係は示されていない。",
+            "right_quote": "SELECT100",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "KAI",
+            "reason": "同じブランドである。",
+            "right_quote": "KAI",
+            "status": "N/A"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "50ml",
+            "reason": "少量計量と多めに作って覆う用途で独立した選択理由がある。",
+            "right_quote": "フタ付 計量カップ 500ml",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "同じSELECT100系列でも、型番・容量・フタの有無が異なる。",
+        "right_ref": "p5"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "本体の同一性を直接示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "50ml",
+            "reason": "容量と素材が異なる。",
+            "right_quote": "メジャーカップワイド 500ml",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "2個組 50ml",
+            "reason": "包装数だけの違いではない。",
+            "right_quote": "メジャーカップワイド 500ml",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "50ml",
+            "reason": "表示容量が異なる。",
+            "right_quote": "実用容量:500ml",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "本体/メタクリル樹脂",
+            "reason": "本体素材が異なる。",
+            "right_quote": "素材・材質:耐熱ガラス",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "SELECT100",
+            "reason": "異なる商品系列として識別できる。",
+            "right_quote": "メジャーカップワイド",
+            "status": "PASS"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "KAI",
+            "reason": "ブランドが異なる。",
+            "right_quote": "HARIO",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "「大さじ」「小さじ」",
+            "reason": "少量の単位計量と広い開口部に別々の推薦理由がある。",
+            "right_quote": "口径/10.5cm",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p1",
+        "reason": "別ブランド・別系列で、容量と素材が異なる。",
+        "right_ref": "p6"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "本体の同一性を直接示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "ミニ 60ml",
+            "reason": "容量と構造が異なる。",
+            "right_quote": "計量カップ 200ml",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "アングルドメジャーカップ ミニ 60ml",
+            "reason": "包装だけの違いではない。",
+            "right_quote": "目盛りが見やすい 計量カップ 200ml",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "容量 60 ミリリットル",
+            "reason": "表示容量が異なる。",
+            "right_quote": "容量】約200mL",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "傾斜のついた内側の目盛り",
+            "reason": "示された構造が異なる。",
+            "right_quote": "「三角断面」グリップ",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "アングルドメジャーカップ",
+            "reason": "異なる商品系列として識別できる。",
+            "right_quote": "目盛りが見やすい 計量カップ",
+            "status": "PASS"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "OXO",
+            "reason": "ブランドが異なる。",
+            "right_quote": "マーナ",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "内側の目盛りを上から見る",
+            "reason": "上から読む計量と注ぐ動作に別々の推薦理由がある。",
+            "right_quote": "注ぎ口は先端が薄く",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p2",
+        "reason": "別ブランドで、容量と構造が異なる。",
+        "right_ref": "p3"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "本体の同一性を直接示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "ミニ 60ml",
+            "reason": "容量と構造が異なる。",
+            "right_quote": "計量カップ 500ml",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "アングルドメジャーカップ ミニ 60ml",
+            "reason": "包装だけの違いではない。",
+            "right_quote": "KAI KITCHEN 日本製 DH8126",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "容量 60 ミリリットル",
+            "reason": "表示容量が異なる。",
+            "right_quote": "計量カップ 500ml",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "傾斜のついた内側の目盛り",
+            "reason": "示された構造と用途上の特徴が異なる。",
+            "right_quote": "液だれしにくいかたち",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "アングルドメジャーカップ",
+            "reason": "異なる商品系列として識別できる。",
+            "right_quote": "KAI KITCHEN",
+            "status": "PASS"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "OXO",
+            "reason": "ブランドが異なる。",
+            "right_quote": "KAI",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "内側の目盛りを上から見る",
+            "reason": "少量計量と注ぐ動作に別々の推薦理由がある。",
+            "right_quote": "液だれしにくいかたち",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p2",
+        "reason": "別ブランド・別系列で、容量と示された構造が異なる。",
+        "right_ref": "p4"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "本体の同一性を直接示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "ミニ 60ml",
+            "reason": "容量とフタの有無が異なる。",
+            "right_quote": "フタ付 計量カップ 500ml",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "アングルドメジャーカップ ミニ 60ml",
+            "reason": "包装だけの違いではない。",
+            "right_quote": "フタ付 計量カップ 500ml",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "容量 60 ミリリットル",
+            "reason": "表示容量が異なる。",
+            "right_quote": "容量 500 ミリリットル",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "傾斜のついた内側の目盛り",
+            "reason": "示された構造が異なる。",
+            "right_quote": "ふた=シリコーンゴム",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "アングルドメジャーカップ",
+            "reason": "異なる商品系列として識別できる。",
+            "right_quote": "SELECT100 DH3126",
+            "status": "PASS"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "OXO",
+            "reason": "ブランドが異なる。",
+            "right_quote": "KAI",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "内側の目盛りを上から見る",
+            "reason": "少量計量と多めに作って覆う用途に別々の推薦理由がある。",
+            "right_quote": "フタ付 計量カップ 500ml",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p2",
+        "reason": "別ブランド・別系列で、容量と構造が異なる。",
+        "right_ref": "p5"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "本体の同一性を直接示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "ミニ 60ml",
+            "reason": "容量と本体素材が異なる。",
+            "right_quote": "メジャーカップワイド 500ml",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "アングルドメジャーカップ ミニ 60ml",
+            "reason": "包装だけの違いではない。",
+            "right_quote": "メジャーカップワイド 500ml",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "容量 60 ミリリットル",
+            "reason": "表示容量が異なる。",
+            "right_quote": "実用容量:500ml",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "傾斜のついた内側の目盛り",
+            "reason": "示された構造と素材が異なる。",
+            "right_quote": "素材・材質:耐熱ガラス",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "アングルドメジャーカップ",
+            "reason": "異なる商品系列として識別できる。",
+            "right_quote": "メジャーカップワイド",
+            "status": "PASS"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "OXO",
+            "reason": "ブランドが異なる。",
+            "right_quote": "HARIO",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "内側の目盛りを上から見る",
+            "reason": "少量を上から読む計量と広い開口部に別々の推薦理由がある。",
+            "right_quote": "口径/10.5cm",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p2",
+        "reason": "別ブランド・別系列で、容量と素材が異なる。",
+        "right_ref": "p6"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "本体の同一性を直接示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "計量カップ 200ml",
+            "reason": "容量と商品系列が異なる。",
+            "right_quote": "計量カップ 500ml",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "目盛りが見やすい 計量カップ 200ml",
+            "reason": "包装だけの違いではない。",
+            "right_quote": "KAI KITCHEN 日本製 DH8126",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "容量】約200mL",
+            "reason": "表示容量が異なる。",
+            "right_quote": "計量カップ 500ml",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "「三角断面」グリップ",
+            "reason": "片方には具体的な持ち手構造が示され、他方は別商品として識別される。ただし持ち手の直接比較はできない。",
+            "right_quote": "液だれしにくいかたち",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "目盛りが見やすい 計量カップ",
+            "reason": "異なる商品系列として識別できる。",
+            "right_quote": "KAI KITCHEN",
+            "status": "PASS"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "マーナ",
+            "reason": "ブランドが異なる。",
+            "right_quote": "KAI",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "「三角断面」グリップ",
+            "reason": "持って注ぐ200mL品と、まとまった量を扱う500mL品として選択理由がある。",
+            "right_quote": "計量カップ 500ml",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p3",
+        "reason": "別ブランドで、容量と商品識別情報が異なる。",
+        "right_ref": "p4"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "本体の同一性を直接示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "計量カップ 200ml",
+            "reason": "容量とフタの有無が異なる。",
+            "right_quote": "フタ付 計量カップ 500ml",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "目盛りが見やすい 計量カップ 200ml",
+            "reason": "包装だけの違いではない。",
+            "right_quote": "フタ付 計量カップ 500ml",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "容量】約200mL",
+            "reason": "表示容量が異なる。",
+            "right_quote": "容量 500 ミリリットル",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "「三角断面」グリップ",
+            "reason": "示された構造が異なる。",
+            "right_quote": "ふた=シリコーンゴム",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "目盛りが見やすい 計量カップ",
+            "reason": "異なる商品系列として識別できる。",
+            "right_quote": "SELECT100 DH3126",
+            "status": "PASS"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "マーナ",
+            "reason": "ブランドが異なる。",
+            "right_quote": "KAI",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "注ぎ口は先端が薄く",
+            "reason": "注ぐ動作と一時的に覆う用途に別々の推薦理由がある。",
+            "right_quote": "フタ付 計量カップ 500ml",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p3",
+        "reason": "別ブランドで、容量とフタの有無が異なる。",
+        "right_ref": "p5"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "本体の同一性を直接示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "計量カップ 200ml",
+            "reason": "容量と素材が異なる。",
+            "right_quote": "メジャーカップワイド 500ml",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "目盛りが見やすい 計量カップ 200ml",
+            "reason": "包装だけの違いではない。",
+            "right_quote": "メジャーカップワイド 500ml",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "容量】約200mL",
+            "reason": "表示容量が異なる。",
+            "right_quote": "実用容量:500ml",
+            "status": "PASS"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "「三角断面」グリップ",
+            "reason": "示された構造と素材が異なる。",
+            "right_quote": "素材・材質:耐熱ガラス",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "目盛りが見やすい 計量カップ",
+            "reason": "異なる商品系列として識別できる。",
+            "right_quote": "メジャーカップワイド",
+            "status": "PASS"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "マーナ",
+            "reason": "ブランドが異なる。",
+            "right_quote": "HARIO",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "注ぎ口は先端が薄く",
+            "reason": "注ぐ動作と広い口から材料を加える用途に別々の推薦理由がある。",
+            "right_quote": "口径/10.5cm",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p3",
+        "reason": "別ブランドで、容量と素材が異なる。",
+        "right_ref": "p6"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "本体形状の同一性は資料だけでは確定できない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "DH8126",
+            "reason": "系列・型番とフタの有無が異なる。",
+            "right_quote": "フタ付 計量カップ 500ml SELECT100 DH3126",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "DH8126",
+            "reason": "包装だけの違いとは示されていない。",
+            "right_quote": "DH3126",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "計量カップ 500ml",
+            "reason": "表示容量は同じ。",
+            "right_quote": "計量カップ 500ml",
+            "status": "N/A"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "素材・材質：AS樹脂",
+            "reason": "本体素材の記載が異なり、p5にはフタがある。",
+            "right_quote": "ふた=シリコーンゴム",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "KAI KITCHEN 日本製 DH8126",
+            "reason": "同一ブランドの別系列・別型番として識別できる。",
+            "right_quote": "SELECT100 DH3126",
+            "status": "PASS"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "KAI",
+            "reason": "同じブランドである。",
+            "right_quote": "KAI",
+            "status": "N/A"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "液だれしにくいかたち",
+            "reason": "注ぎ口の形とフタ付きという別々の選択理由がある。",
+            "right_quote": "フタ付 計量カップ 500ml",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p4",
+        "reason": "容量とブランドは同じだが、系列・型番・本体素材の記載とフタの有無が異なる。",
+        "right_ref": "p5"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "本体の同一性を直接示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "素材・材質：AS樹脂",
+            "reason": "本体素材が異なる。",
+            "right_quote": "素材・材質:耐熱ガラス",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "KAI KITCHEN 日本製 DH8126",
+            "reason": "包装だけの違いではない。",
+            "right_quote": "メジャーカップワイド 500ml MJCW-50-R-BK",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "計量カップ 500ml",
+            "reason": "表示上の実用容量は同じ。",
+            "right_quote": "実用容量:500ml",
+            "status": "N/A"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "素材・材質：AS樹脂",
+            "reason": "本体素材が異なる。",
+            "right_quote": "素材・材質:耐熱ガラス",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "KAI KITCHEN",
+            "reason": "異なる商品系列として識別できる。",
+            "right_quote": "メジャーカップワイド",
+            "status": "PASS"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "KAI",
+            "reason": "ブランドが異なる。",
+            "right_quote": "HARIO",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "液だれしにくいかたち",
+            "reason": "注ぐ形と広い開口部に別々の推薦理由がある。",
+            "right_quote": "口径/10.5cm",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p4",
+        "reason": "同じ500mL級でも、別ブランド・別系列で本体素材が異なる。",
+        "right_ref": "p6"
+      },
+      {
+        "is_duplicate": false,
+        "items": [
+          {
+            "item": "same_product_body",
+            "left_quote": "",
+            "reason": "本体の同一性を直接示す資料はない。",
+            "right_quote": "",
+            "status": "UNKNOWN"
+          },
+          {
+            "item": "color_design_only",
+            "left_quote": "ふた=シリコーンゴム",
+            "reason": "フタの有無と本体素材が異なる。",
+            "right_quote": "素材・材質:耐熱ガラス",
+            "status": "PASS"
+          },
+          {
+            "item": "sales_packaging_only",
+            "left_quote": "SELECT100 DH3126",
+            "reason": "包装だけの違いではない。",
+            "right_quote": "メジャーカップワイド 500ml MJCW-50-R-BK",
+            "status": "PASS"
+          },
+          {
+            "item": "size_capacity_difference",
+            "left_quote": "容量 500 ミリリットル",
+            "reason": "表示容量は同じ。",
+            "right_quote": "実用容量:500ml",
+            "status": "N/A"
+          },
+          {
+            "item": "function_structure_difference",
+            "left_quote": "ふた=シリコーンゴム",
+            "reason": "示された構造と本体素材が異なる。",
+            "right_quote": "素材・材質:耐熱ガラス",
+            "status": "PASS"
+          },
+          {
+            "item": "series_generation_difference",
+            "left_quote": "SELECT100 DH3126",
+            "reason": "異なる商品系列・型番として識別できる。",
+            "right_quote": "メジャーカップワイド 500ml MJCW-50-R-BK",
+            "status": "PASS"
+          },
+          {
+            "item": "manufacturer_brand_relation",
+            "left_quote": "KAI",
+            "reason": "ブランドが異なる。",
+            "right_quote": "HARIO",
+            "status": "PASS"
+          },
+          {
+            "item": "independent_comparison_value",
+            "left_quote": "フタ付 計量カップ 500ml",
+            "reason": "一時的に覆う用途と広い口から材料を加える用途に別々の推薦理由がある。",
+            "right_quote": "口径/10.5cm",
+            "status": "PASS"
+          }
+        ],
+        "left_ref": "p5",
+        "reason": "同じ500mL級でも、別ブランド・別系列でフタの有無と素材が異なる。",
+        "right_ref": "p6"
+      }
+    ],
+    "editorial_voice_appropriate": true,
+    "internal_qa_leak_absent": true,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "small_batch",
+            "quote": "それぞれのカップには、「ml」「大さじ」「小さじ」の3種の単位の目盛りがついています。"
+          }
+        ],
+        "identity_key": "KAI 計量カップ SELECT100 2個組 50ml 日本製 DH3111",
+        "identity_quote": "貝印 KAI 計量カップ SELECT100 2個組 50ml 日本製 DH3111",
+        "reason": "少量向けの計量カップとして識別できる。3種類の単位の目盛りと、液体の色に合わせて使える2種類の目盛りが固有の推薦理由になる。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "small_batch",
+            "quote": "傾斜のついた内側の目盛りを上から見るだけで、簡単に計量できる"
+          }
+        ],
+        "identity_key": "OXO オクソー 計量カップ アングルドメジャーカップ ミニ 60ml",
+        "identity_quote": "OXO オクソー 計量カップ アングルドメジャーカップ ミニ 60ml",
+        "reason": "60mLのミニ計量カップとして識別できる。傾斜した内側の目盛りを上から読める点が、少量を調理台で量る人への推薦理由になる。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "pouring",
+            "quote": "注ぎ口は先端が薄く、注ぎやすく液だれしにくい形状。"
+          },
+          {
+            "axis_id": "pouring",
+            "quote": "持ち手は測ることを追及した「三角断面」グリップ"
+          }
+        ],
+        "identity_key": "マーナ (marna) 目盛りが見やすい 計量カップ 200ml",
+        "identity_quote": "マーナ (marna) 目盛りが見やすい 計量カップ 200ml",
+        "reason": "約200mLの計量カップとして識別できる。薄い先端の注ぎ口と三角断面の持ち手が、量った調味液を持って鍋へ移す用途を支える。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "pouring",
+            "quote": "液だれしにくいかたちの耐熱性の計量カップです。"
+          }
+        ],
+        "identity_key": "KAI KITCHEN 日本製 DH8126",
+        "identity_quote": "貝印 KAI 液だれしにくい どこでも注げる 耐熱 計量カップ 500ml 食洗機対応 クリア KAI KITCHEN 日本製 DH8126",
+        "reason": "型番で識別できる500mL級の計量カップ。液だれしにくい形状との掲載説明が、まとまった量を鍋へ注ぐ用途に沿う。実際に液だれしないとの断定はしていない。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "larger_batch",
+            "quote": "貝印 KAI フタ付 計量カップ 500ml SELECT100 DH3126"
+          },
+          {
+            "axis_id": "larger_batch",
+            "quote": "ふた=シリコーンゴム"
+          }
+        ],
+        "identity_key": "KAI フタ付 計量カップ 500ml SELECT100 DH3126",
+        "identity_quote": "貝印 KAI フタ付 計量カップ 500ml SELECT100 DH3126",
+        "reason": "フタ付きの500mL計量カップとして識別できる。多めの調味液を作り、使うまで一時的に覆う用途に具体的な推薦理由がある。保存性能は主張していない。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "larger_batch",
+            "quote": "口径/10.5cm、実用容量:500ml"
+          }
+        ],
+        "identity_key": "HARIO(ハリオ) 日本製 耐熱ガラス製 メジャーカップワイド 500ml MJCW-50-R-BK",
+        "identity_quote": "HARIO(ハリオ) 日本製 耐熱ガラス製 メジャーカップワイド 500ml MJCW-50-R-BK",
+        "reason": "型番で識別できる耐熱ガラス製のワイドな計量カップ。500mLの実用容量と10.5cmの口径が、多めの調味液に材料を加えて混ぜたい人への推薦理由になる。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reader_decision_outsourcing_absent": true,
+    "reason": "6品はいずれも料理用計量カップで、商品名と型番・系列、容量、構造から個別に識別できる。3つの紹介切り口に各2品が適合し、各商品の推薦理由は提示された検証済み掲載情報に支えられている。確認できない実使用性能を推薦の根拠にはしていない。",
+    "recommendation_conclusion": true,
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}
