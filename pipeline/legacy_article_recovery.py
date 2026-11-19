@@ -350,7 +350,7 @@ def replan_one(slug: str) -> dict:
         topic, provider = replan_published_topic(slug=slug, category=state['category'],
                                                 product_theme_name=theme)
         products, trace = collect_unique_products(topic, cache_only=False)
-        if len(products) != 6 or trace.get('complete') is not True:
+        if len(products) < 6 or trace.get('complete') is not True:
             raise ValueError('new Planning product research lacks six distinct items')
         selected, selection = select_six(products, topic, load_feedback())
         evidence = build_evidence(topic, selected, selection)

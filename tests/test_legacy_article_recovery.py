@@ -151,6 +151,25 @@ class LegacyArticleRecoveryTests(unittest.TestCase):
         self.assertEqual((self.repo/'article/gadget/sample-article.html').read_text(), 'old')
         self.assertEqual(recovery.read_artifact(self.slug, 'legacy-original-20261115/state.json')['status'], 'PUBLISHED')
 
+    def test_planning_accepts_more_than_six_discovered_candidates(self):
+        evidence = json.loads((self.articles/self.slug/'evidence.json').read_text())
+        evidence['products'][0]['sources'] = []
+        self._save(self.articles/self.slug/'evidence.json', evidence)
+        legacy.import_one(self.source)
+        candidates = [{'asin': f'B00000000{i}', 'amazon_title': f'Product {i}', 'image_url':'https://example.org/p.png', 'discovery_axis_id':f'axis{i%3}', 'sources':[]} for i in range(9)]
+        selected = [{'ref':f'P{i}', 'asin':f'B00000000{i}', 'sources':[{'verified':True,'url':f'https://example.org/{i}','excerpt':'verified'}]} for i in range(6)]
+        topic = {'slug':self.slug,'category':'gadget','product_theme':'浴室用スクイージー','comparison_axes':[{'id':f'axis{i}','label':f'Axis {i}','keywords':['product']} for i in range(3)]}
+        fresh = {'slug':self.slug,'category':'gadget','products':selected}
+        with patch('planning_runtime.replan_published_topic',return_value=(topic, {'provider':'test'})), \
+             patch('growth_role_business.collect_unique_products',return_value=(candidates,{'complete':True})), \
+             patch('product_selection.select_six',return_value=(selected, {'axes':[]})), \
+             patch('growth_role_business.build_evidence',return_value=fresh), \
+             patch('semantic_review.independent_review',return_value={'status':'ACCEPTED'}), \
+             patch('comparison_acceptance.product_issues',return_value=[]):
+            result = legacy.replan_one(self.slug)
+        self.assertEqual(result['action'],'writer')
+        self.assertEqual(recovery.load_job(self.slug)['current_stage'],'WRITER_PENDING')
+
     def test_existing_legacy_product_hold_restart_uses_planning(self):
         self.assertTrue(legacy.import_one(self.source)['admitted'])
         state = recovery.load_job(self.slug)

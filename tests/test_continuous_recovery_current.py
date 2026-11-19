@@ -39,3 +39,18 @@ def test_legacy_selection_requires_new_planning(tmp_path, monkeypatch):
     assert gr.recover_legacy_failed_jobs()==['old-case']
     assert gr.load_job('old-case')['status']=='DISCARDED'
     assert gr.read_artifact('old-case','planning-restart-required.json')['previous_stage']=='WRITER_FAILED'
+
+
+def test_published_site_job_is_never_discarded_by_legacy_schema(tmp_path, monkeypatch):
+    import growth_recovery as gr
+    monkeypatch.setattr(gr,'JOBS_ROOT',tmp_path/'jobs')
+    monkeypatch.setattr(gr,'EVENTS_PATH',tmp_path/'events.jsonl')
+    published={'schema_version':1,'slug':'published-old-schema','status':'ACTIVE',
+        'current_stage':'WRITER_PENDING','published_commit':'a'*40,
+        'created_at':gr._iso(),'updated_at':gr._iso(),'next_retry_at':None}
+    gr._save_state(published,event='CREATED')
+    gr.write_artifact('published-old-schema','selection.json',{'axes':[]})
+    assert gr.recover_legacy_failed_jobs()==[]
+    state=gr.load_job('published-old-schema')
+    assert state['status']=='ACTIVE'
+    assert state['published_commit']=='a'*40

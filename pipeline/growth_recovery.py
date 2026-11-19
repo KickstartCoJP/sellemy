@@ -244,7 +244,8 @@ def recover_legacy_failed_jobs() -> list[str]:
         # Approved legacy published articles are being repaired using their
         # original evidence and current independent QA; never discard this
         # explicitly admitted repair solely for pre-axis Planning metadata.
-        if row.get('source') == 'legacy_repair':
+        if row.get('source') == 'legacy_repair' or row.get('published_commit'):
+            # A live published article cannot be discarded by legacy schema migration.
             continue
         selection = read_artifact(row['slug'], 'selection.json', {}) or {}
         if len(selection.get('axes') or []) != 3:
