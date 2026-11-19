@@ -1,0 +1,29 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "CEO-CHAT-BU002-LEGACY-HOLD-RESUME-20261120",
+  "instruction_ref": "CEO direct 2026-11-20: 「1なんで再開していないのか。」→原因説明「PLANNING_HOLDが再開候補から漏れている」→「直せ」",
+  "instruction": "Reconnect the existing legacy PLANNING_HOLD jobs to the existing recovery admission. has_pending must recognize only an ACTIVE legacy_repair hold with planning_required and unconsumed shared-product-v1 marker. Admit at most one such existing input per recovery-only launch even when a different eligible job is already due, preserving stage queue priorities and all CEO/QA/Publish gates.",
+  "implementer": "Direct isolated staging edit, no Codex modifications",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3",
+    "https://app.notion.com/p/3dc67ec6a100813fb69de3398acf690b",
+    "https://app.notion.com/p/3dc67ec6a1008196b017ee01e1824bba"
+  ],
+  "allowed_paths": [
+    "change-contracts/bu002-legacy-hold-resume-20261120.json",
+    "pipeline/legacy_article_recovery.py",
+    "pipeline/growth_runtime.py",
+    "tests/test_legacy_article_recovery.py",
+    "tests/test_legacy_growth_coordinator.py"
+  ],
+  "preserved_rules": [
+    "Only ACTIVE legacy_repair jobs with planning_required and unconsumed adapter revision may be resumed; terminal jobs and normal runtime holds are not automatically reopened",
+    "At most one legacy admission per off-slot recovery cycle; existing due job retains execution priority",
+    "Keep one article Job per slug, existing source/identity/published baseline and current Product/Writer/QA/CEO/Publish gates",
+    "Do not change new-topic stop, quality thresholds, API provider routing, or any production process/configuration in staging"
+  ],
+  "acceptance_tests": [
+    "tests/test_legacy_article_recovery.py",
+    "tests/test_legacy_growth_coordinator.py"
+  ]
+}

@@ -120,6 +120,12 @@ def has_pending(root: Path | None = None) -> bool:
             state = load_job(slug)
             if (state.get('source') == 'legacy_repair' and
                     state.get('status') == 'ACTIVE' and
+                    state.get('current_stage') == 'PLANNING_HOLD' and
+                    marker.get('phase') == 'planning_required' and
+                    marker.get('adapter_revision') != 'shared-product-v1'):
+                return True
+            if (state.get('source') == 'legacy_repair' and
+                    state.get('status') == 'ACTIVE' and
                     state.get('current_stage') == 'PRODUCT_HOLD' and
                     not source_acquisition_ready(read_artifact(slug, 'evidence.json', {}))):
                 return True
