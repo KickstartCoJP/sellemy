@@ -20,11 +20,12 @@ class DiscoveryContractTests(unittest.TestCase):
  def test_plan_no_longer_demands_head_to_head_comparison(self):
   p=build_editorial_plan(self.topic,self.evidence)
   self.assertIn('比較や優劣を強制しない',next(x['instruction'] for x in p['requirements'] if x['id']=='E04'))
-  self.assertIn('紹介切り口',next(x['instruction'] for x in p['requirements'] if x['id']=='E03'))
+  self.assertIn('確定した3組×各2商品の割当',next(x['instruction'] for x in p['requirements'] if x['id']=='E03'))
  def test_writer_prioritizes_discovery(self):
   s=_prompt(self.topic,self.evidence)
-  self.assertIn('商品同士の比較・優劣・差異説明は必須ではありません',s)
-  self.assertIn('紹介切り口',s)
+  self.assertIn('確定した商品と割当を維持',s)
+  self.assertIn('商品の魅力と推薦理由',s)
+  self.assertNotIn('3つの切り口は',s)
  def test_independent_editorial_qa_does_not_demand_comparison(self):
   from editorial_qa import CONTRACT
   self.assertIn('Comparing differences is OPTIONAL',CONTRACT)
