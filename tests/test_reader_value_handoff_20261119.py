@@ -29,24 +29,15 @@ TOPIC = {
 OLD = {**TOPIC, 'slug': 'prior-freezer-bags', 'query': '食品用 冷凍保存袋 おすすめ'}
 
 
-def test_generic_existing_topic_not_reintroduced_by_rewording():
+def test_same_product_category_is_always_duplicate():
     assert planning._same_purchase_intent(TOPIC, OLD)
     assert planning._same_purchase_intent(
-        {**TOPIC, 'product_theme': '蛇口直結型浄水器',
-         'query': '蛇口直結型浄水器 おすすめ 選び方 カートリッジ交換'},
-        {**OLD, 'product_theme': '蛇口直結型浄水器',
-         'query': '蛇口直結型浄水器 おすすめ 選び方'})
-    assert not planning._same_purchase_intent(
-        {**TOPIC, 'query': '食品用 冷凍保存袋 業務用 大容量'},
-        {**OLD, 'query': '食品用 冷凍保存袋 赤ちゃん用 少量'})
-
-
-def test_distinct_product_class_or_reader_search_remains_eligible():
-    assert not planning._same_purchase_intent(
-        TOPIC, {**OLD, 'product_theme': '食品用密閉容器'})
-    assert not planning._same_purchase_intent(
         {**TOPIC, 'query': '食品用冷凍保存袋 小分け'},
         {**OLD, 'query': '食品用冷凍保存袋 業務用 大量まとめ買い'})
+    assert planning._same_purchase_intent(
+        {**TOPIC, 'product_theme': '蛇口直結型浄水器', 'intent_key': '料理向け'},
+        {**OLD, 'product_theme': '蛇口直結型浄水器', 'intent_key': '交換の手間'})
+    assert not planning._same_purchase_intent(TOPIC, {**OLD, 'product_theme': '食品用密閉容器'})
 
 
 def test_rank_candidates_uses_existing_active_topic_without_new_ledger(tmp_path):
@@ -104,3 +95,24 @@ def test_editorial_brief_tracks_reader_goal_and_all_article_parts():
     review = review_prompt(make_input(article, brief=plan))
     assert 'all six product descriptions' in review
     assert 'editorial brief' in review
+
+
+def test_published_product_category_blocks_different_search_intent(tmp_path):
+    articles = tmp_path / 'articles.json'
+    articles.write_text('[{"slug":"published-filters","category":"dailygoods","product_theme":"蛇口直結型浄水器"}]')
+    fresh = {**TOPIC, 'slug':'fresh-filters', 'product_theme':'蛇口直結型浄水器',
+             'query':'料理向け浄水器', 'intent_key':'料理用の浄水器を選ぶ'}
+    with patch.object(planning, 'ARTICLES', articles), patch.object(
+        planning, '_active_topic_intents', return_value=[]
+    ):
+        assert planning.rank_candidates([fresh], {'topic_metrics':[], 'product_metrics':[]}) == []
+
+
+def test_same_category_in_one_batch_keeps_best_candidate(tmp_path):
+    articles = tmp_path / 'articles.json'; articles.write_text('[]')
+    other = {**TOPIC, 'slug':'other-intent-frozen-bags', 'query':'別の用途',
+             'intent_key':'別の人への冷凍保存袋'}
+    with patch.object(planning, 'ARTICLES', articles), patch.object(
+        planning, '_active_topic_intents', return_value=[]
+    ):
+        assert len(planning.rank_candidates([TOPIC, other], {'topic_metrics':[], 'product_metrics':[]})) == 1
