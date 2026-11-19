@@ -21,6 +21,12 @@ def _inspect(slug: str, *, cache_only: bool) -> dict:
     if state.get('source') == 'runtime' and state.get('current_stage') in {'PLANNING_PENDING', 'PLANNING_HOLD'} and (read_artifact(slug, 'planning-restart-required.json', {}) or {}).get('required_stage') == 'PLANNING':
         return {'action': 'replan', 'slug': slug}
     if state.get('source') == 'legacy_repair' and state.get('current_stage') == 'PLANNING_PENDING':
+        marker = read_artifact(slug, 'legacy-repair.json', {}) or {}
+        blocker = read_artifact(slug, 'product-blocker.json', {}) or {}
+        if marker.get('phase') == 'regular_repair' and blocker.get('needs_product_reselection'):
+            # Crash after adapting the input but before the stage receipt was saved.
+            set_stage(slug, 'WRITER_PENDING', event='LEGACY_INPUT_ADAPTER_RESUMED')
+            return {'action': 'product', 'slug': slug}
         return {'action': 'replan', 'slug': slug}
     evidence = read_artifact(slug, 'evidence.json', {}) or {}
     topic = read_artifact(slug, 'topic.json', {}) or {}
@@ -30,6 +36,10 @@ def _inspect(slug: str, *, cache_only: bool) -> dict:
                'candidate_count': len(evidence.get('products', []))}
     blocker = read_artifact(slug, 'product-blocker.json', {}) or {}
     if blocker.get('needs_product_reselection'):
+        # A normalized published input must pass the shared Product role; old
+        # article approval is not approval of the newly planned selection.
+        if (read_artifact(slug, 'product-search-progress.json', {}) or {}).get('reuse_previous_products') is False:
+            return {**details, 'action': 'product'}
         acceptance = evidence.get('product_acceptance') or {}
         if len(evidence.get('products') or []) == 6 and acceptance.get('contract_version') != VERSION:
             from semantic_review import independent_review
