@@ -1,0 +1,25 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "TASK-BU002-PURPOSE-PRODUCTION-IMPLEMENT-20261007-001",
+  "instruction_ref": "CEO-CHAT-20261115-PURPOSE-TITLE-MISMATCH",
+  "instruction": "Correct remaining Purpose feature-title mismatches such as canonical '整う' versus stale relation-label '整える', without changing feature IDs, article mappings, or unrelated copy.",
+  "implementer": "sellemy-purpose-ops on authorized Mac Studio v2",
+  "canonical_refs": [
+    "正本設計・更新マスター正本",
+    "Purpose/特集現行正本",
+    "config/purpose_features_seed.json"
+  ],
+  "allowed_paths": [
+    "config/purpose_relation_seed.json",
+    "change-contracts/20261115-purpose-title-alignment.json",
+    "tests/test_purpose_title_alignment.py"
+  ],
+  "preserved_rules": [
+    "Use the canonical feature title for each existing feature_id",
+    "Keep 250 relation entries, article IDs, relation types and ordering intact",
+    "No production promotion before CEO portal approval"
+  ],
+  "acceptance_tests": [
+    "tests/test_purpose_title_alignment.py"
+  ]
+}
