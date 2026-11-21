@@ -57,3 +57,49 @@ def review_prompt(subject):
             'verdict SUPPORTED/UNSUPPORTED/CONTRADICTED/NO_CLAIM, exact evidence_quote if supported, reason. '
             'Every quotation must be verbatim. Product listing titles can establish the identity, model, stated dimensions, item count and labeled specifications explicitly present in the title; they do NOT prove actual performance, efficacy, safety or durability. Distinguish an attributed listing specification from a verified real-world outcome. If a concrete claim lacks a matching same-product quote, mark UNSUPPORTED. If a product has no objective concrete claim, emit one NO_CLAIM finding with an exact quote from its description and empty evidence_quote. Do not invent a supporting claim to fill coverage. '
             'Never infer a source.\nINPUT:\n'+json.dumps(subject,ensure_ascii=False))
+
+
+def reuse_snapshot(subject, receipt):
+    """Only source-grounded per-product PASS findings from a valid review can be reused."""
+    if not isinstance(receipt,dict) or receipt.get('verdict') not in ('PASS','FAIL'):
+        return {}
+    if validate_receipt(receipt,subject):
+        return {}
+    shared = {k:v for k,v in subject['article'].items() if k != 'products'}
+    axes = subject.get('comparison_axes',[])
+    results = {}
+    for product in subject['article']['products']:
+        ref = product['ref']
+        findings = [x for x in receipt['findings'] if isinstance(x,dict) and x.get('product_ref') == ref]
+        if not findings or any(x.get('verdict') not in ('SUPPORTED','NO_CLAIM') for x in findings):
+            continue
+        results[ref] = {'hash': fingerprint({'product':product,'source':subject['verified_sources'][ref],
+                                             'shared':shared,'comparison_axes':axes}),
+                        'findings':findings}
+    return {'schema':'sellemy-claim-reuse/v1','items':results} if results else {}
+
+
+def merge_reuse_snapshots(subject, *snapshots):
+    """Merge only receipts still valid for the current product and source hashes."""
+    items = {}
+    for snapshot in snapshots:
+        if not isinstance(snapshot,dict) or snapshot.get('schema') != 'sellemy-claim-reuse/v1':
+            continue
+        for ref in reusable_findings(subject,snapshot):
+            items[ref] = snapshot['items'][ref]
+    return {'schema':'sellemy-claim-reuse/v1','items':items} if items else {}
+
+
+def reusable_findings(subject, snapshot):
+    if not isinstance(snapshot,dict) or snapshot.get('schema') != 'sellemy-claim-reuse/v1':
+        return {}
+    shared = {k:v for k,v in subject['article'].items() if k != 'products'}
+    axes = subject.get('comparison_axes',[])
+    result = {}
+    for product in subject['article']['products']:
+        ref = product['ref']; row = (snapshot.get('items') or {}).get(ref) or {}
+        expected = fingerprint({'product':product,'source':subject['verified_sources'][ref],
+                                'shared':shared,'comparison_axes':axes})
+        if row.get('hash') == expected and isinstance(row.get('findings'),list):
+            result[ref] = row['findings']
+    return result

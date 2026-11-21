@@ -3,7 +3,7 @@ from __future__ import annotations
 import json,subprocess,os,tempfile
 from pathlib import Path
 from editorial_qa import make_input as editorial_input,review_prompt as editorial_prompt,make_receipt as editorial_receipt,validate_verdict
-from claim_qa import make_input as claim_input,review_prompt as claim_prompt,make_receipt as claim_receipt,validate_receipt
+from claim_qa import make_input as claim_input,review_prompt as claim_prompt,make_receipt as claim_receipt,validate_receipt,reusable_findings
 from comparison_acceptance import product_issues,require_acceptance
 
 class QualityGateError(ValueError):
@@ -33,7 +33,7 @@ def _judge(prompt):
         except (ValueError,json.JSONDecodeError) as exc:
             raise QualityGateError('reviewer_runtime','invalid final-message JSON reply') from exc
 
-def issue_receipts(payload,evidence,acceptance,judge=None):
+def issue_receipts(payload,evidence,acceptance,judge=None,*,prior_claim_snapshot=None):
     """Never issue a passing certificate from an absent evidence set or model-only prose."""
     judge=judge or _judge
     try:
@@ -47,24 +47,47 @@ def issue_receipts(payload,evidence,acceptance,judge=None):
     if er['verdict']!='PASS':raise QualityGateError('editorial',er.get('reason','FAIL'))
     try:cs=claim_input(payload,evidence)
     except Exception as exc:raise QualityGateError('evidence',str(exc)) from exc
-    claim_base_prompt=claim_prompt(cs)
+    reused = reusable_findings(cs,prior_claim_snapshot)
+    refs = {p['ref'] for p in (cs.get('article') or {}).get('products', [])}
+    changed = refs - set(reused)
+    # The publication receipt is still bound to the FULL current article.
+    # Only a previously independently passed and unchanged source/product can
+    # avoid another paid review. A changed shared assertion invalidates all.
+    scoped = cs
+    if changed and reused:
+        scoped = {**cs,
+                  'article':{**cs['article'], 'products':[p for p in cs['article']['products'] if p['ref'] in changed]},
+                  'verified_sources':{ref:value for ref,value in cs['verified_sources'].items() if ref in changed}}
+    if not changed and reused:
+        cr=claim_receipt({'verdict':'PASS','reason':'All six product claims previously passed independent Claim QA with exact unchanged source and article hashes',
+            'findings':[finding for row in reused.values() for finding in row]},cs)
+        return {'editorial':er,'claim':cr}
+    claim_base_prompt=claim_prompt(scoped)
     for attempt in range(2):
         try:
             cr=claim_receipt(judge(claim_base_prompt if attempt==0 else claim_base_prompt +
                 '\nRETRY: The previous receipt contained a quotation absent from the same product entry or its source. '
                 'For every finding copy article_quote VERBATIM from that finding product_ref description, '
-                'and evidence_quote VERBATIM from the identical product_ref evidence. Never paraphrase.'),cs)
+                'and evidence_quote VERBATIM from the identical product_ref evidence. Never paraphrase.'),scoped)
             break
         except QualityGateError:raise
         except Exception as exc:
             if attempt==1:raise QualityGateError('claim',str(exc)) from exc
+    if cr['verdict']=='PASS' and reused:
+        cr=claim_receipt({'verdict':'PASS','reason':'Changed claims passed independent QA; unchanged source and article claims reused by exact hashes',
+            'findings':[finding for row in reused.values() for finding in row] + cr['findings']},cs)
     if cr['verdict']!='PASS':
         quotes=[x.get('article_quote') for x in cr.get('findings',[])
                 if isinstance(x,dict) and x.get('verdict') in ('UNSUPPORTED','CONTRADICTED')
                 and x.get('article_quote')]
-        raise QualityGateError('claim',[cr.get('reason','FAIL'),
+        failure = QualityGateError('claim',[cr.get('reason','FAIL'),
             '削除対象の具体文言: '+json.dumps(quotes,ensure_ascii=False),
             '該当文言を破棄し、根拠ある内容と一般的な選び方で所定文字数まで補って再編集'])
+        # A FAIL cannot authorize publication. Its separately grounded PASS
+        # product findings may still reduce the next targeted correction QA.
+        failure.claim_receipt = cr
+        failure.claim_subject = scoped
+        raise failure
     return {'editorial':er,'claim':cr}
 
 def require_receipts(payload,evidence,acceptance,receipts):

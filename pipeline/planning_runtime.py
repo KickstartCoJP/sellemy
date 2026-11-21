@@ -150,10 +150,10 @@ def _context() -> dict:
         'today': date.today().isoformat(), 'allowed_categories': list(CATEGORIES),
         'exploration_seeds': json.loads(SEEDS.read_text(encoding='utf-8'))['categories'],
         'existing_article_count': len(articles),
-        'existing_article_themes': list(dict.fromkeys(themes)),
+        'existing_article_themes': list(dict.fromkeys(themes[-RECENT_PORTFOLIO_WINDOW:])),
         'portfolio': _portfolio_signals(articles),
         'amazon_search_recovery_themes': retry_themes,
-        'instruction': 'Product theme is product class; reject any already-used product class regardless of search intent, audience or angle. Prioritize re-evaluating the provided historical Amazon access-failure recovery themes as newly viable topics, regenerating complete current-schema proposals and rejecting any stale or duplicate intent through normal Planning QA. These historical failures were infrastructure errors, not quality rejections. Continue exploring fresh intents, respect the full article duplicate guard, and diversify across categories.',
+        'instruction': 'Product theme is product class; reject any already-used product class regardless of search intent, audience or angle. The complete historical deduplication list is enforced by rank_candidates after generation; the prompt includes only recent themes to avoid re-sending the entire portfolio. Prioritize re-evaluating the provided historical Amazon access-failure recovery themes as newly viable topics, regenerating complete current-schema proposals and rejecting any stale or duplicate intent through normal Planning QA. These historical failures were infrastructure errors, not quality rejections. Continue exploring fresh intents, respect the full article duplicate guard, and diversify across categories.',
     }
 
 

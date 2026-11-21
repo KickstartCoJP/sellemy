@@ -1,0 +1,39 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "CEO-CHAT-BU002-CONTEXT-SEARCH-EFFICIENCY-20261122",
+  "instruction_ref": "CEO direct 2026-11-22: 'たぶんこのプロダクトのせいだよな、、他に過剰なテキスト渡ししている箇所ないだろうな？' '検索は改善できるのか？' 'ではそれを含め今出した課題の解消を。範囲外は触るな。'",
+  "instruction": "Reduce previously identified BU-002 excessive model context and expensive web search without changing article selection, factual QA, role boundaries or publishing thresholds: replace Codex official-source URL search with existing isolated VM Chrome search and existing independently verified manufacturer-source acceptance; remove redundant Product Review pair input; trim Planner history in the prompt while retaining complete deterministic duplicate guard; trim Writer QA corrections while retaining all product refs and source for disputed products; reuse only individually supported findings from a valid independent Claim QA receipt (including the other products in a failing article) after strict article, per-product and source hash comparison; remove irrelevant passed Product QA from CEO-specific editorial review. All search results remain non-evidence until independently verified. No new paid APIs, queue, planner scheduling or publication gates.",
+  "implementer": "Direct Mac Studio staging file edits; Codex not used to modify code",
+  "canonical_refs": ["https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3"],
+  "allowed_paths": [
+    "change-contracts/bu002-context-search-efficiency-20261122.json",
+    "pipeline/claim_qa.py",
+    "pipeline/editorial_plan_review.py",
+    "pipeline/independent_quality_gate.py",
+    "pipeline/manufacturer_research.py",
+    "pipeline/planning_runtime.py",
+    "pipeline/qa_return.py",
+    "pipeline/role_execution_writer.py",
+    "pipeline/semantic_review.py",
+    "pipeline/vm_official_search.py",
+    "pipeline/writer_runtime.py",
+    "tests/test_manufacturer_research.py",
+    "tests/test_planning_and_selection.py",
+    "tests/test_claim_qa_reuse_20261122.py",
+    "tests/test_prompt_efficiency_20261122.py"
+  ],
+  "preserved_rules": [
+    "Exactly three discovery axes and two products per axis; source and identity evidence validation unchanged",
+    "Product Reviewer, Editorial QA, Claim QA and CEO plan review criteria, overall final acceptance, existing NG limits, retry semantics and failed-publish barriers unchanged",
+    "Full accepted source evidence and original QA receipts remain durable; no old certificate is treated as a current whole-article approval",
+    "A valid independent Claim QA verdict may preserve each verified SUPPORTED/NO_CLAIM product finding, including supported items from an overall FAIL; reuse requires unchanged product, source and all shared article fields by exact hash, while any failed or changed product claim is independently re-reviewed and cannot grant publication",
+    "Current CEO staging promotion, manual article review and GitHub change-contract CI remain mandatory",
+    "No new runtime providers, paid API requests, generated content, access tokens or out-of-scope code changes"
+  ],
+  "acceptance_tests": [
+    "tests/test_manufacturer_research.py",
+    "tests/test_planning_and_selection.py",
+    "tests/test_claim_qa_reuse_20261122.py",
+    "tests/test_prompt_efficiency_20261122.py"
+  ]
+}
