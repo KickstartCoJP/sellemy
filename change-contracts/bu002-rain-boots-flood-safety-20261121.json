@@ -1,0 +1,23 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "CEO-CHAT-BU002-RAIN-BOOTS-FLOOD-SAFETY-20261121",
+  "instruction_ref": "CEO direct 2026-11-21: https://www.sellemy.jp/article/dailygoods/rain-boots-6-picks.html 「これ増水とか危険な場所を勧めてるの直して」",
+  "instruction": "Fix unsafe endorsements that imply rain boots make flooded roads, rising water, typhoon travel, deep water, or slippery surfaces safe. Limit changes to this already published article copy; clarify avoidance of flooded places and no guarantee of traction, while preserving products, links, layout, and other unrelated article details. Stage for CEO promotion gate.",
+  "implementer": "Sellemy owner via direct isolated Mac Studio staging edits; no Codex modification",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3"
+  ],
+  "allowed_paths": [
+    "change-contracts/bu002-rain-boots-flood-safety-20261121.json",
+    "article/dailygoods/rain-boots-6-picks.html",
+    "tests/test_rain_boots_flood_safety_20261121.py"
+  ],
+  "preserved_rules": [
+    "Existing six products, IDs, image and affiliate links, title, page structure and styles unchanged",
+    "No general Writer/Planner/QA/runtime/gating modifications",
+    "Existing SHA-fixed CEO staging promotion required; no direct main changes"
+  ],
+  "acceptance_tests": [
+    "tests/test_rain_boots_flood_safety_20261121.py"
+  ]
+}
