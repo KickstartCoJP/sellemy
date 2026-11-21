@@ -12,7 +12,8 @@
     "pipeline/growth_role_business.py",
     "tests/test_sequential_evidenced_axis_discovery_20261121.py",
     "tests/test_strict_unique_collection.py",
-    "tests/test_ceo_review_replanning_20261118.py"
+    "tests/test_ceo_review_replanning_20261118.py",
+    "tests/test_three_axis_discovery_selection.py"
   ],
   "preserved_rules": [
     "Three Planner axes; selection of exactly two unique evidenced products per axis and six total",
