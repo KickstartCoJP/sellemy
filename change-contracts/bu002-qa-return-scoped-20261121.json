@@ -1,0 +1,23 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "CEO-CHAT-BU002-QA-RETURN-SCOPE-20261121",
+  "instruction_ref": "CEO direct 2026-11-21: '他のroleのQAを聞いてるんだけど。' '問題と修正対応を一覧にしろ' 'QAの戻しの話だろ？？' '全て修正しろ。指定範囲外の改修はするな。'",
+  "instruction": "Change only the QA-failure-to-producing-role return path. Do not forward successful Product or semantic QA receipts as Writer rework feedback; retain concrete failing claims, editorial defects, field measurements, exact duplicate endings, CEO directives, and unresolved semantic reasons. Writer corrections preserve unaffected material; final revalidation feedback must preserve any CEO rewrite directive. Maintain other roles' already concise failure reasons and existing QA/CEO/publication gates without altering first-pass generation, thresholds, or scheduling.",
+  "implementer": "Direct Mac Studio staging code edit, no Codex modifications",
+  "canonical_refs": ["https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3", "https://app.notion.com/p/3dc67ec6a1008196b017ee01e1824bba"],
+  "allowed_paths": [
+    "change-contracts/bu002-qa-return-scoped-20261121.json",
+    "pipeline/qa_return.py",
+    "pipeline/writer_runtime.py",
+    "pipeline/growth_role_business.py",
+    "pipeline/role_stage_exec.py",
+    "tests/test_qa_return_scoped_20261121.py"
+  ],
+  "preserved_rules": [
+    "No first-pass Planner/Product/Writer/Designer changes; QA criteria, severity, retries and thresholds remain intact",
+    "Product identity, evidence, six-product allocation, source checks, Editorial/Claim/Final QA and CEO approval gates unchanged",
+    "Full QA receipts and source records remain in existing durable job artifacts; no data/schema migration",
+    "No production promotion, new scheduler/queue, role relay or Codex code modifications"
+  ],
+  "acceptance_tests": ["tests/test_qa_return_scoped_20261121.py"]
+}
