@@ -99,7 +99,7 @@ def _inspect(slug: str, *, cache_only: bool) -> dict:
         issues = receipt_issues(acceptance, evidence, payload)
         if issues:
             set_stage(slug, 'QA_FAILED', event='ACCEPTANCE_REVALIDATION_REQUIRED')
-            write_artifact(slug, 'gate-feedback.json', {'semantic_acceptance_issues': issues})
+            write_artifact(slug, 'gate-feedback.json', {**{k: v for k, v in (read_artifact(slug, 'gate-feedback.json', {}) or {}).items() if k == 'ceo_rework'}, 'semantic_acceptance_issues': issues})
             raise GrowthRuntimeError(f'acceptance revalidation required for {slug}')
         from independent_quality_gate import require_receipts, QualityGateError
         try:
@@ -111,7 +111,7 @@ def _inspect(slug: str, *, cache_only: bool) -> dict:
                 # route back to Product selection.
                 raise GrowthRuntimeError(f'product evidence integrity fault for {slug}: {exc}') from exc
             set_stage(slug, 'QA_FAILED', event='INDEPENDENT_QA_REVALIDATION_REQUIRED')
-            write_artifact(slug, 'gate-feedback.json', {'independent_quality_gate': {
+            write_artifact(slug, 'gate-feedback.json', {**{k: v for k, v in (read_artifact(slug, 'gate-feedback.json', {}) or {}).items() if k == 'ceo_rework'}, 'independent_quality_gate': {
                 'gate': exc.gate, 'issues': exc.issues}})
             raise GrowthRuntimeError(f'independent QA revalidation required for {slug}: {exc}') from exc
         return {**details, 'action': ('designer' if stage == 'EYECATCH_PENDING' else 'publish')}

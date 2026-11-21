@@ -114,6 +114,9 @@ def _command() -> list[str]:
 
 def _prompt(topic: dict, evidence: dict, *, previous_payload: dict | None = None, gate_feedback: dict | None = None) -> str:
     from editorial_plan import build_editorial_plan
+    from qa_return import writer_feedback, writer_evidence
+    gate_feedback = writer_feedback(gate_feedback)
+    evidence = writer_evidence(evidence)
     topic = {key: value for key, value in topic.items() if key != 'title'}
     plan = build_editorial_plan(topic, evidence, str((gate_feedback or {}).get('ceo_rework') or ''))
     prompt = (
@@ -152,13 +155,13 @@ def _prompt(topic: dict, evidence: dict, *, previous_payload: dict | None = None
         prompt += '\nREADER_PERSONA (follow this reader through introduction, terminology and recommendation): '+json.dumps(persona,ensure_ascii=False)+'\n'
     if previous_payload is not None:
         prompt += (
-            '\n\nRewrite the complete payload using the gate diagnostics. Do not patch with scripted filler.\n\n'
+            '\n\nReturn the complete JSON payload, preserving every unaffected field verbatim. Apply only the concrete failing QA items below; do not rewrite unrelated article prose or change the six product assignments.\n\n'
             f'PREVIOUS_PAYLOAD:\n{json.dumps(previous_payload, ensure_ascii=False, sort_keys=True)}\n\n'
             f'GATE_FEEDBACK:\n{json.dumps(gate_feedback or {}, ensure_ascii=False, sort_keys=True)}'
         )
     if previous_payload is not None and isinstance(gate_feedback, dict):
         failed = gate_feedback.get('qa_failures') or {}
-        semantic = gate_feedback.get('semantic_review') or {}
+        semantic = gate_feedback.get('semantic_issue') or {}
         if failed.get('lead_in_range') is False:
             prompt += '\nMANDATORY: Rewrite lead to at least 180 Japanese characters, with no upper limit or padding.\n'
         if failed.get('semantic_acceptance_pass') is False:

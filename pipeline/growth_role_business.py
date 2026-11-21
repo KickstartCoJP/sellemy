@@ -461,7 +461,11 @@ def evaluate_candidate(payload: dict, evidence: dict, *, acceptance: dict | None
 def _gate_feedback(findings: list[str], qa: dict) -> dict:
     failed = {key: value for key, value in qa.items() if (key.endswith('_pass') or key.endswith('_in_range')) and value is False}
     measurements = {key: qa.get(key) for key in ('lead_len', 'summary_len', 'how_to_choose_len', 'main_len', 'description_lens', 'h3_lens')}
-    return {'review_findings': findings, 'qa_failures': failed, 'measurements': measurements}
+    result = {'review_findings': findings, 'qa_failures': failed, 'measurements': measurements}
+    if failed.get('distinct_openings_endings_pass') is False:
+        result['duplicate_openings'] = qa.get('duplicate_openings') or {}
+        result['duplicate_endings'] = qa.get('duplicate_endings') or {}
+    return result
 
 
 def _write_json(path: Path, value: dict) -> None:
