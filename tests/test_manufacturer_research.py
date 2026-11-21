@@ -60,21 +60,45 @@ def test_spoofed_official_text_and_brand_mismatch_rejected():
 
 
 def test_batch_search_response_is_candidate_only_and_cache_never_browses():
-    events = '\n'.join([
-        json.dumps({'type': 'item.completed', 'item': {'type': 'agent_message',
-                    'text': json.dumps({'items': [{'asin': PRODUCT['asin'], 'url': URL}]})}}),
-        json.dumps({'type': 'turn.completed', 'usage': {'input_tokens': 30, 'output_tokens': 10}}),
-    ])
-    with patch('manufacturer_research.subprocess.run', return_value=Mock(returncode=0, stdout=events)) as cli, \
-         patch('manufacturer_research.fetch_manufacturer_source', return_value={'source_type': 'manufacturer_official', 'verified': True}) as fetch, \
-         patch('codex_provider._append_usage'):
+    result_json = json.dumps({'items': [{'asin': PRODUCT['asin'], 'urls': [URL]}]})
+    with patch('manufacturer_research.subprocess.run', return_value=Mock(returncode=0, stdout=result_json)) as cli, \
+         patch('manufacturer_research.fetch_manufacturer_source', return_value={'source_type':'manufacturer_official', 'verified':True}) as fetch:
         result = research_selected([PRODUCT])
     assert len(result[0]['sources']) == 1
     assert fetch.call_args.args == (URL, PRODUCT)
-    assert '--search' in cli.call_args.args[0]
+    assert 'colima' in cli.call_args.args[0][0]
+    assert 'vm_official_search.py' in cli.call_args.args[0][-1]
+    assert '--search' not in cli.call_args.args[0]
     with patch('manufacturer_research.subprocess.run') as cli:
         assert research_selected([PRODUCT], cache_only=True) == [PRODUCT]
         cli.assert_not_called()
+
+
+def test_chrome_candidate_results_still_require_independent_source_validation():
+    result_json = json.dumps({'items': [{'asin': PRODUCT['asin'], 'urls': [
+        'https://untrusted.example/item', URL]}]})
+    def verify(url, product):
+        if url == URL:
+            return {'source_type': 'manufacturer_official', 'verified':True, 'excerpt':'source quote'}
+        return None
+    with patch('manufacturer_research.subprocess.run', return_value=Mock(returncode=0, stdout=result_json)), \
+         patch('manufacturer_research.fetch_manufacturer_source', side_effect=verify) as fetch:
+        result = research_selected([PRODUCT])
+    assert fetch.call_count == 2
+    assert result[0]['sources'][0]['excerpt'] == 'source quote'
+
+
+def test_chrome_failure_does_not_invent_manufacturer_evidence():
+    with patch('manufacturer_research.subprocess.run', return_value=Mock(returncode=1, stdout='')):
+        assert research_selected([PRODUCT]) == [PRODUCT]
+
+
+def test_wrong_product_asin_is_not_accepted_as_source_candidate():
+    result_json = json.dumps({'items': [{'asin': 'B098765432', 'urls':[URL]}]})
+    with patch('manufacturer_research.subprocess.run', return_value=Mock(returncode=0, stdout=result_json)), \
+         patch('manufacturer_research.fetch_manufacturer_source') as fetch:
+        assert research_selected([PRODUCT]) == [PRODUCT]
+        fetch.assert_not_called()
 
 
 def test_missing_brand_requires_model_company_and_host():
@@ -190,3 +214,14 @@ def test_official_escalation_researches_marketplace_only_source():
         codex.return_value = Mock(returncode=1, stdout='')
         assert research_selected([product], prefer_official=True) == [product]
     codex.assert_called_once()
+
+
+def test_only_public_https_url_candidates_are_forwarded_to_source_verifier():
+    result_json = json.dumps({'items': [{'asin': PRODUCT['asin'], 'urls': [
+        'https://127.0.0.1/admin', 'https://localhost/admin', 'https://10.1.2.3/admin',
+        'http://example.com/insecure', URL]}]})
+    with patch('manufacturer_research.subprocess.run', return_value=Mock(returncode=0, stdout=result_json)), \
+         patch('manufacturer_research.fetch_manufacturer_source', return_value={'source_type':'manufacturer_official','verified':True}) as fetch:
+        result=research_selected([PRODUCT])
+    fetch.assert_called_once_with(URL,PRODUCT)
+    assert len(result[0]['sources'])==1

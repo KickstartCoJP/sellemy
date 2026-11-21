@@ -61,7 +61,7 @@ def independent_plan_review(plan, payload, judge=None, *, evidence=None):
         'Do not claim evidence is absent when it is supplied. '
         'Do not create or rewrite article content.\nINPUT:\n'
     )
-    data = {'requirements':specific,'article':payload,'evidence': evidence or {},'plan_hash':digest(plan),
+    data = {'requirements':specific,'article':payload,'evidence': {k: v for k,v in (evidence or {}).items() if k != 'product_acceptance'},'plan_hash':digest(plan),
             'payload_hash':digest(payload)}
     receipt = judge(instruction + json.dumps(data,ensure_ascii=False))
     errors = validate_receipt(plan,payload,receipt)

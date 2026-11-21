@@ -12,6 +12,19 @@ from codex_provider import record_context_quality
 
 def reset_review_artifacts(slug: str) -> dict:
     """Revoke stale QA and publication approvals before any new writer attempt."""
+    # Capture only previously valid PASS findings; full old QA/CEO certificates
+    # are revoked before Writer can submit a new payload.
+    from claim_qa import make_input as claim_input, reuse_snapshot
+    prior = read_artifact(slug, 'independent-quality-receipts.json', {}) or {}
+    try:
+        snapshot = reuse_snapshot(claim_input(read_artifact(slug, 'payload.json'),
+                                             read_artifact(slug, 'evidence.json')),
+                                  prior.get('claim'))
+    except (ValueError,TypeError,KeyError):
+        snapshot = {}
+    if not snapshot:
+        snapshot = read_artifact(slug, 'claim-qa-reuse.json', {}) or {}
+    write_artifact(slug, 'claim-qa-reuse.json', snapshot)
     write_artifact(slug, 'qa-certification.json', {})
     write_artifact(slug, 'independent-quality-receipts.json', {})
     write_artifact(slug, 'chat-publish-approval.json', {})
@@ -165,10 +178,19 @@ def reviewer(slug: str, metadata: dict) -> dict:
                          failure_code='EDITORIAL_PLAN_REVIEW_UNAVAILABLE', reason=str(exc), role='review')
             raise GrowthRuntimeError(f'editorial plan reviewer unavailable for {slug}: {exc}') from exc
         try:
-            receipts = issue_receipts(payload, evidence, acceptance)
+            receipts = issue_receipts(payload, evidence, acceptance, prior_claim_snapshot=read_artifact(slug, 'claim-qa-reuse.json', {}))
             write_artifact(slug, 'independent-quality-receipts.json', receipts)
         except QualityGateError as exc:
             write_artifact(slug, 'independent-quality-receipts.json', {})
+            if exc.gate == 'claim' and getattr(exc, 'claim_receipt', None):
+                # Keep only individually validated claims from this failed QA;
+                # the current article remains failed and all approvals revoked.
+                from claim_qa import make_input as claim_input, reuse_snapshot, merge_reuse_snapshots
+                full_subject = claim_input(payload,evidence)
+                earlier = read_artifact(slug, 'claim-qa-reuse.json', {}) or {}
+                current = reuse_snapshot(exc.claim_subject,exc.claim_receipt)
+                write_artifact(slug, 'claim-qa-reuse.json',
+                               merge_reuse_snapshots(full_subject,earlier,current))
             if exc.gate in ('evidence', 'product'):
                 # This is an integrity failure in the frozen Product input,
                 # not authorization for Article QA to change the products.

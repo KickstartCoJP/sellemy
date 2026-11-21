@@ -50,3 +50,27 @@ def writer_feedback(feedback: dict | None) -> dict:
 def writer_evidence(evidence: dict) -> dict:
     """Keep all six product source records; omit the already completed Product QA."""
     return {k: v for k, v in evidence.items() if k != 'product_acceptance'}
+
+
+def writer_revision_evidence(evidence: dict, feedback: dict) -> dict:
+    """Review corrections need source text only for explicitly disputed products.
+
+    The accepted full six-product Evidence stays unchanged in the job store and
+    remains the sole source for subsequent Claim/Product QA and publication.
+    """
+    import re
+    compact = writer_evidence(evidence)
+    issues = []
+    gate = feedback.get('independent_quality_gate') or {}
+    issues.extend(gate.get('issues') or [])
+    issues.extend(feedback.get('review_findings') or [])
+    issues.extend(feedback.get('semantic_acceptance_issues') or [])
+    issue_text = ' '.join(str(item) for item in issues)
+    target_refs = {ref.lower() for ref in re.findall(r'(?<![A-Za-z0-9])p[1-6](?![0-9])',issue_text,re.I)}
+    products = []
+    for product in compact.get('products') or []:
+        item = dict(product)
+        if str(item.get('ref','')).lower() not in target_refs:
+            item.pop('sources',None)
+        products.append(item)
+    return {**compact, 'products':products}

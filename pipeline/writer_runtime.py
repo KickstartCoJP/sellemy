@@ -114,11 +114,13 @@ def _command() -> list[str]:
 
 def _prompt(topic: dict, evidence: dict, *, previous_payload: dict | None = None, gate_feedback: dict | None = None) -> str:
     from editorial_plan import build_editorial_plan
-    from qa_return import writer_feedback, writer_evidence
+    from qa_return import writer_feedback, writer_evidence, writer_revision_evidence
     gate_feedback = writer_feedback(gate_feedback)
-    evidence = writer_evidence(evidence)
     topic = {key: value for key, value in topic.items() if key != 'title'}
+    # The canonical plan/hash must always refer to FULL saved evidence, not the
+    # smaller Writer-only view used when correcting a specific QA defect.
     plan = build_editorial_plan(topic, evidence, str((gate_feedback or {}).get('ceo_rework') or ''))
+    evidence = writer_revision_evidence(evidence, gate_feedback) if previous_payload is not None else writer_evidence(evidence)
     prompt = (
         'あなたはSellemyの商品紹介記事を書く編集者です。構造化JSONのみを返してください。\\n\\n'
         '事実に基づいて各商品の特徴・使い道・向く読者を具体的に紹介してください。企画で確定した商品と割当を維持し、各商品の魅力と推薦理由を書いてください。\\n\\n'
@@ -137,7 +139,7 @@ def _prompt(topic: dict, evidence: dict, *, previous_payload: dict | None = None
         f'TOPIC:\n{json.dumps(topic, ensure_ascii=False, sort_keys=True)}\n\n'
         '3組の商品はEvidence.selection.axesの確定済み割当をそのまま使い、組をまたいで並べ替えないでください。選定理由は確認済み事実の範囲で商品の説明に反映してください。\n'
         f'EVIDENCE:\n{json.dumps(evidence, ensure_ascii=False, sort_keys=True)}'
-        '\nEDITORIAL_PLAN:\n' + json.dumps(plan, ensure_ascii=False, sort_keys=True)
+        '\nEDITORIAL_PLAN:\n' + json.dumps({key:value for key,value in plan.items() if key != 'products'}, ensure_ascii=False, sort_keys=True)
     )
     if previous_payload is not None and isinstance(gate_feedback, dict):
         measures = gate_feedback.get('measurements') or {}
