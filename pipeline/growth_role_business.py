@@ -145,7 +145,10 @@ def _product_queries(topic: dict):
         keywords = axis.get('keywords') or []
         if not keywords or not str(keywords[0]).strip():
             raise ProductSelectionError('product discovery axis lacks Amazon search keyword')
-        query = f'{base} {str(keywords[0]).strip()}'
+        # Popularity is measured by existing ratings/review counts, not by
+        # finding the literal word 'popular' in a technical specification.
+        theme = str(topic.get('product_theme') or base).strip()
+        query = (theme if topic.get('product_theme') else f'{base} {str(keywords[0]).strip()}') if axis.get('id') == 'popular' else f'{theme} {str(keywords[0]).strip()}'
         if query in queries:
             raise ProductSelectionError('product discovery axes produced duplicate search keywords')
         queries.append(query)
@@ -259,6 +262,40 @@ def collect_unique_products(topic: dict, *, cache_only: bool, existing: list[dic
                   'candidate_count': len(kept), 'complete': complete, 'attempts': attempts}
 
 
+def _replace_unproductive_axes(topic: dict, products: list[dict], *, cache_only: bool,
+                                prior_ids: set[str] | None = None) -> tuple[list[dict], list[dict]]:
+    """Swap an unproductive angle for a Planner-generated one; keep exactly 3 axes."""
+    if cache_only:
+        return products, []
+    from planning_runtime import propose_replacement_axis, PlanningError
+    changes = []
+    tried = set(prior_ids or []) | {a['id'] for a in topic['comparison_axes']}
+    for index, axis in enumerate(list(topic['comparison_axes'])):
+        if sum(p.get('discovery_axis_id') == axis['id'] for p in products) >= 2:
+            continue
+        # One new proposal for this unproductive angle in a single execution.
+        try:
+            replacement = propose_replacement_axis(topic, axis, tried_axis_ids=sorted(tried))
+            if replacement['id'] in tried:
+                raise PlanningError('replacement axis already attempted')
+            trial_topic = {**topic, 'comparison_axes': [
+                replacement if j == index else old for j, old in enumerate(topic['comparison_axes'])]}
+            current = [p for p in products if p.get('discovery_axis_id') != axis['id']]
+            found, trace = collect_unique_products(trial_topic, cache_only=cache_only, existing=current)
+            tried.add(replacement['id'])
+            changes.append({'from': axis['id'], 'to': replacement['id'],
+                            'found': sum(p.get('discovery_axis_id') == replacement['id'] for p in found),
+                            'attempts': trace['attempts']})
+            if sum(p.get('discovery_axis_id') == replacement['id'] for p in found) >= 2:
+                topic['comparison_axes'][index] = replacement
+                products = found
+            else:
+                changes[-1]['reason'] = 'replacement also insufficient; old axis preserved'
+        except (PlanningError, ProductSelectionError) as exc:
+            changes.append({'from': axis['id'], 'error': str(exc)})
+    return products, changes
+
+
 def _has_verified_product_source(product: dict) -> bool:
     return any(isinstance(source, dict) and source.get('verified') is True
                and str(source.get('excerpt') or '').strip()
@@ -303,6 +340,13 @@ def select_viable_topic(
             tried_slugs.add(topic['slug'])
             try:
                 products, discovery_trace = collect_unique_products(topic, cache_only=cache_only)
+                if not discovery_trace['complete']:
+                    products, swaps = _replace_unproductive_axes(topic, products, cache_only=cache_only)
+                    if swaps:
+                        discovery_trace['axis_replacements'] = swaps
+                    discovery_trace['complete'] = all(
+                        sum(p.get('discovery_axis_id') == axis['id'] for p in products) >= 2
+                        for axis in topic['comparison_axes'])
                 probes.append({'round': round_index + 1, 'slug': topic['slug'], 'candidate_count': len(products), 'discovery': discovery_trace, 'error': ''})
             except Exception as exc:
                 products, discovery_trace = [], {'complete': False, 'attempts': []}
@@ -698,6 +742,15 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
                 rejected_asins=excluded)
             pool = replenished
             tried.extend(search_trace['attempts'])
+            if not search_trace['complete']:
+                old_ids = {x.get('to') for x in tried if x.get('event') in ('axis_replaced', 'axis_replacement_attempt') and x.get('to')}
+                pool, swaps = _replace_unproductive_axes(topic, pool, cache_only=cache_only,
+                                                           prior_ids=old_ids)
+                for change in swaps:
+                    tried.append({'event':'axis_replaced' if change.get('to') and change.get('found', 0) >= 2
+                                  else 'axis_replacement_attempt', **change})
+                if any(x.get('event') == 'axis_replaced' for x in tried):
+                    write_artifact(slug, 'topic.json', topic)
             researched_asins.update(p['asin'] for p in pool)
             save_progress()
         available = [p for p in pool if p.get('asin') not in excluded

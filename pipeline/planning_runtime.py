@@ -56,6 +56,40 @@ def _with_popular_axis(topic: dict) -> dict:
     return {**topic, 'comparison_axes': [dict(POPULAR_AXIS), *axes]}
 
 
+def propose_replacement_axis(topic: dict, failed_axis: dict, *, tried_axis_ids: list[str]) -> dict:
+    """Ask the existing Planner for one genuinely new product-discovery angle."""
+    schema = {'type': 'object', 'additionalProperties': False,
+              'required': ['axis'], 'properties': {'axis': {
+                  'type': 'object', 'additionalProperties': False,
+                  'required': ['id', 'label', 'keywords'], 'properties': {
+                      'id': {'type': 'string', 'minLength': 3},
+                      'label': {'type': 'string', 'minLength': 4},
+                      'keywords': {'type': 'array', 'minItems': 1, 'maxItems': 4,
+                                   'items': {'type': 'string', 'minLength': 2}}}}}}
+    prompt = ('Sellemy Planner: one of the product-discovery angles yielded fewer than two distinct products. '
+              'Return exactly ONE new angle and its precise Amazon keyword, preserving the product class '
+              'and the intended reader. Do not reuse any existing or failed axis. '
+              'Do not create a new topic, slug, category or article. Output only the schema JSON. '
+              + json.dumps({'product_theme':topic.get('product_theme'),
+                            'intent_key':topic.get('intent_key'),
+                            'reader_persona':topic.get('reader_persona'),
+                            'existing_axes':topic.get('comparison_axes'),
+                            'failed_axis':failed_axis,
+                            'forbidden_axis_ids':tried_axis_ids},ensure_ascii=False))
+    kind, command, model, _ = _planning_provider('primary')
+    result = _invoke_planning(kind, command, model, prompt,
+                              int(os.environ.get('SELLEMY_PLANNING_TIMEOUT_SECONDS', '300')),
+                              schema=schema)
+    axis = result.get('axis') if isinstance(result, dict) else None
+    if (not isinstance(axis, dict) or not all(axis.get(k) for k in ('id','label','keywords'))
+            or not isinstance(axis.get('keywords'), list)
+            or not str(axis['keywords'][0]).strip()
+            or axis['id'] in tried_axis_ids
+            or axis['label'] in [x.get('label') for x in topic.get('comparison_axes', [])]):
+        raise PlanningError('replacement axis duplicates an existing angle or is incomplete')
+    return {k: axis[k] for k in ('id', 'label', 'keywords')}
+
+
 class PlanningError(RuntimeError):
     pass
 
