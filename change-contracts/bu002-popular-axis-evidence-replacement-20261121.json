@@ -1,0 +1,26 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "CEO-CHAT-BU002-POPULAR-AXIS-REPLACE-20261121",
+  "instruction_ref": "CEO direct 2026-11-21: 「なんで人気と定番に根拠がいるんだ。。」「それは外して、追加で、切り口によって取得できない場合は新たな切り口を追加で。」",
+  "instruction": "Popularity/standard axis must be discovered via existing ratings and review-count signal, without an additional manufacturer-specification proof of popularity or literal popularity search keyword. If a discovery angle yields fewer than 2 evidenced article products, ask existing Planner for a new distinct angle and search that instead, replacing the unproductive angle only if the new angle supplies 2 evidenced products. Preserve three final angles and 6 unique article products, source-backed article claims and independent QA.",
+  "implementer": "Direct Mac Studio staging edits; no Codex modifications",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3"
+  ],
+  "allowed_paths": [
+    "change-contracts/bu002-popular-axis-evidence-replacement-20261121.json",
+    "pipeline/growth_role_business.py",
+    "pipeline/planning_runtime.py",
+    "tests/test_popular_axis_replacement_20261121.py"
+  ],
+  "preserved_rules": [
+    "Popularity is judged by already existing Amazon ratings/reviews filter, without new popularity proof requirement",
+    "Product article factual assertions remain source backed and independently reviewed; never invent claims",
+    "Three unique fixed-size final groups of two, with dynamic replacement of deficient angle only",
+    "Existing discovery retry limits, planner provider policy, QA, CEO approval and publication gates remain unchanged",
+    "No new scheduling queue, status or automatic terminal-failure reset"
+  ],
+  "acceptance_tests": [
+    "tests/test_popular_axis_replacement_20261121.py"
+  ]
+}
