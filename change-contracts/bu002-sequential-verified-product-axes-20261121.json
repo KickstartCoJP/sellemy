@@ -1,0 +1,30 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "CEO-CHAT-BU002-SEQUENTIAL-EVIDENCE-AXIS-TRANSFER-20261121",
+  "instruction_ref": "CEO direct 2026-11-21: 「1件ずつ根拠を調べて、根拠ありのものを採用。これを最大10件。」「切り口で重複があってその切り口のみ不足する場合は移動可。」「それで改修を。」",
+  "instruction": "Discover products individually within each of three Planner-fixed axes. Each found listing gets verified source evidence before admission; only evidenced products count against the 10-per-axis admission cap. If a duplicate occurs in another axis, allow transfer only after search if that destination is short of the required 2 products and the original axis retains at least 2. Keep 3x2 final selection and independent QA. Apply also to existing Product Role reselection, without bypassing CEO/quality gates.",
+  "implementer": "Direct Mac Studio staging edits; no Codex modifications",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3"
+  ],
+  "allowed_paths": [
+    "change-contracts/bu002-sequential-verified-product-axes-20261121.json",
+    "pipeline/growth_role_business.py",
+    "tests/test_sequential_evidenced_axis_discovery_20261121.py",
+    "tests/test_strict_unique_collection.py",
+    "tests/test_ceo_review_replanning_20261118.py",
+    "tests/test_three_axis_discovery_selection.py"
+  ],
+  "preserved_rules": [
+    "Three Planner axes; selection of exactly two unique evidenced products per axis and six total",
+    "Product ratings >=4.0 and reviews >=100 and existing deduplication filters, source quote quality and independent review remain unchanged",
+    "Existing retry count, scheduling limits, CEO review, staging release, and publishing gates remain unchanged",
+    "No automatic reopening of terminal failed jobs or production publication without CEO authorization"
+  ],
+  "acceptance_tests": [
+    "tests/test_sequential_evidenced_axis_discovery_20261121.py",
+    "tests/test_three_axis_discovery_selection.py",
+    "tests/test_strict_unique_collection.py",
+    "tests/test_ceo_review_replanning_20261118.py"
+  ]
+}
