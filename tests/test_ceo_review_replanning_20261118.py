@@ -182,6 +182,7 @@ def test_search_contract_separates_30_candidates_from_6_article_products():
     import inspect
     source=inspect.getsource(collect_unique_products)
     assert "count >= 10" in source
-    assert "'_max_products': 10 - count" in source
+    assert "'_max_products': 30" in source
+    assert "_verified_product(candidate, cache_only=cache_only)" in source
     assert "max_searches: int = 3" in source
     assert 'len(kept) == 6' not in source

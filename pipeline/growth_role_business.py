@@ -94,7 +94,7 @@ def discover_products(topic: dict, *, cache_only: bool) -> list[dict]:
     adapter = AutositeDiscoveryAdapter()
     rows = adapter.search_cache(topic['query'], limit=30) if cache_only else adapter.search_amazon_live(product_search_query(topic), limit=30)
     excluded = set(topic.get('_exclude_asins') or [])
-    max_products = min(int(topic.get('_max_products', 10)), 10) if not cache_only else 30
+    max_products = min(int(topic.get('_max_products', 10)), 30) if not cache_only else 30
     candidates, seen = [], set()
     for row in rows[:30] if not cache_only else rows:
         asin = (row.get('asin') or '').upper()
@@ -117,7 +117,7 @@ def discover_products(topic: dict, *, cache_only: bool) -> list[dict]:
         })
         if len(candidates) >= max_products:
             break
-    if not cache_only and candidates:
+    if not cache_only and candidates and not topic.get('_raw_only'):
         def verified_source(candidate):
             try:
                 return fetch_amazon_item_source(candidate['asin'], candidate['amazon_title'])
@@ -152,58 +152,117 @@ def _product_queries(topic: dict):
     return queries
 
 
+def _verified_product(candidate: dict, *, cache_only: bool) -> dict | None:
+    """Inspect one discovered product before adding it to an axis candidate pool."""
+    if cache_only:
+        return candidate
+    existing = [source for source in candidate.get('sources') or []
+                if isinstance(source, dict) and source.get('verified') is True
+                and str(source.get('excerpt') or '').strip()]
+    if existing:
+        return candidate
+    try:
+        source = fetch_amazon_item_source(candidate['asin'], candidate['amazon_title'])
+    except Exception:
+        source = None
+    if isinstance(source, dict) and source.get('verified') is True and str(source.get('excerpt') or '').strip():
+        return {**candidate, 'brand': source.get('brand') or candidate.get('brand', ''),
+                'sources': [source], 'provisional': False}
+    # An unverified marketplace listing is not a candidate. Try the existing
+    # manufacturer-source lookup for this single product before rejecting it.
+    examined = research_selected([{**candidate, 'sources': list(candidate.get('sources') or [])}],
+                                 prefer_official=True)
+    item = examined[0] if examined else candidate
+    return item if any(isinstance(src, dict) and src.get('verified') is True
+                       and str(src.get('excerpt') or '').strip()
+                       for src in item.get('sources') or []) else None
+
+
 def collect_unique_products(topic: dict, *, cache_only: bool, existing: list[dict] | None = None,
                             target_new: int = 6, used_queries: set[str] | None = None,
                             max_searches: int = 3, rejected_asins: set[str] | None = None) -> tuple[list[dict], dict]:
-    """Collect up to 10 candidates per axis; select final 2 per axis later.
+    """Verify each found product before admission; cap at 10 evidenced items per axis.
 
-    A lack of optional source excerpts is recorded for Product QA, not used to
-    silently truncate the candidate pool to exactly six items.
+    A duplicate may change axis only to fill a deficient axis (fewer than two)
+    while leaving at least two evidenced items on its original axis.
     """
-    kept, _ = dedupe_content_products(list(existing or []))
     axes = topic['comparison_axes']
     axis_ids = {axis['id'] for axis in axes}
-    excluded_prior = {p['asin'] for p in kept}
-    kept = [p for p in kept if p.get('discovery_axis_id') in axis_ids]
-    rejected = set(rejected_asins or []) | (excluded_prior - {p['asin'] for p in kept})
+    original, _ = dedupe_content_products(list(existing or []))
+    kept = [p for p in original if p.get('discovery_axis_id') in axis_ids
+            and (cache_only or _has_verified_product_source(p))]
+    rejected = set(rejected_asins or [])
     retained_count = len(kept)
     attempts = []
+    cross_axis_duplicates = {axis['id']: set() for axis in axes}
+    examined_asins = {p['asin'] for p in kept} | rejected
     for axis, query in zip(axes, _product_queries(topic)):
         axis_id = axis['id']
         for retry in range(min(max_searches, 3) + 1):
             count = sum(p.get('discovery_axis_id') == axis_id for p in kept)
             if count >= 10:
                 break
-            excluded = rejected | {p['asin'] for p in kept}
             try:
-                candidates = discover_products({**topic, 'query': query,
-                    '_exclude_asins': sorted(excluded), '_max_products': 10 - count},
-                    cache_only=cache_only)
-                new = 0
-                for candidate in candidates:
+                # Search results are NOT admitted candidates. Review the found
+                # products sequentially, stopping at ten evidenced admissions.
+                discoveries = discover_products({**topic, 'query': query,
+                    '_exclude_asins': sorted(rejected), '_max_products': 30,
+                    '_raw_only': not cache_only}, cache_only=cache_only)
+                admitted = 0
+                for candidate in discoveries:
                     if sum(p.get('discovery_axis_id') == axis_id for p in kept) >= 10:
                         break
-                    if candidate.get('asin') in excluded:
+                    asin = candidate.get('asin')
+                    other = next((p for p in kept if p['asin'] == asin), None)
+                    if other:
+                        if other['discovery_axis_id'] != axis_id:
+                            cross_axis_duplicates[axis_id].add(asin)
                         continue
-                    distinct, _ = dedupe_content_products([*kept, candidate])
-                    if len(distinct) == len(kept):
-                        rejected.add(candidate['asin'])
+                    if asin in examined_asins:
                         continue
-                    kept.append({**candidate, 'discovery_axis_id': axis_id})
-                    excluded.add(candidate['asin'])
-                    new += 1
+                    examined_asins.add(asin)
+                    product = _verified_product(candidate, cache_only=cache_only)
+                    if product is None:
+                        continue
+                    distinct, _ = dedupe_content_products([*kept, product])
+                    if len(distinct) != len(kept) + 1:
+                        continue
+                    kept.append({**product, 'discovery_axis_id': axis_id})
+                    admitted += 1
+                count = sum(p.get('discovery_axis_id') == axis_id for p in kept)
                 attempts.append({'axis_id': axis_id, 'query': query, 'retry': retry,
-                                 'found': len(candidates), 'new': new,
-                                 'candidate_count': sum(p.get('discovery_axis_id') == axis_id for p in kept),
-                                 'complete': sum(p.get('discovery_axis_id') == axis_id for p in kept) >= 2})
+                                 'found': len(discoveries), 'new': admitted,
+                                 'moved': 0, 'candidate_count': count,
+                                 'complete': count >= 2})
             except Exception as exc:
                 attempts.append({'axis_id': axis_id, 'query': query, 'retry': retry,
                                  'found': 0, 'new': 0, 'complete': False,
                                  'error': f'{type(exc).__name__}: {exc}'})
-    complete = all(sum(p.get('discovery_axis_id') == a['id'] for p in kept) >= 2
-                   for a in axes)
+    # Reassignment happens only after all searches have finished: a duplicate
+    # discovered during collection is not grounds for premature movement.
+    for axis in axes:
+        target = axis['id']
+        for asin in sorted(cross_axis_duplicates[target]):
+            if sum(p.get('discovery_axis_id') == target for p in kept) >= 2:
+                break
+            product = next((p for p in kept if p['asin'] == asin), None)
+            if not product:
+                continue
+            origin = product['discovery_axis_id']
+            if sum(p.get('discovery_axis_id') == origin for p in kept) <= 2:
+                continue
+            product['discovery_axis_id'] = target
+            attempts.append({'axis_id': target, 'event': 'deficient_axis_duplicate_transfer',
+                             'asin': asin, 'from_axis_id': origin, 'moved': 1})
+    complete = all(sum(p.get('discovery_axis_id') == a['id'] for p in kept) >= 2 for a in axes)
     return kept, {'added_unique': len(kept) - retained_count,
                   'candidate_count': len(kept), 'complete': complete, 'attempts': attempts}
+
+
+def _has_verified_product_source(product: dict) -> bool:
+    return any(isinstance(source, dict) and source.get('verified') is True
+               and str(source.get('excerpt') or '').strip()
+               for source in product.get('sources') or [])
 
 
 def replenish_products(topic: dict, products: list[dict], *, cache_only: bool,
@@ -248,7 +307,7 @@ def select_viable_topic(
             except Exception as exc:
                 products, discovery_trace = [], {'complete': False, 'attempts': []}
                 probes.append({'round': round_index + 1, 'slug': topic['slug'], 'candidate_count': 0, 'error': f'{type(exc).__name__}: {exc}'})
-            if len(products) == 6 and discovery_trace['complete']:
+            if len(products) >= 6 and discovery_trace['complete']:
                 try:
                     # Source fetch failure is a recorded unknown, not a planning veto.
                     unavailable = [p['asin'] for p in products if not any(
@@ -629,10 +688,20 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
             save_progress()
             request_product_reselection(slug, ['exact evidence unchanged from rejected review'])
             raise GrowthRuntimeError(f'exact evidence unchanged for {slug}')
+        # Existing searches may have stopped at ten unverified listings.
+        # Replenish the evidenced pool before declaring the topic exhausted.
+        evidenced = [p for p in pool if _has_verified_product_source(p)]
+        if any(sum(p.get('discovery_axis_id') == axis['id'] for p in evidenced) < 2
+               for axis in topic['comparison_axes']):
+            replenished, search_trace = collect_unique_products(
+                topic, cache_only=cache_only, existing=evidenced,
+                rejected_asins=excluded)
+            pool = replenished
+            tried.extend(search_trace['attempts'])
+            researched_asins.update(p['asin'] for p in pool)
+            save_progress()
         available = [p for p in pool if p.get('asin') not in excluded
-                     and any(isinstance(source, dict) and source.get('verified') is True
-                             and str(source.get('excerpt') or '').strip()
-                             for source in p.get('sources') or [])]
+                     and _has_verified_product_source(p)]
         feedback = load_feedback()
         # Preserve products passing independent QA and exact source-anchor checks.
         # Failed products alone are replaced; an unchanged rejected set is never retried.

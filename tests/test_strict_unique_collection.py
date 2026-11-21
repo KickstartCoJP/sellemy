@@ -8,7 +8,8 @@ import growth_role_business as g
 
 def _p(i):
     return {'asin':f'B{i:09d}','amazon_title':f'item {i}',
-            'image_url':f'https://example.com/{i}.jpg','sources':[]}
+            'image_url':f'https://example.com/{i}.jpg',
+            'sources':[{'verified':True,'excerpt':f'product model {i} confirmed specification'}]}
 
 
 def _topic(query):
@@ -26,9 +27,9 @@ def test_initial_collection_keeps_six_new_products():
     with patch.object(g,'discover_products',side_effect=[first,second,third]) as search:
         added,receipt=g.collect_unique_products(_topic('SDカード 比較'),cache_only=False,existing=previous)
     assert receipt['complete'] is True
-    assert receipt['added_unique']==6
-    assert len(added)==6
-    assert len({p['asin'] for p in [*previous,*added]})==24
+    assert receipt['added_unique']==30
+    assert len(added)==30
+    assert len({p['asin'] for p in [*previous,*added]})==33
     assert search.call_count==3
     assert [row['axis_id'] for row in receipt['attempts']]==['small','fast','light']
     assert all('比較' not in call.args[0]['query'] for call in search.call_args_list)
@@ -37,7 +38,7 @@ def test_initial_collection_keeps_six_new_products():
 def test_insufficient_unique_does_not_pass_batch():
     with patch.object(g,'discover_products',return_value=[_p(0)]) as search:
         added,receipt=g.collect_unique_products(_topic('シャンプー 比較'),cache_only=False,existing=[_p(0)])
-    assert added==[]
+    assert len(added)==1
     assert receipt['complete'] is False
-    assert receipt['added_unique']==0
+    assert receipt['added_unique']==1
     assert search.call_count==12
