@@ -7,7 +7,7 @@ from __future__ import annotations
 import json,re,unicodedata
 from datetime import datetime,timezone
 from pathlib import Path
-from safety_government_feed import full_registry, cached_registry, GovernmentFeedUnavailable
+from safety_government_feed import combined_registry, cached_combined_registry, GovernmentFeedUnavailable
 
 from growth_recovery import STATE_ROOT
 
@@ -53,31 +53,54 @@ def catalog_matches(product):
             and known_brand]
 
 
-def _matched_official(product,official):
-    """Match only concrete product identity; no unqualified manufacturer hit."""
+def _product_models(product):
+    """Full SKU/JAN or distinctive named series; never dates, size or brand alone."""
     title=str(product.get('amazon_title') or product.get('title') or '')
-    brand=str(product.get('brand') or '')
+    explicit=[str(product.get(key) or '').strip() for key in
+              ('model','model_number','jan','jan_code','ean','ean_code')]
+    code=re.findall(r'(?<![A-Za-z0-9-])[A-Za-z]{1,8}(?:-[A-Za-z]{1,8})?[- ]?\d{2,}[A-Za-z0-9-]*(?![A-Za-z0-9])',title)
+    # Retail SKUs also include digit-leading 43E50S and short hyphenated RAO-3.
+    code+=re.findall(r'(?<![A-Za-z0-9-])\d{2,4}[A-Za-z]{1,8}\d{1,8}[A-Za-z0-9-]*(?![A-Za-z0-9])',title)
+    code+=re.findall(r'(?<![A-Za-z0-9-])[A-Za-z]{2,8}-\d[A-Za-z0-9-]*(?![A-Za-z0-9])',title)
+    # Model prefixes such as NH-D503 must not be reduced to generic D503.
+    series=re.findall(r'(?<![A-Za-z0-9])[A-Za-z]{4,}\s+\d{1,4}(?![A-Za-z0-9])',title)
+    jan=re.findall(r'(?<![0-9])\d{13}(?![0-9])',title)
+    brand=normalize(product.get('brand'))
+    return list(dict.fromkeys(v for v in explicit+code+series+jan
+        if len(normalize(v))>=4 and normalize(v)!=brand))
+
+
+def _brand_evidence(product,official):
+    """A short generic SKU must be anchored to the manufacturer or brand."""
+    manufacturer=normalize(official.get('manufacturer') or '')
+    body=normalize(official.get('text') or '')
+    title=normalize(product.get('amazon_title') or '')
+    brand=normalize(product.get('brand') or '')
+    # A brand may be different from the legal importing entity, so title
+    # fragments give an additional conservative clue.
+    candidates=[brand]
+    first=re.split(r'\s|（|\(|\[|【',title)[0]
+    if first and len(first)>=3:candidates.append(first)
+    return any(c and len(c)>=3 and (c in manufacturer or c in body)
+               for c in candidates)
+
+
+def _matched_official(product,official,*,models=None,known=None,prepared=None):
     content=str(official.get('text') or '')
-    # An exact model identifier is stronger than a generic category/brand.
-    model_tokens=re.findall(r'(?<![A-Za-z0-9])(?:[A-Za-z]{1,8}-)?[A-Za-z0-9-]*\d[A-Za-z0-9-]{2,}(?![A-Za-z0-9])',
-                           unicodedata.normalize('NFKC',title))
-    model_tokens=[v for v in model_tokens if len(v)>=4]
-    for token in model_tokens:
-        if contains_model(content,token):return token
-    # Named retail series can have model numbers absent from its Amazon title.
-    # Require a compound distinctive series, not merely an importer name.
-    words=re.findall(r'[A-Za-z]{3,}|[0-9]{1,8}[A-Za-z0-9-]*',title)
-    for size in (3,2):
-        for i in range(len(words)-size+1):
-            part=words[i:i+size]
-            if not any(re.search(r'\d',w) for w in part):continue
-            token=' '.join(part)
-            if len(token)>=7 and contains_model(content,token):return token
-    # Official catalog-known models remain authoritative even when a page
-    # lists a longer variant number (e.g. A3117011 for Soundcore 3).
-    for match in catalog_matches(product):
-        if any(contains_model(content,x) for x in match['models']):
-            return match['models'][0]
+    normalized=prepared if prepared is not None else normalize(content)
+    if models is None:models=_product_models(product)
+    for token in models:
+        term=normalize(token)
+        unique=(len(re.sub(r'[^a-z0-9]','',term))>=9 and
+                bool(re.search(r'[a-z]',term)) and bool(re.search(r'\d',term)))
+        jan=bool(re.fullmatch(r'\d{13}',term))
+        if term in normalized and (unique or jan or _brand_evidence(product,official)) and contains_model(content,token):
+            return token
+    if known is None:known=catalog_matches(product)
+    for match in known:
+        for token in match['models']:
+            if normalize(token) in normalized and contains_model(content,token):
+                return token
     return None
 
 
@@ -90,26 +113,28 @@ def scan_products(products,*,live=True,cache_path=None,now=None,registry=None):
     now=now or datetime.now(timezone.utc)
     if registry is None:
         try:
-            registry=full_registry() if live else cached_registry()
+            registry=combined_registry() if live else cached_combined_registry()
         except GovernmentFeedUnavailable:
             registry=None
     complete=bool(registry and registry.get('complete') is True and registry.get('details')
                   and len(registry['details'])==registry.get('count'))
+    result_details=[(entry,normalize(entry.get('text') or '')) for entry in registry['details']] if complete else []
     results=[]
     for p in products:
         asin=p['asin']
         known=catalog_matches(p)
+        models=_product_models(p)
         signals=[{**v,'source_type':'official_recall_catalog'} for v in known]
         if complete:
-            for official in registry['details']:
-                match=_matched_official(p,official)
+            for official,prepared in result_details:
+                match=_matched_official(p,official,models=models,known=known,prepared=prepared)
                 if match:
                     signals.append({'asin':asin,'status':'POTENTIAL_RECALL',
                         'source':official['source'],'notice_id':official['id'],
                         'model':match,'excerpt':official['text'][:1800],
                         'reason':'official NITE recall notice contains the model; verify exact serial/date scope',
                         'manufacturer_notice_candidates':official.get('manufacturer_notice_candidates',[]),
-                        'source_type':'NITE_SAFE_LITE'})
+                        'source_type':official.get('source_type','NITE_SAFE_LITE')})
         status=('RECALL' if known else 'POTENTIAL_RECALL' if signals else
                 'NO_OFFICIAL_SIGNAL' if complete else 'NOT_CHECKED')
         results.append({'asin':asin,'status':status,'signals':signals,

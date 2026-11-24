@@ -163,22 +163,27 @@ def full_registry(*,index_path=INDEX_PATH,details_path=DETAILS_PATH,session=None
     missing=[item for item in index['items'] if item['id'] not in stored]
     if limit is not None:missing=missing[:limit]
     errors=[]
+    def save_progress():
+        details_path.parent.mkdir(parents=True,exist_ok=True)
+        with tempfile.NamedTemporaryFile('w',encoding='utf-8',dir=details_path.parent,delete=False) as handle:
+            json.dump({'schema':'sellemy-nite-details/v1','details':stored},handle,ensure_ascii=False)
+            tmp=Path(handle.name)
+        tmp.replace(details_path)
     def fetch(row):
-        try:
-            # Requests Session is not shared across concurrent workers.
-            return row['id'],detail(row,session=session if session is not None else requests.Session()),None
-        except GovernmentFeedUnavailable as exc:
-            return row['id'],None,str(exc)
-    if missing:
-        with ThreadPoolExecutor(max_workers=4) as executor:
-            for identifier,notice,error in executor.map(fetch,missing):
+        for attempt in range(3):
+            try:
+                # Requests Session is not shared across concurrent workers.
+                return row['id'],detail(row,session=session if session is not None else requests.Session()),None
+            except GovernmentFeedUnavailable as exc:
+                error=str(exc)
+        return row['id'],None,error
+    for start in range(0,len(missing),40):
+        chunk=missing[start:start+40]
+        with ThreadPoolExecutor(max_workers=6) as executor:
+            for identifier,notice,error in executor.map(fetch,chunk):
                 if error:errors.append(error)
                 elif notice:stored[identifier]=notice
-    details_path.parent.mkdir(parents=True,exist_ok=True)
-    with tempfile.NamedTemporaryFile('w',encoding='utf-8',dir=details_path.parent,delete=False) as handle:
-        json.dump({'schema':'sellemy-nite-details/v1','details':stored},handle,ensure_ascii=False)
-        tmp=Path(handle.name)
-    tmp.replace(details_path)
+        save_progress()
     requested={item['id'] for item in index['items']}
     missing_ids=requested-set(stored)
     if missing_ids:
@@ -203,4 +208,141 @@ def cached_registry(*,index_path=INDEX_PATH,details_path=DETAILS_PATH,now=None):
         return {'source':index['source'],'checked_at':index['checked_at'],
                 'count':index['count'],'complete':True,
                 'details':[stored[x['id']] for x in rows]}
+    except (OSError,ValueError,KeyError,TypeError):return None
+
+CAA_BASE='https://www.recall.caa.go.jp'
+CAA_INDEX_PATH=STATE_ROOT/'government-caa-recalls.json'
+
+
+CAA_PARTIAL_PATH=STATE_ROOT/'government-caa-recalls-pages.json'
+
+
+def caa_registry(*,path=CAA_INDEX_PATH,now=None,force=False,runner=None,
+                 partial_path=CAA_PARTIAL_PATH,script_path=None):
+    """Read all official priority/new rows with resumable, exact page counts."""
+    now=now or datetime.now(timezone.utc)
+    try:
+        prior=json.loads(path.read_text(encoding='utf-8'))
+        updated=datetime.fromisoformat(prior['checked_at'])
+        if (prior.get('complete') and len(prior.get('details',[]))==prior.get('count')
+                and updated>=now-timedelta(hours=24) and not force):
+            return prior
+    except (OSError,KeyError,ValueError,TypeError):pass
+    import subprocess
+    script=script_path or Path(__file__).with_name('vm_caa_recall_feed.py')
+    runner=runner or subprocess.run
+    try:
+        progress=json.loads(partial_path.read_text(encoding='utf-8'))
+        if datetime.fromisoformat(progress['started_at'])<now-timedelta(hours=8):
+            progress={}
+    except (OSError,ValueError,KeyError,TypeError):progress={}
+    pages=progress.get('pages',{})
+    def fetch(screen,page_index):
+        cmd=['/opt/homebrew/bin/colima','ssh','--','xvfb-run','-a',
+             '/home/kickstart.guest/.ai-role-playwright/bin/python',str(script),
+             '--screen',screen,'--page',str(page_index)]
+        try:
+            outcome=runner(cmd,capture_output=True,text=True,check=False,timeout=180)
+            if outcome.returncode:
+                raise GovernmentFeedUnavailable('CAA browser error: '+outcome.stderr[-260:])
+            result=json.loads(outcome.stdout)
+            total=int(result['count']);rows=result['rows']
+            if (result['screen']!=screen or result['page']!=page_index or
+                    not isinstance(rows,list) or
+                    len(rows)!=max(0,min(60,total-page_index*60))):
+                raise GovernmentFeedUnavailable('CAA incomplete returned page')
+            return result
+        except (OSError,ValueError,KeyError,TypeError,subprocess.TimeoutExpired) as exc:
+            raise GovernmentFeedUnavailable('CAA page retrieval failed: '+str(exc)[:240]) from exc
+    def checkpoint():
+        partial_path.parent.mkdir(parents=True,exist_ok=True)
+        with tempfile.NamedTemporaryFile('w',encoding='utf-8',dir=partial_path.parent,delete=False) as handle:
+            json.dump({'started_at':progress.setdefault('started_at',now.isoformat()),
+                       'pages':pages},handle,ensure_ascii=False)
+            tmp=Path(handle.name)
+        tmp.replace(partial_path)
+    for screen in ('02','03'):
+        # Always recheck page zero: it controls the official total count.
+        first=fetch(screen,0)
+        count=first['count']
+        keys=[k for k in pages if k.startswith(screen+':')]
+        # A same-size official list can still have new or amended notices.
+        # Never combine yesterday's later pages with a changed first page.
+        prior_first=pages.get(screen+':0') or {}
+        if (any(pages[k].get('count')!=count for k in keys)
+                or prior_first.get('rows')!=first['rows']):
+            for k in keys:pages.pop(k,None)
+        pages[screen+':0']=first
+        checkpoint()
+        for page_index in range(1,(count+59)//60):
+            key=f'{screen}:{page_index}'
+            if key not in pages:
+                result=fetch(screen,page_index)
+                if result['count']!=count:
+                    for k in list(pages):
+                        if k.startswith(screen+':'):pages.pop(k,None)
+                    checkpoint()
+                    raise GovernmentFeedUnavailable('CAA count changed during collection')
+                pages[key]=result
+                checkpoint()
+        items=[row for page_index in range((count+59)//60)
+               for row in pages[f'{screen}:{page_index}']['rows']]
+        if len(items)!=count or len({x['url'] for x in items})!=count:
+            raise GovernmentFeedUnavailable('CAA duplicate/missing records across pages')
+    notices={}
+    for page in pages.values():
+        for row in page['rows']:
+            url=row.get('url') or ''
+            if not url.startswith(CAA_BASE+'/result/detail.php?') or not row.get('title'):
+                raise GovernmentFeedUnavailable('CAA invalid official URL')
+            notices[url]={'id':'caa-'+url.split('rcl=',1)[-1].split('&',1)[0],
+                          'source':url,'text':row['title'],'date':row.get('published'),
+                          'manufacturer':'','source_type':'CAA',
+                          'category':row.get('category')}
+    try:
+        previous=json.loads(path.read_text(encoding='utf-8'))
+        if previous.get('complete') is True:
+            for old in previous.get('details',[]):
+                if isinstance(old,dict) and old.get('source'):
+                    notices.setdefault(old['source'],old)
+    except (OSError,ValueError,TypeError):pass
+    result={'schema':'sellemy-caa-official-recalls/v1',
+            'source':CAA_BASE+'/result/index.php',
+            'checked_at':now.isoformat(),'complete':True,
+            'count':len(notices),'details':list(notices.values())}
+    path.parent.mkdir(parents=True,exist_ok=True)
+    with tempfile.NamedTemporaryFile('w',encoding='utf-8',dir=path.parent,delete=False) as handle:
+        json.dump(result,handle,ensure_ascii=False)
+        tmp=Path(handle.name)
+    tmp.replace(path)
+    partial_path.unlink(missing_ok=True)
+    return result
+
+
+def combined_registry(*,now=None):
+    """NITE full notice corpus + CAA priority/new official registrations."""
+    nite=full_registry(now=now)
+    caa=caa_registry(now=now)
+    return {'source':[nite['source'],caa['source']],
+            'checked_at':min(nite['checked_at'],caa['checked_at']),
+            'complete':True,'count':nite['count']+caa['count'],
+            'source_counts':{'NITE':nite['count'],'CAA':caa['count']},
+            'details':nite['details']+caa['details']}
+
+
+def cached_combined_registry(*,now=None):
+    nite=cached_registry(now=now)
+    if nite is None:return None
+    now=now or datetime.now(timezone.utc)
+    try:
+        caa=json.loads(CAA_INDEX_PATH.read_text(encoding='utf-8'))
+        updated=datetime.fromisoformat(caa['checked_at'])
+        if (not caa['complete'] or len(caa['details'])!=caa['count'] or
+                updated<now-timedelta(hours=24)):
+            return None
+        return {'source':[nite['source'],caa['source']],
+                'checked_at':min(nite['checked_at'],caa['checked_at']),
+                'complete':True,'count':nite['count']+caa['count'],
+                'source_counts':{'NITE':nite['count'],'CAA':caa['count']},
+                'details':nite['details']+caa['details']}
     except (OSError,ValueError,KeyError,TypeError):return None
