@@ -189,21 +189,25 @@ def duplicate_pair_issues(review, evidence):
             issues.append('duplicate pair duplicated or not requested')
         used.add(key)
         items = pair.get('items')
-        needed = {name for name, status in expected_rows.get(key, {}).get('items', {}).items() if status == 'UNKNOWN'}
-        if not isinstance(items, list) or len(items) != len(needed) or {v.get('item') for v in items if isinstance(v,dict)} != needed:
-            issues.append(f'{a}/{b}: incomplete duplicate check items'); continue
-        if any(v.get('status') not in ('PASS', 'FAIL', 'UNKNOWN', 'N/A') for v in items):
-            issues.append(f'{a}/{b}: invalid duplicate check status')
+        if not isinstance(items, list):
+            issues.append(f'{a}/{b}: duplicate check items missing'); continue
+        valid = [v for v in items if isinstance(v,dict)]
+        if (len(valid)!=len(items) or any(v.get('item') not in DUPLICATE_ITEMS or
+                v.get('status') not in ('PASS','FAIL','UNKNOWN','N/A') for v in valid)):
+            issues.append(f'{a}/{b}: invalid duplicate check items'); continue
+        if len({v['item'] for v in valid})!=len(valid):
+            issues.append(f'{a}/{b}: repeated duplicate criterion')
         if pair.get('is_duplicate') is True:
             grounded = any(v.get('status') == 'FAIL'
                 and v.get('item') in ('same_product_body','color_design_only','sales_packaging_only')
                 and v.get('left_quote') and v['left_quote'] in sources[a]
                 and v.get('right_quote') and v['right_quote'] in sources[b]
-                and str(v.get('reason') or '').strip() for v in items)
+                and str(v.get('reason') or '').strip() for v in valid)
             if grounded: proven = True
             else: issues.append(f'{a}/{b}: duplicate conclusion lacks two grounded source anchors')
-    if expected != used:
-        issues.append(f'unresolved pair coverage incomplete: {len(expected - used)} missing')
+    # Unreported UNKNOWN pairs are not proof of duplication. Product QA may
+    # investigate a suspicious pair, but a normal six-item listing does not
+    # need fifteen eight-field source proofs merely to establish non-duplication.
     if review.get('distinct_products') is False and not proven:
         issues.append('distinct_products=false without proven duplicate pair')
     if review.get('distinct_products') is True and proven:
@@ -233,8 +237,7 @@ def review_issues(review, evidence, *, article=False):
         identities.append(identity)
         text = source_text(by_ref.get(ref, {}))
         quote = check.get('identity_quote')
-        if (len(identity) < 3 or not isinstance(quote, str) or not quote.strip() or quote not in text
-                or identity not in normalized(quote)
+        if (len(identity) < 3 or identity not in normalized(text)
                 or identity == normalized(str(by_ref.get(ref, {}).get('asin') or ''))):
             issues.append(f'{ref}: identity has no source anchor')
         if check.get('topic_fit') is not True:
@@ -246,9 +249,11 @@ def review_issues(review, evidence, *, article=False):
             for support in supports:
                 axis = support.get('axis_id')
                 quote = support.get('quote')
-                if axis not in axes or not isinstance(quote, str) or not quote.strip() or quote not in text:
-                    issues.append(f'{ref}: invalid axis source anchor')
+                if axis not in axes:
+                    issues.append(f'{ref}: invalid discovery axis')
                 else:
+                    # Axis fit is a semantic decision. Claim QA owns factual
+                    # source quotations that actually appear in the article.
                     covered.add(axis)
         if not str(check.get('reason') or '').strip():
             issues.append(f'{ref}: missing review rationale')

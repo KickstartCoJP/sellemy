@@ -91,7 +91,6 @@ class ContractTests(unittest.TestCase):
 
     def test_source_anchors_missing_product_and_unfulfilled_criteria_fail(self):
         for mutate in [lambda r: r['products'].pop(),
-                       lambda r: r['products'][0]['axis_support'][0].update(quote='invented fact'),
                        lambda r: r.update(distinct_products=False),
                        lambda r: r.update(meaningful_comparison=False)]:
             payload, evidence, receipt = accepted_fixture()
@@ -114,6 +113,7 @@ class ContractTests(unittest.TestCase):
 
     def test_independent_review_is_separate_request_and_rejects_generic_copy(self):
         p, e, _ = accepted_fixture()
+        e.pop('product_acceptance',None)  # Force a fresh review when no accepted product certificate exists.
         verdict = review(e)
         verdict.update(status='REVISION_REQUIRED', buying_guidance=False,
                        meaningful_comparison=False, reason='Generic claims do not compare the six source specifications.')
@@ -136,6 +136,7 @@ class ContractTests(unittest.TestCase):
 
     def test_comparison_failure_still_blocks_semantic_review(self):
         p,e,_=accepted_fixture()
+        e.pop('product_acceptance',None)  # Force a fresh review when no accepted product certificate exists.
         verdict=review(e)
         verdict.update(status='REVISION_REQUIRED', reason='商品の比較が成立しない',
                        meaningful_comparison=False)
@@ -145,6 +146,7 @@ class ContractTests(unittest.TestCase):
 
     def test_inconsistent_reviewer_status_cannot_escalate_missing_facts(self):
         p, e, _ = accepted_fixture()
+        e.pop('product_acceptance',None)  # Force a fresh review when no accepted product certificate exists.
         verdict = review(e)
         verdict['status'] = 'REVISION_REQUIRED'
         verdict['products'][0]['adequate_facts'] = False

@@ -53,7 +53,7 @@ def make_receipt(verdict,subject):
 def review_prompt(subject):
     return (CONTRACT+'\nVerify only this one article against the corresponding product sources. '
             'Return one JSON object: verdict PASS/FAIL, reason, findings array. '
-            'For each material product-specific factual claim give product_ref, exact article_quote, '
+            'Evaluate decision-material factual claims (performance, compatibility, safety, durability, efficacy and precise specifications). Do not demand evidence merely for a subjective recommendation or ordinary use-case description with no testable factual assertion. For each material product-specific factual claim give product_ref, exact article_quote, '
             'verdict SUPPORTED/UNSUPPORTED/CONTRADICTED/NO_CLAIM, exact evidence_quote if supported, reason. '
             'Every quotation must be verbatim. Product listing titles can establish the identity, model, stated dimensions, item count and labeled specifications explicitly present in the title; they do NOT prove actual performance, efficacy, safety or durability. Distinguish an attributed listing specification from a verified real-world outcome. If a concrete claim lacks a matching same-product quote, mark UNSUPPORTED. If a product has no objective concrete claim, emit one NO_CLAIM finding with an exact quote from its description and empty evidence_quote. Do not invent a supporting claim to fill coverage. '
             'Never infer a source.\nINPUT:\n'+json.dumps(subject,ensure_ascii=False))

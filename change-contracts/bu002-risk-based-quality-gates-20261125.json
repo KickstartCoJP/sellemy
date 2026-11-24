@@ -1,0 +1,45 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "CEO-BU002-RISK-BASED-QUALITY-GATES-20261125",
+  "instruction_ref": "CEO 2026-11-25: Sellemy is overly strict beyond recalls; approve the agreed Planning/Product/Research/Writer/QA/Publish simplification and instruct 'それで修正を'",
+  "instruction": "Within BU-002 only, remove mandatory manufacturer evidence for basic marketplace listing identity, stop treating missing optional excerpts and invalid generated citation formatting as product NG, reduce fifteen all-pair exhaustive duplicate proofs to evidence-based checks of suspicious pairs, retain six distinct products and three editorial axes with two each, and focus Claim QA on decision-material factual assertions. Preserve independent product, editorial, claim and article safety QA and CEO publish approval. Article prose problems return to Writer; confirmed incompatible/duplicate/recalled products return to Product. For short governmental recall source outages use last complete official register for at most seven days with explicit stale indication; complete-data monitoring still retries and reports errors. Add targeted regression tests and retain all historic receipt versions for approved published articles.",
+  "implementer": "Mac Studio scope-controlled code change; CEO production review required",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3"
+  ],
+  "allowed_paths": [
+    "change-contracts/bu002-risk-based-quality-gates-20261125.json",
+    "config/risk-based-qa-policy.md",
+    "pipeline/claim_qa.py",
+    "pipeline/comparison_acceptance.py",
+    "pipeline/growth_role_business.py",
+    "pipeline/product_selection.py",
+    "pipeline/safety_government_feed.py",
+    "pipeline/safety_recall.py",
+    "pipeline/semantic_review.py",
+    "tests/test_comparison_acceptance.py",
+    "tests/test_risk_based_qa_20261125.py",
+    "tests/test_safety_gates_20261125.py",
+    "tests/test_sequential_evidenced_axis_discovery_20261121.py",
+    "tests/test_structured_duplicate_pairs.py",
+    "tests/test_independent_quality_gate.py",
+    "tests/test_claim_qa_reuse_20261122.py"
+  ],
+  "preserved_rules": [
+    "No change to other BU, portals, shared platform, Amazon affiliate eligibility, review/rating thresholds or sponsored product exclusions",
+    "Six real distinct products across exactly three approved axes with two items each remain mandatory",
+    "Proven same-product/color-only duplicates, wrong product, recalled/unsafe products and consequential unsupported claims still block publishing",
+    "Product/Editorial/Claim/Safety independent review and CEO approval remain mandatory and independent",
+    "Existing approved receipts remain hash-valid and no published article is automatically changed",
+    "Unusable or more than seven-day-old government recalls never produce an all-clear"
+  ],
+  "acceptance_tests": [
+    "tests/test_risk_based_qa_20261125.py",
+    "tests/test_comparison_acceptance.py",
+    "tests/test_structured_duplicate_pairs.py",
+    "tests/test_sequential_evidenced_axis_discovery_20261121.py",
+    "tests/test_safety_gates_20261125.py",
+    "tests/test_independent_quality_gate.py",
+    "tests/test_claim_qa_reuse_20261122.py"
+  ]
+}

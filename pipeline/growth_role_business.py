@@ -156,29 +156,24 @@ def _product_queries(topic: dict):
 
 
 def _verified_product(candidate: dict, *, cache_only: bool) -> dict | None:
-    """Inspect one discovered product before adding it to an axis candidate pool."""
-    if cache_only:
-        return candidate
+    """Validate listing identity; optional evidence acquisition must not veto an item."""
+    if not all(str(candidate.get(field) or '').strip() for field in ('asin','amazon_title','image_url')):
+        return None
+    if cache_only:return candidate
     existing = [source for source in candidate.get('sources') or []
                 if isinstance(source, dict) and source.get('verified') is True
                 and str(source.get('excerpt') or '').strip()]
-    if existing:
-        return candidate
+    if existing:return candidate
     try:
         source = fetch_amazon_item_source(candidate['asin'], candidate['amazon_title'])
     except Exception:
         source = None
     if isinstance(source, dict) and source.get('verified') is True and str(source.get('excerpt') or '').strip():
-        return {**candidate, 'brand': source.get('brand') or candidate.get('brand', ''),
-                'sources': [source], 'provisional': False}
-    # An unverified marketplace listing is not a candidate. Try the existing
-    # manufacturer-source lookup for this single product before rejecting it.
-    examined = research_selected([{**candidate, 'sources': list(candidate.get('sources') or [])}],
-                                 prefer_official=True)
-    item = examined[0] if examined else candidate
-    return item if any(isinstance(src, dict) and src.get('verified') is True
-                       and str(src.get('excerpt') or '').strip()
-                       for src in item.get('sources') or []) else None
+        return {**candidate, 'brand':source.get('brand') or candidate.get('brand',''),
+                'sources':[source], 'provisional':False}
+    # No manufacturer-wide lookup for ordinary product identification. Claim
+    # QA must still reject unsubstantiated material performance assertions.
+    return {**candidate,'sources':list(candidate.get('sources') or []),'provisional':True}
 
 
 def collect_unique_products(topic: dict, *, cache_only: bool, existing: list[dict] | None = None,
@@ -193,7 +188,7 @@ def collect_unique_products(topic: dict, *, cache_only: bool, existing: list[dic
     axis_ids = {axis['id'] for axis in axes}
     original, _ = dedupe_content_products(list(existing or []))
     kept = [p for p in original if p.get('discovery_axis_id') in axis_ids
-            and (cache_only or _has_verified_product_source(p))]
+            and all(str(p.get(k) or '').strip() for k in ('asin','amazon_title','image_url'))]
     rejected = set(rejected_asins or [])
     retained_count = len(kept)
     attempts = []
@@ -746,23 +741,20 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
             pending = [p for p in available if p.get('asin') not in researched_asins]
         batch = pending[:30]
         if batch:
-            enriched = research_selected(batch, prefer_official=True) if _researchable_candidates(batch, cache_only=cache_only) else batch
+            # Existing listings identify products; do not crawl every manufacturer
+            # before Product QA when no safety/performance claim is being made.
+            enriched = batch
             # Keep all source receipts and move the cursor only after the entire batch.
             by_asin = {p['asin']: p for p in enriched}
             pool = [by_asin.get(p['asin'], p) for p in pool]
             researched_asins.update(p['asin'] for p in batch)
             save_progress()
-        if not cache_only:
-            pool, source_backfill_attempted = _backfill_missing_amazon_sources(
-                pool, source_backfill_attempted)
-            save_progress()
-        if progress.get('reuse_previous_products', True) and previous.get('product_acceptance') and product_issues(previous) and not any(p.get('sources') for p in pool):
-            save_progress()
-            request_product_reselection(slug, ['exact evidence unchanged from rejected review'])
-            raise GrowthRuntimeError(f'exact evidence unchanged for {slug}')
+        # Missing optional source excerpts do not block a selectable listing.
+        # Writer/Claim QA limit material claims to their actual evidence.
         # Existing searches may have stopped at ten unverified listings.
         # Replenish the evidenced pool before declaring the topic exhausted.
-        evidenced = [p for p in pool if _has_verified_product_source(p)]
+        evidenced = [p for p in pool if all(str(p.get(k) or '').strip()
+                     for k in ('asin','amazon_title','image_url'))]
         if any(sum(p.get('discovery_axis_id') == axis['id'] for p in evidenced) < 2
                for axis in topic['comparison_axes']):
             replenished, search_trace = collect_unique_products(
@@ -782,9 +774,10 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
             researched_asins.update(p['asin'] for p in pool)
             save_progress()
         available = [p for p in pool if p.get('asin') not in excluded
-                     and _has_verified_product_source(p)]
+                     and all(str(p.get(k) or '').strip()
+                             for k in ('asin','amazon_title','image_url'))]
         feedback = load_feedback()
-        # Preserve products passing independent QA and exact source-anchor checks.
+        # Preserve confirmed product fit without making optional source quotes a gate.
         # Failed products alone are replaced; an unchanged rejected set is never retried.
         from comparison_acceptance import normalized, source_text
         import re as _re
@@ -800,16 +793,14 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
                 product = by_ref_old.get(check.get('ref'))
                 if not product: continue
                 asin = product.get('asin')
-                quote = check.get('identity_quote') or ''
                 key = normalized(str(check.get('identity_key') or ''))
-                anchored = bool(key and len(key) >= 3 and quote and quote in source_text(product)
-                                and key in normalized(quote))
-                if (check.get('adequate_facts') is True and check.get('topic_fit') is True
-                        and anchored):
+                anchored = bool(key and len(key) >= 3 and key in normalized(source_text(product)))
+                if check.get('topic_fit') is True and anchored:
                     pinned.append(asin)
-                else:
+                elif check.get('topic_fit') is False:
                     known_bad.add(asin)
-                    set_ng(asin, 'independent product review NG', source=slug)
+                    set_ng(asin, 'independent product review: incompatible with topic', source=slug)
+                # A reviewer citation/key defect is not grounds for blacklisting.
         pin_set = set(pinned)
         if len(pin_set) == 6 and latest:
             previous_review = read_artifact(slug, latest[0].name, {}) or {}
@@ -902,16 +893,14 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
             for check in review.get('products') or []:
                 product = by_ref.get(check.get('ref'))
                 if product is None: continue
-                quote = check.get('identity_quote') or ''
                 key = normalized(str(check.get('identity_key') or ''))
-                anchor_ok = bool(len(key)>=3 and quote and quote in source_text(product)
-                                 and key in normalized(quote))
-                if check.get('adequate_facts') is True and check.get('topic_fit') is True and anchor_ok:
+                anchor_ok = bool(len(key)>=3 and key in normalized(source_text(product)))
+                if check.get('topic_fit') is True and anchor_ok:
                     good.append(product['asin'])
-                else:
+                elif check.get('topic_fit') is False:
                     rejected.add(product['asin'])
             for rejected_asin in rejected:
-                set_ng(rejected_asin, 'product QA rejected identity or topic fitness', source=slug)
+                set_ng(rejected_asin, 'product QA confirmed topic incompatibility', source=slug)
             write_artifact(slug, 'product-qa-remediation.json', {
                 'retained_asins': good, 'needs_remediation_asins': sorted(rejected),
                 'issues': issues, 'signature': signature,

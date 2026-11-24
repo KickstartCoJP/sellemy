@@ -153,7 +153,7 @@ def select_six(candidates: list[dict], topic: dict, feedback: dict, *, pinned: l
             raise ProductSelectionError('six candidates must be distinct and belong to the three axes')
         labels = {axis['id']: str(axis.get('label') or axis['id']) for axis in axes}
         selected = [{**p, 'selection_reason': ('紹介切り口「' + labels[p['discovery_axis_id']]
-                     + '」の候補。確認済み商品情報: ' + _text(p)[:180])} for p in ordered]
+                     + '」の候補。確認済み商品情報: ' + source_text(p)[:180])} for p in ordered]
         groups = [{'axis_id': axis['id'], 'products': [
             {'asin': p['asin'], 'reason': p['selection_reason']} for p in selected
             if p['discovery_axis_id'] == axis['id']]} for axis in axes]

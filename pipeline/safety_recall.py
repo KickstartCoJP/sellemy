@@ -7,7 +7,7 @@ from __future__ import annotations
 import json,re,unicodedata
 from datetime import datetime,timezone
 from pathlib import Path
-from safety_government_feed import combined_registry, cached_combined_registry, GovernmentFeedUnavailable
+from safety_government_feed import combined_registry, cached_combined_registry, last_complete_registry, GovernmentFeedUnavailable
 
 from growth_recovery import STATE_ROOT
 
@@ -116,6 +116,8 @@ def scan_products(products,*,live=True,cache_path=None,now=None,registry=None):
             registry=combined_registry() if live else cached_combined_registry()
         except GovernmentFeedUnavailable:
             registry=None
+        if registry is None:
+            registry=last_complete_registry()
     complete=bool(registry and registry.get('complete') is True and registry.get('details')
                   and len(registry['details'])==registry.get('count'))
     result_details=[(entry,normalize(entry.get('text') or '')) for entry in registry['details']] if complete else []
@@ -139,7 +141,8 @@ def scan_products(products,*,live=True,cache_path=None,now=None,registry=None):
                 'NO_OFFICIAL_SIGNAL' if complete else 'NOT_CHECKED')
         results.append({'asin':asin,'status':status,'signals':signals,
                         'checked_at':now.isoformat(),
-                        'official_index_at':registry.get('checked_at') if complete else None})
+                        'official_index_at':registry.get('checked_at') if complete else None,
+                        'recall_source_stale':bool(registry.get('stale')) if complete else False})
     return results
 
 
