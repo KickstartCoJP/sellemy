@@ -4,13 +4,10 @@ No search snippet is treated as proof. A matching official notice is an alert,
 not proof that every retail unit is affected. Unknown is never called safe.
 """
 from __future__ import annotations
-import hashlib,ipaddress,json,re,subprocess,unicodedata
-from datetime import datetime,timedelta,timezone
+import json,re,unicodedata
+from datetime import datetime,timezone
 from pathlib import Path
-from urllib.parse import urlsplit
-
-import requests
-from bs4 import BeautifulSoup
+from safety_government_feed import full_registry, cached_registry, GovernmentFeedUnavailable
 
 from growth_recovery import STATE_ROOT
 
@@ -56,134 +53,78 @@ def catalog_matches(product):
             and known_brand]
 
 
-def _public_host(url):
-    try:
-        v=urlsplit(url);host=(v.hostname or '').lower()
-        if v.scheme!='https' or not host or v.username or v.password:return ''
-        ip=ipaddress.ip_address(host)
-        return host if ip.is_global else ''
-    except ValueError:
-        return host if not (host.endswith(('.local','.internal','.localhost')) or host=='localhost') else ''
-
-
-def _is_official(url,product):
-    host=_public_host(url)
-    if not host:return False
-    if any(host==gov or host.endswith('.'+gov) for gov in OFFICIAL_GOV):return True
-    for source in product.get('sources') or []:
-        if source.get('source_type')=='manufacturer_official' and source.get('verified') is True:
-            official=_public_host(source.get('url') or '')
-            if official and (host==official or host.endswith('.'+official) or official.endswith('.'+host)):
-                return True
-    # Established manufacturer domains for current recalled models only.
-    brand=normalize(product.get('brand') or '')
-    return 'anker' in brand and (host=='ankerjapan.com' or host.endswith('.ankerjapan.com'))
-
-
-def _model_hint(product):
+def _matched_official(product,official):
+    """Match only concrete product identity; no unqualified manufacturer hit."""
     title=str(product.get('amazon_title') or product.get('title') or '')
-    code=re.search(r'(?<![A-Za-z0-9])(?:[A-Za-z]{1,8}-)?[A-Za-z0-9-]*\d[A-Za-z0-9-]{2,}(?![A-Za-z0-9])',title)
-    if code:return code.group(0)
-    return re.sub(r'\s+',' ',title)[:50]
+    brand=str(product.get('brand') or '')
+    content=str(official.get('text') or '')
+    # An exact model identifier is stronger than a generic category/brand.
+    model_tokens=re.findall(r'(?<![A-Za-z0-9])(?:[A-Za-z]{1,8}-)?[A-Za-z0-9-]*\d[A-Za-z0-9-]{2,}(?![A-Za-z0-9])',
+                           unicodedata.normalize('NFKC',title))
+    model_tokens=[v for v in model_tokens if len(v)>=4]
+    for token in model_tokens:
+        if contains_model(content,token):return token
+    # Named retail series can have model numbers absent from its Amazon title.
+    # Require a compound distinctive series, not merely an importer name.
+    words=re.findall(r'[A-Za-z]{3,}|[0-9]{1,8}[A-Za-z0-9-]*',title)
+    for size in (3,2):
+        for i in range(len(words)-size+1):
+            part=words[i:i+size]
+            if not any(re.search(r'\d',w) for w in part):continue
+            token=' '.join(part)
+            if len(token)>=7 and contains_model(content,token):return token
+    # Official catalog-known models remain authoritative even when a page
+    # lists a longer variant number (e.g. A3117011 for Soundcore 3).
+    for match in catalog_matches(product):
+        if any(contains_model(content,x) for x in match['models']):
+            return match['models'][0]
+    return None
 
 
-def _search(products):
-    script=str(Path(__file__).with_name('vm_safety_search.py'))
-    records=[]
-    for offset in range(0,len(products),6):
-        batch=products[offset:offset+6]
-        payload=[{'asin':p['asin'],'brand':p.get('brand'),'model':_model_hint(p)} for p in batch]
-        try:
-            result=subprocess.run(['/opt/homebrew/bin/colima','ssh','--','xvfb-run','-a',
-                    '/home/kickstart.guest/.ai-role-playwright/bin/python',script],
-                    input=json.dumps(payload,ensure_ascii=False),text=True,capture_output=True,
-                    timeout=145,check=False)
-            if result.returncode:raise ValueError('Chrome search failed')
-            rows=json.loads(result.stdout).get('items',[])
-            if len(rows)!=len(batch):raise ValueError('incomplete search')
-            records.extend(rows)
-        except (OSError,ValueError,TypeError,subprocess.TimeoutExpired):
-            records.extend({'asin':p['asin'],'searched':False,'urls':[]} for p in batch)
-    return {r['asin']:r for r in records}
+def scan_products(products,*,live=True,cache_path=None,now=None,registry=None):
+    """One complete NITE government snapshot is compared against EVERY product.
 
-
-def _official_match(url,product):
-    if not _is_official(url,product):return None
-    try:
-        res=requests.get(url,timeout=14,headers={'User-Agent':'Mozilla/5.0'},allow_redirects=True)
-        if res.status_code!=200 or not _is_official(res.url,product):return None
-        soup=BeautifulSoup(res.content[:500000],'html.parser')
-        for e in soup.select('script,style,nav,footer,header'):e.decompose()
-        title=soup.title.get_text(' ',strip=True) if soup.title else ''
-        body=soup.get_text(' ',strip=True)[:70000]
-    except (requests.RequestException,ValueError):return None
-    model=_model_hint(product)
-    if not RECALL_WORD.search(title+' '+body):return None
-    if not contains_model(body,model) and not contains_model(title,model):return None
-    index=normalize(body).find(normalize(model))
-    excerpt=body[max(0,index-280):index+480] if index>=0 else title
-    # Search hits alone are not evidence: require an official page with a model
-    # mention near an actual recall statement, or a relevant recall page title.
-    if not (RECALL_WORD.search(excerpt) or RECALL_WORD.search(title)):
-        return None
-    return {'asin':product['asin'],'status':'POTENTIAL_RECALL',
-            'source':res.url,'model':model,'excerpt':excerpt[:720],
-            'reason':'official recall notice mentions this product; scope must be checked'}
-
-
-def scan_products(products,*,live=True,cache_path=None,now=None):
+    Catalog is a safety fallback but never substitutes for refreshing the
+    government register. Inability to collect all notices is NOT_CHECKED.
+    """
     now=now or datetime.now(timezone.utc)
-    path=cache_path or CACHE
-    try:cache=json.loads(path.read_text(encoding='utf-8'))
-    except (OSError,ValueError):cache={}
-    results={};pending=[]
-    for product in products:
-        asin=product['asin']
-        known=catalog_matches(product)
-        if known:
-            results[asin]={'asin':asin,'status':'RECALL','signals':known,'checked_at':now.isoformat()}
-            continue
-        key=hashlib.sha256(json.dumps({'asin':asin,'brand':product.get('brand'),
-                        'title':product.get('amazon_title'),'source_urls':[
-                        s.get('url') for s in product.get('sources') or [] if isinstance(s,dict)]},sort_keys=True,ensure_ascii=False).encode()).hexdigest()
-        stored=cache.get(asin, {})
-        try:fresh=datetime.fromisoformat(stored['checked_at'])>=now-timedelta(hours=24)
-        except (KeyError,TypeError,ValueError):fresh=False
-        if fresh and stored.get('cache_key')==key:
-            results[asin]=stored
-        elif live:pending.append((product,key))
-        else:results[asin]={'asin':asin,'status':'NOT_CHECKED','signals':[],'checked_at':now.isoformat()}
-    if pending:
-        searches=_search([p for p,_ in pending])
-        for product,key in pending:
-            asin=product['asin'];result=searches.get(asin,{})
-            signals=[]
-            if result.get('searched') is True:
-                for url in (result.get('urls') or [])[:4]:
-                    hit=_official_match(url,product)
-                    if hit:signals.append(hit)
-            status=('POTENTIAL_RECALL' if signals else
-                    'NO_OFFICIAL_SIGNAL' if result.get('searched') is True else 'SEARCH_UNAVAILABLE')
-            row={'asin':asin,'status':status,'signals':signals,'checked_at':now.isoformat(),
-                 'cache_key':key}
-            results[asin]=row;cache[asin]=row
-        path.parent.mkdir(parents=True,exist_ok=True)
-        tmp=path.with_suffix('.tmp')
-        tmp.write_text(json.dumps(cache,ensure_ascii=False,sort_keys=True),encoding='utf-8')
-        tmp.replace(path)
-    return [results[p['asin']] for p in products]
+    if registry is None:
+        try:
+            registry=full_registry() if live else cached_registry()
+        except GovernmentFeedUnavailable:
+            registry=None
+    complete=bool(registry and registry.get('complete') is True and registry.get('details')
+                  and len(registry['details'])==registry.get('count'))
+    results=[]
+    for p in products:
+        asin=p['asin']
+        known=catalog_matches(p)
+        signals=[{**v,'source_type':'official_recall_catalog'} for v in known]
+        if complete:
+            for official in registry['details']:
+                match=_matched_official(p,official)
+                if match:
+                    signals.append({'asin':asin,'status':'POTENTIAL_RECALL',
+                        'source':official['source'],'notice_id':official['id'],
+                        'model':match,'excerpt':official['text'][:1800],
+                        'reason':'official NITE recall notice contains the model; verify exact serial/date scope',
+                        'manufacturer_notice_candidates':official.get('manufacturer_notice_candidates',[]),
+                        'source_type':'NITE_SAFE_LITE'})
+        status=('RECALL' if known else 'POTENTIAL_RECALL' if signals else
+                'NO_OFFICIAL_SIGNAL' if complete else 'NOT_CHECKED')
+        results.append({'asin':asin,'status':status,'signals':signals,
+                        'checked_at':now.isoformat(),
+                        'official_index_at':registry.get('checked_at') if complete else None})
+    return results
 
 
-def unsafe_products(products,*,live=True,cache_path=None):
-    records=scan_products(products,live=live,cache_path=cache_path)
-    by_asin={p['asin']:p for p in products}
-    flags=[r for r in records if r['status'] in ('RECALL','POTENTIAL_RECALL') or
-           (r['status'] in ('SEARCH_UNAVAILABLE','NOT_CHECKED') and
-            HIGH_RISK.search(' '.join(str(by_asin[r['asin']].get(k) or '') for k in ('amazon_title','brand'))))]
+def unsafe_products(products,*,live=True,cache_path=None,registry=None):
+    records=scan_products(products,live=live,cache_path=cache_path,registry=registry)
+    flags=[r for r in records if r['status']!='NO_OFFICIAL_SIGNAL']
     return flags,records
 
 
-def require_product_safety(products,*,live=True,cache_path=None):
-    flags,records=unsafe_products(products,live=live,cache_path=cache_path)
+def require_product_safety(products,*,live=True,cache_path=None,registry=None):
+    flags,records=unsafe_products(products,live=live,cache_path=cache_path,registry=registry)
     if flags:raise ProductSafetyError(flags)
     return records

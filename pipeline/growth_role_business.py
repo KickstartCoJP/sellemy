@@ -366,6 +366,9 @@ def select_viable_topic(
                         flags, _ = unsafe_products(six)
                         if not flags:
                             break
+                        if any(flag['status']=='NOT_CHECKED' for flag in flags):
+                            from safety_government_feed import GovernmentFeedUnavailable
+                            raise GovernmentFeedUnavailable('official recall register has not completed refresh')
                         rejected = {flag['asin'] for flag in flags}
                         excluded.update(rejected)
                         retained = [p for p in six if p['asin'] not in rejected]
@@ -858,6 +861,9 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
             from safety_recall import unsafe_products
             unsafe, _safety_checks = unsafe_products(selected)
             if unsafe:
+                if any(flag['status']=='NOT_CHECKED' for flag in unsafe):
+                    from safety_government_feed import GovernmentFeedUnavailable
+                    raise GovernmentFeedUnavailable('official recall register has not completed refresh')
                 blocked_asins={flag['asin'] for flag in unsafe}
                 for flag in unsafe:
                     if flag['status'] == 'RECALL':

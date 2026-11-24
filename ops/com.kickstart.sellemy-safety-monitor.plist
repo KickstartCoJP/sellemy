@@ -2,7 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0//EN">
 <plist version="1.0"><dict>
 <key>Label</key><string>com.kickstart.sellemy-safety-monitor</string>
-<key>ProgramArguments</key><array><string>/Users/kickstart/sellemy-prod-growth-20261016/.venv/bin/python</string><string>/Users/kickstart/sellemy-prod-growth-20261016/pipeline/safety_monitor.py</string><string>--limit</string><string>80</string></array>
+<key>ProgramArguments</key><array><string>/Users/kickstart/sellemy-prod-growth-20261016/.venv/bin/python</string><string>/Users/kickstart/sellemy-prod-growth-20261016/pipeline/safety_monitor.py</string></array>
 <key>WorkingDirectory</key><string>/Users/kickstart/sellemy-prod-growth-20261016</string>
 <key>StartCalendarInterval</key><dict><key>Hour</key><integer>6</integer><key>Minute</key><integer>35</integer></dict>
 <key>StandardOutPath</key><string>/Users/kickstart/sellemy/logs/safety-monitor.log</string>
