@@ -346,3 +346,31 @@ def cached_combined_registry(*,now=None):
                 'source_counts':{'NITE':nite['count'],'CAA':caa['count']},
                 'details':nite['details']+caa['details']}
     except (OSError,ValueError,KeyError,TypeError):return None
+
+
+def last_complete_registry(*,now=None,max_age_days=7):
+    """Bounded outage fallback; preserves last validated official snapshot.
+
+    Never creates a new PASS merely from a failed request. Consumers receive
+    explicit stale evidence and the independent daily monitor keeps retrying.
+    """
+    now=now or datetime.now(timezone.utc)
+    try:
+        index=json.loads(INDEX_PATH.read_text(encoding='utf-8'))
+        stored=json.loads(DETAILS_PATH.read_text(encoding='utf-8'))
+        caa=json.loads(CAA_INDEX_PATH.read_text(encoding='utf-8'))
+        nite_rows=index['items'];details=stored['details']
+        if (not index['complete'] or not caa['complete'] or
+            len(nite_rows)!=index['count'] or
+            any(row['id'] not in details for row in nite_rows) or
+            len(caa['details'])!=caa['count']):
+            return None
+        checked=min(datetime.fromisoformat(index['checked_at']),
+                    datetime.fromisoformat(caa['checked_at']))
+        if checked>now or checked<now-timedelta(days=max_age_days):return None
+        return {'source':[index['source'],caa['source']],
+                'checked_at':checked.isoformat(),'stale':True,'complete':True,
+                'count':index['count']+caa['count'],
+                'source_counts':{'NITE':index['count'],'CAA':caa['count']},
+                'details':[details[row['id']] for row in nite_rows]+caa['details']}
+    except (OSError,ValueError,KeyError,TypeError):return None

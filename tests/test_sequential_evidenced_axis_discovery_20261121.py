@@ -63,7 +63,7 @@ def test_duplicate_never_moves_when_origin_would_drop_below_two():
     assert not receipt['complete']
     assert next(x for x in rows if x['asin']=='B000000002')['discovery_axis_id']=='popular'
 
-def test_verified_product_uses_marketplace_then_manufacturer_one_item_at_a_time():
+def test_product_identification_no_longer_requires_manufacturer_research():
     calls=[]
     def amazon(asin,title):calls.append(('amazon',asin));return None
     def manufacturer(products,**kwargs):
@@ -73,7 +73,8 @@ def test_verified_product_uses_marketplace_then_manufacturer_one_item_at_a_time(
     with patch('growth_role_business.fetch_amazon_item_source',side_effect=amazon), \
          patch('growth_role_business.research_selected',side_effect=manufacturer):
         result=_verified_product(item(3),cache_only=False)
-    assert result is not None and calls==[('amazon','B000000003'),('manufacturer','B000000003')]
+    assert result is not None and result['provisional'] is True
+    assert calls==[('amazon','B000000003')]
 
 def test_raw_discovery_retrieves_listings_without_preadmitting_unverified_items():
     from growth_role_business import discover_products
