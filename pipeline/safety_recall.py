@@ -14,6 +14,7 @@ from growth_recovery import STATE_ROOT
 ROOT=Path(__file__).resolve().parents[1]
 CATALOG=ROOT/'config/safety-recalls.json'
 CACHE=STATE_ROOT/'safety-recall-cache.json'
+STALENESS_ALERT=STATE_ROOT/'safety-monitor'/'source-staleness.json'
 HIGH_RISK=re.compile(r'モバイルバッテリー|リチウム|ヒーター|暖房|ストーブ|ガス|コンロ|タイヤ|チャイルドシート|ヘルメット|充電式.{0,8}(?:ポンプ|空気入れ)|power bank|lithium battery|heater|inflator|car seat',re.I)
 RECALL_WORD=re.compile(r'自主回収|リコール|製品回収|無償交換|recall',re.I)
 OFFICIAL_GOV=('nite.go.jp','meti.go.jp','recall.caa.go.jp','caa.go.jp')
@@ -111,13 +112,27 @@ def scan_products(products,*,live=True,cache_path=None,now=None,registry=None):
     government register. Inability to collect all notices is NOT_CHECKED.
     """
     now=now or datetime.now(timezone.utc)
+    source_retrieval=False
     if registry is None:
+        source_retrieval=True
         try:
             registry=combined_registry() if live else cached_combined_registry()
         except GovernmentFeedUnavailable:
             registry=None
         if registry is None:
             registry=last_complete_registry()
+    if source_retrieval:
+        if registry and registry.get('stale'):
+            STALENESS_ALERT.parent.mkdir(parents=True,exist_ok=True)
+            STALENESS_ALERT.write_text(json.dumps({
+                'status':'OFFICIAL_RECALL_SOURCE_STALE',
+                'detected_at':now.isoformat(),
+                'last_complete_official_fetch_at':registry['checked_at'],
+                'item_count':registry['count'],
+                'action':'retry government recall collection and inspect the safety monitor'
+            },ensure_ascii=False,indent=2),encoding='utf-8')
+        elif registry and registry.get('complete') and STALENESS_ALERT.exists():
+            STALENESS_ALERT.unlink()
     complete=bool(registry and registry.get('complete') is True and registry.get('details')
                   and len(registry['details'])==registry.get('count'))
     result_details=[(entry,normalize(entry.get('text') or '')) for entry in registry['details']] if complete else []

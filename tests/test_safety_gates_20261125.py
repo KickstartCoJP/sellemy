@@ -202,7 +202,7 @@ def test_monitor_clears_last_error_after_success(tmp_path):
     assert not (tmp_path/'last-error.json').exists()
 
 
-def test_short_source_outage_uses_saved_complete_registry_without_global_veto():
+def test_short_source_outage_uses_saved_complete_registry_without_global_veto(tmp_path):
     from safety_recall import scan_products
     from safety_government_feed import GovernmentFeedUnavailable
     registry={'complete':True,'stale':True,'count':1,
@@ -210,10 +210,13 @@ def test_short_source_outage_uses_saved_complete_registry_without_global_veto():
               'details':[{'id':'1','source':'https://safe-lite.nite.go.jp/recall/detail/1',
                           'text':'Anker Soundcore 3', 'manufacturer':'Anker'}]}
     with patch('safety_recall.combined_registry',side_effect=GovernmentFeedUnavailable('outage')), \
-         patch('safety_recall.last_complete_registry',return_value=registry):
+         patch('safety_recall.last_complete_registry',return_value=registry), \
+         patch('safety_recall.STALENESS_ALERT',tmp_path/'source-staleness.json'):
         rows=scan_products([product('B000000042','Generic household accessory','Generic')])
     assert rows[0]['status']=='NO_OFFICIAL_SIGNAL'
     assert rows[0]['recall_source_stale'] is True
+    alert=json.loads((tmp_path/'source-staleness.json').read_text())
+    assert alert['status']=='OFFICIAL_RECALL_SOURCE_STALE'
 
 
 def test_source_outage_with_no_recent_snapshot_still_blocks_unverified_safety_clearance():
