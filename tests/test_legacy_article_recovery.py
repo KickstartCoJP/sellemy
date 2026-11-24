@@ -76,9 +76,9 @@ class LegacyArticleRecoveryTests(unittest.TestCase):
         self.assertTrue(result['admitted'])
         state = recovery.load_job(self.slug)
         self.assertEqual((state['status'], state['current_stage']),
-                         ('ACTIVE', 'WRITER_PENDING'))
+                         ('ACTIVE', 'PLANNING_PENDING'))
         self.assertEqual(state['source'], 'legacy_repair')
-        self.assertEqual(recovery.read_artifact(self.slug, 'chat-publish-approval.json'), {})
+        self.assertFalse((self.jobs/self.slug/'chat-publish-approval.json').exists())
         self.assertEqual((self.repo / 'article/gadget/sample-article.html').read_text(), 'old')
         self.assertEqual(recovery.read_artifact(self.slug, 'legacy-original-20261115/state.json')['status'], 'PUBLISHED')
         self.assertEqual(legacy.import_one(self.source), {'admitted': False})
@@ -91,7 +91,8 @@ class LegacyArticleRecoveryTests(unittest.TestCase):
         self.assertTrue(legacy.import_one(self.source)['replanning'])
         state = recovery.load_job(self.slug)
         self.assertEqual((state['status'], state['current_stage']), ('ACTIVE', 'PLANNING_PENDING'))
-        self.assertEqual(recovery.read_artifact(self.slug, 'chat-publish-approval.json'),
+        self.assertFalse((self.jobs/self.slug/'chat-publish-approval.json').exists())
+        self.assertEqual(recovery.read_artifact(self.slug, legacy.BACKUP+'/chat-publish-approval.json'),
                          {'publish_allowed': True})
         self.assertEqual((self.repo/'article/gadget/sample-article.html').read_text(), 'old')
         self.assertEqual(legacy.import_one(self.source), {'admitted': False})
@@ -111,14 +112,18 @@ class LegacyArticleRecoveryTests(unittest.TestCase):
         evidence['products'][0]['sources'] = []
         self._save(self.articles/self.slug/'evidence.json', evidence)
         legacy.import_one(self.source)
-        previous_evidence = (self.jobs/self.slug/'evidence.json').read_bytes()
-        previous_approval = (self.jobs/self.slug/'chat-publish-approval.json').read_bytes()
+        self.assertFalse((self.jobs/self.slug/'evidence.json').exists())
+        self.assertFalse((self.jobs/self.slug/'chat-publish-approval.json').exists())
+        previous_evidence = (self.jobs/self.slug/legacy.BACKUP/'evidence.json').read_bytes()
+        previous_approval = (self.jobs/self.slug/legacy.BACKUP/'chat-publish-approval.json').read_bytes()
         with patch('planning_runtime.replan_published_topic', side_effect=ValueError('source unavailable')):
             result = legacy.replan_one(self.slug)
         self.assertEqual(result['action'], 'hold')
         self.assertEqual(recovery.load_job(self.slug)['current_stage'], 'PLANNING_HOLD')
-        self.assertEqual((self.jobs/self.slug/'evidence.json').read_bytes(), previous_evidence)
-        self.assertEqual((self.jobs/self.slug/'chat-publish-approval.json').read_bytes(), previous_approval)
+        self.assertFalse((self.jobs/self.slug/'evidence.json').exists())
+        self.assertFalse((self.jobs/self.slug/'chat-publish-approval.json').exists())
+        self.assertEqual((self.jobs/self.slug/legacy.BACKUP/'evidence.json').read_bytes(), previous_evidence)
+        self.assertEqual((self.jobs/self.slug/legacy.BACKUP/'chat-publish-approval.json').read_bytes(), previous_approval)
         self.assertFalse((self.jobs/self.slug/'product-attempt-fingerprint.json').exists())
         self.assertEqual((self.repo/'article/gadget/sample-article.html').read_text(), 'old')
 
@@ -127,8 +132,10 @@ class LegacyArticleRecoveryTests(unittest.TestCase):
         evidence['products'][0]['sources'] = []
         self._save(self.articles/self.slug/'evidence.json', evidence)
         legacy.import_one(self.source)
-        previous_evidence = (self.jobs/self.slug/'evidence.json').read_bytes()
-        previous_approval = (self.jobs/self.slug/'chat-publish-approval.json').read_bytes()
+        self.assertFalse((self.jobs/self.slug/'evidence.json').exists())
+        self.assertFalse((self.jobs/self.slug/'chat-publish-approval.json').exists())
+        previous_evidence = (self.jobs/self.slug/legacy.BACKUP/'evidence.json').read_bytes()
+        previous_approval = (self.jobs/self.slug/legacy.BACKUP/'chat-publish-approval.json').read_bytes()
         topic = {'slug': self.slug, 'category': 'gadget', 'product_theme': '浴室用スクイージー',
                  'comparison_axes': [{'id': f'axis{i}', 'keywords': ['product'],
                                       'label': f'Axis {i}'} for i in range(3)]}
@@ -139,8 +146,10 @@ class LegacyArticleRecoveryTests(unittest.TestCase):
         self.assertNotIn('previous_title', planner.call_args.kwargs)
         self.assertEqual(recovery.load_job(self.slug)['current_stage'], 'WRITER_PENDING')
         self.assertEqual(recovery.read_artifact(self.slug, 'topic.json')['product_theme'], '浴室用スクイージー')
-        self.assertEqual((self.jobs/self.slug/'evidence.json').read_bytes(), previous_evidence)
-        self.assertEqual((self.jobs/self.slug/'chat-publish-approval.json').read_bytes(), previous_approval)
+        self.assertFalse((self.jobs/self.slug/'evidence.json').exists())
+        self.assertFalse((self.jobs/self.slug/'chat-publish-approval.json').exists())
+        self.assertEqual((self.jobs/self.slug/legacy.BACKUP/'evidence.json').read_bytes(), previous_evidence)
+        self.assertEqual((self.jobs/self.slug/legacy.BACKUP/'chat-publish-approval.json').read_bytes(), previous_approval)
         self.assertFalse(recovery.read_artifact(self.slug, 'product-search-progress.json')['reuse_previous_products'])
         from role_stage_exec import _inspect
         with patch('growth_role_business._reselect_products', side_effect=AssertionError('must run only after dispatch')):
@@ -153,12 +162,13 @@ class LegacyArticleRecoveryTests(unittest.TestCase):
         evidence['products'][0]['sources'] = []
         self._save(self.articles/self.slug/'evidence.json', evidence)
         legacy.import_one(self.source)
-        previous = (self.jobs/self.slug/'evidence.json').read_bytes()
+        previous = (self.jobs/self.slug/legacy.BACKUP/'evidence.json').read_bytes()
         with patch('planning_runtime.replan_published_topic',return_value=({'slug':'wrong','category':'gadget'},{})):
             result = legacy.replan_one(self.slug)
         self.assertEqual(result['action'],'hold')
         self.assertEqual(recovery.load_job(self.slug)['current_stage'],'PLANNING_HOLD')
-        self.assertEqual((self.jobs/self.slug/'evidence.json').read_bytes(),previous)
+        self.assertFalse((self.jobs/self.slug/'evidence.json').exists())
+        self.assertEqual((self.jobs/self.slug/legacy.BACKUP/'evidence.json').read_bytes(),previous)
         self.assertEqual((self.repo/'article/gadget/sample-article.html').read_text(),'old')
 
     def test_old_hold_reenters_shared_adapter_once(self):
@@ -170,6 +180,9 @@ class LegacyArticleRecoveryTests(unittest.TestCase):
         state['current_stage']='PLANNING_HOLD'
         state['next_retry_at']=None
         recovery._atomic_json(recovery.state_path(self.slug),state)
+        marker=recovery.read_artifact(self.slug, legacy.MARKER)
+        marker['adapter_revision']='legacy-old'
+        recovery.write_artifact(self.slug, legacy.MARKER,marker)
         self.assertTrue(legacy.has_pending(self.source))
         resumed=legacy.import_one(self.source)
         self.assertTrue(resumed['normalized_retry'])
@@ -187,9 +200,7 @@ class LegacyArticleRecoveryTests(unittest.TestCase):
         state.update(current_stage='PRODUCT_HOLD', status='ACTIVE', source='legacy_repair',
                      next_retry_at=None)
         recovery._atomic_json(recovery.state_path(self.slug), state)
-        evidence = recovery.read_artifact(self.slug, 'evidence.json')
-        evidence['products'][0]['sources'] = []
-        recovery.write_artifact(self.slug, 'evidence.json', evidence)
+        recovery.write_artifact(self.slug, 'evidence.json', {'products': []})
         result = legacy.import_one(self.source)
         self.assertTrue(result['replanning'])
         self.assertEqual(recovery.load_job(self.slug)['current_stage'], 'PLANNING_PENDING')
@@ -269,10 +280,9 @@ class LegacyArticleRecoveryTests(unittest.TestCase):
     def test_precheck_routing_requires_current_review(self):
         self.assertTrue(legacy.import_one(self.source)['admitted'])
         marker = recovery.read_artifact(self.slug, legacy.MARKER)
-        self.assertEqual(marker['phase'], 'initial_precheck')
-        marker['phase'] = 'regular_repair'
-        recovery.write_artifact(self.slug, legacy.MARKER, marker)
-        self.assertEqual(legacy.precheck(self.slug)['action'], 'writer')
+        self.assertEqual(marker['phase'], 'planning_required')
+        self.assertFalse((self.jobs/self.slug/'payload.json').exists())
+        self.assertEqual(recovery.read_artifact(self.slug,'topic.json')['product_theme'], 'Previous title')
 
 
 if __name__ == '__main__':

@@ -261,7 +261,9 @@ def import_one(root: Path | None = None) -> dict:
             continue
         article = root / 'articles' / slug
         historical = _read_json(article / 'evidence.json')
-        needs_planning = not source_acquisition_ready(historical)
+        # All legacy recovery is a theme-only rebuild, regardless of whether
+        # historical sources happened to have passed an older evidence check.
+        needs_planning = True
         if not (job_dir(slug) / 'state.json').exists():
             candidate = _read_json(article / 'body.json')
             category = candidate.get('category')
@@ -289,50 +291,45 @@ def import_one(root: Path | None = None) -> dict:
             raise ValueError('historical article is missing from current site: ' + slug)
         if state['category'] != payload.get('category'):
             raise ValueError('historical/current category mismatch: ' + slug)
-        current_evidence = read_artifact(slug, 'evidence.json') or {}
-        if needs_planning:
-            # Preserve old evidence and every approval until a new, independently
-            # accepted six-product Planning result can be committed.
-            _backup_original(slug)
-            write_artifact(slug, MARKER, {
-                'task_id': 'TASK-BU002-LEGACY-436-CONTINUOUS-RECOVERY-20261115',
-                'phase': 'planning_required',
-                'original_published_commit': state.get('published_commit'),
-            })
-            state['source'] = 'legacy_repair'
-            from growth_recovery import _save_state
-            _save_state(state, event='LEGACY_REPLAN_SOURCE_BOUND')
-            set_stage(slug, 'PLANNING_PENDING', event='LEGACY_REPLAN_ADMITTED')
-            return {'slug': slug, 'admitted': True, 'replanning': True}
-        if state['category'] != evidence.get('category'):
-            raise ValueError('historical/current category mismatch: ' + slug)
-        evidence['eyecatch_image'] = evidence.get('eyecatch_image') or current_evidence.get('eyecatch_image')
-        if not evidence.get('eyecatch_image'):
-            raise ValueError('cannot preserve historical article image: ' + slug)
-        evidence.pop('product_acceptance', None)
+        from article_theme import product_theme
+        theme = product_theme({**topic, 'title': payload.get('h1') or topic.get('title')})
+        # The old article and all previous receipts are archived for auditing,
+        # never consumed by the new Planner/Product/Writer pipeline.
         _backup_original(slug)
-        write_artifact(slug, 'evidence.json', evidence)
-        write_artifact(slug, 'selection.json', selection)
-        write_artifact(slug, 'payload.json', payload)
-        # Never inherit a publication/quality authorization for changed content.
-        for stale in ('qa.json', 'acceptance.json', 'qa-certification.json',
-                      'independent-quality-receipts.json', 'chat-publish-approval.json',
-                      'gate-feedback.json', 'product-blocker.json'):
-            write_artifact(slug, stale, {})
-        source_hash = hashlib.sha256((article / 'body.json').read_bytes()).hexdigest()
+        for old in ('payload.json', 'evidence.json', 'selection.json',
+                    'acceptance.json', 'qa.json', 'qa-certification.json',
+                    'independent-quality-receipts.json', 'chat-publish-approval.json',
+                    'gate-feedback.json', 'editorial-plan.json',
+                    'editorial-plan-review.json', 'claim-qa-reuse.json'):
+            path = job_dir(slug) / old
+            if path.is_file():
+                path.unlink()
+        write_artifact(slug, 'topic.json', {
+            'slug': slug, 'category': state['category'], 'product_theme': theme,
+        })
+        write_artifact(slug, 'product-search-progress.json', {
+            'candidates': [], 'excluded_asins': [], 'queries': [],
+            'reviewed_sets': [], 'researched_asins': [],
+            'source_backfill_attempted': [], 'complete': False,
+            'reuse_previous_products': False,
+        })
         write_artifact(slug, MARKER, {
             'task_id': 'TASK-BU002-LEGACY-436-CONTINUOUS-RECOVERY-20261115',
-            'source_body_sha256': source_hash,
-            'phase': 'initial_precheck',
+            'phase': 'planning_required', 'adapter_revision': 'shared-product-v1',
             'original_published_commit': state.get('published_commit'),
         })
-        set_stage(slug, 'WRITER_PENDING', event='LEGACY_REPAIR_ADMITTED',
-                  detail={'source_body_sha256': source_hash})
+        write_artifact(slug, 'legacy-theme-only-rebuild.json', {
+            'batch': 'theme-only-admission', 'theme': theme,
+            'first_draft_completed': False,
+            'audit_snapshot': BACKUP,
+        })
         from growth_recovery import _save_state
-        state = load_job(slug)
         state['source'] = 'legacy_repair'
-        _save_state(state, event='LEGACY_REPAIR_SOURCE_BOUND')
-        return {'slug': slug, 'admitted': True, 'source_body_sha256': source_hash}
+        _save_state(state, event='LEGACY_THEME_ONLY_SOURCE_BOUND')
+        set_stage(slug, 'PLANNING_PENDING', event='LEGACY_THEME_ONLY_REBUILD_ADMITTED',
+                  detail={'retained_theme': theme})
+        return {'slug': slug, 'admitted': True, 'replanning': True,
+                'theme_only': True}
     return {'admitted': False}
 
 
@@ -354,9 +351,10 @@ def replan_one(slug: str) -> dict:
             or not state.get('published_commit')):
         raise ValueError('published legacy Planning restart not authorized for ' + slug)
     old_topic = read_artifact(slug, 'topic.json') or {}
-    old_payload = read_artifact(slug, 'payload.json') or {}
     from article_theme import product_theme
-    theme = product_theme({**old_topic, 'title': old_payload.get('h1') or old_topic.get('title')})
+    # Theme is the ONLY durable editorial input from a legacy article.
+    # Never read its old payload as a Planning input.
+    theme = product_theme(old_topic)
     marker['adapter_revision'] = 'shared-product-v1'
     write_artifact(slug, MARKER, marker)
     try:

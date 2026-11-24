@@ -45,6 +45,14 @@ def writer(slug: str) -> dict:
         raise GrowthRuntimeError(f'product acceptance integrity fault for {slug}: ' + '; '.join(issues))
     previous = read_artifact(slug, 'payload.json')
     gate_feedback = read_artifact(slug, 'gate-feedback.json', {}) or {}
+    from growth_recovery import load_job
+    state = load_job(slug)
+    rebuild = read_artifact(slug, 'legacy-theme-only-rebuild.json', {}) or {}
+    first_rebuild_draft = (state.get('source') == 'legacy_repair'
+                           and rebuild.get('first_draft_completed') is False)
+    if first_rebuild_draft:
+        # A fresh rebuild cannot reference old article copy or inherited QA.
+        previous, gate_feedback = None, {}
     plan = build_editorial_plan(topic, evidence, str(gate_feedback.get('ceo_rework') or ''))
     write_artifact(slug, 'editorial-plan.json', plan)
     started = time.monotonic()
@@ -67,6 +75,9 @@ def writer(slug: str) -> dict:
                          role_return=True, role='writer')
             raise GrowthRuntimeError(f'Writer requested editorial revision for {slug}')
         write_artifact(slug, 'payload.json', payload)
+        if first_rebuild_draft:
+            write_artifact(slug, 'legacy-theme-only-rebuild.json',
+                           {**rebuild, 'first_draft_completed': True})
         return {'writer_ready': True, 'metadata': metadata}
     except GrowthRuntimeError:
         raise

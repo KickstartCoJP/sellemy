@@ -1,0 +1,30 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "CEO-BU002-LEGACY-THEME-ONLY-REBUILD-20261125",
+  "instruction_ref": "CEO direct: '既存の復旧はテーマ固定以外は全部作り直しだぞ？' and '修正して、それで作った全記事を差し戻してやりなおせ。公開したものがあればそれも差し戻せ。'",
+  "instruction": "For all legacy_repair articles, keep only the product theme and existing article slug/category identity. Fully redo Planning, selection, sourcing, Writer, independent QA and CEO review. Do not inherit old products, article prose, selection, evidence, QA receipts or prior publication approval. Force new legacy admissions onto the same theme-only path. Reset the 279 impacted legacy recovery jobs with durable per-job audit backups, including 27 CEO review and one publish-pending draft; no completed legacy repair publication existed to revoke. Preserve historical original live baselines and publication infrastructure; do not touch unrelated runtime articles or their approvals.",
+  "implementer": "Direct staged editing on Mac Studio; approved live reset executed under the production growth lock",
+  "allowed_paths": [
+    "change-contracts/bu002-legacy-theme-only-full-rebuild-20261125.json",
+    "pipeline/legacy_article_recovery.py",
+    "pipeline/role_execution_writer.py",
+    "ops/reset_legacy_theme_only_20261125.py",
+    "tests/test_legacy_article_recovery.py",
+    "tests/test_legacy_theme_only_rebuild_20261125.py"
+  ],
+  "preserved_rules": [
+    "Existing live published baseline URL/slug/category is immutable; only new rebuilds require CEO approval before replacing it",
+    "Theme is the only retained editorial substance from historical content",
+    "All new product and Writer QA requirements and independent reviewer criteria remain unchanged",
+    "Original jobs are retained as audit snapshots; no unrelated runtime jobs are reset",
+    "No fresh unrelated topic admission, no change to common scheduling/provider configurations",
+    "Normal QA revision of a NEW article may retain its own current draft; an initial legacy rebuild never receives prior article copy"
+  ],
+  "acceptance_tests": [
+    "tests/test_legacy_article_recovery.py",
+    "tests/test_legacy_theme_only_rebuild_20261125.py"
+  ],
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3"
+  ]
+}
