@@ -63,3 +63,64 @@ def test_detail_backfill_requires_every_official_notice(tmp_path):
     assert cached_registry(index_path=index,details_path=details)['count']==2
     stale=now+timedelta(days=2)
     assert cached_registry(index_path=index,details_path=details,now=stale) is None
+
+
+def test_caa_complete_feed_and_cache_or_fail_closed(tmp_path):
+    from safety_government_feed import caa_registry,GovernmentFeedUnavailable
+    class Result:
+        returncode=0
+        stderr=''
+        def __init__(self,screen,page,count):
+            self.stdout=json.dumps({'screen':screen,'page':page,'count':count,'rows':[
+                {'title':f'{screen}-{i} Anker Soundcore 3',
+                 'url':f'https://www.recall.caa.go.jp/result/detail.php?rcl={screen}{i}',
+                 'published':'2026/11/25'} for i in range(page*60,min(count,(page+1)*60))]})
+    seen=[]
+    def runner(cmd,**kwargs):
+        screen=cmd[-3];page=int(cmd[-1]);seen.append((screen,page))
+        return Result(screen,page,61 if screen=='02' else 2)
+    path=tmp_path/'caa.json';partial=tmp_path/'progress.json'
+    out=caa_registry(path=path,partial_path=partial,runner=runner)
+    assert out['complete'] and out['count']==63
+    assert seen==[('02',0),('02',1),('03',0)]
+    assert 'Anker' in out['details'][0]['text']
+    assert caa_registry(path=path,partial_path=partial,runner=lambda *args,**kw:(_ for _ in ()).throw(AssertionError()))==out
+    path.unlink()
+    def bad(cmd,**kwargs):
+        r=runner(cmd,**kwargs)
+        r.stdout=json.dumps({'screen':cmd[-3],'page':int(cmd[-1]),'count':4,'rows':[]})
+        return r
+    with pytest.raises(GovernmentFeedUnavailable):caa_registry(path=path,partial_path=partial,runner=bad)
+    assert not path.exists()
+
+
+def test_caa_resume_after_failed_page(tmp_path):
+    from safety_government_feed import caa_registry,GovernmentFeedUnavailable
+    path=tmp_path/'caa.json';partial=tmp_path/'partial.json'
+    calls=[]
+    def runner(cmd,**kwargs):
+        screen,page=cmd[-3],int(cmd[-1]);calls.append((screen,page))
+        count=61 if screen=='02' else 1
+        if (screen,page)==('02',1) and calls.count(('02',1))==1:
+            return type('R',(),{'returncode':1,'stderr':'remote error','stdout':''})()
+        rows=[{'title':f'Model {i}','url':f'https://www.recall.caa.go.jp/result/detail.php?rcl={screen}{i}'}
+              for i in range(page*60,min(count,page*60+60))]
+        return type('R',(),{'returncode':0,'stderr':'','stdout':json.dumps({
+            'screen':screen,'page':page,'count':count,'rows':rows})})()
+    with pytest.raises(GovernmentFeedUnavailable):
+        caa_registry(path=path,partial_path=partial,runner=runner)
+    assert partial.exists() and not path.exists()
+    result=caa_registry(path=path,partial_path=partial,runner=runner)
+    assert result['complete'] and result['count']==62
+    assert calls.count(('02',0))==2 and calls.count(('02',1))==2
+    assert not partial.exists()
+
+
+def test_caa_absence_blocks_combined_all_clear():
+    from safety_government_feed import cached_combined_registry
+    from unittest.mock import patch
+    with patch('safety_government_feed.cached_registry',return_value={
+        'source':'NITE','count':1,'checked_at':datetime.now(timezone.utc).isoformat(),
+        'complete':True,'details':[{'id':'1','text':'hello'}]}):
+        with patch('safety_government_feed.CAA_INDEX_PATH',Path('/tmp/missing-sellemy-caa-test-file.json')):
+            assert cached_combined_registry() is None

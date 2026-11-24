@@ -4,12 +4,12 @@ Only actual published evidence is monitored. No article is automatically changed
 or re-approved. Every published product is matched against the full NITE corpus daily.
 """
 from __future__ import annotations
-import argparse,hashlib,json
+import argparse,hashlib,json,time,traceback
 from datetime import datetime,timezone
 from pathlib import Path
 from growth_recovery import ROOT,STATE_ROOT
 from safety_recall import unsafe_products
-from safety_government_feed import full_registry
+from safety_government_feed import combined_registry
 
 OUTPUT=STATE_ROOT/'safety-monitor'
 
@@ -40,7 +40,7 @@ def run(*,root=ROOT,output=OUTPUT,limit=None,live=True,now=None,registry=None):
     products=list(grouped.values())
     # No 80-product cursor or partial daily scan. A government feed failure
     # aborts before an all-clear can be recorded.
-    registry=registry or full_registry()
+    registry=registry or combined_registry()
     if not registry.get('complete') or len(registry.get('details') or [])!=registry.get('count'):
         raise ValueError('government recall feed is incomplete')
     flags,records=unsafe_products(products,live=False,registry=registry)
@@ -82,6 +82,21 @@ def run(*,root=ROOT,output=OUTPUT,limit=None,live=True,now=None,registry=None):
 def main():
     parser=argparse.ArgumentParser()
     args=parser.parse_args()
-    print(json.dumps(run(),ensure_ascii=False))
+    last_error=None
+    for attempt in range(1,6):
+        try:
+            result=run()
+            failure=OUTPUT/'last-error.json'
+            if failure.exists():failure.unlink()
+            print(json.dumps({**result,'attempt':attempt,'status':'OK'},ensure_ascii=False))
+            return
+        except Exception as exc:
+            last_error={'status':'FAILED','attempt':attempt,
+                        'detected_at':datetime.now(timezone.utc).isoformat(),
+                        'error_type':type(exc).__name__,'error':str(exc)[:1000]}
+            OUTPUT.mkdir(parents=True,exist_ok=True)
+            (OUTPUT/'last-error.json').write_text(json.dumps(last_error,ensure_ascii=False,indent=2),encoding='utf-8')
+            if attempt<5:time.sleep(min(3*attempt,12))
+    raise RuntimeError('Safety monitoring failed after five attempts; persistent alert: '+str(OUTPUT/'last-error.json'))
 
 if __name__=='__main__':main()

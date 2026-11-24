@@ -1,0 +1,31 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "CEO-BU002-COMPLETE-RECALL-CHECK-20261125",
+  "instruction_ref": "CEO direct 2026-11-25: '中途半端な実装すんなよ。ちゃんとやれ。' After explicit gaps in CAA coverage, full official detail acquisition, product identity matching, and monitoring resilience",
+  "instruction": "Within BU-002 recall safety only, complete the NITE official register detail backfill with checkpointed retries, add CAA priority and new registration ingestion with exact all-page counting and durable per-page recovery, require both official sources before safety all-clear, precisely match full model/brand/Jan identities to prevent short-token/brand-only false positives, compare the entire published product corpus, and record monitoring failures with five retries. Validate known Anker Soundcore 3 official recall, Casio accessory case, and reject false Panasonic/Sanyo and model-year cross-product matches. Do not change unrelated article, SEO, growth planning, other BU or publishing approval flows.",
+  "implementer": "Direct Mac Studio staging changes, with a real full NITE 2842-detail collection and full published product audit",
+  "canonical_refs": ["https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3"],
+  "allowed_paths": [
+    "change-contracts/bu002-recall-reliability-and-coverage-20261125.json",
+    "pipeline/safety_government_feed.py",
+    "pipeline/vm_caa_recall_feed.py",
+    "pipeline/safety_recall.py",
+    "pipeline/safety_monitor.py",
+    "tests/test_safety_government_feed_20261125.py",
+    "tests/test_safety_gates_20261125.py",
+    "tests/test_comparison_acceptance.py"
+  ],
+  "preserved_rules": [
+    "Only the Sellemy safety recall collection, lookup, monitoring, and tests may change",
+    "All unrelated Product, Planning, Writer, SEO, design and publication behavior is preserved",
+    "Existing independent Article Safety QA and Editorial QA/Claim QA/CEO approval are preserved",
+    "Unavailable or incomplete official data never authorizes a safety PASS",
+    "Only verified administrative notice URLs are treated as recall evidence; manufacturer sites are referenced after an official match",
+    "Published articles are not automatically changed, removed or newly approved by the monitor"
+  ],
+  "acceptance_tests": [
+    "tests/test_safety_government_feed_20261125.py",
+    "tests/test_safety_gates_20261125.py",
+    "tests/test_comparison_acceptance.py"
+  ]
+}

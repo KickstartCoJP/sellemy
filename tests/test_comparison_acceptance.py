@@ -315,7 +315,8 @@ class BoundaryRecoveryTests(RecoveryCase):
         p, e = fixture('book-reading-stands')
         topic = {'slug': e['slug'], 'category': e['category'], 'title': p['h1'],
                  'query': '読書台', 'comparison_axes': e['comparison_axes']}
-        with patch.object(business, 'rank_candidates', return_value=[topic]), \
+        with patch('safety_recall.unsafe_products',return_value=([],[])), \
+             patch.object(business, 'rank_candidates', return_value=[topic]), \
              patch.object(business, 'discover_products', return_value=e['products']), \
              patch.object(business, 'collect_unique_products', return_value=(e['products'], {'complete': True, 'attempts': []})), \
              patch.object(business, 'select_six',return_value=(e['products'], {})), \
@@ -350,7 +351,8 @@ class BoundaryRecoveryTests(RecoveryCase):
         p, e, a = accepted_fixture()
         topic = {'slug': e['slug'], 'category': e['category'], 'title': p['h1'],
                  'query': '読書台', 'comparison_axes': e['comparison_axes']}
-        with patch.object(business, 'rank_candidates', return_value=[topic]), \
+        with patch('safety_recall.unsafe_products',return_value=([],[])), \
+             patch.object(business, 'rank_candidates', return_value=[topic]), \
              patch.object(business, 'discover_products', return_value=e['products']), \
              patch.object(business, 'collect_unique_products', return_value=(e['products'], {'complete': True, 'attempts': []})), \
              patch.object(business, 'select_six',return_value=(e['products'], {})), \
@@ -377,7 +379,8 @@ class BoundaryRecoveryTests(RecoveryCase):
         slug=e['slug']
         gr.request_product_reselection(slug, ['needs new facts'])
         gr.write_artifact(slug, 'acceptance.json', a)
-        with patch.object(business, 'discover_products', return_value=e['products']) as discover, \
+        with patch('safety_recall.unsafe_products',return_value=([],[])), \
+             patch.object(business, 'discover_products', return_value=e['products']) as discover, \
              patch.object(business, 'collect_unique_products',return_value=(e['products'], {'complete':True, 'attempts':[]})), \
              patch.object(business, 'load_feedback', return_value={}), \
              patch.object(business, 'select_six',return_value=(e['products'], {})), \

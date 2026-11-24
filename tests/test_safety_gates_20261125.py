@@ -145,3 +145,58 @@ def test_monitor_scans_all_products_without_daily_limit(tmp_path):
     receipt=monitor_run(root=root,output=tmp_path/'out',registry=reg)
     assert receipt['scanned']==101 and receipt['unique_products']==101
     assert receipt['official_recall_notices']==1
+
+
+def test_real_catalog_precisely_matches_recalled_model_not_similar_series():
+    from safety_recall import catalog_matches
+    names=['Anker Soundcore 3 Pro','Anker Soundcore 3i','Anker Soundcore 30']
+    for name in names:assert catalog_matches(product('B000000029',name,'Anker'))==[]
+
+
+def test_short_unrelated_sku_does_not_generate_false_recall():
+    from safety_recall import scan_products
+    reg={'complete':True,'count':2,'checked_at':'2026-11-25T00:00:00+00:00',
+         'details':[{'id':'1','source':'https://safe-lite.nite.go.jp/recall/detail/1',
+                     'text':'三洋電機の食器洗い乾燥機 D503 を回収', 'manufacturer':'三洋電機株式会社'},
+                    {'id':'2','source':'https://safe-lite.nite.go.jp/recall/detail/2',
+                     'text':'ブラザー工業 2002年のミシンリコール', 'manufacturer':'ブラザー工業株式会社'}]}
+    rows=scan_products([product('B000000091','パナソニック NH-D503','パナソニック'),
+                        product('B000000092','ビタクラフト フライパン No.2002','ビタクラフト')],registry=reg)
+    assert all(r['status']=='NO_OFFICIAL_SIGNAL' for r in rows)
+
+
+def test_model_key_includes_digit_leading_and_short_hyphenated_skus():
+    from safety_recall import _product_models
+    a=_product_models(product('B000000077','ハイセンス 液晶テレビ 43E50S','ハイセンス'))
+    b=_product_models(product('B000000078','レコルト RAO-3(W) クリームホワイト','レコルト'))
+    c=_product_models(product('B000000079','カレンダー 2027年',''))
+    assert '43E50S' in a and 'RAO-3' in b
+    assert '2027' not in c
+
+
+def test_monitor_retries_five_times_and_preserves_failure_notice(tmp_path):
+    import safety_monitor
+    errors=[]
+    def broken():
+        errors.append(1)
+        raise RuntimeError('CAA feed unavailable')
+    with patch.object(safety_monitor,'OUTPUT',tmp_path), \
+         patch.object(safety_monitor,'run',side_effect=broken), \
+         patch('safety_monitor.time.sleep'), \
+         patch('sys.argv',['safety_monitor']):
+        with pytest.raises(RuntimeError,match='five attempts'):
+            safety_monitor.main()
+    assert len(errors)==5
+    saved=json.loads((tmp_path/'last-error.json').read_text())
+    assert saved['attempt']==5 and saved['status']=='FAILED'
+    assert 'CAA' in saved['error']
+
+
+def test_monitor_clears_last_error_after_success(tmp_path):
+    import safety_monitor
+    (tmp_path/'last-error.json').write_text('old alert')
+    with patch.object(safety_monitor,'OUTPUT',tmp_path), \
+         patch.object(safety_monitor,'run',return_value={'scanned':3}), \
+         patch('sys.argv',['safety_monitor']):
+        safety_monitor.main()
+    assert not (tmp_path/'last-error.json').exists()
