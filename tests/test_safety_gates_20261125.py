@@ -33,7 +33,7 @@ def test_recall_soundcore_3_prevents_unqualified_recommendation():
     assert len(hit)==1 and hit[0]['model_number']=='A3117'
     flags,rows=unsafe_products([x],live=False)
     assert flags and rows[0]['status']=='RECALL'
-    assert 'ankerjapan.com' in flags[0]['signals'][0]['source']
+    assert 'safe-lite.nite.go.jp' in flags[0]['signals'][0]['source']
     assert catalog_matches(product('B000001111','Soundcore 3i','Anker'))==[]
     assert catalog_matches(product('B000001112','Soundcore Motion X600','Anker'))[0]['model_number']=='A3130'
 
@@ -96,10 +96,52 @@ def test_monitor_alerts_published_only_and_deduplicates(tmp_path):
     (root/'data'/'evidence'/'unpublished.json').write_text(json.dumps({
         'slug':'unpublished','category':'gadget','products':[product()]}))
     out=tmp_path/'monitor'
-    first=monitor_run(root=root,output=out,limit=20,live=False,now=datetime(2026,11,25,tzinfo=timezone.utc))
+    registry={'complete':True,'count':1,'checked_at':'2026-11-25T00:00:00+00:00',
+              'details':[{'id':'2025102101','source':'https://safe-lite.nite.go.jp/recall/detail/2025102101',
+                          'text':'アンカー・ジャパン株式会社 Soundcore 3 型番 A3117011 リコール 回収'}]}
+    first=monitor_run(root=root,output=out,now=datetime(2026,11,25,tzinfo=timezone.utc),registry=registry)
     assert first['published_articles']==1 and first['new_alerts']==1
-    second=monitor_run(root=root,output=out,limit=20,live=False,now=datetime(2026,11,26,tzinfo=timezone.utc))
+    second=monitor_run(root=root,output=out,now=datetime(2026,11,26,tzinfo=timezone.utc),registry=registry)
     assert second['new_alerts']==0 and second['total_alerts']==1
     alert=json.loads((out/'alerts.json').read_text())['items'][0]
     assert alert['article_slug']=='wireless-speakers-6-picks'
     assert alert['asin']=='B000000001' and alert['status']=='RECALL'
+
+
+def test_complete_official_register_determines_every_product_not_a_search_snippet():
+    from safety_recall import scan_products
+    registry={'complete':True,'count':1,'checked_at':'2026-11-25T00:00:00+00:00',
+              'details':[{'id':'2025102101','source':'https://safe-lite.nite.go.jp/recall/detail/2025102101',
+                           'text':'アンカー・ジャパン株式会社 製品名 Soundcore 3 型番 A3117011 リコール'}]}
+    products=[product('B000000021','Anker Soundcore 3 Bluetoothスピーカー','Anker'),
+              product('B000000022','一般の水切りラック','Generic')]
+    rows=scan_products(products,registry=registry)
+    assert rows[0]['status']=='RECALL'
+    assert rows[1]['status']=='NO_OFFICIAL_SIGNAL'
+    rows=scan_products(products,registry={'complete':False,'count':1,'details':[]})
+    assert rows[0]['status']=='RECALL' and rows[1]['status']=='NOT_CHECKED'
+
+
+def test_government_matching_without_preloaded_recall_list():
+    from safety_recall import scan_products
+    registry={'complete':True,'count':1,'checked_at':'2026-11-25T00:00:00+00:00',
+              'details':[{'id':'2026112501','source':'https://safe-lite.nite.go.jp/recall/detail/2026112501',
+                          'text':'架空メーカー モデル XM-4500 電池発火のため回収'}]}
+    p=product('B000000030','架空メーカー XM-4500 卓上機器','Sample')
+    result=scan_products([p],registry=registry)[0]
+    assert result['status']=='POTENTIAL_RECALL'
+    assert result['signals'][0]['source_type']=='NITE_SAFE_LITE'
+
+
+def test_monitor_scans_all_products_without_daily_limit(tmp_path):
+    root=tmp_path/'site';(root/'data'/'evidence').mkdir(parents=True)
+    (root/'article'/'gadget').mkdir(parents=True)
+    (root/'article'/'gadget'/'many.html').write_text('published')
+    items=[product(f'B{i:09d}',f'Generic household tool model K-{i:05d}','Generic') for i in range(1,102)]
+    (root/'data'/'evidence'/'many.json').write_text(json.dumps({'slug':'many','category':'gadget','products':items}))
+    reg={'complete':True,'count':1,'checked_at':'2026-11-25T00:00:00+00:00',
+         'details':[{'id':'2026112502','source':'https://safe-lite.nite.go.jp/recall/detail/2026112502',
+                     'text':'別の製品 型番 Z-99999 リコール'}]}
+    receipt=monitor_run(root=root,output=tmp_path/'out',registry=reg)
+    assert receipt['scanned']==101 and receipt['unique_products']==101
+    assert receipt['official_recall_notices']==1

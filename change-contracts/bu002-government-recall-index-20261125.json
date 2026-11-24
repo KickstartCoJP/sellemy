@@ -1,0 +1,28 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "CEO-BU002-GOVERNMENT-RECALL-MATCH-20261125",
+  "instruction_ref": "CEO direct 2026-11-25: 'メーカー公式まで見れなくね？' then 'その方式に修正を。' following agreed administrative recall registry plus full-product matching",
+  "instruction": "Replace PR #151 per-product manufacturer-wide web search and its top-four-link limit with an official NITE SAFE-Lite government recall corpus. Collect all paginated official listings, obtain every corresponding official notice with resumable, fail-closed backfill, and compare ALL six selected products and ALL published products daily. Do not issue an all-clear for stale, incomplete or unavailable government data. Keep recall candidates on hold for serial/date scope verification, and expose directly linked manufacturer notice only after an official government recall match. Preserve existing independent Article Safety QA, CEO approval, publication controls and all other product rules.",
+  "implementer": "Direct Mac Studio staging change to the previously merged Safety PR, no Codex code modifications",
+  "canonical_refs": ["https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3"],
+  "allowed_paths": [
+    "change-contracts/bu002-government-recall-index-20261125.json",
+    "config/safety-recalls.json",
+    "ops/com.kickstart.sellemy-safety-monitor.plist",
+    "pipeline/growth_role_business.py",
+    "pipeline/safety_government_feed.py",
+    "pipeline/safety_monitor.py",
+    "pipeline/safety_recall.py",
+    "pipeline/vm_safety_search.py",
+    "tests/test_safety_gates_20261125.py",
+    "tests/test_safety_government_feed_20261125.py"
+  ],
+  "preserved_rules": [
+    "All non-Sellemy modules and unrelated Sellemy product, Writer, SEO and portal behavior are unchanged",
+    "Keep existing independent Article Safety QA and normal Editorial/Claim/CEO publication gates",
+    "Safety alerts do not automatically alter a published article",
+    "Manufacturer pages are never crawled across all vendors; notice URL links are exposed only after a matching official government notice",
+    "Incomplete governmental source evidence never counts as an absence of recall"
+  ],
+  "acceptance_tests": ["tests/test_safety_government_feed_20261125.py", "tests/test_safety_gates_20261125.py"]
+}
