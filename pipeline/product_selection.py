@@ -184,32 +184,89 @@ axesは入力の3軸を1回ずつ含め、各軸の商品は相異なる2件、�
     model, effort = require_codex_settings('bu-codex-sellemy-planning', 'planning')
     command = shlex.split(os.environ.get('SELLEMY_PRODUCT_SELECTOR_COMMAND',
                                           os.environ.get('SELLEMY_PLANNING_COMMAND', '/opt/homebrew/bin/codex')))
-    try:
-        result = subprocess.run([*command, 'exec', '--ephemeral', '--json',
-                                 '--skip-git-repo-check', '--sandbox', 'read-only',
-                                 '--model', model, '--config', f'model_reasoning_effort={effort}', '-'],
-                                input=prompt, text=True, capture_output=True,
-                                timeout=int(os.environ.get('SELLEMY_PRODUCT_SELECTOR_TIMEOUT_SECONDS', '300')))
-        if result.returncode:
-            raise ProductSelectionError('AI selection provider failed')
-        messages = []
-        for line in result.stdout.splitlines():
-            try:
-                event = json.loads(line)
-            except ValueError:
-                continue
-            if event.get('type') == 'item.completed' and (event.get('item') or {}).get('type') == 'agent_message':
-                messages.append(event['item'].get('text', ''))
-        if not messages:
-            raise ProductSelectionError('AI selection returned no output')
-        raw = messages[-1].strip()
-        if raw.startswith('```'):
-            raw = re.sub(r'^```(?:json)?\s*|\s*```$', '', raw)
-        axis_output = json.loads(raw)['axes']
-    except ProductSelectionError:
-        raise
-    except (OSError, subprocess.TimeoutExpired, ValueError, TypeError, KeyError) as exc:
-        raise ProductSelectionError(f'AI product selection failed: {type(exc).__name__}') from exc
+    expected_axes = [axis['id'] for axis in axes]
+    axis_output = None
+    # Provider schema glitches must be corrected before dropping a valid pool.
+    # Keep Product QA as the final semantic authority; no invented selections.
+    for attempt in range(3):
+        try:
+            retry_prompt = prompt if attempt == 0 else prompt + (
+                '\nSCHEMA CORRECTION: Return EXACTLY three axes in this order: ' +
+                json.dumps(expected_axes, ensure_ascii=False) +
+                '. Each group must contain exactly two distinct candidates from '
+                'the matching discovery_axis_id, preserving retained_asins. '
+                'Return a JSON object with one axes array and no commentary.')
+            result = subprocess.run([*command, 'exec', '--ephemeral', '--json',
+                                     '--skip-git-repo-check', '--sandbox', 'read-only',
+                                     '--model', model, '--config', f'model_reasoning_effort={effort}', '-'],
+                                    input=retry_prompt, text=True, capture_output=True,
+                                    timeout=int(os.environ.get('SELLEMY_PRODUCT_SELECTOR_TIMEOUT_SECONDS', '300')))
+            if result.returncode:
+                raise ProductSelectionError('AI selection provider failed')
+            messages = []
+            for line in result.stdout.splitlines():
+                try: event = json.loads(line)
+                except ValueError: continue
+                if event.get('type') == 'item.completed' and (event.get('item') or {}).get('type') == 'agent_message':
+                    messages.append(event['item'].get('text', ''))
+            if not messages: raise ProductSelectionError('AI selection returned no output')
+            raw = messages[-1].strip()
+            if raw.startswith('```'):
+                raw = re.sub(r'^```(?:json)?\s*|\s*```$', '', raw)
+            proposal = json.loads(raw)['axes']
+            if not isinstance(proposal, list) or len(proposal) != 3:
+                raise ProductSelectionError('AI selection requires exactly three axis groups')
+            if {x.get('axis_id') for x in proposal if isinstance(x, dict)} != set(expected_axes):
+                raise ProductSelectionError('AI selection axis identities mismatch')
+            proposal = sorted(proposal, key=lambda x: expected_axes.index(x['axis_id']))
+            if any(not isinstance(x.get('products'), list) or len(x['products'])!=2 for x in proposal):
+                raise ProductSelectionError('AI selection requires two products per axis')
+            by_ref = {p['asin']:p for p in pool}
+            chosen = [r.get('asin') for group in proposal for r in group['products'] if isinstance(r,dict)]
+            if len(chosen)!=6 or len(set(chosen))!=6 or not pinned_asins.issubset(set(chosen)):
+                raise ProductSelectionError('AI selection repeated ASIN or omitted retained product')
+            if any(r.get('asin') not in by_ref or by_ref[r['asin']].get('discovery_axis_id')!=group['axis_id']
+                   or not isinstance(r.get('reason'),str) or not r['reason'].strip()
+                   for group in proposal for r in group['products'] if isinstance(r,dict)):
+                raise ProductSelectionError('AI selection invalid candidate or axis assignment')
+            axis_output = proposal
+            break
+        except (ProductSelectionError,OSError,subprocess.TimeoutExpired,ValueError,TypeError,KeyError) as exc:
+            if attempt == 2:
+                # A provider outage remains an infrastructure failure. Repeated
+                # malformed JSON is a formatting failure, not missing products.
+                if ('provider failed' in str(exc) or 'no output' in str(exc) or
+                    isinstance(exc,(OSError,subprocess.TimeoutExpired))):
+                    raise ProductSelectionError(f'AI product selection provider unavailable: {exc}') from exc
+                fallback=[]
+                selected_pins=set(pinned_asins)
+                for axis in axes:
+                    available_axis=[p for p in pool if p.get('discovery_axis_id')==axis['id']]
+                    pinned_axis=[p for p in available_axis if p['asin'] in selected_pins]
+                    if len(pinned_axis)>2:
+                        raise ProductSelectionError('retained products exceed axis capacity')
+                    chosen=list(pinned_axis)
+                    for p in available_axis:
+                        if len(chosen)==2: break
+                        if p['asin'] in {item['asin'] for item in chosen}:continue
+                        # Prefer a different manufacturer, but avoid claiming
+                        # a product fact that the listing has not established.
+                        different_brand=bool(p.get('brand') and all(
+                            p['brand'].lower()!=str(item.get('brand') or '').lower()
+                            for item in chosen))
+                        if different_brand:chosen.append(p)
+                    for p in available_axis:
+                        if len(chosen)==2:break
+                        if p['asin'] not in {item['asin'] for item in chosen}:chosen.append(p)
+                    if len(chosen)!=2:
+                        raise ProductSelectionError('selection fallback lacks distinct axis candidates')
+                    fallback.append({'axis_id':axis['id'],'products':[
+                        {'asin':p['asin'],
+                         'reason':f'紹介切り口「{axis.get("label") or axis["id"]}」の候補: '+
+                                  str(p.get('amazon_title') or '')[:150]} for p in chosen]})
+                axis_output=fallback
+                break
+    assert axis_output is not None
     by_asin = {p['asin']: p for p in pool}
     expected_axes = [axis['id'] for axis in axes]
     if not isinstance(axis_output, list) or len(axis_output) != 3:
@@ -241,7 +298,9 @@ axesは入力の3軸を1回ずつ含め、各軸の商品は相異なる2件、�
     # Independent Product QA remains responsible for rejecting weak axes.
     covered = set().union(*(_axis_matches(p, axes) for p in selected))
     return selected, {
-        'method': 'ai_selection_three_axes_two_each', 'candidate_count': len(pool),
+        'method': 'ai_selection_three_axes_two_each' if attempt<2 else
+                  'schema_recovery_candidate_selection_pending_product_qa',
+        'candidate_count': len(pool),
         'axes': selection_axes,
         'comparison_axes_covered': sorted(covered),
         'brand_count': len({str(p.get('brand') or '').lower() for p in selected if p.get('brand')}),

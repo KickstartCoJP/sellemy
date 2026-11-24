@@ -1,0 +1,30 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "CEO-BU002-PRODUCT-SELECTION-RECOVERY-20261125",
+  "instruction_ref": "CEO 2026-11-25: explicit '直せ' after actual humidifier, scalp shampoo and hand cream selection failures; erroneous rejection, stale candidate set exhaustion, selector JSON format",
+  "instruction": "BU-002 Product selection and recovery only. Reassess stale independent Product reviews rejected solely on obsolete source-anchor quotation format; do not let the same reviewed_sets signature poison the original candidate pool after QA rules changed. Preserve prior reviewed product evidence as a recoverable candidate snapshot when the stored pool is sparse. Never overwrite the full candidate pool with a partial search result. Retain genuinely rejected products as NG. Correct AI selector response schema errors with bounded retries; tolerate axis group ordering and after repeat formatting errors choose existing real listing candidates as candidates for full independent Product QA rather than declaring a nonempty candidate catalogue exhausted. Keep source/prod errors distinct from formatting failures. Add offline deterministic end-to-end recovery tests; CEO gate remains mandatory.",
+  "implementer": "BU-002 scope-controlled code change; CEO review before production merge",
+  "canonical_refs": ["https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3"],
+  "allowed_paths": [
+    "change-contracts/bu002-product-selection-recovery-20261125.json",
+    "pipeline/growth_role_business.py",
+    "pipeline/product_selection.py",
+    "tests/test_product_selection_recovery_20261125.py",
+    "tests/test_product_reselection_failure_state.py",
+    "tests/test_stale_recovery_product_hold.py",
+    "tests/test_risk_based_qa_20261125.py"
+  ],
+  "preserved_rules": [
+    "Sellemy BU-002 only; no cross-BU, shared runtime, portal or other product changes",
+    "Six distinct products, exactly three editorial axes with two selections each, sponsored exclusion, rating and review filters stay unchanged",
+    "Confirmed semantic duplicate, product mismatch, recall and consequential unsupported claims remain NG through independent Product/Claim/Safety QA",
+    "Fallback candidates are not automatically accepted: independent Product QA and CEO approval remain required",
+    "No automatic modification or publication of existing articles, no CEO gate bypass"
+  ],
+  "acceptance_tests": [
+    "tests/test_product_selection_recovery_20261125.py",
+    "tests/test_product_reselection_failure_state.py",
+    "tests/test_stale_recovery_product_hold.py",
+    "tests/test_risk_based_qa_20261125.py"
+  ]
+}

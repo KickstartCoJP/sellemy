@@ -692,6 +692,15 @@ def _backfill_missing_amazon_sources(pool: list[dict], attempted: set[str], *, l
     return rows, attempted | {item['asin'] for item in pending}
 
 
+def _obsolete_identity_review(artifact: dict) -> bool:
+    """An old quote-only veto is not a rejection of the selected products."""
+    issues=artifact.get('issues') or []
+    checks=(artifact.get('review') or {}).get('products') or []
+    return bool(issues and checks and all(item.get('topic_fit') is True for item in checks)
+        and all(issue=='independent review did not accept' or
+                issue.endswith(': identity has no source anchor') for issue in issues))
+
+
 def _reselect_products(slug: str, *, cache_only: bool) -> None:
     """Keep a durable candidate pool; only return after six products pass QA.
 
@@ -712,6 +721,17 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
     if progress.get('reuse_previous_products', True):
         pool.extend(p for p in previous.get('products', [])
                     if all(p.get(k) for k in ('asin', 'amazon_title', 'image_url')))
+        # The last independent review is a durable product-candidate snapshot.
+        # Restore it when an earlier failed search damaged the saved pool;
+        # do not restore genuinely NG or unrelated-axis products.
+        reviews = sorted(job_dir(slug).glob('product-review-*.json'),
+                         key=lambda path:path.stat().st_mtime,reverse=True)
+        if reviews:
+            previous_review=read_artifact(slug,reviews[0].name,{}) or {}
+            valid_axes={a['id'] for a in topic['comparison_axes']}
+            pool.extend(p for p in (previous_review.get('evidence') or {}).get('products',[])
+                if all(p.get(k) for k in ('asin','amazon_title','image_url'))
+                and p.get('discovery_axis_id') in valid_axes)
     pool, _ = dedupe_content_products([p for p in pool if not is_ng(p.get('asin'))])
 
     def save_progress():
@@ -760,7 +780,9 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
             replenished, search_trace = collect_unique_products(
                 topic, cache_only=cache_only, existing=evidenced,
                 rejected_asins=excluded)
-            pool = replenished
+            # Never discard the old researched pool when a later search only
+            # returns a sparse partial result or experiences an outage.
+            pool, _ = dedupe_content_products([*pool, *replenished])
             tried.extend(search_trace['attempts'])
             if not search_trace['complete']:
                 old_ids = {x.get('to') for x in tried if x.get('event') in ('axis_replaced', 'axis_replacement_attempt') and x.get('to')}
@@ -784,8 +806,13 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
         latest = sorted(job_dir(slug).glob('product-review-*.json'),
                         key=lambda path: path.stat().st_mtime, reverse=True)
         pinned, known_bad = [], set()
-        if latest:
-            old = read_artifact(slug, latest[0].name, {}) or {}
+        old = read_artifact(slug, latest[0].name, {}) or {} if latest else {}
+        stale_identity_review = _obsolete_identity_review(old)
+        if stale_identity_review:
+            # Earlier quote-format failures cannot permanently poison candidate
+            # combinations after the risk-based Product QA contract changed.
+            reviewed_sets.difference_update({ '|'.join(sorted(old.get('asins') or [])) })
+        if latest and not stale_identity_review:
             old_evidence = (old.get('evidence') or {}).get('products') or []
             old_checks = ((old.get('review') or {}).get('products') or [])
             by_ref_old = {item['ref']: item for item in old_evidence}
@@ -809,15 +836,16 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
                 hold_product_review_conflict(slug, reasons=previous_review['issues'],
                     pinned_asins=sorted(pin_set))
                 raise GrowthRuntimeError(f'planning_restart_required for {slug}: incompatible product review')
-        if latest and not (read_artifact(slug, 'product-qa-remediation.json', {}) or {}).get('signature'):
+        if latest and not stale_identity_review and not (read_artifact(slug, 'product-qa-remediation.json', {}) or {}).get('signature'):
             write_artifact(slug, 'product-qa-remediation.json', {
                 'retained_asins': pinned, 'needs_remediation_asins': sorted(known_bad),
                 'issues': old.get('issues') or [],
                 'signature': '|'.join(sorted(old.get('asins') or [])),
             })
         # Choose the previous accepted products first. Only replace the failed slots.
-        if known_bad and not pin_set:
-            # None of the reviewed products passed: do not select them again.
+        if known_bad:
+            # A genuinely rejected product is never allowed back into a new
+            # six-item selection, even when other products passed Product QA.
             available = [p for p in available if p['asin'] not in known_bad]
         if pin_set:
             available_by_asin = {p['asin']: p for p in available}
@@ -828,6 +856,9 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
             # No falling back to the already rejected products when replacements
             # are insufficient; stay in source research instead.
             available = selected_pool
+        # Product-role state may contain 30 valid items while a previous review
+        # poisoned only one six-item combination. Do not report exhaustion
+        # solely because that previous combination was refused on formatting.
         while len(available) >= 6:
             if pin_set:
                 by_asin = {p['asin']: p for p in available}
@@ -905,6 +936,14 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
                 'retained_asins': good, 'needs_remediation_asins': sorted(rejected),
                 'issues': issues, 'signature': signature,
             })
+            # Retain the genuine passing products, excluding only confirmed
+            # topic/identity rejects. A reviewer-output defect is a retryable
+            # review failure, not an exhausted product catalogue.
+            if not rejected and issues and all('identity has no source anchor' in x or
+                x=='independent review did not accept' for x in issues):
+                reviewed_sets.discard(signature)
+                save_progress()
+                raise GrowthRuntimeError(f'product review citation retry required for {slug}')
             save_progress()
             break
         save_progress()
