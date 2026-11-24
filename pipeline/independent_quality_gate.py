@@ -5,6 +5,8 @@ from pathlib import Path
 from editorial_qa import make_input as editorial_input,review_prompt as editorial_prompt,make_receipt as editorial_receipt,validate_verdict
 from claim_qa import make_input as claim_input,review_prompt as claim_prompt,make_receipt as claim_receipt,validate_receipt,reusable_findings
 from comparison_acceptance import product_issues,require_acceptance
+from safety_article_qa import review as safety_review, require_receipt as require_safety_receipt
+from safety_recall import ProductSafetyError
 
 class QualityGateError(ValueError):
     def __init__(self, gate, issues):
@@ -61,7 +63,7 @@ def issue_receipts(payload,evidence,acceptance,judge=None,*,prior_claim_snapshot
     if not changed and reused:
         cr=claim_receipt({'verdict':'PASS','reason':'All six product claims previously passed independent Claim QA with exact unchanged source and article hashes',
             'findings':[finding for row in reused.values() for finding in row]},cs)
-        return {'editorial':er,'claim':cr}
+        return {'editorial':er,'claim':cr,'safety':_issue_safety(payload,evidence,judge)}
     claim_base_prompt=claim_prompt(scoped)
     for attempt in range(2):
         try:
@@ -88,7 +90,22 @@ def issue_receipts(payload,evidence,acceptance,judge=None,*,prior_claim_snapshot
         failure.claim_receipt = cr
         failure.claim_subject = scoped
         raise failure
-    return {'editorial':er,'claim':cr}
+    return {'editorial':er,'claim':cr,'safety':_issue_safety(payload,evidence,judge)}
+
+def _issue_safety(payload,evidence,judge):
+    try:
+        receipt=safety_review(payload,evidence,judge)
+    except ProductSafetyError as exc:
+        raise QualityGateError('product_safety', [str(exc)]) from exc
+    except QualityGateError:
+        raise
+    except Exception as exc:
+        raise QualityGateError('safety', [str(exc)]) from exc
+    if receipt['verdict']!='PASS':
+        raise QualityGateError('safety', [receipt['reason']] +
+            [f.get('article_quote','') for f in receipt.get('findings',[])])
+    return receipt
+
 
 def require_receipts(payload,evidence,acceptance,receipts):
     try:
@@ -96,8 +113,8 @@ def require_receipts(payload,evidence,acceptance,receipts):
     except QualityGateError:raise
     except Exception as exc:raise QualityGateError('product',str(exc)) from exc
     if not isinstance(receipts,dict):raise QualityGateError('receipts','missing independent quality receipts')
-    if not receipts.get('editorial') or not receipts.get('claim'):
-        raise QualityGateError('receipts','missing independent editorial or claim receipt')
+    if not receipts.get('editorial') or not receipts.get('claim') or not receipts.get('safety'):
+        raise QualityGateError('receipts','missing independent editorial, claim or safety receipt')
     try:es=editorial_input(payload)
     except Exception as exc:raise QualityGateError('editorial',str(exc)) from exc
     er=receipts.get('editorial')
@@ -107,4 +124,8 @@ def require_receipts(payload,evidence,acceptance,receipts):
     except Exception as exc:raise QualityGateError('evidence',str(exc)) from exc
     cr=receipts.get('claim');problems=validate_receipt(cr,cs)
     if problems or cr.get('verdict')!='PASS':raise QualityGateError('claim',problems or cr.get('reason','not passed'))
+    try:
+        require_safety_receipt(receipts['safety'],payload,evidence)
+    except Exception as exc:
+        raise QualityGateError('safety',str(exc)) from exc
     return True

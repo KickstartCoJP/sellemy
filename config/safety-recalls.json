@@ -1,0 +1,9 @@
+{
+  "schema": "sellemy-safety-recalls/v1",
+  "items": [
+    {"manufacturer": "Anker", "models": ["Anker PowerCore 10000"], "model_number": "A1263", "status": "RECALL", "source": "https://www.ankerjapan.com/pages/202510-support", "announced": "2025-10-21", "scope": "Serial and sale-date eligibility must be checked by manufacturer"},
+    {"manufacturer": "Anker", "models": ["Soundcore 3"], "model_number": "A3117", "status": "RECALL", "source": "https://www.ankerjapan.com/pages/202510-support", "announced": "2025-10-21", "scope": "Some serial numbers; seller inventory cannot establish exclusion"},
+    {"manufacturer": "Anker", "models": ["Soundcore Motion X600"], "model_number": "A3130", "status": "RECALL", "source": "https://www.ankerjapan.com/pages/202510-support", "announced": "2025-10-21", "scope": "Some colors and serial numbers; manufacturer check required"},
+    {"manufacturer": "Anker", "models": ["Anker PowerConf S500"], "model_number": "A3305", "status": "RECALL", "source": "https://www.ankerjapan.com/pages/202510-support", "announced": "2025-10-21", "scope": "Some serial numbers; manufacturer check required"}
+  ]
+}

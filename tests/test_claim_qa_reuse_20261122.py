@@ -27,7 +27,8 @@ def test_exact_subject_reuses_all_six_claims():
          patch('independent_quality_gate.editorial_input',return_value={}), \
          patch('independent_quality_gate.editorial_prompt',return_value='editorial'), \
          patch('independent_quality_gate.editorial_receipt',return_value={'verdict':'PASS'}), \
-         patch('independent_quality_gate.claim_input',return_value=s):
+         patch('independent_quality_gate.claim_input',return_value=s), \
+         patch('independent_quality_gate._issue_safety',return_value={'verdict':'PASS'}):
         calls=[]
         def reviewer(prompt):
             calls.append(prompt)
@@ -47,7 +48,8 @@ def test_changed_product_rechecks_only_changed_ref_and_merges_valid_full_receipt
          patch('independent_quality_gate.editorial_input',return_value={}), \
          patch('independent_quality_gate.editorial_prompt',return_value='editorial'), \
          patch('independent_quality_gate.editorial_receipt',return_value={'verdict':'PASS'}), \
-         patch('independent_quality_gate.claim_input',return_value=current):
+         patch('independent_quality_gate.claim_input',return_value=current), \
+         patch('independent_quality_gate._issue_safety',return_value={'verdict':'PASS'}):
         prompts=[]
         def reviewer(prompt):
             prompts.append(prompt)
@@ -90,7 +92,8 @@ def test_rechecked_product_fail_is_not_overridden_by_five_cached_passes():
          patch('independent_quality_gate.editorial_input',return_value={}), \
          patch('independent_quality_gate.editorial_prompt',return_value='editorial'), \
          patch('independent_quality_gate.editorial_receipt',return_value={'verdict':'PASS'}), \
-         patch('independent_quality_gate.claim_input',return_value=current):
+         patch('independent_quality_gate.claim_input',return_value=current), \
+         patch('independent_quality_gate._issue_safety',return_value={'verdict':'PASS'}):
         def reviewer(prompt):
             if prompt=='editorial':return {'verdict':'PASS'}
             return {'verdict':'FAIL','reason':'unsupported claim',
@@ -126,7 +129,8 @@ def test_failed_claim_return_retains_signed_partial_receipt_without_passing_gate
          patch('independent_quality_gate.editorial_input',return_value={}), \
          patch('independent_quality_gate.editorial_prompt',return_value='editorial'), \
          patch('independent_quality_gate.editorial_receipt',return_value={'verdict':'PASS'}), \
-         patch('independent_quality_gate.claim_input',return_value=s):
+         patch('independent_quality_gate.claim_input',return_value=s), \
+         patch('independent_quality_gate._issue_safety',return_value={'verdict':'PASS'}):
         def reviewer(prompt):
             if prompt=='editorial':return {'verdict':'PASS'}
             out=passed_receipt(s)
