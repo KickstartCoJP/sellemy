@@ -124,3 +124,34 @@ def test_caa_absence_blocks_combined_all_clear():
         'complete':True,'details':[{'id':'1','text':'hello'}]}):
         with patch('safety_government_feed.CAA_INDEX_PATH',Path('/tmp/missing-sellemy-caa-test-file.json')):
             assert cached_combined_registry() is None
+
+
+def test_caa_changed_first_page_invalidates_cached_later_pages_even_if_count_same(tmp_path):
+    from safety_government_feed import caa_registry
+    path=tmp_path/'caa.json';partial=tmp_path/'pages.json'
+    calls=[]
+    phase={'value':0}
+    def runner(cmd,**kwargs):
+        screen,page=cmd[-3],int(cmd[-1]);calls.append((phase['value'],screen,page))
+        count=61 if screen=='02' else 1
+        rows=[]
+        for i in range(page*60,min(count,(page+1)*60)):
+            changed=(phase['value']>0 and screen=='02' and i==0)
+            code=f'{screen}{i}' + ('changed' if changed else '')
+            rows.append({'title':'Anker Soundcore 3','url':'https://www.recall.caa.go.jp/result/detail.php?rcl='+code})
+        return type('R',(),{'returncode':0,'stderr':'','stdout':json.dumps({
+            'screen':screen,'page':page,'count':count,'rows':rows})})()
+    original=caa_registry(path=path,partial_path=partial,runner=runner)
+    assert original['complete']
+    # Simulate an interrupted later refresh where page one was already cached.
+    import json as jsonlib
+    recent={'started_at':datetime.now(timezone.utc).isoformat(),
+            'pages':{'02:0':{'screen':'02','page':0,'count':61,
+                             'rows':[{'title':'old','url':'https://www.recall.caa.go.jp/result/detail.php?rcl=old'}]*60},
+                     '02:1':{'screen':'02','page':1,'count':61,'rows':[
+                         {'title':'old','url':'https://www.recall.caa.go.jp/result/detail.php?rcl=old1'}]}}}
+    partial.write_text(jsonlib.dumps(recent))
+    phase['value']=1
+    refreshed=caa_registry(path=path,partial_path=partial,runner=runner,force=True)
+    assert refreshed['complete']
+    assert (1,'02',1) in calls

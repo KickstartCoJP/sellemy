@@ -266,7 +266,11 @@ def caa_registry(*,path=CAA_INDEX_PATH,now=None,force=False,runner=None,
         first=fetch(screen,0)
         count=first['count']
         keys=[k for k in pages if k.startswith(screen+':')]
-        if any(pages[k].get('count')!=count for k in keys):
+        # A same-size official list can still have new or amended notices.
+        # Never combine yesterday's later pages with a changed first page.
+        prior_first=pages.get(screen+':0') or {}
+        if (any(pages[k].get('count')!=count for k in keys)
+                or prior_first.get('rows')!=first['rows']):
             for k in keys:pages.pop(k,None)
         pages[screen+':0']=first
         checkpoint()
