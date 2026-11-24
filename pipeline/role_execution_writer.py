@@ -202,6 +202,14 @@ def reviewer(slug: str, metadata: dict) -> dict:
                 current = reuse_snapshot(exc.claim_subject,exc.claim_receipt)
                 write_artifact(slug, 'claim-qa-reuse.json',
                                merge_reuse_snapshots(full_subject,earlier,current))
+            if exc.gate == 'product_safety':
+                from safety_recall import unsafe_products
+                flags, _ = unsafe_products(evidence['products'], live=False)
+                rejected = [r['asin'] for r in flags if r['status'] in ('RECALL', 'POTENTIAL_RECALL')]
+                # The Product role alone owns a replacement for a confirmed or
+                # suspected recalled product; Writer cannot rewrite it as safe.
+                request_product_reselection(slug, ['safety: '+str(exc)] + rejected)
+                raise GrowthRuntimeError(f'product safety reselection required for {slug}: {exc}') from exc
             if exc.gate in ('evidence', 'product'):
                 # This is an integrity failure in the frozen Product input,
                 # not authorization for Article QA to change the products.

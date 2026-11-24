@@ -361,6 +361,27 @@ def select_viable_topic(
                     if unavailable:
                         probes[-1]['unavailable_source_asins'] = unavailable
                     six, selection = select_six(products, topic, feedback)
+                    from safety_recall import unsafe_products
+                    for safety_retry in range(3):
+                        flags, _ = unsafe_products(six)
+                        if not flags:
+                            break
+                        rejected = {flag['asin'] for flag in flags}
+                        excluded.update(rejected)
+                        retained = [p for p in six if p['asin'] not in rejected]
+                        products, retry_trace = collect_unique_products(
+                            topic, cache_only=cache_only, existing=retained,
+                            rejected_asins=excluded, max_searches=1)
+                        probes[-1].setdefault('safety_research', []).append({
+                            'round': safety_retry + 1, 'blocked_asins': sorted(rejected),
+                            'retained': len(retained), 'discovery': retry_trace})
+                        if len(products) != 6 or not retry_trace['complete']:
+                            raise ProductSelectionError('product safety replacement unavailable')
+                        six, selection = select_six(products, topic, feedback, pinned=retained)
+                    else:
+                        flags, _ = unsafe_products(six)
+                    if flags:
+                        raise ProductSelectionError('product safety replacement exhausted')
                     evidence = build_evidence(topic, six, selection)
                     acceptance = independent_review(evidence)
                     issues = receipt_issues(acceptance, evidence)
@@ -833,6 +854,19 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
                 if removable is None:
                     break
                 available = [p for p in available if p['asin'] != removable]
+                continue
+            from safety_recall import unsafe_products
+            unsafe, _safety_checks = unsafe_products(selected)
+            if unsafe:
+                blocked_asins={flag['asin'] for flag in unsafe}
+                for flag in unsafe:
+                    if flag['status'] == 'RECALL':
+                        set_ng(flag['asin'],'verified manufacturer recall notice',source=slug)
+                excluded.update(blocked_asins)
+                pinned=[asin for asin in pinned if asin not in blocked_asins]
+                pin_set=set(pinned)
+                available=[p for p in available if p['asin'] not in blocked_asins]
+                save_progress()
                 continue
             evidence = build_evidence(topic, selected, selection)
             evidence['product_acceptance'] = independent_review(evidence)

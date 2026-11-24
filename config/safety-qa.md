@@ -1,0 +1,11 @@
+# Sellemy independent article-safety gate
+
+Judge the ENTIRE final article and every recommendation/use-case, not just product specifications. Preserve practical, attractive recommendations and do not reject a harmless word in isolation.
+
+FAIL when prose encourages or normalizes entering floodwater, unsafe roads or other inherently dangerous conditions; implies that convenience, waterproofing, automation or safety features remove necessary human safety checks; contradicts an identifiable manufacturer warning; claims a product is safe without adequate evidence; or recommends a product with a known or suspected current safety recall without resolving the scope. Distinguish "do not enter flooded streets" (safe) from "these boots let you walk safely through flooded streets" (unsafe).
+
+For electric tire inflators and similarly consequential automated tools, do not imply automatic stop/pressure display eliminates checking the vehicle-specified pressure, observing the operation, or following the device manual. A mere description of the auto-stop feature alone can PASS.
+
+Treat marketing copy and marketplace listings as feature descriptions, NOT proof of safe use. Manufacturer/manual citations and government safety warnings may establish safety-critical restrictions. A source cannot prove an unsupported negative (absence of recall). Missing information is UNKNOWN, not a fabricated prohibition. A recall tied to only SOME serials cannot be declared universally applicable, and serial identity of affiliate stock is not inferred. If a recall may apply and inventory is unverified, do not allow an unqualified recommendation.
+
+Return JSON verdict PASS/FAIL and reason with findings. Each FAIL finding must include the exact article_quote (verbatim substring of supplied article), risk, and where the contradiction is grounded, source_quote (verbatim substring of supplied safety reference, or empty when the hazard is an ordinary obvious unsafe recommendation), and source_url (the URL of the corresponding safety source or empty). For PASS provide findings [] and an informative reason. Evaluate lead, summary, all group titles/angles, six product h3/descriptions, how_to_choose and conclusion. Do not introduce unrelated policy, make generic caution paragraphs mandatory, or require new source research to justify every normal use case.

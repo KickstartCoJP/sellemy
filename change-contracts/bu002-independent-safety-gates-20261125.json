@@ -1,0 +1,38 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "CEO-BU002-SAFETY-GATES-20261125",
+  "instruction_ref": "CEO direct 2026-11-25: 'ではそのように実装を。指定範囲外は触るな。' following the three COO safety defects",
+  "instruction": "Within Sellemy alone, add product recall screening ahead of product acceptance with official manufacturer/government source evidence and bounded product substitution, independent completed-article Safety QA that rejects hazardous use cases and removal of mandatory supervision, and a separate daily postpublication recall-monitor process. Mandatory safety receipts bind the exact article and evidence, are checked at prepublication, and never accept a recalled product or stale approval. Detect the rain-boots floodwater wording, tire-inflator oversight language, and Anker Soundcore 3 recall without blanket keyword banning. Persist postpublication findings as actionable alerts for CEO review, not automatic edits to live articles. All other existing QA, publication approval and site behavior unchanged.",
+  "implementer": "Direct Mac Studio staged editing, no Codex-generated code changes",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3"
+  ],
+  "allowed_paths": [
+    "change-contracts/bu002-independent-safety-gates-20261125.json",
+    "config/safety-qa.md",
+    "config/safety-recalls.json",
+    "pipeline/safety_recall.py",
+    "pipeline/vm_safety_search.py",
+    "pipeline/safety_article_qa.py",
+    "pipeline/safety_monitor.py",
+    "pipeline/growth_role_business.py",
+    "pipeline/independent_quality_gate.py",
+    "pipeline/role_execution_writer.py",
+    "ops/com.kickstart.sellemy-safety-monitor.plist",
+    "tests/test_claim_qa_reuse_20261122.py",
+    "tests/test_safety_gates_20261125.py"
+  ],
+  "preserved_rules": [
+    "No modification of already published article content or production approval settings",
+    "No change to unrelated Growth, note, LINE, Purpose Hub or portal behavior",
+    "Product QA, Editorial QA, Claim QA, QA certification and CEO review remain mandatory",
+    "Unconfirmed search results never count as verified recall evidence; source URLs must be official",
+    "Source outages block only safety-critical product classes, not normal low-risk recommendations",
+    "A potential recall triggers a targeted product hold/reselection, not an irreversible global NG designation",
+    "Daily monitoring only creates recorded safety alerts; any live publication change remains subject to the existing CEO gate"
+  ],
+  "acceptance_tests": [
+    "tests/test_safety_gates_20261125.py",
+    "tests/test_claim_qa_reuse_20261122.py"
+  ]
+}
