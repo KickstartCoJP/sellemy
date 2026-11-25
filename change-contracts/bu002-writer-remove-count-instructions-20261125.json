@@ -1,0 +1,28 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "CEO-BU002-WRITER-REMOVE-COUNT-INSTRUCTIONS-20261125",
+  "instruction_ref": "CEO 2026-11-25: Writerは決まった商品の文章を書くだけで件数の情報は一切必要ない; 消せ",
+  "instruction": "Remove explicit numerical product and group-count instructions from the BU-002 Writer prompt, both initial and revision prompts. Writer must preserve given Evidence product identities, group assignments and order, and write compelling grounded prose. Leave existing product quantities, product selection, schemas, QA, publication, and existing published articles untouched.",
+  "implementer": "BU-002 isolated Writer prompt revision, CEO-gated merge",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3"
+  ],
+  "allowed_paths": [
+    "change-contracts/bu002-writer-remove-count-instructions-20261125.json",
+    "pipeline/writer_runtime.py",
+    "tests/test_writer_no_count_instruction_20261125.py",
+    "tests/test_writer_planner_axis_handoff_20261120.py",
+    "tests/test_writer_length_feedback.py"
+  ],
+  "preserved_rules": [
+    "No change to six-product selection or three-by-two selection composition",
+    "No change to source/claim/product/editorial QA",
+    "Keep existing product identities, article order and grouping",
+    "No existing article changes or publication-gate bypass"
+  ],
+  "acceptance_tests": [
+    "tests/test_writer_no_count_instruction_20261125.py",
+    "tests/test_writer_planner_axis_handoff_20261120.py",
+    "tests/test_writer_length_feedback.py"
+  ]
+}
