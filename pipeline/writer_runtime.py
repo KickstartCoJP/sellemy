@@ -152,6 +152,17 @@ def _prompt(topic: dict, evidence: dict, *, previous_payload: dict | None = None
                     and failures.get(field + '_in_range') is False):
                 prompt += (f'\nCRITICAL {field} LENGTH: prior {length}, required '
                            f'at least {minimum} characters; revise this field without padding.\n')
+        if failures.get('description_hard_min_pass') is False or failures.get('description_target_pass') is False:
+            lengths = measures.get('description_lens') or []
+            affected = [f'p{i + 1} ({length} characters)' for i, length in enumerate(lengths)
+                        if isinstance(length, int) and not 160 <= length <= 260]
+            if affected:
+                prompt += ('\nMANDATORY DESCRIPTION REVISION: Only these product descriptions failed the '
+                           '160–260 Japanese-character editorial requirement: ' + ', '.join(affected) +
+                           '. Rewrite each affected description to 160–260 characters, supplying distinct '
+                           'source-grounded features, concrete usage situations, and a reader-specific reason '
+                           'to choose it. Do not pad, repeat sentences, or invent facts. Preserve every '
+                           'unaffected product, product identity and group assignment.\n')
     persona=topic.get('reader_persona') if isinstance(topic,dict) else None
     if isinstance(persona,dict):
         prompt += '\nREADER_PERSONA (follow this reader through introduction, terminology and recommendation): '+json.dumps(persona,ensure_ascii=False)+'\n'

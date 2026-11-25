@@ -1,0 +1,29 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "CEO-BU002-WRITER-TARGETED-DESCRIPTION-RETRY-20261126",
+  "instruction_ref": "CEO direct 2026-11-26: 完全復旧させろ",
+  "instruction": "After Product selection root fix #158, restore two legacy-repair Writer cases by making QA length failures actionable: use description_lens to identify only descriptions outside the existing 160-260 character requirement, instruct Writer to repair them without padding or fabricated facts and preserve the rest. All QA, counts, product selection, publication and review gates unchanged.",
+  "implementer": "Mac Studio scoped isolated worktree, CEO-gated PR",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3"
+  ],
+  "allowed_paths": [
+    "change-contracts/bu002-writer-targeted-description-retry-20261126.json",
+    "pipeline/writer_runtime.py",
+    "tests/test_writer_description_feedback_20261126.py",
+    "tests/test_writer_length_feedback.py",
+    "tests/test_writer_no_count_instruction_20261125.py",
+    "pipeline/qa_return.py"
+  ],
+  "preserved_rules": [
+    "Writer never chooses products and does not receive article product count instructions",
+    "Preserve fixed products and axes",
+    "Preserve existing 160-260 description quality criteria",
+    "No bypass of Product/Editorial/Claim QA or CEO publication gate"
+  ],
+  "acceptance_tests": [
+    "tests/test_writer_description_feedback_20261126.py",
+    "tests/test_writer_length_feedback.py",
+    "tests/test_writer_no_count_instruction_20261125.py"
+  ]
+}
