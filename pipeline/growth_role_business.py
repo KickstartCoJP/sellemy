@@ -988,8 +988,9 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
             # Retain the genuine passing products, excluding only confirmed
             # topic/identity rejects. A reviewer-output defect is a retryable
             # review failure, not an exhausted product catalogue.
-            if not rejected and issues and all('identity has no source anchor' in x or
-                x=='independent review did not accept' for x in issues):
+            if not rejected and any('identity has no source anchor' in x for x in issues) and all(
+                'identity has no source anchor' in x or x=='independent review did not accept'
+                for x in issues):
                 # The reviewer emitted an invalid machine citation, not a
                 # reason to reopen product research. Record an infrastructure
                 # retry and preserve the six concrete candidates.
