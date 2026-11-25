@@ -32,3 +32,18 @@ def test_old_quote_only_review_is_removed_from_historical_reviewed_sets(tmp_path
         business._reselect_products(slug,cache_only=False)
     replace.assert_called_once()
     assert saved['product-search-progress.json']['complete'] is True
+
+
+def test_summary_only_semantic_failure_with_identity_quote_defect_can_be_rereviewed():
+    # A generic summary emitted alongside invalid machine citations is not a
+    # documented topical failure. The independent current QA must still pass.
+    from growth_role_business import _obsolete_identity_review
+    legacy={'issues':['independent review did not accept',
+                      'p1: identity has no source anchor',
+                      'independent semantic criteria not satisfied'],
+            'review':{'products':[{'ref':'p1','topic_fit':True}]}}
+    assert _obsolete_identity_review(legacy)
+    actual={**legacy,'issues':legacy['issues']+['p1: product does not fit the topic']}
+    assert not _obsolete_identity_review(actual)
+    actual={**legacy,'review':{'products':[{'ref':'p1','topic_fit':False}]}}
+    assert not _obsolete_identity_review(actual)

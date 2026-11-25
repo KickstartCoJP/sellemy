@@ -704,7 +704,9 @@ def _obsolete_identity_review(artifact: dict) -> bool:
     issues=artifact.get('issues') or []
     checks=(artifact.get('review') or {}).get('products') or []
     return bool(issues and checks and all(item.get('topic_fit') is True for item in checks)
-        and all(issue=='independent review did not accept' or
+        and any(issue.endswith(': identity has no source anchor') for issue in issues)
+        and all(issue in ('independent review did not accept',
+                          'independent semantic criteria not satisfied') or
                 issue.endswith(': identity has no source anchor') for issue in issues))
 
 
