@@ -873,10 +873,15 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
                 if signature not in reviewed_sets:
                     continue
                 old_rows = (archived.get('evidence') or {}).get('products') or []
-                if old_rows and any(
+                obsolete_quote_failure = _obsolete_identity_review(archived)
+                changed_axes = bool(old_rows) and any(
                     item.get('discovery_axis_id') not in current_axes or
                     current_axis_by_asin.get(item.get('asin')) != item.get('discovery_axis_id')
-                    for item in old_rows):
+                    for item in old_rows)
+                if obsolete_quote_failure or changed_axes:
+                    # Legacy machine-citation failure is not a quality veto;
+                    # do not exhaust the remaining axis pool by rotating away
+                    # legitimate candidates in a past unusable combination.
                     reviewed_sets.discard(signature)
         if latest and not stale_identity_review and not (read_artifact(slug, 'product-qa-remediation.json', {}) or {}).get('signature'):
             write_artifact(slug, 'product-qa-remediation.json', {
