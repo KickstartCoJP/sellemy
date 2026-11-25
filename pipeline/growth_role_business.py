@@ -264,9 +264,14 @@ def _replace_unproductive_axes(topic: dict, products: list[dict], *, cache_only:
         return products, []
     from planning_runtime import propose_replacement_axis, PlanningError
     changes = []
+    from comparison_acceptance import source_text
+    from product_candidate_registry import is_ng
+    from product_selection import dedupe_content_products
+    eligible, _ = dedupe_content_products([
+        p for p in products if not is_ng(p.get('asin')) and source_text(p).strip()])
     tried = set(prior_ids or []) | {a['id'] for a in topic['comparison_axes']}
     for index, axis in enumerate(list(topic['comparison_axes'])):
-        if sum(p.get('discovery_axis_id') == axis['id'] for p in products) >= 2:
+        if sum(p.get('discovery_axis_id') == axis['id'] for p in eligible) >= 2:
             continue
         # One new proposal for this unproductive angle in a single execution.
         try:
@@ -281,7 +286,9 @@ def _replace_unproductive_axes(topic: dict, products: list[dict], *, cache_only:
             changes.append({'from': axis['id'], 'to': replacement['id'],
                             'found': sum(p.get('discovery_axis_id') == replacement['id'] for p in found),
                             'attempts': trace['attempts']})
-            if sum(p.get('discovery_axis_id') == replacement['id'] for p in found) >= 2:
+            replacement_eligible, _ = dedupe_content_products([
+                p for p in found if not is_ng(p.get('asin')) and source_text(p).strip()])
+            if sum(p.get('discovery_axis_id') == replacement['id'] for p in replacement_eligible) >= 2:
                 topic['comparison_axes'][index] = replacement
                 products = found
             else:
@@ -808,6 +815,16 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
         pinned, known_bad = [], set()
         old = read_artifact(slug, latest[0].name, {}) or {} if latest else {}
         stale_identity_review = _obsolete_identity_review(old)
+        current_axis_by_asin = {item['asin']: item.get('discovery_axis_id') for item in available}
+        current_axes = {axis['id'] for axis in topic['comparison_axes']}
+        prior_products = (old.get('evidence') or {}).get('products') or []
+        if prior_products and any(
+            item.get('discovery_axis_id') not in current_axes or
+            current_axis_by_asin.get(item.get('asin')) != item.get('discovery_axis_id')
+            for item in prior_products
+        ):
+            # A past reviewed set cannot veto a re-planned topic with new axes.
+            reviewed_sets.difference_update({'|'.join(sorted(old.get('asins') or []))})
         if stale_identity_review:
             # Earlier quote-format failures cannot permanently poison candidate
             # combinations after the risk-based Product QA contract changed.
@@ -816,12 +833,22 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
             old_evidence = (old.get('evidence') or {}).get('products') or []
             old_checks = ((old.get('review') or {}).get('products') or [])
             by_ref_old = {item['ref']: item for item in old_evidence}
+            current_axes = {axis['id'] for axis in topic['comparison_axes']}
+            current_candidates = {item['asin']: item for item in available}
             for check in old_checks:
                 product = by_ref_old.get(check.get('ref'))
                 if not product: continue
                 asin = product.get('asin')
+                # Never pin a product from a replaced axis, or one absent from
+                # the current eligible pool. Those reviews concern a superseded
+                # selection, not the current three-axis article.
+                current_product = current_candidates.get(asin)
+                if (not current_product or
+                    product.get('discovery_axis_id') not in current_axes or
+                    current_product.get('discovery_axis_id') != product.get('discovery_axis_id')):
+                    continue
                 key = normalized(str(check.get('identity_key') or ''))
-                anchored = bool(key and len(key) >= 3 and key in normalized(source_text(product)))
+                anchored = bool(key and len(key) >= 3 and key in normalized(source_text(current_product)))
                 if check.get('topic_fit') is True and anchored:
                     pinned.append(asin)
                 elif check.get('topic_fit') is False:
@@ -836,6 +863,21 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
                 hold_product_review_conflict(slug, reasons=previous_review['issues'],
                     pinned_asins=sorted(pin_set))
                 raise GrowthRuntimeError(f'planning_restart_required for {slug}: incompatible product review')
+        # A changed topic invalidates only reviewed combinations whose old
+        # product-axis mapping no longer matches the active candidate pool.
+        if reviewed_sets:
+            for review_file in job_dir(slug).glob('product-review-*.json'):
+                archived = read_artifact(slug, review_file.name, {}) or {}
+                old_asins = archived.get('asins') or []
+                signature = '|'.join(sorted(old_asins))
+                if signature not in reviewed_sets:
+                    continue
+                old_rows = (archived.get('evidence') or {}).get('products') or []
+                if old_rows and any(
+                    item.get('discovery_axis_id') not in current_axes or
+                    current_axis_by_asin.get(item.get('asin')) != item.get('discovery_axis_id')
+                    for item in old_rows):
+                    reviewed_sets.discard(signature)
         if latest and not stale_identity_review and not (read_artifact(slug, 'product-qa-remediation.json', {}) or {}).get('signature'):
             write_artifact(slug, 'product-qa-remediation.json', {
                 'retained_asins': pinned, 'needs_remediation_asins': sorted(known_bad),

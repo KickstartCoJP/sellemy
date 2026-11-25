@@ -166,6 +166,14 @@ def _prompt(topic: dict, evidence: dict, *, previous_payload: dict | None = None
         semantic = gate_feedback.get('semantic_issue') or {}
         if failed.get('lead_in_range') is False:
             prompt += '\nMANDATORY: Rewrite lead to at least 180 Japanese characters, with no upper limit or padding.\n'
+        independent = gate_feedback.get('independent_quality_gate') or {}
+        if independent.get('gate') == 'editorial' and independent.get('issues'):
+            prompt += ('\nMANDATORY EDITORIAL REVISION: Repair the exact affected product descriptions '
+                       'identified in independent_quality_gate. If a closing sentence merely repeats '
+                       'the opening or preceding recommendation, remove that sentence or replace it '
+                       'with a distinct, verifiable reason to choose that product. Never manufacture '
+                       'a new benefit just to fill a paragraph. Preserve every unaffected product '
+                       'and field. Independently re-read the corrected prose before returning JSON.\n')
         if failed.get('semantic_acceptance_pass') is False:
             prompt += ('\nMANDATORY: Correct the cited semantic QA failure, do not invent an unsupported differentiator. '
                        'Use only attributable listing facts or verified source facts for objective product claims; never invent performance or efficacy. '

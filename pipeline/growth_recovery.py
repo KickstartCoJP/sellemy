@@ -537,12 +537,20 @@ def request_product_reselection(slug: str, reasons: list[str]) -> dict:
     progress = read_artifact(slug, 'product-search-progress.json', {}) or {}
     # A source/candidate change permits a new attempt; the identical failed
     # search state must not consume another QA turn or block other articles.
+    topic = read_artifact(slug, 'topic.json', {}) or {}
+    from product_candidate_registry import is_ng
     signal = {
-        'qualified_evidence': sorted((str(x.get('asin')), hashlib.sha256(
-            json.dumps([z for z in (x.get('sources') or []) if isinstance(z, dict) and z.get('verified') is True and str(z.get('excerpt') or '').strip()],
-                       sort_keys=True, ensure_ascii=False, default=str).encode()).hexdigest())
-            for x in progress.get('candidates', []) if isinstance(x, dict)
-            and any(isinstance(z, dict) and z.get('verified') is True and str(z.get('excerpt') or '').strip() for z in x.get('sources') or [])),
+        # A changed candidate identity, title, axis assignment, or eligibility
+        # is material selection progress even without verified source excerpts.
+        'candidates': sorted((str(x.get('asin')), str(x.get('amazon_title') or ''),
+            str(x.get('discovery_axis_id') or ''),
+            bool(is_ng(str(x.get('asin')))),
+            hashlib.sha256(json.dumps(x.get('sources') or [], sort_keys=True,
+                ensure_ascii=False, default=str).encode()).hexdigest())
+            for x in progress.get('candidates', []) if isinstance(x, dict)),
+        'axes': [(str(a.get('id') or ''), str(a.get('label') or ''))
+                 for a in topic.get('comparison_axes') or []],
+        'excluded_asins': sorted(progress.get('excluded_asins') or []),
         'reviewed': sorted(progress.get('reviewed_sets') or []),
         'reason': sorted(set(str(x) for x in reasons)),
     }
