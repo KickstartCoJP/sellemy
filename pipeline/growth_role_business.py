@@ -941,9 +941,15 @@ def _reselect_products(slug: str, *, cache_only: bool) -> None:
             # review failure, not an exhausted product catalogue.
             if not rejected and issues and all('identity has no source anchor' in x or
                 x=='independent review did not accept' for x in issues):
+                # The reviewer emitted an invalid machine citation, not a
+                # reason to reopen product research. Record an infrastructure
+                # retry and preserve the six concrete candidates.
                 reviewed_sets.discard(signature)
                 save_progress()
-                raise GrowthRuntimeError(f'product review citation retry required for {slug}')
+                mark_failure(slug,stage='product',failure_class='runtime_infrastructure',
+                             failure_code='PRODUCT_REVIEW_CITATION_INVALID',
+                             reason='; '.join(issues),role='review')
+                raise GrowthRuntimeError(f'product reviewer citation invalid for {slug}')
             save_progress()
             break
         save_progress()

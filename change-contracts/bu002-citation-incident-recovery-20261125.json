@@ -1,0 +1,23 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "CEO-BU002-CITATION-INCIDENT-RECOVERY-20261125",
+  "instruction_ref": "CEO 2026-11-25: '直せ' after PR #155 merged but product citation retry and FAILED state remained",
+  "instruction": "Fix only BU-002 Product QA citation formatting and product selection incident recovery. Once independent reviewer semantically approves all six distinct topic-fitting products, normalize an ungrounded editorial identity label to the exact existing listing title when source-backed; never fabricate facts or override actual duplicate, irrelevant product or safety vetoes. If a reviewer citation defect persists, mark a retryable reviewer infrastructure failure rather than silently exhausting the catalogue. Provide one-off idempotent scoped recovery for four known incident jobs, retaining previous fingerprints and explicitly reopening only the already FAILED Product job, without modifying published articles. Do not bypass independent QA or CEO publishing approval.",
+  "implementer": "BU-002 scope-controlled Mac Studio code change; CEO review required before production merge",
+  "canonical_refs": ["https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3"],
+  "allowed_paths": [
+    "change-contracts/bu002-citation-incident-recovery-20261125.json",
+    "pipeline/semantic_review.py",
+    "pipeline/growth_role_business.py",
+    "ops/recover_product_selection_incidents_20261125.py",
+    "tests/test_bu002_citation_incident_recovery_20261125.py"
+  ],
+  "preserved_rules": [
+    "No changes outside BU-002 Product QA citation and four explicit product selection incident records",
+    "All six-product, three-axis, product duplication and source-grounded factual claims remain mandatory",
+    "Unsafe, recalled, materially duplicate and unrelated product findings still fail independent Product/Safety QA",
+    "No automatic publication or modification to published articles; CEO review and approval gate remains mandatory",
+    "One-off recovery is idempotent, explicit and creates backups of fingerprints"
+  ],
+  "acceptance_tests": ["tests/test_bu002_citation_incident_recovery_20261125.py"]
+}
