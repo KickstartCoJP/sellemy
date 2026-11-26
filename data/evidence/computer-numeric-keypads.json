@@ -4,147 +4,375 @@
   "category": "gadget",
   "comparison_axes": [
     {
-      "id": "key_layout",
+      "id": "popular",
       "keywords": [
-        "キー数",
+        "人気"
+      ],
+      "label": "人気・定番の基準"
+    },
+    {
+      "id": "spreadsheet_editing",
+      "keywords": [
         "Tabキー",
+        "Backspaceキー",
         "00キー",
-        "キー間隔"
+        "キー配置"
       ],
-      "label": "数字入力と補助キーの配列"
+      "label": "表計算の入力・修正を手元で進めやすい"
     },
     {
-      "id": "connection_power",
+      "id": "limited_desk_connection",
       "keywords": [
-        "USB有線",
+        "Bluetooth接続",
         "USBレシーバー",
-        "Bluetooth",
-        "電池・充電"
+        "有線接続",
+        "本体サイズ"
       ],
-      "label": "接続方式と電源"
-    },
-    {
-      "id": "os_input_behavior",
-      "keywords": [
-        "Windows",
-        "macOS",
-        "NumLock",
-        "キー割り当て"
-      ],
-      "label": "対応OSと入力動作の条件"
+      "label": "端子や机上スペースが限られた環境で使いやすい"
     }
   ],
   "eyecatch_image": "https://www.sellemy.jp/img/computer-numeric-keypads/computer-numeric-keypads.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "da3b74b2ac8cc569b3808041c8ec94a3d62eb23309950cc764336a882ae13318",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 14848,
+      "input_tokens": 28289,
+      "listing_identity_citations_repaired": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 1675,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 342,
+      "session_id": "01a216a0-f15e-7c12-afbe-22f3e588039b",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "This ten keyboard features a 2-port USB 2.0 hub that allows you to connect up to two USB devices such as a mouse"
+            }
+          ],
+          "identity_key": "エレコム テンキー 有線 メンブレン Mサイズ USBポート付 1000万回高耐久 ブラック TK-TCM012BK",
+          "identity_quote": "エレコム テンキー 有線 メンブレン Mサイズ USBポート付 1000万回高耐久 ブラック TK-TCM012BK",
+          "reason": "掲載資料の型番で識別できる有線テンキー。USBハブとTab・00キーの記載があり、数字入力とUSB機器の接続を手元にまとめたい用途で紹介できる。出典: https://www.amazon.co.jp/dp/B00I17QCF6?th=1",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "The key type employs the \"pantograph method\" that can be keyed with the same light force as a laptop keyboard"
+            }
+          ],
+          "identity_key": "エレコム USB-A テンキー ワイヤレス(レシーバー付属) パンタグラフ 薄型 ブラック TK-TDP019BK",
+          "identity_quote": "エレコム USB-A テンキー ワイヤレス(レシーバー付属) パンタグラフ 薄型 ブラック TK-TDP019BK",
+          "reason": "掲載資料の型番で識別できる、レシーバー付きの薄型テンキー。パンタグラフ式のキーを好む人に紹介できる。p1とは型番、接続方式、キー構造が異なる。出典: https://www.amazon.co.jp/dp/B07FPJ5VJ6?th=1",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "spreadsheet_editing",
+              "quote": "■ Key Layout: 19 keys ■ Key Pitch: 19 mm ■ Key Input Method: Pantograph"
+            }
+          ],
+          "identity_key": "バッファロー テンキー Tabキー付き ブラック BSTK11BK",
+          "identity_quote": "バッファロー テンキー Tabキー付き ブラック BSTK11BK",
+          "reason": "掲載資料の型番で識別できる。Tabキー付きで、USB接続、19キー配列、パンタグラフ式という記載があり、表計算の数字入力に沿った紹介ができる。出典: https://www.amazon.co.jp/dp/B017OFKS5U?th=1",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "spreadsheet_editing",
+              "quote": "Bluetooth tenkey, high-precision touchpad, calculator integrated into one, providing smooth operation for cursor control, scrolling, and number input."
+            }
+          ],
+          "identity_key": "Ewin テンキー 電卓 タッチパッド 3in1 Bluetooth 2台同時接続 ワイヤレス折りたたみ式 グレー",
+          "identity_quote": "Ewin テンキー 電卓 タッチパッド 3in1 Bluetooth 2台同時接続 ワイヤレス折りたたみ式 グレー",
+          "reason": "掲載資料が示すテンキー・タッチパッド・電卓の一体構成で識別できる。数字入力に加えてカーソル操作や計算を手元で行いたい用途に沿う。p6とは記載された機能構成が異なる。出典: https://www.amazon.co.jp/dp/B0HFRY7WRM?th=1",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "limited_desk_connection",
+              "quote": "This product is dedicated for Bluetooth connection. It does not support wired or receiver connection"
+            }
+          ],
+          "identity_key": "iClever テンキー Bluetooth ワイヤレス 数字 キーボード 2台接続 超薄型 金属構造 numlock連動 IC-KP10 ブラック",
+          "identity_quote": "iClever テンキー Bluetooth ワイヤレス 数字 キーボード 2台接続 超薄型 金属構造 numlock連動 IC-KP10 ブラック",
+          "reason": "掲載資料の型番で識別できるBluetooth専用テンキー。テンキー接続にUSB端子を使わず、2台の接続先を切り替えたい用途に沿う。出典: https://www.amazon.co.jp/dp/B0B6J4Q3KH?th=1",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "limited_desk_connection",
+              "quote": "Connects to 2 devices via 2.4G wireless and Bluetooth Supports both Bluetooth and receiver connections simultaneously"
+            }
+          ],
+          "identity_key": "Ewin テンキー Bluetooth5.2 / 2.4G接続 2台接続 テンキー ワイヤレス 数字キーボード Bluetoothキーボード",
+          "identity_quote": "Ewin テンキー Bluetooth5.2 / 2.4G接続 2台接続 テンキー ワイヤレス 数字キーボード Bluetoothキーボード",
+          "reason": "掲載資料が示すBluetooth・レシーバー両対応と37キーの構成で識別できる。接続先や空き端子に応じて接続方法を選びたい用途に沿う。出典: https://www.amazon.co.jp/dp/B0GFT7DD3W?th=1",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "検証済みの商品掲載資料に、6件それぞれの識別情報と紹介理由を支える記述がある。いずれもPC向けテンキーで、既存の3グループに各2件を割り当てられる。p1とp2は同じブランドだが型番と構造が異なり、同一商品の色・数量違いを示す根拠はない。記事本文は未提出のため、本文のみを対象とする項目はfalseとした。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
   "products": [
     {
-      "amazon_title": "エレコム テンキー 有線 メンブレン Mサイズ 1000万回高耐久 ブラック TK-TCM011BK",
-      "asin": "B00HL8Z6KS",
-      "brand": "エレコム",
+      "amazon_title": "エレコム テンキー 有線 メンブレン Mサイズ USBポート付 1000万回高耐久 ブラック TK-TCM012BK",
+      "asin": "B00I17QCF6",
+      "brand": "エレコム(ELECOM)",
+      "discovery_axis_id": "popular",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/91Rn0R4S15L._AC_SL1500_.jpg",
-      "matched_comparison_axes": [
-        "key_layout",
-        "os_input_behavior"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/61oFR9vWc2L._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B00HL8Z6KS",
+      "product_id": "AMZ-B00I17QCF6",
+      "provisional": false,
+      "rating": 4.0,
       "ref": "p1",
-      "search_key": "有線テンキー USB-C & USB-A対応 18キー数字キーパ",
-      "selection_score": 0.66,
-      "selected_variant": "ブラック・1台入り製品。取得時の主出品は最小注文数量3台"
+      "review_count": 331,
+      "search_key": "エレコム(ELECOM) エレコム テンキー 有線 メンブレン Mサイズ USBポート付",
+      "selection_reason": "有線USBテンキーの定番的な使い方に、2ポートのUSB 2.0ハブを加えた一台。商品説明にはTabキー、00キー、マウスなどを接続できるハブ、ドライバー不要のUSB接続が明記されている。経費表を入力しながらUSBマウスも手元で使いたい人に向く。",
+      "sources": [
+        {
+          "brand": "エレコム(ELECOM)",
+          "excerpt": "Elecom TK-TCM012BK Wired Membrane, Medium Size, USB Port, 10 Million Times, Heavy Duty, Black\nAbout this item\nThis ten keyboard features a 2-port USB 2.0 hub that allows you to connect up to two USB devices such as a mouse\nEquipped with a [Tab] key to help you work with Excel and a [00] key for convenient number input\nLarge keys improve typing efficiency\nIt solves the \"NumLock\" problem with hardware, no need to install countermeasure software\nEquipped with an LED lamp that lets you see when the NumLock is turned on or off\nUSB connection, so you can plug and unplug your computer even when power is on\nNo need for installation such as dedicated drivers, just plug it into your computer's USB port and you can use it immediately\nDurable key can withstand up to 10 million keystrokes › See more product details\nBrand エレコム(ELECOM)\nCompatible Devices Compatible models: Windows OS equipped with USB port\nConnectivity Technology USB-A\nKeyboard Description Membrane\nRecommended Uses For Product Gaming\nSpecial Feature LED Lamp\nColor Black\nStyle Numeric Keypad with USB 2.0 x 2 Ports\nProduct Dimensions 14L x 9W x 2.4H cm\nMaterial Plastic See more\nVisit the エレコム(ELECOM) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Elecom TK-TCM012BK Wired Membrane, Medium Size, USB Port, 10 Million Times, Heavy Duty, Black",
+          "url": "https://www.amazon.co.jp/dp/B00I17QCF6?th=1",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "iClever テンキー Bluetooth ワイヤレス 数字 キーボード 3台までペアリング パンタグラフ式 薄型 KP08Pro ブラック",
-      "asin": "B0H4LJS35W",
-      "brand": "iClever",
+      "amazon_title": "エレコム USB-A テンキー ワイヤレス(レシーバー付属) パンタグラフ 薄型 ブラック TK-TDP019BK",
+      "asin": "B07FPJ5VJ6",
+      "brand": "エレコム(ELECOM)",
+      "discovery_axis_id": "popular",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61dGJYyc4nL._AC_SL1500_.jpg",
-      "matched_comparison_axes": [
-        "connection_power"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/81ogIxGf+XL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B0H4LJS35W",
+      "product_id": "AMZ-B07FPJ5VJ6",
+      "provisional": false,
+      "rating": 4.2,
       "ref": "p2",
-      "search_key": "iClever テンキー Bluetooth ワイヤレス 数字",
-      "selection_score": 0.48,
-      "selected_variant": "ブラック・本体1台"
+      "review_count": 1755,
+      "search_key": "エレコム(ELECOM) エレコム USB-A テンキー ワイヤレス(レシーバー付属) パ",
+      "selection_reason": "ノートPCに近い軽い打鍵感を求める人が選びやすい無線タイプ。商品説明によるとパンタグラフ式で、19mmのキーピッチと独立したキー配置を採用し、最薄部は6.5mm。レシーバーを接続でき、入力位置を動かしながら売上表を扱う人に向く。",
+      "sources": [
+        {
+          "brand": "エレコム(ELECOM)",
+          "excerpt": "Elecom TK-TDP019BK USB-A Numeric Keypad Wireless (Receiver Included) Pantograph, Thin, Black\nAbout this item\nThe thinnest part is only 0.2 inch (6.5 mm) thin, so it can be used anywhere\nThe key type employs the \"pantograph method\" that can be keyed with the same light force as a laptop keyboard\nA steel plate is built under the key top for a firm feel and stability\nIt uses a 0.7 inch (19 mm) key pitch that is compact and easy\nEach key is independent \"isolation design\" to prevent long nails from snagging and provide comfortable typing › See more product details\nBrand エレコム(ELECOM)\nCompatible Devices Compatible models: Windows OS, macOS equipped with USB port\nConnectivity Technology USB-A\nKeyboard Description pantograph\nRecommended Uses For Product for_computers\nSpecial Feature Low Profile\nColor Black\nStyle Wireless 2.4GHz\nProduct Dimensions 12.8L x 9W x 2.2H cm\nMaterial Plastic See more\nVisit the エレコム(ELECOM) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Elecom TK-TDP019BK USB-A Numeric Keypad Wireless (Receiver Included) Pantograph, Thin, Black",
+          "url": "https://www.amazon.co.jp/dp/B07FPJ5VJ6?th=1",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "サンワサプライ Bluetoothテンキー 20キー(19キー＋Numlockキー) パンタグラフ NT-BT21BK",
-      "asin": "B07PCL4M43",
-      "brand": "サンワサプライ",
+      "amazon_title": "バッファロー テンキー Tabキー付き ブラック BSTK11BK",
+      "asin": "B017OFKS5U",
+      "brand": "BUFFALO",
+      "discovery_axis_id": "spreadsheet_editing",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/713s6lEN6SL._AC_SL1280_.jpg",
-      "matched_comparison_axes": [
-        "connection_power",
-        "os_input_behavior"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/417n0J7RJnL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B07PCL4M43",
+      "product_id": "AMZ-B017OFKS5U",
+      "provisional": false,
+      "rating": 4.2,
       "ref": "p3",
-      "search_key": "iClever テンキー Bluetooth ワイヤレス 数字",
-      "selection_score": 0.3,
-      "selected_variant": "ブラック・本体1台"
+      "review_count": 684,
+      "search_key": "BUFFALO バッファロー テンキー Tabキー付き ブラック BSTK11B",
+      "selection_reason": "数字を入力した後、Tabキーで次のセルへ進む作業に合う薄型テンキー。商品仕様にはTabキーを含む19キー、19mmのキーピッチ、パンタグラフ式、USB給電が示されている。ノートPCの横に置き、売上表を列に沿って入力する人に向く。",
+      "sources": [
+        {
+          "brand": "BUFFALO",
+          "excerpt": "BUFFALO Buffalo Slim Numeric Keypad with Tab Key Black BSTK11BK\nAbout this item\n● A numeric keypad that combines functionality and design\n■Compatible models: Windows PC with standard USB interface\n■ Supported OS: Windows 10 / 8.1 / 8 / 7 (32/64) ■ Interface: USB 2.0 / 1.1\n■ Key Layout: 19 keys ■ Key Pitch: 19 mm ■ Key Input Method: Pantograph\n■ Power supply: USB bus power 5.0V ±10%\n■ Cable length: About 80cm\n■ Main unit dimensions: W 3.3 x D 4.9 x H 0.5 inches (W 84 x D 124 x H 12 mm) (excluding protrusions and cable) ■ Product weight: Approx. 3.5 oz (100 g)\n■ Package Dimensions: W 5.1 x D 9.1 x H 1.2 inches (W 130 x D 230 x H 30 mm) ■ Package Weight: Approx. 4.9 oz (140 g)\n■ Operating environment: Temperature -10°C to 60°C, Humidity 20% to 85% (without condensation)\n■ Product Composition: Main unit, Manual/Warranty Show More › See more product details\nBrand BUFFALO\nCompatible Devices Laptop\nConnectivity Technology USB\nKeyboard Description Wireless\nRecommended Uses For Product Everyday Use\nSpecial Feature Tab key included\nColor Black\nStyle Contemporary\nProduct Dimensions 12.4L x 8.4W x 1.2H cm\nMaterial Plastic See more\nVisit the バッファロー Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "BUFFALO Buffalo Slim Numeric Keypad with Tab Key Black BSTK11BK",
+          "url": "https://www.amazon.co.jp/dp/B017OFKS5U?th=1",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "バッファロー キーボード 有線 有線テンキー 抗菌仕様・Tabキー付き ブラック BSTK120BK",
-      "asin": "B097GX121V",
-      "brand": "バッファロー",
+      "amazon_title": "Ewin テンキー 電卓 タッチパッド 3in1 Bluetooth 2台同時接続 ワイヤレス折りたたみ式 グレー",
+      "asin": "B0HFRY7WRM",
+      "brand": "Ewin",
+      "discovery_axis_id": "spreadsheet_editing",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51oKDgi-u0S._AC_SL1000_.jpg",
-      "matched_comparison_axes": [
-        "connection_power"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/61rnmcfBTtL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B097GX121V",
+      "product_id": "AMZ-B0HFRY7WRM",
+      "provisional": false,
+      "rating": 4.0,
       "ref": "p4",
-      "search_key": "iClever テンキー Bluetooth ワイヤレス 数字",
-      "selection_score": 0.3,
-      "selected_variant": "ブラック・抗菌仕様・本体1台"
+      "review_count": 157,
+      "search_key": "Ewin テンキー 電卓 タッチパッド 3in1 Bluetooth 2台",
+      "selection_reason": "テンキーにタッチパッドと電卓を組み合わせた構成が特徴。商品説明には数字入力に加え、タッチパッドでのカーソル操作・スクロール、電卓表示への切り替えが記載されている。表の数値を入力しつつ離れたセルの確認や計算を手元で行いたい人に向く。",
+      "sources": [
+        {
+          "brand": "Ewin",
+          "excerpt": "Ewin Numeric Key, Calculator, Touch Pad, 3-in-1, Bluetooth, Wireless, Connects to 2 Devices Simultaneously, Mac Numeric Key, Pantograph Type, Ultra Thin, Lightweight, Durable, Bluetooth, Wireless\nAbout this item\n【3-in-1 multifunctional integration】Bluetooth tenkey, high-precision touchpad, calculator integrated into one, providing smooth operation for cursor control, scrolling, and number input. Enhances work efficiency for tasks like Excel, spreadsheets, and data entry, from desktop PCs to iPads\n【Wireless Performance & Switchable Use with up to 2 Devices】Equipped with the latest Bluetooth 5.1, providing improved connection stability and communication range compared to previous standards. Also, you can pair it simultaneously with two devices such as smartphones, tablets, and PCs, and switch between them easily\nType-C Rechargeable & Energy-Saving Design: The Type-C charging port allows you to easily top up the charge from a mobile battery or PC on the go. A full charge takes about 1 hour and can be used continuously for up to 70 hours. Perfect for long business trips or working at a café\n【High Durability & Quiet】It adopts a high-quality scissor switch structure, and the lifespan of the key operation reaches 5 million times. It maintains excellent typing feel and response speed even after prolonged use. The quiet design allows you to concentrate on work in the office or cafe\n【Wide Compatibility】Compatible with multiple devices such as Windows/iOS/Android/MacOS, allowing seamless switching from office to mobile environments\nCalculator Display: The simple and intuitive screen design allows it to be used as a calculator. You can easily switch between the keyboard and the calculator with one key\nExcellent Portability: The compact folding design and luxurious leather case combine portability and protection\n【Quality Assurance】The warranty period is 12 months. In case of any malfunction, we will handle repairs, exchanges, returns, etc. Please feel free to contact us › See more product details\nBrand Ewin\nCompatible Devices Computers / iPads / Laptops / Smartphones, Windows/iOS/Android/Chrome OS\nConnectivity Technology Bluetooth\nKeyboard Description 統合型\nRecommended Uses For Product ビジネス, 普段使い\nSpecial Feature トラックパッド, マルチペアリング, 充電式, 折りたたみ式, 軽量\nColor gray\nStyle コンテンポラリー\nMaterial Acrylonitrile Butadiene Styrene\nIncluded Components USBケーブル See more\nVisit the Ewin Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Ewin Numeric Key, Calculator, Touch Pad, 3-in-1, Bluetooth, Wireless, Connects to 2 Devices Simultaneously, Mac Numeric Key, Pantograph Type, Ultra Thin, Lightweight, Durable, Bluetooth, Wireless",
+          "url": "https://www.amazon.co.jp/dp/B0HFRY7WRM?th=1",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "Satechi Bluetooth拡張テンキー 34キー・充電式 スペースグレイ",
-      "asin": "B07YVPTY94",
-      "brand": "Satechi",
+      "amazon_title": "iClever テンキー Bluetooth ワイヤレス 数字 キーボード 2台接続 超薄型 金属構造 numlock連動 IC-KP10 ブラック",
+      "asin": "B0B6J4Q3KH",
+      "brand": "iClever",
+      "discovery_axis_id": "limited_desk_connection",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61DHuH-sJKL._AC_SL1500_.jpg",
-      "matched_comparison_axes": [
-        "key_layout",
-        "os_input_behavior"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/71UTv-zv3WL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B07YVPTY94",
+      "product_id": "AMZ-B0B6J4Q3KH",
+      "provisional": false,
+      "rating": 4.0,
       "ref": "p5",
-      "search_key": "テンキー 有線 薄型 34キー mac テンキーボード Tabキ",
-      "selection_score": 0.3,
-      "selected_variant": "スペースグレイ・34キー・本体1台"
+      "review_count": 1136,
+      "search_key": "iClever テンキー Bluetooth ワイヤレス 数字 キーボード 2台",
+      "selection_reason": "USB端子をテンキー用に使えない環境で選べるBluetooth専用モデル。商品説明には2台の接続先をボタンで切り替えられること、厚さ約13mm、USB Type-C充電が明記されている。自宅と職場のノートPCを切り替え、机上に接続ケーブルを増やしたくない人に向く。",
+      "sources": [
+        {
+          "brand": "iClever",
+          "excerpt": "iClever IC-KP10 Bluetooth Numeric Keypad, Connect to 2 Devices, Ultra Thin\nAbout this item\n【Comfortable keystroke】With the pantograph structure, it achieves a short key stroke and light pressing sensation. Even with long hours of data entry or work tasks, it reduces strain on your fingers and wrists, making it a less tiring design. It features an aluminum alloy bottom shell, making it less prone to deformation even with daily use and highly durable\n【Seamless Switching】Bluetooth allows simultaneous connection to two devices. Instantly switch with one click, and automatically reconnect when powered on. Supports efficient workflow without stopping the flow of work even in environments with multiple devices. * This product is dedicated for Bluetooth connection. It does not support wired or receiver connection\n【Silent Design】Due to the key structure designed for silence, input sound is minimized. You can concentrate on your work without worrying about the surroundings, even in the office or shared spaces. It is designed to be less disruptive to colleagues or family members working\n【Ultra-thin, energy-efficient】With a slim design that is approximately 13mm thick, it is convenient for carrying around. Compatible with USB Type-C charging, it can be used for up to approximately 40 days on a full charge (assuming 2 hours of use per day). It automatically switches to power-saving mode if there is no operation for 30 minutes\n【Refined Design】Aluminum alloy body and minimal exterior design. A calm design that harmonizes well with macOS devices, blending naturally into your desk space. It enhances not only functionality but also the overall impression of your workspace › See more product details\nBrand iClever\nCompatible Devices iMac, Macbook, PC, Laptop, Tablet, Smartphone, iPhone, iPad\nConnectivity Technology Bluetooth\nKeyboard Description Bluetooth keyboard, scissor switch, portable size\nRecommended Uses For Product Business, Everyday Use, Office\nSpecial Feature Rechargeable\nColor Black\nKeyboard backlighting color support Single Color\nStyle Business\nProduct Dimensions 14.6L x 11.4W x 1.3H cm See more\nVisit the iClever Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "iClever IC-KP10 Bluetooth Numeric Keypad, Connect to 2 Devices, Ultra Thin",
+          "url": "https://www.amazon.co.jp/dp/B0B6J4Q3KH?th=1",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "【国内正規品】Keychron Q0 Max QMKカスタム・テンキー、2.4 GHz/Bluetooth 5.1/有線接続、RGBライト、ホットスワップ対応Gateron Jupiterメカニカルスイッチ/フルアルミニウム/Mac Windows Linux対応 (Gateron Jupiterメカニカル赤軸（カーボンブラック）)",
-      "asin": "B0D96Z8T9L",
-      "brand": "Keychron",
+      "amazon_title": "Ewin テンキー Bluetooth5.2 / 2.4G接続 2台接続 テンキー ワイヤレス 数字キーボード Bluetoothキーボード",
+      "asin": "B0GFT7DD3W",
+      "brand": "ewinstore",
+      "discovery_axis_id": "limited_desk_connection",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61nSA8phetL._AC_SL1500_.jpg",
-      "matched_comparison_axes": [
-        "os_input_behavior"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/71Usub0yB5L._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B0D96Z8T9L",
+      "product_id": "AMZ-B0GFT7DD3W",
+      "provisional": false,
+      "rating": 4.1,
       "ref": "p6",
-      "search_key": "テンキー 有線 34 キー 超薄型 静音 ショートカットキー付き",
-      "selection_score": 0.3,
-      "selected_variant": "国内正規完成品・カーボンブラック・Gateron Jupiter赤軸・本体1台"
+      "review_count": 665,
+      "search_key": "ewinstore Ewin テンキー Bluetooth5.2 / 2.4G接続",
+      "selection_reason": "Bluetoothと付属レシーバーによる2.4GHz接続を使い分けられる点が特徴。商品説明にはUSB Type-C変換アダプター、Tab・Backspace・Deleteなどを含む37キー、Type-C充電が記載されている。端子の空きや接続先が日によって変わり、限られた机上で表計算の修正キーも手元に置きたい人に向く。",
+      "sources": [
+        {
+          "brand": "ewinstore",
+          "excerpt": "Ewin Numeric Key, Bluetooth 5.2/2.4G Connection, 2-Way Connection\nAbout this item\nCan be connected to 2 devices, making work easy Connects to 2 devices via 2.4G wireless and Bluetooth Supports both Bluetooth and receiver connections simultaneously The 2.4G connection is via a USB adapter, but it comes with a Type-C conversion adapter, so it can be connected to smartphones, iPads, and other tablets Of course, it is fine even if the port is blocked with Bluetooth!\nMulti-system Windows/Mac/iOS/Adroid: Work speed varies depending on whether or not you have a numeric keypad You want to quickly report expenses like transportation costs using your smartphone, right? This product is compatible with any device, is durable, and its pantograph keys are very easy to type on and also quiet Compatible with iOS, Mac, Android, Chrome OS, Windows 8, 10, 11\nIf you work with Excel, only the number pad is the way to go! This wireless numeric keypad is also equipped with TAB key + 00 key, super convenient for Excel fast input, 00 key input is smooth and no delay Combining arithmetic symbols such as ()+= makes digital calculations more convenient\n【Efficient Work・Shortcut Keys・37 Keys】Master it and you can become a super worker! This numeric keypad includes Tab, Shift, Tab, Esc, Delete, and BS keys for easier use There are 37 function buttons for pgup, pgdn, home and end Comes with a calculator, making tedious office work unexpectedly enjoyable!\n【Japanese Compatible Numeric Keypad】Unlike other similar keypads that are not compatible with Japanese (English system), this may result in garbled text or inability to use This number pad has been developed in collaboration to be compatible with Japanese keyboards, ensuring that when using symbols such as =, *, /, etc. in Excel, the correct numbers are entered without character conversion\n【Type-C Charging・60 Hours of Use Possible】Charging with Type-C for 2-3 hours allows for up to 60 hours of use Turn on the power switch of the keyboard and if no operation is performed, it will wait up to a maximum of 6 months ▲Within 18 months, if you have any questions, please feel free to contact us at any time Note: This keypad is a numeric keypad compatible with the Japanese system When using, please change the system language to Japanese › See more product details\nBrand ewinstore\nCompatible Devices Laptop, Macbook, Windows, iOS, ipad\nConnectivity Technology USB-C\nKeyboard Description Wireless\nRecommended Uses For Product Business\nSpecial Feature Rechargeable\nColor new black\nKeyboard backlighting color support Single Color\nStyle Shiyo\nProduct Dimensions 14.6L x 11.9W x 1.5H cm See more\nVisit the ewinstore Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Ewin Numeric Key, Bluetooth 5.2/2.4G Connection, 2-Way Connection",
+          "url": "https://www.amazon.co.jp/dp/B0GFT7DD3W?th=1",
+          "verified": true
+        }
+      ]
     }
   ],
   "selection": {
-    "brand_count": 0,
-    "comparison_axes_covered": [
-      "connection_power",
-      "key_layout",
-      "os_input_behavior"
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B00I17QCF6",
+            "reason": "有線USBテンキーの定番的な使い方に、2ポートのUSB 2.0ハブを加えた一台。商品説明にはTabキー、00キー、マウスなどを接続できるハブ、ドライバー不要のUSB接続が明記されている。経費表を入力しながらUSBマウスも手元で使いたい人に向く。"
+          },
+          {
+            "asin": "B07FPJ5VJ6",
+            "reason": "ノートPCに近い軽い打鍵感を求める人が選びやすい無線タイプ。商品説明によるとパンタグラフ式で、19mmのキーピッチと独立したキー配置を採用し、最薄部は6.5mm。レシーバーを接続でき、入力位置を動かしながら売上表を扱う人に向く。"
+          }
+        ]
+      },
+      {
+        "axis_id": "spreadsheet_editing",
+        "products": [
+          {
+            "asin": "B017OFKS5U",
+            "reason": "数字を入力した後、Tabキーで次のセルへ進む作業に合う薄型テンキー。商品仕様にはTabキーを含む19キー、19mmのキーピッチ、パンタグラフ式、USB給電が示されている。ノートPCの横に置き、売上表を列に沿って入力する人に向く。"
+          },
+          {
+            "asin": "B0HFRY7WRM",
+            "reason": "テンキーにタッチパッドと電卓を組み合わせた構成が特徴。商品説明には数字入力に加え、タッチパッドでのカーソル操作・スクロール、電卓表示への切り替えが記載されている。表の数値を入力しつつ離れたセルの確認や計算を手元で行いたい人に向く。"
+          }
+        ]
+      },
+      {
+        "axis_id": "limited_desk_connection",
+        "products": [
+          {
+            "asin": "B0B6J4Q3KH",
+            "reason": "USB端子をテンキー用に使えない環境で選べるBluetooth専用モデル。商品説明には2台の接続先をボタンで切り替えられること、厚さ約13mm、USB Type-C充電が明記されている。自宅と職場のノートPCを切り替え、机上に接続ケーブルを増やしたくない人に向く。"
+          },
+          {
+            "asin": "B0GFT7DD3W",
+            "reason": "Bluetoothと付属レシーバーによる2.4GHz接続を使い分けられる点が特徴。商品説明にはUSB Type-C変換アダプター、Tab・Backspace・Deleteなどを含む37キー、Type-C充電が記載されている。端子の空きや接続先が日によって変わり、限られた机上で表計算の修正キーも手元に置きたい人に向く。"
+          }
+        ]
+      }
     ],
+    "brand_count": 5,
+    "candidate_count": 16,
+    "comparison_axes_covered": [],
     "content_duplicates_removed": [],
-    "price_used_as_constraint_only": true
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": []
   },
   "slug": "computer-numeric-keypads"
 }
