@@ -1,0 +1,60 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "CEO-BU002-LEGACY-JSON33-20261127",
+  "instruction_ref": "CEO 2026-11-27: migrate the 33 existing legacy articles to JSON",
+  "instruction": "Migrate exactly the 33 indexed legacy articles without a body JSON. Preserve source HTML byte-for-byte, URL, product links, images, and listing status. Register source-preserving JSON and provide deterministic regeneration. Do not synthesize evidence or approve editorial changes.",
+  "implementer": "COO Mac Studio non-Codex Staging migration",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3",
+    "https://app.notion.com/p/3dc67ec6a1008196b017ee01e1824bba"
+  ],
+  "allowed_paths": [
+    "pipeline/renderer.py",
+    "pipeline/validate_operating_model.py",
+    "pipeline/legacy_snapshot.py",
+    "tests/test_legacy_snapshot_migration.py",
+    "change-contracts/bu002-legacy-json33-20261127.json",
+    "data/payloads/after-sun-lotion-6-choices.json",
+    "data/payloads/air-purifiers-top-6.json",
+    "data/payloads/beginner-friendly-coffee-makers.json",
+    "data/payloads/best-cooking-tools-6-selection.json",
+    "data/payloads/best-face-powders-6-picks.json",
+    "data/payloads/best-hair-oils-for-moisture-6-choices.json",
+    "data/payloads/best-high-quality-earphones-6-picks.json",
+    "data/payloads/best-vitamin-e-serums-for-summer.json",
+    "data/payloads/comfortable-morning-toasters.json",
+    "data/payloads/cool-bedding-6-selection.json",
+    "data/payloads/cool-towels-for-summer-6-picks.json",
+    "data/payloads/easy-aroma-candles-6-picks.json",
+    "data/payloads/eco-friendly-detergents-6picks.json",
+    "data/payloads/enjoy-refreshing-shower-heads-6-picks.json",
+    "data/payloads/enjoy-summer-portable-fans-6-picks.json",
+    "data/payloads/essential-portable-water-bottles-6-choices.json",
+    "data/payloads/foot-massagers-for-summer-relaxation-6-picks.json",
+    "data/payloads/health-management-blood-pressure-monitors.json",
+    "data/payloads/high-performance-air-circulators-6.json",
+    "data/payloads/home-projectors-6-recommendations.json",
+    "data/payloads/home-relaxation-goods-6-selection.json",
+    "data/payloads/mineral-foundation-six-selection.json",
+    "data/payloads/must-have-kitchen-appliances.json",
+    "data/payloads/seasonal-moisturizing-creams-6.json",
+    "data/payloads/sleep-aid-devices-6-selection.json",
+    "data/payloads/smart-home-appliances-top-6.json",
+    "data/payloads/stay-cool-at-home-6-best-evaporative-coolers.json",
+    "data/payloads/summer-comfort-fan-selection.json",
+    "data/payloads/summer-nail-polish-6-selection.json",
+    "data/payloads/summer-refresh-body-scrubs-6-picks.json",
+    "data/payloads/summer-skin-protection-primers-6-choices.json",
+    "data/payloads/summer-sunscreen-top6.json",
+    "data/payloads/vitamin-c-serums.json"
+  ],
+  "preserved_rules": [
+    "Normal Writer/QA/evidence/publish gates remain unchanged",
+    "No HTML, listing, product DB, sitemap or live job changes",
+    "All 33 remain at the same URL and listing status",
+    "No fake evidence, acceptance, republish or new articles"
+  ],
+  "acceptance_tests": [
+    "tests/test_legacy_snapshot_migration.py"
+  ]
+}

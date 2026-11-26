@@ -31,7 +31,10 @@ def _candidate(slug: str, category: str) -> dict:
 
 
 def validate() -> dict:
-    payload_paths = sorted((ROOT / 'data' / 'payloads').glob('*.json'))
+    # Known snapshots do not have editorial approval/evidence and must not seed
+    # normal publication QA. Their roundtrip is verified by the migration test.
+    payload_paths = sorted(p for p in (ROOT / 'data' / 'payloads').glob('*.json')
+                           if (ROOT / 'data' / 'evidence' / p.name).is_file())
     actual_articles = []
     for payload_path in payload_paths:
         slug = payload_path.stem
