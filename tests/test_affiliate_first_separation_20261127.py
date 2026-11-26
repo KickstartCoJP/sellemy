@@ -49,10 +49,12 @@ def test_writer_and_editorial_plan_do_not_force_sales_copy_or_description_length
     p=_prompt(topic,evidence)
     plan=build_editorial_plan(topic,evidence)
     e04=next(x['instruction'] for x in plan['requirements'] if x['id']=='E04')
-    assert '文字数の最低・最高条件も' in p
+    assert '2〜3文・おおむね60〜120文字を執筆上の目安' in p
+    assert '文数・文字数の最低・最高条件も' in p
     assert '商品説明の最低文字数' not in p
     assert '160〜260' not in p
-    assert '文字数の下限を強制しない' in e04
+    assert '2〜3文・おおむね60〜120文字を執筆目安' in e04
+    assert '文数・文字数の下限を強制しない' in e04
     assert 'SEO・AEO' in p
     assert '商品カセット以外' in p
 
