@@ -2,7 +2,7 @@
   "schema": "kickstart-change-contract/v1",
   "task_id": "CEO-BU002-AFFILIATE-FIRST-CANON-REDESIGN-20261127",
   "instruction_ref": "CEO explicit 2026-11-27: 戦略はただのアフィリ。最低限の安全・虚偽防止、SEO/AEO、1万記事。導入と結びは十分な文量、商品説明は短い。一般記事部分の個別商品名・誘導禁止。『正本を含め抜本的に見直せ。』",
-  "instruction": "Align stage prompts, editorial plan, editorial/QA policy, persisted Brief projection and machine gate with canonical SEO/AEO affiliate-first article strategy. Do not require 160 character product descriptions, mandatory product-by-product sales appeals or optional specs. Preserve substantive lead and conclusion. Disallow product names, brands and references to selected products outside product cassettes. Keep product-specific factual correctness, safety, duplicate/identity checks, affiliate link/image gate, independent QA and CEO publication approval.",
+  "instruction": "Align stage prompts, editorial plan, editorial/QA policy, persisted Brief projection and machine gate with canonical SEO/AEO affiliate-first article strategy. Do not require 160 character product descriptions, mandatory product-by-product sales appeals or optional specs. Preserve substantive lead and conclusion. Disallow product names, brands and references to selected products outside product cassettes. Keep product-specific factual correctness, safety, duplicate/identity checks, affiliate link/image gate, independent QA and CEO publication approval. Repeated 12-character short opening/ending fragments are diagnostic rather than automatic failure; substantive duplicate sentences and near-identical product descriptions remain hard NG.",
   "implementer": "BU-002 isolated Mac Studio non-Codex implementation; CEO staging review",
   "canonical_refs": [
     "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3",

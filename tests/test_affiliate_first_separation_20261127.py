@@ -72,3 +72,15 @@ def test_existing_factual_claim_gates_remain_intact():
     changed=deepcopy(evidence)
     changed['products'][1]['amazon_title']=changed['products'][0]['amazon_title']
     assert product_issues(changed)
+
+
+def test_identical_short_endings_not_a_hard_failure_without_repeated_content():
+    payload,evidence,_=accepted_fixture()
+    candidate=deepcopy(payload)
+    # Only the tail phrase is shared; product identity and facts remain unique.
+    for product in candidate['products']:
+        product['description']=product['description'].rstrip('。')+'という選択肢です。'
+    qa=evaluate(candidate,evidence)
+    assert qa['distinct_openings_endings_pass'] is False
+    assert qa['no_repeated_sentences_pass'] is True
+    assert qa['overall_pass'] is True

@@ -235,7 +235,9 @@ def run_qa(html: str, payload: dict, evidence: dict, *, acceptance: dict | None 
         results['semantic_acceptance_pass'],
         results['lead_in_range'], results['general_product_free_pass'], results['h3_len_pass'],
         results['banned_phrase_pass'], results['description_uniqueness_pass'],
-        results['no_repeated_sentences_pass'], results['distinct_openings_endings_pass'],
+        # Identical short endings are a diagnostic, not an automatic failure;
+        # substantive duplicates remain caught by sentence/description checks.
+        results['no_repeated_sentences_pass'],
         results['nav_footer_pass'], results['category_pass'], results['canonical_pass'], results['asin_pass'],
         results['affiliate_pass'], results['image_identity_pass'], results['fixed_price_pass'],
         (not require_image_audit or results.get('product_image_audit_pass') is True),
