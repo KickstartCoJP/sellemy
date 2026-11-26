@@ -1,0 +1,30 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "CEO-BU002-OBSOLETE-REVIEW-EXHAUSTION-20261126",
+  "instruction_ref": "CEO direct 2026-11-26: 完全復旧させろ",
+  "instruction": "Invalidate archived Product QA combinations that were rejected solely because of obsolete identity-citation rules, including a generic semantic-summary failure with all products topic-fit. Keep genuine semantic rejections and original review artifacts. Classify a citation infrastructure failure only when an actual invalid machine anchor exists; never classify a bare Reviewer refusal as a citation failure. Maintain independent Product QA, six-product selection, and CEO publication gate.",
+  "implementer": "Mac Studio scoped worktree, CEO-staging",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3"
+  ],
+  "allowed_paths": [
+    "change-contracts/bu002-obsolete-review-exhaustion-20261126.json",
+    "pipeline/growth_role_business.py",
+    "pipeline/semantic_review.py",
+    "tests/test_archived_identity_review_retry_20261126.py",
+    "tests/test_optional_listing_qa_recheck_20261126.py",
+    "tests/test_product_selection_recovery_20261125.py",
+    "tests/test_product_selection_full_recovery_20261126.py"
+  ],
+  "preserved_rules": [
+    "Do not accept semantic Product QA failures",
+    "Product count fixed at six with two per axis",
+    "No independent QA or CEO approval bypass",
+    "Keep review artifact evidence for audit"
+  ],
+  "acceptance_tests": [
+    "tests/test_archived_identity_review_retry_20261126.py",
+    "tests/test_product_selection_recovery_20261125.py",
+    "tests/test_product_selection_full_recovery_20261126.py"
+  ]
+}
