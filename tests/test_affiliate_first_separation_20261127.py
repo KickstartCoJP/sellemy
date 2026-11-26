@@ -57,6 +57,8 @@ def test_writer_and_editorial_plan_do_not_force_sales_copy_or_description_length
     assert '文数・文字数の下限を強制しない' in e04
     assert 'SEO・AEO' in p
     assert '商品カセット以外' in p
+    assert '一般的な選び方を自然な日本語で説明する' not in str(plan['requirements'])
+    assert 'カテゴリや成分の一般知識を自然な日本語で説明する' in str(plan['requirements'])
     assert '選択時の判断材料' not in p
     assert '選ぶ際の判断材料' not in e04
     assert '推薦理由に沿った' not in str(plan['requirements'])

@@ -1,0 +1,26 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "CEO-BU002-REMOVE-REPEATED-CHOICE-TITLE-20261127",
+  "instruction_ref": "CEO 2026-11-27: タイトルが全部選び方なのもおかしい。これも指示のせいだ。直せ。",
+  "instruction": "Remove the Writer editorial-plan instruction that makes generic buyer selection guidance mandatory. Keep the existing generic factual article section and change the parallel Writer/role wording so it no longer primes the same choice label. Let article headings arise from the existing topic and approved axes without adding title templates, banned terms, word count limits, QA gates or hard lexical constraints.",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3",
+    "https://app.notion.com/p/3dc67ec6a1008196b017ee01e1824bba"
+  ],
+  "implementer": "BU-002 isolated non-Codex Staging implementation",
+  "allowed_paths": [
+    "change-contracts/bu002-title-choice-bias-removal-20261127.json",
+    "pipeline/editorial_plan.py",
+    "pipeline/writer_runtime.py",
+    "config/writer-editorial-role.md",
+    "tests/test_affiliate_first_separation_20261127.py"
+  ],
+  "preserved_rules": [
+    "Planner owns the product theme and the choice of axes and assignments",
+    "Writer retains generic SEO/AEO explanatory sections and the existing output schema",
+    "No new banned title words, required title structures, mechanical counting or QA gates",
+    "Preserve QA, evidence, product, publishing and CEO approval requirements",
+    "Preserve unrelated briefs and new-topic production admission policy"
+  ],
+  "acceptance_tests": ["tests/test_affiliate_first_separation_20261127.py"]
+}
