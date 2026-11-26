@@ -1,0 +1,31 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "CEO-BU002-REMOVE-EXCESS-CHOICE-DIRECTIVES-20261127",
+  "instruction_ref": "CEO 2026-11-27: 選びやすさなんか一切コンセプトにない。切り口作った時点で充分。余計な指示入れんなよ。直せ。",
+  "instruction": "Remove Writer instructions to produce additional product-specific selection rationale, buyer-judgment narrative, recommendation explanations and repeated formulaic reader-fit claims after Planning already fixed the article's axes and product assignments. Do not add new language bans, repetition count gates, extra QA conditions or new Writer tasks. Preserve the approved description length hint and all safety/identity constraints.",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3",
+    "https://app.notion.com/p/3dc67ec6a1008196b017ee01e1824bba"
+  ],
+  "implementer": "BU-002 isolated non-Codex Staging implementation",
+  "allowed_paths": [
+    "change-contracts/bu002-writer-no-choice-narrative-20261127.json",
+    "pipeline/writer_runtime.py",
+    "pipeline/editorial_plan.py",
+    "config/writer-editorial-role.md",
+    "config/growth-stage-briefs.json",
+    "tests/test_affiliate_first_separation_20261127.py",
+    "tests/test_writer_no_count_instruction_20261125.py"
+  ],
+  "preserved_rules": [
+    "Planning determines axes, product assignment, and topic; Writer does not replan",
+    "No new mandatory wording, word bans, frequency caps, or QA gates",
+    "No changes to independent editorial, claim, safety, product QA, CEO approval or publication",
+    "Keep nonbinding two to three sentences and 90 to 150 characters recommendation",
+    "Maintain new-topic stop and production code approval workflow"
+  ],
+  "acceptance_tests": [
+    "tests/test_affiliate_first_separation_20261127.py",
+    "tests/test_writer_no_count_instruction_20261125.py"
+  ]
+}
