@@ -1,0 +1,130 @@
+{
+  "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+  "evidence_sha256": "da3b74b2ac8cc569b3808041c8ec94a3d62eb23309950cc764336a882ae13318",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 14848,
+    "input_tokens": 28289,
+    "listing_identity_citations_repaired": [
+      "p1",
+      "p2",
+      "p3",
+      "p4",
+      "p5",
+      "p6"
+    ],
+    "member_binding_revision": 4,
+    "output_tokens": 1675,
+    "reasoning_effort": "medium",
+    "reasoning_output_tokens": 342,
+    "reused_product_qa": true,
+    "session_id": "01a216a0-f15e-7c12-afbe-22f3e588039b",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "f502d89d1c2f24eaf6bb925a8051f09641ad44a88d9f8af00f1bffa97b5faa41",
+  "review": {
+    "buying_guidance": false,
+    "claims_grounded": false,
+    "complete_comparison": false,
+    "distinct_products": true,
+    "duplicate_pair_checks": [],
+    "editorial_voice_appropriate": false,
+    "internal_qa_leak_absent": false,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "popular",
+            "quote": "This ten keyboard features a 2-port USB 2.0 hub that allows you to connect up to two USB devices such as a mouse"
+          }
+        ],
+        "identity_key": "エレコム テンキー 有線 メンブレン Mサイズ USBポート付 1000万回高耐久 ブラック TK-TCM012BK",
+        "identity_quote": "エレコム テンキー 有線 メンブレン Mサイズ USBポート付 1000万回高耐久 ブラック TK-TCM012BK",
+        "reason": "掲載資料の型番で識別できる有線テンキー。USBハブとTab・00キーの記載があり、数字入力とUSB機器の接続を手元にまとめたい用途で紹介できる。出典: https://www.amazon.co.jp/dp/B00I17QCF6?th=1",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "popular",
+            "quote": "The key type employs the \"pantograph method\" that can be keyed with the same light force as a laptop keyboard"
+          }
+        ],
+        "identity_key": "エレコム USB-A テンキー ワイヤレス(レシーバー付属) パンタグラフ 薄型 ブラック TK-TDP019BK",
+        "identity_quote": "エレコム USB-A テンキー ワイヤレス(レシーバー付属) パンタグラフ 薄型 ブラック TK-TDP019BK",
+        "reason": "掲載資料の型番で識別できる、レシーバー付きの薄型テンキー。パンタグラフ式のキーを好む人に紹介できる。p1とは型番、接続方式、キー構造が異なる。出典: https://www.amazon.co.jp/dp/B07FPJ5VJ6?th=1",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "spreadsheet_editing",
+            "quote": "■ Key Layout: 19 keys ■ Key Pitch: 19 mm ■ Key Input Method: Pantograph"
+          }
+        ],
+        "identity_key": "バッファロー テンキー Tabキー付き ブラック BSTK11BK",
+        "identity_quote": "バッファロー テンキー Tabキー付き ブラック BSTK11BK",
+        "reason": "掲載資料の型番で識別できる。Tabキー付きで、USB接続、19キー配列、パンタグラフ式という記載があり、表計算の数字入力に沿った紹介ができる。出典: https://www.amazon.co.jp/dp/B017OFKS5U?th=1",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "spreadsheet_editing",
+            "quote": "Bluetooth tenkey, high-precision touchpad, calculator integrated into one, providing smooth operation for cursor control, scrolling, and number input."
+          }
+        ],
+        "identity_key": "Ewin テンキー 電卓 タッチパッド 3in1 Bluetooth 2台同時接続 ワイヤレス折りたたみ式 グレー",
+        "identity_quote": "Ewin テンキー 電卓 タッチパッド 3in1 Bluetooth 2台同時接続 ワイヤレス折りたたみ式 グレー",
+        "reason": "掲載資料が示すテンキー・タッチパッド・電卓の一体構成で識別できる。数字入力に加えてカーソル操作や計算を手元で行いたい用途に沿う。p6とは記載された機能構成が異なる。出典: https://www.amazon.co.jp/dp/B0HFRY7WRM?th=1",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "limited_desk_connection",
+            "quote": "This product is dedicated for Bluetooth connection. It does not support wired or receiver connection"
+          }
+        ],
+        "identity_key": "iClever テンキー Bluetooth ワイヤレス 数字 キーボード 2台接続 超薄型 金属構造 numlock連動 IC-KP10 ブラック",
+        "identity_quote": "iClever テンキー Bluetooth ワイヤレス 数字 キーボード 2台接続 超薄型 金属構造 numlock連動 IC-KP10 ブラック",
+        "reason": "掲載資料の型番で識別できるBluetooth専用テンキー。テンキー接続にUSB端子を使わず、2台の接続先を切り替えたい用途に沿う。出典: https://www.amazon.co.jp/dp/B0B6J4Q3KH?th=1",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "limited_desk_connection",
+            "quote": "Connects to 2 devices via 2.4G wireless and Bluetooth Supports both Bluetooth and receiver connections simultaneously"
+          }
+        ],
+        "identity_key": "Ewin テンキー Bluetooth5.2 / 2.4G接続 2台接続 テンキー ワイヤレス 数字キーボード Bluetoothキーボード",
+        "identity_quote": "Ewin テンキー Bluetooth5.2 / 2.4G接続 2台接続 テンキー ワイヤレス 数字キーボード Bluetoothキーボード",
+        "reason": "掲載資料が示すBluetooth・レシーバー両対応と37キーの構成で識別できる。接続先や空き端子に応じて接続方法を選びたい用途に沿う。出典: https://www.amazon.co.jp/dp/B0GFT7DD3W?th=1",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reader_decision_outsourcing_absent": false,
+    "reason": "検証済みの商品掲載資料に、6件それぞれの識別情報と紹介理由を支える記述がある。いずれもPC向けテンキーで、既存の3グループに各2件を割り当てられる。p1とp2は同じブランドだが型番と構造が異なり、同一商品の色・数量違いを示す根拠はない。記事本文は未提出のため、本文のみを対象とする項目はfalseとした。",
+    "recommendation_conclusion": false,
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}
