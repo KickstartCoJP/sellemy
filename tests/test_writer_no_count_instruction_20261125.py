@@ -10,7 +10,7 @@ def test_writer_prompt_does_not_call_out_product_count_or_group_count():
     for banned in ('6つの商品','6件に反復','6つの異なる商品','2商品ずつ3組','3組の割当','3組の商品','6選','six product assignments'):
         assert banned not in directive_text
     assert 'Evidenceで確定した商品・商品画像・購入リンク・掲載順・割当を維持' in directive_text
-    assert '網羅条件もありません' in directive_text
+    assert '文数・文字数の最低・最高条件はありません' in directive_text
 
 
 def test_writer_revision_prompt_keeps_assignments_without_count_language():
