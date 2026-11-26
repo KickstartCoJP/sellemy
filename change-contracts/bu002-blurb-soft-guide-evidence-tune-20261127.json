@@ -1,0 +1,20 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "CEO-BU002-SHORT-PRODUCT-DESCRIPTION-FEEDBACK-20261127",
+  "instruction_ref": "CEO 2026-11-27: 推奨文字数入れてからレビュー出てる？まだ短いけど",
+  "instruction": "Post-guide drafts verified at 31-74 characters for actual six-product descriptions, despite current soft 60-120 guidance. Raise the nonbinding editorial guide to 90-150 Japanese characters in 2-3 sentences and ask for verified features, usage and buyer-relevant decision details when available. Never pad, invent facts, penalize short blurbs mechanically, force product-specific persona or mandatory specs, or change QA acceptance or new-topic stop.",
+  "canonical_refs": ["https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3","https://app.notion.com/p/3dc67ec6a1008196b017ee01e1824bba"],
+  "implementer": "BU-002 isolated non-Codex Staging implementation",
+  "allowed_paths": [
+    "change-contracts/bu002-blurb-soft-guide-evidence-tune-20261127.json",
+    "pipeline/writer_runtime.py", "pipeline/editorial_plan.py", "config/writer-editorial-role.md", "config/sellemy-codex-shared-brief.md", "config/editorial-qa.md", "config/growth-stage-briefs.json", "tests/test_affiliate_first_separation_20261127.py"
+  ],
+  "preserved_rules": [
+    "Nonbinding editorial reference only: no hard sentence or length Gate",
+    "No fabricated specs or recommendation claims, no padding",
+    "Keep all product names and specific promotion within product cassettes",
+    "No changes to selection, QA, independent review, publication or CEO approval",
+    "Do not alter new-topic admission or use Codex for code modifications"
+  ],
+  "acceptance_tests": ["tests/test_affiliate_first_separation_20261127.py"]
+}
