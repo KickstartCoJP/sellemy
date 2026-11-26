@@ -1,0 +1,138 @@
+{
+  "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+  "evidence_sha256": "8f2286fe9549b2eb82b5e967da4b13e2bb2bdbf51818a78bf5c1ab9830993818",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 11520,
+    "input_tokens": 26107,
+    "listing_identity_citations_repaired": [
+      "p1",
+      "p2",
+      "p3",
+      "p4",
+      "p5",
+      "p6"
+    ],
+    "member_binding_revision": 4,
+    "output_tokens": 1536,
+    "reasoning_effort": "medium",
+    "reasoning_output_tokens": 133,
+    "reused_product_qa": true,
+    "session_id": "01a219b7-9983-7fa3-b576-5362bbba0497",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "14ab9368dda4ba35b040d40a34a96e07c30a3b38aa0620c6409e85d5925d20cc",
+  "review": {
+    "buying_guidance": false,
+    "claims_grounded": false,
+    "complete_comparison": false,
+    "distinct_products": true,
+    "duplicate_pair_checks": [],
+    "editorial_voice_appropriate": false,
+    "internal_qa_leak_absent": false,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "popular",
+            "quote": "Mountable Surfaces: Flat surface with magnets, steel wall"
+          }
+        ],
+        "identity_key": "山崎実業(Yamazaki) マグネット 水切りワイパー ホワイト タワー tower",
+        "identity_quote": "山崎実業(Yamazaki) マグネット 水切りワイパー ホワイト タワー tower",
+        "reason": "確認済みの商品情報（https://www.amazon.co.jp/dp/B09D3FCTHL?th=1）は幅31cmと磁石が付く平らなスチール壁への設置を示す。浴室の壁を水切りし、壁に収納する選択肢として紹介できる。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "popular",
+            "quote": "Product Size (W x D x H): Approx. 9.8 x 1.7 x 17.4 - 21.4 inches (25 x 4.2 x 41.3 - 54 cm)"
+          }
+        ],
+        "identity_key": "山崎産業(Yamazaki Sangyo) 水切り スクイジー バスボンくん ちょっとのび~る 収納用 吸着フック付 182503",
+        "identity_quote": "山崎産業(Yamazaki Sangyo) 水切り スクイジー バスボンくん ちょっとのび~る 収納用 吸着フック付 182503",
+        "reason": "確認済みの商品情報（https://www.amazon.co.jp/dp/B074F1HB89）は幅25cm、全長41.3～54cm、収納用吸着フックを示す。柄の長さと収納方法を選ぶ材料がある。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "long_reach",
+            "quote": "Adjust the telescopic wiper bath handle from 120cm to 148cm"
+          },
+          {
+            "axis_id": "long_reach",
+            "quote": "Featuring a large 17.7 inch (45 cm) squeegee head"
+          }
+        ],
+        "identity_key": "TidyBliss 水切りワイパー ヘビーデューティ 148cm 長柄タイプ， フローリングワイパーコンクリートプール ラグ ガレージデッキ シャワー 窓用屋外 屋内清掃用",
+        "identity_quote": "TidyBliss 水切りワイパー ヘビーデューティ 148cm 長柄タイプ， フローリングワイパーコンクリートプール ラグ ガレージデッキ シャワー 窓用屋外 屋内清掃用",
+        "reason": "確認済みの商品情報（https://www.amazon.co.jp/dp/B0F6YPC4T5）は120～148cmの柄と45cmのヘッドを示す。浴室の広い床面を立って水切りする用途に合う。腰痛軽減などの効果は裏付けられていない。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "long_reach",
+            "quote": "掃除ブラシのサイズ：25*47cm-127cm、素材：ブラスチックロッド、鉄ポール、植毛ブラシ、ゴム刃。"
+          }
+        ],
+        "identity_key": "CLEANHOME デッキブラシ 掃除用ブラシ 2in1 水切りワイパー お風呂掃除ブラシ ベランダ 床掃除 47cm-127cm",
+        "identity_quote": "CLEANHOME デッキブラシ 掃除用ブラシ 2in1 水切りワイパー お風呂掃除ブラシ ベランダ 床掃除 47cm-127cm",
+        "reason": "確認済みの商品情報（https://www.amazon.co.jp/dp/B0B8SCP495）は47～127cmの柄、ブラシ、ゴム刃を示す。浴室床をブラシで掃除し、同じ道具で水を切る用途に合う。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "close_control",
+            "quote": "サイズ(約):163 x 35 x 155 mm (約6.4 x 1.4 x 6.1 インチ)"
+          }
+        ],
+        "identity_key": "山崎産業(Yamazaki Sangyo) バスボンくん 水切りワイパー ウォータースクイジー ミニ",
+        "identity_quote": "山崎産業(Yamazaki Sangyo) バスボンくん 水切りワイパー ウォータースクイジー ミニ",
+        "reason": "確認済みの商品情報（https://www.amazon.co.jp/dp/B00RE4UKRS）は約163×35×155mmのミニ商品を示す。手元で動かす小型の水切りワイパーとして紹介でき、p2の伸縮柄付き商品とは形状が異なる。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "close_control",
+            "quote": "Squeegee for cleaning bathroom walls, mirrors, etc"
+          },
+          {
+            "axis_id": "close_control",
+            "quote": "Integrated design with hook for hanging on shower screen or shelf"
+          }
+        ],
+        "identity_key": "【正規品】 Joseph Joseph (ジョセフジョセフ) 水切り ワイパー イージーストア シャワー スクイージー グレー/ホワイト 70535",
+        "identity_quote": "【正規品】 Joseph Joseph (ジョセフジョセフ) 水切り ワイパー イージーストア シャワー スクイージー グレー/ホワイト 70535",
+        "reason": "確認済みの商品情報（https://www.amazon.co.jp/dp/B07YLFRHNV?th=1）は浴室壁や鏡での使用、25cmの刃、一体型フックを示す。手元での水切りと使用場所近くへの収納を紹介できる。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reader_decision_outsourcing_absent": false,
+    "reason": "根拠情報のみの審査。各商品の掲載名と確認済みの商品情報から6商品を識別でき、浴室の水切りというテーマに適合する。既存の3グループに各2商品を割り当てられる。p2とp5は同じ系列だが、掲載情報では伸縮柄付きとミニサイズで形状が異なり、同一商品の色・数量違いとする根拠はない。記事は未提出。",
+    "recommendation_conclusion": false,
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}

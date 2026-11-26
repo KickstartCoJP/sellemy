@@ -4,149 +4,418 @@
   "category": "dailygoods",
   "comparison_axes": [
     {
-      "id": "surface_compatibility",
+      "id": "popular",
       "keywords": [
-        "浴室壁",
-        "鏡",
-        "ガラス",
-        "床",
-        "使用できない面"
+        "人気"
       ],
-      "label": "水切りする面との適合"
+      "label": "人気・定番の基準"
     },
     {
-      "id": "blade_and_handle",
+      "id": "long_reach",
       "keywords": [
+        "長柄",
+        "伸縮柄",
+        "全長",
+        "ヘッド幅"
+      ],
+      "label": "立った姿勢で床や高い壁に届く長柄"
+    },
+    {
+      "id": "close_control",
+      "keywords": [
+        "短柄",
+        "小型ヘッド",
         "ヘッド幅",
-        "ブレード素材",
-        "持ち手の長さ",
-        "形状",
-        "重量"
+        "収納寸法"
       ],
-      "label": "ヘッド幅と持ち手の構造"
-    },
-    {
-      "id": "storage_and_replacement",
-      "keywords": [
-        "フック",
-        "マグネット",
-        "設置条件",
-        "替え刃",
-        "洗い方"
-      ],
-      "label": "置き方と部品交換の条件"
+      "label": "鏡や浴槽まわりを手元で動かせる短柄"
     }
   ],
   "eyecatch_image": "https://www.sellemy.jp/img/bathroom-water-removal-squeegees/bathroom-water-removal-squeegees.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "8f2286fe9549b2eb82b5e967da4b13e2bb2bdbf51818a78bf5c1ab9830993818",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 26107,
+      "listing_identity_citations_repaired": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 1536,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 133,
+      "session_id": "01a219b7-9983-7fa3-b576-5362bbba0497",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "Mountable Surfaces: Flat surface with magnets, steel wall"
+            }
+          ],
+          "identity_key": "山崎実業(Yamazaki) マグネット 水切りワイパー ホワイト タワー tower",
+          "identity_quote": "山崎実業(Yamazaki) マグネット 水切りワイパー ホワイト タワー tower",
+          "reason": "確認済みの商品情報（https://www.amazon.co.jp/dp/B09D3FCTHL?th=1）は幅31cmと磁石が付く平らなスチール壁への設置を示す。浴室の壁を水切りし、壁に収納する選択肢として紹介できる。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "Product Size (W x D x H): Approx. 9.8 x 1.7 x 17.4 - 21.4 inches (25 x 4.2 x 41.3 - 54 cm)"
+            }
+          ],
+          "identity_key": "山崎産業(Yamazaki Sangyo) 水切り スクイジー バスボンくん ちょっとのび~る 収納用 吸着フック付 182503",
+          "identity_quote": "山崎産業(Yamazaki Sangyo) 水切り スクイジー バスボンくん ちょっとのび~る 収納用 吸着フック付 182503",
+          "reason": "確認済みの商品情報（https://www.amazon.co.jp/dp/B074F1HB89）は幅25cm、全長41.3～54cm、収納用吸着フックを示す。柄の長さと収納方法を選ぶ材料がある。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "long_reach",
+              "quote": "Adjust the telescopic wiper bath handle from 120cm to 148cm"
+            },
+            {
+              "axis_id": "long_reach",
+              "quote": "Featuring a large 17.7 inch (45 cm) squeegee head"
+            }
+          ],
+          "identity_key": "TidyBliss 水切りワイパー ヘビーデューティ 148cm 長柄タイプ， フローリングワイパーコンクリートプール ラグ ガレージデッキ シャワー 窓用屋外 屋内清掃用",
+          "identity_quote": "TidyBliss 水切りワイパー ヘビーデューティ 148cm 長柄タイプ， フローリングワイパーコンクリートプール ラグ ガレージデッキ シャワー 窓用屋外 屋内清掃用",
+          "reason": "確認済みの商品情報（https://www.amazon.co.jp/dp/B0F6YPC4T5）は120～148cmの柄と45cmのヘッドを示す。浴室の広い床面を立って水切りする用途に合う。腰痛軽減などの効果は裏付けられていない。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "long_reach",
+              "quote": "掃除ブラシのサイズ：25*47cm-127cm、素材：ブラスチックロッド、鉄ポール、植毛ブラシ、ゴム刃。"
+            }
+          ],
+          "identity_key": "CLEANHOME デッキブラシ 掃除用ブラシ 2in1 水切りワイパー お風呂掃除ブラシ ベランダ 床掃除 47cm-127cm",
+          "identity_quote": "CLEANHOME デッキブラシ 掃除用ブラシ 2in1 水切りワイパー お風呂掃除ブラシ ベランダ 床掃除 47cm-127cm",
+          "reason": "確認済みの商品情報（https://www.amazon.co.jp/dp/B0B8SCP495）は47～127cmの柄、ブラシ、ゴム刃を示す。浴室床をブラシで掃除し、同じ道具で水を切る用途に合う。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "close_control",
+              "quote": "サイズ(約):163 x 35 x 155 mm (約6.4 x 1.4 x 6.1 インチ)"
+            }
+          ],
+          "identity_key": "山崎産業(Yamazaki Sangyo) バスボンくん 水切りワイパー ウォータースクイジー ミニ",
+          "identity_quote": "山崎産業(Yamazaki Sangyo) バスボンくん 水切りワイパー ウォータースクイジー ミニ",
+          "reason": "確認済みの商品情報（https://www.amazon.co.jp/dp/B00RE4UKRS）は約163×35×155mmのミニ商品を示す。手元で動かす小型の水切りワイパーとして紹介でき、p2の伸縮柄付き商品とは形状が異なる。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "close_control",
+              "quote": "Squeegee for cleaning bathroom walls, mirrors, etc"
+            },
+            {
+              "axis_id": "close_control",
+              "quote": "Integrated design with hook for hanging on shower screen or shelf"
+            }
+          ],
+          "identity_key": "【正規品】 Joseph Joseph (ジョセフジョセフ) 水切り ワイパー イージーストア シャワー スクイージー グレー/ホワイト 70535",
+          "identity_quote": "【正規品】 Joseph Joseph (ジョセフジョセフ) 水切り ワイパー イージーストア シャワー スクイージー グレー/ホワイト 70535",
+          "reason": "確認済みの商品情報（https://www.amazon.co.jp/dp/B07YLFRHNV?th=1）は浴室壁や鏡での使用、25cmの刃、一体型フックを示す。手元での水切りと使用場所近くへの収納を紹介できる。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "根拠情報のみの審査。各商品の掲載名と確認済みの商品情報から6商品を識別でき、浴室の水切りというテーマに適合する。既存の3グループに各2商品を割り当てられる。p2とp5は同じ系列だが、掲載情報では伸縮柄付きとミニサイズで形状が異なり、同一商品の色・数量違いとする根拠はない。記事は未提出。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
   "products": [
     {
-      "amazon_title": "マグネット水切りワイパー タワー 5451 ホワイト",
+      "amazon_title": "山崎実業(Yamazaki) マグネット 水切りワイパー ホワイト タワー tower",
       "asin": "B09D3FCTHL",
-      "brand": "山崎実業",
+      "brand": "YAMAZAKI",
+      "discovery_axis_id": "popular",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/41cnq2tameL._AC_SL1500_.jpg",
-      "matched_comparison_axes": [
-        "storage_and_replacement",
-        "surface_compatibility"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/41cnq2tameL._AC_UL320_.jpg",
       "observed_price": null,
       "product_id": "AMZ-B09D3FCTHL",
+      "provisional": false,
+      "rating": 4.4,
       "ref": "p1",
-      "search_key": "水切りワイパー 風呂 スクイージー 約25cm シリコン 一体成",
-      "selection_score": 0.685,
-      "model": "tower 5451",
-      "selected_variant": "ホワイト"
+      "review_count": 3984,
+      "search_key": "YAMAZAKI 山崎実業(Yamazaki) マグネット 水切りワイパー ホワイ",
+      "selection_reason": "幅31cmのヘッドで壁面の水滴を取り、使い終えたらマグネットが付く平らな浴室壁にそのまま収納できる。壁を広く水切りしたい人が、置き場所まで含めて選ぶ際の基準になる一品。",
+      "sources": [
+        {
+          "brand": "YAMAZAKI",
+          "excerpt": "Yamazaki Magnetic Water-Draining Wiper White Approx. W 12.2 x D 1.7 x H 13.6 inches (31 x 4.3 x 34.5 cm) Tower Dry Wiper Squeegee 5451\nAbout this item\nPlease check \"Sold by\" before purchase to ensure authenticity and authenticity\nProduct Size: Approx. W 12.2 x D 1.7 x H 13.6 inches (W 31 x D 4\nProduct Description: Body: Silicone, nylon (core material), magnet\nHeat Resistance: 446°F (230°C); Cold Resistance: -40°F (-40°C)\nMountable Surfaces: Flat surface with magnets, steel wall › See more product details\nBrand YAMAZAKI\nColor white\nStyle Colander Wiper\nProduct Dimensions 31W x 34.5H cm\nItem Weight 0.16 Kilograms\nVisit the Yamazaki(山崎実業) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Yamazaki Magnetic Water-Draining Wiper White Approx. W 12.2 x D 1.7 x H 13.6 inches (31 x 4.3 x 34.5 cm) Tower Dry Wiper Squeegee 5451",
+          "url": "https://www.amazon.co.jp/dp/B09D3FCTHL?th=1",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "sm@rt764 浴室水切りワイパー",
-      "asin": "B0BJCL4CHT",
-      "brand": "アズマ工業",
+      "amazon_title": "山崎産業(Yamazaki Sangyo) 水切り スクイジー バスボンくん ちょっとのび~る 収納用 吸着フック付 182503",
+      "asin": "B074F1HB89",
+      "brand": "山崎産業(Yamazaki Sangyo)",
+      "discovery_axis_id": "popular",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51BBkP6vzrL._AC_SL1500_.jpg",
-      "matched_comparison_axes": [
-        "surface_compatibility"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/41hU+Y5T0GL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B0BJCL4CHT",
+      "product_id": "AMZ-B074F1HB89",
+      "provisional": false,
+      "rating": 4.0,
       "ref": "p2",
-      "search_key": "フロアスクイージー 角型 長柄 水切り 家庭・業務用 床・浴室",
-      "selection_score": 0.325,
-      "model": "sm@rt764",
-      "selected_variant": "ホワイト"
+      "review_count": 501,
+      "search_key": "山崎産業(Yamazaki Sangyo) 水切り スクイジー バスボンくん ちょっとのび~る",
+      "selection_reason": "柄を約41.3～54cmに伸縮でき、幅25cmのヘッドと収納用の吸着フックが付く。壁の水切りでは柄を伸ばし、手近な場所では縮めたい人に向く。毎回の持ち方と収納場所を考えやすい定番候補。",
+      "sources": [
+        {
+          "brand": "山崎産業(Yamazaki Sangyo)",
+          "excerpt": "Yamazaki Sangyo Water Cutter Squeegee Bath Bon-kun Slightly Stretchable Storage with Adhesive Hook 182503\nAbout this item\nProduct Size (W x D x H): Approx. 9.8 x 1.7 x 17.4 - 21.4 inches (25 x 4.2 x 41.3 - 54 cm)\nMaterials: Body: Polypropylene, Rubber Tip: Thermoplastic Elastomer, Telescopic Handle: Polyacetal, Suction Hook: Polycarbonate, Thermoplastic Elastomer\nCountry of Manufacture: China › See more product details\nBrand 山崎産業(Yamazaki Sangyo)\nColor Elastic\nStyle Elastic\nProduct Dimensions 25W x 54H cm\nItem Weight 0.13 Kilograms\nVisit the 山崎産業(Yamazaki Sangyo) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Yamazaki Sangyo Water Cutter Squeegee Bath Bon-kun Slightly Stretchable Storage with Adhesive Hook 182503",
+          "url": "https://www.amazon.co.jp/dp/B074F1HB89",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "小回りのきくスキージー W677W ホワイト",
-      "asin": "B0FW5LHDVC",
-      "brand": "マーナ",
+      "amazon_title": "TidyBliss 水切りワイパー ヘビーデューティ 148cm 長柄タイプ， フローリングワイパーコンクリートプール ラグ ガレージデッキ シャワー 窓用屋外 屋内清掃用",
+      "asin": "B0F6YPC4T5",
+      "brand": "TidyBliss",
+      "discovery_axis_id": "long_reach",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51m+dLQXTRL._AC_SL1500_.jpg",
-      "matched_comparison_axes": [],
+      "image_url": "https://m.media-amazon.com/images/I/61jlG-g2YOL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B0FW5LHDVC",
+      "product_id": "AMZ-B0F6YPC4T5",
+      "provisional": false,
+      "rating": 4.1,
       "ref": "p3",
-      "search_key": "山崎実業(Yamazaki) 引っ掛け 水切りワイパー S ホワ",
-      "selection_score": 0.325,
-      "model": "W677W",
-      "selected_variant": "新ホワイト"
+      "review_count": 247,
+      "search_key": "TidyBliss 水切りワイパー ヘビーデューティ 148cm 長柄タイプ， フロ",
+      "selection_reason": "柄を120～148cmに調整でき、ヘッド幅は45cm。浴室の広い床面を立った姿勢で水切りしたい人なら、長い柄で屈む動作を減らしつつ、一度に広い範囲へ刃を当てられる。吊り下げ用フックも備える。",
+      "sources": [
+        {
+          "brand": "TidyBliss",
+          "excerpt": "TidyBliss Heavy Duty 148cm Long Handle Floor Wiper Concrete Pool Rug Garage Deck Shower Window Outdoor Indoor Cleaning\nAbout this item\nFeaturing a large 17.7 inch (45 cm) squeegee head, this squeaker bath provides maximum surface contact area per stroke. The Bath Wiper efficiently removes spills and accumulated water to speed up your cleaning process\n148cm Telescopic Handle: Adjust the telescopic wiper bath handle from 120cm to 148cm according to your height. Eliminates back pain when showering, wiping windows and cleaning warehouses. Lightweight yet sturdy for all day use\n45° ERGONOMIC ANGLE FOR EFFORTLESS CLEANING: Angled window wiping mop disperses pressure evenly to reduce friction on marble, tile, glass and concrete. Effortlessly removes stubborn dirt and soap scum - no more messy scrubbing\nSPACE SAVING HOOKS ORGANIZED: Hang it anywhere! Built-in hook keeps squeegee away from the floor Can be installed on garage walls, storage bins and sheds\nALL PURPOSE SQUEEGEE FOR COMMERCIAL: Endless possibilities with 1 bottle! Seamlessly transforms epoxy floors, hardwood, glass and decks Removes pet hair, spills, dirt and leaves no residue › See more product details\nBrand TidyBliss\nColor rose red\nStyle Modern\nProduct Dimensions 45W x 148H cm\nBlade Material Rubber\nVisit the TidyBliss Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "TidyBliss Heavy Duty 148cm Long Handle Floor Wiper Concrete Pool Rug Garage Deck Shower Window Outdoor Indoor Cleaning",
+          "url": "https://www.amazon.co.jp/dp/B0F6YPC4T5",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "山崎産業 Satto 水切りスクイジー 伸縮ハンドルセット 192540",
-      "asin": "B07ZNSHNVW",
-      "brand": "山崎産業",
+      "amazon_title": "CLEANHOME デッキブラシ 掃除用ブラシ 2in1 水切りワイパー お風呂掃除ブラシ ベランダ 床掃除 47cm-127cm",
+      "asin": "B0B8SCP495",
+      "brand": "CLEANHOME",
+      "discovery_axis_id": "long_reach",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51A9w-j447L._AC_SY300_SX300_QL70_ML2_.jpg",
-      "matched_comparison_axes": [],
+      "image_url": "https://m.media-amazon.com/images/I/71i2SXmkd5L._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B07ZNSHNVW",
+      "product_id": "AMZ-B0B8SCP495",
+      "provisional": false,
+      "rating": 4.0,
       "ref": "p4",
-      "search_key": "山崎実業(Yamazaki) 引っ掛け 水切りワイパー M ホワ",
-      "selection_score": 0.325,
-      "model": "Satto 192540",
-      "selected_variant": "水切りスクイジー＋伸縮ハンドルセット"
+      "review_count": 944,
+      "search_key": "CLEANHOME デッキブラシ 掃除用ブラシ 2in1 水切りワイパー お風呂掃除",
+      "selection_reason": "柄は47～127cmで、幅25cmのヘッドにブラシとゴム刃を備える。浴室床の溝をブラシで掃除した後、立った姿勢のまま同じ道具で水を切りたい人に向く。壁や天井の水切りも用途として記載されている。",
+      "sources": [
+        {
+          "brand": "CLEANHOME",
+          "excerpt": "CLEANHOME デッキブラシ 掃除用ブラシ 2in1 水切りワイパー お風呂掃除ブラシ ベランダ 床掃除 47cm-127cm\nこの商品について\n【いいデザインのデッキブラシ】耐久性MAX：ブラシや本体（棒）が折れにくくなった。高品質の鉄ポールとPP素材のブラシヘッドで構成されています。 45度の傾きで、腰に負担が掛からず、掃除しながら膝と背中の痛みを軽減します。 組立のタイプ・ハンドルのは吊り下げ式のデザイン：収納簡単、使わない時に壁にかけると邪魔にならなくて収納性が高い。\n【デッキブラシの規格】掃除ブラシのサイズ：25*47cm-127cm、素材：ブラスチックロッド、鉄ポール、植毛ブラシ、ゴム刃。\n【2 in 1水切りワイパー＆ブラシ設計】普通の掃除（デッキブラシ）だけでなく、水切りワイパーとしても活躍します。窓、壁、鏡、地面、天井の水気を掃除できます。\n【清掃能力は強い】ブラシは乾いても濡れても使用できます。壁、キッチン、バスルームに使用されるだけでなく、ガレージ、歩道、スタジアムなどにも最適です。 【水に強いPP素材の硬いブラシ】毛先を広げた形状だからコーナー部分もしっかり洗えます。異なる太さの毛のダブル植毛なので、浴室の床の細かい溝にも入り込み、汚れを掻き出します。\n【デッキブラシの品質保証】デッキブラシはご購入日から12ヶ月の保証が付いています。万が一、レバーが繋がらない、またはブラシヘッドが不良な場合、どうぞお気軽ご連絡ください。デッキブラシにつきましてご不明点やご質問がございましたらご連絡を頂けると迅速に対応致します。お客様にご満足頂けるよう精一杯対応いたします。 › もっと見る\nブランド CLEANHOME\n色 ブルー\n製品の推奨用途 お風呂掃除, デッキ掃除, 床掃除\n毛の素材 ポリプロピレン (PP)\nハンドル材質 プラスチック, 鉄\n毛のタイプ 先割れなしほうき（異なる太さ）\n特徴 2in1 デッキブラシ&水切りワイパー, ヘビーデューティー, 耐錆性, 軽量, 長いハンドル\n推奨使用場所 床、窓、タイル、お風呂掃除\n付属コンポーネント 2in1 デッキブラシ&水切りワイパー\n商品の寸法 25幅 x 127高さ cm 表示を増やす\nCLEANHOMEのストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "CLEANHOME デッキブラシ 掃除用ブラシ 2in1 水切りワイパー お風呂掃除ブラシ ベランダ 床掃除 47cm-127cm",
+          "url": "https://www.amazon.co.jp/dp/B0B8SCP495",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "ワイパースクィージー 13117300",
-      "asin": "B00MNAYWUE",
-      "brand": "OXO",
+      "amazon_title": "山崎産業(Yamazaki Sangyo) バスボンくん 水切りワイパー ウォータースクイジー ミニ",
+      "asin": "B00RE4UKRS",
+      "brand": "山崎産業(Yamazaki Sangyo)",
+      "discovery_axis_id": "close_control",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51CW9kXWZxL._AC_SL1500_.jpg",
-      "matched_comparison_axes": [
-        "surface_compatibility"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/51WLtrp0n+L._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B00MNAYWUE",
+      "product_id": "AMZ-B00RE4UKRS",
+      "provisional": false,
+      "rating": 4.1,
       "ref": "p5",
-      "search_key": "マーナ (marna) 小回りのきくスキージー (鏡や壁などの掃",
-      "selection_score": 0.325,
-      "model": "OXO 13117300",
-      "selected_variant": "ホワイト・単品"
+      "review_count": 221,
+      "search_key": "山崎産業(Yamazaki Sangyo) バスボンくん 水切りワイパー ウォータースクイジー",
+      "selection_reason": "約幅16.3×高さ15.5cmのミニサイズ。鏡の端や浴槽まわりなど、手元で向きを変えながら水を切りたい人が、ヘッドの小ささを理由に選べる一品。",
+      "sources": [
+        {
+          "brand": "山崎産業(Yamazaki Sangyo)",
+          "excerpt": "Yamazaki Sangyo Bath Bon-kun Draining Wiper, Water Squeegee Mini\nAbout this item\nBath Bonkun Mini Water Squeegee Wiper\nサイズ(約):163 x 35 x 155 mm (約6.4 x 1.4 x 6.1 インチ)\nBody: ABS resin, Rubber: Synthetic rubber › See more product details\nBrand 山崎産業(Yamazaki Sangyo)\nColor mulch\nStyle Small\nProduct Dimensions 16.3W x 15.5H cm\nItem Weight 1 Grams\nVisit the 山崎産業(Yamazaki Sangyo) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Yamazaki Sangyo Bath Bon-kun Draining Wiper, Water Squeegee Mini",
+          "url": "https://www.amazon.co.jp/dp/B00RE4UKRS",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "スキージー ウォームホワイト CL-665-601-7",
-      "asin": "B0743CS9ZV",
-      "brand": "tidy",
+      "amazon_title": "【正規品】 Joseph Joseph (ジョセフジョセフ) 水切り ワイパー イージーストア シャワー スクイージー グレー/ホワイト 70535",
+      "asin": "B07YLFRHNV",
+      "brand": "Joseph Joseph",
+      "discovery_axis_id": "close_control",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/31MKmJoFEEL._AC_SL1000_.jpg",
-      "matched_comparison_axes": [
-        "surface_compatibility"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/31TvcC+e1EL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B0743CS9ZV",
+      "product_id": "AMZ-B07YLFRHNV",
+      "provisional": false,
+      "rating": 4.2,
       "ref": "p6",
-      "search_key": "マーナ (marna) 小回りのきくスキージー (鏡や壁などの掃",
-      "selection_score": 0.325,
-      "model": "tidy CL-665-601-7",
-      "selected_variant": "ウォームホワイト・ロング（通常サイズ）"
+      "review_count": 2888,
+      "search_key": "Joseph Joseph (ジョセフジョセフ) 水切り ワイパー イージーストア シャワー",
+      "selection_reason": "25cmの柔軟なシリコーン刃を持ち、シャワースクリーンや棚に掛けられるフックを一体化した細身の形状。鏡や浴槽まわりを手元で水切りし、使う場所の近くに省スペースで掛けておきたい人に向く。",
+      "sources": [
+        {
+          "brand": "Joseph Joseph",
+          "excerpt": "Joseph Joseph 70535 Wiper Easy Store Shower Squeegee, Gray/White\nAbout this item\nSqueegee for cleaning bathroom walls, mirrors, etc\nFlexible silicone blade for firm drainage\nIntegrated design with hook for hanging on shower screen or shelf\nSlim shape allows for compact storage without taking up much space\nBlade Size: 25cm › See more product details\nBrand Joseph Joseph\nColor multicolor (gray / white)\nStyle Colander\nItem Weight 70 Grams\nBlade Material Silicone\nVisit the Joseph Joseph Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Joseph Joseph 70535 Wiper Easy Store Shower Squeegee, Gray/White",
+          "url": "https://www.amazon.co.jp/dp/B07YLFRHNV?th=1",
+          "verified": true
+        }
+      ]
     }
   ],
   "selection": {
-    "brand_count": 0,
-    "comparison_axes_covered": [
-      "storage_and_replacement",
-      "surface_compatibility"
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B09D3FCTHL",
+            "reason": "幅31cmのヘッドで壁面の水滴を取り、使い終えたらマグネットが付く平らな浴室壁にそのまま収納できる。壁を広く水切りしたい人が、置き場所まで含めて選ぶ際の基準になる一品。"
+          },
+          {
+            "asin": "B074F1HB89",
+            "reason": "柄を約41.3～54cmに伸縮でき、幅25cmのヘッドと収納用の吸着フックが付く。壁の水切りでは柄を伸ばし、手近な場所では縮めたい人に向く。毎回の持ち方と収納場所を考えやすい定番候補。"
+          }
+        ]
+      },
+      {
+        "axis_id": "long_reach",
+        "products": [
+          {
+            "asin": "B0F6YPC4T5",
+            "reason": "柄を120～148cmに調整でき、ヘッド幅は45cm。浴室の広い床面を立った姿勢で水切りしたい人なら、長い柄で屈む動作を減らしつつ、一度に広い範囲へ刃を当てられる。吊り下げ用フックも備える。"
+          },
+          {
+            "asin": "B0B8SCP495",
+            "reason": "柄は47～127cmで、幅25cmのヘッドにブラシとゴム刃を備える。浴室床の溝をブラシで掃除した後、立った姿勢のまま同じ道具で水を切りたい人に向く。壁や天井の水切りも用途として記載されている。"
+          }
+        ]
+      },
+      {
+        "axis_id": "close_control",
+        "products": [
+          {
+            "asin": "B00RE4UKRS",
+            "reason": "約幅16.3×高さ15.5cmのミニサイズ。鏡の端や浴槽まわりなど、手元で向きを変えながら水を切りたい人が、ヘッドの小ささを理由に選べる一品。"
+          },
+          {
+            "asin": "B07YLFRHNV",
+            "reason": "25cmの柔軟なシリコーン刃を持ち、シャワースクリーンや棚に掛けられるフックを一体化した細身の形状。鏡や浴槽まわりを手元で水切りし、使う場所の近くに省スペースで掛けておきたい人に向く。"
+          }
+        ]
+      }
     ],
-    "content_duplicates_removed": [],
-    "price_used_as_constraint_only": true
+    "brand_count": 5,
+    "candidate_count": 24,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [
+      {
+        "asin": "B09D3FCTHL",
+        "check_items": {
+          "color_design_only": "UNKNOWN",
+          "function_structure_difference": "UNKNOWN",
+          "independent_comparison_value": "UNKNOWN",
+          "manufacturer_brand_relation": "UNKNOWN",
+          "sales_packaging_only": "UNKNOWN",
+          "same_product_body": "FAIL",
+          "series_generation_difference": "UNKNOWN",
+          "size_capacity_difference": "UNKNOWN"
+        },
+        "duplicate_of_asin": "B09D3FCTHL",
+        "reason": "same_asin"
+      },
+      {
+        "asin": "B074F1HB89",
+        "check_items": {
+          "color_design_only": "UNKNOWN",
+          "function_structure_difference": "UNKNOWN",
+          "independent_comparison_value": "UNKNOWN",
+          "manufacturer_brand_relation": "UNKNOWN",
+          "sales_packaging_only": "UNKNOWN",
+          "same_product_body": "FAIL",
+          "series_generation_difference": "UNKNOWN",
+          "size_capacity_difference": "UNKNOWN"
+        },
+        "duplicate_of_asin": "B074F1HB89",
+        "reason": "same_asin"
+      }
+    ],
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": [
+      "B074F1HB89",
+      "B09D3FCTHL"
+    ],
+    "targeted_replacement": true
   },
   "slug": "bathroom-water-removal-squeegees"
 }
