@@ -123,46 +123,27 @@ def _prompt(topic: dict, evidence: dict, *, previous_payload: dict | None = None
     evidence = writer_revision_evidence(evidence, gate_feedback) if previous_payload is not None else writer_evidence(evidence)
     prompt = (
         'あなたはSellemyの商品紹介記事を書く編集者です。構造化JSONのみを返してください。\\n\\n'
-        '事実に基づいて各商品の特徴・使い道・向く読者を具体的に紹介してください。企画で確定した商品と割当を維持し、各商品の魅力と推薦理由を書いてください。\\n\\n'
-        '企画のreader_persona.purchase_goalとintent_keyを完成記事まで保ち、商品選定理由を商品の根拠と具体的な場面に結び付けてください。商品名を入れ替えても成立する一般論を各商品に反復しないでください。\n\n'
-        '自然な日本語で、商品固有の魅力と推薦理由を伝えてください。同じ語尾や構文の無意味な繰り返しは避けてください。\\n\\n'
-        '商品カセット以外には、具体的な商品名、ブランド名、商品そのものの説明をしないでください。また、事実や使用経験を創作しないでください。\\n\\n'
+        '検索集客とアフィリエイト送客を目的とする記事を書いてください。一般記事部分はSEO・AEOの検索意図に答える自然な説明とし、確定商品の紹介は商品カセットにのみ短く掲載してください。\\n\\n'
+        '企画の検索意図と読者の目的に合う一般情報を優先してください。各商品について推薦理由・向く人・利用場面・独自の魅力をすべて作文する必要はありません。事実のない具体性を補わないでください。\n\n'
+        '自然で簡潔な日本語を使い、商品説明の長文化、同義反復、無理な推薦作文を避けてください。\\n\\n'
+        '商品カセット以外のタイトル、導入、要約、グループ見出し・説明、選び方、結びに、この記事内の個別商品名・ブランド名・固有仕様・個別商品の参照や誘導を出してはいけません。成分・規格・用途の一般解説は可能ですが、記事内の特定商品には紐づけないでください。\\n\\n'
         '導入は商品の特徴、使い道、読者が気になる点など、読者に伝わる内容から始めてください。架空の体験談や根拠のない状況設定を避けてください。\\n\\n'
         '導入文leadは日本語180文字以上にしてください。上限は設けず、内容に必要な分量で自然に書いてください。確認できない商品の形状・端子位置・性能差を推測で記述しないでください。\\n\\n'
-        '結びは商品名や仕様を再列挙せず、記事の内容に合う自然な短い文章で締めてください。\\n\\n'
-        '商品カセットでは、Evidenceで確定した商品と掲載順・割当を維持してください。各商品について、検証済みの固有の特徴、魅力、向く人、推薦する理由を具体的に説明してください。他候補との比較・優劣の説明は必須ではありません。各商品説明の目安は160〜260字で、字数合わせの水増しは不要です。\\n\\n'
+        '結びはテーマについて実用的で自然な情報量を持つ文章にし、個別商品や商品カセットへの誘導を行わないでください。機械的な字数合わせは不要です。\\n\\n'
+        '商品カセットでは、企画で確定した商品と割当を維持し、Evidenceで確定した商品・商品画像・購入リンク・掲載順・割当を維持してください。商品説明は短く読みやすく、必要な情報のみ書いてください。文字数の最低・最高条件も、魅力・向く人・推薦理由・使用場面の網羅条件もありません。規格や仕様の記載は任意です。書いた規格、性能、効果、互換性は必ず対象商品の根拠と一致させ、別型番や別商品から転用しないでください。\\n\\n'
         'comparison_groupsの割当は既定のまま維持してください。各組の説明には商品の特徴や使い道を自然な読者向けの文章で書いてください。\\n\\n'
         '文脈を壊す不用意な水増し文章、定型的な注意書き、内部QA用語、不要な仕様説明を書かないでください。slug、category、商品参照IDを維持してください。\\n\\n'
         '編集QAで根拠のない具体表現（仕様・数値・性能・効果・使用体験）が指摘されたら、該当表現は削除して再利用せず、確認できた事実と裏付けのある特徴・用途・生活場面を自然に伝える文章へ修正してください。確認できない事実を創作して補完しないでください。\\n\\n'
         '商品ページの掲載タイトルから確認できる名称・型番・数量・寸法等は掲載情報として紹介できます。詳細出典がない場合は性能・耐久性・効能などを断定しないでください。追加の仕様が不明なだけで記事をBLOCKEDにせず、確認できる商品の個性と読者の利用場面で自然に紹介してください。商品refが違う根拠を転用せず、QAが削除指定した根拠のない主張を言い換えて戻さないでください。\\n\\n'
-        '記事の既存順序を維持し、leadは導入、summaryは重複のない要約、comparison_groupsは各組の読者向けの紹介文、各商品カードは根拠ある固有の推薦理由、how_to_chooseは実用的な判断材料、conclusionは自然な短い結びとしてください。記事全体や一般解説合計に文字数目標を設けず、各パーツの必要な内容を過不足なく記載してください。\n\n'
+        '記事の既存順序を維持し、lead・summary・comparison_groups・how_to_choose・conclusionは商品非依存の一般情報としてください。SEO・AEOの検索意図に自然に答え、商品カセットでは短く正確な個別商品説明に限定してください。導入と結びには十分な内容を持たせ、単に商品紹介を言い換えることは避けてください。\n\n'
         f'TOPIC:\n{json.dumps(topic, ensure_ascii=False, sort_keys=True)}\n\n'
-        '商品はEvidence.selection.axesの確定済み割当をそのまま使い、組をまたいで並べ替えないでください。選定理由は確認済み事実の範囲で商品の説明に反映してください。\n'
+        '商品はEvidence.selection.axesの確定済み割当をそのまま使い、組をまたいで並べ替えないでください。選定理由に含まれる未検証の規格・性能を本文へ転用しないでください。\n'
         f'EVIDENCE:\n{json.dumps(evidence, ensure_ascii=False, sort_keys=True)}'
         '\nEDITORIAL_PLAN:\n' + json.dumps({key:value for key,value in plan.items() if key != 'products'}, ensure_ascii=False, sort_keys=True)
     )
     if previous_payload is not None and isinstance(gate_feedback, dict):
         measures = gate_feedback.get('measurements') or {}
         failures = gate_feedback.get('qa_failures') or {}
-        # Overall article length is a soft editorial guide, never a numeric QA failure.
-        # A short draft must be revised only for substantive issues identified by QA.
-        for field, minimum in (('summary',130),('how_to_choose',190)):
-            length = measures.get(field + '_len')
-            if (isinstance(length,int) and length < minimum
-                    and failures.get(field + '_in_range') is False):
-                prompt += (f'\nCRITICAL {field} LENGTH: prior {length}, required '
-                           f'at least {minimum} characters; revise this field without padding.\n')
-        if failures.get('description_hard_min_pass') is False or failures.get('description_target_pass') is False:
-            lengths = measures.get('description_lens') or []
-            affected = [f'p{i + 1} ({length} characters)' for i, length in enumerate(lengths)
-                        if isinstance(length, int) and not 160 <= length <= 260]
-            if affected:
-                prompt += ('\nMANDATORY DESCRIPTION REVISION: Only these product descriptions failed the '
-                           '160–260 Japanese-character editorial requirement: ' + ', '.join(affected) +
-                           '. Rewrite each affected description to 160–260 characters, supplying distinct '
-                           'source-grounded features, concrete usage situations, and a reader-specific reason '
-                           'to choose it. Do not pad, repeat sentences, or invent facts. Preserve every '
-                           'unaffected product, product identity and group assignment.\n')
     persona=topic.get('reader_persona') if isinstance(topic,dict) else None
     if isinstance(persona,dict):
         prompt += '\nREADER_PERSONA (follow this reader through introduction, terminology and recommendation): '+json.dumps(persona,ensure_ascii=False)+'\n'
@@ -182,7 +163,7 @@ def _prompt(topic: dict, evidence: dict, *, previous_payload: dict | None = None
             prompt += ('\nMANDATORY EDITORIAL REVISION: Repair the exact affected product descriptions '
                        'identified in independent_quality_gate. If a closing sentence merely repeats '
                        'the opening or preceding recommendation, remove that sentence or replace it '
-                       'with a distinct, verifiable reason to choose that product. Never manufacture '
+                       'with no sentence at all when the fact is redundant. Never manufacture '
                        'a new benefit just to fill a paragraph. Preserve every unaffected product '
                        'and field. Independently re-read the corrected prose before returning JSON.\n')
         if failed.get('semantic_acceptance_pass') is False:

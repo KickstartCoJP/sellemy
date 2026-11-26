@@ -20,7 +20,7 @@ def test_writer_is_not_taught_discovery_axis_design():
     assert '切り口をまたいで' not in prompt
     assert '企画で確定した商品と割当を維持' in prompt
     assert '確定済み割当をそのまま使い' in prompt
-    assert '商品に共通する用途・楽しみ方・特徴' in prompt
-    assert '制作上の分類や企画の説明を本文に出さない' in prompt
+    assert '検索意図に関する一般的な用途・成分・カテゴリの知識' in prompt
+    assert '特定の商品名・商品固有の特徴・商品カセットへの言及を禁止' in prompt
     assert 'Evidence.selection.axes' in prompt
     assert '商品同士の比較・優劣・差異説明を必須' not in role

@@ -1,17 +1,12 @@
 # Sellemy Editorial QA — independent editorial gate
 
-Purpose: judge whether finished prose helps readers discover and choose products. Product identity, specifications, citations and source sufficiency are evaluated separately by Product QA and Claim QA.
-
-Input: complete article prose, six product descriptions, editorial brief when available. Do not include the raw product-evidence corpus.
+Purpose: verify general search-intent usefulness, readability, and concise product cards in an affiliate SEO/AEO article. Product identity, safety, factual claims, citations and source sufficiency are validated separately by Product, Safety and Claim QA.
 
 PASS conditions:
-1. The article makes an actionable recommendation: six credible, product-specific recommendations that help the reader discover items they might enjoy. Do not rank products, require a top choice, or invent a universal winner. Comparing differences is OPTIONAL; fail generic product blurbs or mere spec lists lacking a recommendation, not the absence of comparison.
-2. Each of the six products has its own evidence-grounded appeal, a reader or use case, and a clear reason to recommend it. Do not require direct contrasts with the other five.
-3. The writing is appealing, natural Japanese appropriate to Sellemy rather than a bureaucratic specification report, with no internal QA or investigation narrative.
-4. The article does not delegate essential product research or final selection to the reader. Necessary safety and device checks can appear briefly when required.
-5. Introduction, three existing two-product groups, six product sections and conclusion support the original reader purchase goal and distinctive discovery angle in the editorial brief. Preserve the existing layout and field names. If the article quietly substitutes another purpose or changes the editorial axis to accommodate chosen products, FAIL with exact article quotations.
-6. Read all six product descriptions and the lead, summary, group angles, buying guide and conclusion. FAIL descriptions that would fit another product after replacing its name; repeat a feature/benefit in adjacent sentences without adding a new reason; or use vague stock closing language instead of helping readers identify a matching use case. Ground each FAIL in exact quotes. Distinguish harmless natural stylistic variation from substantive repetition; never ban isolated words.
+1. Introduction, summary, generic sections, buying guide and conclusion answer the topic in natural Japanese and remain independent of the six selected products. The introduction and conclusion have substantive content, not repetitive padding. Search-intent alignment and useful, understandable wording matter for SEO/AEO.
+2. Product names, brands, individual product claims, and references/links directing readers to the article's selected items appear ONLY within product cassettes. A general explanation of an ingredient, technology, category or safety limitation is allowed outside the cassettes if it does NOT tie back to a specific item in the article.
+3. Each product cassette is brief, readable and appropriate for the actual product. A product name, correct image, correct purchase link and concise factual description can be sufficient. There is NO fixed minimum or target product-description length, and no demand to invent separate appeals, usage personas, specific recommendations or specs for every product.
+4. Unnatural wording, substantive copy-paste repetition, obviously empty/generic prose and internal QA/investigation narrative are FAIL. Harmless similar wording, brief item explanations or missing optional product specs are not FAIL by themselves.
+5. Preserve the existing six product identities and three two-product grouping layout; no new item, identity change, or invented product difference. Do not turn a general section into a sales pitch for an item. Material false claims, variant/specification mismatches and unsafe recommendations are NOT excused by brevity, and are independently evaluated in Product/Claim/Safety QA.
 
-Judge the whole prose, not a banned-word list. For each FAIL provide exact article quotations and a concrete failing condition. Do not fail just because there is no universal #1. Record product factual validation as NOT_EVALUATED. Editorial PASS alone never authorizes publication.
-
-Dependencies: ProductQA=(product manifest,evidence,comparison axes,contract); EditorialQA=(article prose,editorial brief,editorial contract); ClaimQA=(article claims,evidence,contract). Invalidate only receipts affected by changed dependencies. Publication requires all current receipts plus final assembled HTML gate.
+Review the complete prose and justify every FAIL using an exact quote and the violated criterion. Product factual validation must be recorded as NOT_EVALUATED; Editorial QA alone never authorizes publication. Preserve the distinct source/hash receipts and final assembled HTML gate.

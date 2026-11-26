@@ -1,0 +1,61 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "CEO-BU002-AFFILIATE-FIRST-CANON-REDESIGN-20261127",
+  "instruction_ref": "CEO explicit 2026-11-27: 戦略はただのアフィリ。最低限の安全・虚偽防止、SEO/AEO、1万記事。導入と結びは十分な文量、商品説明は短い。一般記事部分の個別商品名・誘導禁止。『正本を含め抜本的に見直せ。』",
+  "instruction": "Align stage prompts, editorial plan, editorial/QA policy, persisted Brief projection and machine gate with canonical SEO/AEO affiliate-first article strategy. Do not require 160 character product descriptions, mandatory product-by-product sales appeals or optional specs. Preserve substantive lead and conclusion. Disallow product names, brands and references to selected products outside product cassettes. Keep product-specific factual correctness, safety, duplicate/identity checks, affiliate link/image gate, independent QA and CEO publication approval. Repeated 12-character short opening/ending fragments are diagnostic rather than automatic failure; substantive duplicate sentences and near-identical product descriptions remain hard NG.",
+  "implementer": "BU-002 isolated Mac Studio non-Codex implementation; CEO staging review",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3",
+    "https://app.notion.com/p/3dc67ec6a100816f86daf33e6c7b4bf2",
+    "https://app.notion.com/p/3dc67ec6a10081928228c86453863a89",
+    "https://app.notion.com/p/3dc67ec6a10081eebb34ff08d650e532",
+    "https://app.notion.com/p/3dc67ec6a1008196b017ee01e1824bba",
+    "https://app.notion.com/p/3fd67ec6a10081339edef6932aae8d0e"
+  ],
+  "allowed_paths": [
+    "change-contracts/bu002-affiliate-first-canon-redesign-20261127.json",
+    "config/editorial-qa.md",
+    "config/growth-stage-briefs.json",
+    "config/risk-based-qa-policy.md",
+    "config/sellemy-codex-canon-bootstrap.md",
+    "config/sellemy-codex-shared-brief.md",
+    "config/writer-editorial-role.md",
+    "pipeline/codex_provider.py",
+    "pipeline/editorial_plan.py",
+    "pipeline/qa.py",
+    "pipeline/qa_return.py",
+    "pipeline/semantic_review.py",
+    "pipeline/writer_runtime.py",
+    "tests/test_affiliate_first_separation_20261127.py",
+    "tests/test_affiliate_brief_projection_20261127.py",
+    "tests/test_articles_integration.py",
+    "tests/test_prose_lower_bounds_only.py",
+    "tests/test_writer_description_feedback_20261126.py",
+    "tests/test_writer_length_feedback.py",
+    "tests/test_writer_no_count_instruction_20261125.py",
+    "tests/test_writer_planner_axis_handoff_20261120.py",
+    "tests/test_risk_based_qa_20261125.py",
+    "tests/test_comparison_acceptance.py"
+  ],
+  "preserved_rules": [
+    "Six distinct products and existing three groups of two remain unchanged",
+    "Product identity, duplicates, recall, safety, variant/spec accuracy and factual claim gates remain fail-closed",
+    "Independent Product, Claim, Safety, Editorial and final HTML QA remain in place",
+    "Correct product images, affiliate links, publication integrity and CEO approval remain mandatory",
+    "No new API, credential, provider routing, runtime/queue, or automatic publication",
+    "Existing published artifacts are not retrospectively rewritten",
+    "Do not use Codex to make any changes"
+  ],
+  "acceptance_tests": [
+    "tests/test_affiliate_first_separation_20261127.py",
+    "tests/test_affiliate_brief_projection_20261127.py",
+    "tests/test_writer_no_count_instruction_20261125.py",
+    "tests/test_writer_planner_axis_handoff_20261120.py",
+    "tests/test_writer_description_feedback_20261126.py",
+    "tests/test_prose_lower_bounds_only.py",
+    "tests/test_writer_length_feedback.py",
+    "tests/test_articles_integration.py",
+    "tests/test_risk_based_qa_20261125.py",
+    "tests/test_comparison_acceptance.py"
+  ]
+}

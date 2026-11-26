@@ -21,14 +21,14 @@ Thread memory is never business canon. Current canon and current task input win 
 - 40 Measurement & Learning: https://app.notion.com/p/3dc67ec6a100813a88a5cecd525a4e8d
 - 50 Technical / Runtime Specification: https://app.notion.com/p/3dc67ec6a10081c6b5d0fb29cfe59b29
 ## Shared production rules
-- Sellemy is a product discovery/comparison medium for Beauty / Daily Goods / Gadget.
-- Optimize for user fit, choice clarity, independent search intent and total affiliate economics. Article count itself is not the KPI.
+- Sellemy is an affiliate SEO/AEO traffic and product-referral medium for Beauty / Daily Goods / Gadget. Aim for 10,000 published articles while tracking search, click-through, conversion and revenue independently.
+- Optimize for search-intent coverage, safe and accurate affiliate referrals, SEO/AEO wording and sustained article output. Article count is a core production KPI alongside monetization metrics.
 - Do not create near-duplicate or cannibalizing topics. Weakly independent intent becomes an existing-article improvement candidate.
 - Final six products must be distinct identities. Different ASIN alone does not make a distinct product.
-- Comparison axes come from topic-specific purchase reasons, uses and meaningful performance differences. Fixed high/mid/low price bands are not the primary framework.
+- Editorial grouping axes organize products by topic; do not invent product-by-product advantages or performance differences.
 - Evidence and identity gates are fail-closed. Never fabricate missing facts or relax QA to make publication succeed.
 - Production Planning and Writer share brand authority but receive stage-scoped tasks. The full Evidence contract is for Product/Evidence and independent Review; Writer receives only editorial constraints and verified product facts. Downstream QA gates remain unchanged.
-- The Provider Router uses OpenAI Responses API with GPT-6.1 Sol for normal Planning/Writer turns and GPT-6 Astra only for quality escalation. Codex is the first runtime fallback and certified Claude remains the final availability fallback.
+- Provider choice is a dynamic runtime setting. Use only the currently approved routing; do not infer API authorization from historical documentation.
 - Browser / Work are not production Planning/Writer routes.
 - Production article eyecatch uses the Designer Router. Current route weights in `config/eyecatch_routing.json` are runtime-authoritative; Codex uses canonical Member `bu-codex-sellemy-designer` through local Codex CLI built-in `image_gen`, while the API route uses OpenAI Images API with explicit Sellemy project attribution. Do not route generation to sellemy-ops Chat.
 
@@ -44,8 +44,8 @@ Responsibility: produce a complete structured article from the supplied topic, s
 - Use supplied Evidence as factual basis. Do not invent specifications, performance, operation methods, rankings or prices.
 - Preserve slug/category/product refs and exactly six products.
 - Organize six products as three groups x two products using the topic-specific comparison axes.
-- Write natural Japanese that makes concrete differences visible. Do not copy Amazon listing titles verbatim, expose ASIN/internal terms, or pad mechanically.
-- Full acceptance contract is enforced by the independent Review and Runtime, not copied into Writer prompts. Missing essential product facts returns structured BLOCKED / needs_product_reselection; optional uncertainty stays internal unless it materially changes safe use. Never format a hold notice as a completed comparison.
+- Write SEO/AEO-friendly general sections without referencing selected products. Only product cassettes may mention brands, product names, individual specs, or link to an item. Write short product blurbs; do not enforce any description minimum, required persuasive sales pitch or mandatory specification list. Never fabricate or mix variant-specific facts.
+- Full acceptance contract is enforced by the independent Review and Runtime, not copied into Writer prompts. Genuine product mismatch, duplication and unsafe or materially unsupported claims fail. Optional specs and a short product blurb alone never trigger BLOCKED; optional uncertainty stays internal unless it materially changes safe use. Never format a hold notice as a completed comparison.
 - Existing Fact / Comparison / SEO-Spam / Machine QA and Publish gates remain authoritative.
 
 ## Designer Member contract

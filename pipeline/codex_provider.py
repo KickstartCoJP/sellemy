@@ -535,6 +535,25 @@ def _required_effort(surface_key: str, stage: str, model: str) -> str:
 
 def _stage_brief_text(path: Path, stage: str) -> str:
     content = path.read_text(encoding='utf-8')
+    # Historical runtime briefs were persisted outside Git. Drop superseded
+    # production directives at read time, including on pre-existing machines.
+    obsolete = ('P0 436記事Recovery中はResponses APIのみ',
+                '商品固有の魅力と推薦理由', '具体的な推薦理由を伝える',
+                '具体的なおすすめと理由を先に示す',
+                '6独立製品・根拠あるtopic固有比較',
+                'Evidence不足はBLOCKED',
+                '具体的な推薦と読みやすさを優先')
+    content = '\n'.join(line for line in content.splitlines()
+                        if not any(term in line for term in obsolete))
+    current_policy = (
+        '\nCURRENT BU-002 AFFILIATE POLICY: SEO/AEO affiliate discovery, '
+        '10,000-article production objective; keep all named/brand-specific '
+        'product claims and references inside item cassettes only. General '
+        'sections are topic knowledge, not product referral paragraphs. '
+        'Product descriptions should be concise with no word/character floor, '
+        'forced unique sales pitch or mandatory specs. Incorrect variant specs, '
+        'unsupported concrete claims, unsafe use and product mismatch remain NG.\n')
+    content = current_policy + content
     if stage != 'writer':
         return content
     # Preserve approved reusable editorial knowledge. Filter research workflow

@@ -16,12 +16,12 @@ def test_prior_summary_overrun_does_not_trigger_length_rewrite():
     assert 'GATE_FEEDBACK' in text
 
 
-def test_summary_below_minimum_still_triggers_writer_rewrite():
+def test_summary_and_buying_guide_shortness_does_not_force_padding():
     text=_prompt({'slug':'slug'}, valid_editorial_evidence(),previous_payload={'slug':'slug'},gate_feedback={
         'measurements':{'summary_len':100,'how_to_choose_len':120},
         'qa_failures':{'summary_in_range':False,'how_to_choose_in_range':False}})
-    assert 'summary LENGTH: prior 100, required at least 130' in text
-    assert 'how_to_choose LENGTH: prior 120, required at least 190' in text
+    assert 'summary LENGTH: prior 100' not in text
+    assert 'how_to_choose LENGTH: prior 120' not in text
 
 
 def test_lead_feedback_keeps_minimum_without_upper_limit():
