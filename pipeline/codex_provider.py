@@ -929,9 +929,12 @@ def generate_isolated(command: tuple[str, ...], model: str, schema: dict, prompt
     # Designer rollout is persisted only as an image generation audit receipt; it is
     # never resumed by a subsequent task, so previous images cannot accumulate.
     keep_rollout = surface_key == DESIGNER_SURFACE
+    # Text-role jobs must not inherit user-wide MCP plugins. A failed Notion
+    # OAuth initialization otherwise blocks Planning before generation starts.
+    # Preserve Designer's image_gen availability by leaving its tool route alone.
     args = [*command, 'exec']
     if not keep_rollout:
-        args.append('--ephemeral')
+        args += ['--ignore-user-config', '--disable', 'plugins', '--ephemeral']
     args += ['--json', '--skip-git-repo-check', '--sandbox', 'read-only',
              '--model', model, '--config', f'model_reasoning_effort={effort}', '-']
     completed = _run(args, prompt=task, timeout=timeout, cwd=root)
