@@ -1,0 +1,27 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "CEO-BU002-PLANNER-NOTION-MCP-AUTH-ISOLATION-20261127",
+  "instruction_ref": "CEO 2026-11-27: いつNotion使う仕様になったんだ。あきらかにミスだ。修正しろ",
+  "instruction": "Prevent unrelated user-wide Codex MCP plugin loading from blocking isolated BU-002 Planner, Writer and independent reviewer calls. For non-Designer isolated calls, pass --ignore-user-config and --disable plugins to Codex CLI. Keep Codex account auth and existing role/model/effort, ephemeral read-only isolation, response parsing, event receipts and CEO publication gates unchanged. Designer image_gen path must not be modified.",
+  "implementer": "Sellemy owner: isolated non-Codex patch for CEO staging",
+  "allowed_paths": [
+    "change-contracts/bu002-planner-plugin-isolation-20261127.json",
+    "pipeline/codex_provider.py",
+    "tests/test_isolated_role_provider_regression.py"
+  ],
+  "preserved_rules": [
+    "No new paid API calls, credentials, account changes, model or routing changes",
+    "No Designer tool/image generation changes",
+    "Do not change Planning content, Product/Writer/QA quality standards or publication approvals",
+    "No automatic publication and no new-topic admission",
+    "No Codex use to implement code; direct isolated source changes only"
+  ],
+  "acceptance_tests": [
+    "tests/test_isolated_role_provider_regression.py"
+  ],
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3",
+    "https://app.notion.com/p/3dc67ec6a1008196b017ee01e1824bba",
+    "https://app.notion.com/p/3dc67ec6a10081c6b5d0fb29cfe59b29"
+  ]
+}

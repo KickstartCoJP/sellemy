@@ -35,6 +35,7 @@ class IsolatedRoleProviderRegression(unittest.TestCase):
             stdout='\n'.join(json.dumps(e) for e in events)
             with patch('api_role_binding.require_codex_route',return_value=('/bin/codex',)), \
                  patch.object(codex_provider,'_member_binding',return_value={'binding_revision':1}), \
+                 patch('owner_brief_learning.load_brief_rules',return_value=''), \
                  patch.object(codex_provider,'_required_effort',return_value='medium'), \
                  patch.object(codex_provider,'_run',return_value=subprocess.CompletedProcess([],0,stdout,'')) as runner, \
                  patch.object(codex_provider,'_append_usage'):
@@ -48,8 +49,39 @@ class IsolatedRoleProviderRegression(unittest.TestCase):
             self.assertFalse(meta['session_persisted'])
             command=runner.call_args.args[0]
             self.assertIn('--ephemeral',command)
+            self.assertIn('--ignore-user-config',command)
+            self.assertEqual(command[command.index('--disable')+1],'plugins')
             self.assertEqual(command[command.index('--sandbox')+1],'read-only')
             self.assertNotIn('resume',command)
 
-if __name__=='__main__':
-    unittest.main()
+
+    def test_planner_isolated_run_disables_shared_mcp_and_keeps_read_only(self):
+        import codex_provider
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            (root/'config').mkdir()
+            (root/'config/sellemy-codex-canon-bootstrap.md').write_text('Canonical test route')
+            events=[
+                {'type':'thread.started','thread_id':'00000000-0000-4000-8000-000000000009'},
+                {'type':'item.completed','item':{'type':'agent_message','text':'{"accepted":true}'}},
+                {'type':'turn.completed','usage':{'input_tokens':9,'output_tokens':3}},
+            ]
+            stdout='\n'.join(json.dumps(e) for e in events)
+            with patch('api_role_binding.require_codex_route',return_value=('/bin/codex',)), \
+                 patch.object(codex_provider,'_member_binding',return_value={'binding_revision':1}), \
+                 patch('owner_brief_learning.load_brief_rules',return_value=''), \
+                 patch.object(codex_provider,'_required_effort',return_value='medium'), \
+                 patch.object(codex_provider,'_run',return_value=subprocess.CompletedProcess([],0,stdout,'')) as runner, \
+                 patch.object(codex_provider,'_append_usage'):
+                data,_=codex_provider.generate_isolated(
+                    ('/bin/codex',),'gpt-6-sol',
+                    {'type':'object','properties':{'accepted':{'type':'boolean'}}},
+                    'Plan within given theme',timeout=10,root=root,
+                    surface_key='bu-codex-sellemy-planning',stage='planning')
+            self.assertEqual(data,{'accepted':True})
+            cmd=runner.call_args.args[0]
+            self.assertIn('--ignore-user-config',cmd)
+            self.assertEqual(cmd[cmd.index('--disable')+1],'plugins')
+            self.assertIn('--ephemeral',cmd)
+            self.assertEqual(cmd[cmd.index('--sandbox')+1],'read-only')
+            self.assertNotIn('resume',cmd)
