@@ -8,9 +8,11 @@ Strong stop: wrong product, unrelated category, demonstrated same-body/color-onl
 or pack-only duplicate, official recall match, dangerous usage advice, materially
 false or unsubstantiated performance, safety, efficacy or compatibility claims.
 
-Fix in place: weak recommendation, repetitive prose, unsupported specific
-phrasing, unclear conclusion. Route prose edits to Writer, never restart all six
-product research unless an actual product identity/fit failure is evidenced.
+Fix in place: materially confusing prose, repetitive padding, unsupported specific
+phrasing, misleading general-to-product referrals, unclear topic conclusion.
+A short product blurb or omission of optional specs and independent persuasive
+recommendation is NOT a defect. Route genuine prose errors to Writer; never
+restart all six product research unless product identity/fit is actually wrong.
 
 Allowed: incomplete optional specification, lack of manufacturer manual,
 non-quantified everyday recommendation, missing verbatim identity quotation
@@ -26,3 +28,12 @@ Collection outage: use a complete government safety snapshot no older than
 seven days while recording its staleness; older or incomplete corpora cannot
 issue a safety clearance. Daily monitor retries independently, preserving
 previous alerts and recording acquisition failure.
+
+Affiliate-first editorial policy (2026-11-27 CEO direction): target SEO/AEO traffic,
+affiliate referrals and 10,000 published articles. General sections may explain
+ingredients, standards, categories and safety but may not name or link the six
+selected products. Those names, specific features, images and links belong
+only inside product cassettes. Keep substantive lead and conclusion, concise
+product blurbs, no description length floor or mandatory per-item appeal/persona.
+When an explicit factual claim is made, verify it matches the exact variant;
+false specs, unsafe guidance and unsupported consequential claims remain NG.

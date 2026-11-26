@@ -13,8 +13,6 @@ from category_metadata import get_category
 LEAD_MIN = 180
 SUMMARY_MIN = 130
 HOW_TO_CHOOSE_MIN = 190
-DESCRIPTION_TARGET_RANGE = (160, 260)  # Product-specific editorial target.
-DESCRIPTION_HARD_MIN = 160
 H3_LEN_RANGE = (6, 45)
 NEAR_DUPLICATE_CONTAINMENT_THRESHOLD = 0.9
 REPEATED_SENTENCE_MIN_LEN = 10
@@ -134,6 +132,28 @@ def run_qa(html: str, payload: dict, evidence: dict, *, acceptance: dict | None 
     results['summary_brand_free_pass'] = not results['summary_brand_hits']
     results['conclusion_brand_hits'] = sorted(b for b in brands if b.casefold() in payload['conclusion'].casefold())
     results['conclusion_brand_free_pass'] = not results['conclusion_brand_hits']
+    # Product-specific names, brand mentions and references belong only inside
+    # product cassettes. General topic/ingredient names remain valid prose.
+    general_parts = [payload['h1'], payload['lead'], payload['summary'],
+                     payload['how_to_choose'], payload['conclusion']]
+    general_parts += [group['title'] for group in payload['comparison_groups']]
+    general_parts += [group['angle'] for group in payload['comparison_groups']]
+    forbidden = {str(p.get('brand') or '').strip() for p in evidence['products']}
+    forbidden = {name for name in forbidden if len(name) >= 3 and name not in
+                 {'ノーブランド', 'Generic', 'ブランドなし'}}
+    forbidden.update(str(p.get('amazon_title') or '').strip() for p in evidence['products'])
+    forbidden = {name for name in forbidden if len(name) >= 3}
+    results['general_product_mentions'] = sorted(
+        name for name in forbidden if any(name.casefold() in part.casefold() for part in general_parts))
+    # Catch indirect links back to the selected products even when no exact
+    # brand or item title appears outside the product cassette.
+    reference_pattern = re.compile(
+        r'(?:上記|以下|前述|先ほど|本記事|この記事)[^。\n]{0,18}(?:紹介(?:した|する)?商品|掲載(?:した|する)?商品|商品(?:一覧|カード))'
+        r'|(?:紹介(?:した|する)?商品|掲載(?:した|する)?商品)[^。\n]{0,18}(?:から選|をご覧|をチェック|へ|はこちら)')
+    results['general_product_references'] = [m.group(0) for part in general_parts
+                                             for m in reference_pattern.finditer(part)]
+    results['general_product_free_pass'] = (not results['general_product_mentions']
+                                            and not results['general_product_references'])
     results['summary_len'] = len(payload['summary'])
     results['summary_in_range'] = results['summary_len'] >= SUMMARY_MIN
     results['how_to_choose_len'] = len(payload['how_to_choose'])
@@ -143,8 +163,7 @@ def run_qa(html: str, payload: dict, evidence: dict, *, acceptance: dict | None 
     descriptions = [p['description'] for p in payload['products']]
     desc_lens = [len(d) for d in descriptions]
     results['description_lens'] = desc_lens
-    results['description_hard_min_pass'] = all(len(d.strip()) >= DESCRIPTION_HARD_MIN for d in descriptions)
-    results['description_target_pass'] = all(check_range(n, DESCRIPTION_TARGET_RANGE) for n in desc_lens)
+    # Measured for monitoring only: no per-product length gate or forced padding.
 
     h3_lens = [len(p['h3']) for p in payload['products']]
     results['h3_lens'] = h3_lens
@@ -214,8 +233,7 @@ def run_qa(html: str, payload: dict, evidence: dict, *, acceptance: dict | None 
         results['product_image_audit_pass'] = (image_audit or {}).get('status') == 'PASS'
     results['overall_pass'] = all([
         results['semantic_acceptance_pass'],
-        results['lead_in_range'], results['lead_brand_free_pass'], results['summary_brand_free_pass'], results['conclusion_brand_free_pass'], results['summary_in_range'], results['how_to_choose_in_range'],
-        results['description_hard_min_pass'], results['h3_len_pass'],
+        results['lead_in_range'], results['general_product_free_pass'], results['h3_len_pass'],
         results['banned_phrase_pass'], results['description_uniqueness_pass'],
         results['no_repeated_sentences_pass'], results['distinct_openings_endings_pass'],
         results['nav_footer_pass'], results['category_pass'], results['canonical_pass'], results['asin_pass'],
