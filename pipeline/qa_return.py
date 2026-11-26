@@ -25,6 +25,11 @@ def writer_feedback(feedback: dict | None) -> dict:
             for measure in (prefix + '_len', prefix + '_lens'):
                 if measure in measures:
                     relevant[measure] = measures[measure]
+        if (failures.get('description_hard_min_pass') is False or
+                failures.get('description_target_pass') is False):
+            lengths = measures.get('description_lens')
+            if isinstance(lengths, list):
+                relevant['description_lens'] = lengths
         if 'distinct_openings_endings_pass' in failures:
             out['revision_instruction'] = 'Remove repeated opening/ending phrases across affected products.'
             for key in ('duplicate_openings', 'duplicate_endings'):
