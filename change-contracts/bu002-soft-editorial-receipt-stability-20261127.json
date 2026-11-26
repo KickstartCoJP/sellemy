@@ -1,0 +1,26 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "CEO-BU002-RESTORE-APPROVED-MASK-NONBINDING-QA-20261127",
+  "instruction_ref": "CEO 2026-11-27: 実装を直して承認に戻せ。",
+  "instruction": "Nonbinding numeric product description writing ranges must not invalidate independently passed editorial QA receipts. Normalize ONLY the bounded soft-range text when hashing the editorial QA normative contract. Accept the two verified historical complete-document hashes for the exact unchanged normative QA base; every substantive QA change, changed article/evidence, invalid verdict or unsupported certificate still invalidates. Reuse preserved exact CEO approval only with matching payload hash and independently valid QA; restoration of the specific already-approved article is performed separately under the existing process lock and logged as an existing job event.",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3",
+    "https://app.notion.com/p/3dc67ec6a1008196b017ee01e1824bba"
+  ],
+  "implementer": "BU-002 isolated non-Codex Staging implementation",
+  "allowed_paths": [
+    "change-contracts/bu002-soft-editorial-receipt-stability-20261127.json",
+    "pipeline/editorial_qa.py",
+    "tests/test_editorial_hint_contract_20261127.py"
+  ],
+  "preserved_rules": [
+    "No automated approval, no bypass of original CEO decision or publication QA",
+    "No changes to product, evidence, claim or safety QA contracts",
+    "Nonbinding numeric recommendation only; changed substantive QA rules invalidate",
+    "No change to Writer output, SEO/AEO, publish policy, new-topic stop or article content",
+    "No Codex use for code modification"
+  ],
+  "acceptance_tests": [
+    "tests/test_editorial_hint_contract_20261127.py"
+  ]
+}
