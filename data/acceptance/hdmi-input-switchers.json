@@ -1,0 +1,130 @@
+{
+  "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+  "evidence_sha256": "66afd3671c92eb195f471b1f633086034e3ffd20431fd7c8a09fe6358ac4a8e5",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 11520,
+    "input_tokens": 27434,
+    "listing_identity_citations_repaired": [
+      "p1",
+      "p2",
+      "p3",
+      "p4",
+      "p5",
+      "p6"
+    ],
+    "member_binding_revision": 4,
+    "output_tokens": 1972,
+    "reasoning_effort": "medium",
+    "reasoning_output_tokens": 509,
+    "reused_product_qa": true,
+    "session_id": "01a21e82-e655-7283-850d-d5b251ea7d42",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "69f8cf02eeef960044bf234db864c784dc031020cdb0b84c8fdaa92380ed9e9a",
+  "review": {
+    "buying_guidance": false,
+    "claims_grounded": false,
+    "complete_comparison": false,
+    "distinct_products": true,
+    "duplicate_pair_checks": [],
+    "editorial_voice_appropriate": false,
+    "internal_qa_leak_absent": false,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "popular",
+            "quote": "review_count"
+          }
+        ],
+        "identity_key": "UGREEN HDMI 2.1 Switcher 2 in 1 output 8K60Hz 4K240Hz HDR10+ VRR/CEC",
+        "identity_quote": "UGREEN HDMI 2.1 Switcher 2 in 1 output 8K60Hz 4K240Hz HDR10+ VRR/CEC",
+        "reason": "検証済み掲載情報（https://www.amazon.co.jp/dp/B0F3WSXWHW）は2入力1出力の単方向切替器と明記する。評価件数が示されており、人気・定番の紹介枠で具体的に紹介できる。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "popular",
+            "quote": "When connected to PlayStation(R) 5, it supports resolutions and frame rates up to 4K/60Hz"
+          }
+        ],
+        "identity_key": "Elecom HDMI Switch (Selector) 3 Inputs 1 Output 4K (4096×2160) 60Hz Selectable Automatic/M",
+        "identity_quote": "Elecom HDMI Switch (Selector) 3 Inputs 1 Output 4K (4096×2160) 60Hz Selectable Automatic/Manual Switching Function [PS4/PS5/Nintendo Switch/Fire TV Stick 4K Operation Confirmed] Noise-resistant Metal",
+        "reason": "検証済み掲載情報（https://www.amazon.co.jp/dp/B0CGHHX5ND）は3入力1出力、自動・手動切替、PS5接続時の4K60Hz上限を示す。評価件数もあり、人気・定番の紹介枠で用途を説明できる。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "high_refresh_gaming",
+            "quote": "supporting 8K@60Hz, 4K@120Hz"
+          }
+        ],
+        "identity_key": "UGREEN HDMI 2.1 Switcher 2 Input 1 Output Bi-Directional 8K60Hz 4K120Hz",
+        "identity_quote": "UGREEN HDMI 2.1 Switcher 2 Input 1 Output Bi-Directional 8K60Hz 4K120Hz",
+        "reason": "検証済み掲載情報（https://www.amazon.co.jp/dp/B0CPY5Y7Y3）は双方向切替、4K120Hz、VRRを示す。p1の単方向製品とは機能構成が異なる。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "high_refresh_gaming",
+            "quote": "This Avidgram Directional 5-Port HDMI Switch allows you to use 5 HDMI sources on one HDMI display Supports 8K@60hz, 4K@120Hz"
+          }
+        ],
+        "identity_key": "AVIDGRAM HDMI 2.1 Switch 5 in 1 Switcher 8K 60Hz 4K 120Hz Auto Selector Hub with IR Remote",
+        "identity_quote": "AVIDGRAM HDMI 2.1 Switch 5 in 1 Switcher 8K 60Hz 4K 120Hz Auto Selector Hub with IR Remote 48Gbps for Xbox Series X PS5 PS4 Pro UHD TV Monitor Projector",
+        "reason": "検証済み掲載情報（https://www.amazon.co.jp/dp/B0C2BXJV7N?th=1）は5入力1出力と4K120Hzを示す。複数のゲーム機を高リフレッシュレートの画面へつなぐ紹介枠に合う。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "multi_input_capacity",
+            "quote": "AVIDGRAM's HDMI 4 in 1 output switcher supports 4K@60hz YUV 4:4:4, HDMI 2.0"
+          }
+        ],
+        "identity_key": "HDMI 切替器, AVIDGRAM HDMIセレクター 4入力1出力 4ポート IRリモコン付き HDCP HDR10 3D 18Gbps for Xbox PS4 HDTV M",
+        "identity_quote": "HDMI 切替器, AVIDGRAM HDMIセレクター 4入力1出力 4ポート IRリモコン付き HDCP HDR10 3D 18Gbps for Xbox PS4 HDTV Monitor 対応",
+        "reason": "検証済み掲載情報（https://www.amazon.co.jp/dp/B09JYKMC3Z?th=1）は4入力1出力、HDMI 2.0、4K60Hzを示す。p4とは入力数と記載された映像仕様が異なり、複数機器の接続を重視する紹介枠に合う。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "multi_input_capacity",
+            "quote": "サンワダイレクト HDMI切替器 4K 120Hz 8K 60Hz対応 2入力1出力 手動 自動切り替え コンパクト 400-SW040"
+          }
+        ],
+        "identity_key": "サンワダイレクト HDMI切替器 4K 120Hz 8K 60Hz対応 2入力1出力 手動 自動切り替え コンパクト 400-SW040",
+        "identity_quote": "サンワダイレクト HDMI切替器 4K 120Hz 8K 60Hz対応 2入力1出力 手動 自動切り替え コンパクト 400-SW040",
+        "reason": "商品掲載名に型番400-SW040と2入力1出力があり、検証済み掲載情報（https://www.amazon.co.jp/dp/B0B6DNQ4G8）も4K120Hz対応を示す。2台の機器をテレビの1入力へまとめる紹介枠に合う。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reader_decision_outsourcing_absent": false,
+    "reason": "検証済みの商品掲載情報から、6商品はいずれもHDMI入力切替器として識別でき、各紹介グループに2商品ずつ配置できる。p1とp3は切替方向、p4とp5は入力数と対応映像の記載が異なる。重複を示す肯定的な根拠はない。記事本文は未提出のため、本文項目は評価していない。",
+    "recommendation_conclusion": false,
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}
