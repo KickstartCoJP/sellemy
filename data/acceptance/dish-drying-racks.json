@@ -1,0 +1,115 @@
+{
+  "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+  "evidence_sha256": "63b4f4885c791ec9d4eff50e46be509fdb92004bbe671eba260eff779dc19119",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 11520,
+    "input_tokens": 25730,
+    "listing_identity_citations_repaired": [
+      "p1",
+      "p2",
+      "p3",
+      "p4",
+      "p5",
+      "p6"
+    ],
+    "member_binding_revision": 4,
+    "output_tokens": 1744,
+    "reasoning_effort": "medium",
+    "reasoning_output_tokens": 732,
+    "reused_product_qa": true,
+    "session_id": "01a21b3c-3a66-7bb0-b14c-de316b5b9c74",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "302a51174f58da672b2034aa79dc87a1b9924ad925b90d3f6a0c268f3f34f30b",
+  "review": {
+    "buying_guidance": false,
+    "claims_grounded": false,
+    "complete_comparison": false,
+    "distinct_products": true,
+    "duplicate_pair_checks": [],
+    "editorial_voice_appropriate": false,
+    "internal_qa_leak_absent": false,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "パール金属 食器 水切り かご 水が流れる トレー付 ヨコ置き タイプ グレー アルデオ H-5687",
+        "identity_quote": "パール金属 食器 水切り かご 水が流れる トレー付 ヨコ置き タイプ グレー アルデオ H-5687",
+        "reason": "掲載タイトルから型番付きの水切りかごと識別できる。トレー付きの横置き型として紹介できるが、寸法や排水構造の詳細は確認済みの出典がない。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "パール金属 鉄 食器 水切り かご バスケット スリム ダークグレー 珪藻土トレー付 AZ-5510",
+        "identity_quote": "パール金属 鉄 食器 水切り かご バスケット スリム ダークグレー 珪藻土トレー付 AZ-5510",
+        "reason": "掲載タイトルからp1とは異なる型番の水切りバスケットと識別できる。スリムな形と珪藻土トレーを切り口に紹介できるが、寸法や手入れ方法の確認済みの出典はない。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "sink_over_space",
+            "quote": "The wide sink rack can be expanded horizontally, and the length can be adjusted between 26.6 in (67.5 cm) and 35 in (89 cm)"
+          }
+        ],
+        "identity_key": "PurKeep 2 段 シンク上水切りラック 伸縮幅 67.5cm～89cm ブラック",
+        "identity_quote": "PurKeep 2 段 シンク上水切りラック 伸縮幅 67.5cm～89cm ブラック",
+        "reason": "確認済みの掲載情報から伸縮式のシンク上ラックと識別できる。幅、付属品、設置条件を根拠に、調理台を空けたい用途へ紹介できる。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "【くるくるラック】 水切りラック シンク上 スリム 食器【ラチュナ Latuna キングジム】 抗菌 キッチン (52 × 33cm ブラック)",
+        "identity_quote": "【くるくるラック】 水切りラック シンク上 スリム 食器【ラチュナ Latuna キングジム】 抗菌 キッチン (52 × 33cm ブラック)",
+        "reason": "掲載タイトルからシンク上で使う52×33cmの水切りラックと識別できる。p3とは掲載上の製品名と構成が異なる。収納方法など、タイトルを超える詳細には確認済みの出典がない。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "drainage_cleanup",
+            "quote": "Foldable with Drain Nozzle"
+          }
+        ],
+        "identity_key": "タマハシ(Tamahashi) デイズ シンクに排水できる 水切りラック 37.2×27.5×12.3cm 折り畳み式 折り畳み式 排水ノズル付き 省スペース 食器乾燥 省スペース",
+        "identity_quote": "タマハシ(Tamahashi) デイズ シンクに排水できる 水切りラック 37.2×27.5×12.3cm 折り畳み式 折り畳み式 排水ノズル付き 省スペース 食器乾燥 省スペース 水切りかご DS-08",
+        "reason": "確認済みの掲載情報から型番付きの折り畳み式水切りラックと識別できる。排水ノズルと折り畳み構造が、水受けの片付けを考える切り口に合う。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "drainage_cleanup",
+            "quote": "Special Feature Automatic Drainage, Heat Resistant"
+          }
+        ],
+        "identity_key": "山崎実業 水切りかご 水切りワイヤーバスケット アクア ホワイト 2898",
+        "identity_quote": "山崎実業 水切りかご 水切りワイヤーバスケット アクア ホワイト 2898",
+        "reason": "確認済みの掲載情報から型番付きのワイヤーバスケットと識別でき、p5とは別商品である。排水機能を切り口に紹介できるが、排水方向を変更できるという詳細は、この抜粋からは確定しない。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reader_decision_outsourcing_absent": false,
+    "reason": "6商品は掲載タイトルで識別でき、水切りラックというテーマと各紹介グループに適合する。確認済みの出典がないp1・p2・p4は引用欄を空にし、掲載タイトルを超える仕様は裏付け済みとして扱わない。記事本文は未提出のため、記事固有の判定項目はfalseとした。",
+    "recommendation_conclusion": false,
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}
