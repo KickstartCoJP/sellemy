@@ -4,160 +4,378 @@
   "category": "gadget",
   "comparison_axes": [
     {
-      "id": "probe_and_measurement",
+      "id": "popular",
       "keywords": [
-        "プローブ長",
-        "測定部",
-        "差し込み位置",
-        "コード式"
+        "人気"
       ],
-      "label": "食品に差し込む測定部と測定位置"
+      "label": "人気・定番の基準"
     },
     {
-      "id": "measurement_conditions",
+      "id": "leave_in_meat",
       "keywords": [
-        "測定範囲",
-        "精度",
-        "表示更新",
-        "測定条件"
+        "コード付きプローブ",
+        "加熱中の測定",
+        "中心温度",
+        "オーブン調理"
       ],
-      "label": "測定温度範囲と精度の条件"
+      "label": "肉の加熱中に中心温度を追う"
     },
     {
-      "id": "cleaning_and_operation",
+      "id": "frying_oil",
       "keywords": [
-        "洗浄可能部",
-        "防水条件",
-        "表示固定",
-        "電池交換"
+        "油温測定",
+        "鍋への固定",
+        "対応温度",
+        "揚げ物"
       ],
-      "label": "洗える部分と表示・電源の操作"
+      "label": "揚げ油の温度を鍋で見守る"
     }
   ],
   "eyecatch_image": "https://www.sellemy.jp/img/digital-probe-cooking-thermometers/digital-probe-cooking-thermometers.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "0e711e3cb88b68e6135abaee1af3b72f4da23830a8bb6b4e03d62dc2c919e166",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 30128,
+      "listing_identity_citations_repaired": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 1338,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 185,
+      "session_id": "01a21b15-f084-7bc3-8f45-8583f8a97031",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "display cycle: every 1 second, waterproof function: drip-proof (IPX2 equivalent)"
+            }
+          ],
+          "identity_key": "タニタ Tanita 温度計 料理 調理 IPX2 防滴仕様 -50~250度 ホワイト TT-583 AWH マグネットつき スティック温度計",
+          "identity_quote": "タニタ Tanita 温度計 料理 調理 IPX2 防滴仕様 -50~250度 ホワイト TT-583 AWH マグネットつき スティック温度計",
+          "reason": "型番とスティック型の構造を識別でき、手持ちで調理中の温度を測る商品として紹介できる。測定上限は掲載タイトルと本文で食い違うため、具体値の使用には注意が必要。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "長さ約1mの耐熱メッシュケーブル(380℃対応)でクッキング温度計本体は庫外に。"
+            }
+          ],
+          "identity_key": "TempPro 料理用温度計 デジタル 1mワイヤープローブ タイマー付き オーブン/揚げ物/天ぷら/油/肉/パン/お菓子作り キッチン 食品 調理用",
+          "identity_quote": "TempPro 料理用温度計 デジタル 1mワイヤープローブ タイマー付き オーブン/揚げ物/天ぷら/油/肉/パン/お菓子作り キッチン 食品 調理用",
+          "reason": "有線プローブとタイマーを備えた調理用温度計として識別できる。加熱中の肉の温度を庫外から読む用途で個別に紹介できる。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "leave_in_meat",
+              "quote": "The long probe with a 106 cm stainless steel cable can be used to measure the temperature of grills, ovens, pans, etc., to prevent burns on your hands"
+            }
+          ],
+          "identity_key": "Sourcingbay Dual Probe Thermometer, Cooking Utensil, Digital, Fast Reading with Alarm Func",
+          "identity_quote": "Sourcingbay Dual Probe Thermometer, Cooking Utensil, Digital, Fast Reading with Alarm Function, Compatible with Oil/Milk/Meat/Coffee/Bath, etc., Red",
+          "reason": "回転式とケーブル付きの2種類のプローブを持つ商品として識別できる。ケーブル付きプローブによる加熱中の測定が担当グループに合う。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "leave_in_meat",
+              "quote": "A contact type meat thermometer that measures the center temperature of food directly by piercing it into food."
+            }
+          ],
+          "identity_key": "ThermoPro Cooking Thermometer, Waterproof Cooking Thermometer, Digital with Backlight, Hig",
+          "identity_quote": "ThermoPro Cooking Thermometer, Waterproof Cooking Thermometer, Digital with Backlight, High Precision Thermocouple Sensor, Fast Reading, for Bread Making, Yakiniku, Hamburger Making, Deep Frying",
+          "reason": "TP19として識別でき、調理中の肉に差して中心温度を繰り返し測る用途に合う。連続設置型としての紹介は裏付けられない。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "frying_oil",
+              "quote": "This kitchen thermometer is suitable for a wide range of temperatures, from oil temperature management for tempura and fried chicken"
+            }
+          ],
+          "identity_key": "ThermoPro TP15 Digital IPX6 Waterproof Washable Cooking Thermometer with High Precision LC",
+          "identity_quote": "ThermoPro TP15 Digital IPX6 Waterproof Washable Cooking Thermometer with High Precision LCD Backlight Calibration Function for Oil Temperature, Bread Making, Tempura, Deep Fried Food, Coffee, Milk",
+          "reason": "TP15として識別でき、揚げ油にプローブを入れて温度を確認する用途に合う。鍋への固定機能は主張できない。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "frying_oil",
+              "quote": "This quick-read cooking thermometer allows you to quickly check the oil temperature of deep fried foods"
+            }
+          ],
+          "identity_key": "TempPro Digital Central Temperature Cooking Thermometer with High Temperature for Oils, Fr",
+          "identity_quote": "TempPro Digital Central Temperature Cooking Thermometer with High Temperature for Oils, Fryes, Tempura, Meat, Baking, Bread, Milk, Coffee, Kitchen, Food and Cooking",
+          "reason": "掲載タイトルと金属グリップ、直線プローブの記載から商品を識別でき、揚げ油を手持ちで測る用途に合う。測定範囲には掲載文内の矛盾があり、具体値を断定する根拠にはできない。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "記事なしの根拠情報レビュー。6商品はいずれも調理用温度計として識別でき、担当する紹介グループで個別に紹介できる。明白な重複や対象外の商品は示されていない。記事本文に関する項目は未評価。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
   "products": [
     {
-      "amazon_title": "タニタ デジタル温度計 TT-583 ブルー",
-      "asin": "B07RTJKMLS",
+      "amazon_title": "タニタ Tanita 温度計 料理 調理 IPX2 防滴仕様 -50~250度 ホワイト TT-583 AWH マグネットつき スティック温度計",
+      "asin": "B0DDK2PQ44",
       "brand": "TANITA",
+      "discovery_axis_id": "popular",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61+lJfjObLL._AC_SL1500_.jpg",
-      "matched_comparison_axes": [
-        "measurement_conditions"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/51NvtaVMeWL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B07RTJKMLS",
+      "product_id": "AMZ-B0DDK2PQ44",
+      "provisional": false,
+      "rating": 4.2,
       "ref": "p1",
-      "search_key": "TEZILON スマート 肉温度計 料理 コードレス 通知アラー",
-      "selection_score": 0.49,
-      "selected_variant": {
-        "model": "TT-583 BL",
-        "pack_count": 1,
-        "colour": "ブルー",
-        "configuration": "防滴・1秒更新"
-      }
+      "review_count": 6421,
+      "search_key": "TANITA タニタ Tanita 温度計 料理 調理 IPX2 防滴仕様 -",
+      "selection_reason": "肉を焼いている途中や揚げ油を温めたときに、その場で温度を確かめたい人向けのスティック型。商品説明には1秒ごとの表示更新、防滴仕様（IPX2相当）、収納に使えるマグネットが記載されており、手持ちで測る基本的な使い方を考える基準になる。",
+      "sources": [
+        {
+          "brand": "TANITA",
+          "excerpt": "Tanita TT-583 AWH Cooking Thermometer, -58 to 482°F (-50 to 250°C), White, Stick Thermometer with Magnet, IPX2 Splash-proof\nAbout this item\nSize (W x H x D): Approx. 1.7 x 8.7 x 0.6 inches (43 x 221 x 15 mm) (excluding sensor holder); Weight: Approx. 1.4 oz (40 g) (including battery and sensor holder)\nMaterials: PP, PET, stainless steel\nCountry of Manufacture: China\nPower source: 3VDC CR2032 coin-type lithium battery x 1 pc (trial battery included), Battery life: approximately 1 year (when used for 10 minutes every day)\nMeasurement temperature range: -50 to 240 degrees, minimum display: 0.1 degrees, display cycle: every 1 second, waterproof function: drip-proof (IPX2 equivalent) › See more product details\nBrand TANITA\nColor 01) White\nAge Range (Description) All Ages\nIncluded Components Instruction manual (English language not guaranteed), test battery (CR2032 coin type lithium battery x 1)Instruction manual (English language not guaranteed), test battery (CR2032 coin type lithium battery x 1) See more\nNumber of Batteries 1 CR2032 batteries required. (included)\nItem Length 43 Centimeters\nStyle Splash-proof\nIndoor/Outdoor Usage Indoor\nManufacturer タニタ(Tanita) See more\nVisit the TANITA Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Tanita TT-583 AWH Cooking Thermometer, -58 to 482°F (-50 to 250°C), White, Stick Thermometer with Magnet, IPX2 Splash-proof",
+          "url": "https://www.amazon.co.jp/dp/B0DDK2PQ44?th=1",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "ドリテック 防水クッキング温度計 O-280WT",
-      "asin": "B08R877R4N",
-      "brand": "dretec",
-      "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/41YVB0bjJpL._SL1254_.jpg",
-      "matched_comparison_axes": [],
-      "observed_price": null,
-      "product_id": "AMZ-B08R877R4N",
-      "ref": "p2",
-      "search_key": "料理用デジタル温度計 IPX6防水 クッキング温度計 中心温度計",
-      "selection_score": 0.31,
-      "selected_variant": {
-        "model": "O-280WT",
-        "pack_count": 1,
-        "colour": "ホワイト"
-      }
-    },
-    {
-      "amazon_title": "A&D AD-5625",
-      "asin": "B0002ZLCJQ",
-      "brand": "A&D",
-      "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/31thLw+cHtL._AC_SL1000_.jpg",
-      "matched_comparison_axes": [],
-      "observed_price": null,
-      "product_id": "AMZ-B0002ZLCJQ",
-      "ref": "p3",
-      "search_key": "TempPro 温度計 料理 デジタル 中心温度 高温対応 揚げ",
-      "selection_score": 0.31,
-      "selected_variant": {
-        "model": "AD-5625/AD5625A",
-        "color": "ホワイト",
-        "pack_count": 1
-      }
-    },
-    {
-      "amazon_title": "testo 104",
-      "asin": "B0047446K0",
-      "brand": "testo",
-      "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51pEOdZcCGL._SL1000_.jpg",
-      "matched_comparison_axes": [],
-      "observed_price": null,
-      "product_id": "AMZ-B0047446K0",
-      "ref": "p4",
-      "search_key": "TempPro 温度計 料理 デジタル 防水 水洗い可能 中心温",
-      "selection_score": 0.31,
-      "selected_variant": {
-        "model": "0563 0104",
-        "pack_count": 1,
-        "type": "折りたたみ接触プローブ",
-        "power": "単4電池2本"
-      }
-    },
-    {
-      "amazon_title": "シンワ測定 H-3 73083（標準プローブ73102付き）",
-      "asin": "B08LZGHJK2",
-      "brand": "シンワ測定",
-      "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/713KBuJG1+L._AC_SL1500_.jpg",
-      "matched_comparison_axes": [],
-      "observed_price": null,
-      "product_id": "AMZ-B08LZGHJK2",
-      "ref": "p5",
-      "search_key": "TempPro 料理用温度計 デジタル 1mワイヤープローブ タ",
-      "selection_score": 0.31,
-      "selected_variant": {
-        "model": "H-3 73083",
-        "pack_count": 1,
-        "configuration": "隔測式標準プローブ73102付き"
-      }
-    },
-    {
-      "amazon_title": "TempPro TP515",
-      "asin": "B0FRS519QY",
+      "amazon_title": "TempPro 料理用温度計 デジタル 1mワイヤープローブ タイマー付き オーブン/揚げ物/天ぷら/油/肉/パン/お菓子作り キッチン 食品 調理用",
+      "asin": "B0GMGRPL67",
       "brand": "TempPro",
+      "discovery_axis_id": "popular",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/7128xKx6BFL._SL1500_.jpg",
-      "matched_comparison_axes": [],
+      "image_url": "https://m.media-amazon.com/images/I/71pR3KHjuaL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B0FRS519QY",
+      "product_id": "AMZ-B0GMGRPL67",
+      "provisional": false,
+      "rating": 4.2,
+      "ref": "p2",
+      "review_count": 1589,
+      "search_key": "TempPro 料理用温度計 デジタル 1mワイヤープローブ タイマー付き オー",
+      "selection_reason": "オーブンで塊肉を焼く機会があり、加熱中の中心温度も把握したい人に向く。商品説明によると、約16.5cmのプローブを肉に刺し、約1mのケーブルで本体を庫外に置いて温度を読める。設定温度の到達アラームもあり、扉を開けずに火入れを追える点が具体的な魅力。",
+      "sources": [
+        {
+          "brand": "TempPro",
+          "excerpt": "TempPro 料理用温度計 デジタル 1mワイヤープローブ タイマー付き オーブン/揚げ物/天ぷら/油/肉/パン/お菓子作り キッチン 食品 調理用\nAbout this item\n【マルチタイマー機能】デジタルタイマーは最大99時間59分対応、カウントダウン・カウントアップ両用。低温調理や燻製はもちろん、米麹・甘酒・パン発酵など長時間調理の温度管理にも最適。鍋にプローブを入れ「98℃」設定でお湯の沸騰アラートにもなり、麺類・煮物の沸かしすぎ防止に。タイマーはバックグラウンドで動作し、温度計画面との切替が可能です。\n【プロも認める】USDA推奨プリセット温度付きで、料理知識がなくても失敗しないクイック温度設定が可能。牛肉(レア/ミディアム/ウェルダン)、鶏肉、豚肉、魚、ハムなど、食材と焼き加減をボタン選択で推奨内部温度を自動設定。もちろん手動設定も可能。設定温度到達時はアラームでお知らせ。これまで勘や安全マージンに頼っていた火入れが「レア」と「生焼け」を明確に区別できる数値の安心感に。\n【0℃〜300℃・誤差±1℃のマルチ用途】オーブンでのローストビーフ、グリルでのサラダチキンなどの中心温度管理、燻製の肉内部温度のチェック、揚げ物の油温管理、チョコレートのテンパリング、米麹・甘酒・パン生地の発酵、温泉卵、赤ちゃんのミルクの温度チェックまでこれ一台。家庭用はもちろん業務用の調理現場でも頼られる高精度デジタル料理温度計です。\n【扉を開けずに温度確認】長さ約1mの耐熱メッシュケーブル(380℃対応)でクッキング温度計本体は庫外に。オーブンのドアにケーブルを挟んでも正常動作するため、扉を開けて熱を逃がすことなくローストビーフやBBQを外から数値で見守れます。ステンレスプローブ約16.5cmで塊肉の芯まで届き、内部温度を確実にキャッチします。\n【目を離していても気づく大音量アラーム】調理用温度計は設定温度に到達すると、目覚まし時計に匹敵する大音量のビープ音でお知らせ。キッチンを離れても見逃さず、火入れ過ぎや沸かしすぎを未然に防止できます。\n【3Way設置×ステンレス調】背面マグネットで冷蔵庫やオーブン側面、チャコールグリルの金属面にも吸着。折りたたみスタンドで調理台に安定設置、フック穴で壁掛け収納も。キッチンの限られたスペースを有効活用できる3Way設計です。本体はキッチン家電と統一感のあるステンレス調。現在温度と設定温度を同時表示の大型液晶で、離れていても一目で状態が把握でき、頻繁にオーブンを開けて熱を逃がす手間が省けます。\n【電池1本で長持ち+テスト用付属】単4形アルカリ乾電池(AAA)1本で動作し、テスト用電池が付属するので届いたその日からすぐ使えます。米麹作りなどの長時間使用にも余裕の電池持ちで省エネ設計。使わない時は側面のモードセレクター(電源OFF/タイマー/温度計)で電源を切れば電池を長持ちさせられます。交換時もコンビニなど身近なお店でどこでも手に入る一般的なタイプなので安心です。\n【お手入れ簡単・衛生的な食品用ステンレスプローブ】肉用温度計は測定後は食器用洗剤を含ませた布でプローブ先端とケーブルを拭くだけ。衛生的に保つことで、魚介類から肉、スイーツまで匂い移りを気にせず調理を楽しめます。\n【日本語取説付き・ご注意】日本語取扱説明書付きで、海外ブランドが初めてでも安心。℃/℉は背面スイッチで切替可能、外国のレシピ本を見ながらの調理にも便利です。※ご注意：差込口や本体は防水ではなく水没厳禁。プローブ先端を直接火にかけたり発熱体に触れさせないでください。本体は非耐熱なのでケーブルを活かして必ず庫外に設置を。測定可能範囲（0℃～300℃）を超えた場合は「HHH」または「LLL」と表示。\n【ブランド名変更のお知らせ】ThermoProはTempProへブランド名を変更いたしました。TempProはThermoProの理念・運営体制・製品をそのまま引き継いでおります。ブランド移行期間中につき、ThermoProまたはTempProいずれかのロゴ入り商品をランダムでお届けいたします。仕様・品質は全く同じですのでご安心ください。 Show More › See more product details\nBrand TempPro\nSpecial Feature アラーム, タイマー, 大型ディスプレイ\nColor シルバー\nIncluded Components 1x 肉用温度計; 1x ワイヤープローブ; 1x 単4電池; 1x ユーザーマニュアル\nSpecification Met CE, NSF, RoHS\nDisplay Type Digital\nPower Source バッテリー式\nNumber of Batteries 1 AAA batteries required. (included)\nItem Length 9.5 Centimeters\nUpper Temperature Rating 300 Degrees Celsius See more\nVisit the TempPro Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "TempPro 料理用温度計 デジタル 1mワイヤープローブ タイマー付き オーブン/揚げ物/天ぷら/油/肉/パン/お菓子作り キッチン 食品 調理用",
+          "url": "https://www.amazon.co.jp/dp/B0GMGRPL67",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "Sourcingbay Dual Probe Thermometer, Cooking Utensil, Digital, Fast Reading with Alarm Function, Compatible with Oil/Milk/Meat/Coffee/Bath, etc., Red",
+      "asin": "B08976DTL3",
+      "brand": "Sourcingbay",
+      "discovery_axis_id": "leave_in_meat",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71nA8mF5yRL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B08976DTL3",
+      "provisional": false,
+      "rating": 4.1,
+      "ref": "p3",
+      "review_count": 316,
+      "search_key": "Sourcingbay Dual Probe Thermometer, Cooking",
+      "selection_reason": "オーブンやグリルで肉を加熱しながら中心温度を追いたい人向け。商品説明には、手早い確認に使う回転式の12cmプローブとは別に、106cmのケーブル付きプローブと設定温度の到達アラームが記載されている。加熱中はケーブル付きの方を使い、本体を熱源から離して数値を確認できる。",
+      "sources": [
+        {
+          "brand": "Sourcingbay",
+          "excerpt": "Sourcingbay Dual Probe Thermometer, Cooking Utensil, Digital, Fast Reading with Alarm Function, Compatible with Oil/Milk/Meat/Coffee/Bath, etc., Red\nAbout this item\n【2 in 1 Multifunction & Higher Safety】This barbecue thermometer has two safety stainless steel probes The 12 cm long probe, which can rotate 180°, is suitable for immediate readings in meat and liquids The long probe with a 106 cm stainless steel cable can be used to measure the temperature of grills, ovens, pans, etc., to prevent burns on your hands\nFast Reading, High Accuracy & Automatic Power Off: The advanced sensor of the kitchen thermometer uses the latest thermocouple technology to display the temperature in just 2-3 seconds The measurement range is -50°C to 300°C and the accuracy is ±1°C Due to energy-saving design, it automatically powers off if no operation is performed for 10 minutes\n【Hold & Calibration Function】When the probe of the cooking thermometer is removed from the food, the hold function allows you to lock the displayed temperature on the screen If accurate temperature measurement is not believed to have been taken, calibration can be performed\n【Temperature Alarm Function】The digital thermometer allows you to manually set the required temperature, and it will notify you when the set temperature is reached to avoid food from burning or overcooking\n【Food Safety & Convenient Storage】Made from food-grade 304 stainless steel, non-toxic, safe and secure With hanging hook hole, easy to hang anywhere and save space The cooking thermometer with a foldable probe has a strong magnet on the back, allowing you to attach the thermometer to the refrigerator door, barbecue rack, or any other metal surface › See more product details\nBrand Sourcingbay\nSpecial Feature High Accuracy\nColor red\nAge Range (Description) Adult\nIncluded Components Removable probe and barbecue thermometer\nOuter Material Stainless Steel\nSpecification Met FDA\nDisplay Type Digital\nProduct Care Instructions Wipe Clean\nUnit Count 1.0 Count See more\nVisit the Sourcingbay Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Sourcingbay Dual Probe Thermometer, Cooking Utensil, Digital, Fast Reading with Alarm Function, Compatible with Oil/Milk/Meat/Coffee/Bath, etc., Red",
+          "url": "https://www.amazon.co.jp/dp/B08976DTL3",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "ThermoPro Cooking Thermometer, Waterproof Cooking Thermometer, Digital with Backlight, High Precision Thermocouple Sensor, Fast Reading, for Bread Making, Yakiniku, Hamburger Making, Deep Frying",
+      "asin": "B07XDZCH26",
+      "brand": "TempPro",
+      "discovery_axis_id": "leave_in_meat",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71XFy67eR2L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B07XDZCH26",
+      "provisional": false,
+      "rating": 4.3,
+      "ref": "p4",
+      "review_count": 553,
+      "search_key": "TempPro ThermoPro Cooking Thermometer, W",
+      "selection_reason": "フライパンで焼くステーキやハンバーグの中心を、加熱の途中で繰り返し確かめたい人に向く。商品説明には、食材に刺して中心を測る接触式で、約1〜2秒で表示する熱電対センサーと、熱源から手を離して表示を確認できるホールド機能が記載されている。連続設置ではなく、焼き具合を見ながら差して測る使い方。",
+      "sources": [
+        {
+          "brand": "TempPro",
+          "excerpt": "ThermoPro Cooking Thermometer, Waterproof Cooking Thermometer, Digital with Backlight, High Precision Thermocouple Sensor, Fast Reading, for Bread Making, Yakiniku, Hamburger Making, Deep Frying\nAbout this item\n(1-2 seconds high-speed display & high accuracy of ±0.5°C): Temp Pro TP19 is a digital cooking thermometer equipped with a thermocouple sensor. Simply insert the probe to display the temperature in about 1-2 seconds. The measurement range is -50℃ to 300℃ and the accuracy is ±0.5℃(-10℃ to 100℃). This kitchen thermometer can measure the temperature of fry food to frozen foods\n(As a center thermometer) A contact type meat thermometer that measures the center temperature of food directly by piercing it into food. Use steak, roasted beef, hamburger, chicken corn, or fried frying meats to help identify the insufficient heating even when the surface is cooked, and it can also be used as an estimation of heating at the core of 157°F (75°C) and above 1 minute. On the back, you can check the recommended heating temperature of beef, pork, and poultry on the spot, so you don't have to worry about it every time\nHold Function & 180° Automatic Rotation Display: The cooking thermometer can be fixed with the lock button, so you can check the measurements while keeping your hands and face away from hot pots and tempura. The screen rotates 180° automatically depending on how you hold it, and is designed to be easily viewed by both right and left handed. The illuminated number display makes it easy to read in the dark kitchen or at the BBQ at night\nIP65 Dustproof, Waterproof, Washable with running water: Since it comes in direct contact with food, it can be easily cleaned with the probe under running water after measuring raw meat or fish. This food thermometer can not only be wiped clean, but can also be washed off, so you can keep it clean even when cooking\nAutomatically On/Off When Folded: The digital thermometer has a motion detection function that automatically turns on when the probe is pulled out, and automatically turns off when folded. It will go to sleep after about 90 seconds without any button operation, and immediately returns when you pick it up. Reduces battery waste caused by forgetting to turn it off\n(Magnet & Hook Hole to Keep Placement) The magnet on the back can be attached to your refrigerator or stove hood, and you can use the hook hole for hanging storage. The probe is 180° foldable, so the tip won’t scratch your hands or drawers when stored, making it convenient for carrying and outdoors\nFood grade 304 stainless steel probe: Food grade stainless steel (SUS304). Resistant to rust and odor transfer and easy to clean. The thin tip allows you to measure the center temperature of thick chunks of meat, as well as freshly baked bread and pound cakes\n(Calibration Function) If you feel a difference in numbers during use, it has a calibration function that can be adjusted by yourself using the instruction manual (English language not guaranteed). You can use it for long and stable precision even in hot situations such as cold cooking, baking, chocolate tempering, etc\nWide Range of Applications & Japanese Instruction Manual: This cooking thermometer is suitable for a wide range of household and commercial uses, including tempura and hot fry oil, baby milk and baby food, coffee drip hot water, Japanese tea (guru and green tea), fermenting bread dough, low-temperature cooking, smoking, yogurt, making sweet sake, and freezing refrigerated. Comes with 1 AAA battery and a Japanese instruction manual (English language not guaranteed)\n(Brand Name Change Notice) ThermoPro has changed the brand name to TempPro. TempPro remains true to the ThermoPro's philosophy, operation, and products. We will send random products with ThermoPro or TempPro logo during the brand transition period. Please rest assured that the specifications and quality are exactly the same Show More › See more product details\nBrand TempPro\nSpecial Feature Auto Off, Backlit, Fast Reading System, High Accuracy, Waterproof\nColor Red + Black (Backlit / Waterproof)\nAge Range (Description) Adult\nIncluded Components 1x meat thermometer; 1x AAA battery; 1x user manual\nOuter Material Plastic\nDisplay Type Digital\nProduct Care Instructions Wipe Clean\nUnit Count 1.0 Count\nPower Source Battery Powered See more\nVisit the TempPro Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "ThermoPro Cooking Thermometer, Waterproof Cooking Thermometer, Digital with Backlight, High Precision Thermocouple Sensor, Fast Reading, for Bread Making, Yakiniku, Hamburger Making, Deep Frying",
+          "url": "https://www.amazon.co.jp/dp/B07XDZCH26",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "ThermoPro TP15 Digital IPX6 Waterproof Washable Cooking Thermometer with High Precision LCD Backlight Calibration Function for Oil Temperature, Bread Making, Tempura, Deep Fried Food, Coffee, Milk",
+      "asin": "B07N496FF8",
+      "brand": "TempPro",
+      "discovery_axis_id": "frying_oil",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41vx+ptCqZL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B07N496FF8",
+      "provisional": false,
+      "rating": 4.3,
+      "ref": "p5",
+      "review_count": 1233,
+      "search_key": "TempPro ThermoPro TP15 Digital IPX6 Wate",
+      "selection_reason": "鍋の揚げ油を手持ちで測り、湯気や油はねから離れて表示を読みたい人向け。商品説明には揚げ物の油温に対応する測定範囲、表示を固定するホールド機能、バックライト、使用後に洗えるIPX6防水仕様が記載されている。鍋に固定する方式ではなく、調理中にプローブを入れて温度を確認するタイプ。",
+      "sources": [
+        {
+          "brand": "TempPro",
+          "excerpt": "ThermoPro TP15 Digital IPX6 Waterproof Washable Cooking Thermometer with High Precision LCD Backlight Calibration Function for Oil Temperature, Bread Making, Tempura, Deep Fried Food, Coffee, Milk\nAbout this item\nHigh-Speed Measurement in 1-3 Seconds & High Accuracy of ± 32.9 °F: The Temp Pro digital cooking thermometer quickly displays the temperature in about 1-3 seconds by simply inserting the probe. No stress when waiting. The measurement accuracy is up to ±0.41 °F, allowing you to accurately understand the oil temperature of fried foods to the finish of low-temperature cooking. It has a calibration function, so if you feel the misalignment of the numbers, you can correct it yourself and use it accurately for a long time\nWide Range of Measurement from -58 °F to 572 °F: This kitchen thermometer is suitable for a wide range of temperatures, from oil temperature management for tempura and fried chicken, to frozen foods, low-temperature cooking, candy crafting and caramel making. It can be used as a tempura thermometer, oil thermometer, or meat thermometer, and can greatly reduce recipe failures where temperature is decisive\nIPX6 Waterproof and Easy to Clean: The digital cooking thermometer has an IPX6 waterproof design. Even if juice or oil splashes during cooking, it can be quickly washed off with running water after use for hygiene. This waterproof thermometer is designed to last a long time, so you can use it with confidence not only for BBQs and outdoor activities, but also in kitchens that are often damaged due to moisture\nBacklit & Hold Function: Press the \"LIGHT\" button to turn on the LCD backlight and automatically turn off after about 15 seconds. You can read the numbers clearly in smokers, barbecue venues, and even in dim places in front of the oven. When the display is difficult to see due to smoke, steam, or water droplets, you can lock the display with the HOLD button even if you remove the probe from food, so you can take your hands away from the heat source and check the temperature in a safe place\nAccurate Measurement as a Center Thermometer: This contact thermometer measures the temperature of the center by inserting the probe directly into the food. As a meat thermometer, it can be used as an estimate of whether steaks, roast beef, hamburgers, chicken, etc. are cooked all the way through, and it helps you identify the lack of heating when the surface is burnt but the inside is raw\n304 Stainless Steel 5.4 inches (13.6 cm) Long Probe for Food: The digital cooking thermometer probe is made of food-grade 304 stainless steel, so you can rest assured that you can stick directly into food. The long 5.4 inches (13.6 cm) length allows you to measure your hands away from hot oil, pans, and BBQ grills, reducing the risk of burns. You can use it with confidence even when cooking with oil splashes or high temperatures such as frying pans, pizza kilns, and yakiniku\nMagnets & Hanging Holes for Neat Storage: Equipped with an embedded magnet on the back, so it can be attached to your refrigerator or range hood. With the hanging hole, you can hang it on a kitchen hook and store it, making it a convenient home cooking thermometer that can be easily removed when you want to use it\nAuto Off Function & Ready-to-Use Accessories: Even if you forget to turn it off after using it all the time. Equipped with an auto power off function that automatically turns off after 10 minutes of inactivity, preventing unnecessary battery drain due to forgetting to turn it off. Batteries and Japanese instruction manual are included, so you can use it as soon as it arrives. The temperature unit can be switched between degrees Celsius and Fahrenheit, making it convenient for overseas recipes and foreigners\nFrom Japanese cuisine to confectionery and drinks: Suitable temperature for baking meat dishes, coffee and tea hand dripping, cooling baby's milk to human skin, fermentation of amazake and miso, fermentation of bread dough, tempering chocolate, washing vegetables at 122°F (50°C), and making sweets. With one digital cooking thermometer, you can greatly expand the range of recipes you can make. This food thermometer is also recommended as a gift for those who love cooking\nNotice of Brand Change: ThermoPro has changed its brand name to TempPro. TempPro continues ThermoPro's philosophy, operation, and products. We will randomly deliver products with either ThermoPro or TempPro logos during the brand transition period. Please rest assured that the specifications and quality are exactly the same Show More › See more product details\nBrand TempPro\nSpecial Feature Versatile, waterproof, high precision\nColor red\nAge Range (Description) Adult\nIncluded Components Cooking thermometer x 1, Lithium battery CR2032 x 1, Silicone cap x 1, Japanese instruction manual x 1Cooking thermometer x 1, Lithium battery CR2032 x 1, Silicone cap x 1, Japanese instruction manual x 1 See more\nOuter Material Stainless Steel\nDisplay Type LCD Screen\nProduct Care Instructions Wipe Clean\nUnit Count 1.0 Count\nPower Source Battery Powered See more\nVisit the TempPro Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "ThermoPro TP15 Digital IPX6 Waterproof Washable Cooking Thermometer with High Precision LCD Backlight Calibration Function for Oil Temperature, Bread Making, Tempura, Deep Fried Food, Coffee, Milk",
+          "url": "https://www.amazon.co.jp/dp/B07N496FF8",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "TempPro Digital Central Temperature Cooking Thermometer with High Temperature for Oils, Fryes, Tempura, Meat, Baking, Bread, Milk, Coffee, Kitchen, Food and Cooking",
+      "asin": "B01LYSZOVU",
+      "brand": "TempPro",
+      "discovery_axis_id": "frying_oil",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61cyt2ePhCL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B01LYSZOVU",
+      "provisional": false,
+      "rating": 4.0,
       "ref": "p6",
-      "search_key": "TempPro 温度計 料理 デジタル IPX7防水 丸洗い可能",
-      "selection_score": 0.31,
-      "selected_variant": {
-        "model": "TP515",
-        "color": "ホワイト",
-        "pack_count": 1,
-        "power": "LR44電池2個",
-        "purchase": "非セール通常購入"
-      }
+      "review_count": 1322,
+      "search_key": "TempPro Digital Central Temperature Cook",
+      "selection_reason": "揚げ物を始める前や食材を追加する際、鍋の油温をこまめに確かめたい人に向く。商品説明には約13.5cmのプローブ、約2〜4秒の表示、−50〜300℃の測定範囲が記載されている。長いプローブで鍋の油に届かせて測れる一方、鍋への固定機能は確認できないため、手持ちで見守る用途として選んだ。",
+      "sources": [
+        {
+          "brand": "TempPro",
+          "excerpt": "TempPro Digital Central Temperature Cooking Thermometer with High Temperature for Oils, Fryes, Tempura, Meat, Baking, Bread, Milk, Coffee, Kitchen, Food and Cooking\nAbout this item\nFood Grade SUS304 / Rust Resistant and Clean: Uses food grade stainless steel (SUS304) for the surface of the grip and probe to insert food. Resistant to rust and odor transfer; even if it gets stained with oil or seasonings, it can be wiped away quickly. A digital cooking thermometer and meat thermometer with the luster and texture of metal that is unique to the kitchen\nInstant Measurement in Approx. 2-4 Seconds / Easy to Read LCD Display: When inserted the probe it measures the temperature in about 2-4 seconds and displays it large on the LCD display. This quick-read cooking thermometer allows you to quickly check the oil temperature of deep fried foods and the level of roasted meat, so you can quickly use it even during busy cooking\nContact-type measuring center temperature/ Ideal for meat and low temperature cooking: A central thermometer and contact thermometer with sharp probes directly into food. It can be used to check the heating state not only on the surface, but also to the center, which can help you manage the finish of roasted beef, steak, chicken ham, low temperature cooking, and check the insufficient heating\n[Wide measuring range from -50°C to 300°C/±0.5°C] The Temp Pro cooking thermometer is compatible with a wide range of temperatures from -50°C to -300°C. From high temperature frying oil to temping sweets and chocolates, to fermenting bread dough, sweet liquor, yogurt, to controlling the temperature of your baby baby food. At 32°F to 212°F (0 to 100°C), it measures fine temperatures at ±0.5°C)\n(5.3 inches (13.5 cm) Long Probe/Easy to Clean) The 5.3 inches (13.5 cm) long probe allows you to measure your hands away from high temperature foods such as fried foods, tempura, pots, and so on, reducing the risk of burning. Reaches deep pots and pans to the center. Simply wipe with a damp cloth after use. This food thermometer can be kept clean by storing the probe in the included protective cap (storage case), so you can continue to use it hygienically even during daily cooking\nAuto-off function / Batteries included for immediate usage: The cooking thermometer is equipped with an auto-off function that automatically shuts off after about 10 minutes, preventing wasted batteries from forgetting to turn it off. Includes 1 alkaline button battery (LR44) for use right out of the box. Batteries are available in nearby stores and are easy to replace\n【Cap with Hanging Ring & Clip / Easy to Carry】The hanging ring can be hung on the kitchen hook for storage, and the protective cap with clip can be attached to your apron pocket or bag. It fits compactly and can be easily carried out for outdoor activities, camping, BBQ cooking\nSuitable for a wide range of dishes, from everyday kitchen to weaning foods: Suitable for a wide variety of purposes such as deep fried food, steak, roasted beef, sausage, burger, bread making, confectionery, smoking, coffee dripping, sweet liquor, soup, milk and baby food. This is a home kitchen thermometer that will help you manage cooking temperature with just one piece\nJapanese Instruction Manual Included / Great for Beginners or as a Gift: Simple operation with no complicated settings and Japanese instruction manual included. Safe for first-time kitchen thermometers and beginners to cook. This digital thermometer is recommended as a birthday or Mother's Day gift for those who love cooking\n(Brand Name Change Notice) ThermoPro has changed the brand name to TempPro. TempPro remains true to the ThermoPro's philosophy, operation, and products. We will send random products with ThermoPro or TempPro logo during the brand transition period. Please rest assured that the specifications and quality are exactly the same Show More › See more product details\nBrand TempPro\nSpecial Feature Auto Off, Fast Reading System, High Accuracy\nColor Silver Stainless Steel\nAge Range (Description) Adult\nIncluded Components Japanese instruction manual, battery (1 x LR44 (AG13) 1.5 V.) Battery life: 1 year\nOuter Material Stainless Steel\nDisplay Type LCD Screen\nProduct Care Instructions Wipe Clean\nUnit Count 1.0 Count\nPower Source Battery Powered See more\nVisit the TempPro Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "TempPro Digital Central Temperature Cooking Thermometer with High Temperature for Oils, Fryes, Tempura, Meat, Baking, Bread, Milk, Coffee, Kitchen, Food and Cooking",
+          "url": "https://www.amazon.co.jp/dp/B01LYSZOVU",
+          "verified": true
+        }
+      ]
     }
   ],
   "selection": {
-    "brand_count": 0,
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B0DDK2PQ44",
+            "reason": "肉を焼いている途中や揚げ油を温めたときに、その場で温度を確かめたい人向けのスティック型。商品説明には1秒ごとの表示更新、防滴仕様（IPX2相当）、収納に使えるマグネットが記載されており、手持ちで測る基本的な使い方を考える基準になる。"
+          },
+          {
+            "asin": "B0GMGRPL67",
+            "reason": "オーブンで塊肉を焼く機会があり、加熱中の中心温度も把握したい人に向く。商品説明によると、約16.5cmのプローブを肉に刺し、約1mのケーブルで本体を庫外に置いて温度を読める。設定温度の到達アラームもあり、扉を開けずに火入れを追える点が具体的な魅力。"
+          }
+        ]
+      },
+      {
+        "axis_id": "leave_in_meat",
+        "products": [
+          {
+            "asin": "B08976DTL3",
+            "reason": "オーブンやグリルで肉を加熱しながら中心温度を追いたい人向け。商品説明には、手早い確認に使う回転式の12cmプローブとは別に、106cmのケーブル付きプローブと設定温度の到達アラームが記載されている。加熱中はケーブル付きの方を使い、本体を熱源から離して数値を確認できる。"
+          },
+          {
+            "asin": "B07XDZCH26",
+            "reason": "フライパンで焼くステーキやハンバーグの中心を、加熱の途中で繰り返し確かめたい人に向く。商品説明には、食材に刺して中心を測る接触式で、約1〜2秒で表示する熱電対センサーと、熱源から手を離して表示を確認できるホールド機能が記載されている。連続設置ではなく、焼き具合を見ながら差して測る使い方。"
+          }
+        ]
+      },
+      {
+        "axis_id": "frying_oil",
+        "products": [
+          {
+            "asin": "B07N496FF8",
+            "reason": "鍋の揚げ油を手持ちで測り、湯気や油はねから離れて表示を読みたい人向け。商品説明には揚げ物の油温に対応する測定範囲、表示を固定するホールド機能、バックライト、使用後に洗えるIPX6防水仕様が記載されている。鍋に固定する方式ではなく、調理中にプローブを入れて温度を確認するタイプ。"
+          },
+          {
+            "asin": "B01LYSZOVU",
+            "reason": "揚げ物を始める前や食材を追加する際、鍋の油温をこまめに確かめたい人に向く。商品説明には約13.5cmのプローブ、約2〜4秒の表示、−50〜300℃の測定範囲が記載されている。長いプローブで鍋の油に届かせて測れる一方、鍋への固定機能は確認できないため、手持ちで見守る用途として選んだ。"
+          }
+        ]
+      }
+    ],
+    "brand_count": 3,
+    "candidate_count": 21,
     "comparison_axes_covered": [
-      "measurement_conditions"
+      "frying_oil",
+      "leave_in_meat"
     ],
     "content_duplicates_removed": [],
-    "price_used_as_constraint_only": true
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": []
   },
   "slug": "digital-probe-cooking-thermometers"
 }
