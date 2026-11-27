@@ -4,139 +4,375 @@
   "category": "beauty",
   "comparison_axes": [
     {
-      "id": "blade_structure",
+      "id": "popular",
       "keywords": [
-        "回転式",
-        "往復式",
-        "対応部位"
+        "人気"
       ],
-      "label": "刃の構造と対応部位"
+      "label": "人気・定番の基準"
     },
     {
-      "id": "cleaning",
+      "id": "portable_storage",
       "keywords": [
-        "刃部水洗い",
-        "本体水洗い",
-        "毛くず処理"
+        "本体サイズ",
+        "キャップ",
+        "収納ケース",
+        "携帯"
       ],
-      "label": "水洗いできる範囲"
+      "label": "持ち歩く荷物に収めやすい形状・収納"
     },
     {
-      "id": "power",
+      "id": "power_on_the_go",
       "keywords": [
-        "乾電池",
+        "乾電池式",
         "充電式",
-        "本体寸法"
+        "充電端子",
+        "使用可能時間"
       ],
-      "label": "電源と携帯性"
+      "label": "外出先で電源を用意しやすい方式"
     }
   ],
   "eyecatch_image": "https://www.sellemy.jp/img/electric-nose-hair-trimmers-comparison/electric-nose-hair-trimmers-comparison.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "25e516fcaa3ca1c91361d866019a1144e3bbeef7c8a547f8a14dbf8a94743897",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 27829,
+      "listing_identity_citations_repaired": [
+        "p2",
+        "p3",
+        "p4",
+        "p6"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 1694,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 516,
+      "session_id": "01a21c4f-fe9d-7310-a6c5-305cf1978651",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "Panasonic ER-NGNB2-K Battery Operated Nose Hair Cutter"
+            }
+          ],
+          "identity_key": "Panasonic ER-NGNB2",
+          "identity_quote": "Panasonic ER-NGNB2-K Battery Operated Nose Hair Cutter",
+          "reason": "掲載情報に型番、鼻毛用の用途、乾電池式であることが示されている。紹介に使える基本情報がある。出典: https://www.amazon.co.jp/dp/B0CY3PWWTQ?th=1",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "USB Rechargeable Nose Hair Cutter"
+            }
+          ],
+          "identity_key": "【Amazon.co.jp限定】鼻毛カッター メンズ レディース Rimsge はな毛カッター はなげカッターエチケットカッター USB充電式 眉 耳 鼻毛切り ライン 除毛クリー",
+          "identity_quote": "【Amazon.co.jp限定】鼻毛カッター メンズ レディース Rimsge はな毛カッター はなげカッターエチケットカッター USB充電式 眉 耳 鼻毛切り ライン 除毛クリーム ムダ毛ケア 静音全身ケア 水洗い可能 男女兼用 おしゃれ 持ち運び便利 敬老の日 母の日 父の日 誕生日 クリスマス 記念日 プレゼント(ブラック)",
+          "reason": "商品名と掲載情報から、鼻毛用の充電式本体として識別できる。Type-Cケーブルでの充電と眉・耳への用途が明記されている。出典: https://www.amazon.co.jp/dp/B0FK2LLB86?th=1",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "portable_storage",
+              "quote": "Included Components Mayu Com, Mayu Cover, USB Cable, Cap, Cleaning Brush"
+            }
+          ],
+          "identity_key": "コイズミ フェイスシェーバー&ノーズケア 眉毛ケア USB充電式 ホワイト KLC-0851/W",
+          "identity_quote": "コイズミ フェイスシェーバー&ノーズケア 眉毛ケア USB充電式 ホワイト KLC-0851/W",
+          "reason": "型番付きの商品名と掲載情報から、鼻毛カッター用アタッチメントを備える本体として識別できる。付属キャップと寸法が、収納・携帯の切り口を支える。出典: https://www.amazon.co.jp/dp/B0CNQZCWGR",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "portable_storage",
+              "quote": "it is compact enough for travel or business trips"
+            }
+          ],
+          "identity_key": "鼻毛カッター 眉毛シェーバー はなげカッター メンズ レディース 1台多役 充電式 USB Type-C 電動 はな毛カッター 男性 女性 まゆげ シェーバー 眉毛カッター 防水",
+          "identity_quote": "鼻毛カッター 眉毛シェーバー はなげカッター メンズ レディース 1台多役 充電式 USB Type-C 電動 はな毛カッター 男性 女性 まゆげ シェーバー 眉毛カッター 防水 水洗い可能 多機能 2in1 静音 タイプc フェイスシェーバー まゆけシェーバー 耳毛 エチケットカッター 鼻毛切り 顔そり 産毛剃り 髭剃り 電動カミソリ ケア セット ヒゲ/うぶげ/かみ/ハナゲ/マユゲ/みみげ/かお/ムダ毛処理 電気 肌に優しい コンパクト 携帯便利 プレゼント 乾電池式不要",
+          "reason": "ブランドを含む商品名と掲載情報から、鼻毛と眉毛に使う充電式本体として識別できる。旅行・出張への携帯と複数用途が記載され、割り当てられた切り口に合う。出典: https://www.amazon.co.jp/dp/B0H9YDGYTX?th=1",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "power_on_the_go",
+              "quote": "Battery operated"
+            }
+          ],
+          "identity_key": "Panasonic ER-NGND2",
+          "identity_quote": "Panasonic ER-NGND2-W Nose Hair Cutter",
+          "reason": "掲載情報に型番、鼻毛用の用途、乾電池式であることが示され、外出先での電源の用意という切り口に合う。出典: https://www.amazon.co.jp/dp/B0CY49J96C?th=1",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "power_on_the_go",
+              "quote": "【電源・電圧】DC1.5V(単3形アルカリ乾電池※1×1本)"
+            }
+          ],
+          "identity_key": "パナソニック 鼻毛カッター エチケットカッター メンズ 眉毛 ヒゲ 耳 ER-GN11-K",
+          "identity_quote": "パナソニック 鼻毛カッター エチケットカッター メンズ 眉毛 ヒゲ 耳 ER-GN11-K",
+          "reason": "型番付きの商品名と掲載情報から鼻毛用の本体として識別できる。単3形アルカリ乾電池1本を使うと明記され、外出時の電源方式を説明できる。出典: https://www.amazon.co.jp/dp/B07XTLC91J",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "根拠のみの審査。6件はいずれも掲載情報から鼻毛ケア用の本体として識別でき、既存の3つの紹介切り口に各2件が適合する。Panasonicの3件には異なる型番が掲載され、色や包装だけが異なる同一製品と示す積極的な根拠はない。記事は未提出のため、記事固有の項目は評価していない。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
   "products": [
-    {
-      "amazon_title": "パナソニック 鼻毛カッター エチケットカッター メンズ 眉毛 ヒゲ 水洗い ER-GN70-K",
-      "asin": "B07FFGYWJ6",
-      "brand": "パナソニック",
-      "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/813bcJZagqL._AC_SY300_SX300_QL70_ML2_.jpg",
-      "matched_comparison_axes": [
-        "power"
-      ],
-      "observed_price": null,
-      "product_id": "AMZ-B07FFGYWJ6",
-      "ref": "p1",
-      "search_key": "Amazon.co.jp限定鼻毛カッター メンズ 替刃付き はな",
-      "selection_score": 0.505,
-      "selected_variant": "ブラック"
-    },
-    {
-      "amazon_title": "Schick(シック) スタイリングパートナー マルチエチケットグルーマー ネイビー 鼻毛 耳毛 眉毛 カッター メンズ",
-      "asin": "B09R1LXS54",
-      "brand": "シック",
-      "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71xCDWn3uWL._AC_SY300_SX300_QL70_ML2_.jpg",
-      "matched_comparison_axes": [
-        "power"
-      ],
-      "observed_price": null,
-      "product_id": "AMZ-B09R1LXS54",
-      "ref": "p2",
-      "search_key": "MANSPOT 鼻毛カッター 電動 はなげカッター エチケットカ",
-      "selection_score": 0.325,
-      "selected_variant": "ネイビー"
-    },
     {
       "amazon_title": "【乾電池式】パナソニック 鼻毛カッター 【Amazon.co.jp限定】 エチケットカッター 眉毛 ヒゲ 耳 ER-NGNB2-K",
       "asin": "B0CY3PWWTQ",
-      "brand": "パナソニック",
+      "brand": "Panasonic",
+      "discovery_axis_id": "popular",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61ViDSMm3CL._AC_SY300_SX300_QL70_ML2_.jpg",
-      "matched_comparison_axes": [
-        "power"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/61ViDSMm3CL._AC_UL320_.jpg",
       "observed_price": null,
       "product_id": "AMZ-B0CY3PWWTQ",
+      "provisional": false,
+      "rating": 4.1,
+      "ref": "p1",
+      "review_count": 4359,
+      "search_key": "Panasonic パナソニック 鼻毛カッター エチケットカッター 眉毛 ヒゲ 耳",
+      "selection_reason": "定番の使い方を押さえたい人向け。商品説明では、上と側面に刃を備え、鼻の奥側の毛にも届く設計とされている。眉・ヒゲ・耳にも使え、幅32×奥行26×高さ127mm、46gの乾電池式なので、出張用の身だしなみ道具を一つにまとめたい人が用途と大きさを確認して選べる。",
+      "sources": [
+        {
+          "brand": "Panasonic",
+          "excerpt": "Panasonic ER-NGNB2-K Battery Operated Nose Hair Cutter (Amazon.co.jp Limited) Etiquette Cutter Eyebrow Mustache Ears\nAbout this item\nThe edge of the blade is attached in two directions to the top and sides so it cuts not only hair on the sides, but also on the back of the nose\nA multi-purpose etiquette cutter that can be used not only for your nose hair, but also for a mail, mustache, and ears\nUses environmentally friendly packaging\nBattery operated › See more product details\nRecommended Uses For Product Nose, Mule, Mustache, Ear\nColor Black\nItem Weight 46 Grams\nBrand Panasonic\nSpecial Feature Detachable Head\nItem dimensions L x W x H 32 x 26 x 127 mm\nBlade Material Metal\nTarget Audience Men\nBatteries Required? Yes\nModel Name Etiquette Cutter See more",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Panasonic ER-NGNB2-K Battery Operated Nose Hair Cutter (Amazon.co.jp Limited) Etiquette Cutter Eyebrow Mustache Ears",
+          "url": "https://www.amazon.co.jp/dp/B0CY3PWWTQ?th=1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "【Amazon.co.jp限定】鼻毛カッター メンズ レディース Rimsge はな毛カッター はなげカッターエチケットカッター USB充電式 眉 耳 鼻毛切り ライン 除毛クリーム ムダ毛ケア 静音全身ケア 水洗い可能 男女兼用 おしゃれ 持ち運び便利 敬老の日 母の日 父の日 誕生日 クリスマス 記念日 プレゼント(ブラック)",
+      "asin": "B0FK2LLB86",
+      "brand": "Rimsge",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61pmfPg1ZlL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0FK2LLB86",
+      "provisional": false,
+      "rating": 4.1,
+      "ref": "p2",
+      "review_count": 852,
+      "search_key": "Rimsge 鼻毛カッター メンズ レディース Rimsge はな毛カッター",
+      "selection_reason": "充電式を基準に選びたい人向け。商品説明では、付属のType-Cケーブルで充電でき、鼻に加えて眉・耳にも使えるとされる。本体は約12.6×2cm、約60gで、先端を外して水洗いできるため、仕事場や旅行先へ持参し、使用後の手入れもしたい人に合う。",
+      "sources": [
+        {
+          "brand": "Rimsge",
+          "excerpt": "[Amazon.co.jp Limited] Rimsge Nose Hair Cutter, Male and Female Hair Cutter, USB Rechargeable, Eyebrow, Ear, Nose Hair Trimmer, Washable, Unisex, Fashionable, Portable, For The Aged Day, Mother's Day\nAbout this item\nUSB Rechargeable Nose Hair Cutter: The nose hair cutter for men has a built-in high performance lithium-ion battery that can be easily charged with the included Type-C cable. Can be conveniently charged anytime, anywhere. It can also be charged with a USB charger for smartphones, so it is convenient to charge on the go\n(3-in-1 Multifunctional Electric Nose Hair Cutter) A multi-functional etiquette cutter that can be used to care not only the nose, but also eyebrow trimmer and ear hair. The dual edge blade cuts not only from the sides but also from the top. In addition, the ergonomic three-dimensional arc design is gentle on the skin of the nasal cavity. It is safe and can quickly cut out wasted hair, fits well to the nasal cavity, and cuts deep cleanly\nQuiet Design & Compact Design: The nose hair cutter has a muddy body that is easy to operate with a switch that fits in your hand and is easy to use. The size is 4.9 x 0.8 inches (12.6 x 2 cm) and weighs 2.1 oz (60 g). It's ultra-compact and convenient to carry. Therefore, you can take it anywhere, not only at home, but at work, on business trips, or when traveling. In addition, this product is quiet so you can use it anytime\nIPX6 Waterproof & Easy to Clean: This electric nose shaver is waterproof. The tip of the nose clipper can be removed and rinsed directly, preventing residue and bacteria from growing, so you can always keep it clean. Nose hair cutter, rechargeable head can be removed and washed. The unique double head cleaning brush allows you to easily clean the nose hair cutter and keep the nose hair cutter clean\n(Reliable quality & reliable after-service) We conduct thorough inspections to make men with better nose hair. However, in the event of a defective product, we will provide you with peace of mind after service. Please contact us within one year if you experience any quality problems. We will reply you within 24 hours. Providing close after-service to our customers is our goal\nMakes a great gift for family, couples, office workers, students, friends, and friends. It is also a good new year gift. As a gift for life events and celebrations: Marriage, wedding anniversary, gift giveaway, silver marriage, gold wedding ceremony, housewarming celebration, new life, new home, school entrance celebration, graduation, graduation, employment celebration, new job, new job, retirement celebration, retirement celebration, retirement celebration, retirement celebration, celebration celebration, celebration celebration, promotion celebration, sixtieth birthday celebration. Anniversaries, etc. Season: For all year round occasions: Makes a great present for your loved ones as a birthday gift, Mother's Day, Father's Day, Respect for the Aged Day, Valentine's Day, White Day, Christmas present, New Year's gift, etc. This nose hair cutter is the perfect gift. Finely tunes the details of the nose hair, adding a smart glow to precious moments that are fresh and noble\nCharging Notes: Many of the problems that cannot be charged are caused by the use of a high output rapid charger. This product only supports a standard USB charger, so please do not connect a quick charger with a cable to charge. High output power supply may cause charging malfunctions or inability to store electricity, so be sure to use a universal USB charger. In addition, most cases when the cable is connected and cannot be charged, the cable itself is defective. Try replacing another Type-C cable with your existing one. If no improvement, please contact us and we will send you a new charging cable for free › See more product details\nRecommended Uses For Product Ear\nColor Black\nItem Weight 70 Grams\nBrand Rimsge\nPower Source Battery Powered\nMaterial Acrylonitrile Butadiene Styrene\nSpecial Feature Waterproof\nItem dimensions L x W x H 27 x 27 x 127 mm\nBlade Material Plastic\nTarget Audience Unisex-Adults See more\nVisit the Rimsge Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "[Amazon.co.jp Limited] Rimsge Nose Hair Cutter, Male and Female Hair Cutter, USB Rechargeable, Eyebrow, Ear, Nose Hair Trimmer, Washable, Unisex, Fashionable, Portable, For The Aged Day, Mother's Day",
+          "url": "https://www.amazon.co.jp/dp/B0FK2LLB86?th=1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "コイズミ フェイスシェーバー&ノーズケア 眉毛ケア USB充電式 ホワイト KLC-0851/W",
+      "asin": "B0CNQZCWGR",
+      "brand": "Koizumi",
+      "discovery_axis_id": "portable_storage",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61WunxDtkAL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0CNQZCWGR",
+      "provisional": false,
+      "rating": 4.0,
       "ref": "p3",
-      "search_key": "鼻毛カッター メンズ はなげカッター 男女兼用 眉毛シェーバー",
-      "selection_score": 0.325,
-      "selected_variant": "ブラック・Amazon.co.jp限定"
+      "review_count": 157,
+      "search_key": "Koizumi コイズミ フェイスシェーバー&ノーズケア 眉毛ケア USB充電式",
+      "selection_reason": "ポーチ内で刃先を覆って持ち歩きたい人向け。商品説明にキャップ付属とあり、本体は約1.6×1.7×15.4cm、約35g。鼻毛カッターと、眉用カバー・コームを備えたフェイスシェーバーのアタッチメントを使い分けられるので、旅行中に鼻と眉を整えたい人に向く。",
+      "sources": [
+        {
+          "brand": "Koizumi",
+          "excerpt": "Koizumi KLC-0851/W Face Shaver & Nose Care, Eyebrow Care, USB Rechargeable, White\nAbout this item\nSize: Width 0.6 x Depth 0.7 x Height 6.1 inches / Weight: Approx. 1.2 oz (1.6 x 1.7 x 15.4 cm / 35 g)\nCharging Time: Approx. 10 hours / Duration: Approx. 60 minutes\nUSB charging type face shaver, comes with a dedicated USB cable (body side Type C compatible)\nTwo attachments: face shaver (with eyebrow cover and eyebrow comb set) and nose hair cutter\nAttachment can be washed with water to stay clean › See more product details\nBrand Koizumi\nRecommended Uses For Product Eyebrow, Face, Nose Hair\nSpecial Feature Detachable Head, Rechargeable\nPower Source Battery Powered\nIncluded Components Mayu Com, Mayu Cover, USB Cable, Cap, Cleaning Brush\nItem Weight 0.04 Kilograms\nColor White\nBlade Material Titanium Coated\nHead Type 回転式\nBattery Description Nickel-Metal Hydride (NiMH) See more\nVisit the コイズミ(Koizumi) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Koizumi KLC-0851/W Face Shaver & Nose Care, Eyebrow Care, USB Rechargeable, White",
+          "url": "https://www.amazon.co.jp/dp/B0CNQZCWGR",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "マクセルイズミ エチケットカッター IZN-C240 K",
-      "asin": "B09KLXGMQN",
-      "brand": "マクセルイズミ",
+      "amazon_title": "鼻毛カッター 眉毛シェーバー はなげカッター メンズ レディース 1台多役 充電式 USB Type-C 電動 はな毛カッター 男性 女性 まゆげ シェーバー 眉毛カッター 防水 水洗い可能 多機能 2in1 静音 タイプc フェイスシェーバー まゆけシェーバー 耳毛 エチケットカッター 鼻毛切り 顔そり 産毛剃り 髭剃り 電動カミソリ ケア セット ヒゲ/うぶげ/かみ/ハナゲ/マユゲ/みみげ/かお/ムダ毛処理 電気 肌に優しい コンパクト 携帯便利 プレゼント 乾電池式不要",
+      "asin": "B0H9YDGYTX",
+      "brand": "ラブホーム美家",
+      "discovery_axis_id": "portable_storage",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/21iQgXjKPdL._AC_SY300_SX300_QL70_ML2_.jpg",
-      "matched_comparison_axes": [
-        "power"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/71889l3HTLL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B09KLXGMQN",
+      "product_id": "AMZ-B0H9YDGYTX",
+      "provisional": false,
+      "rating": 4.3,
       "ref": "p4",
-      "search_key": "鼻毛カッター メンズ 替刃付き USB充電式 はな毛カッター は",
-      "selection_score": 0.325,
-      "selected_variant": "ブラック"
+      "review_count": 463,
+      "search_key": "ラブホーム美家 鼻毛カッター 眉毛シェーバー はなげカッター メンズ レディース",
+      "selection_reason": "出張時に顔まわりのケア用品を一台にまとめたい人向け。商品説明では旅行・出張に持参できるコンパクトな本体とされ、鼻毛用と眉用の機能に加えて耳毛や顔の産毛にも使える。複数の専用機を荷物に入れたくない人に合う。",
+      "sources": [
+        {
+          "brand": "ラブホーム美家",
+          "excerpt": "Nose Hair Cutter, Eyebrow Shaver, Brow Cutter, Men's, Women's, Multipurpose, Rechargeable, USB Type-C Electric Hair Cutter, Men's, Women's, Eyebrow Shaver, Waterproof, Washable, Multi-functional, 2-in\nAbout this item\n2-in-1, Multi-functional Shaver, Easy to Use: This multi-functional beauty tool combines 3 functions: nose hair cutter, eyebrow shaver, and ear hair cutter. It can also be used as a face shaver or groomer. This multi-purpose device can be used for nose hair treatment, eyebrow conditioning, ear hair removal, baby hair sawing, loose hair treatment, and beard trimming. Perfect for all facial hair care, saving you the hassle of having multiple appliances. Designed for both men and women. You can easily create professional-like etiquette cutter and trimmer care at home, and it is compact enough for travel or business trips. Meets Japanese high quality standards for durability and ease of use. The precision blade design prevents pain and skin irritation, allowing for safe and comfortable hair treatment. This single device makes daily etiquette care easy\nType C Rechargeable, Electric Design, Long Use Time, Low Noise Design: The USB rechargeable electric nose hair cutter (can also be used as an electric razor or electric shaver) has a long-lasting battery that can be used for up to 2 months on a single charge. It is rechargeable, so there is no need to replace batteries like conventional battery-powered or dry-cell battery types. It is economical and environmentally friendly. Power-saving design ensures better battery life and a shorter charging time. No need to bother with frequent charging. Cordless design makes it easy to use and can be used anywhere. Since it is motorized, it saves effort compared to manual types, and allows for precision cutting. Quiet design (low noise) reduces noise during use, so you don't have to worry about disturbing your surroundings. With a charging status indicator for added convenience. It has a battery capacity suitable for long trips. Note: The USB Type-C cable is included, but the charging adapter (outlet plug) is not included. Charge from your smartphone charger or computer USB port\n【Waterproof・Can be washed with water・Easy to clean】The body is waterproof designed (compliant with IPX5) and can be washed with water and cleaned, so it can be easily cleaned with water after use to maintain hygiene. It can also be used during a shower or at the washbasin, providing a clean usage environment. The blade is detachable and designed for easy cleaning. It uses antibacterial treated material to suppress the proliferation of bacteria, allowing for safe and hygienic use. It also comes with a replacement blade, allowing for economical use over a long period. It is designed to be durable and resistant to water damage, ensuring it withstands long-term use. It is easy to clean, so it can be used in a clean state every time.【Note】This product is IPX5 waterproof rated and can be washed with water, but do not leave it submerged in water for a long time or sink it in a bathtub or washbasin\n【SAFE DESIGN AND HIGH QUALITY・GENTLE ON SKIN AND PAINLESS】With a precise blade tip design, it gently cuts hair while taking care not to cause skin irritation. It is made with skin-friendly materials, so it can be used safely even by those with sensitive skin. Made from high-quality metal materials, it offers durability that withstands long-term use. The safety design prevents injuries during use. This is a reliable product that meets Japanese quality standards. Blade replacement is easy, allowing for economical long-term use. A one-year quality warranty period is provided, so you can purchase with confidence\n【Compact, Lightweight, Portable and Convenient】With a lightweight and compact design, it is portable and easy to carry, saving storage space. It allows for easy grooming on the go, whether you're traveling, commuting, or at the gym. Ergonomic grip design ensures a non-slip and stable hold. Simple one-touch button operation makes it easy for the elderly to use. Unisex design, suitable for both men and women. Combines design and quality, making it an ideal gift choice. Reliable quality for long-term use. The design is unobtrusive, suitable for placement in the bathroom or washroom. Comes with a full set of accessories, ready for immediate use after purchase\n【AFTER-SALE SERVICE・12-Month Product Warranty】This product undergoes strict quality inspections before shipment. However, if any issues arise, you can contact us anytime via email. Even after purchase, we offer prompt and meticulous customer support to ensure you can use the product with confidence. We strive to provide products and services that will satisfy our customers. *Please be sure to charge for at least 30 minutes before use › See more product details\nRecommended Uses For Product Ear, Eyebrows, Face, Mustache, Nose\nColor Pink\nItem Weight 47 Grams\nBrand ラブホーム美家\nPower Source Battery Powered\nMaterial Acrylonitrile Butadiene Styrene Stainless Steel Aluminum Metal\nSpecial Feature Charge Indicator Light, Detachable Head, Low Noise, USB Charging, Waterproof\nItem dimensions L x W x H 12.9 x 1.8 x 1.8 cm\nBlade Material Stainless Steel\nTarget Audience Men, Unisex-Adults, Unisex-Kids, Unisex-Youth, Women See more\nVisit the ラブホーム美家 Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Nose Hair Cutter, Eyebrow Shaver, Brow Cutter, Men's, Women's, Multipurpose, Rechargeable, USB Type-C Electric Hair Cutter, Men's, Women's, Eyebrow Shaver, Waterproof, Washable, Multi-functional, 2-in",
+          "url": "https://www.amazon.co.jp/dp/B0H9YDGYTX?th=1",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "コイズミ ノーズエチケットトリマー メンズビューティブラック KMC-0370/K",
-      "asin": "B01N5CAOZA",
-      "brand": "コイズミ",
+      "amazon_title": "【乾電池式】パナソニック 鼻毛カッター 【Amazon.co.jp限定】 エチケットカッター 眉毛 ヒゲ 水洗い 父の日 ER-NGND2-W",
+      "asin": "B0CY49J96C",
+      "brand": "Panasonic",
+      "discovery_axis_id": "power_on_the_go",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51ETrxU3KRL._AC_SX300_SY300_QL70_ML2_.jpg",
-      "matched_comparison_axes": [
-        "power"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/61HDMNXbSOL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B01N5CAOZA",
+      "product_id": "AMZ-B0CY49J96C",
+      "provisional": false,
+      "rating": 4.2,
       "ref": "p5",
-      "search_key": "鼻毛カッター メンズ 替刃付き USB充電式 LCD画面 1台多",
-      "selection_score": 0.325,
-      "selected_variant": "ブラック"
+      "review_count": 965,
+      "search_key": "Panasonic パナソニック 鼻毛カッター エチケットカッター 眉毛 ヒゲ 水洗",
+      "selection_reason": "充電を待てない旅先で乾電池式を使いたい人向け。商品説明に乾電池式とあり、鼻毛に加えて眉・ヒゲ・耳にも対応する。上と側面の二方向に刃を備え、刃の精密加工は国内で行うと記載されており、外出先でも顔まわりを一台で整えたい人に向く。",
+      "sources": [
+        {
+          "brand": "Panasonic",
+          "excerpt": "Panasonic ER-NGND2-W Nose Hair Cutter (Amazon.co.jp Exclusive) Etiquette Cutter Eyebrow Mustache Washable Father's Day\nAbout this item\nA multi-purpose etiquette cutter that can be used not only for your nose hair, but also for a mail, mustache, and ears\nBattery operated\nUses environmentally friendly packaging\nThe edge of the blade is attached in two directions to the top and sides so it cuts not only hairs on the sides but also on the back of the nose\nPrecision processing that affects the sharpness of the blade is carried out in Japan › See more product details\nRecommended Uses For Product Beard, Ear, Eyebrows, Nose\nColor White\nItem Weight 62 Grams\nBrand Panasonic\nSpecial Feature Multigroomer\nItem dimensions L x W x H 35 x 29 x 144 mm\nBlade Material Metal\nTarget Audience Men\nBatteries Required? Yes\nModel Name Etiquette Cutter See more",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Panasonic ER-NGND2-W Nose Hair Cutter (Amazon.co.jp Exclusive) Etiquette Cutter Eyebrow Mustache Washable Father's Day",
+          "url": "https://www.amazon.co.jp/dp/B0CY49J96C?th=1",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "コイズミ マユ&ノーズトリマー USB 充電式 眉毛カッター 鼻毛カッター メンズ チャコールグレー KMC-0731/H",
-      "asin": "B0BNMG46HG",
-      "brand": "コイズミ",
+      "amazon_title": "パナソニック 鼻毛カッター エチケットカッター メンズ 眉毛 ヒゲ 耳 ER-GN11-K",
+      "asin": "B07XTLC91J",
+      "brand": "パナソニック(Panasonic)",
+      "discovery_axis_id": "power_on_the_go",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/213-83pYzXL._AC_SY300_SX300_QL70_ML2_.jpg",
-      "matched_comparison_axes": [
-        "power"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/51c5MEuRJ8L._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B0BNMG46HG",
+      "product_id": "AMZ-B07XTLC91J",
+      "provisional": false,
+      "rating": 4.1,
       "ref": "p6",
-      "search_key": "DYKL 鼻毛カッター メンズ レディース 電動 エチケットカッ",
-      "selection_score": 0.325,
-      "selected_variant": "チャコールグレー"
+      "review_count": 21363,
+      "search_key": "パナソニック(Panasonic) パナソニック 鼻毛カッター エチケットカッター メンズ 眉毛",
+      "selection_reason": "予備の電池を荷物に入れて電源を確保したい人向け。商品説明で単3形アルカリ乾電池1本を使うと明記され、キャップを含む本体質量は電池を除いて46g。鼻・眉・ヒゲ・耳に使え、刃のみ水洗いできるため、宿泊先で手入れしながら使いたい人にも合う。",
+      "sources": [
+        {
+          "brand": "パナソニック(Panasonic)",
+          "excerpt": "パナソニック 鼻毛カッター エチケットカッター メンズ 眉毛 ヒゲ 耳 ER-GN11-K\nこの商品について\n鼻毛だけでなくマユ、ヒゲ、耳とマルチに使えるエチケットカッター\n【日本製刃】「デュアルエッジ刃」で広範囲の毛を効率的にカット\n【電源方式】乾電池\n【電源・電圧】DC1.5V(単3形アルカリ乾電池※1×1本)\n【本体質量】46g(乾電池含まず、キャップ含む)\n【生産国】日本製\n【洗浄方法】刃のみ水洗いOK\n【付属品】掃除用ブラシ › もっと見る\n製品の推奨用途 ひげ, 眉, 耳, 鼻\n色 黒\n商品の重量 0.05 キログラム\nブランド パナソニック(Panasonic)\n電源 バッテリー式\n材質 金属\n特徴 マルチグルーマー\n商品寸法 (長さx幅x高さ) 18.2 x 4.5 x 3.9 cm\nブレードの材質 金属\n対象ユーザー メンズ 表示を増やす",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "パナソニック 鼻毛カッター エチケットカッター メンズ 眉毛 ヒゲ 耳 ER-GN11-K",
+          "url": "https://www.amazon.co.jp/dp/B07XTLC91J",
+          "verified": true
+        }
+      ]
     }
   ],
   "selection": {
-    "brand_count": 0,
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B0CY3PWWTQ",
+            "reason": "定番の使い方を押さえたい人向け。商品説明では、上と側面に刃を備え、鼻の奥側の毛にも届く設計とされている。眉・ヒゲ・耳にも使え、幅32×奥行26×高さ127mm、46gの乾電池式なので、出張用の身だしなみ道具を一つにまとめたい人が用途と大きさを確認して選べる。"
+          },
+          {
+            "asin": "B0FK2LLB86",
+            "reason": "充電式を基準に選びたい人向け。商品説明では、付属のType-Cケーブルで充電でき、鼻に加えて眉・耳にも使えるとされる。本体は約12.6×2cm、約60gで、先端を外して水洗いできるため、仕事場や旅行先へ持参し、使用後の手入れもしたい人に合う。"
+          }
+        ]
+      },
+      {
+        "axis_id": "portable_storage",
+        "products": [
+          {
+            "asin": "B0CNQZCWGR",
+            "reason": "ポーチ内で刃先を覆って持ち歩きたい人向け。商品説明にキャップ付属とあり、本体は約1.6×1.7×15.4cm、約35g。鼻毛カッターと、眉用カバー・コームを備えたフェイスシェーバーのアタッチメントを使い分けられるので、旅行中に鼻と眉を整えたい人に向く。"
+          },
+          {
+            "asin": "B0H9YDGYTX",
+            "reason": "出張時に顔まわりのケア用品を一台にまとめたい人向け。商品説明では旅行・出張に持参できるコンパクトな本体とされ、鼻毛用と眉用の機能に加えて耳毛や顔の産毛にも使える。複数の専用機を荷物に入れたくない人に合う。"
+          }
+        ]
+      },
+      {
+        "axis_id": "power_on_the_go",
+        "products": [
+          {
+            "asin": "B0CY49J96C",
+            "reason": "充電を待てない旅先で乾電池式を使いたい人向け。商品説明に乾電池式とあり、鼻毛に加えて眉・ヒゲ・耳にも対応する。上と側面の二方向に刃を備え、刃の精密加工は国内で行うと記載されており、外出先でも顔まわりを一台で整えたい人に向く。"
+          },
+          {
+            "asin": "B07XTLC91J",
+            "reason": "予備の電池を荷物に入れて電源を確保したい人向け。商品説明で単3形アルカリ乾電池1本を使うと明記され、キャップを含む本体質量は電池を除いて46g。鼻・眉・ヒゲ・耳に使え、刃のみ水洗いできるため、宿泊先で手入れしながら使いたい人にも合う。"
+          }
+        ]
+      }
+    ],
+    "brand_count": 5,
+    "candidate_count": 23,
     "comparison_axes_covered": [
-      "power"
+      "portable_storage"
     ],
     "content_duplicates_removed": [],
-    "price_used_as_constraint_only": true
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": []
   },
   "slug": "electric-nose-hair-trimmers-comparison"
 }
