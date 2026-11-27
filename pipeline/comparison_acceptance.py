@@ -291,7 +291,65 @@ def make_receipt(evidence, review, metadata, payload=None, *, reviewer='independ
             'review': review, 'metadata': metadata}
 
 
+# An authorized human text edit is not a new independent QA verdict.
+HUMAN_EDIT_REVIEWER = 'human_approved_text_edit'
+TEXT_EDIT_FIELDS = ('h1', 'lead', 'summary', 'how_to_choose', 'conclusion')
+GROUP_EDIT_FIELDS = ('title', 'angle')
+PRODUCT_EDIT_FIELDS = ('h3', 'description')
+
+
+def edit_structure(payload):
+    from payload_schema import validate_payload
+    validate_payload(payload)
+    return {**{k:v for k,v in payload.items() if k not in TEXT_EDIT_FIELDS + ('comparison_groups','products')},
+            'comparison_groups': [{k:v for k,v in row.items() if k not in GROUP_EDIT_FIELDS} for row in payload['comparison_groups']],
+            'products': [{k:v for k,v in row.items() if k not in PRODUCT_EDIT_FIELDS} for row in payload['products']]}
+
+
+def human_edit_receipt(original, payload, evidence, marker, approval):
+    if edit_structure(original) != edit_structure(payload):
+        raise ValueError('approved edit changed non-text article structure')
+    receipt = {'contract_version': VERSION, 'reviewer': HUMAN_EDIT_REVIEWER,
+               'evidence_sha256': digest(evidence_content(evidence)), 'payload_sha256': digest(payload),
+               'product_acceptance_sha256': digest(evidence.get('product_acceptance')),
+               'original_structure_sha256': digest(edit_structure(original)),
+               'edit_marker': marker, 'chat_approval': approval}
+    if marker.get('original_sha256') != digest(original):
+        raise ValueError('original edit identity changed')
+    require_acceptance(payload, evidence, receipt)
+    return receipt
+
+
+def human_edit_issues(receipt, evidence, payload):
+    from chat_publish_approval import approval_issues
+    marker = receipt.get('edit_marker') or {}
+    approval = receipt.get('chat_approval') or {}
+    try:
+        if (payload is None or receipt.get('contract_version') != VERSION
+                or receipt.get('payload_sha256') != digest(payload)
+                or receipt.get('evidence_sha256') != digest(evidence_content(evidence))
+                or receipt.get('product_acceptance_sha256') != digest(evidence.get('product_acceptance'))
+                or receipt.get('original_structure_sha256') != digest(edit_structure(payload))
+                or marker.get('schema') != 'sellemy-ceo-edited-approval/v1'
+                or marker.get('approved') is not True
+                or marker.get('reviewer_role') not in ('ceo','coo')
+                or marker.get('approved_sha256') != digest(payload)
+                or marker.get('evidence_sha256') != digest(evidence_content(evidence))):
+            return ['human edit authorization stale or invalid']
+        if (approval.get('reviewer_role') or 'ceo') != marker['reviewer_role']:
+            return ['human edit reviewer mismatch']
+        return approval_issues(approval, payload=payload, evidence=evidence)
+    except (ValueError, KeyError, TypeError, AttributeError):
+        return ['invalid human edit authorization']
+
+
+def is_human_edit_receipt(receipt):
+    return isinstance(receipt, dict) and receipt.get('reviewer') == HUMAN_EDIT_REVIEWER
+
+
 def receipt_issues(receipt, evidence, payload=None):
+    if is_human_edit_receipt(receipt):
+        return human_edit_issues(receipt, evidence, payload)
     if not isinstance(receipt, dict):
         return ['independent acceptance missing']
     if (receipt.get('contract_version') != VERSION
