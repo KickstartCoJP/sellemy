@@ -1,0 +1,116 @@
+{
+  "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+  "evidence_sha256": "7f4b3339418515b84aca0ecc1c6c9a14d5ff3da22a1a69b61a1164fe16974408",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 11520,
+    "input_tokens": 24919,
+    "listing_identity_citations_repaired": [
+      "p3",
+      "p5"
+    ],
+    "member_binding_revision": 4,
+    "output_tokens": 1478,
+    "reasoning_effort": "medium",
+    "reasoning_output_tokens": 516,
+    "reused_product_qa": true,
+    "session_id": "01a219a8-fde2-7a20-9c1d-362be46e90ac",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "7cce5ad874f8a3b6b59c05cdd2b5f01f4c47bc28329b7434a3971600b239a11f",
+  "review": {
+    "buying_guidance": false,
+    "claims_grounded": false,
+    "complete_comparison": false,
+    "distinct_products": true,
+    "duplicate_pair_checks": [],
+    "editorial_voice_appropriate": false,
+    "internal_qa_leak_absent": false,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "Fitty 7Days Mask EX Plus",
+        "identity_quote": "Fitty 7Days Mask EX Plus, 60 Pieces, White, Regular Size\nAbout this item",
+        "reason": "The verified excerpt identifies this mask and states that it has a nose fitter, pleated construction and wide ear rubber. These facts support an everyday-mask introduction. Its conflicting wrapping fields should not be used as a product claim.",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "by Amazon Japanese Masks Regular Size",
+        "identity_quote": "By Amazon Japanese Masks Regular Size, 100 Sheets (50 Sheets x 2 Pack)",
+        "reason": "The verified listing identifies a regular-size mask and states a three-layer construction and 8 mm ear straps. The stated pack size supports a routine-replenishment introduction.",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "nose_fit_structure",
+            "quote": "Uses an aluminum nose piece for a perfect fit"
+          }
+        ],
+        "identity_key": "Medicom Japan Non-Woven Fabric Mask Class Medical Relax Large Capacity White 50 Pieces Nor",
+        "identity_quote": "Medicom Japan Non-Woven Fabric Mask Class Medical Relax Large Capacity White 50 Pieces Normal Size Disposable Medical Ear Pain Prevention Pollen PM2.5 JMK218814",
+        "reason": "The verified excerpt identifies a model-specific mask and states that it uses an aluminum nose piece and pleats that open vertically. These features support the nose-fit grouping without proving superior fit.",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "nose_fit_structure",
+            "quote": "Nose Fitter: Polyethylene"
+          }
+        ],
+        "identity_key": "Iris Ohyama RK-F30SW 3D Mask",
+        "identity_quote": "Iris Ohyama RK-F30SW 3D Mask, White, Regular Size, Individually Packaged, Non-Woven Mask, Does Not Hurt Your Ears",
+        "reason": "The verified listing identifies the RK-F30SW 3D mask and states that its nose fitter is polyethylene. It fits the nose-structure group without requiring a comfort or superiority claim.",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "ear_loop_structure",
+            "quote": "15mm平ゴム"
+          }
+        ],
+        "identity_key": "[Brodio] 【15mm幅広な耳紐】不織布マスク 耳痛くならない 個包装 ふつうサイズ 15mm平ゴム 息がしやすい 三層構造不織布 日本国内検品 通気性 肌にやさしい 飛沫対",
+        "identity_quote": "[Brodio] 【15mm幅広な耳紐】不織布マスク 耳痛くならない 個包装 ふつうサイズ 15mm平ゴム 息がしやすい 三層構造不織布 日本国内検品 通気性 肌にやさしい 飛沫対策 花粉用 プリーツ型マスク 不織布 男女兼用 マスク",
+        "reason": "The verified listing title identifies a pleated mask with 15 mm flat ear straps and individual wrapping. The stated strap structure supports the ear-loop group; pain relief and breathability wording do not establish performance.",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "ear_loop_structure",
+            "quote": "Adopts approximately 0.24 inches (6 mm) wide flat elastic"
+          }
+        ],
+        "identity_key": "Hasegawa Menkou Ear-Friendly Surgical Masks",
+        "identity_quote": "Hasegawa Menkou Ear-Friendly Surgical Masks Non-Woven 6.9 inches JIS Standard Ear Strap 0.24 inches Medium to Large Regular Size (100 pieces)",
+        "reason": "The verified listing identifies a surgical mask and states that it uses approximately 6 mm wide flat elastic ear straps. That structure supports its ear-loop grouping without relying on a claim that it prevents discomfort.",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reader_decision_outsourcing_absent": false,
+    "reason": "Evidence-only review. The six verified listing excerpts identify relevant masks from distinct product lines, with no affirmative evidence of duplication. Each has enough stated facts for a concise introduction in its assigned editorial group. No article was supplied, so article-only judgments are false.",
+    "recommendation_conclusion": false,
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}
