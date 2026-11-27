@@ -4,254 +4,320 @@
   "category": "beauty",
   "comparison_axes": [
     {
-      "id": "foundation_compatibility",
+      "id": "popular",
       "keywords": [
-        "リキッド",
-        "パウダー",
-        "水あり・水なし"
+        "人気"
       ],
-      "label": "対応するファンデーションと使用条件"
+      "label": "人気・定番の基準"
     },
     {
-      "id": "shape",
+      "id": "portable_flat",
       "keywords": [
-        "平面",
-        "先端",
-        "厚み"
+        "薄型",
+        "小型",
+        "携帯",
+        "化粧直し"
       ],
-      "label": "広い面と細部に使う形"
+      "label": "ポーチに収めやすい薄型・小型"
     },
     {
-      "id": "care",
+      "id": "precision_tip",
       "keywords": [
-        "材質",
-        "洗い方",
-        "交換目安"
+        "角型",
+        "先端形状",
+        "小鼻",
+        "部分直し"
       ],
-      "label": "素材と洗浄・交換の条件"
+      "label": "小鼻や目元に当てやすい角・先端形状"
     }
   ],
   "eyecatch_image": "https://www.sellemy.jp/img/foundation-makeup-sponges/foundation-makeup-sponges.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "15f7d3b399cea91c286b418bd70a6e71db1d772956ab14933bca4116d0bdc82f",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 24485,
+      "listing_identity_citations_repaired": [
+        "p3"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 1958,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 917,
+      "session_id": "01a21d34-4e56-7a81-b10e-414191d686fe",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "Customer Reviews\n4.6 4.6 out of 5 stars\n(1,455)"
+            }
+          ],
+          "identity_key": "ロージーローザ マルチファンデパフ",
+          "identity_quote": "Rosy Rosa Multi-Foundation Puff 2P (Makeup Puff Compatible with All Foundations)",
+          "reason": "確認済みのAmazon商品掲載（https://www.amazon.co.jp/dp/B0CJTV9CHY）に商品名、寸法、評価件数がある。ファンデーション用パフとして識別でき、人気・定番の切り口で紹介できる。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "ロージーローザ バリュースポンジN ハウス型タイプS",
+          "identity_quote": "",
+          "reason": "提示された商品掲載タイトルに商品系列とハウス型タイプSの形状名があり、ファンデーション用スポンジとして識別できる。寸法や詳しい使い方は確認済み資料にないため、具体的な仕様としては扱わない。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "portable_flat",
+              "quote": "Product Dimensions\n‎0.7 x 7.5 x 5.4 cm; 20 g"
+            }
+          ],
+          "identity_key": "ロージーローザ マルチファンデパフ2P<スリム> ROSY ROSA",
+          "identity_quote": "ロージーローザ マルチファンデパフ2P<スリム> ROSY ROSA",
+          "reason": "確認済みのAmazon商品掲載（https://www.amazon.co.jp/dp/B0F377HKPT）の表題に「(Slim)」があり、同じ掲載文の寸法は厚さ0.7cmを示す。薄型の切り口に合い、p1の掲載寸法とも異なる。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "カバーマーク ファンデーション スポンジF",
+          "identity_quote": "COVERMARK Foundation Sponge F (Floless Fit Sponge)",
+          "reason": "確認済みのAmazon商品掲載（https://www.amazon.co.jp/dp/B0071472M2）の表題から、特定のファンデーション向けスポンジとして識別できる。持ち歩き時の寸法や収納性は確認済み資料にないため、具体的な携帯性能は主張できない。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "ロージーローザ バリュースポンジN ウェッジ型タイプ",
+          "identity_quote": "",
+          "reason": "提示された商品掲載タイトルに商品系列とウェッジ型の形状名があり、角・先端形状の切り口に合う。p2のハウス型とは形状名が異なる。寸法や使い心地は確認済み資料にない。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "シャロン ファンデーション用スポンジ 80-517 菱形W",
+          "identity_quote": "",
+          "reason": "提示された商品掲載タイトルにブランド、型番、菱形の形状名があり、ファンデーション用スポンジとして識別できる。角のある形状という切り口に合う。素材・寸法・使い心地は確認済み資料にない。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "記事本文のない根拠情報のみの審査。6件は商品掲載名からそれぞれ識別でき、ファンデーション用パフ・スポンジとして3つの紹介切り口に各2件を配置できる。p1とp3は通常型とスリム型、p2とp5はハウス型とウェッジ型として示され、色や数量だけの違いによる重複を示す積極的な証拠はない。取得できていない任意仕様は未確認として扱う。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
   "products": [
     {
-      "amazon_title": "Shiseido 資生堂スポンジパフ アーティストタッチ(乳化タイプ用) 119 1個入り",
-      "asin": "B0089TJR3A",
-      "brand": "資生堂",
+      "amazon_title": "ロージーローザ マルチファンデパフ2P【全ファンデーション対応メイクパフ】ROSY ROSA",
+      "asin": "B0CJTV9CHY",
+      "brand": "",
+      "discovery_axis_id": "popular",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/41HODGfLUHL._AC_SY300_SX300_QL70_ML2_.jpg",
-      "matched_comparison_axes": [
-        "foundation_compatibility"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/518OZkIdzzL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B0089TJR3A",
+      "product_id": "AMZ-B0CJTV9CHY",
+      "provisional": false,
+      "rating": 4.6,
       "ref": "p1",
-      "search_key": "ファンデーションスポンジ スポンジパフ ダイヤ形 25P 水あり",
-      "selection_score": 0.49,
-      "selected_variant": {
-        "current_selection_text": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. サイズ: 1個 (x 1) サイズの選択ができます 1個 (x 1) 1個 (x 2) おすすめ出品がない0オプションを見る ← 1 →",
-        "overview": "ブランド Shiseido 色 ベージュ 材質 スポンジ 形状 円形 商品の個数 1 GTIN (Global Trade Identification Number) 04901872267248 メーカー 資生堂ジャパン (SHISEIDO JAPAN) ユニット数 1 個 商品の重量 0.01 キログラム 表示を増やす",
-        "selected_detail_fields": [
-          {
-            "field": "色",
-            "value": "色 ベージュ"
-          },
-          {
-            "field": "商品の個数",
-            "value": "商品の個数 1"
-          },
-          {
-            "field": "ユニット数",
-            "value": "ユニット数 1 個"
-          },
-          {
-            "field": "ユニット数",
-            "value": "ユニット数 1 個"
-          }
-        ]
-      }
+      "review_count": 1455,
+      "search_key": "ロージーローザ マルチファンデパフ2P ROSY ROSA",
+      "selection_reason": "頬の毛穴や色ムラが気になる部分を外出先で直したい人に。直径約59mm・厚さ約17mmのふかふかした丸い面でファンデーションを軽くたたき込める。メーカーは化粧直しへの使用と各種ファンデーションへの対応を案内し、LIPSベストコスメ2024のパフ・スポンジ部門受賞も公表している。出典：https://www.chantilly.co.jp/brand/rosyrosa/products/4901604457077/ https://www.chantilly.co.jp/brand/rosyrosa/topics/20241203/",
+      "sources": [
+        {
+          "brand": "",
+          "excerpt": "Rosy Rosa Multi-Foundation Puff 2P (Makeup Puff Compatible with All Foundations)\nA Makeup Puff Compatible with All Foundations! Smooth texture, ultra-rich thickness for pore coverage and skin adhesion › See more product details\nASIN B0CJTV9CHY\nCustomer Reviews\n4.6 4.6 out of 5 stars\n(1,455)\n4.6 out of 5 stars\nAmazon Bestseller\n#601 in Beauty (See Top 100 in Beauty)\n#2 in Makeup Blenders & Sponges\nDate First Available September 26, 2023\nProduct Dimensions\n‎5.9 x 5.9 x 1.7 cm; 10 g\nFlavor\n‎Makeup puff compatible with all foundations\nSkin Type\n‎All Skin Material:\nColor Name\n‎Black\nSize Name\n‎2個 (x 1)\nVisit the ロージーローザ Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Rosy Rosa Multi-Foundation Puff 2P (Makeup Puff Compatible with All Foundations)",
+          "url": "https://www.amazon.co.jp/dp/B0CJTV9CHY",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "ロージーローザ ジェリータッチスポンジ ハウス型 6個入 ベージュ",
-      "asin": "B01MS3MLB7",
-      "brand": "ロージーローザ",
+      "amazon_title": "ロージーローザ バリュースポンジN ハウス型タイプS30P ピンク",
+      "asin": "B0146F7BBU",
+      "brand": "",
+      "discovery_axis_id": "popular",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51lSPGjm+hL._AC_SY300_SX300_QL70_ML2_.jpg",
-      "matched_comparison_axes": [],
+      "image_url": "https://m.media-amazon.com/images/I/51iBdYe7MLL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B01MS3MLB7",
+      "product_id": "AMZ-B0146F7BBU",
+      "provisional": true,
+      "rating": 4.3,
       "ref": "p2",
-      "search_key": "パフ メイクスポンジ 3個セット 全ファンデーション対応 マルチ",
-      "selection_score": 0.31,
-      "selected_variant": {
-        "current_selection_text": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. サイズ: 6個 (x 1) サイズの選択ができます 6個 (x 1) 6個 (x 2) おすすめ出品がない0オプションを見る ← 1 →",
-        "overview": "ブランド ロージーローザ 色 レッド 材質 ゴム 製品の推奨用途 フェイスメイク 形状 長方形 商品の個数 6 メーカー ロージーローザ ユニット数 1 個 表示を増やす",
-        "selected_detail_fields": [
-          {
-            "field": "色",
-            "value": "色 レッド"
-          },
-          {
-            "field": "商品の個数",
-            "value": "商品の個数 6"
-          },
-          {
-            "field": "ユニット数",
-            "value": "ユニット数 1 個"
-          },
-          {
-            "field": "ユニット数",
-            "value": "ユニット数 1 個"
-          }
-        ]
-      }
+      "review_count": 1775,
+      "search_key": "ロージーローザ バリュースポンジN ハウス型タイプS30P ピン",
+      "selection_reason": "頬の広い部分と小鼻まわりを、１つのスポンジの面と角で直したい人に。約40×20mm・厚さ約25mmのハウス型は、メーカーが『ベースからポイント使いまで』に使えると説明する定番形状。30個入りなので、ポーチには使う分だけ取り分けられる。出典：https://www.chantilly.co.jp/brand/rosyrosa/products/4901604455226/",
+      "sources": []
     },
     {
-      "amazon_title": "貝印 ファンデーションが染みこみにくいパフ ひし形 2層構造 パウダー リキッド 自然な仕上がり KQ3248",
-      "asin": "B0BYSCWHRB",
-      "brand": "貝印",
+      "amazon_title": "ロージーローザ マルチファンデパフ2P<スリム> ROSY ROSA",
+      "asin": "B0F377HKPT",
+      "brand": "",
+      "discovery_axis_id": "portable_flat",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61pvhkyoMEL._AC_SL1500_.jpg",
-      "matched_comparison_axes": [
-        "foundation_compatibility"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/51bqls0qwZL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B0BYSCWHRB",
+      "product_id": "AMZ-B0F377HKPT",
+      "provisional": false,
+      "rating": 4.4,
       "ref": "p3",
-      "search_key": "貝印 ファンデーションスポンジ きめ細やか SBR スクエア 2",
-      "selection_score": 0.31,
-      "selected_variant": {
-        "model_number": "KQ3248",
-        "colour": "ベージュ",
-        "shape": "ひし形",
-        "style": "厚型",
-        "quantity": 1
-      }
+      "review_count": 223,
+      "search_key": "ロージーローザ マルチファンデパフ2P<スリム> ROSY RO",
+      "selection_reason": "薄いパフをポーチや丸型コンパクトに収め、頬と小鼻を直したい人に。厚さ約7mmのしずく型で、メーカーは丸い部分を頬、先端を小鼻まわりに使えると案内する。化粧直しでは余分なファンデーションを軽くたたき込んでなじませる使い方が示されている。出典：https://www.chantilly.co.jp/brand/rosyrosa/products/4901604457732/ https://www.chantilly.co.jp/brand/rosyrosa/topics/20250316/",
+      "sources": [
+        {
+          "brand": "",
+          "excerpt": "Rosy Rosa Multi Fun Depuff 2P (Slim) Rosy Rosa\nMakeup puff for all foundations! Smooth texture covers pores and uneven colors › See more product details\nASIN B0F377HKPT\nCustomer Reviews\n4.4 4.4 out of 5 stars\n(223)\n4.4 out of 5 stars\nAmazon Bestseller\n#2,664 in Beauty (See Top 100 in Beauty)\n#11 in Makeup Blenders & Sponges\nDate First Available March 31, 2025\nProduct Dimensions\n‎0.7 x 7.5 x 5.4 cm; 20 g\nFlavor\n‎Makeup Puff Compatible with All Foundation (Slim)\nColor Name\n‎Black\nVisit the ロージーローザ Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Rosy Rosa Multi Fun Depuff 2P (Slim) Rosy Rosa",
+          "url": "https://www.amazon.co.jp/dp/B0F377HKPT",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "REAL TECHNIQUES ミラクルコンプレクションスポンジ 1個入り",
-      "asin": "B00EUBPHR6",
-      "brand": "Real Techniques",
+      "amazon_title": "COVERMARK (カバーマーク)　ファンデーション スポンジ Ｆ (フローレス フィット専用 スポンジ)",
+      "asin": "B0071472M2",
+      "brand": "",
+      "discovery_axis_id": "portable_flat",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71-gXRUepFL._AC_SL1500_.jpg",
-      "matched_comparison_axes": [],
+      "image_url": "https://m.media-amazon.com/images/I/71ICN-MvknL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B00EUBPHR6",
+      "product_id": "AMZ-B0071472M2",
+      "provisional": false,
+      "rating": 4.2,
       "ref": "p4",
-      "search_key": "メイクスポンジ 2個セット 非ラテックス 水あり水なし対応 しず",
-      "selection_score": 0.31,
-      "selected_variant": {
-        "current_selection_text": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. サイズ: コンプレクションスポンジ サイズの選択ができます コンプレクションスポンジ ミラクルパウダースポンジ おすすめ出品がない0オプションを見る ← 1 →",
-        "overview": "ブランド Real Techniques 色 なし 材質 ラテックスフリー 商品寸法 (長さx幅x高さ) 6.7 x 4.1 x 10 cm 形状 ドロップ型 商品の個数 1 GTIN (Global Trade Identification Number) 00079625915662 UPC 793379157627 640791705472 077345080011 079625014266 789542699636 755332547852 785479226440 604104819461 678213675386 885150674833 884846619899 079625100471 787734770583 783327117230 787734329965 600682953108 079625915662 796433500735 784179615721 701421372652 714833846277 709102213294 787734794558 072671080230 729161819992 889583749069 754495502845 754495056997 885925651137 798813007971 737003260048 709102094893 801733035495 787734717434 767578451756 885793159162 表示を増やす パッケージサイズ名 個 メーカー Real Techniques 表示を増やす",
-        "selected_detail_fields": [
-          {
-            "field": "色",
-            "value": "色 なし"
-          },
-          {
-            "field": "商品の個数",
-            "value": "商品の個数 1"
-          },
-          {
-            "field": "パッケージサイズ名",
-            "value": "パッケージサイズ名 個"
-          },
-          {
-            "field": "パッケージサイズ名",
-            "value": "パッケージサイズ名 個"
-          },
-          {
-            "field": "ユニット数",
-            "value": "ユニット数 1 個"
-          },
-          {
-            "field": "商品本体サイズ",
-            "value": "商品本体サイズ 6.7 x 4.1 x 10 cm"
-          }
-        ]
-      }
+      "review_count": 582,
+      "search_key": "COVERMARK (カバーマーク) ファンデーション スポンジ",
+      "selection_reason": "フローレス フィットを使い、スポンジをファンデーションのコンパクトと一緒に持ち歩きたい人に。専用ケースにはスポンジが付属し、本品はその交換用として購入できる。メーカーは専用スポンジで気になる箇所にトントンと重ねる使い方を案内している。出典：https://www.covermark.co.jp/shop/g/g4935059110843/ https://www.covermark.co.jp/shop/g/g4935059110751/ https://www.covermark.co.jp/shop/pages/ff_faq.aspx",
+      "sources": [
+        {
+          "brand": "",
+          "excerpt": "COVERMARK Foundation Sponge F (Floless Fit Sponge)\nAbout this item\nWeight: 0.2 oz (5 Show More",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "COVERMARK Foundation Sponge F (Floless Fit Sponge)",
+          "url": "https://www.amazon.co.jp/dp/B0071472M2",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "SIXPLUS シックスプラス 多機能メイク用スポンジパフ 化粧スポンジ ドロップ型 メイクアップスポンジ 斜めカット 乾湿兼用 柔らかいメイク道具 ふわふわ化粧パフ メイクパフ(ブラック)",
-      "asin": "B01N6IERJ3",
-      "brand": "SIXPLUS",
+      "amazon_title": "ロージーローザ バリュースポンジN ウェッジ型タイプ 30P 【目元や小鼻の周りなどのポイントカバー使いに】",
+      "asin": "B0146F718S",
+      "brand": "",
+      "discovery_axis_id": "precision_tip",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/512irytIeIL._AC_SL1017_.jpg",
-      "matched_comparison_axes": [
-        "foundation_compatibility"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/61-gooWdVZL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B01N6IERJ3",
+      "product_id": "AMZ-B0146F718S",
+      "provisional": true,
+      "rating": 4.4,
       "ref": "p5",
-      "search_key": "貝印 ファンデーションスポンジ きめ細やか SBR スクエアスリ",
-      "selection_score": 0.31,
-      "selected_variant": {
-        "colour": "ブラック",
-        "shape": "斜めカットのドロップ型",
-        "quantity": 1,
-        "use": "乾湿両用"
-      }
+      "review_count": 623,
+      "search_key": "ロージーローザ バリュースポンジN ウェッジ型タイプ 30P",
+      "selection_reason": "小鼻の脇や目元の色ムラだけを狙って直したい人に。約50×25mm・厚さ約20mmのウェッジ型には小さな角が複数あり、メーカーは小鼻・目元へのフィットと、角でコンシーラーを軽くたたいてなじませる使い方を明記している。30個入りから１個を持ち出せる。出典：https://www.chantilly.co.jp/brand/rosyrosa/products/4901604455219/",
+      "sources": []
     },
     {
-      "amazon_title": "【公式】＆be (アンドビー) ブラックスポンジ pro ブラック【リニューアル】 / ファンデスポンジ しずく型 密着 崩れない",
-      "asin": "B0DJNNT83Y",
-      "brand": "&be",
+      "amazon_title": "シャロン ファンデーション用スポンジ 80-517 菱形W（4個入り）",
+      "asin": "B089SRG47S",
+      "brand": "",
+      "discovery_axis_id": "precision_tip",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61IxcVO5p9L._AC_SL1200_.jpg",
-      "matched_comparison_axes": [
-        "foundation_compatibility"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/11J1BZTVhhL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B0DJNNT83Y",
+      "product_id": "AMZ-B089SRG47S",
+      "provisional": true,
+      "rating": 4.3,
       "ref": "p6",
-      "search_key": "by Amazon メイク用スポンジ ハウス型 50個入り 大容",
-      "selection_score": 0.31,
-      "selected_variant": {
-        "current_selection_text": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. 色: ブラック 色の選択ができます 利用可能なオプションを表示 おすすめ出品がない0オプションを見る ← 1 → サイズ: 1個 サイズの選択ができます 1個 2個 3個",
-        "overview": "ブランド &be(アンドビー) 色 ブラック 商品寸法 (長さx幅x高さ) 43 x 42 x 87 mm 商品の個数 1 メーカー &be(アンドビー) ユニット数 1.0 個",
-        "selected_detail_fields": [
-          {
-            "field": "色",
-            "value": "色 ブラック"
-          },
-          {
-            "field": "商品の個数",
-            "value": "商品の個数 1"
-          },
-          {
-            "field": "ユニット数",
-            "value": "ユニット数 1.0 個"
-          },
-          {
-            "field": "ユニット数",
-            "value": "ユニット数 1.0 個"
-          },
-          {
-            "field": "商品本体サイズ",
-            "value": "商品本体サイズ 43 x 42 x 87 mm"
-          },
-          {
-            "field": "バリエーション",
-            "value": "バリエーション なし 2色 全2色 全3色 なし なし なし"
-          },
-          {
-            "field": "Point01",
-            "value": "Point01 スポンジやメイクブラシのお手軽\"メイク落とし\" 汗、皮脂に強く、均一に伸び広がるハイカバー薄膜 厳選した美容成分を配合 保湿力は119%に！自然由来指数92％の美容液プライマー なめらかシルキータッチのメイクキープ膜 クレヨンタイプで簡単シェーディング 自然な血色を叶える絶妙カラー"
-          },
-          {
-            "field": "Point02",
-            "value": "Point02 99%除菌効果試験済み※ウェットワイパー類の除菌性能試験結果 素肌を美しく仕上げる生マットな質感 素肌をきれいに魅せながら日焼けによるシミ・そばかすを防ぐ 肌にやさしい石けんオフ 毛穴ぼかしパウダーで毛穴レスなふんわり肌へ 顔型の悩みや顔のたるみ、むくみ、余分な肉をトータルケア 発色しすぎない上品なツヤ"
-          }
-        ]
-      }
+      "review_count": 223,
+      "search_key": "シャロン ファンデーション用スポンジ 80-517 菱形W（4個",
+      "selection_reason": "頬に当てる面も確保しつつ、鼻まわりの細部には菱形の角を使いたい人に。天然ゴム製で約71×53×25mmの厚みがある４個入り。販売店は菱形を『細かい部分が塗りやすい』形状と説明しており、広い面と角を持ち替える用途に合う。出典：https://item.rakuten.co.jp/n-yakuhin/4978732875172-1kea/",
+      "sources": []
     }
   ],
   "selection": {
-    "brand_count": 0,
-    "comparison_axes_covered": [
-      "foundation_compatibility"
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B0CJTV9CHY",
+            "reason": "頬の毛穴や色ムラが気になる部分を外出先で直したい人に。直径約59mm・厚さ約17mmのふかふかした丸い面でファンデーションを軽くたたき込める。メーカーは化粧直しへの使用と各種ファンデーションへの対応を案内し、LIPSベストコスメ2024のパフ・スポンジ部門受賞も公表している。出典：https://www.chantilly.co.jp/brand/rosyrosa/products/4901604457077/ https://www.chantilly.co.jp/brand/rosyrosa/topics/20241203/"
+          },
+          {
+            "asin": "B0146F7BBU",
+            "reason": "頬の広い部分と小鼻まわりを、１つのスポンジの面と角で直したい人に。約40×20mm・厚さ約25mmのハウス型は、メーカーが『ベースからポイント使いまで』に使えると説明する定番形状。30個入りなので、ポーチには使う分だけ取り分けられる。出典：https://www.chantilly.co.jp/brand/rosyrosa/products/4901604455226/"
+          }
+        ]
+      },
+      {
+        "axis_id": "portable_flat",
+        "products": [
+          {
+            "asin": "B0F377HKPT",
+            "reason": "薄いパフをポーチや丸型コンパクトに収め、頬と小鼻を直したい人に。厚さ約7mmのしずく型で、メーカーは丸い部分を頬、先端を小鼻まわりに使えると案内する。化粧直しでは余分なファンデーションを軽くたたき込んでなじませる使い方が示されている。出典：https://www.chantilly.co.jp/brand/rosyrosa/products/4901604457732/ https://www.chantilly.co.jp/brand/rosyrosa/topics/20250316/"
+          },
+          {
+            "asin": "B0071472M2",
+            "reason": "フローレス フィットを使い、スポンジをファンデーションのコンパクトと一緒に持ち歩きたい人に。専用ケースにはスポンジが付属し、本品はその交換用として購入できる。メーカーは専用スポンジで気になる箇所にトントンと重ねる使い方を案内している。出典：https://www.covermark.co.jp/shop/g/g4935059110843/ https://www.covermark.co.jp/shop/g/g4935059110751/ https://www.covermark.co.jp/shop/pages/ff_faq.aspx"
+          }
+        ]
+      },
+      {
+        "axis_id": "precision_tip",
+        "products": [
+          {
+            "asin": "B0146F718S",
+            "reason": "小鼻の脇や目元の色ムラだけを狙って直したい人に。約50×25mm・厚さ約20mmのウェッジ型には小さな角が複数あり、メーカーは小鼻・目元へのフィットと、角でコンシーラーを軽くたたいてなじませる使い方を明記している。30個入りから１個を持ち出せる。出典：https://www.chantilly.co.jp/brand/rosyrosa/products/4901604455219/"
+          },
+          {
+            "asin": "B089SRG47S",
+            "reason": "頬に当てる面も確保しつつ、鼻まわりの細部には菱形の角を使いたい人に。天然ゴム製で約71×53×25mmの厚みがある４個入り。販売店は菱形を『細かい部分が塗りやすい』形状と説明しており、広い面と角を持ち替える用途に合う。出典：https://item.rakuten.co.jp/n-yakuhin/4978732875172-1kea/"
+          }
+        ]
+      }
     ],
+    "brand_count": 0,
+    "candidate_count": 21,
+    "comparison_axes_covered": [],
     "content_duplicates_removed": [],
-    "price_used_as_constraint_only": true
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": []
   },
   "slug": "foundation-makeup-sponges"
 }
