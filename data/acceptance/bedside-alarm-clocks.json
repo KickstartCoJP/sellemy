@@ -1,0 +1,109 @@
+{
+  "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+  "evidence_sha256": "817d769761fb3ab6051891077bbafbfe98e9311f9dc0bdbd72e27af4ef6e0de8",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 11520,
+    "input_tokens": 26997,
+    "listing_identity_citations_repaired": [
+      "p1",
+      "p2",
+      "p4",
+      "p5",
+      "p6"
+    ],
+    "member_binding_revision": 4,
+    "output_tokens": 2384,
+    "reasoning_effort": "medium",
+    "reasoning_output_tokens": 1299,
+    "reused_product_qa": true,
+    "session_id": "01a219f0-68e5-7092-ae23-51bc8e12e3aa",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "d218828eeb3cb1a4b038e54e8eff6f452d73af8da78a8712d5ffd09edb0fb7f0",
+  "review": {
+    "buying_guidance": false,
+    "claims_grounded": false,
+    "complete_comparison": false,
+    "distinct_products": true,
+    "duplicate_pair_checks": [],
+    "editorial_voice_appropriate": false,
+    "internal_qa_leak_absent": false,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "[絶対起きれる目覚まし]Tingu 目覚まし 振動 3段階強度調整 寝坊ゼロ 2026新登場 type-c充電式 スヌーズ機能付き 二度寝予防",
+        "identity_quote": "[絶対起きれる目覚まし]Tingu 目覚まし 振動 3段階強度調整 寝坊ゼロ 2026新登場 type-c充電式 スヌーズ機能付き 二度寝予防",
+        "reason": "[商品掲載タイトル](https://www.amazon.co.jp/dp/B0FL7F7Y3B)にTinguの振動式目覚まし時計とある。音以外の知らせ方を探す読者に紹介できる。起床効果を保証する掲載文言は根拠にしない。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "CASIO(カシオ) 目覚まし時計 置き時計 イエロー 黄色 アナログ スヌーズ ライト レトロ TQ-159-9JF",
+        "identity_quote": "CASIO(カシオ) 目覚まし時計 置き時計 イエロー 黄色 アナログ スヌーズ ライト レトロ TQ-159-9JF",
+        "reason": "[検証済みの商品掲載情報](https://www.amazon.co.jp/dp/B07KQ6DRT8)に型番、アナログ表示、電子音アラーム、スヌーズ機能が記載されている。音で知らせる枕元時計として紹介できる。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "gradual_light",
+            "quote": "起床予定時刻の少し前から朝日のような光が0-60分以内に明るさ（赤色から→暖かい光→昼色光）を強めして"
+          }
+        ],
+        "identity_key": "ecozy E60A",
+        "identity_quote": "ecozy E60A 光目覚まし時計",
+        "reason": "[検証済みの商品掲載情報](https://www.amazon.co.jp/dp/B0H1M1C49B)でE60Aと起床前に徐々に明るくなる機能を確認でき、光で知らせるグループに合う。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "gradual_light",
+            "quote": "the light will gradually brighten like a sunrise starting 5 minutes before the alarm goes off"
+          }
+        ],
+        "identity_key": "【テレビ朝日で紹介】Dreamegg 光目覚まし時計 ホワイトノイズマシン ナイトライト 29種癒し音 日の出 おしゃれ 間接照明 Sunrise 1",
+        "identity_quote": "【テレビ朝日で紹介】Dreamegg 光目覚まし時計 ホワイトノイズマシン ナイトライト 29種癒し音 日の出 おしゃれ 間接照明 Sunrise 1",
+        "reason": "[商品掲載タイトル](https://www.amazon.co.jp/dp/B0DRV32T9Y)でSunrise 1を識別でき、同商品の検証済み掲載情報でアラーム前に光が徐々に明るくなる機能を確認できる。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "ADESSO(アデッソ) 目覚まし時計 振動 強力 二度寝・寝坊防止 MY-96 電波時計 バイブレーション アラーム 音 MY-96 おしゃれ アダプター アデッソ 振動式 子供",
+        "identity_quote": "ADESSO(アデッソ) 目覚まし時計 振動 強力 二度寝・寝坊防止 MY-96 電波時計 バイブレーション アラーム 音 MY-96 おしゃれ アダプター アデッソ 振動式 子供 振動目覚まし 置き時計 ブラック",
+        "reason": "[商品掲載タイトル](https://www.amazon.co.jp/dp/B01AKWDNDS)からMY-96という振動式目覚まし時計を識別できる。振動で起床を知らせる選択肢として紹介できる。振動器の設置方法やコード長は、出典未取得のため確認済みの仕様として扱わない。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "ADESSO(アデッソ) ブルブルクラッシュ２ BB-01 第2世代 振動 目覚まし時計 コードレス 強力 起きれるデジタル ディープスリーパー ダブルアラーム バックライト スヌ",
+        "identity_quote": "ADESSO(アデッソ) ブルブルクラッシュ２ BB-01 第2世代 振動 目覚まし時計 コードレス 強力 起きれるデジタル ディープスリーパー ダブルアラーム バックライト スヌーズ機能 ホワイト",
+        "reason": "[商品掲載タイトル](https://www.amazon.co.jp/dp/B0CM6146JX)からBB-01という振動式目覚まし時計を識別できる。MY-96とは型番と系列が異なる。枕の下での使い方や電池本数は、出典未取得のため確認済みの仕様として扱わない。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reader_decision_outsourcing_absent": false,
+    "reason": "6商品の掲載タイトルと検証済みの商品情報から、それぞれ目覚まし時計として識別できる。明白な重複や対象外の商品はなく、3つの紹介グループに各2商品を割り当てられる。出典未取得の商品については、掲載タイトルを超える仕様や使用方法を確認済みの事実として扱わない。記事本文は未提出。",
+    "recommendation_conclusion": false,
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}
