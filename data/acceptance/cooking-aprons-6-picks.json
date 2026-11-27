@@ -1,0 +1,108 @@
+{
+  "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+  "evidence_sha256": "90a8219b2b2219b2f41eeeb9784dddc375c0e6d91e6242fd82925b9d5156c4d8",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 11520,
+    "input_tokens": 24088,
+    "listing_identity_citations_repaired": [
+      "p2",
+      "p3",
+      "p4",
+      "p5"
+    ],
+    "member_binding_revision": 4,
+    "output_tokens": 1487,
+    "reasoning_effort": "medium",
+    "reasoning_output_tokens": 662,
+    "reused_product_qa": true,
+    "session_id": "01a21aae-cf17-72a0-b8cd-a05e6bdaaf2c",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "7ae7c39886a9f9163edbdb0eca6b687b390028ba463314cb7bb45edcb4b6f474",
+  "review": {
+    "buying_guidance": false,
+    "claims_grounded": false,
+    "complete_comparison": false,
+    "distinct_products": true,
+    "duplicate_pair_checks": [],
+    "editorial_voice_appropriate": false,
+    "internal_qa_leak_absent": false,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "EDWIN 無地H型エプロン Lサイズ",
+        "identity_quote": "",
+        "reason": "掲載タイトルからH型のエプロンとして識別でき、定番の形から探す切り口に合う。肩ひもの幅、寸法、素材は未確認。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "[cozycube] エプロン 首掛け 男性用 メンズ 作業エプロン シンプル カフェエプロン 無地 ペンポケット付き 汚れ防止 シワ防止 男女兼用 ノーアイロン 厚み 透けない",
+        "identity_quote": "[cozycube] エプロン 首掛け 男性用 メンズ 作業エプロン シンプル カフェエプロン 無地 ペンポケット付き 汚れ防止 シワ防止 男女兼用 ノーアイロン 厚み 透けない ポケット付き 料理教室 「ポリエステル65% 綿35%」",
+        "reason": "掲載タイトルから首掛け型でペンポケットのあるエプロンとして識別でき、定番の形や収納を切り口に紹介できる。洗濯後の扱いや色落ちは未確認。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "quick_on_off",
+            "quote": "Just Put On"
+          }
+        ],
+        "identity_key": "Nishiki Women's Apron, Just Put On, Cute Silhouette, Cotton Poly, Wrinkle Resistant, Long",
+        "identity_quote": "Nishiki Women's Apron, Just Put On, Cute Silhouette, Cotton Poly, Wrinkle Resistant, Long Length, Includes Pockets",
+        "reason": "検証済みの商品掲載抜粋に着用の簡便さが記され、着脱を軸に紹介できる。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "quick_on_off",
+            "quote": "Slip-On Body Coverage Easy to Wear and Remove"
+          }
+        ],
+        "identity_key": "BIGHAS Apron Slip-On Body Coverage Easy to Wear and Remove Shoulder Strap Women's Simple S",
+        "identity_quote": "BIGHAS Apron Slip-On Body Coverage Easy to Wear and Remove Shoulder Strap Women's Simple Solid Fashionable Cute Nordic Style Childcare Worker Restaurant Cooking Kitchen Work Apron",
+        "reason": "検証済みの商品掲載抜粋に着脱しやすいかぶり型と記され、着脱を軸に紹介できる。バッククロス構造などの詳細は未確認。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "[不二貿易] エプロン Salt&Pepper",
+        "identity_quote": "[不二貿易] エプロン Salt&Pepper",
+        "reason": "検証済みの商品掲載抜粋から固有のエプロンとして識別できる。衣服を覆う切り口で紹介できるが、覆う範囲や寸法の具体値は未確認。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "ARASAWA ロングエプロン",
+        "identity_quote": "",
+        "reason": "掲載タイトルからロング丈のエプロンとして識別でき、服を覆う範囲を考える切り口に合う。具体的な寸法や素材は未確認。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reader_decision_outsourcing_absent": false,
+    "reason": "根拠情報のみの審査。6件は掲載タイトルからそれぞれ料理用エプロンとして識別でき、同一商品を示す積極的な証拠はない。各商品は割り当てられた紹介切り口で紹介できる。検証済み資料にない寸法・素材・手入れなどの詳細は未確認として扱う。",
+    "recommendation_conclusion": false,
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}
