@@ -1,0 +1,119 @@
+{
+  "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+  "evidence_sha256": "604c15a714d56f709fc7cb597c8bbd767ac2c9ebb409c014e323ed88b8937e44",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 11520,
+    "input_tokens": 26083,
+    "listing_identity_citations_repaired": [
+      "p1",
+      "p2",
+      "p3",
+      "p4",
+      "p5",
+      "p6"
+    ],
+    "member_binding_revision": 4,
+    "output_tokens": 2440,
+    "reasoning_effort": "medium",
+    "reasoning_output_tokens": 1486,
+    "reused_product_qa": true,
+    "session_id": "01a21b6a-1596-7710-8769-d3c331fd02e3",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "5ce43fda920b4989a4302c1760af06bed636a236a8e2cc0b5233c2c8902a4e06",
+  "review": {
+    "buying_guidance": false,
+    "claims_grounded": false,
+    "complete_comparison": false,
+    "distinct_products": true,
+    "duplicate_pair_checks": [],
+    "editorial_voice_appropriate": false,
+    "internal_qa_leak_absent": false,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "popular",
+            "quote": "Fill Capacity: 2.2 lbs (1.0 kg)"
+          }
+        ],
+        "identity_key": "タンスのゲン 羽毛布団 シングル ダックダウン90％ 充填量1.0kg 防ダニ 抗菌 防臭 日本製 掛け布団 冬 10119001(72199)",
+        "identity_quote": "タンスのゲン 羽毛布団 シングル ダックダウン90％ 充填量1.0kg 防ダニ 抗菌 防臭 日本製 掛け布団 冬 10119001(72199)",
+        "reason": "検証済みの商品資料 https://www.amazon.co.jp/dp/B00GM7WDQY?th=1 に型番と詰め物量1.0kgの記載がある。冬用の一枚物として紹介できる。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "羽毛布団 シングル 日本製 ホワイトダックダウン93% 超長綿100% 1.2kg 400dp 立体キルト 掛け布団 冬用 いいはねふとん店",
+        "identity_quote": "羽毛布団 シングル 日本製 ホワイトダックダウン93% 超長綿100% 1.2kg 400dp 立体キルト 掛け布団 冬用 いいはねふとん店",
+        "reason": "この商品のamazon_title欄で冬用の一枚物として識別できる。検証済みの資料はないため、掲載タイトルを超える仕様は未確認。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "layer_adjustable",
+            "quote": "This set includes a matching comforter and a skin comforter. Each can also be used alone, allowing you to adjust the combination according to the season and room temperature."
+          }
+        ],
+        "identity_key": "SNOWMAN 2枚合わせ羽毛布団 シングル ダウン80% 肌掛け(夏)＋合掛け(春・秋)=2枚合わせ羽毛布団（冬） 二枚合わせ 羽毛掛け布団セット ダウンケット 掛け布団",
+        "identity_quote": "SNOWMAN 2枚合わせ羽毛布団 シングル ダウン80% 肌掛け(夏)＋合掛け(春・秋)=2枚合わせ羽毛布団（冬） 二枚合わせ 羽毛掛け布団セット ダウンケット 掛け布団",
+        "reason": "検証済みの商品資料 https://www.amazon.co.jp/dp/B01JZ0EEDY?th=1 に肌掛けと合掛けの二枚組で、各一枚でも使えると記載されている。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "【日本製・3年保証・抗菌防臭で洗える羽毛布団】掛け布団 シングル 2枚合わせ 150×210cm オールシーズン設計 クリーム いいはねふとん店",
+        "identity_quote": "【日本製・3年保証・抗菌防臭で洗える羽毛布団】掛け布団 シングル 2枚合わせ 150×210cm オールシーズン設計 クリーム いいはねふとん店",
+        "reason": "この商品のamazon_title欄で二枚合わせの羽毛布団として識別できる。検証済みの資料はないため、洗濯方法などの詳細は未確認。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "lighter_single",
+            "quote": "A thin and lightweight summer down comforter"
+          },
+          {
+            "axis_id": "lighter_single",
+            "quote": "【Filling weight】0.55 lbs (0.25 kg)"
+          }
+        ],
+        "identity_key": "昭和西川 ダウンケット 羽毛布団 春 夏 秋用 シングル 軽量 薄手 洗える 掛け布団 肌掛けふとん オールシーズン 肌掛け ホワイトダックダウン50％ 0.25kg シングル シ",
+        "identity_quote": "昭和西川 ダウンケット 羽毛布団 春 夏 秋用 シングル 軽量 薄手 洗える 掛け布団 肌掛けふとん オールシーズン 肌掛け ホワイトダックダウン50％ 0.25kg シングル シングルロング 150×210cm グレー 2211273111937",
+        "reason": "検証済みの商品資料 https://www.amazon.co.jp/dp/B088ZFJZSF?th=1 に薄手の肌掛けと詰め物量0.25kgの記載がある。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "ハンガリー産 ホワイトダウン 93% 洗える 羽毛肌掛け布団 （ダウンケット） シングル 春や夏に最適 オールシーズン 薄手 洗濯ネット付 日本製",
+        "identity_quote": "ハンガリー産 ホワイトダウン 93% 洗える 羽毛肌掛け布団 （ダウンケット） シングル 春や夏に最適 オールシーズン 薄手 洗濯ネット付 日本製",
+        "reason": "この商品のamazon_title欄で薄手の羽毛肌掛け布団として識別できる。検証済みの資料はないため、掲載タイトルを超える仕様は未確認。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reader_decision_outsourcing_absent": false,
+    "reason": "記事未提出のため、根拠情報のみを審査した。6商品は各紹介切り口に合い、明白な重複や商品種別の不適合は示されていない。p2・p4・p6は商品掲載タイトルで識別できるが、検証済みの資料はなく、タイトルを超える仕様は未確認である。",
+    "recommendation_conclusion": false,
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}
