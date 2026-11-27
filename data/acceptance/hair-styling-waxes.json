@@ -1,0 +1,112 @@
+{
+  "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+  "evidence_sha256": "6d773be23178025a4e2c3d8869dcf999dad39da71e99b542d2c0c089147fefab",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 11520,
+    "input_tokens": 25157,
+    "member_binding_revision": 4,
+    "output_tokens": 1430,
+    "reasoning_effort": "medium",
+    "reasoning_output_tokens": 429,
+    "reused_product_qa": true,
+    "session_id": "01a21e08-ab21-77a3-851d-c59e2cd067f2",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "f132d28ad6286625c7296800f92ec260f6418b562a5513ced215c62a2d329afc",
+  "review": {
+    "buying_guidance": false,
+    "claims_grounded": false,
+    "complete_comparison": false,
+    "distinct_products": true,
+    "duplicate_pair_checks": [],
+    "editorial_voice_appropriate": false,
+    "internal_qa_leak_absent": false,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "ザ・プロダクト ヘアワックス",
+        "identity_quote": "",
+        "reason": "掲載名からヘアワックスとして識別できる。選定理由に示された公式説明を踏まえ、人気・定番の切り口で紹介できる。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "ロレッタ メイクアップワックス 4.0",
+        "identity_quote": "",
+        "reason": "掲載名から製品名と型番を識別できるヘアワックス。選定理由に示された公式説明を踏まえ、人気・定番の切り口で紹介できる。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "straight_hair_texture",
+            "quote": "躍動的な束感が作れるハードワックス"
+          }
+        ],
+        "identity_key": "GATSBY(ギャツビー) メタラバー ワックス ハード",
+        "identity_quote": "GATSBY(ギャツビー) メタラバー ワックス ハード [ ヘアワックス メンズ マット ] 65g",
+        "reason": "確認済みの商品情報で製品を識別できる。商品説明にある束感とドライな質感が担当する切り口に合う。出典：https://www.amazon.co.jp/dp/B0BPGY4M6L",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "straight_hair_texture",
+            "quote": "Fiber type hard wax that allows you to freely arrange your hair style. Volume up or down as you want"
+          }
+        ],
+        "identity_key": "Nakano Styling Wax Hard",
+        "identity_quote": "Nakano Pharmaceutical Nakano Styling Wax Hard 3.2 oz (90 g)",
+        "reason": "確認済みの商品掲載タイトルに製品名が明記されている。商品説明にあるファイバータイプの整髪用途が、髪に動きと束感をつくる切り口に合う。出典：https://www.amazon.co.jp/dp/B000FQV6GQ?th=1",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "spread_control",
+            "quote": "Adjust the amount you use to create a natural finish to wet hair style"
+          }
+        ],
+        "identity_key": "Orna Organic Hair Balm",
+        "identity_quote": "Orna Organic Hair Balm, For Parent-child Use, Additive-free, Shea Butter",
+        "reason": "確認済みの商品掲載タイトルにヘアバームの製品名が明記されている。商品説明には使用量によって自然な仕上がりに調整できるとあり、髪をまとめる切り口で紹介できる。出典：https://www.amazon.co.jp/dp/B08R5PZC3Q?th=1",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "spread_control",
+            "quote": "The hair ends have a sense of movement and three-dimensionality. Layered for an even more airy feel"
+          }
+        ],
+        "identity_key": "Airy & Easy Glossy Hair Wax",
+        "identity_quote": "Cosmetex Roller Airy & Easy Glossy Hair Wax 100g",
+        "reason": "確認済みの商品掲載タイトルに製品名が明記されている。商品説明にある毛先の動きと立体感を手掛かりに、毛流れを整える切り口で紹介できる。出典：https://www.amazon.co.jp/dp/B07XFHRHKQ?th=1",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reader_decision_outsourcing_absent": false,
+    "reason": "根拠情報のみの審査。6商品は掲載名または確認済みの商品情報から識別でき、明白な重複やテーマ外の商品はない。既存の3つの紹介切り口に各2商品が属し、それぞれを簡潔に紹介できる。記事は未提出のため、本文に関する判定項目はfalseとした。",
+    "recommendation_conclusion": false,
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}
