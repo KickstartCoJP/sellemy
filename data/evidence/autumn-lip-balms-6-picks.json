@@ -1,161 +1,335 @@
 {
-  "slug": "autumn-lip-balms-6-picks",
-  "category": "beauty",
-  "canonical_url": "https://www.sellemy.jp/article/beauty/autumn-lip-balms-6-picks.html",
-  "eyecatch_image": "https://www.sellemy.jp/img/autumn-lip-balms-6-picks/autumn-lip-balms-6-picks.png",
   "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/autumn-lip-balms-6-picks.html",
+  "category": "beauty",
   "comparison_axes": [
     {
-      "id": "moisture",
-      "label": "保湿成分",
+      "id": "popular",
       "keywords": [
-        "ワセリン",
-        "ヒアルロン酸",
-        "保湿力"
-      ]
+        "人気"
+      ],
+      "label": "人気・定番の基準"
     },
     {
-      "id": "texture",
-      "label": "使用感",
+      "id": "before_lip_makeup",
       "keywords": [
-        "べたつかない",
-        "伸び",
-        "テクスチャー"
-      ]
+        "メイク前",
+        "口紅下地",
+        "使用方法"
+      ],
+      "label": "口紅を塗る前の保湿に"
     },
     {
-      "id": "scent_color",
-      "label": "香り・カラー展開",
+      "id": "fragrance_free_reapplication",
       "keywords": [
         "無香料",
-        "色付き",
-        "フレーバー"
-      ]
-    },
-    {
-      "id": "portability",
-      "label": "携帯性",
-      "keywords": [
-        "ポーチに入る",
-        "スティックタイプ",
-        "持ち運び"
-      ]
-    },
-    {
-      "id": "price",
-      "label": "価格帯",
-      "keywords": [
-        "プチプラ",
-        "デパコス",
-        "コスパ"
-      ]
+        "外出先",
+        "塗り直し"
+      ],
+      "label": "香りを控えたい場面での塗り直しに"
     }
   ],
-  "selection": {
-    "comparison_axes_covered": [
-      "portability",
-      "scent_color"
-    ],
-    "brand_count": 6,
-    "price_used_as_constraint_only": true
+  "eyecatch_image": "https://www.sellemy.jp/img/autumn-lip-balms-6-picks/autumn-lip-balms-6-picks.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "4c9d537ec790ea4caa6196f3933cb7137b300742b43e53c360e60482658b899c",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 14848,
+      "input_tokens": 27001,
+      "listing_identity_citations_repaired": [
+        "p1",
+        "p2",
+        "p3",
+        "p5",
+        "p6"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 1959,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 887,
+      "session_id": "01a21993-def0-7d43-9d06-91a01e90217c",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "URIAGE Satou Pharmaceutical Uliage Moist Strip (Unscented) Hypoallergenic, Highly Moisturi",
+          "identity_quote": "URIAGE Satou Pharmaceutical Uliage Moist Strip (Unscented) Hypoallergenic, Highly Moisturizing, 0.1 oz (4 g) x 1",
+          "reason": "検証済みの商品掲載タイトルと抜粋から、無香料のスティック型リップケア製品と識別できる。人気・定番の切り口で紹介できるが、国内出荷本数は提示された検証済み抜粋では確認できない。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "Mentholatum Lip Melty Cream Lip, Unscented, 0.08 oz (2.4 g), Moisturizing",
+          "identity_quote": "Mentholatum Lip Melty Cream Lip, Unscented, 0.08 oz (2.4 g), Moisturizing",
+          "reason": "検証済みの商品掲載タイトルと抜粋から、無香料の保湿用リップ製品と識別できる。塗り心地や使用場面について掲載情報があり、人気・定番の切り口で個別に紹介できる。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "before_lip_makeup",
+              "quote": "it can also be used as a thin layer during the day as a lip primer"
+            }
+          ],
+          "identity_key": "Kanemaki Mellow Dew Lip Mask 01 Clear Pink 4.0g Lip Mask Intensive Moisturizing Care Lip P",
+          "identity_quote": "Kanemaki Mellow Dew Lip Mask 01 Clear Pink 4.0g Lip Mask Intensive Moisturizing Care Lip Primer with Spatula",
+          "reason": "検証済みの商品掲載タイトルからリップマスクと識別できる。抜粋には日中に薄く塗って口紅下地として使える旨があり、担当する切り口に合う。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "before_lip_makeup",
+              "quote": "moisture care and exfoliation in one lip scrub"
+            }
+          ],
+          "identity_key": "CANMAKE Plump Lip Care Scrub",
+          "identity_quote": "Canmake Plump Lip Care Scrub 02 Clear Pink, Lip Care, High Moisture, Sugar Scrub, Healthy Glow, No Need to Rinse",
+          "reason": "検証済みの商品掲載タイトルと抜粋から、保湿ケアと角質ケアを行うリップスクラブと識別できる。口紅を塗る前に唇を整える切り口で紹介でき、p3のリップマスクとは異なる製品である。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "キスミー薬用 リップクリーム 無香料 2.5g 敏感派・荒れ止め",
+          "identity_quote": "キスミー薬用 リップクリーム 無香料 2.5g 敏感派・荒れ止め",
+          "reason": "提供された商品掲載タイトルから無香料の薬用リップクリームと識別でき、香りを控えたい場面での塗り直しという切り口に合う。検証済みの商品出典は付いていないため、ノンメントールなどタイトルを超える詳細は未確認である。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "NIVEA ニベア ディープモイスチャーリップ 美容液スティック 無香料 高保湿 美容液 SPF30 PA++ 美容液成分配合 リップ リップクリーム",
+          "identity_quote": "NIVEA ニベア ディープモイスチャーリップ 美容液スティック 無香料 高保湿 美容液 SPF30 PA++ 美容液成分配合 リップ リップクリーム",
+          "reason": "提供された商品掲載タイトルから無香料の美容液スティック型リップケア製品と識別でき、香りを控えたい場面での塗り直しという切り口に合う。検証済みの商品出典は付いていないため、成分やUV性能の詳細は未確認である。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "記事未提出のため、6商品の識別と企画への適合のみを審査した。掲載タイトルからそれぞれ異なるリップケア製品と識別でき、既存の3つの紹介切り口に各2商品を割り当てられる。p3はリップマスク、p4はリップスクラブであり、同一商品の色違いなどを示す積極的な根拠はない。p5とp6には検証済みの商品出典が付いていないため、掲載タイトルを超える仕様や効能は未確認として扱う。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
   },
   "products": [
     {
+      "amazon_title": "URIAGE Satou Pharmaceutical Uliage Moist Strip (Unscented) Hypoallergenic, Highly Moisturizing, 0.1 oz (4 g) x 1",
+      "asin": "B01JHRE6ZG",
+      "brand": "Uriage",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71futnSYm2L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B01JHRE6ZG",
+      "provisional": false,
+      "rating": 4.5,
       "ref": "p1",
-      "product_id": "AMZ-B076778KZS",
-      "asin": "B076778KZS",
-      "amazon_title": "アベンヌ 薬用リップケア モイスト4g",
-      "brand": "アベンヌ",
-      "image_url": "https://m.media-amazon.com/images/I/51MBQYVaTBL._AC_SY300_SX300_QL70_ML2_.jpg",
-      "observed_price": 1155,
-      "discovery_score": 1,
-      "selection_score": 0.805,
-      "matched_comparison_axes": [
-        "portability",
-        "scent_color"
-      ],
-      "search_key": "アベンヌ(Avene) 薬用リップケア モイスト 4g | リップクリーム ・ 唇ケア",
-      "model": "アベンヌ 薬用リップケア モイスト",
-      "selected_variant": "4g・無香料・無着色"
+      "review_count": 1543,
+      "search_key": "Uriage Satou Pharmaceutical Uliage Mois",
+      "selection_reason": "唇の表面を覆う処方で、乾燥が気になる朝や日中に2～3回重ねて塗る使い方ができる。シア脂、ルリジサ種子油、ヒアルロン酸Na、ミツロウを配合。定番としての根拠は、無香料・バニラの香りを合わせたモイストリップの国内累計出荷が800万本を超えたという佐藤製薬の発表にある。[製品情報](https://search.sato-seiyaku.co.jp/pub/product/2336/)・[出荷実績](https://www.sato-seiyaku.co.jp/newsrelease/2026/260722/)",
+      "sources": [
+        {
+          "brand": "Uriage",
+          "excerpt": "URIAGE Satou Pharmaceutical Uliage Moist Strip (Unscented) Hypoallergenic, Highly Moisturizing, 0.1 oz (4 g) x 1\nAbout this item\nSize: 2.4 inches (60 mm) x 0.9 inches (22 mm) x 5.1 inches (130 mm)\nContent: 4.0g\nBrand Name: Uriage\nManufacturer: SATO PHARMACEUTICAL\nCovers the surface of the lips to prevent roughness and dryness › See more product details\nBrand Uriage\nItem Form Stick\nSun Protection 10-30 Sun Protection Factor (SPF)\nSkin Type Sensitive\nColor white (opalescent)\nProduct Benefits Hypoallergenic, Moisturizing\nFlavor Unscented\nMaterial Feature No parabens, no coloring additives, Patch tested and allergy tested\nMaterial Type Free Artificial Color Free, Paraben Free\nItem Weight 4 Grams See more\nVisit the Uriage Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "URIAGE Satou Pharmaceutical Uliage Moist Strip (Unscented) Hypoallergenic, Highly Moisturizing, 0.1 oz (4 g) x 1",
+          "url": "https://www.amazon.co.jp/dp/B01JHRE6ZG?th=1",
+          "verified": true
+        }
+      ]
     },
     {
+      "amazon_title": "Mentholatum Lip Melty Cream Lip, Unscented, 0.08 oz (2.4 g), Moisturizing",
+      "asin": "B074K32GNJ",
+      "brand": "Mentholatum",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71rVWjDEq5L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B074K32GNJ",
+      "provisional": false,
+      "rating": 4.4,
       "ref": "p2",
-      "product_id": "AMZ-B0D8PXBG8N",
-      "asin": "B0D8PXBG8N",
-      "amazon_title": "ケアセラ モイストバリアリップクリーム2.4g",
-      "brand": "ケアセラ",
-      "image_url": "https://m.media-amazon.com/images/I/71LV2Gb3JeL._AC_SY300_SX300_QL70_ML2_.jpg",
-      "observed_price": 699,
-      "discovery_score": 1,
-      "selection_score": 0.495,
-      "matched_comparison_axes": [
-        "scent_color"
-      ],
-      "search_key": "ケアセラ(CareCera) モイストバリアリップクリーム 2.4g (8種の天然型セラミド配",
-      "model": "ケアセラ モイストバリアリップクリーム",
-      "selected_variant": "2.4g・無香料"
+      "review_count": 972,
+      "search_key": "Mentholatum Lip Melty Cream Lip, Unscented",
+      "selection_reason": "体温でとろける塗り心地と、唇や空気中の水分を抱え込む「モイストバンク技術」が個性。乾燥するオフィスで過ごす人や、すぐに塗り直せない日に向くとメーカーが案内している。無香料のこの製品は2017年の発売時からラインナップにあり、現在も公式通販で単品購入できる。[製品情報](https://www.shop.rohto.co.jp/category/medicine/mentholatum/meltycreamlip/156337.html)・[発売資料](https://www.rohto.co.jp/news/release/2017/0802_01/)",
+      "sources": [
+        {
+          "brand": "Mentholatum",
+          "excerpt": "Mentholatum Lip Melty Cream Lip, Unscented, 0.08 oz (2.4 g), Moisturizing\nAbout this item\nAdopts \"Moist Bank Technology\" that reacts with moisture in the lips and air to lock in moisture and transform it into cream\nA previously unseen, soft and smooth application feeling, as if the cream is melting\nApply once, and it melts with body heat to blend into your lips, protecting them with a sense of moisture\nUV protection (SPF25/PA+++) with moisturizing ingredients squalane and multi-ceramides, fragrance-free\nCan be used in various situations such as before bedtime, in the office where dryness is a concern, outdoor activities on cold days, as a base for lipstick, and on days when reapplication is difficult › See more product details\nBrand Mentholatum\nItem Form Stick\nSun Protection 25 Sun Protection Factor (SPF)\nSkin Type Dry\nColor white\nProduct Benefits Moisturizing\nFlavor Unscented\nMaterial Feature Fragrance Free\nMaterial Type Free Unscented\nNumber of Items 1 See more\nBrand: Mentholatum",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Mentholatum Lip Melty Cream Lip, Unscented, 0.08 oz (2.4 g), Moisturizing",
+          "url": "https://www.amazon.co.jp/dp/B074K32GNJ?th=1",
+          "verified": true
+        }
+      ]
     },
     {
+      "amazon_title": "Kanemaki Mellow Dew Lip Mask 01 Clear Pink 4.0g Lip Mask Intensive Moisturizing Care Lip Primer with Spatula",
+      "asin": "B0CHQ936VN",
+      "brand": "CANMAKE",
+      "discovery_axis_id": "before_lip_makeup",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51R0wTv5flL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0CHQ936VN",
+      "provisional": false,
+      "rating": 4.4,
       "ref": "p3",
-      "product_id": "AMZ-B003VUUO7A",
-      "asin": "B003VUUO7A",
-      "amazon_title": "キュレル リップケアクリーム 4.2g",
-      "brand": "キュレル",
-      "image_url": "https://m.media-amazon.com/images/I/71CHrR6V4nL._AC_SY300_SX300_QL70_ML2_.jpg",
-      "observed_price": 2750,
-      "discovery_score": 1,
-      "selection_score": 0.495,
-      "matched_comparison_axes": [],
-      "search_key": "メディプラス ノイズカットリップパック 15g | リップクリーム リップバー",
-      "model": "キュレル リップケアクリーム",
-      "selected_variant": "4.2g・無着色・無香料"
+      "review_count": 241,
+      "search_key": "CANMAKE Kanemaki Mellow Dew Lip Mask 01",
+      "selection_reason": "夜は厚めに塗るリップマスクを、日中は薄く塗ってリップ下地にできる。朝の口紅前に保湿したい人には、容器に収納できるスパチュラで量を取って塗れる点も具体的な使いやすさになる。01クリアピンクは無香料。[メーカー製品情報](https://www.canmake.com/item/detail/mellow-dew-lip-mask/)",
+      "sources": [
+        {
+          "brand": "CANMAKE",
+          "excerpt": "Kanemaki Mellow Dew Lip Mask 01 Clear Pink 4.0g Lip Mask Intensive Moisturizing Care Lip Primer with Spatula\nAbout this item\nPlump your lips while you sleep! Intensive moisturizing care lip mask\nSeals moisture and protects against dryness Covers vertical wrinkles (※makeup effect) and cares for dullness caused by dryness Enhances lip makeup adherence Not only for night care, but it can also be used as a thin layer during the day as a lip primer\nIncludes a spatula that can be fixed to the inner lid Not easy to stain your hands\n01 Clear Pink... Clear pink on lips, easy to use and unscented type › See more product details\nBrand CANMAKE\nItem Form Cream\nSkin Type Full skin\nColor 01 clear pink\nItem Weight 4 Grams\nNumber of Items 1\nUnit Count 4.0 Grams\nManufacturer 井田ラボラトリーズ\nIs heat sensitive? No See more\nVisit the キャンメイク Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Kanemaki Mellow Dew Lip Mask 01 Clear Pink 4.0g Lip Mask Intensive Moisturizing Care Lip Primer with Spatula",
+          "url": "https://www.amazon.co.jp/dp/B0CHQ936VN",
+          "verified": true
+        }
+      ]
     },
     {
+      "amazon_title": "Canmake Plump Lip Care Scrub 02 Clear Pink, Lip Care, High Moisture, Sugar Scrub, Healthy Glow, No Need to Rinse",
+      "asin": "B09LTNQ5MR",
+      "brand": "CANMAKE",
+      "discovery_axis_id": "before_lip_makeup",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51WriiZYA3L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B09LTNQ5MR",
+      "provisional": false,
+      "rating": 4.5,
       "ref": "p4",
-      "product_id": "AMZ-B0HFT3GSY1",
-      "asin": "B0HFT3GSY1",
-      "amazon_title": "DHC 薬用リップクリーム 1.5g",
-      "brand": "DHC",
-      "image_url": "https://m.media-amazon.com/images/I/51Z0-KlfEIL._AC_SY300_SX300_QL70_ML2_.jpg",
-      "observed_price": 1650,
-      "discovery_score": 1,
-      "selection_score": 0.495,
-      "matched_comparison_axes": [],
-      "search_key": "ライスフォース(RICEFORCE) ライスフォース〈リップセラム〉 8g 1本 化粧品 リップ",
-      "model": "DHC 薬用リップクリーム",
-      "selected_variant": "1.5g・1本"
+      "review_count": 643,
+      "search_key": "CANMAKE Plump Lip Care Scrub 02 Clear Pi",
+      "selection_reason": "口紅を塗る前に唇のざらつきが気になる人向け。砂糖のスクラブで古い角質をケアしながら保湿し、拭き取りや洗い流しなしで唇をなめらかに整えられる。02クリアピンクを含む製品ページで無香料と案内されている。[メーカー製品情報](https://www.canmake.com/item/detail/plump-lip-care-scrub/)",
+      "sources": [
+        {
+          "brand": "CANMAKE",
+          "excerpt": "Canmake Plump Lip Care Scrub 02 Clear Pink, Lip Care, High Moisture, Sugar Scrub, Healthy Glow, No Need to Rinse\nAbout this item\nEffortless application \"Soft Lip Esthe\" with moisture care and exfoliation in one lip scrub\nMade in Japan\nPackaging Size - 1.8 x 1.8 x 11.0 cm\nFinish Type: Sheer › See more product details\nBrand CANMAKE\nItem Form Crayon\nSkin Type Normal\nProduct Benefits Bloody feel\nActive Ingredients Scroll\nItem Volume 0.6 Fluid Ounces\nMaterial Type Free Alcohol Free\nNumber of Items 1\nSpecial Feature Light up your skin, Prevents clamping, Protects moisture, Serum ingredients\nScent Unscented See more\nVisit the キャンメイク Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Canmake Plump Lip Care Scrub 02 Clear Pink, Lip Care, High Moisture, Sugar Scrub, Healthy Glow, No Need to Rinse",
+          "url": "https://www.amazon.co.jp/dp/B09LTNQ5MR?th=1",
+          "verified": true
+        }
+      ]
     },
     {
+      "amazon_title": "キスミー薬用 リップクリーム 無香料 2.5g 敏感派・荒れ止め",
+      "asin": "B000FQN4P2",
+      "brand": "",
+      "discovery_axis_id": "fragrance_free_reapplication",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71vfuwx9y7L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B000FQN4P2",
+      "provisional": true,
+      "rating": 4.2,
       "ref": "p5",
-      "product_id": "AMZ-B09F9WGBX4",
-      "asin": "B09F9WGBX4",
-      "amazon_title": "ニベア ディープモイスチャーリップ 無香料 3本パック",
-      "brand": "ニベア",
-      "image_url": "https://m.media-amazon.com/images/I/61FNkLo5kzL._AC_SY300_SX300_QL70_ML2_.jpg",
-      "observed_price": 1155,
-      "discovery_score": 1,
-      "selection_score": 0.495,
-      "matched_comparison_axes": [
-        "scent_color"
-      ],
-      "search_key": "ニベア ディープモイスチャーリップ 無香料 3本パック",
-      "model": "ニベア ディープモイスチャーリップ",
-      "selected_variant": "無香料・2.2g×3本パック"
+      "review_count": 515,
+      "search_key": "キスミー薬用 リップクリーム 無香料 2.5g 敏感派・荒れ止め",
+      "selection_reason": "無香料に加えてノンメントールの薬用リップ。香りやメントール感を控え、職場の休憩時間に塗り直したい人に向く。メーカーは、うるおいが続くソフトタイプで、唇のカサつき・荒れを防ぐ製品と説明している。[メーカー製品情報](https://www.isehan.co.jp/yakuyo/products.html)",
+      "sources": []
     },
     {
-      "ref": "p6",
-      "product_id": "AMZ-B09LPX3T75",
-      "asin": "B09LPX3T75",
-      "amazon_title": "キスミー マミー リップクリームN 2.5g",
-      "brand": "マミー",
-      "image_url": "https://m.media-amazon.com/images/I/51Se2CrdBfL._AC_SY300_SX300_QL70_ML2_.jpg",
-      "observed_price": 2365,
+      "amazon_title": "NIVEA ニベア ディープモイスチャーリップ 美容液スティック 無香料 高保湿 美容液 SPF30 PA++ 美容液成分配合 リップ リップクリーム",
+      "asin": "B0H8PLKHLB",
+      "brand": "",
+      "discovery_axis_id": "fragrance_free_reapplication",
       "discovery_score": 1,
-      "selection_score": 0.495,
-      "matched_comparison_axes": [],
-      "search_key": "LANEIGE ラネージュ リップスリーピングマスク ベリー 20g リップクリ",
-      "model": "マミー リップクリームN",
-      "selected_variant": "2.5g・無香料"
+      "image_url": "https://m.media-amazon.com/images/I/71Mt46644ZL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0H8PLKHLB",
+      "provisional": true,
+      "rating": 4.4,
+      "ref": "p6",
+      "review_count": 376,
+      "search_key": "NIVEA ニベア ディープモイスチャーリップ 美容液スティック",
+      "selection_reason": "無香料の美容液スティックで、唇の縦ジワにも保湿成分がなじむ設計。秋の日中、香りを控えながら乾燥が気になる唇に塗り直したい人に向く。花王はヒアルロン酸などの保湿成分とUVカット成分の配合を示し、食後は口元を拭いてから使うよう案内している。[花王製品情報](https://www.kao-kirei.com/jp/en/item/khg/nivea/4901301449788/)",
+      "sources": []
     }
-  ]
+  ],
+  "selection": {
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B01JHRE6ZG",
+            "reason": "唇の表面を覆う処方で、乾燥が気になる朝や日中に2～3回重ねて塗る使い方ができる。シア脂、ルリジサ種子油、ヒアルロン酸Na、ミツロウを配合。定番としての根拠は、無香料・バニラの香りを合わせたモイストリップの国内累計出荷が800万本を超えたという佐藤製薬の発表にある。[製品情報](https://search.sato-seiyaku.co.jp/pub/product/2336/)・[出荷実績](https://www.sato-seiyaku.co.jp/newsrelease/2026/260722/)"
+          },
+          {
+            "asin": "B074K32GNJ",
+            "reason": "体温でとろける塗り心地と、唇や空気中の水分を抱え込む「モイストバンク技術」が個性。乾燥するオフィスで過ごす人や、すぐに塗り直せない日に向くとメーカーが案内している。無香料のこの製品は2017年の発売時からラインナップにあり、現在も公式通販で単品購入できる。[製品情報](https://www.shop.rohto.co.jp/category/medicine/mentholatum/meltycreamlip/156337.html)・[発売資料](https://www.rohto.co.jp/news/release/2017/0802_01/)"
+          }
+        ]
+      },
+      {
+        "axis_id": "before_lip_makeup",
+        "products": [
+          {
+            "asin": "B0CHQ936VN",
+            "reason": "夜は厚めに塗るリップマスクを、日中は薄く塗ってリップ下地にできる。朝の口紅前に保湿したい人には、容器に収納できるスパチュラで量を取って塗れる点も具体的な使いやすさになる。01クリアピンクは無香料。[メーカー製品情報](https://www.canmake.com/item/detail/mellow-dew-lip-mask/)"
+          },
+          {
+            "asin": "B09LTNQ5MR",
+            "reason": "口紅を塗る前に唇のざらつきが気になる人向け。砂糖のスクラブで古い角質をケアしながら保湿し、拭き取りや洗い流しなしで唇をなめらかに整えられる。02クリアピンクを含む製品ページで無香料と案内されている。[メーカー製品情報](https://www.canmake.com/item/detail/plump-lip-care-scrub/)"
+          }
+        ]
+      },
+      {
+        "axis_id": "fragrance_free_reapplication",
+        "products": [
+          {
+            "asin": "B000FQN4P2",
+            "reason": "無香料に加えてノンメントールの薬用リップ。香りやメントール感を控え、職場の休憩時間に塗り直したい人に向く。メーカーは、うるおいが続くソフトタイプで、唇のカサつき・荒れを防ぐ製品と説明している。[メーカー製品情報](https://www.isehan.co.jp/yakuyo/products.html)"
+          },
+          {
+            "asin": "B0H8PLKHLB",
+            "reason": "無香料の美容液スティックで、唇の縦ジワにも保湿成分がなじむ設計。秋の日中、香りを控えながら乾燥が気になる唇に塗り直したい人に向く。花王はヒアルロン酸などの保湿成分とUVカット成分の配合を示し、食後は口元を拭いてから使うよう案内している。[花王製品情報](https://www.kao-kirei.com/jp/en/item/khg/nivea/4901301449788/)"
+          }
+        ]
+      }
+    ],
+    "brand_count": 3,
+    "candidate_count": 30,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [],
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": []
+  },
+  "slug": "autumn-lip-balms-6-picks"
 }
