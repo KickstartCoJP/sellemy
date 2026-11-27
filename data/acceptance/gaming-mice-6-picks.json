@@ -1,0 +1,131 @@
+{
+  "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+  "evidence_sha256": "010fc19d455ce3e3576861295bedf0b4da9bdb9271be7c1db634c4a3be024130",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 11520,
+    "input_tokens": 27350,
+    "listing_identity_citations_repaired": [
+      "p1",
+      "p2",
+      "p3"
+    ],
+    "member_binding_revision": 4,
+    "output_tokens": 1442,
+    "reasoning_effort": "medium",
+    "reasoning_output_tokens": 433,
+    "reused_product_qa": true,
+    "session_id": "01a21d5e-f6f1-7d72-9933-b94bd6699c64",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "b3e472b2450d26381b0771d80093407d50faadb40b0885898c42b185d3434321",
+  "review": {
+    "buying_guidance": false,
+    "claims_grounded": false,
+    "complete_comparison": false,
+    "distinct_products": true,
+    "duplicate_pair_checks": [],
+    "editorial_voice_appropriate": false,
+    "internal_qa_leak_absent": false,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "popular",
+            "quote": "6 programmable buttons. Lightweight at 3.5 oz (99 g) and a compact design"
+          }
+        ],
+        "identity_key": "Logicool G ゲーミングマウス G304 LIGHTSPEED ワイヤレスマウス ブラック 軽量 99g 国内正規品",
+        "identity_quote": "Logicool G ゲーミングマウス G304 LIGHTSPEED ワイヤレスマウス ブラック 軽量 99g 国内正規品",
+        "reason": "G304の本体として識別できる。掲載情報に99g、6個のプログラム可能なボタン、単3電池1本で最大250時間の使用が記され、定番の切り口で具体的に紹介できる。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "popular",
+            "quote": "ergonomic design tailored to the shape of the human hand"
+          }
+        ],
+        "identity_key": "Logicool G ワイヤレス ゲーミングマウス G703h LIGHTSPEED HERO 25Kセンサー エルゴノミクス LIGHTSYNC RGB POWERPLAY 無線",
+        "identity_quote": "Logicool G ワイヤレス ゲーミングマウス G703h LIGHTSPEED HERO 25Kセンサー エルゴノミクス LIGHTSYNC RGB POWERPLAY 無線 充電 対応 ゲーミング マウス 充電式 無線 PC windows mac ブラック G703 国内正規品 【 ファイナルファンタジー XIV 推奨モデル 】",
+        "reason": "G703hの本体として識別できる。手に沿う形状、95g、付属の10gウェイトという掲載情報から、形状や重さを選ぶ材料として紹介できる。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "fps-aim-control",
+            "quote": "Weighing only 1.8 oz (51 g)"
+          }
+        ],
+        "identity_key": "【Amazon.co.jp限定】Logicool G 8000Hz ポーリングレート PRO X SUPERLIGHT 2c コンパクト ワイヤレス ゲーミングマウス G-PPD-",
+        "identity_quote": "【Amazon.co.jp限定】Logicool G 8000Hz ポーリングレート PRO X SUPERLIGHT 2c コンパクト ワイヤレス ゲーミングマウス G-PPD-004WLCO-BKd 軽量 51g LIGHTSPEED HERO2 センサー USB Type-C 充電 POWERPLAY ブラック 国内正規品 ※Amazon.co.jp限定 壁紙ダウンロード付き",
+        "reason": "PRO X SUPERLIGHT 2cの本体として識別できる。コンパクトな左右対称形状と51gという掲載情報が、FPS向けに大きさや重さから選ぶ理由を支える。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "fps-aim-control",
+            "quote": "Ergonomic design and lightweight body only 3.1 oz (89 g)"
+          }
+        ],
+        "identity_key": "Redragon M719-WL",
+        "identity_quote": "Redragon M719-WL Wireless Gaming Mouse",
+        "reason": "M719-WLの本体として識別できる。89gのエルゴノミクス形状と3種類の接続方式が掲載され、形状や接続方法を重視する選択肢として紹介できる。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "mmo-command-access",
+            "quote": "Interchangeable Side Plates with 2/7/12 Button Configurations"
+          }
+        ],
+        "identity_key": "Razer Naga Trinity",
+        "identity_quote": "Razer Naga Trinity Interchangeable Side Plates with 2/7/12 Button Configurations USB MMO/MOBA Gaming Mouse",
+        "reason": "Naga Trinityの本体として識別できる。掲載タイトルに2・7・12ボタン構成へ交換できるサイドプレートが明記され、MMOの操作を手元にまとめる切り口に適合する。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "mmo-command-access",
+            "quote": "All 15 programmable buttons can be edited using customizable tactical keybinds"
+          },
+          {
+            "axis_id": "mmo-command-access",
+            "quote": "default 2 + 8 epic MMO side buttons"
+          }
+        ],
+        "identity_key": "Redragon M811 PRO",
+        "identity_quote": "Redragon M811 PRO Wireless MMO Gaming Mouse",
+        "reason": "M811 PROの本体として識別できる。10個のサイドキーと全15ボタンの割り当てが掲載され、MMOで使う操作を手元に置く選択肢として紹介できる。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reader_decision_outsourcing_absent": false,
+    "reason": "検証済みの商品掲載情報により、6つは異なる型番・系列のゲーミングマウスとして識別できる。各商品は割り当てられた紹介切り口に適合し、個別に紹介できる事実がある。記事本文がないため、記事のみを対象とする判定はfalseとした。",
+    "recommendation_conclusion": false,
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}

@@ -1,137 +1,397 @@
 {
-  "slug": "gaming-mice-6-picks",
-  "category": "gadget",
-  "canonical_url": "https://www.sellemy.jp/article/gadget/gaming-mice-6-picks.html",
-  "eyecatch_image": "https://www.sellemy.jp/img/gaming-mice-6-picks/gaming-mice-6-picks.png",
   "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/gaming-mice-6-picks.html",
+  "category": "gadget",
   "comparison_axes": [
     {
-      "id": "sensor_dpi",
-      "label": "センサー性能・DPI",
+      "id": "popular",
       "keywords": [
-        "高DPI",
-        "トラッキング精度",
-        "応答速度"
+        "人気"
+      ],
+      "label": "人気・定番の基準"
+    },
+    {
+      "id": "fps-aim-control",
+      "keywords": [
+        "本体重量",
+        "形状",
+        "寸法",
+        "持ち方"
+      ],
+      "label": "FPSでの視点操作に合わせる"
+    },
+    {
+      "id": "mmo-command-access",
+      "keywords": [
+        "サイドボタン",
+        "ボタン配置",
+        "割り当て機能"
+      ],
+      "label": "MMOで使う操作を手元にまとめる"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/gaming-mice-6-picks/gaming-mice-6-picks.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "010fc19d455ce3e3576861295bedf0b4da9bdb9271be7c1db634c4a3be024130",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 27350,
+      "listing_identity_citations_repaired": [
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 1442,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 433,
+      "session_id": "01a21d5e-f6f1-7d72-9933-b94bd6699c64",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "6 programmable buttons. Lightweight at 3.5 oz (99 g) and a compact design"
+            }
+          ],
+          "identity_key": "Logicool G ゲーミングマウス G304 LIGHTSPEED ワイヤレスマウス ブラック 軽量 99g 国内正規品",
+          "identity_quote": "Logicool G ゲーミングマウス G304 LIGHTSPEED ワイヤレスマウス ブラック 軽量 99g 国内正規品",
+          "reason": "G304の本体として識別できる。掲載情報に99g、6個のプログラム可能なボタン、単3電池1本で最大250時間の使用が記され、定番の切り口で具体的に紹介できる。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "ergonomic design tailored to the shape of the human hand"
+            }
+          ],
+          "identity_key": "Logicool G ワイヤレス ゲーミングマウス G703h LIGHTSPEED HERO 25Kセンサー エルゴノミクス LIGHTSYNC RGB POWERPLAY 無線",
+          "identity_quote": "Logicool G ワイヤレス ゲーミングマウス G703h LIGHTSPEED HERO 25Kセンサー エルゴノミクス LIGHTSYNC RGB POWERPLAY 無線 充電 対応 ゲーミング マウス 充電式 無線 PC windows mac ブラック G703 国内正規品 【 ファイナルファンタジー XIV 推奨モデル 】",
+          "reason": "G703hの本体として識別できる。手に沿う形状、95g、付属の10gウェイトという掲載情報から、形状や重さを選ぶ材料として紹介できる。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "fps-aim-control",
+              "quote": "Weighing only 1.8 oz (51 g)"
+            }
+          ],
+          "identity_key": "【Amazon.co.jp限定】Logicool G 8000Hz ポーリングレート PRO X SUPERLIGHT 2c コンパクト ワイヤレス ゲーミングマウス G-PPD-",
+          "identity_quote": "【Amazon.co.jp限定】Logicool G 8000Hz ポーリングレート PRO X SUPERLIGHT 2c コンパクト ワイヤレス ゲーミングマウス G-PPD-004WLCO-BKd 軽量 51g LIGHTSPEED HERO2 センサー USB Type-C 充電 POWERPLAY ブラック 国内正規品 ※Amazon.co.jp限定 壁紙ダウンロード付き",
+          "reason": "PRO X SUPERLIGHT 2cの本体として識別できる。コンパクトな左右対称形状と51gという掲載情報が、FPS向けに大きさや重さから選ぶ理由を支える。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "fps-aim-control",
+              "quote": "Ergonomic design and lightweight body only 3.1 oz (89 g)"
+            }
+          ],
+          "identity_key": "Redragon M719-WL",
+          "identity_quote": "Redragon M719-WL Wireless Gaming Mouse",
+          "reason": "M719-WLの本体として識別できる。89gのエルゴノミクス形状と3種類の接続方式が掲載され、形状や接続方法を重視する選択肢として紹介できる。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "mmo-command-access",
+              "quote": "Interchangeable Side Plates with 2/7/12 Button Configurations"
+            }
+          ],
+          "identity_key": "Razer Naga Trinity",
+          "identity_quote": "Razer Naga Trinity Interchangeable Side Plates with 2/7/12 Button Configurations USB MMO/MOBA Gaming Mouse",
+          "reason": "Naga Trinityの本体として識別できる。掲載タイトルに2・7・12ボタン構成へ交換できるサイドプレートが明記され、MMOの操作を手元にまとめる切り口に適合する。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "mmo-command-access",
+              "quote": "All 15 programmable buttons can be edited using customizable tactical keybinds"
+            },
+            {
+              "axis_id": "mmo-command-access",
+              "quote": "default 2 + 8 epic MMO side buttons"
+            }
+          ],
+          "identity_key": "Redragon M811 PRO",
+          "identity_quote": "Redragon M811 PRO Wireless MMO Gaming Mouse",
+          "reason": "M811 PROの本体として識別できる。10個のサイドキーと全15ボタンの割り当てが掲載され、MMOで使う操作を手元に置く選択肢として紹介できる。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "検証済みの商品掲載情報により、6つは異なる型番・系列のゲーミングマウスとして識別できる。各商品は割り当てられた紹介切り口に適合し、個別に紹介できる事実がある。記事本文がないため、記事のみを対象とする判定はfalseとした。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
+  "products": [
+    {
+      "amazon_title": "Logicool G ゲーミングマウス G304 LIGHTSPEED ワイヤレスマウス ブラック 軽量 99g 国内正規品",
+      "asin": "B07DVC25R2",
+      "brand": "Logicool G",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51uIMsNFRHL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B07DVC25R2",
+      "provisional": false,
+      "rating": 4.4,
+      "ref": "p1",
+      "review_count": 6112,
+      "search_key": "Logicool G ゲーミングマウス G304 LIGHTSPEED ワイヤレスマウ",
+      "selection_reason": "G304は幅62.15mm・奥行116.6mmのコンパクトな本体に、99gのワイヤレス設計と6個のプログラム可能なボタンを備える。FPSでは小ぶりなマウスで視点操作をしたく、MMOでは少数のよく使う操作を割り当てたい人が、両方を遊ぶための基準にしやすい。単3電池1本で最大250時間使えるという記載も、電池式を選ぶ判断材料になる。",
+      "sources": [
+        {
+          "brand": "Logicool G",
+          "excerpt": "Logicool G Gaming Mouse G304 Lightspeed Wireless Gaming Mouse, Lightweight 3.5 oz (99 g), HERO 12K Sensor, 6 Programmable Buttons, 250 Hours of Continuous Use, Black, Compatible with PC, Windows, Mac\nAbout this item\n【Logicool G G304 Wireless Gaming Mouse】The G304 is a wireless introductory model equipped with 1 ms report rate LIGHTSPEED technology, a proprietary HERO sensor, and 6 programmable buttons. Lightweight at 3.5 oz (99 g) and a compact design that is convenient for beginners and pros alike\n【Ultra-fast Wireless with No Latency】Equipped with super-fast LIGHTSPEED technology, the 1ms wireless gaming mouse G304 frees you from the hassle of wired cables\n【Exclusive HERO 12K Sensor】Equipped with a next-generation HERO 12K optical sensor, power efficiency is improved by approximately 10 times, achieving maximum tracking accuracy Custom profiles for gaming and fine adjustments of mouse sensitivity possible from 100 to 12,000 DPI (Can be adjusted from 1 unit when using G HUB)\n【250 hours of continuous gameplay】In Performance Mode, you can enjoy up to 250 hours of continuous gameplay with just 1 AA battery If you play games for 3 hours a day, the battery can last for approximately 3 months without needing to be replaced It also features a battery indicator light that flashes red when the battery level is 15%\nPackage Contents: Main unit, LIGHTSPEED Wireless Receiver, Receiver extension cable, 1 AA battery, Quick Start Guide, 2-year free warranty, warranty terms\n【Reading method】Optical ※ HERO Sensor\nMaximum speed: 400 inches/sec\n【Size】・Mouse: Width 62.15 mm x Depth 116.6 mm x Height 38.2 mm・Receiver: 18.40 mm x 14.40 mm x 6.60 mm, Number of mouse buttons: 6\nHERO is a revolutionary new sensor that achieves unprecedented performance and power efficiency With high performance and energy efficiency, it ushers in a new era of wireless mice Show More › See more product details\nBrand Logicool G\nColor Black\nConnectivity Technology LIGHTSPEED Wireless\nSpecial Feature Lightweight, Portable, Wireless\nMovement Detection Technology Optical",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Logicool G Gaming Mouse G304 Lightspeed Wireless Gaming Mouse, Lightweight 3.5 oz (99 g), HERO 12K Sensor, 6 Programmable Buttons, 250 Hours of Continuous Use, Black, Compatible with PC, Windows, Mac",
+          "url": "https://www.amazon.co.jp/dp/B07DVC25R2?th=1",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "connection",
-      "label": "接続方式（有線/無線）",
-      "keywords": [
-        "無線",
-        "有線",
-        "低遅延"
+      "amazon_title": "Logicool G ワイヤレス ゲーミングマウス G703h LIGHTSPEED HERO 25Kセンサー エルゴノミクス LIGHTSYNC RGB POWERPLAY 無線 充電 対応 ゲーミング マウス 充電式 無線 PC windows mac ブラック G703 国内正規品 【 ファイナルファンタジー XIV 推奨モデル 】",
+      "asin": "B07SYKKP47",
+      "brand": "Logicool G",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41I--98xeJL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B07SYKKP47",
+      "provisional": false,
+      "rating": 4.6,
+      "ref": "p2",
+      "review_count": 12837,
+      "search_key": "Logicool G ワイヤレス ゲーミングマウス G703h LIGHTSPEED",
+      "selection_reason": "G703hは手の形に沿うエルゴノミクス形状の充電式ワイヤレスマウスで、本体重量は95g。FPSで手を載せたときの形状を重視し、ゲームを行き来しても同じ握り方で操作したい人に向く。付属の10gウェイトで重さを調整でき、通常の充電では最大60時間使えると記載されている。",
+      "sources": [
+        {
+          "brand": "Logicool G",
+          "excerpt": "Logicool G Wireless Gaming Mouse G703h Lightspeed HERO 25K Sensor Ergonomics LIGHTSYNC RGB Powerplay Wireless Charging Compatible Gaming Mouse Rechargeable Wireless PC Windows Mac Black G703 Authentic\nAbout this item\n【Logicool G G703h Wireless Gaming Mouse】The G703h, with its ergonomic design tailored to the shape of the human hand, has been upgraded to the latest HERO 25K sensor compared to the previous G703/G703d, reducing weight from 107g to 95g and extending battery life from 32 hours to 60 hours, achieving a more powerful and lighter design\n【HERO Sensor Further Evolution】The next-generation HERO 16K sensor installed in the G703h has evolved to 25K Accuracy performance improved by approximately 4 times, power efficiency improved by approximately 10 times, and maximum tracking accuracy upgraded from 16,000 DPI to 25,000 DPI (GHUB firmware update is required to update to 25K)\n【Ultra-fast Wireless with No Latency】Equipped with super-fast LIGHTSPEED technology, the 1ms wireless gaming mouse G703h frees you from the hassle of wired cables\n【Wireless charging support】POWERPLAY support allows for constant charging while playing, so no need for new batteries With a full charge, enjoy up to 60 hours of gameplay under normal charging conditions, and 2.5 hours of gameplay with a 5-minute charge via standard USB port\nPackage Contents: Headset, LIGHTSPEED Wireless Receiver, Receiver extension adapter, Charging/data cable, 10g weight (optional), Quick Start Guide, 2-year free warranty, warranty terms\nEquipped with an advanced HERO 25K sensor, the G703 LIGHTSPEED has reached next-generation performance Enjoy next-level tracking, enhanced LIGHTSPEED, and 10 times the power efficiency of the previous generation Also, you don't have to worry about charging thanks to POWERPLAY The ultimate LIGHTSPEED loadout is now complete › See more product details\nBrand Logicool G\nColor Black\nConnectivity Technology Wi-Fi\nSpecial Feature Wireless | Lightweight | Ergonomic Design\nMovement Detection Technology Optical",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Logicool G Wireless Gaming Mouse G703h Lightspeed HERO 25K Sensor Ergonomics LIGHTSYNC RGB Powerplay Wireless Charging Compatible Gaming Mouse Rechargeable Wireless PC Windows Mac Black G703 Authentic",
+          "url": "https://www.amazon.co.jp/dp/B07SYKKP47",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "ergonomics",
-      "label": "形状・重量・握りやすさ",
-      "keywords": [
-        "軽量",
-        "エルゴノミクス",
-        "つかみ持ち"
+      "amazon_title": "【Amazon.co.jp限定】Logicool G 8000Hz ポーリングレート PRO X SUPERLIGHT 2c コンパクト ワイヤレス ゲーミングマウス G-PPD-004WLCO-BKd 軽量 51g LIGHTSPEED HERO2 センサー USB Type-C 充電 POWERPLAY ブラック 国内正規品 ※Amazon.co.jp限定 壁紙ダウンロード付き",
+      "asin": "B0FG74B2PC",
+      "brand": "Logicool G",
+      "discovery_axis_id": "fps-aim-control",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51Gn4GWV7mL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0FG74B2PC",
+      "provisional": false,
+      "rating": 4.4,
+      "ref": "p3",
+      "review_count": 167,
+      "search_key": "Logicool G 8000Hz ポーリングレート PRO X SUPERLIGHT",
+      "selection_reason": "PRO X SUPERLIGHT 2cは51gのコンパクトな左右対称形状。FPSでマウスを細かく動かす際、小さめの本体と軽さを重視する人に、形状と重量の両方から選ぶ理由がある。商品情報には約95時間の連続使用とUSB Type-C充電も記載されており、MMOを含む長めのプレイでの運用も考えられる。",
+      "sources": [
+        {
+          "brand": "Logicool G",
+          "excerpt": "Logicool G-PPD-004WLCO-BKd G-8000Hz Polling Rate, PRO X Superlight 2c Compact Wireless Gaming Mouse, Lightweight, 1.8 oz (51 g), LIGHTSPEED HERO2 Sensor, USB Type-C Charging, POWERPLAY, Black\nAbout this item\nThe compact size of the PRO X SUPERLIGHT 2c wireless gaming mouse was developed in collaboration with the world's top players in the pursuit of victory. It has inherited the superior performance of the top model \"PRO X SUPERLIGHT 2\", achieved a lighter and compact design. Weighing only 1.8 oz (51 g)\nOptimized for compact shape 1.8 oz (51 g) / The symmetrical shape is highly rated by top players in the world and still allows players to experience the best operation and performance of smaller mice / Allows for quicker and more precise operation even during long periods of play\nEquipped with Logitech G exclusive HERO2 sensor; Supports fast 8 KHz polling rates; Tracking accuracy with up to 32K DPI and 888 IPS for sub micron levels; Can be set to meet more detailed needs\nEquipped with Logitech G's unique hybrid switch \"LIGHTFORCE\". Mechanical switches click and optical switches for fast and precise operations. Hybrid switches incorporate the best of both worlds; High gaming performance and durability\nWireless Technology Connects to LIGHTSPEED Wireless Receiver (USB) / Ultra Fast Response Time, Zero Delay\nImproved power efficiency: Provides approximately 95 hours of continuous use and energy saving performance on a full charge of approximately 1 hour; Also compatible with the PowerPlay 2 Wireless Charging System that allows wireless charging while playing, so you can use it without worrying about the remaining battery. *POWERPLAY 2 (G-PMP-001-SE) sold separately\nWe provide substantial after-sales follow-up by call centers in Japan\nSupported OS: Windows 10 or later, USB 2.0 port; Options: Internet environment; *Required when downloading Logicool G HUB software › See more product details\nBrand Logicool G\nColor Black (1 year warranty)\nSpecial Feature Compact, Lightweight, Wireless\nNumber of Buttons 3\nHand Orientation Ambidextrous",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Logicool G-PPD-004WLCO-BKd G-8000Hz Polling Rate, PRO X Superlight 2c Compact Wireless Gaming Mouse, Lightweight, 1.8 oz (51 g), LIGHTSPEED HERO2 Sensor, USB Type-C Charging, POWERPLAY, Black",
+          "url": "https://www.amazon.co.jp/dp/B0FG74B2PC?th=1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "Redragon M719-WL 無線ゲーミングマウス Bluetooth/2.4G/有線 8ボタン 軽量 89g 最大24000DPI 連射機能",
+      "asin": "B0G7HS1M6S",
+      "brand": "Redragon",
+      "discovery_axis_id": "fps-aim-control",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51TeNjW2eYL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0G7HS1M6S",
+      "provisional": false,
+      "rating": 4.3,
+      "ref": "p4",
+      "review_count": 203,
+      "search_key": "Redragon M719-WL 無線ゲーミングマウス Bluetooth/2.4",
+      "selection_reason": "Redragon M719-WLは89gのエルゴノミクス形状で、2.4GHz無線・Bluetooth・USB Type-C有線を切り替えられる。FPSで手に沿う形状を試したい人、とくにプレイ環境に応じて接続方法も変えたい人に向く。8個のボタンはすべて割り当て可能と記載されており、MMOで使う一部の操作も手元に置ける。",
+      "sources": [
+        {
+          "brand": "Redragon",
+          "excerpt": "Redragon M719-WL Wireless Gaming Mouse, Bluetooth/2.4G/Wired, 8 Buttons\nAbout this item\n3 Modes Connection & High Specs: 2.4 GHz, Bluetooth, and wired (USB Type-C). Equipped with a high-performance sensor with a polling rate of up to 24,000 DPI and a 1,000 Hz, making it suitable for a wide range of occasions, from FPS games to working at home\nLightweight Design & Long Battery Life: Ergonomic design and lightweight body only 3.1 oz (89 g). Built-in high capacity 600mAh battery provides up to 35 hours of RGB illumination and 85 hours of non-luminous\nRGB Backlight & Gaming Performance: The chic black body is equipped with 16.8 million colors RGB light. With 6 different lighting modes, such as \"steady-on\" and \"breathing\" to create a stylish gaming environment. The muted design will fit into a minimalist desk, but you can change the atmosphere freely with the light\nContinuous Shooting Function & Programmable Buttons: Equipped with a continuous shooting function that allows you to shoot 3 rows with 1 click. All 8 buttons can be programmed, even with complex macro settings and key assignments, and can be customized freely\nEasy Connection & Wide Range of DPI Settings: No need to complicated setup. In addition to 2.4 GHz connectivity by simply plugging the receiver, it also supports Bluetooth connection. DPI can be adjusted multiple levels to suit your preference and application\nAbout Drivers: The dedicated driver can be downloaded from the official Redragon website (redragonzone.com). Search \"MICE\" → \"M719-WL\". Driver is 2.4G / wired mode, only supports Windows environment. Mouse body works with a wide range of devices including Windows, Mac, and iPad › See more product details\nBrand Redragon\nColor Black\nConnectivity Technology 2.4GHz/Bluetooth/Wired Type-C\nSpecial Feature LED Lights, Lightweight, Portable, Programmable Buttons, Wireless\nMovement Detection Technology Optical\nVisit the Redragon Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Redragon M719-WL Wireless Gaming Mouse, Bluetooth/2.4G/Wired, 8 Buttons",
+          "url": "https://www.amazon.co.jp/dp/B0G7HS1M6S?th=1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "Razer Naga Trinity サイドボタンを2/7/12ボタンに付け替え可能 USB MMO/MOBAゲーミングマウス ブラック 【日本正規代理店保証品】 RZ01-02410100-R3M1",
+      "asin": "B079X6QP6H",
+      "brand": "Razer",
+      "discovery_axis_id": "mmo-command-access",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81QfYA1jHzS._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B079X6QP6H",
+      "provisional": false,
+      "rating": 4.2,
+      "ref": "p5",
+      "review_count": 385,
+      "search_key": "Razer Naga Trinity サイドボタンを2/7/12ボタンに付け",
+      "selection_reason": "Naga Trinityはサイドプレートを2・7・12ボタンの配置に付け替えられる。FPSでは親指の操作箇所を絞り、MMOではスキルやショートカットを多く置きたい人が、遊ぶゲームに合わせてボタン配置そのものを変えられる点が固有の魅力。右手用の形状で、最大19コマンドを実行できると記載されている。",
+      "sources": [
+        {
+          "brand": "Razer",
+          "excerpt": "Razer Naga Trinity Interchangeable Side Plates with 2/7/12 Button Configurations USB MMO/MOBA Gaming Mouse Black 【日本正規代理店保証品】 RZ01-02410100-R3M1\nAbout this item\n16,000 DPI 450IPS 5G Optical Sensor\nEquipped with buttons that can instantly execute up to 19 commands\nOptimized form factor specifically for right-handed use\nCompatible with Razer Chroma\n16.8 million color backlight color options\nPolling rate up to 1000 Hz (changable)\nPro Gamer Team Father's Back Recommended Product\nSize (Approx.): Length: 4.69 inches (119 mm); Width: 2.93 inches (74 mm); Height: 1.69 inches (43 mm)\nWeight (Approx.) 120 g / 0.26 lbs (excluding cable weight) Show More › See more product details\nBrand Razer\nColor Black\nConnectivity Technology USB\nSpecial Feature Backlight\nMovement Detection Technology Optical",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Razer Naga Trinity Interchangeable Side Plates with 2/7/12 Button Configurations USB MMO/MOBA Gaming Mouse Black 【日本正規代理店保証品】 RZ01-02410100-R3M1",
+          "url": "https://www.amazon.co.jp/dp/B079X6QP6H",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "Redragon M811 PROワイヤレスmmoゲーミングマウス、15のプログラム可能なボタンrgbゲーマーマウスw/人間工学に基づいた自然なグリットビルド、10サイドマクロキー、ソフトウェアはdiyキー&バックライトをサポートしています",
+      "asin": "B0BZ48R28T",
+      "brand": "Redragon",
+      "discovery_axis_id": "mmo-command-access",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61NuRwIDbXL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0BZ48R28T",
+      "provisional": false,
+      "rating": 4.0,
+      "ref": "p6",
+      "review_count": 1039,
+      "search_key": "Redragon M811 PROワイヤレスmmoゲーミングマウス、15のプログラ",
+      "selection_reason": "Redragon M811 PROは側面に2＋8の計10キーを備え、全15ボタンの割り当てに対応する。MMOで頻繁に使うスキルを親指の届く範囲へまとめ、FPS用には別のキー設定を作りたい人に向く。専用ソフトでキー割り当てを編集でき、2.4GHz無線接続に対応すると記載されている。",
+      "sources": [
+        {
+          "brand": "Redragon",
+          "excerpt": "Redragon M811 PRO Wireless MMO Gaming Mouse, 15 Programmable Buttons RGB Gamer Mouse with Ergonomic Natural Grit Build, 10 Side Macro Keys, Software Supports DIY Keys & Backlight\nAbout this item\nWIRELESS FREEDOM FLY - The upgraded M811 aatrox features high-speed 2.4 ghz wireless connection technology to provide fast, accurate input and operation Cordless does not hold anything in your way to win, fast and high flying fun\nPentakill, 5 DPI levels - Supports five redefinable DPI levels (default: 1000/2000/4000/8000/26000) The dedicated demands of the DPI option between 100-26000 can also be processed by software\nCapture advanced shots - All 15 programmable buttons can be edited using customizable tactical keybinds for any game or task you are engaged in All is covered with the default 2 + 8 epic MMO side buttons\nComfort and natural grip - The m811 has a perfect shape that lasts long, following the natural structure of the human hand It allows you to easily handle gaming parties from AM to PM, overtime, and last-minute work with less fatigue\n5 authentic backlight modes—Turn on the backlight to enhance your gaming battlefield The flashy dynamic RGB backlit ambiance will never let you down when decorating your gaming space\nUNCOMPROMISED DRIVER SUPPORT - All 15 buttons with hot keys, media, DPI settings and 16.8 million color lighting effects can be customized with Redragon exclusive software Aim for your opponent in advance and achieve an overwhelming victory in exactly the way you desired › See more product details\nBrand Redragon\nColor Black\nConnectivity Technology Wireless\nSpecial Feature Programmable Button, Wireless\nMovement Detection Technology Optical\nVisit the Redragon Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Redragon M811 PRO Wireless MMO Gaming Mouse, 15 Programmable Buttons RGB Gamer Mouse with Ergonomic Natural Grit Build, 10 Side Macro Keys, Software Supports DIY Keys & Backlight",
+          "url": "https://www.amazon.co.jp/dp/B0BZ48R28T",
+          "verified": true
+        }
       ]
     }
   ],
   "selection": {
-    "comparison_axes_covered": [
-      "connection",
-      "ergonomics"
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B07DVC25R2",
+            "reason": "G304は幅62.15mm・奥行116.6mmのコンパクトな本体に、99gのワイヤレス設計と6個のプログラム可能なボタンを備える。FPSでは小ぶりなマウスで視点操作をしたく、MMOでは少数のよく使う操作を割り当てたい人が、両方を遊ぶための基準にしやすい。単3電池1本で最大250時間使えるという記載も、電池式を選ぶ判断材料になる。"
+          },
+          {
+            "asin": "B07SYKKP47",
+            "reason": "G703hは手の形に沿うエルゴノミクス形状の充電式ワイヤレスマウスで、本体重量は95g。FPSで手を載せたときの形状を重視し、ゲームを行き来しても同じ握り方で操作したい人に向く。付属の10gウェイトで重さを調整でき、通常の充電では最大60時間使えると記載されている。"
+          }
+        ]
+      },
+      {
+        "axis_id": "fps-aim-control",
+        "products": [
+          {
+            "asin": "B0FG74B2PC",
+            "reason": "PRO X SUPERLIGHT 2cは51gのコンパクトな左右対称形状。FPSでマウスを細かく動かす際、小さめの本体と軽さを重視する人に、形状と重量の両方から選ぶ理由がある。商品情報には約95時間の連続使用とUSB Type-C充電も記載されており、MMOを含む長めのプレイでの運用も考えられる。"
+          },
+          {
+            "asin": "B0G7HS1M6S",
+            "reason": "Redragon M719-WLは89gのエルゴノミクス形状で、2.4GHz無線・Bluetooth・USB Type-C有線を切り替えられる。FPSで手に沿う形状を試したい人、とくにプレイ環境に応じて接続方法も変えたい人に向く。8個のボタンはすべて割り当て可能と記載されており、MMOで使う一部の操作も手元に置ける。"
+          }
+        ]
+      },
+      {
+        "axis_id": "mmo-command-access",
+        "products": [
+          {
+            "asin": "B079X6QP6H",
+            "reason": "Naga Trinityはサイドプレートを2・7・12ボタンの配置に付け替えられる。FPSでは親指の操作箇所を絞り、MMOではスキルやショートカットを多く置きたい人が、遊ぶゲームに合わせてボタン配置そのものを変えられる点が固有の魅力。右手用の形状で、最大19コマンドを実行できると記載されている。"
+          },
+          {
+            "asin": "B0BZ48R28T",
+            "reason": "Redragon M811 PROは側面に2＋8の計10キーを備え、全15ボタンの割り当てに対応する。MMOで頻繁に使うスキルを親指の届く範囲へまとめ、FPS用には別のキー設定を作りたい人に向く。専用ソフトでキー割り当てを編集でき、2.4GHz無線接続に対応すると記載されている。"
+          }
+        ]
+      }
     ],
-    "brand_count": 2,
-    "price_used_as_constraint_only": true
+    "brand_count": 3,
+    "candidate_count": 30,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [
+      {
+        "asin": "B07DVC25R2",
+        "check_items": {
+          "color_design_only": "UNKNOWN",
+          "function_structure_difference": "UNKNOWN",
+          "independent_comparison_value": "UNKNOWN",
+          "manufacturer_brand_relation": "UNKNOWN",
+          "sales_packaging_only": "UNKNOWN",
+          "same_product_body": "FAIL",
+          "series_generation_difference": "UNKNOWN",
+          "size_capacity_difference": "UNKNOWN"
+        },
+        "duplicate_of_asin": "B07DVC25R2",
+        "reason": "same_asin"
+      }
+    ],
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": [
+      "B07DVC25R2"
+    ],
+    "targeted_replacement": true
   },
-  "products": [
-    {
-      "ref": "p1",
-      "product_id": "AMZ-B0C5XNRVWM",
-      "asin": "B0C5XNRVWM",
-      "amazon_title": "Razer Cobra",
-      "brand": "Razer",
-      "image_url": "https://m.media-amazon.com/images/I/51O6HhLrSZL._AC_SY300_SX300_QL70_ML2_.jpg",
-      "observed_price": 2170,
-      "discovery_score": 1,
-      "selection_score": 0.88,
-      "matched_comparison_axes": [
-        "connection",
-        "ergonomics"
-      ],
-      "search_key": "Cimetech マウス 無線 (BT 5.1+2.4G) Bluetooth 静",
-      "selected_variant": "ブラック・有線・58g"
-    },
-    {
-      "ref": "p2",
-      "product_id": "AMZ-B0D7YT6HZ9",
-      "asin": "B0D7YT6HZ9",
-      "amazon_title": "Logicool G309WL-BK",
-      "brand": "Logicool",
-      "image_url": "https://m.media-amazon.com/images/I/61shc+5eUqL._AC_SY300_SX300_QL70_ML2_.jpg",
-      "observed_price": 2080,
-      "discovery_score": 1,
-      "selection_score": 0.47,
-      "matched_comparison_axes": [
-        "connection"
-      ],
-      "search_key": "AJL マウス 無線 Bluetooth5.2 静音 ワイヤレスマウス（",
-      "selected_variant": "G309 LIGHTSPEED・ブラック・国内正規品"
-    },
-    {
-      "ref": "p3",
-      "product_id": "AMZ-B0D9VWPG1T",
-      "asin": "B0D9VWPG1T",
-      "amazon_title": "Logicool GPROXSL-WLDEXBKd",
-      "brand": "Logicool",
-      "image_url": "https://m.media-amazon.com/images/I/61CFuum7uvL._AC_SY300_SX300_QL70_ML2_.jpg",
-      "observed_price": 29500,
-      "discovery_score": 1,
-      "selection_score": 0.4,
-      "matched_comparison_axes": [],
-      "search_key": "Logicool G PRO X3 SUPERSTRIKE LI",
-      "selected_variant": "PRO X SUPERLIGHT 2 DEX・ブラック・Amazon限定1年保証版"
-    },
-    {
-      "ref": "p4",
-      "product_id": "AMZ-B0GLM7WKVH",
-      "asin": "B0GLM7WKVH",
-      "amazon_title": "Razer Viper V4 Pro RZ01-05630100-R3A1",
-      "brand": "Razer",
-      "image_url": "https://m.media-amazon.com/images/I/71UvLd6bHAL._AC_SY300_SX300_QL70_ML2_.jpg",
-      "observed_price": 26980,
-      "discovery_score": 1,
-      "selection_score": 0.4,
-      "matched_comparison_axes": [
-        "ergonomics"
-      ],
-      "search_key": "Razer レイザー Viper V4 Pro ゲーミングマウス",
-      "selected_variant": "ブラック・49g・ドングル同梱・日本正規代理店保証品"
-    },
-    {
-      "ref": "p5",
-      "product_id": "AMZ-B0BHKRD3GY",
-      "asin": "B0BHKRD3GY",
-      "amazon_title": "Logicool G502X-BK",
-      "brand": "Logicool",
-      "image_url": "https://m.media-amazon.com/images/I/51szvfC-fDL._AC_SY300_SX300_QL70_ML2_.jpg",
-      "observed_price": 26500,
-      "discovery_score": 1,
-      "selection_score": 0.4,
-      "matched_comparison_axes": [],
-      "search_key": "Logicool G PRO X2 SUPERSTRIKE ゲー",
-      "selected_variant": "G502 X・ブラック・有線・国内正規品"
-    },
-    {
-      "ref": "p6",
-      "product_id": "AMZ-B09W1B5S5W",
-      "asin": "B09W1B5S5W",
-      "amazon_title": "SteelSeries Aerox 5 Wireless 62406",
-      "brand": "SteelSeries",
-      "image_url": "https://m.media-amazon.com/images/I/81-nE4e2YvL._AC_SY300_SX300_QL70_ML2_.jpg",
-      "observed_price": 18600,
-      "discovery_score": 1,
-      "selection_score": 0.4,
-      "matched_comparison_axes": [],
-      "search_key": "Logicool G PRO SUPERLIGHT ワイヤレス",
-      "selected_variant": "ブラック・無線・9ボタン"
-    }
-  ]
+  "slug": "gaming-mice-6-picks"
 }
