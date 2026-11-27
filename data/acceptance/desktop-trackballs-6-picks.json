@@ -1,0 +1,130 @@
+{
+  "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+  "evidence_sha256": "37a6a79c89d381975b12485e1bf882a84e8301785cc94bbe93d5ee40597aa9ae",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 11520,
+    "input_tokens": 27249,
+    "listing_identity_citations_repaired": [
+      "p1",
+      "p2",
+      "p3",
+      "p4",
+      "p5",
+      "p6"
+    ],
+    "member_binding_revision": 4,
+    "output_tokens": 1541,
+    "reasoning_effort": "medium",
+    "reasoning_output_tokens": 319,
+    "reused_product_qa": true,
+    "session_id": "01a21af7-4b14-7e10-a376-2da9a9693a4d",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "fd3aafb500c7d058f76f230aea52d66bfbb4e174af78e7f503dcd122c8dc30d0",
+  "review": {
+    "buying_guidance": false,
+    "claims_grounded": false,
+    "complete_comparison": false,
+    "distinct_products": true,
+    "duplicate_pair_checks": [],
+    "editorial_voice_appropriate": false,
+    "internal_qa_leak_absent": false,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "popular",
+            "quote": "The popular trackball mouse M575 has been updated with silent operation and connection method!"
+          }
+        ],
+        "identity_key": "ロジクール 静音 ワイヤレス トラックボール マウス M575SPGR Bluetooth Logibolt 無線 windows mac iPad OS Chrome トラックボ",
+        "identity_quote": "ロジクール 静音 ワイヤレス トラックボール マウス M575SPGR Bluetooth Logibolt 無線 windows mac iPad OS Chrome トラックボールマウス グラファイト M575 M575SP 国内正規品",
+        "reason": "M575SPGRとして識別できる親指操作のトラックボール。掲載情報はM575の更新モデルと説明しており、定番モデルを探す読者に紹介できる。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "popular",
+            "quote": "This wireless track ball \"DEFT\" features an index finger operation type"
+          }
+        ],
+        "identity_key": "エレコム マウス ワイヤレス (レシーバー付属) トラックボール 人差し指用 8ボタン ブラック M-DT2DRBK",
+        "identity_quote": "エレコム マウス ワイヤレス (レシーバー付属) トラックボール 人差し指用 8ボタン ブラック M-DT2DRBK",
+        "reason": "M-DT2DRBKとして識別できる人差し指操作のDEFT。親指操作以外の定番候補として紹介できる。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "compact_fixed_desk",
+            "quote": "Equipped with a scroll ring that helps you scroll up and down your websites and Word documents smoothly"
+          }
+        ],
+        "identity_key": "Kensington Kensington K70992JP Orbit Wireless Trackball with Scroll Ring, Black and Red",
+        "identity_quote": "Kensington Kensington K70992JP Orbit Wireless Trackball with Scroll Ring, Black and Red",
+        "reason": "K70992JPとして識別できる、中央ボールとスクロールリングを備えたトラックボール。机上で本体を動かさずに使う切り口に合う。選定理由にある寸法とリストレストの着脱は、取得済みの商品掲載情報だけでは未確認。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "compact_fixed_desk",
+            "quote": "This thumb-operated \"IST\" trackball features an ergonomic shape"
+          }
+        ],
+        "identity_key": "Elecom M-IT10DRABK Wireless Trackball Mouse, Wireless 2.4GHz IST Series, 5 Buttons, Thumb",
+        "identity_quote": "Elecom M-IT10DRABK Wireless Trackball Mouse, Wireless 2.4GHz IST Series, 5 Buttons, Thumb Operation, Supports Artificial Ruby Windows/Mac/Chrome, Black",
+        "reason": "M-IT10DRABKとして識別できる親指操作のIST。ボールでポインターを操作する据え置き型として紹介できる。選定理由にある本体寸法は、取得済みの商品掲載情報だけでは未確認。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "two_pc_switching",
+            "quote": "Features a switch to toggle between Bluetooth connection and 2.4GHz wireless connection, allowing smooth operation of two devices"
+          }
+        ],
+        "identity_key": "Elecom M-MT2MRSABK Trackball Mouse, Bitra Silent, Index Finger Control, Bluetooth, Wireles",
+        "identity_quote": "Elecom M-MT2MRSABK Trackball Mouse, Bitra Silent, Index Finger Control, Bluetooth, Wireless, 2.4 GHz, 2 Units, Multi-Pairing, 5 Buttons, Dedicated Storage Case Included, Black",
+        "reason": "M-MT2MRSABKとして識別できる人差し指操作のbitra。Bluetoothと2.4GHz接続を切り替えられ、2台の端末を使う切り口に直接合う。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "two_pc_switching",
+            "quote": "You can switch between two connection methods according to the scene, and register up to three connection destinations Switching the connection target and pairing operation is possible with the button on the side of the main unit"
+          }
+        ],
+        "identity_key": "Elecom IST PLUS M-IT10MRSAWH Wireless Trackball Mouse, Ball Roller, 2 Bluetooth x 2, Wirel",
+        "identity_quote": "Elecom IST PLUS M-IT10MRSAWH Wireless Trackball Mouse, Ball Roller, 2 Bluetooth x 2, Wireless 2.4 GHz x 1, Multi-Connection, Quiet, Windows, Mac, iPad, Chrome, Android, White",
+        "reason": "M-IT10MRSAWHとして識別できるIST PLUSのボールローラー型。最大3つの接続先を登録し、本体側面のボタンで切り替えられるため、仕事用・私用PCを行き来する切り口に合う。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reader_decision_outsourcing_absent": false,
+    "reason": "6商品はそれぞれ取得済みの商品掲載タイトルから識別でき、色や数量だけが異なる同一商品と判断できる証拠はない。いずれもトラックボールで、割り当てられた3つの紹介切り口に各2商品が収まる。寸法など掲載資料で確認できない詳細は、記事で具体的事実として使う前に裏付けが必要。",
+    "recommendation_conclusion": false,
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}
