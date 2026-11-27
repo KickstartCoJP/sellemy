@@ -50,7 +50,7 @@ WRITER_JSON_SCHEMA = {
                 'properties': {'ref': {'type': 'string'}, 'h3': {'type': 'string'}, 'description': {'type': 'string'}},
             },
         },
-        'how_to_choose': {'type': 'string'}, 'conclusion': {'type': 'string'},
+        'how_to_choose': {'type': 'string', 'description': 'Optional article-specific general context; use empty string when no independent useful section is needed.'}, 'conclusion': {'type': 'string'},
     },
 }
 
@@ -135,7 +135,7 @@ def _prompt(topic: dict, evidence: dict, *, previous_payload: dict | None = None
         '文脈を壊す不用意な水増し文章、定型的な注意書き、内部QA用語、不要な仕様説明を書かないでください。slug、category、商品参照IDを維持してください。\\n\\n'
         '編集QAで根拠のない具体表現（仕様・数値・性能・効果・使用体験）が指摘されたら、該当表現は削除して再利用せず、確認できた事実と裏付けのある特徴・用途・生活場面を自然に伝える文章へ修正してください。確認できない事実を創作して補完しないでください。\\n\\n'
         '商品ページの掲載タイトルから確認できる名称・型番・数量・寸法等は掲載情報として紹介できます。詳細出典がない場合は性能・耐久性・効能などを断定しないでください。追加の仕様が不明なだけで記事をBLOCKEDにせず、確認できる商品情報だけを記述してください。商品refが違う根拠を転用せず、QAが削除指定した根拠のない主張を言い換えて戻さないでください。\\n\\n'
-        '記事の既存順序を維持し、lead・summary・comparison_groups・how_to_choose・conclusionは商品非依存の一般情報としてください。SEO・AEOの検索意図に自然に答え、商品カセットでは短く正確な個別商品説明に限定してください。導入と結びには十分な内容を持たせ、単に商品紹介を言い換えることは避けてください。\n\n'
+        '記事の既存順序を維持し、lead・summary・comparison_groups・conclusionは商品非依存の一般情報としてください。how_to_chooseは互換性のためのJSON欄であり、独立した一般解説に実質的な価値がある場合のみ記述し、それ以外は空文字列にしてください。タイトルと本文構成は企画で確定した切り口と読者の目的を反映し、補助欄の名称に合わせた見出しを作らないでください。商品カセットでは短く正確な個別商品説明に限定してください。導入と結びには十分な内容を持たせ、単に商品紹介を言い換えることは避けてください。\n\n'
         f'TOPIC:\n{json.dumps(topic, ensure_ascii=False, sort_keys=True)}\n\n'
         '商品はEvidence.selection.axesの確定済み割当をそのまま使い、組をまたいで並べ替えないでください。選定理由に含まれる未検証の規格・性能を本文へ転用しないでください。\n'
         f'EVIDENCE:\n{json.dumps(evidence, ensure_ascii=False, sort_keys=True)}'

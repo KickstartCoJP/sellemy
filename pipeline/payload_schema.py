@@ -49,7 +49,7 @@ def validate_payload(payload: dict) -> None:
     for field in REQUIRED_ARTICLE_FIELDS:
         if field not in payload:
             raise PayloadValidationError(f'payload missing required field: {field}')
-    for field in ('slug', 'category', 'h1', 'lead', 'summary', 'how_to_choose', 'conclusion'):
+    for field in ('slug', 'category', 'h1', 'lead', 'summary', 'conclusion'):
         _require_nonempty_str(payload[field], f'payload.{field}')
     _validate_category(payload['category'], 'payload.category')
 
