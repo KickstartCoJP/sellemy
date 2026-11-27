@@ -239,7 +239,7 @@ def recover_legacy_failed_jobs() -> list[str]:
     """
     recovered = []
     for row in all_jobs():
-        if row.get('status') not in {'ACTIVE', 'FAILED'} or row.get('current_stage') in {'STATE_HOLD', 'CHAT_REVIEW_PENDING'}:
+        if row.get('status') not in {'ACTIVE', 'FAILED'} or row.get('current_stage') in {'STATE_HOLD', 'CHAT_REVIEW_PENDING', 'COO_REVIEW_PENDING'}:
             continue
         # Approved legacy published articles are being repaired using their
         # original evidence and current independent QA; never discard this
@@ -348,12 +348,12 @@ def save_writer_result(slug: str, *, payload: dict, qa: dict, findings: list[str
         from operating_profile import normal_profile
         approval = certify(payload, read_artifact(slug, 'evidence.json'), qa, read_artifact(slug, 'acceptance.json'))
         write_artifact(slug, 'qa-certification.json', approval)
-        state['current_stage'] = 'CHAT_REVIEW_PENDING'
+        state['current_stage'] = 'COO_REVIEW_PENDING'
         state['next_retry_at'] = None
         state['last_failure_class'] = None
         state['last_failure_code'] = None
         state['last_failure_reason'] = None
-        saved = _save_state(state, event='WRITER_QA_PASSED')
+        saved = _save_state(state, event='WRITER_QA_PASSED', detail={'reviewer_role': 'coo'})
         from adaptive_publish import AdaptivePublishController
         from comparison_acceptance import digest
         AdaptivePublishController(ROOT).record_ceo_review_arrival(slug, digest(payload))

@@ -15,7 +15,7 @@ DEPLOY = "b" * 40
 
 class ArticleReleaseTests(unittest.TestCase):
     def do_release(self, *, status="SUCCESS", base=SHA, head=SHA,
-                   dirty="", pr_sha=SHA, parent=SHA):
+                   dirty="", pr_sha=SHA, parent=SHA, reviewer_role=None):
         calls = []
         remote_reads = [0]
         def run(root, *args, check=True):
@@ -44,7 +44,7 @@ class ArticleReleaseTests(unittest.TestCase):
             return {}
         # The mock preserves Git commands and forbids actual network.
         with patch.object(ar, "_run", side_effect=run), patch.object(ar, "_gh", side_effect=gh):
-            return ar.release(Path("/unused"), "item", SHA, timeout=1), calls
+            return ar.release(Path("/unused"), "item", SHA, timeout=1, reviewer_role=reviewer_role), calls
 
     def test_rejects_invalid_slug_without_io(self):
         with patch.object(ar, "_run", side_effect=AssertionError("I/O attempted")):
@@ -72,6 +72,11 @@ class ArticleReleaseTests(unittest.TestCase):
         self.assertEqual(sha, DEPLOY)
         self.assertTrue(any("context=ceo-staging-approval" in x for x in calls))
         self.assertTrue(any(x[:3] == ("git", "reset", "--hard") for x in calls))
+
+    def test_coo_status_identifies_actual_reviewer(self):
+        sha, calls = self.do_release(reviewer_role="coo")
+        self.assertEqual(sha, DEPLOY)
+        self.assertTrue(any("description=Exact-version COO article approval and QA passed" in x for x in calls))
 
 
 if __name__ == "__main__":

@@ -8,7 +8,7 @@ class ChatApprovalError(ValueError):
 
 
 def make_chat_approval(*, payload: dict, evidence: dict, decision: str, publish_allowed: bool,
-                       reason: str, reviewer_surface: str = 'chatgpt') -> dict:
+                       reason: str, reviewer_surface: str = 'chatgpt', reviewer_role: str | None = None) -> dict:
     if decision not in {'CERTIFIED', 'REWORK', 'RETIRED'}:
         raise ChatApprovalError(f'invalid decision: {decision}')
     if publish_allowed is not (decision == 'CERTIFIED'):
@@ -17,7 +17,10 @@ def make_chat_approval(*, payload: dict, evidence: dict, decision: str, publish_
         raise ChatApprovalError('review reason is required')
     if reviewer_surface != 'chatgpt':
         raise ChatApprovalError('final publication approval must come from ChatGPT chat surface')
+    if reviewer_role not in (None, 'coo'):
+        raise ChatApprovalError('unsupported reviewer role')
     return {
+        **({'reviewer_role': reviewer_role} if reviewer_role else {}),
         'schema': 'sellemy-chat-publish-approval/v1',
         'reviewer_surface': reviewer_surface,
         'decision': decision,
@@ -34,6 +37,7 @@ def approval_issues(receipt, *, payload: dict, evidence: dict) -> list[str]:
     issues=[]
     if receipt.get('schema') != 'sellemy-chat-publish-approval/v1': issues.append('chat approval schema invalid')
     if receipt.get('reviewer_surface') != 'chatgpt': issues.append('final reviewer is not ChatGPT chat surface')
+    if receipt.get('reviewer_role') not in (None, 'coo'): issues.append('final reviewer role is invalid')
     if receipt.get('decision') != 'CERTIFIED': issues.append('article is not CERTIFIED')
     if receipt.get('publish_allowed') is not True: issues.append('publish_allowed is not true')
     if not str(receipt.get('reason') or '').strip(): issues.append('chat review reason missing')

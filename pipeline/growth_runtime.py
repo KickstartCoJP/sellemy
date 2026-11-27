@@ -75,8 +75,8 @@ def _execute_job(slug: str, result: dict, *, cache_only: bool = False) -> str | 
                 if reviewer_receipt.get('review_passed') is not True:
                     raise GrowthRuntimeError('reviewer omitted pass receipt')
                 continue
-            if action == 'ceo_review':
-                result['status'] = 'awaiting_chatgpt_final_review'
+            if action == 'coo_review':
+                result['status'] = 'awaiting_coo_final_review'
                 result['published'] = False
                 return None
             if action == 'designer':
@@ -237,7 +237,7 @@ def run(*, publish: bool, cache_only: bool = False, report_path: Path | None = R
             raise
         if commit is None and result.get('status') == 'planning_research_hold':
             return result
-        if commit is None and result.get('status') == 'awaiting_chatgpt_final_review':
+        if commit is None and result.get('status') == 'awaiting_coo_final_review':
             return result
         result.update({'commit': commit, 'published': True, 'status': 'published'})
         try:

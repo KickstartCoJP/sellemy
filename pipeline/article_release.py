@@ -1,4 +1,4 @@
-"""Release one CEO-approved article via protected GitHub PR, not direct main push."""
+"""Release one approved article via protected GitHub PR, not direct main push."""
 from __future__ import annotations
 
 import json
@@ -27,13 +27,14 @@ def _gh(root: Path, *args: str) -> dict:
     return json.loads(result.stdout)
 
 
-def release(root: Path, slug: str, candidate: str, *, timeout: int = 180) -> str:
+def release(root: Path, slug: str, candidate: str, *, timeout: int = 180, reviewer_role: str | None = None) -> str:
     """Publish only an already-validated local article commit; return main commit."""
     if not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", slug):
         raise ArticleReleaseError("invalid publication slug")
     if not re.fullmatch(r"[0-9a-f]{40}", candidate):
         raise ArticleReleaseError("invalid candidate commit")
-    # The caller must have completed existing CEO approval and publication QA.
+    # Preserve the existing required status context; whose decision it records is explicit.
+    actor = 'COO' if reviewer_role == 'coo' else 'CEO'
     if _run(root, "git", "status", "--porcelain").stdout.strip():
         raise ArticleReleaseError("dirty worktree: publication refused")
     if _run(root, "git", "rev-parse", "HEAD").stdout.strip() != candidate:
@@ -50,8 +51,8 @@ def release(root: Path, slug: str, candidate: str, *, timeout: int = 180) -> str
                  "--json", "number,headRefOid")
     except ArticleReleaseError:
         _run(root, GH, "pr", "create", "--repo", REPO, "--base", "main",
-             "--head", branch, "--title", f"CEO承認済み記事の公開：{slug}",
-             "--body", f"既存のCEO公開承認・品質検査を通過した記事のみを公開。対象：{slug}。変更範囲は公開用11ファイルに限定。")
+             "--head", branch, "--title", f"{actor}承認済み記事の公開：{slug}",
+             "--body", f"{actor}による当該版の公開承認・品質検査を通過した記事のみを公開。対象：{slug}。変更範囲は公開用11ファイルに限定。")
         pr = _gh(root, "pr", "view", branch, "--repo", REPO,
                  "--json", "number,headRefOid")
     if pr.get("headRefOid") != candidate:
@@ -59,7 +60,7 @@ def release(root: Path, slug: str, candidate: str, *, timeout: int = 180) -> str
     number = int(pr["number"])
     _gh(root, "api", "-X", "POST", f"repos/{REPO}/statuses/{candidate}",
         "-f", "state=success", "-f", "context=ceo-staging-approval",
-        "-f", "description=Preexisting CEO article publication gate passed",
+        "-f", f"description=Exact-version {actor} article approval and QA passed",
         "-f", f"target_url=https://github.com/{REPO}/pull/{number}")
     deadline = time.monotonic() + timeout
     while time.monotonic() < deadline:
