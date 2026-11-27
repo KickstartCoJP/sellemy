@@ -1,0 +1,130 @@
+{
+  "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+  "evidence_sha256": "7b31c134dd31bc33274a1b2086fceffe3e8f5748401ebb44a8559679fe40cbab",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 11520,
+    "input_tokens": 25727,
+    "listing_identity_citations_repaired": [
+      "p1",
+      "p2",
+      "p3",
+      "p4",
+      "p5",
+      "p6"
+    ],
+    "member_binding_revision": 4,
+    "output_tokens": 2529,
+    "reasoning_effort": "medium",
+    "reasoning_output_tokens": 1378,
+    "reused_product_qa": true,
+    "session_id": "01a21e13-7ce5-74d2-9a6c-cb88351a7817",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "dd4ebfe99358489b0f4942ce7cdf970660d396e8fbc127fb01125ed4526b40c9",
+  "review": {
+    "buying_guidance": false,
+    "claims_grounded": false,
+    "complete_comparison": false,
+    "distinct_products": true,
+    "duplicate_pair_checks": [],
+    "editorial_voice_appropriate": false,
+    "internal_qa_leak_absent": false,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "popular",
+            "quote": "With the corner of the leaf-shaped sponge, dirty nooks and stains on the bottom of glasses and containers"
+          }
+        ],
+        "identity_key": "【Amazon.co.jp限定】 3M スコッチブライト 抗菌 ウレタン スポンジ 食器洗い キッチンスポンジ 食器用スポンジ 皿洗い リーフ 4個",
+        "identity_quote": "【Amazon.co.jp限定】 3M スコッチブライト 抗菌 ウレタン スポンジ 食器洗い キッチンスポンジ 食器用スポンジ 皿洗い リーフ 4個",
+        "reason": "葉形の食器用スポンジとして識別できる。掲載情報にグラスの底や容器の隅を洗う用途があり、定番品として紹介できる。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "popular",
+            "quote": "It is a coarse-meshed sponge with a skeletal structure"
+          }
+        ],
+        "identity_key": "PAX NATURON(パックスナチュロン) キッチンスポンジ (ナチュラル / 5個セット) 台所 食器洗い 皿洗い スポンジ (泡立ち/水切れ/耐久性) 太陽油脂",
+        "identity_quote": "PAX NATURON(パックスナチュロン) キッチンスポンジ (ナチュラル / 5個セット) 台所 食器洗い 皿洗い スポンジ (泡立ち/水切れ/耐久性) 太陽油脂",
+        "reason": "食器洗い用スポンジとして識別できる。掲載情報の粗い網目構造を、日常の洗い方に沿った紹介に使える。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "compact_washing",
+            "quote": "A soft cloth-shaped net sponge that easily cleans the fine gaps of kitchen utensils, the grooves of plastic containers, and the bottom"
+          }
+        ],
+        "identity_key": "【Amazon.co.jp限定】3M スポンジ キッチン 食器 キズつけない グリーナークリーン PLAメッシュネット 4個 スコッチブライト GC-PLA MN 4P A",
+        "identity_quote": "【Amazon.co.jp限定】3M スポンジ キッチン 食器 キズつけない グリーナークリーン PLAメッシュネット 4個 スコッチブライト GC-PLA MN 4P A",
+        "reason": "布状の食器洗い用メッシュとして識別できる。掲載情報は容器の溝や底に沿わせる用途を示している。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "compact_washing",
+            "quote": "【商品サイズ】1×5.5×8cm（1個あたり）"
+          }
+        ],
+        "identity_key": "東和産業 KR 毎日 取替え 使い捨て スポンジ 泡立ち 30P 優しく洗える 泡立ち豊富 ソフト キッチンスポンジ たわし 清潔 5.5×1×8cm 13052",
+        "identity_quote": "東和産業 KR 毎日 取替え 使い捨て スポンジ 泡立ち 30P 優しく洗える 泡立ち豊富 ソフト キッチンスポンジ たわし 清潔 5.5×1×8cm 13052",
+        "reason": "型番のある食器洗い用スポンジとして識別できる。1個あたりの寸法から、小さく薄い形を紹介できる。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "compact_storage",
+            "quote": "リーフ型スタンド付き"
+          }
+        ],
+        "identity_key": "ボトル洗いスポンジ リーフ型スタンド付き 青",
+        "identity_quote": "ボトル洗いスポンジ リーフ型スタンド付き 青",
+        "reason": "商品掲載名からスタンド付きのボトル洗いスポンジと識別できる。柄付きのスポンジを立てて置く用途は紹介切り口に合う。メーカーや詳細仕様は未確認として扱う。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "compact_storage",
+            "quote": "尾を下にして立てて置ける"
+          }
+        ],
+        "identity_key": "マーナ (marna) おさかなスポンジ 5個セット (食器洗い / 3層構造) キッチン 食器用スポンジ 台所用 (ディープグリーン) R502DG",
+        "identity_quote": "マーナ (marna) おさかなスポンジ 5個セット (食器洗い / 3層構造) キッチン 食器用スポンジ 台所用 (ディープグリーン) R502DG",
+        "reason": "型番を含む商品掲載名から、おさかな形の食器用スポンジと識別できる。提供された選定理由は、尾を下にして立てて置く使い方を示しており、収納の切り口に合う。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reader_decision_outsourcing_absent": false,
+    "reason": "記事未提出のため根拠情報のみを審査した。6件は商品掲載名と提供された情報から食器洗い用の商品として識別でき、既存の3つの紹介切り口に各2件が収まる。p1とp3は同じ3M製だが、掲載情報では葉形ウレタンスポンジと布状メッシュで構造が異なる。p5とp6の詳細な仕様は未確認のまま扱う。",
+    "recommendation_conclusion": false,
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}
