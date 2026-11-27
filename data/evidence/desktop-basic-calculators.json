@@ -4,136 +4,368 @@
   "category": "gadget",
   "comparison_axes": [
     {
-      "id": "key_layout",
+      "id": "popular",
       "keywords": [
-        "キー寸法",
-        "ゼロキー",
-        "訂正キー",
-        "本体寸法"
+        "人気"
       ],
-      "label": "キー配置と机上での操作"
+      "label": "人気・定番の基準"
     },
     {
-      "id": "display",
+      "id": "entry_review",
       "keywords": [
-        "表示桁数",
-        "表示文字",
-        "傾斜",
-        "チルト"
+        "入力履歴",
+        "計算内容の確認",
+        "訂正操作"
       ],
-      "label": "表示桁数と画面の角度"
+      "label": "レシート集計の入力を見直しやすい"
     },
     {
-      "id": "calculation_power",
+      "id": "tax_accounting",
       "keywords": [
-        "税計算",
-        "メモリー",
-        "GT",
-        "端数処理",
-        "電池交換"
+        "税込・税抜計算",
+        "税率設定",
+        "端数処理"
       ],
-      "label": "必要な計算機能と電源条件"
+      "label": "請求額の税込・税抜計算を扱いやすい"
     }
   ],
   "eyecatch_image": "https://www.sellemy.jp/img/desktop-basic-calculators/desktop-basic-calculators.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "d8d03276fbc571e61a45cb2678856c66379d597032f2c96004116b3ddc4a67db",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 26290,
+      "listing_identity_citations_repaired": [
+        "p1",
+        "p3",
+        "p4"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 1479,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 397,
+      "session_id": "01a21aed-e367-7051-b1c9-fdcf9f82f46e",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "キヤノン 商売計算電卓 TS-1200TSC 12桁 大型卓上サイズ チルト液晶搭載",
+          "identity_quote": "キヤノン 商売計算電卓 TS-1200TSC 12桁 大型卓上サイズ チルト液晶搭載",
+          "reason": "掲載タイトルで型番を識別できる大型卓上の12桁電卓。角度を変えられる表示部と商売計算機能が掲載抜粋に明記され、机上で集計する用途に沿って紹介できる。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "Casio MW-102CL-N",
+          "identity_quote": "Casio MW-102CL-N Anti-Microbial Calculator, Mini-Just Type, 10 Digit",
+          "reason": "掲載タイトルで型番を識別できるミニジャスト型の10桁電卓。本体寸法、税計算、時間計算が掲載抜粋にあり、机上のスペースを意識した候補として紹介できる。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "entry_review",
+              "quote": "Calculation Status Display: The calculation content can be seen at a glance and prevents errors"
+            }
+          ],
+          "identity_key": "カシオ グリーン購入法適合電卓 12桁 ジャストタイプ JF-120GT-N エコマーク認定",
+          "identity_quote": "カシオ グリーン購入法適合電卓 12桁 ジャストタイプ JF-120GT-N エコマーク認定",
+          "reason": "掲載タイトルで型番を識別できる12桁電卓。掲載抜粋に計算状態表示が明記され、入力中の表示を見ながら集計する切り口に合う。桁下げキーは掲載抜粋から確認できず、推薦根拠には含めない。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "entry_review",
+              "quote": "Uses 3 types of key molding for different functions"
+            }
+          ],
+          "identity_key": "キヤノン Canon 商売計算対応実務電卓 抗菌仕様 HS-1250WUC （12桁/大型卓上サイズ/W税機能搭載）",
+          "identity_quote": "キヤノン Canon 商売計算対応実務電卓 抗菌仕様 HS-1250WUC （12桁/大型卓上サイズ/W税機能搭載）",
+          "reason": "掲載タイトルで型番を識別できる12桁の大型卓上電卓。掲載抜粋に機能別の3種類のキー形状と大きな表示があり、キーと表示を見ながら入力する切り口で紹介できる。入力ミス防止の実効性は認定しない。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "tax_accounting",
+              "quote": "Tax calculation: Available (tax rate change possible)"
+            },
+            {
+              "axis_id": "tax_accounting",
+              "quote": "Rounding: Available"
+            },
+            {
+              "axis_id": "tax_accounting",
+              "quote": "Round down: Available"
+            }
+          ],
+          "identity_key": "Casio JF-120VB-N",
+          "identity_quote": "Casio JF-120VB-N Standard Calculator",
+          "reason": "掲載タイトルで型番を識別できる電卓。掲載抜粋に税率変更可能な税計算、端数の四捨五入と切り捨てが記載され、請求額の税計算を扱う切り口に合う。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "tax_accounting",
+              "quote": "Equipped with a \"W tax rate\" function that can calculate 2 tax rates"
+            }
+          ],
+          "identity_key": "Casio MW-100TC",
+          "identity_quote": "Casio MW-100TC-PK-N W Tax Rate Calculator, 10 Digit Tax Calculation, Pink, Mini Just Type",
+          "reason": "掲載タイトルで型番を識別できる10桁の電卓。掲載抜粋に2税率の計算と税込額・税抜額・税額の計算が明記され、複数税率を扱う集計の切り口に合う。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "根拠情報のみの審査。確認済みの商品掲載タイトルは6つの異なる型番の電卓を示し、各商品は割り当てられた紹介グループに適合する。確認できる機能や形状に基づいて個別に紹介できる。記事本文は未提出のため、記事固有の判定項目はfalseとした。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
   "products": [
     {
-      "amazon_title": "シャープ EL-SA72-X",
-      "asin": "B07V5F7143",
-      "brand": "シャープ",
+      "amazon_title": "キヤノン 商売計算電卓 TS-1200TSC 12桁 大型卓上サイズ チルト液晶搭載",
+      "asin": "B07MHYQPJR",
+      "brand": "Canon",
+      "discovery_axis_id": "popular",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/81hR+U1ltbL._AC_SL1500_.jpg",
-      "matched_comparison_axes": [
-        "display"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/71FnEmwIa2L._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B07V5F7143",
+      "product_id": "AMZ-B07MHYQPJR",
+      "provisional": false,
+      "rating": 4.2,
       "ref": "p1",
-      "search_key": "シャープ 電卓 セミデスクトップタイプ 12桁表示 チルト機能付",
-      "selection_score": 0.49,
-      "selected_variant": "EL-SA72-X・12桁・1台"
+      "review_count": 131,
+      "search_key": "Canon キヤノン 商売計算電卓 TS-1200TSC 12桁 大型卓上サ",
+      "selection_reason": "レシートを集計する机に据えて使いたい小規模事業者向け。12桁の大型卓上機で、角度を変えられる液晶と安定感のある本体を備える。経費集計に加え、仕入原価から売価や利益率を確認する場面にも使える商売計算キーが、この機種を選ぶ具体的な理由になる。出典：[キヤノン取扱説明書](https://ij.manual.canon/cal/webmanual/WebPortal/pdf/TS-1200TSC_HS-20TSC%20%28JPN%29%20%28E-IJ-1498%29.pdf)。",
+      "sources": [
+        {
+          "brand": "Canon",
+          "excerpt": "Canon Business Calculator TS-1200TSC 12 Digits Large Desktop Size with Tilt LCD\nAbout this item\nLarge display with tilt function for easy reading of characters\nThe solid body provides a stable feel when pressing the keys, making it ideal for those who prioritize stability\nEasy to change the tax rate settings, making it convenient for changing tax rates\nCost, selling price, and profit margin can be easily calculated with one touch\nA large desktop business calculator suitable for business use, with 12 digits › See more product details\nBrand Canon\nColor Black, Silver\nCalculator Type Business\nPower Source Battery Powered\nNumber of Batteries 1 LR44 batteries required. (included)",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Canon Business Calculator TS-1200TSC 12 Digits Large Desktop Size with Tilt LCD",
+          "url": "https://www.amazon.co.jp/dp/B07MHYQPJR",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "カシオ MW-100TC-WE ホワイト",
-      "asin": "B07S8W1429",
-      "brand": "カシオ",
+      "amazon_title": "カシオ 抗菌電卓 ミニジャストタイプ 10桁 MW-102CL-N",
+      "asin": "B0011UWMFY",
+      "brand": "Casio",
+      "discovery_axis_id": "popular",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71bQAD9wkLL._AC_SL1500_.jpg",
-      "matched_comparison_axes": [
-        "calculation_power"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/71aBhjXTf7L._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B07S8W1429",
+      "product_id": "AMZ-B0011UWMFY",
+      "provisional": false,
+      "rating": 4.4,
       "ref": "p2",
-      "search_key": "カシオ W税率電卓 10桁 税計算 ホワイト ミニジャストタイプ",
-      "selection_score": 0.49,
-      "selected_variant": "MW-100TC-WE-N ホワイト・10桁・1台"
+      "review_count": 798,
+      "search_key": "Casio カシオ 抗菌電卓 ミニジャストタイプ 10桁 MW-102CL-",
+      "selection_reason": "限られた机で領収書を広げ、同じ電卓を複数人で使う事務所に向く。幅105.5mmのミニジャスト型ながら、抗菌剤入り樹脂、税計算、時間計算、計算状態表示を備える。経費の金額だけでなく作業時間も手元で計算したい読者が、卓上の場所を取りすぎず使える。出典：[カシオ製品ページ](https://www.casio.com/jp/basic-calculators/product.MW-102CL/)。",
+      "sources": [
+        {
+          "brand": "Casio",
+          "excerpt": "Casio MW-102CL-N Anti-Microbial Calculator, Mini-Just Type, 10 Digit\nAbout this item\nSize: 144x105.5x26.2mm\nFor those who like cleanliness. Antimicrobial series with antibacterial treatment\nExtra-large display/Tax calculation & time calculation function/Quick input support/10 digits\nKeep your desk tidy. Mini Just Type Calculator\nCalculates consumption tax including and excluding taxes. You can freely set the tax rate and display the tax amount › See more product details\nBrand Casio\nColor white\nCalculator Type Standard Function\nPower Source Solar Powered\nModel Name MW-102CL-N\nVisit the CASIO(カシオ) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Casio MW-102CL-N Anti-Microbial Calculator, Mini-Just Type, 10 Digit",
+          "url": "https://www.amazon.co.jp/dp/B0011UWMFY?th=1",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "キヤノン HS-1220TUB",
-      "asin": "B0CV4QKBTX",
-      "brand": "キヤノン",
+      "amazon_title": "カシオ グリーン購入法適合電卓 12桁 ジャストタイプ JF-120GT-N エコマーク認定",
+      "asin": "B000UZRNJG",
+      "brand": "Casio",
+      "discovery_axis_id": "entry_review",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/811-nfX+JXL._AC_SL1500_.jpg",
-      "matched_comparison_axes": [],
+      "image_url": "https://m.media-amazon.com/images/I/81j1iK9l+CL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B0CV4QKBTX",
+      "product_id": "AMZ-B000UZRNJG",
+      "provisional": false,
+      "rating": 4.4,
       "ref": "p3",
-      "search_key": "卓上電卓 ツイン液晶 事務用電卓 大型キー",
-      "selection_score": 0.31,
-      "selected_variant": "HS-1220TUB・12桁・1台"
+      "review_count": 2304,
+      "search_key": "Casio カシオ グリーン購入法適合電卓 12桁 ジャストタイプ JF-1",
+      "selection_reason": "レシートの金額を続けて入力し、押し間違いにその場で気づきたい人向け。12桁画面に演算中の状態を示す「計算状態表示」があり、桁下げキーで入力中の数字を訂正できる。計算履歴を遡る機能ではないが、入力と表示を照合しながら集計しやすい。出典：[カシオ製品ページ](https://www.casio.com/jp/basic-calculators/product.JF-120GT/)。",
+      "sources": [
+        {
+          "brand": "Casio",
+          "excerpt": "Casio Compliant with Green Purchase Law Calculator, 12 Digits, Just Type, JF-120GT-N, Eco Mark Certified\nAbout this item\n【Size (Depth x Width x Height) mm: 179 x 107 x 26】 【Weight (g)】175 【Digits】12\nTax Calculation: Calculates consumption taxes including and excluding taxes Tax rate can be set freely Equipped with a tax display function\n【Time Calculation】Performs arithmetic operations on time Useful for \"working hours calculation\", \"hourly wage calculation\", etc\nCalculation Status Display: The calculation content can be seen at a glance and prevents errors\n【T・W・P】By using both solar power and an auxiliary battery, the built-in battery protects the calculation content even if light is blocked during calculations\nCompliant with the Green Purchasing Law: This model is environmentally friendly › See more product details\nBrand Casio\nColor Silver\nCalculator Type Business\nPower Source Solar Powered\nNumber of Batteries 1 Lithium Metal batteries required.\nVisit the CASIO(カシオ) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Casio Compliant with Green Purchase Law Calculator, 12 Digits, Just Type, JF-120GT-N, Eco Mark Certified",
+          "url": "https://www.amazon.co.jp/dp/B000UZRNJG?th=1",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "アスカ リーサムルフト C1258BK",
-      "asin": "B0C6QBQMMK",
-      "brand": "アスカ",
+      "amazon_title": "キヤノン Canon 商売計算対応実務電卓 抗菌仕様 HS-1250WUC （12桁/大型卓上サイズ/W税機能搭載）",
+      "asin": "B07VS1PC2W",
+      "brand": "Canon",
+      "discovery_axis_id": "entry_review",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71SUaw09MdL._AC_SL1500_.jpg",
-      "matched_comparison_axes": [],
+      "image_url": "https://m.media-amazon.com/images/I/817zgSksT-L._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B0C6QBQMMK",
+      "product_id": "AMZ-B07VS1PC2W",
+      "provisional": false,
+      "rating": 4.3,
       "ref": "p4",
-      "search_key": "卓上電卓 大型LCDディスプレイ 12桁 数字ビッグボタン 税金",
-      "selection_score": 0.31,
-      "selected_variant": "ブラック・本体1個"
+      "review_count": 464,
+      "search_key": "Canon キヤノン Canon 商売計算対応実務電卓 抗菌仕様 HS-12",
+      "selection_reason": "レシートを見ながら数字キーと機能キーを頻繁に行き来する担当者向け。機能ごとにフラット・凹型傾斜・凸型ラウンドの3種類のキー形状を使い分け、キヤノンは入力ミスを防ぐ設計として説明している。12桁の特大表示と千万単位キーも、請求書の大きな金額を入力して確認する場面に合う。出典：[キヤノン電卓カタログ](https://personal.canon.jp/-/media/Project/Canon/CanonJP/Personal/product/business-tool/catalog/pdf/catalog.pdf)。",
+      "sources": [
+        {
+          "brand": "Canon",
+          "excerpt": "Canon Business Calculator for Commercial Calculations with Antibacterial Specifications HS-1250WUC (12 Digits, Large Tabletop Size, W Tax Function)\nAbout this item\nEquipped with two tax rate registration keys, it is also convenient for calculating reduced tax rates\nUses 3 types of key molding for different functions Prevents input errors and easy to type\nEquipped with an extra-large display that can show up to 12 digits, this business calculator has easy-to-read characters\nSince it is antibacterial, it is also recommended for use with equipment in retail stores, medical institutions, restaurants, and more\nEquipped with practical functions, such as the ability to input and display 10 million units at once › See more product details\nBrand Canon\nColor white\nCalculator Type Business\nPower Source Battery, Battery Operated; Solar Powered\nProduct Dimensions 18L x 13W cm",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Canon Business Calculator for Commercial Calculations with Antibacterial Specifications HS-1250WUC (12 Digits, Large Tabletop Size, W Tax Function)",
+          "url": "https://www.amazon.co.jp/dp/B07VS1PC2W?th=1",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "アスカ ビジネス電卓 C1256W ホワイト",
-      "asin": "B0CP5GVZVH",
-      "brand": "アスカ",
+      "amazon_title": "カシオ スタンダード電卓 JF-120VB-N",
+      "asin": "B001BOVAKS",
+      "brand": "Casio",
+      "discovery_axis_id": "tax_accounting",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61gr4J6PD6L._AC_SL1500_.jpg",
-      "matched_comparison_axes": [],
+      "image_url": "https://m.media-amazon.com/images/I/41mJmJBgtmL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B0CP5GVZVH",
+      "product_id": "AMZ-B001BOVAKS",
+      "provisional": false,
+      "rating": 4.4,
       "ref": "p5",
-      "search_key": "電卓 計算機 12桁 大型 見やすい 税率設定 可能 早打ち対応",
-      "selection_score": 0.31,
-      "selected_variant": "ホワイト・12桁・本体1台"
+      "review_count": 885,
+      "search_key": "Casio カシオ スタンダード電卓 JF-120VB-N",
+      "selection_reason": "請求書の税額で1円未満の扱いを決めて計算したい経理担当者向け。税率変更が可能な税込・税抜計算に加え、端数の四捨五入・切り捨てを選べる。請求先との計算条件を確かめてから設定し、税額と請求額を手元で確認する使い方に合う。出典：[カシオ取扱説明書](https://www.casio.com/content/dam/casio/global/support/manuals/calculators/pdf/2022/mutual/DF-120VB_JF-120VB_DH-12E_JA.pdf)。",
+      "sources": [
+        {
+          "brand": "Casio",
+          "excerpt": "Casio JF-120VB-N Standard Calculator\nAbout this item\n● Weight: 165g (including battery)● Size: M● Dimensions: width 107 × depth 175.5 × thickness 29.3 mm● Number of digits: 12 digits● Power supply: solar battery + lithium battery (CR2032 × 1)● Warranty period: 1 year● Tilt: None● Memory: 2, GT memory● Rounding: Available● Calculation status display: Available● Tax calculation: Available (tax rate change possible)● Round up: None● Round down: Available● Backstand: Available● Verification: None● Rapid typing: Available● Other features: Eco-mark, digit drop › See more product details\nBrand Casio\nColor Braun, Silver\nCalculator Type Business\nPower Source Battery Powered\nNumber of Batteries 1 CR2 batteries required.\nVisit the CASIO(カシオ) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Casio JF-120VB-N Standard Calculator",
+          "url": "https://www.amazon.co.jp/dp/B001BOVAKS",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "無印良品 電卓12桁 KK-1154MS 37355538",
-      "asin": "B08FZQMR3L",
-      "brand": "無印良品",
+      "amazon_title": "カシオ W税率電卓 10桁 税計算 ピンク ミニジャストタイプ MW-100TC-PK-N",
+      "asin": "B07RWYGR2Y",
+      "brand": "Casio",
+      "discovery_axis_id": "tax_accounting",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61lLMkXy0aL._AC_SL1260_.jpg",
-      "matched_comparison_axes": [],
+      "image_url": "https://m.media-amazon.com/images/I/71bzN8TeJML._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B08FZQMR3L",
+      "product_id": "AMZ-B07RWYGR2Y",
+      "provisional": false,
+      "rating": 4.4,
       "ref": "p6",
-      "search_key": "電卓 計算機 12桁 大型 見やすい 税率設定 可能 早打ち対応",
-      "selection_score": 0.31,
-      "selected_variant": "KK-1154MS/37355538・ホワイト・12桁・1台"
+      "review_count": 666,
+      "search_key": "Casio カシオ W税率電卓 10桁 税計算 ピンク ミニジャストタイプ",
+      "selection_reason": "標準税率と軽減税率が混在する仕入れや請求を扱う人向け。2つの税率キーに別々の税率を設定でき、選んだ税率で税込額・税抜額・税額を表示できる。レシートごとに適用税率を確かめながら計算する場面に、この2税率を切り替えられる構造が役立つ。出典：[カシオ取扱説明書](https://www.casio.com/content/dam/casio/global/support/manuals/calculators/pdf/004-ja/m/MW-100TC_etc_WA_JA.pdf)。",
+      "sources": [
+        {
+          "brand": "Casio",
+          "excerpt": "Casio MW-100TC-PK-N W Tax Rate Calculator, 10 Digit Tax Calculation, Pink, Mini Just Type\nAbout this item\nEquipped with a \"W tax rate\" function that can calculate 2 tax rates\nTax Calculation: You can calculate the tax-included, tax-excluded, and tax amount separately The set tax rate can be changed\nDigits: 10. Size (Depth x Width x Height) mm: 179 x 126 x 30.9. Weight (g): 165\nT / W / P (combined with solar batteries and auxiliary batteries): Unlike conventional solar powered calculators, the built-in battery protects the calculation contents even if the light is blocked during the calculation\n【Rapid Input Function】Even if you start pressing the next key while releasing the key during input, you can input › See more product details\nBrand Casio\nColor Pink\nCalculator Type Standard Function\nPower Source Battery Powered, Solar Powered\nScreen Size 5 Inches\nVisit the CASIO(カシオ) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Casio MW-100TC-PK-N W Tax Rate Calculator, 10 Digit Tax Calculation, Pink, Mini Just Type",
+          "url": "https://www.amazon.co.jp/dp/B07RWYGR2Y?th=1",
+          "verified": true
+        }
+      ]
     }
   ],
   "selection": {
-    "brand_count": 0,
-    "comparison_axes_covered": [
-      "calculation_power",
-      "display"
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B07MHYQPJR",
+            "reason": "レシートを集計する机に据えて使いたい小規模事業者向け。12桁の大型卓上機で、角度を変えられる液晶と安定感のある本体を備える。経費集計に加え、仕入原価から売価や利益率を確認する場面にも使える商売計算キーが、この機種を選ぶ具体的な理由になる。出典：[キヤノン取扱説明書](https://ij.manual.canon/cal/webmanual/WebPortal/pdf/TS-1200TSC_HS-20TSC%20%28JPN%29%20%28E-IJ-1498%29.pdf)。"
+          },
+          {
+            "asin": "B0011UWMFY",
+            "reason": "限られた机で領収書を広げ、同じ電卓を複数人で使う事務所に向く。幅105.5mmのミニジャスト型ながら、抗菌剤入り樹脂、税計算、時間計算、計算状態表示を備える。経費の金額だけでなく作業時間も手元で計算したい読者が、卓上の場所を取りすぎず使える。出典：[カシオ製品ページ](https://www.casio.com/jp/basic-calculators/product.MW-102CL/)。"
+          }
+        ]
+      },
+      {
+        "axis_id": "entry_review",
+        "products": [
+          {
+            "asin": "B000UZRNJG",
+            "reason": "レシートの金額を続けて入力し、押し間違いにその場で気づきたい人向け。12桁画面に演算中の状態を示す「計算状態表示」があり、桁下げキーで入力中の数字を訂正できる。計算履歴を遡る機能ではないが、入力と表示を照合しながら集計しやすい。出典：[カシオ製品ページ](https://www.casio.com/jp/basic-calculators/product.JF-120GT/)。"
+          },
+          {
+            "asin": "B07VS1PC2W",
+            "reason": "レシートを見ながら数字キーと機能キーを頻繁に行き来する担当者向け。機能ごとにフラット・凹型傾斜・凸型ラウンドの3種類のキー形状を使い分け、キヤノンは入力ミスを防ぐ設計として説明している。12桁の特大表示と千万単位キーも、請求書の大きな金額を入力して確認する場面に合う。出典：[キヤノン電卓カタログ](https://personal.canon.jp/-/media/Project/Canon/CanonJP/Personal/product/business-tool/catalog/pdf/catalog.pdf)。"
+          }
+        ]
+      },
+      {
+        "axis_id": "tax_accounting",
+        "products": [
+          {
+            "asin": "B001BOVAKS",
+            "reason": "請求書の税額で1円未満の扱いを決めて計算したい経理担当者向け。税率変更が可能な税込・税抜計算に加え、端数の四捨五入・切り捨てを選べる。請求先との計算条件を確かめてから設定し、税額と請求額を手元で確認する使い方に合う。出典：[カシオ取扱説明書](https://www.casio.com/content/dam/casio/global/support/manuals/calculators/pdf/2022/mutual/DF-120VB_JF-120VB_DH-12E_JA.pdf)。"
+          },
+          {
+            "asin": "B07RWYGR2Y",
+            "reason": "標準税率と軽減税率が混在する仕入れや請求を扱う人向け。2つの税率キーに別々の税率を設定でき、選んだ税率で税込額・税抜額・税額を表示できる。レシートごとに適用税率を確かめながら計算する場面に、この2税率を切り替えられる構造が役立つ。出典：[カシオ取扱説明書](https://www.casio.com/content/dam/casio/global/support/manuals/calculators/pdf/004-ja/m/MW-100TC_etc_WA_JA.pdf)。"
+          }
+        ]
+      }
     ],
+    "brand_count": 2,
+    "candidate_count": 30,
+    "comparison_axes_covered": [],
     "content_duplicates_removed": [],
-    "price_used_as_constraint_only": true
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": []
   },
   "slug": "desktop-basic-calculators"
 }
