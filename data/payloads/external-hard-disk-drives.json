@@ -2,105 +2,72 @@
   "category": "gadget",
   "comparison_groups": [
     {
-      "id": "desktop",
-      "title": "据え置き4TBを、設置方向と接続条件で選ぶ",
-      "angle": "HD-SGDA4U3-BとHDCX-UTL4KはACアダプターが必要な4TB製品で、出荷時はNTFS。I-O DATAは縦横両置きを明記し、バッファローはCMR方式を明記しています。どちらも本体端子はMicro-Bで、USB-C端子のパソコンへの接続用品は別に確認が必要です。",
+      "angle": "外付けHDDは、容量だけでなく電源の取り方によって置き方が変わります。自宅に固定する保存先と、別の場所へ移す控えでは、設置スペースや持ち運びの条件が異なります。",
+      "id": "popular",
       "product_refs": [
-        "p6",
-        "p1"
-      ]
+        "p1",
+        "p2"
+      ],
+      "title": "まず押さえたい容量と電源方式"
     },
     {
-      "id": "portable-backup",
-      "title": "基本のファイル保存か、パスワード保護も使うか",
-      "angle": "WD Elements PortableはUSB-A接続でファイルの保存先を増やす候補。One Touch with Passwordは、Toolkitで設定する256ビット暗号化とパスワード保護、Windows向けバックアップ計画を備えます。保存容量はともに2TBですが、持ち出すデータの保護や自動バックアップをどこまで設定したいかで比較します。",
+      "angle": "据え置き型を選ぶときは、パソコンの近くに置けるか、コンセントを確保できるかを確認しましょう。写真に加えて動画も保存するなら、今あるデータ量と今後増える量を踏まえて容量を決めます。",
+      "id": "home_backup",
       "product_refs": [
-        "p2",
-        "p3"
-      ]
+        "p3",
+        "p4"
+      ],
+      "title": "自宅の決まった場所で保存を続ける"
     },
     {
-      "id": "protective-design",
-      "title": "保護構造付きの携帯用HDDを比べる",
-      "angle": "StoreJet 25M3は3層の衝撃保護とソフト連携のワンタッチバックアップ、Rugged Miniは保護バンパーと耐衝撃・耐雨設計を案内しています。保護構造はデータの無損失を保証しないため、形状だけで安心せずケーブルとバックアップ手順も比較しましょう。",
+      "angle": "別の場所に置く控えには、運びやすいポータブル型が向いています。USB給電ならACアダプターを持ち運ぶ必要はありません。保管先でも使う場合は、接続するパソコンとの対応を確認しましょう。",
+      "id": "separate_storage",
       "product_refs": [
-        "p4",
-        "p5"
-      ]
+        "p5",
+        "p6"
+      ],
+      "title": "控えを別の場所へ移して保管する"
     }
   ],
-  "conclusion": "常設の4TBはHD-SGDA4U3-BとHDCX-UTL4K、携帯用の機能比較はWD Elements PortableとOne Touch with Password、保護構造を備えたモデルはStoreJet 25M3とRugged Miniが出発点になります。優先したいのが容量、持ち運び、暗号化、バックアップ操作のどれかを決めると候補を絞れます。購入時は型番、ケーブル、電源、OSとソフトの条件を揃えて確認し、故障や紛失に備えて複数の保存先を持つことも忘れないようにしましょう。",
-  "h1": "外付けHDD6選｜据え置き・持ち運び・バックアップ機能で比較",
-  "how_to_choose": "容量は今あるデータだけでなく、今後増える写真・動画と、過去の版を残すバックアップ方針も含めて決めます。据え置き型はコンセント、ポータブル型はUSB給電と接続先の電力条件を確認しましょう。USB 3.0やUSB 3.2 Gen 1という規格名は端子形状とは別で、5Gbpsも実際のHDD書き込み速度を示す値ではありません。ケーブルの両端を確認し、MacではNTFSのまま希望する読み書きができるか、再フォーマットが必要かを調べます。フォーマットは既存データを消すため、先に退避が必要です。ソフトの対応はドライブ本体の対応と別に確認してください。唯一のデータを外付けHDDへ移すだけでは複製がなくなるので、大切なデータはパソコンや別媒体にも保持する運用を考えましょう。",
-  "lead": "外付けHDDは、机に置いたまま大きなデータを保存するか、ノートパソコンと一緒に持ち歩くかで選ぶ形が変わります。容量表示だけでは接続端子や電源方式は分かりません。ここでは型番とメーカー資料を確認できる6シリーズに絞り、据え置き型2製品とポータブル型4製品を比較します。内蔵ドライブのメーカー名やUSB規格から故障率・実測速度を推測せず、付属ケーブル、フォーマット、バックアップ機能という購入後の使い勝手を整理しました。",
+  "conclusion": "外付けHDDを2台使うなら、保存するだけでなく、控えをいつ更新し、どこに保管するかまで決めておくと運用しやすくなります。写真や動画を追加した後は両方の保存先に反映し、ときどきファイルを開けるか確かめましょう。持ち運ぶ控えは移動中の衝撃を避け、保管先でも接続できる状態にしておくことが大切です。容量や電源方式は使い方を左右しますが、必要なときに控えを取り出せることもバックアップの重要な条件です。",
+  "h1": "写真・動画のバックアップ用外付けHDD6選｜自宅用と別の場所に置く控えの選び方",
+  "how_to_choose": "",
+  "lead": "写真や動画のバックアップ用に外付けHDDを2台用意するなら、1台を自宅で継続して使う保存先、もう1台を別の場所に保管する控えとして考えると役割が明確になります。自宅用は保存するデータ量に加え、置き場所とコンセントの位置を確認しましょう。控えを別の場所に移す場合は、本体とケーブルの持ち運びに加え、保管先での給電方法も関係します。容量は現在の写真・動画が占める量だけでなく、これから増える分も見込んで決めることが大切です。2台に分けても、同じ場所に置き続けると、その場所で起きる事故に備えられません。保存先の役割と保管場所を先に決めておくことが、使い続けやすいバックアップにつながります。",
+  "needs_product_reselection": false,
   "products": [
     {
-      "ref": "p1",
-      "h3": "I-O DATA HDCX-UTL4K｜縦置き・横置きを選べる4TB",
-      "description": "HDCX-UTL4Kは4TBの据え置き型で、約34×172×115mm、約800g。メーカーは縦置き・横置きの両方に対応すると案内しており、机やテレビ台の空きスペースに合わせて設置を考えられます。ACアダプターと約1mのUSB A–Micro-Bケーブルが付属するため、電源コンセントとUSB-A端子の位置を採寸しておきましょう。出荷時フォーマットはNTFSで、WindowsとMacの対応情報が公開されていますが、添付アプリはmacOS・ARM版Windows・WindowsのSモードに非対応という条件があります。テレビ録画にも使えるものの、テレビとパソコンでデータを共有する製品ではありません。用途を決めてから初期設定するのが要点です。",
-      "asin": "B09Z2VK5BR",
-      "purchase_links": {
-        "amazon": "https://www.amazon.co.jp/dp/B09Z2VK5BR?tag=sellemy-22",
-        "rakuten": "https://search.rakuten.co.jp/search/mall/I-O%20DATA%20HDCX-UTL4K/",
-        "yahoo": "https://shopping.yahoo.co.jp/search?p=I-O%20DATA%20HDCX-UTL4K"
-      }
+      "description": "6TBの据え置き型外付けHDD。AC電源を使い、USB接続でパソコンの写真や動画を保存できます。自宅に置く保存先として容量を重視したい場合に検討できます。",
+      "h3": "バッファロー HD-AD6U3 6TB",
+      "ref": "p1"
     },
     {
-      "ref": "p2",
-      "h3": "WD Elements Portable WDBU6Y0020BBK-WESN｜基本の保存先を増やす2TB",
-      "description": "ブラックの2TBモデルで、寸法は110.5×82×15mm、重量約130g。写真や動画などのファイルを持ち運び、パソコン以外の保存先を増やしたい場合の候補です。USB 3.2 Gen 1／USB 3.0に対応し、本体側はMicro-B、付属ケーブルのパソコン側はUSB-Aです。USB-Cのみのパソコンでは接続用品を別に確認しましょう。\n\nメーカーはWindows向けに案内し、他のOSでは再フォーマットが必要になる場合があるとしています。フォーマットを行う前には既存データを退避してください。One Touch with Passwordのように専用のパスワード保護機能を選択の軸にするより、まず保存容量と接続条件を整理したい人向けです。バックアップ元を残し、コピーしたファイルが開けることまで確認して使いましょう。",
-      "asin": "B06W55K9N6",
-      "purchase_links": {
-        "amazon": "https://www.amazon.co.jp/dp/B06W55K9N6?tag=sellemy-22",
-        "rakuten": "https://search.rakuten.co.jp/search/mall/Western%20Digital%20WD%20Elements%20Portable%20WDBU6Y0020BBK-WESN/",
-        "yahoo": "https://shopping.yahoo.co.jp/search?p=Western%20Digital%20WD%20Elements%20Portable%20WDBU6Y0020BBK-WESN"
-      }
+      "description": "5TBのポータブルHDDで、USB接続による給電に対応しています。付属のUSBケーブルでパソコンにつなげるため、保存した写真や動画を別の場所へ移して保管したい場合にも使えます。",
+      "h3": "WD Elements Portable WDBU6Y0050BBK-WESN 5TB",
+      "ref": "p2"
     },
     {
-      "ref": "p3",
-      "h3": "Seagate One Touch STKY2000400｜パスワード保護付きの2TB",
-      "description": "STKY2000400はOne Touch with Passwordの2TBブラックです。寸法は114.8×78×11.7mm、重量148g。付属のMicro-B–USB-Aケーブルで接続し、USB-C接続用のケーブルは付属しません。WD Elements Portableより薄い一方、長さと重量はやや大きいため、持ち運ぶポーチなどの寸法に照らして比べられます。\n\nToolkitを導入して設定すると、Seagate Secureの256ビット暗号化によるパスワード保護が使えます。パスワードの設定・管理が必要で、接続するだけで自動的にロックが有効になるものではありません。Toolkitのバックアップ計画はWindowsのみ、ミラーフォルダーはWindowsとMacに対応します。ミラーは削除などの変更も相手側へ反映するため、過去のファイルを別に残すバックアップとは役割を分けて考えましょう。",
-      "asin": "B094QZLJQ6",
-      "purchase_links": {
-        "amazon": "https://www.amazon.co.jp/dp/B094QZLJQ6?tag=sellemy-22",
-        "rakuten": "https://search.rakuten.co.jp/search/mall/Seagate%20One%20Touch%20STKY2000400/",
-        "yahoo": "https://shopping.yahoo.co.jp/search?p=Seagate%20One%20Touch%20STKY2000400"
-      }
+      "description": "パソコン用の2TB外付けHDD。ACアダプターと1mのUSBケーブルが付属します。本体寸法は幅114×高さ33×奥行171mmで、置き場所を決めて写真や動画を保存したい場合に選べます。",
+      "h3": "バッファロー HD-EDS2U3-BE 2TB",
+      "ref": "p3"
     },
     {
-      "ref": "p4",
-      "h3": "Transcend StoreJet 25M3 TS2TSJ25M3S｜保護構造とバックアップボタン",
-      "description": "StoreJet 25M3は、シリコンラバーケース、内部の衝撃吸収部材、強化ケースという3層構造を備えるポータブルHDDです。2TBモデルの寸法は129.5×80.8×16.1mm、重量185g。保護ケース込みでバッグの収納スペースを確認できます。ワンタッチバックアップボタンがあり、機能を使うにはTranscend Eliteの導入と設定が必要です。ボタンを押すだけで未設定の全データを自動保護するものではありません。メーカーの落下試験は非動作時のMIL-STD-810G 516.6に基づく条件で、あらゆる落下や損傷への保証ではないと明記されています。移動時は書き込みを終えて安全に取り外し、別の場所にもコピーを残しましょう。",
-      "asin": "B07B4KXTQK",
-      "purchase_links": {
-        "amazon": "https://www.amazon.co.jp/dp/B07B4KXTQK?tag=sellemy-22",
-        "rakuten": "https://search.rakuten.co.jp/search/mall/Transcend%20TS2TSJ25M3S/",
-        "yahoo": "https://shopping.yahoo.co.jp/search?p=Transcend%20TS2TSJ25M3S"
-      }
+      "description": "6TBの外付けHDDで、縦置きと横置きの両方に対応しています。振動を抑える構造と冷却ファンを使わない構造が採用されており、設置場所に合わせて置き方を選べます。",
+      "h3": "ロジテックダイレクト LHD-EN60U3WS 6TB",
+      "ref": "p4"
     },
     {
-      "ref": "p5",
-      "h3": "LaCie Rugged Mini LAC9000298｜保護バンパー付きの2TB",
-      "description": "LAC9000298はLaCie Rugged Miniの2TB HDDで、Rugged Mini SSDとは別製品です。耐衝撃・耐雨・耐圧を特徴とするシリーズですが、データの損失を防げる保証として扱わず、移動時の保護構造を重視する候補として選びます。本体はUSB 3.0 Micro-B端子で、USBバスパワーに対応します。\n\n掲載する商品は海外販売パッケージです。国内向けとグローバル資料では付属ケーブルの表記が異なるため、国内ページのUSB-Cケーブル付きという条件をそのまま当てはめないでください。購入するパッケージの付属品と、パソコン側の端子を合わせて確認します。防水の数値や落下耐性も他のRugged製品から引き継がず、この型番の条件を読むことが大切です。",
-      "asin": "B00IRV005E",
-      "purchase_links": {
-        "amazon": "https://www.amazon.co.jp/dp/B00IRV005E?tag=sellemy-22",
-        "rakuten": "https://search.rakuten.co.jp/search/mall/LaCie%20Rugged%20Mini%20LAC9000298/",
-        "yahoo": "https://shopping.yahoo.co.jp/search?p=LaCie%20Rugged%20Mini%20LAC9000298"
-      }
+      "description": "2TBのポータブルHDDで、パスワード保護機能を備えています。USBケーブルが付属し、写真や動画の控えを別の場所に移して保管したい場合に使えます。",
+      "h3": "WD My Passport WDBYVG0020BBK-WESN 2TB",
+      "ref": "p5"
     },
     {
-      "ref": "p6",
-      "h3": "バッファロー HD-SGDA4U3-B｜CMR方式の据え置き4TB",
-      "description": "HD-SGDA4U3-Bは4TBの外付けHDDです。メーカーはSeagate BasicのHD-SGDAシリーズとして掲載し、CMR方式の採用を明記しています。USB 3.2 Gen 1に対応し、本体端子はMicro-B、出荷時フォーマットはNTFS。寸法は114×33×171mm、質量は約900gで、1mのUSBケーブルとACアダプターが付属します。USBケーブルだけで動くポータブル型と違い、電源の確保が必要です。CMRという方式は仕様の一つですが、それだけで故障しにくさやあらゆる用途での速度優位を断定できません。パソコンやテレビの対応は、メーカーの対応情報で使う機種と容量の組み合わせを確認しましょう。",
-      "asin": "B0F4K8FY1R",
-      "purchase_links": {
-        "amazon": "https://www.amazon.co.jp/dp/B0F4K8FY1R?tag=sellemy-22",
-        "rakuten": "https://search.rakuten.co.jp/search/mall/BUFFALO%20HD-SGDA4U3-B/",
-        "yahoo": "https://shopping.yahoo.co.jp/search?p=BUFFALO%20HD-SGDA4U3-B"
-      }
+      "description": "1TBのポータブルHDD。USB接続で給電できるため、ACアダプターなしでパソコンにつなげます。接続時のLEDは、USB 3.0とUSB 2.0で異なる色に点灯します。",
+      "h3": "バッファロー HD-TPA1U3-B 東芝製Canvio 1TB",
+      "ref": "p6"
     }
   ],
+  "reasons": [],
   "slug": "external-hard-disk-drives",
-  "summary": "机に常設する4TBモデルはバッファローHD-SGDA4U3-BとI-O DATA HDCX-UTL4Kを比較。携帯用2TBモデルでは、基本のファイル保存に使うWD Elements Portableと、パスワード保護・Toolkit連携を備えるSeagate One Touch with Password、保護構造を持つTranscend StoreJet 25M3とLaCie Rugged Miniが候補です。シリーズ名が似たSSDや別容量は混ぜず、掲載型番の電源・付属品・ソフト対応で判断しましょう。"
+  "status": "READY",
+  "summary": "据え置き型は置き場所と電源、ポータブル型は持ち運びと保管先での接続方法が選ぶ際のポイント。写真・動画の量に合う容量も確認しましょう。"
 }
