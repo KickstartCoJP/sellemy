@@ -61,3 +61,27 @@ def test_coo_marker_is_not_publication_authorization_without_qa():
          patch.object(m,'read_artifact',side_effect=lambda slug,key,*args:values.get(key,{})):
         with pytest.raises(ValueError,match='identity changed'):
             m.recheck_approved_edit('fixture-reading-stands')
+
+
+def test_coo_may_edit_and_certify_on_behalf_of_ceo_in_one_action():
+    import coo_article_review as coo
+    old, evidence, article = _ready()
+    rows = {'payload.json': old, 'evidence.json': evidence}
+    with patch.object(coo, 'load_job', return_value={'status':'ACTIVE','current_stage':'COO_REVIEW_PENDING'}), \
+         patch.object(coo, 'read_artifact', side_effect=lambda slug,key,*args: rows.get(key, {})), \
+         patch('ceo_article_edit.apply_approved_edit', return_value={'ok':True,'pending_independent_qa':True}) as call:
+        result = coo.decide('fixture-reading-stands', payload_sha=digest(old),
+                            evidence_sha=digest(evidence_content(evidence)),
+                            decision='CERTIFIED', reason='COO acting on CEO behalf',
+                            edited_payload={'h1': article['h1']})
+        assert result['pending_independent_qa'] is True
+        call.assert_called_once_with('fixture-reading-stands', digest(old),
+                                     {'h1': article['h1']}, reviewer_role='coo')
+        with pytest.raises(ValueError, match='changed'):
+            coo.decide('fixture-reading-stands', payload_sha='stale',
+                       evidence_sha=digest(evidence_content(evidence)),
+                       decision='CERTIFIED', reason='proxy', edited_payload={'h1':'new'})
+        with pytest.raises(ValueError, match='requires certified'):
+            coo.decide('fixture-reading-stands', payload_sha=digest(old),
+                       evidence_sha=digest(evidence_content(evidence)),
+                       decision='REWORK', reason='proxy', edited_payload={'h1':'new'})

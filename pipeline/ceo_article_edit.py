@@ -12,6 +12,8 @@ PRODUCT_FIELDS = ('h3', 'description')
 
 
 def apply_approved_edit(slug: str, payload_sha: str, edited: dict, *, reviewer_role: str = 'ceo') -> dict:
+    if reviewer_role not in {'ceo', 'coo'}:
+        raise ValueError('unauthorized reviewer role')
     state = load_job(slug)
     if state.get('status') != 'ACTIVE' or state.get('current_stage') not in ('COO_REVIEW_PENDING', 'CHAT_REVIEW_PENDING'):
         raise ValueError('article not in a review stage')
@@ -102,7 +104,7 @@ def recheck_approved_edit(slug: str) -> dict:
     require_receipts(payload, evidence, acceptance, read_artifact(slug, 'independent-quality-receipts.json', {}))
     require_certification(read_artifact(slug, 'qa-certification.json', {}), payload, evidence, qa, acceptance)
     receipt = make_chat_approval(payload=payload, evidence=evidence, decision='CERTIFIED',
-                                 publish_allowed=True, reason='CEO approved edited exact article; independent QA passed',
+                                 publish_allowed=True, reason='CEO or delegated COO approved edited exact article; independent QA passed',
                                  reviewer_role='coo' if marker.get('reviewer_role') == 'coo' else None)
     write_artifact(slug, 'chat-publish-approval.json', receipt)
     set_stage(slug, 'EYECATCH_PENDING', event='CEO_EDIT_INDEPENDENT_QA_PASSED')

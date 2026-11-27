@@ -2,7 +2,7 @@
   "schema": "kickstart-change-contract/v1",
   "task_id": "CEO-BU002-ARTICLE-REVIEW-EDIT-COO-PROXY-20261128",
   "instruction_ref": "CEO 2026-11-28: Sellemy CEOレビューで記事の編集を許可、同じ原稿を再レビューに戻さず、COOにCEO記事承認の軽量代行を認め、承認後は既存の公開ルートへ進める",
-  "instruction": "Accept approved exact-version prose edits at the article review gate, retain an immutable content hash, re-run the existing independent QA without invoking Writer or requesting another CEO approval, hold safely if QA fails, and after QA PASS enter the existing EYECATCH_PENDING/PUBLISH_PENDING route. Existing COO exact SHA certified decision remains the lightweight proxy for unedited review, with no false CEO identity.",
+  "instruction": "Accept approved exact-version prose edits at the article review gate, retain an immutable content hash, re-run the existing independent QA without invoking Writer or requesting another CEO approval, hold safely if QA fails, and after QA PASS enter the existing EYECATCH_PENDING/PUBLISH_PENDING route. Existing COO exact SHA certified decision remains the lightweight proxy for unedited review, with no false CEO identity. COO may send an edited article and CERTIFIED decision in a single call; on behalf of CEO, it creates the same approved edit marker with reviewer_role=coo, routes to existing independent QA, and does not requeue CEO.",
   "canonical_refs": [
     "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3",
     "https://app.notion.com/p/3dc67ec6a1008196b017ee01e1824bba"
@@ -15,6 +15,8 @@
     "pipeline/role_stage_exec.py",
     "pipeline/growth_runtime.py",
     "tests/test_ceo_article_edit_20261128.py",
+    "tests/test_coo_article_review.py",
+    "pipeline/coo_article_review.py",
     "tests/test_coo_article_review.py"
   ],
   "preserved_rules": [
