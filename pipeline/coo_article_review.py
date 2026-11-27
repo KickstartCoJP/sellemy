@@ -15,7 +15,7 @@ def pending():
             and row.get('current_stage') == 'COO_REVIEW_PENDING']
 
 
-def decide(slug, *, payload_sha, evidence_sha, decision, reason):
+def decide(slug, *, payload_sha, evidence_sha, decision, reason, edited_payload=None):
     if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', slug):
         raise ValueError('invalid slug')
     state = load_job(slug)
@@ -27,6 +27,13 @@ def decide(slug, *, payload_sha, evidence_sha, decision, reason):
         raise ValueError('article draft or evidence missing')
     if digest(payload) != payload_sha or digest(evidence_content(evidence)) != evidence_sha:
         raise ValueError('reviewed draft or evidence changed')
+    if edited_payload is not None:
+        if decision != 'CERTIFIED':
+            raise ValueError('COO edited article requires certified approval')
+        from ceo_article_edit import apply_approved_edit
+        # CEO-authorized proxy: no separate CEO click or duplicate review stage.
+        # The edited content itself must still pass the independent QA gate.
+        return apply_approved_edit(slug, payload_sha, edited_payload, reviewer_role='coo')
     receipt = make_chat_approval(payload=payload, evidence=evidence, decision=decision,
                                  publish_allowed=decision == 'CERTIFIED',
                                  reason=reason, reviewer_role='coo')
@@ -58,7 +65,9 @@ if __name__ == '__main__':
     parser.add_argument('--evidence-sha')
     parser.add_argument('--decision', choices=('CERTIFIED', 'REWORK', 'RETIRED'))
     parser.add_argument('--reason')
+    parser.add_argument('--edited-json', help='JSON file containing only editable article fields')
     args = parser.parse_args()
     print(json.dumps(decide(args.slug, payload_sha=args.payload_sha,
                             evidence_sha=args.evidence_sha, decision=args.decision,
-                            reason=args.reason) if args.slug else pending(), ensure_ascii=False))
+                            reason=args.reason,
+                            edited_payload=json.loads(open(args.edited_json, encoding='utf-8').read()) if args.edited_json else None) if args.slug else pending(), ensure_ascii=False))
