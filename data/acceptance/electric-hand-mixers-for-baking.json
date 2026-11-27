@@ -1,0 +1,120 @@
+{
+  "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+  "evidence_sha256": "92f93fa8d07991f40e28641710951380ddc39615e214b7a02067a928b5006667",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 11520,
+    "input_tokens": 25471,
+    "listing_identity_citations_repaired": [
+      "p1",
+      "p2",
+      "p3",
+      "p4",
+      "p5",
+      "p6"
+    ],
+    "member_binding_revision": 4,
+    "output_tokens": 2404,
+    "reasoning_effort": "medium",
+    "reasoning_output_tokens": 1212,
+    "reused_product_qa": true,
+    "session_id": "01a21bd8-fad0-79d2-af8d-fd2d857c1001",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "44f29c69b43e8962b0a8bcd915ad89043a14b9366cebfb9681e741e477aea016",
+  "review": {
+    "buying_guidance": false,
+    "claims_grounded": false,
+    "complete_comparison": false,
+    "distinct_products": true,
+    "duplicate_pair_checks": [],
+    "editorial_voice_appropriate": false,
+    "internal_qa_leak_absent": false,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "popular",
+            "quote": "5-level speed adjustment function included! Compact electric mixer"
+          }
+        ],
+        "identity_key": "貝印(Kai Corporation) KAI 電動 ハンド ミキサー 泡立て器 DL0501 ホワイト",
+        "identity_quote": "貝印(Kai Corporation) KAI 電動 ハンド ミキサー 泡立て器 DL0501 ホワイト",
+        "reason": "検証済みの商品資料（https://www.amazon.co.jp/dp/B00NCVVOLS）のタイトルが型番DL0501を示す。同資料に5段階速度調節と自立置きが記載されており、製菓向けの定番候補として紹介できる。人気の度合いは断定しない。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "popular",
+            "quote": "6 adjustable levels from low to high speed"
+          }
+        ],
+        "identity_key": "Cuisinart サイレント パワー ハンドミキサー 【DCモーター搭載】HM-PRO6J",
+        "identity_quote": "Cuisinart サイレント パワー ハンドミキサー 【DCモーター搭載】HM-PRO6J",
+        "reason": "検証済みの商品資料（https://www.amazon.co.jp/dp/B08TBMXNGY）のタイトルが型番HM-PRO6Jを示す。同資料に6段階速度調節と150mmのビーターが記載され、製菓用途に沿って紹介できる。静音性能の優劣は断定しない。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "貝印 KAI スマート ハンド ホイッパー コンパクト チャコールブラック キッチンツール DL6430",
+        "identity_quote": "貝印 KAI スマート ハンド ホイッパー コンパクト チャコールブラック キッチンツール DL6430",
+        "reason": "商品掲載タイトルの「貝印 KAI スマート ハンド ホイッパー コンパクト チャコールブラック キッチンツール DL6430」から製品を識別でき、コンパクトという紹介切り口に合う。検証済みの出典は付いていないため、選定理由中の寸法、重量、付属ウィスクや使用方法は確認済み事実として扱えない。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "compact_workspace",
+            "quote": "Accessories: Beater, balloon whisk, storage case"
+          }
+        ],
+        "identity_key": "Cuisinart (クイジナート) スマートパワーハンドミキサー ホワイト HM-050SJ",
+        "identity_quote": "Cuisinart (クイジナート) スマートパワーハンドミキサー ホワイト HM-050SJ",
+        "reason": "検証済みの商品資料（https://www.amazon.co.jp/dp/B01710JV6A?th=1）のタイトルが型番HM-050SJを示す。同資料には収納ケースと付属品が記載され、収納を意識した紹介ができる。p2とは型番が異なり、同一製品である証拠はない。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "easy_cleanup",
+            "quote": "the beater has no central rod and is wire-shaped, making it easy to clean The material is also stainless steel and is dishwasher safe"
+          }
+        ],
+        "identity_key": "テスコム ハンドミキサー 泡立て器 立てて置ける自立式 5段階切替 【ABC Cooking Studioとの共同開発】 取り外しワンタッチ ビーター 収納付き コードクリップ付き",
+        "identity_quote": "テスコム ハンドミキサー 泡立て器 立てて置ける自立式 5段階切替 【ABC Cooking Studioとの共同開発】 取り外しワンタッチ ビーター 収納付き コードクリップ付き ホワイト 正規品 THM273 W",
+        "reason": "検証済みの商品資料（https://www.amazon.co.jp/dp/B08KRPTQH8?th=1）のタイトルが型番THM273を示す。同資料に中心棒のないビーター形状と食洗機対応が記載され、片付けの切り口に合う。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "[東京Deco] 電動 ハンドミキサー 泡立て器 ホワイト 3段階スピード ビーター付き [スピード切替/ワンタッチ取付 / ] ハイパワー ホイッパー ビーター簡単取り外し スマ",
+        "identity_quote": "[東京Deco] 電動 ハンドミキサー 泡立て器 ホワイト 3段階スピード ビーター付き [スピード切替/ワンタッチ取付 / ] ハイパワー ホイッパー ビーター簡単取り外し スマート パワー ハンドクリスマス バレンタインデー 手作りお菓子づくり i001",
+        "reason": "商品掲載タイトルの「[東京Deco] 電動 ハンドミキサー」および「ビーター簡単取り外し」と型番i001から製品と片付けの切り口への適合を判断できる。検証済みの出典は付いていないため、選定理由中の寸法、重量、定格時間は確認済み事実として扱えない。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reader_decision_outsourcing_absent": false,
+    "reason": "商品掲載タイトルから6つの製品を識別でき、各商品は割り当てられた紹介切り口に沿って紹介できる。p2とp4が同一製品である積極的な根拠はない。p3とp6には検証済み資料が付いていないため、選定理由中の寸法・重量などを記事の確認済み事実として扱うことはできない。記事は未提出。",
+    "recommendation_conclusion": false,
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}
