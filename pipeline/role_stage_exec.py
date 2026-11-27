@@ -82,6 +82,8 @@ def _inspect(slug: str, *, cache_only: bool) -> dict:
             return {**details, 'action': 'continue'}
         return {**details, 'action': 'product'}
     stage = state.get('current_stage')
+    if stage == 'CEO_EDIT_QA_PENDING':
+        return {**details, 'action': 'edited_review'}
     if stage in {'WRITER_PENDING', 'QA_FAILED'}:
         # Product acceptance, not the availability of six detailed excerpts,
         # is the sole product selection gate before Writer.
@@ -346,7 +348,7 @@ def _ceo_reconcile(*, published: bool) -> dict:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument('--role', choices=(
-        'writer', 'reviewer', 'review_reset', 'product', 'inspect', 'designer', 'publish', 'postpublish', 'ceo_reconcile',
+        'writer', 'reviewer', 'edited_reviewer', 'review_reset', 'product', 'inspect', 'designer', 'publish', 'postpublish', 'ceo_reconcile',
         'planning', 'planning_commit', 'fresh_create', 'product_hold_recheck', 'quality_control_recovery', 'product_qa_disposition', 'already_published', 'slot_compensation', 'recovery', 'report', 'state_queue', 'scheduler', 'legacy_admit', 'legacy_replan', 'ceo_replan', 'legacy_precheck', 'legacy_review_finish'), required=True)
     parser.add_argument('--slug', default='')
     parser.add_argument('--cache-only', action='store_true')
@@ -359,6 +361,9 @@ def main() -> None:
         if args.role == 'writer':
             from role_execution_writer import writer
             result = writer(args.slug)
+        elif args.role == 'edited_reviewer':
+            from ceo_article_edit import recheck_approved_edit
+            result = recheck_approved_edit(args.slug)
         elif args.role == 'review_reset':
             from role_execution_writer import reset_review_artifacts
             result = reset_review_artifacts(args.slug)
