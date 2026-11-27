@@ -1,12 +1,49 @@
 {
-  "generation_method": "generative_ai",
-  "provider": "openai",
-  "model": "gpt-image-2.5-sunburst",
-  "quality": "high",
-  "operation_id": "sellemy-eyecatch-autumn-lip-balms-6-picks-8fa39763222a38e4",
-  "request_sha256": "8fa39763222a38e45e2b2c6dae0f58fc6783049f02e08447b1f5348a330e7590",
-  "image_sha256": "885054a61bf2058289cd64be0d2fc4c3887ab842584b5a5051b6c797ac4549c8",
-  "width": 1536,
+  "generated_at": "2026-11-27T20:17:08.616057+00:00",
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "generation_route_attestation": "codex_rollout_extension",
   "height": 1024,
-  "generated_at": "2026-09-18T13:01:49.802093+00:00"
+  "image_generation_internal_usage_exposed": false,
+  "image_sha256": "92a64864f584f33816670283b9944414b671df31c3a03ebadf783d3d4eddece9",
+  "member_binding_revision": 13,
+  "model": "gpt-6-sol",
+  "model_reported_generation_route": "built-in_image_gen",
+  "role_id": "bu-codex-sellemy-designer",
+  "routing": {
+    "api_share": 0,
+    "codex_reserve_percent": 20.0,
+    "codex_share": 100,
+    "codex_usage": {
+      "remaining_percent": 69.0,
+      "resets_at": 1796330023,
+      "source": "/Users/kickstart/.codex/sessions/2026/11/28/rollout-2026-11-28T05-15-42-01a21ea6-429c-77c2-a2e3-33b3963f5f8f.jsonl",
+      "used_percent": 31.0,
+      "window_minutes": 10080
+    },
+    "errors_before_success": [],
+    "executed_route": "codex",
+    "fallback_from": null,
+    "mode": "weighted_random",
+    "reason": "weighted_random",
+    "remaining_percent": 69.0,
+    "roll": 90,
+    "selected_route": "codex",
+    "total_weight": 100
+  },
+  "routing_recorded_at": "2026-11-27T20:17:08.617085+00:00",
+  "summary": "秋の朝、メイク前にリップクリームを塗る場面。PNG形式と1536x1024の寸法を確認済み。",
+  "thread_id": "01a21ea5-4d25-74f3-8d19-d1abe91d271f",
+  "token_usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 143360,
+    "input_tokens": 147594,
+    "output_tokens": 680,
+    "reasoning_output_tokens": 0,
+    "total_tokens": 148274,
+    "uncached_input_tokens": 4234
+  },
+  "token_usage_source": "codex_rollout.turn_token_usage",
+  "visual_family": "autumn vanity lifestyle",
+  "width": 1536
 }

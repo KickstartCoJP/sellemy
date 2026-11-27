@@ -1,0 +1,109 @@
+{
+  "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+  "evidence_sha256": "4c9d537ec790ea4caa6196f3933cb7137b300742b43e53c360e60482658b899c",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 14848,
+    "input_tokens": 27001,
+    "listing_identity_citations_repaired": [
+      "p1",
+      "p2",
+      "p3",
+      "p5",
+      "p6"
+    ],
+    "member_binding_revision": 4,
+    "output_tokens": 1959,
+    "reasoning_effort": "medium",
+    "reasoning_output_tokens": 887,
+    "reused_product_qa": true,
+    "session_id": "01a21993-def0-7d43-9d06-91a01e90217c",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "b6dfbd44548460587cd8ba48fa415c3a64e130a318eb1126e38b311e928c534e",
+  "review": {
+    "buying_guidance": false,
+    "claims_grounded": false,
+    "complete_comparison": false,
+    "distinct_products": true,
+    "duplicate_pair_checks": [],
+    "editorial_voice_appropriate": false,
+    "internal_qa_leak_absent": false,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "URIAGE Satou Pharmaceutical Uliage Moist Strip (Unscented) Hypoallergenic, Highly Moisturi",
+        "identity_quote": "URIAGE Satou Pharmaceutical Uliage Moist Strip (Unscented) Hypoallergenic, Highly Moisturizing, 0.1 oz (4 g) x 1",
+        "reason": "検証済みの商品掲載タイトルと抜粋から、無香料のスティック型リップケア製品と識別できる。人気・定番の切り口で紹介できるが、国内出荷本数は提示された検証済み抜粋では確認できない。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "Mentholatum Lip Melty Cream Lip, Unscented, 0.08 oz (2.4 g), Moisturizing",
+        "identity_quote": "Mentholatum Lip Melty Cream Lip, Unscented, 0.08 oz (2.4 g), Moisturizing",
+        "reason": "検証済みの商品掲載タイトルと抜粋から、無香料の保湿用リップ製品と識別できる。塗り心地や使用場面について掲載情報があり、人気・定番の切り口で個別に紹介できる。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "before_lip_makeup",
+            "quote": "it can also be used as a thin layer during the day as a lip primer"
+          }
+        ],
+        "identity_key": "Kanemaki Mellow Dew Lip Mask 01 Clear Pink 4.0g Lip Mask Intensive Moisturizing Care Lip P",
+        "identity_quote": "Kanemaki Mellow Dew Lip Mask 01 Clear Pink 4.0g Lip Mask Intensive Moisturizing Care Lip Primer with Spatula",
+        "reason": "検証済みの商品掲載タイトルからリップマスクと識別できる。抜粋には日中に薄く塗って口紅下地として使える旨があり、担当する切り口に合う。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "before_lip_makeup",
+            "quote": "moisture care and exfoliation in one lip scrub"
+          }
+        ],
+        "identity_key": "CANMAKE Plump Lip Care Scrub",
+        "identity_quote": "Canmake Plump Lip Care Scrub 02 Clear Pink, Lip Care, High Moisture, Sugar Scrub, Healthy Glow, No Need to Rinse",
+        "reason": "検証済みの商品掲載タイトルと抜粋から、保湿ケアと角質ケアを行うリップスクラブと識別できる。口紅を塗る前に唇を整える切り口で紹介でき、p3のリップマスクとは異なる製品である。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "キスミー薬用 リップクリーム 無香料 2.5g 敏感派・荒れ止め",
+        "identity_quote": "キスミー薬用 リップクリーム 無香料 2.5g 敏感派・荒れ止め",
+        "reason": "提供された商品掲載タイトルから無香料の薬用リップクリームと識別でき、香りを控えたい場面での塗り直しという切り口に合う。検証済みの商品出典は付いていないため、ノンメントールなどタイトルを超える詳細は未確認である。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "NIVEA ニベア ディープモイスチャーリップ 美容液スティック 無香料 高保湿 美容液 SPF30 PA++ 美容液成分配合 リップ リップクリーム",
+        "identity_quote": "NIVEA ニベア ディープモイスチャーリップ 美容液スティック 無香料 高保湿 美容液 SPF30 PA++ 美容液成分配合 リップ リップクリーム",
+        "reason": "提供された商品掲載タイトルから無香料の美容液スティック型リップケア製品と識別でき、香りを控えたい場面での塗り直しという切り口に合う。検証済みの商品出典は付いていないため、成分やUV性能の詳細は未確認である。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reader_decision_outsourcing_absent": false,
+    "reason": "記事未提出のため、6商品の識別と企画への適合のみを審査した。掲載タイトルからそれぞれ異なるリップケア製品と識別でき、既存の3つの紹介切り口に各2商品を割り当てられる。p3はリップマスク、p4はリップスクラブであり、同一商品の色違いなどを示す積極的な根拠はない。p5とp6には検証済みの商品出典が付いていないため、掲載タイトルを超える仕様や効能は未確認として扱う。",
+    "recommendation_conclusion": false,
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}
