@@ -4,132 +4,389 @@
   "category": "gadget",
   "comparison_axes": [
     {
-      "id": "line_connection",
+      "id": "popular",
       "keywords": [
-        "電話機コード",
-        "接続端子",
-        "ひかり電話",
-        "発信者番号表示"
+        "人気"
       ],
-      "label": "電話回線への接続と利用サービスの条件"
+      "label": "人気・定番の基準"
     },
     {
-      "id": "handset_configuration",
+      "id": "suspicious_call_handling",
       "keywords": [
-        "子機台数",
-        "親機",
-        "増設",
-        "充電台"
+        "迷惑電話対策",
+        "着信時の案内",
+        "通話録音"
       ],
-      "label": "親機・子機の構成と増設条件"
+      "label": "不審な電話に対応しやすい"
     },
     {
-      "id": "incoming_call_controls",
+      "id": "home_call_access",
       "keywords": [
-        "着信確認",
-        "通話録音",
-        "着信拒否",
-        "留守番電話"
+        "子機の設置",
+        "着信通知",
+        "聞き取りやすさ"
       ],
-      "label": "着信確認・録音・拒否設定の操作と条件"
+      "label": "家の中で着信に気づき、電話を取りやすい"
     }
   ],
   "eyecatch_image": "https://www.sellemy.jp/img/home-cordless-landline-telephones/home-cordless-landline-telephones.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "43386a23677ac677f2698f33cede471f99887d6a24e6580ed8c9ea680da06fee",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 26182,
+      "listing_identity_citations_repaired": [
+        "p2",
+        "p3",
+        "p5"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 1510,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 421,
+      "session_id": "01a21e94-a630-7172-877a-0507bf022105",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "High visibility white LCD (base unit/cordless handset) & improved visibility dial keypad (base unit)"
+            }
+          ],
+          "identity_key": "Panasonic VE-GD28DL",
+          "identity_quote": "Panasonic VE-GD28DL-S Digital Cordless Phone",
+          "reason": "親機・子機の白色液晶が掲載抜粋に明記され、買い替え候補として紹介できる。選定理由中の応答後の自動録音は、この抜粋では未確認。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "Call Recording: Up to 10 minutes (up to 50 calls)"
+            }
+          ],
+          "identity_key": "【純正品】Sharp (シャープ) Simple Cordless Phone JD-G33CL Easy-to-Read LCD Anti-Spam Function Perso",
+          "identity_quote": "【純正品】Sharp (シャープ) Simple Cordless Phone JD-G33CL Easy-to-Read LCD Anti-Spam Function Personal Type Handset 1 White",
+          "reason": "子機1台付きの電話機として識別でき、掲載抜粋には留守録・通話録音など紹介に使える事実がある。選定理由中の「お名前確認」「音量大」ボタンは、この抜粋では未確認。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "suspicious_call_handling",
+              "quote": "Name confirmation feature: Automatic listening and response"
+            }
+          ],
+          "identity_key": "シャープ 電話機 コードレス 振り込め詐欺対策機能搭載 電話機単体+子機1台 ゴールド系 JD-AT96CL",
+          "identity_quote": "シャープ 電話機 コードレス 振り込め詐欺対策機能搭載 電話機単体+子機1台 ゴールド系 JD-AT96CL",
+          "reason": "電話機本体と子機の製品として識別でき、掲載抜粋の名前確認機能が不審な電話への対応という切り口に合う。着信前の警告から自動質問までの詳しい手順は、この抜粋では未確認。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "suspicious_call_handling",
+              "quote": "it also comes with a \"spoil phone consultation\" function"
+            }
+          ],
+          "identity_key": "Panasonic VE-GD58DL",
+          "identity_quote": "Panasonic VE-GD58DL-N Digital Cordless Phone, Includes 1 Child Unit",
+          "reason": "子機1台付きの電話機として識別でき、掲載抜粋には迷惑電話対策と通話後の相談機能への言及がある。録音を家族との通話中に再生する操作や親機限定という条件は、この抜粋では未確認。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "home_call_access",
+              "quote": "Receive / Transmit Volume Switch: 12 levels / 3 levels"
+            }
+          ],
+          "identity_key": "シャープ 電話機 コードレス 子機1台付き 詐欺対策機能 見守り機能搭載 JD-AT91CL",
+          "identity_quote": "シャープ 電話機 コードレス 子機1台付き 詐欺対策機能 見守り機能搭載 JD-AT91CL",
+          "reason": "子機1台付きの電話機として識別でき、掲載抜粋に受話音量の切り替えが示されているため、聞き取りやすさの切り口で紹介できる。親機・子機のフラッシュ着信は、この抜粋では未確認。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "home_call_access",
+              "quote": "Panasonic VE-GD78DW-W Cordless Phone (with 2 Child Units)"
+            }
+          ],
+          "identity_key": "Panasonic VE-GD78DW",
+          "identity_quote": "Panasonic VE-GD78DW-W Cordless Phone (with 2 Child Units)",
+          "reason": "子機2台付きの固定電話として識別でき、家の中の複数箇所で電話を取りたい用途に合う。選定理由のリンク先にあるVE-GD78DLの仕様を、選定品VE-GD78DW-Wの機能としてそのまま扱わない。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "検証済みの商品掲載文により、6商品をそれぞれ異なる型番のコードレス固定電話として識別できる。既存の3つの紹介切り口に各2商品を配置し、掲載文で確認できる事実に基づいて紹介できる。同一本体や色・数量だけの違いを示す積極的な根拠はない。選定理由に含まれる未確認の細かな機能説明は、記事で確認済みの事実として扱わない。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
   "products": [
     {
-      "amazon_title": "【正規品】 パナソニック デジタルコードレス電話機 VE-GDS18DL-T 迷惑防止搭載 ブラウン 優良 防犯 電話機 推奨品",
-      "asin": "B0CJHQ6983",
-      "brand": "Panasonic",
-      "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/81CVwUxFedL._AC_SL1500_.jpg",
-      "matched_comparison_axes": [
-        "handset_configuration"
-      ],
-      "observed_price": null,
-      "product_id": "AMZ-B0CJHQ6983",
-      "ref": "p1",
-      "search_key": "パナソニック対応 VE-GDS18DL-T デジタルコードレス電",
-      "selection_score": 0.505,
-      "selected_variant": "ブラウン、標準単品、充電台親機+子機1台"
-    },
-    {
-      "amazon_title": "シャープ シンプル コードレス 電話機 コンパクト 電話線すっきりモデル 迷惑電話防止機能付 ホワイト系 JD-SF3CL-W",
-      "asin": "B0BYMY5C2R",
-      "brand": "SHARP",
-      "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51IxzCr2XKL._AC_SL1000_.jpg",
-      "matched_comparison_axes": [],
-      "observed_price": null,
-      "product_id": "AMZ-B0BYMY5C2R",
-      "ref": "p2",
-      "search_key": "パナソ二ック 子機2台付き VE-GD27DW-W デジタル コ",
-      "selection_score": 0.325,
-      "selected_variant": "ホワイト系、電話回線接続用親機＋コードレス子機1台＋充電器"
-    },
-    {
-      "amazon_title": "【正規品】パナソニック デジタルコードレス電話機 VE-GD28DL-S 迷惑防止機能付き シルバー",
+      "amazon_title": "Panasonic VE-GD28DL-S Digital Cordless Phone with Disturbance Prevention",
       "asin": "B0FCS99FF5",
       "brand": "Panasonic",
+      "discovery_axis_id": "popular",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51sINHWcmcL._AC_SL1068_.jpg",
-      "matched_comparison_axes": [],
+      "image_url": "https://m.media-amazon.com/images/I/51sINHWcmcL._AC_UL320_.jpg",
       "observed_price": null,
       "product_id": "AMZ-B0FCS99FF5",
-      "ref": "p3",
-      "search_key": "パナソニック対応 VE-GD28DL-S デジタルコードレス電話",
-      "selection_score": 0.325,
-      "selected_variant": "シルバー、2025年標準構成、親機+子機1台"
+      "provisional": false,
+      "rating": 4.0,
+      "ref": "p1",
+      "review_count": 448,
+      "search_key": "Panasonic VE-GD28DL-S Digital Cordless Pho",
+      "selection_reason": "親機と子機の白色液晶で表示を確認でき、迷惑防止を設定すると呼出前に録音予告、応答後に自動録音する。親が使い慣れた親機を居間に置き、子機を別室で使う買い替えの基準にしやすい。[販売店の商品説明](https://joshinweb.jp/peripheral/362/4549980998090.html)で在庫も確認できる。",
+      "sources": [
+        {
+          "brand": "Panasonic",
+          "excerpt": "Panasonic VE-GD28DL-S Digital Cordless Phone with Disturbance Prevention\nAbout this item\n✅ Equipped with the \"Spam Prevention\" feature that sends a warning message to the caller before the phone starts ringing\n✅ Reject persistent annoying calls (300 numbers)\n✅ High visibility white LCD (base unit/cordless handset) & improved visibility dial keypad (base unit) › See more product details\nBrand Panasonic\nColor Silver\nTelephone Type Cordless\nNumber of Batteries 1 Product Specific batteries required. (included)\nMaterial Parent console does not have phone book function\nPower Source Battery Powered, Corded Electric\nDialer Type Parent console does not have phone book function\nItem dimensions L x W x H 17.4 x 16.1 x 7.2 cm\nAnswering System Type Parent console does not have phone book function\nCompatible Devices Door Phone See more",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Panasonic VE-GD28DL-S Digital Cordless Phone with Disturbance Prevention",
+          "url": "https://www.amazon.co.jp/dp/B0FCS99FF5?th=1",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "シャープ 電話機 コードレス 子機1台付き 迷惑電話対策機能付き 大きなボタン 聞きやすい大音量 ホワイト系 JD-V39CL",
-      "asin": "B0C9ZQ17CJ",
-      "brand": "SHARP",
+      "amazon_title": "【純正品】Sharp (シャープ) Simple Cordless Phone JD-G33CL Easy-to-Read LCD Anti-Spam Function Personal Type Handset 1 White",
+      "asin": "B0BVVKV1S6",
+      "brand": "Sharp",
+      "discovery_axis_id": "popular",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/41ewB8Qt25L._AC_.jpg",
-      "matched_comparison_axes": [],
+      "image_url": "https://m.media-amazon.com/images/I/51ecVM9nNoL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B0C9ZQ17CJ",
-      "ref": "p4",
-      "search_key": "パナソ二ック デジタル コードレス 電話機 本体+子機1台 固定",
-      "selection_score": 0.325,
-      "selected_variant": "ホワイト系、有線受話器付き親機＋コードレス子機1台"
-    },
-    {
-      "amazon_title": "【正規品】パナソニック コードレス電話機 VE-GD78DL-N (子機1台付き) 温度・湿度アラーム搭載 シャンパンゴールド 優良 防犯 電話機 推奨品",
-      "asin": "B09SYPLN35",
-      "brand": "Panasonic",
-      "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/81v+EbALorL._AC_SL1500_.jpg",
-      "matched_comparison_axes": [],
-      "observed_price": null,
-      "product_id": "AMZ-B09SYPLN35",
-      "ref": "p5",
-      "search_key": "補助金対象 パナソ二ック デジタルコードレス電話機 VE-GD2",
-      "selection_score": 0.325,
-      "selected_variant": "シャンパンゴールド、受話子機付き親機+追加子機1台"
+      "product_id": "AMZ-B0BVVKV1S6",
+      "provisional": false,
+      "rating": 4.0,
+      "ref": "p2",
+      "review_count": 648,
+      "search_key": "Sharp (シャープ) Simple Cordless Phone JD-",
+      "selection_reason": "子機の「お名前確認」ボタンで相手を確かめ、「音量大」ボタンで通話中の声を上げられる。知らない番号にはすぐ出たくないが、家族との電話は聞き取りたい親に向く。子機1台付きで、[シャープ公式通販](https://cocorostore.jp.sharp/infod/phone/cordless-st/jd-g33cl.html)から購入できる。",
+      "sources": [
+        {
+          "brand": "Sharp",
+          "excerpt": "【純正品】Sharp (シャープ) Simple Cordless Phone JD-G33CL Easy-to-Read LCD Anti-Spam Function Personal Type Handset 1 White\nAbout this item\nAnswering machine recording (Maximum recording time / Maximum number of recordings): Approx. 10 minutes / 50 recordings\nCall Recording: Up to 10 minutes (up to 50 calls)\nIncoming call records: 20\nPhonebook function: Kana 100 people x 1 number\nRinger (call) volume switch: 5 levels, off › See more product details\nBrand Sharp\nColor white\nTelephone Type Cordless\nNumber of Batteries 1 AAA batteries required. (included)\nMaterial Plastic\nPower Source Corded Electric\nDialer Type Single Keypad\nItem dimensions L x W x H 15.9 x 17.2 x 7 cm\nAnswering System Type Digital\nItem Weight 450 Grams See more",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "【純正品】Sharp (シャープ) Simple Cordless Phone JD-G33CL Easy-to-Read LCD Anti-Spam Function Personal Type Handset 1 White",
+          "url": "https://www.amazon.co.jp/dp/B0BVVKV1S6?th=1",
+          "verified": true
+        }
+      ]
     },
     {
       "amazon_title": "シャープ 電話機 コードレス 振り込め詐欺対策機能搭載 電話機単体+子機1台 ゴールド系 JD-AT96CL",
       "asin": "B0C9ZL74FQ",
-      "brand": "SHARP",
+      "brand": "Sharp",
+      "discovery_axis_id": "suspicious_call_handling",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/41OGMPuLcvL._AC_.jpg",
-      "matched_comparison_axes": [],
+      "image_url": "https://m.media-amazon.com/images/I/41OGMPuLcvL._AC_UL320_.jpg",
       "observed_price": null,
       "product_id": "AMZ-B0C9ZL74FQ",
+      "provisional": false,
+      "rating": 4.2,
+      "ref": "p3",
+      "review_count": 317,
+      "search_key": "Sharp シャープ 電話機 コードレス 振り込め詐欺対策機能搭載 電話機単",
+      "selection_reason": "着信前に警告し、切らずに待つ相手には自動メッセージで名前を尋ねる。親が受話器を取る前に相手を判断したい家庭に向く。[シャープの機能説明](https://jp.sharp/phone/products/jdat96/feature/security/)に手順が記載され、[販売店](https://joshinweb.jp/pc/473/4550556108188.html)で在庫も確認できる。",
+      "sources": [
+        {
+          "brand": "Sharp",
+          "excerpt": "Sharp Cordless Landline Phone with Scam Call Prevention Feature, Phone Unit + 1 Handset, Gold JD-AT96CL\nAbout this item\nRinger (call) volume switch: 6 levels, off\nReceive/Transmit Volume Switching: 12 levels / 3 levels\nMessage recording / Recording time: Up to approx. 30 minutes / 50 messages\nIncoming call records: 20\nName confirmation feature: Automatic listening and response › See more product details\nBrand Sharp\nColor gold\nTelephone Type Cordless\nNumber of Batteries 1 Nonstandard Battery batteries required. (included)\nMaterial Plastic\nPower Source Battery Powered\nDialer Type Single Keypad\nItem dimensions L x W x H 17.2 x 22 x 8.6 cm\nAnswering System Type Digital\nItem Weight 690 Grams See more",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Sharp Cordless Landline Phone with Scam Call Prevention Feature, Phone Unit + 1 Handset, Gold JD-AT96CL",
+          "url": "https://www.amazon.co.jp/dp/B0C9ZL74FQ?th=1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "【正規品】パナソニック デジタルコードレス電話機 VE-GD58DL-N 迷惑防止搭載 子機1台付き ピンクゴールド 優良 防犯 電話機 推奨品",
+      "asin": "B0CJHQ697S",
+      "brand": "Panasonic",
+      "discovery_axis_id": "suspicious_call_handling",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81ZuKDejqvL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0CJHQ697S",
+      "provisional": false,
+      "rating": 4.2,
+      "ref": "p4",
+      "review_count": 211,
+      "search_key": "Panasonic パナソニック デジタルコードレス電話機 VE-GD58DL-N",
+      "selection_reason": "迷惑防止を設定すると通話を自動録音し、通話後には録音を家族との電話中に再生して聞いてもらえる。離れて暮らす家族に不審な電話の内容を相談したい親に向く。相談機能は親機で使う仕様。[パナソニックの機能説明](https://panasonic.jp/phone/products/VE-GD58DL/feature/meiwaku.html)と[公式通販](https://ec-plus.panasonic.jp/store/ap/storeaez/a2A/ProductDetail?HB=VE-GD58DL-N)で確認できる。",
+      "sources": [
+        {
+          "brand": "Panasonic",
+          "excerpt": "Panasonic VE-GD58DL-N Digital Cordless Phone, Includes 1 Child Unit, Pink Gold, Excellent Security Phone, Recommended Item\nAbout this item\nIn addition to the traditional \"jamming prevention\" function, it also comes with a \"spoil phone consultation\" function that allows you to rest assured even after calls\nThe handset on the parent console is cordless and clean\nEquipped with an easy-to-read \"incoming call notification LED\" on the child console › See more product details\nBrand Panasonic\nColor multicolor (pink / gold)\nTelephone Type Cordless\nNumber of Batteries 2 AAA batteries required. (included)\nMaterial Plastic\nPower Source Corded Electric\nItem Weight 600 Grams\nMultiline Operation Single-Line Operation\nNumber of Packs 1\nNumber of Items 1 See more",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Panasonic VE-GD58DL-N Digital Cordless Phone, Includes 1 Child Unit, Pink Gold, Excellent Security Phone, Recommended Item",
+          "url": "https://www.amazon.co.jp/dp/B0CJHQ697S",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "シャープ 電話機 コードレス 子機1台付き 詐欺対策機能 見守り機能搭載 JD-AT91CL",
+      "asin": "B0C9ZN171L",
+      "brand": "Sharp",
+      "discovery_axis_id": "home_call_access",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41H-MAOfgjL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0C9ZN171L",
+      "provisional": false,
+      "rating": 4.2,
+      "ref": "p5",
+      "review_count": 240,
+      "search_key": "Sharp シャープ 電話機 コードレス 子機1台付き 詐欺対策機能 見守り",
+      "selection_reason": "親機と子機に大音量フラッシュ着信があり、呼出音・受話音量もそれぞれ6段階・12段階で調節できる。テレビの音がある居間や子機を置く部屋で、光でも着信に気づきたい親に向く。[シャープの仕様](https://jp.sharp/support/tel/product/jdat91.html)に記載があり、[公式通販](https://cocorostore.jp.sharp/jd-at91cl.html)で購入できる。",
+      "sources": [
+        {
+          "brand": "Sharp",
+          "excerpt": "Sharp (シャープ) Cordless Phone with 1 Handset, Fraud Prevention Feature, Monitoring Function JD-AT91CL\nAbout this item\nRingtone (call) volume switch: 6 levels, off\nReceive / Transmit Volume Switch: 12 levels / 3 levels\nName confirmation feature: Automatically listens and responds\nCall recording: Automatic up to 120 minutes (up to 10 minutes per entry, maximum 100 entries)\nMessage recording time / Number of recordings: Max. approx. 30 minutes / 50 entries › See more product details\nCompatible Devices Speaker\nConnector Type DIN\nColor white\nItem dimensions L x W x H 16 x 22.2 x 7.8 cm\nBrand Sharp",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Sharp (シャープ) Cordless Phone with 1 Handset, Fraud Prevention Feature, Monitoring Function JD-AT91CL",
+          "url": "https://www.amazon.co.jp/dp/B0C9ZN171L?th=1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "【正規品】 パナソニック コードレス電話機 VE-GD78DW-W (子機2台付き) 温度・湿度アラーム搭載 パールホワイト 優良 防犯 電話機 推奨品",
+      "asin": "B09SYP7KMF",
+      "brand": "Panasonic",
+      "discovery_axis_id": "home_call_access",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71-xMFhJzAL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B09SYP7KMF",
+      "provisional": false,
+      "rating": 4.1,
       "ref": "p6",
-      "search_key": "パナソ二ック デジタルコードレス電話機 本体+子機1台 固定電話",
-      "selection_score": 0.325,
-      "selected_variant": "ゴールド系、受話子機付き親機+追加子機1台"
+      "review_count": 168,
+      "search_key": "Panasonic パナソニック コードレス電話機 VE-GD78DW-W (子機2",
+      "selection_reason": "付属のコードレス子機が2台あり、親機の受話器もコードレスで使える。居間と寝室など、よく過ごす場所に受話器を置いて電話を取りたい家庭に向く。子機には着信を光で知らせるLEDもある。[パナソニックの機能説明](https://panasonic.jp/phone/products/VE-GD78DL/feature/benri.html)で確認でき、[販売店](https://www.biccamera.com/bc/item/9966785/)に在庫表示がある。",
+      "sources": [
+        {
+          "brand": "Panasonic",
+          "excerpt": "Panasonic VE-GD78DW-W Cordless Phone (with 2 Child Units), Temperature and Humidity Alarm, Pearl White, Excellent Security Phone, Recommended Product\nAbout this item\nHandset cordless phone with full safety features\nTemperature and humidity is detected by the parent unit and will notify you of heatstroke and dry alerts\nLarge text is easy to read and choose a standby screen to suit your preference\nSafe and reliable protection against annoying calls\nMain unit external dimensions (H x W x D): Approx. 3.0 x 6.7 x 8.2 inches (77 x 171 x 209 mm) (excluding antenna) › See more product details\nCompatible Devices Smartphone\nConnector Type Component\nColor white\nBrand Panasonic\nItem Package Quantity 1",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Panasonic VE-GD78DW-W Cordless Phone (with 2 Child Units), Temperature and Humidity Alarm, Pearl White, Excellent Security Phone, Recommended Product",
+          "url": "https://www.amazon.co.jp/dp/B09SYP7KMF?th=1",
+          "verified": true
+        }
+      ]
     }
   ],
   "selection": {
-    "brand_count": 0,
-    "comparison_axes_covered": [
-      "handset_configuration"
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B0FCS99FF5",
+            "reason": "親機と子機の白色液晶で表示を確認でき、迷惑防止を設定すると呼出前に録音予告、応答後に自動録音する。親が使い慣れた親機を居間に置き、子機を別室で使う買い替えの基準にしやすい。[販売店の商品説明](https://joshinweb.jp/peripheral/362/4549980998090.html)で在庫も確認できる。"
+          },
+          {
+            "asin": "B0BVVKV1S6",
+            "reason": "子機の「お名前確認」ボタンで相手を確かめ、「音量大」ボタンで通話中の声を上げられる。知らない番号にはすぐ出たくないが、家族との電話は聞き取りたい親に向く。子機1台付きで、[シャープ公式通販](https://cocorostore.jp.sharp/infod/phone/cordless-st/jd-g33cl.html)から購入できる。"
+          }
+        ]
+      },
+      {
+        "axis_id": "suspicious_call_handling",
+        "products": [
+          {
+            "asin": "B0C9ZL74FQ",
+            "reason": "着信前に警告し、切らずに待つ相手には自動メッセージで名前を尋ねる。親が受話器を取る前に相手を判断したい家庭に向く。[シャープの機能説明](https://jp.sharp/phone/products/jdat96/feature/security/)に手順が記載され、[販売店](https://joshinweb.jp/pc/473/4550556108188.html)で在庫も確認できる。"
+          },
+          {
+            "asin": "B0CJHQ697S",
+            "reason": "迷惑防止を設定すると通話を自動録音し、通話後には録音を家族との電話中に再生して聞いてもらえる。離れて暮らす家族に不審な電話の内容を相談したい親に向く。相談機能は親機で使う仕様。[パナソニックの機能説明](https://panasonic.jp/phone/products/VE-GD58DL/feature/meiwaku.html)と[公式通販](https://ec-plus.panasonic.jp/store/ap/storeaez/a2A/ProductDetail?HB=VE-GD58DL-N)で確認できる。"
+          }
+        ]
+      },
+      {
+        "axis_id": "home_call_access",
+        "products": [
+          {
+            "asin": "B0C9ZN171L",
+            "reason": "親機と子機に大音量フラッシュ着信があり、呼出音・受話音量もそれぞれ6段階・12段階で調節できる。テレビの音がある居間や子機を置く部屋で、光でも着信に気づきたい親に向く。[シャープの仕様](https://jp.sharp/support/tel/product/jdat91.html)に記載があり、[公式通販](https://cocorostore.jp.sharp/jd-at91cl.html)で購入できる。"
+          },
+          {
+            "asin": "B09SYP7KMF",
+            "reason": "付属のコードレス子機が2台あり、親機の受話器もコードレスで使える。居間と寝室など、よく過ごす場所に受話器を置いて電話を取りたい家庭に向く。子機には着信を光で知らせるLEDもある。[パナソニックの機能説明](https://panasonic.jp/phone/products/VE-GD78DL/feature/benri.html)で確認でき、[販売店](https://www.biccamera.com/bc/item/9966785/)に在庫表示がある。"
+          }
+        ]
+      }
     ],
-    "content_duplicates_removed": [],
-    "price_used_as_constraint_only": true
+    "brand_count": 2,
+    "candidate_count": 30,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [
+      {
+        "asin": "B0FCS99FF5",
+        "check_items": {
+          "color_design_only": "UNKNOWN",
+          "function_structure_difference": "UNKNOWN",
+          "independent_comparison_value": "UNKNOWN",
+          "manufacturer_brand_relation": "UNKNOWN",
+          "sales_packaging_only": "UNKNOWN",
+          "same_product_body": "FAIL",
+          "series_generation_difference": "UNKNOWN",
+          "size_capacity_difference": "UNKNOWN"
+        },
+        "duplicate_of_asin": "B0FCS99FF5",
+        "reason": "same_asin"
+      }
+    ],
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": [
+      "B0FCS99FF5"
+    ],
+    "targeted_replacement": true
   },
   "slug": "home-cordless-landline-telephones"
 }

@@ -1,0 +1,127 @@
+{
+  "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+  "evidence_sha256": "43386a23677ac677f2698f33cede471f99887d6a24e6580ed8c9ea680da06fee",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 11520,
+    "input_tokens": 26182,
+    "listing_identity_citations_repaired": [
+      "p2",
+      "p3",
+      "p5"
+    ],
+    "member_binding_revision": 4,
+    "output_tokens": 1510,
+    "reasoning_effort": "medium",
+    "reasoning_output_tokens": 421,
+    "reused_product_qa": true,
+    "session_id": "01a21e94-a630-7172-877a-0507bf022105",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "bded153b08ca168b83238e8b615d4eda3d7755a51887ddd1a1cdfde3f2126aea",
+  "review": {
+    "buying_guidance": false,
+    "claims_grounded": false,
+    "complete_comparison": false,
+    "distinct_products": true,
+    "duplicate_pair_checks": [],
+    "editorial_voice_appropriate": false,
+    "internal_qa_leak_absent": false,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "popular",
+            "quote": "High visibility white LCD (base unit/cordless handset) & improved visibility dial keypad (base unit)"
+          }
+        ],
+        "identity_key": "Panasonic VE-GD28DL",
+        "identity_quote": "Panasonic VE-GD28DL-S Digital Cordless Phone",
+        "reason": "親機・子機の白色液晶が掲載抜粋に明記され、買い替え候補として紹介できる。選定理由中の応答後の自動録音は、この抜粋では未確認。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "popular",
+            "quote": "Call Recording: Up to 10 minutes (up to 50 calls)"
+          }
+        ],
+        "identity_key": "【純正品】Sharp (シャープ) Simple Cordless Phone JD-G33CL Easy-to-Read LCD Anti-Spam Function Perso",
+        "identity_quote": "【純正品】Sharp (シャープ) Simple Cordless Phone JD-G33CL Easy-to-Read LCD Anti-Spam Function Personal Type Handset 1 White",
+        "reason": "子機1台付きの電話機として識別でき、掲載抜粋には留守録・通話録音など紹介に使える事実がある。選定理由中の「お名前確認」「音量大」ボタンは、この抜粋では未確認。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "suspicious_call_handling",
+            "quote": "Name confirmation feature: Automatic listening and response"
+          }
+        ],
+        "identity_key": "シャープ 電話機 コードレス 振り込め詐欺対策機能搭載 電話機単体+子機1台 ゴールド系 JD-AT96CL",
+        "identity_quote": "シャープ 電話機 コードレス 振り込め詐欺対策機能搭載 電話機単体+子機1台 ゴールド系 JD-AT96CL",
+        "reason": "電話機本体と子機の製品として識別でき、掲載抜粋の名前確認機能が不審な電話への対応という切り口に合う。着信前の警告から自動質問までの詳しい手順は、この抜粋では未確認。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "suspicious_call_handling",
+            "quote": "it also comes with a \"spoil phone consultation\" function"
+          }
+        ],
+        "identity_key": "Panasonic VE-GD58DL",
+        "identity_quote": "Panasonic VE-GD58DL-N Digital Cordless Phone, Includes 1 Child Unit",
+        "reason": "子機1台付きの電話機として識別でき、掲載抜粋には迷惑電話対策と通話後の相談機能への言及がある。録音を家族との通話中に再生する操作や親機限定という条件は、この抜粋では未確認。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "home_call_access",
+            "quote": "Receive / Transmit Volume Switch: 12 levels / 3 levels"
+          }
+        ],
+        "identity_key": "シャープ 電話機 コードレス 子機1台付き 詐欺対策機能 見守り機能搭載 JD-AT91CL",
+        "identity_quote": "シャープ 電話機 コードレス 子機1台付き 詐欺対策機能 見守り機能搭載 JD-AT91CL",
+        "reason": "子機1台付きの電話機として識別でき、掲載抜粋に受話音量の切り替えが示されているため、聞き取りやすさの切り口で紹介できる。親機・子機のフラッシュ着信は、この抜粋では未確認。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "home_call_access",
+            "quote": "Panasonic VE-GD78DW-W Cordless Phone (with 2 Child Units)"
+          }
+        ],
+        "identity_key": "Panasonic VE-GD78DW",
+        "identity_quote": "Panasonic VE-GD78DW-W Cordless Phone (with 2 Child Units)",
+        "reason": "子機2台付きの固定電話として識別でき、家の中の複数箇所で電話を取りたい用途に合う。選定理由のリンク先にあるVE-GD78DLの仕様を、選定品VE-GD78DW-Wの機能としてそのまま扱わない。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reader_decision_outsourcing_absent": false,
+    "reason": "検証済みの商品掲載文により、6商品をそれぞれ異なる型番のコードレス固定電話として識別できる。既存の3つの紹介切り口に各2商品を配置し、掲載文で確認できる事実に基づいて紹介できる。同一本体や色・数量だけの違いを示す積極的な根拠はない。選定理由に含まれる未確認の細かな機能説明は、記事で確認済みの事実として扱わない。",
+    "recommendation_conclusion": false,
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}
