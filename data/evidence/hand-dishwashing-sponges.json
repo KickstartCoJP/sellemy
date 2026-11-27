@@ -4,162 +4,372 @@
   "category": "dailygoods",
   "comparison_axes": [
     {
-      "id": "surface_compatibility",
+      "id": "popular",
       "keywords": [
-        "フッ素樹脂加工",
-        "ガラス",
-        "研磨材",
-        "使用できない素材"
+        "人気"
       ],
-      "label": "食器や調理器具の素材への適合"
+      "label": "人気・定番の基準"
     },
     {
-      "id": "sponge_structure",
+      "id": "compact_washing",
       "keywords": [
-        "不織布",
-        "ネット",
-        "層構造",
-        "寸法"
+        "薄型",
+        "小型",
+        "持ちやすい形状"
       ],
-      "label": "洗う面の構造と形"
+      "label": "皿の縁やカップの内側を洗うときに手を動かしやすい形"
     },
     {
-      "id": "care_and_replacement",
+      "id": "compact_storage",
       "keywords": [
-        "水切り",
-        "消毒条件",
-        "耐熱温度",
-        "入り数"
+        "自立型",
+        "吊り下げ",
+        "水切りしやすい形状"
       ],
-      "label": "洗浄後の手入れと交換単位"
+      "label": "狭いシンク周りで置き場所を作りやすい形"
     }
   ],
   "eyecatch_image": "https://www.sellemy.jp/img/hand-dishwashing-sponges/hand-dishwashing-sponges.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "7b31c134dd31bc33274a1b2086fceffe3e8f5748401ebb44a8559679fe40cbab",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 25727,
+      "listing_identity_citations_repaired": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 2529,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 1378,
+      "session_id": "01a21e13-7ce5-74d2-9a6c-cb88351a7817",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "With the corner of the leaf-shaped sponge, dirty nooks and stains on the bottom of glasses and containers"
+            }
+          ],
+          "identity_key": "【Amazon.co.jp限定】 3M スコッチブライト 抗菌 ウレタン スポンジ 食器洗い キッチンスポンジ 食器用スポンジ 皿洗い リーフ 4個",
+          "identity_quote": "【Amazon.co.jp限定】 3M スコッチブライト 抗菌 ウレタン スポンジ 食器洗い キッチンスポンジ 食器用スポンジ 皿洗い リーフ 4個",
+          "reason": "葉形の食器用スポンジとして識別できる。掲載情報にグラスの底や容器の隅を洗う用途があり、定番品として紹介できる。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "It is a coarse-meshed sponge with a skeletal structure"
+            }
+          ],
+          "identity_key": "PAX NATURON(パックスナチュロン) キッチンスポンジ (ナチュラル / 5個セット) 台所 食器洗い 皿洗い スポンジ (泡立ち/水切れ/耐久性) 太陽油脂",
+          "identity_quote": "PAX NATURON(パックスナチュロン) キッチンスポンジ (ナチュラル / 5個セット) 台所 食器洗い 皿洗い スポンジ (泡立ち/水切れ/耐久性) 太陽油脂",
+          "reason": "食器洗い用スポンジとして識別できる。掲載情報の粗い網目構造を、日常の洗い方に沿った紹介に使える。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "compact_washing",
+              "quote": "A soft cloth-shaped net sponge that easily cleans the fine gaps of kitchen utensils, the grooves of plastic containers, and the bottom"
+            }
+          ],
+          "identity_key": "【Amazon.co.jp限定】3M スポンジ キッチン 食器 キズつけない グリーナークリーン PLAメッシュネット 4個 スコッチブライト GC-PLA MN 4P A",
+          "identity_quote": "【Amazon.co.jp限定】3M スポンジ キッチン 食器 キズつけない グリーナークリーン PLAメッシュネット 4個 スコッチブライト GC-PLA MN 4P A",
+          "reason": "布状の食器洗い用メッシュとして識別できる。掲載情報は容器の溝や底に沿わせる用途を示している。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "compact_washing",
+              "quote": "【商品サイズ】1×5.5×8cm（1個あたり）"
+            }
+          ],
+          "identity_key": "東和産業 KR 毎日 取替え 使い捨て スポンジ 泡立ち 30P 優しく洗える 泡立ち豊富 ソフト キッチンスポンジ たわし 清潔 5.5×1×8cm 13052",
+          "identity_quote": "東和産業 KR 毎日 取替え 使い捨て スポンジ 泡立ち 30P 優しく洗える 泡立ち豊富 ソフト キッチンスポンジ たわし 清潔 5.5×1×8cm 13052",
+          "reason": "型番のある食器洗い用スポンジとして識別できる。1個あたりの寸法から、小さく薄い形を紹介できる。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "compact_storage",
+              "quote": "リーフ型スタンド付き"
+            }
+          ],
+          "identity_key": "ボトル洗いスポンジ リーフ型スタンド付き 青",
+          "identity_quote": "ボトル洗いスポンジ リーフ型スタンド付き 青",
+          "reason": "商品掲載名からスタンド付きのボトル洗いスポンジと識別できる。柄付きのスポンジを立てて置く用途は紹介切り口に合う。メーカーや詳細仕様は未確認として扱う。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "compact_storage",
+              "quote": "尾を下にして立てて置ける"
+            }
+          ],
+          "identity_key": "マーナ (marna) おさかなスポンジ 5個セット (食器洗い / 3層構造) キッチン 食器用スポンジ 台所用 (ディープグリーン) R502DG",
+          "identity_quote": "マーナ (marna) おさかなスポンジ 5個セット (食器洗い / 3層構造) キッチン 食器用スポンジ 台所用 (ディープグリーン) R502DG",
+          "reason": "型番を含む商品掲載名から、おさかな形の食器用スポンジと識別できる。提供された選定理由は、尾を下にして立てて置く使い方を示しており、収納の切り口に合う。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "記事未提出のため根拠情報のみを審査した。6件は商品掲載名と提供された情報から食器洗い用の商品として識別でき、既存の3つの紹介切り口に各2件が収まる。p1とp3は同じ3M製だが、掲載情報では葉形ウレタンスポンジと布状メッシュで構造が異なる。p5とp6の詳細な仕様は未確認のまま扱う。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
   "products": [
     {
-      "amazon_title": "3M スコッチ・ブライト PLAメッシュネット 4個パック",
-      "asin": "B0BGLGF5SR",
-      "brand": "3M スコッチ・ブライト",
+      "amazon_title": "【Amazon.co.jp限定】 3M スコッチブライト 抗菌 ウレタン スポンジ 食器洗い キッチンスポンジ 食器用スポンジ 皿洗い リーフ 4個",
+      "asin": "B07FR3CD2C",
+      "brand": "3M",
+      "discovery_axis_id": "popular",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/81C5k+AMSdL._AC_SL1500_.jpg",
-      "matched_comparison_axes": [
-        "sponge_structure"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/81DDQ3+gXqL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B07FR3CD2C",
+      "provisional": false,
+      "rating": 4.4,
+      "ref": "p1",
+      "review_count": 1205,
+      "search_key": "3M スコッチブライト 抗菌 ウレタン スポンジ 食器洗い キッチンス",
+      "selection_reason": "3Mの商品説明によると、葉形の角を使ってグラスの底や容器の隅を洗える。皿だけでなく、毎日使うコップや保存容器も一つのスポンジで洗いたい人に向く定番の形。両面に不織布を備えた4個入り。",
+      "sources": [
+        {
+          "brand": "3M",
+          "excerpt": "(Amazon.co.jp Exclusive) 3M Scotch-Brite Antibacterial Urethane Sponge, Dishwashing, Kitchen Sponge, Dishwashing, Leaves, 4 Pieces\nAbout this item\nProduct Information: Quantity: Green x 2, Orange x 2; Size: 5.6 x 8.1 x 2.8 inches (14.3 x 20.6 x 7.0 cm)\n【Easily removes grease stains!】This kitchen sponge with nylon non-woven fabric can easily remove light dirt\n【Leave the nook stains to us!】With the corner of the leaf-shaped sponge, dirty nooks and stains on the bottom of glasses and containers that are difficult to wash can be thoroughly and cleanly removed\n【Gentle Kitchen Sponge】Easily clean delicate dishes, glasses, cutlery, plastic containers, bento boxes, and non-stick cookware without scratching them\n【Durable and Long-Lasting】With non-woven fabric on both sides, this kitchen sponge can be used for a long period. It can be used on both sides, so you don't have to buy it frequently, which is economical\n【With antibacterial power, keep it clean!】The sponge material itself contains antibacterial agents, so the antibacterial effect lasts › See more product details\nBrand 3M\nMaterial Nylon\nRecommended Uses For Product kitchen\nSurface Recommendation Plastic\nColor 1. 4pcs leaf mold\nSpecial Feature Pieces\nItem Package Quantity 1\nIncluded Components Sponge\nProduct Dimensions 20.6L x 14.3W x 7Th cm\nModel Name Scotchbrite See more\nVisit the スリーエム(3M) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "(Amazon.co.jp Exclusive) 3M Scotch-Brite Antibacterial Urethane Sponge, Dishwashing, Kitchen Sponge, Dishwashing, Leaves, 4 Pieces",
+          "url": "https://www.amazon.co.jp/dp/B07FR3CD2C?th=1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "PAX NATURON(パックスナチュロン) キッチンスポンジ (ナチュラル / 5個セット) 台所 食器洗い 皿洗い スポンジ (泡立ち/水切れ/耐久性) 太陽油脂",
+      "asin": "B0CKLC8ZYW",
+      "brand": "Pax Naturon",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/717C5-H8yeL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0CKLC8ZYW",
+      "provisional": false,
+      "rating": 4.6,
+      "ref": "p2",
+      "review_count": 3126,
+      "search_key": "Pax Naturon (パックスナチュロン) キッチンスポンジ (ナチュラル / 5個",
+      "selection_reason": "太陽油脂の商品説明によると、粗い網目の単層構造で泡立ちと水切れに配慮し、研磨剤を使っていない。食器を洗った後、スポンジをすすいで水を切る日々の動作まで重視する人に向く、素材と構造が明快な定番品。ナチュラル色の5個セット。",
+      "sources": [
+        {
+          "brand": "Pax Naturon",
+          "excerpt": "PAX NATURON Kitchen Sponge (Natural / Set of 5) Kitchen dishwashing dish washing sponge (foaming/water drainage/durability) Taiyo Yushi\nAbout this item\n✅【Excellent foaming and water drainage kitchen sponge】The popular natural color is now available in a set of 5! It is a coarse-meshed sponge with a skeletal structure It produces a rich lather, rinses off easily, and is hygienic No abrasive agents are used, so it will not scratch dishes\n✅【Once you use it, you won't be able to let go】Because it is a coarse-eyed sponge, it produces excellent foam even with a small amount of detergent No abrasives are used, so you can use it without damaging your dishes Moreover, it dries quickly after use and does not become slimy, making it hygienic\n✅【Durable and Long-Lasting】It is strong and resistant to sagging, so you can use it for a long time! When stains become noticeable, it is also excellent for cleaning sinks and washbasins. This sponge is not only pleasant for washing dishes but also kind to your wallet and the environment\n✅【PAX NATURON】Pax Naturon uses natural ingredients and is committed to environmental and skin-friendliness in every detail from the raw materials to the manufacturing process We pursue sustainable manufacturing that can be used by everyone in the family, from children to adults with sensitive skin, supporting a healthy and comfortable lifestyle\n✅【Product Details】Contents: Set of 5 / Size: 7×3.5×11cm / Color: Natural / Material: Soft Polyurethane / Heat Resistance: 90℃ ※Do not use on items that are easily scratched such as lacquerware › See more product details\nBrand Pax Naturon\nMaterial Polyurethane (PU)\nRecommended Uses For Product Dishwashing\nSurface Recommendation Ceramic, Glass, Plastic\nColor natural\nSpecial Feature Reusable\nItem Package Quantity 1\nIncluded Components 5 x Sponge\nProduct Dimensions 7L x 3.5W x 11Th cm\nItem Weight 40 Grams See more\nVisit the Pax Naturon Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "PAX NATURON Kitchen Sponge (Natural / Set of 5) Kitchen dishwashing dish washing sponge (foaming/water drainage/durability) Taiyo Yushi",
+          "url": "https://www.amazon.co.jp/dp/B0CKLC8ZYW?th=1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "【Amazon.co.jp限定】3M スポンジ キッチン 食器 キズつけない グリーナークリーン PLAメッシュネット 4個 スコッチブライト GC-PLA MN 4P A",
+      "asin": "B0BGLGF5SR",
+      "brand": "3M",
+      "discovery_axis_id": "compact_washing",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81C5k+AMSdL._AC_UL320_.jpg",
       "observed_price": null,
       "product_id": "AMZ-B0BGLGF5SR",
-      "ref": "p1",
-      "search_key": "3M スポンジ キッチン 食器 キズつけない グリーナークリーン",
-      "selection_score": 0.505,
-      "model": "GC-PLA MN 4P A",
-      "selected_variant": {
-        "type": "PLAメッシュネット",
-        "count": 4
-      }
-    },
-    {
-      "amazon_title": "マーナ おさかなスポンジ ディープピンク 5個セット",
-      "asin": "B0CZXKPTHP",
-      "brand": "マーナ",
-      "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71cnYbbkNxL._AC_SL1428_.jpg",
-      "matched_comparison_axes": [],
-      "observed_price": null,
-      "product_id": "AMZ-B0CZXKPTHP",
-      "ref": "p2",
-      "search_key": "食器用スポンジ 両面ウエスト型 10×8×2cm 24個入",
-      "selection_score": 0.325,
-      "model": "R502DP",
-      "selected_variant": {
-        "color": "ディープピンク",
-        "count": 5
-      }
-    },
-    {
-      "amazon_title": "オーエ モノプレミアム 台所スポンジ 泡立ち アイボリー 5個組",
-      "asin": "B0G2LDD5PG",
-      "brand": "オーエ",
-      "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/81qkUsquW+L._AC_SL1500_.jpg",
-      "matched_comparison_axes": [],
-      "observed_price": null,
-      "product_id": "AMZ-B0G2LDD5PG",
+      "provisional": false,
+      "rating": 4.4,
       "ref": "p3",
-      "search_key": "オーエ キッチンスポンジ 約縦10.8cm×横6.8cm×厚さ3",
-      "selection_score": 0.325,
-      "model": "モノプレミアム 泡立ち（単品50117に対応する5個組）",
-      "selected_variant": {
-        "color": "アイボリー",
-        "type": "泡立ち",
-        "count": 5
-      }
+      "review_count": 194,
+      "search_key": "3M スポンジ キッチン 食器 キズつけない グリーナークリーン PL",
+      "selection_reason": "3Mの商品説明によると、スポンジ芯のない柔らかな布状メッシュで、容器の溝や底、小さな隙間に沿わせて洗える。カップの内側や弁当箱の細部を指先の動きで洗いたい人に向く。洗浄面にはトウモロコシ由来のPLA繊維を使用した4個入り。",
+      "sources": [
+        {
+          "brand": "3M",
+          "excerpt": "【Amazon.co.jp Exclusive】3M Kitchen Sponge, Dish Scratch Resistant, Cleaner Clean, PLA Mesh Net, Scotch Brite, GC-PLA MN 4P A, 4 Piece\nAbout this item\n【Product Information】Quantity: 4 pieces\nMesh net born from corn Unlike regular plastic, this net scrubber made from corn-derived materials is harvestable every year and contributes to sustainability\nGentle yet effective cleaning! A net sponge made with many fibers gathered together, effectively catching and removing dirt! It cleans delicate dishes, cutlery, plastic containers, lunch boxes, and fluorine-treated kitchenware without scratching\nHandles the bottom, corners, and small gaps with ease! A soft cloth-shaped net sponge that easily cleans the fine gaps of kitchen utensils, the grooves of plastic containers, and the bottom\n【Drying quickly and hygienic】Since it is a net cloth for dishwashing without a sponge, it has good water drainage, quick-drying properties, and is hygienic › See more product details\nBrand 3M\nMaterial PLA\nRecommended Uses For Product kitchen\nSurface Recommendation Plastic\nColor PLA Mesh Net\nSpecial Feature It drains well and is hygienic, Non-Scratch\nItem Package Quantity 1\nIncluded Components No\nModel Name Scotchbrite\nNumber of Items 4 See more\nVisit the スリーエム(3M) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "【Amazon.co.jp Exclusive】3M Kitchen Sponge, Dish Scratch Resistant, Cleaner Clean, PLA Mesh Net, Scotch Brite, GC-PLA MN 4P A, 4 Piece",
+          "url": "https://www.amazon.co.jp/dp/B0BGLGF5SR?th=1",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "キクロン あわもっちー キッチンスポンジ ピンク 1個",
-      "asin": "B0FXW4LSZW",
-      "brand": "キクロン",
+      "amazon_title": "東和産業 KR 毎日 取替え 使い捨て スポンジ 泡立ち 30P 優しく洗える 泡立ち豊富 ソフト キッチンスポンジ たわし 清潔 5.5×1×8cm 13052",
+      "asin": "B0DCB94K8R",
+      "brand": "東和産業",
+      "discovery_axis_id": "compact_washing",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61t6uhUcUQL._AC_SL1000_.jpg",
-      "matched_comparison_axes": [],
+      "image_url": "https://m.media-amazon.com/images/I/81Dy+I7VnjL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B0FXW4LSZW",
+      "product_id": "AMZ-B0DCB94K8R",
+      "provisional": false,
+      "rating": 4.0,
       "ref": "p4",
-      "search_key": "キクロン キッチンスポンジ ソフトタイプ ピンク 1個入 たっぷ",
-      "selection_score": 0.325,
-      "model": "あわもっちー キッチンスポンジ",
-      "selected_variant": {
-        "color": "ピンク",
-        "count": 1
-      }
+      "review_count": 140,
+      "search_key": "東和産業 KR 毎日 取替え 使い捨て スポンジ 泡立ち 30P 優しく洗",
+      "selection_reason": "[東和産業の製品情報](https://www.towasan.co.jp/product/detail.php?id=1433)では、1個が5.5×8cm、厚さ1cmの柔らかいスポンジ。小さな皿やカップの縁を指で挟むように洗いたい人が扱いやすい寸法で、食器からシンクまで洗って1日で取り替える使い方を想定した30個入り。",
+      "sources": [
+        {
+          "brand": "東和産業",
+          "excerpt": "東和産業 KR 毎日 取替え 使い捨て スポンジ 泡立ち 30P 優しく洗える 泡立ち豊富 ソフト キッチンスポンジ たわし 清潔 5.5×1×8cm 13052\nこの商品について\n【商品サイズ】1×5.5×8cm（1個あたり）\n【ソフトスポンジ】泡立ちが良く、やさしく洗えるソフトなキッチン用スポンジです。\n【使い切り】1日使い切りタイプなので、食器・調理器具・ワークトップ・IH・コンロ・シンク等キッチンを丸ごと洗えます\n【毎日取替】毎日取り替えることで、衛生的に使用できるスポンジです › もっと見る\nブランド 東和産業\n材質 ポリウレタン (PU)\n色 ブラック\n特徴 ノンスクラッチ\n商品パッケージ数 1\nモデル名 KITCHEN RESET\n商品の個数 1\nメーカー 東和産業\nユニット数 1.0 個 表示を増やす\n東和産業のストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "東和産業 KR 毎日 取替え 使い捨て スポンジ 泡立ち 30P 優しく洗える 泡立ち豊富 ソフト キッチンスポンジ たわし 清潔 5.5×1×8cm 13052",
+          "url": "https://www.amazon.co.jp/dp/B0DCB94K8R",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "ダスキン 台所用スポンジ ソフトタイプ 3色セット",
-      "asin": "B0FTLH2YBZ",
-      "brand": "ダスキン",
+      "amazon_title": "ボトル洗いスポンジ リーフ型スタンド付き 青",
+      "asin": "B00VUA8M04",
+      "brand": "",
+      "discovery_axis_id": "compact_storage",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/41-Wqcg+GIL._AC_.jpg",
-      "matched_comparison_axes": [],
+      "image_url": "https://m.media-amazon.com/images/I/618+-ITTqQL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B0FTLH2YBZ",
+      "product_id": "AMZ-B00VUA8M04",
+      "provisional": true,
+      "rating": 4.1,
       "ref": "p5",
-      "search_key": "ダスキン 「台所用スポンジ ソフトタイプ 3色セット」",
-      "selection_score": 0.325,
-      "model": "台所用スポンジ ソフトタイプ",
-      "selected_variant": {
-        "colors": [
-          "ライトグレー",
-          "ベージュ",
-          "ピンク"
-        ],
-        "count": 3
-      }
+      "review_count": 239,
+      "search_key": "ボトル洗いスポンジ リーフ型スタンド付き 青",
+      "selection_reason": "葉形スタンドが付く柄付きのボトル洗いスポンジ。水筒や深いグラスを洗った後、柄をスタンドに立てる置き方ができ、長いスポンジをシンク脇に寝かせたくない人に向く。青色の商品は[販売情報](https://shopping.yahoo.co.jp/products/z4frr813rp)で購入可能と確認できる。",
+      "sources": []
     },
     {
-      "amazon_title": "サンサンスポンジ ノーマル ブラック 4個セット",
-      "asin": "B07T243JW4",
-      "brand": "ダイニチ・コーポレーション",
+      "amazon_title": "マーナ (marna) おさかなスポンジ 5個セット (食器洗い / 3層構造) キッチン 食器用スポンジ 台所用 (ディープグリーン) R502DG",
+      "asin": "B0CZXB9HKG",
+      "brand": "",
+      "discovery_axis_id": "compact_storage",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71RXfv7EUGL._AC_SL1494_.jpg",
-      "matched_comparison_axes": [],
+      "image_url": "https://m.media-amazon.com/images/I/71sg1d5jEAL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B07T243JW4",
+      "product_id": "AMZ-B0CZXB9HKG",
+      "provisional": true,
+      "rating": 4.6,
       "ref": "p6",
-      "search_key": "ダスキン 「台所用スポンジ ハードタイプ 3色セット モノトーン",
-      "selection_score": 0.325,
-      "model": "サンサンスポンジ ノーマル",
-      "selected_variant": {
-        "color": "ブラック",
-        "hardness": "ノーマル",
-        "count": 4
-      }
+      "review_count": 2662,
+      "search_key": "マーナ (marna) おさかなスポンジ 5個セット (食器洗い",
+      "selection_reason": "[マーナの製品情報](https://marna.jp/shop/g/gK170-/)で確認できるおさかなスポンジの魚形は、尾を下にして立てて置ける。シンク脇にスポンジ受けを増やしにくい人に向き、使うときは細い尾をカップの底へ入れやすい。候補は同形状のディープグリーン5個セット。",
+      "sources": []
     }
   ],
   "selection": {
-    "brand_count": 0,
-    "comparison_axes_covered": [
-      "sponge_structure"
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B07FR3CD2C",
+            "reason": "3Mの商品説明によると、葉形の角を使ってグラスの底や容器の隅を洗える。皿だけでなく、毎日使うコップや保存容器も一つのスポンジで洗いたい人に向く定番の形。両面に不織布を備えた4個入り。"
+          },
+          {
+            "asin": "B0CKLC8ZYW",
+            "reason": "太陽油脂の商品説明によると、粗い網目の単層構造で泡立ちと水切れに配慮し、研磨剤を使っていない。食器を洗った後、スポンジをすすいで水を切る日々の動作まで重視する人に向く、素材と構造が明快な定番品。ナチュラル色の5個セット。"
+          }
+        ]
+      },
+      {
+        "axis_id": "compact_washing",
+        "products": [
+          {
+            "asin": "B0BGLGF5SR",
+            "reason": "3Mの商品説明によると、スポンジ芯のない柔らかな布状メッシュで、容器の溝や底、小さな隙間に沿わせて洗える。カップの内側や弁当箱の細部を指先の動きで洗いたい人に向く。洗浄面にはトウモロコシ由来のPLA繊維を使用した4個入り。"
+          },
+          {
+            "asin": "B0DCB94K8R",
+            "reason": "[東和産業の製品情報](https://www.towasan.co.jp/product/detail.php?id=1433)では、1個が5.5×8cm、厚さ1cmの柔らかいスポンジ。小さな皿やカップの縁を指で挟むように洗いたい人が扱いやすい寸法で、食器からシンクまで洗って1日で取り替える使い方を想定した30個入り。"
+          }
+        ]
+      },
+      {
+        "axis_id": "compact_storage",
+        "products": [
+          {
+            "asin": "B00VUA8M04",
+            "reason": "葉形スタンドが付く柄付きのボトル洗いスポンジ。水筒や深いグラスを洗った後、柄をスタンドに立てる置き方ができ、長いスポンジをシンク脇に寝かせたくない人に向く。青色の商品は[販売情報](https://shopping.yahoo.co.jp/products/z4frr813rp)で購入可能と確認できる。"
+          },
+          {
+            "asin": "B0CZXB9HKG",
+            "reason": "[マーナの製品情報](https://marna.jp/shop/g/gK170-/)で確認できるおさかなスポンジの魚形は、尾を下にして立てて置ける。シンク脇にスポンジ受けを増やしにくい人に向き、使うときは細い尾をカップの底へ入れやすい。候補は同形状のディープグリーン5個セット。"
+          }
+        ]
+      }
     ],
-    "content_duplicates_removed": [],
-    "price_used_as_constraint_only": true
+    "brand_count": 3,
+    "candidate_count": 29,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [
+      {
+        "asin": "B00VUA8M04",
+        "check_items": {
+          "color_design_only": "UNKNOWN",
+          "function_structure_difference": "UNKNOWN",
+          "independent_comparison_value": "UNKNOWN",
+          "manufacturer_brand_relation": "UNKNOWN",
+          "sales_packaging_only": "UNKNOWN",
+          "same_product_body": "FAIL",
+          "series_generation_difference": "UNKNOWN",
+          "size_capacity_difference": "UNKNOWN"
+        },
+        "duplicate_of_asin": "B00VUA8M04",
+        "reason": "same_asin"
+      }
+    ],
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": [
+      "B00VUA8M04"
+    ],
+    "targeted_replacement": true
   },
   "slug": "hand-dishwashing-sponges"
 }
