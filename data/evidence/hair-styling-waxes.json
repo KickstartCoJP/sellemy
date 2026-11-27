@@ -1,170 +1,393 @@
 {
-  "slug": "hair-styling-waxes",
-  "category": "beauty",
-  "canonical_url": "https://www.sellemy.jp/article/beauty/hair-styling-waxes.html",
-  "eyecatch_image": "https://www.sellemy.jp/img/hair-styling-waxes/hair-styling-waxes.png",
   "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/hair-styling-waxes.html",
+  "category": "beauty",
   "comparison_axes": [
     {
-      "id": "styling_purpose",
-      "label": "作りたい髪型とメーカーが示す用途",
+      "id": "popular",
       "keywords": [
+        "人気"
+      ],
+      "label": "人気・定番の基準"
+    },
+    {
+      "id": "straight_hair_texture",
+      "keywords": [
+        "直毛",
         "束感",
+        "動き",
+        "ショートヘア"
+      ],
+      "label": "直毛に動きと束感をつくる"
+    },
+    {
+      "id": "spread_control",
+      "keywords": [
+        "広がり",
+        "まとまり",
         "毛流れ",
-        "立ち上げ",
-        "対応する髪の長さ"
+        "ミディアムヘア"
+      ],
+      "label": "髪の広がりを抑えてまとめる"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/hair-styling-waxes/hair-styling-waxes.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "6d773be23178025a4e2c3d8869dcf999dad39da71e99b542d2c0c089147fefab",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 25157,
+      "member_binding_revision": 4,
+      "output_tokens": 1430,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 429,
+      "session_id": "01a21e08-ab21-77a3-851d-c59e2cd067f2",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "ザ・プロダクト ヘアワックス",
+          "identity_quote": "",
+          "reason": "掲載名からヘアワックスとして識別できる。選定理由に示された公式説明を踏まえ、人気・定番の切り口で紹介できる。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "ロレッタ メイクアップワックス 4.0",
+          "identity_quote": "",
+          "reason": "掲載名から製品名と型番を識別できるヘアワックス。選定理由に示された公式説明を踏まえ、人気・定番の切り口で紹介できる。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "straight_hair_texture",
+              "quote": "躍動的な束感が作れるハードワックス"
+            }
+          ],
+          "identity_key": "GATSBY(ギャツビー) メタラバー ワックス ハード",
+          "identity_quote": "GATSBY(ギャツビー) メタラバー ワックス ハード [ ヘアワックス メンズ マット ] 65g",
+          "reason": "確認済みの商品情報で製品を識別できる。商品説明にある束感とドライな質感が担当する切り口に合う。出典：https://www.amazon.co.jp/dp/B0BPGY4M6L",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "straight_hair_texture",
+              "quote": "Fiber type hard wax that allows you to freely arrange your hair style. Volume up or down as you want"
+            }
+          ],
+          "identity_key": "Nakano Styling Wax Hard",
+          "identity_quote": "Nakano Pharmaceutical Nakano Styling Wax Hard 3.2 oz (90 g)",
+          "reason": "確認済みの商品掲載タイトルに製品名が明記されている。商品説明にあるファイバータイプの整髪用途が、髪に動きと束感をつくる切り口に合う。出典：https://www.amazon.co.jp/dp/B000FQV6GQ?th=1",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "spread_control",
+              "quote": "Adjust the amount you use to create a natural finish to wet hair style"
+            }
+          ],
+          "identity_key": "Orna Organic Hair Balm",
+          "identity_quote": "Orna Organic Hair Balm, For Parent-child Use, Additive-free, Shea Butter",
+          "reason": "確認済みの商品掲載タイトルにヘアバームの製品名が明記されている。商品説明には使用量によって自然な仕上がりに調整できるとあり、髪をまとめる切り口で紹介できる。出典：https://www.amazon.co.jp/dp/B08R5PZC3Q?th=1",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "spread_control",
+              "quote": "The hair ends have a sense of movement and three-dimensionality. Layered for an even more airy feel"
+            }
+          ],
+          "identity_key": "Airy & Easy Glossy Hair Wax",
+          "identity_quote": "Cosmetex Roller Airy & Easy Glossy Hair Wax 100g",
+          "reason": "確認済みの商品掲載タイトルに製品名が明記されている。商品説明にある毛先の動きと立体感を手掛かりに、毛流れを整える切り口で紹介できる。出典：https://www.amazon.co.jp/dp/B07XFHRHKQ?th=1",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "根拠情報のみの審査。6商品は掲載名または確認済みの商品情報から識別でき、明白な重複やテーマ外の商品はない。既存の3つの紹介切り口に各2商品が属し、それぞれを簡潔に紹介できる。記事は未提出のため、本文に関する判定項目はfalseとした。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
+  "products": [
+    {
+      "amazon_title": "product(ザ・プロダクト) ヘアワックス 42g ヘアバーム ワックス オーガニック",
+      "asin": "B00EUQP3HA",
+      "brand": "",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61zZnakNFxL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B00EUQP3HA",
+      "provisional": true,
+      "rating": 4.2,
+      "ref": "p1",
+      "review_count": 7624,
+      "search_key": "product(ザ・プロダクト) ヘアワックス 42g ヘアバー",
+      "selection_reason": "朝、広がる毛先に濡れたようなツヤと程よい束感を足したい人向け。ザ・プロダクトの[公式説明](https://theproduct.jp/collections/hair-styling/products/hair-wax)では、手のひらで温めてオイル状にして使うヘアワックスで、髪のほか手や唇の保湿にも使えるとされる。髪を整えた後に手に残った分まで使える点にも、定番品として知る理由がある。",
+      "sources": []
+    },
+    {
+      "amazon_title": "Loretta (ロレッタ) メイクアップワックス 4.0 65g ヘアワックス ツヤ パーマ ウェーブ アレンジ ほどよい軽さ キープ力 まとめ髪",
+      "asin": "B002SW2OQQ",
+      "brand": "",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61s71XpOcNL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B002SW2OQQ",
+      "provisional": true,
+      "rating": 4.2,
+      "ref": "p2",
+      "review_count": 2206,
+      "search_key": "Loretta (ロレッタ) メイクアップワックス 4.0 65",
+      "selection_reason": "ショートからミディアムで、毛先の動きを軽く残したい人向け。[ロレッタ公式](https://www.loretta-jp.com/products/wax/makeup4_0/)は、ほどよい軽さとキープ力で弾むような毛先の動きを演出し、狙ったウェーブや質感を保つと説明。束感の目安も示されており、固めすぎずにニュアンスを付けたい朝の基準になる。",
+      "sources": []
+    },
+    {
+      "amazon_title": "GATSBY(ギャツビー) Meta Rubber Wax Hard [Men's Hair Wax Matte] 65g",
+      "asin": "B0BPGY4M6L",
+      "brand": "GATSBY(ギャツビー)",
+      "discovery_axis_id": "straight_hair_texture",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51f2iRBhDUL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0BPGY4M6L",
+      "provisional": false,
+      "rating": 4.3,
+      "ref": "p3",
+      "review_count": 362,
+      "search_key": "GATSBY(ギャツビー) Meta Rubber Wax Hard 65g",
+      "selection_reason": "直毛の短髪で、寝かせたくない部分を立ち上げ、乾いた質感の束を作りたい人向け。[ギャツビー公式](https://www.gatsby.jp/product/hairstyling/meta-rubber/)はメタラバー ワックス ハードをシリーズ最強の立ち上げ力と説明し、候補の商品説明も躍動的な束感とドライな仕上がりを示す。朝にトップや毛先をはっきり動かしたい用途に合う。",
+      "sources": [
+        {
+          "brand": "GATSBY(ギャツビー)",
+          "excerpt": "GATSBY(ギャツビー) メタラバー ワックス ハード [ ヘアワックス メンズ マット ] 65g\nこの商品について\n躍動的な束感が作れるハードワックス\nドライな質感だからボリュームを出したい柔らかい髪にもおすすめ\nお湯だけで流しやすい洗い落ちだから髪の負担が少ない\n内容量：65g\n原産国：日本 › もっと見る\n商品特長 セット力\n髪質 すべて\n香り フローラルフルーティ\n商品の形状 ワックス\nブランド GATSBY(ギャツビー)\n商品の個数 1\nユニット数 65.0 グラム\n商品体積 65 ミリリットル\n対象ユーザー ヘアスタイリングに興味のある大人\nスタイリング剤のホールド力 強力 表示を増やす\nGATSBY(ギャツビー)のストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "GATSBY(ギャツビー) メタラバー ワックス ハード [ ヘアワックス メンズ マット ] 65g",
+          "url": "https://www.amazon.co.jp/dp/B0BPGY4M6L",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "finish_texture",
-      "label": "仕上がりの質感と剤形",
-      "keywords": [
-        "マット",
-        "ツヤ",
-        "クリーム",
-        "ファイバー"
+      "amazon_title": "Nakano Pharmaceutical Nakano Styling Wax Hard 3.2 oz (90 g)",
+      "asin": "B000FQV6GQ",
+      "brand": "Nakano",
+      "discovery_axis_id": "straight_hair_texture",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61mtYkeZiSL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B000FQV6GQ",
+      "provisional": false,
+      "rating": 4.2,
+      "ref": "p4",
+      "review_count": 719,
+      "search_key": "Nakano Pharmaceutical Nakano Styling Wa",
+      "selection_reason": "直毛の毛先をつまみ、細かな束の向きを整えたい人向け。候補の商品説明では、繊維状に伸びるファイバータイプで、髪を上げる・下げるアレンジができるとされる。[中野製薬のファイバータイプの使用案内](https://www.nakano-seiyaku.co.jp/products/nakano_styling_wax/)も、下から揉み込んで毛先をつまむ方法を示しており、動きが出にくい髪に手順を決めて使える。",
+      "sources": [
+        {
+          "brand": "Nakano",
+          "excerpt": "Nakano Pharmaceutical Nakano Styling Wax Hard 3.2 oz (90 g)\nAbout this item\nFiber Type: This hair wax is a fiber type that can be arranged, and it has just the right amount of strength for many years\nFiber type hard wax that allows you to freely arrange your hair style. Volume up or down as you want\nStyling Characteristics: This hard wax allows you to freely style your hair up or down › See more product details\nProduct Benefits Firm Hold\nHair Type All\nMaterial Type Free Wax\nScent Unscented\nItem Form ワックス\nBrand Nakano\nNumber of Items 1\nUnit Count 90.0 Grams\nItem Volume 90 Milliliters\nTarget Audience Adult See more\nBrand: Nakano",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Nakano Pharmaceutical Nakano Styling Wax Hard 3.2 oz (90 g)",
+          "url": "https://www.amazon.co.jp/dp/B000FQV6GQ?th=1",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "application_conditions",
-      "label": "塗布と洗い流しの条件",
-      "keywords": [
-        "乾いた髪",
-        "使用量",
-        "なじませ方",
-        "洗髪方法"
+      "amazon_title": "Orna Organic Hair Balm, For Parent-child Use, Additive-free, Shea Butter",
+      "asin": "B08R5PZC3Q",
+      "brand": "ALLNA ORGANIC (on Luna organic)",
+      "discovery_axis_id": "spread_control",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61DGI5kEZJL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B08R5PZC3Q",
+      "provisional": false,
+      "rating": 4.3,
+      "ref": "p5",
+      "review_count": 6779,
+      "search_key": "ALLNA ORGANIC (on Luna organic) Orna Organic Hai",
+      "selection_reason": "乾燥で毛先が広がり、朝は自然なまとまりを付けたい人向け。[オルナオーガニック公式](https://allna.jp/shop/products/OR-hairbalm)は、毛先のケアとべたつかない濡れ髪スタイリングを兼ねるバームと説明。候補の商品説明では使用量で自然な仕上がりから濡れ髪まで調整できるため、毛先に少量からなじませたい使い方に合う。",
+      "sources": [
+        {
+          "brand": "ALLNA ORGANIC (on Luna organic)",
+          "excerpt": "Orna Organic Hair Balm, For Parent-child Use, Additive-free, Shea Butter\nAbout this item\nMulti-Balm: This versatile hair mouth can be used not only for hair care and styling, but also for full body care and perfume\nHair Care & Styling: Plant derived moisturizing ingredients allow hair to repair damaged ends of hair. Adjust the amount you use to create a natural finish to wet hair style\n(Hair Fragrance) Botanical aroma based on tea tree leaf oil, lavender oil and orange peel oil. Can also be used as a hair fragrance\nMoisturizes Your Whole: Leave the remaining balm in your hands after styling. Use it as a hand cream or for places where heels are worried about dryness\nShea Butter Blend: The ingredients are gentle on the skin, so it can be used by children. In addition, it stretches like melting butter, keeping your entire body moisturized › See more product details\nBrand ALLNA ORGANIC (on Luna organic)\nItem dimensions L x W x H 5.4 x 5.4 x 2.2 cm\nAge Range (Description) Adult\nSpecial Feature Moisturizes\nNumber of Items 1\nScent Hair Balm / Parent-child Use / Plant Aroma Scent\nItem Form Balm\nUnit Count 1.0 Count\nProduct Benefits Radiant Skin\nMaterial Feature Plant-Based See more\nVisit the ALLNA ORGANIC (オルナオーガニック) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Orna Organic Hair Balm, For Parent-child Use, Additive-free, Shea Butter",
+          "url": "https://www.amazon.co.jp/dp/B08R5PZC3Q?th=1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "Cosmetex Roller Airy & Easy Glossy Hair Wax 100g",
+      "asin": "B07XFHRHKQ",
+      "brand": "コスメテックスローランド",
+      "discovery_axis_id": "spread_control",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61pKFg0G3uL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B07XFHRHKQ",
+      "provisional": false,
+      "rating": 4.0,
+      "ref": "p6",
+      "review_count": 249,
+      "search_key": "コスメテックスローランド Cosmetex Roller Airy & Easy Glos",
+      "selection_reason": "ミディアムの毛先がばらける一方、全体はぺたんとさせたくない人向け。[メーカーの商品説明](https://www.c-roland.co.jp/airy-and-easy/lp/)は空気感のある濡れ髪を提案し、[実使用を伴う検証](https://360life.shinyusha.co.jp/articles/-/11834)では髪になじみやすく毛先までしっとりすると評価された。髪全体や毛先に揉み込む使い方が示されており、毛先をしっとり整えつつ軽い立体感を残したい朝に向く。",
+      "sources": [
+        {
+          "brand": "コスメテックスローランド",
+          "excerpt": "Cosmetex Roller Airy & Easy Glossy Hair Wax 100g\nAbout this item\nContent: 100 g (3.5 oz) › See more product details\nProduct Benefits The hair ends have a sense of movement and three-dimensionality. Layered for an even more airy feel\nHair Type Flat cat hair, small to medium hair\nScent Pink Fruity Scent\nItem Form Mousse\nBrand コスメテックスローランド\nNumber of Items 1\nUnit Count 100.0 Grams\nManufacturer コスメテックスローランド\nGlobal Trade Identification Number 04936201104024 See more\nBrand: コスメテックスローランド",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Cosmetex Roller Airy & Easy Glossy Hair Wax 100g",
+          "url": "https://www.amazon.co.jp/dp/B07XFHRHKQ?th=1",
+          "verified": true
+        }
       ]
     }
   ],
   "selection": {
-    "comparison_axes_covered": [
-      "finish_texture",
-      "styling_purpose"
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B00EUQP3HA",
+            "reason": "朝、広がる毛先に濡れたようなツヤと程よい束感を足したい人向け。ザ・プロダクトの[公式説明](https://theproduct.jp/collections/hair-styling/products/hair-wax)では、手のひらで温めてオイル状にして使うヘアワックスで、髪のほか手や唇の保湿にも使えるとされる。髪を整えた後に手に残った分まで使える点にも、定番品として知る理由がある。"
+          },
+          {
+            "asin": "B002SW2OQQ",
+            "reason": "ショートからミディアムで、毛先の動きを軽く残したい人向け。[ロレッタ公式](https://www.loretta-jp.com/products/wax/makeup4_0/)は、ほどよい軽さとキープ力で弾むような毛先の動きを演出し、狙ったウェーブや質感を保つと説明。束感の目安も示されており、固めすぎずにニュアンスを付けたい朝の基準になる。"
+          }
+        ]
+      },
+      {
+        "axis_id": "straight_hair_texture",
+        "products": [
+          {
+            "asin": "B0BPGY4M6L",
+            "reason": "直毛の短髪で、寝かせたくない部分を立ち上げ、乾いた質感の束を作りたい人向け。[ギャツビー公式](https://www.gatsby.jp/product/hairstyling/meta-rubber/)はメタラバー ワックス ハードをシリーズ最強の立ち上げ力と説明し、候補の商品説明も躍動的な束感とドライな仕上がりを示す。朝にトップや毛先をはっきり動かしたい用途に合う。"
+          },
+          {
+            "asin": "B000FQV6GQ",
+            "reason": "直毛の毛先をつまみ、細かな束の向きを整えたい人向け。候補の商品説明では、繊維状に伸びるファイバータイプで、髪を上げる・下げるアレンジができるとされる。[中野製薬のファイバータイプの使用案内](https://www.nakano-seiyaku.co.jp/products/nakano_styling_wax/)も、下から揉み込んで毛先をつまむ方法を示しており、動きが出にくい髪に手順を決めて使える。"
+          }
+        ]
+      },
+      {
+        "axis_id": "spread_control",
+        "products": [
+          {
+            "asin": "B08R5PZC3Q",
+            "reason": "乾燥で毛先が広がり、朝は自然なまとまりを付けたい人向け。[オルナオーガニック公式](https://allna.jp/shop/products/OR-hairbalm)は、毛先のケアとべたつかない濡れ髪スタイリングを兼ねるバームと説明。候補の商品説明では使用量で自然な仕上がりから濡れ髪まで調整できるため、毛先に少量からなじませたい使い方に合う。"
+          },
+          {
+            "asin": "B07XFHRHKQ",
+            "reason": "ミディアムの毛先がばらける一方、全体はぺたんとさせたくない人向け。[メーカーの商品説明](https://www.c-roland.co.jp/airy-and-easy/lp/)は空気感のある濡れ髪を提案し、[実使用を伴う検証](https://360life.shinyusha.co.jp/articles/-/11834)では髪になじみやすく毛先までしっとりすると評価された。髪全体や毛先に揉み込む使い方が示されており、毛先をしっとり整えつつ軽い立体感を残したい朝に向く。"
+          }
+        ]
+      }
     ],
-    "brand_count": 0,
-    "price_used_as_constraint_only": true,
-    "content_duplicates_removed": []
+    "brand_count": 4,
+    "candidate_count": 24,
+    "comparison_axes_covered": [
+      "straight_hair_texture"
+    ],
+    "content_duplicates_removed": [
+      {
+        "asin": "B00EUQP3HA",
+        "check_items": {
+          "color_design_only": "UNKNOWN",
+          "function_structure_difference": "UNKNOWN",
+          "independent_comparison_value": "UNKNOWN",
+          "manufacturer_brand_relation": "UNKNOWN",
+          "sales_packaging_only": "UNKNOWN",
+          "same_product_body": "FAIL",
+          "series_generation_difference": "UNKNOWN",
+          "size_capacity_difference": "UNKNOWN"
+        },
+        "duplicate_of_asin": "B00EUQP3HA",
+        "reason": "same_asin"
+      },
+      {
+        "asin": "B002SW2OQQ",
+        "check_items": {
+          "color_design_only": "UNKNOWN",
+          "function_structure_difference": "UNKNOWN",
+          "independent_comparison_value": "UNKNOWN",
+          "manufacturer_brand_relation": "UNKNOWN",
+          "sales_packaging_only": "UNKNOWN",
+          "same_product_body": "FAIL",
+          "series_generation_difference": "UNKNOWN",
+          "size_capacity_difference": "UNKNOWN"
+        },
+        "duplicate_of_asin": "B002SW2OQQ",
+        "reason": "same_asin"
+      },
+      {
+        "asin": "B0BPGY4M6L",
+        "check_items": {
+          "color_design_only": "UNKNOWN",
+          "function_structure_difference": "UNKNOWN",
+          "independent_comparison_value": "UNKNOWN",
+          "manufacturer_brand_relation": "UNKNOWN",
+          "sales_packaging_only": "UNKNOWN",
+          "same_product_body": "FAIL",
+          "series_generation_difference": "UNKNOWN",
+          "size_capacity_difference": "UNKNOWN"
+        },
+        "duplicate_of_asin": "B0BPGY4M6L",
+        "reason": "same_asin"
+      }
+    ],
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": [
+      "B002SW2OQQ",
+      "B00EUQP3HA",
+      "B0BPGY4M6L"
+    ],
+    "targeted_replacement": true
   },
-  "products": [
-    {
-      "ref": "p1",
-      "product_id": "AMZ-B002SW2OQQ",
-      "asin": "B002SW2OQQ",
-      "amazon_title": "ロレッタ メイクアップワックス4.0 65g",
-      "brand": "ロレッタ",
-      "image_url": "https://m.media-amazon.com/images/I/61s71XpOcNL._AC_SL1000_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.67,
-      "matched_comparison_axes": [
-        "finish_texture",
-        "styling_purpose"
-      ],
-      "search_key": "MENLITE ヘアワックス メンズ ハードワックス パーマ・く",
-      "selected_variant": {
-        "capacity_g": 65,
-        "count": 1,
-        "type": "本体"
-      }
-    },
-    {
-      "ref": "p2",
-      "product_id": "AMZ-B0H8LWXNTJ",
-      "asin": "B0H8LWXNTJ",
-      "amazon_title": "ギャツビー ムービングラバー カジュアルマット 80g",
-      "brand": "ギャツビー",
-      "image_url": "https://m.media-amazon.com/images/I/61Ss6of0YzL._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.31,
-      "matched_comparison_axes": [
-        "finish_texture"
-      ],
-      "search_key": "GATSBY(ギャツビー) ムービングラバー カジュアルマット",
-      "selected_variant": {
-        "capacity_g": 80,
-        "count": 1,
-        "type": "本体"
-      }
-    },
-    {
-      "ref": "p3",
-      "product_id": "AMZ-B0F6BR6WTG",
-      "asin": "B0F6BR6WTG",
-      "amazon_title": "オーシャントリコ ヘアワックス エアー N 80g リニューアル本体",
-      "brand": "オーシャントリコ",
-      "image_url": "https://m.media-amazon.com/images/I/41JD0Oo7tNL._AC_SL1000_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.31,
-      "matched_comparison_axes": [],
-      "search_key": "GATSBY(ギャツビー) ムービングラバー エアロモーション",
-      "selected_variant": {
-        "capacity_g": 80,
-        "count": 1,
-        "type": "本体"
-      }
-    },
-    {
-      "ref": "p4",
-      "product_id": "AMZ-B01KUV8942",
-      "asin": "B01KUV8942",
-      "amazon_title": "ウーノ マットエフェクター ワックス 80g",
-      "brand": "ウーノ",
-      "image_url": "https://m.media-amazon.com/images/I/71glRYJhX3L._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.31,
-      "matched_comparison_axes": [
-        "finish_texture"
-      ],
-      "search_key": "GATSBY(ギャツビー) ムービングラバー エクストリームマッ",
-      "selected_variant": {
-        "capacity_g": 80,
-        "count": 1,
-        "type": "本体"
-      }
-    },
-    {
-      "ref": "p5",
-      "product_id": "AMZ-B001NRCG06",
-      "asin": "B001NRCG06",
-      "amazon_title": "アリミノ ピース プロデザインシリーズ フリーズキープワックス 80g",
-      "brand": "アリミノ",
-      "image_url": "https://m.media-amazon.com/images/I/71V99favhsL._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.31,
-      "matched_comparison_axes": [
-        "finish_texture",
-        "styling_purpose"
-      ],
-      "search_key": "Rerum リラム マットハードワックス メンズ ヘアワックス",
-      "selected_variant": {
-        "capacity_g": 80,
-        "count": 1,
-        "type": "本体"
-      }
-    },
-    {
-      "ref": "p6",
-      "product_id": "AMZ-B0H1MDB3BZ",
-      "asin": "B0H1MDB3BZ",
-      "amazon_title": "ナカノ スタイリング タント ワックス5 90g",
-      "brand": "中野製薬",
-      "image_url": "https://m.media-amazon.com/images/I/51nv7P5DPmL._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.31,
-      "matched_comparison_axes": [
-        "finish_texture"
-      ],
-      "search_key": "ナカノ スタイリング タント ワックス 5 90g ヘアワックス",
-      "selected_variant": {
-        "capacity_g": 90,
-        "count": 1,
-        "type": "本体"
-      }
-    }
-  ]
+  "slug": "hair-styling-waxes"
 }
