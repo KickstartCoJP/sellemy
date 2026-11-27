@@ -1,174 +1,369 @@
 {
-  "slug": "eyebrow-makeup-6-picks",
-  "category": "beauty",
-  "canonical_url": "https://www.sellemy.jp/article/beauty/eyebrow-makeup-6-picks.html",
-  "eyecatch_image": "https://www.sellemy.jp/img/eyebrow-makeup-6-picks/eyebrow-makeup-6-picks.png",
   "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/eyebrow-makeup-6-picks.html",
+  "category": "beauty",
   "comparison_axes": [
     {
-      "id": "formula_type",
-      "label": "タイプ・処方",
+      "id": "popular",
       "keywords": [
+        "人気"
+      ],
+      "label": "人気・定番の基準"
+    },
+    {
+      "id": "precise_tail",
+      "keywords": [
+        "眉尻",
+        "細い線",
         "ペンシル",
+        "リキッド"
+      ],
+      "label": "薄い眉尻を細く描き足す"
+    },
+    {
+      "id": "soft_fill",
+      "keywords": [
+        "まばらな眉",
+        "自然な陰影",
         "パウダー",
-        "ティント",
-        "落ちにくい"
+        "ぼかし"
+      ],
+      "label": "まばらな部分を柔らかく埋める"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/eyebrow-makeup-6-picks/eyebrow-makeup-6-picks.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "5989983c87a53bfe7803a3825c8e9a357c8a2ba44b40725644e5fc479b5d8c17",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 25166,
+      "member_binding_revision": 4,
+      "output_tokens": 1528,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 516,
+      "session_id": "01a21cca-d705-7f53-88d7-dc1f0e0cd811",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "Eyebrow Pencil with Brush The triangular core allows you to draw both thin and thick lines."
+            }
+          ],
+          "identity_key": "MAYBELLINE ファッションブロウ パウダーインペンシル N",
+          "identity_quote": "Maybelline MAYBELLINE Fashion Brow Powder In Pencil N BR-2 Natural Brown Eyebrow Pencil Triangular Lead with Brush Waterproof",
+          "reason": "三角芯とブラシ付きの眉用ペンシルとして識別できる。掲載情報とレビュー数を踏まえ、定番を探す切り口で紹介できる。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "セザンヌ 超細芯アイブロウ",
+          "identity_quote": "",
+          "reason": "掲載名から03ナチュラルブラウンの眉用商品と識別できる。細い線を描き足す選択肢として紹介できるが、選定理由にある芯径は添付資料では未確認。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "Heavy Rotation Eyebrow Pencil",
+          "identity_quote": "Heavy Rotation Eyebrow Pencil 04 Natural Brown 0.09 Gram Retractable Brush Waterproof (x2)\nAbout this item",
+          "reason": "眉用ペンシルとして識別でき、眉尻を描く切り口に合う。選定理由にある芯径とブラシの形状は添付資料では未確認。2本入りという販売単位は別商品性の根拠にしていない。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "precise_tail",
+              "quote": "Flat brush type for easy drawing"
+            }
+          ],
+          "identity_key": "Clairina Powder Liquid Eyebrow Ultra Keep",
+          "identity_quote": "Clairina Powder Liquid Eyebrow Ultra Keep (Milk Brown)\nAbout this item",
+          "reason": "平筆タイプのリキッドアイブロウとして識別でき、筆で眉尻を描く切り口に合う。選定理由にある斜めカットの形状や処方の詳しい説明は添付資料では未確認。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "soft_fill",
+              "quote": "Item Form Powder\nColor 01 bright brown"
+            }
+          ],
+          "identity_key": "Cezanne Bold Eyebrow",
+          "identity_quote": "Cezanne Bold Eyebrow Bright Brown (x2)\nAbout this item",
+          "reason": "p2とは異なる商品系列の眉用商品として識別できる。まばらな部分を埋める切り口で紹介できるが、選定理由にある芯径と仕上がりは添付資料では未確認。2本入りという販売単位は別商品性の根拠にしていない。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "soft_fill",
+              "quote": "Comes with a screw brush, convenient for blending the finish"
+            }
+          ],
+          "identity_key": "Canmake Styling Edge Eyebrow",
+          "identity_quote": "Canmake Styling Edge Eyebrow Eyebrow Pencil with Thin Core and Brush 01 Natural Brown\nAbout this item",
+          "reason": "薄い芯とブラシ付きの眉用ペンシルとして識別できる。まばらな部分に線を足し、ブラシでなじませる切り口に合う。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "6商品は掲載名または検証済みの商品情報から識別でき、対象外商品や明白な重複は認められない。それぞれ既存の紹介切り口に沿って紹介できる。選定理由にある一部の芯径、筆先形状、仕上がりの説明は添付資料では確認できず、記事の具体的な主張としては扱えない。記事本文がないため記事固有の項目は判定対象外。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
+  "products": [
+    {
+      "amazon_title": "メイベリン MAYBELLINE ファッションブロウ パウダーインペンシル N BR-2 自然な茶色 アイブロウペンシル 三角芯 ブラシ付き ウォータープルーフ",
+      "asin": "B0845H7Y54",
+      "brand": "MAYBELLINE",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61+A0OYTDFL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0845H7Y54",
+      "provisional": false,
+      "rating": 4.0,
+      "ref": "p1",
+      "review_count": 3652,
+      "search_key": "MAYBELLINE メイベリン MAYBELLINE ファッションブロウ パウダーイ",
+      "selection_reason": "眉尻を描き足す日も、まばらな部分を整える日も、1本を使い分けたい人向け。メイベリン公式によると、三角芯の角で細部を描き、面で広い部分を埋め、付属ブラシでなじませられる。BR-2は自然な茶色で、パウダーのようなふんわりした仕上がりを目指せる定番の基準になる。",
+      "sources": [
+        {
+          "brand": "MAYBELLINE",
+          "excerpt": "Maybelline MAYBELLINE Fashion Brow Powder In Pencil N BR-2 Natural Brown Eyebrow Pencil Triangular Lead with Brush Waterproof\nAbout this item\nEyebrow Pencil with Brush The triangular core allows you to draw both thin and thick lines. Use the fine brush to create fluffy brows\nMaintains a powder-like fluffy natural finish. Perfect for making your own eyebrows\nNatural color for airy eyebrows. The fine-textured soft brush makes it easy to blend in\nIt has a natural finish but is not easy to fall apart. Water and sweat resistant Easy to blend in with your own eyebrows\nRecommended for those in their 50s and 60s › See more product details\nBrand MAYBELLINE\nItem Form Pencil\nColor 1) Single item\nMaterial Feature Natural, waterproof and long lasting\nProduct Benefits Waterproof\nItem Weight 0.2 Grams\nCountry/Region Of Origin China\nPackage Type Name Main unit\nSkin Tone All\nAge Range (Description) Adult See more\nVisit the メイベリン Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Maybelline MAYBELLINE Fashion Brow Powder In Pencil N BR-2 Natural Brown Eyebrow Pencil Triangular Lead with Brush Waterproof",
+          "url": "https://www.amazon.co.jp/dp/B0845H7Y54?th=1",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "color_range",
-      "label": "カラー展開・発色",
-      "keywords": [
-        "ナチュラルブラウン",
-        "グレー系",
-        "色持ち"
+      "amazon_title": "セザンヌ 超細芯アイブロウ 03 ナチュラルブラウン",
+      "asin": "B079TMJ5XV",
+      "brand": "",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41U9DJIP35L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B079TMJ5XV",
+      "provisional": true,
+      "rating": 4.2,
+      "ref": "p2",
+      "review_count": 6227,
+      "search_key": "セザンヌ 超細芯アイブロウ 03 ナチュラルブラウン",
+      "selection_reason": "眉尻の薄さが特に気になり、まず細い線を足す道具を選びたい人向け。セザンヌ公式は、超細芯アイブロウの0.9mmの円芯で眉尻の毛を1本ずつ繊細に描けると案内している。03ナチュラルブラウンは、線の描き足しを基準に仕上がりを考えやすい一本。",
+      "sources": []
+    },
+    {
+      "amazon_title": "Heavy Rotation Eyebrow Pencil 04 Natural Brown 0.09 Gram Retractable Brush Waterproof (x2)",
+      "asin": "B0GYCWSK5C",
+      "brand": "ヘビーローテーション",
+      "discovery_axis_id": "precise_tail",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61I4ZWZ9DmL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0GYCWSK5C",
+      "provisional": false,
+      "rating": 4.3,
+      "ref": "p3",
+      "review_count": 1215,
+      "search_key": "ヘビーローテーション Heavy Rotation Eyebrow Pencil 04",
+      "selection_reason": "細い線を描いたあと、境目もなじませたい人向け。ヘビーローテーション公式によると、04ナチュラルブラウン系のペンシルは眉尻まで描きやすい1.6mm芯で、付属のスクリューブラシでぼかせる。薄い眉尻に線を足し、描いた部分を毛流れになじませる使い方に合う。",
+      "sources": [
+        {
+          "brand": "ヘビーローテーション",
+          "excerpt": "Heavy Rotation Eyebrow Pencil 04 Natural Brown 0.09 Gram Retractable Brush Waterproof (x2)\nAbout this item\nThe following information is for each item\nColor: 04 Natural Brown\nSize: 0.09g\nMade in Japan\nWeight: 0.09 oz (0.09 g)\nSkin Type: Suitable for all skin types › See more product details\nBrand ヘビーローテーション\nItem Form アイブロウ\nColor 04 Natural Brown Type\nProduct Benefits Brow Correction\nItem Weight 0.18 Grams\nCountry/Region Of Origin Japan\nPackage Type Name Main unit\nNumber of Items 2\nUnit Count 2 本\nManufacturer 伊勢半 See more\nVisit the ヘビーローテーション Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Heavy Rotation Eyebrow Pencil 04 Natural Brown 0.09 Gram Retractable Brush Waterproof (x2)",
+          "url": "https://www.amazon.co.jp/dp/B0GYCWSK5C?th=1",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "ease_of_use",
-      "label": "描きやすさ・価格帯",
-      "keywords": [
-        "初心者向け",
-        "極細芯",
-        "プチプラ"
+      "amazon_title": "Clairina Powder Liquid Eyebrow Ultra Keep (Milk Brown)",
+      "asin": "B0FM3GRGST",
+      "brand": "CREERINA",
+      "discovery_axis_id": "precise_tail",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61QiXXHj0-L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0FM3GRGST",
+      "provisional": false,
+      "rating": 4.0,
+      "ref": "p4",
+      "review_count": 630,
+      "search_key": "CREERINA Clairina Powder Liquid Eyebrow U",
+      "selection_reason": "眉尻の形を筆で描き、仕上がりはふんわり見せたい人向け。クレーリナの商品説明には、眉尻も描きやすい斜めカットの平筆と、肌に密着した後に表面がパウダー状になるリキッド処方が記されている。線を足す場所を決めて描きつつ、硬い輪郭を避けたい使い方に合う。",
+      "sources": [
+        {
+          "brand": "CREERINA",
+          "excerpt": "Clairina Powder Liquid Eyebrow Ultra Keep (Milk Brown)\nAbout this item\nAchieve long-lasting, fluffy eyebrows with just one bottle Powder finish liquid eyebrow\nLong-lasting waterproof x smudge proof formula Formulated to be resistant to sweat, water, and sebum to keep your eyebrows fluffy and clean for a long time\nFlat brush type for easy drawing\nEasily applied, it shortens the time-consuming eyebrow makeup process › See more product details\nBrand CREERINA\nItem Form Liquid\nColor milk brown\nSkin Tone All\nNumber of Items 1\nUnit Count 1 Count\nManufacturer CREERINA（クレーリナ）\nFinish Type Natural See more\nVisit the CREERINA Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Clairina Powder Liquid Eyebrow Ultra Keep (Milk Brown)",
+          "url": "https://www.amazon.co.jp/dp/B0FM3GRGST?th=1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "Cezanne Bold Eyebrow Bright Brown (x2)",
+      "asin": "B0G5H99Y89",
+      "brand": "Cezanne",
+      "discovery_axis_id": "soft_fill",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41IJJl4-iSL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0G5H99Y89",
+      "provisional": false,
+      "rating": 4.4,
+      "ref": "p5",
+      "review_count": 1056,
+      "search_key": "Cezanne Bold Eyebrow Bright Brown (x2)",
+      "selection_reason": "眉の中ほどなど、まばらな範囲をまとめて柔らかく埋めたい人向け。セザンヌ公式は、5mmの柔らかい太芯で描くだけでぼかしたような眉になり、まばらな眉もふんわり仕上がると説明している。01明るめブラウンは、広いすき間に柔らかな陰影を置きたいときに向く。",
+      "sources": [
+        {
+          "brand": "Cezanne",
+          "excerpt": "Cezanne Bold Eyebrow Bright Brown (x2)\nAbout this item\nThe following information is per individual item\nCountry of Origin: Japan\nAll ingredients: Caprylic/capric triglyceride, polyethylene, polyglyceryl-2 triisostearate, hydrogenated polyisobutylene, microcrystalline wax, paraffin, isotridecyl isononanoate, neopentyl glycol dicaprate, phytosteryl oleate, simethicone, squalane, jojoba seed oil, tocopherol, BHT, chamomile extract, (+/-) mica, iron oxide, titanium dioxide, gunjou, methicone\nProduct Size (W x D x H): 40 x 20 x 170mm\nIngredients: Caprylic/capric triglyceride, polyethylene, polyglyceryl-2 triisostearate, hydrogenated polyisobutylene, microcrystalline wax, paraffin, isotridecyl isononanoate, neopentyl glycol dicaprate, phytosteryl oleate, simethicone, squalane, jojoba seed oil, tocopherol, BHT, chamomile extract, (+/-) mica, iron oxide, titanium dioxide, gunjou, methyl methacrylate › See more product details\nBrand Cezanne\nItem Form Powder\nColor 01 bright brown\nItem Weight 0.02 Kilograms\nCountry/Region Of Origin Japan\nPackage Type Name stick\nNumber of Items 2\nUnit Count 2 本\nManufacturer セザンヌ化粧品 See more\nVisit the セザンヌ Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Cezanne Bold Eyebrow Bright Brown (x2)",
+          "url": "https://www.amazon.co.jp/dp/B0G5H99Y89?th=1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "Canmake Styling Edge Eyebrow Eyebrow Pencil with Thin Core and Brush 01 Natural Brown",
+      "asin": "B0DRT52D4F",
+      "brand": "CANMAKE",
+      "discovery_axis_id": "soft_fill",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/31f6TJVxBrL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0DRT52D4F",
+      "provisional": false,
+      "rating": 4.0,
+      "ref": "p6",
+      "review_count": 122,
+      "search_key": "CANMAKE Styling Edge Eyebrow Eyebrow Pen",
+      "selection_reason": "まばらな部分を一度に塗りつぶさず、毛の間に少しずつ線を足して柔らかく整えたい人向け。キャンメイク公式によると、0.8mm×4.0mmの薄い板状芯で安定して細い線を描け、付属のスクリューブラシで仕上げをぼかせる。01ナチュラルブラウンで、すき間ごとに描き足してからなじませる使い方に合う。",
+      "sources": [
+        {
+          "brand": "CANMAKE",
+          "excerpt": "Canmake Styling Edge Eyebrow Eyebrow Pencil with Thin Core and Brush 01 Natural Brown\nAbout this item\nEach eyebrow is super easy to draw, one by one! thin core eyebrow pencil\nOnly 0.8 mm! Incredibly thin While the lead thickness is slim at 0.8mm, the lead width is designed to be wide at 4.0mm The large surface area of the lead that touches the skin allows for stable and precise drawing of fine lines without any shaking\nThe formula is strong against water, sweat, sebum, and abrasions, and protects your eyebrows that are prone to fading\nComes with a screw brush, convenient for blending the finish\n01 Natural Brown... Natural color and easy to use standard brown › See more product details\nBrand CANMAKE\nItem Form Pencil\nColor 01 natural brown\nItem Weight 10 Grams\nItem dimensions L x W x H 13.8 x 2 x 1.6 cm\nSkin Tone All\nNumber of Items 1\nUnit Count 1 Count\nManufacturer (株)井田ラボラトリーズ\nGlobal Trade Identification Number 04901008315683 See more\nVisit the キャンメイク Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Canmake Styling Edge Eyebrow Eyebrow Pencil with Thin Core and Brush 01 Natural Brown",
+          "url": "https://www.amazon.co.jp/dp/B0DRT52D4F?th=1",
+          "verified": true
+        }
       ]
     }
   ],
   "selection": {
-    "comparison_axes_covered": [
-      "color_range",
-      "ease_of_use",
-      "formula_type"
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B0845H7Y54",
+            "reason": "眉尻を描き足す日も、まばらな部分を整える日も、1本を使い分けたい人向け。メイベリン公式によると、三角芯の角で細部を描き、面で広い部分を埋め、付属ブラシでなじませられる。BR-2は自然な茶色で、パウダーのようなふんわりした仕上がりを目指せる定番の基準になる。"
+          },
+          {
+            "asin": "B079TMJ5XV",
+            "reason": "眉尻の薄さが特に気になり、まず細い線を足す道具を選びたい人向け。セザンヌ公式は、超細芯アイブロウの0.9mmの円芯で眉尻の毛を1本ずつ繊細に描けると案内している。03ナチュラルブラウンは、線の描き足しを基準に仕上がりを考えやすい一本。"
+          }
+        ]
+      },
+      {
+        "axis_id": "precise_tail",
+        "products": [
+          {
+            "asin": "B0GYCWSK5C",
+            "reason": "細い線を描いたあと、境目もなじませたい人向け。ヘビーローテーション公式によると、04ナチュラルブラウン系のペンシルは眉尻まで描きやすい1.6mm芯で、付属のスクリューブラシでぼかせる。薄い眉尻に線を足し、描いた部分を毛流れになじませる使い方に合う。"
+          },
+          {
+            "asin": "B0FM3GRGST",
+            "reason": "眉尻の形を筆で描き、仕上がりはふんわり見せたい人向け。クレーリナの商品説明には、眉尻も描きやすい斜めカットの平筆と、肌に密着した後に表面がパウダー状になるリキッド処方が記されている。線を足す場所を決めて描きつつ、硬い輪郭を避けたい使い方に合う。"
+          }
+        ]
+      },
+      {
+        "axis_id": "soft_fill",
+        "products": [
+          {
+            "asin": "B0G5H99Y89",
+            "reason": "眉の中ほどなど、まばらな範囲をまとめて柔らかく埋めたい人向け。セザンヌ公式は、5mmの柔らかい太芯で描くだけでぼかしたような眉になり、まばらな眉もふんわり仕上がると説明している。01明るめブラウンは、広いすき間に柔らかな陰影を置きたいときに向く。"
+          },
+          {
+            "asin": "B0DRT52D4F",
+            "reason": "まばらな部分を一度に塗りつぶさず、毛の間に少しずつ線を足して柔らかく整えたい人向け。キャンメイク公式によると、0.8mm×4.0mmの薄い板状芯で安定して細い線を描け、付属のスクリューブラシで仕上げをぼかせる。01ナチュラルブラウンで、すき間ごとに描き足してからなじませる使い方に合う。"
+          }
+        ]
+      }
     ],
-    "brand_count": 6,
-    "price_used_as_constraint_only": true
+    "brand_count": 5,
+    "candidate_count": 28,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [
+      {
+        "asin": "B0845H7Y54",
+        "check_items": {
+          "color_design_only": "UNKNOWN",
+          "function_structure_difference": "UNKNOWN",
+          "independent_comparison_value": "UNKNOWN",
+          "manufacturer_brand_relation": "UNKNOWN",
+          "sales_packaging_only": "UNKNOWN",
+          "same_product_body": "FAIL",
+          "series_generation_difference": "UNKNOWN",
+          "size_capacity_difference": "UNKNOWN"
+        },
+        "duplicate_of_asin": "B0845H7Y54",
+        "reason": "same_asin"
+      }
+    ],
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": [
+      "B0845H7Y54"
+    ],
+    "targeted_replacement": true
   },
-  "products": [
-    {
-      "ref": "p1",
-      "product_id": "AMZ-B079TMJ5XV",
-      "asin": "B079TMJ5XV",
-      "amazon_title": "セザンヌ 超細芯アイブロウ 03 ナチュラルブラウン",
-      "brand": "セザンヌ",
-      "image_url": "https://m.media-amazon.com/images/I/41U9DJIP35L._AC_SL1000_.jpg",
-      "observed_price": 1188,
-      "discovery_score": 1,
-      "selection_score": 0.88,
-      "matched_comparison_axes": [
-        "ease_of_use",
-        "formula_type"
-      ],
-      "search_key": "ZXIYUE アイブロウペンシル 極細0.1mm 24時間落ちない 防水防汗",
-      "selected_variant": {
-        "model": "超細芯アイブロウ",
-        "colour": "03 ナチュラルブラウン",
-        "net_amount": "0.02g",
-        "pack_count": 1,
-        "JAN": "4939553040910"
-      }
-    },
-    {
-      "ref": "p2",
-      "product_id": "AMZ-B0HJHDPWXF",
-      "asin": "B0HJHDPWXF",
-      "amazon_title": "デジャヴュ パウダリーブロウティント キャメルブラウン アイブロウ 先行販売",
-      "brand": "デジャヴュ",
-      "image_url": "https://m.media-amazon.com/images/I/41UbWafMy9L._AC_SY300_SX300_QL70_ML2_.jpg",
-      "observed_price": 2060,
-      "discovery_score": 1,
-      "selection_score": 0.7,
-      "matched_comparison_axes": [
-        "color_range",
-        "formula_type"
-      ],
-      "search_key": "AMURELIA Shop デジャヴュ パウダリーブロウティント ナチュラルブラウン アイブ",
-      "selected_variant": {
-        "model": "パウダリーブロウティント",
-        "colour": "キャメルブラウン",
-        "pack_count": 1
-      }
-    },
-    {
-      "ref": "p3",
-      "product_id": "AMZ-B071XTGPN2",
-      "asin": "B071XTGPN2",
-      "amazon_title": "KATE(ケイト) ケイト アイブロウ デザイニングアイブロウ3D ブラウン系 EX-5 単品",
-      "brand": "KATE",
-      "image_url": "https://m.media-amazon.com/images/I/81ItHh9ES5L._AC_SL1500_.jpg",
-      "observed_price": 1760,
-      "discovery_score": 1,
-      "selection_score": 0.52,
-      "matched_comparison_axes": [],
-      "search_key": "MILKTOUCH Milk touch ミルクタッチ シルバーベール ティッシュオ",
-      "selected_variant": {
-        "model": "デザイニングアイブロウ3D",
-        "colour": "EX-5 ブラウン系",
-        "net_amount": "2.2g",
-        "pack_count": 1,
-        "configuration": "ケース・ブラシ付の単品",
-        "JAN": "4973167208397"
-      }
-    },
-    {
-      "ref": "p4",
-      "product_id": "AMZ-B0B685DDCM",
-      "asin": "B0B685DDCM",
-      "amazon_title": "パピリオ公式 Papilio ステイブロウG リフィル単品 ライトブラウン 落ちない スルスル描ける まゆ墨",
-      "brand": "パピリオ",
-      "image_url": "https://m.media-amazon.com/images/I/518jImA3kyL._AC_SL1500_.jpg",
-      "observed_price": 2090,
-      "discovery_score": 1,
-      "selection_score": 0.52,
-      "matched_comparison_axes": [],
-      "search_key": "パピリオ(Papilio) パピリオ公式 Papilio ステイブロウG リフィル単品 ライ",
-      "selected_variant": {
-        "model": "ステイブロウG リフィル",
-        "colour": "001 ライトブラウン",
-        "pack_count": 1,
-        "configuration": "リフィルのみ。本体別売",
-        "JAN": "4562181032318"
-      }
-    },
-    {
-      "ref": "p5",
-      "product_id": "AMZ-B0FC66D869",
-      "asin": "B0FC66D869",
-      "amazon_title": "Fujiko(フジコ) 眉ティントADV (01ショコラブラウン) アイブロウ アイブロー 眉マスカラ 眉ティント 眉毛ティント セルフタンニング 落ちにくい 消えにくい ウォータープルーフ",
-      "brand": "Fujiko",
-      "image_url": "https://m.media-amazon.com/images/I/41rh36uEu3L._AC_SL1000_.jpg",
-      "observed_price": 2200,
-      "discovery_score": 1,
-      "selection_score": 0.52,
-      "matched_comparison_axes": [
-        "formula_type"
-      ],
-      "search_key": "Fujiko(フジコ) 眉ティントSVR 01ショコラブラウン 6グラム (x 1) フ",
-      "selected_variant": {
-        "model": "眉ティントADV",
-        "colour": "01 ショコラブラウン",
-        "net_amount": "6g",
-        "pack_count": 1,
-        "JAN": "4589474249161"
-      }
-    },
-    {
-      "ref": "p6",
-      "product_id": "AMZ-B0BVZ7C49Y",
-      "asin": "B0BVZ7C49Y",
-      "amazon_title": "rom&nd HAN ALL BROW CARAロムアンドハンオールブロウカラ (02 マイルドウッディー)",
-      "brand": "rom&nd",
-      "image_url": "https://m.media-amazon.com/images/I/613bN5SNC3L._AC_SL1500_.jpg",
-      "observed_price": 1210,
-      "discovery_score": 1,
-      "selection_score": 0.47,
-      "matched_comparison_axes": [],
-      "search_key": "rom&nd HAN ALL BROW CARAロムアンドハンオールブロウカラ",
-      "selected_variant": {
-        "model": "HAN ALL BROW CARA",
-        "colour": "02 マイルドウッディー",
-        "pack_count": 1,
-        "GTIN": "8809625246679"
-      }
-    }
-  ]
+  "slug": "eyebrow-makeup-6-picks"
 }
