@@ -1,0 +1,112 @@
+{
+  "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+  "evidence_sha256": "5989983c87a53bfe7803a3825c8e9a357c8a2ba44b40725644e5fc479b5d8c17",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 11520,
+    "input_tokens": 25166,
+    "member_binding_revision": 4,
+    "output_tokens": 1528,
+    "reasoning_effort": "medium",
+    "reasoning_output_tokens": 516,
+    "reused_product_qa": true,
+    "session_id": "01a21cca-d705-7f53-88d7-dc1f0e0cd811",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "e8159bb6ca276086cc4aed48680e060c32993eb6474ad9e65d20e05f29a3d31a",
+  "review": {
+    "buying_guidance": false,
+    "claims_grounded": false,
+    "complete_comparison": false,
+    "distinct_products": true,
+    "duplicate_pair_checks": [],
+    "editorial_voice_appropriate": false,
+    "internal_qa_leak_absent": false,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "popular",
+            "quote": "Eyebrow Pencil with Brush The triangular core allows you to draw both thin and thick lines."
+          }
+        ],
+        "identity_key": "MAYBELLINE ファッションブロウ パウダーインペンシル N",
+        "identity_quote": "Maybelline MAYBELLINE Fashion Brow Powder In Pencil N BR-2 Natural Brown Eyebrow Pencil Triangular Lead with Brush Waterproof",
+        "reason": "三角芯とブラシ付きの眉用ペンシルとして識別できる。掲載情報とレビュー数を踏まえ、定番を探す切り口で紹介できる。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "セザンヌ 超細芯アイブロウ",
+        "identity_quote": "",
+        "reason": "掲載名から03ナチュラルブラウンの眉用商品と識別できる。細い線を描き足す選択肢として紹介できるが、選定理由にある芯径は添付資料では未確認。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "Heavy Rotation Eyebrow Pencil",
+        "identity_quote": "Heavy Rotation Eyebrow Pencil 04 Natural Brown 0.09 Gram Retractable Brush Waterproof (x2)\nAbout this item",
+        "reason": "眉用ペンシルとして識別でき、眉尻を描く切り口に合う。選定理由にある芯径とブラシの形状は添付資料では未確認。2本入りという販売単位は別商品性の根拠にしていない。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "precise_tail",
+            "quote": "Flat brush type for easy drawing"
+          }
+        ],
+        "identity_key": "Clairina Powder Liquid Eyebrow Ultra Keep",
+        "identity_quote": "Clairina Powder Liquid Eyebrow Ultra Keep (Milk Brown)\nAbout this item",
+        "reason": "平筆タイプのリキッドアイブロウとして識別でき、筆で眉尻を描く切り口に合う。選定理由にある斜めカットの形状や処方の詳しい説明は添付資料では未確認。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "soft_fill",
+            "quote": "Item Form Powder\nColor 01 bright brown"
+          }
+        ],
+        "identity_key": "Cezanne Bold Eyebrow",
+        "identity_quote": "Cezanne Bold Eyebrow Bright Brown (x2)\nAbout this item",
+        "reason": "p2とは異なる商品系列の眉用商品として識別できる。まばらな部分を埋める切り口で紹介できるが、選定理由にある芯径と仕上がりは添付資料では未確認。2本入りという販売単位は別商品性の根拠にしていない。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "soft_fill",
+            "quote": "Comes with a screw brush, convenient for blending the finish"
+          }
+        ],
+        "identity_key": "Canmake Styling Edge Eyebrow",
+        "identity_quote": "Canmake Styling Edge Eyebrow Eyebrow Pencil with Thin Core and Brush 01 Natural Brown\nAbout this item",
+        "reason": "薄い芯とブラシ付きの眉用ペンシルとして識別できる。まばらな部分に線を足し、ブラシでなじませる切り口に合う。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reader_decision_outsourcing_absent": false,
+    "reason": "6商品は掲載名または検証済みの商品情報から識別でき、対象外商品や明白な重複は認められない。それぞれ既存の紹介切り口に沿って紹介できる。選定理由にある一部の芯径、筆先形状、仕上がりの説明は添付資料では確認できず、記事の具体的な主張としては扱えない。記事本文がないため記事固有の項目は判定対象外。",
+    "recommendation_conclusion": false,
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}
