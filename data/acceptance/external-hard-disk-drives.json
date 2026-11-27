@@ -1,0 +1,150 @@
+{
+  "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+  "evidence_sha256": "8b39436225a0bb5f6dc65bbab32461bc9e0461a6df5ecb272272dcab84cb626b",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 11520,
+    "input_tokens": 26663,
+    "listing_identity_citations_repaired": [
+      "p1",
+      "p2",
+      "p3",
+      "p4",
+      "p5",
+      "p6"
+    ],
+    "member_binding_revision": 4,
+    "output_tokens": 1311,
+    "reasoning_effort": "medium",
+    "reasoning_output_tokens": 59,
+    "reused_product_qa": true,
+    "session_id": "01a21cda-6309-7e03-80e0-43059a3de263",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "679fc95bc77251bae7e31f5c97ab73321f75bcfcbd3c674072728630601c8c89",
+  "review": {
+    "buying_guidance": false,
+    "claims_grounded": false,
+    "complete_comparison": false,
+    "distinct_products": true,
+    "duplicate_pair_checks": [],
+    "editorial_voice_appropriate": false,
+    "internal_qa_leak_absent": false,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "popular",
+            "quote": "Capacity: 6TB"
+          },
+          {
+            "axis_id": "popular",
+            "quote": "Power Supply: AC 100 V, 50/60 Hz"
+          }
+        ],
+        "identity_key": "【Amazon.co.jp限定】 バッファロー 外付けHDD 6TB テレビ録画 nasne 対応 静音 日本製 HD-AD6U3",
+        "identity_quote": "【Amazon.co.jp限定】 バッファロー 外付けHDD 6TB テレビ録画 nasne 対応 静音 日本製 HD-AD6U3",
+        "reason": "6TBの外付けHDDとして識別できる。容量とAC電源の記載に基づき、自宅に置く保存先として紹介できる。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "popular",
+            "quote": "Capacity: 5TB"
+          },
+          {
+            "axis_id": "popular",
+            "quote": "Power Supply: USB bus power"
+          }
+        ],
+        "identity_key": "WD ポータブルHDD 5TB USB3.0 ブラック WD Elements Portable 外付けハードディスク / メーカー2年保証 WDBU6Y0050BBK-WESN",
+        "identity_quote": "WD ポータブルHDD 5TB USB3.0 ブラック WD Elements Portable 外付けハードディスク / メーカー2年保証 WDBU6Y0050BBK-WESN 国内正規代理店品",
+        "reason": "5TBのポータブル外付けHDDとして識別できる。USB給電とケーブル付属の記載があり、持ち運べる保存先として紹介できる。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "home_backup",
+            "quote": "External Dimensions (W x H x D): 4.5 x 1.3 x 6.7 inches (114 x 33 x 171 mm)"
+          },
+          {
+            "axis_id": "home_backup",
+            "quote": "Main Accessories: USB 3.2 (Gen1) cable (1 m), AC adapter"
+          }
+        ],
+        "identity_key": "バッファロー HD-EDS2U3-BE パソコン&テレビ録画用 外付けHDD 2TB",
+        "identity_quote": "バッファロー HD-EDS2U3-BE パソコン&テレビ録画用 外付けHDD 2TB",
+        "reason": "2TBの外付けHDDとして識別できる。本体寸法とACアダプター付属の記載があり、自宅の決まった場所に置く用途に合う。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "home_backup",
+            "quote": "the compact size allows you to place it vertically or horizontally to fit your space"
+          }
+        ],
+        "identity_key": "ロジテックダイレクト HDD 外付け 6TB 静音 ファンレス 放熱 設計 テレビ録画 / PC / PS5 日本製 LHD-EN60U3WS",
+        "identity_quote": "ロジテックダイレクト HDD 外付け 6TB 静音 ファンレス 放熱 設計 テレビ録画 / PC / PS5 日本製 LHD-EN60U3WS",
+        "reason": "型番のある6TB外付けHDDとして識別できる。縦置き・横置きの記載に基づき、自宅の設置場所に合わせて選ぶ候補として紹介できる。実際の動作音の程度は断定しない。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "separate_storage",
+            "quote": "My Passport Encryption Password Protection External Hard Drive"
+          },
+          {
+            "axis_id": "separate_storage",
+            "quote": "USB-A to USB Micro-B cable included"
+          }
+        ],
+        "identity_key": "WD ポータブルHDD 2TB USB3.0 ブラック My Passport 暗号化 パスワード保護 外付けハードディスク / メーカー3年保証 WDBYVG0020BBK-WE",
+        "identity_quote": "WD ポータブルHDD 2TB USB3.0 ブラック My Passport 暗号化 パスワード保護 外付けハードディスク / メーカー3年保証 WDBYVG0020BBK-WESN 国内正規代理店品",
+        "reason": "2TBのポータブル外付けHDDとして識別できる。掲載タイトルにパスワード保護、商品説明にケーブル付属の記載があり、控えを別の場所へ移す用途に沿って紹介できる。保護性能の程度は断定しない。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "separate_storage",
+            "quote": "Buffalo HD-TPA1U3-B Toshiba Canvio USB 3.0 Compatible Portable HDD 1TB"
+          },
+          {
+            "axis_id": "separate_storage",
+            "quote": "Compatible with bus power, it does not require an AC adapter"
+          }
+        ],
+        "identity_key": "バッファロー HD-TPA1U3-B 東芝製Canvio USB 3.0対応ポータブルHDD 1TB",
+        "identity_quote": "バッファロー HD-TPA1U3-B 東芝製Canvio USB 3.0対応ポータブルHDD 1TB",
+        "reason": "型番のある1TBポータブル外付けHDDとして識別できる。USB給電の記載があり、控えを別の場所に保管する用途に合う。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reader_decision_outsourcing_absent": false,
+    "reason": "6商品は検証済みの商品掲載情報にある名称・型番で識別でき、いずれも外付けHDDである。示された未判定ペアに、同一本体や色・数量だけの違いを示す積極的な根拠はない。各商品は割り当てられた紹介切り口に沿って個別に紹介できる。記事本文は未提出のため、本文に関する判定項目はfalseとした。",
+    "recommendation_conclusion": false,
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}
