@@ -4,155 +4,378 @@
   "category": "gadget",
   "comparison_axes": [
     {
-      "id": "drive_control",
+      "id": "popular",
       "keywords": [
-        "電動トルク",
-        "クラッチ",
+        "人気"
+      ],
+      "label": "人気・定番の基準"
+    },
+    {
+      "id": "narrow_space_access",
+      "keywords": [
+        "本体形状",
+        "先端までの長さ",
+        "狭所作業"
+      ],
+      "label": "棚の内側や壁際で先端をねじに合わせやすい"
+    },
+    {
+      "id": "fastening_control",
+      "keywords": [
         "回転速度",
-        "手締め対応"
+        "締め付け調整",
+        "手締め併用"
       ],
-      "label": "締め付けと回転の調整"
-    },
-    {
-      "id": "body_access",
-      "keywords": [
-        "グリップ形状",
-        "本体寸法",
-        "重量",
-        "先端長さ"
-      ],
-      "label": "持ち方と狭い場所への届き方"
-    },
-    {
-      "id": "charging_bits",
-      "keywords": [
-        "充電端子",
-        "充電時間",
-        "ビット規格",
-        "付属ビット"
-      ],
-      "label": "充電方式とビットの適合"
+      "label": "組み立て家具のねじを締めすぎずに作業しやすい"
     }
   ],
   "eyecatch_image": "https://www.sellemy.jp/img/compact-cordless-screwdrivers/compact-cordless-screwdrivers.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "83c096bf2626248e1b2d14d361f5dc69b641d5d2f2b4652fbcb25703d7cd6036",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 26683,
+      "listing_identity_citations_repaired": [
+        "p3",
+        "p5",
+        "p6"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 1335,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 314,
+      "session_id": "01a21a87-5486-7b93-be75-df807b7b1800",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "Bit Set (10 Pieces), Magnetic Bit Holder"
+            }
+          ],
+          "identity_key": "Bosch IXO7",
+          "identity_quote": "Bosch IXO7 Cordless Screwdriver",
+          "reason": "コードレスドライバー本体として識別できる。付属ビットと磁気ホルダーを備え、家具の組み立て用に一式をそろえたい用途で紹介できる。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "Quick tightening with a 280 rpm motor rotation Manual tightening ensures a firm grip!"
+            }
+          ],
+          "identity_key": "VOICE RAQUL",
+          "identity_quote": "VOICE RAQUL Electric Screwdriver",
+          "reason": "電動と手締めを併用できる製品として識別できる。家具のねじを電動で回し、最後を手で締める用途で紹介できる。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "narrow_space_access",
+              "quote": "【Compact】Easy to use in narrow spaces with a compact design"
+            },
+            {
+              "axis_id": "narrow_space_access",
+              "quote": "You can start by pressing down on the main unit with Push & Go, or by using the main switch"
+            }
+          ],
+          "identity_key": "Bosch Professional(ボッシュ) 3.6Vコードレス 電動 ドライバー (ドライバービット8本・延長ビットホルダー・専用ケース・USB Type-Cケーブル付) B",
+          "identity_quote": "Bosch Professional(ボッシュ) 3.6Vコードレス 電動 ドライバー (ドライバービット8本・延長ビットホルダー・専用ケース・USB Type-Cケーブル付) BoschGO3",
+          "reason": "掲載タイトルの製品名でIXO7とは別に識別できる。延長ビットホルダーと二通りの起動方法が、棚の内側での作業という切り口に合う。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "narrow_space_access",
+              "quote": "With the included 90° angle adapter, you can easily tighten screws in corners of furniture or walls in narrow spaces"
+            }
+          ],
+          "identity_key": "Fanttik S2 Pro",
+          "identity_quote": "Fanttik S2 Pro 電動ドライバー",
+          "reason": "電動ドライバー本体として識別できる。付属の90度アングルアダプターを使う壁際や棚の隅の作業で紹介できる。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "fastening_control",
+              "quote": "Low: 280 rpm/1.2 Nm; Medium: 340 rpm/1.6 Nm; High: 400 rpm/2.0 Nm; Maximum endurance torque when hand cranking: 12 Nm"
+            }
+          ],
+          "identity_key": "ベッセル(VESSEL) 電動 ボールグリップ ドライバー プラス プレミアム 3段階切替モード 限定色 (金) ビット1本付 220USB-P1GL",
+          "identity_quote": "ベッセル(VESSEL) 電動 ボールグリップ ドライバー プラス プレミアム 3段階切替モード 限定色 (金) ビット1本付 220USB-P1GL",
+          "reason": "掲載タイトルの型番で識別できる。電動時の3段階切替と手回しが、締め具合に気を配りながら作業する切り口に合う。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "fastening_control",
+              "quote": "Rotation speed: Approximately 210 rpm; Power source: 4 x AA batteries (sold separately)"
+            },
+            {
+              "axis_id": "fastening_control",
+              "quote": "One switch to tighten and loosen"
+            }
+          ],
+          "identity_key": "高儀(Takagi) EARTH MAN ミニドライバー 電動ドライバー小型 電動ドリル ドライバー電動 インパクトドライバー ミニドライバー ドリルドライバー 乾電池式 6V 乾",
+          "identity_quote": "高儀(Takagi) EARTH MAN ミニドライバー 電動ドライバー小型 電動ドリル ドライバー電動 インパクトドライバー ミニドライバー ドリルドライバー 乾電池式 6V 乾電池式で場所を選ばず大活躍 DDR-140CL",
+          "reason": "掲載タイトルの型番で識別できる乾電池式の小型ドライバー。ねじの進み具合を見ながらスイッチを短く操作する用途で紹介できる。トルク調整や自動停止は主張しない。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "根拠のみの審査。6商品は掲載タイトルの製品名・型番で識別でき、各商品を担当する紹介切り口に沿って紹介できる。p1とp3は同じブランドだが、掲載タイトルはそれぞれIXO7とBoschGO3を示しており、同一本体である積極的な根拠はない。記事本文がないため記事限定の判定はfalseとした。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
   "products": [
     {
-      "amazon_title": "ベッセル(VESSEL) 電動 ボールグリップ ドライバー ビット1本付 電ドラボール 220USB-1",
-      "asin": "B07KSBSK4Z",
-      "brand": "ベッセル",
-      "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61pRoMSgUxL._AC_SL1500_.jpg",
-      "matched_comparison_axes": [
-        "drive_control"
-      ],
-      "observed_price": null,
-      "product_id": "AMZ-B07KSBSK4Z",
-      "ref": "p1",
-      "search_key": "電動ドライバー 3.6V コードレス ドライバーキット 電動トル",
-      "selection_score": 0.49,
-      "selected_variant": {
-        "colour": "ブラック",
-        "package": "ビット1本付",
-        "body_count": 1
-      }
-    },
-    {
-      "amazon_title": "パナソニック(Panasonic) 電動ドライバー USB Type-C 充電式 3.7V 850mAh 正転・逆転 手締め機 ブレーキ付 LEDライト ビットセット 充電ケーブル付属 軽量 小型 ネジ締め DIY 電動工具 ミニ EZ1D11S-B ブラック",
-      "asin": "B0BV9S6MG5",
-      "brand": "パナソニック",
-      "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51X21bvRUXL._AC_SL1000_.jpg",
-      "matched_comparison_axes": [],
-      "observed_price": null,
-      "product_id": "AMZ-B0BV9S6MG5",
-      "ref": "p2",
-      "search_key": "電動ドリル 電動ドライバー インパクトドライバー 電動ドライバー",
-      "selection_score": 0.31,
-      "selected_variant": {
-        "colour": "ブラック",
-        "package": "ビットセット・USBケーブル付",
-        "body_count": 1
-      }
-    },
-    {
-      "amazon_title": "コードレスドライバー",
+      "amazon_title": "Bosch IXO7 Cordless Screwdriver (Unit Only, Bit Set (10 Pieces), Magnetic Bit Holder, Micro USB Cable (Type-B), Carrying Case",
       "asin": "B0C2HCM97F",
-      "brand": "ボッシュ",
+      "brand": "Bosch",
+      "discovery_axis_id": "popular",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51GfTgcumBL._AC_SY300_SX300_QL70_ML2_.jpg",
-      "matched_comparison_axes": [],
+      "image_url": "https://m.media-amazon.com/images/I/51GfTgcumBL._AC_UL320_.jpg",
       "observed_price": null,
       "product_id": "AMZ-B0C2HCM97F",
+      "provisional": false,
+      "rating": 4.4,
+      "ref": "p1",
+      "review_count": 372,
+      "search_key": "Bosch IXO7 Cordless Screwdriver (Unit",
+      "selection_reason": "ボッシュのIXO7は、握って構える形の本体に10種類のビットと磁気ホルダーが付く。組み立て家具ごとにねじの形が違い、まず一式をそろえたい読者に向く。商品説明で回転数235回/分、本体寸法147×120×46mmを確認でき、持ち手を含む奥行きを見て置き場所を判断できる。",
+      "sources": [
+        {
+          "brand": "Bosch",
+          "excerpt": "Bosch IXO7 Cordless Screwdriver (Unit Only, Bit Set (10 Pieces), Magnetic Bit Holder, Micro USB Cable (Type-B), Carrying Case\nAbout this item\nNo-load rotation speed (min^-1): 235; Maximum tightening torque: 5.5 N/m; Body dimensions: 5.8 x 4.7 x 1.8 x 1.8 inches (147 x 120 x 46 mm); Voltage: 3.6 V; Maximum torque (Nm); Battery voltage (V): 3.6; Battery capacity (Ah): 2; Charging time (min); Capacity: 0.2; Capacity: 0.2 inch (5 inch (5 inch (5 mm x 4 mm x 4 mm) wood screws 5 mm; Rated Voltage: : DC 3.6 V (rechargeable built-in battery); Battery capacity: 2.0 Ah; Number of revolutions: 235 min-1 (revolutions per minute); Maximum torque: 5.5 N.m; Bit size: HEX0.25 inches (6.35 mm); Charging time: Approx. 3 hours (empty to full charge); Working amount per charge: 0.190 x 1 x 1.2 x 1 inch (4 x 1 x 1.2 inch (4 inch (4 x 3 x 3 inch (4 x 30 x 30 inch (30 x 30 x 30 mm) screws; Materials: Finish: Polyamide Resin; Set contents: Polyamide resin; Country of Origin: Hungary; Code number: 568-1205 › See more product details\nBrand Bosch\nNumber of Items 1\nHead Style Hex\nMaterial Plastic\nColor 1) IXO7\nSpecial Feature Rechargeable, Cordless\nItem dimensions L x W x H 14.7 x 12 x 4.6 cm\nItem Weight 0.79 Grams\nUnit Count 1 Count See more\nVisit the Bosch Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Bosch IXO7 Cordless Screwdriver (Unit Only, Bit Set (10 Pieces), Magnetic Bit Holder, Micro USB Cable (Type-B), Carrying Case",
+          "url": "https://www.amazon.co.jp/dp/B0C2HCM97F?th=1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "VOICE RAQUL Electric Screwdriver, Ball-Shaped Grip, Electric, Manual, Compact, USB, Type-C Rechargeable, Lightweight, Forward/Reversible, Screw Tightening, DIY Bit, Charging Cable Included",
+      "asin": "B084BTL2KF",
+      "brand": "ヴォイス",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61MJKR4OFlL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B084BTL2KF",
+      "provisional": false,
+      "rating": 4.2,
+      "ref": "p2",
+      "review_count": 5763,
+      "search_key": "ヴォイス VOICE RAQUL Electric Screwdriver",
+      "selection_reason": "VOICE RAQULは、普段のドライバーに近いボール型グリップで、電動でねじを回した後に同じ本体で手締めできる。棚のねじを何本も通し、最後は手の感触で締め具合を確かめたい読者に向く。商品説明には重さ200g、電動時280回/分、手動時の最大トルク10N・mに加え、スイッチを離した後も約10秒点灯するLEDが記載されている。",
+      "sources": [
+        {
+          "brand": "ヴォイス",
+          "excerpt": "VOICE RAQUL Electric Screwdriver, Ball-Shaped Grip, Electric, Manual, Compact, USB, Type-C Rechargeable, Lightweight, Forward/Reversible, Screw Tightening, DIY Bit, Charging Cable Included\nAbout this item\n✅【Feature Upgrade】Battery capacity doubled! 1.5 times tightening torque! High-capacity battery improves work efficiency\n✅【The speed of electric power × the power of manual tightening】significantly improves the efficiency of screw tightening work!! Next generation electric screwdriver! Quick tightening with a 280 rpm motor rotation Manual tightening ensures a firm grip! (Maximum torque: 10 N⋅m)\nPalm Size: As an electric screwdriver, it is super lightweight at only 7.1 oz (200 g) And, it is almost the same size as conventional screwdrivers, so it is easy to handle! No need to worry about space to store!\n✅【LED light with afterglow function】High-brightness LED light that brightly illuminates your hands during work! Additionally, it features a residual glow function that keeps the light on for about 10 seconds after switch off!\n✅【USB Charging】Adopts USB Type-C charging method! You can charge from mobile batteries and car chargers with the same feeling as your smartphone › See more product details\nBrand ヴォイス\nPower Source Electric x Manual\nVoltage 3.6 Volts\nColor black | gray\nIncluded Components Electric screwdriver\nSpecial Feature Rechargeable\nMaterial Metal, Rubber\nSpeed 280 RPM\nItem Weight 200 Grams See more\nVisit the V VOICE Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "VOICE RAQUL Electric Screwdriver, Ball-Shaped Grip, Electric, Manual, Compact, USB, Type-C Rechargeable, Lightweight, Forward/Reversible, Screw Tightening, DIY Bit, Charging Cable Included",
+          "url": "https://www.amazon.co.jp/dp/B084BTL2KF",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "Bosch Professional(ボッシュ) 3.6Vコードレス 電動 ドライバー (ドライバービット8本・延長ビットホルダー・専用ケース・USB Type-Cケーブル付) BoschGO3",
+      "asin": "B0DG8J3FTB",
+      "brand": "Bosch",
+      "discovery_axis_id": "narrow_space_access",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/31C++aWbuVL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0DG8J3FTB",
+      "provisional": false,
+      "rating": 4.1,
       "ref": "p3",
-      "search_key": "電動ドライバー 充電式 小型 コードレス 電動ドリル 約280g",
-      "selection_score": 0.31,
-      "selected_variant": {
-        "colour": "グリーン",
-        "variant_label": "IXO7／ドライバー本体",
-        "body_count": 1
-      }
+      "review_count": 158,
+      "search_key": "Bosch Professional(ボッシュ) 3.6Vコードレス 電動",
+      "selection_reason": "BoschGO3は細長い本体に延長ビットホルダーが付属し、棚の奥にあるねじへ先端を伸ばして合わせたいときに使いやすい。商品説明では狭所向けのコンパクト設計に加え、本体を押して起動する方法とスイッチで起動する方法を確認できる。ねじを押しにくい姿勢ではスイッチを選べる点も、家具の内側という切り口に合う。",
+      "sources": [
+        {
+          "brand": "Bosch",
+          "excerpt": "Bosch Professional 3.6V Cordless Electric Screwdriver (Includes 8 Driver Bits, Extension Bit Holder, Exclusive Case, USB Type-C Cable) BoschGO3\nAbout this item\nElectric Screwdriver: Can be used like a hand tool Electrical and facility construction, furniture assembly, vehicle interior, equipment, device maintenance and repair, automotive and motorcycle maintenance\n【Compact】Easy to use in narrow spaces with a compact design Work stably even in high places with poor footing\n【Two activation methods to match the task】You can start by pressing down on the main unit with Push & Go, or by using the main switch\n【Torque Adjustment Function】Accurate torque adjustment is possible with a 7-stage mechanical clutch\nStandard Accessories: Main unit, 1 USB Type-C cable, 1 dedicated case, 1 bit set (8-piece set), 1 extension bit folder (contents may change without notice) › See more product details\nBrand Bosch\nNumber of Pieces 8\nDrive System Impact, Double Headed\nUnit Count 1 Set\nSet Name Set of 8\nVisit the Bosch Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Bosch Professional 3.6V Cordless Electric Screwdriver (Includes 8 Driver Bits, Extension Bit Holder, Exclusive Case, USB Type-C Cable) BoschGO3",
+          "url": "https://www.amazon.co.jp/dp/B0DG8J3FTB?th=1",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "ブラックアンドデッカー(BLACK+DECKER) コードレス プッシュドライバー DIY 電動工具 締付工具 5段階調節 コンパクト LEDライト搭載 3.6V ビット 26種 キャリングケース 付き BD40K27",
-      "asin": "B0811L889V",
-      "brand": "BLACK+DECKER",
+      "amazon_title": "Fanttik S2 Pro 電動ドライバー コードレス ドライバーセット 7段トルク調整 90°アングルアダプター付",
+      "asin": "B0F3X74WT9",
+      "brand": "Fanttik",
+      "discovery_axis_id": "narrow_space_access",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/41X4YBSd3oL._AC_SL1000_.jpg",
-      "matched_comparison_axes": [],
+      "image_url": "https://m.media-amazon.com/images/I/71eDoeLshGL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B0811L889V",
+      "product_id": "AMZ-B0F3X74WT9",
+      "provisional": false,
+      "rating": 4.5,
       "ref": "p4",
-      "search_key": "電動ドリル 電動ドライバー インパクトドライバー 電動ドライバー",
-      "selection_score": 0.31,
-      "selected_variant": {
-        "colour": "ブラック",
-        "package": "通常版、26種ビット・ケース付き",
-        "body_count": 1
-      }
+      "review_count": 1328,
+      "search_key": "Fanttik S2 Pro 電動ドライバー コードレス ドライバーセット 7段",
+      "selection_reason": "Fanttik S2 Proには90度アングルアダプターが付属する。壁際や棚の隅で本体をねじの正面に置けない読者が、先端の向きを変えて作業する用途に合う。商品説明には延長ロッドと長短計20本のビットも記載され、ねじまでの距離に応じて先端を組み替えられる。",
+      "sources": [
+        {
+          "brand": "Fanttik",
+          "excerpt": "Fanttik S2 Pro Electric Screwdriver, Cordless Screwdriver Set\nAbout this item\nPOWERFUL CORDLESS ELECTRIC DRIVER: Equipped with 250 RPM high performance motor, delivering powerful torque up to 6 N·m. This rechargeable electric screwdriver can be used for a wide range of applications, including computer assembly, furniture assembly, household appliances, and DIY work\nPrecision Torque Adjustment Function (7 Levels): The hybrid torque control system combines mechanical and electronic systems, allowing for 7 levels of torque settings of 0.5, 1, 2, 3, 4, 5, 6 N·m. Minimum 0.5N·m setting is ideal for repairing precision instruments and electronics. Supports tasks with optimal power for applications ranging from delicate electronics to furniture and appliances\nConvenient Storage Case & Abundant Bit Set: The sophisticated design of the integrated magnetic storage case allows you to remove the bits smoothly. Inside, there are 5 long + 15 short bits in total, extension rod and 90° angle adapter. Not only for furniture assembly and DIY projects, but also for a wide variety of household work in narrow spaces\nLONG LASTING BATTERY & USB-C FAST CHARGING: Equipped with a 2,000 mAh high-capacity battery that can be used for a long time. Compatible with 5V/2A USB Type-C rapid charging, and can be completed in a shorter period of time. Easy to carry, cordless and comfortable to use\nLED Light Smart Indicator: LED work light to illuminate dark areas Ring charging indicator light allows you to check the remaining battery level and charging status, and the torque intensity and rotation direction (forward and reverse). Intuitive operation with light. Designed to be used safely even by beginners\n90° Angle Adapter & Compatible with Narrow Spaces: With the included 90° angle adapter, you can easily tighten screws in corners of furniture or walls in narrow spaces that ordinary screwdrivers can't reach. Strong support for all hard to reach areas › See more product details\nBrand Fanttik\nMaterial Acrylonitrile Butadiene Styrene (ABS), S2\nSpeed 250 RPM\nPower Source Battery Powered\nProduct Dimensions 37L x 37W x 180H mm\nVoltage 3.7 Volts (DC)\nItem Torque 0.5 Newton Meters\nItem Weight 2.27 Pounds\nBattery Cell Composition Lithium Ion\nUPC 671891193166 See more\nVisit the Fanttik Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Fanttik S2 Pro Electric Screwdriver, Cordless Screwdriver Set",
+          "url": "https://www.amazon.co.jp/dp/B0F3X74WT9",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "HiKOKI(ハイコーキ) 3.6V コードレスドライバードリル 充電式 1.5Ahリチウムイオン電池、急速充電器、予備電池、ケース付 DB3DL2(2LCSK)",
-      "asin": "B006OSX6VC",
-      "brand": "HiKOKI",
+      "amazon_title": "ベッセル(VESSEL) 電動 ボールグリップ ドライバー プラス プレミアム 3段階切替モード 限定色 (金) ビット1本付 220USB-P1GL",
+      "asin": "B0CLL5K1TH",
+      "brand": "VESSEL",
+      "discovery_axis_id": "fastening_control",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51yQ4qaKw5L._AC_SL1000_.jpg",
-      "matched_comparison_axes": [],
+      "image_url": "https://m.media-amazon.com/images/I/51wqjCQPsDL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B006OSX6VC",
+      "product_id": "AMZ-B0CLL5K1TH",
+      "provisional": false,
+      "rating": 4.2,
       "ref": "p5",
-      "search_key": "Bingoods 電動ドライバー 小型 充電式 電動ドライバー",
-      "selection_score": 0.31,
-      "selected_variant": {
-        "package": "電池・予備電池・充電器・ケース付 2LCSK",
-        "body_count": 1
-      }
+      "review_count": 335,
+      "search_key": "VESSEL ベッセル(VESSEL) 電動 ボールグリップ ドライバー プラ",
+      "selection_reason": "ベッセルの電ドラボールプラスは、電動時の回転数とトルクを280回/分・1.2N・m、340回/分・1.6N・m、400回/分・2.0N・mの3段階で切り替えられ、手回しにも対応する。組み立て家具のねじを低い設定から回し、最後の締め具合を手で確かめたい読者に向く。数値と手動時の耐久トルク12N・mは商品説明に記載されている。",
+      "sources": [
+        {
+          "brand": "VESSEL",
+          "excerpt": "VESSEL Electric Ball Grip Driver Plus Premium 3-Stage Switching Mode Limited Edition (Gold) with 1 Bit 220USB-P1GL\nAbout this item\nEquipped with 3 rotation and torque modes in one body Can be used according to different purposes\nLow: 280 rpm/1.2 Nm; Medium: 340 rpm/1.6 Nm; High: 400 rpm/2.0 Nm; Maximum endurance torque when hand cranking: 12 Nm\nGrip length: 5.8 in (147 mm); Grip diameter: 1.8 in (45 mm); Weight: 6 oz (170 g); Sleeve: 0.25 in (6.35 mm); Aluminum sleeve chuck\nCharging time: Approx. 60 minutes. Number of charges: Approx. 500 times. Charging method: USB-type C charging\nAccessories: 1 x bit: (+) 2 x 100 mm USB charging cable (1 m) › See more product details\nBrand VESSEL\nPower Source Battery Powered\nMaximum Rotational Speed 400 RPM\nVoltage 3.6 Volts\nAmperage 800 Milliamps\nMaximum Chuck Size 0.2 Inches\nColor gold\nIncluded Components Bit +2/-6x100mm, Electric Draball Plus x 1 (Grip Color: Gold), USB charging cable (USB Type-C/3.3 ft (1Bit +2/-6x100mm, Electric Draball Plus x 1 (Grip Color: Gold), USB charging cable (USB Type-C/3.3 ft (1 See more\nSpecial Feature Reverse Rotation\nProduct Dimensions 14.7L x 4.5W x 4.5H cm See more",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "VESSEL Electric Ball Grip Driver Plus Premium 3-Stage Switching Mode Limited Edition (Gold) with 1 Bit 220USB-P1GL",
+          "url": "https://www.amazon.co.jp/dp/B0CLL5K1TH?th=1",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "マキタ(Makita) 充電式ペンドライバドリル 7.2V 1.5Ah バッテリ2本・充電器・アルミケース付 DF012DSHX",
-      "asin": "B01L930FUQ",
-      "brand": "マキタ",
+      "amazon_title": "高儀(Takagi) EARTH MAN ミニドライバー 電動ドライバー小型 電動ドリル ドライバー電動 インパクトドライバー ミニドライバー ドリルドライバー 乾電池式 6V 乾電池式で場所を選ばず大活躍 DDR-140CL",
+      "asin": "B0058MXJ8U",
+      "brand": "TAKAGI",
+      "discovery_axis_id": "fastening_control",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61SgYiR4S3L._AC_SL1500_.jpg",
-      "matched_comparison_axes": [],
+      "image_url": "https://m.media-amazon.com/images/I/81EQy4qTkfL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B01L930FUQ",
+      "product_id": "AMZ-B0058MXJ8U",
+      "provisional": false,
+      "rating": 4.0,
       "ref": "p6",
-      "search_key": "電動ドライバー 電動ドリルドライバー・ブラシレスモーター・52N",
-      "selection_score": 0.31,
-      "selected_variant": {
-        "colour": "青",
-        "package": "バッテリー2本・充電器・アルミケース付",
-        "body_count": 1
-      }
+      "review_count": 1698,
+      "search_key": "TAKAGI 高儀(Takagi) EARTH MAN ミニドライバー 電動ド",
+      "selection_reason": "高儀DDR-140CLは単3電池4本で動く約250gのミニドライバーで、回転数は約210回/分。たまに家具の増し締めをする読者が、ねじの進み具合を見ながらスイッチを短く操作する使い方に向く。商品説明で確認できるのは回転数と締め・緩めを切り替えるスイッチまでで、締め付け力の調整や自動停止は確認できないため、ねじが座る手前で電動を止める前提で選んだ。",
+      "sources": [
+        {
+          "brand": "TAKAGI",
+          "excerpt": "Takagi DDR-140CL Earth Man Mini Screwdriver, Electric Impact Driver, Mini Screwdriver, Battery Operated, 6V, Battery-Operated, Great for Any Location\nAbout this item\nSize: 4.3 x 1.8 x 6.1 inches (Approximately 11.0 x 4.5 x 15.5 cm)\nCountry of Manufacture: China\nMaterials: Carbon tool steel, ABS resin\nSpecifications: Voltage: 6V DC; Rotation speed: Approximately 210 rpm; Power source: 4 x AA batteries (sold separately)\nAccessories: Tip bit set (5 bits), instruction manual, warranty certificate (6 months)\nWeight: Approx. 8.8 oz (250 g)\nBattery-operated for great use in any location; Lightweight, compact, and easy to handle; Magnetic chuck makes it easy to attach bits; One switch to tighten and loosen\nMaximum torque (N·m) › See more product details\nBrand TAKAGI\nPower Source Battery Powered\nMaximum Rotational Speed 210 RPM\nVoltage 6 Volts\nMaximum Chuck Size 6.35 Millimeters\nColor white\nIncluded Components No\nSpecial Feature Variable Speed\nMaterial Plastic\nSpeed 210 RPM See more\nVisit the TAKAGI Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Takagi DDR-140CL Earth Man Mini Screwdriver, Electric Impact Driver, Mini Screwdriver, Battery Operated, 6V, Battery-Operated, Great for Any Location",
+          "url": "https://www.amazon.co.jp/dp/B0058MXJ8U",
+          "verified": true
+        }
+      ]
     }
   ],
   "selection": {
-    "brand_count": 0,
-    "comparison_axes_covered": [
-      "drive_control"
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B0C2HCM97F",
+            "reason": "ボッシュのIXO7は、握って構える形の本体に10種類のビットと磁気ホルダーが付く。組み立て家具ごとにねじの形が違い、まず一式をそろえたい読者に向く。商品説明で回転数235回/分、本体寸法147×120×46mmを確認でき、持ち手を含む奥行きを見て置き場所を判断できる。"
+          },
+          {
+            "asin": "B084BTL2KF",
+            "reason": "VOICE RAQULは、普段のドライバーに近いボール型グリップで、電動でねじを回した後に同じ本体で手締めできる。棚のねじを何本も通し、最後は手の感触で締め具合を確かめたい読者に向く。商品説明には重さ200g、電動時280回/分、手動時の最大トルク10N・mに加え、スイッチを離した後も約10秒点灯するLEDが記載されている。"
+          }
+        ]
+      },
+      {
+        "axis_id": "narrow_space_access",
+        "products": [
+          {
+            "asin": "B0DG8J3FTB",
+            "reason": "BoschGO3は細長い本体に延長ビットホルダーが付属し、棚の奥にあるねじへ先端を伸ばして合わせたいときに使いやすい。商品説明では狭所向けのコンパクト設計に加え、本体を押して起動する方法とスイッチで起動する方法を確認できる。ねじを押しにくい姿勢ではスイッチを選べる点も、家具の内側という切り口に合う。"
+          },
+          {
+            "asin": "B0F3X74WT9",
+            "reason": "Fanttik S2 Proには90度アングルアダプターが付属する。壁際や棚の隅で本体をねじの正面に置けない読者が、先端の向きを変えて作業する用途に合う。商品説明には延長ロッドと長短計20本のビットも記載され、ねじまでの距離に応じて先端を組み替えられる。"
+          }
+        ]
+      },
+      {
+        "axis_id": "fastening_control",
+        "products": [
+          {
+            "asin": "B0CLL5K1TH",
+            "reason": "ベッセルの電ドラボールプラスは、電動時の回転数とトルクを280回/分・1.2N・m、340回/分・1.6N・m、400回/分・2.0N・mの3段階で切り替えられ、手回しにも対応する。組み立て家具のねじを低い設定から回し、最後の締め具合を手で確かめたい読者に向く。数値と手動時の耐久トルク12N・mは商品説明に記載されている。"
+          },
+          {
+            "asin": "B0058MXJ8U",
+            "reason": "高儀DDR-140CLは単3電池4本で動く約250gのミニドライバーで、回転数は約210回/分。たまに家具の増し締めをする読者が、ねじの進み具合を見ながらスイッチを短く操作する使い方に向く。商品説明で確認できるのは回転数と締め・緩めを切り替えるスイッチまでで、締め付け力の調整や自動停止は確認できないため、ねじが座る手前で電動を止める前提で選んだ。"
+          }
+        ]
+      }
     ],
+    "brand_count": 5,
+    "candidate_count": 20,
+    "comparison_axes_covered": [],
     "content_duplicates_removed": [],
-    "price_used_as_constraint_only": true
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": []
   },
   "slug": "compact-cordless-screwdrivers"
 }

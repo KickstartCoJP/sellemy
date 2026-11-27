@@ -1,0 +1,135 @@
+{
+  "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+  "evidence_sha256": "83c096bf2626248e1b2d14d361f5dc69b641d5d2f2b4652fbcb25703d7cd6036",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 11520,
+    "input_tokens": 26683,
+    "listing_identity_citations_repaired": [
+      "p3",
+      "p5",
+      "p6"
+    ],
+    "member_binding_revision": 4,
+    "output_tokens": 1335,
+    "reasoning_effort": "medium",
+    "reasoning_output_tokens": 314,
+    "reused_product_qa": true,
+    "session_id": "01a21a87-5486-7b93-be75-df807b7b1800",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "c0081804974032f2ed9eaa2482c4a2cdceefde17a5070e7ad0d31b1bd615f356",
+  "review": {
+    "buying_guidance": false,
+    "claims_grounded": false,
+    "complete_comparison": false,
+    "distinct_products": true,
+    "duplicate_pair_checks": [],
+    "editorial_voice_appropriate": false,
+    "internal_qa_leak_absent": false,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "popular",
+            "quote": "Bit Set (10 Pieces), Magnetic Bit Holder"
+          }
+        ],
+        "identity_key": "Bosch IXO7",
+        "identity_quote": "Bosch IXO7 Cordless Screwdriver",
+        "reason": "コードレスドライバー本体として識別できる。付属ビットと磁気ホルダーを備え、家具の組み立て用に一式をそろえたい用途で紹介できる。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "popular",
+            "quote": "Quick tightening with a 280 rpm motor rotation Manual tightening ensures a firm grip!"
+          }
+        ],
+        "identity_key": "VOICE RAQUL",
+        "identity_quote": "VOICE RAQUL Electric Screwdriver",
+        "reason": "電動と手締めを併用できる製品として識別できる。家具のねじを電動で回し、最後を手で締める用途で紹介できる。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "narrow_space_access",
+            "quote": "【Compact】Easy to use in narrow spaces with a compact design"
+          },
+          {
+            "axis_id": "narrow_space_access",
+            "quote": "You can start by pressing down on the main unit with Push & Go, or by using the main switch"
+          }
+        ],
+        "identity_key": "Bosch Professional(ボッシュ) 3.6Vコードレス 電動 ドライバー (ドライバービット8本・延長ビットホルダー・専用ケース・USB Type-Cケーブル付) B",
+        "identity_quote": "Bosch Professional(ボッシュ) 3.6Vコードレス 電動 ドライバー (ドライバービット8本・延長ビットホルダー・専用ケース・USB Type-Cケーブル付) BoschGO3",
+        "reason": "掲載タイトルの製品名でIXO7とは別に識別できる。延長ビットホルダーと二通りの起動方法が、棚の内側での作業という切り口に合う。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "narrow_space_access",
+            "quote": "With the included 90° angle adapter, you can easily tighten screws in corners of furniture or walls in narrow spaces"
+          }
+        ],
+        "identity_key": "Fanttik S2 Pro",
+        "identity_quote": "Fanttik S2 Pro 電動ドライバー",
+        "reason": "電動ドライバー本体として識別できる。付属の90度アングルアダプターを使う壁際や棚の隅の作業で紹介できる。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "fastening_control",
+            "quote": "Low: 280 rpm/1.2 Nm; Medium: 340 rpm/1.6 Nm; High: 400 rpm/2.0 Nm; Maximum endurance torque when hand cranking: 12 Nm"
+          }
+        ],
+        "identity_key": "ベッセル(VESSEL) 電動 ボールグリップ ドライバー プラス プレミアム 3段階切替モード 限定色 (金) ビット1本付 220USB-P1GL",
+        "identity_quote": "ベッセル(VESSEL) 電動 ボールグリップ ドライバー プラス プレミアム 3段階切替モード 限定色 (金) ビット1本付 220USB-P1GL",
+        "reason": "掲載タイトルの型番で識別できる。電動時の3段階切替と手回しが、締め具合に気を配りながら作業する切り口に合う。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "fastening_control",
+            "quote": "Rotation speed: Approximately 210 rpm; Power source: 4 x AA batteries (sold separately)"
+          },
+          {
+            "axis_id": "fastening_control",
+            "quote": "One switch to tighten and loosen"
+          }
+        ],
+        "identity_key": "高儀(Takagi) EARTH MAN ミニドライバー 電動ドライバー小型 電動ドリル ドライバー電動 インパクトドライバー ミニドライバー ドリルドライバー 乾電池式 6V 乾",
+        "identity_quote": "高儀(Takagi) EARTH MAN ミニドライバー 電動ドライバー小型 電動ドリル ドライバー電動 インパクトドライバー ミニドライバー ドリルドライバー 乾電池式 6V 乾電池式で場所を選ばず大活躍 DDR-140CL",
+        "reason": "掲載タイトルの型番で識別できる乾電池式の小型ドライバー。ねじの進み具合を見ながらスイッチを短く操作する用途で紹介できる。トルク調整や自動停止は主張しない。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reader_decision_outsourcing_absent": false,
+    "reason": "根拠のみの審査。6商品は掲載タイトルの製品名・型番で識別でき、各商品を担当する紹介切り口に沿って紹介できる。p1とp3は同じブランドだが、掲載タイトルはそれぞれIXO7とBoschGO3を示しており、同一本体である積極的な根拠はない。記事本文がないため記事限定の判定はfalseとした。",
+    "recommendation_conclusion": false,
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}
