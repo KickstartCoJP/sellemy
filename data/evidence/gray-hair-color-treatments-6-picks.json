@@ -1,172 +1,335 @@
 {
-  "slug": "gray-hair-color-treatments-6-picks",
-  "category": "beauty",
-  "canonical_url": "https://www.sellemy.jp/article/beauty/gray-hair-color-treatments-6-picks.html",
-  "eyecatch_image": "https://www.sellemy.jp/img/gray-hair-color-treatments-6-picks/gray-hair-color-treatments-6-picks.png",
   "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/gray-hair-color-treatments-6-picks.html",
+  "category": "beauty",
   "comparison_axes": [
     {
-      "id": "coloring_power",
-      "label": "染毛力・持続力",
+      "id": "popular",
       "keywords": [
-        "染まりやすさ",
-        "色持ち",
-        "白髪カバー力"
-      ]
+        "人気"
+      ],
+      "label": "人気・定番の基準"
     },
     {
-      "id": "texture_scent",
-      "label": "使用感・香り",
+      "id": "targeted_gray_hair_care",
       "keywords": [
-        "手触り",
-        "香り",
-        "きしみにくさ"
-      ]
+        "生え際",
+        "分け目",
+        "部分使い",
+        "塗布方法"
+      ],
+      "label": "生え際・分け目の気になる部分をケアする"
     },
     {
-      "id": "scalp_gentleness",
-      "label": "頭皮へのやさしさ",
+      "id": "whole_hair_gray_hair_care",
       "keywords": [
-        "低刺激",
-        "無添加",
-        "ジアミンフリー"
-      ]
-    },
-    {
-      "id": "price_range",
-      "label": "価格帯",
-      "keywords": [
-        "コスパ",
-        "詰め替え",
-        "内容量"
-      ]
+        "髪全体",
+        "全体使い",
+        "使用量",
+        "放置時間"
+      ],
+      "label": "白髪が広がった髪全体をケアする"
     }
   ],
-  "selection": {
-    "comparison_axes_covered": [
-      "texture_scent"
-    ],
-    "brand_count": 6,
-    "price_used_as_constraint_only": true
+  "eyecatch_image": "https://www.sellemy.jp/img/gray-hair-color-treatments-6-picks/gray-hair-color-treatments-6-picks.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "441e4b2eda9d19e96ad401622b26e8c1bef4ebaa063091d0545b199eeb7782a2",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 24054,
+      "listing_identity_citations_repaired": [
+        "p5",
+        "p6"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 1895,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 982,
+      "session_id": "01a21de8-7b49-73b0-a033-556985c5e0aa",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "サイオス カラートリートメント ダークブラウン",
+          "identity_quote": "【サイオス カラートリートメント】ダークブラウン2P+おまけ",
+          "reason": "掲載タイトルで商品を識別できる。評価4.2、レビュー554件という掲載情報があり、人気・定番の切り口で紹介できる。2本組は独立した商品性の根拠には用いていない。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "ルプルプ エッセンス カラートリートメント アッシュブラウン",
+          "identity_quote": "ルプルプ エッセンス カラートリートメント アッシュブラウン 170g",
+          "reason": "掲載タイトルで商品系列を識別できる。評価4.1、レビュー1287件という掲載情報があり、人気・定番の切り口で紹介できる。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "シエロ カラートリートメント リタッチ用",
+          "identity_quote": "シエロカラートリートメントリタッチ用アッシュベージュ",
+          "reason": "掲載タイトルにリタッチ用と明記され、生え際・分け目を扱う切り口に適合する。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "50の恵 頭皮いたわりカラートリートメント",
+          "identity_quote": "50の恵 頭皮いたわりカラートリートメント ナチュラルブラック",
+          "reason": "掲載タイトルで商品を識別できる。選定理由に部分使いの用途が示され、生え際・分け目の切り口で紹介できる。2個セットは独立した商品性の根拠には用いていない。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "［ オーガニック 白髪ケア ］biseno(ビセノ) ヘアカラートリートメント ナチュラルブラック 150g×1 (約1か月分)",
+          "identity_quote": "［ オーガニック 白髪ケア ］biseno(ビセノ) ヘアカラートリートメント ナチュラルブラック 150g×1 (約1か月分)",
+          "reason": "掲載タイトルにbisenoのヘアカラートリートメントと明記され、商品を識別できる。選定理由には髪全体への使用方法が示され、全体ケアの切り口に適合する。検証済みソースの引用文は提示されていないため、identity_quoteは空欄とした。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "綺和美 白髪染め カラートリートメント ブラック ヘアカラートリートメント 白髪用",
+          "identity_quote": "綺和美 白髪染め カラートリートメント ブラック ヘアカラートリートメント 白髪用",
+          "reason": "掲載タイトルに綺和美の白髪用カラートリートメントと明記され、商品を識別できる。選定理由には全体使いの用途が示され、全体ケアの切り口に適合する。検証済みソースの引用文は提示されていないため、identity_quoteは空欄とした。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "掲載タイトルから6商品それぞれのブランドと商品系列を識別でき、白髪用カラートリートメントの企画に適合する。3つの紹介切り口に各2商品を割り当てられ、各商品を個別に紹介できる。選定された商品間に重複を示す肯定的な根拠はない。記事は未提出のため、本文に関する項目は判定対象外とした。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
   },
   "products": [
     {
+      "amazon_title": "【サイオス カラートリートメント】ダークブラウン2P+おまけ〔たった1回で白髪が染まる 簡単時短 180グラム (x 2)",
+      "asin": "B09MLWMKL6",
+      "brand": "",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61lvN8ZApOL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B09MLWMKL6",
+      "provisional": true,
+      "rating": 4.2,
       "ref": "p1",
-      "product_id": "AMZ-B0CVMQNFVR",
-      "asin": "B0CVMQNFVR",
-      "amazon_title": "ブローネ カラートリートメント カカオブラウン 180g",
-      "brand": "花王 ブローネ",
-      "image_url": "https://m.media-amazon.com/images/I/71G1mkZNgzL._AC_SL1500_.jpg",
-      "observed_price": 13446,
-      "discovery_score": 1,
-      "selection_score": 0.65,
-      "matched_comparison_axes": [
-        "texture_scent"
-      ],
-      "search_key": "ｂ．ｒｉｓ＼ビーリス b.ris veil ビーリスベールモイストカラーシャンプー 2",
-      "selected_variant": {
-        "color": "カカオブラウン",
-        "capacity_g": 180,
-        "count": 1
-      }
+      "review_count": 554,
+      "search_key": "ダークブラウン2P+おまけ〔たった1回で白髪が染まる 簡単時短",
+      "selection_reason": "サイオスのダークブラウン2本組。メーカーは、濡れた髪にも乾いた髪にも塗れ、放置時間は5分と案内している。美容室でのカラーの合間に、入浴前かシャンプー後かをその日の都合で選びたい人が手に取りやすい定番候補。[メーカーの商品情報](https://syoss-selfcoloring.jp/product/color-treatment/)",
+      "sources": []
     },
     {
+      "amazon_title": "【シリーズ累計530万本突破】 ルプルプ エッセンス カラートリートメント アッシュブラウン 170g 約1ヵ月分 LPLP",
+      "asin": "B0BP6R55N6",
+      "brand": "",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/616vQ0zrQpL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0BP6R55N6",
+      "provisional": true,
+      "rating": 4.1,
       "ref": "p2",
-      "product_id": "AMZ-B0BB2Q88YN",
-      "asin": "B0BB2Q88YN",
-      "amazon_title": "シエロ カラートリートメント 全体用 ダークブラウン 230g",
-      "brand": "ホーユー シエロ",
-      "image_url": "https://m.media-amazon.com/images/I/51nPkUp1vAL._AC_SL1431_.jpg",
-      "observed_price": 2980,
-      "discovery_score": 1,
-      "selection_score": 0.52,
-      "matched_comparison_axes": [],
-      "search_key": "Gleon 大容量200g ノアリス ヘアカラートリートメント 白髪染め",
-      "selected_variant": {
-        "color": "ダークブラウン",
-        "capacity_g": 230,
-        "count": 1
-      }
+      "review_count": 1287,
+      "search_key": "ルプルプ エッセンス カラートリートメント アッシュブラウン 1",
+      "selection_reason": "ルプルプのエッセンスは、メーカーがシャンプー後の濡れた髪への使用と3分の放置を案内している。アッシュブラウンを選び、普段の入浴でトリートメントをする流れに白髪ケアを組み込みたい人に向く。[メーカーの使用案内](https://www.osharecafe.jp/f/lplp)、[同色の商品情報](https://www.osharecafe.jp/c/gr2926/gr2959/6052959)",
+      "sources": []
     },
     {
+      "amazon_title": "シエロカラートリートメントリタッチ用アッシュベージュ",
+      "asin": "B0HFZR27D8",
+      "brand": "",
+      "discovery_axis_id": "targeted_gray_hair_care",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41J2SaagyBL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0HFZR27D8",
+      "provisional": true,
+      "rating": 4.0,
       "ref": "p3",
-      "product_id": "AMZ-B0H8CM7XHY",
-      "asin": "B0H8CM7XHY",
-      "amazon_title": "パーフェクトワン ヘアネスト ヘアカラートリートメント ナチュラルブラック 25g×5包 手袋・コーム付き",
-      "brand": "新日本製薬 パーフェクトワン",
-      "image_url": "https://m.media-amazon.com/images/I/51mwCOHE0OL._AC_SX679_PIbundle-5,TopRight,0,0_SH20_.jpg",
-      "observed_price": 3300,
-      "discovery_score": 1,
-      "selection_score": 0.52,
-      "matched_comparison_axes": [],
-      "search_key": "パーフェクトワン ヘアネスト ヘアーカラートリートメント 25g×5包 個包装 白",
-      "selected_variant": {
-        "color": "ナチュラルブラック",
-        "capacity_g_per_sachet": 25,
-        "count": 5,
-        "accessories": [
-          "手袋",
-          "コーム"
-        ]
-      }
+      "review_count": 758,
+      "search_key": "シエロカラートリートメントリタッチ用アッシュベージュ",
+      "selection_reason": "シエロのリタッチ用アッシュベージュは、直塗りノズルを生え際・分け目に当てて塗る設計。美容室で染めた後、先に目立ち始めた根元だけを狙いたい人に用途が明確で、メーカーの案内する放置時間は5～10分。[メーカーの商品情報・使い方](https://www.cielo.jp/lineup/treatment/)",
+      "sources": []
     },
     {
+      "amazon_title": "50の恵 頭皮いたわりカラートリートメント ナチュラルブラック 2個セット(白髪染め 酸化染料フリー)+極潤サシェット付",
+      "asin": "B0B464B44Y",
+      "brand": "",
+      "discovery_axis_id": "targeted_gray_hair_care",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81EJAkRWEGL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0B464B44Y",
+      "provisional": true,
+      "rating": 4.0,
       "ref": "p4",
-      "product_id": "AMZ-B0CJT7NBMW",
-      "asin": "B0CJT7NBMW",
-      "amazon_title": "biseno ヘアカラートリートメント ナチュラルブラック 150g 1本",
-      "brand": "biseno",
-      "image_url": "https://m.media-amazon.com/images/I/61Eo2KWHcaL._AC_SL1500_.jpg",
-      "observed_price": 3980,
-      "discovery_score": 1,
-      "selection_score": 0.52,
-      "matched_comparison_axes": [],
-      "search_key": "biseno ［ オーガニック 白髪ケア ］biseno(ビセノ) ヘアカラー",
-      "selected_variant": {
-        "color": "ナチュラルブラック",
-        "capacity_g": 150,
-        "count": 1
-      }
+      "review_count": 192,
+      "search_key": "50の恵 頭皮いたわりカラートリートメント ナチュラルブラック",
+      "selection_reason": "50の恵のナチュラルブラック2個組。メーカーは生え際に直接塗りやすいようノズルを細長くし、部分使いではノズルから塗れると説明している。分け目を変えながら気になる白髪に多めになじませたい、黒系の髪色の人に向く。放置時間の案内は5～10分。[ノズルの説明](https://www.rohto.co.jp/sustainability/society/customer/voc/voice-26/)、[使用方法](https://qa.rohto.com/faqs/6adaf2d2f781f34bb13b4e1b/)",
+      "sources": []
     },
     {
-      "ref": "p5",
-      "product_id": "AMZ-B09X1DSRNF",
-      "asin": "B09X1DSRNF",
-      "amazon_title": "50の恵 頭皮いたわりカラートリートメント ダークブラウン 2個セット・極潤サシェット付き",
-      "brand": "ロート製薬 50の恵",
-      "image_url": "https://m.media-amazon.com/images/I/81v8tJiU8fL._AC_SL1500_.jpg",
-      "observed_price": 3300,
+      "amazon_title": "［ オーガニック 白髪ケア ］biseno(ビセノ) ヘアカラートリートメント ナチュラルブラック 150g×1 (約1か月分)",
+      "asin": "B0CJT7NBMW",
+      "brand": "",
+      "discovery_axis_id": "whole_hair_gray_hair_care",
       "discovery_score": 1,
-      "selection_score": 0.52,
-      "matched_comparison_axes": [],
-      "search_key": "50の恵 頭皮いたわりカラートリートメント ダークブラウン 2個セット(白",
-      "selected_variant": {
-        "color": "ダークブラウン",
-        "capacity_g_per_tube": 150,
-        "count": 2,
-        "accessories": [
-          "極潤サシェット（時期によりおまけ品変更の表示あり）"
+      "image_url": "https://m.media-amazon.com/images/I/61Eo2KWHcaL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0CJT7NBMW",
+      "provisional": true,
+      "rating": 4.0,
+      "ref": "p5",
+      "review_count": 1835,
+      "search_key": "［ オーガニック 白髪ケア ］biseno(ビセノ) ヘアカラー",
+      "selection_reason": "bisenoのナチュラルブラックは、シャンプー後に水気を切り、髪全体になじませて5～10分置く使い方が明示されている。白髪が広い範囲に増え、普段の入浴中に全体をケアしたい人向け。メーカーは、髪全体をキャップなどで包んで20～30分置く方法も案内している。[メーカーの商品情報・使い方](https://biseno.jp/products/treatment/)",
+      "sources": []
+    },
+    {
+      "amazon_title": "綺和美 白髪染め カラートリートメント ブラック ヘアカラートリートメント 白髪用",
+      "asin": "B00KMTQKAI",
+      "brand": "",
+      "discovery_axis_id": "whole_hair_gray_hair_care",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61RWIuyDDOL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B00KMTQKAI",
+      "provisional": true,
+      "rating": 4.0,
+      "ref": "p6",
+      "review_count": 329,
+      "search_key": "綺和美 白髪染め カラートリートメント ブラック ヘアカラートリ",
+      "selection_reason": "綺和美のブラックは、全体使いの1回量をピンポン玉大約3個、放置時間を10～15分と示している。白髪が髪全体に広がり、塗る量を見積もって丁寧に塗りたい人に向く。メーカーは乾いた髪にも、シャンプー後に水気を取った髪にも使えると案内している。[ブランド提供の商品情報](https://www.cosme.net/products/10080755/)、[メーカーFAQ](https://jp-shop.kiwabi.com/pages/faq)",
+      "sources": []
+    }
+  ],
+  "selection": {
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B09MLWMKL6",
+            "reason": "サイオスのダークブラウン2本組。メーカーは、濡れた髪にも乾いた髪にも塗れ、放置時間は5分と案内している。美容室でのカラーの合間に、入浴前かシャンプー後かをその日の都合で選びたい人が手に取りやすい定番候補。[メーカーの商品情報](https://syoss-selfcoloring.jp/product/color-treatment/)"
+          },
+          {
+            "asin": "B0BP6R55N6",
+            "reason": "ルプルプのエッセンスは、メーカーがシャンプー後の濡れた髪への使用と3分の放置を案内している。アッシュブラウンを選び、普段の入浴でトリートメントをする流れに白髪ケアを組み込みたい人に向く。[メーカーの使用案内](https://www.osharecafe.jp/f/lplp)、[同色の商品情報](https://www.osharecafe.jp/c/gr2926/gr2959/6052959)"
+          }
+        ]
+      },
+      {
+        "axis_id": "targeted_gray_hair_care",
+        "products": [
+          {
+            "asin": "B0HFZR27D8",
+            "reason": "シエロのリタッチ用アッシュベージュは、直塗りノズルを生え際・分け目に当てて塗る設計。美容室で染めた後、先に目立ち始めた根元だけを狙いたい人に用途が明確で、メーカーの案内する放置時間は5～10分。[メーカーの商品情報・使い方](https://www.cielo.jp/lineup/treatment/)"
+          },
+          {
+            "asin": "B0B464B44Y",
+            "reason": "50の恵のナチュラルブラック2個組。メーカーは生え際に直接塗りやすいようノズルを細長くし、部分使いではノズルから塗れると説明している。分け目を変えながら気になる白髪に多めになじませたい、黒系の髪色の人に向く。放置時間の案内は5～10分。[ノズルの説明](https://www.rohto.co.jp/sustainability/society/customer/voc/voice-26/)、[使用方法](https://qa.rohto.com/faqs/6adaf2d2f781f34bb13b4e1b/)"
+          }
+        ]
+      },
+      {
+        "axis_id": "whole_hair_gray_hair_care",
+        "products": [
+          {
+            "asin": "B0CJT7NBMW",
+            "reason": "bisenoのナチュラルブラックは、シャンプー後に水気を切り、髪全体になじませて5～10分置く使い方が明示されている。白髪が広い範囲に増え、普段の入浴中に全体をケアしたい人向け。メーカーは、髪全体をキャップなどで包んで20～30分置く方法も案内している。[メーカーの商品情報・使い方](https://biseno.jp/products/treatment/)"
+          },
+          {
+            "asin": "B00KMTQKAI",
+            "reason": "綺和美のブラックは、全体使いの1回量をピンポン玉大約3個、放置時間を10～15分と示している。白髪が髪全体に広がり、塗る量を見積もって丁寧に塗りたい人に向く。メーカーは乾いた髪にも、シャンプー後に水気を取った髪にも使えると案内している。[ブランド提供の商品情報](https://www.cosme.net/products/10080755/)、[メーカーFAQ](https://jp-shop.kiwabi.com/pages/faq)"
+          }
         ]
       }
-    },
-    {
-      "ref": "p6",
-      "product_id": "AMZ-B0CHLTY67B",
-      "asin": "B0CHLTY67B",
-      "amazon_title": "サイオス カラートリートメント ダークブラウン 180g おまけ付き",
-      "brand": "ルプルプ(LPLP)のストアを表示",
-      "image_url": "https://m.media-amazon.com/images/I/61jQK2k2NNL._AC_SL1500_.jpg",
-      "observed_price": 3630,
-      "discovery_score": 1,
-      "selection_score": 0.52,
-      "matched_comparison_axes": [],
-      "search_key": "ルプルプ(LPLP) ルプルプ エッセンス カラートリートメント エボニーブラック 1",
-      "selected_variant": {
-        "color": "ダークブラウン",
-        "capacity_g": 180,
-        "count": 1,
-        "bonus": "ヘアブラシ・コーム・ケープのいずれか1点、選択不可"
+    ],
+    "brand_count": 0,
+    "candidate_count": 17,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [
+      {
+        "asin": "B09MLWMKL6",
+        "check_items": {
+          "color_design_only": "UNKNOWN",
+          "function_structure_difference": "UNKNOWN",
+          "independent_comparison_value": "UNKNOWN",
+          "manufacturer_brand_relation": "UNKNOWN",
+          "sales_packaging_only": "UNKNOWN",
+          "same_product_body": "FAIL",
+          "series_generation_difference": "UNKNOWN",
+          "size_capacity_difference": "UNKNOWN"
+        },
+        "duplicate_of_asin": "B09MLWMKL6",
+        "reason": "same_asin"
+      },
+      {
+        "asin": "B0BP6R55N6",
+        "check_items": {
+          "color_design_only": "UNKNOWN",
+          "function_structure_difference": "UNKNOWN",
+          "independent_comparison_value": "UNKNOWN",
+          "manufacturer_brand_relation": "UNKNOWN",
+          "sales_packaging_only": "UNKNOWN",
+          "same_product_body": "FAIL",
+          "series_generation_difference": "UNKNOWN",
+          "size_capacity_difference": "UNKNOWN"
+        },
+        "duplicate_of_asin": "B0BP6R55N6",
+        "reason": "same_asin"
+      },
+      {
+        "asin": "B0HFZR27D8",
+        "check_items": {
+          "color_design_only": "UNKNOWN",
+          "function_structure_difference": "UNKNOWN",
+          "independent_comparison_value": "UNKNOWN",
+          "manufacturer_brand_relation": "UNKNOWN",
+          "sales_packaging_only": "UNKNOWN",
+          "same_product_body": "FAIL",
+          "series_generation_difference": "UNKNOWN",
+          "size_capacity_difference": "UNKNOWN"
+        },
+        "duplicate_of_asin": "B0HFZR27D8",
+        "reason": "same_asin"
       }
-    }
-  ]
+    ],
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": [
+      "B09MLWMKL6",
+      "B0BP6R55N6",
+      "B0HFZR27D8"
+    ],
+    "targeted_replacement": true
+  },
+  "slug": "gray-hair-color-treatments-6-picks"
 }

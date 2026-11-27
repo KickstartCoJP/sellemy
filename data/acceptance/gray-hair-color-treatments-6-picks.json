@@ -1,0 +1,96 @@
+{
+  "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+  "evidence_sha256": "441e4b2eda9d19e96ad401622b26e8c1bef4ebaa063091d0545b199eeb7782a2",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 11520,
+    "input_tokens": 24054,
+    "listing_identity_citations_repaired": [
+      "p5",
+      "p6"
+    ],
+    "member_binding_revision": 4,
+    "output_tokens": 1895,
+    "reasoning_effort": "medium",
+    "reasoning_output_tokens": 982,
+    "reused_product_qa": true,
+    "session_id": "01a21de8-7b49-73b0-a033-556985c5e0aa",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "c6f9f96e6674b485200037dad0ea0c6ffb87da32bd37156b18db3cf4b9716b4d",
+  "review": {
+    "buying_guidance": false,
+    "claims_grounded": false,
+    "complete_comparison": false,
+    "distinct_products": true,
+    "duplicate_pair_checks": [],
+    "editorial_voice_appropriate": false,
+    "internal_qa_leak_absent": false,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "サイオス カラートリートメント ダークブラウン",
+        "identity_quote": "【サイオス カラートリートメント】ダークブラウン2P+おまけ",
+        "reason": "掲載タイトルで商品を識別できる。評価4.2、レビュー554件という掲載情報があり、人気・定番の切り口で紹介できる。2本組は独立した商品性の根拠には用いていない。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "ルプルプ エッセンス カラートリートメント アッシュブラウン",
+        "identity_quote": "ルプルプ エッセンス カラートリートメント アッシュブラウン 170g",
+        "reason": "掲載タイトルで商品系列を識別できる。評価4.1、レビュー1287件という掲載情報があり、人気・定番の切り口で紹介できる。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "シエロ カラートリートメント リタッチ用",
+        "identity_quote": "シエロカラートリートメントリタッチ用アッシュベージュ",
+        "reason": "掲載タイトルにリタッチ用と明記され、生え際・分け目を扱う切り口に適合する。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "50の恵 頭皮いたわりカラートリートメント",
+        "identity_quote": "50の恵 頭皮いたわりカラートリートメント ナチュラルブラック",
+        "reason": "掲載タイトルで商品を識別できる。選定理由に部分使いの用途が示され、生え際・分け目の切り口で紹介できる。2個セットは独立した商品性の根拠には用いていない。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "［ オーガニック 白髪ケア ］biseno(ビセノ) ヘアカラートリートメント ナチュラルブラック 150g×1 (約1か月分)",
+        "identity_quote": "［ オーガニック 白髪ケア ］biseno(ビセノ) ヘアカラートリートメント ナチュラルブラック 150g×1 (約1か月分)",
+        "reason": "掲載タイトルにbisenoのヘアカラートリートメントと明記され、商品を識別できる。選定理由には髪全体への使用方法が示され、全体ケアの切り口に適合する。検証済みソースの引用文は提示されていないため、identity_quoteは空欄とした。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "綺和美 白髪染め カラートリートメント ブラック ヘアカラートリートメント 白髪用",
+        "identity_quote": "綺和美 白髪染め カラートリートメント ブラック ヘアカラートリートメント 白髪用",
+        "reason": "掲載タイトルに綺和美の白髪用カラートリートメントと明記され、商品を識別できる。選定理由には全体使いの用途が示され、全体ケアの切り口に適合する。検証済みソースの引用文は提示されていないため、identity_quoteは空欄とした。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reader_decision_outsourcing_absent": false,
+    "reason": "掲載タイトルから6商品それぞれのブランドと商品系列を識別でき、白髪用カラートリートメントの企画に適合する。3つの紹介切り口に各2商品を割り当てられ、各商品を個別に紹介できる。選定された商品間に重複を示す肯定的な根拠はない。記事は未提出のため、本文に関する項目は判定対象外とした。",
+    "recommendation_conclusion": false,
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}
