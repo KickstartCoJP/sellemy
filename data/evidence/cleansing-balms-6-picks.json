@@ -1,172 +1,353 @@
 {
-  "slug": "cleansing-balms-6-picks",
-  "category": "beauty",
-  "canonical_url": "https://www.sellemy.jp/article/beauty/cleansing-balms-6-picks.html",
-  "eyecatch_image": "https://www.sellemy.jp/img/cleansing-balms-6-picks/cleansing-balms-6-picks.png",
   "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/cleansing-balms-6-picks.html",
+  "category": "beauty",
   "comparison_axes": [
     {
-      "id": "cleansing_power",
-      "label": "洗浄力・メイク落ち",
+      "id": "popular",
       "keywords": [
-        "毛穴汚れ",
-        "メイク落ち",
-        "ダブル洗顔不要"
+        "人気"
+      ],
+      "label": "人気・定番の基準"
+    },
+    {
+      "id": "single_step_cleansing",
+      "keywords": [
+        "ダブル洗顔不要",
+        "洗顔不要",
+        "使い方"
+      ],
+      "label": "メイク落とし後の洗顔を省きたい"
+    },
+    {
+      "id": "fragrance_free",
+      "keywords": [
+        "無香料",
+        "香料不使用",
+        "香り"
+      ],
+      "label": "香りを抑えて使いたい"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/cleansing-balms-6-picks/cleansing-balms-6-picks.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "ca5894e67acab719310374fe98faa00fc5ecc659e2c89bde0026423823aeae19",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 26061,
+      "listing_identity_citations_repaired": [
+        "p2",
+        "p3",
+        "p4",
+        "p5"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 1666,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 694,
+      "session_id": "01a21a3e-4f6c-7e92-9f09-c9f39bed4ba2",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "PERFECT ONE FOCUS スムースクレンジングバーム",
+          "identity_quote": "Perfect One Focus Perfect One Focus Smooth Cleansing Balm, 2.6 oz (75 g) (Renewed) Yellow a (Single Item))",
+          "reason": "取得済みの販売ページの題名で商品を識別できる。提示された評価とレビュー件数は「人気・定番」の紹介材料になる。シリーズ販売数などは、この取得済み本文では裏付けられていない。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "kikimate クレンジングバーム 毛穴 ビタミンC【しっとり高保湿】90g ウォータープルーフ まつエクOK メイク落とし スパチュラ付き",
+          "identity_quote": "kikimate クレンジングバーム 毛穴 ビタミンC【しっとり高保湿】90g ウォータープルーフ まつエクOK メイク落とし スパチュラ付き",
+          "reason": "取得済みの販売ページの題名で商品を識別できる。提示された評価とレビュー件数に加え、販売ページには保湿成分の記載がある。出荷数は取得済み本文では裏付けられていない。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "single_step_cleansing",
+              "quote": "double cleansing is not necessary!"
+            }
+          ],
+          "identity_key": "[バニラコ]BANILACO クリーンイットゼロ クレンジングバーム (180ml, オリジナル大容量)",
+          "identity_quote": "[バニラコ]BANILACO クリーンイットゼロ クレンジングバーム (180ml, オリジナル大容量)",
+          "reason": "取得済みの販売ページで商品を識別でき、ダブル洗顔不要との記載が担当する切り口に合う。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "ちふれ（CHIFURE）クレンジングバーム 90g メイク落とし W洗顔不要 毛穴ケア くすみケア",
+          "identity_quote": "ちふれ（CHIFURE）クレンジングバーム 90g メイク落とし W洗顔不要 毛穴ケア くすみケア",
+          "reason": "提示された商品掲載名で商品を識別でき、同じ掲載名の「W洗顔不要」が担当する切り口に合う。取得済みの出典本文はないため、詳細な使用方法や成分は未確認。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "ink.(インク）クレンジングバーム 単品 (クレイ（無香料）)",
+          "identity_quote": "ink.(インク）クレンジングバーム 単品 (クレイ（無香料）)",
+          "reason": "提示された商品掲載名でクレイの無香料タイプを識別でき、香りを抑えたい読者向けの切り口に合う。取得済みの出典本文はないため、成分などの詳細は未確認。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "fragrance_free",
+              "quote": "Unscented Vegan (125ml)"
+            }
+          ],
+          "identity_key": "grace & stella クレンジングバーム",
+          "identity_quote": "Grace & Stella Cleansing Balm Pore Cleansing Makeup Remover Balm Makeup Cleansing Balm Face Remover Unscented Vegan (125ml)",
+          "reason": "取得済みの販売ページの題名で商品を識別でき、無香料との表示が担当する切り口に合う。香料と精油を使っていないという詳細は、取得済み本文だけでは裏付けられない。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "商品名と、取得済みの販売ページがある商品ではその記載から、6商品をそれぞれクレンジングバームとして識別できる。既存の3つの紹介切り口に各2商品が合い、同一商品の重複や企画対象外の商品を示す証拠はない。p4とp5は取得済みの出典本文がないため、商品名を超える仕様は未確認として扱う。記事は未提出。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
+  "products": [
+    {
+      "amazon_title": "パーフェクトワンフォーカス PERFECT ONE FOCUS スムースクレンジングバーム 75g (【リニューアル】黄色a (単品))",
+      "asin": "B0GCDNCH21",
+      "brand": "PERFECT ONE FOCUS",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/6146UPInJlL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0GCDNCH21",
+      "provisional": false,
+      "rating": 4.5,
+      "ref": "p1",
+      "review_count": 429,
+      "search_key": "PERFECT ONE FOCUS パーフェクトワンフォーカス PERFECT ONE FOCU",
+      "selection_reason": "メーカーによると、シリーズ累計販売数は500万個を突破。2026年リニューアル品は角栓汚れに着目したオイルと3種の角質ケア成分を採用し、体温でとろけるバームをスパチュラなしで使える。定番を入り口に、夜のメイク落としと毛穴汚れのケアを一度に済ませたい人に向く。爽やかなシトラスの香りがある。出典：https://corporate.shinnihonseiyaku.co.jp/release/archives/10919",
+      "sources": [
+        {
+          "brand": "PERFECT ONE FOCUS",
+          "excerpt": "Perfect One Focus Perfect One Focus Smooth Cleansing Balm, 2.6 oz (75 g) (Renewed) Yellow a (Single Item))\nAbout this item\nTrending on SNS for its \"clean pores\" effect, this cleansing balm! Eliminates stubborn blackheads*1 and unclogs pores! Introducing a set of \"serious pore care\" cleansing balms blended with charcoal*2, clay*3, and gold Vitamin C*4! The yellow smooth cleansing balm contains ingredients such as 5 types of vitamin C derivatives*, 6 types of AHA*, and 7 types of papain* enzymes! The Smooth Cleansing Balm Black further includes this ingredient as is, with added preferred ingredients! A 6-in-1 product that serves as makeup remover, face wash, pore care, exfoliating care, moisturizing, and massage - *1: Dirt - *2: Absorbent - *3: Peat (skin conditioning agent) - *4: Ascorbic acid, colloidal gold, glutathione (skin conditioning agent) - *5: Myristic 3-glyceryl ascorbate (moisturizing ingredient) - *6: Lime juice, orange juice, lemon juice, apple extract, grapefruit extract, jujube extract, hawthorn extract (moisturizing ingredients) - *7: Skin conditioning agent › See more product details\nBrand PERFECT ONE FOCUS\nScent Orange\nSkin Type All\nItem Package Quantity 1\nItem Form Balm\nUnit Count 1.00 Count\nVisit the PERFECT ONE FOCUS Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Perfect One Focus Perfect One Focus Smooth Cleansing Balm, 2.6 oz (75 g) (Renewed) Yellow a (Single Item))",
+          "url": "https://www.amazon.co.jp/dp/B0GCDNCH21?th=1",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "skin_feel",
-      "label": "使用感・肌へのやさしさ",
-      "keywords": [
-        "低刺激",
-        "うるおい",
-        "乾燥しない"
+      "amazon_title": "kikimate クレンジングバーム 毛穴 ビタミンC【しっとり高保湿】90g ウォータープルーフ まつエクOK メイク落とし スパチュラ付き",
+      "asin": "B0CWRY9XR2",
+      "brand": "kikimate",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61k5vlAXNFL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0CWRY9XR2",
+      "provisional": false,
+      "rating": 4.4,
+      "ref": "p2",
+      "review_count": 579,
+      "search_key": "kikimate クレンジングバーム 毛穴 ビタミンC 90g ウォータープルーフ",
+      "selection_reason": "メーカーは本商品の出荷3万個突破を公表。5種のセラミド、4種のヒアルロン酸などの保湿成分を配合し、乳化とダブル洗顔を不要としている。メイクを落とした後の乾燥が気になり、すすぎまで手早く済ませたい人が、人気商品の中から保湿設計に着目して選べる一品。香料不使用だがシトラスの香りがある。出典：https://extage.jp/brand/kiki-cleansing-balm-001/",
+      "sources": [
+        {
+          "brand": "kikimate",
+          "excerpt": "kikimate Cleansing Balm, Pores, Vitamin C (Moisture, High Hydration), 3.2 oz (90 g), Niacinamide Clay, Waterproof, Eyelash Extensions OK, No Need for Double Face Washing, Makeup Removal, Spatula\nAbout this item\n✅【Soft, highly moisturizing balm to effortlessly remove makeup】The balm, which melts smoothly with body temperature, effectively removes stubborn makeup and pore dirt A moisturizing cleansing balm imbued with a whopping 71% worth of beauty ingredients Formulated with 5 types of ceramides *, 4 types of hyaluronic acid *, and 2 types of collagen With every wash, your skin is richly moisturized (※Includes water) (※Contains moisturizing ingredients)\n✅【9 types of vitamins + plant extracts】Contains 9 vitamins including niacinamide and panthenol + CICA, chameleon plant extract, and tea tree. A combination of ingredients that will please your skin Delivers firm and clear skin while taking care of your pores Kikimate is recommended for all skin types including dry, sensitive, combination and oily skin If you have tried using cleansing oils, cleansing waters, cleansing sheets, cleansing gels, and wipe-off makeup removers without satisfying results, try using a balm type that is gentle on your skin and full of moisturizing ingredients\nPore-less and Clear Skin: Formulated with 2 types of ultra-fine clay particles that are smaller than the pores and enzymes Thoroughly absorbs, breaks down, and removes dirt, dark stains, blackheads, and roughness deep within the pores （※Due to dirt removal）（※Due to dirt and old skin）（※Adsorbent agent ※Cleaning ingredient ※Sea silt・Kaolin ※Papain）\n✅Additive-free formula that cares for your skin: (Petroleum surfactants, synthetic colors, parabens, fragrances, alcohol, mineral oil, UV absorber free); Capacity: 90g (with spatula) Made in Japan; Fragrance: Refreshing citrus scent\n✅【Easily removes without emulsification, no need for double cleansing, eyelash extensions OK】 ① Scoop a cherry-sized amount with a spatula Adjust the amount you use according to the intensity of your makeup. 2.) Apply it to your makeup as you gently massage your skin with dry hands ③ After blending in the makeup, gently rinse off with lukewarm water (No need for a separate face wash) 4.) When done, apply your favorite skin care solutions. (Lotions, beauty lotions, emulsifiers, packs, etc.) › See more product details\nBrand kikimate\nItem Weight 90 Grams\nScent Citrus\nAge Range (Description) Adult\nSkin Type Combination, Dry, Oily, Sensitive\nSpecial Feature Dirt Removal\nItem Form Balm\nNumber of Items 1\nUnit Count 1 Count\nRecommended Uses For Product Face See more\nVisit the kikimate Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "kikimate Cleansing Balm, Pores, Vitamin C (Moisture, High Hydration), 3.2 oz (90 g), Niacinamide Clay, Waterproof, Eyelash Extensions OK, No Need for Double Face Washing, Makeup Removal, Spatula",
+          "url": "https://www.amazon.co.jp/dp/B0CWRY9XR2?th=1",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "texture_scent",
-      "label": "香り・使い心地",
-      "keywords": [
-        "香り",
-        "とろけるテクスチャー"
+      "amazon_title": "[バニラコ]BANILACO クリーンイットゼロ クレンジングバーム (180ml, オリジナル大容量)",
+      "asin": "B0DCZB78WZ",
+      "brand": "BANILA CO",
+      "discovery_axis_id": "single_step_cleansing",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/418xnOPU1VL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0DCZB78WZ",
+      "provisional": false,
+      "rating": 4.5,
+      "ref": "p3",
+      "review_count": 411,
+      "search_key": "BANILA CO BANILACO クリーンイットゼロ クレンジングバーム (18",
+      "selection_reason": "180mlの大容量バーム。商品説明は、体温で溶けるシャーベット状でウォータープルーフメイクにも対応し、ダブル洗顔不要と明記する。しっかりメイクの日も、帰宅後に洗顔料を重ねる工程を省いて使い続けたい人に向く。出典：https://www.cosme.net/variations/1054301/",
+      "sources": [
+        {
+          "brand": "BANILA CO",
+          "excerpt": "BANILA CO CLEAN IT ZERO Cleansing Balm (180ml, Original Large Capacity)\nAbout this item\n✅ \"BANILA CO No.1 Cleansing Balm\" By persistently researching and adhering to customer demands, we have achieved a cumulative sales result of over 80 million units\n✅The low-irritation sherbet-type texture melts with body heat, penetrates deep into pores, lifts makeup dirt, and provides a clean cleanse Removes mascara and even waterproof makeup quickly, maintaining clean skin without any makeup residue, so there is no need to worry about skin troubles\n✅With the excellent cleansing power of BANILA CO's unique and exclusive \"Zero Balance Technology,\" double cleansing is not necessary! No oily residue after washing, leaving skin feeling moisturized and comfortable without stickiness or tightness\n✅Formulated with plant-derived ingredients such as acerola extract, rooibos extract, Sanchi leaves, and angelica root extract, this all-in-one cleansing product provides moisture and cares for skin firmness Not just cleansing, we focused on good ingredients to ensure healthy skin function › See more product details\nBrand BANILA CO\nItem Weight 180 Grams\nItem dimensions L x W x H 9 x 9 x 9 cm\nScent Original High Capacity\nAge Range (Description) Adult\nSkin Type All\nSpecial Feature Dirt Removal, Pore Care\nItem Form Balm\nMaterial Feature Hypoallergenic, Vegan\nNumber of Items 1 See more\nVisit the BANILA CO Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "BANILA CO CLEAN IT ZERO Cleansing Balm (180ml, Original Large Capacity)",
+          "url": "https://www.amazon.co.jp/dp/B0DCZB78WZ?th=1",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "price_range",
-      "label": "価格帯・コスパ",
-      "keywords": [
-        "プチプラ",
-        "デパコス",
-        "容量"
+      "amazon_title": "ちふれ（CHIFURE）クレンジングバーム 90g メイク落とし W洗顔不要 毛穴ケア くすみケア",
+      "asin": "B0CVQFZQCH",
+      "brand": "",
+      "discovery_axis_id": "single_step_cleansing",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61uDP2TEr+L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0CVQFZQCH",
+      "provisional": true,
+      "rating": 4.0,
+      "ref": "p4",
+      "review_count": 116,
+      "search_key": "ちふれ（CHIFURE）クレンジングバーム 90g メイク落とし",
+      "selection_reason": "ちふれ公式の使用方法は、乾いた手でメイクになじませ、水かぬるま湯で流した後の洗顔は不要としている。90gのスパチュラ付きで、メイク落としと洗顔に加え、汚れを落とす毛穴・くすみケアもうたう。夜の洗顔を一工程にまとめつつ、適量をすくって使いたい人に合う。無香料表示だがレモングラスとゼラニウム由来のほのかな香りがある。出典：https://www.chifure.co.jp/products/cleansing/1888",
+      "sources": []
+    },
+    {
+      "amazon_title": "ink.(インク）クレンジングバーム 単品 (クレイ（無香料）)",
+      "asin": "B08X4L1KLZ",
+      "brand": "",
+      "discovery_axis_id": "fragrance_free",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/21HYM-ZcFCL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B08X4L1KLZ",
+      "provisional": true,
+      "rating": 4.2,
+      "ref": "p5",
+      "review_count": 9298,
+      "search_key": "ink.(インク）クレンジングバーム 単品 (クレイ（無香料）)",
+      "selection_reason": "メーカー直営店はクレイ配合の90g単品を無香料と明記。国産クレイと3種のヒト型セラミドを配合し、使用方法では少量の水で汚れを浮かせてから流すと案内する。香りを加えた製品を避けながら、小鼻などの毛穴汚れも意識して選びたい人に向く。出典：https://item.rakuten.co.jp/129-ink/ink90/",
+      "sources": []
+    },
+    {
+      "amazon_title": "Grace & Stellaクレンジングバーム 毛穴 クレンジング メイク落としバーム メイククレンジングバーム 洗顔 メイク落とし 無香料 ヴィーガン (125ml)",
+      "asin": "B0711QZ9CJ",
+      "brand": "grace & stella",
+      "discovery_axis_id": "fragrance_free",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71m28Z5OJ3L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0711QZ9CJ",
+      "provisional": false,
+      "rating": 4.2,
+      "ref": "p6",
+      "review_count": 2818,
+      "search_key": "grace & stella クレンジングバーム 毛穴 クレンジング メイク落としバーム メイ",
+      "selection_reason": "メーカーは香料と精油の両方を使っていないと明記。合成ミツロウによるヴィーガン処方で、乾いた肌になじませた後、水で乳化してメイクや日焼け止めを落とす設計。精油の香りも避けたい人や、日焼け止めを使った日の夜に向く。メーカーは仕上げのダブル洗顔を推奨している。出典：https://www.graceandstella.com/collections/halloween-finds/products/cleansing-balm",
+      "sources": [
+        {
+          "brand": "grace & stella",
+          "excerpt": "Grace & Stella Cleansing Balm Pore Cleansing Makeup Remover Balm Makeup Cleansing Balm Face Remover Unscented Vegan (125ml)\nAbout this item\nEnjoy makeup removal: Easily dissolve stubborn makeup, mascara, blush, longwear foundation, lipstick, oil, and dirt. It is not too scrubby, so it is comfortable and clean. Treat your skin with this skin-friendly and effective makeup remover balm cleanser!\nSay goodbye to old makeup: This balm melts makeup easily to clear your makeup. First, it is solid (solid), but it melts with the heat of your skin and emulsifies with water for makeup cleansing\nUnique formula: vegan, paraben and sulphate free with gentle and clean ingredients. No more eye bleeding or pulling skin! Comes with a spatula for easy clean application\nTHOUSANDS LOVED: As seen at Fab Fit Fun and showed by many influencers. Our facial cleansing balms are the perfect gift for women who enjoy self-care, pampering and \"want to relieve fatigue of the day\" without harming their skin\n30 DAY WARRANTY:High quality, vegan and pesticide-free skincare will make you \"own time\" the best time. If you are 100% satisfied, please feel free to contact us › See more product details\nBrand grace & stella\nItem Weight 3.6 Ounces\nItem dimensions L x W x H 7 x 7 x 6 cm\nAge Range (Description) Adult\nSkin Type All\nItem Package Quantity 1\nSpecial Feature Dirt Removal\nItem Form Cream\nNumber of Items 1\nUnit Count 1 Count See more\nBrand: grace & stella",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Grace & Stella Cleansing Balm Pore Cleansing Makeup Remover Balm Makeup Cleansing Balm Face Remover Unscented Vegan (125ml)",
+          "url": "https://www.amazon.co.jp/dp/B0711QZ9CJ",
+          "verified": true
+        }
       ]
     }
   ],
   "selection": {
-    "comparison_axes_covered": [
-      "cleansing_power",
-      "skin_feel",
-      "texture_scent"
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B0GCDNCH21",
+            "reason": "メーカーによると、シリーズ累計販売数は500万個を突破。2026年リニューアル品は角栓汚れに着目したオイルと3種の角質ケア成分を採用し、体温でとろけるバームをスパチュラなしで使える。定番を入り口に、夜のメイク落としと毛穴汚れのケアを一度に済ませたい人に向く。爽やかなシトラスの香りがある。出典：https://corporate.shinnihonseiyaku.co.jp/release/archives/10919"
+          },
+          {
+            "asin": "B0CWRY9XR2",
+            "reason": "メーカーは本商品の出荷3万個突破を公表。5種のセラミド、4種のヒアルロン酸などの保湿成分を配合し、乳化とダブル洗顔を不要としている。メイクを落とした後の乾燥が気になり、すすぎまで手早く済ませたい人が、人気商品の中から保湿設計に着目して選べる一品。香料不使用だがシトラスの香りがある。出典：https://extage.jp/brand/kiki-cleansing-balm-001/"
+          }
+        ]
+      },
+      {
+        "axis_id": "single_step_cleansing",
+        "products": [
+          {
+            "asin": "B0DCZB78WZ",
+            "reason": "180mlの大容量バーム。商品説明は、体温で溶けるシャーベット状でウォータープルーフメイクにも対応し、ダブル洗顔不要と明記する。しっかりメイクの日も、帰宅後に洗顔料を重ねる工程を省いて使い続けたい人に向く。出典：https://www.cosme.net/variations/1054301/"
+          },
+          {
+            "asin": "B0CVQFZQCH",
+            "reason": "ちふれ公式の使用方法は、乾いた手でメイクになじませ、水かぬるま湯で流した後の洗顔は不要としている。90gのスパチュラ付きで、メイク落としと洗顔に加え、汚れを落とす毛穴・くすみケアもうたう。夜の洗顔を一工程にまとめつつ、適量をすくって使いたい人に合う。無香料表示だがレモングラスとゼラニウム由来のほのかな香りがある。出典：https://www.chifure.co.jp/products/cleansing/1888"
+          }
+        ]
+      },
+      {
+        "axis_id": "fragrance_free",
+        "products": [
+          {
+            "asin": "B08X4L1KLZ",
+            "reason": "メーカー直営店はクレイ配合の90g単品を無香料と明記。国産クレイと3種のヒト型セラミドを配合し、使用方法では少量の水で汚れを浮かせてから流すと案内する。香りを加えた製品を避けながら、小鼻などの毛穴汚れも意識して選びたい人に向く。出典：https://item.rakuten.co.jp/129-ink/ink90/"
+          },
+          {
+            "asin": "B0711QZ9CJ",
+            "reason": "メーカーは香料と精油の両方を使っていないと明記。合成ミツロウによるヴィーガン処方で、乾いた肌になじませた後、水で乳化してメイクや日焼け止めを落とす設計。精油の香りも避けたい人や、日焼け止めを使った日の夜に向く。メーカーは仕上げのダブル洗顔を推奨している。出典：https://www.graceandstella.com/collections/halloween-finds/products/cleansing-balm"
+          }
+        ]
+      }
     ],
-    "brand_count": 6,
-    "price_used_as_constraint_only": true
+    "brand_count": 4,
+    "candidate_count": 30,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [
+      {
+        "asin": "B0GCDNCH21",
+        "check_items": {
+          "color_design_only": "UNKNOWN",
+          "function_structure_difference": "UNKNOWN",
+          "independent_comparison_value": "UNKNOWN",
+          "manufacturer_brand_relation": "UNKNOWN",
+          "sales_packaging_only": "UNKNOWN",
+          "same_product_body": "FAIL",
+          "series_generation_difference": "UNKNOWN",
+          "size_capacity_difference": "UNKNOWN"
+        },
+        "duplicate_of_asin": "B0GCDNCH21",
+        "reason": "same_asin"
+      }
+    ],
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": [
+      "B0GCDNCH21"
+    ],
+    "targeted_replacement": true
   },
-  "products": [
-    {
-      "ref": "p1",
-      "product_id": "AMZ-B0DYDK9HPF",
-      "asin": "B0DYDK9HPF",
-      "amazon_title": "【乾燥小じわ・ハリケア】 DUO ザ クレンジングバーム 66g クレンジング メイク落とし ローズの香り",
-      "brand": "DUO",
-      "image_url": "https://m.media-amazon.com/images/I/61LWryzMRdL._AC_SL1043_.jpg",
-      "observed_price": 1377,
-      "discovery_score": 1,
-      "selection_score": 0.75,
-      "matched_comparison_axes": [
-        "cleansing_power"
-      ],
-      "search_key": "medivita シルキークレンジングバーム ブラック 黒炭配合 毛穴汚れ・角栓ケ",
-      "selected_variant": {
-        "net_content": "66g",
-        "scent": "rose",
-        "pack_count": 1,
-        "container": "original balm jar"
-      }
-    },
-    {
-      "ref": "p2",
-      "product_id": "AMZ-B0GCDNCH21",
-      "asin": "B0GCDNCH21",
-      "amazon_title": "パーフェクトワンフォーカス PERFECT ONE FOCUS スムースクレンジングバーム 75g (【リニューアル】黄色a (単品))",
-      "brand": "パーフェクトワン フォーカス",
-      "image_url": "https://m.media-amazon.com/images/I/6146UPInJlL._AC_SL1200_.jpg",
-      "observed_price": 2980,
-      "discovery_score": 1,
-      "selection_score": 0.75,
-      "matched_comparison_axes": [
-        "skin_feel"
-      ],
-      "search_key": "銀座ステファニー化粧品 BIVABOO ミラージュ クレンジングバーム +ピーリング/メ",
-      "selected_variant": {
-        "net_content": "75g",
-        "selected_option": "renewed yellow a; single jar",
-        "scent": "orange and bergamot essential oils (current body manufacturer evidence)",
-        "pack_count": 1
-      }
-    },
-    {
-      "ref": "p3",
-      "product_id": "AMZ-B07D5C86RX",
-      "asin": "B07D5C86RX",
-      "amazon_title": "Clinique(クリニーク)テイク ザ デイ オフ クレンジング バーム 125mL | メイク落とし 化粧落とし",
-      "brand": "クリニーク",
-      "image_url": "https://m.media-amazon.com/images/I/619Iok4kpXL._AC_SL1500_.jpg",
-      "observed_price": 2970,
-      "discovery_score": 1,
-      "selection_score": 0.75,
-      "matched_comparison_axes": [
-        "texture_scent"
-      ],
-      "search_key": "DUO（デュオ） DUO ザ クレンジングバーム 66g クレンジング メイク落と",
-      "selected_variant": {
-        "net_content": "125mL",
-        "selected_option": "regular type, not charcoal",
-        "fragrance": "no added fragrance per existing primary evidence",
-        "pack_count": 1
-      }
-    },
-    {
-      "ref": "p4",
-      "product_id": "AMZ-B07B2PZZWX",
-      "asin": "B07B2PZZWX",
-      "amazon_title": "ink.(インク）クレンジングバーム 単品 (無香料)",
-      "brand": "ink.",
-      "image_url": "https://m.media-amazon.com/images/I/31oBH1pT2hL._AC_SY300_SX300_QL70_ML2_.jpg",
-      "observed_price": 2970,
-      "discovery_score": 1,
-      "selection_score": 0.57,
-      "matched_comparison_axes": [],
-      "search_key": "PERFECT ONE FOCUS パーフェクトワンフォーカス 75g スムースクレンジングバー",
-      "selected_variant": {
-        "net_content": "90g",
-        "scent": "unscented, normal type",
-        "pack_count": 1
-      }
-    },
-    {
-      "ref": "p5",
-      "product_id": "AMZ-B0GP8WGTL8",
-      "asin": "B0GP8WGTL8",
-      "amazon_title": "BIVABOO ミラージュ クレンジングバーム +ピーリング/メイク落とし まつエクOK スキンケア ビバブー W洗顔不要 クレンジング ゴマージュ 角質 保湿 毛穴ケア 黒ずみ 高保湿 うるおい AHA PHA BA",
-      "brand": "BIVABOO",
-      "image_url": "https://m.media-amazon.com/images/I/61mEzo-bw4L._AC_SL1500_.jpg",
-      "observed_price": 2760,
-      "discovery_score": 1,
-      "selection_score": 0.57,
-      "matched_comparison_axes": [],
-      "search_key": "ホワイトスキンベール クレンジング メイク落とし 毛穴洗浄 クレンジングバーム 酵素洗",
-      "selected_variant": {
-        "net_content": "100mL",
-        "pack_count": 1,
-        "included": "spatula"
-      }
-    },
-    {
-      "ref": "p6",
-      "product_id": "AMZ-B0C28F3272",
-      "asin": "B0C28F3272",
-      "amazon_title": "ロゼット 夢みる アクネクリアモイスチャー 90g",
-      "brand": "ロゼット",
-      "image_url": "https://m.media-amazon.com/images/I/71lIehUNJiL._AC_SL1500_.jpg",
-      "observed_price": 3300,
-      "discovery_score": 1,
-      "selection_score": 0.57,
-      "matched_comparison_axes": [],
-      "search_key": "BANILA CO BANILACO カバーリシャスアルティメットホワイトクッション",
-      "selected_variant": {
-        "net_content": "90g",
-        "pack_count": 1,
-        "product_class": "quasi-drug as displayed in Amazon product features"
-      }
-    }
-  ]
+  "slug": "cleansing-balms-6-picks"
 }

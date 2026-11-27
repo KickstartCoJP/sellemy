@@ -1,0 +1,108 @@
+{
+  "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+  "evidence_sha256": "ca5894e67acab719310374fe98faa00fc5ecc659e2c89bde0026423823aeae19",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 11520,
+    "input_tokens": 26061,
+    "listing_identity_citations_repaired": [
+      "p2",
+      "p3",
+      "p4",
+      "p5"
+    ],
+    "member_binding_revision": 4,
+    "output_tokens": 1666,
+    "reasoning_effort": "medium",
+    "reasoning_output_tokens": 694,
+    "reused_product_qa": true,
+    "session_id": "01a21a3e-4f6c-7e92-9f09-c9f39bed4ba2",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "2998ddc9d8e7915beff8157e2389d9fad35aca53079c056ced1efee4bef4a122",
+  "review": {
+    "buying_guidance": false,
+    "claims_grounded": false,
+    "complete_comparison": false,
+    "distinct_products": true,
+    "duplicate_pair_checks": [],
+    "editorial_voice_appropriate": false,
+    "internal_qa_leak_absent": false,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "PERFECT ONE FOCUS スムースクレンジングバーム",
+        "identity_quote": "Perfect One Focus Perfect One Focus Smooth Cleansing Balm, 2.6 oz (75 g) (Renewed) Yellow a (Single Item))",
+        "reason": "取得済みの販売ページの題名で商品を識別できる。提示された評価とレビュー件数は「人気・定番」の紹介材料になる。シリーズ販売数などは、この取得済み本文では裏付けられていない。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "kikimate クレンジングバーム 毛穴 ビタミンC【しっとり高保湿】90g ウォータープルーフ まつエクOK メイク落とし スパチュラ付き",
+        "identity_quote": "kikimate クレンジングバーム 毛穴 ビタミンC【しっとり高保湿】90g ウォータープルーフ まつエクOK メイク落とし スパチュラ付き",
+        "reason": "取得済みの販売ページの題名で商品を識別できる。提示された評価とレビュー件数に加え、販売ページには保湿成分の記載がある。出荷数は取得済み本文では裏付けられていない。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "single_step_cleansing",
+            "quote": "double cleansing is not necessary!"
+          }
+        ],
+        "identity_key": "[バニラコ]BANILACO クリーンイットゼロ クレンジングバーム (180ml, オリジナル大容量)",
+        "identity_quote": "[バニラコ]BANILACO クリーンイットゼロ クレンジングバーム (180ml, オリジナル大容量)",
+        "reason": "取得済みの販売ページで商品を識別でき、ダブル洗顔不要との記載が担当する切り口に合う。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "ちふれ（CHIFURE）クレンジングバーム 90g メイク落とし W洗顔不要 毛穴ケア くすみケア",
+        "identity_quote": "ちふれ（CHIFURE）クレンジングバーム 90g メイク落とし W洗顔不要 毛穴ケア くすみケア",
+        "reason": "提示された商品掲載名で商品を識別でき、同じ掲載名の「W洗顔不要」が担当する切り口に合う。取得済みの出典本文はないため、詳細な使用方法や成分は未確認。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "ink.(インク）クレンジングバーム 単品 (クレイ（無香料）)",
+        "identity_quote": "ink.(インク）クレンジングバーム 単品 (クレイ（無香料）)",
+        "reason": "提示された商品掲載名でクレイの無香料タイプを識別でき、香りを抑えたい読者向けの切り口に合う。取得済みの出典本文はないため、成分などの詳細は未確認。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "fragrance_free",
+            "quote": "Unscented Vegan (125ml)"
+          }
+        ],
+        "identity_key": "grace & stella クレンジングバーム",
+        "identity_quote": "Grace & Stella Cleansing Balm Pore Cleansing Makeup Remover Balm Makeup Cleansing Balm Face Remover Unscented Vegan (125ml)",
+        "reason": "取得済みの販売ページの題名で商品を識別でき、無香料との表示が担当する切り口に合う。香料と精油を使っていないという詳細は、取得済み本文だけでは裏付けられない。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reader_decision_outsourcing_absent": false,
+    "reason": "商品名と、取得済みの販売ページがある商品ではその記載から、6商品をそれぞれクレンジングバームとして識別できる。既存の3つの紹介切り口に各2商品が合い、同一商品の重複や企画対象外の商品を示す証拠はない。p4とp5は取得済みの出典本文がないため、商品名を超える仕様は未確認として扱う。記事は未提出。",
+    "recommendation_conclusion": false,
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}
