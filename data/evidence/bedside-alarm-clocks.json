@@ -4,146 +4,359 @@
   "category": "gadget",
   "comparison_axes": [
     {
-      "id": "alarm_settings",
+      "id": "popular",
       "keywords": [
-        "設定数",
-        "音量調節",
-        "スヌーズ"
+        "人気"
       ],
-      "label": "アラームの設定と停止操作"
+      "label": "人気・定番の基準"
     },
     {
-      "id": "display",
+      "id": "gradual_light",
       "keywords": [
-        "文字寸法",
-        "照明方式",
-        "明るさ調節"
+        "光目覚まし",
+        "日の出を模した点灯",
+        "明るさ調整"
       ],
-      "label": "時刻表示と夜間の明るさ"
+      "label": "光で起床時刻を知らせる"
     },
     {
-      "id": "power_timekeeping",
+      "id": "bed_vibration",
       "keywords": [
-        "乾電池",
-        "外部電源",
-        "電波受信"
+        "振動式目覚まし",
+        "ベッドシェーカー",
+        "振動器付き"
       ],
-      "label": "電源と時刻合わせの条件"
+      "label": "寝具に置いた振動器で知らせる"
     }
   ],
   "eyecatch_image": "https://www.sellemy.jp/img/bedside-alarm-clocks/bedside-alarm-clocks.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "817d769761fb3ab6051891077bbafbfe98e9311f9dc0bdbd72e27af4ef6e0de8",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 26997,
+      "listing_identity_citations_repaired": [
+        "p1",
+        "p2",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 2384,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 1299,
+      "session_id": "01a219f0-68e5-7092-ae23-51bc8e12e3aa",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "[絶対起きれる目覚まし]Tingu 目覚まし 振動 3段階強度調整 寝坊ゼロ 2026新登場 type-c充電式 スヌーズ機能付き 二度寝予防",
+          "identity_quote": "[絶対起きれる目覚まし]Tingu 目覚まし 振動 3段階強度調整 寝坊ゼロ 2026新登場 type-c充電式 スヌーズ機能付き 二度寝予防",
+          "reason": "[商品掲載タイトル](https://www.amazon.co.jp/dp/B0FL7F7Y3B)にTinguの振動式目覚まし時計とある。音以外の知らせ方を探す読者に紹介できる。起床効果を保証する掲載文言は根拠にしない。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "CASIO(カシオ) 目覚まし時計 置き時計 イエロー 黄色 アナログ スヌーズ ライト レトロ TQ-159-9JF",
+          "identity_quote": "CASIO(カシオ) 目覚まし時計 置き時計 イエロー 黄色 アナログ スヌーズ ライト レトロ TQ-159-9JF",
+          "reason": "[検証済みの商品掲載情報](https://www.amazon.co.jp/dp/B07KQ6DRT8)に型番、アナログ表示、電子音アラーム、スヌーズ機能が記載されている。音で知らせる枕元時計として紹介できる。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "gradual_light",
+              "quote": "起床予定時刻の少し前から朝日のような光が0-60分以内に明るさ（赤色から→暖かい光→昼色光）を強めして"
+            }
+          ],
+          "identity_key": "ecozy E60A",
+          "identity_quote": "ecozy E60A 光目覚まし時計",
+          "reason": "[検証済みの商品掲載情報](https://www.amazon.co.jp/dp/B0H1M1C49B)でE60Aと起床前に徐々に明るくなる機能を確認でき、光で知らせるグループに合う。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "gradual_light",
+              "quote": "the light will gradually brighten like a sunrise starting 5 minutes before the alarm goes off"
+            }
+          ],
+          "identity_key": "【テレビ朝日で紹介】Dreamegg 光目覚まし時計 ホワイトノイズマシン ナイトライト 29種癒し音 日の出 おしゃれ 間接照明 Sunrise 1",
+          "identity_quote": "【テレビ朝日で紹介】Dreamegg 光目覚まし時計 ホワイトノイズマシン ナイトライト 29種癒し音 日の出 おしゃれ 間接照明 Sunrise 1",
+          "reason": "[商品掲載タイトル](https://www.amazon.co.jp/dp/B0DRV32T9Y)でSunrise 1を識別でき、同商品の検証済み掲載情報でアラーム前に光が徐々に明るくなる機能を確認できる。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "ADESSO(アデッソ) 目覚まし時計 振動 強力 二度寝・寝坊防止 MY-96 電波時計 バイブレーション アラーム 音 MY-96 おしゃれ アダプター アデッソ 振動式 子供",
+          "identity_quote": "ADESSO(アデッソ) 目覚まし時計 振動 強力 二度寝・寝坊防止 MY-96 電波時計 バイブレーション アラーム 音 MY-96 おしゃれ アダプター アデッソ 振動式 子供 振動目覚まし 置き時計 ブラック",
+          "reason": "[商品掲載タイトル](https://www.amazon.co.jp/dp/B01AKWDNDS)からMY-96という振動式目覚まし時計を識別できる。振動で起床を知らせる選択肢として紹介できる。振動器の設置方法やコード長は、出典未取得のため確認済みの仕様として扱わない。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "ADESSO(アデッソ) ブルブルクラッシュ２ BB-01 第2世代 振動 目覚まし時計 コードレス 強力 起きれるデジタル ディープスリーパー ダブルアラーム バックライト スヌ",
+          "identity_quote": "ADESSO(アデッソ) ブルブルクラッシュ２ BB-01 第2世代 振動 目覚まし時計 コードレス 強力 起きれるデジタル ディープスリーパー ダブルアラーム バックライト スヌーズ機能 ホワイト",
+          "reason": "[商品掲載タイトル](https://www.amazon.co.jp/dp/B0CM6146JX)からBB-01という振動式目覚まし時計を識別できる。MY-96とは型番と系列が異なる。枕の下での使い方や電池本数は、出典未取得のため確認済みの仕様として扱わない。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "6商品の掲載タイトルと検証済みの商品情報から、それぞれ目覚まし時計として識別できる。明白な重複や対象外の商品はなく、3つの紹介グループに各2商品を割り当てられる。出典未取得の商品については、掲載タイトルを超える仕様や使用方法を確認済みの事実として扱わない。記事本文は未提出。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
   "products": [
     {
-      "amazon_title": "セイコー C3 DL305K ブラック",
-      "asin": "B076GY2JBF",
-      "brand": "セイコー",
+      "amazon_title": "[絶対起きれる目覚まし]Tingu 目覚まし 振動 3段階強度調整 寝坊ゼロ 2026新登場 type-c充電式 スヌーズ機能付き 二度寝予防",
+      "asin": "B0FL7F7Y3B",
+      "brand": "",
+      "discovery_axis_id": "popular",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61wfGkGToiL._AC_SX300_SY300_QL70_ML2_.jpg",
-      "matched_comparison_axes": [
-        "alarm_settings",
-        "power_timekeeping"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/61i1Z65r-OL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B076GY2JBF",
+      "product_id": "AMZ-B0FL7F7Y3B",
+      "provisional": true,
+      "rating": 4.2,
       "ref": "p1",
-      "search_key": "目覚まし時計 乾電池式 大画面 見やすい 常時点灯 明るさ調整",
-      "selection_score": 0.67,
-      "model": "DL305K",
-      "selected_variant": "ブラック、単品"
+      "review_count": 805,
+      "search_key": "Tingu 目覚まし 振動 3段階強度調整 寝坊ゼロ 2026新",
+      "selection_reason": "音だけでは起きづらく、振動を試したい人向け。商品情報には振動の強さを3段階で調整でき、Type-C充電式でスヌーズ機能もあると記載されている。寝室で自分に気づきやすい強さを探せる点に、この商品を選ぶ理由がある。出典：[商品ページ](https://www.amazon.co.jp/dp/B0FL7F7Y3B)。",
+      "sources": []
     },
     {
-      "amazon_title": "リズム フィットウェーブスマート 8RZ166SR03 ホワイト",
-      "asin": "B01718VCIW",
-      "brand": "リズム",
+      "amazon_title": "CASIO(カシオ) 目覚まし時計 置き時計 イエロー 黄色 アナログ スヌーズ ライト レトロ TQ-159-9JF",
+      "asin": "B07KQ6DRT8",
+      "brand": "Casio",
+      "discovery_axis_id": "popular",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61IBxdZ6AWL._AC_SX300_SY300_QL70_ML2_.jpg",
-      "matched_comparison_axes": [
-        "display"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/61ikQ0lZjtL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B01718VCIW",
+      "product_id": "AMZ-B07KQ6DRT8",
+      "provisional": false,
+      "rating": 4.3,
       "ref": "p2",
-      "search_key": "ANJANK 目覚まし時計 振動式 枕の下用 ダブルアラーム 大",
-      "selection_score": 0.49,
-      "model": "8RZ166SR03",
-      "selected_variant": "ホワイト"
+      "review_count": 530,
+      "search_key": "Casio (カシオ) 目覚まし時計 置き時計 イエロー 黄色 アナログ ス",
+      "selection_reason": "見慣れたアナログ時計を枕元に置き、音のアラームを基準として使いたい人向け。黄色いレトロ調の小型本体に電子音アラームとスヌーズを備え、単3電池1本で動く。ライトは文字盤を見るための機能で、起床時刻を光で知らせる機能ではない点も購入前に確認できる。出典：[商品ページ](https://www.amazon.co.jp/dp/B07KQ6DRT8)。",
+      "sources": [
+        {
+          "brand": "Casio",
+          "excerpt": "CASIO Alarm Clock Tabletop Clock Yellow Analog Snooze Light Retro TQ-159-9JF\nAbout this item\nFunctions: Electronic sound alarm, snooze function, light, step second hand\nRecommended battery: 1 AA manganese dry cell battery\nProduct Size (Approx.): Height 3.6 x Width 4.3 x Depth 2.4 inches (9.1 x 10.9 x 6.2 cm) › See more product details\nBrand Casio\nColor yellow\nDisplay Type Analog\nStyle Modern\nSpecial Feature Alarm, Snooze\nProduct Dimensions 10.9W x 9.1H cm\nPower Source Battery Powered\nRoom Type Bedroom, Kid's Room, Living Room\nShape Rectangular\nMaterial Resin See more\nVisit the CASIO(カシオ) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "CASIO Alarm Clock Tabletop Clock Yellow Analog Snooze Light Retro TQ-159-9JF",
+          "url": "https://www.amazon.co.jp/dp/B07KQ6DRT8",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "カシオ TQ-750J-7JF ホワイト",
-      "asin": "B00NV9X6EE",
-      "brand": "カシオ",
+      "amazon_title": "ecozy 目覚まし時計 光 ホワイトノイズマシン 自動時刻同期 26種癒し音 17種ライト 虹色RGBライト 20段階調光 ベージュ",
+      "asin": "B0H1M1C49B",
+      "brand": "ecozy",
+      "discovery_axis_id": "gradual_light",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/612xD+JAtRL._AC_SY300_SX300_QL70_ML2_.jpg",
-      "matched_comparison_axes": [],
+      "image_url": "https://m.media-amazon.com/images/I/717Y8zFL-DL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B00NV9X6EE",
+      "product_id": "AMZ-B0H1M1C49B",
+      "provisional": false,
+      "rating": 4.3,
       "ref": "p3",
-      "search_key": "絶対起きれる 目覚まし時計 大音量 機械式 ダブルベル おしゃれ",
-      "selection_score": 0.31,
-      "model": "TQ-750J-7JF",
-      "selected_variant": "ホワイト"
+      "review_count": 829,
+      "search_key": "ecozy 目覚まし時計 光 ホワイトノイズマシン 自動時刻同期 26種癒し",
+      "selection_reason": "起床前の光の変化に加え、就寝時の照明も整えたい人向け。E60Aは設定時刻の0～60分前から赤みのある光を徐々に明るくし、日没モードでは設定時間に沿って暗くなる。20段階調光の枕元灯としても使える一方、充電式ではなく電源コード式なので、ベッド脇に電源がある寝室に合う。出典：[ecozy製品情報](https://ecozy.com/collections/sunrise-alarm/products/ecozy-sunrise-alarm-clock-lumo-lite-e60a)。",
+      "sources": [
+        {
+          "brand": "ecozy",
+          "excerpt": "ecozy 目覚まし時計 光 ホワイトノイズマシン 自動時刻同期 26種癒し音 17種ライト 虹色RGBライト 20段階調光 ベージュ\nこの商品について\n【日出と日没再現：自然で光で起きる & 心地よい睡眠へ】ecozy E60A 光目覚まし時計は起床予定時刻の少し前から朝日のような光が0-60分以内に明るさ（赤色から→暖かい光→昼色光）を強めして、優しいアラーム音が鳴ります。● 「日没モード」就寝時は、設定した時間内で10-480分（ニーズにお応じて設定可能）暗くなっていく、赤みがかった光で日没を再現して、音楽が徐々に小さくなり、リラックスしながら就寝時間を演出するめざましどけい。朝起きるのが苦手な方、生活が昼夜逆転しがちな方、規則正しい生活を送る会社員・学生、睡眠環境を整える方にもおすすめ～\n【Bluetoot機能：自動時刻同期＆音楽放送】Bluetooth接続でスマートフォンと自動で時刻を同期できます。E60A 光目覚まし時計は面倒な目覚まし時間設定は不要で、操作は簡単で便利です。さらにBluetoothで音楽やホワイトノイズの再生も可能。内蔵ステレオスピーカーが、クリアで迫力のあるサウンドを実現します。●【購入後のサポートも安心！】「注文履歴」＞「注文に関する問題」＞「プロフィールを表示」＞「質問する」、または取扱説明書記載のメールアドレスからお気軽にお問い合わせいただけます。迅速かつ丁寧に対応いたします。\n【26種癒し音：心地よい睡眠時間をサポート＆快適な目覚め】日没モードでホワイトノイズ・ブラウンノイズ・ピンクノイズの11種の快眠サウンドに、波の音、篝火の音、雨の音、小鳥や虫の声、風鈴の音、雷雨の音、夏の夜の音など12種の自然音、さらに3種の心地よい子守唄を加え、合計26種の癒しサウンドから自由に選択可能。赤ちゃんの寝かしつけだけでなく、リラックスタイムや集中力アップ、騒音対策にも大活躍です。日出モードでアラーム音は22種類から選択可能（アラーム音7種＋自然音15種）で、気分に合わせて爽やかに目覚めます。● 【16段階の音量調整｜最大約80dBの大音量アラーム】めざましどけいの音量は16段階で細かく設定でき、静音から小音量、強力な大音量まで幅広く対応。最大約80dB（地下鉄車内や掃除機の動作音に相当）のパワフルなアラームで、深い眠りの方やご高齢の方でもしっかり気付きやすい設計です。\n【4ステップでアラーム設定完了】電源を入れる → 時刻を設定 → アラームを選択 → ライトをカスタマイズ。忙しい朝でも手早く操作できます。●【スヌーズ機能】スヌーズ機能は、目覚ましを止めても5~20分後(初期設定は9分)に再び起こしてくれるため、二度寝の防止に役立ちます。\n【アラーム繰り返し設定・スヌーズ機能・12/24時間表示】アラームは「毎日・平日・週末」から繰り返し設定を選択できます。平日だけ、週末だけ、毎日など、生活スタイルに合わせて設定できるので、毎回アラームを設定し直す手間がありません。●【スマホへ充電も可能】目覚まし時計の後ろにはUSBポートが付きで、スマホを充電できます。\n【17色ライト& 20段階調光】E60A 目覚まし時計 光は17色のインテリアライト（8種の単色と9種のRGBライト）として部屋の雰囲気を作り、パーティー、誕生日会などにも使えます。20段階の明るさ調節で、枕元ライト、読書ライト、授乳ライト、常夜灯として利用できます。自分で使うのはもちろん、お正月・お年賀、引っ越しや新築祝い、出産祝い、子供誕生日、敬老の日などの引き出物にも喜ばれるプレゼントです。\n【ご注意】E60A めざましどけいは充電式ではございません。 › もっと見る\nブランド ecozy\n色 ベージュ\n商品の寸法 18幅 x 16高さ cm\n電源 電源コード式\n電池付き いいえ\n取り付けタイプ 卓上\n目覚まし時計 有り\n商品の個数 1\n動作モード 電動式\n文字盤の色 ベージュ 表示を増やす\necozyのストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "ecozy 目覚まし時計 光 ホワイトノイズマシン 自動時刻同期 26種癒し音 17種ライト 虹色RGBライト 20段階調光 ベージュ",
+          "url": "https://www.amazon.co.jp/dp/B0H1M1C49B",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "セイコー PYXIS RAIDEN BC407K ブラック",
-      "asin": "B07H5LH3M5",
-      "brand": "セイコー",
+      "amazon_title": "【テレビ朝日で紹介】Dreamegg 光目覚まし時計 ホワイトノイズマシン ナイトライト 29種癒し音 日の出 おしゃれ 間接照明 Sunrise 1",
+      "asin": "B0DRV32T9Y",
+      "brand": "Dreamegg",
+      "discovery_axis_id": "gradual_light",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61tQz8wk+eL._AC_SY300_SX300_QL70_ML2_.jpg",
-      "matched_comparison_axes": [
-        "alarm_settings"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/91v6RDtDHgL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B07H5LH3M5",
+      "product_id": "AMZ-B0DRV32T9Y",
+      "provisional": false,
+      "rating": 4.4,
       "ref": "p4",
-      "search_key": "Tingu目覚まし 爆音 驚き大音量 15段階音量調整 30種類",
-      "selection_score": 0.31,
-      "model": "BC407K",
-      "selected_variant": "ブラック、通常"
+      "review_count": 196,
+      "search_key": "Dreamegg 光目覚まし時計 ホワイトノイズマシン ナイトライト 29種癒し音",
+      "selection_reason": "暗い朝に、アラーム時刻より前から明るくなる光を取り入れたい人向け。Sunrise 1は日の出を模した点灯時間を0～60分で設定でき、時刻になると選んだアラーム音を鳴らせる。無段階で明るさを調整できるライトと29種の音源も備え、枕元で起床前と就寝前の両方に使い道がある。出典：[Dreamegg製品情報](https://dreamegg.com/ja/collections/sound-machines/products/sunrise1)。",
+      "sources": [
+        {
+          "brand": "Dreamegg",
+          "excerpt": "Dreamegg Light Alarm Clock, White Noise Machine, Night Light, 29 Soothing\nAbout this item\n【Sunrise Simulation & Snooze Function】The Dreamegg light alarm clock comes with sunrise mode and 5 types of alarm sounds, allowing you to DIY your alarm sound and volume according to your preference. For example, if you set the sunrise time to 5 minutes (0-60 minutes adjustable), the light will gradually brighten like a sunrise starting 5 minutes before the alarm goes off, and the light is at its brightest when the alarm rings. The alarm light becomes as bright as dawn, and you wake up to a pleasant sound at the alarm time. When the alarm rings, pressing the snooze button will trigger the alarm again in about 9 minutes. It is very convenient to prevent oversleeping. With this device, you can be free from noisy alarm sounds and the life of oversleeping, starting your day comfortably!\n【29 Kinds of Gentle Sounds & Alarm Settings】The Dreamegg alarm clock offers 7 kinds of noise sounds, 7 kinds of fan sounds, 8 kinds of natural sounds (birds chirping, ocean waves, flowing stream, rain, waterfall, summer rain and thunder, bonfire, insect sounds), 5 kinds of baby sounds (Schubert lullaby, Twinkle Twinkle Little Star, children's song, soothing sound, mother's womb sound) and 2 kinds of meditation sounds. It is not only great for putting babies to sleep but also helps adults improve sleep, concentration, deal with noise, and relieve tinnitus. When the alarm activates, the brightness gradually increases, and along with nature-inspired music, you can wake up comfortably as if in a sunrise scene. At the same time, it adds a unique touch to the room's ambiance\n【Stepless Dimming Gentle Light】The alarm clock light not only simulates the sun, but also converts between light colors such as warm light, warm white light, red, orange, yellow, green, blue, cyan, and purple into pure colors. The brightness can be adjusted steplessly, and you can easily select your preferred brightness with the dimmer knob. Even on the darkest winter mornings, the sunrise mode of the alarm clock can make you feel like you are basking in the real sunlight. The high-brightness full screen lights up the entire front, making it easy to wake up\n【Easy to Use】The volume can be adjusted in 30 levels, allowing you to freely set the volume to your preference, and in loud mode, it gently wakes you up without hurting your ears. It also has a timer function, and you can set the automatic off time before bed or according to your needs for 5 minutes / 15 minutes / 30 minutes / 45 minutes / 60 minutes / 90 minutes / 120 minutes / 150 minutes / 180 minutes. When the set time is reached, the volume gradually decreases, so you don't need to disturb your sleep or manually turn off the switch. The light can also be set with the timer. The brightness of the time display can be adjusted steplessly, and you can switch between 12/24-hour displays as needed. It also has a memory function, which resumes the previous settings, saving you the trouble of setting it up each time\n【Sleep/Study/Work/Tinnitus Relief BGM & Great Gift】Effective white noise that masks sound, also equipped with a fan and natural sounds to make noise less noticeable and prevent concentration on a single sound. Also, by resonating with the rhythm of '1/f fluctuations' contained in natural sounds, the brain waves become alpha waves, allowing you to relax your mood and body, and also increase concentration. Therefore, it is also recommended for people who have trouble falling asleep or businessmen and students who can't concentrate on work or study. Also a perfect gift for tired wives and parents troubled by tinnitus. The light alarm clock is a popular baby shower gift, respect for the aged gift, wedding gift, birthday gift, moving-in greeting gift, and Christmas gift. Compact night light, recommended as a gift for superiors, family, or friends › See more product details\nColor White\nBrand Dreamegg\nItem Weight 0.37 Kilograms\nUnit Count 1 Count\nNumber of Packs 1\nItem Highlight Alarm Light, Sunrise Simulation, Loud Sound, Table Clock, RGB Light, Pillow, Dimmable, White Noise, Pink Noise, Natural SoundAlarm Light, Sunrise Simulation, Loud Sound, Table Clock, RGB Light, Pillow, Dimmable, White Noise, Pink Noise, Natural Sound See more\nManufacturer Dreamegg\nVisit the Dreamegg Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Dreamegg Light Alarm Clock, White Noise Machine, Night Light, 29 Soothing",
+          "url": "https://www.amazon.co.jp/dp/B0DRV32T9Y",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "カシオ DQD-851J-8JF シルバー",
-      "asin": "B0DNFK11CN",
-      "brand": "カシオ",
+      "amazon_title": "ADESSO(アデッソ) 目覚まし時計 振動 強力 二度寝・寝坊防止 MY-96 電波時計 バイブレーション アラーム 音 MY-96 おしゃれ アダプター アデッソ 振動式 子供 振動目覚まし 置き時計 ブラック",
+      "asin": "B01AKWDNDS",
+      "brand": "",
+      "discovery_axis_id": "bed_vibration",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61XpcItkQXL._AC_SY300_SX300_QL70_ML2_.jpg",
-      "matched_comparison_axes": [
-        "alarm_settings"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/51nBjOa8qZS._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B0DNFK11CN",
+      "product_id": "AMZ-B01AKWDNDS",
+      "provisional": true,
+      "rating": 4.2,
       "ref": "p5",
-      "search_key": "電波時計 デジタル 目覚まし時計 温湿度計 大画面 12/24時",
-      "selection_score": 0.31,
-      "model": "DQD-851J-8JF",
-      "selected_variant": "シルバー"
+      "review_count": 818,
+      "search_key": "ADESSO(アデッソ) 目覚まし時計 振動 強力 二度寝・寝坊",
+      "selection_reason": "時計本体はベッド脇に置き、振動する部分だけを枕の下に入れたい人向け。MY-96は本体とシェイカーが分かれ、約2mのコードでつながる。電波時計、2件のアラーム設定、振動と音の併用にも対応する。使用にはACアダプターが必要なので、枕元のコンセント位置まで含めて選べる。出典：[ADESSO製品情報](https://www.e-adesso.co.jp/products/%E6%8C%AF%E5%8B%95%E5%BC%8F%E7%9B%AE%E8%A6%9A%E3%81%BE%E3%81%97%E9%9B%BB%E6%B3%A2%E6%99%82%E8%A8%88-2/)。",
+      "sources": []
     },
     {
-      "amazon_title": "セイコー SQ698S 白パール",
-      "asin": "B003BLQ3OC",
-      "brand": "セイコー",
+      "amazon_title": "ADESSO(アデッソ) ブルブルクラッシュ２ BB-01 第2世代 振動 目覚まし時計 コードレス 強力 起きれるデジタル ディープスリーパー ダブルアラーム バックライト スヌーズ機能 ホワイト",
+      "asin": "B0CM6146JX",
+      "brand": "",
+      "discovery_axis_id": "bed_vibration",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51szBSLPPNL._AC_SY300_SX300_QL70_ML2_.jpg",
-      "matched_comparison_axes": [
-        "alarm_settings"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/71dzy-VyabL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B003BLQ3OC",
+      "product_id": "AMZ-B0CM6146JX",
+      "provisional": true,
+      "rating": 4.3,
       "ref": "p6",
-      "search_key": "目覚まし時計 光 目覚ましライト めざまし時計 大音量 25種類",
-      "selection_score": 0.31,
-      "model": "SQ698S",
-      "selected_variant": "白パール"
+      "review_count": 231,
+      "search_key": "ADESSO(アデッソ) ブルブルクラッシュ２ BB-01 第2",
+      "selection_reason": "ベッド脇に電源コードを引かず、振動する時計本体を枕の下に置きたい人向け。ブルブル・クラッシュ2のBB-01は単3電池4本で動く一体型で、2件のアラーム時刻と音・振動の切り替えに対応する。枕の下へ持っていく使い方と電源方式が具体的に確認できる。出典：[ADESSO取扱説明書](https://www.e-adesso.co.jp/wps/wp-content/uploads/2023/07/BB-01-1.pdf)。",
+      "sources": []
     }
   ],
   "selection": {
-    "brand_count": 0,
-    "comparison_axes_covered": [
-      "alarm_settings",
-      "display",
-      "power_timekeeping"
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B0FL7F7Y3B",
+            "reason": "音だけでは起きづらく、振動を試したい人向け。商品情報には振動の強さを3段階で調整でき、Type-C充電式でスヌーズ機能もあると記載されている。寝室で自分に気づきやすい強さを探せる点に、この商品を選ぶ理由がある。出典：[商品ページ](https://www.amazon.co.jp/dp/B0FL7F7Y3B)。"
+          },
+          {
+            "asin": "B07KQ6DRT8",
+            "reason": "見慣れたアナログ時計を枕元に置き、音のアラームを基準として使いたい人向け。黄色いレトロ調の小型本体に電子音アラームとスヌーズを備え、単3電池1本で動く。ライトは文字盤を見るための機能で、起床時刻を光で知らせる機能ではない点も購入前に確認できる。出典：[商品ページ](https://www.amazon.co.jp/dp/B07KQ6DRT8)。"
+          }
+        ]
+      },
+      {
+        "axis_id": "gradual_light",
+        "products": [
+          {
+            "asin": "B0H1M1C49B",
+            "reason": "起床前の光の変化に加え、就寝時の照明も整えたい人向け。E60Aは設定時刻の0～60分前から赤みのある光を徐々に明るくし、日没モードでは設定時間に沿って暗くなる。20段階調光の枕元灯としても使える一方、充電式ではなく電源コード式なので、ベッド脇に電源がある寝室に合う。出典：[ecozy製品情報](https://ecozy.com/collections/sunrise-alarm/products/ecozy-sunrise-alarm-clock-lumo-lite-e60a)。"
+          },
+          {
+            "asin": "B0DRV32T9Y",
+            "reason": "暗い朝に、アラーム時刻より前から明るくなる光を取り入れたい人向け。Sunrise 1は日の出を模した点灯時間を0～60分で設定でき、時刻になると選んだアラーム音を鳴らせる。無段階で明るさを調整できるライトと29種の音源も備え、枕元で起床前と就寝前の両方に使い道がある。出典：[Dreamegg製品情報](https://dreamegg.com/ja/collections/sound-machines/products/sunrise1)。"
+          }
+        ]
+      },
+      {
+        "axis_id": "bed_vibration",
+        "products": [
+          {
+            "asin": "B01AKWDNDS",
+            "reason": "時計本体はベッド脇に置き、振動する部分だけを枕の下に入れたい人向け。MY-96は本体とシェイカーが分かれ、約2mのコードでつながる。電波時計、2件のアラーム設定、振動と音の併用にも対応する。使用にはACアダプターが必要なので、枕元のコンセント位置まで含めて選べる。出典：[ADESSO製品情報](https://www.e-adesso.co.jp/products/%E6%8C%AF%E5%8B%95%E5%BC%8F%E7%9B%AE%E8%A6%9A%E3%81%BE%E3%81%97%E9%9B%BB%E6%B3%A2%E6%99%82%E8%A8%88-2/)。"
+          },
+          {
+            "asin": "B0CM6146JX",
+            "reason": "ベッド脇に電源コードを引かず、振動する時計本体を枕の下に置きたい人向け。ブルブル・クラッシュ2のBB-01は単3電池4本で動く一体型で、2件のアラーム時刻と音・振動の切り替えに対応する。枕の下へ持っていく使い方と電源方式が具体的に確認できる。出典：[ADESSO取扱説明書](https://www.e-adesso.co.jp/wps/wp-content/uploads/2023/07/BB-01-1.pdf)。"
+          }
+        ]
+      }
     ],
-    "content_duplicates_removed": [],
-    "price_used_as_constraint_only": true
+    "brand_count": 3,
+    "candidate_count": 28,
+    "comparison_axes_covered": [
+      "gradual_light"
+    ],
+    "content_duplicates_removed": [
+      {
+        "asin": "B0FL7F7Y3B",
+        "check_items": {
+          "color_design_only": "UNKNOWN",
+          "function_structure_difference": "UNKNOWN",
+          "independent_comparison_value": "UNKNOWN",
+          "manufacturer_brand_relation": "UNKNOWN",
+          "sales_packaging_only": "UNKNOWN",
+          "same_product_body": "FAIL",
+          "series_generation_difference": "UNKNOWN",
+          "size_capacity_difference": "UNKNOWN"
+        },
+        "duplicate_of_asin": "B0FL7F7Y3B",
+        "reason": "same_asin"
+      },
+      {
+        "asin": "B07KQ6DRT8",
+        "check_items": {
+          "color_design_only": "UNKNOWN",
+          "function_structure_difference": "UNKNOWN",
+          "independent_comparison_value": "UNKNOWN",
+          "manufacturer_brand_relation": "UNKNOWN",
+          "sales_packaging_only": "UNKNOWN",
+          "same_product_body": "FAIL",
+          "series_generation_difference": "UNKNOWN",
+          "size_capacity_difference": "UNKNOWN"
+        },
+        "duplicate_of_asin": "B07KQ6DRT8",
+        "reason": "same_asin"
+      }
+    ],
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": [
+      "B07KQ6DRT8",
+      "B0FL7F7Y3B"
+    ],
+    "targeted_replacement": true
   },
   "slug": "bedside-alarm-clocks"
 }
