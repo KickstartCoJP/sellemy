@@ -536,7 +536,12 @@ def _publish(slug: str, category: str, *, update: bool = False) -> str:
     require_publishing_enabled(ROOT)
     from article_release import ArticleReleaseError, release
     try:
-        deployed_commit = release(ROOT, slug, head)
+        approved = read_artifact(slug, 'chat-publish-approval.json', {}) or {}
+        if approved.get('reviewer_role') == 'coo':
+            require_chat_publish_approval(approved, payload=payload, evidence=evidence)
+            deployed_commit = release(ROOT, slug, head, reviewer_role='coo')
+        else:
+            deployed_commit = release(ROOT, slug, head)
     except ArticleReleaseError as exc:
         raise PublishRaceError(str(exc), candidate_commit=head) from exc
     if deployed_commit != _git('rev-parse', 'origin/main') or _git('status', '--porcelain'):

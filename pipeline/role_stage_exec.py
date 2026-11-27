@@ -86,8 +86,8 @@ def _inspect(slug: str, *, cache_only: bool) -> dict:
         # Product acceptance, not the availability of six detailed excerpts,
         # is the sole product selection gate before Writer.
         return {**details, 'action': 'writer'}
-    if stage == 'CHAT_REVIEW_PENDING':
-        return {**details, 'action': 'ceo_review'}
+    if stage in {'CHAT_REVIEW_PENDING', 'COO_REVIEW_PENDING'}:
+        return {**details, 'action': 'coo_review'}
     if stage in {'EYECATCH_PENDING', 'PUBLISH_PENDING'}:
         issues = product_issues(evidence)
         if issues:
@@ -459,7 +459,7 @@ def main() -> None:
             due = eligible_job()
             unfinished = [job for job in all_jobs() if job.get('status') == 'ACTIVE'
                           and job.get('current_stage') not in {
-                              'CHAT_REVIEW_PENDING', 'OWNER_EYECATCH_PENDING'}]
+                              'CHAT_REVIEW_PENDING', 'COO_REVIEW_PENDING', 'OWNER_EYECATCH_PENDING'}]
             result = {'eligible': due, 'unfinished': unfinished}
         elif args.role == 'already_published':
             result = {'slugs': _reconcile_already_published_jobs()}

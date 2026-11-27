@@ -1,0 +1,32 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "CEO-BU002-COO-REVIEW-CUTOVER-20261127",
+  "instruction_ref": "CEO 2026-11-27: 直して承認もお前だからな / 早く本番上げろよ / 2秒で切り替えろ",
+  "instruction": "Route only BU-002 prepublication editorial review to COO and record an exact-version COO decision prior to the unchanged QA and article release flow.",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3",
+    "https://app.notion.com/p/3dc67ec6a1008196b017ee01e1824bba"
+  ],
+  "implementer": "COO",
+  "allowed_paths": [
+    "change-contracts/bu002-coo-review-cutover-20261128.json",
+    "pipeline/growth_recovery.py",
+    "pipeline/role_stage_exec.py",
+    "pipeline/growth_runtime.py",
+    "pipeline/chat_publish_approval.py",
+    "pipeline/article_release.py",
+    "pipeline/growth_role_business.py",
+    "pipeline/coo_article_review.py",
+    "tests/test_coo_article_review.py",
+    "tests/test_article_release.py"
+  ],
+  "preserved_rules": [
+    "Independent QA, product evidence and designer gates remain required",
+    "Protected GitHub PR and deployment verification stay in place",
+    "Do not change other reviews, postpublication audits, or admission controls"
+  ],
+  "acceptance_tests": [
+    "tests/test_coo_article_review.py",
+    "tests/test_article_release.py"
+  ]
+}
