@@ -1,0 +1,110 @@
+{
+  "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+  "evidence_sha256": "b23389cc235c2b9b43af17c24aa0746c467306c143f470c92d023895b0f79d34",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 11520,
+    "input_tokens": 24424,
+    "listing_identity_citations_repaired": [
+      "p1",
+      "p2",
+      "p3",
+      "p4",
+      "p5",
+      "p6"
+    ],
+    "member_binding_revision": 4,
+    "output_tokens": 1663,
+    "reasoning_effort": "medium",
+    "reasoning_output_tokens": 745,
+    "reused_product_qa": true,
+    "session_id": "01a21e02-a6e1-7691-ac27-d25de52cb2d9",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "a612aa9b8cb61acafef4b12a3b58e93c35db5a969a1c266a9ab045aee9eb6e1c",
+  "review": {
+    "buying_guidance": false,
+    "claims_grounded": false,
+    "complete_comparison": false,
+    "distinct_products": true,
+    "duplicate_pair_checks": [],
+    "editorial_voice_appropriate": false,
+    "internal_qa_leak_absent": false,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "ジョイ PRO洗浄 手洗い用食器洗剤 まとめ洗い用 逆さボトル 本体 280ml",
+        "identity_quote": "ジョイ PRO洗浄 手洗い用食器洗剤 まとめ洗い用 逆さボトル 本体 280ml",
+        "reason": "掲載タイトルから手洗い用食器洗剤の本体と識別できる。泡の持続性能は検証済みの出典で裏付けられていない。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "【Amazon.co.jp限定】キュキュット クリア除菌 食器用洗剤 グレープフルーツの香り 大容量詰替え用 1380ml",
+        "identity_quote": "【Amazon.co.jp限定】キュキュット クリア除菌 食器用洗剤 グレープフルーツの香り 大容量詰替え用 1380ml",
+        "reason": "掲載タイトルから香り付き食器用洗剤の詰め替え用と識別でき、p1とは異なる商品系列である。除菌効果などの具体的性能は検証済みの出典で裏付けられていない。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "キュキュット CLEAR泡スプレー 食器用洗剤 奥・ミゾ・スキマまでこすらず洗浄! 無香性 本体 280ml",
+        "identity_quote": "キュキュット CLEAR泡スプレー 食器用洗剤 奥・ミゾ・スキマまでこすらず洗浄! 無香性 本体 280ml",
+        "reason": "掲載タイトルからスプレー式食器用洗剤の本体と識別でき、細部を洗う切り口に合う。洗浄性能を掲載文言だけから確定しない。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "【大容量】キュキュット ゴシゴシいらずの泡パック 泡パックして、ほったらかし 食器にかけて流すだけ。超ラクな食器洗い オレンジの香り つめかえ用 １２００ｍｌ",
+        "identity_quote": "【大容量】キュキュット ゴシゴシいらずの泡パック 泡パックして、ほったらかし 食器にかけて流すだけ。超ラクな食器洗い オレンジの香り つめかえ用 １２００ｍｌ",
+        "reason": "掲載タイトルから泡をかけて使う食器用洗剤の詰め替え用と識別でき、p3とは異なる商品系列である。狭い溝への到達やこすり洗い不要という性能は未確認である。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "fragrance_free",
+            "quote": "No fragrance or colorants added"
+          }
+        ],
+        "identity_key": "ecover Zero Dish Detergent Bottle, 15.2 fl oz (450 ml), Unscented, No Coloring, Kitchen De",
+        "identity_quote": "ecover Zero Dish Detergent Bottle, 15.2 fl oz (450 ml), Unscented, No Coloring, Kitchen Detergent, Oil Stain",
+        "reason": "検証済みの商品掲載情報（https://www.amazon.co.jp/dp/B0CTMR36S1?th=1）から無香料の食器用洗剤本体と識別できる。油汚れへの性能や肌へのやさしさは掲載文言だけで実証済みと扱わない。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "fragrance_free",
+            "quote": "No fragrance · No coloring"
+          }
+        ],
+        "identity_key": "Saraya Yashinomi Detergent for Vegetables and Tableware, Refill 33.8 fl oz (1,000 ml)",
+        "identity_quote": "Saraya Yashinomi Detergent for Vegetables and Tableware, Refill 33.8 fl oz (1,000 ml)",
+        "reason": "検証済みの商品掲載情報（https://www.amazon.co.jp/dp/B0GNMKFKFF）から野菜・食器用の無香料洗剤の詰め替え用と識別でき、p5とは異なる商品である。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reader_decision_outsourcing_absent": false,
+    "reason": "掲載タイトルから6つの食器用洗剤を識別でき、既存の3つの紹介切り口に各2商品を配置できる。p1〜p4には検証済みの出典がないため、出典引用欄は空にした。これらの商品について、掲載タイトルを超える性能・使用方法の主張は根拠未確認として扱う。",
+    "recommendation_conclusion": false,
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}
