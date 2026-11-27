@@ -1,169 +1,327 @@
 {
-  "slug": "floor-cleaning-sheets-6-picks",
-  "category": "dailygoods",
-  "canonical_url": "https://www.sellemy.jp/article/dailygoods/floor-cleaning-sheets-6-picks.html",
-  "eyecatch_image": "https://www.sellemy.jp/img/floor-cleaning-sheets-6-picks/floor-cleaning-sheets-6-picks.png",
   "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/floor-cleaning-sheets-6-picks.html",
+  "category": "dailygoods",
   "comparison_axes": [
     {
-      "id": "wipe_power",
-      "label": "拭き取り力・シート種類",
+      "id": "popular",
+      "keywords": [
+        "人気"
+      ],
+      "label": "人気・定番の基準"
+    },
+    {
+      "id": "daily_dry_cleanup",
       "keywords": [
         "ドライシート",
+        "髪の毛",
+        "ほこり",
+        "日常掃除"
+      ],
+      "label": "帰宅後の髪の毛・ほこりを手早く集める"
+    },
+    {
+      "id": "dining_wet_cleanup",
+      "keywords": [
         "ウェットシート",
-        "静電気吸着"
-      ]
-    },
-    {
-      "id": "portability",
-      "label": "収納・携帯性",
-      "keywords": [
-        "軽量",
-        "コンパクト収納",
-        "柄の長さ調整"
-      ]
-    },
-    {
-      "id": "cost",
-      "label": "コスパ・詰め替え価格",
-      "keywords": [
-        "詰め替え",
-        "枚数",
-        "ランニングコスト"
-      ]
+        "食べこぼし",
+        "皮脂汚れ",
+        "水拭き"
+      ],
+      "label": "食卓まわりのベタつきを拭き取る"
     }
   ],
-  "selection": {
-    "comparison_axes_covered": [
-      "portability",
-      "wipe_power"
-    ],
-    "brand_count": 6,
-    "price_used_as_constraint_only": true
+  "eyecatch_image": "https://www.sellemy.jp/img/floor-cleaning-sheets-6-picks/floor-cleaning-sheets-6-picks.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "1d570fa4679abf9082c8937819aa913dfac80ac54953a82dc9b6c0e8af39f7b6",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 24618,
+      "listing_identity_citations_repaired": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p6"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 1971,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 832,
+      "session_id": "01a21d00-a3ef-7033-aa1d-69c03ea4051f",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "クイックル 【まとめ買い】ワイパー 床用掃除シート ドライシート 40枚入 × 3個",
+          "identity_quote": "クイックル 【まとめ買い】ワイパー 床用掃除シート ドライシート 40枚入 × 3個",
+          "reason": "掲載タイトルから床用ドライシートと識別でき、定番品を探す切り口で紹介できる。繊維数や捕集性能を裏付ける検証済み資料はない。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "山崎産業(Yamazaki Sangyo) フローリング用 ウェットシート まとめ買いセット 20枚入x10袋 合計200枚 169979",
+          "identity_quote": "山崎産業(Yamazaki Sangyo) フローリング用 ウェットシート まとめ買いセット 20枚入x10袋 合計200枚 169979",
+          "reason": "検証済みの商品ページで床用ウェットシートと識別でき、日々の水拭きに備える切り口で紹介できる。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "daily_dry_cleanup",
+              "quote": "Fluffy dry sheet with ultra-fine fiber that is more than twice as thick as tissue paper It effectively captures microscopic dirt on the floor, such as hair, pet hair, dust, and breadcrumbs"
+            }
+          ],
+          "identity_key": "【Amazon.co.jp限定】 3M ドライシート フローリング 床 拭き 掃除 無添加 ふわふわ 厚手 18枚×4個 スコッチブライト",
+          "identity_quote": "【Amazon.co.jp限定】 3M ドライシート フローリング 床 拭き 掃除 無添加 ふわふわ 厚手 18枚×4個 スコッチブライト",
+          "reason": "検証済みの商品ページで床用ドライシートと識別でき、髪の毛やほこりを集める日常掃除の切り口に合う。宣伝文句だけで捕集性能や安全性は確定しない。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "daily_dry_cleanup",
+              "quote": "Use: For cleaning floors, hallways, etc."
+            }
+          ],
+          "identity_key": "アズマ工業(Azuma Industrial) アズマ ワイパー取替シート TKふんわりワイパーシート50枚ロールBL シート幅30×20cm ブルー 薬剤不使用のドライシート",
+          "identity_quote": "アズマ工業(Azuma Industrial) アズマ ワイパー取替シート TKふんわりワイパーシート50枚ロールBL シート幅30×20cm ブルー 薬剤不使用のドライシート",
+          "reason": "検証済みの商品ページで床掃除用シートと識別できる。取替シートは記事の対象である床掃除用シートに当たり、日常掃除の切り口に合う。床の溝での捕集性能は、この抜粋からは確定できない。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "クイックルワイパー 立体吸着ウエットシート ストロング",
+          "identity_quote": "【大容量】クイックルワイパー 立体吸着ウエットシート ストロング しつこいベタベタまで一気にサッパリ 48枚入り ジャンボパック",
+          "reason": "掲載タイトルからウェットシートと識別でき、p1のドライシートとは種類が異なる。食卓まわりの水拭きという切り口に合うが、油汚れへの具体的な洗浄性能は確認済みの事実として扱えない。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "レック 水の激落ち 超厚 ウェットシート 20枚入 (2個パック) フローリングシート/洗剤不使用/除菌 /24時間抗菌 / アルカリ電解水使用 / S00921",
+          "identity_quote": "レック 水の激落ち 超厚 ウェットシート 20枚入 (2個パック) フローリングシート/洗剤不使用/除菌 /24時間抗菌 / アルカリ電解水使用 / S00921",
+          "reason": "掲載タイトルからフローリング用ウェットシートと識別でき、食卓まわりの水拭きという切り口に合う。タイトル中の除菌・抗菌効果や粒ごみの捕集性能は検証済みの事実として扱えない。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "根拠情報のみの審査。各商品の掲載タイトルまたは検証済みの商品ページから、床掃除用シートとしての識別と担当する紹介切り口への適合を確認できる。明白な重複や対象外商品はない。資料にない性能や効果は、記事で確認済みの事実として扱えない。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
   },
   "products": [
     {
+      "amazon_title": "クイックル 【まとめ買い】ワイパー 床用掃除シート ドライシート 40枚入 × 3個",
+      "asin": "B07BH5CFTZ",
+      "brand": "",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71nV5k+NCyL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B07BH5CFTZ",
+      "provisional": true,
+      "rating": 4.5,
       "ref": "p1",
-      "product_id": "AMZ-B0H327ZK69",
-      "asin": "B0H327ZK69",
-      "amazon_title": "レック 水の激落ち超厚ウエットシート SS-180 20枚×3袋",
-      "brand": "レック",
-      "image_url": "https://m.media-amazon.com/images/I/71cWc10d-vL._AC_SL1335_.jpg",
-      "observed_price": 1590,
-      "discovery_score": 1,
-      "selection_score": 0.7,
-      "matched_comparison_axes": [
-        "wipe_power"
-      ],
-      "search_key": "VIALONTA レック 水の激落ち 超厚 ウェットシート 20枚入 ３個セット",
-      "selected_variant": {
-        "model": "SS-180",
-        "sheets_per_pack": 20,
-        "pack_count": 3,
-        "total_sheets": 60
-      }
+      "review_count": 3515,
+      "search_key": "クイックル ワイパー 床用掃除シート ドライシート 40枚入 ×",
+      "selection_reason": "定番のドライシートを基準に選びたい人に。花王の製品説明では、約50万本のミクロ繊維が髪の毛やホコリを絡め取り、両面を使えるとされる。帰宅後、掃除機を出さずにリビングの床をひと通り拭く用途が具体的に見える40枚×3個セット。",
+      "sources": []
     },
     {
+      "amazon_title": "山崎産業(Yamazaki Sangyo) フローリング用 ウェットシート まとめ買いセット 20枚入x10袋 合計200枚 169979",
+      "asin": "B00E7KUZ36",
+      "brand": "山崎産業(Yamazaki Sangyo)",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71TIh21Bl1L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B00E7KUZ36",
+      "provisional": false,
+      "rating": 4.3,
       "ref": "p2",
-      "product_id": "AMZ-B0F73XFSCY",
-      "asin": "B0F73XFSCY",
-      "amazon_title": "山崎産業 コンドル 極厚 フローリング用ドライシート 20枚入",
-      "brand": "山崎産業",
-      "image_url": "https://m.media-amazon.com/images/I/71hkYF+5CoL._AC_SL1500_.jpg",
-      "observed_price": 5280,
-      "discovery_score": 1,
-      "selection_score": 0.7,
-      "matched_comparison_axes": [
-        "portability"
-      ],
-      "search_key": "Bona フローリングモップ 床拭きモップ マイクロファイバー モップ f",
-      "selected_variant": {
-        "model": "MO976-025X-MB",
-        "product_code": "209156",
-        "sheet_size_cm": "30×20",
-        "sheets_per_pack": 20,
-        "pack_count": 1,
-        "type": "ドライシート"
-      }
+      "review_count": 993,
+      "search_key": "山崎産業(Yamazaki Sangyo) フローリング用 ウェットシート まとめ買いセット 2",
+      "selection_reason": "定番のウェットシートを日々の水拭きに備えたい人に。山崎産業の商品説明はフローリングのベタつき汚れへの使用と両面使用を示している。食卓まわりを拭く機会が多い家庭には、20枚入りを10袋に分けて置ける点も合う。",
+      "sources": [
+        {
+          "brand": "山崎産業(Yamazaki Sangyo)",
+          "excerpt": "Yamazaki Sangyo (山崎産業) Floor Use Wet Wipes Bulk Purchase Set 20 Sheets x 10 Bags Total 200 Sheets 169979\nAbout this item\nWet sheets that thoroughly wipe off sticky and oily stains on flooring. It contains a strong solution so you can wipe a wide area › See more product details\nBrand 山崎産業(Yamazaki Sangyo)\nUnit Count 1 Set\nNumber of Items 1\nAge Range (Description) Adult\nMaterial Sheet: Rayon, polyester. Chemicals: Ethanol, surfactant, paraben, fragrance\nVisit the 山崎産業(Yamazaki Sangyo) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Yamazaki Sangyo (山崎産業) Floor Use Wet Wipes Bulk Purchase Set 20 Sheets x 10 Bags Total 200 Sheets 169979",
+          "url": "https://www.amazon.co.jp/dp/B00E7KUZ36?th=1",
+          "verified": true
+        }
+      ]
     },
     {
-      "ref": "p3",
-      "product_id": "AMZ-B0H44SZ17G",
-      "asin": "B0H44SZ17G",
-      "amazon_title": "クイックル ストロング 空間の超消臭 12枚×8袋",
-      "brand": "花王",
-      "image_url": "https://m.media-amazon.com/images/I/61Z++I4YVmL._AC_SY300_SX300_QL70_ML2_.jpg",
-      "observed_price": 4980,
-      "discovery_score": 1,
-      "selection_score": 0.52,
-      "matched_comparison_axes": [],
-      "search_key": "ノー品 クイッ クル 立体吸着ウエットシート 空間の超消臭 ストロンググ",
-      "selected_variant": {
-        "model": "クイックルワイパー立体吸着ウエットシート ストロング 空間の超消臭",
-        "fragrance": "ストロンググリーン",
-        "sheets_per_pack": 12,
-        "pack_count": 8,
-        "total_sheets": 96
-      }
-    },
-    {
-      "ref": "p4",
-      "product_id": "AMZ-B00OPWIRGS",
-      "asin": "B00OPWIRGS",
-      "amazon_title": "3M スコッチ・ブライト フロア用ドライシート18枚 FW-DSM18",
+      "amazon_title": "【Amazon.co.jp限定】 3M ドライシート フローリング 床 拭き 掃除 無添加 ふわふわ 厚手 18枚×4個 スコッチブライト",
+      "asin": "B00NF6FW4A",
       "brand": "3M",
-      "image_url": "https://m.media-amazon.com/images/I/71lcN0Ufk5L._AC_SL1500_.jpg",
-      "observed_price": 2980,
+      "discovery_axis_id": "daily_dry_cleanup",
       "discovery_score": 1,
-      "selection_score": 0.52,
-      "matched_comparison_axes": [],
-      "search_key": "天使の椅子 TENSI JAPAN ワンタッチ着脱 シート選ばず フロアワイ",
-      "selected_variant": {
-        "model": "FW-DSM18",
-        "sheets_per_pack": 18,
-        "pack_count": 1,
-        "total_sheets": 18
-      }
+      "image_url": "https://m.media-amazon.com/images/I/71RbB-BbIiL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B00NF6FW4A",
+      "provisional": false,
+      "rating": 4.4,
+      "ref": "p3",
+      "review_count": 477,
+      "search_key": "3M ドライシート フローリング 床 拭き 掃除 無添加 ふわふわ 厚",
+      "selection_reason": "帰宅後、床の髪の毛と細かな食べこぼしを一緒に集めたい人に。3Mの製品説明では、厚みのあるふわふわのシートが髪の毛や粒ごみを捕らえ、ゴミを吸着させるための流動パラフィンなどを使わないとされる。気づいた場所をシートを手に持って拭きたいときにも使い方が明確。",
+      "sources": [
+        {
+          "brand": "3M",
+          "excerpt": "(Amazon.co.jp Exclusive) 3M Dry Sheets, Floors, Wiping, Cleaning, Additive-Free, Fluffy, Thick, 18 Sheets x 4 Pieces, Scotch-Brite\nAbout this item\nNo Additives, Safe for Bare Hands: Unlike ordinary dry sheets, this additive-free dry sheet does not use liquid paraffin or other chemicals to adsorb garbage There is no need to worry about the chemicals left on everywhere, so you can hold the sheet in hand to clean areas where dust is a concern\nThick, fluffy sheets catch fine debris! Fluffy dry sheet with ultra-fine fiber that is more than twice as thick as tissue paper It effectively captures microscopic dirt on the floor, such as hair, pet hair, dust, and breadcrumbs\n【Quick cleaning when you notice it】No power required, and it doesn’t make a loud noise like a vacuum cleaner, so you can clean at any time without worrying about your neighbors or time\n【Product Information】 Product Size: 11.8 x 8.3 inches (300 x 210 mm) / Quantity: 18 sheets x 4 packs › See more product details\nBrand 3M\nColor 4. Dry Sheet\nSurface Recommendation Glass\nItem Weight 430 Grams\nHandle Material Plastic\nVisit the スリーエム(3M) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "(Amazon.co.jp Exclusive) 3M Dry Sheets, Floors, Wiping, Cleaning, Additive-Free, Fluffy, Thick, 18 Sheets x 4 Pieces, Scotch-Brite",
+          "url": "https://www.amazon.co.jp/dp/B00NF6FW4A?th=1",
+          "verified": true
+        }
+      ]
     },
     {
+      "amazon_title": "アズマ工業(Azuma Industrial) アズマ ワイパー取替シート TKふんわりワイパーシート50枚ロールBL シート幅30×20cm ブルー 薬剤不使用のドライシート",
+      "asin": "B01B2OSQQW",
+      "brand": "Azuma",
+      "discovery_axis_id": "daily_dry_cleanup",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51SX0nogq5L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B01B2OSQQW",
+      "provisional": false,
+      "rating": 4.4,
+      "ref": "p4",
+      "review_count": 882,
+      "search_key": "Azuma アズマ工業(Azuma Industrial) アズマ ワイパー",
+      "selection_reason": "床の溝に残る髪の毛やホコリが気になる人に。アズマ工業の公式販売ページは、もこもこの繊維が溝に入り、ミクロのホコリから髪の毛、食べこぼしまで捕らえると説明する。50枚ロールから必要な分を取り、帰宅後のから拭きに使える。",
+      "sources": [
+        {
+          "brand": "Azuma",
+          "excerpt": "Azuma Industries Wiper Replacement Sheet, TK Fluffy Wiper Sheets, 50 Sheets\nAbout this item\nSize: Approx. 11.8 x 7.9 inches (30 x 20 cm)\nSingle Weight: Approx. 0.2 oz (4 g)\nIngredients: Polypropylene\nCountry of Origin: Taiwan\nCan also be used as a duster › See more product details\nScent Unscented\nBrand Azuma\nSheet Count 50\nPackage Information Bag\nItem Form Wipes\nNumber of Items 1\nUnit Count 1 Count\nManufacturer アズマ工業(Azuma Industrial)\nPackage Size Name Roll of 50\nItem Highlight Quantity: 50 sheets. Use: For cleaning floors, hallways, etc. Specifications: Sheet width 11.8 x 7.9 inches (30 x 20 cm)Quantity: 50 sheets. Use: For cleaning floors, hallways, etc. Specifications: Sheet width 11.8 x 7.9 inches (30 x 20 cm) See more See more\nVisit the アズマ工業(Azuma Industrial) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Azuma Industries Wiper Replacement Sheet, TK Fluffy Wiper Sheets, 50 Sheets",
+          "url": "https://www.amazon.co.jp/dp/B01B2OSQQW?th=1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "【大容量】クイックルワイパー 立体吸着ウエットシート ストロング しつこいベタベタまで一気にサッパリ 48枚入り ジャンボパック",
+      "asin": "B0D78F2C2H",
+      "brand": "",
+      "discovery_axis_id": "dining_wet_cleanup",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81luosLOauL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0D78F2C2H",
+      "provisional": true,
+      "rating": 4.4,
       "ref": "p5",
-      "product_id": "AMZ-B0CTX44129",
-      "asin": "B0CTX44129",
-      "amazon_title": "昭和紙工 ラクリーナ フローリング用3層ウエットシート20枚×20袋",
-      "brand": "昭和紙工",
-      "image_url": "https://m.media-amazon.com/images/I/81OF4oiILYL._AC_SL1500_.jpg",
-      "observed_price": 3980,
-      "discovery_score": 1,
-      "selection_score": 0.52,
-      "matched_comparison_axes": [],
-      "search_key": "昭和紙工 昭和 ラクリーナ フローリング用 ３層ウエットシート 400枚",
-      "selected_variant": {
-        "model": "ラクリーナ フローリング用3層ウエットシート",
-        "sheets_per_pack": 20,
-        "pack_count": 20,
-        "total_sheets": 400
-      }
+      "review_count": 308,
+      "search_key": "クイックルワイパー 立体吸着ウエットシート ストロング しつこい",
+      "selection_reason": "食後のダイニング床に油分を含むベタつきが残りやすい家庭に。花王は、シートに含ませた洗浄液で頑固な油汚れを拭き取るストロングタイプと説明し、販売ページもキッチンやダイニングの床掃除を用途に挙げている。48枚入りで食後の拭き掃除に備えられる。",
+      "sources": []
     },
     {
-      "ref": "p6",
-      "product_id": "AMZ-B0FZK76BQP",
-      "asin": "B0FZK76BQP",
-      "amazon_title": "キレキラ！ワイパー ドライ×ウエットシート16枚",
-      "brand": "エリエール",
-      "image_url": "https://m.media-amazon.com/images/I/61mydNye-wL._AC_SL1100_.jpg",
-      "observed_price": 2983,
+      "amazon_title": "レック 水の激落ち 超厚 ウェットシート 20枚入 (2個パック) フローリングシート/洗剤不使用/除菌 /24時間抗菌 / アルカリ電解水使用 / S00921",
+      "asin": "B09T8Y4L9T",
+      "brand": "",
+      "discovery_axis_id": "dining_wet_cleanup",
       "discovery_score": 1,
-      "selection_score": 0.52,
-      "matched_comparison_axes": [
-        "wipe_power"
-      ],
-      "search_key": "激落ちくん レック 業務用 激落ちくん 超厚 ウェットシート 20枚入✕12",
-      "selected_variant": {
-        "model": "キレキラ！ワイパー ドライ×ウエットシート",
-        "jan": "4902011121438",
-        "sheets_per_pack": 16,
-        "pack_count": 1
-      }
+      "image_url": "https://m.media-amazon.com/images/I/81-HO8c1w3L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B09T8Y4L9T",
+      "provisional": true,
+      "rating": 4.3,
+      "ref": "p6",
+      "review_count": 493,
+      "search_key": "レック 水の激落ち 超厚 ウェットシート 20枚入 (2個パック",
+      "selection_reason": "食卓の下でパンくずも拾いながら床を水拭きしたい人に。レック公式の商品説明では、アルカリ電解水を使った洗剤不使用のウェットシートで、超厚手のエンボス面がパンくずなどの粒ごみを絡め取り、両面使える。食べこぼしのある範囲を一枚で拭き進める使い方に合う。",
+      "sources": []
     }
-  ]
+  ],
+  "selection": {
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B07BH5CFTZ",
+            "reason": "定番のドライシートを基準に選びたい人に。花王の製品説明では、約50万本のミクロ繊維が髪の毛やホコリを絡め取り、両面を使えるとされる。帰宅後、掃除機を出さずにリビングの床をひと通り拭く用途が具体的に見える40枚×3個セット。"
+          },
+          {
+            "asin": "B00E7KUZ36",
+            "reason": "定番のウェットシートを日々の水拭きに備えたい人に。山崎産業の商品説明はフローリングのベタつき汚れへの使用と両面使用を示している。食卓まわりを拭く機会が多い家庭には、20枚入りを10袋に分けて置ける点も合う。"
+          }
+        ]
+      },
+      {
+        "axis_id": "daily_dry_cleanup",
+        "products": [
+          {
+            "asin": "B00NF6FW4A",
+            "reason": "帰宅後、床の髪の毛と細かな食べこぼしを一緒に集めたい人に。3Mの製品説明では、厚みのあるふわふわのシートが髪の毛や粒ごみを捕らえ、ゴミを吸着させるための流動パラフィンなどを使わないとされる。気づいた場所をシートを手に持って拭きたいときにも使い方が明確。"
+          },
+          {
+            "asin": "B01B2OSQQW",
+            "reason": "床の溝に残る髪の毛やホコリが気になる人に。アズマ工業の公式販売ページは、もこもこの繊維が溝に入り、ミクロのホコリから髪の毛、食べこぼしまで捕らえると説明する。50枚ロールから必要な分を取り、帰宅後のから拭きに使える。"
+          }
+        ]
+      },
+      {
+        "axis_id": "dining_wet_cleanup",
+        "products": [
+          {
+            "asin": "B0D78F2C2H",
+            "reason": "食後のダイニング床に油分を含むベタつきが残りやすい家庭に。花王は、シートに含ませた洗浄液で頑固な油汚れを拭き取るストロングタイプと説明し、販売ページもキッチンやダイニングの床掃除を用途に挙げている。48枚入りで食後の拭き掃除に備えられる。"
+          },
+          {
+            "asin": "B09T8Y4L9T",
+            "reason": "食卓の下でパンくずも拾いながら床を水拭きしたい人に。レック公式の商品説明では、アルカリ電解水を使った洗剤不使用のウェットシートで、超厚手のエンボス面がパンくずなどの粒ごみを絡め取り、両面使える。食べこぼしのある範囲を一枚で拭き進める使い方に合う。"
+          }
+        ]
+      }
+    ],
+    "brand_count": 3,
+    "candidate_count": 27,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [],
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": []
+  },
+  "slug": "floor-cleaning-sheets-6-picks"
 }
