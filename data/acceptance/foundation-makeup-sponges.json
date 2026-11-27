@@ -1,0 +1,105 @@
+{
+  "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+  "evidence_sha256": "15f7d3b399cea91c286b418bd70a6e71db1d772956ab14933bca4116d0bdc82f",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 11520,
+    "input_tokens": 24485,
+    "listing_identity_citations_repaired": [
+      "p3"
+    ],
+    "member_binding_revision": 4,
+    "output_tokens": 1958,
+    "reasoning_effort": "medium",
+    "reasoning_output_tokens": 917,
+    "reused_product_qa": true,
+    "session_id": "01a21d34-4e56-7a81-b10e-414191d686fe",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "4b9ecd3be90a0fcbc86d3943c62eacc8044ae9bbed3241cdfb571b8d995fabc7",
+  "review": {
+    "buying_guidance": false,
+    "claims_grounded": false,
+    "complete_comparison": false,
+    "distinct_products": true,
+    "duplicate_pair_checks": [],
+    "editorial_voice_appropriate": false,
+    "internal_qa_leak_absent": false,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "popular",
+            "quote": "Customer Reviews\n4.6 4.6 out of 5 stars\n(1,455)"
+          }
+        ],
+        "identity_key": "ロージーローザ マルチファンデパフ",
+        "identity_quote": "Rosy Rosa Multi-Foundation Puff 2P (Makeup Puff Compatible with All Foundations)",
+        "reason": "確認済みのAmazon商品掲載（https://www.amazon.co.jp/dp/B0CJTV9CHY）に商品名、寸法、評価件数がある。ファンデーション用パフとして識別でき、人気・定番の切り口で紹介できる。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "ロージーローザ バリュースポンジN ハウス型タイプS",
+        "identity_quote": "",
+        "reason": "提示された商品掲載タイトルに商品系列とハウス型タイプSの形状名があり、ファンデーション用スポンジとして識別できる。寸法や詳しい使い方は確認済み資料にないため、具体的な仕様としては扱わない。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "portable_flat",
+            "quote": "Product Dimensions\n‎0.7 x 7.5 x 5.4 cm; 20 g"
+          }
+        ],
+        "identity_key": "ロージーローザ マルチファンデパフ2P<スリム> ROSY ROSA",
+        "identity_quote": "ロージーローザ マルチファンデパフ2P<スリム> ROSY ROSA",
+        "reason": "確認済みのAmazon商品掲載（https://www.amazon.co.jp/dp/B0F377HKPT）の表題に「(Slim)」があり、同じ掲載文の寸法は厚さ0.7cmを示す。薄型の切り口に合い、p1の掲載寸法とも異なる。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "カバーマーク ファンデーション スポンジF",
+        "identity_quote": "COVERMARK Foundation Sponge F (Floless Fit Sponge)",
+        "reason": "確認済みのAmazon商品掲載（https://www.amazon.co.jp/dp/B0071472M2）の表題から、特定のファンデーション向けスポンジとして識別できる。持ち歩き時の寸法や収納性は確認済み資料にないため、具体的な携帯性能は主張できない。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "ロージーローザ バリュースポンジN ウェッジ型タイプ",
+        "identity_quote": "",
+        "reason": "提示された商品掲載タイトルに商品系列とウェッジ型の形状名があり、角・先端形状の切り口に合う。p2のハウス型とは形状名が異なる。寸法や使い心地は確認済み資料にない。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "シャロン ファンデーション用スポンジ 80-517 菱形W",
+        "identity_quote": "",
+        "reason": "提示された商品掲載タイトルにブランド、型番、菱形の形状名があり、ファンデーション用スポンジとして識別できる。角のある形状という切り口に合う。素材・寸法・使い心地は確認済み資料にない。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reader_decision_outsourcing_absent": false,
+    "reason": "記事本文のない根拠情報のみの審査。6件は商品掲載名からそれぞれ識別でき、ファンデーション用パフ・スポンジとして3つの紹介切り口に各2件を配置できる。p1とp3は通常型とスリム型、p2とp5はハウス型とウェッジ型として示され、色や数量だけの違いによる重複を示す積極的な証拠はない。取得できていない任意仕様は未確認として扱う。",
+    "recommendation_conclusion": false,
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}
