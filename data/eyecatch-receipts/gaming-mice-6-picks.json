@@ -1,12 +1,49 @@
 {
-  "generation_method": "generative_ai",
-  "provider": "openai",
-  "model": "gpt-image-2.5-sunburst",
-  "quality": "high",
-  "operation_id": "sellemy-eyecatch-gaming-mice-6-picks-784e16c3adedb1ac",
-  "request_sha256": "784e16c3adedb1ac651871f0f7f9ede4ec891c115cc1b92c9f35a2b3cda43160",
-  "image_sha256": "1a1b89f26f47ceacfd5d69f63ce7374c38b43839b66346bb990e668b77744467",
-  "width": 1536,
+  "generated_at": "2026-11-27T22:03:34.204983+00:00",
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "generation_route_attestation": "codex_rollout_extension",
   "height": 1024,
-  "generated_at": "2026-09-26T07:34:42.130675+00:00"
+  "image_generation_internal_usage_exposed": false,
+  "image_sha256": "a5cad9b1b25d8fd4448e4998fbffaa7119e11e95a6f0b45044735f700d6da5f3",
+  "member_binding_revision": 15,
+  "model": "gpt-6-sol",
+  "model_reported_generation_route": "built-in_image_gen",
+  "role_id": "bu-codex-sellemy-designer",
+  "routing": {
+    "api_share": 0,
+    "codex_reserve_percent": 20.0,
+    "codex_share": 100,
+    "codex_usage": {
+      "remaining_percent": 67.0,
+      "resets_at": 1796330023,
+      "source": "/Users/kickstart/.codex/sessions/2026/11/28/rollout-2026-11-28T07-00-14-01a21f05-f787-7433-a200-c95f42e25dad.jsonl",
+      "used_percent": 33.0,
+      "window_minutes": 10080
+    },
+    "errors_before_success": [],
+    "executed_route": "codex",
+    "fallback_from": null,
+    "mode": "weighted_random",
+    "reason": "weighted_random",
+    "remaining_percent": 67.0,
+    "roll": 46,
+    "selected_route": "codex",
+    "total_weight": 100
+  },
+  "routing_recorded_at": "2026-11-27T22:03:34.206206+00:00",
+  "summary": "家庭のゲームデスクで、マウスの形状・握り方・サイドボタンへの親指の動きを描いた。PNG形式と1536x1024の寸法を確認済み。",
+  "thread_id": "01a21f07-b227-7371-a22c-1697d184d202",
+  "token_usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 117248,
+    "input_tokens": 126582,
+    "output_tokens": 883,
+    "reasoning_output_tokens": 26,
+    "total_tokens": 127465,
+    "uncached_input_tokens": 9334
+  },
+  "token_usage_source": "codex_rollout.turn_token_usage",
+  "visual_family": "editorial lifestyle",
+  "width": 1536
 }
