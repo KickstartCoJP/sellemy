@@ -1,12 +1,49 @@
 {
-  "generation_method": "generative_ai",
-  "provider": "openai",
-  "model": "gpt-image-2.5-sunburst",
-  "quality": "high",
-  "operation_id": "sellemy-eyecatch-electric-shavers-6-picks-80919ef2d315ab69",
-  "request_sha256": "80919ef2d315ab696d34de8be02f0a2209356cd0d949991999caae44aa73d627",
-  "image_sha256": "c6b92224f1757ba2cb6cab751120efa524dfb741e90ebfbc0f91c29fbb19e609",
-  "width": 1536,
+  "generated_at": "2026-11-27T20:30:35.072705+00:00",
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "generation_route_attestation": "codex_rollout_extension",
   "height": 1024,
-  "generated_at": "2026-09-23T22:39:34.886760+00:00"
+  "image_generation_internal_usage_exposed": false,
+  "image_sha256": "1fa53b9eb7595f54bbe0c22dd6d3910713835272bd197b241172f9417dfd062a",
+  "member_binding_revision": 13,
+  "model": "gpt-6-sol",
+  "model_reported_generation_route": "built-in_image_gen",
+  "role_id": "bu-codex-sellemy-designer",
+  "routing": {
+    "api_share": 0,
+    "codex_reserve_percent": 20.0,
+    "codex_share": 100,
+    "codex_usage": {
+      "remaining_percent": 68.0,
+      "resets_at": 1796330023,
+      "source": "/Users/kickstart/.codex/sessions/2026/11/28/rollout-2026-11-28T05-28-33-01a21eb2-07dd-7e33-ae34-03e65bac579e.jsonl",
+      "used_percent": 32.0,
+      "window_minutes": 10080
+    },
+    "errors_before_success": [],
+    "executed_route": "codex",
+    "fallback_from": null,
+    "mode": "weighted_random",
+    "reason": "weighted_random",
+    "remaining_percent": 68.0,
+    "roll": 17,
+    "selected_route": "codex",
+    "total_weight": 100
+  },
+  "routing_recorded_at": "2026-11-27T20:30:35.074001+00:00",
+  "summary": "外泊に向けて電気シェーバーを洗面ポーチへ収める場面。PNG形式と1536x1024の寸法を確認済み。",
+  "thread_id": "01a21ea5-4d25-74f3-8d19-d1abe91d271f",
+  "token_usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 163712,
+    "input_tokens": 168124,
+    "output_tokens": 709,
+    "reasoning_output_tokens": 0,
+    "total_tokens": 168833,
+    "uncached_input_tokens": 4412
+  },
+  "token_usage_source": "codex_rollout.turn_token_usage",
+  "visual_family": "travel preparation lifestyle",
+  "width": 1536
 }
