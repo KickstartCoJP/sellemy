@@ -1,0 +1,109 @@
+{
+  "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+  "evidence_sha256": "1d570fa4679abf9082c8937819aa913dfac80ac54953a82dc9b6c0e8af39f7b6",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 11520,
+    "input_tokens": 24618,
+    "listing_identity_citations_repaired": [
+      "p1",
+      "p2",
+      "p3",
+      "p4",
+      "p6"
+    ],
+    "member_binding_revision": 4,
+    "output_tokens": 1971,
+    "reasoning_effort": "medium",
+    "reasoning_output_tokens": 832,
+    "reused_product_qa": true,
+    "session_id": "01a21d00-a3ef-7033-aa1d-69c03ea4051f",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "4fa3ad86b47efa1307cfcb11ae747f48729d9300fad44984b119bfba5453d067",
+  "review": {
+    "buying_guidance": false,
+    "claims_grounded": false,
+    "complete_comparison": false,
+    "distinct_products": true,
+    "duplicate_pair_checks": [],
+    "editorial_voice_appropriate": false,
+    "internal_qa_leak_absent": false,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "クイックル 【まとめ買い】ワイパー 床用掃除シート ドライシート 40枚入 × 3個",
+        "identity_quote": "クイックル 【まとめ買い】ワイパー 床用掃除シート ドライシート 40枚入 × 3個",
+        "reason": "掲載タイトルから床用ドライシートと識別でき、定番品を探す切り口で紹介できる。繊維数や捕集性能を裏付ける検証済み資料はない。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "山崎産業(Yamazaki Sangyo) フローリング用 ウェットシート まとめ買いセット 20枚入x10袋 合計200枚 169979",
+        "identity_quote": "山崎産業(Yamazaki Sangyo) フローリング用 ウェットシート まとめ買いセット 20枚入x10袋 合計200枚 169979",
+        "reason": "検証済みの商品ページで床用ウェットシートと識別でき、日々の水拭きに備える切り口で紹介できる。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "daily_dry_cleanup",
+            "quote": "Fluffy dry sheet with ultra-fine fiber that is more than twice as thick as tissue paper It effectively captures microscopic dirt on the floor, such as hair, pet hair, dust, and breadcrumbs"
+          }
+        ],
+        "identity_key": "【Amazon.co.jp限定】 3M ドライシート フローリング 床 拭き 掃除 無添加 ふわふわ 厚手 18枚×4個 スコッチブライト",
+        "identity_quote": "【Amazon.co.jp限定】 3M ドライシート フローリング 床 拭き 掃除 無添加 ふわふわ 厚手 18枚×4個 スコッチブライト",
+        "reason": "検証済みの商品ページで床用ドライシートと識別でき、髪の毛やほこりを集める日常掃除の切り口に合う。宣伝文句だけで捕集性能や安全性は確定しない。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "daily_dry_cleanup",
+            "quote": "Use: For cleaning floors, hallways, etc."
+          }
+        ],
+        "identity_key": "アズマ工業(Azuma Industrial) アズマ ワイパー取替シート TKふんわりワイパーシート50枚ロールBL シート幅30×20cm ブルー 薬剤不使用のドライシート",
+        "identity_quote": "アズマ工業(Azuma Industrial) アズマ ワイパー取替シート TKふんわりワイパーシート50枚ロールBL シート幅30×20cm ブルー 薬剤不使用のドライシート",
+        "reason": "検証済みの商品ページで床掃除用シートと識別できる。取替シートは記事の対象である床掃除用シートに当たり、日常掃除の切り口に合う。床の溝での捕集性能は、この抜粋からは確定できない。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "クイックルワイパー 立体吸着ウエットシート ストロング",
+        "identity_quote": "【大容量】クイックルワイパー 立体吸着ウエットシート ストロング しつこいベタベタまで一気にサッパリ 48枚入り ジャンボパック",
+        "reason": "掲載タイトルからウェットシートと識別でき、p1のドライシートとは種類が異なる。食卓まわりの水拭きという切り口に合うが、油汚れへの具体的な洗浄性能は確認済みの事実として扱えない。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "レック 水の激落ち 超厚 ウェットシート 20枚入 (2個パック) フローリングシート/洗剤不使用/除菌 /24時間抗菌 / アルカリ電解水使用 / S00921",
+        "identity_quote": "レック 水の激落ち 超厚 ウェットシート 20枚入 (2個パック) フローリングシート/洗剤不使用/除菌 /24時間抗菌 / アルカリ電解水使用 / S00921",
+        "reason": "掲載タイトルからフローリング用ウェットシートと識別でき、食卓まわりの水拭きという切り口に合う。タイトル中の除菌・抗菌効果や粒ごみの捕集性能は検証済みの事実として扱えない。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reader_decision_outsourcing_absent": false,
+    "reason": "根拠情報のみの審査。各商品の掲載タイトルまたは検証済みの商品ページから、床掃除用シートとしての識別と担当する紹介切り口への適合を確認できる。明白な重複や対象外商品はない。資料にない性能や効果は、記事で確認済みの事実として扱えない。",
+    "recommendation_conclusion": false,
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}
