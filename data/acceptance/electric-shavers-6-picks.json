@@ -1,0 +1,128 @@
+{
+  "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+  "evidence_sha256": "aa599bbda8b9b17b8b2a721116b99327980a7af31e87550c7e08190de23141da",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 11520,
+    "input_tokens": 26007,
+    "listing_identity_citations_repaired": [
+      "p1",
+      "p2",
+      "p3",
+      "p4",
+      "p5",
+      "p6"
+    ],
+    "member_binding_revision": 4,
+    "output_tokens": 1646,
+    "reasoning_effort": "medium",
+    "reasoning_output_tokens": 303,
+    "reused_product_qa": true,
+    "session_id": "01a21ce9-5f64-79f3-aba9-3fc19069c6ba",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "b937a004a02d8812ef5075678bc543940782c89b838c985c2b461364eb1010b8",
+  "review": {
+    "buying_guidance": false,
+    "claims_grounded": false,
+    "complete_comparison": false,
+    "distinct_products": true,
+    "duplicate_pair_checks": [],
+    "editorial_voice_appropriate": false,
+    "internal_qa_leak_absent": false,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "ブラウン 電気シェーバー 【エントリーモデル】シリーズ5 メンズ 電動 髭剃り ケース付き 52-M1200s Amazon.co.jp 限定",
+        "identity_quote": "ブラウン 電気シェーバー 【エントリーモデル】シリーズ5 メンズ 電動 髭剃り ケース付き 52-M1200s Amazon.co.jp 限定",
+        "reason": "検証済み商品掲載情報（https://www.amazon.co.jp/dp/B0CTQ1XFRL?th=1）のタイトルで型番を識別できる電気シェーバー本体。3枚の刃、キワぞりトリマー、トラベルケースを手がかりに定番候補として紹介できる。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "パナソニック メンズ シェーバー ラムダッシュ 3枚刃 電動 髭剃り ACアダプター充電 ウォータースルー洗浄 ES-L321W-K ブラック",
+        "identity_quote": "パナソニック メンズ シェーバー ラムダッシュ 3枚刃 電動 髭剃り ACアダプター充電 ウォータースルー洗浄 ES-L321W-K ブラック",
+        "reason": "検証済み商品掲載情報（https://www.amazon.co.jp/dp/B0FKG6WN38?th=1）のタイトルで型番を識別できる電気シェーバー本体。3枚刃、ウォータースルー洗浄、付属のオイルとブラシを手がかりに日常使いの候補として紹介できる。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "travel_ready",
+            "quote": "Compact size that is convenient for travel and business trips"
+          },
+          {
+            "axis_id": "travel_ready",
+            "quote": "Weight: 3.5 oz (100 g) (excluding batteries)"
+          }
+        ],
+        "identity_key": "Panasonic ES4815P-S Twin X Men's Shaver (Battery Operated)",
+        "identity_quote": "Panasonic ES4815P-S Twin X Men's Shaver (Battery Operated)",
+        "reason": "検証済み商品掲載情報（https://www.amazon.co.jp/dp/B001MBV4WY）のタイトルで型番を識別できる乾電池式の電気シェーバー本体。小型設計と電池を除く重量が、外泊時の持ち運びという紹介切り口に合う。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "travel_ready",
+            "quote": "Power Supply: AC 100V - 240V 50/60Hz"
+          },
+          {
+            "axis_id": "travel_ready",
+            "quote": "Accessories: Power adapter, brush, cap, pouch, replacement blade (outer blade SO-V578)"
+          }
+        ],
+        "identity_key": "Izumi Izumi Electric Shaver Solid Series 5 Blades Reciprocating Type Main Unit Can Be Full",
+        "identity_quote": "Izumi Izumi Electric Shaver Solid Series 5 Blades Reciprocating Type Main Unit Can Be Fully Washed Red (Includes 1 Replacement Blade) IZF-V579-R-EA",
+        "reason": "検証済み商品掲載情報（https://www.amazon.co.jp/dp/B07ZQV252K?th=1）のタイトルで型番を識別できる電気シェーバー本体。電源の対応範囲、充電時間、ポーチとキャップの付属が、外泊時の充電と持ち運びという紹介切り口に合う。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "easy_maintenance",
+            "quote": "6-in-1 Alcohol Cleaning System"
+          }
+        ],
+        "identity_key": "ブラウン 電気シェーバー シリーズ9 SPORT 電動 髭剃り メンズ 9360cc 【Amazon.co.jp 限定】6in1アルコール洗浄システム",
+        "identity_quote": "ブラウン 電気シェーバー シリーズ9 SPORT 電動 髭剃り メンズ 9360cc 【Amazon.co.jp 限定】6in1アルコール洗浄システム",
+        "reason": "検証済み商品掲載情報（https://www.amazon.co.jp/dp/B0DSJB2627?th=1）のタイトルでシリーズと型番を識別できる電気シェーバー本体。記載されたアルコール洗浄システムが、帰宅後の手入れという紹介切り口に合う。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "easy_maintenance",
+            "quote": "The 5-in-1 alcohol cleaning system cleans the blades and keeps them clean, providing a new-like shaving experience every day Charging at the same time"
+          }
+        ],
+        "identity_key": "ブラウン 電気シェーバー シリーズ8 洗浄機付き 電動 髭剃り メンズ 【Amazon.co.jp 限定】 8560cc 5 in 1 100％防水設計 4+1 カットシステム 進",
+        "identity_quote": "ブラウン 電気シェーバー シリーズ8 洗浄機付き 電動 髭剃り メンズ 【Amazon.co.jp 限定】 8560cc 5 in 1 100％防水設計 4+1 カットシステム 進化したキワぞり刃 夕方ヒゲ、ゼロへ 電動シェーバー 【最新2023年秋モデル】",
+        "reason": "検証済み商品掲載情報（https://www.amazon.co.jp/dp/B0CBPDCQLF?th=1）のタイトルでシリーズと型番を識別できる電気シェーバー本体。記載された刃の洗浄と同時充電が、帰宅後の手入れという紹介切り口に合う。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reader_decision_outsourcing_absent": false,
+    "reason": "根拠情報のみの審査。検証済みの商品掲載情報に記された型番または製品系列から、電気シェーバー本体6点を個別に識別できる。各商品は担当する紹介グループに適合し、紹介に使える事実がある。提示された組み合わせに重複を示す積極的な根拠はない。記事本文は未提出のため、記事に関する項目は未評価。",
+    "recommendation_conclusion": false,
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}
