@@ -1,0 +1,37 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "CEO-BU002-REMOVE-MANDATORY-CHOICE-SECTION-20261127",
+  "instruction_ref": "CEO 2026-11-27: 選び方を必須指定した設計を直せ。Writerのタイトルが補助欄の語彙に引っ張られている。",
+  "instruction": "Keep the JSON transport field for compatibility, but make the general explanation section optional content, remove its minimum-length requirement as a mandatory guide, omit empty sections in the renderer, and stop instructing Writer to create a generic buyer guide regardless of topic. Preserve all product/evidence/approval gates.",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3",
+    "https://app.notion.com/p/3dc67ec6a1008196b017ee01e1824bba"
+  ],
+  "implementer": "BU-002 isolated Staging implementation",
+  "allowed_paths": [
+    "change-contracts/bu002-optional-general-section-20261127.json",
+    "pipeline/writer_runtime.py",
+    "pipeline/editorial_plan.py",
+    "pipeline/payload_schema.py",
+    "pipeline/renderer.py",
+    "pipeline/qa.py",
+    "pipeline/editorial_qa.py",
+    "config/editorial-qa.md",
+    "config/safety-qa.md",
+    "tests/test_optional_general_section_20261127.py",
+    "tests/test_affiliate_first_separation_20261127.py",
+    "tests/test_prose_lower_bounds_only.py"
+  ],
+  "preserved_rules": [
+    "Planner decides topic and axes; Writer remains responsible for article h1",
+    "No new banned title strings or mechanical title template or quota",
+    "Existing JSON transport schema field retained for Codex structured output compatibility",
+    "Product identity, evidence, article safety, independent QA and CEO publication approval remain enforced",
+    "Existing article data and CEO review drafts remain untouched until approved replacement"
+  ],
+  "acceptance_tests": [
+    "tests/test_optional_general_section_20261127.py",
+    "tests/test_affiliate_first_separation_20261127.py",
+    "tests/test_prose_lower_bounds_only.py"
+  ]
+}

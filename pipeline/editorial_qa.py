@@ -33,7 +33,7 @@ COMPATIBLE_HINT_ONLY_VERSIONS={
 def _compatible_contract(version: object) -> bool:
     return (version == VERSION or
             (VERSION == CANON_NONBINDING_BASE and version in COMPATIBLE_HINT_ONLY_VERSIONS))
-FIELDS=('h1','lead','summary','how_to_choose','conclusion')
+FIELDS=('h1','lead','summary','conclusion')
 def article_text(payload):
     if not isinstance(payload,dict): raise ValueError('article must be an object')
     if any(not isinstance(payload.get(k),str) or not payload[k].strip() for k in FIELDS):raise ValueError('article prose incomplete')
@@ -63,7 +63,7 @@ def review_prompt(subject):
     return (CONTRACT + '\nEvaluate ONLY this one article. Return JSON with verdict, reason, quotes. '
             'Every quote must be a literal substring from this same article; do not paraphrase quotes. '
             'PASS may return an empty quotes array. FAIL must include exact failing excerpts. '
-            'Read all six product descriptions, every group angle, lead, summary, buying guide and conclusion. Compare each part against the reader goal and editorial brief; quote actual lines for unsupported generic recommendations, repeated claims or changed article intent. No ranking or universal best product is required.\nARTICLE:\n' +
+            'Read all six product descriptions, every group angle, lead, summary, any optional general explanation and conclusion. Compare each part against the reader goal and editorial brief; quote actual lines for unsupported generic recommendations, repeated claims or changed article intent. No ranking or universal best product is required.\nARTICLE:\n' +
             json.dumps(subject['article'],ensure_ascii=False))
 
 def make_receipt(verdict,subject):

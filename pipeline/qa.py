@@ -157,7 +157,7 @@ def run_qa(html: str, payload: dict, evidence: dict, *, acceptance: dict | None 
     results['summary_len'] = len(payload['summary'])
     results['summary_in_range'] = results['summary_len'] >= SUMMARY_MIN
     results['how_to_choose_len'] = len(payload['how_to_choose'])
-    results['how_to_choose_in_range'] = results['how_to_choose_len'] >= HOW_TO_CHOOSE_MIN
+    results['how_to_choose_in_range'] = results['how_to_choose_len'] >= HOW_TO_CHOOSE_MIN  # Diagnostic only; no publication gate.
     results['main_len'] = main_text_length(html)
 
     descriptions = [p['description'] for p in payload['products']]

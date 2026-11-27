@@ -81,7 +81,8 @@ def render_article(payload: dict, evidence: dict | None, *, today: date | None =
         f'<div class="section-title"><h1>{h1}</h1></div><div class="item-eyecatch"><img src="{eyecatch}" alt="{h1}" /></div>'
         f'<p class="lead">{html.escape(payload["lead"])}</p><p class="summary">{summary}</p><nav class="toc"><strong>記事の切り口</strong><ul>{"".join(toc)}</ul></nav>'
         + ''.join(sections)
-        + f'<section id="how-to-choose"><div class="section-title"><h2>知っておきたいポイント</h2></div><p>{html.escape(payload["how_to_choose"])}</p><p class="conclusion">{html.escape(payload["conclusion"])}</p></section>'
+        + (f'<section id="how-to-choose"><div class="section-title"><h2>知っておきたいポイント</h2></div><p>{html.escape(payload["how_to_choose"])}</p></section>' if payload['how_to_choose'].strip() else '')
+        + f'<p class="conclusion">{html.escape(payload["conclusion"])}</p>'
         + render_related_features(related_features or [])
         + f'</main><footer><p>&copy; {year} Sellemy. All rights reserved.</p></footer></body></html>'
     )
