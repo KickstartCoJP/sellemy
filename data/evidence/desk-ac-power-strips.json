@@ -4,177 +4,392 @@
   "category": "gadget",
   "comparison_axes": [
     {
-      "id": "outlet_layout",
+      "id": "popular",
       "keywords": [
-        "AC口数",
-        "差込口間隔",
-        "差込方向",
-        "ACアダプター寸法"
+        "人気"
       ],
-      "label": "差込口の数・向き・間隔"
+      "label": "人気・定番の基準"
     },
     {
-      "id": "installation_fit",
+      "id": "desk_edge_access",
       "keywords": [
-        "マグネット",
+        "デスク固定",
         "クランプ",
-        "コード長",
-        "プラグ形状"
+        "机の縁",
+        "手元で抜き差し"
       ],
-      "label": "固定方法と配線の条件"
+      "label": "机の縁に固定して、抜き差ししやすくする"
     },
     {
-      "id": "rated_protection",
+      "id": "adapter_clearance",
       "keywords": [
-        "合計定格容量",
-        "過電流保護",
-        "ほこり防止シャッター",
-        "雷サージ保護"
+        "差込口の間隔",
+        "差込口の向き",
+        "ACアダプター",
+        "プラグの干渉"
       ],
-      "label": "定格容量と保護機構"
+      "label": "大型ACアダプターを差しても隣の口を使いやすくする"
     }
   ],
   "eyecatch_image": "https://www.sellemy.jp/img/desk-ac-power-strips/desk-ac-power-strips.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "2312c1d46b9e1e2bf4bb6213159f4542cdd1354293cfe3dd85bf136d4ca924e3",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 27163,
+      "listing_identity_citations_repaired": [
+        "p2",
+        "p3",
+        "p4",
+        "p5"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 1646,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 492,
+      "session_id": "01a21afe-4026-7340-9605-9407f63944a9",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "Equipped with 2 USB-C ports, 2 USB-A ports, and 6 outlets to charge up to 10 devices simultaneously"
+            }
+          ],
+          "identity_key": "Anker USB Power Strip (10-in-1, 20W)",
+          "identity_quote": "Anker USB Power Strip (10-in-1, 20W) - 6 x AC, 2 x USB-C and 2 x USB-A",
+          "reason": "AC差込口6口とUSB端子を備える電源タップとして識別できる。机でAC機器とUSB充電機器を併用する用途に合う。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "It has a separate switch that can be turned on and off for each connected device and individually conserves standby power"
+            }
+          ],
+          "identity_key": "エレコム 電源タップ 6個口 3m 雷ガード 個別スイッチ ほこりシャッター付 耐熱 PSE技術基準適合 ブラック T-K6A-2630BK",
+          "identity_quote": "エレコム 電源タップ 6個口 3m 雷ガード 個別スイッチ ほこりシャッター付 耐熱 PSE技術基準適合 ブラック T-K6A-2630BK",
+          "reason": "型番で識別できる6口の電源タップ。接続機器ごとに電源を切りたい用途に合う。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "desk_edge_access",
+              "quote": "It is a 2-pin 3-outlet power strip with a clip mechanism that can be clamped onto a desk or similar surface"
+            }
+          ],
+          "identity_key": "エレコム 電源タップ 雷ガード 3個口 クリップ ほこりシャッター付 スイングプラグ 3m ブラック ECT-1430BK",
+          "identity_quote": "エレコム 電源タップ 雷ガード 3個口 クリップ ほこりシャッター付 スイングプラグ 3m ブラック ECT-1430BK",
+          "reason": "型番で識別できるクリップ付き電源タップ。机の天板を挟み、差込口を手元に置く用途に合う。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "desk_edge_access",
+              "quote": "The leg parts are equipped with powerful neodymium magnets, allowing for secure attachment to steel furniture and office equipment"
+            }
+          ],
+          "identity_key": "エレコム 電源タップ 10個口 2m マグネット 吊り下げ スリム 雷ガード ほこりシャッター ブラック ECT-2620BK",
+          "identity_quote": "エレコム 電源タップ 10個口 2m マグネット 吊り下げ スリム 雷ガード ほこりシャッター ブラック ECT-2620BK",
+          "reason": "型番で識別できる磁石付きの10口電源タップ。スチール製の机や家具の側面を使える場所で、差込口を手の届く位置に置く用途に合う。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "adapter_clearance",
+              "quote": "The spacing between the outlets of the power strip is approximately 2.3 inches (58 mm), which is wider compared to regular power strips, allowing for a neat connection of AC adapters"
+            }
+          ],
+          "identity_key": "エレコム 電源タップ ACアダプタが5つ挿せる幅広コンセント 雷ガード付 6個口 2m ホワイト T-NSLK-2620WH",
+          "identity_quote": "エレコム 電源タップ ACアダプタが5つ挿せる幅広コンセント 雷ガード付 6個口 2m ホワイト T-NSLK-2620WH",
+          "reason": "型番で識別できる、差込口の間隔が広い6口電源タップ。複数のACアダプターを接続する用途に合う。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "adapter_clearance",
+              "quote": "The slot rotates so you can plug it in even a large AC adapter without waste."
+            }
+          ],
+          "identity_key": "ELPA WBS-SL702SB(W)",
+          "identity_quote": "Elpa WBS-SL702SB(W) Lightning Resistant Slim Rotating Tap Power Supply Extension Cord 125V 6.6 ft (2 m) 7 Outlets",
+          "reason": "型番で識別できる、回転する差込口を備えた7口電源タップ。ACアダプターの形に合わせて差し込む向きを調整したい用途に合う。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "検証済みの商品掲載情報により、6商品をそれぞれ異なる電源タップとして識別できる。各商品には担当する紹介切り口に合う具体的な特徴があり、3グループ各2商品で紹介できる。記事本文は未提出のため、本文に関する判定項目はfalseとした。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
   "products": [
     {
-      "amazon_title": "サンワサプライ TAP-B114UC-2BK",
-      "asin": "B0GGP5CP1S",
-      "brand": "サンワサプライ",
+      "amazon_title": "Anker USB Power Strip (10-in-1, 20W) - 電源タップ AC×6 USB-C×2 USB-A×2",
+      "asin": "B0CN3HPGRW",
+      "brand": "Anker",
+      "discovery_axis_id": "popular",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61Y1rL70AtL._AC_SL1500_.jpg",
-      "matched_comparison_axes": [
-        "installation_fit"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/51OZXl-zgoL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B0GGP5CP1S",
+      "product_id": "AMZ-B0CN3HPGRW",
+      "provisional": false,
+      "rating": 4.3,
       "ref": "p1",
-      "search_key": "サンワサプライ クランプ固定式タップ（AC4個口＋USB-C×3",
-      "selection_score": 0.48,
-      "selected_variant": {
-        "model": "TAP-B114UC-2BK",
-        "colour": "ブラック",
-        "cord": "2m",
-        "configuration": "AC4口・USB-C3・USB-A1",
-        "pack_count": 1
-      }
+      "review_count": 1791,
+      "search_key": "Anker USB Power Strip (10-in-1, 20W) -",
+      "selection_reason": "AC6口とUSB-C・USB-A各2口を備え、差込口は抜き差ししやすい15度の角度付き。ノートPC周辺機器をACにつなぎ、スマホなどはUSBで充電したい人に向く。薄型約3cmで平たいコードを採用している点も、机上の収まりを考える理由になる。[Anker公式](https://www.ankerjapan.com/products/a91f2)",
+      "sources": [
+        {
+          "brand": "Anker",
+          "excerpt": "Anker USB Power Strip (10-in-1, 20W) - 6 x AC, 2 x USB-C and 2 x USB-A\nAbout this item\nThin and Compact Design: The compact design is about 1.2 inches (3 cm) thin, making it easy to carry around\nSimultaneous charging of 10 devices: Equipped with 2 USB-C ports, 2 USB-A ports, and 6 outlets to charge up to 10 devices simultaneously\nMore user-friendly design: The outlet outlet has a 15 degree angle. Plugging and unplugging has never been easier\nBuilt-in Tangle-Free Cable: Adopts a flat cord that is difficult to tangle, and can be stored in a thin and compact manner, making it convenient to carry\nHIGH SAFETY: In addition to the same multi-protection system, ActiveShield 2.0 provides superior safety. Unique temperature management and connection device protection system keeps your device 24 hours\nPackage includes: Anker USB Power Strip (10-in-1, 20W), Screws (2), User Manual, Customer Support › See more product details\nBrand Anker\nColor white\nTotal Power Outlets 10\nVoltage 125 Volts\nSpecial Feature Easy to carry, Usb Slot",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Anker USB Power Strip (10-in-1, 20W) - 6 x AC, 2 x USB-C and 2 x USB-A",
+          "url": "https://www.amazon.co.jp/dp/B0CN3HPGRW?th=1",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "Panasonic ザ・タップX WHA2526WP",
-      "asin": "B005FDE7WY",
-      "brand": "パナソニック",
+      "amazon_title": "エレコム 電源タップ 6個口 3m 雷ガード 個別スイッチ ほこりシャッター付 耐熱 PSE技術基準適合 ブラック T-K6A-2630BK",
+      "asin": "B07V1XJ56J",
+      "brand": "エレコム(ELECOM)",
+      "discovery_axis_id": "popular",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/81M0IgRXSpL._SL1500_.jpg",
-      "matched_comparison_axes": [],
+      "image_url": "https://m.media-amazon.com/images/I/61PZ7PQbJVL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B005FDE7WY",
+      "product_id": "AMZ-B07V1XJ56J",
+      "provisional": false,
+      "rating": 4.5,
       "ref": "p2",
-      "search_key": "ClimatePartner Verified",
-      "selection_score": 0.3,
-      "selected_variant": {
-        "model": "WHA2526WP",
-        "colour": "ホワイト",
-        "cord": "2m",
-        "outlets": 6,
-        "pack_count": 1
-      }
+      "review_count": 19660,
+      "search_key": "エレコム(ELECOM) エレコム 電源タップ 6個口 3m 雷ガード 個別スイッチ ほこ",
+      "selection_reason": "6口それぞれに個別スイッチがあり、スイッチを斜めに配置して大きめのプラグやACアダプターとの干渉を抑える設計。モニターなど、席を離れるときに電源を切りたい機器が複数ある人に向く。壁のコンセントから机まで取り回せる3mコードも備える。[エレコム公式](https://www.elecom.co.jp/products/T-K6A-2630BK.html)",
+      "sources": [
+        {
+          "brand": "エレコム(ELECOM)",
+          "excerpt": "Elecom T-K6A-2630BK Power Strip, 6 Outlets, 9.8 ft (3 m), Lightning Guard, Individual Switches, Dust Shutters, Heat Resistant, PSE Technical Standards Compliant, Black\nAbout this item\nFor more details, please check the \"Product Specifications\" and \"Product Description\"\nThis is a lightning guard tap with a built-in high-performance lightning surge absorber that protects electronic devices from lightning surge\nEquipped with a built-in high-performance lightning surge absorber (barista) with a maximum surge voltage of 12,500 V, which is effective in preventing damage to electronic devices such as computer and AV devices. The maximum surge voltage of 12,500 V is based on JEC 210/212 standards\nIt has a separate switch that can be turned on and off for each connected device and individually conserves standby power\nIndividual switches use diagonal switches to prevent interference between switches even when connected AC adapter or larger plug › See more product details\nBrand エレコム(ELECOM)\nColor Black\nTotal Power Outlets 6\nVoltage 125 Volts\nSpecial Feature Surge Protection\nVisit the エレコム(ELECOM) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Elecom T-K6A-2630BK Power Strip, 6 Outlets, 9.8 ft (3 m), Lightning Guard, Individual Switches, Dust Shutters, Heat Resistant, PSE Technical Standards Compliant, Black",
+          "url": "https://www.amazon.co.jp/dp/B07V1XJ56J?th=1",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "オーム電機 HS-T62BHL3-W",
-      "asin": "B0BP9FJJ2Q",
-      "brand": "オーム電機",
+      "amazon_title": "エレコム 電源タップ 雷ガード 3個口 クリップ ほこりシャッター付 スイングプラグ 3m ブラック ECT-1430BK",
+      "asin": "B097XC86LP",
+      "brand": "エレコム(ELECOM)",
+      "discovery_axis_id": "desk_edge_access",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/610izd65XTL._AC_SL1500_.jpg",
-      "matched_comparison_axes": [
-        "installation_fit"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/51ukSz0NiDL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B0BP9FJJ2Q",
+      "product_id": "AMZ-B097XC86LP",
+      "provisional": false,
+      "rating": 4.4,
       "ref": "p3",
-      "search_key": "グリーンハウス 電源タップホルダー 工事不要のクランプ式 ホワイ",
-      "selection_score": 0.3,
-      "selected_variant": {
-        "model": "HS-T62BHL3-W 00-5282",
-        "colour": "ホワイト",
-        "cord": "2m",
-        "outlets": 6,
-        "configuration": "雷ガード・ブレーカー付き",
-        "pack_count": 1
-      }
+      "review_count": 3024,
+      "search_key": "エレコム(ELECOM) エレコム 電源タップ 雷ガード 3個口 クリップ ほこりシャッタ",
+      "selection_reason": "15～35mm厚の天板をクリップで挟み、3口の差込口を上向きにして机の縁へ仮固定できる。食卓を一時的な仕事場にするなど、常設せず手元で抜き差ししたい人に向く。中央と両端で差込口の向きも変えてあり、大きなプラグの干渉を抑える設計。[エレコム公式](https://www.elecom.co.jp/products/ECT-1430BK.html)",
+      "sources": [
+        {
+          "brand": "エレコム(ELECOM)",
+          "excerpt": "Elecom ECT-1430BK Power Tap Lightning Guard 3 Outlet Clip with Dust Shutter Swing Plug 9.8 ft (3 m) Black\nAbout this item\nIt is a 2-pin 3-outlet power strip with a clip mechanism that can be clamped onto a desk or similar surface\nIt is convenient for temporary installation and use when working from home or doing homework in a dining table where a power strip cannot be permanently installed\nInstallation is possible on plates with a thickness of 0.6 to 1.4 inches (15 to 35 mm) When installing, make sure the insert port is facing upwards\nThe contact surface with the board is made of rubber, providing protection against scratches and anti-slip effects\nThe lower grip is equipped with a hanging hole with a diameter of 10 mm, allowing it to be hung on a wall hook, etc. for storage when not in use\nIt is equipped with a \"dust prevention shutter\" to prevent dust from entering when the plug is not inserted into the outlet\nThe insertion ports use thermoset resin with excellent heat resistance, so they won't melt even in the event of heat generation, and are effective in preventing electrical fires\nOutlets are arranged with their orientation changed at the center and both ends to minimize interference with adjacent outlets even when connecting large plugs such as AC adapters\nEquipped with a varister device that absorbs lightning surges up to 12,500 V by inductive lightning to protect the connected devices ※The surge voltage of 12,500 V is based on JEC210/212 standards Performance may degrade depending on the voltage received and the number of times it is used )\nThe 2-pin plug is equipped with an insulated sleeve to prevent fires caused by dust accumulation Show More › See more product details\nBrand エレコム(ELECOM)\nColor Black\nTotal Power Outlets 15\nVoltage 125 Volts\nSpecial Feature Slip Resistant | Scratch Resistant\nVisit the エレコム(ELECOM) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Elecom ECT-1430BK Power Tap Lightning Guard 3 Outlet Clip with Dust Shutter Swing Plug 9.8 ft (3 m) Black",
+          "url": "https://www.amazon.co.jp/dp/B097XC86LP?th=1",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "ELPA WLS-DS4232SUA(BK)",
-      "asin": "B0CZL67DL1",
-      "brand": "ELPA",
+      "amazon_title": "エレコム 電源タップ 10個口 2m マグネット 吊り下げ スリム 雷ガード ほこりシャッター ブラック ECT-2620BK",
+      "asin": "B0C6NXX228",
+      "brand": "エレコム(ELECOM)",
+      "discovery_axis_id": "desk_edge_access",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/619RJdwMo9L._AC_SL1500_.jpg",
-      "matched_comparison_axes": [
-        "installation_fit"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/51r-YchWfKL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B0CZL67DL1",
+      "product_id": "AMZ-B0C6NXX228",
+      "provisional": false,
+      "rating": 4.7,
       "ref": "p4",
-      "search_key": "エルパ(ELPA) デスクUSBタップ 4個口 集中スイッチ ブ",
-      "selection_score": 0.3,
-      "selected_variant": {
-        "model": "WLS-DS4232SUA(BK)",
-        "colour": "ブラック",
-        "cord": "2m",
-        "configuration": "AC4口・USB-A2",
-        "pack_count": 1
-      }
+      "review_count": 677,
+      "search_key": "エレコム(ELECOM) エレコム 電源タップ 10個口 2m マグネット 吊り下げ スリ",
+      "selection_reason": "スチール製の机や家具の側面を使える人なら、脚パーツの強力なネオジム磁石で10口タップを手の届く位置に固定できる。脚は展開すると重いACアダプターを挿した際の横転も抑える設計。差込口間隔は57mmが2カ所、35mmが7カ所で、プラグの形に応じて配置を考えられる。[エレコム公式](https://www.elecom.co.jp/products/ECT-2620BK.html)",
+      "sources": [
+        {
+          "brand": "エレコム(ELECOM)",
+          "excerpt": "ELECOM ECT-2620BK Power Strip, 10 Outlets, 6.6 ft (2 m), Magnet, Hanging, Slim, Lightning Guard, Dust Shutter, Black\nAbout this item\nThis is a slim 10-outlet 2-pin power strip featuring rotating storage legs and strong magnets By unfolding the leg parts, the power strip becomes less likely to tip over even when heavy AC adapters are connected Moreover, with powerful neodymium magnets, it can be firmly attached to steel furniture and office equipment\nThe 360-degree rotating leg parts, when expanded, make it less likely for the power strip to tip over even when heavy AC adapters are connected\nThe leg parts are equipped with powerful neodymium magnets, allowing for secure attachment to steel furniture and office equipment\nThe leg parts have a hanging hole with a diameter of approximately 10mm, allowing it to be hung on walls using hooks or screws\nThere are two 2.2 inches (57 mm) spacings and seven 1.4 inches (35 mm) spacing between the adjacent outlet and are designed to fit the shape of the plug The widely spaced outlets allow you to plug in larger AC adapters, etc., without interference › See more product details\nBrand エレコム(ELECOM)\nColor Black\nTotal Power Outlets 10\nVoltage 125 Volts\nSpecial Feature Surge Protection\nVisit the エレコム(ELECOM) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "ELECOM ECT-2620BK Power Strip, 10 Outlets, 6.6 ft (2 m), Magnet, Hanging, Slim, Lightning Guard, Dust Shutter, Black",
+          "url": "https://www.amazon.co.jp/dp/B0C6NXX228?th=1",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "エレコム ECT-0720BK タワー型12口タップ2m",
-      "asin": "B08HLFTN17",
-      "brand": "エレコム",
+      "amazon_title": "エレコム 電源タップ ACアダプタが5つ挿せる幅広コンセント 雷ガード付 6個口 2m ホワイト T-NSLK-2620WH",
+      "asin": "B01N6Q6FQO",
+      "brand": "エレコム(ELECOM)",
+      "discovery_axis_id": "adapter_clearance",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61PiUOKx14L._AC_SL1500_.jpg",
-      "matched_comparison_axes": [],
+      "image_url": "https://m.media-amazon.com/images/I/51ukCAKEkrL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B08HLFTN17",
+      "product_id": "AMZ-B01N6Q6FQO",
+      "provisional": false,
+      "rating": 4.4,
       "ref": "p5",
-      "search_key": "エレコム 電源タップ タワー型 延長コード 固定パーツ付 雷ガー",
-      "selection_score": 0.3,
-      "selected_variant": {
-        "model": "ECT-0720BK",
-        "color": "ブラック",
-        "cord_m": 2,
-        "ac_outlets": 12,
-        "usb_ports": "USB-A×5",
-        "pack_count": 1,
-        "jan": "4549550174732"
-      }
+      "review_count": 3689,
+      "search_key": "エレコム(ELECOM) エレコム 電源タップ ACアダプタが5つ挿せる幅広コンセント 雷",
+      "selection_reason": "上面5口の間隔が約58mmあり、メーカーはACアダプターを5つ挿せると案内している。ノートPCや周辺機器のアダプターが机下に複数集まる人に向く。さらに側面にも1口あるため、幅のあるプラグの向きを分けて配線できる。[エレコム公式](https://www.elecom.co.jp/products/T-NSLK-2620WH.html)",
+      "sources": [
+        {
+          "brand": "エレコム(ELECOM)",
+          "excerpt": "Elecom T-NSLK-2620WH Power Strip, Wide Outlet with 5 AC Adapters, Includes Lightning Guard, 6 Outlets, 6.6 ft (2 m), White\nAbout this item\nDoes not block adjacent outlets A slim power strip with dust-proof shutters and wide spacing between outlets for neat connection of AC adapters Model with built-in lightning guard\nSlim power strip with dust-proof shutter that allows for neat connection of AC adapters\nThe spacing between the outlets of the power strip is approximately 2.3 inches (58 mm), which is wider compared to regular power strips, allowing for a neat connection of AC adapters\nEquipped with 5 outlets on the top and 1 outlet on the side, it is convenient for connecting wide devices\nYou can plug in five AC adapters\nBuilt-in high performance lightning surge absorbers protect electronic devices from lightning surge\nFeatures a built-in high-performance lightning surge-absorbing element (varistor) with a maximum surge voltage of 12500 V, so it is effective in preventing damage to electronic devices, such as PCs and AV devices The maximum surge voltage of 12,500 V is based on JEC210/212 standards\nThe outlet uses urea resin, which has excellent heat resistance, making it less likely to melt in case of overheating, effectively preventing electrical fires\nIt adopts an outlet plug with an insulated cap that helps prevent fires caused by tracking phenomena\nThe power cord adopts a double coated cord that complies with the Japan Wiring Devices Standard (JWDS0010) set by the Japan Wiring Devices Manufacturers Association, which is effective in preventing electric shock and fire caused by breakage or coating damage of the cord Show More › See more product details\nBrand エレコム(ELECOM)\nColor white\nTotal Power Outlets 6\nVoltage 125 Volts\nProduct Dimensions 29.2L x 3.2W cm\nVisit the エレコム(ELECOM) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Elecom T-NSLK-2620WH Power Strip, Wide Outlet with 5 AC Adapters, Includes Lightning Guard, 6 Outlets, 6.6 ft (2 m), White",
+          "url": "https://www.amazon.co.jp/dp/B01N6Q6FQO?th=1",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "サンワサプライ TAP-SP2110N-1BK",
-      "asin": "B0C9CQQVVW",
-      "brand": "サンワサプライ",
+      "amazon_title": "エルパ(ELPA) 耐雷スリム回転タップ 電源タップ 延長コード 125V 2m 7個口 WBS-SL702SB(W)",
+      "asin": "B07H936D6F",
+      "brand": "ELPA",
+      "discovery_axis_id": "adapter_clearance",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61OvW3kvZJL._AC_SL1500_.jpg",
-      "matched_comparison_axes": [
-        "installation_fit"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/41z3xJ4nTYL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B0C9CQQVVW",
+      "product_id": "AMZ-B07H936D6F",
+      "provisional": false,
+      "rating": 4.4,
       "ref": "p6",
-      "search_key": "サンワサプライ(Sanwa Supply) 電源タップ 10個口",
-      "selection_score": 0.3,
-      "selected_variant": {
-        "model": "TAP-SP2110N-1BK",
-        "colour": "ブラック",
-        "cord": "1m",
-        "outlets": 10,
-        "pack_count": 1
-      }
+      "review_count": 252,
+      "search_key": "ELPA エルパ(ELPA) 耐雷スリム回転タップ 電源タップ 延長コード",
+      "selection_reason": "7口の差込口を回転させてプラグの向きを調整できるため、形の異なるACアダプターを並べる机に向く。本体側のコードも上下180度に回転し、ラックや壁面に沿わせて取り回せる。差込口の向きとコードの出方を設置場所に合わせられる点が、この切り口で選ぶ理由。[ELPA公式](https://www.elpa.co.jp/product/el01/elpa1291.html)",
+      "sources": [
+        {
+          "brand": "ELPA",
+          "excerpt": "Elpa WBS-SL702SB(W) Lightning Resistant Slim Rotating Tap Power Supply Extension Cord 125V 6.6 ft (2 m) 7 Outlets\nAbout this item\n(7-Port Slim Rotating Tap) The slot rotates so you can plug it in even a large AC adapter without waste. The \"Slim Rotating Tap\" features Elpa's lightning guard function, which features a slim design and a rotating outlet\n(Swing Plug for Clean Wiring) The direction of the outlet can be adjusted, so you can use the large AC adapter without getting in the way. In addition, the cord base on the tap side can also swing\nConvenient Features: Includes a lightning guard function to prevent lightning surge current. Dust proof cover prevents tracking fire, and the plug has anti-tracking coating\n(Clean Room) Designed to bend the neck of the cable. Use it neatly and smartly even in places where cables tend to get in the way\n(Product Details) Rating: AC 125 V 15 A; Total: Up to 1500 W; Usable Temperature Range: -10 °C to 40 °C; For indoor use only; Cord Length: 6.6 ft (2 m); Number of Openings: 7 openings; Accessories: 1 x Temporary fixing attachment, 2 x Countersunk screws (M3.1 x 10 x 10 x 0 x 0 mm), 4 x 4 x safety caps › See more product details\nBrand ELPA\nColor white\nTotal Power Outlets 7\nVoltage 125 Volts\nSpecial Feature Rotating Outlet\nVisit the エルパ(ELPA) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Elpa WBS-SL702SB(W) Lightning Resistant Slim Rotating Tap Power Supply Extension Cord 125V 6.6 ft (2 m) 7 Outlets",
+          "url": "https://www.amazon.co.jp/dp/B07H936D6F?th=1",
+          "verified": true
+        }
+      ]
     }
   ],
   "selection": {
-    "brand_count": 0,
-    "comparison_axes_covered": [
-      "installation_fit"
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B0CN3HPGRW",
+            "reason": "AC6口とUSB-C・USB-A各2口を備え、差込口は抜き差ししやすい15度の角度付き。ノートPC周辺機器をACにつなぎ、スマホなどはUSBで充電したい人に向く。薄型約3cmで平たいコードを採用している点も、机上の収まりを考える理由になる。[Anker公式](https://www.ankerjapan.com/products/a91f2)"
+          },
+          {
+            "asin": "B07V1XJ56J",
+            "reason": "6口それぞれに個別スイッチがあり、スイッチを斜めに配置して大きめのプラグやACアダプターとの干渉を抑える設計。モニターなど、席を離れるときに電源を切りたい機器が複数ある人に向く。壁のコンセントから机まで取り回せる3mコードも備える。[エレコム公式](https://www.elecom.co.jp/products/T-K6A-2630BK.html)"
+          }
+        ]
+      },
+      {
+        "axis_id": "desk_edge_access",
+        "products": [
+          {
+            "asin": "B097XC86LP",
+            "reason": "15～35mm厚の天板をクリップで挟み、3口の差込口を上向きにして机の縁へ仮固定できる。食卓を一時的な仕事場にするなど、常設せず手元で抜き差ししたい人に向く。中央と両端で差込口の向きも変えてあり、大きなプラグの干渉を抑える設計。[エレコム公式](https://www.elecom.co.jp/products/ECT-1430BK.html)"
+          },
+          {
+            "asin": "B0C6NXX228",
+            "reason": "スチール製の机や家具の側面を使える人なら、脚パーツの強力なネオジム磁石で10口タップを手の届く位置に固定できる。脚は展開すると重いACアダプターを挿した際の横転も抑える設計。差込口間隔は57mmが2カ所、35mmが7カ所で、プラグの形に応じて配置を考えられる。[エレコム公式](https://www.elecom.co.jp/products/ECT-2620BK.html)"
+          }
+        ]
+      },
+      {
+        "axis_id": "adapter_clearance",
+        "products": [
+          {
+            "asin": "B01N6Q6FQO",
+            "reason": "上面5口の間隔が約58mmあり、メーカーはACアダプターを5つ挿せると案内している。ノートPCや周辺機器のアダプターが机下に複数集まる人に向く。さらに側面にも1口あるため、幅のあるプラグの向きを分けて配線できる。[エレコム公式](https://www.elecom.co.jp/products/T-NSLK-2620WH.html)"
+          },
+          {
+            "asin": "B07H936D6F",
+            "reason": "7口の差込口を回転させてプラグの向きを調整できるため、形の異なるACアダプターを並べる机に向く。本体側のコードも上下180度に回転し、ラックや壁面に沿わせて取り回せる。差込口の向きとコードの出方を設置場所に合わせられる点が、この切り口で選ぶ理由。[ELPA公式](https://www.elpa.co.jp/product/el01/elpa1291.html)"
+          }
+        ]
+      }
     ],
-    "content_duplicates_removed": [],
-    "price_used_as_constraint_only": true
+    "brand_count": 3,
+    "candidate_count": 27,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [
+      {
+        "asin": "B0CN3HPGRW",
+        "check_items": {
+          "color_design_only": "UNKNOWN",
+          "function_structure_difference": "UNKNOWN",
+          "independent_comparison_value": "UNKNOWN",
+          "manufacturer_brand_relation": "UNKNOWN",
+          "sales_packaging_only": "UNKNOWN",
+          "same_product_body": "FAIL",
+          "series_generation_difference": "UNKNOWN",
+          "size_capacity_difference": "UNKNOWN"
+        },
+        "duplicate_of_asin": "B0CN3HPGRW",
+        "reason": "same_asin"
+      }
+    ],
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": [
+      "B0CN3HPGRW"
+    ],
+    "targeted_replacement": true
   },
   "slug": "desk-ac-power-strips"
 }
