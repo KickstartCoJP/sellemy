@@ -75,10 +75,10 @@ def _execute_job(slug: str, result: dict, *, cache_only: bool = False) -> str | 
                 if reviewer_receipt.get('review_passed') is not True:
                     raise GrowthRuntimeError('reviewer omitted pass receipt')
                 continue
-            if action == 'edited_review':
-                receipt = execute_role('edited_reviewer', slug)
-                if receipt.get('review_passed') is not True:
-                    raise GrowthRuntimeError('edited article independent QA did not pass')
+            if action == 'resume_approved_edit':
+                receipt = execute_role('resume_approved_edit', slug)
+                if receipt.get('next') != 'EYECATCH_PENDING':
+                    raise GrowthRuntimeError('approved edit did not enter publication route')
                 continue
             if action == 'coo_review':
                 result['status'] = 'awaiting_coo_final_review'

@@ -83,7 +83,7 @@ def _inspect(slug: str, *, cache_only: bool) -> dict:
         return {**details, 'action': 'product'}
     stage = state.get('current_stage')
     if stage == 'CEO_EDIT_QA_PENDING':
-        return {**details, 'action': 'edited_review'}
+        return {**details, 'action': 'resume_approved_edit'}
     if stage in {'WRITER_PENDING', 'QA_FAILED'}:
         # Product acceptance, not the availability of six detailed excerpts,
         # is the sole product selection gate before Writer.
@@ -98,6 +98,11 @@ def _inspect(slug: str, *, cache_only: bool) -> dict:
             raise GrowthRuntimeError(f'product acceptance integrity fault for {slug}: ' + '; '.join(issues))
         payload = read_artifact(slug, 'payload.json', {})
         acceptance = read_artifact(slug, 'acceptance.json')
+        from ceo_article_edit import ensure_edited_acceptance
+        from comparison_acceptance import is_human_edit_receipt
+        acceptance = ensure_edited_acceptance(slug, payload, evidence, acceptance)
+        if is_human_edit_receipt(acceptance):
+            return {**details, 'action': ('designer' if stage == 'EYECATCH_PENDING' else 'publish')}
         issues = receipt_issues(acceptance, evidence, payload)
         if issues:
             set_stage(slug, 'QA_FAILED', event='ACCEPTANCE_REVALIDATION_REQUIRED')
@@ -348,7 +353,7 @@ def _ceo_reconcile(*, published: bool) -> dict:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument('--role', choices=(
-        'writer', 'reviewer', 'edited_reviewer', 'review_reset', 'product', 'inspect', 'designer', 'publish', 'postpublish', 'ceo_reconcile',
+        'writer', 'reviewer', 'resume_approved_edit', 'review_reset', 'product', 'inspect', 'designer', 'publish', 'postpublish', 'ceo_reconcile',
         'planning', 'planning_commit', 'fresh_create', 'product_hold_recheck', 'quality_control_recovery', 'product_qa_disposition', 'already_published', 'slot_compensation', 'recovery', 'report', 'state_queue', 'scheduler', 'legacy_admit', 'legacy_replan', 'ceo_replan', 'legacy_precheck', 'legacy_review_finish'), required=True)
     parser.add_argument('--slug', default='')
     parser.add_argument('--cache-only', action='store_true')
@@ -361,9 +366,9 @@ def main() -> None:
         if args.role == 'writer':
             from role_execution_writer import writer
             result = writer(args.slug)
-        elif args.role == 'edited_reviewer':
-            from ceo_article_edit import recheck_approved_edit
-            result = recheck_approved_edit(args.slug)
+        elif args.role == 'resume_approved_edit':
+            from ceo_article_edit import resume_approved_edit
+            result = resume_approved_edit(args.slug)
         elif args.role == 'review_reset':
             from role_execution_writer import reset_review_artifacts
             result = reset_review_artifacts(args.slug)

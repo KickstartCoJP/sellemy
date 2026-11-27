@@ -1,0 +1,34 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "CEO-BU002-REMOVE-POST-EDIT-QA-20261128",
+  "instruction_ref": "CEO 2026-11-28: なんでだよそんな指示してねーだろ / 直せ。",
+  "instruction": "Remove the extra independent QA stage after an exact CEO or delegated COO article edit approval. Advance directly to EYECATCH_PENDING, retain explicit human approval of the revised hash, preserve product evidence, normal publish checks, and original QA history. Never revive a revoked review or fabricate independent QA receipts.",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3",
+    "https://app.notion.com/p/3dc67ec6a1008196b017ee01e1824bba",
+    "https://app.notion.com/p/3fd67ec6a10081339edef6932aae8d0e"
+  ],
+  "implementer": "BU-002 isolated Staging; direct patch without Codex",
+  "allowed_paths": [
+    "pipeline/ceo_article_edit.py",
+    "pipeline/comparison_acceptance.py",
+    "pipeline/coo_article_review.py",
+    "pipeline/growth_recovery.py",
+    "pipeline/growth_runtime.py",
+    "pipeline/role_execution_publish.py",
+    "pipeline/role_stage_client.py",
+    "pipeline/role_stage_exec.py",
+    "tests/test_ceo_article_edit_20261128.py",
+    "change-contracts/bu002-edit-approval-direct-20261128.json"
+  ],
+  "preserved_rules": [
+    "Only permitted prose fields may change; evidence, product refs and comparison allocation remain fixed",
+    "Exact human approval is distinct from old QA; unchanged article QA remains unchanged",
+    "Existing deterministic publication checks, image checks and protected release remain unchanged",
+    "Revoked or stale approvals cannot authorize publication",
+    "No new topic, other BU, provider, or publication rate change"
+  ],
+  "acceptance_tests": [
+    "tests/test_ceo_article_edit_20261128.py"
+  ]
+}

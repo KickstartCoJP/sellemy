@@ -32,7 +32,7 @@ def decide(slug, *, payload_sha, evidence_sha, decision, reason, edited_payload=
             raise ValueError('COO edited article requires certified approval')
         from ceo_article_edit import apply_approved_edit
         # CEO-authorized proxy: no separate CEO click or duplicate review stage.
-        # The edited content itself must still pass the independent QA gate.
+        # Human-approved prose enters the normal publication route directly.
         return apply_approved_edit(slug, payload_sha, edited_payload, reviewer_role='coo')
     receipt = make_chat_approval(payload=payload, evidence=evidence, decision=decision,
                                  publish_allowed=decision == 'CERTIFIED',

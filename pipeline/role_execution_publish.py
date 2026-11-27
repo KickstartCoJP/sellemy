@@ -13,7 +13,8 @@ from codex_provider import (DESIGNER_SURFACE, context_session_id, record_context
 
 
 def _preflight(slug: str) -> tuple[dict, dict, dict, str]:
-    from comparison_acceptance import require_acceptance
+    from comparison_acceptance import require_acceptance, is_human_edit_receipt
+    from ceo_article_edit import ensure_edited_acceptance
     from independent_quality_gate import require_receipts
     from qa_certification import require_certification
     from chat_publish_approval import require_chat_publish_approval
@@ -26,11 +27,13 @@ def _preflight(slug: str) -> tuple[dict, dict, dict, str]:
     payload = read_artifact(slug, 'payload.json')
     acceptance = read_artifact(slug, 'acceptance.json')
     require_publishing_enabled(ROOT)
+    acceptance = ensure_edited_acceptance(slug, payload, evidence, acceptance)
     require_acceptance(payload, evidence, acceptance)
-    require_receipts(payload, evidence, acceptance,
-                     read_artifact(slug, 'independent-quality-receipts.json', {}))
-    require_certification(read_artifact(slug, 'qa-certification.json', {}), payload,
-                          evidence, read_artifact(slug, 'qa.json', {}), acceptance)
+    if not is_human_edit_receipt(acceptance):
+        require_receipts(payload, evidence, acceptance,
+                         read_artifact(slug, 'independent-quality-receipts.json', {}))
+        require_certification(read_artifact(slug, 'qa-certification.json', {}), payload,
+                              evidence, read_artifact(slug, 'qa.json', {}), acceptance)
     require_chat_publish_approval(read_artifact(slug, 'chat-publish-approval.json'),
                                   payload=payload, evidence=evidence)
     return topic, evidence, payload, category

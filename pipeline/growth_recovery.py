@@ -606,10 +606,14 @@ def materialize_for_publish(slug: str, repo: Path = ROOT) -> None:
     if (read_artifact(slug, 'product-blocker.json', {}) or {}).get('needs_product_reselection'):
         raise ValueError('comparison acceptance refused: needs_product_reselection')
     require_publishing_enabled(repo)
+    from ceo_article_edit import ensure_edited_acceptance
+    from comparison_acceptance import is_human_edit_receipt
+    acceptance = ensure_edited_acceptance(slug, payload, evidence, acceptance)
     require_acceptance(payload, evidence, acceptance)
     from qa_certification import require_certification
-    require_certification(read_artifact(slug, 'qa-certification.json', {}), payload, evidence,
-                          read_artifact(slug, 'qa.json', {}), acceptance)
+    if not is_human_edit_receipt(acceptance):
+        require_certification(read_artifact(slug, 'qa-certification.json', {}), payload, evidence,
+                              read_artifact(slug, 'qa.json', {}), acceptance)
     from operating_profile import normal_profile
     require_chat_publish_approval(read_artifact(slug, 'chat-publish-approval.json'), payload=payload, evidence=evidence)
     _atomic_json(repo / 'data' / 'acceptance' / f'{slug}.json', acceptance)
