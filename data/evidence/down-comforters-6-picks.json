@@ -1,156 +1,335 @@
 {
-  "slug": "down-comforters-6-picks",
-  "category": "dailygoods",
-  "canonical_url": "https://www.sellemy.jp/article/dailygoods/down-comforters-6-picks.html",
-  "eyecatch_image": "https://www.sellemy.jp/img/down-comforters-6-picks/down-comforters-6-picks.png",
   "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/down-comforters-6-picks.html",
+  "category": "dailygoods",
   "comparison_axes": [
     {
-      "id": "down_quality",
-      "label": "ダウン率・側生地素材",
+      "id": "popular",
       "keywords": [
-        "ダウンパワー",
-        "フランス産",
-        "側生地"
-      ]
+        "人気"
+      ],
+      "label": "人気・定番の基準"
     },
     {
-      "id": "warmth",
-      "label": "暖かさ・保温性",
+      "id": "layer_adjustable",
       "keywords": [
-        "保温",
-        "軽さ",
-        "あたたかさ"
-      ]
+        "二枚合わせ",
+        "肌掛けと合掛け",
+        "着脱"
+      ],
+      "label": "重ね方で暖かさを調整できる二枚合わせ"
     },
     {
-      "id": "size",
-      "label": "サイズ展開",
+      "id": "lighter_single",
       "keywords": [
-        "シングル",
-        "セミダブル",
-        "ダブル"
-      ]
-    },
-    {
-      "id": "care",
-      "label": "お手入れのしやすさ",
-      "keywords": [
-        "丸洗い",
-        "収納",
-        "圧縮"
-      ]
-    },
-    {
-      "id": "price",
-      "label": "価格帯",
-      "keywords": [
-        "価格",
-        "コスパ"
-      ]
+        "薄掛け",
+        "合掛け",
+        "詰め物量"
+      ],
+      "label": "暖房の効いた寝室に合わせる薄掛け・合掛け"
     }
   ],
-  "selection": {
-    "comparison_axes_covered": [
-      "size"
-    ],
-    "brand_count": 6,
-    "price_used_as_constraint_only": true
+  "eyecatch_image": "https://www.sellemy.jp/img/down-comforters-6-picks/down-comforters-6-picks.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "604c15a714d56f709fc7cb597c8bbd767ac2c9ebb409c014e323ed88b8937e44",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 26083,
+      "listing_identity_citations_repaired": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 2440,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 1486,
+      "session_id": "01a21b6a-1596-7710-8769-d3c331fd02e3",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "Fill Capacity: 2.2 lbs (1.0 kg)"
+            }
+          ],
+          "identity_key": "タンスのゲン 羽毛布団 シングル ダックダウン90％ 充填量1.0kg 防ダニ 抗菌 防臭 日本製 掛け布団 冬 10119001(72199)",
+          "identity_quote": "タンスのゲン 羽毛布団 シングル ダックダウン90％ 充填量1.0kg 防ダニ 抗菌 防臭 日本製 掛け布団 冬 10119001(72199)",
+          "reason": "検証済みの商品資料 https://www.amazon.co.jp/dp/B00GM7WDQY?th=1 に型番と詰め物量1.0kgの記載がある。冬用の一枚物として紹介できる。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "羽毛布団 シングル 日本製 ホワイトダックダウン93% 超長綿100% 1.2kg 400dp 立体キルト 掛け布団 冬用 いいはねふとん店",
+          "identity_quote": "羽毛布団 シングル 日本製 ホワイトダックダウン93% 超長綿100% 1.2kg 400dp 立体キルト 掛け布団 冬用 いいはねふとん店",
+          "reason": "この商品のamazon_title欄で冬用の一枚物として識別できる。検証済みの資料はないため、掲載タイトルを超える仕様は未確認。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "layer_adjustable",
+              "quote": "This set includes a matching comforter and a skin comforter. Each can also be used alone, allowing you to adjust the combination according to the season and room temperature."
+            }
+          ],
+          "identity_key": "SNOWMAN 2枚合わせ羽毛布団 シングル ダウン80% 肌掛け(夏)＋合掛け(春・秋)=2枚合わせ羽毛布団（冬） 二枚合わせ 羽毛掛け布団セット ダウンケット 掛け布団",
+          "identity_quote": "SNOWMAN 2枚合わせ羽毛布団 シングル ダウン80% 肌掛け(夏)＋合掛け(春・秋)=2枚合わせ羽毛布団（冬） 二枚合わせ 羽毛掛け布団セット ダウンケット 掛け布団",
+          "reason": "検証済みの商品資料 https://www.amazon.co.jp/dp/B01JZ0EEDY?th=1 に肌掛けと合掛けの二枚組で、各一枚でも使えると記載されている。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "【日本製・3年保証・抗菌防臭で洗える羽毛布団】掛け布団 シングル 2枚合わせ 150×210cm オールシーズン設計 クリーム いいはねふとん店",
+          "identity_quote": "【日本製・3年保証・抗菌防臭で洗える羽毛布団】掛け布団 シングル 2枚合わせ 150×210cm オールシーズン設計 クリーム いいはねふとん店",
+          "reason": "この商品のamazon_title欄で二枚合わせの羽毛布団として識別できる。検証済みの資料はないため、洗濯方法などの詳細は未確認。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "lighter_single",
+              "quote": "A thin and lightweight summer down comforter"
+            },
+            {
+              "axis_id": "lighter_single",
+              "quote": "【Filling weight】0.55 lbs (0.25 kg)"
+            }
+          ],
+          "identity_key": "昭和西川 ダウンケット 羽毛布団 春 夏 秋用 シングル 軽量 薄手 洗える 掛け布団 肌掛けふとん オールシーズン 肌掛け ホワイトダックダウン50％ 0.25kg シングル シ",
+          "identity_quote": "昭和西川 ダウンケット 羽毛布団 春 夏 秋用 シングル 軽量 薄手 洗える 掛け布団 肌掛けふとん オールシーズン 肌掛け ホワイトダックダウン50％ 0.25kg シングル シングルロング 150×210cm グレー 2211273111937",
+          "reason": "検証済みの商品資料 https://www.amazon.co.jp/dp/B088ZFJZSF?th=1 に薄手の肌掛けと詰め物量0.25kgの記載がある。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "ハンガリー産 ホワイトダウン 93% 洗える 羽毛肌掛け布団 （ダウンケット） シングル 春や夏に最適 オールシーズン 薄手 洗濯ネット付 日本製",
+          "identity_quote": "ハンガリー産 ホワイトダウン 93% 洗える 羽毛肌掛け布団 （ダウンケット） シングル 春や夏に最適 オールシーズン 薄手 洗濯ネット付 日本製",
+          "reason": "この商品のamazon_title欄で薄手の羽毛肌掛け布団として識別できる。検証済みの資料はないため、掲載タイトルを超える仕様は未確認。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "記事未提出のため、根拠情報のみを審査した。6商品は各紹介切り口に合い、明白な重複や商品種別の不適合は示されていない。p2・p4・p6は商品掲載タイトルで識別できるが、検証済みの資料はなく、タイトルを超える仕様は未確認である。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
   },
   "products": [
     {
-      "ref": "p1",
-      "product_id": "AMZ-B0FR8DJY36",
-      "asin": "B0FR8DJY36",
-      "amazon_title": "無印良品 防ダニ 羽毛掛ふとん・中厚手／シングル 150×210cm 84906541",
-      "brand": "無印良品",
-      "image_url": "https://m.media-amazon.com/images/I/51wLbJq28wL._AC_SL1500_.jpg",
-      "observed_price": 24800,
-      "discovery_score": 1,
-      "selection_score": 0.675,
-      "matched_comparison_axes": [
-        "size"
-      ],
-      "search_key": "グランフランセヌーベル （シングル）羽毛合掛布団 ハンガリー産ホワイトダックダウンダウン",
-      "selected_variant": "シングル150×210cm、ホワイト、1枚"
-    },
-    {
-      "ref": "p2",
-      "product_id": "AMZ-B0FRM1518S",
-      "asin": "B0FRM1518S",
-      "amazon_title": "ロマンス小杉 公式 ねむりのアトリエ 羽毛布団 洗える 冬 日本製 ダウンが片寄らない ダックダウン90％ 羽毛掛け布団 軽量（スタンダードタイプ,シングル,無地・グレー）",
-      "brand": "ロマンス小杉",
-      "image_url": "https://m.media-amazon.com/images/I/51ZtOAt9pcL._AC_SL1000_.jpg",
-      "observed_price": 29999,
-      "discovery_score": 1,
-      "selection_score": 0.495,
-      "matched_comparison_axes": [
-        "size"
-      ],
-      "search_key": "atelier of sleep ロマンス小杉 公式 ねむりのアトリエ 羽毛布団 洗える 冬 日",
-      "selected_variant": "シングル150×210cm、詰めもの1.1kg、無地グレー、1枚"
-    },
-    {
-      "ref": "p3",
-      "product_id": "AMZ-B09HC89XVV",
-      "asin": "B09HC89XVV",
-      "amazon_title": "【羽毛布団なのに匂いが少ない】【ふとん工房 グーグ】 羽毛合い掛けふとん ホワイトプリンセス®マザーダック ダウン93% クリーミーホワイト 無地 シングルサイズ 高級 国内生産 羽毛 布団 キルト 寒い季節に 軽量 起毛 防ダニ 吸水 速乾 清潔 暖かい 立体縫製キルト 肌触り 柔らかい ロイヤルゴールドラベル付き",
-      "brand": "ふとん工房グーグ",
-      "image_url": "https://m.media-amazon.com/images/I/71zGyOgwfAL._AC_SL1500_.jpg",
-      "observed_price": 71500,
-      "discovery_score": 1,
-      "selection_score": 0.495,
-      "matched_comparison_axes": [],
-      "search_key": "§Ｇ∞ＧｕｕＧ∞ふとん工房グーグ 羽毛掛けふとん ホワイトプリンセス® マザーダック ダウン93",
-      "selected_variant": "シングル150×210cm、合掛け0.8kg、クリーミーホワイト、1枚"
-    },
-    {
-      "ref": "p4",
-      "product_id": "AMZ-B00DH8YIQO",
-      "asin": "B00DH8YIQO",
-      "amazon_title": "羽毛布団 シングル ハンガリー産 ホワイト マザーダックダウン 95% 二層立体 ツインキルト 60サテン 超長綿 CILブラックラベル 日本製",
-      "brand": "日本寝具通信販売",
-      "image_url": "https://m.media-amazon.com/images/I/61nPADA2UaL._AC_SL1500_.jpg",
-      "observed_price": 49800,
-      "discovery_score": 1,
-      "selection_score": 0.495,
-      "matched_comparison_axes": [
-        "size"
-      ],
-      "search_key": "日本寝具通信販売 羽毛布団 シングル ハンガリー産 ホワイト マザーダックダウン",
-      "selected_variant": "シングル150×210cm、キナリ、充填1.2kg、1枚"
-    },
-    {
-      "ref": "p5",
-      "product_id": "AMZ-B091C2JQJV",
-      "asin": "B091C2JQJV",
-      "amazon_title": "西川 クオリアル 羽毛合い掛けふとん シングル 0.7kg 日本製 QL9601 KA09353035 (ブルー)",
-      "brand": "西川",
-      "image_url": "https://m.media-amazon.com/images/I/51FnG0WlbrL._AC_SL1000_.jpg",
-      "observed_price": 8849,
-      "discovery_score": 1,
-      "selection_score": 0.445,
-      "matched_comparison_axes": [
-        "size"
-      ],
-      "search_key": "Softime 掛け布団 人工羽毛布団 シングル 冬 暖かい 抗菌防臭 150x",
-      "selected_variant": "シングル150×210cm、合掛け0.7kg、ブルー、1枚"
-    },
-    {
-      "ref": "p6",
-      "product_id": "AMZ-B0CDBVG958",
-      "asin": "B0CDBVG958",
-      "amazon_title": "タンスのゲン 羽毛布団 シングル【コインランドリーで洗える】W防ダニ ダウン90％ 充填量1.0kg 日本製 掛け布団 10119001(87541)",
+      "amazon_title": "タンスのゲン 羽毛布団 シングル ダックダウン90％ 充填量1.0kg 防ダニ 抗菌 防臭 日本製 掛け布団 冬 10119001(72199)",
+      "asin": "B00GM7WDQY",
       "brand": "タンスのゲン",
-      "image_url": "https://m.media-amazon.com/images/I/81yUzEB2b9L._AC_SL1500_.jpg",
-      "observed_price": 18999,
+      "discovery_axis_id": "popular",
       "discovery_score": 1,
-      "selection_score": 0.445,
-      "matched_comparison_axes": [
-        "size"
-      ],
-      "search_key": "タンスのゲン 羽毛布団 シングル W防ダニ ダウン90％ 充填量1.0kg 日",
-      "selected_variant": "シングル150×210cm、通常充填1.0kg、916柄ブルー、1枚"
+      "image_url": "https://m.media-amazon.com/images/I/61rXGa3CkjL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B00GM7WDQY",
+      "provisional": false,
+      "rating": 4.3,
+      "ref": "p1",
+      "review_count": 2898,
+      "search_key": "タンスのゲン 羽毛布団 シングル ダックダウン90％ 充填量1.0kg 防ダニ",
+      "selection_reason": "冬用羽毛布団の基準として、ホワイトダックダウン90％を1.0kg詰めた日本製の一枚。商品情報には30マスの立体キルトと350dp以上のダウンパワーも記載されている。暖房を切った後に寝室が冷える人が、今使っている布団の詰め物量と掛け心地を照らし合わせる際に向く。暖房をつけたまま眠る人には保温力が強すぎないか確認したい。",
+      "sources": [
+        {
+          "brand": "タンスのゲン",
+          "excerpt": "Tansu no Gen 10119001 (72199) Down Duvet, Single, 90% Duck Down\nAbout this item\nSize: 59.1 x 82.7 inches (150 x 210 cm); Weight: Approx. 4.0 lbs (1.8 kg); Fill Capacity: 2.2 lbs (1.0 kg); Number of Loops: 8 places; Material: Side Surface: 15% cotton, 85% polyester; Filling: White duck down (90% down, 10% down, 10% feather); Package Size: 7.18% feathers; Country of origin: 7.18 x 7.18 x 7.1 x 7.1 x 18\n(Staff Recommendations) 4 star CIL silver label acquired; Improved fit 30 squares three-dimensional quilt; 90% white duck down; Carefully finished; Made in Japan; Thickness: 5.7 inches (145 mm) or higher; Down power is more than 350 dp; Made with a power up processing in Japan. SEK certified allergy-G plus for antibacterial effects; disinfectant/mite-resistant; ozone special aid treatment; side surface is peach skin processed for a smooth touch; Downproof treatment to prevent feathers from coming out; Ultra-lightweight fabric that does not interfere with the swelling of the feathers; Increases heat retention; 3D quilt; Reliable and proven by 830,0000,00000000000000000000000000000000000000000000000000000000000000 people; Dream Down (Remarks) OK) (Washing net. Usage) *The quality label attached to the product says \"Cannot be washed\", but this may be handled at home\nCan be washed and tumble dried with a coin laundry. Please be sure to use a net before washing and drying. After washing, the smell may occur if it is not dry enough. If it gets dried, please add extra dry. Lack of washing machine capacity may damage the fabric. Please choose the size of the washing machine for a little roomier. Immediately after taking it out of the dryer, the feathers smell is strong. This is the characteristics of the feathers material that releases oils and enhances odors due to high temperatures and humidity. Rest assured that it will reduce the risk of drying and cooling. Frequent washing will deteriorate the fabric and down. To extend the life of your duvet, it is recommended to wash it once a year. The source of feathers is East Asia (Taiwan, China, etc.). From August 29, 2024, we have added the \"washable at a coin laundry. The specifications of the product itself have not been changed, so if you have purchased before, you can wash it at a coin laundry. From September 3, 2025, the side area has been changed to anti-mite fabric\nQ. You are worried about the smell of the duvet. A. Because the feathers are natural materials, they are not odorless. The raw hair has been washed to almost prevent the smell of the product, but the smell may appear immediately after unpacking, depending on the temperature or humidity, etc. Countermeasure 1: Replace the air inside the futon. You can fold the comforter into a small size, press it from the top to squeeze the air out. Countermeasure 2: Please dry the duvet. By drying it in a shaded area with good ventilation, you can reduce the dissolving of oil. Although this product is often used in cold weather, the feathers may get heat when delivered in a high temperature and humid environment. If that happens, please cool down the feathers to reduce the odor. Measure 3: Store in a well-ventilated area. Store in a dry and cool place as possible and properly ventilated to prevent the growth of odor-causing bacteria and oil melting. Please do not use a deodorizing spray. Use spray type deodorizers for clothing and bedding to get moisture and reverse effects\nQ. There is no volume in the futon..? A. After opening, the feathers will be restored gradually. Because it is delivered in a compact packaging, the return rate of feathers will be approximately 5 to 80% depending on the environment such as temperature and humidity. After using it for about 2 weeks, air massage or dry it in the shade, it will restore it to its original fluffy comforter. Air massage is a method to inject air into the feathers to restore fluffiness immediately after opening. Q. Is there black spots inside your duvet...mildew? A. Colored feathers. Not moldy. Black spots may be visible through fabric, but they are colored feathers. Even white duck goose can rarely be filled with colored feathers. This is not a quality issue. Q.Is the comforter washable? A. Cannot be washed at home. Feathers contain moisture which can cause odor. In order to extend the life of the product, we recommend that you consult your local professional for cleaning and wear the cover to prevent stains on daily basis › See more product details\nMaterial Cotton, Polyester\nColor beige\nBrand タンスのゲン\nSpecial Feature Antibacterial\nStyle Casual\nVisit the タンスのゲン Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Tansu no Gen 10119001 (72199) Down Duvet, Single, 90% Duck Down",
+          "url": "https://www.amazon.co.jp/dp/B00GM7WDQY?th=1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "羽毛布団 シングル 日本製 ホワイトダックダウン93% 超長綿100% 1.2kg 400dp 立体キルト 掛け布団 冬用 いいはねふとん店",
+      "asin": "B00SQYG49S",
+      "brand": "",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61BiAoLDiXL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B00SQYG49S",
+      "provisional": true,
+      "rating": 4.6,
+      "ref": "p2",
+      "review_count": 222,
+      "search_key": "羽毛布団 シングル 日本製 ホワイトダックダウン93% 超長綿1",
+      "selection_reason": "商品情報にホワイトダックダウン93％・1.2kg、超長綿100％の側生地、400dp、立体キルトとある冬用の一枚。夜間は暖房を弱める、または切るため、薄掛けでは寒くなる人が側生地と詰め物まで選びたい場合の候補になる。暖房が効いたままの寝室では1.2kgの詰め物量を踏まえて選びたい。",
+      "sources": []
+    },
+    {
+      "amazon_title": "SNOWMAN 2枚合わせ羽毛布団 シングル ダウン80% 肌掛け(夏)＋合掛け(春・秋)=2枚合わせ羽毛布団（冬） 二枚合わせ 羽毛掛け布団セット ダウンケット 掛け布団",
+      "asin": "B01JZ0EEDY",
+      "brand": "SNOWMAN",
+      "discovery_axis_id": "layer_adjustable",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61g9WpLkK4L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B01JZ0EEDY",
+      "provisional": false,
+      "rating": 4.1,
+      "ref": "p3",
+      "review_count": 116,
+      "search_key": "SNOWMAN 2枚合わせ羽毛布団 シングル ダウン80% 肌掛け(夏)＋合掛け",
+      "selection_reason": "商品説明で合掛け800gと肌掛けを組み合わせ、合計1.1kgのダックダウン80％入りと確認できる。2枚はフックで着脱でき、合掛けには立体キルト、肌掛けにはタタキキルトを採用。暖房で暑い夜は肌掛け一枚、暖房を弱める夜は合掛け、寒い夜は重ねるという使い分けを、一組で考えたい人に向く。",
+      "sources": [
+        {
+          "brand": "SNOWMAN",
+          "excerpt": "SNOWMAN 2 Piece Duvet Set for All Seasons, Comforter Set, Down Blanket, Down Comforter, Set of 2\nAbout this item\n[Specifications] Size: Width 59.1 x Length 82.7 inches (150 x 210 cm) (single long size); Filling: 80% duck down; Fill amount: total 2.4 lbs (1.1 kg) (suit comforter 800 g) + skin comforter; Side fabric: 100% polyester; Quilt specification: matching comforter (three-dimensional quilt); Number of loops: matching quilt); Number of hooks: 8\n(2-piece set) This set includes a matching comforter and a skin comforter. Each can also be used alone, allowing you to adjust the combination according to the season and room temperature. Hook and eye closure design\nUses 80% duck down: 80% duck down derived from waterfowls. Down is lightweight and has a tendency to retain air in its fiber structure. Combined with feathers for a balanced fill\n(Silver Down Material) Uses down derived from waterfowls raised on farms. The ingredients are filled through the sorting process. The size and condition of the down ball will vary\n[Down Processing] The feathers are selected through the drying process and cooling process. The process is controlled to remove feather deposits and fine impurities\nDown Cleaning Process: The raw hair has been processed through multiple cleaning processes. Cleanliness is controlled according to inspection standards. Because it is natural material, it is not completely odorless. If you are concerned about the smell, please dry it in the shade and ventilated place\nQuilted construction: The matching comforter uses a three-dimensional quilted construction. Each square, the feather does not shift easily. The skin comforter has a tataki quilt. Lightweight side fabric › See more product details\nMaterial Cotton, Polyester, white duck down\nColor light silver\nBrand SNOWMAN\nSpecial Feature Moisture wicking\nStyle Minimalist\nVisit the SNOWMAN Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "SNOWMAN 2 Piece Duvet Set for All Seasons, Comforter Set, Down Blanket, Down Comforter, Set of 2",
+          "url": "https://www.amazon.co.jp/dp/B01JZ0EEDY?th=1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "【日本製・3年保証・抗菌防臭で洗える羽毛布団】掛け布団 シングル 2枚合わせ 150×210cm オールシーズン設計 クリーム いいはねふとん店",
+      "asin": "B0B33H2D9C",
+      "brand": "",
+      "discovery_axis_id": "layer_adjustable",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51D0p9rxumL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0B33H2D9C",
+      "provisional": true,
+      "rating": 4.5,
+      "ref": "p4",
+      "review_count": 274,
+      "search_key": "掛け布団 シングル 2枚合わせ 150×210cm オールシーズ",
+      "selection_reason": "商品情報にシングル150×210cmの二枚合わせ羽毛布団、洗える仕様、抗菌防臭、3年保証とある。寝室の暖かさに応じて重ね方を変えたい人のうち、肌に近い一枚を使う時期の手入れもしやすい構成を探す人に向く。",
+      "sources": []
+    },
+    {
+      "amazon_title": "昭和西川 ダウンケット 羽毛布団 春 夏 秋用 シングル 軽量 薄手 洗える 掛け布団 肌掛けふとん オールシーズン 肌掛け ホワイトダックダウン50％ 0.25kg シングル シングルロング 150×210cm グレー 2211273111937",
+      "asin": "B088ZFJZSF",
+      "brand": "Showa Nishikawa",
+      "discovery_axis_id": "lighter_single",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51CLoFPlCsL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B088ZFJZSF",
+      "provisional": false,
+      "rating": 4.0,
+      "ref": "p5",
+      "review_count": 300,
+      "search_key": "Showa Nishikawa 昭和西川 ダウンケット 羽毛布団 春 夏 秋用 シングル 軽量",
+      "selection_reason": "商品説明で羽毛の詰め物量が0.25kg、ホワイトダックダウン50％の薄い肌掛けと確認できる。春から秋や夏の冷房時向けとされ、自宅の洗濯機でネットを使って洗える。冬用布団を夜中に外してしまうほど暖房の効いた寝室で、まず掛ける量を大きく減らしたい人に向く。",
+      "sources": [
+        {
+          "brand": "Showa Nishikawa",
+          "excerpt": "Showa Nishikawa 2211273111937 Down Blanket, Single, Long, Lightweight, Thin, Washable, Comforter, All-Season, 50% White Duck Down, 59.1 x 82.7 Inches (150 x 210 cm), 0.6 Lbs (0.25 kg), Gray\nAbout this item\nWashable duvet with 50% duck down feathers (down quilt) A thin and lightweight summer down comforter\nAbout one-sixth the thickness of a winter down duvet, it is light yet provides just the right amount of warmth Excellent moisture release, moisture absorption, and drape properties, with moderate warmth\nEffective against both heat and cold, it is great for seasonal transitions, the rainy season, and summer air conditioning measures Combine with towel sheets, blankets, or mattress pads for long-lasting use from spring through fall\nWashable at home Washing is possible in the washing machine using a laundry net It's nice that you can wash it during the sweaty season\n【Size】Single Long: 59.1 x 82.7 inches (150 x 210 cm) 【Filling weight】0.55 lbs (0.25 kg) 【Composition】Outer Fabric: 100% Polyester Filling: 50% Down, 50% Feather 0.55 lbs (0.25 kg) 【Quilt】6 x 8 square quilt Larger squares in a feather quilt can cause the feathers to shift within the squares So there are 6 squares on the side 8 squares vertically Country of manufacture: Made in China › See more product details\nMaterial Polyester\nColor gray\nBrand Showa Nishikawa\nSpecial Feature Lightweight\nStyle Minimalist",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Showa Nishikawa 2211273111937 Down Blanket, Single, Long, Lightweight, Thin, Washable, Comforter, All-Season, 50% White Duck Down, 59.1 x 82.7 Inches (150 x 210 cm), 0.6 Lbs (0.25 kg), Gray",
+          "url": "https://www.amazon.co.jp/dp/B088ZFJZSF?th=1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "ハンガリー産 ホワイトダウン 93% 洗える 羽毛肌掛け布団 （ダウンケット） シングル 春や夏に最適 オールシーズン 薄手 洗濯ネット付 日本製",
+      "asin": "B0055A2DT6",
+      "brand": "",
+      "discovery_axis_id": "lighter_single",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/617zdpf9XIL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0055A2DT6",
+      "provisional": true,
+      "rating": 4.2,
+      "ref": "p6",
+      "review_count": 905,
+      "search_key": "ハンガリー産 ホワイトダウン 93% 洗える 羽毛肌掛け布団 （",
+      "selection_reason": "商品情報にハンガリー産ホワイトダウン93％を使った日本製の薄手の羽毛肌掛けで、洗濯ネット付きとある。暖房中は厚い冬用布団が暑いものの、羽毛の掛け心地は残したい人が、春夏向けの肌掛けを寝室の室温に合わせて選ぶ候補になる。",
+      "sources": []
     }
-  ]
+  ],
+  "selection": {
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B00GM7WDQY",
+            "reason": "冬用羽毛布団の基準として、ホワイトダックダウン90％を1.0kg詰めた日本製の一枚。商品情報には30マスの立体キルトと350dp以上のダウンパワーも記載されている。暖房を切った後に寝室が冷える人が、今使っている布団の詰め物量と掛け心地を照らし合わせる際に向く。暖房をつけたまま眠る人には保温力が強すぎないか確認したい。"
+          },
+          {
+            "asin": "B00SQYG49S",
+            "reason": "商品情報にホワイトダックダウン93％・1.2kg、超長綿100％の側生地、400dp、立体キルトとある冬用の一枚。夜間は暖房を弱める、または切るため、薄掛けでは寒くなる人が側生地と詰め物まで選びたい場合の候補になる。暖房が効いたままの寝室では1.2kgの詰め物量を踏まえて選びたい。"
+          }
+        ]
+      },
+      {
+        "axis_id": "layer_adjustable",
+        "products": [
+          {
+            "asin": "B01JZ0EEDY",
+            "reason": "商品説明で合掛け800gと肌掛けを組み合わせ、合計1.1kgのダックダウン80％入りと確認できる。2枚はフックで着脱でき、合掛けには立体キルト、肌掛けにはタタキキルトを採用。暖房で暑い夜は肌掛け一枚、暖房を弱める夜は合掛け、寒い夜は重ねるという使い分けを、一組で考えたい人に向く。"
+          },
+          {
+            "asin": "B0B33H2D9C",
+            "reason": "商品情報にシングル150×210cmの二枚合わせ羽毛布団、洗える仕様、抗菌防臭、3年保証とある。寝室の暖かさに応じて重ね方を変えたい人のうち、肌に近い一枚を使う時期の手入れもしやすい構成を探す人に向く。"
+          }
+        ]
+      },
+      {
+        "axis_id": "lighter_single",
+        "products": [
+          {
+            "asin": "B088ZFJZSF",
+            "reason": "商品説明で羽毛の詰め物量が0.25kg、ホワイトダックダウン50％の薄い肌掛けと確認できる。春から秋や夏の冷房時向けとされ、自宅の洗濯機でネットを使って洗える。冬用布団を夜中に外してしまうほど暖房の効いた寝室で、まず掛ける量を大きく減らしたい人に向く。"
+          },
+          {
+            "asin": "B0055A2DT6",
+            "reason": "商品情報にハンガリー産ホワイトダウン93％を使った日本製の薄手の羽毛肌掛けで、洗濯ネット付きとある。暖房中は厚い冬用布団が暑いものの、羽毛の掛け心地は残したい人が、春夏向けの肌掛けを寝室の室温に合わせて選ぶ候補になる。"
+          }
+        ]
+      }
+    ],
+    "brand_count": 3,
+    "candidate_count": 23,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [],
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": []
+  },
+  "slug": "down-comforters-6-picks"
 }

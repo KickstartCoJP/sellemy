@@ -1,12 +1,49 @@
 {
-  "generation_method": "generative_ai",
-  "provider": "openai",
-  "model": "gpt-image-2.5-sunburst",
-  "quality": "high",
-  "operation_id": "sellemy-eyecatch-down-comforters-6-picks-8b9c249d0926fdd4",
-  "request_sha256": "8b9c249d0926fdd408a2395c5d83498987e9bd5ddd0c7d9918978c93c4c447b8",
-  "image_sha256": "cd711a45d080d227f066934644e1da6048073a800a8367722366908717ccc5c4",
-  "width": 1536,
+  "generated_at": "2026-11-27T21:31:25.981853+00:00",
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "generation_route_attestation": "codex_rollout_extension",
   "height": 1024,
-  "generated_at": "2026-09-24T00:19:54.452516+00:00"
+  "image_generation_internal_usage_exposed": false,
+  "image_sha256": "3e2be676034cbdbb9fab20687dbe036cc752b0cce445811f292dc66642dbb347",
+  "member_binding_revision": 14,
+  "model": "gpt-6-sol",
+  "model_reported_generation_route": "built-in_image_gen",
+  "role_id": "bu-codex-sellemy-designer",
+  "routing": {
+    "api_share": 0,
+    "codex_reserve_percent": 20.0,
+    "codex_share": 100,
+    "codex_usage": {
+      "remaining_percent": 68.0,
+      "resets_at": 1796330023,
+      "source": "/Users/kickstart/.codex/sessions/2026/11/28/rollout-2026-11-28T06-21-58-01a21ee2-ef1e-7a12-9cfe-cd89db3055ec.jsonl",
+      "used_percent": 32.0,
+      "window_minutes": 10080
+    },
+    "errors_before_success": [],
+    "executed_route": "codex",
+    "fallback_from": null,
+    "mode": "weighted_random",
+    "reason": "weighted_random",
+    "remaining_percent": 68.0,
+    "roll": 97,
+    "selected_route": "codex",
+    "total_weight": 100
+  },
+  "routing_recorded_at": "2026-11-27T21:31:25.982874+00:00",
+  "summary": "暖房のある寝室で薄い羽毛布団を重ねて掛け方を調整する場面。PNG形式と1536x1024の寸法を確認済み。",
+  "thread_id": "01a21eb4-0588-7080-8476-03f61852b4ac",
+  "token_usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 146048,
+    "input_tokens": 150270,
+    "output_tokens": 657,
+    "reasoning_output_tokens": 0,
+    "total_tokens": 150927,
+    "uncached_input_tokens": 4222
+  },
+  "token_usage_source": "codex_rollout.turn_token_usage",
+  "visual_family": "photorealistic home editorial",
+  "width": 1536
 }
