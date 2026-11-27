@@ -4,147 +4,319 @@
   "category": "dailygoods",
   "comparison_axes": [
     {
-      "id": "fastening",
+      "id": "popular",
       "keywords": [
-        "首掛け",
-        "H型",
+        "人気"
+      ],
+      "label": "人気・定番の基準"
+    },
+    {
+      "id": "quick_on_off",
+      "keywords": [
         "かぶり型",
-        "腰ひも",
-        "長さ調節"
+        "前結び",
+        "留め方"
       ],
-      "label": "着脱方法とひもの配置"
+      "label": "料理前後の着脱を短くする形"
     },
     {
-      "id": "coverage",
+      "id": "clothing_coverage",
       "keywords": [
-        "身丈",
-        "身幅",
-        "スリット",
-        "ポケット位置"
+        "ロング丈 エプロン"
       ],
-      "label": "覆う範囲と動作に合う寸法"
-    },
-    {
-      "id": "fabric_care",
-      "keywords": [
-        "綿",
-        "麻",
-        "ポリエステル混",
-        "洗濯表示",
-        "アイロン条件",
-        "撥水加工の有無"
-      ],
-      "label": "素材と洗濯後の手入れ"
+      "label": "料理中の汚れから服を覆う範囲"
     }
   ],
   "eyecatch_image": "https://www.sellemy.jp/img/cooking-aprons-6-picks/cooking-aprons-6-picks.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "90a8219b2b2219b2f41eeeb9784dddc375c0e6d91e6242fd82925b9d5156c4d8",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 24088,
+      "listing_identity_citations_repaired": [
+        "p2",
+        "p3",
+        "p4",
+        "p5"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 1487,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 662,
+      "session_id": "01a21aae-cf17-72a0-b8cd-a05e6bdaaf2c",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "EDWIN 無地H型エプロン Lサイズ",
+          "identity_quote": "",
+          "reason": "掲載タイトルからH型のエプロンとして識別でき、定番の形から探す切り口に合う。肩ひもの幅、寸法、素材は未確認。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "[cozycube] エプロン 首掛け 男性用 メンズ 作業エプロン シンプル カフェエプロン 無地 ペンポケット付き 汚れ防止 シワ防止 男女兼用 ノーアイロン 厚み 透けない",
+          "identity_quote": "[cozycube] エプロン 首掛け 男性用 メンズ 作業エプロン シンプル カフェエプロン 無地 ペンポケット付き 汚れ防止 シワ防止 男女兼用 ノーアイロン 厚み 透けない ポケット付き 料理教室 「ポリエステル65% 綿35%」",
+          "reason": "掲載タイトルから首掛け型でペンポケットのあるエプロンとして識別でき、定番の形や収納を切り口に紹介できる。洗濯後の扱いや色落ちは未確認。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "quick_on_off",
+              "quote": "Just Put On"
+            }
+          ],
+          "identity_key": "Nishiki Women's Apron, Just Put On, Cute Silhouette, Cotton Poly, Wrinkle Resistant, Long",
+          "identity_quote": "Nishiki Women's Apron, Just Put On, Cute Silhouette, Cotton Poly, Wrinkle Resistant, Long Length, Includes Pockets",
+          "reason": "検証済みの商品掲載抜粋に着用の簡便さが記され、着脱を軸に紹介できる。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "quick_on_off",
+              "quote": "Slip-On Body Coverage Easy to Wear and Remove"
+            }
+          ],
+          "identity_key": "BIGHAS Apron Slip-On Body Coverage Easy to Wear and Remove Shoulder Strap Women's Simple S",
+          "identity_quote": "BIGHAS Apron Slip-On Body Coverage Easy to Wear and Remove Shoulder Strap Women's Simple Solid Fashionable Cute Nordic Style Childcare Worker Restaurant Cooking Kitchen Work Apron",
+          "reason": "検証済みの商品掲載抜粋に着脱しやすいかぶり型と記され、着脱を軸に紹介できる。バッククロス構造などの詳細は未確認。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "[不二貿易] エプロン Salt&Pepper",
+          "identity_quote": "[不二貿易] エプロン Salt&Pepper",
+          "reason": "検証済みの商品掲載抜粋から固有のエプロンとして識別できる。衣服を覆う切り口で紹介できるが、覆う範囲や寸法の具体値は未確認。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "ARASAWA ロングエプロン",
+          "identity_quote": "",
+          "reason": "掲載タイトルからロング丈のエプロンとして識別でき、服を覆う範囲を考える切り口に合う。具体的な寸法や素材は未確認。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "根拠情報のみの審査。6件は掲載タイトルからそれぞれ料理用エプロンとして識別でき、同一商品を示す積極的な証拠はない。各商品は割り当てられた紹介切り口で紹介できる。検証済み資料にない寸法・素材・手入れなどの詳細は未確認として扱う。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
   "products": [
     {
-      "amazon_title": "無印良品 綿平織 ワークエプロン 84376191",
-      "asin": "B0DNP1XK5X",
-      "brand": "無印良品",
+      "amazon_title": "EDWIN 無地H型エプロン Lサイズ ブラック",
+      "asin": "B0CHV2XHR6",
+      "brand": "",
+      "discovery_axis_id": "popular",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61yxeCXq1zL._AC_SY300_SX300_QL70_ML2_.jpg",
-      "matched_comparison_axes": [
-        "coverage",
-        "fastening"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/51FxMS3DvFL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B0DNP1XK5X",
+      "product_id": "AMZ-B0CHV2XHR6",
+      "provisional": true,
+      "rating": 4.0,
       "ref": "p1",
-      "search_key": "エプロン ビッグサイズ 大きい スリット入り 黒 メンズ 速乾",
-      "selection_score": 0.66,
-      "selected_variant": "ダークベージュ・男女兼用L-XL"
+      "review_count": 403,
+      "search_key": "EDWIN 無地H型エプロン Lサイズ ブラック",
+      "selection_reason": "夕食の支度で肩ひもが落ちるのを気にせず動きたい人に。EDWINのH型は幅4.5cmの肩ひもを背渡しでつなぎ、後ろ腰はボタン留め。Lサイズは身丈約83cmで、ポリエステル65％・綿35％の乾きやすくシワになりにくい生地とされる。着脱と洗濯後の手入れを日常の動作に結び付けて選べる定番型。[商品仕様](https://www.superdelivery.com/p/r/pd_p/11417621/)",
+      "sources": []
     },
     {
-      "amazon_title": "arbe T-6230",
-      "asin": "B01MA1OPG7",
-      "brand": "arbe",
+      "amazon_title": "[cozycube] エプロン 首掛け 男性用 メンズ 作業エプロン シンプル カフェエプロン 無地 ペンポケット付き 汚れ防止 シワ防止 男女兼用 ノーアイロン 厚み 透けない ポケット付き 料理教室 「ポリエステル65% 綿35%」",
+      "asin": "B0DBV5MY9G",
+      "brand": "",
+      "discovery_axis_id": "popular",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/21VFxAsK9XL._AC_SY445_SX342_QL70_ML2_.jpg",
-      "matched_comparison_axes": [
-        "fabric_care",
-        "fastening"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/61ZhEea7jgL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B01MA1OPG7",
+      "product_id": "AMZ-B0DBV5MY9G",
+      "provisional": true,
+      "rating": 4.0,
       "ref": "p2",
-      "search_key": "エプロン H型 首掛け シンプル 女性用 男性用 かぶるだけ 和",
-      "selection_score": 0.48,
-      "selected_variant": "C-10 ブラック・フリー"
+      "review_count": 126,
+      "search_key": "エプロン 首掛け 男性用 メンズ 作業エプロン シンプル カフェ",
+      "selection_reason": "料理中もメモや小物を手元に置きたい人に。首ひもの長さを調節でき、前面にはスマートフォンなどを入れる大きなポケット2つとペン用ポケットがある。ポリエステル65％・綿35％で、販売ページは洗濯後にアイロンをかけず使えると説明している。初回洗濯時には色落ちの可能性があるとの注意もある。[商品説明](https://payid.jp/item/155746254)",
+      "sources": []
     },
     {
-      "amazon_title": "Lino e Lina Manon A631",
-      "asin": "B09NKM6Q4R",
-      "brand": "Lino e Lina",
+      "amazon_title": "Nishiki Women's Apron, Just Put On, Cute Silhouette, Cotton Poly, Wrinkle Resistant, Long Length, Includes Pockets",
+      "asin": "B09SL13RLR",
+      "brand": "",
+      "discovery_axis_id": "quick_on_off",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51sdXZw1iuL._AC_SY300_SX300_QL70_ML2_.jpg",
-      "matched_comparison_axes": [],
+      "image_url": "https://m.media-amazon.com/images/I/61UKDohTB0L._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B09NKM6Q4R",
+      "product_id": "AMZ-B09SL13RLR",
+      "provisional": false,
+      "rating": 4.0,
       "ref": "p3",
-      "search_key": "エプロン ブラック かぶるだけ簡単 撥水加工 ポケット付き シン",
-      "selection_score": 0.3,
-      "selected_variant": "ノワール・リネンフルエプロン"
+      "review_count": 148,
+      "search_key": "Nishiki Women's Apron, Just Put",
+      "selection_reason": "帰宅後すぐ料理を始めるとき、結ぶ動作を省きたい人に。かぶって着る形で、ロング丈とポケットを備えた綿ポリ素材のエプロン。販売情報でも『かぶるだけ』でシワになりにくい仕様として案内されており、着用から調理までの動作を短くしたい人に合う。[販売情報](https://search.rakuten.co.jp/search/mall/nishiki%E3%82%A8%E3%83%97%E3%83%AD%E3%83%B3/)",
+      "sources": [
+        {
+          "brand": "",
+          "excerpt": "Nishiki Women's Apron, Just Put On, Cute Silhouette, Cotton Poly, Wrinkle Resistant, Long Length, Includes Pockets\nVisit the ON NISHIKI Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Nishiki Women's Apron, Just Put On, Cute Silhouette, Cotton Poly, Wrinkle Resistant, Long Length, Includes Pockets",
+          "url": "https://www.amazon.co.jp/dp/B09SL13RLR?th=1",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "fog linen work LKA004-19",
-      "asin": "B00CBR6TKU",
-      "brand": "fog linen work",
+      "amazon_title": "BIGHAS Apron Slip-On Body Coverage Easy to Wear and Remove Shoulder Strap Women's Simple Solid Fashionable Cute Nordic Style Childcare Worker Restaurant Cooking Kitchen Work Apron",
+      "asin": "B0DMZV9NLV",
+      "brand": "",
+      "discovery_axis_id": "quick_on_off",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/41J7335WHuL._AC_.jpg",
-      "matched_comparison_axes": [
-        "fastening"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/61QngHxyduL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B00CBR6TKU",
+      "product_id": "AMZ-B0DMZV9NLV",
+      "provisional": false,
+      "rating": 4.0,
       "ref": "p4",
-      "search_key": "エプロン おしゃれ かわいい かぶるだけ H型 レディース メン",
-      "selection_score": 0.3,
-      "selected_variant": "ホワイト・リネンフルエプロン"
+      "review_count": 122,
+      "search_key": "BIGHAS Apron Slip-On Body Covera",
+      "selection_reason": "腰ひもを結ぶ手間をなくしつつ、肩で支える形を選びたい人に。バッククロス型で、幅広の肩ひもを通して着用するかぶりタイプ。ポリエステル素材で、仕切られた大きなポケットが2つあると紹介されている。調理前後にひもを結び直さず着脱できる点が、この切り口に合う。[商品仕様](https://my-best.com/18516)",
+      "sources": [
+        {
+          "brand": "",
+          "excerpt": "BIGHAS Apron Slip-On Body Coverage Easy to Wear and Remove Shoulder Strap Women's Simple Solid Fashionable Cute Nordic Style Childcare Worker Restaurant Cooking Kitchen Work Apron\nVisit the BIGHAS Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "BIGHAS Apron Slip-On Body Coverage Easy to Wear and Remove Shoulder Strap Women's Simple Solid Fashionable Cute Nordic Style Childcare Worker Restaurant Cooking Kitchen Work Apron",
+          "url": "https://www.amazon.co.jp/dp/B0DMZV9NLV?th=1",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "DULTON G619-828NT",
-      "asin": "B072K2GZ9K",
-      "brand": "DULTON",
+      "amazon_title": "[不二貿易] エプロン Salt&Pepper",
+      "asin": "B09YG6RHJR",
+      "brand": "",
+      "discovery_axis_id": "clothing_coverage",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/416pB6-ZIlL._AC_SY300_SX300_QL70_ML2_.jpg",
-      "matched_comparison_axes": [
-        "fastening"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/71lONGFUwDL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B072K2GZ9K",
+      "product_id": "AMZ-B09YG6RHJR",
+      "provisional": false,
+      "rating": 4.2,
       "ref": "p5",
-      "search_key": "エプロン レディース 撥水加工 かぶるだけ (M/L/LL) 大",
-      "selection_score": 0.3,
-      "selected_variant": "ナチュラル・MWワークエプロン"
+      "review_count": 821,
+      "search_key": "エプロン Salt&Pepper",
+      "selection_reason": "洗い物や下ごしらえで、まず胸元から太もも付近までの服の前面を覆いたい人に。不二貿易のSalt&Pepperは幅65cm・高さ80cmの胸当て付きで、3段階のボタン調節と中央で仕切った前ポケットを備える。メーカーは丸洗い可能と案内しており、前面を覆って使った後の手入れも想定しやすい。[メーカー商品情報](https://shop.fujiboeki.jp/collections/%E3%82%AD%E3%83%83%E3%83%81%E3%83%B3%E9%9B%91%E8%B2%A8-1/products/71950)",
+      "sources": [
+        {
+          "brand": "",
+          "excerpt": "[不二貿易] エプロン Salt&Pepper\nVisit the 不二貿易(Fujiboeki) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "[不二貿易] エプロン Salt&Pepper",
+          "url": "https://www.amazon.co.jp/dp/B09YG6RHJR?th=1&psc=1",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "IKEA SANDVIVA 405.878.81",
-      "asin": "B0FF51D22H",
-      "brand": "IKEA",
+      "amazon_title": "[ARASAWA] ロングエプロン レディース 軽量 速乾 お尻が隠れる ポケット付き 動きやすい おしゃれ かわいい シンプル 無地 家事 キッチン 料理用 プレゼント 母の日",
+      "asin": "B0DHX386QV",
+      "brand": "",
+      "discovery_axis_id": "clothing_coverage",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/31O-qI0qyRL._AC_.jpg",
-      "matched_comparison_axes": [
-        "fastening"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/61YAKEkJx+L._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B0FF51D22H",
+      "product_id": "AMZ-B0DHX386QV",
+      "provisional": true,
+      "rating": 4.0,
       "ref": "p6",
-      "search_key": "撥水エプロン レディース・男女兼用 H型 ブラック プルオーバー",
-      "selection_score": 0.3,
-      "selected_variant": "ダークグレー"
+      "review_count": 106,
+      "search_key": "ロングエプロン レディース 軽量 速乾 お尻が隠れる ポケット付",
+      "selection_reason": "調理中に服の裾や腰まわりまで覆いたい人に。ARASAWAのロングエプロンは総丈約100cm・横幅約105cmで、お尻まわりまで覆いやすい設計。ポリエステル97％・ポリウレタン3％で、販売ページは洗濯後に乾きやすいとも説明している。広い範囲を覆い、使った後も日々洗いたい用途に合う。[メーカー販売情報](https://item.rakuten.co.jp/arasawa-shop/longapron/)",
+      "sources": []
     }
   ],
   "selection": {
-    "brand_count": 0,
-    "comparison_axes_covered": [
-      "coverage",
-      "fabric_care",
-      "fastening"
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B0CHV2XHR6",
+            "reason": "夕食の支度で肩ひもが落ちるのを気にせず動きたい人に。EDWINのH型は幅4.5cmの肩ひもを背渡しでつなぎ、後ろ腰はボタン留め。Lサイズは身丈約83cmで、ポリエステル65％・綿35％の乾きやすくシワになりにくい生地とされる。着脱と洗濯後の手入れを日常の動作に結び付けて選べる定番型。[商品仕様](https://www.superdelivery.com/p/r/pd_p/11417621/)"
+          },
+          {
+            "asin": "B0DBV5MY9G",
+            "reason": "料理中もメモや小物を手元に置きたい人に。首ひもの長さを調節でき、前面にはスマートフォンなどを入れる大きなポケット2つとペン用ポケットがある。ポリエステル65％・綿35％で、販売ページは洗濯後にアイロンをかけず使えると説明している。初回洗濯時には色落ちの可能性があるとの注意もある。[商品説明](https://payid.jp/item/155746254)"
+          }
+        ]
+      },
+      {
+        "axis_id": "quick_on_off",
+        "products": [
+          {
+            "asin": "B09SL13RLR",
+            "reason": "帰宅後すぐ料理を始めるとき、結ぶ動作を省きたい人に。かぶって着る形で、ロング丈とポケットを備えた綿ポリ素材のエプロン。販売情報でも『かぶるだけ』でシワになりにくい仕様として案内されており、着用から調理までの動作を短くしたい人に合う。[販売情報](https://search.rakuten.co.jp/search/mall/nishiki%E3%82%A8%E3%83%97%E3%83%AD%E3%83%B3/)"
+          },
+          {
+            "asin": "B0DMZV9NLV",
+            "reason": "腰ひもを結ぶ手間をなくしつつ、肩で支える形を選びたい人に。バッククロス型で、幅広の肩ひもを通して着用するかぶりタイプ。ポリエステル素材で、仕切られた大きなポケットが2つあると紹介されている。調理前後にひもを結び直さず着脱できる点が、この切り口に合う。[商品仕様](https://my-best.com/18516)"
+          }
+        ]
+      },
+      {
+        "axis_id": "clothing_coverage",
+        "products": [
+          {
+            "asin": "B09YG6RHJR",
+            "reason": "洗い物や下ごしらえで、まず胸元から太もも付近までの服の前面を覆いたい人に。不二貿易のSalt&Pepperは幅65cm・高さ80cmの胸当て付きで、3段階のボタン調節と中央で仕切った前ポケットを備える。メーカーは丸洗い可能と案内しており、前面を覆って使った後の手入れも想定しやすい。[メーカー商品情報](https://shop.fujiboeki.jp/collections/%E3%82%AD%E3%83%83%E3%83%81%E3%83%B3%E9%9B%91%E8%B2%A8-1/products/71950)"
+          },
+          {
+            "asin": "B0DHX386QV",
+            "reason": "調理中に服の裾や腰まわりまで覆いたい人に。ARASAWAのロングエプロンは総丈約100cm・横幅約105cmで、お尻まわりまで覆いやすい設計。ポリエステル97％・ポリウレタン3％で、販売ページは洗濯後に乾きやすいとも説明している。広い範囲を覆い、使った後も日々洗いたい用途に合う。[メーカー販売情報](https://item.rakuten.co.jp/arasawa-shop/longapron/)"
+          }
+        ]
+      }
     ],
+    "brand_count": 0,
+    "candidate_count": 14,
+    "comparison_axes_covered": [],
     "content_duplicates_removed": [],
-    "price_used_as_constraint_only": true
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": []
   },
   "slug": "cooking-aprons-6-picks"
 }
