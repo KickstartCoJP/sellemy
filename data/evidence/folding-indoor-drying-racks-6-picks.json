@@ -1,157 +1,321 @@
 {
-  "slug": "folding-indoor-drying-racks-6-picks",
-  "category": "dailygoods",
-  "canonical_url": "https://www.sellemy.jp/article/dailygoods/folding-indoor-drying-racks-6-picks.html",
-  "eyecatch_image": "https://www.sellemy.jp/img/folding-indoor-drying-racks-6-picks/folding-indoor-drying-racks-6-picks.png",
   "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/folding-indoor-drying-racks-6-picks.html",
+  "category": "dailygoods",
   "comparison_axes": [
     {
-      "id": "capacity",
-      "label": "干せる量",
+      "id": "popular",
       "keywords": [
-        "耐荷重",
-        "バーの数",
-        "シーツ対応"
-      ]
+        "人気"
+      ],
+      "label": "人気・定番の基準"
     },
     {
-      "id": "footprint",
-      "label": "設置と収納",
+      "id": "compact_footprint",
       "keywords": [
-        "使用時サイズ",
-        "収納時サイズ",
-        "伸縮"
-      ]
+        "省スペース",
+        "設置時寸法",
+        "縦方向",
+        "生活動線"
+      ],
+      "label": "通路を確保しやすい設置面積"
     },
     {
-      "id": "mobility",
-      "label": "移動のしやすさ",
+      "id": "expandable_drying_area",
       "keywords": [
-        "重量",
-        "キャスター",
-        "組み立て"
-      ]
+        "伸縮",
+        "展開時寸法",
+        "干し幅",
+        "まとめ洗い"
+      ],
+      "label": "洗濯量に合わせて広げられる干し場"
     }
   ],
-  "selection": {
-    "comparison_axes_covered": [
-      "capacity",
-      "footprint",
-      "mobility"
-    ],
-    "brand_count": 0,
-    "price_used_as_constraint_only": true
+  "eyecatch_image": "https://www.sellemy.jp/img/folding-indoor-drying-racks-6-picks/folding-indoor-drying-racks-6-picks.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "f8120922cdbfa65bb428e5701c70507535f66c97302a7cf4a2cb31c50b62bdca",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 26037,
+      "listing_identity_citations_repaired": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 1412,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 341,
+      "session_id": "01a21d29-1f21-7b31-a303-5d2206f90ebd",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "アイリスオーヤマ 組み立て簡単 ふとんも干せるタオルハンガー付きコンパクト洗濯物干し 約2人分 幅約70×奥行約78×高さ約130cm ステンレス製 H-70XN",
+          "identity_quote": "アイリスオーヤマ 組み立て簡単 ふとんも干せるタオルハンガー付きコンパクト洗濯物干し 約2人分 幅約70×奥行約78×高さ約130cm ステンレス製 H-70XN",
+          "reason": "掲載タイトルの型番H-70XNで識別できる室内向け物干し。タオルハンガー付きで約2人分という掲載情報から、普段の洗濯物を干す定番候補として紹介できる。収納時の寸法など、選定理由にのみある数値は未確認。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "Product Size: In use: Approx. W 68.9 x D 9.8 x H 62.9 inches (W175 x D25 x H160 cm)."
+            }
+          ],
+          "identity_key": "山崎実業(Yamazaki) 折り畳み 室内物干し ホワイト タワー tower",
+          "identity_quote": "山崎実業(Yamazaki) 折り畳み 室内物干し ホワイト タワー tower",
+          "reason": "確認済みの商品抜粋で型番6619を識別できる折り畳み室内物干し。使用時の幅175cm、奥行25cmが明記され、壁沿いに干し場を設けたい用途へ紹介できる。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "天馬 洗濯物干し 室内 インテリア物干し パネルスリム 軽量 簡単組立 ハンガーラック コンパクトに収納可 オールステンレス おしゃれ 【サイズ 幅40×奥行40×高さ130cm】",
+          "identity_quote": "天馬 洗濯物干し 室内 インテリア物干し パネルスリム 軽量 簡単組立 ハンガーラック コンパクトに収納可 オールステンレス おしゃれ 【サイズ 幅40×奥行40×高さ130cm】【PSI-10】",
+          "reason": "掲載タイトルの型番PSI-10で識別できる室内物干し。掲載された幅40×奥行40cmの寸法から、小さな床面で干したい用途に合う。収納時の厚さや耐荷重は未確認。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "compact_footprint",
+              "quote": "回転式アーム: 3つのアームが自由に回転する設計"
+            }
+          ],
+          "identity_key": "SONGMICS 室内物干し 洗濯物干しスタンド ステンレス製 折りたたみ式 3本回転アーム 耐荷重 15 kg 63 x 63 x 156.5 cm",
+          "identity_quote": "SONGMICS 室内物干し 洗濯物干しスタンド ステンレス製 折りたたみ式 3本回転アーム 耐荷重 15 kg 63 x 63 x 156.5 cm",
+          "reason": "確認済みの商品抜粋から型番LLR510W01と3本の回転アームを持つ室内物干しと識別できる。縦方向に衣類を干したい用途に合う。掲載タイトルと抜粋で寸法が食い違うため、具体的な設置寸法は確定できない。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "アイリスオーヤマ 物干し 伸縮自在で洗濯物の量で調節可能なコンパクト洗濯物干し 布団も干せる頑丈設計 約5人用 幅約92~152×奥行約64×高さ約127.5 ホワイト STMX-",
+          "identity_quote": "アイリスオーヤマ 物干し 伸縮自在で洗濯物の量で調節可能なコンパクト洗濯物干し 布団も干せる頑丈設計 約5人用 幅約92~152×奥行約64×高さ約127.5 ホワイト STMX-920",
+          "reason": "掲載タイトルの型番STMX-920で識別できる伸縮式物干し。掲載された幅約92～152cmの調節範囲から、洗濯量に合わせて干し場を広げたい用途に合う。収納時寸法や干せる枚数は未確認。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "アイリスオーヤマ 洗濯物干し 室内物干し コンパクト収納 部屋干し時間短縮 布団も干せる 約4人用 伸縮スリム収納物干し 幅105.5~140×奥行72.5×高さ116.5~165",
+          "identity_quote": "アイリスオーヤマ 洗濯物干し 室内物干し コンパクト収納 部屋干し時間短縮 布団も干せる 約4人用 伸縮スリム収納物干し 幅105.5~140×奥行72.5×高さ116.5~165㎝ SSSM-140",
+          "reason": "掲載タイトルの型番SSSM-140で識別できる伸縮式室内物干し。掲載された幅と高さの調節範囲から、干し場の広さや衣類の丈に合わせたい用途に合う。p5とは型番と掲載された調節寸法が異なる。干せる枚数や収納時寸法は未確認。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "根拠情報のみの審査。掲載タイトルと確認済みの商品抜粋から6商品の識別と企画への適合を判断でき、3つの紹介切り口に各2商品を配置できる。確認済みの出典がない商品の引用欄は空欄とし、選定理由にのみある数値は検証済みの事実として扱わない。p4の寸法は掲載タイトルと確認済み抜粋で食い違う。記事は未提出のため、記事固有の項目は判定しない。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
   },
   "products": [
     {
+      "amazon_title": "アイリスオーヤマ 組み立て簡単 ふとんも干せるタオルハンガー付きコンパクト洗濯物干し 約2人分 幅約70×奥行約78×高さ約130cm ステンレス製 H-70XN",
+      "asin": "B07TLYJLHC",
+      "brand": "",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51Mduq26hrL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B07TLYJLHC",
+      "provisional": true,
+      "rating": 4.2,
       "ref": "p1",
-      "product_id": "AMZ-B0BKQ8XL6F",
-      "asin": "B0BKQ8XL6F",
-      "amazon_title": "アイリスオーヤマ 物干し 伸縮自在で洗濯物の量で調節可能なコンパクト洗濯物干し 布団も干せる頑丈設計 約5人用 幅約92~152×奥行約64×高さ約127.5 ホワイト STMX-920",
-      "brand": "アイリスオーヤマ",
-      "image_url": "https://m.media-amazon.com/images/I/510-6jbxDDL._AC_SL1000_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.685,
-      "matched_comparison_axes": [
-        "capacity",
-        "footprint"
-      ],
-      "search_key": "物干しスタンド 布団干し 耐荷重150kg 折りたたみ・伸縮式",
-      "selected_variant": {
-        "colour_style": "ホワイト",
-        "count": 1
-      }
+      "review_count": 8575,
+      "search_key": "アイリスオーヤマ 組み立て簡単 ふとんも干せるタオルハンガー付き",
+      "selection_reason": "約2人分の普段着とタオルを一度に干したい家庭の定番候補。タオルハンガー使用時はシャツ約7枚・バスタオル約4枚・小物約20枚が目安で、使用時は幅70×奥行78cm、収納時は奥行8cmになる。洗濯量と片づけ先を具体的に見積もれる。メーカー公式通販には356件のレビューが掲載されている。[アイリスプラザ](https://www.irisplaza.co.jp/index.php?KB=SHOSAI&SID=H573579)",
+      "sources": []
     },
     {
-      "ref": "p2",
-      "product_id": "AMZ-B07B4N2WZX",
-      "asin": "B07B4N2WZX",
-      "amazon_title": "積水樹脂商事(Sekisuijushishoji)セキスイランドリ-スタンドSTIK-A2",
-      "brand": "積水樹脂",
-      "image_url": "https://m.media-amazon.com/images/I/61RMhhGWfjL._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.505,
-      "matched_comparison_axes": [
-        "mobility"
-      ],
-      "search_key": "welsteepse 室内物干し 折り畳み 高さ調節可能 約W1",
-      "selected_variant": {
-        "colour_style": "ホワイト/Aタイプ",
-        "count": 1
-      }
-    },
-    {
-      "ref": "p3",
-      "product_id": "AMZ-B0847TKBCV",
-      "asin": "B0847TKBCV",
-      "amazon_title": "天馬 洗濯物干し 室内 インテリア物干し パネルM 軽量 簡単組立 コンパクト 部屋干し 折りたたみ ハンガーラック 物干しスタンド PSI-01",
-      "brand": "天馬",
-      "image_url": "https://m.media-amazon.com/images/I/915c0h22M5L._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.325,
-      "matched_comparison_axes": [],
-      "search_key": "山善(YAMAZEN) 室内物干し ハンガーラック 3連 完成品",
-      "selected_variant": {
-        "colour_style": "オールステンレス",
-        "count": 1
-      }
-    },
-    {
-      "ref": "p4",
-      "product_id": "AMZ-B0847TLWBQ",
-      "asin": "B0847TLWBQ",
-      "amazon_title": "天馬(Tenma) 耐久性と美しさを兼ね備えた室内物干し インテリア物干し ハンガーラック 差し込むだけの簡単組立 洗濯物干し 軽く持ち運べてコンパクトに収納できる物干しスタンド 【簡単組立】【色 オールステンレス】 【シンプル】 【幅72×奥行50×高さ150cm】",
-      "brand": "天馬",
-      "image_url": "https://m.media-amazon.com/images/I/41JncCr3ogL._AC_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.325,
-      "matched_comparison_axes": [],
-      "search_key": "ekans(エカンズ) スタンド型 折りたたみ 室内物干し KS",
-      "selected_variant": {
-        "model": "PSI-03",
-        "colour_style": "オールステンレス",
-        "count": 1
-      }
-    },
-    {
-      "ref": "p5",
-      "product_id": "AMZ-B0HGFNMBCJ",
-      "asin": "B0HGFNMBCJ",
-      "amazon_title": "山善(YAMAZEN) 室内物干し ハンガーラック 3連 完成品 折りたたみ 幅117×奥行48×高さ91.5-149cm B3H-2F(MWH)",
-      "brand": "山善",
-      "image_url": "https://m.media-amazon.com/images/I/6119lxg8uoL._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.325,
-      "matched_comparison_axes": [
-        "mobility"
-      ],
-      "search_key": "LUMIEL 室内物干し 折りたたみ 物干しスタンド 物干し竿",
-      "selected_variant": {
-        "colour_style": "マットホワイト/3連物干し",
-        "count": 1
-      }
-    },
-    {
-      "ref": "p6",
-      "product_id": "AMZ-B0CCN3YK8K",
+      "amazon_title": "山崎実業(Yamazaki) 折り畳み 室内物干し ホワイト タワー tower",
       "asin": "B0CCN3YK8K",
-      "amazon_title": "山崎実業(Yamazaki) 折り畳み 室内物干し ホワイト タワー tower 6619",
-      "brand": "山崎実業",
-      "image_url": "https://m.media-amazon.com/images/I/51FVXZEwEdL._AC_SL1500_.jpg",
-      "observed_price": null,
+      "brand": "YAMAZAKI",
+      "discovery_axis_id": "popular",
       "discovery_score": 1,
-      "selection_score": 0.325,
-      "matched_comparison_axes": [],
-      "search_key": "洗濯物干し 折り畳み 室内 物干し スタンド 使用時：約W175",
-      "selected_variant": {
-        "colour_style": "ホワイト",
-        "count": 1
-      }
+      "image_url": "https://m.media-amazon.com/images/I/51FVXZEwEdL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0CCN3YK8K",
+      "provisional": false,
+      "rating": 4.4,
+      "ref": "p2",
+      "review_count": 1125,
+      "search_key": "YAMAZAKI 山崎実業(Yamazaki) 折り畳み 室内物干し ホワイト タ",
+      "selection_reason": "壁沿いに幅175cmを確保でき、通路側への張り出しを抑えて衣類を横一列に干したい人向け。使用時の奥行は25cm、ハンガーパイプの内寸は幅150cm。片づけると幅・奥行とも25cmになり、支柱のフックには洗濯かごやハンガーも掛けられる。メーカー公式の商品一覧で「BEST SELLER」と表示されている。[山崎実業公式](https://www.yamajitsu.co.jp/products/242305)",
+      "sources": [
+        {
+          "brand": "YAMAZAKI",
+          "excerpt": "Yamazaki 6619 Folding Indoor Clothes Dryer, White, When in Use: Approx. W 68.9 x D 9.8 x H 63.0 inches (175 x 25 x 160 cm), Tower Tower, Laundry Dryer, Compact Storage, Easy Assembly\nAbout this item\nPlease be aware that there is a risk of counterfeit products if the seller or delivery source is based outside of Japan\nProduct Size: In use: Approx. W 68.9 x D 9.8 x H 62.9 inches (W175 x D25 x H160 cm). When stored: Approx. W 9.8 x D 9.8 x H 63.4 inches (W25 x D25 x H161 cm). Internal dimensions: Hanger pipe: Approx. W 59.1 x H 62.6 inches (W150 x H159 cm)\nQuality label: Body: Steel (powder coated). Cap: Polypropylene\nAccessories: Hex wrench x 2; Note: Assembly required\nLoad capacity: Hanger pipe: Approx. 16.5 lbs (7.5 kg), per hook: Approx. 2.2 lbs (1 kg), per laundry hanger storage tier: Approx. 2.2 lbs (1 kg) › See more product details\nMaterial Quality label: Body: Steel (powder coated). Cap: Polypropylene\nProduct Dimensions 25D x 175W x 160H cm\nBrand YAMAZAKI\nColor white\nRecommended Uses For Product Clothing\nMounting Type Floor Mount\nItem Weight 7.9 Kilograms\nWeight Limit 7.5 Kilograms\nSpecial Feature Space Saving\nItem Highlight 使用時：約W175×D25×H160cm 洗濯物干し ハンガー収納 コンパクトに収納 組み立て簡単 6619 See more\nVisit the Yamazaki(山崎実業) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Yamazaki 6619 Folding Indoor Clothes Dryer, White, When in Use: Approx. W 68.9 x D 9.8 x H 63.0 inches (175 x 25 x 160 cm), Tower Tower, Laundry Dryer, Compact Storage, Easy Assembly",
+          "url": "https://www.amazon.co.jp/dp/B0CCN3YK8K?th=1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "天馬 洗濯物干し 室内 インテリア物干し パネルスリム 軽量 簡単組立 ハンガーラック コンパクトに収納可 オールステンレス おしゃれ 【サイズ 幅40×奥行40×高さ130cm】【PSI-10】",
+      "asin": "B0BH837B3B",
+      "brand": "",
+      "discovery_axis_id": "compact_footprint",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41I+AixkyaL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0BH837B3B",
+      "provisional": true,
+      "rating": 4.5,
+      "ref": "p3",
+      "review_count": 2180,
+      "search_key": "天馬 洗濯物干し 室内 インテリア物干し パネルスリム 軽量 簡",
+      "selection_reason": "脱衣所の隅など40×40cmほどの床面を使って干したい人向けのパネル式。高さ130cmに干し場を立て、使い終えたら幅40×奥行4cmの薄い形にたためるため、家具の横の隙間を収納先にできる。全体耐荷重は約8kg。[商品仕様](https://www.netsea.jp/shop/812005/1228790)",
+      "sources": []
+    },
+    {
+      "amazon_title": "SONGMICS 室内物干し 洗濯物干しスタンド ステンレス製 折りたたみ式 3本回転アーム 耐荷重 15 kg 63 x 63 x 156.5 cm",
+      "asin": "B0B1DW23NS",
+      "brand": "SONGMICS",
+      "discovery_axis_id": "compact_footprint",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/7115X-ik-7L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0B1DW23NS",
+      "provisional": false,
+      "rating": 4.5,
+      "ref": "p4",
+      "review_count": 2204,
+      "search_key": "SONGMICS 室内物干し 洗濯物干しスタンド ステンレス製 折りたたみ式 3本",
+      "selection_reason": "横長の物干しを置きにくい部屋で、衣類を縦方向にまとめたい人向け。メーカー公称の使用時寸法は63×63×156.5cmで、3本のアームを回転させて同じ位置から衣類を掛け外しできる。アームと脚を畳むと約5.6×5.6×182.6cmの棒状になり、狭い隙間に片づけられる。[SONGMICS公式](https://www.songmics.com/collections/home-storage/products/songmics-clothes-drying-rack-ullr510)",
+      "sources": [
+        {
+          "brand": "SONGMICS",
+          "excerpt": "SONGMICS 室内物干し 洗濯物干しスタンド ステンレス製 折りたたみ式 3本回転アーム 耐荷重 15 kg 63 x 63 x 156.5 cm\nこの商品について\n回転式アーム: 3つのアームが自由に回転する設計により、わざわざ反対側に回り込む手間が完全に省けます。同じ位置に立ったまま、どの方向からでもスムーズに衣類を掛けたり取り外したりできるため、毎日の洗濯作業の時間を大幅に短縮します。忙しい朝でも効率よく家事をこなせる、実用的でストレスフリーな使い心地を実現しました\n27着収納可能: 一度に最大27着の衣類を干せる大容量設計を採用しており、家族全員の週末のまとめ洗いにも余裕で対応できます。全体の耐荷重は15kgに達するため、濡れて重くなった冬物のセーターや厚手のバスタオルなどをたくさん掛けてもグラつかず、しっかりと支えます。大量の洗濯物を一気に片付けられる頼もしいアイテムです\n省スペース設計: 展開時のサイズは67x67x150cmと非常にコンパクトで、限られた床面積でも効率よく部屋干しができます。ワンルームマンションや脱衣所などの狭いスペースにも圧迫感なく設置可能です。使用後はスリムに折りたたむことができ、部屋の隅や家具の隙間、クローゼットの中などにすっきりと隠して収納できます\n折りたたみ構造: わずか7つの部品で構成されており、複雑な手順や工具は一切不要で、届いたその日に誰でも素早く組み立てられます。軽量でコンパクトに折りたためるため、室内での移動もスムーズです。ご自宅での日常使いはもちろん、キャンプなどのアウトドア活動や帰省時の持ち運びにも便利で、幅広いシーンで活躍します\n高品質ステンレススチール: メインポールと3本の脚部には、サビや腐食に強い高品質なステンレススチール素材を贅沢に使用しています。湿気の多い洗面所や梅雨の時期の室内干し環境でも劣化しにくく、長期間使用しても新品のような美しい光沢と頑丈さを保ちます。汚れが気になった際もサッと拭き取るだけで簡単にお手入れが完了します › もっと見る\n材質 ステンレススチールプラスチック。\n商品の寸法 67奥行き x 67幅 x 150高さ cm\nブランド SONGMICS\n色 ホワイト\n製品の推奨用途 衣類\n取り付けタイプ フロアマウント\n商品の重量 1.1 キログラム\n重量制限 1 キログラム\n特徴 折り畳み式, 省スペース\n商品のハイライト 部屋干し 省スペース シルバー/ホワイト BUNJI コレクション LLR510W01 表示を増やす\nSONGMICSのストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "SONGMICS 室内物干し 洗濯物干しスタンド ステンレス製 折りたたみ式 3本回転アーム 耐荷重 15 kg 63 x 63 x 156.5 cm",
+          "url": "https://www.amazon.co.jp/dp/B0B1DW23NS",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "アイリスオーヤマ 物干し 伸縮自在で洗濯物の量で調節可能なコンパクト洗濯物干し 布団も干せる頑丈設計 約5人用 幅約92~152×奥行約64×高さ約127.5 ホワイト STMX-920",
+      "asin": "B0BKQ8XL6F",
+      "brand": "",
+      "discovery_axis_id": "expandable_drying_area",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/510-6jbxDDL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0BKQ8XL6F",
+      "provisional": true,
+      "rating": 4.0,
+      "ref": "p5",
+      "review_count": 402,
+      "search_key": "アイリスオーヤマ 物干し 伸縮自在で洗濯物の量で調節可能なコンパ",
+      "selection_reason": "普段は幅を抑え、まとめ洗いの日には衣類とタオルを一緒に干したい人向け。竿の幅を約92～152cmで調整でき、タオルハンガー使用時の目安はシャツ約25枚・バスタオル約5枚・タオル約5枚・小物約20枚。収納時は幅約92×奥行約7cmになるので、広げた日の干し場と片づける日の置き場を両方計画できる。[アイリスプラザ](https://www.irisplaza.co.jp/index.php?KB=SHOSAI&SID=H100970)",
+      "sources": []
+    },
+    {
+      "amazon_title": "アイリスオーヤマ 洗濯物干し 室内物干し コンパクト収納 部屋干し時間短縮 布団も干せる 約4人用 伸縮スリム収納物干し 幅105.5~140×奥行72.5×高さ116.5~165㎝ SSSM-140",
+      "asin": "B07Y9TDNF4",
+      "brand": "",
+      "discovery_axis_id": "expandable_drying_area",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61LF-fIdvVL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B07Y9TDNF4",
+      "provisional": true,
+      "rating": 4.1,
+      "ref": "p6",
+      "review_count": 284,
+      "search_key": "アイリスオーヤマ 洗濯物干し 室内物干し コンパクト収納 部屋干",
+      "selection_reason": "洗濯量に応じて幅だけでなく丈の長い衣類を干す高さも変えたい人向け。使用時は幅約105.5～140cm、高さ約116.5～165cmに調整でき、メーカーの干せる目安は衣類18枚・バスタオル4枚・ピンチハンガー1個。使用後は約12×15×116.5cmに収束し、付属のゴムバンドでまとめられる。[アイリスプラザ](https://www.irisplaza.co.jp/index.php?KB=SHOSAI&SID=H522631)",
+      "sources": []
     }
-  ]
+  ],
+  "selection": {
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B07TLYJLHC",
+            "reason": "約2人分の普段着とタオルを一度に干したい家庭の定番候補。タオルハンガー使用時はシャツ約7枚・バスタオル約4枚・小物約20枚が目安で、使用時は幅70×奥行78cm、収納時は奥行8cmになる。洗濯量と片づけ先を具体的に見積もれる。メーカー公式通販には356件のレビューが掲載されている。[アイリスプラザ](https://www.irisplaza.co.jp/index.php?KB=SHOSAI&SID=H573579)"
+          },
+          {
+            "asin": "B0CCN3YK8K",
+            "reason": "壁沿いに幅175cmを確保でき、通路側への張り出しを抑えて衣類を横一列に干したい人向け。使用時の奥行は25cm、ハンガーパイプの内寸は幅150cm。片づけると幅・奥行とも25cmになり、支柱のフックには洗濯かごやハンガーも掛けられる。メーカー公式の商品一覧で「BEST SELLER」と表示されている。[山崎実業公式](https://www.yamajitsu.co.jp/products/242305)"
+          }
+        ]
+      },
+      {
+        "axis_id": "compact_footprint",
+        "products": [
+          {
+            "asin": "B0BH837B3B",
+            "reason": "脱衣所の隅など40×40cmほどの床面を使って干したい人向けのパネル式。高さ130cmに干し場を立て、使い終えたら幅40×奥行4cmの薄い形にたためるため、家具の横の隙間を収納先にできる。全体耐荷重は約8kg。[商品仕様](https://www.netsea.jp/shop/812005/1228790)"
+          },
+          {
+            "asin": "B0B1DW23NS",
+            "reason": "横長の物干しを置きにくい部屋で、衣類を縦方向にまとめたい人向け。メーカー公称の使用時寸法は63×63×156.5cmで、3本のアームを回転させて同じ位置から衣類を掛け外しできる。アームと脚を畳むと約5.6×5.6×182.6cmの棒状になり、狭い隙間に片づけられる。[SONGMICS公式](https://www.songmics.com/collections/home-storage/products/songmics-clothes-drying-rack-ullr510)"
+          }
+        ]
+      },
+      {
+        "axis_id": "expandable_drying_area",
+        "products": [
+          {
+            "asin": "B0BKQ8XL6F",
+            "reason": "普段は幅を抑え、まとめ洗いの日には衣類とタオルを一緒に干したい人向け。竿の幅を約92～152cmで調整でき、タオルハンガー使用時の目安はシャツ約25枚・バスタオル約5枚・タオル約5枚・小物約20枚。収納時は幅約92×奥行約7cmになるので、広げた日の干し場と片づける日の置き場を両方計画できる。[アイリスプラザ](https://www.irisplaza.co.jp/index.php?KB=SHOSAI&SID=H100970)"
+          },
+          {
+            "asin": "B07Y9TDNF4",
+            "reason": "洗濯量に応じて幅だけでなく丈の長い衣類を干す高さも変えたい人向け。使用時は幅約105.5～140cm、高さ約116.5～165cmに調整でき、メーカーの干せる目安は衣類18枚・バスタオル4枚・ピンチハンガー1個。使用後は約12×15×116.5cmに収束し、付属のゴムバンドでまとめられる。[アイリスプラザ](https://www.irisplaza.co.jp/index.php?KB=SHOSAI&SID=H522631)"
+          }
+        ]
+      }
+    ],
+    "brand_count": 2,
+    "candidate_count": 22,
+    "comparison_axes_covered": [
+      "compact_footprint",
+      "expandable_drying_area"
+    ],
+    "content_duplicates_removed": [],
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": []
+  },
+  "slug": "folding-indoor-drying-racks-6-picks"
 }
