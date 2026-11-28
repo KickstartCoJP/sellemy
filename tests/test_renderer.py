@@ -79,6 +79,16 @@ class RendererFailsClosedTests(unittest.TestCase):
 
 
 class RendererStructureTests(unittest.TestCase):
+    def test_contents_navigation_uses_reader_facing_label_and_existing_anchors(self):
+        payload = valid_payload()
+        rendered = render_article(payload, valid_evidence(), today=FIXED_DATE)
+        nav = rendered.split('<nav class="toc">', 1)[1].split('</nav>', 1)[0]
+        self.assertTrue(nav.startswith('<strong>目次</strong>'))
+        self.assertNotIn('記事の切り口', nav)
+        for group in payload['comparison_groups']:
+            self.assertIn(f'href="#{group["id"]}"', nav)
+            self.assertIn(f'<section id="{group["id"]}">', rendered)
+
     def test_exactly_six_cards_and_asins(self):
         html = render_article(valid_payload(), valid_evidence(), today=FIXED_DATE)
         self.assertEqual(html.count('class="item-card"'), 6)
