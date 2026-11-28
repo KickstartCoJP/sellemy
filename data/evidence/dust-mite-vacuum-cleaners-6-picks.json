@@ -1,145 +1,359 @@
 {
-  "slug": "dust-mite-vacuum-cleaners-6-picks",
-  "category": "gadget",
-  "canonical_url": "https://www.sellemy.jp/article/gadget/dust-mite-vacuum-cleaners-6-picks.html",
-  "eyecatch_image": "https://www.sellemy.jp/img/dust-mite-vacuum-cleaners-6-picks/dust-mite-vacuum-cleaners-6-picks.png",
   "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/dust-mite-vacuum-cleaners-6-picks.html",
+  "category": "gadget",
   "comparison_axes": [
     {
-      "id": "suction_uv",
-      "label": "吸引力・UV除菌機能",
+      "id": "popular",
       "keywords": [
-        "紫外線ランプ",
-        "叩き機能",
-        "吸引力"
+        "人気"
+      ],
+      "label": "人気・定番の基準"
+    },
+    {
+      "id": "floor_futon_routine",
+      "keywords": [
+        "本体重量",
+        "収納寸法",
+        "持ち手",
+        "コードの長さ"
+      ],
+      "label": "毎日しまう敷布団を、出し入れのついでに手入れしやすい"
+    },
+    {
+      "id": "stationary_mattress_care",
+      "keywords": [
+        "ヘッド幅",
+        "本体形状",
+        "可動範囲",
+        "電源方式"
+      ],
+      "label": "動かしにくいマットレスを、ベッドの上で隅まで手入れしやすい"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/dust-mite-vacuum-cleaners-6-picks/dust-mite-vacuum-cleaners-6-picks.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "2b21d296327647b214801c0fa49ee12b8406accc512e5a7200329626ee007376",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 28568,
+      "listing_identity_citations_repaired": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 1838,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 703,
+      "session_id": "01a21ba4-81a7-7682-bd2f-25bc088001d2",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "レイコップ UV コードレス 布団クリーナー 2024年新型モデル RJS2 レニー UV除菌 ダニ ハウスダスト ウイルス99.9% 除去 強力吸引 HEPAフィルタ RAYCO",
+          "identity_quote": "レイコップ UV コードレス 布団クリーナー 2024年新型モデル RJS2 レニー UV除菌 ダニ ハウスダスト ウイルス99.9% 除去 強力吸引 HEPAフィルタ RAYCOP ふとん掃除機 自立収納",
+          "reason": "掲載名からRJS2のコードレス布団クリーナーと識別できる。人気・定番の切り口で紹介できるが、使用時間など掲載名にない仕様は検証済みの事実として扱わない。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "アイリスオーヤマ(IRIS OHYAMA) 布団クリーナー ダニ・ちりセンサー搭載 たたき 約6,500回/分 FCA-13-C アイボリー",
+          "identity_quote": "アイリスオーヤマ(IRIS OHYAMA) 布団クリーナー ダニ・ちりセンサー搭載 たたき 約6,500回/分 FCA-13-C アイボリー",
+          "reason": "検証済みの商品情報で型番と布団用途を識別でき、センサーやコード付き電源を紹介できる。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "floor_futon_routine",
+              "quote": "Dimensions: Width 11.8 x Depth 13.8 x Height 5.9 inches (30 x 35.2 x 15.1 cm), Body weight: 4.3 lbs (1.95 kg)"
+            }
+          ],
+          "identity_key": "レイコップ 布団クリーナー UV除菌 吸引 パワフルたたき 「光クリーンメカニズム搭載」 ウイルス/ハウスダスト除去 軽量 コンパクト RE-100JWH-E",
+          "identity_quote": "レイコップ 布団クリーナー UV除菌 吸引 パワフルたたき 「光クリーンメカニズム搭載」 ウイルス/ハウスダスト除去 軽量 コンパクト RE-100JWH-E",
+          "reason": "検証済みの商品情報で型番と布団用途を識別できる。本体寸法と重量をもとに、敷布団の日常的な手入れという切り口で紹介できる。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "floor_futon_routine",
+              "quote": "布団のお手入れには、専用の布団ブラシがおすすめです。"
+            }
+          ],
+          "identity_key": "掃除機 コードレス 65000Pa超強力吸引  2026進化モデル業界最薄のフロアヘッド！0.5kg史上最軽量42分連続稼働 Type-C充電式",
+          "identity_quote": "掃除機 コードレス 65000Pa超強力吸引  2026進化モデル業界最薄のフロアヘッド！0.5kg史上最軽量42分連続稼働 Type-C充電式",
+          "reason": "検証済みの商品説明で完成品のコードレス掃除機と識別でき、布団ブラシを使う寝具用途も明記されている。吸引性能やダニ除去効果の宣伝文句は推薦の根拠にしない。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "stationary_mattress_care",
+              "quote": "Usage Dimensions (W x D x H) (Approx.): 11.8 x 19.7 x 8.6 inches (30 x 50.1 x 21.8 cm)"
+            },
+            {
+              "axis_id": "stationary_mattress_care",
+              "quote": "Cord length: approximately 4 meters"
+            }
+          ],
+          "identity_key": "【ハイパワーモデル】 アイリスオーヤマ(IRIS OHYAMA) 布団クリーナー ハイパワー ダニ対策 ワイドヘッド たたき 約14,000回/分 FCA-22H-C アイボリー",
+          "identity_quote": "【ハイパワーモデル】 アイリスオーヤマ(IRIS OHYAMA) 布団クリーナー ハイパワー ダニ対策 ワイドヘッド たたき 約14,000回/分 FCA-22H-C アイボリー",
+          "reason": "検証済みの商品情報で型番と布団用途を識別できる。寸法とコード長をもとに、ベッド上でのマットレスの手入れという切り口で紹介できる。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "【ダニ対策】 アイリスオーヤマ(IRIS OHYAMA) 布団クリーナー ホワイト ダニ対策 たたきヘッド 約6,000回/分 温風機能 フィルター付 IC-FAC2",
+          "identity_quote": "【ダニ対策】 アイリスオーヤマ(IRIS OHYAMA) 布団クリーナー ホワイト ダニ対策 たたきヘッド 約6,000回/分 温風機能 フィルター付 IC-FAC2",
+          "reason": "検証済みの商品情報で型番と布団用途を識別でき、マットレスの手入れに使う商品として紹介できる。ヘッドの可動角度など、検証済みの商品情報にない詳細は断定しない。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "6商品は掲載名または検証済みの商品情報からそれぞれ識別でき、寝具の掃除というテーマと割り当てられた紹介切り口に合う。p4は布団ブラシを使う汎用掃除機として紹介できる。同一商品の色・数量違いなどを示す積極的な根拠はない。記事本文がないため、文章に関する項目は判定対象外。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
+  "products": [
+    {
+      "amazon_title": "レイコップ UV コードレス 布団クリーナー 2024年新型モデル RJS2 レニー UV除菌 ダニ ハウスダスト ウイルス99.9% 除去 強力吸引 HEPAフィルタ RAYCOP ふとん掃除機 自立収納",
+      "asin": "B0DJ8MNLKW",
+      "brand": "",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61hr6UbLVxL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0DJ8MNLKW",
+      "provisional": true,
+      "rating": 4.1,
+      "ref": "p1",
+      "review_count": 182,
+      "search_key": "レイコップ UV コードレス 布団クリーナー 2024年新型モデ",
+      "selection_reason": "レイコップのRennyはコードレスで、本体1.03kg、小型ヘッド、USB-C充電、自立収納という組み合わせ。敷布団をしまう前に手に取り、ベッドではマットレスの端をこまめに手入れしたい人に向く。標準モードの使用時間は約30分、強モードは約16分と[メーカーが明示している](https://www.raycop.co.jp/pages/product-rjs2)。",
+      "sources": []
+    },
+    {
+      "amazon_title": "アイリスオーヤマ(IRIS OHYAMA) 布団クリーナー ダニ・ちりセンサー搭載 たたき 約6,500回/分 FCA-13-C アイボリー",
+      "asin": "B0BBVFX2GR",
+      "brand": "Iris Ohyama",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41yNLrDa+RL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0BBVFX2GR",
+      "provisional": false,
+      "rating": 4.2,
+      "ref": "p2",
+      "review_count": 438,
+      "search_key": "Iris Ohyama アイリスオーヤマ(IRIS OHYAMA) 布団クリーナー ダニ",
+      "selection_reason": "FCA-13-Cは約1.6kgで、収納時は幅25×奥行14.4cm。寝具の近くに置いて家族の敷布団とマットレスを順に掃除したい人に向く。ダニちりセンサーがハウスダストの量をランプで知らせ、4mコードで充電を挟まず使えることを[メーカーが示している](https://www.irisohyama.co.jp/products/electrical-appliances/home-appliances/vacuum-cleaner/cleaner-futon/cleaner-bed-with-cord-fca13)。",
+      "sources": [
+        {
+          "brand": "Iris Ohyama",
+          "excerpt": "Iris Ohyama (アイリスオーヤマ) Mattress Cleaner with Dust Mite and Dust Sensor, Beating Function, Approximately 6,500 RPM, FCA-13-C, Ivory\nAbout this item\nSize when in use: Width 9.8 x Depth 18.1 x Height 8.3 inches (25 x 45.9 x 21.2 cm); Size when stored: Width 9.8 x Depth 5.7 x Height 15.9 inches (25 x 14.4 x 4\nWeight (including power cord): Approx. 3.5 lbs (1.6 kg); Power Supply: AC 100 V (50/60 Hz); Power Consumption: 400 W; Dust Collection Capacity: Approx. 0.2 L\nVibration frequency: Approx. 6,500 times per minute; Cord length: Approx. 13.1 ft (4 m)\nSet Includes: Vacuum cleaner body, 25 disposable filters (1 piece already set in the main unit)\nConsumables/Disposable Filters (25 Pack): CF-FT1/Dust Collector Filters (2 Pack): CF-FS2/Exhaust Filters (2 Pack): CF-FH2 › See more product details\nBrand Iris Ohyama\nSpecial Feature Lightweight\nFilter Type HEPA Filter\nSurface Recommendation futon\nPower Source Corded Electric\nVisit the アイリスオーヤマ(IRIS OHYAMA) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Iris Ohyama (アイリスオーヤマ) Mattress Cleaner with Dust Mite and Dust Sensor, Beating Function, Approximately 6,500 RPM, FCA-13-C, Ivory",
+          "url": "https://www.amazon.co.jp/dp/B0BBVFX2GR?th=1",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "weight_ease",
-      "label": "重さ・操作性",
-      "keywords": [
-        "軽量",
-        "コードレス",
-        "片手操作"
+      "amazon_title": "レイコップ 布団クリーナー UV除菌 吸引 パワフルたたき 「光クリーンメカニズム搭載」 ウイルス/ハウスダスト除去 軽量 コンパクト RE-100JWH-E",
+      "asin": "B08XM26HKK",
+      "brand": "Raycop",
+      "discovery_axis_id": "floor_futon_routine",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71ZUcvmHC5L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B08XM26HKK",
+      "provisional": false,
+      "rating": 4.2,
+      "ref": "p3",
+      "review_count": 326,
+      "search_key": "Raycop レイコップ 布団クリーナー UV除菌 吸引 パワフルたたき 「光",
+      "selection_reason": "レイコップ RE-100JWH-Eは幅30×奥行35.2×高さ15.1cmの低い本体に、UVランプ・たたき・吸引を備える。敷布団を畳む前に専用機で表面を手入れし、使い終えたら棚などへ収めたい人に向く。本体重量は1.95kgで、この型番の[販売ページに仕様と在庫が掲載されている](https://ymall.jp/store/mlymall/b08xm26hkk-20230707/)。（重量は電源コードを除く。）",
+      "sources": [
+        {
+          "brand": "Raycop",
+          "excerpt": "Raykop RE-100JWH-E Futon Cleaner, UV Disinfectant, Suction, Powerful Putting, Built-in Light Clean Mechanism, Viruses/House Dust Removal, Lightweight, Compact\nAbout this item\nA futon cleaner that can easily counteract household dust\nDimensions: Width 11.8 x Depth 13.8 x Height 5.9 inches (30 x 35.2 x 15.1 cm), Body weight: 4.3 lbs (1.95 kg), Dust capacity: 0.3 L\nPowerful tapping: 3,300 rotations per minute\nUV-C Lamp: 6W (253.7nm), UV Disinfection: 99.9%※(Tested by the Japan Food Analytical Center, Certificate No. 15009593001-01)\nDust removal rate: 90% in 3 minutes *According to ITEA Co., Ltd. Tokyo Environmental Allergy Research Institute, 14M-RPTJUL016 › See more product details\nBrand Raycop\nSpecial Feature Lightweight\nFilter Type HEPA Filter\nSurface Recommendation futon\nPower Source Corded Electric\nVisit the RAYCOP(レイコップ) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Raykop RE-100JWH-E Futon Cleaner, UV Disinfectant, Suction, Powerful Putting, Built-in Light Clean Mechanism, Viruses/House Dust Removal, Lightweight, Compact",
+          "url": "https://www.amazon.co.jp/dp/B08XM26HKK",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "maintenance",
-      "label": "お手入れのしやすさ",
-      "keywords": [
-        "ダストカップ",
-        "水洗い",
-        "フィルター交換"
+      "amazon_title": "掃除機 コードレス 65000Pa超強力吸引  2026進化モデル業界最薄のフロアヘッド！0.5kg史上最軽量42分連続稼働 Type-C充電式",
+      "asin": "B0GW79BPC5",
+      "brand": "Yuuscc",
+      "discovery_axis_id": "floor_futon_routine",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61RqLx078ML._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0GW79BPC5",
+      "provisional": false,
+      "rating": 4.3,
+      "ref": "p4",
+      "review_count": 528,
+      "search_key": "Yuuscc 掃除機 コードレス 65000Pa超強力吸引 2026進化モデル",
+      "selection_reason": "Yuusccのコードレス掃除機は、商品説明に使用時重量755g、Type-C充電、付属の2in1布団ブラシが記載されている。敷布団を上げる前にコードを引き回さず掃除し、同じ一台を床やソファにも使いたい人に向く。布団専用機ではなく、[新品として掲載されている商品](https://payid.jp/item/159025230)の付属ブラシを使う選択肢。",
+      "sources": [
+        {
+          "brand": "Yuuscc",
+          "excerpt": "掃除機 コードレス 65000Pa超強力吸引 2026進化モデル業界最薄のフロアヘッド！0.5kg史上最軽量42分連続稼働 Type-C充電式\nAbout this item\n🎖️【65Kpa超強力吸引・小型なのにパワー抜群＆超軽量】軽くて、吸引力が抜群で、お財布に優しいコードレス掃除機をお探しではありませんか？ それなら、この一台で全ての悩みが解決します。Yuusccコードレス掃除機は業界革新の遠心分離技術で、掃除機の吸引力が70%もパワーアップ！また、業界最新の薄型＆省スペース設計でありながら、スタイリッシュなヘッドブラシを採用したことで、従来比で吸引力が大幅に（３倍）向上しました。微細なホコリはもちろん、猫の餌のような粒の大きなものまで、驚くほど軽快に吸引。スリムブラシヘッドで、壁際のゴミもすっきり吸引。死角なしのクリーンアップを実現される。755g（使用時重量）という超軽量設計を実現。長時間の使用でも腕への負担が少なく、ストレスなくお掃除を楽しめます。本体重量はわずか500g。スリム軽量で握り心地抜群、女性やご年配の方でも楽々操作可能。お子様のお手伝いも楽しくなること間違いなし！軽いので持ち上げやすく、エアコンや網戸、高い天井までらく々届け。軽やかなコードレス設計で、家のどこまでもスイスイ動けます。デザインと性能、どちらも洗練されたスマートな一台！\n🎖️【7500mAh大容量＆最大42分連続稼働・低騒音＆Type-C充電】家庭用掃除機には大容量7500mAhバッテリーを内蔵。一度の充電で最大42分間の連続使用が可能です。一人暮らしの部屋から2LDKのお住まいまで、一気にしっかりとお掃除できます。稼動音は62dBと、パワーがありながらも比較的音は静か。長期的なご利用を見据え、バッテリーには高性能リチウムイオン電池を採用。Type-C充電ポートにより急速充電に対応し、充電状態はインジケーターライトで一目で確認可能です。充電には、出力5V 2A以上のACアダプターの使用をおすすめします。パソコンやカーチャージャー、アダプター、モバイルバッテリーなど多彩な方法で充電でき、ほとんどのスマートフォン用アダプターと共用可能です。「掃除機専用の充電器がどこにあるか？」と探し回る必要はもうありません。とても便利です！🎁【限定期間キャンペーン】今ご注文いただくと、交換用フィルターセットあるいは掃除機スタンドがもらえる！（お一人様１回）お気軽に説明書の連絡先より弊社までご応募してください！\n🎖️【遠心分離サイクロン&メタルフィルターとHEPAフィルター】小型掃除機は独自開発のサイクロン式遠心分離機構を採用されて、吸入した空気と塵を高速回転させ、強力な遠心力によって微細なゴミを分離・捕捉。塵はフィルター外周部に集められ、浄化された空気のみが排気される仕組みです。これにより、紙パック式掃除機と比べ、吸引力の持続性が格段に向上。他社には真似のできない「ステンレスフィルター＋HEPA」の二重構造で、従来比3段階も進化した浄化性能を実現。第一層のステンレスフィルターが大きなゴミやホコリをキャッチ（HEPAの目詰まりを防止）。金属製なので水洗いでき、清潔を保ちながらコストダウンにも貢献。第二層のHEPAフィルターが0.3μmの微粒子を99.97%ブロック（花粉・PM2.5・アレル物質対策）。一般的な製品（HEPAのみ）は大きなゴミですぐ目詰まりするのに対し、当製品はステンレスフィルターが前処理するため、HEPAの寿命を2倍に延長（※自社比較試験による）。\n🎖️【進化した2in1布団ブラシ＆ワンボタンゴミ捨て＆お手入れ簡単】布団のお手入れには、専用の布団ブラシがおすすめです。吸い込み口が布団を傷めず、スムーズに吸引。本体の高出力モーターと相まって、布団の深部に潜むダニの死骸・フン・ハウスダストを徹底吸引。清潔な布団を保ちたい方に最適です。また、この布団ブラシはカーペットにも密着し、繊維の奥深くまで入り込んで汚れをかき出します。2in1のデュアル設計で、ペットの毛が絡みやすいカーペットや、複雑な形状のソファの細かい隙間のゴミにも対応。家庭用掃除機は従来のようなダストカップの取り外しが不要！本体のワンボタンを押すだけで、フタがすぐに開き、手を汚すことなく直接ゴミを捨てられます。片手操作でサッと埃を処理できるので、後片付けもあっという間。掃除機を使った後のわずらわしさを減らし、より快適で衛生的な暮らしを実現します。また、フィルター・ブラシ・ダストカップの水洗いも可能です。ダストカップは円柱形かつ複雑な構造がないため、定期的なお手入れもスムーズにできます。\n🎖️【家中から車内まで＆3年保証】コードレス＆軽量のマルチクリーナーで、思いついた瞬間がお掃除チャンス！ 電源の絡まりがないから、窓枠の細かいホコリはもちろん、ソファの隙間やマットレスのダニ退治、キーボードの溝のゴミ、車内シートの食べかすまで、らくらく吸引。コンパクトで持ち運びしやすく、日常のお掃除からアウトドア用途まで、これ1台で快適な毎日をサポートします。YU101コードレス掃除機はPSE認定を取得しており、安心してご利用いただけます。\n💝【お客様の声】非常に軽量で猫飼いの小生にはピッタリ。紙の猫砂くらいなら問題なく吸える。溜まったゴミを捨てるフラッパー部分が壊れるというコメントを見て、私はパイプを抜いてから吸引モーター部分を外し、フィルターを抜いてゴミ除去をしています。———— 猫飼いのお客様より。【販売元からひとこと】こちらのお客様、実際にご使用いただきながら、正しいお手入れ方法も実践してくださっています。特に「フラッパー部分（ゴミ捨て口）が壊れやすい」という一部のコメントに関しまして、弊社から補足させていただきます。フラッパー部分の破損を防ぐために大切なポイント：ゴミを捨てる際、必ずパイプを本体から外した上で、吸引モーター部分を外し、フィルターを取り出してからゴミ除去を行ってください。パイプが接続されたまま無理に開けようとすると、フラッパーに負荷がかかり破損の原因となります。こちらのお客様が実践されている通り、正しい手順でお使いいただければ、長く快適にお使いいただけます。 › See more product details\nBrand Yuuscc\nSpecial Feature 「7段階の高度な濾過システムで、0.3μmの微細な粒子を99.99%カット。排気される空気は室内の空気よりクリーンです」、「ステンレスプレフィルター+HEPAフィルターのWフィルターシステムで確かな集塵」, 「Type-C急速充電対応で、スマホの充電器でそのまま充電可能」、「安心の国内PSE認証取得＆3年間品質保証。万一の際も無償交換対応」、「布団もカーペットもOK！2WAYブラシでダニの死骸やフンを深く吸引・除去」, 「大容量7500mAhバッテリー搭載で最大約42分の連続使用が可能。広いお家でも充電の心配がありません」、「コンパクト設計でどこにでもすっきり収納。さっと手に取って、いつでもすぐにお掃除を始められます」, 「従来品比▲30%の低騒音設計。夜間や早朝でも家族の気兼ねなく使えます」、「ワンボタンでごみ排出。直接手が触れないから清潔で衛生的」, 「最大吸引圧50,000Pa（従来比3.2倍）の超強力吸引で、ペットの毛や敷き砂、頑固な隙間のホコリもらくらく吸引」、「重量はわずか500g。女性やご年配の方でも片手で軽々操作でき、階段の上り下りの掃除も楽々」「7段階の高度な濾過システムで、0.3μmの微細な粒子を99.99%カット。排気される空気は室内の空気よりクリーンです」、「ステン… See more\nFilter Type HEPAフィルター\nSurface Recommendation 大きな掃除機は週に1回。それ以外は、この一台で十分。\nPower Source バッテリー式\nVisit the Yuuscc Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "掃除機 コードレス 65000Pa超強力吸引 2026進化モデル業界最薄のフロアヘッド！0.5kg史上最軽量42分連続稼働 Type-C充電式",
+          "url": "https://www.amazon.co.jp/dp/B0GW79BPC5?th=1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "【ハイパワーモデル】 アイリスオーヤマ(IRIS OHYAMA) 布団クリーナー ハイパワー ダニ対策 ワイドヘッド たたき 約14,000回/分 FCA-22H-C アイボリー",
+      "asin": "B0BBVFCD66",
+      "brand": "Iris Ohyama",
+      "discovery_axis_id": "stationary_mattress_care",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51fFr1DkR9L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0BBVFCD66",
+      "provisional": false,
+      "rating": 4.3,
+      "ref": "p5",
+      "review_count": 407,
+      "search_key": "Iris Ohyama アイリスオーヤマ(IRIS OHYAMA) 布団クリーナー ハイ",
+      "selection_reason": "FCA-22H-Cは約30cmのワイドヘッドに高速回転パワーブラシを備え、4mのコードで使う。動かせないマットレスの広い面を、ベッド上で往復して手入れしたい人に向く。ヘッド幅、本体2.2kg、コード長は[メーカー仕様](https://www.irisohyama.co.jp/products/electrical-appliances/home-appliances/vacuum-cleaner/cleaner-futon/cleaner-bed-with-cord-fca22h)で確認できる。",
+      "sources": [
+        {
+          "brand": "Iris Ohyama",
+          "excerpt": "Iris Ohyama FCA-22H-C Futon Cleaner, High Power, Dust Mite Protection, Wide Head, Approx. 14,000 Times/Min, Ivory\nAbout this item\nUsage Dimensions (W x D x H) (Approx.): 11.8 x 19.7 x 8.6 inches (30 x 50.1 x 21.8 cm) ● Stored Dimensions (W x D x H) (Approx.): 11.8 x 6.6 x 16.5 inches (30 x 16.7 x 42 cm)\nWeight (including power cord): Approx. 2.2 kg. Power supply: AC 100 V (50/60 Hz). Power consumption: 600 W. Dust capacity: Approx. 0.2 L\nBeating frequency: approximately 14,000 times per minute ● Cord length: approximately 4 meters\nSet Contents: Cleaner main unit, disposable filters x 25 pieces (1 piece is pre-installed on the main unit)\nOptional accessories/disposable filters (25 pieces): CF-FT1/Dust collection filter (2 pieces): CF-FS2/Exhaust filter (2 pieces): CF-FH3 › See more product details\nBrand Iris Ohyama\nSpecial Feature HEPA, Lightweight\nFilter Type Paper, Non-woven Fabric, Polypropylene\nSurface Recommendation futon\nPower Source Corded Electric\nVisit the アイリスオーヤマ(IRIS OHYAMA) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Iris Ohyama FCA-22H-C Futon Cleaner, High Power, Dust Mite Protection, Wide Head, Approx. 14,000 Times/Min, Ivory",
+          "url": "https://www.amazon.co.jp/dp/B0BBVFCD66?th=1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "【ダニ対策】 アイリスオーヤマ(IRIS OHYAMA) 布団クリーナー ホワイト ダニ対策 たたきヘッド 約6,000回/分 温風機能 フィルター付 IC-FAC2",
+      "asin": "B07H4MYMP9",
+      "brand": "Iris Ohyama",
+      "discovery_axis_id": "stationary_mattress_care",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41W46tl8-UL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B07H4MYMP9",
+      "provisional": false,
+      "rating": 4.2,
+      "ref": "p6",
+      "review_count": 4503,
+      "search_key": "Iris Ohyama アイリスオーヤマ(IRIS OHYAMA) 布団クリーナー ホワ",
+      "selection_reason": "IC-FAC2は本体の角度を変えてもヘッドを寝具に密着させられる可動式で、可動範囲は75°。ベッド上で姿勢を変えながらマットレスの端へヘッドを動かしたい人に向く。幅20cmのたたきパッドと温風機能も[製品情報](https://www.biccamera.com/bc/item/3361462/)に記載されている。ただし、この販売店では販売終了と表示されているため、購入時は別の販売先の在庫確認が必要。",
+      "sources": [
+        {
+          "brand": "Iris Ohyama",
+          "excerpt": "Iris Ohyama IC-FAC2 Futon Cleaner, White, Dust Mite Countermeasure, Hitting Head, Approx. 6,000 times/minute, Warm Air Function, Filter Included\nAbout this item\nSize when using futon cleaner: Approx. 9.8 x 18.1 x 8.3 inches (25 x 45.9 x 21.2 cm)\nStorage Size (W x D x H): Approx. 9.8 x 5.7 x 15.9 inches (25 x 14.4 x 40\nPower Supply: AC 100 V (50/60 Hz)\nPower Consumption: 400 W\nCord Length: Approx. 13.1 ft ( › See more product details\nBrand Iris Ohyama\nSpecial Feature Supports nationwide (Power supply: AC 100 V, 50/60 Hz)\nFilter Type Paper, Non-woven Fabric, Polypropylene\nSurface Recommendation Hard Floor\nPower Source Corded Electric\nVisit the アイリスオーヤマ(IRIS OHYAMA) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Iris Ohyama IC-FAC2 Futon Cleaner, White, Dust Mite Countermeasure, Hitting Head, Approx. 6,000 times/minute, Warm Air Function, Filter Included",
+          "url": "https://www.amazon.co.jp/dp/B07H4MYMP9?th=1",
+          "verified": true
+        }
       ]
     }
   ],
   "selection": {
-    "comparison_axes_covered": [
-      "suction_uv",
-      "weight_ease"
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B0DJ8MNLKW",
+            "reason": "レイコップのRennyはコードレスで、本体1.03kg、小型ヘッド、USB-C充電、自立収納という組み合わせ。敷布団をしまう前に手に取り、ベッドではマットレスの端をこまめに手入れしたい人に向く。標準モードの使用時間は約30分、強モードは約16分と[メーカーが明示している](https://www.raycop.co.jp/pages/product-rjs2)。"
+          },
+          {
+            "asin": "B0BBVFX2GR",
+            "reason": "FCA-13-Cは約1.6kgで、収納時は幅25×奥行14.4cm。寝具の近くに置いて家族の敷布団とマットレスを順に掃除したい人に向く。ダニちりセンサーがハウスダストの量をランプで知らせ、4mコードで充電を挟まず使えることを[メーカーが示している](https://www.irisohyama.co.jp/products/electrical-appliances/home-appliances/vacuum-cleaner/cleaner-futon/cleaner-bed-with-cord-fca13)。"
+          }
+        ]
+      },
+      {
+        "axis_id": "floor_futon_routine",
+        "products": [
+          {
+            "asin": "B08XM26HKK",
+            "reason": "レイコップ RE-100JWH-Eは幅30×奥行35.2×高さ15.1cmの低い本体に、UVランプ・たたき・吸引を備える。敷布団を畳む前に専用機で表面を手入れし、使い終えたら棚などへ収めたい人に向く。本体重量は1.95kgで、この型番の[販売ページに仕様と在庫が掲載されている](https://ymall.jp/store/mlymall/b08xm26hkk-20230707/)。（重量は電源コードを除く。）"
+          },
+          {
+            "asin": "B0GW79BPC5",
+            "reason": "Yuusccのコードレス掃除機は、商品説明に使用時重量755g、Type-C充電、付属の2in1布団ブラシが記載されている。敷布団を上げる前にコードを引き回さず掃除し、同じ一台を床やソファにも使いたい人に向く。布団専用機ではなく、[新品として掲載されている商品](https://payid.jp/item/159025230)の付属ブラシを使う選択肢。"
+          }
+        ]
+      },
+      {
+        "axis_id": "stationary_mattress_care",
+        "products": [
+          {
+            "asin": "B0BBVFCD66",
+            "reason": "FCA-22H-Cは約30cmのワイドヘッドに高速回転パワーブラシを備え、4mのコードで使う。動かせないマットレスの広い面を、ベッド上で往復して手入れしたい人に向く。ヘッド幅、本体2.2kg、コード長は[メーカー仕様](https://www.irisohyama.co.jp/products/electrical-appliances/home-appliances/vacuum-cleaner/cleaner-futon/cleaner-bed-with-cord-fca22h)で確認できる。"
+          },
+          {
+            "asin": "B07H4MYMP9",
+            "reason": "IC-FAC2は本体の角度を変えてもヘッドを寝具に密着させられる可動式で、可動範囲は75°。ベッド上で姿勢を変えながらマットレスの端へヘッドを動かしたい人に向く。幅20cmのたたきパッドと温風機能も[製品情報](https://www.biccamera.com/bc/item/3361462/)に記載されている。ただし、この販売店では販売終了と表示されているため、購入時は別の販売先の在庫確認が必要。"
+          }
+        ]
+      }
     ],
-    "brand_count": 6,
-    "price_used_as_constraint_only": true
+    "brand_count": 3,
+    "candidate_count": 20,
+    "comparison_axes_covered": [
+      "floor_futon_routine"
+    ],
+    "content_duplicates_removed": [],
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": []
   },
-  "products": [
-    {
-      "ref": "p1",
-      "product_id": "AMZ-B0D7C6VH4G",
-      "asin": "B0D7C6VH4G",
-      "amazon_title": "UWANT M100",
-      "brand": "UWANT",
-      "image_url": "https://m.media-amazon.com/images/I/71b-Rog4TuL._AC_SY300_SX300_QL70_ML2_.jpg",
-      "observed_price": 12800,
-      "discovery_score": 1,
-      "selection_score": 0.83,
-      "matched_comparison_axes": [
-        "suction_uv",
-        "weight_ease"
-      ],
-      "search_key": "uwant 布団クリーナー 16Kpaの強力な吸引力 毎分たたき36,000",
-      "model": "UWANT M100",
-      "selected_variant": "オレンジと白・コード式"
-    },
-    {
-      "ref": "p2",
-      "product_id": "AMZ-B0BBVFCD66",
-      "asin": "B0BBVFCD66",
-      "amazon_title": "アイリスオーヤマ FCA-22H-C アイボリー",
-      "brand": "アイリスオーヤマ",
-      "image_url": "https://m.media-amazon.com/images/I/51fFr1DkR9L._AC_SY300_SX300_QL70_ML2_.jpg",
-      "observed_price": 7580,
-      "discovery_score": 1,
-      "selection_score": 0.52,
-      "matched_comparison_axes": [
-        "weight_ease"
-      ],
-      "search_key": "HAUSHOF 布団クリーナー コードレス 布団掃除機 ダニ 掃除機 充電式 ダ",
-      "model": "FCA-22H-C",
-      "selected_variant": "アイボリー"
-    },
-    {
-      "ref": "p3",
-      "product_id": "AMZ-B0DJ8MNLKW",
-      "asin": "B0DJ8MNLKW",
-      "amazon_title": "レイコップ Renny RJS2-100 ホワイト",
-      "brand": "レイコップ",
-      "image_url": "https://m.media-amazon.com/images/I/61hr6UbLVxL._AC_SY300_SX300_QL70_ML2_.jpg",
-      "observed_price": 10900,
-      "discovery_score": 1,
-      "selection_score": 0.52,
-      "matched_comparison_axes": [],
-      "search_key": "MOVA D10 Ultra 布団用掃除機 ダニ駆除 布団クリーナー 14",
-      "model": "Renny RJS2-100",
-      "selected_variant": "ホワイト・コードレス コンパクト スタイル"
-    },
-    {
-      "ref": "p4",
-      "product_id": "AMZ-B0FC1WNWZ9",
-      "asin": "B0FC1WNWZ9",
-      "amazon_title": "レイコップ RS5-100 ホワイト",
-      "brand": "レイコップ",
-      "image_url": "https://m.media-amazon.com/images/I/61REkSakunL._AC_SY300_SX300_QL70_ML2_.jpg",
-      "observed_price": 39980,
-      "discovery_score": 1,
-      "selection_score": 0.52,
-      "matched_comparison_axes": [
-        "weight_ease"
-      ],
-      "search_key": "CREATULIZE BOT X1 全自動ベッド掃除ロボット 寝具クリーナー ワンタッ",
-      "model": "RS5-100",
-      "selected_variant": "ホワイト・コードレス ファミリー スタイル"
-    },
-    {
-      "ref": "p5",
-      "product_id": "AMZ-B0FZG3NN6K",
-      "asin": "B0FZG3NN6K",
-      "amazon_title": "レイコップ PRO3-100 ホワイト",
-      "brand": "レイコップ",
-      "image_url": "https://m.media-amazon.com/images/I/612Ayyk3N2L._AC_SY300_SX300_QL70_ML2_.jpg",
-      "observed_price": 12999,
-      "discovery_score": 1,
-      "selection_score": 0.52,
-      "matched_comparison_axes": [],
-      "search_key": "Airpher 布団クリーナー UV除菌・ダニ・ウイルス駆除 最大18Kpa 強",
-      "model": "PRO3-100",
-      "selected_variant": "ホワイト・コードレス プレミアム スタイル"
-    },
-    {
-      "ref": "p6",
-      "product_id": "AMZ-B0H6BMMJJ2",
-      "asin": "B0H6BMMJJ2",
-      "amazon_title": "アイリスオーヤマ FBD-41-W ホワイト",
-      "brand": "アイリスオーヤマ",
-      "image_url": "https://m.media-amazon.com/images/I/217kOnSQp6L._AC_SX300_SY300_QL70_ML2_.jpg",
-      "observed_price": 19800,
-      "discovery_score": 1,
-      "selection_score": 0.52,
-      "matched_comparison_axes": [
-        "weight_ease"
-      ],
-      "search_key": "アイリスオーヤマ(IRIS OHYAMA) アイリスオーヤマ ふとんクリーナー 紙パック式 コー",
-      "model": "FBD-41-W",
-      "selected_variant": "ホワイト・紙パック式"
-    }
-  ]
+  "slug": "dust-mite-vacuum-cleaners-6-picks"
 }
