@@ -1,269 +1,376 @@
 {
-  "slug": "compact-mini-pcs-6-picks",
-  "category": "gadget",
-  "canonical_url": "https://www.sellemy.jp/article/gadget/compact-mini-pcs-6-picks.html",
-  "eyecatch_image": "https://www.sellemy.jp/img/compact-mini-pcs-6-picks/compact-mini-pcs-6-picks.png",
   "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/compact-mini-pcs-6-picks.html",
+  "category": "gadget",
   "comparison_axes": [
     {
-      "id": "performance_memory",
-      "label": "処理性能・メモリ構成",
+      "id": "popular",
       "keywords": [
-        "CPU",
-        "メモリ容量",
-        "SSD容量"
-      ]
+        "人気"
+      ],
+      "label": "人気・定番の基準"
     },
     {
-      "id": "size_installation",
-      "label": "サイズ・設置性",
+      "id": "desk_placement",
       "keywords": [
-        "小型設計",
+        "本体寸法",
         "設置スペース",
-        "VESAマウント"
+        "モニター背面への取り付け条件"
+      ],
+      "label": "狭い机への置きやすさ"
+    },
+    {
+      "id": "dual_display_setup",
+      "keywords": [
+        "映像出力端子",
+        "同時接続可能な画面数",
+        "モニターとの接続条件"
+      ],
+      "label": "2画面の仕事環境の組みやすさ"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/compact-mini-pcs-6-picks/compact-mini-pcs-6-picks.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "307f0f5af860f9ac0a42e49653a027abc09e82bccdc870ab99b19eec6a16c528",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 29486,
+      "listing_identity_citations_repaired": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 1468,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 243,
+      "session_id": "01a21a9a-2c3f-7da1-9402-c4a684801e1f",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "Support for dual displays through two HDMI ports"
+            }
+          ],
+          "identity_key": "Intel Mini PC 2025 Latest Alder Lake-N Series N100 (4C/4T, up to 3.4GHz) TRIGKEY Key-N Min",
+          "identity_quote": "Intel Mini PC 2025 Latest Alder Lake-N Series N100 (4C/4T, up to 3.4GHz) TRIGKEY Key-N Mini PC 16GB DDR4 500GB M.2 PCIE SSD 4K@60Hz Small PC | High-Speed WiFi 5 | BT 5.0 | USB 3.2 Silent Mini PC",
+          "reason": "検証済み商品掲載情報（https://www.amazon.co.jp/dp/B0BWLXCWXY）の商品名と本文からミニPC本体を識別できる。HDMI端子2基を使う用途も具体的に紹介できる。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "16GB DDR4 3200MHz memory and a 512GB SSD"
+            }
+          ],
+          "identity_key": "Getorli Mini PC - AMD Ryzen 5 7430U Max 4.3GHz Dual LAN 16GB DDR4 Memory 512GB SSD Mini PC",
+          "identity_quote": "Getorli Mini PC - AMD Ryzen 5 7430U Max 4.3GHz Dual LAN 16GB DDR4 Memory 512GB SSD Mini PC 4K 60Hz Output HDMI/Type-C/USB Port WiFi 6 Bluetooth 5.3 Mini PC for Home, Office and Light Gaming Mini pc",
+          "reason": "検証済み商品掲載情報（https://www.amazon.co.jp/dp/B0H1ZHWZNG?th=1）の商品名でミニPC本体を識別できる。メモリ、ストレージ、映像出力端子の記載に基づき紹介できる。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "desk_placement",
+              "quote": "Compact design at 114×106×44mm and approximately 260g. Efficiently utilizes space around the desk, and VESA mount compatibility allows installation at the back of the monitor."
+            }
+          ],
+          "identity_key": "GMKtec Mini PC, 12th Generation Intel N95, First Release | Fast Than N97, 8GB + 256GB, SSD",
+          "identity_quote": "GMKtec Mini PC, 12th Generation Intel N95, First Release | Fast Than N97, 8GB + 256GB, SSD, Small Desktop, Windows 11 Pro, 4 Cores/4 Threads, Up to 3.4 GHz, NVMe M.2, 2280 Slots, PCIe3.0, WiFi 5 Wired",
+          "reason": "検証済み商品掲載情報（https://www.amazon.co.jp/dp/B0GX53RQS1?th=1）の商品名でミニPC本体を識別できる。本体寸法とVESAマウント対応が、机への置きやすさという切り口を支える。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "desk_placement",
+              "quote": "can be installed on the back of the monitor via VESA mount"
+            }
+          ],
+          "identity_key": "NiPoGi P1 Ryzen 5425U Mini PC, 2026 Model, More Than 3500U, 4C/8T",
+          "identity_quote": "NiPoGi P1 Ryzen 5425U Mini PC, 2026 Model, More Than 3500U, 4C/8T",
+          "reason": "検証済み商品掲載情報（https://www.amazon.co.jp/dp/B0HNWGKPY8?th=1）の商品名でミニPC本体を識別できる。本文にVESAマウントによる背面設置の記載がある。付属品欄には別の型番表記があるため、その型番を確定事実として扱わない。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "dual_display_setup",
+              "quote": "by using the two HDMI ports, you can set up a dual-monitor environment"
+            }
+          ],
+          "identity_key": "Getorli Mini PC AMD Ryzen 5 3501U Mini PC 8GB DDR4 256G NVMe SSD PCIe3.0 Max 32GB SSD + 2T",
+          "identity_quote": "Getorli Mini PC AMD Ryzen 5 3501U Mini PC 8GB DDR4 256G NVMe SSD PCIe3.0 Max 32GB SSD + 2TB Expansion WiFi 6 BT5.2 Gigabit Wired LAN Radeon Vega 8 Support 3-Screen 4K Low Power Consumption Quiet HDMI",
+          "reason": "検証済み商品掲載情報（https://www.amazon.co.jp/dp/B0H2VMHTDR?th=1）の商品名でミニPC本体を識別できる。p2とは掲載CPUが異なる。HDMI端子2基による2画面構成の記載が担当する切り口を支える。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "dual_display_setup",
+              "quote": "Equipped with an HDMI 2.1 (4K@120hz/8K@60Hz) x1, DP1.4 (4K@144hz) x1, and USB4 (4K@120hz/8K@60Hz) x1"
+            }
+          ],
+          "identity_key": "MINISFORUM UM760Slim Mini pc AMD Ryzen 5 7640HS DDR5-5600MHz 16GB 1TB SSD",
+          "identity_quote": "MINISFORUM UM760Slim Mini pc AMD Ryzen 5 7640HS DDR5-5600MHz 16GB 1TB SSD",
+          "reason": "検証済み商品掲載情報（https://www.amazon.co.jp/dp/B0DFH92ZTP?th=1）の商品名で型番とCPUを持つミニPC本体を識別できる。HDMIとDisplayPortを含む映像出力端子の記載が2画面構成という切り口を支える。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "根拠情報のみの審査。6商品はいずれもミニPC本体として掲載され、各商品の識別と担当する紹介切り口は、下記の検証済み商品掲載情報で裏付けられる。p2とp5は同じブランドだが、掲載されたCPUが異なり、同一製品とする積極的な根拠はない。記事本文は未提出のため、記事固有の項目は判定していない。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
+  "products": [
+    {
+      "amazon_title": "Intel Mini PC 2025 Latest Alder Lake-N Series N100 (4C/4T, up to 3.4GHz) TRIGKEY Key-N Mini PC 16GB DDR4 500GB M.2 PCIE SSD 4K@60Hz Small PC | High-Speed WiFi 5 | BT 5.0 | USB 3.2 Silent Mini PC",
+      "asin": "B0BWLXCWXY",
+      "brand": "TRIGKEY",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51rFI3NczgL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0BWLXCWXY",
+      "provisional": false,
+      "rating": 4.2,
+      "ref": "p1",
+      "review_count": 255,
+      "search_key": "TRIGKEY Intel Mini PC 2025 Latest Alder",
+      "selection_reason": "商品説明に16GBメモリ、500GB SSD、HDMI端子2基による2画面出力が明記されている。資料を片方に開き、もう片方で文書を作る在宅勤務を、手持ちのHDMI対応モニター2台で始めたい人に向く。",
+      "sources": [
+        {
+          "brand": "TRIGKEY",
+          "excerpt": "Intel Mini PC 2025 Latest Alder Lake-N Series N100 (4C/4T, up to 3.4GHz) TRIGKEY Key-N Mini PC 16GB DDR4 500GB M.2 PCIE SSD 4K@60Hz Small PC | High-Speed WiFi 5 | BT 5.0 | USB 3.2 Silent Mini PC\nAbout this item\n【Latest 12th Generation Alder Lake CPU】 TRIGKEY Key-N Mini PC, powered by Intel N100 (6M Cache, 4 Cores, Intel 7 Lithography, up to 3.40 GHz), delivers over 40% higher performance than the 11th Generation Celeron N5105 An ultra-compact computer with the latest Windows 11 Pro (64-bit) pre-installed, providing fast performance and a remarkably smooth experience, equipped with a powerful and efficient core for various home and business applications It offers fast performance and an incredibly smooth experience for use in all scenarios\n【SUPERIOR STORAGE PERFORMANCE Additionally, the dual-channel M.2 SSD card slots also support storage upgrades up to 4 TB (sold separately) Equipped with a variety of ports including 3x USB 3.2, 1x USB 2.0, 2x LAN Ports, and 2x HDMI Ports, it allows easy connection to various devices Despite its small size, it offers excellent performance and expandability, making it suitable for various uses\n【Dual 4K HDMI】The TRIGKEY mini PC is equipped with Intel UHD Graphics, which ensures fast image processing and supports 4K UHD (4096x2160@60Hz) video playback Support for dual displays through two HDMI ports allows you to perform different tasks simultaneously, significantly improving work efficiency and eliminating unnecessary steps\n【WIFI 5+BT 5.2】The PC for small offices has a reliable and stable wireless connection, smooth website loading, and allows you to watch movies or download files without buffering Connect to your monitor via WiFi or Ethernet, and use wireless keyboards and mice through Bluetooth 5.2, allowing you to use it as a powerful workstation\n【TRIGKEY's Lifetime Server】TRIGKEY has been focusing on research and development of micro PCs until now All of our mini PCs undergo strict inspections before shipment After purchase, we provide a 1-year warranty, 24/7 one-on-one customer service, and lifetime technical support TRIGKEY provides heartfelt service, so you don't need to worry about quality issues › See more product details\nBrand TRIGKEY\nOperating System Windows 11 Pro\nCPU Model Intel N100\nCPU Speed 3.4 GHz\nGraphics Card Description Integrated\nGraphics Coprocessor Intel UHD Graphics\nMemory Storage Capacity 500 GB\nSpecific Uses For Product Business\nPersonal computer design type Mini PC\nScreen Size 2.5 Inches See more\nVisit the TRIGKEY Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Intel Mini PC 2025 Latest Alder Lake-N Series N100 (4C/4T, up to 3.4GHz) TRIGKEY Key-N Mini PC 16GB DDR4 500GB M.2 PCIE SSD 4K@60Hz Small PC | High-Speed WiFi 5 | BT 5.0 | USB 3.2 Silent Mini PC",
+          "url": "https://www.amazon.co.jp/dp/B0BWLXCWXY",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "connectivity",
-      "label": "接続ポート・拡張性",
-      "keywords": [
-        "USBポート",
-        "HDMI出力",
-        "有線LAN"
+      "amazon_title": "Getorli Mini PC - AMD Ryzen 5 7430U Max 4.3GHz Dual LAN 16GB DDR4 Memory 512GB SSD Mini PC 4K 60Hz Output HDMI/Type-C/USB Port WiFi 6 Bluetooth 5.3 Mini PC for Home, Office and Light Gaming Mini pc",
+      "asin": "B0H1ZHWZNG",
+      "brand": "Getorli",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71oqWsag+SL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0H1ZHWZNG",
+      "provisional": false,
+      "rating": 4.5,
+      "ref": "p2",
+      "review_count": 162,
+      "search_key": "Getorli Mini PC - AMD Ryzen 5 7430U Max",
+      "selection_reason": "商品説明ではRyzen 5 7430Uの6コア12スレッド、16GBメモリ、512GB SSDを搭載し、HDMI・DP 1.4・映像対応Type-Cの組み合わせで最大3画面に出力できる。会議、ブラウザー、表計算を並行して使い、HDMI以外の端子を持つモニターも活用したい人が検討しやすい。",
+      "sources": [
+        {
+          "brand": "Getorli",
+          "excerpt": "Getorli Mini PC - AMD Ryzen 5 7430U Max 4.3GHz Dual LAN 16GB DDR4 Memory 512GB SSD Mini PC 4K 60Hz Output HDMI/Type-C/USB Port WiFi 6 Bluetooth 5.3 Mini PC for Home, Office and Light Gaming Mini pc\nAbout this item\n【AMD Ryzen 5 7430U Stable Performance】This Getorli Mini PC is equipped with a 6-core, 12-thread AMD Ryzen 5 7430U processor, supporting a maximum boost frequency of 4.3 GHz, standard TDP of 15W, and a maximum of 28W. It delivers sufficient processing power for everyday office tasks, home entertainment, and light gaming, ensuring stable operation for extended periods\n【16GB Large Capacity Memory + 512GB High-Speed SSD】This mini PC 16GB comes standard with 16GB DDR4 3200MHz memory and a 512GB SSD. It ensures smooth operation even when multiple software applications are running simultaneously, and also improves file transfer and software startup speeds. With dedicated slots, the memory can be expanded up to 64GB and storage up to 4TB, allowing for upgrades based on your usage environment\n【Supports 4K 60Hz and 3 screen output】The built-in AMD Radeon graphics support up to 1800MHz, enabling high-quality display on the mini pc ryzen. HDMI, DP1.4, and Type-C interfaces can be freely combined to support simultaneous display on 3 screens at 4K 60Hz. This mini pc gaming is suitable for multitasking, high-quality video viewing, and smooth gameplay\n【Rich Connection Ports + Dual Wired LAN】The mini PC main unit is equipped with general-purpose ports such as USB 3.2, USB 2.0, HDMI 2.0, Type-C, DC power port, and 3.5mm audio jack. It features 2.5G dual RJ45 wired LAN, ensuring stable and high-speed data transmission and smooth connection with various peripheral devices such as monitors, projectors, and office equipment\n【WiFi 6+Bluetooth 5.3 Wireless Connection】Equipped with high-speed WiFi 6 for stable internet environment and upgraded to the latest Bluetooth 5.3. Connects wirelessly with low latency to devices such as keyboards, mice, earphones, and printers, ensuring a comfortable wireless environment for everyday use\n【Compact Housing + Excellent Heat Dissipation Design】The main unit size is 128×128×46mm, a small PC with a space-saving design that can be placed anywhere. With an aluminum alloy exterior and honeycomb vents to increase ventilation, it efficiently dissipates heat during operation. It maintains low power consumption while extending product life, allowing for worry-free use over a long period\nAll Getorli mini PCs provide a one-year warranty. For any hardware-related issues within one year, we support returns or replacements, so you can purchase with confidence. If you have any problems, please feel free to contact us at the After-Sales Service email address listed in the manual. We will sincerely respond to each customer › See more product details\nBrand Getorli\nOperating System Windows 11 Pro\nCPU Model Ryzen 5\nCPU Speed 2.3 GHz\nGraphics Card Description Integrated\nGraphics Coprocessor AMD Radeon Graphics\nMemory Storage Capacity 512 GB\nSpecific Uses For Product Business, Education, Multimedia\nPersonal computer design type Mini PC\nScreen Size 100 See more\nVisit the Getorli Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Getorli Mini PC - AMD Ryzen 5 7430U Max 4.3GHz Dual LAN 16GB DDR4 Memory 512GB SSD Mini PC 4K 60Hz Output HDMI/Type-C/USB Port WiFi 6 Bluetooth 5.3 Mini PC for Home, Office and Light Gaming Mini pc",
+          "url": "https://www.amazon.co.jp/dp/B0H1ZHWZNG?th=1",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "noise_cooling",
-      "label": "静音性・排熱設計",
-      "keywords": [
-        "静音ファン",
-        "冷却性能",
-        "動作音"
+      "amazon_title": "GMKtec Mini PC, 12th Generation Intel N95, First Release | Fast Than N97, 8GB + 256GB, SSD, Small Desktop, Windows 11 Pro, 4 Cores/4 Threads, Up to 3.4 GHz, NVMe M.2, 2280 Slots, PCIe3.0, WiFi 5 Wired",
+      "asin": "B0GX53RQS1",
+      "brand": "GMKtec",
+      "discovery_axis_id": "desk_placement",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/612bW5nyWKL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0GX53RQS1",
+      "provisional": false,
+      "rating": 4.0,
+      "ref": "p3",
+      "review_count": 1129,
+      "search_key": "GMKtec Mini PC, 12th Generation Intel N",
+      "selection_reason": "商品説明に本体114×106×44mm、約260gとVESAマウント対応が明記されている。机の隅に置く面積を寸法で見積もりたい人にも、対応するモニターの背面に取り付けて机上を空けたい人にも向く。映像端子はHDMIが2基ある。",
+      "sources": [
+        {
+          "brand": "GMKtec",
+          "excerpt": "GMKtec Mini PC, 12th Generation Intel N95, First Release | Fast Than N97, 8GB + 256GB, SSD, Small Desktop, Windows 11 Pro, 4 Cores/4 Threads, Up to 3.4 GHz, NVMe M.2, 2280 Slots, PCIe3.0, WiFi 5 Wired\nAbout this item\nEquipped with Intel N95 | Next-generation power-saving platform evolved from previous generation CPUs: Equipped with an Intel N95 processor (4 cores, 4 threads, up to 3.4 GHz). The Alder Lake-N generation CPU uses Intel 7 process to achieve comfortable processing performance that has evolved from previous entry CPUs such as J4125 and N5095. Compared to previous generation AMD platforms such as Ryzen 3 3300U and Ryzen 3 4300U, it has low power consumption, yet comfortably supports everyday uses such as web browsing, office work, watching videos, and online learning\n【8GB Memory + 256GB SSD standard|Maximum 9TB storage expansion】Standard 8GB DDR4 Memory and 256GB SSD, ready to use immediately after purchase. Additionally, the DDR4 Memory can be expanded up to a maximum of 16GB, and with the dual storage design of M.2 2280 SSD and M.2 2242 SSD, expansion is possible up to a maximum of 9TB. You can safely store large capacity files such as work data, photos, and videos\nWide Interfaces | Easy to Connect to Peripherals: Equipped with USB 3.2 Gen2 x 3, USB 2.0 x 1, HDMI x 2, 3.5mm audio, and Gigabit LAN. Easily connect a variety of peripherals such as keyboards, mice, external SSDs, printers, and more\n【WiFi 5 + Gigabit LAN | Stable communication environment】 Supports WiFi 5 (802.11ac) and Gigabit Ethernet. Provides a high-speed and stable communication environment necessary for daily use, such as online meetings, cloud services, and video streaming\n【Ultra-compact Body | Space-saving Installation Compatible】 Compact design at 114×106×44mm and approximately 260g. Efficiently utilizes space around the desk, and VESA mount compatibility allows installation at the back of the monitor. Ideal for offices, educational institutions, retail stores, and other limited spaces\n【Compatible with Windows 11 Pro|Long-lasting and reliable design】 Compatible with Windows 11 Pro, providing an environment suitable for business use. Designed for easy SSD and memory upgrades, allowing for customization according to your needs. Additionally, comes with a 1-year warranty for peace of mind\nGMKtec Mini PC offers outstanding safety. Suitable for various applications such as homes, businesses, educational institutions, and broadcasting sites. With a 1-year manufacturer's warranty and 30 days of free return policy, you can rest assured even after purchase. Our domestic support team provides prompt assistance in Japanese. You can confidently use this reliable and high-quality Mini PC for a long time\nPackage contents: GMKtec mini PC main unit x 1, screw package x 1, power adapter x 1, HDMI cable x 1, instruction manual x 1, VESA bracket. Our company supports JCT (qualified invoice issuer) and can issue invoices (qualified invoices) › See more product details\nBrand GMKtec\nOperating System Windows 11 Pro\nCPU Model Celeron\nCPU Speed 3.4 GHz\nGraphics Card Description Dedicated\nGraphics Coprocessor Intel UHD Graphics\nMemory Storage Capacity 256 GB\nSpecific Uses For Product Business\nPersonal computer design type Mini PC\nRam Memory Installed Size 8 GB See more\nVisit the GMKtec Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "GMKtec Mini PC, 12th Generation Intel N95, First Release | Fast Than N97, 8GB + 256GB, SSD, Small Desktop, Windows 11 Pro, 4 Cores/4 Threads, Up to 3.4 GHz, NVMe M.2, 2280 Slots, PCIe3.0, WiFi 5 Wired",
+          "url": "https://www.amazon.co.jp/dp/B0GX53RQS1?th=1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "NiPoGi P1 Ryzen 5425U Mini PC, 2026 Model, More Than 3500U, 4C/8T",
+      "asin": "B0HNWGKPY8",
+      "brand": "NiPoGi",
+      "discovery_axis_id": "desk_placement",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61vPSGxvv8L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0HNWGKPY8",
+      "provisional": false,
+      "rating": 4.2,
+      "ref": "p4",
+      "review_count": 384,
+      "search_key": "NiPoGi P1 Ryzen 5425U Mini PC, 2026 Mod",
+      "selection_reason": "商品説明にVESAマウントを使ったモニター背面への設置と、ネットワーク経由の起動への対応が記されている。机上から本体を移し、手元に電源ボタンを置かずに使いたい人に具体的な設置案がある。映像端子もHDMI 2.0、DP 1.4b、映像対応Type-Cと明記されている。",
+      "sources": [
+        {
+          "brand": "NiPoGi",
+          "excerpt": "NiPoGi P1 Ryzen 5425U Mini PC, 2026 Model, More Than 3500U, 4C/8T\nAbout this item\n【NiPoGi P1 5425U debut・Mini PC with Windows 11 Pro】: This energy-efficient mini PC features an AMD Ryzen 5 5425U processor (maximum frequency 4.1GHz, 4 cores/8 threads) with a maximum power consumption of 28W. It is suitable for editing 4K videos and processing large amounts of data. With fast read and write speeds, it offers smooth startup and application launching. It is perfect for business use, telework, home learning, and even light gaming. It is an all-around high-performance mini PC. This mini PC comes pre-installed with 'Windows 11 Pro' and also supports Ubuntu, Linux, Win11 Home, and Win11 IoT\n【2026 new model Mini PC -> even smaller and lighter, even more powerful and quiet】: The compact PC comes with 8GB of memory and 256GB of storage as standard! This mini PC has an M.2 2280 SSD connection terminal and is compatible up to 4TB. As a new space-saving mini PC in 2026, it achieves an ultra-light weight of 500g while improving processing performance by 15%. The new mini PC, which combines excellent high performance, good heat dissipation, energy saving, quietness, and compact size, features a built-in ultra-quiet cooling fan, fast heat dissipation, and is quieter (below 38dB)\n【Variety of High-Speed Interfaces & Professional Expansion Evolution · 4K Multitasking Revolution】: The mini PC is equipped with a variety of interfaces such as a full-featured Type-C*1 (maximum transfer speed 10Gbps + DP function)/ USB3.2 Gen2 (maximum transfer speed 10Gbps)*2 / USB3.2 (Type-A)*4/ HDMI 2.0*1 / DP 1.4b*1/ Gigabit LAN (RJ45) port*1 / 3.5mm headphone jack*1, supporting various peripheral devices. The compact PC, with full-featured Type-C + HDMI 2.0×1 + DisplayPort 1.4×1, can display 3 screens simultaneously at 4K@60Hz, improving efficiency in multitasking for business/online education/work from home/video editing/stock trading/remote meetings. This mini PC supports 4096 x 2160 high resolution with HDMI + DP, a resolution four times that of full HD, for an even more stunning visual experience\nVESA Mount Integration & No Connection Delays! High-Speed 2.4G/5G Wi-Fi + BT4.2 & Wired 1000M LAN Port: The unlocked BIOS on a compact PC supports autoboot/RTC/wake in network settings, and can be installed on the back of the monitor via VESA mount, enabling a one-touch boot all-in-one setup. Gigabit Ethernet and 2.4G/5G dual-band WiFi provide high-speed transfer for lag-free downloads. Bluetooth technology allows you to easily and stably connect additional devices such as a keyboard and mouse combination, speakers, microphone, etc. within a range of 32.8 ft (10 m). This means a powerful and stable Wi-Fi signal, so you can smoothly handle all your online tasks, such as online homework, office work, surfing the internet, online shopping, watching videos, etc\n【【Space Saving Business Use PC】: This compact PC says goodbye to the problems of traditional desktop PCs such as 'too big and inconvenient to carry!', 'bulky!','space-consuming!', 'cannot connect to Wi-Fi!', 'poor network', etc. The set includes E1 Mini PC x 1, HDMI Cable x 1, Power Adapter x 1, VESA Mount x 1, and more. This NiPoGi Mini PC comes with a 12-month warranty from the date of purchase. Although the product is thoroughly checked, if there is a defect or malfunction, we will provide free replacement or return. You can contact us easily through 'Account Services' → 'Order History' → 'Seller' → 'Ask a Question'. We will address any issues within 24 hours › See more product details\nBrand NiPoGi\nOperating System Windows 11 Pro\nCPU Model Others\nCPU Speed 4.08 GHz\nGraphics Card Description Integrated\nGraphics Coprocessor AMD Radeon™ Graphics\nMemory Storage Capacity 256 GB\nSpecific Uses For Product Business\nPersonal computer design type Mini PC\nRam Memory Installed Size 8 GB See more\nVisit the NiPoGi Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "NiPoGi P1 Ryzen 5425U Mini PC, 2026 Model, More Than 3500U, 4C/8T",
+          "url": "https://www.amazon.co.jp/dp/B0HNWGKPY8?th=1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "Getorli Mini PC AMD Ryzen 5 3501U Mini PC 8GB DDR4 256G NVMe SSD PCIe3.0 Max 32GB SSD + 2TB Expansion WiFi 6 BT5.2 Gigabit Wired LAN Radeon Vega 8 Support 3-Screen 4K Low Power Consumption Quiet HDMI",
+      "asin": "B0H2VMHTDR",
+      "brand": "Getorli",
+      "discovery_axis_id": "dual_display_setup",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71d21N0hDuL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0H2VMHTDR",
+      "provisional": false,
+      "rating": 4.5,
+      "ref": "p5",
+      "review_count": 164,
+      "search_key": "Getorli Mini PC AMD Ryzen 5 3501U Mini P",
+      "selection_reason": "商品説明にHDMI 2.0端子2基と、映像出力に対応するType-C端子を備え、最大3画面に接続できるとある。HDMI入力のモニター2台を使い、資料表示と作業画面を分けたい人なら、2台ともHDMIでつなぐ構成を考えられる。解像度と更新頻度はケーブルや表示環境によって変わるとの注記もある。",
+      "sources": [
+        {
+          "brand": "Getorli",
+          "excerpt": "Getorli Mini PC AMD Ryzen 5 3501U Mini PC 8GB DDR4 256G NVMe SSD PCIe3.0 Max 32GB SSD + 2TB Expansion WiFi 6 BT5.2 Gigabit Wired LAN Radeon Vega 8 Support 3-Screen 4K Low Power Consumption Quiet HDMI\nAbout this item\n【Powered by AMD Ryzen 5 3501U | Strong built-in GPU】This mini PC is equipped with an AMD Ryzen 5 3501U processor. Featuring a 4-core 8-thread configuration and support for up to 3.7GHz operation, it delivers stable performance even when running multiple software simultaneously. The energy-efficient design achieved through a 14nm process reduces power consumption during extended operation. Whether for office tasks like Word and Excel, remote work, online classes, 4K video playback, light video editing, image processing, or casual gaming, this all-round mini PC handles a wide range of applications smoothly. Equipped with Radeon Vega 8 graphics, it supports hardware decoding for 4K video, ensuring smooth playback of high-quality videos. It also provides stable display performance for image editing, simple video editing, and casual gaming. Compatible with multiple display outputs, it operates smoothly even when managing multiple windows simultaneously\n【4K・3 Screen Output Support|A Variety of Ports】Smoothly supports 4K video playback, image processing, and light gaming. Implements HDMI 2.0 ports x2 + DP Alt Mode compatible full-feature Type-C (Type-C (DP+DATA+PD)), capable of connecting up to 3 monitors, and supports 4K@60Hz output for each video interface to improve work efficiency. *Resolution and refresh rate may vary depending on cables and display environment when using multiple monitors simultaneously. Equipped with HDMI ports x2, USB 3.2 ports x3, USB 2.0 port, full-feature USB 3.2 Type-C, Gigabit LAN, and 3.5mm audio jack. By connecting an external HDD/SSD to the USB 3.2 port, you can transfer large amounts of data at high speed, and by using the two HDMI ports, you can set up a dual-monitor environment. You can connect various peripheral devices such as mouse, keyboard, and audio equipment, making it convenient for a wide range of uses including office work, data organization, and video viewing\n【8GB Memory & 256GB Storage | Expandable to 32GB DDR4・2TB SSD】This compact PC comes standard with 8GB DDR4 SODIMM memory and a 256GB M.2 2280 NVMe PCIe3.0 SSD. It offers fast read and write speeds, ensuring smooth app launches and large file transfers. The memory supports dual-channel and can be upgraded to a maximum of 32GB. The dual-channel can also leverage the performance of the built-in Vega8 graphics. In addition to the M.2 SSD (up to 2TB), there is also a slot for 2.5-inch SATA HDD/SSD, allowing for double capacity expansion. Combined with the Ryzen5 3501U, it can comfortably handle multitasking and office tasks\n【WiFi6+BT5.3 + 1Gbps High-Speed Wired LAN | Silent Cooling System】Features the latest WiFi6 and Bluetooth 5.3 as standard. Compared to previous wireless standards, it offers improved communication speeds, reduces radio interference, and decreases latency, even in crowded environments, enabling smooth video viewing and online communication. Bluetooth 5.3 allows stable connections with peripheral devices such as wireless headphones, keyboards, and mice. It also includes a 1000Mbps Gigabit wired LAN port, allowing for stable online meetings, 4K video streaming, and large file transfers even in areas with unstable wireless environments. The unique cooling structure combines aluminum heatsink fins, heatsinks, and silent fans. It efficiently dissipates heat when the CPU is active, maintaining stable operation even under prolonged load. The ultra-silent design, which keeps the operating noise below 38dB, ensures that it can be used in quiet environments such as offices and bedrooms without being disturbed by noise, balancing heat dissipation performance and quietness\n【Compact Body | Package Contents | Quality Assurance】The size is 111.3×119×40.9mm, with a lightweight design of approximately 400g. It doesn't take up much space on the desk, allowing for neat installation around the TV or on an office desk. Compared to conventional desktop PCs, it saves space and is also suitable for carrying, making it usable in various environments such as at home or on the go. The standard package includes the mini PC body, power adapter *1, instruction manual *1, VESA mount bracket with screws, and HDMI cable *1. Getorli provides a 1-year warranty for each mini PC. If you encounter any issues with the product, please rest assured. If you have any questions about the product, feel free to contact us. We provide professional technical support 24/7 and will respond to you promptly › See more product details\nBrand Getorli\nOperating System OS/ 11 Pro\nCPU Model Ryzen 5\nCPU Speed 2.1 GHz\nGraphics Card Description Integrated\nGraphics Coprocessor AMD Radeon Vega 8\nMemory Storage Capacity 256 GB\nSpecific Uses For Product Multimedia\nPersonal computer design type Mini PC\nRam Memory Installed Size 8 GB See more\nVisit the Getorli Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Getorli Mini PC AMD Ryzen 5 3501U Mini PC 8GB DDR4 256G NVMe SSD PCIe3.0 Max 32GB SSD + 2TB Expansion WiFi 6 BT5.2 Gigabit Wired LAN Radeon Vega 8 Support 3-Screen 4K Low Power Consumption Quiet HDMI",
+          "url": "https://www.amazon.co.jp/dp/B0H2VMHTDR?th=1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "MINISFORUM UM760Slim Mini pc AMD Ryzen 5 7640HS DDR5-5600MHz 16GB 1TB SSD",
+      "asin": "B0DFH92ZTP",
+      "brand": "MINISFORUM",
+      "discovery_axis_id": "dual_display_setup",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51hw5FkTiyL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0DFH92ZTP",
+      "provisional": false,
+      "rating": 4.2,
+      "ref": "p6",
+      "review_count": 105,
+      "search_key": "MINISFORUM UM760Slim Mini pc AMD Ryzen 5 76",
+      "selection_reason": "商品説明にHDMI 2.1、DP 1.4、USB4を各1基備え、3画面への独立出力に対応すると明記されている。手持ちの2台がHDMI入力とDisplayPort入力に分かれている人は、その2端子を使った接続を検討できる。16GBメモリと1TB SSDも標準搭載し、仕事のファイルを本体に保存して使いたい人に向く。",
+      "sources": [
+        {
+          "brand": "MINISFORUM",
+          "excerpt": "MINISFORUM UM760Slim Mini pc AMD Ryzen 5 7640HS DDR5-5600MHz 16GB 1TB SSD\nAbout this item\nExcellent Performance: The MINISFORUM UM760 Slim mini PC is equipped with an AMD Ryzen 5 7640HS CPU, based on a 4 nm process rule and Zen 4 architecture, offering 6 cores/12 threads with a maximum core frequency reaching 5.0 GHz. It features an innovative AMD Radeon 760M with AMD RDNA 3 architecture GPU, reaching up to 2600 MHz. Designed for general household/daily office/light gaming purposes\n【Triple Display Output】Equipped with an HDMI 2.1 (4K@120hz/8K@60Hz) x1, DP1.4 (4K@144hz) x1, and USB4 (4K@120hz/8K@60Hz) x1 on the display output terminals, it allows independent output to three displays simultaneously. It provides a larger and wider field of view, enhancing work efficiency and meeting various needs for office work, entertainment media playback, and gaming. 【USB4】Features a USB4 port with a maximum speed of 40Gbps. Supports 15W PD power delivery, enabling both video and power to be transmitted through a single cable\nLarge Capacity: DDR5-5600 16 GB x 1 (up to 48 GB x 2) memory + M.2 2280 1TB PCIe 4.0 SSD (up to 4 TB) storage. You can easily customize your storage without worrying about running out of capacity. Memory supports DDR5, significantly expanding bandwidth. Equipped with an ultra-fast PCIe 4.0 SSD, you can run the OS faster. Store data, movies, and digital camera photos without stress\n【Efficient Cooling System】Equipped with an innovative cooling system featuring PCM cooling material, the cooling performance is enhanced to match the DDR/SSD active cooling, ensuring active cooling, long-time cooling, and stable operation. Compared to passive radiators, the temperature is reduced by 25%. It can easily handle 100% load operations\n【Exceptional Connectivity】Supports both wireless and wired connections. Features M.2 2230 Wi-Fi, compatible with high-speed transmission of Bluetooth 5.2 & Wi-Fi 6E, and comes with a 2.5 Gbps LAN port. The traditional Gigabit network has a measured read and write speed of approximately 120 MB/s. The 2.5 Gbps LAN port achieves a 2.5 times faster read and write speed. Whether you're watching videos or gaming, you'll no longer experience bottlenecks. Multiple devices can transmit data simultaneously, effectively reducing delays and improving efficiency\n【Rich I/O Interface】RJ45 2.5Gbps x1, USB 3.2 Gen2 Type-A x 2, USB 2.0 x2, Clear CMOS, Audio jack, USB 4 x 1, HDMI x 1, DP x 1, DC 19V x 1\nNote: Before updating Windows, you must first update the AMD drivers. # Attention! If you want to install a Linux system, you need to change the Wi-Fi card to one with a Linux driver, for example, the Intel AX200 › See more product details\nBrand MINISFORUM\nOperating System Windows 11 Pro\nCPU Model Ryzen 5\nCPU Speed 4.3 GHz\nCache Size 16 MB\nGraphics Card Description One piece\nGraphics Coprocessor AMD Radeon 760M\nMemory Storage Capacity 16 GB\nSpecific Uses For Product Everyday Use\nPersonal computer design type Mini PC See more",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "MINISFORUM UM760Slim Mini pc AMD Ryzen 5 7640HS DDR5-5600MHz 16GB 1TB SSD",
+          "url": "https://www.amazon.co.jp/dp/B0DFH92ZTP?th=1",
+          "verified": true
+        }
       ]
     }
   ],
   "selection": {
-    "comparison_axes_covered": [
-      "performance_memory"
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B0BWLXCWXY",
+            "reason": "商品説明に16GBメモリ、500GB SSD、HDMI端子2基による2画面出力が明記されている。資料を片方に開き、もう片方で文書を作る在宅勤務を、手持ちのHDMI対応モニター2台で始めたい人に向く。"
+          },
+          {
+            "asin": "B0H1ZHWZNG",
+            "reason": "商品説明ではRyzen 5 7430Uの6コア12スレッド、16GBメモリ、512GB SSDを搭載し、HDMI・DP 1.4・映像対応Type-Cの組み合わせで最大3画面に出力できる。会議、ブラウザー、表計算を並行して使い、HDMI以外の端子を持つモニターも活用したい人が検討しやすい。"
+          }
+        ]
+      },
+      {
+        "axis_id": "desk_placement",
+        "products": [
+          {
+            "asin": "B0GX53RQS1",
+            "reason": "商品説明に本体114×106×44mm、約260gとVESAマウント対応が明記されている。机の隅に置く面積を寸法で見積もりたい人にも、対応するモニターの背面に取り付けて机上を空けたい人にも向く。映像端子はHDMIが2基ある。"
+          },
+          {
+            "asin": "B0HNWGKPY8",
+            "reason": "商品説明にVESAマウントを使ったモニター背面への設置と、ネットワーク経由の起動への対応が記されている。机上から本体を移し、手元に電源ボタンを置かずに使いたい人に具体的な設置案がある。映像端子もHDMI 2.0、DP 1.4b、映像対応Type-Cと明記されている。"
+          }
+        ]
+      },
+      {
+        "axis_id": "dual_display_setup",
+        "products": [
+          {
+            "asin": "B0H2VMHTDR",
+            "reason": "商品説明にHDMI 2.0端子2基と、映像出力に対応するType-C端子を備え、最大3画面に接続できるとある。HDMI入力のモニター2台を使い、資料表示と作業画面を分けたい人なら、2台ともHDMIでつなぐ構成を考えられる。解像度と更新頻度はケーブルや表示環境によって変わるとの注記もある。"
+          },
+          {
+            "asin": "B0DFH92ZTP",
+            "reason": "商品説明にHDMI 2.1、DP 1.4、USB4を各1基備え、3画面への独立出力に対応すると明記されている。手持ちの2台がHDMI入力とDisplayPort入力に分かれている人は、その2端子を使った接続を検討できる。16GBメモリと1TB SSDも標準搭載し、仕事のファイルを本体に保存して使いたい人に向く。"
+          }
+        ]
+      }
     ],
-    "brand_count": 0,
-    "price_used_as_constraint_only": true
+    "brand_count": 5,
+    "candidate_count": 28,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [],
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": []
   },
-  "products": [
-    {
-      "ref": "p1",
-      "product_id": "AMZ-B0HGGGHGRP",
-      "asin": "B0HGGGHGRP",
-      "amazon_title": "Apple 2026 Mac mini 12コアCPU、12コアGPUのM6チップ搭載デスクトップコンピュータ",
-      "brand": "Apple",
-      "image_url": "https://m.media-amazon.com/images/I/51NBurcRq2L._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.58,
-      "matched_comparison_axes": [
-        "performance_memory"
-      ],
-      "search_key": "Apple 2026 Mac mini 12コアCPU、12コア",
-      "selected_variant": {
-        "current_selection_text": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. サイズ: 512GB SSD サイズの選択ができます 256GB SSD 512GB SSD スタイル: 12コアCPU / 12コアGPU / 16GB メモリ スタイルの選択ができます 12コアCPU / 12コアGPU / 16GB メモリ 12コアCPU / 12コアGPU / 24GB メモリ 15コアCPU / 16コアGPU / 24GB メモリ パターン: Mac mini M6 パターンの選択ができます Mac mini M6 Mac mini M5 Pro",
-        "overview": "ブランド Apple(アップル) オペレーティングシステム Mac OS CPUモデル Others グラフィックカードの説明 統合された メモリストレージ容量 512 GB 商品用途・使用方法 普段使い インストール済みのRAMメモリサイズ 16 GB モデル名 2026 Mac Mini 付属コンポーネント Mac mini, 電源コード 色 シルバー 表示を増やす",
-        "selected_detail_fields": [
-          {
-            "field": "インストール済みのRAMメモリサイズ",
-            "value": "インストール済みのRAMメモリサイズ 16 GB"
-          },
-          {
-            "field": "色",
-            "value": "色 シルバー"
-          },
-          {
-            "field": "サイズと重量",
-            "value": "サイズと重量 高さ：5.0cm 幅：12.7cm 奥行き：12.7cm 重量（M6）：0.67kg 重量（M5 Pro）：0.73kg"
-          }
-        ]
-      }
-    },
-    {
-      "ref": "p2",
-      "product_id": "AMZ-B0HDCBHPS1",
-      "asin": "B0HDCBHPS1",
-      "amazon_title": "GEEKOM A6 ミニ PC Ryzen7 6800H 搭載 USB4 外付け GPU 対応 4画面8K mini pc 3 年保証",
-      "brand": "GEEKOM",
-      "image_url": "https://m.media-amazon.com/images/I/71MhvdHQZbL._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.4,
-      "matched_comparison_axes": [],
-      "search_key": "GEEKOM A7 ミニPC、AMD Ryzen 7 7840H",
-      "selected_variant": {
-        "model_number": "A6",
-        "cpu": "Ryzen 7 6800H",
-        "ram": "32GB DDR5",
-        "ssd": "1TB",
-        "color": "ホワイト",
-        "pack_count": 1
-      }
-    },
-    {
-      "ref": "p3",
-      "product_id": "AMZ-B0GR8VCQMT",
-      "asin": "B0GR8VCQMT",
-      "amazon_title": "【1095日保証・法人向】GEEKOM Air12 Intel 7505 AI隔離サンドボックスPC 省電力・静音 mini pc",
-      "brand": "GEEKOM",
-      "image_url": "https://m.media-amazon.com/images/I/71e4vm-R+DL._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.4,
-      "matched_comparison_axes": [],
-      "search_key": "GEEKOM Air12 Intel 7505 8K三画面出力",
-      "selected_variant": {
-        "current_selection_text": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. 色: 黒い 色の選択ができます おすすめ出品がない0オプションを見る ← 1 →",
-        "overview": "ブランド GEEKOM オペレーティングシステム Windows CPUモデル Pentium CPUスピード 2 GHz キャッシュサイズ 4 MB グラフィックカードの説明 一体型 グラフィックコプロセッサ UHD Graphics Xe G4 メモリストレージ容量 8 TB 商品用途・使用方法 小型・コンパクト・省電力・静音設計・安定稼働モデル 業務用 ミニpc, 教育/オフィス/ビジネス/法人向け, 業界最長3年保証の 業務用 法人向け オフィス用 ミニpc パーソナルコンピュータ設計タイプ ミニPC 表示を増やす",
-        "selected_detail_fields": [
-          {
-            "field": "キャッシュサイズ",
-            "value": "キャッシュサイズ 4 MB"
-          },
-          {
-            "field": "電力消費サイズの測定単位",
-            "value": "電力消費サイズの測定単位 15 ワット"
-          },
-          {
-            "field": "VRAMサイズ",
-            "value": "VRAMサイズ 8 GB"
-          },
-          {
-            "field": "ユニット数",
-            "value": "ユニット数 1 個"
-          },
-          {
-            "field": "搭載済みキャッシュメモリサイズ",
-            "value": "搭載済みキャッシュメモリサイズ 4 MB"
-          },
-          {
-            "field": "内蔵メモリー容量",
-            "value": "内蔵メモリー容量 8 GB"
-          },
-          {
-            "field": "メモリーのサイズ",
-            "value": "メモリーのサイズ 64 GB"
-          },
-          {
-            "field": "画面サイズの単位",
-            "value": "画面サイズの単位 75 インチ"
-          }
-        ]
-      }
-    },
-    {
-      "ref": "p4",
-      "product_id": "AMZ-B0DPCH1232",
-      "asin": "B0DPCH1232",
-      "amazon_title": "GMKtec NucBox K11 ミニpc AMD Ryzen9 8945HS 8コア/16スレッド5.2GHz DDR5 32GB+1TB PCIe 4.0 M.2 2280 AMD Radeon 780M小型pc Oculink/デュアル2.5G LAN/WiFi6/BT5.2/USB4.0/HDMI2.1/4画面8K (AMD Ryzen9 8945HS 32GB+1TB)",
-      "brand": "GMKtec",
-      "image_url": "https://m.media-amazon.com/images/I/612dMK+pP2L._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.4,
-      "matched_comparison_axes": [],
-      "search_key": "ミニpc ディスプレイ付き 8GB DDR4+256GB SSD",
-      "selected_variant": {
-        "model_number": "NucBox K11",
-        "cpu": "Ryzen 9 8945HS",
-        "ram": "32GB DDR5",
-        "ssd": "1TB",
-        "pack_count": 1
-      }
-    },
-    {
-      "ref": "p5",
-      "product_id": "AMZ-B0FH1QP6KY",
-      "asin": "B0FH1QP6KY",
-      "amazon_title": "MINISFORUMミニPC UM890 Pro AMD Ryzen 9 8945HS(8C/16T 最大5.2GHz)mini pc DDR5 32GB 1TB SSD AI PC Radeon 780M OCulink Windows 11 Pro ミニパソコン HDMI・DP・USB4 4画面 2.5Gbps LAN・Wi-Fi6E・BT5.3 小型pc",
-      "brand": "MINISFORUM",
-      "image_url": "https://m.media-amazon.com/images/I/51mWyV7jzyL._AC_SX300_SY300_QL70_ML2_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.4,
-      "matched_comparison_axes": [],
-      "search_key": "GEEKOM A7 ミニ pc AMD Ryzen 7730U",
-      "selected_variant": {
-        "current_selection_text": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. Set name: UM890 Pro(32+1TB) Set nameの選択ができます UM890 Pro(32+1TB) X1 Lite-255(32+1TB) UM870 Slim(32+512) UM880 Plus(32+1TB) おすすめ出品がない0オプションを見る ← 1 →",
-        "overview": "ブランド MINISFORUM オペレーティングシステム Windows 11 Pro CPUモデル Ryzen 9 CPUスピード 5.2 GHz グラフィックカードの説明 一体型 グラフィックコプロセッサ AMD Radeon 780M メモリストレージ容量 1 TB 商品用途・使用方法 ゲーム パーソナルコンピュータ設計タイプ ミニPC 画面サイズ 75.0 表示を増やす",
-        "selected_detail_fields": [
-          {
-            "field": "画面サイズ",
-            "value": "画面サイズ 75.0"
-          },
-          {
-            "field": "商品本体サイズ",
-            "value": "商品本体サイズ 13 x 12.7 x 5 cm"
-          },
-          {
-            "field": "内蔵メモリー容量",
-            "value": "内蔵メモリー容量 32 GB"
-          },
-          {
-            "field": "メモリーのサイズ",
-            "value": "メモリーのサイズ 96 GB"
-          },
-          {
-            "field": "VRAMサイズ",
-            "value": "VRAMサイズ 2 GB"
-          },
-          {
-            "field": "画面サイズの単位",
-            "value": "画面サイズの単位 75.0"
-          }
-        ]
-      }
-    },
-    {
-      "ref": "p6",
-      "product_id": "AMZ-B0DHRHDK5P",
-      "asin": "B0DHRHDK5P",
-      "amazon_title": "Beelink SER8 8845HS ミニPC、32GB DDR5・5600MHz、1TB SSD、設計および科学研究に使用されます",
-      "brand": "Beelink",
-      "image_url": "https://m.media-amazon.com/images/I/51oGQ6k49TL._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.4,
-      "matched_comparison_axes": [],
-      "search_key": "GEEKOM A5 7730U ミニPC 128GB+10TB",
-      "selected_variant": {
-        "current_selection_text": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. Set name: SER8/8845HS/32G+1TB/シルバー Set nameの選択ができます SER8/8845HS/32G+1TB/シルバー SER8/8745HS/16G+512G/グレー SER8/8745HS/32G+1TB/グレー SER9 PRO/255/24G+1TB/グレー SER9 PRO/255/24G+1TB/シルバー SER9/255/24G+1TB/シルバー おすすめ出品がない0オプションを見る ← 1 →",
-        "overview": "ブランド Beelink オペレーティングシステム DOS CPUモデル AMD Ryzen 7 CPUスピード 4.4 GHz キャッシュサイズ 16 GB グラフィックカードの説明 専用 グラフィックコプロセッサ AMD Radeon™ 780M 12core 2700 MHz メモリストレージ容量 1 TB 商品用途・使用方法 マルチメディア パーソナルコンピュータ設計タイプ ミニPC 表示を増やす",
-        "selected_detail_fields": [
-          {
-            "field": "キャッシュサイズ",
-            "value": "キャッシュサイズ 16 GB"
-          },
-          {
-            "field": "電力消費サイズの測定単位",
-            "value": "電力消費サイズの測定単位 54 ワット"
-          },
-          {
-            "field": "VRAMサイズ",
-            "value": "VRAMサイズ 32.0"
-          },
-          {
-            "field": "搭載済みキャッシュメモリサイズ",
-            "value": "搭載済みキャッシュメモリサイズ 16 GB"
-          },
-          {
-            "field": "内蔵メモリー容量",
-            "value": "内蔵メモリー容量 32 GB"
-          },
-          {
-            "field": "メモリーのサイズ",
-            "value": "メモリーのサイズ 32 GB"
-          },
-          {
-            "field": "画面サイズの単位",
-            "value": "画面サイズの単位 3.0"
-          }
-        ]
-      }
-    }
-  ]
+  "slug": "compact-mini-pcs-6-picks"
 }
