@@ -1,184 +1,344 @@
 {
-  "slug": "disinfectant-sprays-6-picks",
-  "category": "dailygoods",
-  "canonical_url": "https://www.sellemy.jp/article/dailygoods/disinfectant-sprays-6-picks.html",
-  "eyecatch_image": "https://www.sellemy.jp/img/disinfectant-sprays-6-picks/disinfectant-sprays-6-picks.png",
   "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/disinfectant-sprays-6-picks.html",
+  "category": "dailygoods",
   "comparison_axes": [
     {
-      "id": "efficacy",
-      "label": "除菌成分・効果範囲",
+      "id": "popular",
       "keywords": [
-        "次亜塩素酸",
-        "アルコール",
-        "ウイルス除去"
+        "人気"
+      ],
+      "label": "人気・定番の基準"
+    },
+    {
+      "id": "fabric_care",
+      "keywords": [
+        "ソファ",
+        "カーテン",
+        "布製品への使用可否"
+      ],
+      "label": "洗いにくい布製品の手入れ"
+    },
+    {
+      "id": "shoe_care",
+      "keywords": [
+        "靴の内側",
+        "使用できる靴素材",
+        "使用後の乾燥"
+      ],
+      "label": "靴の内側の手入れ"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/disinfectant-sprays-6-picks/disinfectant-sprays-6-picks.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "e0748430e9b22971853d15e9d0cb432e4022eb95cf05f4c129ddde268c63ae8a",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 25137,
+      "listing_identity_citations_repaired": [
+        "p2",
+        "p3",
+        "p5",
+        "p6"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 1626,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 516,
+      "session_id": "01a21b4a-0e38-7ed0-b4f6-c7ba27880550",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "ファブリーズ W除菌+消臭スプレー 衣類・布製品用 香りが残らない 本体",
+          "identity_quote": "ファブリーズ W除菌+消臭スプレー 衣類・布製品用 香りが残らない 本体 370mL",
+          "reason": "掲載名から香りが残らない布製品用スプレーと識別でき、定番候補として紹介できる。掲載名を超える使用対象や性能の主張は未確認。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "Deodorizes sports shoes, leather shoes, and boots."
+            }
+          ],
+          "identity_key": "Dr.Scholl 靴専用 【消臭・抗菌靴スプレー】瞬間消臭×抗菌・防カビ 48時間消臭効果持続 日本製 無香性 150mL",
+          "identity_quote": "Dr.Scholl 靴専用 【消臭・抗菌靴スプレー】瞬間消臭×抗菌・防カビ 48時間消臭効果持続 日本製 無香性 150mL",
+          "reason": "取得済みの商品説明で靴用スプレーと識別でき、複数種類の靴を手入れする候補として紹介できる。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "ファブリーズ 消臭スプレー 布用 PREMIUM 速乾ジェット 消臭・除菌スプレー 無香料 アルコール成分入り 本体 320mL",
+          "identity_quote": "ファブリーズ 消臭スプレー 布用 PREMIUM 速乾ジェット 消臭・除菌スプレー 無香料 アルコール成分入り 本体 320mL",
+          "reason": "掲載名からPREMIUM速乾ジェットの布用スプレーと識別でき、p1とは異なる商品系列として布製品の手入れに紹介できる。ソファやマットレスへの使用条件は取得済み資料では未確認。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "fabric_care",
+              "quote": "Laundrin'(ランドリン) Fabric Mist Classic Floral Deodorizing Spray"
+            }
+          ],
+          "identity_key": "ランドリン ファブリックミスト クラシックフローラル",
+          "identity_quote": "Laundrin'(ランドリン) Fabric Mist Classic Floral Deodorizing Spray, 12.5 fl oz (370 ml)",
+          "reason": "取得済みの商品説明で香りのある布用消臭ミストと識別でき、布製品を香りとともに手入れする切り口で紹介できる。除菌機能は未確認。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "shoe_care",
+              "quote": "Sneaker Disinfectant & Deodorizing Mist"
+            }
+          ],
+          "identity_key": "オドイーター 【まとめ買い】 スニーカー用 除菌・消臭ミスト 消臭スプレー 白 250mL×3個 (おまけ付き) 【Amazon.co.jp限定】",
+          "identity_quote": "オドイーター 【まとめ買い】 スニーカー用 除菌・消臭ミスト 消臭スプレー 白 250mL×3個 (おまけ付き) 【Amazon.co.jp限定】",
+          "reason": "取得済みの商品説明でスニーカー用ミストと識別できる。3個セットという販売単位を別商品性の根拠にはしていない。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "shoe_care",
+              "quote": "for tall boots or long boots, you can stand up the hose to spray into detailed areas"
+            }
+          ],
+          "identity_key": "近与(KONYO) SUN UP 靴の消臭・除菌・抗菌スプレー 2WAYノズル仕様 420ml SSD-420 白",
+          "identity_quote": "近与(KONYO) SUN UP 靴の消臭・除菌・抗菌スプレー 2WAYノズル仕様 420ml SSD-420 白",
+          "reason": "取得済みの商品説明で2WAYノズルを備えたSSD-420と識別でき、長いブーツの内側を手入れする切り口に合う。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "掲載名と取得済みの商品説明から6商品をそれぞれ識別でき、明白な重複や対象外の商品は示されていない。各商品は割り当てられた紹介切り口で紹介できる。p4の除菌機能は確認できないため、その主張には使用できない。記事未提出のため記事専用項目は評価対象外。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
+  "products": [
+    {
+      "amazon_title": "ファブリーズ W除菌+消臭スプレー 衣類・布製品用 香りが残らない 本体 370mL",
+      "asin": "B0DQXRWNZC",
+      "brand": "",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71Zv6F3qITL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0DQXRWNZC",
+      "provisional": true,
+      "rating": 4.4,
+      "ref": "p1",
+      "review_count": 530,
+      "search_key": "ファブリーズ W除菌+消臭スプレー 衣類・布製品用 香りが残らな",
+      "selection_reason": "ソファや枕を手入れしたいが、部屋に香りを残したくない人の布用の定番候補。香りが残らない370mLの本体で、布製品の消臭・除菌に使える。P&Gはソファへの使用を案内する一方、水に弱い繊維や水洗い不可の表示があるものは目立たない場所で試すよう求めている。[P&Gの使用対象案内](https://www.myrepi.com/home/cleaning/febreze-faq-cloth/)",
+      "sources": []
+    },
+    {
+      "amazon_title": "Dr.Scholl 靴専用 【消臭・抗菌靴スプレー】瞬間消臭×抗菌・防カビ 48時間消臭効果持続 日本製 無香性 150mL",
+      "asin": "B0026R4XY4",
+      "brand": "Dr. Scholl's",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61zM30yCI+L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0026R4XY4",
+      "provisional": false,
+      "rating": 4.2,
+      "ref": "p2",
+      "review_count": 9687,
+      "search_key": "Dr. Scholl's Dr.Scholl 靴専用 瞬間消臭×抗菌・防カビ 48時間消臭",
+      "selection_reason": "革靴とスニーカーを日によって履き分ける人が、帰宅後の靴内側の手入れを始める基準になる靴専用スプレー。ドクター・ショールは両方の靴への使用、逆さ向きでの噴射、靴から10cm以上離して吹き付ける方法を案内している。履くときは噴射後1～2分待つ。[メーカー公式](https://www.drscholl.jp/shoe-spray/)",
+      "sources": [
+        {
+          "brand": "Dr. Scholl's",
+          "excerpt": "Dr. Scholl Shoe Spray (Deodorizing/Antibacterial Shoe Spray), Instantly Deodorizes x Antibacterial, Mildew, 48 Hours of Deodorizing Effect, Made in Japan, Unscented, 5.1 fl oz (150 ml)\nAbout this item\nInstant Deodorization: Instantly removes odors produced by natural deodorizing ingredients\n(Antibacterial and Mildew Resistant) Formulated with antibacterial and mildew resistant ingredients specifically for the cause of shoe odors. 99% of odor-causing bacteria and inhibits bacterial growth. Spray after wearing to cut out the bad cycle of odor causing and keep your shoes clean at all times\nReverse Spray OK: Completely deodorizes even hard-to-reach toes without touching your shoes. A single push approach\n(One piece for all shoes) Deodorizes sports shoes, leather shoes, and boots. This all-purpose shoe deodorizer spray is easy to use even for many families\nThe No. 1 Share in the World Foot Care Brand: Dr. Scholl's specialized foot care brand with over 100 years of history. Nielsen IQ study (9 major countries, as of December 2024) › See more product details\nScent Unscented\nBrand Dr. Scholl's\nItem Form Aerosol\nItem Weight 0.13 Pounds\nMaterial Type Free Unscented\nNumber of Items 1\nUnit Count 1.0 Grams\nManufacturer レキットベンキーザー See more\nVisit the Dr. Scholl's Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Dr. Scholl Shoe Spray (Deodorizing/Antibacterial Shoe Spray), Instantly Deodorizes x Antibacterial, Mildew, 48 Hours of Deodorizing Effect, Made in Japan, Unscented, 5.1 fl oz (150 ml)",
+          "url": "https://www.amazon.co.jp/dp/B0026R4XY4?th=1",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "gentleness",
-      "label": "使用感・肌へのやさしさ",
-      "keywords": [
-        "手荒れしにくい",
-        "無香料",
-        "ノンアルコール"
+      "amazon_title": "ファブリーズ 消臭スプレー 布用 PREMIUM 速乾ジェット 消臭・除菌スプレー 無香料 アルコール成分入り 本体 320mL",
+      "asin": "B0D9LMV731",
+      "brand": "",
+      "discovery_axis_id": "fabric_care",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71eU7S20j9L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0D9LMV731",
+      "provisional": true,
+      "rating": 4.4,
+      "ref": "p3",
+      "review_count": 144,
+      "search_key": "ファブリーズ 消臭スプレー 布用 PREMIUM 速乾ジェット",
+      "selection_reason": "家族が使うソファや、洗いにくいマットレスを日常的に手入れしたい人向け。無香料のPREMIUM速乾ジェットは、広がるミストと速乾性を特徴とし、販売店の商品説明にソファ・カーペット・マットレスへの使用が明記されている。布には20～30cm離して吹き付ける。[カインズの商品情報](https://www.cainz.com/g/4987176261175.html)",
+      "sources": []
+    },
+    {
+      "amazon_title": "Laundrin'(ランドリン) ファブリックミスト クラシックフローラル 消臭 スプレー 370ml",
+      "asin": "B00CJRIH7U",
+      "brand": "Laundrin",
+      "discovery_axis_id": "fabric_care",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61Y4zRwnnnL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B00CJRIH7U",
+      "provisional": false,
+      "rating": 4.4,
+      "ref": "p4",
+      "review_count": 5836,
+      "search_key": "Laundrin '(ランドリン) ファブリックミスト クラシックフローラル 消臭",
+      "selection_reason": "洗濯しにくいカーテンや布張りソファのニオイを手入れしながら、部屋の香りも楽しみたい人向け。ランドリン公式はカーテン・ソファ・ラグへの使用を挙げ、クラシックフローラルをピーチやアップルからローズなどへ移る香りとして説明している。薄色の布や革には吹き付けず、使用後はよく乾かす。[ランドリン公式](https://laundrin.jp/collections/classic-floral/products/mist-classicfloral)",
+      "sources": [
+        {
+          "brand": "Laundrin",
+          "excerpt": "Laundrin'(ランドリン) Fabric Mist Classic Floral Deodorizing Spray, 12.5 fl oz (370 ml)\nAbout this item\nProduct size (width x depth x height): 3.4 x 2.9 x 8.1 inches (86 mm x 74 mm x 207 mm)\nMade in Japan\nContent: 12.5 fl oz (370 ml) › See more product details\nScent Floral, apple, muguet, peach, rose\nBrand Laundrin\nItem Form 液体\nItem Weight 0.11 Kilograms\nNumber of Items 1\nUnit Count 370.0 Milliliters\nManufacturer パネス\nGlobal Trade Identification Number 04582469501411 See more\nVisit the Laundrin'(ランドリン) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Laundrin'(ランドリン) Fabric Mist Classic Floral Deodorizing Spray, 12.5 fl oz (370 ml)",
+          "url": "https://www.amazon.co.jp/dp/B00CJRIH7U?th=1",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "portability",
-      "label": "携帯性",
-      "keywords": [
-        "携帯サイズ",
-        "卓上用",
-        "詰め替え"
+      "amazon_title": "オドイーター 【まとめ買い】 スニーカー用 除菌・消臭ミスト 消臭スプレー 白 250mL×3個 (おまけ付き) 【Amazon.co.jp限定】",
+      "asin": "B0B76RB5FX",
+      "brand": "ABB",
+      "discovery_axis_id": "shoe_care",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/91RpMnSdjRL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0B76RB5FX",
+      "provisional": false,
+      "rating": 4.3,
+      "ref": "p5",
+      "review_count": 1040,
+      "search_key": "ABB オドイーター スニーカー用 除菌・消臭ミスト 消臭スプレー 白",
+      "selection_reason": "通学や運動で履いたスニーカーの、ニオイが残りやすいつま先側を帰宅後に手入れしたい人向け。小林製薬はミストが繊維の奥まで浸透すると説明し、脱いだ後に5～10cm離して湿り気を帯びる程度に噴霧する方法を示している。天然皮革には吹き付けず、履く直前の湿りにも注意したい。[小林製薬の製品情報](https://www.kobayashi.co.jp/seihin/od_sm/index.html)",
+      "sources": [
+        {
+          "brand": "ABB",
+          "excerpt": "Odoeater 【Bulk Purchase】 Sneaker Disinfectant & Deodorizing Mist, Deodorant Spray, White, 250mL x 3 (Includes a Gift) 【Amazon.co.jp Exclusive】\nAbout this item\nMist penetrates deep into the fibers\nDisinfects and deodorizes odor-causing bacteria\nCan spray approximately 800 times › See more product details\nBrand ABB\nItem Weight 2.05 Pounds\nNumber of Items 3\nUnit Count 250.0 Milliliters\nManufacturer 小林製薬\nVisit the ABB Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Odoeater 【Bulk Purchase】 Sneaker Disinfectant & Deodorizing Mist, Deodorant Spray, White, 250mL x 3 (Includes a Gift) 【Amazon.co.jp Exclusive】",
+          "url": "https://www.amazon.co.jp/dp/B0B76RB5FX?th=1",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "price",
-      "label": "価格帯・コスパ",
-      "keywords": [
-        "大容量",
-        "詰め替え用",
-        "まとめ買い"
+      "amazon_title": "近与(KONYO) SUN UP 靴の消臭・除菌・抗菌スプレー 2WAYノズル仕様 420ml SSD-420 白",
+      "asin": "B0BHWD194Y",
+      "brand": "近与(KONYO)",
+      "discovery_axis_id": "shoe_care",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71BPrRqqn8L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0BHWD194Y",
+      "provisional": false,
+      "rating": 4.1,
+      "ref": "p6",
+      "review_count": 162,
+      "search_key": "近与(KONYO) SUN UP 靴の消臭・除菌・抗菌スプレー 2WAYノズル仕様",
+      "selection_reason": "ノズルが届きにくい長靴やロングブーツの内側を手入れしたい人向け。SUN UPの420mL缶は、通常の噴射と、ホースを立てて奥の細部を狙う噴射を使い分けられる。除湿パウダーも配合する靴・靴下用製品として販売されており、ブーツの筒の奥まで手を入れずに噴霧できる点がこの切り口に合う。[販売ページの商品説明](https://payid.jp/item/137624634)",
+      "sources": [
+        {
+          "brand": "近与(KONYO)",
+          "excerpt": "KONYO SUN UP Shoe Deodorizer & Antibacterial Spray, 2-Way Nozzle, 420ml SSD-420 White\nAbout this item\n・Triple effect \"deodorizing · disinfecting · antibacterial\" shoe and sock deodorizer!! 【Made in Japan】・【Quick Deodorizing!! The deodorizing component derived from green tea (containing natural tea catechins) breaks down and deodorizes isovaleric acid, which is the source of unpleasant odors\n・Silver ions (AG+) prevent the growth of bacteria that cause odors!! ・99.9% sterilization (※Not all bacteria are sterilized or antibacterial.) Effect on fabric )\n・With moisture-absorbing powder, it provides a smooth effect to reduce foot sweat ・You can use the 2-way nozzle according to the usage It is usually convenient to spray as-is, and for tall boots or long boots, you can stand up the hose to spray into detailed areas, which is convenient ★ Can be used upside down!!\n・Adopts a large spray button for easy spraying!! ・Unscented type!! ※Although no fragrances are added, there is a scent from the ingredients, so it is not odorless )\n・Estimated usage (deodorizing and disinfecting): shoes / approximately 70 pairs, boots / approximately 35 pairs ・■Deodorizer Usage: For shoes and socks Ingredients: LPG, ethanol, silver antibacterial agent, dehumidifying powder, plant extract (tea catechin), disinfectant / water-soluble NET: 420ml › See more product details\nBrand 近与(KONYO)\nItem Form Liquid\nItem Weight 0.36 Kilograms\nNumber of Items 1\nUnit Count 420 Milliliters\nManufacturer コンヨ(konyo)\nBrand: コンヨ(KONYO)",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "KONYO SUN UP Shoe Deodorizer & Antibacterial Spray, 2-Way Nozzle, 420ml SSD-420 White",
+          "url": "https://www.amazon.co.jp/dp/B0BHWD194Y",
+          "verified": true
+        }
       ]
     }
   ],
   "selection": {
-    "comparison_axes_covered": [
-      "efficacy",
-      "gentleness",
-      "portability",
-      "price"
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B0DQXRWNZC",
+            "reason": "ソファや枕を手入れしたいが、部屋に香りを残したくない人の布用の定番候補。香りが残らない370mLの本体で、布製品の消臭・除菌に使える。P&Gはソファへの使用を案内する一方、水に弱い繊維や水洗い不可の表示があるものは目立たない場所で試すよう求めている。[P&Gの使用対象案内](https://www.myrepi.com/home/cleaning/febreze-faq-cloth/)"
+          },
+          {
+            "asin": "B0026R4XY4",
+            "reason": "革靴とスニーカーを日によって履き分ける人が、帰宅後の靴内側の手入れを始める基準になる靴専用スプレー。ドクター・ショールは両方の靴への使用、逆さ向きでの噴射、靴から10cm以上離して吹き付ける方法を案内している。履くときは噴射後1～2分待つ。[メーカー公式](https://www.drscholl.jp/shoe-spray/)"
+          }
+        ]
+      },
+      {
+        "axis_id": "fabric_care",
+        "products": [
+          {
+            "asin": "B0D9LMV731",
+            "reason": "家族が使うソファや、洗いにくいマットレスを日常的に手入れしたい人向け。無香料のPREMIUM速乾ジェットは、広がるミストと速乾性を特徴とし、販売店の商品説明にソファ・カーペット・マットレスへの使用が明記されている。布には20～30cm離して吹き付ける。[カインズの商品情報](https://www.cainz.com/g/4987176261175.html)"
+          },
+          {
+            "asin": "B00CJRIH7U",
+            "reason": "洗濯しにくいカーテンや布張りソファのニオイを手入れしながら、部屋の香りも楽しみたい人向け。ランドリン公式はカーテン・ソファ・ラグへの使用を挙げ、クラシックフローラルをピーチやアップルからローズなどへ移る香りとして説明している。薄色の布や革には吹き付けず、使用後はよく乾かす。[ランドリン公式](https://laundrin.jp/collections/classic-floral/products/mist-classicfloral)"
+          }
+        ]
+      },
+      {
+        "axis_id": "shoe_care",
+        "products": [
+          {
+            "asin": "B0B76RB5FX",
+            "reason": "通学や運動で履いたスニーカーの、ニオイが残りやすいつま先側を帰宅後に手入れしたい人向け。小林製薬はミストが繊維の奥まで浸透すると説明し、脱いだ後に5～10cm離して湿り気を帯びる程度に噴霧する方法を示している。天然皮革には吹き付けず、履く直前の湿りにも注意したい。[小林製薬の製品情報](https://www.kobayashi.co.jp/seihin/od_sm/index.html)"
+          },
+          {
+            "asin": "B0BHWD194Y",
+            "reason": "ノズルが届きにくい長靴やロングブーツの内側を手入れしたい人向け。SUN UPの420mL缶は、通常の噴射と、ホースを立てて奥の細部を狙う噴射を使い分けられる。除湿パウダーも配合する靴・靴下用製品として販売されており、ブーツの筒の奥まで手を入れずに噴霧できる点がこの切り口に合う。[販売ページの商品説明](https://payid.jp/item/137624634)"
+          }
+        ]
+      }
     ],
-    "brand_count": 0,
-    "price_used_as_constraint_only": true
+    "brand_count": 4,
+    "candidate_count": 30,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [],
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": []
   },
-  "products": [
-    {
-      "ref": "p1",
-      "product_id": "AMZ-B0HJY71X6Q",
-      "asin": "B0HJY71X6Q",
-      "amazon_title": "クイックル Joan(ジョアン) 除菌スプレー ノンアルコール 香り気にならない微香性 本体 300ml (× 2)",
-      "brand": "花王",
-      "image_url": "https://m.media-amazon.com/images/I/51IpVdF8A7L._AC_SY300_SX300_QL70_ML2_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 1.07,
-      "matched_comparison_axes": [
-        "efficacy",
-        "gentleness",
-        "portability",
-        "price"
-      ],
-      "search_key": "クイックル joan(ジョアン) 除菌スプレー ノンアルコール",
-      "model": "花王 クイックル Joan 除菌スプレー",
-      "selected_variant": {
-        "volume": "300ml",
-        "quantity": 2,
-        "package": "スプレー本体2個"
-      }
-    },
-    {
-      "ref": "p2",
-      "product_id": "AMZ-B007QAVHPO",
-      "asin": "B007QAVHPO",
-      "amazon_title": "ジェームズマーティン フレッシュサニタイザー 500mlスプレー入り",
-      "brand": "JAMES MARTIN",
-      "image_url": "https://m.media-amazon.com/images/I/51ylC-myggL._AC_SL1000_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.35,
-      "matched_comparison_axes": [
-        "price"
-      ],
-      "search_key": "プレミアム 超強力消臭スプレー 有効成分2倍 \"プロ仕様業務用\"",
-      "model": "ジェームズマーティン フレッシュサニタイザー",
-      "selected_variant": {
-        "volume": "500ml",
-        "quantity": 1,
-        "package": "スプレー本体"
-      }
-    },
-    {
-      "ref": "p3",
-      "product_id": "AMZ-B0CYZ47V6D",
-      "asin": "B0CYZ47V6D",
-      "amazon_title": "サラヤ 食品添加物アルコール製剤 アルペットNV 500ml スプレー付 40079",
-      "brand": "サラヤ",
-      "image_url": "https://m.media-amazon.com/images/I/61ZxkTG-ngL._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.35,
-      "matched_comparison_axes": [],
-      "search_key": "消臭スプレー お部屋 玄関 トイレ リビング 衣類 ファブリック",
-      "model": "SARAYA アルペットNV 40079",
-      "selected_variant": {
-        "volume": "500ml",
-        "quantity": 1,
-        "package": "スプレー付"
-      }
-    },
-    {
-      "ref": "p4",
-      "product_id": "AMZ-B0FT86F572",
-      "asin": "B0FT86F572",
-      "amazon_title": "除菌スプレー Sourif (スリーフ) 500ml ウイルス 菌 消臭 ノンアルコール 水の成分99.9%以上 赤ちゃん ベビー キッズ 安心 除菌 無刺激 テーブル キッチン 花粉 スプレー 花粉対策 大容量 2年間保存OK 日本製 キュービックスクエア",
-      "brand": "Sourif",
-      "image_url": "https://m.media-amazon.com/images/I/51yDOXqpkJL._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.35,
-      "matched_comparison_axes": [
-        "efficacy",
-        "gentleness",
-        "price"
-      ],
-      "search_key": "除菌スプレー Sourif (スリーフ) 500ml ウイルス",
-      "model": "Sourif スリーフ",
-      "selected_variant": {
-        "volume": "500ml",
-        "quantity": 1
-      }
-    },
-    {
-      "ref": "p5",
-      "product_id": "AMZ-B08LLBVDT1",
-      "asin": "B08LLBVDT1",
-      "amazon_title": "アルコール除菌 食品用アルコール除菌フードキーパー 300ml",
-      "brand": "フマキラー",
-      "image_url": "https://m.media-amazon.com/images/I/610ofMIUIxL._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.35,
-      "matched_comparison_axes": [
-        "efficacy"
-      ],
-      "search_key": "アルコール除菌 キッチン用 スプレー 本体400ml ×2個 抗",
-      "model": "フマキラー 食品用アルコール除菌フードキーパー",
-      "selected_variant": {
-        "volume": "300ml",
-        "quantity": 1,
-        "jan": "4902424445817",
-        "package": "スプレー本体"
-      }
-    },
-    {
-      "ref": "p6",
-      "product_id": "AMZ-B001JZ0DBG",
-      "asin": "B001JZ0DBG",
-      "amazon_title": "ドーバー パストリーゼ77 スプレーヘッド付 500ml 【HTRC3】",
-      "brand": "ドーバー",
-      "image_url": "https://m.media-amazon.com/images/I/61dC04k2a2L._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.35,
-      "matched_comparison_axes": [],
-      "search_key": "シューズスプレー 180ml 靴 消臭スプレー 99.9% 徹底",
-      "model": "ドーバー パストリーゼ77",
-      "selected_variant": {
-        "volume": "500ml",
-        "quantity": 1,
-        "package": "スプレーヘッド付"
-      }
-    }
-  ]
+  "slug": "disinfectant-sprays-6-picks"
 }
