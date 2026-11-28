@@ -1,187 +1,368 @@
 {
-  "slug": "electric-blankets-6-picks",
-  "category": "gadget",
+  "amazon_tag": "sellemy-22",
   "canonical_url": "https://www.sellemy.jp/article/gadget/electric-blankets-6-picks.html",
-  "eyecatch_image": "https://www.sellemy.jp/img/electric-blankets-6-picks/electric-blankets-6-picks.png",
-  "amazon_tag": "suzuron-22",
+  "category": "gadget",
   "comparison_axes": [
     {
-      "id": "heating_area",
-      "label": "サイズ・暖房範囲",
+      "id": "popular",
       "keywords": [
-        "シングル",
-        "大判"
+        "人気"
+      ],
+      "label": "人気・定番の基準"
+    },
+    {
+      "id": "bedtime_bedding",
+      "keywords": [
+        "敷く用途",
+        "寝具",
+        "就寝前",
+        "サイズ"
+      ],
+      "label": "寝る前に寝具を暖めたい人向け"
+    },
+    {
+      "id": "daytime_seated",
+      "keywords": [
+        "掛ける用途",
+        "ひざ掛け",
+        "リビング",
+        "在宅作業"
+      ],
+      "label": "日中の座り時間に掛けて使いたい人向け"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/electric-blankets-6-picks/electric-blankets-6-picks.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "60ffed0bf8a6e03393f6b0ae5855583811c3b6bace9f35a90ac59cbf96c203b5",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 26629,
+      "listing_identity_citations_repaired": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 1913,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 697,
+      "session_id": "01a21b87-cf94-7fe0-a1de-5189bfd0b374",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "Generous enough to fit semi-double mattresses."
+            }
+          ],
+          "identity_key": "アイリスオーヤマ 電気毛布 敷き 洗える 190×130cm スライド温度調整 EHB-1913-T ブラウン",
+          "identity_quote": "アイリスオーヤマ 電気毛布 敷き 洗える 190×130cm スライド温度調整 EHB-1913-T ブラウン",
+          "reason": "確認済み掲載情報（https://www.amazon.co.jp/dp/B074P2HDPN?th=1）は型番と敷毛布としての用途を示す。190×130cmの寝具向け商品として紹介できる。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "Simple under blanket that is easy to use"
+            }
+          ],
+          "identity_key": "【Amazon.co.jp限定】 コイズミ 電気毛布 敷毛布 130×80cm 丸洗い可 頭寒足熱配線 ダニ退治 無段階温度調節 節電 省エネ KDS-40242",
+          "identity_quote": "【Amazon.co.jp限定】 コイズミ 電気毛布 敷毛布 130×80cm 丸洗い可 頭寒足熱配線 ダニ退治 無段階温度調節 節電 省エネ KDS-40242",
+          "reason": "確認済み掲載情報（https://www.amazon.co.jp/dp/B0DBPW6Z7W?th=1）は型番と130×80cmの敷毛布であることを示す。寝具用の一枚として紹介できる。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "bedtime_bedding",
+              "quote": "This electric blanket is designed to be used within a futon."
+            }
+          ],
+          "identity_key": "ライフジョイ 電気毛布 日本製 敷き ロング シングル ブラウン 180×80cm 洗える 省エネ 暖房エリア強化 JCS801BL",
+          "identity_quote": "ライフジョイ 電気毛布 日本製 敷き ロング シングル ブラウン 180×80cm 洗える 省エネ 暖房エリア強化 JCS801BL",
+          "reason": "確認済み掲載情報（https://www.amazon.co.jp/dp/B08B3GSZCG）は型番、ロングタイプ、布団内での使用を示す。寝具を暖める切り口に合う。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "bedtime_bedding",
+              "quote": "it primarily warms the foot area"
+            }
+          ],
+          "identity_key": "MORITA 洗える電気敷毛布 140×80cm 室温センサー付 ダニ退治 頭寒足熱配線で足元あったか TMB-S14KS ブラウン",
+          "identity_quote": "MORITA 洗える電気敷毛布 140×80cm 室温センサー付 ダニ退治 頭寒足熱配線で足元あったか TMB-S14KS ブラウン",
+          "reason": "確認済み掲載情報（https://www.amazon.co.jp/dp/B07XZ283Z1）は型番と敷毛布としての用途を示す。足元を中心に暖める配線の説明もあり、寝具向けの切り口に合う。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "daytime_seated",
+              "quote": "電気毛布 掛け 敷き 大判 188×130cm"
+            }
+          ],
+          "identity_key": "エペイオス(Epeios) 電気毛布 掛け 敷き 大判 188×130cm 洗える 電気ブランケット 省エネ 9段階温度調節 12Hタイマー グリーン",
+          "identity_quote": "エペイオス(Epeios) 電気毛布 掛け 敷き 大判 188×130cm 洗える 電気ブランケット 省エネ 9段階温度調節 12Hタイマー グリーン",
+          "reason": "evidence.productsのp5.amazon_titleに、ブランド、掛け敷き兼用の用途、寸法が記載されている。日中に掛ける選択肢として識別できる。確認済みのsourcesは空であり、選定理由にある生地の仕様は裏付けられていない。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "daytime_seated",
+              "quote": "Not only for bed, but also for watching TV on the couch or sitting in an office chair."
+            }
+          ],
+          "identity_key": "電気毛布 掛け敷き兼用 188×130cm 電気毛布 掛け【大きいサイズ＆10段階温度調整＆ 9つタイマー機能 】 フランネル　ふわふわ",
+          "identity_quote": "電気毛布 掛け敷き兼用 188×130cm 電気毛布 掛け【大きいサイズ＆10段階温度調整＆ 9つタイマー機能 】 フランネル　ふわふわ",
+          "reason": "確認済み掲載情報（https://www.amazon.co.jp/dp/B0D9XSQ887?th=1）はブランド、型番、掛ける用途を示す。ソファや椅子で座る時間向けの切り口に合う。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "6商品は提示された商品名と各商品の掲載情報から個別に識別でき、指定された3つの紹介切り口に各2商品が適合する。p5はamazon_titleが商品識別と掛ける用途を示すが、確認済みの出典はないため、素材など選定理由中の追加仕様は裏付け済みの事実として扱えない。記事本文は未提出のため本文に関する判定は行っていない。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
+  "products": [
+    {
+      "amazon_title": "アイリスオーヤマ 電気毛布 敷き 洗える 190×130cm スライド温度調整 EHB-1913-T ブラウン",
+      "asin": "B074P2HDPN",
+      "brand": "Iris Ohyama",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/611guX3AUCL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B074P2HDPN",
+      "provisional": false,
+      "rating": 4.2,
+      "ref": "p1",
+      "review_count": 5686,
+      "search_key": "Iris Ohyama アイリスオーヤマ 電気毛布 敷き 洗える 190×130cm ス",
+      "selection_reason": "セミダブルの寝具にも敷ける190×130cmの大きさが、この商品の選ぶ理由。広めの布団を就寝前に暖めたい人に向く。商品説明には、掛け布団の下に敷いて予熱でき、スライド式で温度を細かく調節できるとある。出典：https://www.amazon.co.jp/dp/B074P2HDPN",
+      "sources": [
+        {
+          "brand": "Iris Ohyama",
+          "excerpt": "Iris Ohyama EHB-1913-T Electric Blanket, Mat, Washable, 74.8 x 51.2 inches\nAbout this item\n[Roomy Double Size] 74.8 x 51.2 inches (190 x 130 cm), Generous enough to fit semi-double mattresses. Fluffy flannel material feels great against your skin and quickly warms your cold comforter\n[Sliding Type, Stepless Temperature Adjustment, Energy Saving Operation] You can finely adjust the temperature you want with the slider. Set it low when you sleep to save energy costs\nWashable / Mite Repelling Function: Can be washed in a washing machine. It can also be used to protect against dust mites at a high temperature setting to keep it clean (we recommend using a laundry net)\n(Perfect for Preheating Before Bed) Place under your comforter and keep it warm before bedtime to reduce stress from getting into a cold futon. We also recommend combining it with power-saving mode › See more product details\nMaterial Polyester\nColor Braun\nBrand Iris Ohyama\nSpecial Feature Supports nationwide (Power supply: AC 100 V, 50/60 Hz)\nStyle Mattress [190x130]\nVisit the アイリスオーヤマ(IRIS OHYAMA) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Iris Ohyama EHB-1913-T Electric Blanket, Mat, Washable, 74.8 x 51.2 inches",
+          "url": "https://www.amazon.co.jp/dp/B074P2HDPN?th=1",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "temperature_control",
-      "label": "温度調整段階",
-      "keywords": [
-        "温度調整",
-        "タイマー"
+      "amazon_title": "【Amazon.co.jp限定】 コイズミ 電気毛布 敷毛布 130×80cm 丸洗い可 頭寒足熱配線 ダニ退治 無段階温度調節 節電 省エネ KDS-40242",
+      "asin": "B0DBPW6Z7W",
+      "brand": "Koizumi",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/715PZf7-7-L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0DBPW6Z7W",
+      "provisional": false,
+      "rating": 4.2,
+      "ref": "p2",
+      "review_count": 861,
+      "search_key": "Koizumi コイズミ 電気毛布 敷毛布 130×80cm 丸洗い可 頭寒足熱",
+      "selection_reason": "130×80cm、約0.7kgの一人用敷毛布。寝具を暖めるための一枚を出し入れしやすい大きさで選びたい人に向く。商品説明で40W、敷毛布としての使用、丸洗い対応が確認できる。出典：https://www.koizumi-partsshop.jp/c/season/blanket/kds/kds40242",
+      "sources": [
+        {
+          "brand": "Koizumi",
+          "excerpt": "【Amazon.co.jp Exclusive】 Koizumi Electric Blanket, Bedspread, 130×80 cm, Fully Washable, Head Cold Feet Hot Wiring, Dust Mite Control, Stepless Temperature Control, Energy Saving, KDS-40242\nAbout this item\nAmazon.co.jp exclusive color\nSize:130x80cm\nProduct Weight: Approx. 0.7 kg (including controller)\nPower Consumption: 40 W\nSimple under blanket that is easy to use\nMaterial: 100% polyester › See more product details\nColor 1) Standard\nBrand Koizumi\nSpecial Feature Resistant to dust mites, heat retention\nStyle 1) Standard\nProduct Dimensions 80L x 130W cm\nVisit the コイズミ(Koizumi) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "【Amazon.co.jp Exclusive】 Koizumi Electric Blanket, Bedspread, 130×80 cm, Fully Washable, Head Cold Feet Hot Wiring, Dust Mite Control, Stepless Temperature Control, Energy Saving, KDS-40242",
+          "url": "https://www.amazon.co.jp/dp/B0DBPW6Z7W?th=1",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "safety",
-      "label": "安全機能",
-      "keywords": [
-        "自動オフ",
-        "低温やけど防止"
+      "amazon_title": "ライフジョイ 電気毛布 日本製 敷き ロング シングル ブラウン 180×80cm 洗える 省エネ 暖房エリア強化 JCS801BL",
+      "asin": "B08B3GSZCG",
+      "brand": "LIFEJOY",
+      "discovery_axis_id": "bedtime_bedding",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71KqfaePLlL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B08B3GSZCG",
+      "provisional": false,
+      "rating": 4.2,
+      "ref": "p3",
+      "review_count": 156,
+      "search_key": "LIFEJOY ライフジョイ 電気毛布 日本製 敷き ロング シングル ブラウン",
+      "selection_reason": "180×80cmのロングタイプで、折り込まずに広い範囲を暖めたいという要望を受けて加熱範囲を広げた設計が特徴。寝る前に布団の足元から体側まで広めに暖めておきたい人に向く。商品説明は布団の中での使用を指定している。出典：https://store.shopping.yahoo.co.jp/lifejoy/bea6c9cab0.html",
+      "sources": [
+        {
+          "brand": "LIFEJOY",
+          "excerpt": "Lifejoy JCS801BL Electric Blanket, Made in Japan, Long, Single, Brown, 70.9 x 31.5 inches (180 x 80 cm), Washable, Energy Saving, Reinforced Heating Area\nAbout this item\n(Extends Heating Range) Our previous product was designed to be used as a mattress blanket, and is intended for those who want to fold an electric blanket between the futon to prevent slipping However, in response to the demand \"I want a wider range of warmth without folding\", we have developed a product with a wide heating range that is overall warmer We recommend this product for those who want to warm a wide area\n【Easy to use】Temperature adjustment can be done intuitively with a slide on the controller Not only three levels of low, medium, and high, but also fine temperature settings between low and medium, and between medium and high are possible You can set it to your preferred temperature and use it\n【For those who want to get warm immediately! The blanket part of this electric blanket is thin in thickness We have received feedback that it is \"too thin and flimsy,\" but we have intentionally chosen this thinness Because the thinness allows the heat from the heating wire to easily transfer to the body Just want to get warm immediately! We highly recommend this for those who need it It is designed ideally to combine warmth and safety\n【Can exterminate dust mites and is washable】Comes with an easy dust mite extermination function Simply place the electric blanket in a poly bag, insert it between the futon, and run it on \"strong\" for 3 hours This alone can exterminate 99.9% of dust mites It is also machine washable, so you can always keep it clean\n【If it does not warm up】This electric blanket is designed to be used within a futon If you are using it outside the futon, it may not get warm at all, so please be sure to use it inside the futon Using a blanket with high insulation will keep you warmer and save on electricity costs › See more product details\nMaterial Polyester\nColor 2) Brown\nBrand LIFEJOY\nSpecial Feature Electric Blanket, Adjustable Temperature, Mite Repelling Function, Machine Washable, Reinforced Heating AreaElectric Blanket, Adjustable Temperature, Mite Repelling Function, Machine Washable, Reinforced Heating Area See more\nStyle 4) Long type\nVisit the ライフジョイ(LIFEJOY) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Lifejoy JCS801BL Electric Blanket, Made in Japan, Long, Single, Brown, 70.9 x 31.5 inches (180 x 80 cm), Washable, Energy Saving, Reinforced Heating Area",
+          "url": "https://www.amazon.co.jp/dp/B08B3GSZCG",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "washability",
-      "label": "洗濯対応",
-      "keywords": [
-        "丸洗い",
-        "洗濯機"
+      "amazon_title": "MORITA 洗える電気敷毛布 140×80cm 室温センサー付 ダニ退治 頭寒足熱配線で足元あったか TMB-S14KS ブラウン",
+      "asin": "B07XZ283Z1",
+      "brand": "MORITA",
+      "discovery_axis_id": "bedtime_bedding",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51aA8I7ocRL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B07XZ283Z1",
+      "provisional": false,
+      "rating": 4.2,
+      "ref": "p4",
+      "review_count": 1842,
+      "search_key": "MORITA 洗える電気敷毛布 140×80cm 室温センサー付 ダニ退治 頭",
+      "selection_reason": "140×80cmの敷毛布で、頭寒足熱に配慮した配線が足元を中心に暖める。布団に入る前、とくに足元の冷えが気になる人に向く。室温センサー付きで、毛布本体は手洗いできると販売ページに記載されている。出典：https://ymall.jp/store/mlymall/b07xz283z1-20230216/",
+      "sources": [
+        {
+          "brand": "MORITA",
+          "excerpt": "MORITA TMB-S14KS Washable Electric Blanket 55.1 x 31.5 inches (140 x 80 cm), Room Temperature Sensor Included, Dust Mite Repellent, Warm Feet with Heat Wiring, Brown\nAbout this item\nThe blanket itself can also be washed by hand, so it can be used cleanly\n◆ Comes with a dust mite extermination function that is hygienic and safe\n◆Because the wiring is designed with consideration for keeping the head cool and feet warm, it primarily warms the foot area\nPackage weight: 0.87kg › See more product details\nSpecial Feature Dust mite repellent function\nMaterial Polyester\nBrand MORITA\nColor Braun\nModel Name TMB-S14KS\nVoltage 100 Volts\nWattage 40 W\nUnit Count 1 Count\nNumber of Items 1\nManufacturer MORITA See more\nBrand: MORITA",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "MORITA TMB-S14KS Washable Electric Blanket 55.1 x 31.5 inches (140 x 80 cm), Room Temperature Sensor Included, Dust Mite Repellent, Warm Feet with Heat Wiring, Brown",
+          "url": "https://www.amazon.co.jp/dp/B07XZ283Z1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "エペイオス(Epeios) 電気毛布 掛け 敷き 大判 188×130cm 洗える 電気ブランケット 省エネ 9段階温度調節 12Hタイマー グリーン",
+      "asin": "B0CGRKCPGJ",
+      "brand": "",
+      "discovery_axis_id": "daytime_seated",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71146IjJsCL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0CGRKCPGJ",
+      "provisional": true,
+      "rating": 4.0,
+      "ref": "p5",
+      "review_count": 307,
+      "search_key": "エペイオス(Epeios) 電気毛布 掛け 敷き 大判 188×",
+      "selection_reason": "188×130cmの掛け敷き兼用で、長毛のラビットファー調生地とフランネルを使った仕様。ソファで座る間、脚だけでなく体にも掛けて過ごしたい人に向く。販売ページには9段階の温度調節と1～12時間のタイマーも記載されている。出典：https://ymall.jp/store/luckycart/b0cgrkcpgj-20261119/",
+      "sources": []
+    },
+    {
+      "amazon_title": "電気毛布 掛け敷き兼用 188×130cm 電気毛布 掛け【大きいサイズ＆10段階温度調整＆ 9つタイマー機能 】 フランネル　ふわふわ",
+      "asin": "B0D9XSQ887",
+      "brand": "GOHHME",
+      "discovery_axis_id": "daytime_seated",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71lQK9rQZeL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0D9XSQ887",
+      "provisional": false,
+      "rating": 4.0,
+      "ref": "p6",
+      "review_count": 171,
+      "search_key": "GOHHME 電気毛布 掛け敷き兼用 188×130cm 電気毛布 掛け フラ",
+      "selection_reason": "188×130cmの掛け敷き兼用で、足元を意識した配線設計と10段階の温度調節が特徴。在宅作業などで座り続ける間、脚に掛けて暖かさを調整したい人に向く。商品説明には1～9時間のタイマー設定と、タイマー未設定時の4時間自動オフが記載されている。出典：https://item.rakuten.co.jp/thrsparkle/b0d9xsq887/",
+      "sources": [
+        {
+          "brand": "GOHHME",
+          "excerpt": "Electric Blanket, Throw & Bed Use, 74×51 inches (188×130 cm), Electric Blanket, Throw [Large Size & 10-Level Temperature Adjustment & 9 Timer Functions], Flannel, Fluffy, Electric Blanket\nAbout this item\n(Excellent Heating Performance & Smart Constant Temperature Heating Function) GOHHME electric blanket is a heater made of high quality carbon fiber, so you can feel warm in about 30 seconds after turning it on, and it will gradually warm up in about 3 minutes. The wiring design takes into consideration the cold feet of your feet and warms them firmly in the center. Recommended for those who suffer from the cold. It also has a smart constant temperature heating function, which heats up with full output at start, and stops heating when the set temperature is reached. When the temperature begins to decrease, it will resume heating again. After the temperature is stable, the temperature is maintained at a constant temperature, and the temperature is automatically maintained. It also saves more power consumption with fine temperature adjustments. Furthermore, our electric blanket is designed with a large size of 74.0 x 51.2 inches (188 x 130 cm), so it will keep you warm and warm\n2025 Model - 9 Timers & 10 Temperature Modes: Unlike conventional electric blankets, this electric blanket has 3 modes that are not only strong, medium, and low. The temperature level can be finely adjusted from 1 to 10. Can be used by one person or the whole family. In addition, you can set 9 timers from 1 to 9 hours to prevent you from accidentally turning off the power, making it energy-saving, environmentally friendly and economical. If the timer is not set, it will automatically turn off after 4 hours after the power is turned on, so it can be safely used by children, parents, grandparents, and elderly people\n(Electric Throw with Excellent Texture) The GOHHME electric throw is made of flannel material that is soft and soft to the touch, and is lightweight and resilient, making it fluffy and warm. Improved warmth and thickness compared to conventional products. The fluffy material allows you to feel warm without having to turn it on. Warm up your body or comforter in the cold weather to help you sleep comfortably. In addition, this item can be used all year round, as well as in winter, as a countermeasure against the cold in the summer\nFully Machine Washable & Antibacterial Deodorizing & Cold Feet Heat Wiring: The hot carpet has excellent sealing performance, so you don't need to worry about damaging the interior heating wire. You can remove the controller and wash it in your home washing machine. It has passed the washing test, so you can rest assured that it is always clean and hygienic. It is also said that mites will be killed when heated at high temperature (50°C), so if you set it to a temperature (50°C), put it on the futon, it can be used to extinguish dust mites and keep the electric blanket clean and reused every year in winter. Economical and great choice. (*Not compatible with drum-type washers or dryers)\nUseful in a Variety of Occasions: This electric blanket is not just a blanket. It can be used as a lap blanket, a throw blanket or a throw blanket. Not only for bed, but also for watching TV on the couch or sitting in an office chair. Relieve yourself from the cold this winter. It also comes with a stylish package which makes it a great holiday gift for your best friend! GOHHME heated blanket is a nice choice to provide cozy warmth while relieving the winter cold. It supports a comfortable sleep and provides hours of relaxation while wrapping yourself in warmth. Would you like to feel warm this winter? Try it! › See more product details\nSpecial Feature 9 Timers & 10 Temperature Modes, Durable & Washable, Energy Saving & Easy Operation, Fluffy & Comfortable Flannel Material, Large size 74.0 x 51.2 inches (1889 Timers & 10 Temperature Modes, Durable & Washable, Energy Saving & Easy Operation, Fluffy & Comfortable Flannel Material, Large siz… See more\nMaterial Flannel material\nBrand GOHHME\nColor Gray\nModel Name GLJP-0503\nUnit Count 1 Count\nNumber of Items 1\nItem Highlight 電気ブランケット丸洗い可 3分速暖膝掛け4h自動電源オフ ソファ ブランケット過熱保護 防寒対策 抗菌 防臭 ダニ退治 冷え予防 暖かい 冬用 冷房対策 暖房器具 PSE認証済み\nManufacturer GOHHME See more\nVisit the GOHHME Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Electric Blanket, Throw & Bed Use, 74×51 inches (188×130 cm), Electric Blanket, Throw [Large Size & 10-Level Temperature Adjustment & 9 Timer Functions], Flannel, Fluffy, Electric Blanket",
+          "url": "https://www.amazon.co.jp/dp/B0D9XSQ887?th=1",
+          "verified": true
+        }
       ]
     }
   ],
   "selection": {
-    "comparison_axes_covered": [
-      "heating_area",
-      "safety",
-      "temperature_control",
-      "washability"
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B074P2HDPN",
+            "reason": "セミダブルの寝具にも敷ける190×130cmの大きさが、この商品の選ぶ理由。広めの布団を就寝前に暖めたい人に向く。商品説明には、掛け布団の下に敷いて予熱でき、スライド式で温度を細かく調節できるとある。出典：https://www.amazon.co.jp/dp/B074P2HDPN"
+          },
+          {
+            "asin": "B0DBPW6Z7W",
+            "reason": "130×80cm、約0.7kgの一人用敷毛布。寝具を暖めるための一枚を出し入れしやすい大きさで選びたい人に向く。商品説明で40W、敷毛布としての使用、丸洗い対応が確認できる。出典：https://www.koizumi-partsshop.jp/c/season/blanket/kds/kds40242"
+          }
+        ]
+      },
+      {
+        "axis_id": "bedtime_bedding",
+        "products": [
+          {
+            "asin": "B08B3GSZCG",
+            "reason": "180×80cmのロングタイプで、折り込まずに広い範囲を暖めたいという要望を受けて加熱範囲を広げた設計が特徴。寝る前に布団の足元から体側まで広めに暖めておきたい人に向く。商品説明は布団の中での使用を指定している。出典：https://store.shopping.yahoo.co.jp/lifejoy/bea6c9cab0.html"
+          },
+          {
+            "asin": "B07XZ283Z1",
+            "reason": "140×80cmの敷毛布で、頭寒足熱に配慮した配線が足元を中心に暖める。布団に入る前、とくに足元の冷えが気になる人に向く。室温センサー付きで、毛布本体は手洗いできると販売ページに記載されている。出典：https://ymall.jp/store/mlymall/b07xz283z1-20230216/"
+          }
+        ]
+      },
+      {
+        "axis_id": "daytime_seated",
+        "products": [
+          {
+            "asin": "B0CGRKCPGJ",
+            "reason": "188×130cmの掛け敷き兼用で、長毛のラビットファー調生地とフランネルを使った仕様。ソファで座る間、脚だけでなく体にも掛けて過ごしたい人に向く。販売ページには9段階の温度調節と1～12時間のタイマーも記載されている。出典：https://ymall.jp/store/luckycart/b0cgrkcpgj-20261119/"
+          },
+          {
+            "asin": "B0D9XSQ887",
+            "reason": "188×130cmの掛け敷き兼用で、足元を意識した配線設計と10段階の温度調節が特徴。在宅作業などで座り続ける間、脚に掛けて暖かさを調整したい人に向く。商品説明には1～9時間のタイマー設定と、タイマー未設定時の4時間自動オフが記載されている。出典：https://item.rakuten.co.jp/thrsparkle/b0d9xsq887/"
+          }
+        ]
+      }
     ],
-    "brand_count": 6,
-    "price_used_as_constraint_only": true
+    "brand_count": 5,
+    "candidate_count": 30,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [],
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": []
   },
-  "products": [
-    {
-      "ref": "p1",
-      "product_id": "AMZ-B00ES82OXQ",
-      "asin": "B00ES82OXQ",
-      "amazon_title": "パナソニック 電気かけしき毛布 DB-RM3M-C",
-      "brand": "パナソニック",
-      "image_url": "https://m.media-amazon.com/images/I/913VpS-iQTL._AC_SL1500_.jpg",
-      "observed_price": 1980,
-      "discovery_score": 1,
-      "selection_score": 1.06,
-      "matched_comparison_axes": [
-        "safety",
-        "temperature_control",
-        "washability"
-      ],
-      "search_key": "IESOETSD 電気毛布 掛け敷毛布 洗える 140*80CM 8段階温度調整",
-      "model": "DB-RM3M-C",
-      "selected_variant": {
-        "model": "DB-RM3M-C",
-        "color": "ベージュ",
-        "size": "188×137cm",
-        "quantity": 1
-      }
-    },
-    {
-      "ref": "p2",
-      "product_id": "AMZ-B0FHVNBSSD",
-      "asin": "B0FHVNBSSD",
-      "amazon_title": "山善 電気掛敷毛布 YMK-PTS62",
-      "brand": "山善",
-      "image_url": "https://m.media-amazon.com/images/I/61PkJ3D42HL._AC_SL1500_.jpg",
-      "observed_price": 14168,
-      "discovery_score": 1,
-      "selection_score": 0.7,
-      "matched_comparison_axes": [
-        "heating_area"
-      ],
-      "search_key": "ダイレクトテレショップ ひな暖ぬくぬくセット（毛布＋敷きパッド） ひな暖 寝具 毛布 敷",
-      "model": "YMK-PTS62",
-      "selected_variant": {
-        "model": "YMK-PTS62",
-        "color": "ベージュ系",
-        "size": "188×130cm",
-        "quantity": 1
-      }
-    },
-    {
-      "ref": "p3",
-      "product_id": "AMZ-B0DBPWG2L2",
-      "asin": "B0DBPWG2L2",
-      "amazon_title": "コイズミ 電気掛敷毛布 KDK-60242 Amazon限定カラー",
-      "brand": "コイズミ",
-      "image_url": "https://m.media-amazon.com/images/I/71VNsZHqE3L._AC_SL1500_.jpg",
-      "observed_price": 8999,
-      "discovery_score": 1,
-      "selection_score": 0.52,
-      "matched_comparison_axes": [
-        "temperature_control"
-      ],
-      "search_key": "BUODCO 電気毛布 もこもこ ウサギファー フランネル 両面仕様 9段階温",
-      "model": "KDK-60242",
-      "selected_variant": {
-        "model": "KDK-60242",
-        "color": "ベージュ（Amazon限定カラー）",
-        "size": "188×120cm",
-        "quantity": 1
-      }
-    },
-    {
-      "ref": "p4",
-      "product_id": "AMZ-B08LL39M56",
-      "asin": "B08LL39M56",
-      "amazon_title": "アイリスオーヤマ 電気かけしき毛布 EHB-1813-T",
-      "brand": "アイリスオーヤマ",
-      "image_url": "https://m.media-amazon.com/images/I/71rCrHZISOL._AC_SL1500_.jpg",
-      "observed_price": 8980,
-      "discovery_score": 1,
-      "selection_score": 0.52,
-      "matched_comparison_axes": [
-        "temperature_control"
-      ],
-      "search_key": "Damoku 電気毛布 掛け 敷き ふわふわ 電気掛け毛布 DAMOKU 18",
-      "model": "EHB-1813-T",
-      "selected_variant": {
-        "model": "EHB-1813-T",
-        "color": "ブラウン",
-        "size": "メーカー寸法188×130cm",
-        "quantity": 1
-      }
-    },
-    {
-      "ref": "p5",
-      "product_id": "AMZ-B08GX925TZ",
-      "asin": "B08GX925TZ",
-      "amazon_title": "椙山紡織 SB20MKW04 紺桔梗",
-      "brand": "椙山紡織",
-      "image_url": "https://m.media-amazon.com/images/I/91E5FY-6MJL._AC_SL1500_.jpg",
-      "observed_price": 9980,
-      "discovery_score": 1,
-      "selection_score": 0.52,
-      "matched_comparison_axes": [
-        "temperature_control"
-      ],
-      "search_key": "HAGOOGI 電気毛布 敷き 掛け兼用 節電 190×130cm 10段階温度",
-      "model": "SB20MKW04",
-      "selected_variant": {
-        "model": "SB20MKW04",
-        "pack_count": 1,
-        "colour": "紺桔梗",
-        "size": "190×140cm"
-      }
-    },
-    {
-      "ref": "p6",
-      "product_id": "AMZ-B0H7X7XYHF",
-      "asin": "B0H7X7XYHF",
-      "amazon_title": "HAGOOGI 電気毛布 2026改良モデル M エレガントグレー",
-      "brand": "HAGOOGI",
-      "image_url": "https://m.media-amazon.com/images/I/81GBjJ0pymL._AC_SL1500_.jpg",
-      "observed_price": 11800,
-      "discovery_score": 1,
-      "selection_score": 0.52,
-      "matched_comparison_axes": [
-        "temperature_control"
-      ],
-      "search_key": "Aliliy 電気毛布 掛け敷き兼用 188x130cm 両面フランネル AI",
-      "model": "HAGOOGI 電気毛布 2026改良モデル M",
-      "selected_variant": {
-        "model": "HAGOOGI 電気毛布 2026改良モデル M",
-        "color": "エレガントグレー",
-        "size": "190×130cm",
-        "quantity": 1
-      }
-    }
-  ]
+  "slug": "electric-blankets-6-picks"
 }
