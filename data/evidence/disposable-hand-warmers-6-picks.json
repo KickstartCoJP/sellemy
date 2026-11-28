@@ -1,262 +1,345 @@
 {
-  "slug": "disposable-hand-warmers-6-picks",
-  "category": "dailygoods",
-  "canonical_url": "https://www.sellemy.jp/article/dailygoods/disposable-hand-warmers-6-picks.html",
-  "eyecatch_image": "https://www.sellemy.jp/img/disposable-hand-warmers-6-picks/disposable-hand-warmers-6-picks.png",
   "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/disposable-hand-warmers-6-picks.html",
+  "category": "dailygoods",
   "comparison_axes": [
     {
-      "id": "heat",
-      "label": "発熱温度・持続時間",
+      "id": "popular",
       "keywords": [
-        "最高温度",
-        "持続時間",
-        "じんわり"
-      ]
+        "人気"
+      ],
+      "label": "人気・定番の基準"
     },
     {
-      "id": "type",
-      "label": "貼るタイプ・貼らないタイプ",
+      "id": "clothing_attached",
       "keywords": [
-        "貼るタイプ",
-        "貼らないタイプ",
-        "ポケット用"
-      ]
+        "貼るカイロ",
+        "衣服に貼る",
+        "屋外観戦"
+      ],
+      "label": "衣服に貼って使うカイロ"
     },
     {
-      "id": "size",
-      "label": "サイズ・携帯性",
+      "id": "foot_warmers",
       "keywords": [
-        "レギュラーサイズ",
-        "ミニサイズ",
-        "靴用"
-      ]
-    },
-    {
-      "id": "cost",
-      "label": "コスパ・枚数",
-      "keywords": [
-        "枚数",
-        "価格",
-        "まとめ買い"
-      ]
+        "足用カイロ",
+        "靴用カイロ",
+        "足先"
+      ],
+      "label": "足先の冷えに備える足用カイロ"
     }
   ],
-  "selection": {
-    "comparison_axes_covered": [
-      "cost",
-      "heat",
-      "size"
-    ],
-    "brand_count": 6,
-    "price_used_as_constraint_only": true
+  "eyecatch_image": "https://www.sellemy.jp/img/disposable-hand-warmers-6-picks/disposable-hand-warmers-6-picks.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "6936a99c2fbfdaae73c19137fcbd62d6b9cba0b00f0ae6a2e92d1d5fd8b4134b",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 25444,
+      "listing_identity_citations_repaired": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 1501,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 481,
+      "session_id": "01a21b61-bff3-7342-a1a0-aa893ec14642",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "アイリスオーヤマ 使い捨てカイロ 貼れない 60枚 日本製 ぽかぽか家族",
+          "identity_quote": "アイリスオーヤマ 使い捨てカイロ 貼れない 60枚 日本製 ぽかぽか家族",
+          "reason": "掲載名から貼れない使い捨てカイロと識別でき、手元の冷えに備える商品として紹介できる。検証済み資料はなく、持続時間16時間などの仕様は未確認。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "For Outdoor Use"
+            }
+          ],
+          "identity_key": "アイリスオーヤマ(IRIS OHYAMA) 使い捨てカイロ 激熱家族 30個 屋外専用 屋外用 最高 79度 9時間持続 防寒 防災備蓄 雪かき 外作業 寒冷地 レジャー 登山 釣",
+          "identity_quote": "アイリスオーヤマ(IRIS OHYAMA) 使い捨てカイロ 激熱家族 30個 屋外専用 屋外用 最高 79度 9時間持続 防寒 防災備蓄 雪かき 外作業 寒冷地 レジャー 登山 釣り スポーツ観戦 冬 寒冷地",
+          "reason": "検証済みの商品掲載情報が屋外用と示しており、p1とは異なる用途で紹介できる。高温製品について記事で具体的な安全上の説明をする場合は、その内容の根拠が必要。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "clothing_attached",
+              "quote": "Recommended Uses For Product Clothing"
+            }
+          ],
+          "identity_key": "アイリスオーヤマ(IRIS OHYAMA) アイリスプラザ 使い捨てカイロ 貼る レギュラー 120枚 日本製",
+          "identity_quote": "アイリスオーヤマ(IRIS OHYAMA) アイリスプラザ 使い捨てカイロ 貼る レギュラー 120枚 日本製",
+          "reason": "検証済みの商品掲載情報から衣服に貼るレギュラータイプと分かり、貼れないp1・p2や小型のp4と区別できる。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "clothing_attached",
+              "quote": "Tear along the perforations to separate"
+            }
+          ],
+          "identity_key": "使い捨てカイロ ミニ 貼るアイリスオーヤマ(IRIS OHYAMA) ぽかぽか家族 ちいさなまめカイロ 貼る 2枚組×7袋入り (× 2)",
+          "identity_quote": "使い捨てカイロ ミニ 貼るアイリスオーヤマ(IRIS OHYAMA) ぽかぽか家族 ちいさなまめカイロ 貼る 2枚組×7袋入り (× 2)",
+          "reason": "検証済みの商品掲載情報に小型の2枚組で切り離せることが示されており、レギュラータイプのp3とは形状と使い方が異なる。持続時間5時間は取得済み資料では未確認。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "foot_warmers",
+              "quote": "Simply stick it on the toe of your sock"
+            }
+          ],
+          "identity_key": "オンパックス [Amazon.co.jp 限定] くつ下用 貼る カイロ 黒 20足入 エコパッケージ [日本製/9時間持続] 靴 靴下 足 貼るカイロ R",
+          "identity_quote": "オンパックス [Amazon.co.jp 限定] くつ下用 貼る カイロ 黒 20足入 エコパッケージ [日本製/9時間持続] 靴 靴下 足 貼るカイロ R",
+          "reason": "検証済みの商品掲載情報が靴下のつま先に貼る用途を明示している。足用シートのp6とは使用箇所と形状が異なる。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "オンパックス 足ぽかシート 8時間 25cm",
+          "identity_quote": "",
+          "reason": "掲載名から足用のシート製品と識別でき、靴下のつま先に貼るp5とは異なる紹介が可能。検証済み資料はなく、対応する靴サイズや左右別形状などは未確認。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "記事未提出のため商品根拠のみを審査した。掲載名と取得済みの商品情報から、貼れないカイロ、衣服に貼るカイロ、足用カイロの各切り口に2商品ずつ適合する。明白な重複や用途外の商品はない。p1・p6には検証済み資料がなく、掲載名を超える仕様は未確認として扱う。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
   },
   "products": [
     {
+      "amazon_title": "アイリスオーヤマ 使い捨てカイロ 貼れない 60枚 日本製 ぽかぽか家族",
+      "asin": "B01L13Z09U",
+      "brand": "",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61jCEiSeNCL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B01L13Z09U",
+      "provisional": true,
+      "rating": 4.4,
       "ref": "p1",
-      "product_id": "AMZ-B000FP3JF8",
-      "asin": "B000FP3JF8",
-      "amazon_title": "桐灰カイロ 貼らない カイロ 24時間持続 30個入",
-      "brand": "小林製薬",
-      "image_url": "https://m.media-amazon.com/images/I/91v8CBHTWHL._AC_SL1500_.jpg",
-      "observed_price": 3890,
-      "discovery_score": 1,
-      "selection_score": 0.83,
-      "matched_comparison_axes": [
-        "cost",
-        "heat"
-      ],
-      "search_key": "Goodnetta 貼れないカイロ 60個×2箱 合計120個 使い捨てカイロ 持続",
-      "selected_variant": {
-        "current_selection_text": "",
-        "overview": "サイズ 30個 (x 1) ブランド 桐灰 電源 電気不要式 ユニット数 1 個 メーカー 小林製薬",
-        "selected_detail_fields": [
-          {
-            "field": "サイズ",
-            "value": "サイズ 30個 (x 1)"
-          },
-          {
-            "field": "ユニット数",
-            "value": "ユニット数 1 個"
-          },
-          {
-            "field": "特長",
-            "value": "特長 ポケットにぴったりのミニサイズ！ 小さくても長持ち12時間が自慢です。 当社のカイロはすべて厳しいISO管理の基に生産されています。「カイロ」の代表的商品。安定した暖かさが24時間持続します。 当社のカイロはすべて厳しいISO管理の基に生産されています。「カイロ」の代表的商品。安定した暖かさが24時間持続します。"
-          },
-          {
-            "field": "ユニット数",
-            "value": "ユニット数 1 個"
-          },
-          {
-            "field": "サイズ",
-            "value": "サイズ 30個 (x 1)"
-          }
-        ]
-      }
+      "review_count": 997,
+      "search_key": "アイリスオーヤマ 使い捨てカイロ 貼れない 60枚 日本製 ぽか",
+      "selection_reason": "手元の冷えに備える定番の貼れないレギュラータイプ。ポケットに入れておき、観戦中に必要なとき手を温めたい人に向く。メーカー公表の持続時間は16時間で、長い外出を想定しやすい。出典：https://www.irisohyama.co.jp/products/health-care/disposable-heating-pad/not-stick-regular-type/pokapoka-family-regular",
+      "sources": []
     },
     {
+      "amazon_title": "アイリスオーヤマ(IRIS OHYAMA) 使い捨てカイロ 激熱家族 30個 屋外専用 屋外用 最高 79度 9時間持続 防寒 防災備蓄 雪かき 外作業 寒冷地 レジャー 登山 釣り スポーツ観戦 冬 寒冷地",
+      "asin": "B0CP51CKVD",
+      "brand": "Iris Ohyama",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71Qv-GrWRRL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0CP51CKVD",
+      "provisional": false,
+      "rating": 4.2,
       "ref": "p2",
-      "product_id": "AMZ-B0156C90S4",
-      "asin": "B0156C90S4",
-      "amazon_title": "ホッカイロ ぬくぬく日和 貼らない レギュラー 30個入",
-      "brand": "興和",
-      "image_url": "https://m.media-amazon.com/images/I/71RjtGP9IUL._AC_SL1200_.jpg",
-      "observed_price": 1980,
-      "discovery_score": 1,
-      "selection_score": 0.7,
-      "matched_comparison_axes": [
-        "size"
-      ],
-      "search_key": "ノー品 使い捨てカイロ 貼る ほん わか 低 温タイプ 10時間持続 ミ",
-      "selected_variant": {
-        "current_selection_text": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. パターン名: レギュラー パターン名の選択ができます サイズ: 30個 サイズの選択ができます 10個 (× 2) 30個 10個 おすすめ出品がない1オプションを見る ← 1 →",
-        "overview": "サイズ 30個 ブランド Hokkairon 色 ホワイト 材質 ウール 製品の推奨用途 アウトドア, インドア",
-        "selected_detail_fields": [
-          {
-            "field": "サイズ",
-            "value": "サイズ 30個"
-          },
-          {
-            "field": "色",
-            "value": "色 ホワイト"
-          },
-          {
-            "field": "ユニット数",
-            "value": "ユニット数 30 個"
-          },
-          {
-            "field": "サイズ",
-            "value": "サイズ 30個"
-          }
-        ]
-      }
+      "review_count": 159,
+      "search_key": "Iris Ohyama アイリスオーヤマ(IRIS OHYAMA) 使い捨てカイロ 激熱",
+      "selection_reason": "寒さの厳しい屋外で手元を温めたい人に向く、屋外専用の貼れないカイロ。最高温度79℃、持続時間9時間というメーカー仕様があり、冬の屋外観戦を用途に挙げた候補でもある。高温タイプなので衣服に貼る用途とは分けて選べる。出典：https://www.irisohyama.co.jp/products/health-care/disposable-heating-pad/high-temperature-type/gekiatsu-family-outdoor-only-disposable-heating-pad/",
+      "sources": [
+        {
+          "brand": "Iris Ohyama",
+          "excerpt": "Iris Ohyama Disposable Heat-Resistant Family Warmer 30 Pieces, For Outdoor Use, Maximum 178°F (79°C), Lasts 9 Hours, Cold Protection, Disaster Preparedness, Snow Shoveling, Outdoor Work, Cold Regions, Leisure, Mountain Climbing, Fishing, Watching Sports, Winter, Cold Regions\nAbout this item\nSuitable for outdoor use on cold days and can be used outdoors with a temperature of about 50°F (10°C)\nClassic size that fits easily in your pocket. Soft and warm anywhere you like\nThe maximum temperature is about 50°F (10°C) higher than those that cannot be pasted. This is a heat warmer for outdoor use. (*Compared to our company)\nRecommended for those who want to keep warm during the cold months and those who don't have enough heat for regular warmers\nIn cold seasons where you don't want to go outside, we deliver warmers faster and less hassle, even for busy people › See more product details\nSize 30枚\nBrand Iris Ohyama\nColor Unknown\nMaterial Metal\nIncluded Components No\nVisit the アイリスオーヤマ(IRIS OHYAMA) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Iris Ohyama Disposable Heat-Resistant Family Warmer 30 Pieces, For Outdoor Use, Maximum 178°F (79°C), Lasts 9 Hours, Cold Protection, Disaster Preparedness, Snow Shoveling, Outdoor Work, Cold Regions, Leisure, Mountain Climbing, Fishing, Watching Sports, Winter, Cold Regions",
+          "url": "https://www.amazon.co.jp/dp/B0CP51CKVD?th=1",
+          "verified": true
+        }
+      ]
     },
     {
+      "amazon_title": "アイリスオーヤマ(IRIS OHYAMA) アイリスプラザ 使い捨てカイロ 貼る レギュラー 120枚 日本製",
+      "asin": "B09K43P5TW",
+      "brand": "ぽかぽか 家族",
+      "discovery_axis_id": "clothing_attached",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61UCQyGX8IL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B09K43P5TW",
+      "provisional": false,
+      "rating": 4.5,
       "ref": "p3",
-      "product_id": "AMZ-B09K43DP28",
-      "asin": "B09K43DP28",
-      "amazon_title": "アイリスオーヤマ 使い捨てカイロ 貼る 240枚 日本製 ぽかぽか家族",
-      "brand": "アイリスオーヤマ",
-      "image_url": "https://m.media-amazon.com/images/I/6195u9RmF4L._AC_SL1000_.jpg",
-      "observed_price": 5280,
-      "discovery_score": 1,
-      "selection_score": 0.52,
-      "matched_comparison_axes": [],
-      "search_key": "ぽかぽか家族 アイリスオーヤマ 使い捨てカイロ 貼る 240枚 日本製 ぽかぽ",
-      "selected_variant": {
-        "current_selection_text": "",
-        "overview": "サイズ 240枚 ブランド ぽかぽか家族 色 ホワイト 材質 金属 製品の推奨用途 衣類",
-        "selected_detail_fields": [
-          {
-            "field": "サイズ",
-            "value": "サイズ 240枚"
-          },
-          {
-            "field": "色",
-            "value": "色 ホワイト"
-          },
-          {
-            "field": "ユニット数",
-            "value": "ユニット数 240 枚"
-          },
-          {
-            "field": "サイズ",
-            "value": "サイズ 240枚"
-          }
-        ]
-      }
+      "review_count": 285,
+      "search_key": "ぽかぽか 家族 アイリスオーヤマ(IRIS OHYAMA) アイリスプラザ 使い",
+      "selection_reason": "腰や背中など、衣服の広い範囲に貼って観戦中の冷えに備えたい人向けのレギュラーサイズ。候補の商品説明は衣類に貼るタイプで、屋外レジャーやスポーツ観戦を用途に挙げ、温かさの持続を約12時間としている。出典：https://ymall.jp/store/luckycart/b09k43p5tw-20261003/",
+      "sources": [
+        {
+          "brand": "ぽかぽか 家族",
+          "excerpt": "Iris Ohyama Iris Plaza Disposable Warmers, Stickers, Regular, 120 Sheets, Made in Japan\nAbout this item\nStick on disposable heat warmer for about 12 hours\nRecommended for cold fingertips, lower back pain, stiff shoulders, etc\nIdeal for outdoor work, commuting to work or school, outdoor leisure, sporting events, etc\nThis is a regular size\nIn cold seasons where you don't want to go outside, we deliver warmers faster and less hassle, even for busy people › See more product details\nSize 120枚\nBrand ぽかぽか 家族\nColor white\nRecommended Uses For Product Clothing\nPower Source No electricity required\nBrand: ぽかぽか 家族",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Iris Ohyama Iris Plaza Disposable Warmers, Stickers, Regular, 120 Sheets, Made in Japan",
+          "url": "https://www.amazon.co.jp/dp/B09K43P5TW",
+          "verified": true
+        }
+      ]
     },
     {
+      "amazon_title": "使い捨てカイロ ミニ 貼るアイリスオーヤマ(IRIS OHYAMA) ぽかぽか家族 ちいさなまめカイロ 貼る 2枚組×7袋入り (× 2)",
+      "asin": "B0HJYB5263",
+      "brand": "Iris Ohyama",
+      "discovery_axis_id": "clothing_attached",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71x00gMgwJL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0HJYB5263",
+      "provisional": false,
+      "rating": 4.1,
       "ref": "p4",
-      "product_id": "AMZ-B0CHDX2J3L",
-      "asin": "B0CHDX2J3L",
-      "amazon_title": "【Amazon.co.jp限定】 命の母カイロ おなか用 【公式】 じんわり温まる 衣類に貼る 10個入×4個 冷え対策に (おまけ付き)",
-      "brand": "小林製薬",
-      "image_url": "https://m.media-amazon.com/images/I/81Jz7D8K0gL._AC_SL1500_.jpg",
-      "observed_price": 1629,
-      "discovery_score": 1,
-      "selection_score": 0.47,
-      "matched_comparison_axes": [
-        "heat"
-      ],
-      "search_key": "命の母カイロ おなか用 じんわり温まる 衣類に貼る 10個入×4個 冷え対策に",
-      "selected_variant": {
-        "current_selection_text": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. パターン名: じんわり温かい パターン名の選択ができます おすすめ出品がない0オプションを見る ← 1 →",
-        "overview": "サイズ 10個 (x 4) ブランド 命の母カイロ 色 ピンク 材質 カーボンファイバー 付属コンポーネント なし",
-        "selected_detail_fields": [
-          {
-            "field": "サイズ",
-            "value": "サイズ 10個 (x 4)"
-          },
-          {
-            "field": "色",
-            "value": "色 ピンク"
-          },
-          {
-            "field": "ユニット数",
-            "value": "ユニット数 4 個"
-          },
-          {
-            "field": "サイズ",
-            "value": "サイズ 10個 (x 4)"
-          }
-        ]
-      }
+      "review_count": 106,
+      "search_key": "Iris Ohyama 使い捨てカイロ ミニ 貼るアイリスオーヤマ(IRIS OHYAM",
+      "selection_reason": "衣服の腰や肩など、気になる狭い場所を狙って貼りたい人に向く。1枚約6×6cmの小さなカイロが2枚組で、切り離して使える点がこの商品の個性。メーカー公表の持続時間は5時間なので、観戦時間に合わせて選びたい。出典：https://www.irisohyama.co.jp/products/health-care/disposable-heating-pad/small-disposable-heating-pad/small-disposable-heating-pad",
+      "sources": [
+        {
+          "brand": "Iris Ohyama",
+          "excerpt": "Iris Ohyama Puka Family Chiisanamame Disposable Mini Sticky Iron Stickers, Set of 2 x 7 Bags (x2)\nAbout this item\nThe following information is per item\nEach piece is approx. 2.4 x 2.4 inches (6 x 6 cm), a small palm-sized hand warmer\nComes in a pair per bag\nTear along the perforations to separate\nYou can precisely warm areas of concern such as the waist and shoulders › See more product details\nSize 7枚 (× 2)\nBrand Iris Ohyama\nColor Bame Kylo\nMaterial Metal\nNumber of Items 2\nVisit the アイリスオーヤマ(IRIS OHYAMA) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Iris Ohyama Puka Family Chiisanamame Disposable Mini Sticky Iron Stickers, Set of 2 x 7 Bags (x2)",
+          "url": "https://www.amazon.co.jp/dp/B0HJYB5263?th=1",
+          "verified": true
+        }
+      ]
     },
     {
+      "amazon_title": "オンパックス [Amazon.co.jp 限定] くつ下用 貼る カイロ 黒 20足入 エコパッケージ [日本製/9時間持続] 靴 靴下 足 貼るカイロ R",
+      "asin": "B0CDGSX97T",
+      "brand": "オンパックス",
+      "discovery_axis_id": "foot_warmers",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81bgGEd7oFL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0CDGSX97T",
+      "provisional": false,
+      "rating": 4.2,
       "ref": "p5",
-      "product_id": "AMZ-B0CLGWXKGC",
-      "asin": "B0CLGWXKGC",
-      "amazon_title": "オンパックス 貼る カイロ ミニ 10個入 [日本製/持続時間約10時間] はるオンパックス 貼るカイロ R",
-      "brand": "エステー",
-      "image_url": "https://m.media-amazon.com/images/I/71MzFAlpu+L._AC_SL1500_.jpg",
-      "observed_price": 950,
-      "discovery_score": 1,
-      "selection_score": 0.47,
-      "matched_comparison_axes": [],
-      "search_key": "ぽかぽか家族 アイリスオーヤマ 使い捨て低温カイロ ミニ 貼る 30枚 日本製",
-      "selected_variant": {
-        "type": "貼るミニ",
-        "pack_count": 1,
-        "pieces_per_pack": 10,
-        "selected_type": "新タイプ",
-        "duration": "約10時間"
-      }
+      "review_count": 412,
+      "search_key": "オンパックス くつ下用 貼る カイロ 黒 20足入 エコパッケージ 靴 靴下",
+      "selection_reason": "立って観戦する間、特につま先が冷える人向け。黒い靴下のつま先部分に貼る黒色の足用カイロで、靴下になじむ色と、めくれてずれにくいよう角を丸くした形状に特徴がある。メーカー公表の持続時間は靴の中での使用を想定した9時間で、必ず靴の中で使う製品。出典：https://onpax.st-c.co.jp/lineup/",
+      "sources": [
+        {
+          "brand": "オンパックス",
+          "excerpt": "Onpax [Amazon.co.jp Exclusive] Sock-Adhesive Warmers, Black, 20 pairs, Eco Package, (Made in Japan / 9-hour duration) Shoes, Socks, Feet, Adhesive Warmers R\nAbout this item\n【Thin, does not shift, warms firmly】Simply stick it on the toe of your sock, and it firmly warms your feet\n【Choose according to the color of your socks】Available in two colors: white and black\nSuppresses odors inside shoes with deodorizing effect\n【Uses】Disposable hand warmer specifically for shoes (adhesive type for under the foot)\n【Specs】Maximum temperature: 109.4 °F (43°C); Average temperature: 96.8°F (36°C); Duration: 9 hours (Tested for use in shoes)\nCountry of Origin: Japan\nContents: 20 pairs (15 pairs + 5 pairs)\nSize: 3.7 x 2.8 inches (9.5 x 7 cm) › See more product details\nSize 20足(エコパッケージ)\nBrand オンパックス\nColor Black\nMaterial Metal\nIncluded Components No\nVisit the オンパックス Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Onpax [Amazon.co.jp Exclusive] Sock-Adhesive Warmers, Black, 20 pairs, Eco Package, (Made in Japan / 9-hour duration) Shoes, Socks, Feet, Adhesive Warmers R",
+          "url": "https://www.amazon.co.jp/dp/B0CDGSX97T?th=1",
+          "verified": true
+        }
+      ]
     },
     {
-      "ref": "p6",
-      "product_id": "AMZ-B005JZ81B6",
-      "asin": "B005JZ81B6",
-      "amazon_title": "ホカロン 貼るカイロ 10個入",
-      "brand": "ロッテ",
-      "image_url": "https://m.media-amazon.com/images/I/71F0UnsdNdL._AC_SL1500_.jpg",
-      "observed_price": 748,
+      "amazon_title": "［１０個セット］オンパックス 足ぽかシート 8時間 25cm　３足入り×１０個",
+      "asin": "B077LM8JH5",
+      "brand": "",
+      "discovery_axis_id": "foot_warmers",
       "discovery_score": 1,
-      "selection_score": 0.47,
-      "matched_comparison_axes": [],
-      "search_key": "久光製薬 温熱シート じかばり 直貼 肩・首用 12枚入 コリ 痛みに 温",
-      "selected_variant": {
-        "current_selection_text": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. 商品荷物数: 1",
-        "overview": "サイズ 215x125x48mm ブランド ロッテ 色 ナチュラル 材質 不織布 付属コンポーネント なし",
-        "selected_detail_fields": [
+      "image_url": "https://m.media-amazon.com/images/I/814STcbN9WL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B077LM8JH5",
+      "provisional": true,
+      "rating": 4.4,
+      "ref": "p6",
+      "review_count": 247,
+      "search_key": "［１０個セット］オンパックス 足ぽかシート 8時間 25cm ３",
+      "selection_reason": "つま先を含む足裏全体の冷えが気になる人に向く、靴の中に入れるシートタイプ。足に合わせた左右別形状の薄いシートが足裏全体を覆い、メーカー公表の持続時間は靴の中での使用を想定した8時間。候補の25cmタイプは靴のサイズ24～27cmが目安なので、靴のサイズを確認して選べる。出典：https://onpax.st-c.co.jp/lineup/",
+      "sources": []
+    }
+  ],
+  "selection": {
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
           {
-            "field": "サイズ",
-            "value": "サイズ 215x125x48mm"
+            "asin": "B01L13Z09U",
+            "reason": "手元の冷えに備える定番の貼れないレギュラータイプ。ポケットに入れておき、観戦中に必要なとき手を温めたい人に向く。メーカー公表の持続時間は16時間で、長い外出を想定しやすい。出典：https://www.irisohyama.co.jp/products/health-care/disposable-heating-pad/not-stick-regular-type/pokapoka-family-regular"
           },
           {
-            "field": "色",
-            "value": "色 ナチュラル"
+            "asin": "B0CP51CKVD",
+            "reason": "寒さの厳しい屋外で手元を温めたい人に向く、屋外専用の貼れないカイロ。最高温度79℃、持続時間9時間というメーカー仕様があり、冬の屋外観戦を用途に挙げた候補でもある。高温タイプなので衣服に貼る用途とは分けて選べる。出典：https://www.irisohyama.co.jp/products/health-care/disposable-heating-pad/high-temperature-type/gekiatsu-family-outdoor-only-disposable-heating-pad/"
+          }
+        ]
+      },
+      {
+        "axis_id": "clothing_attached",
+        "products": [
+          {
+            "asin": "B09K43P5TW",
+            "reason": "腰や背中など、衣服の広い範囲に貼って観戦中の冷えに備えたい人向けのレギュラーサイズ。候補の商品説明は衣類に貼るタイプで、屋外レジャーやスポーツ観戦を用途に挙げ、温かさの持続を約12時間としている。出典：https://ymall.jp/store/luckycart/b09k43p5tw-20261003/"
           },
           {
-            "field": "ユニット数",
-            "value": "ユニット数 1 個"
+            "asin": "B0HJYB5263",
+            "reason": "衣服の腰や肩など、気になる狭い場所を狙って貼りたい人に向く。1枚約6×6cmの小さなカイロが2枚組で、切り離して使える点がこの商品の個性。メーカー公表の持続時間は5時間なので、観戦時間に合わせて選びたい。出典：https://www.irisohyama.co.jp/products/health-care/disposable-heating-pad/small-disposable-heating-pad/small-disposable-heating-pad"
+          }
+        ]
+      },
+      {
+        "axis_id": "foot_warmers",
+        "products": [
+          {
+            "asin": "B0CDGSX97T",
+            "reason": "立って観戦する間、特につま先が冷える人向け。黒い靴下のつま先部分に貼る黒色の足用カイロで、靴下になじむ色と、めくれてずれにくいよう角を丸くした形状に特徴がある。メーカー公表の持続時間は靴の中での使用を想定した9時間で、必ず靴の中で使う製品。出典：https://onpax.st-c.co.jp/lineup/"
           },
           {
-            "field": "サイズ",
-            "value": "サイズ 215x125x48mm"
+            "asin": "B077LM8JH5",
+            "reason": "つま先を含む足裏全体の冷えが気になる人に向く、靴の中に入れるシートタイプ。足に合わせた左右別形状の薄いシートが足裏全体を覆い、メーカー公表の持続時間は靴の中での使用を想定した8時間。候補の25cmタイプは靴のサイズ24～27cmが目安なので、靴のサイズを確認して選べる。出典：https://onpax.st-c.co.jp/lineup/"
           }
         ]
       }
-    }
-  ]
+    ],
+    "brand_count": 3,
+    "candidate_count": 28,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [],
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": []
+  },
+  "slug": "disposable-hand-warmers-6-picks"
 }
