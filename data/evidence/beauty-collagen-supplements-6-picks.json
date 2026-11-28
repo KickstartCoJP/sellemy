@@ -1,162 +1,313 @@
 {
-  "slug": "beauty-collagen-supplements-6-picks",
-  "category": "beauty",
-  "canonical_url": "https://www.sellemy.jp/article/beauty/beauty-collagen-supplements-6-picks.html",
-  "eyecatch_image": "https://www.sellemy.jp/img/beauty-collagen-supplements-6-picks/beauty-collagen-supplements-6-picks.png",
   "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/beauty-collagen-supplements-6-picks.html",
+  "category": "beauty",
   "comparison_axes": [
     {
-      "id": "ingredients",
-      "label": "配合成分",
+      "id": "popular",
       "keywords": [
-        "コラーゲン",
-        "プラセンタ",
-        "ビタミンC"
-      ]
+        "人気"
+      ],
+      "label": "人気・定番の基準"
     },
     {
-      "id": "format",
-      "label": "剤形",
+      "id": "portable_powder",
       "keywords": [
-        "ドリンク",
-        "粒",
-        "パウダー"
-      ]
+        "個包装",
+        "スティック粉末",
+        "飲み物に混ぜる"
+      ],
+      "label": "飲み物に混ぜて摂る個包装の粉末"
     },
     {
-      "id": "continuity",
-      "label": "続けやすさ",
+      "id": "ready_to_eat_jelly",
       "keywords": [
-        "価格",
-        "コスパ",
-        "1日あたり"
-      ]
-    },
-    {
-      "id": "taste",
-      "label": "味・飲みやすさ",
-      "keywords": [
-        "味",
-        "香り",
-        "飲みやすさ"
-      ]
+        "ゼリータイプ",
+        "個包装",
+        "そのまま摂れる"
+      ],
+      "label": "開封してそのまま摂れるゼリー"
     }
   ],
-  "selection": {
-    "comparison_axes_covered": [
-      "format",
-      "ingredients",
-      "taste"
-    ],
-    "brand_count": 0,
-    "price_used_as_constraint_only": true
+  "eyecatch_image": "https://www.sellemy.jp/img/beauty-collagen-supplements-6-picks/beauty-collagen-supplements-6-picks.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "df0d50ae127db69bf012266acf3d941094369a5bf31de7d30aff9bb67fa01d2a",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 24914,
+      "listing_identity_citations_repaired": [
+        "p3",
+        "p4",
+        "p6"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 1866,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 1009,
+      "session_id": "01a219c9-ab40-7852-b72f-b3b6dac12ffb",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "DHC コラーゲン",
+          "identity_quote": "",
+          "reason": "掲載名からDHCの粒タイプのコラーゲンサプリと識別できる。粒タイプの選択肢として紹介可能。詳細な成分量は、この商品に添付された検証済み資料では確認できない。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "Pellets"
+            }
+          ],
+          "identity_key": "ディアナチュラスタイル コラーゲン",
+          "identity_quote": "Dear-Natura Style Collagen, 360 Count (60 Day Supply)",
+          "reason": "検証済みの商品掲載情報に粒形状と360粒入りの記載がある。p1とはブランドと商品系列が異なる粒タイプの候補。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "ファンケル FANCL ディープチャージ コラーゲン パウダー 30日分(30本入) [機能性表示食品] (ビタミンC/うるおい) 個包装",
+          "identity_quote": "ファンケル FANCL ディープチャージ コラーゲン パウダー 30日分(30本入) [機能性表示食品] (ビタミンC/うるおい) 個包装",
+          "reason": "掲載名からファンケルの個包装コラーゲン粉末と識別でき、粉末の紹介切り口に合う。配合量や機能性は、この商品に添付された検証済み資料では確認できない。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "portable_powder",
+              "quote": "【Easy to Incorporate with No Taste or Smell - Individually Packaged Powder Type】"
+            }
+          ],
+          "identity_key": "[ KARADA BIKEN (からだ美健ヘルスケア) ] Wコラーゲンペプチド100 PREMIUM [ 120,000mg配合 個包装4,000mg×30袋（30日分）]【 日",
+          "identity_quote": "[ KARADA BIKEN (からだ美健ヘルスケア) ] Wコラーゲンペプチド100 PREMIUM [ 120,000mg配合 個包装4,000mg×30袋（30日分）]【 日々の食卓に1袋 大量 コラーゲン チャージ 】国産 完全無添加 粉末 低分子 フィッシュ 豚 パウダー",
+          "reason": "検証済みの商品掲載情報から個包装の粉末と確認できる。p3とは別の商品系列。掲載文の吸収率や美容効果の宣伝表現は、実証済みの性能として扱えない。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "アース製薬 1ヵ月もっちりうるおうコラーゲンCゼリー",
+          "identity_quote": "",
+          "reason": "掲載名からアース製薬のスティック入りコラーゲンゼリーと識別でき、ゼリーの紹介切り口に合う。詳細な成分は、この商品に添付された検証済み資料では確認できない。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "日本新薬 コラーゲンゼリー 30本(約30日分) [栄養機能食品] ヒアルロン酸 ビオチン ロダンテノンB 配合 創立100年製薬会社が開発したコラーゲンゼリー「マンゴスティア 美",
+          "identity_quote": "日本新薬 コラーゲンゼリー 30本(約30日分) [栄養機能食品] ヒアルロン酸 ビオチン ロダンテノンB 配合 創立100年製薬会社が開発したコラーゲンゼリー「マンゴスティア 美のダイヤモンドゼリー」 …",
+          "reason": "掲載名から日本新薬のコラーゲンゼリーと識別でき、ゼリーの紹介切り口に合う。p5とはメーカーと商品系列が異なる。具体的な成分の主張は、この商品に添付された検証済み資料では確認できない。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "掲載名と検証済みの商品情報から、6商品はそれぞれ識別できる。粒、個包装の粉末、ゼリーの3つの紹介切り口に各2商品が適合し、明白な重複や対象外の商品はない。記事は未提出のため、記事固有の項目はfalseとした。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
   },
   "products": [
     {
+      "amazon_title": "DHC コラーゲン 30日分 (180粒)",
+      "asin": "B0177IZ7OQ",
+      "brand": "",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81X6rBYfIYL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0177IZ7OQ",
+      "provisional": true,
+      "rating": 4.3,
       "ref": "p1",
-      "product_id": "AMZ-B014CAWENY",
-      "asin": "B014CAWENY",
-      "amazon_title": "DHC コラーゲン 徳用90日分",
-      "brand": "DHC",
-      "image_url": "https://m.media-amazon.com/images/I/61Vxtb55yXL._AC_SL1000_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.865,
-      "matched_comparison_axes": [
-        "format",
-        "ingredients",
-        "taste"
-      ],
-      "search_key": "新田ゼラチン ハピコラサプリ (180粒 / ブルーベリーの香り",
-      "model": "コラーゲン 徳用90日分 / JAN4511413403990",
-      "selected_variant": "540粒・1袋"
+      "review_count": 4142,
+      "search_key": "DHC コラーゲン 30日分 (180粒)",
+      "selection_reason": "魚由来のコラーゲンペプチドを1日目安の6粒に2050mg配合し、ビタミンB1・B2も含む定番の粒タイプ。職場では水かぬるま湯を用意して飲む形なので、飲み物に粉を混ぜる習慣がない人に向く。DHC公式：https://www.dhc.co.jp/goods/32166.html",
+      "sources": []
     },
     {
+      "amazon_title": "ディアナチュラスタイル コラーゲン 360粒 (60日分) アサヒ サプリ Dear-Natura 国内工場で生産 パウチ",
+      "asin": "B007BJAY6I",
+      "brand": "ディアナチュラ",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71DWN5e+biL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B007BJAY6I",
+      "provisional": false,
+      "rating": 4.2,
       "ref": "p2",
-      "product_id": "AMZ-B08WLKKDS7",
-      "asin": "B08WLKKDS7",
-      "amazon_title": "ファンケル ディープチャージ コラーゲン",
-      "brand": "ファンケル",
-      "image_url": "https://m.media-amazon.com/images/I/61rZfEDO48L._AC_SL1200_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.325,
-      "matched_comparison_axes": [
-        "ingredients"
-      ],
-      "search_key": "5大成分＋ビタミン8種類ミネラル成分(60日分)特許成分 金のプ",
-      "model": "5935 / 機能性表示食品G164",
-      "selected_variant": "30日分180粒・1袋"
+      "review_count": 1289,
+      "search_key": "ディアナチュラ スタイル コラーゲン 360粒 (60日分) アサヒ サプリ D",
+      "selection_reason": "低分子コラーゲンにビタミンC・B1・B2・B6を組み合わせた、60日分360粒のパウチ入り。職場にも持つなら1日目安の6粒を取り分け、水とともに摂る使い方が考えられる。粒を日々の習慣にしたい人が、補える成分と持ち歩き方を具体的に確認できる定番候補。アサヒグループ食品公式：https://www.dear-natura.com/product/detail/collagen-pouch",
+      "sources": [
+        {
+          "brand": "ディアナチュラ",
+          "excerpt": "Dear-Natura Style Collagen, 360 Count (60 Day Supply) Asahi Supplement Produced in a Domestic Factory Pouch\nAbout this item\nDear-Natura Style\npouch\nPellets\nWhen using the product, please be sure to check the label on the product you have before using it\nDue to product renewal, you may receive a product with a different package Please note › See more product details\nBrand ディアナチュラ\nFlavor Single Item\nPrimary Supplement Type Collagen\nUnit Count 360 粒\nItem Form Brand New\nItem Weight 151 Grams\nAge Range (Description) Adult\nPackage Information Bag\nServings per Container 60.0\nMaterial Feature No Artificial Colors See more\nVisit the ディアナチュラ Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Dear-Natura Style Collagen, 360 Count (60 Day Supply) Asahi Supplement Produced in a Domestic Factory Pouch",
+          "url": "https://www.amazon.co.jp/dp/B007BJAY6I",
+          "verified": true
+        }
+      ]
     },
     {
+      "amazon_title": "ファンケル FANCL ディープチャージ コラーゲン パウダー 30日分(30本入) [機能性表示食品] (ビタミンC/うるおい) 個包装",
+      "asin": "B08WLKCW95",
+      "brand": "",
+      "discovery_axis_id": "portable_powder",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71vDMUuonNL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B08WLKCW95",
+      "provisional": true,
+      "rating": 4.2,
       "ref": "p3",
-      "product_id": "AMZ-B07NPSLX52",
-      "asin": "B07NPSLX52",
-      "amazon_title": "明治 アミノコラーゲン プレミアム",
-      "brand": "明治",
-      "image_url": "https://m.media-amazon.com/images/I/71N9DVV8qLL._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.325,
-      "matched_comparison_axes": [
-        "ingredients"
-      ],
-      "search_key": "50倍濃縮プラセンタ13500mg +４大美容成分 ピュアセラム",
-      "model": "アミノコラーゲンプレミアム98g / JAN4902777302768",
-      "selected_variant": "98g・約14日分・1袋"
+      "review_count": 154,
+      "search_key": "ファンケル FANCL ディープチャージ コラーゲン パウダー",
+      "selection_reason": "3.4gずつの個包装で、1日1本が目安。ファンケルはコラーゲンペプチド3000mgとビタミンC100mgを1本当たりの量として示し、コーヒー・緑茶・スープなどに混ぜる摂り方を案内している。職場でいつもの飲み物や昼食の汁物を使いたい人に合う。ファンケル公式：https://www.fancl.co.jp/healthy/item/5937a/",
+      "sources": []
     },
     {
+      "amazon_title": "[ KARADA BIKEN (からだ美健ヘルスケア) ] Wコラーゲンペプチド100 PREMIUM [ 120,000mg配合 個包装4,000mg×30袋（30日分）]【 日々の食卓に1袋 大量 コラーゲン チャージ 】国産 完全無添加 粉末 低分子 フィッシュ 豚 パウダー",
+      "asin": "B07TYWV4NM",
+      "brand": "ASUWELL",
+      "discovery_axis_id": "portable_powder",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/8198K7rI8-L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B07TYWV4NM",
+      "provisional": false,
+      "rating": 4.2,
       "ref": "p4",
-      "product_id": "AMZ-B0DRP4MP67",
-      "asin": "B0DRP4MP67",
-      "amazon_title": "資生堂 ザ・コラーゲン〈パウダー〉",
-      "brand": "資生堂",
-      "image_url": "https://m.media-amazon.com/images/I/61rCS8hTRaL._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.325,
-      "matched_comparison_axes": [
-        "format",
-        "ingredients"
-      ],
-      "search_key": "日本製 サプリ レチノール（ビタミンA） ナイアシンアミド グル",
-      "model": "H61601",
-      "selected_variant": "126g・1袋・2025年発売品"
+      "review_count": 136,
+      "search_key": "ASUWELL Wコラーゲンペプチド100 PREMIUM 国産 完全無添加 粉",
+      "selection_reason": "豚と魚のコラーゲンペプチドを原材料とし、4gずつ30袋に分けた粉末。1袋だけ鞄に入れ、外出先で用意できる飲み物に混ぜたい人に向く。2種類の原料を組み合わせた個性と、1回分を取り出せる包装を販売元の商品情報で確認できる。アスウェル販売ページ：https://store.shopping.yahoo.co.jp/asuwell/asu-017.html",
+      "sources": [
+        {
+          "brand": "ASUWELL",
+          "excerpt": "KARADA BIKEN Double Collagen Peptide 100 Premium (120,000 mg Formula, Individual Packaging, 4,000 mg x 30 Bags (30 Day Supply), 1 Bag for Daily Tables, Large Collagen Charge, Made in Japan, Completely Additive-Free, Powder, Low Molecules Fish Pig Paw Dr\nAbout this item\n【High-quality collagen can be ingested immediately and in large quantities with \"W Collagen Peptides\"】KARADA BIKEN (Body Beauty Healthcare) Original powdered collagen peptides, \"W Collagen Peptides 100 PREMIUM\". This product, which contains a double blend of 100% pure fish-derived collagen peptides (fish collagen peptides) and pig-derived collagen peptides, allows you to intake 120,000 mg of high-quality collagen per box. (1 bag 4000 mg x 30 bags)\n【The absorption rate into the body has significantly increased with powdered collagen peptides】This product uses 100% ultra-low molecular collagen peptides, which are much smaller molecules than typical collagen products or supplements, resulting in a significant UP in the absorption rate into the body! For those concerned with moisture and skin texture, this powder type drinkable collagen can provide immediate approach in just one bag\n[Double Collagen Peptides from Pork and Fish] Luxuriously formulated with two types of collagen peptides: collagen peptides from pork and fish collagen peptides from fish. By leveraging the unique properties of each, we have achieved ultra-low molecular weight. Compared to products with only one type of collagen, our product has a higher collagen content, which is efficiently absorbed for better results in supporting beauty\n【Easy to Incorporate with No Taste or Smell - Individually Packaged Powder Type】This product is a tasteless, odorless powder collagen peptide that does not contain any coloring agents, preservatives, fragrances, sweeteners, or preservatives. Since it has almost no collagen-specific flavor, it will not affect the taste when mixed with your favorite beverages or dishes. Additionally, because it is individually packaged, it is easy to carry around and can be conveniently used in offices or restaurants\n【Easy Even During Weight Loss - Zero Sugar, Fat, and Carbohydrates】Designed to be easy for health-conscious individuals, this product contains 15kcal per bag with zero sugar, fat, and carbohydrates. Made from pure domestic collagen powder, it is suitable for nighttime consumption or use during weight loss\n【Absolutely no unnecessary additives! Completely additive-free】 ASUWELL W Collagen Peptide 100 PREMIUM is 100% pure, low molecular weight collagen powder with no additives such as colorants, preservatives, flavorings, sweeteners, or preservatives, ensuring safety and peace of mind › See more product details\nBrand ASUWELL\nFlavor Unflavored\nUnit Count 30.0 袋\nItem Form Powder\nItem Weight 0.21 Kilograms\nAge Range (Description) Adult\nNumber of Items 30\nMaterial Feature Plant Derived\nManufacturer ASUWELL(アスウェル) See more\nVisit the ASUWELL(アスウェル) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "KARADA BIKEN Double Collagen Peptide 100 Premium (120,000 mg Formula, Individual Packaging, 4,000 mg x 30 Bags (30 Day Supply), 1 Bag for Daily Tables, Large Collagen Charge, Made in Japan, Completely Additive-Free, Powder, Low Molecules Fish Pig Paw Dr",
+          "url": "https://www.amazon.co.jp/dp/B07TYWV4NM",
+          "verified": true
+        }
+      ]
     },
     {
+      "amazon_title": "アース製薬 1ヵ月もっちりうるおうコラーゲンCゼリー アサイー・ベリー味 10gx31本",
+      "asin": "B074X1N1TP",
+      "brand": "",
+      "discovery_axis_id": "ready_to_eat_jelly",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/713+UI2gekL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B074X1N1TP",
+      "provisional": true,
+      "rating": 4.2,
       "ref": "p5",
-      "product_id": "AMZ-B0DT5B6KS3",
-      "asin": "B0DT5B6KS3",
-      "amazon_title": "アース製薬 コラーゲンCゼリー ピーチ味",
-      "brand": "アース製薬",
-      "image_url": "https://m.media-amazon.com/images/I/61Mb1pi4dhL._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.325,
-      "matched_comparison_axes": [
-        "format",
-        "ingredients"
-      ],
-      "search_key": "ナンバーサプリ21 プラセンタ サプリ 1袋に50倍濃縮 450",
-      "model": "コラーゲンCゼリー ピーチ味34本入",
-      "selected_variant": "10g×34本・ピーチ/ライチ果汁22%・1箱"
+      "review_count": 2008,
+      "search_key": "アース製薬 1ヵ月もっちりうるおうコラーゲンCゼリー アサイー",
+      "selection_reason": "アサイー・ベリー味の10gスティックが31本入り。ブルーベリー、カシス、アサイーの果汁を含み、魚由来コラーゲンペプチドなど7つの成分を配合する。1日1本が目安なので、飲み物を用意しにくい外出先で、休憩中に開封してゼリーを摂りたい人に合う。アース製薬公式：https://www.earth.jp/products/collagen-c-jelly-31-berry/index.html",
+      "sources": []
     },
     {
-      "ref": "p6",
-      "product_id": "AMZ-B0CSK1NLH6",
-      "asin": "B0CSK1NLH6",
-      "amazon_title": "新田ゼラチン コラゲネイド ビタミンゼリー 柚子レモン味",
-      "brand": "新田ゼラチン",
-      "image_url": "https://m.media-amazon.com/images/I/61-ecHoC+1L._AC_SL1500_.jpg",
-      "observed_price": null,
+      "amazon_title": "日本新薬 コラーゲンゼリー 30本(約30日分) [栄養機能食品] ヒアルロン酸 ビオチン ロダンテノンB 配合 創立100年製薬会社が開発したコラーゲンゼリー「マンゴスティア 美のダイヤモンドゼリー」 …",
+      "asin": "B07ZS8DSWF",
+      "brand": "",
+      "discovery_axis_id": "ready_to_eat_jelly",
       "discovery_score": 1,
-      "selection_score": 0.325,
-      "matched_comparison_axes": [
-        "ingredients"
-      ],
-      "search_key": "MyWellsy NMN サプリメント サプリ 日本製 30日分",
-      "model": "101012",
-      "selected_variant": "20g×15本・1箱"
+      "image_url": "https://m.media-amazon.com/images/I/71RaX+t5JxL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B07ZS8DSWF",
+      "provisional": true,
+      "rating": 4.3,
+      "ref": "p6",
+      "review_count": 143,
+      "search_key": "日本新薬 コラーゲンゼリー 30本(約30日分) ヒアルロン酸",
+      "selection_reason": "甘酸っぱいベリー風味の10gスティックゼリーが30本入り。コラーゲンペプチドに加え、マンゴスチン由来ロダンテノンB、ヒアルロン酸、ビオチンを含む。1日1本が目安で、職場の引き出しや鞄に1本を備え、飲み物なしで摂りたい人に向く。日本新薬公式ショップ：https://www.nippon-shinyaku-shop.com/shop/products/4113_03",
+      "sources": []
     }
-  ]
+  ],
+  "selection": {
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B0177IZ7OQ",
+            "reason": "魚由来のコラーゲンペプチドを1日目安の6粒に2050mg配合し、ビタミンB1・B2も含む定番の粒タイプ。職場では水かぬるま湯を用意して飲む形なので、飲み物に粉を混ぜる習慣がない人に向く。DHC公式：https://www.dhc.co.jp/goods/32166.html"
+          },
+          {
+            "asin": "B007BJAY6I",
+            "reason": "低分子コラーゲンにビタミンC・B1・B2・B6を組み合わせた、60日分360粒のパウチ入り。職場にも持つなら1日目安の6粒を取り分け、水とともに摂る使い方が考えられる。粒を日々の習慣にしたい人が、補える成分と持ち歩き方を具体的に確認できる定番候補。アサヒグループ食品公式：https://www.dear-natura.com/product/detail/collagen-pouch"
+          }
+        ]
+      },
+      {
+        "axis_id": "portable_powder",
+        "products": [
+          {
+            "asin": "B08WLKCW95",
+            "reason": "3.4gずつの個包装で、1日1本が目安。ファンケルはコラーゲンペプチド3000mgとビタミンC100mgを1本当たりの量として示し、コーヒー・緑茶・スープなどに混ぜる摂り方を案内している。職場でいつもの飲み物や昼食の汁物を使いたい人に合う。ファンケル公式：https://www.fancl.co.jp/healthy/item/5937a/"
+          },
+          {
+            "asin": "B07TYWV4NM",
+            "reason": "豚と魚のコラーゲンペプチドを原材料とし、4gずつ30袋に分けた粉末。1袋だけ鞄に入れ、外出先で用意できる飲み物に混ぜたい人に向く。2種類の原料を組み合わせた個性と、1回分を取り出せる包装を販売元の商品情報で確認できる。アスウェル販売ページ：https://store.shopping.yahoo.co.jp/asuwell/asu-017.html"
+          }
+        ]
+      },
+      {
+        "axis_id": "ready_to_eat_jelly",
+        "products": [
+          {
+            "asin": "B074X1N1TP",
+            "reason": "アサイー・ベリー味の10gスティックが31本入り。ブルーベリー、カシス、アサイーの果汁を含み、魚由来コラーゲンペプチドなど7つの成分を配合する。1日1本が目安なので、飲み物を用意しにくい外出先で、休憩中に開封してゼリーを摂りたい人に合う。アース製薬公式：https://www.earth.jp/products/collagen-c-jelly-31-berry/index.html"
+          },
+          {
+            "asin": "B07ZS8DSWF",
+            "reason": "甘酸っぱいベリー風味の10gスティックゼリーが30本入り。コラーゲンペプチドに加え、マンゴスチン由来ロダンテノンB、ヒアルロン酸、ビオチンを含む。1日1本が目安で、職場の引き出しや鞄に1本を備え、飲み物なしで摂りたい人に向く。日本新薬公式ショップ：https://www.nippon-shinyaku-shop.com/shop/products/4113_03"
+          }
+        ]
+      }
+    ],
+    "brand_count": 2,
+    "candidate_count": 30,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [],
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": []
+  },
+  "slug": "beauty-collagen-supplements-6-picks"
 }
