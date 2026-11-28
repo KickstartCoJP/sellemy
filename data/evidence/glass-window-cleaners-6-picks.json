@@ -1,178 +1,379 @@
 {
-  "slug": "glass-window-cleaners-6-picks",
-  "category": "dailygoods",
-  "canonical_url": "https://www.sellemy.jp/article/dailygoods/glass-window-cleaners-6-picks.html",
-  "eyecatch_image": "https://www.sellemy.jp/img/glass-window-cleaners-6-picks/glass-window-cleaners-6-picks.png",
   "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/glass-window-cleaners-6-picks.html",
+  "category": "dailygoods",
   "comparison_axes": [
     {
-      "id": "cleaning_power",
-      "label": "洗浄力",
+      "id": "popular",
       "keywords": [
-        "皮脂汚れ",
-        "水垢",
-        "手垢"
+        "人気"
+      ],
+      "label": "人気・定番の基準"
+    },
+    {
+      "id": "indoor_fingerprints",
+      "keywords": [
+        "室内窓",
+        "手あか",
+        "部分掃除",
+        "拭き取り"
+      ],
+      "label": "室内窓の手あかをこまめに拭く"
+    },
+    {
+      "id": "outdoor_rain_streaks",
+      "keywords": [
+        "外窓",
+        "雨筋",
+        "土ぼこり",
+        "広い面"
+      ],
+      "label": "外窓の雨筋や土ぼこりをまとめて掃除する"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/glass-window-cleaners-6-picks/glass-window-cleaners-6-picks.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "fa17ee9bcf60e4fa2f006b4a9b343cef6234e1837af9f3b6559ef5f791d2ab40",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 25594,
+      "member_binding_revision": 4,
+      "output_tokens": 1555,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 562,
+      "session_id": "01a21dc5-6a3e-7963-87f5-b53a8728dcc5",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "Scrubbing Bubbles Detergent Glass Cleaner, Liquid Type",
+          "identity_quote": "Scrubbing Bubbles Detergent Glass Cleaner, Liquid Type, 1 Bottle + 2 Refills",
+          "reason": "検証済み掲載情報に本体と詰め替えを含む液体ガラスクリーナーとして記載され、窓や鏡を日常的に拭く用途で紹介できる。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "Kao Glass Magicrin",
+          "identity_quote": "Kao Glass Magicrin, 1.2 gal (4.5 L), Commercial Use, Glass Cleaner",
+          "reason": "検証済み掲載情報に4.5Lの業務用ガラスクリーナーとして記載され、窓ガラスを継続的に掃除する用途で紹介できる。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "indoor_fingerprints",
+              "quote": "Simply spray and wipe away stubborn dirt and fingerprints from the glass"
+            }
+          ],
+          "identity_key": "Prostaff A-74 Monster Glass Finish",
+          "identity_quote": "Prostaff A-74 Monster Glass Finish, Glass Cleaner, 23.7 fl oz (700 ml)",
+          "reason": "A-74の液体ガラスクリーナーとして識別できる。掲載情報は指紋汚れをスプレーして拭く用途を示している。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "indoor_fingerprints",
+              "quote": "Prostaff A-83 Inner Window Wet Cloth, Kirobin Pure Microfiber, Pack of 12, Remove Hand Resin, Stain"
+            }
+          ],
+          "identity_key": "Prostaff A-83 Inner Window Wet Cloth, Kirobin Pure Microfiber",
+          "identity_quote": "Prostaff A-83 Inner Window Wet Cloth, Kirobin Pure Microfiber, Pack of 12",
+          "reason": "A-83の内窓用シートとして識別でき、室内窓の手あかを拭く切り口に合う。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "outdoor_rain_streaks",
+              "quote": "Convenient Window Cleaning Set: 1 x 35cm wide squeegee + 1 x microfiber washer"
+            }
+          ],
+          "identity_key": "MR.SIGA Professional Window Cleaning Set",
+          "identity_quote": "MR.SIGA Professional Window Cleaning Set - Window Glass Cleaning Squeegee",
+          "reason": "スクイージーとマイクロファイバーウォッシャーを含む窓清掃セットとして識別でき、広いガラス面を洗って水を切る用途で紹介できる。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "outdoor_rain_streaks",
+              "quote": "removes films, smoke and dirt from your vehicle's windshield"
+            }
+          ],
+          "identity_key": "P&S True Vue Glass Cleaner",
+          "identity_quote": "P&S True Vue Glass Cleaner True View Glass Cleaner 16oz D150P",
+          "reason": "D150Pの車窓向けガラスクリーナーとして識別でき、外側の車窓に付く汚れを拭く用途で紹介できる。雨筋そのものへの効果は掲載情報からは確認できない。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "検証済みの商品掲載情報の原文に、6商品の名称・型番または形態をそれぞれ確認できる。窓ガラスの清掃という企画に沿い、各商品を割り当てられた紹介切り口で紹介できる。p3とp4は同一ブランドだが、A-74の液体クリーナーとA-83の内窓用シートとして識別できる。記事本文は未提出のため、記事に関する判定項目は評価対象外。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
+  "products": [
+    {
+      "amazon_title": "スクラビングバブル (Scrubbing Bubbles) 洗剤 ガラスクリーナー 液体タイプ 本体1本+詰め替え用2個セット 500ml+400ml×2個 鏡 窓 汚れ落とし まとめ買い",
+      "asin": "B07K2BVRTR",
+      "brand": "Scrubbing Bubbles",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71ds8CF5ZZL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B07K2BVRTR",
+      "provisional": false,
+      "rating": 4.2,
+      "ref": "p1",
+      "review_count": 622,
+      "search_key": "Scrubbing Bubbles スクラビングバブル (Scrubbing Bubbles)",
+      "selection_reason": "窓や鏡を普段から拭く家庭向け。メーカーは、洗浄液が汚れに密着し、乾いた布で拭き取れると案内している。本体500mlに詰め替え400mlが2個付くため、窓掃除を続ける使い方に合う。[メーカー製品情報](https://scjcatalog.johnson.co.jp/products/sb_garasu.html)",
+      "sources": [
+        {
+          "brand": "Scrubbing Bubbles",
+          "excerpt": "Scrubbing Bubbles Detergent Glass Cleaner, Liquid Type, 1 Bottle + 2 Refills, 16.9 fl oz (500 ml) + 2 x 13.5 fl oz (400 ml) x 2, Mirrors, Windows, Stain Remover Bulk\nAbout this item\nA glass wiping spray that removes dirt and adheres to the glass for a clean finish\nMade in Japan\nQuickly and cleanly without streaking\nCreates a clear protective film that lasts for a long time\nCleans up pollen, dust, and exhaust stains, and polishes mirrors\nSpray can type, so it is easy to remove large windows and car windows\nProduct Size (W x D x H): 4.1 x 2.4 x 8.9 inches (105 x 61 x 226 mm); Replacement Size (W x D x H): 4.7 x 2.4 x 9.1 inches (120\nContents: Main unit 16.9 fl oz (500 ml) + refill 13.5 fl oz (400 ml) x 2 › See more product details\nBrand Scrubbing Bubbles\nItem Form Liquid\nScent No\nSpecific Uses For Product Mirror, Window\nMaterial Feature Unscented\nItem Volume 1300 Milliliters\nUnit Count 1300.0 Milliliters\nSurface Recommendation Glass\nSpecial Feature Refill\nNumber of Items 2 See more\nVisit the スクラビングバブル (Scrubbing Bubbles) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Scrubbing Bubbles Detergent Glass Cleaner, Liquid Type, 1 Bottle + 2 Refills, 16.9 fl oz (500 ml) + 2 x 13.5 fl oz (400 ml) x 2, Mirrors, Windows, Stain Remover Bulk",
+          "url": "https://www.amazon.co.jp/dp/B07K2BVRTR",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "formulation",
-      "label": "剤形",
-      "keywords": [
-        "スプレー",
-        "シート",
-        "泡タイプ"
+      "amazon_title": "花王(Kao) KAO 【大容量】 ガラスマジックリン 4.5L 業務用 ガラスクリーナー プロフェッショナル・サービス",
+      "asin": "B002M59DW2",
+      "brand": "KAO",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71aIATbDRKL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B002M59DW2",
+      "provisional": false,
+      "rating": 4.3,
+      "ref": "p2",
+      "review_count": 264,
+      "search_key": "KAO 花王(Kao) KAO ガラスマジックリン 4.5L 業務用 ガ",
+      "selection_reason": "窓に加えて鏡やガラスケースもまとめて掃除する家庭向けの4.5L業務用。花王は、ホコリや手あかを落とし、スプレー後に乾いた布で拭けば二度拭きなしでも拭き筋を残さないと案内している。使用時は専用の詰め替えスプレー容器に小分けする。[花王製品情報](https://pro.kao.com/jp/products/kps05/4901301505767.html)",
+      "sources": [
+        {
+          "brand": "KAO",
+          "excerpt": "花王(Kao) Kao Glass Magicrin, 1.2 gal (4.5 L), Commercial Use, Glass Cleaner, Professional Service\nAbout this item\nCapacity (L): 4.5\nPackage Quantity (pcs): 4 › See more product details\nBrand KAO\nItem Form Liquid\nSpecific Uses For Product Glass, Windows, Car\nItem Volume 4.5 Liters\nUnit Count 1.0 Count\nSurface Recommendation Mirror\nSpecial Feature Refill\nNumber of Items 1\nContains Liquid Contents Yes\nManufacturer 花王 See more\nVisit the KAO Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "花王(Kao) Kao Glass Magicrin, 1.2 gal (4.5 L), Commercial Use, Glass Cleaner, Professional Service",
+          "url": "https://www.amazon.co.jp/dp/B002M59DW2",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "streak_free_finish",
-      "label": "拭き跡の残りにくさ",
-      "keywords": [
-        "ムラなし",
-        "速乾",
-        "曇り止め"
+      "amazon_title": "Prostaff A-74 Monster Glass Finish, Glass Cleaner, 23.7 fl oz (700 ml)",
+      "asin": "B0C1JK6X5P",
+      "brand": "プロスタッフ(Prostaff)",
+      "discovery_axis_id": "indoor_fingerprints",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71DQ+0g7IlL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0C1JK6X5P",
+      "provisional": false,
+      "rating": 4.0,
+      "ref": "p3",
+      "review_count": 467,
+      "search_key": "プロスタッフ(Prostaff) Prostaff A-74 Monster Glass Fin",
+      "selection_reason": "室内窓に付いた手あかを、気付いたときにスプレーして拭きたい人向け。メーカーは油脂溶解成分と浸透性アルコールによる手あかの除去を案内し、家庭のガラスにも使用可能としている。界面活性剤・着色料・シリコンを含まない点も、拭き筋が気になる窓に合う。[メーカー製品情報](https://prostaff-jp.com/products/a-74/)",
+      "sources": [
+        {
+          "brand": "プロスタッフ(Prostaff)",
+          "excerpt": "Prostaff A-74 Monster Glass Finish, Glass Cleaner, 23.7 fl oz (700 ml)\nAbout this item\nAn interior window glass cleaner where penetrating alcohol delivers incredible cleaning power. Simply spray and wipe away stubborn dirt and fingerprints from the glass all at once, eliminating glare and poor visibility\nAchieve powerful cleaning with the double formulation of 'fat-soluble components & penetrative alcohol', resulting in a transparent glass finish completed speedily!\nNo surfactants, colorants, or silicones are used, ensuring a clear finish without streaks or unevenness › See more product details\nBrand プロスタッフ(Prostaff)\nItem Form Liquid\nScent Unscented\nSpecific Uses For Product Car, Glass\nMaterial Feature Hypoallergenic\nItem Volume 700 Milliliters\nUnit Count 700.0 Milliliters\nSurface Recommendation Glass\nSpecial Feature Alcohol Based\nNumber of Items 1 See more\nVisit the プロスタッフ(Prostaff) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Prostaff A-74 Monster Glass Finish, Glass Cleaner, 23.7 fl oz (700 ml)",
+          "url": "https://www.amazon.co.jp/dp/B0C1JK6X5P?th=1",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "price_range",
-      "label": "価格帯",
-      "keywords": [
-        "詰め替え",
-        "コスパ"
+      "amazon_title": "Prostaff A-83 Inner Window Wet Cloth, Kirobin Pure Microfiber, Pack of 12, Remove Hand Resin, Stain",
+      "asin": "B0F2D9H79N",
+      "brand": "プロスタッフ(Prostaff)",
+      "discovery_axis_id": "indoor_fingerprints",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71P4zPNaNTL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0F2D9H79N",
+      "provisional": false,
+      "rating": 4.2,
+      "ref": "p4",
+      "review_count": 15232,
+      "search_key": "プロスタッフ(Prostaff) Prostaff A-83 Inner Window Wet",
+      "selection_reason": "子どもが触れた跡など、室内窓の手あかをシートでさっと拭きたい人向け。メーカーによると、手あかに浸透する成分と汚れを吸着するマイクロファイバー100％のクロスを組み合わせた12枚入り。純水を使い、界面活性剤を含まない内窓用シートとして案内されている。[メーカー製品情報](https://prostaff-jp.com/products/a-83/)",
+      "sources": [
+        {
+          "brand": "プロスタッフ(Prostaff)",
+          "excerpt": "Prostaff A-83 Inner Window Wet Cloth, Kirobin Pure Microfiber, Pack of 12, Remove Hand Resin, Stain\nAbout this item\nRemoves dirt and streaks completely!\nSheet size: approximately 7.9 x 11.8 inches (200 x 300 mm)\nNo lingering unpleasant odors › See more product details\nBrand プロスタッフ(Prostaff)\nItem Form Wipe\nScent Unscented\nSpecific Uses For Product Windshield\nMaterial Feature Hypoallergenic\nUnit Count 12.0 Piece\nSurface Recommendation Windshield\nNumber of Items 1\nItem Weight 91 Grams\nContains Liquid Contents No See more\nVisit the プロスタッフ(Prostaff) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Prostaff A-83 Inner Window Wet Cloth, Kirobin Pure Microfiber, Pack of 12, Remove Hand Resin, Stain",
+          "url": "https://www.amazon.co.jp/dp/B0F2D9H79N?th=1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "MR.SIGA Professional Window Cleaning Set - Window Glass Cleaning Squeegee",
+      "asin": "B01C6KUNZI",
+      "brand": "MR.SIGA",
+      "discovery_axis_id": "outdoor_rain_streaks",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71t3JO5rdQL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B01C6KUNZI",
+      "provisional": false,
+      "rating": 4.1,
+      "ref": "p5",
+      "review_count": 13868,
+      "search_key": "MR.SIGA Professional Window Cleaning Set",
+      "selection_reason": "雨の後に土ぼこりも付いた広い外窓を、洗ってから水を切りたい人向け。35cm幅のスクイージーと、水を含ませて汚れを拭ける厚手のマイクロファイバーウォッシャーがセットになっている。メーカーは高い場所への延長ポール接続にも対応すると案内している。[メーカー製品情報](https://www.mrsiga.com/products/sj21578)",
+      "sources": [
+        {
+          "brand": "MR.SIGA",
+          "excerpt": "MR.SIGA Professional Window Cleaning Set - Window Glass Cleaning Squeegee\nAbout this item\nConvenient Window Cleaning Set: 1 x 35cm wide squeegee + 1 x microfiber washer\nSqueegee with natural rubber blade: The blade is made of durable natural rubber. Fits perfectly on flat surfaces and works well\nThick microfiber cover: The thick microfiber cover ensures excellent water absorption! When combined with cleaning solution, it efficiently removes dust and dirt\nLightweight plastic handle: The main body is lightweight, so even non-professional users can easily use it without their arms getting tired\nExtension pole compatible: By connecting with our 4-tier pole (sold separately), you can easily clean high places › See more product details\nBrand MR.SIGA\nColor blue\nStyle Window Squeegee and Microfiber Window Washer\nProduct Dimensions 35.6W x 17.8H cm\nItem Weight 280 Grams\nVisit the MR.SIGA Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "MR.SIGA Professional Window Cleaning Set - Window Glass Cleaning Squeegee",
+          "url": "https://www.amazon.co.jp/dp/B01C6KUNZI?th=1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "P&S True Vue Glass Cleaner トゥルービュー ガラスクリーナー 473ml D150P",
+      "asin": "B09KHLCDFP",
+      "brand": "P & S PROFESSIONAL DETAIL PRODUCTS",
+      "discovery_axis_id": "outdoor_rain_streaks",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/511W07s+AJL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B09KHLCDFP",
+      "provisional": false,
+      "rating": 4.6,
+      "ref": "p6",
+      "review_count": 179,
+      "search_key": "P & S PROFESSIONAL DETAIL PRODUCTS P&S True Vue",
+      "selection_reason": "雨筋が気になる外窓のうち、車の窓に付いた土ぼこりや膜状の汚れも一緒に拭きたい人向け。メーカーは車のガラスに付いた埃や油膜への使用を案内し、液をタオルに吹き付けて拭いた後、乾いたタオルで仕上げる手順を示している。雨筋そのものへの効果は確認できていない。[メーカー製品情報](https://psdetailproductsjapan.com/products/true-vue-rtu-glass-cleaner)",
+      "sources": [
+        {
+          "brand": "P & S PROFESSIONAL DETAIL PRODUCTS",
+          "excerpt": "P&S True Vue Glass Cleaner True View Glass Cleaner 16oz D150P\nAbout this item\nEffective Dirt Removal: The True View Glass Cleaner is a glass cleaner that effectively removes films, smoke and dirt from your vehicle's windshield\nVolume: Spray: 16.1 fl oz (473 ml), Gallon: 10.9 gallons › See more product details\nBrand P & S PROFESSIONAL DETAIL PRODUCTS\nItem Form Liquid\nScent Unscented\nSpecific Uses For Product Window Cleaner\nMaterial Feature Unscented\nItem Volume 473 Milliliters\nUnit Count 1 本\nNumber of Items 1\nContains Liquid Contents Yes\nManufacturer P&S Detailing Products See more\nVisit the P & S PROFESSIONAL DETAIL PRODUCTS Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "P&S True Vue Glass Cleaner True View Glass Cleaner 16oz D150P",
+          "url": "https://www.amazon.co.jp/dp/B09KHLCDFP?th=1",
+          "verified": true
+        }
       ]
     }
   ],
   "selection": {
-    "comparison_axes_covered": [
-      "cleaning_power",
-      "formulation",
-      "price_range",
-      "streak_free_finish"
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B07K2BVRTR",
+            "reason": "窓や鏡を普段から拭く家庭向け。メーカーは、洗浄液が汚れに密着し、乾いた布で拭き取れると案内している。本体500mlに詰め替え400mlが2個付くため、窓掃除を続ける使い方に合う。[メーカー製品情報](https://scjcatalog.johnson.co.jp/products/sb_garasu.html)"
+          },
+          {
+            "asin": "B002M59DW2",
+            "reason": "窓に加えて鏡やガラスケースもまとめて掃除する家庭向けの4.5L業務用。花王は、ホコリや手あかを落とし、スプレー後に乾いた布で拭けば二度拭きなしでも拭き筋を残さないと案内している。使用時は専用の詰め替えスプレー容器に小分けする。[花王製品情報](https://pro.kao.com/jp/products/kps05/4901301505767.html)"
+          }
+        ]
+      },
+      {
+        "axis_id": "indoor_fingerprints",
+        "products": [
+          {
+            "asin": "B0C1JK6X5P",
+            "reason": "室内窓に付いた手あかを、気付いたときにスプレーして拭きたい人向け。メーカーは油脂溶解成分と浸透性アルコールによる手あかの除去を案内し、家庭のガラスにも使用可能としている。界面活性剤・着色料・シリコンを含まない点も、拭き筋が気になる窓に合う。[メーカー製品情報](https://prostaff-jp.com/products/a-74/)"
+          },
+          {
+            "asin": "B0F2D9H79N",
+            "reason": "子どもが触れた跡など、室内窓の手あかをシートでさっと拭きたい人向け。メーカーによると、手あかに浸透する成分と汚れを吸着するマイクロファイバー100％のクロスを組み合わせた12枚入り。純水を使い、界面活性剤を含まない内窓用シートとして案内されている。[メーカー製品情報](https://prostaff-jp.com/products/a-83/)"
+          }
+        ]
+      },
+      {
+        "axis_id": "outdoor_rain_streaks",
+        "products": [
+          {
+            "asin": "B01C6KUNZI",
+            "reason": "雨の後に土ぼこりも付いた広い外窓を、洗ってから水を切りたい人向け。35cm幅のスクイージーと、水を含ませて汚れを拭ける厚手のマイクロファイバーウォッシャーがセットになっている。メーカーは高い場所への延長ポール接続にも対応すると案内している。[メーカー製品情報](https://www.mrsiga.com/products/sj21578)"
+          },
+          {
+            "asin": "B09KHLCDFP",
+            "reason": "雨筋が気になる外窓のうち、車の窓に付いた土ぼこりや膜状の汚れも一緒に拭きたい人向け。メーカーは車のガラスに付いた埃や油膜への使用を案内し、液をタオルに吹き付けて拭いた後、乾いたタオルで仕上げる手順を示している。雨筋そのものへの効果は確認できていない。[メーカー製品情報](https://psdetailproductsjapan.com/products/true-vue-rtu-glass-cleaner)"
+          }
+        ]
+      }
     ],
-    "brand_count": 0,
-    "price_used_as_constraint_only": true
+    "brand_count": 5,
+    "candidate_count": 22,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [
+      {
+        "asin": "B01C6KUNZI",
+        "check_items": {
+          "color_design_only": "UNKNOWN",
+          "function_structure_difference": "UNKNOWN",
+          "independent_comparison_value": "UNKNOWN",
+          "manufacturer_brand_relation": "UNKNOWN",
+          "sales_packaging_only": "UNKNOWN",
+          "same_product_body": "FAIL",
+          "series_generation_difference": "UNKNOWN",
+          "size_capacity_difference": "UNKNOWN"
+        },
+        "duplicate_of_asin": "B01C6KUNZI",
+        "reason": "same_asin"
+      }
+    ],
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": [
+      "B01C6KUNZI"
+    ],
+    "targeted_replacement": true
   },
-  "products": [
-    {
-      "ref": "p1",
-      "product_id": "AMZ-B07JG63L6K",
-      "asin": "B07JG63L6K",
-      "amazon_title": "【まとめ買い】ガラスマジックリン ガラスクリーナ スプレータイプ 本体+詰め替え",
-      "brand": "花王",
-      "image_url": "https://m.media-amazon.com/images/I/71xZpuBkeqL._AC_SL1000_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.71,
-      "matched_comparison_axes": [
-        "cleaning_power",
-        "streak_free_finish"
-      ],
-      "search_key": "LIFIX CLEAR (Sea Green) 拭き筋残さず高速",
-      "selected_variant": {
-        "bottle_capacity": "400mL",
-        "refill_capacity": "350mL",
-        "pack_count": 2,
-        "format": "本体1＋詰替1"
-      }
-    },
-    {
-      "ref": "p2",
-      "product_id": "AMZ-B00XD8BPKA",
-      "asin": "B00XD8BPKA",
-      "amazon_title": "【まとめ買い】スクラビングバブル ガラスクリーナー 本体 ×2セット",
-      "brand": "ジョンソン",
-      "image_url": "https://m.media-amazon.com/images/I/41afFmgpHoL._AC_SY300_SX300_QL70_ML2_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.71,
-      "matched_comparison_axes": [
-        "formulation",
-        "price_range"
-      ],
-      "search_key": "花王 ガラスマジックリン ガラスクリーナー スプレータイプ 本体",
-      "selected_variant": {
-        "per_bottle_capacity": "500mL per manufacturer current glass-cleaner bottle",
-        "pack_count": 2,
-        "format": "本体2本"
-      }
-    },
-    {
-      "ref": "p3",
-      "product_id": "AMZ-B0F1Y5LZ4Q",
-      "asin": "B0F1Y5LZ4Q",
-      "amazon_title": "【まとめ買い】 リンレイ ガラス透明クリーナー 480ml 3本セット 透明感アップ",
-      "brand": "リンレイ",
-      "image_url": "https://m.media-amazon.com/images/I/71u40-xAZWL._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.35,
-      "matched_comparison_axes": [
-        "cleaning_power"
-      ],
-      "search_key": "ガラス泡クリーナー 激泡ガラスクリーナー 強力洗浄 浴室水垢ナー",
-      "selected_variant": {
-        "per_bottle_capacity": "480mL",
-        "pack_count": 3,
-        "format": "エアゾール缶3本"
-      }
-    },
-    {
-      "ref": "p4",
-      "product_id": "AMZ-B0765YFWW6",
-      "asin": "B0765YFWW6",
-      "amazon_title": "アズマ 洗剤 アズマジックガラス洗剤 正味量:400㎖ 窓ガラス・鏡のくもりや皮脂汚れを落とす。 CH856",
-      "brand": "アズマ工業",
-      "image_url": "https://m.media-amazon.com/images/I/61gJyKUubRL._AC_SL1000_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.35,
-      "matched_comparison_axes": [
-        "formulation"
-      ],
-      "search_key": "結露防止スプレー 窓ガラス用 \"水滴・カビ・曇り防止\" 結露対策",
-      "selected_variant": {
-        "model": "CH856",
-        "capacity": "400mL",
-        "pack_count": 1
-      }
-    },
-    {
-      "ref": "p5",
-      "product_id": "AMZ-B00ZTQ1D1K",
-      "asin": "B00ZTQ1D1K",
-      "amazon_title": "激落ちシート窓用15枚",
-      "brand": "レック",
-      "image_url": "https://m.media-amazon.com/images/I/71b6919tolL._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.35,
-      "matched_comparison_axes": [
-        "price_range"
-      ],
-      "search_key": "スクラビングバブル ガラス用洗剤 クリーナー 液体タイプ 本体",
-      "selected_variant": {
-        "model": "SS-037",
-        "sheet_count": 15,
-        "pack_count": 1
-      }
-    },
-    {
-      "ref": "p6",
-      "product_id": "AMZ-B0026R7544",
-      "asin": "B0026R7544",
-      "amazon_title": "アズマ工業(Azuma Industrial) ガラス拭きウェットシート20P 洗剤・水・道具不要 桃の香りのガラス用お掃除シート くもり止め効果 拭き後が残らない 除菌99% 20枚 シートサイズ30×20cm 日本製 AZ791",
-      "brand": "アズマ工業",
-      "image_url": "https://m.media-amazon.com/images/I/61nwaHFIuSL._AC_SL1000_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.35,
-      "matched_comparison_axes": [],
-      "search_key": "AstroAI 車用フロントガラスクリーニングツール 車用 ワイ",
-      "selected_variant": {
-        "model": "AZ791",
-        "sheet_count": 20,
-        "sheet_size": "30×20cm",
-        "pack_count": 1
-      }
-    }
-  ]
+  "slug": "glass-window-cleaners-6-picks"
 }
