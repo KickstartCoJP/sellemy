@@ -1,167 +1,359 @@
 {
-  "slug": "compact-pressure-washers-for-home",
-  "category": "gadget",
-  "canonical_url": "https://www.sellemy.jp/article/gadget/compact-pressure-washers-for-home.html",
-  "eyecatch_image": "https://www.sellemy.jp/img/compact-pressure-washers-for-home/compact-pressure-washers-for-home.png",
   "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/compact-pressure-washers-for-home.html",
+  "category": "gadget",
   "comparison_axes": [
     {
-      "id": "power",
-      "label": "洗浄性能",
+      "id": "popular",
       "keywords": [
-        "最大圧力",
-        "吐出水量",
-        "ノズル"
+        "人気"
+      ],
+      "label": "人気・定番の基準"
+    },
+    {
+      "id": "wide_area_cleaning",
+      "keywords": [
+        "高圧ホースの長さ",
+        "給水ホースの接続",
+        "連続使用時間"
+      ],
+      "label": "玄関から駐車場まで、広い範囲を続けて洗う"
+    },
+    {
+      "id": "away_from_tap",
+      "keywords": [
+        "自吸給水",
+        "タンク給水",
+        "給水条件"
+      ],
+      "label": "水道が届かない場所を洗う"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/compact-pressure-washers-for-home/compact-pressure-washers-for-home.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "ed86370a72862c6a3593cb75a1053ed02e25fa98f43ac7ba22431e5e7e9b4744",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 26927,
+      "listing_identity_citations_repaired": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p6"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 1300,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 372,
+      "session_id": "01a21ae1-635b-7472-9623-b500fc337a78",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "ケルヒャー(Karcher) 高圧洗浄機 K3サイレントプラス パワフル 静音機能 高性能 簡単接続 付属品充実 ハイパワーなノズル タイヤ 伸縮ハンドル 洗車 花粉除去効果 黄砂",
+          "identity_quote": "ケルヒャー(Karcher) 高圧洗浄機 K3サイレントプラス パワフル 静音機能 高性能 簡単接続 付属品充実 ハイパワーなノズル タイヤ 伸縮ハンドル 洗車 花粉除去効果 黄砂 泥 60Hz 1.603-201.0",
+          "reason": "商品掲載名がK 3 サイレント プラスという高圧洗浄機本体を識別する。人気・定番の選択肢として紹介できる。ホース長など、選定理由にある仕様は検証済みソースに含まれていないため未確認。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "【Amazon.co.jp限定】ケルヒャー(Karcher) コードレス高圧洗浄機 OC 5 Handy CB USB-C充電式(10W以上推奨) 水道接続不要/丈夫なホース 高性",
+          "identity_quote": "【Amazon.co.jp限定】ケルヒャー(Karcher) コードレス高圧洗浄機 OC 5 Handy CB USB-C充電式(10W以上推奨) 水道接続不要/丈夫なホース 高性能5in1ノズル 安全ロック機能搭載 薄型バッテリー ペットボトル使用可能 簡単セットアップ/ハンディ モバイル コンパクト 軽量/洗車 ベランダ 玄関 1.328-143.0",
+          "reason": "検証済みの掲載情報が充電式の本体であることを示し、手持ち式という選択肢として紹介できる。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "wide_area_cleaning",
+              "quote": "high-pressure hose 26.2 ft (8 m)"
+            }
+          ],
+          "identity_key": "ケルヒャー(Karcher) K 2 サイレント 1.600-920.0",
+          "identity_quote": "ケルヒャー(Karcher) K 2 サイレント 1.600-920.0",
+          "reason": "検証済みの掲載情報が高圧ホース8mを明示しており、洗う場所を移す用途の紹介に合う。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "マキタ(Makita) 高圧洗浄機 MHW101 青",
+          "identity_quote": "マキタ(Makita) 高圧洗浄機 MHW101 青",
+          "reason": "商品掲載名がMHW101という高圧洗浄機本体を識別する。玄関や駐車場を順に洗う用途に適合する。ホース長や付属品は検証済みソースに含まれていないため未確認。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "away_from_tap",
+              "quote": "Water supply system: tap / self-priming"
+            }
+          ],
+          "identity_key": "Kyocera AJP-2030 668300A",
+          "identity_quote": "Kyocera AJP-2030 668300A High Pressure Washer",
+          "reason": "検証済みの掲載情報が水道給水と自吸給水を明示しており、水道から離れた場所向けの紹介に合う。別売キットの要否はこの掲載情報だけでは確定しない。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "away_from_tap",
+              "quote": "16.4 ft self-priming hose, hose clip, PET bottle holder"
+            }
+          ],
+          "identity_key": "【Amazon.co.jp限定】ケルヒャー(Karcher) コードレス高圧洗浄機 OC Handy Compact CB USB-C充電式(10W以上推奨) 水道接続不要/丈夫な",
+          "identity_quote": "【Amazon.co.jp限定】ケルヒャー(Karcher) コードレス高圧洗浄機 OC Handy Compact CB USB-C充電式(10W以上推奨) 水道接続不要/丈夫なホース 高性能4in1ノズル バッテリー一体型 ペットボトル使用可能 簡単セットアップ/ハンディ モバイル コンパクト 軽量/洗車 ベランダ 玄関 1.328-125.0",
+          "reason": "検証済みの掲載情報が充電式の本体と自吸用ホースの付属を明示しており、水道から離れた場所向けの紹介に合う。OC 5 Handy CBとは掲載上のモデル名とノズル構成が異なる。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "商品掲載名または検証済みの掲載情報から6つの異なる本体モデルを識別できる。各商品は家庭向け洗浄機の企画と割り当てられた紹介切り口に適合し、用途に沿った簡潔な紹介が成立する。p1とp4には検証済みソースがないため引用欄を空にし、未確認の仕様は判断根拠に含めていない。記事は未提出のため記事本文の判定項目は対象外。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
+  "products": [
+    {
+      "amazon_title": "ケルヒャー(Karcher) 高圧洗浄機 K3サイレントプラス パワフル 静音機能 高性能 簡単接続 付属品充実 ハイパワーなノズル タイヤ 伸縮ハンドル 洗車 花粉除去効果 黄砂 泥 60Hz 1.603-201.0",
+      "asin": "B0CK3Y6W9G",
+      "brand": "",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61u00+45qlL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0CK3Y6W9G",
+      "provisional": true,
+      "rating": 4.2,
+      "ref": "p1",
+      "review_count": 252,
+      "search_key": "ケルヒャー(Karcher) 高圧洗浄機 K3サイレントプラス",
+      "selection_reason": "水道につないで玄関から駐車場まで洗う一台の基準に。ケルヒャーの[選び方ガイド](https://www.kaercher.com/jp/home-garden/pressure-washers/guide.html)はK 3 サイレント プラスの高圧ホースを10mと案内している。広い範囲を洗いたい読者が、まずホースの届く範囲を考えやすい。候補は西日本の60Hz地域用なので、購入前に自宅の電源周波数を確認したい。",
+      "sources": []
+    },
+    {
+      "amazon_title": "【Amazon.co.jp限定】ケルヒャー(Karcher) コードレス高圧洗浄機 OC 5 Handy CB USB-C充電式(10W以上推奨) 水道接続不要/丈夫なホース 高性能5in1ノズル 安全ロック機能搭載 薄型バッテリー ペットボトル使用可能 簡単セットアップ/ハンディ モバイル コンパクト 軽量/洗車 ベランダ 玄関 1.328-143.0",
+      "asin": "B0DY1BC3VL",
+      "brand": "KÄRCHER",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71BjWcdrUYL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0DY1BC3VL",
+      "provisional": false,
+      "rating": 4.0,
+      "ref": "p2",
+      "review_count": 899,
+      "search_key": "KÄRCHER ケルヒャー(Karcher) コードレス高圧洗浄機 OC 5 H",
+      "selection_reason": "駐車場で車の一部や網戸をこまめに洗いたい読者に。OC 5 Handy CBは充電式で、付属の自吸用ホースをため水に入れるか、アダプターにペットボトルを付けて給水できる。[ケルヒャーの説明](https://www.kaercher.com/jp/home-garden/mobile-cleaning/handheld-cleaner/oc-5-handy-13281420.html)には5種類の水流に切り替えられるノズルと、日常的に気になる汚れをさっと洗う用途が示されており、手持ち式を選ぶ基準になる。",
+      "sources": [
+        {
+          "brand": "KÄRCHER",
+          "excerpt": "【Amazon.co.jp Exclusive】Karcher Cordless High-Pressure Washer OC 5 Handy CB USB-C Rechargeable (Recommended 10W or higher) No Water Connection Required/Durable Hose High-Performance 5-in-1 Nozzle\nAbout this item\nPowerful cordless design, even without a power source A wide variety of accessories are available, so even if it is battery powered, you can clean it well Using the included self-priming hose or a PET bottle, you can perform high-pressure cleaning anywhere without worrying about power sources or water supply Commonly known as: Handy Jet\n【Easy and convenient cordless cleaning】Equipped with a rechargeable battery, self-priming hose, and a PET bottle adapter, it can be taken and used for cleaning anywhere Also, you can charge it anywhere with USB-C (10W or more recommended)\nWith the included accessories, including a 5-in-1 nozzle and cleaning agent tank, achieve a thorough foam car wash\nWith a variety of optional accessories, separately sold accessories can be used, allowing for more comfortable and efficient cleaning in narrow spaces, reducing water spray, and providing strong and quick cleaning\nGreat for daily cleaning in frequently cleaned areas] For stubborn stains that are not too tough, in places like car washes, verandas, and window screens that you regularly clean because of dirt concerns, you can quickly remove and clean them to maintain a clean space Additionally, using optional accessories, you can wash away dirt without rubbing, while reducing water splashes, making areas like entrances and narrow spaces around outdoor units cleaner and more hygienic\nCommonly known as: Handy Jet › See more product details\nBrand KÄRCHER\nPower Source Battery Powered\nColor yellow\nItem Weight 0.76 Kilograms\nHose Length 5 Meters",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "【Amazon.co.jp Exclusive】Karcher Cordless High-Pressure Washer OC 5 Handy CB USB-C Rechargeable (Recommended 10W or higher) No Water Connection Required/Durable Hose High-Performance 5-in-1 Nozzle",
+          "url": "https://www.amazon.co.jp/dp/B0DY1BC3VL?th=1",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "setup",
-      "label": "設置と給水",
-      "keywords": [
-        "水道接続",
-        "タンク式",
-        "ホースの長さ"
+      "amazon_title": "ケルヒャー(Karcher) K 2 サイレント 1.600-920.0",
+      "asin": "B07GXDCP3C",
+      "brand": "KÄRCHER",
+      "discovery_axis_id": "wide_area_cleaning",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/615NBxk6UHL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B07GXDCP3C",
+      "provisional": false,
+      "rating": 4.3,
+      "ref": "p3",
+      "review_count": 3042,
+      "search_key": "KÄRCHER ケルヒャー(Karcher) K 2 サイレント 1.600-9",
+      "selection_reason": "本体を置いたまま玄関周りから駐車場へ洗う場所を移したい読者に。K 2 サイレントは[メーカー仕様](https://www.kaercher.com/jp/home-garden/pressure-washers/k-2-silent-um-16009200.html)で高圧ホース8m、付属のバリオスプレーランスで水流を調整できる。ケルヒャーの[FAQ](https://www.kaercher.com/jp/service/faq/product/pressure-washers.html)では家庭用高圧洗浄機の定格使用時間を1時間としており、続けて洗う際の作業計画も立てやすい。",
+      "sources": [
+        {
+          "brand": "KÄRCHER",
+          "excerpt": "Karcher High-Pressure Washer K2 Silent, Quiet Function, Lightweight, Compact Storage, Easy Connection, Fully Equipped Accessories, Powerful Nozzles, Car Wash, Mud, 50/60 Hz, 1.600-920.0\nAbout this item\nProduct Introduction: The K 2 series' most powerful cleaning and first quiet high-pressure washer model.By utilizing sound-absorbing materials and optimizing airflow, the perceived noise is reduced by approximately 50%.The product weight is just 12.8 lbs (5.8 kg), making it the lightest quiet model (excluding models by other manufacturers), easy to carry with one hand.\nRecommended for those who want to wash both their home and car thoroughly.Ideal for washing cars, bicycles, outdoor dirt, major cleaning, or as a Father's Day gift.Recommended Places: Garden furniture, entrances, balconies, windows, screens, bathrooms, bicycles, small cars.\nWired Power Source: Unlike cordless rechargeable products, it allows for stable and powerful cleaning over extended periods.A high-performance and high-power pressure washer.\nAccessories: Trigger gun, high-pressure hose 26.2 ft (8 m), foam nozzle, Vario Spray lance, Cyclone Jet nozzle, main unit coupling. Recommended Attachments: Water Supply Hose: 2.645-350.0, Self-Suction Water Supply Hose: 2.643-101.0, Detergent: 6.295-743.0.*Compatible Models: K1, K2, K3, K4, K5.\nMaximum Water Discharge: 95 gal/h (360 L/h).Maximum Water Supply Temperature: 104°F (40°C).Power Supply: 100 V / 50-60 Hz. Maximum Allowable Pressure: 1450 psi (10 MPa).Motor Output: 1.25 kW.Main Unit Weight (excluding accessories): 12.8 lbs (5.8 kg). › See more product details\nBrand KÄRCHER\nPower Source Corded Electric\nColor yellow\nItem Weight 5.8 Kilograms\nHose Length 8 Meters",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Karcher High-Pressure Washer K2 Silent, Quiet Function, Lightweight, Compact Storage, Easy Connection, Fully Equipped Accessories, Powerful Nozzles, Car Wash, Mud, 50/60 Hz, 1.600-920.0",
+          "url": "https://www.amazon.co.jp/dp/B07GXDCP3C?th=1",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "handling",
-      "label": "取り回し",
-      "keywords": [
-        "重量",
-        "運転音",
-        "収納寸法"
+      "amazon_title": "マキタ(Makita) 高圧洗浄機 MHW101 青",
+      "asin": "B0B8C8DW4W",
+      "brand": "",
+      "discovery_axis_id": "wide_area_cleaning",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71+-o+Z2z7L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0B8C8DW4W",
+      "provisional": true,
+      "rating": 4.1,
+      "ref": "p4",
+      "review_count": 169,
+      "search_key": "マキタ(Makita) 高圧洗浄機 MHW101 青",
+      "selection_reason": "蛇口から本体までの給水ホースを用意し、本体を運びながら洗う家に。MHW101は水道直結式で、[マキタの製品情報](https://www.makita.co.jp/product/detail/?model=MHW101)によると高圧ホース5m付きのトリガガン、拡散幅を変えられるノズル、回転噴射ノズルが付属する。[取扱説明書](https://www.makita.co.jp/product/files/MHW101_JP_2112.pdf?202608=)は蛇口から本体までの距離に合う市販の耐圧水道ホースを用意するよう指定しており、給水経路を決めてから玄関と駐車場を順に洗える。",
+      "sources": []
+    },
+    {
+      "amazon_title": "【マイベスト 高圧洗浄機ランキング 選出 2026年6月度】京セラ(Kyocera) 旧リョービ 高圧洗浄機 AJP-2030 668300A オレンジ 【ガン・ホースが工具なしで接続できる静音・小型タイプの洗浄機】 最大許容圧力10MPa 柔らか高圧ホース6M 節水 ミドルモデル 自吸も可能",
+      "asin": "B09R3QX6FR",
+      "brand": "KYOCERA",
+      "discovery_axis_id": "away_from_tap",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61uxP4SmXfL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B09R3QX6FR",
+      "provisional": false,
+      "rating": 4.2,
+      "ref": "p5",
+      "review_count": 173,
+      "search_key": "KYOCERA 京セラ(Kyocera) 旧リョービ 高圧洗浄機 AJP-203",
+      "selection_reason": "水道から離れた駐車場をため水で洗いたいが、コンセントは使える家に。AJP-2030は通常は水道給水で、[京セラの製品情報](https://www.kyocera-industrialtools.co.jp/products/home/items/5793)にある別売の自吸キットを追加すると、ため水からの給水に対応する。付属の高圧ホースは6m。水源と本体の距離を先に確かめ、自吸キットと水を用意して使う選択肢になる。",
+      "sources": [
+        {
+          "brand": "KYOCERA",
+          "excerpt": "Kyocera AJP-2030 668300A High Pressure Washer Ranked High Pressure Washing\nAbout this item\nPower supply: Single phase 100 V\nPower consumption: 1200 W\nMaximum Allowable Pressure: 10.0 MPa, Maximum Discharge Volume: 2.2 gal (8.0 L) / min Allowed water temperature: 104°F (40°C) or below\nWater supply system: tap / self-priming ●Current: 12.5A, Cord: 5m\nPump type: 3-row plunger. Product Code: 668300A › See more product details\nBrand KYOCERA\nPower Source Corded Electric\nColor orange\nItem Weight 4.5 Kilograms\nHose Length 6 Meters",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Kyocera AJP-2030 668300A High Pressure Washer Ranked High Pressure Washing",
+          "url": "https://www.amazon.co.jp/dp/B09R3QX6FR?th=1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "【Amazon.co.jp限定】ケルヒャー(Karcher) コードレス高圧洗浄機 OC Handy Compact CB USB-C充電式(10W以上推奨) 水道接続不要/丈夫なホース 高性能4in1ノズル バッテリー一体型 ペットボトル使用可能 簡単セットアップ/ハンディ モバイル コンパクト 軽量/洗車 ベランダ 玄関 1.328-125.0",
+      "asin": "B0FP2G285P",
+      "brand": "KÄRCHER",
+      "discovery_axis_id": "away_from_tap",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71IWTabdN9L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0FP2G285P",
+      "provisional": false,
+      "rating": 4.0,
+      "ref": "p6",
+      "review_count": 885,
+      "search_key": "KÄRCHER ケルヒャー(Karcher) コードレス高圧洗浄機 OC Han",
+      "selection_reason": "蛇口もコンセントも届かない場所で、自転車や玄関脇の泥を短時間で洗いたい読者に。OC Handy Compact CBは充電式の折りたたみ型で、[ケルヒャーの製品情報](https://www.kaercher.com/jp/home-garden/mobile-cleaning/handheld-cleaner/oc-handy-compact-13281230.html?bvstate=pg%3A2%2Fct%3Ar)は付属の自吸用ホースでバケツの水を使えること、ペットボトルからも給水できることを示す。広い床面を洗い続ける用途ではなく、水を持ち込んで気になる箇所を洗う使い方に合う。",
+      "sources": [
+        {
+          "brand": "KÄRCHER",
+          "excerpt": "【Amazon.co.jp Exclusive】Karcher Cordless High-Pressure Washer OC Handy Compact CB USB-C Rechargeable (Recommended 10W or higher) No Water Connection Required/Durable Hose High Performance 4-in-1\nAbout this item\nBefore you go home, Karcher for 10 seconds 】\"Commonly known as: HandyAir\" provides a new experience\n【Clean anytime, anywhere at your convenience】With a palm-sized design that fits into your pocket and a design that requires no water or power supply, it achieves the ease of use of \"being able to use it as soon as you think of it\" Whether for sudden cleaning needs on the go or unexpected stains at home, the handheld air cleaner can respond instantly We bring you a new experience of portability for cleanliness\n【Not afraid of getting dirty】For all outdoor scenes such as sports, camping, fishing, and cycling, even the dirt you don’t want to bring back home, \"10 seconds with Karcher before you go home.\" Simply remove the handy air and wash it and reset it in no time You can fully immerse yourself in activities without worrying about dirt Dirt is no longer a \"pesky thing\" and will turn into a \"token of fun\"\n【Accessories】4 in 1 nozzle, 16.4 ft self-priming hose, hose clip, PET bottle holder, cleaning agent nozzle, charging USB cable (USB charger not included), instruction manual › See more product details\nBrand KÄRCHER\nPower Source Battery Powered\nColor yellow\nItem Weight 0.78 Kilograms\nHose Length 5 Meters",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "【Amazon.co.jp Exclusive】Karcher Cordless High-Pressure Washer OC Handy Compact CB USB-C Rechargeable (Recommended 10W or higher) No Water Connection Required/Durable Hose High Performance 4-in-1",
+          "url": "https://www.amazon.co.jp/dp/B0FP2G285P?th=1",
+          "verified": true
+        }
       ]
     }
   ],
   "selection": {
-    "comparison_axes_covered": [
-      "power",
-      "setup"
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B0CK3Y6W9G",
+            "reason": "水道につないで玄関から駐車場まで洗う一台の基準に。ケルヒャーの[選び方ガイド](https://www.kaercher.com/jp/home-garden/pressure-washers/guide.html)はK 3 サイレント プラスの高圧ホースを10mと案内している。広い範囲を洗いたい読者が、まずホースの届く範囲を考えやすい。候補は西日本の60Hz地域用なので、購入前に自宅の電源周波数を確認したい。"
+          },
+          {
+            "asin": "B0DY1BC3VL",
+            "reason": "駐車場で車の一部や網戸をこまめに洗いたい読者に。OC 5 Handy CBは充電式で、付属の自吸用ホースをため水に入れるか、アダプターにペットボトルを付けて給水できる。[ケルヒャーの説明](https://www.kaercher.com/jp/home-garden/mobile-cleaning/handheld-cleaner/oc-5-handy-13281420.html)には5種類の水流に切り替えられるノズルと、日常的に気になる汚れをさっと洗う用途が示されており、手持ち式を選ぶ基準になる。"
+          }
+        ]
+      },
+      {
+        "axis_id": "wide_area_cleaning",
+        "products": [
+          {
+            "asin": "B07GXDCP3C",
+            "reason": "本体を置いたまま玄関周りから駐車場へ洗う場所を移したい読者に。K 2 サイレントは[メーカー仕様](https://www.kaercher.com/jp/home-garden/pressure-washers/k-2-silent-um-16009200.html)で高圧ホース8m、付属のバリオスプレーランスで水流を調整できる。ケルヒャーの[FAQ](https://www.kaercher.com/jp/service/faq/product/pressure-washers.html)では家庭用高圧洗浄機の定格使用時間を1時間としており、続けて洗う際の作業計画も立てやすい。"
+          },
+          {
+            "asin": "B0B8C8DW4W",
+            "reason": "蛇口から本体までの給水ホースを用意し、本体を運びながら洗う家に。MHW101は水道直結式で、[マキタの製品情報](https://www.makita.co.jp/product/detail/?model=MHW101)によると高圧ホース5m付きのトリガガン、拡散幅を変えられるノズル、回転噴射ノズルが付属する。[取扱説明書](https://www.makita.co.jp/product/files/MHW101_JP_2112.pdf?202608=)は蛇口から本体までの距離に合う市販の耐圧水道ホースを用意するよう指定しており、給水経路を決めてから玄関と駐車場を順に洗える。"
+          }
+        ]
+      },
+      {
+        "axis_id": "away_from_tap",
+        "products": [
+          {
+            "asin": "B09R3QX6FR",
+            "reason": "水道から離れた駐車場をため水で洗いたいが、コンセントは使える家に。AJP-2030は通常は水道給水で、[京セラの製品情報](https://www.kyocera-industrialtools.co.jp/products/home/items/5793)にある別売の自吸キットを追加すると、ため水からの給水に対応する。付属の高圧ホースは6m。水源と本体の距離を先に確かめ、自吸キットと水を用意して使う選択肢になる。"
+          },
+          {
+            "asin": "B0FP2G285P",
+            "reason": "蛇口もコンセントも届かない場所で、自転車や玄関脇の泥を短時間で洗いたい読者に。OC Handy Compact CBは充電式の折りたたみ型で、[ケルヒャーの製品情報](https://www.kaercher.com/jp/home-garden/mobile-cleaning/handheld-cleaner/oc-handy-compact-13281230.html?bvstate=pg%3A2%2Fct%3Ar)は付属の自吸用ホースでバケツの水を使えること、ペットボトルからも給水できることを示す。広い床面を洗い続ける用途ではなく、水を持ち込んで気になる箇所を洗う使い方に合う。"
+          }
+        ]
+      }
     ],
-    "brand_count": 0,
-    "price_used_as_constraint_only": true
+    "brand_count": 2,
+    "candidate_count": 16,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [
+      {
+        "asin": "B09R3QX6FR",
+        "check_items": {
+          "color_design_only": "UNKNOWN",
+          "function_structure_difference": "UNKNOWN",
+          "independent_comparison_value": "UNKNOWN",
+          "manufacturer_brand_relation": "UNKNOWN",
+          "sales_packaging_only": "UNKNOWN",
+          "same_product_body": "FAIL",
+          "series_generation_difference": "UNKNOWN",
+          "size_capacity_difference": "UNKNOWN"
+        },
+        "duplicate_of_asin": "B09R3QX6FR",
+        "reason": "same_asin"
+      }
+    ],
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": [
+      "B09R3QX6FR"
+    ],
+    "targeted_replacement": true
   },
-  "products": [
-    {
-      "ref": "p1",
-      "product_id": "AMZ-B08L6KPL3X",
-      "asin": "B08L6KPL3X",
-      "amazon_title": "K MINI 1.600-050.0",
-      "brand": "ケルヒャー",
-      "image_url": "https://m.media-amazon.com/images/I/51RvxxQOaTL._AC_SL1000_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.67,
-      "matched_comparison_axes": [
-        "power",
-        "setup"
-      ],
-      "search_key": "高圧洗浄機 コードレス 充電式 バッテリー式 洗車機 1300m",
-      "model": "K MINI 1.600-050.0",
-      "selected_variant": {
-        "model": "K MINI 1.600-050.0",
-        "pack_count": 1
-      }
-    },
-    {
-      "ref": "p2",
-      "product_id": "AMZ-B0DJSDCK39",
-      "asin": "B0DJSDCK39",
-      "amazon_title": "AC高圧洗浄機 ZHPA-129(BG)",
-      "brand": "山善",
-      "image_url": "https://m.media-amazon.com/images/I/61GDsZ3DpJL._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.31,
-      "matched_comparison_axes": [],
-      "search_key": "コードレス高圧洗浄機 超ミニ 充電式 Immpoest 2026",
-      "model": "ZHPA-129(BG)",
-      "selected_variant": {
-        "model": "ZHPA-129(BG)",
-        "pack_count": 1,
-        "colour": "ベージュ"
-      }
-    },
-    {
-      "ref": "p3",
-      "product_id": "AMZ-B006LEWEEO",
-      "asin": "B006LEWEEO",
-      "amazon_title": "アイリスオーヤマ FBN-401",
-      "brand": "アイリスオーヤマ",
-      "image_url": "https://m.media-amazon.com/images/I/61xcLM6vIVL._AC_SL1000_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.31,
-      "matched_comparison_axes": [],
-      "search_key": "コードレス高圧洗浄機 充電式 折畳式 超ミニ Berriot 2",
-      "model": "アイリスオーヤマ FBN-401",
-      "selected_variant": {
-        "model": "FBN-401",
-        "set": "デラックスセット",
-        "color": "ホワイト・イエロー",
-        "power": "AC100V 50/60Hz",
-        "pack_count": 1
-      }
-    },
-    {
-      "ref": "p4",
-      "product_id": "AMZ-B07PLR6S98",
-      "asin": "B07PLR6S98",
-      "amazon_title": "BOSCH EA110",
-      "brand": "ボッシュ",
-      "image_url": "https://m.media-amazon.com/images/I/61fDakEjqsL._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.31,
-      "matched_comparison_axes": [
-        "power",
-        "setup"
-      ],
-      "search_key": "高圧洗浄機 10MPa強力噴射 コードレス 小型自吸式 USB-",
-      "model": "BOSCH EA110",
-      "selected_variant": {
-        "power": "AC100V"
-      }
-    },
-    {
-      "ref": "p5",
-      "product_id": "AMZ-B0081VV252",
-      "asin": "B0081VV252",
-      "amazon_title": "高圧洗浄機 MHW0700",
-      "brand": "マキタ",
-      "image_url": "https://m.media-amazon.com/images/I/71w4NnTd1+L._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.31,
-      "matched_comparison_axes": [
-        "power"
-      ],
-      "search_key": "高圧洗浄機 コードレス 充電式 小型軽量 ハンディ高圧洗浄機 5",
-      "model": "MHW0700",
-      "selected_variant": {
-        "model": "MHW0700",
-        "pack_count": 1
-      }
-    },
-    {
-      "ref": "p6",
-      "product_id": "AMZ-B075MK1HVL",
-      "asin": "B075MK1HVL",
-      "amazon_title": "アイリスオーヤマ SBT-512N",
-      "brand": "アイリスオーヤマ",
-      "image_url": "https://m.media-amazon.com/images/I/51xkim9WIeL._AC_SL1000_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.31,
-      "matched_comparison_axes": [
-        "power"
-      ],
-      "search_key": "FOTING 高圧洗浄機 14.5MPa パワフル洗浄 コンパク",
-      "model": "アイリスオーヤマ SBT-512N",
-      "selected_variant": {
-        "power": "AC100V",
-        "water_supply": "tank"
-      }
-    }
-  ]
+  "slug": "compact-pressure-washers-for-home"
 }
