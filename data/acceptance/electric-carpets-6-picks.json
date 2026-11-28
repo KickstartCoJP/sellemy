@@ -1,0 +1,26 @@
+{
+  "chat_approval": {
+    "decision": "CERTIFIED",
+    "evidence_sha256": "64295cb24869c5925550787c37c51b91dba7c825039b72647a0d4a744bb8a55b",
+    "payload_sha256": "a018c3b95b014acc94551ed13cbd4f35865607076c993dc7b1842518124b0c9c",
+    "publish_allowed": true,
+    "reason": "Exact article text approved by CEO or delegated COO",
+    "reviewer_role": "coo",
+    "reviewer_surface": "chatgpt",
+    "schema": "sellemy-chat-publish-approval/v1"
+  },
+  "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+  "edit_marker": {
+    "approved": true,
+    "approved_sha256": "a018c3b95b014acc94551ed13cbd4f35865607076c993dc7b1842518124b0c9c",
+    "evidence_sha256": "64295cb24869c5925550787c37c51b91dba7c825039b72647a0d4a744bb8a55b",
+    "original_sha256": "ea1ded4d839e8ffdfe3c24da62173fd66cd447dfea6ae836318e48313e67eea4",
+    "reviewer_role": "coo",
+    "schema": "sellemy-ceo-edited-approval/v1"
+  },
+  "evidence_sha256": "64295cb24869c5925550787c37c51b91dba7c825039b72647a0d4a744bb8a55b",
+  "original_structure_sha256": "752350683236435344036a5048d3a2ecb4d7add62c4194300b7e6c8f947e4e8e",
+  "payload_sha256": "a018c3b95b014acc94551ed13cbd4f35865607076c993dc7b1842518124b0c9c",
+  "product_acceptance_sha256": "d9fc6e12b66122e3dd38ef05f076a68ac456b0a40de32cf7ccf21628cdeb76f7",
+  "reviewer": "human_approved_text_edit"
+}

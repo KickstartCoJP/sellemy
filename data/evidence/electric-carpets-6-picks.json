@@ -1,147 +1,339 @@
 {
-  "slug": "electric-carpets-6-picks",
-  "category": "gadget",
-  "canonical_url": "https://www.sellemy.jp/article/gadget/electric-carpets-6-picks.html",
-  "eyecatch_image": "https://www.sellemy.jp/img/electric-carpets-6-picks/electric-carpets-6-picks.png",
   "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/electric-carpets-6-picks.html",
+  "category": "gadget",
   "comparison_axes": [
     {
-      "id": "size_options",
-      "label": "サイズ展開",
+      "id": "popular",
       "keywords": [
-        "1畳",
-        "2畳",
-        "3畳"
+        "人気"
+      ],
+      "label": "人気・定番の基準"
+    },
+    {
+      "id": "desk_fit",
+      "keywords": [
+        "本体の外寸",
+        "机の下",
+        "足元の設置面積"
+      ],
+      "label": "机下の限られた床面に敷きやすい"
+    },
+    {
+      "id": "easy_care",
+      "keywords": [
+        "表面の手入れ",
+        "カバーの扱い",
+        "掃除のしやすさ"
+      ],
+      "label": "作業場所の床を手入れしやすい"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/electric-carpets-6-picks/electric-carpets-6-picks.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "64295cb24869c5925550787c37c51b91dba7c825039b72647a0d4a744bb8a55b",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 25276,
+      "listing_identity_citations_repaired": [
+        "p1",
+        "p3",
+        "p5",
+        "p6"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 1704,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 789,
+      "session_id": "01a21b9b-74ea-7701-98c7-09fcf23fbdf2",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "アイリスオーヤマ ホットカーペット 電気カーペット 1畳 176×88cm IHC-10-H グレー",
+          "identity_quote": "アイリスオーヤマ ホットカーペット 電気カーペット 1畳 176×88cm IHC-10-H グレー",
+          "reason": "掲載名に型番、商品種別、1畳用と記載されている。定番の1畳用という切り口で紹介できる。検証済みソース本文がないため、掲載名を超える仕様は未確認。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "mofua MFM801H-H",
+          "identity_quote": "Mofua MFM801H-H Electric Hot Mat, 31.5 x 15.7 inches (80 x 40 cm), For Single People, Foot Mat, Electric Cushion, Foot Heating, Greige",
+          "reason": "検証済みの商品掲載情報で型番と一人用の電気マットを識別できる。足元に置く小型の選択肢として紹介できる。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "desk_fit",
+              "quote": "Main Body Size: Approx. 180 cm x 80 cm"
+            }
+          ],
+          "identity_key": "[山善] ホットカーペット 洗える ダニ対策 3段階温度調節 8時間自動オフタイマー 切り忘れ防止 グレージュ YWC-182F(GG)E",
+          "identity_quote": "[山善] ホットカーペット 洗える ダニ対策 3段階温度調節 8時間自動オフタイマー 切り忘れ防止 グレージュ YWC-182F(GG)E",
+          "reason": "検証済みの商品掲載情報に型番と本体寸法がある。細長い設置面積を机下の床面に合わせて紹介できる。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "desk_fit",
+              "quote": "This 1 tatami size hot carpet and flannel rug set"
+            }
+          ],
+          "identity_key": "Freedan FRU101H-HMN",
+          "identity_quote": "Freedan FRU101H-HMN Electric Carpet, Cover Included, Compatible Rug Included, Equivalent to 1 Tatami Mat",
+          "reason": "検証済みの商品掲載情報で型番とラグ付きの1畳相当セットを識別できる。机下用の敷物を一式そろえる選択肢として紹介できる。付属ラグの外寸は未確認。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "ライフジョイ ホットマット フローリング調 電気マット ベージュ 120cm×45cm キッチン対応 防水 木目調 FM121C",
+          "identity_quote": "ライフジョイ ホットマット フローリング調 電気マット ベージュ 120cm×45cm キッチン対応 防水 木目調 FM121C",
+          "reason": "掲載名に型番、約120×45cmの電気マット、防水の表示がある。手入れしやすい表面を求める切り口に合う。検証済みソース本文がないため、具体的な手入れ方法は未確認。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "easy_care",
+              "quote": "It can be easily cleaned by quickly wiping it with a cloth, towel, etc. even when wet"
+            }
+          ],
+          "identity_key": "ライフジョイ ホットカーペット 1.5畳 フローリング調 電気カーペット 128cm×176cm 防水 ブラウン JPJ151WB",
+          "identity_quote": "ライフジョイ ホットカーペット 1.5畳 フローリング調 電気カーペット 128cm×176cm 防水 ブラウン JPJ151WB",
+          "reason": "検証済みの商品掲載情報で型番、大きさ、表面の拭き取りに関する記載を確認できる。p5とは型番と大きさが異なり、机周辺を広く覆う選択肢として紹介できる。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "掲載名から6商品の型番と商品種別を識別でき、明白な重複や企画に無関係な商品はない。3つの紹介切り口に各2商品を割り当て、個別に紹介できる。p1とp5には検証済みソース本文がないため、掲載名を超える仕様は未確認として扱う。記事本文は未提出。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
+  "products": [
+    {
+      "amazon_title": "アイリスオーヤマ ホットカーペット 電気カーペット 1畳 176×88cm IHC-10-H グレー",
+      "asin": "B01L72ZXJ2",
+      "brand": "",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51oGzaoIsdL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B01L72ZXJ2",
+      "provisional": true,
+      "rating": 4.2,
+      "ref": "p1",
+      "review_count": 7778,
+      "search_key": "アイリスオーヤマ ホットカーペット 電気カーペット 1畳 176",
+      "selection_reason": "1畳用ホットカーペットの定番的な選択肢。アイリスオーヤマの[仕様](https://www.irisohyama.co.jp/products/electrical-appliances/seasonal-appliances/for-feet-heating-appliances/hot-carpet/hot-carpet-basic/)では本体が176×88cm、温度調節が可能と確認できる。机の前に細長い床面を確保でき、足元から椅子の周辺まで敷きたい人に向く。使用時には別途カバーが必要。",
+      "sources": []
+    },
+    {
+      "amazon_title": "Mofua 電気ホットマット 80×40cm 一人用 足元マット 電気座布団 足元暖房 グレイジュ MFM801H-H",
+      "asin": "B0DC6SNLDY",
+      "brand": "mofua",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81J0c+LNOdL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0DC6SNLDY",
+      "provisional": false,
+      "rating": 4.0,
+      "ref": "p2",
+      "review_count": 353,
+      "search_key": "mofua 電気ホットマット 80×40cm 一人用 足元マット 電気座布団",
+      "selection_reason": "足を置く場所だけ暖めたい人向けの一人用マット。80×40cm・約0.6kgで、[商品情報](https://payid.jp/item/123598854)にはデスクワーク中の座布団代わりにも使えるとある。机下に大きな敷物を置けないワンルームなら、足元と椅子の上で使う場所を選べる点に魅力がある。",
+      "sources": [
+        {
+          "brand": "mofua",
+          "excerpt": "Mofua MFM801H-H Electric Hot Mat, 31.5 x 15.7 inches (80 x 40 cm), For Single People, Foot Mat, Electric Cushion, Foot Heating, Greige\nAbout this item\nFoot Warmer Mini Hot Mat: For use under your feet during preparations like makeup or hair styling, or as a cushion replacement during desk work or gaming\nJust the right size to cover the waist area: 31.5 x 15.7 inches (80 x 40 cm), product weight: approximately 1.3 lbs (0.6 kg)\nManufacturer Warranty: 1 year\nPower consumption: 50W, Power supply: AC 100V 50/60Hz\nAll year round › See more product details\nBrand mofua\nColor greige\nForm Factor Mat\nPower Source Corded Electric\nProduct Dimensions 40D x 80W x 1H cm\nVisit the mofua(モフア) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Mofua MFM801H-H Electric Hot Mat, 31.5 x 15.7 inches (80 x 40 cm), For Single People, Foot Mat, Electric Cushion, Foot Heating, Greige",
+          "url": "https://www.amazon.co.jp/dp/B0DC6SNLDY?th=1",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "temperature_control",
-      "label": "温度調整機能",
-      "keywords": [
-        "段階調整",
-        "室温センサー",
-        "ダブルサイズ切替"
+      "amazon_title": "[山善] ホットカーペット 洗える ダニ対策 3段階温度調節 8時間自動オフタイマー 切り忘れ防止 グレージュ YWC-182F(GG)E",
+      "asin": "B0HCBR52DN",
+      "brand": "YAMAZEN",
+      "discovery_axis_id": "desk_fit",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61H6WKMmlkL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0HCBR52DN",
+      "provisional": false,
+      "rating": 4.4,
+      "ref": "p3",
+      "review_count": 1733,
+      "search_key": "YAMAZEN ホットカーペット 洗える ダニ対策 3段階温度調節 8時間自動オ",
+      "selection_reason": "[山善の仕様](https://book.yamazen.co.jp/product/detail/I00003829)で80×180cmと確認できる細長い一枚。奥行80cmの床面を確保できる机なら、足元の冷える帯状の範囲に合わせて敷ける。裏面の滑り止め加工に加え本体を丸洗いでき、机下から出して手入れしたい人にも向く。",
+      "sources": [
+        {
+          "brand": "YAMAZEN",
+          "excerpt": "Yamazen YWC-182F(GG) E Hot Carpet, Washable, Dust Mite Prevention, 3 Levels\nAbout this item\n3 Levels of Temperature Adjustment & Dust Mite Prevention: You can fine-tune the warmth to your preference between high, medium, and low. In addition, it is equipped with a \"dust mite prevention function\" for hygienic use, making it safe for homes with children and pets\n【Easy Operation & Convenient Remote Control Included】Includes a remote control for easy operation from your hand. You can comfortably adjust the temperature without having to bend over, whether you are standing or sitting\n【8-Hour Automatic Off Timer】Equipped with a forget-to-turn-off prevention timer, it automatically stops heating operation after 8 hours have passed since power is turned on. It provides peace of mind and safety even if you forget to turn it off when you go out or accidentally fall asleep\nFully Washable, Always Clean: The carpet itself can be washed at home (not in a drum washing machine). If you are concerned about dirt or odors, you can wash it quickly and keep it clean and comfortable at all times\nProduct Specifications: ◆ Main Body Size: Approx. 180 cm x 80 cm ◆ Rating: 100 V 55 W ◆ Weight: Approx. 1.75 kg ◆ Power Consumption (High Mode): Approx. 50 Wh ◆ Surface Temperature (Low Mode): Approx. 42°C ◆ Warranty Period: 1 year from the date of purchase (Please check the warranty certificate for details on the scope of the warranty. Faults and damage due to use for purposes other than ordinary household use (such as commercial use) are not covered by the warranty) › See more product details\nBrand YAMAZEN\nSize ごろ寝[180×80㎝]\nItem Weight 1.75 Kilograms\nConstruction Type マシンメイド\nColor beige, (greige)\nVisit the 山善(YAMAZEN) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Yamazen YWC-182F(GG) E Hot Carpet, Washable, Dust Mite Prevention, 3 Levels",
+          "url": "https://www.amazon.co.jp/dp/B0HCBR52DN?th=1",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "safety_features",
-      "label": "安全機能",
-      "keywords": [
-        "自動オフ",
-        "過熱防止",
-        "省エネ"
+      "amazon_title": "フリーダン ホットカーペット 電気カーペット カバー付き 対応ラグ付き 1畳相当 正方形 省エネ FRU101H-HMN フリーダム",
+      "asin": "B0FSK98QYR",
+      "brand": "Freedan",
+      "discovery_axis_id": "desk_fit",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71QdOdjegcL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0FSK98QYR",
+      "provisional": false,
+      "rating": 4.2,
+      "ref": "p4",
+      "review_count": 440,
+      "search_key": "Freedan フリーダン ホットカーペット 電気カーペット カバー付き 対応ラ",
+      "selection_reason": "1畳相当のヒーター本体とフランネルラグのセットで、机下に敷くためのカバーも一度にそろえたい人に向く。同セットのヒーター型番FRU101Hについて、[メーカーは約176×88cm](https://freedom-j.co.jp/freedan/carpet/)と公表している。設置前には付属ラグも含めた外寸を確認したい。",
+      "sources": [
+        {
+          "brand": "Freedan",
+          "excerpt": "Freedan FRU101H-HMN Electric Carpet, Cover Included, Compatible Rug Included, Equivalent to 1 Tatami Mat, Square, Energy Saving, FRU101H-HMN Freedom\nAbout this item\nThis 1 tatami size hot carpet and flannel rug set is perfect for living alone, children's room, bedroom and more. Material: Polyester, Color: (Main Body) Gray (Rag) Light Gray, Brand FREEDAN Features: Lightweight, Soft, Style, Simple › See more product details\nBrand Freedan\nSize 1 tatami mat\nMaterial Polyester\nWeave Type Needle Punched\nItem Weight 1.8 Kilograms\nVisit the Freedan Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Freedan FRU101H-HMN Electric Carpet, Cover Included, Compatible Rug Included, Equivalent to 1 Tatami Mat, Square, Energy Saving, FRU101H-HMN Freedom",
+          "url": "https://www.amazon.co.jp/dp/B0FSK98QYR?th=1",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "price_range",
-      "label": "価格帯",
-      "keywords": [
-        "コスパ",
-        "上位モデル"
+      "amazon_title": "ライフジョイ ホットマット フローリング調 電気マット ベージュ 120cm×45cm キッチン対応 防水 木目調 FM121C",
+      "asin": "B096ZKCCVK",
+      "brand": "",
+      "discovery_axis_id": "easy_care",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61M6rAQvg6L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B096ZKCCVK",
+      "provisional": true,
+      "rating": 4.2,
+      "ref": "p5",
+      "review_count": 317,
+      "search_key": "ライフジョイ ホットマット フローリング調 電気マット ベージュ",
+      "selection_reason": "机の足元だけに敷きたい人向けの約45×120cmの木目調マット。[ライフジョイの製品案内](https://lifejoy.co.jp/pvc/)ではFM121Cをカバーなしで使える、表面が水や汚れに強い製品としている。作業中に床へ落ちた飲み物のしずくなどを、布製カバーを外さず拭き取りたい場面に合う。",
+      "sources": []
+    },
+    {
+      "amazon_title": "ライフジョイ ホットカーペット 1.5畳 フローリング調 電気カーペット 128cm×176cm 防水 ブラウン JPJ151WB",
+      "asin": "B08B3BXTPX",
+      "brand": "LIFEJOY",
+      "discovery_axis_id": "easy_care",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71s5fYHI0AL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B08B3BXTPX",
+      "provisional": false,
+      "rating": 4.1,
+      "ref": "p6",
+      "review_count": 1014,
+      "search_key": "LIFEJOY ライフジョイ ホットカーペット 1.5畳 フローリング調 電気カ",
+      "selection_reason": "足元に加えて机の周囲にも敷く広さがある人向け。JPJ151WBは約128×176cmのカバー不要な一体型で、[メーカー案内](https://lifejoy.co.jp/pvc/)に表面防水とある。机周りの床を広く覆いながら、日常の汚れは表面を拭いて手入れできる。",
+      "sources": [
+        {
+          "brand": "LIFEJOY",
+          "excerpt": "LifeJoy JPJ151WB Hot Carpet, 1.5 Tatami Mats, Flooring Style, Electric Carpet, 50.4 x 69.3 inches (128 x 176 cm), Waterproof, Brown\nAbout this item\n【Waterproof Specification】The surface is waterproofed, making it highly resistant to water and stains, making it ideal for areas prone to spills such as the kitchen and dining room It can be easily cleaned by quickly wiping it with a cloth, towel, etc. even when wet\n【Stain Resistant】The carpet surface is stain resistant and easy to clean Always clean and ready for use, it is recommended for households with children\n(Can be placed under tables and chairs) Can be used under tables and chairs Can withstand up to 1.0 kg per square centimeter If the table legs are 5 cm square, be sure to use spacers or leg caps, etc\n【Easy Operation】The controller has a simple design that allows for easy operation by simply moving the knob The temperature settings are 3 levels: low, medium, and high Moreover, you can set the temperature finely between weak and medium, and between medium and strong You can set it to your preferred temperature and use it\nHigh Safety: All LIFEJOY electric carpets have obtained the S Mark The S Mark is a third-party certification system for the safety of electrical products Product testing and factory quality control inspections are conducted by a third-party certification body › See more product details\nBrand LIFEJOY\nSize 128 x 176 cm (1.5畳)\nMaterial Outer Fabric: 100% polyvinyl chloride, Lining: 100% polyester\nItem Weight 3.1 Kilograms\nPile Height No\nVisit the ライフジョイ(LIFEJOY) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "LifeJoy JPJ151WB Hot Carpet, 1.5 Tatami Mats, Flooring Style, Electric Carpet, 50.4 x 69.3 inches (128 x 176 cm), Waterproof, Brown",
+          "url": "https://www.amazon.co.jp/dp/B08B3BXTPX?th=1",
+          "verified": true
+        }
       ]
     }
   ],
   "selection": {
-    "comparison_axes_covered": [
-      "safety_features",
-      "size_options"
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B01L72ZXJ2",
+            "reason": "1畳用ホットカーペットの定番的な選択肢。アイリスオーヤマの[仕様](https://www.irisohyama.co.jp/products/electrical-appliances/seasonal-appliances/for-feet-heating-appliances/hot-carpet/hot-carpet-basic/)では本体が176×88cm、温度調節が可能と確認できる。机の前に細長い床面を確保でき、足元から椅子の周辺まで敷きたい人に向く。使用時には別途カバーが必要。"
+          },
+          {
+            "asin": "B0DC6SNLDY",
+            "reason": "足を置く場所だけ暖めたい人向けの一人用マット。80×40cm・約0.6kgで、[商品情報](https://payid.jp/item/123598854)にはデスクワーク中の座布団代わりにも使えるとある。机下に大きな敷物を置けないワンルームなら、足元と椅子の上で使う場所を選べる点に魅力がある。"
+          }
+        ]
+      },
+      {
+        "axis_id": "desk_fit",
+        "products": [
+          {
+            "asin": "B0HCBR52DN",
+            "reason": "[山善の仕様](https://book.yamazen.co.jp/product/detail/I00003829)で80×180cmと確認できる細長い一枚。奥行80cmの床面を確保できる机なら、足元の冷える帯状の範囲に合わせて敷ける。裏面の滑り止め加工に加え本体を丸洗いでき、机下から出して手入れしたい人にも向く。"
+          },
+          {
+            "asin": "B0FSK98QYR",
+            "reason": "1畳相当のヒーター本体とフランネルラグのセットで、机下に敷くためのカバーも一度にそろえたい人に向く。同セットのヒーター型番FRU101Hについて、[メーカーは約176×88cm](https://freedom-j.co.jp/freedan/carpet/)と公表している。設置前には付属ラグも含めた外寸を確認したい。"
+          }
+        ]
+      },
+      {
+        "axis_id": "easy_care",
+        "products": [
+          {
+            "asin": "B096ZKCCVK",
+            "reason": "机の足元だけに敷きたい人向けの約45×120cmの木目調マット。[ライフジョイの製品案内](https://lifejoy.co.jp/pvc/)ではFM121Cをカバーなしで使える、表面が水や汚れに強い製品としている。作業中に床へ落ちた飲み物のしずくなどを、布製カバーを外さず拭き取りたい場面に合う。"
+          },
+          {
+            "asin": "B08B3BXTPX",
+            "reason": "足元に加えて机の周囲にも敷く広さがある人向け。JPJ151WBは約128×176cmのカバー不要な一体型で、[メーカー案内](https://lifejoy.co.jp/pvc/)に表面防水とある。机周りの床を広く覆いながら、日常の汚れは表面を拭いて手入れできる。"
+          }
+        ]
+      }
     ],
-    "brand_count": 6,
-    "price_used_as_constraint_only": true
+    "brand_count": 4,
+    "candidate_count": 30,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [],
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": []
   },
-  "products": [
-    {
-      "ref": "p1",
-      "product_id": "AMZ-B0DGPL22VK",
-      "asin": "B0DGPL22VK",
-      "amazon_title": "フリーダン ホットカーペット 電気カーペット 2畳 168×168cm 正方形 省エネ 自動オフタイマー付き 暖房面切換 FRU201UH フリーダム",
-      "brand": "FREEDAN",
-      "image_url": "https://m.media-amazon.com/images/I/91ehJQ037wL._AC_SL1500_.jpg",
-      "observed_price": 6990,
-      "discovery_score": 1,
-      "selection_score": 0.88,
-      "matched_comparison_axes": [
-        "safety_features",
-        "size_options"
-      ],
-      "search_key": "FREEDAN フリーダン ホットカーペット 電気カーペット 2畳 168×16",
-      "selected_variant": "2畳168×168cm、グレー、本体1枚、カバーなし"
-    },
-    {
-      "ref": "p2",
-      "product_id": "AMZ-B096ZNJXPR",
-      "asin": "B096ZNJXPR",
-      "amazon_title": "ライフジョイ ホットカーペット 2畳 本体 フローリング調 電気カーペット 176cm×176cm 暖房面切換 キッチン対応 防水 ベージュ JPJ201WC",
-      "brand": "ライフジョイ",
-      "image_url": "https://m.media-amazon.com/images/I/81v3k1f+aRL._AC_SL1500_.jpg",
-      "observed_price": 17643,
-      "discovery_score": 1,
-      "selection_score": 0.52,
-      "matched_comparison_axes": [
-        "size_options"
-      ],
-      "search_key": "ライフジョイ(LIFEJOY) ライフジョイ ホットカーペット 2畳 本体 フローリング調 電気",
-      "selected_variant": "2畳176×176cm、木目調ベージュ、一体型1枚"
-    },
-    {
-      "ref": "p3",
-      "product_id": "AMZ-B01JS70F50",
-      "asin": "B01JS70F50",
-      "amazon_title": "パナソニック ホットカーペット 電気カーペット トリプル断熱構造 省エネ タイマー機能 ダニ対策 2面切り替え 厚さ6mm 2畳 176×176cm DC-2NK",
-      "brand": "パナソニック",
-      "image_url": "https://m.media-amazon.com/images/I/A1MUKMl0mPL._AC_SL1500_.jpg",
-      "observed_price": 9000,
-      "discovery_score": 1,
-      "selection_score": 0.52,
-      "matched_comparison_axes": [],
-      "search_key": "Francfranc フランフラン エルフィア ホットカーペットラグ M アイボリー×",
-      "selected_variant": "2畳176×176cm、厚さ6mm、ヒーター本体1枚、カバーなし"
-    },
-    {
-      "ref": "p4",
-      "product_id": "AMZ-B01L72ZXMY",
-      "asin": "B01L72ZXMY",
-      "amazon_title": "アイリスオーヤマ ホットカーペット 電気カーペット 2畳 176×176cm IHC-20-H グレー",
-      "brand": "アイリスオーヤマ",
-      "image_url": "https://m.media-amazon.com/images/I/61Q2Ao9-edL._AC_SL1000_.jpg",
-      "observed_price": 8758,
-      "discovery_score": 1,
-      "selection_score": 0.52,
-      "matched_comparison_axes": [
-        "size_options"
-      ],
-      "search_key": "アイリスオーヤマ(IRIS OHYAMA) アイリスオーヤマ ホットカーペット 電気カーペット",
-      "selected_variant": "2畳176×176cm、グレー、スタンダード本体1枚"
-    },
-    {
-      "ref": "p5",
-      "product_id": "AMZ-B0FHVQMMLJ",
-      "asin": "B0FHVQMMLJ",
-      "amazon_title": "[山善] ホットカーペット 空気をキレイにする 電気カーペット 2畳 (170cm×170cm) 省エネモード搭載 節電 暖房面切替 ダニ対策機能 5段階温度調節 消臭 コンパクト収納 6時間オートオフタイマー SUT-202",
-      "brand": "山善",
-      "image_url": "https://m.media-amazon.com/images/I/81DmgExMJML._AC_SL1491_.jpg",
-      "observed_price": 5980,
-      "discovery_score": 1,
-      "selection_score": 0.47,
-      "matched_comparison_axes": [],
-      "search_key": "Sylphease シルフィーズ ラグ マット シェニール織 洗える ウォッシャブル",
-      "selected_variant": "2畳170×170cm、グレー、本体1枚、カバーなし"
-    },
-    {
-      "ref": "p6",
-      "product_id": "AMZ-B0DGT1K1NJ",
-      "asin": "B0DGT1K1NJ",
-      "amazon_title": "ゼンケン【電磁波99%カット】電気ホットカーペット 2畳用 本体のみ(Sシリーズ) 電力1/3モード 暖房7面切替 こたつ併用 速暖 省電力 ダニ対策機能 ZCB-20S",
-      "brand": "ゼンケン",
-      "image_url": "https://m.media-amazon.com/images/I/41x543HcvRL._AC_SX679_.jpg",
-      "observed_price": 5590,
-      "discovery_score": 1,
-      "selection_score": 0.47,
-      "matched_comparison_axes": [
-        "safety_features"
-      ],
-      "search_key": "Juliyas 電気毛布 敷き ホットカーペット 4段階タイマー 72W省エネ",
-      "selected_variant": "Sシリーズ2畳176×176cm、本体のみ1枚"
-    }
-  ]
+  "slug": "electric-carpets-6-picks"
 }
