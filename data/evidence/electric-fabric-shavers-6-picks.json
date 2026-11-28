@@ -1,148 +1,356 @@
 {
-  "slug": "electric-fabric-shavers-6-picks",
-  "category": "gadget",
-  "canonical_url": "https://www.sellemy.jp/article/gadget/electric-fabric-shavers-6-picks.html",
-  "eyecatch_image": "https://www.sellemy.jp/img/electric-fabric-shavers-6-picks/electric-fabric-shavers-6-picks.png",
   "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/electric-fabric-shavers-6-picks.html",
+  "category": "gadget",
   "comparison_axes": [
     {
-      "id": "fabric_protection",
-      "label": "生地への配慮",
+      "id": "popular",
       "keywords": [
-        "風合いガード",
-        "刃の高さ",
-        "デリケート素材"
-      ]
+        "人気"
+      ],
+      "label": "人気・定番の基準"
     },
     {
-      "id": "power",
-      "label": "電源と使い勝手",
+      "id": "fabric_adjustment",
       "keywords": [
-        "充電式",
-        "乾電池式",
-        "コード式"
-      ]
+        "刃の高さ調節",
+        "生地保護カバー",
+        "対応する生地"
+      ],
+      "label": "ニットとコートを生地に合わせて手入れする"
     },
     {
-      "id": "maintenance",
-      "label": "お手入れ",
+      "id": "batch_care",
       "keywords": [
-        "ダストボックス",
-        "替刃",
-        "掃除のしやすさ"
-      ]
+        "給電方法",
+        "連続使用時間",
+        "ごみ容器"
+      ],
+      "label": "衣替えで複数着を続けて手入れする"
     }
   ],
-  "selection": {
-    "comparison_axes_covered": [
-      "fabric_protection",
-      "maintenance",
-      "power"
-    ],
-    "brand_count": 0,
-    "price_used_as_constraint_only": true
+  "eyecatch_image": "https://www.sellemy.jp/img/electric-fabric-shavers-6-picks/electric-fabric-shavers-6-picks.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "27d3af9ba8245c46a81d85abd19e0814f51cb71c94b90d4c621561bd66f54aa8",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 25594,
+      "listing_identity_citations_repaired": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 1641,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 485,
+      "session_id": "01a21bbe-bd9d-7123-96f6-4330db0efc60",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "Equipped with a delicate mode for gentle care of delicate garments"
+            }
+          ],
+          "identity_key": "Tefal Fabric Pill Remover Battery-Operated \"Pill Cleaner\" 3-Blade Texture Guard Delicate M",
+          "identity_quote": "Tefal Fabric Pill Remover Battery-Operated \"Pill Cleaner\" 3-Blade Texture Guard Delicate Mode Electric Red JB2012J0",
+          "reason": "確認済み商品ページ https://www.amazon.co.jp/dp/B0BBQ3LMK9?th=1 のタイトルがブランド、製品種別、型番を示す。掲載説明にデリケートモードも明記されている。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "Equipped with a 3-step mode switch, it allows for usage tailored to the condition of the clothing"
+            }
+          ],
+          "identity_key": "Panasonic Fabric Shaver, Navy NI-LC300-A",
+          "identity_quote": "Panasonic Fabric Shaver, Navy NI-LC300-A",
+          "reason": "確認済み商品ページ https://www.amazon.co.jp/dp/B0FNMNPCC5?th=1 のタイトルがブランド、製品種別、型番を示す。掲載説明に3段階のモード切り替えが明記されている。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "fabric_adjustment",
+              "quote": "The texture guard can be adjusted in 5 stages, changing the finish from 0.5 mm to 2.5 mm in increments of 0.5 mm"
+            }
+          ],
+          "identity_key": "Tescom Lint Remover, Charging & AC Type, 6-Blade, Wearable Attachment, Texture Guard, 5-Le",
+          "identity_quote": "Tescom Lint Remover, Charging & AC Type, 6-Blade, Wearable Attachment, Texture Guard, 5-Level Adjustment, Overseas OK, Lint Treater, Beige TEC-KD5000-C",
+          "reason": "確認済み商品ページ https://www.amazon.co.jp/dp/B0FN2VMF9K?th=1 のタイトルにブランドと型番があり、掲載説明が風合いガードの5段階調節を示す。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "fabric_adjustment",
+              "quote": "Select the speed from low, medium, and high levels based on the condition of the lint and the material, from delicate knits to thick coats"
+            }
+          ],
+          "identity_key": "Rechargeable Lint Remover, Electric Lint Cleaner, Lint Cutter, USB Charging, 6 Blades, Saf",
+          "identity_quote": "Rechargeable Lint Remover, Electric Lint Cleaner, Lint Cutter, USB Charging, 6 Blades, Safety Design, LED Display, Powerful Power Cutter & 3-Speed Adjustment to Avoid Clothing Damage, Comes with 2",
+          "reason": "確認済み商品ページ https://www.amazon.co.jp/dp/B0FYFHF8TT?th=1 のタイトルと掲載説明が、Smyevivaの充電式毛玉取り器と3段階の速度調節を示す。衣類を傷めないという宣伝上の断定は採用しない。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "batch_care",
+              "quote": "電動 USB充電式 毛玉クリーナー"
+            }
+          ],
+          "identity_key": "recolte レコルト ケダマトリ 毛玉取り器 毛玉取り機 電動 USB充電式 毛玉クリーナー 毛玉カッター 衣類対応 ナチュラルホワイト RKR-1(W)",
+          "identity_quote": "recolte レコルト ケダマトリ 毛玉取り器 毛玉取り機 電動 USB充電式 毛玉クリーナー 毛玉カッター 衣類対応 ナチュラルホワイト RKR-1(W)",
+          "reason": "提供された商品掲載タイトル（p5、B08KHBKNHR）に製品種別、USB充電式、型番「RKR-1(W)」がある。連続使用時間の具体値を裏付ける資料は提供されていないため、その値は採用しない。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "batch_care",
+              "quote": "替刃・ブラシ・USBコード付き"
+            }
+          ],
+          "identity_key": "TORRAS 【冬の贈り物にぴったり】 毛玉取り けだまとり 電動 特許新型 毛玉クリーナー 【衣類損傷ゼロ】 替刃・ブラシ・USBコード付き",
+          "identity_quote": "TORRAS 【冬の贈り物にぴったり】 毛玉取り けだまとり 電動 特許新型 毛玉クリーナー 【衣類損傷ゼロ】 替刃・ブラシ・USBコード付き",
+          "reason": "提供された商品掲載タイトル（p6、B08HCDWP6L）に製品種別と付属品「替刃・ブラシ・USBコード付き」がある。型番、連続使用時間、衣類損傷に関する性能は確認できず、採用理由に含めない。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "6件はいずれも掲載タイトルから電動毛玉取り器として識別でき、示された情報に同一製品の色・包装違いを示す根拠はない。各商品は割り当てられた紹介グループに沿って紹介できる。記事本文は未提出のため、本文に関する項目は判定対象外。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
   },
   "products": [
     {
+      "amazon_title": "Tefal Fabric Pill Remover Battery-Operated \"Pill Cleaner\" 3-Blade Texture Guard Delicate Mode Electric Red JB2012J0",
+      "asin": "B0BBQ3LMK9",
+      "brand": "T-Fal",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51B3oNSUh+L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0BBQ3LMK9",
+      "provisional": false,
+      "rating": 4.1,
       "ref": "p1",
-      "product_id": "AMZ-B0FNMNPCC5",
+      "review_count": 4134,
+      "search_key": "T-Fal Tefal Fabric Pill Remover Batter",
+      "selection_reason": "ティファールの乾電池式モデル。風合いガードに加え、薄手のおしゃれ着向けのデリケートモードを備える。衣替えで厚手の服と繊細な服を手入れする人が、生地に応じた操作を考える基準になる。単3電池2本で使う仕様も、充電を待たずに作業を始めたい場面に合う。[ティファール公式](https://www.t-fal.co.jp/home-appliances/lintremover/products/lintremover-1830008685/)",
+      "sources": [
+        {
+          "brand": "T-Fal",
+          "excerpt": "Tefal Fabric Pill Remover Battery-Operated \"Pill Cleaner\" 3-Blade Texture Guard Delicate Mode Electric Red JB2012J0\nAbout this item\nSize: Width 6.7 x Depth 10.4 x Height 17.1 cm\nMain Body Weight: 175g (6.17 oz)\nWith a large mesh, it cuts a wide area quickly\nWith the texture guard, cut away the lint while preserving the fabric's texture\nEquipped with a delicate mode for gentle care of delicate garments › See more product details\nBrand T-Fal\nMaterial Acrylonitrile Butadiene Styrene, Stainless Steel\nColor red\nProduct Dimensions 26D x 41W x 67H mm\nHandle Material Plastic\nVisit the T-Fal Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Tefal Fabric Pill Remover Battery-Operated \"Pill Cleaner\" 3-Blade Texture Guard Delicate Mode Electric Red JB2012J0",
+          "url": "https://www.amazon.co.jp/dp/B0BBQ3LMK9?th=1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "Panasonic Fabric Shaver, Navy NI-LC300-A",
       "asin": "B0FNMNPCC5",
-      "amazon_title": "パナソニック 毛玉クリーナー NI-LC300-A ネイビー",
-      "brand": "パナソニック",
-      "image_url": "https://m.media-amazon.com/images/I/61zpsekfESL._AC_SL1500_.jpg",
-      "observed_price": null,
+      "brand": "Panasonic",
+      "discovery_axis_id": "popular",
       "discovery_score": 1,
-      "selection_score": 0.865,
-      "matched_comparison_axes": [
-        "fabric_protection",
-        "maintenance",
-        "power"
-      ],
-      "search_key": "Sunytree 毛玉取り 電動 強力 けだまとり 持ちやすい",
-      "model": "NI-LC300-A",
-      "selected_variant": "ネイビー・本体1台・USB A-Cケーブル/ブラシ付・ACアダプター別売"
-    },
-    {
+      "image_url": "https://m.media-amazon.com/images/I/61zpsekfESL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0FNMNPCC5",
+      "provisional": false,
+      "rating": 4.2,
       "ref": "p2",
-      "product_id": "AMZ-B08KHBKNHR",
-      "asin": "B08KHBKNHR",
-      "amazon_title": "レコルト ケダマトリ RKR-1(W) ナチュラルホワイト",
-      "brand": "レコルト",
-      "image_url": "https://m.media-amazon.com/images/I/41c-w1mH1oL._AC_SL1000_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.325,
-      "matched_comparison_axes": [],
-      "search_key": "Global Recycled Standard",
-      "model": "RKR-1(W)",
-      "selected_variant": "ナチュラルホワイト・本体1台・microUSBケーブル/清掃ブラシ付"
+      "review_count": 229,
+      "search_key": "Panasonic Fabric Shaver, Navy NI-LC300-A",
+      "selection_reason": "パナソニックのNI-LC300は、押した力でへこみにくい外刃の網と、弱・中・強の3段階切り替えを備える。家族の衣類を順に広げ、毛玉の状態を見ながら強さを選びたい人に向く。6枚刃で毛玉の取り残しを抑えるという製品の特徴も、定番機の使い勝手を知る具体的な手掛かりになる。[パナソニック公式](https://panasonic.jp/iron/products/NI-LC300/feature.html)",
+      "sources": [
+        {
+          "brand": "Panasonic",
+          "excerpt": "Panasonic Fabric Shaver, Navy NI-LC300-A\nAbout this item\n6 blades cut lint thoroughly and cleanly\nSimply glide it gently, and the 6 inner blades will cleanly remove lint\nUses a strong net that won't damage the fabric\nWith a strong net (outer blade) that is not easily dented, it is less likely to damage clothing even when force is applied Equipped with a 3-step mode switch, it allows for usage tailored to the condition of the clothing\nFast charging and long working time › See more product details\nBrand Panasonic\nColor navy\nProduct Dimensions 7.7D x 7.7W x 9.3H cm\nOperation Mode Manual\nManufacturer パナソニック（Panasonic）",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Panasonic Fabric Shaver, Navy NI-LC300-A",
+          "url": "https://www.amazon.co.jp/dp/B0FNMNPCC5?th=1",
+          "verified": true
+        }
+      ]
     },
     {
+      "amazon_title": "Tescom Lint Remover, Charging & AC Type, 6-Blade, Wearable Attachment, Texture Guard, 5-Level Adjustment, Overseas OK, Lint Treater, Beige TEC-KD5000-C",
+      "asin": "B0FN2VMF9K",
+      "brand": "TESCOM",
+      "discovery_axis_id": "fabric_adjustment",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61ELOTutYtL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0FN2VMF9K",
+      "provisional": false,
+      "rating": 4.3,
       "ref": "p3",
-      "product_id": "AMZ-B09MZKC359",
-      "asin": "B09MZKC359",
-      "amazon_title": "Steamery Pilo 2 ファブリックシェーバー チャコールグレー",
-      "brand": "Steamery",
-      "image_url": "https://m.media-amazon.com/images/I/61g4HiVFG0L._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.325,
-      "matched_comparison_axes": [],
-      "search_key": "Global Recycled Standard",
-      "model": "Pilo 2",
-      "selected_variant": "チャコールグレー・国内正規品本体1台"
+      "review_count": 184,
+      "search_key": "TESCOM Lint Remover, Charging & AC Type",
+      "selection_reason": "テスコムのTEC-KD5000-Cは、風合いガードで刃と生地の距離を0.5～2.5mmの5段階に変えられる。毛足を残したいニットと表面の毛玉が気になる衣類を手入れする際、残す繊維の長さを考えて設定したい人に向く。充電式とコンセント給電の両方に対応し、着たまま使うためのアタッチメントも付属する。[テスコム公式販売ページ](https://item.rakuten.co.jp/tescom-japan/kd02/)",
+      "sources": [
+        {
+          "brand": "TESCOM",
+          "excerpt": "Tescom Lint Remover, Charging & AC Type, 6-Blade, Wearable Attachment, Texture Guard, 5-Level Adjustment, Overseas OK, Lint Treater, Beige TEC-KD5000-C\nAbout this item\nCare for a wide range of items from tights to carpets Easily take care of lint on your favorite clothes and cherished garments with the lint cleaner This 2-way power supply can be conveniently used depending on the amount of clothing and the type of fabric\nThe texture guard can be adjusted in 5 stages, changing the finish from 0.5 mm to 2.5 mm in increments of 0.5 mm You can change the length of the fibers you want to keep depending on the fabric, and cut only the parts you are concerned about for a clean finish\nYou can remove lint from your clothes while wearing them, as it comes with a wearable attachment Easily clean thin, long-haired sweaters, tights of 30 denier or more on the spot\nWhen used cordlessly, it can be used for approximately 20 minutes on a single charge It takes about 2 hours to fully charge, so it is a quick-charging type that you can charge and use on the same day you decide\nThe dust box is formulated with anti-static agents to make it easy to remove lint and dust A cleaning brush is also included, making it easy to clean the interior › See more product details\nBrand TESCOM\nColor Charging/AC/Beige\nHandle Material ABS/PC\nOperation Mode Electric\nManufacturer テスコム(TESCOM)\nVisit the TESCOM Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Tescom Lint Remover, Charging & AC Type, 6-Blade, Wearable Attachment, Texture Guard, 5-Level Adjustment, Overseas OK, Lint Treater, Beige TEC-KD5000-C",
+          "url": "https://www.amazon.co.jp/dp/B0FN2VMF9K?th=1",
+          "verified": true
+        }
+      ]
     },
     {
+      "amazon_title": "Rechargeable Lint Remover, Electric Lint Cleaner, Lint Cutter, USB Charging, 6 Blades, Safety Design, LED Display, Powerful Power Cutter & 3-Speed Adjustment to Avoid Clothing Damage, Comes with 2",
+      "asin": "B0FYFHF8TT",
+      "brand": "Smyeviva",
+      "discovery_axis_id": "fabric_adjustment",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61or0k0hvPL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0FYFHF8TT",
+      "provisional": false,
+      "rating": 4.5,
       "ref": "p4",
-      "product_id": "AMZ-B0DFPX8B7G",
-      "asin": "B0DFPX8B7G",
-      "amazon_title": "Toffy 毛玉リムーバー HW-LR1-PA ペールアクア",
-      "brand": "Toffy",
-      "image_url": "https://m.media-amazon.com/images/I/51uelrF-pJL._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.325,
-      "matched_comparison_axes": [
-        "maintenance",
-        "power"
-      ],
-      "search_key": "電動毛玉取り器 USB充電式 コンパクト6枚刃2 60分連稼働",
-      "model": "HW-LR1-PA",
-      "selected_variant": "ペールアクア・本体1台・替刃/掃除ブラシ/USBケーブル付"
+      "review_count": 318,
+      "search_key": "Smyeviva Rechargeable Lint Remover, Elect",
+      "selection_reason": "Smyevivaは刃の回転速度を弱・中・強から選ぶ方式で、商品説明は繊細なニットから厚手のコートまでを対象に挙げている。衣類ごとに毛玉の状態を見て運転の強さを切り替えたい人に向く。蜂の巣状のメッシュカバーを備える一方、刃と生地の距離を調節できるとは記載されていないため、まず目立たない部分で当たり方を確かめたい。[候補商品の商品説明]",
+      "sources": [
+        {
+          "brand": "Smyeviva",
+          "excerpt": "Rechargeable Lint Remover, Electric Lint Cleaner, Lint Cutter, USB Charging, 6 Blades, Safety Design, LED Display, Powerful Power Cutter & 3-Speed Adjustment to Avoid Clothing Damage, Comes with 2\nAbout this item\n【High-efficiency 6-blade design for quick lint removal】**Powerful design with approximately twice the removal efficiency compared to the traditional 3-blade design The delicate stainless steel blades smoothly remove fuzz and lint from various clothing and fabric products such as sweaters, blankets, curtains, and sofas without damaging the fabric A lint remover that restores clothing to a beautiful, like-new condition\n【Powerful motor and 3-speed adjustment for material-specific care】** Equipped with a high-speed, high-torque motor (max 10,000 RPM) Select the speed from low, medium, and high levels based on the condition of the lint and the material, from delicate knits to thick coats Efficient and safe lint removal can be performed with optimal power\n【LED Display & Long-Lasting Operation】** With the LED display, you can easily check the remaining amount, speed, and charging status The built-in large-capacity lithium-ion battery can be used continuously for up to approximately 2 hours with about 2 hours of charging, and it is USB rechargeable, making it convenient for use on the go or while traveling Can be used quickly and easily with any outlet\n【Lightweight and compact for easy storage and portability】** The lightweight body, about the size of your palm (approx. 172g), is designed to reduce fatigue even during prolonged use It can be neatly stored in the gaps of drawers, bags, and suitcases, making it ideal for home use, as well as for clothing care during travel and business trips\n【Safe Design and Abundant Accessories】** Bionic honeycomb mesh cover protects your skin and clothing Equipped with automatic stop function when the cover is removed and overcharge prevention function Comes with 2 replacement blades, a dedicated cleaning brush, and a retractable USB cable for long-term comfortable use › See more product details\nBrand Smyeviva\nMaterial プラスチック\nColor Pink\nProduct Dimensions 8.5D x 8W x 17H cm\nHandle Material Plastic\nBrand: Smyeviva",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Rechargeable Lint Remover, Electric Lint Cleaner, Lint Cutter, USB Charging, 6 Blades, Safety Design, LED Display, Powerful Power Cutter & 3-Speed Adjustment to Avoid Clothing Damage, Comes with 2",
+          "url": "https://www.amazon.co.jp/dp/B0FYFHF8TT?th=1",
+          "verified": true
+        }
+      ]
     },
     {
+      "amazon_title": "recolte レコルト ケダマトリ 毛玉取り器 毛玉取り機 電動 USB充電式 毛玉クリーナー 毛玉カッター 衣類対応 ナチュラルホワイト RKR-1(W)",
+      "asin": "B08KHBKNHR",
+      "brand": "",
+      "discovery_axis_id": "batch_care",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41c-w1mH1oL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B08KHBKNHR",
+      "provisional": true,
+      "rating": 4.2,
       "ref": "p5",
-      "product_id": "AMZ-B0FW4WKVTG",
-      "asin": "B0FW4WKVTG",
-      "amazon_title": "コイズミ 毛玉クリーナー KKT-0100/H",
-      "brand": "コイズミ",
-      "image_url": "https://m.media-amazon.com/images/I/614DO3PaiHL._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.325,
-      "matched_comparison_axes": [
-        "power"
-      ],
-      "search_key": "電動 毛玉クリーナー けだまとり 3段階調整 大容量コードレス（",
-      "model": "KKT-0100/H",
-      "selected_variant": "グレー・本体1台"
+      "review_count": 225,
+      "search_key": "recolte レコルト ケダマトリ 毛玉取り器 毛玉取り機 電",
+      "selection_reason": "レコルトのRKR-1はUSB充電式で、約2時間の充電後に約45分使用できる。コンセントから離れた場所で、家族の衣類を広げて順に手入れしたい人に向く。カバーを外すとホコリ取りブラシになり、毛玉を取った後の衣類や制服のホコリ取りにも使える。[レコルト公式](https://recolte-jp.com/products/kedamatori/?active-tab=faq)",
+      "sources": []
     },
     {
-      "ref": "p6",
-      "product_id": "AMZ-B0GVYK2QKF",
-      "asin": "B0GVYK2QKF",
-      "amazon_title": "ティファール 充電式毛玉クリーナー JB8002J0",
-      "brand": "ティファール",
-      "image_url": "https://m.media-amazon.com/images/I/61pz0V8wZkL._AC_SL1500_.jpg",
-      "observed_price": null,
+      "amazon_title": "TORRAS 【冬の贈り物にぴったり】 毛玉取り けだまとり 電動 特許新型 毛玉クリーナー 【衣類損傷ゼロ】 替刃・ブラシ・USBコード付き",
+      "asin": "B08HCDWP6L",
+      "brand": "",
+      "discovery_axis_id": "batch_care",
       "discovery_score": 1,
-      "selection_score": 0.325,
-      "matched_comparison_axes": [
-        "power"
-      ],
-      "search_key": "ティファール 毛玉取り器 電動 Type-C 「 充電式 毛玉ク",
-      "model": "JB8002J0",
-      "selected_variant": "ブルー・本体1台"
+      "image_url": "https://m.media-amazon.com/images/I/71Xln8ANPmL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B08HCDWP6L",
+      "provisional": true,
+      "rating": 4.3,
+      "ref": "p6",
+      "review_count": 2489,
+      "search_key": "TORRAS 毛玉取り けだまとり 電動 特許新型 毛玉クリーナ",
+      "selection_reason": "TORRASの候補商品は、充電用USBコードに加え、替刃と掃除用ブラシが付属する。衣替えで複数着を続けて扱い、途中や作業後に刃周りの毛玉くずを掃除したい人が付属品まで含めて検討できる一台。候補タイトルから連続使用時間やごみ容器の容量は確認できないため、その数値は採用理由に含めていない。[候補商品の商品タイトル]",
+      "sources": []
     }
-  ]
+  ],
+  "selection": {
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B0BBQ3LMK9",
+            "reason": "ティファールの乾電池式モデル。風合いガードに加え、薄手のおしゃれ着向けのデリケートモードを備える。衣替えで厚手の服と繊細な服を手入れする人が、生地に応じた操作を考える基準になる。単3電池2本で使う仕様も、充電を待たずに作業を始めたい場面に合う。[ティファール公式](https://www.t-fal.co.jp/home-appliances/lintremover/products/lintremover-1830008685/)"
+          },
+          {
+            "asin": "B0FNMNPCC5",
+            "reason": "パナソニックのNI-LC300は、押した力でへこみにくい外刃の網と、弱・中・強の3段階切り替えを備える。家族の衣類を順に広げ、毛玉の状態を見ながら強さを選びたい人に向く。6枚刃で毛玉の取り残しを抑えるという製品の特徴も、定番機の使い勝手を知る具体的な手掛かりになる。[パナソニック公式](https://panasonic.jp/iron/products/NI-LC300/feature.html)"
+          }
+        ]
+      },
+      {
+        "axis_id": "fabric_adjustment",
+        "products": [
+          {
+            "asin": "B0FN2VMF9K",
+            "reason": "テスコムのTEC-KD5000-Cは、風合いガードで刃と生地の距離を0.5～2.5mmの5段階に変えられる。毛足を残したいニットと表面の毛玉が気になる衣類を手入れする際、残す繊維の長さを考えて設定したい人に向く。充電式とコンセント給電の両方に対応し、着たまま使うためのアタッチメントも付属する。[テスコム公式販売ページ](https://item.rakuten.co.jp/tescom-japan/kd02/)"
+          },
+          {
+            "asin": "B0FYFHF8TT",
+            "reason": "Smyevivaは刃の回転速度を弱・中・強から選ぶ方式で、商品説明は繊細なニットから厚手のコートまでを対象に挙げている。衣類ごとに毛玉の状態を見て運転の強さを切り替えたい人に向く。蜂の巣状のメッシュカバーを備える一方、刃と生地の距離を調節できるとは記載されていないため、まず目立たない部分で当たり方を確かめたい。[候補商品の商品説明]"
+          }
+        ]
+      },
+      {
+        "axis_id": "batch_care",
+        "products": [
+          {
+            "asin": "B08KHBKNHR",
+            "reason": "レコルトのRKR-1はUSB充電式で、約2時間の充電後に約45分使用できる。コンセントから離れた場所で、家族の衣類を広げて順に手入れしたい人に向く。カバーを外すとホコリ取りブラシになり、毛玉を取った後の衣類や制服のホコリ取りにも使える。[レコルト公式](https://recolte-jp.com/products/kedamatori/?active-tab=faq)"
+          },
+          {
+            "asin": "B08HCDWP6L",
+            "reason": "TORRASの候補商品は、充電用USBコードに加え、替刃と掃除用ブラシが付属する。衣替えで複数着を続けて扱い、途中や作業後に刃周りの毛玉くずを掃除したい人が付属品まで含めて検討できる一台。候補タイトルから連続使用時間やごみ容器の容量は確認できないため、その数値は採用理由に含めていない。[候補商品の商品タイトル]"
+          }
+        ]
+      }
+    ],
+    "brand_count": 4,
+    "candidate_count": 18,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [],
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": []
+  },
+  "slug": "electric-fabric-shavers-6-picks"
 }
