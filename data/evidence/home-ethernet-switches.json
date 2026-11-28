@@ -4,157 +4,444 @@
   "category": "gadget",
   "comparison_axes": [
     {
-      "id": "port_allocation",
+      "id": "popular",
       "keywords": [
-        "総ポート数",
-        "ルーター接続分",
-        "ポートごとの対応規格"
+        "人気"
       ],
-      "label": "ポート数と接続構成"
+      "label": "人気・定番の基準"
     },
     {
-      "id": "network_conditions",
+      "id": "multi_gig_nas",
       "keywords": [
-        "リンク速度",
-        "LANケーブル規格",
-        "自動速度調整"
+        "2.5GbE",
+        "マルチギガ",
+        "NAS",
+        "ポート数"
       ],
-      "label": "接続機器と配線の対応条件"
+      "label": "NASとの通信を見据えた2.5GbEポート構成"
     },
     {
-      "id": "placement_power",
+      "id": "poe_access_point",
       "keywords": [
-        "本体寸法",
-        "壁掛け対応",
-        "ファンの有無"
+        "PoE",
+        "給電容量",
+        "アクセスポイント",
+        "対応規格"
       ],
-      "label": "設置方法と電源・動作音の条件"
+      "label": "アクセスポイントの設置場所を広げるPoE給電"
     }
   ],
   "eyecatch_image": "https://www.sellemy.jp/img/home-ethernet-switches/home-ethernet-switches.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "8dd13f1e8ebe79c64f6dbdde30b8011ddfa855082fea5761ada5af2cd293d729",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 26703,
+      "listing_identity_citations_repaired": [
+        "p1",
+        "p2",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 1941,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 813,
+      "session_id": "01a221b6-7783-7162-9900-61d0144b915a",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "5-port switching hub with all ports supporting 2.5 Gbps"
+            }
+          ],
+          "identity_key": "エレコム スイッチングハブ 2.5G対応 5ポート 金属筐体 電源外付モデル 全ポート2.5Gbps対応 日本メーカー EHC-LQ01-5",
+          "identity_quote": "エレコム スイッチングハブ 2.5G対応 5ポート 金属筐体 電源外付モデル 全ポート2.5Gbps対応 日本メーカー EHC-LQ01-5",
+          "reason": "検証済み掲載情報で型番を識別できる。5ポートすべての2.5Gbps対応とファンレス設計が明記され、少数の有線機器を家庭でつなぐ用途に紹介できる。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "Can also be mounted on the wall."
+            }
+          ],
+          "identity_key": "バッファロー 5ポート Giga対応 スイッチングハブ 金属筐体 電源外付け 壁掛け対応 LSW-5GSE/NBK",
+          "identity_quote": "バッファロー 5ポート Giga対応 スイッチングハブ 金属筐体 電源外付け 壁掛け対応 LSW-5GSE/NBK",
+          "reason": "検証済み掲載情報で型番を識別できる。5つのギガビットポートと壁掛け対応が明記され、家庭の有線接続口を増やす用途に紹介できる。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "multi_gig_nas",
+              "quote": "Equipped with 8 2.5Gbps ports"
+            }
+          ],
+          "identity_key": "TP-Link TL-SG108-M2",
+          "identity_quote": "TP-Link TL-SG108-M2 8 Ports Each Port Supports 2.5Gbps",
+          "reason": "検証済み掲載情報で型番を識別できる。8つの2.5Gbps対応ポートが、NASを含む複数の有線機器をつなぐ用途に合う。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "multi_gig_nas",
+              "quote": "4x2.5G RJ45 and 2x10G SFP+"
+            }
+          ],
+          "identity_key": "2.5gbps スイッチングハブ 6ポート（4x2.5G RJ45と2x10G SFP+）搭載 個人や家庭向けのスイッチングハブ 静音ファンレス設計 デスクトップや壁掛け設置可能",
+          "identity_quote": "2.5gbps スイッチングハブ 6ポート（4x2.5G RJ45と2x10G SFP+）搭載 個人や家庭向けのスイッチングハブ 静音ファンレス設計 デスクトップや壁掛け設置可能 金属筐体 プラグアンドプレイ アンマネージド スイッチングハブ",
+          "reason": "検証済み掲載情報のブランド欄にFoxneo、商品タイトルに固有のポート構成があり、掲載商品を追跡できる。2.5G対応RJ45でNASなどをつなぎ、SFP+接続口も用意したい用途に紹介できる。実効性能は主張しない。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "poe_access_point",
+              "quote": "Each PoE port can supply up to 30W, with a total of 63W supplied by all PoE ports"
+            }
+          ],
+          "identity_key": "TP-Link 10ポート ギガビット デスクトップ スイッチングハブ(8 PoE+ ポート 搭載) poe ハブ TL-SG1210P",
+          "identity_quote": "TP-Link 10ポート ギガビット デスクトップ スイッチングハブ(8 PoE+ ポート 搭載) poe ハブ TL-SG1210P",
+          "reason": "検証済み掲載情報で型番を識別できる。8つのPoE+ポートと合計63Wの給電上限が明記され、複数の対応アクセスポイントを設置する用途に紹介できる。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "poe_access_point",
+              "quote": "4 Ports PoE+ up to 30W each) Total 40W"
+            }
+          ],
+          "identity_key": "TP-Link スイッチングハブ 5ポート PoE+ (4ポートPoE+、各30Wまで) 合計40W対応 5年保証 TL-SG1005LP",
+          "identity_quote": "TP-Link スイッチングハブ 5ポート PoE+ (4ポートPoE+、各30Wまで) 合計40W対応 5年保証 TL-SG1005LP",
+          "reason": "検証済み掲載情報で型番を識別できる。p5とは型番とポート構成が異なる。4つのPoE+ポートと合計40Wの給電上限が明記され、少数の対応機器を給電する用途に紹介できる。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "検証済みの商品掲載情報から、家庭用スイッチングハブ6商品を識別できる。各商品は既存の3つの紹介切り口に適合し、掲載情報に明記されたポート構成や給電機能に基づいて紹介できる。記事本文は未提出のため、本文に関する項目は未評価としてfalseとした。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
   "products": [
     {
-      "amazon_title": "NETGEAR 卓上型コンパクト アンマネージスイッチングハブ GS316 ギガビット 16ポート 静音ファンレス 省電力設計 3年保証",
-      "asin": "B0FRZZKN8T",
-      "brand": "NETGEAR",
+      "amazon_title": "エレコム スイッチングハブ 2.5G対応 5ポート 金属筐体 電源外付モデル 全ポート2.5Gbps対応 日本メーカー EHC-LQ01-5",
+      "asin": "B0G4BQW7NR",
+      "brand": "エレコム(ELECOM)",
+      "discovery_axis_id": "popular",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/31Dr5b10NOL._AC_SX300_SY300_QL70_ML2_.jpg",
-      "matched_comparison_axes": [
-        "placement_power"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/61DZh8pg0nL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B0FRZZKN8T",
+      "product_id": "AMZ-B0G4BQW7NR",
+      "provisional": false,
+      "rating": 4.5,
       "ref": "p1",
-      "search_key": "UGREEN スイッチングハブ 16ポート ギガビット LANハ",
-      "selection_score": 0.49,
-      "model": "NETGEAR GS316-300JPS",
-      "selected_variant": {
-        "style": "16ポート/ギガビット",
-        "count": 1
-      }
+      "review_count": 174,
+      "search_key": "エレコム(ELECOM) エレコム スイッチングハブ 2.5G対応 5ポート 金属筐体 電",
+      "selection_reason": "エレコムの製品情報によると、5つのポートすべてが2.5Gbps対応で、片手で持てる小型のファンレス機。NASとPCを含む少数の有線機器を静かな部屋でつなぎ、家庭内LANを2.5GbEへ更新したい読者に向く。2.5Gbpsで通信するには接続機器とLANケーブルも対応が必要で、速度は理論上の最大値。",
+      "sources": [
+        {
+          "brand": "エレコム(ELECOM)",
+          "excerpt": "Elecom EHC-LQ01-5 Switching Hub, Supports 2.5 G, 5 Ports, Metal Housing, External Power Supply, All Ports, Supports 2.5 Gbps, Made in Japan\nAbout this item\n5-port switching hub with all ports supporting 2.5 Gbps When combined with a high-speed internet line, it can create a 2.5Gbps communication environment, allowing you to comfortably enjoy large-capacity services such as online gaming and video streaming\n※This is the theoretical maximum value and does not indicate actual transfer speeds Also, in order to communicate at 2.5Gbps, the connected LAN cable and device must be compatible with 2.5GBASE-T\nFanless design ensures no operation noise Recommended for use in homes and offices that prioritize quietness\nSmall one hand held model, which takes little space to install\nIt is equipped with a loop detection function The LED lamp flashes to notify you of a network loop occurrence, encouraging the resolution of network failures › See more product details\nBrand エレコム(ELECOM)\nNumber of Ports 5\nIncluded Components 1 piece for safe use, 1 x Dedicated AC Adapter (Approx. 5.9 ft (1.8 m), 1 x Quick Setup Guide, 4 x Rubber Feet1 piece for safe use, 1 x Dedicated AC Adapter (Approx. 5.9 ft (1.8 m), 1 x Quick Setup Guide, 4 x Rubber Feet See more\nColor Black\nUpper Temperature Rating 50 Degrees Celsius\nVisit the エレコム(ELECOM) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Elecom EHC-LQ01-5 Switching Hub, Supports 2.5 G, 5 Ports, Metal Housing, External Power Supply, All Ports, Supports 2.5 Gbps, Made in Japan",
+          "url": "https://www.amazon.co.jp/dp/B0G4BQW7NR?th=1",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "サンワダイレクト スイッチングハブ Giga対応 AUTO-MDIX機能搭載 3ポート 2分配 アルミ筐体 USB給電 500-SWH012",
-      "asin": "B0GK6NZ5BV",
-      "brand": "サンワダイレクト",
-      "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61TPABtxa9L._AC_SL1280_.jpg",
-      "matched_comparison_axes": [],
-      "observed_price": null,
-      "product_id": "AMZ-B0GK6NZ5BV",
-      "ref": "p2",
-      "search_key": "サンワダイレクト スイッチングハブ Giga対応 AUTO-MD",
-      "selection_score": 0.31,
-      "model": "サンワダイレクト 500-SWH012",
-      "selected_variant": {
-        "style": "3ポート/ギガビット/USB-C給電",
-        "count": 1
-      }
-    },
-    {
-      "amazon_title": "TP-Link 5ポート スイッチングハブ 10/100/1000Mbps ギガビット 金属筺体 設定不要 メーカー保証ライフタイム保証 TL-SG105",
-      "asin": "B00A128S24",
-      "brand": "TP-Link",
-      "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/81axMty7hkL._AC_SL1500_.jpg",
-      "matched_comparison_axes": [],
-      "observed_price": null,
-      "product_id": "AMZ-B00A128S24",
-      "ref": "p3",
-      "search_key": "UGREEN スイッチングハブ 5 ポートギガビット Giga対",
-      "selection_score": 0.31,
-      "model": "TP-Link TL-SG105",
-      "selected_variant": {
-        "style": "5ポート/ギガビット/金属筐体",
-        "count": 1
-      }
-    },
-    {
-      "amazon_title": "IODATA 5ポート スイッチングハブ 10G対応 SFP+搭載 2.5Gbps BSH-QG05/UE",
-      "asin": "B0F8BJ85FX",
-      "brand": "I-O DATA",
-      "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71dbu7wRVKL._AC_SL1500_.jpg",
-      "matched_comparison_axes": [],
-      "observed_price": null,
-      "product_id": "AMZ-B0F8BJ85FX",
-      "ref": "p4",
-      "search_key": "UGREEN スイッチングハブ 8ポートギガビット Giga対応",
-      "selection_score": 0.31,
-      "model": "I-O DATA BSH-QG05/UE",
-      "selected_variant": {
-        "style": "2.5GbE 5ポート + 10G SFP+ポート",
-        "count": 1
-      }
-    },
-    {
-      "amazon_title": "エレコム Giga対応スイッチングHub 8ポート 金属筐体 磁石付き 電源内蔵モデル ブラック EHC-G08MN4-HJB",
-      "asin": "B0DJ8CLQT6",
-      "brand": "ELECOM",
-      "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51jiek+Uy7L._SL1500_.jpg",
-      "matched_comparison_axes": [
-        "placement_power"
-      ],
-      "observed_price": null,
-      "product_id": "AMZ-B0DJ8CLQT6",
-      "ref": "p5",
-      "search_key": "バッファロー 5ポート Giga対応 スイッチングハブ 金属筐体",
-      "selection_score": 0.31,
-      "model": "エレコム EHC-G08MN4-HJB",
-      "selected_variant": {
-        "style": "8ポート/ブラック/電源内蔵",
-        "count": 1
-      }
-    },
-    {
-      "amazon_title": "バッファロー 8ポート Giga対応 スイッチングハブ 金属筐体 電源外付け 壁掛け対応 LSW-8GSE/NBK",
-      "asin": "B0FBM8PXK2",
+      "amazon_title": "バッファロー 5ポート Giga対応 スイッチングハブ 金属筐体 電源外付け 壁掛け対応 LSW-5GSE/NBK",
+      "asin": "B0FBM9JFD2",
       "brand": "BUFFALO",
+      "discovery_axis_id": "popular",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61O-5rgiMjL._AC_SL1500_.jpg",
-      "matched_comparison_axes": [
-        "placement_power"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/61rHJsHXzLL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B0FBM8PXK2",
+      "product_id": "AMZ-B0FBM9JFD2",
+      "provisional": false,
+      "rating": 4.5,
+      "ref": "p2",
+      "review_count": 379,
+      "search_key": "BUFFALO バッファロー 5ポート Giga対応 スイッチングハブ 金属筐体",
+      "selection_reason": "バッファローの製品情報によると、5つのギガビットポートを備え、壁掛け時も配線を一方向にまとめられる。玄関付近の通信機器用収納ボックスにルーターと並べて置き、まず有線の接続口を増やしたい読者に合う。壁面固定用のネジは別途必要。",
+      "sources": [
+        {
+          "brand": "BUFFALO",
+          "excerpt": "バッファロー LSW-5GSE/NBK 5-Port Giga-Compatible Switching Hub, Metal Housing\nAbout this item\nCompatible with all Giga ports: This 5-port switching hub supports high-speed transfer of 1000 Mbps (standard value). You can connect multiple devices such as game consoles, TVs, printers, computers, etc\nMetal housing with excellent heat dissipation: The metal housing provides stable operation despite its fanless design\nNeat Installation: The LAN port and power terminal are integrated into the back. The cables can be bundled together on the back for neat placement. Can also be mounted on the wall. *Please prepare 2 screws for wall mounting separately\n【Notify Loop Occurrence with LED】Notify network loops, which can be difficult to identify, with LEDs. This can speed up recovery from any network failures\n【Auto Power Saving Function】By using the “Auto Power Saving” feature, the port usage status is automatically determined. It limits the power consumption of ports connected to devices that are turned off, reducing the overall power consumption\nAmazon Exclusive: Delivered in simple, environmentally friendly packaging › See more product details\nBrand BUFFALO\nNumber of Ports 5\nIncluded Components AC Adapter, Instruction manual (English language not guaranteed), Rubber feet\nColor Black\nUpper Temperature Rating 40 Degrees Celsius",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "バッファロー LSW-5GSE/NBK 5-Port Giga-Compatible Switching Hub, Metal Housing",
+          "url": "https://www.amazon.co.jp/dp/B0FBM9JFD2?th=1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "TP-Link 8ポート 各ポート 2.5Gbps 対応(ポート同時使用時 最大40Gbpsまで) ハブ アンマネージ スイッチングハブ TL-SG108-M2",
+      "asin": "B08WQ16H4N",
+      "brand": "TP-Link",
+      "discovery_axis_id": "multi_gig_nas",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/518uC+XyEEL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B08WQ16H4N",
+      "provisional": false,
+      "rating": 4.6,
+      "ref": "p3",
+      "review_count": 626,
+      "search_key": "TP-Link 8ポート 各ポート 2.5Gbps 対応(ポート同時使用時 最大",
+      "selection_reason": "TP-Linkの製品情報によると、8つのRJ45ポートがすべて2.5Gbps対応。2.5GbE対応NASに加え、複数のPCやアクセスポイントも有線でつなぎ、今後の増設分までポートを確保したい家庭に向く。デスクトップ設置と壁掛けに対応し、設定不要で使える。",
+      "sources": [
+        {
+          "brand": "TP-Link",
+          "excerpt": "TP-Link TL-SG108-M2 8 Ports Each Port Supports 2.5Gbps (Up to 40Gbps simultaneously) Hub Unmanage Switching Hub\nAbout this item\nFeatures: Equipped with 8 2.5Gbps ports and up to 25Gbps switching capacity to provide multi-gigabit bandwidth to connected devices\nWith the introduction of Green Ethernet technology, you can save up to 84% of power consumption over existing models\n[High Reliability] Reliable data transfer based on IEEE 802.3X\n[Metal Housing] Perfect for desktop installation or wall mounting\nNo Setup Required: Plug & Play design, ready to use simply by plugging in\n[Warranty] 5 year warranty › See more product details\nBrand TP-Link\nNumber of Ports 8\nIncluded Components Switching Hub TL-SG108-M2\nColor charcoal\nCompatible Devices Desktop\nVisit the TP-Link Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "TP-Link TL-SG108-M2 8 Ports Each Port Supports 2.5Gbps (Up to 40Gbps simultaneously) Hub Unmanage Switching Hub",
+          "url": "https://www.amazon.co.jp/dp/B08WQ16H4N",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "2.5gbps スイッチングハブ 6ポート（4x2.5G RJ45と2x10G SFP+）搭載 個人や家庭向けのスイッチングハブ 静音ファンレス設計 デスクトップや壁掛け設置可能 金属筐体 プラグアンドプレイ アンマネージド スイッチングハブ",
+      "asin": "B0CWVHNZVJ",
+      "brand": "Foxneo",
+      "discovery_axis_id": "multi_gig_nas",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51mRvi--VmL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0CWVHNZVJ",
+      "provisional": false,
+      "rating": 4.2,
+      "ref": "p4",
+      "review_count": 183,
+      "search_key": "Foxneo 2.5gbps スイッチングハブ 6ポート（4x2.5G RJ4",
+      "selection_reason": "商品説明にある構成は2.5G対応RJ45が4口、10G SFP+が2口。NASとPCをRJ45で接続しつつ、将来SFP+を使う機器や上位のスイッチへの接続口も用意したい読者に興味深い構成。SFP+を使う場合は接続先に合う機器や部材を別途確認する必要がある。",
+      "sources": [
+        {
+          "brand": "Foxneo",
+          "excerpt": "2.5gbps Switching Hub with 6 Ports (4x2.5G RJ45 and 2x10G SFP+), Switching Hub for Personal and Home Use, Quiet Fanless Design, Desktop or Wall Mount, Metal Housing, Plug and Play, Unmanaged\nAbout this item\n【High Performance Network Connectivity】 Our 2.5gbps switching hub boasts a robust 60Gbps switching capacity, providing exceptional high-speed network connection This ensures excellent performance in a wide range of applications, making it ideal for computer network switches Provides seamless and efficient data traffic across a variety of devices and networking scenarios\n【Plug & Play Convenience】 With this unmanaged plug and play switch, you can easily set up your network Simply connect the power cable and connect your device with an Ethernet cable and you can use it immediately without complicated setup\n【Reliable and Quiet Operation】 Built to last, this internet splitter features lightning protection and a durable metal case Fanless design maintains optimal cooling while ensuring silent operation\n【Wide Compatibility Devices】 This switching hub is compatible with a variety of network devices and applications Suitable for various scenarios such as 2.5G NAS, 4K video streaming, gaming PCs, 2.5G servers, and 2.5G PCIe adapters This wide compatibility allows the switch to effectively support a wide range of network settings and devices, making it a versatile network distributor\n【Flexible Installation Method】 This SFP+ network switch allows for flexible installation It can be mounted on a desktop or wall so you can choose the installation method that best suits your specific network needs and space constraints\n【Comes with a reassuring 2-year warranty】We are confident in the quality of this product and offer a reassuring 2-year manufacturer warranty 【Latest Upgrade! This product has completed a new upgrade and added VLAN functionality When using the SFP port as an uplink port, the VLAN segmentation function can be realized with the RJ45 port Moreover, since VLAN functionality is only added to the physical ports, it does not affect the network security at all › See more product details\nBrand Foxneo\nNumber of Ports 6\nIncluded Components 1 x User Manual, 12 V 1 A (DC) power cord x 1, Switching hub x 1\nColor Black\nCompatible Devices Desktop, Laptop, Router\nVisit the Foxneo Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "2.5gbps Switching Hub with 6 Ports (4x2.5G RJ45 and 2x10G SFP+), Switching Hub for Personal and Home Use, Quiet Fanless Design, Desktop or Wall Mount, Metal Housing, Plug and Play, Unmanaged",
+          "url": "https://www.amazon.co.jp/dp/B0CWVHNZVJ",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "TP-Link 10ポート ギガビット デスクトップ スイッチングハブ(8 PoE+ ポート 搭載) poe ハブ TL-SG1210P",
+      "asin": "B08562FQTW",
+      "brand": "TP-Link",
+      "discovery_axis_id": "poe_access_point",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81EYct888yL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B08562FQTW",
+      "provisional": false,
+      "rating": 4.8,
+      "ref": "p5",
+      "review_count": 428,
+      "search_key": "TP-Link 10ポート ギガビット デスクトップ スイッチングハブ(8 Po",
+      "selection_reason": "TP-Linkの製品情報によると、IEEE 802.3af/at対応のPoE+ポートが8口あり、各口最大30W、全口合計63Wまで給電できる。家の複数箇所に対応アクセスポイントを配置し、各設置場所への電源配線を減らしたい読者に向く。接続予定機器の消費電力は合計63W以内か確認したい。",
+      "sources": [
+        {
+          "brand": "TP-Link",
+          "excerpt": "TP-Link 10-Port Gigabit Desktop Switching Hub (with 8 PoE+ Ports) poe hub TL-SG1210P\nAbout this item\nFeatures: 10/100/1000Mbps RJ45 ×9, Gigabit SFP port × 1 Of the 8 ports, 8 ports support PoE+ and provide both power and data simultaneously with a single LAN cable\nAvailable with PD compliant with [IEEE802.3af/at] IEEE 802.3af/at\nSmooth Transfer: 802.1p/DSCP QoS enables smooth transfer with no delay\nEach PoE port can supply up to 30W, with a total of 63W supplied by all PoE ports*\n【Warranty】Industry-leading 5-year warranty › See more product details\nBrand TP-Link\nNumber of Ports 10\nIncluded Components TL-SG1210P Main Unit\nColor Black\nCompatible Devices Desktop\nVisit the TP-Link Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "TP-Link 10-Port Gigabit Desktop Switching Hub (with 8 PoE+ Ports) poe hub TL-SG1210P",
+          "url": "https://www.amazon.co.jp/dp/B08562FQTW?th=1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "TP-Link スイッチングハブ 5ポート PoE+ (4ポートPoE+、各30Wまで) 合計40W対応 5年保証 TL-SG1005LP",
+      "asin": "B08FY4G3FN",
+      "brand": "TP-Link",
+      "discovery_axis_id": "poe_access_point",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51UIIf6c70L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B08FY4G3FN",
+      "provisional": false,
+      "rating": 4.4,
       "ref": "p6",
-      "search_key": "バッファロー 8ポート Giga対応 スイッチングハブ 金属筐体",
-      "selection_score": 0.31,
-      "model": "バッファロー LSW-8GSE/NBK",
-      "selected_variant": {
-        "style": "8ポート/ブラック/2025年/Amazon限定包装",
-        "count": 1
-      }
+      "review_count": 853,
+      "search_key": "TP-Link スイッチングハブ 5ポート PoE+ (4ポートPoE+、各30",
+      "selection_reason": "TP-Linkの製品情報によると、5ポートのうち4ポートがIEEE 802.3af/at対応のPoE+で、給電予算は合計40W。アクセスポイントを少数設置し、LANケーブル一本で通信と給電を済ませたい家庭に合う。各機器の必要電力を確認し、複数台の合計が40Wに収まる構成で選べる。",
+      "sources": [
+        {
+          "brand": "TP-Link",
+          "excerpt": "TP-Link Switching Hub 5-Port PoE+ (4 Ports PoE+ up to 30W each) Total 40W Support 5-Year Warranty TL-SG1005LP\nAbout this item\n[Features] 4 PoE+ ports to transfer data and power in a single cable\n[Feature 2] Supports PD (powered device) compliant with IEEE 802.3af/at\n[Feature 3] 802.1p/DSCP QoS ensures smooth traffic that is susceptible to delay › See more product details\nBrand TP-Link\nNumber of Ports 5\nIncluded Components TL-SG1005LP\nColor Black\nCompatible Devices Camera, Desktop\nVisit the TP-Link Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "TP-Link Switching Hub 5-Port PoE+ (4 Ports PoE+ up to 30W each) Total 40W Support 5-Year Warranty TL-SG1005LP",
+          "url": "https://www.amazon.co.jp/dp/B08FY4G3FN",
+          "verified": true
+        }
+      ]
     }
   ],
   "selection": {
-    "brand_count": 0,
-    "comparison_axes_covered": [
-      "placement_power"
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B0G4BQW7NR",
+            "reason": "エレコムの製品情報によると、5つのポートすべてが2.5Gbps対応で、片手で持てる小型のファンレス機。NASとPCを含む少数の有線機器を静かな部屋でつなぎ、家庭内LANを2.5GbEへ更新したい読者に向く。2.5Gbpsで通信するには接続機器とLANケーブルも対応が必要で、速度は理論上の最大値。"
+          },
+          {
+            "asin": "B0FBM9JFD2",
+            "reason": "バッファローの製品情報によると、5つのギガビットポートを備え、壁掛け時も配線を一方向にまとめられる。玄関付近の通信機器用収納ボックスにルーターと並べて置き、まず有線の接続口を増やしたい読者に合う。壁面固定用のネジは別途必要。"
+          }
+        ]
+      },
+      {
+        "axis_id": "multi_gig_nas",
+        "products": [
+          {
+            "asin": "B08WQ16H4N",
+            "reason": "TP-Linkの製品情報によると、8つのRJ45ポートがすべて2.5Gbps対応。2.5GbE対応NASに加え、複数のPCやアクセスポイントも有線でつなぎ、今後の増設分までポートを確保したい家庭に向く。デスクトップ設置と壁掛けに対応し、設定不要で使える。"
+          },
+          {
+            "asin": "B0CWVHNZVJ",
+            "reason": "商品説明にある構成は2.5G対応RJ45が4口、10G SFP+が2口。NASとPCをRJ45で接続しつつ、将来SFP+を使う機器や上位のスイッチへの接続口も用意したい読者に興味深い構成。SFP+を使う場合は接続先に合う機器や部材を別途確認する必要がある。"
+          }
+        ]
+      },
+      {
+        "axis_id": "poe_access_point",
+        "products": [
+          {
+            "asin": "B08562FQTW",
+            "reason": "TP-Linkの製品情報によると、IEEE 802.3af/at対応のPoE+ポートが8口あり、各口最大30W、全口合計63Wまで給電できる。家の複数箇所に対応アクセスポイントを配置し、各設置場所への電源配線を減らしたい読者に向く。接続予定機器の消費電力は合計63W以内か確認したい。"
+          },
+          {
+            "asin": "B08FY4G3FN",
+            "reason": "TP-Linkの製品情報によると、5ポートのうち4ポートがIEEE 802.3af/at対応のPoE+で、給電予算は合計40W。アクセスポイントを少数設置し、LANケーブル一本で通信と給電を済ませたい家庭に合う。各機器の必要電力を確認し、複数台の合計が40Wに収まる構成で選べる。"
+          }
+        ]
+      }
     ],
-    "content_duplicates_removed": [],
-    "price_used_as_constraint_only": true
+    "brand_count": 4,
+    "candidate_count": 27,
+    "comparison_axes_covered": [
+      "multi_gig_nas",
+      "poe_access_point"
+    ],
+    "content_duplicates_removed": [
+      {
+        "asin": "B0G4BQW7NR",
+        "check_items": {
+          "color_design_only": "UNKNOWN",
+          "function_structure_difference": "UNKNOWN",
+          "independent_comparison_value": "UNKNOWN",
+          "manufacturer_brand_relation": "UNKNOWN",
+          "sales_packaging_only": "UNKNOWN",
+          "same_product_body": "FAIL",
+          "series_generation_difference": "UNKNOWN",
+          "size_capacity_difference": "UNKNOWN"
+        },
+        "duplicate_of_asin": "B0G4BQW7NR",
+        "reason": "same_asin"
+      },
+      {
+        "asin": "B0FBM9JFD2",
+        "check_items": {
+          "color_design_only": "UNKNOWN",
+          "function_structure_difference": "UNKNOWN",
+          "independent_comparison_value": "UNKNOWN",
+          "manufacturer_brand_relation": "UNKNOWN",
+          "sales_packaging_only": "UNKNOWN",
+          "same_product_body": "FAIL",
+          "series_generation_difference": "UNKNOWN",
+          "size_capacity_difference": "UNKNOWN"
+        },
+        "duplicate_of_asin": "B0FBM9JFD2",
+        "reason": "same_asin"
+      },
+      {
+        "asin": "B08562FQTW",
+        "check_items": {
+          "color_design_only": "UNKNOWN",
+          "function_structure_difference": "UNKNOWN",
+          "independent_comparison_value": "UNKNOWN",
+          "manufacturer_brand_relation": "UNKNOWN",
+          "sales_packaging_only": "UNKNOWN",
+          "same_product_body": "FAIL",
+          "series_generation_difference": "UNKNOWN",
+          "size_capacity_difference": "UNKNOWN"
+        },
+        "duplicate_of_asin": "B08562FQTW",
+        "reason": "same_asin"
+      },
+      {
+        "asin": "B08FY4G3FN",
+        "check_items": {
+          "color_design_only": "UNKNOWN",
+          "function_structure_difference": "UNKNOWN",
+          "independent_comparison_value": "UNKNOWN",
+          "manufacturer_brand_relation": "UNKNOWN",
+          "sales_packaging_only": "UNKNOWN",
+          "same_product_body": "FAIL",
+          "series_generation_difference": "UNKNOWN",
+          "size_capacity_difference": "UNKNOWN"
+        },
+        "duplicate_of_asin": "B08FY4G3FN",
+        "reason": "same_asin"
+      }
+    ],
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": [
+      "B08562FQTW",
+      "B08FY4G3FN",
+      "B0FBM9JFD2",
+      "B0G4BQW7NR"
+    ],
+    "targeted_replacement": true
   },
   "slug": "home-ethernet-switches"
 }
