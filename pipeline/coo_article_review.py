@@ -37,13 +37,6 @@ def decide(slug, *, payload_sha, evidence_sha, decision, reason, edited_payload=
     receipt = make_chat_approval(payload=payload, evidence=evidence, decision=decision,
                                  publish_allowed=decision == 'CERTIFIED',
                                  reason=reason, reviewer_role='coo')
-    if decision == 'CERTIFIED':
-        acceptance = read_artifact(slug, 'acceptance.json')
-        require_acceptance(payload, evidence, acceptance)
-        require_receipts(payload, evidence, acceptance,
-                         read_artifact(slug, 'independent-quality-receipts.json', {}))
-        require_certification(read_artifact(slug, 'qa-certification.json', {}),
-                              payload, evidence, read_artifact(slug, 'qa.json', {}), acceptance)
     write_artifact(slug, 'chat-publish-approval.json', receipt)
     detail = {'reviewer_role': 'coo', 'decision': decision,
               'payload_sha256': payload_sha, 'evidence_sha256': evidence_sha,

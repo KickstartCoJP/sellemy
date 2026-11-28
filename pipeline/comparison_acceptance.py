@@ -316,7 +316,9 @@ def human_edit_receipt(original, payload, evidence, marker, approval):
                'edit_marker': marker, 'chat_approval': approval}
     if marker.get('original_sha256') != digest(original):
         raise ValueError('original edit identity changed')
-    require_acceptance(payload, evidence, receipt)
+    problems = human_edit_issues(receipt, evidence, payload)
+    if problems:
+        raise ValueError('; '.join(problems))
     return receipt
 
 

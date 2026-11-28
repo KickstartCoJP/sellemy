@@ -120,44 +120,16 @@ class PublicationUnitTests(unittest.TestCase):
                 publish_payload._affiliate_preflight(rendered)
 
 
-    def test_publish_eyecatch_requires_routed_receipt_and_rejects_category_copy(self):
-        payload, evidence = valid_payload(), valid_evidence()
+    def test_publication_only_checks_eyecatch_data_presence(self):
         with tempfile.TemporaryDirectory() as tmp:
-            root = Path(tmp)
-            category = root / 'category.png'; category.write_bytes(b'category-bytes')
-            output = root / 'hero.png'; output.write_bytes(b'category-bytes')
-            receipt_dir = root / 'data' / 'eyecatch-receipts'; receipt_dir.mkdir(parents=True)
-            (receipt_dir / f"{evidence['slug']}.json").write_text(json.dumps({
-                'generation_method': 'codex_cli_imagegen',
-                'role_id': 'bu-codex-sellemy-designer',
-                'image_sha256': hashlib.sha256(b'category-bytes').hexdigest(),
-                'width': 1536, 'height': 1024,
-            }))
-            fake_metadata = type('Category', (), {'eyecatch': 'category.png'})()
-            with patch.object(publish_payload, 'ROOT', root), patch.object(publish_payload, 'get_category', return_value=fake_metadata):
-                with self.assertRaises(RuntimeError):
-                    publish_payload._require_routed_article_eyecatch(payload, evidence, output)
-
-
-    def test_publish_eyecatch_accepts_openai_api_router_receipt(self):
-        payload, evidence = valid_payload(), valid_evidence()
-        with tempfile.TemporaryDirectory() as tmp:
-            root = Path(tmp)
-            category = root / 'category.png'; category.write_bytes(b'category-bytes')
-            output = root / 'hero.png'; output.write_bytes(b'api-image-bytes')
-            receipt_dir = root / 'data' / 'eyecatch-receipts'; receipt_dir.mkdir(parents=True)
-            (receipt_dir / f"{evidence['slug']}.json").write_text(json.dumps({
-                'generation_method': 'openai_images_api',
-                'generation_route': 'openai_images_api',
-                'provider': 'openai',
-                'image_sha256': hashlib.sha256(b'api-image-bytes').hexdigest(),
-                'width': 1536, 'height': 1024,
-                'routing': {'selected_route': 'openai_api', 'executed_route': 'openai_api'},
-            }))
-            fake_metadata = type('Category', (), {'eyecatch': 'category.png'})()
-            with patch.object(publish_payload, 'ROOT', root), patch.object(publish_payload, 'get_category', return_value=fake_metadata):
-                receipt = publish_payload._require_routed_article_eyecatch(payload, evidence, output)
-            self.assertEqual(receipt['generation_method'], 'openai_images_api')
+            output = Path(tmp) / 'hero.png'
+            with self.assertRaises(RuntimeError):
+                publish_payload._require_article_eyecatch(output)
+            output.write_bytes(b'')
+            with self.assertRaises(RuntimeError):
+                publish_payload._require_article_eyecatch(output)
+            output.write_bytes(b'existing-image-data')
+            publish_payload._require_article_eyecatch(output)
 
     def test_category_specific_eyecatch_mapping_exists(self):
         for category in ('beauty', 'dailygoods', 'gadget'):

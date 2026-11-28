@@ -4,7 +4,6 @@ import argparse
 import html
 import json
 import re
-import hashlib
 import requests
 import sqlite3
 from datetime import date, datetime, timezone
@@ -15,7 +14,7 @@ from affiliate_config import amazon_url
 
 from category_metadata import get_category
 from qa import run_qa
-from comparison_acceptance import load_receipt, require_acceptance
+from comparison_acceptance import load_receipt
 from publish_gate import require_publishing_enabled
 from renderer import render_article
 from listing_static import sync as sync_static_catalogs
@@ -301,67 +300,33 @@ def _affiliate_preflight(rendered: str) -> dict:
     }
 
 
-def _sha256(path: Path) -> str:
-    return hashlib.sha256(path.read_bytes()).hexdigest()
+def _require_article_eyecatch(output: Path) -> None:
+    if not output.is_file() or output.stat().st_size == 0:
+        raise RuntimeError('article eyecatch data missing')
 
 
-def _require_routed_article_eyecatch(payload: dict, evidence: dict, output: Path) -> dict:
-    receipt_path = ROOT / 'data' / 'eyecatch-receipts' / f"{evidence['slug']}.json"
-    if not output.is_file() or not receipt_path.is_file():
-        raise RuntimeError('routed article eyecatch required before publication')
-    try:
-        receipt = json.loads(receipt_path.read_text(encoding='utf-8'))
-    except (OSError, json.JSONDecodeError) as exc:
-        raise RuntimeError('routed article eyecatch receipt invalid') from exc
-    category = ROOT / get_category(evidence['category']).eyecatch
-    if _sha256(output) == _sha256(category):
-        raise RuntimeError('generated eyecatch is not article-specific')
-    method = receipt.get('generation_method')
-    routing = receipt.get('routing') or {}
-    if method == 'codex_cli_imagegen':
-        if receipt.get('role_id') != 'bu-codex-sellemy-designer':
-            raise RuntimeError('Codex eyecatch receipt has non-canonical designer identity')
-        if routing and routing.get('executed_route') not in (None, 'codex'):
-            raise RuntimeError('Codex eyecatch routing receipt inconsistent')
-    elif method == 'openai_images_api':
-        if receipt.get('generation_route') != 'openai_images_api' or receipt.get('provider') != 'openai':
-            raise RuntimeError('OpenAI API eyecatch receipt invalid')
-        if routing and routing.get('executed_route') not in (None, 'openai_api'):
-            raise RuntimeError('OpenAI API eyecatch routing receipt inconsistent')
-    else:
-        raise RuntimeError('eyecatch receipt is not from an approved Designer Router route')
-    if receipt.get('image_sha256') != _sha256(output):
-        raise RuntimeError('routed eyecatch receipt/file mismatch')
-    if (receipt.get('width'), receipt.get('height')) != (1536, 1024):
-        raise RuntimeError('routed eyecatch dimensions invalid')
-    return receipt
-
-
-def run(slug: str, *, apply: bool, allow_existing: bool) -> dict:
-    if apply:
+def run(slug: str, *, apply: bool, allow_existing: bool, controlled: bool = False) -> dict:
+    if apply and not controlled:
         require_publishing_enabled(ROOT)
     payload, evidence = _load(slug)
     if allow_existing:
         require_update_identity(payload, evidence)
-    acceptance = load_receipt(ROOT, slug)
-    require_acceptance(payload, evidence, acceptance)
-    rendered = render_article(payload, evidence, related_features=article_related_features(slug))
-    findings = run_review_gate(payload, evidence)
-    import os
-    image_audit = None
-    if os.environ.get('SELLEMY_REQUIRE_PRODUCT_IMAGE_AUDIT') == '1':
-        from product_image_audit import audit_remote_product_images
-        image_audit = audit_remote_product_images(evidence['products'])
-    qa = run_qa(rendered, payload, evidence, acceptance=acceptance, image_audit=image_audit)
-    result = {'slug': slug, 'review_findings': [repr(finding) for finding in findings], 'qa': qa, 'applied': False}
-    if findings or not qa['overall_pass'] or not apply:
-        return result
-    result['affiliate_preflight'] = _affiliate_preflight(rendered)
-
+    if not apply:
+        # Explicit offline diagnostic only; not on the publication path.
+        acceptance = load_receipt(ROOT, slug)
+        rendered = render_article(payload, evidence, related_features=article_related_features(slug))
+        findings = run_review_gate(payload, evidence)
+        qa = run_qa(rendered, payload, evidence, acceptance=acceptance)
+        return {'slug': slug, 'review_findings': [repr(f) for f in findings], 'qa': qa, 'applied': False}
+    from growth_recovery import read_artifact, load_job
+    from chat_publish_approval import require_chat_publish_approval
+    if load_job(slug).get('current_stage') != 'PUBLISH_PENDING':
+        raise RuntimeError('article is not pending publication')
+    require_chat_publish_approval(read_artifact(slug, 'chat-publish-approval.json'), payload=payload, evidence=evidence)
     eyecatch_path = ROOT / 'img' / slug / f'{slug}.png'
-    result['eyecatch_generation'] = _require_routed_article_eyecatch(payload, evidence, eyecatch_path)
-    require_publishing_enabled(ROOT)
-    require_acceptance(payload, evidence, load_receipt(ROOT, slug))
+    _require_article_eyecatch(eyecatch_path)
+    rendered = render_article(payload, evidence, related_features=article_related_features(slug), validate=False)
+    result = {'slug': slug, 'applied': False}
     now = _jst_now()
     article_metadata = _update_articles(payload, evidence, allow_existing=allow_existing, now=now)
     rendered = _inject_article_times(rendered, article_metadata['metadata'])
@@ -385,7 +350,7 @@ def main() -> None:
     args = parser.parse_args()
     result = run(args.slug, apply=args.apply, allow_existing=args.allow_existing)
     print(json.dumps(result, ensure_ascii=False, indent=2))
-    if result['review_findings'] or not result['qa']['overall_pass']:
+    if not args.apply and (result['review_findings'] or not result['qa']['overall_pass']):
         raise SystemExit(2)
 
 

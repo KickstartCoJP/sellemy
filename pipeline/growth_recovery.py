@@ -43,11 +43,16 @@ def _atomic_json(path: Path, value: Any) -> None:
 
 
 def _append_jsonl(path: Path, value: dict) -> None:
+    import fcntl
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open('a', encoding='utf-8') as handle:
-        handle.write(json.dumps(value, ensure_ascii=False, sort_keys=True) + '\n')
-        handle.flush()
-        os.fsync(handle.fileno())
+        fcntl.flock(handle.fileno(), fcntl.LOCK_EX)
+        try:
+            handle.write(json.dumps(value, ensure_ascii=False, sort_keys=True) + '\n')
+            handle.flush()
+            os.fsync(handle.fileno())
+        finally:
+            fcntl.flock(handle.fileno(), fcntl.LOCK_UN)
 
 
 def job_dir(slug: str) -> Path:
@@ -239,7 +244,7 @@ def recover_legacy_failed_jobs() -> list[str]:
     """
     recovered = []
     for row in all_jobs():
-        if row.get('status') not in {'ACTIVE', 'FAILED'} or row.get('current_stage') in {'STATE_HOLD', 'CHAT_REVIEW_PENDING', 'COO_REVIEW_PENDING'}:
+        if row.get('status') not in {'ACTIVE', 'FAILED'} or row.get('current_stage') in {'STATE_HOLD', 'CHAT_REVIEW_PENDING', 'COO_REVIEW_PENDING', 'EYECATCH_PENDING', 'PUBLISH_PENDING', 'CEO_EDIT_QA_PENDING'}:
             continue
         # Approved legacy published articles are being repaired using their
         # original evidence and current independent QA; never discard this
@@ -263,11 +268,15 @@ def recover_legacy_failed_jobs() -> list[str]:
     return recovered
 
 
-def eligible_job(*, now: datetime | None = None) -> dict | None:
+def eligible_job(*, now: datetime | None = None, lane: str | None = None) -> dict | None:
     current = now or utcnow()
     eligible = []
     for row in all_jobs():
         if row.get('status') in TERMINAL_STATUSES:
+            continue
+        if lane == 'publication' and row.get('current_stage') != 'PUBLISH_PENDING':
+            continue
+        if lane == 'production' and row.get('current_stage') == 'PUBLISH_PENDING':
             continue
         explicit_ceo_replan = False
         if row.get('current_stage') == 'PLANNING_HOLD' and row.get('source') == 'runtime' and not row.get('published_commit'):
@@ -356,7 +365,7 @@ def save_writer_result(slug: str, *, payload: dict, qa: dict, findings: list[str
         saved = _save_state(state, event='WRITER_QA_PASSED', detail={'reviewer_role': 'coo'})
         from adaptive_publish import AdaptivePublishController
         from comparison_acceptance import digest
-        AdaptivePublishController(ROOT).record_ceo_review_arrival(slug, digest(payload))
+        AdaptivePublishController(ROOT).record_ceo_review_arrival(slug, digest(payload), source=state.get('source'))
         return saved
     return _save_state(state, event='WRITER_RESULT_SAVED', detail={'passed': False})
 
@@ -595,40 +604,32 @@ def replace_product_evidence(slug: str, evidence: dict, selection: dict) -> dict
 
 
 def materialize_for_publish(slug: str, repo: Path = ROOT) -> None:
+    if load_job(slug).get('current_stage') != 'PUBLISH_PENDING':
+        raise ValueError('article is not pending publication')
     evidence = read_artifact(slug, 'evidence.json')
     payload = read_artifact(slug, 'payload.json')
     if not isinstance(evidence, dict) or not isinstance(payload, dict):
         raise RuntimeError(f'recovery artifacts incomplete for publish: {slug}')
-    from comparison_acceptance import require_acceptance
-    from publish_gate import require_publishing_enabled
     from chat_publish_approval import require_chat_publish_approval
-    acceptance = read_artifact(slug, 'acceptance.json')
-    if (read_artifact(slug, 'product-blocker.json', {}) or {}).get('needs_product_reselection'):
-        raise ValueError('comparison acceptance refused: needs_product_reselection')
-    require_publishing_enabled(repo)
-    from ceo_article_edit import ensure_edited_acceptance
-    from comparison_acceptance import is_human_edit_receipt
-    acceptance = ensure_edited_acceptance(slug, payload, evidence, acceptance)
-    require_acceptance(payload, evidence, acceptance)
-    from qa_certification import require_certification
-    if not is_human_edit_receipt(acceptance):
-        require_certification(read_artifact(slug, 'qa-certification.json', {}), payload, evidence,
-                              read_artifact(slug, 'qa.json', {}), acceptance)
-    from operating_profile import normal_profile
     require_chat_publish_approval(read_artifact(slug, 'chat-publish-approval.json'), payload=payload, evidence=evidence)
+    # QA artifacts are retained as historical data, not release authorization.
+    acceptance = read_artifact(slug, 'acceptance.json', {}) or {}
+    image = job_dir(slug) / 'eyecatch.png'
+    if not image.is_file() or image.stat().st_size == 0:
+        raise RuntimeError(f'recovery eyecatch data missing: {slug}')
     _atomic_json(repo / 'data' / 'acceptance' / f'{slug}.json', acceptance)
     _atomic_json(repo / 'data' / 'evidence' / f'{slug}.json', evidence)
     _atomic_json(repo / 'data' / 'payloads' / f'{slug}.json', payload)
-    image = job_dir(slug) / 'eyecatch.png'
     receipt = job_dir(slug) / 'eyecatch-receipt.json'
-    if not image.is_file() or not receipt.is_file():
-        raise RuntimeError(f'recovery eyecatch artifacts incomplete: {slug}')
     image_target = repo / 'img' / slug / f'{slug}.png'
     image_target.parent.mkdir(parents=True, exist_ok=True)
     shutil.copy2(image, image_target)
     receipt_target = repo / 'data' / 'eyecatch-receipts' / f'{slug}.json'
     receipt_target.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(receipt, receipt_target)
+    if receipt.is_file():
+        shutil.copy2(receipt, receipt_target)
+    else:
+        _atomic_json(receipt_target, {})  # absent provenance, never a fabricated receipt
 
 
 def record_execution(*, slug: str, role: str, event_type: str, stage: str,

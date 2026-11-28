@@ -285,20 +285,17 @@ class PublishContractTests(unittest.TestCase):
                     publisher.run('anything', apply=True, allow_existing=True)
                 load.assert_not_called()
 
-    def test_publish_missing_blocked_stale_acceptance_before_render_or_mutation(self):
+    def test_publish_missing_human_approval_before_render_or_mutation(self):
         p,e,a=accepted_fixture()
-        rejected=copy.deepcopy(a); rejected['review']['status']='BLOCKED'
-        stale=copy.deepcopy(a); stale['payload_sha256']='old'
-        for receipt in [None, rejected, stale]:
-            with patch.object(publisher, 'require_publishing_enabled'), \
-                 patch.object(publisher, '_load', return_value=(p,e)), \
-                 patch.object(publisher, 'load_receipt', return_value=receipt), \
-                 patch.object(publisher, 'render_article') as render, \
-                 patch.object(publisher, 'run_qa', return_value={'overall_pass':True}), \
-                 patch.object(publisher, '_affiliate_preflight') as network:
-                with self.assertRaisesRegex(ValueError, 'acceptance refused'):
-                    publisher.run(p['slug'], apply=True, allow_existing=False)
-                render.assert_not_called(); network.assert_not_called()
+        with patch.object(publisher, 'require_publishing_enabled'), \
+             patch.object(publisher, '_load', return_value=(p,e)), \
+             patch('growth_recovery.load_job', return_value={'current_stage':'PUBLISH_PENDING'}), \
+             patch('growth_recovery.read_artifact', return_value={}), \
+             patch.object(publisher, 'render_article') as render, \
+             patch.object(publisher, '_affiliate_preflight') as network:
+            with self.assertRaisesRegex(ValueError, 'publication refused'):
+                publisher.run(p['slug'], apply=True, allow_existing=False)
+            render.assert_not_called(); network.assert_not_called()
 
     def test_publish_good_dry_run_passes_all_gates_offline(self):
         p,e,a=accepted_fixture()
@@ -372,7 +369,7 @@ class BoundaryRecoveryTests(RecoveryCase):
         gr.request_product_reselection(e['slug'], ['new missing fact'])
         self.assertEqual(gr.read_artifact(e['slug'], 'acceptance.json')['status'], 'BLOCKED')
         with tempfile.TemporaryDirectory() as d, patch.object(publish_gate, 'require_publishing_enabled'):
-            with self.assertRaisesRegex(ValueError, 'needs_product_reselection'):
+            with self.assertRaisesRegex(ValueError, 'not pending publication'):
                 gr.materialize_for_publish(e['slug'], Path(d))
             self.assertEqual(list(Path(d).iterdir()), [])
 
@@ -396,31 +393,30 @@ class BoundaryRecoveryTests(RecoveryCase):
         self.assertEqual(gr.read_artifact(slug, 'acceptance.json'), {})
         self.assertEqual(product_issues(gr.read_artifact(slug, 'evidence.json')), [])
 
-    def test_legacy_publish_job_returns_to_product_reselection(self):
+    def test_publish_job_is_not_sent_back_to_product_qa(self):
         p, e = fixture('book-reading-stands')
         self.create(e)
         gr.set_stage(e['slug'], 'PUBLISH_PENDING')
-        with patch('role_stage_exec.product_issues', create=True, return_value=['insufficient facts']):
-            with self.assertRaisesRegex(business.GrowthRuntimeError, 'product acceptance integrity fault'):
-                stage_worker._inspect(e['slug'], cache_only=True)
+        with patch('comparison_acceptance.product_issues', side_effect=AssertionError('repeat QA')):
+            self.assertEqual(stage_worker._inspect(e['slug'], cache_only=True)['action'], 'publish')
         self.assertEqual(gr.load_job(e['slug'])['current_stage'], 'PUBLISH_PENDING')
 
-    def test_stale_article_acceptance_returns_to_qa_before_designer(self):
+    def test_approved_stage_does_not_revalidate_stale_qa_receipt(self):
         p,e,a=self.create()
         gr.write_artifact(e['slug'], 'payload.json', p)
         gr.write_artifact(e['slug'], 'acceptance.json', a)
         p['summary'] += '変更'
         gr.write_artifact(e['slug'], 'payload.json', p)
         gr.set_stage(e['slug'], 'EYECATCH_PENDING')
-        with self.assertRaisesRegex(business.GrowthRuntimeError, 'acceptance revalidation'):
-            stage_worker._inspect(e['slug'], cache_only=True)
-        self.assertEqual(gr.load_job(e['slug'])['current_stage'], 'QA_FAILED')
+        with patch('comparison_acceptance.receipt_issues', side_effect=AssertionError('repeat QA')):
+            self.assertEqual(stage_worker._inspect(e['slug'], cache_only=True)['action'], 'designer')
+        self.assertEqual(gr.load_job(e['slug'])['current_stage'], 'EYECATCH_PENDING')
 
-    def test_materialization_rejects_missing_acceptance_before_any_repo_write(self):
+    def test_materialization_rejects_unapproved_stage_before_any_repo_write(self):
         p,e,a=self.create()
         gr.write_artifact(e['slug'], 'payload.json', p)
         with tempfile.TemporaryDirectory() as d, patch.object(publish_gate, 'require_publishing_enabled'):
-            with self.assertRaisesRegex(ValueError, 'acceptance refused'):
+            with self.assertRaisesRegex(ValueError, 'not pending publication'):
                 gr.materialize_for_publish(e['slug'], Path(d))
             self.assertEqual(list(Path(d).iterdir()), [])
 

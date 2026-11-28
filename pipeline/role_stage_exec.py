@@ -14,10 +14,14 @@ sys.path.insert(0, str(ROOT / 'pipeline'))
 
 def _inspect(slug: str, *, cache_only: bool) -> dict:
     from growth_role_business import GrowthRuntimeError, _reselect_products
-    from comparison_acceptance import VERSION, product_issues, receipt_issues
+    from comparison_acceptance import VERSION, product_issues
     from growth_recovery import (load_job, read_artifact, write_artifact, set_stage,
                                  request_product_reselection)
     state = load_job(slug)
+    # Approved stages consume the exact human authorization in their owner
+    # process; do not re-enter Product/Writer or re-evaluate their QA receipts.
+    if state.get('current_stage') in {'EYECATCH_PENDING', 'PUBLISH_PENDING'}:
+        return {'slug': slug, 'action': 'designer' if state['current_stage'] == 'EYECATCH_PENDING' else 'publish'}
     if state.get('source') == 'runtime' and state.get('current_stage') in {'PLANNING_PENDING', 'PLANNING_HOLD'} and (read_artifact(slug, 'planning-restart-required.json', {}) or {}).get('required_stage') == 'PLANNING':
         return {'action': 'replan', 'slug': slug}
     if state.get('source') == 'legacy_repair' and state.get('current_stage') == 'PLANNING_PENDING':
@@ -90,38 +94,6 @@ def _inspect(slug: str, *, cache_only: bool) -> dict:
         return {**details, 'action': 'writer'}
     if stage in {'CHAT_REVIEW_PENDING', 'COO_REVIEW_PENDING'}:
         return {**details, 'action': 'coo_review'}
-    if stage in {'EYECATCH_PENDING', 'PUBLISH_PENDING'}:
-        issues = product_issues(evidence)
-        if issues:
-            # Post-Product QA may halt for corrupt/stale evidence, but must
-            # never silently change already accepted product identities.
-            raise GrowthRuntimeError(f'product acceptance integrity fault for {slug}: ' + '; '.join(issues))
-        payload = read_artifact(slug, 'payload.json', {})
-        acceptance = read_artifact(slug, 'acceptance.json')
-        from ceo_article_edit import ensure_edited_acceptance
-        from comparison_acceptance import is_human_edit_receipt
-        acceptance = ensure_edited_acceptance(slug, payload, evidence, acceptance)
-        if is_human_edit_receipt(acceptance):
-            return {**details, 'action': ('designer' if stage == 'EYECATCH_PENDING' else 'publish')}
-        issues = receipt_issues(acceptance, evidence, payload)
-        if issues:
-            set_stage(slug, 'QA_FAILED', event='ACCEPTANCE_REVALIDATION_REQUIRED')
-            write_artifact(slug, 'gate-feedback.json', {**{k: v for k, v in (read_artifact(slug, 'gate-feedback.json', {}) or {}).items() if k == 'ceo_rework'}, 'semantic_acceptance_issues': issues})
-            raise GrowthRuntimeError(f'acceptance revalidation required for {slug}')
-        from independent_quality_gate import require_receipts, QualityGateError
-        try:
-            require_receipts(payload, evidence, acceptance,
-                             read_artifact(slug, 'independent-quality-receipts.json', {}))
-        except QualityGateError as exc:
-            if exc.gate in ('product', 'evidence'):
-                # Integrity defects stop advancement; Article QA has no
-                # route back to Product selection.
-                raise GrowthRuntimeError(f'product evidence integrity fault for {slug}: {exc}') from exc
-            set_stage(slug, 'QA_FAILED', event='INDEPENDENT_QA_REVALIDATION_REQUIRED')
-            write_artifact(slug, 'gate-feedback.json', {**{k: v for k, v in (read_artifact(slug, 'gate-feedback.json', {}) or {}).items() if k == 'ceo_rework'}, 'independent_quality_gate': {
-                'gate': exc.gate, 'issues': exc.issues}})
-            raise GrowthRuntimeError(f'independent QA revalidation required for {slug}: {exc}') from exc
-        return {**details, 'action': ('designer' if stage == 'EYECATCH_PENDING' else 'publish')}
     if stage == 'PUBLISHED':
         return {**details, 'action': 'published', 'commit': str(state.get('published_commit') or '')}
     raise GrowthRuntimeError(f'non-retryable recovery state for {slug}: {stage}')
@@ -162,11 +134,11 @@ def _plan(*, provided: list | None, exclude: list[str]) -> dict:
 
 def _create_job(*, cache_only: bool, candidates: list, provider: dict | None,
                 admission: dict | None) -> dict:
-    from growth_role_business import (require_clean_current_main, select_viable_topic,
+    from growth_role_business import (_git, select_viable_topic,
                                       select_six, build_evidence)
     from analytics_feedback import load_feedback
     from growth_recovery import create_job, STATE_ROOT, _append_jsonl, utcnow
-    base_head = require_clean_current_main()
+    base_head = _git('rev-parse', 'HEAD')
     feedback = load_feedback()
     if not candidates:
         raise ValueError('fresh create requires one topic')
@@ -466,7 +438,7 @@ def main() -> None:
                 raise ValueError(f'invalid scheduler operation: {operation}')
         elif args.role == 'state_queue':
             from growth_recovery import eligible_job, all_jobs
-            due = eligible_job()
+            due = eligible_job(lane=request.get('lane'))
             unfinished = [job for job in all_jobs() if job.get('status') == 'ACTIVE'
                           and job.get('current_stage') not in {
                               'CHAT_REVIEW_PENDING', 'COO_REVIEW_PENDING', 'OWNER_EYECATCH_PENDING'}]

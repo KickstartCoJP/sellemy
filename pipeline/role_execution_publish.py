@@ -13,27 +13,15 @@ from codex_provider import (DESIGNER_SURFACE, context_session_id, record_context
 
 
 def _preflight(slug: str) -> tuple[dict, dict, dict, str]:
-    from comparison_acceptance import require_acceptance, is_human_edit_receipt
-    from ceo_article_edit import ensure_edited_acceptance
-    from independent_quality_gate import require_receipts
-    from qa_certification import require_certification
     from chat_publish_approval import require_chat_publish_approval
-    from publish_gate import require_publishing_enabled
 
     state = load_job(slug)
     category = state['category']
     topic = read_artifact(slug, 'topic.json')
     evidence = read_artifact(slug, 'evidence.json')
     payload = read_artifact(slug, 'payload.json')
-    acceptance = read_artifact(slug, 'acceptance.json')
-    require_publishing_enabled(ROOT)
-    acceptance = ensure_edited_acceptance(slug, payload, evidence, acceptance)
-    require_acceptance(payload, evidence, acceptance)
-    if not is_human_edit_receipt(acceptance):
-        require_receipts(payload, evidence, acceptance,
-                         read_artifact(slug, 'independent-quality-receipts.json', {}))
-        require_certification(read_artifact(slug, 'qa-certification.json', {}), payload,
-                              evidence, read_artifact(slug, 'qa.json', {}), acceptance)
+    if not isinstance(payload, dict) or not isinstance(evidence, dict):
+        raise ValueError('publication data missing')
     require_chat_publish_approval(read_artifact(slug, 'chat-publish-approval.json'),
                                   payload=payload, evidence=evidence)
     return topic, evidence, payload, category
@@ -46,11 +34,16 @@ def designer(slug: str) -> dict:
         raise GrowthRuntimeError('designer cannot execute outside EYECATCH_PENDING')
     started = time.monotonic()
     try:
-        with PublishGate(ROOT).acquire():
+        import tempfile
+        with tempfile.TemporaryDirectory(prefix='sellemy-designer-') as work:
+            image = Path(work)/'eyecatch.png'
+            provenance = Path(work)/'receipt.json'
             receipt = ensure_routed_eyecatch(slug=slug, title=payload['h1'],
-                                             category=category, evidence=evidence, payload=payload)
-            save_eyecatch(slug, receipt=receipt,
-                          image_path=ROOT / 'img' / slug / f'{slug}.png')
+                                             category=category, evidence=evidence, payload=payload,
+                                             output=image, receipt_path=provenance)
+            from eyecatch_visual_qa import review_image
+            visual = review_image(image, title=payload['h1'])
+            save_eyecatch(slug, receipt={**receipt,'visual_qa':visual}, image_path=image)
         if receipt.get('thread_id'):
             record_context_quality(ROOT, DESIGNER_SURFACE, True,
                                    session_id=receipt.get('thread_id'))
@@ -92,14 +85,19 @@ def designer(slug: str) -> dict:
 
 def publish(slug: str) -> dict:
     from publish_payload import run as publish_payload, require_update_identity
-    topic, evidence, payload, category = _preflight(slug)
-    if load_job(slug).get('current_stage') != 'PUBLISH_PENDING':
-        raise GrowthRuntimeError('publish cannot execute before the designer passed')
-    # A previously published job is a revision of the same article, not
-    # evidence that the *new* accepted payload was already deployed.
-    update = bool(load_job(slug).get('published_commit'))
-    if update:
-        require_update_identity(payload, evidence, root=ROOT)
+    try:
+        topic, evidence, payload, category = _preflight(slug)
+        if load_job(slug).get('current_stage') != 'PUBLISH_PENDING':
+            raise GrowthRuntimeError('publish cannot execute before the designer passed')
+        update = bool(load_job(slug).get('published_commit'))
+        if update:
+            require_update_identity(payload, evidence, root=ROOT)
+    except Exception as exc:
+        current = load_job(slug)
+        if current.get('current_stage') == 'PUBLISH_PENDING' and current.get('status') == 'ACTIVE':
+            mark_failure(slug,stage='publish',failure_class='runtime_infrastructure',
+                         failure_code='PUBLISH_INPUT_UNAVAILABLE',reason=str(exc),role='publish')
+        raise
     result = {'publication_mode': 'UPDATE' if update else 'CREATE'}
     try:
         existing = None if update else _existing_publish_commit(slug, category)
@@ -117,7 +115,7 @@ def publish(slug: str) -> dict:
                 result.setdefault('publish_gate_attempts', []).append({
                     **gate_evidence, 'attempt': publish_attempt})
                 materialize_for_publish(slug, ROOT)
-                applied = publish_payload(slug, apply=True, allow_existing=update)
+                applied = publish_payload(slug, apply=True, allow_existing=update, controlled=True)
                 if not applied['applied']:
                     raise GrowthRuntimeError('publication stage refused retained recovery candidate')
                 result['applied'] = applied

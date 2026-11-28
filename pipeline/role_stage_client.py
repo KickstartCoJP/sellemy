@@ -38,6 +38,14 @@ def execute_role(role: str, slug: str = '', *, cache_only: bool = False, request
             os.killpg(process.pid, signal.SIGKILL)
             process.communicate()
             raise RoleStageFailure(f'{role} exceeded its 15-minute limit') from exc
+        except BaseException:
+            # On launch-agent shutdown, do not leave an orphaned role writing
+            # the shared job or publication worktree after the next start.
+            if process.poll() is None:
+                try: os.killpg(process.pid, signal.SIGKILL)
+                except ProcessLookupError: pass
+            process.communicate()
+            raise
     except OSError as exc:
         raise RoleStageFailure(f'{role} process unavailable: {exc}') from exc
     try:

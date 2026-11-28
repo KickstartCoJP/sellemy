@@ -11,7 +11,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from growth_recovery import load_job, discard
-from publish_gate import require_publishing_enabled
+from publish_gate import require_publishing_enabled, PublishGateError
 from role_stage_client import execute_role, RoleStageFailure
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -22,7 +22,7 @@ class GrowthRuntimeError(RuntimeError):
     pass
 
 
-def _execute_job(slug: str, result: dict, *, cache_only: bool = False) -> str | None:
+def _execute_job(slug: str, result: dict, *, cache_only: bool = False, lane: str | None = None) -> str | None:
     # Do not inspect, read, or write business artifacts here; each Role does it.
     while True:
         state = load_job(slug)
@@ -80,27 +80,78 @@ def _execute_job(slug: str, result: dict, *, cache_only: bool = False) -> str | 
                 if receipt.get('next') != 'EYECATCH_PENDING':
                     raise GrowthRuntimeError('approved edit did not enter publication route')
                 continue
-            if action == 'coo_review':
-                result['status'] = 'awaiting_coo_final_review'
+            if action in {'coo_review','ceo_review'}:
+                result['status'] = 'awaiting_coo_final_review' if action == 'coo_review' else 'awaiting_chatgpt_final_review'
                 result['published'] = False
                 return None
             if action == 'designer':
                 result.update(execute_role('designer', slug))
+                if lane == 'production':
+                    result['status'] = 'ready_for_publication'
+                    return None
                 continue
             if action == 'publish':
+                if lane == 'production':
+                    result['status'] = 'ready_for_publication'
+                    return None
                 receipt = execute_role('publish', slug)
                 result.update(receipt)
                 return str(receipt['commit'])
             if action == 'published':
+                if lane == 'production':
+                    result['status'] = 'ready_for_publication'
+                    return None
                 return str(inspected['commit'])
             raise GrowthRuntimeError(f'unknown Role stage action: {action}')
         except RoleStageFailure as exc:
             raise GrowthRuntimeError(str(exc)) from exc
 
+def _publication_tick(result: dict, *, cache_only: bool = False) -> dict:
+    # Reconcile existing audit deliveries independently of new production.
+    try:
+        result.update(execute_role('ceo_reconcile', request={'publish': True}))
+    except RoleStageFailure as exc:
+        result['ceo_reconcile_error'] = str(exc)
+    # Separate stop control at worker entry, not per-article QA.
+    try:
+        require_publishing_enabled(ROOT)
+    except PublishGateError:
+        result['status'] = 'publication_paused_by_switch'
+        return result
+    state = execute_role('scheduler', request={'operation': 'current_state'})
+    result['controller_before'] = state
+    if state.get('quality_control_fault') and not state.get('ceo_alert_required'):
+        try:
+            result['quality_control_recovery'] = execute_role('quality_control_recovery')
+            state = execute_role('scheduler', request={'operation': 'current_state'})
+        except RoleStageFailure as exc:
+            result['quality_control_recovery_error'] = str(exc)
+    if state.get('publish_paused'):
+        result['status'] = 'publication_paused'
+        return result
+    queue = execute_role('state_queue', request={'lane': 'publication'})
+    job = queue.get('eligible')
+    if not job:
+        result['status'] = 'publication_no_eligible_job'
+        return result
+    slug = job['slug']
+    result['recovery_slug'] = slug
+    result['recovery_mode'] = True
+    # A publication worker must never call upstream production roles.
+    receipt = execute_role('publish', slug)
+    result.update(receipt)
+    result.update({'commit': str(receipt['commit']), 'published': True, 'status': 'published'})
+    try:
+        result.update(execute_role('postpublish', slug, request={'commit': result['commit'], 'growth_run': result}))
+    except RoleStageFailure as exc:
+        result.update({'status':'published_feedback_failed','postpublish_error':str(exc)})
+    return result
+
+
 def run(*, publish: bool, cache_only: bool = False, report_path: Path | None = REPORT,
         planning_candidates: list[dict] | None = None, scheduled: bool = False,
         controller: object | None = None,
-        recovery_only: bool = False) -> dict:
+        recovery_only: bool = False, lane: str | None = None) -> dict:
     result: dict = {
         'started_at': datetime.now(timezone.utc).isoformat(),
         'route': ['recovery_queue', 'continuous_planning', 'product_selection',
@@ -110,27 +161,39 @@ def run(*, publish: bool, cache_only: bool = False, report_path: Path | None = R
     }
     if recovery_only and (not publish or scheduled):
         raise ValueError('recovery-only requires publish without scheduled admission')
-    if publish:
+    if publish and lane is None:
         require_publishing_enabled(ROOT)
-    try:
-        result.update(execute_role('ceo_reconcile', request={'publish': publish}))
-    except RoleStageFailure as exc:
-        result['ceo_reconcile_error'] = str(exc)
+    if lane == 'publication':
+        try:
+            return _publication_tick(result, cache_only=cache_only)
+        except Exception as exc:
+            result.update({'status':'blocked_before_publish','blocker':f'{type(exc).__name__}: {exc}'})
+            raise
+        finally:
+            result['finished_at'] = datetime.now(timezone.utc).isoformat()
+            if report_path is not None:
+                execute_role('report', request={'path':str(report_path),'result':result})
+    if lane != 'production':
+        try:
+            result.update(execute_role('ceo_reconcile', request={'publish': publish}))
+        except RoleStageFailure as exc:
+            result['ceo_reconcile_error'] = str(exc)
     if controller is not None:
         raise ValueError('Runtime cannot execute an in-process controller with artifact access')
     try:
-        controller_state = execute_role('scheduler', request={'operation': 'current_state'})
-        result['controller_before'] = controller_state
-        if publish and controller_state.get('quality_control_fault') and not controller_state.get('ceo_alert_required'):
+        controller_state = {} if lane == 'production' else execute_role('scheduler', request={'operation': 'current_state'})
+        if lane != 'production':
+            result['controller_before'] = controller_state
+        if publish and lane != 'production' and controller_state.get('quality_control_fault') and not controller_state.get('ceo_alert_required'):
             try:
                 result['quality_control_recovery'] = execute_role('quality_control_recovery')
                 controller_state = execute_role('scheduler', request={'operation': 'current_state'})
             except RoleStageFailure as exc:
                 result['quality_control_recovery_error'] = str(exc)
-        if publish and controller_state['publish_paused']:
+        if publish and lane != 'production' and controller_state['publish_paused']:
             result['status'] = 'paused_by_controller'
             return result
-        if publish and scheduled:
+        if publish and scheduled and lane != 'production':
             claimed = os.environ.get('SELLEMY_PRECLAIMED_ADMISSION_ID', '').strip()
             decision = (execute_role('scheduler', request={
                             'operation': 'validate_scheduled_admission', 'admission_id': claimed}) if claimed
@@ -141,9 +204,10 @@ def run(*, publish: bool, cache_only: bool = False, report_path: Path | None = R
                 return result
         if publish:
             result.update(execute_role('recovery'))
-            reconciled = execute_role('already_published').get('slugs', [])
-            if reconciled:
-                result['reconciled_already_published'] = reconciled
+            if lane != 'production':
+                reconciled = execute_role('already_published').get('slugs', [])
+                if reconciled:
+                    result['reconciled_already_published'] = reconciled
         else:
             result['recovered_legacy_failed'] = []
 
@@ -184,7 +248,8 @@ def run(*, publish: bool, cache_only: bool = False, report_path: Path | None = R
                 result['product_hold_recheck'] = execute_role('product_hold_recheck')
             except RoleStageFailure as exc:
                 result['product_hold_recheck_error'] = str(exc)
-        queue = execute_role('state_queue')
+        queue_request = {'lane':lane} if lane else None
+        queue = execute_role('state_queue', request=queue_request) if lane else execute_role('state_queue')
         recovery = queue.get('eligible')
         # Admit at most one waiting legacy input per recovery-only cycle,
         # even when other due jobs exist. Otherwise a perpetually eligible
@@ -194,7 +259,7 @@ def run(*, publish: bool, cache_only: bool = False, report_path: Path | None = R
             admitted = execute_role('legacy_admit')
             if admitted.get('admitted'):
                 result['legacy_repair_admission'] = admitted
-                queue = execute_role('state_queue')
+                queue = execute_role('state_queue', request=queue_request) if lane else execute_role('state_queue')
                 recovery = queue.get('eligible')
         unfinished = queue.get('unfinished') or []
         if recovery:
@@ -204,6 +269,12 @@ def run(*, publish: bool, cache_only: bool = False, report_path: Path | None = R
             if recovery_only:
                 result['status'] = 'recovery_no_eligible_job'
                 return result
+            if lane == 'production' and scheduled:
+                decision = execute_role('scheduler', request={'operation':'admit_scheduled'})
+                result['controller_decision'] = decision
+                if not decision['allowed']:
+                    result['status'] = 'skipped_by_controller'
+                    return result
             if unfinished:
                 result['recovery_waiting'] = [
                     {'slug': row['slug'], 'stage': row.get('current_stage'),
@@ -223,7 +294,7 @@ def run(*, publish: bool, cache_only: bool = False, report_path: Path | None = R
             result['status'] = 'recovery_staged' if result['recovery_mode'] else 'staged'
             return result
         try:
-            commit = _execute_job(slug, result, cache_only=cache_only)
+            commit = _execute_job(slug, result, cache_only=cache_only, lane=lane)
         except GrowthRuntimeError as exc:
             if result.get('recovery_mode') and str(exc).startswith('planning_restart_required'):
                 # Existing article remains held for QA; no Runtime termination.
@@ -242,7 +313,7 @@ def run(*, publish: bool, cache_only: bool = False, report_path: Path | None = R
             raise
         if commit is None and result.get('status') == 'planning_research_hold':
             return result
-        if commit is None and result.get('status') == 'awaiting_coo_final_review':
+        if commit is None and result.get('status') in {'awaiting_coo_final_review','awaiting_chatgpt_final_review','ready_for_publication'}:
             return result
         result.update({'commit': commit, 'published': True, 'status': 'published'})
         try:
@@ -281,15 +352,23 @@ def run(*, publish: bool, cache_only: bool = False, report_path: Path | None = R
 
 def main() -> None:
     import json
+    import signal
+    def shutdown(signum, frame):
+        raise SystemExit(128+signum)
+    signal.signal(signal.SIGTERM, shutdown)
+    signal.signal(signal.SIGINT, shutdown)
     parser = argparse.ArgumentParser(description='Sellemy progress-only coordinator')
     parser.add_argument('--publish', action='store_true')
     parser.add_argument('--cache-only', action='store_true')
     parser.add_argument('--scheduled', action='store_true')
     parser.add_argument('--recovery-only', action='store_true')
+    parser.add_argument('--lane', choices=('production','publication'))
     args = parser.parse_args()
     try:
         result = run(publish=args.publish, cache_only=args.cache_only,
-                     scheduled=args.scheduled, recovery_only=args.recovery_only)
+                     scheduled=args.scheduled, recovery_only=args.recovery_only,
+                     lane=args.lane or ('production' if args.publish else None),
+                     report_path=(ROOT/'.runtime'/'growth_last_publication.json' if args.lane=='publication' else REPORT))
     except Exception as exc:
         print(json.dumps({'status': 'blocked_before_publish',
                           'error': f'{type(exc).__name__}: {exc}'}, ensure_ascii=False))
