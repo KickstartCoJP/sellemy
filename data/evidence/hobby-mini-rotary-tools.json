@@ -1,172 +1,377 @@
 {
-  "slug": "hobby-mini-rotary-tools",
-  "category": "gadget",
-  "canonical_url": "https://www.sellemy.jp/article/gadget/hobby-mini-rotary-tools.html",
-  "eyecatch_image": "https://www.sellemy.jp/img/hobby-mini-rotary-tools/hobby-mini-rotary-tools.png",
   "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/hobby-mini-rotary-tools.html",
+  "category": "gadget",
   "comparison_axes": [
     {
-      "id": "speed_operation",
-      "label": "作業に合わせる回転数と運転条件",
+      "id": "popular",
       "keywords": [
-        "回転数範囲",
-        "速度調整",
+        "人気"
+      ],
+      "label": "人気・定番の基準"
+    },
+    {
+      "id": "precision_work",
+      "keywords": [
+        "握り方",
+        "本体の寸法と重量",
+        "回転数の調整",
+        "対応する先端工具"
+      ],
+      "label": "模型の細部を狙って仕上げる"
+    },
+    {
+      "id": "flexible_workspace",
+      "keywords": [
+        "コードレス",
+        "電源方式",
         "連続使用時間",
-        "対応する加工"
+        "充電方法"
+      ],
+      "label": "作業場所を変えて使う"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/hobby-mini-rotary-tools/hobby-mini-rotary-tools.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "dfd688b5e8a58a3654d8869e638ea3123191a99c5dfbbe515a07383621d27140",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 26350,
+      "listing_identity_citations_repaired": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p6"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 1587,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 350,
+      "session_id": "01a21e7d-3be8-7d23-a3b0-167a9b7dbee3",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "【128 Pieces Accessories & Sturdy Case】With 128 different router tool accessories, you can effectively complete various projects and provide more work possibilities."
+            }
+          ],
+          "identity_key": "DEPSTECH Mini Router, 40,000 RPM High Speed Rotation, 6 Speed Gears, 128 Piece Accessories",
+          "identity_quote": "DEPSTECH Mini Router, 40,000 RPM High Speed Rotation, 6 Speed Gears, 128 Piece Accessories, Electric Router, DIY Tools, Storage Case Included",
+          "reason": "DEPSTECHのミニルーター本体を含むセットとして識別できる。6段階の回転調整、フレキシブルシャフト、128点の付属工具を手掛かりに紹介できる。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "Rotational Speed: Approx. 4,000, 9,000, 15,000 rpm (3-stage switching microcomputer control)"
+            }
+          ],
+          "identity_key": "WHATNOT HR-01P Hobby Router Set, Rechargeable Mini Router, 3 Speeds, Carving, Drilling, Po",
+          "identity_quote": "WHATNOT HR-01P Hobby Router Set, Rechargeable Mini Router, 3 Speeds, Carving, Drilling, Polishing, 33 Pieces, Gray",
+          "reason": "HR-01P型番の充電式ミニルーターとして識別できる。3段階の回転数、85g、定格使用時間15分が掲載されており、小型機を選ぶ際の情報を示せる。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "precision_work",
+              "quote": "Equipped with a torque guarantee function, it rotates firmly and tenaciously even at low speeds, strong for cutting and polishing resin"
+            }
+          ],
+          "identity_key": "Argofile (Argofile) Hyper Handy Mini Router Altima AT - Ultima Auto Torque - ART120",
+          "identity_quote": "Argofile (Argofile) Hyper Handy Mini Router Altima AT - Ultima Auto Torque - ART120",
+          "reason": "ART120型番のミニルーターとして識別できる。掲載説明の低速時のトルク維持機能と無段階の回転調整は、模型の細部を仕上げる切り口に合う。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "precision_work",
+              "quote": "By attaching the flexible shaft, the motor part of the main body is separated, allowing work to be done by simply holding the small and lightweight pen grip part"
+            }
+          ],
+          "identity_key": "NESEKT Mini Router, 148-Piece Full Set, AC100V, Engraving/Drilling/Sanding/Cutting/Shaping",
+          "identity_quote": "NESEKT Mini Router, 148-Piece Full Set, AC100V, Engraving/Drilling/Sanding/Cutting/Shaping/Cleaning, [Designed in Japan]",
+          "reason": "nesektのAC電源式ミニルーター本体を含むセットとして識別できる。付属のフレキシブルシャフトを持つ使い方が、細部を仕上げる切り口に合う。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "flexible_workspace",
+              "quote": "It is equipped with a high-efficiency magnet motor and a 3,000 mAh high-capacity battery, allowing continuous operation for approximately 20 to 120 minutes depending on usage"
+            }
+          ],
+          "identity_key": "Fanttik F2 PRO Mini Router",
+          "identity_quote": "Fanttik F2 PRO Mini Router, 5-Speed Shifter, Cordless Router, 25,000 RPM",
+          "reason": "F2 PRO型番のコードレスミニルーターとして識別できる。掲載説明に電池容量、使用時間の目安、工具の収納方法があり、作業場所を変える用途に沿って紹介できる。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "flexible_workspace",
+              "quote": "Set Includes: Dedicated USB charging cable / Tip bit (2 electrodeposited diamonds / 2 grinding wheels)"
+            }
+          ],
+          "identity_key": "Bigman Cordless Rechargeable Mini Router Bit Set USB Charging HR-ST",
+          "identity_quote": "Bigman Cordless Rechargeable Mini Router Bit Set USB Charging HR-ST",
+          "reason": "HR-ST型番のミニルーターセットとして識別できる。掲載タイトルと専用USB充電ケーブルの記載は作業場所を変える切り口に合う。ただし商品情報の電源欄には「AC」とも記載されており、コードレス使用に関する具体的な主張には追加確認が必要。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "Evidenceのみの審査。6件はいずれも模型工作に使うミニルーター本体を含む商品で、掲載タイトルと説明から各紹介グループに沿って紹介できる。p2とp6は異なる型番で掲載されており、同一本体を示す肯定的根拠はない。p6の電源欄には掲載タイトルとの食い違いがあるため、記事でコードレス使用を具体的に述べる際は確認が必要。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
+  "products": [
+    {
+      "amazon_title": "DEPSTECH Mini Router, 40,000 RPM High Speed Rotation, 6 Speed Gears, 128 Piece Accessories, Electric Router, DIY Tools, Storage Case Included",
+      "asin": "B0C9QR74YN",
+      "brand": "DEPSTECH",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81ij9kJKThL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0C9QR74YN",
+      "provisional": false,
+      "rating": 4.3,
+      "ref": "p1",
+      "review_count": 1457,
+      "search_key": "DEPSTECH Mini Router, 40,000 RPM High Spe",
+      "selection_reason": "AC電源の本体にフレキシブルシャフトと128点の先端工具が付く構成。模型の狭い角を磨く際はシャフト側を手元で持ち、切削や穴あけにも取り組みたい人に向く。商品説明には6段階の回転調整と、細かな研磨・彫刻に使えるフレキシブルシャフトが明記されており、多用途のセットを選ぶ基準にできる。",
+      "sources": [
+        {
+          "brand": "DEPSTECH",
+          "excerpt": "DEPSTECH Mini Router, 40,000 RPM High Speed Rotation, 6 Speed Gears, 128 Piece Accessories, Electric Router, DIY Tools, Storage Case Included\nAbout this item\n180W Powerful 6 Speed Gears: The DEPSTCH mini router can control the rotation speed from 10,000 to 40,000 rpm in 6 settings. Useful for a wide range of purposes, including professional work, maintenance of daily necessities, DIY, accessories making, plastic models, etc\n【Universal Keyless Chuck & Wide Compatibility for Smooth Work】This powerful electric router adopts a universal keyless chuck. Quickly swap most accessories with shank diameter from 4mm to 3.2mm without a wrench. It is highly compatible and allows you to use your tools on your hand, allowing you to go through any DIY and craft project without interruption\nFlexible Shaft for Freely Working at Hand: The included flexible shaft allows for fine polishing and carving intricate shapes. Easily handle hard pipes and narrow corners, reducing strain on your hands. Note: Do not bend the flexible shaft sharp or bend it repeatedly. Clear cover shield protects you from sparks when cutting or grinding\n【128 Pieces Accessories & Sturdy Case】With 128 different router tool accessories, you can effectively complete various projects and provide more work possibilities. Very suitable for polishing, polishing, cutting, grinding, drilling, cleaning, carving, etc. Sturdy case for more convenient storage of accessories, drop proof, moisture proof and portable\nErgonomic Design: The main body has a non-slip finish, heat dissipation port to prevent overheating, and is equipped with anti-malfunction function and electric shock protection. Note: If you are worried about one manual for a long time, we recommend using the flexible shaft attachment\n【Great Gift for DIY Enthusiasts】DEPSTECH hand router provides everything you want to make and repair from DIY to home maintenance. It is a gift that will add more fun to your hobbies DIY or craft projects. We offer one year warranty, so you don't have to worry about any problems. Enjoy your creative experience to the fullest. Tighten the collet nut with a spanner before use › See more product details\nBrand DEPSTECH\nPower Source Corded Electric\nRecommended Uses For Product Chamfer, Cutting, Drilled, Grinding, Polishing, Sculpture, Stain Remover\nColor green\nSpecial Feature 128 accessories, Flexible Shaft, High speed rotation up to 40000 RPM, Keyless Chuck, Powerful 180W motor128 accessories, Flexible Shaft, High speed rotation up to 40000 RPM, Keyless Chuck, Powerful 180W motor See more\nVisit the DEPSTECH Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "DEPSTECH Mini Router, 40,000 RPM High Speed Rotation, 6 Speed Gears, 128 Piece Accessories, Electric Router, DIY Tools, Storage Case Included",
+          "url": "https://www.amazon.co.jp/dp/B0C9QR74YN",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "accessory_compatibility",
-      "label": "先端工具の取り付け条件",
-      "keywords": [
-        "対応軸径",
-        "コレット",
-        "チャック",
-        "付属先端工具"
+      "amazon_title": "WHATNOT HR-01P Hobby Router Set, Rechargeable Mini Router, 3 Speeds, Carving, Drilling, Polishing, 33 Pieces, Gray",
+      "asin": "B09ZPF57RV",
+      "brand": "ビッグマン",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51FlW3EZW6L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B09ZPF57RV",
+      "provisional": false,
+      "rating": 4.0,
+      "ref": "p2",
+      "review_count": 1221,
+      "search_key": "ビッグマン WHATNOT HR-01P Hobby Router Set",
+      "selection_reason": "長さ145mm・85gの充電式本体で、約4,000・9,000・15,000回転の3段階を選べる。手や部品の位置に合わせて作業場所を変え、模型の小さな箇所を少しずつ整えたい人に向く。商品説明には満充電での使用時間が約90分、定格使用時間は15分とあり、作業を区切って使う小型機の基準にもなる。",
+      "sources": [
+        {
+          "brand": "ビッグマン",
+          "excerpt": "WHATNOT HR-01P Hobby Router Set, Rechargeable Mini Router, 3 Speeds, Carving, Drilling, Polishing, 33 Pieces, Gray\nAbout this item\nRotational Speed: Approx. 4,000, 9,000, 15,000 rpm (3-stage switching microcomputer control)\nDimensions: Length: 5.7 inches (145 mm) Width: 1.2 inches (31 mm)\nWeight:85g\nRated usage time: 15 minutes\nUsage Time: Approximately 90 minutes on a full charge (Continuous use is not possible due to rated usage time) › See more product details\nBrand ビッグマン\nPower Source Battery Powered\nVoltage 3.6 Volts\nItem Weight 85 Grams\nMaximum Rotational Speed 15000 RPM\nVisit the ビッグマン(Bigman) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "WHATNOT HR-01P Hobby Router Set, Rechargeable Mini Router, 3 Speeds, Carving, Drilling, Polishing, 33 Pieces, Gray",
+          "url": "https://www.amazon.co.jp/dp/B09ZPF57RV?th=1",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "handling_power",
-      "label": "細かい作業での持ち方と電源",
-      "keywords": [
-        "本体径",
-        "重量",
-        "コード式",
-        "充電式",
-        "コード長"
+      "amazon_title": "Argofile (Argofile) Hyper Handy Mini Router Altima AT - Ultima Auto Torque - ART120",
+      "asin": "B08WQ32X3F",
+      "brand": "アルゴファイル(Argofile)",
+      "discovery_axis_id": "precision_work",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51CejoHQceL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B08WQ32X3F",
+      "provisional": false,
+      "rating": 4.4,
+      "ref": "p3",
+      "review_count": 324,
+      "search_key": "アルゴファイル(Argofile) Argofile (Argofile) Hyper Hand",
+      "selection_reason": "樹脂を低回転で削る際にも回転を保つトルク保証機能と、高精度チャックを備える。プラモデルの合わせ目付近など、先端の位置を見ながら少しずつ研磨したい人に向く。商品説明にある回転範囲は1,800～12,500回転の無段階調整で、本体は全長約16cm・約82g。",
+      "sources": [
+        {
+          "brand": "アルゴファイル(Argofile)",
+          "excerpt": "Argofile (Argofile) Hyper Handy Mini Router Altima AT - Ultima Auto Torque - ART120\nAbout this item\nEquipped with a torque guarantee function, it rotates firmly and tenaciously even at low speeds, strong for cutting and polishing resin\nWith a high-precision chuck, it offers high rotation accuracy, making delicate work easy\nHigh precision bearings are used to achieve high silence\nApproximately 6.3 inches in total length, and a lightweight body weighing about 2.9 ounces (82 g)\n1,800 ~ 12,500 RPM with infinitely variable speed for versatile work applications › See more product details\nBrand アルゴファイル(Argofile)\nVoltage 100 Volts (AC)\nPower Source Electrical\nRecommended Uses For Product Sharpening, cutting, carving, polishing\nColor black\nBrand: アルゴファイル(Argofile)",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Argofile (Argofile) Hyper Handy Mini Router Altima AT - Ultima Auto Torque - ART120",
+          "url": "https://www.amazon.co.jp/dp/B08WQ32X3F?th=1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "NESEKT Mini Router, 148-Piece Full Set, AC100V, Engraving/Drilling/Sanding/Cutting/Shaping/Cleaning, [Designed in Japan]",
+      "asin": "B0B33RXTYJ",
+      "brand": "nesekt",
+      "discovery_axis_id": "precision_work",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81JhIRK2oJL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0B33RXTYJ",
+      "provisional": false,
+      "rating": 4.1,
+      "ref": "p4",
+      "review_count": 637,
+      "search_key": "nesekt Mini Router, 148-Piece Full Set",
+      "selection_reason": "付属のフレキシブルシャフトを使うと、モーターのある本体を離してペン型の先端部を持てる。模型の奥まった面や入り組んだ形を、手元の持ち方を変えて仕上げたい人に向く。商品説明には8,000～33,000回転の7段階調整と148点の工具が明記され、作業に合わせて回転と先端を選べる。",
+      "sources": [
+        {
+          "brand": "nesekt",
+          "excerpt": "NESEKT Mini Router, 148-Piece Full Set, AC100V, Engraving/Drilling/Sanding/Cutting/Shaping/Cleaning, [Designed in Japan]\nAbout this item\n【AC100V 160W 7-speed specification】This is a mini router with an AC100V power supply type, so you can use it economically without the stress of not being able to use it when you want to, which is typical of battery-powered tools By adopting a high-output motor, stable operation is possible even during high-load tasks The rotation speed can be easily adjusted to 7 levels via the dial control Covering a wide range from low-speed rotation (8,000rpm) suitable for delicate work to high-speed rotation (33,000rpm) suitable for powerful cutting and sanding tasks, all in one tool With a powerful 160W specification, it can be used comfortably and safely for a variety of DIY purposes, from delicate hobby and craft work to professional use requiring power\nErgonomic Grip: The mini router body has a non-slip rubber finish centered around the grip It also features an ergonomic grip shape, providing high retention and operability, making it less tiring even during long periods of use\n【Wide range of uses with abundant tools】This set includes 148 high-quality tools that are frequently used, making it easy to use for various tasks such as sanding, drilling, rust removal, glass engraving, pottery engraving, woodworking, metalworking, and more\n【Comes with a variety of convenient attachments】We include a standard set of flexible shafts, which are typically sold separately By attaching the flexible shaft, the motor part of the main body is separated, allowing work to be done by simply holding the small and lightweight pen grip part Extremely delicate work can be performed with the light touch of a pen The gun-type shaped Detailer's Grip not only improves the operability and feel, but also has a built-in LED light unit (AAA battery operated/Test batteries 2 included) to accommodate working in dark areas or working with brightly lit objects The shield attachment prevents debris such as chips and cuttings, protecting the operator during metal cutting and polishing with wire brushes The cutting guide supports sharpening with a whetstone bit, and the parallel guide and 30° angle guide allow you to sharpen your knives quickly and with high precision\nReassurance Point 1 【Long-term warranty】Our company provides a product warranty based on our warranty regulations for all products due to thorough quality control\nSafety Point 2 【Trusted PL Insurance Applicable Business】 In the unlikely event that damage occurs due to the product, we have subscribed to a damage compensation policy that covers up to 100 million yen\nThree Peace of Mind Points【Japanese Company & High-Quality Customer Support】 We are a Tokyo-based manufacturing company High-quality products and services are delivered by our friendly and meticulous Japanese staff We are also qualified invoice issuers (compliant with the Invoice System) If you have any questions, please feel free to contact us › See more product details\nBrand nesekt\nVoltage 100 Volts\nPower Source AC 100V Power Cord Type\nRecommended Uses For Product For polishing, drilling, removing rust, glass carving, ceramic engraving, wood processing, metal processing, etcFor polishing, drilling, removing rust, glass carving, ceramic engraving, wood processing, metal processing, etc See more\nColor green (olive green)\nVisit the nesekt Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "NESEKT Mini Router, 148-Piece Full Set, AC100V, Engraving/Drilling/Sanding/Cutting/Shaping/Cleaning, [Designed in Japan]",
+          "url": "https://www.amazon.co.jp/dp/B0B33RXTYJ",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "Fanttik F2 PRO Mini Router, 5-Speed Shifter, Cordless Router, 25,000 RPM",
+      "asin": "B0DRXRH9DQ",
+      "brand": "Fanttik",
+      "discovery_axis_id": "flexible_workspace",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81e2lvctC7L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0DRXRH9DQ",
+      "provisional": false,
+      "rating": 4.4,
+      "ref": "p5",
+      "review_count": 1008,
+      "search_key": "Fanttik F2 PRO Mini Router, 5-Speed Shif",
+      "selection_reason": "コードレス本体に3,000mAhの電池を内蔵し、使用状況に応じた連続使用時間は約20～120分と記載されている。机から離れた場所で模型や3Dプリント品の後処理を続けたい人に向く。55点の先端工具を回転式の磁石付き収納部にまとめられ、移動先でも工具を取り出しやすい。",
+      "sources": [
+        {
+          "brand": "Fanttik",
+          "excerpt": "Fanttik F2 PRO Mini Router, 5-Speed Shifter, Cordless Router, 25,000 RPM\nAbout this item\n5-speed & High-Efficiency Motor: The Fanttik F2 PRO mini router offers 5-speed settings from 5,000 to 25,000 RPM, suitable for a wide range of tasks from precision polishing to cutting. It is equipped with a high-efficiency magnet motor and a 3,000 mAh high-capacity battery, allowing continuous operation for approximately 20 to 120 minutes depending on usage\nRotation Magnet Storage Center: The 360° rotating magnetic accessory center allows for the organized storage and retrieval of 55 accessories. The sturdy aluminum alloy case offers excellent portability and durability, allowing for quick access to tools with a single push\nErgonomic Design & Integrated Switch: The compact housing is easy to grip and prevents hand fatigue even when working for long periods of time. The seamless integrated pressure sensor switch is dustproof and waterproof, making it easy to clean in dirty work environments\nSafety and Visibility Improvement: When the battery level drops below 30%, the rear indicator light will turn red to notify you and prevent sudden stops. The LED light at the tip, which is less likely to cast shadows, brightly illuminates the work surface, and the side LED bar displays the speed in real time\n55-Piece Accessory Set Included: Comes with a magnetic storage center and a case that clearly organizes and stores 55 pieces of accessories. Suitable for rust removal, blade sharpening, sanding, engraving, cutting, drilling, and more, for various materials such as plastic, wood, and soft metals, enabling all your DIY tasks with just one tool › See more product details\nBrand Fanttik\nVoltage 4 Volts\nPower Source Battery Powered\nRecommended Uses For Product Drilled, For polishing and finishing 3D printed products, Polishing, Sanding\nColor black\nVisit the Fanttik Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Fanttik F2 PRO Mini Router, 5-Speed Shifter, Cordless Router, 25,000 RPM",
+          "url": "https://www.amazon.co.jp/dp/B0DRXRH9DQ",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "Bigman Cordless Rechargeable Mini Router Bit Set USB Charging HR-ST",
+      "asin": "B01HQ4AQ9C",
+      "brand": "ビッグマン",
+      "discovery_axis_id": "flexible_workspace",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51wf7OCY52L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B01HQ4AQ9C",
+      "provisional": false,
+      "rating": 4.0,
+      "ref": "p6",
+      "review_count": 1221,
+      "search_key": "ビッグマン Bigman Cordless Rechargeable Min",
+      "selection_reason": "USB充電式のコードレス機として掲載され、専用充電ケーブルと電着ダイヤモンドビット2本・研削砥石2本が付く。先端工具を少数に絞り、模型工作の場所を変えながら小さな研削作業をしたい人に向く。商品情報にある本体重量は約90gで、持ち運ぶ道具をコンパクトにまとめられる。",
+      "sources": [
+        {
+          "brand": "ビッグマン",
+          "excerpt": "Bigman Cordless Rechargeable Mini Router Bit Set USB Charging HR-ST\nAbout this item\nSet Includes: Dedicated USB charging cable / Tip bit (2 electrodeposited diamonds / 2 grinding wheels) › See more product details\nBrand ビッグマン\nPower Source AC\nItem Weight 0.09 Kilograms\nUnit Count 1 Set\nVisit the ビッグマン(Bigman) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Bigman Cordless Rechargeable Mini Router Bit Set USB Charging HR-ST",
+          "url": "https://www.amazon.co.jp/dp/B01HQ4AQ9C?th=1",
+          "verified": true
+        }
       ]
     }
   ],
   "selection": {
-    "comparison_axes_covered": [
-      "handling_power"
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B0C9QR74YN",
+            "reason": "AC電源の本体にフレキシブルシャフトと128点の先端工具が付く構成。模型の狭い角を磨く際はシャフト側を手元で持ち、切削や穴あけにも取り組みたい人に向く。商品説明には6段階の回転調整と、細かな研磨・彫刻に使えるフレキシブルシャフトが明記されており、多用途のセットを選ぶ基準にできる。"
+          },
+          {
+            "asin": "B09ZPF57RV",
+            "reason": "長さ145mm・85gの充電式本体で、約4,000・9,000・15,000回転の3段階を選べる。手や部品の位置に合わせて作業場所を変え、模型の小さな箇所を少しずつ整えたい人に向く。商品説明には満充電での使用時間が約90分、定格使用時間は15分とあり、作業を区切って使う小型機の基準にもなる。"
+          }
+        ]
+      },
+      {
+        "axis_id": "precision_work",
+        "products": [
+          {
+            "asin": "B08WQ32X3F",
+            "reason": "樹脂を低回転で削る際にも回転を保つトルク保証機能と、高精度チャックを備える。プラモデルの合わせ目付近など、先端の位置を見ながら少しずつ研磨したい人に向く。商品説明にある回転範囲は1,800～12,500回転の無段階調整で、本体は全長約16cm・約82g。"
+          },
+          {
+            "asin": "B0B33RXTYJ",
+            "reason": "付属のフレキシブルシャフトを使うと、モーターのある本体を離してペン型の先端部を持てる。模型の奥まった面や入り組んだ形を、手元の持ち方を変えて仕上げたい人に向く。商品説明には8,000～33,000回転の7段階調整と148点の工具が明記され、作業に合わせて回転と先端を選べる。"
+          }
+        ]
+      },
+      {
+        "axis_id": "flexible_workspace",
+        "products": [
+          {
+            "asin": "B0DRXRH9DQ",
+            "reason": "コードレス本体に3,000mAhの電池を内蔵し、使用状況に応じた連続使用時間は約20～120分と記載されている。机から離れた場所で模型や3Dプリント品の後処理を続けたい人に向く。55点の先端工具を回転式の磁石付き収納部にまとめられ、移動先でも工具を取り出しやすい。"
+          },
+          {
+            "asin": "B01HQ4AQ9C",
+            "reason": "USB充電式のコードレス機として掲載され、専用充電ケーブルと電着ダイヤモンドビット2本・研削砥石2本が付く。先端工具を少数に絞り、模型工作の場所を変えながら小さな研削作業をしたい人に向く。商品情報にある本体重量は約90gで、持ち運ぶ道具をコンパクトにまとめられる。"
+          }
+        ]
+      }
     ],
-    "brand_count": 0,
-    "price_used_as_constraint_only": true,
-    "content_duplicates_removed": []
+    "brand_count": 5,
+    "candidate_count": 24,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [],
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": []
   },
-  "products": [
-    {
-      "ref": "p1",
-      "product_id": "AMZ-B001LF3OJC",
-      "asin": "B001LF3OJC",
-      "amazon_title": "プロクソン(PROXXON) ミニルーター 回転数が調節可能 MM100 No.28525",
-      "brand": "プロクソン",
-      "image_url": "https://m.media-amazon.com/images/I/6186BeGEQvL._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.49,
-      "matched_comparison_axes": [
-        "handling_power"
-      ],
-      "search_key": "ミニルーター 25PCSビットセット ワイヤレス USB充電式",
-      "model": "プロクソン MM100 No.28525",
-      "selected_variant": {
-        "model": "MM100 No.28525",
-        "set": "本体のみ"
-      }
-    },
-    {
-      "ref": "p2",
-      "product_id": "AMZ-B0DG7V3PTG",
-      "asin": "B0DG7V3PTG",
-      "amazon_title": "京セラ(Kyocera) 旧リョービ ホビールーター 消費電力110W HR-100A 682551A 【ダイヤルで回転数が変えられてガラス彫刻から模型工作まで幅広い用途で使用できる】 回転数8000～23000min-1 取付ビット軸径2.35・3mm 定格使用時間15分 軽量0.45Kg",
-      "brand": "京セラ",
-      "image_url": "https://m.media-amazon.com/images/I/51oWlX882aL._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.31,
-      "matched_comparison_axes": [],
-      "search_key": "ミニルーター 40000RPM高速回転 6段変速 128点セット",
-      "model": "京セラ HR-100A",
-      "selected_variant": {
-        "model": "HR-100A 682551A",
-        "set": "単品・無段変速"
-      }
-    },
-    {
-      "ref": "p3",
-      "product_id": "AMZ-B07X4N794Z",
-      "asin": "B07X4N794Z",
-      "amazon_title": "ウェーブ ホビーツールシリーズ ハンディルーターMk.1 USB給電タイプ プラモデル用工具 HT-200",
-      "brand": "ウェーブ",
-      "image_url": "https://m.media-amazon.com/images/I/41qYfaAm0dL._AC_SX342_SY445_QL70_ML2_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.31,
-      "matched_comparison_axes": [
-        "handling_power"
-      ],
-      "search_key": "Katerk ミニルーター コードレス 充電式 電動リューター",
-      "model": "ウェーブ ハンディルーターMK.1 HT-200",
-      "selected_variant": {
-        "model": "HT-200",
-        "power": "USB給電"
-      }
-    },
-    {
-      "ref": "p4",
-      "product_id": "AMZ-B08WQ32X3F",
-      "asin": "B08WQ32X3F",
-      "amazon_title": "アルゴファイル(Argofile) ハイパーハンディミニルーター ARTIMA AT -アルティマ オートトルク- ART120",
-      "brand": "アルゴファイル",
-      "image_url": "https://m.media-amazon.com/images/I/51CejoHQceL._AC_SL1351_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.31,
-      "matched_comparison_axes": [
-        "handling_power"
-      ],
-      "search_key": "Housolutionミニルーター リューター 46点セット U",
-      "model": "アルゴファイル アルティマAT ART120",
-      "selected_variant": {
-        "model": "ART120",
-        "set": "本体"
-      }
-    },
-    {
-      "ref": "p5",
-      "product_id": "AMZ-B074WCD7VR",
-      "asin": "B074WCD7VR",
-      "amazon_title": "Dremel(ドレメル) ペン型ミニルーター FINO(フィーノ) 5段変速 9種11ピース入り 最大22,000回転/分 リューター 彫刻/削り出し/汚れ落とし/磨き/研磨",
-      "brand": "Dremel",
-      "image_url": "https://m.media-amazon.com/images/I/71Dz3gDvV-L._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.31,
-      "matched_comparison_axes": [
-        "handling_power"
-      ],
-      "search_key": "ミニルーター 充電式 6段変速 6000~16000rpm LE",
-      "model": "Dremel FINO 2050-N/11",
-      "selected_variant": {
-        "model": "2050-N/11",
-        "format": "コード式・通常品",
-        "dimensions": "本体153mm・105g",
-        "accessories": "9種11ピース標準付属",
-        "pack_count": 1
-      }
-    },
-    {
-      "ref": "p6",
-      "product_id": "AMZ-B01LZ05WWY",
-      "asin": "B01LZ05WWY",
-      "amazon_title": "タミヤ クラフトツールシリーズ No.42 電動ハンディリューター 組み立て式 プラモデル用工具 74042 ホワイト",
-      "brand": "タミヤ",
-      "image_url": "https://m.media-amazon.com/images/I/61wbVKVC-NL._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.31,
-      "matched_comparison_axes": [
-        "handling_power"
-      ],
-      "search_key": "ミニルーター 充電式 電動リューター 3段階スピード 照明付き",
-      "model": "タミヤ 電動ハンディリューター74042",
-      "selected_variant": {
-        "model": "74042",
-        "color": "ホワイト",
-        "format": "組み立て式"
-      }
-    }
-  ]
+  "slug": "hobby-mini-rotary-tools"
 }
