@@ -1,25 +1,55 @@
 {
+  "generated_at": "2026-11-28T15:20:56.444156+00:00",
   "generation_method": "codex_cli_imagegen",
   "generation_route": "built-in_image_gen",
-  "role_id": "bu-codex-sellemy-designer",
-  "thread_id": "01a111a0-344e-74b1-99da-7cee59ca6cf0",
-  "member_binding_revision": 6,
-  "model": "gpt-6-astra",
-  "visual_family": "Lifestyle Scene",
-  "summary": "同一記事向けに内蔵image_genで生成済みの画像を再利用。家庭で書類とレシートを電子化する単一シーン。ファイルの存在、PNG形式、1536×1024を再検証済み。",
-  "image_sha256": "58a316286460d3f368d59e4e4c6bf62f563ad49436ab61b4cd6884f502642b9d",
-  "width": 1536,
+  "generation_route_attestation": "codex_rollout_extension",
   "height": 1024,
-  "generated_at": "2026-10-06T19:30:02.681780+00:00",
-  "token_usage_source": "codex_rollout.turn_token_usage",
   "image_generation_internal_usage_exposed": false,
+  "image_sha256": "4f261230ebd0c7c65d85c5ea88487379d41273105797dad467234f35e714fa7d",
+  "member_binding_revision": 16,
+  "model": "gpt-6-sol",
+  "model_reported_generation_route": "built-in_image_gen",
+  "role_id": "bu-codex-sellemy-designer",
+  "routing": {
+    "api_share": 0,
+    "codex_reserve_percent": 20.0,
+    "codex_share": 100,
+    "codex_usage": {
+      "remaining_percent": 48.0,
+      "resets_at": 1796330023,
+      "source": "/Users/kickstart/.codex/sessions/2026/11/29/rollout-2026-11-29T00-17-45-01a222bb-d6f5-7273-b2fe-99ac5a5ac320.jsonl",
+      "used_percent": 52.0,
+      "window_minutes": 10080
+    },
+    "errors_before_success": [],
+    "executed_route": "codex",
+    "fallback_from": null,
+    "mode": "weighted_random",
+    "reason": "weighted_random",
+    "remaining_percent": 48.0,
+    "roll": 19,
+    "selected_route": "codex",
+    "total_weight": 100
+  },
+  "routing_recorded_at": "2026-11-28T15:20:56.445182+00:00",
+  "summary": "家庭の書類と領収書をスキャンする準備場面。PNG形式と1536x1024の寸法を確認済み。",
+  "thread_id": "01a222bb-d6f5-7273-b2fe-99ac5a5ac320",
   "token_usage": {
-    "input_tokens": 1178006,
-    "cached_input_tokens": 1041152,
     "cache_write_input_tokens": 0,
-    "uncached_input_tokens": 136854,
-    "output_tokens": 4169,
-    "reasoning_output_tokens": 54,
-    "total_tokens": 1182175
-  }
+    "cached_input_tokens": 122880,
+    "input_tokens": 128753,
+    "output_tokens": 652,
+    "reasoning_output_tokens": 0,
+    "total_tokens": 129405,
+    "uncached_input_tokens": 5873
+  },
+  "token_usage_source": "codex_rollout.turn_token_usage",
+  "visual_family": "editorial home workspace",
+  "visual_qa": {
+    "image_sha256": "4f261230ebd0c7c65d85c5ea88487379d41273105797dad467234f35e714fa7d",
+    "model": "gpt-6-sol",
+    "reason": "領収書と書類を家庭用スキャナーのそばで整理しており、明らかな手指の異常や物体の破綻は見られない。",
+    "verdict": "PASS"
+  },
+  "width": 1536
 }
