@@ -1,140 +1,356 @@
 {
-  "slug": "hiking-trekking-shoes-6-picks",
-  "category": "dailygoods",
-  "canonical_url": "https://www.sellemy.jp/article/dailygoods/hiking-trekking-shoes-6-picks.html",
-  "eyecatch_image": "https://www.sellemy.jp/img/hiking-trekking-shoes-6-picks/hiking-trekking-shoes-6-picks.png",
   "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/dailygoods/hiking-trekking-shoes-6-picks.html",
+  "category": "dailygoods",
   "comparison_axes": [
     {
-      "id": "grip_sole",
-      "label": "グリップ力・ソール",
+      "id": "popular",
       "keywords": [
-        "滑りにくい",
-        "ビブラムソール",
-        "凹凸ソール"
+        "人気"
+      ],
+      "label": "人気・定番の基準"
+    },
+    {
+      "id": "low_cut",
+      "keywords": [
+        "トレッキングシューズ ローカット"
+      ],
+      "label": "ローカット構造で選ぶ"
+    },
+    {
+      "id": "waterproof_structure",
+      "keywords": [
+        "防水 トレッキングシューズ"
+      ],
+      "label": "天候の変化に備える防水構造で選ぶ"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/hiking-trekking-shoes-6-picks/hiking-trekking-shoes-6-picks.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "64b66c70ac1b5c38440d72dfc8f3fe9c649615c3f838bcd2d6e951404dfae5a4",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 24153,
+      "listing_identity_citations_repaired": [
+        "p1",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 1568,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 644,
+      "session_id": "01a221d2-4b2d-7201-ba8d-e6ee4af57283",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "new balance(ニューバランス)",
+          "identity_quote": "new balance(ニューバランス)",
+          "reason": "掲載タイトルがモデル名とトレイル向けの靴であることを示す。舗装路と未舗装路への対応やミッドソールの詳細は、検証済み抜粋では未確認。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "Moonstar SPLT SDM01",
+          "identity_quote": "Moonstar SPLT SDM01 Men's Sneakers, Waterproof, Walking Shoes, Wide",
+          "reason": "掲載タイトルからモデル名と幅広の防水ウォーキングシューズであることを確認できる。街から登山口まで歩く用途で紹介できるが、山道での性能は主張できない。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "THE NORTH FACE",
+          "identity_quote": "THE NORTH FACE",
+          "reason": "掲載タイトルから型番付きのトレッキングシューズと識別できる。ローカット構造やソールの詳細は検証済み抜粋では未確認。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "low_cut",
+              "quote": "Saber V LO Outdry"
+            }
+          ],
+          "identity_key": "Columbia(コロンビア)",
+          "identity_quote": "Columbia(コロンビア)",
+          "reason": "掲載タイトルからシリーズとローカット型を識別できる。クッション材や路面への対応に関する詳細は検証済み抜粋では未確認。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "waterproof_structure",
+              "quote": "Waterproof Design"
+            }
+          ],
+          "identity_key": "WIMBLEDON(ウインブルドン)",
+          "identity_quote": "WIMBLEDON(ウインブルドン)",
+          "reason": "掲載タイトルから型番付きの防水設計トレッキングシューズと識別できる。浸水試験値や足囲の具体値は検証済み抜粋では未確認。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "waterproof_structure",
+              "quote": "Lightweight Trekking Shoes, Waterproof"
+            }
+          ],
+          "identity_key": "OUTDOOR PRODUCTS(アウトドアプロダクツ)",
+          "identity_quote": "OUTDOOR PRODUCTS(アウトドアプロダクツ)",
+          "reason": "掲載タイトルから防水設計のローカットトレッキングシューズと識別できる。選定理由にある704WSという型番、4E、インソール仕様は検証済み抜粋では未確認。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "検証済みの商品掲載情報から6件をそれぞれ識別でき、同一商品の色・数量違いを示す証拠はない。3つの紹介切り口に各2件が割り当てられている。選定理由に含まれる詳細仕様の一部は検証済み抜粋では裏付けられないため、記事で具体的事実として使うには追加根拠が必要。記事本文は未提出。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
+  "products": [
+    {
+      "amazon_title": "new balance(ニューバランス)",
+      "asin": "B0CNWVH5ZY",
+      "brand": "",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/618LE+tldcL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0CNWVH5ZY",
+      "provisional": false,
+      "rating": 4.3,
+      "ref": "p1",
+      "review_count": 228,
+      "search_key": "new balance(ニューバランス)",
+      "selection_reason": "駅から登山口までの舗装路と、整備された低山の道を続けて歩きたい人に。DynaSoft Nitrel v6は、舗装路と未舗装路の両方に対応するATトレッドアウトソールとDynaSoftミッドソールを備える。雨への備えが必要な日は防水仕様を確認して選びたい。[ニューバランス公式](https://shop.newbalance.jp/pd/MTNTRLF6-4E-08.html)",
+      "sources": [
+        {
+          "brand": "",
+          "excerpt": "new balance Men's DynaSoft Nitrel v6 Night Trail Outdoor Trail Running Shoe",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "new balance Men's DynaSoft Nitrel v6 Night Trail Outdoor Trail Running Shoe",
+          "url": "https://www.amazon.co.jp/dp/B0CNWVH5ZY?th=1&psc=1",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "waterproofing",
-      "label": "防水性",
-      "keywords": [
-        "ゴアテックス",
-        "防水透湿"
+      "amazon_title": "MoonStar(ムーンスター)",
+      "asin": "B077NG51J8",
+      "brand": "",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61jS62t03sL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B077NG51J8",
+      "provisional": false,
+      "rating": 4.0,
+      "ref": "p2",
+      "review_count": 2296,
+      "search_key": "MoonStar(ムーンスター)",
+      "selection_reason": "足幅にゆとりが欲しく、駅からの歩きと小雨に備えたい人に。SPLT SDM01は4Eの幅広設計に加え、雨水を遮り靴内の湿気を逃がすShut Dryと、4cm・4時間の防水設計を備える。街歩きにも使う日帰り用の一足として選べる。[ムーンスター公式店](https://store.shopping.yahoo.co.jp/moonstar/12321626.html)",
+      "sources": [
+        {
+          "brand": "",
+          "excerpt": "Moonstar SPLT SDM01 Men's Sneakers, Waterproof, Walking Shoes, Wide\nVisit the MoonStar(ムーンスター) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Moonstar SPLT SDM01 Men's Sneakers, Waterproof, Walking Shoes, Wide",
+          "url": "https://www.amazon.co.jp/dp/B077NG51J8?th=1&psc=1",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "fit_comfort",
-      "label": "フィット感・履き心地",
-      "keywords": [
-        "サイズ展開",
-        "クッション性",
-        "足首サポート"
+      "amazon_title": "THE NORTH FACE",
+      "asin": "B0DPMZBFKW",
+      "brand": "",
+      "discovery_axis_id": "low_cut",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61XRdJHd9oL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0DPMZBFKW",
+      "provisional": false,
+      "rating": 4.3,
+      "ref": "p3",
+      "review_count": 199,
+      "search_key": "THE NORTH FACE",
+      "selection_reason": "駅からの舗装路の後、石や木の根がある低山の道も歩く人に。ローカットのクレストン ハイク WPは、防水透湿メンブレンに加え、足裏の剛性を確保するシャンクプレートとVibram XS-TREKソールを備える。日帰りの山道まで見据えた構造が選ぶ理由になる。[販売店の商品情報](https://www.sundaymountain.jp/c/brand/b_t/tnf/n17-2535)",
+      "sources": [
+        {
+          "brand": "",
+          "excerpt": "THE NORTH FACE メンズ CRESTON HIKE WP クレストン ハイク ウォータープルーフ NF52410メンズトレッキングシューズ",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "THE NORTH FACE メンズ CRESTON HIKE WP クレストン ハイク ウォータープルーフ NF52410メンズトレッキングシューズ",
+          "url": "https://www.amazon.co.jp/dp/B0DPMZBFKW?th=1&psc=1",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "weight_portability",
-      "label": "軽さ・携帯性",
-      "keywords": [
-        "軽量",
-        "コンパクト"
+      "amazon_title": "Columbia(コロンビア)",
+      "asin": "B0B1LVBVR5",
+      "brand": "",
+      "discovery_axis_id": "low_cut",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51L5mMEr1WL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0B1LVBVR5",
+      "provisional": false,
+      "rating": 4.4,
+      "ref": "p4",
+      "review_count": 246,
+      "search_key": "Columbia(コロンビア)",
+      "selection_reason": "舗装路から山道へ移り、途中で小雨や湿った路面に出合う日帰りハイカーに。セイバー V ロウ アウトドライはローカットで、防水透湿構造OutDry、クッション材TECHLITE PLUS、乾湿両方の路面を想定したADAPT TRAXを組み合わせている。[好日山荘の商品情報](https://goods.kojitusanso.jp/goods/KSCZDH/)",
+      "sources": [
+        {
+          "brand": "",
+          "excerpt": "Columbia Men's Saber V LO Outdry 010 Black Bold Orange",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Columbia Men's Saber V LO Outdry 010 Black Bold Orange",
+          "url": "https://www.amazon.co.jp/dp/B0B1LVBVR5?th=1&psc=1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "WIMBLEDON(ウインブルドン)",
+      "asin": "B073JL7L8L",
+      "brand": "WIMBLEDON(ウインブルドン)",
+      "discovery_axis_id": "waterproof_structure",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81rJq4j0HCL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B073JL7L8L",
+      "provisional": false,
+      "rating": 4.1,
+      "ref": "p5",
+      "review_count": 1670,
+      "search_key": "WIMBLEDON(ウインブルドン)",
+      "selection_reason": "雨予報の日に、ぬれた駅前の道から里山の登山口まで歩く、足幅が広めの人に。ウィンブルドン M047WSは足首まで覆う4E設計で、水深4cm・6時間の防水試験をクリアした仕様。完全防水ではないが、浅い水たまりや雨に備える根拠が明確だ。[販売店の商品情報](https://www.cecile.co.jp/detail/RS-440/?clrcd=022)",
+      "sources": [
+        {
+          "brand": "WIMBLEDON(ウインブルドン)",
+          "excerpt": "WIMBLEDON Men's WB M047WS Trekking Shoes, Hiking, Outdoors, Mountain Climbing, Waterproof Design, Wide\nBrand: WIMBLEDON(ウインブルドン)",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "WIMBLEDON Men's WB M047WS Trekking Shoes, Hiking, Outdoors, Mountain Climbing, Waterproof Design, Wide",
+          "url": "https://www.amazon.co.jp/dp/B073JL7L8L?th=1&psc=1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "OUTDOOR PRODUCTS(アウトドアプロダクツ)",
+      "asin": "B0CZ6M33VT",
+      "brand": "Outdoor Products",
+      "discovery_axis_id": "waterproof_structure",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81re8Ho1EeL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0CZ6M33VT",
+      "provisional": false,
+      "rating": 4.1,
+      "ref": "p6",
+      "review_count": 189,
+      "search_key": "Outdoor Products (アウトドアプロダクツ)",
+      "selection_reason": "駅から登山口までの舗装路が長く、整備された低山の道を歩く人に。OUTDOOR PRODUCTS 704WSはローカットの男女兼用防水スニーカーで、4Eの足囲と取り外せるカップインソールを備える。メーカー直営店は防水設計を明記しているが、防水膜の種類や浸水試験値は示していないため、その範囲で雨への備えとして選ぶ。[アサヒシューズ直営店](https://store.shopping.yahoo.co.jp/sunrise-shoes/kf74533.html)",
+      "sources": [
+        {
+          "brand": "Outdoor Products",
+          "excerpt": "Outdoor Products Unisex Adults, Outdoor Products, Lightweight Trekking Shoes, Waterproof, Women's & Men's Outdoor Walking Low Cut Outdoor Shoes\nBrand: Outdoor Products",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Outdoor Products Unisex Adults, Outdoor Products, Lightweight Trekking Shoes, Waterproof, Women's & Men's Outdoor Walking Low Cut Outdoor Shoes",
+          "url": "https://www.amazon.co.jp/dp/B0CZ6M33VT?th=1&psc=1",
+          "verified": true
+        }
       ]
     }
   ],
   "selection": {
-    "comparison_axes_covered": [
-      "weight_portability"
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B0CNWVH5ZY",
+            "reason": "駅から登山口までの舗装路と、整備された低山の道を続けて歩きたい人に。DynaSoft Nitrel v6は、舗装路と未舗装路の両方に対応するATトレッドアウトソールとDynaSoftミッドソールを備える。雨への備えが必要な日は防水仕様を確認して選びたい。[ニューバランス公式](https://shop.newbalance.jp/pd/MTNTRLF6-4E-08.html)"
+          },
+          {
+            "asin": "B077NG51J8",
+            "reason": "足幅にゆとりが欲しく、駅からの歩きと小雨に備えたい人に。SPLT SDM01は4Eの幅広設計に加え、雨水を遮り靴内の湿気を逃がすShut Dryと、4cm・4時間の防水設計を備える。街歩きにも使う日帰り用の一足として選べる。[ムーンスター公式店](https://store.shopping.yahoo.co.jp/moonstar/12321626.html)"
+          }
+        ]
+      },
+      {
+        "axis_id": "low_cut",
+        "products": [
+          {
+            "asin": "B0DPMZBFKW",
+            "reason": "駅からの舗装路の後、石や木の根がある低山の道も歩く人に。ローカットのクレストン ハイク WPは、防水透湿メンブレンに加え、足裏の剛性を確保するシャンクプレートとVibram XS-TREKソールを備える。日帰りの山道まで見据えた構造が選ぶ理由になる。[販売店の商品情報](https://www.sundaymountain.jp/c/brand/b_t/tnf/n17-2535)"
+          },
+          {
+            "asin": "B0B1LVBVR5",
+            "reason": "舗装路から山道へ移り、途中で小雨や湿った路面に出合う日帰りハイカーに。セイバー V ロウ アウトドライはローカットで、防水透湿構造OutDry、クッション材TECHLITE PLUS、乾湿両方の路面を想定したADAPT TRAXを組み合わせている。[好日山荘の商品情報](https://goods.kojitusanso.jp/goods/KSCZDH/)"
+          }
+        ]
+      },
+      {
+        "axis_id": "waterproof_structure",
+        "products": [
+          {
+            "asin": "B073JL7L8L",
+            "reason": "雨予報の日に、ぬれた駅前の道から里山の登山口まで歩く、足幅が広めの人に。ウィンブルドン M047WSは足首まで覆う4E設計で、水深4cm・6時間の防水試験をクリアした仕様。完全防水ではないが、浅い水たまりや雨に備える根拠が明確だ。[販売店の商品情報](https://www.cecile.co.jp/detail/RS-440/?clrcd=022)"
+          },
+          {
+            "asin": "B0CZ6M33VT",
+            "reason": "駅から登山口までの舗装路が長く、整備された低山の道を歩く人に。OUTDOOR PRODUCTS 704WSはローカットの男女兼用防水スニーカーで、4Eの足囲と取り外せるカップインソールを備える。メーカー直営店は防水設計を明記しているが、防水膜の種類や浸水試験値は示していないため、その範囲で雨への備えとして選ぶ。[アサヒシューズ直営店](https://store.shopping.yahoo.co.jp/sunrise-shoes/kf74533.html)"
+          }
+        ]
+      }
     ],
-    "brand_count": 0,
-    "price_used_as_constraint_only": true
+    "brand_count": 2,
+    "candidate_count": 13,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [],
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": []
   },
-  "products": [
-    {
-      "ref": "p1",
-      "product_id": "AMZ-B09N3NSKMQ",
-      "asin": "B09N3NSKMQ",
-      "amazon_title": "[サロモン] トレッキングシューズ X ULTRA PIONEER MID GTX メンズ",
-      "brand": "Salomon",
-      "image_url": "https://m.media-amazon.com/images/I/71VHzLgO8tL._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.53,
-      "matched_comparison_axes": [
-        "weight_portability"
-      ],
-      "search_key": "トレッキングシューズ アウトドアシューズ メンズ ウォーキング",
-      "selected_variant": "ブラック/マグネット/モニュメント、27.0cm、1足"
-    },
-    {
-      "ref": "p2",
-      "product_id": "AMZ-B0D6GFSX3N",
-      "asin": "B0D6GFSX3N",
-      "amazon_title": "モアブ 3 シンセティック ミッド ゴアテックス GREYSTONE 27.0cm 2E メンズ",
-      "brand": "MERRELL",
-      "image_url": "https://m.media-amazon.com/images/I/81HMLKvLtuL._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.35,
-      "matched_comparison_axes": [
-        "weight_portability"
-      ],
-      "search_key": "登山靴 トレッキングシューズ 防水 ハイキングシューズ ミドルカ",
-      "selected_variant": "GREYSTONE、メンズ27.0cm、2E、1足"
-    },
-    {
-      "ref": "p3",
-      "product_id": "AMZ-B0GS7T42JC",
-      "asin": "B0GS7T42JC",
-      "amazon_title": "[コロンビア] SABER VI MID OUTDRY セイバー 6 ミッド アウトドライ YM8972",
-      "brand": "Columbia",
-      "image_url": "https://m.media-amazon.com/images/I/71J3YVZ0XrL._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.35,
-      "matched_comparison_axes": [],
-      "search_key": "トレッキングシューズ 登山 靴 メンズ レディース 登山シューズ",
-      "selected_variant": "397 Stone Green/Mossy Green、26.0cm、1足"
-    },
-    {
-      "ref": "p4",
-      "product_id": "AMZ-B0CNHWGXYS",
-      "asin": "B0CNHWGXYS",
-      "amazon_title": "KEEN (キーン) メンズ ターギー 4 ミッドハイト 耐久性 快適 防水 ハイキングブーツ, キャンティーン/カーキ。, 25.5 cm",
-      "brand": "KEEN",
-      "image_url": "https://m.media-amazon.com/images/I/71HXdTvXbXL._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.35,
-      "matched_comparison_axes": [],
-      "search_key": "トレッキングシューズ 防水 登山靴 ハイキングシューズ ハイカッ",
-      "selected_variant": "Canteen/Khaki、メンズ25.5cm、1足、米国直送販売"
-    },
-    {
-      "ref": "p5",
-      "product_id": "AMZ-B0B8CM1CBV",
-      "asin": "B0B8CM1CBV",
-      "amazon_title": "[キャラバン] Caravan C 1 02S",
-      "brand": "Caravan",
-      "image_url": "https://m.media-amazon.com/images/I/616Syd88TEL._AC_SL1000_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.35,
-      "matched_comparison_axes": [],
-      "search_key": "アウトドアシューズ トレッキングシューズ レディース メンズ ハ",
-      "selected_variant": "340 アンバー、26.5cm、3E、1足"
-    },
-    {
-      "ref": "p6",
-      "product_id": "AMZ-B09WCNBR9Y",
-      "asin": "B09WCNBR9Y",
-      "amazon_title": "[シリオ] トレッキング シューズ P.F.302MARON メンズ P.F.302",
-      "brand": "SIRIO",
-      "image_url": "https://m.media-amazon.com/images/I/41-22jZeJqL._AC_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.35,
-      "matched_comparison_axes": [],
-      "search_key": "アウトドアシューズ トレッキングシューズ レディース メンズ ハ",
-      "selected_variant": "MARON、25.5cm、3E+、1足"
-    }
-  ]
+  "slug": "hiking-trekking-shoes-6-picks"
 }

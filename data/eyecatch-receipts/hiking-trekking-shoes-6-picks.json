@@ -1,12 +1,55 @@
 {
-  "generation_method": "generative_ai",
-  "provider": "openai",
-  "model": "gpt-image-2.5-sunburst",
-  "quality": "high",
-  "operation_id": "sellemy-eyecatch-hiking-trekking-shoes-6-picks-8afdfc4af3b4b105",
-  "request_sha256": "8afdfc4af3b4b10570a29e0245e43f45187d8270400e63b0a4c4a5e249a225d9",
-  "image_sha256": "6e2dac83fa8cd6dca5ed0aff572b3c7908be1bda382cfa1d0c354210ad950f3f",
-  "width": 1536,
+  "generated_at": "2026-11-28T15:18:56.056534+00:00",
+  "generation_method": "codex_cli_imagegen",
+  "generation_route": "built-in_image_gen",
+  "generation_route_attestation": "codex_rollout_extension",
   "height": 1024,
-  "generated_at": "2026-10-02T12:20:50.538443+00:00"
+  "image_generation_internal_usage_exposed": false,
+  "image_sha256": "d05d321785407683216014a62b62dce93140d056c1fd223b42cb5110639101d2",
+  "member_binding_revision": 16,
+  "model": "gpt-6-sol",
+  "model_reported_generation_route": "built-in_image_gen",
+  "role_id": "bu-codex-sellemy-designer",
+  "routing": {
+    "api_share": 0,
+    "codex_reserve_percent": 20.0,
+    "codex_share": 100,
+    "codex_usage": {
+      "remaining_percent": 48.0,
+      "resets_at": 1796330023,
+      "source": "/Users/kickstart/.codex/sessions/2026/11/28/rollout-2026-11-28T07-02-07-01a21f07-b227-7371-a22c-1697d184d202.jsonl",
+      "used_percent": 52.0,
+      "window_minutes": 10080
+    },
+    "errors_before_success": [],
+    "executed_route": "codex",
+    "fallback_from": null,
+    "mode": "weighted_random",
+    "reason": "weighted_random",
+    "remaining_percent": 48.0,
+    "roll": 96,
+    "selected_route": "codex",
+    "total_weight": 100
+  },
+  "routing_recorded_at": "2026-11-28T15:18:56.057957+00:00",
+  "summary": "玄関で登山靴の紐を結ぶ、日帰り低山への出発前の一場面。PNG形式と1536x1024の寸法を確認済み。",
+  "thread_id": "01a222bb-d6f5-7273-b2fe-99ac5a5ac320",
+  "token_usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 90112,
+    "input_tokens": 100472,
+    "output_tokens": 681,
+    "reasoning_output_tokens": 0,
+    "total_tokens": 101153,
+    "uncached_input_tokens": 10360
+  },
+  "token_usage_source": "codex_rollout.turn_token_usage",
+  "visual_family": "editorial lifestyle",
+  "visual_qa": {
+    "image_sha256": "d05d321785407683216014a62b62dce93140d056c1fd223b42cb5110639101d2",
+    "model": "gpt-6-sol",
+    "reason": "玄関で登山靴のひもを結ぶ人物が写っており、手足や物の形に明らかな異常は見られません。記事のテーマにも合っています。",
+    "verdict": "PASS"
+  },
+  "width": 1536
 }
