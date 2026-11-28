@@ -1,169 +1,318 @@
 {
-  "slug": "electric-pressure-cookers-6-picks",
-  "category": "gadget",
-  "canonical_url": "https://www.sellemy.jp/article/gadget/electric-pressure-cookers-6-picks.html",
-  "eyecatch_image": "https://www.sellemy.jp/img/electric-pressure-cookers-6-picks/electric-pressure-cookers-6-picks.png",
   "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/electric-pressure-cookers-6-picks.html",
+  "category": "gadget",
   "comparison_axes": [
     {
-      "id": "capacity",
-      "label": "容量",
+      "id": "popular",
       "keywords": [
-        "1〜2人分",
-        "3〜4人分",
-        "大容量"
-      ]
+        "人気"
+      ],
+      "label": "人気・定番の基準"
     },
     {
-      "id": "modes",
-      "label": "調理モード数",
+      "id": "weekday_meal_routine",
       "keywords": [
-        "自動メニュー",
-        "無水調理",
-        "低温調理"
-      ]
+        "自動調理メニュー",
+        "予約調理の対象メニュー",
+        "操作手順",
+        "本体サイズ"
+      ],
+      "label": "平日の夕食を段取りしやすい操作"
     },
     {
-      "id": "maintenance",
-      "label": "お手入れのしやすさ",
+      "id": "weekend_batch_cooking",
       "keywords": [
-        "内鍋フッ素加工",
-        "食洗機対応",
-        "パーツ分解"
-      ]
-    },
-    {
-      "id": "price",
-      "label": "価格帯",
-      "keywords": [
-        "コスパ",
-        "高機能",
-        "エントリーモデル"
-      ]
+        "調理容量",
+        "満水容量との違い",
+        "一度に作る量",
+        "内鍋の扱い"
+      ],
+      "label": "週末の作り置きに合う調理容量"
     }
   ],
-  "selection": {
-    "comparison_axes_covered": [
-      "capacity",
-      "modes"
-    ],
-    "brand_count": 6,
-    "price_used_as_constraint_only": true
+  "eyecatch_image": "https://www.sellemy.jp/img/electric-pressure-cookers-6-picks/electric-pressure-cookers-6-picks.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "29676a9e1c16d80adaaa557f4277c5fa594116d0279490fd81d667a8bbaa61f9",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 26067,
+      "listing_identity_citations_repaired": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 1909,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 845,
+      "session_id": "01a21c5d-50a9-7e31-b1d0-975556540db1",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "ティファール 電気圧力鍋「ラクラ・クッカー コンパクト」ブラック 3L CY3518JPA",
+          "identity_quote": "ティファール 電気圧力鍋「ラクラ・クッカー コンパクト」ブラック 3L CY3518JPA",
+          "reason": "products[p1].amazon_titleに製品名と型番CY3518JPAがあり、電気圧力鍋として識別できる。定番機種を紹介するグループに適合する。仕様の追加主張には検証済み引用元がない。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "パナソニック 電気圧力鍋 3.9L 最大6人分 圧力/低温/無水/煮込/自動調理 レシピブック付 温度過昇防止・ふた開閉検知機能付き NF-PC400-K",
+          "identity_quote": "パナソニック 電気圧力鍋 3.9L 最大6人分 圧力/低温/無水/煮込/自動調理 レシピブック付 温度過昇防止・ふた開閉検知機能付き NF-PC400-K",
+          "reason": "products[p2].amazon_titleに電気圧力鍋と型番NF-PC400-Kがあり、製品を識別できる。定番機種を紹介するグループに適合する。p5と同一製品である肯定的な根拠はない。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "アイリスオーヤマ 電気圧力鍋 1台7役 80種類のレシピ本付き 時短・簡単・手軽調理鍋 4.0L ブラック KPC-MA4-B",
+          "identity_quote": "アイリスオーヤマ 電気圧力鍋 1台7役 80種類のレシピ本付き 時短・簡単・手軽調理鍋 4.0L ブラック KPC-MA4-B",
+          "reason": "products[p3].amazon_titleに電気圧力鍋と型番KPC-MA4-Bがあり、製品を識別できる。レシピを選んで平日の料理を考える切り口に適合する。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "weekday_meal_routine",
+              "quote": "Pressure/Stirring Bottom/Stir-fry/Steam/Low Temperature/Dry/Simmer/Automatic Cooking NF-AC1000-K"
+            }
+          ],
+          "identity_key": "パナソニック オートクッカー ビストロ 自動調理なべ 4.2L 圧力/鍋底かきまぜ/炒め/蒸し/低温/無水/煮込/自動調理 NF-AC1000-K",
+          "identity_quote": "パナソニック オートクッカー ビストロ 自動調理なべ 4.2L 圧力/鍋底かきまぜ/炒め/蒸し/低温/無水/煮込/自動調理 NF-AC1000-K",
+          "reason": "検証済み販売ページhttps://www.amazon.co.jp/dp/B0BPBJ9Z4Kのsources[0].excerptが型番、圧力調理、鍋底かきまぜ機能を明示する。平日の調理手順を考える切り口に適合する。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "weekend_batch_cooking",
+              "quote": "Capacity: Approx. 3.0 (full water capacity) L, Approx. 2.0 (cooking capacity) L"
+            }
+          ],
+          "identity_key": "パナソニック 電気圧力鍋 3L 圧力/低温/無水/煮込/自動調理 レシピブック付 温度過昇防止機能 SR-MP300-K",
+          "identity_quote": "パナソニック 電気圧力鍋 3L 圧力/低温/無水/煮込/自動調理 レシピブック付 温度過昇防止機能 SR-MP300-K",
+          "reason": "検証済み販売ページhttps://www.amazon.co.jp/dp/B07RQYFFV6?th=1のsources[0].excerptが型番と調理容量約2.0Lを明示する。週末の仕込み量を考える切り口に適合する。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "アイリスオーヤマ 電気圧力鍋 圧力鍋 6L 5~6人用 低温調理可能 予約調理対応 ケーキも作れる メーカー保証付き ホワイト PC-EMA6-W",
+          "identity_quote": "アイリスオーヤマ 電気圧力鍋 圧力鍋 6L 5~6人用 低温調理可能 予約調理対応 ケーキも作れる メーカー保証付き ホワイト PC-EMA6-W",
+          "reason": "products[p6].amazon_titleに電気圧力鍋と型番PC-EMA6-Wがあり、製品を識別できる。容量を考える切り口に適合する。p3と同一製品である肯定的な根拠はない。調理容量など掲載タイトルにない仕様は、この判断の根拠にしていない。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "6商品の掲載タイトルにはそれぞれ異なる製品名・型番があり、いずれも電気圧力調理を扱う企画に適合する。各商品は割り当てられた紹介切り口で紹介でき、同一製品であることを示す肯定的な根拠はない。p1、p2、p3、p6には検証済みの引用元がないため、identity_quoteは空欄とし、掲載タイトルで確認できる識別情報に判断を限定した。記事本文は未提出。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
   },
   "products": [
     {
+      "amazon_title": "ティファール 電気圧力鍋「ラクラ・クッカー コンパクト」ブラック 3L CY3518JPA",
+      "asin": "B0BBM6R6DR",
+      "brand": "",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51qOpIQu35L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0BBM6R6DR",
+      "provisional": true,
+      "rating": 4.3,
       "ref": "p1",
-      "product_id": "AMZ-B08GQM8TC3",
-      "asin": "B08GQM8TC3",
-      "amazon_title": "アイリスオーヤマ 電気圧力鍋 2.2L 1~2人用 コンパクトタイプ グリル鍋 自動メニュー69種類 ガラス蓋付き レシピブック付き",
-      "brand": "アイリスオーヤマ",
-      "image_url": "https://m.media-amazon.com/images/I/51cbE+BMsCL._AC_SL1000_.jpg",
-      "observed_price": 9000,
-      "discovery_score": 1,
-      "selection_score": 0.7,
-      "matched_comparison_axes": [
-        "capacity"
-      ],
-      "search_key": "BRUNO オートクックポット 0.6L 豆乳メーカー 豆乳機 スープメーカ",
-      "selected_variant": {
-        "colour": "ブラック",
-        "capacity": "満水2.2L/調理1.4L",
-        "package": "本体＋ガラス蓋、レシピブック付き",
-        "count": 1
-      }
+      "review_count": 602,
+      "search_key": "ティファール 電気圧力鍋「ラクラ・クッカー コンパクト」ブラック",
+      "selection_reason": "定番の基準として、夕食のカレー・肉じゃが・角煮を専用のレシピモードで選べる点が具体的。帰宅後に献立を決めて調理したい初めての購入者に向く。幅26.0cmの本体に、炒め・圧力・無水などのモードも備える。予約は最大12時間だが、炒め・低温調理などは対象外と[メーカー仕様](https://www.t-fal.co.jp/pressurecookers/epc/products/lakulacooker-compact-7211004726/)に明記されている。",
+      "sources": []
     },
     {
-      "ref": "p2",
-      "product_id": "AMZ-B0DBKNLCNG",
-      "asin": "B0DBKNLCNG",
-      "amazon_title": "【WEB限定】タイガー魔法瓶 電気圧力鍋 4L 4～6人用 低温調理 炊飯可能マットブラック COK-N400 KM",
-      "brand": "タイガー魔法瓶",
-      "image_url": "https://m.media-amazon.com/images/I/51+ipjygV4L._AC_SL1080_.jpg",
-      "observed_price": 24800,
-      "discovery_score": 1,
-      "selection_score": 0.7,
-      "matched_comparison_axes": [
-        "modes"
-      ],
-      "search_key": "タイガー魔法瓶(TIGER) タイガー魔法瓶 電気圧力鍋 4L 4～6人用 低温調理 炊飯可能",
-      "selected_variant": {
-        "colour": "マットブラック",
-        "capacity": "満水4L/調理2.5L",
-        "count": 1
-      }
-    },
-    {
-      "ref": "p3",
-      "product_id": "AMZ-B0CCCFLR7X",
-      "asin": "B0CCCFLR7X",
       "amazon_title": "パナソニック 電気圧力鍋 3.9L 最大6人分 圧力/低温/無水/煮込/自動調理 レシピブック付 温度過昇防止・ふた開閉検知機能付き NF-PC400-K",
-      "brand": "パナソニック",
-      "image_url": "https://m.media-amazon.com/images/I/71D+kFltHjL._AC_SL1500_.jpg",
-      "observed_price": 28000,
+      "asin": "B0CCCFLR7X",
+      "brand": "",
+      "discovery_axis_id": "popular",
       "discovery_score": 1,
-      "selection_score": 0.52,
-      "matched_comparison_axes": [],
-      "search_key": "BSSEA 電気圧力鍋 炊飯器 3分割内鍋 0～70kPa 10種メニュー",
-      "selected_variant": {
-        "colour": "ブラック",
-        "capacity": "満水3.9L/調理2.6L",
-        "count": 1
-      }
+      "image_url": "https://m.media-amazon.com/images/I/71D+kFltHjL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0CCCFLR7X",
+      "provisional": true,
+      "rating": 4.2,
+      "ref": "p2",
+      "review_count": 1496,
+      "search_key": "パナソニック 電気圧力鍋 3.9L 最大6人分 圧力/低温/無水",
+      "selection_reason": "家族の夕食と翌日の分を一度に考える際の基準になる一台。満水容量3.9Lに対して調理容量は2.6Lで、メーカーは肉じゃが・さばのみそ煮・カレーを含む自動調理20メニューと最大6人分の調理を案内している。量を確保しつつ献立を選びたい世帯に向くが、予約できるのは自動調理の一部のみ。[メーカー製品情報](https://panasonic.jp/cook/products/NF-PC400.html)に基づく。",
+      "sources": []
     },
     {
+      "amazon_title": "アイリスオーヤマ 電気圧力鍋 1台7役 80種類のレシピ本付き 時短・簡単・手軽調理鍋 4.0L ブラック KPC-MA4-B",
+      "asin": "B08DCQ64N7",
+      "brand": "",
+      "discovery_axis_id": "weekday_meal_routine",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51mBlQsThFL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B08DCQ64N7",
+      "provisional": true,
+      "rating": 4.2,
+      "ref": "p3",
+      "review_count": 397,
+      "search_key": "アイリスオーヤマ 電気圧力鍋 1台7役 80種類のレシピ本付き",
+      "selection_reason": "帰宅後に料理名から操作したい人向け。フルドット液晶にメニュー・調理時間・操作方法を表示し、ひじきの煮物や豚汁などを含む自動メニュー80種を選べる。平日の副菜や汁物を献立から決めやすい一方、予約できないメニューもある。[メーカー特設サイト](https://www.irisohyama.co.jp/e-pressure-cooker/4l/)と[製品カタログ](https://www.irisohyama.co.jp/data/products/digital-catalog/cooking-appliances-2025/catalog.pdf)に基づく。",
+      "sources": []
+    },
+    {
+      "amazon_title": "パナソニック オートクッカー ビストロ 自動調理なべ 4.2L 圧力/鍋底かきまぜ/炒め/蒸し/低温/無水/煮込/自動調理 NF-AC1000-K",
+      "asin": "B0BPBJ9Z4K",
+      "brand": "Panasonic",
+      "discovery_axis_id": "weekday_meal_routine",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/715+eUjfBxL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0BPBJ9Z4K",
+      "provisional": false,
+      "rating": 4.4,
       "ref": "p4",
-      "product_id": "AMZ-B0F9KYLZ7V",
-      "asin": "B0F9KYLZ7V",
-      "amazon_title": "ティファール 自動調理鍋（圧力機能付き） 「ラクラ・クッカー プロ」3L（2～4人用）ホワイト CY3811J0A",
-      "brand": "ティファール",
-      "image_url": "https://m.media-amazon.com/images/I/512M8Mi3exL._AC_SL1000_.jpg",
-      "observed_price": 31800,
-      "discovery_score": 1,
-      "selection_score": 0.52,
-      "matched_comparison_axes": [],
-      "search_key": "T-Fal ティファール 自動調理鍋（圧力機能付き） 「ラクラ・クッカー プ",
-      "selected_variant": {
-        "colour": "ホワイト",
-        "capacity": "3L",
-        "package": "オンライン限定モデル、レシピブック付",
-        "count": 1
-      }
+      "review_count": 135,
+      "search_key": "Panasonic パナソニック オートクッカー ビストロ 自動調理なべ 4.2L",
+      "selection_reason": "炒め物や煮詰める料理も夕食の段取りに入れたい人向け。鍋底かきまぜ機能があり、材料を入れた後の攪拌を機器に任せられるのがこの機種の個性。本体搭載の自動メニューは25種で追加・入替にも対応する。予約は自動調理の一部のみで、設置には幅33.3×奥行33.6cmを見込む。[メーカー仕様](https://panasonic.jp/cook/products/NF-AC1000/spec.html)と[機能説明](https://panasonic.jp/cook/products/NF-AC1000/feature/topics.html)に基づく。",
+      "sources": [
+        {
+          "brand": "Panasonic",
+          "excerpt": "Panasonic Auto Cooker Bistro Automatic Cooking Pot 4.2L Pressure/Stirring Bottom/Stir-fry/Steam/Low Temperature/Dry/Simmer/Automatic Cooking NF-AC1000-K\nAbout this item\nOur goal was to achieve the highest level of home cooking Leave the rich and thick umami stew to Bistro\nRely on \"pot bottom stirring × high power × pressure\" for authentic taste\nEven hard fish bones become tender with high-pressure cooking Industry-leading class (*1) Approximately 2 ATM + choose the optimal pressure according to the menu ※1: As of December 7, 2022 Scheduled for release on February 1, 2023 In the domestic home cookware market Maximum cooking pressure (According to Panasonic research)\nExpand your repertoire with more recipes via the Kitchen Pocket app (※2) ※2: The compatible Kitchen Pocket app for this model, with about 100 recipes added, is scheduled to be released in January 2023\nProduct size: Width 333 mm x Depth 336 mm x Height 260 mm › See more product details\nBrand Panasonic\nCapacity 2.4 Liters\nColor Black\nFinish Type Fluorine treatment\nProduct Dimensions 3.36D x 3.33W x 2.6H m",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Panasonic Auto Cooker Bistro Automatic Cooking Pot 4.2L Pressure/Stirring Bottom/Stir-fry/Steam/Low Temperature/Dry/Simmer/Automatic Cooking NF-AC1000-K",
+          "url": "https://www.amazon.co.jp/dp/B0BPBJ9Z4K",
+          "verified": true
+        }
+      ]
     },
     {
+      "amazon_title": "パナソニック 電気圧力鍋 3L 圧力/低温/無水/煮込/自動調理 レシピブック付 温度過昇防止機能 SR-MP300-K",
+      "asin": "B07RQYFFV6",
+      "brand": "Panasonic",
+      "discovery_axis_id": "weekend_batch_cooking",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/614eqANzp0L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B07RQYFFV6",
+      "provisional": false,
+      "rating": 4.2,
       "ref": "p5",
-      "product_id": "AMZ-B09BQQGZZG",
-      "asin": "B09BQQGZZG",
-      "amazon_title": "シロカ 自動減圧機能付き電気圧力鍋 おうちシェフ PRO [スマートプレッシャー技術(高圧力95Kpa×自動減圧)/1台10役/レシピ本付き/かしこい予約プログラム/発酵/甘酒/電気圧力鍋] SP-2DP251 グレー",
-      "brand": "シロカ",
-      "image_url": "https://m.media-amazon.com/images/I/51fZ+lm1TUL._AC_SL1500_.jpg",
-      "observed_price": 42500,
-      "discovery_score": 1,
-      "selection_score": 0.52,
-      "matched_comparison_axes": [],
-      "search_key": "ダイレクトテレショップ ラボーノ三ツ星シェフ＋クレバーカッター 全自動調理器 ほったらか",
-      "selected_variant": {
-        "colour": "グレー",
-        "capacity": "満水2.4L/調理1.68L",
-        "count": 1
-      }
+      "review_count": 1496,
+      "search_key": "Panasonic パナソニック 電気圧力鍋 3L 圧力/低温/無水/煮込/自動調理",
+      "selection_reason": "週末に煮物など一品を作り、数回の食事へ分けたい少人数世帯に向く。満水容量3.0Lではなく調理容量2.0Lを仕込み量の目安にでき、内なべはフッ素加工。無水・低温調理にも対応し、同じ容量内で作り置きする料理を変えられる。[メーカー仕様](https://panasonic.jp/cook/products/SR-MP300/spec.html)に基づく。",
+      "sources": [
+        {
+          "brand": "Panasonic",
+          "excerpt": "Panasonic Electric Pressure Cooker 3L with Pressure/Low Temperature/No Water/Stew/Auto Cooking, Recipe Book Included, Overheat Protection Function SR-MP300-K\nAbout this item\nMain Body Dimensions (Width x Depth x Height): 11.5 x 10.9 x 10.6 inches (29.2 x 27.8 x 27.0 cm)\nCord Length: 1.0 m (3.3 feet)\nAccessories: measuring cup, ladle, steaming tray\nFeatures \"No-Water Cooking\" & \"Healthy Soup\" settings to enhance the natural nutrition and umami of the ingredients\nA compact size that fits in the kitchen\nPSC Mark and SG Mark certified PSC Mark: Conforms to the safety standards for household pressure cookers and pressure pots under the Consumer Product Safety Act SG Mark: Indicates that the product has passed the SG standards set by the Japan Safety Agency, and in the event of a personal injury accident caused by a product defect, compensation measures will be taken\nQuick & easy authentic cooking with pressure cooking\nCapacity: Approx. 3.0 (full water capacity) L, Approx. 2.0 (cooking capacity) L\nPower Consumption: 700 W Show More › See more product details\nBrand Panasonic\nCapacity 3 Liters\nMaterial other\nColor Black\nFinish Type Metallic",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Panasonic Electric Pressure Cooker 3L with Pressure/Low Temperature/No Water/Stew/Auto Cooking, Recipe Book Included, Overheat Protection Function SR-MP300-K",
+          "url": "https://www.amazon.co.jp/dp/B07RQYFFV6?th=1",
+          "verified": true
+        }
+      ]
     },
     {
-      "ref": "p6",
-      "product_id": "AMZ-B09FJ85HHT",
-      "asin": "B09FJ85HHT",
-      "amazon_title": "【旧モデル】クッキングプロ V2 (3.2) 電気圧力鍋",
-      "brand": "ショップジャパン",
-      "image_url": "https://m.media-amazon.com/images/I/61obEw9kHbL._AC_SL1500_.jpg",
-      "observed_price": 11259,
+      "amazon_title": "アイリスオーヤマ 電気圧力鍋 圧力鍋 6L 5~6人用 低温調理可能 予約調理対応 ケーキも作れる メーカー保証付き ホワイト PC-EMA6-W",
+      "asin": "B08QCPDK4F",
+      "brand": "",
+      "discovery_axis_id": "weekend_batch_cooking",
       "discovery_score": 1,
-      "selection_score": 0.47,
-      "matched_comparison_axes": [],
-      "search_key": "Pixyo 電気圧力鍋 炊飯器 3L 多機能調理 24H予約タイマー タッチ",
-      "selected_variant": {
-        "colour": "シルバー",
-        "capacity": "3.2L",
-        "count": 1
-      }
+      "image_url": "https://m.media-amazon.com/images/I/51Z04l-3mAS._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B08QCPDK4F",
+      "provisional": true,
+      "rating": 4.0,
+      "ref": "p6",
+      "review_count": 1255,
+      "search_key": "アイリスオーヤマ 電気圧力鍋 圧力鍋 6L 5~6人用 低温調理",
+      "selection_reason": "週末に一度で多めの煮込みおかずを仕込みたい世帯向け。名称の『6.0L』ではなく、メーカーが示す満水容量5.8L・調理容量3.8Lを実際の仕込み量の判断に使える。本体は幅32.5×奥行30.9×高さ32.8cmで、置き場所も合わせて検討できる。[メーカー仕様](https://www.irisohyama.co.jp/products/electrical-appliances/cooking-appliances/pressure-cooker/electric-pressure-cooker/electric-pressure-cooker-6.0l)では生産終了品だが、[販売ページ](https://zenplus.jp/ja/%E3%82%A2%E3%82%A4%E3%83%AA%E3%82%B9%E3%82%AA%E3%83%BC%E3%83%A4%E3%83%9E-%E9%9B%BB%E6%B0%97%E5%9C%A7%E5%8A%9B%E9%8D%8B-%E5%9C%A7%E5%8A%9B%E9%8D%8B-6l-%E4%BD%8E%E6%B8%A9%E8%AA%BF%E7%90%86%E5%8F%AF%E8%83%BD-%E4%BA%88%E7%B4%84%E8%AA%BF%E7%90%86%E5%AF%BE%E5%BF%9C-%E3%82%B1%E3%83%BC%E3%82%AD%E3%82%82%E4%BD%9C%E3%82%8C%E3%82%8B-%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E4%BF%9D%E8%A8%BC%E4%BB%98%E3%81%8D-%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88-pc-ema6-w/p/fun-factory-japan%3Acc8d20f5-b00c-4da6-a6e3-eca84b3ccd93)には在庫表示がある。",
+      "sources": []
     }
-  ]
+  ],
+  "selection": {
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B0BBM6R6DR",
+            "reason": "定番の基準として、夕食のカレー・肉じゃが・角煮を専用のレシピモードで選べる点が具体的。帰宅後に献立を決めて調理したい初めての購入者に向く。幅26.0cmの本体に、炒め・圧力・無水などのモードも備える。予約は最大12時間だが、炒め・低温調理などは対象外と[メーカー仕様](https://www.t-fal.co.jp/pressurecookers/epc/products/lakulacooker-compact-7211004726/)に明記されている。"
+          },
+          {
+            "asin": "B0CCCFLR7X",
+            "reason": "家族の夕食と翌日の分を一度に考える際の基準になる一台。満水容量3.9Lに対して調理容量は2.6Lで、メーカーは肉じゃが・さばのみそ煮・カレーを含む自動調理20メニューと最大6人分の調理を案内している。量を確保しつつ献立を選びたい世帯に向くが、予約できるのは自動調理の一部のみ。[メーカー製品情報](https://panasonic.jp/cook/products/NF-PC400.html)に基づく。"
+          }
+        ]
+      },
+      {
+        "axis_id": "weekday_meal_routine",
+        "products": [
+          {
+            "asin": "B08DCQ64N7",
+            "reason": "帰宅後に料理名から操作したい人向け。フルドット液晶にメニュー・調理時間・操作方法を表示し、ひじきの煮物や豚汁などを含む自動メニュー80種を選べる。平日の副菜や汁物を献立から決めやすい一方、予約できないメニューもある。[メーカー特設サイト](https://www.irisohyama.co.jp/e-pressure-cooker/4l/)と[製品カタログ](https://www.irisohyama.co.jp/data/products/digital-catalog/cooking-appliances-2025/catalog.pdf)に基づく。"
+          },
+          {
+            "asin": "B0BPBJ9Z4K",
+            "reason": "炒め物や煮詰める料理も夕食の段取りに入れたい人向け。鍋底かきまぜ機能があり、材料を入れた後の攪拌を機器に任せられるのがこの機種の個性。本体搭載の自動メニューは25種で追加・入替にも対応する。予約は自動調理の一部のみで、設置には幅33.3×奥行33.6cmを見込む。[メーカー仕様](https://panasonic.jp/cook/products/NF-AC1000/spec.html)と[機能説明](https://panasonic.jp/cook/products/NF-AC1000/feature/topics.html)に基づく。"
+          }
+        ]
+      },
+      {
+        "axis_id": "weekend_batch_cooking",
+        "products": [
+          {
+            "asin": "B07RQYFFV6",
+            "reason": "週末に煮物など一品を作り、数回の食事へ分けたい少人数世帯に向く。満水容量3.0Lではなく調理容量2.0Lを仕込み量の目安にでき、内なべはフッ素加工。無水・低温調理にも対応し、同じ容量内で作り置きする料理を変えられる。[メーカー仕様](https://panasonic.jp/cook/products/SR-MP300/spec.html)に基づく。"
+          },
+          {
+            "asin": "B08QCPDK4F",
+            "reason": "週末に一度で多めの煮込みおかずを仕込みたい世帯向け。名称の『6.0L』ではなく、メーカーが示す満水容量5.8L・調理容量3.8Lを実際の仕込み量の判断に使える。本体は幅32.5×奥行30.9×高さ32.8cmで、置き場所も合わせて検討できる。[メーカー仕様](https://www.irisohyama.co.jp/products/electrical-appliances/cooking-appliances/pressure-cooker/electric-pressure-cooker/electric-pressure-cooker-6.0l)では生産終了品だが、[販売ページ](https://zenplus.jp/ja/%E3%82%A2%E3%82%A4%E3%83%AA%E3%82%B9%E3%82%AA%E3%83%BC%E3%83%A4%E3%83%9E-%E9%9B%BB%E6%B0%97%E5%9C%A7%E5%8A%9B%E9%8D%8B-%E5%9C%A7%E5%8A%9B%E9%8D%8B-6l-%E4%BD%8E%E6%B8%A9%E8%AA%BF%E7%90%86%E5%8F%AF%E8%83%BD-%E4%BA%88%E7%B4%84%E8%AA%BF%E7%90%86%E5%AF%BE%E5%BF%9C-%E3%82%B1%E3%83%BC%E3%82%AD%E3%82%82%E4%BD%9C%E3%82%8C%E3%82%8B-%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E4%BF%9D%E8%A8%BC%E4%BB%98%E3%81%8D-%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88-pc-ema6-w/p/fun-factory-japan%3Acc8d20f5-b00c-4da6-a6e3-eca84b3ccd93)には在庫表示がある。"
+          }
+        ]
+      }
+    ],
+    "brand_count": 1,
+    "candidate_count": 20,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [],
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": []
+  },
+  "slug": "electric-pressure-cookers-6-picks"
 }
