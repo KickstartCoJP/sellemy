@@ -1,148 +1,363 @@
 {
-  "slug": "home-document-scanners-6-picks",
-  "category": "gadget",
-  "canonical_url": "https://www.sellemy.jp/article/gadget/home-document-scanners-6-picks.html",
-  "eyecatch_image": "https://www.sellemy.jp/img/home-document-scanners-6-picks/home-document-scanners-6-picks.png",
   "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/home-document-scanners-6-picks.html",
+  "category": "gadget",
   "comparison_axes": [
     {
-      "id": "feeding",
-      "label": "書類の量に合わせる読み取り方法",
+      "id": "popular",
       "keywords": [
+        "人気"
+      ],
+      "label": "人気・定番の基準"
+    },
+    {
+      "id": "routine_paperwork",
+      "keywords": [
+        "通知",
+        "領収書",
+        "複数枚",
         "自動給紙",
-        "手差し",
-        "両面同時読み取り",
-        "給紙枚数"
-      ]
+        "両面読取"
+      ],
+      "label": "届く書類をまとめて取り込む"
     },
     {
-      "id": "document_support",
-      "label": "読み取りたい原稿への対応",
+      "id": "preserve_originals",
       "keywords": [
-        "対応用紙サイズ",
-        "用紙厚",
-        "レシート",
-        "カード",
-        "キャリアシート"
-      ]
-    },
-    {
-      "id": "saving",
-      "label": "接続先とデータの保存方法",
-      "keywords": [
-        "USB接続",
-        "Wi-Fi接続",
-        "対応OS",
-        "検索可能PDF",
-        "OCR",
-        "付属ソフト"
-      ]
+        "契約書",
+        "証明書",
+        "傷めたくない原本",
+        "フラットベッド"
+      ],
+      "label": "大切な原本を折らずに取り込む"
     }
   ],
-  "selection": {
-    "comparison_axes_covered": [
-      "document_support",
-      "saving"
-    ],
-    "brand_count": 0,
-    "price_used_as_constraint_only": true,
-    "content_duplicates_removed": []
+  "eyecatch_image": "https://www.sellemy.jp/img/home-document-scanners-6-picks/home-document-scanners-6-picks.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "ed187f02cd73fcfaffd21ab074d8822afa4de215415c89ad203e1b392b6e752f",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 25848,
+      "listing_identity_citations_repaired": [
+        "p2",
+        "p4",
+        "p6"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 1935,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 994,
+      "session_id": "01a221bb-1234-7af3-9436-4b68c5a007f6",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "Double-Sided Scanning/ADF"
+            }
+          ],
+          "identity_key": "ScanSnap iX2500",
+          "identity_quote": "ScanSnap iX2500",
+          "reason": "型番で識別できる自動給紙型の書類スキャナー。両面読取と最大100枚の給紙について記載があり、定番の選択肢として紹介できる。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "Epson Document Flatbed Scanner GT-S660"
+            }
+          ],
+          "identity_key": "エプソン ドキュメント フラットベッドスキャナー GT-S660 A4カラー 4800dpi",
+          "identity_quote": "エプソン ドキュメント フラットベッドスキャナー GT-S660 A4カラー 4800dpi",
+          "reason": "型番で識別できるフラットベッド型。書類に加えて写真も扱う選択肢として紹介できる。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "routine_paperwork",
+              "quote": "自動給紙機構(ADF)、両面同時読み取り"
+            }
+          ],
+          "identity_key": "ScanSnap iX1500",
+          "identity_quote": "ScanSnap iX1500",
+          "reason": "p1とは型番が異なる製品。自動給紙と両面同時読取が明記され、複数枚の書類を取り込む切り口に合う。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "routine_paperwork",
+              "quote": "contracts, blueprints, receipts"
+            }
+          ],
+          "identity_key": "iCODIS スキャナー ドキュメントスキャナー 非破壊 書画カメラ: 1700万画素 A3対応 OCR コンパクト 自炊 高速スキャン PDF変換 ブックスキャン 自動平坦化 書",
+          "identity_quote": "iCODIS スキャナー ドキュメントスキャナー 非破壊 書画カメラ: 1700万画素 A3対応 OCR コンパクト 自炊 高速スキャン PDF変換 ブックスキャン 自動平坦化 書籍デジタル化 卓上型 Windows/Mac対応 事務所/教育機関/在宅ワーク用 携帯可能 小型軽量",
+          "reason": "上から原稿を撮影する書画カメラ型。資料にはA3対応や領収書の取り込みについて記載があり、サイズの違う書類を扱う用途で紹介できる。画質や補正性能の宣伝表現は実証済みの性能として扱えない。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "preserve_originals",
+              "quote": "Color Flatbed Scanner"
+            }
+          ],
+          "identity_key": "Canon CanoScan LiDE 400",
+          "identity_quote": "Canon CANOSCAN LIDE 400 Color Flatbed Scanner",
+          "reason": "型番で識別できるフラットベッド型。原稿を給紙機構に通さない用途に合う。選定理由にあるA4対応は、提示された資料本文だけでは確認できない。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "iOCHOW スキャナー ドキュメントスキャナー a3 a4対応 非破壊 書画カメラ 高速 スキャン 1800万画素 OCR Windows対応",
+          "identity_quote": "iOCHOW スキャナー ドキュメントスキャナー a3 a4対応 非破壊 書画カメラ 高速 スキャン 1800万画素 OCR Windows対応",
+          "reason": "掲載商品名からiOCHOWの書画カメラ型として識別でき、原本を給紙口に通さない紹介切り口に合う。検証済みの資料は付いていないため、掲載商品名を超える性能や使い勝手は主張できない。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "6件は掲載商品名からそれぞれ識別でき、色・数量違いなど同一商品と判断できる証拠はない。家庭用書類スキャナーという企画に適合し、既存の3つの紹介切り口に各2件を配置できる。p6には検証済みの資料がないため、紹介に使える事実は掲載商品名に記された範囲に限る。記事は未提出のため、本文に関する判定は行っていない。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
   },
   "products": [
     {
-      "ref": "p1",
-      "product_id": "AMZ-B0FF9FSLV6",
-      "asin": "B0FF9FSLV6",
       "amazon_title": "リコー PFU ドキュメントスキャナー ScanSnap iX2500 (高速毎分45枚/両面読取/ADF/5インチタッチパネル/Wi-Fi対応/USB接続/フラグシップ/書類/レシート/名刺/写真/領収書)(Black)",
-      "brand": "RICOH / PFU",
-      "image_url": "https://m.media-amazon.com/images/I/61d-n-+6JhL._AC_SL1500_.jpg",
-      "observed_price": null,
+      "asin": "B0FF9FSLV6",
+      "brand": "ScanSnap",
+      "discovery_axis_id": "popular",
       "discovery_score": 1,
-      "selection_score": 0.67,
-      "matched_comparison_axes": [
-        "document_support",
-        "saving"
-      ],
-      "search_key": "ドキュメントスキャナー 書画カメラ A4対応 1600万画素 高",
-      "selected_variant": "Black・本体1台"
+      "image_url": "https://m.media-amazon.com/images/I/61d-n-+6JhL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0FF9FSLV6",
+      "provisional": false,
+      "rating": 4.3,
+      "ref": "p1",
+      "review_count": 132,
+      "search_key": "ScanSnap リコー PFU ドキュメントスキャナー ScanSnap iX2",
+      "selection_reason": "学校や行政から届く書類が多い家庭で、定番の自動給紙型を選ぶ基準になる一台。商品説明によると最大100枚をセットでき、両面を毎分45枚で読み取れる。ScanSnap Homeで読み取り後の整理まで扱えるため、紙をためてからまとめて電子化したい人に向く。",
+      "sources": [
+        {
+          "brand": "ScanSnap",
+          "excerpt": "Ricoh PFU Document Scanner ScanSnap iX2500 (High-Speed 45 Pages Per Minute/Double-Sided Scanning/ADF/5-Inch Touch-Panel/Wi-Fi Compatible/USB Connection/Flagship/Documents/Receipts/Business Cards\nAbout this item\nScanSnap's fastest ever high-speed scanning at 45 sheets per minute.' Up to 100 manuscripts By incorporating our proprietary next-generation SoC \"iiGA\" developed for business use scanners, image processing performance without a PC and other features have significantly evolved\n2.9 second fast startup Features a 5-inch capacitive touch panel for stress-free usability Supports Wi-Fi 6, WPA3 and TLS 1.3 security standards The connector for the USB cable is Type-C A3 documents can be read in manual feed mode without the need for a carrier sheet\nSimply by connecting to a PC or smartphone via USB or Wi-Fi, you can now easily reflect your usual scan settings, such as color mode and image quality, on the device Even with the iX2500 installed in various locations such as offices, public spaces, and co-working spaces, you can use it with the same ease of use as your own iX2500\nSupports the software \"ScanSnap Home\" that centralizes management from document reading to data organization and utilization Save to various cloud services such as document management, business card management, expense settlement, photo organization, and household account books with a single touch from the touch panel to PDF PC version now newly supports integration with \"Microsoft Teams\", \"SharePoint\", \"OneNote\", \"Notion\", and \"iCloud\" You can also save to various cloud services linked with ScanSnap Cloud from the quick menu\nEnvironmentally conscious design The scanner body uses 25% or more recycled plastic components We have eliminated the use of virgin plastic derived from fossil fuels in packaging materials › See more product details\nScanner Type Document\nBrand ScanSnap\nConnectivity Technology USB, Wi-Fi\nResolution 1200 dpi\nColor Depth 48 bits\nVisit the ScanSnap Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Ricoh PFU Document Scanner ScanSnap iX2500 (High-Speed 45 Pages Per Minute/Double-Sided Scanning/ADF/5-Inch Touch-Panel/Wi-Fi Compatible/USB Connection/Flagship/Documents/Receipts/Business Cards",
+          "url": "https://www.amazon.co.jp/dp/B0FF9FSLV6?th=1",
+          "verified": true
+        }
+      ]
     },
     {
+      "amazon_title": "エプソン ドキュメント フラットベッドスキャナー GT-S660 A4カラー 4800dpi",
+      "asin": "B0BTNLHBNC",
+      "brand": "Epson",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51fF0fGCUBL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0BTNLHBNC",
+      "provisional": false,
+      "rating": 4.0,
       "ref": "p2",
-      "product_id": "AMZ-B0HK83SQF1",
-      "asin": "B0HK83SQF1",
-      "amazon_title": "ET24Pro ボックス付きブックスキャナー A3対応 2400万画素 非破壊 高速スキャン 3本レーザー補正搭載 Windows/Mac対応 電子帳簿保存法対応 OCR機能 自動平坦化 歪み補正 HDMI出力 日本国内専用 光学ドライブ不要",
-      "brand": "CZUR",
-      "image_url": "https://m.media-amazon.com/images/I/5111AowrTyL._AC_SX679_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.31,
-      "matched_comparison_axes": [
-        "saving"
-      ],
-      "search_key": "ET24Pro ボックス付きブックスキャナー A3対応 2400",
-      "selected_variant": "ET24Proボックス付き・日本国内専用・本体1台"
+      "review_count": 278,
+      "search_key": "Epson エプソン ドキュメント フラットベッドスキャナー GT-S660",
+      "selection_reason": "原本をガラス面に置くフラットベッド型を選ぶ基準になる一台。GT-S660はA4書類に加え、退色した写真の補正機能を備え、立てて収納できると商品説明にある。保険の証明書などを一枚ずつ扱い、家族の古い写真も残したい人が用途を広げられる。",
+      "sources": [
+        {
+          "brand": "Epson",
+          "excerpt": "Epson Document Flatbed Scanner GT-S660 A4 Color 4800dpi\nAbout this item\n【High-quality scan up to 4,800 dpi】Achieve a maximum optical resolution of 4,800 dpi Reproduces images such as photos and graphics beautifully Additionally, it is equipped with image correction functions such as \"backlight correction\" and \"fade restoration\" to beautifully revive photos\n【Ease of use condensed into a compact body】It is a lightweight, thin, stylish body in white color A smart scanner with a built-in stand allows you to scan while standing, store it while standing, and it does not require a power cord\nEasy to operate with 4 navigation buttons: Just press the button on the main unit, you can complete your work with Epson ScanSmart PC application without hassle\n【Choose software according to your needs】Epson ScanSmart is an application for those who want to easily scan and save or send photos and documents, while Document Capture Pro is ideal for business use, efficiently digitizing paper documents Note: The standard included application is Epson ScanSmart\n【Speedy scanning of L-size photos and A4 documents】Achieve a scanning speed of 5 seconds per L-size color/monochrome photo and 10 seconds per A4 color/monochrome document Not only can it be used for personal use, it is also convenient for counter work such as medical sites and stores (Note) Epson company's standard measurements (varies depending on usage environment and method) › See more product details\nScanner Type Document\nBrand Epson\nConnectivity Technology USB\nProduct Dimensions 36.4D x 24.9W x 3.9H cm\nResolution 4800 dpi",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Epson Document Flatbed Scanner GT-S660 A4 Color 4800dpi",
+          "url": "https://www.amazon.co.jp/dp/B0BTNLHBNC?th=1",
+          "verified": true
+        }
+      ]
     },
     {
+      "amazon_title": "富士通 PFU ドキュメントスキャナー ScanSnap iX1500 (両面読取/ADF/4.3インチタッチパネル/Wi-Fi対応)",
+      "asin": "B07HHZJKS3",
+      "brand": "富士通",
+      "discovery_axis_id": "routine_paperwork",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61qCyg+ABvL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B07HHZJKS3",
+      "provisional": false,
+      "rating": 4.4,
       "ref": "p3",
-      "product_id": "AMZ-B0CX48H1JG",
-      "asin": "B0CX48H1JG",
-      "amazon_title": "ブラザー ドキュメントスキャナー ADS-1800W (無線LAN対応/30ppm/タッチパネル/USBバスパワー対応)",
-      "brand": "brother",
-      "image_url": "https://m.media-amazon.com/images/I/51jeGKshLwL._AC_SL1200_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.31,
-      "matched_comparison_axes": [
-        "saving"
-      ],
-      "search_key": "iCODIS スキャナー A4対応 500万画素 ドキュメントス",
-      "selected_variant": "本体1台・標準構成（別売ACキット/排紙トレーなし）"
+      "review_count": 712,
+      "search_key": "富士通 PFU ドキュメントスキャナー ScanSnap iX1500",
+      "selection_reason": "学校の通知や保険の案内など、複数枚の両面書類を定期的に取り込む人向け。iX1500は自動給紙機構と両面同時読み取りに対応すると商品説明に明記されており、ページごとに裏返す作業を省ける。",
+      "sources": [
+        {
+          "brand": "富士通",
+          "excerpt": "富士通 PFU ドキュメントスキャナー ScanSnap iX1500 (両面読取/ADF/4.3インチタッチパネル/Wi-Fi対応)\nこの商品について\n読取方式: 自動給紙機構(ADF)、両面同時読み取り(自動給紙モード、手差し/単送モード)\n読取モード:片面/両面、カラー/グレー/白黒/自動\n光学解像度:600dpi\n読取範囲: A4 (キャリアシート使用時のみA3対応)\nインターフェース: USB3.1 / USB3.0 / USB2.0 /USB1.1(コネクタ:B Type) Wi-Fi: IEEE802.11 a/b/g/n/ac\n外形寸法 幅×奥行×高さ : 292mm×161mm×152mm(スタッカー等突起物を除きます。)\n重量: 3.4kg › もっと見る\nスキャナータイプ ドキュメント\nブランド 富士通\n接続技術 Wi-Fi\n商品の寸法 16.1奥行き x 29.2幅 x 15.2高さ cm\n解像度 600\nブランド: 富士通",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "富士通 PFU ドキュメントスキャナー ScanSnap iX1500 (両面読取/ADF/4.3インチタッチパネル/Wi-Fi対応)",
+          "url": "https://www.amazon.co.jp/dp/B07HHZJKS3",
+          "verified": true
+        }
+      ]
     },
     {
+      "amazon_title": "iCODIS スキャナー ドキュメントスキャナー 非破壊 書画カメラ: 1700万画素 A3対応 OCR コンパクト 自炊 高速スキャン PDF変換 ブックスキャン 自動平坦化 書籍デジタル化 卓上型 Windows/Mac対応 事務所/教育機関/在宅ワーク用 携帯可能 小型軽量",
+      "asin": "B0FNVVD1CQ",
+      "brand": "iCODIS",
+      "discovery_axis_id": "routine_paperwork",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51ZGXwB3CsL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0FNVVD1CQ",
+      "provisional": false,
+      "rating": 4.3,
       "ref": "p4",
-      "product_id": "AMZ-B07HG9JLKG",
-      "asin": "B07HG9JLKG",
-      "amazon_title": "エプソン スキャナー ES-60WB (モバイル/A4/USB対応/Wi-Fi対応/ブラック)",
-      "brand": "EPSON",
-      "image_url": "https://m.media-amazon.com/images/I/512MLGXu5xL._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.31,
-      "matched_comparison_axes": [
-        "saving"
-      ],
-      "search_key": "スキャナー A3対応 ブックスキャナー ドキュメントスキャナー",
-      "selected_variant": "ブラック・本体1台"
+      "review_count": 357,
+      "search_key": "iCODIS スキャナー ドキュメントスキャナー 非破壊 書画カメラ: 170",
+      "selection_reason": "A4の通知に領収書や大判の資料が混ざり、取り込み後に文字でも探したい人向け。商品説明ではA3までの上からの撮影、領収書の電子化、OCRによる検索可能なPDFの作成に対応する。原稿を一枚ずつ置いて撮る方式なので、サイズの違う紙を整理する場面に合う。",
+      "sources": [
+        {
+          "brand": "iCODIS",
+          "excerpt": "iCODIS Scanner, Document Scanner, Non-destructive, Drawing Camera: 17 Million Pixels, A3 Compatible, OCR, Compact, Self-Cooking, High-Speed Scanning, PDF Conversion, Book Scan, Automatic Leveling, Book Digitizing, Desktop Type, Windows/Mac Compatible, For Offices/Educations/Home Works, Portable, Small and Lightweight\nAbout this item\nMulti-functional A3/A4 High Definition Scanning: The A3 scanner can scan documents of up to A3 size (16.5 x 11.7 inches (420 x 297 mm)) to A4 documents. 17 megapixel high-resolution scan allows you to clearly digitize business documents such as contracts, blueprints, receipts, and more. The drawing camera function allows you to shoot teaching materials and 3D objects in real time, and supports screen sharing at Zoom meetings. It can also be used as an overhead scanner, which is strong support for online lessons and remote meetings. Equipped with a 3-stage dimming LED light supplement that delivers vivid scans without fading even in the dark. Can be used widely as household scanners and office scanners\nNondestructive Scanning and Automatic Correction Technology: Non-destructive scanning technology allows you to digitize your valuable books without damaging them. Auto-turn feature and auto-flattening technology automatically compensates page distortion The curved surface correction function allows you to reproduce thick textbooks and magazines that are difficult to open flat. Equipped with advanced image processing function that automatically performs background correction, fingerprint removal, and misalignment. Support 130 languages as an OCR scanner, produce scannable PDF and editable Word/Excel files simultaneously. Efficient archival work in library and educational institutions. It can also be used as a stand scanner to reduce the burden of scanning books\nBUSINESS EFFICIENCY Continuous reading function as a business card scanner processes 50 business cards in bulk to manage customer data efficiently. One-click operation completes the PDF file conversion and supports output in JPG/Word/Excel. Compact and compact scanner design can be folded and stored, saving space for office and home work. It can also be used as a mobile scanner, and it's portable design makes it easy to carry. Compatible with B4 and A4 size documents, supporting a wide range of document processing\nCompatible with a variety of scenes and youth cases: This portable document scanner can be used anywhere. From managing receipts as a home scanner to digitizing books in educational institutions. Overhead scanner function helps you present online classroom materials and digitize your old photo albums and magazines without fading. Ideal for medical institutions for electronics, and for the management of contracts in law offices. It can be used as a textbook scanner or at school as a document scanner in the office. It can also be used as a drawing camera with USB connection, and has web drawing camera function\nUSER-FRIENDLY DESIGN & HIGH FUNCTIONALITY: Tabletop lightweight body (0.68kg), portable small scanner. Fully Windows and Mac compatible, significantly increase office document management efficiency. 3-stage dimming overhead light provides high-definition text recognition scans even in the dark. Use the included scan mat to ensure stable shooting. As an e-book scanner, it assists in self-cooking tasks with the automatic turn-over feature to reduce the hassle of turning pages. Distortion correction function allows for curved surface correction, perfect for scanning books with pdf. It can be used as a compact A4 scanner or a large B4 compatible scanner to meet all your scanning needs › See more product details\nScanner Type Document\nBrand iCODIS\nConnectivity Technology USB\nProduct Dimensions 7D x 8.5W x 34.4H cm\nResolution 1200 dpi\nBrand: iCODIS",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "iCODIS Scanner, Document Scanner, Non-destructive, Drawing Camera: 17 Million Pixels, A3 Compatible, OCR, Compact, Self-Cooking, High-Speed Scanning, PDF Conversion, Book Scan, Automatic Leveling, Book Digitizing, Desktop Type, Windows/Mac Compatible, For Offices/Educations/Home Works, Portable, Small and Lightweight",
+          "url": "https://www.amazon.co.jp/dp/B0FNVVD1CQ?th=1",
+          "verified": true
+        }
+      ]
     },
     {
-      "ref": "p5",
-      "product_id": "AMZ-B0H4LPTPV4",
-      "asin": "B0H4LPTPV4",
-      "amazon_title": "CZUR FancySPro-USB ドキュメントスキャナー 書画カメラ",
-      "brand": "CZUR",
-      "image_url": "https://m.media-amazon.com/images/I/61supWDLN-L._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.31,
-      "matched_comparison_axes": [],
-      "search_key": "CZUR FancySPro-USB ドキュメントスキャナー 書",
-      "selected_variant": "USB版・日本国内専用・本体1台"
-    },
-    {
-      "ref": "p6",
-      "product_id": "AMZ-B07G13HG3V",
-      "asin": "B07G13HG3V",
       "amazon_title": "キヤノン Canon カラーフラットベッドスキャナ CANOSCAN LIDE 400",
+      "asin": "B07G13HG3V",
       "brand": "Canon",
-      "image_url": "https://m.media-amazon.com/images/I/91ByFXPy8-L._AC_SL1500_.jpg",
-      "observed_price": null,
+      "discovery_axis_id": "preserve_originals",
       "discovery_score": 1,
-      "selection_score": 0.31,
-      "matched_comparison_axes": [
-        "saving"
-      ],
-      "search_key": "スキャナー A3対応 ドキュメントスキャナー ブックスキャナー",
-      "selected_variant": "本体1台・国内モデル"
+      "image_url": "https://m.media-amazon.com/images/I/91ByFXPy8-L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B07G13HG3V",
+      "provisional": false,
+      "rating": 4.1,
+      "ref": "p5",
+      "review_count": 1678,
+      "search_key": "Canon キヤノン Canon カラーフラットベッドスキャナ CANOSC",
+      "selection_reason": "契約書や証明書を給紙ローラーに通したくない人向け。LiDE 400はA4対応の薄型フラットベッドスキャナーで、原稿をガラス面に置いて読み取れる。折り目を付けたくない一枚物の原本を、平らに置いて電子化する用途に合う。",
+      "sources": [
+        {
+          "brand": "Canon",
+          "excerpt": "Canon CANOSCAN LIDE 400 Color Flatbed Scanner\nAbout this item\nProduct Features: Highly functional, lightweight and compact model › See more product details\nScanner Type Document\nBrand Canon\nConnectivity Technology USB\nProduct Dimensions 25D x 36.7W x 4.2H cm\nResolution 4800\nVisit the キヤノン Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Canon CANOSCAN LIDE 400 Color Flatbed Scanner",
+          "url": "https://www.amazon.co.jp/dp/B07G13HG3V",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "iOCHOW スキャナー ドキュメントスキャナー a3 a4対応 非破壊 書画カメラ 高速 スキャン 1800万画素 OCR Windows対応",
+      "asin": "B0H1W1J1KJ",
+      "brand": "",
+      "discovery_axis_id": "preserve_originals",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51x7xL6e9CL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0H1W1J1KJ",
+      "provisional": true,
+      "rating": 4.4,
+      "ref": "p6",
+      "review_count": 223,
+      "search_key": "iOCHOW スキャナー ドキュメントスキャナー a3 a4対応",
+      "selection_reason": "折りにくいA3の原本や綴じた資料を、その形のまま記録したい人向け。候補の商品名にはA3・A4対応、非破壊の書画カメラ、OCR機能が明記されている。上から撮影する方式なので、原稿を給紙口に通さずに取り込める。",
+      "sources": []
     }
-  ]
+  ],
+  "selection": {
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B0FF9FSLV6",
+            "reason": "学校や行政から届く書類が多い家庭で、定番の自動給紙型を選ぶ基準になる一台。商品説明によると最大100枚をセットでき、両面を毎分45枚で読み取れる。ScanSnap Homeで読み取り後の整理まで扱えるため、紙をためてからまとめて電子化したい人に向く。"
+          },
+          {
+            "asin": "B0BTNLHBNC",
+            "reason": "原本をガラス面に置くフラットベッド型を選ぶ基準になる一台。GT-S660はA4書類に加え、退色した写真の補正機能を備え、立てて収納できると商品説明にある。保険の証明書などを一枚ずつ扱い、家族の古い写真も残したい人が用途を広げられる。"
+          }
+        ]
+      },
+      {
+        "axis_id": "routine_paperwork",
+        "products": [
+          {
+            "asin": "B07HHZJKS3",
+            "reason": "学校の通知や保険の案内など、複数枚の両面書類を定期的に取り込む人向け。iX1500は自動給紙機構と両面同時読み取りに対応すると商品説明に明記されており、ページごとに裏返す作業を省ける。"
+          },
+          {
+            "asin": "B0FNVVD1CQ",
+            "reason": "A4の通知に領収書や大判の資料が混ざり、取り込み後に文字でも探したい人向け。商品説明ではA3までの上からの撮影、領収書の電子化、OCRによる検索可能なPDFの作成に対応する。原稿を一枚ずつ置いて撮る方式なので、サイズの違う紙を整理する場面に合う。"
+          }
+        ]
+      },
+      {
+        "axis_id": "preserve_originals",
+        "products": [
+          {
+            "asin": "B07G13HG3V",
+            "reason": "契約書や証明書を給紙ローラーに通したくない人向け。LiDE 400はA4対応の薄型フラットベッドスキャナーで、原稿をガラス面に置いて読み取れる。折り目を付けたくない一枚物の原本を、平らに置いて電子化する用途に合う。"
+          },
+          {
+            "asin": "B0H1W1J1KJ",
+            "reason": "折りにくいA3の原本や綴じた資料を、その形のまま記録したい人向け。候補の商品名にはA3・A4対応、非破壊の書画カメラ、OCR機能が明記されている。上から撮影する方式なので、原稿を給紙口に通さずに取り込める。"
+          }
+        ]
+      }
+    ],
+    "brand_count": 5,
+    "candidate_count": 17,
+    "comparison_axes_covered": [
+      "routine_paperwork"
+    ],
+    "content_duplicates_removed": [],
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": []
+  },
+  "slug": "home-document-scanners-6-picks"
 }
