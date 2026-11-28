@@ -1,137 +1,332 @@
 {
-  "slug": "heel-moisturizing-creams-6-picks",
-  "category": "beauty",
-  "canonical_url": "https://www.sellemy.jp/article/beauty/heel-moisturizing-creams-6-picks.html",
-  "eyecatch_image": "https://www.sellemy.jp/img/heel-moisturizing-creams-6-picks/heel-moisturizing-creams-6-picks.png",
   "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/heel-moisturizing-creams-6-picks.html",
+  "category": "beauty",
   "comparison_axes": [
     {
-      "id": "ingredients",
-      "label": "保湿成分",
+      "id": "popular",
       "keywords": [
-        "尿素",
-        "ワセリン",
-        "グリセリン"
+        "人気"
+      ],
+      "label": "人気・定番の基準"
+    },
+    {
+      "id": "urea_care",
+      "keywords": [
+        "尿素配合",
+        "かかとの硬さ",
+        "配合成分"
+      ],
+      "label": "硬さが気になるかかとに、尿素配合から選ぶ"
+    },
+    {
+      "id": "non_urea_moisture",
+      "keywords": [
+        "尿素無配合",
+        "保湿成分",
+        "かかとの乾燥"
+      ],
+      "label": "尿素を避けたいときに、保湿成分から選ぶ"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/heel-moisturizing-creams-6-picks/heel-moisturizing-creams-6-picks.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "9323dc25c1236abfdae2d92498f626f5d98bd72d664074964e79b9c81a1767d4",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 25252,
+      "listing_identity_citations_repaired": [
+        "p2",
+        "p5",
+        "p6"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 1356,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 429,
+      "session_id": "01a21e3e-d1f2-7bc0-892e-9f5683a14f73",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "旅美人 かかとつるつるクリーム",
+          "identity_quote": "",
+          "reason": "掲載名からかかと用クリームとして識別できる。配合成分や使用部位の詳細には確認済みの根拠がない。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "Dr.Scholl【かかと保湿クリーム】長時間・高保湿 無香料 ジェル状クリーム 70g 約2.5ヶ月分",
+          "identity_quote": "Dr.Scholl【かかと保湿クリーム】長時間・高保湿 無香料 ジェル状クリーム 70g 約2.5ヶ月分",
+          "reason": "掲載名からかかと用のジェル状保湿クリームとして識別できる。尿素誘導体の配合率や使用感は確認済み資料で裏付けられていない。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "ファイントゥデイ 尿素10％クリーム ジャー",
+          "identity_quote": "",
+          "reason": "掲載名から尿素10％クリームとして識別でき、尿素配合の紹介枠に合う。効能や使用上の制限には別途根拠が必要。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "ポップベリー コウンバル フットクリーム プレミアム",
+          "identity_quote": "",
+          "reason": "掲載名から足用クリームとして識別できる。選定理由には尿素配合とあるが、確認済みの成分抜粋がないため、記事で配合を断定できない。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "non_urea_moisture",
+              "quote": "Ideal for concentrated moisturizing care for areas that are particularly dry in elbows and heels"
+            }
+          ],
+          "identity_key": "Neutrogena ニュートロジーナ 集中部分ケア インテンスリペアリッチバーム CICA配合 100g シカ シカクリーム 高保湿 ひじ・かかと 無香料 無着色",
+          "identity_quote": "Neutrogena ニュートロジーナ 集中部分ケア インテンスリペアリッチバーム CICA配合 100g シカ シカクリーム 高保湿 ひじ・かかと 無香料 無着色",
+          "reason": "確認済みの商品情報は、ひじ・かかとの乾燥部分に使う保湿バームとしての紹介を支える。尿素無配合は確認済みの全成分表示がないため断定できない。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "non_urea_moisture",
+              "quote": "Made with generous coconut oil to keep it hydrated, so it is recommended for those who suffer from cracked heels and daily foot care. The sweet scent of coconut"
+            }
+          ],
+          "identity_key": "【BURT’S BEES 公式 】バーツビーズ フットクリーム（121.9g）無添加 ひび割れ・角質ケア プレゼント ギフト プチ",
+          "identity_quote": "【BURT’S BEES 公式 】バーツビーズ フットクリーム（121.9g）無添加 ひび割れ・角質ケア プレゼント ギフト プチ",
+          "reason": "確認済みの商品情報は、ココナッツオイルを使った足用クリームとしての紹介を支える。尿素無配合は確認済みの全成分表示がないため断定できない。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "6商品は掲載名または確認済みの商品情報から個別に識別でき、同一商品の色・容量・セット違いを示す肯定的な重複根拠はない。いずれも足またはかかとの保湿というテーマに沿って紹介できる。尿素の配合・無配合など、確認済み資料で裏付けられていない詳細は記事の事実として断定できない。記事本文は未提出。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
+  "products": [
+    {
+      "amazon_title": "旅美人 かかとつるつるクリーム",
+      "asin": "B00B07GSM6",
+      "brand": "",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71DTheaUn0L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B00B07GSM6",
+      "provisional": true,
+      "rating": 4.2,
+      "ref": "p1",
+      "review_count": 6637,
+      "search_key": "旅美人 かかとつるつるクリーム",
+      "selection_reason": "硬く乾いたかかとを、尿素で角質を柔らかくしながら保湿したい人向け。旅美人は尿素に加えて海洋性コラーゲンを配合し、かかとのほか、ひじ・ひざ・手にも使えると案内している。かかとから手まで一つで手入れしたい人に合う。[旅美人公式](https://www.tabibijin.com/shopdetail/008002000001/)",
+      "sources": []
+    },
+    {
+      "amazon_title": "Dr.Scholl【かかと保湿クリーム】長時間・高保湿 無香料 ジェル状クリーム 70g 約2.5ヶ月分",
+      "asin": "B07X66BMG9",
+      "brand": "",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71qeZ-4KiZL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B07X66BMG9",
+      "provisional": true,
+      "rating": 4.2,
+      "ref": "p2",
+      "review_count": 1154,
+      "search_key": "Dr.Scholl 長時間・高保湿 無香料 ジェル状クリーム 7",
+      "selection_reason": "かかとの乾燥を日々手入れしたい一方、塗った後のべたつきが気になる人向け。かかと用のジェル状クリームで、保湿成分として尿素誘導体を15％配合。通常の尿素そのものではなく、厚いかかとの角質層を保湿する設計として案内されている。[マツキヨココカラの商品情報](https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4906156402100)",
+      "sources": []
+    },
+    {
+      "amazon_title": "【指定医薬部外品】ファイントゥデイ 尿素10％クリーム ジャー 100g",
+      "asin": "B001PM4JBS",
+      "brand": "",
+      "discovery_axis_id": "urea_care",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61kd3PVkgqL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B001PM4JBS",
+      "provisional": true,
+      "rating": 4.1,
+      "ref": "p3",
+      "review_count": 132,
+      "search_key": "ファイントゥデイ 尿素10％クリーム ジャー 100g",
+      "selection_reason": "かかとの硬さとカサつきが気になり、尿素の配合量を確認して選びたい人向け。ファイントゥデイの指定医薬部外品で、尿素10％にヒアルロン酸とスクワランを組み合わせ、角質層の水分保持と柔軟化を案内している。傷口、赤く腫れた部位、ひどいひび割れには使用しない。[ファイントゥデイ公式](https://onlineshop.finetoday.com/products/nyosohaigo-07)",
+      "sources": []
+    },
+    {
+      "amazon_title": "ポップベリー コウンバル フットクリーム プレミアム 100g",
+      "asin": "B09V5NRX61",
+      "brand": "",
+      "discovery_axis_id": "urea_care",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61dOnNUyGnL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B09V5NRX61",
+      "provisional": true,
+      "rating": 4.1,
+      "ref": "p4",
+      "review_count": 256,
+      "search_key": "ポップベリー コウンバル フットクリーム プレミアム 100g",
+      "selection_reason": "尿素入りのかかと専用クリームで、日常的に乾燥を手入れしたい人向け。コウンバル プレミアムは成分表示に尿素があり、ローヤルゼリーエキス、プロポリスエキス、ヒアルロン酸Naも配合。販売ページはカサカサのかかと向けで、べたつきにくい使い心地を案内している。[マツモトキヨシの商品情報](https://item.rakuten.co.jp/matsukiyo/4560461864482/)",
+      "sources": []
+    },
+    {
+      "amazon_title": "Neutrogena ニュートロジーナ 集中部分ケア インテンスリペアリッチバーム CICA配合 100g シカ シカクリーム 高保湿 ひじ・かかと 無香料 無着色",
+      "asin": "B08HNHNCGR",
+      "brand": "Neutrogena",
+      "discovery_axis_id": "non_urea_moisture",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51VkmpJrdQL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B08HNHNCGR",
+      "provisional": false,
+      "rating": 4.3,
+      "ref": "p5",
+      "review_count": 378,
+      "search_key": "Neutrogena ニュートロジーナ 集中部分ケア インテンスリペアリッチバーム C",
+      "selection_reason": "尿素を避け、かかととひじの強い乾燥を無香料のバームで集中的に保湿したい人向け。公式案内は保湿成分のツボクサエキスと濃密な保湿ヴェールを特徴とし、掲載された全成分に尿素はない。[ニュートロジーナ公式](https://www.neutrogena.jp/body/product-lines/intense/rich_balm)・[全成分表示](https://item.rakuten.co.jp/n-yakuhin/4901730200080-1kea/)",
+      "sources": [
+        {
+          "brand": "Neutrogena",
+          "excerpt": "Neutrogena Intense Repair Rich Balm, Contains CICA 3.5 oz (100 g), Deer Cream, Highly Moisturizing, Elbow and Heel, Unscented, No Coloring\nAbout this item\n(Concentrated Care) Ideal for concentrated moisturizing care for areas that are particularly dry in elbows and heels\n(CICA Ingredients) Formulated with cica (deer), a natural moisturizing ingredient that is naturally derived. Protects skin from dryness and smoothes the cuticle\nMedical Grade Moisturizing Penetration: Uses glycerin with high moisture retention, especially for those badly irritated areas\nLearn the next morning. Moisture Retention: You can rest assured even in the mornings that tend to dry out. With a firm texture, it penetrates immediately into the skin for a comfortable feel\nContents: 3.5 oz (100 g) / Unscented, uncolored, paraben free › See more product details\nBrand Neutrogena\nItem dimensions L x W x H 38 x 195 x 38 mm\nAge Range (Description) Adult\nSpecial Feature Moisturizes and moisturizes, Unscented\nSkin Type Dry\nNumber of Items 1\nScent Unscented\nItem Form Cream\nUse for Whole Body\nSpecial Ingredients Glycerin See more\nVisit the Neutrogena Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Neutrogena Intense Repair Rich Balm, Contains CICA 3.5 oz (100 g), Deer Cream, Highly Moisturizing, Elbow and Heel, Unscented, No Coloring",
+          "url": "https://www.amazon.co.jp/dp/B08HNHNCGR",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "texture",
-      "label": "塗り心地",
-      "keywords": [
-        "べたつき",
-        "伸び",
-        "靴下との相性"
-      ]
-    },
-    {
-      "id": "value",
-      "label": "続けやすさ",
-      "keywords": [
-        "容量",
-        "容器",
-        "価格"
+      "amazon_title": "【BURT’S BEES 公式 】バーツビーズ フットクリーム（121.9g）無添加 ひび割れ・角質ケア プレゼント ギフト プチ",
+      "asin": "B000VV0APS",
+      "brand": "Burt's Bees",
+      "discovery_axis_id": "non_urea_moisture",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71MjqO29ncL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B000VV0APS",
+      "provisional": false,
+      "rating": 4.6,
+      "ref": "p6",
+      "review_count": 4846,
+      "search_key": "Burt's Bees バーツビーズ フットクリーム（121.9g）無添加 ひび割れ・角",
+      "selection_reason": "尿素を避けつつ、就寝前の足の保湿を香りも含めて楽しみたい人向け。バーツビーズ公式はヤシ油を使ったココナッツの甘い香りのフットクリームとして、毎日のケアと一晩の集中ケアを案内する。公式の全成分表示に尿素はない。[バーツビーズ公式](https://www.burtsbees.co.jp/product/%E3%82%B3%E3%82%B3%E3%83%8A%E3%83%83%E3%83%84%E3%82%AA%E3%82%A4%E3%83%AB%E3%83%95%E3%83%83%E3%83%88%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%A0-coconut-oil-foot-cream/)",
+      "sources": [
+        {
+          "brand": "Burt's Bees",
+          "excerpt": "Burt's Bees Official Foot Cream 4.3 oz (121.9 g), No Additives, Cracks, Cuticle Care, Present, Petite\nAbout this item\nHeel cream with over 99% of natural ingredients: Heel cream with over 99% natural ingredients sold by BURT'S BEES. Made with generous coconut oil to keep it hydrated, so it is recommended for those who suffer from cracked heels and daily foot care. The sweet scent of coconut makes you feel refreshed and perfect for everyday cracked heels and exfoliation\nNatural ingredients that do not compromise on safety. The products produced by BURT'S BEES do not exempt any synthetic chemicals that are not found in nature. The majority of the ingredients used are naturally derived ingredients such as plants, salts, and honey. We recommend this natural heel cream for those who have cracked heels so you can use it with confidence\n(BURT'S BEES) BURT'S BEES) Burt's beads are a \"American natural cosmetic brand\" that has been supported since 1980. The \"Pioneer\" of American Natural Cosmetics, Burt's Beads has a wide range of sales including Canada, UK, Ireland, Hong Kong, and Taiwan. Even after the dealer retreated from Japan in 2018, Japanese people carrying to a nearby foreign supermarket, etc., were not a trace of the vendor. Among those who do not have a source for purchase nearby, we continue to love our products on Amazon\n(Emollient of Coconut Oil) The emollient of coconut oil keeps your skin moisturized. This heel cream is recommended for those who suffer from cracking heels and those who are concerned about keratolytic care for their skin at a certain temperature\nRecommended to apply before sleeping: Burts beads heel cream (smooth heel cream) is easy to use. Simply spread the cream evenly over your feet to absorb the skin before going to bed and spend the night wearing cotton socks. If you want to focus on cracked heels or exfoliate care, soak your feet in lukewarm water for 10-15 minutes, then rub the surface with pumice, dry and apply heel cream (slick heel cream) › See more product details\nBrand Burt's Bees\nItem Volume 4.32 Fluid Ounces\nItem dimensions L x W x H 5.6 x 3.5 x 17.9 cm\nAge Range (Description) Adult\nSpecial Feature Moisturizes\nActive Ingredients Vitamin E\nSkin Type Normal\nScent Coconut\nItem Form Cream\nUnit Count 1.0 本 See more\nVisit the Burt's Bees Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Burt's Bees Official Foot Cream 4.3 oz (121.9 g), No Additives, Cracks, Cuticle Care, Present, Petite",
+          "url": "https://www.amazon.co.jp/dp/B000VV0APS",
+          "verified": true
+        }
       ]
     }
   ],
   "selection": {
-    "comparison_axes_covered": [
-      "ingredients"
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B00B07GSM6",
+            "reason": "硬く乾いたかかとを、尿素で角質を柔らかくしながら保湿したい人向け。旅美人は尿素に加えて海洋性コラーゲンを配合し、かかとのほか、ひじ・ひざ・手にも使えると案内している。かかとから手まで一つで手入れしたい人に合う。[旅美人公式](https://www.tabibijin.com/shopdetail/008002000001/)"
+          },
+          {
+            "asin": "B07X66BMG9",
+            "reason": "かかとの乾燥を日々手入れしたい一方、塗った後のべたつきが気になる人向け。かかと用のジェル状クリームで、保湿成分として尿素誘導体を15％配合。通常の尿素そのものではなく、厚いかかとの角質層を保湿する設計として案内されている。[マツキヨココカラの商品情報](https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4906156402100)"
+          }
+        ]
+      },
+      {
+        "axis_id": "urea_care",
+        "products": [
+          {
+            "asin": "B001PM4JBS",
+            "reason": "かかとの硬さとカサつきが気になり、尿素の配合量を確認して選びたい人向け。ファイントゥデイの指定医薬部外品で、尿素10％にヒアルロン酸とスクワランを組み合わせ、角質層の水分保持と柔軟化を案内している。傷口、赤く腫れた部位、ひどいひび割れには使用しない。[ファイントゥデイ公式](https://onlineshop.finetoday.com/products/nyosohaigo-07)"
+          },
+          {
+            "asin": "B09V5NRX61",
+            "reason": "尿素入りのかかと専用クリームで、日常的に乾燥を手入れしたい人向け。コウンバル プレミアムは成分表示に尿素があり、ローヤルゼリーエキス、プロポリスエキス、ヒアルロン酸Naも配合。販売ページはカサカサのかかと向けで、べたつきにくい使い心地を案内している。[マツモトキヨシの商品情報](https://item.rakuten.co.jp/matsukiyo/4560461864482/)"
+          }
+        ]
+      },
+      {
+        "axis_id": "non_urea_moisture",
+        "products": [
+          {
+            "asin": "B08HNHNCGR",
+            "reason": "尿素を避け、かかととひじの強い乾燥を無香料のバームで集中的に保湿したい人向け。公式案内は保湿成分のツボクサエキスと濃密な保湿ヴェールを特徴とし、掲載された全成分に尿素はない。[ニュートロジーナ公式](https://www.neutrogena.jp/body/product-lines/intense/rich_balm)・[全成分表示](https://item.rakuten.co.jp/n-yakuhin/4901730200080-1kea/)"
+          },
+          {
+            "asin": "B000VV0APS",
+            "reason": "尿素を避けつつ、就寝前の足の保湿を香りも含めて楽しみたい人向け。バーツビーズ公式はヤシ油を使ったココナッツの甘い香りのフットクリームとして、毎日のケアと一晩の集中ケアを案内する。公式の全成分表示に尿素はない。[バーツビーズ公式](https://www.burtsbees.co.jp/product/%E3%82%B3%E3%82%B3%E3%83%8A%E3%83%83%E3%83%84%E3%82%AA%E3%82%A4%E3%83%AB%E3%83%95%E3%83%83%E3%83%88%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%A0-coconut-oil-foot-cream/)"
+          }
+        ]
+      }
     ],
-    "brand_count": 0,
-    "price_used_as_constraint_only": true
+    "brand_count": 2,
+    "candidate_count": 22,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [
+      {
+        "asin": "B00B07GSM6",
+        "check_items": {
+          "color_design_only": "UNKNOWN",
+          "function_structure_difference": "UNKNOWN",
+          "independent_comparison_value": "UNKNOWN",
+          "manufacturer_brand_relation": "UNKNOWN",
+          "sales_packaging_only": "UNKNOWN",
+          "same_product_body": "FAIL",
+          "series_generation_difference": "UNKNOWN",
+          "size_capacity_difference": "UNKNOWN"
+        },
+        "duplicate_of_asin": "B00B07GSM6",
+        "reason": "same_asin"
+      }
+    ],
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": [
+      "B00B07GSM6"
+    ],
+    "targeted_replacement": true
   },
-  "products": [
-    {
-      "ref": "p1",
-      "product_id": "AMZ-B000FP3XTA",
-      "asin": "B000FP3XTA",
-      "amazon_title": "TO-PLAN(トプラン) かかとクリーム110ｇ 尿素配合クリーム",
-      "brand": "TO-PLAN",
-      "image_url": "https://m.media-amazon.com/images/I/61WO8roV7rL._AC_SX300_SY300_QL70_ML2_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.505,
-      "matched_comparison_axes": [
-        "ingredients"
-      ],
-      "search_key": "尿素クリーム 40% （サリチル酸 2% 配合） 100g フッ",
-      "selected_variant": "110g・1個・非薬用"
-    },
-    {
-      "ref": "p2",
-      "product_id": "AMZ-B07X66BMG9",
-      "asin": "B07X66BMG9",
-      "amazon_title": "Dr.Scholl【かかと保湿クリーム】長時間・高保湿 無香料 ジェル状クリーム 70g 約2.5ヶ月分",
-      "brand": "Dr.Scholl",
-      "image_url": "https://m.media-amazon.com/images/I/71qeZ-4KiZL._AC_SY300_SX300_QL70_ML2_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.325,
-      "matched_comparison_axes": [
-        "ingredients"
-      ],
-      "search_key": "尿素クリーム 40% サリチル酸配合 100g 高保湿 ベタつか",
-      "selected_variant": "70g・1個・無香料"
-    },
-    {
-      "ref": "p3",
-      "product_id": "AMZ-B0CHJBY29M",
-      "asin": "B0CHJBY29M",
-      "amazon_title": "O'Keeffe's オキーフ ヘルシーフィート 76g 乾燥肌用フットクリーム 1851 保湿 無香料 低刺激",
-      "brand": "O’Keeffe’s",
-      "image_url": "https://m.media-amazon.com/images/I/51sanL7K9NL._AC_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.325,
-      "matched_comparison_axes": [],
-      "search_key": "トプラン かかと専用クリーム 110g (× 2)",
-      "selected_variant": "フットクリーム・ジャー76g・単品・無香料"
-    },
-    {
-      "ref": "p4",
-      "product_id": "AMZ-B00B07GSM6",
-      "asin": "B00B07GSM6",
-      "amazon_title": "旅美人 かかとつるつるクリーム",
-      "brand": "旅美人",
-      "image_url": "https://m.media-amazon.com/images/I/71DTheaUn0L._AC_SY300_SX300_QL70_ML2_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.325,
-      "matched_comparison_axes": [
-        "ingredients"
-      ],
-      "search_key": "42%尿素配合クリーム サリチル酸 2% 配合 85g 高保湿",
-      "selected_variant": "100g・1個"
-    },
-    {
-      "ref": "p5",
-      "product_id": "AMZ-B08HFTDKTC",
-      "asin": "B08HFTDKTC",
-      "amazon_title": "Baby Foot(ベビーフット) ベビーフット 角質柔軟&保湿 シアバター フットクリーム かかと かちかち ガチガチ ひび割れ クリーム 100g",
-      "brand": "Baby Foot",
-      "image_url": "https://m.media-amazon.com/images/I/51f2umus55L._AC_SY300_SX300_QL70_ML2_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.325,
-      "matched_comparison_axes": [
-        "ingredients"
-      ],
-      "search_key": "浸透型 40% 尿素配合 高保湿クリーム 100g サリチル酸",
-      "selected_variant": "100g・フットクリーム"
-    },
-    {
-      "ref": "p6",
-      "product_id": "AMZ-B0G3YBKK87",
-      "asin": "B0G3YBKK87",
-      "amazon_title": "ロクシタン(L'OCCITANE) カリテコンフォート フットクリーム 150mL 乾燥 保湿 女性 レディース 男性 メンズ 人気",
-      "brand": "L’OCCITANE",
-      "image_url": "https://m.media-amazon.com/images/I/61qR57c5HWL._AC_SX342_SY445_QL70_ML2_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.325,
-      "matched_comparison_axes": [],
-      "search_key": "ウィル クレンズ 薬用 かかと クリーム 無香料 50g フット",
-      "selected_variant": "150mL・単品"
-    }
-  ]
+  "slug": "heel-moisturizing-creams-6-picks"
 }
