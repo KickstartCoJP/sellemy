@@ -1,172 +1,337 @@
 {
-  "slug": "cushion-foundations-6-picks",
-  "category": "beauty",
-  "canonical_url": "https://www.sellemy.jp/article/beauty/cushion-foundations-6-picks.html",
-  "eyecatch_image": "https://www.sellemy.jp/img/cushion-foundations-6-picks/cushion-foundations-6-picks.png",
   "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/cushion-foundations-6-picks.html",
+  "category": "beauty",
   "comparison_axes": [
     {
-      "id": "coverage",
-      "label": "カバー力・仕上がり",
+      "id": "popular",
       "keywords": [
-        "カバー力",
-        "艶肌",
-        "マット"
+        "人気"
+      ],
+      "label": "人気・定番の基準"
+    },
+    {
+      "id": "dry_cheeks",
+      "keywords": [
+        "保湿成分",
+        "ツヤ仕上げ",
+        "乾燥が気になる肌"
+      ],
+      "label": "頬の乾燥が気になる日の、しっとり感のある仕上がり"
+    },
+    {
+      "id": "oily_tzone",
+      "keywords": [
+        "皮脂対策",
+        "セミマット",
+        "さらっとした仕上がり"
+      ],
+      "label": "Tゾーンのテカリが気になる日の、さらっとした仕上がり"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/cushion-foundations-6-picks/cushion-foundations-6-picks.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "80fcdf131fb8152ca91d439ecb05e7a4cd8ea62e3782694c7bd7f0caa2588581",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 25178,
+      "listing_identity_citations_repaired": [
+        "p1",
+        "p3",
+        "p4",
+        "p6"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 1732,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 575,
+      "session_id": "01a21ac5-a9f8-7c82-a885-cbbfd50d465d",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "[TIRTIR] マスクフィットクッション (RED 21N)",
+          "identity_quote": "[TIRTIR] マスクフィットクッション (RED 21N)",
+          "reason": "掲載タイトルでRED系列のクッションファンデーションと識別できる。レビュー件数は定番候補を探す際の参考になる。仕上がりやカバー性能は検証済み資料がないため断定しない。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "ミシャ M クッション ファンデーション プロカバー",
+          "identity_quote": "",
+          "reason": "掲載タイトルでプロカバー系列の本体と識別できる。レビュー件数を伴う定番候補として紹介できるが、カバー性能の程度は断定しない。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "dry_cheeks",
+              "quote": "Contains 60% beauty ingredients including popular glutathione*, providing solid moisture"
+            },
+            {
+              "axis_id": "dry_cheeks",
+              "quote": "between matte and glossy"
+            }
+          ],
+          "identity_key": "Milk Touch ミルクタッチ オールデイスキンフィット ミルキーグロウクッション01 Rosy Ivory SPF50+ PA++++ 白玉肌 保湿 メッシュ ファンデ",
+          "identity_quote": "Milk Touch ミルクタッチ オールデイスキンフィット ミルキーグロウクッション01 Rosy Ivory SPF50+ PA++++ 白玉肌 保湿 メッシュ ファンデ",
+          "reason": "検証済みの商品掲載情報に保湿成分と、マットとツヤの中間を意図した仕上がりの説明があり、頬の乾燥が気になる日の候補として紹介できる。持続時間は実性能として断定しない。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "dry_cheeks",
+              "quote": "Moisturizing 61% Essence Formula: This serum cushion contains plenty of moisturizing ingredients, giving it a fresh feeling to dry skin"
+            }
+          ],
+          "identity_key": "【d'Alba公式】グロウフィットセラムカバークッション 23号 15g Glow Serum Cover Cushion 23",
+          "identity_quote": "【d'Alba公式】グロウフィットセラムカバークッション 23号 15g Glow Serum Cover Cushion 23",
+          "reason": "検証済みの商品掲載情報に保湿成分を含む処方の説明があり、乾燥を気にする人向けの候補として紹介できる。肌上での効果は保証しない。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "ミシャ M クッション ファンデーション マット",
+          "identity_quote": "",
+          "reason": "掲載タイトルでマット系列の本体と識別でき、さらっとした見た目を求める切り口に合う。p2のプロカバーとは系列名が異なり、同一本体と示す証拠はない。皮脂吸着やテカリ防止の効果は断定しない。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "oily_tzone",
+              "quote": "Formulated with skin fixer ingredients that are coated with powder particles to prevent your makeup from getting ruined."
+            },
+            {
+              "axis_id": "oily_tzone",
+              "quote": "The diffusion of light from gold gives off a sophisticated glossy skin"
+            }
+          ],
+          "identity_key": "CNP (シーエヌピー) プロP INクッション#23ナチュラルベージュ (本品 15g + リフィル 15g) SPF50 + PA+++ クッションファンデ 保湿 ツヤ カバー",
+          "identity_quote": "CNP (シーエヌピー) プロP INクッション#23ナチュラルベージュ (本品 15g + リフィル 15g) SPF50 + PA+++ クッションファンデ 保湿 ツヤ カバー シミ隠し 崩れない プロポリス CNP Laboratory 韓国コスメ",
+          "reason": "本体とリフィルのセットで、紹介対象となる本体を含む。検証済みの商品掲載情報は化粧崩れに配慮した処方を説明しており、Tゾーンのヨレを気にする人への紹介余地がある。一方、仕上がりはツヤ系と記載されているため、さらっとした見た目や皮脂抑制効果は主張しない。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "掲載タイトルから6商品の系列を識別でき、明白な重複はない。各商品は既存の3つの紹介切り口に2商品ずつ割り当てられる。p6はツヤ仕上げのため、さらっとした見た目の商品としては紹介できないが、化粧崩れに配慮した設計を根拠にTゾーンのヨレが気になる人向けの候補として紹介できる。検証済みの商品資料がないp1、p2、p5については、掲載タイトルを超える性能を断定できない。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
+  "products": [
+    {
+      "amazon_title": "[TIRTIR] マスクフィットクッション (RED 21N)",
+      "asin": "B09LCMQM44",
+      "brand": "",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81qx1jdaGhL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B09LCMQM44",
+      "provisional": true,
+      "rating": 4.1,
+      "ref": "p1",
+      "review_count": 8186,
+      "search_key": "マスクフィットクッション (RED 21N)",
+      "selection_reason": "TIRTIRのREDは、ブランドがマスクフィットクッションシリーズで最も人気のある商品と紹介する定番。自然なセミマット仕上げとカバー力が特徴で、通勤日は色ムラを整えつつツヤを抑えすぎたくない人に向く。出典：[ブランド発表](https://prtimes.jp/a/?c=127171&f=d127171-18-13e320d6f8b01daf6402704f6542d1a8.pdf)、[商品情報](https://tirtir.global/collections/cushion-foundation/products/mask-fit-red-cushion)",
+      "sources": []
+    },
+    {
+      "amazon_title": "ミシャ M クッション ファンデーション (プロカバー) No.23 自然な肌色 (15g)",
+      "asin": "B07G4FYKDF",
+      "brand": "",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51DsiWe0lVL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B07G4FYKDF",
+      "provisional": true,
+      "rating": 4.0,
+      "ref": "p2",
+      "review_count": 3978,
+      "search_key": "ミシャ M クッション ファンデーション (プロカバー) No.",
+      "selection_reason": "ミシャのプロカバーは、細かく柔らかいクッションに濃厚なファンデーションを含ませ、マジックフィットパウダーでシミや毛穴をカバーする設計。朝、気になる部分を少量ずつ整えてから出勤したい人に向く。公式サイトでNo.23の本体を購入できる。出典：[ミシャ公式](https://www.misshajp.com/shop/g/gJ1095/)",
+      "sources": []
+    },
+    {
+      "amazon_title": "Milk Touch ミルクタッチ オールデイスキンフィット ミルキーグロウクッション01 Rosy Ivory SPF50+ PA++++ 白玉肌 保湿 メッシュ ファンデ",
+      "asin": "B0CJ5968MG",
+      "brand": "MILKTOUCH",
+      "discovery_axis_id": "dry_cheeks",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51EWRIVxG+L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0CJ5968MG",
+      "provisional": false,
+      "rating": 4.2,
+      "ref": "p3",
+      "review_count": 249,
+      "search_key": "MILKTOUCH Milk Touch ミルクタッチ オールデイスキンフィット ミ",
+      "selection_reason": "水系美容成分を60％配合し、ベタつきやテカリを抑えた上品なセミグロウ仕上げをうたう一品。頬の乾燥感が気になる朝も、職場で強いツヤを出したくない人が選びやすい。公式ストアで01 Rosy Ivoryを選択できる。出典：[Milk Touch公式](https://milktouch.jp/products/alldayskinfitmilkyglowcushion)",
+      "sources": [
+        {
+          "brand": "MILKTOUCH",
+          "excerpt": "Milk Touch ミルクタッチ All-Day Skin Fit Milky Glow Cushion 01 Rosy Ivory SPF50+ PA++++ White Pearl Skin Moisturizing Mesh Foundation\nAbout this item\n✨【Beauty Serum Foundation】Contains 60% beauty ingredients including popular glutathione*, providing solid moisture\n✨【White Pearl Skin】A \"white pearl skin**\" finish that beautifully showcases your bare skin, between matte and glossy\n✨【Long-lasting Hold】Tested to last 24 hours of shine, 48 hours of color hold (Brand research)\n✨【Mesh Type】With a mesh net structure, it adheres closely to the skin to create a shiny appearance\n✨【3 Color Variations】All 3 colors have a slightly brighter, fresh and translucent finish* Glutathione ingredients: Glutamic acid, Cysteine, Glycine **Due to makeup effect › See more product details\nItem Form Cream\nColor 01 Rosy ivory\nSkin Type All\nRecommended Uses For Product Daily Makeup\nMaterial Type Free Paraben Free\nBrand MILKTOUCH\nProduct Benefits Ultraviolet Protection\nSkin Tone All\nAge Range (Description) Adult\nSpecial Feature Moisturizes See more\nVisit the MILKTOUCH Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Milk Touch ミルクタッチ All-Day Skin Fit Milky Glow Cushion 01 Rosy Ivory SPF50+ PA++++ White Pearl Skin Moisturizing Mesh Foundation",
+          "url": "https://www.amazon.co.jp/dp/B0CJ5968MG?th=1",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "moisture",
-      "label": "保湿成分・持続力",
-      "keywords": [
-        "保湿",
-        "乾燥",
-        "崩れにくい"
+      "amazon_title": "【d'Alba公式】グロウフィットセラムカバークッション 23号 15g Glow Serum Cover Cushion 23",
+      "asin": "B0F2YYSK2V",
+      "brand": "d'alba Piedmont",
+      "discovery_axis_id": "dry_cheeks",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71Ax82M5fhL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0F2YYSK2V",
+      "provisional": false,
+      "rating": 4.2,
+      "ref": "p4",
+      "review_count": 189,
+      "search_key": "d'alba Piedmont グロウフィットセラムカバークッション 23号 15g Glow",
+      "selection_reason": "美容液成分61％の処方と、球状・板状の2種の粉体による自然なカバーが商品情報に記載されている。頬の乾燥に配慮しながら、色ムラも薄く整えたい通勤日に向く23号。公式ストアにも23号の購入欄がある。出典：[d’Alba公式](https://dalba.jp/products/glow-fit-serum-cover-cushion)",
+      "sources": [
+        {
+          "brand": "d'alba Piedmont",
+          "excerpt": "d'Alba Official Glow Fit Serum Cover Cushion No. 23 0.5 oz (15 g) Glow\nAbout this item\n(Light and Tight Cover) The watery essential texture gives it a smooth finish while fitting it lightly\nMoisturizing 61% Essence Formula: This serum cushion contains plenty of moisturizing ingredients, giving it a fresh feeling to dry skin\nExclusive Ingredient Trufferol Formula: Formulated with a combination of white truffle and vitamin E (tocopherol) to create a unique elastic care ingredient\n(Double Layer Powder with Delicate Coverage) Double formulation of spherical and pan-shaped powder evenly adheres to uneven skin for natural and elegant coverage\nVegan & UV Protection Compatible: With its vegan formula, it also offers UV protection with SPF50+ / PA+++ › See more product details\nItem Form クッションファンデーション\nColor No. 23\nSkin Type All, Combination, Dry, Oily, Sensitive\nRecommended Uses For Product Use after applying sunscreen or primer\nMaterial Type Free Mildew Resistant\nPackage Information Cushion\nBrand d'alba Piedmont\nSkin Tone Medium\nSun Protection 50 Sun Protection Factor (SPF)\nAge Range (Description) Adult See more\nVisit the d'alba Piedmont Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "d'Alba Official Glow Fit Serum Cover Cushion No. 23 0.5 oz (15 g) Glow",
+          "url": "https://www.amazon.co.jp/dp/B0F2YYSK2V",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "portability",
-      "label": "携帯性・詰め替え対応",
-      "keywords": [
-        "コンパクト",
-        "持ち歩き",
-        "レフィル"
-      ]
+      "amazon_title": "ミシャ M クッション ファンデーション(マット) No.23 ナチュラルベージュ (15g)",
+      "asin": "B019SL0NOE",
+      "brand": "",
+      "discovery_axis_id": "oily_tzone",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51bCaZWrHKL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B019SL0NOE",
+      "provisional": true,
+      "rating": 4.0,
+      "ref": "p5",
+      "review_count": 3553,
+      "search_key": "ミシャ M クッション ファンデーション(マット) No.23",
+      "selection_reason": "シリカビーズパウダーが汗と皮脂を吸着し、テカリを防ぐというメーカーの説明が、この切り口に直接合う。勤務中に鼻や額のテカリを直しにくく、朝からマット寄りに仕上げたい人向け。No.23の本体は公式ストアに掲載されている。出典：[ミシャ公式](https://www.misshajp.com/shop/g/gJ0956/)",
+      "sources": []
     },
     {
-      "id": "price",
-      "label": "価格帯",
-      "keywords": [
-        "価格",
-        "コスパ",
-        "デパコス"
+      "amazon_title": "CNP (シーエヌピー) プロP INクッション#23ナチュラルベージュ (本品 15g + リフィル 15g) SPF50 + PA+++ クッションファンデ 保湿 ツヤ カバー シミ隠し 崩れない プロポリス CNP Laboratory 韓国コスメ",
+      "asin": "B07TVLKXJP",
+      "brand": "CNP Laboratory",
+      "discovery_axis_id": "oily_tzone",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41xBVOvMcsL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B07TVLKXJP",
+      "provisional": false,
+      "rating": 4.0,
+      "ref": "p6",
+      "review_count": 290,
+      "search_key": "CNP Laboratory CNP (シーエヌピー) プロP INクッション#23ナチュラル",
+      "selection_reason": "粉体にコーティングしたスキンフィクサー成分で化粧崩れに配慮する設計が商品情報に記載されており、Tゾーンのヨレが気になる人に紹介できる。ただし公式が示す仕上がりはゴールドの光によるツヤで、さらっとした見た目を求める人には合うか確認が必要。本品とリフィル各15gのセットで購入先も案内されている。出典：[CNP公式](https://cnp-laboratory.jp/item/79/)",
+      "sources": [
+        {
+          "brand": "CNP Laboratory",
+          "excerpt": "CNP Pro P IN Cushion #23 Natural Beige (0.5 oz (15 g) + Refill 0.5 oz (15 g) SPF50 + PA+++ Cushion Foundation, Moisturizing, Glossy Cover, Conceals Stains, Won't Break, Propolice, CNP Laboratory Korean Cosmetics\nAbout this item\nPlease note that listings other than \"FM & Mission Online Shop\" are not genuine domestic products\n(Skincare while making up! ProP Serum's beauty ingredient propolis extract (moisturizing ingredient) provides skin care while applying makeup\n(Adhesion Force x High Cover) Particles of varying sizes adhere to the surface of the skin without gaps, covering areas of concern and dullness\n【Gold Shine】 The diffusion of light from gold gives off a sophisticated glossy skin\n(Does not deteriorate makeup) Formulated with skin fixer ingredients that are coated with powder particles to prevent your makeup from getting ruined. *Skin toning ingredients: (acrylate/stearyl acrylic/dimethicone methacrylic acid) Copolymer, rusesquiokin\nUV Protection Effect: SPF50+/PA+++ › See more product details\nItem Form Powder\nColor #23 (Natural Beige)\nSkin Type Normal\nRecommended Uses For Product Makeup\nMaterial Type Free Paraben Free\nBrand CNP Laboratory\nSkin Tone Medium\nAge Range (Description) Adult\nSpecialty Moisturizing\nSpecial Feature Coverage, Fade Resistant, Fit, Glossy finish, Light up your skin, Protects moisture, Serum ingredients, UV ProtectionCoverage, Fade Resistant, Fit, Glossy finish, Light up your skin, Protects moisture, Serum ingredi… See more See more\nVisit the CNP Laboratory Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "CNP Pro P IN Cushion #23 Natural Beige (0.5 oz (15 g) + Refill 0.5 oz (15 g) SPF50 + PA+++ Cushion Foundation, Moisturizing, Glossy Cover, Conceals Stains, Won't Break, Propolice, CNP Laboratory Korean Cosmetics",
+          "url": "https://www.amazon.co.jp/dp/B07TVLKXJP?th=1",
+          "verified": true
+        }
       ]
     }
   ],
   "selection": {
-    "comparison_axes_covered": [
-      "coverage",
-      "moisture",
-      "portability"
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B09LCMQM44",
+            "reason": "TIRTIRのREDは、ブランドがマスクフィットクッションシリーズで最も人気のある商品と紹介する定番。自然なセミマット仕上げとカバー力が特徴で、通勤日は色ムラを整えつつツヤを抑えすぎたくない人に向く。出典：[ブランド発表](https://prtimes.jp/a/?c=127171&f=d127171-18-13e320d6f8b01daf6402704f6542d1a8.pdf)、[商品情報](https://tirtir.global/collections/cushion-foundation/products/mask-fit-red-cushion)"
+          },
+          {
+            "asin": "B07G4FYKDF",
+            "reason": "ミシャのプロカバーは、細かく柔らかいクッションに濃厚なファンデーションを含ませ、マジックフィットパウダーでシミや毛穴をカバーする設計。朝、気になる部分を少量ずつ整えてから出勤したい人に向く。公式サイトでNo.23の本体を購入できる。出典：[ミシャ公式](https://www.misshajp.com/shop/g/gJ1095/)"
+          }
+        ]
+      },
+      {
+        "axis_id": "dry_cheeks",
+        "products": [
+          {
+            "asin": "B0CJ5968MG",
+            "reason": "水系美容成分を60％配合し、ベタつきやテカリを抑えた上品なセミグロウ仕上げをうたう一品。頬の乾燥感が気になる朝も、職場で強いツヤを出したくない人が選びやすい。公式ストアで01 Rosy Ivoryを選択できる。出典：[Milk Touch公式](https://milktouch.jp/products/alldayskinfitmilkyglowcushion)"
+          },
+          {
+            "asin": "B0F2YYSK2V",
+            "reason": "美容液成分61％の処方と、球状・板状の2種の粉体による自然なカバーが商品情報に記載されている。頬の乾燥に配慮しながら、色ムラも薄く整えたい通勤日に向く23号。公式ストアにも23号の購入欄がある。出典：[d’Alba公式](https://dalba.jp/products/glow-fit-serum-cover-cushion)"
+          }
+        ]
+      },
+      {
+        "axis_id": "oily_tzone",
+        "products": [
+          {
+            "asin": "B019SL0NOE",
+            "reason": "シリカビーズパウダーが汗と皮脂を吸着し、テカリを防ぐというメーカーの説明が、この切り口に直接合う。勤務中に鼻や額のテカリを直しにくく、朝からマット寄りに仕上げたい人向け。No.23の本体は公式ストアに掲載されている。出典：[ミシャ公式](https://www.misshajp.com/shop/g/gJ0956/)"
+          },
+          {
+            "asin": "B07TVLKXJP",
+            "reason": "粉体にコーティングしたスキンフィクサー成分で化粧崩れに配慮する設計が商品情報に記載されており、Tゾーンのヨレが気になる人に紹介できる。ただし公式が示す仕上がりはゴールドの光によるツヤで、さらっとした見た目を求める人には合うか確認が必要。本品とリフィル各15gのセットで購入先も案内されている。出典：[CNP公式](https://cnp-laboratory.jp/item/79/)"
+          }
+        ]
+      }
     ],
-    "brand_count": 6,
-    "price_used_as_constraint_only": true
+    "brand_count": 3,
+    "candidate_count": 23,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [],
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": []
   },
-  "products": [
-    {
-      "ref": "p1",
-      "product_id": "AMZ-B0F36WHNH6",
-      "asin": "B0F36WHNH6",
-      "amazon_title": "銀座ステファニー化粧品 エイジングカバー クッションファンデーション 乾燥対策/保湿/プレゼント/ファンデーション/ナチュラルオークル/エイジングケア/カバー力/高密着/美容液/スキンケア/年齢肌/紫外線 / spf50 / ナイアシンアミド",
-      "brand": "銀座ステファニー",
-      "image_url": "https://m.media-amazon.com/images/I/61gwofu+LML._AC_SY300_SX300_QL70_ML2_.jpg",
-      "observed_price": 4980,
-      "discovery_score": 1,
-      "selection_score": 0.83,
-      "matched_comparison_axes": [
-        "coverage",
-        "moisture"
-      ],
-      "search_key": "銀座ステファニー化粧品 エイジングカバー クッションファンデーション 乾燥対策/保湿/プ",
-      "selected_variant": {
-        "colour": "ナチュラルオークル",
-        "package": "ケースセット",
-        "count": 1
-      }
-    },
-    {
-      "ref": "p2",
-      "product_id": "AMZ-B07G4FYKDF",
-      "asin": "B07G4FYKDF",
-      "amazon_title": "ミシャ M クッション ファンデーション (プロカバー) No.23 自然な肌色 (15g)",
-      "brand": "MISSHA",
-      "image_url": "https://m.media-amazon.com/images/I/51DsiWe0lVL._AC_SL1000_.jpg",
-      "observed_price": 3291,
-      "discovery_score": 1,
-      "selection_score": 0.7,
-      "matched_comparison_axes": [
-        "portability"
-      ],
-      "search_key": "メイベリン MAYBELLINE SPステイ クリームパクト ファンデーショ",
-      "selected_variant": {
-        "colour": "No.23 自然な肌色",
-        "capacity": "15g",
-        "package": "ブリスター本体",
-        "count": 1
-      }
-    },
-    {
-      "ref": "p3",
-      "product_id": "AMZ-B0GNPRL25W",
-      "asin": "B0GNPRL25W",
-      "amazon_title": "ByUR バイユア クッションファンデ フルカバー グロークッション V2 SPF50+ PA++++ 15g (#N17 ナチュラルフェア)",
-      "brand": "ByUR",
-      "image_url": "https://m.media-amazon.com/images/I/711Lf2Dc8KL._AC_SL1500_.jpg",
-      "observed_price": 3960,
-      "discovery_score": 1,
-      "selection_score": 0.52,
-      "matched_comparison_axes": [],
-      "search_key": "ByUR バイユア クッションファンデ フルカバー グロークッション V2",
-      "selected_variant": {
-        "colour": "N17 ナチュラルフェア",
-        "capacity": "15g",
-        "package": "本品",
-        "count": 1
-      }
-    },
-    {
-      "ref": "p4",
-      "product_id": "AMZ-B0GJSLGM8C",
-      "asin": "B0GJSLGM8C",
-      "amazon_title": "ラネージュ ネオクッション ザ グロウ 21W ウォームベージュ ファンデーション クッションファンデ セミマット 日焼け止め 韓国 コスメ",
-      "brand": "LANEIGE",
-      "image_url": "https://m.media-amazon.com/images/I/61WNpbFUIaL._AC_SL1500_.jpg",
-      "observed_price": 4180,
-      "discovery_score": 1,
-      "selection_score": 0.52,
-      "matched_comparison_axes": [],
-      "search_key": "N organic（エヌオーガニック） N organic &wolf クリームファンデーション",
-      "selected_variant": {
-        "colour": "21W ウォームベージュ",
-        "package": "本体",
-        "count": 1
-      }
-    },
-    {
-      "ref": "p5",
-      "product_id": "AMZ-B0GVCS2R4C",
-      "asin": "B0GVCS2R4C",
-      "amazon_title": "セザンヌ セラムクッションファンデーション N10 明るいオークル系 11g ぴたっと密着、薄膜カバー。艶肌クッションファンデ。",
-      "brand": "CEZANNE",
-      "image_url": "https://m.media-amazon.com/images/I/51L9FV9-4rL._AC_SL1000_.jpg",
-      "observed_price": 957,
-      "discovery_score": 1,
-      "selection_score": 0.47,
-      "matched_comparison_axes": [],
-      "search_key": "セザンヌ セラムクッションファンデーション〈詰替〉N10 明るいオークル系",
-      "selected_variant": {
-        "colour": "N10 明るいオークル系",
-        "capacity": "11g",
-        "count": 1
-      }
-    },
-    {
-      "ref": "p6",
-      "product_id": "AMZ-B09LCMQM44",
-      "asin": "B09LCMQM44",
-      "amazon_title": "[TIRTIR] マスクフィットクッション (RED 21N)",
-      "brand": "TIRTIR",
-      "image_url": "https://m.media-amazon.com/images/I/81qx1jdaGhL._AC_SL1500_.jpg",
-      "observed_price": 3300,
-      "discovery_score": 1,
-      "selection_score": 0.47,
-      "matched_comparison_axes": [],
-      "search_key": "プリマヴィスタ グロウカバー クッション ピンクオークル01 11g クッション",
-      "selected_variant": {
-        "colour": "21N",
-        "capacity": "18g",
-        "package": "通常本体",
-        "count": 1
-      }
-    }
-  ]
+  "slug": "cushion-foundations-6-picks"
 }
