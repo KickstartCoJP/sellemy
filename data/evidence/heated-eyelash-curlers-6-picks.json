@@ -1,155 +1,318 @@
 {
-  "slug": "heated-eyelash-curlers-6-picks",
-  "category": "beauty",
-  "canonical_url": "https://www.sellemy.jp/article/beauty/heated-eyelash-curlers-6-picks.html",
-  "eyecatch_image": "https://www.sellemy.jp/img/heated-eyelash-curlers-6-picks/heated-eyelash-curlers-6-picks.png",
   "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/heated-eyelash-curlers-6-picks.html",
+  "category": "beauty",
   "comparison_axes": [
     {
-      "id": "heater",
-      "label": "温まり方",
+      "id": "popular",
       "keywords": [
-        "予熱時間",
-        "温度調整",
-        "自動オフ"
-      ]
+        "人気"
+      ],
+      "label": "人気・定番の基準"
     },
     {
-      "id": "head",
-      "label": "ヘッドの形",
+      "id": "detail_styling",
       "keywords": [
-        "コーム",
-        "カーラー",
-        "目頭"
-      ]
+        "先端形状",
+        "目尻",
+        "下まつげ",
+        "細部"
+      ],
+      "label": "目尻・下まつげなど細部を整えたい"
     },
     {
-      "id": "power",
-      "label": "電源と携帯性",
+      "id": "on_the_go",
       "keywords": [
-        "充電式",
-        "電池式",
-        "重さ"
-      ]
+        "持ち運び",
+        "本体サイズ",
+        "電源方式",
+        "収納"
+      ],
+      "label": "外出先で使いやすいものを選びたい"
     }
   ],
-  "selection": {
-    "comparison_axes_covered": [
-      "head",
-      "heater",
-      "power"
-    ],
-    "brand_count": 0,
-    "price_used_as_constraint_only": true
+  "eyecatch_image": "https://www.sellemy.jp/img/heated-eyelash-curlers-6-picks/heated-eyelash-curlers-6-picks.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "6c66dffd6791a795403ae3dfa4fad85cddf327d1b963ffda2bb6ed5896b4eead",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 23966,
+      "listing_identity_citations_repaired": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 2551,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 1262,
+      "session_id": "01a21e49-c664-72d2-9964-7ed818dbfb39",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "上まつげは挟むカーラー型、下まつげや目尻は当てるスティック型"
+            }
+          ],
+          "identity_key": "Kiboer ホットビューラー 2WAY まつ毛カーラー 挟む×あてる 10秒予熱 液晶ディスプレイ 6段階温度 温度/電池残量表示 ピンク",
+          "identity_quote": "Kiboer ホットビューラー 2WAY まつ毛カーラー 挟む×あてる 10秒予熱 液晶ディスプレイ 6段階温度 温度/電池残量表示 ピンク",
+          "reason": "識別引用はevidence.products[0].amazon_titleの原文。挟む形状とあてる形状を備えた商品として紹介できる。選定情報の製品リンク：https://ymall.jp/store/kounet/f425-b0fdwn57wt-20260726/",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "まつげを挟んで持ち上げる、使い方の分かりやすい定番形状"
+            }
+          ],
+          "identity_key": "Nowest ホットビューラー 挟むタイプ 挟む【トータルビューティーアドバイザー監修】 充電式 4段階温度調整 持ち運び まつ毛カーラー まつ毛 ビューラー イラスト付きマニュア",
+          "identity_quote": "Nowest ホットビューラー 挟むタイプ 挟む【トータルビューティーアドバイザー監修】 充電式 4段階温度調整 持ち運び まつ毛カーラー まつ毛 ビューラー イラスト付きマニュアル付属 (ピンク)",
+          "reason": "識別引用はevidence.products[1].amazon_titleの原文。挟む形状のホットビューラーを探す用途に合う。選定情報の製品リンク：https://item.rakuten.co.jp/benefiment/enxx6iblnyoqifxfwpr37yedea/",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "detail_styling",
+              "quote": "目元の形に沿うアーク状の加熱ヘッド"
+            }
+          ],
+          "identity_key": "ホットビューラー 新しい設計 まつ毛カーラー 10秒+で急速予熱 充電式 5分で自動的に電源が切れ White",
+          "identity_quote": "ホットビューラー 新しい設計 まつ毛カーラー 10秒+で急速予熱 充電式 5分で自動的に電源が切れ White",
+          "reason": "識別引用はevidence.products[2].amazon_titleの原文。ブランドや型番は未確認だが、掲載商品と製品リンクを追跡できる。細部向けの紹介は選定情報にあるアーク状ヘッドの範囲に限り、下まつげ対応は主張しない。製品リンク：https://item.rakuten.co.jp/dragondash/b07m87h7n5/",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "detail_styling",
+              "quote": "長いコームと短いコームを両面に備える"
+            }
+          ],
+          "identity_key": "ホットビューラー 充電式 USB リンプカール 3段階温度調節 洗える ビューラー シャイニーレッド 日本語説明書付き",
+          "identity_quote": "ホットビューラー 充電式 USB リンプカール 3段階温度調節 洗える ビューラー シャイニーレッド 日本語説明書付き",
+          "reason": "識別引用はevidence.products[3].amazon_titleの原文。選定情報に長短の両面コームが示され、細部を整える切り口に合う。製品リンク：https://store.shopping.yahoo.co.jp/akenonatter2-2/s-b09hcxdkjy-20240908.html",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "on_the_go",
+              "quote": "長さ141mm・重さ30gの細いコーム型で、USB Type-C充電式"
+            }
+          ],
+          "identity_key": "RENAGE ホットビューラー やけど防止設計 まつ毛カーラー まつ毛 ビューラー USB充電式 ホットカーラー まつげ 睫毛 コーム形状 ブラック",
+          "identity_quote": "RENAGE ホットビューラー やけど防止設計 まつ毛カーラー まつ毛 ビューラー USB充電式 ホットカーラー まつげ 睫毛 コーム形状 ブラック",
+          "reason": "識別引用はevidence.products[4].amazon_titleの原文。選定情報には持ち運びに関係する寸法・重量・充電方式がある。ブランド製品リンク：https://renage.jp/products/eyelash_curler",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "on_the_go",
+              "quote": "軽量設計と持ち運びを重視した企画意図"
+            }
+          ],
+          "identity_key": "【アイリスト監修】 ホットビューラー ホットカーラー ホット ビューラー まつげ まつ毛 カール 充電式 (ホワイト×ローズゴールド)",
+          "identity_quote": "【アイリスト監修】 ホットビューラー ホットカーラー ホット ビューラー まつげ まつ毛 カール 充電式 (ホワイト×ローズゴールド)",
+          "reason": "識別引用はevidence.products[5].amazon_titleの原文。ブランドや型番は未確認だが、掲載商品と製品リンクを追跡できる。選定情報には携帯を意図した設計が示されている。製品リンク：https://item.rakuten.co.jp/miyumiyushop/4919435140159/",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "各商品の掲載タイトルを商品識別の引用元として明示し、紹介切り口は出典リンク付きの選定情報に照らして確認した。6件はホットビューラーとして企画に適合し、明白な同一商品やアクセサリーの混入は示されていない。記事は未提出のため、記事本文だけで判定する項目はfalseとした。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
   },
   "products": [
     {
+      "amazon_title": "Kiboer ホットビューラー 2WAY まつ毛カーラー 挟む×あてる 10秒予熱 液晶ディスプレイ 6段階温度 温度/電池残量表示 ピンク",
+      "asin": "B0FDWN57WT",
+      "brand": "",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/513R4wnEsML._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0FDWN57WT",
+      "provisional": true,
+      "rating": 4.3,
       "ref": "p1",
-      "product_id": "AMZ-B084347R9Q",
-      "asin": "B084347R9Q",
-      "amazon_title": "パナソニック まつげくるん ナチュラルカール ミストブルー EH-SE11-A",
-      "brand": "パナソニック",
-      "image_url": "https://m.media-amazon.com/images/I/618yki58ypL._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.89,
-      "matched_comparison_axes": [
-        "head",
-        "heater",
-        "power"
-      ],
-      "search_key": "ホットビューラー ビューラー 10秒急速予熱 40℃/50℃/6",
-      "model": "EH-SE11-A",
-      "selected_variant": "ミストブルー・本体1台"
+      "review_count": 273,
+      "search_key": "Kiboer ホットビューラー 2WAY まつ毛カーラー 挟む×",
+      "selection_reason": "上まつげは挟むカーラー型、下まつげや目尻は当てるスティック型と、1台で使い分けられる。全体を整えた後に細部を仕上げたい人に向く。販売ページには両形状、各3段階の温度設定、温度と電池残量の液晶表示が明記されている。[製品情報](https://ymall.jp/store/kounet/f425-b0fdwn57wt-20260726/)",
+      "sources": []
     },
     {
+      "amazon_title": "Nowest ホットビューラー 挟むタイプ 挟む【トータルビューティーアドバイザー監修】 充電式 4段階温度調整 持ち運び まつ毛カーラー まつ毛 ビューラー イラスト付きマニュアル付属 (ピンク)",
+      "asin": "B0D2GRYTGV",
+      "brand": "",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/711fsbKcS2L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0D2GRYTGV",
+      "provisional": true,
+      "rating": 4.2,
       "ref": "p2",
-      "product_id": "AMZ-B0CNR21181",
-      "asin": "B0CNR21181",
-      "amazon_title": "コイズミ アイラッシュカーラー 2WAYコーム カーブヘッドタイプ USB充電式 ブラック KLC-0981/K",
-      "brand": "コイズミ",
-      "image_url": "https://m.media-amazon.com/images/I/61SJCc0iz8L._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.35,
-      "matched_comparison_axes": [
-        "head",
-        "power"
-      ],
-      "search_key": "ホットビューラー ビューラー まつ毛カーラー まつ毛 アイラッシ",
-      "model": "KLC-0981/K",
-      "selected_variant": "ブラック・本体1台"
+      "review_count": 398,
+      "search_key": "Nowest ホットビューラー 挟むタイプ 挟む 充電式 4段階",
+      "selection_reason": "まつげを挟んで持ち上げる、使い方の分かりやすい定番形状。普段のビューラーに近い手順で上まつげを整えたい人に向く。販売ページには目元に沿う緩やかなカーブ、55～85℃の4段階調節、イラスト付きマニュアルが記載されている。[製品情報](https://item.rakuten.co.jp/benefiment/enxx6iblnyoqifxfwpr37yedea/)",
+      "sources": []
     },
     {
+      "amazon_title": "ホットビューラー 新しい設計 まつ毛カーラー 10秒+で急速予熱 充電式 5分で自動的に電源が切れ White",
+      "asin": "B07M87H7N5",
+      "brand": "",
+      "discovery_axis_id": "detail_styling",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51GUsqQ1srL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B07M87H7N5",
+      "provisional": true,
+      "rating": 4.1,
       "ref": "p3",
-      "product_id": "AMZ-B0GKPLL724",
-      "asin": "B0GKPLL724",
-      "amazon_title": "のぞキュンホットカーラー まつ毛用 ビューラー",
-      "brand": "コージー本舗",
-      "image_url": "https://m.media-amazon.com/images/I/612ttGL3biL._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.35,
-      "matched_comparison_axes": [
-        "head",
-        "power"
-      ],
-      "search_key": "ホットビューラー ビューラー 挟む 長時間 まつげカーラー 充電",
-      "model": "1CR0599 / JAN4972915005998",
-      "selected_variant": "のぞキュンホットカーラー・単品"
+      "review_count": 2114,
+      "search_key": "ホットビューラー 新しい設計 まつ毛カーラー 10秒+で急速予熱",
+      "selection_reason": "目元の形に沿うアーク状の加熱ヘッドが特徴。目尻側までヘッドの当たり方を見ながら、上まつげを部分ごとに整えたい人の候補になる。販売ページで確認できるのはアーク形状と2つの温度モードであり、下まつげへの対応はうたわれていない。[製品情報](https://item.rakuten.co.jp/dragondash/b07m87h7n5/)",
+      "sources": []
     },
     {
+      "amazon_title": "ホットビューラー 充電式 USB リンプカール 3段階温度調節 洗える ビューラー シャイニーレッド 日本語説明書付き",
+      "asin": "B09HCXDKJY",
+      "brand": "",
+      "discovery_axis_id": "detail_styling",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51WhLdr2LoL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B09HCXDKJY",
+      "provisional": true,
+      "rating": 4.0,
       "ref": "p4",
-      "product_id": "AMZ-B0DRYLM8D1",
-      "asin": "B0DRYLM8D1",
-      "amazon_title": "モノンズ(Monons) ホットビューラー 挟む まつ毛カーラー USB充電式 3段階温度調節 15秒予熱 自動電源OFF ホワイト",
-      "brand": "MONONS",
-      "image_url": "https://m.media-amazon.com/images/I/61API0nQZuL._AC_SL1500_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.35,
-      "matched_comparison_axes": [
-        "head"
-      ],
-      "search_key": "モノンズ(Monons) ホットビューラー 挟むタイプ まつ毛カ",
-      "model": "J150",
-      "selected_variant": "ホワイト・本体1台"
+      "review_count": 113,
+      "search_key": "ホットビューラー 充電式 USB リンプカール 3段階温度調節",
+      "selection_reason": "長いコームと短いコームを両面に備える。上まつげ全体をすくい上げた後、短い側で下まつげや目頭を整えたい人に向く。販売情報には両面コーム、下まつげへの使いやすさ、マスカラ後の使用が明記されている。同色の商品は販売中の出品も確認できる。[製品情報](https://store.shopping.yahoo.co.jp/akenonatter2-2/s-b09hcxdkjy-20240908.html)・[販売情報](https://www.qoo10.jp/shop/beauty-monster?cit=985509859)",
+      "sources": []
     },
     {
+      "amazon_title": "RENAGE ホットビューラー やけど防止設計 まつ毛カーラー まつ毛 ビューラー USB充電式 ホットカーラー まつげ 睫毛 コーム形状 ブラック",
+      "asin": "B0BRSJ5K6S",
+      "brand": "",
+      "discovery_axis_id": "on_the_go",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61gckeBzebL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0BRSJ5K6S",
+      "provisional": true,
+      "rating": 4.2,
       "ref": "p5",
-      "product_id": "AMZ-B09NR78HMT",
-      "asin": "B09NR78HMT",
-      "amazon_title": "フェスティノ ホット アイラッシュ カーラー SMHB-005 FESTINO (サンドベージュ)",
-      "brand": "FESTINO",
-      "image_url": "https://m.media-amazon.com/images/I/41f4sy92TAL._AC_SL1280_.jpg",
-      "observed_price": null,
-      "discovery_score": 1,
-      "selection_score": 0.35,
-      "matched_comparison_axes": [
-        "head",
-        "heater"
-      ],
-      "search_key": "ホットビューラー まつ毛カーラー 10秒急速予熱 4段階温度調整",
-      "model": "SMHB-005-SB",
-      "selected_variant": "サンドベージュ・本体1台"
+      "review_count": 5884,
+      "search_key": "RENAGE ホットビューラー やけど防止設計 まつ毛カーラー",
+      "selection_reason": "長さ141mm・重さ30gの細いコーム型で、USB Type-C充電式。ポーチに入れて持ち歩き、外出先でマスカラ後に下がった上まつげを整えたい人に向く。ブランドの製品情報に本体寸法・重量・充電方式があり、販売情報にはマスカラ後の使用が記載されている。[製品情報](https://renage.jp/products/eyelash_curler)・[使用情報](https://www.taxfreeonline.jp/ja/products/01k9e2t8erb8f78xrbr9gvh4yk)",
+      "sources": []
     },
     {
-      "ref": "p6",
-      "product_id": "AMZ-B09C1MLHH2",
-      "asin": "B09C1MLHH2",
-      "amazon_title": "テスコム ホットビューラー USB充電式 2段階温度設定 角度調整 2種コーム メルティピンク TK350A-P",
-      "brand": "テスコム",
-      "image_url": "https://m.media-amazon.com/images/I/51CtA5GaeQL._AC_SL1500_.jpg",
-      "observed_price": null,
+      "amazon_title": "【アイリスト監修】 ホットビューラー ホットカーラー ホット ビューラー まつげ まつ毛 カール 充電式 (ホワイト×ローズゴールド)",
+      "asin": "B0BRNKN14K",
+      "brand": "",
+      "discovery_axis_id": "on_the_go",
       "discovery_score": 1,
-      "selection_score": 0.35,
-      "matched_comparison_axes": [
-        "head",
-        "power"
-      ],
-      "search_key": "VIOLUS まつげカーラー 充電式 長持ちカール 2段階温度",
-      "model": "TESCOM elims me TK350A-P",
-      "selected_variant": "メルティピンク、USB充電式1台、キャップ/充電専用ケーブル付き"
+      "image_url": "https://m.media-amazon.com/images/I/61ssuZ7m2iL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0BRNKN14K",
+      "provisional": true,
+      "rating": 4.1,
+      "ref": "p6",
+      "review_count": 467,
+      "search_key": "ホットビューラー ホットカーラー ホット ビューラー まつげ ま",
+      "selection_reason": "充電式のスティック型で、持ち運びを優先して企画されたモデル。外出中に上まつげのカールを整え直したい人に向く。販売ページには軽量設計と持ち運びを重視した企画意図が記載され、ホワイト×ローズゴールドの販売中の出品も確認できる。[製品情報](https://item.rakuten.co.jp/miyumiyushop/4919435140159/)・[販売情報](https://store.shopping.yahoo.co.jp/tcconlineshop/atyc014.html)",
+      "sources": []
     }
-  ]
+  ],
+  "selection": {
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B0FDWN57WT",
+            "reason": "上まつげは挟むカーラー型、下まつげや目尻は当てるスティック型と、1台で使い分けられる。全体を整えた後に細部を仕上げたい人に向く。販売ページには両形状、各3段階の温度設定、温度と電池残量の液晶表示が明記されている。[製品情報](https://ymall.jp/store/kounet/f425-b0fdwn57wt-20260726/)"
+          },
+          {
+            "asin": "B0D2GRYTGV",
+            "reason": "まつげを挟んで持ち上げる、使い方の分かりやすい定番形状。普段のビューラーに近い手順で上まつげを整えたい人に向く。販売ページには目元に沿う緩やかなカーブ、55～85℃の4段階調節、イラスト付きマニュアルが記載されている。[製品情報](https://item.rakuten.co.jp/benefiment/enxx6iblnyoqifxfwpr37yedea/)"
+          }
+        ]
+      },
+      {
+        "axis_id": "detail_styling",
+        "products": [
+          {
+            "asin": "B07M87H7N5",
+            "reason": "目元の形に沿うアーク状の加熱ヘッドが特徴。目尻側までヘッドの当たり方を見ながら、上まつげを部分ごとに整えたい人の候補になる。販売ページで確認できるのはアーク形状と2つの温度モードであり、下まつげへの対応はうたわれていない。[製品情報](https://item.rakuten.co.jp/dragondash/b07m87h7n5/)"
+          },
+          {
+            "asin": "B09HCXDKJY",
+            "reason": "長いコームと短いコームを両面に備える。上まつげ全体をすくい上げた後、短い側で下まつげや目頭を整えたい人に向く。販売情報には両面コーム、下まつげへの使いやすさ、マスカラ後の使用が明記されている。同色の商品は販売中の出品も確認できる。[製品情報](https://store.shopping.yahoo.co.jp/akenonatter2-2/s-b09hcxdkjy-20240908.html)・[販売情報](https://www.qoo10.jp/shop/beauty-monster?cit=985509859)"
+          }
+        ]
+      },
+      {
+        "axis_id": "on_the_go",
+        "products": [
+          {
+            "asin": "B0BRSJ5K6S",
+            "reason": "長さ141mm・重さ30gの細いコーム型で、USB Type-C充電式。ポーチに入れて持ち歩き、外出先でマスカラ後に下がった上まつげを整えたい人に向く。ブランドの製品情報に本体寸法・重量・充電方式があり、販売情報にはマスカラ後の使用が記載されている。[製品情報](https://renage.jp/products/eyelash_curler)・[使用情報](https://www.taxfreeonline.jp/ja/products/01k9e2t8erb8f78xrbr9gvh4yk)"
+          },
+          {
+            "asin": "B0BRNKN14K",
+            "reason": "充電式のスティック型で、持ち運びを優先して企画されたモデル。外出中に上まつげのカールを整え直したい人に向く。販売ページには軽量設計と持ち運びを重視した企画意図が記載され、ホワイト×ローズゴールドの販売中の出品も確認できる。[製品情報](https://item.rakuten.co.jp/miyumiyushop/4919435140159/)・[販売情報](https://store.shopping.yahoo.co.jp/tcconlineshop/atyc014.html)"
+          }
+        ]
+      }
+    ],
+    "brand_count": 0,
+    "candidate_count": 10,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [],
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": []
+  },
+  "slug": "heated-eyelash-curlers-6-picks"
 }
