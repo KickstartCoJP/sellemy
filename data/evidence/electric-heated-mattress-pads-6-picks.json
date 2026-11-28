@@ -1,194 +1,361 @@
 {
-  "slug": "electric-heated-mattress-pads-6-picks",
-  "category": "gadget",
-  "canonical_url": "https://www.sellemy.jp/article/gadget/electric-heated-mattress-pads-6-picks.html",
-  "eyecatch_image": "https://www.sellemy.jp/img/electric-heated-mattress-pads-6-picks/electric-heated-mattress-pads-6-picks.png",
   "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/electric-heated-mattress-pads-6-picks.html",
+  "category": "gadget",
   "comparison_axes": [
     {
-      "id": "size_compatibility",
-      "label": "対応サイズ",
+      "id": "popular",
       "keywords": [
-        "シングル",
-        "ダブル",
-        "セミダブル"
+        "人気"
+      ],
+      "label": "人気・定番の基準"
+    },
+    {
+      "id": "timer_control",
+      "keywords": [
+        "切タイマー",
+        "自動電源オフ",
+        "運転時間"
+      ],
+      "label": "寝落ち時の切り忘れに備えやすい"
+    },
+    {
+      "id": "washable_care",
+      "keywords": [
+        "本体の洗濯可否",
+        "コントローラーの取り外し",
+        "洗濯方法"
+      ],
+      "label": "寝具として手入れしやすい"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/electric-heated-mattress-pads-6-picks/electric-heated-mattress-pads-6-picks.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "6c5123b19d33825a259dbb0cba4236ebd3072d6aa9d3831177b3f45284d56eed",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 27346,
+      "listing_identity_citations_repaired": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 2234,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 1034,
+      "session_id": "01a21c17-d2a5-7e83-a95e-13b1ffe31757",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "Equipped with a room temperature sensor to automatically adjust to a comfortable temperature"
+            }
+          ],
+          "identity_key": "パナソニック 電気しき毛布 シングル 160×85cm 丸洗い可 室温センサー付 ベージュ DB-U31LS-C",
+          "identity_quote": "パナソニック 電気しき毛布 シングル 160×85cm 丸洗い可 室温センサー付 ベージュ DB-U31LS-C",
+          "reason": "検証済みの商品掲載名で型番と敷き毛布を識別できる。約160×85cmと室温センサーの記載があり、定番の敷き毛布として紹介できる。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "Size:130x80cm"
+            }
+          ],
+          "identity_key": "【Amazon.co.jp限定】 コイズミ 電気毛布 敷毛布 130×80cm 丸洗い可 頭寒足熱配線 ダニ退治 無段階温度調節 節電 省エネ KDS-40242",
+          "identity_quote": "【Amazon.co.jp限定】 コイズミ 電気毛布 敷毛布 130×80cm 丸洗い可 頭寒足熱配線 ダニ退治 無段階温度調節 節電 省エネ KDS-40242",
+          "reason": "検証済みの商品掲載名でブランド、型番、敷き毛布を識別できる。130×80cm、40Wの記載を使って紹介できる。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "timer_control",
+              "quote": "The power will automatically turn off 8 hours after it is turned on"
+            }
+          ],
+          "identity_key": "ライフジョイ 電気毛布 日本製 敷き 敷毛布 ブラウン 130cm×80cm 洗濯可能 8時間OFFタイマー機能付 室温センサー付 頭寒足暖 やわらか JBS401G-B",
+          "identity_quote": "ライフジョイ 電気毛布 日本製 敷き 敷毛布 ブラウン 130cm×80cm 洗濯可能 8時間OFFタイマー機能付 室温センサー付 頭寒足暖 やわらか JBS401G-B",
+          "reason": "検証済みの商品掲載名で型番と敷き毛布を識別できる。掲載抜粋は電源投入から8時間後の自動停止を明記しており、切り忘れに備える紹介切り口に合う。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "timer_control",
+              "quote": "2時間、4時間、8時間、12時間に設定可能なオフタイマーを備えており"
+            }
+          ],
+          "identity_key": "BAYATA 電気毛布 掛け敷き兼用 洗える 160x80cm 7段階温度調節 12H切タイマー 速暖 AI過熱保護 80W 節電 ダニ退治",
+          "identity_quote": "BAYATA 電気毛布 掛け敷き兼用 洗える 160x80cm 7段階温度調節 12H切タイマー 速暖 AI過熱保護 80W 節電 ダニ退治",
+          "reason": "検証済みの商品掲載名にブランド、寸法、タイマー設定がある。掛け敷き兼用との掲載抜粋があり、布団で使う電気毛布として切り忘れ対策の切り口に合う。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": false,
+          "axis_support": [],
+          "identity_key": "アイリスオーヤマ 電気毛布 敷き 洗える 140×80cm シングル スライド温度調整 EHB-F1480-DT ダークブラウン [並行輸入品]",
+          "identity_quote": "アイリスオーヤマ 電気毛布 敷き 洗える 140×80cm シングル スライド温度調整 EHB-F1480-DT ダークブラウン [並行輸入品]",
+          "reason": "提供された商品掲載名にはブランド、型番、敷き毛布、洗える旨があるため、手入れの切り口には合う。ただし、この商品には検証済みの出典抜粋がなく、商品識別や具体的な洗濯手順を引用で裏付けることはできない。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "washable_care",
+              "quote": "特徴 ダニ退治, 丸洗いOK, 室温センサー, 無段階温度調節, 頭寒足熱配線"
+            }
+          ],
+          "identity_key": "Sugiyama 電気しき毛布 ロングサイズ 洗える毛布 ダニ退治機能 日本製 ベージュ NA-08SL(BE)",
+          "identity_quote": "Sugiyama 電気しき毛布 ロングサイズ 洗える毛布 ダニ退治機能 日本製 ベージュ NA-08SL(BE)",
+          "reason": "検証済みの商品掲載名で型番と敷き毛布を識別できる。掲載抜粋に約180×85cmと丸洗い対応の記載があり、長めのサイズと手入れの切り口で紹介できる。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "6商品は掲載名から異なる電気敷き毛布または掛け敷き兼用毛布として識別でき、既存の3つの紹介切り口に各2商品が合う。p5には検証済みの出典抜粋がないため、個別の洗濯手順などは未確認として扱う。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
+  "products": [
+    {
+      "amazon_title": "パナソニック 電気しき毛布 シングル 160×85cm 丸洗い可 室温センサー付 ベージュ DB-U31LS-C",
+      "asin": "B07G3DCNVH",
+      "brand": "Panasonic",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/81FxS7yZBML._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B07G3DCNVH",
+      "provisional": false,
+      "rating": 4.2,
+      "ref": "p1",
+      "review_count": 565,
+      "search_key": "Panasonic パナソニック 電気しき毛布 シングル 160×85cm 丸洗い可",
+      "selection_reason": "定番の敷き毛布を広めのサイズから選びたい人向け。約160×85cmの敷き専用モデルで、寝室の室温変化に合わせて温度を調整する室温センサーと抗菌防臭加工を備える。就寝前に敷いて使う際のサイズと機能を、[パナソニックの仕様](https://panasonic.jp/danbo/products/DB-U31LS/spec.html)で確認できる。",
+      "sources": [
+        {
+          "brand": "Panasonic",
+          "excerpt": "Panasonic Electric Heating Pad Single 160×85cm Machine Washable with Room Temperature Sensor, Beige DB-U31LS-C\nAbout this item\nUses natural chitosan for antibacterial and deodorizing properties\nEquipped with a room temperature sensor to automatically adjust to a comfortable temperature\nWashable / Dust Mite Resistant\nColor: Beige\nBrand Name: Panasonic › See more product details\nSpecial Feature Antibacterial, Odor resistant\nMaterial Polyester, acrylic\nBrand Panasonic\nColor Beige\nUnit Count 1.00 Count\nManufacturer パナソニック(Panasonic)",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Panasonic Electric Heating Pad Single 160×85cm Machine Washable with Room Temperature Sensor, Beige DB-U31LS-C",
+          "url": "https://www.amazon.co.jp/dp/B07G3DCNVH?th=1",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "temperature_control",
-      "label": "温度調整段階",
-      "keywords": [
-        "温度調節",
-        "タイマー",
-        "強弱切替"
+      "amazon_title": "【Amazon.co.jp限定】 コイズミ 電気毛布 敷毛布 130×80cm 丸洗い可 頭寒足熱配線 ダニ退治 無段階温度調節 節電 省エネ KDS-40242",
+      "asin": "B0DBPW6Z7W",
+      "brand": "Koizumi",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/715PZf7-7-L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0DBPW6Z7W",
+      "provisional": false,
+      "rating": 4.2,
+      "ref": "p2",
+      "review_count": 861,
+      "search_key": "Koizumi コイズミ 電気毛布 敷毛布 130×80cm 丸洗い可 頭寒足熱",
+      "selection_reason": "足先の冷えが気になり、コンパクトな敷き毛布から選びたい人向け。約130×80cm・40Wで、足元側の配線密度を高めた頭寒足熱配線が特徴。布団に敷いて足元を温める使い方が、[商品掲載情報](https://www.amazon.co.jp/dp/B0DBPW6Z7W)の仕様と結び付く。",
+      "sources": [
+        {
+          "brand": "Koizumi",
+          "excerpt": "【Amazon.co.jp Exclusive】 Koizumi Electric Blanket, Bedspread, 130×80 cm, Fully Washable, Head Cold Feet Hot Wiring, Dust Mite Control, Stepless Temperature Control, Energy Saving, KDS-40242\nAbout this item\nAmazon.co.jp exclusive color\nSize:130x80cm\nProduct Weight: Approx. 0.7 kg (including controller)\nPower Consumption: 40 W\nSimple under blanket that is easy to use\nMaterial: 100% polyester › See more product details\nColor 1) Standard\nBrand Koizumi\nSpecial Feature Resistant to dust mites, heat retention\nStyle 1) Standard\nProduct Dimensions 80L x 130W cm\nVisit the コイズミ(Koizumi) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "【Amazon.co.jp Exclusive】 Koizumi Electric Blanket, Bedspread, 130×80 cm, Fully Washable, Head Cold Feet Hot Wiring, Dust Mite Control, Stepless Temperature Control, Energy Saving, KDS-40242",
+          "url": "https://www.amazon.co.jp/dp/B0DBPW6Z7W?th=1",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "safety",
-      "label": "自動オフ機能",
-      "keywords": [
-        "切りタイマー",
-        "過熱防止",
-        "安全機能"
+      "amazon_title": "ライフジョイ 電気毛布 日本製 敷き 敷毛布 ブラウン 130cm×80cm 洗濯可能 8時間OFFタイマー機能付 室温センサー付 頭寒足暖 やわらか JBS401G-B",
+      "asin": "B0B45DXPMW",
+      "brand": "LIFEJOY",
+      "discovery_axis_id": "timer_control",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71U8yYikt-L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0B45DXPMW",
+      "provisional": false,
+      "rating": 4.0,
+      "ref": "p3",
+      "review_count": 111,
+      "search_key": "LIFEJOY ライフジョイ 電気毛布 日本製 敷き 敷毛布 ブラウン 130c",
+      "selection_reason": "予熱後に寝落ちしがちで、毎回タイマー時間を設定せずに使いたい人向け。ライフジョイの[製品情報](https://lifejoy.co.jp/blanket/jbs401g/)と[取扱説明書](https://lifejoy.co.jp/WP/wp-content/uploads/2022/09/WEB_JBS401G_JBK551G_manual.pdf)によると、電源を入れてから8時間後に通電が自動停止する。時間指定式ではない点まで分かり、就寝前に布団を温める習慣に合わせて判断できる。",
+      "sources": [
+        {
+          "brand": "LIFEJOY",
+          "excerpt": "Lifejoy JBS401G-B Electric Blanket, Made in Japan, Mattress Blanket, Brown, 51.2 x 31.5 inches (130 x 80 cm), Washable, 8 Hour Off Timer Function, Room Temperature Sensor, Warm Heat, Cold Feet and Warm\nAbout this item\n【8-Hour OFF Timer】An electric blanket equipped with an 8-hour OFF timer. The power will automatically turn off 8 hours after it is turned on, preventing it from being left on\n【Designed to Warm Up Quickly】The electric blanket is intentionally designed to be thin for use under a quilt. By making the fabric thinner, the heat from the electric heating wires inside the blanket can be transferred to the body more quickly. Additionally, once warmed, the quilt will retain the warmth, so even when operating on low, the warmth will persist\n【Recommended usage of electric blankets】The recommended usage for electric blankets is to run them on the 'High' setting for 10 to 30 minutes before sleeping to warm up the entire blanket. After getting into bed, switch to the 'Low' setting. This method can free you from the chill when getting into bed and allow you to sleep comfortably. For children or those with sensitive skin, using the 'High' setting for long periods may risk low-temperature burns. It is recommended to adjust the temperature when going to bed\n【SAFETY AND SECURITY】This electric over-blanket and under-blanket is developed and manufactured with safety and security as the top priority. Not only is it S-marked, but it has also passed the washing test, allowing it to be machine-washed by removing the controller. *Note: Not compatible with drum-type washing machines or clothes dryers › See more product details\nMaterial flannel\nColor 2) Brown\nBrand LIFEJOY\nSpecial Feature Thermal\nStyle 3) 8 hour off timer included\nVisit the ライフジョイ(LIFEJOY) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Lifejoy JBS401G-B Electric Blanket, Made in Japan, Mattress Blanket, Brown, 51.2 x 31.5 inches (130 x 80 cm), Washable, 8 Hour Off Timer Function, Room Temperature Sensor, Warm Heat, Cold Feet and Warm",
+          "url": "https://www.amazon.co.jp/dp/B0B45DXPMW?th=1",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "washability",
-      "label": "洗濯のしやすさ",
-      "keywords": [
-        "丸洗い可",
-        "コントローラー取り外し",
-        "お手入れ"
+      "amazon_title": "BAYATA 電気毛布 掛け敷き兼用 洗える 160x80cm 7段階温度調節 12H切タイマー 速暖 AI過熱保護 80W 節電 ダニ退治",
+      "asin": "B0GXTVJVHY",
+      "brand": "BAYATA",
+      "discovery_axis_id": "timer_control",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71Y1deYUTQL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0GXTVJVHY",
+      "provisional": false,
+      "rating": 4.6,
+      "ref": "p4",
+      "review_count": 774,
+      "search_key": "BAYATA 電気毛布 掛け敷き兼用 洗える 160x80cm 7段階温度調節",
+      "selection_reason": "予熱だけで切りたい日と、就寝後もしばらく運転したい日で停止時刻を選びたい人向け。[商品掲載情報](https://www.amazon.co.jp/dp/B0GXTVJVHY)には2・4・8・12時間の切タイマーに加え、タイマーを設定しない場合も2時間後に自動停止すると記載されている。160×80cmの掛け敷き兼用なので、布団での予熱にも使える。",
+      "sources": [
+        {
+          "brand": "BAYATA",
+          "excerpt": "BAYATA Electric Blanket, Mattress Compatible, Washable, 63.0 x 31.5 inches (160 x 80 cm), 7 Temperature Adjustments, 2-4-8-12 H Off Timer, AI Overheating Protection, 80 W, Energy Saving, Energy Saving\nAbout this item\n🔥【軽くて柔かい生地・160×80cmサイズ＆掛敷両用で四季対応】掛敷両用電気毛布はポーラーフリース生地を使用し、軽くてやわらかい肌ざわりなので、重い毛布が苦手な方でも快適に使用できます。また、軽いため、持ち運びにも便利で、車中泊やアウトドアなど、様々なシーンで活躍します。160x80cmの適切なサイズで、ひざ掛けはもちろん 、肩掛け、敷き毛布としても大活躍、ベッドやソファ、デスクなどのさまざまな場所でご利用いただけます。冬の寒さ対策だけでなく、春や秋の少し肌寒い時期、そして夏場の冷房による冷え対策としても一年中活用できます。\n🔥【7段階温度調整・切り忘れ防止タイマー付き】電気毛布はコントローラー付き、ボタンを押すだけの簡単操作で、温度とタイマーの時間を細かく設定することができます。30℃、35℃、39℃、43℃、48℃の7段階で温度調節が可能で、家族全員が快適に使用できます。また、2時間、4時間、8時間、12時間に設定可能なオフタイマーを備えており、就寝時などに便利です。タイマーが設定しない場合、2時間後自動に電源が切れ、付けっぱなしを防止可能。低温やけどや消し忘れによる事故を防ぎ、省エネにも貢献し、切り忘れの心配も軽減できるため、高齢者の方も安心して使用できます。\n🔥【80Wで速暖・AI過熱保護・電気代節約】電気毛布は電気代を抑えられる経済的な暖房器具です。最大消費電力80Wで、1時間あたりの電気代は約2.16円、他の暖房器具と比較して低い消費電力であり、電気代の節約に繋がります。電気毛布 敷きの発熱速度が非常に速く、電源を入れてから30秒ほどで暖かさを感じ、3分ほどで徐々に温かくなります。温度センサーが内蔵されており、リアルタイムで温度を検知し、AIが過熱を防ぎながら温度を維持します。寝ている間に熱くなりすぎる心配もなく、快適な睡眠をとることができます。軽くて、暖かく、柔らかい生地で、肌触りだけでなく、毛玉ができにくい、保温性、速乾性、耐久性、伸縮性に優れ、寒い季節に冷えたベッド・ふとんや身体をぽかぽかにあたため、心地よい眠りに導いてくれます。\n🔥【ダニ退治機能・抗菌除臭・本体丸洗い可能】お肌の近くで使う寝具だから、肌にやさしくて清潔を保ち、健康のために高温でダニ退治機能もあり、毛布本体を折りたたんで、目盛「7」で1~2時間高温運転するだけで99.9％のダニを退治できます。さらにコントローラーを取り外し、電気毛布を洗濯ネットに入れて、自宅の洗濯機で丸洗いできますので、いつでも清潔にお使いいただけます（※乾燥機や洗濯機の乾燥機能は使用しないでください）。\n🔥【幅広く適用・冬には素敵なプレゼント】160cm*80cmのより大きいサイズを設計しており、暖かく余裕あり、肩から足までをぽかぽかにしてくれます。敷き毛布だけではなく、膝掛け、肩掛け、電気座布団など多数使用WAYがあります。PSEマーク認証取得正規品！過電圧保護、漏電保護、過熱断電保護など、安全装置がしっかり備わっているので、万が一の時も安心です。省エネで財布にも優しいし、コストパフォーマンスにも優れていて、家庭用はもとより、オフィスや戸外にいる時にも使用可能です。親、家族、友達への贈り物に最適です。パッケージ内容：毛布本体*1、コントローラー*1、日本語取扱説明書*1 › See more product details\nMaterial Fleece\nColor White and gray plaid pattern\nBrand BAYATA\nSpecial Feature 2-4-8-12 H; 4-stage shut-off timer; 7-stage temperature adjustment; Dust mite elimination function; Machine washable; Energy saving and electricity bill saving; Overheating protection function2-4-8-12 H; 4-stage shut-off timer; 7-stage temperature adjustment; Dust mite elimination function; Machine washable; Energy saving a… See more\nBlanket Form Throw Blanket\nVisit the BAYATA Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "BAYATA Electric Blanket, Mattress Compatible, Washable, 63.0 x 31.5 inches (160 x 80 cm), 7 Temperature Adjustments, 2-4-8-12 H Off Timer, AI Overheating Protection, 80 W, Energy Saving, Energy Saving",
+          "url": "https://www.amazon.co.jp/dp/B0GXTVJVHY?th=1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "アイリスオーヤマ 電気毛布 敷き 洗える 140×80cm シングル スライド温度調整 EHB-F1480-DT ダークブラウン [並行輸入品]",
+      "asin": "B074P2HDPJ",
+      "brand": "",
+      "discovery_axis_id": "washable_care",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61LJDcE1yVL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B074P2HDPJ",
+      "provisional": true,
+      "rating": 4.2,
+      "ref": "p5",
+      "review_count": 5686,
+      "search_key": "アイリスオーヤマ 電気毛布 敷き 洗える 140×80cm シン",
+      "selection_reason": "汚れたときに家庭の洗濯機で手入れしたい人向け。フランネル調の約140×80cmの敷き毛布で、[アイリスオーヤマの取扱説明書](https://www.irisohyama.co.jp/products/manual/pdf/513905.pdf)はコネクターを外し、本体を毛布用ネットに入れて毛布洗いコースで洗う手順を示す。コントローラーは布で拭き、ドラム式洗濯機と乾燥機は使わない。",
+      "sources": []
+    },
+    {
+      "amazon_title": "Sugiyama 電気しき毛布 ロングサイズ 洗える毛布 ダニ退治機能 日本製 ベージュ NA-08SL(BE)",
+      "asin": "B000SCWV5C",
+      "brand": "Sugiyama SPINNING AND WEAVING",
+      "discovery_axis_id": "washable_care",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61s3U7KupCL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B000SCWV5C",
+      "provisional": false,
+      "rating": 4.1,
+      "ref": "p6",
+      "review_count": 918,
+      "search_key": "Sugiyama SPINNING AND WEAVING Sugiyama 電気しき毛布 ロン",
+      "selection_reason": "長めの寝床を足元まで覆いつつ、シーズン終わりに本体を洗いたい人向け。[椙山紡織の製品情報](https://www.sugibou.com/products/%E9%9B%BB%E6%B0%97%E6%95%B7%E6%AF%9B%E5%B8%83%E3%83%AD%E3%83%B3%E3%82%B0/)で約180×85cm、頭寒足熱配線、丸洗い対応を確認できる。洗う際はコントローラーを外し、本体プラグを内側に折って洗濯ネットに入れる方法が[販売店の案内](https://item.rakuten.co.jp/tenkou/013038-sugiyamaheating_blanket_l/)に示されている。",
+      "sources": [
+        {
+          "brand": "Sugiyama SPINNING AND WEAVING",
+          "excerpt": "Sugiyama 電気しき毛布 ロングサイズ 洗える毛布 ダニ退治機能 日本製 ベージュ NA-08SL(BE)\nこの商品について\n定格／交流100V-55W　50-60Hz共用\n素材／表：ポリエステル100%　裏：たて糸　ポリエステル100%　よこ糸　ポリエステル70%、アクリル30%\nサイズ／約180×85cm\nコード長さ／電源側 約1.9m、毛布側 約0.6m\n重さ／約1.4kg(コントローラー共)\n表面温度(足元）／(弱)約20℃、(中)約36℃、(強)約52℃ ※表面温度は、JIS 9210に準拠した測定値です。（室温20℃） （実際に使用されるときの表面温度は、室温、使用状態により多少異なります）\n消費電力量／(弱)約3wh、(中)約18wh、(強)約31wh ※消費電力量は、標準品を非使用状態で測定した値です。 （実際に使用されるときは、使用状態や環境により多少異なります）\n電気代／(弱)約0.1円、(中)約0.6円、(強)約1.0円 ※電気料金は電力会社ならびにご家庭の電力使用量により異なりますが、 目安として1kwhあたり31円で計算しております。\n原産国／日本\n保証期間／お買上げ日より1年間 表示件数を増やす › もっと見る\n材質 ポリエステル、アクリル混紡\n色 オーロラベージュ\nブランド Sugiyama SPINNING AND WEAVING\n特徴 ダニ退治, 丸洗いOK, 室温センサー, 無段階温度調節, 頭寒足熱配線\nスタイル 敷き用\nブランド: Sugiyama SPINNING AND WEAVING",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Sugiyama 電気しき毛布 ロングサイズ 洗える毛布 ダニ退治機能 日本製 ベージュ NA-08SL(BE)",
+          "url": "https://www.amazon.co.jp/dp/B000SCWV5C",
+          "verified": true
+        }
       ]
     }
   ],
   "selection": {
-    "comparison_axes_covered": [
-      "size_compatibility",
-      "temperature_control",
-      "washability"
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B07G3DCNVH",
+            "reason": "定番の敷き毛布を広めのサイズから選びたい人向け。約160×85cmの敷き専用モデルで、寝室の室温変化に合わせて温度を調整する室温センサーと抗菌防臭加工を備える。就寝前に敷いて使う際のサイズと機能を、[パナソニックの仕様](https://panasonic.jp/danbo/products/DB-U31LS/spec.html)で確認できる。"
+          },
+          {
+            "asin": "B0DBPW6Z7W",
+            "reason": "足先の冷えが気になり、コンパクトな敷き毛布から選びたい人向け。約130×80cm・40Wで、足元側の配線密度を高めた頭寒足熱配線が特徴。布団に敷いて足元を温める使い方が、[商品掲載情報](https://www.amazon.co.jp/dp/B0DBPW6Z7W)の仕様と結び付く。"
+          }
+        ]
+      },
+      {
+        "axis_id": "timer_control",
+        "products": [
+          {
+            "asin": "B0B45DXPMW",
+            "reason": "予熱後に寝落ちしがちで、毎回タイマー時間を設定せずに使いたい人向け。ライフジョイの[製品情報](https://lifejoy.co.jp/blanket/jbs401g/)と[取扱説明書](https://lifejoy.co.jp/WP/wp-content/uploads/2022/09/WEB_JBS401G_JBK551G_manual.pdf)によると、電源を入れてから8時間後に通電が自動停止する。時間指定式ではない点まで分かり、就寝前に布団を温める習慣に合わせて判断できる。"
+          },
+          {
+            "asin": "B0GXTVJVHY",
+            "reason": "予熱だけで切りたい日と、就寝後もしばらく運転したい日で停止時刻を選びたい人向け。[商品掲載情報](https://www.amazon.co.jp/dp/B0GXTVJVHY)には2・4・8・12時間の切タイマーに加え、タイマーを設定しない場合も2時間後に自動停止すると記載されている。160×80cmの掛け敷き兼用なので、布団での予熱にも使える。"
+          }
+        ]
+      },
+      {
+        "axis_id": "washable_care",
+        "products": [
+          {
+            "asin": "B074P2HDPJ",
+            "reason": "汚れたときに家庭の洗濯機で手入れしたい人向け。フランネル調の約140×80cmの敷き毛布で、[アイリスオーヤマの取扱説明書](https://www.irisohyama.co.jp/products/manual/pdf/513905.pdf)はコネクターを外し、本体を毛布用ネットに入れて毛布洗いコースで洗う手順を示す。コントローラーは布で拭き、ドラム式洗濯機と乾燥機は使わない。"
+          },
+          {
+            "asin": "B000SCWV5C",
+            "reason": "長めの寝床を足元まで覆いつつ、シーズン終わりに本体を洗いたい人向け。[椙山紡織の製品情報](https://www.sugibou.com/products/%E9%9B%BB%E6%B0%97%E6%95%B7%E6%AF%9B%E5%B8%83%E3%83%AD%E3%83%B3%E3%82%B0/)で約180×85cm、頭寒足熱配線、丸洗い対応を確認できる。洗う際はコントローラーを外し、本体プラグを内側に折って洗濯ネットに入れる方法が[販売店の案内](https://item.rakuten.co.jp/tenkou/013038-sugiyamaheating_blanket_l/)に示されている。"
+          }
+        ]
+      }
     ],
-    "brand_count": 6,
-    "price_used_as_constraint_only": true
+    "brand_count": 5,
+    "candidate_count": 30,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [],
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": []
   },
-  "products": [
-    {
-      "ref": "p1",
-      "product_id": "AMZ-B0HCSW71R8",
-      "asin": "B0HCSW71R8",
-      "amazon_title": "パナソニック 電気毛布 布団暖房 温度自動調整 安心設計 丸洗いOK ダニ対策 約140×80cm DB-U13T-C",
-      "brand": "Panasonic",
-      "image_url": "https://m.media-amazon.com/images/I/614bwezltdL._AC_SL1500_.jpg",
-      "observed_price": 3999,
-      "discovery_score": 1,
-      "selection_score": 1.035,
-      "matched_comparison_axes": [
-        "size_compatibility",
-        "temperature_control",
-        "washability"
-      ],
-      "search_key": "Gaberpho 電気毛布 敷き 97×195cm シングル 固定バンド付き 頭寒",
-      "model": "Panasonic DB-U13T-C",
-      "selected_variant": {
-        "model": "DB-U13T-C",
-        "color": "ベージュ",
-        "size": "140×80cm",
-        "pack_count": 1
-      }
-    },
-    {
-      "ref": "p2",
-      "product_id": "AMZ-B0FLCZYR7B",
-      "asin": "B0FLCZYR7B",
-      "amazon_title": "コイズミ 電気毛布 敷毛布 丸洗い可 頭寒足熱配線 ダニ退治 抗菌防臭 130×80cm KDS-40241",
-      "brand": "KOIZUMI",
-      "image_url": "https://m.media-amazon.com/images/I/716kkYXPWmL._AC_SL1500_.jpg",
-      "observed_price": 6990,
-      "discovery_score": 1,
-      "selection_score": 0.495,
-      "matched_comparison_axes": [
-        "temperature_control"
-      ],
-      "search_key": "FREEDAN フリーダン ホットカーペット 電気カーペット 2畳 168×16",
-      "model": "KOIZUMI KDS-40241",
-      "selected_variant": {
-        "model": "KDS-40241",
-        "size": "130×80cm",
-        "model_year": 2024,
-        "pack_count": 1
-      }
-    },
-    {
-      "ref": "p3",
-      "product_id": "AMZ-B07YXWGLGJ",
-      "asin": "B07YXWGLGJ",
-      "amazon_title": "アイリスオーヤマ 電気毛布 敷き 洗える 140×80cm シングル スライド温度調整 EHB-F1480-DT ダークブラウン [並行輸入品]",
-      "brand": "アイリスオーヤマ",
-      "image_url": "https://m.media-amazon.com/images/I/61rMY2m9SNL._AC_SL1000_.jpg",
-      "observed_price": 14168,
-      "discovery_score": 1,
-      "selection_score": 0.495,
-      "matched_comparison_axes": [
-        "size_compatibility"
-      ],
-      "search_key": "ダイレクトテレショップ ひな暖ぬくぬくセット （毛布＋敷きパッド） シングル グレー ひ",
-      "model": "IRIS OHYAMA EHB-F1480-DT",
-      "selected_variant": {
-        "model": "EHB-F1480-DT",
-        "size": "140×80cm",
-        "color": "ダークブラウン",
-        "style": "敷き",
-        "pack_count": 1
-      }
-    },
-    {
-      "ref": "p4",
-      "product_id": "AMZ-B0FHVYQR8H",
-      "asin": "B0FHVYQR8H",
-      "amazon_title": "[山善] 電気毛布 敷き 電気敷毛布 130×80cm シングル 洗える ダニ対策機能 温度調節機能 ホワイト×ベージュ YMS-18",
-      "brand": "山善",
-      "image_url": "https://m.media-amazon.com/images/I/61vx-q41ArL._AC_SL1500_.jpg",
-      "observed_price": 3280,
-      "discovery_score": 1,
-      "selection_score": 0.445,
-      "matched_comparison_axes": [
-        "size_compatibility",
-        "temperature_control"
-      ],
-      "search_key": "山善(YAMAZEN) 電気毛布 敷き 電気敷毛布 130×80cm シングル 洗える",
-      "model": "山善 YMS-18",
-      "selected_variant": {
-        "model": "YMS-18",
-        "color": "ホワイト×ベージュ",
-        "size": "130×80cm",
-        "pack_count": 1
-      }
-    },
-    {
-      "ref": "p5",
-      "product_id": "AMZ-B005HMMBYE",
-      "asin": "B005HMMBYE",
-      "amazon_title": "Sugiyama(椙山紡織) 電気毛布 日本製 電気しき毛布 140×80cm 両面起毛仕上げ 表面ボーダー柄(裏面ホワイト) NA-023S",
-      "brand": "椙山紡織",
-      "image_url": "https://m.media-amazon.com/images/I/71ZrPYG4aKL._AC_SL1500_.jpg",
-      "observed_price": 4980,
-      "discovery_score": 1,
-      "selection_score": 0.445,
-      "matched_comparison_axes": [
-        "size_compatibility",
-        "temperature_control"
-      ],
-      "search_key": "AooDen 電気毛布 敷き 洗える 160×80cm 無段階温度調節 1-1",
-      "model": "椙山紡織 NA-023S",
-      "selected_variant": {
-        "model": "NA-023S",
-        "color": "表面ボーダー柄/裏面ホワイト",
-        "size": "140×80cm",
-        "pack_count": 1
-      }
-    },
-    {
-      "ref": "p6",
-      "product_id": "AMZ-B0B73MVCHD",
-      "asin": "B0B73MVCHD",
-      "amazon_title": "広電(KODEN) 電気毛布 敷き 130×80cm ブラウン 洗える 抗菌防臭 おやすみおはようタイマー 室温センサー 12hOFF スライド温度調節 ダニ退治 CWS403B-BG",
-      "brand": "広電",
-      "image_url": "https://m.media-amazon.com/images/I/71DNlGAW+8L._AC_SL1500_.jpg",
-      "observed_price": 3999,
-      "discovery_score": 1,
-      "selection_score": 0.445,
-      "matched_comparison_axes": [
-        "temperature_control"
-      ],
-      "search_key": "MunzeYi 電気毛布 敷き 掛け兼用 切り忘れ防止タイマー付き 電気敷き毛布",
-      "model": "KODEN CWS403B-BG",
-      "selected_variant": {
-        "model": "CWS403B-BG",
-        "size": "130×80cm",
-        "color": "ブラウン",
-        "pack_count": 1,
-        "jan": "4516748029129"
-      }
-    }
-  ]
+  "slug": "electric-heated-mattress-pads-6-picks"
 }
