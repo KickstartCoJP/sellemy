@@ -1,101 +1,73 @@
 {
-  "slug": "fitness-smartwatches-6-picks",
   "category": "gadget",
-  "h1": "運動習慣に使うスマートウォッチ6選｜記録・通話・電池持ちで比較",
-  "lead": "スマートウォッチを運動に使うなら、歩数を振り返るのか、GPSで屋外の距離を記録するのか、スマホの通話も手元で受けたいのかを先に決めましょう。今回は六つの独立したシリーズを、日々の記録、スマホ連携、画面と基本機能の三組で比較します。心拍や睡眠の数値は運動や生活を振り返るための目安です。測定精度や健康改善を保証するものとして選ばず、使うスマホと充電の頻度まで合わせて検討します。",
-  "summary": "Fitbit Sense 2とGarmin vívoactive 6はGPSや睡眠・運動の記録、HUAWEI WATCH FIT 4とAmazfit Bip 6は角型画面と通話・地図の使い方、Redmi Watch 6とドコモ01は日常の通知・記録を中心に比較します。電池持ちは通常使用とGPS連続使用で別の値です。対応OSでも返信機能には差があり、防水表示だけで水泳や入浴に使えるとは判断できません。",
   "comparison_groups": [
     {
-      "id": "health-tracking",
-      "title": "睡眠や身体反応、日々の運動を振り返る",
-      "angle": "Sense 2とvívoactive 6のGPS、睡眠、運動関連機能を比較。電池持ちは使用モードごとの公表値で確認し、診断の代わりには使いません。",
-      "product_refs": [
-        "p2",
-        "p6"
-      ]
-    },
-    {
-      "id": "call-compatibility",
-      "title": "角型の画面で、通話と地図の使い方を比べる",
-      "angle": "WATCH FIT 4はスマホと接続したBluetooth通話、Bip 6はGPSとオフラインマップが比較のポイント。必要な機能とスマホ・アプリとの対応条件を確認します。",
+      "angle": "運動を始めたばかりなら、何を記録し、いつ振り返るかを決めると使い方が明確になります。歩くきっかけが欲しい場合と、屋外・室内の運動を種類ごとに残したい場合では、確認したい機能が異なります。",
+      "id": "popular",
       "product_refs": [
         "p1",
-        "p5"
-      ]
+        "p2"
+      ],
+      "title": "まずは記録の続け方を考える"
     },
     {
-      "id": "everyday-simplicity",
-      "title": "日常の歩数と通知を、画面と充電頻度で選ぶ",
-      "angle": "Redmi Watch 6とドコモ01を比較。画面、日常の記録、スマホへの通知を見て、使いたい機能から選びます。",
+      "angle": "普段の移動を振り返るなら、歩数や運動時間を日ごとに見られるかがポイントです。散歩の道筋も残したい場合は、経路の記録方法と、記録後にアプリで確認できる内容を確かめましょう。",
+      "id": "daily_walk",
       "product_refs": [
         "p3",
         "p4"
-      ]
+      ],
+      "title": "通勤や散歩を運動の記録につなげる"
+    },
+    {
+      "angle": "室内で体を動かす場合は、取り組みたい運動に対応するモードと、記録できる項目を確認しましょう。短い運動でも日付や時間を残しておくと、取り組んだ日を振り返れます。",
+      "id": "short_indoor_workout",
+      "product_refs": [
+        "p5",
+        "p6"
+      ],
+      "title": "家での短時間運動を記録する"
     }
   ],
+  "conclusion": "歩いた量を振り返るだけなら、まず歩数を見やすいことを優先します。散歩コースも残すならGPSの方式と地図表示を、室内運動なら自分が続けたい種目の記録項目を確認しましょう。購入前に、スマートフォンと専用アプリの対応条件も確かめてください。",
+  "h1": "初めての運動用スマートウォッチ｜歩数・散歩の経路・室内運動",
+  "how_to_choose": "スマートフォンとの連携が必要な機能を使う場合は、購入前に対応するOSとアプリの利用条件を確認しましょう。また、歩数の確認と屋外での経路記録は異なる機能です。残したい記録を先に決めると、必要な機能を絞りやすくなります。",
+  "lead": "スマートウォッチを使うと、通勤や散歩で歩いた日も、家で少し体を動かした日も、活動を記録して振り返れます。まとまった運動時間を取れないなら、まずは普段の歩行と短時間の運動を記録するところから始めると、続けやすい時間帯や活動の種類を見つけやすくなります。初めて選ぶ際は、歩数を確認したいのか、歩いた経路を残したいのか、室内運動を種類ごとに記録したいのかを考えましょう。使いたい機能に加え、手持ちのスマートフォンとの対応や、記録を確認するアプリの使い方も確かめておくことが大切です。",
+  "needs_product_reselection": false,
   "products": [
     {
-      "ref": "p1",
-      "h3": "HUAWEI WATCH FIT 4 ブラック",
-      "description": "軽い角型ウォッチで屋外運動と通話をまとめたい人向けです。約1.82インチのAMOLED画面を備え、ベルトを除く本体は約27g。GPSを含むL1・L5の測位に対応し、Bluetooth通話には接続したスマートフォンを使います。\n\n仕様上の対応OSはAndroid 8.0以降、iOS 13.0以降です。電池持ちはメーカー条件で通常約10日、ヘビーユース約7日、常時表示約4日。地図を使えるBip 6と比べ、必要な機能と自分の使う表示モードを基準に選べます。5ATMでも温水シャワー、温泉、サウナ、潜水には使わず、石けんや洗剤に触れさせないようにします。",
-      "amazon_product_url": "https://www.amazon.co.jp/dp/B0F5WNVHH7",
-      "amazon_affiliate_url": "https://www.amazon.co.jp/dp/B0F5WNVHH7?tag=sellemy-22",
-      "rakuten_search_url": "https://search.rakuten.co.jp/search/mall/HUAWEI%20WATCH%20FIT%204%20%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF/",
-      "yahoo_search_url": "https://shopping.yahoo.co.jp/search?p=HUAWEI%20WATCH%20FIT%204%20%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF"
+      "description": "長く座っているときに手首の振動で歩行を促す、運動リマインダーを備えています。Fitbitアプリでは運動や睡眠の記録を確認できるため、まずは日常の活動を振り返るところから始めたい人に向いています。",
+      "h3": "Fitbit Inspire 3",
+      "ref": "p1"
     },
     {
-      "ref": "p2",
-      "h3": "Fitbit Sense 2 ブルーミスト／ソフトゴールド",
-      "description": "運動に加え、睡眠や日中の身体反応を振り返りたい人向けです。GPSと光学式心拍センサー、皮膚コンダクタンスを測るcEDAセンサーを備えます。身体反応や睡眠の記録を、生活の傾向を知る材料として扱う製品です。日本向けSense 2はSuicaにも対応します。\n\n電池持ちは6日間以上という公表値ですが、GPS連続使用では最大5時間です。常時表示などでも短くなるため、長い屋外運動では充電計画が必要になります。現行仕様のスマホ要件はiOS 16.4以降またはAndroid 11以降で、Googleアカウントと指定アプリが必要です。追加の有料サービスもあるため、vívoactive 6との比較では記録したい項目と利用料金を合わせて見ましょう。",
-      "amazon_product_url": "https://www.amazon.co.jp/dp/B0B75WWC8F",
-      "amazon_affiliate_url": "https://www.amazon.co.jp/dp/B0B75WWC8F?tag=sellemy-22",
-      "rakuten_search_url": "https://search.rakuten.co.jp/search/mall/Fitbit%20Sense%202%20%E3%83%96%E3%83%AB%E3%83%BC%E3%83%9F%E3%82%B9%E3%83%88%20%E3%82%BD%E3%83%95%E3%83%88%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%89/",
-      "yahoo_search_url": "https://shopping.yahoo.co.jp/search?p=Fitbit%20Sense%202%20%E3%83%96%E3%83%AB%E3%83%BC%E3%83%9F%E3%82%B9%E3%83%88%20%E3%82%BD%E3%83%95%E3%83%88%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%89"
+      "description": "内蔵GPSを備え、ウォーキングやヨガ、フィットネスなどの運動に対応しています。散歩と室内運動を一台で記録したい人や、心拍数とBody Batteryの表示も日々の振り返りに使いたい人に向いています。",
+      "h3": "GARMIN vivoactive 5",
+      "ref": "p2"
     },
     {
-      "ref": "p3",
-      "h3": "Xiaomi Redmi Watch 6 オブシディアンブラック",
-      "description": "大きな角型画面で通知を確認し、屋外運動にも使いたい人向けです。今回選ぶのはRedmi Watch 6のオブシディアンブラックで、2.07インチの有機EL画面、GPS/GNSS、Bluetooth通話が掲載されています。\n\n商品表示には24日間のバッテリー持続とありますが、GPSや通話、画面表示などの使い方で充電頻度は変わります。この日数をGPSを連続使用できる時間とは考えないでください。iPhoneへの対応表示もありますが、実際に使うスマホと連携アプリの要件は購入前に確認します。5ATMの表示だけで入浴や温泉まで使えると判断せず、説明書が認める使い方に沿って、運動と日常の通知を一緒に扱えるか検討しましょう。",
-      "amazon_product_url": "https://www.amazon.co.jp/dp/B0GQL9JZS7",
-      "amazon_affiliate_url": "https://www.amazon.co.jp/dp/B0GQL9JZS7?tag=sellemy-22",
-      "rakuten_search_url": "https://search.rakuten.co.jp/search/mall/Xiaomi%20Redmi%20Watch%206%20%E3%82%AA%E3%83%96%E3%82%B7%E3%83%87%E3%82%A3%E3%82%A2%E3%83%B3%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF/",
-      "yahoo_search_url": "https://shopping.yahoo.co.jp/search?p=Xiaomi%20Redmi%20Watch%206%20%E3%82%AA%E3%83%96%E3%82%B7%E3%83%87%E3%82%A3%E3%82%A2%E3%83%B3%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF"
+      "description": "GPSを内蔵し、屋外でのウォーキングの経路・距離・速度を記録できます。運動後にアプリと同期して軌跡を地図で確認できるため、いつもの散歩コースを記録に残したい人に向いています。",
+      "h3": "LEEWIN V2",
+      "ref": "p3"
     },
     {
-      "ref": "p4",
-      "h3": "ドコモ スマートウォッチ01 ブラック AYB57872",
-      "description": "歩数、心拍、睡眠とスマホの通知を、一台で確認したい人向けです。約1.83インチの画面を備え、100種類以上のスポーツが登録されています。ドコモ回線に限らず使えますが、専用のTechWearアプリとの連携が必要です。ペアリングできない場合、時計だけを独立して使うこともできません。\n\n電池持ちは公表3〜5日で、設定や使用状況によって変わります。2026年6月の更新では初期設定の画面点灯時間を短縮していますが、全員に同じ延長効果があるわけではありません。IP68でも、水圧のかかる水泳や熱い風呂には使わないことが勧められています。Redmiと比べる際も、販売元の名前から設定不要と考えず、必要なアプリと通知設定まで確認しましょう。",
-      "amazon_product_url": "https://www.amazon.co.jp/dp/B0FN6Z6CXL",
-      "amazon_affiliate_url": "https://www.amazon.co.jp/dp/B0FN6Z6CXL?tag=sellemy-22",
-      "rakuten_search_url": "https://search.rakuten.co.jp/search/mall/%E3%83%89%E3%82%B3%E3%83%A2%20%E3%82%B9%E3%83%9E%E3%83%BC%E3%83%88%E3%82%A6%E3%82%A9%E3%83%83%E3%83%8101%20%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%20AYB57872/",
-      "yahoo_search_url": "https://shopping.yahoo.co.jp/search?p=%E3%83%89%E3%82%B3%E3%83%A2%20%E3%82%B9%E3%83%9E%E3%83%BC%E3%83%88%E3%82%A6%E3%82%A9%E3%83%83%E3%83%8101%20%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%20AYB57872"
+      "description": "ウォーキングに対応する運動モードを備えています。専用アプリのVeryFitでは歩数・運動・睡眠の記録を日ごとに確認でき、通勤や買い物で歩いた分を普段の活動として振り返れます。",
+      "h3": "Boqurich スマートウォッチ",
+      "ref": "p4"
     },
     {
-      "ref": "p5",
-      "h3": "Amazfit Bip 6 ブラック",
-      "description": "角型画面で運動記録と地図を扱いたい人向けのBip 6です。GPS内蔵、オフラインマップ、ルートインポート、140種類以上のスポーツモードが掲載され、ブラックの本体とバンドを選びます。地図を見ながら屋外で使う予定がある人は、WATCH FIT 4の通話機能と比べ、どの機能を優先するかで候補を絞れます。\n\n心拍、睡眠、ストレス関連の記録も案内されていますが、生活や運動の傾向を振り返る目安として使い、病気を判断する目的では選びません。掲載される14日間の電池持ちは、常時表示やGPSなどの設定で変わります。スマホ連携や通知への返信を重視する場合は、使うOSで利用できる機能とアプリの要件を確認してください。",
-      "amazon_product_url": "https://www.amazon.co.jp/dp/B0F1XCKZYW",
-      "amazon_affiliate_url": "https://www.amazon.co.jp/dp/B0F1XCKZYW?tag=sellemy-22",
-      "rakuten_search_url": "https://search.rakuten.co.jp/search/mall/Amazfit%20Bip%206%20%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF/",
-      "yahoo_search_url": "https://shopping.yahoo.co.jp/search?p=Amazfit%20Bip%206%20%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF"
+      "description": "100種類以上のワークアウトモードを備え、運動中の心拍数を計測できます。約14gのバンド型で、家事の合間などに行う短時間の運動も記録したい人が検討しやすいモデルです。",
+      "h3": "HUAWEI Band 9",
+      "ref": "p5"
     },
     {
-      "ref": "p6",
-      "h3": "Garmin vívoactive 6 Black／Slate",
-      "description": "日々のフィットネスと睡眠を振り返りたい人向けのGPSウォッチです。今回選ぶのはBlack／Slateのvívoactive 6で、AMOLEDディスプレイを備えます。睡眠管理、フィットネス年齢、お昼寝検出、心拍センサー、ストレスレベル測定、Suica対応が掲載されており、運動以外の時間にも着けて記録を残したい場合の候補です。\n\n電池持ちは11日間と案内されていますが、GPSの利用や表示設定などによって変わるため、屋外運動の日にも同じ日数持つとは判断しません。iOS・Androidの対応表示と、実際に入れるアプリの要件を合わせて確認しましょう。Sense 2との比較では、自分が振り返りたい記録や決済の使い方を基準に選べます。",
-      "amazon_product_url": "https://www.amazon.co.jp/dp/B0F2HW8828",
-      "amazon_affiliate_url": "https://www.amazon.co.jp/dp/B0F2HW8828?tag=sellemy-22",
-      "rakuten_search_url": "https://search.rakuten.co.jp/search/mall/Garmin%20vivoactive%206%20Black%20Slate/",
-      "yahoo_search_url": "https://shopping.yahoo.co.jp/search?p=Garmin%20vivoactive%206%20Black%20Slate"
+      "description": "ヨガや筋力トレーニングの運動モードを備えます。運動時間・心拍数・推定消費カロリーの記録や、専用アプリでの振り返りに対応します。",
+      "h3": "GRV スマートウォッチ",
+      "ref": "p6"
     }
   ],
-  "how_to_choose": "まず、スマホのOSと連携アプリを確認します。製品ページのOS要件に加え、実際に入れる最新アプリの要件も満たす必要があります。iPhone・Android両対応でも、通知への返信などは片方だけで使える機能があります。Bluetooth通話はスマホの近くで接続して使う仕組みで、時計単体の携帯回線通話とは別です。\n\n次に運動記録の範囲を決めます。歩数や運動時間が中心か、GPSで屋外ルートも残したいか、地図やワークアウトを使うかを整理すると機能を絞れます。心拍や睡眠、ストレス関連の表示は生活を振り返る目安として扱い、表示が正常だから体調にも問題がないとは判断しません。\n\n電池持ちは日数だけで比べず、常時表示、GPS連続使用、通話時間の条件を見ます。重さもベルト込みか本体のみかを区別してください。防水等級は水泳・温泉・サウナへの許可ではなく、ドコモ01のように水泳を勧めない製品もあります。汗や水で濡れたら清潔にして乾かし、充電時の扱いは各社の説明に従いましょう。",
-  "conclusion": "生活の傾向を振り返るならSense 2とvívoactive 6、軽い角型本体と通話ならWATCH FIT 4、地図利用ならBip 6が比較の起点です。日常の通知や記録を中心に始めるならRedmi Watch 6とドコモ01も検討しましょう。スマホ・アプリ・電池持ち・水に触れる場面まで揃えて、日常的に着け続けられる一台を選んでください。",
+  "reasons": [],
+  "slug": "fitness-smartwatches-6-picks",
   "status": "READY",
-  "publish_allowed": false,
-  "migration_acceptance": {
-    "source": "Sellemy final-consolidated-handoff-0336",
-    "review_type": "working-article-content-accepted",
-    "note": "publication is directed by site owner; previous draft workflow status no longer controls migration"
-  }
+  "summary": "記録したいのが歩数だけか、散歩の経路か、室内運動も含むのかを先に決めます。目的に合わせてGPSの方式や記録できる運動の種類を確認しましょう。"
 }
