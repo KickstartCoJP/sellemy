@@ -4,165 +4,374 @@
   "category": "gadget",
   "comparison_axes": [
     {
-      "id": "capacity_and_placement",
+      "id": "popular",
       "keywords": [
-        "定格容量",
-        "本体寸法",
-        "ふた開放",
-        "給水方法"
+        "人気"
       ],
-      "label": "容量と給水・設置に必要な寸法"
+      "label": "人気・定番の基準"
     },
     {
-      "id": "temperature_control",
+      "id": "steam_placement",
       "keywords": [
-        "保温温度",
-        "再沸騰",
-        "沸騰設定",
-        "タイマー"
+        "蒸気レス",
+        "蒸気セーブ",
+        "設置場所",
+        "上部空間"
       ],
-      "label": "保温温度と沸騰の設定"
+      "label": "限られた置き場所で蒸気を抑えたい"
     },
     {
-      "id": "dispensing_and_care",
+      "id": "dispensing_controls",
       "keywords": [
-        "電動給湯",
-        "コードレス給湯",
         "給湯ロック",
-        "洗浄手順"
+        "解除操作",
+        "転倒時の湯漏れ対策"
       ],
-      "label": "給湯操作と内部の手入れ"
+      "label": "家族が触れる場面で給湯操作を選びたい"
     }
   ],
   "eyecatch_image": "https://www.sellemy.jp/img/electric-hot-water-dispensing-pots/electric-hot-water-dispensing-pots.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "4885608de63a0193945c3f88100329f25743dbb9a4af9cf72bf55d87eb72a849",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 26804,
+      "listing_identity_citations_repaired": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 1531,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 434,
+      "session_id": "01a21c35-0cc9-7260-9396-2bac5d697ccf",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "5 Heat Settings that can be used according to your application"
+            }
+          ],
+          "identity_key": "象印 電気ポット 2.2L 省エネタイプ CV-GA22-TA ブラウン",
+          "identity_quote": "象印 電気ポット 2.2L 省エネタイプ CV-GA22-TA ブラウン",
+          "reason": "[検証済みの商品掲載情報](https://www.amazon.co.jp/dp/B074FWJPCY?th=1)のタイトルに型番があり、本文に2.2Lと温度設定の記載がある。定番の電気ポットとして紹介できる。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "Saves energy by automatically lowering the keep-warm temperature by 5°C if not used for more than 2 hours"
+            }
+          ],
+          "identity_key": "タイガー電気ポットPIL-A220-T",
+          "identity_quote": "タイガー電気ポットPIL-A220-T",
+          "reason": "[検証済みの商品掲載情報](https://www.amazon.co.jp/dp/B00LTCU8DC)のタイトルに型番があり、本文に容量と、2時間以上使わない場合に保温温度を下げる省エネコースの記載がある。給湯の間隔が空く家庭向けに紹介できる。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "steam_placement",
+              "quote": "Electric Pot, Steamless"
+            }
+          ],
+          "identity_key": "【WEB限定カラー】タイガー魔法瓶 電気ポット 蒸気レス 日本製 節電VE保温 安全構造 お湯計量機能付き とく子さん ミルク 出産祝い マットホワイト 3.0L PIM-N300",
+          "identity_quote": "【WEB限定カラー】タイガー魔法瓶 電気ポット 蒸気レス 日本製 節電VE保温 安全構造 お湯計量機能付き とく子さん ミルク 出産祝い マットホワイト 3.0L PIM-N300 WW",
+          "reason": "[検証済みの商品掲載情報](https://www.amazon.co.jp/dp/B0FDFN26VN?th=1)のタイトルに型番と蒸気レスの記載があり、本文で3.0Lと注いだ湯量を表示する機能を確認できる。蒸気を抑えたい置き場所向けに紹介できる。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "steam_placement",
+              "quote": "Special Feature Steamless construction"
+            }
+          ],
+          "identity_key": "タイガー魔法瓶(TIGER) 電気ポット 蒸気レス 節電VE保温 7つの安心・安全構造 とく子さん 2.2L ブラウン PIW-A220T",
+          "identity_quote": "タイガー魔法瓶(TIGER) 電気ポット 蒸気レス 節電VE保温 7つの安心・安全構造 とく子さん 2.2L ブラウン PIW-A220T",
+          "reason": "[検証済みの商品掲載情報](https://www.amazon.co.jp/dp/B08CDPTC1H?th=1)のタイトルに型番、2.2L、蒸気レスの記載がある。p3とは系列と容量が異なり、蒸気を抑えたい家庭向けに紹介できる。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "dispensing_controls",
+              "quote": "automatic hot water lock"
+            }
+          ],
+          "identity_key": "象印マホービン 電動ポット 4.0L メタリックブラウン CD-WU40-TM",
+          "identity_quote": "象印マホービン 電動ポット 4.0L メタリックブラウン CD-WU40-TM",
+          "reason": "[検証済みの商品掲載情報](https://www.amazon.co.jp/dp/B01I8RJ9KI?th=1)のタイトルに型番と4.0Lの記載があり、本文に自動給湯ロックの記載がある。家族で使う際の給湯操作という切り口に合う。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "dispensing_controls",
+              "quote": "water flow protection in case of tipping"
+            }
+          ],
+          "identity_key": "タイガー魔法瓶(TIGER) マイコン電気ポット 保温機能 節電タイマー 2.2L アーバンホワイト PDR-G220-WU",
+          "identity_quote": "タイガー魔法瓶(TIGER) マイコン電気ポット 保温機能 節電タイマー 2.2L アーバンホワイト PDR-G220-WU",
+          "reason": "[検証済みの商品掲載情報](https://www.amazon.co.jp/dp/B00OR1E6QW?th=1)のタイトルに型番と2.2Lの記載があり、本文に転倒時の流水を抑える機能の記載がある。家族が触れる場面での扱いを考える切り口に合う。湯漏れを完全に防ぐとの主張はできない。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "根拠情報のみの審査。6商品はそれぞれ検証済みの商品掲載情報にあるブランドと型番で識別でき、電気ポットの企画に適合する。既存の3つの紹介切り口に各2商品を割り当てられ、各商品の掲載情報から個別に紹介できる。明白な重複を示す根拠はない。記事本文がないため、記事のみを対象とする項目はfalseとした。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
   "products": [
     {
-      "amazon_title": "象印 CV-GB30-TA",
-      "asin": "B07GGK9F5Y",
-      "brand": "象印",
+      "amazon_title": "象印 電気ポット 2.2L 省エネタイプ CV-GA22-TA ブラウン",
+      "asin": "B074FWJPCY",
+      "brand": "Zojirushi",
+      "discovery_axis_id": "popular",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/41m+88AarqL._AC_SY300_SX300_QL70_ML2_.jpg",
-      "matched_comparison_axes": [
-        "temperature_control"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/81VjDrMcKIL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B07GGK9F5Y",
+      "product_id": "AMZ-B074FWJPCY",
+      "provisional": false,
+      "rating": 4.4,
       "ref": "p1",
-      "search_key": "Saluyar 電気ケトル ポータブル 2026年全面アップグレ",
-      "selection_score": 0.505,
-      "selected_variant": {
-        "color": "brown",
-        "capacity": "3.0L",
-        "pack_count": 1
-      }
+      "review_count": 3310,
+      "search_key": "Zojirushi 象印 電気ポット 2.2L 省エネタイプ CV-GA22-TA",
+      "selection_reason": "家族で使う定番の2.2Lポットとして、98・90・80・70℃とまほうびん保温を選べる。お茶や調理で湯温を使い分けたい家庭に向く。沸とうさせず設定温度まで沸かす機能を選んだ場合は蒸気も抑えられるが、メーカーはカルキとばしが不要な水での使用を勧めている。[象印の製品情報](https://www.zojirushi.co.jp/syohin/electronic-pot/cvga/)",
+      "sources": [
+        {
+          "brand": "Zojirushi",
+          "excerpt": "Zojirushi Electric Pot 2.2 L Energy-saving Type VE Electric Thermos Bottle 5-stage Temperature Setting Brown CV-GA22-TA\nAbout this item\nBoiling with electricity, \"hot flask warm\"\n905 W \"Speed Boiling\"\nLarge text and easy to follow control panel\nLarge orange clear LCD\nBoiling Time, Power Consumption, Steam Reduction (Selectable) Can be selected at 194°F (90°C), 176°F (80°C), and 158°F (70°C)\nIf you do not operate it for 2 hours, you can choose the heater-off \"energy-saving mode\" (selectable): 198°F (98°C), 198°F (90°C), and 176°F (80°C)\nSlow Café Drip Hot Water Supply, Pour Small Amount At A Time\nWhen not in use, the timer is used to save 5 levels of conservation timer: 6, 7, 8, 9, 10 hours\n5 Heat Settings that can be used according to your application: 198°F (98°C), 194°F (90°C), 176°F (80°C), 158°F (70°C)\nThis product is specifically designed for 100V distribution in Japan. It cannot be used overseas with different power supply voltage or power supply frequency. If used overseas, after-sales services such as manufacturer's warranty will not be applicable Show More › See more product details\nBrand Zojirushi\nCapacity 2.2 Liters\nMaterial Resin/Plastic, Stainless Steel\nColor Braun\nSpecial Feature Temperature setting function",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Zojirushi Electric Pot 2.2 L Energy-saving Type VE Electric Thermos Bottle 5-stage Temperature Setting Brown CV-GA22-TA",
+          "url": "https://www.amazon.co.jp/dp/B074FWJPCY?th=1",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "ピーコック WMJ-22-W 2.2L ホワイト",
-      "asin": "B00VPV3FSW",
-      "brand": "ピーコック",
+      "amazon_title": "タイガー電気ポットPIL-A220-T",
+      "asin": "B00LTCU8DC",
+      "brand": "Tiger",
+      "discovery_axis_id": "popular",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51QjEZe32ZS._AC_SL1500_.jpg",
-      "matched_comparison_axes": [
-        "dispensing_and_care"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/61QfibTkxkL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B00VPV3FSW",
+      "product_id": "AMZ-B00LTCU8DC",
+      "provisional": false,
+      "rating": 4.3,
       "ref": "p2",
-      "search_key": "ピーコック 電気ポット 2.2L 保温機能 カルキとばし機能 ス",
-      "selection_score": 0.505,
-      "selected_variant": {
-        "model": "WMJ-22-W",
-        "colour": "ホワイト",
-        "capacity": "2.2L",
-        "pack_count": 1
-      }
+      "review_count": 1045,
+      "search_key": "Tiger タイガー電気ポットPIL-A220-T",
+      "selection_reason": "約2.15LのVE保温ポットで、2時間以上使わないと保温温度を自動で5℃下げる省エネコースがある。朝食後から夕食前まで給湯の間隔が空く家庭に合う。沸とう時の蒸気量はメーカー比較で約半分に抑える仕様。[タイガーの製品情報](https://www.tiger-corporation.com/ja/jpn/static/product/waterheater/PIL-A.html)",
+      "sources": [
+        {
+          "brand": "Tiger",
+          "excerpt": "Tiger PIL-A220-T Electric Kettle\nAbout this item\nReduced steam boiling by about 1/2, eco-friendly steaming\nSaves energy by automatically lowering the keep-warm temperature by 5°C if not used for more than 2 hours, 'Eco Course'\nWith a 5-step energy-saving timer\n4 levels of heat retention temperature selection: You can easily use the optimal hot water temperature for food preparation, coffee, tea, etc\nMain Unit Size (Approx.): Width 8.3 x Depth 11.0 x Height 10.0 inches (21.2 x 28.0 x 25.5 cm) / Approx. 5.3 lbs (2.4 Kg)\nMaterial: Body=Steel plate case, Reservoir=Stainless steel (fluorine coating)\nPower source: AC100V, Daily power consumption: 0.73 kWh/day, Maximum power consumption: 700W, Annual power consumption: 263 kWh/year\nRated Capacity 2.15 Liters\nWarranty Period: 1 year The user manual's back cover and the manufacturer's warranty certificate are integrated\nVE Function: Yes Show More › See more product details\nBrand Tiger\nCapacity 2.2 Liters\nMaterial Stainless Steel\nColor Braun\nSpecial Feature Includes 5 energy-saving timer\nVisit the タイガー魔法瓶(TIGER) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Tiger PIL-A220-T Electric Kettle",
+          "url": "https://www.amazon.co.jp/dp/B00LTCU8DC",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "象印 CP-EB20-BM 2L スレートブラック",
-      "asin": "B0FH6CG354",
-      "brand": "象印",
+      "amazon_title": "【WEB限定カラー】タイガー魔法瓶 電気ポット 蒸気レス 日本製 節電VE保温 安全構造 お湯計量機能付き とく子さん ミルク 出産祝い マットホワイト 3.0L PIM-N300 WW",
+      "asin": "B0FDFN26VN",
+      "brand": "Tiger",
+      "discovery_axis_id": "steam_placement",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/618kE2C5ySL._AC_SL1500_.jpg",
-      "matched_comparison_axes": [],
+      "image_url": "https://m.media-amazon.com/images/I/61Dd2uVaUML._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B0FH6CG354",
+      "product_id": "AMZ-B0FDFN26VN",
+      "provisional": false,
+      "rating": 4.6,
       "ref": "p3",
-      "search_key": "象印マホービン 電気ポット 2.0L スレートブラック CP-E",
-      "selection_score": 0.325,
-      "selected_variant": {
-        "model": "CP-EB20-BM",
-        "colour": "スレートブラック",
-        "capacity": "2L",
-        "pack_count": 1,
-        "configuration": "単品。洗浄剤セットではない"
-      }
+      "review_count": 107,
+      "search_key": "Tiger タイガー魔法瓶 電気ポット 蒸気レス 日本製 節電VE保温 安全",
+      "selection_reason": "蒸気を水滴にして内容器へ戻す蒸気レス構造を備えた3.0Lモデル。上部の結露が気になる限られた置き場所で、家族分のお湯を用意したい場合に向く。注いだ量を液晶に表示するため、料理で必要量を量りながら給湯できる。[タイガーの製品情報](https://www.tiger-corporation.com/ja/jpn/product/kettle-pot/pim-n/)",
+      "sources": [
+        {
+          "brand": "Tiger",
+          "excerpt": "Tiger Thermos PIM-N300 WW Electric Pot, Steamless, Made in Japan, Energy Saving VE Heat Retention, Safe Construction, With Hot Water Measurement Function, Milk, Baby Shower, Matte White\nAbout this item\nWeb exclusive, natural white color\nProduct Size (W x D x H): Approx. 8.6 x 12.1 x 12.6 inches (21.8 x 30.8 x 31.9 cm); Weight: 7\n7SAFE+: 7 safe and secure construction\nSpecifications: Capacity: 0.8 gal (3.0 L) / Power Supply: AC 100 V / Power Consumption: 700 W\n[Warranty]\n(VE Flask Construction) Uses electricity, so you can save energy\nSteam-free: Reduces the risk of burns accidentally being exposed to high temperature steam, so you can place it anywhere\n(Hot water measurement function) The pot automatically measures the amount of water you pour and displays on the LCD display, making it convenient for cooking and instant cooking\nCordless Air Hot Water Supply: The electric hot water supply can be poured with just one finger when charging and in places where there is no power supply, you can pour hot water with the air supply even if you remove the plug Show More › See more product details\nBrand Tiger\nCapacity 3 Liters\nColor white\nSpecial Feature Boil Dry Protection, Double Wall, Keep Warm Function, Programmable, Steamless Design\nVoltage 100 Volts (AC)",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Tiger Thermos PIM-N300 WW Electric Pot, Steamless, Made in Japan, Energy Saving VE Heat Retention, Safe Construction, With Hot Water Measurement Function, Milk, Baby Shower, Matte White",
+          "url": "https://www.amazon.co.jp/dp/B0FDFN26VN?th=1",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "タイガー PIP-G220-WE",
-      "asin": "B0F8HNNVZ2",
-      "brand": "タイガー",
+      "amazon_title": "タイガー魔法瓶(TIGER) 電気ポット 蒸気レス 節電VE保温 7つの安心・安全構造 とく子さん 2.2L ブラウン PIW-A220T",
+      "asin": "B08CDPTC1H",
+      "brand": "Tiger",
+      "discovery_axis_id": "steam_placement",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/31ns73ZAVIL._AC_SY300_SX300_QL70_ML2_.jpg",
-      "matched_comparison_axes": [],
+      "image_url": "https://m.media-amazon.com/images/I/71rvxGp2bKL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B0F8HNNVZ2",
+      "product_id": "AMZ-B08CDPTC1H",
+      "provisional": false,
+      "rating": 4.3,
       "ref": "p4",
-      "search_key": "タイガー魔法瓶 電気ポット 蒸気レス 節電VE保温 安全構造 と",
-      "selection_score": 0.325,
-      "selected_variant": {
-        "color": "urban white",
-        "capacity": "2.2L",
-        "pack_count": 1
-      }
+      "review_count": 219,
+      "search_key": "Tiger タイガー魔法瓶(TIGER) 電気ポット 蒸気レス 節電VE保温",
+      "selection_reason": "蒸気キャッチャー構造で蒸気を外に出さない2.2Lモデル。置ける幅や高さを確認しながら、家族の日常用に蒸気レスのポットを選びたい人に向く。通電時の電動給湯に加え、プラグを外した場所でもエアー給湯を使える。[タイガーの製品情報](https://www.tiger-corporation.com/ja/jpn/product/kettle-pot/piw-a/)",
+      "sources": [
+        {
+          "brand": "Tiger",
+          "excerpt": "Tiger Magic Flask (TIGER) Electric Kettle Steamless Energy-Efficient VE Thermal 7 Safety and Security Structures Tokosan 2.2 L (2.32 Qt.) Brown PIW-A220T\nAbout this item\nWide/Red Ball Water Quantity Meter\nColor: Brown\nCapacity: 2.2L\nWith power on, you can easily use the \"lever-type electric hot water\" with just one finger, and in places without power, you can use \"air hot water\". Choose between two methods of hot water supply with the \"electric & air hot water\"\nBoth boiling and keeping warm save energy with the \"Energy Saving Course\" › See more product details\nBrand Tiger\nCapacity 2.2 Liters\nMaterial Polypropylene (PP)\nColor Braun\nSpecial Feature Steamless construction\nVisit the タイガー魔法瓶(TIGER) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Tiger Magic Flask (TIGER) Electric Kettle Steamless Energy-Efficient VE Thermal 7 Safety and Security Structures Tokosan 2.2 L (2.32 Qt.) Brown PIW-A220T",
+          "url": "https://www.amazon.co.jp/dp/B08CDPTC1H?th=1",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "アイリスオーヤマ IAHD-230-C",
-      "asin": "B0CQT6R33K",
-      "brand": "アイリスオーヤマ",
+      "amazon_title": "象印マホービン 電動ポット 4.0L メタリックブラウン CD-WU40-TM",
+      "asin": "B01I8RJ9KI",
+      "brand": "Zojirushi",
+      "discovery_axis_id": "dispensing_controls",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/41JeAgmyVYL._AC_SL1000_.jpg",
-      "matched_comparison_axes": [],
+      "image_url": "https://m.media-amazon.com/images/I/41L4Ed7Zc3L._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B0CQT6R33K",
+      "product_id": "AMZ-B01I8RJ9KI",
+      "provisional": false,
+      "rating": 4.3,
       "ref": "p5",
-      "search_key": "電気給湯器 電気温水器 110V/1500W 小型電気温水器15",
-      "selection_score": 0.325,
-      "selected_variant": {
-        "color": "ivory",
-        "capacity": "3.0L",
-        "pack_count": 1
-      }
+      "review_count": 347,
+      "search_key": "Zojirushi 象印マホービン 電動ポット 4.0L メタリックブラウン CD-",
+      "selection_reason": "4.0Lを家族で共有する場面で、注がないと約10秒後にかかる自動給湯ロックが操作上の要点になる。傾斜時と転倒時の湯もれを抑える構造も備えるため、頻繁に給湯する家庭でロックの戻り方と本体の扱い方を併せて考えられる。[象印の製品情報](https://www.zojirushi.co.jp/syohin/pot_kettle/pot/cd-wu/)",
+      "sources": [
+        {
+          "brand": "Zojirushi",
+          "excerpt": "Zojirushi Mahobin Electric Pot, 1.2 gal (4.0 L), Metallic Brown, CD-WU40-TM\nAbout this item\nSize (Width x Depth x Height): 8.3 x 11.2 x 13.4 inches (21 x 28.5 x 34 cm)\nMaterials: Printed steel plate; Inner container: Stainless steel + Fluorine coating\nPower Supply: 100 V\n700W\n1 Year\nCountry of Manufacture: China\nPower cord: 1 m (3.3 ft)\n防止 overheating, remove chlorine boiling, fluorine-coated inner container, automatic hot water lock, structure to prevent boiling over and leakage from tipping over\nBody weight (kg): 2.5 Show More › See more product details\nBrand Zojirushi\nCapacity 4 Liters\nMaterial Stainless Steel\nColor Braun\nSpecial Feature Removes chalks",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Zojirushi Mahobin Electric Pot, 1.2 gal (4.0 L), Metallic Brown, CD-WU40-TM",
+          "url": "https://www.amazon.co.jp/dp/B01I8RJ9KI?th=1",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "COMFEE' CKW-22SW07A1 2.2L ホワイト",
-      "asin": "B0CPSYKWZ4",
-      "brand": "COMFEE'",
+      "amazon_title": "タイガー魔法瓶(TIGER) マイコン電気ポット 保温機能 節電タイマー 2.2L アーバンホワイト PDR-G220-WU",
+      "asin": "B00OR1E6QW",
+      "brand": "Tiger",
+      "discovery_axis_id": "dispensing_controls",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51qfZM+K3aL._AC_SL1500_.jpg",
-      "matched_comparison_axes": [
-        "temperature_control"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/71r0dB7uf8L._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B0CPSYKWZ4",
+      "product_id": "AMZ-B00OR1E6QW",
+      "provisional": false,
+      "rating": 4.3,
       "ref": "p6",
-      "search_key": "COMFEE' 電気ポット 電動お湯ポット 2.2L マイコン",
-      "selection_score": 0.325,
-      "selected_variant": {
-        "model": "CKW-22SW07A1",
-        "colour": "ホワイト",
-        "capacity": "2.2L",
-        "pack_count": 1
-      }
+      "review_count": 6042,
+      "search_key": "Tiger タイガー魔法瓶(TIGER) マイコン電気ポット 保温機能 節電",
+      "selection_reason": "2.2Lで幅約21.2cm、高さ約25.4cmの電動ポット。家族が使う卓上で、転倒時の流水を抑える機能を重視しつつ、98・90・70℃の保温温度も使い分けたい場合に向く。転倒流水防止機能は販売情報に記載されているが、湯もれを完全に防ぐものとして扱わない。[タイガーの仕様](https://www.tiger-corporation.com/ja/jpn/product/kettle-pot/pdr-g/)・[販売情報](https://ymall.jp/store/usakuma/b00or1e6qw-20251027/)",
+      "sources": [
+        {
+          "brand": "Tiger",
+          "excerpt": "Tiger Thermos (TIGER) Microcomputer Electric Kettle with Keep-Warm Function, Power-Saving Timer, 2.2L Urban White PDR-G220-WU\nAbout this item\nBoiling with approximately 1/3 less steam, energy-saving steam reduction\nSave money on your electricity bill with this energy-saving timer\nPrevents dry cooking and water flow protection in case of tipping\nProduct Size (W x D x H): 8.3 x 11.0 x 10.0 inches (21.2 x 28.0 x 25.4 cm);\nBody: Polypropylene, Container: Stainless steel (fluorine coating) Power supply: AC 100V\nPower supply: AC 100 V, Warranty period: 1 year, Rated capacity: 2.2 LITER\nPower consumption during boiling: 700W * Daily power consumption: 1.05 kWh/day * Annual power consumption: 382 kWh/year\nFeatures: 1. Energy-saving timer for cost-effective electricity usage 2. Selectable keep-warm temperatures at 98°C, 90°C, and 70°C 3. Steam quantity reduced by approximately 1/3 with energy-saving boiling › See more product details\nBrand Tiger\nCapacity 2.2 Liters\nMaterial Stainless Steel\nColor white\nSpecial Feature Keep Warm Function\nVisit the タイガー魔法瓶(TIGER) Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Tiger Thermos (TIGER) Microcomputer Electric Kettle with Keep-Warm Function, Power-Saving Timer, 2.2L Urban White PDR-G220-WU",
+          "url": "https://www.amazon.co.jp/dp/B00OR1E6QW?th=1",
+          "verified": true
+        }
+      ]
     }
   ],
   "selection": {
-    "brand_count": 0,
-    "comparison_axes_covered": [
-      "dispensing_and_care",
-      "temperature_control"
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B074FWJPCY",
+            "reason": "家族で使う定番の2.2Lポットとして、98・90・80・70℃とまほうびん保温を選べる。お茶や調理で湯温を使い分けたい家庭に向く。沸とうさせず設定温度まで沸かす機能を選んだ場合は蒸気も抑えられるが、メーカーはカルキとばしが不要な水での使用を勧めている。[象印の製品情報](https://www.zojirushi.co.jp/syohin/electronic-pot/cvga/)"
+          },
+          {
+            "asin": "B00LTCU8DC",
+            "reason": "約2.15LのVE保温ポットで、2時間以上使わないと保温温度を自動で5℃下げる省エネコースがある。朝食後から夕食前まで給湯の間隔が空く家庭に合う。沸とう時の蒸気量はメーカー比較で約半分に抑える仕様。[タイガーの製品情報](https://www.tiger-corporation.com/ja/jpn/static/product/waterheater/PIL-A.html)"
+          }
+        ]
+      },
+      {
+        "axis_id": "steam_placement",
+        "products": [
+          {
+            "asin": "B0FDFN26VN",
+            "reason": "蒸気を水滴にして内容器へ戻す蒸気レス構造を備えた3.0Lモデル。上部の結露が気になる限られた置き場所で、家族分のお湯を用意したい場合に向く。注いだ量を液晶に表示するため、料理で必要量を量りながら給湯できる。[タイガーの製品情報](https://www.tiger-corporation.com/ja/jpn/product/kettle-pot/pim-n/)"
+          },
+          {
+            "asin": "B08CDPTC1H",
+            "reason": "蒸気キャッチャー構造で蒸気を外に出さない2.2Lモデル。置ける幅や高さを確認しながら、家族の日常用に蒸気レスのポットを選びたい人に向く。通電時の電動給湯に加え、プラグを外した場所でもエアー給湯を使える。[タイガーの製品情報](https://www.tiger-corporation.com/ja/jpn/product/kettle-pot/piw-a/)"
+          }
+        ]
+      },
+      {
+        "axis_id": "dispensing_controls",
+        "products": [
+          {
+            "asin": "B01I8RJ9KI",
+            "reason": "4.0Lを家族で共有する場面で、注がないと約10秒後にかかる自動給湯ロックが操作上の要点になる。傾斜時と転倒時の湯もれを抑える構造も備えるため、頻繁に給湯する家庭でロックの戻り方と本体の扱い方を併せて考えられる。[象印の製品情報](https://www.zojirushi.co.jp/syohin/pot_kettle/pot/cd-wu/)"
+          },
+          {
+            "asin": "B00OR1E6QW",
+            "reason": "2.2Lで幅約21.2cm、高さ約25.4cmの電動ポット。家族が使う卓上で、転倒時の流水を抑える機能を重視しつつ、98・90・70℃の保温温度も使い分けたい場合に向く。転倒流水防止機能は販売情報に記載されているが、湯もれを完全に防ぐものとして扱わない。[タイガーの仕様](https://www.tiger-corporation.com/ja/jpn/product/kettle-pot/pdr-g/)・[販売情報](https://ymall.jp/store/usakuma/b00or1e6qw-20251027/)"
+          }
+        ]
+      }
     ],
+    "brand_count": 2,
+    "candidate_count": 24,
+    "comparison_axes_covered": [],
     "content_duplicates_removed": [],
-    "price_used_as_constraint_only": true
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": []
   },
   "slug": "electric-hot-water-dispensing-pots"
 }
