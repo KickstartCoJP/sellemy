@@ -1,151 +1,412 @@
 {
-  "slug": "fitness-smartwatches-6-picks",
-  "category": "gadget",
-  "canonical_url": "https://www.sellemy.jp/article/gadget/fitness-smartwatches-6-picks.html",
-  "eyecatch_image": "https://www.sellemy.jp/img/fitness-smartwatches-6-picks/fitness-smartwatches-6-picks.png",
   "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/gadget/fitness-smartwatches-6-picks.html",
+  "category": "gadget",
   "comparison_axes": [
     {
-      "id": "health",
-      "label": "健康管理機能",
+      "id": "popular",
       "keywords": [
-        "心拍計測",
-        "睡眠計測",
-        "GPS"
+        "人気"
+      ],
+      "label": "人気・定番の基準"
+    },
+    {
+      "id": "daily_walk",
+      "keywords": [
+        "歩行記録",
+        "屋外ウォーキング",
+        "活動量"
+      ],
+      "label": "通勤や散歩を運動の記録につなげる"
+    },
+    {
+      "id": "short_indoor_workout",
+      "keywords": [
+        "室内運動",
+        "ワークアウト記録",
+        "短時間運動"
+      ],
+      "label": "家での短時間運動を記録する"
+    }
+  ],
+  "eyecatch_image": "https://www.sellemy.jp/img/fitness-smartwatches-6-picks/fitness-smartwatches-6-picks.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "5d653f4110be6e6d87baaa3fec1bb10edf6c69437a785d5c30cfff96ecbf6c9a",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 29092,
+      "listing_identity_citations_repaired": [
+        "p3",
+        "p4",
+        "p6"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 1904,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 861,
+      "session_id": "01a21cfa-26b2-7c61-87e0-2285cef26352",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "手首のFitbitデバイスが振動して、ウォーキングを促してくれます。"
+            }
+          ],
+          "identity_key": "Fitbit Inspire 3",
+          "identity_quote": "Fitbit Inspire 3 フィットネストラッカ―",
+          "reason": "Fitbit Inspire 3として識別できる。運動リマインダーを根拠に、日常の活動を記録し始めたい読者へ紹介できる。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "it can be used for yoga, fitness, walking, running"
+            }
+          ],
+          "identity_key": "GARMIN vivoactive 5",
+          "identity_quote": "GARMIN vivoactive 5 Fitness GPS Watch",
+          "reason": "GARMIN vivoactive 5として識別できる。掲載情報にウォーキングとヨガへの対応があり、複数の運動を一台で記録したい読者へ紹介できる。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "daily_walk",
+              "quote": "Automatically saves travel routes, distance, speed, and consumed calories"
+            }
+          ],
+          "identity_key": "【2026年コスパ最高 GPS内蔵&水泳防水】LEEWIN V2スマートウォッチ 1ATM防水 スポーツウォッチ 運動軌跡記録 iPhone／アンドロイド対応 Smart Watc",
+          "identity_quote": "【2026年コスパ最高 GPS内蔵&水泳防水】LEEWIN V2スマートウォッチ 1ATM防水 スポーツウォッチ 運動軌跡記録 iPhone／アンドロイド対応 Smart Watch 丸型 腕時計 7日間のバッテリー持ち 24時間睡眠管理 Bluetooth5.3通話 メッセージ通知 100+運動モード AI文字盤 ChatGPT 音声アシスタント 歩数計 天気 スマホ探す (ブラック)",
+          "reason": "掲載情報のブランド名LEEWINと型番Vigor V2から識別できる。屋外歩行の経路と距離の記録を根拠に、散歩の記録を残したい読者へ紹介できる。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "daily_walk",
+              "quote": "専用アプリ「VeryFit」と接続すれば、歩数、運動、睡眠などの記録を日ごとにまとめて確認できます。"
+            }
+          ],
+          "identity_key": "スマートウォッチ【2026年新登場・性能進化モデル】iPhone対応 アンドロイド対応 1.8インチ大画面 Bluetooth5.3通話 Line/SMS/Gmailメッセージ通知",
+          "identity_quote": "スマートウォッチ【2026年新登場・性能進化モデル】iPhone対応 アンドロイド対応 1.8インチ大画面 Bluetooth5.3通話 Line/SMS/Gmailメッセージ通知 Smart Watch 睡眠記録・健康管理 スポーツウォッチ 100種類の運動モード 腕時計 IP68防水 薄型軽量 多種類文字盤 バンド交換可能 天気予報 多機能スマートウォッチ レディース メンズ",
+          "reason": "掲載情報のブランド名とタイトルにある画面・通話機能で識別できる。ウォーキングモードと日ごとの歩数確認を根拠に、普段の歩行を振り返る用途で紹介できる。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "short_indoor_workout",
+              "quote": "Weighing about 14g and with a thickness of about 8.99mm"
+            },
+            {
+              "axis_id": "short_indoor_workout",
+              "quote": "Equipped with over 100 types of workout modes"
+            }
+          ],
+          "identity_key": "HUAWEI Band 9",
+          "identity_quote": "HUAWEI Band 9 Smart Watch",
+          "reason": "HUAWEI Band 9として識別できる。ワークアウトモードと軽量なバンド型という掲載情報から、日中の短い運動を記録する用途で紹介できる。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "short_indoor_workout",
+              "quote": "Preset over 100 different exercise modes for walking, running, cycling, yoga, swimming, strength training, climbing, etc."
+            }
+          ],
+          "identity_key": "GRV スマートウォッチ Bluetooth5.4通話 1.83インチ画面 1500nits高輝度  iPhone/Android対応",
+          "identity_quote": "GRV スマートウォッチ Bluetooth5.4通話 1.83インチ画面 1500nits高輝度  iPhone/Android対応",
+          "reason": "掲載タイトルのブランド名と画面・通話機能で識別できる。ヨガと筋力トレーニングの運動モードが記載され、家での運動記録という切り口に合う。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "根拠情報のみの審査。6商品は掲載情報からそれぞれ識別でき、スマートウォッチまたはフィットネストラッカーとして企画に適合する。3つの紹介切り口に各2商品を割り当てられ、同一商品の色・数量違いなどを示す積極的な根拠はない。記事がないため記事専用の判定項目はfalseとした。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
+  "products": [
+    {
+      "amazon_title": "Fitbit Inspire 3 フィットネストラッカ― ミッドナイトゼン／ブラック スマートウォッチ/iPhone対応/アンドロイド対応/最大10日間のバッテリー/心拍計/睡眠スコア [日本正規品]",
+      "asin": "B0B75RC9C3",
+      "brand": "Fitbit",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61JL0ccPltL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0B75RC9C3",
+      "provisional": false,
+      "rating": 4.0,
+      "ref": "p1",
+      "review_count": 9094,
+      "search_key": "Fitbit Inspire 3 フィットネストラッカ― ミッドナイトゼン／ブ",
+      "selection_reason": "仕事中に座り続けがちな人が、歩くきっかけを作れる一台。商品説明には、手首の振動でウォーキングを促す運動リマインダーと、運動・睡眠の記録を確認できるFitbitアプリが明記されている。まとまった運動時間を決める前に、日常の小さな活動から始めたい読者に向く。",
+      "sources": [
+        {
+          "brand": "Fitbit",
+          "excerpt": "Fitbit Inspire 3 フィットネストラッカ― ミッドナイトゼン／ブラック スマートウォッチ/iPhone対応/アンドロイド対応/最大10日間のバッテリー/心拍計/睡眠スコア [日本正規品]\nこの商品について\n【最大10日間のバッテリーライフ】バッテリーは1週間以上持続。【高/低心拍数の通知】安静時の心拍数が通常の範囲から外れた場合に、Fitbitがお知らせします。※本商品は医療機器ではありません。\n【運動リマインダー】長時間座りっぱなしになっていませんか？手首のFitbitデバイスが振動して、ウォーキングを促してくれます。【着信、テキストメッセージの受信、アプリ通知を表示】Fitbitデバイスを一目見るだけで、最新情報を確認。スマートフォンを取り出す必要がないため、今ここに集中できます。スマートフォンが近くにある場合に利用可能です。\n【月経に関する記録】Inspire 3とFitbitアプリを利用して、生理や症状の記録、排卵時期の推定、月経周期パターンの把握ができます。【スマートアラーム】最適な睡眠ステージでFitbitデバイスが振動。すっきりとした気分で目覚めて、一日を始められます。\n【Fitbitアプリ】エクササイズから、睡眠や食事の記録、健康指標の確認、ワークアウト動画や瞑想コンテンツの利用まですべてアプリで可能です。\n【アクセサリー＆クロックフェイス（文字盤）】ベルトや文字盤を交換して、常に新鮮な気分で楽しめます。クリップホルダーを使えば、Inspire 3をシャツやポケット、タンクトップに装着できます。アクセサリーは別売りです。 › もっと見る\nオペレーティングシステム Android 10以降, iOS 15以降\n特徴 時間表示, 目覚まし時計\n接続技術 USB\nワイヤレス通信規格 ブルートゥース\n電池の種類 リチウムポリマー\nFitbitのストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Fitbit Inspire 3 フィットネストラッカ― ミッドナイトゼン／ブラック スマートウォッチ/iPhone対応/アンドロイド対応/最大10日間のバッテリー/心拍計/睡眠スコア [日本正規品]",
+          "url": "https://www.amazon.co.jp/dp/B0B75RC9C3",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "battery",
-      "label": "バッテリー持続時間",
-      "keywords": [
-        "長時間駆動",
-        "急速充電"
+      "amazon_title": "GARMIN(ガーミン) vivoactive 5 フィットネスGPSウォッチ 睡眠管理/フィットネス年齢/お昼寝検出/Suica対応/心拍センサー/ストレスレベル測定/iOS・アンドロイド対応 / 11日間のバッテリー持続時間 / スマートウォッチ【日本正規品】",
+      "asin": "B0CJFQ7RTX",
+      "brand": "",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/51qujw7WBVL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0CJFQ7RTX",
+      "provisional": false,
+      "rating": 4.1,
+      "ref": "p2",
+      "review_count": 959,
+      "search_key": "GARMIN(ガーミン) vivoactive 5 フィットネス",
+      "selection_reason": "散歩も家でのヨガも一台に記録したい人に向く。商品説明には、内蔵GPSとウォーキング・ヨガ・フィットネスへの対応に加え、心拍数や日々の体力の目安を示すBody Battery機能が記載されている。運動の種類とその日の状態を見ながら習慣を作れる定番の選択肢。",
+      "sources": [
+        {
+          "brand": "",
+          "excerpt": "GARMIN vivoactive 5 Fitness GPS Watch - Sleep Management/Fitness Age/Nap Detection/Suica Compatible/Heart Rate Sensor/Stress Level Measurement/iOS and Android Compatible / 11 Days Battery Life\nAbout this item\nAbout Manufacturer Support: Products purchased from a cart that is sold by the seller and sender source on Amazon.co.jp. Contact each seller to support this product sold by other sellers\nBattery run time on a single charge: Smart watch mode: 11 days; GPS mode: Approx. 21 hours; Compatible wrist circumference: 4.9 - 7.5 inches (125 - 190 mm); Display size: 1.2 inches (30.4 mm); Display: Display: It is displayed with a high-resolution AMOLED display\nIf your Garmin product is charged with the charging cable included with your Garmin product or a charging cable other than the original Garmin charging cable that is purchased separately, it is not covered by the warranty. Thank you for\nSleep Management Function: Sleep monitoring with sleep coach: Not only does you know the \"sleep score\" which scores 100 quality of sleep, but you will receive the right amount of sleep you need to improve your score and the advice that you need to improve your sleep\nKnow yourself with a smart watch: Equipped with a BodyBattery function that can measure your heart rate, stress and daily physical strength. Nap time can be detected and reflects body battery recovery. Become healthier and smarter by knowing yourself\nMulti-sport function: Since it has a built-in GPS, it can be used for yoga, fitness, walking, running, golf, mountain climbing, marine sports, and snow sports without a smartphone. Equipped with functions that are compatible with a variety of sports\n(Smart Watch for Everyone) Equipped with a wheelchair mode, so you can record your exercise and workout according to your wheelchair › See more product details\nOperating System Android 5.0, iOS 9.0\nSpecial Feature Activity Tracker, GPS, Heart Rate Monitor, Pedometer, Sleep Monitor\nConnectivity Technology Bluetooth, USB, Wi-Fi\nWireless Communication Standard Bluetooth\nBattery Cell Composition Lithium Polymer",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "GARMIN vivoactive 5 Fitness GPS Watch - Sleep Management/Fitness Age/Nap Detection/Suica Compatible/Heart Rate Sensor/Stress Level Measurement/iOS and Android Compatible / 11 Days Battery Life",
+          "url": "https://www.amazon.co.jp/dp/B0CJFQ7RTX?th=1",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "design",
-      "label": "装着感・デザイン",
-      "keywords": [
-        "軽量",
-        "バンド交換"
+      "amazon_title": "【2026年コスパ最高 GPS内蔵&水泳防水】LEEWIN V2スマートウォッチ 1ATM防水 スポーツウォッチ 運動軌跡記録 iPhone／アンドロイド対応 Smart Watch 丸型 腕時計 7日間のバッテリー持ち 24時間睡眠管理 Bluetooth5.3通話 メッセージ通知 100+運動モード AI文字盤 ChatGPT 音声アシスタント 歩数計 天気 スマホ探す (ブラック)",
+      "asin": "B0GK1JFTSC",
+      "brand": "LEEWIN",
+      "discovery_axis_id": "daily_walk",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71ecw-uP46L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0GK1JFTSC",
+      "provisional": false,
+      "rating": 4.3,
+      "ref": "p3",
+      "review_count": 131,
+      "search_key": "LEEWIN V2スマートウォッチ 1ATM防水 スポーツウォッチ 運動軌跡記",
+      "selection_reason": "通勤路や近所の散歩コースを、歩いた距離だけでなく経路として残したい人に向く。商品説明によるとGPSを内蔵し、スマートフォンを持たずにウォーキングのルート・距離・速度を記録でき、運動後はアプリの地図で軌跡を確認できる。いつもの道を歩くことに記録する楽しみを加えられる。",
+      "sources": [
+        {
+          "brand": "LEEWIN",
+          "excerpt": "V2 Smartwatch, 2026 Best Cost Performance, Built-in GPS & Swimming Waterproof), Sports Watch, Exercise Track, Compatible with iPhone/Android, Smart Watch, Round Watch, 7-Day Battery\nAbout this item\n【High-precision GPS built-in and motion trajectory tracking】 Equipped with a high-precision GPS chip, it supports GNSS with 5 satellite positioning systems (GPS, GLONASS, GALILEO, BDS, QZSS) to achieve accurate positioning You can accurately record outdoor activities such as running, walking, and cycling without carrying your smartphone Automatically saves travel routes, distance, speed, and consumed calories, and by syncing with the app after exercise, you can visualize detailed tracks on the map Visualize your daily exercise results, whether it is for commuting runs, weekend workouts, or walks\n(100+ Exercise Modes, 1 ATM, Water Resistant to 32.8 ft (10 m): Supports over 100 sports modes, making it ideal for all types of sports activities, including running, cycling, yoga, and mountain climbing You can accurately record your steps, distance, calories burned, heart rate, pace, and more to ensure you understand your training results IP68 waterproof design, designed to withstand temporary submersion up to 10m depth, suitable for everyday waterproof scenarios such as hand washing and rain/sweat ※Not suitable for swimming, high temperature, steam, seawater, sauna, diving, etc\n【Sleep Management & 24-Hour Health Monitoring】It records light sleep, deep sleep, and REM sleep in detail and displays them as easy-to-read reports in the app Automatically organizes and analyzes daily, weekly, and monthly sleep data to provide personalized sleep improvement advice Helps develop a better sleep habit It also features a silent vibration alarm, allowing you to wake up naturally without worrying about disturbing others around you Furthermore, it adopts the VC30F high-precision heart rate sensor and the Italian ST sensor + gomore algorithm to measure heart rate, blood oxygen, and stress levels in real-time, providing solid support for daily health management\n【Charges in 2 hours, lasts over a week】With a full charge, it can be used for up to about one week No need to charge frequently, even if you use various functions, such as notifications, calls, exercises, and sleep management It also supports rapid charging that can be fully charged in about 2 hours Even with a short charging time, it can be used for a long time, so you can feel secure when you are out or during a busy day By simply charging during your free morning moments, you can secure a full day's worth of power, eliminating the hassle of carrying a charger multiple times during travel\n【Bluetooth 5.3 Call & Message Notification】Equipped with the latest Bluetooth 5.3, significantly improving connection stability and communication speed You can make calls directly from your hand without taking out your smartphone Moreover, SNS notifications such as LINE, X, and Instagram are displayed in real-time, so you won't miss important calls even during driving or cooking Supports smooth communication from everyday life to business settings\nHigh Definition Display & Multifunctional AI Dial: The 360 x 360 high-resolution display ensures a clear display The text and data are clearly visible, and touch operation is smooth and comfortable Equipped with more than 100 different dials, you can freely switch to suit the occasion or mood Additionally, it supports the generation of original dials with AI voice You can set photos taken with your smartphone directly as wallpaper, creating a unique design to make your daily life more enjoyable\n【Reliable Support・1+1 Year Warranty】LEEWIN products come with a 12-month warranty from the date of purchase If you activate the warranty within 90 days of purchase, the warranty period will be extended by an additional year, providing up to 2 years of peace of mind support If you have any questions or issues while using it, please feel free to contact customer support at any time We will respond quickly so you can use it with confidence Additionally, you can refer to videos on how to use the watch and connection procedures on YouTube (@LEEWIN-JP) › See more product details\nSpecial Feature GPS\nConnectivity Technology Bluetooth\nShape Round\nBrand LEEWIN\nModel Name Vigor V2\nVisit the LEEWIN Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "V2 Smartwatch, 2026 Best Cost Performance, Built-in GPS & Swimming Waterproof), Sports Watch, Exercise Track, Compatible with iPhone/Android, Smart Watch, Round Watch, 7-Day Battery",
+          "url": "https://www.amazon.co.jp/dp/B0GK1JFTSC",
+          "verified": true
+        }
       ]
     },
     {
-      "id": "compatibility",
-      "label": "スマホ連携・対応OS",
-      "keywords": [
-        "iPhone対応",
-        "Android対応"
+      "amazon_title": "スマートウォッチ【2026年新登場・性能進化モデル】iPhone対応 アンドロイド対応 1.8インチ大画面 Bluetooth5.3通話 Line/SMS/Gmailメッセージ通知 Smart Watch 睡眠記録・健康管理 スポーツウォッチ 100種類の運動モード 腕時計 IP68防水 薄型軽量 多種類文字盤 バンド交換可能 天気予報 多機能スマートウォッチ レディース メンズ",
+      "asin": "B0HMR8ZNSS",
+      "brand": "Boqurich",
+      "discovery_axis_id": "daily_walk",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71AwUOn9m0L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0HMR8ZNSS",
+      "provisional": false,
+      "rating": 4.5,
+      "ref": "p4",
+      "review_count": 256,
+      "search_key": "Boqurich スマートウォッチ iPhone対応 アンドロイド対応 1.8イン",
+      "selection_reason": "通勤や買い物で歩いた分を、日々の活動として振り返りたい人に向く。商品説明にはウォーキングモードと、歩数・運動・睡眠を専用アプリ「VeryFit」で日ごとにまとめて確認できることが記載されている。短い移動を重ねる生活でも、毎日の歩行を見返しやすい。",
+      "sources": [
+        {
+          "brand": "Boqurich",
+          "excerpt": "スマートウォッチ【2026年新登場・性能進化モデル】iPhone対応 アンドロイド対応 1.8インチ大画面 Bluetooth5.3通話 Line/SMS/Gmailメッセージ通知 Smart Watch 睡眠記録・健康管理 スポーツウォッチ 100種類の運動モード 腕時計 IP68防水 薄型軽量 多種類文字盤 バンド交換可能 天気予報 多機能スマートウォッチ レディース メンズ\nAbout this item\n✅【Bluetooth5.3通話・スマートSNS通知】 先進のBluetooth 5.3チップを搭載し、接続の安定性と低遅延・省電力を高い次元で両立。高性能マイクとスピーカーを内蔵し、スマートフォンを取り出すことなく、クリアな音質で着信通知・通話の受信・発信・履歴確認まで手首の上でスムーズに操作できます。LINE、SMS、Gmailに加え、InstagramやFacebookなど主要アプリの通知をリアルタイムにバイブでお知らせ。満員電車での通勤時、移動中、あるいはワークアウト時も重要なメッセージを逃さず、忙しい毎日のコミュニケーションをしっかりサポートします。iOS・Android両対応。\n✅【100+運動モード・睡眠記録】 ウォーキング、ランニング、サイクリング、ヨガなど幅広いエクササイズモードに対応しており、屋外でのアクティビティからジムでのワークアウトまで、あらゆるシーンで活躍します。消費カロリー、移動距離、運動時間などのデータを表示することで、日々の活動状況を明確に把握でき、モチベーションの維持にも役立ちます。さらに、睡眠の記録機能も備えており、睡眠データをチェックして休息のパターンを確認することも可能です。日々の生活習慣を整える際や、健康的なライフスタイルを目指す際など、あらゆる場面で優しく寄り添い、あなたをしっかりとサポートする頼もしいパートナーとなるでしょう。\n✅【IP68防水設計・長時間ロングバッテリー】 最高水準のIP68防水防塵性能をクリア。突然の雨に見舞われるアウトドアや、激しいトレーニングによる汗、毎日の手洗いや洗顔でも、時計を取り外す手間なくそのままアクティブに着用できます（※お風呂・サウナ・温泉での使用はお控えください）。300mAhの高密度大容量バッテリーを搭載し、わずか2.5時間のフル充電で最長7日間の連続駆動、長時間の待機が可能。毎日の充電ストレスから解放され、数日間の出張や旅行先でもバッテリー残量を気にせず快適に使えます。\n✅【1.8インチ大画面・200種類以上の文字盤】1.8インチの高精細ディスプレイを採用し、着信やメッセージ通知、文字、アイコンを明るく見やすく表示します。滑らかなタッチ操作で各機能を直感的に使えるため、スマートウォッチを初めて使用する方にも簡単に操作できます。専用アプリ「VeryFit」から、シンプル、ビジネス、スポーツなど200種類以上の文字盤を自由に選択可能。その日の気分や服装に合わせて、アクセサリー感覚でデザインを切り替えられます。さらに、ペット、家族、風景などお気に入りの写真を背景に設定できるDIY文字盤にも対応。毎日の手元を、自分らしいオリジナルデザインで彩ります。\n✅【スマホ連携も簡単・充実のアフターサポート】Android 8.0以上、iOS 9.0以上、Bluetooth 5.3以上のスマートフォンに対応。専用アプリ「VeryFit」と接続すれば、歩数、運動、睡眠などの記録を日ごとにまとめて確認できます。初めてスマートウォッチを使用する方にも分かりやすい日本語表示に対応しています。さらに、購入日から1年間のメーカー保証付き。商品に関するご質問や使用中のトラブルがございましたら、カスタマーサポートまでお問い合わせください。24時間以内に対応いたします。 › See more product details\nOperating System Android/スマートフォン, iOSスマートフォン\nSpecial Feature 1.8インチHDディスプレイ・200+文字盤カスタマイズ, 100種類以上のスポーツモード・IP68防水, Bluetooth 5.3通話・スマート通知対応, 睡眠記録・健康管理\nBattery Capacity 300 Milliamp Hours\nConnectivity Technology Bluetooth\nWireless Communication Standard Bluetooth\nBrand: Boqurich",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "スマートウォッチ【2026年新登場・性能進化モデル】iPhone対応 アンドロイド対応 1.8インチ大画面 Bluetooth5.3通話 Line/SMS/Gmailメッセージ通知 Smart Watch 睡眠記録・健康管理 スポーツウォッチ 100種類の運動モード 腕時計 IP68防水 薄型軽量 多種類文字盤 バンド交換可能 天気予報 多機能スマートウォッチ レディース メンズ",
+          "url": "https://www.amazon.co.jp/dp/B0HMR8ZNSS?th=1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "HUAWEI Band 9 スマートウォッチ フルオロエラストマー素材ベルト 高精度健康モニタリング 自動輝度調整 1.47インチAMOLEDディスプレイ 超狭ベゼル 薄型軽量 9軸センサー 睡眠中呼吸乱れ検知 急速充電 最長2週間持続バッテリー バンド交換可能 各種通知機能 100種類のワークアウトモード iOS/Android対応 ブラック",
+      "asin": "B0CXDK7GLQ",
+      "brand": "",
+      "discovery_axis_id": "short_indoor_workout",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61WCtge38tL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0CXDK7GLQ",
+      "provisional": false,
+      "rating": 4.1,
+      "ref": "p5",
+      "review_count": 861,
+      "search_key": "HUAWEI Band 9 スマートウォッチ フルオロエラストマ",
+      "selection_reason": "家事の合間に思い立って運動する人に向く。商品説明には100種類以上のワークアウトモード、運動中の心拍計測、約5分の充電で最大2日使える急速充電が記載されている。約14gの薄いバンド型なので、日中着けたまま短い運動を記録したい読者が検討しやすい。",
+      "sources": [
+        {
+          "brand": "",
+          "excerpt": "HUAWEI Band 9 Smart Watch, Fluoroelastomers Material Band, High Precision Health Monitoring, Automatic Brightness Adjustment, 1.47 inch AMOLED Display, Ultra-Narrow Bezel, Slim and Lightweight, 9-Axis\nAbout this item\n【Overwhelming Comfort】Newly adopted skin-friendly fluoroelastomer material for the band: Weighing about 14g and with a thickness of about 8.99mm, the extremely thin and lightweight band fits any situation, whether you are working out, at work, or just walking\n【Supports Scientific Sleep Management】Monitors heart rate, blood oxygen levels, breathing rate, and breathing disturbances during sleep, providing high-precision sleep monitoring from falling asleep to waking up\nHigh-precision health monitoring: Thanks to the new HUAWEI TruSeen 5.5, performance and stability are enhanced with new HUAWEI TruSeen 5.5 technology, even during running or exercising Therefore, you can accurately measure your heart rate even while running or working out\nFast Charging, Long Battery & Automatic Brightness Adjustment: With approximately 5 minutes of charging, it can be used for up to 2 days, and takes about 45 minutes to fully charge Can be used for up to 2 weeks *When using AOD (Always On Display mode): about 3 days The improved ambient light sensor detects the surrounding brightness and automatically adjusts the display brightness to a comfortable level\n【100 Types of Workout Modes】Evaluates your workouts (running ability index, maximum oxygen intake, heart rate recovery, recovery time, etc.) Equipped with over 100 types of workout modes It automatically detects four types of workouts In addition, the newly developed 9-axis sensor and revolutionary algorithm allows you to identify four strokes with high precision, and monitor your heart rate, stroke, lap count, and SWOLF in real time › See more product details\nSpecial Feature Phone Call, Time Display\nConnectivity Technology Bluetooth\nBattery Cell Composition Lithium Ion\nShape Rectangular\nScreen Size 1.47 Inches",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "HUAWEI Band 9 Smart Watch, Fluoroelastomers Material Band, High Precision Health Monitoring, Automatic Brightness Adjustment, 1.47 inch AMOLED Display, Ultra-Narrow Bezel, Slim and Lightweight, 9-Axis",
+          "url": "https://www.amazon.co.jp/dp/B0CXDK7GLQ",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "GRV スマートウォッチ Bluetooth5.4通話 1.83インチ画面 1500nits高輝度  iPhone/Android対応",
+      "asin": "B0DPQHPM4C",
+      "brand": "",
+      "discovery_axis_id": "short_indoor_workout",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61BBKT-HiVL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0DPQHPM4C",
+      "provisional": false,
+      "rating": 4.0,
+      "ref": "p6",
+      "review_count": 1706,
+      "search_key": "GRV スマートウォッチ Bluetooth5.4通話 1.83",
+      "selection_reason": "家でヨガや筋力トレーニングを少しずつ試したい人に向く。商品説明には両方の運動モードが明記され、運動時間・心拍数・消費カロリーを記録し、専用アプリで日々の達成状況をグラフで見られる。数分の運動も記録として残し、続けた日を振り返れる。",
+      "sources": [
+        {
+          "brand": "",
+          "excerpt": "GRV Smart Watch, Bluetooth 5.4 Calls, 1.83-inch Screen, 1500 nits\nAbout this item\nIndustry-leading Bluetooth 5.4 call function & various app notifications: Equipped with the latest standard Bluetooth 5.4 chip, which greatly improves transmission stability, connection distance, and power saving performance compared to conventional 5.0/5.3. Once paired, it will be complete with your wrist for incoming calls, answering calls, rejecting calls, and checking your call history. It supports quick reply using stylus text only when connecting to an Android smartphone when using a call function. You can communicate smartly between work or while traveling by bicycle. Vibrates notifications from major apps such as LINE, X (formerly Twitter), Instagram, Facebook, TikTok, SMS, Gmail, WhatsApp, etc. When the notification arrives, the screen will automatically light up and display the content, so just raise your hand to see it\n(1.83-inch Super Large Screen & 1500-nits Ultra Bright Display) Equipped with a large 1.83-inch full touch screen, the ultra-wide color gamut reproduces the colors of the photos and dials. The high resolution of 320 x 386 ensures that even small letters are crisp and outlined. The best feature is an amazing 1500 nits peak brightness, which reduces the stress of being dark and hard to see even outdoors in the middle of summer with strong direct sunlight. The actual product may differ slightly from the images depending on the lighting of your surrounding environment and the environment. Lightweight and thin body with smooth curved lines and a sophisticated design that is comfortable to wear for a long time\n(Over 100 Sports Modes & 24-Hour Health Monitoring) Preset over 100 different exercise modes for walking, running, cycling, yoga, swimming, strength training, climbing, etc. The algorithms suitable for each competition accurately record your exercise time, heart rate, and calories burned. You can use the dedicated app to give you a graph of your daily achievements. In addition, the high-precision optical sensor automatically measures your heart rate for 24 hours continuously and vibrates to alert you when abnormalities exceed the setting. Automatically analyzes your sleep status at night, and graphs deep sleep, light sleep, and REM sleep in minutes. The habit of waking up in the morning and checking your sleep score immediately promotes a natural and healthy living rhythm. This product is not a medical device. The measurement data is for health management reference\n(More than 350 Types of Free Dials & Photo Customization Function) The exclusive GloryFit app has a lineup of over 350 dials, ranging from business classical designs to sports digital and pop and cute illustrations. All available for free downloads. Swap them to fit your outfits and moods, and watch them feel as fresh as you enjoy a different watch every day. You can also create your own dial by taking pictures inside your smartphone. A cute sleeping face for your pet, a memorial piece of family members, and a wonderful view from your travel destination, it will be a unique and unique watch in the world every time you look at your wrist\nMulti-functional, supports all occasions in your daily life: Comes with a variety of convenient tools for everyday comfort. Weather forecast that allows you to check weather, temperature, UV intensity and humidity from the same day to 3 days, music playback control (play/paus/forward/volume adjustment), alarm clock with up to 8 settings (daily/weekday/weekend/designated day notification), sound or vibration), timer, calculator, stopwatch, smartphone finder, and voice assistant. . Bright white screen flashlight, 4-digit password lock to protect your personal information All the tools you need to make life more convenient › See more product details\nOperating System Android Wear 1.0\nMemory Storage Capacity 128 MB\nSpecial Feature Activity Tracker, Cycle Tracking, Daily Workout Memory, SOS Button, Sedentary Reminder\nBattery Capacity 300 Milliamp Hours\nConnectivity Technology Bluetooth\nVisit the GRV Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "GRV Smart Watch, Bluetooth 5.4 Calls, 1.83-inch Screen, 1500 nits",
+          "url": "https://www.amazon.co.jp/dp/B0DPQHPM4C?th=1",
+          "verified": true
+        }
       ]
     }
   ],
   "selection": {
-    "comparison_axes_covered": [
-      "compatibility",
-      "design",
-      "health"
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B0B75RC9C3",
+            "reason": "仕事中に座り続けがちな人が、歩くきっかけを作れる一台。商品説明には、手首の振動でウォーキングを促す運動リマインダーと、運動・睡眠の記録を確認できるFitbitアプリが明記されている。まとまった運動時間を決める前に、日常の小さな活動から始めたい読者に向く。"
+          },
+          {
+            "asin": "B0CJFQ7RTX",
+            "reason": "散歩も家でのヨガも一台に記録したい人に向く。商品説明には、内蔵GPSとウォーキング・ヨガ・フィットネスへの対応に加え、心拍数や日々の体力の目安を示すBody Battery機能が記載されている。運動の種類とその日の状態を見ながら習慣を作れる定番の選択肢。"
+          }
+        ]
+      },
+      {
+        "axis_id": "daily_walk",
+        "products": [
+          {
+            "asin": "B0GK1JFTSC",
+            "reason": "通勤路や近所の散歩コースを、歩いた距離だけでなく経路として残したい人に向く。商品説明によるとGPSを内蔵し、スマートフォンを持たずにウォーキングのルート・距離・速度を記録でき、運動後はアプリの地図で軌跡を確認できる。いつもの道を歩くことに記録する楽しみを加えられる。"
+          },
+          {
+            "asin": "B0HMR8ZNSS",
+            "reason": "通勤や買い物で歩いた分を、日々の活動として振り返りたい人に向く。商品説明にはウォーキングモードと、歩数・運動・睡眠を専用アプリ「VeryFit」で日ごとにまとめて確認できることが記載されている。短い移動を重ねる生活でも、毎日の歩行を見返しやすい。"
+          }
+        ]
+      },
+      {
+        "axis_id": "short_indoor_workout",
+        "products": [
+          {
+            "asin": "B0CXDK7GLQ",
+            "reason": "家事の合間に思い立って運動する人に向く。商品説明には100種類以上のワークアウトモード、運動中の心拍計測、約5分の充電で最大2日使える急速充電が記載されている。約14gの薄いバンド型なので、日中着けたまま短い運動を記録したい読者が検討しやすい。"
+          },
+          {
+            "asin": "B0DPQHPM4C",
+            "reason": "家でヨガや筋力トレーニングを少しずつ試したい人に向く。商品説明には両方の運動モードが明記され、運動時間・心拍数・消費カロリーを記録し、専用アプリで日々の達成状況をグラフで見られる。数分の運動も記録として残し、続けた日を振り返れる。"
+          }
+        ]
+      }
     ],
-    "brand_count": 5,
-    "price_used_as_constraint_only": true
+    "brand_count": 3,
+    "candidate_count": 25,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [
+      {
+        "asin": "B0B75RC9C3",
+        "check_items": {
+          "color_design_only": "UNKNOWN",
+          "function_structure_difference": "UNKNOWN",
+          "independent_comparison_value": "UNKNOWN",
+          "manufacturer_brand_relation": "UNKNOWN",
+          "sales_packaging_only": "UNKNOWN",
+          "same_product_body": "FAIL",
+          "series_generation_difference": "UNKNOWN",
+          "size_capacity_difference": "UNKNOWN"
+        },
+        "duplicate_of_asin": "B0B75RC9C3",
+        "reason": "same_asin"
+      },
+      {
+        "asin": "B0CJFQ7RTX",
+        "check_items": {
+          "color_design_only": "UNKNOWN",
+          "function_structure_difference": "UNKNOWN",
+          "independent_comparison_value": "UNKNOWN",
+          "manufacturer_brand_relation": "UNKNOWN",
+          "sales_packaging_only": "UNKNOWN",
+          "same_product_body": "FAIL",
+          "series_generation_difference": "UNKNOWN",
+          "size_capacity_difference": "UNKNOWN"
+        },
+        "duplicate_of_asin": "B0CJFQ7RTX",
+        "reason": "same_asin"
+      }
+    ],
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": [
+      "B0B75RC9C3",
+      "B0CJFQ7RTX"
+    ],
+    "targeted_replacement": true
   },
-  "products": [
-    {
-      "ref": "p1",
-      "product_id": "AMZ-B0F5WNVHH7",
-      "asin": "B0F5WNVHH7",
-      "amazon_title": "HUAWEI WATCH FIT 4 スマートウォッチ 薄型軽量 1.82インチ大画面 アウトドアに適した気圧計と測位システム 通知 フィットネス ヘルストラッカー 情緒測定 10日間ロングバッテリー iOS/Android対応 ブラック",
-      "brand": "HUAWEI",
-      "image_url": "https://m.media-amazon.com/images/I/61onpakWBtL._AC_SL1500_.jpg",
-      "observed_price": 2799,
-      "discovery_score": 1,
-      "selection_score": 0.855,
-      "matched_comparison_axes": [
-        "compatibility",
-        "design"
-      ],
-      "search_key": "MTDKA スマートウォッチ iPhone対応&アンドロイド対応 1.9イン",
-      "model": "HUAWEI WATCH FIT 4 SYA-B09",
-      "selected_variant": "ブラック、本体+標準ベルト1台"
-    },
-    {
-      "ref": "p2",
-      "product_id": "AMZ-B0B75WWC8F",
-      "asin": "B0B75WWC8F",
-      "amazon_title": "【Suica対応】Fitbit Sense 2スマートウォッチ ブルーミスト／ソフトゴールド iPhone対応/アンドロイド対応/6日間以上のバッテリーライフ/Alexa搭載/GPS搭載/心拍計/睡眠スコア/ストレス計測 [日本正規品]",
-      "brand": "Fitbit",
-      "image_url": "https://m.media-amazon.com/images/I/61l33xpEvWL._AC_SL1500_.jpg",
-      "observed_price": 29520,
-      "discovery_score": 1,
-      "selection_score": 0.675,
-      "matched_comparison_axes": [
-        "compatibility",
-        "health"
-      ],
-      "search_key": "Fitbit(フィットビット) Fitbit Sense 2スマートウォッチ ブルーミスト／ソフ",
-      "model": "Fitbit Sense 2 FB521GLBM-FRCJK",
-      "selected_variant": "ブルーミスト/ソフトゴールド、S/Lベルト同梱1台"
-    },
-    {
-      "ref": "p3",
-      "product_id": "AMZ-B0GQL9JZS7",
-      "asin": "B0GQL9JZS7",
-      "amazon_title": "Xiaomi Redmi Watch 6 シャオミ スマートウォッチ GPS Bluetooth通話 着信通知 防水 24日間持続 iPhone対応",
-      "brand": "Xiaomi",
-      "image_url": "https://m.media-amazon.com/images/I/51wq3kz2jRL._AC_SL1500_.jpg",
-      "observed_price": 8456,
-      "discovery_score": 1,
-      "selection_score": 0.445,
-      "matched_comparison_axes": [],
-      "search_key": "EGQINR 多機能スマートウォッチ 通話機能付き IP67防水 睡眠管理 ス",
-      "model": "Xiaomi Redmi Watch 6 M2523W1",
-      "selected_variant": "オブシディアンブラック、普通（単品1台）、充電線・取扱説明書付き"
-    },
-    {
-      "ref": "p4",
-      "product_id": "AMZ-B0FN6Z6CXL",
-      "asin": "B0FN6Z6CXL",
-      "amazon_title": "ドコモ純正 スマートウォッチ01 ブラック",
-      "brand": "NTTドコモ",
-      "image_url": "https://m.media-amazon.com/images/I/61AQ9Wt-cLL._AC_SL1500_.jpg",
-      "observed_price": 5998,
-      "discovery_score": 1,
-      "selection_score": 0.445,
-      "matched_comparison_axes": [],
-      "search_key": "エヌテイテイドコモ ドコモ純正 スマートウォッチ01 ブラック",
-      "model": "ドコモ スマートウォッチ01 AYB57872",
-      "selected_variant": "ブラック、1台、専用充電ケーブル付"
-    },
-    {
-      "ref": "p5",
-      "product_id": "AMZ-B0F1XCKZYW",
-      "asin": "B0F1XCKZYW",
-      "amazon_title": "Amazfit Bip 6 スマートウォッチ 2000nit高輝度 GPS内蔵 オフラインマップ AIによる音声操作と睡眠/運動管理 心拍 睡眠 ストレス 健康管理 140+スポーツモード ナビゲーション ルートインポート 14日間バッテリー持続 (ブラック)",
-      "brand": "Amazfit",
-      "image_url": "https://m.media-amazon.com/images/I/71DrI8BZFTL._AC_SL1500_.jpg",
-      "observed_price": 5780,
-      "discovery_score": 1,
-      "selection_score": 0.445,
-      "matched_comparison_axes": [
-        "compatibility"
-      ],
-      "search_key": "RUIMEN スマートウォッチ D1 iPhone/Android対応 通話機",
-      "model": "Amazfit Bip 6",
-      "selected_variant": "ブラック、1台・シリコンバンド"
-    },
-    {
-      "ref": "p6",
-      "product_id": "AMZ-B0F2HW8828",
-      "asin": "B0F2HW8828",
-      "amazon_title": "GARMIN(ガーミン) vivoactive 6 Black/SlateフィットネスGPSウォッチ AMOLEDディスプレイ 36gの軽量設計 睡眠管理/フィットネス年齢/お昼寝検出/Suica対応/心拍センサー/ストレスレベル測定/iOS・アンドロイド対応 / 11日間のバッテリー持続時間 / スマートウォッチ 【日本正規品】",
-      "brand": "Garmin",
-      "image_url": "https://m.media-amazon.com/images/I/61IUOGJ8oPL._AC_SL1500_.jpg",
-      "observed_price": 58800,
-      "discovery_score": 1,
-      "selection_score": 0.375,
-      "matched_comparison_axes": [],
-      "search_key": "GARMIN(ガーミン)Venu 4 スマートウォッチ AMOL",
-      "model": "Garmin vívoactive 6 010-02985-30",
-      "selected_variant": "Black/Slate、ブラック、国内正規品、1台・充電ケーブル・取扱説明書"
-    }
-  ]
+  "slug": "fitness-smartwatches-6-picks"
 }
