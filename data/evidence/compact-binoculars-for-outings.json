@@ -4,139 +4,349 @@
   "category": "gadget",
   "comparison_axes": [
     {
-      "id": "optical_view",
+      "id": "popular",
       "keywords": [
-        "倍率",
-        "対物レンズ有効径",
+        "人気"
+      ],
+      "label": "人気・定番の基準"
+    },
+    {
+      "id": "carry_light",
+      "keywords": [
+        "本体重量",
+        "収納時寸法",
+        "折りたたみ構造"
+      ],
+      "label": "散策中も持ち歩きやすい携帯性"
+    },
+    {
+      "id": "find_subject",
+      "keywords": [
         "実視界",
-        "最短合焦距離"
+        "見掛け視界",
+        "倍率"
       ],
-      "label": "倍率と見える範囲"
-    },
-    {
-      "id": "eye_fit",
-      "keywords": [
-        "眼幅調整範囲",
-        "アイレリーフ",
-        "目当て",
-        "視度調整"
-      ],
-      "label": "眼幅と眼鏡使用への対応"
-    },
-    {
-      "id": "carrying_conditions",
-      "keywords": [
-        "重量",
-        "折りたたみ寸法",
-        "防水仕様",
-        "ストラップ",
-        "ケース"
-      ],
-      "label": "持ち運びと屋外使用の条件"
+      "label": "景色や動く対象を捉えやすい視野"
     }
   ],
   "eyecatch_image": "https://www.sellemy.jp/img/compact-binoculars-for-outings/compact-binoculars-for-outings.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "e295e38e80cc5a5f7ce3a23ce9e082dbeab07ebdffa8a8cd6b7fb87ef53da89f",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 25501,
+      "listing_identity_citations_repaired": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 1776,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 640,
+      "session_id": "01a21a71-f009-7440-95e1-c90fd7ff16b9",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "双眼鏡 ライブ用 オペラグラス【業界新開発・高透過率・ 軽量 コンパクト】ディテールを明瞭に捉えます 生活防水 子供プレゼント/女性適用 ライブ/オペラ/野鳥観察/登山/アウトドア",
+          "identity_quote": "双眼鏡 ライブ用 オペラグラス【業界新開発・高透過率・ 軽量 コンパクト】ディテールを明瞭に捉えます 生活防水 子供プレゼント/女性適用 ライブ/オペラ/野鳥観察/登山/アウトドア/花火を観賞する/旅行 ネックストラップ 収納バッグ付き 日本語説明書(ホワイト)",
+          "reason": "提示された商品掲載タイトルから双眼鏡であることと付属品を確認でき、外出時の使用を紹介できる。人気順位や見え方は裏付けられていない。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "双眼鏡 ライブ用 15倍 オペラグラス 防振【BAK4光学レンズ&FMC多層コーティング】望遠鏡 首掛け 超軽量 コンパクト 近視対応 防水防塵 眼幅調整可能 バードウォッチング/",
+          "identity_quote": "双眼鏡 ライブ用 15倍 オペラグラス 防振【BAK4光学レンズ&FMC多層コーティング】望遠鏡 首掛け 超軽量 コンパクト 近視対応 防水防塵 眼幅調整可能 バードウォッチング/スポーツ観戦用/コンサート用/野鳥観察/卒業コンサート 日本語取扱説明書",
+          "reason": "提示された商品掲載タイトルで15倍の双眼鏡と用途を確認できる。防振性能や人気順位の実証はない。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "carry_light",
+              "quote": "Weighs only 4.9 oz (140 g)."
+            }
+          ],
+          "identity_key": "【Amazon.co.jp限定】ケンコー(Kenko) 双眼鏡 10倍 ホワイト ライブ用 スポーツ観戦 ドーム 超軽量140g 1年間メーカー保証",
+          "identity_quote": "【Amazon.co.jp限定】ケンコー(Kenko) 双眼鏡 10倍 ホワイト ライブ用 スポーツ観戦 ドーム 超軽量140g 1年間メーカー保証",
+          "reason": "確認済みの商品掲載情報が重量、専用ケース、着脱式ストラップを明記しており、散策時の携帯性を具体的に紹介できる。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "carry_light",
+              "quote": "本体重量が192g"
+            },
+            {
+              "axis_id": "carry_light",
+              "quote": "折りたたむとさらにコンパクトになり、バッグに楽々収納できます。"
+            }
+          ],
+          "identity_key": "双眼鏡 ライブ用 オペラグラス【業界新開発・高透過率・ 超軽量】観劇 スポーツ観戦用 コンサート 双眼鏡 20mm口径 FMC 酔いにくい 倍率調整可能 目幅調整 超広視野 生活防",
+          "identity_quote": "双眼鏡 ライブ用 オペラグラス【業界新開発・高透過率・ 超軽量】観劇 スポーツ観戦用 コンサート 双眼鏡 20mm口径 FMC 酔いにくい 倍率調整可能 目幅調整 超広視野 生活防水 子供/女性適用 ライブ/オペラ/野鳥観察/登山/アウトドア/旅行 ネックストラップ 収納バッグ付き 日本語説明書(ブラック)",
+          "reason": "確認済みの商品掲載情報が重量と折りたたみ構造を示し、携帯性の切り口に合う。p1との重複は確定していない。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "find_subject",
+              "quote": "双眼鏡 10倍 オペラグラス"
+            }
+          ],
+          "identity_key": "【眼科医ｘ工学博士が開発】 双眼鏡 10倍 オペラグラス ライブ コンサート スポーツ観戦 超軽量140g 高倍率 【信頼の日本ブランド】 Ruxis",
+          "identity_quote": "【眼科医ｘ工学博士が開発】 双眼鏡 10倍 オペラグラス ライブ コンサート スポーツ観戦 超軽量140g 高倍率 【信頼の日本ブランド】 Ruxis",
+          "reason": "提示された商品掲載タイトルでRuxisの10倍双眼鏡と確認できる。選定理由にある視野約65度と検証資料は提示されておらず、記事の事実には使えない。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "find_subject",
+              "quote": "双眼鏡 ライブ用 20倍 オペラグラス"
+            }
+          ],
+          "identity_key": "双眼鏡 ライブ用 20倍 オペラグラス 【超軽量·お子様や女性に最適】スポーツ観戦用 双眼鏡 コンサート 防振 軽量 小型 防水 倍率調整可能 ライブ/オペラ/観劇/スポーツ観戦/",
+          "identity_quote": "双眼鏡 ライブ用 20倍 オペラグラス 【超軽量·お子様や女性に最適】スポーツ観戦用 双眼鏡 コンサート 防振 軽量 小型 防水 倍率調整可能 ライブ/オペラ/観劇/スポーツ観戦/登山/旅行/アウトドア/野鳥観察 ネックストラップ 収納ケース付き 日本語説明書",
+          "reason": "提示された商品掲載タイトルが20倍の双眼鏡であることを示し、遠くの対象を見る用途で紹介できる。実視界や防振性能は実証されていない。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "提示された6件はいずれも外出向け双眼鏡として識別・紹介でき、指定された3つの切り口に各2件を配置できる。p1とp4の同一本体性は未確定であり、重複を示す積極的な根拠はない。人気順位、実視界、見え方など、提示資料で裏付けられない主張は採用しない。記事は未提出のため記事専用項目はfalseとした。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
+  },
   "products": [
     {
-      "amazon_title": "Nikon ACULON T02 8×21 グリーン",
-      "asin": "B0822J8BNZ",
-      "brand": "ニコン",
+      "amazon_title": "双眼鏡 ライブ用 オペラグラス【業界新開発・高透過率・ 軽量 コンパクト】ディテールを明瞭に捉えます 生活防水 子供プレゼント/女性適用 ライブ/オペラ/野鳥観察/登山/アウトドア/花火を観賞する/旅行 ネックストラップ 収納バッグ付き 日本語説明書(ホワイト)",
+      "asin": "B0FXWR9KYK",
+      "brand": "",
+      "discovery_axis_id": "popular",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71rmFtWjO6L._AC_SL1500_.jpg",
-      "matched_comparison_axes": [
-        "carrying_conditions",
-        "eye_fit",
-        "optical_view"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/61MPDe2uSUL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B0822J8BNZ",
+      "product_id": "AMZ-B0FXWR9KYK",
+      "provisional": true,
+      "rating": 4.1,
       "ref": "p1",
-      "search_key": "クロスロード 双眼鏡 白 プレミアムホワイト コンサート ライブ",
-      "selection_score": 0.84,
-      "selected_variant": "8倍・21mm・グリーン・本体1台"
+      "review_count": 577,
+      "search_key": "双眼鏡 ライブ用 オペラグラス ディテールを明瞭に捉えます 生活",
+      "selection_reason": "展望台と屋内の観劇を一台で楽しみたい人に向く。商品名には生活防水に加え、ネックストラップと収納バッグの付属が明記されており、日帰りの外出に持ち出す定番の使い方を想像しやすい。人気の順位や実視界は確認できていない。",
+      "sources": []
     },
     {
-      "amazon_title": "PENTAX Papilio II 6.5×21 62001",
-      "asin": "B00S5XU4DW",
-      "brand": "PENTAX",
+      "amazon_title": "双眼鏡 ライブ用 15倍 オペラグラス 防振【BAK4光学レンズ&FMC多層コーティング】望遠鏡 首掛け 超軽量 コンパクト 近視対応 防水防塵 眼幅調整可能 バードウォッチング/スポーツ観戦用/コンサート用/野鳥観察/卒業コンサート 日本語取扱説明書",
+      "asin": "B0GJS172ZB",
+      "brand": "",
+      "discovery_axis_id": "popular",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/51GNF13b9lL._AC_SL1200_.jpg",
-      "matched_comparison_axes": [],
+      "image_url": "https://m.media-amazon.com/images/I/71humdkID2L._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B00S5XU4DW",
+      "product_id": "AMZ-B0GJS172ZB",
+      "provisional": true,
+      "rating": 4.5,
       "ref": "p2",
-      "search_key": "双眼鏡 オペラグラス ライブ用 20倍 コンパクト 双眼鏡 FM",
-      "selection_score": 0.3,
-      "selected_variant": "6.5倍・21mm・グレー・62001本体1台"
+      "review_count": 629,
+      "search_key": "双眼鏡 ライブ用 15倍 オペラグラス 防振 望遠鏡 首掛け 超",
+      "selection_reason": "公園で鳥を眺めるほか、スポーツ観戦にも持参したい人に向く。販売情報には15倍、BAK4プリズム、FMC多層コーティング、眼幅調整と首掛けへの対応が記されている。見え方と持ち歩き方を検討する基準になる一台だが、実視界と人気順位は確認できていない。",
+      "sources": []
     },
     {
-      "amazon_title": "Vixen アトレックII HR8×25WP 14721-2 ブラック",
-      "asin": "B00QF3XYM2",
-      "brand": "ビクセン",
+      "amazon_title": "【Amazon.co.jp限定】ケンコー(Kenko) 双眼鏡 10倍 ホワイト ライブ用 スポーツ観戦 ドーム 超軽量140g 1年間メーカー保証",
+      "asin": "B08L69JY5G",
+      "brand": "Kenko",
+      "discovery_axis_id": "carry_light",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/71nOnMiJ5tL._AC_SL1500_.jpg",
-      "matched_comparison_axes": [],
+      "image_url": "https://m.media-amazon.com/images/I/51qFKsNUhtL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B00QF3XYM2",
+      "product_id": "AMZ-B08L69JY5G",
+      "provisional": false,
+      "rating": 4.1,
       "ref": "p3",
-      "search_key": "双眼鏡 ライブ用 オペラグラス 15倍 Costand 望遠鏡",
-      "selection_score": 0.3,
-      "selected_variant": "8倍・25mm・ブラック・14721-2本体1台"
+      "review_count": 268,
+      "search_key": "Kenko ケンコー(Kenko) 双眼鏡 10倍 ホワイト ライブ用 スポ",
+      "selection_reason": "散策の荷物に双眼鏡を一つ加え、景色が気になったときに取り出したい人に向く。商品説明で本体140g、専用ケース、着脱できるストラップ、指一本で操作する中央のピント調整を確認できる。バッグに収めて歩き、展望先で素早く構える使い方に具体性がある。",
+      "sources": [
+        {
+          "brand": "Kenko",
+          "excerpt": "(Amazon.co.jp Exclusive) Kenko Binoculars, 10x White, For Live Activities, Sports, Dome Lightweight, 4.9 oz (140 g)\nAbout this item\n(Includes Eyecups to Reduce Shake) You can see it in a regular view, but if you install the eyecup you can fix the binoculars to your eyes and reduce shaking. In addition, you can block out the flare of vision caused by stray light by blocking the light between your eyes and the binocular\nMulti-coating: Multi-coating (multi-layer coating) increases light transmittance. Prevents loss of light transmission, so you can enjoy a bright and clear image\n(Ultra lightweight and compact design) Weighs only 4.9 oz (140 g). An ultra-compact design that is easy to grip even for women. The strap is one-touch detachable, easy to install and remove. You can store it in the dedicated case and store it in your bag and carry it compactly to concerts, sporting events, travel, camping, school performances, piano recitals, and more\n(Never miss the moment you want to see) The focus adjustment uses a center focus. Easy and quick focusing adjustments with just one finger. You can observe the moment you want to look at it without missing an important scene\nChoose from colors and magnification: 3 colors of cool matte black, clean white and stylish silver with a slightly gold finish. Available in 8x easier to see and 10x for those who want to look slightly larger › See more product details\nBrand Kenko\nAge Range (Description) Adult\nSpecial Feature Built-In Dioptric Correction, Focus Knob, Lightweight, One-Hand Focus\nObjective Lens Diameter 21 Millimeters\nMagnification Maximum 10 x",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "(Amazon.co.jp Exclusive) Kenko Binoculars, 10x White, For Live Activities, Sports, Dome Lightweight, 4.9 oz (140 g)",
+          "url": "https://www.amazon.co.jp/dp/B08L69JY5G?th=1",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "Kowa BD25-8GR 8×25",
-      "asin": "B001H0FHXM",
-      "brand": "コーワ",
+      "amazon_title": "双眼鏡 ライブ用 オペラグラス【業界新開発・高透過率・ 超軽量】観劇 スポーツ観戦用 コンサート 双眼鏡 20mm口径 FMC 酔いにくい 倍率調整可能 目幅調整 超広視野 生活防水 子供/女性適用 ライブ/オペラ/野鳥観察/登山/アウトドア/旅行 ネックストラップ 収納バッグ付き 日本語説明書(ブラック)",
+      "asin": "B0DRFG5J47",
+      "brand": "xunbida",
+      "discovery_axis_id": "carry_light",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/811jBH-qgAL._AC_SL1500_.jpg",
-      "matched_comparison_axes": [],
+      "image_url": "https://m.media-amazon.com/images/I/719CAdvrO-L._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B001H0FHXM",
+      "product_id": "AMZ-B0DRFG5J47",
+      "provisional": false,
+      "rating": 4.1,
       "ref": "p4",
-      "search_key": "双眼鏡 軽量で持ち運びやすい ブラックとグリーンのシンプルでおし",
-      "selection_score": 0.3,
-      "selected_variant": "8倍・25mm・グリーン・BD25-8GR本体1台"
+      "review_count": 577,
+      "search_key": "xunbida 双眼鏡 ライブ用 オペラグラス 観劇 スポーツ観戦用 コンサート",
+      "selection_reason": "歩いている間はバッグにしまい、鳥や遠景を見つけた場所で取り出したい人に向く。商品説明には本体192g、折りたたみ構造、ネックストラップと収納ケースの付属が記されている。収納時の寸法は示されていないが、折りたためる点が日帰り散策で選ぶ理由になる。",
+      "sources": [
+        {
+          "brand": "xunbida",
+          "excerpt": "双眼鏡 ライブ用 オペラグラス【業界新開発・高透過率・ 超軽量】観劇 スポーツ観戦用 コンサート 双眼鏡 20mm口径 FMC 酔いにくい 倍率調整可能 目幅調整 超広視野 生活防水 子供/女性適用 ライブ/オペラ/野鳥観察/登山/アウトドア/旅行 ネックストラップ 収納バッグ付き 日本語説明書(ブラック)\nこの商品について\n業界新開発の双眼鏡＆高倍率：xunbida双眼鏡持続的な改良と倍率限界の突破により、快適な視認性と高の体験を提供するために、最新の高倍率の双眼鏡が誕生しました。ターゲットを見つけてキャプチャするのが簡単になり。 これからは臨場感も感動も見逃しません。\nオペラグラス ライブ用＆優れた光学構造：双眼鏡のプリズム構造はポロプリズムタイプを採用し、FMCブロードバンド緑膜とBAK4プリズムの組み合わせで、高い集光力と明るい画像を実現しています。双眼鏡の対物レンズ直径は20mmで、超広視野、高透過率、光の損失を抑え、暗くなりがちな屋内会場でも、臨場感あふれる明るい視界を楽しむことができます。\n双眼鏡 ライブ用 ドーム＆超軽量＆コンパクト：オペラグラスは片手で持ちやすいコンパクトなデザインで、本体重量が192g、手持ちはiPhone16より軽くて 。長時間使用しても疲れません。コンパクトでカバンや首掛けて持ち歩いても邪魔になりません。折りたたむとさらにコンパクトになり、バッグに楽々収納できます。お子様や女性に最適。コンサートやスポーツ観戦、ライブ、オペラ、観劇、野鳥観察などに最適です。\n生活防水＆使用方法：この製品は生活防水レベルに達することができます。雪や雨が本体に降っても、乾いたきれいなポリエステルまたは両面フランネルで拭き取るだけで、その後の使用に影響しません。32mmから75mmまでの目幅は調整可能で。たった3つのステップで臨場感あふれる画像を楽しめます。①目幅を調整 → ②ピントリングを調整 → ③視度調整リングを回す。自分に合った目幅に調整できます。\n双眼鏡 スポーツ観戦用＆豪華付属品：専用収納ケースがついているので保管時の埃対策も心配不要です。 レンズ拭き用クロス，紋や油汚れをクリーナー液を使わずに一拭きスッキリ! ネックストラップは、ハイキング、ビーチ、コンサート、スポーツ観戦などの際に安全に持ち運ぶことができます。双眼鏡には365日品質保証付き、ご不明な点がございましたらお気軽にお問い合わせください。24時間オンラインカスタマーサービスがあり。 › もっと見る\nブランド xunbida\n対象年齢 子ども、大人\n特徴 広角デザイン, 折りたたみ可能, 軽量, 高倍率\n対物レンズの直径 20 ミリメートル\n最大倍率 20\nxunbidaのストアを表示",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "双眼鏡 ライブ用 オペラグラス【業界新開発・高透過率・ 超軽量】観劇 スポーツ観戦用 コンサート 双眼鏡 20mm口径 FMC 酔いにくい 倍率調整可能 目幅調整 超広視野 生活防水 子供/女性適用 ライブ/オペラ/野鳥観察/登山/アウトドア/旅行 ネックストラップ 収納バッグ付き 日本語説明書(ブラック)",
+          "url": "https://www.amazon.co.jp/dp/B0DRFG5J47",
+          "verified": true
+        }
+      ]
     },
     {
-      "amazon_title": "Kenko ウルトラビューM compact 8×20 ホワイト 012895",
-      "asin": "B0BYH4FZRD",
-      "brand": "ケンコー",
+      "amazon_title": "【眼科医ｘ工学博士が開発】 双眼鏡 10倍 オペラグラス ライブ コンサート スポーツ観戦 超軽量140g 高倍率 【信頼の日本ブランド】 Ruxis",
+      "asin": "B0G2B5RFQF",
+      "brand": "",
+      "discovery_axis_id": "find_subject",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61jMDzzA3vL._AC_SL1500_.jpg",
-      "matched_comparison_axes": [
-        "optical_view"
-      ],
+      "image_url": "https://m.media-amazon.com/images/I/619UjZlj4gL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B0BYH4FZRD",
+      "product_id": "AMZ-B0G2B5RFQF",
+      "provisional": true,
+      "rating": 4.5,
       "ref": "p5",
-      "search_key": "双眼鏡 ライブ用 オペラグラス 望遠鏡 防振 15倍高倍率 軽量",
-      "selection_score": 0.3,
-      "selected_variant": "8倍・20mm・ホワイト・012895本体1台"
+      "review_count": 453,
+      "search_key": "双眼鏡 10倍 オペラグラス ライブ コンサート スポーツ観戦",
+      "selection_reason": "公園で位置が変わる鳥や、展望台から眺める景色を視界に入れたい人に向く。メーカーの販売ページは10倍・視野約65度と記し、見掛け視界の検証資料もある。視野の広がりを数値で検討できる点が、この切り口での採用理由になる。",
+      "sources": []
     },
     {
-      "amazon_title": "OM SYSTEM 8×21 RC II WP ブルー",
-      "asin": "B0FDPW4WRV",
-      "brand": "OM SYSTEM",
+      "amazon_title": "双眼鏡 ライブ用 20倍 オペラグラス 【超軽量·お子様や女性に最適】スポーツ観戦用 双眼鏡 コンサート 防振 軽量 小型 防水 倍率調整可能 ライブ/オペラ/観劇/スポーツ観戦/登山/旅行/アウトドア/野鳥観察 ネックストラップ 収納ケース付き 日本語説明書",
+      "asin": "B0FYY4VHTW",
+      "brand": "",
+      "discovery_axis_id": "find_subject",
       "discovery_score": 1,
-      "image_url": "https://m.media-amazon.com/images/I/61cYkjtIAIL._AC_SL1500_.jpg",
-      "matched_comparison_axes": [],
+      "image_url": "https://m.media-amazon.com/images/I/61i6-6vj-gL._AC_UL320_.jpg",
       "observed_price": null,
-      "product_id": "AMZ-B0FDPW4WRV",
+      "product_id": "AMZ-B0FYY4VHTW",
+      "provisional": true,
+      "rating": 4.7,
       "ref": "p6",
-      "search_key": "15x25双眼鏡超軽量小型目幅調整可能な鳥観察/スポーツ観戦用",
-      "selection_score": 0.3,
-      "selected_variant": "8倍・21mm・ブルー・本体1台"
+      "review_count": 1657,
+      "search_key": "双眼鏡 ライブ用 20倍 オペラグラス スポーツ観戦用 双眼鏡",
+      "selection_reason": "対岸の建物など、位置を肉眼で確かめた遠くの対象を拡大して見たい人に向く。商品名には20倍と倍率調整可能との記載がある一方、実視界の角度は確認できない。高倍率では対象を視界に入れ続けにくくなるため、動く鳥を追う用途より、遠景を捉えて観察する用途を想定した選定。",
+      "sources": []
     }
   ],
   "selection": {
-    "brand_count": 0,
-    "comparison_axes_covered": [
-      "carrying_conditions",
-      "eye_fit",
-      "optical_view"
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B0FXWR9KYK",
+            "reason": "展望台と屋内の観劇を一台で楽しみたい人に向く。商品名には生活防水に加え、ネックストラップと収納バッグの付属が明記されており、日帰りの外出に持ち出す定番の使い方を想像しやすい。人気の順位や実視界は確認できていない。"
+          },
+          {
+            "asin": "B0GJS172ZB",
+            "reason": "公園で鳥を眺めるほか、スポーツ観戦にも持参したい人に向く。販売情報には15倍、BAK4プリズム、FMC多層コーティング、眼幅調整と首掛けへの対応が記されている。見え方と持ち歩き方を検討する基準になる一台だが、実視界と人気順位は確認できていない。"
+          }
+        ]
+      },
+      {
+        "axis_id": "carry_light",
+        "products": [
+          {
+            "asin": "B08L69JY5G",
+            "reason": "散策の荷物に双眼鏡を一つ加え、景色が気になったときに取り出したい人に向く。商品説明で本体140g、専用ケース、着脱できるストラップ、指一本で操作する中央のピント調整を確認できる。バッグに収めて歩き、展望先で素早く構える使い方に具体性がある。"
+          },
+          {
+            "asin": "B0DRFG5J47",
+            "reason": "歩いている間はバッグにしまい、鳥や遠景を見つけた場所で取り出したい人に向く。商品説明には本体192g、折りたたみ構造、ネックストラップと収納ケースの付属が記されている。収納時の寸法は示されていないが、折りたためる点が日帰り散策で選ぶ理由になる。"
+          }
+        ]
+      },
+      {
+        "axis_id": "find_subject",
+        "products": [
+          {
+            "asin": "B0G2B5RFQF",
+            "reason": "公園で位置が変わる鳥や、展望台から眺める景色を視界に入れたい人に向く。メーカーの販売ページは10倍・視野約65度と記し、見掛け視界の検証資料もある。視野の広がりを数値で検討できる点が、この切り口での採用理由になる。"
+          },
+          {
+            "asin": "B0FYY4VHTW",
+            "reason": "対岸の建物など、位置を肉眼で確かめた遠くの対象を拡大して見たい人に向く。商品名には20倍と倍率調整可能との記載がある一方、実視界の角度は確認できない。高倍率では対象を視界に入れ続けにくくなるため、動く鳥を追う用途より、遠景を捉えて観察する用途を想定した選定。"
+          }
+        ]
+      }
     ],
-    "content_duplicates_removed": [],
-    "price_used_as_constraint_only": true
+    "brand_count": 2,
+    "candidate_count": 20,
+    "comparison_axes_covered": [
+      "carry_light",
+      "find_subject"
+    ],
+    "content_duplicates_removed": [
+      {
+        "asin": "B0FXWR9KYK",
+        "check_items": {
+          "color_design_only": "UNKNOWN",
+          "function_structure_difference": "UNKNOWN",
+          "independent_comparison_value": "UNKNOWN",
+          "manufacturer_brand_relation": "UNKNOWN",
+          "sales_packaging_only": "UNKNOWN",
+          "same_product_body": "FAIL",
+          "series_generation_difference": "UNKNOWN",
+          "size_capacity_difference": "UNKNOWN"
+        },
+        "duplicate_of_asin": "B0FXWR9KYK",
+        "reason": "same_asin"
+      }
+    ],
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": [
+      "B0FXWR9KYK"
+    ],
+    "targeted_replacement": true
   },
   "slug": "compact-binoculars-for-outings"
 }
