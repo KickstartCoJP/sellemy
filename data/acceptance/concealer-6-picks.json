@@ -1,0 +1,102 @@
+{
+  "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+  "evidence_sha256": "343e6478cd76479a3c76aab36e11d909dbd06a5c0c63f8d4800b4288221c688c",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 11520,
+    "input_tokens": 24635,
+    "member_binding_revision": 4,
+    "output_tokens": 1568,
+    "reasoning_effort": "medium",
+    "reasoning_output_tokens": 686,
+    "reused_product_qa": true,
+    "session_id": "01a21aa8-5b5e-7e52-921c-40ea069e069b",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "e704caca16fb54179627efb0289ad7b5ef89ddcaa6974e619261326528f07db2",
+  "review": {
+    "buying_guidance": false,
+    "claims_grounded": false,
+    "complete_comparison": false,
+    "distinct_products": true,
+    "duplicate_pair_checks": [],
+    "editorial_voice_appropriate": false,
+    "internal_qa_leak_absent": false,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "Cezanne Palette Concealer High Coverage",
+        "identity_quote": "Cezanne Palette Concealer High Coverage 4.5g, High Adhesion, 3 Colors, Double-Ended Brush, Beige",
+        "reason": "検証済みの商品掲載情報で3色入りのコンシーラーとして識別できる。色を使い分けたい読者への紹介が成立する。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "TIRTIR Mask Fit All Cover Concealer",
+        "identity_quote": "TIRTIR Mask Fit All Cover Concealer (01, Natural)",
+        "reason": "検証済みの商品掲載情報でリキッドとスティックを備えるコンシーラーとして識別でき、形状を使い分ける紹介が成立する。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "wide_under_eye",
+            "quote": "[Chip type] Easy to use for small and large parts"
+          }
+        ],
+        "identity_key": "TFIT NEW Idol Cover Concealer",
+        "identity_quote": "TFIT NEW Idol Cover Concealer, 0.2 oz (6.5 g), Acne Scar Cover, Rough Skin",
+        "reason": "検証済みの商品掲載情報でチップ型と確認でき、目元に少量ずつのせる切り口に合う。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "wide_under_eye",
+            "quote": "For areas where dark circles are a concern - Red Trick (Natural Beige)"
+          }
+        ],
+        "identity_key": "Visee Color Duo Trick Concealer",
+        "identity_quote": "Visee Color Duo Trick Concealer 01 Red Trick (Natural Beige) Concealer Bear Cover, 0.1 oz (2.5 g)",
+        "reason": "検証済みの商品掲載タイトルで識別できる。掲載情報はクマが気になる部分への用途を示しており、目元の紹介切り口に合う。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "キャンメイク カラースティックコンシーラー",
+        "identity_quote": "",
+        "reason": "掲載タイトルからスティック型のコンシーラー本体として識別でき、狙った部分にのせる切り口に合う。検証済みの引用元がないため、掲載タイトルを超える仕様は未確認とする。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [],
+        "identity_key": "TFIT カバーアッププロコンシーラー",
+        "identity_quote": "",
+        "reason": "掲載タイトルから3色入りのコンシーラーとして識別でき、p3とは商品系列と構成が異なる。色を選んで部分使いする紹介は成立する。検証済みの引用元がないため、細いブラシの使用方法や仕上がりは確認済みの事実として扱わない。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reader_decision_outsourcing_absent": false,
+    "reason": "記事本文のない根拠情報のみの審査。掲載タイトルと検証済みの商品情報から、6件はコンシーラーの企画に適合し、既存の3つの紹介切り口に各2件を配置できる。p5・p6には検証済みの引用元がないため引用欄は空とし、掲載タイトルを超える仕様や性能は確認済みとして扱わない。",
+    "recommendation_conclusion": false,
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}
