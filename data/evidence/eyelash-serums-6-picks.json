@@ -1,158 +1,344 @@
 {
-  "slug": "eyelash-serums-6-picks",
-  "category": "beauty",
-  "canonical_url": "https://www.sellemy.jp/article/beauty/eyelash-serums-6-picks.html",
-  "eyecatch_image": "https://www.sellemy.jp/img/eyelash-serums-6-picks/eyelash-serums-6-picks.png",
   "amazon_tag": "sellemy-22",
+  "canonical_url": "https://www.sellemy.jp/article/beauty/eyelash-serums-6-picks.html",
+  "category": "beauty",
   "comparison_axes": [
     {
-      "id": "ingredients",
-      "label": "成分・処方",
+      "id": "popular",
       "keywords": [
-        "ペプチド",
-        "セラミド",
-        "育毛成分"
-      ]
+        "人気"
+      ],
+      "label": "人気・定番の基準"
     },
     {
-      "id": "usability",
-      "label": "使用感・塗りやすさ",
+      "id": "eye_area_care",
+      "keywords": [
+        "使用上の注意",
+        "塗布部位",
+        "成分表示"
+      ],
+      "label": "目元への配慮を判断しやすい表示"
+    },
+    {
+      "id": "application_routine",
       "keywords": [
         "筆タイプ",
-        "液だれしにくい",
-        "密着感"
-      ]
-    },
-    {
-      "id": "price",
-      "label": "価格帯・コスパ",
-      "keywords": [
-        "プチプラ",
-        "デパコス",
-        "続けやすさ"
-      ]
+        "チップタイプ",
+        "塗布方法"
+      ],
+      "label": "毎日の塗り方に合わせて選べる塗布具"
     }
   ],
-  "selection": {
-    "comparison_axes_covered": [
-      "ingredients",
-      "usability"
-    ],
-    "brand_count": 6,
-    "price_used_as_constraint_only": true
+  "eyecatch_image": "https://www.sellemy.jp/img/eyelash-serums-6-picks/eyelash-serums-6-picks.png",
+  "product_acceptance": {
+    "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+    "evidence_sha256": "7e9aa92ecdab0e7d367a85333155280b56c2354080cd1693d74e1389184017d4",
+    "metadata": {
+      "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 11520,
+      "input_tokens": 25815,
+      "listing_identity_citations_repaired": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "member_binding_revision": 4,
+      "output_tokens": 1612,
+      "reasoning_effort": "medium",
+      "reasoning_output_tokens": 360,
+      "session_id": "01a21ce0-a0e7-7262-83b7-96c78b15edce",
+      "session_persisted": false,
+      "surface": "bu-codex-sellemy-reviewer"
+    },
+    "payload_sha256": null,
+    "review": {
+      "buying_guidance": false,
+      "claims_grounded": false,
+      "complete_comparison": false,
+      "distinct_products": true,
+      "duplicate_pair_checks": [],
+      "editorial_voice_appropriate": false,
+      "internal_qa_leak_absent": false,
+      "meaningful_comparison": true,
+      "needs_product_reselection": false,
+      "products": [
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "[No.1 Share for Eyelashes Beauty Salve] (Fuji Economy Cosmetics Marketing Overview 2026 No. 3 - Makeup/Fragrance - Treatment Mascara Share (2025 Experience))"
+            }
+          ],
+          "identity_key": "Scalp D Eyelash Serum, Premium, No Color Deposits, 4 Times Hair Repair Ingredients, Eyelas",
+          "identity_quote": "Scalp D Eyelash Serum, Premium, No Color Deposits, 4 Times Hair Repair Ingredients, Eyelashes, Eye Care, Once a Day/Matsukek, 0.1 fl oz (4 ml), 2.5 Months Supply",
+          "reason": "検証済みの商品掲載タイトルでプレミアム系列のまつ毛美容液と識別できる。掲載情報のシェア表示を人気・定番の紹介材料にできるが、独立した市場調査結果としては扱わない。",
+          "ref": "p1",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "popular",
+              "quote": "Ranked #1 in LDK the Beauty July 2024 Issue: Highly regarded by the beauty industry and won the \"Best Buy\" in the Eyelash Beauty Department."
+            }
+          ],
+          "identity_key": "PHOEBE BEAUTY UP Eyelash Serum, N2, 0.2 fl oz (5 ml), Eyelash Serum, Human Stem Cell Cultu",
+          "identity_quote": "PHOEBE BEAUTY UP Eyelash Serum, N2, 0.2 fl oz (5 ml), Eyelash Serum, Human Stem Cell Culture, 6 Ceramic Blend, Eyelash Care",
+          "reason": "検証済みの商品掲載タイトルでN2と識別できる。掲載情報に雑誌の評価実績と朝晩の使用案内があり、人気・定番の切り口で紹介できる。評価実績は掲載情報上の主張として扱う。",
+          "ref": "p2",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "eye_area_care",
+              "quote": "Tested for eye irritation (this does not mean irritation will not occur for all people. Please be careful not to get it in your eyes.)"
+            }
+          ],
+          "identity_key": "Shonan Beauty Eyelash Serum n, Oil-Free, Transparent, 0.1 fl oz (0.1 fl oz) (x 1), Eyebrow",
+          "identity_quote": "Shonan Beauty Eyelash Serum n, Oil-Free, Transparent, 0.1 fl oz (0.1 fl oz) (x 1), Eyebrows, Eyelash Perm, Eyelash Care, Made in Japan",
+          "reason": "検証済みの商品掲載タイトルでn系列のまつ毛美容液と識別できる。掲載情報には目刺激性試験の表示と、刺激の可能性および目に入れないための注意が併記され、目元への配慮を判断しやすい表示という切り口に合う。",
+          "ref": "p3",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [
+            {
+              "axis_id": "eye_area_care",
+              "quote": "Material Type Free Alcohol-Free, Dye-Free, Paraben-free, Sulfate Free"
+            }
+          ],
+          "identity_key": "Charvin Eyelash Serum Comb, No Pigmentation Ingredients, 1 Piece, Extra Fine Pen Type, Exo",
+          "identity_quote": "Charvin Eyelash Serum Comb, No Pigmentation Ingredients, 1 Piece, Extra Fine Pen Type, Exosome Formula, Hari, Koshi, Volume CHARVIN",
+          "reason": "検証済みの商品掲載タイトルでCHARVINの極細ペンタイプのまつ毛美容液と識別できる。掲載情報の成分不使用表示は、目元に使う製品の表示を見て選びたい読者の判断材料になる。不使用表示から無刺激とは判断しない。",
+          "ref": "p4",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "ロート製薬 ラッシュリッチ まつ毛美容液",
+          "identity_quote": "",
+          "reason": "掲載タイトルで商品名と細筆タイプを識別でき、塗布具で選ぶ切り口に合う。検証済みの出典抜粋はなく、選定理由にある使用頻度や塗る順序は未確認として扱う。",
+          "ref": "p5",
+          "topic_fit": true
+        },
+        {
+          "adequate_facts": true,
+          "axis_support": [],
+          "identity_key": "アヴァンセ マツエク プロテクトセラム",
+          "identity_quote": "",
+          "reason": "掲載タイトルでまつ毛エクステ向けのまつ毛美容液と識別できる。選定理由にはブラシを使う日々の塗り方が示され、塗布具で選ぶ切り口で紹介可能。検証済みの出典抜粋はなく、ブラシ形状や具体的な塗布方法は未確認として扱う。",
+          "ref": "p6",
+          "topic_fit": true
+        }
+      ],
+      "reader_decision_outsourcing_absent": false,
+      "reason": "6商品は掲載タイトルからそれぞれ識別できるまつ毛美容液で、明白な重複や対象外商品はない。既存の3つの紹介切り口に各2商品を割り当てて紹介できる。p5・p6の具体的な塗布方法は検証済みの出典抜粋がないため未確認として扱う。記事は未提出のため記事のみの判定項目はfalseとした。",
+      "recommendation_conclusion": false,
+      "status": "ACCEPTED",
+      "sufficient_evidence": true
+    },
+    "reviewer": "independent_responses_review"
   },
   "products": [
     {
-      "ref": "p1",
-      "product_id": "AMZ-B0CFWVP85K",
-      "asin": "B0CFWVP85K",
-      "amazon_title": "【公式】ロート製薬 ラッシュリッチ まつ毛美容液 まつ毛ダニ まつ毛の立ち上げ 細筆タイプ 目元ケア うるおい成分配合 無香料 無着色 オイルフリー 使いやすい 2.5mL",
-      "brand": "ロート製薬",
-      "image_url": "https://m.media-amazon.com/images/I/41KgV0d7v9L._AC_SY300_SX300_QL70_ML2_.jpg",
-      "observed_price": 5500,
-      "discovery_score": 1,
-      "selection_score": 0.7,
-      "matched_comparison_axes": [
-        "usability"
-      ],
-      "search_key": "ラッシュリッチ ロート製薬 ラッシュリッチ まつ毛美容液 まつ毛ダニ まつ毛の立",
-      "model": "ロート製薬 ラッシュリッチ",
-      "selected_variant": {
-        "capacity": "2.5mL",
-        "count": 1
-      }
-    },
-    {
-      "ref": "p2",
-      "product_id": "AMZ-B0CTQV5MJ7",
-      "asin": "B0CTQV5MJ7",
-      "amazon_title": "PHOEBE BEAUTY UP アイラッシュセラムN2 5mL まつ毛美容液 まつげ美容液 フィービービューティーアップ ヒト幹細胞培養液 6種のセラミド配合 まつ毛ケア",
-      "brand": "PHOEBE BEAUTY UP",
-      "image_url": "https://m.media-amazon.com/images/I/613JEw011YL._AC_SL1500_.jpg",
-      "observed_price": 5830,
-      "discovery_score": 1,
-      "selection_score": 0.7,
-      "matched_comparison_axes": [
-        "ingredients"
-      ],
-      "search_key": "PHOEBE BEAUTY UP アイラッシュセラムN2 5mL まつ毛美容液 まつげ美容液 フ",
-      "model": "PHOEBE BEAUTY UP アイラッシュセラムN2",
-      "selected_variant": {
-        "capacity": "5mL",
-        "count": 1
-      }
-    },
-    {
-      "ref": "p3",
-      "product_id": "AMZ-B07P8YNYDB",
-      "asin": "B07P8YNYDB",
-      "amazon_title": "DHC アイラッシュトニック 6.5ミリリットル (x 1)",
-      "brand": "DHC",
-      "image_url": "https://m.media-amazon.com/images/I/41DJJQUKw6L._AC_SY300_SX300_QL70_ML2_.jpg",
-      "observed_price": 6980,
-      "discovery_score": 1,
-      "selection_score": 0.52,
-      "matched_comparison_axes": [],
-      "search_key": "Dr Brow Plus + ドクターブロープラス 眉毛美容液 まゆげ美容液 ヒト幹細胞培養液",
-      "model": "DHC アイラッシュトニック",
-      "selected_variant": {
-        "capacity": "6.5mL",
-        "count": 1
-      }
-    },
-    {
-      "ref": "p4",
-      "product_id": "AMZ-B0CWGYFSJB",
+      "amazon_title": "Scalp D Eyelash Serum, Premium, No Color Deposits, 4 Times Hair Repair Ingredients, Eyelashes, Eye Care, Once a Day/Matsukek, 0.1 fl oz (4 ml), 2.5 Months Supply",
       "asin": "B0CWGYFSJB",
-      "amazon_title": "スカルプD まつげ美容液 プレミアム【 色素沈着なし 】毛髪補修成分4倍 まつ毛 目元ケア/ 1日1回 / マツエク マツパ OK 4mL 2.5か月分 アイラッシュセラム 人気ランキング",
-      "brand": "アンファー",
-      "image_url": "https://m.media-amazon.com/images/I/51BFwOkehIL._AC_SL1000_.jpg",
-      "observed_price": 6600,
+      "brand": "スカルプDまつ毛美容液",
+      "discovery_axis_id": "popular",
       "discovery_score": 1,
-      "selection_score": 0.52,
-      "matched_comparison_axes": [],
-      "search_key": "Eternam エテルナム アイラッシュセラム まつ毛美容液 5mL ヒト幹細胞",
-      "model": "アンファー スカルプD アイラッシュセラム プレミアム",
-      "selected_variant": {
-        "capacity": "4mL",
-        "count": 1
-      }
+      "image_url": "https://m.media-amazon.com/images/I/51BFwOkehIL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0CWGYFSJB",
+      "provisional": false,
+      "rating": 4.4,
+      "ref": "p1",
+      "review_count": 841,
+      "search_key": "スカルプDまつ毛美容液 Scalp D Eyelash Serum, Premium",
+      "selection_reason": "掲載情報に富士経済の2025年実績に基づくシェアNo.1の表示があり、定番を選ぶ際の手がかりになる。プレミアムは1日1回の使用、ふわふわしたチップ、アルコール・合成香料などの不使用とアレルギーテスト実施も示されており、夜のケアを一度で済ませたい人が使い方と表示を確認しやすい。テスト済みでも刺激が起きない保証ではない。",
+      "sources": [
+        {
+          "brand": "スカルプDまつ毛美容液",
+          "excerpt": "Scalp D Eyelash Serum, Premium, No Color Deposits, 4 Times Hair Repair Ingredients, Eyelashes, Eye Care, Once a Day/Matsukek, 0.1 fl oz (4 ml), 2.5 Months Supply\nAbout this item\n[No.1 Share for Eyelashes Beauty Salve] (Fuji Economy Cosmetics Marketing Overview 2026 No. 3 - Makeup/Fragrance - Treatment Mascara Share (2025 Experience))\nThis is an eyelash serum [Premium] A luxurious design made exclusively from premium, with 4 times the hair repair ingredients. Apply to eyelashes and hair extensions to increase firmness. The ingredients are trapped in nanodized capsules, and the penetration level of *2\nCurl retention ingredient*³ for upward curls. The fluffy tips are gentle and comfortable to wear, so your eyelashes will lift and curl your own lashes\nCarefully designed to be free of parabens, oil, alcohol, surfactants, silicone, synthetic fragrances, and synthetic colorants. Plus, they're allergy tested. Dermatologically tested for irritation. Not all people will experience allergies › See more product details\nUse for Face\nBrand スカルプDまつ毛美容液\nItem Form まつ毛美容液\nItem Weight 31 Grams\nMaterial Type Free Paraben Free\nItem Volume 4 Milliliters\nNumber of Items 1\nUnit Count 1.00 本 See more\nVisit the スカルプDまつ毛美容液 Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Scalp D Eyelash Serum, Premium, No Color Deposits, 4 Times Hair Repair Ingredients, Eyelashes, Eye Care, Once a Day/Matsukek, 0.1 fl oz (4 ml), 2.5 Months Supply",
+          "url": "https://www.amazon.co.jp/dp/B0CWGYFSJB?th=1",
+          "verified": true
+        }
+      ]
     },
     {
+      "amazon_title": "PHOEBE BEAUTY UP Eyelash Serum, N2, 0.2 fl oz (5 ml), Eyelash Serum, Human Stem Cell Culture, 6 Ceramic Blend, Eyelash Care",
+      "asin": "B0CTQV5MJ7",
+      "brand": "PHOEBE BEAUTY UP",
+      "discovery_axis_id": "popular",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/61DocNRXbWL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0CTQV5MJ7",
+      "provisional": false,
+      "rating": 4.2,
+      "ref": "p2",
+      "review_count": 1264,
+      "search_key": "PHOEBE BEAUTY UP Eyelash Serum, N2, 0.2 fl oz (5",
+      "selection_reason": "掲載情報には『LDK the Beauty』2024年7月号のまつ毛美容液部門ベストバイとある。6種類のセラミドなど保湿成分を配合し、朝晩2回使う案内があるため、乾燥が気になるまつ毛を朝の支度と夜のケアで保湿したい人が、評価実績と使用頻度の両方を手がかりにできる。",
+      "sources": [
+        {
+          "brand": "PHOEBE BEAUTY UP",
+          "excerpt": "PHOEBE BEAUTY UP Eyelash Serum, N2, 0.2 fl oz (5 ml), Eyelash Serum, Human Stem Cell Culture, 6 Ceramic Blend, Eyelash Care\nAbout this item\nNew standard for eyelash beauty serum: The eyelash care is formulated with a richer eyelash care ingredients, providing total care to keep your eyelashes healthy. It consists of 99% beauty serum ingredients, which provides great moisture and is easy to incorporate into your daily care. Gentle on delicate eyelashes, care for daily damage\nRanked #1 in LDK the Beauty July 2024 Issue: Highly regarded by the beauty industry and won the \"Best Buy\" in the Eyelash Beauty Department. It has gathered support from many users, so you can use it with confidence. Consistent use conditions and supports ideal lashes\nHuman Stem Cell Culture Fluid and 6 Ceramides: A luxurious blend of human stem cell culture using the latest beauty technology and 6 types of ceramides that are moisturizing ingredients. Moisturizes lashes and protects against dryness and external damage to keep your lashes shiny and healthy. Perfect for delicate eye care\n(Repair Ingredients to Protect Eyelashes) Beauty ingredients such as collagen and keratin protect the cuticle of the eyelashes and protect them from external damage. Protect your eyelashes from dryness caused by everyday makeup and environmental stress, while maintaining shine and smoothness\nEasy Care for Your Daily Habit: Even on busy days, you can easily care for your eyelashes twice in the morning and evening. It is smooth and easy to apply, so it is easy to use even when you don't have time. Hydrate and maintain healthy eyelashes and bring out your ideal beauty while maintaining daily care › See more product details\nColor 1) 1 bottle 0.2 fl oz (5 ml)\nSpecial Feature Built-In Brush\nBrand PHOEBE BEAUTY UP\nItem Form ローション\nNumber of Items 1\nUnit Count 5.0 Milliliters\nItem Volume 5 Milliliters\nWater Resistance Level Waterproof\nManufacturer DINETTE株式会社 See more\nVisit the PHOEBE BEAUTY UP Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "PHOEBE BEAUTY UP Eyelash Serum, N2, 0.2 fl oz (5 ml), Eyelash Serum, Human Stem Cell Culture, 6 Ceramic Blend, Eyelash Care",
+          "url": "https://www.amazon.co.jp/dp/B0CTQV5MJ7?th=1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "Shonan Beauty Eyelash Serum n, Oil-Free, Transparent, 0.1 fl oz (0.1 fl oz) (x 1), Eyebrows, Eyelash Perm, Eyelash Care, Made in Japan",
+      "asin": "B0HN4WL37Q",
+      "brand": "湘南美容",
+      "discovery_axis_id": "eye_area_care",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/71XC-aFe1tL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0HN4WL37Q",
+      "provisional": false,
+      "rating": 4.0,
+      "ref": "p3",
+      "review_count": 903,
+      "search_key": "湘南美容 Shonan Beauty Eyelash Serum n, O",
+      "selection_reason": "掲載情報には目刺激性試験済みとともに『すべての人に刺激が起きないわけではない』『目に入れない』という注意が明記されている。刺激が心配で試験の有無だけでなく使用上の注意も確かめたい人に向く。オイルフリーで、まつ毛エクステやパーマ中にも使えるという塗布条件も確認できる。",
+      "sources": [
+        {
+          "brand": "湘南美容",
+          "excerpt": "Shonan Beauty Eyelash Serum n, Oil-Free, Transparent, 0.1 fl oz (0.1 fl oz) (x 1), Eyebrows, Eyelash Perm, Eyelash Care, Made in Japan\nAbout this item\nRecommended for These People: For those who want an eyelash serum that can be used for a long time! Recommended for those who want to use eyelash serum for daily care, such as changing their natural eyelashes or reducing damage to eyelashes\nContains additional eyelash serum ingredients. Shonan Beauty Original Formula formulated with 13 types of serum ingredients (*1) for a glossy and firm eyelash impression\nTested for eye irritation (this does not mean irritation will not occur for all people. Please be careful not to get it in your eyes.)\nOil-free formula, it can be used by those with eyelash extensions or eyelash perms. It can also be used as a mascara base. The specially shaped tip of the brush ensures the serum is delivered effectively to the eyelashes. It can also be used on eyebrows\n※1. 1 Wild Lash 2 Capixyl 3 Asian ginseng root extract 4 Oligopeptide-41 5 Hydrolyzed keratin (wool) 6 Hydrolyzed silk 7 Hyaluronic acid (Na hyaluronate) 8 Acetyl hyaluronic acid (Na hyaluronate) 9 Soluble collagen 10 Yuzu fruit extract 11 Royal jelly extract 12 Roman chamomile flower extract 13 Mimosa pudica leaf/stem extract (all moisturizing ingredients) › See more product details\nBrand 湘南美容\nItem Form セラム\nNumber of Items 1\nUnit Count 4.0 Milliliters\nVisit the 湘南美容 Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Shonan Beauty Eyelash Serum n, Oil-Free, Transparent, 0.1 fl oz (0.1 fl oz) (x 1), Eyebrows, Eyelash Perm, Eyelash Care, Made in Japan",
+          "url": "https://www.amazon.co.jp/dp/B0HN4WL37Q?th=1",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "Charvin Eyelash Serum Comb, No Pigmentation Ingredients, 1 Piece, Extra Fine Pen Type, Exosome Formula, Hari, Koshi, Volume CHARVIN",
+      "asin": "B0GX62WXP5",
+      "brand": "CHARVIN",
+      "discovery_axis_id": "eye_area_care",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/712y8tVMAzL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0GX62WXP5",
+      "provisional": false,
+      "rating": 4.6,
+      "ref": "p4",
+      "review_count": 116,
+      "search_key": "CHARVIN Eyelash Serum Comb, No Pigmentat",
+      "selection_reason": "掲載情報にアルコール・着色料・パラベン・硫酸系成分の不使用が個別に示されており、気になる成分表示を先に確認したい人の判断材料になる。約0.1mmの極細ペン先でまつ毛の根元を狙う設計なので、目元の広い範囲に塗ることを避けたい人も塗布場所をイメージしやすい。不使用表示は無刺激を意味しない。",
+      "sources": [
+        {
+          "brand": "CHARVIN",
+          "excerpt": "Charvin Eyelash Serum Comb, No Pigmentation Ingredients, 1 Piece, Extra Fine Pen Type, Exosome Formula, Hari, Koshi, Volume CHARVIN\nAbout this item\nPen-Type › See more product details\nBrand CHARVIN\nItem Form ペン\nProduct Benefits An ultra-fine 0.004 inch (0.1 mm) tip brush approaches the roots\nSkin Type All\nItem Weight 30 Milligrams\nUnit Count 1.0 Count\nMaterial Type Free Alcohol-Free, Dye-Free, Paraben-free, Sulfate Free\nNumber of Items 1\nManufacturer CHARVIN See more\nVisit the CHARVIN Store",
+          "http_status": 200,
+          "source_type": "marketplace_item",
+          "title": "Charvin Eyelash Serum Comb, No Pigmentation Ingredients, 1 Piece, Extra Fine Pen Type, Exosome Formula, Hari, Koshi, Volume CHARVIN",
+          "url": "https://www.amazon.co.jp/dp/B0GX62WXP5",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "amazon_title": "【公式】ロート製薬 ラッシュリッチ まつ毛美容液 まつ毛ダニ まつ毛の立ち上げ 細筆タイプ 目元ケア うるおい成分配合 無香料 無着色 オイルフリー 使いやすい 2.5mL",
+      "asin": "B0CFWVP85K",
+      "brand": "",
+      "discovery_axis_id": "application_routine",
+      "discovery_score": 1,
+      "image_url": "https://m.media-amazon.com/images/I/41KgV0d7v9L._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B0CFWVP85K",
+      "provisional": true,
+      "rating": 4.0,
       "ref": "p5",
-      "product_id": "AMZ-B07N2B5DHY",
-      "asin": "B07N2B5DHY",
-      "amazon_title": "セザンヌ まつげ美容液EX クリア",
-      "brand": "セザンヌ",
-      "image_url": "https://m.media-amazon.com/images/I/51ydQlgLqBL._AC_SL1000_.jpg",
-      "observed_price": 13200,
-      "discovery_score": 1,
-      "selection_score": 0.52,
-      "matched_comparison_axes": [],
-      "search_key": "EYEZ 自慢の目元 by EYEZ まつげ美容液 まつ毛美容液 まつ毛",
-      "model": "セザンヌ まつげ美容液EX クリア",
-      "selected_variant": {
-        "capacity": "5.4g",
-        "count": 1
-      }
+      "review_count": 158,
+      "search_key": "ロート製薬 ラッシュリッチ まつ毛美容液 まつ毛ダニ まつ毛の立",
+      "selection_reason": "ロート製薬の[商品案内](https://www.shop.rohto.co.jp/category/skincare/lashrich/191000.html)では、目の際に塗りやすい極細筆を採用し、スキンケア前に朝晩2回使うと案内している。洗顔後、まつ毛の生え際を細くなぞる塗り方を日課にしたい人に、筆の形と使うタイミングが具体的に分かる。",
+      "sources": []
     },
     {
-      "ref": "p6",
-      "product_id": "AMZ-B0H4T4VYNH",
-      "asin": "B0H4T4VYNH",
-      "amazon_title": "マジョリカ マジョルカ まつげ美容液 ラッシュジェリードロップ ロング 5.3g まつエク・まつパOK 美容成分配合 MAJOLICA MAJORCA",
-      "brand": "マジョリカ マジョルカ",
-      "image_url": "https://m.media-amazon.com/images/I/61X9Bw3OYwL._AC_SL1500_.jpg",
-      "observed_price": 1210,
+      "amazon_title": "アヴァンセ マツエク プロテクトセラム 　まつげ美容液　ヒアルロン酸配合　 (6mL)",
+      "asin": "B06X9QKD6B",
+      "brand": "",
+      "discovery_axis_id": "application_routine",
       "discovery_score": 1,
-      "selection_score": 0.47,
-      "matched_comparison_axes": [],
-      "search_key": "MAJOLICA MAJORCA(マジョリカ マジョルカ) マジョリカ マジョルカ まつげ美容液",
-      "model": "マジョリカ マジョルカ ラッシュジェリードロップ ロング",
-      "selected_variant": {
-        "capacity": "5.3g",
-        "count": 1
-      }
+      "image_url": "https://m.media-amazon.com/images/I/71yWG+EeHfL._AC_UL320_.jpg",
+      "observed_price": null,
+      "product_id": "AMZ-B06X9QKD6B",
+      "provisional": true,
+      "rating": 4.0,
+      "ref": "p6",
+      "review_count": 752,
+      "search_key": "アヴァンセ マツエク プロテクトセラム まつげ美容液 ヒアルロン",
+      "selection_reason": "アヴァンセの[商品案内](https://avance.com.ec/products/%E3%83%9E%E3%83%84%E3%82%A8%E3%82%AF-%E3%83%97%E3%83%AD%E3%83%86%E3%82%AF%E3%83%88%E3%82%BB%E3%83%A9%E3%83%A0%E3%83%9E%E3%83%84%E3%82%A8%E3%82%AF%E5%B0%82%E7%94%A8%E7%BE%8E%E5%AE%B9%E6%B6%B2)には、セパレートアーチ型ブラシで、洗顔後の清潔なまつ毛を生え際から上へ持ち上げるようになじませるとある。まつ毛エクステの絡まりや向きも整えたい人が、朝晩のケアでブラシを通す使い方に合う。目に入れないよう注意する案内もある。",
+      "sources": []
     }
-  ]
+  ],
+  "selection": {
+    "axes": [
+      {
+        "axis_id": "popular",
+        "products": [
+          {
+            "asin": "B0CWGYFSJB",
+            "reason": "掲載情報に富士経済の2025年実績に基づくシェアNo.1の表示があり、定番を選ぶ際の手がかりになる。プレミアムは1日1回の使用、ふわふわしたチップ、アルコール・合成香料などの不使用とアレルギーテスト実施も示されており、夜のケアを一度で済ませたい人が使い方と表示を確認しやすい。テスト済みでも刺激が起きない保証ではない。"
+          },
+          {
+            "asin": "B0CTQV5MJ7",
+            "reason": "掲載情報には『LDK the Beauty』2024年7月号のまつ毛美容液部門ベストバイとある。6種類のセラミドなど保湿成分を配合し、朝晩2回使う案内があるため、乾燥が気になるまつ毛を朝の支度と夜のケアで保湿したい人が、評価実績と使用頻度の両方を手がかりにできる。"
+          }
+        ]
+      },
+      {
+        "axis_id": "eye_area_care",
+        "products": [
+          {
+            "asin": "B0HN4WL37Q",
+            "reason": "掲載情報には目刺激性試験済みとともに『すべての人に刺激が起きないわけではない』『目に入れない』という注意が明記されている。刺激が心配で試験の有無だけでなく使用上の注意も確かめたい人に向く。オイルフリーで、まつ毛エクステやパーマ中にも使えるという塗布条件も確認できる。"
+          },
+          {
+            "asin": "B0GX62WXP5",
+            "reason": "掲載情報にアルコール・着色料・パラベン・硫酸系成分の不使用が個別に示されており、気になる成分表示を先に確認したい人の判断材料になる。約0.1mmの極細ペン先でまつ毛の根元を狙う設計なので、目元の広い範囲に塗ることを避けたい人も塗布場所をイメージしやすい。不使用表示は無刺激を意味しない。"
+          }
+        ]
+      },
+      {
+        "axis_id": "application_routine",
+        "products": [
+          {
+            "asin": "B0CFWVP85K",
+            "reason": "ロート製薬の[商品案内](https://www.shop.rohto.co.jp/category/skincare/lashrich/191000.html)では、目の際に塗りやすい極細筆を採用し、スキンケア前に朝晩2回使うと案内している。洗顔後、まつ毛の生え際を細くなぞる塗り方を日課にしたい人に、筆の形と使うタイミングが具体的に分かる。"
+          },
+          {
+            "asin": "B06X9QKD6B",
+            "reason": "アヴァンセの[商品案内](https://avance.com.ec/products/%E3%83%9E%E3%83%84%E3%82%A8%E3%82%AF-%E3%83%97%E3%83%AD%E3%83%86%E3%82%AF%E3%83%88%E3%82%BB%E3%83%A9%E3%83%A0%E3%83%9E%E3%83%84%E3%82%A8%E3%82%AF%E5%B0%82%E7%94%A8%E7%BE%8E%E5%AE%B9%E6%B6%B2)には、セパレートアーチ型ブラシで、洗顔後の清潔なまつ毛を生え際から上へ持ち上げるようになじませるとある。まつ毛エクステの絡まりや向きも整えたい人が、朝晩のケアでブラシを通す使い方に合う。目に入れないよう注意する案内もある。"
+          }
+        ]
+      }
+    ],
+    "brand_count": 4,
+    "candidate_count": 24,
+    "comparison_axes_covered": [],
+    "content_duplicates_removed": [],
+    "method": "ai_selection_three_axes_two_each",
+    "retained_qa_passed_asins": []
+  },
+  "slug": "eyelash-serums-6-picks"
 }
