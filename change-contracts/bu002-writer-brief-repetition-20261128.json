@@ -1,0 +1,25 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "CEO-BU002-WRITER-BRIEF-REPEATED-EDIT-20261128",
+  "instruction_ref": "Sentinel_d4525ae2a7308191b6013a954b72bb9b",
+  "instruction": "Use repeated, grounded COO copy edits to refine an existing Writer Brief rule only. Reduce duplicate advice across summary and conclusion and avoid filler closings. Evidence: exact retained prepublication drafts and COO editorial revisions for dishwasher detergents, bedding cleaners, fabric shavers, and other same-cohort articles.",
+  "implementer": "COO, isolated non-Codex staging; no live edits",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3",
+    "https://app.notion.com/p/3dc67ec6a1008196b017ee01e1824bba",
+    "https://app.notion.com/p/3fd67ec6a10081339edef6932aae8d0e"
+  ],
+  "allowed_paths": [
+    "config/growth-stage-briefs.json",
+    "change-contracts/bu002-writer-brief-repetition-20261128.json",
+    "tests/test_writer_brief_repetition_20261128.py"
+  ],
+  "preserved_rules": [
+    "No additional stage, provider, strict word bans, counts or QA gate.",
+    "Preserve search intent, product/reference separation, content conditions, safety, evidence, presets and existing approval route.",
+    "Do not change any other Brief, Brain, source code, article or production/publish setting."
+  ],
+  "acceptance_tests": [
+    "tests/test_writer_brief_repetition_20261128.py"
+  ]
+}
