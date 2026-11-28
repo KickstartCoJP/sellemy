@@ -26148,13 +26148,13 @@
   {
     "productId": "AMZ-B0FBM9JFD2",
     "asin": "B0FBM9JFD2",
-    "name": "LSW-5GSE/NBKはGiga対応と配線条件を確認",
-    "brand": "",
+    "name": "バッファロー LSW-5GSE/NBK",
+    "brand": "BUFFALO",
     "amazonUrl": "https://www.amazon.co.jp/dp/B0FBM9JFD2?tag=sellemy-22",
     "imageUrl": "https://m.media-amazon.com/images/I/61rHJsHXzLL._AC_UL320_.jpg",
-    "description": "金属筐体と外付け電源を記載するバッファローのLSW-5GSE/NBKは、五ポートのGiga対応モデルです。壁掛け対応も紹介されていますが、通信面では各ポートの対応速度一覧、使用するケーブル規格、自動速度調整の条件は示されていません。サンワダイレクトにはAUTO-MDIXの記載がありますが、こちらに同じ名称がないことだけで非搭載とは判断できません。五つの接続口を使う計画では、ルーターとの接続と端末側の接続を分け、それぞれの機器の規格を照合したいところです。外付け電源の表示はありますが、付属品の内訳、コード長、アダプター寸法までは分かりません。同系列の八ポートとは品番が異なるため、本体寸法や電源仕様を共通とは扱えません。通信条件は五ポートの品番に対応する一覧、設置条件は電源を含む寸法図で読み分けます。",
+    "description": "5つのギガビット対応ポートを備え、有線の接続口を増やせます。LANポートと電源端子は背面にまとまっており、壁掛けにも対応。壁面に固定する場合はネジを別途用意します。",
     "articleSlug": "home-ethernet-switches",
-    "articleTitle": "家庭用スイッチングハブ比較｜ポート数・配線・設置条件を確認",
+    "articleTitle": "家庭用スイッチングハブ6選｜NASの2.5GbEとアクセスポイントのPoE",
     "category": "gadget"
   },
   {
@@ -35911,6 +35911,66 @@
     "description": "A3・A4対応の書画カメラ型スキャナーで、原稿を上から撮影できます。大きな原本や綴じた資料を給紙口に通さずに取り込みたい場合に向き、OCRにも対応しています。",
     "articleSlug": "home-document-scanners-6-picks",
     "articleTitle": "領収書や契約書を電子化する家庭用スキャナー6選",
+    "category": "gadget"
+  },
+  {
+    "productId": "AMZ-B0G4BQW7NR",
+    "asin": "B0G4BQW7NR",
+    "name": "エレコム EHC-LQ01-5",
+    "brand": "エレコム(ELECOM)",
+    "amazonUrl": "https://www.amazon.co.jp/dp/B0G4BQW7NR?tag=sellemy-22",
+    "imageUrl": "https://m.media-amazon.com/images/I/61DZh8pg0nL._AC_UL320_.jpg",
+    "description": "5ポートすべてが2.5Gbps対応のスイッチングハブ。NASとPCを含む有線機器を2.5GbEでつなぎたい場合に使えます。ファンレス設計の小型モデルで、電源には付属のACアダプターを使用します。",
+    "articleSlug": "home-ethernet-switches",
+    "articleTitle": "家庭用スイッチングハブ6選｜NASの2.5GbEとアクセスポイントのPoE",
+    "category": "gadget"
+  },
+  {
+    "productId": "AMZ-B08WQ16H4N",
+    "asin": "B08WQ16H4N",
+    "name": "TP-Link TL-SG108-M2",
+    "brand": "TP-Link",
+    "amazonUrl": "https://www.amazon.co.jp/dp/B08WQ16H4N?tag=sellemy-22",
+    "imageUrl": "https://m.media-amazon.com/images/I/518uC+XyEEL._AC_UL320_.jpg",
+    "description": "8つのポートがすべて2.5Gbps対応。NASや複数のPCを有線でつなぎ、増設分のポートも確保したい場合に使えます。デスクトップへの設置と壁掛けに対応し、接続時の設定は不要です。",
+    "articleSlug": "home-ethernet-switches",
+    "articleTitle": "家庭用スイッチングハブ6選｜NASの2.5GbEとアクセスポイントのPoE",
+    "category": "gadget"
+  },
+  {
+    "productId": "AMZ-B0CWVHNZVJ",
+    "asin": "B0CWVHNZVJ",
+    "name": "Foxneo 2.5G RJ45・10G SFP+対応スイッチングハブ",
+    "brand": "Foxneo",
+    "amazonUrl": "https://www.amazon.co.jp/dp/B0CWVHNZVJ?tag=sellemy-22",
+    "imageUrl": "https://m.media-amazon.com/images/I/51mRvi--VmL._AC_UL320_.jpg",
+    "description": "2.5G対応のRJ45ポートを4口、10G SFP+ポートを2口備えています。NASやPCをRJ45でつなぎ、SFP+の接続口も確保したい場合の構成です。SFP+を使う際は、接続先に合う機器や部材を確認してください。",
+    "articleSlug": "home-ethernet-switches",
+    "articleTitle": "家庭用スイッチングハブ6選｜NASの2.5GbEとアクセスポイントのPoE",
+    "category": "gadget"
+  },
+  {
+    "productId": "AMZ-B08562FQTW",
+    "asin": "B08562FQTW",
+    "name": "TP-Link TL-SG1210P",
+    "brand": "TP-Link",
+    "amazonUrl": "https://www.amazon.co.jp/dp/B08562FQTW?tag=sellemy-22",
+    "imageUrl": "https://m.media-amazon.com/images/I/81EYct888yL._AC_UL320_.jpg",
+    "description": "IEEE 802.3af/at対応のPoE+ポートを8口備え、対応するアクセスポイントへ通信と給電をまとめられます。給電上限は各ポート30W、全ポート合計63W。複数台を接続する場合は必要電力の合計を確認してください。",
+    "articleSlug": "home-ethernet-switches",
+    "articleTitle": "家庭用スイッチングハブ6選｜NASの2.5GbEとアクセスポイントのPoE",
+    "category": "gadget"
+  },
+  {
+    "productId": "AMZ-B08FY4G3FN",
+    "asin": "B08FY4G3FN",
+    "name": "TP-Link TL-SG1005LP",
+    "brand": "TP-Link",
+    "amazonUrl": "https://www.amazon.co.jp/dp/B08FY4G3FN?tag=sellemy-22",
+    "imageUrl": "https://m.media-amazon.com/images/I/51UIIf6c70L._AC_UL320_.jpg",
+    "description": "5ポートのうち4ポートがIEEE 802.3af/at対応のPoE+ポートです。対応するアクセスポイントへLANケーブルで通信と給電をまとめられます。給電上限は各ポート30W、全体で40Wです。",
+    "articleSlug": "home-ethernet-switches",
+    "articleTitle": "家庭用スイッチングハブ6選｜NASの2.5GbEとアクセスポイントのPoE",
     "category": "gadget"
   }
 ]
