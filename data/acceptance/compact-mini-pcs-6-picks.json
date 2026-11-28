@@ -1,0 +1,130 @@
+{
+  "contract_version": "4dd81384a821dcd0c246d787cec40e96e72ebed5954b579984a16ece33aa739f",
+  "evidence_sha256": "307f0f5af860f9ac0a42e49653a027abc09e82bccdc870ab99b19eec6a16c528",
+  "metadata": {
+    "brief_path": "/Users/kickstart/sellemy-prod-growth-20261016/.runtime/sellemy-codex/bu-codex-sellemy-reviewer-brief.md",
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 11520,
+    "input_tokens": 29486,
+    "listing_identity_citations_repaired": [
+      "p1",
+      "p2",
+      "p3",
+      "p4",
+      "p5",
+      "p6"
+    ],
+    "member_binding_revision": 4,
+    "output_tokens": 1468,
+    "reasoning_effort": "medium",
+    "reasoning_output_tokens": 243,
+    "reused_product_qa": true,
+    "session_id": "01a21a9a-2c3f-7da1-9402-c4a684801e1f",
+    "session_persisted": false,
+    "surface": "bu-codex-sellemy-reviewer"
+  },
+  "payload_sha256": "906c8d72b79eaba46812f2766306db9bf1461cae2e2393bfd9ae627f7833ed94",
+  "review": {
+    "buying_guidance": false,
+    "claims_grounded": false,
+    "complete_comparison": false,
+    "distinct_products": true,
+    "duplicate_pair_checks": [],
+    "editorial_voice_appropriate": false,
+    "internal_qa_leak_absent": false,
+    "meaningful_comparison": true,
+    "needs_product_reselection": false,
+    "products": [
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "popular",
+            "quote": "Support for dual displays through two HDMI ports"
+          }
+        ],
+        "identity_key": "Intel Mini PC 2025 Latest Alder Lake-N Series N100 (4C/4T, up to 3.4GHz) TRIGKEY Key-N Min",
+        "identity_quote": "Intel Mini PC 2025 Latest Alder Lake-N Series N100 (4C/4T, up to 3.4GHz) TRIGKEY Key-N Mini PC 16GB DDR4 500GB M.2 PCIE SSD 4K@60Hz Small PC | High-Speed WiFi 5 | BT 5.0 | USB 3.2 Silent Mini PC",
+        "reason": "検証済み商品掲載情報（https://www.amazon.co.jp/dp/B0BWLXCWXY）の商品名と本文からミニPC本体を識別できる。HDMI端子2基を使う用途も具体的に紹介できる。",
+        "ref": "p1",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "popular",
+            "quote": "16GB DDR4 3200MHz memory and a 512GB SSD"
+          }
+        ],
+        "identity_key": "Getorli Mini PC - AMD Ryzen 5 7430U Max 4.3GHz Dual LAN 16GB DDR4 Memory 512GB SSD Mini PC",
+        "identity_quote": "Getorli Mini PC - AMD Ryzen 5 7430U Max 4.3GHz Dual LAN 16GB DDR4 Memory 512GB SSD Mini PC 4K 60Hz Output HDMI/Type-C/USB Port WiFi 6 Bluetooth 5.3 Mini PC for Home, Office and Light Gaming Mini pc",
+        "reason": "検証済み商品掲載情報（https://www.amazon.co.jp/dp/B0H1ZHWZNG?th=1）の商品名でミニPC本体を識別できる。メモリ、ストレージ、映像出力端子の記載に基づき紹介できる。",
+        "ref": "p2",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "desk_placement",
+            "quote": "Compact design at 114×106×44mm and approximately 260g. Efficiently utilizes space around the desk, and VESA mount compatibility allows installation at the back of the monitor."
+          }
+        ],
+        "identity_key": "GMKtec Mini PC, 12th Generation Intel N95, First Release | Fast Than N97, 8GB + 256GB, SSD",
+        "identity_quote": "GMKtec Mini PC, 12th Generation Intel N95, First Release | Fast Than N97, 8GB + 256GB, SSD, Small Desktop, Windows 11 Pro, 4 Cores/4 Threads, Up to 3.4 GHz, NVMe M.2, 2280 Slots, PCIe3.0, WiFi 5 Wired",
+        "reason": "検証済み商品掲載情報（https://www.amazon.co.jp/dp/B0GX53RQS1?th=1）の商品名でミニPC本体を識別できる。本体寸法とVESAマウント対応が、机への置きやすさという切り口を支える。",
+        "ref": "p3",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "desk_placement",
+            "quote": "can be installed on the back of the monitor via VESA mount"
+          }
+        ],
+        "identity_key": "NiPoGi P1 Ryzen 5425U Mini PC, 2026 Model, More Than 3500U, 4C/8T",
+        "identity_quote": "NiPoGi P1 Ryzen 5425U Mini PC, 2026 Model, More Than 3500U, 4C/8T",
+        "reason": "検証済み商品掲載情報（https://www.amazon.co.jp/dp/B0HNWGKPY8?th=1）の商品名でミニPC本体を識別できる。本文にVESAマウントによる背面設置の記載がある。付属品欄には別の型番表記があるため、その型番を確定事実として扱わない。",
+        "ref": "p4",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "dual_display_setup",
+            "quote": "by using the two HDMI ports, you can set up a dual-monitor environment"
+          }
+        ],
+        "identity_key": "Getorli Mini PC AMD Ryzen 5 3501U Mini PC 8GB DDR4 256G NVMe SSD PCIe3.0 Max 32GB SSD + 2T",
+        "identity_quote": "Getorli Mini PC AMD Ryzen 5 3501U Mini PC 8GB DDR4 256G NVMe SSD PCIe3.0 Max 32GB SSD + 2TB Expansion WiFi 6 BT5.2 Gigabit Wired LAN Radeon Vega 8 Support 3-Screen 4K Low Power Consumption Quiet HDMI",
+        "reason": "検証済み商品掲載情報（https://www.amazon.co.jp/dp/B0H2VMHTDR?th=1）の商品名でミニPC本体を識別できる。p2とは掲載CPUが異なる。HDMI端子2基による2画面構成の記載が担当する切り口を支える。",
+        "ref": "p5",
+        "topic_fit": true
+      },
+      {
+        "adequate_facts": true,
+        "axis_support": [
+          {
+            "axis_id": "dual_display_setup",
+            "quote": "Equipped with an HDMI 2.1 (4K@120hz/8K@60Hz) x1, DP1.4 (4K@144hz) x1, and USB4 (4K@120hz/8K@60Hz) x1"
+          }
+        ],
+        "identity_key": "MINISFORUM UM760Slim Mini pc AMD Ryzen 5 7640HS DDR5-5600MHz 16GB 1TB SSD",
+        "identity_quote": "MINISFORUM UM760Slim Mini pc AMD Ryzen 5 7640HS DDR5-5600MHz 16GB 1TB SSD",
+        "reason": "検証済み商品掲載情報（https://www.amazon.co.jp/dp/B0DFH92ZTP?th=1）の商品名で型番とCPUを持つミニPC本体を識別できる。HDMIとDisplayPortを含む映像出力端子の記載が2画面構成という切り口を支える。",
+        "ref": "p6",
+        "topic_fit": true
+      }
+    ],
+    "reader_decision_outsourcing_absent": false,
+    "reason": "根拠情報のみの審査。6商品はいずれもミニPC本体として掲載され、各商品の識別と担当する紹介切り口は、下記の検証済み商品掲載情報で裏付けられる。p2とp5は同じブランドだが、掲載されたCPUが異なり、同一製品とする積極的な根拠はない。記事本文は未提出のため、記事固有の項目は判定していない。",
+    "recommendation_conclusion": false,
+    "status": "ACCEPTED",
+    "sufficient_evidence": true
+  },
+  "reviewer": "independent_responses_review"
+}
