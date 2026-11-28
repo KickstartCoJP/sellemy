@@ -45,16 +45,17 @@ def _render_card(product_payload: dict, product_evidence: dict, amazon_tag: str)
 
 
 
-def render_article(payload: dict, evidence: dict | None, *, today: date | None = None, related_features: list[dict] | None = None) -> str:
+def render_article(payload: dict, evidence: dict | None, *, today: date | None = None, related_features: list[dict] | None = None, validate: bool = True) -> str:
     """Insert Writer prose and evidence facts verbatim; never synthesize or pad copy."""
     from legacy_snapshot import SCHEMA, render_snapshot
     if evidence is None and payload.get('schema') == SCHEMA:
         if today is not None or related_features is not None:
             raise ValueError('legacy snapshot cannot regenerate with publication overrides')
         return render_snapshot(payload)
-    validate_payload(payload)
-    validate_evidence(evidence)
-    match_refs(payload, evidence)
+    if validate:
+        validate_payload(payload)
+        validate_evidence(evidence)
+        match_refs(payload, evidence)
     category = get_category(evidence['category'])
     year = (today or date.today()).year
     h1, summary = html.escape(payload['h1']), html.escape(payload['summary'])

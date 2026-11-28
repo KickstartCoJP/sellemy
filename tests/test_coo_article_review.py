@@ -7,7 +7,7 @@ import coo_article_review as m
 
 
 class ExactCOODecisionTest(unittest.TestCase):
-    def test_requires_exact_version_and_qas_before_approval(self):
+    def test_requires_exact_version_without_repeated_qa(self):
         from contextlib import ExitStack
         with ExitStack() as stack:
             def mock(name, **kw):
@@ -23,12 +23,10 @@ class ExactCOODecisionTest(unittest.TestCase):
             kw = dict(payload_sha=m.digest(payload), evidence_sha=m.digest(m.evidence_content(evidence)), decision='CERTIFIED', reason='reviewed')
             with self.assertRaisesRegex(ValueError, 'changed'):
                 m.decide('topic', **{**kw, 'payload_sha': 'stale'})
-            with self.assertRaisesRegex(ValueError, 'QA missing'):
-                m.decide('topic', **kw)
             writes.assert_not_called()
             stage.assert_not_called()
-            receipts.side_effect = None
             m.decide('topic', **kw)
-            cert.assert_called_once()
+            receipts.assert_not_called()
+            cert.assert_not_called()
             self.assertEqual(writes.call_args_list[0].args[2]['reviewer_role'], 'coo')
             self.assertEqual(stage.call_args.args, ('topic', 'EYECATCH_PENDING'))

@@ -109,7 +109,7 @@ def test_coo_edit_adapter_uses_direct_route():
             coo.decide('fixture-reading-stands',payload_sha=digest(old),evidence_sha=digest(evidence_content(evidence)),decision='REWORK',reason='proxy',edited_payload={'h1':'new'})
 
 
-def test_normal_designer_and_publish_preflight_keep_existing_checks_for_edited_text():
+def test_normal_designer_and_publish_preflight_only_require_exact_approval():
     import growth_recovery as recovery
     import role_stage_exec as stage_exec
     import role_execution_publish as publication
@@ -134,8 +134,8 @@ def test_normal_designer_and_publish_preflight_keep_existing_checks_for_edited_t
         qa.assert_not_called();cert.assert_not_called()
         values['chat-publish-approval.json']={}
         with pytest.raises(ValueError):publication._preflight('fixture-reading-stands')
-        # Ordinary accepted articles keep their original QA verification.
+        # Ordinary approved articles also avoid repeated QA.
         values.update(_artifacts(old,evidence,acceptance))
         values['chat-publish-approval.json']=m._approval(old,evidence,'ceo')
         assert publication._preflight('fixture-reading-stands')[2]==old
-        qa.assert_called_once();cert.assert_called_once()
+        qa.assert_not_called();cert.assert_not_called()

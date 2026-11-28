@@ -1,0 +1,57 @@
+{
+  "schema": "kickstart-change-contract/v1",
+  "task_id": "CEO-BU002-SEPARATE-PRODUCTION-PUBLISH-20261128",
+  "instruction_ref": "CEO 2026-11-28: separate production and publication; remove repeated publishing QA except CEO/COO approval and data presence; no publication slots; independent image defect QA",
+  "instruction": "Separate production and publication lanes using one existing LaunchAgent and the same durable jobs. Production daily target counts review-ready new articles, existing-article recovery remains uncapped. Publication independently processes approved PUBLISH_PENDING jobs without reservation or QA revalidation. Retain external publication stop controls, exact CEO/COO approval, required data, existing URL and technical release checks. New images receive independent actual-image QA at the Designer stage. No publication provenance veto.",
+  "canonical_refs": [
+    "https://app.notion.com/p/3dd67ec6a100817fbda8ff40403bb0a3",
+    "https://app.notion.com/p/3dc67ec6a1008196b017ee01e1824bba",
+    "https://app.notion.com/p/3fd67ec6a10081339edef6932aae8d0e",
+    "https://app.notion.com/p/3dd67ec6a10081539612cb55c349f7f8",
+    "https://app.notion.com/p/3dc67ec6a10081c6b5d0fb29cfe59b29",
+    "https://app.notion.com/p/3dc67ec6a100813fb69de3398acf690b"
+  ],
+  "implementer": "BU-002 isolated Staging direct patch, no Codex development",
+  "allowed_paths": [
+    "change-contracts/bu002-separate-production-publication-20261128.json",
+    "ops/run-growth.sh",
+    "pipeline/adaptive_publish.py",
+    "pipeline/ceo_article_edit.py",
+    "pipeline/comparison_acceptance.py",
+    "pipeline/coo_article_review.py",
+    "pipeline/eyecatch_visual_qa.py",
+    "pipeline/growth_recovery.py",
+    "pipeline/growth_role_business.py",
+    "pipeline/growth_runtime.py",
+    "pipeline/publish_payload.py",
+    "pipeline/qa.py",
+    "pipeline/renderer.py",
+    "pipeline/resume_pending_eyecatch.py",
+    "pipeline/role_execution_publish.py",
+    "pipeline/role_stage_client.py",
+    "pipeline/role_stage_exec.py",
+    "tests/test_bu002_approval_only_publication_20261128.py",
+    "tests/test_bu002_evidence_routing_correction_20261117.py",
+    "tests/test_ceo_article_edit_20261128.py",
+    "tests/test_comparison_acceptance.py",
+    "tests/test_coo_article_review.py",
+    "tests/test_generic_article_update.py",
+    "tests/test_publication_unit.py",
+    "tests/test_role_artifact_io_boundary.py"
+  ],
+  "preserved_rules": [
+    "Existing pre-review product, content, claim, safety and machine QA remain; approved exact payload and evidence hashes must match",
+    "Global/manual and independent controller stop controls remain publication-only; no publication slot or count cap",
+    "Existing published article URL, exact approved revision, one durable job, existing protected GitHub/Pages release and postpublication read-back preserved",
+    "Existing new-topic stop, legacy recovery rules and other BU unaffected",
+    "Existing image generation routes and no paid API policy preserved; image QA uses existing Codex Reviewer settings",
+    "No fabricated QA or approval records; prior receipt retained for audit only"
+  ],
+  "acceptance_tests": [
+    "tests/test_bu002_approval_only_publication_20261128.py",
+    "tests/test_publication_unit.py",
+    "tests/test_coo_article_review.py",
+    "tests/test_generic_article_update.py",
+    "tests/test_role_artifact_io_boundary.py"
+  ]
+}

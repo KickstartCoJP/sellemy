@@ -77,7 +77,7 @@ class GenericArticleUpdateTests(unittest.TestCase):
             def __exit__(self,*args):return False
         class Lock:
             def acquire(self):return Gate()
-        def fake_apply(slug,*,apply,allow_existing):
+        def fake_apply(slug,*,apply,allow_existing,controlled=False):
             calls.append(('apply',allow_existing));return {'applied':True}
         def fake_publish(slug,category,*,update):
             calls.append(('publish',update));return 'a'*40
@@ -125,7 +125,7 @@ class GenericArticleUpdateTests(unittest.TestCase):
         with (patch.object(business,'ROOT',self.site),
               patch.object(business,'require_publishing_enabled'),
               patch.object(business,'load_receipt',return_value={}),
-              patch.object(business,'require_acceptance'),
+              patch.object(business,'require_chat_publish_approval'),
               patch.object(business.subprocess,'check_output',return_value=status),
               patch.object(business.subprocess,'run',side_effect=lambda argv,**kwargs: calls.append(argv)),
               patch.object(business,'_git',side_effect=lambda *args: 'a'*40 if args[:2]==('rev-parse','HEAD') or args[:2]==('rev-parse','origin/main') else ''),
@@ -146,7 +146,7 @@ class GenericArticleUpdateTests(unittest.TestCase):
         with (patch.object(business,'ROOT',self.site),
               patch.object(business,'require_publishing_enabled'),
               patch.object(business,'load_receipt',return_value={}),
-              patch.object(business,'require_acceptance'),
+              patch.object(business,'require_chat_publish_approval'),
               patch.object(business.subprocess,'check_output',return_value=status),
               patch.object(business.subprocess,'run',side_effect=AssertionError('git write attempted'))):
             with self.assertRaisesRegex(business.GrowthRuntimeError,'publication unit mismatch'):
@@ -175,7 +175,7 @@ class GenericArticleUpdateTests(unittest.TestCase):
         with (patch.object(business,'ROOT',self.site),
               patch.object(business,'require_publishing_enabled'),
               patch.object(business,'load_receipt',return_value={}),
-              patch.object(business,'require_acceptance'),
+              patch.object(business,'require_chat_publish_approval'),
               patch.object(business.subprocess,'check_output',side_effect=command),
               patch.object(business.subprocess,'run',side_effect=subprocess_run),
               patch.object(business,'_git',side_effect=git),
@@ -194,7 +194,7 @@ class GenericArticleUpdateTests(unittest.TestCase):
         with (patch.object(business,'ROOT',self.site),
               patch.object(business,'require_publishing_enabled'),
               patch.object(business,'load_receipt',return_value={}),
-              patch.object(business,'require_acceptance'),
+              patch.object(business,'require_chat_publish_approval'),
               patch.object(business.subprocess,'check_output',
                            return_value=' M article/gadget/article-one.html\n M pipeline/unsafe.py\n'),
               patch.object(business.subprocess,'run',side_effect=AssertionError('git write attempted'))):

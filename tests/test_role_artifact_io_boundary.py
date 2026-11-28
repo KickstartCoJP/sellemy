@@ -91,8 +91,10 @@ def test_each_role_has_own_900_second_timeout_and_kills_only_its_tree():
 def test_runtime_shell_no_longer_caps_entire_job_at_900_seconds():
     script = (ROOT / 'ops' / 'run-growth.sh').read_text()
     assert 'run_with_timeout.py 900' not in script
-    assert 'pipeline/growth_runtime.py --publish --scheduled' in script
-    assert 'pipeline/growth_runtime.py --publish --recovery-only' in script
+    assert 'run_lane production --scheduled' in script
+    assert 'run_lane production --recovery-only' in script
+    assert 'run_lane publication &' in script
+    assert 'pipeline/growth_runtime.py --publish --lane' in script
 
 
 def test_only_product_qa_role_may_issue_terminal_candidate_rejection(tmp_path):

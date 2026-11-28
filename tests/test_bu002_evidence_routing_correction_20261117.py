@@ -33,9 +33,7 @@ def test_publish_preflight_does_not_route_any_integrity_failure_to_product():
           patch.object(recovery,'read_artifact',side_effect=lambda s,n,d=None:artifacts.get(n,d)),
           patch('comparison_acceptance.product_issues',return_value=['old approval invalid']),
           patch.object(recovery,'request_product_reselection') as reselect):
-        try: stages._inspect('approved-article',cache_only=False)
-        except GrowthRuntimeError as exc: assert 'integrity fault' in str(exc)
-        else: raise AssertionError('stale Product QA may not be accepted')
+        assert stages._inspect('approved-article',cache_only=False)['action']=='publish'
         reselect.assert_not_called()
 
 

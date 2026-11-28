@@ -116,7 +116,7 @@ def find_shared_openings_endings(descriptions: list[str], prefix_len: int = 12, 
     return dup_openings, dup_endings
 
 
-def run_qa(html: str, payload: dict, evidence: dict, *, acceptance: dict | None = None, require_semantic_acceptance: bool = True, image_audit: dict | None = None) -> dict:
+def run_qa(html: str, payload: dict, evidence: dict, *, acceptance: dict | None = None, require_semantic_acceptance: bool = True, image_audit: dict | None = None, require_product_image_audit: bool | None = None) -> dict:
     issues = acceptance_issues(payload, evidence, acceptance) if require_semantic_acceptance else []
     results: dict = {'semantic_acceptance_pass': not issues, 'semantic_acceptance_issues': issues}
 
@@ -228,7 +228,8 @@ def run_qa(html: str, payload: dict, evidence: dict, *, acceptance: dict | None 
     results['fixed_price_hits'] = fixed_prices
     results['fixed_price_pass'] = not fixed_prices
 
-    require_image_audit = os.environ.get('SELLEMY_REQUIRE_PRODUCT_IMAGE_AUDIT') == '1'
+    require_image_audit = (os.environ.get('SELLEMY_REQUIRE_PRODUCT_IMAGE_AUDIT') == '1'
+                           if require_product_image_audit is None else require_product_image_audit)
     if require_image_audit or image_audit is not None:
         results['product_image_audit_pass'] = (image_audit or {}).get('status') == 'PASS'
     results['overall_pass'] = all([

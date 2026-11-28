@@ -23,8 +23,6 @@ def apply_approved_edit(slug: str, payload_sha: str, edited: dict, *, reviewer_r
     evidence = read_artifact(slug, 'evidence.json')
     if not isinstance(original, dict) or not isinstance(evidence, dict) or digest(original) != payload_sha:
         raise ValueError('reviewed article identity changed')
-    if product_issues(evidence):
-        raise ValueError('product evidence integrity failed')
     if not isinstance(edited, dict) or not edited:
         raise ValueError('edited article fields required')
     unknown = set(edited) - set(TEXT_FIELDS) - {'comparison_groups', 'products'}

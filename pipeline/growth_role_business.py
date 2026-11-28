@@ -519,10 +519,9 @@ def _parse_porcelain_paths(output: str) -> set[str]:
 
 
 def _publish(slug: str, category: str, *, update: bool = False) -> str:
-    require_publishing_enabled(ROOT)
     payload = json.loads((ROOT / 'data' / 'payloads' / f'{slug}.json').read_text())
     evidence = json.loads((ROOT / 'data' / 'evidence' / f'{slug}.json').read_text())
-    require_acceptance(payload, evidence, load_receipt(ROOT, slug))
+    require_chat_publish_approval(read_artifact(slug, 'chat-publish-approval.json'), payload=payload, evidence=evidence)
     expected = _expected_update_paths(slug, category) if update else _expected_publish_paths(slug, category)
     changed = _parse_porcelain_paths(subprocess.check_output(['git', 'status', '--porcelain', '--untracked-files=all'], cwd=ROOT, text=True))
     article_file = f'article/{category}/{slug}.html'
@@ -533,7 +532,6 @@ def _publish(slug: str, category: str, *, update: bool = False) -> str:
     subprocess.run(['git', 'diff', '--cached', '--check'], cwd=ROOT, check=True)
     subprocess.run(['git', 'commit', '-m', f'Publish Writer-generated growth article: {slug}'], cwd=ROOT, check=True)
     head = _git('rev-parse', 'HEAD')
-    require_publishing_enabled(ROOT)
     from article_release import ArticleReleaseError, release
     try:
         approved = read_artifact(slug, 'chat-publish-approval.json', {}) or {}

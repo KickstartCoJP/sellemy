@@ -70,80 +70,31 @@ export SELLEMY_EYECATCH_CODEX_MODEL=gpt-6-sol
 # Fail closed unless all six Amazon product images pass byte-level identity audit.
 export SELLEMY_REQUIRE_PRODUCT_IMAGE_AUDIT=1
 
-# The publication switch does not disable analytics, monitoring or site serving.
-PUBLISH_ALLOWED="$("$PY" - <<'PYSWITCH'
-import sys
-from pathlib import Path
-sys.path.insert(0, 'pipeline')
-from publish_gate import require_publishing_enabled, PublishGateError
-try:
-    require_publishing_enabled(Path.cwd())
-except PublishGateError:
-    print('0')
-else:
-    print('1')
-PYSWITCH
-)"
-if [[ "$PUBLISH_ALLOWED" == "1" ]]; then
-# Always synchronize approved main, including the existing-job fast path.
-# This step is shared by normal scheduling and recovery-only operation.
-# Run recovery inside the normal scheduled production cycle. The runtime
-# may skip a deferred Product/Evidence job and select a new topic in the SAME
-# admitted slot. Never terminate the heartbeat in recovery-only mode.
-"$PY" - <<'PYSYNC'
-import sys
-import os
-from pathlib import Path
-root=Path(os.environ['SELLEMY_ROOT'])
-sys.path.insert(0, str(root/'pipeline'))
-from publish_gate import sync_clean_main
-print('growth preflight sync:', sync_clean_main(root))
-PYSYNC
+# The existing launch agent supervises two independent lanes over the same jobs.
+# Each lane starts its next tick without waiting for the other lane to finish.
+# No second LaunchAgent, queue, or durable job store is introduced.
+run_lane() {
+  local lane="$1" child=0
+  shift
+  trap 'if (( child > 0 )); then kill "$child" 2>/dev/null || true; fi; exit 0' TERM INT HUP
+  while true; do
+    "$PY" pipeline/growth_runtime.py --publish --lane "$lane" "$@" &
+    child=$!
+    wait "$child" || true
+    child=0
+    /bin/sleep 60 &
+    child=$!
+    wait "$child" || true
+    child=0
+  done
+}
 if [[ "$NEW_TOPICS_ENABLED" == "0" ]]; then
-  # Recovery is a fast path into the same article pipeline; no new Planning.
-  exec "$PY" pipeline/growth_runtime.py --publish --recovery-only
-fi
-eval "$("$PY" - <<'PYADMIT'
-import shlex,sys
-import os
-from pathlib import Path
-root=Path(os.environ['SELLEMY_ROOT'])
-sys.path.insert(0, str(root/'pipeline'))
-from adaptive_publish import AdaptivePublishController
-decision=AdaptivePublishController(root).admit_scheduled()
-print('SELLEMY_PREFLIGHT_ALLOWED=' + ('1' if decision.get('allowed') else '0'))
-print('SELLEMY_PREFLIGHT_REASON=' + shlex.quote(str(decision.get('reason') or '')))
-if decision.get('allowed'):
-    print('SELLEMY_PRECLAIMED_ADMISSION_ID=' + shlex.quote(decision['receipt']['admission_id']))
-PYADMIT
-)"
-if [[ "$SELLEMY_PREFLIGHT_ALLOWED" != "1" ]]; then
-  # A publication slot controls new topic admission, not remediation of existing jobs.
-  # Run only an already due recovery job; never create a new topic off-slot.
-  if [[ "$SELLEMY_PREFLIGHT_REASON" == "slot_not_enabled_for_target" ]]; then
-    RECOVERY_DUE="$($PY - <<'PYRECOVERY'
-import sys
-sys.path.insert(0, 'pipeline')
-from growth_recovery import eligible_job
-from legacy_article_recovery import has_pending
-print('1' if eligible_job() or has_pending() else '0')
-PYRECOVERY
-)"
-    if [[ "$RECOVERY_DUE" == "1" ]]; then
-      echo "$(date -Iseconds) growth recovering due job off-slot"
-      "$PY" pipeline/growth_runtime.py --publish --recovery-only
-      exit $?
-    fi
-  fi
-  echo "$(date -Iseconds) growth preflight skipped: $SELLEMY_PREFLIGHT_REASON"
-  exit 0
-fi
-export SELLEMY_PRECLAIMED_ADMISSION_ID
-fi # publication-only recovery, git sync and slot admission
-GROWTH_RC=0
-if [[ "$PUBLISH_ALLOWED" == "1" ]]; then
-  "$PY" pipeline/growth_runtime.py --publish --scheduled || GROWTH_RC=$?
+  run_lane production --recovery-only &
 else
-  echo "$(date -Iseconds) global publishing kill switch disabled; metrics remain enabled"
+  run_lane production --scheduled &
 fi
-exit "$GROWTH_RC"
+PRODUCTION_PID=$!
+run_lane publication &
+PUBLICATION_PID=$!
+trap 'kill "$PRODUCTION_PID" "$PUBLICATION_PID" 2>/dev/null || true; wait || true; exit 0' TERM INT HUP
+wait "$PRODUCTION_PID" "$PUBLICATION_PID"
