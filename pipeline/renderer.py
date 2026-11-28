@@ -80,7 +80,7 @@ def render_article(payload: dict, evidence: dict | None, *, today: date | None =
         f'<nav class="breadcrumb"><ul><li><a href="/index.html">Top</a></li><li><a href="{category.article_path}">{category.label}</a></li><li><span>{h1}</span></li></ul></nav>'
         '<p class="affiliate-disclosure">本記事にはアフィリエイト広告が含まれます。商品リンクを通じた購入により、Sellemyが紹介料を受け取ることがあります。</p>'
         f'<div class="section-title"><h1>{h1}</h1></div><div class="item-eyecatch"><img src="{eyecatch}" alt="{h1}" /></div>'
-        f'<p class="lead">{html.escape(payload["lead"])}</p><p class="summary">{summary}</p><nav class="toc"><strong>記事の切り口</strong><ul>{"".join(toc)}</ul></nav>'
+        f'<p class="lead">{html.escape(payload["lead"])}</p><p class="summary">{summary}</p><nav class="toc"><strong>目次</strong><ul>{"".join(toc)}</ul></nav>'
         + ''.join(sections)
         + (f'<section id="how-to-choose"><div class="section-title"><h2>知っておきたいポイント</h2></div><p>{html.escape(payload["how_to_choose"])}</p></section>' if payload['how_to_choose'].strip() else '')
         + f'<p class="conclusion">{html.escape(payload["conclusion"])}</p>'
